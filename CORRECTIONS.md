@@ -2,6 +2,12 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | [LCB84](/drugs/lcb84/) | Modality and mechanism labelled it a monoclonal antibody even though the cited intervention text described an antibody linked to an MMAE prodrug. | Read the official title and intervention description in [NCT05941507](https://clinicaltrials.gov/study/NCT05941507). | Classify as ADC, describe its TROP2 antibody/MMAE construct and phase 1/2 study, and replace the search link with the direct registry citation. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

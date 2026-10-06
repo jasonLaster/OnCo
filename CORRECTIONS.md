@@ -2,6 +2,13 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | [TROPION-Breast03](/trials/tropion-breast03/) | Summary retained 1,075 participants and an undifferentiated primary comparison. | NCT05629585 updated June 15, 2026. | Use actual 1,174 participants and Dato plus durvalumab versus investigator choice as primary iDFS comparison. |
+| 2026-10-06 | [ASCENT-05](/trials/ascent-05/) and [TROPION-Breast05](/trials/tropion-breast05/) | Speculative readout wording and implied future efficacy. | Current registry records. | State registered settings, status, planned enrollment, primary endpoints and estimated primary completion. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

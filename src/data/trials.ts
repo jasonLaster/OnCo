@@ -2,7 +2,7 @@ import type { TrialInput } from "@/lib/schema";
 import { TRIAL_OUTCOMES } from "./trial-outcomes";
 
 const asOf = "2026-09-04";
-type T = Omit<TrialInput, "kind" | "asOf">;
+type T = Omit<TrialInput, "kind" | "asOf"> & { asOf?: TrialInput["asOf"] };
 const t = (x: T): TrialInput => ({ kind: "trial", asOf, ...x });
 const ct = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https://clinicaltrials.gov/study/${nct}` });
 
@@ -83,10 +83,20 @@ const raw: TrialInput[] = [
     result: "OS 23.7 vs 18.7 months; PFS also improved.",
     drugs: ["datopotamab-deruxtecan"], cancers: ["tnbc", "tnbc-metastatic"], links: [ct("NCT05374512"), { label: "LBBC ASCO 2026 summary", url: "https://www.lbbc.org/news/pivotal-progress-in-tnbc-asco-2026" }], people: ["rebecca-dent"] }),
   t({ id: "tropion-breast05", technologies: ["adc", "topoisomerase-inhibitors"], name: "TROPION-Breast05", nct: "NCT06103864", phase: "3", status: "recruiting", sponsor: "AstraZeneca / Daiichi Sankyo",
-    setting: "First-line PD-L1+ metastatic TNBC: Dato-DXd ± durvalumab vs pembrolizumab + chemotherapy",
+    setting: "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
     tldr: "Tests whether Dato-DXd plus a PD-L1 blocker beats today's immunotherapy-chemotherapy standard.",
-    summary: "TROPION-Breast05, trial NCT06103864 sponsored by AstraZeneca and Daiichi Sankyo, tests whether datopotamab deruxtecan with or without the PD-L1 antibody durvalumab beats today's pembrolizumab plus chemotherapy standard in first-line PD-L1-positive metastatic triple-negative breast cancer. It is a three-arm phase 3 of 625 patients with readout expected in 2026 to 2027, and together with ASCENT-04 it will define ADC plus immunotherapy as first-line therapy. OnCo links it to triple-negative breast cancer, datopotamab deruxtecan, durvalumab, pembrolizumab, the ADC plus checkpoint inhibitor pairing and the TNBC and TROP2 ADC roadmaps. It is ongoing with no results, and whether the ADC alone is enough or immunotherapy must be added is the question its three-arm design will answer.",
-    drugs: ["datopotamab-deruxtecan", "durvalumab", "pembrolizumab"], cancers: ["tnbc"], links: [ct("NCT06103864")] }),
+    summary: "TROPION-Breast05 compares datopotamab deruxtecan with or without durvalumab against chemotherapy plus pembrolizumab in previously untreated PD-L1-positive advanced TNBC. The primary PFS comparison is datopotamab deruxtecan plus durvalumab against chemotherapy plus pembrolizumab. ClinicalTrials.gov record last updated 2026-09-25: recruiting. Enrollment is planned at 625 participants. Primary completion is estimated at 2027-07-28. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications.",
+    drugs: ["datopotamab-deruxtecan", "durvalumab", "pembrolizumab"], cancers: ["tnbc"], links: [ct("NCT06103864")],
+    asOf: "2026-10-06",
+
+    started: "2023-11-23",
+
+    startedType: "actual",
+
+    notes: ["ClinicalTrials.gov record last updated 2026-09-25: recruiting. Enrollment is planned at 625 participants. Primary completion is estimated at 2027-07-28. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications."],
+
+    targets: ["trop2"],
+  }),
   t({ id: "bl-b01d1-307", name: "BL-B01D1-307", nct: "NCT06382142", phase: "3", status: "positive", yearReported: 2026, sponsor: "SystImmune / BMS",
     setting: "Previously treated locally advanced or metastatic TNBC: izalontamab brengitecan vs chemotherapy",
     tldr: "The first phase 3 win for a bispecific ADC, in triple-negative breast cancer, announced February 2026.",

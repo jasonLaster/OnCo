@@ -1751,12 +1751,22 @@ export const lungRegistryTrials: TrialInput[] = [
     summary: "Study Investigating Tarlatamab (AMG 757) in Patients With Metastatic/Locally Advanced Small-Cell Lung Cancer (SCLC) and Other Poorly Differentiated Neuroendocrine Carcinomas (NECs), With Biomarker Analysis to Characterize Response/Resistance (UNLOCK TARLATAMAB) is a phase 2, interventional study registered as NCT07016230 by Gustave Roussy, Cancer Campus, Grand Paris, with a registry enrolment figure of 40 participants, started 2025-07-02 and due to reach its primary completion in 2027-05-18. Interventions recorded: Tarlatamab. Conditions listed: Metastatic/Locally Advanced Small-Cell Lung Cancer; Metastatic/Locally Advanced Poorly Differentiated NEC. Primary outcome: To estimate the objective response rate (ORR). Lung eligibility wording from the registry: \"Patients with histologically confirmed diagnosis of metastatic/locally advanced SCLC with any level of DLL3 expression (Cohort 1) or other poorly differentiated NECs whatever the primary based on the most recent biopsy of a metastatic site\". Sites: France. No results are recorded here; the registry entry is the source.",
     cancers: ["sclc"], drugs: ["tarlatamab"], technologies: ["bispecific-antibody", "t-cell-engager"], companies: ["amgen"],
     links: [ct("NCT07016230")] },
-  { id: "nct06851663", kind: "trial", name: "Trop2-targeted immunoPET Imaging of Solid Tumors", nct: "NCT06851663", phase: "2/3", status: "recruiting", sponsor: "RenJi Hospital", enrolled: 400, asOf, tags,
+  { id: "nct06851663", kind: "trial", name: "Trop2-targeted immunoPET Imaging of Solid Tumors", nct: "NCT06851663", phase: "2/3", status: "recruiting", sponsor: "RenJi Hospital", enrolled: 400,  tags,
     setting: "Trop2-targeted immunoPET Imaging of Solid Tumors",
     tldr: "A phase 2/3 trial in lung cancer, run by RenJi Hospital, now recruiting.",
-    summary: "Trop2-targeted immunoPET Imaging of Solid Tumors is a phase 2/3, interventional study registered as NCT06851663 by RenJi Hospital, with a registry enrolment figure of 400 participants, started 2024-12-23 and due to reach its primary completion in 2027-12. Interventions recorded: [68Ga]Ga-NOTA-T4; [68Ga]Ga-NOTA-RT4; [18F]F-RESCA-T4; [18F]F-RESCA-RT4. Conditions listed: Solid Tumor; Solid Carcinoma; Uroepithelial Carcinoma; Bladder Cancer; Prostate Cancer; Lung Cancer; Nasopharyngeal Cancer; Liver Cancer; Cholangiocarcinoma; Ovarian Cancer; Cervical Cancer; Endometrial Cancer; Thyroid Cancer; Head and Neck Cancer. Primary outcome: Biodistribution-Standardized uptake value (SUV) of normal tissues and organs.; SUV of tumors; Radiation dosimetry of tissues/organs. Lung eligibility wording from the registry: \"* Histologically confirmed diagnosis of solid tumors (including uroepithelial cancer, bladder cancer, prostate cancer, lung cancer, nasopharyngeal cancer, liver cancer, cholangiocarcinoma, ovarian cancer, cervical cancer, endometrial cancer, thyroid cancer, head and neck cancer) or suspected solid t\". Sites: China. No results are recorded here; the registry entry is the source.",
+    summary: "Trop2-targeted immunoPET Imaging of Solid Tumors. ClinicalTrials.gov record last updated 2026-05-29: recruiting. Enrollment is planned at 400 participants. Primary completion is estimated at 2027-12. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications. Registered interventions: [68Ga]Ga-NOTA-T4, [68Ga]Ga-NOTA-RT4, [18F]F-RESCA-T4, [18F]F-RESCA-RT4. Registered primary measures: Biodistribution-Standardized uptake value (SUV) of normal tissues and organs.; SUV of tumors; Radiation dosimetry of tissues/organs.",
     cancers: ["lung-cancer"],
-    links: [ct("NCT06851663")] },
+    links: [ct("NCT06851663")],
+    asOf: "2026-10-06",
+
+    started: "2024-12-23",
+
+    startedType: "actual",
+
+    notes: ["ClinicalTrials.gov record last updated 2026-05-29: recruiting. Enrollment is planned at 400 participants. Primary completion is estimated at 2027-12. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications."],
+
+    targets: ["trop2"],
+  },
   { id: "nct06449313", kind: "trial", name: "Neoadjuvant Chemo-Immunotherapy and Surgical Resection in Locally Advanced Non-small Cell Lung Cancer With N3 Lymph Node or Other High Risk Features", aka: ["NEO-SURG"], nct: "NCT06449313", phase: "2", status: "recruiting", sponsor: "Georgetown University", enrolled: 21, asOf, tags,
     setting: "A Phase 2 Single-arm Study of Neoadjuvant Chemo-Immunotherapy and Surgical Resection in Locally Advanced Non-small Cell Lung Cancer With N3 Lymph Node Involvement or Other High Risk Features",
     tldr: "A phase 2 trial of cemiplimab in lung cancer, run by Georgetown University, now recruiting.",

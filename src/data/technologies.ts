@@ -101,7 +101,7 @@ export const technologies: TechnologyInput[] = [
     cancers: ["pancreatic", "gastric", "hcc", "tnbc"], links: [{ label: "Wikipedia", url: W("Fibroblast_activation_protein,_alpha") }],
   },
   {
-    id: "trop2-pet", kind: "technology", name: "TROP2 PET", sections: ["imaging", "adcs"], status: "phase-1", asOf, since: 2023,
+    id: "trop2-pet", kind: "technology", name: "TROP2 PET", sections: ["imaging", "adcs"], status: "phase-1",  since: 2023,
     tldr: "An experimental PET scan that shows whether a tumour carries the TROP2 protein, so doctors could pick the right ADC before giving it.",
     summary: "89Zr-labelled anti-TROP2 antibodies and 68Ga/18F-labelled TROP2 nanobodies and peptides (Fudan University, Peking Union, others) have been imaged in first-in-human studies in breast, lung, and pancreatic cancer. The goal is non-invasive, whole-body, heterogeneity-aware selection and monitoring for sacituzumab govitecan, datopotamab deruxtecan, and sacituzumab tirumotecan, where IHC has been an unreliable predictor.",
     principle: "A radiolabelled TROP2 binder is imaged; antibody tracers image at 3-6 days with 89Zr, nanobodies within 1-2 hours with 68Ga/18F.",
@@ -112,6 +112,9 @@ export const technologies: TechnologyInput[] = [
     cancers: ["tnbc", "nsclc", "breast-hr-positive"],
     drugs: ["sacituzumab-govitecan", "datopotamab-deruxtecan", "sacituzumab-tirumotecan"],
     tags: ["frontier"],
+    asOf: "2026-10-06",
+    links: [{"label": "ClinicalTrials.gov NCT07753499", "url": "https://clinicaltrials.gov/study/NCT07753499"}],
+    notes: ["NCT07753499 studies 68Ga-MY6349 PET/CT in recurrent or metastatic thyroid cancer, comparing diagnostic performance with 68Ga-FAPI PET/CT. On October 6, 2026 the registry lists recruiting, 120 planned participants, an estimated August 1, 2026 start and estimated December 31, 2026 primary completion; last updated August 7, 2026. This is an interventional diagnostic study with phase not applicable, not a phase 1 therapy trial. No registry results are posted and diagnostic performance or ADC-response prediction is not established."],
   },
   {
     id: "her2-pet", links: [{ label: "Gebhart et al., ZEPHIR: molecular imaging of heterogeneity in advanced HER2-positive breast cancer with 89Zr-trastuzumab PET (Annals of Oncology 2016)", url: "https://doi.org/10.1093/annonc/mdv577" }], kind: "technology", name: "HER2 PET", sections: ["imaging", "adcs"], status: "phase-2", asOf, since: 2010,

@@ -2,6 +2,12 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | [TROP2 expression biomarker](/biomarkers/trop2-expression/) | The summary retained the withdrawn U.S. Trodelvy urothelial indication and omitted Dato-DXd's 2026 TNBC approval. | Checked FDA [withdrawal](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sacituzumab-govitecan-advanced-urothelial-cancer), [sacituzumab TNBC](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line) and [Dato-DXd TNBC](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer) notices. | Scope availability to U.S. advanced-disease indications, add the 2026 TNBC updates and separate PD-L1 eligibility from the absence of a required TROP2 test. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

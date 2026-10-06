@@ -2,6 +2,12 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | [ASP2998 study](/trials/nct07287995/) | The trial's drug links and TL;DR omitted ASP2998 and named only its combination partners. | The current [registry](https://clinicaltrials.gov/study/NCT07287995) and Astellas's public mechanism description, checked while reviewing TROP2 dual-payload programs. | Linked ASP2998 and TROP2, named the TOP1/STING payloads, and distinguished current estimated enrollment from the earlier trial-in-progress abstract. Added the missing ASP2998 drug record without duplicating its existing trial. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

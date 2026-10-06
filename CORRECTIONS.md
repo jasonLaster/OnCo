@@ -2,6 +2,17 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | LCB84 | Listed as an unconjugated monoclonal antibody despite an ADC trial | ClinicalTrials.gov NCT05941507 | Classify as ADC and retain the phase 1/2 registry qualification; overlaps the focused correction in PR #174 |
+| 2026-10-06 | [JSKN016](/drugs/jskn016/) | Target and mechanism described as not publicly stated. | Resolved ASCO and SABCS publisher abstracts and registry intervention. | Add TROP2/HER3, TOP1 payload and a dated phase I cohort distinct from phase III registration. |
+| 2026-10-06 | [ESG401](/drugs/esg401/) and [FDA018-ADC](/drugs/fda018-adc/) | Target and mechanism missing despite primary clinical abstracts. | Resolved ASCO abstracts and FDA018-ADC registry alias. | Add cited TROP2 mechanisms, early cohort denominators and toxicity; retain separate later development. |
+| 2026-10-06 | [EB-NK-301](/drugs/eb-nk-301/) | Presented as phase 2 without making the combined phase 1/2 protocol clear. | NCT07589530. | Explicit phase 1/2 wording and unproven efficacy; conservative phase 1 headline. |
+| 2026-10-06 | [TROP2](/targets/trop2/) | Blanket low normal-tissue expression in the summary and TL;DR. | Human Protein Atlas TACSTD2 normal-tissue protein annotation and separate RNA analysis. | State normal epithelial expression and distinguish RNA, protein, membrane localization and response prediction. |
+| 2026-10-06 | [SHR-A1921](/drugs/shr-a1921/) | Publicly reported TROP2 target omitted. | Resolved Cancer Cell first-in-human paper and PubMed abstract. | Add target and cited pooled phase I results without presenting them as TNBC-specific efficacy. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

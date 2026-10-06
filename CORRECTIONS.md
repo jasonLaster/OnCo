@@ -2,6 +2,15 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | ASCENT-03 / ASCENT-04 / TROPION-Breast02 | Structured outcomes did not distinguish earlier publication response rates from the FDA approval analysis | FDA June 24 and May 22, 2026 approval notices | Add FDA-analysis confirmed ORR of 50% vs 47%, 61% vs 55%, and 64% vs 30%, respectively; identify source populations and preserve PFS/OS precision without claiming those response rates equal the earlier publication analysis |
+| 2026-10-06 | [Sacituzumab govitecan](/drugs/sacituzumab-govitecan/) | HR-positive indication narrowed systemic therapy to chemotherapy; first-line combination omitted subcutaneous pembrolizumab and FDA-authorized PD-L1 test. | Current label and June 24, 2026 FDA notice. | Exact retained and new indications, primary links and urothelial withdrawal. |
+| 2026-10-06 | [Datopotamab deruxtecan](/drugs/datopotamab-deruxtecan/) | TNBC approval row added a first-line restriction absent from the FDA indication; summary relied on patient-facing OS summaries. | May 22, 2026 FDA notice and current label. | Separate indication wording from first-line supporting trial and cite randomized results. |
+| 2026-10-06 | [Sacituzumab tirumotecan](/drugs/sacituzumab-tirumotecan/) | Chinese approvals conflated years and omitted third and fourth indications; licensing appeared as a regulatory filing with an FDA source. | Kelun-Biotech primary announcements and Merck pipeline. | Four country-specific sponsor-reported approvals, correct sources and announcement-month timeline; remove the licensing-as-filing event. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

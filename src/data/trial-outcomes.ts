@@ -61,22 +61,24 @@ const RAW: Record<string, TrialOutcomeIn> = {
   "ascent-03": {
     enrolled: 558,
     enrolledBasis: "randomised",
-    enrolledNote: "ClinicalTrials.gov lists 623 participants (actual); the NEJM 2025 primary analysis covered 558 randomised patients.",
+    enrolledNote: "FDA efficacy-study population is 558 randomized; ClinicalTrials.gov reports 623 actual participants. The difference has not been reconciled from a full patient-flow review.",
     outcomes: [
-      { endpoint: "Progression-free survival (BICR)", primary: true, unit: "months", arms: [{ name: "Sacituzumab govitecan", n: 279, value: 9.7 }, { name: "Chemotherapy (TPC)", n: 279, value: 6.9 }], hr: 0.62, ci: [0.50, 0.77], p: "<0.0001", source: "https://dailyreporter.esmo.org/esmo-congress-2025/breast-cancer/survival-improvements-observed-with-first-line-antibody-drug-conjugates-in-triple-negative-breast-cancer" },
-      { endpoint: "Objective response rate", unit: "%", arms: [{ name: "Sacituzumab govitecan", value: 48 }, { name: "Chemotherapy (TPC)", value: 44 }] },
-      { endpoint: "Overall survival", unit: "months", arms: [{ name: "Sacituzumab govitecan" }, { name: "Chemotherapy (TPC)" }], note: "Immature at the primary analysis; crossover to sacituzumab permitted on progression." },
+      {"endpoint": "Progression-free survival (BICR)", "primary": true, "unit": "months", "arms": [{"name": "Sacituzumab govitecan", "value": 9.7}, {"name": "Chemotherapy", "value": 6.9}], "hr": 0.62, "ci": [0.5, 0.77], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line", "p": "<0.0001"},
+      {"endpoint": "Overall survival", "unit": "months", "arms": [{"name": "Sacituzumab govitecan"}, {"name": "Chemotherapy"}], "note": "Immature at FDA approval on June 24, 2026.", "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},
+      {"endpoint": "Confirmed objective response rate (FDA approval analysis)", "unit": "%", "arms": [{"name": "Sacituzumab govitecan", "value": 50, "note": "95% CI 44 to 56"}, {"name": "Chemotherapy", "value": 47, "note": "95% CI 41 to 53"}], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},
     ],
-    replication: "Consistent with ASCENT (later line) and with TROPION-Breast02 (a different TROP2 ADC in the same first-line PD-1-ineligible population), which strengthens the class effect.",
+    replication: "FDA-supporting advanced-disease randomized trial; postoperative benefit is not established.",
   },
   "ascent-04": {
     enrolled: 443,
+    enrolledBasis: "randomised",
+    enrolledNote: "FDA-reported randomized efficacy population. ClinicalTrials.gov lists 443 participants (actual); registry and FDA populations remain separately attributed.",
     outcomes: [
-      { endpoint: "Progression-free survival (BICR)", primary: true, unit: "months", arms: [{ name: "Sacituzumab govitecan + pembrolizumab", n: 221, value: 11.2 }, { name: "Chemotherapy + pembrolizumab", n: 222, value: 7.8 }], hr: 0.65, ci: [0.51, 0.84], p: "0.0009", source: "https://dailyreporter.esmo.org/esmo-congress-2025/breast-cancer/survival-improvements-observed-with-first-line-antibody-drug-conjugates-in-triple-negative-breast-cancer" },
-      { endpoint: "Objective response rate", unit: "%", arms: [{ name: "Sacituzumab govitecan + pembrolizumab", value: 60 }, { name: "Chemotherapy + pembrolizumab", value: 53 }], source: "https://doi.org/10.1056/NEJMoa2508959" },
-      { endpoint: "Overall survival", unit: "months", arms: [{ name: "Sacituzumab govitecan + pembrolizumab" }, { name: "Chemotherapy + pembrolizumab" }], note: "Immature; PFS2 favoured the ADC arm in the ASCO 2026 update.", source: "https://doi.org/10.1056/NEJMoa2508959" },
+      {"endpoint": "Progression-free survival (BICR)", "primary": true, "unit": "months", "arms": [{"name": "Sacituzumab govitecan plus pembrolizumab", "value": 11.2}, {"name": "Chemotherapy plus pembrolizumab", "value": 7.8}], "hr": 0.65, "ci": [0.51, 0.84], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line", "p": "0.0009"},
+      {"endpoint": "Overall survival", "unit": "months", "arms": [{"name": "Sacituzumab govitecan plus pembrolizumab"}, {"name": "Chemotherapy plus pembrolizumab"}], "note": "Immature at FDA approval on June 24, 2026.", "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},
+      {"endpoint": "Confirmed objective response rate (FDA approval analysis)", "unit": "%", "arms": [{"name": "Sacituzumab govitecan plus pembrolizumab", "value": 61, "note": "95% CI 55 to 68"}, {"name": "Chemotherapy plus pembrolizumab", "value": 55, "note": "95% CI 48 to 62"}], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},
     ],
-    replication: "First trial of ADC + PD-1 in TNBC; the design mirrors EV-302 in urothelial cancer. TROPION-Breast05 (Dato-DXd + durvalumab) will be the confirmatory sibling.",
+    replication: "FDA-supporting advanced-disease randomized trial; postoperative benefit is not established.",
   },
   "tropion-breast01": {
     enrolled: 732,
@@ -89,11 +91,14 @@ const RAW: Record<string, TrialOutcomeIn> = {
   },
   "tropion-breast02": {
     enrolled: 644,
+    enrolledBasis: "randomised",
+    enrolledNote: "FDA-reported randomized efficacy population. ClinicalTrials.gov lists 644 participants (actual); registry and FDA populations remain separately attributed.",
     outcomes: [
-      { endpoint: "Progression-free survival (BICR)", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", n: 323, value: 10.8 }, { name: "Chemotherapy (ICC)", n: 321, value: 5.6 }], hr: 0.57, ci: [0.47, 0.69], p: "<0.0001", source: "https://www.annalsofoncology.org/article/S0923-7534(26)00130-4/fulltext" },
-      { endpoint: "Overall survival", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", value: 23.7 }, { name: "Chemotherapy (ICC)", value: 18.7 }], hr: 0.79, ci: [0.64, 0.98], p: "0.0291", source: "https://www.astrazeneca.com/media-centre/press-releases/2025/datroway-demonstrated-an-unprecedented-median-overall-survival-improvement-of-five-months-vs-chemotherapy-as-1st-line-treatment-for-patients-with-metastatic-triple-negative-breast-cancer-for-whom-immunotherapy-was-not-an-option-in-tropion-breast02.html" },
+      {"endpoint": "Progression-free survival (BICR)", "primary": true, "unit": "months", "arms": [{"name": "Datopotamab deruxtecan", "value": 10.8, "n": 323}, {"name": "Chemotherapy", "value": 5.6, "n": 321}], "hr": 0.57, "ci": [0.47, 0.69], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer", "p": "<0.0001"},
+      {"endpoint": "Overall survival", "primary": true, "unit": "months", "arms": [{"name": "Datopotamab deruxtecan", "value": 23.7, "n": 323}, {"name": "Chemotherapy", "value": 18.7, "n": 321}], "hr": 0.79, "ci": [0.64, 0.98], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer", "p": "0.0290"},
+      {"endpoint": "Confirmed objective response rate (FDA approval analysis)", "unit": "%", "arms": [{"name": "Datopotamab deruxtecan", "value": 64, "note": "95% CI 58 to 69"}, {"name": "Chemotherapy", "value": 30, "note": "95% CI 25 to 36"}], "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer"},
     ],
-    replication: "Consistent with ASCENT-03 (sacituzumab govitecan, same population, PFS HR 0.62), supporting a TROP2-ADC class effect in first-line PD-1-ineligible TNBC.",
+    replication: "FDA-supporting advanced-disease randomized trial; postoperative benefit is not established.",
   },
   "tropion-breast05": { enrolled: 625, outcomes: [], replication: "Ongoing; no results." },
   "bl-b01d1-307": {

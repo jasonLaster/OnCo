@@ -98,16 +98,15 @@ describe("loader", () => {
     expect(tnbc.links[0].label).toBe("Wikipedia");
     const sg = g.must("sacituzumab-govitecan");
     if (sg.kind !== "drug") throw new Error("sacituzumab-govitecan should be a drug");
-    // 4 rows when the review was written; the TNBC treatment deep dive added the EU (2021, 2026) and UK NICE TA819 (2022) rows.
-    expect(sg.approvals).toHaveLength(7);
-    expect(sg.approvals.filter((a) => a.region === "US")).toHaveLength(3);
+    // Regional supplements remain; the 2026 US monotherapy and combination indications are distinct rows.
+    expect(sg.approvals).toHaveLength(8);
+    expect(sg.approvals.filter((a) => a.region === "US")).toHaveLength(4);
     expect(sg.targets).toEqual(["trop2"]);
     expect(sg.cancers).toContain("urothelial");
     expect(sg.summary).toMatch(/withdrawn/);
-    // 7 rows until the FDA's accelerated-approval tables were read in (scripts/fetch-accelerated.ts): the two
-    // indications granted accelerated approval that the record did not already carry as a dated event.
+    // The month-only urothelial withdrawal is removed; the exact November 22 event from the FDA feed remains.
     const events = (sg as { regulatoryEvents?: Array<{ date: string; type: string }> }).regulatoryEvents ?? [];
-    expect(events).toHaveLength(9);
+    expect(events).toHaveLength(8);
     expect(events[0].date.startsWith("2016")).toBe(true);
     expect(events.some((ev) => ev.type === "withdrawal")).toBe(true);
     expect(events[events.length - 1]).toMatchObject({ type: "approval" });

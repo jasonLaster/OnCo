@@ -2,6 +2,12 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | [TROP2 target](/targets/trop2/) and [TNBC molecular landscape](/cancers/tnbc/) | A copy-number range of 2-4% was labelled as protein expression/amplification and pointed first to an IHC paper; a separate ASCENT note overstated expression independence. | Compared the row's own TNBC-filtered cBioPortal count notes and study sources with the [ASCENT biomarker publication](https://doi.org/10.1016/j.annonc.2021.06.002). | Label the 2.5-4.4% row as gene amplification, lead with its copy-number study citation, and retain uncertainty in the low-expression ASCENT subgroup. No new cBioPortal query or protein-positivity estimate is claimed. |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

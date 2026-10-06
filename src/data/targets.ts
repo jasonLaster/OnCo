@@ -20,7 +20,9 @@ export const targets: TargetInput[] = [
       { cancerId: "urothelial", pct: "80-90", measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/" },
       { cancerId: "pancreatic", pct: 50, measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "Approximate; heterogeneous" },
     ], links: [{ label: "UniProt P09758: TACSTD2 (TROP2)", url: "https://www.uniprot.org/uniprotkb/P09758/entry" },
-      { label: "Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)", url: "https://doi.org/10.1016/j.annonc.2021.06.002" }],
+      { label: "Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)", url: "https://doi.org/10.1016/j.annonc.2021.06.002" },
+      { label: "TRODELVY prescribing information (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d" },
+      { label: "DATROWAY prescribing information (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0" }],
   },
   {
     id: "her2", trials: ["nct06043817", "nct07589517", "nct05532696", "nct07510802", "nct05523947", "nct06369831", "nct07467863", "nct06616766", "nct06439771", "nct05771584", "nct07641023", "nct07462650", "nct07192432"], technologies: ["her2-tyrosine-kinase-inhibitors"], kind: "target", keyPapers: ["paper-slamon-her2-breast-ovarian-science-1989", "paper-yarden-sliwkowski-erbb-network-nrmcb-2001"], name: "HER2", symbol: "ERBB2", hgnc: "HGNC:3430", ensembl: "ENSG00000141736", uniprot: "P04626", entrez: "2064", targetClass: "surface-antigen", asOf, wikipedia: W("HER2/neu"),

@@ -342,12 +342,40 @@ export const TermSchema = Base.extend({
   wikipediaChecked: isoDate.optional(),
 });
 
+/** A dated pointer to verbatim registry participation data, kept out of the page payload. */
+export const TrialParticipationSchema = z.object({
+  nct: z.string().regex(/^NCT\d{8}$/),
+  snapshot: z.string().regex(/^\/trial-participation\/studies\/NCT\d{8}\.json$/),
+  source: url,
+  fetchedAt: z.iso.datetime(),
+  lastUpdatePosted: z.string().optional(),
+  overallStatus: z.string().optional(),
+  leadSponsor: z.string().optional(),
+  hasEligibility: z.boolean(),
+  siteCount: z.number().int().nonnegative(),
+  /** A retained old snapshot must not be presented as a successful new registry capture. */
+  noLongerReturnedAt: z.iso.datetime().optional(),
+});
+export type TrialParticipation = z.infer<typeof TrialParticipationSchema>;
+
+export const TrialAlternateParticipationSchema = z.object({
+  registry: z.literal("ISRCTN"),
+  registryId: z.string().regex(/^ISRCTN\d+$/),
+  snapshot: z.string().regex(/^\/trial-participation\/other\/ISRCTN\d+\.json$/),
+  source: url, fetchedAt: z.iso.datetime(), lastUpdated: z.string().optional(),
+  hasEligibility: z.boolean(), siteCount: z.number().int().nonnegative(), sponsors: z.array(z.string()),
+});
+export type TrialAlternateParticipation = z.infer<typeof TrialAlternateParticipationSchema>;
+
 export const TrialSchema = Base.extend({
   kind: z.literal("trial"),
   nct: z.string().optional(),
   phase: z.enum(["1", "1/2", "2", "2/3", "3", "4", "observational", "platform"]),
   setting: z.string(),
   sponsor: z.string().optional(),
+  /** Eligibility, sites and study design are fetched separately using these small sourced references. */
+  participation: z.array(TrialParticipationSchema).optional(),
+  alternateParticipation: z.array(TrialAlternateParticipationSchema).optional(),
   /** Headline result in one or two sentences, with numbers only if sourced. */
   result: z.string().optional(),
   /**

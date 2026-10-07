@@ -58,6 +58,8 @@ import { mergeAcceleratedEvents } from "@/lib/accelerated";
 import { TARGET_FIRST_DESCRIBED } from "./target-first-described";
 import { firstDescribedSource } from "@/lib/first-described";
 import { TRIAL_START_DATES } from "./trial-start-dates";
+import { TRIAL_PARTICIPATION } from "./trial-participation";
+import { TRIAL_ALTERNATE_PARTICIPATION } from "./trial-alternate-participation";
 import { yearRecords } from "./years";
 import { entityTrialLinksWave5, entityTrialsWave5, trialsEntitiesWave5 } from "./trials-entities-wave5";
 import { issuesWaveAPapers, issuesWaveATrials } from "./issues-2026-09-wave-a";
@@ -422,6 +424,11 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
     // with the registry's own ACTUAL or ESTIMATED beside it. A date written on the record wins.
     const start = TRIAL_START_DATES[t.id];
     if (start && !t.started) t = { ...t, started: start.started, ...(start.type ? { startedType: start.type } : {}) };
+    // Dated registry pointers only: full inclusion/exclusion text and all sites stay in separate JSON files.
+    const participation = TRIAL_PARTICIPATION[t.id];
+    if (participation?.length) t = { ...t, participation };
+    const alternateParticipation = TRIAL_ALTERNATE_PARTICIPATION[t.id];
+    if (alternateParticipation?.length) t = { ...t, alternateParticipation };
     return t;
   }
   // Trials found for drugs and technologies that had none by scripts/fetch-entity-trials.ts (wave 5): the record's own `trials` array.

@@ -13,7 +13,7 @@ export const doi = (label: string, id: string) => ({ label, url: `https://doi.or
 export const nice = (ref: string, label: string) => ({ label, url: `https://www.nice.org.uk/guidance/${ref}` });
 export const D = (id: string) => `https://doi.org/${id}`;
 
-export const t = (x: Omit<TrialInput, "kind" | "asOf">): TrialInput => ({ kind: "trial", asOf, ...x });
+export const t = (x: Omit<TrialInput, "kind" | "asOf"> & Partial<Pick<TrialInput, "asOf">>): TrialInput => ({ kind: "trial", asOf, ...x });
 export const d = (x: Omit<DrugInput, "kind" | "asOf">): DrugInput => ({ kind: "drug", asOf, ...x });
 export const term = (x: Omit<TermInput, "kind" | "asOf">): TermInput => ({ kind: "term", asOf, ...x });
 

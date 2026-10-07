@@ -5,7 +5,9 @@ import { graph } from "@/lib/graph";
 import { STATUS_LABEL, statusClass } from "@/lib/text";
 import { withTermHovers } from "@/lib/term-hover";
 import { paperQuery } from "@/lib/europepmc";
-import { Bullets, ChipList, Section } from "./ui";
+import { Bullets, ChipList } from "./ui";
+import { CollapsibleSection as Section } from "./CollapsibleSection";
+import { SectionDisclosures } from "./SectionDisclosures";
 import { PrevalenceTable } from "./PrevalenceTable";
 import { TargetSchematic } from "./TargetSchematic";
 import { RefChips } from "./RefChips";
@@ -130,7 +132,7 @@ export function Dossier({ target: t }: { target: Target }) {
   const query = paperQuery(t);
 
   return (
-    <div className="space-y-2">
+    <SectionDisclosures className="space-y-2">
       {/* At a glance */}
       <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-3">
         <Stat label="products" value={d.drugs.length} href="#products" />
@@ -168,7 +170,7 @@ export function Dossier({ target: t }: { target: Target }) {
       </Section>
 
       {t.prevalence.length > 0 && (
-        <Section id="prevalence" title="How common it is in each cancer" aside={<Link href="/prevalence/" className="text-xs underline text-muted">Full matrix →</Link>}>
+        <Section id="prevalence" title="How common it is in each cancer" defaultOpen={false} aside={<Link href="/prevalence/" className="text-xs underline text-muted">Full matrix →</Link>}>
           <PrevalenceTable target={t} />
         </Section>
       )}
@@ -327,7 +329,7 @@ export function Dossier({ target: t }: { target: Target }) {
           <Link href="/suggest/" className="chip border bg-card border-border hover:bg-foreground/5">Suggest a correction</Link>
         </div>
       </Section>
-    </div>
+    </SectionDisclosures>
   );
 }
 

@@ -642,7 +642,14 @@ html[dir="rtl"] code, html[dir="rtl"] kbd, html[dir="rtl"] .tabular-nums { unico
 
 /* ---- Print: strip chrome, keep content, add a running header with the date, the URL, a QR code and the disclaimer ---- */
 .print-header { display: none; }
+.section-disclosure > summary { list-style: none; }
+.section-disclosure > summary::-webkit-details-marker { display: none; }
+.section-chevron { display: inline-block; }
+.section-disclosure[open] > summary .section-chevron { transform: rotate(90deg); }
+
 @media print {
+  details[data-section-fold]::details-content { content-visibility: visible; }
+  .section-chevron { display: none; }
   header, footer, nav, aside, .no-print, canvas, .garden, .tabbar { display: none !important; }
   .hero, .garden-band { background: none !important; }
   body { background: #fff !important; color: #000 !important; }

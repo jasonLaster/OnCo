@@ -6,6 +6,9 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 7 October 2026
+- The page-weight ratchet counts the right thing now
+
 ### 6 October 2026
 - Seven trims to the top of a record page, and a review card that says what is true
 - About 19,500 pages stop opening with the least useful true thing they could say

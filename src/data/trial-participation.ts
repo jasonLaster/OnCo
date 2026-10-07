@@ -44656,6 +44656,19 @@ export const TRIAL_PARTICIPATION: Record<string, TrialParticipation[]> = {
       "siteCount": 187
     }
   ],
+  "nct06885645": [
+    {
+      "nct": "NCT06885645",
+      "snapshot": "/trial-participation/studies/NCT06885645.json",
+      "source": "https://clinicaltrials.gov/study/NCT06885645",
+      "fetchedAt": "2026-10-07T18:03:15.700Z",
+      "lastUpdatePosted": "2025-04-03",
+      "overallStatus": "NOT_YET_RECRUITING",
+      "leadSponsor": "Chengdu Kanghong Biotech Co., Ltd.",
+      "hasEligibility": true,
+      "siteCount": 0
+    }
+  ],
   "nct05294172": [
     {
       "nct": "NCT05294172",

@@ -1,11 +1,11 @@
 # Trial participation coverage
 
-Captured 25,364 of 25,365 explicit ClinicalTrials.gov identifiers across 5,969 canonical trials and 33,950 drug-linked snapshot rows. 53 ISRCTN registry snapshots cover 55 canonical records. In total, 5883 canonical records have captured participation data; 86 remain named gaps.
+Captured 25,365 of 25,366 explicit ClinicalTrials.gov identifiers across 5,970 canonical trials and 33,950 drug-linked snapshot rows. 53 ISRCTN registry snapshots cover 55 canonical records. In total, 5884 canonical records have captured participation data; 86 remain named gaps.
 
 | Field | Studies |
 |---|---:|
-| Eligibility text | 25364 |
-| Lead sponsor | 25364 |
+| Eligibility text | 25365 |
+| Lead sponsor | 25365 |
 | Locations | 23291 |
 | Recruiting overall | 5386 |
 | Not returned by registry | 1 |

@@ -11,7 +11,7 @@ export function EvidenceGradeChip({ grade, tags, size = "sm" }: { grade?: Eviden
   const m = GRADE_META[g];
   return (
     <span className={`chip ${m.tone} ${size === "xs" ? "text-[10px]" : ""}`} title={m.blurb}>
-      <span aria-hidden className="opacity-70 font-normal">Evidence</span> {m.label}
+      <span aria-hidden className="font-normal">Evidence</span> {m.label}
     </span>
   );
 }

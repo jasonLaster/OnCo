@@ -2,6 +2,14 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-06
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-06 | olaparib | Original withdrawn ovarian treatment and current disease-specific scopes not clearly separated | Current FDA label | Separate maintenance, germline-selected breast/pancreas and HRR/BRCA prostate populations |
+| 2026-10-06 | niraparib | TL;DR implied current all-comer ovarian maintenance; Akeega BRCA2 mCSPC indication absent | Current Zejula label, FDA CDx supplement and December 2025 Akeega notice | State HRD first-line and germline-BRCA recurrent scope; add specific prostate indications |
+| 2026-10-06 | rucaparib | Historical taxane requirement presented without regular-approval update; withdrawn ovarian treatment called narrowed; bankruptcy coded as regulatory withdrawal | Current FDA label and December 2025 approval | Separate current from historical indications and remove business event from regulatory withdrawals |
+
 ## 2026-10-01
 
 | Date | Entity | What was wrong | How found | Fix |

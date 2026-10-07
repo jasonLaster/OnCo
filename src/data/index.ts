@@ -1,6 +1,7 @@
 import { trop2PreclinicalWatch } from "./trop2-preclinical-watch";
 import { trop2EmergingModalities } from "./trop2-emerging-modalities";
 import { trop2TrialLandscape } from "./trop2-trial-landscape";
+import { trop2DeeperRegistry } from "./trop2-deeper-registry";
 import { cancers } from "./cancers";
 import { canonicalTermCategory } from "./term-categories";
 import { sections } from "./sections";
@@ -202,6 +203,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...trop2PreclinicalWatch,
   ...trop2EmergingModalities,
   ...trop2TrialLandscape,
+  ...trop2DeeperRegistry,
   ...cancers,
   ...spikeEntities,
   ...sections,

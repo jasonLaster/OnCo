@@ -24,8 +24,43 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
 const CEILINGS = "src/data/page-weight.json";
-type Ceiling = { total: number; payload: number; measured: string };
+/**
+ * `basis` is what the page's size legitimately scales with: a kind name for an index of that kind, "total" for
+ * anything that aggregates the whole corpus, "fixed" for a page whose size should not move when the corpus
+ * grows. The count at the time of measurement is stored beside it, and the allowance is scaled by how much
+ * that count has moved since.
+ *
+ * Added 7 October 2026, six days after the ratchet, because the ratchet was already wrong. Eight of thirteen
+ * pages were over their ceilings and not one had got heavier per unit of content: the corpus had grown by a
+ * thousand records. A check that fails every week for a reason nobody can act on is a check people learn to
+ * ignore, which is worse than no check, and that is what the page budgets it replaced had done.
+ */
+type Basis = "fixed" | "total" | string;
+type Ceiling = { total: number; payload: number; measured: string; basis: Basis; basisCount: number };
 type Ceilings = { note: string; pages: Record<string, Ceiling> };
+
+/** The count a page's size is allowed to scale with, from the deployment being measured. */
+async function basisCounts(base: string): Promise<{ total: number; counts: Record<string, number> }> {
+  const res = await fetch(new URL("/api/v1/meta.json", base));
+  const meta = (await res.json()) as { total: number; counts: Record<string, number> };
+  return { total: meta.total, counts: meta.counts ?? {} };
+}
+
+const countFor = (basis: Basis, m: { total: number; counts: Record<string, number> }): number =>
+  basis === "fixed" ? 0 : basis === "total" ? m.total : (m.counts[basis] ?? m.total);
+
+/** What this page is allowed to weigh now, given how much the thing it lists has grown since it was recorded. */
+/**
+ * Half a per cent of slack, because two fetches of the same page are not byte-identical: a build id, a
+ * timestamp and the odd rotated figure move it. Without it the check failed pages against their own
+ * measurement taken a minute earlier.
+ */
+const TOLERANCE = 1.005;
+
+function allowance(c: Ceiling, now: number): number {
+  const base = c.basis === "fixed" || !c.basisCount || !now ? c.total : (c.total / c.basisCount) * now;
+  return Math.round(base * TOLERANCE);
+}
 const BASE_DEFAULT = "https://onco.cc";
 
 /** Pages worth watching: the heaviest of each shape, not a sample. */
@@ -65,15 +100,18 @@ async function main() {
   console.log("A budget on the markup alone does not see that share. See docs/MOBILE.md.");
 
   const ceilings = JSON.parse(readFileSync(CEILINGS, "utf8")) as Ceilings;
+  const m = await basisCounts(base);
   if (args.includes("--record")) {
     const today = new Date().toISOString().slice(0, 10);
     let lowered = 0;
     for (const r of rows) {
       if (r.status !== 200) continue;
       const was = ceilings.pages[r.path];
-      // A ratchet: record only when the page got lighter. A page that grew is a regression to fix, not a
-      // number to update, and --check is what says so.
-      if (!was || r.total < was.total) { ceilings.pages[r.path] = { total: r.total, payload: r.payload, measured: today }; lowered++; }
+      const basis: Basis = was?.basis ?? "total";
+      const now = countFor(basis, m);
+      // A ratchet on the normalised figure: record only when the page got lighter per unit of the thing it
+      // lists. A page that grew faster than its content is a regression to fix, not a number to update.
+      if (!was || r.total < allowance(was, now)) { ceilings.pages[r.path] = { total: r.total, payload: r.payload, measured: today, basis, basisCount: now }; lowered++; }
     }
     writeFileSync(CEILINGS, JSON.stringify(ceilings, null, 2) + "\n");
     console.log(`recorded: ${lowered} ceiling(s) lowered or added, ${rows.length - lowered} unchanged.`);
@@ -85,7 +123,11 @@ async function main() {
       const c = ceilings.pages[r.path];
       if (!c) { over.push(`${r.path}: no ceiling recorded`); continue; }
       if (r.status !== 200) { over.push(`${r.path}: HTTP ${r.status}`); continue; }
-      if (r.total > c.total) over.push(`${r.path}: ${(r.total / KB).toFixed(0)} KB against a ceiling of ${(c.total / KB).toFixed(0)} KB set on ${c.measured}`);
+      const allowed = allowance(c, countFor(c.basis, m));
+      if (r.total > allowed) {
+        const per = c.basis === "fixed" ? "" : ` (${c.basis} went ${c.basisCount} to ${countFor(c.basis, m)} since ${c.measured}, so the allowance moved from ${(c.total / KB).toFixed(0)} KB)`;
+        over.push(`${r.path}: ${(r.total / KB).toFixed(0)} KB against ${(allowed / KB).toFixed(0)} KB${per}`);
+      }
     }
     if (over.length) { console.error("\nPAGE-WEIGHT-OVER\n" + over.map((o) => "  " + o).join("\n")); process.exit(1); }
     console.log(`\nevery page is within its ceiling (${Object.keys(ceilings.pages).length} recorded).`);

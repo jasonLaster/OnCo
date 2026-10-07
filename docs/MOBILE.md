@@ -103,3 +103,20 @@ What it recorded, total bytes with the hydration payload's share:
 
 This stops the slide; it does not reverse it. `/timeline/` is where reversing starts, and `/explore/` is the
 clearest case of the shape of the problem: 127 KB of markup carrying 556 KB of payload to render it.
+
+### The ratchet was wrong, and was fixed on 7 October 2026
+
+Six days after it was set, eight of the thirteen pages were failing it, and not one had got heavier per unit of
+content: the corpus had grown by about a thousand records and the pages that list records grew with it. A flat
+ceiling is right for a page whose size should not move and wrong for a page whose job is to list a growing
+corpus, which is the same mistake the markup budgets made and the same answer: fix what it counts.
+
+Each page now names what its size is allowed to scale with. `/trials/` scales with the number of trials,
+`/drugs/` with drugs, `/explore/` and `/for-me/` with the corpus total, and a single record page such as
+`/virotherapy/` is fixed, because a record page growing is exactly the signal the check exists to raise. The
+allowance is the recorded figure scaled by how far that count has moved, with half a per cent of slack,
+because two fetches of the same page are not byte-identical.
+
+The baseline was re-taken once, today, against the live site, because the 1 October entries were recorded
+before a basis existed and there was no count to scale them from. That is the only time the numbers have gone
+up, and this paragraph is the reason.

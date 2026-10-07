@@ -13,7 +13,7 @@ import { describe, expect, it } from "vitest";
  * and shipped 2,150 KB, because the hydration payload is three quarters of the page. Every markup budget was
  * green the whole time. A measure that cannot see three quarters of the thing is not a measure.
  */
-type Ceilings = { note: string; pages: Record<string, { total: number; payload: number; measured: string }> };
+type Ceilings = { note: string; pages: Record<string, { total: number; payload: number; measured: string; basis: string; basisCount: number }> };
 
 describe("what a reader downloads", () => {
   const c = JSON.parse(readFileSync("src/data/page-weight.json", "utf8")) as Ceilings;
@@ -44,5 +44,17 @@ describe("what a reader downloads", () => {
   it("the file says why it exists, because the next person will want to raise a number", () => {
     expect(c.note).toMatch(/ratchet/i);
     expect(c.note).toMatch(/hydration payload/i);
+  });
+
+  it("every page says what its size is allowed to scale with", () => {
+    // A flat ceiling failed eight of thirteen pages within a week of being set, because the corpus grew by a
+    // thousand records and nothing had got heavier per unit of content. Each page now names a basis: a kind
+    // for an index of that kind, "total" for anything that aggregates, "fixed" for a page whose size should
+    // not move at all. A scaling page must carry the count it was measured against, or it cannot scale.
+    for (const [path, v] of entries) {
+      expect(v.basis, `${path} basis`).toBeTruthy();
+      if (v.basis === "fixed") expect(v.basisCount, `${path} is fixed and needs no count`).toBe(0);
+      else expect(v.basisCount, `${path} scales with ${v.basis} and needs the count it was measured against`).toBeGreaterThan(0);
+    }
   });
 });

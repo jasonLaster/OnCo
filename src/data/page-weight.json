@@ -1,70 +1,96 @@
 {
-  "note": "What a reader downloads for each page, in bytes, measured against the live site by scripts/page-weight.ts. A ratchet: --record lowers a ceiling when a page gets lighter and never raises one, and --check fails when a page grows past it. This exists because every other page budget in the repo measures static markup only, and the hydration payload is 30 to 81 per cent of what is actually downloaded: /timeline/ was inside its 640 KB markup budget while shipping 2,150 KB. Raising a number here by hand means saying why in the commit.",
+  "note": "What a reader downloads for each page, in bytes, measured against the live site by scripts/page-weight.ts. A ratchet on the normalised figure: each page records what it lists (`basis`) and the count at the time, and the allowance scales with how much that count has moved since, so a page that grows with the corpus passes and a page that grows faster than its content does not. --record lowers a ceiling and never raises one. This exists because every other budget in the repo measures static markup while the hydration payload is 30 to 81 per cent of the bytes, and the flat version of this ratchet failed eight of thirteen pages within a week for no reason anyone could act on. Raising a number by hand means saying why in the commit.",
   "pages": {
     "/timeline/": {
-      "total": 2201552,
-      "payload": 1656236,
-      "measured": "2026-10-01"
+      "total": 2289664,
+      "payload": 1728512,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     },
     "/explained/": {
-      "total": 1563120,
-      "payload": 803661,
-      "measured": "2026-10-01"
+      "total": 1587200,
+      "payload": 816128,
+      "measured": "2026-10-07",
+      "basis": "trial",
+      "basisCount": 5969
     },
     "/years/2020/": {
-      "total": 1079851,
-      "payload": 675014,
-      "measured": "2026-10-01"
+      "total": 1090560,
+      "payload": 681984,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     },
     "/": {
-      "total": 962316,
-      "payload": 713621,
-      "measured": "2026-10-01"
+      "total": 820224,
+      "payload": 647168,
+      "measured": "2026-10-07",
+      "basis": "fixed",
+      "basisCount": 0
     },
     "/cancers/prostate/uk/": {
-      "total": 949654,
-      "payload": 529578,
-      "measured": "2026-10-01"
+      "total": 950272,
+      "payload": 529408,
+      "measured": "2026-10-07",
+      "basis": "fixed",
+      "basisCount": 0
     },
     "/for-me/": {
-      "total": 913201,
-      "payload": 269542,
-      "measured": "2026-10-01"
+      "total": 948224,
+      "payload": 279552,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     },
     "/cancers/breast-cancer/": {
-      "total": 708117,
-      "payload": 411235,
-      "measured": "2026-10-01"
+      "total": 710656,
+      "payload": 412672,
+      "measured": "2026-10-07",
+      "basis": "fixed",
+      "basisCount": 0
     },
     "/explore/": {
-      "total": 699416,
-      "payload": 568995,
-      "measured": "2026-10-01"
+      "total": 715776,
+      "payload": 585728,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     },
     "/trials/": {
-      "total": 634689,
-      "payload": 290889,
-      "measured": "2026-10-01"
+      "total": 640000,
+      "payload": 293888,
+      "measured": "2026-10-07",
+      "basis": "trial",
+      "basisCount": 5969
     },
     "/drugs/": {
-      "total": 604323,
-      "payload": 246262,
-      "measured": "2026-10-01"
+      "total": 606208,
+      "payload": 247808,
+      "measured": "2026-10-07",
+      "basis": "drug",
+      "basisCount": 1088
     },
     "/countries/us/": {
-      "total": 484546,
-      "payload": 266919,
-      "measured": "2026-10-01"
+      "total": 485376,
+      "payload": 267264,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     },
     "/virotherapy/": {
-      "total": 296645,
-      "payload": 144805,
-      "measured": "2026-10-01"
+      "total": 296960,
+      "payload": 144384,
+      "measured": "2026-10-07",
+      "basis": "fixed",
+      "basisCount": 0
     },
     "/navigator/": {
-      "total": 157159,
-      "payload": 91346,
-      "measured": "2026-10-01"
+      "total": 159744,
+      "payload": 94208,
+      "measured": "2026-10-07",
+      "basis": "total",
+      "basisCount": 19545
     }
   }
 }

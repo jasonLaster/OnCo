@@ -7,6 +7,8 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 7 October 2026
+- Thirteen contributed fixes: nine fetchers that keep what they already had, four that let search recover
+- Revert "Expire older-day OpenAlex work caches before dating research snapshots (#213)"
 - Eleven contributed TROP2 and PARP pull requests, and the trials they brought
 - AGENTS.md: never resolve a contributor's pull request by union
 - Eleven contributed records land, and the trials they brought get an inbound edge
@@ -16,6 +18,24 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - chore: check regional approvals against the EMA register (#228)
 - chore: refresh FDA approvals feed (OCE notifications, openFDA drugsfda) (#227)
 - chore: EU regional rows read from the EMA register pages (#226)
+- Expire older-day OpenAlex work response caches
+- Retain survival snapshots when a source site fails
+- Retain institution research after required request failures
+- Preserve congress abstract snapshots after failed pages
+- Type the preprint request test cases consistently
+- Retain preprints when search responses are incomplete
+- Keep citation snapshot when an OpenAlex batch fails
+- Retain pulse items when a source returns a non-feed response
+- Restore the page origin after closing keyboard shortcuts
+- Scope recovery assertions to lexical search errors
+- Preserve paper snapshots after malformed search responses
+- Restore command palette opener focus on dismissal
+- Require verified rows before advancing the EMA check stamp
+- fix: retry browser Ask index after temporary failures
+- Recover search results and inline answers after index failures
+- Reject malformed browser record envelopes before caching
+- fix: retain EMA snapshots after unreadable refresh input
+- Report browser record failures and permit Ask retries
 
 ### 6 October 2026
 - Deepen PARP1 programmes, biomarker evidence and clinical trial states

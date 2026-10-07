@@ -57,6 +57,8 @@ learn the hard way and cannot be a test. Everything else is enforced or written 
   serves 200 before saying it shipped.
 - **Verify on the rendered page, not only in the test.** Reading the live page has caught a gendered pronoun, a
   name printed twice in one sentence, and a budget measuring a quarter of what the reader downloads.
+- **Show side-by-side screenshots when opening a product PR.** Capture the same page, viewport and scroll
+  position with and without the feature, and put the labelled comparison in the PR description.
 - **A fragment in a pattern needs word boundaries.** `imid` matched inside `pyrimidine` and put a myeloma drug's
   blood-clot warning on every fluoropyrimidine page, including one about a skin cream. Six review passes missed it.
 - **A full-suite failure under load is usually the machine.** Five whole-page render files (`nested-anchors`,

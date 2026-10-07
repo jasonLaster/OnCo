@@ -48,6 +48,5 @@ export function SectionDisclosures({ children, className }: { children: ReactNod
     };
   }, []);
 
-
   return <div ref={section} className={className}>{children}</div>;
 }

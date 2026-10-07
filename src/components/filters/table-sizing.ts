@@ -8,6 +8,7 @@ export function installTableSizing(table: HTMLTableElement) {
   const group = table.querySelector("colgroup")!;
   const cols = headers.map(() => group.appendChild(document.createElement("col")));
   const manual = new Map<number, number>();
+  const minimums = headers.map(() => MIN_COLUMN_WIDTH);
   const context = document.createElement("canvas").getContext("2d");
   let frame = 0;
   let disposed = false;
@@ -27,7 +28,14 @@ export function installTableSizing(table: HTMLTableElement) {
     // keep their natural width rather than being estimated as plain text.
     const extras = cell.tagName === "TH" ? cell.querySelectorAll("button").length * 20 + 12 : 0;
     const intrinsic = Math.max(0, ...Array.from(cell.querySelectorAll<HTMLElement>(".chip, svg, img")).map((el) => el.getBoundingClientRect().width + padding));
-    return { text, width: Math.max(width(rendered) + extras, intrinsic), token: Math.max(0, ...rendered.split(/\s+/).map(width), intrinsic) };
+    const bounded = Array.from(cell.children).map((el) => {
+      const min = getComputedStyle(el).minWidth;
+      return min.endsWith("px") ? parseFloat(min) + padding : 0;
+    });
+    const unbreakable = Array.from(cell.querySelectorAll<HTMLElement>(".chip, .whitespace-nowrap")).filter((el) => getComputedStyle(el).whiteSpace === "nowrap")
+      .map((el) => el.getBoundingClientRect().width + padding);
+    const minimum = Math.max(0, ...bounded, ...unbreakable);
+    return { text, width: Math.max(width(rendered) + extras, intrinsic, minimum), token: Math.max(0, ...rendered.split(/\s+/).map(width), intrinsic), minimum };
   };
   const apply = (widths: number[]) => {
     widths.forEach((width, i) => {
@@ -48,10 +56,18 @@ export function installTableSizing(table: HTMLTableElement) {
     const models = visible.map(({ cell, i }) => {
       const head = measure(cell);
       const body = rows.map((row) => row.cells[i]).filter(Boolean).map(measure);
-      return columnSize(body.map((c) => c.text), body.map((c) => c.width), body.map((c) => c.token), head.width);
+      minimums[i] = Math.ceil(Math.max(MIN_COLUMN_WIDTH, head.minimum, ...body.map((c) => c.minimum)));
+      cell.querySelector("[data-column-resize]")?.setAttribute("aria-valuemin", String(minimums[i]));
+      return columnSize(body.map((c) => c.text), body.map((c) => c.width), body.map((c) => c.token), head.width, minimums[i]);
     });
     const overrides = new Map<number, number>();
-    visible.forEach(({ i }, n) => { if (manual.has(i)) overrides.set(n, manual.get(i)!); });
+    visible.forEach(({ i }, n) => {
+      if (manual.has(i)) {
+        const width = Math.max(minimums[i], manual.get(i)!);
+        manual.set(i, width);
+        overrides.set(n, width);
+      }
+    });
     const widths = fitColumns(models, wrapper.clientWidth, overrides);
     const all = headers.map(() => 0);
     visible.forEach(({ i }, n) => { all[i] = widths[n]; });
@@ -65,7 +81,7 @@ export function installTableSizing(table: HTMLTableElement) {
     const handle = cell.querySelector<HTMLElement>("[data-column-resize]")!;
     const currentWidths = () => headers.map((head) => getComputedStyle(head).display === "none" ? 0 : head.getBoundingClientRect().width);
     const resize = (widths: number[], width: number) => {
-      widths[i] = clampColumnWidth(width);
+      widths[i] = Math.max(minimums[i], clampColumnWidth(width));
       manual.set(i, widths[i]);
       apply(widths);
     };

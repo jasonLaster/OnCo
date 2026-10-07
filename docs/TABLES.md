@@ -228,6 +228,9 @@ compact; longer text receives more of the available card width. Minimum widths
 can exceed the card, in which case the existing `ScrollRow` contains the overflow.
 Responsive hidden columns take no space. Tables outside the viewport wait to be
 measured, and font loading, row changes and container resizing trigger a new fit.
+Explicit row minimum widths include cell padding, and non-wrapping values retain
+their full width. Automatic sizing and dragging respect those minimums so row
+controls stay inside their own cells; narrow cards scroll rather than overlap.
 
 Each header has an independent resize separator. Drag it with a mouse, pen or
 touch, or focus it and use the left/right arrows (Shift moves in larger steps).

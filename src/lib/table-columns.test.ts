@@ -28,4 +28,12 @@ describe("content-aware column sizing", () => {
     expect(clampColumnWidth(-100)).toBe(56);
     expect(clampColumnWidth(9000)).toBe(2000);
   });
+  it("keeps fixed row controls and non-wrapping badges inside their columns on mobile", () => {
+    // The name row needs 220px plus 28px of cell padding; its save button
+    // must not overlap the adjacent status badge when the card is narrower.
+    const name = columnSize(["A treatment name"], [260], [100], 60, 248);
+    const status = columnSize(["Approved 2007"], [172], [90], 150, 196);
+    expect(fitColumns([name, status], 356)).toEqual([248, 196]);
+    expect(columnSize(["short"], [80], [60], 70, 320).min).toBe(320);
+  });
 });

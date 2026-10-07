@@ -13,14 +13,16 @@ const percentile = (values: number[], fraction: number) => {
   const sorted = [...values].sort((a, b) => a - b);
   return sorted[Math.round((sorted.length - 1) * fraction)] ?? 0;
 };
-export function columnSize(texts: string[], widths: number[], tokens: number[], headerWidth: number): ColumnSize {
+export function columnSize(texts: string[], widths: number[], tokens: number[], headerWidth: number, minimumWidth = 0): ColumnSize {
   const values = texts.filter(Boolean);
   const numeric = values.length > 0 && values.filter((s) => /^[\d\s,.%$€£()+\-/:]+$/.test(s)).length / values.length >= 0.7;
   const length = values.reduce((sum, s) => sum + s.length, 0) / Math.max(1, values.length);
   const kind = numeric ? "numeric" : length <= 16 ? "compact" : "text";
   const floor = kind === "numeric" ? 72 : kind === "compact" ? 96 : 144;
   const ceiling = kind === "numeric" ? 160 : kind === "compact" ? 240 : 420;
-  const min = Math.ceil(Math.max(headerWidth, floor, Math.min(220, percentile(tokens, 0.9))));
+  // A text outlier may wrap, but fixed controls and explicitly bounded content
+  // must fit even when they exceed the text token ceiling.
+  const min = Math.ceil(Math.max(headerWidth, floor, minimumWidth, Math.min(220, percentile(tokens, 0.9))));
   const preferred = Math.ceil(Math.max(min, Math.min(ceiling, percentile(widths, kind === "text" ? 0.74 : 0.82) * (kind === "text" ? 0.72 : 1))));
   return { min, preferred, weight: kind === "text" ? 1.4 + length / 40 : kind === "compact" ? 0.9 : 0.45 };
 }

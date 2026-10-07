@@ -3681,12 +3681,22 @@ export const pipelineTrialsWave5: TrialInput[] = [
     summary: "Taletrectinib Phase 2 Global Study in ROS1 Positive NSCLC is a phase 2 interventional study registered as NCT04919811 by Nuvation Bio Inc., with 217 participants enrolled, started 2021-09-01 and due to reach its primary completion in 2025-06-11. Interventions recorded: Taletrectinib. Conditions listed: Non Small Cell Lung Cancer. No results are recorded here; the registry entry is the source.",
     drugs: ["taletrectinib"], cancers: ["nsclc","sclc", "ros1-positive-nsclc"], companies: ["nuvation-bio"], 
     links: [{ label: "ClinicalTrials.gov NCT04919811", url: "https://clinicaltrials.gov/study/NCT04919811" }] },
-  { id: "nct05489211", technologies: ["adc", "topoisomerase-inhibitors"], aka: ["TROPION-PanTumor03"], kind: "trial", name: "Study of Dato-DXd as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Tumours (TROPION-PanTumor03)", nct: "NCT05489211", phase: "2", status: "recruiting", sponsor: "AstraZeneca", enrolled: 454, asOf, tags,
-    setting: "A Phase II, Multicentre, Open-label, Master Protocol to Evaluate the Efficacy and Safety of Datopotamab Deruxtecan (Dato-DXd) as Monotherapy and in Combination With Anticancer Agents in Patients With Advanced/Metastatic Solid Tumours",
+  { id: "nct05489211", technologies: ["adc", "topoisomerase-inhibitors"], aka: ["TROPION-PanTumor03"], kind: "trial", name: "Study of Dato-DXd as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Tumours (TROPION-PanTumor03)", nct: "NCT05489211", phase: "2", status: "recruiting", sponsor: "AstraZeneca", enrolled: 454,  tags,
+    setting: "Study of Dato-DXd as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Tumours (TROPION-PanTumor03)",
     tldr: "A phase 2 trial of Datopotamab deruxtecan, Capecitabine, Fluorouracil in endometrial cancer and prostate cancer, run by AstraZeneca, now recruiting.",
-    summary: "Study of Dato-DXd as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Tumours (TROPION-PanTumor03) is a phase 2 interventional study registered as NCT05489211 by AstraZeneca, with 454 participants planned, started 2022-09-06 and due to reach its primary completion in 2027-10-01. Interventions recorded: Datopotamab deruxtecan (Dato-DXd), Capecitabine, 5-Fluorouracil, Volrustomig, Carboplatin. Conditions listed: Endometrial Cancer, Gastric Cancer, Metastatic Castration-resistant Prostate Cancer, Ovarian Cancer. No results are recorded here; the registry entry is the source.",
+    summary: "Study of Dato-DXd as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Tumours (TROPION-PanTumor03). ClinicalTrials.gov record last updated 2026-09-23: recruiting. Enrollment is planned at 454 participants. Primary completion is estimated at 2027-10-01. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications. Registered interventions: Datopotamab deruxtecan (Dato-DXd), Capecitabine, 5-Fluorouracil, Volrustomig, Carboplatin, Bevacizumab, Rilvegostomig, Prednisone/ prednisolone, Cisplatin. Registered primary measures: Objective response rate (ORR); The number of subjects with adverse events/serious adverse events; PSA50 response (Substudy 3 only).",
     drugs: ["datopotamab-deruxtecan","capecitabine","fluorouracil","carboplatin","bevacizumab","rilvegostomig"], cancers: ["endometrial","prostate","ovarian","colorectal"], companies: ["astrazeneca"], 
-    links: [{ label: "ClinicalTrials.gov NCT05489211", url: "https://clinicaltrials.gov/study/NCT05489211" }] },
+    links: [{ label: "ClinicalTrials.gov NCT05489211", url: "https://clinicaltrials.gov/study/NCT05489211" }],
+    asOf: "2026-10-06",
+
+    started: "2022-09-06",
+
+    startedType: "actual",
+
+    notes: ["ClinicalTrials.gov record last updated 2026-09-23: recruiting. Enrollment is planned at 454 participants. Primary completion is estimated at 2027-10-01. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications."],
+
+    targets: ["trop2"],
+  },
   { id: "nct06787612", kind: "trial", name: "Investigation of Ubamatamab Combination Therapy in Adult Participants With Platinum-Resistant Ovarian Cancer", nct: "NCT06787612", phase: "2", status: "recruiting", sponsor: "Regeneron Pharmaceuticals", enrolled: 297, asOf, tags,
     setting: "Multi-Arm Phase 2 Platform Study of Ubamatamab (REGN4018; MUC16×CD3 Bispecific Antibody) With or Without Additional Agents in Platinum-Resistant Ovarian Cancer",
     tldr: "A phase 2 trial of Bevacizumab, Cemiplimab, Fianlimab in ovarian cancer, run by Regeneron Pharmaceuticals, now recruiting.",

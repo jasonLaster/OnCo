@@ -856,12 +856,22 @@ export const pipelineTrialsWave2: TrialInput[] = [
     summary: "A Clinical Study of JMT101 in Combination With Osimertinib Versus Osimertinib Alone as First-Line Treatment for Patients With Locally Advanced or Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC) Harboring Epidermal Growth Factor Receptor (EGFR) Sensitive Mutations is a phase 3 interventional study registered as NCT06735391, led by Shanghai JMT-Bio, and recruiting on the registry. Official title: A Phase 3 Clinical Study of JMT101 in Combination With Osimertinib Versus Osimertinib Alone as First-Line Treatment for Patients With Locally Advanced or Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC) Harboring Epidermal Growth Factor Receptor (EGFR) Sensitive Mutations. Planned enrolment is 516 participants (estimated). The study started in 2024-10-23 and primary completion is expected in 2026-09-30. No results have been posted on ClinicalTrials.gov.",
     drugs: ["jmt101"], cancers: ["nsclc", "egfr-mutant-nsclc"], companies: ["cspc"],
     links: [{ label: "ClinicalTrials.gov NCT06735391", url: "https://clinicaltrials.gov/study/NCT06735391" }] },
-  { id: "nct07533123", kind: "trial", name: "A Phase III Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Triple-Negative Breast Cancer Who Have Failed Standard of Care", nct: "NCT07533123", phase: "3", status: "recruiting", asOf, tags, sponsor: "Jiangsu Alphamab Biopharmaceuticals", enrolled: 364,
-    setting: "A Randomized, Controlled, Open-Label Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Unresectable Locally Advanced, Recurrent, or Metastatic Triple-Negative Breast Cancer Who Have Failed at Least Two Lines of Prior Systemic Therapy",
+  { id: "nct07533123", kind: "trial", name: "A Phase III Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Triple-Negative Breast Cancer Who Have Failed Standard of Care", nct: "NCT07533123", phase: "3", status: "recruiting",  tags, sponsor: "Jiangsu Alphamab Biopharmaceuticals", enrolled: 364,
+    setting: "A Phase III Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Triple-Negative Breast Cancer Who Have Failed Standard of Care",
     tldr: "A phase 3 trial testing JSKN016 in triple-negative breast cancer, now recruiting.",
-    summary: "A Phase III Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Triple-Negative Breast Cancer Who Have Failed Standard of Care is a phase 3 interventional study registered as NCT07533123, led by Jiangsu Alphamab Biopharmaceuticals, and recruiting on the registry. Official title: A Randomised, Controlled, Open-Label Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Unresectable Locally Advanced, Recurrent, or Metastatic Triple-Negative Breast Cancer Who Have Failed at Least Two Lines of Prior Systemic Therapy. Planned enrolment is 364 participants (estimated). The study started in 2026-03-17 and primary completion is expected in 2029-03-17. No results have been posted on ClinicalTrials.gov.",
+    summary: "A Phase III Study of JSKN016 Versus Treatment of Physician's Choice in Patients With Triple-Negative Breast Cancer Who Have Failed Standard of Care. ClinicalTrials.gov record last updated 2026-04-16: recruiting. Enrollment is planned at 364 participants. Primary completion is estimated at 2029-03-17. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications. Registered interventions: JSKN016 Injection, Eribulin Mcsilate Injection, Vinorelbine Tartrate Injection, Capecitabine Tablets, Gemcitabine Hydrochloride for Injection, Sacituzumab Govitecan for Injection. Registered primary measures: PFS (Progression-Free Survival); OS (Overall Survival).",
     drugs: ["jskn016"], cancers: ["tnbc", "tnbc-metastatic"], companies: ["alphamab"],
-    links: [{ label: "ClinicalTrials.gov NCT07533123", url: "https://clinicaltrials.gov/study/NCT07533123" }] },
+    links: [{ label: "ClinicalTrials.gov NCT07533123", url: "https://clinicaltrials.gov/study/NCT07533123" }],
+    asOf: "2026-10-06",
+
+    started: "2026-03-17",
+
+    startedType: "estimated",
+
+    notes: ["ClinicalTrials.gov record last updated 2026-04-16: recruiting. Enrollment is planned at 364 participants. Primary completion is estimated at 2029-03-17. No tabular results are posted on ClinicalTrials.gov; this does not exclude separate publications."],
+
+    targets: ["trop2"],
+  },
   { id: "nct06635824", aka: ["ABBIL1TY NSCLC-06"], kind: "trial", name: "Trial to Evaluate Acasunlimab and Pembrolizumab Combination Superiority Over Standard of Care Docetaxel in Non-Small Cell Lung Cancer (ABBIL1TY NSCLC-06)", nct: "NCT06635824", phase: "3", status: "active", asOf, tags, sponsor: "Genmab", enrolled: 191,
     setting: "A Prospective, Open-Label, Randomized, Phase 3 Trial of Acasunlimab (GEN1046) in Combination With Pembrolizumab Versus Docetaxel in Subjects With PD-L1 Positive Metastatic Non-Small Cell Lung Cancer After Treatment With a PD-1/PD-L1 Inhibitor and Platinum-Containing Chemotherapy (ABBIL1TY NSCLC-06)",
     tldr: "A phase 3 trial testing Acasunlimab in non-small-cell lung cancer, active and no longer recruiting.",

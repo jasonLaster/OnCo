@@ -16,6 +16,8 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 | 2026-10-06 | [EB-NK-301](/drugs/eb-nk-301/) | Presented as phase 2 without making the combined phase 1/2 protocol clear. | NCT07589530. | Explicit phase 1/2 wording and unproven efficacy; conservative phase 1 headline. |
 | 2026-10-06 | [TROP2](/targets/trop2/) | Blanket low normal-tissue expression in the summary and TL;DR. | Human Protein Atlas TACSTD2 normal-tissue protein annotation and separate RNA analysis. | State normal epithelial expression and distinguish RNA, protein, membrane localization and response prediction. |
 | 2026-10-06 | [SHR-A1921](/drugs/shr-a1921/) | Publicly reported TROP2 target omitted. | Resolved Cancer Cell first-in-human paper and PubMed abstract. | Add target and cited pooled phase I results without presenting them as TNBC-specific efficacy. |
+| 2026-10-06 | [TROPION-Breast03](/trials/tropion-breast03/) | Summary retained 1,075 participants and an undifferentiated primary comparison. | NCT05629585 updated June 15, 2026. | Use actual 1,174 participants and Dato plus durvalumab versus investigator choice as primary iDFS comparison. |
+| 2026-10-06 | [ASCENT-05](/trials/ascent-05/) and [TROPION-Breast05](/trials/tropion-breast05/) | Speculative readout wording and implied future efficacy. | Current registry records. | State registered settings, status, planned enrollment, primary endpoints and estimated primary completion. |
 
 ## 2026-10-01
 

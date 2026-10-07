@@ -63,6 +63,12 @@ learn the hard way and cannot be a test. Everything else is enforced or written 
   `mechanics`, `record-fold`, `record-top`, `EntityDetail`) time out on their own 120-second guard when other
   worktrees are building, and pass alone. Re-run the file before reporting it, and use `SLOW_TEST_MS`, which is
   the env var the chain already sets for this. Do not change a test to make it green.
+- **Never resolve a contributor's pull request by union.** `scripts/resolve-additive.py` keeps both sides,
+  which is right for an append-only log or a registry line and wrong for an object literal where both sides
+  rewrote the same record: on 7 October eleven overlapping pull requests were batch-merged that way and it
+  produced TypeScript that would not parse, with two broken files committed before anyone noticed. Merge them
+  one at a time and read each hunk. Where an earlier pull request already corrected a record, keep that
+  version; where arrays differ, union the arrays so nothing the contributor wrote is lost.
 - **The two registry files conflict on every parallel round, and one resolver gets it wrong.**
   `src/data/spikes/index.ts` resolves by union with `scripts/resolve-spike-registry.py`.
   `scripts/spike-sources.ts` holds its map on one very long line, and `scripts/resolve-additive.py` keeps both

@@ -15,6 +15,21 @@ export const TARGET_XREFS_GENERATED = "2026-09-23";
 
 // Gene records written by scripts/fetch-cancer-genes.ts carry their own HGNC-derived cross-references; a hand-fetched entry below wins.
 export const targetXrefs: Record<string, TargetXref> = { ...targetXrefsGenes, ...targetXrefsCansim,
+  // PTK7 fetched with the existing HGNC/ChEMBL generator, restricted to this target, 2026-10-06.
+  "ptk7": {
+    genes: [
+      {
+        symbol: "PTK7",
+        name: "protein tyrosine kinase 7 (inactive)",
+        hgnc: "HGNC:9618",
+        ensembl: "ENSG00000112655",
+        uniprot: "Q13308",
+        entrez: "5754",
+        omim: "601890",
+        locus: "6p21.1"
+      }
+    ]
+  },
   "srd5a2": {
     genes: [
       {

@@ -682,7 +682,7 @@ export const technologies: TechnologyInput[] = [
     terms: ["payload", "linker", "dar", "bystander-effect", "ild"], companies: ["celldex", "tubulis", "adcendo", "alentis-therapeutics", "bighat-biosciences", "callio-therapeutics", "cytomx-therapeutics", "dantari", "emergence-therapeutics", "enlaza-therapeutics", "firefly-bio", "ideaya-biosciences", "iksuda-therapeutics", "mablink-bioscience", "myricx-bio", "mythic-therapeutics", "nbe-therapeutics", "orum-therapeutics", "pheon-therapeutics", "profoundbio", "tallac-therapeutics", "valink-therapeutics"], trials: ["aaml0531", "luminosity", "nct07299747", "nct06797999", "nct06842498", "nct07354711", "nct07258407", "nct06464055"], related: ["idea-efflux-agnostic", "idea-neoadjuvant-adc-io"], links: [{ label: "Wikipedia", url: W("Antibody-drug_conjugate") }],
   },
   {
-    id: "bispecific-adc", dependsOn: ["adc", "bispecific-antibody"], links: [{ label: "ClinicalTrials.gov NCT06382142: BL-B01D1-307", url: "https://clinicaltrials.gov/study/NCT06382142" }, { label: "ClinicalTrials.gov NCT06304974: PANKU-Esophagus01 (BL-B01D1-305)", url: "https://clinicaltrials.gov/study/NCT06304974" }], kind: "technology", name: "Bispecific ADC", sections: ["adcs"], status: "phase-3", asOf, since: 2023, generation: "4th (next-gen)",
+    id: "bispecific-adc", dependsOn: ["adc", "bispecific-antibody"], links: [{"label": "ClinicalTrials.gov NCT06382142: BL-B01D1-307", "url": "https://clinicaltrials.gov/study/NCT06382142"}, {"label": "ClinicalTrials.gov NCT06304974: PANKU-Esophagus01 (BL-B01D1-305)", "url": "https://clinicaltrials.gov/study/NCT06304974"}, {"label": "Publisher abstract", "url": "https://doi.org/10.1158/1538-7445.am2024-2616"}], kind: "technology", name: "Bispecific ADC", sections: ["adcs"], status: "phase-3",  since: 2023, generation: "4th (next-gen)",
     tldr: "A bispecific ADC is an ADC whose antibody grabs two different proteins on the cancer cell, so it sticks better to tumour and less to healthy tissue.",
     summary: "Izalontamab brengitecan (iza-bren, EGFR×HER3, SystImmune/BMS) is the first bispecific ADC with positive phase 3 results, meeting PFS and OS in previously treated TNBC (BL-B01D1-307, February 2026) and in oesophageal cancer, with first-line trials (IZABRIGHT-Breast01) ongoing. Eight bsADC phase 3 trials started in 2025. c-MET×EGFR is the most crowded pair (tilatamig samrotecan, AZD9592, 24 candidates); Nectin-4×TROP2 (AK146D1, AVZO-103), HER2 biparatopic (zanidatamab zovodotin), and PD-L1×B7-H3 (BH4601) follow.",
     principle: "Dual antigen binding increases avidity and internalisation and can enable lysosomal trafficking (e.g., pairing with a rapidly internalising receptor). Biparatopic designs cross-link one receptor.",
@@ -694,9 +694,13 @@ export const technologies: TechnologyInput[] = [
     companies: ["systimmune", "bms", "astrazeneca", "akeso", "avenzo", "valink-therapeutics"],
     cancers: ["tnbc", "nsclc", "esophageal", "urothelial"],
     tags: ["frontier"],
+
+    asOf: "2026-10-06",
+
+    related: ["bcg033"],
   },
   {
-    id: "dual-payload-adc", links: [{ label: "Yamazaki et al., Antibody-drug conjugates with dual payloads for combating breast tumour heterogeneity and drug resistance (Nature Communications 2021)", url: "https://doi.org/10.1038/s41467-021-23793-7" }], kind: "technology", name: "Dual-payload ADC", sections: ["adcs"], status: "phase-1", asOf, generation: "4th (next-gen)",
+    id: "dual-payload-adc", links: [{"label": "Yamazaki et al., Antibody-drug conjugates with dual payloads for combating breast tumour heterogeneity and drug resistance (Nature Communications 2021)", "url": "https://doi.org/10.1038/s41467-021-23793-7"}, {"label": "Publisher abstract", "url": "https://doi.org/10.1158/1538-7445.am2026-6928"}, {"label": "Publisher abstract", "url": "https://doi.org/10.1158/1535-7163.targ-25-a124"}, {"label": "Publisher abstract", "url": "https://doi.org/10.1158/1538-7445.am2026-4438"}, {"label": "Publisher abstract", "url": "https://doi.org/10.1158/1557-3265.d32026-a014"}], kind: "technology", name: "Dual-payload ADC", sections: ["adcs"], status: "phase-1",  generation: "4th (next-gen)",
     tldr: "A dual-payload ADC is an ADC carrying two different poisons at once, so the tumour cannot escape by becoming resistant to one.",
     summary: "Programs from Sutro, Mersana, Tavotek/Adcoris (ACR335, TOP1 inhibitor + non-TOP1/non-tubulin, DAR 4+4, phase 1 in 2026), and others place two payloads with distinct mechanisms on one antibody. Rationale: TOP1-payload cross-resistance after T-DXd, sacituzumab, or Dato-DXd. Also 'dual-mechanism' ADCs pairing a cytotoxic with an immune agonist.",
     principle: "Orthogonal site-specific conjugation chemistries attach two payload classes at defined positions.",
@@ -704,6 +708,10 @@ export const technologies: TechnologyInput[] = [
     limitations: ["Manufacturing", "Two toxicity profiles in one molecule"],
     technologies: ["adc", "site-specific-conjugation"],
     tags: ["frontier"], companies: ["callio-therapeutics"],
+
+    asOf: "2026-10-06",
+
+    related: ["catb-101", "cbb-120", "ctph-03", "can020"],
   },
   {
     id: "degrader-antibody-conjugate", dependsOn: ["adc", "protac-degrader"], links: [{ label: "The first PROTAC: a chimeric molecule that tags a protein for destruction (PNAS 2001)", url: "https://doi.org/10.1073/pnas.141230798" }], kind: "technology", name: "Degrader-antibody conjugate (DAC)", sections: ["adcs", "targeted-therapy"], status: "phase-1", asOf, generation: "4th (next-gen)",

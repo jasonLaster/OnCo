@@ -7,6 +7,7 @@ import { fillNodes } from "@/components/T";
 import { ColumnFilter, type ColumnFilterSpec } from "./ColumnFilter";
 import { ScrollRow } from "@/components/ScrollRow";
 import { installTableSizing } from "./table-sizing";
+import { MIN_COLUMN_WIDTH, MAX_COLUMN_WIDTH } from "@/lib/table-columns";
 
 export type Column<T> = {
   key: string;
@@ -115,6 +116,7 @@ export function ResultsTable<T>({ columns, rows, rowKey, sort, onSort, empty, sc
                 <th key={c.key} scope="col" className={`${c.hide ?? ""} ${c.className ?? ""}`} aria-sort={sorted ? (sort!.dir === -1 ? "descending" : "ascending") : undefined}>
                   <ColumnHead column={c} sort={sort} onSort={onSort} />
                   <span data-column-resize role="separator" aria-orientation="vertical" tabIndex={0}
+                    aria-valuenow={MIN_COLUMN_WIDTH} aria-valuemin={MIN_COLUMN_WIDTH} aria-valuemax={MAX_COLUMN_WIDTH}
                     aria-label={t("table.resizeColumn", { col: tl(c.label) })} title={t("table.resizeHint")} />
                 </th>
               );

@@ -71,6 +71,9 @@ describe("column header filter", () => {
     expect(th).not.toContain("<button");
     expect(th).toContain('role="separator"');
     expect(th).toContain('aria-label="Resize What happened column"');
+    expect(th).toContain('aria-valuenow="56"');
+    expect(th).toContain('aria-valuemin="56"');
+    expect(th).toContain('aria-valuemax="2000"');
   });
 
   it("does not render the popover until opened", () => {

@@ -6,6 +6,7 @@ import { useT } from "@/lib/i18n/ui";
 import { fillNodes } from "@/components/T";
 import { ColumnFilter, type ColumnFilterSpec } from "./ColumnFilter";
 import { ScrollRow } from "@/components/ScrollRow";
+import { installTableSizing } from "./table-sizing";
 
 export type Column<T> = {
   key: string;
@@ -75,11 +76,16 @@ export function ResultsTable<T>({ columns, rows, rowKey, sort, onSort, empty, sc
    */
   more?: { total: number; load: () => void; loading?: boolean };
 }) {
+  const table = useRef<HTMLTableElement>(null);
+  const columnKeys = columns.map((c) => c.key).join("\0");
+  useEffect(() => {
+    if (table.current) return installTableSizing(table.current);
+  }, [columnKeys]);
   const [limit, setLimit] = useState(pageSize ?? Infinity);
   // Reset the window when the rows change (a new filter or sort), the React pattern for state derived from props.
   const [prevRows, setPrevRows] = useState(rows);
   if (rows !== prevRows) { setPrevRows(rows); setLimit(pageSize ?? Infinity); }
-  const { t } = useT();
+  const { t, tl } = useT();
   const capped = pageSize !== undefined && rows.length > limit;
   const remote = !!more && more.total > rows.length;
   const visible = capped ? rows.slice(0, limit) : rows;
@@ -99,7 +105,8 @@ export function ResultsTable<T>({ columns, rows, rowKey, sort, onSort, empty, sc
     <div className="card results-table">
       {/* A table wider than its card scrolls inside the card with an edge fade and arrows (ScrollRow), never widening the page; while it fits at lg and above the box stays visible so the header can stick to the viewport. */}
       <ScrollRow label={t("table.scroll")} fitClass={scroll ? "overflow-x-auto" : "overflow-x-auto lg:overflow-x-visible"}>
-      <table className="onco">
+      <table ref={table} className="onco resizable-table">
+        <colgroup />
         <thead>
           <tr>
             {columns.map((c) => {
@@ -107,6 +114,8 @@ export function ResultsTable<T>({ columns, rows, rowKey, sort, onSort, empty, sc
               return (
                 <th key={c.key} scope="col" className={`${c.hide ?? ""} ${c.className ?? ""}`} aria-sort={sorted ? (sort!.dir === -1 ? "descending" : "ascending") : undefined}>
                   <ColumnHead column={c} sort={sort} onSort={onSort} />
+                  <span data-column-resize role="separator" aria-orientation="vertical" tabIndex={0}
+                    aria-label={t("table.resizeColumn", { col: tl(c.label) })} title={t("table.resizeHint")} />
                 </th>
               );
             })}

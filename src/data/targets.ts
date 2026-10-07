@@ -643,9 +643,9 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("Cyclin-dependent_kinase_4") }],
   },
   {
-    id: "parp", aka: ["PARP1/2", "Poly [ADP-ribose] polymerase 2"], drugs: ["saruparib", "palacaparib"], kind: "target", name: "PARP", symbol: "PARP1", hgnc: "HGNC:270", ensembl: "ENSG00000143799", uniprot: "P09874", entrez: "142", targetClass: "enzyme", asOf, wikipedia: W("PARP_inhibitor"),
-    tldr: "PARP is a DNA repair enzyme. Cancers that have already lost one repair system (BRCA) die when this second one is blocked; healthy cells survive.",
-    summary: "PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib) exploit synthetic lethality with BRCA1/2 mutations and homologous recombination deficiency in ovarian, breast, prostate, and pancreatic cancer. Olaparib is approved in adjuvant germline-BRCA breast cancer (OlympiA). PARP1-selective inhibitors (saruparib) and PARP PET tracers are the next step.",
+    id: "parp", aka: ["PARP1", "PARP1/2 inhibitor class"], drugs: ["saruparib", "palacaparib", "eik1004", "hrs-1167", "nms-03305293", "gs-0201", "hs-10502", "snv1521", "dsb2455", "imp1734", "vb15010", "olaparib", "niraparib", "talazoparib", "rucaparib"], kind: "target", name: "PARP", symbol: "PARP1", hgnc: "HGNC:270", ensembl: "ENSG00000143799", uniprot: "P09874", entrez: "142", targetClass: "enzyme",  wikipedia: W("PARP_inhibitor"),
+    tldr: "PARP inhibitors block DNA repair. Some cancers with defective repair are especially vulnerable, but the gene, disease setting and treatment combination determine which evidence applies.",
+    summary: "PARP1 and PARP2 are distinct DNA-repair enzymes. This page covers drugs that inhibit one or both; the molecular structures and identifiers shown here refer to PARP1. Approved PARP1/2 inhibitors exploit repair dependency, while selective PARP1 programmes seek a wider therapeutic window. Biomarker selection varies by country, drug and disease: US breast labels for olaparib and talazoparib require germline BRCA alterations; somatic BRCA breast activity is supported by metastatic phase 2 evidence rather than an adjuvant approval. Genomic HRD scars, current functional repair and individual HRR genes are not interchangeable. In TBCRC 048, ATM or CHEK2 alterations alone did not produce responses; the 2026 expansion found activity in germline PALB2 and somatic BRCA cohorts, but the somatic cohort missed its prespecified response target. PARP inhibitors can cause substantial marrow toxicity. GS-0201 plus sacituzumab govitecan and palacaparib plus datopotamab deruxtecan connect repair dependency with antibody-directed delivery in early trials.",
     biology: "Poly(ADP-ribose) polymerase 1 senses single-strand breaks; trapping on DNA is the key cytotoxic mechanism.",
     whereFound: ["BRCA/HRD ovarian, breast, prostate, pancreatic cancers"],
     pathways: ["ddr"],
@@ -656,7 +656,8 @@ export const targets: TargetInput[] = [
       { cancerId: "tnbc", pct: "15-20", measure: "Germline BRCA1/2", source: "https://en.wikipedia.org/wiki/PARP_inhibitor", note: "~40-50% HRD by scar" },
       { cancerId: "prostate", pct: "20-25", measure: "HRR gene alteration (mCRPC)", source: "https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018", note: "BRCA2 ~8-10%" },
       { cancerId: "pancreatic", pct: "5-8", measure: "Germline BRCA1/2 or PALB2", source: "https://www.cbioportal.org/study/summary?id=paad_tcga_pan_can_atlas_2018" },
-    ], links: [{ label: "Wikipedia", url: W("PARP_inhibitor") }],
+    ], links: [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/PARP_inhibitor"}, {"label": "TBCRC 048 expansion", "url": "https://doi.org/10.1200/JCO-25-02075"}, {"label": "TBCRC 048 original cohorts", "url": "https://doi.org/10.1200/JCO.20.02151"}, {"label": "ClinicalTrials.gov NCT06167317", "url": "https://clinicaltrials.gov/study/NCT06167317"}, {"label": "ClinicalTrials.gov NCT05417594", "url": "https://clinicaltrials.gov/study/NCT05417594"}],
+    asOf: "2026-10-06",
   },
   {
     id: "atr", drugs: ["ceralasertib"], kind: "target", name: "ATR", symbol: "ATR", hgnc: "HGNC:882", ensembl: "ENSG00000175054", uniprot: "Q13535", entrez: "545", targetClass: "kinase", asOf, wikipedia: W("Ataxia_telangiectasia_and_Rad3_related"),

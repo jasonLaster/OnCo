@@ -1,3 +1,4 @@
+import { parpSelectiveReview } from "./parp-selective-review";
 import { cancers } from "./cancers";
 import { canonicalTermCategory } from "./term-categories";
 import { sections } from "./sections";
@@ -195,6 +196,7 @@ import { cansimTargets } from "./targets-cansim";
 import { issuesWaveB } from "./issues-2026-09-wave-b";
 
 const RAW_INPUTS: EntityInput[] = [
+  ...parpSelectiveReview,
   ...cancers,
   ...spikeEntities,
   ...sections,

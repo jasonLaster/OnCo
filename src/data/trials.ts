@@ -2,7 +2,7 @@ import type { TrialInput } from "@/lib/schema";
 import { TRIAL_OUTCOMES } from "./trial-outcomes";
 
 const asOf = "2026-09-04";
-type T = Omit<TrialInput, "kind" | "asOf">;
+type T = Omit<TrialInput, "kind" | "asOf"> & { asOf?: string };
 const t = (x: T): TrialInput => ({ kind: "trial", asOf, ...x });
 const ct = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https://clinicaltrials.gov/study/${nct}` });
 
@@ -114,7 +114,11 @@ const raw: TrialInput[] = [
     tldr: "Showed that a year of a PARP inhibitor after standard treatment improves survival in women with inherited BRCA mutations.",
     summary: "OlympiA, trial NCT02032823 sponsored by AstraZeneca, NRG Oncology and the Breast International Group and published in the New England Journal of Medicine in 2021, showed that a year of the PARP inhibitor olaparib after standard treatment improves survival in women with germline BRCA mutations and high-risk, HER2-negative early breast cancer, about eighty percent of whom had triple-negative disease. It randomised 1,836 patients to olaparib or placebo, met its primary invasive disease-free survival endpoint and showed an overall survival benefit that was sustained at six years. It makes germline testing a treatment decision for every such patient, and whether the benefit extends to somatic or non-BRCA HRD alterations is the open question.",
     result: "iDFS HR 0.58; OS HR 0.72.",
-    drugs: ["olaparib"], cancers: ["tnbc", "breast-hr-positive", "tnbc-early", "hr-positive-early-high-risk"], targets: ["brca"], links: [ct("NCT02032823")], keyPapers: ["paper-olympia-nejm-2021"], people: ["andrew-tutt", "charles-geyer", "judy-garber"] }),
+    drugs: ["olaparib"], cancers: ["tnbc", "breast-hr-positive", "tnbc-early", "hr-positive-early-high-risk"], targets: ["brca"], links: [{"label": "ClinicalTrials.gov NCT02032823", "url": "https://clinicaltrials.gov/study/NCT02032823"}, {"label": "OlympiA overall survival (Annals of Oncology 2022)", "url": "https://doi.org/10.1016/j.annonc.2022.09.159"}, {"label": "NICE TA886 (10 May 2023)", "url": "https://www.nice.org.uk/guidance/ta886"}, {"label": "Lynparza label (openFDA): OlympiA eligibility and results", "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22LYNPARZA%22"}, {"label": "OlympiA six-year primary publication", "url": "https://doi.org/10.1016/j.annonc.2026.08.002"}], keyPapers: ["paper-olympia-nejm-2021"], people: ["andrew-tutt", "charles-geyer", "judy-garber"],
+    asOf: "2026-10-06",
+    enrolled: 1836,
+    enrolledBasis: "randomised",
+  }),
 
   // ---- HER2 / HR+ breast ----
   t({ id: "destiny-breast03", technologies: ["adc", "topoisomerase-inhibitors"], name: "DESTINY-Breast03", nct: "NCT03529110", phase: "3", status: "positive", yearReported: 2021, sponsor: "Daiichi Sankyo / AstraZeneca",

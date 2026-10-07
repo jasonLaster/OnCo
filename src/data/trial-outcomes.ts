@@ -109,11 +109,13 @@ const RAW: Record<string, TrialOutcomeIn> = {
   "optimice-pcr": { enrolled: 1295, outcomes: [], replication: "Ongoing de-escalation trial; no results." },
   "scarlet-s2212": { enrolled: 2400, outcomes: [], replication: "Ongoing; no results." },
   olympia: {
-    enrolled: 1837,
+    enrolled: 1836,
+    enrolledBasis: "randomised",
+    enrolledNote: "The 2026 primary publication reports 1836 randomised participants; registry total and reported analysis populations are distinct.",
     outcomes: [
       { endpoint: "Invasive disease-free survival at 3 years", primary: true, unit: "%", arms: [{ name: "Olaparib", n: 921, value: 85.9 }, { name: "Placebo", n: 915, value: 77.1 }], hr: 0.58, ci: [0.41, 0.82], p: "<0.001", source: nejm("NEJMoa2105215") },
       { endpoint: "Overall survival at 4 years", unit: "%", arms: [{ name: "Olaparib", value: 89.8 }, { name: "Placebo", value: 86.4 }], hr: 0.68, ci: [0.47, 0.97], p: "0.009", source: "https://www.annalsofoncology.org/article/S0923-7534(22)04165-7/fulltext" },
-      { endpoint: "Overall survival at 6 years", unit: "%", arms: [{ name: "Olaparib", value: 87.5 }, { name: "Placebo", value: 83.2 }], hr: 0.72, ci: [0.56, 0.93], source: ct("NCT02032823") },
+      { endpoint: "Overall survival at 6 years", unit: "%", arms: [{ name: "Olaparib", value: 87.5 }, { name: "Placebo", value: 83.2 }], hr: 0.72, ci: [0.56, 0.93], source: "https://doi.org/10.1016/j.annonc.2026.08.002" },
     ],
     replication: "Single pivotal adjuvant trial with a sustained OS benefit at 6 years; consistent with the metastatic-setting PFS benefit of olaparib (OlympiAD) and talazoparib (EMBRACA).",
   },

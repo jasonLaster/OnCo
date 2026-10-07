@@ -6,7 +6,7 @@ const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 export const targets: TargetInput[] = [
   // ---- Surface antigens (ADC / bispecific / CAR / tracer targets) ----
   {
-    id: "trop2", drugs: ["ak146d1", "bio-106", "datopotamab-deruxtecan", "eb-nk-301", "lcb84", "sacituzumab-govitecan", "sacituzumab-tirumotecan"], trials: ["nct07299747"], kind: "target", name: "TROP2", symbol: "TACSTD2", hgnc: "HGNC:11530", ensembl: "ENSG00000184292", uniprot: "P09758", entrez: "4070", targetClass: "surface-antigen", asOf,
+    id: "trop2", drugs: ["ak146d1", "bio-106", "datopotamab-deruxtecan", "eb-nk-301", "lcb84", "sacituzumab-govitecan", "sacituzumab-tirumotecan"], trials: ["nct07299747"], kind: "target", name: "TROP2", symbol: "TACSTD2", hgnc: "HGNC:11530", ensembl: "ENSG00000184292", uniprot: "P09758", entrez: "4070", targetClass: "surface-antigen", asOf: "2026-10-06",
     tldr: "TROP2 is a surface glycoprotein present at high levels on most epithelial cancers (breast, lung, urothelial, gastric, pancreatic) and at low levels on normal tissue. It does not drive the cancer; it is a delivery address, used by the approved ADCs sacituzumab govitecan and datopotamab deruxtecan and by sacituzumab tirumotecan, with a TROP2 PET tracer in development to pick patients.",
     summary: "Trophoblast cell-surface antigen 2 is a transmembrane glycoprotein overexpressed in most epithelial cancers (breast, lung, urothelial, gastric, pancreatic) with low normal-tissue expression. It is not an oncogenic driver; it is a delivery address. Three TROP2 ADCs are approved or in registration (sacituzumab govitecan, datopotamab deruxtecan, sacituzumab tirumotecan) and a TROP2 PET tracer is in development to select patients.",
     biology: "Regulates calcium signalling and cell adhesion; overexpression correlates with shorter survival. Expression is heterogeneous within tumours, which limits the value of IHC selection. Internalises on antibody binding and traffics to lysosomes, which is what makes it a good ADC target.",
@@ -14,12 +14,15 @@ export const targets: TargetInput[] = [
     cancers: ["tnbc", "breast-hr-positive", "nsclc", "urothelial"],
     tags: ["adc-target", "pet-target"],
     prevalence: [
-      { cancerId: "tnbc", pct: "80-90", measure: "IHC, any/moderate-high expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "ASCENT benefit was independent of TROP2 IHC level" },
+      { cancerId: "tnbc", pct: "80-90", measure: "IHC, any/moderate-high expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "ASCENT's exploratory biomarker analysis supported benefit in the high/medium H-score groups; the low-expression group was too small for definitive conclusions (290 of 468 assessable patients had TROP2 data). No TROP2 companion test is required for the breast-cancer indications." },
       { cancerId: "breast-hr-positive", pct: "75-90", measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/" },
       { cancerId: "nsclc", pct: "60-70", measure: "IHC, moderate-high", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "Adenocarcinoma and squamous" },
       { cancerId: "urothelial", pct: "80-90", measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/" },
       { cancerId: "pancreatic", pct: 50, measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "Approximate; heterogeneous" },
-    ], links: [{ label: "UniProt P09758: TACSTD2 (TROP2)", url: "https://www.uniprot.org/uniprotkb/P09758/entry" }],
+    ], links: [{ label: "UniProt P09758: TACSTD2 (TROP2)", url: "https://www.uniprot.org/uniprotkb/P09758/entry" },
+      { label: "Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)", url: "https://doi.org/10.1016/j.annonc.2021.06.002" },
+      { label: "TRODELVY prescribing information (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d" },
+      { label: "DATROWAY prescribing information (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0" }],
   },
   {
     id: "her2", trials: ["nct06043817", "nct07589517", "nct05532696", "nct07510802", "nct05523947", "nct06369831", "nct07467863", "nct06616766", "nct06439771", "nct05771584", "nct07641023", "nct07462650", "nct07192432"], technologies: ["her2-tyrosine-kinase-inhibitors"], kind: "target", keyPapers: ["paper-slamon-her2-breast-ovarian-science-1989", "paper-yarden-sliwkowski-erbb-network-nrmcb-2001"], name: "HER2", symbol: "ERBB2", hgnc: "HGNC:3430", ensembl: "ENSG00000141736", uniprot: "P04626", entrez: "2064", targetClass: "surface-antigen", asOf, wikipedia: W("HER2/neu"),

@@ -36,6 +36,8 @@ export const hi: UiDict = {
   "table.showingFirst": "(पहली {n} दिखाई जा रही हैं)",
   "table.showMore": "{n} और दिखाएँ",
   "table.scroll": "तालिका स्क्रॉल करें",
+  "table.resizeColumn": "{col} कॉलम का आकार बदलें",
+  "table.resizeHint": "आकार बदलने के लिए खींचें या तीर कुंजियों का उपयोग करें। अपने आप समायोजित करने के लिए दो बार क्लिक करें या Home दबाएँ।",
   "table.moreItems": "+{n} और",
   "table.moreItemsTip": "साथ ही: {list}। सभी {total} देखने के लिए क्लिक करें।",
   "table.firstApproval": "पहली मंज़ूरी {first}, नवीनतम {last}",

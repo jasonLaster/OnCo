@@ -36,6 +36,8 @@ export const ja: UiDict = {
   "table.showingFirst": "（先頭 {n} 行を表示中）",
   "table.showMore": "さらに {n} 行を表示",
   "table.scroll": "表をスクロール",
+  "table.resizeColumn": "{col}列の幅を変更",
+  "table.resizeHint": "ドラッグまたは矢印キーで幅を変更します。ダブルクリックまたはHomeキーで自動調整します。",
   "table.moreItems": "+{n} 件",
   "table.moreItemsTip": "ほかに: {list}。クリックで全 {total} 件を表示。",
   "table.firstApproval": "初回承認 {first}、最新 {last}",

@@ -65,9 +65,12 @@ describe("column header filter", () => {
     expect(nestedButtons(html)).toBe(0);
   });
 
-  it("leaves a plain header as text", () => {
-    const th = html.match(/<th[^>]*>What happened<\/th>/)?.[0] ?? "";
+  it("keeps a plain header free of sort/filter buttons beside its resize grip", () => {
+    const th = html.match(/<th[^>]*>What happened[\s\S]*?<\/th>/)?.[0] ?? "";
     expect(th).not.toBe("");
+    expect(th).not.toContain("<button");
+    expect(th).toContain('role="separator"');
+    expect(th).toContain('aria-label="Resize What happened column"');
   });
 
   it("does not render the popover until opened", () => {

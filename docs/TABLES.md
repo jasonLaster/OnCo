@@ -217,3 +217,22 @@ The header shares state with the existing control where one exists (same setter,
 - src/components/CompareView.tsx (transposed), src/components/CommandPalette.tsx (search results), src/components/SavedViews.tsx (personal list), src/components/SlideDeck.tsx, src/components/QueryBuilder.tsx (the clauses are the filter), src/app/irae/IraeGuide.tsx (guide layout).
 - Static reference or form tables: src/app/api/page.tsx, src/app/build/page.tsx, src/app/cancers/[id]/decisions/page.tsx, src/app/history/page.tsx, src/app/live/hair/page.tsx, src/app/privacy/page.tsx, src/app/regimens/[id]/page.tsx, src/app/report/2026/page.tsx, src/app/schema/page.tsx, src/app/sequencing/[id]/page.tsx, src/app/staging/page.tsx, src/app/startup-requests/page.tsx.
 - src/app/tumour-testing/page.tsx: another agent's redesign.
+
+## Automatic widths and column resizing
+
+`ResultsTable` sizes its visible columns from up to 60 rendered rows using
+`src/lib/table-columns.ts` and `src/components/filters/table-sizing.ts`. The
+layout adapts Oncobase's compact/numeric/text classification, measured font
+widths, percentile targets and weighted allocation. Short numeric values stay
+compact; longer text receives more of the available card width. Minimum widths
+can exceed the card, in which case the existing `ScrollRow` contains the overflow.
+Responsive hidden columns take no space. Tables outside the viewport wait to be
+measured, and font loading, row changes and container resizing trigger a new fit.
+
+Each header has an independent resize separator. Drag it with a mouse, pen or
+touch, or focus it and use the left/right arrows (Shift moves in larger steps).
+Double-click or press Home to return that column to automatic sizing. Manual
+widths survive sorting, filtering, paging and viewport changes while the table
+is mounted; they reset when navigating away. Print uses automatic table layout
+and hides the grips. The source adaptation's MIT notice is in
+`docs/licenses/oncobase-smart-table.txt`.

@@ -440,6 +440,26 @@
   .overflow-x-auto table.onco thead th, .overflow-auto table.onco thead th { top: 0; }
   @media (width >= 64rem) { .results-table table.onco thead th { top: var(--sticky-top); } }
 
+  /* Column grips remain independent of the sort/filter buttons. */
+  table.resizable-table th, table.resizable-table td { overflow-wrap: anywhere; }
+  table.resizable-table th { white-space: normal; }
+  table.resizable-table th button { max-width: 100%; text-align: start; }
+  [data-column-resize] {
+    position: absolute; inset-block: 0; inset-inline-end: 0; width: 12px;
+    cursor: col-resize; touch-action: none; user-select: none; z-index: 3;
+  }
+  [data-column-resize]::after {
+    content: ""; position: absolute; inset-block: 20%; inset-inline-end: 3px;
+    width: 2px; background: var(--border-strong); border-radius: 2px;
+  }
+  [data-column-resize]:hover::after, [data-column-resize]:focus-visible::after { background: var(--accent); }
+  [data-column-resize]:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  @media print {
+    [data-column-resize] { display: none; }
+    table.resizable-table { width: 100% !important; table-layout: auto !important; }
+    table.resizable-table col { width: auto !important; }
+  }
+
   /* A sideways scroller must also be the containing block for its absolutely positioned descendants
      (notably `sr-only` text inside static buttons): otherwise their static position past the right
      edge escapes the clip and widens the whole page on phones. Fixed popovers are unaffected. */
@@ -477,6 +497,9 @@
    where the wrapper stops scrolling (ResultsTable's lg:overflow-x-visible). */
 .overflow-x-auto > table.onco thead th { position: static; }
 @media (min-width: 64rem) { .lg\:overflow-x-visible > table.onco thead th { position: sticky; } }
+/* A grip needs its header as its containing block, including inside a scroller. */
+.overflow-x-auto > table.onco.resizable-table thead th { position: relative; top: 0; }
+@media (min-width: 64rem) { .lg\:overflow-x-visible > table.onco.resizable-table thead th { position: sticky; top: var(--sticky-top); } }
 
 /* Section tab bar: when the tabs are wider than the bar, the overflowing edge fades so the hidden tabs read as
    scrollable, and an arrow at that end scrolls a step. The state is measured by Tabs.tsx and set as data-fade. */

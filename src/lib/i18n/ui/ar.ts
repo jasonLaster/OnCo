@@ -36,6 +36,8 @@ export const ar: UiDict = {
   "table.showingFirst": "(تُعرض أول {n})",
   "table.showMore": "إظهار {n} أخرى",
   "table.scroll": "تمرير الجدول",
+  "table.resizeColumn": "تغيير عرض عمود {col}",
+  "table.resizeHint": "اسحب أو استخدم مفاتيح الأسهم لتغيير العرض. انقر مرتين أو اضغط Home للضبط تلقائيًا.",
   "table.moreItems": "+{n} أخرى",
   "table.moreItemsTip": "أيضًا: {list}. انقر لإظهار الكل ({total}).",
   "table.firstApproval": "أول موافقة {first}، وآخرها {last}",

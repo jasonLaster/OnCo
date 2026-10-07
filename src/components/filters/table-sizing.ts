@@ -1,5 +1,18 @@
 import { clampColumnWidth, columnSize, fitColumns, MIN_COLUMN_WIDTH, MAX_COLUMN_WIDTH } from "@/lib/table-columns";
 
+/** An open tip renders inside its header or cell but floats above the table, so it must not size a column:
+ * measuring it widened "Phase / status" to its 1,300px explanation on every hover. */
+const FLOATING = '[role="tooltip"]';
+const inFlow = <E extends Element>(elements: Iterable<E>) => Array.from(elements).filter((el) => !el.closest(FLOATING));
+const inFlowText = (cell: Element) => {
+  let text = "";
+  const walker = document.createTreeWalker(cell, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, {
+    acceptNode: (node) => node instanceof Element && node.matches(FLOATING) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+  });
+  for (let node = walker.nextNode(); node; node = walker.nextNode()) if (node.nodeType === Node.TEXT_NODE) text += node.nodeValue;
+  return text;
+};
+
 /** DOM sizing leaves React's rows, sorting and filtering intact. Manual widths
  * survive row changes; hidden responsive columns take no space in the plan. */
 export function installTableSizing(table: HTMLTableElement) {
@@ -18,7 +31,7 @@ export function installTableSizing(table: HTMLTableElement) {
 
   const measure = (cell: HTMLTableCellElement) => {
     const style = getComputedStyle(cell);
-    const text = (cell.textContent ?? "").replace(/\s+/g, " ").trim();
+    const text = inFlowText(cell).replace(/\s+/g, " ").trim();
     const rendered = style.textTransform === "uppercase" ? text.toUpperCase() : text;
     if (context) context.font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
     const spacing = parseFloat(style.letterSpacing) || 0;
@@ -26,13 +39,13 @@ export function installTableSizing(table: HTMLTableElement) {
     const width = (s: string) => (context?.measureText(s).width ?? s.length * 8) + Math.max(0, s.length - 1) * spacing + padding;
     // Header icons and resize grip need their own space. Body chips/avatars
     // keep their natural width rather than being estimated as plain text.
-    const extras = cell.tagName === "TH" ? cell.querySelectorAll("button").length * 20 + 12 : 0;
-    const intrinsic = Math.max(0, ...Array.from(cell.querySelectorAll<HTMLElement>(".chip, svg, img")).map((el) => el.getBoundingClientRect().width + padding));
-    const bounded = Array.from(cell.children).map((el) => {
+    const extras = cell.tagName === "TH" ? inFlow(cell.querySelectorAll("button")).length * 20 + 12 : 0;
+    const intrinsic = Math.max(0, ...inFlow(cell.querySelectorAll<HTMLElement>(".chip, svg, img")).map((el) => el.getBoundingClientRect().width + padding));
+    const bounded = inFlow(cell.children).map((el) => {
       const min = getComputedStyle(el).minWidth;
       return min.endsWith("px") ? parseFloat(min) + padding : 0;
     });
-    const unbreakable = Array.from(cell.querySelectorAll<HTMLElement>(".chip, .whitespace-nowrap")).filter((el) => getComputedStyle(el).whiteSpace === "nowrap")
+    const unbreakable = inFlow(cell.querySelectorAll<HTMLElement>(".chip, .whitespace-nowrap")).filter((el) => getComputedStyle(el).whiteSpace === "nowrap")
       .map((el) => el.getBoundingClientRect().width + padding);
     const minimum = Math.max(0, ...bounded, ...unbreakable);
     return { text, width: Math.max(width(rendered) + extras, intrinsic, minimum), token: Math.max(0, ...rendered.split(/\s+/).map(width), intrinsic), minimum };

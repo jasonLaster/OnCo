@@ -25,6 +25,11 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 | 2026-10-06 | olaparib | Original withdrawn ovarian treatment and current disease-specific scopes not clearly separated | Current FDA label | Separate maintenance, germline-selected breast/pancreas and HRR/BRCA prostate populations |
 | 2026-10-06 | niraparib | TL;DR implied current all-comer ovarian maintenance; Akeega BRCA2 mCSPC indication absent | Current Zejula label, FDA CDx supplement and December 2025 Akeega notice | State HRD first-line and germline-BRCA recurrent scope; add specific prostate indications |
 | 2026-10-06 | rucaparib | Historical taxane requirement presented without regular-approval update; withdrawn ovarian treatment called narrowed; bankruptcy coded as regulatory withdrawal | Current FDA label and December 2025 approval | Separate current from historical indications and remove business event from regulatory withdrawals |
+| 2026-10-06 | PARTNER and OlympiA | PARTNER merged wild-type 2024 and germline 2025 results into one positive claim; OlympiA denominator and latest outcome source stale | Primary cohort publications and 2026 OlympiA paper | Separate populations/endpoints; preserve negative wild-type result and cite six-year primary paper with 1836 randomised |
+| 2026-10-06 | imp1734 | EIK1003 licensing alias and PARP target link absent | Primary Eikon statement and NCT06253130 | Keep one canonical asset with EIK1003 alias and PARP relationship |
+| 2026-10-06 | vb15010 | Molecular target relationship absent and study simplified to phase 2 | NCT06819215 | Link PARP and retain phase 1/2 protocol |
+| 2026-10-06 | saruparib and palacaparib | Missing selective PARP1 context; saruparib actual enrolment called planned; PETRA access stale | Current registry captures and primary publications | Refresh trial states, actual/estimated counts and clinical evidence boundaries |
+| 2026-10-06 | parp | PARP2 listed as an alias despite PARP1 identifiers; implication that healthy cells simply survive | Molecular identifier ownership and clinical evidence | Clarify class scope, separate enzymes and preserve toxicity and biomarker limits |
 
 ## 2026-10-01
 

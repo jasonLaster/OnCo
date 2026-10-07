@@ -4,7 +4,8 @@ These screenshots compare `/drugs/` at the unchanged base commit
 `338fd7fecd61b73c9d78e9d81367a954e4740ac4` with this feature. Both runs use the
 same default sort, English technical view, records, fonts and viewport. The
 analytics prompt is dismissed in both. Images are cropped to the table and
-are original browser screenshots.
+are original browser screenshots. Resize dividers are hidden at rest and appear on
+header hover, keyboard focus, or while dragging.
 
 ## Desktop: 1440 × 1000 viewport
 

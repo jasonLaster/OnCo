@@ -104,6 +104,7 @@ export function installTableSizing(table: HTMLTableElement) {
         handle.removeEventListener("pointercancel", up);
         handle.removeEventListener("lostpointercapture", end);
         window.removeEventListener("blur", end);
+        handle.removeAttribute("data-dragging");
         if (handle.hasPointerCapture(pointer)) handle.releasePointerCapture(pointer);
         document.body.style.cursor = cursor;
         document.body.style.userSelect = selection;
@@ -113,6 +114,7 @@ export function installTableSizing(table: HTMLTableElement) {
       const up = (e: PointerEvent) => { if (e.pointerId === pointer) end(); };
       finishDrag = end;
       handle.setPointerCapture(pointer);
+      handle.setAttribute("data-dragging", "");
       handle.addEventListener("pointermove", move);
       handle.addEventListener("pointerup", up);
       handle.addEventListener("pointercancel", up);

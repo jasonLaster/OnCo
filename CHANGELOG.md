@@ -7,11 +7,31 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 7 October 2026
+- Eleven contributed TROP2 and PARP pull requests, and the trials they brought
+- AGENTS.md: never resolve a contributor's pull request by union
+- Eleven contributed records land, and the trials they brought get an inbound edge
 - The page-weight ratchet counts the right thing now
+- chore: refresh preprint tracker from Europe PMC (#230)
+- chore: refresh universe lists (NCI drugs and types, NCI centres, OECI, NHS alliances, NLM journals, OpenAlex, KEGG, ChEMBL, ClinicalTrials.gov, FDA OCE) (#229)
+- chore: check regional approvals against the EMA register (#228)
+- chore: refresh FDA approvals feed (OCE notifications, openFDA drugsfda) (#227)
+- chore: EU regional rows read from the EMA register pages (#226)
 
 ### 6 October 2026
+- Deepen PARP1 programmes, biomarker evidence and clinical trial states
+- Clarify current US PARP labels and withdrawn ovarian treatment
+- Expand TROP2 clinical and historical programmes from primary registries
+- Reconcile TROP2 regulatory labels and FDA trial outcomes
+- Refresh TROP2 trial landscape from current registry records
+- Expand TROP2 clinical programs and early evidence
+- Add primary-sourced preclinical TROP2 ADC programs
+- Add cited KH815 and ASP2998 TROP2 dual-payload programs
 - Seven trims to the top of a record page, and a review card that says what is true
+- Cite breast ADC labels for the TROP2 testing statement
 - About 19,500 pages stop opening with the least useful true thing they could say
+- Correct LCB84 modality and cite its phase 1/2 registry record
+- Separate TROP2 copy-number amplification from IHC expression
+- Update TROP2 biomarker with current US breast indications
 - Seven things leave the top of a record page
 - Three more things leave the top of a record page
 - Four things leave the top of a record page

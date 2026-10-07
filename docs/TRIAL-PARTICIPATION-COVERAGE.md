@@ -1,5 +1,7 @@
 # Trial participation coverage
 
+Repository growth, build/deployment costs and browser loading behavior are measured in [Trial participation: repository size and build impact](TRIAL-PARTICIPATION-SIZE.md).
+
 Captured 25,365 of 25,366 explicit ClinicalTrials.gov identifiers across 5,970 canonical trials and 33,950 drug-linked snapshot rows. 53 ISRCTN registry snapshots cover 55 canonical records. In total, 5884 canonical records have captured participation data; 86 remain named gaps.
 
 | Field | Studies |

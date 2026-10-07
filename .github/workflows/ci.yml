@@ -26,7 +26,11 @@ jobs:
       - run: npm run validate
       - run: npm run typecheck
       - run: npm run lint
-      - run: npm test
+      # Match the release gates: the first page render initializes the whole graph on the runner.
+      # Keep every page-size assertion; use the existing ship-chain wall-clock allowance.
+      - run: npx vitest run --testTimeout=600000 --hookTimeout=600000
+        env:
+          SLOW_TEST_MS: 600000
       # Freshness gate: fails when critical stale records (approved products over 90 days, open trials
       # over 120, cancer pages over 180, past calendar events over 30) exceed FRESHNESS_LIMIT. See /freshness/.
       - name: Freshness SLAs

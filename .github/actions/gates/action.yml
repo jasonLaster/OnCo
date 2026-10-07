@@ -18,6 +18,9 @@ runs:
   steps:
     - id: run
       shell: bash
+      env:
+        # Explicit render guards are not overridden by Vitest's command-line timeout.
+        SLOW_TEST_MS: 600000
       run: |
         failed=""
         # The test command must match scripts/ship.sh, which passes --testTimeout=600000. It did not, and that one

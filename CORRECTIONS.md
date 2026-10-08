@@ -30,6 +30,7 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 | 2026-10-06 | vb15010 | Molecular target relationship absent and study simplified to phase 2 | NCT06819215 | Link PARP and retain phase 1/2 protocol |
 | 2026-10-06 | saruparib and palacaparib | Missing selective PARP1 context; saruparib actual enrolment called planned; PETRA access stale | Current registry captures and primary publications | Refresh trial states, actual/estimated counts and clinical evidence boundaries |
 | 2026-10-06 | parp | PARP2 listed as an alias despite PARP1 identifiers; implication that healthy cells simply survive | Molecular identifier ownership and clinical evidence | Clarify class scope, separate enzymes and preserve toxicity and biomarker limits |
+| 2026-10-06 | [TROPION-Breast01 paper](/key-papers/paper-tropion-breast01-jco-2024/) | The text said a negative survival result stalled breast approval and that Dato-DXd was not a standard option. | Checked against the [FDA approval notice](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-hr-positive-her2-negative-breast) and the [final survival publication](https://doi.org/10.1016/j.annonc.2025.12.017). | State the January 2025 approval and its advanced-disease, HR-positive/HER2-negative and prior-treatment restrictions; retain the nonsignificant final survival result and cite the separate reports. |
 
 ## 2026-10-01
 

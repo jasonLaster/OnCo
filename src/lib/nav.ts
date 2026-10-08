@@ -60,6 +60,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { href: "/mechanics/", label: "Mechanics of cancer", blurb: "How cancer works, drawn stage by stage, with the drugs that act on each mechanism." },
       { href: "/prevalence/", label: "Prevalence", blurb: "How common each target is in each cancer." },
       { href: "/trials/", label: "Trials", blurb: "Landmark and current trials." },
+      { href: "/trials/open/", label: "Trials taking part", blurb: "Trials the registry says are still recruiting, by cancer, country and who they are open to." },
       { href: "/pairings/", label: "Pairings", blurb: "What works together, and what does not." },
       { href: "/roadmaps/", label: "Roadmaps", blurb: "History to horizon for each technology family." },
       { href: "/dependencies/", label: "Dependency map", blurb: "What each technology needs to exist, drawn in layers from foundations to end products: what CAR-T cannot run without, and what stops if one step fails." },

@@ -1,6 +1,7 @@
 import { TABLE_PAGE } from "@/lib/static-tables";
 import { EVIDENCE_TABLE, evidenceRows } from "./evidence";
 import { CHINA_TRIALS_TABLE, chinaTrialRows } from "./china";
+import { OPEN_TRIALS_TABLE, openTrialRows } from "./open-trials";
 import { UNIVERSITY_GROUPED_TABLE, UNIVERSITY_OUTPUT_TABLE, UNIVERSITY_SCORE_TABLE, universityGroupedRankingRows, universityOutputRankingRows, universityScoreRows } from "./universities";
 import { auditTableFiles } from "./audit";
 import { PATHWAY_MATRIX_TABLE, PATHWAY_NODES_TABLE, pathwayDrugViews, pathwayMatrixRows, pathwaySections } from "./pathway-drugs";
@@ -34,6 +35,7 @@ export function allTables(): TableFile[] {
     ...kindTables(),
     { id: EVIDENCE_TABLE, rows: evidenceRows() },
     { id: CHINA_TRIALS_TABLE, rows: chinaTrialRows() },
+    { id: OPEN_TRIALS_TABLE, rows: openTrialRows() },
     { id: UNIVERSITY_OUTPUT_TABLE, rows: universityOutputRankingRows() },
     { id: UNIVERSITY_GROUPED_TABLE, rows: universityGroupedRankingRows() },
     { id: UNIVERSITY_SCORE_TABLE, rows: universityScoreRows() },

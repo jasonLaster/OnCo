@@ -54,6 +54,7 @@ export const navEs: NavDict = {
   "/mechanics/": ["Mecánica del cáncer", "Cómo funciona el cáncer, dibujado etapa por etapa, con los fármacos que actúan sobre cada mecanismo."],
   "/prevalence/": ["Prevalencia", "Qué tan común es cada diana en cada cáncer."],
   "/trials/": ["Ensayos", "Ensayos de referencia y en curso."],
+  "/trials/open/": ["Ensayos que admiten participantes", "Ensayos que el registro indica que siguen reclutando, por cáncer, país y a quién están abiertos."],
   "/pairings/": ["Combinaciones", "Qué funciona junto, y qué no."],
   "/roadmaps/": ["Hojas de ruta", "De la historia al horizonte para cada familia tecnológica."],
   "/dependencies/": ["Mapa de dependencias", "Qué necesita cada tecnología oncológica para existir, por capas, de los cimientos a los productos finales."],

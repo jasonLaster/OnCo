@@ -54,6 +54,7 @@ export const navDe: NavDict = {
   "/mechanics/": ["Mechanik des Krebses", "Wie Krebs funktioniert, Schritt für Schritt gezeichnet, mit den Medikamenten, die an jedem Mechanismus ansetzen."],
   "/prevalence/": ["Häufigkeit", "Wie häufig jede Zielstruktur bei jeder Krebsart ist."],
   "/trials/": ["Studien", "Wegweisende und laufende Studien."],
+  "/trials/open/": ["Studien, die noch aufnehmen", "Studien, die das Register als rekrutierend führt, nach Krebsart, Land und dafür, wer teilnehmen kann."],
   "/pairings/": ["Kombinationen", "Was zusammen wirkt, und was nicht."],
   "/roadmaps/": ["Roadmaps", "Von der Geschichte zum Horizont für jede Technologiefamilie."],
   "/dependencies/": ["Abhängigkeitskarte", "Was jede Onkologie-Technologie braucht, um zu existieren, in Schichten von den Grundlagen bis zu den Endprodukten."],

@@ -6,6 +6,13 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 8 October 2026
+- The TROPION-Breast01 record says what the FDA actually did
+- chore: refresh pulse, abstract and citation snapshots (#240)
+- chore: weekly roadmap registry check (public/roadmap-watch.json)
+- chore: refresh institution research output from OpenAlex (#239)
+- chore: EU regional rows read from the EMA register pages (#238)
+
 ### 7 October 2026
 - Thirteen contributed fixes: nine fetchers that keep what they already had, four that let search recover
 - Revert "Expire older-day OpenAlex work caches before dating research snapshots (#213)"
@@ -52,6 +59,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Correct LCB84 modality and cite its phase 1/2 registry record
 - Separate TROP2 copy-number amplification from IHC expression
 - Update TROP2 biomarker with current US breast indications
+- Correct TROPION-Breast01 approval statement and cite final survival results
 - Seven things leave the top of a record page
 - Three more things leave the top of a record page
 - Four things leave the top of a record page

@@ -7,6 +7,7 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 8 October 2026
+- Weekly idea votes from Discussions, and the bot's proposal list
 - The new trials page gets a measured weight ceiling, pinned because its table is paged
 - A page for finding a trial you could still join, filtered by cancer, country and who it is open to
 - An unreviewed page says so in three words at the foot, not five sentences in the margin
@@ -18,6 +19,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - chore: refresh pulse, abstract and citation snapshots (#240)
 - chore: weekly roadmap registry check (public/roadmap-watch.json)
 - chore: refresh institution research output from OpenAlex (#239)
+- chore: draft change proposals that need review
 - chore: EU regional rows read from the EMA register pages (#238)
 
 ### 7 October 2026
@@ -103,6 +105,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 ### 5 October 2026
 - chore: render this week's issue to public/newsletter/ (#153)
 - chore: weekly fact check, audit, and provenance refresh (#152)
+- chore: refresh public/votes.json from Discussions reactions
 - chore: refresh trial counts from ClinicalTrials.gov (#149)
 - chore: EU regional rows read from the EMA register pages (#128)
 - fix(mcp): compare complete field values instead of summaries

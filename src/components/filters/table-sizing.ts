@@ -1,4 +1,4 @@
-import { clampColumnWidth, columnSize, fitColumns, MIN_COLUMN_WIDTH, MAX_COLUMN_WIDTH } from "@/lib/table-columns";
+import { clampColumnWidth, columnSize, fitColumns, MIN_COLUMN_WIDTH, MAX_COLUMN_WIDTH, type ColumnSize } from "@/lib/table-columns";
 
 /** An open tip renders inside its header or cell but floats above the table, so it must not size a column:
  * measuring it widened "Phase / status" to its 1,300px explanation on every hover. */
@@ -27,6 +27,7 @@ export function installTableSizing(table: HTMLTableElement) {
   let disposed = false;
   let nearViewport = typeof IntersectionObserver === "undefined";
   let finishDrag: (() => void) | undefined;
+  let plan: { visible: number[]; models: ColumnSize[] } | undefined;
   const cleanups: (() => void)[] = [];
 
   const measure = (cell: HTMLTableCellElement) => {
@@ -73,18 +74,26 @@ export function installTableSizing(table: HTMLTableElement) {
       cell.querySelector("[data-column-resize]")?.setAttribute("aria-valuemin", String(minimums[i]));
       return columnSize(body.map((c) => c.text), body.map((c) => c.width), body.map((c) => c.token), head.width, minimums[i]);
     });
+    plan = { visible: visible.map(({ i }) => i), models };
+    fit();
+  };
+  // Fitting from the last measurement is cheap enough to run on every drag frame and key press, so the other columns
+  // give way as a column is resized instead of jumping on release.
+  const fit = () => {
+    if (!plan) return false;
     const overrides = new Map<number, number>();
-    visible.forEach(({ i }, n) => {
+    plan.visible.forEach((i, n) => {
       if (manual.has(i)) {
         const width = Math.max(minimums[i], manual.get(i)!);
         manual.set(i, width);
         overrides.set(n, width);
       }
     });
-    const widths = fitColumns(models, wrapper.clientWidth, overrides);
+    const widths = fitColumns(plan.models, wrapper.clientWidth, overrides);
     const all = headers.map(() => 0);
-    visible.forEach(({ i }, n) => { all[i] = widths[n]; });
+    plan.visible.forEach((i, n) => { all[i] = widths[n]; });
     apply(all);
+    return true;
   };
   const schedule = () => {
     cancelAnimationFrame(frame);
@@ -96,7 +105,7 @@ export function installTableSizing(table: HTMLTableElement) {
     const resize = (widths: number[], width: number) => {
       widths[i] = Math.max(minimums[i], clampColumnWidth(width));
       manual.set(i, widths[i]);
-      apply(widths);
+      if (!fit()) apply(widths);
     };
     const reset = () => { finishDrag?.(); manual.delete(i); schedule(); };
     const keydown = (event: KeyboardEvent) => {

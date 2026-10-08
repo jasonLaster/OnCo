@@ -66,10 +66,36 @@ export function assertNoContacts(value: unknown): void {
   }
 }
 
-export function makeSnapshot(study: ParticipationStudy, fetchedAt: string): ParticipationSnapshot {
+/** A site's facility names a place, but three registry entries typed a coordinator's phone, fax or email address into
+ * it ("… Basilicata +39 0972 … e-mail: p.musto@…"). Labelled numbers, international numbers and addresses are removed. */
+const FACILITY_CONTACT = /(?:\s*[,;-]?\s*(?:tel(?:ephone)?|phone|fax|e-?mail)\.?\s*:?\s*(?:[\w.+-]+@[\w-]+(?:\.[\w-]+)+|\+?\(?\d[\d\s().\/-]{6,}\d))+|\s*[,;]?\s*(?:[\w.+-]+@[\w-]+(?:\.[\w-]+)+|\+\d[\d\s().\/-]{7,}\d)/gi;
+
+export function withoutFacilityContacts(study: ParticipationStudy): ParticipationStudy {
+  const sites = study.protocolSection.contactsLocationsModule;
+  if (!sites?.locations?.some((l) => l.facility && l.facility.replace(FACILITY_CONTACT, "") !== l.facility)) return study;
+  const locations = sites.locations.map((location) => {
+    if (!location.facility || location.facility.replace(FACILITY_CONTACT, "") === location.facility) return location;
+    const facility = location.facility.replace(FACILITY_CONTACT, "").trim();
+    if (facility) return { ...location, facility };
+    // A site name that was only an email address leaves the site unnamed.
+    return Object.fromEntries(Object.entries(location).filter(([key]) => key !== "facility"));
+  });
+  return { ...study, protocolSection: { ...study.protocolSection, contactsLocationsModule: { ...sites, locations } } };
+}
+
+/** Fail closed on a stored snapshot whose site names still carry contact details. */
+export function assertNoFacilityContacts(study: ParticipationStudy): void {
+  for (const { facility } of study.protocolSection.contactsLocationsModule?.locations ?? []) {
+    if (facility && facility.replace(FACILITY_CONTACT, "") !== facility) throw new Error(`Contact details in a site name: ${study.protocolSection.identificationModule.nctId}`);
+  }
+}
+
+export function makeSnapshot(response: ParticipationStudy, fetchedAt: string): ParticipationSnapshot {
+  const study = withoutFacilityContacts(response);
   const nct = study.protocolSection?.identificationModule?.nctId;
   if (!/^NCT\d{8}$/.test(nct ?? "")) throw new Error("Invalid registry identifier in response");
   assertNoContacts(study);
+  assertNoFacilityContacts(study);
   return { schemaVersion: 1, nct, source: `https://clinicaltrials.gov/study/${nct}`,
     apiSource: `https://clinicaltrials.gov/api/v2/studies/${nct}`,
     attribution: "Courtesy of the National Library of Medicine", fetchedAt, studySha256: studyHash(study), study };

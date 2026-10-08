@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { makeSnapshot, participationSummary, readParticipationPages, registryIds, studyHash, type ParticipationStudy } from "./trial-participation";
+import { assertNoFacilityContacts, makeSnapshot, participationSummary, readParticipationPages, registryIds, studyHash, type ParticipationStudy } from "./trial-participation";
 
 const study: ParticipationStudy = { protocolSection: {
   identificationModule: { nctId: "NCT01578239" },
@@ -34,6 +34,27 @@ describe("registry participation custody", () => {
     expect(summary.gaps).toEqual(["eligibility-not-posted", "lead-sponsor-not-posted", "locations-not-posted", "last-update-not-posted"]);
     expect(summary.leadSponsor).toBeUndefined();
     expect(summary.hasEligibility).toBe(false);
+  });
+
+  it("removes phone numbers and email addresses typed into a site's name, and nothing else", () => {
+    const typed = structuredClone(study);
+    typed.protocolSection.contactsLocationsModule!.locations = [
+      { facility: "Centro di Riferimento Oncologico di Basilicata +39 0972 726729 Fax +30 0972 726217 e-mail: p.musto@example.it", country: "Italy" },
+      { facility: "via Roma, 55 - 56100 Pisa Tel. 050-2218690 - Fax. 050-2218685", country: "Italy" },
+      { facility: "Coordinator.Name@example.fr", city: "Dijon", country: "France" },
+      { facility: "Tel Aviv Sourasky Medical Center, 6 Weizmann St", country: "Israel" },
+      { facility: "H.U. 12 de Octubre,", country: "Spain" },
+    ];
+    const snapshot = makeSnapshot(typed, "2026-10-07T12:00:00.000Z");
+    expect(snapshot.study.protocolSection.contactsLocationsModule!.locations).toEqual([
+      { facility: "Centro di Riferimento Oncologico di Basilicata", country: "Italy" },
+      { facility: "via Roma, 55 - 56100 Pisa", country: "Italy" },
+      { city: "Dijon", country: "France" },
+      { facility: "Tel Aviv Sourasky Medical Center, 6 Weizmann St", country: "Israel" },
+      { facility: "H.U. 12 de Octubre,", country: "Spain" },
+    ]);
+    expect(studyHash(snapshot.study)).toBe(snapshot.studySha256);
+    expect(() => assertNoFacilityContacts(typed)).toThrow(/site name/);
   });
 
   it("rejects contact fields even if they arrive under a location", () => {

@@ -34,12 +34,41 @@ export function DossierNav({ omit = [] }: { omit?: readonly string[] }) {
       setActive(current);
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    // A jump past a paged table can load rows mid-scroll and move its target after the browser aimed: from Trials to
+    // Resistance on a phone, the heading landed 31px under the bar. Once the jump settles, land it again; a reader who
+    // scrolls, swipes or presses a key in the meantime keeps their own position.
+    let jump: HTMLElement | undefined;
+    let settle = 0;
+    const land = () => {
+      const target = jump;
+      jump = undefined;
+      if (!target) return;
+      const atBottom = Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 1;
+      if (!atBottom && Math.abs(target.getBoundingClientRect().top - offset()) > 2) target.scrollIntoView({ behavior: "instant", block: "start" });
+    };
+    const onScroll = () => {
+      schedule();
+      if (jump) { clearTimeout(settle); settle = window.setTimeout(land, 150); }
+    };
+    const onClick = (event: MouseEvent) => {
+      const link = (event.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
+      const target = link && sections.find((section) => `#${section.id}` === link.getAttribute("href"));
+      if (!target) return;
+      jump = target;
+      clearTimeout(settle);
+      settle = window.setTimeout(land, 150);
+    };
+    const cancel = () => { jump = undefined; clearTimeout(settle); };
     const resize = new ResizeObserver(schedule);
     resize.observe(bar);
     resize.observe(dossier);
-    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", schedule);
     window.addEventListener("hashchange", schedule);
+    dossier.addEventListener("click", onClick);
+    window.addEventListener("wheel", cancel, { passive: true });
+    window.addEventListener("touchstart", cancel, { passive: true });
+    window.addEventListener("keydown", cancel);
     frame = requestAnimationFrame(() => {
       dossier.style.setProperty("--dossier-scroll-offset", `${offset()}px`);
       // Native fragment scrolling happens before hydration; leave room for the wrapped sticky bar.
@@ -49,10 +78,15 @@ export function DossierNav({ omit = [] }: { omit?: readonly string[] }) {
     });
     return () => {
       cancelAnimationFrame(frame);
+      clearTimeout(settle);
       resize.disconnect();
-      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", schedule);
       window.removeEventListener("hashchange", schedule);
+      dossier.removeEventListener("click", onClick);
+      window.removeEventListener("wheel", cancel);
+      window.removeEventListener("touchstart", cancel);
+      window.removeEventListener("keydown", cancel);
       dossier.style.removeProperty("--dossier-scroll-offset");
     };
   }, []);

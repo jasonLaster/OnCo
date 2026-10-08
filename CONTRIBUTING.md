@@ -88,7 +88,7 @@ Companies and institutions may propose changes to their own records through "Sug
 ## Trust and community tooling
 
 - `npm run audit` — contradictions and staleness from the corpus alone (`public/audit.json`, rendered at `/audit/` and as good-first records at `/gaps/`).
-- `npm run factcheck` — openFDA and ClinicalTrials.gov comparisons (`public/factcheck.json`); weekly via GitHub Actions.
+- `npm run factcheck` — openFDA and ClinicalTrials.gov comparisons (`public/factcheck.json`); weekly via GitHub Actions. Cached successful and 404 responses expire after 24 hours by default. Set `FACTCHECK_CACHE_MAX_AGE_SECONDS` to a non-negative integer to change the lifetime (0 forces retrieval), or use `--no-cache`. Legacy or malformed cache files are refreshed. The report’s `sources` array records each lookup’s URL, `fetchedAt`, `checkedAt`, `cached` flag and `httpStatus`; unavailable lookups have `fetchedAt: null` and an error.
 - `npm run provenance` — last-edit commit per record from `git blame` (`public/provenance.json`, shown on each page) and per-contributor credits (`public/contributors.json`, rendered at `/contributors/`).
 - `npx tsx scripts/gen-issue-forms.ts` — keeps the kind and language dropdowns in the issue forms in sync with `KINDS` and `LANGS`; `--check` fails when they drift (also run by the tests).
 - `npx tsx scripts/fetch-votes.ts` — Discussions reactions per entity id into `public/votes.json` (weekly workflow; needs a token with `discussions: read`).

@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { reviews, type Review } from "@/data/reviews";
 import { graph } from "@/lib/graph";
-import { dueDate } from "@/lib/review-due";
 import { routeFor } from "@/lib/kinds";
-import { reviewIssueUrl, reviewerCount, reviewerLevel, tracksFor, TRACK_META } from "@/lib/review-queue";
+import { reviewIssueUrl, reviewerCount, reviewerLevel, tracksFor } from "@/lib/review-queue";
 import { loadModelReviews } from "@/lib/model-reviews";
-import { ModelPanel, PanelIcon } from "./ModelPanel";
+import { ModelPanel } from "./ModelPanel";
 
 const TRACK: Record<Review["track"], { label: string; cls: string }> = {
   expert: { label: "Expert-reviewed", cls: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200" },
@@ -18,17 +17,19 @@ const TRACK: Record<Review["track"], { label: string; cls: string }> = {
  * Model panel (machine commentary): when public/reviews/models/<id>.json exists, one card per AI model
  * with name, version, date, confidence, summary and sourced verdicts, plus a "Models disagree" strip.
  * Human reviews: who signed the page off, on which track, when, and their declared conflicts of
- * interest, with a level chip and a link to the roster. When neither exists an "unreviewed" note is
- * shown so the absence of review is visible rather than implied, with the issue form as the way in.
+ * interest, with a level chip and a link to the roster. When neither exists this renders nothing and the
+ * page foot carries a chip instead: see ReviewNote below.
  */
+/** Whether this page has a review card at all: a model panel or a named reviewer. Nothing renders an empty box. */
+export function hasReviewCard(id: string): boolean {
+  return (reviews[id] ?? []).length > 0 || loadModelReviews(id).length > 0;
+}
+
 export function ReviewBadge({ id }: { id: string }) {
   const list = reviews[id] ?? [];
   const e = graph().get(id);
   const models = loadModelReviews(id);
-  const needs = e ? tracksFor(e.kind) : [];
-  const nextDue = e ? dueDate(e) : undefined;
-  const due = nextDue ? nextDue.due.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : undefined;
-  const issue = e && needs.length ? reviewIssueUrl(e) : undefined;
+  const issue = e && tracksFor(e.kind).length ? reviewIssueUrl(e) : undefined;
 
   const human = list.length ? (
     <div className="card p-3 text-xs space-y-2">
@@ -63,22 +64,29 @@ export function ReviewBadge({ id }: { id: string }) {
     );
   }
 
-  if (human) return human;
+  // A page with neither a model panel nor a named reviewer says so at the foot of the page, in three words.
+  // See ReviewNote below.
+  return human;
+}
 
+/**
+ * The review state of an unreviewed page: a chip at the foot, beside the provenance line.
+ *
+ * This was a card in the right-hand column on about 19,500 pages. It said what was true of all of them (every
+ * fact carries a dated source, the checks run on every build), when the page was next due, that no reviewer had
+ * signed it off, where the queue and the roster are, and that model commentary was coming. Five sentences of
+ * the page talking about itself, beside a page a reader came to for something else. The owner, 8 October 2026:
+ * "could just be a 'Sourced, not expert reviewed' at the bottom of the page."
+ *
+ * The chip keeps the one fact a reader needs, which is what it is not. Everything else it used to say is on
+ * /review/, which it links to. Pages that do have a panel or a reviewer render that card in the column instead.
+ */
+export function ReviewNote({ id }: { id: string }) {
+  if (hasReviewCard(id)) return null;
   return (
-    <div className="card p-3 text-xs text-muted">
-      {/* This card is on about 19,500 pages, and it used to open "Not yet reviewed", which is the least useful
-          true thing it could say about a page whose every fact carries a dated source. It now leads with what
-          is true of all of them and says when the page is next due, from the same rules /freshness/ uses.
-          Owner, 6 October 2026. */}
-      <span className="chip bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 mr-2">Sourced, not expert-reviewed</span>
-      Every fact here carries a dated source and the automated checks run on every build.{" "}
-      {due ? <>Next scheduled re-check {due}. </> : null}
-      No named reviewer has signed it off.{" "}
-      {needs.length ? <>It is queued for {needs.map((t) => TRACK_META[t].label.toLowerCase()).join(" and ")} review. </> : null}
-      {issue ? <><a className="underline" href={issue} rel="noopener">Review this page</a> or see the </> : "See the "}
-      <Link className="underline" href="/review/#queue">review queue</Link> and <Link className="underline" href="/reviewers/">roster</Link>.
-      <div className="mt-1.5 inline-flex items-center gap-1.5"><PanelIcon className="h-3.5 w-3.5 text-accent" /><Link className="underline" href="/review/#panel">Model panel</Link> commentary is coming to this page: machine commentary, not clinical review.</div>
-    </div>
+    <Link href="/review/#queue" className="chip bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 hover:bg-foreground/10"
+      title="No named expert has signed this page off. Every fact on it carries a dated source and is checked on every build; the review queue explains both.">
+      Sourced, not expert-reviewed
+    </Link>
   );
 }

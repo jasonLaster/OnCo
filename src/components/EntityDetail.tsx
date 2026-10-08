@@ -29,7 +29,7 @@ import { ModalityPills } from "./ModalityPills";
 import { PrintButton } from "./PrintButton";
 import { TrialFinderGeo as TrialFinder } from "./TrialFinderGeo";
 import { TrialCounts } from "./TrialCounts";
-import { ReviewBadge } from "./ReviewBadge";
+import { hasReviewCard, ReviewBadge, ReviewNote } from "./ReviewBadge";
 import { TechSchematic } from "./TechSchematic";
 import { Wireframe3D } from "./Wireframe3D";
 import { StickyAside } from "./StickyAside";
@@ -201,7 +201,7 @@ export function EntityDetail({ e }: { e: Entity }) {
       {/* Who last edited this and when. It opened the right-hand column until 6 October 2026; the owner: "not
           useful surface area, this should goto the bottom of the page". It is provenance, which a reader wants
           after the page rather than before it. */}
-      <Container className="pb-4"><ProvenanceLine id={e.id} /></Container>
+      <Container className="pb-4 flex flex-wrap items-center gap-x-3 gap-y-1.5"><ProvenanceLine id={e.id} /><ReviewNote id={e.id} /></Container>
       <MachineLinks e={e} />
     </>
   );
@@ -255,7 +255,9 @@ export function RecordAside({ e }: { e: Entity }) {
             {PACK_KINDS.has(e.kind) && <div className="card p-4 text-sm no-print"><PrintButton className="underline" asOf={e.asOf} title={e.name} /></div>}
             <SuggestEdit id={e.id} kind={e.kind} name={e.name} fields={Object.keys(e)} source={sourceLocation(e.id, e.kind)} route={routeFor(e)} asOf={e.asOf} />
             {e.kind !== "cancer" && <QuickLinks e={e} />}
-            <div data-review><ReviewBadge id={e.id} /></div>
+            {/* Only when there is something to show: a model panel or a named reviewer. An unreviewed page
+                says so with a chip at the foot of the page instead (ReviewNote). */}
+            {hasReviewCard(e.id) && <div data-review><ReviewBadge id={e.id} /></div>}
           </StickyAside>
   );
 }

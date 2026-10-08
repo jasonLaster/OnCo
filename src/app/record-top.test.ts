@@ -170,19 +170,43 @@ describe("the also-known-as line", () => {
 describe("the review panel", () => {
   const aside = (e: Entity) => renderToStaticMarkup(createElement(AppRouterContext.Provider, { value: router }, createElement(RecordAside, { e })));
 
-  // tnbc carries a model panel and pembrolizumab does not; a company page is the third shape of the column.
-  for (const id of ["tnbc", "pembrolizumab", "gilead"]) {
-    it(`${id}: the panel is the last card in the right-hand column`, () => {
+  // tnbc carries a model panel; pembrolizumab and a company page carry neither panel nor reviewer, which is
+  // true of about 19,500 of the 19,600 records.
+  it("tnbc: the panel is the last card in the right-hand column", () => {
+    const html = aside(graph().must("tnbc"));
+    const review = html.indexOf("data-review");
+    expect(review, "the panel is in the column").toBeGreaterThan(0);
+    expect(review, "after the suggest-an-edit card").toBeGreaterThan(html.indexOf("issues/new"));
+    const quick = html.indexOf("data-quick-links");
+    if (quick > 0) expect(review, "after the quick links").toBeGreaterThan(quick);
+    // Nothing of the column's own follows it.
+    expect(html.slice(review), "nothing after the panel").not.toContain("issues/new?template=suggest-edit");
+  });
+
+  /**
+   * A page with no panel and no reviewer used to carry a five-sentence card in the column saying so. The
+   * owner, 8 October 2026: "could just be a 'Sourced, not expert reviewed' at the bottom of the page." The
+   * column now has no card at all, not an empty one, and the chip is at the foot beside the provenance line.
+   */
+  for (const id of ["pembrolizumab", "gilead"]) {
+    it(`${id}: no review card in the column, and no empty box where it was`, () => {
       const html = aside(graph().must(id));
-      const review = html.indexOf("data-review");
-      expect(review, "the panel is in the column").toBeGreaterThan(0);
-      expect(review, "after the suggest-an-edit card").toBeGreaterThan(html.indexOf("issues/new"));
-      const quick = html.indexOf("data-quick-links");
-      if (quick > 0) expect(review, "after the quick links").toBeGreaterThan(quick);
-      // Nothing of the column's own follows it.
-      expect(html.slice(review), "nothing after the panel").not.toContain("issues/new?template=suggest-edit");
+      expect(html, "no card").not.toContain("data-review");
+      expect(html, "and the card's words are not in the column either").not.toContain("Sourced, not expert-reviewed");
     });
   }
+
+  it("an unreviewed page says so once, at the foot, in three words", { timeout: SLOW_MS }, async () => {
+    const html = await recordHtml("pembrolizumab");
+    const chip = html.indexOf("Sourced, not expert-reviewed");
+    expect(chip, "the chip is on the page").toBeGreaterThan(0);
+    expect(html.indexOf("Sourced, not expert-reviewed", chip + 1), "exactly once").toBe(-1);
+    expect(chip, "at the foot, after the provenance line").toBeGreaterThan(html.indexOf("Last edited"));
+    // The five sentences it replaced are gone, including the promise of commentary that had not arrived.
+    expect(html).not.toContain("commentary is coming to this page");
+    expect(html).not.toContain("No named reviewer has signed it off");
+    expect(html).not.toContain("Next scheduled re-check");
+  });
 
   it("the panel's foot names the state of the page and links to the review issue for it", () => {
     const html = aside(graph().must("tnbc"));

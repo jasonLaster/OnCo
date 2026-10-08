@@ -7,6 +7,7 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 8 October 2026
+- The new trials page gets a measured weight ceiling, pinned because its table is paged
 - A page for finding a trial you could still join, filtered by cancer, country and who it is open to
 - An unreviewed page says so in three words at the foot, not five sentences in the margin
 - A trial page now says who can join and where, and a page has one way to correct it

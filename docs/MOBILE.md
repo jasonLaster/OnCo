@@ -117,6 +117,11 @@ Each page now names what its size is allowed to scale with. `/trials/` scales wi
 allowance is the recorded figure scaled by how far that count has moved, with half a per cent of slack,
 because two fetches of the same page are not byte-identical.
 
+`/trials/open/` is fixed for a different reason, recorded on 8 October 2026 at 178 KB. It lists 3,479 trials
+but its table is paged, so the HTML carries thirty rows whatever the corpus does and the rest is fetched from
+`/api/v1/tables/open-trials.json`. Scaling its allowance with the trial count would hand it an allowance it has
+no way to spend, and would hide a regression in the thirty rows it does carry. A paged table should be pinned.
+
 The baseline was re-taken once, today, against the live site, because the 1 October entries were recorded
 before a basis existed and there was no count to scale them from. That is the only time the numbers have gone
 up, and this paragraph is the reason.

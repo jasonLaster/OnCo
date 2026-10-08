@@ -16,7 +16,11 @@
  *      acronym or titles (the NCT id probably points at the wrong study).
  *
  * Responses are cached under /tmp/onco-factcheck-cache (override with FACTCHECK_CACHE; pass
- * --no-cache to refetch) so a re-run after edits costs no requests. openFDA allows 1,000 requests a day
+ * --no-cache to refetch) for at most 24 hours, so same-day re-runs reuse responses.
+ * FACTCHECK_CACHE_MAX_AGE_SECONDS overrides the lifetime; 0 forces fresh requests.
+ * Legacy files without a retrieval timestamp are fetched again. Every lookup is recorded in
+ * factcheck.json sources[] with its URL, retrieval/check dates, cache usage and HTTP status.
+ * openFDA allows 1,000 requests a day
  * per IP without a key; one label lookup per product plus one Drugs@FDA lookup per US-approved product
  * stays under that.
  *
@@ -30,51 +34,25 @@
  * Run: npm run factcheck [--trials-only | --drugs-only] [--only <id>] [--no-cache].
  * Weekly via .github/workflows/factcheck.yml.
  */
-import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { graph } from "../src/lib/graph";
+import { cacheMaxAgeSeconds, FactcheckClient, type SourceCheck } from "./factcheck-cache";
 import { routeFor, type Trial } from "../src/lib/schema";
 
 type Mismatch = { check: string; id: string; name: string; route: string; recorded: string; registry: string; url: string; severity: "high" | "medium" | "low" };
-type Report = { generated: string; checked: { drugs: number; trials: number }; mismatches: Mismatch[]; errors: string[] };
+type Report = { generated: string; checked: { drugs: number; trials: number }; mismatches: Mismatch[]; errors: string[]; sources: SourceCheck[] };
 export type Patch = { id: string; kind: "trial" | "drug"; name: string; route: string; field: "status" | "phase" | "enrolled"; current: string; proposed: string; reason: string; source: string; registryValue: string; proposedOn: string };
 export type PatchFile = { generated: string; patches: Patch[] };
 
-const CACHE_DIR = process.env.FACTCHECK_CACHE ?? "/tmp/onco-factcheck-cache";
-const useCache = !process.argv.includes("--no-cache");
-/** Set by getJson: true when the last answer came from the on-disk cache, so the politeness delay can be skipped. */
-let lastFromCache = false;
-const sleep = (ms: number) => (lastFromCache ? Promise.resolve() : new Promise((r) => setTimeout(r, ms)));
-
-function cachePath(url: string): string {
-  return join(CACHE_DIR, `${createHash("sha1").update(url).digest("hex")}.json`);
-}
-
-/** GET JSON with retry and backoff; 404 is a result, not an error. Successful and 404 responses are cached on disk. */
-async function getJson(url: string, attempt = 1): Promise<unknown | null | "404"> {
-  const cp = cachePath(url);
-  if (useCache && existsSync(cp)) {
-    const c = JSON.parse(readFileSync(cp, "utf8")) as { notFound?: boolean; body?: unknown };
-    lastFromCache = true;
-    return c.notFound ? "404" : (c.body ?? null);
-  }
-  lastFromCache = false;
-  try {
-    const r = await fetch(url, { headers: { Accept: "application/json", "User-Agent": "OnCo/1.0 (github.com/judegomila/OnCo)" } });
-    if (r.status === 404) { mkdirSync(CACHE_DIR, { recursive: true }); writeFileSync(cp, JSON.stringify({ notFound: true })); return "404"; }
-    if (r.status === 429 || r.status >= 500) throw new Error(`HTTP ${r.status}`);
-    if (!r.ok) return null;
-    const body: unknown = await r.json();
-    mkdirSync(CACHE_DIR, { recursive: true });
-    writeFileSync(cp, JSON.stringify({ body }));
-    return body;
-  } catch (e) {
-    if (attempt >= 4) { console.warn(`  giving up ${url}: ${String(e)}`); return null; }
-    await sleep(1500 * 2 ** attempt);
-    return getJson(url, attempt + 1);
-  }
-}
+const client = new FactcheckClient({
+  cacheDir: process.env.FACTCHECK_CACHE ?? "/tmp/onco-factcheck-cache",
+  maxAgeMs: cacheMaxAgeSeconds(process.env.FACTCHECK_CACHE_MAX_AGE_SECONDS) * 1000,
+  useCache: !process.argv.includes("--no-cache"),
+});
+/** Fresh cache hits skip the politeness delay; network lookups retain it. */
+const sleep = (ms: number) => (client.lastFromCache ? Promise.resolve() : new Promise((r) => setTimeout(r, ms)));
+const getJson = (url: string) => client.getJson(url);
 
 /** The single generic name to search openFDA for: parentheticals, isotopes and combination partners stripped. */
 export function genericName(name: string, code?: string): string {
@@ -234,7 +212,7 @@ export function checkRegistryTrial(t: Trial, ps: TrialProtocol | undefined, toda
 
 async function main() {
   const g = graph();
-  const report: Report = { generated: new Date().toISOString(), checked: { drugs: 0, trials: 0 }, mismatches: [], errors: [] };
+  const report: Report = { generated: new Date().toISOString(), checked: { drugs: 0, trials: 0 }, mismatches: [], errors: [], sources: client.sources };
   const patches: Patch[] = [];
   const today = new Date().toISOString().slice(0, 10);
   const only = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : undefined;

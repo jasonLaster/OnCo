@@ -342,12 +342,61 @@ export const TermSchema = Base.extend({
   wikipediaChecked: isoDate.optional(),
 });
 
+/**
+ * What ClinicalTrials.gov says about joining a trial, as read on a date and hashed.
+ *
+ * The complete registry capture is not in the repository. It is 390 MB across 25,407 studies, three quarters of
+ * them for registry ids that are mentioned on a product page and have no trial record here, and the eligibility
+ * text and site lists are a quarter of it each. The fetcher keeps the whole capture in .cache/trial-participation
+ * and writes these fields out: everything a page can state about who a trial is open to and where it runs,
+ * without fetching anything, plus the SHA-256 of the study as retrieved so the claim can be checked against the
+ * registry. `hasEligibility` records that the criteria text exists; the text itself is read from the registry.
+ */
+export const TrialParticipationSchema = z.object({
+  nct: z.string().regex(/^NCT\d{8}$/),
+  source: url,
+  fetchedAt: z.iso.datetime(),
+  /** SHA-256 of the complete study as the registry returned it, not of the fields kept here. */
+  studySha256: z.string().regex(/^[0-9a-f]{64}$/),
+  overallStatus: z.string().optional(),
+  lastUpdatePosted: z.string().optional(),
+  whyStopped: z.string().optional(),
+  leadSponsor: z.string().optional(),
+  collaboratorCount: z.number().int().nonnegative(),
+  minimumAge: z.string().optional(),
+  maximumAge: z.string().optional(),
+  sex: z.string().optional(),
+  healthyVolunteers: z.boolean().optional(),
+  hasEligibility: z.boolean(),
+  enrolment: z.number().int().nonnegative().optional(),
+  enrolmentType: z.string().optional(),
+  siteCount: z.number().int().nonnegative(),
+  recruitingSiteCount: z.number().int().nonnegative(),
+  countries: z.array(z.string()).optional(),
+  /** A retained old reading must not be presented as a successful new registry capture. */
+  noLongerReturnedAt: z.iso.datetime().optional(),
+});
+export type TrialParticipation = z.infer<typeof TrialParticipationSchema>;
+
+/** ISRCTN entries for the trials ClinicalTrials.gov does not carry. There are 53, so the snapshots are small enough to keep. */
+export const TrialAlternateParticipationSchema = z.object({
+  registry: z.literal("ISRCTN"),
+  registryId: z.string().regex(/^ISRCTN\d+$/),
+  snapshot: z.string().regex(/^\/trial-participation\/other\/ISRCTN\d+\.json$/),
+  source: url, fetchedAt: z.iso.datetime(), lastUpdated: z.string().optional(),
+  hasEligibility: z.boolean(), siteCount: z.number().int().nonnegative(), sponsors: z.array(z.string()),
+});
+export type TrialAlternateParticipation = z.infer<typeof TrialAlternateParticipationSchema>;
+
 export const TrialSchema = Base.extend({
   kind: z.literal("trial"),
   nct: z.string().optional(),
   phase: z.enum(["1", "1/2", "2", "2/3", "3", "4", "observational", "platform"]),
   setting: z.string(),
   sponsor: z.string().optional(),
+  /** What the registry says about joining: status, sponsor, who it is open to, how many sites and where. */
+  participation: z.array(TrialParticipationSchema).optional(),
+  alternateParticipation: z.array(TrialAlternateParticipationSchema).optional(),
   /** Headline result in one or two sentences, with numbers only if sourced. */
   result: z.string().optional(),
   /**

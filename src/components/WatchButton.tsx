@@ -16,6 +16,10 @@ import { SaveToAccountModal } from "./SaveToAccountModal";
  * Account: when this browser is signed in on me.onco.cc (src/lib/me.ts) the star is also kept there, so it
  * follows the person and can feed update emails. Signed out, the first press in a visit offers to sign in; Not
  * now is remembered for the visit. `compact` renders the star alone, for table rows.
+ *
+ * There was a "Follow by feed" link beside the star on every record. The owner took it off on 8 October 2026:
+ * the Atom feed is site-wide, not this page, so it was answering a question the reader had not asked. The feeds
+ * are listed at /feeds/ and declared in the head of every page, which is where a feed reader looks anyway.
  */
 const NUDGE_KEY = "onco:me-nudge:v1";
 const nudged = () => { try { return window.sessionStorage.getItem(NUDGE_KEY) === "1"; } catch { return true; } };
@@ -88,7 +92,6 @@ export function WatchButton({ id, kind, name, route, asOf, className = "", compa
       </button>
       {on && !storageBlocked && <Link href="/saved/" className="text-xs text-muted underline hover:text-foreground">{t("watch.saved")}</Link>}
       {on && storageBlocked && <span className="text-xs text-muted">{t("watch.blocked")}</span>}
-      <a href="/feeds/changelog.xml" className="text-xs text-muted underline hover:text-foreground" title={t("watch.feedTitle")}>{t("watch.feed")}</a>
       <span role="status" aria-live="polite" className={`basis-full text-xs ${note ? "text-accent" : "sr-only"}`}>{note ?? ""}</span>
     </span>
   );

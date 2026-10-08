@@ -250,7 +250,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Months of lead time over imaging", "Enables escalation and de-escalation trials"],
     limitations: ["Sensitivity limited by cfDNA quantity", "Lead time without proven intervention causes anxiety"],
     terms: ["mrd", "ctdna"],
-    companies: ["natera", "exact-sciences", "guardant-health", "adela", "billiontoone", "c2i-genomics", "haystack-oncology", "inivata", "isabl", "mission-bio", "naveris"],
+    companies: ["natera", "exact-sciences", "guardant-health", "adela", "billiontoone", "c2i-genomics", "haystack-oncology", "inivata", "isabl", "mission-bio", "naveris", "teiko"],
     trials: ["imvigor011", "dynamic"],
     cancers: ["colorectal", "urothelial", "tnbc", "nsclc", "multiple-myeloma"], related: ["ctdna-tests", "idea-dtc-colonisation-determinants", "idea-dormancy-maintenance-therapy"], links: [{ label: "Wikipedia", url: W("Minimal_residual_disease") }],
   },

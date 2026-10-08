@@ -2,6 +2,17 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-07
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-10-07 | [ascot-jcog1202](/trials/ascot-jcog1202/) | The UMIN receipt-number URL resolved to a different registry identifier from the source label. | Trial participation inventory; both old and replacement pages checked against their displayed UMIN identifiers. | Replaced R000013683 with [R000013644](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000013644); retained the intended study identifier and trial findings. |
+| 2026-10-07 | [create-x](/trials/create-x/) | The UMIN receipt-number URL resolved to a different registry identifier from the source label. | Trial participation inventory; both old and replacement pages checked against their displayed UMIN identifiers. | Replaced R000001004 with [R000000989](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000000989); retained the intended study identifier and trial findings. |
+| 2026-10-07 | [jaspac-01](/trials/jaspac-01/) | The UMIN receipt-number URL resolved to a different registry identifier from the source label. | Trial participation inventory; both old and replacement pages checked against their displayed UMIN identifiers. | Replaced R000000794 with [R000000791](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000000791); retained the intended study identifier and trial findings. |
+| 2026-10-07 | [jcog0802](/trials/jcog0802/) | The UMIN receipt-number URL resolved to a different registry identifier from the source label. | Trial participation inventory; both old and replacement pages checked against their displayed UMIN identifiers. | Replaced R000002809 with [R000002300](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000002300); retained the intended study identifier and trial findings. |
+| 2026-10-07 | [triumph](/trials/triumph/) | The UMIN receipt-number URL resolved to a different registry identifier from the source label. | Trial participation inventory; both old and replacement pages checked against their displayed UMIN identifiers. | Replaced R000031885 with [R000031949](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000031949); retained the intended study identifier and trial findings. |
+| 2026-10-07 | [QUARTZ](/trials/quartz/) | ISRCTN3826061 was malformed and the registry API rejected it. | The ISRCTN API resolved QUARTZ as ISRCTN13826061, with acronym QUARTZ and ClinicalTrials.gov cross-reference NCT00403065. | Replaced the link with [ISRCTN13826061](https://www.isrctn.com/ISRCTN13826061). |
+
 ## 2026-10-06
 
 | Date | Entity | What was wrong | How found | Fix |
@@ -30,7 +41,7 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 | 2026-10-06 | vb15010 | Molecular target relationship absent and study simplified to phase 2 | NCT06819215 | Link PARP and retain phase 1/2 protocol |
 | 2026-10-06 | saruparib and palacaparib | Missing selective PARP1 context; saruparib actual enrolment called planned; PETRA access stale | Current registry captures and primary publications | Refresh trial states, actual/estimated counts and clinical evidence boundaries |
 | 2026-10-06 | parp | PARP2 listed as an alias despite PARP1 identifiers; implication that healthy cells simply survive | Molecular identifier ownership and clinical evidence | Clarify class scope, separate enzymes and preserve toxicity and biomarker limits |
-| 2026-10-06 | [TROPION-Breast01 paper](/key-papers/paper-tropion-breast01-jco-2024/) | The text said a negative survival result stalled breast approval and that Dato-DXd was not a standard option. | Checked against the [FDA approval notice](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-hr-positive-her2-negative-breast) and the [final survival publication](https://doi.org/10.1016/j.annonc.2025.12.017). | State the January 2025 approval and its advanced-disease, HR-positive/HER2-negative and prior-treatment restrictions; retain the nonsignificant final survival result and cite the separate reports. |
+
 
 ## 2026-10-01
 

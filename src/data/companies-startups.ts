@@ -11,7 +11,8 @@ import type { CompanyInput } from "@/lib/schema";
  */
 
 const asOf = "2026-09-10";
-type S = Omit<CompanyInput, "kind" | "asOf">;
+// Most of this file was checked in one pass on the date above; a record added later carries its own `asOf`.
+type S = Omit<CompanyInput, "kind" | "asOf"> & Partial<Pick<CompanyInput, "asOf">>;
 const s = (x: S): CompanyInput => ({ kind: "company", asOf, ...x });
 
 export const companiesStartups: CompanyInput[] = [
@@ -25,6 +26,12 @@ export const companiesStartups: CompanyInput[] = [
     ],
     notes: ["Company website abderatx.com returned HTTP 503 or no response on every attempt, so the website field points to the fetched press release copy instead. Current status is uncertain: search headlines in 2026 refer to an auction of Abdera laboratory equipment and to biotechs that closed, but no fetched primary source confirms a wind-down, so stage is left at startup. Clinical status of the DLL3 programme (a phase 1a start was reported in trade press) not confirmed from fetched pages."],
     links: [{"label":"Official website","url":"https://www.biospace.com/abdera-therapeutics-debuts-with-142-million-in-financing-to-engineer-and-advance-best-in-class-antibody-based-radiopharmaceuticals-for-cancer"},{"label":"Endpoints News: Abdera raises $110M Series B","url":"https://endpoints.news/abdera-raises-110m-to-push-targeted-radiotherapies-where-they-havent-gone-before/"}], related: ["src-endpoints-news"] }),
+  s({ id: "teiko", name: "Teiko", asOf: "2026-10-08", hq: "Salt Lake City, UT", country: "US", companyType: "cro-services", stage: "startup", website: "https://teiko-labs.com/",
+    sections: ["diagnostics", "immunotherapy"], technologies: ["mrd-testing"], terms: ["flow-cytometry", "mrd"],
+    tldr: "Teiko runs the laboratory work that tells a trial what a patient's immune system is doing: it ships a kit that keeps a blood sample stable for months, runs it through cytometry in its own certified laboratory, and returns counts of each immune cell type.",
+    summary: "Teiko is a contract research organisation for immune monitoring in clinical trials, with a CLIA-certified laboratory at 675 Arapeen Drive, Salt Lake City, Utah (CLIA ID 46D2278690) and a commercial office in San Mateo, California. It sells three linked things. TokuKit is a blood preservation kit for clinical sites: the company states it is a three-step, twenty-minute process needing no centrifuge, that it stabilises immune cell population frequencies and functional marker expression for months rather than days, that fixed samples correlate with fresh at R above 0.99, and that it cuts failure of high-value specimens from about 20 per cent to under 1 per cent. The assays are CLIA-validated spectral and mass cytometry panels configured from what the company describes as 12,000 pre-validated configurations, with custom markers drawn from a library of more than 120 validated clones, priced in the mid-hundreds of dollars per sample. Gating, the step where a human decides which cells are which, is done by its own staff with quality-control checks and a gating tree published for every sample. The company describes its ambition as digitising the immune system, and in October 2026 said it would present research on measurable residual disease in acute myeloid leukaemia and on long-term whole blood stabilisation at the ICCS 2026 meeting.",
+    notes: ["Every figure here is the company's own claim on teiko-labs.com, read on 8 October 2026; none has been checked against an independent evaluation or a published method comparison. The ICCS 2026 posters were announced, not read. No funding round is recorded because no primary source for one was fetched."],
+    links: [{"label":"Official website","url":"https://teiko-labs.com/"},{"label":"Company page, including the laboratory address and CLIA number","url":"https://teiko-labs.com/company"}] }),
   s({ id: "actinium-pharmaceuticals", drugs: ["iomab-b"], name: "Actinium Pharmaceuticals", hq: "New York, NY", country: "US", ticker: "ATNM", companyType: "radiopharma", stage: "public", website: "https://www.actiniumpharma.com/",
     sections: ["radiopharma"], technologies: ["radioimmunotherapy","targeted-alpha-therapy"], targets: ["cd33"], cancers: ["aml","prostate","nsclc"],
     tldr: "Actinium Pharmaceuticals attaches the alpha-emitting isotope actinium-225 to antibodies to treat acute myeloid leukaemia and, more recently, solid tumours such as prostate and lung cancer. It is a small listed company whose lead programme is approaching new clinical milestones.",

@@ -11,7 +11,7 @@ const asOf = "2026-09-16";
 const tags = ["radiation-wave2"];
 const ct = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https://clinicaltrials.gov/study/${nct}` });
 const isrctn = (n: string) => ({ label: `ISRCTN${n}`, url: `https://www.isrctn.com/ISRCTN${n}` });
-type T = Omit<TrialInput, "kind" | "asOf">;
+type T = Omit<TrialInput, "kind" | "asOf"> & Partial<Pick<TrialInput, "asOf">>;
 const t = (x: T): TrialInput => ({ kind: "trial", asOf, tags, ...x });
 const BREAST = ["breast-hr-positive", "breast-her2-positive", "tnbc"];
 
@@ -122,14 +122,14 @@ export const radiationTrials: TrialInput[] = [
     outcomes: [{ endpoint: "Time to cognitive function failure", primary: true, arms: [{ name: "Hippocampal-avoidance WBRT + memantine" }, { name: "WBRT + memantine" }], hr: 0.74, ci: [0.58, 0.95], p: "0.02", source: "https://doi.org/10.1200/JCO.19.02767" },
       { endpoint: "Deterioration in executive function at 4 months", unit: "%", arms: [{ name: "Hippocampal-avoidance WBRT + memantine", value: 23.3 }, { name: "WBRT + memantine", value: 40.4 }], p: "0.01", source: "https://doi.org/10.1200/JCO.19.02767" }],
     cancers: ["brain-tumours", "metastatic-cancer", "secondary-brain-tumours"], technologies: ["imrt-igrt", "vmat"], terms: ["wbrt", "organs-at-risk"], links: [ct("NCT02360215"), { label: "JCO 2020", url: "https://doi.org/10.1200/JCO.19.02767" }] }),
-  t({ id: "quartz", name: "QUARTZ", phase: "3", status: "negative", yearReported: 2016, sponsor: "Medical Research Council (UK)", enrolled: 538,
+  t({ id: "quartz", asOf: "2026-10-07", name: "QUARTZ", phase: "3", status: "negative", yearReported: 2016, sponsor: "Medical Research Council (UK)", enrolled: 538,
     setting: "Non-small-cell lung cancer with brain metastases unsuitable for surgery or radiosurgery: whole-brain radiotherapy plus supportive care versus supportive care alone",
     tldr: "QUARTZ found that whole-brain radiotherapy added nothing measurable, in survival or quality of life, for lung cancer patients whose brain metastases could not be treated with surgery or radiosurgery.",
     summary: "QUARTZ randomised 538 patients with non-small-cell lung cancer and brain metastases unsuitable for resection or stereotactic radiosurgery to optimal supportive care with dexamethasone, with or without whole-brain radiotherapy (20 Gy in five fractions). Quality-adjusted life-years (46.4 vs 41.7 days) and overall survival (9.2 vs 8.5 weeks) did not differ meaningfully (Mulvenna and colleagues, Lancet 2016). The result restrained the routine use of whole-brain radiotherapy in patients with poor performance status.",
     result: "Quality-adjusted life-years 46.4 vs 41.7 days; overall survival 9.2 vs 8.5 weeks; no meaningful benefit from whole-brain radiotherapy.",
     outcomes: [{ endpoint: "Quality-adjusted life-years", primary: true, unit: "QALY days", arms: [{ name: "Optimal supportive care + WBRT", n: 269, value: 46.4, note: "Difference 4.7 days, two-sided 90% CI -12.7 to 3.3" }, { name: "Optimal supportive care alone", n: 269, value: 41.7 }], source: "https://doi.org/10.1016/S0140-6736(16)30825-X" },
       { endpoint: "Overall survival", arms: [{ name: "Optimal supportive care + WBRT" }, { name: "Optimal supportive care alone" }], hr: 1.06, ci: [0.90, 1.26], source: "https://doi.org/10.1016/S0140-6736(16)30825-X" }],
-    drugs: ["dexamethasone"], cancers: ["nsclc", "brain-tumours", "secondary-brain-tumours"], technologies: ["palliative-radiotherapy", "palliative-care"], terms: ["wbrt"], links: [isrctn("3826061"), { label: "Lancet 2016", url: "https://doi.org/10.1016/S0140-6736(16)30825-X" }] }),
+    drugs: ["dexamethasone"], cancers: ["nsclc", "brain-tumours", "secondary-brain-tumours"], technologies: ["palliative-radiotherapy", "palliative-care"], terms: ["wbrt"], links: [isrctn("13826061"), { label: "Lancet 2016", url: "https://doi.org/10.1016/S0140-6736(16)30825-X" }] }),
   t({ id: "catnon", companies: ["curie-nki-eortc"], name: "CATNON (EORTC 26053-22054)", nct: "NCT00626990", phase: "3", status: "positive", yearReported: 2017, sponsor: "EORTC", enrolled: 751,
     setting: "Newly diagnosed anaplastic glioma without 1p/19q co-deletion: radiotherapy with or without concurrent and with or without adjuvant temozolomide",
     tldr: "CATNON showed that a year of temozolomide after radiotherapy lengthens survival in anaplastic gliomas that lack the 1p/19q co-deletion, and that the benefit is concentrated in IDH-mutant tumours.",

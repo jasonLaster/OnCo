@@ -7,8 +7,10 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 8 October 2026
+- A trial page now says who can join and where, and a page has one way to correct it
 - The site no longer loads unstyled after a deploy
 - The site loaded unstyled after a deploy, and the star count comes back
+- Refit other columns while a column is being resized
 - The TROPION-Breast01 record says what the FDA actually did
 - chore: refresh pulse, abstract and citation snapshots (#240)
 - chore: weekly roadmap registry check (public/roadmap-watch.json)
@@ -16,6 +18,20 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - chore: EU regional rows read from the EMA register pages (#238)
 
 ### 7 October 2026
+- Keep open header tips from widening table columns
+- Respect row content minimums when sizing table columns
+- Include the visible mobile language label in its accessible name
+- Cover similar page ranking and lazy export behavior
+- Compute similar pages per record during rendering
+- Keep review images outside the repository
+- Refresh resize review screenshots after accessibility fixes
+- Provide initial accessible column resize values
+- Show column resize dividers on hover and focus
+- Fit and resize shared table columns with visual comparisons
+- Run CI gates and static export in parallel without weakening checks
+- Align CI render gates and avoid duplicate page checks
+- Fix table filter names and badge accessibility
+- Expire fact-check cache entries and record source retrieval dates
 - Thirteen contributed fixes: nine fetchers that keep what they already had, four that let search recover
 - Revert "Expire older-day OpenAlex work caches before dating research snapshots (#213)"
 - Eleven contributed TROP2 and PARP pull requests, and the trials they brought
@@ -45,6 +61,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Reject malformed browser record envelopes before caching
 - fix: retain EMA snapshots after unreadable refresh input
 - Report browser record failures and permit Ask retries
+- Preserve FDA snapshots until both sources finish completely
 
 ### 6 October 2026
 - Deepen PARP1 programmes, biomarker evidence and clinical trial states
@@ -65,6 +82,19 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Seven things leave the top of a record page
 - Three more things leave the top of a record page
 - Four things leave the top of a record page
+- Reopen retained search queries from the keyboard
+- Recover search box queries after index load failures
+- fix(factcheck): count unresolved helper record identities
+- Read explicit marker results before bare sign fallback
+- fix(factcheck): reject ambiguous ids across data files
+- Share marker suffix parsing across trial criteria and profiles
+- Keep protocol identity separate from title context
+- Require complete marker predicates before applying trial exclusions
+- Filter semantic candidates before score allocation
+- Preserve complete trial titles and identifier boundaries
+- Keep ambiguous eligibility marker clauses unresolved
+- Require trial-specific identity before registry patches
+- fix(mcp): retain hidden values in field comparisons
 - chore: EU regional rows read from the EMA register pages (#154)
 
 ### 5 October 2026
@@ -72,6 +102,14 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - chore: weekly fact check, audit, and provenance refresh (#152)
 - chore: refresh trial counts from ClinicalTrials.gov (#149)
 - chore: EU regional rows read from the EMA register pages (#128)
+- fix(mcp): compare complete field values instead of summaries
+- Propagate Ask record retrieval failures in CLI and MCP
+- Preserve qualified biomarker names when matching trials
+- Keep trial biomarker polarity scoped to each result
+- Hold trial fact-check patches until registry identity is resolved
+- fix(search): filter record kinds before limiting retrieval
+- Patch only direct literal fields in fact-check corrections
+- fix(cli): resolve record URLs with query strings and anchors
 
 ### 4 October 2026
 - The sources come off the sidebar and go to the foot of the page

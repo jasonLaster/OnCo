@@ -88,7 +88,7 @@ export function RoadmapStory({ title, steps, src }: { title: string; steps: Stor
       <div className="space-y-16">
         {steps.map((s, i) => (
           <section key={i} ref={(el) => { refs.current[i] = el; }} data-step={i} aria-labelledby={`story-step-${i}`} className={`transition-opacity ${i === active ? "opacity-100" : "opacity-60"}`}>
-            <div className="flex flex-wrap items-center gap-2"><span className="kicker">{s.era}</span><span className={`chip ${statusClass(TONE_STATUS[s.status])}`}>{s.status}</span><span className="text-xs text-muted">step {i + 1} of {steps.length}</span></div>
+            <div className="flex flex-wrap items-center gap-2"><span className="kicker">{s.era}</span><span className={`chip ${statusClass(TONE_STATUS[s.status])}`}>{s.status}</span></div>
             <h3 id={`story-step-${i}`} className="text-2xl font-semibold tracking-tight mt-1">{s.title}</h3>
             {file && <p className="text-[15px] leading-relaxed mt-3 max-w-3xl">{file.eras[i]?.description}</p>}
             {file === undefined && <p className="text-xs text-muted mt-3" aria-live="polite">Loading this step…</p>}

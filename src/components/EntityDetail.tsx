@@ -38,6 +38,7 @@ import { Tabs, type Tab } from "./Tabs";
 import { ScrollRow } from "./ScrollRow";
 import { RoadmapStory } from "./RoadmapStory";
 import { TrialOutcomes } from "./Pictogram";
+import { TrialParticipation } from "./TrialParticipation";
 import { TrialExplainer } from "./TrialExplainer";
 import { EvidenceBar } from "./EvidenceBar";
 import { EvidenceGradeChip } from "./EvidenceGradeChip";
@@ -244,11 +245,13 @@ export function RecordAside({ e }: { e: Entity }) {
             {e.kind === "person" && <PortraitCredit id={e.id} />}
             {e.kind === "technology" && e.tags.some((t) => t.startsWith("evidence:")) && <div className="card p-4 text-sm"><div className="kicker mb-1.5">Evidence grade</div><EvidenceGradeChip tags={e.tags} /><p className="text-[11px] text-muted mt-2">How much and what kind of evidence, for the stated purpose. Grades are explained on the <Link className="underline" href="/live/complementary/">complementary approaches page</Link>.</p></div>}
             {(e.kind === "drug" || e.kind === "technology" || e.kind === "target" || e.kind === "trial") && <EvidenceBar e={e} />}
-            <div className="card p-4 text-sm space-y-3">
+            {/* A roadmap has no Wikipedia article and no public tags, so this card drew an empty box above the
+                actions on every one of them. It renders only when it has something in it. */}
+            {(e.wikipedia || (e.kind === "term" && e.wikipediaChecked) || publicTags(e.tags).length > 0) && <div className="card p-4 text-sm space-y-3">
               {e.wikipedia && <div><div className="kicker mb-1"><TL text="Wikipedia" /></div><a className="underline break-all" href={e.wikipedia} rel="noopener">{decodeURIComponent(e.wikipedia.replace("https://en.wikipedia.org/wiki/", "")).replace(/_/g, " ")}</a></div>}
               {!e.wikipedia && e.kind === "term" && e.wikipediaChecked && <div><div className="kicker mb-1"><TL text="Wikipedia" /></div><p className="text-muted" title={`English Wikipedia searched on ${e.wikipediaChecked}: no article with this name or any of its aliases`}><TL text="No Wikipedia article" /></p></div>}
               {publicTags(e.tags).length > 0 && <div><div className="kicker mb-1"><Link href="/tagged/" className="hover:underline"><TL text="Tags" /></Link></div><div className="flex flex-wrap gap-1" data-tag-chips>{publicTags(e.tags).map((t) => <Link key={t} href={tagRoute(t)} className="chip bg-foreground/5 hover:bg-accent-soft hover:text-accent" title={`Every record tagged ${t}`}>{t}</Link>)}</div></div>}
-            </div>
+            </div>}
             {PACK_KINDS.has(e.kind) && <div className="card p-4 text-sm no-print"><PrintButton className="underline" asOf={e.asOf} title={e.name} /></div>}
             <SuggestEdit id={e.id} kind={e.kind} name={e.name} fields={Object.keys(e)} source={sourceLocation(e.id, e.kind)} route={routeFor(e)} asOf={e.asOf} />
             {e.kind !== "cancer" && <QuickLinks e={e} />}
@@ -462,6 +465,8 @@ function kindTabs(e: Entity): Tab[] {
           <Field label="Replication">{e.replication}</Field>
         </div>),
         ...(e.outcomes.length ? [{ id: "outcomes", label: "Outcomes", count: e.outcomes.length, content: <div className="space-y-4"><TrialExplainer trial={e} /><TrialOutcomes t={e} /></div> }] : []),
+        // What the registry says about joining. Added 8 October 2026 with the trial-participation capture.
+        ...((e.participation?.length || e.alternateParticipation?.length) ? [{ id: "taking-part", label: "Taking part", content: <TrialParticipation t={e} /> }] : []),
       ];
     case "pairing": {
       const a = g.get(e.a), b = g.get(e.b);

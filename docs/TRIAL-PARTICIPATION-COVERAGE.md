@@ -2,20 +2,20 @@
 
 Repository growth, build/deployment costs and browser loading behavior are measured in [Trial participation: repository size and build impact](TRIAL-PARTICIPATION-SIZE.md).
 
-Captured 25,365 of 25,366 explicit ClinicalTrials.gov identifiers across 5,970 canonical trials and 33,950 drug-linked snapshot rows. 53 ISRCTN registry snapshots cover 55 canonical records. In total, 5884 canonical records have captured participation data; 86 remain named gaps.
+Captured 25,407 of 25,408 explicit ClinicalTrials.gov identifiers across 6,021 canonical trials and 33,950 drug-linked snapshot rows. 53 ISRCTN registry snapshots cover 55 canonical records. In total, 5935 canonical records have captured participation data; 86 remain named gaps.
 
 | Field | Studies |
 |---|---:|
-| Eligibility text | 25365 |
-| Lead sponsor | 25365 |
-| Locations | 23291 |
-| Recruiting overall | 5386 |
+| Eligibility text | 25407 |
+| Lead sponsor | 25407 |
+| Locations | 23329 |
+| Recruiting overall | 5407 |
 | Not returned by registry | 1 |
 | Fetch unresolved | 0 |
 
 Each `public/trial-participation/studies/NCT*.json` preserves the requested registry modules, with a retrieval timestamp, source URLs, attribution and SHA-256 of the stored study. Eligibility includes the complete posted inclusion/exclusion text, ages, sex and healthy-volunteer rules. Study metadata includes lead sponsor and collaborators, recruitment status and stop reasons, facility/city/state/postcode/country/site status/coordinates, conditions, summaries, treatment arms and interventions, design and enrolment, primary/secondary outcomes and their time frames, start/completion dates and registry update dates.
 
-Overall recruitment does not establish that a particular site or cohort is open. Missing site status is recorded as missing. Criteria are verbatim and are not an automated eligibility decision. Biomarker, prior-treatment, organ-function, performance-status, washout and visit requirements may be embedded in that text; they are not inferred when unstated. Costs, travel support, available slots and cohort availability need confirmation with the study team. Use the source record's Contacts and Locations section for current contacts; investigator names, emails and phone numbers are excluded from these captures under the repository's data-source policy.
+Overall recruitment does not establish that a particular site or cohort is open. Missing site status is recorded as missing. Criteria are verbatim and are not an automated eligibility decision. Biomarker, prior-treatment, organ-function, performance-status, washout and visit requirements may be embedded in that text; they are not inferred when unstated. Costs, travel support, available slots and cohort availability need confirmation with the study team. Use the source record's Contacts and Locations section for current contacts; investigator names, emails and phone numbers are excluded from these captures under the repository's data-source policy, including the few a registry typed into a site's name.
 
 The manifest `public/trial-participation/index.json` maps canonical record IDs and drug snapshots to studies, lists missing registry fields, records retrieval failures separately from registry omissions, and lists sponsor wording differences for review. Corpus sponsors are preserved; a name difference is not treated as an error. Small references on canonical trial records point to these separate snapshots so the full locations and eligibility do not enlarge every page's hydration payload.
 

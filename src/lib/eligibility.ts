@@ -26,6 +26,8 @@ export type CriterionTags = {
   biomarkers?: string[];
   /** Biomarkers the tumour must NOT have. */
   biomarkersExcluded?: string[];
+  /** Combined or alternative biomarker clauses that cannot be represented as required-marker lists. */
+  biomarkersUnclear?: boolean;
   age?: { min?: number; max?: number };
   /** Therapies the person must have received. */
   priorTherapyRequired?: string[];
@@ -126,8 +128,8 @@ export const BIOMARKER_PATTERNS: Array<[string, RegExp]> = [
   ["TP53", /\bTP53\b|\bp53\b|del\(?17p\)?/i],
   ["MGMT", /\bMGMT\b/i],
   ["Ki-67", /\bKi-?67\b/i],
-  ["HR-positive", /\b(?:HR|ER|oestrogen receptor|estrogen receptor|hormone receptor)[- ]?(?:positive|\+)/i],
-  ["HR-negative", /\b(?:HR|ER|hormone receptor)[- ]?(?:negative|-)\b/i],
+  ["HR-positive", /\b(?:HR|ER|oestrogen receptor|estrogen receptor|hormone receptor)(?:[- ]?positive\b|\s*\+(?=\W|$))/i],
+  ["HR-negative", /\b(?:HR|ER|hormone receptor)(?:[- ]?negative\b|\s*-(?=\W|$))/i],
   ["TROP2", /\bTROP-?2\b/i],
   ["Claudin 18.2", /\bCLDN18\.2\b|claudin\s*18\.2/i],
   ["DLL3", /\bDLL3\b/i],
@@ -196,6 +198,107 @@ export const THERAPY_PATTERNS: Array<[string, RegExp]> = [
 
 const NEGATIVE_BM = /(negative|wild[- ]?type|\bWT\b|without|lacking|absence of|no (?:known )?(?:[A-Za-z0-9-]+\s){0,3}(?:mutation|alteration|amplification|expression|rearrangement|fusion))/i;
 const REQUIRED_CUE = /(positive|\+\b|mutat|alteration|amplif|overexpress|express|rearrang|fusion|documented|confirmed|known|deficien|high|≥|>=|status)/i;
+const NEGATED_MARKER_PREFIX = /\b(?:(?:no|without)(?:\s+(?:any|known|detectable|documented|confirmed|clear))*(?:\s+evidence\s+of)?|(?:absence|lack)\s+of|lacking|negative\s+for|not)\s*$/i;
+type MarkerPolarity = "positive" | "negative" | "unclear";
+
+/** Read one attached result and leave its qualifiers for the caller; profiles and criteria use the same grammar. */
+function markerSuffix(after: string): { polarity: MarkerPolarity; rest: string } | undefined {
+  const copula = /^(?:is|are|was|were|must be)\s+/i;
+  let rest = after.replace(/^\s*(?:[-:]\s*)?/, "").replace(copula, "");
+  const attribute = rest.match(/^(mutations?|fusions?|rearrangements?|amplification|expression|status)\b\s*(?:[-:]\s*)?/i);
+  if (attribute) rest = rest.slice(attribute[0].length).replace(copula, "");
+  const negative = rest.match(/^(?:negative|wild[- ]?type|WT|loss|not (?:detected|mutated|amplified|expressed|overexpressed|rearranged|positive))\b/i);
+  if (negative) return { polarity: "negative", rest: rest.slice(negative[0].length) };
+  // "Expression" alone cannot overrule a following negation. Unsupported auxiliaries or nested negation
+  // are not assertions of either polarity, even if an expression/mutation noun was recognised first.
+  const localRest = rest.split(/[,;:.]|\b(?:and|or|but)\b/i)[0];
+  if (/^(?:no|not|never|without|absence|lacking)\b/i.test(rest)
+    || ((attribute || /^(?:has|have|had|does|do|did|can|could|may|might|will|would|should)\b/i.test(rest))
+      && /\b(?:no|not|never|without|absence|lacking|negative|wild[- ]?type)\b/i.test(localRest))) return { polarity: "unclear", rest };
+  const positive = rest.match(/^(?:positive|mutated|alterations?|amplified|overexpressed|overexpression|expressed|rearranged|deficient|high)\b/i);
+  if (positive) return { polarity: "positive", rest: rest.slice(positive[0].length) };
+  // Explicit words (including unresolved negation) distinguish a separating hyphen from a minus result.
+  // A remaining bare sign is a result, but the hyphen in HER2-directed is not.
+  const sign = after.match(/^\s*([+−-])(?=\W|$)/);
+  if (sign) return { polarity: sign[1] === "+" ? "positive" : "negative", rest: after.slice(sign[0].length) };
+  if (attribute && attribute[1].toLowerCase() !== "status") return { polarity: "positive", rest };
+  return undefined;
+}
+
+/** Read an explicit result attached to this marker before considering sentence-wide wording. */
+function markerPolarity(text: string, name: string, pattern: RegExp): MarkerPolarity | undefined {
+  const match = pattern.exec(text);
+  if (!match) return undefined;
+  const after = text.slice(match.index + match[0].length);
+  const before = text.slice(0, match.index);
+  // The absence applies to this marker even when its following word is "expression" or "amplification".
+  // Keep the prefix anchored: "without distant metastases, HER2-positive" must still mean HER2-positive.
+  const negated = NEGATED_MARKER_PREFIX.test(before);
+  const localBefore = before.split(/[,;:.]|\b(?:and|or|but)\b/i).at(-1) ?? "";
+  // An unrecognised negation construction must not fall through to a nearby positive cue.
+  if (/\b(?:no|not|without|absence|lacking|negative for|lack of)\b/i.test(localBefore.replace(NEGATED_MARKER_PREFIX, ""))) return "unclear";
+  const suffix = markerSuffix(after);
+  if (suffix?.polarity === "unclear") return "unclear";
+  if (name === "HR-negative" || suffix?.polarity === "negative") return negated ? "unclear" : "negative";
+  // Absence of HER2-low does not establish HER2-positive or HER2-negative.
+  if (name === "HER2" && /^[- ]low\b/i.test(after)) return negated ? "unclear" : "negative";
+  if (negated) return "negative";
+  if (name === "HR-positive" || name === "HER2-low" || name === "Triple-negative") return "positive";
+  if (/positive for\s*$/i.test(before)) return "positive";
+  return suffix?.polarity;
+}
+
+/** Locations of named markers, ignoring overlapping generic/specific names of one marker. */
+function biomarkerMentions(text: string): Array<{ start: number; end: number }> {
+  const matches = BIOMARKER_PATTERNS.flatMap(([, pattern]) =>
+    [...text.matchAll(new RegExp(pattern.source, `${pattern.flags}g`))].map((m) => ({ start: m.index, end: m.index + m[0].length })))
+    .sort((a, b) => a.start - b.start || b.end - a.end);
+  const mentions: Array<{ start: number; end: number }> = [];
+  for (const m of matches) if (!mentions.length || m.start >= mentions[mentions.length - 1].end) mentions.push(m);
+  return mentions;
+}
+
+/** Recognised assay notation describes a marker result; it is not an alternative eligibility branch. */
+function withoutAssayAnnotations(text: string): string {
+  const assayResult = /^(?:(?:IHC|ISH)\s*)?(?:[0-3]\+?(?:\s*\/\s*ISH\s*[-−+])?|amplified|negative|positive)$/i;
+  return text.replace(/\(([^()]*)\)/g, (whole, inner: string) =>
+    /^\s*(?:IHC|ISH)\b/i.test(inner) && inner.split(/\s*,\s*|\s+or\s+/i).every((part) => assayResult.test(part.trim())) ? " " : whole);
+}
+
+/** Inclusion can require a marker while allowing alternatives inside an attached relative modifier. */
+function biomarkerLogicText(text: string): string {
+  // "HER2-positive cancer that is unresectable or metastatic" asserts HER2 outside the relative clause.
+  // More elaborate relative clauses remain unresolved rather than guessing the scope of their connectors.
+  return withoutAssayAnnotations(text).replace(/\b(?:that|which)\s+(?:is|are)\s+[a-z-]+(?:\s+(?:or|and)\s+[a-z-]+)+[.;]?\s*$/i,
+    (clause) => biomarkerMentions(clause).length ? clause : "");
+}
+
+/** A non-marker alternative can qualify too; do not require a named marker merely because it is recognised. */
+function hasBiomarkerAlternatives(text: string): boolean {
+  return biomarkerMentions(text).length > 0 && /\bor\b/i.test(biomarkerLogicText(text));
+}
+
+/**
+ * Exclusion needs the entire predicate, not just one recognised word in it. Accept only a small grammar
+ * of marker assertions, with no residual histology, spread, stage or other condition. A conjunction,
+ * qualified branch or unknown wording stays unresolved. NOT(A OR B) is flattened only for positive atoms.
+ */
+function simpleMarkerExclusion(text: string): boolean {
+  const branches = withoutAssayAnnotations(text).split(/\bor\b/i);
+  return branches.every((branch) => {
+    if (biomarkerMentions(branch).length !== 1) return false;
+    const marker = BIOMARKER_PATTERNS.find(([, pattern]) => pattern.test(branch));
+    if (!marker) return false;
+    const match = marker[1].exec(branch)!;
+    const before = branch.slice(0, match.index).replace(NEGATED_MARKER_PREFIX, "");
+    const after = branch.slice(match.index + match[0].length);
+    const prefix = /^\s*(?:(?:patients?|participants?|subjects?)\s+(?:with\s+)?)?(?:(?:known|documented|confirmed)\s+|(?:presence|evidence)\s+of\s+)?$/i;
+    const suffix = markerSuffix(after);
+    const unqualified = /^\s*(?:disease|cancers?|tumou?rs?)?\s*\.?\s*$/i.test(suffix?.rest ?? after);
+    const polarity = markerPolarity(branch, ...marker);
+    return prefix.test(before) && unqualified && (polarity === "positive" || (branches.length === 1 && polarity === "negative"));
+  });
+}
 
 /** Attach structured tags to one criterion. Exported for tests. */
 export function tagCriterion(text: string, kind: CriterionKind): CriterionTags {
@@ -236,16 +339,24 @@ export function tagCriterion(text: string, kind: CriterionKind): CriterionTags {
   if (kind === "inclusion" && /measurable disease|measurable lesion/i.test(s) && !/non-?measurable|evaluable or measurable|measurable or (?:non-measurable|evaluable)/i.test(s)) t.measurableDisease = true;
 
   // Biomarkers.
-  const found: string[] = [];
-  for (const [name, re] of BIOMARKER_PATTERNS) if (re.test(s) && !found.some((f) => f !== name && (f.startsWith(name) || name.startsWith(f)) && f.length > name.length)) found.push(name);
-  if (found.length) {
+  const found: Array<[string, RegExp]> = [];
+  for (const [name, re] of BIOMARKER_PATTERNS) if (re.test(s) && !found.some(([f]) => f !== name && (f.startsWith(name) || name.startsWith(f)) && f.length > name.length)) found.push([name, re]);
+  const alternatives = hasBiomarkerAlternatives(s);
+  // NOT(A AND B) cannot be expressed by requiring NOT A and NOT B. Leave combined exclusions
+  // for the team; only a list of positive alternatives has the existing exclude-each interpretation.
+  const combinedExclusion = kind === "exclusion" && found.length > 0 && !simpleMarkerExclusion(s);
+  if ((kind === "inclusion" && alternatives) || combinedExclusion
+    || found.some(([name, pattern]) => markerPolarity(s, name, pattern) === "unclear")) t.biomarkersUnclear = true;
+  else if (found.length) {
     const negative = NEGATIVE_BM.test(s);
     const required = REQUIRED_CUE.test(s);
-    if (kind === "inclusion" && negative && !/positive/i.test(s)) t.biomarkersExcluded = found.filter((f) => !f.endsWith("-negative"));
-    else if (kind === "inclusion" && (required || negative)) t.biomarkers = found;
-    else if (kind === "exclusion") t.biomarkersExcluded = found;
-    // "HR-negative" as a required biomarker is itself a statement of absence of HR-positive.
-    if (t.biomarkers?.includes("HR-negative")) { t.biomarkers = t.biomarkers.filter((b) => b !== "HR-negative"); t.biomarkersExcluded = [...(t.biomarkersExcluded ?? []), "HR-positive"]; if (!t.biomarkers.length) delete t.biomarkers; }
+    for (const [name, pattern] of found) {
+      const polarity = markerPolarity(s, name, pattern);
+      if (!polarity && kind === "inclusion" && !required && !negative) continue;
+      const absent = polarity === "negative" || (!polarity && kind === "inclusion" && negative && !/positive/i.test(s));
+      const field = absent === (kind === "inclusion") ? "biomarkersExcluded" : "biomarkers";
+      (t[field] ??= []).push(name === "HR-negative" ? "HR-positive" : name);
+    }
   }
 
   // Age.
@@ -281,15 +392,16 @@ export function profileBiomarkers(ids: string[], labels: Record<string, string>)
   const present = new Set<string>(), absent = new Set<string>();
   for (const id of ids) {
     const label = labels[id] ?? id;
+    if (hasBiomarkerAlternatives(label)) continue;
     for (const [name, re] of BIOMARKER_PATTERNS) {
       if (!re.test(label)) continue;
-      if (/negative|wild[- ]?type|\bWT\b|loss|not detected/i.test(label) && !/positive/i.test(label) && !name.endsWith("-negative")) absent.add(name);
-      else present.add(name);
+      const polarity = markerPolarity(label, name, re);
+      if (polarity === "unclear") continue;
+      const canonical = name === "HR-negative" ? "HR-positive" : name;
+      if (polarity === "negative" || (!polarity && /negative|wild[- ]?type|\bWT\b|loss|not detected/i.test(label) && !/positive/i.test(label))) absent.add(canonical);
+      else present.add(canonical);
     }
   }
-  // HER2-low is not HER2-positive; the plain HER2 pattern also matches the label, so undo that.
-  if (present.has("HER2-low") && !ids.some((id) => /3\+|amplif|positive/i.test(labels[id] ?? ""))) { present.delete("HER2"); absent.add("HER2"); }
-  if (present.has("HR-negative")) { absent.add("HR-positive"); present.delete("HR-negative"); }
   if (present.has("Triple-negative")) { absent.add("HR-positive"); absent.add("HER2"); present.delete("HER2"); }
   return { present, absent };
 }
@@ -316,6 +428,12 @@ export function score(criteria: Criterion[], profile: ScoreProfile, ctx: ScoreCo
 
   for (const c of criteria) {
     const tg = c.tags;
+    // The same unresolved Boolean clause can also have age or therapy tags. None of its branches alone
+    // proves that the whole criterion is met or contradicted.
+    if (tg.biomarkersUnclear) {
+      checklist.push({ criterion: c, status: "unknown", why: "This criterion combines biomarker results or alternative requirements in a way OnCo cannot assess. The trial team needs to check how it applies to your profile." });
+      continue;
+    }
     const checks: Array<[CheckStatus, string]> = [];
 
     if (tg.ecog) checks.push(["unknown", `Needs a performance status of ${tg.ecog.length === 1 ? `ECOG ${tg.ecog[0]}` : `ECOG ${tg.ecog[0]} to ${tg.ecog[tg.ecog.length - 1]}`}. OnCo does not record fitness; your team scores this in clinic.`]);
@@ -373,7 +491,7 @@ export function score(criteria: Criterion[], profile: ScoreProfile, ctx: ScoreCo
   const unmet = checklist.filter((c) => c.status === "unmet");
   const met = checklist.filter((c) => c.status === "met");
   const unknown = checklist.filter((c) => c.status === "unknown");
-  const requiredBmUnknown = checklist.some((c) => c.status === "unknown" && c.criterion.tags.biomarkers?.length);
+  const requiredBmUnknown = checklist.some((c) => c.status === "unknown" && (c.criterion.tags.biomarkers?.length || c.criterion.tags.biomarkersUnclear));
 
   let verdict: Verdict;
   const reasons: string[] = [];
@@ -385,7 +503,7 @@ export function score(criteria: Criterion[], profile: ScoreProfile, ctx: ScoreCo
     reasons.push(`${met.length} checkable criteri${met.length === 1 ? "on" : "a"} match your profile; ${unknown.length + unassessed} can only be checked by the team.`);
   } else {
     verdict = "unclear";
-    reasons.push(checklist.length ? `Nothing in your profile contradicts the criteria, but ${requiredBmUnknown ? "a required biomarker is not in your profile and " : ""}${unknown.length + unassessed} criteria need information OnCo does not have.` : "The criteria could not be matched to anything in your profile.");
+    reasons.push(checklist.length ? `Nothing in your profile contradicts the criteria, but ${requiredBmUnknown ? "a biomarker requirement could not be checked and " : ""}${unknown.length + unassessed} criteria need information OnCo does not have.` : "The criteria could not be matched to anything in your profile.");
   }
   return { verdict, reasons, checklist, unassessed };
 }

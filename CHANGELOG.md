@@ -7,6 +7,8 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 8 October 2026
+- The site no longer loads unstyled after a deploy
+- The site loaded unstyled after a deploy, and the star count comes back
 - The TROPION-Breast01 record says what the FDA actually did
 - chore: refresh pulse, abstract and citation snapshots (#240)
 - chore: weekly roadmap registry check (public/roadmap-watch.json)

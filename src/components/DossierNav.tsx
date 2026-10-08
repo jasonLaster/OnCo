@@ -9,7 +9,7 @@ const SECTIONS = [
   ["models", "Models"], ["questions", "Open questions"], ["papers", "Papers"], ["export", "Export"],
 ] as const;
 
-export function DossierNav() {
+export function DossierNav({ omit = [] }: { omit?: readonly string[] }) {
   const nav = useRef<HTMLElement>(null);
   const [active, setActive] = useState<string>();
 
@@ -58,9 +58,9 @@ export function DossierNav() {
   }, []);
 
   return (
-    <nav ref={nav} aria-label="Dossier sections" className="sticky top-14 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2 mt-4 bg-background/95 backdrop-blur border-y border-border flex flex-wrap items-center gap-1.5 text-sm">
+    <nav ref={nav} data-dossier-nav aria-label="Dossier sections" className="sticky top-14 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2 mt-4 bg-background/95 backdrop-blur border-y border-border flex flex-wrap items-center gap-1.5 text-sm">
       <span className="kicker mr-1 hidden sm:inline">Jump to</span>
-      {SECTIONS.map(([id, label]) => (
+      {SECTIONS.filter(([id]) => !omit.includes(id)).map(([id, label]) => (
         <a key={id} href={`#${id}`} aria-current={active === id ? "location" : undefined}
           className={`chip border ${active === id ? "bg-accent-soft border-accent text-accent" : "bg-card border-border hover:bg-foreground/5"}`}>{label}</a>
       ))}

@@ -131,20 +131,21 @@ export function Dossier({ target: t }: { target: Target }) {
   const query = paperQuery(t);
 
   return (
-    <div className="space-y-2 [&>section]:scroll-mt-[var(--dossier-scroll-offset,8rem)]">
+    <div className="space-y-2">
       {/* At a glance */}
       <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-3">
         <Stat label="products" value={d.drugs.length} href="#products" />
         <Stat label="trials" value={d.trials.length} href="#trials" />
-        <Stat label="cancers with prevalence" value={t.prevalence.length} href="#prevalence" />
+        <Stat label="cancers with prevalence" value={t.prevalence.length} href={t.prevalence.length > 0 ? "#prevalence" : undefined} />
         <Stat label="pathways" value={d.pathways.length} href="#pathways" />
         <Stat label="resistance routes" value={d.mechanisms.length} href="#resistance" />
-        <Stat label="hotspots" value={d.hotspots?.hotspots.length ?? 0} href="#hotspots" />
+        <Stat label="hotspots" value={d.hotspots?.hotspots.length ?? 0} href={d.hotspots ? "#hotspots" : undefined} />
         <Stat label="open questions" value={d.questions.length} href="#questions" />
         <Stat label="key papers" value={d.papers.length} href="#papers" />
       </div>
 
-      <DossierNav key={t.id} />
+      {/* Prevalence and hotspots render only when the target has them; their links would otherwise lead nowhere. */}
+      <DossierNav key={t.id} omit={[...(t.prevalence.length > 0 ? [] : ["prevalence"]), ...(d.hotspots ? [] : ["hotspots"])]} />
 
       <Section id="biology" title="Biology">
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">

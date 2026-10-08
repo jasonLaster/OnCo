@@ -36,6 +36,8 @@ export const fr: UiDict = {
   "table.showingFirst": "(les {n} premières sont affichées)",
   "table.showMore": "Afficher {n} de plus",
   "table.scroll": "Faire défiler le tableau",
+  "table.resizeColumn": "Redimensionner la colonne {col}",
+  "table.resizeHint": "Faites glisser ou utilisez les flèches pour redimensionner. Double-cliquez ou appuyez sur Début pour ajuster automatiquement.",
   "table.moreItems": "+{n} autres",
   "table.moreItemsTip": "Aussi : {list}. Cliquer pour tout afficher ({total}).",
   "table.firstApproval": "Première approbation {first}, dernière {last}",

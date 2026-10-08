@@ -36,6 +36,8 @@ export const de: UiDict = {
   "table.showingFirst": "(die ersten {n} werden angezeigt)",
   "table.showMore": "{n} weitere anzeigen",
   "table.scroll": "Tabelle scrollen",
+  "table.resizeColumn": "Spalte {col} skalieren",
+  "table.resizeHint": "Ziehen oder Pfeiltasten zum Skalieren verwenden. Doppelklicken oder Pos1 drücken, um automatisch anzupassen.",
   "table.moreItems": "+{n} weitere",
   "table.moreItemsTip": "Außerdem: {list}. Klicken, um alle {total} anzuzeigen.",
   "table.firstApproval": "Erste Zulassung {first}, letzte {last}",

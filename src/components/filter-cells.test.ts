@@ -148,12 +148,12 @@ describe("a year too fine to filter by filters by its decade", () => {
     const decades = new Set(techs.rows.flatMap((r) => r.facets.era ?? []));
     expect(decades.size).toBeLessThan(20);
     const html = browser([row], techs.facets, techs.columns);
-    expect(cells(html)[colIndex(techs.columns, "since")]).toContain(`aria-label="Filter by First used: ${decadeLabel(since!)}"`);
+    expect(cells(html)[colIndex(techs.columns, "since")]).toContain(`aria-label="${since}: Filter by First used: ${decadeLabel(since!)}"`);
   });
 });
 
 describe("the hand-built browsers filter from their cells too", () => {
-  const filters = (html: string) => [...html.matchAll(/aria-label="Filter by ([^:]+): ([^"]*)"/g)].map((m) => [m[1], m[2]] as const);
+  const filters = (html: string) => [...html.matchAll(/aria-label="(?:[^"]*: )?Filter by ([^:]+): ([^"]*)"/g)].map((m) => [m[1], m[2]] as const);
 
   it("NHS coverage filters by NICE outcome, SMC verdict and appraisal year", async () => {
     const html = render(createElement(UkCoverage));

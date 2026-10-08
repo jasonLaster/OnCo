@@ -31,7 +31,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run validate
-      - run: npm test
+      # Match CI and the ship chain, including tests with an explicit whole-page render guard.
+      - run: npx vitest run --testTimeout=600000 --hookTimeout=600000
+        env:
+          SLOW_TEST_MS: 600000
       - name: Build the corpus files and feeds
         run: npm run build:api
       - name: Package

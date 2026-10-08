@@ -172,7 +172,7 @@ function YearRangeCell({ value, tipTitle, filter }: { value: YearRange; tipTitle
               aria-label={t("table.filterBy", { facet: filter.facet, value: String(value.first) })}
               className={`cursor-pointer rounded-sm underline decoration-dotted decoration-foreground/40 underline-offset-[3px] hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 ${filter.on ? "ring-2 ring-accent/50" : ""}`}>{year}</button>
           : year}{last && <> <span className="text-muted text-xs" data-year-last>to {last}</span></>}</span>
-        {flagged.length > 0 && <span className="inline-flex gap-0.5 text-[11px] leading-none" aria-label={`${flagged.length} ${flagged.length === 1 ? "region" : "regions"}`}>{flagged.map((x) => <span key={x.r} aria-hidden>{x.flag}</span>)}</span>}
+        {flagged.length > 0 && <span role="img" className="inline-flex gap-0.5 text-[11px] leading-none" aria-label={`${flagged.length} ${flagged.length === 1 ? "region" : "regions"}: ${flagged.map((x) => x.r).join(", ")}`}>{flagged.map((x) => <span key={x.r} aria-hidden>{x.flag}</span>)}</span>}
       </span>
     </Tip>
   );
@@ -407,7 +407,7 @@ export function EntityBrowser({ rows: first, more, counts, facets, columns, noun
     const look = className ? `${className} ${on ? "ring-2 ring-accent/50" : ""}` : tone ? `${tone} ${on ? "ring-2 ring-accent/50" : "hover:ring-2 hover:ring-accent/30"}` : on ? "bg-accent-soft text-accent border-accent" : "bg-foreground/5 hover:bg-accent-soft hover:text-accent";
     return (
       <Tip title={label} text={tip}>
-        <button type="button" onClick={() => clickFacet(f)} aria-label={t("table.filterBy", { facet: fl, value: f.value })} aria-pressed={on}
+        <button type="button" onClick={() => clickFacet(f)} aria-label={`${label !== f.value ? `${label}: ` : ""}${t("table.filterBy", { facet: fl, value: f.value })}`} aria-pressed={on}
           className={`chip max-w-44 cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 inline-flex items-center gap-1 ${look}`}>
           <ValueIcon facet={f.facet} value={label} />{label}
         </button>

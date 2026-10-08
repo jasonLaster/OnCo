@@ -13,7 +13,7 @@ import { pathwayView } from "@/lib/pathway-products";
 import { graph } from "@/lib/graph";
 import { sitemapUrls } from "@/lib/sitemap-urls";
 import { siteSearchDocs } from "@/lib/search-index";
-import { nestedAnchors, structureIssues } from "../nested-anchors.test";
+import { nestedAnchors, structureIssues } from "@/test-utils/html-structure";
 
 /**
  * The mechanics atlas: a hub that carries the journey and one card per stage, and a page per stage that carries

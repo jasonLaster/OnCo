@@ -29,7 +29,7 @@ export type RecoveryOutlook = "usual" | "partial" | "unlikely" | "unknown";
 
 export const OUTLOOK_META: Record<RecoveryOutlook, { label: string; blurb: string; chip: string; dot: string }> = {
   usual: { label: "Usually comes back", blurb: "Most people return to about where they started, in the timescale the source gives.", chip: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30", dot: "bg-emerald-500" },
-  partial: { label: "Partly comes back", blurb: "Improvement is usual and complete recovery is not; a minority are left with something lasting.", chip: "bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30", dot: "bg-amber-500" },
+  partial: { label: "Partly comes back", blurb: "Improvement is usual and complete recovery is not; a minority are left with something lasting.", chip: "bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/30", dot: "bg-amber-500" },
   unlikely: { label: "Does not usually come back", blurb: "The damage is permanent in most people who get it, and the lever is prevention or replacement rather than recovery.", chip: "bg-rose-500/15 text-rose-700 dark:text-rose-300 border border-rose-500/30", dot: "bg-rose-500" },
   unknown: { label: "Not established", blurb: "The effect is recognised and no study found reports how often it recovers. Named here rather than left blank.", chip: "bg-foreground/10 text-muted border border-border", dot: "bg-foreground/30" },
 };

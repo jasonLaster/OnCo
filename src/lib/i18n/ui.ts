@@ -54,6 +54,8 @@ export const EN = {
   "table.showingFirst": "(showing the first {n})",
   "table.showMore": "Show {n} more",
   "table.scroll": "Scroll the table",
+  "table.resizeColumn": "Resize {col} column",
+  "table.resizeHint": "Drag or use arrow keys to resize. Double-click or press Home to fit automatically.",
   "table.moreItems": "+{n} more",
   "table.moreItemsTip": "Also: {list}. Click to show all {total}.",
   "table.firstApproval": "First approval {first}, latest {last}",

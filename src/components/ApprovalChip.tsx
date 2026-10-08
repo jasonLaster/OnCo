@@ -23,8 +23,8 @@ export function ApprovalChip({ drugId, status, compact = false }: { drugId: stri
   const flags = (skip?: Region) => {
     const all = approvedIn.filter((r) => r !== skip);
     const shown = all.length > MAX_FLAGS ? all.slice(0, MAX_FLAGS) : all;
-    const out = shown.map((r) => <span key={r} aria-label={`approved in ${REGION_META[r].label}`} title={`${REGION_META[r].label}${row?.[r]?.year ? ` · ${row[r]!.year}` : ""}`} className="text-[11px] leading-none">{REGION_META[r].flag}</span>);
-    if (all.length > shown.length) out.push(<span key="more" className="text-[10px] leading-none opacity-80" aria-label={`and ${all.length - shown.length} more regions`}>+{all.length - shown.length}</span>);
+    const out = shown.map((r) => <span key={r} role="img" aria-label={`approved in ${REGION_META[r].label}`} title={`${REGION_META[r].label}${row?.[r]?.year ? ` · ${row[r]!.year}` : ""}`} className="text-[11px] leading-none">{REGION_META[r].flag}</span>);
+    if (all.length > shown.length) out.push(<span key="more" role="img" className="text-[10px] leading-none" aria-label={`and ${all.length - shown.length} more regions`}>+{all.length - shown.length}</span>);
     return out;
   };
 

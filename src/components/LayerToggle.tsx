@@ -25,11 +25,11 @@ export function LayerToggle({ className = "" }: { className?: string }) {
 
   return (
     <div ref={box} className={`relative flex items-center ${className}`}>
-      <button type="button" data-onco-toggle="layer" onClick={() => setOpen((o) => !o)} aria-haspopup="dialog" aria-expanded={open} aria-label={t("layer.aria")}
+      <button type="button" data-onco-toggle="layer" onClick={() => setOpen((o) => !o)} aria-haspopup="dialog" aria-expanded={open} aria-label={`Aa ${lang.code.toUpperCase()} · ${lang.native} · ${t("layer.aria")}`}
         className={`ctl px-2.5 ${nonDefault ? "border-accent bg-accent-soft" : ""}`} title={`${levelLabel(level.code)} · ${lang.native}`}>
         {/* Both runs of text share one baseline (see .ctl-text), whatever their sizes. */}
         <span className="ctl-text">
-          <span aria-hidden className="font-semibold tracking-tight">Aa</span>
+          <span aria-hidden className="font-semibold tracking-tight">Aa</span>{" "}
           <span className="ctl-label text-muted xl:hidden 2xl:inline">{lang.code.toUpperCase()}</span>
         </span>
       </button>

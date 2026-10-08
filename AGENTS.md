@@ -34,6 +34,9 @@ learn the hard way and cannot be a test. Everything else is enforced or written 
   should continue to be none; `gitleaks` runs on every ship and a commit subject is republished publicly by
   `scripts/provenance.ts`, so write commit messages as if they were a page, because they become one.
 - **Never copy patient data, or anything from a private project, into this repository.**
+- **Keep review screenshots and recordings out of the repository.** Capture them in a temporary directory
+  outside the checkout and attach or link them in the pull request, including matching before/after views
+  when reviewing a visual change. Product image assets belong in the repository; review artifacts do not.
 - **Never run `vercel link` or edit `.vercel/`.** The project is already linked; relinking can point a deploy at
   the wrong project.
 - **Never edit files in the main checkout while a ship is running**, and never run gates or a second build during

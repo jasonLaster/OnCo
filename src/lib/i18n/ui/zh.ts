@@ -36,6 +36,8 @@ export const zh: UiDict = {
   "table.showingFirst": "（仅显示前 {n} 行）",
   "table.showMore": "再显示 {n} 行",
   "table.scroll": "滚动表格",
+  "table.resizeColumn": "调整{col}列宽",
+  "table.resizeHint": "拖动或使用方向键调整列宽。双击或按Home键自动调整。",
   "table.moreItems": "+{n} 项",
   "table.moreItemsTip": "还有：{list}。点击显示全部 {total} 项。",
   "table.firstApproval": "首次获批 {first}，最近 {last}",

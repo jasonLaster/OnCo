@@ -730,3 +730,6 @@ html[dir="rtl"] code, html[dir="rtl"] kbd, html[dir="rtl"] .tabular-nums { unico
   .prep-sheet input, .prep-sheet textarea { display: none !important; }
   .prep-sheet a[href^="http"]::after { content: none; }
 }
+
+/* Dossier jump links land each heading below the sticky section bar, whose wrapped height DossierNav measures. */
+[data-dossier-nav] ~ section { scroll-margin-top: var(--dossier-scroll-offset, 8rem); }

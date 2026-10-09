@@ -23,6 +23,7 @@ import { Tip } from "./Tip";
 import { StaticTable } from "./filters/StaticTable";
 import { pageRows } from "@/lib/static-tables";
 import { DOSSIER_TRIAL_COLUMNS, dossierTrialRows, dossierTrialsTableId } from "@/lib/tables/dossier-trials";
+import { DossierNav } from "./DossierNav";
 
 /** Broad modality family for grouping products; mirrors the classes used on the toxicity page. */
 export function modalityFamily(m: string): string {
@@ -135,20 +136,16 @@ export function Dossier({ target: t }: { target: Target }) {
       <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-3">
         <Stat label="products" value={d.drugs.length} href="#products" />
         <Stat label="trials" value={d.trials.length} href="#trials" />
-        <Stat label="cancers with prevalence" value={t.prevalence.length} href="#prevalence" />
+        <Stat label="cancers with prevalence" value={t.prevalence.length} href={t.prevalence.length > 0 ? "#prevalence" : undefined} />
         <Stat label="pathways" value={d.pathways.length} href="#pathways" />
         <Stat label="resistance routes" value={d.mechanisms.length} href="#resistance" />
-        <Stat label="hotspots" value={d.hotspots?.hotspots.length ?? 0} href="#hotspots" />
+        <Stat label="hotspots" value={d.hotspots?.hotspots.length ?? 0} href={d.hotspots ? "#hotspots" : undefined} />
         <Stat label="open questions" value={d.questions.length} href="#questions" />
         <Stat label="key papers" value={d.papers.length} href="#papers" />
       </div>
 
-      <nav aria-label="Dossier sections" className="sticky top-14 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2 mt-4 bg-background/95 backdrop-blur border-y border-border flex flex-wrap items-center gap-1.5 text-sm">
-        <span className="kicker mr-1 hidden sm:inline">Jump to</span>
-        {[["biology", "Biology"], ["elsewhere", "Elsewhere"], ["prevalence", "Prevalence"], ["hotspots", "Hotspots"], ["products", "Products"], ["trials", "Trials"], ["resistance", "Resistance"], ["pathways", "Pathways"], ["assays", "Assays"], ["models", "Models"], ["questions", "Open questions"], ["papers", "Papers"], ["export", "Export"]].map(([id, label]) => (
-          <a key={id} href={`#${id}`} className="chip border bg-card border-border hover:bg-foreground/5">{label}</a>
-        ))}
-      </nav>
+      {/* Prevalence and hotspots render only when the target has them; their links would otherwise lead nowhere. */}
+      <DossierNav key={t.id} omit={[...(t.prevalence.length > 0 ? [] : ["prevalence"]), ...(d.hotspots ? [] : ["hotspots"])]} />
 
       <Section id="biology" title="Biology">
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">

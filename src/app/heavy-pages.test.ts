@@ -367,12 +367,17 @@ describe("paged tables carry one page of rows", () => {
    * budget when 661 colorectal registry trials landed), so the guard has to hold for whichever target grows next, and
    * with the same 15 percent margin as the roadmaps, while there is still room to fix the cause.
    */
-  it("every target dossier stays 15 percent clear of its budget", async () => {
+  it("every target dossier stays 15 percent clear of its budget and links only to sections it has", async () => {
     const worst: Array<[string, number]> = [];
+    // Prevalence and hotspots render only when a target has them; TROP2's "Hotspots" chip led nowhere.
+    const dead: string[] = [];
     for (const t of graph().kind("target")) {
       const html = render(await DossierPage({ params: Promise.resolve({ id: t.id }) }));
       worst.push([t.id, Buffer.byteLength(html, "utf8")]);
+      const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
+      for (const [, id] of html.matchAll(/href="#([^"]+)"/g)) if (!ids.has(id)) dead.push(`/dossiers/${t.id}/#${id}`);
     }
+    expect(dead, "in-page links with no section to land on").toEqual([]);
     worst.sort((a, b) => b[1] - a[1]);
     const [id, bytes] = worst[0];
     expect(bytes / DOSSIER_BUDGET, `the heaviest dossier is /dossiers/${id}/ at ${(bytes / KB).toFixed(1)} KB, ${((bytes / DOSSIER_BUDGET) * 100).toFixed(1)} percent of its ${DOSSIER_BUDGET / KB} KB budget`).toBeLessThan(MARGIN);

@@ -121,10 +121,14 @@ any source can find; each needs a Wikidata QID by hand.
 
 - [ ] **cBioPortal ingestion, scoped before built (owner asked 9 October 2026).** We hold 168 of our 431 prevalence
   figures sourced to cbioportal.org by hand, a collection record at /collections/cbioportal/, and a cross-reference
-  link on every gene-backed target; there is no fetcher and nothing refreshes. `/prevalence/` is 431 of 8,901 cells,
-  4.8 per cent. First deliverable is a measurement, not a build: take the gene symbols we hold, query a sample of
-  PanCancer Atlas studies through the public REST API, and report how many of the 8,470 empty cells could be filled
-  and at what confidence, so the owner can see whether this makes the page real or moves it from 5 to 8 per cent.
+  link on every gene-backed target; there is no fetcher and nothing refreshes. The corpus holds 431 prevalence rows
+  across 207 targets and 43 cancers, but only 369 distinct target-by-cancer pairs, because 33 pairs carry more than
+  one measure; the grid is 369 of 8,901 cells, 4 per cent, which is the figure the page itself prints. First
+  deliverable is a measurement, not a build: take the gene symbols we hold, query a sample of PanCancer Atlas
+  studies through the public REST API, and report how many of the 8,532 empty cells could be filled and at what
+  confidence, so the owner can see whether this makes the page real or moves it from 4 to 8 per cent.
+  While in there: some of the 33 multi-row pairs are genuinely different measures and some are duplicates
+  (BRAF in colorectal carries "V600E mutation" twice). `npm run dedupe` should survey them.
   Two things to settle in that scope: the figure must carry its measure, because mutation, amplification, deletion
   and expression are different numbers and conflating them is a clinical error (PR 173 separated exactly that for
   TROP2); and per-study redistribution terms must be read rather than assumed, since the software is AGPL and each

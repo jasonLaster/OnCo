@@ -24,10 +24,10 @@ describe("mixed trial snapshot dates", () => {
   it("shows both dates on the rendered ADC modality page and JSON model", async () => {
     expect(modalityHub("adc")?.registry).toMatchObject({ fetched: "2026-10-06", fetchedFrom: "2026-09-01" });
     const html = renderToStaticMarkup(await ModalityPage({ params: Promise.resolve({ format: "adc" }) }));
-    expect(html).toContain("fetched between 2026-09-01 and 2026-10-06 (dates differ by product)");
+    expect(html).toContain("fetched 2026-10-06, with the oldest from 2026-09-01");
   });
   it("discloses both dates in the scorecard and pipeline label", () => {
-    expect(TRIALS_FETCHED).toBe("between 2026-09-01 and 2026-10-06 (dates differ by product)");
+    expect(TRIALS_FETCHED).toBe("2026-10-06, with the oldest from 2026-09-01");
   });
 
   it("retains the oldest contributing date alongside the engine's latest date", () => {
@@ -48,7 +48,7 @@ describe("mixed trial snapshot dates", () => {
   for (const [name, Page] of [["pipeline", PipelinePage], ["scorecards", ScorecardsPage], ["drug engine", EnginePage]] as const) {
     it(`shows both snapshot dates on the rendered ${name} page`, () => {
       const html = renderToStaticMarkup(createElement(Page));
-      expect(html).toContain("fetched between 2026-09-01 and 2026-10-06 (dates differ by product)");
+      expect(html).toContain("fetched 2026-10-06, with the oldest from 2026-09-01");
     });
   }
 });

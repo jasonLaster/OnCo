@@ -7,8 +7,10 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 9 October 2026
+- Seven contributor changes: table filters stop colliding, dossiers say where you are and fold, prevalence opens as a list
 - The bot's proposal list, and cBioPortal ingestion scoped on the roadmap
 - chore: draft change proposals that need review
+- chore: EU regional rows read from the EMA register pages (#241)
 
 ### 8 October 2026
 - Weekly idea votes from Discussions, and the bot's proposal list
@@ -18,8 +20,10 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - A trial page now says who can join and where, and a page has one way to correct it
 - The site no longer loads unstyled after a deploy
 - The site loaded unstyled after a deploy, and the star count comes back
+- Land dossier jumps again when a table pages in rows mid-scroll
 - Refit other columns while a column is being resized
 - The TROPION-Breast01 record says what the FDA actually did
+- Link dossier navigation only to sections the target has
 - chore: refresh pulse, abstract and citation snapshots (#240)
 - chore: weekly roadmap registry check (public/roadmap-watch.json)
 - chore: refresh institution research output from OpenAlex (#239)
@@ -37,6 +41,10 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Provide initial accessible column resize values
 - Show column resize dividers on hover and focus
 - Fit and resize shared table columns with visual comparisons
+- Require side-by-side screenshots in product pull requests
+- Follow React lint rules in disclosure rendering tests
+- Make dossier sections collapsible with prevalence closed initially
+- Highlight the current section in dossier navigation
 - Run CI gates and static export in parallel without weakening checks
 - Align CI render gates and avoid duplicate page checks
 - Fix table filter names and badge accessibility
@@ -56,6 +64,8 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Retain survival snapshots when a source site fails
 - Retain institution research after required request failures
 - Preserve congress abstract snapshots after failed pages
+- Release saved import capacity before growing lists
+- Preserve saved lists when an import cannot persist
 - Type the preprint request test cases consistently
 - Retain preprints when search responses are incomplete
 - Keep citation snapshot when an OpenAlex batch fails
@@ -70,6 +80,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Reject malformed browser record envelopes before caching
 - fix: retain EMA snapshots after unreadable refresh input
 - Report browser record failures and permit Ask retries
+- fix: scope modality table URL state
 - Preserve FDA snapshots until both sources finish completely
 
 ### 6 October 2026
@@ -93,17 +104,21 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Four things leave the top of a record page
 - Reopen retained search queries from the keyboard
 - Recover search box queries after index load failures
+- Keep trial feed stale when a snapshot date is invalid
 - fix(factcheck): count unresolved helper record identities
 - Read explicit marker results before bare sign fallback
 - fix(factcheck): reject ambiguous ids across data files
 - Share marker suffix parsing across trial criteria and profiles
 - Keep protocol identity separate from title context
+- Expose retained trial dates in modality and feed status views
 - Require complete marker predicates before applying trial exclusions
 - Filter semantic candidates before score allocation
 - Preserve complete trial titles and identifier boundaries
+- Disclose retained snapshot dates in trial aggregates
 - Keep ambiguous eligibility marker clauses unresolved
 - Require trial-specific identity before registry patches
 - fix(mcp): retain hidden values in field comparisons
+- chore: weekly maintenance (logos, structures, trial links, acronyms, orphan links)
 - chore: EU regional rows read from the EMA register pages (#154)
 
 ### 5 October 2026
@@ -117,6 +132,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Preserve qualified biomarker names when matching trials
 - Keep trial biomarker polarity scoped to each result
 - Hold trial fact-check patches until registry identity is resolved
+- Preserve trial index entries across failed refresh requests
 - fix(search): filter record kinds before limiting retrieval
 - Patch only direct literal fields in fact-check corrections
 - fix(cli): resolve record URLs with query strings and anchors
@@ -179,6 +195,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 
 ### 30 September 2026
 - A name typed in full comes first, and people have faces in the search
+- /prevalence/ opens on a list, because the grid is 95 per cent empty
 - Four verified approval rows from the proposals queue, and two structure keys that stopped the build
 - Page titles, second attempt: a noun phrase naming the thing and the dimension that orders it
 - The unattended gates run the tests the way the ship chain does, so a weekly data refresh can merge itself again

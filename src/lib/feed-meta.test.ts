@@ -54,7 +54,7 @@ describe("feed-meta", () => {
       const spy = vi.spyOn(feedMeta, "feedStatuses").mockReturnValue([status]);
       try {
         const html = renderToStaticMarkup(createElement(StatusPage));
-        expect(html).toContain("between 2026-09-01 and 2026-10-06 (dates differ by product)");
+        expect(html).toContain("2026-10-06, with the oldest from 2026-09-01");
         expect(html).toContain("1 is stale");
       } finally { spy.mockRestore(); }
     } finally { rmSync(root, { recursive: true, force: true }); }

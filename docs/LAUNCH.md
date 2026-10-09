@@ -119,6 +119,17 @@ any source can find; each needs a Wikidata QID by hand.
 - [ ] ctDNA roadmap upkeep: /roadmaps/ctdna-tests/ (eras from 1948 to the 2029 readouts, "What to watch" with registry dates) is refreshed by `npm run roadmap:watch` (every roadmap; `npm run ctdna:watch` is the one-roadmap alias), which compares every referenced trial's status, phase, enrolment and completion dates with ClinicalTrials.gov, searches Europe PMC for new papers on the trial acronyms since the roadmap's asOf and flags watch items past their expected date. The roadmap-watch workflow runs it every Thursday 05:29 UTC and commits public/roadmap-watch.json when the findings change; each roadmap page shows a "Registry check" line from that file. Contradictions still need a hand edit of the record and a new asOf.
 - [ ] Decide whether to add technology sections: the kind-size gauge flags the section kind at 19 records (threshold 25). Candidates that follow the Prometheus map: cancer vaccines, gene therapy and oncolytic viruses, microbiome, manufacturing and supply, trial design and methods, palliative and end-of-life care. Each new section needs technologies re-homed and a SCHEMATIC_ALIAS entry; say which to add and the tick will build them.
 
+- [ ] **cBioPortal ingestion, scoped before built (owner asked 9 October 2026).** We hold 168 of our 431 prevalence
+  figures sourced to cbioportal.org by hand, a collection record at /collections/cbioportal/, and a cross-reference
+  link on every gene-backed target; there is no fetcher and nothing refreshes. `/prevalence/` is 431 of 8,901 cells,
+  4.8 per cent. First deliverable is a measurement, not a build: take the gene symbols we hold, query a sample of
+  PanCancer Atlas studies through the public REST API, and report how many of the 8,470 empty cells could be filled
+  and at what confidence, so the owner can see whether this makes the page real or moves it from 5 to 8 per cent.
+  Two things to settle in that scope: the figure must carry its measure, because mutation, amplification, deletion
+  and expression are different numbers and conflating them is a clinical error (PR 173 separated exactly that for
+  TROP2); and per-study redistribution terms must be read rather than assumed, since the software is AGPL and each
+  study carries its own, then recorded in docs/DATA-SOURCES.md like every other fetcher.
+
 ## Standing rules (see memory)
 Plain English first, UK spelling, no em-dashes in copy, no "as of", no invented numbers, corrections via issue form only,
 light theme default, pink accent, no red buttons, never "spike", survival figures behind a click, solution and mechanism first,

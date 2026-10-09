@@ -6,6 +6,10 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 9 October 2026
+- The bot's proposal list, and cBioPortal ingestion scoped on the roadmap
+- chore: draft change proposals that need review
+
 ### 8 October 2026
 - Weekly idea votes from Discussions, and the bot's proposal list
 - The new trials page gets a measured weight ceiling, pinned because its table is paged

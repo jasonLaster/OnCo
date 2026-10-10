@@ -1222,8 +1222,7 @@ export const parpSelectiveReview: EntityInput[] = [
     "cancers": [
       "breast-cancer"
     ],
-    "enrolled": 30,
-    "enrolledNote": "Registry estimated enrollment; not an analysis denominator."
+    "enrolled": 30
   },
   {
     "id": "nct05332561",
@@ -1270,7 +1269,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2019-07-11",
     "startedType": "actual",
     "enrolled": 21,
-    "enrolledNote": "Registry actual enrollment; not a published efficacy-analysis population.",
     "targets": [
       "parp"
     ],
@@ -1302,7 +1300,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2018-05-23",
     "startedType": "actual",
     "enrolled": 31,
-    "enrolledNote": "Registry actual enrollment; not a published efficacy-analysis population.",
     "targets": [
       "parp"
     ],
@@ -1335,7 +1332,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2021-08-24",
     "startedType": "actual",
     "enrolled": 52,
-    "enrolledNote": "Registry actual enrollment; not a published efficacy-analysis population.",
     "targets": [
       "parp"
     ],
@@ -1370,7 +1366,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2019-01-18",
     "startedType": "actual",
     "enrolled": 300,
-    "enrolledNote": "Registry estimated enrollment; not a published efficacy-analysis population.",
     "targets": [
       "parp"
     ],
@@ -1402,7 +1397,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2024-08-13",
     "startedType": "actual",
     "enrolled": 20,
-    "enrolledNote": "Registry estimated enrollment; not a published efficacy-analysis population.",
     "targets": [
       "parp"
     ],
@@ -1436,8 +1430,8 @@ export const parpSelectiveReview: EntityInput[] = [
     "tldr": "Olaparib shrank some metastatic breast cancers with tumour-only BRCA mutations. This does not establish benefit in preventing recurrence after surgery.",
     "summary": "Phase 2 expansion with 24 germline PALB2 and 30 somatic BRCA1/2 participants. The overall population comprised 42 ER-positive/HER2-negative, seven TNBC and five HER2-positive cancers. Participants received single-agent olaparib until progression. Somatic-BRCA activity was clinically meaningful but missed the prespecified response target.",
     "findings": [
-      "Somatic BRCA1/2: 11/30 responses, ORR 36.7% (80% CI 24.7\u201350.0), median PFS 5.5 months (90% CI 2.8\u20138.3), median response duration 11.2 months (90% CI 4.4\u2013not reached).",
-      "Germline PALB2: ORR 75% (80% CI 60.2\u201386.3), median PFS 9.4 months (90% CI 8.3\u201313.1)."
+      "Somatic BRCA1/2: 11/30 responses, ORR 36.7% (80% CI 24.7 to 50.0), median PFS 5.5 months (90% CI 2.8 to 8.3), median response duration 11.2 months (90% CI 4.4 to not reached).",
+      "Germline PALB2: ORR 75% (80% CI 60.2 to 86.3), median PFS 9.4 months (90% CI 8.3 to 13.1)."
     ],
     "whatItMeans": "Metastatic single-arm evidence does not supply a somatic-only adjuvant indication or a personal response probability.",
     "caveats": [
@@ -1483,8 +1477,8 @@ export const parpSelectiveReview: EntityInput[] = [
     "tldr": "Talazoparib helped some people with advanced cancers carrying tumour-only BRCA mutations. The study was small and included several cancer types.",
     "summary": "Phase 2 molecular basket, median four prior lines of therapy. Cohorts included somatic BRCA1/2, other homologous-recombination repair genes, PTEN and germline BRCA1/2 in cancers outside breast/ovarian indications. Clinical benefit included response or stable disease lasting at least 24 weeks.",
     "findings": [
-      "Somatic BRCA1/2 cohort: four objective responses among 18 patients, ORR 22.2% (95% CI 6.4\u201347.6); six clinical-benefit events.",
-      "Posterior mean clinical-benefit rate 32.5% (90% credible interval 16.7\u201350.3) is a separate endpoint from objective response.",
+      "Somatic BRCA1/2 cohort: four objective responses among 18 patients, ORR 22.2% (95% CI 6.4 to 47.6); six clinical-benefit events.",
+      "Posterior mean clinical-benefit rate 32.5% (90% credible interval 16.7 to 50.3) is a separate endpoint from objective response.",
       "Breast examples included a somatic BRCA1 partial response and prolonged stable disease."
     ],
     "whatItMeans": "Mixed, heavily pretreated cancers and no control arm; cannot compare its ORR directly with olaparib trials or establish postoperative benefit.",
@@ -1528,7 +1522,7 @@ export const parpSelectiveReview: EntityInput[] = [
     "pmid": "33753748",
     "participants": 128,
     "tldr": "Adding low-dose rucaparib to cisplatin did not significantly improve the main outcome after surgery. Limited drug exposure makes this an incomplete test of other PARP strategies.",
-    "summary": "Randomized postoperative TNBC or BRCA-mutated breast trial with residual invasive tumour greater than 2 cm or persistent nodal involvement after neoadjuvant therapy. Patients received cisplatin alone or with low-dose rucaparib; accrual occurred in 2010\u20132013.",
+    "summary": "Randomized postoperative TNBC or BRCA-mutated breast trial with residual invasive tumour greater than 2 cm or persistent nodal involvement after neoadjuvant therapy. Patients received cisplatin alone or with low-dose rucaparib; accrual occurred in 2010 to 2013.",
     "findings": [
       "Two-year DFS: 54.2% with cisplatin versus 64.1% with cisplatin/rucaparib; p=0.29.",
       "Rucaparib exposure was limited; the authors concluded the tested regimen did not improve two-year DFS."
@@ -1625,7 +1619,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "started": "2014-12-22",
     "startedType": "actual",
     "enrolled": 150,
-    "enrolledNote": "Registry estimated enrollment; distinguish the published analysis denominator.",
     "drugs": [
       "talazoparib"
     ],
@@ -1660,7 +1653,6 @@ export const parpSelectiveReview: EntityInput[] = [
     "summary": "Registry completed, last updated 2024-09-19. Postoperative TNBC or BRCA-mutated breast cancer with residual tumour greater than 2 cm or persistent nodal involvement after neoadjuvant therapy. The registry records 135 enrolled; the paper reports 128 randomized. Low rucaparib exposure and the historical regimen limit extrapolation to other PARP strategies.",
     "started": "2010-02",
     "enrolled": 135,
-    "enrolledNote": "Registry actual enrollment; distinguish the published analysis denominator.",
     "drugs": [
       "rucaparib",
       "cisplatin"

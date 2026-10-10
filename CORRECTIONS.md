@@ -2,6 +2,13 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-10-10
+
+| Date | Entity | What was missing | How found | Proposed fix |
+|---|---|---|---|---|
+| 2026-10-10 | NCT03990896 and COGNITION-GUIDE | Generic PARP summaries did not expose metastatic/assay gates or Germany-only molecular assignment. | Current ClinicalTrials.gov records and UCSF listing; [issue 245](https://github.com/judegomila/OnCo/issues/245). | State current circulating-DNA gate, prior-treatment constraints and site uncertainty; distinguish the postoperative umbrella's separate arms and somatic-BRCA assignment. |
+| 2026-10-10 | PARP breast trial and paper graph | Closed postoperative studies and the olaparib/axatilimab study were absent; smaller somatic-basket and negative postoperative evidence lacked paper records. | Registry identifiers and resolved primary publications, linked in [issue 245](https://github.com/judegomila/OnCo/issues/245). | Add seven sourced trials, four papers and the missing axatilimab drug record; retain current status, cohort/endpoint limits, pulmonary exclusion and the difference between somatic metastatic activity and adjuvant benefit. |
+
 ## 2026-10-06
 
 | Date | Entity | What was wrong | How found | Fix |

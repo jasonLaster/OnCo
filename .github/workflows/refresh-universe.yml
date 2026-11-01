@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   refresh:
@@ -21,6 +22,23 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch:universe
+      # One standing issue lists what the refresh found that someone must act on: sources whose snapshot is going stale
+      # because the fetch failed (fetch-universe keeps the old copy and only logs it), and portfolio companies OnCo lacks.
+      # Added 1 November 2026, after Even One's page changed shape and two weeks of failed reads went unnoticed.
+      - name: Report what needs a person
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx tsx scripts/universe-gaps.ts > gaps.md
+          title="Freshness: stale sources and companies to add"
+          n=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ -s gaps.md ]; then
+            gh label create freshness --color 0E8A16 --description "Found by a weekly refresh" --force || true
+            if [ -n "$n" ]; then gh issue edit "$n" --body-file gaps.md; else gh issue create --title "$title" --label freshness --body-file gaps.md; fi
+          elif [ -n "$n" ]; then
+            gh issue close "$n" --comment "Nothing left to act on as of this week's refresh."
+          fi
+          rm -f gaps.md
       # The merge below is unattended, so the tree the pull request carries must pass what a person's branch passes.
       # The gates never fail the job: when one does the pull request is still opened, the merge step is skipped and
       # the next step labels it for review, so a red snapshot waits for a person instead of landing on main.

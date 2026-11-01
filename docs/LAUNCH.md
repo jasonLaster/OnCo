@@ -109,6 +109,28 @@ lowered (see commit "Take the backlink fill back out"). `logos` sits at 80% beca
 any source can find; each needs a Wikidata QID by hand.
 
 ## Owner asks not yet started
+- [ ] **Prometheus gaps, second comparison (1 November 2026).** Compared every cancer-related node of
+  https://prometheus-umber.vercel.app/ (855 of 17,390) with the corpus; the clear gaps, after removing name variants and
+  the longevity and reprogramming nodes left out on purpose in September:
+  - Technologies: microbeam radiotherapy, co-culture immune-tumour models, spheroid (hanging-drop, ultra-low-attachment)
+    models, mechanistic tumour-growth models (mathematical oncology), genome-wide CRISPR screens, radiohybrid theranostics,
+    miniprotein radioconjugates, RGD integrin radioligands, masked (probody) ADCs, safety-switch CAR-T, AI radiology
+    triage for oncology, AI mitosis detection and grading.
+  - Products: THIO (ateganosine; MAIA Biotechnology is in, the drug is not), DT2216 (BCL-XL degrader), sapanisertib.
+  - Companies: Schrödinger, Atomwise, BenevolentAI, AbCellera, Arsenal Bio, DNAtrix, EdiGene, InSphero, MIMETAS, Ionpath,
+    RareCyte, Pentixapharm, Nuclidium, Quibim, PierianDx, Metastage, Concr, Celularity, ImmuNext, Cellesce; check
+    HealthMyne and Invitae (acquired); institutions ESRF (microbeam) and the Heidelberg Ion-Beam Therapy Center.
+  - Collections: the Human Tumor Atlas Network (HTAN). Concepts worth a term: dendritic-cell cross-presentation (cDC1).
+  Method in memory onco-prometheus-technology-map; candidate list was /tmp/prom/gaps.tsv (regenerate: it is not kept).
+- [ ] **NHS Cancer Alliances list stale since 16 September 2026.** NHS England now answers the page with an empty
+  202 (a bot challenge), so scripts/fetch-universe.ts reads nothing. Refresh the 21 alliances by hand from the page in a
+  browser, or find an NHS data source that permits automated reads. The weekly freshness issue lists it until fixed.
+- [ ] **Hold imaging agents to the regional-approval check (owner, 1 November 2026: "yes re your recommendation").**
+  Imaging agents (PSMA, FDG, FES, DOTATATE and choline tracers, Gleolan, pafolacianine, pegulicianine, Lipiodol,
+  Tc-99m agents, Zr-89 girentuximab) are licensed as drugs, so remove them from the exemption in the regional-approval
+  health check (the shared rule in src/lib/product-class.ts; the exemption is applied in src/data/regional-approvals.ts
+  and the health gauge), then add sourced US, EU, UK and other regional rows for each approved one from the regulators'
+  own pages, so a reader can see where each scan is available. Tests and devices stay exempt.
 - [ ] **Country deep dives, wave 2 (owner, 1 November 2026).** France, Canada, Italy, the Netherlands, South Korea,
   Australia, Spain, Brazil, Sweden and Switzerland, on the pattern in docs/CONTENT-ROADMAP.md section 6 and
   `/countries/in/`: each starts from the country's own registries and regulator in its own language, never from what

@@ -520,8 +520,23 @@ async function chemblTargets(): Promise<Envelope<ChemblTarget> | null> {
 
 type EvenOneCompany = { name: string; website: string; tag: string };
 const EVENONE_URL = "https://evenone.ventures/";
-/** Even One Ventures embeds its portfolio as a JavaScript array (`companies = [...]`) in the page; parse it rather than the rendered tiles. */
-function parseEvenOne(html: string): EvenOneCompany[] {
+/**
+ * Even One Ventures used to embed its portfolio as a JavaScript array (`companies = [...]`) in the page. On about
+ * 21 October 2026 the site switched to rendered tiles, `<a class="card" href="<website>" data-tag="<sector>">` with the
+ * company name in the logo's alt text ("Selvana logo"), and this parser returned nothing for two weekly runs while the
+ * job kept the 14 October snapshot (Selvana and Jiyu Bio went unnoticed). Read the tiles; fall back to the array.
+ */
+function parseEvenOneTiles(html: string): EvenOneCompany[] {
+  const out: EvenOneCompany[] = [];
+  for (const m of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"[^>]*\bdata-tag="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)) {
+    const name = m[3].match(/<img\b[^>]*\balt="([^"]+?)\s+logo"/i)?.[1]?.trim();
+    if (name) out.push({ name, website: m[1].trim(), tag: m[2].trim() });
+  }
+  return out;
+}
+export function parseEvenOne(html: string): EvenOneCompany[] {
+  const tiles = parseEvenOneTiles(html);
+  if (tiles.length) return tiles;
   const i = html.indexOf("companies = ["); if (i < 0) return [];
   const j = html.indexOf("];", i); const src = html.slice(i + "companies = ".length, j + 1);
   const arr = new Function("return " + src)() as Array<{ name?: string; url?: string; tag?: string }>;
@@ -533,7 +548,7 @@ async function evenone(): Promise<Envelope<EvenOneCompany> | null> {
   const items = parseEvenOne(html);
   return {
     checked: today(), source: { label: "Even One Ventures: portfolio", url: EVENONE_URL },
-    method: "The companies array embedded in the Even One Ventures home page (name, website and sector tag), read weekly so new portfolio companies surface on /completeness/.",
+    method: "The portfolio tiles on the Even One Ventures home page (name from the logo, website and sector tag), read weekly so new portfolio companies surface on /completeness/.",
     total: items.length, items,
   };
 }

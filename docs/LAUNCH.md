@@ -109,6 +109,27 @@ lowered (see commit "Take the backlink fill back out"). `logos` sits at 80% beca
 any source can find; each needs a Wikidata QID by hand.
 
 ## Owner asks not yet started
+- [ ] **Add Selvana (owner, 1 November 2026).** Not in the corpus as a company: it appears only in the raw Even One
+  Ventures portfolio list (`src/data/universe-lists/evenone-portfolio.json`). Write a company record from its own site
+  and a primary source, link it from even-one-ventures (which lists its portfolio in `companies`), and fetch its logo.
+- [ ] **Startup monitors must cover all the best places oncology startups appear (owner, 1 November 2026).** Today the
+  route is `scripts/ctgov-new-sponsors.ts` (new trial sponsors) plus a manual news sweep, and the 29 October round ran
+  out of web search and found most trade press blocks automated reads. Audit and extend the sources: accelerator and
+  venture portfolios (Y Combinator bio batches, Even One, Arch, Flagship, Third Rock, a16z Bio, GV, Khosla, OrbiMed,
+  RA Capital and the investor records already in the corpus, read from their own portfolio pages), Nasdaq/HKEX/STAR
+  IPO filings (EDGAR S-1/F-1, HKEX 18A), FDA and EMA designations for first-time sponsors, conference late-breakers
+  (AACR, ASCO, ESMO, SITC, ASH company lists), NIH SBIR/STTR and ARPA-H awards, and government company registers where
+  open. Each source gets a small fetcher that writes a review queue only (never data), run monthly, with a count of
+  what it found that the corpus lacks.
+- [ ] **Map new cancer research as it is published (owner, 1 November 2026).** Example missed: "A preinvasive
+  regulatory T cell axis for lung cancer interception" (Nature, 7 October 2026, doi 10.1038/s41586-026-11066-6) is not
+  in the corpus. Cause: the weekly `refresh-papers` job (scripts/fetch-papers.ts) only refreshes per-topic "recent
+  papers" snapshots in public/papers/; no job creates paper records, so landmark papers enter only when an agent adds
+  them by hand. Build a landmark watch: weekly, query Crossref and Europe PMC for new oncology papers in the top
+  journals (Nature, Science, Cell, NEJM, Lancet, Lancet Oncology, Nature Medicine, Nature Cancer, Cancer Cell, Cancer
+  Discovery, JCO, JAMA Oncology, Annals of Oncology and a few more), score them (journal, citations, trial results,
+  links to records we hold), and open a review PR proposing paper records with the abstract read and the entities they
+  link to; never auto-merge findings. Then add this paper.
 - [ ] **A scoped search beside the title on each major index page (owner, 29 October 2026).** For example
   https://onco.cc/roadmaps/ would carry a search box next to its heading that searches only roadmaps. The owner points at
   ultrametric.ai and its process page for how it is done there: read that pattern first. Likely shape: one shared

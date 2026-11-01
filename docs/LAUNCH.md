@@ -109,6 +109,11 @@ lowered (see commit "Take the backlink fill back out"). `logos` sits at 80% beca
 any source can find; each needs a Wikidata QID by hand.
 
 ## Owner asks not yet started
+- [ ] **Country deep dives, wave 2 (owner, 1 November 2026).** France, Canada, Italy, the Netherlands, South Korea,
+  Australia, Spain, Brazil, Sweden and Switzerland, on the pattern in docs/CONTENT-ROADMAP.md section 6 and
+  `/countries/in/`: each starts from the country's own registries and regulator in its own language, never from what
+  the corpus already holds. The 40 after that are listed in the 30 October chat (strong research systems, large growing
+  systems, regional leaders, distinctive models); confirm the order against SCImago's oncology country ranking first.
 - [ ] **Add Selvana (owner, 1 November 2026).** Not in the corpus as a company: it appears only in the raw Even One
   Ventures portfolio list (`src/data/universe-lists/evenone-portfolio.json`). Write a company record from its own site
   and a primary source, link it from even-one-ventures (which lists its portfolio in `companies`), and fetch its logo.

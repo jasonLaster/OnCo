@@ -6,10 +6,36 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 3 November 2026
+- Cover brain-to-cancer neural circuit research
+- chore: draft change proposals that need review (#335)
+- chore: EU regional rows read from the EMA register pages (#334)
+
+### 2 November 2026
+- Cover brain-to-cancer neural circuit research
+- chore: render this week's issue to public/newsletter/ (#333)
+- chore: weekly fact check, audit, and provenance refresh (#332)
+- chore: refresh public/votes.json from Discussions reactions (#331)
+- chore: refresh trial counts from ClinicalTrials.gov (#330)
+- chore: draft change proposals that need review (#329)
+- chore: EU regional rows read from the EMA register pages (#328)
+
+### 1 November 2026
+- chore: monthly identifier enrichment (HGNC, Wikidata) (#327)
+- chore: refresh HTA decisions and survival snapshots (#326)
+- chore: draft change proposals that need review (#325)
+- chore: EU regional rows read from the EMA register pages (#324)
+
+### 31 October 2026
+- chore: draft change proposals that need review (#323)
+- chore: EU regional rows read from the EMA register pages (#322)
+
 ### 30 October 2026
 - Tests, imaging agents and devices are called what they are, and 83 of them stop claiming to kill cancer cells
 - Tests, imaging agents and devices are no longer called drugs or treatments
 - Logos for 218 of the 262 new oncology companies, from each company's own site icon
+- Preserve PostHog ingestion token and anonymous profile flag
+- Fix consented Google tag commands and prepare private PostHog page counts
 - chore: draft change proposals that need review (#320)
 - chore: EU regional rows read from the EMA register pages (#319)
 

@@ -228,7 +228,7 @@ const devices: DrugInput[] = [
     links: [PMA("P250004"), FDA_CDX_LIST] }),
   d({ id: "oncomate-msi-dx", name: "OncoMate MSI Dx Analysis System", brand: "OncoMate MSI Dx Analysis System", modality: "Nucleic acid companion diagnostic test (microsatellite instability, tumour tissue)", status: "approved",
     mechanism: "A nucleic acid test for microsatellite instability in tumour tissue (FDA generic name: nucleic acid based assay, microsatellite instability).",
-    tldr: "Promega's MSI test, approved twice: to find microsatellite-stable endometrial cancer for pembrolizumab with lenvatinib, and MSI-high solid tumours for pembrolizumab.",
+    tldr: "Promega's microsatellite instability test, approved twice: to find microsatellite-stable endometrial cancer for pembrolizumab with lenvatinib, and MSI-high solid tumours for pembrolizumab.",
     summary: "Promega's OncoMate MSI Dx Analysis System holds two FDA approvals. PMA P240026 (5 November 2025) makes it the companion diagnostic for pembrolizumab with lenvatinib in endometrial carcinoma that is microsatellite stable (not MSI-high). PMA P250046 (15 September 2026) makes it the companion diagnostic for pembrolizumab in MSI-high solid tumours. The same test can therefore open one treatment when the result is stable and another when it is high.",
     approvals: [{ region: "US", year: 2025, indication: "Companion diagnostic for pembrolizumab with lenvatinib in microsatellite-stable endometrial carcinoma" }, { region: "US", year: 2026, indication: "Companion diagnostic for pembrolizumab in MSI-high solid tumours" }],
     targets: [], drugs: ["pembrolizumab", "lenvatinib"], cancers: ["endometrial", "metastatic-cancer"], companies: ["promega"],
@@ -276,7 +276,7 @@ const devices: DrugInput[] = [
 
 const companies: CompanyInput[] = [
   co({ id: "promega", name: "Promega", hq: "Madison, WI", country: "US", companyType: "diagnostics", website: "https://www.promega.com", sections: ["diagnostics"],
-    tldr: "Wisconsin life-science company whose OncoMate MSI Dx test is an FDA companion diagnostic for pembrolizumab.",
+    tldr: "Wisconsin life-science company whose OncoMate test for microsatellite instability is an FDA companion diagnostic for pembrolizumab.",
     summary: "Promega Corporation, the applicant on FDA records at Madison, Wisconsin, makes the OncoMate MSI Dx Analysis System, approved in November 2025 as the companion diagnostic for pembrolizumab with lenvatinib in microsatellite-stable endometrial carcinoma and in September 2026 for pembrolizumab in MSI-high solid tumours.",
     drugs: ["oncomate-msi-dx"], technologies: ["companion-diagnostic"], cancers: ["endometrial"],
     links: [{ label: "Official website", url: "https://www.promega.com" }, PMA("P250046")] }),

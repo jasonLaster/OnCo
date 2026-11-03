@@ -136,7 +136,7 @@ export const lungIdeas: IdeaInput[] = [
     maturity: "early-clinical", actor: "regulator", cost: "large", horizonYears: 6,
     cancers: [LUNG, NSCLC, SCLC, "alk-positive-nsclc", "egfr-mutant-nsclc"], keyPapers: ["paper-auperin-prophylactic-cranial-irradiation-sclc-nejm-1999", "paper-shaw-crown-lorlatinib-crizotinib-nejm-2020", "paper-peters-alex-alectinib-crizotinib-nejm-2017", "paper-wu-alina-adjuvant-alectinib-nejm-2024"],
     bottlenecks: ["b-brain-delivery", "b-trial-design", "b-toxicity-qol", "b-metastasis-biology"],
-    sections: ["targeted-therapy", "radiation"], technologies: ["stereotactic-radiosurgery", "radiotherapy"], terms: ["brain-metastases", "prophylactic-cranial-irradiation"],
+    sections: ["targeted-therapy", "radiation"], technologies: ["radiosurgery-srs", "radiotherapy"], terms: ["brain-metastases", "prophylactic-cranial-irradiation"],
     related: ["idea-bio2-brain-met-prevention-trials", "idea-tr1-brain-mets-default-included", "idea-fund-brain-metastases-programme", "lung-cancer-evidence-roadmap"] }),
   idea({ id: LUNG_IDEAS.deprivation, name: "Treat the deprivation gradient in lung cancer as a defect in delivery that can be fixed and measured",
     tldr: "Poorer patients with lung cancer are less likely to be offered surgery or chemotherapy, at the same stage, in systems that are free at the point of use. That is a fixable problem in how care is delivered, not a fact about the disease.",

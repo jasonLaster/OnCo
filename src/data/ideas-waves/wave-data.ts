@@ -700,7 +700,7 @@ export const ideasData: IdeaInput[] = [
     test: "Stand up two sequestered benchmarks; evaluate all willing vendors; publish results alongside their published claims; repeat annually to measure whether the gap narrows.",
     bottlenecks: ["b-ai-validation"], actor: "research", cost: "medium", horizonYears: 2,
     links: [{ label: "NIST FRTE (face recognition evaluation)", url: "https://www.nist.gov/programs-projects/face-technology-evaluations-frtefate" }],
-    sections: ["ai-computation"], technologies: ["radiology-ai-screening", "digital-pathology-ai", "ctdna"] }),
+    sections: ["ai-computation"], technologies: ["radiology-ai-screening", "digital-pathology-ai", "liquid-biopsy"] }),
   i({ id: "idea-data-neutral-ai-evaluator", name: "A neutral public evaluator for cancer AI, on the model of NIST", maturity: "speculative",
     tldr: "Create an independent public body whose job is to test cancer AI tools against each other on locked-away data and publish the scores, so hospitals can buy on evidence.",
     summary: "Hospitals cannot compare AI vendors; each presents its own validation. A publicly funded evaluator, running the sequestered benchmarks, publishing head-to-head results, subgroup performance and robustness tests, and updating as models change, would make procurement evidence-based and give regulators an independent data source. Models exist in NIST's testing programmes and the UK's AI evaluation initiatives.",

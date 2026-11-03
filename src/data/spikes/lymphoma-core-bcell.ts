@@ -83,7 +83,7 @@ export const lymphomaCoreBcellRecords: CancerInput[] = [
     ],
     related: ["dlbcl", "burkitt-lymphoma", "follicular-lymphoma", "non-hodgkin-lymphoma", "primary-mediastinal-b-cell-lymphoma"],
     terms: ["double-hit-lymphoma", "lymphoma-classification-2022", "lymphoma-indolent-versus-aggressive", "ipi-score", "lymphoma-tx-cns-prophylaxis"],
-    targets: ["myc", "bcl2"], technologies: ["histopathology-ihc", "fdg-pet"],
+    targets: ["myc-gene", "bcl2"], technologies: ["histopathology-ihc", "fdg-pet"],
     links: [SRC.who5, SRC.icc, PAPER.llmpp, SRC.pdq],
   }),
 
@@ -212,7 +212,7 @@ export const lymphomaCoreBcellRecords: CancerInput[] = [
     ],
     related: ["hiv-associated-lymphoma", "dlbcl", "multiple-myeloma", "primary-effusion-lymphoma", "non-hodgkin-lymphoma"],
     terms: ["ebv-term", "lymphoma-b-versus-t-cell", "lymphoma-classification-2022", "lymphoma-nodal-versus-extranodal"],
-    targets: ["myc"], technologies: ["histopathology-ihc", "fdg-pet"],
+    targets: ["myc-gene"], technologies: ["histopathology-ihc", "fdg-pet"],
     drugs: ["bortezomib", "lenalidomide"],
     links: [SRC.who5, SRC.icc, PAPER.pblNcdb, PAPER.pblSeer, SRC.hmrn],
   }),

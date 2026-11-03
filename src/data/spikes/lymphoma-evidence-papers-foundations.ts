@@ -42,7 +42,7 @@ export const lymphomaCellOfOriginPapers: PaperInput[] = [
       "Microarray profiling on fresh-frozen tissue was never routinely available; the Hans immunohistochemistry algorithm was the compromise that carried the idea into clinics, at the cost of accuracy.",
     ],
     links: [doi("10.1056/NEJMoa012914", "New England Journal of Medicine 2002"), pubmed("12075054"), epmc("12075054")],
-    cancers: [CX.dlbcl, CX.nhl], targets: ["bcl2", "bcl6", "myc"],
+    cancers: [CX.dlbcl, CX.nhl], targets: ["bcl2", "bcl6", "myc-gene"],
     terms: ["cell-of-origin", "ipi-score"], sections: ["diagnostics", "ai-computation"],
     bottlenecks: ["b-tumor-heterogeneity", "b-biomarker-validation"], journals: ["nejm"],
     people: ["louis-staudt"], institutions: ["nci"],
@@ -268,7 +268,7 @@ export const lymphomaVirusPapers: PaperInput[] = [
       "The association with Epstein-Barr virus and with holoendemic malaria was established by others over the following two decades, not in this paper.",
     ],
     links: [doi("10.1002/bjs.18004619704", "British Journal of Surgery 1958"), pubmed("13628987"), epmc("13628987")],
-    cancers: [CX.burkitt, CX.nhl], targets: ["myc"], sections: ["diagnostics", "prevention"],
+    cancers: [CX.burkitt, CX.nhl], targets: ["myc-gene"], sections: ["diagnostics", "prevention"],
     bottlenecks: ["b-global-access", "b-rare-cancers"],
     related: ["paper-epstein-virus-particles-burkitt-lymphoblasts-lancet-1964", "lymphoma-roadmap"] }),
 

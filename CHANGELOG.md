@@ -7,12 +7,24 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 3 November 2026
+- 36 multi-cancer early detection tests, the Prometheus gaps filled, rare lymphomas linked to their trials, sixteen companies brought up to date and imaging agents given approval rows
+- 36 multi-cancer early detection tests, the Prometheus gaps filled (9 technologies, 18 companies, 2 drugs), and OpenOnco in the open-source catalogue
 - The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
 - Cover brain-to-cancer neural circuit research
+- Add Selvana and Jiyu Bio, freshen sixteen large companies, name nine drugs' targets and give imaging agents regional approval rows
+- Lymphoma: trials and papers for the entity pages the taxonomy added, and two corrections
+- OpenOnco joins the open-source catalogue (PR 290), and the Open Medical Registry stays listed while its repository is private
+- Fill the second round of Prometheus gaps: nine technologies, two drugs, eighteen companies, two facilities, the tumour atlas network and cDC1 cross-presentation
+- Extend the multi-cancer test census to China, Taiwan and India, and add two new US Breakthrough designations
+- Pathway diagrams draw clean right-angle routes with rounded corners: no line runs through a box and every label is shown in full
+- chore: refresh literature snapshot from Europe PMC (#338)
+- chore: refresh universe lists (NCI drugs and types, NCI centres, OECI, NHS alliances, NLM journals, OpenAlex, KEGG, ChEMBL, ClinicalTrials.gov, FDA OCE) (#337)
 - chore: draft change proposals that need review (#335)
 - chore: EU regional rows read from the EMA register pages (#334)
 
 ### 2 November 2026
+- Draw pathway diagrams with routed, rounded edges that avoid boxes
+- The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
 - Cover brain-to-cancer neural circuit research
 - chore: render this week's issue to public/newsletter/ (#333)
 - chore: weekly fact check, audit, and provenance refresh (#332)

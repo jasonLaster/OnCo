@@ -153,9 +153,10 @@ const colorectalDrugSupplements: SpikeSupplement[] = [
 /**
  * Targets for colorectal-linked registry drug records that carried none, so the pipeline engine could not place them
  * (raised by agent D of the colorectal spike). Each target is taken from a public source quoted on the record: the
- * ClinicalTrials.gov intervention description, the NCI Drug Dictionary definition, or the primary paper. Four of them
+ * ClinicalTrials.gov intervention description, the NCI Drug Dictionary definition, or the primary paper. Three of them
  * name a target that has no record in the corpus yet, so the sentence and the source are carried in `notes` until one
- * exists: GFRAL (JMT203), CD73 / NT5E (oleclumab), clusterin (sotevtamab) and GPR35 (CT3001).
+ * exists: GFRAL (JMT203), clusterin (sotevtamab) and GPR35 (CT3001). Oleclumab's CD73 now has a record
+ * (`cd73-adenosine`), linked from oleclumab's own entry in drugs-pipeline-wave1.ts.
  */
 const colorectalPipelineDrugTargets: SpikeSupplement[] = [
   { id: "ak117", targets: ["cd47"],
@@ -177,7 +178,7 @@ const colorectalPipelineDrugTargets: SpikeSupplement[] = [
     notes: ["Onvansertib is an orally bioavailable, ATP-competitive inhibitor of polo-like kinase 1, which disrupts mitosis and causes G2/M arrest in PLK1-overexpressing cells (NCI Drug Dictionary)."],
     links: [{ label: "NCI Drug Dictionary: onvansertib", url: "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/onvansertib" }] },
   { id: "oleclumab",
-    notes: ["Oleclumab (MEDI9447) is a monoclonal antibody against the ectoenzyme CD73, also called ecto-5'-nucleotidase, which converts AMP to adenosine; blocking it lowers free adenosine and lifts adenosine-mediated suppression of CD8 T cells (NCI Drug Dictionary). CD73 has no target record in the corpus yet."],
+    notes: ["Oleclumab (MEDI9447) is a monoclonal antibody against the ectoenzyme CD73, also called ecto-5'-nucleotidase, which converts AMP to adenosine; blocking it lowers free adenosine and lifts adenosine-mediated suppression of CD8 T cells (NCI Drug Dictionary)."],
     links: [{ label: "NCI Drug Dictionary: oleclumab", url: "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/oleclumab" }] },
   { id: "jmt203",
     notes: ["JMT203 is described in its registry record as an anti-GFRAL monoclonal antibody given subcutaneously for cancer cachexia; GFRAL is the brainstem receptor for GDF15, the signal that drives appetite loss and weight loss in advanced cancer. GFRAL has no target record in the corpus yet."],

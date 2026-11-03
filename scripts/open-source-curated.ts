@@ -40,6 +40,12 @@ export type Curated = {
   dataSources?: string[];
   collections?: string[];
   oncology?: false;
+  /**
+   * Keep the last good record when the source cannot be read, instead of moving the project to SKIPPED. For a
+   * repository the owner keeps private (judegomila/openmedical): the weekly bot and contributors cannot see it, and on
+   * 21 October 2026 a contributor's run dropped it from the catalogue for that reason.
+   */
+  keepWhenUnreachable?: true;
 };
 
 const C = {
@@ -430,6 +436,7 @@ export const CURATED: Curated[] = [
   { id: "ci4cc-informatics-resources", name: "CI4CC informatics resources", repo: "seandavi/ci4cc-informatics-resources", category: C.edu, summary: "A community list of informatics resources for cancer centres from the Cancer Informatics for Cancer Centers group.", openness: O.content },
 
   // ─── Clinical decision support ─────────────────────────────────────────────────────────────────────────────────
+  { id: "openonco", name: "OpenOnco", repo: "romeo111/OpenOnco", homepage: "https://openonco.info/", category: C.cds, summary: "An open oncology knowledge base with source-cited tumour-board plan drafts and an Onco Wiki; outputs are informational drafts for clinician review.", openness: O.code, maintainer: "OpenOnco contributors", technologies: ["multidisciplinary-tumour-board"] },
   { id: "mcode-extraction-framework", name: "mCODE Extraction Framework", repo: "mcode/mcode-extraction-framework", category: C.cds, summary: "MITRE's tool that extracts mCODE-shaped cancer data from EHR and CSV sources into FHIR bundles.", openness: O.code, maintainer: "MITRE", technologies: ["oncology-information-systems"] },
   { id: "predict-breast", name: "PREDICT Breast (v2.2 code)", repo: "WintonCentre/predict-v21-main", category: C.cds, summary: "The Winton Centre's public tool that estimates how breast cancer treatments after surgery change survival, for patients and clinicians; the web tool's source is published.", openness: O.code, maintainer: "Winton Centre for Risk and Evidence Communication, University of Cambridge", cancers: ["breast-cancer"], technologies: ["gene-expression-prognostic-assays"] },
   { id: "predict-prostate", name: "PREDICT Prostate", repo: "WintonCentre/predict-prostate", category: C.cds, summary: "The prostate cancer version of the PREDICT tool: individualised survival estimates for men with non-metastatic prostate cancer.", openness: O.code, maintainer: "Winton Centre for Risk and Evidence Communication, University of Cambridge", cancers: ["prostate"] },
@@ -442,7 +449,7 @@ export const CURATED: Curated[] = [
 
   // ─── Patient-facing and open content ───────────────────────────────────────────────────────────────────────────
   { id: "onco", name: "OnCo", repo: "judegomila/OnCo", category: C.patient, summary: "This site: an open, plain-English map of every cancer, treatment, target, trial, company and institution, with a JSON API and MCP server. Code is MIT; the corpus is CC BY-NC 4.0. Written largely by AI agents from public sources and reviewed in the open.", openness: O.codeData, opennessNote: "Code MIT; corpus CC BY-NC 4.0 (LICENSE-DATA). Non-commercial terms on the data.", maintainer: "OnCo contributors" },
-  { id: "open-medical-registry", name: "Open Medical Registry", repo: "judegomila/openmedical", category: C.data, summary: "A catalogue of open-source medicine (therapeutics, devices, software, protocols, data) where every record is a cited YAML file; the template OnCo follows and the source of its Open tools page.", openness: O.codeData, opennessNote: "MIT-licensed corpus and code.", maintainer: "Open Medical Registry contributors" },
+  { id: "open-medical-registry", name: "Open Medical Registry", repo: "judegomila/openmedical", category: C.data, summary: "A catalogue of open-source medicine (therapeutics, devices, software, protocols, data) where every record is a cited YAML file; the template OnCo follows and the source of its Open tools page.", keepWhenUnreachable: true, openness: O.codeData, opennessNote: "MIT-licensed corpus and code; the repository is private at the moment, so the GitHub link opens only for its owner.", maintainer: "Open Medical Registry contributors" },
   { id: "cancer-gov-pdq", name: "NCI PDQ cancer information summaries", url: "https://www.cancer.gov/publications/pdq", category: C.patient, summary: "The National Cancer Institute's evidence-based summaries on treatment, screening, genetics and supportive care in patient and health professional versions; US government work in the public domain.", openness: O.content, licence: "not stated", maintainer: "nci", collections: ["cancer-gov-pdq"] },
   { id: "seer-training", name: "SEER Training Modules", url: "https://training.seer.cancer.gov/", category: C.edu, summary: "The NCI's free training on cancer registration, anatomy, staging and coding, used by registrars worldwide.", openness: O.content, licence: "not stated", maintainer: "nci", technologies: ["cancer-registries-surveillance"] },
   { id: "radiopaedia", name: "Radiopaedia", url: "https://radiopaedia.org/", category: C.edu, summary: "The collaborative open radiology reference with tens of thousands of peer-reviewed cases, heavily used for cancer imaging teaching.", openness: O.content, licence: "not stated", licenceNote: "The home page as fetched names no licence; the site's terms page describes case licensing separately.", technologies: ["ct", "mri"] },

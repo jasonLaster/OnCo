@@ -326,7 +326,7 @@ export const CHECKPOINT_MEMBERS: CheckpointMember[] = [
     id: "cd47", classId: "innate", label: "CD47", symbol: "CD47", hgnc: "HGNC:1682", side: "tumour-or-apc",
     expressedOn: { text: "Very broadly distributed on normal adult tissues as well as ovarian tumours, especially abundant in some epithelia and the brain.", source: UNIPROT("Q08722") },
     partners: ["sirpa"],
-    drugs: [{ id: "magrolimab", drugClass: "antibody" }, { id: "evorpacept", drugClass: "fusion-protein", note: "SIRP-alpha Fc fusion that binds CD47" }],
+    drugs: [{ id: "magrolimab", drugClass: "antibody" }, { id: "evorpacept", drugClass: "fusion-protein", note: "SIRP-alpha Fc fusion that binds CD47" }, { id: "ak117", drugClass: "antibody", note: "ligufalimab" }],
     discontinued: [
       { name: "Magrolimab with azacitidine in higher-risk MDS (ENHANCE)", reason: "Study discontinued due to futility based on a planned analysis.", source: NCT("NCT04313881") },
       { name: "Magrolimab programme in MDS", reason: "Termination due to discontinuation of magrolimab development in MDS.", source: NCT("NCT05835011") },
@@ -451,7 +451,7 @@ export const CHECKPOINT_MEMBERS: CheckpointMember[] = [
     id: "cd73-adenosine", classId: "metabolic", label: "CD73", symbol: "NT5E", hgnc: "HGNC:8021", side: "tumour-or-apc",
     expressedOn: { text: "Broadly expressed; the ectonucleotidase that finishes the breakdown of extracellular ATP into adenosine.", source: CHECKPOINT_REVIEWS.adenosine },
     partners: ["entpd1", "adora2a"],
-    drugs: [{ id: "oleclumab", drugClass: "antibody" }, { id: "quemliclustat", drugClass: "small-molecule" }, { id: "ak119", drugClass: "antibody" }, { id: "mavrostobart", drugClass: "antibody" }],
+    drugs: [{ id: "oleclumab", drugClass: "antibody" }, { id: "quemliclustat", drugClass: "small-molecule" }, { id: "uliledlimab", drugClass: "antibody" }, { id: "ak119", drugClass: "antibody" }, { id: "mavrostobart", drugClass: "antibody" }],
     discontinued: [{ name: "Oleclumab plus durvalumab doublet (platform arms)", reason: "Overall clinical activity (ORR) for oleclumab plus durvalumab is minimal across tumour types and does not support further evaluation of this doublet.", source: NCT("NCT04262388") }],
   },
   {

@@ -1,5 +1,5 @@
 import type { Pathway } from "@/lib/schema";
-import { pathwayView } from "@/lib/pathway-products";
+import { pathwayDiagramView } from "@/lib/pathway-products";
 import { PathwayDiagramInteractive } from "./PathwayDiagramInteractive";
 
 /**
@@ -7,5 +7,5 @@ import { PathwayDiagramInteractive } from "./PathwayDiagramInteractive";
  * and hands everything to the interactive client renderer (which also server-renders its static SVG).
  */
 export function PathwayDiagram({ p }: { p: Pathway }) {
-  return <PathwayDiagramInteractive view={pathwayView(p)} />;
+  return <PathwayDiagramInteractive view={pathwayDiagramView(p)} />;
 }

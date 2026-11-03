@@ -109,7 +109,7 @@ lowered (see commit "Take the backlink fill back out"). `logos` sits at 80% beca
 any source can find; each needs a Wikidata QID by hand.
 
 ## Owner asks not yet started
-- [ ] **Prometheus gaps, second comparison (1 November 2026).** Compared every cancer-related node of
+- [x] **Prometheus gaps, second comparison (1 November 2026).** Done 3 November 2026 in src/data/prometheus-gaps-2026-11.ts, prometheus-gaps-institutions.ts and companies-prometheus-gaps-a.ts and -b.ts; CRISPR screens, masked ADCs, mechanistic growth models and sapanisertib were supplemented on their existing records, Atomwise is written as Numerion Labs (its new name), PierianDx is an alias of velsera. Still open: HealthMyne (no primary source for its acquisition found) and Metastage (company not identified). Compared every cancer-related node of
   https://prometheus-umber.vercel.app/ (855 of 17,390) with the corpus; the clear gaps, after removing name variants and
   the longevity and reprogramming nodes left out on purpose in September:
   - Technologies: microbeam radiotherapy, co-culture immune-tumour models, spheroid (hanging-drop, ultra-low-attachment)

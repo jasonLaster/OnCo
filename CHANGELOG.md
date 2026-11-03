@@ -7,10 +7,12 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 3 November 2026
-- Every Medicare-covered MRD blood test now has its own page, including Foundation Medicine's FoundationOne MRD and Personalis NeXT Personal, with Oncodetect, Guardant Reveal and RaDaR corrected from their sources
+- A read-only gap audit ranks what reader pages leave out, and page sections gathered from the corpus wait at /admin/ for approval
 - 36 multi-cancer early detection tests, the Prometheus gaps filled (9 technologies, 18 companies, 2 drugs), and OpenOnco in the open-source catalogue
 - The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
 - Cover brain-to-cancer neural circuit research
+- A read-only gap audit lists what reader pages leave out, ranked by pages affected
+- Every Medicare-covered MRD blood test now has its own page, including Foundation Medicine's FoundationOne MRD and Personalis NeXT Personal, with Oncodetect, Guardant Reveal and RaDaR corrected from their sources
 - Eight more ctDNA residual disease tests get sourced records (FoundationOne MRD, NeXT Personal, Haystack MRD, NavDx, Labcorp Plasma Detect, Precise MRD, TrueMRD, Tempus xM), and Oncodetect, Guardant Reveal and RaDaR ST are re-sourced
 - Ten country deep dives wait at /admin/ for approval, and the proposal script records its preview address
 - Weekly watch for new oncology startups across fifteen sources and for landmark cancer papers, the Nature lung Treg interception paper, and the GLOBOCAN all-cancers note corrected to include non-melanoma skin cancer

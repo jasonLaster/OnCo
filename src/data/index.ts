@@ -136,6 +136,7 @@ import { companiesSponsors } from "./companies-sponsors";
 import { companiesSponsorsWave3 } from "./companies-sponsors-wave3";
 import { companiesMakersWave4 } from "./companies-makers-wave4";
 import { targetsWaveSoc } from "./targets-wave-soc";
+import { targetsPipelineGap } from "./targets-pipeline-gap";
 import { targetsGenesWave } from "./targets-genes-wave";
 import { targetsImmuneMarkers } from "./targets-immune-markers";
 import { targetSpecificity } from "./target-specificity";
@@ -339,7 +340,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
-  ...targetsWaveSoc, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...companiesSponsorsWave,
+  ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
   ...pipelineTrialsWave2,

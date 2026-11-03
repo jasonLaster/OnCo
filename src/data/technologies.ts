@@ -174,7 +174,7 @@ export const technologies: TechnologyInput[] = [
     principle: "Deep convolutional and transformer networks trained on labelled imaging; increasingly self-supervised on large unlabelled corpora.",
     strengths: ["Scales expert reading", "Reduces workload and inter-reader variability"],
     limitations: ["Dataset shift across scanners and populations", "Regulatory lag for adaptive models"],
-    technologies: ["mammography", "ct", "mri"], related: ["ai-oncology-clinic", "radiogenomics", "tumour-doubling-time"], links: [{ label: "Wikipedia", url: W("Artificial_intelligence_in_healthcare") }], companies: ["kheiron-medical-technologies", "nucleo-research", "therapixel", "vara", "volpara-health", "v5med", "beamworks"],
+    technologies: ["mammography", "ct", "mri"], related: ["ai-oncology-clinic", "radiogenomics", "tumour-doubling-time", "ai-radiology-triage"], links: [{ label: "Wikipedia", url: W("Artificial_intelligence_in_healthcare") }], companies: ["kheiron-medical-technologies", "nucleo-research", "therapixel", "vara", "volpara-health", "v5med", "beamworks"],
   },
   {
     id: "optical-imaging", kind: "technology", name: "Optical & fluorescence imaging", sections: ["imaging", "surgery"], status: "established", asOf, wikipedia: W("Fluorescence_image-guided_surgery"),
@@ -306,7 +306,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Actionable for patient and relatives", "Cheap"],
     limitations: ["VUS burden", "Uptake and counselling capacity"],
     targets: ["brca", "tp53"],
-    cancers: ["tnbc", "ovarian", "prostate", "pancreatic", "colorectal"], related: ["germline-to-parp"], links: [{ label: "Wikipedia", url: W("Genetic_testing") }], journals: ["familial-cancer"], companies: ["outcomes4me", "yemaachi-biotech", "fulgent-genetics"],
+    cancers: ["tnbc", "ovarian", "prostate", "pancreatic", "colorectal"], related: ["germline-to-parp"], links: [{ label: "Wikipedia", url: W("Genetic_testing") }], journals: ["familial-cancer"], companies: ["outcomes4me", "yemaachi-biotech", "fulgent-genetics", "invitae"],
   },
   {
     id: "functional-drug-testing", related: ["functional-precision-medicine-haematology", "bh3-profiling", "parsortix-ctc-harvest"], kind: "technology", name: "Functional (ex vivo) drug testing", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf, wikipedia: W("Precision_medicine"),
@@ -318,12 +318,12 @@ export const technologies: TechnologyInput[] = [
     technologies: ["organoids"], links: [{ label: "Wikipedia", url: W("Precision_medicine") }], companies: ["certis-oncology-solutions", "known-medicine", "notable-labs", "origin-bio", "zpredicta", "kernis-health", "palitra-bio", "valius", "specicare", "storemytumor", "travera", "first-ascent-biomedical", "kiyatec", "cure-first", "sagemedic", "kyan-technologies", "cancertain", "2curex", "oncosyne"],
   },
   {
-    id: "organoids", keyPapers: ["paper-sato-lgr5-organoids-nature-2009"], kind: "technology", name: "Patient-derived organoids", sections: ["drug-discovery"], status: "established", asOf, wikipedia: W("Organoid"),
+    id: "organoids", related: ["immune-tumour-coculture-models", "tumour-spheroid-models"], keyPapers: ["paper-sato-lgr5-organoids-nature-2009"], kind: "technology", name: "Patient-derived organoids", sections: ["drug-discovery"], status: "established", asOf, wikipedia: W("Organoid"),
     tldr: "Patient-derived organoids are miniature 3D versions of a patient's tumour grown in the lab.",
     summary: "Patient-derived organoids are grown by stem-cell-driven 3D culture in an extracellular matrix with defined growth factors, so a piece of a patient's tumour becomes a self-renewing miniature that keeps its genotype and drug response. Living biobanks of organoids (HUB, Broad) preserve genotype and drug response across many cancer types. They are used for drug screening, CRISPR studies, and increasingly co-cultured with immune cells for immunotherapy testing. The main limitation is that organoids lack vasculature and the full microenvironment, so stromal and immune effects are only partly captured, and prospective evidence that organoid drug testing improves patient outcomes is still being gathered. For a newcomer, an organoid is a lab-grown copy of one person's tumour that can be tested against drugs before the patient is.",
     principle: "Stem-cell-driven 3D culture in extracellular matrix with defined growth factors.",
     strengths: ["Fidelity to patient tumour", "Scalable"],
-    limitations: ["Lacks vasculature and full microenvironment"], links: [{ label: "Wikipedia", url: W("Organoid") }], companies: ["known-medicine", "zpredicta", "kernis-health", "specicare", "kiyatec", "cure-first", "sagemedic", "2curex", "orakl-oncology", "oncosyne", "signet-therapeutics", "aummune"],
+    limitations: ["Lacks vasculature and full microenvironment"], links: [{ label: "Wikipedia", url: W("Organoid") }], companies: ["known-medicine", "zpredicta", "kernis-health", "specicare", "kiyatec", "cure-first", "sagemedic", "2curex", "orakl-oncology", "oncosyne", "signet-therapeutics", "aummune", "cellesce"],
   },
   {
     id: "pdx-models", related: ["genetically-engineered-mouse-models", "humanised-mouse-models"], kind: "technology", name: "Patient-derived xenografts", sections: ["drug-discovery"], status: "established", asOf, wikipedia: W("Patient_derived_xenograft"),
@@ -492,7 +492,7 @@ export const technologies: TechnologyInput[] = [
     technologies: ["psma-pet", "spect", "targeted-alpha-therapy"],
     targets: ["psma", "sstr2", "fap"],
     drugs: ["pluvicto", "lutathera"],
-    cancers: ["prostate", "neuroendocrine"], companies: ["clarity-pharmaceuticals", "abdera-therapeutics", "alpha-9-oncology", "ariceum-therapeutics", "artbio", "atomic-alchemy", "evergreen-theragnostics", "mariana-oncology", "nucleus-radiopharma", "point-biopharma", "precirix", "radionetics-oncology", "ratio-therapeutics", "relit-biosciences", "monopar", "actithera", "blue-earth-therapeutics", "radiomer-therapeutics", "nuclide-therapeutics", "skopos-bio", "chengdu-new-radiomedicine-technology", "curasight", "antelope-surgical-solutions", "peptidream", "full-life-technologies", "lumina-pharmaceuticals"], links: [{ label: "Wikipedia", url: W("Radioligand_therapy") }], journals: ["cancer-biotherapy-and-radiopharmaceuticals"],
+    cancers: ["prostate", "neuroendocrine"], companies: ["clarity-pharmaceuticals", "abdera-therapeutics", "alpha-9-oncology", "ariceum-therapeutics", "artbio", "atomic-alchemy", "evergreen-theragnostics", "mariana-oncology", "nucleus-radiopharma", "point-biopharma", "precirix", "radionetics-oncology", "ratio-therapeutics", "relit-biosciences", "monopar", "actithera", "blue-earth-therapeutics", "radiomer-therapeutics", "nuclide-therapeutics", "skopos-bio", "chengdu-new-radiomedicine-technology", "curasight", "antelope-surgical-solutions", "peptidream", "full-life-technologies", "lumina-pharmaceuticals", "pentixapharm", "nuclidium"], links: [{ label: "Wikipedia", url: W("Radioligand_therapy") }], journals: ["cancer-biotherapy-and-radiopharmaceuticals"],
   },
   {
     id: "targeted-alpha-therapy", trials: ["nct05720130"], dependsOn: ["therapy-isotope-supply-chain", "radiopharmacy-network", "radioligand-dosimetry"], related: ["astatine-211-alpha-therapy"], kind: "technology", name: "Targeted alpha therapy", sections: ["radiopharma"], status: "phase-3", asOf, wikipedia: W("Targeted_alpha-particle_therapy"),
@@ -585,7 +585,7 @@ export const technologies: TechnologyInput[] = [
     principle: "A humanised or fully human IgG binds a surface or soluble antigen; Fc engineering tunes effector function and half-life.",
     strengths: ["High specificity", "Long half-life", "Platform for conjugates"],
     limitations: ["IV administration", "Cannot reach intracellular targets"],
-    terms: ["adcc", "fc-effector"], companies: ["morphosys", "alentis-therapeutics", "bicara-therapeutics", "bighat-biosciences", "inhibrx", "ose-immunotherapeutics", "tradewind-bioscience", "peregrine-avid", "stipple-bio", "ottimo-pharma", "novelty-nobility", "damora-therapeutics", "mabquest", "chiome-bioscience", "ascendo-biotechnology", "epsilogen", "allterum-therapeutics", "domain-therapeutics", "pheast-therapeutics", "zumutor-biologics", "biotroy-therapeutics", "biond-biologics", "solstice-oncology", "immunoah", "pilatus-biosciences", "solu-therapeutics"], links: [{ label: "Wikipedia", url: W("Monoclonal_antibody_therapy") }],
+    terms: ["adcc", "fc-effector"], companies: ["morphosys", "alentis-therapeutics", "bicara-therapeutics", "bighat-biosciences", "inhibrx", "ose-immunotherapeutics", "tradewind-bioscience", "peregrine-avid", "stipple-bio", "ottimo-pharma", "novelty-nobility", "damora-therapeutics", "mabquest", "chiome-bioscience", "ascendo-biotechnology", "epsilogen", "allterum-therapeutics", "domain-therapeutics", "pheast-therapeutics", "zumutor-biologics", "biotroy-therapeutics", "biond-biologics", "solstice-oncology", "immunoah", "pilatus-biosciences", "solu-therapeutics", "abcellera"], links: [{ label: "Wikipedia", url: W("Monoclonal_antibody_therapy") }],
   },
   {
     id: "bispecific-antibody", dependsOn: ["monoclonal-antibody-manufacturing"], related: ["trispecific-antibodies"], kind: "technology", name: "Bispecific antibodies", sections: ["targeted-therapy", "immunotherapy"], status: "approved", asOf, since: 2014, wikipedia: W("Bispecific_monoclonal_antibody"),
@@ -642,7 +642,7 @@ export const technologies: TechnologyInput[] = [
     targets: ["estrogen-receptor", "androgen-receptor", "kras"],
     drugs: ["vepdegestrant"],
     companies: ["arvinas", "pfizer", "bms", "amphista-therapeutics", "boundless-bio", "captor-therapeutics", "cullgen", "firefly-bio", "foghorn-therapeutics", "neomorph", "orum-therapeutics", "photys-therapeutics", "plexium", "prelude-therapeutics", "proxygen", "treeline-biosciences", "triana-biomedicines", "breakthru-medicine", "parabilis-medicines", "epibiologics", "ubix-therapeutics", "paq-therapeutics", "larkspur-biosciences", "auron-therapeutics", "seed-therapeutics"],
-    technologies: ["degrader-antibody-conjugate"], related: ["idea-senolytics-after-chemo", "stablix"], links: [{ label: "Wikipedia", url: W("Proteolysis_targeting_chimera") }],
+    technologies: ["degrader-antibody-conjugate"], related: ["idea-senolytics-after-chemo", "stablix", "dt2216"], links: [{ label: "Wikipedia", url: W("Proteolysis_targeting_chimera") }],
   },
   {
     id: "antisense-sirna", companies: ["stitchpoint-bio", "isarna-therapeutics", "ionis"], kind: "technology", name: "Oligonucleotide therapeutics", sections: ["targeted-therapy"], status: "phase-2", asOf, wikipedia: W("Antisense_therapy"),
@@ -742,7 +742,7 @@ export const technologies: TechnologyInput[] = [
     tags: ["frontier"], companies: ["nbe-therapeutics", "tallac-therapeutics"],
   },
   {
-    id: "masked-adc", links: [{ label: "Autio et al., Probody therapeutics: an emerging class of therapies designed to enhance on-target effects with reduced off-tumour toxicity (Clinical Cancer Research 2020)", url: "https://doi.org/10.1158/1078-0432.CCR-19-1457" }], kind: "technology", name: "Masked / conditionally active ADC", sections: ["adcs"], status: "phase-2", asOf, generation: "4th (next-gen)",
+    id: "masked-adc", aka: ["probody drug conjugate", "Probody ADC", "protease-activated ADC", "conditionally activated ADC", "masked antibody-drug conjugate"], links: [{ label: "Autio et al., Probody therapeutics: an emerging class of therapies designed to enhance on-target effects with reduced off-tumour toxicity (Clinical Cancer Research 2020)", url: "https://doi.org/10.1158/1078-0432.CCR-19-1457" }], kind: "technology", name: "Masked / conditionally active ADC", sections: ["adcs"], status: "phase-2", asOf, generation: "4th (next-gen)",
     tldr: "An ADC wearing a mask that only comes off inside the tumour, so it ignores the same protein on healthy tissue.",
     summary: "Probody platform (CytomX; praluzatamab ravtansine CD166, CX-2051 EpCAM with TOP1 payload showing responses in colorectal cancer in 2025) and protease-activated designs allow targeting of antigens that are also expressed at high levels on normal tissue (EGFR, EpCAM, CD71). Also 'tumour microenvironment-activated' linkers cleaved by extracellular proteases.",
     principle: "Peptide mask blocks antigen binding until cleaved by tumour-enriched proteases (MMPs, uPA, legumain).",
@@ -827,7 +827,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Kills by a mechanism unrelated to chemotherapy or targeted agents, so cross-resistance is unlikely", "Toxicity largely does not overlap with other cancer drugs, which is the main argument for combining", "Turns dying tumour cells into an antigen source in place, with an encoded adjuvant", "Responses in uninjected lesions have been documented, which is evidence of a systemic immune effect"],
     limitations: ["Most products still need a lesion that can be injected", "Pre-existing and rapidly rising neutralising antibody blocks intravenous delivery and repeat dosing", "Approvals rest on response rates; randomised survival benefit has not been shown", "The randomised combination with checkpoint blockade in melanoma was negative", "Manufacturing yields are far below what intravenous dosing would need"],
     drugs: ["vusolimogene-oderparepvec", "talimogene-laherparepvec", "nadofaragene-firadenovec", "cretostimogene", "h101-oncolytic-adenovirus", "olvimulogene-nanivacirepvec", "aglatimagene-besadenovec"],
-    companies: ["replimune", "amgen", "candel-therapeutics", "humane-genomics", "kopra-bio", "transgene", "minuteman-therapeutics", "adze-biotechnology", "accession-therapeutics", "viromissile", "neuregen-therapeutics", "kalivir-immunotherapeutics", "genemedicine", "jecho", "psivac", "virogin-biotech"],
+    companies: ["replimune", "amgen", "candel-therapeutics", "humane-genomics", "kopra-bio", "transgene", "minuteman-therapeutics", "adze-biotechnology", "accession-therapeutics", "viromissile", "neuregen-therapeutics", "kalivir-immunotherapeutics", "genemedicine", "jecho", "psivac", "virogin-biotech", "dnatrix"],
     people: ["robert-martuza", "stephen-russell", "john-bell", "tomoki-todo", "beata-halassy", "dubravko-forcic", "howard-kaufman", "evanthia-galanis"],
     keyPapers: ["paper-stojdl-vsv-interferon-defect-natmed-2000", "paper-coffey-reovirus-ras-science-1998", "paper-martuza-engineered-hsv-glioma-science-1991", "paper-bischoff-onyx-015-science-1996", "paper-kelly-russell-oncolytic-history-moltherapy-2007", "paper-russell-peng-bell-oncolytic-virotherapy-natbiotech-2012", "paper-shalhout-oncolytic-progress-challenges-natrevclinonc-2023", "paper-andtbacka-optim-talimogene-jco-2015", "paper-todo-g47delta-glioblastoma-natmed-2022", "paper-xia-h101-head-neck-aizheng-2004", "paper-wong-ignyte-rp1-nivolumab-jco-2025", "paper-russell-mv-nis-myeloma-mayo-2014", "paper-cloughesy-toca5-glioma-jamaoncol-2020", "paper-abou-alfa-phocus-pexa-vec-liver-cancer-2024", "paper-hietanen-rigvir-echovirus-viruses-2022", "paper-bourgeois-daigneault-neoadjuvant-ovt-tnbc-scitranslmed-2018", "paper-halassy-self-experiment-ovt-vaccines-2024", "paper-pugh-self-experimentation-publication-jme-2026"],
     cancers: ["melanoma", "urothelial", "glioblastoma", "hcc", "multiple-myeloma"],
@@ -919,7 +919,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Immediate availability, industrial scale"],
     limitations: ["Host rejection limits persistence", "Deeper lymphodepletion"],
     technologies: ["car-t"],
-    targets: ["cd70", "cd19"], companies: ["adicet-bio", "allotera-therapeutics", "century-therapeutics", "guardian-bio", "imugene", "indapta-therapeutics", "mendus", "onk-therapeutics", "orca-bio", "poseida-therapeutics", "captain-t-cell", "tikva-allocell", "senti-biosciences", "zelluna", "arovella-therapeutics", "avencell-therapeutics", "brightpath-biotherapeutics", "t-maximum-pharmaceutical"],
+    targets: ["cd70", "cd19"], companies: ["adicet-bio", "allotera-therapeutics", "century-therapeutics", "guardian-bio", "imugene", "indapta-therapeutics", "mendus", "onk-therapeutics", "orca-bio", "poseida-therapeutics", "captain-t-cell", "tikva-allocell", "senti-biosciences", "zelluna", "arovella-therapeutics", "avencell-therapeutics", "brightpath-biotherapeutics", "t-maximum-pharmaceutical", "edigene"],
   },
   {
     id: "armored-car", dependsOn: ["car-t"], links: [{ label: "ClinicalTrials.gov NCT03373097: GD2-CART01 (Bambino Gesù phase 1/2)", url: "https://clinicaltrials.gov/study/NCT03373097" }], kind: "technology", name: "Armoured, logic-gated & next-gen CARs", sections: ["cell-therapy"], status: "phase-1", asOf,
@@ -1032,16 +1032,16 @@ export const technologies: TechnologyInput[] = [
     principle: "Deep learning over sequence, structure, and omics; active learning with wet-lab loops.",
     strengths: ["Speed of design cycles", "Novel target hypotheses"],
     limitations: ["Clinical validation lag", "Biology, not chemistry, is the usual failure point"],
-    tags: ["frontier"], companies: ["genesis-molecular-ai", "iambic-therapeutics", "algen-biotechnologies", "aqemia", "bighat-biosciences", "blank-bio", "certis-oncology-solutions", "cytoreason", "evaxion", "harmonic-discovery", "iktos", "immunai", "lila-sciences", "nested-therapeutics", "nimbus-therapeutics", "relay-therapeutics", "resistancebio", "reverie-labs", "serinus-biosciences", "turbine", "valo-health", "amply-discovery", "big-picture-bio", "cure51", "manas-ai", "orakl-oncology", "charm-therapeutics", "signet-therapeutics", "accsalus-biosciences", "stonewise", "eisbach-bio", "proteinqure", "biolojic-design", "dewpoint-therapeutics", "ensem-therapeutics"], links: [{ label: "Wikipedia", url: W("Drug_design") }],
+    tags: ["frontier"], companies: ["genesis-molecular-ai", "iambic-therapeutics", "algen-biotechnologies", "aqemia", "bighat-biosciences", "blank-bio", "certis-oncology-solutions", "cytoreason", "evaxion", "harmonic-discovery", "iktos", "immunai", "lila-sciences", "nested-therapeutics", "nimbus-therapeutics", "relay-therapeutics", "resistancebio", "reverie-labs", "serinus-biosciences", "turbine", "valo-health", "amply-discovery", "big-picture-bio", "cure51", "manas-ai", "orakl-oncology", "charm-therapeutics", "signet-therapeutics", "accsalus-biosciences", "stonewise", "eisbach-bio", "proteinqure", "biolojic-design", "dewpoint-therapeutics", "ensem-therapeutics", "schrodinger", "numerion-labs", "benevolentai"], links: [{ label: "Wikipedia", url: W("Drug_design") }],
   },
   {
-    id: "crispr-screens", related: ["cancer-cell-line-encyclopedias"], kind: "technology", name: "CRISPR functional genomics", sections: ["drug-discovery"], status: "established", asOf,
+    id: "crispr-screens", related: ["cancer-cell-line-encyclopedias", "immune-tumour-coculture-models"], aka: ["genome-wide CRISPR screens", "genome-scale CRISPR knockout screens", "pooled CRISPR screens", "CRISPR knockout screens"], kind: "technology", name: "CRISPR functional genomics", sections: ["drug-discovery"], status: "established", asOf,
     tldr: "Knocking out every gene one at a time in cancer cells to find which ones they cannot live without.",
     summary: "CRISPR functional genomics uses pooled sgRNA libraries to knock out, activate, or base-edit every gene in cancer cells, then reads depletion or enrichment by sequencing to find which genes the cells cannot live without. Genome-wide screens across more than 1,000 cell lines (DepMap, Sanger Project Score) map cancer dependencies and synthetic-lethal pairs such as PRMT5/MTAP and WRN/MSI, several of which have become drug programmes. In vivo and immune co-culture screens find immunotherapy resistance genes. The output is a systematic, unbiased dependency map, though cell line artefacts and context specificity mean hits need validation in patient-relevant models. The simple version is a way to test every gene at once and ask which ones a cancer depends on.",
     principle: "Pooled sgRNA libraries; depletion or enrichment measured by sequencing.",
     strengths: ["Systematic, unbiased dependency maps"],
     limitations: ["Cell line artefacts; context specificity"],
-    technologies: ["synthetic-lethality-approaches"], links: [{ label: "Defining a Cancer Dependency Map: which genes each cancer cell line cannot live without (Cell 2017)", url: "https://doi.org/10.1016/j.cell.2017.06.010" }], companies: ["algen-biotechnologies", "tango-therapeutics", "light-horse-therapeutics"],
+    technologies: ["synthetic-lethality-approaches"], links: [{ label: "Defining a Cancer Dependency Map: which genes each cancer cell line cannot live without (Cell 2017)", url: "https://doi.org/10.1016/j.cell.2017.06.010" }, { label: "Shalem et al. 2014, Science: genome-scale CRISPR-Cas9 knockout screening in human cells", url: "https://doi.org/10.1126/science.1247005" }, { label: "Wang et al. 2014, Science: genetic screens in human cells using the CRISPR-Cas9 system", url: "https://doi.org/10.1126/science.1246981" }], companies: ["algen-biotechnologies", "tango-therapeutics", "light-horse-therapeutics"],
   },
 
   // ======================= PREVENTION =======================
@@ -1099,7 +1099,7 @@ export const technologies: TechnologyInput[] = [
 
   // ======================= Areas from the Prometheus technology map that OnCo lacked (15 Sept 2026) =======================
   {
-    id: "spatial-transcriptomics", companies: ["navignostics", "vicinity-bio"], dependsOn: ["spatial-biology-instruments", "rna-seq"], kind: "technology", name: "Spatial transcriptomics", sections: ["diagnostics","drug-discovery"], status: "emerging", asOf, wikipedia: W("Spatial_transcriptomics"),
+    id: "spatial-transcriptomics", related: ["htan"], companies: ["navignostics", "vicinity-bio"], dependsOn: ["spatial-biology-instruments", "rna-seq"], kind: "technology", name: "Spatial transcriptomics", sections: ["diagnostics","drug-discovery"], status: "emerging", asOf, wikipedia: W("Spatial_transcriptomics"),
     tldr: "Methods that read which genes are switched on in each spot or cell of a tumour slice while keeping the tissue's geography, so scientists can see how cancer, immune and stromal cells sit next to one another.",
     summary: "Spatial transcriptomics measures gene expression across a tissue section without losing position. Sequencing-based platforms capture RNA on barcoded spots (10x Genomics Visium), while imaging-based platforms read hundreds to thousands of RNA species in place at single-cell resolution (MERFISH, 10x Xenium, NanoString CosMx). In oncology it maps the tumour microenvironment, immune exclusion and clonal territories, and it underpins atlases such as the Human Tumor Atlas Network.",
     principle: "Tissue sections are either overlaid on barcoded capture arrays whose oligonucleotides record position before sequencing, or hybridised with fluorescent probes read out over many imaging rounds with combinatorial barcodes.",
@@ -1109,7 +1109,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Spatial_transcriptomics") }],
   },
   {
-    id: "imaging-mass-cytometry", companies: ["navignostics"], kind: "technology", name: "Imaging mass cytometry", sections: ["diagnostics"], status: "emerging", asOf, wikipedia: W("Mass_cytometry"),
+    id: "imaging-mass-cytometry", companies: ["navignostics", "ionpath"], kind: "technology", name: "Imaging mass cytometry", sections: ["diagnostics"], status: "emerging", asOf, wikipedia: W("Mass_cytometry"),
     tldr: "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
     summary: "Imaging mass cytometry (Standard BioTools Hyperion) and multiplexed ion beam imaging (MIBI) label antibodies with rare-earth metal isotopes instead of fluorophores, then ablate the tissue pixel by pixel and read the metals by mass spectrometry. Forty or more markers can be measured on one section without spectral overlap, letting researchers phenotype immune and tumour cells in place and quantify their spatial relationships.",
     principle: "Metal-isotope-tagged antibodies bind the section; a laser or ion beam vaporises each pixel and time-of-flight mass spectrometry counts the isotopes, building one image per marker.",
@@ -1129,7 +1129,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Immunofluorescence") }],
   },
   {
-    id: "ai-pathology-scoring", tags: ["precision"], companies: ["vicinity-bio", "acurion", "imagenomix"], dependsOn: ["digital-pathology-ai"], kind: "technology", name: "AI scoring of biomarkers and grade on pathology slides", sections: ["diagnostics","ai-computation"], status: "approved", asOf, since: 2021, wikipedia: W("Digital_pathology"),
+    id: "ai-pathology-scoring", related: ["ai-mitosis-detection"], tags: ["precision"], companies: ["vicinity-bio", "acurion", "imagenomix"], dependsOn: ["digital-pathology-ai"], kind: "technology", name: "AI scoring of biomarkers and grade on pathology slides", sections: ["diagnostics","ai-computation"], status: "approved", asOf, since: 2021, wikipedia: W("Digital_pathology"),
     tldr: "Software that reads digitised biopsy slides to detect cancer, grade it, and score biomarkers such as HER2, PD-L1 and Ki-67 more consistently than the eye alone.",
     summary: "Deep-learning models trained on whole-slide images now detect prostate cancer in biopsies (Paige Prostate, the first FDA-authorised AI pathology tool, 2021), assist Gleason grading, count mitoses, and quantify immunohistochemistry such as HER2, PD-L1 and Ki-67, where pathologist agreement is known to be poor at the decision thresholds. Newer models infer molecular states, such as microsatellite instability, directly from routine H&E slides.",
     principle: "Convolutional or transformer networks trained on annotated whole-slide images produce per-region probabilities that are aggregated into detections, grades or scores presented to the pathologist.",
@@ -1149,7 +1149,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Radiomics") }],
   },
   {
-    id: "ctc-capture", related: ["cellsearch-ctc-count", "parsortix-ctc-harvest"], companies: ["menarini-silicon-biosystems", "angle-plc", "cnside-diagnostics", "rgcc-international", "cancertain", "cytoastra", "screencell"], kind: "technology", name: "Circulating tumour cell capture", sections: ["diagnostics","early-detection"], status: "approved", asOf, since: 2004, wikipedia: W("Circulating_tumor_cell"),
+    id: "ctc-capture", related: ["cellsearch-ctc-count", "parsortix-ctc-harvest"], companies: ["menarini-silicon-biosystems", "angle-plc", "cnside-diagnostics", "rgcc-international", "cancertain", "cytoastra", "screencell", "rarecyte"], kind: "technology", name: "Circulating tumour cell capture", sections: ["diagnostics","early-detection"], status: "approved", asOf, since: 2004, wikipedia: W("Circulating_tumor_cell"),
     tldr: "Fishing whole cancer cells out of a blood sample to count them or study them; the count is prognostic in breast, prostate and colorectal cancer.",
     summary: "Circulating tumour cells (CTCs) are rare cells shed by tumours into blood, roughly one per billion blood cells. The CellSearch system, cleared by the FDA in 2004, enriches them by EpCAM antibody capture and counts them; higher counts predict shorter survival in metastatic breast, prostate and colorectal cancer. Microfluidic and size-based methods capture EpCAM-negative cells, and single CTC sequencing and culture are used in research; CTC counts have not yet changed treatment in randomised trials.",
     principle: "Immunomagnetic or microfluidic enrichment of cells by surface antigen, size or deformability, followed by staining and enumeration or molecular analysis.",
@@ -1309,7 +1309,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Bispecific_monoclonal_antibody") }],
   },
   {
-    id: "dendritic-cell-vaccines", trials: ["nct07146672", "nct05261750"], aka: ["Dendritic cell vaccine", "DC vaccine"], institutions: ["immunocine"], companies: ["argos-therapeutics", "medigene", "tricision-biotherapeutics"], dependsOn: ["apheresis-starting-material", "cell-therapy-release-testing"], kind: "technology", name: "Dendritic cell vaccines", sections: ["immunotherapy"], status: "approved", asOf, since: 2010, wikipedia: W("Sipuleucel-T"),
+    id: "dendritic-cell-vaccines", terms: ["dendritic-cell-cross-presentation"], trials: ["nct07146672", "nct05261750"], aka: ["Dendritic cell vaccine", "DC vaccine"], institutions: ["immunocine"], companies: ["argos-therapeutics", "medigene", "tricision-biotherapeutics"], dependsOn: ["apheresis-starting-material", "cell-therapy-release-testing"], kind: "technology", name: "Dendritic cell vaccines", sections: ["immunotherapy"], status: "approved", asOf, since: 2010, wikipedia: W("Sipuleucel-T"),
     tldr: "Vaccines made from a patient's own antigen-presenting cells loaded with tumour proteins; sipuleucel-T for prostate cancer was the first approved, and newer versions are tested in brain and other cancers.",
     summary: "Dendritic cells present antigens to T cells. Sipuleucel-T, approved in 2010 for metastatic castration-resistant prostate cancer, loads the patient's antigen-presenting cells with a prostatic acid phosphatase fusion protein and reinfuses them, prolonging survival modestly. Later dendritic cell vaccines pulsed with tumour lysate or RNA have reached phase 3 in glioblastoma and are combined with checkpoint inhibitors, while off-the-shelf approaches try to target dendritic cells inside the body.",
     principle: "Leukapheresis harvests monocytes, which are matured into dendritic cells, loaded with antigen and reinfused to prime tumour-specific T cells.",
@@ -1339,7 +1339,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Gamma_delta_T_cell") }],
   },
   {
-    id: "nk-cell-therapy", companies: ["senti-biosciences", "zelluna"], trials: ["nct04616209", "nct06687681", "nct06730009"], dependsOn: ["cell-therapy-cold-chain", "cell-therapy-release-testing"], kind: "technology", name: "NK cell therapy and CAR-NK", sections: ["cell-therapy"], status: "phase-2", asOf, wikipedia: W("Natural_killer_cell"),
+    id: "nk-cell-therapy", companies: ["senti-biosciences", "zelluna", "celularity"], trials: ["nct04616209", "nct06687681", "nct06730009"], dependsOn: ["cell-therapy-cold-chain", "cell-therapy-release-testing"], kind: "technology", name: "NK cell therapy and CAR-NK", sections: ["cell-therapy"], status: "phase-2", asOf, wikipedia: W("Natural_killer_cell"),
     tldr: "Infusions of natural killer cells from donors or cord blood, sometimes fitted with a CAR, offering an off-the-shelf alternative to CAR-T with less cytokine release.",
     summary: "Natural killer cells kill cancer cells without prior sensitisation and do not cause graft-versus-host disease, so donor-derived, cord-blood or iPSC-derived NK products can be made off the shelf. CAR-NK cells against CD19 produced responses in lymphoma in early trials with little cytokine release syndrome or neurotoxicity, and cytokine-induced memory-like NK cells are tested in leukaemia. Limited persistence and expansion in patients remain the central problems.",
     principle: "NK cells from a donor, cord blood or a pluripotent stem cell line are expanded, optionally engineered with a CAR and interleukin-15, and infused after lymphodepletion.",
@@ -1549,7 +1549,7 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Immortalised_cell_line") }],
   },
   {
-    id: "tumour-on-chip", kind: "technology", name: "Tumour-on-a-chip", sections: ["drug-discovery"], status: "emerging", asOf, wikipedia: W("Organ-on-a-chip"),
+    id: "tumour-on-chip", companies: ["mimetas"], kind: "technology", name: "Tumour-on-a-chip", sections: ["drug-discovery"], status: "emerging", asOf, wikipedia: W("Organ-on-a-chip"),
     tldr: "Small microfluidic devices that grow tumour cells with blood-vessel-like channels and immune cells, letting researchers watch drugs act in a more life-like setting than a dish.",
     summary: "Tumour-on-a-chip devices culture cancer cells, stromal cells and endothelium in microfluidic channels with flow, gradients and mechanical cues, recreating aspects of the tumour microenvironment such as perfusion, hypoxia and immune cell infiltration. They are used to study metastasis, drug penetration and T-cell or CAR-T killing, and the FDA's acceptance of organ-chip data in place of some animal tests has increased interest. Standardisation, throughput and validation against clinical outcomes remain open problems.",
     principle: "Cells are seeded into patterned hydrogel channels in a polymer chip, perfused by pumps, and imaged over days to measure growth, invasion and drug response.",

@@ -225,7 +225,7 @@ const frontierRadical: EntityInput[] = [
     limitations: ["Mechanism is not settled", "Mostly palliative, single-arm evidence", "No consensus on vertex spacing or dose"],
     technologies: ["imrt-igrt", "sbrt", "checkpoint-inhibitor"], terms: ["abscopal-effect"],
     tags: ["frontier", "promising"],
-    links: [{ label: "MSK spatially fractionated RT (NCT05837767)", url: "https://clinicaltrials.gov/study/NCT05837767" }, { label: "Randomised SFRT vs conventional RT (NCT06980259)", url: "https://clinicaltrials.gov/study/NCT06980259" }], related: ["frontier-2035"],
+    links: [{ label: "MSK spatially fractionated RT (NCT05837767)", url: "https://clinicaltrials.gov/study/NCT05837767" }, { label: "Randomised SFRT vs conventional RT (NCT06980259)", url: "https://clinicaltrials.gov/study/NCT06980259" }], related: ["frontier-2035", "microbeam-radiotherapy"],
   },
   {
     id: "auger-electron-therapy", trials: ["nct04807257"], kind: "technology", name: "Auger-electron therapy", sections: ["radiopharma"], status: "preclinical", asOf: RAD,
@@ -443,7 +443,7 @@ const frontierRadical: EntityInput[] = [
     principle: "A model predicts each participant's counterfactual outcome under control therapy; the prediction is used as a covariate or replaces part of the control arm.",
     strengths: ["Fewer patients randomised to the inferior arm", "Faster, cheaper trials in rare subgroups", "Uses data already collected"],
     limitations: ["Bias when standard of care changes between eras", "Regulatory acceptance is case by case", "Model failure is invisible without a real control arm"],
-    technologies: ["ai-trial-matching", "pathology-foundation-model"], terms: ["real-world-evidence", "basket-umbrella-platform"], companies: ["tempus", "owkin", "foundation-medicine"],
+    technologies: ["ai-trial-matching", "pathology-foundation-model"], terms: ["real-world-evidence", "basket-umbrella-platform"], companies: ["tempus", "owkin", "foundation-medicine", "concr"],
     tags: ["frontier", "promising"],
     links: [{ label: "FDA guidance: externally controlled trials", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-design-and-conduct-externally-controlled-trials-drug-and-biological-products" }],
   },

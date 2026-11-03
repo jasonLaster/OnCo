@@ -22,8 +22,24 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch:universe
+      # Startup monitors (added 3 November 2026): portfolio pages, SEC S-1/F-1 filings, HKEX 18A, FDA and EMA orphan
+      # designations and NCI SBIR/STTR awards, each written to a review queue under .cache/ (ignored by git, so nothing
+      # reaches the pull request below). Their "not yet in OnCo" findings join the standing issue in the next step.
+      # A failure here never stops the refresh: the issue simply carries no monitor section that week.
+      - name: Startup monitors (review queue only)
+        continue-on-error: true
+        timeout-minutes: 15
+        run: npx tsx scripts/startup-monitors.ts --days=90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: startup-monitors
+          path: .cache/startup-monitors/
+          retention-days: 30
+          if-no-files-found: ignore
       # One standing issue lists what the refresh found that someone must act on: sources whose snapshot is going stale
-      # because the fetch failed (fetch-universe keeps the old copy and only logs it), and portfolio companies OnCo lacks.
+      # because the fetch failed (fetch-universe keeps the old copy and only logs it), portfolio companies OnCo lacks,
+      # and (since 3 November 2026) what the startup monitors above found that no company record matches.
       # Added 1 November 2026, after Even One's page changed shape and two weeks of failed reads went unnoticed.
       - name: Report what needs a person
         env:

@@ -56,6 +56,8 @@ import { ideaLinksWave6 } from "./idea-links-wave6";
 import { companyDrugsWave6, trialCompaniesWave6 } from "./company-drugs-wave6";
 import { SUPPORTIVE_DRUGS } from "./supportive-drugs";
 import { ACCELERATED_APPROVALS, ACCELERATED_READ_ON } from "./accelerated-approvals";
+import { CDX_FDA_ROWS } from "./cdx-fda-rows";
+import { FDA_OCE_EVENTS } from "./fda-oce-events";
 import { mergeAcceleratedEvents } from "@/lib/accelerated";
 import { TARGET_FIRST_DESCRIBED } from "./target-first-described";
 import { firstDescribedSource } from "@/lib/first-described";
@@ -140,6 +142,7 @@ import { targetsImmuneMarkers } from "./targets-immune-markers";
 import { targetSpecificity } from "./target-specificity";
 import { targetsReaderEdits } from "./targets-reader-edits";
 import { drugsEmaWave } from "./drugs-ema-wave";
+import { drugsUniverseGaps } from "./drugs-universe-gaps";
 import { companiesSponsorsWave } from "./companies-sponsors-wave";
 import { companiesCooperativeGroups, cooperativeGroupTrialCompanies } from "./companies-cooperative-groups";
 import { companiesCooperativeGroupsMigrated } from "./companies-cooperative-groups-migrated";
@@ -338,7 +341,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
-  ...targetsWaveSoc, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...companiesSponsorsWave,
+  ...targetsWaveSoc, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
   ...pipelineTrialsWave2,
@@ -408,6 +411,25 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // it, keyed to each other by the agency's indication text. A hand-written event on the same date and type wins.
   if (e.kind === "drug" && ACCELERATED_APPROVALS[e.id]) {
     e = { ...e, regulatoryEvents: mergeAcceleratedEvents(e.regulatoryEvents ?? [], ACCELERATED_APPROVALS[e.id], ACCELERATED_READ_ON) as DrugInput["regulatoryEvents"] };
+  }
+  // FDA oncology approval notifications since 2020 (scripts/build-fda-oce-events.ts, src/data/fda-oce-events.ts): each
+  // becomes a dated United States event on the product it names, unless the record already dates that approval itself
+  // (a United States approval, accelerated approval, conversion or label change within seven days; sixteen when the
+  // record gives only a month). Hand-written and accelerated-table events win.
+  if (e.kind === "drug" && FDA_OCE_EVENTS[e.id]) {
+    const own = e.regulatoryEvents ?? [];
+    const dated = (d: string) => Date.parse(/^\d{4}-\d{2}$/.test(d) ? `${d}-15` : d.slice(0, 10));
+    const covered = (date: string) => own.some((ev) => /^(US|USA|United States|FDA)$/i.test(ev.region) && ["approval", "accelerated-approval", "conversion", "label-change"].includes(ev.type) && Math.abs(dated(ev.date) - dated(date)) <= (/^\d{4}-\d{2}$/.test(ev.date) ? 16 : 7) * 86_400_000);
+    const add = FDA_OCE_EVENTS[e.id].filter((ev) => !covered(ev.date));
+    if (add.length) e = { ...e, regulatoryEvents: [...own, ...add].sort((a, b) => a.date.localeCompare(b.date)) as DrugInput["regulatoryEvents"] };
+  }
+  // FDA companion diagnostic rows a readout did not carry (src/data/cdx-fda-rows.ts), appended after its own; a row it
+  // already holds for the same device, PMA number and drugs is not repeated.
+  if (e.kind === "biomarker" && CDX_FDA_ROWS[e.id]) {
+    const own = e.companionDiagnostics ?? [];
+    const key = (c: { device: string; pma?: string; drugs?: string[] }) => `${c.device.toLowerCase()}|${c.pma ?? ""}|${[...(c.drugs ?? [])].sort().join(",")}`;
+    const have = new Set(own.map(key));
+    e = { ...e, companionDiagnostics: [...own, ...CDX_FDA_ROWS[e.id].filter((c) => !have.has(key(c)))] };
   }
   // Immune members of the checkpoint map (src/data/checkpoint-map.ts) carry the immune-checkpoint role, whichever file owns the record.
   if (e.kind === "target" && IMMUNE_CHECKPOINT_TARGET_IDS.has(e.id) && !(e.role ?? []).includes("immune-checkpoint")) e = { ...e, role: [...(e.role ?? []), "immune-checkpoint"] };

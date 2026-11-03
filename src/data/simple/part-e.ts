@@ -152,7 +152,7 @@ export const simpleE: Record<string, string> = {
   "mrna-translation-eif4f": "Cancer cells must make protein very fast, and the eIF4F complex that starts protein building is a funnel where growth signals meet, so drugs pinching it starve the tumour.",
   "circadian-control": "Cells run on a 24-hour clock that times division, DNA repair and drug processing, so the time of day a drug is given can change how well it works.",
   "microbiome-tumour": "The bacteria in the gut and even inside tumours influence whether cancer starts and whether immune drugs work, and stool transplants from responders have made some non-responders respond.",
-  "cancer-neuroscience": "Cancer neuroscience studies how tumours talk to nerves, which grow into tumours and feed them signals, and cutting that conversation with common drugs like beta-blockers is now being tested.",
+  "cancer-neuroscience": "Cancer neuroscience studies how the brain, nerves and tumours signal to one another. Mouse studies have traced brain-to-cancer circuits, but they have not shown that stress causes human cancer or that anxiety medicines treat it.",
   "cachexia-biology": "Cancer cachexia is wasting caused by tumour signals that switch off appetite and burn muscle and fat, and the first drug to reverse it, ponsegromab, showed weight gain.",
   "clonal-haematopoiesis": "As we age, blood stem cells with cancer-like mutations quietly expand in most people, raising leukaemia and heart disease risk and confusing blood tests that look for cancer DNA.",
   "field-cancerisation": "Cancer often arises from a patch of tissue already carrying mutations rather than one rogue cell, so sun-exposed skin and smokers' airways are mutant patchworks before a tumour appears.",

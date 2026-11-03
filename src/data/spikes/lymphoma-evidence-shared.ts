@@ -51,6 +51,9 @@ export const CX = {
   nlphl: "nodular-lymphocyte-predominant-hodgkin-lymphoma",
   hiv: "hiv-associated-lymphoma",
   ptld: "post-transplant-lymphoproliferative-disorder",
+  // Added 3 November 2026, once facet A's entity records existed (./lymphoma-evidence-entities.ts).
+  enktl: "extranodal-nk-t-cell-lymphoma",
+  atll: "adult-t-cell-leukaemia-lymphoma",
 } as const;
 
 /**
@@ -58,6 +61,10 @@ export const CX = {
  * facet A of the deep dive owns. They are written out in words and attached to the nearest existing record
  * (usually `peripheral-t-cell-lymphoma` or `non-hodgkin-lymphoma`) rather than linked to an id that does not
  * exist, which would fail the build. Wire them once facet A's records land.
+ *
+ * 3 November 2026: the first five now have records and are wired. SMILE, JCOG9801 and their papers point at the
+ * entity pages directly, and ./lymphoma-evidence-entities.ts attaches the rest. Transformed follicular lymphoma
+ * still has no record of its own; it is described on `follicular-lymphoma` and `dlbcl`.
  */
 export const PENDING_CANCERS = [
   "extranodal NK/T-cell lymphoma, nasal type",

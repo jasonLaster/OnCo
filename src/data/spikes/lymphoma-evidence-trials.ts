@@ -16,8 +16,9 @@ import { CX, ct, doi, link, trial } from "./lymphoma-evidence-shared";
  * exist by those ids; ELM-2, ECHELON-3, inMIND and ECHO exist under their registry ids
  * (REGISTRY_ID_TRIALS in ./lymphoma-evidence-shared.ts) and are supplemented in ./lymphoma-evidence.ts.
  *
- * Diseases with no cancer record yet (extranodal NK/T-cell lymphoma, adult T-cell leukaemia/lymphoma) are named
- * in words and attached to the nearest record that exists; facet A owns those pages.
+ * Extranodal NK/T-cell lymphoma and adult T-cell leukaemia/lymphoma had no cancer record when this file was
+ * written, so SMILE and JCOG9801 were attached to the peripheral T-cell lymphoma hub. Both now link to their own
+ * entity pages as well (3 November 2026; ./lymphoma-evidence-entities.ts holds the trials added beside them).
  */
 
 // ======================= AGGRESSIVE B-CELL LYMPHOMA =======================
@@ -416,7 +417,7 @@ export const lymphomaTcellTrials: TrialInput[] = [
       { endpoint: "Overall survival at 3 years", unit: "%", arms: [{ name: "VCAP-AMP-VECP", value: 24 }, { name: "Biweekly CHOP", value: 13 }], p: "0.085 one-sided, 0.169 two-sided" },
     ],
     replication: "Never repeated; no second randomised trial has been run exclusively in this disease.",
-    cancers: [CX.ptcl, CX.nhl], drugs: ["vincristine", "cyclophosphamide", "doxorubicin", "prednisone", "etoposide", "carboplatin"],
+    cancers: [CX.atll, CX.ptcl, CX.nhl], drugs: ["vincristine", "cyclophosphamide", "doxorubicin", "prednisone", "etoposide", "carboplatin"],
     terms: ["lymphoma-tx-cns-prophylaxis", "complete-response", "intrathecal-therapy"],
     sections: ["chemotherapy"], bottlenecks: ["b-rare-cancers", "b-global-access", "b-trial-enrolment"],
     keyPapers: ["paper-jcog9801-vcap-amp-vecp-adult-t-cell-leukaemia-jco-2007"],
@@ -435,10 +436,11 @@ export const lymphomaTcellTrials: TrialInput[] = [
       { endpoint: "Overall survival at 1 year", unit: "%", arms: [{ name: "SMILE", n: 38, value: 55, note: "95 per cent confidence interval 38 to 69" }] },
     ],
     replication: "Asparaginase-based regimens have since been compared with each other in Chinese and Korean trials; the principle that anthracyclines fail and asparaginase works has held.",
-    cancers: [CX.ptcl, CX.nhl], drugs: ["dexamethasone", "methotrexate", "ifosfamide", "asparaginase", "etoposide"],
+    cancers: [CX.enktl, CX.ptcl, CX.nhl], drugs: ["dexamethasone", "methotrexate", "ifosfamide", "asparaginase", "etoposide"],
     terms: ["orr", "complete-response", "autologous-transplant"],
     sections: ["chemotherapy"], bottlenecks: ["b-rare-cancers", "b-global-access"],
-    keyPapers: ["paper-smile-chemotherapy-nk-t-cell-lymphoma-jco-2011"],
+    trials: ["ddgp-vs-smile-enktl"],
+    keyPapers: ["paper-smile-chemotherapy-nk-t-cell-lymphoma-jco-2011", "paper-ddgp-vs-smile-nk-t-cell-lymphoma-jama-oncol-2022"],
     links: [doi("10.1200/JCO.2011.35.6287", "Journal of Clinical Oncology 2011")] }),
 ];
 

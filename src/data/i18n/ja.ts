@@ -867,7 +867,7 @@ export const tldr_ja: Record<string, string> = {
   "etop-ibcsg": "ベルンに拠点を置く財団で、International Breast Cancer Study Group（SOFT、TEXT、POSITIVE）とEuropean Thoracic Oncology Platformを一つにまとめている。",
   "euramos-1": "2大陸4つの共同研究グループにまたがる、史上最大の骨肉腫試験である。反応良好例へのインターフェロン追加も、反応不良例へのifosfamideとetoposide追加も転帰を改善せず、3剤併用のMAP化学療法が標準のまま残り、この分野は新しい生物学へと向かった。",
   "ev-302": "進行膀胱がんの生存期間をほぼ2倍にし、40年続いたプラチナ製剤による化学療法の標準治療としての時代を終わらせた。",
-  "exact-sciences": "Exact SciencesはCologuardとOncotype DXを製造し、Cancerguard MCEDとOncodetect MRDを発売しつつある。同社はAbbottによって210億ドルで買収される予定である。",
+  "exact-sciences": "Exact SciencesはCologuardとOncotype DXを製造し、Cancerguard MCEDとOncodetect MRDを発売しつつある。Abbottは2026年3月23日に同社の買収を完了した。",
   "exercise-during-chemotherapy": "化学療法中の適度な運動は安全であり、疲労を減らし、予定された投与量を完了する助けとなり、心臓や神経を守る可能性もある。",
   "extrinsic-apoptosis-death-receptors": "免疫細胞は接触によって殺す。標的細胞にFASリガンドやTRAILを提示し、標的細胞のデスレセプターが外側から内側へ自己破壊を引き起こすのである。腫瘍はこれらの受容体を欠失させたり、おとり分子や阻害分子を過剰に作ったりして、この配線を切断する。",
   "fap-2286": "FAPを標的とするセラノスティクスの一対で、一方はほぼあらゆる固形腫瘍を画像化し、もう一方は放射線で治療する。",

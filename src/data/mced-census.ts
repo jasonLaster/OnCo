@@ -20,6 +20,14 @@
  * - Each test carries `evidence:<grade>` on the src/data/complementary.ts scale for the claim that matters to a
  *   reader: that taking the test reduces late-stage diagnosis or cancer deaths. The reason is the first note.
  *   The grades agree with the precision matrix row `mced-screening-precision`, which grades the class insufficient.
+ *
+ * Second pass, 3 November 2026 (owner: "make sure we max out coverage on the MCED"): China, Hong Kong, Taiwan and
+ * India, ClinicalTrials.gov for the one Chinese study missed, and FDA Breakthrough and CE sweeps. PubMed was searched by
+ * company affiliation (Haplox, AnchorDx, Berry Oncology, BGI, Genetron, Geneplus, Genecast, Singlera, Burning Rock,
+ * Datar, PredOmix, Epigeneres and others) and by title for multi-cancer detection with Chinese, Hong Kong, Taiwanese
+ * and Indian affiliations. Company figures were read from the company's own release. What could not be reached is
+ * listed in the hub's notes (technologies.ts, `mced`): ChiCTR and the NMPA database refuse scripted access, and
+ * EUDAMED was not searched.
  */
 import type { PaperInput } from "@/lib/schema";
 
@@ -28,6 +36,8 @@ const DOI = (label: string, doi: string) => ({ label, url: `https://doi.org/${do
 const PUBMED = (pmid: string) => ({ label: "PubMed", url: `https://pubmed.ncbi.nlm.nih.gov/${pmid}/` });
 const ct = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https://clinicaltrials.gov/study/${nct}` });
 const p = (x: Omit<PaperInput, "kind" | "asOf">): PaperInput => ({ kind: "paper", asOf, sections: ["early-detection"], ...x });
+const pass2 = "2026-11-03";
+const p2 = (x: Omit<PaperInput, "kind" | "asOf">): PaperInput => ({ ...p(x), asOf: pass2 });
 
 // =====================================================================================================
 // PAPERS (each resolved on Europe PMC by DOI, abstract read 29 October 2026)
@@ -295,4 +305,77 @@ export const mcedPapers: PaperInput[] = [
     caveats: ["Prospective results are preliminary.", "The abstract does not name a commercial product."],
     links: [DOI("Nature Medicine 2025", "10.1038/s41591-025-03735-2"), PUBMED("40425843")],
     technologies: ["mced", "fragmentomics"], journals: ["nature-medicine"] }),
+
+  // ---- Second pass, 3 November 2026: China, Taiwan and India. Europe PMC's search service returned 503 throughout,
+  // so each paper below was found through PubMed (E-utilities), its abstract and affiliations read there, and its DOI
+  // resolved through Crossref.
+  p2({ id: "paper-inspector-geneplus-cancer-commun-2025", name: "The INSPECTOR study: enhanced feasibility for clinical translation of a multi-cancer early detection method based on enzyme-assisted high signal-to-noise ratio sequencing of methylated circulating tumor DNA",
+    tldr: "A Chinese study with Geneplus-Beijing of a methylation blood test for eight cancers that found about eight in ten cancers, and about two in three stage I cancers, in people already diagnosed, at 99% specificity.",
+    summary: "Luo and colleagues (Sun Yat-sen University Cancer Center with Geneplus-Beijing) built a targeted panel of 155,362 methylated CpG sites, read by enzyme-assisted (human TET) methylation sequencing rather than bisulphite conversion, for eight cancers: lung, breast, colorectum, liver, oesophagus, stomach, pancreas and ovary. In multicentre case-control cohorts (1,071 participants for training, 581 for validation and 824 for independent validation) the test had 99.0% specificity and 81.9% sensitivity in the independent validation set. Sensitivity was 65.5% at stage I and 79.7% at stage II. The top predicted cancer origin was right in 87.4% in independent validation (94.5% within the top two).",
+    journal: "Cancer Communications", year: 2025, doi: "10.1002/cac2.70071", pmid: "41165038", authors: "Luo HY, Wei W, Li P, Zhang QH, et al.", paperType: "observational", changedPractice: false,
+    findings: ["Independent validation: 99.0% specificity, 81.9% sensitivity.", "Stage I sensitivity 65.5%; stage II 79.7%.", "Top predicted origin correct in 87.4% (top two: 94.5%)."],
+    whatItMeans: "A stage I figure this high comes from a case-control design with known cancers; the same tests usually find far fewer early cancers when they meet people without symptoms.",
+    caveats: ["Case-control cohorts; no screening population, no positive predictive value.", "Six authors are Geneplus-Beijing employees."],
+    links: [DOI("Cancer Communications 2025: INSPECTOR", "10.1002/cac2.70071"), PUBMED("41165038")],
+    drugs: ["inspector-mced"], companies: ["geneplus"], institutions: ["sysucc"], technologies: ["mced", "cfdna-methylation-testing"], journals: ["cancer-communications"] }),
+
+  p2({ id: "paper-totem-genecast-bmc-cancer-2024", name: "TOTEM: a multi-cancer detection and localization approach using circulating tumor DNA methylation markers",
+    tldr: "Genecast's methylation blood test for seven cancers found about two in three cancers in a laboratory set at 98 to 100% specificity, and about half of early-stage cancers.",
+    summary: "Xiong and colleagues (Kunming Medical University with Genecast Biotechnology, Wuxi) ran enzymatic-conversion targeted methylation sequencing of plasma from 500 healthy controls and 733 patients with breast, colorectal, oesophageal, gastric, liver, lung or pancreatic cancer, plus an independent cohort of 143 controls and 179 liver or stomach cancer patients. The model used 57 diagnostic markers and 873 origin markers. Specificity was 100% in testing and 98.6% in independent validation; overall sensitivity was 67.3% and 55.9%; early-stage (I and II) sensitivity was 45.7% in testing. Among correctly detected cancers the top predicted origin was right in 77.7% (testing) and 76.0% (independent validation). The authors state that real-world performance needs a much larger prospective cohort.",
+    journal: "BMC Cancer", year: 2024, doi: "10.1186/s12885-024-12626-7", pmid: "39009999", authors: "Xiong D, Han T, Li Y, Hong Y, et al.", paperType: "observational", changedPractice: false,
+    findings: ["Testing cohort: 67.3% sensitivity at 100% specificity; independent validation: 55.9% at 98.6%.", "Stage I and II sensitivity 45.7% in testing.", "Top predicted origin correct in 76 to 78% of detected cancers."],
+    whatItMeans: "A company development study with known cancers; the authors themselves say it has to be tested prospectively.",
+    caveats: ["Case-control; independent validation covered only liver and stomach cancer.", "Genecast affiliation among authors."],
+    links: [DOI("BMC Cancer 2024: TOTEM", "10.1186/s12885-024-12626-7"), PUBMED("39009999")],
+    drugs: ["totem-genecast"], companies: ["genecast"], technologies: ["mced", "cfdna-methylation-testing"], journals: ["bmc-cancer"] }),
+
+  p2({ id: "paper-gutseer-guide-mol-cancer-2025", name: "GUIDE: a prospective cohort study for blood-based early detection of gastrointestinal cancers using targeted DNA methylation and fragmentomics sequencing",
+    tldr: "Singlera and Fudan University's GutSeer blood test for five digestive cancers found about eight in ten of them in a blinded test of 846 hospital patients, with about one false positive in eighteen people without cancer.",
+    summary: "Huang and colleagues (Zhongshan Hospital, Fudan University, with Singlera Genomics) designed GutSeer, a targeted bisulphite sequencing panel combining DNA methylation and fragment patterns for five gastrointestinal cancers (colorectal, oesophageal, gastric, liver and pancreatic). It was trained and validated on plasma from 1,057 cancer patients and 1,415 non-cancer controls; in validation the area under the curve was 0.950, with 82.8% sensitivity and 95.8% specificity (colorectal 92.2%, oesophageal 75.5%, gastric 65.3%, liver 92.9%, pancreatic 88.6%). The locked model was then tested blind in 846 inpatients and outpatients at five hospitals, including 198 stage I or II cancers and 63 advanced precancerous lesions: 81.5% sensitivity and 94.4% specificity for gastrointestinal cancers. Registered as NCT05431621.",
+    journal: "Molecular Cancer", year: 2025, doi: "10.1186/s12943-025-02367-x", pmid: "40468355", authors: "Huang A, Guo DZ, Su ZX, Zhong YS, et al.", paperType: "observational", changedPractice: false,
+    findings: ["Validation: 82.8% sensitivity, 95.8% specificity; gastric 65.3%, liver 92.9%.", "Blinded hospital test cohort of 846: 81.5% sensitivity, 94.4% specificity."],
+    whatItMeans: "Strong figures in hospital patients, but at about 94 to 96% specificity roughly one in twenty people without cancer would test positive, too many for screening healthy people without a second test.",
+    caveats: ["Hospital inpatients and outpatients, not a screening population.", "The abstract gives no stage I figure.", "Singlera Genomics staff among authors."],
+    links: [DOI("Molecular Cancer 2025: GUIDE (GutSeer)", "10.1186/s12943-025-02367-x"), PUBMED("40468355"), ct("NCT05431621")],
+    drugs: ["gutseer"], trials: ["guide-gutseer"], companies: ["singlera"], institutions: ["zhongshan-hospital-fudan", "city-of-hope"], technologies: ["mced", "cfdna-methylation-testing", "fragmentomics"], cancers: ["colorectal", "esophageal", "gastric", "hcc", "pancreatic"], journals: ["molecular-cancer"] }),
+
+  p2({ id: "paper-predomix-metabolome-cancer-rep-2024", name: "Development of a Serum Metabolome-Based Test for Early-Stage Detection of Multiple Cancers",
+    tldr: "PredOmix, an Indian company, reported that a blood test reading thousands of small molecules by mass spectrometry told 30 cancers from no cancer with about 98% accuracy in 6,445 people; the paper gives few further details.",
+    summary: "Nagarkar and colleagues (HCG cancer centres with PredOmix Technologies, Gurugram) profiled serum metabolites by untargeted liquid chromatography and high-resolution mass spectrometry and applied the company's machine-learning algorithm in an investigator-initiated trial of 6,445 participants, cancer patients and non-cancer volunteers (CTRI/2023/03/050316). The abstract reports that the platform detected 30 cancers in women and men with an average accuracy of about 98%, and that accuracy did not vary across the four stages. It builds on the company's earlier test for 15 cancers in women (Gupta et al., Scientific Reports 2023).",
+    journal: "Cancer Reports", year: 2024, doi: "10.1002/cnr2.70042", pmid: "39559978", authors: "Nagarkar R, Gopichand M, Pal SK, Gupta A, et al.", paperType: "observational", participants: 6445, changedPractice: false,
+    findings: ["30 cancers; average accuracy about 98% in 6,445 participants.", "Accuracy reported as unchanged across stages I to IV."],
+    whatItMeans: "The abstract gives an average accuracy but no sensitivity at a stated specificity, no numbers of cancers by type or stage and no screening result; accuracy this high in early cancers has not been reproduced by any other multi-cancer test and needs independent confirmation.",
+    caveats: ["Case-control design with known cancers.", "No sensitivity, specificity or positive predictive value in the abstract.", "Five authors are PredOmix employees and a co-founder holds stock; the work is covered by a patent filing."],
+    links: [DOI("Cancer Reports 2024", "10.1002/cnr2.70042"), PUBMED("39559978"), DOI("Gupta et al., Scientific Reports 2023 (15 cancers in women)", "10.1038/s41598-023-46553-7")],
+    drugs: ["oncoveryx"], companies: ["predomix"], technologies: ["mced"], journals: ["cancer-reports"] }),
+
+  p2({ id: "paper-hrc-test-oct4a-stem-cell-rev-2021", name: "Quest for Pan-Cancer Diagnosis/Prognosis Ends with HrC Test Measuring Oct4A in Peripheral Blood",
+    tldr: "Epigeneres, a Mumbai company, describes a blood test that scores the activity of an embryonic gene, OCT-4A, and claims it detects and stages any cancer; the paper is a description with case studies, not a validation study with accuracy figures.",
+    summary: "Tripathi and colleagues (Epigeneres Biotech, Mumbai) describe the HrC scale, which converts the fold change of OCT-4A expression in peripheral blood into a score from non-cancer (0 to 2) through inflammation, high risk and stages I to IV (above 40). The authors report an initial study in 120 known cancer patients, validation of the scale in 1,000 people (500 with and 500 without cancer) and ten case studies, and say the test can detect and classify solid tumours, blood cancers and sarcomas by stage. The abstract gives no sensitivity or specificity.",
+    journal: "Stem Cell Reviews and Reports", year: 2021, doi: "10.1007/s12015-021-10167-1", pmid: "33954878", authors: "Tripathi V, Bhartiya D, Vaid A, Chhabria S, et al.", paperType: "observational", participants: 1000, changedPractice: false,
+    findings: ["Scale from 0 to above 40 linked to non-cancer, inflammation, high risk and stages I to IV.", "Validation in 500 people with and 500 without cancer reported without accuracy figures in the abstract."],
+    whatItMeans: "A company's own account of its test, with no accuracy figures in the abstract; the claim that one marker detects and stages every cancer has not been independently tested.",
+    caveats: ["Company-authored; no sensitivity or specificity in the abstract.", "Case studies rather than a blinded diagnostic accuracy study."],
+    links: [DOI("Stem Cell Reviews and Reports 2021", "10.1007/s12015-021-10167-1"), PUBMED("33954878")],
+    drugs: ["hrc-test"], companies: ["epigeneres"], technologies: ["mced"] }),
+
+  p2({ id: "paper-onetest-algorithm-taiwan-cancers-2020", name: "Improving Multi-Tumor Biomarker Health Check-Up Tests with Machine Learning Algorithms",
+    tldr: "The Taiwanese study behind OneTest's algorithm: in 27,938 people having routine tumour-marker check-ups, a machine-learning score separated those later diagnosed with cancer only moderately well.",
+    summary: "Wang and colleagues (Chang Gung Memorial Hospital, Linkou, Taiwan, with 20/20 GeneSystems) developed sex-specific cancer screening algorithms and an organ-of-origin algorithm from tumour-marker values, age and sex of 27,938 asymptomatic people screened at a Taiwanese medical centre between May 2001 and April 2015, 342 of whom were later confirmed to have cancer, with external validation at a second centre. The area under the curve was 0.8736 for men and 0.6938 for women in external cross validation. The organ-system algorithm had 81.2% sensitivity and 64.9% specificity for men and 81.7% and 67.5% for women. The authors' disclosure states that 20/20 GeneSystems is commercialising the algorithms under the OneTest brand.",
+    journal: "Cancers", year: 2020, doi: "10.3390/cancers12061442", pmid: "32492934", authors: "Wang HY, Chen CH, Shi S, Chung CR, et al.", paperType: "observational", participants: 27938, changedPractice: false,
+    findings: ["Area under the curve in external validation: 0.87 for men, 0.69 for women.", "Organ-system algorithm: about 81% sensitivity at 65 to 68% specificity."],
+    whatItMeans: "An area under the curve of 0.69 for women is weak discrimination; the paper reports risk groups rather than a positive predictive value, so it does not show how many positive OneTest results are cancer.",
+    caveats: ["Retrospective real-world data from health check-ups, with only 342 cancers.", "Authors are affiliated with or own stock in 20/20 GeneSystems."],
+    links: [DOI("Cancers 2020", "10.3390/cancers12061442"), PUBMED("32492934"), DOI("Wu et al., Computers in Biology and Medicine 2022 (LSTM model on 163,174 people)", "10.1016/j.compbiomed.2022.105362")],
+    drugs: ["onetest"], companies: ["2020-biolabs"], institutions: ["chang-gung-memorial-hospital"], technologies: ["mced", "proteomics"], journals: ["cancers-mdpi"] }),
+
+  p2({ id: "paper-c-etac-one-year-risk-cancer-prev-res-2021", name: "Hallmark Circulating Tumor-Associated Cell Clusters Signify 230 Times Higher One-Year Cancer Risk",
+    tldr: "Datar Cancer Genetics followed people without symptoms for a year after its tumour-cell-cluster blood test and reported that those with a positive result were far more likely to be diagnosed with cancer.",
+    summary: "Ranade and colleagues (with Datar Cancer Genetics, Nashik) report one-year follow-up of the asymptomatic cohort from the company's earlier work (16,134 people, including 10,625 asymptomatic, among whom C-ETACs were found in 3.6%). People with detectable circulating ensembles of tumour-associated cells had a 230-fold higher one-year cancer risk than those without (P < 0.00001). In 4,419 symptomatic people later confirmed to have cancer, C-ETACs were detected in 4,101 (92.8%).",
+    journal: "Cancer Prevention Research", year: 2021, doi: "10.1158/1940-6207.CAPR-20-0322", pmid: "32958586", authors: "Ranade A, Bhatt A, Page R, Limaye S, et al.", paperType: "observational", changedPractice: false,
+    findings: ["C-ETAC-positive asymptomatic people: 230-fold higher one-year cancer risk.", "C-ETACs detected in 92.8% of 4,419 symptomatic people with confirmed cancer."],
+    whatItMeans: "A relative risk does not say what share of positive results turned out to be cancer; with about 3.6% of people without symptoms testing positive, most positives would still not be cancer in a screening population.",
+    caveats: ["The abstract gives no positive predictive value or count of cancers among positives.", "Datar Cancer Genetics staff among authors."],
+    links: [DOI("Cancer Prevention Research 2021", "10.1158/1940-6207.CAPR-20-0322"), PUBMED("32958586")],
+    drugs: ["trucheck-intelli"], companies: ["datar-cancer-genetics"], technologies: ["mced", "ctc-capture"], journals: ["cancer-prevention-research"] }),
 ];

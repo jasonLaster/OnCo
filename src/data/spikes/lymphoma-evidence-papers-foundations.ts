@@ -341,7 +341,7 @@ export const lymphomaVirusPapers: PaperInput[] = [
       "Sample sizes are small by modern standards, and the comparison areas were not matched for anything other than endemicity.",
     ],
     links: [doi("10.1073/pnas.78.10.6476", "Proceedings of the National Academy of Sciences 1981"), pubmed("7031654"), epmc("7031654")],
-    cancers: [CX.ptcl, CX.nhl], sections: ["prevention", "diagnostics"],
+    cancers: [CX.atll, CX.ptcl, CX.nhl], sections: ["prevention", "diagnostics"],
     bottlenecks: ["b-prevention-adoption", "b-global-access"], journals: ["pnas"],
     trials: ["jcog9801"],
     related: ["paper-poiesz-htlv-retrovirus-cutaneous-t-cell-lymphoma-pnas-1980", "lymphoma-roadmap"] }),

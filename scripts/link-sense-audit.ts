@@ -359,7 +359,10 @@ export function drugCancerFindings(c: Ctx): Finding[] {
     if ([...fam].some((f) => thresholds.has(`${d.id}|${f}`))) continue;
     if ([...c.linked(d, "pairing")].some((pid) => { const p = g.get(pid)!; return p.kind === "pairing" && (fam.has(p.a) || fam.has(p.b) || inFam(p.cancers)); })) continue;
     const famEnts = [...fam].map((f) => g.get(f)!).filter(Boolean);
-    const approvalText = norm(d.approvals.map((a) => a.indication).join(" ") + " " + d.regulatoryEvents.map((r) => `${r.indication ?? ""} ${r.note}`).join(" "));
+    // A payer's coverage decision pairs a laboratory test with a cancer as an approval pairs a medicine with one: most
+    // residual-disease tests are laboratory-developed and never reach the FDA, and Medicare MolDX coverage, recorded in
+    // the product's `access` rows, is what names the cancers they are used in (3 November 2026, the MRD test pages).
+    const approvalText = norm(d.approvals.map((a) => a.indication).join(" ") + " " + d.regulatoryEvents.map((r) => `${r.indication ?? ""} ${r.note}`).join(" ") + " " + d.access.map((a) => a.reimbursement ?? "").join(" "));
     if (famEnts.some((f) => c.names(f).some((v) => has(approvalText, v)))) continue;
     const textBoth = famEnts.some((f) => c.mentions(d, f)) || famEnts.some((f) => c.mentions(f, d));
     const cls = productClass(d);

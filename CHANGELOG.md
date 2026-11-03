@@ -7,6 +7,7 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 3 November 2026
+- The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
 - Cover brain-to-cancer neural circuit research
 - chore: draft change proposals that need review (#335)
 - chore: EU regional rows read from the EMA register pages (#334)
@@ -21,6 +22,9 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - chore: EU regional rows read from the EMA register pages (#328)
 
 ### 1 November 2026
+- The weekly universe refresh reads Even One's new page, and opens an issue for stale sources and portfolio companies OnCo lacks
+- To-do: country deep dives, wave 2
+- To-dos: Selvana, every source for new oncology startups, and a weekly watch for landmark cancer papers
 - chore: monthly identifier enrichment (HGNC, Wikidata) (#327)
 - chore: refresh HTA decisions and survival snapshots (#326)
 - chore: draft change proposals that need review (#325)

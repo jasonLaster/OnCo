@@ -7,9 +7,12 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 3 November 2026
+- Weekly watch for new oncology startups across fifteen sources and for landmark cancer papers, the Nature lung Treg interception paper, and the GLOBOCAN all-cancers note corrected to include non-melanoma skin cancer
 - 36 multi-cancer early detection tests, the Prometheus gaps filled (9 technologies, 18 companies, 2 drugs), and OpenOnco in the open-source catalogue
 - The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
 - Cover brain-to-cancer neural circuit research
+- A weekly landmark-paper watch proposes new oncology papers for review, and the Nature regulatory T cell interception paper is added
+- Startup monitors read portfolios, SEC filings, HKEX 18A, orphan designations and NCI small-business awards into the freshness issue
 - 36 multi-cancer early detection tests, the Prometheus gaps filled, rare lymphomas linked to their trials, sixteen companies brought up to date and imaging agents given approval rows
 - Add Selvana and Jiyu Bio, freshen sixteen large companies, name nine drugs' targets and give imaging agents regional approval rows
 - Lymphoma: trials and papers for the entity pages the taxonomy added, and two corrections

@@ -115,7 +115,7 @@ async function main() {
     apiUrl: API,
     year: YEAR,
     fetched: new Date().toISOString().slice(0, 10),
-    note: "Estimates, not registry counts. ASR = age-standardised rate per 100,000 (World standard population). Both sexes, all ages. Data cell = [new cases, incidence ASR, deaths, mortality ASR, cumulative risk to age 74 (%)]. Cancer code 39 = all cancers excluding non-melanoma skin cancer.",
+    note: "Estimates, not registry counts. ASR = age-standardised rate per 100,000 (World standard population). Both sexes, all ages. Data cell = [new cases, incidence ASR, deaths, mortality ASR, cumulative risk to age 74 (%)]. Cancer code 39 = all cancers (C00-97), including non-melanoma skin cancer; code 40 excludes it.",
     citation: "Ferlay J, Ervik M, Lam F, et al. Global Cancer Observatory: Cancer Today (version 1.1). Lyon: IARC; 2024.",
     cancers: cancerMeta,
     countries: result,

@@ -1028,7 +1028,7 @@ export const tldr_zh: Record<string, string> = {
   "etop-ibcsg": "总部位于伯尔尼的基金会，将International Breast Cancer Study Group（SOFT、TEXT、POSITIVE）与European Thoracic Oncology Platform联合在一起。",
   "euramos-1": "迄今规模最大的骨肉瘤试验，横跨两大洲的四个协作组。对反应良好者加用干扰素，或对反应不佳者加用ifosfamide和etoposide，都没有改善结局，因此三药MAP化疗仍是标准方案，该领域转向了新的生物学研究。",
   "ev-302": "使晚期膀胱癌的生存期几乎翻倍，终结了铂类化疗作为标准治疗的40年历史。",
-  "exact-sciences": "Exact Sciences生产Cologuard和Oncotype DX，并正在推出Cancerguard MCED和Oncodetect MRD；该公司正被Abbott以210亿美元收购。",
+  "exact-sciences": "Exact Sciences生产Cologuard和Oncotype DX，并正在推出Cancerguard MCED和Oncodetect MRD；Abbott已于2026年3月23日完成对该公司的收购。",
   "exercise-during-chemotherapy": "化疗期间进行适度运动是安全的，能减轻疲劳，帮助人们完成计划的剂量，并可能保护心脏和神经。",
   "extrinsic-apoptosis-death-receptors": "免疫细胞通过接触杀伤：它们向靶细胞呈递FAS配体或TRAIL，靶细胞的死亡受体随即由外向内触发自我毁灭。肿瘤通过删除这些受体或过量产生诱饵和阻断分子来切断这条线路。",
   "fda-approvals": "FDA的肿瘤学审批通知是关于哪些药物获批用于哪些适应证的官方记录。",

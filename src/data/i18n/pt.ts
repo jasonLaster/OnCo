@@ -1028,7 +1028,7 @@ export const tldr_pt: Record<string, string> = {
   "etop-ibcsg": "A fundação sediada em Berna que reúne o International Breast Cancer Study Group (SOFT, TEXT, POSITIVE) e a European Thoracic Oncology Platform.",
   "euramos-1": "O maior ensaio de osteossarcoma já realizado, em quatro grupos cooperativos de dois continentes. Nem acrescentar interferon para os bons respondedores nem acrescentar ifosfamida e etoposídeo para os maus respondedores melhorou os resultados, então a quimioterapia MAP de três medicamentos continuou sendo o padrão e o campo se voltou para a nova biologia.",
   "ev-302": "Quase dobrou a sobrevida no câncer de bexiga avançado, encerrando 40 anos de quimioterapia com platina como padrão.",
-  "exact-sciences": "A Exact Sciences fabrica o Cologuard e o Oncotype DX e está lançando o Cancerguard MCED e o Oncodetect MRD; está sendo adquirida pela Abbott por 21 bilhões de dólares.",
+  "exact-sciences": "A Exact Sciences fabrica o Cologuard e o Oncotype DX e está lançando o Cancerguard MCED e o Oncodetect MRD; a Abbott concluiu sua aquisição em 23 de março de 2026.",
   "exercise-during-chemotherapy": "Exercício moderado durante a quimioterapia é seguro e reduz a fadiga, ajuda as pessoas a completar as doses planejadas e pode proteger o coração e os nervos.",
   "extrinsic-apoptosis-death-receptors": "As células imunes matam por contato: apresentam o ligante de FAS ou TRAIL a uma célula-alvo, cujos receptores de morte então desencadeiam a autodestruição de fora para dentro. Os tumores cortam esse fio eliminando os receptores ou produzindo em excesso iscas e bloqueadores.",
   "fda-approvals": "As notificações de aprovação em oncologia da FDA são o registro oficial do que está aprovado e para o quê.",

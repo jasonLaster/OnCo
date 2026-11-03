@@ -505,7 +505,7 @@ export function covered(phrase: string, idx: NameIndex, kinds: string[]): boolea
 // Class 3, 4 and 6 on biomarker pages
 // ---------------------------------------------------------------------------------------------------------------------
 export type TestRowLite = { id: string; name: string; drugId?: string; companyId: string; scope: string; technologies: string[]; where: string };
-export type AssayLite = { id: string; name: string; vendor: string; where: string };
+export type AssayLite = { id: string; name: string; vendor: string; drugId?: string; where: string };
 export type BiomarkerLite = { id: string; name: string; target?: string; measurement: string; drugs: string[]; tests: string[]; assays: string[]; thresholdDrugs: string[]; where: string };
 export type ProductLite = { id: string; name: string; isTest: boolean; technologies: string[]; targets: string[]; drugs: string[]; companies: string[]; where: string; /** Name, modality and mechanism, to tell an IHC kit from a sequencing panel. */ method?: string };
 
@@ -546,7 +546,7 @@ export function detectBiomarkerGaps(bms: BiomarkerLite[], rows: TestRowLite[], a
   for (const r of rows) if (r.drugId) push(rowsByDrug, r.drugId, r);
   const prod = new Map(products.map((p) => [p.id, p]));
   // The record an assay row stands for, matched the way class 1 matches rows ("therascreen KRAS RGQ PCR Kit" is part of the therascreen family record).
-  const assayRecord = (a: AssayLite): string | undefined => matchRow({ name: a.name, want: ["drug"], owners: [a.vendor] }, idx).hits[0]?.id;
+  const assayRecord = (a: AssayLite): string | undefined => a.drugId ?? matchRow({ name: a.name, want: ["drug"], owners: [a.vendor] }, idx).hits[0]?.id;
   const techTestCount = new Map<string, number>();
   for (const p of products) if (p.isTest) for (const t of p.technologies) techTestCount.set(t, (techTestCount.get(t) ?? 0) + 1);
   const GENERIC_TECH = new Set(["liquid-biopsy", "companion-diagnostic", "cgp", "rna-seq", "histopathology-ihc", "mced"]);
@@ -841,10 +841,11 @@ export async function collect(): Promise<Finding[]> {
     const w = lineOf(A, `id: "${a.id}"`);
     // Class names ("MSI by PCR ... and equivalents", "Ki-67 IHC") are methods, not products.
     const isClass = /\band equivalents\b|\bothers\b|^Multiple\b|^Tumour mutational burden|^MSI by|^Ki-67|^PSMA PET|^HER2 IQFISH/i.test(`${a.name} ${a.vendor}`);
-    if (!isClass) rows.push({ table: "assays", where: w, name: a.name, want: ["drug"], idField: "", owners: a.vendor.split(/[;,]\s*|\s+\(/).map((s) => s.replace(/\)$/, "")), pages: ["/assays/", ...readoutsWithAssay(a.id)], named: true });
-    if (!isClass) for (const v of a.vendor.split(/;\s*|,\s*| and /).map((s) => s.trim()).map((s) => (s.includes("(") ? s : s.replace(/\)$/, ""))).filter((s) => s && !/^(others|Multiple)/i.test(s))) {
+    // `drugId` (the test record) and `vendorIds` (company ids, in the order `vendor` names them) were added on 3 Nov 2026.
+    if (!isClass) rows.push({ table: "assays", where: w, name: a.name, want: ["drug"], idField: "drugId", id: a.drugId, owners: a.vendor.split(/[;,]\s*|\s+\(/).map((s) => s.replace(/\)$/, "")), pages: ["/assays/", ...readoutsWithAssay(a.id)], named: true });
+    if (!isClass) for (const [i, v] of a.vendor.split(/;\s*|,\s*| and /).map((s) => s.trim()).map((s) => (s.includes("(") ? s : s.replace(/\)$/, ""))).filter((s) => s && !/^(others|Multiple)/i.test(s)).entries()) {
       const vendor = bare(v);
-      rows.push({ table: "assays.vendor", where: w, name: vendor, want: ["company"], idField: "", pages: ["/assays/"], named: true });
+      rows.push({ table: "assays.vendor", where: w, name: vendor, want: ["company"], idField: "vendorIds", id: a.vendorIds?.[i], pages: ["/assays/"], named: true });
     }
   }
   for (const b of g.kind("biomarker")) {
@@ -939,7 +940,7 @@ export async function collect(): Promise<Finding[]> {
   const products: ProductLite[] = g.kind("drug").map((d) => ({ id: d.id, name: d.name, isTest: productClass(d) === "test", technologies: d.technologies, targets: d.targets, drugs: d.drugs, companies: d.companies, where: loc(d.id), method: `${d.name} ${d.modality} ${d.mechanism}` }));
   const prodMap = new Map(products.map((p) => [p.id, p]));
   const rowsLite: TestRowLite[] = TUMOUR_TESTS.map((t) => ({ id: t.id, name: t.name, drugId: t.drugId, companyId: t.companyId, scope: t.scope, technologies: t.technologies, where: lineOf(T, `id: "${t.id}"`) }));
-  const assaysLite: AssayLite[] = assays.map((a) => ({ id: a.id, name: a.name, vendor: a.vendor, where: lineOf(A, `id: "${a.id}"`) }));
+  const assaysLite: AssayLite[] = assays.map((a) => ({ id: a.id, name: a.name, vendor: a.vendor, drugId: a.drugId, where: lineOf(A, `id: "${a.id}"`) }));
   const bms: BiomarkerLite[] = g.kind("biomarker").map((b) => ({ id: b.id, name: b.name, target: b.target, measurement: b.measurement, drugs: b.drugs, tests: b.tests, assays: b.assays, thresholdDrugs: b.thresholds.filter((t) => t.status === "current").map((t) => t.drugId), where: loc(b.id) }));
   findings.push(...groupDuplicatePills(groupOneWay(detectBiomarkerGaps(bms, rowsLite, assaysLite, products, idx, { biomarker: (id) => `/biomarkers/${id}/`, product: (id) => `/drugs/${id}/` }))));
   findings.push(...detectRowRecordMismatch(rowsLite, prodMap, { product: (id) => `/drugs/${id}/`, company: r, technology: r }, has));

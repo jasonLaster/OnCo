@@ -1,12 +1,12 @@
 {
  "generated": "2026-11-03",
  "counts": {
-  "side-table": 240,
-  "prose": 94,
-  "hub": 10,
-  "one-way": 19,
-  "company-no-products": 177,
-  "duplicate": 6
+  "side-table": 170,
+  "prose": 91,
+  "hub": 33,
+  "one-way": 13,
+  "company-no-products": 170,
+  "duplicate": 1
  },
  "precision": {
   "side-table": "39/40 (98%), two samples of 20",
@@ -17,68 +17,6 @@
   "duplicate": "6/6, every finding read"
  },
  "findings": [
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/1p19q-codeletion-readout/",
-    "/biomarkers/braf-fusion/",
-    "/biomarkers/fgfr2-fusion-rearrangement/",
-    "/biomarkers/fgfr3-alteration/",
-    "/biomarkers/h3-k27m/",
-    "/biomarkers/her2-ihc-3-plus/",
-    "/biomarkers/hrd-positive/",
-    "/biomarkers/met-amplification-readout/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/mgmt-promoter-methylation/",
-    "/biomarkers/mycn-amp/",
-    "/biomarkers/nrg1-fusion/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pd-l1-cps/",
-    "/biomarkers/pdgfra-exon-18-d842v/",
-    "/biomarkers/pten-alteration/",
-    "/biomarkers/tp53-del17p/",
-    "/companies/caris/",
-    "/technologies/wes-wgs/",
-    "/technologies/cgp/",
-    "/technologies/rna-seq/"
-   ],
-   "where": "src/data/tumour-tests.ts:95",
-   "subject": "Caris MI Profile",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/akt1-e17k/",
-    "/biomarkers/alk-fusion/",
-    "/biomarkers/braf-fusion/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/fgfr2-fusion-rearrangement/",
-    "/biomarkers/kras-g12d/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pik3ca-hotspot-mutation/",
-    "/biomarkers/pten-alteration/",
-    "/biomarkers/ras-wild-type/",
-    "/biomarkers/ret-fusion/",
-    "/biomarkers/ros1-fusion/",
-    "/biomarkers/tmb-high/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/assays.ts:106",
-   "subject": "FoundationOne CDx",
-   "suggestedId": "foundationone-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
-  },
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
@@ -107,166 +45,6 @@
    "suggestedId": "foundationone-cdx",
    "confidence": "medium",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "duplicate",
-   "rule": "tests-box-duplicate",
-   "page": "/biomarkers/akt1-e17k/#tests",
-   "pages": [
-    "/biomarkers/akt1-e17k/",
-    "/biomarkers/alk-fusion/",
-    "/biomarkers/braf-fusion/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/fgfr2-fusion-rearrangement/",
-    "/biomarkers/kras-g12d/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pik3ca-hotspot-mutation/",
-    "/biomarkers/pten-alteration/",
-    "/biomarkers/ras-wild-type/",
-    "/biomarkers/ret-fusion/",
-    "/biomarkers/ros1-fusion/",
-    "/biomarkers/tmb-high/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:204 (+15 more)",
-   "subject": "FoundationOne CDx / FoundationOne CDx",
-   "confidence": "high",
-   "detail": "\"Tests that measure it\" shows \"FoundationOne CDx\" (an assays row) and \"FoundationOne CDx\" (a TUMOUR_TESTS row), one product, on 16 readout pages: akt1-e17k, alk-fusion, braf-fusion, egfr-exon-19-deletion, fgfr2-fusion-rearrangement, kras-g12d, met-ex14, msi-high, ntrk-fusion, pik3ca-hotspot-mutation, pten-alteration, ras-wild-type, ret-fusion, ros1-fusion, tmb-high, brca-somatic."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/biomarkers/alk-fusion/",
-   "pages": [
-    "/biomarkers/alk-fusion/",
-    "/biomarkers/cldn18-2-expression/",
-    "/biomarkers/dmmr-ihc/",
-    "/biomarkers/folr1-expression/",
-    "/biomarkers/her2-ihc-0/",
-    "/biomarkers/her2-ihc-1-plus/",
-    "/biomarkers/her2-ihc-2-plus/",
-    "/biomarkers/her2-ihc-3-plus/",
-    "/biomarkers/her2-ish-amplified/",
-    "/biomarkers/her2-low-ihc/",
-    "/biomarkers/her2-ultralow/",
-    "/biomarkers/pd-l1-ic-score/",
-    "/biomarkers/pd-l1-tc-score/",
-    "/biomarkers/pd-l1-tps/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:190 (+13 more)",
-   "subject": "Ventana Medical Systems (Roche)",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"roche-genentech\" (company) matches on \"roche\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/bcr-abl1-t315i/",
-    "/biomarkers/bcr-abl1-transcript/",
-    "/biomarkers/flt3-itd/",
-    "/biomarkers/flt3-tkd/",
-    "/biomarkers/idh1-r132/",
-    "/biomarkers/idh2-mutation/",
-    "/biomarkers/kit-d816v/",
-    "/biomarkers/npm1-mutation/",
-    "/biomarkers/tp53-del17p/",
-    "/companies/foundation-medicine/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:92",
-   "subject": "FoundationOne Heme",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/bcr-abl1-transcript/",
-    "/biomarkers/flt3-itd/",
-    "/biomarkers/flt3-tkd/",
-    "/biomarkers/idh1-r132/",
-    "/biomarkers/idh2-mutation/",
-    "/biomarkers/kit-d816v/",
-    "/biomarkers/npm1-mutation/",
-    "/biomarkers/tp53-del17p/",
-    "/companies/neogenomics/",
-    "/technologies/cgp/",
-    "/technologies/reference-laboratories/"
-   ],
-   "where": "src/data/tumour-tests.ts:120",
-   "subject": "NeoGenomics NeoTYPE profiles",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/braf-v600e/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-exon-20-insertion/",
-    "/biomarkers/egfr-l858r/",
-    "/biomarkers/her2-mutation/",
-    "/biomarkers/idh1-r132/",
-    "/biomarkers/idh2-mutation/",
-    "/biomarkers/ret-fusion/",
-    "/biomarkers/ros1-fusion/"
-   ],
-   "where": "src/data/assays.ts:120",
-   "subject": "Oncomine Dx Target Test",
-   "suggestedId": "oncomine-dx-target-test",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"oncomine-dx-target-test\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/nrg1-fusion/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/tmb-high/",
-    "/companies/exact-sciences/",
-    "/technologies/wes-wgs/",
-    "/technologies/cgp/",
-    "/technologies/rna-seq/"
-   ],
-   "where": "src/data/tumour-tests.ts:148",
-   "subject": "Exact Sciences OncoExTra",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/pd-l1-cps/",
-    "/biomarkers/pd-l1-tps/",
-    "/biomarkers/tmb-high/",
-    "/companies/labcorp/",
-    "/technologies/cgp/",
-    "/technologies/reference-laboratories/"
-   ],
-   "where": "src/data/tumour-tests.ts:151",
-   "subject": "Labcorp OmniSeq INSIGHT",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -309,25 +87,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/esr1-mutation-ctdna/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pik3ca-hotspot-mutation/",
-    "/biomarkers/ros1-fusion/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/assays.ts:112",
-   "subject": "FoundationOne Liquid CDx",
-   "suggestedId": "foundationone-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/alk-fusion/",
    "pages": [
     "/biomarkers/alk-fusion/",
@@ -343,96 +102,6 @@
    "suggestedId": "foundationone-cdx",
    "confidence": "medium",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/her2-ihc-0/",
-    "/biomarkers/her2-ihc-1-plus/",
-    "/biomarkers/her2-ihc-2-plus/",
-    "/biomarkers/her2-ihc-3-plus/",
-    "/biomarkers/her2-low-ihc/",
-    "/biomarkers/her2-ultralow/"
-   ],
-   "where": "src/data/assays.ts:58",
-   "subject": "HercepTest",
-   "suggestedId": "her2-testing-assays",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"her2-testing-assays\" (drug) by name but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"herceptest\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/her2-ihc-0/",
-    "/biomarkers/her2-ihc-1-plus/",
-    "/biomarkers/her2-ihc-2-plus/",
-    "/biomarkers/her2-ihc-3-plus/",
-    "/biomarkers/her2-low-ihc/",
-    "/biomarkers/her2-ultralow/"
-   ],
-   "where": "src/data/assays.ts:62",
-   "subject": "PATHWAY anti-HER2/neu (4B5)",
-   "suggestedId": "her2-testing-assays",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"her2-testing-assays\" (drug) on \"pathway anti her2\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"pathway anti her2\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "duplicate",
-   "rule": "tests-box-duplicate",
-   "page": "/biomarkers/esr1-mutation-ctdna/#tests",
-   "pages": [
-    "/biomarkers/esr1-mutation-ctdna/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pik3ca-hotspot-mutation/",
-    "/biomarkers/ros1-fusion/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:229 (+5 more)",
-   "subject": "FoundationOne Liquid CDx / FoundationOne Liquid CDx",
-   "confidence": "high",
-   "detail": "\"Tests that measure it\" shows \"FoundationOne Liquid CDx\" (an assays row) and \"FoundationOne Liquid CDx\" (a TUMOUR_TESTS row), one product, on 6 readout pages: esr1-mutation-ctdna, met-ex14, ntrk-fusion, pik3ca-hotspot-mutation, ros1-fusion, brca-somatic."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/tmb-high/",
-    "/companies/bostongene/",
-    "/technologies/wes-wgs/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:76",
-   "subject": "BostonGene Tumor Portrait",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-exon-20-insertion/",
-    "/biomarkers/esr1-mutation-ctdna/",
-    "/biomarkers/her2-mutation/",
-    "/biomarkers/kras-g12c/"
-   ],
-   "where": "src/data/assays.ts:116",
-   "subject": "Guardant360 CDx",
-   "suggestedId": "guardant360-cdx",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"guardant360-cdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -454,72 +123,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/tmb-high/",
-    "/companies/natera/",
-    "/technologies/wes-wgs/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:141",
-   "subject": "Natera Altera",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/ctdna-mrd-positive/",
-    "/companies/personalis/",
-    "/technologies/mrd-testing/",
-    "/technologies/liquid-biopsy/",
-    "/technologies/wes-wgs/"
-   ],
-   "where": "src/data/tumour-tests.ts:126",
-   "subject": "Personalis NeXT Personal",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "duplicate",
-   "rule": "tests-box-duplicate",
-   "page": "/biomarkers/egfr-exon-19-deletion/#tests",
-   "pages": [
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-exon-20-insertion/",
-    "/biomarkers/esr1-mutation-ctdna/",
-    "/biomarkers/her2-mutation/",
-    "/biomarkers/kras-g12c/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:13 (+4 more)",
-   "subject": "Guardant360 CDx / Guardant360 CDx",
-   "confidence": "high",
-   "detail": "\"Tests that measure it\" shows \"Guardant360 CDx\" (an assays row) and \"Guardant360 CDx\" (a TUMOUR_TESTS row), one product, on 5 readout pages: egfr-exon-19-deletion, egfr-exon-20-insertion, esr1-mutation-ctdna, her2-mutation, kras-g12c."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/tmb-high/",
-    "/companies/illumina/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:129",
-   "subject": "Illumina TruSight Oncology 500",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "id-empty-record-exists",
    "page": "/regimens/docetaxel-prostate/",
    "pages": [
@@ -534,22 +137,6 @@
    "suggestedId": "prednisone",
    "confidence": "high",
    "detail": "regimens.components: drugId is empty although record \"prednisone\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/msi-high/",
-    "/biomarkers/tmb-high/",
-    "/companies/strata-oncology/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:114",
-   "subject": "StrataNGS",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -601,84 +188,6 @@
    "suggestedId": "pfizer",
    "confidence": "medium",
    "detail": "deals.party: id is empty although record \"pfizer\" (company) matches by name. The match is on an alias of the record (\"seagen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-l858r/",
-    "/biomarkers/egfr-t790m/"
-   ],
-   "where": "src/data/assays.ts:71",
-   "subject": "cobas EGFR Mutation Test v2",
-   "suggestedId": "cobas-egfr-mutation-test",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"cobas-egfr-mutation-test\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/companies/strata-oncology/",
-    "/technologies/rna-seq/",
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/tumour-tests.ts:117",
-   "subject": "StrataEXP",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/tumour-testing/",
-   "pages": [
-    "/tumour-testing/",
-    "/biomarkers/tmb-high/",
-    "/companies/tempus/",
-    "/technologies/wes-wgs/"
-   ],
-   "where": "src/data/tumour-tests.ts:83",
-   "subject": "Tempus xE",
-   "confidence": "high",
-   "detail": "TUMOUR_TESTS: no drug record carries this name and drugId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/biomarkers/braf-v600e/",
-   "pages": [
-    "/biomarkers/braf-v600e/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-l858r/",
-    "/biomarkers/egfr-t790m/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:141 (+3 more)",
-   "subject": "Roche Molecular Systems",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"roche-genentech\" (company) matches on \"roche\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/kras-g12c/",
-    "/biomarkers/kras-g12d/",
-    "/biomarkers/ras-wild-type/"
-   ],
-   "where": "src/data/assays.ts:80",
-   "subject": "therascreen KRAS RGQ PCR Kit",
-   "suggestedId": "therascreen-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"therascreen-cdx\" (drug) on \"therascreen\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"therascreen\"), e.g. an acquired company's name or a family record; check it is the same thing."
   },
   {
    "cls": "side-table",
@@ -902,20 +411,6 @@
   {
    "cls": "side-table",
    "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/flt3-itd/",
-    "/biomarkers/flt3-tkd/"
-   ],
-   "where": "src/data/assays.ts:145",
-   "subject": "LeukoStrat CDx FLT3 Mutation Assay",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
    "page": "/deals/",
    "pages": [
     "/deals/",
@@ -940,21 +435,6 @@
    "subject": "Loxo Oncology",
    "confidence": "high",
    "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/hrd-positive/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/assays.ts:154",
-   "subject": "myChoice CDx",
-   "suggestedId": "mychoice-cdx",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"mychoice-cdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -983,35 +463,6 @@
    "subject": "ORN-252",
    "confidence": "high",
    "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/pd-l1-cps/",
-    "/biomarkers/pd-l1-tps/"
-   ],
-   "where": "src/data/assays.ts:41",
-   "subject": "PD-L1 IHC 22C3 pharmDx",
-   "suggestedId": "dako-pd-l1-22c3-pharmdx",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"dako-pd-l1-22c3-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/pd-l1-cps/",
-    "/biomarkers/pd-l1-tc-score/"
-   ],
-   "where": "src/data/assays.ts:53",
-   "subject": "PD-L1 IHC 28-8 pharmDx",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1177,21 +628,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/egfr-exon-19-deletion/",
-    "/biomarkers/egfr-l858r/"
-   ],
-   "where": "src/data/assays.ts:75",
-   "subject": "therascreen EGFR RGQ PCR Kit",
-   "suggestedId": "therascreen-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"therascreen-cdx\" (drug) on \"therascreen\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"therascreen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/kras-g12c/",
    "pages": [
     "/biomarkers/kras-g12c/",
@@ -1217,34 +653,6 @@
    "subject": "Up to seven preclinical ADCs",
    "confidence": "medium",
    "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/pd-l1-tc-score/",
-    "/biomarkers/pd-l1-tps/"
-   ],
-   "where": "src/data/assays.ts:49",
-   "subject": "VENTANA PD-L1 (SP263) Assay",
-   "suggestedId": "ventana-pd-l1-sp263",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"ventana-pd-l1-sp263\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "duplicate",
-   "rule": "tests-box-duplicate",
-   "page": "/biomarkers/hrd-positive/#tests",
-   "pages": [
-    "/biomarkers/hrd-positive/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:419 (+1 more)",
-   "subject": "myChoice CDx / Myriad myChoice CDx",
-   "confidence": "high",
-   "detail": "\"Tests that measure it\" shows \"myChoice CDx\" (an assays row) and \"Myriad myChoice CDx\" (a TUMOUR_TESTS row), one product, on 2 readout pages: hrd-positive, brca-somatic."
   },
   {
    "cls": "hub",
@@ -1277,6 +685,62 @@
   {
    "cls": "hub",
    "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/kras-g12d/#tests",
+   "pages": [
+    "/biomarkers/kras-g12d/",
+    "/drugs/crcdx-ras/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:125",
+   "subject": "CRCDx RAS Mutation Detection Assay Kit",
+   "suggestedId": "crcdx-ras",
+   "confidence": "high",
+   "detail": "kras-g12d: \"crcdx-ras\" is a test on target \"kras\" for panitumumab, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/hrr-gene-mutation/#tests",
+   "pages": [
+    "/biomarkers/hrr-gene-mutation/",
+    "/drugs/foundationfocus-cdxbrca/"
+   ],
+   "where": "src/data/spikes/prostate-molecular.ts:956",
+   "subject": "FoundationFocus CDxBRCA",
+   "suggestedId": "foundationfocus-cdxbrca",
+   "confidence": "high",
+   "detail": "hrr-gene-mutation: \"foundationfocus-cdxbrca\" is a test on target \"brca\" for rucaparib, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/her2-ihc-3-plus/#tests",
+   "pages": [
+    "/biomarkers/her2-ihc-3-plus/",
+    "/drugs/her2-fish-pharmdx/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:151",
+   "subject": "HER2 FISH pharmDx Kit",
+   "suggestedId": "her2-fish-pharmdx",
+   "confidence": "high",
+   "detail": "her2-ihc-3-plus: \"her2-fish-pharmdx\" is a test on target \"her2\" for trastuzumab, trastuzumab-emtansine, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/msi-high/#tests",
+   "pages": [
+    "/biomarkers/msi-high/",
+    "/drugs/mmr-ihc-panel-pharmdx/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:341",
+   "subject": "MMR IHC Panel pharmDx (Dako Omnis)",
+   "suggestedId": "mmr-ihc-panel-pharmdx",
+   "confidence": "high",
+   "detail": "msi-high: \"mmr-ihc-panel-pharmdx\" is a test on target \"mmr\" for nivolumab, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
    "page": "/biomarkers/hrr-gene-mutation/#tests",
    "pages": [
     "/biomarkers/hrr-gene-mutation/",
@@ -1287,6 +751,62 @@
    "suggestedId": "mychoice-cdx",
    "confidence": "high",
    "detail": "hrr-gene-mutation: \"mychoice-cdx\" is a test on target \"brca\" for niraparib, olaparib, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/egfr-exon-19-deletion/#tests",
+   "pages": [
+    "/biomarkers/egfr-exon-19-deletion/",
+    "/drugs/onco-reveal-dx-lung-colon/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:13",
+   "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
+   "confidence": "high",
+   "detail": "egfr-exon-19-deletion: \"onco-reveal-dx-lung-colon\" is a test on target \"egfr\" for osimertinib, gefitinib, dacomitinib, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/egfr-l858r/#tests",
+   "pages": [
+    "/biomarkers/egfr-l858r/",
+    "/drugs/onco-reveal-dx-lung-colon/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:37",
+   "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
+   "confidence": "high",
+   "detail": "egfr-l858r: \"onco-reveal-dx-lung-colon\" is a test on target \"egfr\" for osimertinib, lazertinib, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/egfr-t790m/#tests",
+   "pages": [
+    "/biomarkers/egfr-t790m/",
+    "/drugs/onco-reveal-dx-lung-colon/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:51",
+   "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
+   "confidence": "high",
+   "detail": "egfr-t790m: \"onco-reveal-dx-lung-colon\" is a test on target \"egfr\" for osimertinib, a drug this readout's thresholds name, but the readout does not list it."
+  },
+  {
+   "cls": "hub",
+   "rule": "cdx-for-threshold-drug-missing",
+   "page": "/biomarkers/kras-g12d/#tests",
+   "pages": [
+    "/biomarkers/kras-g12d/",
+    "/drugs/onco-reveal-dx-lung-colon/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:125",
+   "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
+   "confidence": "high",
+   "detail": "kras-g12d: \"onco-reveal-dx-lung-colon\" is a test on target \"kras\" for cetuximab, panitumumab, a drug this readout's thresholds name, but the readout does not list it."
   },
   {
    "cls": "hub",
@@ -1333,54 +853,15 @@
   {
    "cls": "prose",
    "rule": "product-without-record",
-   "page": "/biomarkers/flt3-itd/",
+   "page": "/drugs/navdx/",
    "pages": [
-    "/biomarkers/flt3-itd/",
-    "/biomarkers/flt3-tkd/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:104",
-   "subject": "LeukoStrat CDx",
-   "confidence": "high",
-   "detail": "Product name \"LeukoStrat CDx\" appears in the text of 2 pages and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "product-without-record",
-   "page": "/technologies/cthpv-dna/",
-   "pages": [
-    "/technologies/cthpv-dna/",
+    "/drugs/navdx/",
     "/companies/naveris/"
    ],
-   "where": "src/data/spikes/head-and-neck.ts:175",
-   "subject": "NavDx",
+   "where": "src/data/tests.ts:369",
+   "subject": "CareDx",
    "confidence": "high",
-   "detail": "Product name \"NavDx\" appears in the text of 2 pages and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/idh1-r132/"
-   ],
-   "where": "src/data/assays.ts:137",
-   "subject": "Abbott RealTime IDH1",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/idh2-mutation/"
-   ],
-   "where": "src/data/assays.ts:141",
-   "subject": "Abbott RealTime IDH2",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
+   "detail": "Product name \"CareDx\" appears in the text of 2 pages and matches no drug record by name, aka, brand or code."
   },
   {
    "cls": "side-table",
@@ -1395,20 +876,6 @@
    "suggestedId": "advanced-accelerator-applications",
    "confidence": "high",
    "detail": "deals.party: id is empty although record \"advanced-accelerator-applications\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/kras-g12c/"
-   ],
-   "where": "src/data/assays.ts:124",
-   "subject": "Agilent Resolution ctDx FIRST",
-   "suggestedId": "resolution-ctdx-first",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"resolution-ctdx-first\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -1437,33 +904,6 @@
    "suggestedId": "blueprint-medicines",
    "confidence": "high",
    "detail": "deals.party: id is empty although record \"blueprint-medicines\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/brca-germline/"
-   ],
-   "where": "src/data/assays.ts:150",
-   "subject": "BRACAnalysis CDx",
-   "suggestedId": "bracanalysis-cdx",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"bracanalysis-cdx\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/braf-v600e/"
-   ],
-   "where": "src/data/assays.ts:84",
-   "subject": "cobas 4800 BRAF V600 Mutation Test",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1504,19 +944,6 @@
    "subject": "Forty Seven",
    "confidence": "high",
    "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/assays.ts:158",
-   "subject": "FoundationFocus CDxBRCA",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1575,20 +1002,7 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/flt3-itd/",
-   "pages": [
-    "/biomarkers/flt3-itd/",
-    "/biomarkers/flt3-tkd/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:104 (+1 more)",
-   "subject": "Invivoscribe Technologies",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/flt3-itd/",
    "pages": [
     "/biomarkers/flt3-itd/",
@@ -1596,8 +1010,9 @@
    ],
    "where": "src/data/biomarker-readouts-3.ts:104 (+1 more)",
    "subject": "LeukoStrat CDx FLT3 Mutation Assay",
+   "suggestedId": "leukostrat-cdx-flt3",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"leukostrat-cdx-flt3\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -1642,7 +1057,7 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/pd-l1-cps/",
    "pages": [
     "/biomarkers/pd-l1-cps/",
@@ -1650,8 +1065,9 @@
    ],
    "where": "src/data/biomarker-readouts.ts:64 (+1 more)",
    "subject": "PD-L1 IHC 28-8 pharmDx",
+   "suggestedId": "pd-l1-ihc-28-8-pharmdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"pd-l1-ihc-28-8-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -1696,20 +1112,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/ctdna-mrd-positive/"
-   ],
-   "where": "src/data/assays.ts:193",
-   "subject": "Signatera (tumour-informed ctDNA MRD)",
-   "suggestedId": "signatera",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"signatera\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-record",
    "page": "/deals/",
    "pages": [
@@ -1720,19 +1122,6 @@
    "subject": "Stemcentrx",
    "confidence": "high",
    "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/braf-v600e/"
-   ],
-   "where": "src/data/assays.ts:88",
-   "subject": "THxID BRAF Kit",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1777,45 +1166,6 @@
   {
    "cls": "side-table",
    "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/alk-fusion/"
-   ],
-   "where": "src/data/assays.ts:101",
-   "subject": "VENTANA ALK (D5F3) CDx Assay",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/cldn18-2-expression/"
-   ],
-   "where": "src/data/assays.ts:176",
-   "subject": "VENTANA CLDN18 (43-14A) RxDx Assay",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/folr1-expression/"
-   ],
-   "where": "src/data/assays.ts:172",
-   "subject": "VENTANA FOLR1 (FOLR1-2.1) RxDx Assay",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
    "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
     "/biomarkers/her2-ish-amplified/",
@@ -1827,45 +1177,46 @@
    "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
   },
   {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
+   "cls": "hub",
+   "rule": "signature-technology-member-missing",
+   "page": "/biomarkers/her2-ish-amplified/#tests",
    "pages": [
-    "/assays/",
-    "/biomarkers/dmmr-ihc/"
+    "/biomarkers/her2-ish-amplified/",
+    "/drugs/urovysion/"
    ],
-   "where": "src/data/assays.ts:163",
-   "subject": "VENTANA MMR RxDx Panel",
-   "suggestedId": "ventana-mmr-rxdx",
-   "confidence": "high",
-   "detail": "assays: the row matches record \"ventana-mmr-rxdx\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/alk-fusion/"
-   ],
-   "where": "src/data/assays.ts:97",
-   "subject": "Vysis ALK Break Apart FISH Probe Kit",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "UroVysion Bladder Cancer Kit",
+   "suggestedId": "urovysion",
+   "confidence": "medium",
+   "detail": "her2-ish-amplified: every test it lists carries technology \"cytogenetics-fish\", and so does \"urovysion\", which the readout does not list."
   },
   {
    "cls": "hub",
    "rule": "signature-technology-member-missing",
-   "page": "/biomarkers/ctdna-mrd-positive/#tests",
+   "page": "/biomarkers/her2-ish-amplified/#tests",
    "pages": [
-    "/biomarkers/ctdna-mrd-positive/",
-    "/drugs/adela-mced/"
+    "/biomarkers/her2-ish-amplified/",
+    "/drugs/vysis-alk-break-apart-fish/"
    ],
-   "where": "src/data/biomarker-readouts-4.ts:233",
-   "subject": "Adela multi-cancer methylome test",
-   "suggestedId": "adela-mced",
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "Vysis ALK Break Apart FISH Probe Kit",
+   "suggestedId": "vysis-alk-break-apart-fish",
    "confidence": "medium",
-   "detail": "ctdna-mrd-positive: every test it lists carries technology \"mrd-testing\", and so does \"adela-mced\", which the readout does not list."
+   "detail": "her2-ish-amplified: every test it lists carries technology \"cytogenetics-fish\", and so does \"vysis-alk-break-apart-fish\", which the readout does not list."
+  },
+  {
+   "cls": "hub",
+   "rule": "signature-technology-member-missing",
+   "page": "/biomarkers/her2-ish-amplified/#tests",
+   "pages": [
+    "/biomarkers/her2-ish-amplified/",
+    "/drugs/vysis-cll-fish/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "Vysis CLL FISH Probe Kit",
+   "suggestedId": "vysis-cll-fish",
+   "confidence": "medium",
+   "detail": "her2-ish-amplified: every test it lists carries technology \"cytogenetics-fish\", and so does \"vysis-cll-fish\", which the readout does not list."
   },
   {
    "cls": "one-way",
@@ -1875,7 +1226,7 @@
     "/companies/abbott/",
     "/drugs/oncotype-dx/"
    ],
-   "where": "src/data/tests.ts:589",
+   "where": "src/data/tests.ts:752",
    "subject": "Abbott Laboratories -> Oncotype DX",
    "suggestedId": "oncotype-dx",
    "confidence": "medium",
@@ -1973,7 +1324,7 @@
     "/companies/mdxhealth/",
     "/drugs/oncotype-dx/"
    ],
-   "where": "src/data/tests.ts:600",
+   "where": "src/data/tests.ts:763",
    "subject": "MDxHealth -> Oncotype DX",
    "suggestedId": "oncotype-dx",
    "confidence": "medium",
@@ -2135,76 +1486,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/braf-v600e/"
-   ],
-   "where": "src/data/assays.ts:92",
-   "subject": "therascreen BRAF V600E RGQ PCR Kit",
-   "suggestedId": "therascreen-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"therascreen-cdx\" (drug) on \"therascreen\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"therascreen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/fgfr3-alteration/"
-   ],
-   "where": "src/data/assays.ts:129",
-   "subject": "therascreen FGFR RGQ RT-PCR Kit",
-   "suggestedId": "therascreen-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"therascreen-cdx\" (drug) on \"therascreen\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"therascreen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/pik3ca-hotspot-mutation/"
-   ],
-   "where": "src/data/assays.ts:133",
-   "subject": "therascreen PIK3CA RGQ PCR Kit",
-   "suggestedId": "therascreen-cdx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"therascreen-cdx\" (drug) on \"therascreen\" but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"therascreen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/biomarkers/met-overexpression/",
-   "pages": [
-    "/biomarkers/met-overexpression/",
-    "/biomarkers/pten-alteration/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:39 (+1 more)",
-   "subject": "Ventana Medical Systems (Roche Tissue Diagnostics)",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"roche-genentech\" (company) matches on \"roche\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/",
-    "/biomarkers/pd-l1-ic-score/"
-   ],
-   "where": "src/data/assays.ts:45",
-   "subject": "VENTANA PD-L1 (SP142) Assay",
-   "suggestedId": "ventana-pd-l1-sp142",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"ventana-pd-l1-sp142\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/pd-l1-tc-score/",
    "pages": [
     "/biomarkers/pd-l1-tc-score/",
@@ -2242,30 +1523,6 @@
   },
   {
    "cls": "company-no-products",
-   "rule": "side-table-products-no-record",
-   "page": "/companies/bostongene/",
-   "pages": [
-    "/companies/bostongene/"
-   ],
-   "where": "src/data/companies.ts:323",
-   "subject": "BostonGene",
-   "confidence": "high",
-   "detail": "ai-software company with no product records; side tables name BostonGene Tumor Portrait."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "named-products-no-record",
-   "page": "/companies/haystack-oncology/",
-   "pages": [
-    "/companies/haystack-oncology/"
-   ],
-   "where": "src/data/companies-startups.ts:787",
-   "subject": "Haystack Oncology",
-   "confidence": "high",
-   "detail": "diagnostics company with no product records; its own text names Haystack MRD."
-  },
-  {
-   "cls": "company-no-products",
    "rule": "named-products-no-record",
    "page": "/companies/ibex-medical-analytics/",
    "pages": [
@@ -2287,30 +1544,6 @@
    "subject": "Insight Molecular Diagnostics (formerly Oncocyte)",
    "confidence": "high",
    "detail": "diagnostics company with no product records; its own text names GraftAssureDx."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "side-table-products-no-record",
-   "page": "/companies/labcorp/",
-   "pages": [
-    "/companies/labcorp/"
-   ],
-   "where": "src/data/supporting.ts:791",
-   "subject": "Labcorp",
-   "confidence": "high",
-   "detail": "diagnostics company with no product records; side tables name Labcorp OmniSeq INSIGHT."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "named-products-no-record",
-   "page": "/companies/naveris/",
-   "pages": [
-    "/companies/naveris/"
-   ],
-   "where": "src/data/companies-startups.ts:850",
-   "subject": "Naveris",
-   "confidence": "high",
-   "detail": "diagnostics company with no product records; its own text names NavDx, CareDx."
   },
   {
    "cls": "company-no-products",
@@ -2350,18 +1583,6 @@
   },
   {
    "cls": "company-no-products",
-   "rule": "side-table-products-no-record",
-   "page": "/companies/personalis/",
-   "pages": [
-    "/companies/personalis/"
-   ],
-   "where": "src/data/companies.ts:672",
-   "subject": "Personalis (Tempus)",
-   "confidence": "high",
-   "detail": "diagnostics company with no product records; side tables name Personalis NeXT Personal, NeXT Personal tumour-informed MRD test."
-  },
-  {
-   "cls": "company-no-products",
    "rule": "named-products-no-record",
    "page": "/companies/proscia/",
    "pages": [
@@ -2373,40 +1594,17 @@
    "detail": "ai-software company with no product records; its own text names Concentriq Dx."
   },
   {
-   "cls": "company-no-products",
-   "rule": "named-products-no-record",
-   "page": "/companies/quest-diagnostics/",
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/her2-ihc-3-plus/#tests",
    "pages": [
-    "/companies/quest-diagnostics/"
+    "/biomarkers/her2-ihc-3-plus/"
    ],
-   "where": "src/data/supporting.ts:795",
-   "subject": "Quest Diagnostics",
+   "where": "src/data/tests-cdx-devices.ts:159",
+   "subject": "Bond Oracle HER2 IHC System",
+   "suggestedId": "bond-oracle-her2-ihc",
    "confidence": "high",
-   "detail": "diagnostics company with no product records; its own text names Haystack Oncology MRD."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "side-table-products-no-record",
-   "page": "/companies/strata-oncology/",
-   "pages": [
-    "/companies/strata-oncology/"
-   ],
-   "where": "src/data/diagnostics-wave1.ts:25",
-   "subject": "Strata Oncology",
-   "confidence": "high",
-   "detail": "diagnostics company with no product records; side tables name StrataNGS, StrataEXP."
-  },
-  {
-   "cls": "duplicate",
-   "rule": "tests-box-duplicate",
-   "page": "/biomarkers/ctdna-mrd-positive/#tests",
-   "pages": [
-    "/biomarkers/ctdna-mrd-positive/"
-   ],
-   "where": "src/data/biomarker-readouts-4.ts:233",
-   "subject": "Signatera (tumour-informed ctDNA MRD) / Natera Signatera",
-   "confidence": "high",
-   "detail": "\"Tests that measure it\" shows \"Signatera (tumour-informed ctDNA MRD)\" (an assays row) and \"Natera Signatera\" (a TUMOUR_TESTS row), one product, on 1 readout page: ctdna-mrd-positive."
+   "detail": "her2-ihc-3-plus: test record \"bond-oracle-her2-ihc\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
   },
   {
    "cls": "hub",
@@ -2415,7 +1613,7 @@
    "pages": [
     "/biomarkers/ctdna-mrd-positive/"
    ],
-   "where": "src/data/tests.ts:213",
+   "where": "src/data/tests.ts:312",
    "subject": "clonoSEQ",
    "suggestedId": "clonoseq",
    "confidence": "high",
@@ -2424,15 +1622,145 @@
   {
    "cls": "hub",
    "rule": "test-record-not-in-tests-box",
-   "page": "/biomarkers/ctdna-mrd-positive/#tests",
+   "page": "/biomarkers/ras-wild-type/#tests",
    "pages": [
-    "/biomarkers/ctdna-mrd-positive/"
+    "/biomarkers/ras-wild-type/"
    ],
-   "where": "src/data/spikes/colorectal-molecular.ts:911",
-   "subject": "Oncodetect",
-   "suggestedId": "oncodetect",
+   "where": "src/data/tests-cdx-devices.ts:205",
+   "subject": "CRCDx RAS Mutation Detection Assay Kit",
+   "suggestedId": "crcdx-ras",
    "confidence": "high",
-   "detail": "ctdna-mrd-positive: test record \"oncodetect\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+   "detail": "ras-wild-type: test record \"crcdx-ras\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/her2-ish-amplified/#tests",
+   "pages": [
+    "/biomarkers/her2-ish-amplified/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:151",
+   "subject": "HER2 FISH pharmDx Kit",
+   "suggestedId": "her2-fish-pharmdx",
+   "confidence": "high",
+   "detail": "her2-ish-amplified: test record \"her2-fish-pharmdx\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/msi-high/#tests",
+   "pages": [
+    "/biomarkers/msi-high/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:213",
+   "subject": "Idylla CDx MSI Test",
+   "suggestedId": "idylla-cdx-msi",
+   "confidence": "high",
+   "detail": "msi-high: test record \"idylla-cdx-msi\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/hla-a-02-01/#tests",
+   "pages": [
+    "/biomarkers/hla-a-02-01/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:259",
+   "subject": "MAGE-A4 IHC 1F9 pharmDx",
+   "suggestedId": "mage-a4-ihc-1f9-pharmdx",
+   "confidence": "high",
+   "detail": "hla-a-02-01: test record \"mage-a4-ihc-1f9-pharmdx\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/dmmr-ihc/#tests",
+   "pages": [
+    "/biomarkers/dmmr-ihc/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:221",
+   "subject": "MMR IHC Panel pharmDx (Dako Omnis)",
+   "suggestedId": "mmr-ihc-panel-pharmdx",
+   "confidence": "high",
+   "detail": "dmmr-ihc: test record \"mmr-ihc-panel-pharmdx\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/bcr-abl1-transcript/#tests",
+   "pages": [
+    "/biomarkers/bcr-abl1-transcript/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:64",
+   "subject": "MRDx BCR-ABL Test",
+   "suggestedId": "mrdx-bcr-abl",
+   "confidence": "high",
+   "detail": "bcr-abl1-transcript: test record \"mrdx-bcr-abl\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/ras-wild-type/#tests",
+   "pages": [
+    "/biomarkers/ras-wild-type/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:133",
+   "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
+   "confidence": "high",
+   "detail": "ras-wild-type: test record \"onco-reveal-dx-lung-colon\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/msi-high/#tests",
+   "pages": [
+    "/biomarkers/msi-high/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:229",
+   "subject": "OncoMate MSI Dx Analysis System",
+   "suggestedId": "oncomate-msi-dx",
+   "confidence": "high",
+   "detail": "msi-high: test record \"oncomate-msi-dx\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/egfr-exon-20-insertion/#tests",
+   "pages": [
+    "/biomarkers/egfr-exon-20-insertion/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:125",
+   "subject": "Oncomine Dx Express Test",
+   "suggestedId": "oncomine-dx-express",
+   "confidence": "high",
+   "detail": "egfr-exon-20-insertion: test record \"oncomine-dx-express\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/her2-ish-amplified/#tests",
+   "pages": [
+    "/biomarkers/her2-ish-amplified/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:143",
+   "subject": "PathVysion HER-2 DNA Probe Kit",
+   "suggestedId": "pathvysion-her2",
+   "confidence": "high",
+   "detail": "her2-ish-amplified: test record \"pathvysion-her2\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/hla-a-02-01/#tests",
+   "pages": [
+    "/biomarkers/hla-a-02-01/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:267",
+   "subject": "SeCore CDx HLA Sequencing System",
+   "suggestedId": "secore-cdx-hla",
+   "confidence": "high",
+   "detail": "hla-a-02-01: test record \"secore-cdx-hla\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
   },
   {
    "cls": "hub",
@@ -2448,95 +1776,56 @@
    "detail": "pdgfra-exon-18-d842v: test record \"therascreen-cdx\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
   },
   {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/caris-mi-cancer-seek/",
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/met-overexpression/#tests",
    "pages": [
-    "/drugs/caris-mi-cancer-seek/"
+    "/biomarkers/met-overexpression/"
    ],
-   "where": "src/data/biomarker-readouts-2.ts:190 (+9 more)",
-   "subject": "Caris MI Cancer Seek: 10 readouts not shown",
-   "suggestedId": "caris-mi-cancer-seek",
+   "where": "src/data/tests-cdx-devices.ts:117",
+   "subject": "VENTANA MET (SP44) RxDx Assay",
+   "suggestedId": "ventana-met-sp44",
    "confidence": "high",
-   "detail": "10 readouts list this test's TUMOUR_TESTS row in tests but not its record \"caris-mi-cancer-seek\" in drugs, so /drugs/caris-mi-cancer-seek/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): ALK fusion (ALK-positive); BRAF class II and class III mutations (non-V600); BRAF V600E (and V600K); EGFR exon 19 deletion; KRAS G12C; KRAS G12D (and other non-G12C KRAS mutations); PIK3CA mutation; RET fusion and RET mutation; TMB-high (tumour mutational burden >= 10 mutations per megabase); Tumour (somatic or germline) BRCA1/2 mutation and HRR gene alterations."
+   "detail": "met-overexpression: test record \"ventana-met-sp44\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/pten-alteration/#tests",
+   "pages": [
+    "/biomarkers/pten-alteration/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:249",
+   "subject": "VENTANA PTEN (SP218) RxDx Assay",
+   "suggestedId": "ventana-pten-sp218",
+   "confidence": "high",
+   "detail": "pten-alteration: test record \"ventana-pten-sp218\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
+  },
+  {
+   "cls": "hub",
+   "rule": "test-record-not-in-tests-box",
+   "page": "/biomarkers/tp53-del17p/#tests",
+   "pages": [
+    "/biomarkers/tp53-del17p/"
+   ],
+   "where": "src/data/tests-cdx-devices.ts:56",
+   "subject": "Vysis CLL FISH Probe Kit",
+   "suggestedId": "vysis-cll-fish",
+   "confidence": "high",
+   "detail": "tp53-del17p: test record \"vysis-cll-fish\" is in drugs, so it shows only under Connected; the \"Tests that measure it\" box reads TUMOUR_TESTS and assays, where it has no row."
   },
   {
    "cls": "one-way",
    "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/oncotype-dx/",
+   "page": "/drugs/neo-comprehensive/",
    "pages": [
-    "/drugs/oncotype-dx/"
+    "/drugs/neo-comprehensive/"
    ],
-   "where": "src/data/biomarker-readouts.ts:281",
-   "subject": "Exact Sciences Oncotype DX Breast Recurrence Score: 1 readout not shown",
-   "suggestedId": "oncotype-dx",
+   "where": "src/data/biomarker-readouts-3.ts:178",
+   "subject": "NeoGenomics Neo Comprehensive: 1 readout not shown",
+   "suggestedId": "neo-comprehensive",
    "confidence": "high",
-   "detail": "1 readout list this test's TUMOUR_TESTS row in tests but not its record \"oncotype-dx\" in drugs, so /drugs/oncotype-dx/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): ER status (oestrogen receptor by IHC)."
-  },
-  {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/foundationone-cdx/",
-   "pages": [
-    "/drugs/foundationone-cdx/"
-   ],
-   "where": "src/data/biomarker-readouts-4.ts:213 (+23 more)",
-   "subject": "FoundationOne CDx: 24 readouts not shown",
-   "suggestedId": "foundationone-cdx",
-   "confidence": "high",
-   "detail": "24 readouts list this test's TUMOUR_TESTS row in tests but not its record \"foundationone-cdx\" in drugs, so /drugs/foundationone-cdx/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): 1p/19q codeletion; BRAF class II and class III mutations (non-V600); BRAF V600E (and V600K); BRAF V600E (and V600K); EGFR exon 20 insertion; EGFR L858R; EGFR L858R; EGFR T790M; EGFR T790M; ESR1 mutation (ligand-binding domain, usually in ctDNA); ESR1 mutation (ligand-binding domain, usually in ctDNA); FGFR3 alteration (mutation or fusion); H3 K27M mutation; HER2 (ERBB2) activating mutation; IDH1 R132 mutation; KRAS G12C; KRAS G12C; KRAS G12D (and other non-G12C KRAS mutations); MET amplification (gene copy number); MET amplification (gene copy number); MYCN amplification; NRG1 gene fusion; PDGFRA exon 18 mutation (D842V); TP53 mutation and del(17p)."
-  },
-  {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/guardant360-cdx/",
-   "pages": [
-    "/drugs/guardant360-cdx/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:204 (+11 more)",
-   "subject": "Guardant360 CDx: 12 readouts not shown",
-   "suggestedId": "guardant360-cdx",
-   "confidence": "high",
-   "detail": "12 readouts list this test's TUMOUR_TESTS row in tests but not its record \"guardant360-cdx\" in drugs, so /drugs/guardant360-cdx/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): AKT1 E17K mutation; ALK fusion (ALK-positive); BRAF V600E (and V600K); EGFR L858R; EGFR T790M; KRAS G12D (and other non-G12C KRAS mutations); MET amplification (gene copy number); MET exon 14 skipping mutation; PIK3CA mutation; RAS wild-type (extended KRAS and NRAS testing); RET fusion and RET mutation; ROS1 fusion (ROS1-positive)."
-  },
-  {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/trusight-oncology-comprehensive/",
-   "pages": [
-    "/drugs/trusight-oncology-comprehensive/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:190 (+14 more)",
-   "subject": "Illumina TruSight Oncology Comprehensive: 15 readouts not shown",
-   "suggestedId": "trusight-oncology-comprehensive",
-   "confidence": "high",
-   "detail": "15 readouts list this test's TUMOUR_TESTS row in tests but not its record \"trusight-oncology-comprehensive\" in drugs, so /drugs/trusight-oncology-comprehensive/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): ALK fusion (ALK-positive); BRAF class II and class III mutations (non-V600); BRAF fusion or rearrangement; BRAF V600E (and V600K); EGFR exon 19 deletion; EGFR exon 20 insertion; EGFR L858R; FGFR2 fusion or rearrangement; FGFR3 alteration (mutation or fusion); HER2 (ERBB2) activating mutation; IDH1 R132 mutation; KRAS G12C; MET exon 14 skipping mutation; ROS1 fusion (ROS1-positive); Tumour (somatic or germline) BRCA1/2 mutation and HRR gene alterations."
-  },
-  {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/mychoice-cdx/",
-   "pages": [
-    "/drugs/mychoice-cdx/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:375",
-   "subject": "Myriad myChoice CDx: 1 readout not shown",
-   "suggestedId": "mychoice-cdx",
-   "confidence": "high",
-   "detail": "1 readout list this test's TUMOUR_TESTS row in tests but not its record \"mychoice-cdx\" in drugs, so /drugs/mychoice-cdx/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): Germline BRCA1/2 pathogenic variant (gBRCAm)."
-  },
-  {
-   "cls": "one-way",
-   "rule": "tests-row-record-not-in-drugs",
-   "page": "/drugs/tempus-xt-cdx/",
-   "pages": [
-    "/drugs/tempus-xt-cdx/"
-   ],
-   "where": "src/data/biomarker-readouts-4.ts:213 (+33 more)",
-   "subject": "Tempus xT and xT CDx: 34 readouts not shown",
-   "suggestedId": "tempus-xt-cdx",
-   "confidence": "high",
-   "detail": "34 readouts list this test's TUMOUR_TESTS row in tests but not its record \"tempus-xt-cdx\" in drugs, so /drugs/tempus-xt-cdx/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): 1p/19q codeletion; AKT1 E17K mutation; ALK fusion (ALK-positive); BRAF class II and class III mutations (non-V600); BRAF fusion or rearrangement; BRAF V600E (and V600K); EGFR exon 19 deletion; EGFR exon 20 insertion; EGFR L858R; ESR1 mutation (ligand-binding domain, usually in ctDNA); FGFR2 fusion or rearrangement; FGFR3 alteration (mutation or fusion); Germline BRCA1/2 pathogenic variant (gBRCAm); H3 K27M mutation; HER2 (ERBB2) activating mutation; HRD-positive (genomic instability score); IDH1 R132 mutation; IDH2 mutation (R140 and R172); KRAS G12C; KRAS G12D (and other non-G12C KRAS mutations); MET amplification (gene copy number); MET exon 14 skipping mutation; MGMT promoter methylation; MSI-high (microsatellite instability by PCR or sequencing); NRG1 gene fusion; NTRK1/2/3 gene fusion; PDGFRA exon 18 mutation (D842V); PIK3CA mutation; PTEN alteration (sequencing) and PTEN loss (IHC); RET fusion and RET mutation; ROS1 fusion (ROS1-positive); TMB-high (tumour mutational burden >= 10 mutations per megabase); TP53 mutation and del(17p); Tumour (somatic or germline) BRCA1/2 mutation and HRR gene alterations."
+   "detail": "1 readout list this test's TUMOUR_TESTS row in tests but not its record \"neo-comprehensive\" in drugs, so /drugs/neo-comprehensive/ shows none of them under \"Biomarker readouts\" (readoutsForDrug reads drugs, thresholds and companion diagnostics only): BCR::ABL1 T315I."
   },
   {
    "cls": "prose",
@@ -2549,30 +1838,6 @@
    "subject": "DecisionDx",
    "confidence": "high",
    "detail": "Product name \"DecisionDx\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "product-without-record",
-   "page": "/biomarkers/ras-wild-type/",
-   "pages": [
-    "/biomarkers/ras-wild-type/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:97",
-   "subject": "Reveal Dx",
-   "confidence": "high",
-   "detail": "Product name \"Reveal Dx\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "product-without-record",
-   "page": "/biomarkers/hla-a-02-01/",
-   "pages": [
-    "/biomarkers/hla-a-02-01/"
-   ],
-   "where": "src/data/biomarker-readouts-4.ts:244",
-   "subject": "SeCore CDx",
-   "confidence": "high",
-   "detail": "Product name \"SeCore CDx\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
   },
   {
    "cls": "side-table",
@@ -2589,27 +1854,29 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/idh1-r132/",
    "pages": [
     "/biomarkers/idh1-r132/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:77",
    "subject": "Abbott RealTime IDH1",
+   "suggestedId": "abbott-realtime-idh1",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"abbott-realtime-idh1\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/idh2-mutation/",
    "pages": [
     "/biomarkers/idh2-mutation/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:92",
    "subject": "Abbott RealTime IDH2",
+   "suggestedId": "abbott-realtime-idh2",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"abbott-realtime-idh2\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -2623,18 +1890,6 @@
    "suggestedId": "arcellx",
    "confidence": "high",
    "detail": "SPONSOR_PATTERNS: id is empty although record \"arcellx\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/kit-d816v/",
-   "pages": [
-    "/biomarkers/kit-d816v/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:140",
-   "subject": "ARUP Laboratories",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -2665,42 +1920,6 @@
   {
    "cls": "side-table",
    "rule": "no-record",
-   "page": "/biomarkers/msi-high/",
-   "pages": [
-    "/biomarkers/msi-high/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:341",
-   "subject": "Biocartis",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:88",
-   "subject": "bioMérieux",
-   "confidence": "high",
-   "detail": "assays.vendor: no company record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/braf-v600e/",
-   "pages": [
-    "/biomarkers/braf-v600e/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:141",
-   "subject": "bioMérieux",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
    "page": "/deals/",
    "pages": [
     "/deals/"
@@ -2712,15 +1931,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/her2-ihc-3-plus/",
    "pages": [
     "/biomarkers/her2-ihc-3-plus/"
    ],
    "where": "src/data/biomarker-readouts.ts:151",
    "subject": "Bond Oracle HER2 IHC System",
+   "suggestedId": "bond-oracle-her2-ihc",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"bond-oracle-her2-ihc\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -2802,27 +2022,29 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/braf-v600e/",
    "pages": [
     "/biomarkers/braf-v600e/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:141",
    "subject": "cobas 4800 BRAF V600 Mutation Test",
+   "suggestedId": "cobas-4800-braf-v600",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"cobas-4800-braf-v600\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/ras-wild-type/",
    "pages": [
     "/biomarkers/ras-wild-type/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:97",
    "subject": "CRCDx RAS Mutation Detection Assay Kit",
+   "suggestedId": "crcdx-ras",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"crcdx-ras\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -2878,30 +2100,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:180",
-   "subject": "EGFR pharmDx",
-   "confidence": "high",
-   "detail": "assays: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/ras-wild-type/",
-   "pages": [
-    "/biomarkers/ras-wild-type/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:97",
-   "subject": "EntroGen",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "id-empty-record-exists",
    "page": "/open-source/",
    "pages": [
@@ -2912,19 +2110,6 @@
    "suggestedId": "evolutionaryscale",
    "confidence": "high",
    "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"evolutionaryscale\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:189",
-   "subject": "Exact Sciences",
-   "suggestedId": "exact-sciences",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"exact-sciences\" (company) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -2941,31 +2126,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:106 (+2 more)",
-   "subject": "Foundation Medicine",
-   "suggestedId": "foundation-medicine",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"foundation-medicine\" (company) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/brca-somatic/",
-   "pages": [
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:397",
-   "subject": "FoundationFocus CDxBRCA Assay",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "id-empty-record-exists",
    "page": "/deals/",
    "pages": [
@@ -2976,19 +2136,6 @@
    "suggestedId": "gracell-biotechnologies",
    "confidence": "high",
    "detail": "deals.party: id is empty although record \"gracell-biotechnologies\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:116",
-   "subject": "Guardant Health",
-   "suggestedId": "guardant-health",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"guardant-health\" (company) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3005,15 +2152,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
     "/biomarkers/her2-ish-amplified/"
    ],
    "where": "src/data/biomarker-readouts.ts:239",
    "subject": "HER2 FISH pharmDx Kit",
+   "suggestedId": "her2-fish-pharmdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"her2-fish-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3055,27 +2203,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/msi-high/",
    "pages": [
     "/biomarkers/msi-high/"
    ],
    "where": "src/data/biomarker-readouts.ts:341",
    "subject": "Idylla CDx MSI Test",
+   "suggestedId": "idylla-cdx-msi",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:145",
-   "subject": "Invivoscribe",
-   "confidence": "high",
-   "detail": "assays.vendor: no company record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"idylla-cdx-msi\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3092,15 +2229,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/kit-d816v/",
    "pages": [
     "/biomarkers/kit-d816v/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:140",
    "subject": "KIT D816V Assay",
+   "suggestedId": "arup-kit-d816v",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"arup-kit-d816v\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3118,19 +2256,6 @@
   {
    "cls": "side-table",
    "rule": "id-empty-record-exists",
-   "page": "/biomarkers/her2-ihc-3-plus/",
-   "pages": [
-    "/biomarkers/her2-ihc-3-plus/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:151",
-   "subject": "Leica Biosystems",
-   "suggestedId": "leica-biosystems",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"leica-biosystems\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
    "page": "/regimens/fu-lv/",
    "pages": [
     "/regimens/fu-lv/"
@@ -3143,15 +2268,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/hla-a-02-01/",
    "pages": [
     "/biomarkers/hla-a-02-01/"
    ],
    "where": "src/data/biomarker-readouts-4.ts:244",
    "subject": "MAGE-A4 IHC 1F9 pharmDx",
+   "suggestedId": "mage-a4-ihc-1f9-pharmdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"mage-a4-ihc-1f9-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3181,27 +2307,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/dmmr-ihc/",
    "pages": [
     "/biomarkers/dmmr-ihc/"
    ],
    "where": "src/data/biomarker-readouts.ts:319",
    "subject": "MMR IHC Panel pharmDx (Dako Omnis)",
+   "suggestedId": "mmr-ihc-panel-pharmdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/bcr-abl1-transcript/",
-   "pages": [
-    "/biomarkers/bcr-abl1-transcript/"
-   ],
-   "where": "src/data/biomarker-readouts-3.ts:163",
-   "subject": "MolecularMD",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"mmr-ihc-panel-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3218,41 +2333,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/bcr-abl1-transcript/",
    "pages": [
     "/biomarkers/bcr-abl1-transcript/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:163",
    "subject": "MRDx BCR-ABL Test",
+   "suggestedId": "mrdx-bcr-abl",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:150 (+1 more)",
-   "subject": "Myriad Genetics",
-   "suggestedId": "myriad-genetics",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"myriad-genetics\" (company) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:193",
-   "subject": "Natera",
-   "suggestedId": "natera",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"natera\" (company) by name but the table has no id field, so the row cannot link to it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"mrdx-bcr-abl\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3282,51 +2372,55 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/ras-wild-type/",
    "pages": [
     "/biomarkers/ras-wild-type/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:97",
    "subject": "ONCO/Reveal Dx Lung and Colon Cancer Assay",
+   "suggestedId": "onco-reveal-dx-lung-colon",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"onco-reveal-dx-lung-colon\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/msi-high/",
    "pages": [
     "/biomarkers/msi-high/"
    ],
    "where": "src/data/biomarker-readouts.ts:341",
    "subject": "OncoMate MSI Dx Analysis System",
+   "suggestedId": "oncomate-msi-dx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"oncomate-msi-dx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/egfr-exon-20-insertion/",
    "pages": [
     "/biomarkers/egfr-exon-20-insertion/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:62",
    "subject": "Oncomine Dx Express Test",
+   "suggestedId": "oncomine-dx-express",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"oncomine-dx-express\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
     "/biomarkers/her2-ish-amplified/"
    ],
    "where": "src/data/biomarker-readouts.ts:239",
    "subject": "PathVysion HER-2 DNA Probe Kit",
+   "suggestedId": "pathvysion-her2",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"pathvysion-her2\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3355,18 +2449,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/ras-wild-type/",
-   "pages": [
-    "/biomarkers/ras-wild-type/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:97",
-   "subject": "Pillar Biosciences",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "id-empty-record-exists",
    "page": "/deals/",
    "pages": [
@@ -3377,31 +2459,6 @@
    "suggestedId": "point-biopharma",
    "confidence": "high",
    "detail": "deals.party: id is empty although record \"point-biopharma\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/msi-high/",
-   "pages": [
-    "/biomarkers/msi-high/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:341",
-   "subject": "Promega",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:75 (+4 more)",
-   "subject": "QIAGEN",
-   "suggestedId": "qiagen",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"qiagen\" (company) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3418,40 +2475,29 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/hla-a-02-01/",
    "pages": [
     "/biomarkers/hla-a-02-01/"
    ],
    "where": "src/data/biomarker-readouts-4.ts:244",
    "subject": "SeCore CDx HLA Sequencing System",
+   "suggestedId": "secore-cdx-hla",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"secore-cdx-hla\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:120",
-   "subject": "Thermo Fisher Scientific",
-   "suggestedId": "thermo-fisher",
-   "confidence": "high",
-   "detail": "assays.vendor: the row matches record \"thermo-fisher\" (company) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
    "page": "/biomarkers/braf-v600e/",
    "pages": [
     "/biomarkers/braf-v600e/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:141",
    "subject": "THxID BRAF Kit",
+   "suggestedId": "thxid-braf",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"thxid-braf\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3494,51 +2540,55 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/alk-fusion/",
    "pages": [
     "/biomarkers/alk-fusion/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:190",
    "subject": "Ventana ALK (D5F3) CDx Assay",
+   "suggestedId": "ventana-alk-d5f3-cdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-alk-d5f3-cdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/cldn18-2-expression/",
    "pages": [
     "/biomarkers/cldn18-2-expression/"
    ],
    "where": "src/data/biomarker-readouts-4.ts:101",
    "subject": "VENTANA CLDN18 (43-14A) RxDx Assay",
+   "suggestedId": "ventana-cldn18-43-14a",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-cldn18-43-14a\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/folr1-expression/",
    "pages": [
     "/biomarkers/folr1-expression/"
    ],
    "where": "src/data/biomarker-readouts-4.ts:112",
    "subject": "Ventana FOLR1 (FOLR-2.1) RxDx Assay",
+   "suggestedId": "ventana-folr1-rxdx",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-folr1-rxdx\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/met-overexpression/",
    "pages": [
     "/biomarkers/met-overexpression/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:39",
    "subject": "VENTANA MET (SP44) RxDx Assay",
+   "suggestedId": "ventana-met-sp44",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-met-sp44\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3555,15 +2605,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/pten-alteration/",
    "pages": [
     "/biomarkers/pten-alteration/"
    ],
    "where": "src/data/biomarker-readouts-3.ts:215",
    "subject": "VENTANA PTEN (SP218) RxDx Assay",
+   "suggestedId": "ventana-pten-sp218",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-pten-sp218\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -3580,27 +2631,29 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/alk-fusion/",
    "pages": [
     "/biomarkers/alk-fusion/"
    ],
    "where": "src/data/biomarker-readouts-2.ts:190",
    "subject": "Vysis ALK Break Apart FISH Probe Kit",
+   "suggestedId": "vysis-alk-break-apart-fish",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"vysis-alk-break-apart-fish\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/tp53-del17p/",
    "pages": [
     "/biomarkers/tp53-del17p/"
    ],
    "where": "src/data/biomarker-readouts-4.ts:181",
    "subject": "Vysis CLL FISH Probe Kit",
+   "suggestedId": "vysis-cll-fish",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"vysis-cll-fish\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -5560,19 +4613,6 @@
    "detail": "biotech company with no product records; its own text names NHWD-870, WD-890, WD-930, WD-940."
   },
   {
-   "cls": "hub",
-   "rule": "row-technology-not-on-record",
-   "page": "/technologies/cgp/",
-   "pages": [
-    "/technologies/cgp/"
-   ],
-   "where": "src/data/assays.ts:154",
-   "subject": "myChoice CDx",
-   "suggestedId": "mychoice-cdx",
-   "confidence": "medium",
-   "detail": "TUMOUR_TESTS row \"mychoice-cdx\" files \"mychoice-cdx\" under technology \"cgp\", but the record does not list it, so the technology page's Products tab omits the test."
-  },
-  {
    "cls": "prose",
    "rule": "code-without-record",
    "page": "/companies/nuvation-bio/",
@@ -6012,18 +5052,6 @@
     "/companies/foundation-medicine/"
    ],
    "where": "src/data/companies.ts:289",
-   "subject": "FoundationOne MRD",
-   "confidence": "medium",
-   "detail": "Product name \"FoundationOne MRD\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "product-without-record",
-   "page": "/companies/foundation-medicine/",
-   "pages": [
-    "/companies/foundation-medicine/"
-   ],
-   "where": "src/data/companies.ts:289",
    "subject": "FoundationOne Tracker",
    "confidence": "medium",
    "detail": "Product name \"FoundationOne Tracker\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
@@ -6123,6 +5151,18 @@
    "subject": "GS-0321",
    "confidence": "medium",
    "detail": "Drug code \"GS-0321\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
+  },
+  {
+   "cls": "prose",
+   "rule": "product-without-record",
+   "page": "/companies/quest-diagnostics/",
+   "pages": [
+    "/companies/quest-diagnostics/"
+   ],
+   "where": "src/data/supporting.ts:795",
+   "subject": "Haystack Oncology MRD",
+   "confidence": "medium",
+   "detail": "Product name \"Haystack Oncology MRD\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
   },
   {
    "cls": "prose",
@@ -6620,32 +5660,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:97 (+2 more)",
-   "subject": "Abbott Molecular",
-   "suggestedId": "abbott",
-   "confidence": "medium",
-   "detail": "assays.vendor: the row matches record \"abbott\" (company) on the first word (\"abbott laboratories\"), so it is probably a division or subsidiary but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:41 (+4 more)",
-   "subject": "Agilent",
-   "suggestedId": "agilent",
-   "confidence": "medium",
-   "detail": "assays.vendor: the row matches record \"agilent\" (company) on the first word (\"agilent technologies dako\"), so it is probably a division or subsidiary but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/kras-g12c/",
    "pages": [
     "/biomarkers/kras-g12c/"
@@ -6776,6 +5790,19 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/brca-somatic/",
+   "pages": [
+    "/biomarkers/brca-somatic/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:397",
+   "subject": "FoundationFocus CDxBRCA Assay",
+   "suggestedId": "foundationfocus-cdxbrca",
+   "confidence": "medium",
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"foundationfocus-cdxbrca\" (drug) by name but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"foundationfocus cdxbrca assay\"), e.g. an acquired company's name or a family record; check it is the same thing."
+  },
+  {
+   "cls": "side-table",
+   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/her2-ihc-3-plus/",
    "pages": [
     "/biomarkers/her2-ihc-3-plus/"
@@ -6866,19 +5893,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:189",
-   "subject": "Oncotype DX Breast Recurrence Score",
-   "suggestedId": "oncotype-dx",
-   "confidence": "medium",
-   "detail": "assays: the row matches record \"oncotype-dx\" (drug) on \"oncotype dx\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
    "rule": "id-empty-record-exists",
    "page": "/open-source/",
    "pages": [
@@ -6889,32 +5903,6 @@
    "suggestedId": "bc-cancer",
    "confidence": "medium",
    "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"bc-cancer\" (institution) matches on \"bc cancer\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:45 (+6 more)",
-   "subject": "Roche Diagnostics",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "assays.vendor: the row matches record \"roche-genentech\" (company) on \"roche\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
-   "page": "/assays/",
-   "pages": [
-    "/assays/"
-   ],
-   "where": "src/data/assays.ts:71 (+1 more)",
-   "subject": "Roche Molecular Systems",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "assays.vendor: the row matches record \"roche-genentech\" (company) on \"roche\" but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",

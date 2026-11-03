@@ -131,7 +131,7 @@ const drugs: DrugInput[] = [
     mechanism: "Blocks FGF ligand binding to FGFR2b and recruits NK-mediated ADCC.",
     mechanismSteps: ["Bemarituzumab binds the FGFR2b receptor on tumour cells", "Growth-factor ligands can no longer activate it", "Downstream RAS-MAPK signalling drops", "The afucosylated antibody tail recruits NK cells to kill the coated cells"],
     toxicity: [{ event: "Corneal adverse events (keratitis, dry eye)", note: "Frequent; dose-limiting" }, { event: "Stomatitis" }],
-    targets: ["fgfr2"], technologies: ["monoclonal-antibody"], companies: ["amgen"], cancers: ["gastric"], trials: ["fortitude-101"], pathways: ["ras-mapk"],
+    targets: ["fgfr2"], technologies: ["monoclonal-antibody"], companies: ["amgen", "five-prime-therapeutics"], cancers: ["gastric"], trials: ["fortitude-101"], pathways: ["ras-mapk"],
     links: [{ label: "Amgen topline announcement", url: "https://www.amgen.com/newsroom/press-releases/2025/06/amgen-announces-positive-topline-phase-3-results-for-bemarituzumab-in-fibroblast-growth-factor-receptor-2b-fgfr2b-positive-firstline-gastric-cancer" }] }),
   d({ id: "flot", name: "FLOT (5-FU, leucovorin, oxaliplatin, docetaxel)", modality: "Cytotoxic regimen", status: "standard-of-care", wikipedia: W("FLOT"),
     tldr: "FLOT is the four-drug chemotherapy given before and after surgery for stomach cancer in the West; since 2025 immunotherapy is added to it.",

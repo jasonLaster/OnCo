@@ -157,7 +157,7 @@ export const drugsPipelineWave6: DrugInput[] = [
   { id: "au-007", kind: "drug", name: "AU-007", code: "AU-007", aka: [], modality: "Monoclonal antibody", mechanism: "A monoclonal antibody, as described in the registry record.", status: "phase-2", asOf, tags, provenance,
     tldr: "AU-007 is a monoclonal antibody from Aulos Bioscience, Inc., in registered phase 2 trials for metastatic cancer, melanoma, non-small-cell lung cancer.",
     summary: "AU-007 is listed on ClinicalTrials.gov as an intervention in 1 registered phase 2 trial sponsored by Aulos Bioscience, Inc., in metastatic cancer, melanoma, non-small-cell lung cancer, small-cell lung cancer. A monoclonal antibody, as described in the registry record. OnCo records the agent from the registry alone; approvals, results and the sponsor's own description will follow as they are published.",
-    targets: [], cancers: ["metastatic-cancer","melanoma","nsclc","sclc"], companies: ["aulos-bioscience"], trials: ["nct05267626"],
+    targets: [], cancers: ["metastatic-cancer","melanoma","nsclc","sclc"], companies: ["aulos-bioscience", "biolojic-design"], trials: ["nct05267626"],
     links: [{ label: "ClinicalTrials.gov: trials of AU-007", url: "https://clinicaltrials.gov/search?intr=AU-007" }] },
   { id: "or502", kind: "drug", name: "OR502", code: "OR502", aka: [], modality: "Monoclonal antibody", mechanism: "A monoclonal antibody, as described in the registry record.", status: "phase-2", asOf, tags, provenance,
     tldr: "OR502 is a monoclonal antibody from OncoResponse, Inc., in registered phase 2 trials for metastatic cancer, melanoma, non-small-cell lung cancer.",

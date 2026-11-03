@@ -6,22 +6,22 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 | Class / rule | High | Medium | Low |
 |---|---:|---:|---:|
-| company/unjoined-company | 1 | 0 | 74 |
-| drug-cancer/medicine | 1 | 12 | 104 |
-| drug-cancer/non-medicine | 0 | 9 | 38 |
+| company/unjoined-company | 1 | 0 | 78 |
+| drug-cancer/medicine | 1 | 13 | 113 |
+| drug-cancer/non-medicine | 0 | 12 | 83 |
 | fragment/attach-file | 0 | 69 | 0 |
-| fragment/other-file | 0 | 0 | 233 |
+| fragment/other-file | 0 | 0 | 234 |
 | role/company-is-institution | 0 | 0 | 2 |
-| role/developer-type | 3 | 0 | 2 |
+| role/developer-type | 3 | 0 | 5 |
 | role/field-kind | 0 | 0 | 356 |
 | role/field-kind-namesake | 0 | 0 | 11 |
 | role/institution-is-company | 0 | 0 | 1 |
-| role/role-mixed | 41 | 21 | 0 |
+| role/role-mixed | 61 | 21 | 0 |
 | sponsor/alias-collision | 0 | 15 | 23 |
-| target/drug-target | 5 | 29 | 0 |
+| target/drug-target | 6 | 30 | 0 |
 | target/pathway-target | 0 | 0 | 39 |
 | target/trial-target | 0 | 7 | 5 |
-| time/company-after-approval | 0 | 0 | 11 |
+| time/company-after-approval | 0 | 0 | 12 |
 | time/company-after-trial | 0 | 0 | 15 |
 | time/paper-before-trial | 0 | 4 | 49 |
 | trial-cancer/unnamed-cancer | 0 | 25 | 1 |
@@ -29,52 +29,72 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## role
 
-65 high or medium.
+85 high or medium.
 
 - **high** `developer-type` capecitabine-temozolomide.companies → ecog-acrin: Capecitabine + temozolomide (CAPTEM) is credited to ECOG-ACRIN Cancer Research Group, a cooperative-group; a cooperative-group has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
 - **high** `developer-type` omega-funds.drugs → taletrectinib: Taletrectinib is credited to Omega Funds, a investor; a investor has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
 - **high** `developer-type` omega-funds.drugs → talimogene-laherparepvec: Talimogene laherparepvec is credited to Omega Funds, a investor; a investor has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
-- **high** `role-mixed` akt1-e17k.drugs: biomarker akt1-e17k lists 1 test(s) (foundationone-cdx) and 1 medicine(s) (capivasertib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` alk-fusion.drugs: biomarker alk-fusion lists 1 test(s) (foundationone-cdx) and 6 medicine(s) (alectinib, lorlatinib, crizotinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` braf-fusion.drugs: biomarker braf-fusion lists 1 test(s) (foundationone-cdx) and 1 medicine(s) (tovorafenib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` braf-v600e.drugs: biomarker braf-v600e lists 1 test(s) (therascreen-cdx) and 8 medicine(s) (dabrafenib, trametinib, dabrafenib-trametinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` brca-germline.drugs: biomarker brca-germline lists 1 test(s) (bracanalysis-cdx) and 4 medicine(s) (olaparib, talazoparib, niraparib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` brca-somatic.drugs: biomarker brca-somatic lists 2 test(s) (foundationone-cdx, mychoice-cdx) and 4 medicine(s) (olaparib, rucaparib, talazoparib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` ctdna-mrd-positive.drugs: biomarker ctdna-mrd-positive lists 5 test(s) (signatera, guardant-reveal, radar-mrd) and 1 medicine(s) (atezolizumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` dmmr-ihc.drugs: biomarker dmmr-ihc lists 1 test(s) (ventana-mmr-rxdx) and 5 medicine(s) (pembrolizumab, dostarlimab, nivolumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` egfr-exon-19-deletion.drugs: biomarker egfr-exon-19-deletion lists 5 test(s) (cobas-egfr-mutation-test, therascreen-cdx, oncomine-dx-target-test) and 7 medicine(s) (osimertinib, erlotinib, gefitinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` egfr-exon-20-insertion.drugs: biomarker egfr-exon-20-insertion lists 2 test(s) (guardant360-cdx, oncomine-dx-target-test) and 4 medicine(s) (amivantamab, sunvozertinib, mobocertinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` egfr-l858r.drugs: biomarker egfr-l858r lists 1 test(s) (cobas-egfr-mutation-test) and 7 medicine(s) (osimertinib, erlotinib, gefitinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` egfr-t790m.drugs: biomarker egfr-t790m lists 1 test(s) (cobas-egfr-mutation-test) and 1 medicine(s) (osimertinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` esr1-mutation-ctdna.drugs: biomarker esr1-mutation-ctdna lists 1 test(s) (guardant360-cdx) and 3 medicine(s) (elacestrant, imlunestrant, camizestrant) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` fgfr2-fusion-rearrangement.drugs: biomarker fgfr2-fusion-rearrangement lists 1 test(s) (foundationone-cdx) and 3 medicine(s) (pemigatinib, futibatinib, infigratinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` fgfr3-alteration.drugs: biomarker fgfr3-alteration lists 1 test(s) (therascreen-cdx) and 1 medicine(s) (erdafitinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` 1p19q-codeletion-readout.drugs: biomarker 1p19q-codeletion-readout lists 3 test(s) (caris-mi-profile, foundationone-cdx, tempus-xt-cdx) and 2 medicine(s) (vorasidenib, temozolomide) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` akt1-e17k.drugs: biomarker akt1-e17k lists 3 test(s) (foundationone-cdx, guardant360-cdx, tempus-xt-cdx) and 1 medicine(s) (capivasertib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` alk-fusion.drugs: biomarker alk-fusion lists 7 test(s) (foundationone-cdx, vysis-alk-break-apart-fish, ventana-alk-d5f3-cdx) and 6 medicine(s) (alectinib, lorlatinib, crizotinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` bcr-abl1-t315i.drugs: biomarker bcr-abl1-t315i lists 1 test(s) (foundationone-heme) and 2 medicine(s) (ponatinib, asciminib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` bcr-abl1-transcript.drugs: biomarker bcr-abl1-transcript lists 2 test(s) (mrdx-bcr-abl, foundationone-heme) and 6 medicine(s) (imatinib, dasatinib, nilotinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` braf-class-ii-iii.drugs: biomarker braf-class-ii-iii lists 4 test(s) (foundationone-cdx, tempus-xt-cdx, caris-mi-cancer-seek) and 2 medicine(s) (tovorafenib, trametinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` braf-fusion.drugs: biomarker braf-fusion lists 4 test(s) (foundationone-cdx, tempus-xt-cdx, trusight-oncology-comprehensive) and 1 medicine(s) (tovorafenib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` braf-v600e.drugs: biomarker braf-v600e lists 9 test(s) (therascreen-cdx, cobas-4800-braf-v600, thxid-braf) and 8 medicine(s) (dabrafenib, trametinib, dabrafenib-trametinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` brca-germline.drugs: biomarker brca-germline lists 3 test(s) (bracanalysis-cdx, mychoice-cdx, tempus-xt-cdx) and 4 medicine(s) (olaparib, talazoparib, niraparib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` brca-somatic.drugs: biomarker brca-somatic lists 6 test(s) (foundationone-cdx, mychoice-cdx, foundationfocus-cdxbrca) and 4 medicine(s) (olaparib, rucaparib, talazoparib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` cldn18-2-expression.drugs: biomarker cldn18-2-expression lists 1 test(s) (ventana-cldn18-43-14a) and 1 medicine(s) (zolbetuximab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` ctdna-mrd-positive.drugs: biomarker ctdna-mrd-positive lists 13 test(s) (signatera, guardant-reveal, radar-mrd) and 1 medicine(s) (atezolizumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` dmmr-ihc.drugs: biomarker dmmr-ihc lists 2 test(s) (ventana-mmr-rxdx, mmr-ihc-panel-pharmdx) and 5 medicine(s) (pembrolizumab, dostarlimab, nivolumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` egfr-exon-19-deletion.drugs: biomarker egfr-exon-19-deletion lists 8 test(s) (cobas-egfr-mutation-test, therascreen-cdx, oncomine-dx-target-test) and 7 medicine(s) (osimertinib, erlotinib, gefitinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` egfr-exon-20-insertion.drugs: biomarker egfr-exon-20-insertion lists 6 test(s) (guardant360-cdx, oncomine-dx-target-test, oncomine-dx-express) and 4 medicine(s) (amivantamab, sunvozertinib, mobocertinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` egfr-l858r.drugs: biomarker egfr-l858r lists 5 test(s) (cobas-egfr-mutation-test, foundationone-cdx, guardant360-cdx) and 7 medicine(s) (osimertinib, erlotinib, gefitinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` egfr-t790m.drugs: biomarker egfr-t790m lists 3 test(s) (cobas-egfr-mutation-test, foundationone-cdx, guardant360-cdx) and 1 medicine(s) (osimertinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` er-status.drugs: biomarker er-status lists 1 test(s) (oncotype-dx) and 9 medicine(s) (tamoxifen, letrozole, fulvestrant) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` esr1-mutation-ctdna.drugs: biomarker esr1-mutation-ctdna lists 3 test(s) (guardant360-cdx, foundationone-cdx, tempus-xt-cdx) and 3 medicine(s) (elacestrant, imlunestrant, camizestrant) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` fgfr2-fusion-rearrangement.drugs: biomarker fgfr2-fusion-rearrangement lists 4 test(s) (foundationone-cdx, tempus-xt-cdx, trusight-oncology-comprehensive) and 3 medicine(s) (pemigatinib, futibatinib, infigratinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` fgfr3-alteration.drugs: biomarker fgfr3-alteration lists 5 test(s) (therascreen-cdx, foundationone-cdx, tempus-xt-cdx) and 1 medicine(s) (erdafitinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` flt3-itd.drugs: biomarker flt3-itd lists 3 test(s) (leukostrat-cdx-flt3, foundationone-heme, neo-comprehensive) and 3 medicine(s) (midostaurin, quizartinib, gilteritinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` flt3-tkd.drugs: biomarker flt3-tkd lists 3 test(s) (leukostrat-cdx-flt3, foundationone-heme, neo-comprehensive) and 3 medicine(s) (midostaurin, gilteritinib, quizartinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` folr1-expression.drugs: biomarker folr1-expression lists 1 test(s) (ventana-folr1-rxdx) and 1 medicine(s) (mirvetuximab-soravtansine) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` h3-k27m.drugs: biomarker h3-k27m lists 3 test(s) (caris-mi-profile, foundationone-cdx, tempus-xt-cdx) and 1 medicine(s) (dordaviprone) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` her2-ihc-0.drugs: biomarker her2-ihc-0 lists 1 test(s) (her2-testing-assays) and 1 medicine(s) (trastuzumab-deruxtecan) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` her2-ihc-1-plus.drugs: biomarker her2-ihc-1-plus lists 1 test(s) (her2-testing-assays) and 1 medicine(s) (trastuzumab-deruxtecan) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` her2-ihc-2-plus.drugs: biomarker her2-ihc-2-plus lists 1 test(s) (her2-testing-assays) and 2 medicine(s) (trastuzumab-deruxtecan, trastuzumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` her2-ihc-3-plus.drugs: biomarker her2-ihc-3-plus lists 1 test(s) (her2-testing-assays) and 8 medicine(s) (trastuzumab, pertuzumab, trastuzumab-emtansine) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` her2-ish-amplified.drugs: biomarker her2-ish-amplified lists 1 test(s) (her2-testing-assays) and 4 medicine(s) (trastuzumab, pertuzumab, trastuzumab-emtansine) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` her2-ihc-3-plus.drugs: biomarker her2-ihc-3-plus lists 3 test(s) (her2-testing-assays, bond-oracle-her2-ihc, caris-mi-profile) and 8 medicine(s) (trastuzumab, pertuzumab, trastuzumab-emtansine) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` her2-ish-amplified.drugs: biomarker her2-ish-amplified lists 3 test(s) (her2-testing-assays, her2-fish-pharmdx, pathvysion-her2) and 4 medicine(s) (trastuzumab, pertuzumab, trastuzumab-emtansine) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` her2-low-ihc.drugs: biomarker her2-low-ihc lists 1 test(s) (her2-testing-assays) and 1 medicine(s) (trastuzumab-deruxtecan) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` her2-mutation.drugs: biomarker her2-mutation lists 2 test(s) (oncomine-dx-target-test, guardant360-cdx) and 2 medicine(s) (trastuzumab-deruxtecan, zongertinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` her2-mutation.drugs: biomarker her2-mutation lists 5 test(s) (oncomine-dx-target-test, guardant360-cdx, foundationone-cdx) and 2 medicine(s) (trastuzumab-deruxtecan, zongertinib) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` her2-ultralow.drugs: biomarker her2-ultralow lists 1 test(s) (her2-testing-assays) and 1 medicine(s) (trastuzumab-deruxtecan) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` hrd-positive.drugs: biomarker hrd-positive lists 1 test(s) (mychoice-cdx) and 3 medicine(s) (niraparib, olaparib, bevacizumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` idh1-r132.drugs: biomarker idh1-r132 lists 1 test(s) (oncomine-dx-target-test) and 3 medicine(s) (ivosidenib, olutasidenib, vorasidenib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` kras-g12c.drugs: biomarker kras-g12c lists 2 test(s) (therascreen-cdx, guardant360-cdx) and 6 medicine(s) (sotorasib, adagrasib, divarasib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` kras-g12d.drugs: biomarker kras-g12d lists 1 test(s) (therascreen-cdx) and 2 medicine(s) (cetuximab, panitumumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` met-ex14.drugs: biomarker met-ex14 lists 1 test(s) (foundationone-cdx) and 3 medicine(s) (capmatinib, tepotinib, capmatinib-tepotinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` msi-high.drugs: biomarker msi-high lists 2 test(s) (foundationone-cdx, caris-mi-cancer-seek) and 5 medicine(s) (pembrolizumab, nivolumab, ipilimumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` ntrk-fusion.drugs: biomarker ntrk-fusion lists 2 test(s) (foundationone-cdx, trusight-oncology-comprehensive) and 3 medicine(s) (larotrectinib, entrectinib, repotrectinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pd-l1-cps.drugs: biomarker pd-l1-cps lists 1 test(s) (dako-pd-l1-22c3-pharmdx) and 3 medicine(s) (pembrolizumab, nivolumab, sacituzumab-govitecan) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` hla-a-02-01.drugs: biomarker hla-a-02-01 lists 2 test(s) (secore-cdx-hla, mage-a4-ihc-1f9-pharmdx) and 2 medicine(s) (tebentafusp, afamitresgene-autoleucel) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` hrd-positive.drugs: biomarker hrd-positive lists 3 test(s) (mychoice-cdx, caris-mi-profile, tempus-xt-cdx) and 3 medicine(s) (niraparib, olaparib, bevacizumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` idh1-r132.drugs: biomarker idh1-r132 lists 7 test(s) (oncomine-dx-target-test, abbott-realtime-idh1, foundationone-cdx) and 3 medicine(s) (ivosidenib, olutasidenib, vorasidenib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` idh2-mutation.drugs: biomarker idh2-mutation lists 4 test(s) (abbott-realtime-idh2, foundationone-heme, tempus-xt-cdx) and 2 medicine(s) (enasidenib, vorasidenib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` kit-d816v.drugs: biomarker kit-d816v lists 2 test(s) (foundationone-heme, neo-comprehensive) and 2 medicine(s) (imatinib, avapritinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` kras-g12c.drugs: biomarker kras-g12c lists 7 test(s) (therascreen-cdx, guardant360-cdx, resolution-ctdx-first) and 6 medicine(s) (sotorasib, adagrasib, divarasib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` kras-g12d.drugs: biomarker kras-g12d lists 5 test(s) (therascreen-cdx, foundationone-cdx, tempus-xt-cdx) and 2 medicine(s) (cetuximab, panitumumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` met-amplification-readout.drugs: biomarker met-amplification-readout lists 4 test(s) (foundationone-cdx, guardant360-cdx, tempus-xt-cdx) and 4 medicine(s) (capmatinib, tepotinib, amivantamab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` met-ex14.drugs: biomarker met-ex14 lists 5 test(s) (foundationone-cdx, guardant360-cdx, tempus-xt-cdx) and 3 medicine(s) (capmatinib, tepotinib, capmatinib-tepotinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` met-overexpression.drugs: biomarker met-overexpression lists 1 test(s) (ventana-met-sp44) and 2 medicine(s) (telisotuzumab-vedotin, telisotuzumab-adizutecan) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` mgmt-promoter-methylation.drugs: biomarker mgmt-promoter-methylation lists 2 test(s) (caris-mi-profile, tempus-xt-cdx) and 1 medicine(s) (temozolomide) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` msi-high.drugs: biomarker msi-high lists 11 test(s) (foundationone-cdx, caris-mi-cancer-seek, idylla-cdx-msi) and 5 medicine(s) (pembrolizumab, nivolumab, ipilimumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` mycn-amp.drugs: biomarker mycn-amp lists 2 test(s) (foundationone-cdx, caris-mi-profile) and 1 medicine(s) (dinutuximab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` npm1-mutation.drugs: biomarker npm1-mutation lists 2 test(s) (foundationone-heme, neo-comprehensive) and 2 medicine(s) (ziftomenib, revumenib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` nrg1-fusion.drugs: biomarker nrg1-fusion lists 4 test(s) (foundationone-cdx, tempus-xt-cdx, caris-mi-profile) and 1 medicine(s) (zenocutuzumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` ntrk-fusion.drugs: biomarker ntrk-fusion lists 5 test(s) (foundationone-cdx, trusight-oncology-comprehensive, tempus-xt-cdx) and 3 medicine(s) (larotrectinib, entrectinib, repotrectinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pd-l1-cps.drugs: biomarker pd-l1-cps lists 4 test(s) (dako-pd-l1-22c3-pharmdx, pd-l1-ihc-28-8-pharmdx, omniseq-insight) and 3 medicine(s) (pembrolizumab, nivolumab, sacituzumab-govitecan) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` pd-l1-ic-score.drugs: biomarker pd-l1-ic-score lists 1 test(s) (ventana-pd-l1-sp142) and 1 medicine(s) (atezolizumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pd-l1-tc-score.drugs: biomarker pd-l1-tc-score lists 1 test(s) (ventana-pd-l1-sp263) and 3 medicine(s) (atezolizumab, nivolumab, ipilimumab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pd-l1-tps.drugs: biomarker pd-l1-tps lists 2 test(s) (dako-pd-l1-22c3-pharmdx, ventana-pd-l1-sp263) and 2 medicine(s) (pembrolizumab, cemiplimab) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pdgfra-exon-18-d842v.drugs: biomarker pdgfra-exon-18-d842v lists 1 test(s) (therascreen-cdx) and 2 medicine(s) (avapritinib, imatinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pik3ca-hotspot-mutation.drugs: biomarker pik3ca-hotspot-mutation lists 2 test(s) (therascreen-cdx, foundationone-cdx) and 3 medicine(s) (alpelisib, inavolisib, capivasertib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` pten-alteration.drugs: biomarker pten-alteration lists 1 test(s) (foundationone-cdx) and 2 medicine(s) (capivasertib, abiraterone) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` ras-wild-type.drugs: biomarker ras-wild-type lists 4 test(s) (therascreen-cdx, tempus-xt-cdx, foundationone-cdx) and 7 medicine(s) (cetuximab, panitumumab, encorafenib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` ret-fusion.drugs: biomarker ret-fusion lists 3 test(s) (oncomine-dx-target-test, foundationone-cdx, trusight-oncology-comprehensive) and 2 medicine(s) (selpercatinib, pralsetinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` ros1-fusion.drugs: biomarker ros1-fusion lists 2 test(s) (oncomine-dx-target-test, foundationone-cdx) and 4 medicine(s) (crizotinib, entrectinib, repotrectinib) in one drugs field: what measures it and what a result selects are not told apart
-- **high** `role-mixed` tmb-high.drugs: biomarker tmb-high lists 1 test(s) (foundationone-cdx) and 1 medicine(s) (pembrolizumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pd-l1-tc-score.drugs: biomarker pd-l1-tc-score lists 2 test(s) (ventana-pd-l1-sp263, pd-l1-ihc-28-8-pharmdx) and 3 medicine(s) (atezolizumab, nivolumab, ipilimumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pd-l1-tps.drugs: biomarker pd-l1-tps lists 3 test(s) (dako-pd-l1-22c3-pharmdx, ventana-pd-l1-sp263, omniseq-insight) and 2 medicine(s) (pembrolizumab, cemiplimab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pdgfra-exon-18-d842v.drugs: biomarker pdgfra-exon-18-d842v lists 4 test(s) (therascreen-cdx, foundationone-cdx, tempus-xt-cdx) and 2 medicine(s) (avapritinib, imatinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pik3ca-hotspot-mutation.drugs: biomarker pik3ca-hotspot-mutation lists 5 test(s) (therascreen-cdx, foundationone-cdx, guardant360-cdx) and 3 medicine(s) (alpelisib, inavolisib, capivasertib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` pten-alteration.drugs: biomarker pten-alteration lists 4 test(s) (foundationone-cdx, ventana-pten-sp218, tempus-xt-cdx) and 2 medicine(s) (capivasertib, abiraterone) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` ras-wild-type.drugs: biomarker ras-wild-type lists 7 test(s) (therascreen-cdx, tempus-xt-cdx, foundationone-cdx) and 7 medicine(s) (cetuximab, panitumumab, encorafenib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` ret-fusion.drugs: biomarker ret-fusion lists 6 test(s) (oncomine-dx-target-test, foundationone-cdx, trusight-oncology-comprehensive) and 2 medicine(s) (selpercatinib, pralsetinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` ros1-fusion.drugs: biomarker ros1-fusion lists 5 test(s) (oncomine-dx-target-test, foundationone-cdx, guardant360-cdx) and 4 medicine(s) (crizotinib, entrectinib, repotrectinib) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` tmb-high.drugs: biomarker tmb-high lists 10 test(s) (foundationone-cdx, caris-mi-cancer-seek, tempus-xt-cdx) and 1 medicine(s) (pembrolizumab) in one drugs field: what measures it and what a result selects are not told apart
+- **high** `role-mixed` tp53-del17p.drugs: biomarker tp53-del17p lists 6 test(s) (vysis-cll-fish, foundationone-cdx, foundationone-heme) and 1 medicine(s) (venetoclax) in one drugs field: what measures it and what a result selects are not told apart
 - **medium** `role-mixed` alk.drugs: target alk lists 1 test(s) (guardant360-cdx) and 4 medicine(s) (ceritinib, brigatinib, ensartinib) in one drugs field: what measures it and what a result selects are not told apart
 - **medium** `role-mixed` biomarker-stratified-design.drugs: term biomarker-stratified-design lists 3 test(s) (oncotype-dx, mammaprint, signatera) and 1 medicine(s) (niraparib) in one drugs field: what measures it and what a result selects are not told apart
 - **medium** `role-mixed` bladder-epicheck.drugs: technology bladder-epicheck lists 2 test(s) (cxbladder, urovysion) and 1 medicine(s) (bcg-intravesical) in one drugs field: what measures it and what a result selects are not told apart
@@ -99,10 +119,11 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## drug-cancer
 
-22 high or medium.
+26 high or medium.
 
 - **high** `medicine` pancreatoblastoma.drugs → vincristine: Vincristine (medicine) is linked to Pancreatoblastoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are all-leukemia, dlbcl, hodgkin-lymphoma, rhabdomyosarcoma
 - **medium** `medicine` adu-s100.cancers → melanoma: ADU-S100 (MIW815) (medicine) is linked to Melanoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
+- **medium** `medicine` avzo-1418.cancers → nsclc: AVZO-1418 (medicine) is linked to Non-small-cell lung cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → gastric: Catumaxomab (medicine) is linked to Gastric & gastro-oesophageal junction cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → pancreatic: Catumaxomab (medicine) is linked to Pancreatic ductal adenocarcinoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → colorectal: Catumaxomab (medicine) is linked to Colorectal cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
@@ -114,8 +135,11 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `medicine` omidubicel.cancers → mds: Omidubicel (medicine) is linked to Myelodysplastic syndromes / neoplasms (MDS) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` pegylated-liposomal-doxorubicin.cancers → multiple-myeloma: Pegylated liposomal doxorubicin (medicine) is linked to Multiple myeloma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` plicamycin.cancers → testicular: Plicamycin (medicine) is linked to Testicular germ cell tumours with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
+- **medium** `non-medicine` bostongene-tumor-portrait.cancers → urothelial: Tumor Portrait (test) is linked to Bladder & urothelial cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `non-medicine` gallbladder.drugs → foundationone-cdx: FoundationOne CDx / Liquid CDx (test) is linked to Gallbladder cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are tnbc, pancreatic, colorectal
 - **medium** `non-medicine` gallbladder.drugs → ventana-mmr-rxdx: VENTANA MMR RxDx Panel (test) is linked to Gallbladder cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are endometrial, colorectal, pancreatic
+- **medium** `non-medicine` guardant-reveal.cancers → nsclc: Guardant Reveal (test) is linked to Non-small-cell lung cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
+- **medium** `non-medicine` neo-comprehensive.cancers → mds: Neo Comprehensive (test) is linked to Myelodysplastic syndromes / neoplasms (MDS) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `non-medicine` panseer.cancers → gastric: PanSeer (test) is linked to Gastric & gastro-oesophageal junction cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `non-medicine` tnbc.drugs → ventana-mmr-rxdx: VENTANA MMR RxDx Panel (test) is linked to Triple-negative breast cancer (TNBC) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are endometrial, colorectal, pancreatic
 - **medium** `non-medicine` tnbc.drugs → trusight-oncology-comprehensive: TruSight Oncology Comprehensive (test) is linked to Triple-negative breast cancer (TNBC) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are pancreatic, colorectal
@@ -206,13 +230,14 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## target
 
-41 high or medium.
+43 high or medium.
 
 - **high** `drug-target` ateganosine.targets → tert: Ateganosine (THIO) is linked to target TERT, which neither record's text names; its modality and mechanism name PD-1 instead
 - **high** `drug-target` degarelix.targets → androgen-receptor: Degarelix is linked to target Androgen receptor, which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
 - **high** `drug-target` goserelin.targets → estrogen-receptor: Goserelin / leuprolide (ovarian function suppression) is linked to target Estrogen receptor (ERα), which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
 - **high** `drug-target` leuprolide.targets → androgen-receptor: Leuprolide (leuprorelin) and GnRH agonists is linked to target Androgen receptor, which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
 - **high** `drug-target` megestrol-progestins.targets → estrogen-receptor: Progestins (megestrol acetate, medroxyprogesterone, levonorgestrel IUD) is linked to target Estrogen receptor (ERα), which neither record's text names; its modality and mechanism name Progesterone receptor (PGR) instead
+- **high** `drug-target` realgar-indigo-naturalis.targets → rara: Realgar-indigo naturalis formulation is linked to target Retinoic acid receptor alpha (RARA), which neither record's text names; its modality and mechanism name PML instead
 - **medium** `drug-target` acitretin.targets → rara: Acitretin is linked to target Retinoic acid receptor alpha (RARA), which neither record's text names
 - **medium** `drug-target` aldoxorubicin.targets → top2a: Aldoxorubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
 - **medium** `drug-target` amrubicin.targets → top2a: Amrubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
@@ -238,6 +263,7 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `drug-target` peginterferon-alfa-2b.targets → ifnar1: Peginterferon alfa-2b is linked to target Interferon alpha receptor (IFNAR1), which neither record's text names
 - **medium** `drug-target` pirarubicin.targets → top2a: Pirarubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
 - **medium** `drug-target` pixantrone.targets → top2a: Pixantrone is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
+- **medium** `drug-target` pnt2003.targets → sstr2: Lutetium Lu 177 dotatate (PNT2003) is linked to target Somatostatin receptor 2, which neither record's text names
 - **medium** `drug-target` rindopepimut.targets → egfr: Rindopepimut is linked to target EGFR, which neither record's text names
 - **medium** `drug-target` sorafenib.targets → braf: Sorafenib is linked to target BRAF, which neither record's text names; its modality and mechanism name FLT3, KIT instead
 - **medium** `drug-target` teniposide.targets → top2a: Teniposide is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
@@ -312,7 +338,7 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `attach-file` src/lib/side-effects.ts:43: /\bmds\b|myelodysplastic|acute leukaemia|malignan|second primary|squamous cell carcinoma|keratoacanthoma|endometrial c.../i fires only mid-word on 3 corpus input(s), e.g. "phase 1 study of trop2 car/il-15 tgfbr2 ko nk cell in patients with or", "phase 1 dose escalation and expansion study of intralesional trop2-car", "premalignant"
 - **medium** `attach-file` src/lib/side-effects.ts:46: /colitis/i fires only mid-word on 1 corpus input(s), e.g. "enterocolitis"
 - **medium** `attach-file` src/lib/side-effects.ts:53: /dysgeusia|taste/i fires only mid-word on 1 corpus input(s), e.g. "antiandrogens for hair: spironolactone, finasteride, dutasteride"
-- **medium** `attach-file` src/lib/side-effects.ts:54: /pancrea|lipase/i fires only mid-word on 21 corpus input(s), e.g. "pancrelipase", "non-functioning enteropancreatic nets, grade 1-2: lanreotide 120 mg vs", "a phase i/ii, multicenter, open-label, single-arm, dose-escalation and", "durvalumab and tremelimumab in combination with propranolol and chemot"
+- **medium** `attach-file` src/lib/side-effects.ts:54: /pancrea|lipase/i fires only mid-word on 22 corpus input(s), e.g. "pancrelipase", "non-functioning enteropancreatic nets, grade 1-2: lanreotide 120 mg vs", "a phase i/ii, multicenter, open-label, single-arm, dose-escalation and", "durvalumab and tremelimumab in combination with propranolol and chemot"
 - **medium** `attach-file` src/lib/side-effects.ts:65: /\b(alt|ast|ggt)\b|transamin|hepat|bilirubin|veno-occlusive/i fires only mid-word on 48 corpus input(s), e.g. "intrahepatic, perihilar, distal and gallbladder cancer", "previously treated fgfr2-rearranged intrahepatic cholangiocarcinoma: f", "indirect hyperbilirubinaemia", "her2 status in extrahepatic cholangiocarcinoma and gallbladder carcino"
 - **medium** `attach-file` src/lib/side-effects.ts:66: /\brenal\b|nephr|proteinuria|creatinine/i fires only mid-word on 6 corpus input(s), e.g. "study of trop2 car engineered il15-transduced cord blood-derived nk ce", "phase i/ii study of trop2 car engineered il15-transduced cord blood-de", "radioligand therapy (beta, norepinephrine transporter)", "norepinephrine transporter uptake of radio-iodinated benzylguanidine; "
 - **medium** `attach-file` src/lib/side-effects.ts:67: /cystitis|haematuria|dysuria|pollakiuria|micturition|urinary (frequency|urgency)|bladder/i fires only mid-word on 50+ corpus input(s), e.g. "intrahepatic, perihilar, distal and gallbladder cancer", "gallbladder cancer", "gallbladder carcinoma", "carcinoma of the gallbladder"

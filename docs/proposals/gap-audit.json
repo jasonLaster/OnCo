@@ -1,11 +1,11 @@
 {
  "generated": "2026-11-03",
  "counts": {
-  "side-table": 170,
+  "side-table": 83,
   "prose": 91,
   "hub": 33,
-  "one-way": 13,
-  "company-no-products": 170,
+  "one-way": 4,
+  "company-no-products": 169,
   "duplicate": 1
  },
  "precision": {
@@ -28,6 +28,7 @@
     "/biomarkers/braf-v600e/",
     "/biomarkers/egfr-exon-19-deletion/",
     "/biomarkers/fgfr2-fusion-rearrangement/",
+    "/biomarkers/her2-ish-amplified/",
     "/biomarkers/kras-g12d/",
     "/biomarkers/met-ex14/",
     "/biomarkers/msi-high/",
@@ -40,7 +41,7 @@
     "/biomarkers/tmb-high/",
     "/biomarkers/brca-somatic/"
    ],
-   "where": "src/data/biomarker-readouts-3.ts:204 (+16 more)",
+   "where": "src/data/biomarker-readouts-3.ts:204 (+17 more)",
    "subject": "FoundationOne CDx",
    "suggestedId": "foundationone-cdx",
    "confidence": "medium",
@@ -48,22 +49,24 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/mfolfox6/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/alk-fusion/",
    "pages": [
-    "/regimens/mfolfox6/",
-    "/regimens/folfiri/",
-    "/regimens/folfirinox/",
-    "/regimens/mfolfirinox-adjuvant/",
-    "/regimens/nalirifox/",
-    "/regimens/flot/",
-    "/regimens/nivo-folfox-gastric/"
+    "/biomarkers/alk-fusion/",
+    "/biomarkers/braf-v600e/",
+    "/biomarkers/egfr-l858r/",
+    "/biomarkers/hrr-gene-mutation/",
+    "/biomarkers/met-ex14/",
+    "/biomarkers/ntrk-fusion/",
+    "/biomarkers/pik3ca-hotspot-mutation/",
+    "/biomarkers/ros1-fusion/",
+    "/biomarkers/brca-somatic/"
    ],
-   "where": "src/data/regimens.ts:78 (+6 more)",
-   "subject": "Leucovorin (folinic acid)",
-   "suggestedId": "leucovorin",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"leucovorin\" (drug) matches by name."
+   "where": "src/data/biomarker-readouts-2.ts:190 (+8 more)",
+   "subject": "FoundationOne Liquid CDx",
+   "suggestedId": "foundationone-cdx",
+   "confidence": "medium",
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -87,25 +90,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/biomarkers/alk-fusion/",
-   "pages": [
-    "/biomarkers/alk-fusion/",
-    "/biomarkers/egfr-l858r/",
-    "/biomarkers/met-ex14/",
-    "/biomarkers/ntrk-fusion/",
-    "/biomarkers/pik3ca-hotspot-mutation/",
-    "/biomarkers/ros1-fusion/",
-    "/biomarkers/brca-somatic/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:190 (+6 more)",
-   "subject": "FoundationOne Liquid CDx",
-   "suggestedId": "foundationone-cdx",
-   "confidence": "medium",
-   "detail": "biomarker companionDiagnostics.device: the row matches record \"foundationone-cdx\" (drug) inside its name \"foundationone cdx liquid cdx\" but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/braf-v600e/",
    "pages": [
     "/biomarkers/braf-v600e/",
@@ -123,37 +107,20 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/docetaxel-prostate/",
+   "rule": "no-record",
+   "page": "/biomarkers/braf-v600e/",
    "pages": [
-    "/regimens/docetaxel-prostate/",
-    "/regimens/cabazitaxel/",
-    "/regimens/abiraterone/",
-    "/regimens/r-chop/",
-    "/regimens/pola-r-chp/"
+    "/biomarkers/braf-v600e/",
+    "/biomarkers/egfr-exon-19-deletion/",
+    "/biomarkers/egfr-exon-20-insertion/",
+    "/biomarkers/esr1-mutation-ctdna/",
+    "/biomarkers/her2-mutation/",
+    "/biomarkers/kras-g12c/"
    ],
-   "where": "src/data/regimens.ts:233 (+4 more)",
-   "subject": "Prednisone",
-   "suggestedId": "prednisone",
+   "where": "src/data/biomarker-readouts-2.ts:141 (+5 more)",
+   "subject": "Guardant360® Liquid CDx",
    "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"prednisone\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/lenalidomide/",
-    "/drugs/pomalidomide/",
-    "/drugs/idecabtagene-vicleucel/",
-    "/drugs/lisocabtagene-maraleucel/"
-   ],
-   "where": "src/data/deals.ts:205",
-   "subject": "Celgene",
-   "suggestedId": "bms",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"bms\" (company) matches by name. The match is on an alias of the record (\"celgene\"), e.g. an acquired company's name or a family record; check it is the same thing."
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -163,10 +130,11 @@
     "/biomarkers/her2-ihc-0/",
     "/biomarkers/her2-ihc-1-plus/",
     "/biomarkers/her2-ihc-2-plus/",
+    "/biomarkers/her2-ihc-3-plus/",
     "/biomarkers/her2-low-ihc/",
     "/biomarkers/her2-ultralow/"
    ],
-   "where": "src/data/biomarker-readouts.ts:204 (+4 more)",
+   "where": "src/data/biomarker-readouts.ts:204 (+5 more)",
    "subject": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
    "suggestedId": "her2-testing-assays",
    "confidence": "medium",
@@ -174,64 +142,19 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/braf-v600e/",
    "pages": [
-    "/deals/",
-    "/drugs/enfortumab-vedotin/",
-    "/drugs/tisotumab-vedotin/",
-    "/drugs/brentuximab-vedotin/",
-    "/drugs/tucatinib/"
+    "/biomarkers/braf-v600e/",
+    "/biomarkers/msi-high/",
+    "/biomarkers/pik3ca-hotspot-mutation/",
+    "/biomarkers/ras-wild-type/"
    ],
-   "where": "src/data/deals.ts:232",
-   "subject": "Seagen",
-   "suggestedId": "pfizer",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"pfizer\" (company) matches by name. The match is on an alias of the record (\"seagen\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/encorafenib/",
-    "/drugs/binimetinib/"
-   ],
-   "where": "src/data/deals.ts:213",
-   "subject": "Array BioPharma",
+   "where": "src/data/biomarker-readouts-2.ts:141 (+3 more)",
+   "subject": "MI Cancer Seek (MCS)",
+   "suggestedId": "caris-mi-cancer-seek",
    "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/dualitybio/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:78",
-   "subject": "BNT324",
-   "suggestedId": "bnt324",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"bnt324\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/capox/",
-   "pages": [
-    "/regimens/capox/",
-    "/regimens/captem/",
-    "/regimens/capecitabine-create-x/"
-   ],
-   "where": "src/data/regimens.ts:82 (+2 more)",
-   "subject": "Capecitabine",
-   "suggestedId": "capecitabine",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"capecitabine\" (drug) matches by name."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"caris-mi-cancer-seek\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -250,50 +173,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/abvd/",
-   "pages": [
-    "/regimens/abvd/",
-    "/regimens/bv-avd/",
-    "/regimens/n-avd/"
-   ],
-   "where": "src/data/regimens.ts:297 (+2 more)",
-   "subject": "Dacarbazine",
-   "suggestedId": "dacarbazine",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"dacarbazine\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/dualitybio/",
-    "/companies/avenzo/"
-   ],
-   "where": "src/data/deals.ts:90",
-   "subject": "DB-1418, AVZO-1418",
-   "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/vrd/",
-   "pages": [
-    "/regimens/vrd/",
-    "/regimens/d-vrd/",
-    "/regimens/drd/"
-   ],
-   "where": "src/data/regimens.ts:312 (+2 more)",
-   "subject": "Dexamethasone",
-   "suggestedId": "dexamethasone",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"dexamethasone\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-record",
    "page": "/deals/",
    "pages": [
@@ -308,147 +187,17 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/hansoh-pharma/",
-    "/companies/gsk/"
-   ],
-   "where": "src/data/deals.ts:138",
-   "subject": "HS-20089",
-   "suggestedId": "hs-20089",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"hs-20089\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/hansoh-pharma/",
-    "/companies/gsk/"
-   ],
-   "where": "src/data/deals.ts:108",
-   "subject": "HS-20093",
-   "suggestedId": "hs-20093",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"hs-20093\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-record",
    "page": "/deals/",
    "pages": [
     "/deals/",
-    "/companies/innovent/",
-    "/companies/roche-genentech/"
-   ],
-   "where": "src/data/deals.ts:156",
-   "subject": "IBI3009",
-   "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/innovent/",
-    "/companies/takeda/"
-   ],
-   "where": "src/data/deals.ts:165",
-   "subject": "IBI343",
-   "suggestedId": "ibi343",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"ibi343\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/innovent/",
-    "/companies/takeda/"
-   ],
-   "where": "src/data/deals.ts:165",
-   "subject": "IBI363",
-   "suggestedId": "ibi363",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"ibi363\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/mirvetuximab-soravtansine/",
-    "/drugs/pivekimab-sunirine/"
-   ],
-   "where": "src/data/deals.ts:243",
-   "subject": "ImmunoGen",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/legend-biotech/",
+    "/companies/mariana-oncology/",
     "/companies/novartis/"
    ],
-   "where": "src/data/deals.ts:143",
-   "subject": "LB2102",
+   "where": "src/data/deals.ts:267",
+   "subject": "MC-339",
    "confidence": "high",
    "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/merck/",
-    "/companies/sino-biopharm/"
-   ],
-   "where": "src/data/deals.ts:94 (+1 more)",
-   "subject": "LM-299",
-   "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/selpercatinib/",
-    "/drugs/pirtobrutinib/"
-   ],
-   "where": "src/data/deals.ts:210",
-   "subject": "Loxo Oncology",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/ripretinib/",
-    "/drugs/vimseltinib/"
-   ],
-   "where": "src/data/deals.ts:264",
-   "subject": "Ono Pharmaceutical",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -466,47 +215,17 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/morphosys/",
-    "/companies/novartis/"
-   ],
-   "where": "src/data/deals.ts:255",
-   "subject": "Pelabresib",
-   "suggestedId": "pelabresib",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"pelabresib\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/medilink/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:82",
-   "subject": "YL202",
-   "suggestedId": "yl202",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"yl202\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-record",
-   "page": "/deals/",
+   "page": "/biomarkers/alk-fusion/",
    "pages": [
-    "/deals/",
-    "/companies/medilink/",
-    "/companies/roche-genentech/"
+    "/biomarkers/alk-fusion/",
+    "/biomarkers/her2-ihc-3-plus/",
+    "/biomarkers/her2-ish-amplified/"
    ],
-   "where": "src/data/deals.ts:86",
-   "subject": "YL211",
+   "where": "src/data/biomarker-readouts-2.ts:190 (+2 more)",
+   "subject": "Ventana Medical Systems, Inc.",
    "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
   },
   {
    "cls": "duplicate",
@@ -533,95 +252,6 @@
    ],
    "where": "src/data/deals.ts:273",
    "subject": "AraLinQ site-specific ADC linker platform and preclinical ADCs",
-   "confidence": "medium",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/dualitybio/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:78",
-   "subject": "BNT323",
-   "suggestedId": "trastuzumab-pamirtecan",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"trastuzumab-pamirtecan\" (drug) matches by name. The match is on an alias of the record (\"bnt323\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/biontech/",
-    "/companies/bms/"
-   ],
-   "where": "src/data/deals.ts:103 (+1 more)",
-   "subject": "BNT327",
-   "suggestedId": "pm8002",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"pm8002\" (drug) matches by name. The match is on an alias of the record (\"bnt327\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/dualitybio/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:78",
-   "subject": "DB-1303",
-   "suggestedId": "trastuzumab-pamirtecan",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"trastuzumab-pamirtecan\" (drug) matches by name. The match is on an alias of the record (\"db 1303\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/dualitybio/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:78",
-   "subject": "DB-1311",
-   "suggestedId": "bnt324",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"bnt324\" (drug) matches by name. The match is on an alias of the record (\"db 1311\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/adagrasib/",
-    "/drugs/mrtx1133/"
-   ],
-   "where": "src/data/deals.ts:237",
-   "subject": "Mirati Therapeutics",
-   "suggestedId": "bms",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"bms\" (company) matches by name. The match is on an alias of the record (\"mirati therapeutics\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/personalis/",
-    "/companies/tempus/"
-   ],
-   "where": "src/data/deals.ts:291",
-   "subject": "NeXT Personal tumour-informed MRD test",
    "confidence": "medium",
    "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
   },
@@ -837,20 +467,6 @@
    "detail": "pd-l1-ic-score: \"ventana-pd-l1-sp263\" is a test on target \"pdl1\" for atezolizumab, a drug this readout's thresholds name, but the readout does not list it."
   },
   {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/avenzo/",
-   "pages": [
-    "/companies/avenzo/",
-    "/drugs/avzo-103/"
-   ],
-   "where": "src/data/companies.ts:167",
-   "subject": "Avenzo Therapeutics -> AVZO-103",
-   "suggestedId": "avzo-103",
-   "confidence": "high",
-   "detail": "avenzo's own text names \"AVZO-103\", which is record \"avzo-103\", but the record's companies (none) do not include avenzo and the company does not list it, so neither page links to the other."
-  },
-  {
    "cls": "prose",
    "rule": "product-without-record",
    "page": "/drugs/navdx/",
@@ -862,143 +478,6 @@
    "subject": "CareDx",
    "confidence": "high",
    "detail": "Product name \"CareDx\" appears in the text of 2 pages and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/lutathera/"
-   ],
-   "where": "src/data/deals.ts:199",
-   "subject": "Advanced Accelerator Applications",
-   "suggestedId": "advanced-accelerator-applications",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"advanced-accelerator-applications\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/astrazeneca/"
-   ],
-   "where": "src/data/deals.ts:249",
-   "subject": "AZD0120",
-   "suggestedId": "azd0120",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"azd0120\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/avapritinib/"
-   ],
-   "where": "src/data/deals.ts:279",
-   "subject": "Blueprint Medicines",
-   "suggestedId": "blueprint-medicines",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"blueprint-medicines\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/toripalimab/"
-   ],
-   "where": "src/data/deals.ts:114",
-   "subject": "Coherus BioSciences",
-   "suggestedId": "coherus",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"coherus\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/bemarituzumab/"
-   ],
-   "where": "src/data/deals.ts:226",
-   "subject": "Five Prime Therapeutics",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/magrolimab/"
-   ],
-   "where": "src/data/deals.ts:216",
-   "subject": "Forty Seven",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/astrazeneca/"
-   ],
-   "where": "src/data/deals.ts:249",
-   "subject": "GC012F",
-   "suggestedId": "gc012f",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"gc012f\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/hengrui/"
-   ],
-   "where": "src/data/deals.ts:134",
-   "subject": "HRS-1167",
-   "suggestedId": "hrs-1167",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"hrs-1167\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/gsk/"
-   ],
-   "where": "src/data/deals.ts:270",
-   "subject": "IDRX-42",
-   "suggestedId": "idrx-42",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"idrx-42\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/sacituzumab-govitecan/"
-   ],
-   "where": "src/data/deals.ts:220",
-   "subject": "Immunomedics",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1016,30 +495,31 @@
   },
   {
    "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/braf-v600e/",
    "pages": [
-    "/deals/",
-    "/companies/novartis/"
+    "/biomarkers/braf-v600e/",
+    "/biomarkers/egfr-exon-19-deletion/"
    ],
-   "where": "src/data/deals.ts:267",
-   "subject": "MC-339",
+   "where": "src/data/biomarker-readouts-2.ts:141 (+1 more)",
+   "subject": "MI Cancer Seek",
+   "suggestedId": "caris-mi-cancer-seek",
    "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"caris-mi-cancer-seek\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/biomarkers/msi-high/",
+   "page": "/biomarkers/egfr-exon-20-insertion/",
    "pages": [
-    "/biomarkers/msi-high/",
-    "/biomarkers/ras-wild-type/"
+    "/biomarkers/egfr-exon-20-insertion/",
+    "/biomarkers/her2-mutation/"
    ],
-   "where": "src/data/biomarker-readouts.ts:341 (+1 more)",
-   "subject": "MI Cancer Seek (MCS)",
-   "suggestedId": "caris-mi-cancer-seek",
+   "where": "src/data/biomarker-readouts-2.ts:62 (+1 more)",
+   "subject": "Oncomine Dx Express Test",
+   "suggestedId": "oncomine-dx-express",
    "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: the row matches record \"caris-mi-cancer-seek\" (drug) by name but the table has no id field, so the row cannot link to it."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"oncomine-dx-express\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -1071,60 +551,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/biontech/"
-   ],
-   "where": "src/data/deals.ts:147",
-   "subject": "PM8002",
-   "suggestedId": "pm8002",
-   "confidence": "high",
-   "detail": "deals.assets: assets is empty although record \"pm8002\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/rinatabart-sesutecan/"
-   ],
-   "where": "src/data/deals.ts:261",
-   "subject": "ProfoundBio",
-   "suggestedId": "profoundbio",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"profoundbio\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/hengrui/"
-   ],
-   "where": "src/data/deals.ts:152",
-   "subject": "SHR-4849, IDE849",
-   "confidence": "high",
-   "detail": "deals.assets: no drug record carries this name and assets is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/rovalpituzumab-tesirine/"
-   ],
-   "where": "src/data/deals.ts:195",
-   "subject": "Stemcentrx",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/ntrk-fusion/",
    "pages": [
@@ -1136,45 +562,6 @@
    "suggestedId": "trusight-oncology-comprehensive",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"trusight-oncology-comprehensive\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/repotrectinib/"
-   ],
-   "where": "src/data/deals.ts:229",
-   "subject": "Turning Point Therapeutics",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/zilovertamab-vedotin/"
-   ],
-   "where": "src/data/deals.ts:223",
-   "subject": "VelosBio",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/biomarkers/her2-ish-amplified/",
-   "pages": [
-    "/biomarkers/her2-ish-amplified/",
-    "/biomarkers/her2-low-ihc/"
-   ],
-   "where": "src/data/biomarker-readouts.ts:239 (+1 more)",
-   "subject": "Ventana HER2 Dual ISH DNA Probe Cocktail",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "hub",
@@ -1226,39 +613,11 @@
     "/companies/abbott/",
     "/drugs/oncotype-dx/"
    ],
-   "where": "src/data/tests.ts:752",
+   "where": "src/data/sponsor-aliases.ts:190",
    "subject": "Abbott Laboratories -> Oncotype DX",
    "suggestedId": "oncotype-dx",
    "confidence": "medium",
    "detail": "abbott's own text names \"Oncotype DX\", which is record \"oncotype-dx\", but the record's companies (exact-sciences) do not include abbott and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/biolojic-design/",
-   "pages": [
-    "/companies/biolojic-design/",
-    "/drugs/au-007/"
-   ],
-   "where": "src/data/companies-new-2026-sponsors.ts:791",
-   "subject": "Biolojic Design -> AU-007",
-   "suggestedId": "au-007",
-   "confidence": "medium",
-   "detail": "biolojic-design's own text names \"AU-007\", which is record \"au-007\", but the record's companies (aulos-bioscience) do not include biolojic-design and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/dualitybio/",
-   "pages": [
-    "/companies/dualitybio/",
-    "/drugs/bnt324/"
-   ],
-   "where": "src/data/companies.ts:159",
-   "subject": "Duality Biotherapeutics -> DB-1311",
-   "suggestedId": "bnt324",
-   "confidence": "medium",
-   "detail": "dualitybio's own text names \"DB-1311\", which is record \"bnt324\", but the record's companies (biontech) do not include dualitybio and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
   },
   {
    "cls": "one-way",
@@ -1277,48 +636,6 @@
   {
    "cls": "one-way",
    "rule": "company-text-names-unlinked-product",
-   "page": "/companies/fusion-pharma/",
-   "pages": [
-    "/companies/fusion-pharma/",
-    "/drugs/fpi-2265/"
-   ],
-   "where": "src/data/companies.ts:271",
-   "subject": "Fusion Pharmaceuticals (AstraZeneca) -> FPI-2265",
-   "suggestedId": "fpi-2265",
-   "confidence": "medium",
-   "detail": "fusion-pharma's own text names \"FPI-2265\", which is record \"fpi-2265\", but the record's companies (astrazeneca) do not include fusion-pharma and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/genfleet/",
-   "pages": [
-    "/companies/genfleet/",
-    "/drugs/vs-7375/"
-   ],
-   "where": "src/data/china.ts:346",
-   "subject": "GenFleet Therapeutics -> VS-7375",
-   "suggestedId": "vs-7375",
-   "confidence": "medium",
-   "detail": "genfleet's own text names \"VS-7375\", which is record \"vs-7375\", but the record's companies (verastem) do not include genfleet and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/ionis/",
-   "pages": [
-    "/companies/ionis/",
-    "/drugs/custirsen/"
-   ],
-   "where": "src/data/companies-sponsors.ts:1217",
-   "subject": "Ionis Pharmaceuticals -> OGX-011",
-   "suggestedId": "custirsen",
-   "confidence": "medium",
-   "detail": "ionis's own text names \"OGX-011\", which is record \"custirsen\", but the record's companies (achieve-life-sciences) do not include ionis and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
    "page": "/companies/mdxhealth/",
    "pages": [
     "/companies/mdxhealth/",
@@ -1329,48 +646,6 @@
    "suggestedId": "oncotype-dx",
    "confidence": "medium",
    "detail": "mdxhealth's own text names \"Oncotype DX\", which is record \"oncotype-dx\", but the record's companies (exact-sciences) do not include mdxhealth and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/merrimack-pharmaceuticals/",
-   "pages": [
-    "/companies/merrimack-pharmaceuticals/",
-    "/drugs/liposomal-irinotecan/"
-   ],
-   "where": "src/data/companies-sponsors.ts:963",
-   "subject": "Merrimack Pharmaceuticals -> MM-398",
-   "suggestedId": "liposomal-irinotecan",
-   "confidence": "medium",
-   "detail": "merrimack-pharmaceuticals's own text names \"MM-398\", which is record \"liposomal-irinotecan\", but the record's companies (ipsen, servier) do not include merrimack-pharmaceuticals and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/orion-orion-pharma/",
-   "pages": [
-    "/companies/orion-orion-pharma/",
-    "/drugs/opevesostat/"
-   ],
-   "where": "src/data/companies-sponsors.ts:131",
-   "subject": "Orion, Orion Pharma -> ODM-208",
-   "suggestedId": "opevesostat",
-   "confidence": "medium",
-   "detail": "orion-orion-pharma's own text names \"ODM-208\", which is record \"opevesostat\", but the record's companies (merck) do not include orion-orion-pharma and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
-  },
-  {
-   "cls": "one-way",
-   "rule": "company-text-names-unlinked-product",
-   "page": "/companies/relay-therapeutics/",
-   "pages": [
-    "/companies/relay-therapeutics/",
-    "/drugs/lirafugratinib/"
-   ],
-   "where": "src/data/companies-startups.ts:1513",
-   "subject": "Relay Therapeutics -> RLY-4008",
-   "suggestedId": "lirafugratinib",
-   "confidence": "medium",
-   "detail": "relay-therapeutics's own text names \"RLY-4008\", which is record \"lirafugratinib\", but the record's companies (elevar-therapeutics) do not include relay-therapeutics and the company does not list it, so neither page links to the other. The record names another company: it may be a partner's product; check before linking."
   },
   {
    "cls": "prose",
@@ -1388,100 +663,30 @@
   {
    "cls": "side-table",
    "rule": "id-empty-record-exists",
-   "page": "/deals/",
+   "page": "/biomarkers/ezh2-y646-mutation/",
    "pages": [
-    "/deals/",
-    "/drugs/oncotype-dx/"
+    "/biomarkers/ezh2-y646-mutation/",
+    "/biomarkers/ras-wild-type/"
    ],
-   "where": "src/data/deals.ts:285",
-   "subject": "Abbott",
-   "suggestedId": "abbott",
+   "where": "src/data/spikes/lymphoma-molecular.ts:820 (+1 more)",
+   "subject": "Roche Molecular Systems, Inc.",
+   "suggestedId": "roche-genentech",
    "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"abbott\" (company) matches on the first word (\"abbott laboratories\"), so it is probably a division or subsidiary."
+   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"roche-genentech\" (company) matches on \"roche\"."
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
-    "/deals/",
-    "/drugs/arx788/"
+    "/biomarkers/her2-ish-amplified/",
+    "/biomarkers/her2-low-ihc/"
    ],
-   "where": "src/data/deals.ts:252",
-   "subject": "Ambrx Biopharma",
-   "suggestedId": "ambrx",
+   "where": "src/data/biomarker-readouts.ts:239 (+1 more)",
+   "subject": "Ventana HER2 Dual ISH DNA Probe Cocktail",
+   "suggestedId": "her2-testing-assays",
    "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"ambrx\" (company) matches by name. The match is on an alias of the record (\"ambrx biopharma\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/pluvicto/"
-   ],
-   "where": "src/data/deals.ts:202",
-   "subject": "Endocyte",
-   "suggestedId": "novartis",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"novartis\" (company) matches by name. The match is on an alias of the record (\"endocyte\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/nirogacestat/"
-   ],
-   "where": "src/data/deals.ts:134 (+1 more)",
-   "subject": "Merck KGaA",
-   "suggestedId": "merck-kgaa",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"merck-kgaa\" (company) matches by name; also springworks."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/drugs/ibrutinib/"
-   ],
-   "where": "src/data/deals.ts:192",
-   "subject": "Pharmacyclics",
-   "suggestedId": "abbvie",
-   "confidence": "medium",
-   "detail": "deals.party: id is empty although record \"abbvie\" (company) matches by name. The match is on an alias of the record (\"pharmacyclics\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/eli-lilly/"
-   ],
-   "where": "src/data/deals.ts:240",
-   "subject": "PNT2002",
-   "suggestedId": "lu177-psma-it",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"lu177-psma-it\" (drug) matches by name. The match is on an alias of the record (\"pnt2002\"), e.g. an acquired company's name or a family record; check it is the same thing."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/",
-    "/companies/pfizer/"
-   ],
-   "where": "src/data/deals.ts:99",
-   "subject": "SSGJ-707",
-   "suggestedId": "pf-08634404",
-   "confidence": "medium",
-   "detail": "deals.assets: assets is empty although record \"pf-08634404\" (drug) matches by name. The match is on an alias of the record (\"ssgj 707\"), e.g. an acquired company's name or a family record; check it is the same thing."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"her2-testing-assays\" (drug) by name but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"ventana her2 dual ish dna probe cocktail\"), e.g. an acquired company's name or a family record; check it is the same thing."
   },
   {
    "cls": "side-table",
@@ -1544,6 +749,18 @@
    "subject": "Insight Molecular Diagnostics (formerly Oncocyte)",
    "confidence": "high",
    "detail": "diagnostics company with no product records; its own text names GraftAssureDx."
+  },
+  {
+   "cls": "company-no-products",
+   "rule": "side-table-products-no-record",
+   "page": "/companies/mariana-oncology/",
+   "pages": [
+    "/companies/mariana-oncology/"
+   ],
+   "where": "src/data/companies-startups.ts:186",
+   "subject": "Mariana Oncology",
+   "confidence": "high",
+   "detail": "radiopharma company with no product records; side tables name Preclinical radioligand pipeline including MC-339 (actinium-225, small-cell lung cancer); its own text names MC-339."
   },
   {
    "cls": "company-no-products",
@@ -1841,19 +1058,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:99",
-   "subject": "3SBio",
-   "suggestedId": "3sbio",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"3sbio\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/idh1-r132/",
    "pages": [
@@ -1880,54 +1084,15 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:194",
-   "subject": "Arcellx",
-   "suggestedId": "arcellx",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"arcellx\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:27",
-   "subject": "Bayer",
-   "suggestedId": "bayer",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"bayer\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:191",
-   "subject": "Bicara Therapeutics",
-   "suggestedId": "bicara-therapeutics",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"bicara-therapeutics\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-record",
-   "page": "/deals/",
+   "page": "/biomarkers/her2-ihc-3-plus/",
    "pages": [
-    "/deals/"
+    "/biomarkers/her2-ihc-3-plus/"
    ],
-   "where": "src/data/deals.ts:147",
-   "subject": "Biotheus",
+   "where": "src/data/biomarker-readouts.ts:151",
+   "subject": "Biogenex Laboratories, Inc.",
    "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
+   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -1944,19 +1109,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:75",
-   "subject": "Boston Scientific",
-   "suggestedId": "boston-scientific",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"boston-scientific\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/brca-germline/",
    "pages": [
@@ -1967,58 +1119,6 @@
    "suggestedId": "bracanalysis-cdx",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"bracanalysis-cdx\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:1194",
-   "subject": "Cancer Commons",
-   "suggestedId": "cancer-commons",
-   "confidence": "high",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"cancer-commons\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:7653",
-   "subject": "Children's Hospital of Philadelphia",
-   "suggestedId": "chop",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"chop\" (institution) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:63",
-   "subject": "Clarity Pharmaceuticals",
-   "suggestedId": "clarity-pharmaceuticals",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"clarity-pharmaceuticals\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:192",
-   "subject": "Clovis Oncology",
-   "suggestedId": "clovis-oncology",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"clovis-oncology\" (company) matches by name."
   },
   {
    "cls": "side-table",
@@ -2035,6 +1135,30 @@
   },
   {
    "cls": "side-table",
+   "rule": "no-record",
+   "page": "/biomarkers/ezh2-y646-mutation/",
+   "pages": [
+    "/biomarkers/ezh2-y646-mutation/"
+   ],
+   "where": "src/data/spikes/lymphoma-molecular.ts:820",
+   "subject": "cobas EZH2 Mutation Test",
+   "confidence": "high",
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+  },
+  {
+   "cls": "side-table",
+   "rule": "no-record",
+   "page": "/biomarkers/ras-wild-type/",
+   "pages": [
+    "/biomarkers/ras-wild-type/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:97",
+   "subject": "cobas KRAS Mutation Test",
+   "confidence": "high",
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+  },
+  {
+   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/ras-wild-type/",
    "pages": [
@@ -2048,107 +1172,15 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
+   "rule": "no-record",
+   "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
-    "/isotopes/"
+    "/biomarkers/her2-ish-amplified/"
    ],
-   "where": "src/data/isotopes.ts:21 (+3 more)",
-   "subject": "Curium",
-   "suggestedId": "curium",
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "HER2 CISH pharmDx Kit",
    "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"curium\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/7-3/",
-   "pages": [
-    "/regimens/7-3/"
-   ],
-   "where": "src/data/regimens.ts:330",
-   "subject": "Cytarabine",
-   "suggestedId": "cytarabine",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"cytarabine\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:2525",
-   "subject": "DermaSensor",
-   "suggestedId": "dermasensor-inc",
-   "confidence": "high",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"dermasensor-inc\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:21 (+3 more)",
-   "subject": "Eckert & Ziegler",
-   "suggestedId": "eckert-ziegler",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"eckert-ziegler\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:3281",
-   "subject": "EvolutionaryScale",
-   "suggestedId": "evolutionaryscale",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"evolutionaryscale\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/flu-cy-car-t/",
-   "pages": [
-    "/regimens/flu-cy-car-t/"
-   ],
-   "where": "src/data/regimens.ts:345",
-   "subject": "Fludarabine",
-   "suggestedId": "fludarabine",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"fludarabine\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:249",
-   "subject": "Gracell Biotechnologies",
-   "suggestedId": "gracell-biotechnologies",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"gracell-biotechnologies\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:193",
-   "subject": "Helsinn",
-   "suggestedId": "helsinn",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"helsinn\" (company) matches by name."
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -2165,44 +1197,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:57",
-   "subject": "IBA",
-   "suggestedId": "iba",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"iba\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:152",
-   "subject": "IDEAYA Biosciences",
-   "suggestedId": "ideaya-biosciences",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"ideaya-biosciences\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-record",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:270",
-   "subject": "IDRx",
-   "confidence": "high",
-   "detail": "deals.party: no company or institution record carries this name and id is empty; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/msi-high/",
    "pages": [
@@ -2216,16 +1210,27 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
+   "rule": "no-record",
+   "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
-    "/isotopes/"
+    "/biomarkers/her2-ish-amplified/"
    ],
-   "where": "src/data/isotopes.ts:21 (+2 more)",
-   "subject": "IRE",
-   "suggestedId": "ire",
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "INFORM HER-2/neu",
    "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"ire\" (company) matches by name."
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+  },
+  {
+   "cls": "side-table",
+   "rule": "no-record",
+   "page": "/biomarkers/her2-ihc-3-plus/",
+   "pages": [
+    "/biomarkers/her2-ihc-3-plus/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:151",
+   "subject": "InSite Her-2/neu (CB11) Monoclonal Antibody",
+   "confidence": "high",
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
   },
   {
    "cls": "side-table",
@@ -2242,32 +1247,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:94 (+1 more)",
-   "subject": "LaNova Medicines",
-   "suggestedId": "lanova-medicines",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"lanova-medicines\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/fu-lv/",
-   "pages": [
-    "/regimens/fu-lv/"
-   ],
-   "where": "src/data/regimens.ts:440",
-   "subject": "Leucovorin",
-   "suggestedId": "leucovorin",
-   "confidence": "high",
-   "detail": "regimens.components: drugId is empty although record \"leucovorin\" (drug) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/hla-a-02-01/",
    "pages": [
@@ -2278,32 +1257,6 @@
    "suggestedId": "mage-a4-ihc-1f9-pharmdx",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"mage-a4-ihc-1f9-pharmdx\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:267",
-   "subject": "Mariana Oncology",
-   "suggestedId": "mariana-oncology",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"mariana-oncology\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:427",
-   "subject": "Melanoma Institute Australia",
-   "suggestedId": "melanoma-institute-australia",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"melanoma-institute-australia\" (institution) matches by name."
   },
   {
    "cls": "side-table",
@@ -2320,19 +1273,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:428",
-   "subject": "Monash University",
-   "suggestedId": "alfred-health-monash",
-   "confidence": "high",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"alfred-health-monash\" (institution) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/bcr-abl1-transcript/",
    "pages": [
@@ -2346,29 +1286,16 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/egfr-exon-19-deletion/",
    "pages": [
-    "/isotopes/"
+    "/biomarkers/egfr-exon-19-deletion/"
    ],
-   "where": "src/data/isotopes.ts:27",
-   "subject": "NorthStar Medical Radioisotopes",
-   "suggestedId": "northstar-medical-radioisotopes",
+   "where": "src/data/biomarker-readouts-2.ts:13",
+   "subject": "ONCO/Reveal Dx Lung & Colon Cancer Assay (O/RDx-LCCA)",
+   "suggestedId": "onco-reveal-dx-lung-colon",
    "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"northstar-medical-radioisotopes\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:27",
-   "subject": "Nusano",
-   "suggestedId": "nusano",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"nusano\" (company) matches by name."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"onco-reveal-dx-lung-colon\" (drug) by name but the table has no id field, so the row cannot link to it."
   },
   {
    "cls": "side-table",
@@ -2399,19 +1326,6 @@
   {
    "cls": "side-table",
    "rule": "no-id-field-record-exists",
-   "page": "/biomarkers/egfr-exon-20-insertion/",
-   "pages": [
-    "/biomarkers/egfr-exon-20-insertion/"
-   ],
-   "where": "src/data/biomarker-readouts-2.ts:62",
-   "subject": "Oncomine Dx Express Test",
-   "suggestedId": "oncomine-dx-express",
-   "confidence": "high",
-   "detail": "biomarker companionDiagnostics.device: the row matches record \"oncomine-dx-express\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "no-id-field-record-exists",
    "page": "/biomarkers/her2-ish-amplified/",
    "pages": [
     "/biomarkers/her2-ish-amplified/"
@@ -2425,53 +1339,26 @@
   {
    "cls": "side-table",
    "rule": "no-record",
-   "page": "/biomarkers/her2-ihc-3-plus/",
+   "page": "/biomarkers/braf-v600e/",
    "pages": [
-    "/biomarkers/her2-ihc-3-plus/"
+    "/biomarkers/braf-v600e/"
    ],
-   "where": "src/data/biomarker-readouts.ts:151",
-   "subject": "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+   "where": "src/data/biomarker-readouts-2.ts:141",
+   "subject": "Personal Genome Diagnostics, Inc.",
+   "confidence": "high",
+   "detail": "biomarker companionDiagnostics.maker: no company record carries this name and companyId is empty; pages fed by records miss it."
+  },
+  {
+   "cls": "side-table",
+   "rule": "no-record",
+   "page": "/biomarkers/braf-v600e/",
+   "pages": [
+    "/biomarkers/braf-v600e/"
+   ],
+   "where": "src/data/biomarker-readouts-2.ts:141",
+   "subject": "PGDx elio tissue complete CDx",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
-   "pages": [
-    "/isotopes/"
-   ],
-   "where": "src/data/isotopes.ts:33",
-   "subject": "Perspective Therapeutics",
-   "suggestedId": "perspective-therapeutics",
-   "confidence": "high",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"perspective-therapeutics\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/deals/",
-   "pages": [
-    "/deals/"
-   ],
-   "where": "src/data/deals.ts:240",
-   "subject": "POINT Biopharma",
-   "suggestedId": "point-biopharma",
-   "confidence": "high",
-   "detail": "deals.party: id is empty although record \"point-biopharma\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:6068",
-   "subject": "Quibim",
-   "suggestedId": "quibim",
-   "confidence": "high",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"quibim\" (company) matches by name."
   },
   {
    "cls": "side-table",
@@ -2488,6 +1375,18 @@
   },
   {
    "cls": "side-table",
+   "rule": "no-record",
+   "page": "/biomarkers/her2-ish-amplified/",
+   "pages": [
+    "/biomarkers/her2-ish-amplified/"
+   ],
+   "where": "src/data/biomarker-readouts.ts:239",
+   "subject": "SPOT-LIGHT HER2 CISH Kit",
+   "confidence": "high",
+   "detail": "biomarker companionDiagnostics.device: no drug record carries this name; pages fed by records miss it."
+  },
+  {
+   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/braf-v600e/",
    "pages": [
@@ -2498,45 +1397,6 @@
    "suggestedId": "thxid-braf",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"thxid-braf\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:10671",
-   "subject": "University Hospital Basel",
-   "suggestedId": "usb-basel",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"usb-basel\" (institution) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:2117",
-   "subject": "University of Hong Kong",
-   "suggestedId": "queen-mary-hospital-hku",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"queen-mary-hospital-hku\" (institution) matches by name."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:8853",
-   "subject": "Varian",
-   "suggestedId": "varian",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"varian\" (company) matches by name."
   },
   {
    "cls": "side-table",
@@ -2618,19 +1478,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:10339",
-   "subject": "Vevo Therapeutics",
-   "suggestedId": "vevo-therapeutics",
-   "confidence": "high",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"vevo-therapeutics\" (company) matches by name."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/alk-fusion/",
    "pages": [
@@ -2654,19 +1501,6 @@
    "suggestedId": "vysis-cll-fish",
    "confidence": "high",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"vysis-cll-fish\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:2317",
-   "subject": "Wellcome Sanger Institute",
-   "suggestedId": "wellcome-sanger",
-   "confidence": "high",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"wellcome-sanger\" (institution) matches by name."
   },
   {
    "cls": "company-no-products",
@@ -3027,18 +1861,6 @@
    "subject": "BioInvent International",
    "confidence": "medium",
    "detail": "biotech company with no product records; its own text names BI-1607, BI-1910, BI-1808."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "named-products-no-record",
-   "page": "/companies/biolojic-design/",
-   "pages": [
-    "/companies/biolojic-design/"
-   ],
-   "where": "src/data/companies-new-2026-sponsors.ts:791",
-   "subject": "Biolojic Design",
-   "confidence": "medium",
-   "detail": "biotech company with no product records; its own text names TEV-325."
   },
   {
    "cls": "company-no-products",
@@ -3855,18 +2677,6 @@
    "subject": "March Biosciences",
    "confidence": "medium",
    "detail": "cell-therapy company with no product records; its own text names MB-105."
-  },
-  {
-   "cls": "company-no-products",
-   "rule": "named-products-no-record",
-   "page": "/companies/mariana-oncology/",
-   "pages": [
-    "/companies/mariana-oncology/"
-   ],
-   "where": "src/data/companies-startups.ts:186",
-   "subject": "Mariana Oncology",
-   "confidence": "medium",
-   "detail": "radiopharma company with no product records; its own text names MC-339."
   },
   {
    "cls": "company-no-products",
@@ -4783,18 +3593,6 @@
   {
    "cls": "prose",
    "rule": "code-without-record",
-   "page": "/companies/avenzo/",
-   "pages": [
-    "/companies/avenzo/"
-   ],
-   "where": "src/data/companies.ts:167",
-   "subject": "AVZO-1418",
-   "confidence": "medium",
-   "detail": "Drug code \"AVZO-1418\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "code-without-record",
    "page": "/companies/bridgebio-oncology-therapeutics/",
    "pages": [
     "/companies/bridgebio-oncology-therapeutics/"
@@ -5191,6 +3989,18 @@
   {
    "cls": "prose",
    "rule": "code-without-record",
+   "page": "/companies/immunogen/",
+   "pages": [
+    "/companies/immunogen/"
+   ],
+   "where": "src/data/companies-deal-parties.ts:48",
+   "subject": "IMGN-151",
+   "confidence": "medium",
+   "detail": "Drug code \"IMGN-151\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
+  },
+  {
+   "cls": "prose",
+   "rule": "code-without-record",
    "page": "/companies/immix-biopharma/",
    "pages": [
     "/companies/immix-biopharma/"
@@ -5307,18 +4117,6 @@
    "subject": "LM-168",
    "confidence": "medium",
    "detail": "Drug code \"LM-168\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
-  },
-  {
-   "cls": "prose",
-   "rule": "code-without-record",
-   "page": "/companies/lanova-medicines/",
-   "pages": [
-    "/companies/lanova-medicines/"
-   ],
-   "where": "src/data/companies-sponsors.ts:30",
-   "subject": "LM-299",
-   "confidence": "medium",
-   "detail": "Drug code \"LM-299\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
   },
   {
    "cls": "prose",
@@ -5527,6 +4325,18 @@
   {
    "cls": "prose",
    "rule": "code-without-record",
+   "page": "/companies/biolojic-design/",
+   "pages": [
+    "/companies/biolojic-design/"
+   ],
+   "where": "src/data/companies-new-2026-sponsors.ts:791",
+   "subject": "TEV-325",
+   "confidence": "medium",
+   "detail": "Drug code \"TEV-325\" appears in the text of 1 page and matches no drug record by name, aka, brand or code."
+  },
+  {
+   "cls": "prose",
+   "rule": "code-without-record",
    "page": "/companies/shenzhen-targetrx/",
    "pages": [
     "/companies/shenzhen-targetrx/"
@@ -5646,19 +4456,6 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:190",
-   "subject": "Abbott",
-   "suggestedId": "abbott",
-   "confidence": "medium",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"abbott\" (company) matches on the first word (\"abbott laboratories\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
    "rule": "no-id-field-record-exists",
    "page": "/biomarkers/kras-g12c/",
    "pages": [
@@ -5690,7 +4487,7 @@
    "pages": [
     "/open-source/"
    ],
-   "where": "src/data/open-source.ts:4090",
+   "where": "src/data/open-source.ts:4093",
    "subject": "Boston University, Dries lab",
    "suggestedId": "boston-scientific",
    "confidence": "medium",
@@ -5699,24 +4496,11 @@
   {
    "cls": "side-table",
    "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:3973",
-   "subject": "Broad Institute and Brigham and Women's Hospital, Theodoris lab",
-   "suggestedId": "broad-institute",
-   "confidence": "medium",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"broad-institute\" (institution) matches on the first word (\"broad institute of mit and harvard\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
    "page": "/software/",
    "pages": [
     "/software/"
    ],
-   "where": "src/data/software.ts:1666",
+   "where": "src/data/software.ts:1667",
    "subject": "Civica",
    "suggestedId": "civica-rx",
    "confidence": "medium",
@@ -5742,24 +4526,11 @@
    "pages": [
     "/open-source/"
    ],
-   "where": "src/data/open-source.ts:2804",
+   "where": "src/data/open-source.ts:2805",
    "subject": "Dartmouth, Hassanpour lab",
    "suggestedId": "dartmouth-cancer-center",
    "confidence": "medium",
    "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"dartmouth-cancer-center\" (institution) matches on the first word (\"dartmouth cancer center\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/7-3/",
-   "pages": [
-    "/regimens/7-3/"
-   ],
-   "where": "src/data/regimens.ts:330",
-   "subject": "Daunorubicin 60-90 mg/m² or idarubicin 12 mg/m²",
-   "suggestedId": "daunorubicin",
-   "confidence": "medium",
-   "detail": "regimens.components: drugId is empty although record \"daunorubicin\" (drug) matches on \"daunorubicin\"; also idarubicin."
   },
   {
    "cls": "side-table",
@@ -5773,19 +4544,6 @@
    "suggestedId": "dpcg",
    "confidence": "medium",
    "detail": "SPONSOR_PATTERNS: id is empty although record \"dpcg\" (company) matches on the first word (\"dutch pancreatic cancer group\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/regimens/off/",
-   "pages": [
-    "/regimens/off/"
-   ],
-   "where": "src/data/regimens.ts:451",
-   "subject": "Folinic acid",
-   "suggestedId": "leucovorin",
-   "confidence": "medium",
-   "detail": "regimens.components: drugId is empty although record \"leucovorin\" (drug) matches by name. The match is on an alias of the record (\"folinic acid\"), e.g. an acquired company's name or a family record; check it is the same thing."
   },
   {
    "cls": "side-table",
@@ -5820,50 +4578,11 @@
    "pages": [
     "/open-source/"
    ],
-   "where": "src/data/open-source.ts:2294",
+   "where": "src/data/open-source.ts:2295",
    "subject": "Indiana University",
    "suggestedId": "iu-simon",
    "confidence": "medium",
    "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"iu-simon\" (institution) matches on the first word (\"indiana university melvin and bren simon comprehensive cancer center\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:4075",
-   "subject": "Institut Curie and CEA",
-   "suggestedId": "institut-curie",
-   "confidence": "medium",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"institut-curie\" (institution) matches on \"institut curie\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:413",
-   "subject": "Maastricht UMC",
-   "suggestedId": "maastricht-umc",
-   "confidence": "medium",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"maastricht-umc\" (institution) matches on the first word (\"maastricht umc comprehensive cancer center\"), so it is probably a division or subsidiary."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/sponsors/",
-   "pages": [
-    "/sponsors/"
-   ],
-   "where": "src/data/sponsor-aliases.ts:17",
-   "subject": "Merck KGaA (EMD Serono)",
-   "suggestedId": "merck-kgaa",
-   "confidence": "medium",
-   "detail": "SPONSOR_PATTERNS: id is empty although record \"merck-kgaa\" (company) matches by name; also springworks."
   },
   {
    "cls": "side-table",
@@ -5880,55 +4599,29 @@
   },
   {
    "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/isotopes/",
+   "rule": "no-id-field-record-exists",
+   "page": "/biomarkers/her2-ihc-3-plus/",
    "pages": [
-    "/isotopes/"
+    "/biomarkers/her2-ihc-3-plus/"
    ],
-   "where": "src/data/isotopes.ts:69",
-   "subject": "NTP",
-   "suggestedId": "ntp-radioisotopes",
+   "where": "src/data/biomarker-readouts.ts:151",
+   "subject": "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+   "suggestedId": "her2-testing-assays",
    "confidence": "medium",
-   "detail": "isotopes.supplierText: supplierIds is empty although record \"ntp-radioisotopes\" (company) matches on the first word (\"ntp radioisotopes\"), so it is probably a division or subsidiary."
+   "detail": "biomarker companionDiagnostics.device: the row matches record \"her2-testing-assays\" (drug) by name but the table has no id field, so the row cannot link to it. The match is on an alias of the record (\"pathway anti her 2 neu 4b5 rabbit monoclonal primary antibody\"), e.g. an acquired company's name or a family record; check it is the same thing."
   },
   {
    "cls": "side-table",
    "rule": "id-empty-record-exists",
-   "page": "/open-source/",
+   "page": "/biomarkers/egfr-exon-19-deletion/",
    "pages": [
-    "/open-source/"
+    "/biomarkers/egfr-exon-19-deletion/"
    ],
-   "where": "src/data/open-source.ts:9333",
-   "subject": "Qurit lab, BC Cancer Research Institute",
-   "suggestedId": "bc-cancer",
+   "where": "src/data/biomarker-readouts-2.ts:13",
+   "subject": "Pillar Biosciences, Inc.",
+   "suggestedId": "pillar-biosciences",
    "confidence": "medium",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"bc-cancer\" (institution) matches on \"bc cancer\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:6394",
-   "subject": "Roche Sequencing Solutions",
-   "suggestedId": "roche-genentech",
-   "confidence": "medium",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"roche-genentech\" (company) matches on \"roche\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:8764 (+1 more)",
-   "subject": "Roth lab, BC Cancer",
-   "suggestedId": "bc-cancer",
-   "confidence": "medium",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"bc-cancer\" (institution) matches on \"bc cancer\"."
+   "detail": "biomarker companionDiagnostics.maker: companyId is empty although record \"pillar-biosciences\" (company) matches on \"pillar biosciences\"."
   },
   {
    "cls": "side-table",
@@ -5950,7 +4643,7 @@
    "pages": [
     "/software/"
    ],
-   "where": "src/data/software.ts:1580",
+   "where": "src/data/software.ts:1581",
    "subject": "Stanford University",
    "suggestedId": "stanford",
    "confidence": "medium",
@@ -5963,7 +4656,7 @@
    "pages": [
     "/open-source/"
    ],
-   "where": "src/data/open-source.ts:10400",
+   "where": "src/data/open-source.ts:10412",
    "subject": "The Cancer Imaging Archive, Frederick National Laboratory",
    "suggestedId": "tcia",
    "confidence": "medium",
@@ -6037,24 +4730,11 @@
   {
    "cls": "side-table",
    "rule": "id-empty-record-exists",
-   "page": "/open-source/",
-   "pages": [
-    "/open-source/"
-   ],
-   "where": "src/data/open-source.ts:8588 (+1 more)",
-   "subject": "University of Washington, Institute for Protein Design",
-   "suggestedId": "institute-for-protein-design",
-   "confidence": "medium",
-   "detail": "openSourceProjects.maintainer: maintainerId is empty although record \"institute-for-protein-design\" (institution) matches on \"institute for protein design\"."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
    "page": "/software/",
    "pages": [
     "/software/"
    ],
-   "where": "src/data/software.ts:6382",
+   "where": "src/data/software.ts:6387",
    "subject": "Vanderbilt University",
    "suggestedId": "vanderbilt-ingram",
    "confidence": "medium",
@@ -6072,19 +4752,6 @@
    "suggestedId": "ventana-pd-l1-sp142",
    "confidence": "medium",
    "detail": "biomarker companionDiagnostics.device: the row matches record \"ventana-pd-l1-sp142\" (drug) by name but the table has no id field, so the row cannot link to it."
-  },
-  {
-   "cls": "side-table",
-   "rule": "id-empty-record-exists",
-   "page": "/software/",
-   "pages": [
-    "/software/"
-   ],
-   "where": "src/data/software.ts:7509",
-   "subject": "World Health Organization",
-   "suggestedId": "who",
-   "confidence": "medium",
-   "detail": "softwareProducts.vendor: vendorId is empty although record \"who\" (institution) matches by name. The match is on an alias of the record (\"world health organization\"), e.g. an acquired company's name or a family record; check it is the same thing."
   },
   {
    "cls": "side-table",

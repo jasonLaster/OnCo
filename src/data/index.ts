@@ -78,6 +78,11 @@ import { institutionsWorld } from "./institutions/world";
 import { institutionsBodies } from "./institutions/bodies";
 import { institutionsEurope } from "./institutions/europe";
 import { russiaInstitutions, russiaPapers } from "./russia-entities";
+import { canadaInstitutions, canadaPapers } from "./canada-entities";
+import { koreaInstitutions, koreaPapers } from "./korea-entities";
+import { netherlandsInstitutions, netherlandsPapers, netherlandsTrials } from "./netherlands-entities";
+import { franceInstitutions, francePapers, franceTrials } from "./france-entities";
+import { italyInstitutions, italyPapers, italyPeople } from "./italy-entities";
 import { institutionsCentresWave3 } from "./institutions/centres-wave3";
 import { institutionsDonorFoundations } from "./institutions/donor-foundations";
 import { foundationModels } from "./foundation-models";
@@ -282,6 +287,11 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsEurope,
   ...russiaInstitutions,
   ...russiaPapers,
+  ...canadaInstitutions, ...canadaPapers,
+  ...koreaInstitutions, ...koreaPapers,
+  ...netherlandsInstitutions, ...netherlandsPapers, ...netherlandsTrials,
+  ...franceInstitutions, ...francePapers, ...franceTrials,
+  ...italyInstitutions, ...italyPeople, ...italyPapers,
   ...institutionsCentresWave3,
   ...institutionsDonorFoundations,
   ...foundationModels,

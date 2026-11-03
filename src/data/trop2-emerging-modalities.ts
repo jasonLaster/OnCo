@@ -149,6 +149,9 @@ export const trop2EmergingModalities: EntityInput[] = [
     "trials": [
       "nct07193511"
     ],
+    "companies": [
+      "avenzo"
+    ],
     "links": [
       {
         "label": "Publisher abstract",

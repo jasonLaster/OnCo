@@ -857,7 +857,16 @@ export async function collect(): Promise<Finding[]> {
   const D = "src/data/deals.ts";
   for (const d of deals) {
     const w = lineOf(D, `id: "${d.id}"`);
-    for (const party of [d.from, d.to]) rows.push({ table: "deals.party", where: w, name: party.name, want: ["company", "institution"], idField: "id", id: party.id, pages: ["/deals/", ...d.assets.map(r)], named: true });
+    for (const party of [d.from, d.to]) {
+      // The company bought in an acquisition is often folded into the buyer's record as an alias (Celgene in bms,
+      // Seagen in pfizer). Linking the seller to that record would turn the deal into the buyer buying itself, so the
+      // seller keeps its own name unlinked and is not a gap. Only skipped when the alias belongs to the buyer named on
+      // this deal; an alias on any other record is still reported.
+      const foldedIntoBuyer = d.type === "acquisition" && party === d.from && !party.id && !!d.to.id
+        && companyNames(d.to.id).some((n) => norm(bare(n)) === norm(bare(party.name)));
+      if (foldedIntoBuyer) continue;
+      rows.push({ table: "deals.party", where: w, name: party.name, want: ["company", "institution"], idField: "id", id: party.id, pages: ["/deals/", ...d.assets.map(r)], named: true });
+    }
     if (!d.assets.length) {
       // Read the asset names out of the description (codes and international non-proprietary names), not the whole sentence.
       const cands = assetNames(d.assetText);

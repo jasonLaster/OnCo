@@ -126,7 +126,7 @@ export const simpleM: Record<string, string> = {
   "fpi-2265": "Fusion Pharmaceuticals is testing FPI-2265, a radioligand therapy [a drug that carries radiation straight to cancer cells] aimed at PSMA, in phase 2 trials for prostate cancer.",
   futurechem: "FutureChem, a radiopharmaceutical company in Seoul, South Korea, makes PET imaging agents [dyes that light up on scans] and runs two late-stage trials of [F-18]Florastamin in prostate cancer.",
   "g-hope-002": "G-HOPE-002 is a recruiting phase 3 trial from Innovent Biologics (Suzhou) comparing IBI343 with placebo in people with previously treated pancreatic cancer that carries a marker protein [Claudin 18.2].",
-  gc012f: "Gracell Biotechnologies (Shanghai) is testing GC012F, a CAR-T cell therapy [re-engineered immune cells that attack cancer] aimed at CD19 and BCMA, in a phase 2 trial for multiple myeloma.",
+  azd0120: "Gracell Biotechnologies (Shanghai) is testing GC012F, a CAR-T cell therapy [re-engineered immune cells that attack cancer] aimed at CD19 and BCMA, in a phase 2 trial for multiple myeloma.",
   "gc101-til": "Shanghai Juncell Therapeutics is testing GC101 TIL, a therapy made from a patient's own tumour-fighting immune cells, in a phase 2 trial for melanoma after PD-1 drugs have failed.",
   genelux: "Genelux, based in Westlake Village, California, develops cancer-killing viruses [modified viruses that destroy tumour cells] and runs two late-stage trials of olvimulogene nanivacirepvec in ovarian and non-small-cell lung cancer.",
   "genequantum-healthcare-suzhou": "GeneQuantum Healthcare (Suzhou), a Chinese company making antibody-drug conjugates [targeted drugs that carry chemotherapy to cancer cells], runs two late-stage trials of GQ1005 in HER2-positive breast cancer.",

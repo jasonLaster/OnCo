@@ -38,7 +38,9 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "summary", total: 18160, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
   { id: "regional-approvals", total: 450, label: "Approved products with regional rows" },
-  { id: "molecules", total: 1080, label: "Products with a molecule or an explained placeholder" },
+  // 1,080 to 1,442 on 3 November 2026: 282 company pipeline products (src/data/company-pipeline-gap.ts, gap audit class 5)
+  // and earlier rounds. They are products, the kind both product gauges ask about, so the denominators move with them.
+  { id: "molecules", total: 1442, label: "Products with a molecule or an explained placeholder" },
   // 591 to 710 on 2 October 2026: the two Recovery and Rejuvenation rounds added 119 technology records. They
   // are the kind this gauge asks about, and almost none has a drawing of its own; they borrow one through
   // SCHEMATIC_ALIAS. So the denominator grows and the score falls, which is the true reading. The alternative,
@@ -61,7 +63,7 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "provenance", total: 18160, label: "Records with git provenance" },
   { id: "papers-snapshot", total: 3798, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
   { id: "citations", total: 2419, label: "Key papers with a citation count" },
-  { id: "trials-snapshot", total: 1080, label: "Products with a ClinicalTrials.gov snapshot" },
+  { id: "trials-snapshot", total: 1442, label: "Products with a ClinicalTrials.gov snapshot" },
   { id: "logos", total: 2078, label: "Companies, institutions and collections with a logo" },
   { id: "completeness", total: 22, label: "External denominators at least half covered" },
 ];

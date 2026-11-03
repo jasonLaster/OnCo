@@ -21,6 +21,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { CURATED, SKIPPED } from "./open-source-curated";
+import { openSourceProjects } from "../src/data/open-source";
 import { OpenSourceProjectSchema, type OpenSourceProject } from "../src/lib/schema";
 import { graph } from "../src/lib/graph";
 import { DATA_SOURCES } from "../src/data/data-sources";
@@ -144,6 +145,8 @@ async function main() {
       const path = `repos/${c.repo}`;
       const res = ghApi(path);
       if (res.status !== 200) {
+        const kept = c.keepWhenUnreachable ? openSourceProjects.find((p) => p.id === c.id) : undefined;
+        if (kept) { records.push({ ...kept, ...base, opennessNote: c.opennessNote ?? kept.opennessNote }); console.warn(`kept ${c.id}: ${res.status} ${c.repo}, last good record reused`); continue; }
         skipped.push({ name: c.name, reason: res.status === 0 ? `No cached response for ${c.repo} (offline run).` : `GitHub API returned ${res.status} for ${c.repo} on ${TODAY}; not recorded.` });
         console.warn(`skip ${c.id}: ${res.status} ${c.repo}`);
         continue;

@@ -115,6 +115,11 @@ import { institutionsIsrael } from "./institutions/israel";
 import { institutionsWaveInvestigators } from "./institutions-wave-investigators";
 import { india } from "./india";
 import { israel } from "./israel";
+import { recordsAU } from "./country-records-au";
+import { recordsES } from "./country-records-es";
+import { recordsBR } from "./country-records-br";
+import { recordsSE } from "./country-records-se";
+import { recordsCH } from "./country-records-ch";
 import { china } from "./china";
 import { approvedWave1 } from "./drugs-approved-wave1";
 import { targetsWave1 } from "./targets-wave1";
@@ -317,6 +322,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsWaveInvestigators,
   ...india,
   ...israel,
+  ...recordsAU, ...recordsES, ...recordsBR, ...recordsSE, ...recordsCH,
   ...china,
   ...approvedWave1,
   ...targetsWave1,

@@ -4,7 +4,8 @@ import { papersBloodImmuneCell } from "./blood-immune-cell";
 import { papersPreventionDetectionBiology } from "./prevention-detection-biology";
 import { papersRadiation } from "./radiation";
 import { papersVirotherapy } from "./virotherapy";
+import { papersCancerNeuroscience } from "./cancer-neuroscience";
 
 /** Key papers, one page each. Register each file here. */
-const files: PaperInput[][] = [papersSolidTumours, papersBloodImmuneCell, papersPreventionDetectionBiology, papersRadiation, papersVirotherapy];
+const files: PaperInput[][] = [papersSolidTumours, papersBloodImmuneCell, papersPreventionDetectionBiology, papersRadiation, papersVirotherapy, papersCancerNeuroscience];
 export const keyPapers: PaperInput[] = files.flat();

@@ -165,7 +165,6 @@ export const MERGED_RECORDS: readonly MergedRecord[] = [
   { retired: "idea-reg-financial-toxicity-vital-sign", survivor: "idea-acc-financial-toxicity-screening-at-diagnosis", kind: "idea", merged: "2026-10-26", reason: "Same proposal under two ids: routine financial toxicity screening with navigation; the retired record claimed randomised evidence of benefit, which the survivor corrects with the negative 2025 navigation trial" },
   { retired: "idea-moon-pro-monitoring-standard", survivor: "idea-acc-electronic-pro-monitoring-standard", kind: "idea", merged: "2026-10-26", reason: "Same proposal under two ids: weekly electronic symptom reporting with nurse alerts as a reimbursed standard during systemic therapy" },
   { retired: "idea-acc-prehabilitation-older-surgery", survivor: "idea-bio2-prehabilitation-standard", kind: "idea", merged: "2026-10-26", reason: "Same proposal under two ids: multimodal prehabilitation before major cancer surgery as standard; the retired record restricted it to patients over 70, and the survivor carries the PREHAB trial and the grading" },
-  { retired: "gc012f", survivor: "azd0120", kind: "drug", merged: "2026-11-03", reason: "GC012F is Gracell's code for AZD0120: ClinicalTrials.gov NCT06897930 and NCT07295847 list GC012F as AZD0120's other name" },
 ];
 
 /* merge:supplements */
@@ -251,5 +250,4 @@ export const MERGE_SUPPLEMENTS: readonly MergeSupplement[] = [
   { id: "idea-acc-financial-toxicity-screening-at-diagnosis", kind: "idea", bottlenecks: ["b-toxicity-qol"], keyPapers: ["paper-prasad-nat-rev-clin-oncol"], links: [{"label":"Bottleneck evidence (Prices and value): Prasad, De Jesús & Mailankody, The high price of anticancer drugs: origins, implications, barriers, solutions (Nat Rev Clin Oncol 2017)","url":"https://doi.org/10.1038/nrclinonc.2017.31"}] },
   { id: "idea-acc-electronic-pro-monitoring-standard", kind: "idea", institutions: ["mskcc"], bottlenecks: ["b-patient-voice"], links: [{"label":"NCI PRO-CTCAE","url":"https://healthcaredelivery.cancer.gov/pro-ctcae/"}] },
   { id: "idea-bio2-prehabilitation-standard", kind: "idea", cancers: ["gastric"], sections: ["rejuvenation"], bottlenecks: ["b-aging-comorbidity","b-surgery-radiation-innovation"], links: [{"label":"Bottleneck evidence (Older and multimorbid patients are excluded and undertreated): Mohile et al., Evaluation of geriatric assessment and management on toxic effects of cancer treatment (GAP70+, Lancet 2021)","url":"https://doi.org/10.1016/S0140-6736(21)01789-X"}] },
-  { id: "azd0120", kind: "drug", companies: ["gracell-biotechnologies"], trials: ["nct06235229"], aka: ["GC012F"], links: [{"label":"ClinicalTrials.gov: trials of GC012F","url":"https://clinicaltrials.gov/search?intr=GC012F"}] },
 ];

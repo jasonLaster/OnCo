@@ -6775,7 +6775,7 @@ export const tldr_ja: Record<string, string> = {
   "fpi-2265": "FPI-2265はFusion Pharmaceuticalsの実験段階の放射性リガンド療法で、前立腺がんを対象とした第2相試験が行われており、PSMAを標的としています。",
   futurechem: "FutureChemは韓国に本拠を置く放射性医薬品企業で、前立腺がんを対象とした[F-18]Florastaminの後期段階のがん臨床試験を2件実施しています。",
   "g-hope-002": "膵管腺がんにおけるIBI343を検証する第3相試験で、現在募集中です。",
-  azd0120: "GC012FはGracell Biotechnologies (Shanghai)の実験段階のCAR-T細胞療法で、多発性骨髄腫を対象とした第2相試験が行われており、CD19およびBCMAを標的としています。",
+  gc012f: "GC012FはGracell Biotechnologies (Shanghai)の実験段階のCAR-T細胞療法で、多発性骨髄腫を対象とした第2相試験が行われており、CD19およびBCMAを標的としています。",
   "gc101-til": "GC101 TILはShanghai Juncell Therapeuticsの実験段階の腫瘍浸潤リンパ球療法で、メラノーマを対象とした第2相試験が行われており、PD-1およびBRAFを標的としています。",
   genelux: "Geneluxは米国に本拠を置くバイオテクノロジー企業で、卵巣がんおよび非小細胞肺がんを対象としたolvimulogene nanivacirepvecおよびOlvimulogene nanivacirepvecの後期段階のがん臨床試験を2件実施しています。",
   "genequantum-healthcare-suzhou": "GeneQuantum Healthcare (Suzhou)は中国に本拠を置くバイオテクノロジー企業で、HER2陽性乳がんを対象としたGQ1005およびphase IIの後期段階のがん臨床試験を2件実施しています。",

@@ -595,7 +595,7 @@ export const pipelineTrialsWave5: TrialInput[] = [
     setting: "A Phase I/II Clinical Study of Chimeric Antigen Receptor T-cell Therapy Targeting CD19 and BCMA (GC012F) in Patients With Relapsed/Refractory Multiple Myeloma",
     tldr: "A phase 1/2 trial of GC012F in multiple myeloma, run by Gracell Biotechnologies (Shanghai) Co., Ltd., now recruiting.",
     summary: "A Study of GC012F in Patients With Relapsed/Refractory Multiple Myeloma is a phase 1/2 interventional study registered as NCT06235229 by Gracell Biotechnologies (Shanghai) Co., Ltd., with 110 participants planned, started 2023-12-26 and due to reach its primary completion in 2026-03-02. Interventions recorded: GC012F. Conditions listed: Multiple Myeloma. No results are recorded here; the registry entry is the source.",
-    drugs: ["azd0120"], cancers: ["multiple-myeloma", "myeloma-relapsed-refractory"], 
+    drugs: ["gc012f"], cancers: ["multiple-myeloma", "myeloma-relapsed-refractory"], 
     links: [{ label: "ClinicalTrials.gov NCT06235229", url: "https://clinicaltrials.gov/study/NCT06235229" }] },
   { id: "nct03069469", technologies: ["kinase-inhibitors"], kind: "trial", name: "Study of Vimseltinib (DCC-3014) in Patients With Advanced Tumors and Tenosynovial Giant Cell Tumor", nct: "NCT03069469", phase: "1/2", status: "active", sponsor: "Deciphera Pharmaceuticals, LLC", enrolled: 120, asOf, tags,
     setting: "A Multicenter Phase 1/2, Open-Label Study of DCC-3014 to Assess the Safety, Efficacy, Pharmacokinetics, and Pharmacodynamics in Patients With Advanced Tumors and Tenosynovial Giant Cell Tumor",

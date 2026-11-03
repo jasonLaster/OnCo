@@ -626,7 +626,7 @@ export const cancers: CancerInput[] = [
     ],
     stateOfArt: ["CAR-T in second line.", "Bispecifics after one prior line (2026).", "Functional cure discussions."],
     history: [{ year: 2003, title: "Bortezomib approved" }, { year: 2015, title: "Daratumumab approved" }, { year: 2021, title: "Ide-cel: first myeloma CAR-T" }, { year: 2022, title: "Teclistamab: first myeloma bispecific", refs: ["teclistamab"] }, { year: 2026, title: "Teclistamab after ≥1 line; isatuximab SC" }],
-    pipeline: ["teclistamab", "ciltacabtagene-autoleucel", "cevostamab", "jnj-79635322", "purinostat", "gr1803", "qls32015", "arlocabtagene-autoleucel", "sctc21c", "f182112", "sg301", "azd0120", "azd4045", "sti-6129", "feladilimab"],
+    pipeline: ["teclistamab", "ciltacabtagene-autoleucel", "cevostamab", "jnj-79635322", "purinostat", "gr1803", "qls32015", "arlocabtagene-autoleucel", "sctc21c", "f182112", "sg301", "gc012f", "azd4045", "sti-6129", "feladilimab"],
     openProblems: ["High-risk cytogenetics.", "Infections with T-cell redirecting therapy.", "Cost and access."],
     targets: ["bcma", "gprc5d", "cd38", "cd3"], technologies: ["car-t", "t-cell-engager", "adc", "protac-degrader", "whole-body-mri", "mrd-testing"],
     tags: ["heme"], people: ["maria-victoria-mateos", "meletios-dimopoulos"], related: ["cd38-plus-triplet", "bcma-then-gprc5d", "bispecific-infection-prophylaxis", "mmrf"], links: [{ label: "Wikipedia", url: W("Multiple_myeloma") }], journals: ["blood-cancer-discovery", "blood-cancer-journal", "clinical-lymphoma-myeloma-and-leukemia", "current-hematologic-malignancy-reports", "haematologica", "journal-of-hematology-and-oncology"],

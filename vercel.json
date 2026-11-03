@@ -1010,11 +1010,6 @@
       "source": "/ideas/idea-acc-prehabilitation-older-surgery/:path*",
       "destination": "/ideas/idea-bio2-prehabilitation-standard/:path*",
       "permanent": true
-    },
-    {
-      "source": "/drugs/gc012f/:path*",
-      "destination": "/drugs/azd0120/:path*",
-      "permanent": true
     }
   ],
   "ignoreCommand": "if [ \"$VERCEL_GIT_COMMIT_AUTHOR_LOGIN\" = \"github-actions[bot]\" ]; then exit 1; else exit 0; fi"

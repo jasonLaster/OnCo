@@ -6775,7 +6775,7 @@ export const tldr_ar: Record<string, string> = {
   "fpi-2265": "FPI-2265 هو علاج تجريبي بالروابط المشعة من Fusion Pharmaceuticals في تجارب المرحلة 2 لعلاج سرطان البروستاتا، ويستهدف PSMA.",
   futurechem: "FutureChem هي شركة مستحضرات صيدلانية إشعاعية مقرها كوريا الجنوبية تدير 2 من تجارب السرطان في مراحل متقدمة لـ [F-18]Florastamin في سرطان البروستاتا.",
   "g-hope-002": "تجربة من المرحلة 3 تختبر IBI343 في السرطانة الغدية القنوية البنكرياسية، وهي تستقطب المشاركين حاليًا.",
-  azd0120: "GC012F هو علاج تجريبي بخلايا CAR-T من Gracell Biotechnologies (Shanghai) في تجارب المرحلة 2 لعلاج الورم النقوي المتعدد، ويستهدف CD19 وBCMA.",
+  gc012f: "GC012F هو علاج تجريبي بخلايا CAR-T من Gracell Biotechnologies (Shanghai) في تجارب المرحلة 2 لعلاج الورم النقوي المتعدد، ويستهدف CD19 وBCMA.",
   "gc101-til": "GC101 TIL هو علاج تجريبي بالخلايا اللمفاوية المتسللة إلى الورم من Shanghai Juncell Therapeutics في تجارب المرحلة 2 لعلاج الميلانوما، ويستهدف PD-1 وBRAF.",
   genelux: "Genelux هي شركة تكنولوجيا حيوية مقرها الولايات المتحدة تدير 2 من تجارب السرطان في مراحل متقدمة لـ olvimulogene nanivacirepvec وOlvimulogene nanivacirepvec في سرطان المبيض وسرطان الرئة ذي الخلايا غير الصغيرة.",
   "genequantum-healthcare-suzhou": "GeneQuantum Healthcare (Suzhou) هي شركة تكنولوجيا حيوية مقرها الصين تدير 2 من تجارب السرطان في مراحل متقدمة لـ GQ1005 وphase II في سرطان الثدي الإيجابي لـ HER2.",

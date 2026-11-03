@@ -6775,7 +6775,7 @@ export const tldr_fr: Record<string, string> = {
   "fpi-2265": "FPI-2265 est une thérapie par radioligand expérimentale de Fusion Pharmaceuticals en essais de phase 2 pour le cancer de la prostate, ciblant PSMA.",
   futurechem: "FutureChem est une société de radiopharmaceutiques basée en Corée du Sud qui mène 2 essais oncologiques de stade avancé portant sur [F-18]Florastamin dans le cancer de la prostate.",
   "g-hope-002": "Un essai de phase 3 évaluant IBI343 dans l'adénocarcinome canalaire pancréatique, en cours de recrutement.",
-  azd0120: "GC012F est une thérapie cellulaire CAR-T expérimentale de Gracell Biotechnologies (Shanghai) en essais de phase 2 pour le myélome multiple, ciblant CD19 et BCMA.",
+  gc012f: "GC012F est une thérapie cellulaire CAR-T expérimentale de Gracell Biotechnologies (Shanghai) en essais de phase 2 pour le myélome multiple, ciblant CD19 et BCMA.",
   "gc101-til": "GC101 TIL est une thérapie par lymphocytes infiltrant la tumeur expérimentale de Shanghai Juncell Therapeutics en essais de phase 2 pour le mélanome, ciblant PD-1 et BRAF.",
   genelux: "Genelux est une société de biotechnologie basée aux États-Unis qui mène 2 essais oncologiques de stade avancé portant sur olvimulogene nanivacirepvec et Olvimulogene nanivacirepvec dans le cancer de l'ovaire et le cancer du poumon non à petites cellules.",
   "genequantum-healthcare-suzhou": "GeneQuantum Healthcare (Suzhou) est une société de biotechnologie basée en Chine qui mène 2 essais oncologiques de stade avancé portant sur GQ1005 et phase II dans le cancer du sein HER2-positif.",

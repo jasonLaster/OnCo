@@ -6785,6 +6785,7 @@ export const tldr_zh: Record<string, string> = {
   "fpi-2265": "FPI-2265是来自Fusion Pharmaceuticals的一种实验性放射性配体疗法，正在进行2期试验，用于前列腺癌，靶向PSMA。",
   futurechem: "FutureChem是一家总部位于韩国的放射性药物公司，正在开展2项[F-18]Florastamin的后期癌症临床试验，涵盖前列腺癌。",
   "g-hope-002": "一项在胰腺导管腺癌中测试IBI343的3期试验，目前正在招募。",
+  gc012f: "GC012F是来自Gracell Biotechnologies (Shanghai)的一种实验性CAR-T细胞疗法，正在进行2期试验，用于多发性骨髓瘤，靶向CD19和BCMA。",
   "gc101-til": "GC101 TIL是来自Shanghai Juncell Therapeutics的一种实验性肿瘤浸润淋巴细胞疗法，正在进行2期试验，用于黑色素瘤，靶向PD-1和BRAF。",
   genelux: "Genelux是一家总部位于美国的生物技术公司，正在开展2项olvimulogene nanivacirepvec和Olvimulogene nanivacirepvec的后期癌症临床试验，涵盖卵巢癌和非小细胞肺癌。",
   "genequantum-healthcare-suzhou": "GeneQuantum Healthcare (Suzhou)是一家总部位于中国的生物技术公司，正在开展2项GQ1005和phase II的后期癌症临床试验，涵盖HER2阳性乳腺癌。",

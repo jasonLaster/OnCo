@@ -11,10 +11,11 @@ import type { Drug } from "@/lib/schema";
  * revised. Widening to every such row in eight cancer spike files found 122 of 188 needing correction or removal.
  * A row that names its label table or paper can be checked in a minute; a bare number cannot be checked at all.
  *
- * Ratchet: the count may fall, never rise. Lower it when a round adds sources.
+ * Every remaining row (143 on 46 drugs) was then read against its label or paper the same day: 50 confirmed, 83 corrected,
+ * 10 figures removed. The count is zero, and stays there: a new row needs its source.
  */
 describe("toxicity rows carry their source", () => {
-  const FLOOR = 143;
+  const FLOOR = 0;
   it("rows with a percentage and no source do not increase", () => {
     const bare = (graph().kind("drug") as Drug[]).flatMap((d) => d.toxicity
       .filter((t) => !t.source && (t.anyGradePct !== undefined || t.grade3PlusPct !== undefined))

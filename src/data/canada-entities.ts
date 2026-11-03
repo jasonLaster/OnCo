@@ -65,7 +65,7 @@ export const canadaPapers: PaperInput[] = [
     authors: "Brenner DR, Gillis J, Demers AA, et al.", paperType: "observational",
     findings: ["254,100 new cancer cases and 87,900 cancer deaths projected in Canada in 2026.", "Age-standardised incidence 591.4 and mortality 200.0 per 100,000 (2021 Canadian standard population), both projected to decrease.", "Lung, breast, prostate and colorectal cancers 47 per cent of new cases.", "Incidence 16 per cent and mortality 36 per cent higher in males than females."],
     whatItMeans: "These are the numbers Canadian cancer services plan with. They are projections from registry data several years old, not counts, and Quebec's part of them rests on older data than the other provinces', so they describe the direction of travel better than the exact size.",
-    caveats: ["Projections, not observed counts.", "The abstract says registry data to 2022 were used; the Canadian Cancer Society's cancer-specific table labels case projections as based on data to 2019.", "Rates use the 2021 Canadian standard population and cannot be set beside world-standardised rates."],
+    caveats: ["Projections, not observed counts.", "The abstract says registry data to 2022 were used; the methods say incidence data from 1997 to 2022, with 2020 left out, were used for every jurisdiction except Quebec (data to 2017) and Nova Scotia (data to 2019). The Canadian Cancer Society's cancer-specific table labels case projections as based on data to 2019.", "Rates use the 2021 Canadian standard population and cannot be set beside world-standardised rates."],
     links: [{ label: "CMAJ 2026", url: "https://doi.org/10.1503/cmaj.252152" }, { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/41974470/" }, { label: "Canadian Cancer Statistics", url: "https://cancer.ca/en/research/cancer-statistics/canadian-cancer-statistics" }],
     institutions: ["canadian-cancer-registry", "canadian-cancer-society"] }),
 
@@ -119,7 +119,7 @@ export const canadaPapers: PaperInput[] = [
     journal: "Current Oncology", year: 2025, doi: "10.3390/curroncol32040235", pmid: "40277790",
     authors: "Lau CY, Mitha A, Wills A", paperType: "observational",
     findings: ["Median 509 days (IQR 306 to 544) from conditional licence to first provincial listing for three cancer drugs, 2023 to 2024.", "The one drug on the time-limited route reached its first listing more than 200 days sooner than a comparable drug.", "The acceleration came from parallel price negotiation, not faster review."],
-    whatItMeans: "Running review and price negotiation at the same time can cut months off how long a new cancer drug takes to be paid for in Canada, but in its first fifteen months only one drug used the route.",
+    whatItMeans: "Running review and price negotiation at the same time can cut months off how long a new cancer drug takes to be paid for in Canada, but by the end of January 2025 only one drug had used the route.",
     caveats: ["Three drugs, one of them on the new route: too few for a firm estimate.", "Two of the authors work for a consultancy; the report is descriptive."],
     links: [{ label: "Curr Oncol 2025", url: "https://doi.org/10.3390/curroncol32040235" }, { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/40277790/" }],
     journals: ["current-oncology-mdpi"], institutions: ["cda-amc", "health-canada"] }),

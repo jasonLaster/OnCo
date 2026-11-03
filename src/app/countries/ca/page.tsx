@@ -103,7 +103,7 @@ export default function CanadaPage() {
       <PageHeader
         kicker={<GroupKicker id="who"><span className="kicker">·</span><Link href="/countries/" className="kicker hover:underline">Countries</Link></GroupKicker>}
         title="🇨🇦 Cancer in Canada"
-        lede={`A country of about ${extra.population.toLocaleString("en-GB")} million people where health care is run by ten provinces and three territories, so that a cancer tablet can be free in Vancouver and go through a drug plan with a deductible in Toronto; where a licensed cancer drug passes a national value review and a joint price negotiation before any province pays for it; and where one academic trials group has enrolled more than 113,000 patients since 1980. Written from the national cancer statistics, Statistics Canada's registry documentation, Health Canada's guidance, INESSS's pages in French and peer-reviewed studies of the drug review system. Facts checked ${CA_ASOF}; every card links its sources, and what could not be read is listed at the end.`}
+        lede={`A country of about ${extra.population.toLocaleString("en-GB")} million people where health care is run by ten provinces and three territories, so that a cancer tablet is paid for by the cancer agency in Vancouver and goes through the provincial drug plan in Toronto; where a licensed cancer drug passes a national value review and a joint price negotiation before any province pays for it; and where one academic trials group has enrolled more than 113,000 patients since 1980. Written from the national cancer statistics, Statistics Canada's registry documentation, Health Canada's guidance, INESSS's pages in French and peer-reviewed studies of the drug review system. Facts checked ${CA_ASOF}; every card links its sources, and what could not be read is listed at the end.`}
       />
       <Container className="pb-16">
         <nav aria-label="Sections" className="flex flex-wrap gap-2 text-sm">
@@ -124,10 +124,10 @@ export default function CanadaPage() {
             <div className="mt-6 card p-5">
               <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
                 <h3 className="font-semibold">Leading cancers in Canada, GLOBOCAN {GLOBOCAN.year}</h3>
-                <span className="text-xs text-muted">All cancers, C00-97: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
+                <span className="text-xs text-muted">All cancers including non-melanoma skin cancer (C00-97): {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
               </div>
               <StaticTable rows={siteRows} columns={SITE_COLUMNS} noun="sites" defaultSort={{ key: "cases", dir: -1 }} />
-              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are modelled estimates for 2022 on the world standard population; the Canadian figures above use the 2021 Canadian standard population, and the two sets of rates cannot be compared directly. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
+              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are modelled estimates for 2022 on the world standard population, and their all-cancers total includes non-melanoma skin cancer, which the Canadian figures above exclude. The Canadian figures also use the 2021 Canadian standard population, and the two sets of rates cannot be compared directly. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
             </div>
           )}
         </Section>

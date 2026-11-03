@@ -44,6 +44,7 @@ const institutions: InstitutionInput[] = [
     people: ["dorothy-keefe"],
     links: [
       { label: "Cancer Australia: about us (Internet Archive copy, 13 July 2026)", url: "https://web.archive.org/web/20260713220314/https://www.canceraustralia.gov.au/about-us" },
+      { label: "Cancer Australia: Australian Cancer Plan (Internet Archive copy, 12 October 2026)", url: "https://web.archive.org/web/20261012222028/https://www.canceraustralia.gov.au/australian-cancer-plan" },
       { label: "Australian Cancer Plan", url: "https://www.australiancancerplan.gov.au/" },
       { label: "Cancer Council Australia: Optimal Care Pathways", url: "https://www.cancer.org.au/health-professionals/optimal-cancer-care-pathways" },
     ],
@@ -70,9 +71,9 @@ const companies: CompanyInput[] = [
     id: "anzgog", name: "Australia New Zealand Gynaecological Oncology Group", aka: ["ANZGOG", "WomenCan"],
     hq: "Camperdown, NSW", country: "AU", website: "https://www.anzgog.org.au",
     tldr: "The national trials group for gynaecological cancers in Australia and New Zealand, which co-led OUTBACK, the international trial that found adding chemotherapy after chemoradiation did not help women with cervical cancer.",
-    summary: "ANZGOG describes itself as the peak national gynaecological cancer clinical trials organisation for Australia and New Zealand, conducting and promoting trials and multidisciplinary research into the causes, prevention and treatment of gynaecological cancers. It is based at Chris O'Brien Lifehouse in Camperdown, Sydney, and its fundraising arm is WomenCan. Its best-known result is OUTBACK (ANZGOG 0902, GOG-0274), run with NRG Oncology, which tested adjuvant carboplatin and paclitaxel after standard chemoradiation for locally advanced cervical cancer and found no survival benefit. It also runs a Survivors Teaching Students programme, which since 2017 has brought survivors and carers into the classrooms of more than 11,000 health professional students.",
+    summary: "ANZGOG describes itself as the peak national gynaecological cancer clinical trials organisation for Australia and New Zealand, conducting and promoting trials and multidisciplinary research into the causes, prevention and treatment of gynaecological cancers. It is based at Chris O'Brien Lifehouse in Camperdown, Sydney, and its fundraising arm is WomenCan. Its best-known result is OUTBACK (ANZGOG 0902, GOG-0274), run with NRG Oncology, which tested adjuvant carboplatin and paclitaxel after standard chemoradiation for locally advanced cervical cancer and found no survival benefit. It also runs Survivors Teaching Students, under licence from the US Ovarian Cancer Research Alliance, which brings survivors and carers into the classrooms of health professional students; ANZGOG reports that the programme has passed 20,000 students.",
     trials: ["outback"], keyPapers: ["paper-outback-lancet-oncol-2023"], cancers: ["cervical", "ovarian", "endometrial"], institutions: ["chris-obrien-lifehouse", "cancer-australia"], companies: ["nrg-oncology"], people: ["linda-mileshkin"],
-    links: [{ label: "ANZGOG", url: "https://www.anzgog.org.au/" }],
+    links: [{ label: "ANZGOG", url: "https://www.anzgog.org.au/" }, { label: "ANZGOG: Survivors Teaching Students", url: "https://www.anzgog.org.au/sts/" }],
   }),
   grp({
     id: "allg", name: "Australasian Leukaemia and Lymphoma Group", aka: ["ALLG"],
@@ -89,7 +90,7 @@ const companies: CompanyInput[] = [
 const trials: TrialInput[] = [
   trial({
     id: "compass-cervical-hpv-screening", name: "Compass (primary HPV cervical screening trial)", aka: ["Compass", "ACTRN12613001207707"], nct: "NCT02328872",
-    phase: "not-applicable", status: "active", setting: "Women aged 25 to 64 attending routine cervical screening in Victoria, Australia",
+    phase: "not-applicable", status: "active", setting: "Women aged 25 to 69 attending routine cervical screening in Victoria, Australia (25 to 64 in the pilot)",
     sponsor: "VCS Foundation (Australian Centre for the Prevention of Cervical Cancer), with the University of Sydney", enrolled: 76181, started: "2015-01", startedType: "actual",
     tldr: "An Australian randomised trial of five-yearly HPV testing against two-and-a-half-yearly cytology for cervical screening, in a country where many younger women had already been vaccinated. Its pilot found more precancer with HPV testing.",
     summary: "Compass randomises women attending routine cervical screening to five-yearly primary HPV testing or two-and-a-half-yearly liquid-based cytology, and is the first trial of HPV-based screening in a population already offered HPV vaccination. The registry lists 76,181 participants, a start in January 2015 and follow-up planned to 2037; it is active and no longer recruiting. The pilot phase, 4,995 women analysed from 47 Victorian practices, found high-grade precancer (CIN2+) in 1.0 to 1.2 percent of HPV-screened women against 0.1 percent with cytology, without a statistically significant rise in colposcopy referral, and its authors wrote that the findings gave initial support for HPV screening in vaccinated populations. Australia's National Cervical Screening Program moved to HPV testing every five years from December 2017.",
@@ -157,7 +158,7 @@ const papers: PaperInput[] = [
     ],
     whatItMeans: "Virus-like particles carry the shape of the virus without its DNA, so they can train the immune system without any risk of infection. That principle, worked on in parallel in the United States, is the basis of the HPV vaccines now given to adolescents in Australia's school programme.",
     caveats: [
-      "This paper made particles from L1 and L2 together in a vaccinia system; the licensed vaccines use L1-only particles made in yeast or insect cells, and several laboratories contributed to that step.",
+      "This paper made particles from L1 and L2 together in a vaccinia system; the licensed vaccines use particles made from L1 alone, and several laboratories contributed to that step.",
     ],
     cancers: ["cervical"], technologies: ["hpv-vaccine"], drugs: ["gardasil-9"], institutions: ["uq-frazer-institute"], people: ["jian-zhou", "ian-frazer"], sections: ["prevention"],
     links: [doi("10.1016/0042-6822(91)90772-4", "Virology 1991"), pubmed("1656586")],

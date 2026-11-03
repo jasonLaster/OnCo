@@ -1,5 +1,6 @@
 import { graph } from "./graph";
 import { GENOME_WIDE_MEASUREMENTS, type Biomarker, type Drug, type Entity, type Measurement, type Target, type Trial } from "./schema";
+import { readoutsMeasuredBy } from "./members";
 
 /**
  * Derived views over biomarker readouts (kind "biomarker"): the parent target and sibling readouts, the trials whose
@@ -46,19 +47,24 @@ export function siblingReadouts(bm: Biomarker): Biomarker[] {
   return sibs.filter((b) => b.id !== bm.id);
 }
 
-/** Readouts whose thresholds name the drug, or that list it in `drugs`. Threshold-named first. */
+/**
+ * Readouts whose thresholds name the drug, that list it in `drugs`, or whose gathered tests include it (a test
+ * record measures the readout: src/lib/members.ts). Threshold-named first.
+ */
 export function readoutsForDrug(drugId: string): Array<{ biomarker: Biomarker; required: boolean }> {
   const out: Array<{ biomarker: Biomarker; required: boolean }> = [];
+  const measures = new Set(readoutsMeasuredBy(drugId));
   for (const b of graph().kind("biomarker")) {
     const required = b.thresholds.some((t) => t.drugId === drugId && t.status === "current");
-    if (required || b.drugs.includes(drugId) || b.companionDiagnostics.some((c) => c.drugs.includes(drugId))) out.push({ biomarker: b, required });
+    if (required || b.drugs.includes(drugId) || b.companionDiagnostics.some((c) => c.drugs.includes(drugId)) || measures.has(b.id)) out.push({ biomarker: b, required });
   }
   return out.sort((a, b) => Number(b.required) - Number(a.required) || a.biomarker.name.localeCompare(b.biomarker.name));
 }
 
-/** Readouts that a tumour test (src/data/tumour-tests.ts id) reports. */
+/** Readouts that a tumour test (src/data/tumour-tests.ts id) reports: listed on the readout, or gathered by its rule (src/lib/members.ts). */
 export function readoutsForTest(testId: string): Biomarker[] {
-  return graph().kind("biomarker").filter((b) => b.tests.includes(testId));
+  const measures = new Set(readoutsMeasuredBy(testId));
+  return graph().kind("biomarker").filter((b) => b.tests.includes(testId) || measures.has(b.id));
 }
 
 /** Readouts that point at a glossary term, so the term page can send readers to the readout. */

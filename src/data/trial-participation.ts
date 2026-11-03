@@ -79300,30 +79300,6 @@ export const TRIAL_PARTICIPATION: Record<string, TrialParticipation[]> = {
       ]
     }
   ],
-  "euro-ewing-2012": [
-    {
-      "nct": "NCT00987636",
-      "source": "https://clinicaltrials.gov/study/NCT00987636",
-      "fetchedAt": "2026-10-07T16:52:17.331Z",
-      "studySha256": "7976d1fda0f341f87bfa8aa54c87ccfe260bc736c6b21945ea036c13d9c8052e",
-      "overallStatus": "COMPLETED",
-      "lastUpdatePosted": "2019-10-22",
-      "leadSponsor": "University Hospital Muenster",
-      "collaboratorCount": 0,
-      "minimumAge": "48 Months",
-      "maximumAge": "50 Years",
-      "sex": "ALL",
-      "healthyVolunteers": false,
-      "hasEligibility": true,
-      "enrolment": 907,
-      "enrolmentType": "ACTUAL",
-      "siteCount": 2,
-      "recruitingSiteCount": 0,
-      "countries": [
-        "Germany"
-      ]
-    }
-  ],
   "euronet-phl-c2": [
     {
       "nct": "NCT02684708",
@@ -88113,30 +88089,6 @@ export const TRIAL_PARTICIPATION: Record<string, TrialParticipation[]> = {
       "recruitingSiteCount": 0,
       "countries": [
         "Canada"
-      ]
-    }
-  ],
-  "horrad": [
-    {
-      "nct": "NCT01053676",
-      "source": "https://clinicaltrials.gov/study/NCT01053676",
-      "fetchedAt": "2026-10-07T16:52:19.239Z",
-      "studySha256": "ea189c805032a288af8f79c6286cb7e25ad35f296d03f6d4ab52a5b3d237d9c8",
-      "overallStatus": "COMPLETED",
-      "lastUpdatePosted": "2014-06-23",
-      "leadSponsor": "Bayer",
-      "collaboratorCount": 0,
-      "minimumAge": "20 Years",
-      "maximumAge": "45 Years",
-      "sex": "MALE",
-      "healthyVolunteers": true,
-      "hasEligibility": true,
-      "enrolment": 59,
-      "enrolmentType": "ACTUAL",
-      "siteCount": 1,
-      "recruitingSiteCount": 0,
-      "countries": [
-        "Japan"
       ]
     }
   ],
@@ -119779,30 +119731,6 @@ export const TRIAL_PARTICIPATION: Record<string, TrialParticipation[]> = {
         "Spain",
         "Taiwan",
         "United States"
-      ]
-    }
-  ],
-  "pop-rt": [
-    {
-      "nct": "NCT01952223",
-      "source": "https://clinicaltrials.gov/study/NCT01952223",
-      "fetchedAt": "2026-10-07T16:52:36.940Z",
-      "studySha256": "6ad53446f21366911dabdeb1c20d875846bd62c4f57423d7253c2acd9e889610",
-      "overallStatus": "ACTIVE_NOT_RECRUITING",
-      "lastUpdatePosted": "2025-07-30",
-      "leadSponsor": "UNICANCER",
-      "collaboratorCount": 1,
-      "minimumAge": "18 Years",
-      "maximumAge": "75 Years",
-      "sex": "MALE",
-      "healthyVolunteers": false,
-      "hasEligibility": true,
-      "enrolment": 761,
-      "enrolmentType": "ACTUAL",
-      "siteCount": 1,
-      "recruitingSiteCount": 0,
-      "countries": [
-        "France"
       ]
     }
   ],

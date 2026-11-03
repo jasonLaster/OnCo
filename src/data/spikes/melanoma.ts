@@ -176,9 +176,9 @@ const drugs: DrugInput[] = [
     mechanismSteps: ["Vemurafenib enters the cell and binds the ATP pocket of mutant BRAF V600E", "MEK and ERK phosphorylation fall within hours", "Proliferation stops and apoptosis follows in BRAF-addicted melanoma cells", "In RAS-active normal cells, drug-bound BRAF dimerises with CRAF and paradoxically boosts signalling, causing skin squamous lesions", "Resistance emerges via NRAS mutation, BRAF splice variants, or MEK mutations, restoring ERK output"],
     dosing: { route: "Oral", schedule: "960 mg twice daily continuously", modifications: "Dose reduction for grade 2-3 rash, arthralgia, photosensitivity, QT prolongation", monitoring: "Dermatology exams for squamous cell carcinoma; ECG; liver enzymes", source: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/202429s019lbl.pdf" },
     toxicity: [
-      { event: "Cutaneous squamous cell carcinoma / keratoacanthoma", anyGradePct: 24, source: "https://www.nejm.org/doi/full/10.1056/NEJMoa1103782", note: "BRIM-3 vemurafenib arm" },
-      { event: "Arthralgia", anyGradePct: 53, source: "https://www.nejm.org/doi/full/10.1056/NEJMoa1103782" },
-      { event: "Photosensitivity", anyGradePct: 33, source: "https://www.nejm.org/doi/full/10.1056/NEJMoa1103782" },
+      { event: "Cutaneous squamous cell carcinoma / keratoacanthoma", anyGradePct: 24, grade3PlusPct: 22, source: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38eea320-7e0c-485a-bc30-98c3c45e2763", note: "BRIM-3 (label Trial 1) vemurafenib arm; cuSCC had to be reported as grade 3" },
+      { event: "Arthralgia", anyGradePct: 53, grade3PlusPct: 4, source: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38eea320-7e0c-485a-bc30-98c3c45e2763", note: "BRIM-3 (label Trial 1) vemurafenib arm" },
+      { event: "Photosensitivity", anyGradePct: 33, grade3PlusPct: 3, source: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38eea320-7e0c-485a-bc30-98c3c45e2763", note: "BRIM-3 (label Trial 1) vemurafenib arm" },
     ],
     approvals: [{ region: "US", year: 2011, indication: "Unresectable or metastatic BRAF V600E melanoma" }, { region: "US", year: 2017, indication: "Erdheim-Chester disease with BRAF V600 mutation" }],
     regulatoryEvents: [{ date: "2011-08-17", type: "approval", region: "US", note: "Approved with the cobas BRAF V600 companion test, the first melanoma targeted therapy" }, { date: "2015-11-10", type: "approval", region: "US", note: "Cobimetinib approved in combination (coBRIM)" }],

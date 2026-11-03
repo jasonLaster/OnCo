@@ -1,0 +1,323 @@
+{
+ "rounds": [
+  {
+   "sample": "docs/audits/accuracy/sample-2026-11-03-20261103.json",
+   "drawn": "2026-11-03",
+   "seed": 20261103,
+   "corpusSize": 20224,
+   "pending": 0,
+   "overall": {
+    "n": 182,
+    "checked": 178,
+    "counts": {
+     "correct": 147,
+     "stale": 5,
+     "imprecise": 19,
+     "wrong": 6,
+     "unsourced": 1,
+     "unreachable": 4
+    },
+    "errorRate": 0.17415730337078653,
+    "errorCi": [
+     0.1254904096765339,
+     0.23659175414076644
+    ],
+    "wrongRate": 0.033707865168539325,
+    "wrongCi": [
+     0.01553822830688448,
+     0.07157935094890738
+    ]
+   },
+   "strata": {
+    "paper-identifiers": {
+     "n": 15,
+     "checked": 15,
+     "counts": {
+      "correct": 14,
+      "stale": 1,
+      "imprecise": 0,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.06666666666666667,
+     "errorCi": [
+      0.011866588606194856,
+      0.2981707755242399
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.20388926630434784
+     ]
+    },
+    "paper-findings": {
+     "n": 20,
+     "checked": 18,
+     "counts": {
+      "correct": 16,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 2
+     },
+     "errorRate": 0.1111111111111111,
+     "errorCi": [
+      0.031018868453582787,
+      0.3280024486660421
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.1758845505823749
+     ]
+    },
+    "trial-facts": {
+     "n": 25,
+     "checked": 25,
+     "counts": {
+      "correct": 25,
+      "stale": 0,
+      "imprecise": 0,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0,
+     "errorCi": [
+      0,
+      0.13319649395317873
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.13319649395317873
+     ]
+    },
+    "drug-approvals": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 18,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.1,
+     "errorCi": [
+      0.027865893984153206,
+      0.30103820641179335
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.16113012549493322
+     ]
+    },
+    "drug-numbers": {
+     "n": 10,
+     "checked": 10,
+     "counts": {
+      "correct": 5,
+      "stale": 1,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.5,
+     "errorCi": [
+      0.23658959361548731,
+      0.7634104063845126
+     ],
+     "wrongRate": 0.1,
+     "wrongCi": [
+      0.01787574951572113,
+      0.4041563854975721
+     ]
+    },
+    "cancer-numbers": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 14,
+      "stale": 2,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.3,
+     "errorCi": [
+      0.14547527396899385,
+      0.5189767762289793
+     ],
+     "wrongRate": 0.05,
+     "wrongCi": [
+      0.008881219432873136,
+      0.23613589351256675
+     ]
+    },
+    "tests": {
+     "n": 15,
+     "checked": 14,
+     "counts": {
+      "correct": 11,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 1
+     },
+     "errorRate": 0.21428571428571427,
+     "errorCi": [
+      0.0757124833691637,
+      0.4758972377320828
+     ],
+     "wrongRate": 0.07142857142857142,
+     "wrongCi": [
+      0.012721886112291636,
+      0.3146926955395781
+     ]
+    },
+    "companies": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 17,
+      "stale": 0,
+      "imprecise": 1,
+      "wrong": 2,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.15,
+     "errorCi": [
+      0.05236779195949584,
+      0.36042329588695743
+     ],
+     "wrongRate": 0.1,
+     "wrongCi": [
+      0.027865893984153206,
+      0.30103820641179335
+     ]
+    },
+    "people": {
+     "n": 15,
+     "checked": 15,
+     "counts": {
+      "correct": 12,
+      "stale": 1,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.2,
+     "errorCi": [
+      0.07047420643610414,
+      0.4518593533465045
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.20388926630434784
+     ]
+    },
+    "precision-rows": {
+     "n": 10,
+     "checked": 10,
+     "counts": {
+      "correct": 9,
+      "stale": 0,
+      "imprecise": 1,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.1,
+     "errorCi": [
+      0.01787574951572113,
+      0.4041563854975721
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.2775401687666166
+     ]
+    },
+    "country-cards": {
+     "n": 12,
+     "checked": 11,
+     "counts": {
+      "correct": 6,
+      "stale": 0,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 1,
+      "unreachable": 1
+     },
+     "errorRate": 0.45454545454545453,
+     "errorCi": [
+      0.21270957543988045,
+      0.7199122443100118
+     ],
+     "wrongRate": 0.09090909090909091,
+     "wrongCi": [
+      0.01623175226282597,
+      0.3773646254862038
+     ]
+    }
+   },
+   "byAge": {
+    "lastMonth": {
+     "n": 39,
+     "checked": 39,
+     "counts": {
+      "correct": 33,
+      "stale": 0,
+      "imprecise": 3,
+      "wrong": 3,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.15384615384615385,
+     "errorCi": [
+      0.07247373845051469,
+      0.2972976986573431
+     ],
+     "wrongRate": 0.07692307692307693,
+     "wrongCi": [
+      0.026506914073495688,
+      0.2032137312805527
+     ]
+    },
+    "older": {
+     "n": 143,
+     "checked": 139,
+     "counts": {
+      "correct": 114,
+      "stale": 5,
+      "imprecise": 16,
+      "wrong": 3,
+      "unsourced": 1,
+      "unreachable": 4
+     },
+     "errorRate": 0.17985611510791366,
+     "errorCi": [
+      0.12489545308444837,
+      0.252036757140024
+     ],
+     "wrongRate": 0.02158273381294964,
+     "wrongCi": [
+      0.007366681010400868,
+      0.06153201516774331
+     ]
+    }
+   }
+  }
+ ]
+}

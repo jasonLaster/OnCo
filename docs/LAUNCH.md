@@ -147,7 +147,10 @@ any source can find; each needs a Wikidata QID by hand.
   IPO filings (EDGAR S-1/F-1, HKEX 18A), FDA and EMA designations for first-time sponsors, conference late-breakers
   (AACR, ASCO, ESMO, SITC, ASH company lists), NIH SBIR/STTR and ARPA-H awards, and government company registers where
   open. Each source gets a small fetcher that writes a review queue only (never data), run monthly, with a count of
-  what it found that the corpus lacks.
+  what it found that the corpus lacks. **Done 3 November 2026 for portfolios, EDGAR, HKEX 18A, FDA and EMA orphan
+  designations and NCI SBIR/STTR** (`scripts/startup-monitors.ts`, weekly inside the universe refresh, findings in
+  issue #336; sources, counts and skipped sources under "Keeping the company list fresh"). Still open: conference
+  late-breakers, ARPA-H, STAR Market and company registers.
 - [ ] **Map new cancer research as it is published (owner, 1 November 2026).** Example missed: "A preinvasive
   regulatory T cell axis for lung cancer interception" (Nature, 7 October 2026, doi 10.1038/s41586-026-11066-6) is not
   in the corpus. Cause: the weekly `refresh-papers` job (scripts/fetch-papers.ts) only refreshes per-topic "recent
@@ -156,7 +159,13 @@ any source can find; each needs a Wikidata QID by hand.
   journals (Nature, Science, Cell, NEJM, Lancet, Lancet Oncology, Nature Medicine, Nature Cancer, Cancer Cell, Cancer
   Discovery, JCO, JAMA Oncology, Annals of Oncology and a few more), score them (journal, citations, trial results,
   links to records we hold), and open a review PR proposing paper records with the abstract read and the entities they
-  link to; never auto-merge findings. Then add this paper.
+  link to; never auto-merge findings. Then add this paper. **Done 3 November 2026:** `scripts/landmark-papers.ts`
+  (Crossref by each journal record's ISSN, Europe PMC, PubMed as the fallback for ids and abstracts; drops DOIs and
+  PubMed ids already anywhere in the corpus; proposes every oncology research paper in NEJM, The Lancet, Nature,
+  Science, Cell, JAMA and BMJ plus the 25 best of the rest by score) runs weekly from
+  `.github/workflows/landmark-papers.yml` and opens a `needs-review` pull request with `docs/proposals/landmark-papers.md`;
+  it never merges. The paper is `paper-gamble-preinvasive-treg-axis-lung-cancer-interception-nature-2026` in
+  `src/data/papers-watch-2026-11.ts`.
 - [ ] **A scoped search beside the title on each major index page (owner, 29 October 2026).** For example
   https://onco.cc/roadmaps/ would carry a search box next to its heading that searches only roadmaps. The owner points at
   ultrametric.ai and its process page for how it is done there: read that pattern first. Likely shape: one shared
@@ -291,6 +300,36 @@ companies found through the registry) and freshened the most-linked existing rec
   between 6 and 22 rows came from each month of 2024 to 2026, 453 in all. Many are hospitals, named
   individuals or non-oncology sponsors. Confirm each remaining row on the
   company's own website before writing a record.
+- **Weekly: startup monitors (added 3 November 2026).** `npx tsx scripts/startup-monitors.ts` (default window 90 days
+  for dated sources, `--days=`, `--only=`) reads the places new oncology companies appear and writes a review queue to
+  `.cache/startup-monitors/` (one JSON per source and `summary.json`). It never writes under `src/data`. The weekly
+  universe refresh runs it before `scripts/universe-gaps.ts`, so its "not yet in OnCo" findings join the standing issue
+  "Freshness: stale sources and companies to add" (#336), grouped by company, 30 lines a group; the full queue is the
+  workflow's `startup-monitors` artefact. Matching is `scripts/lib/company-match.ts`: companyKey/companyKeys, sponsor
+  aliases, website host and stock code, against company and institution records. Oncology is decided by the source's
+  own words (word-bounded, `isOncologyText`), or by the firm's own tag (Third Rock "Cancer", YC "oncology"). Every
+  web page is checked against its robots.txt first (`scripts/lib/robots.ts`); a refusal skips the source and says so.
+  Sources, with the 3 November 2026 local run (read / oncology / not in OnCo):
+  - Y Combinator, via the open yc-oss dataset of YC's directory: 80 / 80 / 25.
+  - Portfolio pages of investors with records: ARCH 128 / 21 / 8; Third Rock 74 / 26 / 11; a16z 883 / 11 / 2;
+    Khosla 115 / 4 / 1; OrbiMed 202 / 51 / 18; RA Capital 252 / 58 / 20; Atlas 79 / 15 / 6; Flagship 36 / 4 / 4
+    (Flagship's grid has names only, so the company page is read for each unmatched name). GV gives names and
+    sectors only: 646 read, 149 Life Sciences names unmatched, kept in the queue as unscreened, not in the issue.
+  - SEC EDGAR full-text search, S-1 and F-1 mentioning oncology or cancer from drug, biotech, diagnostics and device
+    filers: 56 / 56 / 48, of which 19 have no ticker (a filer with no ticker is usually an IPO; a mention of cancer is not an oncology company).
+  - HKEX list of securities, Chapter 18A issuers (short name ending "-B"): 76 read, 54 unmatched by stock code or
+    name, unscreened (the list gives no description).
+  - FDA Orphan Drug Designations database export, oncology designations in the window: 26 sponsors / 10 not in
+    OnCo, each with its earliest designation so first-time sponsors are marked (8 of the 10 were).
+  - EMA orphan designations (EMA's JSON data file, sponsor from each designation page): 8 / 8 / 4. EMA pages often
+    name a regulatory consultant (Comac Medical, FGK Representative Service) rather than the developer.
+  - NIH RePORTER, NCI SBIR and STTR awards: 159 small businesses / 136 not in OnCo (many are tool and device makers).
+  Not read, and why: YC's own directory filtered by industry (robots.txt disallows `/companies?*`; the yc-oss dataset
+  is read instead); FDA Breakthrough Therapy designations (FDA publishes no list of designations with sponsors, only
+  counts and the approvals that had one); EMA PRIME (no machine-readable list at a stable address); Crunchbase and
+  PitchBook (terms forbid scraping); the trade press (most refuse automated reads). Still owed from the owner's list:
+  conference late-breakers (AACR, ASCO, ESMO, SITC, ASH company lists), ARPA-H awards, STAR Market filings and
+  government company registers.
 - **Monthly: launches and rounds.** Read the launch and financing news from the last month (Fierce Biotech,
   Endpoints, STAT, BioSpace and the Business Wire, PR Newswire and GlobeNewswire company releases) as pointers.
   Also read the portfolio pages of the investor records in `src/data/investors.ts`. Confirm each company on its

@@ -1,0 +1,52 @@
+name: Landmark-paper watch
+
+on:
+  schedule:
+    - cron: "17 7 * * 1" # Mondays 07:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write # labels
+
+concurrency:
+  group: landmark-papers
+  cancel-in-progress: false
+
+# New oncology papers in the top journals, proposed as paper records (owner ask of 1 November 2026: "map new cancer
+# research as it is published"). scripts/landmark-papers.ts reads Crossref, Europe PMC and PubMed, drops what the corpus
+# already holds by DOI or PubMed id, scores the rest and writes docs/proposals/landmark-papers.{md,json}. Nothing under
+# src/data is written. The pull request is labelled needs-review and is NEVER merged by this workflow: a person reads
+# each abstract and writes the records they choose, with the prose taken from the abstract only.
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/landmark-papers.ts --days=7 --max=25 --write
+      - name: Ensure the labels exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create needs-review --color D93F0B --description "A person must check this before it lands" --force || true
+          gh label create landmark-papers --color 5319E7 --description "Proposed paper records from the weekly landmark watch" --force || true
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/landmark-papers
+          title: "Landmark-paper watch: proposed paper records for review"
+          commit-message: "chore: propose this week's landmark oncology papers for review"
+          body: |
+            Drafted by `scripts/landmark-papers.ts`: oncology papers registered in the last seven days in the top journals (Nature, Science, Cell, NEJM, The Lancet, JAMA, BMJ, Lancet Oncology, Nature Medicine, Nature Cancer, Cancer Cell, Cancer Discovery, JCO, JAMA Oncology, Annals of Oncology, Blood and a few more), not already in OnCo by DOI or PubMed id, ranked by journal, trial results, early citations and the records OnCo holds that they name.
+
+            Read `docs/proposals/landmark-papers.md`. Each entry has the abstract as published, a suggested id, a guessed paper type and the record ids it would link to (name matches: check each). For a paper worth a record, write it in a `src/data/papers-*.ts` file with tldr, summary, findings, whatItMeans and caveats taken from the abstract only, push it to this branch or open your own, and merge by hand. Close the pull request otherwise.
+
+            This pull request is never merged automatically.
+          labels: needs-review, landmark-papers, automated
+          delete-branch: true

@@ -40,6 +40,16 @@ const mhra = (brand: string) => `https://products.mhra.gov.uk/?search=${encodeUR
 const tga = (brand: string) => `https://www.tga.gov.au/resources/artg?search_api_views_fulltext=${encodeURIComponent(brand)}`;
 /** MHRA approval notice on GOV.UK (used where the UK decision is documented by a press notice rather than only the SmPC search). */
 const govuk = (slug: string) => `https://www.gov.uk/government/news/${slug}`;
+/** Drugs@FDA overview page for an NDA or BLA number (approval dates and labels). */
+const daf = (appl: string) => `https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=${appl}`;
+/** French national register (ANSM, base de données publique des médicaments) by CIS code: used for EU products authorised nationally rather than centrally. */
+const ansm = (cis: string) => `https://base-donnees-publique.medicaments.gouv.fr/medicament/${cis}/extrait`;
+/** MHRA lists of marketing authorisations granted, published on GOV.UK. */
+const MHRA_GRANTS_2022_08 = "https://assets.publishing.service.gov.uk/media/631a185b8fa8f50205c32647/Monthly_new_MA_listing_August_2022.pdf";
+const MHRA_GRANTS_2025_03A = "https://assets.publishing.service.gov.uk/media/67dac720dd55380604d70a67/New_Marketing_Authorisations_granted_1_March_to_14_March_2025.pdf";
+const MHRA_GRANTS_2026_03A = "https://assets.publishing.service.gov.uk/media/69bac4e1bfd6895605dad820/Marketing_authorisations_granted_1_Mar_14_Mar_2026.pdf";
+/** UK note for a product authorised centrally by the EU before 2021: such authorisations covered the UK and became GB authorisations on 1 January 2021. */
+const UK_FROM_EU = "EU centralised authorisation from before 2021, carried over as a GB authorisation on 1 Jan 2021; MHRA product page not read.";
 const PMDA = REGION_META.JP.url;
 const NMPA = REGION_META.CN.url;
 const CDSCO = REGION_META.IN.url;
@@ -82,8 +92,9 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   "belantamab-mafodotin": { US: A(2020, undefined, "Withdrawn 2022; re-approved Oct 2025 in combination"), EU: V(A(2025, epar("blenrep"), "R/R myeloma with BorDex or PomDex; 23 Jul 2025")), UK: A(2025, mhra("Blenrep"), "First re-approval globally (MHRA Apr 2025)"), JP: A(2025, PMDA), CN: A(2025, NMPA), AU: UR("TGA evaluation") },
   "inotuzumab-ozogamicin": global("Besponsa", "besponsa", 2017, 2017, 2017, 2018, 2021, 2018),
   "disitamab-vedotin": { US: NF("Pfizer (ex-China) running global phase 3 trials; no US filing yet"), CN: A(2021, NMPA, "HER2+ gastric (Jun 2021); HER2-expressing urothelial (Dec 2021)") },
-  "izalontamab-brengitecan": { US: UR("BMS global development; no BLA filed"), CN: UR("NDA for pretreated TNBC and ESCC under NMPA priority review 2026") },
+  "izalontamab-brengitecan": { US: UR("BMS global development; no BLA filed"), CN: A(2026, "https://www.systimmune.com/news_detail/49", "Recurrent or metastatic nasopharyngeal carcinoma after platinum chemotherapy and PD-1 or PD-L1 therapy (22 Jun 2026); oesophageal squamous cell carcinoma after the same (17 Jul 2026)", "First approval anywhere. Read from SystImmune's announcements of the NMPA decisions; the NMPA's own pages were not read") },
   "trastuzumab-rezetecan": { CN: A(2025, NMPA, "HER2-mutant NSCLC; HER2+ breast (Hengrui)") },
+  a166: { CN: A(2025, "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1017/2025101700358.pdf", "Trastuzumab botidotin: unresectable or metastatic HER2+ breast cancer after one or more anti-HER2 therapies", "Read from Kelun-Biotech's HKEX announcement of the NMPA approval, 17 Oct 2025; the NMPA's own page was not read") },
   "patritumab-deruxtecan": { US: W(2025, undefined, "BLA withdrawn May 2025 after CRL (manufacturing) and HERTHENA-Lung02 OS miss") },
   "raludotatug-deruxtecan": { US: UR("Phase 3 REJOICE-Ovarian01 ongoing") },
   "ifinatamab-deruxtecan": { US: UR("Breakthrough designation; IDeate-Lung02 phase 3 ongoing") },
@@ -167,21 +178,30 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   pluvicto: { US: A(2022), EU: A(2022, epar("pluvicto"), "mCRPC post-ARPI and taxane; pre-chemo 2025"), UK: A(2023, mhra("Pluvicto")), JP: A(2025, PMDA, "PSMA+ mCRPC (Mar 2025)"), CN: UR("NMPA review; Novartis China"), AU: A(2023, tga("Pluvicto")) },
   lutathera: { US: A(2018), EU: A(2017, epar("lutathera"), "First approval globally (Sep 2017)"), UK: A(2018, mhra("Lutathera")), JP: A(2021, PMDA), CN: A(2024, NMPA), AU: A(2018, tga("Lutathera")) },
   "radium-223": global("Xofigo", "xofigo", 2013, 2013, 2013, 2016, 2020, 2014),
-  pylarify: { US: A(2021), EU: V(A(2023, epar("pylclari"), "EU brand Pylclari (Curium PET France); PSMA PET in prostate cancer; 27 Nov 2023")), UK: A(2023, mhra("Pylclari")) },
-  "ga68-psma-11": { US: A(2020, undefined, "UCSF/UCLA Ga-68 PSMA-11 Dec 2020; Illuccix, Locametz 2021-22"), EU: A(2022, epar("locametz")), UK: A(2022, mhra("Locametz")), JP: A(2025, PMDA, "Locametz kit (gozetotide), PSMA PET to select patients for PSMA-targeted therapy; 19 Sep 2025"), AU: A(2021, tga("Illuccix"), "Illuccix (Telix), Nov 2021") },
-  flotufolastat: { US: A(2023), EU: UR("MAA (Blue Earth Diagnostics)") },
+  pylarify: { US: A(2021, daf("214793"), "PSMA PET in prostate cancer", "Pylarify; 26 May 2021. Pylarify TruVu (NDA 220089) 6 Mar 2026"), EU: V(A(2023, epar("pylclari"), "EU brand Pylclari (Curium PET France); PSMA PET in prostate cancer; 27 Nov 2023")), UK: A(2024, govuk("piflufolastat-approved-as-diagnostic-tool-for-adults-with-prostate-cancer"), "Suspected or known prostate cancer", "Pylclari (Curium Pharma UK); 6 Mar 2024") },
+  "ga68-psma-11": { US: A(2020, daf("212642"), "PSMA PET in prostate cancer", "UCLA and UCSF Ga-68 gozetotide (NDA 212642 and 212643), 1 Dec 2020; kits Illuccix 17 Dec 2021, Locametz 23 Mar 2022, Gozellix 20 Mar 2025"), EU: A(2022, epar("locametz"), undefined, "Locametz; 9 Dec 2022"), UK: A(2022, MHRA_GRANTS_2022_08, undefined, "Locametz, PLGB 35903/0002, 10 Aug 2022; Illuccix 12 Feb 2025"), JP: A(2025, PMDA, "Locametz kit (gozetotide), PSMA PET to select patients for PSMA-targeted therapy; 19 Sep 2025"), AU: A(2021, tga("Illuccix"), "Illuccix (Telix), Nov 2021") },
+  flotufolastat: { US: A(2023, daf("216023"), "PSMA PET in prostate cancer", "Posluma; 25 May 2023") },
+  illuccix: { US: A(2021, daf("214032"), "PSMA PET in prostate cancer", "Illuccix; 17 Dec 2021. Gozellix kit (NDA 219592) 20 Mar 2025"), EU: A(undefined, ansm("64112581"), undefined, "No centralised EPAR; France: Illuccix authorised by decentralised procedure, 24 Apr 2025"), UK: A(2025, govuk("gozetotide-approved-for-the-treatment-of-prostate-cancer"), "PSMA PET in adults with prostate cancer", "Illuccix (Telix Pharmaceuticals (UK)); 12 Feb 2025, national procedure") },
+  locametz: { US: A(2022, daf("215841"), "PSMA PET in prostate cancer", "Locametz; 23 Mar 2022"), EU: A(2022, epar("locametz"), undefined, "Locametz; 9 Dec 2022"), UK: A(2022, MHRA_GRANTS_2022_08, undefined, "Locametz, PLGB 35903/0002, 10 Aug 2022"), JP: A(2025, PMDA, "Locametz kit (gozetotide), PSMA PET to select patients for PSMA-targeted therapy; 19 Sep 2025") },
+  "psma-1007-f18": { EU: A(undefined, ansm("64034289"), undefined, "No centralised EPAR; France: Radelumin (ABX) authorised by mutual recognition, 9 Dec 2021"), UK: A(2025, MHRA_GRANTS_2025_03A, undefined, "Radelumin (ABX), PL 27959/0001, 3 Mar 2025") },
+  "girentuximab-zr89": { US: UR("Zircaix (TLX250-CDx), BLA 761401: not approved. FDA complete response letter 27 Aug 2025, corrected 10 Apr 2026, citing product quality, a required clinical bridging study and facility inspection findings", "https://download.open.fda.gov/crl/CRL_BLA761401_20260410.pdf") },
   "radioactive-iodine": global("Sodium iodide I-131", "sodium-iodide-131", 1951, 1990, 1990, 1990, 1990, 1990, "Legacy product; national approvals predate modern registers"),
   "lu177-psma-it": { US: UR("SPLASH phase 3 met rPFS, missed OS; BLA decision pending"), EU: UR("ECLIPSE/SPLASH; no MAA decision") },
   "ac225-psma": { US: UR("Phase 3 AcTION / AlphaBreak / PAnTHA") },
   ryz101: { US: UR("Phase 3 ACTION-1") },
   "itm-11": { US: UR("PDUFA 28 Aug 2026 (COMPETE); decision not yet in corpus"), EU: UR("MAA 2026") },
-  "aminolevulinic-acid-gleolan": { US: A(2017, undefined, "Gleolan"), EU: A(2007, epar("gliolan")), UK: A(2007, mhra("Gliolan")), JP: A(2013, PMDA, "Alaglio (SBI Pharma)"), AU: A(undefined, tga("Gliolan")) },
-  "fluciclovine-f18": { US: A(2016), EU: A(2017, epar("axumin")), UK: A(2017, mhra("Axumin")), JP: A(2021, PMDA, "Axumin, imaging of suspected newly identified malignant glioma for resection planning; 23 Mar 2021 (Nihon Medi-Physics)") },
-  "fluoroestradiol-f18": { US: A(2020, undefined, "Cerianna") },
-  "ga68-dotatate": { US: A(2016, undefined, "Netspot (Ga-68 DOTATATE) 2016; Detectnet (Cu-64) 2020"), EU: A(undefined, epar("somakit-toc"), "SomaKit TOC (Ga-68 DOTATOC kit); no centralised DOTATATE kit"), UK: A(undefined, mhra("SomaKit TOC")) },
-  pafolacianine: { US: A(2021, undefined, "Cytalux; ovarian 2021, lung 2022") },
-  pegulicianine: { US: A(2024, undefined, "Lumisight") },
-  "tilmanocept-tc99m": { US: A(2013), EU: W(2024, epar("lymphoseek"), "Authorised Nov 2014; marketing authorisation withdrawn at Navidea's request 10 Jun 2024"), UK: A(2014, mhra("Lymphoseek")) },
+  "aminolevulinic-acid-gleolan": { US: A(2017, daf("208630"), undefined, "Gleolan; 6 Jun 2017"), EU: A(2007, epar("gliolan"), undefined, "Gliolan; 7 Sep 2007"), UK: A(2007, mhra("Gliolan"), undefined, UK_FROM_EU), JP: A(2013, PMDA, "Alaglio (SBI Pharma)"), AU: A(undefined, tga("Gliolan")) },
+  "fluciclovine-f18": { US: A(2016, daf("208054"), undefined, "Axumin; 27 May 2016"), EU: A(2017, epar("axumin"), undefined, "Axumin; 21 May 2017"), UK: A(2017, mhra("Axumin"), undefined, UK_FROM_EU), JP: A(2021, PMDA, "Axumin, imaging of suspected newly identified malignant glioma for resection planning; 23 Mar 2021 (Nihon Medi-Physics)") },
+  "fluoroestradiol-f18": { US: A(2020, daf("212155"), "Oestrogen receptor-positive lesions in recurrent or metastatic breast cancer", "Cerianna; 20 May 2020"), EU: A(undefined, ansm("64307631"), undefined, "No centralised EPAR; France: Estrotep (GE Healthcare) national authorisation, 21 Jul 2016") },
+  "fludeoxyglucose-f18": { US: A(undefined, daf("020306"), "Oncology: abnormal glucose metabolism to help evaluate malignancy (current FDA labels)", "First FDG approval 19 Aug 1994 (NDA 020306); a new indication followed on 2 Jun 2000. Now made under many NDAs and ANDAs"), EU: A(undefined, ansm("63802451"), undefined, "National authorisations; no centralised EPAR. France: for example Fludesoxyglucose (18F) Curium, mutual recognition, 5 Dec 2002"), UK: A(undefined, MHRA_GRANTS_2026_03A, undefined, "Licensed nationally by radiopharmacies; for example Alliance Medical FDG, PL 22443/0004, 13 Mar 2026") },
+  "ga68-dotatate": { US: A(2016, daf("208547"), undefined, "Netspot (Ga-68 dotatate) 1 Jun 2016; Detectnet (Cu-64 dotatate, NDA 213227) 3 Sep 2020"), EU: A(2016, epar("somakit-toc"), "SomaKit TOC (Ga-68 DOTATOC kit); no centralised DOTATATE kit", "SomaKit TOC 8 Dec 2016. Deqtynet (Cu-64 oxodotreotide) refused 3 Aug 2026 after a negative CHMP opinion on 21 May 2026"), UK: A(2016, mhra("SomaKit TOC"), undefined, `SomaKit TOC. ${UK_FROM_EU}`) },
+  pafolacianine: { US: A(2021, daf("214907"), undefined, "Cytalux; ovarian 29 Nov 2021, lung 16 Dec 2022") },
+  pegulicianine: { US: A(2024, daf("214511"), undefined, "Lumisight; 17 Apr 2024") },
+  "tilmanocept-tc99m": { US: A(2013, daf("202207"), undefined, "Lymphoseek; 13 Mar 2013"), EU: W(2024, epar("lymphoseek"), "Authorised 19 Nov 2014; marketing authorisation withdrawn at Navidea's request 10 Jun 2024"), UK: A(2014, mhra("Lymphoseek"), undefined, `${UK_FROM_EU} Status since the EU withdrawal not checked`) },
+  "choline-c11": { US: A(2012, daf("203155"), undefined, "Choline C-11 (Mayo Clinic); 12 Sep 2012") },
+  "ethiodized-oil": { US: A(1954, daf("009190"), "Lymphangiography (31 Mar 1954); selective hepatic intra-arterial imaging of tumours in adults with known hepatocellular carcinoma (4 Apr 2014)", "Lipiodol first approved 31 Mar 1954; liver cancer imaging added 4 Apr 2014"), EU: A(undefined, ansm("65000980"), undefined, "National authorisations; no centralised EPAR. France: Lipiodol Ultra-Fluide, current national authorisation dated 15 Sep 1998") },
+  hexaminolevulinate: { US: A(2010, daf("022555"), undefined, "Cysview; 28 May 2010"), EU: A(undefined, ansm("61196720"), undefined, "National authorisations; no centralised EPAR. France: Hexvix, mutual recognition, 12 Aug 2005") },
+  "technetium-sulfur-colloid": { US: A(undefined, daf("017858"), undefined, "Several kits; the earliest in Drugs@FDA is Tesuloid (Bracco, NDA 016923), 10 Jun 1974. Sun Pharma kit NDA 017858, 17 Apr 1978") },
 
   // ================= Kinase and small-molecule targeted =================
   osimertinib: global("Tagrisso", "tagrisso", 2015, 2016, 2016, 2016, 2017, 2016),
@@ -579,13 +599,18 @@ export function approvedRegions(row: RegionalRow): Region[] {
 
 /** True when a product's approvals lie entirely outside the US and EU (e.g. China-only antibodies): a regional product rather than a gap in our records. */
 /**
- * Tests, imaging agents, devices and AI software carry no regional drug-approval row. The class comes from the one rule in
+ * Tests, devices and AI software carry no regional drug-approval row. The class comes from the one rule in
  * src/lib/product-class.ts. Until 30 October 2026 this was its own pattern, case-insensitive, with "kit" in it, so the KIT
  * kinase in a modality ("Small-molecule kinase inhibitor (BCR-ABL, KIT, PDGFRA)") made imatinib, sunitinib and six other
  * approved medicines read as diagnostics and skip the check.
+ *
+ * Imaging agents (PET and SPECT tracers, contrast agents, fluorescent surgical dyes) were exempt too until 3 November
+ * 2026. They are licensed as medicines, by the FDA, the European Commission and the MHRA, so they are held to the same
+ * check and carry rows above (owner, 1 November 2026).
  */
 export function isDiagnostic(modality?: string): boolean {
-  return productClass({ modality }) !== "medicine";
+  const c = productClass({ modality });
+  return c === "test" || c === "device";
 }
 
 /** A product's own `approvals` field names a US or EU approval, so it counts as anchored even without a curated regional row. */

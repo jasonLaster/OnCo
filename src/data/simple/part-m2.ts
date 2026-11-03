@@ -2,7 +2,7 @@
 export const simpleM2: Record<string, string> = {
   "ugn-103": "UroGen Pharma's UGN-103 mixes the chemotherapy drug mitomycin into a gel that is placed in the bladder and releases the drug, in phase 3 trials for recurrent low-grade bladder cancer.",
   "ugn-104": "UGN-104, from UroGen Pharma, pairs mitomycin chemotherapy with a heat-responsive gel for kidney-sparing treatment of low-grade urothelial cancer in the upper urinary tract, now in a phase 3 trial.",
-  uliledlimab: "TJ Biopharma's Uliledlimab is an experimental medicine of undisclosed type and target, being tested together with toripalimab in a phase 3 trial for non-small-cell lung cancer.",
+  uliledlimab: "TJ Biopharma's uliledlimab is an antibody that blocks CD73, an enzyme tumours use to make adenosine [a substance that calms immune cells], in a phase 3 lung cancer trial with toripalimab.",
   "urogen-pharma": "UroGen Pharma, based in Princeton in the United States, makes gel-based treatments for bladder cancer, including Zusduri and Jelmyto, and runs three phase 3 trials of UGN-103, UGN-102 and UGN-104.",
   varegacestat: "Immunome's Varegacestat is an experimental small-molecule drug that blocks gamma secretase, an enzyme behind Notch signalling [a growth message between cells], in a phase 3 trial for progressing desmoid tumours.",
   vc004: "VC004 is an experimental small-molecule drug from Jiangsu vcare pharmaceutical technology with no target made public, in a phase 3 trial for advanced or spread solid tumours [lump-forming cancers].",

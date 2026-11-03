@@ -2,10 +2,11 @@
 
 import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import Link from "next/link";
-import type { PathwayView } from "@/lib/pathway-products";
+import type { PathwayDiagramView } from "@/lib/pathway-products";
 import { STATUS_LABEL, statusClass } from "@/lib/text";
 
-const W = 900, H = 520, PAD = 60, BOX_W = 170, BOX_H = 40;
+/** A rim in the card colour behind small labels, so an edge running under one does not strike through it. */
+const HALO = { paintOrder: "stroke", strokeWidth: 3, strokeLinejoin: "round" } as const;
 
 type Hover = { kind: "node"; id: string; x: number; y: number } | { kind: "edge"; i: number; x: number; y: number };
 
@@ -14,9 +15,10 @@ type Hover = { kind: "node"; id: string; x: number; y: number } | { kind: "edge"
  * and the escape routes (activating inputs that feed the pathway downstream of the block) are marked.
  * Every node and edge has a tooltip (hover, keyboard focus, or a first tap on a touch screen) and every node
  * opens a page: its target, the term or target sharing its name, or the pathway itself.
- * Renders the full static SVG on the server, so it works without JavaScript.
+ * Renders the full static SVG on the server, so it works without JavaScript. The layout (box sizes, wrapped labels,
+ * orthogonal edge routes with rounded corners, the fitted canvas) arrives ready-made from src/lib/pathway-routing.ts.
  */
-export function PathwayDiagramInteractive({ view, large = false }: { view: PathwayView; large?: boolean }) {
+export function PathwayDiagramInteractive({ view, large = false }: { view: PathwayDiagramView; large?: boolean }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [hover, setHover] = useState<Hover | null>(null);
   const [pinned, setPinned] = useState(false);
@@ -31,7 +33,7 @@ export function PathwayDiagramInteractive({ view, large = false }: { view: Pathw
   }, [pinned]);
   const product = view.products.find((p) => p.id === selected) ?? null;
 
-  const pos = useMemo(() => new Map(view.nodes.map((n) => [n.id, { x: PAD + (n.x / 100) * (W - 2 * PAD), y: PAD + (n.y / 100) * (H - 2 * PAD) }])), [view.nodes]);
+  const { boxes, paths, view: vb, legend } = view.drawing;
   const byId = useMemo(() => new Map(view.nodes.map((n) => [n.id, n])), [view.nodes]);
 
   // Nodes hit by the product; downstream nodes (reachable via "activates" from a hit node); escape edges: activating
@@ -118,61 +120,61 @@ export function PathwayDiagramInteractive({ view, large = false }: { view: Pathw
       )}
       <div className="p-2 overflow-x-auto">
         <div ref={box} className={`relative ${large ? "min-w-[720px]" : "min-w-[640px]"}`} onMouseLeave={hide}>
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" role="group" aria-label={`${view.name} pathway diagram${product ? `, highlighting ${product.name}` : ""}`}>
+          <svg viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} className="w-full h-auto" role="group" aria-label={`${view.name} pathway diagram${product ? `, highlighting ${product.name}` : ""}`}>
             <defs>
               <marker id={`arrow-${view.id}`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" /></marker>
               <marker id={`bar-${view.id}`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><rect x="7" y="0" width="3" height="10" fill="currentColor" /></marker>
               <filter id={`glow-${view.id}`} x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
             </defs>
             {view.edges.map((e, i) => {
-              const a = pos.get(e.from), b = pos.get(e.to);
-              if (!a || !b) return null;
-              const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1, ux = dx / len, uy = dy / len;
-              const sx = a.x + ux * (BOX_W / 2) * Math.min(1, Math.abs(ux) + 0.35), sy = a.y + uy * (BOX_H / 2 + 4);
-              const ex = b.x - ux * (BOX_W / 2) * Math.min(1, Math.abs(ux) + 0.35), ey = b.y - uy * (BOX_H / 2 + 6);
+              const route = paths[i];
+              if (!route) return null;
               const inhibit = e.type === "inhibits";
               const isEscape = escapes.has(i);
               const dimmed = !!product && !isEscape && !hit.has(e.from) && !hit.has(e.to) && !downstream.has(e.to);
               const blocked = !!product && hit.has(e.from) && e.type === "activates";
               const hovered = hover?.kind === "edge" && hover.i === i;
               const cls = isEscape ? "text-amber-500" : inhibit ? "text-rose-500" : blocked ? "text-accent" : hovered ? "text-foreground" : "text-foreground/60";
-              const mx = (sx + ex) / 2, my = (sy + ey) / 2;
+              const { d, mx, my } = route, vertical = route.dir === "v";
               const from = byId.get(e.from)?.label ?? e.from, to = byId.get(e.to)?.label ?? e.to;
               return (
                 <g key={i} className={`transition-opacity ${dimmed && !hovered ? "opacity-20" : ""}`}>
                   <title>{`${from} ${inhibit ? "inhibits" : "activates"} ${to}`}</title>
-                  <line x1={sx} y1={sy} x2={ex} y2={ey} stroke="currentColor" strokeWidth={isEscape ? 2.6 : blocked ? 2.2 : hovered ? 2.4 : 1.6}
+                  <path d={d} fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={isEscape ? 2.6 : blocked ? 2.2 : hovered ? 2.4 : 1.6}
                     strokeDasharray={inhibit ? "5 4" : blocked ? "2 5" : undefined} className={cls}
                     markerEnd={inhibit ? `url(#bar-${view.id})` : `url(#arrow-${view.id})`} />
-                  {/* Wide invisible hit line so the thin edge is easy to hover or tap. */}
-                  <line x1={sx} y1={sy} x2={ex} y2={ey} stroke="transparent" strokeWidth={14} className="cursor-help"
+                  {/* Wide invisible hit path along the route so the thin edge is easy to hover or tap. */}
+                  <path d={d} fill="none" stroke="transparent" strokeWidth={14} className="cursor-help"
                     onMouseEnter={() => show({ kind: "edge", i, x: mx, y: my })} onMouseMove={() => show({ kind: "edge", i, x: mx, y: my })} onClick={() => tapEdge(i, mx, my)} />
-                  {isEscape && <text x={mx} y={my - 6} textAnchor="middle" className="fill-amber-600 pointer-events-none" style={{ fontSize: 10, fontWeight: 600 }}>escape</text>}
-                  {blocked && <text x={mx + 8} y={my + 4} className="fill-accent pointer-events-none" style={{ fontSize: 10, fontWeight: 600 }}>blocked</text>}
+                  {/* Beside a vertical run, above (escape) or below (blocked) a horizontal one. */}
+                  {isEscape && <text x={vertical ? mx + 6 : mx} y={vertical ? my + 3 : my - 6} textAnchor={vertical ? "start" : "middle"} className="fill-amber-600 stroke-card pointer-events-none" style={{ fontSize: 10, fontWeight: 600, ...HALO }}>escape</text>}
+                  {blocked && <text x={vertical ? mx + 6 : mx} y={vertical ? my + 3 : my + 13} textAnchor={vertical ? "start" : "middle"} className="fill-accent stroke-card pointer-events-none" style={{ fontSize: 10, fontWeight: 600, ...HALO }}>blocked</text>}
                 </g>
               );
             })}
-            {view.nodes.map((n) => {
-              const c = pos.get(n.id)!;
+            {view.nodes.map((n, ni) => {
+              const c = boxes[ni];
+              const top = c.cy - c.h / 2;
               const isHit = hit.has(n.id), isDown = downstream.has(n.id);
               const hovered = hover?.kind === "node" && hover.id === n.id;
               const dimmed = !!product && !isHit && !isDown && !hovered;
-              const label = n.label.length > 26 ? n.label.slice(0, 25) + "…" : n.label;
               const boxEl = (
                 <g className={`transition-opacity ${dimmed ? "opacity-30" : ""}`} filter={isHit ? `url(#glow-${view.id})` : undefined}
-                  onMouseEnter={() => show({ kind: "node", id: n.id, x: c.x, y: c.y - BOX_H / 2 })} onFocus={() => show({ kind: "node", id: n.id, x: c.x, y: c.y - BOX_H / 2 })}>
+                  onMouseEnter={() => show({ kind: "node", id: n.id, x: c.cx, y: top })} onFocus={() => show({ kind: "node", id: n.id, x: c.cx, y: top })}>
                   <title>{n.tip ? `${n.label}: ${n.tip}` : n.label}</title>
-                  <rect x={c.x - BOX_W / 2} y={c.y - BOX_H / 2} width={BOX_W} height={BOX_H} rx={8} strokeWidth={isHit || hovered ? 2.2 : 1.2}
+                  <rect x={c.cx - c.w / 2} y={top} width={c.w} height={c.h} rx={8} strokeWidth={isHit || hovered ? 2.2 : 1.2}
                     className={isHit ? "fill-rose-100 stroke-accent dark:fill-rose-950" : isDown ? "fill-amber-50 stroke-amber-400 dark:fill-amber-950/40" : n.targetId ? `fill-violet-50 ${hovered ? "stroke-violet-600" : "stroke-violet-400"} dark:fill-violet-950` : `fill-card ${hovered ? "stroke-foreground/60" : "stroke-border"}`} />
-                  <text x={c.x} y={c.y + 4} textAnchor="middle" className="fill-foreground" style={{ fontSize: 12.5, fontWeight: n.targetId || isHit ? 600 : 500 }}>{label}</text>
-                  {isHit && <text x={c.x} y={c.y - BOX_H / 2 - 5} textAnchor="middle" className="fill-accent" style={{ fontSize: 10, fontWeight: 700 }}>◉ {product?.name}</text>}
+                  <text x={c.cx} y={c.cy + 4 - (c.lines.length - 1) * 7} textAnchor="middle" className="fill-foreground" style={{ fontSize: 12.5, fontWeight: n.targetId || isHit ? 600 : 500 }}>
+                    {c.lines.map((l, k) => <tspan key={k} x={c.cx} dy={k ? 14 : 0}>{l}</tspan>)}
+                  </text>
+                  {isHit && <text x={c.cx} y={top - 5} textAnchor="middle" className="fill-accent stroke-card" style={{ fontSize: 10, fontWeight: 700, ...HALO }}>◉ {product?.name}</text>}
                 </g>
               );
               return n.href
-                ? <Link key={n.id} href={n.href} aria-label={`${n.label}, ${(opensLabel[n.opens ?? "pathway"] ?? "open page").toLowerCase()}`} onClick={(e) => tapNode(e, n.id, c.x, c.y - BOX_H / 2)}>{boxEl}</Link>
-                : <g key={n.id} tabIndex={0} onClick={(e) => tapNode(e, n.id, c.x, c.y - BOX_H / 2)}>{boxEl}</g>;
+                ? <Link key={n.id} href={n.href} aria-label={`${n.label}, ${(opensLabel[n.opens ?? "pathway"] ?? "open page").toLowerCase()}`} onClick={(e) => tapNode(e, n.id, c.cx, top)}>{boxEl}</Link>
+                : <g key={n.id} tabIndex={0} onClick={(e) => tapNode(e, n.id, c.cx, top)}>{boxEl}</g>;
             })}
-            <g transform={`translate(${PAD}, ${H - 22})`} className="text-foreground/60" style={{ fontSize: 11 }}>
+            <g transform={`translate(${legend.x}, ${legend.y})`} className="text-foreground/60" style={{ fontSize: 11 }}>
               <line x1={0} y1={0} x2={30} y2={0} stroke="currentColor" markerEnd={`url(#arrow-${view.id})`} /><text x={36} y={4} className="fill-muted">activates</text>
               <line x1={110} y1={0} x2={140} y2={0} stroke="currentColor" strokeDasharray="5 4" className="text-rose-500" markerEnd={`url(#bar-${view.id})`} /><text x={146} y={4} className="fill-muted">inhibits</text>
               <rect x={220} y={-8} width={14} height={14} rx={3} className="fill-violet-50 stroke-violet-400 dark:fill-violet-950" /><text x={240} y={4} className="fill-muted">druggable target (click)</text>
@@ -182,7 +184,7 @@ export function PathwayDiagramInteractive({ view, large = false }: { view: Pathw
           </svg>
           {hover && tipBody && (
             <div role="tooltip" className={`absolute z-20 w-64 max-w-[70%] card shadow-xl p-3 text-sm ${pinned ? "pointer-events-auto" : "pointer-events-none"}`}
-              style={{ left: `${(hover.x / W) * 100}%`, top: `${(hover.y / H) * 100}%`, transform: `translate(${hover.x > W * 0.7 ? "-100%" : hover.x < W * 0.3 ? "0" : "-50%"}, -100%) translateY(-6px)` }}
+              style={{ left: `${((hover.x - vb.x) / vb.w) * 100}%`, top: `${((hover.y - vb.y) / vb.h) * 100}%`, transform: `translate(${hover.x - vb.x > vb.w * 0.7 ? "-100%" : hover.x - vb.x < vb.w * 0.3 ? "0" : "-50%"}, -100%) translateY(-6px)` }}
               onMouseEnter={() => setPinned(true)} onMouseLeave={() => { setPinned(false); setHover(null); }}>
               {tipBody}
             </div>

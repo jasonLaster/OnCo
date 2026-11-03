@@ -281,7 +281,7 @@ const handWrittenTrials = [...colorectalTrialsEarly, ...colorectalTrialsRectal, 
 export const colorectalTreatmentPatch: Spike["patch"] = {
   standardOfCare: colorectalStandardOfCare,
   trials: [...handWrittenTrials.map((x) => x.id), "nct04793958", "nct05855200", "nct06252649"],
-  drugs: ["folfoxiri", "avelumab", "botensilimab", "balstilimab", "ziv-aflibercept", "ramucirumab", "vemurafenib", "cobimetinib", "mitomycin", "signatera", "guardant-reveal", "larotrectinib", "entrectinib", "selpercatinib", "dostarlimab", "atezolizumab"],
+  drugs: ["folfoxiri", "avelumab", "botensilimab", "balstilimab", "ziv-aflibercept", "ramucirumab", "vemurafenib", "cobimetinib", "mitomycin", "signatera", "guardant-reveal", "oncodetect", "larotrectinib", "entrectinib", "selpercatinib", "dostarlimab", "atezolizumab"],
   terms: ["colorectal-trials-open-today", "colorectal-palliation-obstruction-pain", "colorectal-failed-programmes", "colorectal-uk-drug-access", "total-neoadjuvant-therapy", "organ-preservation", "cancer-drugs-fund", "hepatectomy", "debulking", "radiofrequency-ablation", "oligometastatic", "stoma", "chemoradiation"],
   technologies: ["hipec-pipac-devices", "microwave-rf-ablation", "palliative-radiotherapy", "palliative-care", "endoscopic-resection", "cea-surveillance-colorectal", "companion-diagnostic"],
   pipeline: ["mountaineer-03", "nct05855200", "nct06252649", "nct04793958", "circulate-us", "tracc", "nct05608044", "chronos", "cave"],

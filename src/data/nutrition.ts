@@ -430,7 +430,7 @@ const trials: TrialInput[] = [
     replication: "Consistent with D-Health (Australia, 21,315 participants, no reduction in mortality or cancer) and with meta-analyses showing no effect on incidence and a possible 10-15% reduction in cancer mortality.",
     technologies: ["vitamin-d-omega3-supplementation", "chemoprevention"], terms: ["unproven-diet-claims", "hazard-ratio"], sections: [SEC, "prevention"],
     bottlenecks: ["b-negative-results", "b-misinformation"], related: ["idea-reg-vitamin-d-digestive-cancer-biomarker-trial"],
-    links: [ct("NCT01169259"), doi("Vitamin D results (NEJM 2019)", "10.1056/NEJMoa1809944"), doi("Omega-3 results (NEJM 2019)", "10.1056/NEJMoa1809946")] }),
+    links: [ct("NCT01169259"), doi("Vitamin D results (NEJM 2019)", "10.1056/NEJMoa1809944"), doi("Omega-3 results (NEJM 2019)", "10.1056/NEJMoa1811403")] }),
 
   trial({ id: "aspree", drugs: ["aspirin"], name: "ASPREE (ASPirin in Reducing Events in the Elderly)", nct: "NCT01038583", phase: "3", status: "negative", yearReported: 2018, enrolled: 19114, sponsor: "Monash University / NIH National Institute on Aging",
     setting: "Community-dwelling adults aged 70+ (65+ for US Black and Hispanic participants) without cardiovascular disease, dementia or disability: aspirin 100 mg/day vs placebo",

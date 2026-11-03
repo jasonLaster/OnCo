@@ -415,7 +415,7 @@ const spike: Spike = {
       "First-line CDK4/6 + endocrine therapy with median OS beyond five years (MONALEESA-2: 63.9 months).",
       "Genotype-directed second line: ESR1-mutant → oral SERDs or the first approved PROTAC (vepdegestrant); PIK3CA/AKT/PTEN → inavolisib (OS benefit), capivasertib.",
       "The first ctDNA-triggered treatment switch approved by the FDA (camizestrant, SERENA-6, September 2026), over a negative advisory vote.",
-      "ADCs before chemotherapy in endocrine-resistant disease: T-DXd for HER2-low and ultralow (DESTINY-Breast06), TROP2 ADCs for the rest.",
+      "ADCs in endocrine-resistant disease: T-DXd before chemotherapy for HER2-low and ultralow (DESTINY-Breast06); TROP2 ADCs (sacituzumab govitecan, datopotamab deruxtecan) after chemotherapy for the rest.",
     ],
     history: [
       { year: 1896, title: "Beatson removes ovaries to treat advanced breast cancer", note: "First hormonal therapy for any cancer." },
@@ -456,6 +456,7 @@ const spike: Spike = {
     trials: ["monaleesa-2", "monarch-3", "paloma-2", "solar-1", "capitello-291", "inavo120", "emerald", "ember-3", "serena-6", "evera", "persevera", "lidera", "postmonarch", "tailorx", "rxponder", "soft-text", "pallas-penelope-b", "tropics-02", "fourlight-1", "cambria"],
     related: ["adc-generations", "trop2-adc-roadmap"],
     tags: ["spike"],
+    links: [{ label: "FDA label: Trodelvy (sacituzumab govitecan), DailyMed", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d" }, { label: "FDA label: Datroway (datopotamab deruxtecan), DailyMed", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0" }],
   },
 };
 

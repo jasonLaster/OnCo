@@ -118,7 +118,7 @@ export const drugDepth: Record<string, DrugDepth> = {
   },
   "brentuximab-vedotin": {
     dosing: { route: "IV infusion", schedule: "1.8 mg/kg (max 180 mg) every 3 weeks; 1.2 mg/kg (max 120 mg) every 2 weeks with AVD", modifications: "G-CSF prophylaxis mandatory with AVD; hold for grade 2 neuropathy; contraindicated with bleomycin", monitoring: "Neuropathy, blood counts, PML symptoms, LFTs", source: DM("3904f8dd-1aef-3490-e48f-bd55f32ed67f") },
-    toxicity: [tx("Neutropenia", 91, 82), tx("Peripheral sensory neuropathy", 65, 10), tx("Constipation", 42, 2), tx("Nausea", 40, 2), tx("Vomiting", 33, 3), tx("Febrile neutropenia", 19, 19)].map((t) => ({ ...t, source: DM("3904f8dd-1aef-3490-e48f-bd55f32ed67f"), note: "ECHELON-1, A+AVD arm" })),
+    toxicity: [tx("Neutropenia", 91, 82), tx("Peripheral sensory neuropathy", 65, 10), tx("Constipation", 42, 2), tx("Vomiting", 33, 3), tx("Febrile neutropenia", 19, 19)].map((t) => ({ ...t, source: DM("3904f8dd-1aef-3490-e48f-bd55f32ed67f"), note: "ECHELON-1, A+AVD arm" })),
     access: [US_PARTB(), UK_NICE("recommended in CD30+ Hodgkin lymphoma settings (TA446, TA524) and first-line stage IV with AVD")],
     regulatoryEvents: [ev("2011-08-19", "approval", "US", "Accelerated approval, relapsed Hodgkin lymphoma and systemic ALCL"), ev("2015-08-17", "approval", "US", "Post-transplant consolidation in Hodgkin lymphoma (AETHERA)"), ev("2018-03-20", "approval", "US", "First-line stage III/IV Hodgkin lymphoma with AVD (ECHELON-1)"), ev("2018-11-16", "approval", "US", "First-line CD30+ peripheral T-cell lymphoma with CHP (ECHELON-2)"), ev("2022-11-10", "approval", "US", "Paediatric high-risk Hodgkin lymphoma")],
     mechanismSteps: ADC_STEPS("CD30", "MMAE"),

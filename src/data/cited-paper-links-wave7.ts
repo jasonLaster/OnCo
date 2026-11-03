@@ -1177,7 +1177,6 @@ export const CITED_PAPER_SKIP: Record<string, string> = {
   "10.1016/j.ejcsup.2006.08.003": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by electrochemotherapy",
   "10.1016/s1470-2045(23)00492-9": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by craniopharyngioma",
   "10.1016/s2214-109x(21)00347-3": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by b-prevention-adoption",
-  "10.1056/nejmoa1809946": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by vital",
   "10.1056/nejmoa2117013": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by cd7",
   "10.1097/01.sla.0000234786.09312.53": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by isolated-limb-perfusion",
   "10.1136/jitc-2020-002757": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by empower-cscc-1",

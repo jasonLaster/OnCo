@@ -1323,6 +1323,7 @@ const richterSpike = mk(CX.richter, {
   terms: ["lymphoma-bio-transformation", "deauville"],
   related: ["tp53-del17p", "double-hit-rearrangement", "ig-tcr-clonality"],
   technologies: ["cgp", "fdg-pet", "cytogenetics-fish", "clonality-testing"],
+  links: [SRC.rossi2011],
 });
 
 export default nhlSpike;

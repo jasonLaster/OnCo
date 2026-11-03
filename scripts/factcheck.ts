@@ -102,7 +102,46 @@ export function phaseFromRegistry(phases: string[] | undefined): Trial["phase"] 
   return null;
 }
 
-const compact = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+// NFKC first, so a registry's "Phase Ⅱ" (U+2161) compares equal to our "Phase II".
+const compact = (s: string) => s.normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+/**
+ * Registry-derived trial names are the registry's brief title cut at a fixed length, often mid-word ("...Metastatic
+ * Colorec"). Such a name is a prefix of the title it was cut from, so it identifies that study; 225 of the 499
+ * nct-title-mismatch warnings in the 2 November 2026 run were this and nothing else.
+ */
+export function isTruncatedTitle(name: string, titles: string[]): boolean {
+  const n = compact(name);
+  return n.length >= 30 && titles.some((t) => { const c = compact(t); return c.length > n.length && c.startsWith(n); });
+}
+
+/**
+ * The registry gives the study an acronym, and our record's name is a different trial's name. POP-RT was pointed at
+ * PEACE2 (NCT01952223) and Euro Ewing 2012 at EWING2008 (NCT00987636): the disease words matched, so a word-overlap
+ * test passed them, and both records then carried registry status, start dates and sites from the wrong study until
+ * the 3 November 2026 accuracy sample read them. A conflict is: no name or alias contains the acronym (or the reverse),
+ * and either the acronym's letter stem appears in our name with different digits (EWING2008 against "Euro Ewing
+ * 2012"), or it does not appear at all while our name is itself an acronym-style trial name (POP-RT).
+ */
+export function acronymConflict(name: string, aliases: string[], registryAcronym: string | undefined): boolean {
+  const norm = (s: string) => s.normalize("NFKC").toUpperCase().replace(/[^A-Z0-9]/g, "");
+  const a = norm(registryAcronym ?? "");
+  if (a.length < 3) return false;
+  const names = [name, ...aliases];
+  if (names.some((n) => { const c = norm(n); return c.length >= 3 && (c.includes(a) || a.includes(c)); })) return false;
+  const stem = /^[A-Z]{3,}/.exec(a)?.[0];
+  const digits = a.slice(stem?.length ?? 0).match(/\d+/)?.[0];
+  if (stem) {
+    const re = new RegExp(`(?:^|[^A-Za-z])${stem}[^A-Za-z0-9]*(\\d+)?`, "i");
+    const hit = names.map((n) => re.exec(n.normalize("NFKC"))).find(Boolean);
+    if (hit) return !!digits && !!hit[1] && hit[1] !== digits;
+  }
+  // An acronym-style name leads with its acronym: capitals and digits, hyphens allowed, at least three capitals (POP-RT,
+  // KEYNOTE-522). Descriptive names ("Niraparib with radiotherapy in TNBC") are left to the title check. Where the
+  // registry's acronym is another label for the same study (a protocol number, a French nickname), add it to `aka`.
+  const first = name.trim().split(/[\s/(),&:]+/)[0] ?? "";
+  return /^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*$/.test(first) && (first.match(/[A-Z]/g) ?? []).length >= 3;
+}
 
 /**
  * Require a complete trial name or alias in a registry title, acronym or protocol id. Punctuation
@@ -166,7 +205,11 @@ export function checkRegistryTrial(t: Trial, ps: TrialProtocol | undefined, toda
   // The sponsor's own protocol ids (COG "ACNS0331", "RTOG 0129", "ISG-STS 1001") are often absent from titles.
   const identifiers = [im.acronym ?? "", im.orgStudyIdInfo?.id ?? "", ...(im.secondaryIdInfos ?? []).map((s) => s.id ?? "")];
   const hasIdentity = [...titles, ...identifiers].some((value) => compact(value).length > 0);
-  if (!hasIdentity || !nameMatchesRegistry(t.name, titles, t.aka, identifiers)) {
+  if (hasIdentity && acronymConflict(t.name, t.aka, im.acronym)) {
+    // Reported beside the title warning below, and like it withholds every patch.
+    mismatches.push({ check: "nct-acronym-conflict", id: t.id, name: t.name, route: routeFor(t), recorded: `${t.nct}: "${t.name}"`, registry: `${im.acronym}: ${(im.briefTitle ?? im.officialTitle ?? "").slice(0, 120)}`, url: registryUrl, severity: "high" });
+  }
+  if (!hasIdentity || !(nameMatchesRegistry(t.name, titles, t.aka, identifiers) || isTruncatedTitle(t.name, titles))) {
     mismatches.push({ check: "nct-title-mismatch", id: t.id, name: t.name, route: routeFor(t), recorded: `${t.nct}: "${t.name}"`, registry: hasIdentity ? `${im.acronym ? `${im.acronym}: ` : ""}${(im.briefTitle ?? im.officialTitle ?? "").slice(0, 120)}` : "registry returned no study title or identifier", url: registryUrl, severity: "medium" });
     // The registry may describe another study. Keep the identity warning for a person to resolve,
     // but do not offer its phase, enrolment or status as corrections to this record (including --all).

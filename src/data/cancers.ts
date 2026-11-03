@@ -757,9 +757,9 @@ export const cancers: CancerInput[] = [
     id: "extragonadal-germ-cell-tumour", name: "Extragonadal germ cell tumour", group: "genitourinary", wikipedia: W("Germ_cell_tumor"),
     pipeline: ["tiger-trial", "autologous-stem-cell-transplant"],
     stateOfArt: [
-      "Extragonadal seminoma is cured as often as testicular seminoma: the 2002 international pooled analysis of 635 patients reported 88 percent overall survival whether the primary was mediastinal or retroperitoneal.",
-      "Non-seminoma depends on where it starts: about 63 percent of patients with retroperitoneal primaries and 49 percent with mediastinal primaries were alive in the same analysis, which is why primary mediastinal non-seminoma sits in the IGCCCG poor-risk group by definition.",
-      "Adverse factors for non-seminoma are liver, lung or brain metastases, a mediastinal primary and a raised beta-hCG; these guide the choice of four cycles and early referral to a high-volume centre.",
+      "Extragonadal seminoma is cured as often as testicular seminoma: in the 2002 international analysis of 635 patients, the 104 with seminoma had 88 percent overall survival whether the primary was mediastinal or retroperitoneal.",
+      "Non-seminoma depends on where it starts: in the same analysis 63 percent of patients with retroperitoneal primaries and 49 percent with mediastinal primaries were alive when last followed up (a median of 29 and 19 months), not at a fixed five years; the authors put five-year survival for mediastinal non-seminoma at 45 percent. That is why primary mediastinal non-seminoma sits in the IGCCCG poor-risk group by definition.",
+      "Adverse factors for non-seminoma are spread to organs other than the lungs (such as the liver or brain), a mediastinal primary and a raised beta-hCG; these guide the choice of four cycles and early referral to a high-volume centre.",
       "Salvage is the open question: the randomised TIGER trial comparing conventional-dose TIP with high-dose chemotherapy and stem cell rescue has finished recruiting and its result will set the standard for relapse.",
     ],
     aka: ["Extragonadal Germ Cell Tumor", "Extragonadal germ cell tumor", "Mediastinal germ cell tumour", "Retroperitoneal germ cell tumour", "Primary mediastinal nonseminomatous germ cell tumour"],
@@ -783,7 +783,7 @@ export const cancers: CancerInput[] = [
     openProblems: ["Cure rates for mediastinal non-seminoma remain well below those of testicular primaries.", "The role of high-dose chemotherapy in first-line poor-risk disease is still being tested (TIGER trial)."],
     related: ["testicular", "paediatric-germ-cell-tumours"],
     targets: [], drugs: ["bleomycin", "etoposide", "cisplatin", "ifosfamide", "vinblastine"], terms: ["afp", "tumour-markers", "autologous-transplant"],
-    links: [{ label: "NCI: Extragonadal germ cell tumors", url: "https://www.cancer.gov/types/extragonadal-germ-cell" }],
+    links: [{ label: "NCI: Extragonadal germ cell tumors", url: "https://www.cancer.gov/types/extragonadal-germ-cell" }, { label: "Bokemeyer et al., J Clin Oncol 2002: extragonadal germ cell tumours, international analysis", url: "https://doi.org/10.1200/JCO.2002.07.062" }],
     tags: ["rare"],
   }),
   c({

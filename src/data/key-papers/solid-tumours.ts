@@ -711,7 +711,7 @@ export const papersSolidTumours: PaperInput[] = [
       "Objective response about 61% vs 40% in the first analysis (Nature Medicine 2025), with longer duration of response.",
       "Median PFS 12.8 vs 7.1 months; HR 0.53.",
       "Median overall survival 30.3 vs 15.1 months; HR 0.49.",
-      "Grade 3 or higher adverse events were more frequent with the triplet plus chemotherapy, driven by skin toxicity, gastrointestinal events and neutropenia.",
+      "Grade 3 or 4 adverse events occurred in 81.5% with encorafenib, cetuximab and mFOLFOX6 against 66.8% with standard care; the largest differences in grade 3 or 4 events were anaemia (15.1% vs 3.9%) and raised lipase (17.2% vs 6.1%).",
       "The chemotherapy-free encorafenib plus cetuximab arm was stopped early after emerging data from other studies.",
     ],
     whatItMeans: "Patients with newly diagnosed metastatic colorectal cancer whose tumour carries a BRAF V600E mutation, which is about 8-12% of cases, should now be offered encorafenib and cetuximab together with FOLFOX from the start rather than after chemotherapy fails; median survival has roughly doubled to about two and a half years. BRAF testing at diagnosis is therefore essential, alongside RAS and mismatch repair testing. The regimen is more toxic than chemotherapy alone.",
@@ -925,7 +925,7 @@ export const papersSolidTumours: PaperInput[] = [
   p({ id: "paper-keynote-564-nejm-2021", name: "KEYNOTE-564: a year of pembrolizumab after kidney cancer surgery",
     tldr: "One year of pembrolizumab after surgery for high-risk kidney cancer reduced relapses by about a third and, in later follow-up, became the first adjuvant treatment to help kidney cancer patients live longer.",
     summary: "Double-blind, placebo-controlled phase 3 trial of 994 patients with clear-cell renal cell carcinoma at intermediate-high or high risk of recurrence after nephrectomy, or with resected metastatic disease (M1 NED), randomised to one year of pembrolizumab or placebo. Primary endpoint was disease-free survival.\n\n24-month DFS was 77.3% vs 68.1% (HR 0.68). The 2024 overall survival analysis showed HR 0.62 with 48-month OS 91.2% vs 86.0%. It was the first adjuvant therapy in kidney cancer to improve survival, after decades of negative trials with cytokines and VEGF inhibitors, and it stands alone: three other adjuvant checkpoint inhibitor trials (IMmotion010, CheckMate 914, PROSPER) were negative.",
-    journal: "New England Journal of Medicine", year: 2021, doi: "10.1056/NEJMoa2106391",
+    journal: "New England Journal of Medicine", year: 2021, doi: "10.1056/NEJMoa2106391", pmid: "34407342",
     authors: "Choueiri TK, Tomczak P, Park SH, et al.", paperType: "rct", participants: 994, changedPractice: true,
     findings: [
       "24-month disease-free survival 77.3% vs 68.1%; HR 0.68 (95% CI 0.53-0.87).",

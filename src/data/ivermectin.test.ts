@@ -43,15 +43,18 @@ describe("ivermectin evidence page", () => {
   it("marks laboratory evidence as such and flags the expression of concern and the retraction on the records", () => {
     for (const step of ivermectinDrug.mechanismSteps ?? []) expect(step).toMatch(/^(Laboratory|Untested):/);
     const byId = new Map(ivermectinPapers.map((p) => [p.id, p]));
+    // Hulscher 2026 was retracted in October 2026 (PubMed 42823188); it keeps its expression of concern and is held to the retraction rule below too.
     for (const id of ["paper-draganov-ivermectin-cold-tumours-npj-breast-cancer-2021", "paper-hulscher-ivermectin-mebendazole-cohort-anticancer-res-2026"]) {
       const paper = byId.get(id)!;
       expect(paper.name, id).toMatch(/expression of concern/i);
       expect(paper.summary, id).toMatch(/expression of concern/i);
       expect(paper.caveats?.some((c) => /expression of concern/i.test(c)), id).toBe(true);
     }
-    const retracted = byId.get("paper-makis-fenbendazole-case-series-retracted-2025")!;
-    expect(retracted.name).toMatch(/^RETRACTED:/);
-    expect((retracted.links ?? []).some((l) => /retraction/i.test(l.label))).toBe(true);
+    for (const id of ["paper-makis-fenbendazole-case-series-retracted-2025", "paper-hulscher-ivermectin-mebendazole-cohort-anticancer-res-2026"]) {
+      const retracted = byId.get(id)!;
+      expect(retracted.name, id).toMatch(/^RETRACTED:/);
+      expect((retracted.links ?? []).some((l) => /retraction/i.test(l.label)), id).toBe(true);
+    }
     const fenbendazole = ivermectinDrugs.find((d) => d.id === "fenbendazole")!;
     expect(fenbendazole.name).toMatch(/veterinary/i);
     expect(fenbendazole.modality).toMatch(/not approved for human use/i);

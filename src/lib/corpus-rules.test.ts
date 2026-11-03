@@ -65,6 +65,9 @@ const isRegimen = (modality: string) => /regimen/i.test(modality);
 const PHASE3_WITHOUT_NCT = new Set(["abc-02", "bilcap", "cadance-304", "circulate-japan", "crystal-fire3", "first-308", "olanzapine-appetite-tmh", "nlst-nelson", "prehab-trial",
   // Chinese phase 3 registered domestically only; NCT04829604, once recorded here, is the separate US study ACE-Breast-03.
   "ace-breast-02",
+  // Dutch phase 3 (2004 to 2014) with no ClinicalTrials.gov record. NCT01053676, once recorded here, is a Bayer
+  // bioequivalence study of BAY77-1931 granules (accuracy sample, 3 November 2026); its own Dutch registry id was not resolved.
+  "horrad",
   // Japanese JCOG phase 3 registered with UMIN only (UMIN000011688).
   "ascot-jcog1202",
   // Japan Breast Cancer Research Group phase 3 registered with UMIN only (UMIN000000843).

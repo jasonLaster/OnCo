@@ -265,13 +265,13 @@ const trials: TrialInput[] = [
     tldr: "Proved 'triplet therapy': adding darolutamide to hormone therapy plus chemotherapy reduces death by a third.",
     summary: "ARASENS, trial NCT02799602 sponsored by Bayer and Orion and reported in 2022, proved triplet therapy in metastatic hormone-sensitive prostate cancer: adding darolutamide to androgen deprivation plus docetaxel reduces the risk of death by about a third compared with hormone therapy and docetaxel alone. It randomised 1,306 men and met its primary overall survival endpoint, with benefit in both high-volume and low-volume subgroups. OnCo links it to prostate cancer, darolutamide, docetaxel and Matthew R. Smith, and its result is consistent with PEACE-1, which tested an abiraterone triplet in de novo metastatic disease. Because every patient received docetaxel, the trial cannot say whether the chemotherapy was needed on top of darolutamide, which is the main open question. Darolutamide has its own page.",
     result: "OS HR 0.68.",
-    drugs: ["darolutamide", "docetaxel"], cancers: ["prostate", "prostate-mhspc"], links: [ct("NCT02799602")], people: ["matthew-smith"] }),
+    drugs: ["darolutamide", "docetaxel"], cancers: ["prostate", "prostate-mhspc"], links: [ct("NCT02799602"), { label: "Smith et al., NEJM 2022: darolutamide and survival in metastatic, hormone-sensitive prostate cancer (ARASENS)", url: "https://doi.org/10.1056/NEJMoa2119115" }], people: ["matthew-smith"] }),
   t({ id: "peace-1", technologies: ["androgen-deprivation"], name: "PEACE-1", nct: "NCT01957436", phase: "3", status: "positive", yearReported: 2021, sponsor: "UNICANCER / Gustave Roussy",
     setting: "De novo metastatic hormone-sensitive prostate cancer: ADT + docetaxel ± abiraterone ± prostate radiotherapy (2×2 factorial)",
     tldr: "PEACE-1 is the European triplet trial: abiraterone added to hormone therapy and docetaxel improves survival, especially in high-volume disease.",
     summary: "PEACE-1, trial NCT01957436 sponsored by UNICANCER and Gustave Roussy and reported in 2021, is the European triplet trial in de novo metastatic hormone-sensitive prostate cancer, using a two-by-two factorial design to test adding abiraterone and adding prostate radiotherapy to androgen deprivation plus docetaxel. It randomised 1,173 men and showed that abiraterone improved overall survival, with the largest benefit in high-volume disease, while prostate radiotherapy reduced serious urinary events. OnCo links it to prostate cancer, abiraterone acetate, docetaxel, Karim Fizazi and Gustave Roussy, and its result is consistent with ARASENS for triplet therapy in high-volume de novo disease. Whether local radiotherapy to the prostate should be routine in men with metastatic disease is the second question the factorial design raised. Abiraterone acetate has its own page.",
     result: "OS HR 0.82 in the overall population and HR 0.75 in the ADT plus docetaxel population; HR 0.72 in high-volume disease.",
-    drugs: ["abiraterone", "docetaxel"], cancers: ["prostate", "prostate-mhspc"], institutions: ["gustave-roussy"], links: [ct("NCT01957436")], people: ["karim-fizazi"] }),
+    drugs: ["abiraterone", "docetaxel"], cancers: ["prostate", "prostate-mhspc"], institutions: ["gustave-roussy"], links: [ct("NCT01957436"), { label: "Fizazi et al., Lancet 2022: abiraterone plus prednisone added to androgen deprivation therapy and docetaxel in de novo metastatic castration-sensitive prostate cancer (PEACE-1)", url: "https://doi.org/10.1016/S0140-6736(22)00367-1" }], people: ["karim-fizazi"] }),
   t({ id: "embark", technologies: ["androgen-deprivation"], name: "EMBARK", nct: "NCT02319837", phase: "3", status: "positive", yearReported: 2023, sponsor: "Pfizer / Astellas",
     setting: "High-risk biochemical recurrence (PSA doubling time ≤9 months) after local therapy: enzalutamide + leuprolide, enzalutamide alone, or leuprolide alone",
     tldr: "Showed that treating a fast-rising PSA after surgery or radiation with enzalutamide delays spread.",
@@ -439,6 +439,7 @@ const spike: Spike = {
     institutions: ["royal-marsden", "icr-london", "peter-mac", "ucla-jonsson", "uke-hamburg", "johns-hopkins", "gustave-roussy"],
     related: ["radiopharma-roadmap", "psma-pet-to-rlt", "beta-then-alpha", "parp-plus-arpi"],
     tags: ["spike"],
+    links: [{ label: "Smith et al., NEJM 2022: darolutamide and survival in metastatic, hormone-sensitive prostate cancer (ARASENS)", url: "https://doi.org/10.1056/NEJMoa2119115" }, { label: "Fizazi et al., Lancet 2022: abiraterone plus prednisone added to androgen deprivation therapy and docetaxel in de novo metastatic castration-sensitive prostate cancer (PEACE-1)", url: "https://doi.org/10.1016/S0140-6736(22)00367-1" }],
   },
 };
 

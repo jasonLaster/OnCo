@@ -183,7 +183,7 @@ export const pancreaticSubtypes: CancerInput[] = [
     trials: ["rasolute-302", "nct06128551", "nct04956640", "nct06008288", "nct06244771", "nct07491445"], drugs: ["sotorasib", "adagrasib", "daraxonrasib", "elironrasib", "olomorasib", "glecirasib", "divarasib", "garsorasib", "folfirinox", "gemcitabine-nab-paclitaxel"],
     people: ["kevan-shokat", "frank-mccormick", "tanios-bekaii-saab", "eileen-oreilly", "andrew-aguirre"], companies: ["amgen", "bms", "revolution-medicines", "eli-lilly", "jacobio-pharmaceuticals", "roche-genentech"], pathways: ["ras-mapk", "pancreatic-cancer-signalling", "rtk-activation"],
     keyPapers: ["paper-codebreak-100-sotorasib-kras-g12c-pancreatic-nejm-2023", "paper-krystal-1-adagrasib-kras-g12c-solid-tumours-jco-2023", "paper-ostrem-kras-g12c-nature-2013", "paper-codebreak-200-lancet-2023"],
-    links: [{ label: "Wikipedia", url: W("KRAS") }, nccnLink] },
+    links: [{ label: "Wikipedia", url: W("KRAS") }, nccnLink, { label: "FDA label: Rasonque (daraxonrasib), DailyMed", url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13a65923-d072-4dac-8620-8eabbf8c3641" }] },
 
   { id: "kras-wild-type-pdac", related: ["kras-g12c-pdac", "metastatic-pdac", "msi-high-pdac", "brca-palb2-pdac", "pancreatic-acinar-cell-carcinoma", "ampullary", "cholangiocarcinoma"], kind: "cancer", name: "KRAS wild-type pancreatic ductal adenocarcinoma", group: "gastrointestinal", parent: "pancreatic", asOf, tags, wikipedia: W("Pancreatic_cancer"),
     aka: ["KRAS wild-type pancreatic cancer", "KRAS-negative PDAC", "Fusion-driven pancreatic cancer", "BRAF-altered pancreatic cancer"],

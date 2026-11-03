@@ -29,6 +29,54 @@ Ground rules that apply to every row:
 | **OpenStreetMap Nominatim** | Geocode of a reader's town, on explicit action | `src/lib/ctgov-geo.ts`, `TrialFinderGeo` (browser only, nothing stored) | Live | ODbL 1.0; usage policy: attribution, User-Agent, ≤1 request/s, no bulk geocoding | Trial finder distance filter | None; we never batch |
 | **world-atlas (Natural Earth)** | Country outlines (`countries-110m.json`) | `src/components/WorldMap.tsx` loads from jsDelivr at runtime | Pinned package | Natural Earth public domain; world-atlas ISC | Institutions map, GLOBOCAN choropleth | Third-party CDN dependency (could be self-hosted) |
 
+### A1b. Regulator and knowledge-base universe lists (3 November 2026)
+
+Seven lists that say how much of what a patient is most likely to meet OnCo holds, fetched by
+`scripts/fetch-universe-regulatory.ts` (`npm run fetch:universe:regulatory`, weekly in `refresh-universe.yml`) into
+`src/data/universe-lists/` and measured on `/completeness/` by `src/lib/completeness.ts`. Every request sends
+`OnCo (https://onco.cc; hello@onco.cc)`, one at a time with a 1.5 second pause; robots.txt on each host was read first.
+
+| List | Source | Licence | What one item is |
+|---|---|---|---|
+| `fda-oncology-approvals` | FDA Oncology (Cancer) / Hematologic Malignancies Approval Notifications (fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications) | Public domain (US government work) | One notification, one indication, from 1 January 2020 |
+| `fda-novel-oncology` | FDA CDER Novel Drug Approvals, 2020 onwards (fda.gov/drugs/development-approval-process-drugs/novel-drug-approvals-fda) | Public domain | One new medicine whose approved use is a cancer, cancer imaging or a cancer-treatment complication |
+| `fda-cdx-oncology` | FDA List of Cleared or Approved Companion Diagnostic Devices (`FDA_CDX_URL`) | Public domain | One device, indication and drug row |
+| `ema-oncology` | EMA medicines report spreadsheet (ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx) | EMA legal notice: reproduction with the source acknowledged | One centrally authorised originator medicine with ATC L01/L02 or a cancer therapeutic area |
+| `who-eml-cancer` | WHO electronic Essential Medicines List (list.essentialmeds.org), section 8.2 | CC BY 3.0 IGO | One medicine in 8.2.1 to 8.2.5 |
+| `civic-genes` | CIViC GraphQL API (civicdb.org/api/graphql) | CC0 1.0 | One gene with accepted level A or B evidence |
+| `civic-assertions` | CIViC GraphQL API | CC0 1.0 | One accepted assertion |
+
+Two FDA pages no longer hold their early years. The notification page lists only from 19 January 2023, so 2020 to
+early 2023 is read once from the Internet Archive's copy of the same page (snapshot 7 March 2023) and kept; each item
+still links to its own live fda.gov notification. The 2020 novel approvals page returns 404 on fda.gov and is read from
+the Internet Archive copy of 14 June 2021. `scripts/build-fda-oce-events.ts` turns each notification into a dated
+United States event on the product it names (`src/data/fda-oce-events.ts`, merged in `src/data/index.ts` only where the
+record does not already date that approval); `src/data/cdx-fda-rows.ts` holds the companion diagnostic rows the readouts
+lacked.
+
+Coverage when first measured on 3 November 2026 (`npx tsx scripts/universe-coverage.ts <id>` lists what is missing):
+
+| Denominator | Before the fills | After |
+|---|---|---|
+| `approvals-fda-oce` (363 notifications) | 234 (64.5%) | 357 (98.3%) |
+| `drugs-fda-novel` (109 medicines) | 107 (98.2%) | 109 (100%) |
+| `cdx-fda` (236 rows) | 176 (74.6%) | 230 (97.5%) |
+| `drugs-ema-oncology` (267 medicines) | 262 (98.1%) | 267 (100%) |
+| `drugs-who-eml` (77 medicines) | 72 (93.5%) | 77 (100%) |
+| `targets-civic-genes` (349 genes) | 327 (93.7%) | 327 (93.7%) |
+| `biomarkers-civic-assertions` (164) | 139 (84.8%) | 139 (84.8%) |
+
+Tried and not used, so the decision is visible:
+
+- **Medicare MolDX and LCD coverage of MRD and molecular tests.** The LCD list itself is open
+  (api.coverage.cms.gov/v1/reports/local-coverage-final-lcds: the MolDX "Minimal Residual Disease Testing for Cancer"
+  LCDs are L38779, L38814, L38822 and L38835), but the covered tests are named only in the billing and coding articles
+  (A58376 and siblings), whose code tables the API serves only after accepting the AMA CPT and ADA CDT licence (HTTP 401
+  without a licence token), and CPT descriptors are licensed for personal, non-commercial use. Not ingested.
+- **PMDA** forbids bulk, frequent or automated download; **NMPA** is all rights reserved (Part B2 and "Sources we should
+  not ingest" below). Not attempted.
+- **Health Canada Notice of Compliance**: reachable in principle (B2), not attempted in this round.
+
 ### A2. Read by hand and cited (no script yet)
 
 | Source | What we take | Where it lands | Cadence | Licence and attribution | Coverage | Known gaps |

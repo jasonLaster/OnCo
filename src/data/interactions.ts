@@ -226,7 +226,7 @@ export const agents: Agent[] = [
   { id: "tizanidine", name: "Tizanidine", external: true, class: "Muscle relaxant (sensitive CYP1A2 substrate)", props: { cyp1a2Substrate: true }, management: { cyp1a2Inhibitor: "Hypotension and sedation; contraindicated with strong CYP1A2 inhibitors." }, source: dm("tizanidine") },
   { id: "phenytoin", name: "Phenytoin (as a victim drug)", external: true, class: "Antiepileptic, narrow therapeutic index", props: { cyp3a4Inducer: "strong" }, source: dm("phenytoin") },
   { id: "valproate", name: "Valproic acid", external: true, class: "Antiepileptic", props: {}, source: dm("valproic acid") },
-  { id: "allopurinol", name: "Allopurinol", external: true, class: "Xanthine oxidase inhibitor", props: {}, source: dm("allopurinol") },
+  { id: "allopurinol", name: "Allopurinol", class: "Xanthine oxidase inhibitor", props: {}, source: dm("allopurinol") },
   { id: "brivudine", name: "Brivudine / sorivudine", external: true, class: "Antiviral (irreversible DPD inhibitor)", props: {}, source: SOURCES.fdaCyp.url },
   { id: "furosemide", name: "Furosemide", external: true, class: "Loop diuretic", props: {}, source: dm("furosemide") },
   { id: "prednisone", name: "Prednisone / prednisolone", class: "Corticosteroid", props: {}, source: dm("prednisone") },

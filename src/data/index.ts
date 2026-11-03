@@ -39,6 +39,7 @@ import { papersSubtypesWave } from "./papers-subtypes-wave";
 import { papersRareWave } from "./papers-rare-wave";
 import { papersPancreaticWave } from "./papers-pancreatic-wave";
 import { papersWatch202609 } from "./papers-watch-2026-09";
+import { papersWatch202611 } from "./papers-watch-2026-11";
 import { ivermectinDrugs, ivermectinTrials, ivermectinPapers } from "./ivermectin";
 import { papersTrialsWave1 } from "./papers-trials-wave1";
 import { trialKeyPapersWave1 } from "./trial-key-papers-wave1";
@@ -263,7 +264,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...radiationPapersWave5,
   ...papersRareWave,
   ...papersPancreaticWave,
-  ...papersWatch202609, ...ivermectinDrugs, ...ivermectinTrials, ...ivermectinPapers,
+  ...papersWatch202609, ...papersWatch202611, ...ivermectinDrugs, ...ivermectinTrials, ...ivermectinPapers,
   ...papersTrialsWave1,
   ...papersCitedWave7,
   ...papersPeopleWave6,

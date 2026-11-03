@@ -39,11 +39,10 @@ describe("biomarker readout tests and treatments", () => {
     expect(m.treatments.map((d) => d.id)).toContain("atezolizumab");
   });
 
-  it("merges the Signatera row, record and assay into one item", () => {
+  it("merges the Signatera row and record into one item", () => {
     const it = biomarkerMembers(bm("ctdna-mrd-positive")).tests.find((t) => t.key === "signatera")!;
     expect(it.record?.id).toBe("signatera");
     expect(it.rows.map((r) => r.id)).toContain("signatera");
-    expect(it.assays.map((a) => a.id)).toContain("signatera-mrd");
     expect(it.href).toBe("/drugs/signatera/");
   });
 

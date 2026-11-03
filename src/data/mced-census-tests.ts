@@ -87,7 +87,7 @@ export const mcedTests: DrugInput[] = [
     tldr: "Adela's blood test in development for 20 cancer types, built on reading DNA methylation across the whole genome; no peer-reviewed screening results yet.",
     summary: "Adela, founded on cell-free methylated DNA immunoprecipitation work from Princess Margaret Cancer Centre, is developing a test for 20 pre-selected cancer types (company release, 26 May 2026) alongside its residual disease test. The CAMPERR case-control study (NCT05366881) is training and validating the platform across 20 cancer types. The only performance reported is a company conference figure: an interim AACR 2023 training readout across 12 cancer types with an area under the curve of 0.94 (0.92 at stage I), without sensitivity or specificity. No peer-reviewed multi-cancer paper, regulatory status or price was found.",
     notes: [NO_RCT, RESULT],
-    companies: ["adela"], trials: ["camperr"], technologies: ["methylation-profiling", "mrd-testing"], institutions: ["princess-margaret"],
+    companies: ["adela"], trials: ["camperr"], technologies: ["methylation-profiling"], institutions: ["princess-margaret"],
     links: [ct("NCT05366881"), { label: "Adela", url: "https://www.adelabio.com/" }] }),
 
   // ------------------------------------------------------------------ Europe

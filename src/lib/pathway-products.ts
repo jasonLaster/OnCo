@@ -1,6 +1,7 @@
 import type { Pathway } from "@/lib/schema";
 import { graph } from "@/lib/graph";
 import { routeFor } from "@/lib/kinds";
+import { layoutPathway } from "@/lib/pathway-routing";
 
 export type PathwayProduct = { id: string; name: string; route: string; status?: string; modality: string; targets: string[]; nodeIds: string[] };
 export type PathwayNodeView = {
@@ -14,6 +15,16 @@ export type PathwayNodeView = {
   /** What the link opens: "target", "term" or "pathway". */
   opens?: string;
 };
+/**
+ * The drawn diagram, laid out on the server so the browser does no routing: one box per node (same order as `nodes`),
+ * one routed path per edge (same order as `edges`, null if an end is missing), the fitted canvas and the legend row.
+ */
+export type PathwayDrawing = {
+  boxes: Array<{ cx: number; cy: number; w: number; h: number; lines: string[] }>;
+  paths: Array<{ d: string; mx: number; my: number; dir: "h" | "v" } | null>;
+  view: { x: number; y: number; w: number; h: number };
+  legend: { x: number; y: number };
+};
 export type PathwayView = {
   id: string; name: string;
   /** The pathway's own page. */
@@ -23,6 +34,7 @@ export type PathwayView = {
   products: PathwayProduct[];
   interventions: string[];
 };
+export type PathwayDiagramView = PathwayView & { drawing: PathwayDrawing };
 
 const TIP_MAX = 220;
 function clip(s: string): string {
@@ -72,4 +84,25 @@ export function pathwayView(p: Pathway): PathwayView {
     products: list,
     interventions: p.interventions,
   };
+}
+
+/** Everything the diagram needs, including its layout and routed edges (see src/lib/pathway-routing.ts). */
+export function pathwayDiagramView(p: Pathway): PathwayDiagramView {
+  return { ...pathwayView(p), drawing: drawingFor(p) };
+}
+
+/** A pathway is drawn on its own page and on mechanics stage pages; route it once per build. */
+const drawings = new Map<string, PathwayDrawing>();
+function drawingFor(p: Pathway): PathwayDrawing {
+  let d = drawings.get(p.id);
+  if (!d) {
+    const laid = layoutPathway(p.nodes, p.edges);
+    d = {
+      boxes: laid.nodes.map((b) => ({ cx: b.cx, cy: b.cy, w: b.w, h: b.h, lines: b.lines })),
+      paths: laid.edges.map((e) => (e ? { d: e.d, mx: e.mid.x, my: e.mid.y, dir: e.midDir } : null)),
+      view: laid.view, legend: laid.legend,
+    };
+    drawings.set(p.id, d);
+  }
+  return d;
 }

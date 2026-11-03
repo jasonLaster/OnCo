@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { pageMeta } from "@/lib/seo";
 import { KIND_META, routeFor, type Entity } from "@/lib/schema";
 import { KIND_COLOR, statusClass } from "@/lib/text";
-import { pathwayView } from "@/lib/pathway-products";
+import { pathwayDiagramView } from "@/lib/pathway-products";
 import { firstSentence, mechanicsStage, mechanicsStages, stageContent, stageNeighbours, STAGE_SECTIONS, type StageContent, type StageSectionId } from "@/lib/mechanics";
 import { MECHANICS } from "@/data/mechanics-atlas";
 import { PathwayDiagramInteractive } from "@/components/PathwayDiagramInteractive";
@@ -175,7 +175,7 @@ export default async function StagePage({ params }: { params: Promise<{ stage: s
               <div className="space-y-6">
                 {drawn.map((p, i) => (
                   <figure key={p.id}>
-                    <PathwayDiagramInteractive view={pathwayView(p)} large={i === 0} />
+                    <PathwayDiagramInteractive view={pathwayDiagramView(p)} large={i === 0} />
                     <figcaption className="mt-2 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm">
                       <Link href={routeFor(p)} className="font-medium underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground">{p.name}</Link>
                       <span className="text-muted leading-snug">{p.tldr}</span>

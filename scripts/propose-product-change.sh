@@ -28,7 +28,8 @@ $(cat /tmp/onco-change-class.txt)
 A preview is linked in \`public/product-queue.json\` and rendered at /admin/. Merging this is the approval." 2>&1 | tail -1)
 
 echo "opened $PR"
-PREVIEW=$(vercel deploy --archive=tgz 2>/dev/null | tail -1)
+# The CLI now ends its output with a JSON hint, so take the deployment URL itself rather than the last line.
+PREVIEW=$(vercel deploy --archive=tgz 2>&1 | grep -oE "https://[a-z0-9-]+\.vercel\.app" | head -1)
 echo "preview $PREVIEW"
 
 npx tsx scripts/queue-product-change.ts "$BRANCH" "$WHY" "$PR" "$PREVIEW" "$FILES"

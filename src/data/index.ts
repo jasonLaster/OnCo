@@ -230,6 +230,7 @@ import { cansimOncologyTerms } from "./terms-cansim-oncology";
 import { cansimMethodsTerms } from "./terms-cansim-methods";
 import { cansimTargets } from "./targets-cansim";
 import { issuesWaveB } from "./issues-2026-09-wave-b";
+import { READOUT_TEST_RECORDS } from "./readout-test-records";
 
 const RAW_INPUTS: EntityInput[] = [
   ...ucsfBreastTrials,
@@ -368,6 +369,9 @@ for (const bm of ALL_READOUTS) {
   if (bm.target) (READOUTS_BY_TARGET[bm.target] ??= []).push(bm.id);
   for (const t of bm.thresholds ?? []) if ((t.status ?? "current") === "current") { const list = (READOUTS_BY_DRUG[t.drugId] ??= []); if (!list.includes(bm.id)) list.push(bm.id); }
 }
+// A test or device names the readouts it measures in its own `related` (src/data/readout-test-records.ts), never the
+// readout's `drugs`, which holds what a result selects.
+for (const [bmId, ids] of Object.entries(READOUT_TEST_RECORDS)) for (const id of ids) { const list = (READOUTS_BY_DRUG[id] ??= []); if (!list.includes(bmId)) list.push(bmId); }
 
 /** Every input, with glossary terms mapped to their canonical category (see ./term-categories.ts). */
 /**
@@ -392,6 +396,17 @@ const RAW_INPUTS_DEDUPED: EntityInput[] = (() => {
     }
     out.push(e);
   }
+  return out;
+})();
+
+/**
+ * The company each test in src/data/readout-test-records.ts credits lists that test among its products,
+ * so a test taken out of a readout's `drugs` keeps an inbound link from the company its own record names.
+ */
+const READOUT_TESTS_BY_COMPANY: Record<string, string[]> = (() => {
+  const ids = new Set(Object.values(READOUT_TEST_RECORDS).flat());
+  const out: Record<string, string[]> = {};
+  for (const e of RAW_INPUTS_DEDUPED) if (e.kind === "drug" && ids.has(e.id)) for (const co of e.companies ?? []) { const list = (out[co] ??= []); if (!list.includes(e.id)) list.push(e.id); }
   return out;
 })();
 
@@ -494,6 +509,8 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   }
   // Trials found for drugs and technologies that had none by scripts/fetch-entity-trials.ts (wave 5): the record's own `trials` array.
   if ((e.kind === "drug" || e.kind === "technology") && entityTrialsWave5[e.id]) return { ...e, trials: [...(e.trials ?? []), ...entityTrialsWave5[e.id].filter((id) => !(e.trials ?? []).includes(id))] };
+  // Each test in src/data/readout-test-records.ts, listed by the company its own record credits (READOUT_TESTS_BY_COMPANY).
+  if (e.kind === "company" && READOUT_TESTS_BY_COMPANY[e.id]) e = { ...e, drugs: [...(e.drugs ?? []), ...READOUT_TESTS_BY_COMPANY[e.id].filter((id) => !(e.drugs ?? []).includes(id))] };
   // Drugs found for companies through the ClinicalTrials.gov lead-sponsor field by scripts/fetch-company-drugs.ts (wave 6).
   if (e.kind === "company" && companyDrugsWave6[e.id]) return { ...e, drugs: [...(e.drugs ?? []), ...companyDrugsWave6[e.id].filter((id) => !(e.drugs ?? []).includes(id))] };
   // Trials and key papers found for ideas by scripts/fetch-idea-evidence.ts (wave 6).

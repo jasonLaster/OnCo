@@ -1,9 +1,9 @@
 {
  "note": "Link-sense ratchet (scripts/link-sense-audit.ts, checked by scripts/link-sense-audit.test.ts): findings per class/rule, all confidences, without ClinicalTrials.gov evidence. Lower with `npx tsx scripts/link-sense-audit.ts --write-floor`; never raise.",
  "counts": {
-  "company/unjoined-company": 75,
+  "company/unjoined-company": 74,
   "drug-cancer/medicine": 117,
-  "drug-cancer/non-medicine": 47,
+  "drug-cancer/non-medicine": 46,
   "fragment/attach-file": 69,
   "fragment/other-file": 233,
   "role/company-is-institution": 2,
@@ -20,6 +20,6 @@
   "time/company-after-trial": 15,
   "time/paper-before-trial": 53,
   "trial-cancer/unnamed-cancer": 128,
-  "trial-drug/unnamed-drug": 145
+  "trial-drug/unnamed-drug": 141
  }
 }

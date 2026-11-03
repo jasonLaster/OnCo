@@ -78,7 +78,7 @@ export const CDX_FDA_ROWS: Record<string, CompanionDiagnostic[]> = {
     cdx("SPOT-LIGHT HER2 CISH Kit", "Life Technologies Corporation", "Breast Cancer - Tissue", ["trastuzumab"], "P050040 (07/01/2008)", "thermo-fisher"),
   ],
   "her2-mutation": [
-    cdx("Oncomine Dx Express Test", "Life Technologies Corporation", "Non-Small Cell Lung Cancer (NSCLC) - Tissue", ["sevabertinib"], "P240040/S005 (09/09/2026)", "thermo-fisher"),
+    cdx("Oncomine Dx Express Test", "Life Technologies Corporation", "Non-Small Cell Lung Cancer (NSCLC) - Tissue", ["sevabertinib"], "P240040/S005 (09/09/2026)", "life-technologies"),
     cdx("Guardant360® Liquid CDx", "Guardant Health, Inc.", "Non-small cell lung cancer (NSCLC) - Plasma", ["trastuzumab-deruxtecan"], "P250027 (05/19/2026)", "guardant-health"),
     cdx("Oncomine Dx Target Test", "Life Technologies Corporation", "Non-Small Cell Lung cancer (NSCLC) - Tissue", ["sevabertinib"], "P160045/S050 (11/19/2025)", "thermo-fisher"),
   ],

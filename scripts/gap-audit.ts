@@ -950,7 +950,12 @@ export async function collect(): Promise<Finding[]> {
   const prodMap = new Map(products.map((p) => [p.id, p]));
   const rowsLite: TestRowLite[] = TUMOUR_TESTS.map((t) => ({ id: t.id, name: t.name, drugId: t.drugId, companyId: t.companyId, scope: t.scope, technologies: t.technologies, where: lineOf(T, `id: "${t.id}"`) }));
   const assaysLite: AssayLite[] = assays.map((a) => ({ id: a.id, name: a.name, vendor: a.vendor, drugId: a.drugId, where: lineOf(A, `id: "${a.id}"`) }));
-  const bms: BiomarkerLite[] = g.kind("biomarker").map((b) => ({ id: b.id, name: b.name, target: b.target, measurement: b.measurement, drugs: b.drugs, tests: b.tests, assays: b.assays, thresholdDrugs: b.thresholds.filter((t) => t.status === "current").map((t) => t.drugId), where: loc(b.id) }));
+  // A readout's tests are the products it lists and the test and device records that name it themselves
+  // (src/data/readout-test-records.ts): since 3 November 2026 a test names the readout it measures in its own `related`
+  // rather than sitting in the readout's `drugs` beside the medicines a result selects, and the readout page reaches it
+  // through that link (Connected now, the gathered Tests section in src/lib/members.ts once approved).
+  const namingTests = (id: string) => (g.incoming(id).get("drug") ?? []).filter((d) => d.kind === "drug" && productClass(d) !== "medicine").map((d) => d.id);
+  const bms: BiomarkerLite[] = g.kind("biomarker").map((b) => ({ id: b.id, name: b.name, target: b.target, measurement: b.measurement, drugs: [...new Set([...b.drugs, ...namingTests(b.id)])], tests: b.tests, assays: b.assays, thresholdDrugs: b.thresholds.filter((t) => t.status === "current").map((t) => t.drugId), where: loc(b.id) }));
   findings.push(...groupDuplicatePills(groupOneWay(detectBiomarkerGaps(bms, rowsLite, assaysLite, products, idx, { biomarker: (id) => `/biomarkers/${id}/`, product: (id) => `/drugs/${id}/` }))));
   findings.push(...detectRowRecordMismatch(rowsLite, prodMap, { product: (id) => `/drugs/${id}/`, company: r, technology: r }, has));
 

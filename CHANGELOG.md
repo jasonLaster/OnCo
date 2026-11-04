@@ -7,9 +7,19 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
-- Ultra-sensitive residual disease: eight more MRD assays including China's, the methods that read clones and phenotype from blood, TROP2 PET tracers, eleven trials and the limit on telling subclones apart; and 47 portfolio companies the monitors found
+- Nineteen RNA tests, every radiotherapy machine line dated from its FDA record with scalp cooling, cryocompression and infusion chairs, Invictus Therapeutics and Invictus Oncology, and a daily check that the live search finds every record
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- Invictus: the two cancer companies of that name, Invictus Therapeutics in Sydney and Invictus Oncology in Delhi
+- Radiotherapy machines, chemotherapy chairs and scalp cooling: every model line dated from its FDA record, five roadmaps of how each machine family developed, and four improvement ideas
+- A daily search health check: records missing from the live index, how far the site is behind main, and every typed name ranked by the site's own search
+- RNA tests: nineteen tests that read tumour RNA in tissue, urine and blood, a liquid RNA technology, and the proposal to read tumour RNA beside tumour DNA in one residual disease blood draw
+- The command-line tool is onco-cc, since the npm name onco belongs to someone else, and four EU approvals read from EMA's register
+- The CLI is published as onco-cc, because the npm name onco belongs to an unrelated package and npx onco would run it
+- EU authorisation rows for elinzanetant, Lumeblue, gallium-68 edotreotide and epoetin beta, read from the EMA pages, with epoetin beta quoting its cancer indication
+- The subclone residual disease record now says the 57 mutations came from exome sequencing, and states the design cut-off and molecule counts that limit naming a subclone
+- GLOBOCAN 2024 across the site: every figure from IARC's 2024 estimates, the edition named from the data, and a map legend for every 2024 data-method code
+- Ultra-sensitive residual disease: eight more MRD assays including China's, the methods that read clones and phenotype from blood, TROP2 PET tracers, eleven trials and the limit on telling subclones apart; and 47 portfolio companies the monitors found
 - Three new MRD trials are linked from their assay, drug and technology records
 - Residual disease tests with their stated detection limits, the subclone attribution bottleneck, TROP2 PET tracers and the trials that act on a breast cancer blood result
 - Electra Therapeutics and ipsoprubart are one record each, and the papers-snapshot gauge counts the drugs and targets added this week
@@ -37,6 +47,12 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Remove a duplicated companies key on AVZO-103 left by a merge; both copies named Avenzo
 - Prognosis calculators from Memorial Sloan Kettering and the National Cancer Institute are listed on /software/ as link-outs with their validation papers, and the NHS Cancer Alliance list is read from the ONS geography after NHS England's page began refusing scripts
 - A trial-linked TROP2 record listed its company twice, which TypeScript rejects; the duplicate key is removed
+- The ten new country pages quote GLOBOCAN 2024 beside the 2024 table, and France's gap with GLOBOCAN is no longer explained by skin cancer
+- GLOBOCAN's all-cancers figure includes non-melanoma skin cancer: the UK and Israel pages and the default label say so
+- Pages read the GLOBOCAN edition from the data file instead of naming 2022, and the cancer map explains every 2024 data-method code in IARC's words
+- Maintenance scripts name the GLOBOCAN edition they read rather than 2022
+- Research-ranking rates for France, Canada, Italy, the Netherlands, Korea, Australia, Spain, Brazil, Sweden and Switzerland move to GLOBOCAN 2024
+- Cancer figures move to GLOBOCAN 2024: IARC's new edition is fetched for 186 countries, and every burden line, country card, research-ranking rate and geography layer that cited GLOBOCAN 2022 or 2020 is re-read from it
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 - Every figure on the country pages and the 60 most-read cancer pages read against its source: 23 per cent needed a fix, and four checks now stop the commonest faults coming back

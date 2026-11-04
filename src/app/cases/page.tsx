@@ -9,7 +9,7 @@ import { GentleSection } from "@/components/GentleSection";
 import { WhatIsBeingDone } from "@/components/WhatIsBeingDone";
 import { DATA_URL, GLOBOCAN, gaps, rowsForCancer } from "@/lib/globocan";
 
-export const metadata: Metadata = pageMeta({ title: "Cases by country", description: "GLOBOCAN 2022 new cases by country and cancer type, with deaths behind a click and every data gap stated.", path: "/cases/" });
+export const metadata: Metadata = pageMeta({ title: "Cases by country", description: `GLOBOCAN ${GLOBOCAN.year} new cases by country and cancer type, with deaths behind a click and every data gap stated.`, path: "/cases/" });
 
 export default function CasesPage() {
   const g = graph();

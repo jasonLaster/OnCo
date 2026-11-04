@@ -149,7 +149,7 @@ function ViewPanel({ id, glyph, label, formula, data, rows, known, total, on, re
   return (
     <section aria-labelledby={`h-${id}`} data-rank-panel hidden={!on}>
       <h2 id={`h-${id}`} className="text-xl font-semibold tracking-tight flex items-center gap-2"><RankGlyph name={glyph} className="h-5 w-5 text-accent" /><T k={`rank.view.${id}`} fallback={label} /></h2>
-      <p className="text-sm text-muted mt-1 max-w-3xl"><T k={`rank.formula.${id}`} fallback={formula} /></p>
+      <p className="text-sm text-muted mt-1 max-w-3xl"><T k={`rank.formula.${id}`} vars={{ year: globocanYear }} fallback={formula.replace("{year}", String(globocanYear))} /></p>
       <p className="text-xs text-muted mt-1 max-w-3xl">
         {id === "cherry-picked" ? <T k="rank.editPicks" /> : <T k="rank.top" vars={{ n: full(rows.length), total: full(data.ranked) }} />}
         {excludedKey && data.excluded > 0 && <> <TN k="rank.notRanked" vars={{ n: full(data.excluded), total: full(total), why: <T k={excludedKey} /> }} /></>}

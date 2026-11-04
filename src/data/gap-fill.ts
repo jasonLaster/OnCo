@@ -20,7 +20,7 @@ const DM = (q: string) => `https://dailymed.nlm.nih.gov/dailymed/search.cfm?labe
 
 const d = (x: Omit<DrugInput, "kind" | "asOf">): DrugInput => ({ kind: "drug", asOf, ...x });
 const tg = (x: Omit<TargetInput, "kind" | "asOf">): TargetInput => ({ kind: "target", asOf, ...x });
-const tech = (x: Omit<TechnologyInput, "kind" | "asOf">): TechnologyInput => ({ kind: "technology", asOf, ...x });
+const tech = (x: Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string }): TechnologyInput => ({ kind: "technology", asOf, ...x });
 const term = (x: Omit<TermInput, "kind" | "asOf">): TermInput => ({ kind: "term", asOf, ...x });
 const col = (x: Omit<CollectionInput, "kind" | "asOf">): CollectionInput => ({ kind: "collection", asOf, ...x });
 
@@ -1133,7 +1133,7 @@ export const gapTechnologies: TechnologyInput[] = [
     limitations: ["Myelosuppression despite filtration; bleeding, hepatic injury", "Requires specialised interventional radiology and anaesthesia", "Liver-only benefit; extrahepatic disease progresses"],
     sections: ["devices", "surgery"], technologies: ["tace", "radioembolisation-tare", "isolated-limb-perfusion"], cancers: ["uveal-melanoma", "cholangiocarcinoma", "neuroendocrine"], drugs: ["melphalan", "tebentafusp"],
     links: [{ label: "FOCUS trial (Ann Surg Oncol 2024)", url: "https://doi.org/10.1245/s10434-024-15293-x" }, { label: "Hepzato Kit label", url: DM("Hepzato") }], tags: ["gap-fill"] }),
-  tech({ id: "intraoperative-radiotherapy", related: ["brachytherapy-afterloaders"], companies: ["carl-zeiss-meditec", "intraop-medical"], name: "Intraoperative radiotherapy (IORT)", status: "established", since: 1965, wikipedia: W("Intraoperative_radiation_therapy"),
+  tech({ id: "intraoperative-radiotherapy", asOf: "2026-11-04", related: ["brachytherapy-afterloaders", "iort-systems", "electronic-brachytherapy-systems"], companies: ["carl-zeiss-meditec", "intraop-medical", "sit-sordina-iort"], name: "Intraoperative radiotherapy (IORT)", status: "established", since: 1965, wikipedia: W("Intraoperative_radiation_therapy"),
     tldr: "Giving a single large dose of radiation directly to the tumour bed during surgery, with normal organs moved out of the way; used mainly in breast cancer as an alternative to weeks of external radiotherapy.",
     summary: "IORT delivers 10-21 Gy in one fraction via electrons (mobile linacs, ELIOT), low-energy X-rays (Intrabeam, TARGIT) or HDR brachytherapy applicators. In early breast cancer, TARGIT-A (BMJ 2020, long-term) showed risk-adapted IORT non-inferior for local recurrence with fewer non-breast-cancer deaths, while ELIOT (Lancet Oncol 2021) showed higher local recurrence with electron IORT than whole-breast RT (though survival was equal); ASTRO regards it as suitable for selected low-risk patients within trials or registries. Other uses: locally advanced rectal cancer and retroperitoneal sarcoma (margin boost), pancreatic cancer, paediatric tumours. Competing partial-breast approaches (5-fraction external APBI, brachytherapy) and FLASH radiotherapy overlap.",
     principle: "Direct visualisation and displacement of organs at risk allow a large single fraction to the highest-risk tissue with steep dose fall-off, exploiting the radiobiology of high dose per fraction.",

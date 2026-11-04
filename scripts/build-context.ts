@@ -114,7 +114,7 @@ const llms: string[] = [
   `- [Search documents](${SITE}/api/v1/search.json): compact id, kind, name, TL;DR and route for every record; find the id, then fetch its context file`,
   `- [Every record on one line](${SITE}/llms-full.txt): name, kind, TL;DR and context URL for the whole corpus`,
   `- [OpenAPI 3.1 description](${SITE}/api/v1/openapi.json): every file under /api/v1/ and the feeds`,
-  `- [MCP server](${REPO}/tree/main/packages/onco-mcp): \`${MACHINE.mcp.command}\` gives Claude, Cursor and other MCP clients ${MACHINE.mcp.tools.slice(0, -1).join(", ")} and ${MACHINE.mcp.tools.at(-1)} tools over this API; the CLI is \`npx onco\``,
+  `- [MCP server](${REPO}/tree/main/packages/onco-mcp): \`${MACHINE.mcp.command}\` gives Claude, Cursor and other MCP clients ${MACHINE.mcp.tools.slice(0, -1).join(", ")} and ${MACHINE.mcp.tools.at(-1)} tools over this API; the CLI is \`npx onco-cc\``,
   "",
   "## For agents",
   "",

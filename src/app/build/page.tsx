@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta, SITE } from "@/lib/seo";
 import { graph } from "@/lib/graph";
+import { GLOBOCAN } from "@/lib/globocan";
 import { KIND_META, KINDS } from "@/lib/schema";
 import { Container, GroupKicker, PageHeader, Section } from "@/components/ui";
 
@@ -134,7 +135,7 @@ const { built, counts } = await fetch("${SITE}/api/v1/meta.json").then((r) => r.
                 <tr><td className="font-mono text-xs">/api/v1/meta.json</td><td>Build time, counts, licence, attribution text</td></tr>
                 <tr><td className="font-mono text-xs">/catalysts/feed.ics</td><td>iCalendar feed of catalysts and readouts</td></tr>
                 <tr><td className="font-mono text-xs">/trials/index.json, /trials/&lt;drugId&gt;.json</td><td>Weekly ClinicalTrials.gov phase 2/3 study counts and lists per product</td></tr>
-                <tr><td className="font-mono text-xs">/globocan/countries.json</td><td>GLOBOCAN 2022 incidence and mortality by country and site</td></tr>
+                <tr><td className="font-mono text-xs">/globocan/countries.json</td><td>GLOBOCAN {GLOBOCAN.year} incidence and mortality by country and site</td></tr>
               </tbody>
             </table>
           </div>

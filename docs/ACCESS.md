@@ -6,7 +6,7 @@ Every record in OnCo is available four ways from the same build. Nothing is behi
 |---|---|---|
 | Web | People | https://onco.cc, one page per record, Ask OnCo at https://onco.cc/ask/ |
 | Static API | Scripts, spreadsheets, pipelines | https://onco.cc/api/v1/ (JSON, NDJSON, CSV, JSON Schema, Markdown context), documented at https://onco.cc/api/ |
-| CLI | Terminals and shell pipelines | `npx onco ...` from `packages/onco-cli` |
+| CLI | Terminals and shell pipelines | `npx onco-cc ...` from `packages/onco-cli` |
 | MCP | Claude, Cursor and other assistants | `npx -y onco-mcp` from `packages/onco-mcp`; `npm run mcp` in a checkout for the larger repository server |
 
 ## The static API
@@ -30,13 +30,13 @@ Alongside, `scripts/build-context.ts` writes `public/llms.txt` (committed, deter
 ## CLI: `onco`
 
 ```sh
-npx onco search "HER2-low breast cancer" --kind drug
-npx onco get trastuzumab-deruxtecan
-npx onco list trial --filter status=recruiting --limit 20
-npx onco ask "What are the side effects of Enhertu?" --region UK
-npx onco context tnbc
-npx onco kinds
-npx onco export cancer --csv > cancers.csv
+npx onco-cc search "HER2-low breast cancer" --kind drug
+npx onco-cc get trastuzumab-deruxtecan
+npx onco-cc list trial --filter status=recruiting --limit 20
+npx onco-cc ask "What are the side effects of Enhertu?" --region UK
+npx onco-cc context tnbc
+npx onco-cc kinds
+npx onco-cc export cancer --csv > cancers.csv
 ```
 
 `--json` on any command prints machine-readable output and moves the attribution line to stderr. `ONCO_API` or `--api` points at another copy of `/api/v1`, including a local `out/api/v1` directory, which works offline. Full reference: `packages/onco-cli/README.md`.

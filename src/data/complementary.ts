@@ -35,7 +35,7 @@ const JOHNSON_JNCI_2018 = doi("Johnson et al., Use of alternative medicine for c
 
 const SEC = "supportive-care";
 const T = (grade: EvidenceGrade, extra: string[] = []) => ["complementary", "supportive-care", `evidence:${grade}`, ...extra];
-const tech = (x: Omit<TechnologyInput, "kind" | "asOf">): TechnologyInput => ({ kind: "technology", asOf, ...x });
+const tech = (x: Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string }): TechnologyInput => ({ kind: "technology", asOf, ...x });
 const paper = (x: Omit<PaperInput, "kind" | "asOf">): PaperInput => ({ kind: "paper", asOf, ...x });
 
 // =============================================================================
@@ -418,14 +418,14 @@ const physical: TechnologyInput[] = [
     drugs: ["fluorouracil", "melphalan"], technologies: ["cytotoxic-chemotherapy", "scalp-cooling", "dry-mouth-teeth-after-head-neck-radiotherapy"], terms: ["mucositis"], institutions: ["mascc"], bottlenecks: ["b-toxicity-qol"],
     links: [doi("Cochrane: oral cryotherapy for preventing oral mucositis in patients receiving cancer treatment (2015)", "10.1002/14651858.CD011552.pub2"), MASCC_MUCOSITIS_2020] }),
 
-  tech({ id: "frozen-gloves-compression-taxane", name: "Frozen gloves, socks and compression for taxane nail and nerve damage", sections: [SEC, "chemotherapy", "rejuvenation"], status: "emerging", wikipedia: W("Chemotherapy-induced_peripheral_neuropathy"), tags: T("moderate"),
+  tech({ id: "frozen-gloves-compression-taxane", asOf: "2026-11-04", name: "Frozen gloves, socks and compression for taxane nail and nerve damage", sections: [SEC, "chemotherapy", "rejuvenation"], status: "emerging", wikipedia: W("Chemotherapy-induced_peripheral_neuropathy"), tags: T("moderate"),
     tldr: "Wearing frozen gloves and socks, or tight surgical gloves, during taxane infusions reduces nail damage and may reduce numbness in the hands and feet, by narrowing the blood vessels while the drug is at its peak. Trials are small but consistent, and it is cheap.",
     summary: "The same principle as scalp cooling applies to hands and feet: reducing blood flow while docetaxel or paclitaxel is at peak concentration reduces delivery to nail beds and peripheral nerves. A multicentre study of frozen gloves during docetaxel showed markedly less nail toxicity on the gloved hand than the ungloved control hand, and a self-controlled study of 36 women receiving weekly paclitaxel (Hanai et al., JNCI 2018) found lower rates of objective and subjective neuropathy on the frozen-glove and sock side. Randomised trials of compression therapy with tight surgical gloves report similar protection with better comfort, and trials comparing cooling, compression and both are ongoing. The 2022 SIO-ASCO pain guideline notes cryotherapy or compression may be offered for chemotherapy-induced neuropathy prevention with low certainty. Frostbite is a risk with prolonged contact; oxaliplatin is a contraindication to cold.",
     principle: "Vasoconstriction lowers local drug delivery to nail matrix and peripheral nerve during the short infusion peak of taxanes.",
     strengths: ["Consistent small trials for nails and neuropathy", "Cheap, low risk", "Compression is more comfortable than cold"],
     limitations: ["Small, mostly self-controlled trials", "Discomfort and rare cold injury", "Not for oxaliplatin"],
     drugs: ["docetaxel", "paclitaxel"], technologies: ["scalp-cooling", "cytotoxic-chemotherapy", "cipn-recovery-and-treatment", "nail-changes-after-chemotherapy"], terms: ["peripheral-neuropathy"], bottlenecks: ["b-toxicity-qol"],
-    links: [doi("Frozen gloves and socks to prevent paclitaxel-induced peripheral neuropathy, self-controlled trial (JNCI 2018)", "10.1093/jnci/djx178"), SIO_ASCO_PAIN] }),
+    related: ["limb-cryocompression-devices", "idea-mach-cold-or-compression-by-adherence"], trials: ["control-cipn-trial", "ice-compress-swog"], links: [doi("Frozen gloves and socks to prevent paclitaxel-induced peripheral neuropathy, self-controlled trial (JNCI 2018)", "10.1093/jnci/djx178"), SIO_ASCO_PAIN] }),
 
   // Added 26 October 2026 at the owner's request. Eight Sleep has no chemotherapy mode; its Hot Flash Mode is the
   // nearest thing, and the only evidence for it is a preprint by the company's own staff in menopausal women.

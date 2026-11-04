@@ -121,7 +121,7 @@ const drugs: DrugInput[] = [
     dosing: { route: "Oral or intrauterine", schedule: "Megestrol 160 mg daily; levonorgestrel 52 mg IUD; re-biopsy every 3-6 months in fertility-sparing use", monitoring: "Endometrial sampling, weight, thrombosis risk" },
     toxicity: [{ event: "Weight gain", note: "Megestrol acetate US label: a frequent side effect, associated with increased appetite rather than fluid retention; no rate given", source: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66573d39-f2a7-49fd-9ed2-97ac8f6e8456" }, { event: "Venous thromboembolism", note: "Increased risk with high-dose oral progestins" }],
     approvals: [{ region: "US", year: 1971, indication: "Palliative treatment of advanced endometrial and breast cancer (megestrol)" }],
-    targets: ["estrogen-receptor"], technologies: ["endocrine-therapy"], cancers: ["endometrial"], pathways: ["er-signaling"] }),
+    targets: ["pgr"], technologies: ["endocrine-therapy"], cancers: ["endometrial"], pathways: ["er-signaling"] }),
 ];
 
 // ======================= COMPANIES =======================

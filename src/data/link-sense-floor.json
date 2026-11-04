@@ -2,24 +2,24 @@
  "note": "Link-sense ratchet (scripts/link-sense-audit.ts, checked by scripts/link-sense-audit.test.ts): findings per class/rule, all confidences, without ClinicalTrials.gov evidence. Lower with `npx tsx scripts/link-sense-audit.ts --write-floor`; never raise.",
  "counts": {
   "company/unjoined-company": 74,
-  "drug-cancer/medicine": 117,
+  "drug-cancer/medicine": 115,
   "drug-cancer/non-medicine": 46,
   "fragment/attach-file": 69,
   "fragment/other-file": 233,
   "role/company-is-institution": 2,
-  "role/developer-type": 5,
+  "role/developer-type": 2,
   "role/field-kind": 356,
   "role/field-kind-namesake": 11,
   "role/institution-is-company": 1,
   "role/role-mixed": 62,
-  "sponsor/alias-collision": 38,
-  "target/drug-target": 34,
+  "sponsor/alias-collision": 24,
+  "target/drug-target": 25,
   "target/pathway-target": 39,
-  "target/trial-target": 12,
+  "target/trial-target": 11,
   "time/company-after-approval": 11,
   "time/company-after-trial": 15,
   "time/paper-before-trial": 53,
-  "trial-cancer/unnamed-cancer": 128,
-  "trial-drug/unnamed-drug": 141
+  "trial-cancer/unnamed-cancer": 126,
+  "trial-drug/unnamed-drug": 140
  }
 }

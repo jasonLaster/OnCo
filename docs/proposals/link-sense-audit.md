@@ -1,39 +1,36 @@
 # Link-sense audit
 
-Generated 2026-11-03 by `npx tsx scripts/link-sense-audit.ts` (156 ClinicalTrials.gov records cached). Read-only: links that
+Generated 2026-11-04 by `npx tsx scripts/link-sense-audit.ts` (156 ClinicalTrials.gov records cached). Read-only: links that
 resolve but imply something false. The measured precision per class, the fixes made and the guards are in
 docs/proposals/link-sense-strategies.md. Every finding, including the low-confidence ones, is in the JSON beside this file.
 
 | Class / rule | High | Medium | Low |
 |---|---:|---:|---:|
 | company/unjoined-company | 1 | 0 | 73 |
-| drug-cancer/medicine | 1 | 11 | 105 |
+| drug-cancer/medicine | 0 | 10 | 105 |
 | drug-cancer/non-medicine | 0 | 10 | 36 |
 | fragment/attach-file | 0 | 69 | 0 |
 | fragment/other-file | 0 | 0 | 233 |
 | role/company-is-institution | 0 | 0 | 2 |
-| role/developer-type | 3 | 0 | 2 |
+| role/developer-type | 0 | 0 | 2 |
 | role/field-kind | 0 | 0 | 356 |
 | role/field-kind-namesake | 0 | 0 | 11 |
 | role/institution-is-company | 0 | 0 | 1 |
 | role/role-mixed | 41 | 21 | 0 |
-| sponsor/alias-collision | 0 | 15 | 23 |
-| target/drug-target | 5 | 29 | 0 |
+| sponsor/alias-collision | 0 | 7 | 17 |
+| target/drug-target | 1 | 24 | 0 |
 | target/pathway-target | 0 | 0 | 39 |
-| target/trial-target | 0 | 7 | 5 |
+| target/trial-target | 0 | 6 | 5 |
 | time/company-after-approval | 0 | 0 | 11 |
 | time/company-after-trial | 0 | 0 | 15 |
 | time/paper-before-trial | 0 | 4 | 49 |
-| trial-cancer/unnamed-cancer | 0 | 25 | 1 |
-| trial-drug/unnamed-drug | 0 | 30 | 3 |
+| trial-cancer/unnamed-cancer | 0 | 23 | 1 |
+| trial-drug/unnamed-drug | 0 | 29 | 3 |
 
 ## role
 
-65 high or medium.
+62 high or medium.
 
-- **high** `developer-type` capecitabine-temozolomide.companies → ecog-acrin: Capecitabine + temozolomide (CAPTEM) is credited to ECOG-ACRIN Cancer Research Group, a cooperative-group; a cooperative-group has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
-- **high** `developer-type` omega-funds.drugs → taletrectinib: Taletrectinib is credited to Omega Funds, a investor; a investor has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
-- **high** `developer-type` omega-funds.drugs → talimogene-laherparepvec: Talimogene laherparepvec is credited to Omega Funds, a investor; a investor has no products of its own (src/lib/schema.ts COMPANY_TYPES), so the product page lists a funder or trials group among its makers
 - **high** `role-mixed` akt1-e17k.drugs: biomarker akt1-e17k lists 1 test(s) (foundationone-cdx) and 1 medicine(s) (capivasertib) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` alk-fusion.drugs: biomarker alk-fusion lists 1 test(s) (foundationone-cdx) and 6 medicine(s) (alectinib, lorlatinib, crizotinib) in one drugs field: what measures it and what a result selects are not told apart
 - **high** `role-mixed` braf-fusion.drugs: biomarker braf-fusion lists 1 test(s) (foundationone-cdx) and 1 medicine(s) (tovorafenib) in one drugs field: what measures it and what a result selects are not told apart
@@ -99,16 +96,14 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## drug-cancer
 
-22 high or medium.
+20 high or medium.
 
-- **high** `medicine` pancreatoblastoma.drugs → vincristine: Vincristine (medicine) is linked to Pancreatoblastoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other; the product's own cancers are all-leukemia, dlbcl, hodgkin-lymphoma, rhabdomyosarcoma
 - **medium** `medicine` adu-s100.cancers → melanoma: ADU-S100 (MIW815) (medicine) is linked to Melanoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → gastric: Catumaxomab (medicine) is linked to Gastric & gastro-oesophageal junction cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → pancreatic: Catumaxomab (medicine) is linked to Pancreatic ductal adenocarcinoma with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` catumaxomab.cancers → colorectal: Catumaxomab (medicine) is linked to Colorectal cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` cladribine.cancers → waldenstrom: Cladribine (medicine) is linked to Waldenström macroglobulinaemia with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` emapalumab.cancers → histiocytoses: Emapalumab (medicine) is linked to Erdheim-Chester disease, Rosai-Dorfman disease and other histiocytic neoplasms with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
-- **medium** `medicine` envafolimab.cancers → cancer-of-unknown-primary: Envafolimab (medicine) is linked to Cancer of unknown primary (CUP) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` m701.cancers → gastric: M701 (medicine) is linked to Gastric & gastro-oesophageal junction cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` napabucasin.cancers → colorectal: Napabucasin (medicine) is linked to Colorectal cancer with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
 - **medium** `medicine` omidubicel.cancers → mds: Omidubicel (medicine) is linked to Myelodysplastic syndromes / neoplasms (MDS) with no trial, key paper, approval, standard-of-care, history, pipeline or threshold row pairing them, and neither record's text names the other
@@ -126,7 +121,7 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## trial-drug
 
-30 high or medium.
+29 high or medium.
 
 - **medium** `unnamed-drug` actuate-1801.drugs → pegylated-liposomal-doxorubicin: trial Actuate 1801 Part 3B (elraglusib) is linked to Pegylated liposomal doxorubicin, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
 - **medium** `unnamed-drug` altair.drugs → signatera: trial ALTAIR is linked to Signatera, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
@@ -143,7 +138,6 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `unnamed-drug` mountaineer.drugs → bevacizumab: trial MOUNTAINEER is linked to Bevacizumab, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
 - **medium** `unnamed-drug` mountaineer.drugs → cetuximab: trial MOUNTAINEER is linked to Cetuximab, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
 - **medium** `unnamed-drug` myelomatch.drugs → ziftomenib: trial myeloMATCH is linked to Ziftomenib, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
-- **medium** `unnamed-drug` nct02960022.drugs → goserelin: trial A Study for Subjects With Prostate Cancer Who Previously Participated in an Enzalutamide Clinical Study is linked to Goserelin / leuprolide (ovarian function suppression), which the trial record and its ClinicalTrials.gov entry never name, and the product record never names the trial
 - **medium** `unnamed-drug` nct04675333.drugs → fluorouracil: trial Evorpacept (ALX148) in Combination With Pembrolizumab and Chemotherapy in Patients With Advanced Head and Neck Squamous Cell Carcinoma (ASPEN-04) is linked to Fluorouracil (5-FU), which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
 - **medium** `unnamed-drug` nct06662877.drugs → nab-paclitaxel: trial Anlotinib Plus Nab-Paclitaxels and S-1 for Patients with Advanced Biliary Tract Cancer As Second-Line Treatment is linked to Nab-paclitaxel, which the trial record and its ClinicalTrials.gov entry never name (the trial speaks of unnamed regimens or other treatments), and the product record never names the trial
 - **medium** `unnamed-drug` peace-3.drugs → denosumab: trial PEACE-3 (EORTC 1333) is linked to Denosumab, which the trial record and its ClinicalTrials.gov entry never name, and the product record never names the trial
@@ -161,13 +155,11 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## trial-cancer
 
-25 high or medium.
+23 high or medium.
 
 - **medium** `unnamed-cancer` add-aspirin.cancers → gastric: trial Add-Aspirin is linked to Gastric & gastro-oesophageal junction cancer, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
 - **medium** `unnamed-cancer` agct1531.cancers → extragonadal-germ-cell-tumour: trial AGCT1531 is linked to Extragonadal germ cell tumour, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
 - **medium** `unnamed-cancer` captain-1st.cancers → head-and-neck: trial CAPTAIN-1st is linked to Head and neck squamous cell carcinoma, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
-- **medium** `unnamed-cancer` e1910.cancers → aya-cancers: trial ECOG-ACRIN E1910 is linked to Adolescent and young adult cancers (ages 15 to 39), which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
-- **medium** `unnamed-cancer` ken-she.cancers → head-and-neck: trial KEN SHE (single-dose HPV vaccine) is linked to Head and neck squamous cell carcinoma, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
 - **medium** `unnamed-cancer` nct06819215.cancers → prostate: trial Phase I/II Clinical Study to Evaluate VB15010 Tablets in Patients With Advanced Solid Tumors is linked to Prostate cancer, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
 - **medium** `unnamed-cancer` nhs-galleri.cancers → multiple-myeloma: trial NHS-Galleri is linked to Multiple myeloma, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
 - **medium** `unnamed-cancer` nhs-galleri.cancers → gastric: trial NHS-Galleri is linked to Gastric & gastro-oesophageal junction cancer, which neither the trial's text, its ClinicalTrials.gov conditions nor any cancer in its family names
@@ -206,20 +198,14 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## target
 
-41 high or medium.
+31 high or medium.
 
 - **high** `drug-target` ateganosine.targets → tert: Ateganosine (THIO) is linked to target TERT, which neither record's text names; its modality and mechanism name PD-1 instead
-- **high** `drug-target` degarelix.targets → androgen-receptor: Degarelix is linked to target Androgen receptor, which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
-- **high** `drug-target` goserelin.targets → estrogen-receptor: Goserelin / leuprolide (ovarian function suppression) is linked to target Estrogen receptor (ERα), which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
-- **high** `drug-target` leuprolide.targets → androgen-receptor: Leuprolide (leuprorelin) and GnRH agonists is linked to target Androgen receptor, which neither record's text names; its modality and mechanism name GnRH receptor (GNRHR) instead
-- **high** `drug-target` megestrol-progestins.targets → estrogen-receptor: Progestins (megestrol acetate, medroxyprogesterone, levonorgestrel IUD) is linked to target Estrogen receptor (ERα), which neither record's text names; its modality and mechanism name Progesterone receptor (PGR) instead
 - **medium** `drug-target` acitretin.targets → rara: Acitretin is linked to target Retinoic acid receptor alpha (RARA), which neither record's text names
 - **medium** `drug-target` aldoxorubicin.targets → top2a: Aldoxorubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
 - **medium** `drug-target` amrubicin.targets → top2a: Amrubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
 - **medium** `drug-target` amsacrine.targets → top2a: Amsacrine is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
 - **medium** `drug-target` anlotinib.targets → fgfr2: Anlotinib is linked to target FGFR2, which neither record's text names
-- **medium** `drug-target` azd0120.targets → cd19: AZD0120 is linked to target CD19, which neither record's text names
-- **medium** `drug-target` azd0120.targets → bcma: AZD0120 is linked to target BCMA, which neither record's text names
 - **medium** `drug-target` cam2029.targets → sstr2: CAM2029 (octreotide subcutaneous depot) is linked to target Somatostatin receptor 2, which neither record's text names
 - **medium** `drug-target` camrelizumab-rivoceranib.targets → vegf: Camrelizumab + rivoceranib is linked to target VEGF / VEGFR, which neither record's text names
 - **medium** `drug-target` depatuxizumab-mafodotin.targets → tubulin: Depatuxizumab mafodotin is linked to target Tubulin (microtubules), which neither record's text names
@@ -229,11 +215,9 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `drug-target` galeterone.targets → cyp17a1: Galeterone is linked to target CYP17A1 (17-alpha-hydroxylase/17,20-lyase), which neither record's text names
 - **medium** `drug-target` isotretinoin.targets → rara: Isotretinoin is linked to target Retinoic acid receptor alpha (RARA), which neither record's text names
 - **medium** `drug-target` lenvatinib.targets → fgfr2: Lenvatinib is linked to target FGFR2, which neither record's text names
-- **medium** `drug-target` mevrometostat.targets → androgen-receptor: Mevrometostat is linked to target Androgen receptor, which neither record's text names
 - **medium** `drug-target` neratinib.targets → egfr: Neratinib is linked to target EGFR, which neither record's text names; its modality and mechanism name HER4 (ERBB4) instead
 - **medium** `drug-target` nintedanib.targets → fgfr2: Nintedanib is linked to target FGFR2, which neither record's text names
 - **medium** `drug-target` olverembatinib.targets → bcr-abl: Olverembatinib is linked to target BCR::ABL1 (Philadelphia chromosome), which neither record's text names
-- **medium** `drug-target` omacetaxine.targets → bcr-abl: Omacetaxine mepesuccinate is linked to target BCR::ABL1 (Philadelphia chromosome), which neither record's text names; its modality and mechanism name MCL1 instead
 - **medium** `drug-target` pasireotide.targets → sstr2: Pasireotide is linked to target Somatostatin receptor 2, which neither record's text names
 - **medium** `drug-target` peginterferon-alfa-2b.targets → ifnar1: Peginterferon alfa-2b is linked to target Interferon alpha receptor (IFNAR1), which neither record's text names
 - **medium** `drug-target` pirarubicin.targets → top2a: Pirarubicin is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
@@ -241,8 +225,6 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 - **medium** `drug-target` rindopepimut.targets → egfr: Rindopepimut is linked to target EGFR, which neither record's text names
 - **medium** `drug-target` sorafenib.targets → braf: Sorafenib is linked to target BRAF, which neither record's text names; its modality and mechanism name FLT3, KIT instead
 - **medium** `drug-target` teniposide.targets → top2a: Teniposide is linked to target Topoisomerase II alpha (TOP2A), which neither record's text names
-- **medium** `drug-target` triptorelin.targets → androgen-receptor: Triptorelin is linked to target Androgen receptor, which neither record's text names
-- **medium** `trial-target` cave.targets → pd1: trial CAVE mCRC is linked to target PD-1; none of its 2 linked product(s) hits it (they hit egfr, pdl1) and neither the trial nor its products name it; often a selection biomarker filed as a target
 - **medium** `trial-target` chronos.targets → nras: trial CHRONOS is linked to target NRAS; none of its 1 linked product(s) hits it (they hit egfr) and neither the trial nor its products name it; often a selection biomarker filed as a target
 - **medium** `trial-target` correct.targets → braf: trial CORRECT is linked to target BRAF; none of its 1 linked product(s) hits it (they hit vegf, kit, ret, tie2) and neither the trial nor its products name it; often a selection biomarker filed as a target
 - **medium** `trial-target` enrich.targets → ccnd1: trial ENRICH is linked to target CCND1; none of its 7 linked product(s) hits it (they hit btk, cd20, glucocorticoid-receptor) and neither the trial nor its products name it; often a selection biomarker filed as a target
@@ -254,12 +236,12 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 69 high or medium.
 
-- **medium** `attach-file` src/data/sponsor-aliases.ts:274: /mbrace/ fires only mid-word on 1 corpus input(s), e.g. "eribulin monotherapy versus treatment of physician's choice in patient"
-- **medium** `attach-file` src/data/sponsor-aliases.ts:326: /canadian cancer trials|^cctg|ncic/ fires only mid-word on 1 corpus input(s), e.g. "jncics"
-- **medium** `attach-file` src/data/sponsor-aliases.ts:451: /hospital|university|universit|medical cent|cancer cent|institut|college|clinic|health system|foundation trust|nhs|sch.../ fires only mid-word on 42 corpus input(s), e.g. "evidence:preclinical", "selective bh3-mimetic bcl-2 inhibitor with higher potency and shorter ", "identification of human triple-negative breast cancer subtypes and pre", "nqo1-dependent redox cycling producing reactive oxygen species; reduce"
-- **medium** `attach-file` src/data/sponsor-aliases.ts:452: /group|consortium|network|cooperative|collaborative|study|trials unit|intergroup/ fires only mid-word on 50+ corpus input(s), e.g. "lesson:subgroup", "untreated metastatic pancreatic adenocarcinoma at 165 sites in 20 coun", "folfoxiri plus bevacizumab versus folfiri plus bevacizumab as first-li", "efficacy and safety of trastuzumab deruxtecan in patients with her2-ex"
-- **medium** `attach-file` src/data/sponsor-aliases.ts:453: /ministry|national|government|agency|council|charity|society|foundation/ fires only mid-word on 50+ corpus input(s), e.g. "post-operative radiotherapy omission in selected patients with early b", "resectability classes for pancreatic cancer (nccn anatomical criteria ", "international prognostic index (ipi)", "international staging system"
-- **medium** `attach-file` src/data/sponsor-aliases.ts:454: /pharma|therapeutic|bio|oncology|medicine|labs?\b|sciences?|health|genetics|diagnostics|ag\b|sa\b|inc\b|ltd\b/ fires only mid-word on 50+ corpus input(s), e.g. "breast microbiome and implant infections", "microbiome and association with implant infections", "nanobiotix", "saruparib in combination with physician's choice of arpi in patients w"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:276: /mbrace/ fires only mid-word on 1 corpus input(s), e.g. "eribulin monotherapy versus treatment of physician's choice in patient"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:328: /canadian cancer trials|^cctg|ncic/ fires only mid-word on 1 corpus input(s), e.g. "jncics"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:472: /hospital|university|universit|medical cent|cancer cent|institut|college|clinic|health system|foundation trust|nhs|sch.../ fires only mid-word on 42 corpus input(s), e.g. "evidence:preclinical", "selective bh3-mimetic bcl-2 inhibitor with higher potency and shorter ", "identification of human triple-negative breast cancer subtypes and pre", "nqo1-dependent redox cycling producing reactive oxygen species; reduce"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:473: /group|consortium|network|cooperative|collaborative|study|trials unit|intergroup/ fires only mid-word on 50+ corpus input(s), e.g. "lesson:subgroup", "untreated metastatic pancreatic adenocarcinoma at 165 sites in 20 coun", "folfoxiri plus bevacizumab versus folfiri plus bevacizumab as first-li", "efficacy and safety of trastuzumab deruxtecan in patients with her2-ex"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:474: /ministry|national|government|agency|council|charity|society|foundation/ fires only mid-word on 50+ corpus input(s), e.g. "post-operative radiotherapy omission in selected patients with early b", "resectability classes for pancreatic cancer (nccn anatomical criteria ", "international prognostic index (ipi)", "international staging system"
+- **medium** `attach-file` src/data/sponsor-aliases.ts:475: /pharma|therapeutic|bio|oncology|medicine|labs?\b|sciences?|health|genetics|diagnostics|ag\b|sa\b|inc\b|ltd\b/ fires only mid-word on 50+ corpus input(s), e.g. "breast microbiome and implant infections", "microbiome and association with implant infections", "nanobiotix", "saruparib in combination with physician's choice of arpi in patients w"
 - **medium** `attach-file` src/lib/checkpoints.ts:54: /\badc\b|antibody-drug|drug conjugate|deruxtecan|vedotin|samrotecan|duocarmazine/ fires only mid-word on 7 corpus input(s), e.g. "zelenectide pevedotin", "first-in-human, phase i/ii dose escalation and expansion study of zele", "zelenectide pevedotin in nectin4 amplified advanced or metastatic non-", "phase 2 study of zelenectide pevedotin in participants with previously"
 - **medium** `attach-file` src/lib/checkpoints.ts:55: /car-t|car t|cell therapy|autoleucel|tcr-t|nk cell/ fires only mid-word on 6 corpus input(s), e.g. "intraoperative indocyanine green fluorescence angiography in colorecta", "unicar-therapy", "shanghai unicar-therapy bio-medicine technology", "link cell therapies"
 - **medium** `attach-file` src/lib/checkpoints.ts:56: /vaccine|peptide antigen/ fires only mid-word on 7 corpus input(s), e.g. "kras neoantigen nanovaccine as adjuvant therapy for colorectal cancer/", "phase i/ii clinical study of kras neoantigen nanovaccine as adjuvant t", "immunovaccine (imv)", "immunovaccine technologies, inc."
@@ -326,20 +308,12 @@ docs/proposals/link-sense-strategies.md. Every finding, including the low-confid
 
 ## sponsor
 
-15 high or medium.
+7 high or medium.
 
-- **medium** `alias-collision` birmingham-cancer-centre → cruk: src/data/sponsor-aliases.ts resolves "CRUK Clinical Trials Unit Birmingham" (the name of institution birmingham-cancer-centre) to institution cruk (Cancer Research UK); trials sponsored by University Hospitals Birmingham / University of Birmingham Cancer Research Centre are counted for Cancer Research UK
-- **medium** `alias-collision` bowelbabe-fund → cruk: src/data/sponsor-aliases.ts resolves "Bowelbabe Fund for Cancer Research UK" (the name of institution bowelbabe-fund) to institution cruk (Cancer Research UK); trials sponsored by Bowelbabe Fund for Cancer Research UK are counted for Cancer Research UK
-- **medium** `alias-collision` ccc-wuerzburg → heidelberg-nct: src/data/sponsor-aliases.ts resolves "NCT WERA" (the name of institution ccc-wuerzburg) to institution heidelberg-nct (Heidelberg / NCT); trials sponsored by Comprehensive Cancer Center Mainfranken, University Hospital Würzburg are counted for Heidelberg University Hospital / NCT / DKFZ
-- **medium** `alias-collision` coherus → junshi: src/data/sponsor-aliases.ts resolves "Coherus BioSciences" (the name of company coherus) to company junshi (Junshi / Coherus); trials sponsored by Coherus BioSciences are counted for Shanghai Junshi Biosciences
-- **medium** `alias-collision` essen-wtz → heidelberg-nct: src/data/sponsor-aliases.ts resolves "NCT West" (the name of institution essen-wtz) to institution heidelberg-nct (Heidelberg / NCT); trials sponsored by West German Cancer Center (WTZ), University Hospital Essen are counted for Heidelberg University Hospital / NCT / DKFZ
 - **medium** `alias-collision` frederick-national-lab → nci: src/data/sponsor-aliases.ts resolves "NCI-Frederick" (the name of institution frederick-national-lab) to institution nci (National Cancer Institute (US)); trials sponsored by Frederick National Laboratory for Cancer Research are counted for National Cancer Institute (NIH)
 - **medium** `alias-collision` institute-for-protein-design → fred-hutch: src/data/sponsor-aliases.ts resolves "Institute for Protein Design (University of Washington)" (the name of institution institute-for-protein-design) to institution fred-hutch (Fred Hutch / University of Washington); trials sponsored by Institute for Protein Design (University of Washington) are counted for Fred Hutchinson Cancer Center
 - **medium** `alias-collision` ncc-hospital-east → ncc-japan: src/data/sponsor-aliases.ts resolves "National Cancer Center Hospital East" (the name of institution ncc-hospital-east) to institution ncc-japan (National Cancer Center Japan); trials sponsored by National Cancer Center Hospital East are counted for National Cancer Center Hospital
 - **medium** `alias-collision` nci-ccr → nci: src/data/sponsor-aliases.ts resolves "NCI Center for Cancer Research (intramural programme)" (the name of institution nci-ccr) to institution nci (National Cancer Institute (US)); trials sponsored by NCI Center for Cancer Research (intramural programme) are counted for National Cancer Institute (NIH)
-- **medium** `alias-collision` nct-dresden → heidelberg-nct: src/data/sponsor-aliases.ts resolves "NCT/UCC Dresden, University Hospital Carl Gustav Carus" (the name of institution nct-dresden) to institution heidelberg-nct (Heidelberg / NCT); trials sponsored by NCT/UCC Dresden, University Hospital Carl Gustav Carus are counted for Heidelberg University Hospital / NCT / DKFZ
-- **medium** `alias-collision` oxford-cancer → cruk: src/data/sponsor-aliases.ts resolves "CRUK Oxford Centre" (the name of institution oxford-cancer) to institution cruk (Cancer Research UK); trials sponsored by Oxford Cancer (Oxford University Hospitals and University of Oxford) are counted for Cancer Research UK
 - **medium** `alias-collision` point-biopharma → lantheus: src/data/sponsor-aliases.ts resolves "POINT Biopharma" (the name of company point-biopharma) to company lantheus (Lantheus); trials sponsored by POINT Biopharma are counted for Lantheus
 - **medium** `alias-collision` rayzebio → bms: src/data/sponsor-aliases.ts resolves "RayzeBio (BMS)" (the name of company rayzebio) to company bms (Bristol Myers Squibb); trials sponsored by RayzeBio (BMS) are counted for Bristol Myers Squibb
-- **medium** `alias-collision` southampton-cancer → cruk: src/data/sponsor-aliases.ts resolves "CRUK Southampton Centre" (the name of institution southampton-cancer) to institution cruk (Cancer Research UK); trials sponsored by University Hospital Southampton / Centre for Cancer Immunology are counted for Cancer Research UK
 - **medium** `alias-collision` uganda-cancer-institute → fred-hutch: src/data/sponsor-aliases.ts resolves "UCI-Fred Hutch Cancer Centre" (the name of institution uganda-cancer-institute) to institution fred-hutch (Fred Hutchinson Cancer Center); trials sponsored by Uganda Cancer Institute are counted for Fred Hutchinson Cancer Center

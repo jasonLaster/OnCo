@@ -114,7 +114,7 @@ export const chinaDrugs: DrugInput[] = [
     tldr: "Envafolimab is the first PD-L1 antibody given as a quick injection under the skin rather than an infusion, approved in China for advanced tumours with mismatch-repair deficiency.",
     summary: "Approved by the NMPA in November 2021 for previously treated MSI-H or dMMR advanced solid tumours, on a single-arm study across colorectal and other cancers, the first subcutaneous PD-(L)1 antibody approved anywhere. Developed by Alphamab Oncology with 3D Medicines in China; TRACON Pharmaceuticals held North American rights for a sarcoma programme that did not succeed. Its convenience rather than potency is the point: a 30-second injection in a country where infusion chairs are scarce outside big cities.",
     approvals: [{ region: "China", year: 2021, indication: "Previously treated MSI-H or dMMR advanced solid tumours" }],
-    targets: ["pdl1"], technologies: ["checkpoint-inhibitor", "monoclonal-antibody"], pathways: ["pd1-checkpoint"], companies: ["alphamab", "3d-medicines", "tracon"], cancers: ["colorectal", "cancer-of-unknown-primary"], terms: ["msi"],
+    targets: ["pdl1"], technologies: ["checkpoint-inhibitor", "monoclonal-antibody"], pathways: ["pd1-checkpoint"], companies: ["alphamab", "3d-medicines", "tracon"], cancers: ["colorectal"], terms: ["msi"],
     links: [{ label: "Alphamab Oncology", url: "https://www.alphamabonc.com/en/" }, NMPA], tags: ["china"] }),
 
   // ---------- CAR-T ----------

@@ -365,7 +365,7 @@ export const pancreaticSubtypes: CancerInput[] = [
     pipeline: [],
     openProblems: ["No prospective trial exists or is likely; treatment is extrapolated from hepatoblastoma and pooled registries.", "Relapsed and metastatic disease has no established second-line therapy.", "Adult pancreatoblastoma is often misdiagnosed and behaves worse than the childhood form.", "Survivors face pancreatic insufficiency and diabetes after major pancreatic surgery in early life."],
     targets: ["kras"], technologies: ["cytotoxic-chemotherapy", "ct", "mri", "germline-testing", "fertility-preservation"], terms: ["whipple", "resection-margins", "neoadjuvant-adjuvant", "metastasis", "tumour-grade"],
-    trials: [], drugs: ["cisplatin", "doxorubicin", "vincristine"],
+    trials: [], drugs: ["cisplatin", "doxorubicin"],
     people: [], companies: [], pathways: ["wnt", "pancreatic-cancer-signalling"],
     keyPapers: ["paper-klimstra-pancreatoblastoma-clinicopathologic-study-ajsp-1995", "paper-bien-pancreatoblastoma-expert-european-cooperative-ejc-2011", "paper-dhebri-pancreatoblastoma-diagnosis-treatment-outcome-pancreatology-2004"],
     links: [{ label: "Wikipedia", url: W("Pancreatoblastoma") }, { label: "EXPeRT consensus on pancreatoblastoma (2021)", url: "https://doi.org/10.1002/pbc.29112" }] },

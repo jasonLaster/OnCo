@@ -220,7 +220,7 @@ export const simpleP: Record<string, string> = {
   "vion-pharmaceuticals": "Vion Pharmaceuticals was a Yale spin-out whose drug laromustine reached phase 3 in older people with acute myeloid leukaemia but was not approved, and it went bankrupt in 2009.",
   "specicare": "SpeciCare preserves a patient's living tumour tissue at biopsy or surgery so it can be used later for testing, and patients can order the service themselves.",
   "cnside-diagnostics": "CNSide Diagnostics captures tumour cells from the fluid around the brain and spine to diagnose and track cancer that has spread to their linings.",
-  "rgcc-international": "RGCC International sells blood tests that isolate circulating tumour cells and profile them to guide treatment choices, though the tests sit outside mainstream guidelines.",
+  "rgcc-international": "RGCC sells tests that study tumour cells in blood or expose them to drugs in a lab. Evidence has not shown that using its results improves outcomes, so they cannot replace standard cancer care.",
   "cure-first": "Cure-First is a nonprofit that grows mini tumours from a patient's cancer tissue and tests dozens of anticancer drugs on them, sharing the results with patients directly.",
   "sagemedic": "SageMedic builds 3D mini tumours from a patient's solid tumour and measures how well candidate drugs and combinations kill or slow them.",
   "cancertain": "CanCertain grows circulating tumour cells from a blood sample in 3D culture and tests cancer drugs on them, and accepts orders from patients as well as doctors.",

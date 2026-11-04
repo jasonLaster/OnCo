@@ -7696,7 +7696,7 @@ export const tldr_zh: Record<string, string> = {
   "ranata-therapeutics": "Ranata Therapeutics针对个体患者癌细胞的独特特征构建抗体和双特异性抗体。",
   rarivive: "Rarivive是Even One Ventures旗下的非癌症公司：为罕见遗传病围绕单个患者的突变设计定制基因疗法。",
   "relit-biosciences": "Relit Biosciences让患者获得基于生物标志物的显像和放射性配体治疗，即诊断扫描与匹配的放射性药物的配对。",
-  "rgcc-international": "RGCC提供分离并分析循环肿瘤细胞的血液检测，以指导治疗选择并追踪病情，面向全球患者和医生销售。",
+  "rgcc-international": "RGCC International销售循环肿瘤细胞计数、分子分析及体外药物敏感性等检测。现有证据主要来自小型、非随机且多与公司有关的研究，尚未证明使用RGCC检测指导治疗能改善患者结局，因此不能取代标准诊断、筛查或肿瘤治疗决策。",
   rovi: "Rovi是马德里的制药集团，以低分子肝素和长效注射剂闻名；其bemiparin在癌症相关血栓中的试验是它出现在3期资助方名单中的原因。",
   "sagely-health": "Sagely Health由肿瘤学家Jason Sager领导，帮助患者和家属理解不断变化的科学、试验和准入途径，从一份免费的临床试验报告开始。",
   sagemedic: "SageMedic从患者的实体瘤构建3D微型肿瘤，测量候选药物和组合如何杀伤或减缓它们，包括罕见癌症和原发灶不明癌。",

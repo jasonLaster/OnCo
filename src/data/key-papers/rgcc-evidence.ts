@@ -1,0 +1,150 @@
+import type { PaperInput } from "@/lib/schema";
+
+const asOf = "2026-11-04";
+type P = Omit<PaperInput, "kind" | "asOf">;
+const p = (x: P): PaperInput => ({ kind: "paper", asOf, ...x });
+
+/**
+ * Evidence directly relevant to RGCC assays, plus current independent context for
+ * circulating tumour cell use. Feasibility, clinical validity and patient benefit
+ * are kept separate.
+ */
+export const papersRgccEvidence: PaperInput[] = [
+  p({
+    id: "paper-adar-rgcc-ctc-ovarian-ijgc-2026",
+    name: "Tailoring treatment for advanced and/or recurrent ovarian cancer using the response of circulating tumor cells to therapy: a retrospective analysis",
+    journal: "International Journal of Gynecological Cancer",
+    year: 2026,
+    doi: "10.1016/j.ijgc.2025.102767",
+    pmid: "41339201",
+    authors: "Adar L, Shachar E, Laskov I, et al.",
+    paperType: "observational",
+    changedPractice: false,
+    tldr: "A single-centre review of recurrent ovarian cancer reported longer time before progression on a circulating tumour cell-guided treatment line than on each patient's previous line. The comparison was not randomised and cannot show that the assay caused the difference.",
+    summary: "Investigators reviewed 334 records from one centre. Eighty-eight patients were referred for circulating tumour cell testing, 66 received treatment described as guided by the result, and 48 completed treatment and response assessment. Median progression-free survival was 6.67 months on the guided line versus 4.40 months on each patient's preceding line; 27 of 48 had a progression-free survival ratio above 1.3.\n\nThis was a retrospective, non-randomised comparison, not a trial against contemporary guideline-based treatment. Patients who did not receive the suggested treatment often lacked access or coverage, creating important selection and socioeconomic differences. Overall survival from diagnosis did not differ significantly between guided and non-guided groups. RGCC supported administrative data collection, and one author worked for its Israeli representative.",
+    findings: [
+      "Among 48 evaluable patients, median progression-free survival was 6.67 months on the test-guided line and 4.40 months on the previous line.",
+      "Twenty-seven of 48 evaluable patients had a progression-free survival ratio above 1.3.",
+      "Overall survival from diagnosis was not significantly different between the guided and non-guided groups.",
+    ],
+    whatItMeans: "The study is a hypothesis-generating signal that justifies a prospective controlled trial. It does not establish that an RGCC assay improves survival or that its recommendations outperform standard oncology care.",
+    caveats: [
+      "Retrospective, single-centre and non-randomised, with only 48 evaluable patients in the main within-person comparison.",
+      "Comparing a later treatment line with the previous line is vulnerable to selection, time and treatment differences and cannot isolate the assay's effect.",
+      "The tested-but-not-guided group differed in access to recommended therapy, including availability, coverage and affordability.",
+      "RGCC supported administrative data collection, and one author was employed by RGCC's Israeli representative.",
+    ],
+    cancers: ["ovarian"],
+    technologies: ["ctc-capture", "functional-drug-testing", "liquid-biopsy"],
+    companies: ["rgcc-international"],
+    tags: ["rgcc", "retrospective", "evidence:limited"],
+    links: [
+      { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/41339201/" },
+      { label: "Publisher article", url: "https://doi.org/10.1016/j.ijgc.2025.102767" },
+      { label: "Tel Aviv University record", url: "https://cris.tau.ac.il/en/publications/tailoring-treatment-for-advanced-andor-recurrent-ovarian-cancer-u/" },
+    ],
+  }),
+  p({
+    id: "paper-guadagni-rgcc-ctc-colorectal-bmc-cancer-2022",
+    name: "Circulating tumour cell gene expression and chemosensitivity analyses: predictive accuracy for response to multidisciplinary treatment of patients with unresectable refractory recurrent rectal cancer or unresectable refractory colorectal cancer liver metastases",
+    journal: "BMC Cancer",
+    year: 2022,
+    doi: "10.1186/s12885-022-09770-3",
+    pmid: "35710393",
+    authors: "Guadagni S, Masedu F, Fiorentini G, et al.",
+    paperType: "observational",
+    participants: 36,
+    changedPractice: false,
+    tldr: "In 36 selected people with heavily treated colorectal cancer, a circulating tumour cell workflow predicted response with 47.2% overall accuracy and 5.3% specificity. There was no randomised comparison, and the assay was only one part of a complex treatment programme.",
+    summary: "This retrospective study selected 36 people with unresectable refractory recurrent rectal cancer or colorectal cancer liver metastases. Drugs for intra-arterial chemotherapy and targeted treatment were chosen using chemosensitivity and gene-expression analyses of cultured circulating tumour cells.\n\nThe combined workflow reported 94.1% sensitivity, 5.3% specificity, 47.1% positive predictive value, 50% negative predictive value and 47.2% overall predictive accuracy. The study had no untreated or standard-care comparison group, and the specialised locoregional treatment makes it impossible to isolate the contribution of the assay. RGCC personnel performed the assays and were among the authors.",
+    findings: [
+      "The reported overall predictive accuracy was 47.2%, with a 95% confidence interval of 30% to 64%.",
+      "Reported sensitivity was 94.1%, specificity 5.3%, positive predictive value 47.1% and negative predictive value 50%.",
+      "All 36 participants received a multidisciplinary treatment programme; the study did not compare assay-guided care with a randomised standard-care group.",
+    ],
+    whatItMeans: "The study shows that the workflow was technically feasible, but its low specificity and uncontrolled design do not establish reliable treatment prediction or patient benefit.",
+    caveats: [
+      "Small retrospective selected cohort with no randomised or contemporary control group.",
+      "The assay's effect cannot be separated from intra-arterial chemotherapy, targeted treatment and other parts of the programme.",
+      "Cut-offs were evaluated in the same small dataset, and culturing circulating tumour cells may alter their characteristics.",
+      "RGCC personnel were coauthors and performed the assay work.",
+    ],
+    cancers: ["colorectal"],
+    technologies: ["ctc-capture", "functional-drug-testing", "liquid-biopsy"],
+    companies: ["rgcc-international"],
+    tags: ["rgcc", "retrospective", "evidence:limited"],
+    links: [
+      { label: "PubMed Central full text", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9202660/" },
+      { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/35710393/" },
+      { label: "Publisher article", url: "https://doi.org/10.1186/s12885-022-09770-3" },
+    ],
+  }),
+  p({
+    id: "paper-nicolo-ctc-consensus-ejc-2025",
+    name: "International expert consensus on the clinical integration of circulating tumor cells in solid tumors",
+    journal: "European Journal of Cancer",
+    year: 2025,
+    doi: "10.1016/j.ejca.2025.116050",
+    pmid: "41172567",
+    authors: "Nicolò E, Reduzzi C, Pierga JY, et al.",
+    paperType: "guideline",
+    changedPractice: false,
+    tldr: "A 37-expert consensus supported selected circulating tumour cell uses in metastatic breast and prostate cancer but said most other uses remain investigational. It identified CellSearch as the only platform with high-level clinical-use evidence and did not evaluate or endorse RGCC tests.",
+    summary: "Eleven experts designed a structured survey that 37 international specialists completed. The panel reached consensus on selected prognostic and monitoring uses of circulating tumour cells in metastatic breast and prostate cancer and on AR-V7 testing for treatment selection in metastatic castration-resistant prostate cancer. It judged early-stage use and most other tumour settings investigational.\n\nThe panel stated that CellSearch was the only platform with high-level evidence for clinical use. It called molecular and phenotypic treatment guidance promising but in need of standardised workflows and robust prospective data. This is context for the CTC field, not validation of RGCC's capture, culture, expression or drug-sensitivity methods.",
+    findings: [
+      "Consensus supported selected prognostic and treatment-monitoring roles in metastatic breast and prostate cancer.",
+      "The panel supported AR-V7 testing for treatment selection in metastatic castration-resistant prostate cancer.",
+      "Most other tumour settings and early-stage applications remained investigational.",
+      "CellSearch was identified as the only platform with high-level evidence for clinical use.",
+    ],
+    whatItMeans: "Evidence for one validated circulating tumour cell platform or one defined biomarker cannot be transferred automatically to every CTC assay. A branded test needs its own analytical validation, clinical validation and evidence that acting on the result helps patients.",
+    caveats: [
+      "Expert consensus is not a randomised clinical trial and depends on the evidence available to the panel.",
+      "The paper discusses the CTC field broadly and does not test RGCC or any of its branded panels.",
+      "A corrigendum was published in 2026; it did not turn the paper into product-specific validation.",
+    ],
+    cancers: ["breast-cancer", "prostate", "colorectal"],
+    technologies: ["ctc-capture", "cellsearch-ctc-count", "liquid-biopsy"],
+    tags: ["ctc", "consensus", "clinical-utility"],
+    links: [
+      { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/41172567/" },
+      { label: "Publisher article", url: "https://doi.org/10.1016/j.ejca.2025.116050" },
+      { label: "University of New Mexico repository record", url: "https://digitalrepository.unm.edu/hsc_path_pubs/438/" },
+      { label: "2026 corrigendum", url: "https://doi.org/10.1016/j.ejca.2025.116167" },
+    ],
+  }),
+  p({
+    id: "paper-apostolou-rgcc-pbmc-gastrointestinal-oncotarget-2019",
+    name: "Gene expression profiling as a potential predictor between normal and cancer samples in gastrointestinal carcinoma",
+    journal: "Oncotarget",
+    year: 2019,
+    doi: "10.18632/oncotarget.26913",
+    pmid: "31164955",
+    authors: "Apostolou P, Iliopoulos AC, Parsonidis P, Papasotiriou I",
+    paperType: "methods",
+    changedPractice: false,
+    tldr: "RGCC researchers separated a very small set of colorectal cancer and healthy blood samples using gene-expression clustering. The study was exploratory and does not validate multi-cancer screening in people without symptoms.",
+    summary: "RGCC researchers measured expression of more than 50 genes in peripheral blood mononuclear cells and commercial gastrointestinal cancer cell lines. The human normal-versus-cancer analysis contained four healthy donors and six people with colorectal cancer. Additional comparisons used nine colorectal patient samples and commercial cell lines.\n\nThe clustering methods separated the small groups used to develop and illustrate the approach. There was no independent prospective screening cohort, prespecified population threshold, diagnostic work-up, stage-specific performance analysis or clinical-outcome endpoint. RGCC links this study from its Onco-D-Clare page, but the study does not validate a pan-cancer screening test or a population accuracy claim.",
+    findings: [
+      "The primary human normal-versus-cancer comparison used four healthy donors and six people with colorectal cancer.",
+      "Two clustering methods separated those ten samples after the number of groups was fixed at two.",
+      "Further analyses compared patient samples with commercial cell lines rather than testing an independent screening population.",
+    ],
+    whatItMeans: "The paper is early proof of concept for a gene-expression method. It cannot establish screening sensitivity, specificity, tissue of origin, mortality reduction or clinical utility for Onco-D-Clare.",
+    caveats: [
+      "Tiny exploratory dataset with no independent prospective validation cohort.",
+      "All authors were affiliated with Research Genetic Cancer Centre S.A.",
+      "Known colorectal cancer samples and healthy controls do not represent an asymptomatic screening population.",
+      "The study did not test whether screening reduced late-stage diagnosis or cancer deaths.",
+    ],
+    cancers: ["colorectal"],
+    technologies: ["mced"],
+    companies: ["rgcc-international"],
+    tags: ["rgcc", "screening", "proof-of-concept", "evidence:limited"],
+    links: [
+      { label: "PubMed Central full text", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534363/" },
+      { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/31164955/" },
+      { label: "Publisher article", url: "https://doi.org/10.18632/oncotarget.26913" },
+    ],
+  }),
+];

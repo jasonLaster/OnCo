@@ -321,7 +321,7 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   // Alleanza Contro il Cancro's English name begins "Alliance"; it is the Italian research network, not the US group.
   // A consortium is not a sponsor home (src/lib/cooperative-groups-home.test.ts), so it keeps its own name without an id.
   [/alleanza contro il cancro|^alliance against cancer/, { label: "Alleanza Contro il Cancro (ACC)", kind: "other" }],
-  [/^alliance|cancer and leukemia group b|\bcalgb\b/, { id: "alliance-oncology", label: "Alliance for Clinical Trials in Oncology", kind: "cooperative-group" }],
+  [/^alliance(?:$| for clinical trials in oncology\b| foundation trials\b| \/)|cancer and leukemia group b|\bcalgb\b/, { id: "alliance-oncology", label: "Alliance for Clinical Trials in Oncology", kind: "cooperative-group" }],
   [/gog foundation|gog partners/, { id: "gog-foundation", label: "GOG Foundation", kind: "cooperative-group" }],
   [/nsabp foundation/, { id: "nsabp-foundation", label: "NSABP Foundation", kind: "cooperative-group" }],
   [/nrg oncology|^rtog|radiation therapy oncology group|^gog\b|gynecologic oncology group|nsabp/, { id: "nrg-oncology", label: "NRG Oncology (RTOG, GOG, NSABP)", kind: "cooperative-group" }],

@@ -143,7 +143,7 @@ const institutions: InstitutionInput[] = [
   inst({ id: "university-hospital-wales-cardiff", name: "University Hospital of Wales, Cardiff", aka: ["Cardiff and Vale University Health Board", "UHW"], city: "Cardiff", country: "GB", lat: 51.507, lng: -3.190, institutionType: "hospital", website: "https://cavuhb.nhs.wales/", university: "Cardiff University",
     tldr: "Cardiff's liver surgery service, listed by AMMF as a UK centre with cholangiocarcinoma expertise; oncology at Velindre.",
     summary: "The University Hospital of Wales (Cardiff and Vale University Health Board) provides liver surgery and is on AMMF's list of UK centres with cholangiocarcinoma expertise. Non-surgical cancer treatment for the region is delivered by Velindre Cancer Centre.",
-    programs: ["Liver surgery", "HPB MDT"], ...hpbCommon, institutions: ["velindre-cardiff"],
+    programs: ["Liver surgery", "HPB MDT"], ...hpbCommon, institutions: ["velindre-cardiff", "tenovus-cancer-care"],
     links: [{ label: "Cardiff and Vale University Health Board", url: "https://cavuhb.nhs.wales/" }, { label: "AMMF centres list", url: S.ammfCentres.url }] }),
   inst({ id: "belfast-trust-hpb", name: "Belfast Health and Social Care Trust HPB service", aka: ["Belfast Trust", "Mater Infirmorum Hospital", "Belfast City Hospital liver, pancreas and bile duct service"], city: "Belfast", country: "GB", lat: 54.597, lng: -5.930, institutionType: "hospital", website: "https://belfasttrust.hscni.net/", university: "Queen's University Belfast",
     tldr: "Northern Ireland's single HPB cancer service, within the Belfast Trust; systemic treatment at the Northern Ireland Cancer Centre.",

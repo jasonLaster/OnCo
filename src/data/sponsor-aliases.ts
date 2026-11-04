@@ -378,6 +378,13 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/national institutes of health|\bnih\b|national institute on aging/, { label: "US National Institutes of Health", kind: "government" }],
   [/national cancer center japan|national cancer center hospital/, { id: "ncc-japan", label: "National Cancer Center Japan", kind: "institution" }],
   // ---- Institutions ----
+  // Children's hospitals and centres whose names contain a broader institution's pattern below (added 4 November 2026).
+  [/loyola/, { id: "loyola-cardinal-bernardin", label: "Loyola Cardinal Bernardin Cancer Center", kind: "institution" }],
+  [/mass general brigham cancer institute/, { id: "mass-general-brigham-cancer-institute", label: "Mass General Brigham Cancer Institute", kind: "institution" }],
+  [/st\.? jude india/, { id: "st-jude-india-childcare", label: "St. Jude India ChildCare Centres", kind: "other" }],
+  [/benioff children/, { id: "ucsf-benioff-childrens-cancer", label: "UCSF Benioff Children's Hospitals", kind: "institution" }],
+  [/mott children/, { id: "mott-childrens-pediatric-cancer", label: "C.S. Mott Children's Hospital", kind: "institution" }],
+  [/children'?s hospital of pittsburgh/, { id: "upmc-childrens-pittsburgh-oncology", label: "UPMC Children's Hospital of Pittsburgh", kind: "institution" }],
   [/memorial sloan/, { id: "mskcc", label: "Memorial Sloan Kettering", kind: "institution" }],
   [/m\.? ?d\.? anderson/, { id: "md-anderson", label: "MD Anderson Cancer Center", kind: "institution" }],
   [/dana-farber|dana farber/, { id: "dana-farber", label: "Dana-Farber Cancer Institute", kind: "institution" }],

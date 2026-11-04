@@ -990,7 +990,7 @@ export const CURATED: CuratedSoftware[] = [
     technologies: ["multidisciplinary-tumour-board"],
   },
   {
-    id: "cancer-commons", name: "Cancer Commons", vendor: "Cancer Commons", category: C.case, segment: S.review,
+    id: "cancer-commons", name: "Cancer Commons", vendor: "Cancer Commons", vendorId: "cancer-commons", category: C.case, segment: S.review,
     summary: "A non-profit that gives people with advanced cancer a scientist to work their case and a route to expert opinions, free at the point of use.",
     url: "https://www.cancercommons.org/", pageMatch: "Cancer Commons",
     paperQuery: 'ABSTRACT:"Cancer Commons"', paperMatch: "Cancer Commons",

@@ -91,7 +91,7 @@ export const nciRareOtherCancers: CancerInput[] = [
   }),
   // ======================= Genitourinary =======================
   c({
-    id: "penile", trials: ["nct06465914"], name: "Penile cancer", group: "genitourinary", wikipedia: W("Penile_cancer"),
+    id: "penile", institutions: ["orchid-cancer-appeal"], trials: ["nct06465914"], name: "Penile cancer", group: "genitourinary", wikipedia: W("Penile_cancer"),
     aka: ["Penile squamous cell carcinoma", "Carcinoma of the penis"],
     burden: "Rare in high-income countries (well under one per 100,000 men per year) and several times more common in parts of South America, sub-Saharan Africa and South Asia, tracking HPV prevalence, phimosis and low circumcision rates.",
     tldr: "Penile cancer is a squamous skin-type cancer, about half of it caused by HPV. Caught early it is usually cured with organ-sparing surgery that has replaced amputation, and HPV vaccination and circumcision prevent it; the hard cases are those with lymph-node spread, where cisplatin-based chemotherapy plus surgery and now immunotherapy are being tested in the InPACT trial.",
@@ -158,7 +158,7 @@ export const nciRareOtherCancers: CancerInput[] = [
   }),
   // ======================= Gynaecologic =======================
   c({
-    id: "vaginal", name: "Vaginal cancer", group: "gynaecologic", wikipedia: W("Vaginal_cancer"),
+    id: "vaginal", institutions: ["eve-appeal"], name: "Vaginal cancer", group: "gynaecologic", wikipedia: W("Vaginal_cancer"),
     aka: ["Vaginal squamous cell carcinoma", "Primary vaginal carcinoma", "VAIN (vaginal intraepithelial neoplasia; precursor)"],
     burden: "About one to two percent of gynaecological cancers; most vaginal tumours are actually spread from the cervix, vulva or endometrium, and true primary vaginal cancer is rare (SEER).",
     tldr: "Primary vaginal cancer is rare and mostly caused by HPV, the virus behind cervical cancer. It is treated like cervical cancer, with weekly cisplatin alongside external and internal radiotherapy, which controls most tumours while preserving the organ; HPV vaccination and cervical screening, which also detects vaginal precursors, are steadily reducing it.",

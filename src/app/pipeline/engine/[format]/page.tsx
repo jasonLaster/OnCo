@@ -56,7 +56,7 @@ export default async function EngineFormatPage({ params }: { params: Promise<{ f
         right={<div className="flex flex-wrap gap-2"><a href={engineFile(def.id)} className="chip border bg-card border-border hover:bg-foreground/5 text-sm" title="This format's medicines, cells, components, evidence and stopped reasons as one JSON file">JSON for agents</a><Link href={modalityRoute(def.id)} className="chip border bg-card border-border hover:bg-foreground/5 text-sm" title="Everything the corpus records about this format: how it works, approved medicines, trials, side effects, resistance, papers, manufacturing">Modality hub →</Link><Link href="/pipeline/engine/" className="chip border bg-card border-border hover:bg-foreground/5 text-sm">All formats →</Link></div>} />
       <Container className="pb-16">
         <div className="flex flex-wrap gap-1.5 mb-6 text-xs">
-          {FORMATS.map((x) => <Link key={x.id} href={engineRoute(x.id)} className={`chip border ${x.id === def.id ? "bg-accent-solid text-accent-fg border-accent-solid" : "border-border bg-card hover:bg-accent-soft hover:text-accent hover:border-accent"}`} aria-current={x.id === def.id ? "page" : undefined}>{x.name}</Link>)}
+          {FORMATS.map((x) => <Link key={x.id} href={engineRoute(x.id)} className={`chip border ${x.id === def.id ? "bg-accent-solid text-accent-fg border-accent-solid" : "chip-pick"}`} aria-current={x.id === def.id ? "page" : undefined}>{x.name}</Link>)}
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
@@ -77,7 +77,7 @@ export default async function EngineFormatPage({ params }: { params: Promise<{ f
                     {shown.map((c) => (
                       <li key={c.id} className="flex items-center justify-between gap-2 text-xs">
                         <span className="min-w-0 truncate">{c.href ? <Link href={c.href} className="hover:underline" title={`${c.name}: its own page`}>{c.name}</Link> : <span title={`${c.name}: no page of its own`}>{c.name}</span>}</span>
-                        <Link href={`${engineRoute(def.id)}?${k}=${encodeURIComponent(c.id)}#table`} className="chip border border-border bg-card tabular-nums hover:bg-accent-soft hover:text-accent hover:border-accent" title={`${n(c.count)} medicine${c.count === 1 ? "" : "s"} (${n(c.states.approved)} approved, ${n(c.states.development)} in development, ${n(c.states.stopped)} stopped). ${isAxis ? "Filter the grid table to this value." : "Filter the table to the cells that use it."}`}>{n(c.count)}</Link>
+                        <Link href={`${engineRoute(def.id)}?${k}=${encodeURIComponent(c.id)}#table`} className="chip chip-pick tabular-nums" title={`${n(c.count)} medicine${c.count === 1 ? "" : "s"} (${n(c.states.approved)} approved, ${n(c.states.development)} in development, ${n(c.states.stopped)} stopped). ${isAxis ? "Filter the grid table to this value." : "Filter the table to the cells that use it."}`}>{n(c.count)}</Link>
                       </li>
                     ))}
                   </ul>
@@ -134,7 +134,7 @@ export default async function EngineFormatPage({ params }: { params: Promise<{ f
                         <td>{b?.href ? <Link href={b.href} className="hover:underline">{b.name}</Link> : tb ? <Link href={routeFor(tb)} className="hover:underline">{tb.name}</Link> : <span title={i.unmatched.includes(i.raw.b) ? "Not matched to a grid column" : undefined} className={i.unmatched.includes(i.raw.b) ? "text-muted italic" : ""}>{b?.name ?? i.raw.b}</span>}</td>
                         <td>{st ? <span className={`chip ${st.chip} text-xs`} title={st.tip}>{st.label}</span> : <span className="chip border border-border text-xs">{i.statusLabel}</span>}</td>
                         <td className="text-muted max-w-md"><span className="font-medium text-foreground">{i.name}.</span> {i.rationale}<span className="block text-xs mt-1">Caveat: {i.caveat}</span><span className="block text-xs mt-1">Proposed by {i.proposedBy}, searched {i.on}.</span></td>
-                        <td><div className="flex flex-wrap gap-1.5">{i.evidence.map((ev, k) => <a key={`${ev.url}-${k}`} href={ev.url} rel="noopener" title={ev.quote} className={`chip border border-border bg-card text-xs hover:ring-2 hover:ring-accent/30 ${ev.adjacent ? "text-muted" : ""}`}>{ev.label}</a>)}{i.refs.map((id) => { const e = g.get(id); return e ? <Link key={id} href={routeFor(e)} className="chip border border-border bg-card text-xs hover:ring-2 hover:ring-accent/30">{e.name}</Link> : null; })}{!i.evidence.length && !i.refs.length && <span className="text-xs text-muted">None found</span>}</div></td>
+                        <td><div className="flex flex-wrap gap-1.5">{i.evidence.map((ev, k) => <a key={`${ev.url}-${k}`} href={ev.url} rel="noopener" title={ev.quote} className={`chip chip-ev text-xs${ev.adjacent ? " text-muted" : ""}`}>{ev.label}</a>)}{i.refs.map((id) => { const e = g.get(id); return e ? <Link key={id} href={routeFor(e)} className="chip chip-ev text-xs">{e.name}</Link> : null; })}{!i.evidence.length && !i.refs.length && <span className="text-xs text-muted">None found</span>}</div></td>
                         <td>{i.matched && isTried(i.a, i.b) ? <Link href={`${engineRoute(def.id)}?${ka}=${encodeURIComponent(i.a)}&${kb}=${encodeURIComponent(i.b)}#table`} className="chip tone-live text-xs">Now tried: see the cell</Link> : <span className="chip border border-dashed border-border text-muted text-xs">Untried</span>}</td>
                       </tr>
                     );
@@ -154,7 +154,7 @@ export default async function EngineFormatPage({ params }: { params: Promise<{ f
             <>
               <p className="text-sm text-muted mb-3 max-w-3xl">These medicines belong to the format but their {COMPONENT_LABEL[ka].toLowerCase()} is on no record the engine reads: the targets field is empty, the target lists no such drug, the trials linked to it name no target of its own, and the modality, mechanism and summary text name none the corpus knows. They are listed here rather than placed by guesswork; adding the {COMPONENT_LABEL[ka].toLowerCase()} to the record puts them in the grid on the next build.</p>
               <div className="flex flex-wrap gap-1.5">
-                {f.unresolved.map((u) => <Link key={u.id} href={u.route} className="chip border border-border bg-card text-xs hover:bg-accent-soft hover:text-accent hover:border-accent" title={`${u.modality}. Missing: ${u.missing.map((k) => COMPONENT_LABEL[k].toLowerCase()).join(", ")}.`}>{u.name}</Link>)}
+                {f.unresolved.map((u) => <Link key={u.id} href={u.route} className="chip chip-pick text-xs" title={`${u.modality}. Missing: ${u.missing.map((k) => COMPONENT_LABEL[k].toLowerCase()).join(", ")}.`}>{u.name}</Link>)}
               </div>
             </>
           )}

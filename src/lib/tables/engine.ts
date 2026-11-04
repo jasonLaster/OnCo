@@ -11,7 +11,7 @@ import type { TableFile } from "./index";
  * first TABLE_PAGE and the rest lives in /api/v1/tables/engine-<format>.json (scripts/build-tables.ts).
  */
 const STATE_ORDER: CellState[] = ["approved", "development", "stopped", "unclear"];
-const DRUG_CHIP: Record<string, string> = { approved: "bg-accent-soft text-accent border border-accent/30 text-xs", development: "tone-live text-xs", stopped: "bg-zinc-200 text-zinc-800 dark:bg-zinc-700 dark:text-zinc-100 text-xs", unclear: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 text-xs" };
+const DRUG_CHIP: Record<string, string> = { approved: "tone-acc text-xs", development: "tone-live text-xs", stopped: "tone-stop text-xs", unclear: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 text-xs" };
 const EVIDENCE_KIND: Record<Evidence["kind"], string> = { drug: "record", trial: "trial", approval: "approval", regional: "regulator", event: "event", registry: "registry" };
 
 export function engineColumns(f: FormatIndex): StaticColumn[] {

@@ -1,0 +1,254 @@
+import type { CompanyInput, DrugInput } from "@/lib/schema";
+
+/**
+ * Oncology companies found by the startup monitors (scripts/startup-monitors.ts, source "edgar") through S-1 and F-1
+ * registration statements filed with the SEC between August and November 2026, first half of the queue. Each record
+ * was written from the registration statement itself, read as raw text on EDGAR on 4 November 2026; where a filing
+ * names no programme, the company's own pipeline page was read instead and is cited. Products are recorded only as
+ * the filing or the company states them. A product is linked to a cancer only where a trial record in OnCo or an
+ * orphan designation stated in the filing names that cancer.
+ *
+ * Screened out of this half of the queue (not oncology developers, or blank-check companies): Bambusa Therapeutics
+ * (immunology and inflammation), ADARx Pharmaceuticals (siRNA for complement, angioedema and thrombosis), Sunshine
+ * Biopharma (generic medicines; one-line mention of a liver cancer mRNA programme with no stage), Devonian Health Group
+ * (botanical anti-inflammatory; a radiodermatitis study is its only oncology-adjacent work), Decoy Therapeutics
+ * (antiviral peptide conjugates; its two oncology compounds are described only as legacy candidates), Retension
+ * Pharmaceuticals (hypertension), Alopexx (anti-infectives), Aspen Neuroscience (Parkinson's disease), Windward Bio
+ * (asthma and dermatitis antibodies), TCGX Acquisition Corp. II and Apex Treasury Corp II (blank-check companies).
+ */
+
+const asOf = "2026-11-04";
+type S = Omit<CompanyInput, "kind" | "asOf"> & Partial<Pick<CompanyInput, "asOf">>;
+const s = (x: S): CompanyInput => ({ kind: "company", asOf, ...x });
+type D = Omit<DrugInput, "kind" | "asOf" | "tags" | "provenance">;
+const tags = ["pipeline"];
+const provenance = { editedBy: "OnCo startup monitors", editedOn: asOf };
+const d = (x: D): DrugInput => ({ kind: "drug", asOf, tags, provenance, ...x });
+
+const F = {
+  geovax: "https://www.sec.gov/Archives/edgar/data/832489/000143774926034729/govx20261102_s1.htm",
+  aptevo: "https://www.sec.gov/Archives/edgar/data/1671584/000119312526361103/apvo-20260821.htm",
+  silexion: "https://www.sec.gov/Archives/edgar/data/2022416/000117891326004003/zk2635896.htm",
+  electra: "https://www.sec.gov/Archives/edgar/data/2088082/000119312526389755/d61940ds1a.htm",
+  nuvox: "https://www.sec.gov/Archives/edgar/data/1966126/000121390026113463/ea0225257-14.htm",
+  adaptin: "https://www.sec.gov/Archives/edgar/data/1938571/000121390026095034/ea0303043-s1_adaptin.htm",
+  ionetix: "https://www.sec.gov/Archives/edgar/data/2108121/000121390026114512/ea0309922-s1a1_ionetix.htm",
+  gtb: "https://www.sec.gov/Archives/edgar/data/109657/000149315226046618/forms-1.htm",
+  gtbPipeline: "https://www.gtbiopharma.com/product-pipeline/overview",
+  propanc: "https://www.sec.gov/Archives/edgar/data/1517681/000149315226045770/forms-1.htm",
+  biodexa: "https://www.sec.gov/Archives/edgar/data/1643918/000121465926011934/y917262f1.htm",
+  tempest: "https://www.sec.gov/Archives/edgar/data/1544227/000119312526361240/d181522ds1.htm",
+  onconetix: "https://www.sec.gov/Archives/edgar/data/1782107/000121390026095703/ea0303846-s1a1_onconetix.htm",
+  interpace: "https://www.sec.gov/Archives/edgar/data/1054102/000149315226049456/forms-1a.htm",
+};
+
+export const monitorsEdgarA: Array<CompanyInput | DrugInput> = [
+  // GeoVax Labs
+  s({ id: "geovax", name: "GeoVax", aka: ["GeoVax Labs, Inc."], hq: "Smyrna, GA", country: "US", companyType: "biotech", stage: "public", ticker: "GOVX", website: "https://www.geovax.com/",
+    sections: ["immunotherapy"], drugs: ["gedeptin"],
+    tldr: "GeoVax is a Georgia company that makes vaccines against infections and one cancer treatment, Gedeptin. Gedeptin is injected into a tumour so that the tumour cells switch on a drug given afterwards, and it has been tested in advanced head and neck cancer.",
+    summary: "GeoVax Labs, Inc., of Smyrna, Georgia, describes itself in its November 2026 registration statement as a clinical-stage biotechnology company developing vaccines and immunotherapies against infectious diseases and solid tumours. Its near-term priority is a Modified Vaccinia Ankara vaccine for mpox and smallpox. Its lead oncology programme is Gedeptin, a gene-directed enzyme prodrug therapy licensed from PNP Therapeutics in September 2021: a replication-deficient adenovirus carries a non-human gene into tumour cells, and the enzyme it makes converts the prodrug fludarabine phosphate into an active anti-tumour compound inside the tumour. The company reports a completed multi-site phase 1b/2a trial (PNP-002, NCT03754933) of repeat cycles in advanced head and neck squamous cell carcinoma, an FDA orphan drug designation for intratumoral treatment of accessible oral and pharyngeal cancers, and plans a phase 2 trial with a checkpoint inhibitor before curative surgery in the second half of 2027.",
+    notes: ["Read on 4 November 2026 in the S-1 filed with the SEC that day. The filing does not give the date of the Gedeptin orphan designation, so no dated designation is recorded. The trial NCT03754933 has no OnCo record."],
+    links: [{ label: "SEC: GeoVax Labs Form S-1, November 2026", url: F.geovax }, { label: "Official website", url: "https://www.geovax.com/" }] }),
+  d({ id: "gedeptin", name: "Gedeptin", aka: ["Gedeptin (GDEPT, adenovirus PNP with fludarabine phosphate)"], modality: "Gene-directed enzyme prodrug therapy (adenovirus vector)", status: "phase-1",
+    mechanism: "A replication-deficient adenovirus vector, injected into the tumour, transduces tumour cells with a non-human gene whose enzyme converts the inactive prodrug fludarabine phosphate, given afterwards, into an active anti-tumour compound in the tumour, as described by GeoVax.",
+    tldr: "Gedeptin is a gene therapy from GeoVax that is injected into a tumour and makes the tumour turn a follow-up drug into a poison for itself. It has been tested in advanced head and neck cancer.",
+    summary: "Gedeptin is GeoVax's gene-directed enzyme prodrug therapy, licensed from PNP Therapeutics in 2021 and developed with National Cancer Institute funding. A cycle consists of intratumoral injections followed by fludarabine phosphate. GeoVax reports a phase 1 dose-ranging study and a completed phase 1b/2a trial (PNP-002, NCT03754933) of repeat cycles in advanced head and neck squamous cell carcinoma with injectable tumours and no curative option, and an FDA orphan drug designation for intratumoral treatment of anatomically accessible oral and pharyngeal cancers. A phase 2 trial with an immune checkpoint inhibitor as first-line treatment before curative surgery is planned for the second half of 2027.",
+    targets: [], cancers: [], companies: ["geovax"],
+    links: [{ label: "SEC: GeoVax Labs Form S-1, November 2026", url: F.geovax }, { label: "ClinicalTrials.gov: PNP-002 (NCT03754933)", url: "https://clinicaltrials.gov/study/NCT03754933" }] }),
+
+  // Aptevo Therapeutics
+  s({ id: "aptevo-therapeutics", name: "Aptevo Therapeutics", aka: ["Aptevo Therapeutics Inc."], hq: "Seattle, WA", country: "US", companyType: "biotech", stage: "public", ticker: "APVO", website: "https://www.aptevotherapeutics.com/",
+    sections: ["immunotherapy"], technologies: ["bispecific-antibody", "t-cell-engager"], targets: ["cd123", "cd3", "cd137"], drugs: ["mipletamig", "alg-apv-527"],
+    tldr: "Aptevo Therapeutics is a Seattle company that builds antibody-like proteins which point the immune system at cancer. Its lead medicine, mipletamig, links T cells to leukaemia cells and is being tested in newly diagnosed acute myeloid leukaemia.",
+    summary: "Aptevo Therapeutics Inc., of Seattle, describes itself in its August 2026 registration statement as a clinical-stage company developing immunotherapies for cancer on two platforms it wholly owns, ADAPTIR and ADAPTIR-FLEX, with two clinical and six preclinical candidates. Mipletamig is a CD123 x CD3 T cell engager with a CRIS-7 CD3-binding domain, evaluated in RAINIER, a phase 1b/2 programme started in August 2024 in frontline acute myeloid leukaemia with venetoclax and azacitidine in patients unfit for intensive chemotherapy. ALG.APV-527 targets the co-stimulatory receptor 4-1BB and the tumour antigen 5T4 and is being evaluated in several solid tumour types.",
+    notes: ["Read on 4 November 2026 in the S-1 filed with the SEC on 21 August 2026, which incorporates the annual report by reference. No 5T4 target record exists in OnCo. Trial registry numbers are not given in the filing."],
+    links: [{ label: "SEC: Aptevo Therapeutics Form S-1, August 2026", url: F.aptevo }, { label: "Official website", url: "https://www.aptevotherapeutics.com/" }] }),
+  d({ id: "mipletamig", name: "Mipletamig", aka: ["APVO436"], modality: "Bispecific T cell engager", status: "phase-1",
+    mechanism: "A CD123 x CD3 bispecific protein built on Aptevo's ADAPTIR platform, with a CRIS-7 CD3-binding domain, that redirects T cells to kill CD123-expressing leukaemia cells.",
+    tldr: "Mipletamig is a two-armed protein from Aptevo Therapeutics that holds a leukaemia cell and a T cell together so the T cell kills it. It is in an early trial with standard drugs in newly diagnosed acute myeloid leukaemia.",
+    summary: "Mipletamig is a CD123 x CD3 T cell engager from Aptevo Therapeutics. After phase 1 dose escalation and expansion, Aptevo is running RAINIER, a phase 1b/2 dose-optimisation trial started in August 2024 in frontline acute myeloid leukaemia, combining mipletamig with venetoclax and azacitidine in patients unfit for intensive chemotherapy, to set a recommended phase 2 dose. The company reports favourable initial results; they are its own.",
+    targets: ["cd123", "cd3"], cancers: [], companies: ["aptevo-therapeutics"], technologies: ["t-cell-engager"],
+    notes: ["The code APVO436 is the name under which the molecule was earlier reported; the August 2026 filing uses mipletamig."],
+    links: [{ label: "SEC: Aptevo Therapeutics Form S-1, August 2026", url: F.aptevo }] }),
+  d({ id: "alg-apv-527", name: "ALG.APV-527", code: "ALG.APV-527", modality: "Bispecific antibody (4-1BB x 5T4)",
+    mechanism: "Binds the co-stimulatory receptor 4-1BB on T cells and the tumour antigen 5T4, designed to reactivate antigen-primed T cells at the tumour, as described by Aptevo Therapeutics.",
+    tldr: "ALG.APV-527 is an antibody-like protein from Aptevo Therapeutics that switches on immune cells only where it finds a marker on tumour cells. It is being tested in several kinds of solid tumour.",
+    summary: "ALG.APV-527 is a 4-1BB x 5T4 bispecific candidate built on Aptevo Therapeutics' ADAPTIR platform. Aptevo's August 2026 filing states that it is designed to reactivate antigen-primed T cells to kill tumour cells and is being evaluated clinically in multiple solid tumour types; the filing does not state the phase.",
+    targets: ["cd137"], cancers: [], companies: ["aptevo-therapeutics"], technologies: ["bispecific-antibody"],
+    links: [{ label: "SEC: Aptevo Therapeutics Form S-1, August 2026", url: F.aptevo }] }),
+
+  // Silexion Therapeutics
+  s({ id: "silexion-therapeutics", name: "Silexion Therapeutics", aka: ["Silexion Therapeutics Corp", "Silexion Therapeutics Ltd."], hq: "Ramat Gan", country: "IL", companyType: "biotech", stage: "public", ticker: "SLXN", website: "https://www.silexion.com/",
+    sections: ["targeted-therapy"], technologies: ["antisense-sirna"], targets: ["kras"], drugs: ["sil204"],
+    tldr: "Silexion Therapeutics is an Israeli company making a gene-silencing medicine, SIL204, that stops cancer cells making the faulty KRAS protein. A larger trial in pancreatic cancer that has spread locally began in Israel in July 2026.",
+    summary: "Silexion Therapeutics Corp, of Ramat Gan, Israel, became a listed company through a business combination with Moringa Acquisition Corp completed on 15 August 2024. It develops RNA interference therapies for KRAS-driven cancers. Its lead candidate SIL204 is a second-generation siRNA engineered to suppress the KRAS oncogene itself, given both into the tumour and systemically by subcutaneous injection with standard chemotherapy. The company states that a phase 2 trial of its first-generation siRNA with chemotherapy showed an overall survival benefit over chemotherapy alone. In the second quarter of 2026 it received approvals from the Israeli Ministry of Health and Germany's BfArM for a phase 2/3 trial of SIL204 in locally advanced pancreatic cancer, and initiated the trial at Tel Aviv Sourasky Medical Center in late July 2026.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 10 August 2026. The trial registry number is not given in the filing."],
+    links: [{ label: "SEC: Silexion Therapeutics Form S-1/A, August 2026", url: F.silexion }, { label: "Official website", url: "https://www.silexion.com/" }] }),
+  d({ id: "sil204", name: "SIL204", code: "SIL204", modality: "siRNA (intratumoral and subcutaneous)", status: "phase-2",
+    mechanism: "A second-generation small interfering RNA engineered to suppress expression of the KRAS oncogene, preventing production of the oncogenic protein, as described by Silexion Therapeutics.",
+    tldr: "SIL204 is a gene-silencing medicine from Silexion Therapeutics that stops cancer cells making the KRAS protein that drives them. It is given with chemotherapy and is in a larger trial in pancreatic cancer.",
+    summary: "SIL204 is Silexion Therapeutics' second-generation siRNA against KRAS. It is given directly into the tumour and systemically by subcutaneous injection, together with standard chemotherapy. Silexion received Israeli and German approvals in the second quarter of 2026 for a phase 2/3 trial in locally advanced pancreatic cancer and initiated it in Tel Aviv in late July 2026. A first-generation siRNA from the company was tested with chemotherapy in an earlier phase 2 trial.",
+    targets: ["kras"], cancers: [], companies: ["silexion-therapeutics"], technologies: ["antisense-sirna"],
+    links: [{ label: "SEC: Silexion Therapeutics Form S-1/A, August 2026", url: F.silexion }] }),
+
+  // Electra Therapeutics
+  s({ id: "electra-therapeutics", name: "Electra Therapeutics", aka: ["Electra Therapeutics, Inc."], hq: "South San Francisco, CA", country: "US", companyType: "biotech", stage: "growth", website: "https://www.electra-therapeutics.com/",
+    sections: ["immunotherapy"], technologies: [], targets: ["sirpa"], drugs: ["ipsoprubart"],
+    tldr: "Electra Therapeutics is a South San Francisco company making antibodies that remove the overactive immune cells behind some diseases. Its lead antibody, ipsoprubart, is in a trial in a severe inflammatory syndrome and an early trial in T cell and natural killer cell lymphomas and leukaemias.",
+    summary: "Electra Therapeutics, Inc., of South San Francisco, filed for an initial public offering in August 2026. It says it commenced operations in 2018 and develops antibodies against signal regulatory proteins (SIRP) to deplete disease-driving immune cells selectively. Its lead candidate, ipsoprubart, is a pan-SIRP antibody with an enhanced-effector Fc domain, in SURPASS, a global phase 2/3 registrational trial in newly diagnosed secondary haemophagocytic lymphohistiocytosis. In oncology, the company reports that eight patients with T or natural killer cell malignancies treated in its phase 1b trial and expanded access programme had tumour responses, and it has started a phase 1 trial of ipsoprubart alone in relapsed or refractory T and natural killer cell malignancies, with initial data expected in the second half of 2027. A second antibody, specific to SIRP gamma, is in a phase 1 trial in healthy volunteers for immune diseases.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 14 September 2026. Response figures are from a small group of eight patients and are the company's own. No SIRP beta or gamma target record exists in OnCo; SIRPA is the nearest."],
+    links: [{ label: "SEC: Electra Therapeutics Form S-1/A, September 2026", url: F.electra }, { label: "Official website", url: "https://www.electra-therapeutics.com/" }] }),
+  d({ id: "ipsoprubart", name: "Ipsoprubart", aka: ["ELA026"], modality: "Monoclonal antibody (pan-SIRP, enhanced effector function)", status: "phase-2",
+    mechanism: "A pan-SIRP monoclonal antibody binding SIRP alpha (SIRPA), beta 1 and gamma, engineered with an enhanced-effector Fc domain to deplete pathological myeloid cells and T cells, as described by Electra Therapeutics.",
+    tldr: "Ipsoprubart is an antibody from Electra Therapeutics that removes overactive immune cells. Besides a severe inflammatory syndrome, it is in an early trial in lymphomas and leukaemias of T cells and natural killer cells.",
+    summary: "Ipsoprubart, formerly ELA026, is Electra Therapeutics' lead antibody. It is in SURPASS, a global phase 2/3 registrational trial in newly diagnosed secondary haemophagocytic lymphohistiocytosis, with enrolment expected to complete in the second half of 2027. Electra reports that in eight patients with T or natural killer cell malignancies treated in its phase 1b trial and expanded access programme, all had an objective tumour response and seven a complete response, and it has initiated a phase 1 monotherapy trial in relapsed or refractory T and natural killer cell malignancies.",
+    targets: ["sirpa"], cancers: [], companies: ["electra-therapeutics"],
+    links: [{ label: "SEC: Electra Therapeutics Form S-1/A, September 2026", url: F.electra }] }),
+
+  // NuvOx Therapeutics
+  s({ id: "nuvox-therapeutics", name: "NuvOx Therapeutics", aka: ["NuvOx Therapeutics, Inc.", "NuvOx LLC"], hq: "Tucson, AZ", country: "US", companyType: "biotech", stage: "public", ticker: "NUOX", website: "https://www.nuvoxtherapeutics.com/",
+    sections: ["radiation"], technologies: ["radiosensitisers", "tumour-hypoxia-modification"], drugs: ["nano2"],
+    tldr: "NuvOx Therapeutics is an Arizona company developing NanO2, an infusion that carries extra oxygen into tissues. In cancer it is being tested to make radiotherapy work better against glioblastoma, a brain tumour that is often short of oxygen.",
+    summary: "NuvOx Therapeutics, Inc., of Tucson, Arizona, develops oxygen therapeutics for conditions where hypoxia matters. Its product candidate NanO2 is an intravenous emulsion of dodecafluoropentane whose nano-sized droplets turn to gas at body temperature and deliver oxygen to tissue. In oncology it is developed as a radiotherapy sensitiser, because hypoxic tumours respond less well to radiation. The company states that NanO2 has completed phase 1/2a trials in acute ischaemic stroke and in glioblastoma, that the FDA has allowed phase 2b trials in both, and that it received orphan drug designation for glioblastoma in 2015. The phase 2 RESTORE trial (NCT03862430) tests NanO2 with radiotherapy and temozolomide in newly diagnosed glioblastoma.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 29 October 2026. RESTORE is registered on ClinicalTrials.gov by NuvOx LLC."],
+    links: [{ label: "SEC: NuvOx Therapeutics Form S-1/A, October 2026", url: F.nuvox }, { label: "Official website", url: "https://www.nuvoxtherapeutics.com/" }] }),
+  d({ id: "nano2", name: "NanO2", aka: ["dodecafluoropentane emulsion", "DDFPe"], modality: "Intravenous oxygen therapeutic used as a radiosensitiser (dodecafluoropentane emulsion)", status: "phase-2",
+    mechanism: "An emulsion of dodecafluoropentane droplets about 30 times smaller in diameter than a red blood cell, which turn to gas at body temperature and carry oxygen into hypoxic tissue; in cancer it is meant to raise tumour oxygen so radiotherapy generates more free radicals, as described by NuvOx Therapeutics.",
+    tldr: "NanO2 is an oxygen-carrying infusion from NuvOx Therapeutics, given alongside radiotherapy to make it work better in tumours that are short of oxygen. It is in a trial in newly diagnosed glioblastoma.",
+    summary: "NanO2 is NuvOx Therapeutics' dodecafluoropentane emulsion. NuvOx states that it has been given in completed phase 1/2a trials in acute ischaemic stroke and glioblastoma, that the FDA has allowed phase 2b trials in both, and that it received orphan drug designation for the treatment of glioblastoma in 2015 and for sickle cell anaemia in 2016. The phase 2 RESTORE trial (NCT03862430) compares NanO2 with saline placebo alongside radiotherapy and temozolomide in newly diagnosed glioblastoma.",
+    targets: [], cancers: ["glioblastoma"], companies: ["nuvox-therapeutics"], trials: ["nct03862430"], technologies: ["radiosensitisers"],
+    regulatoryEvents: [{ date: "2015", type: "designation", region: "US", note: "FDA orphan drug designation, as stated in the company's registration statement", indication: "Treatment of glioblastoma (GBM)", source: F.nuvox }],
+    links: [{ label: "SEC: NuvOx Therapeutics Form S-1/A, October 2026", url: F.nuvox }, { label: "ClinicalTrials.gov: RESTORE (NCT03862430)", url: "https://clinicaltrials.gov/study/NCT03862430" }] }),
+
+  // Adaptin Bio
+  s({ id: "adaptin-bio", name: "Adaptin Bio", aka: ["Adaptin Bio, Inc."], hq: "Charlotte, NC", country: "US", companyType: "biotech", stage: "public", ticker: "APTN", website: "https://www.adaptinbio.com/",
+    sections: ["immunotherapy"], technologies: ["t-cell-engager", "bispecific-antibody"], targets: ["cd3"], drugs: ["aptn-101"],
+    tldr: "Adaptin Bio is a North Carolina company working on ways to get immune treatments past the barrier that protects the brain. Its first medicine, APTN-101, is in an early trial at Duke University in glioblastoma.",
+    summary: "Adaptin Bio, Inc., of Charlotte, North Carolina, develops technology originally from the Department of Neurosurgery at Duke University, led by John H. Sampson, that uses activated T cells to carry bound molecules across the blood-brain barrier. Its first platform, BRiTE (Brain Bispecific T-cell Engager), pairs this with a tumour-specific, fully human bispecific antibody. The first product, APTN-101, is an EGFRvIII x CD3 BRiTE. The FDA accepted an investigator-initiated IND in May 2023 and a multi-dose amendment in October 2025, and in August 2026 Duke opened an investigator-initiated phase 1 trial of hEGFRvIII-CD3 bi-scFv in WHO grade 4 malignant glioma.",
+    notes: ["Read on 4 November 2026 in the S-1 filed with the SEC on 28 August 2026. The trial registry number is not given in the filing."],
+    links: [{ label: "SEC: Adaptin Bio Form S-1, August 2026", url: F.adaptin }, { label: "Official website", url: "https://www.adaptinbio.com/" }] }),
+  d({ id: "aptn-101", name: "APTN-101", code: "APTN-101", aka: ["hEGFRvIII-CD3 bi-scFv", "EGFRvIII BRiTE"], modality: "Bispecific T cell engager (EGFRvIII x CD3)", status: "phase-1",
+    mechanism: "A fully human bispecific single-chain antibody that binds EGFRvIII, a mutant form of EGFR found on tumour cells, and CD3 on T cells, redirecting the patient's T cells to kill the tumour; Adaptin Bio's BRiTE approach uses activated T cells to carry it into the brain.",
+    tldr: "APTN-101 is a two-armed antibody from Adaptin Bio that steers a patient's own T cells against brain tumour cells carrying a faulty growth receptor. It is in a first trial in people with glioblastoma at Duke University.",
+    summary: "APTN-101 is Adaptin Bio's EGFRvIII x CD3 bispecific (BRiTE). The FDA accepted an investigator-initiated IND for a single-dose trial in May 2023 and a multi-dose amendment in October 2025; institutional review board approval for the multi-dose trial in glioblastoma came in March 2026, and Duke University opened the investigator-initiated phase 1 trial, \"A Phase I Study of hEGFRvIII-CD3 bi-scFv (BRiTE) in Patients with WHO Grade IV Malignant Glioma\", in August 2026.",
+    targets: ["cd3"], terms: ["egfrviii"], cancers: [], companies: ["adaptin-bio"], technologies: ["t-cell-engager"],
+    links: [{ label: "SEC: Adaptin Bio Form S-1, August 2026", url: F.adaptin }] }),
+
+  // Ionetix
+  s({ id: "ionetix", name: "Ionetix", aka: ["Ionetix Corporation", "Ionetix Corp"], founded: 2009, hq: "Lansing, MI", country: "US", companyType: "radiopharma", stage: "growth", website: "https://www.ionetix.com/",
+    sections: ["radiopharma", "imaging"], technologies: ["actinium-225-supply", "cyclotron-isotope-production", "astatine-211-alpha-therapy"],
+    tldr: "Ionetix is a Michigan company that makes radioactive isotopes with compact cyclotrons. It supplies isotopes for PET scans and produces the alpha-emitting isotopes actinium-225 and astatine-211 that newer cancer radiotherapy drugs are built on.",
+    summary: "Ionetix Corporation, of Lansing, Michigan, incorporated in Delaware in 2009 to develop smaller superconducting cyclotrons, filed for an initial public offering in October 2026. Its cyclotrons are cryogen-free and need no liquid helium. In diagnostics it produces ammonia N-13 at nine production sites under an Abbreviated New Drug Application, and other PET isotopes including fluorine-18 and gallium-68. In therapeutics it produces the alpha-emitting isotopes actinium-225, using a cyclotron bought from a third-party maker, and astatine-211 for use in oncology therapeutics. The company says it no longer intends to sell cyclotrons.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 30 October 2026. Ionetix supplies isotopes rather than medicines, so no product record is written."],
+    links: [{ label: "SEC: Ionetix Form S-1/A, October 2026", url: F.ionetix }, { label: "Official website", url: "https://www.ionetix.com/" }] }),
+
+  // GT Biopharma
+  s({ id: "gt-biopharma", name: "GT Biopharma", aka: ["GT Biopharma, Inc."], hq: "San Francisco, CA", country: "US", companyType: "biotech", stage: "public", ticker: "GTBP", website: "https://www.gtbiopharma.com/",
+    sections: ["immunotherapy"], technologies: ["nk-cell-engagers"], targets: ["cd33", "b7h3"], drugs: ["gtb-3650", "gtb-5550"],
+    tldr: "GT Biopharma is a San Francisco company making proteins that switch on a patient's own natural killer cells, a kind of immune cell, and point them at cancer. Its two lead medicines are in early trials in leukaemia and in solid tumours.",
+    summary: "GT Biopharma, Inc., of San Francisco, develops Tri-specific Killer Engager (TriKE) fusion proteins, licensed from work led by Jeffrey Miller at the Masonic Cancer Center of the University of Minnesota. Each binds CD16 on natural killer cells, a tumour antigen, and carries IL-15 to drive natural killer cell expansion; the company states its second-generation camelid nanobody TriKEs are 10 to 40 times more potent than the first. On its pipeline page, GTB-3650 (CD33) is in a phase 1 dose-escalation trial in relapsed or refractory CD33-expressing leukaemias and high-risk myelodysplastic syndrome (NCT06594445), and GTB-5550 (B7-H3), given under the skin, dosed its first patient in a phase 1 basket trial in solid tumours in May 2026 (NCT07541573).",
+    notes: ["The October 2026 S-1 describes the TriKE platform and the University of Minnesota trial agreements but names no candidate; candidates, phases and trial numbers were read on the company's pipeline page on 4 November 2026. Neither trial has an OnCo record."],
+    links: [{ label: "SEC: GT Biopharma Form S-1, October 2026", url: F.gtb }, { label: "GT Biopharma: product pipeline", url: F.gtbPipeline }, { label: "Official website", url: "https://www.gtbiopharma.com/" }] }),
+  d({ id: "gtb-3650", name: "GTB-3650", code: "GTB-3650", aka: ["GTB-3650 TriKE"], modality: "Tri-specific natural killer cell engager (camelid nanobody)", status: "phase-1",
+    mechanism: "A single fusion protein of a camelid nanobody against CD16 on natural killer cells, a single-chain variable fragment against CD33 on tumour cells, and wild-type human IL-15 to drive natural killer cell expansion, as described by GT Biopharma.",
+    tldr: "GTB-3650 is a protein from GT Biopharma that wakes up natural killer cells and points them at leukaemia cells carrying the CD33 marker. It is in a first trial in people whose leukaemia has come back.",
+    summary: "GTB-3650 is GT Biopharma's first second-generation camelid nanobody TriKE. The IND was cleared and enrolment began on 21 January 2025 in a phase 1 dose-escalation study (NCT06594445) in relapsed or refractory CD33-expressing haematological cancers, including refractory acute myeloid leukaemia and high-risk myelodysplastic syndrome, with up to seven cohorts of two patients and dosing in two-week blocks for up to four months.",
+    targets: ["cd33"], cancers: [], companies: ["gt-biopharma"], technologies: ["nk-cell-engagers"],
+    links: [{ label: "GT Biopharma: product pipeline", url: F.gtbPipeline }, { label: "ClinicalTrials.gov: NCT06594445", url: "https://clinicaltrials.gov/study/NCT06594445" }] }),
+  d({ id: "gtb-5550", name: "GTB-5550", code: "GTB-5550", aka: ["GTB-5550 TriKE"], modality: "Tri-specific natural killer cell engager (dual camelid nanobody, subcutaneous)", status: "phase-1",
+    mechanism: "A single-chain fusion of a camelid nanobody against CD16 on natural killer cells, wild-type IL-15, and a camelid nanobody against B7-H3 on tumour cells, as described by GT Biopharma.",
+    tldr: "GTB-5550 is a protein from GT Biopharma, given as an injection under the skin, that wakes up natural killer cells and points them at tumour cells carrying the B7-H3 marker. It is in a first trial in several solid tumours.",
+    summary: "GTB-5550 is GT Biopharma's dual-nanobody TriKE against B7-H3. Its phase 1 basket trial (NCT07541573) dosed the first patient in May 2026; up to six dose levels are tested before expansion cohorts in castration-resistant prostate, ovarian, breast, head and neck, non-small cell lung, pancreatic and bladder cancer. In September 2026 the company announced multiple myeloma as a potential further indication.",
+    targets: ["b7h3"], cancers: [], companies: ["gt-biopharma"], technologies: ["nk-cell-engagers"],
+    links: [{ label: "GT Biopharma: product pipeline", url: F.gtbPipeline }, { label: "ClinicalTrials.gov: NCT07541573", url: "https://clinicaltrials.gov/study/NCT07541573" }] }),
+
+  // Propanc Biopharma
+  s({ id: "propanc-biopharma", name: "Propanc Biopharma", aka: ["Propanc Biopharma, Inc.", "Propanc PTY LTD"], founded: 2007, hq: "Camberwell, Victoria", country: "AU", companyType: "biotech", stage: "public", ticker: "PPCB", website: "https://www.propanc.com/",
+    sections: ["targeted-therapy"], drugs: ["propanc-prp"],
+    tldr: "Propanc Biopharma is an Australian company developing PRP, a mixture of two inactive digestive enzymes intended to slow tumour growth and spread. PRP has not yet been given to patients in a trial.",
+    summary: "Propanc Biopharma, Inc. was formed in Melbourne in October 2007 and has its principal office in Camberwell, Victoria. It describes itself as a development-stage company focused on treatments for pancreatic, ovarian and colorectal cancer. Its lead candidate PRP combines the pancreatic proenzymes trypsinogen and chymotrypsinogen. The FDA granted PRP orphan drug designation for pancreatic cancer in June 2017; the company has prepared assays and bought raw materials for a first-in-human phase 1b study in advanced cancer, and is developing a synthetic recombinant version with the Universities of Jaén and Granada.",
+    notes: ["Read on 4 November 2026 in the S-1 filed with the SEC on 5 October 2026. The filing reports no trial of PRP in patients."],
+    links: [{ label: "SEC: Propanc Biopharma Form S-1, October 2026", url: F.propanc }, { label: "Official website", url: "https://www.propanc.com/" }] }),
+  d({ id: "propanc-prp", name: "PRP (Propanc proenzyme therapy)", aka: ["PRP", "trypsinogen and chymotrypsinogen"], modality: "Proenzyme therapy (trypsinogen and chymotrypsinogen)", status: "preclinical",
+    mechanism: "A combination of the pancreatic proenzymes trypsinogen and chymotrypsinogen, the inactive precursors of digestive enzymes, which Propanc Biopharma says produces multiple effects on cancer cells intended to inhibit tumour growth and spread.",
+    tldr: "PRP is a mixture of two inactive digestive enzymes from Propanc Biopharma, intended to slow tumour growth and spread. It is still being prepared for a first trial in people.",
+    summary: "PRP is Propanc Biopharma's lead candidate, a formulation of trypsinogen and chymotrypsinogen. The FDA granted it orphan drug designation for the treatment of pancreatic cancer in June 2017. Propanc reports laboratory and dose range-finding studies, a GMP manufacturing process and a bio-analytical assay prepared for a phase 1b first-in-human study in advanced cancer patients, which had not begun when the October 2026 registration statement was filed.",
+    targets: [], cancers: ["pancreatic"], companies: ["propanc-biopharma"],
+    regulatoryEvents: [{ date: "2017-06", type: "designation", region: "US", note: "FDA orphan drug designation, as stated in the company's registration statement", indication: "Treatment of pancreatic cancer", source: F.propanc }],
+    links: [{ label: "SEC: Propanc Biopharma Form S-1, October 2026", url: F.propanc }] }),
+
+  // Biodexa Pharmaceuticals
+  s({ id: "biodexa-pharmaceuticals", name: "Biodexa Pharmaceuticals", aka: ["Biodexa Pharmaceuticals PLC"], hq: "Cardiff", country: "GB", companyType: "biotech", stage: "public", ticker: "BDRX", website: "https://www.biodexapharma.com/",
+    sections: ["targeted-therapy", "prevention"], targets: ["mtor", "kit"], drugs: ["erapa", "mtx240"],
+    tldr: "Biodexa Pharmaceuticals is a Cardiff company developing eRapa, a new form of the drug rapamycin, in a large trial for an inherited condition that causes bowel polyps and cancer, and MTX240, an early drug for gastrointestinal stromal tumour.",
+    summary: "Biodexa Pharmaceuticals PLC, of Cardiff, describes a pipeline for gastrointestinal stromal tumour (GIST), familial adenomatous polyposis (FAP), non-muscle invasive bladder cancer and type 1 diabetes. In April 2024 it licensed eRapa, an encapsulated formulation of the mTOR inhibitor rapamycin, from Emtora Biosciences. A registrational phase 3 trial of eRapa in FAP, 168 patients randomised 2:1 against placebo at about 30 sites in the United States and Europe and funded largely by grants from the Cancer Prevention and Research Institute of Texas, passed the half-way point of recruitment in August 2026; a phase 2 investigator-initiated trial in non-muscle invasive bladder cancer is run by the University of Texas, San Antonio. In February 2026 it licensed MTX240 from Otsuka, a molecular glue for GIST.",
+    notes: ["Read on 4 November 2026 in the F-1 filed with the SEC on 24 September 2026. The filing reports FDA fast track designation for eRapa in February 2025 without naming the indication in the passage read, so no dated designation is recorded. Trial registry numbers are not given in the passage read."],
+    links: [{ label: "SEC: Biodexa Pharmaceuticals Form F-1, September 2026", url: F.biodexa }, { label: "Official website", url: "https://www.biodexapharma.com/" }] }),
+  d({ id: "erapa", name: "eRapa", aka: ["encapsulated rapamycin"], modality: "mTOR inhibitor (encapsulated rapamycin formulation)", status: "phase-3",
+    mechanism: "A formulation of rapamycin, an mTOR inhibitor, using nanotechnology and pH-sensitive polymers to improve its bioavailability and reduce variable pharmacokinetics and toxicity, as described by Biodexa Pharmaceuticals.",
+    tldr: "eRapa is a new form of the drug rapamycin from Biodexa Pharmaceuticals, designed to be absorbed more reliably. It is in a large trial in an inherited condition that causes many bowel polyps, and a smaller trial in early bladder cancer.",
+    summary: "eRapa, licensed by Biodexa Pharmaceuticals from Emtora Biosciences in April 2024, is in a double-blind, placebo-controlled registrational phase 3 study in 168 patients with familial adenomatous polyposis, randomised 2:1, at about 30 sites in the United States and Europe; the first patients enrolled in August 2025 and recruitment passed the half-way point in August 2026. An investigator-initiated phase 2 study in non-muscle invasive bladder cancer is being conducted by the University of Texas, San Antonio. Biodexa announced FDA fast track designation for eRapa on 10 February 2025.",
+    targets: ["mtor"], cancers: [], companies: ["biodexa-pharmaceuticals"], related: ["sirolimus"],
+    links: [{ label: "SEC: Biodexa Pharmaceuticals Form F-1, September 2026", url: F.biodexa }] }),
+  d({ id: "mtx240", name: "MTX240", code: "MTX240", aka: ["OPB-171775"], modality: "Small-molecule molecular glue", status: "preclinical",
+    mechanism: "A molecular glue that brings together PDE3A and SLFN12, co-expressed in GIST cells, stabilising SLFN12 so that it drives RNase-mediated cell death independently of KIT signalling, as described by Biodexa Pharmaceuticals.",
+    tldr: "MTX240 is an early drug from Biodexa Pharmaceuticals for gastrointestinal stromal tumour that kills tumour cells by a route that does not depend on the KIT protein, which matters once standard tablets stop working.",
+    summary: "MTX240, formerly OPB-171775, was licensed by Biodexa Pharmaceuticals from Otsuka in February 2026. Otsuka assembled a preclinical package and obtained approval for a phase 1 study from Japan's PMDA. Biodexa's first priorities are clinical trial manufacturing, an IND filing and a phase 1b/2a dose-escalation study in GIST, including tumours resistant to tyrosine kinase inhibitors.",
+    targets: [], cancers: [], companies: ["biodexa-pharmaceuticals"], technologies: ["molecular-glue-platforms"],
+    links: [{ label: "SEC: Biodexa Pharmaceuticals Form F-1, September 2026", url: F.biodexa }] }),
+
+  // Tempest Therapeutics
+  s({ id: "tempest-therapeutics", name: "Tempest Therapeutics", aka: ["Tempest Therapeutics, Inc."], hq: "Brisbane, CA", country: "US", companyType: "biotech", stage: "public", ticker: "TPST", website: "https://www.tempesttx.com/",
+    sections: ["cell-therapy"], technologies: ["car-t", "in-vivo-car-t"], targets: ["cd19", "bcma"], drugs: ["tpst-4003", "tpst-2003"],
+    tldr: "Tempest Therapeutics is a California company developing CAR-T cell treatments, immune cells engineered to find cancer, that target two markers at once. One is made inside the body; the other, made from a patient's own cells, is being tested in multiple myeloma.",
+    summary: "Tempest Therapeutics, Inc., of Brisbane, California, describes in its August 2026 registration statement a pipeline of chimeric antigen receptor T cell candidates. Its lead programme, TPST-4003, is a dual CD19 and BCMA in vivo CAR-T candidate for immunology and oncology. In February 2026 it acquired rights to a dual-targeting CAR-T platform including TPST-2003, an autologous CD19 and BCMA CAR-T therapy in clinical development for relapsed or refractory multiple myeloma and POEMS syndrome.",
+    notes: ["Read on 4 November 2026 in the S-1 filed with the SEC on 21 August 2026, a resale registration that incorporates the annual report by reference. The filing does not give phases or trial numbers for either candidate."],
+    links: [{ label: "SEC: Tempest Therapeutics Form S-1, August 2026", url: F.tempest }, { label: "Official website", url: "https://www.tempesttx.com/" }] }),
+  d({ id: "tpst-4003", name: "TPST-4003", code: "TPST-4003", modality: "In vivo CAR-T (dual CD19 and BCMA)",
+    mechanism: "A dual-targeting CD19 and BCMA chimeric antigen receptor generated in the patient's own T cells inside the body, as described by Tempest Therapeutics.",
+    tldr: "TPST-4003 is a treatment from Tempest Therapeutics meant to turn a patient's T cells into cancer-hunting CAR-T cells inside the body, aimed at two markers on B cells and plasma cells.",
+    summary: "TPST-4003 is Tempest Therapeutics' lead programme, a dual CD19 and BCMA in vivo CAR-T candidate that Tempest is developing for indications in immunology and oncology. The August 2026 registration statement does not state its stage.",
+    targets: ["cd19", "bcma"], cancers: [], companies: ["tempest-therapeutics"], technologies: ["in-vivo-car-t"],
+    links: [{ label: "SEC: Tempest Therapeutics Form S-1, August 2026", url: F.tempest }] }),
+  d({ id: "tpst-2003", name: "TPST-2003", code: "TPST-2003", modality: "Autologous CAR-T (dual CD19 and BCMA)",
+    mechanism: "An autologous T cell therapy carrying a dual-targeting CD19 and BCMA chimeric antigen receptor, as described by Tempest Therapeutics.",
+    tldr: "TPST-2003 is a CAR-T cell treatment, made from a patient's own immune cells, from Tempest Therapeutics. It targets two markers and is being tested in multiple myeloma that has come back.",
+    summary: "TPST-2003 is an autologous CD19 and BCMA CAR-T therapy whose rights Tempest Therapeutics acquired in February 2026. Tempest describes it as in clinical development for relapsed or refractory multiple myeloma and for POEMS syndrome, a rare plasma cell disorder; the filing does not state the phase.",
+    targets: ["cd19", "bcma"], cancers: [], companies: ["tempest-therapeutics"], technologies: ["car-t"],
+    links: [{ label: "SEC: Tempest Therapeutics Form S-1, August 2026", url: F.tempest }] }),
+
+  // Onconetix
+  s({ id: "onconetix", name: "Onconetix", aka: ["Onconetix, Inc.", "Proteomedix AG"], hq: "Cincinnati, OH", country: "US", companyType: "diagnostics", stage: "public", ticker: "ONCO", website: "https://www.onconetix.com/",
+    sections: ["diagnostics", "early-detection"], technologies: ["prostate-screening-psa-mri"], drugs: ["proclarix"],
+    tldr: "Onconetix is a Cincinnati company that owns Proclarix, a blood test that helps decide whether a man with an unclear PSA result needs a prostate biopsy. The test is sold in Europe.",
+    summary: "Onconetix, Inc., of Cincinnati, was incorporated in October 2018 and acquired Proteomedix AG in December 2023, gaining Proclarix, a protein-based blood test for prostate cancer approved for sale in the European Union under the In Vitro Diagnostic Regulation. The company expects Proclarix to be marketed in the United States as a laboratory-developed test under a licence to Labcorp. It abandoned commercialisation of ENTADFI, a finasteride and tadalafil pill for benign prostatic hyperplasia, and no longer holds inventory.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 31 August 2026. The filing does not give the year of European approval."],
+    links: [{ label: "SEC: Onconetix Form S-1/A, August 2026", url: F.onconetix }, { label: "Official website", url: "https://www.onconetix.com/" }] }),
+  d({ id: "proclarix", name: "Proclarix", related: ["prolaris"], modality: "Blood protein biomarker test (prostate cancer risk score)", status: "established",
+    mechanism: "A multiparametric protein blood test run on the same sample as a PSA test, which combines its markers into the Proclarix Risk Score to help decide whether a biopsy is needed in men with PSA in the diagnostic grey zone, as described by Onconetix.",
+    tldr: "Proclarix is a blood test from Onconetix for men whose PSA result is unclear. It gives a risk score to help decide whether a prostate biopsy is needed.",
+    summary: "Proclarix, developed by Proteomedix and owned by Onconetix, is CE-marked and approved for sale in the European Union under the In Vitro Diagnostic Regulation. It is intended for men with elevated PSA in the diagnostic grey zone, where deciding whether a biopsy is needed is difficult. Onconetix cites a published 371-man cohort in which Proclarix ruled out clinically insignificant or absent prostate cancer with a low risk of missing clinically significant cancer, and a 2026 study of 132 men under active surveillance. In the United Kingdom a patient organisation offers it within a screening initiative, with about 100 tests carried out by 31 March 2026. Onconetix expects US marketing as a laboratory-developed test through Labcorp.",
+    targets: [], cancers: [], companies: ["onconetix"], technologies: ["prostate-screening-psa-mri"],
+    links: [{ label: "SEC: Onconetix Form S-1/A, August 2026", url: F.onconetix }] }),
+
+  // Interpace Biosciences
+  s({ id: "interpace-biosciences", name: "Interpace Biosciences", aka: ["Interpace Biosciences, Inc."], hq: "Parsippany, NJ", country: "US", companyType: "diagnostics", stage: "public", ticker: "IDXG", website: "https://www.interpace.com/",
+    sections: ["diagnostics"], technologies: ["thyroid-fna-molecular"], drugs: ["thygenext", "thyramir-v2"],
+    tldr: "Interpace Biosciences is a New Jersey laboratory company whose genetic tests help doctors judge whether a thyroid nodule with unclear biopsy results is likely to be cancer.",
+    summary: "Interpace Biosciences, Inc., of Parsippany, New Jersey, provides molecular diagnostic testing and pathology services for patients with indeterminate biopsies. After Medicare stopped covering its pancreatic cyst test on 24 April 2025, it stopped accepting those specimens in May 2025 and now concentrates on its thyroid tests ThyGeNEXT and ThyraMIR v2, used together on indeterminate thyroid nodules; Labcorp was its largest customer for them in 2025 and the first half of 2026. It is developing a new test for the risk of pancreatic cyst progression to cancer, which it expects to take 12 to 24 months, and names Barrett's oesophagus as a second target for a new test.",
+    notes: ["Read on 4 November 2026 in the S-1/A filed with the SEC on 30 October 2026."],
+    links: [{ label: "SEC: Interpace Biosciences Form S-1/A, October 2026", url: F.interpace }, { label: "Official website", url: "https://www.interpace.com/" }] }),
+  d({ id: "thygenext", name: "ThyGeNEXT", modality: "Thyroid nodule DNA and RNA sequencing panel (oncogenes and fusions)", status: "established",
+    mechanism: "A next-generation DNA and RNA sequencing panel of the commonest thyroid cancer mutations and mRNA fusions, including RET and NTRK, whose result is combined with the ThyraMIR v2 microRNA test, as described by Interpace Biosciences.",
+    tldr: "ThyGeNEXT is a genetic test from Interpace Biosciences, run on a thyroid nodule sample, that looks for the mutations most often found in thyroid cancer.",
+    summary: "ThyGeNEXT is Interpace Biosciences' oncogene and mRNA fusion panel for indeterminate thyroid nodules, those cytology cannot call benign or malignant. Interpace states the markers inform diagnosis, prognosis and treatment aligned to FDA-approved therapies for RET, NTRK and other alterations. Its result is combined with ThyraMIR v2 to refine the malignancy risk.",
+    targets: [], cancers: [], companies: ["interpace-biosciences"], drugs: ["thyramir-v2"], technologies: ["thyroid-fna-molecular"],
+    links: [{ label: "SEC: Interpace Biosciences Form S-1/A, October 2026", url: F.interpace }] }),
+  d({ id: "thyramir-v2", name: "ThyraMIR v2", modality: "Thyroid nodule microRNA expression test", status: "established",
+    mechanism: "An algorithmic, pairwise microRNA expression analysis that refines the malignancy risk of an indeterminate thyroid nodule when combined with the ThyGeNEXT mutation panel, as described by Interpace Biosciences.",
+    tldr: "ThyraMIR v2 is a test from Interpace Biosciences that measures small RNA molecules in a thyroid nodule sample to help judge how likely it is to be cancer.",
+    summary: "ThyraMIR v2 is Interpace Biosciences' microRNA-based endocrine cancer test, used with ThyGeNEXT on indeterminate thyroid nodules. Interpace reports that Labcorp was the largest customer for the pair in 2025 and the first half of 2026.",
+    targets: [], cancers: [], companies: ["interpace-biosciences"], drugs: ["thygenext"], technologies: ["thyroid-fna-molecular"],
+    links: [{ label: "SEC: Interpace Biosciences Form S-1/A, October 2026", url: F.interpace }] }),
+];

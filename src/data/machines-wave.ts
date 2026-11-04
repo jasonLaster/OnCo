@@ -107,7 +107,7 @@ export const machineTechnologies: TechnologyInput[] = [
     strengths: ["More complete glioma resection in a randomised trial", "Updates navigation after brain shift", "Confirms implants in spinal tumour surgery"],
     limitations: ["Expensive suite and compatible instruments", "Longer operations", "No direct evidence of longer survival"],
     cancers: ["glioblastoma", "brain-tumours", "pituitary-tumours", "paediatric-low-grade-glioma", "sarcoma"], technologies: ["mri", "ct", "fluorescence-guided-surgery"], related: ["mri-field-strengths", "litt"],
-    companies: ["siemens-healthineers", "ge-healthcare", "philips", "brainlab", "medtronic"],
+    companies: ["siemens-healthineers", "ge-healthcare", "philips", "brainlab", "medtronic", "aim-medical-robotics"],
     links: [{ label: "Senft et al., Intraoperative MRI guidance and extent of resection in glioma surgery (Lancet Oncology 2011)", url: "https://doi.org/10.1016/S1470-2045(11)70196-6" }, { label: "Wikipedia", url: W("Intraoperative_MRI") }] }),
 
   // ======================= RADIOTHERAPY MACHINES =======================

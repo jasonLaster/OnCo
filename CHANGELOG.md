@@ -7,15 +7,20 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
+- Add sourced RGCC International evidence coverage
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- chore: draft change proposals that need review (#344)
 
 ### 3 November 2026
+- Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 - Every figure on the country pages and the 60 most-read cancer pages read against its source: 23 per cent needed a fix, and four checks now stop the commonest faults coming back
 - Review-list judgements from labels, registries and filings: drugs link the receptor they bind, an investor and a trials group no longer pose as makers, sponsors resolve to their own centres, ten company pages corrected, and two duplicate products cross-referenced with a merge plan
 - Accuracy round one fixes wrong paper ids, trials and side-effect figures; 28 FDA companion diagnostics and 11 tumour tests, FDA, EMA and WHO coverage lists, about 270 wrong links corrected, and deals and regimens linked to their records
 - Readout pages keep tests and medicines apart: devices name their readouts, test cancer links rest on coverage, trials or papers, and three devices are credited to their FDA applicants
+- The ten new country pages were checked against their sources, with 151 faulty claims fixed and every funding row corrected
+- The open drug engine pages carry the same look in short classes, so the small-molecule page drops from 468,848 to 411,819 bytes of markup
 - Every drug side-effect rate now names its source: the last 143 unsourced rows read against FDA labels and trial papers, and the count held at zero
 - Keep GC012F and AZD0120 as separate records for now: merging them adds a site redirect, which waits for the owner
 - Seven regulator and knowledge-base universe lists, FDA oncology approvals since 2020 as dated events, the missing FDA companion diagnostic rows, and nine medicines the EMA, FDA and WHO lists hold
@@ -25,14 +30,19 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - A read-only gap audit ranks what reader pages leave out, and page sections gathered from the corpus wait at /admin/ for approval
 - Tumour profiling tests and companion diagnostic devices get their own pages: FoundationOne Heme, Caris MI Profile, OncoExTra, OmniSeq INSIGHT, Tumor Portrait, Altera, TruSight Oncology 500, Strata Select, Tempus xE, NeoGenomics Neo Comprehensive and PanTracer, and 28 FDA companion diagnostic devices
 - The first measured accuracy sample: 182 claims read against their sources, the errors fixed, and guards for the patterns found
+- The Signatera merge test follows the readout record, which no longer lists the assay row
+- Readout, technology and company sections gather their members from the corpus by a stated rule, one item per product
 - A read-only gap audit lists what reader pages leave out, ranked by pages affected
 - Every Medicare-covered MRD blood test now has its own page, including Foundation Medicine's FoundationOne MRD and Personalis NeXT Personal, with Oncodetect, Guardant Reveal and RaDaR corrected from their sources
 - Eight more ctDNA residual disease tests get sourced records (FoundationOne MRD, NeXT Personal, Haystack MRD, NavDx, Labcorp Plasma Detect, Precise MRD, TrueMRD, Tempus xM), and Oncodetect, Guardant Reveal and RaDaR ST are re-sourced
 - Ten country deep dives wait at /admin/ for approval, and the proposal script records its preview address
 - Weekly watch for new oncology startups across fifteen sources and for landmark cancer papers, the Nature lung Treg interception paper, and the GLOBOCAN all-cancers note corrected to include non-melanoma skin cancer
+- GLOBOCAN's all-cancers figures include non-melanoma skin cancer; say so
+- Country deep dives for Australia, Spain, Brazil, Sweden and Switzerland, each read from its own registry, payer and regulator
 - A weekly landmark-paper watch proposes new oncology papers for review, and the Nature regulatory T cell interception paper is added
 - Startup monitors read portfolios, SEC filings, HKEX 18A, orphan designations and NCI small-business awards into the freshness issue
 - 36 multi-cancer early detection tests, the Prometheus gaps filled, rare lymphomas linked to their trials, sixteen companies brought up to date and imaging agents given approval rows
+- France, Canada, Italy, the Netherlands and South Korea, each read from its own national sources
 - Add Selvana and Jiyu Bio, freshen sixteen large companies, name nine drugs' targets and give imaging agents regional approval rows
 - Lymphoma: trials and papers for the entity pages the taxonomy added, and two corrections
 - OpenOnco joins the open-source catalogue (PR 290), and the Open Medical Registry stays listed while its repository is private

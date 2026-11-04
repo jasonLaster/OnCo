@@ -125,6 +125,7 @@ describe("sponsor aliases match whole names, not fragments", () => {
     ["First Affiliated Hospital of Sun Yat-sen University", "sysucc"],
     ["Peking University People's Hospital", "pku-cancer-hospital"],
     ["Institute of Hematology and Blood Diseases Hospital, Chinese Academy of Medical Sciences", "cams-cancer-hospital"],
+    ["Alliance Against Cancer", "alliance-oncology"],
   ])("%s is not counted for %s", (name, wrong) => {
     expect(resolveSponsor(name).id).not.toBe(wrong);
   });
@@ -139,6 +140,7 @@ describe("sponsor aliases match whole names, not fragments", () => {
     ["Peking University Cancer Hospital & Institute", "pku-cancer-hospital"], ["Cancer Institute and Hospital, Chinese Academy of Medical Sciences", "cams-cancer-hospital"],
     ["Universitäres Centrum für Tumorerkrankungen Frankfurt", "uct-frankfurt"], ["Johann Wolfgang Goethe University Hospital", "uct-frankfurt"],
     ["PrECOG, LLC.", "ecog-acrin"], ["ECOG-ACRIN Cancer Research Group", "ecog-acrin"],
+    ["Alliance for Clinical Trials in Oncology", "alliance-oncology"], ["Alliance Foundation Trials, LLC.", "alliance-oncology"],
   ])("%s still resolves to %s", (name, id) => {
     expect(resolveSponsor(name).id).toBe(id);
   });

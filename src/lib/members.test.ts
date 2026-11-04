@@ -96,7 +96,8 @@ describe("row and assay resolution", () => {
     expect(rowRecord(row("foundationone-cdx"))?.id).toBe("foundationone-cdx");
     // FoundationOne Liquid CDx points at the record named "FoundationOne CDx / Liquid CDx": one product page, one item.
     expect(rowRecord(row("foundationone-liquid-cdx"))?.id).toBe("foundationone-cdx");
-    expect(rowRecord(row("bostongene-tumor-portrait"))).toBeUndefined();
+    // Tumor Portrait gained a product record on 3 November 2026, so its row now resolves to that page.
+    expect(rowRecord(row("bostongene-tumor-portrait"))?.id).toBe("bostongene-tumor-portrait");
   });
 
   it("an assay resolves to its reviewed pair, else to its one non-medicine product", () => {
@@ -127,7 +128,7 @@ describe("company and technology products", () => {
       for (const r of TUMOUR_TESTS.filter((x) => x.companyId === c.id)) expect(keys.includes(`row:${r.id}`) || keys.includes(r.drugId ?? ""), `${c.id}: row ${r.id}`).toBe(true);
     }
     expect(hasProduct(companyProducts(co("personalis")).map((i) => i.key), "next-personal")).toBe(true);
-    expect(companyProducts(co("foundation-medicine")).map((i) => i.key)).toEqual(expect.arrayContaining(["foundationone-cdx", "row:foundationone-heme"]));
+    expect(companyProducts(co("foundation-medicine")).map((i) => i.key)).toEqual(expect.arrayContaining(["foundationone-cdx", "foundationone-heme"]));
   });
 
   it("a technology page lists every product filed under it and every tumour-testing row filed under it", () => {

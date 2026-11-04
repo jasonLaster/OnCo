@@ -318,7 +318,8 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/children'?s oncology group|\bcog\b|children'?s cancer group|pediatric oncology group/, { id: "childrens-oncology-group", label: "Children's Oncology Group", kind: "cooperative-group" }],
   [/\becog\b|eastern cooperative|\bprecog\b/, { id: "ecog-acrin", label: "ECOG-ACRIN", kind: "cooperative-group" }],
   [/^swog|southwest oncology/, { id: "swog", label: "SWOG", kind: "cooperative-group" }],
-  [/^alliance|cancer and leukemia group b|\bcalgb\b/, { id: "alliance-oncology", label: "Alliance for Clinical Trials in Oncology", kind: "cooperative-group" }],
+  // "Alliance Against Cancer" is the English name of Italy's Alleanza Contro il Cancro, not the US group.
+  [/^alliance(?:$| for clinical trials in oncology\b| foundation trials\b| \/)|cancer and leukemia group b|\bcalgb\b/, { id: "alliance-oncology", label: "Alliance for Clinical Trials in Oncology", kind: "cooperative-group" }],
   [/gog foundation|gog partners/, { id: "gog-foundation", label: "GOG Foundation", kind: "cooperative-group" }],
   [/nsabp foundation/, { id: "nsabp-foundation", label: "NSABP Foundation", kind: "cooperative-group" }],
   [/nrg oncology|^rtog|radiation therapy oncology group|^gog\b|gynecologic oncology group|nsabp/, { id: "nrg-oncology", label: "NRG Oncology (RTOG, GOG, NSABP)", kind: "cooperative-group" }],

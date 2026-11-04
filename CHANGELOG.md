@@ -7,10 +7,15 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
-- 83 oncology companies and 68 products found by the startup monitors in SEC filings, FDA and EMA orphan designations and NCI small-business grants, and GLOBOCAN 2024 waiting at /admin/
+- Ultra-sensitive residual disease: eight more MRD assays including China's, the methods that read clones and phenotype from blood, TROP2 PET tracers, eleven trials and the limit on telling subclones apart; and 47 portfolio companies the monitors found
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- Three new MRD trials are linked from their assay, drug and technology records
+- Residual disease tests with their stated detection limits, the subclone attribution bottleneck, TROP2 PET tracers and the trials that act on a breast cancer blood result
+- Electra Therapeutics and ipsoprubart are one record each, and the papers-snapshot gauge counts the drugs and targets added this week
+- 83 oncology companies and 68 products found by the startup monitors in SEC filings, FDA and EMA orphan designations and NCI small-business grants, and GLOBOCAN 2024 waiting at /admin/
 - Curadel and CPI-008 rest on the EMA designation and the trial registry only, since the company site refuses automated reads
+- 47 oncology companies from investor and accelerator portfolios, with 32 pipeline products and 41 registry trials
 - 83 oncology companies and 68 products found by the startup monitors in SEC filings, FDA and EMA orphan designations and NCI small-business awards
 - 282 pipeline products for 156 companies and 14 new targets now that the engine pages are lighter, 130 unsupported links removed, survival calculators linked for issue 43, and the NHS Cancer Alliances list read from ONS
 - chore: refresh universe lists (NCI drugs and types, NCI centres, OECI, NHS alliances, NLM journals, OpenAlex, KEGG, ChEMBL, ClinicalTrials.gov, FDA OCE) (#348)

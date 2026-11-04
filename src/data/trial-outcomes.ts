@@ -182,8 +182,8 @@ const RAW: Record<string, TrialOutcomeIn> = {
     enrolled: 5637,
     outcomes: [
       { endpoint: "Invasive disease-free survival at 2 years", primary: true, unit: "%", arms: [{ name: "Abemaciclib + endocrine therapy", n: 2808, value: 92.2 }, { name: "Endocrine therapy alone", n: 2829, value: 88.7 }], hr: 0.75, ci: [0.60, 0.93], p: "0.01", source: "https://ascopubs.org/doi/10.1200/JCO.20.02514" },
-      { endpoint: "Invasive disease-free survival at 5 years", unit: "%", arms: [{ name: "Abemaciclib + endocrine therapy", value: 83.6 }, { name: "Endocrine therapy alone", value: 76.0 }], hr: 0.68, ci: [0.60, 0.77], source: "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(23)00525-2/fulltext" },
-      { endpoint: "Distant relapse-free survival at 5 years", unit: "%", arms: [{ name: "Abemaciclib + endocrine therapy", value: 86.0 }, { name: "Endocrine therapy alone", value: 79.2 }], hr: 0.675, source: "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(23)00525-2/fulltext" },
+      { endpoint: "Invasive disease-free survival at 5 years", unit: "%", arms: [{ name: "Abemaciclib + endocrine therapy", value: 83.6 }, { name: "Endocrine therapy alone", value: 76.0 }], hr: 0.68, ci: [0.60, 0.77], source: "https://doi.org/10.1200/JCO.23.01994" },
+      { endpoint: "Distant relapse-free survival at 5 years", unit: "%", arms: [{ name: "Abemaciclib + endocrine therapy", value: 86.0 }, { name: "Endocrine therapy alone", value: 79.2 }], hr: 0.675, source: "https://doi.org/10.1200/JCO.23.01994" },
     ],
     replication: "Confirmed by NATALEE (ribociclib) for the CDK4/6 adjuvant concept in high-risk disease; the benefit widened over time (carry-over effect).",
   },
@@ -227,9 +227,9 @@ const RAW: Record<string, TrialOutcomeIn> = {
   "tropion-lung01": {
     enrolled: 605,
     outcomes: [
-      { endpoint: "Progression-free survival (BICR)", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", n: 299, value: 4.4 }, { name: "Docetaxel", n: 305, value: 3.7 }], hr: 0.75, ci: [0.62, 0.91], p: "0.004", source: "https://ascopubs.org/doi/10.1200/JCO.24.01544" },
-      { endpoint: "Overall survival", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", value: 12.9 }, { name: "Docetaxel", value: 11.8 }], hr: 0.94, ci: [0.78, 1.14], note: "Not significant", source: "https://ascopubs.org/doi/10.1200/JCO.24.01544" },
-      { endpoint: "Progression-free survival, non-squamous", unit: "months", arms: [{ name: "Datopotamab deruxtecan", value: 5.5 }, { name: "Docetaxel", value: 3.6 }], hr: 0.63, ci: [0.51, 0.79], source: "https://ascopubs.org/doi/10.1200/JCO.24.01544" },
+      { endpoint: "Progression-free survival (BICR)", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", n: 299, value: 4.4 }, { name: "Docetaxel", n: 305, value: 3.7 }], hr: 0.75, ci: [0.62, 0.91], p: "0.004", source: "https://ascopubs.org/doi/10.1200/JCO-24-01544" },
+      { endpoint: "Overall survival", primary: true, unit: "months", arms: [{ name: "Datopotamab deruxtecan", value: 12.9 }, { name: "Docetaxel", value: 11.8 }], hr: 0.94, ci: [0.78, 1.14], note: "Not significant", source: "https://ascopubs.org/doi/10.1200/JCO-24-01544" },
+      { endpoint: "Progression-free survival, non-squamous", unit: "months", arms: [{ name: "Datopotamab deruxtecan", value: 5.5 }, { name: "Docetaxel", value: 3.6 }], hr: 0.63, ci: [0.51, 0.79], source: "https://ascopubs.org/doi/10.1200/JCO-24-01544" },
     ],
     replication: "Mixed result; the approval that followed was narrowed to EGFR-mutant NSCLC on the basis of TROPION-Lung05 (single-arm), not this trial.",
   },
@@ -391,7 +391,7 @@ const RAW: Record<string, TrialOutcomeIn> = {
     enrolled: 797,
     outcomes: [
       { endpoint: "Event-free survival", primary: true, unit: "months", arms: [{ name: "Pembrolizumab + chemotherapy → pembrolizumab", n: 397, value: 47.2 }, { name: "Placebo + chemotherapy → placebo", n: 400, value: 18.3 }], hr: 0.59, ci: [0.48, 0.72], source: nejm("NEJMoa2302983") },
-      { endpoint: "Overall survival at 36 months", primary: true, unit: "%", arms: [{ name: "Pembrolizumab arm", value: 71.3 }, { name: "Placebo arm", value: 64.0 }], hr: 0.72, ci: [0.56, 0.93], p: "0.005", source: "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02241-2/fulltext" },
+      { endpoint: "Overall survival at 36 months", primary: true, unit: "%", arms: [{ name: "Pembrolizumab arm", value: 71.3 }, { name: "Placebo arm", value: 64.0 }], hr: 0.72, ci: [0.56, 0.93], p: "0.005", source: "https://doi.org/10.1016/S0140-6736(24)01756-2" },
     ],
     replication: "Consistent with CheckMate 816, AEGEAN, CheckMate 77T, and NEOTORCH; the first perioperative regimen with an OS benefit.",
   },
@@ -537,7 +537,7 @@ const RAW: Record<string, TrialOutcomeIn> = {
     enrolledNote: "ClinicalTrials.gov lists 895 participants (actual); 1,103 patients were screened and 796 randomised (399 olaparib, 397 placebo) in the primary analysis.",
     outcomes: [
       { endpoint: "Radiographic progression-free survival (investigator), all comers", primary: true, unit: "months", arms: [{ name: "Olaparib + abiraterone", n: 399, value: 24.8 }, { name: "Placebo + abiraterone", n: 397, value: 16.6 }], hr: 0.66, ci: [0.54, 0.81], p: "<0.001", source: "https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200043" },
-      { endpoint: "Overall survival, all comers", unit: "months", arms: [{ name: "Olaparib + abiraterone", value: 42.1 }, { name: "Placebo + abiraterone", value: 34.7 }], hr: 0.81, ci: [0.67, 1.00], note: "Not significant; larger effect in BRCA-mutant", source: "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(23)00382-9/fulltext" },
+      { endpoint: "Overall survival, all comers", unit: "months", arms: [{ name: "Olaparib + abiraterone", value: 42.1 }, { name: "Placebo + abiraterone", value: 34.7 }], hr: 0.81, ci: [0.67, 1.00], note: "Not significant; larger effect in BRCA-mutant", source: "https://doi.org/10.1016/S1470-2045(23)00382-0" },
     ],
     replication: "Consistent with MAGNITUDE and TALAPRO-2 in HRR-mutant disease; the all-comers benefit is debated and labels differ by region.",
   },
@@ -633,7 +633,7 @@ const RAW: Record<string, TrialOutcomeIn> = {
   },
   "panova-3": {
     enrolled: 571,
-    outcomes: [{ endpoint: "Overall survival", primary: true, unit: "months", arms: [{ name: "TTFields + gemcitabine/nab-paclitaxel", n: 284, value: 16.2 }, { name: "Gemcitabine/nab-paclitaxel", n: 287, value: 14.2 }], hr: 0.82, ci: [0.68, 0.99], p: "0.039", source: "https://ascopubs.org/doi/10.1200/JCO.25.00361" }],
+    outcomes: [{ endpoint: "Overall survival", primary: true, unit: "months", arms: [{ name: "TTFields + gemcitabine/nab-paclitaxel", n: 284, value: 16.2 }, { name: "Gemcitabine/nab-paclitaxel", n: 287, value: 14.2 }], hr: 0.82, ci: [0.68, 0.99], p: "0.039", source: "https://ascopubs.org/doi/10.1200/JCO-25-00746" }],
     replication: "Single pivotal trial; open-label design and modest effect size are debated.",
   },
   "amplify-7p": {

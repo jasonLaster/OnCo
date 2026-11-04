@@ -167,7 +167,7 @@ export const lymphomaAntigens: LymphomaAntigenRow[] = [
   },
   {
     antigen: "CD79b", targetId: "cd79b", specificity: "lineage-antigen",
-    carriedBy: "More than 95% of diffuse large B-cell lymphomas express it, and so do follicular and mantle cell lymphoma. It is half of the signalling heterodimer of the B-cell receptor, with CD79a.",
+    carriedBy: "Diffuse large B-cell, follicular and mantle cell lymphomas carry it, at levels that vary from tumour to tumour. It is half of the signalling heterodimer of the B-cell receptor, with CD79a.",
     alsoOnHealthyCells: "Normal B cells, and strongly: the Human Protein Atlas reads CD79B at 1,489 nTPM in the B-cell lineage, the highest of any lymphoma surface target.",
     notCarriedBy: "Plasma cells lose surface immunoglobulin and with it most CD79b, and no non-B lineage carries it.",
     whatTheDrugDoes: "CD79b is part of the receptor complex that is continuously internalised, which makes it an unusually good address for a conjugate: polatuzumab vedotin delivers monomethyl auristatin E inside the cell. Nothing is tested before it is given, because expression is close to universal.",
@@ -806,7 +806,7 @@ const readouts: BiomarkerInput[] = [
     kind: "biomarker", asOf, id: "cd79b-itam-mutation", name: "CD79B ITAM mutation",
     aka: ["CD79B mutation", "CD79B Y196", "CD79A ITAM mutation", "ITAM mutation"],
     tldr: "A change in the signalling tail of part of the B-cell receptor that leaves the receptor switched on without needing anything to bind it. It marks a group of large B-cell lymphomas that depend on that signal, and therefore on the enzyme BTK.",
-    summary: "The B-cell receptor signals through the ITAM motifs of CD79a and CD79b. In activated B-cell-like diffuse large B-cell lymphoma, the receptor signals continuously: the receptors form slow-diffusing clusters in the membrane like those of an antigen-stimulated normal B cell, and knocking down IgM, Ig-kappa, CD79A, CD79B or BTK kills the cell while leaving other lymphomas alone. Somatic mutations of the ITAM modules were detected frequently in activated B-cell-like biopsies, rarely in other diffuse large B-cell lymphomas and never in Burkitt or MALT lymphoma; the mutations raise surface receptor expression and blunt LYN, the kinase that normally damps the signal down (Davis 2010).\n\nCD79B mutation with MYD88 L265P is what names the MCD genetic subtype (Schmitz 2018). CD79b protein itself is expressed on more than 95% of diffuse large B-cell lymphomas regardless of mutation status, which is why polatuzumab vedotin, the anti-CD79b conjugate, is given without a test.",
+    summary: "The B-cell receptor signals through the ITAM motifs of CD79a and CD79b. In activated B-cell-like diffuse large B-cell lymphoma, the receptor signals continuously: the receptors form slow-diffusing clusters in the membrane like those of an antigen-stimulated normal B cell, and knocking down IgM, Ig-kappa, CD79A, CD79B or BTK kills the cell while leaving other lymphomas alone. Somatic mutations of the ITAM modules were detected frequently in activated B-cell-like biopsies, rarely in other diffuse large B-cell lymphomas and never in Burkitt or MALT lymphoma; the mutations raise surface receptor expression and blunt LYN, the kinase that normally damps the signal down (Davis 2010).\n\nCD79B mutation with MYD88 L265P is what names the MCD genetic subtype (Schmitz 2018). CD79b protein itself is expressed whether or not the gene is mutated, and polatuzumab vedotin, the anti-CD79b conjugate, is given without a test for it.",
     target: "cd79b", measurement: "sequencing-variant",
     scoringRule: { text: "Targeted sequencing of the CD79B ITAM region, reported as mutated or wild-type, usually as part of a lymphoma gene panel rather than alone. It is a different question from CD79b protein expression, which is near-universal in large B-cell lymphoma and is not tested before polatuzumab vedotin.", quote: "In 18% of ABC DLBCLs, one functionally critical residue of CD79B, the first ITAM tyrosine, was mutated.", source: doi("10.1038/nature08638"), sourceLabel: "Davis et al., Nature 2010" },
     thresholds: [], definedBy: SRC.schmitz2018,
@@ -1030,7 +1030,7 @@ const otherSupplements: SpikeSupplement[] = [
   // Medicines: the lymphoma biomarker note.
   sup<DrugInput>({ id: "rituximab", terms: ["lymphoma-bio-lineage-antigen-cost", "lymphoma-bio-antigen-escape"], notes: ["Lymphoma biology: nothing is tested before the first dose, because CD20 is on essentially every mature B-cell lymphoma, and that is also why the treatment empties the normal B-cell compartment. The two consequences worth naming are hepatitis B reactivation, which is screened for, and low immunoglobulin with a blunted vaccine response, which can persist for years. At relapse the question changes: of 19 rebiopsied patients in one series, 5 had become CD20-negative, with lower CD20 messenger RNA in the negative cells from the same patient (Hiraga 2009)."], links: [SRC.hiraga2009] }),
   sup<DrugInput>({ id: "obinutuzumab", cancers: [CX.fl, CX.nhl], notes: ["Lymphoma biology: a glycoengineered type II anti-CD20 antibody with higher Fc receptor affinity and more direct cell death, designed around the observation that rituximab depends on effector cells that become refractory with repeated dosing. It does not solve antigen loss, which is a different problem."] }),
-  sup<DrugInput>({ id: "polatuzumab-vedotin", targets: ["cd79b"], notes: ["Lymphoma biology: CD79b is chosen not because it is more specific than CD20 but because it internalises. It is part of the B-cell receptor complex, which is continuously taken into the cell, so it can carry monomethyl auristatin E inside; CD20 cannot. Expression is above 95% in diffuse large B-cell lymphoma, so nothing is tested before the first dose, and the dose-limiting toxicity is the payload, as cumulative peripheral neuropathy, rather than the antigen (Davis 2010)."], links: [SRC.davis2010] }),
+  sup<DrugInput>({ id: "polatuzumab-vedotin", targets: ["cd79b"], notes: ["Lymphoma biology: CD79b is chosen not because it is more specific than CD20 but because it internalises. It is part of the B-cell receptor complex, which is continuously taken into the cell, so it can carry monomethyl auristatin E inside; CD20 cannot. Expression is not tested before the first dose, and the dose-limiting toxicity is the payload, as cumulative peripheral neuropathy, rather than the antigen (Davis 2010)."], links: [SRC.davis2010] }),
   sup<DrugInput>({ id: "brentuximab-vedotin", notes: ["Lymphoma biology: CD30 is as close as lymphoma gets to an antigen restricted to the tumour in an adult, because resting lymphocytes do not carry it. That is why this conjugate does not produce the compartment-emptying effects of the anti-B-cell agents and why its limiting toxicity is the auristatin payload. In classical Hodgkin lymphoma the antigen is on essentially every Reed-Sternberg cell even though those cells are a small minority of the tissue (Kuppers 2009)."], links: [SRC.kuppers2009] }),
   sup<DrugInput>({ id: "mogamulizumab", notes: ["Lymphoma biology: CCR4 is on the tumour in more than 80% of mycosis fungoides and Sezary syndrome and about 90% of adult T-cell leukaemia/lymphoma, and it is also on regulatory T cells, so the antibody depletes those too. That explains both the rash and the association between giving it shortly before an allogeneic transplant and severe graft-versus-host disease. MAVORIC randomised 372 previously treated patients to mogamulizumab or vorinostat (Kim 2018). In adult T-cell leukaemia/lymphoma, CCR4 is not only expressed but mutated, with gain-of-function truncations of the cytoplasmic tail in about a quarter of cases (Kataoka 2015)."], links: [SRC.kim2018, SRC.kataoka2015] }),
   sup<DrugInput>({ id: "alemtuzumab", cancers: [CX.ptcl, CX.nhl], notes: ["Lymphoma biology: CD52 is a 12-amino-acid glycopeptide on a lipid anchor, present at very high surface density, which makes it an efficient complement-fixing target; it is also on normal B cells, T cells, monocytes and dendritic cells, which is why this antibody causes the deepest and longest lymphopenia of any used in lymphoma, with CD4 counts that can stay low for a year and with cytomegalovirus, Pneumocystis and fungal infection to match. Loss of the lipid anchor removes the antigen without touching the gene, which is the described escape route."] }),
@@ -1103,6 +1103,7 @@ const nhlSpike: Spike = {
     pathways: ["germinal-centre-reaction", "bcr-signalling", "inflammation-nfkb", "apoptosis-bcl2", "myc", "jak-stat", "epigenetic-reprogramming", "pd1-checkpoint", "cd47-sirpa", "oncogenic-viruses", "antigen-presentation-immunoediting", "tumor-microenvironment", "resistance-routes-map", "clonal-evolution", "transcription-addiction"],
     terms: [...BIO_TERMS, "cell-of-origin", "deauville", "plasma-ebv-dna", "flipi", "fish", "ihc", "ngs", "mrd", "ctdna", "cytogenetics", "gene-fusion", "gene-amplification", "driver-mutation", "resistance", "cross-resistance"],
     related: NEW_READOUTS,
+    links: [SRC.roemer2016, SRC.ansell2015, SRC.hiraga2009, SRC.woyach2014, SRC.blombery2019],
     technologies: ["clonality-testing", "histopathology-ihc", "cytogenetics-fish", "flow-cytometry-mrd", "ngs-mrd-clonoseq", "ctdna-lymphoma-monitoring", "pet-adapted-therapy", "fdg-pet", "cgp", "liquid-biopsy", "car-t", "bispecific-antibody", "t-cell-engager", "checkpoint-inhibitor", "monoclonal-antibody", "adc"],
     history: [
       { year: 1982, title: "MYC is mapped to the Burkitt translocation", note: "The human c-myc gene is placed at 8q24, the region translocated to chromosome 2, 14 or 22 in Burkitt lymphoma cells, tying an oncogene to a specific chromosome swap for the first time in a human cancer.", refs: ["myc-gene", "double-hit-rearrangement"] },
@@ -1132,13 +1133,14 @@ const dlbclSpike = mk(CX.dlbcl, {
   stateOfArt: [
     "Molecular classification. Cell of origin splits this disease into germinal-centre-like and activated B-cell-like forms with different survival, and in most laboratories it is called by three stains rather than by the expression profiling that defined it, which is why a report usually says non-germinal-centre rather than activated. The genetic subtypes, MCD for MYD88 L265P with CD79B mutation, BN2 for BCL6 fusions with NOTCH2 mutations, N1 for NOTCH1 mutations and EZB for EZH2 mutations with BCL2 translocations, explain far more and currently change nothing outside a trial.",
     "The lesions that do change treatment. A MYC rearrangement with BCL2, with or without BCL6, is a separate WHO entity and usually moves a patient off R-CHOP; rates in 442 unselected cases were 8.8% for MYC, 13.5% for BCL2 and 28.7% for BCL6. Co-expression of MYC and BCL2 protein without rearrangement, about 21% of cases, is prognostic and is not the same thing.",
-    "What the medicines are aimed at. CD20 on essentially every case, CD19 on the same cells and retained when CD20 is lost, CD79b on more than 95% and chosen because it internalises and can carry a payload, and CD3 as the handle for the bispecific antibodies. None of the four is tested before treatment, and the one worth retesting at relapse is CD20.",
+    "What the medicines are aimed at. CD20 on essentially every case, CD19 on the same cells and retained when CD20 is lost, CD79b on almost every case and chosen because it internalises and can carry a payload, and CD3 as the handle for the bispecific antibodies. None of the four is tested before treatment, and the one worth retesting at relapse is CD20.",
   ],
   targets: ["cd20", "cd19", "cd79b", "cd22", "cd3", "myd88", "cd79b", "card11", "bcl2", "bcl6", "myc-gene", "ezh2", "crebbp", "ep300", "kmt2d", "tp53", "cdkn2a", "b2m", "btk"],
   pathways: ["germinal-centre-reaction", "bcr-signalling", "inflammation-nfkb", "apoptosis-bcl2", "myc", "epigenetic-reprogramming"],
   terms: ["lymphoma-bio-cell-of-origin-in-practice", "lymphoma-bio-lymphgen", "lymphoma-bio-germinal-centre", "lymphoma-bio-antigen-escape", "lymphoma-bio-lineage-antigen-cost", "cell-of-origin", "deauville"],
   related: ["double-hit-rearrangement", "myc-bcl2-double-expressor", "bcl2-rearrangement", "myd88-l265p", "cd79b-itam-mutation", "ezh2-y646-mutation", "ig-tcr-clonality"],
   technologies: ["histopathology-ihc", "cytogenetics-fish", "cgp", "ctdna-lymphoma-monitoring", "clonality-testing"],
+  links: [SRC.horn2013, SRC.johnson2012],
 });
 
 const flSpike = mk(CX.fl, {
@@ -1152,6 +1154,7 @@ const flSpike = mk(CX.fl, {
   terms: ["lymphoma-bio-germinal-centre", "lymphoma-bio-transformation", "lymphoma-bio-antigen-escape", "flipi"],
   related: ["bcl2-rearrangement", "ezh2-y646-mutation", "double-hit-rearrangement", "ig-tcr-clonality"],
   technologies: ["cytogenetics-fish", "histopathology-ihc", "cgp"],
+  links: [SRC.tsujimoto1985, SRC.morin2011, SRC.pasqualucci2011, SRC.morin2010],
 });
 
 const mclSpike = mk(CX.mcl, {
@@ -1166,6 +1169,7 @@ const mclSpike = mk(CX.mcl, {
   terms: ["lymphoma-bio-antigen-escape", "lymphoma-bio-germinal-centre", "resistance", "cross-resistance"],
   related: ["tp53-del17p", "btk-c481s", "bcl2-g101v", "cyclin-d1-t11-14"],
   technologies: ["cytogenetics-fish", "histopathology-ihc", "cgp", "clonality-testing"],
+  links: [SRC.eskelund2017],
 });
 
 const hodgkinSpike = mk(CX.hodgkin, {
@@ -1180,6 +1184,7 @@ const hodgkinSpike = mk(CX.hodgkin, {
   terms: ["lymphoma-bio-hodgkin-microenvironment", "lymphoma-bio-ebv-latency", "lymphoma-bio-lineage-antigen-cost", "deauville", "plasma-ebv-dna"],
   related: ["pd-ligand-9p24-alteration"],
   technologies: ["histopathology-ihc", "cytogenetics-fish", "checkpoint-inhibitor", "pet-adapted-therapy", "adc"],
+  links: [SRC.roemer2016, SRC.ansell2015, SRC.roemer2018, SRC.steidl2011, SRC.steidl2010],
 });
 
 const pmbclSpike = mk(CX.pmbcl, {
@@ -1271,6 +1276,7 @@ const ptclSpike = mk(CX.ptcl, {
   terms: ["lymphoma-bio-htlv1", "lymphoma-bio-lineage-antigen-cost", "lymphoma-bio-ebv-latency"],
   related: ["rhoa-g17v", "ig-tcr-clonality"],
   technologies: ["clonality-testing", "cgp", "histopathology-ihc", "flow-cytometry-mrd"],
+  links: [SRC.kataoka2015],
 });
 
 const aitlSpike = mk(CX.aitl, {

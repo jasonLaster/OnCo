@@ -310,7 +310,7 @@ const spike: Spike = {
     // (colorectal QA, 25 Sept 2026); their two refs that no other row carried, `anti-egfr-left-sided` and
     // `kras-plus-egfr-crc`, moved onto the left-sided and KRAS G12C rows there.
     stateOfArt: [
-      "dMMR disease: immunotherapy first line gives median OS over 6 years (KEYNOTE-177); neoadjuvant IO achieves 68% pCR and 100% 3-year DFS in colon (NICHE-2) and complete organ preservation in rectal cancer (dostarlimab, AZUR-1).",
+      "dMMR disease: immunotherapy first line gives median OS over 6 years (KEYNOTE-177); neoadjuvant IO achieves 68% pCR and 100% 3-year DFS in colon (NICHE-2) and lets most rectal cancers avoid surgery (dostarlimab; sustained clinical complete response at 12 months in 68% in the first AZUR-1 report).",
       "BRAF V600E first-line targeted triplet doubled survival to 30 months (BREAKWATER); full approval in 2026.",
       "Adjuvant atezolizumab for dMMR stage III colon cancer halves recurrence (ATOMIC, 2025): the first adjuvant IO success in CRC.",
       "Sidedness plus RAS/BRAF status selects anti-EGFR therapy, yielding median OS near 38 months first line (PARADIGM).",

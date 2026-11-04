@@ -1,0 +1,221 @@
+GLOBOCAN-derived figures found by accuracy round 2 (3 November 2026): candidates for the move to GLOBOCAN 2024.
+Line numbers are as of the round-2 commit. The site mixes editions: some pages (nsclc, pancreatic, colon and rectum, Hodgkin) already cite GLOBOCAN 2024, most cite 2022, and the NHL page cites 2020.
+Every gco.iarc.who.int fact-sheet or Cancer Today link labelled 'GLOBOCAN 2022' now serves the 2024 edition, and the gco() helper in src/data/country-extras.ts builds fact-sheet URLs that return 403.
+
+== c01-nsclc
+src/data/spikes/lung-core.ts:7 (file comment) 2,637,005 cases / 1,861,839 deaths, labelled GLOBOCAN 2024 (matches fact sheet printed "GLOBOCAN 2024")
+src/data/spikes/lung-core.ts:111 SRC.globocan label "2024 estimates"
+src/data/spikes/lung-core.ts:167 lung-cancer parent summary: 2,637,005 cases (ASR 23.9), 1,861,839 deaths (16.3), regional splits, Hungary 61.8 / Hungary and Denmark 36.0, prevalence 2,345,582 Asia; labelled GLOBOCAN 2024
+src/data/spikes/lung-core.ts:168 Lancet Respir Med 2025 histology split on GLOBOCAN 2022 base: 1,572,045 men / 908,630 women, dated 2022
+src/data/spikes/lung-core.ts:184 nsclc summary: 2,637,005 / 1,861,839 (GLOBOCAN 2024); 1,572,045 / 908,630 (2022, Lancet Respir Med 2025)
+src/data/spikes/lung-core.ts:205, 272, 289, 605, 609 also carry 2,637,005 or 1,572,045 (outside items 0-20; not checked here)
+src/data/spikes/lung-core.ts:289 (nsclc burden) "2,637,005 cases and 1,861,839 deaths a year (GLOBOCAN 2024)" - matches the GLOBOCAN 2024 fact sheet now served (printed "GLOBOCAN 2024 - 08.07.2026"); already on 2024.
+src/data/spikes/lung-core.ts:205 (lung-cancer burden, not in my list) same 2,637,005 / 1,861,839 (GLOBOCAN 2024) plus "65.6 percent of cases in Asia".
+src/data/spikes/lung-core.ts:7 (file comment) same figures, GLOBOCAN 2024.
+src/data/spikes/lung-core.ts:289 nsclc burden: "2,637,005 cases and 1,861,839 deaths a year (GLOBOCAN 2024)" (item 39, another fork; the page labels it 2024, so check the edition the fact sheet prints)
+src/data/spikes/lung-core.ts:289 nsclc burden: histology split, men 1,572,045 cases (45.6/29.4/6.5%) and women 908,630 (59.7/17.1/6.5%), derived from GLOBOCAN 2022 (Lancet Respir Med 2025); now dated to 2022
+src/data/spikes/nsclc.ts:281 nsclc spike summary: "Lung cancer as a whole remains the leading cause of cancer death worldwide (~1.8 million deaths a year)", undated, GLOBOCAN-derived (not in my item list)
+src/data/cancers.ts:122 nsclc burden: "Lung cancer still accounts for about 1.8 million deaths a year worldwide", undated, GLOBOCAN-derived (not in my item list)
+No GLOBOCAN-derived figures among items 94-127 (egfr-mutant-nsclc, resectable-nsclc, extensive-stage-sclc).
+src/data/spikes/mesothelioma.ts:164  mesothelioma burden: "GLOBOCAN estimated about 30,600 mesothelioma cases worldwide in 2022 and about 3,100 in the US" (GLOBOCAN 2022: World 30,633, USA 3,114; GLOBOCAN 2024 fact sheet now gives 27,350 worldwide)
+src/data/spikes/sclc.ts:212  sclc burden "about 15% of lung cancers" (histology share from NCI PDQ, not GLOBOCAN; worldwide count removed)
+
+== c02-lung
+c02-lung: GLOBOCAN-derived figures seen (candidates for the 2024 round)
+ALREADY ON GLOBOCAN 2024 (lung fact sheet 15, edition printed "GLOBOCAN 2024 - 08.07.2026"; verified correct)
+src/data/spikes/lung-core.ts:167  lung-cancer summary: 2,637,005 cases (ASR 23.9), 1,861,839 deaths (ASR 16.3); continent counts and shares (Asia 1,730,334 / 65.6%, Europe 478,683, Northern America 258,423, LatAm 103,726, Africa 47,006, Oceania 18,833 and deaths); Hungary 61.8 men, Denmark 36.0 women (fixed: was "Hungary and Denmark"); Asia prevalence 2,345,582 (65.7%)
+src/data/spikes/lung-core.ts:205  lung-cancer burden: 2,637,005 / 1,861,839 (GLOBOCAN 2024), 65.6% in Asia
+src/data/spikes/lung-core.ts:261  lung-cancer openProblems[0]: Asia 65.6% of cases, 64.3% of deaths (GLOBOCAN 2024)
+src/data/spikes/lung-core.ts:272  lung-cancer notes "How common is it?": 2,637,005 / 1,861,839 (GLOBOCAN 2024) - not in my list, matches the fact sheet
+src/data/spikes/lung-core.ts:184, 289  nsclc summary and burden: same 2024 figures (nsclc page; another group's)
+src/data/spikes/lung-core.ts:7-8  file comment: same 2024 figures
+GLOBOCAN 2022-BASED, DATED (correct as dated)
+src/data/spikes/lung-core.ts:168  lung-cancer summary: histology split of 1,572,045 male and 908,630 female lung cancers in 2022 (Lancet Respir Med 2025, built on GLOBOCAN 2022 + CI5 XII); 114,486 / 80,378 PM-attributable adenocarcinomas in 2022. A paper, not a GCO table: a 2024 round should not overwrite it.
+GLOBOCAN 2022, PREVIOUSLY UNDATED, NOW DATED IN THIS ROUND
+src/data/cancers.ts:494  thyroid burden: "In 2022, GLOBOCAN estimated about 821,000 new cases worldwide" (was "~820,000 cases per year"; GCO 2022 world thyroid 821,214 from public/globocan/countries.json). The thyroid fact sheet now served (32-thyroid) is GLOBOCAN 2024: 959,281 cases, 48,070 deaths.
+src/data/cancers.ts:458  head-and-neck burden: "In 2022, GLOBOCAN estimated about 947,000 new cases across the lip and oral cavity, salivary glands, pharynx and larynx" (was "~900,000 cases per year", the 2018 figure of 890,000 via Wikipedia). 2022 sum of GCO sites 1,2,3,4,5,14 = 389,846 + 55,083 + 106,400 + 120,434 + 86,257 + 189,191 = 947,211 (the globocan-map.ts mapping for head-and-neck uses the same six codes).
+
+== c03-colorectal
+src/data/spikes/colorectal-core.ts:173  colorectal summary.s1: "about 1.9 million cases in 2022, by GLOBOCAN's estimate ... about 900,000 deaths that year" (GLOBOCAN 2022 colorectum 1,926,425 / 904,019; dated this round, was undated "a year").
+src/data/spikes/colorectal-core.ts:161  colorectal summary.s5-s7: colon 1,206,011 (rank 4, ASR 10.8), 556,774 deaths (rank 5, ASR 4.7); rectum 778,594 (rank 8, ASR 7.3), 339,370 deaths (rank 9, ASR 3.0); sums 1,984,605 and 896,144; GLOBOCAN 2022 colorectum 1,926,425; continental shares of colon cases (Asia 49.3, Europe 27.2, Northern America 10.6, Latin America and the Caribbean 8.3, Africa 3.4, Oceania 1.3 percent). ALREADY GLOBOCAN 2024 (fact sheets 8-colon and 9-rectum print "GLOBOCAN 2024"), except the 1,926,425 (2022) comparison added this round.
+src/data/spikes/colorectal-core.ts:179  colorectal burden.s0: same colon and rectum 2024 figures, "about 1.98 million cases and 896,000 deaths added together" (GLOBOCAN 2024, named).
+src/data/spikes/colorectal-core.ts:259  colorectal notes ("How common is it?"): 1,206,011 / 778,594 / 556,774 / 339,370 (GLOBOCAN 2024), about 1.98 million and 896,000. Not in this claim list; consistent.
+src/data/spikes/colorectal-core.ts:56-57  SRC.globocanColon / SRC.globocanRectum labels say "2024 estimates" (correct for the fact sheets now served).
+src/data/spikes/colorectal.ts:304  colorectal summary (overridden copy, not rendered): "about 1.9 million cases a year ... 900,000 a year" undated GLOBOCAN 2022. The rendered copy is colorectal-core.ts EXISTING_SUMMARY (edited); this copy was left as is.
+src/data/spikes/colorectal.ts:305  colorectal burden (overridden by colorectal-core.ts burden, not rendered): "~1.9 million cases per year ... ~900,000 deaths per year" undated GLOBOCAN 2022.
+src/data/cancers-wave4-colon-kidney-testis.ts:93  colon-cancer burden.s0: "1,926,425 new colorectal cancers in 2022" (GLOBOCAN 2022 colorectum, dated). The 2024 colorectum figure is 2,041,007 (fact sheet 41) and the 2024 colon figure 1,206,011.
+Note for the 2024 round: GCO "colorectum" (41) includes the anus; colon (8) + rectum (9) in 2024 is 1,984,605 against colorectum 2,041,007. Sentences that call colon + rectum "colorectal" and the colorectum total "colorectal" are counting different things.
+
+== c04-pancreatic
+c04-pancreatic: GLOBOCAN-derived figures seen (record "pancreatic"). All are already on the GLOBOCAN 2024 edition: the fact sheet served at
+https://gco.iarc.who.int/media/globocan/factsheets/cancers/13-pancreas-fact-sheet.pdf is headed "GLOBOCAN 2024" and gives 531 318 cases
+(rank 11, ASR 4.7) and 490 786 deaths (rank 6, ASR 4.2). Every figure below matches it and names 2024. None is GLOBOCAN 2022 and none is undated.
+src/data/spikes/pancreatic-core.ts:79   SRC.globocan label "GLOBOCAN pancreas fact sheet (IARC Global Cancer Observatory, 2024 estimates)"
+src/data/spikes/pancreatic-core.ts:208  summary: 531,318 new cases, 11th, ASR 4.7; 490,786 deaths, 6th, ASR 4.2 ("served with the GLOBOCAN 2024 estimates")
+src/data/spikes/pancreatic-core.ts:208  summary: regional shares of incidence: Asia 45.9%, Europe 27.7%, Northern America 13.6%, Latin America and Caribbean 7.8%, Africa 3.9%, Oceania 1.1%; highest rates Western Europe and Northern America, lowest South Central Asia
+src/data/spikes/pancreatic-core.ts:208  summary: Huang 2021 ASRs 7.7 and 4.9 for very-high-HDI countries in 2018 (GLOBOCAN 2018 via the paper; dated in the text)
+src/data/spikes/pancreatic-core.ts:231  burden: "531,318 new cases and 490,786 deaths a year worldwide (GLOBOCAN 2024; 11th commonest cancer, 6th commonest cause of cancer death)"
+src/data/spikes/pancreatic-core.ts:308  notes (FAQ "How common is it?"): 531,318 and 490,786 (GLOBOCAN 2024)
+
+== c05-gu
+Values checked against the repo's GLOBOCAN 2022 copy (public/globocan/countries.json, WORLD): prostate (27) 1,467,854 cases / 397,430 deaths; kidney (29) 434,840 / 155,953; bladder (30) 614,298 / 220,596.
+The gco.iarc.who.int prostate fact sheet now served is GLOBOCAN 2024 (1,546,112 cases, 419,849 deaths).
+src/data/spikes/prostate.ts:391        prostate burden: "In 2022, GLOBOCAN estimated ~1.5 million new cases ... ~400,000 deaths worldwide in 2022" (dated this round; was undated)
+src/data/prostate-subtypes.ts:171      prostate-mcrpc burden: "GLOBOCAN estimated about 400,000 prostate cancer deaths worldwide in 2022" (dated this round; was undated)
+src/data/spikes/rcc.ts:238             rcc burden: "about 435,000 new kidney cancers ... about 156,000 kidney cancer deaths in 2022" (dated and corrected this round; deaths were "~180,000", cases undated 430,000)
+src/data/spikes/urothelial.ts:276      urothelial burden: "about 614,000 new bladder cancers ... ~220,000 deaths in 2022" (dated this round; was undated 600,000 / 220,000)
+src/data/spikes/prostate-core.ts:391   prostate basics: "1,546,112 new cases and 419,849 deaths a year ... (GLOBOCAN 2024)" (already GLOBOCAN 2024; "a year" wording; not in this group's claim list)
+src/data/spikes/prostate-core.ts:7     comment only: same GLOBOCAN 2024 figures
+src/data/spikes/prostate-core.ts:139   source label: GLOBOCAN prostate fact sheet, 2024 estimates
+src/data/cancers.ts:281                base prostate burden "~1.5 million cases per year" (undated GLOBOCAN 2022; overridden on the page by the spike patch, not in this group's list)
+src/data/cancers.ts:292                base urothelial burden "~600,000 cases per year" (undated GLOBOCAN 2022; overridden by spike patch)
+src/data/cancers.ts:337                base rcc burden "~430,000 cases per year" (undated GLOBOCAN 2022; overridden by spike patch)
+
+== c06-tnbc
+src/data/spikes/tnbc-core.ts:50 SRC.globocan label "GLOBOCAN breast fact sheet (IARC Global Cancer Observatory, 2024 estimates)" (fact sheet read 3 Nov 2026 prints "GLOBOCAN 2024")
+src/data/spikes/tnbc-core.ts:179 tnbc summary: 2,434,087 new breast cancers (rank 2, ASR 47.8), 693,660 deaths (rank 4, ASR 12.9), Asia 45.1%, Europe 22.3%, Northern America 13.2%, Africa 9.3%, Latin America and Caribbean 9.0%; labelled "served today with the GLOBOCAN 2024 estimates" (matches the 2024 fact sheet)
+src/data/spikes/tnbc-core.ts:179 tnbc summary: "Applied to 2.4 million, a share of 10 to 15 percent would be about 240,000 to 370,000 people a year" (arithmetic on GLOBOCAN 2024)
+src/data/spikes/tnbc-core.ts:201 tnbc burden: "2.43 million breast cancers a year worldwide (GLOBOCAN 2024)"
+src/data/cancers.ts:12 tnbc burden scalar (overridden by the spike patch, not rendered): "roughly 200,000 cases per year worldwide", undated and below 10-15% of either edition; left untouched because it does not render
+src/data/breast-subtypes.ts:186 tnbc-early burden: "roughly 200,000 triple-negative breast cancers diagnosed each year" (undated, unsourced) - removed in this round
+src/data/cancers.ts:66 breast-hr-positive burden "2.3 million breast cancers diagnosed each year" (GLOBOCAN 2020/2022-era figure, undated; not in this group, seen in passing)
+
+== c07-breast
+Note: these pages already use the GLOBOCAN 2024 breast fact sheet (gco.iarc.who.int .../20-breast-fact-sheet.pdf, headed "GLOBOCAN 2024": 2 434 087 cases, rank 2; 693 660 deaths, rank 4), not 2022. All figures below match that sheet.
+src/data/spikes/breast-core.ts:335   breast-cancer burden: "2,434,087 new breast cancers and 693,660 deaths a year, second for cases ... fourth for deaths (GLOBOCAN 2024)" -- correct, dated.
+src/data/spikes/breast-core.ts:7     file header comment repeats 2,434,087 and 693,660 (GLOBOCAN 2024) -- comment only.
+src/data/spikes/breast-core.ts:155   SRC.globocan label "GLOBOCAN breast fact sheet (IARC Global Cancer Observatory, 2024 estimates)".
+src/data/spikes/breast-hr-positive.ts:396   breast-hr-positive burden: "of the order of 1.7 million of the 2,434,087 breast cancers diagnosed worldwide each year (GLOBOCAN 2024)" -- derived (70.1% x total), dated.
+src/data/spikes/breast-hr-positive.ts:396   breast-hr-positive burden previously cited "693,660 annual breast cancer deaths"; that clause was removed in this round (unsourced attribution of most deaths to HR+ disease).
+src/data/spikes/breast-her2-positive.ts:309  breast-her2-positive burden: "roughly 400,000 of the 2,434,087 new breast cancers GLOBOCAN estimated worldwide for 2024" -- derived (15-20% x total); was undated "per year", dated in this round.
+src/data/spikes/tnbc-core.ts:179     (tnbc group, not mine) also carries 2,434,087.
+
+== c08-hpb-gi
+src/data/spikes/gallbladder-core.ts:132  gallbladder summary "World:" already on GLOBOCAN 2024 (named): 126,384 cases (22nd, ASR 1.2), 92,029 deaths (20th, ASR 0.82); Asia 72.4%, Europe 10.0%, LatAm 8.8%, N America 4.3%; Bolivia 6.7 (both sexes), 6.0 (men), Chile 7.6 (women). Verified against the GCO fact sheet printed "GLOBOCAN 2024". No change needed in the 2024 round.
+src/data/spikes/hcc.ts:301  hcc burden: "In 2022 GLOBOCAN estimated about 866,000 liver cancer cases worldwide, ~80% in Asia and Africa" and "about 759,000 deaths in 2022" (dated this round; 2022 dataset: 866,136 cases, 758,725 deaths; Asia 70.1% + Africa 8.5%). GLOBOCAN 2024 sheet: 843,045 cases, 732,489 deaths.
+src/data/spikes/gastric.ts:194  gastric summary: "In 2022 GLOBOCAN estimated about 970,000 new cases ... and about 660,000 deaths" (dated this round; 2022: 968,784 / 660,175).
+src/data/spikes/gastric.ts:195  gastric burden: "About 970,000 cases in 2022 (GLOBOCAN), the fifth most common cancer ... about 660,000 deaths in 2022, fifth among cancers" (dated this round; ranks 5th/5th in 2022).
+src/data/spikes/esophageal.ts:178  esophageal summary: "In 2022 GLOBOCAN estimated about 511,000 new cases (the eleventh most common cancer) ... 445,000 deaths (seventh among cancers)" (dated and ranks corrected this round; 2022: 511,054 / 445,391; were "seventh" and "sixth").
+src/data/spikes/esophageal.ts:179  esophageal burden: "About 511,000 cases in 2022 (GLOBOCAN) ... about 445,000 deaths in 2022" (dated this round).
+src/data/cancers.ts:203  gastric base record burden "~1 million cases per year, concentrated in East Asia." (undated GLOBOCAN-scale figure; not in this group's claim list, probably overridden by the spike patch).
+src/data/cancers.ts:227  esophageal base record burden "~600,000 cases per year" (undated; matches GLOBOCAN 2020 ~604,000, not 2022's 511,054; not in this group's list).
+src/data/cancers.ts:244  hcc base record burden "~900,000 liver cancer cases per year" (undated; not in this group's list).
+src/data/cancers.ts:262  cholangiocarcinoma base record burden "Rare (~200,000 per year)" (no GLOBOCAN site for biliary tract cancer; unsourced; not in this group's list).
+src/data/cancers.ts:292  "~600,000 cases per year." (another base record, undated; not in this group's list).
+
+== c09-lymphoma
+c09-lymphoma: GLOBOCAN-derived figures seen on the six lymphoma cancer pages (candidates for the 2024 round)
+src/data/spikes/lymphoma-core.ts:108  non-hodgkin-lymphoma burden: "about 544,000 cases and 260,000 deaths worldwide in 2020 (GLOBOCAN)". Matches the GLOBOCAN 2020 fact sheet (544 352 cases, 259 793 deaths; read from the archived gco.iarc.fr 2020 fact sheet) and is dated 2020, so marked correct. It is two editions old: GLOBOCAN 2022 gives 553,389 / 250,679 (lymphoma-geography.ts:273-274) and the GLOBOCAN 2024 fact sheet currently served gives 562 793 cases / 234 903 deaths. Cited via SRC.globocan (lymphoma-core.ts:74, Sung 2021, 10.3322/caac.21660). Recommend moving this line to 2024 in the 2024 round.
+src/data/spikes/lymphoma-core.ts:74  SRC.globocan link label "GLOBOCAN 2020 global cancer statistics (Sung, CA Cancer J Clin 2021)".
+src/data/spikes/hodgkin-lymphoma.ts:164  hodgkin-lymphoma burden: "About 84,500 new cases and 19,500 deaths a year worldwide (GLOBOCAN 2024)". Matches the GLOBOCAN 2024 fact sheet now served (84 495 cases, 19 515 deaths). Already on 2024 (round 1). Correct.
+src/data/spikes/hodgkin-lymphoma.ts:220  link "GLOBOCAN 2024: Hodgkin lymphoma fact sheet" (gco.iarc.who.int .../33-hodgkin-lymphoma-fact-sheet.pdf).
+src/data/spikes/lymphoma-geography.ts:273-278  GLOBOCAN 2022 world and country rows (NHL 553,389 cases / 250,679 deaths; HL 82,469 / 22,733) on the geography facet; not in this group's claim list, not checked, listed for the 2024 round. lymphoma-geography.ts:39-40 already carries GLOBOCAN 2024 fact-sheet labels (NHL 562,793; HL 84,495), so the facet mixes two editions.
+No GLOBOCAN figure appears on the dlbcl, follicular-lymphoma, mantle-cell-lymphoma or peripheral-t-cell-lymphoma pages in this group (the dlbcl "~150,000 a year worldwide" line had no source and was replaced with Wikipedia and Lymphoma Action incidence figures).
+
+== c10-blood-other
+src/data/spikes/multiple-myeloma.ts:325  multiple-myeloma burden: "In 2022, GLOBOCAN estimated ~188,000 new cases ... ~121,000 deaths worldwide in 2022" (GLOBOCAN 2022 World: 187,952 / 121,388; dated this round)
+src/data/cancers.ts:618  multiple-myeloma base burden: "~190,000 cases per year" (GLOBOCAN 2022, undated; overridden on the page by the spike patch burden, not edited)
+src/data/cancer-parents-wave2.ts:83  leukaemia burden: "In 2022, GLOBOCAN estimated about 487,000 new cases and 305,000 deaths worldwide" (GLOBOCAN 2022 World: 487,294 / 305,405; dated this round)
+# Part B (aml, all-leukemia, cll): no GLOBOCAN-derived figure found. GLOBOCAN reports leukaemia as one site and does not split AML, ALL or CLL.
+# Worldwide figures seen with no stated source (not GLOBOCAN-attributable, left unchanged as unreachable):
+src/data/spikes/aml.ts:413 burden "120,000 worldwide a year" (AML) — no source on the record states it
+src/data/spikes/cll.ts:273 burden "100,000 worldwide a year" (CLL) — no source on the record states it
+src/data/cancers.ts:441 glioblastoma burden: "In 2022, GLOBOCAN estimated about 322,000 new cancers of the brain and central nervous system worldwide" (GLOBOCAN 2022 World, code 31 C70-72: 321,731 new cases; previously undated "About 300,000 CNS tumours occur per year")
+src/data/globocan-map.ts:34 glioblastoma maps to GLOBOCAN code 31 (brain, CNS; shared) - the per-country table on the page uses this
+Neuroblastoma and sarcoma: no GLOBOCAN-derived figures (GLOBOCAN has no separate estimate; see globocan-map.ts:36, :40)
+
+== c11-skin-gyn
+src/data/cancers.ts:415  melanoma burden: "In 2022, GLOBOCAN estimated about 330,000 new cases of melanoma worldwide" (dated this round; was undated "about 330,000 cases per year")
+src/data/cancers.ts:679  skin-cancer burden: "about 1.2 million non-melanoma skin cancers and 325,000 melanomas recorded in 2020 (GLOBOCAN)" (GLOBOCAN 2020 via Sung 2021: NMSC 1,198,073, melanoma 324,635; dated, left as is; 'recorded' should read 'estimated'; the site otherwise uses the 2022 edition)
+src/data/spikes/ovarian.ts:308  ovarian summary: "about 325,000 new cases worldwide in 2022, GLOBOCAN" (dated this round; was "~320,000 new cases a year")
+src/data/spikes/ovarian.ts:309  ovarian burden: "In 2022, GLOBOCAN estimated about 325,000 new cases ... GLOBOCAN estimated about 207,000 deaths in 2022" (dated this round; was "~320,000 cases per year ... ~200,000 deaths per year")
+src/data/cancers.ts:357  ovarian base-record burden: "~320,000 cases per year; most diagnosed at stage III-IV." (undated; not in this group's claim list, probably overridden by the spike burden; still undated in the source file)
+src/data/spikes/cervical.ts:242  cervical summary: "In 2022, GLOBOCAN estimated that about 660,000 women were diagnosed and 350,000 died" (dated this round)
+src/data/spikes/cervical.ts:243  cervical burden: "In 2022, GLOBOCAN estimated ~660,000 cases and ~350,000 deaths" (dated this round)
+src/data/spikes/cervical.ts:283  cervical openProblems: "GLOBOCAN estimated 350,000 deaths in 2022" (dated this round)
+src/data/cancers.ts:394  cervical base-record burden: "~660,000 cases and 350,000 deaths ..." (undated; not in this group's list; probably overridden by the spike)
+src/data/spikes/endometrial.ts:193  endometrial summary: "about 420,000 new cases worldwide in 2022, GLOBOCAN" (dated this round)
+src/data/spikes/endometrial.ts:194  endometrial burden: "In 2022, GLOBOCAN estimated about 420,000 new cases ... about 98,000 deaths worldwide in 2022" (dated this round; GLOBOCAN site is corpus uteri)
+src/data/cancers.ts:376  endometrial base-record burden: "~420,000 cases per year ..." (undated; not in this group's list; probably overridden by the spike)
+
+== cn-a
+src/data/china.ts:35  newCases  "about 4.8 million new cancer cases in 2022"  (source: 4,824,700)
+src/data/china.ts:36  deaths    "about 2.6 million cancer deaths in 2022"    (source: 2,574,200)
+src/data/china.ts:37  asir      "age-standardised incidence 201.61 per 100,000"  (2022; the sentence itself does not repeat the year, the card does through newCases/deaths and the source label)
+src/data/china.ts:38  asmr      "age-standardised mortality 96.47 per 100,000"   (2022; same note)
+src/data/china.ts:39  topFive   "lung, colorectal, thyroid, liver and stomach cancers made up 57.42% of new cases" (2022)
+src/data/china.ts:45  survival  "age-standardised five-year relative survival ... 30.9% in 2003 to 2005 to 43.7% in 2019 to 2021" (NCC survival series via Chin J Cancer Res 2025, not GLOBOCAN; listed for completeness)
+
+== cn-b
+src/data/china.ts:393  ncc-china summary: "about 4.8 million new cases and 2.6 million deaths in 2022 (age-standardised incidence 201.61 and mortality 96.47 per 100,000) ... 57.42% of cases". Source: Han B et al., J Natl Cancer Cent 2024 (10.1016/j.jncc.2024.01.006). The NCC released these at the same time as GLOBOCAN 2022 for China, and they are dated 2022 on the page. Verdict correct. Update only if the NCC publishes a newer national report; GLOBOCAN 2024 China figures could be added beside them.
+src/data/china.ts:499  jupiter-06 summary (removed in this round): "a cancer where China has about half the world's cases" (oesophageal cancer share; GLOBOCAN-derived, undated, unsourced). Removed. If restored, cite GLOBOCAN 2024 by edition and give the share as a dated figure.
+
+== de
+src/data/country-de.ts:26 de-two-sets-of-numbers plain: "IARC GLOBOCAN estimates 605,805 new cancers in Germany for 2022" (all cancers incl. NMSC, code 39; dated 2022, matches repo GLOBOCAN 2022 data). Served GCO fact sheet is now GLOBOCAN 2024: 566,587 new cases, ASR 270.9.
+src/data/country-de.ts:27 de-two-sets-of-numbers detail: "GLOBOCAN 274.24 for both sexes" (2022 ASR World, all cancers incl. NMSC; matches repo 2022 data; 2024 fact sheet gives 270.9). Context says GLOBOCAN 2022 only via plain; detail figure is undated within its sentence.
+# parts 3-5 (lines 212 onward): no GLOBOCAN-derived figures.
+
+== gb
+src/data/country-gb.ts:28 GB_PROFILE shape detail: GLOBOCAN 2022 UK all cancers 454,954 cases, 181,807 deaths, ASR incidence 307.8, ASR mortality 98.3, cumulative risk 29.7% (dated "GLOBOCAN 2022", correct for 2022)
+src/data/country-gb.ts:28 GB_PROFILE shape detail: mortality/incidence ASR ratios UK 0.32, US 0.22, Australia 0.18, Canada 0.28, Sweden 0.27 (derived from GLOBOCAN 2022; corrected this round)
+src/data/country-gb.ts:27 GB_PROFILE shape plain: "On the same GLOBOCAN estimates it has a lower incidence rate than the United States, Australia, Canada, Denmark, France or the Netherlands, and a death rate close to or above most of them" (GLOBOCAN 2022 ranking, undated in plain)
+src/data/country-gb.ts:30 link label "GLOBOCAN 2022: United Kingdom fact sheet (IARC)" (PDF now answers 403; may be the 2024 edition when it returns)
+
+== il
+GLOBOCAN-derived figures on /countries/il/ (src/data/country-il.ts), candidates for the GLOBOCAN 2024 round.
+Both are ranks the Israel National Cancer Registry quotes from the Global Cancer Observatory (GLOBOCAN 2022). The page now dates both as 2022 estimates.
+src/data/country-il.ts:45  (IL_PROFILE "shape", detail) - Israel 40th of the world for incidence (ASR 244.3, all cancers excl. NMSC) and 110th for mortality (ASR 82.6), per the INCR 2021 update (Aug 2024), which says the GCO data are 'מעודכנים לשנת 2022'.
+src/data/country-il.ts:65  (IL_PROFILE "cervical", detail) - Israel 159th of 185 populations for cervical cancer incidence (ASR 6.2), per the INCR cervical report (Jan 2025), citing Globocan 2022 (accessed 13 Jan 2025).
+Also noted, not on the page: the INCR breast report (Sept 2021) cites Globocan 2020 (Israel 26th for breast incidence, ASR 78.3, and 69th for mortality, ASR 16.7). The ICA annual report 2025 gives an 'estimated 33,570 new cancer cases in Israel in 2024', with no source named.
+
+== in-extras
+# GLOBOCAN-derived figures seen by group in-extras (accuracy round 2, 2026-11-03). All are GLOBOCAN 2022 values, dated as such unless noted.
+src/data/country-in.ts:16  India 2022: 1.41 million cases, 917,000 deaths, ASR incidence 98.5 per 100,000 (vs US 367); lip and oral cavity ~144,000; head and neck sites > breast (192,020); cervix 127,500 cases / 79,900 deaths (same paragraph, dated GLOBOCAN 2022)
+src/data/country-in.ts:18  link label "GLOBOCAN 2022: India fact sheet" -> URL now serves the GLOBOCAN 2024 edition (1,562,581 cases, ASR 104.1, 901,828 deaths)
+src/data/country-in.ts:162 gallbladder India 2022: 21,780 cases, 16,407 deaths, world 122,491, ASR 1.51, 19th in the world, "about a sixth"
+src/data/country-in.ts:163 "GLOBOCAN's count-based share is higher" (relative to Dutta's ~10%), derived from the 2022 counts
+src/data/country-in.ts:170 link label "GLOBOCAN 2022 (IARC Cancer Today)" -> gco.iarc.who.int/today now defaults to 2024
+src/data/country-extras.ts:35-70  incidence and mortality ASR (code 39, both sexes) for 31 countries: US CN GB IN IT DE JP FR KR CA ES AU NL BR CH SE TR IR PL BE EG SA DK AT IL SG RU MX GR PT NO (re-read against public/globocan/countries.json on 2026-11-03; header says GLOBOCAN 2022; undated on the rendered /countries/ table except the page note)
+src/data/country-extras.ts:31-33  gco() helper builds gcoUrl as "<num>-<num padded>-fact-sheet.pdf", e.g. 410-410-fact-sheet.pdf; these return 403 (no such key). Real files are "<num>-<country-slug>-fact-sheet.pdf" and now hold 2024 figures. Every gcoUrl in this file is a dead link.
+src/data/india.ts:141 cervavac summary: "about 127,500 cervical cancer cases and 79,900 deaths a year (GLOBOCAN 2022)" (seen, not in my list)
+
+== jp
+GLOBOCAN-derived figures in src/data/country-jp.ts (candidates for the GLOBOCAN 2024 round)
+src/data/country-jp.ts:44 (JP_PROFILE registry card, detail) - "GLOBOCAN's estimate for Japan in 2022, which the table below renders, is 1,005,157 cases and 426,278 deaths, with an age-standardised incidence of 267.1 and mortality of 78.6 per 100,000: a lower age-standardised incidence than the United States on a far older population." Dated 2022; matches public/globocan/countries.json JPN code 39 [1005157, 267.08, 426278, 78.63]; USA ASR incidence 366.95. Verdict correct.
+src/data/country-jp.ts:17-18 (file header comment) - "The GLOBOCAN table on the page carries the age-standardised figures" (no number).
+src/data/country-jp.ts:54 (JP_PROFILE mix card, plain) - "Age for age Japan has a lower cancer rate than most of Western Europe" - an undated GLOBOCAN-style age-standardised comparison with no figure; not in the claim list; recheck against 2024 ASRs.
+
+== ru
+src/data/country-ru.ts:68 RU_REGISTRY how-it-differs detail: GLOBOCAN 2022 Russia non-melanoma skin cancer 21,285 new cases (dated "GLOBOCAN 2022", matches 2022 cache, correct for 2022)
+src/data/country-ru.ts:68 RU_REGISTRY how-it-differs detail: GLOBOCAN 2022 Russia all cancers 635,560 new cases "for 2022" (dated, correct for 2022; 2024 fact sheet gives 633,830)
+src/data/country-ru.ts:68 RU_REGISTRY how-it-differs detail: GLOBOCAN data file method codes 1 (incidence) and 1 (mortality) for Russia (2022 country record; recheck in 2024 data)
+src/data/country-ru.ts:68 RU_REGISTRY how-it-differs detail: "about a quarter as many" (21,285 against about 94,000 registry NMSC cases), derived from GLOBOCAN 2022
+src/data/country-ru.ts:246 RU_GAPS contradictions detail: registry NMSC "about four times the GLOBOCAN estimate for 2022" (dated, derived from GLOBOCAN 2022)
+src/data/country-ru.ts:245 RU_GAPS contradictions plain: "disagrees ... with GLOBOCAN in one that matters" (undated reference to the same 2022 comparison)
+src/data/country-ru.ts:28 RU_PROFILE shape link label "GLOBOCAN 2022: Russian Federation fact sheet (IARC)" (URL now serves the GLOBOCAN 2024 edition)
+src/data/country-ru.ts:239 RU_GAPS unsourced link label "GLOBOCAN 2022: Russian Federation fact sheet (IARC)" (URL now serves the GLOBOCAN 2024 edition)
+src/data/country-ru.ts:235 RU_GAPS unsourced detail: "Cancer mortality on this page therefore comes from GLOBOCAN rather than from Rosstat" (no GLOBOCAN mortality figure is actually stated on the page; the 2024 round may want to add or drop this)
+
+== us
+GLOBOCAN-derived figures, group us (src/data/country-us.ts), candidates for the GLOBOCAN 2024 round
+src/data/country-us.ts:32  us-burden detail: "GLOBOCAN 2022 puts the American age-standardised incidence at 366.95 per 100,000 and mortality at 82.33, the fourth highest incidence of 186 countries (behind Australia, New Zealand and Denmark) on 2.38 million cases, and a ratio of age-standardised mortality to incidence of 0.22, the second lowest of the 33 countries with more than 100,000 cases."
+  - Dated GLOBOCAN 2022; matches public/globocan/countries.json (USA code 39: 2,380,189 cases, ASR 366.95, 605,761 deaths, ASR 82.33). Rank 4/186 and second-lowest ratio among 33 countries >100,000 cases recomputed from that file. The 0.22 is ASR/ASR; the count ratio is 0.25 (also second lowest). Label fixed this round.
+  - The 2024 round must recompute the rank (of 186), the ratio and its rank, not just the two rates.
+src/data/country-us.ts:35  us-burden link label "GLOBOCAN 2022: United States fact sheet (IARC)" -> URL .../populations/840-united-states-of-america-fact-sheet.pdf now serves the GLOBOCAN 2024 edition ("Statistics at a glance, 2024": 2,462,729 cases, incidence ASR 358.5, 632,166 deaths, mortality ASR 80.0). The link no longer shows the 2022 numbers it is cited for. Verdict stale, left for the 2024 round.
+src/data/country-us.ts:26  comment: "GLOBOCAN 2022 figures render live from public/globocan/countries.json" (the page component renders more GLOBOCAN 2022 figures from that file; not in this claim list).
+
+== widen-followups
+src/data/cancers.ts:121 nsclc burden: about 1.8 million lung cancer deaths worldwide in 2022 (GLOBOCAN 2022 1,817,469)
+src/data/spikes/nsclc.ts:281 nsclc summary: ~1.8 million deaths in 2022
+src/data/cancer-parents-wave2.ts:62 lung-cancer burden: about 2.5 million new cases and 1.8 million deaths in 2022 (2,480,675 / 1,817,469)
+src/data/cancers.ts:357 ovarian base burden: ~325,000 new cases in 2022 (324,603)
+src/data/cancers.ts:376 endometrial base burden: ~420,000 new cases in 2022 (420,368)
+src/data/cancers.ts:394 cervical base burden: ~660,000 cases and ~350,000 deaths in 2022 (662,301 / 348,874)
+src/data/cancers.ts:619 multiple-myeloma base burden: ~188,000 new cases in 2022 (187,952)
+src/data/spikes/multiple-myeloma.ts:322 myeloma spike burden: ~188,000 cases and ~121,000 deaths in 2022 (not edited here)
+src/data/spikes/ovarian.ts:309, src/data/spikes/endometrial.ts:194, src/data/spikes/cervical.ts:243 spike burdens already dated 2022 (not edited here)
+src/data/spikes/aml.ts:413 "120,000 worldwide a year" for AML: undated, and GLOBOCAN has no AML-specific site (leukaemia all types 487,294); source unclear, not edited (aml.ts belongs to another sweep)
+
+== widen-followups2
+src/data/spikes/urothelial.ts:275 summary: bladder "ninth most common cancer worldwide in GLOBOCAN 2022" (the GLOBOCAN 2024 fact sheet ranks it 8th, 635,264 cases)
+src/data/spikes/urothelial.ts:276 burden: "about 614,000 new bladder cancers" and "~220,000 deaths in 2022" (GLOBOCAN 2022; GLOBOCAN 2024 gives 635,264 cases and 227,626 deaths)

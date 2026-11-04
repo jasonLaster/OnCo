@@ -209,7 +209,7 @@ export const nciPaediatricCancers: CancerInput[] = [
     standardOfCare: [
       { setting: "Newly diagnosed, no or limited hypothalamic involvement", approach: "Gross total resection (transsphenoidal or craniotomy) with endocrine replacement; observation with serial MRI.", refs: ["mri"], guideline: { version: "NCI PDQ: childhood craniopharyngioma", url: PDQ("brain/hp/child-cranio-treatment-pdq") } },
       { setting: "Hypothalamic involvement", approach: "Hypothalamus-sparing subtotal resection or cyst drainage followed by conformal or proton radiotherapy; intracystic therapy for predominantly cystic tumours.", refs: ["proton-therapy", "imrt-igrt"], guideline: { version: "KRANIOPHARYNGEOM 2007; NCI PDQ", url: PDQ("brain/hp/child-cranio-treatment-pdq") } },
-      { setting: "Papillary craniopharyngioma, BRAF V600E", approach: "BRAF plus MEK inhibition (vemurafenib-cobimetinib per Alliance A071601, or dabrafenib-trametinib) before or instead of extensive surgery; radiotherapy after response.", refs: ["dabrafenib-trametinib", "vemurafenib", "cobimetinib"], guideline: { version: "Alliance A071601 (Lancet Oncology 2024)", url: "https://doi.org/10.1016/S1470-2045(23)00492-9" } },
+      { setting: "Papillary craniopharyngioma, BRAF V600E", approach: "BRAF plus MEK inhibition (vemurafenib-cobimetinib per Alliance A071601, or dabrafenib-trametinib) before or instead of extensive surgery; radiotherapy after response.", refs: ["dabrafenib-trametinib", "vemurafenib", "cobimetinib"], guideline: { version: "Alliance A071601 (NEJM 2023)", url: "https://doi.org/10.1056/NEJMoa2213329" } },
       { setting: "Survivorship", approach: "Lifelong endocrinology follow-up, management of hypothalamic obesity, sleep and behavioural sequelae; structured survivorship care.", refs: ["survivorship-care-plan"] },
     ],
     stateOfArt: [
@@ -224,7 +224,7 @@ export const nciPaediatricCancers: CancerInput[] = [
       { year: 2014, title: "BRAF V600E found in papillary craniopharyngioma", note: "Brastianos and colleagues (Nature Genetics) show near-universal BRAF V600E in PCP and CTNNB1 in ACP.", refs: ["braf"] },
       { year: 2015, title: "First dramatic response to BRAF/MEK inhibition in papillary craniopharyngioma", note: "Case report (JNCI) leads to the Alliance A071601 trial.", refs: ["dabrafenib-trametinib"] },
       { year: 2016, title: "Hypothalamus-sparing surgery recommended", note: "KRANIOPHARYNGEOM 2007 shows radical resection with hypothalamic injury worsens quality of life without improving control." },
-      { year: 2024, title: "Alliance A071601 published", note: "Vemurafenib plus cobimetinib produces responses in nearly all BRAF V600E papillary craniopharyngiomas (Lancet Oncology).", refs: ["vemurafenib", "cobimetinib"] },
+      { year: 2023, title: "Alliance A071601 published", note: "Vemurafenib plus cobimetinib produces responses in nearly all BRAF V600E papillary craniopharyngiomas (New England Journal of Medicine).", refs: ["vemurafenib", "cobimetinib"] },
     ],
     pipeline: ["dabrafenib-trametinib", "proton-therapy", "glp1-agonists-cancer-risk"],
     openProblems: [
@@ -238,7 +238,7 @@ export const nciPaediatricCancers: CancerInput[] = [
     related: ["pituitary-tumours", "paediatric-low-grade-glioma", "cns-germ-cell-tumours", "meningioma"],
     links: [
       { label: "NCI PDQ: childhood craniopharyngioma", url: PDQ("brain/hp/child-cranio-treatment-pdq") },
-      { label: "Alliance A071601: BRAF/MEK inhibition in papillary craniopharyngioma (Lancet Oncology 2024)", url: "https://doi.org/10.1016/S1470-2045(23)00492-9" },
+      { label: "Alliance A071601: BRAF/MEK inhibition in papillary craniopharyngioma (NEJM 2023)", url: "https://doi.org/10.1056/NEJMoa2213329" },
       { label: "Brastianos 2014: exome sequencing of craniopharyngioma (Nature Genetics)", url: "https://doi.org/10.1038/ng.2868" },
     ],
     tags: ["nci-coverage", "paediatric", "cns"],

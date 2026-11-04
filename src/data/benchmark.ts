@@ -150,7 +150,7 @@ export const benchmark: Question[] = [
     ["beta-then-alpha", "targeted-alpha-therapy", "ac225-psma", "alpha-vs-beta"],
     [["alpha"], ["actinium", "225ac", "ac-225"], ["double-strand", "energy", "let", "clustered"], ["supply", "salivary", "xerostomia", "toxicity"]]),
   Q("prostate-26", "What is the first FDA-cleared AI pathology tool that predicts treatment benefit, and in which cancer?", "factual", 2, "analyst",
-    "ArteraAI Prostate (de novo authorisation, August 2025) predicts prognosis and benefit from short-term androgen deprivation with radiotherapy in localised prostate cancer.",
+    "ArteraAI Prostate (de novo authorisation, July 2025) predicts prognosis and benefit from short-term androgen deprivation with radiotherapy in localised prostate cancer.",
     ["artera-ai-prostate", "digital-pathology-ai"],
     [["artera"], ["prostate"], ["androgen deprivation", "adt", "hormone"], ["2025"]]),
   Q("bladder-27", "What regimen replaced platinum chemotherapy as first-line treatment for advanced bladder cancer, and how big was the effect?", "factual", 2, "clinician",

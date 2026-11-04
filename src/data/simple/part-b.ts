@@ -117,7 +117,7 @@ export const simpleB: Record<string, string> = {
   devices: "Machines that treat cancer with electric fields, heat, or sound rather than chemicals.",
 
   // ---- pairings ----
-  "amivantamab-plus-lazertinib": "Blocking EGFR from inside with a pill and from outside with an antibody beat the standard pill and added more than a year of life.",
+  "amivantamab-plus-lazertinib": "Blocking EGFR from inside with a pill and from outside with an antibody beat the standard pill and helped people live longer: 60 in 100 were alive at three years, against 51 in 100.",
   "pd1-plus-chemo-pdl1-low": "When the tumour shows little PD-L1, an immune drug alone is weak, but adding chemotherapy makes it work for most patients.",
   "targeted-before-io-nsclc": "If a lung cancer has a targetable fault, give the pill first; immune drugs work poorly there and raise the risk of side effects afterwards.",
   "g12d-plus-pan-ras": "A drug that hits the exact fault plus a drug that hits every RAS protein, so the tumour cannot escape through a cousin.",
@@ -265,7 +265,7 @@ export const simpleB: Record<string, string> = {
   "veritac-2": "The trial that got the first PROTAC approved, with benefit only in tumours with ESR1 faults.",
   adaura: "Showed a targeted pill after lung cancer surgery halves the risk of death.",
   flaura2: "Adding chemotherapy to osimertinib helped people live longer.",
-  mariposa: "The first regimen to beat osimertinib in EGFR lung cancer, adding more than a year of life.",
+  mariposa: "The first regimen to beat osimertinib in EGFR lung cancer on survival: 60 in 100 alive at three years, against 51 in 100.",
   "tropion-lung01": "A TROP2 antibody-drug helped in one type of lung cancer but not another, and did not clearly extend life.",
   "codebreak-300": "Showed that a KRAS drug needs an EGFR antibody partner to work in bowel cancer.",
   "dellphi-304": "The first immune-cell-recruiting drug to help people live longer with a common solid tumour.",

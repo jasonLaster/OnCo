@@ -68,7 +68,7 @@ export const colorectalAdjuvantPapers: PaperInput[] = [
 // ======================= RECTAL SURGERY AND RADIOTHERAPY =======================
 export const colorectalRectalPapers: PaperInput[] = [
   p({ id: "paper-heald-mesorectum-rectal-cancer-surgery-br-j-surg-1982", name: "The mesorectum in rectal cancer surgery: the clue to pelvic recurrence?",
-    tldr: "Bill Heald noticed cancer cells hiding in the fatty envelope around the rectum, centimetres below the tumour, and started removing the whole envelope intact. Pelvic recurrence fell from a quarter of patients to almost none.",
+    tldr: "Bill Heald noticed cancer cells hiding in the fatty envelope around the rectum, centimetres below the tumour, and started removing the whole envelope intact. None of his first 50 curative operations had a pelvic recurrence after two years.",
     summary: "Heald, Husband and Ryall described five cases in which minute foci of adenocarcinoma were demonstrated in the mesorectum several centimetres distal to the apparent lower edge of a rectal cancer; in two of these there was no other evidence of lymphatic spread. In orthodox anterior resection much of this tissue remains in the pelvis, and the authors suggested that these foci might cause suture-line or pelvic recurrence.\n\nTotal excision of the mesorectum had therefore been carried out as part of over 100 consecutive anterior resections. Fifty of these, classified as curative or conceivably curative, had been followed for over two years with no pelvic or staple-line recurrence.",
     journal: "British Journal of Surgery", year: 1982, doi: "10.1002/bjs.1800691019", pmid: "6751457",
     authors: "Heald RJ, Husband EM, Ryall RD.", paperType: "observational", changedPractice: true, participants: 100,

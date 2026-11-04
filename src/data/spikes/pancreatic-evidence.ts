@@ -71,9 +71,9 @@ const spike: Spike = {
     ],
     pipeline: [...pancreaticIdeas.map((i) => i.id)],
     openProblems: [
-      "Neither the new-onset diabetes score (3.6 percent prevalence among high scorers) nor carrier surveillance (7 of 9 CAPS5 cancers at stage I) has been tested prospectively at population scale, and CA 19-9 cannot be read in the Lewis-negative tenth of patients; four in five patients still present with disease that cannot be removed.",
+      "Neither the new-onset diabetes score (3.6 percent prevalence among high scorers) nor carrier surveillance (7 of 9 CAPS5 cancers at stage I) has been tested prospectively at population scale, and CA 19-9 cannot be read in the Lewis-negative tenth of patients; most patients still present with disease that cannot be removed.",
       "Two perioperative trials (PREOPANC-3, Alliance A021806) are the only ones comparing chemotherapy before and after surgery with the current adjuvant standard; until they read out, neoadjuvant treatment for clearly resectable disease rests on secondary endpoints.",
-      "Enzyme replacement reached 21.7 percent of UK patients in primary care data and cachexia has a mechanism-based drug in phase 2 but no phase 3; both determine whether combination chemotherapy is delivered, and both sit outside the trials that set the standards.",
+      "Enzyme replacement reached 21.7 percent of UK patients in primary care data and cachexia has a mechanism-based drug (ponsegromab) only in a phase 2/3 trial that has not reported (NCT06989437); both determine whether combination chemotherapy is delivered, and both sit outside the trials that set the standards.",
     ],
     terms: ["whipple", "resectability", "resection-margins", "neoadjuvant-adjuvant", "total-neoadjuvant-therapy", "tumour-markers", "gbrca-mutation", "germline-vs-somatic", "kras-mutation-subtypes", "neoantigen", "obstructive-jaundice", "biliary-stent", "performance-status", "ppv"],
     trials: ["espac-4", "espac-5", "conko-001", "lap07", "precede", "nct05968326", "nct07491445", "nct07252232", "nct07805954", "nct07522073"],

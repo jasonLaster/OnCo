@@ -12,6 +12,11 @@
  *   verdict  npx tsx scripts/accuracy-sample.ts verdict <sample.json> <claim-id> <verdict> "<what the source says>" [<source url>]
  *   report   npx tsx scripts/accuracy-sample.ts report <sample.json> [--ledger]
  *            Per-stratum rates with Wilson 95% intervals; --ledger appends (or replaces) the round in ledger.json.
+ *   sweep    npx tsx scripts/accuracy-sample.ts sweep <out.json> --round N --scope "<what was read>" <verdicts.jsonl>...
+ *            A census rather than a sample: every claim in a scope, one JSON verdict per line (a Claim plus `file`
+ *            and `sourceType`; verdict `skip` for a sentence whose only digits are part of a name). Skips are
+ *            counted and dropped; the rest is written in the sample format, so `report --ledger` tracks it as a
+ *            round. Verdicts record the text as it stood before any fix, so the rate is the rate readers met.
  *
  * Strata and weights. Each stratum is a kind of claim a reader acts on (a survival figure, an approval, a trial's
  * phase, a paper's identifiers, a company's owner, a person's post). Within a stratum, claims are drawn without
@@ -41,8 +46,14 @@ export type Claim = {
   id: string; stratum: Stratum; recordId: string; kind: string; route: string; field: string; claim: string;
   sources: string[]; weight: number; isNew: boolean;
   verdict?: Verdict; note?: string; checkedSource?: string; fixed?: string;
+  /** Sweep rounds only: the data file the sentence lives in, and the kind of source it was read against. */
+  file?: string; sourceType?: string;
 };
-export type Sample = { drawn: string; seed: number; corpusSize: number; quotas: Record<string, number>; verdicts: Record<Verdict, string>; claims: Claim[] };
+export type Sample = {
+  drawn: string; seed: number; corpusSize: number; quotas: Record<string, number>; verdicts: Record<Verdict, string>; claims: Claim[];
+  /** A sweep reads every claim in a defined scope rather than drawing a sample; its rate is a census of that scope. */
+  method?: "sample" | "sweep"; round?: number; scope?: string; skipped?: number;
+};
 
 export const STRATA = {
   "paper-identifiers": 15, "paper-findings": 20, "trial-facts": 25, "drug-approvals": 20, "drug-numbers": 10,
@@ -178,6 +189,8 @@ function countryCards(): Array<[string, Card[]]> {
   return out;
 }
 
+const VERDICT_TEXT: Record<Verdict, string> = { correct: "the cited source says this", stale: "a newer primary source says otherwise", imprecise: "right direction, wrong detail (overstated, wrong cohort, altered interval)", wrong: "the source does not say this or says the opposite; an identifier for another paper", unsourced: "no source on the record bears on the claim", unreachable: "the source could not be read; not counted as an error" };
+
 export function draw(seed: number, scale = 1): Sample {
   const rand = rng(seed);
   const pool = candidates();
@@ -197,7 +210,7 @@ export function draw(seed: number, scale = 1): Sample {
   }
   return {
     drawn: new Date().toISOString().slice(0, 10), seed, corpusSize: graph().entities.length, quotas,
-    verdicts: { correct: "the cited source says this", stale: "a newer primary source says otherwise", imprecise: "right direction, wrong detail (overstated, wrong cohort, altered interval)", wrong: "the source does not say this or says the opposite; an identifier for another paper", unsourced: "no source on the record bears on the claim", unreachable: "the source could not be read; not counted as an error" },
+    verdicts: VERDICT_TEXT,
     claims,
   };
 }
@@ -233,6 +246,30 @@ function main() {
     console.log(`${sample.claims.length} claims (${sample.claims.filter((c) => c.isNew).length} from last month's files) -> ${file}`);
     return;
   }
+  if (cmd === "sweep") {
+    const valueFlags = new Set(["--round", "--scope"]);
+    const [out, ...inputs] = rest.filter((x, i) => !valueFlags.has(x) && !valueFlags.has(rest[i - 1] ?? ""));
+    if (!out || !inputs.length) throw new Error("usage: sweep <out.json> --round N --scope \"...\" <verdicts.jsonl>...");
+    if (existsSync(out)) throw new Error(`${out} exists; it holds verdicts. Remove it first if you mean to rebuild it.`);
+    const seen = new Set<string>();
+    const claims: Claim[] = [];
+    let skipped = 0;
+    for (const f of inputs) for (const line of readFileSync(f, "utf8").split("\n").filter((l) => l.trim())) {
+      const c = JSON.parse(line) as Omit<Claim, "verdict" | "weight" | "isNew"> & { verdict: string; weight?: number; isNew?: boolean };
+      if (seen.has(c.id)) throw new Error(`${c.id} appears twice`);
+      seen.add(c.id);
+      if (c.verdict === "skip") { skipped++; continue; }
+      if (!VERDICTS.includes(c.verdict as Verdict)) throw new Error(`${f}: ${c.id} has verdict ${c.verdict}`);
+      if (!c.note) throw new Error(`${f}: ${c.id} has no note`);
+      claims.push({ ...c, weight: c.weight ?? 1, isNew: c.isNew ?? NEW_FILES.test(c.file ?? ""), verdict: c.verdict as Verdict });
+    }
+    const quotas: Record<string, number> = {};
+    for (const c of claims) quotas[c.stratum] = (quotas[c.stratum] ?? 0) + 1;
+    const sample: Sample = { verdicts: VERDICT_TEXT, corpusSize: graph().entities.length, drawn: new Date().toISOString().slice(0, 10), seed: 0, quotas, claims, method: "sweep", round: Number(flag("--round") ?? 0), scope: flag("--scope") ?? "", skipped };
+    writeFileSync(out, JSON.stringify(sample, null, 1) + "\n");
+    console.log(`${claims.length} claims with verdicts (${skipped} skipped as carrying no figure) -> ${out}`);
+    return;
+  }
   if (cmd === "verdict") {
     const [file, id, verdict, note, source] = rest;
     if (!VERDICTS.includes(verdict as Verdict)) throw new Error(`verdict must be one of ${VERDICTS.join(", ")}`);
@@ -256,7 +293,7 @@ function main() {
     if (pending) console.log(`${pending} claims have no verdict yet`);
     if (rest.includes("--ledger")) {
       const ledger = existsSync(LEDGER) ? (JSON.parse(readFileSync(LEDGER, "utf8")) as { rounds: unknown[] }) : { rounds: [] };
-      const round = { sample: file.replace(/^.*\/docs\//, "docs/"), drawn: sample.drawn, seed: sample.seed, corpusSize: sample.corpusSize, pending, ...r };
+      const round = { sample: file.replace(/^.*\/docs\//, "docs/"), drawn: sample.drawn, seed: sample.seed, method: sample.method ?? "sample", ...(sample.round ? { round: sample.round, scope: sample.scope, skipped: sample.skipped } : {}), corpusSize: sample.corpusSize, pending, ...r };
       ledger.rounds = [...(ledger.rounds as Array<{ sample: string }>).filter((x) => x.sample !== round.sample), round];
       writeFileSync(LEDGER, JSON.stringify(ledger, null, 1) + "\n");
       console.log(`ledger -> ${LEDGER}`);

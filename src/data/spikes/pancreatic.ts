@@ -35,7 +35,7 @@ const entities: EntityInput[] = [
   {
     id: "zoldonrasib", trials: ["nct07805954", "nct07621718", "nct07777822", "nct06445062", "nct07397338", "nct06922591"], kind: "drug", name: "Zoldonrasib", code: "RMC-9805", modality: "Small-molecule RAS(ON) G12D-selective inhibitor", asOf, status: "phase-2",
     tldr: "The first drug aimed specifically at KRAS G12D, the single most common mutation in pancreatic cancer. Early combination data in 2026 showed half of previously treated patients responding.",
-    summary: "Revolution Medicines' covalent tri-complex inhibitor of KRAS G12D(ON). Breakthrough Therapy designation in G12D NSCLC (2025). At ESMO GI 2026, zoldonrasib plus daraxonrasib in previously treated RAS G12D metastatic PDAC (n=60, cutoff 9 Feb 2026): ORR 50% and DCR 97% in second line, median PFS 9.6 months; grade ≥3 treatment-related events 35% (rash, anaemia, stomatitis). First-line combination with gemcitabine/nab-paclitaxel showed high response rates and ctDNA clearance. Phase 3 planning underway.",
+    summary: "Revolution Medicines' covalent tri-complex inhibitor of KRAS G12D(ON). Breakthrough Therapy designation in G12D NSCLC (2025). At ESMO GI 2026, zoldonrasib plus daraxonrasib in previously treated RAS G12D metastatic PDAC (60 patients, cutoff 9 Feb 2026): ORR 50% and DCR 97% in the second-line cohort of 30, median PFS 9.6 months; ORR 47% in the 30 treated third line or later; grade ≥3 treatment-related events 35% (rash, anaemia, stomatitis). First line, zoldonrasib with mFOLFIRINOX (n=22) gave ORR 82% and with gemcitabine/nab-paclitaxel (n=31) 61%. Phase 3 trials RASolute 305 (with chemotherapy) and RASolute 309 (with daraxonrasib) followed.",
     mechanism: "Cyclophilin-A-mediated tri-complex that covalently engages the G12D mutant aspartate and blocks effector binding in the active state.",
     targets: ["kras"], technologies: ["kras-inhibitors"], companies: ["revolution-medicines"], cancers: ["pancreatic", "metastatic-pdac", "nsclc", "colorectal"], drugs: ["daraxonrasib"], pathways: ["ras-mapk"],
     links: [{ label: "Revolution Medicines, ESMO GI 2026", url: "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-presents-phase-12-clinical-data-zoldonrasib" }, { label: "OncLive report", url: "https://www.onclive.com/view/zoldonrasib-combinations-show-compelling-antitumor-activity-in-ras-g12d-mutant-metastatic-pdac" }],
@@ -230,8 +230,8 @@ const spike: Spike = {
       "RASolute 302 (2026): first targeted therapy to nearly double survival in pancreatic cancer; daraxonrasib approved by the FDA on 26 August 2026 for previously treated metastatic disease.",
       "G12D-selective zoldonrasib combinations with 50% response rates in previously treated disease.",
       "Adjuvant mFOLFIRINOX gives median OS beyond 4 years in resected fit patients.",
-      "High-risk surveillance shifts ~3 in 4 detected cancers to stage I in carriers.",
-      "Personalised mRNA vaccine responders remain recurrence-free for years (autogene cevumeran phase 1).",
+      "High-risk surveillance found 7 of 9 cancers at stage I in the CAPS5 cohort (57.9% across all CAPS studies).",
+      "Personalised mRNA vaccine responders mostly remain recurrence-free at a median 3.2 years of follow-up (autogene cevumeran phase 1; 2 of 8 responders recurred).",
     ],
     history: [
       { year: 1935, title: "Whipple describes pancreaticoduodenectomy", note: "Surgery becomes the only curative option, a status it still holds." },

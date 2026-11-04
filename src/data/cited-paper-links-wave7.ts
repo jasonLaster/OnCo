@@ -1171,24 +1171,13 @@ export const citedPaperLinksWave7: Record<string, string[]> = {
 };
 
 export const CITED_PAPER_SKIP: Record<string, string> = {
-  "10.1001/jama.2018.11350": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by acupuncture-aromatase-inhibitor-arthralgia",
-  "10.1002/1097-0142(196409)18:9<1111::aid-cncr2820180903>3.0.co;2-z": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by log-kill-hypothesis",
   "10.1002/hon.3165_632": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by imagine-varnimcabtagene, varnimcabtagene-autoleucel",
   "10.1016/j.ejcsup.2006.08.003": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by electrochemotherapy",
-  "10.1016/s1470-2045(23)00492-9": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by craniopharyngioma",
-  "10.1016/s2214-109x(21)00347-3": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by b-prevention-adoption",
-  "10.1056/nejmoa2117013": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by cd7",
-  "10.1097/01.sla.0000234786.09312.53": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by isolated-limb-perfusion",
-  "10.1136/jitc-2020-002757": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by empower-cscc-1",
   "10.1182/blood-2023-181120": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by imagine-varnimcabtagene",
   "10.1182/blood-2023-181585": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by imagine-varnimcabtagene, varnimcabtagene-autoleucel, immuneel",
-  "10.1200/jco.2005.04.8270": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by cbt-fatigue-distress",
   "10.1200/jco.2019.37.15_suppl.1094": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by liv1",
   "10.1200/jco.2023.41.16_suppl.1022": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by adc-after-adc-caution",
   "10.1200/jco.2024.42.16_suppl.tps5632": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by ubamatamab, muc16",
   "10.1200/jco.2026.44.16_suppl.11565": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by aldoxorubicin",
-  "10.1200/jco.23.02545": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by sleep-circadian-interventions",
-  "10.1200/jco.24.00575": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by american-ginseng-fatigue, cbt-fatigue-distress, tai-chi-qigong, yoga-cancer",
-  "10.1200/jco.24.01373": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by ielsg37",
   "10.3310/htnb6908": "Europe PMC returns no record for this DOI (0 hits, none carrying it); cited by focus4",
 };

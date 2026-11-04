@@ -743,7 +743,7 @@ export const simpleQ: Record<string, string> = {
   "nct07299825": "Sichuan Kelun-Biotech Biopharmaceutical runs this phase 2 trial of A166 in previously treated HER2-positive advanced breast cancer, and it is now recruiting.",
   "nct07306624": "STCube runs this phase 2 trial of nelmastobart with docetaxel in advanced non-small-cell lung cancer that has stopped responding to platinum chemotherapy or immunotherapy, and it is now recruiting.",
   "nct07308106": "Sichuan Kelun-Biotech Biopharmaceutical runs this phase 2 trial of SKB571 for injection in advanced non-small-cell lung cancer, and it is now recruiting.",
-  "nct07310173": "Zhejiang Hisun Pharmaceutical runs this randomised phase 2 trial of AST-3424 with regorafenib in liver cancer that has come back or stopped responding to treatment, and it is now recruiting.",
+  "nct07310173": "Zhejiang Hisun Pharmaceutical runs this randomised phase 2 trial comparing AST-3424 with regorafenib in advanced liver cancer that has grown after immunotherapy, and it is now recruiting.",
   "nct07310784": "Suzhou BlueHorse Therapeutics runs this randomised phase 2 trial of LM103 with dacarbazine, temozolomide, paclitaxel and other drugs in advanced melanoma, and it is now recruiting.",
   "nct07312188": "Shandong New Time Pharmaceutical runs this phase 2 trial of F182112 and pomalidomide in relapsed or refractory multiple myeloma, and it is now recruiting.",
   "nct07314294": "Shanghai EpimAb Biotherapeutics runs this randomised phase 2 trial of two dosing schedules of EMB-01 in bowel cancer that has come back or spread, and it is now recruiting.",

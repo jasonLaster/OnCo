@@ -113,7 +113,9 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/medilink/, { id: "medilink", label: "MediLink", kind: "company" }],
   [/keymed|kym bio/, { id: "keymed", label: "Keymed (KYM)", kind: "company" }],
   [/transthera/, { id: "transthera", label: "TransThera", kind: "company" }],
-  [/junshi|coherus/, { id: "junshi", label: "Junshi / Coherus", kind: "company" }],
+  [/junshi/, { id: "junshi", label: "Junshi", kind: "company" }],
+  // Coherus licensed toripalimab from Junshi for the US; its own trials are its own (link-sense review, 3 Nov 2026).
+  [/coherus/, { id: "coherus", label: "Coherus BioSciences", kind: "company" }],
   [/innovent/, { id: "innovent", label: "Innovent", kind: "company" }],
   [/zai lab/, { id: "zai-lab", label: "Zai Lab", kind: "company" }],
   [/carsgen/, { id: "carsgen", label: "CARsgen", kind: "company" }],
@@ -355,6 +357,19 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/national clinical trials network|nctn/, { id: "nci", label: "NCI National Clinical Trials Network", kind: "government" }],
   // ---- Government ----
   [/^(us )?national cancer institute \(nci\)|^(us )?national cancer institute$|^nci\b(?! (cairo|egypt))|\(nci\)/, { id: "nci", label: "National Cancer Institute (US)", kind: "government" }],
+  // Centres and institutes that carry the Cancer Research UK name are the host institutions, and a fund named for
+  // the charity is its own record; only the charity itself resolves to `cruk` (link-sense review, 3 Nov 2026). The
+  // City of London and Convergence Science centres are partnerships recorded as consortia, which no institution alias
+  // may name (src/lib/cooperative-groups-home.test.ts), so they resolve to their own records with the kind "other".
+  [/bowelbabe/, { id: "bowelbabe-fund", label: "Bowelbabe Fund for Cancer Research UK", kind: "government" }],
+  [/^cruk oxford|^cancer research uk oxford/, { id: "oxford-cancer", label: "Oxford", kind: "institution" }],
+  [/^cruk southampton|^cancer research uk southampton/, { id: "southampton-cancer", label: "Southampton", kind: "institution" }],
+  [/^cruk clinical trials unit birmingham|^cancer research uk clinical trials unit birmingham/, { id: "birmingham-cancer-centre", label: "University of Birmingham", kind: "institution" }],
+  [/^cruk mi$|^cancer research uk manchester institute/, { id: "cruk-manchester-institute", label: "Cancer Research UK Manchester Institute", kind: "institution" }],
+  [/^cancer research uk cambridge (centre|institute)|^cruk cambridge/, { id: "cruk-cambridge-centre", label: "Cambridge", kind: "institution" }],
+  [/^cancer research uk city of london centre/, { id: "cruk-city-of-london-centre", label: "Cancer Research UK City of London Centre", kind: "other" }],
+  [/^cancer research uk convergence science centre/, { id: "cruk-convergence-science-centre", label: "Cancer Research UK Convergence Science Centre", kind: "other" }],
+  [/^cancer research uk beatson|^cruk scotland/, { id: "beatson-glasgow", label: "Beatson / CRUK Scotland Institute", kind: "institution" }],
   [/cancer research uk|^cruk|\bncri\b/, { id: "cruk", label: "Cancer Research UK", kind: "government" }],
   [/nhs england/, { label: "NHS England", kind: "government" }],
   [/national institutes of health|\bnih\b|national institute on aging/, { label: "US National Institutes of Health", kind: "government" }],
@@ -412,7 +427,13 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/leiden university/, { id: "lumc-leiden", label: "Leiden University Medical Center", kind: "institution" }],
   [/maastricht/, { id: "maastricht-umc", label: "Maastricht UMC", kind: "institution" }],
   [/karolinska/, { id: "karolinska", label: "Karolinska", kind: "institution" }],
-  [/heidelberg(?! pharma)|nationales centrum|^nct\b/, { id: "heidelberg-nct", label: "Heidelberg / NCT", kind: "institution" }],
+  // The National Center for Tumor Diseases has partner sites beyond Heidelberg; each resolves to its own centre, and a
+  // bare "NCT" (a registry number as often as a sponsor) only when it names Heidelberg (link-sense review, 3 Nov 2026).
+  [/nct\/ucc dresden|^nct dresden|tumorerkrankungen dresden|tumor diseases dresden/, { id: "nct-dresden", label: "NCT/UCC Dresden", kind: "institution" }],
+  [/^nct wera\b/, { id: "ccc-wuerzburg", label: "CCC Mainfranken (Würzburg)", kind: "institution" }],
+  [/^nct west\b/, { id: "essen-wtz", label: "West German Cancer Center (Essen)", kind: "institution" }],
+  [/^nct south ?west\b/, { id: "ccc-tuebingen", label: "CCC Tübingen-Stuttgart", kind: "institution" }],
+  [/heidelberg(?! pharma)|nationales centrum|^nct$|^nct heidelberg/, { id: "heidelberg-nct", label: "Heidelberg / NCT", kind: "institution" }],
   [/\bcharit[eé]/, { id: "charite", label: "Charité", kind: "institution" }],
   [/goethe|universit\S* (hospital |cancer cent\S* )?frankfurt|frankfurt university|tumorerkrankungen frankfurt|^uct frankfurt/, { id: "uct-frankfurt", label: "University Cancer Center Frankfurt", kind: "institution" }],
   [/\blmu\b|ludwig[- ]maximilians|^university of munich|klinikum der universit\S* m\S*nchen/, { id: "lmu-munich", label: "LMU Munich", kind: "institution" }],

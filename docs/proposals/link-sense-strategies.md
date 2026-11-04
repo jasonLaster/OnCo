@@ -125,6 +125,10 @@ Each would change what a page shows or calls something, so each goes through `sc
 
 The top of the queue, in order of how much a reader is misled. The audit JSON holds every medium and low finding.
 
+Decided on 3 November 2026 from the labels, registries and filings named in `CORRECTIONS.md`: items 1, 2, 4 to 11,
+13, 14 and 19 to 21. The GnRH drugs, goserelin, the progestins, exemestane, mevrometostat and omacetaxine now link
+what they bind (or nothing, for omacetaxine, whose target is the ribosome) and leave the indirect effect to the text.
+
 1. Omega Funds lists taletrectinib and talimogene laherparepvec as products (from its impact page); both pages show an investor among their makers.
 2. CAPTEM (capecitabine plus temozolomide) credited to ECOG-ACRIN, a trials group, as if it were the developer.
 3. 41 biomarker readouts and 21 targets, terms and technologies mix tests and medicines in `drugs` (proposal 1); `ctdna-mrd-positive` is owned by another agent.

@@ -7,16 +7,33 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
+- 282 pipeline products for 156 companies and 14 new targets now that the engine pages are lighter, 130 unsupported links removed, survival calculators linked for issue 43, and the NHS Cancer Alliances list read from ONS
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 
 ### 3 November 2026
+- Alleanza Contro il Cancro keeps its own sponsor name rather than pointing at a consortium record, as the one-home rule for cooperative groups requires
+- Pipeline products keep a cancer link only where a registered trial, approval or paper supports it: ten trials gain the cancers their ClinicalTrials.gov conditions or titles name, 130 unsupported product-cancer links from the company pipeline fill are removed, four trials drop cancers their registry entries never name, and MDS answers to its singular name
+- Eleven pipeline products name the protein they are linked to as their sources do (TROP2, FCGR2B, CD3 for CLSP-1025, PIK3CG, BCMA from the KLN-1010 registry title, MYH9, MET, MEK1/2, BCR::ABL1); CBX-250 loses a CD3 link no source states
+- Paper identifier snapshot covers the 43 PubMed ids added with the country pages; every one resolves to the paper its record describes, DOI and year agreeing
+- PRODUCT (needs owner approval): the engine's interleukin-15 pattern matches IL-15 as a word, not inside the product alias cytoTIL15
+- PRODUCT (needs owner approval): the eligibility pattern for androgen receptor pathway inhibitors matches enzalutamide as a word, and deutenzalutamide by name rather than inside it
+- Trials sponsored by the Uganda Cancer Institute's UCI-Fred Hutch centre count for the Kampala institute, and Alleanza Contro il Cancro's English name no longer resolves to the US Alliance group
+- Members test follows the tests fill: BostonGene Tumor Portrait and FoundationOne Heme rows now resolve to their own records
+- Remove a duplicated companies key on AVZO-103 left by a merge; both copies named Avenzo
+- Prognosis calculators from Memorial Sloan Kettering and the National Cancer Institute are listed on /software/ as link-outs with their validation papers, and the NHS Cancer Alliance list is read from the ONS geography after NHS England's page began refusing scripts
+- A trial-linked TROP2 record listed its company twice, which TypeScript rejects; the duplicate key is removed
+- Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 - Every figure on the country pages and the 60 most-read cancer pages read against its source: 23 per cent needed a fix, and four checks now stop the commonest faults coming back
 - Review-list judgements from labels, registries and filings: drugs link the receptor they bind, an investor and a trials group no longer pose as makers, sponsors resolve to their own centres, ten company pages corrected, and two duplicate products cross-referenced with a merge plan
 - Accuracy round one fixes wrong paper ids, trials and side-effect figures; 28 FDA companion diagnostics and 11 tumour tests, FDA, EMA and WHO coverage lists, about 270 wrong links corrected, and deals and regimens linked to their records
 - Readout pages keep tests and medicines apart: devices name their readouts, test cancer links rest on coverage, trials or papers, and three devices are credited to their FDA applicants
+- The ten new country pages were checked against their sources, with 151 faulty claims fixed and every funding row corrected
+- The open drug engine pages carry the same look in short classes, so the small-molecule page drops from 468,848 to 411,819 bytes of markup
+- Fourteen proteins named by new pipeline medicines now have target pages, including PLK4, HPK1, PARG, LSD1, CDC7 and KIF18A, and sixteen small molecules move from Not placed into the engine grid
 - Every drug side-effect rate now names its source: the last 143 unsourced rows read against FDA labels and trial papers, and the count held at zero
+- Company pages that showed no products now list them: 282 pipeline products from 156 biotech and cell-therapy companies, each confirmed on the company's own pipeline page, filing or the registry, with 273 registry trials; thirteen existing products gain the company that discovered or co-develops them
 - Keep GC012F and AZD0120 as separate records for now: merging them adds a site redirect, which waits for the owner
 - Seven regulator and knowledge-base universe lists, FDA oncology approvals since 2020 as dated events, the missing FDA companion diagnostic rows, and nine medicines the EMA, FDA and WHO lists hold
 - A link-sense audit finds links that resolve but mislead: myeloma loses a prostate vaccine and three imaging agents, 76 bowel cancer trials stop reading "bevacizumab (glioblastoma use)", and sponsor names stop matching by fragment
@@ -25,14 +42,19 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - A read-only gap audit ranks what reader pages leave out, and page sections gathered from the corpus wait at /admin/ for approval
 - Tumour profiling tests and companion diagnostic devices get their own pages: FoundationOne Heme, Caris MI Profile, OncoExTra, OmniSeq INSIGHT, Tumor Portrait, Altera, TruSight Oncology 500, Strata Select, Tempus xE, NeoGenomics Neo Comprehensive and PanTracer, and 28 FDA companion diagnostic devices
 - The first measured accuracy sample: 182 claims read against their sources, the errors fixed, and guards for the patterns found
+- The Signatera merge test follows the readout record, which no longer lists the assay row
+- Readout, technology and company sections gather their members from the corpus by a stated rule, one item per product
 - A read-only gap audit lists what reader pages leave out, ranked by pages affected
 - Every Medicare-covered MRD blood test now has its own page, including Foundation Medicine's FoundationOne MRD and Personalis NeXT Personal, with Oncodetect, Guardant Reveal and RaDaR corrected from their sources
 - Eight more ctDNA residual disease tests get sourced records (FoundationOne MRD, NeXT Personal, Haystack MRD, NavDx, Labcorp Plasma Detect, Precise MRD, TrueMRD, Tempus xM), and Oncodetect, Guardant Reveal and RaDaR ST are re-sourced
 - Ten country deep dives wait at /admin/ for approval, and the proposal script records its preview address
 - Weekly watch for new oncology startups across fifteen sources and for landmark cancer papers, the Nature lung Treg interception paper, and the GLOBOCAN all-cancers note corrected to include non-melanoma skin cancer
+- GLOBOCAN's all-cancers figures include non-melanoma skin cancer; say so
+- Country deep dives for Australia, Spain, Brazil, Sweden and Switzerland, each read from its own registry, payer and regulator
 - A weekly landmark-paper watch proposes new oncology papers for review, and the Nature regulatory T cell interception paper is added
 - Startup monitors read portfolios, SEC filings, HKEX 18A, orphan designations and NCI small-business awards into the freshness issue
 - 36 multi-cancer early detection tests, the Prometheus gaps filled, rare lymphomas linked to their trials, sixteen companies brought up to date and imaging agents given approval rows
+- France, Canada, Italy, the Netherlands and South Korea, each read from its own national sources
 - Add Selvana and Jiyu Bio, freshen sixteen large companies, name nine drugs' targets and give imaging agents regional approval rows
 - Lymphoma: trials and papers for the entity pages the taxonomy added, and two corrections
 - OpenOnco joins the open-source catalogue (PR 290), and the Open Medical Registry stays listed while its repository is private

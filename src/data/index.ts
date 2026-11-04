@@ -168,6 +168,13 @@ import { companiesPortfolioMonitors } from "./companies-portfolio-monitors";
 import { portfolioMonitorDrugs, portfolioMonitorTrials } from "./products-portfolio-monitors";
 import { companiesNew2026DxAi } from "./companies-new-2026-dx-ai";
 import { companiesNew2026Sponsors } from "./companies-new-2026-sponsors";
+import { monitorsEdgarA } from "./companies-monitors-2026-11-edgar-a";
+import { monitorsEdgarB } from "./companies-monitors-2026-11-edgar-b";
+import { monitorsOrphans } from "./companies-monitors-2026-11-orphans";
+import { monitorsSbirA } from "./companies-monitors-2026-11-sbir-a";
+import { monitorsSbirB } from "./companies-monitors-2026-11-sbir-b";
+import { monitorsSbirC } from "./companies-monitors-2026-11-sbir-c";
+import { monitorsSbirD } from "./companies-monitors-2026-11-sbir-d";
 import { prometheusGapTechnologies, prometheusGapDrugs } from "./prometheus-gaps-2026-11";
 import { companiesPrometheusGapsA } from "./companies-prometheus-gaps-a";
 import { companiesPrometheusGapsB } from "./companies-prometheus-gaps-b";
@@ -366,6 +373,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesSponsorsWave3, ...companiesCooperativeGroups, ...companiesCooperativeGroupsMigrated,
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors, ...companiesPortfolioMonitors,
+  ...monitorsEdgarA, ...monitorsEdgarB, ...monitorsOrphans, ...monitorsSbirA, ...monitorsSbirB, ...monitorsSbirC, ...monitorsSbirD,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
   ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,

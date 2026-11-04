@@ -64,7 +64,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "papers-snapshot", total: 3798, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
   { id: "citations", total: 2419, label: "Key papers with a citation count" },
   { id: "trials-snapshot", total: 1442, label: "Products with a ClinicalTrials.gov snapshot" },
-  { id: "logos", total: 2078, label: "Companies, institutions and collections with a logo" },
+  // 2,078 to 2,563 on 4 November 2026: the company rounds since the last recording, ending with the 83 companies the
+  // startup monitors found (SEC filings, orphan designations, NCI SBIR awards). Companies are exactly what this gauge
+  // asks about, so the denominator grows; their logos are fetched in the same change.
+  { id: "logos", total: 2563, label: "Companies, institutions and collections with a logo" },
   { id: "completeness", total: 22, label: "External denominators at least half covered" },
 ];
 

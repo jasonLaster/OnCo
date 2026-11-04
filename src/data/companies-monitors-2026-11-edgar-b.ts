@@ -1,0 +1,48 @@
+import type { CompanyInput, DrugInput } from "@/lib/schema";
+
+/**
+ * Startup monitors, SEC EDGAR S-1 and F-1 filers, second half of the queue (scripts/startup-monitors.ts, run on
+ * 4 November 2026). Each record rests on the registration statement itself, read as raw text from EDGAR, and on the
+ * company's own website where the filing names it. Of the 24 filers in this half, two are oncology developers that
+ * OnCo did not hold; the rest were screened out (SPACs, a bank, wound care, autoimmune, metabolic and antiviral
+ * companies, a genomics tools maker and a company whose colorectal screening capsule was wound down in 2023).
+ */
+
+const asOf = "2026-11-04";
+type S = Omit<CompanyInput, "kind" | "asOf"> & Partial<Pick<CompanyInput, "asOf">>;
+const s = (x: S): CompanyInput => ({ kind: "company", asOf, ...x });
+const tags = ["pipeline"];
+const provenance = { editedBy: "OnCo startup monitors", editedOn: asOf };
+
+const STARTON_S1 = "https://www.sec.gov/Archives/edgar/data/2049977/000121390026113388/ea0225405-18.htm";
+const HCW_S1 = "https://www.sec.gov/Archives/edgar/data/1828673/000149315226045532/forms-1.htm";
+
+export const monitorsEdgarB: Array<CompanyInput | DrugInput> = [
+  s({ id: "starton-holdings", name: "Starton Holdings", aka: ["Starton Holdings, Inc.", "Starton Therapeutics", "Starton Therapeutics, Inc", "Starton Therapeutics Inc."], hq: "Paramus, NJ", country: "US", companyType: "biotech", stage: "growth", website: "https://www.startontx.com/",
+    sections: ["targeted-therapy"], cancers: ["multiple-myeloma"], drugs: ["star-lld"], trials: ["nct06087653"],
+    tldr: "Starton is a New Jersey company that gives existing cancer medicines continuously, through a small pump under the skin or a slow-release tablet, instead of as a daily dose. Its lead product, STAR-LLD, is a continuous low-dose form of lenalidomide being tested in multiple myeloma that has come back or stopped responding.",
+    summary: "Starton Holdings, Inc., with principal executive offices and a laboratory in Paramus, New Jersey, filed a registration statement for its initial public offering with the SEC in 2026, with the Nasdaq symbol STA applied for. The filing describes a clinical-stage company whose platform delivers approved, off-patent medicines continuously, by ambulatory subcutaneous pump, oral controlled-release tablet or transdermal patch, to lower peak blood levels and improve tolerability, and says it is focused first on blood cancers.\n\nIts lead programme STAR-LLD is continuous low-dose lenalidomide, the active ingredient of Revlimid, developed as a subcutaneous formulation (STAR-LLD-SC) and an oral controlled-release formulation (STAR-LLD-OCR) in parallel. The filing states that Phase 1 and 1b studies of STAR-LLD-SC in multiple myeloma are complete and that a Phase 2a study in relapsed or refractory multiple myeloma is under way; it also describes planned investigator-initiated trials with CAR-T cell therapies and T-cell engagers, the first with elranatamab supplied by Pfizer. A transdermal olanzapine patch for chemotherapy-induced nausea and vomiting is on hold. The company's operating subsidiary, Starton Therapeutics, is the sponsor of the registered trial NCT06087653.",
+    notes: ["Read from the S-1/A filed on EDGAR on 28 October 2026 (business summary, cover page and corporate information) on 4 November 2026. The offering had not priced when read, so no IPO round is recorded. Founding year not read."],
+    links: [{ label: "SEC EDGAR: Starton Holdings S-1/A, October 2026", url: STARTON_S1 }, { label: "Official website", url: "https://www.startontx.com/" }, { label: "ClinicalTrials.gov: continuous subcutaneous lenalidomide in multiple myeloma (NCT06087653)", url: "https://clinicaltrials.gov/study/NCT06087653" }] }),
+  { id: "star-lld", kind: "drug", name: "STAR-LLD", code: "STAR-LLD", aka: ["STAR-LLD-SC", "STAR-LLD-OCR", "continuous low-dose lenalidomide"], modality: "Immunomodulatory drug (lenalidomide) in a continuous-delivery formulation (subcutaneous pump or oral controlled release)",
+    mechanism: "Lenalidomide, the active ingredient of Revlimid, given continuously at low dose by subcutaneous ambulatory pump or as an oral controlled-release tablet, intended to lower the peak blood concentration and overall exposure and so improve tolerability, as Starton's filing describes it.",
+    status: "phase-2", asOf, tags, provenance,
+    tldr: "STAR-LLD is lenalidomide, an established myeloma medicine, given continuously at a low dose through a small pump under the skin or a slow-release tablet. Starton Holdings is testing it in multiple myeloma that has come back after earlier treatment.",
+    summary: "STAR-LLD is Starton Holdings' name for its continuous low-dose lenalidomide product candidates: STAR-LLD-SC, a patented subcutaneous formulation given by ambulatory pump, and STAR-LLD-OCR, an oral controlled-release formulation. Starton's 2026 S-1 states that Phase 1 and 1b studies of STAR-LLD-SC in multiple myeloma are complete and that a Phase 2a study is under way in relapsed or refractory multiple myeloma, in patients receiving a triplet of a proteasome inhibitor, dexamethasone and continuously infused lenalidomide. Investigator-initiated trials with CAR-T cell therapies and T-cell engagers are planned, the first combining STAR-LLD with elranatamab in relapsed or refractory multiple myeloma. The reference listed drug is Revlimid, and the company intends to use the 505(b)(2) pathway. The registered trial NCT06087653, sponsored by Starton Therapeutics, tests continuous subcutaneous low-dose lenalidomide in multiple myeloma.",
+    targets: [], cancers: ["multiple-myeloma"], companies: ["starton-holdings"], trials: ["nct06087653"], related: ["lenalidomide"],
+    links: [{ label: "SEC EDGAR: Starton Holdings S-1/A, October 2026", url: STARTON_S1 }, { label: "ClinicalTrials.gov NCT06087653", url: "https://clinicaltrials.gov/study/NCT06087653" }] },
+
+  s({ id: "hcw-biologics", name: "HCW Biologics", aka: ["HCW Biologics Inc."], hq: "Miramar, FL", country: "US", companyType: "biotech", stage: "public", ticker: "HCWB", website: "https://hcwbiologics.com/",
+    sections: ["immunotherapy"], technologies: ["t-cell-engager"], drugs: ["hcw11-018b"],
+    tldr: "HCW Biologics is a Florida company making fusion proteins that act on the immune system, mainly for inflammatory diseases. For cancer, its lead product, HCW11-018b, is an injection under the skin that steers the body's T cells onto solid tumours and is being prepared for a first trial in people.",
+    summary: "HCW Biologics Inc., based in Miramar, Florida and listed on Nasdaq as HCWB, describes itself in its 2026 S-1 as a clinical-stage company developing fusion immunotherapeutics for diseases promoted by chronic inflammation, including autoimmune and proinflammatory diseases, cancer and senescence-associated dysplasia. Its founder and chief executive, Hing C. Wong, led the development of the IL-15 receptor agonist that was sold to ImmunityBio in 2017 and later approved for BCG-unresponsive non-muscle invasive bladder cancer.\n\nIn oncology, the filing names HCW11-018b, a tetravalent T-cell engager given by subcutaneous injection to treat solid tumours. After a Type B pre-IND meeting with the FDA in July 2026, the company says it is preparing an IND for a Phase 1 trial in solid tumours, to be filed in the first half of 2027. Its most advanced clinical compound is an IL-2 fusion protein complex in a Phase 1 trial in alopecia areata, and it has agreed to distribute a reagent molecule for cell therapy manufacturing through Akron Biotech.",
+    notes: ["Read from the S-1 filed on EDGAR on 2 October 2026 (prospectus summary and cover page) on 4 November 2026. Only the oncology programme is recorded as a product; the inflammation programmes are described without codes. Founding year not read."],
+    links: [{ label: "SEC EDGAR: HCW Biologics S-1, October 2026", url: HCW_S1 }, { label: "Official website", url: "https://hcwbiologics.com/" }] }),
+  { id: "hcw11-018b", kind: "drug", name: "HCW11-018b", code: "HCW11-018b", aka: [], modality: "Tetravalent T-cell engager (fusion protein, subcutaneous)",
+    mechanism: "A tetravalent T-cell engager given by subcutaneous injection, as HCW Biologics' filing describes it: a multi-armed fusion molecule built to bring T cells into contact with tumour cells. The filing does not name the tumour antigen.",
+    status: "preclinical", asOf, tags, provenance, technologies: ["t-cell-engager"],
+    tldr: "HCW11-018b is an experimental injection under the skin designed to direct the body's T cells against solid tumours. HCW Biologics plans to ask the US regulator in 2027 for permission to begin its first trial in people.",
+    summary: "HCW11-018b is an investigational tetravalent T-cell engager from HCW Biologics, administered by subcutaneous injection and developed to treat solid tumours. HCW Biologics' 2026 S-1 states that after a Type B pre-IND meeting with the FDA in July 2026 the company received direction on preparing to start a Phase 1 trial in solid tumours, with the IND planned for the first half of 2027. The filing does not name the tumour antigen or the tumour types.",
+    targets: [], cancers: [], companies: ["hcw-biologics"], trials: [],
+    links: [{ label: "SEC EDGAR: HCW Biologics S-1, October 2026", url: HCW_S1 }] },
+];

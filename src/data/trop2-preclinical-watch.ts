@@ -16,6 +16,9 @@ export const trop2PreclinicalWatch: EntityInput[] = [
     "targets": [
       "trop2"
     ],
+    "companies": [
+      "catenabio"
+    ],
     "technologies": [
       "adc",
       "dual-payload-adc"

@@ -20,7 +20,7 @@
  *
  * Output is the side file src/data/trial-registry-outcomes.ts, regenerated in full from the cache on every --apply
  * run and merged into the trial records by src/data/index.ts; the snapshot files are never edited. Trials are
- * processed in family-burden order (GLOBOCAN 2022 new cases of the trial's cancer family: lung, breast, colorectal,
+ * processed in family-burden order (GLOBOCAN new cases of the trial's cancer family: lung, breast, colorectal,
  * skin, prostate first) so a capped run reaches the most-read pages first.
  *
  *   npx tsx scripts/fetch-registry-outcomes.ts --no-fetch      plan: counts from the cache, fetching nothing new

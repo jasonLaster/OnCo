@@ -4,7 +4,8 @@
  * medical advice. Generated on 2026-09-23 by the method in docs/OPEN-PIPELINE.md; edit by pull request, keeping
  * every evidence quote verbatim from a source fetched with status 200.
  *
- * Score = burden (0-40, from GLOBOCAN 2022 world deaths over the listed cancers) + validation of each
+ * Score = burden (0-40, from GLOBOCAN world deaths over the listed cancers; GLOBOCAN 2024 since 3 November 2026, when
+ * six burdens rose by one point, and the cut scores below are the 2022 ones) + validation of each
  * component (approved 15, phase-3 10, phase-2 7, phase-1/2 5) + plausibility (0-30, hand-assigned, reason in
  * plausibilityNote). The top 60 of 65 scored candidates ship; those cut: adc-cd30-top1 (58), deg-androgen-receptor-vhl (58), deg-brd4-cereblon (57), deg-btk-vhl (57), rl-sstr2-yttrium-90 (46).
  */
@@ -27,7 +28,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 85,
       burden: 35,
-      worldDeaths: 3188897,
+      worldDeaths: 3270520,
       validationA: 15,
       validationB: 15,
       plausibility: 20
@@ -100,7 +101,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 84,
       burden: 34,
-      worldDeaths: 2704168,
+      worldDeaths: 2783125,
       validationA: 15,
       validationB: 15,
       plausibility: 20
@@ -153,7 +154,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 83,
       burden: 35,
-      worldDeaths: 3381663,
+      worldDeaths: 3421288,
       validationA: 15,
       validationB: 15,
       plausibility: 18
@@ -197,7 +198,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 82,
       burden: 32,
-      worldDeaths: 1572975,
+      worldDeaths: 1574334,
       validationA: 15,
       validationB: 15,
       plausibility: 20
@@ -250,7 +251,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 82,
       burden: 36,
-      worldDeaths: 3649307,
+      worldDeaths: 3696793,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -282,9 +283,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["trastuzumab-deruxtecan"] }
     },
     score: {
-      total: 81,
-      burden: 33,
-      worldDeaths: 2214899,
+      total: 82,
+      burden: 34,
+      worldDeaths: 2281688,
       validationA: 15,
       validationB: 15,
       plausibility: 18
@@ -328,7 +329,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 81,
       burden: 35,
-      worldDeaths: 3488994,
+      worldDeaths: 3527108,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -390,7 +391,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 81,
       burden: 33,
-      worldDeaths: 1817469,
+      worldDeaths: 1861839,
       validationA: 15,
       validationB: 15,
       plausibility: 18
@@ -434,7 +435,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 80,
       burden: 34,
-      worldDeaths: 2704168,
+      worldDeaths: 2783125,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -494,9 +495,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["lenalidomide", "vepdegestrant"] }
     },
     score: {
-      total: 80,
-      burden: 34,
-      worldDeaths: 2780155,
+      total: 81,
+      burden: 35,
+      worldDeaths: 2838132,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -547,9 +548,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["pluvicto", "lutathera"] }
     },
     score: {
-      total: 79,
-      burden: 33,
-      worldDeaths: 2214899,
+      total: 80,
+      burden: 34,
+      worldDeaths: 2281688,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -623,7 +624,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 78,
       burden: 34,
-      worldDeaths: 2536311,
+      worldDeaths: 2561791,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -694,7 +695,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 77,
       burden: 33,
-      worldDeaths: 1817469,
+      worldDeaths: 1861839,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -757,7 +758,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 77,
       burden: 31,
-      worldDeaths: 1127584,
+      worldDeaths: 1132340,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -810,7 +811,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 75,
       burden: 31,
-      worldDeaths: 1326278,
+      worldDeaths: 1335214,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -854,7 +855,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 75,
       burden: 33,
-      worldDeaths: 2122148,
+      worldDeaths: 2166369,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -916,7 +917,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 75,
       burden: 31,
-      worldDeaths: 1326278,
+      worldDeaths: 1335214,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -976,9 +977,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["pluvicto", "lutathera"] }
     },
     score: {
-      total: 75,
-      burden: 31,
-      worldDeaths: 1354108,
+      total: 76,
+      burden: 32,
+      worldDeaths: 1412072,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -1041,7 +1042,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 75,
       burden: 35,
-      worldDeaths: 3171577,
+      worldDeaths: 3273911,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -1086,7 +1087,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 74,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 15,
       plausibility: 18
@@ -1130,7 +1131,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 27,
-      worldDeaths: 556084,
+      worldDeaths: 527137,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -1164,7 +1165,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 36,
-      worldDeaths: 3849072,
+      worldDeaths: 3912074,
       validationA: 10,
       validationB: 15,
       plausibility: 12
@@ -1226,7 +1227,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 31,
-      worldDeaths: 1326278,
+      worldDeaths: 1335214,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -1288,7 +1289,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 33,
-      worldDeaths: 1817469,
+      worldDeaths: 1861839,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -1341,7 +1342,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 35,
-      worldDeaths: 3171577,
+      worldDeaths: 3273911,
       validationA: 15,
       validationB: 15,
       plausibility: 8
@@ -1375,7 +1376,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 31,
-      worldDeaths: 1127584,
+      worldDeaths: 1132340,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -1430,7 +1431,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 35,
-      worldDeaths: 3242297,
+      worldDeaths: 3287988,
       validationA: 15,
       validationB: 15,
       plausibility: 8
@@ -1492,7 +1493,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 73,
       burden: 35,
-      worldDeaths: 3171577,
+      worldDeaths: 3273911,
       validationA: 15,
       validationB: 15,
       plausibility: 8
@@ -1555,7 +1556,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 72,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -1626,7 +1627,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 72,
       burden: 32,
-      worldDeaths: 1574778,
+      worldDeaths: 1584178,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -1688,7 +1689,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 71,
       burden: 33,
-      worldDeaths: 1817469,
+      worldDeaths: 1861839,
       validationA: 15,
       validationB: 15,
       plausibility: 8
@@ -1741,7 +1742,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 70,
       burden: 24,
-      worldDeaths: 250679,
+      worldDeaths: 234903,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -1775,7 +1776,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 70,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -1828,7 +1829,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 69,
       burden: 27,
-      worldDeaths: 556084,
+      worldDeaths: 527137,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -1879,9 +1880,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["tarlatamab", "blinatumomab"] }
     },
     score: {
-      total: 69,
-      burden: 29,
-      worldDeaths: 886699,
+      total: 70,
+      burden: 30,
+      worldDeaths: 921286,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -1913,9 +1914,9 @@ export const combinationIdeas: CombinationIdeaInput[] = [
       b: { level: "approved", via: ["tisagenlecleucel"] }
     },
     score: {
-      total: 69,
-      burden: 29,
-      worldDeaths: 886699,
+      total: 70,
+      burden: 30,
+      worldDeaths: 921286,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -1986,7 +1987,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 68,
       burden: 24,
-      worldDeaths: 250679,
+      worldDeaths: 234903,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -2031,7 +2032,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 68,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2093,7 +2094,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 68,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 7,
       plausibility: 20
@@ -2155,7 +2156,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 67,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -2189,7 +2190,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 67,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2233,7 +2234,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 67,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2295,7 +2296,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 67,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2357,7 +2358,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 66,
       burden: 26,
-      worldDeaths: 397430,
+      worldDeaths: 419849,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -2419,7 +2420,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 27,
-      worldDeaths: 556084,
+      worldDeaths: 527137,
       validationA: 15,
       validationB: 15,
       plausibility: 8
@@ -2453,7 +2454,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -2506,7 +2507,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 14
@@ -2540,7 +2541,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -2602,7 +2603,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -2674,7 +2675,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 65,
       burden: 28,
-      worldDeaths: 666103,
+      worldDeaths: 693660,
       validationA: 15,
       validationB: 10,
       plausibility: 12
@@ -2727,7 +2728,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 64,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 10,
       validationB: 15,
       plausibility: 14
@@ -2780,7 +2781,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 64,
       burden: 25,
-      worldDeaths: 305405,
+      worldDeaths: 292234,
       validationA: 15,
       validationB: 10,
       plausibility: 14
@@ -2842,7 +2843,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 63,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2876,7 +2877,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 63,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2929,7 +2930,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 63,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -2963,7 +2964,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 61,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -3026,7 +3027,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 66,
       burden: 26,
-      worldDeaths: 372067,
+      worldDeaths: 353932,
       validationA: 15,
       validationB: 15,
       plausibility: 10
@@ -3088,7 +3089,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 60,
       burden: 18,
-      worldDeaths: 58667,
+      worldDeaths: 58398,
       validationA: 15,
       validationB: 15,
       plausibility: 12
@@ -3122,7 +3123,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 70,
       burden: 24,
-      worldDeaths: 273412,
+      worldDeaths: 254418,
       validationA: 15,
       validationB: 15,
       plausibility: 16
@@ -3184,7 +3185,7 @@ export const combinationIdeas: CombinationIdeaInput[] = [
     score: {
       total: 60,
       burden: 21,
-      worldDeaths: 121388,
+      worldDeaths: 119029,
       validationA: 15,
       validationB: 10,
       plausibility: 14

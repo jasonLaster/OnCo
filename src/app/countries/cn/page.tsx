@@ -6,6 +6,7 @@ import type { Entity } from "@/lib/schema";
 import { ChipList, Container, EntityCard, EntityLink, GroupKicker, PageHeader, Section } from "@/components/ui";
 import { CHINA_FACTS } from "@/data/china";
 import { countryExtras } from "@/data/country-extras";
+import { GLOBOCAN } from "@/lib/globocan";
 import { deals, DEAL_TYPE_LABEL } from "@/data/deals";
 import { regionalApprovals } from "@/data/regional-approvals";
 import data from "../../../../public/openalex/countries.json";
@@ -124,7 +125,7 @@ export default function ChinaPage() {
               </div>
             ))}
           </div>
-          <p className="text-sm text-muted mt-3 max-w-4xl">The National Cancer Center&apos;s 2024 report: {F.cancerStats.topFive}; {F.cancerStats.trends}. Figures are {F.cancerStats.registries}. GLOBOCAN 2022 gives an age-standardised incidence of {extra.incidence} and mortality of {extra.mortality} per 100,000 for China on a different population standard (<a className="underline" href={extra.gcoUrl} rel="noopener">IARC fact sheet</a>).</p>
+          <p className="text-sm text-muted mt-3 max-w-4xl">The National Cancer Center&apos;s 2024 report: {F.cancerStats.topFive}; {F.cancerStats.trends}. Figures are {F.cancerStats.registries}. GLOBOCAN {GLOBOCAN.year} gives an age-standardised incidence of {extra.incidence} and mortality of {extra.mortality} per 100,000 for China on a different population standard (<a className="underline" href={extra.gcoUrl} rel="noopener">IARC fact sheet</a>).</p>
         </Section>
 
         {/* ---------- Problems paired with responses ---------- */}

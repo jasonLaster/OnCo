@@ -8,7 +8,7 @@
  *   meta/populations/all/        countries and aggregate populations
  *   factsheet/population/<code>/ all cancers for one population (type 0 = incidence, 1 = mortality)
  *
- * Run: npm run fetch:globocan                       (current edition, 2022 → countries.json)
+ * Run: npm run fetch:globocan                       (current edition, 2024 → countries.json)
  *      GLOBOCAN_EDITION=2020 npm run fetch:globocan  (another edition → countries-2020.json)
  *      npm run fetch:globocan -- --editions-only    (rebuild editions.json from the files on disk)
  * Idempotent; ~190 requests at ~3/s.
@@ -17,18 +17,31 @@
  * factsheet endpoint returns a server error for every edition except 2022, so only 2022 can be fetched
  * today. When IARC restores the older editions, running this with GLOBOCAN_EDITION set adds them and the
  * trend charts pick them up from editions.json without code changes.
+ *
+ * Note (checked 2026-11-03): IARC has published GLOBOCAN 2024 (fact sheets print "GLOBOCAN 2024 - September,
+ * 2026"). The API now answers every endpoint for 2024 and returns an SQL error for 2022, so 2024 is the current
+ * edition and 2022 can no longer be fetched. The 2022 countries.json stays in git history (the commit before the
+ * 2024 move) if anything needs it again.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const YEAR = Number(process.env.GLOBOCAN_EDITION ?? 2022);
+/** The edition the pages render: countries.json always holds it; any other edition is countries-<year>.json. */
+const CURRENT = 2024;
+const YEAR = Number(process.env.GLOBOCAN_EDITION ?? CURRENT);
 if (!Number.isInteger(YEAR) || YEAR < 2000) throw new Error(`GLOBOCAN_EDITION must be a year, got ${process.env.GLOBOCAN_EDITION}`);
 const API = `https://gco-api.iarc.fr/api/globocan/v3/${YEAR}`;
 const QS = "?group_CRC=1&include_nmsc=1&include_nmsc_other=0";
 const UA = "OnCo/1.0 (github.com/judegomila/OnCo; research use)";
 const out = join(process.cwd(), "public", "globocan");
 mkdirSync(out, { recursive: true });
-const FILE = YEAR === 2022 ? "countries.json" : `countries-${YEAR}.json`;
+const FILE = YEAR === CURRENT ? "countries.json" : `countries-${YEAR}.json`;
+
+/** The website citation IARC prints on each edition's fact sheets. */
+const CITATION: Record<number, string> = {
+  2022: "Ferlay J, Ervik M, Lam F, et al. Global Cancer Observatory: Cancer Today (version 1.1). Lyon: IARC; 2024.",
+  2024: "Ervik M, Laversanne M, Lam F, Colombet M, Ferlay J, Filho AM, Bray F (2026). Global Cancer Observatory: Cancer Today (2024 estimates, version 1.0). Lyon, France: International Agency for Research on Cancer.",
+};
 
 type MetaCancer = { cancer: number; label: string; ICD: string; cancer_order: number };
 type MetaPop = { country: number; label: string; country_iso3: string; country_isonum: string; continent_code: string; area_label: string; hdi_label?: string; income_label?: string; who_region?: string; method_incidence?: string; method_mortality?: string };
@@ -57,7 +70,7 @@ function writeEditions(): EditionIndex {
     const m = /^countries(?:-(\d{4}))?\.json$/.exec(f);
     if (!m) continue;
     const d = JSON.parse(readFileSync(join(out, f), "utf8")) as { year?: number; fetched?: string; source?: string };
-    editions.push({ year: d.year ?? Number(m[1] ?? 2022), file: `/globocan/${f}`, fetched: d.fetched ?? "", source: d.source ?? "" });
+    editions.push({ year: d.year ?? Number(m[1] ?? CURRENT), file: `/globocan/${f}`, fetched: d.fetched ?? "", source: d.source ?? "" });
   }
   editions.sort((a, b) => a.year - b.year);
   const index: EditionIndex = { editions, note: "One entry per GLOBOCAN edition fetched by scripts/fetch-globocan.ts. Editions are separate estimates with method changes between them, so a line through them is indicative, not a registry time series." };
@@ -116,7 +129,7 @@ async function main() {
     year: YEAR,
     fetched: new Date().toISOString().slice(0, 10),
     note: "Estimates, not registry counts. ASR = age-standardised rate per 100,000 (World standard population). Both sexes, all ages. Data cell = [new cases, incidence ASR, deaths, mortality ASR, cumulative risk to age 74 (%)]. Cancer code 39 = all cancers (C00-97), including non-melanoma skin cancer; code 40 excludes it.",
-    citation: "Ferlay J, Ervik M, Lam F, et al. Global Cancer Observatory: Cancer Today (version 1.1). Lyon: IARC; 2024.",
+    citation: CITATION[YEAR] ?? `Global Cancer Observatory: Cancer Today (GLOBOCAN ${YEAR}). Lyon: IARC.`,
     cancers: cancerMeta,
     countries: result,
     failed,

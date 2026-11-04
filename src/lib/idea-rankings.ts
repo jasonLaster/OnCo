@@ -9,7 +9,7 @@ import type { Idea } from "./schema";
 
 /**
  * Ranking views for the ideas (/ideas/rankings/). Every number here is derived from fields the records already
- * carry plus the GLOBOCAN 2022 world estimates in public/globocan/countries.json; nothing is estimated or invented.
+ * carry plus the GLOBOCAN world estimates in public/globocan/countries.json (edition = its `year`); nothing is estimated or invented.
  *
  *   burden        annual new cases (world, both sexes, all ages) summed over the distinct GLOBOCAN sites of the
  *                 linked cancers. A subtype with no site of its own borrows its parent's site (the same convention

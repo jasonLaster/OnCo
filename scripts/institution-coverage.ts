@@ -45,9 +45,8 @@ function agree(a: string, b: string): boolean {
   if (a === b) return true;
   const [s, l] = a.length <= b.length ? [a, b] : [b, a];
   if (s.length < 12) return false;
-  if (GENERIC_START.test(s)) return false;
-  if (l.startsWith(s + " ")) return s.split(" ").length >= 2;
-  return l.endsWith(" " + s) && s.split(" ").length >= 3;
+  if (l.startsWith(s + " ")) return s.split(" ").length >= 2 && !/^all india institute/.test(s);
+  return l.endsWith(" " + s) && s.split(" ").length >= 3 && !GENERIC_START.test(s);
 }
 
 /** The country of a list item where the list says it, as an ISO code; undefined when unknown. */

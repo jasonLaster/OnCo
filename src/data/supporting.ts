@@ -9,7 +9,7 @@ import type { CompanyInput, EntityInput, TechnologyInput, TermInput } from "@/li
  */
 const asOf = "2026-09-08";
 
-type T = Omit<TechnologyInput, "kind" | "asOf">;
+type T = Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string };
 type C = Omit<CompanyInput, "kind" | "asOf">;
 type M = Omit<TermInput, "kind" | "asOf">;
 const t = (x: T): TechnologyInput => ({ kind: "technology", asOf, ...x, tags: ["supporting", ...(x.tags ?? [])] });
@@ -476,7 +476,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Devices and care infrastructure ----
   t({
-    id: "infusion-devices-vascular-access", links: [{ label: "FDA: infusion pumps", url: "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/infusion-pumps" }], name: "Infusion pumps, ports, and ambulatory chemotherapy devices", sections: ["chemotherapy", "supportive-care", "devices"], status: "standard-of-care",
+    id: "infusion-devices-vascular-access", asOf: "2026-11-04", related: ["oncology-infusion-chairs", "chemo-chair-comfort-devices-roadmap"], links: [{ label: "FDA: infusion pumps", url: "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/infusion-pumps" }], name: "Infusion pumps, ports, and ambulatory chemotherapy devices", sections: ["chemotherapy", "supportive-care", "devices"], status: "standard-of-care",
     tldr: "Infusion devices are the implanted ports, smart pumps, and take-home pumps that deliver chemotherapy safely, including 46-hour infusions patients carry home.",
     summary: "Implanted central venous ports and PICC lines (BD Bard PowerPort, B. Braun Celsite, Smiths Medical), smart infusion pumps with drug libraries (BD Alaris, Baxter Spectrum, ICU Medical Plum), and elastomeric ambulatory pumps (Baxter Infusor, B. Braun Easypump) for regimens such as FOLFOX enable outpatient and home chemotherapy. Device recalls (Alaris, 2020-23), port infections and thrombosis, and pump programming errors are the safety issues; home-infusion services extend care beyond clinics.",
     principle: "Subcutaneous reservoir with catheter tip in the superior vena cava for repeated access; pumps meter drug by peristaltic mechanism or elastomeric pressure at a set rate.",

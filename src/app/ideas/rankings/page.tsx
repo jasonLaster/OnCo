@@ -32,7 +32,7 @@ export default function IdeaRankingsPage() {
       <PageHeader
         kicker={<GroupKicker id="map"><span className="text-muted" aria-hidden>/</span><Link href="/ideas/" className="kicker py-1.5 -my-1.5 hover:text-foreground"><T k="kind.idea.plural" fallback="ideas" /></Link></GroupKicker>}
         title={<T k="rank.title" fallback="Idea rankings" />} seed="Idea rankings"
-        ledeNode={<T k="rank.lede" vars={{ n: full(total) }} />}
+        ledeNode={<T k="rank.lede" vars={{ n: full(total), year: GLOBOCAN.year }} />}
         right={<Link href="/ideas/" className="rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium inline-flex items-center gap-1.5"><RankGlyph name="breadth" className="h-4 w-4 text-accent" /><T k="rank.allIdeas" fallback="All ideas" /> →</Link>}
       />
       <Container className="pb-16">

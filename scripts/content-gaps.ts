@@ -316,9 +316,9 @@ const weakByKind = [
 ].map(([k, list]) => ({ kind: k as string, total: (list as Entity[]).length, weak: weak(list as Entity[]), fewInbound: (list as Entity[]).filter((e) => inbound(e) < 3).length }));
 
 // ---------------------------------------------------------------------------------------------------------------------
-// Burden: GLOBOCAN 2022 new cases worldwide per mapped cancer, with the gaps that touch it.
+// Burden: GLOBOCAN new cases (2024 edition) worldwide per mapped cancer, with the gaps that touch it.
 // ---------------------------------------------------------------------------------------------------------------------
-const globocan = JSON.parse(readFileSync("public/globocan/countries.json", "utf8")) as { countries: Record<string, { data: Record<string, number[]> }> };
+const globocan = JSON.parse(readFileSync("public/globocan/countries.json", "utf8")) as { year?: number; countries: Record<string, { data: Record<string, number[]> }> };
 // The snapshot carries a WORLD entry alongside the countries; use it rather than summing (summing would also count WORLD).
 const worldCases = new Map<number, number>();
 for (const [code, cell] of Object.entries(globocan.countries.WORLD.data)) worldCases.set(Number(code), cell[0] ?? 0);
@@ -375,7 +375,7 @@ if (process.argv.includes("--json")) {
   console.log(`## Weakly linked records by kind\n`);
   console.log(`| Kind | Records | Fewer than three relations | Fewer than three inbound links |\n|---|---:|---:|---:|`);
   for (const w of weakByKind) console.log(`| ${w.kind} | ${fmt(w.total)} | ${fmt(w.weak)} | ${fmt(w.fewInbound)} |`);
-  console.log(`\n## Burden and gaps by cancer family (GLOBOCAN 2022 new cases worldwide, WORLD estimate over ${countryCount} countries)\n`);
+  console.log(`\n## Burden and gaps by cancer family (GLOBOCAN ${globocan.year ?? ""} new cases worldwide, WORLD estimate over ${countryCount} countries)\n`);
   console.log(`| Cancer | New cases 2022 | Subtype pages | Trials without a key paper | Drugs without a trial | Standard-of-care rows without a reference | Trial acronyms without a record | Ideas without a trial |\n|---|---:|---:|---:|---:|---:|---:|---:|`);
   for (const b of burdenRows) console.log(`| ${b.name} | ${b.cases === undefined ? "no estimate" : fmt(b.cases) + (b.shared ? " (site total, shared)" : "")} | ${b.subtypes} | ${b.trialsNoPaper} | ${b.drugsNoTrial} | ${b.socNoRef} | ${b.missingSocTrials} | ${b.ideasNoTrial} |`);
   if (process.argv.includes("--lists")) {

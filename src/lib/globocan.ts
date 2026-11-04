@@ -4,7 +4,7 @@ import { rowsForCancerIn, type Globocan } from "./globocan-core";
 
 export * from "./globocan-core";
 
-/** Full GLOBOCAN 2022 dataset, for server components and build-time code only. */
+/** Full GLOBOCAN dataset (the edition is its `year`), for server components and build-time code only. */
 export const GLOBOCAN = globocan as unknown as Globocan;
 
 export const rowsForCancer = (cancerId: string | null) => rowsForCancerIn(GLOBOCAN, cancerId);

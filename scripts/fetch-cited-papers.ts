@@ -13,7 +13,7 @@
  *   npx tsx scripts/fetch-cited-papers.ts --max=200 --apply  write the next 200 papers
  *   npx tsx scripts/fetch-cited-papers.ts --only=10.1056/nejmoa1234567 --debug
  *
- * Order: DOIs cited by the most records first, then by the GLOBOCAN 2022 burden of the citing records' cancer family
+ * Order: DOIs cited by the most records first, then by the GLOBOCAN burden of the citing records' cancer family
  * (the roadmap's ordering), then by DOI.
  *
  * Rules (no invented facts):

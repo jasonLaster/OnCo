@@ -162,7 +162,7 @@ export default function SouthKoreaPage() {
                 <span className="text-xs text-muted">All cancers, C00-97, including non-melanoma skin: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
               </div>
               <StaticTable rows={siteRows} columns={SITE_COLUMNS} noun="sites" defaultSort={{ key: "cases", dir: -1 }} />
-              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are modelled estimates for 2022, not the Korean registry&apos;s counts: the registry counted 281,317 new cancers in 2022 and 288,613 in 2023, and a world-standard rate of 288.6 for 2023. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
+              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are modelled estimates for {GLOBOCAN.year}, not the Korean registry&apos;s counts: the registry counted 281,317 new cancers in 2022 and 288,613 in 2023, and a world-standard rate of 288.6 for 2023. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
             </div>
           )}
         </Section>

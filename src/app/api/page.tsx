@@ -80,11 +80,11 @@ export default function ApiDocs() {
         </table>
         </div>
         <pre className="card p-4 text-xs overflow-auto mt-3"><code>{`# CLI
-npx onco search "HER2-low breast cancer" --kind drug
-npx onco get trastuzumab-deruxtecan
-npx onco ask "What are the side effects of Enhertu?" --region UK
-npx onco export cancer --csv > cancers.csv
-ONCO_API=./out/api/v1 npx onco kinds          # any copy of /api/v1, including a local build
+npx onco-cc search "HER2-low breast cancer" --kind drug
+npx onco-cc get trastuzumab-deruxtecan
+npx onco-cc ask "What are the side effects of Enhertu?" --region UK
+npx onco-cc export cancer --csv > cancers.csv
+ONCO_API=./out/api/v1 npx onco-cc kinds          # any copy of /api/v1, including a local build
 
 # MCP: Claude Code
 claude mcp add onco -- npx -y onco-mcp

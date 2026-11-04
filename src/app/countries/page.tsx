@@ -5,6 +5,7 @@ import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { CountryRanking, type CountryRow } from "@/components/CountryRanking";
 import { countryExtras } from "@/data/country-extras";
 import { routeExists } from "@/lib/sitemap-urls";
+import { GLOBOCAN } from "@/lib/globocan";
 import data from "../../../public/openalex/countries.json";
 
 export const metadata: Metadata = pageMeta({ title: "Country research rankings", description: "Countries ranked by oncology research output (OpenAlex), growth, highly cited share, open access, registered trials, and a disclosed composite score, with GLOBOCAN burden and national funders.", path: "/countries/" });
@@ -27,7 +28,7 @@ export default function Countries() {
       <PageHeader kicker={<GroupKicker id="who" />} title="Country research rankings"
         lede={`Oncology research output by country from OpenAlex (${raw.years[0]} to ${y1}), with growth, highly cited share, open access, ClinicalTrials.gov sites, cancer burden, and the national funder. Ranked by a disclosed composite score. In ${y1} the leaders by volume were ${top.map((t) => t.name).join(", ")}.`} />
       <Container className="pb-16">
-        <CountryRanking rows={rows} years={raw.years} deepDives={deepDives} />
+        <CountryRanking rows={rows} years={raw.years} deepDives={deepDives} globocanYear={GLOBOCAN.year} />
 
         <section className="mt-12 grid gap-6 lg:grid-cols-2 text-[15px] leading-relaxed max-w-6xl">
           <div>
@@ -42,7 +43,7 @@ export default function Countries() {
               <li><strong>Language and indexing bias.</strong> OpenAlex indexes English-language journals most completely; Chinese-, Japanese-, and Russian-language output is under-represented, and China&apos;s counted share has risen partly because more of its journals are now indexed.</li>
               <li><strong>Citations lag.</strong> The highly cited share uses a fixed threshold (more than 50 citations) over five years, which favours earlier years; {y1} papers have had little time to accrue citations.</li>
               <li><strong>Trials.</strong> ClinicalTrials.gov counts every registered study with at least one site in the country, all statuses and all conditions where the registry lists the location; it is a proxy for clinical research capacity, not cancer trials alone, and under-counts countries whose trials register elsewhere (EU CTIS, ChiCTR, CTRI, jRCT).</li>
-              <li><strong>Burden and funding.</strong> Incidence and mortality are GLOBOCAN 2022 age-standardised rates per 100,000; funder budgets are approximate and mix cancer-specific and all-field figures, as labelled.</li>
+              <li><strong>Burden and funding.</strong> Incidence and mortality are GLOBOCAN {GLOBOCAN.year} age-standardised rates per 100,000; funder budgets are approximate and mix cancer-specific and all-field figures, as labelled.</li>
             </ul>
           </div>
         </section>
@@ -52,7 +53,7 @@ export default function Countries() {
           <ul className="list-disc pl-5 space-y-1">
             <li><a className="underline" href="https://docs.openalex.org/api-entities/works" rel="noopener">OpenAlex works API</a>: {raw.source}. Data built {raw.built}.</li>
             <li><a className="underline" href="https://clinicaltrials.gov/data-api/api" rel="noopener">ClinicalTrials.gov API v2</a>, <code>query.locn</code> counts.</li>
-            <li><a className="underline" href="https://gco.iarc.who.int/today/en/fact-sheets-populations" rel="noopener">IARC Global Cancer Observatory</a>, GLOBOCAN 2022 country fact sheets.</li>
+            <li><a className="underline" href="https://gco.iarc.who.int/today/en/fact-sheets-populations" rel="noopener">IARC Global Cancer Observatory</a>, GLOBOCAN {GLOBOCAN.year} country fact sheets.</li>
             <li><a className="underline" href="https://data.worldbank.org/indicator/SP.POP.TOTL" rel="noopener">World Bank population</a>, 2024 estimates; national funder websites as linked in each row.</li>
             <li>Cross-checks: <a className="underline" href="https://www.nature.com/nature-index/country-outputs/generate/all/global" rel="noopener">Nature Index country outputs</a> (fractional counting, 145 journals) and <a className="underline" href="https://www.scimagojr.com/countryrank.php?area=2700&category=2730" rel="noopener">SCImago country rank, Oncology</a>.</li>
           </ul>

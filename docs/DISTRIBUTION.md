@@ -194,7 +194,7 @@ Days are working days from the day the owner starts. Owner-only steps are marked
 | Day | Do | Channel |
 |---|---|---|
 | 1 | (O) Verify Search Console (DNS TXT), submit the sitemap, import into Bing Webmaster. (O) Confirm www redirect in Vercel. | Search |
-| 1 | (O) Resolve the `onco-mcp` name clash, bump versions, `npm publish` both packages. Smoke test `npx -y onco-mcp` and `npx onco kinds` from a clean directory. | AI assistants |
+| 1 | (O) Resolve the `onco-mcp` name clash, bump versions, `npm publish` both packages. Smoke test `npx -y onco-mcp` and `npx onco-cc kinds` from a clean directory. | AI assistants |
 | 2 | (O) Link the repository on Zenodo. Move the Unreleased notes in CHANGELOG.md under 0.5.0, bump `package.json` and `CITATION.cff`, tag `v0.5.0`, push the tag. Check the GitHub release assets and the Zenodo record. Add the DOI to `CITATION.cff` and the README. | Data communities |
 | 2 | (O) `mcp-publisher publish` from `packages/onco-mcp`. Submit to the Claude and Cursor directories with the press-kit description. | AI assistants |
 | 3 | Check `/llms.txt`, `/llms-full.txt`, `/api/v1/openapi.json` and `/sitemap.xml` on the live site after the deploy. Fix anything that 404s. | Search, AI |

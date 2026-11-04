@@ -91,7 +91,7 @@ Use this line in full wherever a treatment, a test or a cancer is discussed.
 - One line: A cited, open knowledge graph of oncology with a JSON API, Markdown for language models and an MCP server.
 - Category: Health and medicine; Open data; Developer tools
 - Install (MCP): `npx -y onco-mcp` or `claude mcp add onco -- npx -y onco-mcp`
-- Install (CLI): `npx onco search "HER2-low breast cancer"`
+- Install (CLI): `npx onco-cc search "HER2-low breast cancer"`
 - Repository: https://github.com/judegomila/OnCo
 - Licence: MIT (code), CC BY-NC 4.0 (data)
 

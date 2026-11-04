@@ -98,8 +98,14 @@ export const rows: PrecisionRow[] = [
     label: "How little tumour DNA a blood test can see: from tracking a few mutations to reading the whole genome",
     technologyIds: ["mrd-testing", "ctdna-tumour-fraction", "tumour-informed-assay"],
     metric: "Lowest tumour fraction detectable in plasma, as a share of all cell-free DNA (10⁻⁵ is one tumour fragment in 100,000)",
+    today: {
+      value: "95 per cent limit of detection of 3.45 parts per million (3.45 × 10⁻⁶), detection threshold 1.67 parts per million, for a whole-genome-designed panel of up to about 1,800 variants",
+      context: "Analytical validation of NeXT Personal on two cell lines and 123 patients across nine cancer types (Northcott 2024); a company-authored validation, and the limit pools every tracked variant",
+      source: doi("Northcott et al., Oncotarget 2024: analytical validation of NeXT Personal", "10.18632/oncotarget.28565", "Analytical measurements demonstrated a detection threshold of 1.67 parts per million (PPM) with a limit of detection at 95% (LOD95) of 3.45 PPM."),
+    },
     limits: [
-      { kind: "sampling", text: "Deep sequencing of a small panel runs out of molecules before it runs out of depth: the number of fragments in the tube, not the sequencer, sets the floor. OnCo did not find a peer-reviewed abstract stating the limit of detection of each commercial tumour-informed assay in comparable units, so no figure is printed for today's tests.", source: doi("Zviran et al., Nat Med 2020", ZVIRAN_2020, "the combination of low tumor fraction (TF) and limited number of DNA fragments restricts low-disease-burden monitoring through the prevailing deep targeted sequencing paradigm") },
+      { kind: "sampling", text: "Deep sequencing of a small panel runs out of molecules before it runs out of depth: the number of fragments in the tube, not the sequencer, sets the floor. Makers state their limits in different units (parts per million, mean tumour molecules per mL, allele fraction), so today's tests cannot be ranked on one scale; the figure above is the peer-reviewed parts-per-million limit for one commercial test.", source: doi("Zviran et al., Nat Med 2020", ZVIRAN_2020, "the combination of low tumor fraction (TF) and limited number of DNA fragments restricts low-disease-burden monitoring through the prevailing deep targeted sequencing paradigm") },
+      { kind: "sampling", text: "Detecting tumour DNA and naming the clone it came from have different floors. Detection pools every tracked mutation; naming a subclone may use only that subclone's own mutations. The TRACERx method for it, ECLIPSE, works at 0.1 per cent clonal tumour DNA (1,000 parts per million), several hundred times above the detection limit above.", source: doi("Abbosh et al., Nature 2023 (TRACERx, full text)", TRACERX_CTDNA_2023, "Plasma samples with clonal ctDNA levels of 0.1% (64% of ctDNA positive samples) had an estimated minimally detectable CCF of 20% for a representative subclone") },
       { kind: "workflow", text: "Tracking more mutations finds ctDNA sooner. In c-TRAK TN, a whole-exome-informed multivariant assay detected ctDNA before digital PCR or the tissue-free assay in 12 of 41 patients found by both.", source: doi("c-TRAK TN tissue-free analysis, JAMA Oncol 2026", CTRAK_TISSUE_FREE_2026, "Among patients detected by both assays (41 of 133), 12 of 41 (29.3%) had ctDNA detected earlier by multivariant tumor-informed assay with 1 (2.4%) earlier by the tissue-free assay.") },
     ],
     nextStep: {
@@ -113,7 +119,7 @@ export const rows: PrecisionRow[] = [
       outcome: "plausible",
       source: doi("Tie et al., Nat Med 2025: DYNAMIC five-year outcomes", DYNAMIC_2025, "post hoc analysis of ctDNA clearance at EOT assessed by a new assay that evaluated an average of 29 tumor-derived mutations per patient predicted for a favorable 5-year recurrence-free probability of 97% versus 0% for ctDNA persistence"),
     },
-    relatedIds: ["cfdna", "ctdna", "paper-dynamic-nat-med-2025-update", "paper-zviran-whole-genome-cfdna-residual-disease-nat-med-2020"],
+    relatedIds: ["cfdna", "ctdna", "paper-dynamic-nat-med-2025-update", "paper-zviran-whole-genome-cfdna-residual-disease-nat-med-2020", "paper-northcott-next-personal-validation-oncotarget-2024", "eclipse-subclone-ctdna", "b-subclone-attribution-residual-disease"],
   },
   {
     id: "ctdna-lead-time-over-imaging",

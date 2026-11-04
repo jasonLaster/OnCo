@@ -34,7 +34,7 @@ const TEHRAN = { city: "Tehran", country: "IR", lat: 35.6892, lng: 51.389 } as c
 const WB_MOHME_ED = "https://web.archive.org/web/20240329151731/https://behdasht.gov.ir/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C/%D8%A7%D8%AC%D8%B1%D8%A7%DB%8C-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D9%88-%DA%A9%D8%B4%D9%88%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%AA%D8%B4%D8%AE%DB%8C%D8%B5-%D8%B2%D9%88%D8%AF%D8%B1%D8%B3-%D8%B3%D8%B1%D8%B7%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%B4%D8%A7%DB%8C%D8%B9%E2%81%84-%D8%B2%D9%86%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%A7%DB%8C-50-%D8%B3%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8%D8%A7%D9%84%DA%AF%D8%B1%DB%8C-%D9%BE%D9%88%DA%A9%DB%8C-%D8%A7%D8%B3%D8%AA%D8%AE%D9%88%D8%A7%D9%86-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF";
 const WB_IFDA_HISTORY = "https://web.archive.org/web/20210418231548/https://www.fda.gov.ir/en/%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88-%D8%AF%D9%81%D8%A7%D8%AA%D8%B1/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DA%86%D9%87-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86";
 const WB_IHIO_SPECIAL = "https://web.archive.org/web/20210423164130/https://ihio.gov.ir/%D9%BE%D9%88%D8%B4%D8%B4-%D8%A8%DB%8C%D9%85%D9%87/%D8%B5%D9%86%D8%AF%D9%88%D9%82%D9%87%D8%A7-%D9%88-%D9%BE%D9%88%D8%B4%D8%B4%D9%87%D8%A7%DB%8C-%D8%A8%DB%8C%D9%85%D9%87-%D8%A7%DB%8C/%D9%BE%D9%88%D8%B4%D8%B4-%D8%A8%DB%8C%D9%85%D9%87-%D8%A7%DB%8C-%D8%A8%DB%8C%D9%85%D8%A7%D8%B1%D8%A7%D9%86-%D8%AE%D8%A7%D8%B5";
-const WB_IHIO_NEWS = "https://web.archive.org/web/20230611020801/https://ihio.gov.ir/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%AE%D8%A8%D8%B1/ArticleId/29182/";
+const WB_IHIO_NEWS = "https://web.archive.org/web/20230611020801/https://ihio.gov.ir/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%AE%D8%A8%D8%B1/ArticleId/29182/%D8%B3%DB%8C%20%D8%AF%D8%B1%D8%B5%D8%AF%20%D8%A7%D8%B2%20%D8%A8%DB%8C%D9%85%D8%A7%D8%B1%D8%A7%D9%86%20%D8%AE%D8%A7%D8%B5%20%D9%88%20%D8%B5%D8%B9%D8%A8%E2%80%8C%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D8%AC%20%D8%A7%D8%B2%20%D8%A8%D8%B3%D8%AA%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%AD%D9%85%D8%A7%DB%8C%D8%AA%DB%8C%20%D8%A8%DB%8C%D9%85%D9%87%20%D8%B3%D9%84%D8%A7%D9%85%D8%AA%20%D8%A8%D9%87%D8%B1%D9%87%E2%80%8C%D9%85%D9%86%D8%AF%20%D8%B4%D8%AF%D9%86%D8%AF";
 const WB_TAMIN = "https://web.archive.org/web/20260911105119/https://tamin.ir/";
 const WB_CINNAGEN = "https://web.archive.org/web/20260930035205/https://www.cinnagen.com/about-us/";
 const WB_ARYOGEN_ABOUT = "https://web.archive.org/web/20250517191056/https://www.aryogen.com/about/";
@@ -145,9 +145,9 @@ const trials: TrialInput[] = [
   t({ id: "nct06021379", name: "AryoTrust (AryoGen trastuzumab) post-marketing safety study in HER2-positive breast cancer", aka: ["TRA.ARY.FH.95.IV"], nct: "NCT06021379", phase: "observational", status: "completed",
     setting: "Post-marketing surveillance of a trastuzumab biosimilar in Iranian women with HER2-positive non-metastatic breast cancer after adjuvant chemotherapy",
     sponsor: "AryoGen Pharmed Co.", enrolled: 597, started: "2017-02-22", startedType: "actual", yearReported: 2024,
-    tldr: "A safety study of a locally made copy of trastuzumab in 597 Iranian women treated after breast cancer surgery, which found no new safety concerns.",
+    tldr: "A safety study of a locally made copy of trastuzumab in 597 Iranian women treated after breast cancer surgery, whose authors judged it generally well tolerated.",
     summary: "AryoGen Pharmed followed women with HER2-positive non-metastatic breast cancer who received its trastuzumab, AryoTrust, every three weeks for nine cycles after adjuvant chemotherapy, at 15 Iranian sites listed on ClinicalTrials.gov, from February 2017 to August 2022. The 2024 report in Expert Opinion on Drug Safety covers 597 women and 5,313 injection cycles: 139 had at least one adverse event, the commonest being decreased ejection fraction (5.7%), peripheral neuropathy (5.36%) and nausea (5.19%); meningioma was the only life-threatening serious event and the mean ejection fraction did not change notably.",
-    result: "No new safety signal in 597 women; decreased ejection fraction in 5.7% (Expert Opin Drug Saf 2024).",
+    result: "Judged generally well tolerated by its authors in 597 women; decreased ejection fraction in 5.7% (Expert Opin Drug Saf 2024).",
     drugs: ["trastuzumab"], cancers: ["breast-her2-positive"], targets: ["her2"], technologies: ["biosimilar-manufacturing"], terms: ["biosimilar"], companies: ["aryogen-pharmed"],
     keyPapers: ["paper-aryotrust-trastuzumab-pms-2024"],
     links: [ctgov("NCT06021379"), doi("10.1080/14740338.2024.2385483", "Zahedi et al., Expert Opin Drug Saf 2024"), pubmed("39076099")] }),
@@ -164,7 +164,7 @@ const papers: PaperInput[] = [
       "In men the commonest were stomach (21.24), prostate (18.41) and colorectum (16.57); in women breast (34.53), colorectum (11.86) and stomach (9.44). Cervical cancer was 1.78 per 100,000 women.",
       "Incidence of oesophageal, stomach and lung cancer was high in the north and north-west of the country.",
     ],
-    whatItMeans: "It is the baseline for national cancer figures in Iran: before it, national numbers rested on pathology-based and regional registries. It places Iran as a medium-risk country with a different order of common cancers from the world average.",
+    whatItMeans: "It is the first published national count from the population-based registry. It places Iran as a medium-risk country with a different order of common cancers from the world average.",
     caveats: ["One province was not covered, and about a third of cancers were registered without microscopic confirmation.", "Counts are registrations for one year; the paper gives no mortality or survival."],
     cancers: ["gastric", "breast-cancer", "colorectal", "esophageal"], institutions: ["iran-mohme"], technologies: ["cancer-registries-surveillance"],
     links: [doi("10.1016/j.canep.2019.05.009", "Cancer Epidemiol 2019"), pubmed("31132560")] }),
@@ -222,7 +222,7 @@ const papers: PaperInput[] = [
       "For antineoplastic and immunomodulating agents (ATC group L) the mean relative lag was 77.2 months against the US agency, 63.96 against the European agency and 57.93 against the Japanese agency.",
     ],
     whatItMeans: "It is the only published measure OnCo found of how long new cancer medicines take to be approved in Iran, and it puts the delay in years rather than months.",
-    caveats: ["Approval dates were taken as the start of the year when only the year was known.", "It measures registration, not when a medicine became available or reimbursed, and does not separate biosimilars or locally made medicines."],
+    caveats: ["Approval dates were taken as the start of the year when only the year was known.", "It measures registration, not when a medicine became available or reimbursed.", "It covers only medicines approved by both the US agency and the Iranian regulator, and excludes vaccines, combinations and new versions of medicines already approved."],
     institutions: ["iran-fda"], bottlenecks: ["b-global-access", "b-regulatory-fragmentation"],
     links: [doi("10.1097/MD.0000000000038142", "Medicine 2024"), pubmed("38905367")] }),
 
@@ -270,7 +270,7 @@ const papers: PaperInput[] = [
 
   p({ id: "paper-aryotrust-trastuzumab-pms-2024", name: "Safety evaluation of the trastuzumab biosimilar in Iranian women with HER2-positive breast cancer undergoing adjuvant chemotherapy: a post-marketing surveillance",
     journal: "Expert Opinion on Drug Safety", year: 2024, doi: "10.1080/14740338.2024.2385483", pmid: "39076099", authors: "Zahedi F, Jafari A, Nasiri Motlagh B, et al.", paperType: "real-world", participants: 597,
-    tldr: "In 597 Iranian women given a locally made copy of trastuzumab after breast cancer surgery, side effects were in line with what the original is known for.",
+    tldr: "In 597 Iranian women given a locally made copy of trastuzumab after breast cancer surgery, the commonest side effects were reduced heart pumping function, nerve damage and nausea, and the authors judged it generally well tolerated.",
     summary: "Post-marketing surveillance of AryoTrust, the trastuzumab made by AryoGen in Iran, in women with HER2-positive non-metastatic breast cancer who had had adjuvant chemotherapy and then received trastuzumab every three weeks for nine cycles, from February 2017 to August 2022 (NCT06021379). Safety data were collected in booklets.",
     findings: [
       "597 women (mean age 48.13) received 5,313 injection cycles; 139 had at least one adverse event.",

@@ -96,7 +96,10 @@ describe("row and assay resolution", () => {
     expect(rowRecord(row("foundationone-cdx"))?.id).toBe("foundationone-cdx");
     // FoundationOne Liquid CDx points at the record named "FoundationOne CDx / Liquid CDx": one product page, one item.
     expect(rowRecord(row("foundationone-liquid-cdx"))?.id).toBe("foundationone-cdx");
-    expect(rowRecord(row("bostongene-tumor-portrait"))).toBeUndefined();
+    // Every row has had a record since the tests fill of 3 November 2026 (BostonGene Tumor Portrait gained
+    // `drugId: "bostongene-tumor-portrait"`), so the no-record case is checked on the same row without its pointer.
+    expect(rowRecord(row("bostongene-tumor-portrait"))?.id).toBe("bostongene-tumor-portrait");
+    expect(rowRecord({ ...row("bostongene-tumor-portrait"), drugId: undefined })).toBeUndefined();
   });
 
   it("an assay resolves to its reviewed pair, else to its one non-medicine product", () => {
@@ -127,7 +130,11 @@ describe("company and technology products", () => {
       for (const r of TUMOUR_TESTS.filter((x) => x.companyId === c.id)) expect(keys.includes(`row:${r.id}`) || keys.includes(r.drugId ?? ""), `${c.id}: row ${r.id}`).toBe(true);
     }
     expect(hasProduct(companyProducts(co("personalis")).map((i) => i.key), "next-personal")).toBe(true);
-    expect(companyProducts(co("foundation-medicine")).map((i) => i.key)).toEqual(expect.arrayContaining(["foundationone-cdx", "row:foundationone-heme"]));
+    // FoundationOne Heme's row points at its own record since the tests fill of 3 November 2026, so it is one item
+    // keyed by the record; the row alone no longer stands for it.
+    const fmi = companyProducts(co("foundation-medicine"));
+    expect(fmi.map((i) => i.key)).toEqual(expect.arrayContaining(["foundationone-cdx", "foundationone-heme"]));
+    expect(fmi.find((i) => i.key === "foundationone-heme")?.rows.map((r) => r.id)).toEqual(["foundationone-heme"]);
   });
 
   it("a technology page lists every product filed under it and every tumour-testing row filed under it", () => {

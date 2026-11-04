@@ -149,6 +149,7 @@ describe("a red card reaches only the drugs it is for", () => {
   const ALLOWED = new Set([
     "cytotoxic:actinomycin:dactinomycin", // dactinomycin is actinomycin D, and the cytotoxic cards are right for it.
     "kinase-inhibitors:kinase inhibitor:midostaurin", // a multikinase inhibitor is a kinase inhibitor.
+    "car-t:car-t:avc-101", // UniCAR-T-CD123 is a switchable CAR-T cell therapy, and the CAR-T cards are right for it.
   ]);
 
   it("has no pattern fragment that matches inside an unrelated word", () => {

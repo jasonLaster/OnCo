@@ -146,11 +146,11 @@ export const trop2EmergingModalities: EntityInput[] = [
       "adc",
       "bispecific-adc"
     ],
-    "trials": [
-      "nct07193511"
-    ],
     "companies": [
       "avenzo"
+    ],
+    "trials": [
+      "nct07193511"
     ],
     "links": [
       {

@@ -177,7 +177,7 @@ export const THERAPY_PATTERNS: Array<[string, RegExp]> = [
   ["EGFR antibody", /cetuximab|panitumumab|anti-?EGFR antibod/i],
   ["VEGFR TKI", /sorafenib|lenvatinib|sunitinib|cabozantinib|axitinib|pazopanib|regorafenib|VEGFR[- ]?TKI/i],
   ["mTOR inhibitor", /everolimus|mTOR inhibitor/i],
-  ["androgen receptor pathway inhibitor", /enzalutamide|abiraterone|apalutamide|darolutamide|androgen receptor (?:pathway )?inhibitor|\bARPI\b|\bARSI\b|novel hormonal (?:agent|therapy)/i],
+  ["androgen receptor pathway inhibitor", /\b(?:deut)?enzalutamide|abiraterone|apalutamide|darolutamide|androgen receptor (?:pathway )?inhibitor|\bARPI\b|\bARSI\b|novel hormonal (?:agent|therapy)/i],
   ["androgen deprivation therapy", /androgen deprivation|\bADT\b|castration/i],
   ["PSMA radioligand", /lutetium|177Lu|Lu-?177|PSMA[- ]?(?:radioligand|RLT)|Pluvicto/i],
   ["proteasome inhibitor", /proteasome inhibitor|bortezomib|carfilzomib|ixazomib/i],

@@ -593,6 +593,9 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   // the palliative management of leukaemias and lymphomas. The labels read give no first approval year, so none is written.
   hydrocortisone: { US: A(undefined, "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922", "Solu-Cortef label: palliative management of leukemias and lymphomas among its indications") },
   methylprednisolone: { US: A(undefined, "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7271310c-7764-4812-aa30-a5e90987c7a9", "Solu-Medrol label: palliative management of leukemias and lymphomas among its indications") },
+  // Company pipeline products approved only in China (src/data/company-pipeline-gap.ts, 3 Nov 2026).
+  deutenzalutamide: { CN: A(2025, "https://www.hinovapharma.com/en/chanpinxianguan.html", "Metastatic castration-resistant prostate cancer", "Hinova pipeline page: 'approved for marketing from the NMPA in China on May 29, 2025'") },
+  zeprumetostat: { CN: C(2025, "https://doi.org/10.1007/s40265-025-02271-0", "Relapsed or refractory peripheral T-cell lymphoma after at least one line of systemic therapy", "Airuijing (Jiangsu Hengrui); conditional approval August 2025 (Drugs, 'Zeprumetostat: First Approval')") },
   imp4927: { EU: UR("Sepalna (senaparib; applicant SFL Pharmaceuticals Deutschland): CHMP positive opinion 17 Sep 2026 as maintenance monotherapy for advanced high-grade epithelial ovarian, fallopian tube or primary peritoneal cancer in response after first-line platinum chemotherapy; European Commission decision pending. EMA register: 'Opinion: EMA has issued an opinion on this medicine'; checked 2026-09-24", epar("sepalna")) },
 };
 

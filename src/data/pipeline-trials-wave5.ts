@@ -3694,7 +3694,7 @@ export const pipelineTrialsWave5: TrialInput[] = [
     setting: "A Phase 1/2 Trial of TER-2013 in Patients With Solid Tumors Harboring AKT/PI3K/PTEN Pathway Alterations",
     tldr: "A phase 1/2 trial of Fulvestrant in endometrial cancer and ovarian cancer, run by Terremoto Biosciences Inc., now recruiting.",
     summary: "A Phase 1/2 Trial of TER-2013 in Patients With Solid Tumors Harboring AKT/PI3K/PTEN Pathway Alterations is a phase 1/2 interventional study registered as NCT07109726 by Terremoto Biosciences Inc., with 205 participants planned, started 2025-09-23 and due to reach its primary completion in 2028-12-30. Interventions recorded: TER-2013, Fulvestrant injection. Conditions listed: Breast Cancer, Endometrial Cancer, Ovarian Cancer, Lung Squamous Cell Carcinoma. No results are recorded here; the registry entry is the source.",
-    drugs: ["fulvestrant"], cancers: ["endometrial","ovarian","head-and-neck","cervical"], 
+    drugs: ["fulvestrant"], cancers: ["endometrial","ovarian","head-and-neck","cervical","breast-cancer","lung-squamous-cell-carcinoma"], 
     links: [{ label: "ClinicalTrials.gov NCT07109726", url: "https://clinicaltrials.gov/study/NCT07109726" }] },
   { id: "nct05061134", technologies: ["checkpoint-inhibitor"], aka: ["MONETTE"], kind: "trial", name: "A Study of Ceralasertib Monotherapy and Ceralasertib Plus Durvalumab in Patients With Melanoma and Resistance to PD-(L)1 Inhibition", nct: "NCT05061134", phase: "2", status: "active", sponsor: "AstraZeneca", enrolled: 194, asOf, tags,
     setting: "A Randomised, Open-Label, Phase 2 Study of Ceralasertib Monotherapy and Ceralasertib Plus Durvalumab in Patients With Unresectable or Advanced Melanoma and Primary or Secondary Resistance to PD-(L)1 Inhibition",

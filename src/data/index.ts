@@ -81,6 +81,11 @@ import { institutionsWorld } from "./institutions/world";
 import { institutionsBodies } from "./institutions/bodies";
 import { institutionsEurope } from "./institutions/europe";
 import { russiaInstitutions, russiaPapers } from "./russia-entities";
+import { canadaInstitutions, canadaPapers } from "./canada-entities";
+import { koreaInstitutions, koreaPapers } from "./korea-entities";
+import { netherlandsInstitutions, netherlandsPapers, netherlandsTrials } from "./netherlands-entities";
+import { franceInstitutions, francePapers, franceTrials } from "./france-entities";
+import { italyInstitutions, italyPapers, italyPeople } from "./italy-entities";
 import { institutionsCentresWave3 } from "./institutions/centres-wave3";
 import { institutionsDonorFoundations } from "./institutions/donor-foundations";
 import { foundationModels } from "./foundation-models";
@@ -119,6 +124,11 @@ import { institutionsIsrael } from "./institutions/israel";
 import { institutionsWaveInvestigators } from "./institutions-wave-investigators";
 import { india } from "./india";
 import { israel } from "./israel";
+import { recordsAU } from "./country-records-au";
+import { recordsES } from "./country-records-es";
+import { recordsBR } from "./country-records-br";
+import { recordsSE } from "./country-records-se";
+import { recordsCH } from "./country-records-ch";
 import { china } from "./china";
 import { approvedWave1 } from "./drugs-approved-wave1";
 import { targetsWave1 } from "./targets-wave1";
@@ -294,6 +304,11 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsEurope,
   ...russiaInstitutions,
   ...russiaPapers,
+  ...canadaInstitutions, ...canadaPapers,
+  ...koreaInstitutions, ...koreaPapers,
+  ...netherlandsInstitutions, ...netherlandsPapers, ...netherlandsTrials,
+  ...franceInstitutions, ...francePapers, ...franceTrials,
+  ...italyInstitutions, ...italyPeople, ...italyPapers,
   ...institutionsCentresWave3,
   ...institutionsDonorFoundations,
   ...foundationModels,
@@ -330,6 +345,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsWaveInvestigators,
   ...india,
   ...israel,
+  ...recordsAU, ...recordsES, ...recordsBR, ...recordsSE, ...recordsCH,
   ...china,
   ...approvedWave1,
   ...targetsWave1,

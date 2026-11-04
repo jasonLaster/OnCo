@@ -3,9 +3,8 @@ import { ScrollRow } from "./ScrollRow";
 import type { Biomarker } from "@/lib/schema";
 import { routeFor } from "@/lib/kinds";
 import { graph } from "@/lib/graph";
-import { hasApproval, isGenomeWide, MEASUREMENT_META, parentTarget, readoutsForDrug, readoutsForTarget, readoutsForTerm, siblingReadouts, thresholdDrugs, trialsNaming } from "@/lib/biomarkers";
-import { TUMOUR_TESTS } from "@/data/tumour-tests";
-import { assays } from "@/data/assays";
+import { hasApproval, isGenomeWide, MEASUREMENT_META, parentTarget, readoutsForDrug, readoutsForTarget, readoutsForTerm, siblingReadouts, trialsNaming } from "@/lib/biomarkers";
+import { biomarkerMembers, READOUT_TEST_CAP } from "@/lib/members";
 import { statusClass } from "@/lib/text";
 import { TargetSchematic } from "./TargetSchematic";
 import { KindIcon } from "./KindIcon";
@@ -48,10 +47,11 @@ export function BiomarkerDetail({ bm }: { bm: Biomarker }) {
   const parent = parentTarget(bm);
   const current = bm.thresholds.filter((t) => t.status === "current");
   const past = bm.thresholds.filter((t) => t.status !== "current");
-  const tests = TUMOUR_TESTS.filter((t) => bm.tests.includes(t.id));
-  const assayRows = assays.filter((a) => bm.assays.includes(a.id));
+  // Tests and treatments are gathered from the corpus and unioned with what the record lists (src/lib/members.ts):
+  // one item per product, and a medicine the result selects never sits among the tests.
+  const { tests, testsMoreHref, treatments } = biomarkerMembers(bm);
+  const shownTests = tests.slice(0, READOUT_TEST_CAP);
   const trials = trialsNaming(bm);
-  const named = thresholdDrugs(bm);
   const ent = (id: string) => g.get(id);
   return (
     <div className="mt-8 space-y-8">
@@ -85,10 +85,10 @@ export function BiomarkerDetail({ bm }: { bm: Biomarker }) {
         {bm.definedBy && current.length > 0 && <p className="text-xs text-muted mt-2">Also defined by <a className="underline" href={bm.definedBy.url} rel="noopener">{bm.definedBy.label}</a>.</p>}
       </section>
 
-      {named.length > 0 && (
-        <section>
-          <Kicker text="Drugs whose label names it" />
-          <div className="flex flex-wrap gap-1.5">{named.map((d) => <Link key={d.id} href={routeFor(d)} title={d.tldr} className={pill}><KindIcon kind="drug" className="h-3.5 w-3.5 text-accent" /><span>{d.name}</span></Link>)}</div>
+      {treatments.length > 0 && (
+        <section id="treatments">
+          <Kicker text="Treatments this result selects" />
+          <div className="flex flex-wrap gap-1.5">{treatments.map((d) => <Link key={d.id} href={routeFor(d)} title={d.tldr} className={pill}><KindIcon kind="drug" className="h-3.5 w-3.5 text-accent" /><span>{d.name}</span></Link>)}</div>
         </section>
       )}
 
@@ -103,13 +103,13 @@ export function BiomarkerDetail({ bm }: { bm: Biomarker }) {
         </section>
       )}
 
-      {(tests.length > 0 || assayRows.length > 0) && (
+      {tests.length > 0 && (
         <section id="tests">
           <Kicker text="Tests that measure it" />
-          <div className="flex flex-wrap gap-1.5">
-            {assayRows.map((a) => <Link key={a.id} href={`/assays/#${a.id}`} title={a.cutoff} className={pill}><span aria-hidden className="text-accent">⚗</span><span>{a.name}</span></Link>)}
-            {tests.map((t) => <Link key={t.id} href={`/tumour-testing/#${t.id}`} title={t.returns} className={pill}><span aria-hidden className="text-accent">≡</span><span>{t.name}</span></Link>)}
+          <div className="flex flex-wrap gap-1.5" data-readout-tests>
+            {shownTests.map((t) => <Link key={t.key} href={t.href} title={t.tip} className={pill} data-test-key={t.key}><span aria-hidden className="text-accent">{!t.record && !t.rows.length ? "⚗" : "≡"}</span><span>{t.name}</span></Link>)}
           </div>
+          {tests.length > shownTests.length && <p className="mt-2 text-sm"><Link href={testsMoreHref} className="underline" data-more>and {tests.length - shownTests.length} more →</Link></p>}
         </section>
       )}
 

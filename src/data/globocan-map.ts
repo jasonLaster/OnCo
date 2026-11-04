@@ -57,5 +57,5 @@ export const GLOBOCAN_MAP: Record<string, GlobocanMapping> = {
   "cutaneous-scc": { codes: [17], label: "Non-melanoma skin cancer", shared: true, note: "GLOBOCAN counts all non-melanoma skin cancers together and many registries under-record them; basal cell and cutaneous squamous cell carcinoma share this total." },
 };
 
-/** The special "all cancers excluding non-melanoma skin cancer" code. */
+/** GLOBOCAN's "all cancers" code, C00-97, which includes non-melanoma skin cancer (code 40 excludes it). */
 export const ALL_CANCERS_CODE = 39;

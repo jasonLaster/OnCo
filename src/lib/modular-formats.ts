@@ -82,9 +82,9 @@ export const formatById = (id: string): FormatDef | undefined => FORMATS.find((f
 export type CellState = "approved" | "development" | "stopped" | "unclear" | "untried";
 export const CELL_STATES: CellState[] = ["approved", "development", "stopped", "unclear", "untried"];
 export const STATE_META: Record<CellState, { label: string; tip: string; chip: string; swatch: string }> = {
-  approved: { label: "Approved", tip: "At least one medicine with this combination of parts has an approval row in the corpus and is not recorded as withdrawn.", chip: "bg-accent-soft text-accent border border-accent/30", swatch: "bg-accent-solid" },
+  approved: { label: "Approved", tip: "At least one medicine with this combination of parts has an approval row in the corpus and is not recorded as withdrawn.", chip: "tone-acc", swatch: "bg-accent-solid" },
   development: { label: "In development", tip: "A medicine with this combination has a recruiting, active or planned trial, a development-phase status on its record, or active studies on ClinicalTrials.gov, and no approval.", chip: "tone-live", swatch: "bg-amber-400" },
-  stopped: { label: "Tried and stopped", tip: "Every medicine with this combination is recorded as withdrawn, negative or historic, or its only trial evidence is a terminated, withdrawn or negative study, or its approval was withdrawn.", chip: "bg-zinc-200 text-zinc-800 dark:bg-zinc-700 dark:text-zinc-100", swatch: "bg-zinc-600" },
+  stopped: { label: "Tried and stopped", tip: "Every medicine with this combination is recorded as withdrawn, negative or historic, or its only trial evidence is a terminated, withdrawn or negative study, or its approval was withdrawn.", chip: "tone-stop", swatch: "bg-zinc-600" },
   unclear: { label: "Recorded, state unclear", tip: "A medicine with this combination exists in the corpus but its record carries no status, no trial with a status, and no approval or registry activity to classify it by.", chip: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300", swatch: "bg-zinc-300" },
   untried: { label: "Untried here", tip: "No medicine in the corpus combines these two parts. The corpus is not the world: absence here means nothing in OnCo, not nothing anywhere.", chip: "border border-dashed border-border text-muted", swatch: "bg-foreground/[0.06]" },
 };

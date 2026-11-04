@@ -74,8 +74,8 @@ export function EngineView({ axisKeys, axisLabels, rows, cols, cells, table }: {
           {cols.map((c) => (
             <div key={c.id} data-col={c.id} className="h-28 flex items-end justify-center">
               {c.href
-                ? <Link href={c.href} title={c.name} className="[writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline">{c.name}</Link>
-                : <button type="button" onClick={() => pick(undefined, c.id)} title={`${c.name}: filter the table to this column`} className={`[writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline ${c.id === NOT_RECORDED ? "text-muted italic" : ""}`}>{c.name}</button>}
+                ? <Link href={c.href} title={c.name} className="eg-ch">{c.name}</Link>
+                : <button type="button" onClick={() => pick(undefined, c.id)} title={`${c.name}: filter the table to this column`} className={`eg-ch${c.id === NOT_RECORDED ? " text-muted italic" : ""}`}>{c.name}</button>}
             </div>
           ))}
           {shownRows.map((r, ri) => (
@@ -103,7 +103,7 @@ export function EngineView({ axisKeys, axisLabels, rows, cols, cells, table }: {
 function RowCells({ r, ri, cols, byPos, pick, cellHref }: { r: GridItem; ri: number; cols: GridItem[]; byPos: Map<string, GridCell>; pick: (a?: string, b?: string) => void; cellHref: (a: string, b: string) => string }) {
   return (
     <>
-      <div data-row={r.id} className="sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]">
+      <div data-row={r.id} className="eg-rh">
         {r.href ? <Link href={r.href} className="hover:underline" title={r.name}>{r.name}</Link> : <span title={r.name}>{r.name}</span>}
         <button type="button" onClick={() => pick(r.id)} className="ms-1.5 text-[10px] text-muted hover:text-accent" title={`Filter the table to ${r.name}`} aria-label={`Filter the table to ${r.name}`}>▸</button>
       </div>
@@ -113,11 +113,11 @@ function RowCells({ r, ri, cols, byPos, pick, cellHref }: { r: GridItem; ri: num
         const meta = STATE_META[state];
         // Untried cells are decoration for the eye (the legend explains the colour) and stay out of the accessibility tree; their
         // title still answers a hover. Tried cells are links whose title is their accessible name.
-        if (!cell) return <div key={c.id} aria-hidden title={`${r.name} x ${c.name}: untried in this corpus`} className={`h-[26px] w-[26px] rounded-sm ${c.id === NOT_RECORDED ? "bg-transparent" : meta.swatch}`} />;
+        if (!cell) return <div key={c.id} aria-hidden title={`${r.name} x ${c.name}: untried in this corpus`} className={`eg-sq ${c.id === NOT_RECORDED ? "bg-transparent" : meta.swatch}`} />;
         const title = `${r.name} x ${c.name}: ${meta.label.toLowerCase()}. ${cell.n} medicine${cell.n === 1 ? "" : "s"}: ${cell.d.join(", ")}${cell.n > cell.d.length ? ` and ${cell.n - cell.d.length} more` : ""}. Click to filter the table.`;
         return (
           <a key={c.id} href={cellHref(r.id, c.id)} onClick={(e) => { e.preventDefault(); pick(r.id, c.id); }} title={title}
-            className={`h-[26px] w-[26px] rounded-sm flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${meta.swatch} ${state === "approved" || state === "stopped" ? "text-white" : "text-foreground"}`}>
+            className={`eg-sq eg-hit ${meta.swatch} ${state === "approved" || state === "stopped" ? "text-white" : "text-foreground"}`}>
             {cell.n > 1 ? cell.n : ""}
           </a>
         );

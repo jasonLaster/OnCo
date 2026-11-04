@@ -243,6 +243,23 @@
   .tone-early { @apply bg-violet-100 text-violet-800 dark:bg-violet-900/40 dark:text-violet-200; }
   .tone-no { @apply bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200; }
   .tone-flat { @apply bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300; }
+  /* Engine cell-state tones (src/lib/modular-formats.ts STATE_META, src/lib/tables/engine.ts): an engine table row
+     carries one per medicine, in the markup and again in the hydration payload. Defined after .chip so the border
+     colour wins over its transparent border, as the utilities did. */
+  .tone-acc { @apply bg-accent-soft text-accent border border-accent/30; }
+  .tone-stop { @apply bg-zinc-200 text-zinc-800 dark:bg-zinc-700 dark:text-zinc-100; }
+
+  /* Engine pages (/pipeline/engine/<format>/): the same utilities as before in short classes, because the heat grid
+     repeats them on every square (705 untried squares on the small-molecule page) and the Not placed and evidence
+     pills on every item. Each class is exactly the utilities it replaced; nothing about the look changes.
+     .chip-pick: a pill that fills with the accent on hover. .chip-ev: a pill that rings on hover.
+     .eg-sq: a grid square. .eg-hit: a tried square's number and focus ring. .eg-rh / .eg-ch: row and column headers. */
+  .chip-pick { @apply border border-border bg-card hover:bg-accent-soft hover:text-accent hover:border-accent; }
+  .chip-ev { @apply border border-border bg-card hover:ring-2 hover:ring-accent/30; }
+  .eg-sq { @apply h-[26px] w-[26px] rounded-sm; }
+  .eg-hit { @apply flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent; }
+  .eg-rh { @apply sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]; }
+  .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
 
   /* Reference pills (src/lib/text.ts refChipClass): one kind's colours in one short class rather than the eight
      Tailwind utilities of KIND_COLOR repeated on every pill. The pills are how a record page lists what it links to,

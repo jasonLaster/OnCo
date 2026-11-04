@@ -36,7 +36,7 @@ export const breastTrialsConservation: TrialInput[] = [
     links: [doi("NSABP B-06 twenty-year follow-up (New England Journal of Medicine 2002)", "10.1056/NEJMoa022152")] }),
 
   t({ id: "milan-i", name: "Milan I (quadrantectomy against radical mastectomy)", aka: ["Milan trial", "Veronesi quadrantectomy trial", "QUART"],
-    phase: "3", status: "positive", yearReported: 2002, sponsor: "Istituto Nazionale Tumori, Milan", institutions: ["ieo-milan"],
+    phase: "3", status: "positive", yearReported: 2002, sponsor: "Istituto Nazionale Tumori, Milan", institutions: ["int-milan", "ieo-milan"], people: ["umberto-veronesi"], keyPapers: ["paper-veronesi-milan-i-twenty-year-nejm-2002"],
     enrolled: 701, enrolledBasis: "randomised", enrolledNote: "The trial randomised 701 women between 1973 and 1980, before any trial registry existed, so there is no registry figure.",
     setting: "Breast cancer 2 cm or smaller: Halsted radical mastectomy against quadrantectomy with axillary dissection and breast radiotherapy, with long-term survival as the endpoint",
     tldr: "Umberto Veronesi ran the European half of the argument, against the most mutilating operation in surgery. After twenty years, women who had a quarter of the breast removed and radiotherapy were as likely to be alive as women who had the breast, the chest muscles and the nodes taken away.",

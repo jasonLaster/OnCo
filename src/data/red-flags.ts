@@ -323,7 +323,7 @@ export const redFlagSets: RedFlagSet[] = [
   {
     id: "parp-inhibitors",
     label: "PARP inhibitors",
-    modalityRe: "parp",
+    modalityRe: "\\bparp",
     flags: [
       { symptom: "Signs of MDS or AML", threshold: "Unusual tiredness, breathlessness, easy bruising or bleeding, or frequent infections, especially if blood counts have not recovered within four weeks of stopping; the labels warn of myelodysplastic syndrome and acute myeloid leukaemia.", action: "call-today", source: label("Lynparza") },
       { symptom: "Pneumonitis", threshold: "New or worsening cough, breathlessness or fever; the label says to interrupt treatment and investigate.", action: "call-now", source: label("Lynparza") },

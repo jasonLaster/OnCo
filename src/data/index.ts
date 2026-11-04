@@ -120,6 +120,11 @@ import { mcedTests, mcedCompanies } from "./mced-census-tests";
 import { mcedTrials } from "./mced-census-trials";
 import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
+import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
+import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci";
+import { institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
+import { institutionsCogPaediatric } from "./institutions/cog-paediatric";
+import { institutionsIndiaNcg } from "./institutions/india-ncg";
 import { institutionsGermany } from "./institutions/germany";
 import { institutionsIsrael } from "./institutions/israel";
 import { institutionsWaveInvestigators } from "./institutions-wave-investigators";
@@ -351,6 +356,11 @@ const RAW_INPUTS: EntityInput[] = [
   ...nciCoverage,
   ...networkInstitutions, ...networkPeople,
   ...institutionsIndia,
+  ...institutionsUsCancerCharities,
+  ...institutionsUsCentresAaci,
+  ...institutionsUkCancerCharities,
+  ...institutionsCogPaediatric,
+  ...institutionsIndiaNcg,
   ...institutionsGermany,
   ...institutionsIsrael,
   ...institutionsWaveInvestigators,

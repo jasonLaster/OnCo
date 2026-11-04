@@ -289,7 +289,7 @@ async function fdaCdx(): Promise<Envelope | null> {
 const EMA_XLSX = "https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx";
 export type EmaMedicine = { name: string; inn: string; holder?: string; authorised?: string; conditional: boolean; orphan: boolean; atc?: string; url?: string; indication: string };
 
-function zipEntries(buf: Buffer): Map<string, Buffer> {
+export function zipEntries(buf: Buffer): Map<string, Buffer> {
   const out = new Map<string, Buffer>();
   let eocd = buf.length - 22;
   while (eocd >= 0 && buf.readUInt32LE(eocd) !== 0x06054b50) eocd--;

@@ -7,11 +7,17 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
-- 282 pipeline products for 156 companies and 14 new targets now that the engine pages are lighter, 130 unsupported links removed, survival calculators linked for issue 43, and the NHS Cancer Alliances list read from ONS
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- 282 pipeline products for 156 companies and 14 new targets now that the engine pages are lighter, 130 unsupported links removed, survival calculators linked for issue 43, and the NHS Cancer Alliances list read from ONS
+- chore: refresh universe lists (NCI drugs and types, NCI centres, OECI, NHS alliances, NLM journals, OpenAlex, KEGG, ChEMBL, ClinicalTrials.gov, FDA OCE) (#348)
+- chore: refresh preprint tracker from Europe PMC (#347)
+- chore: check regional approvals against the EMA register (#346)
+- chore: refresh FDA approvals feed (OCE notifications, openFDA drugsfda) (#345)
+- chore: draft change proposals that need review (#344)
 
 ### 3 November 2026
+- Add sourced RGCC International evidence coverage
 - Alleanza Contro il Cancro keeps its own sponsor name rather than pointing at a consortium record, as the one-home rule for cooperative groups requires
 - Pipeline products keep a cancer link only where a registered trial, approval or paper supports it: ten trials gain the cancers their ClinicalTrials.gov conditions or titles name, 130 unsupported product-cancer links from the company pipeline fill are removed, four trials drop cancers their registry entries never name, and MDS answers to its singular name
 - Eleven pipeline products name the protein they are linked to as their sources do (TROP2, FCGR2B, CD3 for CLSP-1025, PIK3CG, BCMA from the KLN-1010 registry title, MYH9, MET, MEK1/2, BCR::ABL1); CBX-250 loses a CD3 link no source states

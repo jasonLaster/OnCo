@@ -130,7 +130,7 @@ export default function IsraelPage() {
             <div className="mt-6 card p-5">
               <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
                 <h3 className="font-semibold">Leading cancers in Israel, GLOBOCAN {GLOBOCAN.year} estimates</h3>
-                <span className="text-xs text-muted">All cancers excluding non-melanoma skin: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
+                <span className="text-xs text-muted">All cancers, including non-melanoma skin: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
               </div>
               <StaticTable rows={siteRows} columns={SITE_COLUMNS} noun="sites" defaultSort={{ key: "cases", dir: -1 }} />
               <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. Two things to hold in mind. These are modelled estimates, not counts. The Israel National Cancer Registry states in its own report that the Global Cancer Observatory data for Israel do not separate Arabs from Jews and others and therefore cannot be compared with the rates it measures, which is why the cards above lead with the registry&apos;s four figures rather than one. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>

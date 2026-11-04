@@ -161,7 +161,7 @@ export default function UnitedKingdomPage() {
             <div className="mt-6 card p-5">
               <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
                 <h3 className="font-semibold">Leading cancers in the United Kingdom, {GLOBOCAN.year}</h3>
-                <span className="text-xs text-muted">All cancers excluding non-melanoma skin: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
+                <span className="text-xs text-muted">All cancers, including non-melanoma skin: {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
               </div>
               <StaticTable rows={siteRows} columns={SITE_COLUMNS} noun="sites" defaultSort={{ key: "cases", dir: -1 }} />
               <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are modelled estimates, not registry counts; the registry counts are published separately by each of the four nations, as the card above explains. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
@@ -174,7 +174,7 @@ export default function UnitedKingdomPage() {
                 <span className="text-xs text-muted">Age-standardised mortality divided by age-standardised incidence, all cancers, both sexes</span>
               </div>
               <StaticTable rows={ratioRows} columns={RATIO_COLUMNS} noun="countries" defaultSort={{ key: "ratio", dir: 1 }} />
-              <p className="mt-3 text-xs text-muted">Both rates are GLOBOCAN {GLOBOCAN.year} age-standardised rates per 100,000, all cancers excluding non-melanoma skin cancer, as recorded for each country in <code>src/data/country-extras.ts</code> with its IARC fact sheet. The ratio is computed here, not published by IARC. It is not a case-fatality rate: it compares two age-standardised rates in the same year, so it is affected by how much of a country&apos;s incidence is screen-detected and by what its registry counts, as well as by how many people survive. Read it as a pointer to the survival comparisons in <a href="#failing" className="underline">what it does badly</a>, not as a measure of them.</p>
+              <p className="mt-3 text-xs text-muted">Both rates are GLOBOCAN {GLOBOCAN.year} age-standardised rates per 100,000, all cancers including non-melanoma skin cancer (code 39), as recorded for each country in <code>src/data/country-extras.ts</code> with its IARC fact sheet. The ratio is computed here, not published by IARC. It is not a case-fatality rate: it compares two age-standardised rates in the same year, so it is affected by how much of a country&apos;s incidence is screen-detected and by what its registry counts, as well as by how many people survive. Read it as a pointer to the survival comparisons in <a href="#failing" className="underline">what it does badly</a>, not as a measure of them.</p>
             </div>
           )}
         </Section>

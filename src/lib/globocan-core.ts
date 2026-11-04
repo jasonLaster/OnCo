@@ -22,7 +22,7 @@ export function cellFor(country: GlobocanCountry, codes: number[]): Cell | null 
 }
 
 export function mappingFor(cancerId: string | null): GlobocanMapping {
-  if (!cancerId) return { codes: [ALL_CANCERS_CODE], label: "All cancers (excluding non-melanoma skin)" };
+  if (!cancerId) return { codes: [ALL_CANCERS_CODE], label: "All cancers (including non-melanoma skin)" };
   return GLOBOCAN_MAP[cancerId] ?? { codes: [], label: "No direct estimate", note: "This cancer is not mapped to a GLOBOCAN site." };
 }
 

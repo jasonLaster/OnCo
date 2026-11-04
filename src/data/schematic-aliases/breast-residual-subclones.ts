@@ -14,4 +14,6 @@ export const breastResidualSubclonesSchematicAliases: Record<string, string> = {
   "epic-seq": "fragmentomics",
   "meter-methylome-subtyping": "methylation-profiling",
   "plasma-epigenomic-profiling": "liquid-biopsy",
+  // Added with src/data/spikes/rna-tests.ts: reading RNA from a blood or urine sample borrows the plain liquid biopsy tube.
+  "liquid-rna-biopsy": "liquid-biopsy",
 };

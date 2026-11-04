@@ -21,7 +21,7 @@ import { join } from "node:path";
 import { graph } from "../src/lib/graph";
 import { host, norm } from "../src/lib/completeness";
 
-export const LISTS = ["irs-cancer-charities", "ccew-cancer-charities", "aaci-members", "cog-members", "ncg-members", "uicc-member-directory"] as const;
+export const LISTS = ["irs-cancer-charities", "ccew-cancer-charities", "aaci-members", "cog-members", "ncg-members", "uicc-member-directory", "mhlw-cancer-hospitals"] as const;
 
 const ABBR: Array<[RegExp, string]> = [[/\bfdn\b|\bfndn\b|\bfound\b/g, "foundation"], [/\bctr\b/g, "center"], [/\binst\b/g, "institute"], [/\bres\b/g, "research"], [/\bassn\b|\bassoc\b/g, "association"], [/\bintl\b/g, "international"], [/\bnatl\b/g, "national"], [/\bsoc\b/g, "society"], [/\bhosp\b/g, "hospital"], [/\bchildrens\b/g, "children s"], [/\bst\b/g, "saint"], [/\bcentre\b/g, "center"]];
 const SUFFIX = /\s+(inc|incorporated|ltd|limited|llc|corp|corporation|co|cio|charitable incorporated organisation|us ltd|usa)$/;
@@ -56,6 +56,7 @@ function countryOf(list: string, it: Item): string | undefined {
   if (list === "aaci-members") return ["BC", "ON", "QC", "AB"].includes(String(it.region)) ? "CA" : "US";
   if (list === "cog-members") return ({ US: "US", CA: "CA", AU: "AU", NZ: "NZ", SA: "SA" } as Record<string, string>)[String(it.country)];
   if (list === "ncg-members") return /^(bangladesh|bhutan|indonesia|kenya|malaysia|nepal|nigeria|rwanda|usa|zambia)$/i.test(String(it.region)) ? undefined : "IN";
+  if (list === "mhlw-cancer-hospitals") return "JP";
   return undefined;
 }
 
@@ -64,6 +65,8 @@ export type Coverage = { list: string; total: number; ours: number; pct: number;
 
 export function coverage(list: string): Coverage {
   const data = JSON.parse(readFileSync(join(process.cwd(), "src", "data", "universe-lists", `${list}.json`), "utf8")) as { items: Item[] };
+  // The Japanese list carries the ministry's Japanese name, and an English name only where one has been checked.
+  for (const it of data.items) if (!it.name && typeof it.ja === "string") it.name = it.ja;
   const g = graph();
   const recs = [...g.kind("institution"), ...g.kind("company")].map((e) => {
     const x = e as unknown as { id: string; name: string; aka: string[]; website?: string };
@@ -76,7 +79,9 @@ export function coverage(list: string): Coverage {
   for (const it of data.items) {
     const ks = keysOf([it.name, ...(it.aka ? [it.aka] : [])]);
     const cc = countryOf(list, it);
-    let id = recs.find((r) => (!cc || !r.country || r.country === cc) && r.keys.some((k) => ks.some((c) => agree(c, k))))?.id;
+    const inCountry = recs.filter((r) => !cc || !r.country || r.country === cc);
+    // An exact name beats a name that merely begins or ends the other.
+    let id = inCountry.find((r) => r.keys.some((k) => ks.includes(k)))?.id ?? inCountry.find((r) => r.keys.some((k) => ks.some((c) => agree(c, k))))?.id;
     // The National Cancer Grid links many members to a page on Tata Memorial's site, so for that list a website counts
     // only when it is a home page; elsewhere a deep link on the member's own site is the member's.
     const h = it.website && (list !== "ncg-members" || /^(https?:\/\/)?[^/]+\/?$/i.test(String(it.website).trim())) ? host(it.website) : undefined;

@@ -150,7 +150,7 @@ function Diagram({ uid, compact, drugLabel, exemplarCount, routes, focus, open, 
   const anyFocus = focus !== null;
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto max-h-[320px]" role="img" aria-label={`${drugLabel}: ${n} escape routes`} onMouseLeave={() => onHover(null)}>
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto max-h-[320px]" role="group" aria-label={`${drugLabel}: ${n} escape routes`} onMouseLeave={() => onHover(null)}>
       <defs>
         <marker id={`bar-${uid}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><rect x="6" y="0" width="3" height="10" fill="currentColor" /></marker>
         <marker id={`dot-${uid}`} viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5"><circle cx="5" cy="5" r="4" fill="currentColor" /></marker>

@@ -1,6 +1,22 @@
 import { KM_CAPTION, type KmArm } from "@/data/km-curves";
 
-export const SERIES_PALETTE = ["#b91c1c", "#2563eb", "#7c3aed", "#0d9488"];
+export const SERIES_PALETTE = ["#b91c1c", "#2563eb", "#7c3aed", "#0f766e"];
+/**
+ * Arms are told apart by line pattern and point shape as well as colour (WCAG 1.4.1): blue and violet are the same
+ * colour to a reader with deuteranopia. Each arm's text takes a lighter tone in dark themes, where the light-theme
+ * colours fall to 2.6 to 3.2:1 against the card; the dark tones are 6 to 9:1.
+ */
+const SERIES_TEXT = ["text-[#b91c1c] dark:text-[#f87171]", "text-[#2563eb] dark:text-[#60a5fa]", "text-[#7c3aed] dark:text-[#a78bfa]", "text-[#0f766e] dark:text-[#2dd4bf]"];
+const SERIES_DASH = [undefined, "7 3", "2 3", "9 3 2 3"];
+const seriesOf = (i: number) => i % SERIES_PALETTE.length;
+/** Circle, square, triangle, diamond: one point shape per arm, centred on (cx, cy). */
+function Marker({ i, cx, cy }: { i: number; cx: number; cy: number }) {
+  const k = seriesOf(i);
+  if (k === 1) return <rect x={cx - 3} y={cy - 3} width={6} height={6} fill="currentColor" />;
+  if (k === 2) return <path d={`M${cx},${cy - 3.8} L${cx + 3.6},${cy + 2.6} L${cx - 3.6},${cy + 2.6} Z`} fill="currentColor" />;
+  if (k === 3) return <path d={`M${cx},${cy - 4} L${cx + 4},${cy} L${cx},${cy + 4} L${cx - 4},${cy} Z`} fill="currentColor" />;
+  return <circle cx={cx} cy={cy} r={3.2} fill="currentColor" />;
+}
 
 const W = 600, H = 320, L = 46, R = 18, T = 18, B = 44;
 const niceMax = (t: number) => Math.max(12, Math.ceil(t / 12) * 12);
@@ -37,32 +53,31 @@ export function KMChart({ arms, title, annotation, maxMonths, yLabel = "Alive or
       <text transform={`translate(12 ${(T + H - B) / 2}) rotate(-90)`} textAnchor="middle" fontSize={11} fill="currentColor" fillOpacity={0.75}>{yLabel}</text>
       {/* medians */}
       {arms.map((a, i) => a.median !== undefined && a.median <= tmax ? (
-        <g key={`m${i}`} stroke={SERIES_PALETTE[i % SERIES_PALETTE.length]} strokeOpacity={0.55} strokeDasharray="4 3">
+        <g key={`m${i}`} className={SERIES_TEXT[seriesOf(i)]} stroke="currentColor" strokeOpacity={0.55} strokeDasharray="4 3">
           <line x1={x(a.median)} x2={x(a.median)} y1={y(50)} y2={y(0)} />
         </g>
       ) : null)}
       {/* curves */}
       {arms.map((a, i) => {
-        const c = SERIES_PALETTE[i % SERIES_PALETTE.length];
         const { d } = path(a.points);
         return (
-          <g key={i}>
-            <path d={d} fill="none" stroke={c} strokeWidth={2} strokeLinejoin="round" />
+          <g key={i} className={SERIES_TEXT[seriesOf(i)]}>
+            <path d={d} fill="none" stroke="currentColor" strokeWidth={2} strokeLinejoin="round" strokeDasharray={SERIES_DASH[seriesOf(i)]} />
             {a.points.map(([t, v], k) => (
               <g key={k}>
-                <circle cx={x(t)} cy={y(v)} r={3.2} fill={c} />
-                <text x={x(t)} y={y(v) + (i % 2 === 0 ? -8 : 14)} textAnchor="middle" fontSize={10} fontWeight={600} fill={c}>{v}%</text>
+                <Marker i={i} cx={x(t)} cy={y(v)} />
+                <text x={x(t)} y={y(v) + (i % 2 === 0 ? -8 : 14)} textAnchor="middle" fontSize={10} fontWeight={600} fill="currentColor">{v}%</text>
               </g>
             ))}
-            {a.median !== undefined && a.median <= tmax && <text x={x(a.median)} y={y(0) - 4 - 11 * i} textAnchor="middle" fontSize={9.5} fill={c}>median {a.median} mo</text>}
+            {a.median !== undefined && a.median <= tmax && <text x={x(a.median)} y={y(0) - 4 - 11 * i} textAnchor="middle" fontSize={9.5} fill="currentColor">median {a.median} mo</text>}
           </g>
         );
       })}
       {/* legend */}
       {arms.map((a, i) => (
         <g key={`l${i}`} transform={`translate(${W - R - 6} ${T + 4 + i * 14})`}>
-          <rect x={-10} y={-5} width={10} height={3} fill={SERIES_PALETTE[i % SERIES_PALETTE.length]} />
-          <text x={-14} y={0} textAnchor="end" fontSize={10.5} fill="currentColor" fillOpacity={0.85}>{a.name.length > 38 ? a.name.slice(0, 37).trimEnd() + "…" : a.name}</text>
+          <g className={SERIES_TEXT[seriesOf(i)]}><line x1={-22} x2={-2} y1={-3.5} y2={-3.5} stroke="currentColor" strokeWidth={2} strokeDasharray={SERIES_DASH[seriesOf(i)]} /><Marker i={i} cx={-12} cy={-3.5} /></g>
+          <text x={-26} y={0} textAnchor="end" fontSize={10.5} fill="currentColor" fillOpacity={0.85}>{a.name.length > 38 ? a.name.slice(0, 37).trimEnd() + "…" : a.name}</text>
         </g>
       ))}
       {annotation && <text x={W - R - 6} y={T + 4 + arms.length * 14 + 4} textAnchor="end" fontSize={10} fill="currentColor" fillOpacity={0.6}>{annotation}</text>}

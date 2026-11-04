@@ -259,6 +259,9 @@
   .eg-sq { @apply h-[26px] w-[26px] rounded-sm; }
   .eg-hit { @apply flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent; }
   .eg-rh { @apply sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]; }
+  /* Tried and stopped: hatched as well as dark, so it is not told from Approved by colour alone (WCAG 1.4.1). Under
+     protanopia the two fills sit 5 CIEDE2000 units apart. */
+  .eg-stop { background-image: repeating-linear-gradient(135deg, transparent 0 3px, rgb(255 255 255 / 0.4) 3px 4.5px); }
   .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
 
   /* Reference pills (src/lib/text.ts refChipClass): one kind's colours in one short class rather than the eight

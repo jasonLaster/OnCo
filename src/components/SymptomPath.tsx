@@ -114,7 +114,7 @@ export function SymptomPath({ symptoms }: { symptoms: SymptomView[] }) {
                   <div className="font-medium text-sm mb-1">Features that raise concern</div>
                   <ul className="list-disc pl-5 space-y-1 text-sm">{current.redFlags.map((f, i) => <li key={i}>{f}</li>)}</ul>
                 </div>
-                <div className="mt-4 flex justify-end no-print"><button type="button" onClick={() => setStep(1)} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: which test comes first</button></div>
+                <div className="mt-4 flex justify-end no-print"><button type="button" onClick={() => setStep(1)} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: which test comes first</button></div>
               </section>
             )}
             {(step === 1) && (
@@ -136,7 +136,7 @@ export function SymptomPath({ symptoms }: { symptoms: SymptomView[] }) {
                   </div>
                 )}
                 {current.terms.length > 0 && <div className="mt-4"><div className="font-medium text-sm mb-1.5">Words you will hear</div><div className="flex flex-wrap gap-1.5">{current.terms.map((t) => <RefChip key={t.id} r={t} />)}</div></div>}
-                <div className="mt-4 flex justify-between no-print"><button type="button" onClick={() => setStep(0)} className="text-sm underline text-muted">Back</button><button type="button" onClick={() => setStep(2)} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: when to be referred</button></div>
+                <div className="mt-4 flex justify-between no-print"><button type="button" onClick={() => setStep(0)} className="text-sm underline text-muted">Back</button><button type="button" onClick={() => setStep(2)} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: when to be referred</button></div>
               </section>
             )}
             {(step === 2) && (
@@ -162,7 +162,7 @@ export function SymptomPath({ symptoms }: { symptoms: SymptomView[] }) {
                   <span className="font-medium text-foreground/80">Sources: </span>
                   {current.referral.sources.map((s, i) => <span key={s.url}>{i > 0 && " · "}<a className="underline" href={s.url} rel="noopener">{s.label}</a></span>)}
                 </div>
-                <div className="mt-4 flex justify-between no-print"><button type="button" onClick={() => setStep(1)} className="text-sm underline text-muted">Back</button><button type="button" onClick={() => setStep(3)} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: cancers to read about</button></div>
+                <div className="mt-4 flex justify-between no-print"><button type="button" onClick={() => setStep(1)} className="text-sm underline text-muted">Back</button><button type="button" onClick={() => setStep(3)} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">Next: cancers to read about</button></div>
               </section>
             )}
             {(step === 3) && (

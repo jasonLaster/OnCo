@@ -386,7 +386,7 @@ export function SectionCard({ c, plan }: { c: Cancer; plan: SectionPlan }) {
       )}
       {items.length > 0 && <div className="mt-3"><ChipList items={items} /></div>}
       <div className="mt-4 flex flex-wrap items-center gap-2">
-        <Link href={plan.route} className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-3.5 py-1.5 text-sm font-medium text-white hover:opacity-90" data-see-all={plan.def.id}><SectionGlyph name={plan.def.glyph} className="h-4 w-4" />See all: {plan.def.title} →</Link>
+        <Link href={plan.route} className="inline-flex items-center gap-1.5 rounded-lg bg-accent-solid px-3.5 py-1.5 text-sm font-medium text-accent-fg hover:opacity-90" data-see-all={plan.def.id}><SectionGlyph name={plan.def.glyph} className="h-4 w-4" />See all: {plan.def.title} →</Link>
         {plan.pages.map((pg) => <Link key={pg.slug} href={pg.route} className="chip border bg-card border-border text-sm hover:bg-foreground/5">{pg.title} →</Link>)}
       </div>
     </div>

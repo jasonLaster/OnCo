@@ -63,7 +63,7 @@ export function EngineView({ axisKeys, axisLabels, rows, cols, cells, table }: {
       <div className="flex flex-wrap items-center gap-2 mb-3 text-xs">
         {CELL_STATES.map((s) => (
           <Tip key={s} title={STATE_META[s].label} text={STATE_META[s].tip}>
-            <span className={`chip ${STATE_META[s].chip} cursor-help`}><span aria-hidden className={`inline-block h-2.5 w-2.5 rounded-sm ${STATE_META[s].swatch}`} />{STATE_META[s].label} <span className="tabular-nums opacity-80">{counts[s].toLocaleString("en-GB")}</span></span>
+            <span className={`chip ${STATE_META[s].chip} cursor-help`}><span aria-hidden className={`inline-block h-2.5 w-2.5 rounded-sm ${STATE_META[s].swatch}`} />{STATE_META[s].label} <span className="tabular-nums">{counts[s].toLocaleString("en-GB")}</span></span>
           </Tip>
         ))}
         <span className="text-muted ms-auto">{rows.length.toLocaleString("en-GB")} {axisLabels[0].toLowerCase()} rows x {realCols.length.toLocaleString("en-GB")} {axisLabels[1].toLowerCase()} columns. Click a cell to filter the table.</span>
@@ -105,7 +105,7 @@ function RowCells({ r, ri, cols, byPos, pick, cellHref }: { r: GridItem; ri: num
     <>
       <div data-row={r.id} className="eg-rh">
         {r.href ? <Link href={r.href} className="hover:underline" title={r.name}>{r.name}</Link> : <span title={r.name}>{r.name}</span>}
-        <button type="button" onClick={() => pick(r.id)} className="ms-1.5 text-[10px] text-muted hover:text-accent" title={`Filter the table to ${r.name}`} aria-label={`Filter the table to ${r.name}`}>▸</button>
+        <button type="button" onClick={() => pick(r.id)} className="ms-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded text-[10px] text-muted hover:text-accent" title={`Filter the table to ${r.name}`} aria-label={`Filter the table to ${r.name}`}>▸</button>
       </div>
       {cols.map((c, ci) => {
         const cell = byPos.get(`${ri},${ci}`);
@@ -117,7 +117,7 @@ function RowCells({ r, ri, cols, byPos, pick, cellHref }: { r: GridItem; ri: num
         const title = `${r.name} x ${c.name}: ${meta.label.toLowerCase()}. ${cell.n} medicine${cell.n === 1 ? "" : "s"}: ${cell.d.join(", ")}${cell.n > cell.d.length ? ` and ${cell.n - cell.d.length} more` : ""}. Click to filter the table.`;
         return (
           <a key={c.id} href={cellHref(r.id, c.id)} onClick={(e) => { e.preventDefault(); pick(r.id, c.id); }} title={title}
-            className={`eg-sq eg-hit ${meta.swatch} ${state === "approved" || state === "stopped" ? "text-white" : "text-foreground"}`}>
+            className={`eg-sq eg-hit ${meta.swatch} ${state === "approved" ? "text-accent-fg" : state === "stopped" ? "text-white" : "text-foreground"}`}>
             {cell.n > 1 ? cell.n : ""}
           </a>
         );

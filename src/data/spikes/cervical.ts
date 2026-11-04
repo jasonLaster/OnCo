@@ -117,7 +117,7 @@ const trials: TrialInput[] = [
     result: "Single-dose efficacy 97.5% against persistent HPV16/18.",
     outcomes: [{ endpoint: "Vaccine efficacy against persistent HPV16/18 infection", primary: true, unit: "%", arms: [{ name: "Single dose nonavalent HPV", value: 97.5 }], source: "https://www.cdc.gov/acip/downloads/slides-2025-04-15-16/03-Barnabas-HPV-508.pdf" }],
     replication: "IARC India cohort (Basu 2021) and Costa Rica ESCUDDO/CVT data show similar single-dose protection.",
-    drugs: ["gardasil-9"], technologies: ["hpv-vaccine"], cancers: ["cervical", "head-and-neck"], links: [ct("NCT03675256"), { label: "Single-dose evidence, Lancet Global Health 2024", url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00009-3/fulltext" }], people: ["ian-frazer"] }),
+    drugs: ["gardasil-9"], technologies: ["hpv-vaccine"], cancers: ["cervical"], links: [ct("NCT03675256"), { label: "Single-dose evidence, Lancet Global Health 2024", url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00009-3/fulltext" }], people: ["ian-frazer"] }),
   t({ id: "senticol-iii", name: "SENTICOL III", nct: "NCT03386734", phase: "3", status: "active", sponsor: "ARCAGY-GINECO / ENGOT",
     setting: "Early-stage cervical cancer: sentinel lymph node biopsy alone vs sentinel node plus full pelvic lymphadenectomy",
     tldr: "Tests whether removing only the first draining lymph nodes is safe enough to spare women the lymphoedema of full node removal.",

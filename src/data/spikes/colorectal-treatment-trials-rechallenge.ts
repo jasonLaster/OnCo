@@ -28,6 +28,6 @@ export const colorectalTrialsRechallenge: TrialInput[] = [
       { endpoint: "Overall survival by baseline plasma RAS and BRAF status", unit: "months", arms: [{ name: "Plasma wild-type", n: 48, value: 17.3 }, { name: "Plasma mutated", n: 19, value: 10.4 }], hr: 0.49, ci: [0.27, 0.90], p: "0.02", source: "https://doi.org/10.1001/jamaoncol.2021.2915" },
     ],
     replication: "A 2026 pooled analysis of 180 patients found median overall survival 15.7 months with cetuximab and avelumab against 12.9 months with cetuximab alone, with liver involvement and a short anti-EGFR-free interval marking out non-responders.",
-    drugs: ["cetuximab", "avelumab"], cancers: [CRC], targets: ["egfr", "pd1"], technologies: ["monoclonal-antibody", "checkpoint-inhibitor", "liquid-biopsy"], terms: ["ctdna", "msi"], trials: ["chronos"],
+    drugs: ["cetuximab", "avelumab"], cancers: [CRC], targets: ["egfr", "pdl1"], technologies: ["monoclonal-antibody", "checkpoint-inhibitor", "liquid-biopsy"], terms: ["ctdna", "msi"], trials: ["chronos"],
     links: [ct("NCT04561336"), doi("CAVE: cetuximab plus avelumab as rechallenge therapy in RAS wild-type metastatic colorectal cancer (JAMA Oncology 2021)", "10.1001/jamaoncol.2021.2915"), doi("CAVE pooled analysis of clinical factors and outcomes (ESMO Gastrointestinal Oncology 2026)", "10.1016/j.esmogo.2026.100398")] }),
 ];

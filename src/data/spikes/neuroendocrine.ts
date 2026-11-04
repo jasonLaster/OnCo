@@ -96,11 +96,18 @@ const drugs: DrugInput[] = [
     mechanism: "Fluoropyrimidine plus alkylating agent; capecitabine depletes MGMT, sensitising to temozolomide.",
     dosing: { route: "Oral", schedule: "Capecitabine 750 mg/m² twice daily days 1-14, temozolomide 200 mg/m² days 10-14, every 28 days", monitoring: "Blood counts, hand-foot syndrome" },
     toxicity: [{ event: "Neutrophil count decreased", anyGradePct: 28, grade3PlusPct: 13, note: "E2211 capecitabine-temozolomide arm (n=71), treatment-related: grade 3 in 4 and grade 4 in 5 patients; percentages computed from Table 4 counts", source: "https://doi.org/10.1200/JCO.22.01013" }, { event: "Platelet count decreased", anyGradePct: 38, grade3PlusPct: 10, note: "E2211 (n=71), treatment-related: grade 3 in 3 and grade 4 in 4 patients; computed from Table 4 counts", source: "https://doi.org/10.1200/JCO.22.01013" }, { event: "Fatigue", anyGradePct: 65, grade3PlusPct: 8, note: "E2211 (n=71), treatment-related: grade 1-2 in 40 and grade 3 in 6 patients; computed from Table 4 counts", source: "https://doi.org/10.1200/JCO.22.01013" }],
-    technologies: ["cytotoxic-chemotherapy"], drugs: ["temozolomide"], cancers: ["neuroendocrine", "pancreatic-net", "grade-3-net"], terms: ["mgmt"], companies: ["ecog-acrin"] }),
+    technologies: ["cytotoxic-chemotherapy"], drugs: ["temozolomide"], cancers: ["neuroendocrine", "pancreatic-net", "grade-3-net"], terms: ["mgmt"], trials: ["nct01824875"] }),
 ];
 
 // ======================= TRIALS =======================
 const trials: TrialInput[] = [
+  t({ id: "nct01824875", name: "ECOG-ACRIN E2211", aka: ["E2211"], nct: "NCT01824875", phase: "2", status: "positive", yearReported: 2023, sponsor: "ECOG-ACRIN Cancer Research Group (with the National Cancer Institute)", enrolled: 144,
+    setting: "Advanced low- or intermediate-grade pancreatic NETs progressing within 12 months: temozolomide vs capecitabine plus temozolomide",
+    tldr: "The randomised trial behind CAPTEM: adding capecitabine to temozolomide lengthened the time before pancreatic neuroendocrine tumours grew.",
+    summary: "E2211, trial NCT01824875 run by the ECOG-ACRIN Cancer Research Group with the National Cancer Institute, randomised 144 patients with advanced pancreatic neuroendocrine tumours between April 2013 and March 2016 to temozolomide alone or capecitabine with temozolomide (CAPTEM). At the interim analysis in January 2018 the median progression-free survival was 14.4 months with temozolomide and 22.7 months with the combination (hazard ratio 0.58), which met the primary endpoint; at the final analysis in May 2021 overall survival did not differ significantly (53.8 vs 58.7 months, hazard ratio 0.82). MGMT deficiency was associated with response. ECOG-ACRIN ran the trial; the two medicines are generic.",
+    result: "PFS 22.7 vs 14.4 months, HR 0.58; OS 58.7 vs 53.8 months, HR 0.82 (P = .42).",
+    outcomes: [{ endpoint: "Progression-free survival", primary: true, unit: "months", arms: [{ name: "Capecitabine + temozolomide", value: 22.7 }, { name: "Temozolomide", value: 14.4 }], hr: 0.58, source: "https://doi.org/10.1200/JCO.22.01013" }],
+    drugs: ["capecitabine-temozolomide", "temozolomide"], cancers: ["neuroendocrine", "pancreatic-net"], companies: ["ecog-acrin"], links: [ct("NCT01824875"), { label: "Kunz et al., J Clin Oncol 2023 (PMID 36260828)", url: "https://doi.org/10.1200/JCO.22.01013" }] }),
   t({ id: "promid", name: "PROMID", nct: "NCT00171873", phase: "3", status: "positive", yearReported: 2009, sponsor: "Novartis / German NET study group", enrolled: 85,
     setting: "Treatment-naive metastatic midgut NETs: octreotide LAR vs placebo",
     tldr: "Showed for the first time that a hormone-suppressing injection also slows neuroendocrine tumour growth.",

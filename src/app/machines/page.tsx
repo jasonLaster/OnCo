@@ -8,22 +8,10 @@ import { logoFor } from "@/lib/logos";
 import { flagFor } from "@/lib/flags";
 import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { FrontIcon } from "@/components/FrontIcon";
+import { machineFamilies } from "@/lib/machines";
 import { EntityBrowser, type BrowserRow, type ColDef, type FacetDef, type LinkItem } from "@/components/EntityBrowser";
 
 export const metadata: Metadata = pageMeta({ title: "Machines used against cancer", path: "/machines/", description: "The scanners, accelerators, endoscopes, robots, ablation devices, radiotherapy guidance and QA hardware, pharmacy robots and cooling caps hospitals use against cancer: what each machine does, what it is used for, its advantages and limits against the alternatives, who makes it, and which centres run the rare ones such as proton and carbon-ion therapy, BNCT, Gamma Knife, MR-linacs and focused ultrasound for the brain." });
-
-/** Machine families, in the order they appear; each lists technology ids (existing and machine-wave records) and the front whose icon represents it. */
-const FAMILIES: Array<{ name: string; icon: string; blurb: string; ids: string[] }> = [
-  { name: "Imaging scanners", icon: "imaging", blurb: "How tumours are found, staged and measured.", ids: ["x-ray-radiography-fluoroscopy", "ct", "dual-energy-spectral-ct", "photon-counting-ct", "ultrasound", "ultrasound-elastography-ceus", "mri", "mri-field-strengths", "breast-mri-coils-abbreviated-mri", "mammography", "contrast-enhanced-mammography", "ai-mammography-screening", "pet", "pet-ct", "pet-mri", "total-body-pet-screening", "nuclear-medicine-hardware", "spect", "spect-ct", "intraoperative-mri-ct", "optical-imaging"] },
-  { name: "Endoscopes and clinic imaging", icon: "early-detection", blurb: "Scopes, capsules and cameras that look inside the gut, airway, cervix and skin.", ids: ["endoscopic-ultrasound-systems", "robotic-bronchoscopy", "capsule-endoscopy-systems", "ai-endoscopy-detection", "cystoscopy-turbt", "colposcopes-digital-cervical-screening", "dermoscopy-ai", "confocal-oct-skin-imaging"] },
-  { name: "Radiotherapy machines", icon: "radiation", blurb: "Photon and electron beams, from the everyday linac to dedicated radiosurgery units.", ids: ["c-arm-linac", "ring-gantry-linac", "tomotherapy", "mr-linac", "cyberknife", "gamma-knife", "zap-x", "biology-guided-radiotherapy", "radiosurgery-srs", "brachytherapy-afterloaders", "intraoperative-radiotherapy", "electron-beam-therapy-systems", "total-skin-electron-therapy", "superficial-radiotherapy", "lattice-radiotherapy", "flash-rt", "flash-research-accelerators", "cobalt-60-teletherapy"] },
-  { name: "Radiotherapy guidance and quality", icon: "radiation", blurb: "The planning software, cameras, imagers, record systems and dosimeters that make a beam accurate.", ids: ["treatment-planning-systems", "knowledge-based-planning", "oncology-information-systems", "in-room-imaging-systems", "patient-positioning-surface-guidance-systems", "surface-guided-radiotherapy", "respiratory-gating-tumour-tracking-systems", "respiratory-motion-management", "radiotherapy-qa-phantoms-dosimeters", "in-vivo-dosimetry"] },
-  { name: "Particle therapy", icon: "radiation", blurb: "Protons, carbon ions and neutrons: the machines that stop inside the tumour.", ids: ["proton-therapy", "proton-therapy-systems", "carbon-ion", "carbon-ion-synchrotrons", "bnct", "bnct-accelerator-systems"] },
-  { name: "Ablation and energy devices", icon: "devices", blurb: "Heat, cold, sound, light, electric pulses and fields delivered through a needle or from outside.", ids: ["thermal-ablation", "cryoablation-systems", "microwave-rf-ablation", "irreversible-electroporation", "electrochemotherapy", "electrochemotherapy-devices", "hifu-histotripsy", "bbb-focused-ultrasound", "transcranial-focused-ultrasound-systems", "litt", "litt-systems", "hyperthermia", "hyperthermia-systems", "magnetic-nanoparticle-hyperthermia", "photoimmunotherapy", "photodynamic-therapy-lasers", "hipec", "hipec-pipac-devices", "ttfields"] },
-  { name: "Surgical machines", icon: "surgery", blurb: "Robots, navigation, cameras and probes in the operating theatre.", ids: ["robotic-surgery", "surgical-robot-platforms", "fluorescence-guided-surgery", "intraoperative-fluorescence-imaging-systems", "sentinel-node", "gamma-probes-dose-calibrators"] },
-  { name: "Chemotherapy delivery and supportive devices", icon: "chemotherapy", blurb: "Pharmacy robots, sealed connectors, pumps and cooling caps around the chemotherapy chair.", ids: ["pharmacy-automation", "closed-system-transfer-devices", "infusion-devices-vascular-access", "scalp-cooling"] },
-  { name: "Laboratory and production", icon: "diagnostics", blurb: "The instruments behind pathology, blood tests, sequencing and tracer supply.", ids: ["whole-slide-scanners", "flow-cytometers", "spatial-biology-instruments", "next-gen-short-read-platforms", "long-read-sequencing", "medical-cyclotrons-synthesis-modules", "cyclotron-isotope-production"] },
-];
 
 /** Machines rare enough that where they are matters; the location section lists every centre in the corpus that runs each. */
 const EXOTIC = ["proton-therapy-systems", "carbon-ion-synchrotrons", "mr-linac", "gamma-knife", "cyberknife", "tomotherapy", "zap-x", "biology-guided-radiotherapy", "hifu-histotripsy", "ttfields", "bnct", "bnct-accelerator-systems", "transcranial-focused-ultrasound-systems", "litt-systems", "hyperthermia-systems", "electrochemotherapy-devices", "flash-research-accelerators", "hipec-pipac-devices"];
@@ -49,11 +37,12 @@ function centresOf(g: ReturnType<typeof graph>, t: Entity): Entity[] {
 
 export default function MachinesPage() {
   const g = graph();
+  // Families and their members are gathered from the corpus: every technology with `machineFamily` (src/lib/machines.ts).
+  const families = machineFamilies(g);
   const rows: BrowserRow[] = [];
   let vendorCount = new Set<string>(), centreCount = new Set<string>();
-  for (const f of FAMILIES) {
-    for (const id of f.ids) {
-      const t = g.get(id); if (!t || t.kind !== "technology") continue;
+  for (const f of families) {
+    for (const t of f.members) {
       const vendors = vendorsOf(g, t); const centres = centresOf(g, t);
       vendors.forEach((v) => vendorCount.add(v.id)); centres.forEach((c) => centreCount.add(c.id));
       const cancers = t.cancers.map((c) => g.get(c)).filter((x): x is Entity => !!x);
@@ -74,7 +63,7 @@ export default function MachinesPage() {
   }
   vendorCount = new Set(vendorCount); centreCount = new Set(centreCount);
   const facets: FacetDef[] = [
-    { key: "family", label: "Family", searchable: false, width: "w-52", order: FAMILIES.map((f) => f.name) },
+    { key: "family", label: "Family", searchable: false, width: "w-52", order: families.map((f) => f.name) },
     { key: "front", label: "Front", searchable: false, width: "w-40" },
     { key: "rarity", label: "Where it is", searchable: false, width: "w-48", order: ["Widespread in the corpus", "Few named centres", "Not tracked by centre"] },
     { key: "era", label: "First used", searchable: false, width: "w-32" },
@@ -91,10 +80,10 @@ export default function MachinesPage() {
   return (
     <>
       <PageHeader kicker={<GroupKicker id="map" />} title="Machines used against cancer"
-        lede={`${rows.length} machine classes across ${FAMILIES.length} families, from the plain X-ray to carbon-ion synchrotrons, with ${vendorCount.size} vendors and ${centreCount.size} centres from the corpus. Each row says what the machine does, what it is used for, its main advantage and limit against the alternatives, who makes it and where the rare ones are. Click any family to filter, any vendor or centre to open its page.`} />
+        lede={`${rows.length} machine classes across ${families.length} families, from the plain X-ray to carbon-ion synchrotrons, with ${vendorCount.size} vendors and ${centreCount.size} centres from the corpus. Each row says what the machine does, what it is used for, its main advantage and limit against the alternatives, who makes it and where the rare ones are. Click any family to filter, any vendor or centre to open its page.`} />
       <Container className="pb-16">
         <div className="flex flex-wrap gap-2 mb-6">
-          {FAMILIES.map((f) => {
+          {families.map((f) => {
             const n = rows.filter((r) => r.facets.family[0] === f.name).length;
             return (
               <Link key={f.name} href={`/machines/?family=${encodeURIComponent(f.name)}`} title={f.blurb} className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-sm hover:border-accent hover:text-accent">
@@ -139,7 +128,7 @@ export default function MachinesPage() {
         <section id="families" className="mt-14">
           <h2 className="text-xl font-semibold tracking-tight flex items-center gap-2.5"><span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-accent-soft text-accent"><FrontIcon id="devices" className="h-5 w-5" /></span>Families at a glance</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {FAMILIES.map((f) => {
+            {families.map((f) => {
               const members = rows.filter((r) => r.facets.family[0] === f.name);
               return (
                 <div key={f.name} className="rounded-xl border border-border bg-card p-4">
@@ -148,6 +137,9 @@ export default function MachinesPage() {
                   <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm">
                     {members.map((m) => <li key={m.id}><Link href={m.route} title={m.tldr} className="underline decoration-border hover:text-accent hover:decoration-accent">{m.name.split(" (")[0]}</Link></li>)}
                   </ul>
+                  {f.roadmaps.length > 0 && (
+                    <p className="mt-3 text-sm text-muted">{f.roadmaps.length === 1 ? "Chain of development" : "Chains of development"}: {f.roadmaps.map((r, i) => <span key={r.id}>{i > 0 && "; "}<Link href={routeFor(r)} title={r.tldr} className="underline decoration-border hover:text-accent hover:decoration-accent">{r.name.split(":")[0]}</Link></span>)}.</p>
+                  )}
                 </div>
               );
             })}

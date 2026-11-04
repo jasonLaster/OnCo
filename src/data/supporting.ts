@@ -91,7 +91,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Sequencing and omics platforms ----
   t({
-    id: "long-read-sequencing", links: [{ label: "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)", url: "https://doi.org/10.1038/s41576-020-0236-x" }], name: "Long-read sequencing (PacBio, Oxford Nanopore)", sections: ["diagnostics", "drug-discovery"], status: "established",
+    id: "long-read-sequencing", machineFamily: "laboratory", links: [{ label: "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)", url: "https://doi.org/10.1038/s41576-020-0236-x" }], name: "Long-read sequencing (PacBio, Oxford Nanopore)", sections: ["diagnostics", "drug-discovery"], status: "established",
     tldr: "Long-read sequencing (PacBio HiFi, Oxford Nanopore) reads single DNA molecules in stretches of thousands of bases, so rearrangements, repeat expansions, gene fusions and methylation appear in one run where short-read machines miss them. Nanopore can classify a brain tumour during surgery in under an hour; throughput per dollar still trails the largest short-read instruments.",
     summary: "PacBio HiFi and Oxford Nanopore reads span kilobases, resolving structural variants, phasing, repeat expansions, and base modifications in one run. In oncology: rapid intraoperative methylation classification of brain tumours (nanopore, under an hour), fusion detection, and complex rearrangement mapping. Cost per genome is approaching short-read levels; accuracy is now clinical-grade for HiFi.",
     principle: "Single-molecule real-time fluorescence (PacBio) or ionic current through a protein nanopore (ONT) reads native or circular-consensus molecules without amplification.",
@@ -100,7 +100,7 @@ const technologies: TechnologyInput[] = [
     technologies: ["wes-wgs", "methylation-profiling"], companies: ["pacbio", "oxford-nanopore"],
   }),
   t({
-    id: "next-gen-short-read-platforms", links: [{ label: "Almogy et al., Cost-efficient whole-genome sequencing using mostly natural sequencing-by-synthesis chemistry (Ultima Genomics, bioRxiv 2022)", url: "https://doi.org/10.1101/2022.05.29.493900" }], name: "New short-read sequencing platforms", sections: ["diagnostics"], status: "emerging",
+    id: "next-gen-short-read-platforms", machineFamily: "laboratory", links: [{ label: "Almogy et al., Cost-efficient whole-genome sequencing using mostly natural sequencing-by-synthesis chemistry (Ultima Genomics, bioRxiv 2022)", url: "https://doi.org/10.1101/2022.05.29.493900" }], name: "New short-read sequencing platforms", sections: ["diagnostics"], status: "emerging",
     tldr: "New short-read sequencing platforms from Ultima Genomics, Element Biosciences, Roche and MGI compete with Illumina by cutting the cost per gigabase, with Ultima claiming a genome under 100 dollars. Cheaper reads make whole-genome tumour-normal sequencing and deep ctDNA testing affordable in principle, but clinical assays must be revalidated and Illumina's installed base still dominates.",
     summary: "Ultima Genomics (UG 100, sub-$100 genome claims), Element Biosciences (AVITI), Roche's sequencing-by-expansion (SBX, launched 2025-26), MGI/Complete Genomics, and Singular Genomics compete with Illumina's NovaSeq X. Lower cost per gigabase enables whole-genome tumour-normal sequencing, high-depth ctDNA, and single-cell studies at scale; clinical validation and installed base still favour Illumina.",
     principle: "Massively parallel sequencing-by-synthesis or expansion chemistry with optical or electronic readout on flow cells or open wafers.",
@@ -109,7 +109,7 @@ const technologies: TechnologyInput[] = [
     technologies: ["cgp", "wes-wgs", "liquid-biopsy"], companies: ["illumina", "ultima-genomics", "element-biosciences", "roche-genentech", "mgi-tech"],
   }),
   t({
-    id: "spatial-biology-instruments", links: [{ label: "Method of the Year 2020: spatially resolved transcriptomics (Nature Methods 2021)", url: "https://doi.org/10.1038/s41592-020-01042-x" }], name: "Spatial biology instruments", sections: ["diagnostics", "drug-discovery"], status: "emerging",
+    id: "spatial-biology-instruments", machineFamily: "laboratory", links: [{ label: "Method of the Year 2020: spatially resolved transcriptomics (Nature Methods 2021)", url: "https://doi.org/10.1038/s41592-020-01042-x" }], name: "Spatial biology instruments", sections: ["diagnostics", "drug-discovery"], status: "emerging",
     tldr: "Spatial biology instruments are machines that map which genes and proteins are active in each part of a tumour slice.",
     summary: "10x Genomics (Visium HD, Xenium), Bruker Spatial Biology (formerly NanoString GeoMx and CosMx), Vizgen (MERSCOPE), Akoya Biosciences (PhenoCycler) and Lunaphore/Bio-Techne (COMET) sell instruments and reagents for spatial transcriptomics and multiplexed protein imaging. Patent litigation reshaped the market (NanoString bankruptcy and acquisition by Bruker, 2024). Clinical use is nascent; the research impact on tumour microenvironment biology is large.",
     principle: "In situ hybridisation with barcoded probes imaged over many cycles, or capture arrays that record position, followed by sequencing.",
@@ -120,7 +120,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Digital pathology infrastructure ----
   t({
-    id: "whole-slide-scanners", related: ["flow-cytometers"], links: [{ label: "FDA allows marketing of first whole slide imaging system for digital pathology (2017)", url: "https://www.fda.gov/news-events/press-announcements/fda-allows-marketing-first-whole-slide-imaging-system-digital-pathology" }], name: "Whole-slide scanners and image management", sections: ["diagnostics", "ai-computation"], status: "established",
+    id: "whole-slide-scanners", machineFamily: "laboratory", related: ["flow-cytometers"], links: [{ label: "FDA allows marketing of first whole slide imaging system for digital pathology (2017)", url: "https://www.fda.gov/news-events/press-announcements/fda-allows-marketing-first-whole-slide-imaging-system-digital-pathology" }], name: "Whole-slide scanners and image management", sections: ["diagnostics", "ai-computation"], status: "established",
     tldr: "The scanners that turn glass slides into gigapixel images, and the software that stores and serves them, without which pathology AI cannot run.",
     summary: "Leica Biosystems (Aperio GT 450), Hamamatsu (NanoZoomer), 3DHISTECH (Pannoramic), Philips (IntelliSite; FDA-cleared for primary diagnosis 2017), Roche (VENTANA DP 600), and Grundium supply scanners; Sectra, Philips, Proscia (Concentriq), PathAI (AISight), Indica Labs (HALO), and Paige provide image management and viewing. Interoperability (DICOM-WSI) and storage costs (1-4 GB per slide) are the practical constraints on going fully digital.",
     principle: "Automated microscopy tiles a slide at 20-40x, then stitches and compresses it into a pyramidal image; image management platforms index, stream, and integrate with LIS/EHR and AI.",
@@ -131,7 +131,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Radiotherapy software ----
   t({
-    id: "treatment-planning-systems", dependsOn: ["ct"], related: ["in-vivo-dosimetry", "knowledge-based-planning"], links: [{ label: "AAPM Task Group 53: quality assurance for clinical radiotherapy treatment planning (Medical Physics 1998)", url: "https://doi.org/10.1118/1.598373" }], name: "Radiotherapy treatment planning and QA software", sections: ["radiation", "ai-computation"], status: "standard-of-care",
+    id: "treatment-planning-systems", machineFamily: "radiotherapy-guidance", dependsOn: ["ct"], related: ["in-vivo-dosimetry", "knowledge-based-planning"], links: [{ label: "AAPM Task Group 53: quality assurance for clinical radiotherapy treatment planning (Medical Physics 1998)", url: "https://doi.org/10.1118/1.598373" }], name: "Radiotherapy treatment planning and QA software", sections: ["radiation", "ai-computation"], status: "standard-of-care",
     tldr: "The software that calculates exactly how radiation beams should be shaped and checks the machine delivered it.",
     summary: "Treatment planning systems (Varian Eclipse, Elekta Monaco, RaySearch RayStation, Philips Pinnacle, Brainlab Elements) compute dose from CT/MR images, optimise beam arrangements for IMRT/VMAT/protons, and export plans; independent QA vendors (Sun Nuclear, IBA Dosimetry, PTW, RadCalc) verify delivered dose. RayStation's multi-vendor support and machine-learning planning are notable; cloud and automated planning are the direction.",
     principle: "Monte Carlo or convolution dose engines plus inverse optimisation of fluence subject to organ-at-risk constraints; deliverable plans checked by phantom measurement or log-file analysis.",
@@ -238,7 +238,7 @@ const technologies: TechnologyInput[] = [
     technologies: ["pet", "psma-pet", "radiopharmacy-network"], companies: ["petnet-solutions", "cardinal-health", "sofie-biosciences", "lantheus", "telix", "jubilant-radiopharma", "nuclearmedix"],
   }),
   t({
-    id: "nuclear-medicine-hardware", links: [{ label: "Badawi et al., First human imaging studies with the EXPLORER total-body PET scanner (Journal of Nuclear Medicine 2019)", url: "https://doi.org/10.2967/jnumed.119.226498" }], name: "Nuclear medicine and total-body PET hardware", sections: ["imaging"], status: "established",
+    id: "nuclear-medicine-hardware", machineFamily: "imaging", links: [{ label: "Badawi et al., First human imaging studies with the EXPLORER total-body PET scanner (Journal of Nuclear Medicine 2019)", url: "https://doi.org/10.2967/jnumed.119.226498" }], name: "Nuclear medicine and total-body PET hardware", sections: ["imaging"], status: "established",
     tldr: "Nuclear medicine hardware means the scanners themselves: PET/CT, SPECT/CT, and new total-body PET that images the whole body at once.",
     summary: "Siemens Healthineers (Biograph Vision Quadra), GE HealthCare (Omni Legend), United Imaging (uEXPLORER, uMI Panorama), Canon Medical (Cartesion Prime), and Positron/Mediso occupy the PET/CT market; SPECT/CT for dosimetry from Siemens, GE, and Spectrum Dynamics. Total-body and long-axial-field-of-view PET raise sensitivity roughly 40-fold, enabling low-dose, dynamic, and multi-tracer studies relevant to theranostics.",
     principle: "Silicon photomultiplier detector rings with time-of-flight, coupled to CT for attenuation correction; long axial coverage captures the whole body in one bed position.",
@@ -258,7 +258,7 @@ const technologies: TechnologyInput[] = [
     technologies: ["decentralised-clinical-trials", "exercise-oncology"], companies: ["kaiku-health", "elekta", "varian", "canopy", "careology", "liyfe", "reimagine-care"],
   }),
   t({
-    id: "pharmacy-automation", name: "Oncology pharmacy automation and compounding robots", sections: ["chemotherapy", "supportive-care"], status: "established",
+    id: "pharmacy-automation", machineFamily: "chemo-supportive", name: "Oncology pharmacy automation and compounding robots", sections: ["chemotherapy", "supportive-care"], status: "established",
     tldr: "Robots and closed systems that prepare chemotherapy doses safely, protecting pharmacists from hazardous drugs and patients from errors.",
     summary: "IV compounding robots (Omnicell IV Station/iCompound, BD Cato, Loccioni APOTECAchemo, ARxIUM RIVA, Equashield Pro) and closed-system transfer devices (BD PhaSeal, Equashield, ICU Medical ChemoLock) meet USP 800 hazardous-drug handling rules. Gravimetric verification and barcode workflows reduce dosing errors; adoption is uneven outside large centres.",
     principle: "Gravimetric dose verification, barcode reconciliation, and negative-pressure isolators or robots handle cytotoxics inside closed systems.",
@@ -369,7 +369,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Radiopharmacy hardware ----
   t({
-    id: "medical-cyclotrons-synthesis-modules", links: [{ label: "21 CFR Part 212: current good manufacturing practice for PET drugs", url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-212" }], name: "Medical cyclotrons, hot cells, and synthesis modules", sections: ["radiopharma", "imaging"], status: "standard-of-care",
+    id: "medical-cyclotrons-synthesis-modules", machineFamily: "laboratory", links: [{ label: "21 CFR Part 212: current good manufacturing practice for PET drugs", url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-212" }], name: "Medical cyclotrons, hot cells, and synthesis modules", sections: ["radiopharma", "imaging"], status: "standard-of-care",
     tldr: "The particle accelerators and shielded robotic chemistry boxes that make PET tracers in hospital basements and commercial pharmacies.",
     summary: "Compact 11-30 MeV cyclotrons from IBA (Cyclone), GE HealthCare (PETtrace, MINItrace), Siemens (Eclipse), ACSI (TR-24), and Sumitomo produce 18F, 68Ga, 64Cu, and 89Zr; shielded hot cells (Comecer, Von Gahlen, Tema Sinergie) house automated synthesis modules (Trasis AllinOne, IBA Synthera, GE FASTlab, Eckert & Ziegler Modular-Lab, Siemens Explora) that run GMP radiochemistry from cassettes. Solid-target 68Ga production is displacing generators at high-volume sites.",
     principle: "Proton bombardment of enriched targets produces the isotope; cassette-based automated modules perform labelling, purification, and formulation behind lead shielding with QC before release.",
@@ -476,7 +476,7 @@ const technologies: TechnologyInput[] = [
 
   // ---- Devices and care infrastructure ----
   t({
-    id: "infusion-devices-vascular-access", asOf: "2026-11-04", related: ["oncology-infusion-chairs", "chemo-chair-comfort-devices-roadmap"], links: [{ label: "FDA: infusion pumps", url: "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/infusion-pumps" }], name: "Infusion pumps, ports, and ambulatory chemotherapy devices", sections: ["chemotherapy", "supportive-care", "devices"], status: "standard-of-care",
+    id: "infusion-devices-vascular-access", machineFamily: "chemo-supportive", asOf: "2026-11-04", related: ["oncology-infusion-chairs", "chemo-chair-comfort-devices-roadmap"], links: [{ label: "FDA: infusion pumps", url: "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/infusion-pumps" }], name: "Infusion pumps, ports, and ambulatory chemotherapy devices", sections: ["chemotherapy", "supportive-care", "devices"], status: "standard-of-care",
     tldr: "Infusion devices are the implanted ports, smart pumps, and take-home pumps that deliver chemotherapy safely, including 46-hour infusions patients carry home.",
     summary: "Implanted central venous ports and PICC lines (BD Bard PowerPort, B. Braun Celsite, Smiths Medical), smart infusion pumps with drug libraries (BD Alaris, Baxter Spectrum, ICU Medical Plum), and elastomeric ambulatory pumps (Baxter Infusor, B. Braun Easypump) for regimens such as FOLFOX enable outpatient and home chemotherapy. Device recalls (Alaris, 2020-23), port infections and thrombosis, and pump programming errors are the safety issues; home-infusion services extend care beyond clinics.",
     principle: "Subcutaneous reservoir with catheter tip in the superior vena cava for repeated access; pumps meter drug by peristaltic mechanism or elastomeric pressure at a set rate.",

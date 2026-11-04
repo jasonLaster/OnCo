@@ -60,6 +60,13 @@ export const TARGET_ROLE_LABEL: Record<TargetRole, string> = {
   "drug-target": "Drug target", "oncogene-driver": "Oncogene driver", "tumour-suppressor": "Tumour suppressor", biomarker: "Biomarker or prognostic gene",
   "fusion-partner": "Fusion partner", "dna-repair": "DNA repair", "immune-checkpoint": "Immune checkpoint", antigen: "Antigen",
 };
+/**
+ * Which family of machine a technology record is, for the ones that are a machine or device a hospital buys and runs.
+ * A technology carrying `machineFamily` is listed on /machines/ under that family; one without it is not. The order
+ * here is the order the families appear in; names, icons and blurbs are in src/lib/machines.ts.
+ */
+export const MACHINE_FAMILIES = ["imaging", "endoscopy", "radiotherapy", "radiotherapy-guidance", "particle", "ablation", "surgical", "chemo-supportive", "laboratory"] as const;
+export type MachineFamily = (typeof MACHINE_FAMILIES)[number];
 /** Strongest public evidence that ties a target to cancer, strongest first. Labels in EVIDENCE_TIER_LABEL. */
 export const EVIDENCE_TIERS = ["approved-drug", "clinical-evidence", "cohort-driver", "association-only"] as const;
 export type EvidenceTier = (typeof EVIDENCE_TIERS)[number];

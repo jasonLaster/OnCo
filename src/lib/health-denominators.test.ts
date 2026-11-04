@@ -53,7 +53,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "trial-outcomes", total: 1223, label: "Trials with structured outcomes, or with no results in public" },
   { id: "institution-people", total: 700, label: "Institutions with people" },
   { id: "people-papers", total: 1567, label: "People with papers, or in a role that produces none" },
-  { id: "bottleneck-ideas", total: 45, label: "Bottlenecks with ten or more ideas" },
+  // 45 to 55 on 4 November 2026: the rejuvenation front's agenda bottlenecks and, last, the residual disease bottleneck
+  // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this
+  // gauge asks about, so the denominator moves with them.
+  { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
   { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
   { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
@@ -61,7 +64,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "simple", total: 18160, label: "Records with a simple explanation" },
   { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
   { id: "provenance", total: 18160, label: "Records with git provenance" },
-  { id: "papers-snapshot", total: 3798, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
+  // 3,798 to 4,561 on 4 November 2026: the 282 pipeline products and 14 targets released with the lighter engine pages,
+  // and the drugs added by the startup monitors and the coverage lists. They are drugs and targets, which is what this
+  // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.
+  { id: "papers-snapshot", total: 4561, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
   { id: "citations", total: 2419, label: "Key papers with a citation count" },
   { id: "trials-snapshot", total: 1442, label: "Products with a ClinicalTrials.gov snapshot" },
   // 2,078 to 2,563 on 4 November 2026: the company rounds since the last recording, ending with the 83 companies the

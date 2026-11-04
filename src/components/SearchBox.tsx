@@ -42,7 +42,10 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
       setState("ready");
       if (!value.trim()) return;
       // Every hit comes back so the grouping can pick the top rows per kind; the dropdown itself shows VISIBLE rows.
-      const lexical = searchRanked(ms, value) as SearchDoc[];
+      const ranked = searchRanked(ms, value);
+      // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md); loaded only after a search.
+      if (value.trim().length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, ranked)).catch(() => {});
+      const lexical = ranked as SearchDoc[];
       setResults(lexical);
       if (lexical.length >= FALLBACK_BELOW) return;
       // Too few exact matches: add concept matches (paraphrases, linked names), labelled as such. The concept index

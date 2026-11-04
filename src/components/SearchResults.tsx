@@ -144,6 +144,8 @@ export function SearchResults() {
     const { ms, byId } = search;
     searchReady.current = true;
     const lexical: SearchResult[] = searchRanked(ms, terms, TOP);
+    // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md); loaded only after a search.
+    if (value.length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, lexical, terms)).catch(() => {});
     const lexTerms = new Map(lexical.map((h) => [String(h.id), Object.keys(h.match ?? {})]));
     const build = (index: SemanticIndex | null): Row[] => {
       const concept = index ? semanticSearch(index, terms, TOP) : [];

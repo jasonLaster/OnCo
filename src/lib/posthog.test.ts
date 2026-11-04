@@ -22,6 +22,21 @@ describe("consented PostHog page counts", () => {
     vi.mocked(readConsent).mockReturnValueOnce("denied");
     expect(filter({ event: "$pageview", properties: {} })).toBeNull();
   });
+  it("lets a search miss through with the folded query and nothing about the page, device or session", () => {
+    const result = filter({ event: "search_miss", properties: {
+      token: "public-project-token", $process_person_profile: false, distinct_id: "anonymous-test", query: "zorvex therapeutics",
+      $current_url: "https://oncoopen.com/search/?q=zorvex", $pathname: "/search/", $session_id: "s", $window_id: "w", $device_id: "d",
+      $browser: "Firefox", $screen_width: 1000, $referrer: "https://example.com/",
+    } });
+    expect(result?.properties).toEqual({ token: "public-project-token", $process_person_profile: false, distinct_id: "anonymous-test", query: "zorvex therapeutics" });
+  });
+  it("drops a search miss whose query fails the privacy filter, is not folded, or arrives without consent", () => {
+    expect(filter({ event: "search_miss", properties: { query: "my lump 12/03" } })).toBeNull();
+    expect(filter({ event: "search_miss", properties: { query: "Zorvex Therapeutics" } })).toBeNull();
+    expect(filter({ event: "search_miss", properties: {} })).toBeNull();
+    vi.mocked(readConsent).mockReturnValueOnce("denied");
+    expect(filter({ event: "search_miss", properties: { query: "blorft" } })).toBeNull();
+  });
   it("disables recording, automatic input capture and persisted visitor profiles", () => {
     expect(posthogConfig).toMatchObject({ persistence: "memory", person_profiles: "never", autocapture: false,
       capture_exceptions: false, disable_session_recording: true, disable_surveys: true, advanced_disable_flags: true });

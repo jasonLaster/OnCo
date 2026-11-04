@@ -195,7 +195,10 @@ export function CommandPalette() {
       // The whole ranked list comes back so the grouping can take the top rows of each kind; a page the tool list
       // already matched is not repeated from the index.
       const seen = new Set(pages.map((p) => p.route));
-      const hits: Item[] = searchRanked(ms, value).filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status }));
+      const ranked = searchRanked(ms, value);
+      // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md); loaded only after a search.
+      if (value.trim().length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, ranked)).catch(() => {});
+      const hits: Item[] = ranked.filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status }));
       setGroups(groupByKind([...pages, ...hits], VISIBLE));
     }).catch(() => { if (request.current === id) { setFailed(true); setGroups(groupByKind(pages, VISIBLE)); } });
   }, []);

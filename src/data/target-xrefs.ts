@@ -15,6 +15,22 @@ export const TARGET_XREFS_GENERATED = "2026-09-23";
 
 // Gene records written by scripts/fetch-cancer-genes.ts carry their own HGNC-derived cross-references; a hand-fetched entry below wins.
 export const targetXrefs: Record<string, TargetXref> = {
+  // Pipeline-gap targets added with src/data/targets-pipeline-gap.ts on 2026-11-03, fetched from the same HGNC
+  // endpoint scripts/fetch-xrefs.ts uses. CDK11 is composite: the drug source names CDK11, encoded by CDK11A and CDK11B.
+  plk4: { genes: [{ symbol: "PLK4", name: "polo like kinase 4", hgnc: "HGNC:11397", ensembl: "ENSG00000142731", uniprot: "O00444", entrez: "10733", omim: "605031", locus: "4q28.1" }] },
+  hpk1: { genes: [{ symbol: "MAP4K1", name: "mitogen-activated protein kinase kinase kinase kinase 1", hgnc: "HGNC:6863", ensembl: "ENSG00000104814", uniprot: "Q92918", entrez: "11184", omim: "601983", locus: "19q13.2" }] },
+  parg: { genes: [{ symbol: "PARG", name: "poly(ADP-ribose) glycohydrolase", hgnc: "HGNC:8605", ensembl: "ENSG00000227345", uniprot: "Q86W56", entrez: "8505", omim: "603501", locus: "10q11.23" }] },
+  lsd1: { genes: [{ symbol: "KDM1A", name: "lysine demethylase 1A", hgnc: "HGNC:29079", ensembl: "ENSG00000004487", uniprot: "O60341", entrez: "23028", omim: "609132", locus: "1p36.12" }] },
+  cdc7: { genes: [{ symbol: "CDC7", name: "cell division cycle 7", hgnc: "HGNC:1745", ensembl: "ENSG00000097046", uniprot: "O00311", entrez: "8317", omim: "603311", locus: "1p22.1" }] },
+  kif18a: { genes: [{ symbol: "KIF18A", name: "kinesin family member 18A", hgnc: "HGNC:29441", ensembl: "ENSG00000121621", uniprot: "Q8NI77", entrez: "81930", omim: "611271", locus: "11p14.1" }] },
+  cdk11: { genes: [{ symbol: "CDK11A", name: "cyclin dependent kinase 11A", hgnc: "HGNC:1730", ensembl: "ENSG00000008128", uniprot: "Q9UQ88", entrez: "728642", omim: "116951", locus: "1p36.33" }, { symbol: "CDK11B", name: "cyclin dependent kinase 11B", hgnc: "HGNC:1729", ensembl: "ENSG00000248333", uniprot: "P21127", entrez: "984", omim: "176873", locus: "1p36.33" }] },
+  alc1: { genes: [{ symbol: "CHD1L", name: "chromodomain helicase DNA binding protein 1 like", hgnc: "HGNC:1916", ensembl: "ENSG00000131778", uniprot: "Q86WJ1", entrez: "9557", omim: "613039", locus: "1q21.1" }] },
+  ep4: { genes: [{ symbol: "PTGER4", name: "prostaglandin E receptor 4", hgnc: "HGNC:9596", ensembl: "ENSG00000171522", uniprot: "P35408", entrez: "5734", omim: "601586", locus: "5p13.1" }] },
+  maoa: { genes: [{ symbol: "MAOA", name: "monoamine oxidase A", hgnc: "HGNC:6833", ensembl: "ENSG00000189221", uniprot: "P21397", entrez: "4128", omim: "309850", locus: "Xp11.3" }] },
+  dhodh: { genes: [{ symbol: "DHODH", name: "dihydroorotate dehydrogenase (quinone)", hgnc: "HGNC:2867", ensembl: "ENSG00000102967", uniprot: "Q02127", entrez: "1723", omim: "126064", locus: "16q22.2" }] },
+  ripk2: { genes: [{ symbol: "RIPK2", name: "receptor interacting serine/threonine kinase 2", hgnc: "HGNC:10020", ensembl: "ENSG00000104312", uniprot: "O43353", entrez: "8767", omim: "603455", locus: "8q21.3" }] },
+  gpr65: { genes: [{ symbol: "GPR65", name: "G protein-coupled receptor 65", hgnc: "HGNC:4517", ensembl: "ENSG00000140030", uniprot: "Q8IYL9", entrez: "8477", omim: "604620", locus: "14q31.3" }] },
+  akr1c3: { genes: [{ symbol: "AKR1C3", name: "aldo-keto reductase family 1 member C3", hgnc: "HGNC:386", ensembl: "ENSG00000196139", uniprot: "P42330", entrez: "8644", omim: "603966", locus: "10p15.1" }] },
   // Immune cell-surface markers added with src/data/targets-immune-markers.ts on 2026-10-16, fetched from the
   // same HGNC endpoint scripts/fetch-xrefs.ts uses. A full run of that script regenerates them with the rest.
   cd4: { genes: [{ symbol: "CD4", name: "CD4 molecule", hgnc: "HGNC:1678", ensembl: "ENSG00000010610", uniprot: "P01730", entrez: "920", omim: "186940", locus: "12p13.31" }] },

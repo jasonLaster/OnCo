@@ -512,6 +512,8 @@ export const MODALITY_SCHEMATICS: Array<[RegExp, string]> = [
   [/costimulatory|co-stimulatory|immune agonist/, "front:immunotherapy"],
   [/radioenhancer|radiosensiti|nanoparticle/, "front:radiation"],
   [/hyaluronidase|stroma-degrading|stromal enzyme/, "front:targeted-therapy"],
+  // Live microbial and non-lytic viral immunotherapies (company pipeline products, src/data/company-pipeline-gap.ts).
+  [/arenavirus|salmonella|live biotherapeutic/, "front:immunotherapy"],
   [/form not stated|not stated \(registered/, "front:drug-discovery"],
 ];
 

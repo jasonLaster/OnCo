@@ -25,6 +25,9 @@
 export const SUPPORTIVE_DRUGS: Record<string, string> = {
   // Current approved use is transplant-toxicity treatment; breast use remains investigational (NCT06488378).
   axatilimab: "chronic graft-versus-host disease",
+  // Investigational, from company pipeline pages (src/data/company-pipeline-gap.ts): cancer-treatment toxicity, not the cancer.
+  "ab-205": "toxicity of high-dose chemotherapy before autologous transplant",
+  "kan-004": "colitis caused by immune checkpoint inhibitors",
   // Pancreatic enzyme replacement for exocrine insufficiency in pancreatic cancer (NICE NG85 1.6.1).
   pancrelipase: "pancreatic enzyme replacement",
   // Antiemetics: chemotherapy- and radiotherapy-induced nausea and vomiting.

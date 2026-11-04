@@ -54,6 +54,7 @@ import { trialsIdeasWave6 } from "./trials-ideas-wave6";
 import { papersIdeasWave6 } from "./papers-ideas-wave6";
 import { ideaLinksWave6 } from "./idea-links-wave6";
 import { companyDrugsWave6, trialCompaniesWave6 } from "./company-drugs-wave6";
+import { companyPipelineGapDrugs, companyPipelineGapTrials, companyPipelineGapCompanyDrugs } from "./company-pipeline-gap";
 import { SUPPORTIVE_DRUGS } from "./supportive-drugs";
 import { ACCELERATED_APPROVALS, ACCELERATED_READ_ON } from "./accelerated-approvals";
 import { CDX_FDA_ROWS } from "./cdx-fda-rows";
@@ -149,6 +150,7 @@ import { companiesSponsors } from "./companies-sponsors";
 import { companiesSponsorsWave3 } from "./companies-sponsors-wave3";
 import { companiesMakersWave4 } from "./companies-makers-wave4";
 import { targetsWaveSoc } from "./targets-wave-soc";
+import { targetsPipelineGap } from "./targets-pipeline-gap";
 import { targetsGenesWave } from "./targets-genes-wave";
 import { targetsImmuneMarkers } from "./targets-immune-markers";
 import { targetSpecificity } from "./target-specificity";
@@ -363,14 +365,14 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
-  ...targetsWaveSoc, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
+  ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
   ...pipelineTrialsWave2,
   ...drugsPipelineWave2, ...drugsPipelineWave6, ...drugsDealAssets, ...drugsPipelineWave7, ...drugsChinaWave1, pvCancer, ...pvTrials, ...pvTerms, ...pvIdeas, ...pdacDrugs, ...pdacTrials, ...pdacCompanies, ...drugsSubtypesWave, ...diagnosticsTechnologies1, ...diagnosticsCompanies1, ...diagnosticsTechnologies2, ...diagnosticsCompanies2, ...ispyTrials, ...ispyCompanies, etCancer, ...etTrials, aspirinDrug, ...radiationTechnologies, ...radiationTerms, ...radiationTrials, ...cancerSubtypes, ...radiationDrugs, ...radiationCompanies, ...cancerParentsWave2, ...radiationTrials4, ...radiationTermsWave5, ...radiationTrialsWave5, ...thyroidSubtypes, ...headNeckSubtypes, ...ovarianSubtypes, ...kidneySubtypes, ...testisOesophagusSubtypes, ...bladderSubtypes, ...sarcomaLymphomaSubtypes, ...modelTechnologies, ...machineTechnologies, ...machineCompanies, ...manufacturingTechnologies, ...manufacturingCompanies, theoryHub, ...theoryTerms, ...platformTerms, ...platformTrials, ...prostateSubtypes, ...cnsSubtypes, ...machineTechnologies2, ...machineCompanies2, ...colorectalLymphomaSubtypes, ...colorectalLymphomaTrials, ...upperGiLiverSubtypes, ...bloodSubtypes, ...gynaecologicalSubtypes, ...skinSubtypes, ...skinTrials, ...lungSubtypes, ...lungSubtypeTrials, ...breastSubtypes, ...breastSubtypeTrials, ...sarcomaBoneSubtypes, ...sarcomaBoneTrials, ...paediatricSubtypes, ...neuroendocrineSubtypes, ...rareSubtypes, ...pancreaticSubtypes, ...headNeckHpvSubtypes, ...headNeckHpvTrials, ...trialsSubtypesWave, ...cancersWave4Parents, ...cancersWave4Lung, ...cancersWave4Breast, ...cancersWave4ColonKidneyTestis, ...cancersWave4Haematology, ...cancersWave4Rare, ...cancersWave4EndocrineThoracicGynae, ...trialsSocWave, ...papersSocWave,
   ...pipelineTrialsWave3,
   ...pipelineTrialsWave4,
-  ...pipelineTrialsWave5, ...pipelineTrialsWave6,
+  ...pipelineTrialsWave5, ...pipelineTrialsWave6, ...companyPipelineGapDrugs, ...companyPipelineGapTrials,
   ...issuesWaveB,
   ...freeCollections, ...tumourTestCompanies,
   ...checkpointTargets, ...checkpointTerms,
@@ -528,7 +530,11 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // Each test in src/data/readout-test-records.ts, listed by the company its own record credits (READOUT_TESTS_BY_COMPANY).
   if (e.kind === "company" && READOUT_TESTS_BY_COMPANY[e.id]) e = { ...e, drugs: [...(e.drugs ?? []), ...READOUT_TESTS_BY_COMPANY[e.id].filter((id) => !(e.drugs ?? []).includes(id))] };
   // Drugs found for companies through the ClinicalTrials.gov lead-sponsor field by scripts/fetch-company-drugs.ts (wave 6).
-  if (e.kind === "company" && companyDrugsWave6[e.id]) return { ...e, drugs: [...(e.drugs ?? []), ...companyDrugsWave6[e.id].filter((id) => !(e.drugs ?? []).includes(id))] };
+  // and the pipeline products added for companies whose pages showed none (gap audit class 5, src/data/company-pipeline-gap.ts).
+  if (e.kind === "company" && (companyDrugsWave6[e.id] || companyPipelineGapCompanyDrugs[e.id])) {
+    const extra = [...(companyDrugsWave6[e.id] ?? []), ...(companyPipelineGapCompanyDrugs[e.id] ?? [])];
+    return { ...e, drugs: [...(e.drugs ?? []), ...extra.filter((id, i) => !(e.drugs ?? []).includes(id) && extra.indexOf(id) === i)] };
+  }
   // Trials and key papers found for ideas by scripts/fetch-idea-evidence.ts (wave 6).
   if (e.kind === "idea" && ideaLinksWave6[e.id]) {
     const w = ideaLinksWave6[e.id];

@@ -110,6 +110,7 @@ import { FundingPanel, PortfolioPanel } from "@/components/StartupPanels";
 import { StageIcon } from "@/components/StageIcon";
 import { portfolioOf, STAGE_LABEL, stageOf, ycBatchLabel } from "@/lib/startups";
 import { BiomarkerDetail, ReadoutStrip, ReadoutsForDrug, ReadoutsForTerm } from "./BiomarkerDetail";
+import { companyProducts, connectedGroups, technologyProducts, type MemberItem } from "@/lib/members";
 
 const STRUCTURES = structureIndex as Record<string, StructureEntry[]>;
 
@@ -145,7 +146,8 @@ function paperProvenance(papers: ReadonlyArray<{ note?: string }>): string[] {
 
 export function EntityDetail({ e }: { e: Entity }) {
   const g = graph();
-  const neighbours = g.neighbours(e.id);
+  // Connected less what the page's own sections list (a readout's tests and treatments: src/lib/members.ts).
+  const neighbours = connectedGroups(e, g);
   const nCon = [...neighbours.values()].reduce((a, l) => a + l.length, 0);
 
   // Each tab's content is one keyed fragment. React Flight collapses a keyless fragment into a plain array as it
@@ -271,7 +273,7 @@ export function RecordAside({ e }: { e: Entity }) {
  * the names come from the same KindName labels Connected uses (docs/INFORMATION-ARCHITECTURE.md, items 1 and 2).
  */
 function QuickLinks({ e }: { e: Entity }) {
-  const groups = graph().neighbours(e.id);
+  const groups = connectedGroups(e);
   const order = KINDS.filter((k) => (groups.get(k)?.length ?? 0) > 0);
   if (!order.length) return null;
   // Plain anchors, as the tabs are: a router link to "#connected" made the router prefetch the page the reader is
@@ -326,7 +328,8 @@ function kindTabs(e: Entity): Tab[] {
           </div>
           <TechDependencies e={e} />
         </>),
-        ...productsTab(g.incoming(e.id).get("drug") ?? []),
+        // Every product filed under the technology and every tumour-testing row filed under it (src/lib/members.ts).
+        ...productsTab(technologyProducts(e)),
       ];
     case "target":
       return [
@@ -371,7 +374,7 @@ function kindTabs(e: Entity): Tab[] {
           {hpaFor(e.id) && <Block title="Where it is found: normal tissues and cancers"><TargetWhereFound targetId={e.id} /></Block>}
           {e.prevalence.length > 0 && <Block title="How often this target appears"><PrevalenceTable target={e} /></Block>}
         </>),
-        ...productsTab(g.incoming(e.id).get("drug") ?? []),
+        ...productsTab((g.incoming(e.id).get("drug") ?? []) as Drug[]),
       ];
     case "drug":
       return [
@@ -424,7 +427,8 @@ function kindTabs(e: Entity): Tab[] {
           {e.companyType === "cooperative-group" && <ResearchOutput institutionId={e.id} />}
         </div>),
         ...(e.companyType === "investor" ? [{ id: "portfolio", label: "Portfolio", count: portfolio.length, content: <PortfolioPanel id={e.id} /> }] : []),
-        ...productsTab([...new Map([...e.drugs.map((id) => g.must(id)), ...(g.incoming(e.id).get("drug") ?? [])].map((d) => [d.id, d])).values()]),
+        // The company's own list, every product naming it and every tumour-testing row it runs (src/lib/members.ts).
+        ...productsTab(companyProducts(e)),
         ...peopleTab([...(g.incoming(e.id).get("person") ?? []), ...e.people.map((id) => g.must(id))]),
       ];
     }
@@ -623,20 +627,43 @@ function peopleTab(items: Entity[]): Tab[] {
         </div><div className="mt-1 flex flex-wrap gap-1">{p.specialisms.slice(0, 3).map((s) => <span key={s} className="chip bg-foreground/5">{s}</span>)}</div><p className="text-sm text-muted mt-1 line-clamp-2">{p.tldr}</p></Link>))}</div>) }];
 }
 
-function productsTab(drugs: Entity[]): Tab[] {
-  if (!drugs.length) return [];
+/**
+ * The Products tab: product records as cards, grouped by class, and tumour-testing rows with no record of their own as
+ * pills under Tests, each linking to its row on /tumour-testing/. Takes records, or the resolved items of
+ * src/lib/members.ts (one item per product, so a row and its record are never listed twice).
+ */
+function productsTab(input: Array<Drug | MemberItem>): Tab[] {
+  const drugs: Drug[] = [];
+  const rowsOnly: MemberItem[] = [];
+  for (const x of input) {
+    if ("kind" in x) drugs.push(x);
+    else if (x.record) drugs.push(x.record);
+    else rowsOnly.push(x);
+  }
+  if (!drugs.length && !rowsOnly.length) return [];
   // Grouped by what each product is, as Connected is: on the PD-L1 page three staining assays sat in one grid with
   // the antibodies they select patients for (src/lib/product-class.ts). One class keeps the plain grid.
-  const groups = productGroups(drugs.filter((d): d is Drug => d.kind === "drug"));
-  const content = groups.length < 2 ? <DrugGrid drugs={groups[0]?.drugs ?? []} /> : (
+  const groups = productGroups(drugs);
+  if (rowsOnly.length && !groups.some((x) => x.cls === "test")) {
+    // Tests sit after medicines and before imaging agents and devices, as PRODUCT_CLASSES orders them.
+    const at = groups.findIndex((x) => x.cls !== "medicine");
+    groups.splice(at === -1 ? groups.length : at, 0, { cls: "test", drugs: [] });
+  }
+  const rowPills = rowsOnly.length > 0 && (
+    <ul className={`flex flex-wrap gap-1.5${groups.find((x) => x.cls === "test")?.drugs.length ? " mt-3" : ""}`} data-test-rows>
+      {rowsOnly.map((r) => <li key={r.key}><Link href={r.href} title={r.tip} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-2.5 py-1 text-sm hover:border-accent hover:bg-accent-soft"><span aria-hidden className="text-accent">≡</span><span>{r.name}</span></Link></li>)}
+    </ul>
+  );
+  const content = groups.length < 2 ? <>{groups[0]?.drugs.length ? <DrugGrid drugs={groups[0].drugs} /> : null}{rowPills}</> : (
     <div className="space-y-6">{groups.map(({ cls, drugs: list }) => (
       <section key={cls} aria-label={PRODUCT_CLASS_META[cls].group} data-product-class={cls}>
         <h3 className="kicker mb-2.5">{cls === "medicine" ? <KindName kind="drug" form="plural" fallback={KIND_META.drug.plural} /> : <ProductClassName cls={cls} form="group" />}</h3>
-        <DrugGrid drugs={list} />
+        {list.length > 0 && <DrugGrid drugs={list} />}
+        {cls === "test" && rowPills}
       </section>
     ))}</div>
   );
-  return [{ id: "products", label: "Products", count: drugs.length, content }];
+  return [{ id: "products", label: "Products", count: drugs.length + rowsOnly.length, content }];
 }
 
 /** Refs with product cards (molecule thumbnails) for drugs and chips for everything else. */

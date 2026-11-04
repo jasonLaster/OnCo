@@ -1,0 +1,59 @@
+name: Search health
+
+# Can a reader find every record on the live site by typing its name? Asked for on 4 November 2026, after the owner
+# searched onco.cc for "Jaime Leandro Foundation" and saw nothing. scripts/search-health.ts compares the live index
+# with main (records missing because the site has not been shipped since they were merged), searches every record's
+# exact name with the site's own ranking, and measures what search.json costs to download.
+#
+# Fail-safe: this job reads. It never edits data, opens a pull request or deploys (only scripts/ship.sh deploys).
+# It makes two requests to onco.cc, build-id.txt and search.json, once a day.
+
+on:
+  schedule:
+    - cron: "43 4 * * *" # daily 04:43 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: search-health
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history, so the live build id can be found and the commits and days behind main counted, and so the
+          # records added in the last fortnight can be read from git log.
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check the live search
+        id: check
+        run: |
+          npx tsx scripts/search-health.ts --issue=health.md 2> summary.md
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+      # One standing issue, kept the way refresh-universe.yml keeps its freshness issue: opened when something needs a
+      # person, rewritten each day while it does, closed with a comment when nothing does.
+      - name: Open, update or close the standing issue
+        if: steps.check.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Search health: records the live search can't find"
+          n=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ -s health.md ]; then
+            gh label create search --color 1D76DB --description "Found by the daily search health check" --force || true
+            if [ -n "$n" ]; then gh issue edit "$n" --body-file health.md; else gh issue create --title "$title" --label search --body-file health.md; fi
+          elif [ -n "$n" ]; then
+            gh issue close "$n" --comment "Every record checked today is in the live index and ranks where its name says it should."
+          fi
+          rm -f health.md summary.md

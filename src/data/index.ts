@@ -122,7 +122,7 @@ import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
 import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
 import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci";
-import { institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
+import { companiesUkCancerCharities, institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
 import { institutionsCogPaediatric } from "./institutions/cog-paediatric";
 import { institutionsIndiaNcg } from "./institutions/india-ncg";
 import { institutionsJapanMhlw } from "./institutions/japan-mhlw";
@@ -386,6 +386,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...pathwaysKegg,
   ...journalsWave2,
   ...companiesSponsors,
+  ...companiesUkCancerCharities,
   ...companiesSponsorsWave3, ...companiesCooperativeGroups, ...companiesCooperativeGroupsMigrated,
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors, ...companiesPortfolioMonitors, ...companiesInvictus,

@@ -524,7 +524,7 @@ export const cancers: CancerInput[] = [
     tags: ["endocrine"], people: ["steve-jobs"], drugs: ["i131-mibg", "telotristat-ethyl"], links: [{ label: "Wikipedia", url: W("Neuroendocrine_tumor") }, { label: "Dasari et al., trends in incidence, prevalence and survival of neuroendocrine tumours in the US (JAMA Oncology 2017)", url: "https://doi.org/10.1001/jamaoncol.2017.0589" }, { label: "Lutathera US label, section 5.3 (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=LUTATHERA" }], journals: ["endocrine-related-cancer"],
   }),
   c({
-    id: "mesothelioma", institutions: ["meso-foundation", "mesothelioma-uk", "btog"], trials: ["nct06097728"], companies: ["orion-orion-pharma"], name: "Mesothelioma", group: "thoracic", wikipedia: W("Mesothelioma"),
+    id: "mesothelioma", institutions: ["meso-foundation", "mesothelioma-uk"], trials: ["nct06097728"], companies: ["orion-orion-pharma", "btog"], name: "Mesothelioma", group: "thoracic", wikipedia: W("Mesothelioma"),
     burden: "~30,000 cases per year, asbestos-related, 20-50-year latency.",
     tldr: "An asbestos-caused cancer of the lung lining. Immunotherapy doublets replaced chemotherapy in 2020, and mesothelin CAR-T is under study.",
     summary: "Nivolumab-ipilimumab first line (CheckMate 743); chemotherapy + pembrolizumab (KEYNOTE-483) or + bevacizumab; TTFields approved. Surgery (MARS 2 showed no benefit for extended pleurectomy). Mesothelin-directed CAR-T (regional), ADCs, and BAP1/MTAP-based synthetic lethality (PRMT5 inhibitors for MTAP-deleted) in trials.",

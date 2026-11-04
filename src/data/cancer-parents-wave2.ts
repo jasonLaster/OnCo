@@ -57,7 +57,7 @@ export const cancerParentsWave2: CancerInput[] = [
     // family's own and carry their sources.
     openProblems: [],
     links: [{ label: "Wikipedia", url: W("Breast_cancer") }, { label: "NCI PDQ", url: "https://www.cancer.gov/types/breast" }] },
-  { id: "lung-cancer", institutions: ["go2-for-lung-cancer", "lcrf", "btog"], kind: "cancer", name: "Lung cancer (all types)", group: "thoracic", asOf, tags, wikipedia: W("Lung_cancer"),
+  { id: "lung-cancer", institutions: ["go2-for-lung-cancer", "lcrf"], companies: ["btog"], kind: "cancer", name: "Lung cancer (all types)", group: "thoracic", asOf, tags, wikipedia: W("Lung_cancer"),
     aka: ["Bronchogenic carcinoma", "Lung carcinoma"],
     burden: "The leading cause of cancer death worldwide, with about 2.6 million new cases and 1.9 million deaths in 2024 by GLOBOCAN's estimate; most cases are caused by smoking, and survival depends heavily on the stage at diagnosis.",
     tldr: "Lung cancer splits into non-small-cell (about 85 percent) and small-cell (about 15 percent) disease, which behave and are treated very differently. Screening, staging and the things both types share are common ground; the rest belongs to each subtype.",

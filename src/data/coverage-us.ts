@@ -132,7 +132,7 @@ const B_OOP = "20% Part B coinsurance on a high-cost infusion adds up quickly: M
 const RECORDS: UsCoverage[] = [
   // ---- Checkpoint inhibitors and immune-oncology antibodies (Part B) ----
   rec("pembrolizumab", "B", `${IV} HCPCS J9271. The subcutaneous Keytruda Qlex is also clinician-administered and stays in Part B.`, "covered with prior authorisation", `${PA_IV} The largest-selling cancer drug in the US; nearly every plan has a Keytruda policy tied to indication and PD-L1 status where the label requires it.`, {
-    price: { value: 11115.2, per: "200 mg dose every 3 weeks (manufacturer list price)", source: "Merck, KEYTRUDA cost and financial support page", url: "https://www.keytruda.com/cost/", year: 2024 },
+    price: { value: 12517.44, per: "200 mg dose every 3 weeks (manufacturer list price, current as of September 2026)", source: "Merck, KEYTRUDA financial support page", url: "https://www.keytruda.com/financial-support/", year: 2026 },
     pap: [...PAP.merck, ...PAP.charities], oop: B_OOP,
   }),
   rec("nivolumab", "B", `${IV} HCPCS J9299. Opdivo Qvantig (subcutaneous, with hyaluronidase) is clinician-administered and also Part B.`, "covered with prior authorisation", PA_IV, { pap: [...PAP.bms, ...PAP.charities], oop: B_OOP }),

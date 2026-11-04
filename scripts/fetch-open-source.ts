@@ -82,9 +82,19 @@ async function fetchPage(url: string): Promise<{ status: number; body: string }>
   return result;
 }
 
-/** First DOI in a text that is not a Zenodo concept DOI, else the first DOI at all. */
+/**
+ * First DOI in a text that is not a Zenodo concept DOI, else the first DOI at all. Brackets are allowed inside a DOI
+ * (Elsevier's 10.1016/S1470-2045(24)00220-1 was cut to "10.1016/S1470-2045") and an unbalanced closing bracket, a
+ * badge's ".svg" and Markdown emphasis ("..._") are trimmed off the end; scripts/doi-exists.test.ts checks the result.
+ */
 function firstDoi(text: string): string | undefined {
-  const all = [...text.matchAll(/\b(10\.\d{4,9}\/[^\s"'<>()\[\]{},;]+)/g)].map((m) => m[1].replace(/[.:]+$/, ""));
+  const all = [...text.matchAll(/\b(10\.\d{4,9}\/[^\s"'<>\[\]{},;]+)/g)]
+    .map((m) => {
+      let d = m[1].replace(/[.:_*]+$/, "");
+      while (d.endsWith(")") && (d.match(/\)/g) ?? []).length > (d.match(/\(/g) ?? []).length) d = d.slice(0, -1).replace(/[.:_*]+$/, "");
+      return d;
+    })
+    .filter((d) => !/\.svg$/i.test(d));
   if (!all.length) return undefined;
   return all.find((d) => !d.startsWith("10.5281/")) ?? all[0];
 }

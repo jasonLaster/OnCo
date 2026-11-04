@@ -318,6 +318,131 @@
      ]
     }
    }
+  },
+  {
+   "sample": "docs/audits/accuracy/sample-2026-11-03-round2-sweep.json",
+   "drawn": "2026-11-04",
+   "seed": 0,
+   "method": "sweep",
+   "round": 2,
+   "scope": "Census, not a sample: every numeric or dated sentence on the live country pages (src/data/country-us, -gb, -de, -il, -in, -jp, -ru, country-extras and china.ts) and every figure-bearing sentence on the 60 cancer pages with the most inbound links (summary, burden, prognosis, stateOfArt, standardOfCare, basics, openProblems). Verdicts record the text as it stood before this round's fixes; `fixed` says what changed.",
+   "skipped": 422,
+   "corpusSize": 20309,
+   "pending": 0,
+   "overall": {
+    "n": 3453,
+    "checked": 3402,
+    "counts": {
+     "correct": 2619,
+     "stale": 58,
+     "imprecise": 256,
+     "wrong": 95,
+     "unsourced": 374,
+     "unreachable": 51
+    },
+    "errorRate": 0.23015873015873015,
+    "errorCi": [
+     0.21632279036889157,
+     0.24460340185331858
+    ],
+    "wrongRate": 0.02792475014697237,
+    "wrongCi": [
+     0.02289831001315908,
+     0.03401613956077295
+    ]
+   },
+   "strata": {
+    "cancer-numbers": {
+     "n": 1632,
+     "checked": 1595,
+     "counts": {
+      "correct": 1264,
+      "stale": 28,
+      "imprecise": 132,
+      "wrong": 19,
+      "unsourced": 152,
+      "unreachable": 37
+     },
+     "errorRate": 0.20752351097178684,
+     "errorCi": [
+      0.18833549404802377,
+      0.22811701757038796
+     ],
+     "wrongRate": 0.011912225705329153,
+     "wrongCi": [
+      0.007639207989054015,
+      0.01853073905260414
+     ]
+    },
+    "country-cards": {
+     "n": 1821,
+     "checked": 1807,
+     "counts": {
+      "correct": 1355,
+      "stale": 30,
+      "imprecise": 124,
+      "wrong": 76,
+      "unsourced": 222,
+      "unreachable": 14
+     },
+     "errorRate": 0.2501383508577753,
+     "errorCi": [
+      0.23071350601860063,
+      0.2706233309526729
+     ],
+     "wrongRate": 0.042058660763696736,
+     "wrongCi": [
+      0.033734124698500484,
+      0.05232619112371169
+     ]
+    }
+   },
+   "byAge": {
+    "lastMonth": {
+     "n": 1489,
+     "checked": 1480,
+     "counts": {
+      "correct": 1150,
+      "stale": 25,
+      "imprecise": 113,
+      "wrong": 65,
+      "unsourced": 127,
+      "unreachable": 9
+     },
+     "errorRate": 0.22297297297297297,
+     "errorCi": [
+      0.20249899329477508,
+      0.24488137398971135
+     ],
+     "wrongRate": 0.04391891891891892,
+     "wrongCi": [
+      0.034606618940097866,
+      0.05559276622338588
+     ]
+    },
+    "older": {
+     "n": 1964,
+     "checked": 1922,
+     "counts": {
+      "correct": 1469,
+      "stale": 33,
+      "imprecise": 143,
+      "wrong": 30,
+      "unsourced": 247,
+      "unreachable": 42
+     },
+     "errorRate": 0.2356919875130073,
+     "errorCi": [
+      0.21725564011002865,
+      0.25518279927148646
+     ],
+     "wrongRate": 0.015608740894901144,
+     "wrongCi": [
+      0.010955076183690987,
+      0.022194898352117153
+     ]
+    }
+   }
   }
  ]
 }

@@ -80,11 +80,11 @@ export const skinTrials: TrialInput[] = [
     result: "Objective response 47% in the metastatic group; 46% in the pooled analysis of 193 patients with 16% complete responses.",
     outcomes: [
       { endpoint: "Objective response rate (metastatic group)", primary: true, unit: "%", arms: [{ name: "Cemiplimab", n: 59, value: 47 }], source: "https://www.nejm.org/doi/full/10.1056/NEJMoa1805131" },
-      { endpoint: "Objective response rate (pooled analysis)", unit: "%", arms: [{ name: "Cemiplimab", n: 193, value: 46 }], source: "https://doi.org/10.1136/jitc-2020-002757" },
+      { endpoint: "Objective response rate (pooled analysis)", unit: "%", arms: [{ name: "Cemiplimab", n: 193, value: 46 }], source: "https://doi.org/10.1136/jitc-2021-002757" },
     ],
     replication: "KEYNOTE-629 (pembrolizumab) and the cosibelimab pivotal study found response rates of the same order with other PD-1 pathway antibodies.",
     drugs: ["cemiplimab"], targets: ["pd1"], cancers: ["advanced-cutaneous-scc", "cutaneous-scc"], technologies: ["checkpoint-inhibitor"], terms: ["tmb"], companies: ["regeneron", "sanofi"],
-    links: [ct("NCT02760498"), { label: "NEJM 2018", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1805131" }, { label: "Pooled analysis, JITC 2021", url: "https://doi.org/10.1136/jitc-2020-002757" }] },
+    links: [ct("NCT02760498"), { label: "NEJM 2018", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1805131" }, { label: "Pooled analysis, JITC 2021", url: "https://doi.org/10.1136/jitc-2021-002757" }] },
 
   { id: "keynote-629", kind: "trial", name: "KEYNOTE-629", nct: "NCT03284424", phase: "2", status: "positive", yearReported: 2020, sponsor: "Merck", enrolled: 159, asOf,
     setting: "Recurrent or metastatic, and separately locally advanced, cutaneous squamous cell carcinoma: pembrolizumab",
@@ -423,7 +423,7 @@ export const skinSubtypes: CancerInput[] = [
     pipeline: ["imatinib", "sunitinib", "pazopanib"],
     openProblems: ["Diagnosis is delayed for years because the tumour looks like a scar, keloid or cyst.", "Responses to imatinib are not permanent and the drugs after it have only small series behind them.", "Fibrosarcomatous transformation is the cause of most deaths and has no specific therapy."],
     targets: ["pdgfrb", "pdgfra"], technologies: ["mohs-surgery", "kinase-inhibitors", "imrt-igrt"], drugs: ["imatinib", "sunitinib", "pazopanib"], terms: ["wide-local-excision", "rare-cancers"], related: ["sarcoma", "kaposi-sarcoma", "desmoid-tumour", "tenosynovial-giant-cell-tumour", "gist", "inflammatory-myofibroblastic-tumour"],
-    links: [{ label: "Imatinib in DFSP, pooled EORTC and SWOG trials (JCO 2010)", url: "https://ascopubs.org/doi/10.1200/JCO.2009.25.9899" }, { label: "Wikipedia", url: W("Dermatofibrosarcoma_protuberans") }] },
+    links: [{ label: "Imatinib in DFSP, pooled EORTC and SWOG trials (JCO 2010)", url: "https://ascopubs.org/doi/10.1200/JCO.2009.25.7899" }, { label: "Wikipedia", url: W("Dermatofibrosarcoma_protuberans") }] },
 ];
 
 /** Chinese TL;DRs for the records above, folded into src/data/i18n/zh.ts by scripts/fold-zh.ts. */

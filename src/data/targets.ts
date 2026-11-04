@@ -1029,7 +1029,7 @@ export const targets: TargetInput[] = [
     biology: "Receptor tyrosine kinase of mesenchymal cells and pericytes; oncogenic through fusions in dermatofibrosarcoma protuberans and myeloid neoplasms with eosinophilia.",
     whereFound: ["Dermatofibrosarcoma protuberans (COL1A1::PDGFB)","Myeloid or lymphoid neoplasms with PDGFRB rearrangement","Tumour stroma and pericytes"],
     drugs: ["imatinib","sunitinib"], cancers: ["sarcoma","cmml"],
-    prevalence: [{"cancerId":"sarcoma","pct":"more than 90","measure":"COL1A1-PDGFB fusion in dermatofibrosarcoma protuberans, the PDGFRB-driven sarcoma imatinib treats","source":"https://doi.org/10.1038/ng0997-95"}],
+    prevalence: [{"cancerId":"sarcoma","pct":"more than 90","measure":"COL1A1-PDGFB fusion in dermatofibrosarcoma protuberans, the PDGFRB-driven sarcoma imatinib treats","source":"https://doi.org/10.1038/ng0197-95"}],
     links: [{ label: "UniProt P09619: PDGFRB", url: "https://www.uniprot.org/uniprotkb/P09619/entry" }],
   },
   {

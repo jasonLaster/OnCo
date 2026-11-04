@@ -263,7 +263,7 @@ export const simpleL2: Record<string, string> = {
   "purnima-sundaresan": "Purnima Sundaresan is a Sydney radiation oncologist who is president of TROG Cancer Research, the radiotherapy trials group for Australia and New Zealand.",
   "qing-zhou": "Qing Zhou, chief of pulmonary oncology at the Guangdong Lung Cancer Institute, led HARMONi-2, where the bispecific antibody ivonescimab beat pembrolizumab head to head in lung cancer.",
   "quynh-thu-le": "Quynh-Thu Le, chair of radiation oncology at Stanford, chairs NRG Oncology, the largest US radiotherapy trials group, and leads trials reducing treatment for HPV-positive throat cancer.",
-  "r-angelo-de-claro": "Angelo de Claro is a haematologist-oncologist who has directed the FDA's Oncology Center of Excellence since March 2025 and previously led its global review programme Project Orbis.",
+  "r-angelo-de-claro": "Angelo de Claro is a haematologist-oncologist who has been deputy director of the FDA's Oncology Center of Excellence since March 2025 and leads its global review programme, Project Orbis.",
   "rachel-rau": "Rachel Rau, a Seattle paediatric oncologist, led the Children's Oncology Group trial showing blinatumomab helps children with standard-risk acute lymphoblastic leukaemia.",
   "rachel-ramoni": "Rachel Ramoni directs the Kaiser Permanente Division of Research, one of the largest health-system research units in the United States, whose cancer work has shaped screening research.",
   "kaliks-rafael": "Rafael Kaliks is a São Paulo medical oncologist at Hospital Israelita Albert Einstein who has helped shape its precision oncology and treatment quality programmes.",

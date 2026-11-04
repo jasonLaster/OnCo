@@ -66,7 +66,7 @@ const spike: Spike = {
     pipeline: [...tnbcIdeas.map((i) => i.id)],
     // The molecular file's overlapping problems (assay swing, ctDNA timing, ancestry) were folded into these three on review (docs/TNBC-QA.md).
     openProblems: [
-      "PD-L1 assays disagree on about a quarter of tumours (SP142 46 percent positive, 22C3 73 percent, concordance 69 percent in IMpassion130; 27 percent CPS 10 or more against 51 percent SP142-positive in the Swedish early cohort); only 22C3 combined positive score of 10 has an approved drug attached, laboratories are not harmonised, and no assay predicts benefit from the first-line antibody-drug conjugate plus pembrolizumab combinations.",
+      "PD-L1 assays disagree on about a third of tumours (SP142 46 percent positive, 22C3 73 percent, concordance 69 percent in IMpassion130; 27 percent CPS 10 or more against 51 percent SP142-positive in the Swedish early cohort); only 22C3 combined positive score of 10 has an approved drug attached, laboratories are not harmonised, and no assay predicts benefit from the first-line antibody-drug conjugate plus pembrolizumab combinations.",
       "Acting on ctDNA after residual disease failed once (c-TRAK TN: detection came after metastases were visible, and ctDNA misses brain-only relapse); the next design needs tumour-informed assays, a sample at surgery and an active drug, and has not been run.",
       "The disparity is measured in the United States and was measured once in the UK (POSH, women under 41, recruited to 2008); NHS statistics do not report triple-negative outcomes by ethnicity, and women of African ancestry, who carry a distinct immune landscape, remain under-represented in the trials that set the biomarker thresholds.",
     ],

@@ -367,7 +367,7 @@ const prostatePatch: Spike["patch"] = {
       "TNM 9 was published on 3 July 2025 and UICC recommends it from 1 January 2026. The prostate T, N and M categories are unchanged; the clinical stage grouping was clarified, and reports are now asked to record the imaging method as a suffix, cT2b(mr) for MRI and N1(PET) for a node found on PSMA PET, because prostate is the malignancy most affected by stage migration (Brierley 2026)",
       "NICE NG131 names no TNM edition. Its risk table uses bare T1 to T4, which are identical in the eighth and ninth editions",
       "Disease state, which is not a stage: hormone-sensitive or castration-resistant (which NICE calls hormone-relapsed), metastatic or not, and whether the PSA alone has risen after treatment (biochemical recurrence). Each of these has its own page here",
-      "In England 53 percent of prostate cancers with a known stage were diagnosed at stage I or II in 2022, against 37 percent in Scotland in 2023, 57 percent in Northern Ireland and 59 percent in Wales (Cancer Research UK)",
+      "In England 53 percent of prostate cancers with a known stage were diagnosed at stage I or II in 2022, against 37 percent in Scotland in 2023, 57 percent a year in Northern Ireland on average over 2015 to 2019 and 59 percent a year in Wales on average over 2017 to 2019 (Cancer Research UK)",
     ],
     sources: [SRC.ng131, SRC.rcpath, SRC.tnm9, SRC.nhsSymptoms, SRC.cruk],
   },

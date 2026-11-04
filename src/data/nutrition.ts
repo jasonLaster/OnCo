@@ -264,7 +264,7 @@ const technologies: TechnologyInput[] = [
     limitations: ["No evidence yet that treating sleep changes survival", "Melatonin and supplements over-promoted", "Access to CBT-I limited"],
     cancers: ["breast-hr-positive", "colorectal", "prostate", "nsclc"], technologies: ["chronotherapy", "exercise-oncology", "survivorship-care-plan", "rejuv-mind-sleep-after-cancer", "rejuv-mind-sleeping-tablets-after-cancer"], pathways: ["circadian-control"],
     bottlenecks: ["b-survivorship", "b-toxicity-qol"], related: ["idea-chronotherapy-immunotherapy", "idea-nl-sleep-circadian-survivorship-rct", "cbt-insomnia-cancer"],
-    links: [doi("IARC Monograph 124: night shift work (Lancet Oncol 2019)", "10.1016/S1470-2045(19)30455-3"), doi("ASCO sleep disturbance guideline (JCO 2024)", "10.1200/JCO.23.02545")] }),
+    links: [doi("IARC Monograph 124: night shift work (Lancet Oncol 2019)", "10.1016/S1470-2045(19)30455-3")] }),
 
   tech({ id: "cachexia-appetite-pharmacotherapy", name: "Cachexia pharmacotherapy: GDF-15 blockade, anamorelin, olanzapine", sections: [SEC, "supportive-care"], status: "phase-3", wikipedia: W("Cachexia"),
     tldr: "Cachexia pharmacotherapy covers three drug approaches to cancer wasting: ponsegromab, an antibody that blocks the appetite-suppressing hormone GDF-15 and is in phase 3; anamorelin, a ghrelin mimic approved only in Japan; and low-dose olanzapine, a generic tablet available everywhere that ASCO added to guidance in 2024. None has yet been shown to improve physical function.",
@@ -425,7 +425,7 @@ const trials: TrialInput[] = [
     result: "Invasive cancer incidence HR 0.96 (vitamin D), 1.03 (omega-3); no benefit on primary endpoints.",
     outcomes: [
       { endpoint: "Invasive cancer of any type", primary: true, unit: "events", arms: [{ name: "Vitamin D3", n: 12927, value: 793 }, { name: "Placebo", n: 12944, value: 824 }], hr: 0.96, ci: [0.88, 1.06], p: "0.47", source: "https://doi.org/10.1056/NEJMoa1809944" },
-      { endpoint: "Invasive cancer of any type", primary: true, unit: "events", arms: [{ name: "Omega-3", n: 12933, value: 820 }, { name: "Placebo", n: 12938, value: 797 }], hr: 1.03, ci: [0.93, 1.13], source: "https://doi.org/10.1056/NEJMoa1809946" },
+      { endpoint: "Invasive cancer of any type", primary: true, unit: "events", arms: [{ name: "Omega-3", n: 12933, value: 820 }, { name: "Placebo", n: 12938, value: 797 }], hr: 1.03, ci: [0.93, 1.13], source: "https://doi.org/10.1056/NEJMoa1811403" },
     ],
     replication: "Consistent with D-Health (Australia, 21,315 participants, no reduction in mortality or cancer) and with meta-analyses showing no effect on incidence and a possible 10-15% reduction in cancer mortality.",
     technologies: ["vitamin-d-omega3-supplementation", "chemoprevention"], terms: ["unproven-diet-claims", "hazard-ratio"], sections: [SEC, "prevention"],

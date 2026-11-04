@@ -26,7 +26,7 @@ const herbs = (label: string, slug: string) => ({ label: `MSK About Herbs: ${lab
 
 const SIO_ASCO_PAIN = doi("SIO-ASCO guideline: integrative medicine for pain management in oncology (JCO 2022)", "10.1200/JCO.22.01357");
 const SIO_ASCO_MOOD = doi("SIO-ASCO guideline: integrative oncology care of anxiety and depression (JCO 2023)", "10.1200/JCO.23.00857");
-const SIO_ASCO_FATIGUE = doi("SIO-ASCO guideline: integrative oncology care of cancer-related fatigue (JCO 2024)", "10.1200/JCO.24.00575");
+const SIO_ASCO_FATIGUE = doi("ASCO-SIO guideline update: management of fatigue in adult survivors of cancer (JCO 2024)", "10.1200/JCO.24.00541");
 const SIO_BREAST_2017 = doi("SIO clinical practice guideline: integrative therapies during and after breast cancer treatment (CA Cancer J Clin 2017)", "10.3322/caac.21397");
 const ASCO_ENDORSE_2018 = doi("ASCO endorsement of the SIO breast cancer guideline (JCO 2018)", "10.1200/JCO.2018.79.2721");
 const ASCO_CANNABIS_2024 = doi("ASCO guideline: cannabis and cannabinoids in adults with cancer (JCO 2024)", "10.1200/JCO.23.02596");
@@ -58,7 +58,7 @@ const acupuncture: TechnologyInput[] = [
     strengths: ["Multicentre randomised trial with a sham arm", "Effect maintained a year after treatment", "Firm SIO-ASCO 2022 recommendation"],
     limitations: ["Access and cost of a course of sessions", "Not yet shown to improve adherence to endocrine therapy", "Effect size against sham is modest"],
     cancers: ["breast-hr-positive"], drugs: ["letrozole", "exemestane"], technologies: ["endocrine-therapy", "integrative-oncology", "pain-management"], terms: ["aromatase-inhibitor", "placebo"], bottlenecks: ["b-toxicity-qol"],
-    links: [doi("SWOG S1200: acupuncture for aromatase inhibitor-related joint pain (JAMA 2018)", "10.1001/jama.2018.11350"), SIO_ASCO_PAIN] }),
+    links: [doi("SWOG S1200: acupuncture for aromatase inhibitor-related joint pain (JAMA 2018)", "10.1001/jama.2018.8907"), SIO_ASCO_PAIN] }),
 
   tech({ id: "acupuncture-hot-flushes", name: "Acupuncture for hot flushes on endocrine therapy", sections: [SEC, "hormonal"], status: "emerging", wikipedia: W("Hot_flash"), tags: T("moderate"),
     tldr: "Hot flushes on tamoxifen or aromatase inhibitors are common and hormone replacement is off the table. Acupuncture reduced flushes in several randomised trials, in one about as well as the drug gabapentin and with fewer side effects, though sham-controlled results are mixed.",
@@ -117,7 +117,7 @@ const mindBody: TechnologyInput[] = [
     strengths: ["Durable effects at long follow-up", "Recommended in SIO-ASCO 2023 and 2024 guidelines", "Deliverable remotely"],
     limitations: ["Therapist capacity", "Requires engagement over weeks", "Trials mostly in survivors rather than advanced disease"],
     technologies: ["psycho-oncology", "integrative-oncology", "exercise-oncology", "cancer-related-fatigue-management", "cognitive-impairment-after-cancer-treatment", "rejuv-mind-fear-of-recurrence-treatment", "rejuv-mind-depression-after-cancer"], terms: ["quality-of-life"], bottlenecks: ["b-survivorship", "b-toxicity-qol"],
-    links: [SIO_ASCO_FATIGUE, SIO_ASCO_MOOD, doi("Effects of CBT in severely fatigued disease-free cancer patients, randomised trial (JCO 2006)", "10.1200/JCO.2005.04.8270")] }),
+    links: [SIO_ASCO_FATIGUE, SIO_ASCO_MOOD, doi("Effects of CBT in severely fatigued disease-free cancer patients, randomised trial (JCO 2006)", "10.1200/JCO.2006.06.8270")] }),
 
   tech({ id: "yoga-cancer", name: "Yoga during and after cancer treatment", sections: [SEC, "nutrition-lifestyle"], status: "established", wikipedia: W("Yoga_as_therapy"), tags: T("strong"),
     tldr: "Yoga combining postures, breathing and relaxation reduces fatigue, anxiety and low mood and improves sleep and quality of life, on the evidence of a Cochrane review of 24 randomised trials in women with breast cancer. SIO-ASCO guidelines recommend it for fatigue and anxiety during treatment; it does not replace aerobic and resistance exercise.",

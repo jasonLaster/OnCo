@@ -8331,7 +8331,7 @@ export const openSourceProjects: OpenSourceProject[] = [
     "since": 2022,
     "lastCommit": "2025-03-26",
     "stars": 30,
-    "doi": "10.1016/S1470-2045",
+    "doi": "10.1016/S1470-2045(24)00220-1",
     "cancers": [
       "prostate"
     ],
@@ -8992,7 +8992,7 @@ export const openSourceProjects: OpenSourceProject[] = [
     "since": 2015,
     "lastCommit": "2025-10-27",
     "stars": 1468,
-    "doi": "10.1158/0008-5472.CAN-17-0339_",
+    "doi": "10.1158/0008-5472.CAN-17-0339",
     "cancers": [],
     "targets": [],
     "technologies": [

@@ -558,7 +558,7 @@ export const bottlenecks: BottleneckInput[] = [
     summary: "About 40% of cancer cases and nearly half of cancer deaths in high-income countries are attributable to modifiable risk factors, tobacco above all, followed by excess body weight, alcohol, infections, diet, inactivity and ultraviolet exposure. Proven interventions exist for most of them: HPV vaccination (a single dose is now WHO-endorsed) can eliminate cervical cancer as a public health problem; hepatitis B vaccination and hepatitis C treatment prevent liver cancer; Helicobacter pylori eradication reduces gastric cancer; tobacco taxation, plain packaging and smoke-free laws are the most cost-effective measures in all of medicine; aspirin halves colorectal cancer in Lynch syndrome carriers. Yet global HPV coverage remains well below target, tobacco still kills more than eight million people a year, and prevention receives a small share of cancer research and health spending. The bottleneck is political, financial and organisational rather than scientific.",
     metrics: [
       { label: "Share of US cancer cases and deaths attributable to potentially modifiable risk factors (2014)", value: "42% of cases, 45% of deaths", source: "Islami et al., CA 2018", url: "https://doi.org/10.3322/caac.21440" },
-      { label: "Girls worldwide fully vaccinated against HPV by 2019", value: "~15%", source: "Bruni et al., Lancet Global Health 2021", url: "https://doi.org/10.1016/S2214-109X(21)00347-3" },
+      { label: "Girls worldwide fully vaccinated against HPV by 2019", value: "~15%", source: "Bruni et al., Preventive Medicine 2021", url: "https://doi.org/10.1016/j.ypmed.2020.106399" },
       { label: "Deaths caused by tobacco each year worldwide", value: "More than 8 million", source: "WHO fact sheet, Tobacco", url: "https://www.who.int/news-room/fact-sheets/detail/tobacco" },
       { label: "Reduction in colorectal cancer with daily aspirin in Lynch syndrome carriers at 10 years (CAPP2, per-protocol)", value: "HR 0.56", source: "Burn et al., Lancet 2020", url: "https://doi.org/10.1016/S0140-6736(20)30366-4" },
     ],
@@ -581,7 +581,7 @@ export const bottlenecks: BottleneckInput[] = [
     links: [
       { label: "Islami et al., Proportion of cancer attributable to modifiable risk factors (CA 2018)", url: "https://doi.org/10.3322/caac.21440" },
       { label: "WHO Cervical Cancer Elimination Initiative", url: "https://www.who.int/initiatives/cervical-cancer-elimination-initiative" },
-      { label: "Bruni et al., HPV vaccination coverage estimates 2010-2019 (Lancet Global Health 2021)", url: "https://doi.org/10.1016/S2214-109X(21)00347-3" },
+      { label: "Bruni et al., HPV vaccination coverage estimates 2010-2019 (Preventive Medicine 2021)", url: "https://doi.org/10.1016/j.ypmed.2020.106399" },
       { label: "WHO Framework Convention on Tobacco Control", url: "https://fctc.who.int/" },
     ],
     cancers: ["cervical", "hcc", "gastric", "nsclc", "head-and-neck", "esophageal", "colorectal", "melanoma"],

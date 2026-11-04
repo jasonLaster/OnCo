@@ -83,7 +83,7 @@ const spike: Spike = {
     pipeline: [...colorectalIdeas.map((i) => i.id)],
     openProblems: [
       "Screening delivers the effect of its uptake, not of its test: 40.4 percent of the Nottingham screening group never returned a kit, and endoscopy capacity and the endoscopist's adenoma detection rate then decide what a positive test is worth.",
-      "Incidence in adults under 50 is rising by 1.6 to 7.9 percent a year across Europe and the United States, the stage shift screening bought is reversing (60 percent of United States cases advanced in 2019 against 52 percent in the mid-2000s), and the only mechanistic lead is a bacterial toxin signature enriched 3.3-fold in cancers diagnosed before 40.",
+      "Incidence in adults under 50 is rising by 1.6 to 7.9 percent a year across Europe, depending on age, and by 3 percent a year at 20 to 49 in the United States, the stage shift screening bought is reversing (60 percent of United States cases advanced in 2019 against 52 percent in the mid-2000s), and the only mechanistic lead is a bacterial toxin signature enriched 3.3-fold in cancers diagnosed before 40.",
       "Organ preservation for mismatch repair-proficient rectal cancer has never been randomised against surgery, and the bowel, urinary and sexual function that justifies it has never been a primary endpoint.",
     ],
     terms: ["msi", "mmr", "sidedness", "cms-subtypes", "lynch-syndrome", "fit-test", "ctdna", "mrd", "total-mesorectal-excision", "organ-preservation", "clinical-complete-response", "total-neoadjuvant-therapy", "chemoradiation", "complete-response", "tumour-agnostic", "cold-vs-hot", "neoantigen", "performance-status"],

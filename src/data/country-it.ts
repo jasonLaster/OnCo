@@ -14,8 +14,8 @@
  *    projection: AIRTUM projected 360,000 to 390,000 for 2024 under two assumptions, and the 2025 edition did not
  *    produce a new one. Incidence excludes non-melanoma skin cancer.
  *  - Deaths are the 2022 estimates the 2025 edition prints; it says estimates for 2023 were not available.
- *  - GLOBOCAN's 436,242 for Italy in 2022 counts all cancers including non-melanoma skin (code 39), so it is not
- *    comparable with the AIRTUM figure.
+ *  - GLOBOCAN 2024's 429,695 for Italy in 2024 counts all cancers including non-melanoma skin (code 39), so it is not
+ *    comparable with the AIRTUM figure; less its 28,698 non-melanoma skin cancers (code 17) it is 400,997.
  *  - The ClinicalTrials.gov counts in IT_TRIAL_STARTS are OnCo's own, made on 3 November 2026 with the API v2 query
  *    query.cond=cancer, query.locn=Italy, filter.advanced=AREA[StudyType]INTERVENTIONAL AND AREA[StartDate]RANGE[<year>],
  *    and the same with AND AREA[LeadSponsorClass]INDUSTRY for the industry column.

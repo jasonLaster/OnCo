@@ -18,7 +18,7 @@ The same corpus ships as:
 - one Markdown context file per record for language models (/api/v1/context/<id>.md) plus /llms.txt and /llms-full.txt
 - RDF N-Triples with owl:sameAs to Wikidata
 - Atom feeds for regulatory events, the readout calendar, the research pulse and the changelog
-- an MCP server (`npx -y onco-mcp`: search, get_entity, list_kind, ask, context, compare) and a CLI (`npx onco`)
+- an MCP server (`npx -y onco-mcp`: search, get_entity, list_kind, ask, context, compare) and a CLI (`npx onco-cc`)
 
 Stack: Next.js static export, TypeScript records validated by Zod at build time, everything computed at build so nothing is served dynamically. The repository is https://github.com/judegomila/OnCo: the data are TypeScript files under src/data, so a correction is a pull request.
 

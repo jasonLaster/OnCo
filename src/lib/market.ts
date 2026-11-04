@@ -14,7 +14,7 @@ export * from "./market-core";
  *                     x setting share (fraction of patients who reach the chosen treatment setting)
  *
  * Every factor except incidence is a [low, high] range and the ranges multiply, so the band is wide on
- * purpose. Incidence is GLOBOCAN 2022 new cases; prevalence is the sourced figure on each target page;
+ * purpose. Incidence is GLOBOCAN new cases (the edition in public/globocan/countries.json); prevalence is the sourced figure on each target page;
  * setting and subtype shares are the editorial ranges in src/data/setting-shares.ts. Nothing here is a
  * forecast: it is the arithmetic, with every input linked so a reader can disagree with one factor.
  */

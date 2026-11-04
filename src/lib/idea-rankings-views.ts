@@ -19,7 +19,7 @@ export type ViewDef = {
 };
 
 export const VIEWS: readonly ViewDef[] = [
-  { id: "bang-for-buck", label: "Best bang for buck", glyph: "coin", formula: "Score = burden (annual new cases of the linked cancers, GLOBOCAN 2022) divided by the cost band (small 1, medium 2, large 3) and divided again by one plus the horizon in years; ties go to more evidence." },
+  { id: "bang-for-buck", label: "Best bang for buck", glyph: "coin", formula: "Score = burden (annual new cases of the linked cancers, GLOBOCAN {year}) divided by the cost band (small 1, medium 2, large 3) and divided again by one plus the horizon in years; ties go to more evidence." },
   { id: "most-important", label: "Most important", glyph: "flag", formula: "Score = burden times breadth (the number of linked cancers); ties go to more evidence." },
   { id: "hardest", label: "Hardest", glyph: "mountain", formula: "Score = cost band (1 to 3) plus horizon years divided by 5, plus distance from being tested at scale (0 to 3), plus missing evidence (3 minus linked evidence, never below 0); ties go to more burden." },
   { id: "closest-to-reality", label: "Closest to reality", glyph: "target", formula: "Score = maturity rank (speculative 1 to being tested at scale 4) times 3, plus linked evidence; ties go to more burden." },

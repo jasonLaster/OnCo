@@ -3,8 +3,8 @@
 [OnCo](https://onco.cc), the public cited knowledge graph of oncology, from the terminal. One binary, no runtime dependencies, Node 20 or later. It reads the same static API the site publishes at `https://onco.cc/api/v1/` (see https://onco.cc/api/), so nothing is scraped and nothing is invented.
 
 ```sh
-npx onco search "HER2-low breast cancer" --kind drug
-npm install -g onco && onco --help
+npx onco-cc search "HER2-low breast cancer" --kind drug
+npm install -g onco-cc && onco --help
 ```
 
 ## Commands

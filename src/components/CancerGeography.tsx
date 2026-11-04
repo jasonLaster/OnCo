@@ -29,12 +29,40 @@ const RAMP = ["#fde2e2", "#fbb4b4", "#f47b7b", "#dc3c3c", "#8f1414"];
 const fmt = (n: number | null | undefined, d = 0) => n === null || n === undefined ? "no data" : n.toLocaleString("en-GB", { maximumFractionDigits: d, minimumFractionDigits: d });
 const METRICS: Array<[GeoMetric, string, GeoGlyphName]> = [["inc", "Incidence", "incidence"], ["mort", "Mortality", "mortality"]];
 const SEXES: Array<[GeoSex, string, GeoGlyphName]> = [["both", "Both sexes", "both"], ["women", "Women", "women"], ["men", "Men", "men"]];
-/** GLOBOCAN's method codes, as its Cancer Today legend explains them; 9 is the one that matters for reading the map. */
-const METHOD: Record<string, string> = {
-  "1": "national registry data projected", "2a": "most recent national data applied", "2b": "regional registry data applied to the country",
-  "3a": "estimated from national mortality with modelled incidence-to-mortality ratios", "3b": "estimated from mortality with ratios from neighbouring countries", "3c": "estimated from mortality with ratios from a cancer registry",
-  "9": "no national data; rates carried over from neighbouring countries",
+/**
+ * GLOBOCAN's data-method codes, in IARC's own words from the "Data source and methods" box of the GLOBOCAN 2024
+ * country fact sheets (gco.iarc.who.int/media/globocan/factsheets/populations/<code>-<country>-fact-sheet.pdf, read
+ * 3 November 2026; "M:I" is spelled out). One code means different things for the two measures: under 3a to 3c,
+ * incidence is derived from mortality and mortality from incidence. 5 is the one that matters most for reading the
+ * map: that country's incidence colour comes from its neighbours' rates. "{year}" is the edition year.
+ * src/components/CancerGeography.test.ts fails if public/globocan/countries.json carries a code with no entry here.
+ */
+export const GLOBOCAN_METHOD: Record<GeoMetric, Record<string, string>> = {
+  inc: {
+    "1": "trends in national rates projected to {year}",
+    "2a": "national rates applied to the {year} population",
+    "2b": "subnational rates applied to the {year} population",
+    "3a": "national mortality estimates applied to model-based mortality-to-incidence ratios (country-specific registry data)",
+    "3b": "national mortality estimates applied to model-based mortality-to-incidence ratios (neighbouring country registry data)",
+    "3c": "national mortality estimates applied to model-based mortality-to-incidence ratios (registry survival data)",
+    "4": "national or subnational rates scaled to regional all-cancer rates",
+    "5": "rates based on incidence estimates or registry data from neighbouring countries",
+  },
+  mort: {
+    "1": "trends in national rates projected to {year}",
+    "2a": "national rates applied to the {year} population",
+    "2b": "subnational rates applied to the {year} population",
+    "3a": "national incidence estimates applied to model-based mortality-to-incidence ratios (country-specific registry data)",
+    "3b": "national incidence estimates applied to model-based mortality-to-incidence ratios (neighbouring country registry data)",
+    "3c": "national incidence estimates applied to model-based mortality-to-incidence ratios (registry survival data)",
+    "4": "national or subnational rates scaled to regional all-cancer rates",
+  },
 };
+/** The plain meaning of one method code for one measure, or null when the legend has no entry for it. */
+export function methodMeaning(metric: GeoMetric, code: string | undefined, year: number): string | null {
+  const m = code ? GLOBOCAN_METHOD[metric][code] : undefined;
+  return m ? m.replace(/\{year\}/g, String(year)) : null;
+}
 const cases = (r: GeoRow, sex: GeoSex, metric: GeoMetric) => r[sex][metric === "inc" ? 0 : 2];
 const asr = (r: GeoRow, sex: GeoSex, metric: GeoMetric) => r[sex][metric === "inc" ? 1 : 3];
 
@@ -73,6 +101,7 @@ export function CancerGeography({ cancerId, cancerName, rows, world, meta, regio
   const rank = useMemo(() => new Map(ranked.map((r, i) => [r.iso3, i + 1])), [ranked]);
   const byNum = useMemo(() => new Map(rows.map((r) => [r.isonum, r])), [rows]);
   const picked = regions.find((r) => r.id === region);
+  const hoverMethod = hover ? (metric === "inc" ? hover.methodInc : hover.methodMort) : undefined;
   const inRegion = (iso3: string) => !picked || picked.countries.includes(iso3);
 
   const values = ranked.map((r) => asr(r, sex, metric) as number);
@@ -124,7 +153,7 @@ export function CancerGeography({ cancerId, cancerName, rows, world, meta, regio
             <div className="font-medium">{hover.name} <span className="text-muted">· #{rank.get(hover.iso3) ?? "-"} of {ranked.length}</span></div>
             <div>{metricLabel}: <span className="tabular-nums font-medium">{fmt(asr(hover, sex, metric), 2)}</span> per 100,000 ({sexLabel})</div>
             <div className="text-muted">{fmt(cases(hover, sex, metric))} {metric === "inc" ? "new cases" : "deaths"} a year{hover.hdi ? ` · ${hover.hdi}` : ""}</div>
-            <div className="text-muted text-xs">Women {fmt(asr(hover, "women", metric), 2)} · men {fmt(asr(hover, "men", metric), 2)}{(metric === "inc" ? hover.methodInc : hover.methodMort) ? ` · method ${metric === "inc" ? hover.methodInc : hover.methodMort}: ${METHOD[(metric === "inc" ? hover.methodInc : hover.methodMort) ?? ""] ?? "see GLOBOCAN"}` : ""}</div>
+            <div className="text-muted text-xs">Women {fmt(asr(hover, "women", metric), 2)} · men {fmt(asr(hover, "men", metric), 2)}{hoverMethod ? ` · method ${hoverMethod}: ${methodMeaning(metric, hoverMethod, meta.year) ?? "see GLOBOCAN"}` : ""}</div>
           </div>
         )}
       </div>

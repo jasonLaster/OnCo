@@ -104,7 +104,7 @@ describe("ResultsTable users whose toolbar facet had no column", () => {
   it("CountryRanking: a Region column carries the Region facet's filter", () => {
     const row = (code: string, name: string, w: number): CountryRow => ({ code, name, works: { "2021": w / 2, "2025": w }, total: w * 3, citedHigh: w / 10, oa: w, trials: 10, institutions: 1 });
     const rows = [row("US", "United States", 5000), row("DE", "Germany", 2000), row("CN", "China", 4000)];
-    const html = render(createElement(CountryRanking, { rows, years: [2021, 2025] }));
+    const html = render(createElement(CountryRanking, { rows, years: [2021, 2025], globocanYear: 2024 }));
     const head = heads(html).find((h) => h.includes("Region")) ?? "";
     expect(head).toContain('data-column-filter="label"');
     expect(head).toContain('aria-expanded="false"');

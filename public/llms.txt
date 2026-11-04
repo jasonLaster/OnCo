@@ -18,7 +18,7 @@
 - [Search documents](https://onco.cc/api/v1/search.json): compact id, kind, name, TL;DR and route for every record; find the id, then fetch its context file
 - [Every record on one line](https://onco.cc/llms-full.txt): name, kind, TL;DR and context URL for the whole corpus
 - [OpenAPI 3.1 description](https://onco.cc/api/v1/openapi.json): every file under /api/v1/ and the feeds
-- [MCP server](https://github.com/judegomila/OnCo/tree/main/packages/onco-mcp): `npx -y onco-mcp` gives Claude, Cursor and other MCP clients search, get_entity, list_kind, ask, context and compare tools over this API; the CLI is `npx onco`
+- [MCP server](https://github.com/judegomila/OnCo/tree/main/packages/onco-mcp): `npx -y onco-mcp` gives Claude, Cursor and other MCP clients search, get_entity, list_kind, ask, context and compare tools over this API; the CLI is `npx onco-cc`
 
 ## For agents
 

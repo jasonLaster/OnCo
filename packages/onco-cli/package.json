@@ -1,5 +1,5 @@
 {
-  "name": "onco",
+  "name": "onco-cc",
   "version": "0.1.0",
   "description": "OnCo, the public cited knowledge graph of oncology, from the terminal: search, records, lists, cited answers (Ask OnCo), Markdown context and CSV/JSON exports, read from the static API at onco.cc.",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "bugs": { "url": "https://github.com/judegomila/OnCo/issues" },
   "keywords": ["oncology", "cancer", "knowledge-graph", "cli", "open-data", "clinical-trials", "onco"],
   "type": "module",
-  "bin": { "onco": "./dist/onco.mjs" },
+  "bin": { "onco-cc": "./dist/onco.mjs", "onco": "./dist/onco.mjs" },
   "files": ["dist/", "README.md"],
   "engines": { "node": ">=20" },
   "scripts": {

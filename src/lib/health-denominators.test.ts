@@ -61,7 +61,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "simple", total: 18160, label: "Records with a simple explanation" },
   { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
   { id: "provenance", total: 18160, label: "Records with git provenance" },
-  { id: "papers-snapshot", total: 3798, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
+  // 3,798 to 4,561 on 4 November 2026: the 282 pipeline products and 14 targets released with the lighter engine pages,
+  // and the drugs added by the startup monitors and the coverage lists. They are drugs and targets, which is what this
+  // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.
+  { id: "papers-snapshot", total: 4561, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
   { id: "citations", total: 2419, label: "Key papers with a citation count" },
   { id: "trials-snapshot", total: 1442, label: "Products with a ClinicalTrials.gov snapshot" },
   // 2,078 to 2,563 on 4 November 2026: the company rounds since the last recording, ending with the 83 companies the

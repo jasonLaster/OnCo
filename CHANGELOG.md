@@ -7,9 +7,12 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
+- Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 
 ### 3 November 2026
+- Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- Every figure on the country pages and the 60 most-read cancer pages read against its source: 23 per cent needed a fix, and four checks now stop the commonest faults coming back
 - Review-list judgements from labels, registries and filings: drugs link the receptor they bind, an investor and a trials group no longer pose as makers, sponsors resolve to their own centres, ten company pages corrected, and two duplicate products cross-referenced with a merge plan
 - Accuracy round one fixes wrong paper ids, trials and side-effect figures; 28 FDA companion diagnostics and 11 tumour tests, FDA, EMA and WHO coverage lists, about 270 wrong links corrected, and deals and regimens linked to their records
 - Readout pages keep tests and medicines apart: devices name their readouts, test cancer links rest on coverage, trials or papers, and three devices are credited to their FDA applicants

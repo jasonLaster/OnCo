@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { TrialSchema } from "../src/lib/schema";
-import { checkRegistryTrial, type TrialProtocol } from "./factcheck";
+import { acronymConflict, checkRegistryTrial, isTruncatedTitle, type TrialProtocol } from "./factcheck";
 
 vi.mock("../src/lib/graph", () => ({ graph: vi.fn(() => { throw new Error("unexpected graph access"); }) }));
 
@@ -29,7 +29,8 @@ describe("registry identity gates patch proposals", () => {
     const source = { ...trial, name: "KEYNOTE-522" };
     const other = { ...registry, identificationModule: { acronym: "KEYNOTE-024" } };
     const result = checkRegistryTrial(source, other, "2026-10-05");
-    expect(result.mismatches.map((m) => m.check)).toEqual(["nct-title-mismatch"]);
+    // Same family, different number: also the acronym conflict added on 3 November 2026.
+    expect(result.mismatches.map((m) => m.check)).toEqual(["nct-acronym-conflict", "nct-title-mismatch"]);
     expect(result.patches).toEqual([]);
   });
 
@@ -169,5 +170,34 @@ describe("registry identity gates patch proposals", () => {
     const result = checkRegistryTrial(horrad, response, "2026-09-28");
     expect(result.mismatches.map((m) => m.check)).toEqual(["nct-title-mismatch"]);
     expect(result.patches).toEqual([]);
+  });
+});
+
+describe("registry identity: truncated names and conflicting acronyms (3 November 2026)", () => {
+  it("accepts a registry-derived name cut mid-word from the brief title", () => {
+    const title = "IKF/AIO-QUINTIS - Evaluating Fruquintinib in Combination With Tislelizumab in Microsatellite Stable / Proficient Mismatch Repair (MSS/pMMR) Metastatic Colorectal Cancer";
+    expect(isTruncatedTitle("- IKF/AIO-QUINTIS - Evaluating Fruquintinib in Combination With Tislelizumab in Microsatellite Stable / Proficient Mismatch Repair (MSS/pMMR) Metastatic Colorec", [title])).toBe(true);
+    expect(isTruncatedTitle("A Phase II Clinical Study of Adebrelimab Combined With Chemotherapy an", ["A Phase Ⅱ Clinical Study of Adebrelimab Combined With Chemotherapy and Concurrent Radiotherapy"])).toBe(true);
+    expect(isTruncatedTitle("ALPHA-123", ["ALPHA-123 extension"]), "short names never pass on a prefix").toBe(false);
+    expect(isTruncatedTitle("A Study of BL-M07D1 in Patients With HER2-expressing Recurrent or Meta", ["A Study of BL-M07D1 in Patients With Recurrent or Metastatic Gynecologic Malignancies"])).toBe(false);
+  });
+
+  it("flags the two wrong registry ids the accuracy sample found", () => {
+    expect(acronymConflict("POP-RT", [], "PEACE2")).toBe(true);
+    expect(acronymConflict("Euro Ewing 2012", [], "EWING2008")).toBe(true);
+    const popRt = { ...trial, id: "pop-rt", name: "POP-RT", nct: "NCT01952223", status: "positive" as const };
+    const peace2 = { ...registry, identificationModule: { acronym: "PEACE2", briefTitle: "A Phase III of Cabazitaxel and Pelvic Radiotherapy in Localized Prostate Cancer and High-risk Features of Relapse" } };
+    const result = checkRegistryTrial(popRt, peace2, "2026-11-03");
+    expect(result.mismatches.find((m) => m.check === "nct-acronym-conflict")?.severity).toBe("high");
+    expect(result.patches).toEqual([]);
+  });
+
+  it("does not flag a trial whose name contains, extends or lacks the registry acronym", () => {
+    for (const [name, aka, acronym] of [
+      ["CAMBRIA-1 & CAMBRIA-2", [], "CAMBRIA-2"], ["NICHE-2", [], "NICHE"], ["RAINBO", [], "RAINBO-GREEN"], ["I-SPY 2", [], "I-SPY"],
+      ["HERA, NSABP B-31 & NCCTG N9831 (adjuvant trastuzumab)", [], "HERA"], ["Ponsegromab phase 2 in cancer cachexia", [], "PROACC-1"],
+      ["Cemiplimab for kidney transplant recipients with advanced skin squamous cell carcinoma", [], "CONTRAC"], ["AENEAS", [], ""],
+      ["ATHENA-MONO / GOG-3020", [], "ATHENA"], ["Euro Ewing 2012", ["EE2012"], "EE2012"],
+    ] as Array<[string, string[], string]>) expect(acronymConflict(name, aka, acronym), `${name} vs ${acronym}`).toBe(false);
   });
 });

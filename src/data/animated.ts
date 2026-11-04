@@ -479,7 +479,7 @@ export const MODALITY_SCHEMATICS: Array<[RegExp, string]> = [
   [/tcr-?t\b/, "tcr-t"],
   [/\btil\b|tumou?r-infiltrating/, "til-therapy"],
   [/immtac|engager|[×x]\s*cd3|tcr\s*[×x]\s*cd3/, "t-cell-engager"],
-  [/anti-pd-?1|anti-pd-l1|anti-ctla-?4|anti-lag-?3|anti-tigit|checkpoint|pd-1 antibody|pd-l1 antibody|ido1/, "checkpoint-inhibitor"],
+  [/anti-pd-?1|anti-pd-l1|anti-ctla-?4|anti-lag-?3|anti-tigit|checkpoint|pd-1 antibody|pd-l1 antibody|\bido1\b/, "checkpoint-inhibitor"],
   [/bispecific|biparatopic|bifunctional|trispecific/, "bispecific-antibody"],
   [/monoclonal antibody|\bmab\b|antibody \(anti|anti-[a-z0-9]+ (monoclonal )?antibody|fc-engineered|glycoengineered|defucosylated|ligand trap, fc fusion/, "monoclonal-antibody"],
   [/protac|degrader|molecular glue|celmod|cereblon|\bimid\b|immunomodulatory drug/, "protac-degrader"],

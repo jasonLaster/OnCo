@@ -22,6 +22,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch:universe
+      # Regulator and knowledge-base lists (added 3 November 2026): FDA oncology notifications, CDER novel approvals and
+      # companion diagnostics, EMA oncology medicines, the WHO Essential Medicines cancer section and CIViC. The second
+      # command turns new FDA notifications into dated events on the products they name (src/data/fda-oce-events.ts).
+      - run: npm run fetch:universe:regulatory
       # Startup monitors (added 3 November 2026): portfolio pages, SEC S-1/F-1 filings, HKEX 18A, FDA and EMA orphan
       # designations and NCI SBIR/STTR awards, each written to a review queue under .cache/ (ignored by git, so nothing
       # reaches the pull request below). Their "not yet in OnCo" findings join the standing issue in the next step.

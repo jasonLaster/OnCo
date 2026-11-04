@@ -34,7 +34,8 @@ export const SUPPORTIVE_DRUGS: Record<string, string> = {
   filgrastim: "growth factor", pegfilgrastim: "growth factor", lipegfilgrastim: "growth factor", "efbemalenograstim-alfa": "growth factor",
   eflapegrastim: "growth factor", mecapegfilgrastim: "growth factor", lenograstim: "growth factor", sargramostim: "growth factor", oprelvekin: "growth factor",
   // Erythropoiesis-stimulating agents: chemotherapy-induced anaemia.
-  "epoetin-alfa": "erythropoiesis-stimulating agent", "darbepoetin-alfa": "erythropoiesis-stimulating agent", "epoetin-theta": "erythropoiesis-stimulating agent",
+  "epoetin-alfa": "erythropoiesis-stimulating agent", "darbepoetin-alfa": "erythropoiesis-stimulating agent", "epoetin-theta": "erythropoiesis-stimulating agent", "epoetin-beta": "erythropoiesis-stimulating agent",
+  "allopurinol": "tumour lysis prophylaxis (xanthine oxidase inhibitor)", "elinzanetant": "vasomotor symptoms of endocrine therapy",
   // Bone-modifying agents: hypercalcaemia of malignancy and skeletal-related events.
   denosumab: "bone-modifying agent", "zoledronic-acid": "bone-modifying agent", pamidronate: "bone-modifying agent", "ibandronic-acid": "bone-modifying agent",
   // Toxicity rescue, antidotes and protectants.

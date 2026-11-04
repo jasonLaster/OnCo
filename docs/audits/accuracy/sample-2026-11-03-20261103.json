@@ -1,0 +1,3334 @@
+{
+ "drawn": "2026-11-03",
+ "seed": 20261103,
+ "corpusSize": 20224,
+ "quotas": {
+  "paper-identifiers": 15,
+  "paper-findings": 20,
+  "trial-facts": 25,
+  "drug-approvals": 20,
+  "drug-numbers": 10,
+  "cancer-numbers": 20,
+  "tests": 15,
+  "companies": 20,
+  "people": 15,
+  "precision-rows": 10,
+  "country-cards": 12
+ },
+ "verdicts": {
+  "correct": "the cited source says this",
+  "stale": "a newer primary source says otherwise",
+  "imprecise": "right direction, wrong detail (overstated, wrong cohort, altered interval)",
+  "wrong": "the source does not say this or says the opposite; an identifier for another paper",
+  "unsourced": "no source on the record bears on the claim",
+  "unreachable": "the source could not be read; not counted as an error"
+ },
+ "claims": [
+  {
+   "id": "paper-identifiers:paper-keynote-564-nejm-2021:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-keynote-564-nejm-2021",
+   "kind": "paper",
+   "route": "/key-papers/paper-keynote-564-nejm-2021/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1056/NEJMoa2106391 and PubMed none identify \"KEYNOTE-564: a year of pembrolizumab after kidney cancer surgery\" (Choueiri TK, New England Journal of Medicine 2021)",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa2106391"
+   ],
+   "weight": 3.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "DOI resolves to 'Adjuvant Pembrolizumab after Nephrectomy in Renal-Cell Carcinoma', Choueiri, NEJM 2021. The record lacked its PubMed id (34407342), now added.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1056/NEJMoa2106391%22&format=json&resultType=core",
+   "fixed": "added pmid 34407342"
+  },
+  {
+   "id": "paper-identifiers:paper-elm-2-odronextamab-follicular-ann-oncol-2024:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-elm-2-odronextamab-follicular-ann-oncol-2024",
+   "kind": "paper",
+   "route": "/key-papers/paper-elm-2-odronextamab-follicular-ann-oncol-2024/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/j.annonc.2024.08.2239 and PubMed 39147364 identify \"Safety and efficacy of odronextamab in patients with relapsed or refractory follicular lymphoma\" (Kim TM, Annals of Oncology 2024)",
+   "sources": [
+    "https://doi.org/10.1016/j.annonc.2024.08.2239",
+    "https://pubmed.ncbi.nlm.nih.gov/39147364/"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "DOI and PMID 39147364 both resolve to 'Safety and efficacy of odronextamab in patients with relapsed or refractory follicular lymphoma', Kim TM, Ann Oncol 2024.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.annonc.2024.08.2239%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-mesothelin-mesothelioma-cancer-discov-2016:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-mesothelin-mesothelioma-cancer-discov-2016",
+   "kind": "paper",
+   "route": "/key-papers/paper-mesothelin-mesothelioma-cancer-discov-2016/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1158/2159-8290.cd-15-0583 and PubMed 26503962 identify \"Mesothelin-Targeted CARs: Driving T Cells to Solid Tumors\" (Morello A, Cancer Discovery 2016)",
+   "sources": [
+    "https://doi.org/10.1158/2159-8290.cd-15-0583",
+    "https://pubmed.ncbi.nlm.nih.gov/26503962/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "'Mesothelin-Targeted CARs: Driving T Cells to Solid Tumors', Morello, Cancer Discov 2016, PMID 26503962.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1158/2159-8290.cd-15-0583%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-ahl2011-pet-adapted-treatment-advanced-hodgkin-lancet-oncol-2019:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-ahl2011-pet-adapted-treatment-advanced-hodgkin-lancet-oncol-2019",
+   "kind": "paper",
+   "route": "/key-papers/paper-ahl2011-pet-adapted-treatment-advanced-hodgkin-lancet-oncol-2019/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/S1470-2045(18)30784-8 and PubMed 30658935 identify \"PET-adapted treatment for newly diagnosed advanced Hodgkin lymphoma (AHL2011): a randomised, multicentre, non-inferiority, phase 3 study\" (Casasnovas RO, Lancet Oncology 2019)",
+   "sources": [
+    "https://doi.org/10.1016/S1470-2045(18)30784-8",
+    "https://pubmed.ncbi.nlm.nih.gov/30658935/"
+   ],
+   "weight": 9.965784284662087,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Exact title match, Casasnovas, Lancet Oncol 2019, PMID 30658935.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/S1470-2045(18)30784-8%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-radovich-ctdna-ctc-bre12-158-jama-oncol-2020:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-radovich-ctdna-ctc-bre12-158-jama-oncol-2020",
+   "kind": "paper",
+   "route": "/key-papers/paper-radovich-ctdna-ctc-bre12-158-jama-oncol-2020/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1001/jamaoncol.2020.2295 and PubMed 32644110 identify \"Association of Circulating Tumor DNA and Circulating Tumor Cells After Neoadjuvant Chemotherapy With Disease Recurrence in Patients With Triple-Negative Breast Cancer: Preplanned Secondary Analysis of the BRE12-158 Randomized Clinical Trial\" (Radovich M, JAMA Oncology 2020)",
+   "sources": [
+    "https://doi.org/10.1001/jamaoncol.2020.2295",
+    "https://pubmed.ncbi.nlm.nih.gov/32644110/"
+   ],
+   "weight": 3.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match, Radovich, JAMA Oncol 2020, PMID 32644110.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1001/jamaoncol.2020.2295%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-spearhead-1-lancet-2024:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-spearhead-1-lancet-2024",
+   "kind": "paper",
+   "route": "/key-papers/paper-spearhead-1-lancet-2024/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/S0140-6736(24)00319-2 and PubMed 38554725 identify \"SPEARHEAD-1: afamitresgene autoleucel, the first engineered T-cell receptor therapy approved for a solid tumour, in synovial sarcoma\" (D'Angelo SP, The Lancet 2024)",
+   "sources": [
+    "https://doi.org/10.1016/S0140-6736(24)00319-2",
+    "https://pubmed.ncbi.nlm.nih.gov/38554725/"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Resolves to the SPEARHEAD-1 Lancet 2024 paper, PMID 38554725. Incidental: paperType was rct for an 'open-label, non-randomised, phase 2 trial' (fixed); a supplement links lete-cel instead of afami-cel (link area, reported).",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/S0140-6736(24)00319-2%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-identifiers:paper-shankaran-nature:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-shankaran-nature",
+   "kind": "paper",
+   "route": "/key-papers/paper-shankaran-nature/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1038/35074122 and PubMed 11323675 identify \"IFNgamma and lymphocytes prevent primary tumour development and shape tumour immunogenicity\" (Shankaran V, Nature 2001)",
+   "sources": [
+    "https://doi.org/10.1038/35074122",
+    "https://pubmed.ncbi.nlm.nih.gov/11323675/"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match, Shankaran, Nature 2001, PMID 11323675.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1038/35074122%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-hulscher-ivermectin-mebendazole-cohort-anticancer-res-2026:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-hulscher-ivermectin-mebendazole-cohort-anticancer-res-2026",
+   "kind": "paper",
+   "route": "/key-papers/paper-hulscher-ivermectin-mebendazole-cohort-anticancer-res-2026/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.21873/anticanres.18194 and PubMed 42203321 identify \"Real-world clinical outcomes of ivermectin and mebendazole in cancer patients: results from a prospective observational cohort (with 2026 expression of concern)\" (Hulscher N, Anticancer Research 2026)",
+   "sources": [
+    "https://doi.org/10.21873/anticanres.18194",
+    "https://pubmed.ncbi.nlm.nih.gov/42203321/"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "stale",
+   "note": "Identifiers are right, but PubMed now titles the paper 'RETRACTED: ...' and the retraction notice (PMID 42823188, Anticancer Res 2026;46(10):5877) says the editor 'retracts the above article because methodological and analytical problems'. The record still described only the expression of concern.",
+   "checkedSource": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42203321&retmode=xml",
+   "fixed": "record renamed RETRACTED:, retraction added to tldr, summary, findings, caveats, links and the two drug summaries"
+  },
+  {
+   "id": "paper-identifiers:paper-pao-egfr-t790m-acquired-resistance-plos-med-2005:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-pao-egfr-t790m-acquired-resistance-plos-med-2005",
+   "kind": "paper",
+   "route": "/key-papers/paper-pao-egfr-t790m-acquired-resistance-plos-med-2005/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1371/journal.pmed.0020073 and PubMed 15737014 identify \"Acquired resistance of lung adenocarcinomas to gefitinib or erlotinib is associated with a second mutation in the EGFR kinase domain\" (Pao W, PLOS Medicine 2005)",
+   "sources": [
+    "https://doi.org/10.1371/journal.pmed.0020073",
+    "https://pubmed.ncbi.nlm.nih.gov/15737014/"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match, Pao, PLoS Med 2005, PMID 15737014.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1371/journal.pmed.0020073%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-quail-joyce-microenvironment-metastasis-natmed-2013:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-quail-joyce-microenvironment-metastasis-natmed-2013",
+   "kind": "paper",
+   "route": "/key-papers/paper-quail-joyce-microenvironment-metastasis-natmed-2013/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1038/nm.3394 and PubMed none identify \"Quail and Joyce 2013: microenvironmental regulation of tumour progression and metastasis\" (Quail DF, Nature Medicine 2013)",
+   "sources": [
+    "https://doi.org/10.1038/nm.3394"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "DOI resolves to 'Microenvironmental regulation of tumor progression and metastasis', Quail and Joyce, Nat Med 2013. The record lacked its PubMed id (24202395), now added.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1038/nm.3394%22&format=json",
+   "fixed": "added pmid 24202395"
+  },
+  {
+   "id": "paper-identifiers:paper-nct04143607-lancet-respir-med-2025:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-nct04143607-lancet-respir-med-2025",
+   "kind": "paper",
+   "route": "/key-papers/paper-nct04143607-lancet-respir-med-2025/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/s2213-2600(25)00121-3 and PubMed 40550238 identify \"Efficacy and safety of limertinib versus gefitinib as first-line treatment for locally advanced or metastatic non-small-cell lung cancer with EGFR-sensitising mutation: a randomised, double-blind, double-dummy, phase 3 trial\" (Shi Y, The Lancet. Respiratory medicine 2025)",
+   "sources": [
+    "https://doi.org/10.1016/s2213-2600(25)00121-3",
+    "https://pubmed.ncbi.nlm.nih.gov/40550238/"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match (limertinib vs gefitinib), Shi, Lancet Respir Med 2025, PMID 40550238.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/s2213-2600(25)00121-3%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-weinberg-biliary-profiling-jgo-2019:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-weinberg-biliary-profiling-jgo-2019",
+   "kind": "paper",
+   "route": "/key-papers/paper-weinberg-biliary-profiling-jgo-2019/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.21037/jgo.2018.08.18 and PubMed 31392046 identify \"Molecular profiling of biliary cancers reveals distinct molecular alterations and potential therapeutic targets\" (Weinberg BA, Journal of Gastrointestinal Oncology 2019)",
+   "sources": [
+    "https://doi.org/10.21037/jgo.2018.08.18",
+    "https://pubmed.ncbi.nlm.nih.gov/31392046/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match, Weinberg, J Gastrointest Oncol 2019, PMID 31392046.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.21037/jgo.2018.08.18%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-esmo-ctdna-assay-recommendations-ann-oncol-2022:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-esmo-ctdna-assay-recommendations-ann-oncol-2022",
+   "kind": "paper",
+   "route": "/key-papers/paper-esmo-ctdna-assay-recommendations-ann-oncol-2022/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/j.annonc.2022.05.520 and PubMed 35809752 identify \"ESMO recommendations on the use of circulating tumour DNA assays for patients with cancer: a report from the ESMO Precision Medicine Working Group\" (Pascual J, Annals of Oncology 2022)",
+   "sources": [
+    "https://doi.org/10.1016/j.annonc.2022.05.520",
+    "https://pubmed.ncbi.nlm.nih.gov/35809752/"
+   ],
+   "weight": 7.754887502163468,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Exact title match, Pascual, Ann Oncol 2022, PMID 35809752.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.annonc.2022.05.520%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-propsma-hofman-lancet-2020:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-propsma-hofman-lancet-2020",
+   "kind": "paper",
+   "route": "/key-papers/paper-propsma-hofman-lancet-2020/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1016/S0140-6736(20)30314-7 and PubMed 32209449 identify \"proPSMA: PSMA PET-CT versus conventional imaging for staging high-risk prostate cancer\" (Hofman MS, The Lancet 2020)",
+   "sources": [
+    "https://doi.org/10.1016/S0140-6736(20)30314-7",
+    "https://pubmed.ncbi.nlm.nih.gov/32209449/"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Resolves to the proPSMA Lancet 2020 paper, Hofman, PMID 32209449.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/S0140-6736(20)30314-7%22&format=json"
+  },
+  {
+   "id": "paper-identifiers:paper-weiss-fgfr1-amplification-squamous-lung-sci-transl-med-2010:doi+pmid",
+   "stratum": "paper-identifiers",
+   "recordId": "paper-weiss-fgfr1-amplification-squamous-lung-sci-transl-med-2010",
+   "kind": "paper",
+   "route": "/key-papers/paper-weiss-fgfr1-amplification-squamous-lung-sci-transl-med-2010/",
+   "field": "doi+pmid",
+   "claim": "DOI 10.1126/scitranslmed.3001451 and PubMed 21160078 identify \"Frequent and focal FGFR1 amplification associates with therapeutically tractable FGFR1 dependency in squamous cell lung cancer\" (Weiss J, Science Translational Medicine 2010)",
+   "sources": [
+    "https://doi.org/10.1126/scitranslmed.3001451",
+    "https://pubmed.ncbi.nlm.nih.gov/21160078/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Exact title match, Weiss, Sci Transl Med 2010, PMID 21160078.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1126/scitranslmed.3001451%22&format=json"
+  },
+  {
+   "id": "paper-findings:paper-ren-chinese-prostate-whole-genome-eur-urol-2018:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-ren-chinese-prostate-whole-genome-eur-urol-2018",
+   "kind": "paper",
+   "route": "/key-papers/paper-ren-chinese-prostate-whole-genome-eur-urol-2018/",
+   "field": "findings[0]",
+   "claim": "High CHD1 deletion frequency with a low TMPRSS2-ERG fusion rate in Chinese patients.",
+   "sources": [
+    "https://doi.org/10.1016/j.eururo.2017.08.027",
+    "https://pubmed.ncbi.nlm.nih.gov/28927585/",
+    "https://www.cbioportal.org/study/summary?id=prad_eururol_2017"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 'We demonstrated an association of high frequency of CHD1 deletion with a low rate of TMPRSS2-ERG fusion ... in Chinese patients.'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.eururo.2017.08.027%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-findings:paper-lehmann-tnbc-subtype-multiomics-nat-commun-2021:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-lehmann-tnbc-subtype-multiomics-nat-commun-2021",
+   "kind": "paper",
+   "route": "/key-papers/paper-lehmann-tnbc-subtype-multiomics-nat-commun-2021/",
+   "field": "findings[0]",
+   "claim": "Mesenchymal subtype: high mutation load, no immune cells, low PD-L1, repressed antigen presentation.",
+   "sources": [
+    "https://doi.org/10.1038/s41467-021-26502-6",
+    "https://pubmed.ncbi.nlm.nih.gov/34725325/"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 'Mesenchymal subtype tumors display high mutation loads, genomic instability, absence of immune cells, low PD-L1 expression...'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1038/s41467-021-26502-6%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-findings:paper-vale-stopcap-docetaxel-bisphosphonates-lancet-oncol-2016:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-vale-stopcap-docetaxel-bisphosphonates-lancet-oncol-2016",
+   "kind": "paper",
+   "route": "/key-papers/paper-vale-stopcap-docetaxel-bisphosphonates-lancet-oncol-2016/",
+   "field": "findings[0]",
+   "claim": "In metastatic disease, docetaxel added to standard of care improved survival: hazard ratio 0.77 (95 percent confidence interval 0.68 to 0.87; p less than 0.0001), an absolute improvement in four-year survival of 9 percent (5 to 14), from three trials covering 2,992 of 3,206 randomised men.",
+   "sources": [
+    "https://doi.org/10.1016/s1470-2045(15)00489-1",
+    "https://pubmed.ncbi.nlm.nih.gov/26718929/"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 'The HR of 0·77 (95% CI 0·68-0·87; p<0·0001) translates to an absolute improvement in 4-year survival of 9% (95% CI 5-14).'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/s1470-2045(15)00489-1%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-findings:paper-msb-gvhd001-bbmt-2020:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-msb-gvhd001-bbmt-2020",
+   "kind": "paper",
+   "route": "/key-papers/paper-msb-gvhd001-bbmt-2020/",
+   "field": "findings[0]",
+   "claim": "Day 28 overall response 70.4% against a prespecified control of 45% (P = .0003); complete response 29.6% at day 28 and 44.4% at day 100.",
+   "sources": [
+    "https://doi.org/10.1016/j.bbmt.2020.01.018",
+    "https://pubmed.ncbi.nlm.nih.gov/32018062/",
+    "https://clinicaltrials.gov/study/NCT02336230"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: '(70.4% versus 45%, P = .0003) ... complete response from 29.6% at day 28 to 44.4% at day 100.'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.bbmt.2020.01.018%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-findings:paper-schaapveld-second-cancer-risk-40-years-hodgkin-nejm-2015:findings[4]",
+   "stratum": "paper-findings",
+   "recordId": "paper-schaapveld-second-cancer-risk-40-years-hodgkin-nejm-2015",
+   "kind": "paper",
+   "route": "/key-papers/paper-schaapveld-second-cancer-risk-40-years-hodgkin-nejm-2015/",
+   "field": "findings[4]",
+   "claim": "A cumulative procarbazine dose of 4.3 grams per square metre or more was associated with lower breast cancer risk (hazard ratio 0.57, 0.39 to 0.84) and higher gastrointestinal cancer risk (2.70, 1.69 to 4.30).",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa1505949",
+    "https://pubmed.ncbi.nlm.nih.gov/26699166/",
+    "https://europepmc.org/article/MED/26699166"
+   ],
+   "weight": 13.378294855911893,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Abstract: procarbazine >=4.3 g/m2 'lower risk of breast cancer (hazard ratio ... 0.57; 95% CI, 0.39 to 0.84) but a higher risk of gastrointestinal cancer (hazard ratio, 2.70; 95% CI, 1.69 to 4.30)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1056/NEJMoa1505949%22&format=json&resultType=core"
+  },
+  {
+   "id": "paper-findings:paper-mogamulizumab-vs-investigator-choice-atll-haematologica-2019:findings[1]",
+   "stratum": "paper-findings",
+   "recordId": "paper-mogamulizumab-vs-investigator-choice-atll-haematologica-2019",
+   "kind": "paper",
+   "route": "/key-papers/paper-mogamulizumab-vs-investigator-choice-atll-haematologica-2019/",
+   "field": "findings[1]",
+   "claim": "Best response was 28 and 8 per cent respectively.",
+   "sources": [
+    "https://doi.org/10.3324/haematol.2018.205096",
+    "https://pubmed.ncbi.nlm.nih.gov/30573506/",
+    "https://europepmc.org/article/MED/30573506"
+   ],
+   "weight": 7.754887502163468,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Abstract: 'Best response was 28% and 8% in the respective arms.'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30573506%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-herbst-diethylstilbestrol-vaginal-adenocarcinoma-nejm-1971:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-herbst-diethylstilbestrol-vaginal-adenocarcinoma-nejm-1971",
+   "kind": "paper",
+   "route": "/key-papers/paper-herbst-diethylstilbestrol-vaginal-adenocarcinoma-nejm-1971/",
+   "field": "findings[0]",
+   "claim": "Maternal DES exposure in the first trimester in 7 of 8 cases versus 0 of 32 matched controls.",
+   "sources": [
+    "https://doi.org/10.1056/NEJM197104222841604",
+    "https://pubmed.ncbi.nlm.nih.gov/5549830/"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "unreachable",
+   "note": "No abstract in PubMed or Europe PMC for PMID 5549830; NEJM full text answers HTTP 403.",
+   "checkedSource": "https://www.nejm.org/doi/full/10.1056/NEJM197104222841604"
+  },
+  {
+   "id": "paper-findings:paper-breakwater-nejm-2025:findings[3]",
+   "stratum": "paper-findings",
+   "recordId": "paper-breakwater-nejm-2025",
+   "kind": "paper",
+   "route": "/key-papers/paper-breakwater-nejm-2025/",
+   "field": "findings[3]",
+   "claim": "Grade 3 or higher adverse events were more frequent with the triplet plus chemotherapy, driven by skin toxicity, gastrointestinal events and neutropenia.",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa2501912",
+    "https://pubmed.ncbi.nlm.nih.gov/40444708/",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=BREAKWATER+encorafenib+cetuximab+mFOLFOX6+colorectal",
+    "https://clinicaltrials.gov/study/NCT04607421"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Grade 3/4 events 81.5% vs 66.8% are right, but Table 2 does not support 'driven by skin toxicity, gastrointestinal events and neutropenia': grade 3-4 rash 1.3% vs 0, diarrhoea 1.3% vs 4.8%; largest excesses anaemia 15.1% vs 3.9% and lipase increased 17.2% vs 6.1%.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12197837/fullTextXML",
+   "fixed": "finding rewritten from Table 2"
+  },
+  {
+   "id": "paper-findings:paper-bullock-botensilimab-balstilimab-mss-colorectal-nat-med-2024:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-bullock-botensilimab-balstilimab-mss-colorectal-nat-med-2024",
+   "kind": "paper",
+   "route": "/key-papers/paper-bullock-botensilimab-balstilimab-mss-colorectal-nat-med-2024/",
+   "field": "findings[0]",
+   "claim": "Objective response 17 percent (17 of 101; 95 percent CI 10 to 26) and disease control 61 percent (62 of 101; 51 to 71) in the response-evaluable population.",
+   "sources": [
+    "https://doi.org/10.1038/s41591-024-03083-7",
+    "https://pubmed.ncbi.nlm.nih.gov/38871975/",
+    "https://europepmc.org/article/MED/38871975"
+   ],
+   "weight": 4.169925001442312,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 'ORR was 17% (17/101; 95% confidence interval (CI), 10-26%), and DCR was 61% (62/101...)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38871975%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-hinuma-adult-t-cell-leukaemia-antigen-pnas-1981:findings[2]",
+   "stratum": "paper-findings",
+   "recordId": "paper-hinuma-adult-t-cell-leukaemia-antigen-pnas-1981",
+   "kind": "paper",
+   "route": "/key-papers/paper-hinuma-adult-t-cell-leukaemia-antigen-pnas-1981/",
+   "field": "findings[2]",
+   "claim": "Antibodies to the antigen were found in all 44 patients with adult T-cell leukaemia examined and in 32 of 40 patients with similar malignant T-cell lymphomas.",
+   "sources": [
+    "https://doi.org/10.1073/pnas.78.10.6476",
+    "https://pubmed.ncbi.nlm.nih.gov/7031654/",
+    "https://europepmc.org/article/MED/7031654"
+   ],
+   "weight": 10.754887502163468,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Abstract: antibodies 'found in all 44 patients with ATL examined and in 32 of 40 patients with malignant T-cell lymphomas'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:7031654%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-dynamic-nejm-2022:findings[3]",
+   "stratum": "paper-findings",
+   "recordId": "paper-dynamic-nejm-2022",
+   "kind": "paper",
+   "route": "/key-papers/paper-dynamic-nejm-2022/",
+   "field": "findings[3]",
+   "claim": "About 15% of patients were ctDNA-positive after surgery",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa2200075",
+    "https://pubmed.ncbi.nlm.nih.gov/35657320/",
+    "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=368271",
+    "https://europepmc.org/article/MED/35657320"
+   ],
+   "weight": 4.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Full text: 45 ctDNA-positive of 291 analysed in the ctDNA-guided group (15.5%).",
+   "checkedSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9701133/"
+  },
+  {
+   "id": "paper-findings:paper-uspstf-prostate-screening-jama-2018:findings[3]",
+   "stratum": "paper-findings",
+   "recordId": "paper-uspstf-prostate-screening-jama-2018",
+   "kind": "paper",
+   "route": "/key-papers/paper-uspstf-prostate-screening-jama-2018/",
+   "field": "findings[3]",
+   "claim": "Grade C for men aged 55 to 69: the decision should be an individual one after discussion of benefits and harms, and clinicians should not screen men who do not express a preference for screening.",
+   "sources": [
+    "https://doi.org/10.1001/jama.2018.3710",
+    "https://pubmed.ncbi.nlm.nih.gov/29801017/",
+    "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening"
+   ],
+   "weight": 4.459431618637297,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: men 55-69 'decision ... should be an individual one ... (C recommendation)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29801017%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-goya-obinutuzumab-vs-rituximab-chop-dlbcl-jco-2017:findings[3]",
+   "stratum": "paper-findings",
+   "recordId": "paper-goya-obinutuzumab-vs-rituximab-chop-dlbcl-jco-2017",
+   "kind": "paper",
+   "route": "/key-papers/paper-goya-obinutuzumab-vs-rituximab-chop-dlbcl-jco-2017/",
+   "field": "findings[3]",
+   "claim": "Infusion-related reactions occurred in 36.1 per cent with obinutuzumab against 23.5 per cent with rituximab.",
+   "sources": [
+    "https://doi.org/10.1200/JCO.2017.73.3402",
+    "https://pubmed.ncbi.nlm.nih.gov/28796588/",
+    "https://europepmc.org/article/MED/28796588"
+   ],
+   "weight": 7.754887502163468,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Abstract: 'infusion-related reactions (G-CHOP, 36.1%; R-CHOP, 23.5%)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:28796588%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-cemiplimab-bcc-stratigos-lancet-oncol-2021:findings[1]",
+   "stratum": "paper-findings",
+   "recordId": "paper-cemiplimab-bcc-stratigos-lancet-oncol-2021",
+   "kind": "paper",
+   "route": "/key-papers/paper-cemiplimab-bcc-stratigos-lancet-oncol-2021/",
+   "field": "findings[1]",
+   "claim": "Estimated duration of response of at least 12 months in 85 percent of responders.",
+   "sources": [
+    "https://doi.org/10.1016/S1470-2045(21)00126-1",
+    "https://pubmed.ncbi.nlm.nih.gov/34000246/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "unreachable",
+   "note": "Duration of response is not in the abstract; Lancet full text answers 403. Labels give DOR >=6 months only. Incidental: the summary's metastatic 'about a fifth' is not from this paper, whose abstract says group 1 data 'have not reached maturity' (fixed).",
+   "checkedSource": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(21)00126-1/fulltext"
+  },
+  {
+   "id": "paper-findings:paper-siegel-colorectal-incidence-birth-cohort-jnci-2017:findings[3]",
+   "stratum": "paper-findings",
+   "recordId": "paper-siegel-colorectal-incidence-birth-cohort-jnci-2017",
+   "kind": "paper",
+   "route": "/key-papers/paper-siegel-colorectal-incidence-birth-cohort-jnci-2017/",
+   "field": "findings[3]",
+   "claim": "Compared with those born around 1950, people born around 1990 have double the colon cancer risk (incidence rate ratio 2.40, 95 percent CI 1.11 to 5.19) and quadruple the rectal cancer risk (4.32, 2.19 to 8.51).",
+   "sources": [
+    "https://doi.org/10.1093/jnci/djw322",
+    "https://pubmed.ncbi.nlm.nih.gov/28376186/",
+    "https://europepmc.org/article/MED/28376186"
+   ],
+   "weight": 4.169925001442312,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: colon IRR 2.40 (1.11-5.19), rectal IRR 4.32 (2.19-8.51).",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:28376186%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-galaxy-signatera-nat-med-2023:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-galaxy-signatera-nat-med-2023",
+   "kind": "paper",
+   "route": "/key-papers/paper-galaxy-signatera-nat-med-2023/",
+   "field": "findings[0]",
+   "claim": "ctDNA positivity at week 4 associated with recurrence: HR 10.0 (95% CI 7.7-14.0)",
+   "sources": [
+    "https://doi.org/10.1038/s41591-022-02115-4",
+    "https://pubmed.ncbi.nlm.nih.gov/36646802/",
+    "https://europepmc.org/article/MED/36646802"
+   ],
+   "weight": 4.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Full text: '(hazard ratio (HR) 10.0, 95% confidence interval (CI) 7.7-14.0, P < 0.0001)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9873552/fullTextXML"
+  },
+  {
+   "id": "paper-findings:paper-teply-restore-bipolar-androgen-therapy-lancet-oncol-2018:findings[1]",
+   "stratum": "paper-findings",
+   "recordId": "paper-teply-restore-bipolar-androgen-therapy-lancet-oncol-2018",
+   "kind": "paper",
+   "route": "/key-papers/paper-teply-restore-bipolar-androgen-therapy-lancet-oncol-2018/",
+   "field": "findings[1]",
+   "claim": "Of 21 men who proceeded to enzalutamide rechallenge after bipolar androgen therapy, 15 (52 percent; 33 to 71; p less than 0.0001) had a 50 percent decline in prostate-specific antigen.",
+   "sources": [
+    "https://doi.org/10.1016/s1470-2045(17)30906-3",
+    "https://pubmed.ncbi.nlm.nih.gov/29248236/",
+    "https://clinicaltrials.gov/study/NCT02090114"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Abstract: '29 patients completed BAT and 21 proceeded to enzalutamide rechallenge, of whom 15 (52%; 95% CI 33-71...)'; Methods: the evaluable population was the 29. '15 of 21 (52 percent)' does not add up.",
+   "checkedSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5875180/",
+   "fixed": "finding states the 29 denominator"
+  },
+  {
+   "id": "paper-findings:paper-ferraldeschi-pten-protein-loss-abiraterone-eur-urol-2015:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-ferraldeschi-pten-protein-loss-abiraterone-eur-urol-2015",
+   "kind": "paper",
+   "route": "/key-papers/paper-ferraldeschi-pten-protein-loss-abiraterone-eur-urol-2015/",
+   "field": "findings[0]",
+   "claim": "PTEN protein loss in 40% of 144 men treated with abiraterone after docetaxel.",
+   "sources": [
+    "https://doi.org/10.1016/j.eururo.2014.10.027",
+    "https://pubmed.ncbi.nlm.nih.gov/25454616/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: '144 patients ... loss of PTEN expression was observed in 40% of patients.'",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:25454616%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "paper-findings:paper-antonarakis-keynote-199-pembrolizumab-jco-2020:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-antonarakis-keynote-199-pembrolizumab-jco-2020",
+   "kind": "paper",
+   "route": "/key-papers/paper-antonarakis-keynote-199-pembrolizumab-jco-2020/",
+   "field": "findings[0]",
+   "claim": "Objective response rate 5 percent (95 percent confidence interval 2 to 11) in cohort 1 (measurable, PD-L1-positive, 133 patients) and 3 percent (less than 1 to 11) in cohort 2 (measurable, PD-L1-negative, 66 patients).",
+   "sources": [
+    "https://doi.org/10.1200/jco.19.01638",
+    "https://pubmed.ncbi.nlm.nih.gov/31774688/",
+    "https://clinicaltrials.gov/study/NCT02787005"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Full text: 'Objective response rate was 5% (95% CI, 2% to 11%) in cohort 1 and 3% ... in cohort 2'.",
+   "checkedSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7186583/"
+  },
+  {
+   "id": "paper-findings:paper-strickler-mountaineer-tucatinib-trastuzumab-lancet-oncol-2023:findings[0]",
+   "stratum": "paper-findings",
+   "recordId": "paper-strickler-mountaineer-tucatinib-trastuzumab-lancet-oncol-2023",
+   "kind": "paper",
+   "route": "/key-papers/paper-strickler-mountaineer-tucatinib-trastuzumab-lancet-oncol-2023/",
+   "field": "findings[0]",
+   "claim": "Confirmed objective response by central review in the combination cohorts 38.1 percent (95 percent CI 27.7 to 49.3) of 84 patients: three complete and 29 partial responses.",
+   "sources": [
+    "https://doi.org/10.1016/S1470-2045(23)00150-X",
+    "https://pubmed.ncbi.nlm.nih.gov/37142372/"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 'confirmed objective response rate per BICR was 38·1% (95% CI 27·7-49·3...)'.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:37142372%20AND%20SRC:MED&resultType=core&format=json"
+  },
+  {
+   "id": "trial-facts:shine:outcomes[0]",
+   "stratum": "trial-facts",
+   "recordId": "shine",
+   "kind": "trial",
+   "route": "/trials/shine/",
+   "field": "outcomes[0]",
+   "claim": "SHINE Progression-free survival (median): Ibrutinib with bendamustine and rituximab 80.6 months vs Placebo with bendamustine and rituximab 52.9 months; HR 0.75 (0.59-0.96)",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa2201817",
+    "https://clinicaltrials.gov/study/NCT01776840"
+   ],
+   "weight": 12.965784284662085,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Abstract: PFS 80.6 vs 52.9 months, HR 0.75 (0.59-0.96).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:cross:result",
+   "stratum": "trial-facts",
+   "recordId": "cross",
+   "kind": "trial",
+   "route": "/trials/cross/",
+   "field": "result",
+   "claim": "CROSS: 10-year OS 38% vs 25%; median OS 49.4 vs 24.0 months.",
+   "sources": [
+    "https://www.nejm.org/doi/full/10.1056/NEJMoa1112088",
+    "https://ascopubs.org/doi/10.1200/JCO.20.03614",
+    "https://clinicaltrials.gov/study/NTR487"
+   ],
+   "weight": 5.087462841250339,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "JCO 2021: 10-year OS 38% v 25%; NEJM 2012: median OS 49.4 vs 24.0 months. Incidental: outcomes hr 0.68 vs the paper's 0.657 (fixed).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct04068610:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct04068610",
+   "kind": "trial",
+   "route": "/trials/nct04068610/",
+   "field": "enrolled",
+   "claim": "COLUMBIA-1: Novel Oncology Therapies in Combination With Chemotherapy and Bevacizumab as First- Line Therapy in MSS-CRC (NCT04068610) enrolled 61 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT04068610"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT04068610"
+  },
+  {
+   "id": "trial-facts:nct06378177:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct06378177",
+   "kind": "trial",
+   "route": "/trials/nct06378177/",
+   "field": "phase+nct",
+   "claim": "A Study of LVGN6051 Combination Therapy in Patient With Head and Neck Squamous Cell Carcinoma (HNSCC) (NCT06378177) is a phase 2 trial: A Phase 2 Study of LVGN6051 Combined With Toripalimab and Paclitaxel for Recurrent/Metastatic HNSCC Rapidly Progressed From Previous Platinum-containing Curative Treatment or Contraindicated for Platinum-containing Treatment",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06378177"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06378177"
+  },
+  {
+   "id": "trial-facts:nct06875310:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct06875310",
+   "kind": "trial",
+   "route": "/trials/nct06875310/",
+   "field": "phase+nct",
+   "claim": "A Study of Adagrasib Plus Pembrolizumab Plus Chemotherapy vs. Placebo Plus Pembrolizumab Plus Chemotherapy in Participants With Previously Untreated Non-squamous Non-small Cell Lung Cancer With KRAS G12C Mutation (KRYSTAL-4) (NCT06875310) is a phase 3 trial: A Randomized, Double-Blind, Phase 3 Trial of Adagrasib Plus Pembrolizumab Plus Chemotherapy vs. Placebo Plus Pembrolizumab Plus Chemotherapy in Participants With Previously Untreated, Locally Advanced or Metastatic Non-squamous Non-small Cell Lung Cancer With KRAS G12C Mutation (KRYSTAL-4)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06875310"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06875310"
+  },
+  {
+   "id": "trial-facts:nifty:result",
+   "stratum": "trial-facts",
+   "recordId": "nifty",
+   "kind": "trial",
+   "route": "/trials/nifty/",
+   "field": "result",
+   "claim": "NIFTY: BICR PFS 7.1 vs 1.4 months, HR 0.56 (0.39 to 0.81), p=0.0019; re-read PFS 4.2 vs 1.7 months, HR 0.61 (0.44 to 0.86).",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT03524508",
+    "https://doi.org/10.1016/S1470-2045(21)00486-1",
+    "https://doi.org/10.1001/jamaoncol.2023.0016"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct07405801:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct07405801",
+   "kind": "trial",
+   "route": "/trials/nct07405801/",
+   "field": "phase+nct",
+   "claim": "A Phase II Study Evaluating the Efficacy and Safety of Inavolisib Plus Ribociclib Plus Fulvestrant Versus Placebo Plus Ribociclib Plus Fulvestrant in Participants With Advanced Breast Cancer (NCT07405801) is a phase 2 trial: A Phase II, Multicenter, Randomized, Double-Blind, Placebo-Controlled Study Evaluating the Efficacy and Safety of Inavolisib Plus Ribociclib Plus Fulvestrant Versus Placebo Plus Ribociclib Plus Fulvestrant in Patients With Endocrine- Resistant Hormone-Receptor-Positive, HER2-Negative Advanced Breast Cancer With Chromosome 8P Loss and Without a PIK3CA Mutation",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT07405801"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT07405801"
+  },
+  {
+   "id": "trial-facts:inter-b-nhl-ritux-2010:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "inter-b-nhl-ritux-2010",
+   "kind": "trial",
+   "route": "/trials/inter-b-nhl-ritux-2010/",
+   "field": "enrolled",
+   "claim": "Inter-B-NHL Ritux 2010 (NCT01516580) enrolled 482 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT01516580",
+    "https://doi.org/10.1056/NEJMoa1915315"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct04365374:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct04365374",
+   "kind": "trial",
+   "route": "/trials/nct04365374/",
+   "field": "phase+nct",
+   "claim": "Post-Surgical Stereotactic Radiotherapy (SRT) Versus GammaTile-ROADS (Radiation One and Done Study) (NCT04365374) is a phase 3 trial: A Phase 3 Randomized Controlled Trial of Post-Surgical Stereotactic Radiotherapy (SRT) Versus Surgically Targeted Radiation Therapy (STaRT) With Gamma Tile for Treatment of Newly Diagnosed Metastatic Brain Tumors.",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT04365374"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT04365374"
+  },
+  {
+   "id": "trial-facts:nct07128199:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct07128199",
+   "kind": "trial",
+   "route": "/trials/nct07128199/",
+   "field": "enrolled",
+   "claim": "A Study to Assess Zipalertinib Versus Placebo in Participants With Early Stage NSCLC With Uncommon EGFR Mutations, Following Complete Tumor Resection (NCT07128199) enrolled 360 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT07128199"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT07128199"
+  },
+  {
+   "id": "trial-facts:ev-304:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "ev-304",
+   "kind": "trial",
+   "route": "/trials/ev-304/",
+   "field": "enrolled",
+   "claim": "EV-304 / KEYNOTE-B15 (NCT04700124) enrolled 808 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT04700124",
+    "https://www.onclive.com/view/perioperative-enfortumab-vedotin-pembrolizumab-meets-efs-os-pcr-end-points-in-cisplatin-eligible-mibc"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Registry 808 ACTUAL; NEJM 2026: 405 and 403 assigned. Incidental: result still read 'topline; details pending' (fixed from the NEJM abstract).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:vital:outcomes[0]",
+   "stratum": "trial-facts",
+   "recordId": "vital",
+   "kind": "trial",
+   "route": "/trials/vital/",
+   "field": "outcomes[0]",
+   "claim": "VITAL (VITamin D and OmegA-3 TriaL) Invasive cancer of any type: Vitamin D3 793 events vs Placebo 824 events; HR 0.96 (0.88-1.06)",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa1809944",
+    "https://clinicaltrials.gov/study/NCT01169259",
+    "https://doi.org/10.1056/NEJMoa1809946"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Abstract: 793 vs 824 cancers, HR 0.96 (0.88-1.06). Incidental: the omega-3 DOI 10.1056/NEJMoa1809946 does not resolve (fixed to 10.1056/NEJMoa1811403).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct04094610:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct04094610",
+   "kind": "trial",
+   "route": "/trials/nct04094610/",
+   "field": "enrolled",
+   "claim": "A Study of Repotrectinib in Pediatric and Young Adult Subjects Harboring ALK, ROS1, OR NTRK1-3 Alterations (NCT04094610) enrolled 75 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT04094610"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT04094610"
+  },
+  {
+   "id": "trial-facts:nct06093841:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct06093841",
+   "kind": "trial",
+   "route": "/trials/nct06093841/",
+   "field": "phase+nct",
+   "claim": "Relmacabtagene Autoleucel As Second-Line Therapy in Adult Patients with Aggressive B-cell NHL (NCT06093841) is a phase 2 trial: Relmacabtagene Autoleucel As Second-Line Therapy in Adult Patients with Aggressive B-cell NHL: a Single-arm, Multicenter, Open, Phase II Study",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06093841"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06093841"
+  },
+  {
+   "id": "trial-facts:nct07627698:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct07627698",
+   "kind": "trial",
+   "route": "/trials/nct07627698/",
+   "field": "enrolled",
+   "claim": "Dual-Target CSPG4/GD2 CAR-NK Cells for Advanced Melanoma (NCT07627698) enrolled 36 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT07627698"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT07627698"
+  },
+  {
+   "id": "trial-facts:nct06365840:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct06365840",
+   "kind": "trial",
+   "route": "/trials/nct06365840/",
+   "field": "phase+nct",
+   "claim": "A Study of IMC-001 In Patients With Metastatic Or Locally Advanced TMB-H Solid Tumor (NCT06365840) is a phase 2 trial: PHASE 2 STUDY OF IMC-001 IN PATIENTS WITH METASTATIC OR LOCALLY ADVANCED TMB-H SOLID TUMOR",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06365840"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06365840"
+  },
+  {
+   "id": "trial-facts:esphall:outcomes[1]",
+   "stratum": "trial-facts",
+   "recordId": "esphall",
+   "kind": "trial",
+   "route": "/trials/esphall/",
+   "field": "outcomes[1]",
+   "claim": "EsPhALL (EsPhALL2004 and EsPhALL2010) Event-free survival at 4 years, poor-risk patients (EsPhALL2004, all given imatinib): Post-induction imatinib + chemotherapy 53.5 %",
+   "sources": [
+    "https://doi.org/10.1016/S1470-2045(12)70377-7",
+    "https://clinicaltrials.gov/study/NCT00287105"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Lancet Oncol 2012: 4-year EFS for poor-risk patients 53.5%. Incidental: the HR's p-value is 0.26, not 0.24 (fixed).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:neoadjuvant-cemiplimab-cscc:outcomes[1]",
+   "stratum": "trial-facts",
+   "recordId": "neoadjuvant-cemiplimab-cscc",
+   "kind": "trial",
+   "route": "/trials/neoadjuvant-cemiplimab-cscc/",
+   "field": "outcomes[1]",
+   "claim": "Neoadjuvant cemiplimab for resectable stage II to IV skin squamous cell carcinoma Pathological major response on independent review: Neoadjuvant cemiplimab, up to 4 doses 13 %",
+   "sources": [
+    "https://doi.org/10.1056/nejmoa2209813",
+    "https://clinicaltrials.gov/study/NCT04154943",
+    "https://doi.org/10.1056/NEJMoa2209813",
+    "https://pubmed.ncbi.nlm.nih.gov/36094839/"
+   ],
+   "weight": 3.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:response-2:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "response-2",
+   "kind": "trial",
+   "route": "/trials/response-2/",
+   "field": "phase+nct",
+   "claim": "RESPONSE-2 (NCT02038036) is a phase 3 trial: Hydroxyurea-resistant or intolerant polycythaemia vera without splenomegaly: ruxolitinib versus best available therapy",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT02038036"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:natalee:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "natalee",
+   "kind": "trial",
+   "route": "/trials/natalee/",
+   "field": "phase+nct",
+   "claim": "NATALEE (NCT03701334) is a phase 3 trial: Adjuvant ribociclib 3 years + endocrine therapy in stage II-III HR+/HER2- breast cancer",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT03701334"
+   ],
+   "weight": 4.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Registry PHASE3, acronym NATALEE. Incidental: NEJM paper year is 2024, not 2023 (fixed).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct06256588:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct06256588",
+   "kind": "trial",
+   "route": "/trials/nct06256588/",
+   "field": "enrolled",
+   "claim": "A Study of Dostarlimab vs Placebo After Chemoradiation in Adult Participants With Locally Advanced Unresected Head and Neck Squamous Cell Carcinoma (NCT06256588) enrolled 864 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06256588"
+   ],
+   "weight": 3.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06256588"
+  },
+  {
+   "id": "trial-facts:winther:outcomes[0]",
+   "stratum": "trial-facts",
+   "recordId": "winther",
+   "kind": "trial",
+   "route": "/trials/winther/",
+   "field": "outcomes[0]",
+   "claim": "WINTHER Progression-free survival ratio above 1.5 against the prior line of therapy: All evaluable patients (arms A and B) 22.4 %",
+   "sources": [
+    "https://doi.org/10.1038/s41591-019-0424-4",
+    "https://clinicaltrials.gov/study/NCT01856296"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Nat Med 2019: 22.4% had a PFS ratio >1.5. Incidental: registry phase NA, record phase 2 (fixed).",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct06634849:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "nct06634849",
+   "kind": "trial",
+   "route": "/trials/nct06634849/",
+   "field": "phase+nct",
+   "claim": "An Open Label Dose Finding Study of PTT-4256 in Patients With Solid Tumours (RAISIC-1). (NCT06634849) is a phase 1/2 trial: A Modular, Open Label, Dose Finding, Phase 1/2 Clinical Trial in Patients With Solid Tumours to Assess the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics and Preliminary Efficacy of PTT-4256.",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT06634849"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT06634849"
+  },
+  {
+   "id": "trial-facts:sarc028:phase+nct",
+   "stratum": "trial-facts",
+   "recordId": "sarc028",
+   "kind": "trial",
+   "route": "/trials/sarc028/",
+   "field": "phase+nct",
+   "claim": "SARC028 (NCT02301039) is a phase 2 trial: Advanced soft tissue and bone sarcomas: single-arm pembrolizumab, with expansion cohorts in undifferentiated pleomorphic sarcoma and dedifferentiated liposarcoma",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT02301039"
+   ],
+   "weight": 3.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies"
+  },
+  {
+   "id": "trial-facts:nct04486378:enrolled",
+   "stratum": "trial-facts",
+   "recordId": "nct04486378",
+   "kind": "trial",
+   "route": "/trials/nct04486378/",
+   "field": "enrolled",
+   "claim": "A Phase II Clinical Trial Comparing the Efficacy of RO7198457 Versus Watchful Waiting in Patients With ctDNA-positive, Resected Stage II (High Risk) and Stage III Colorectal Cancer (NCT04486378) enrolled 327 (registry)",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT04486378"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "ClinicalTrials.gov v2 record matches the phase, enrolment and title, or the cited abstract states the figure.",
+   "checkedSource": "https://clinicaltrials.gov/api/v2/studies/NCT04486378"
+  },
+  {
+   "id": "drug-approvals:rivoceranib:approvals[2]",
+   "stratum": "drug-approvals",
+   "recordId": "rivoceranib",
+   "kind": "drug",
+   "route": "/drugs/rivoceranib/",
+   "field": "approvals[2]",
+   "claim": "Rivoceranib (apatinib): China 2023, First-line unresectable hepatocellular carcinoma with camrelizumab (CARES-310)",
+   "sources": [
+    "https://www.hengrui.com/en/",
+    "https://doi.org/10.1016/S0140-6736(23)00961-3",
+    "https://www.nmpa.gov.cn"
+   ],
+   "weight": 5.087462841250339,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:nivolumab:approvals[5]",
+   "stratum": "drug-approvals",
+   "recordId": "nivolumab",
+   "kind": "drug",
+   "route": "/drugs/nivolumab/",
+   "field": "approvals[5]",
+   "claim": "Nivolumab: England (NICE) 2021, Locally advanced or metastatic PD-L1-positive non-squamous non-small-cell lung cancer after chemotherapy (TA713, published 7 July 2021, stopped at 2 years and only for patients who have not had a PD-1 or PD-L1 inhibitor before (CheckMate 057).)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nivolumab",
+    "https://www.nice.org.uk/guidance/ta1065",
+    "https://www.nice.org.uk/guidance/ta716",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
+    "https://www.nice.org.uk/guidance/ta655",
+    "https://www.nice.org.uk/guidance/ta713"
+   ],
+   "weight": 28.844129532345622,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:dostarlimab:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "dostarlimab",
+   "kind": "drug",
+   "route": "/drugs/dostarlimab/",
+   "field": "approvals[0]",
+   "claim": "Dostarlimab: US 2021, dMMR recurrent/advanced endometrial cancer; dMMR solid tumours",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dostarlimab",
+    "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22JEMPERLI%22",
+    "https://www.ema.europa.eu/en/medicines/human/EPAR/jemperli"
+   ],
+   "weight": 7.044394119358453,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:atezolizumab:approvals[2]",
+   "stratum": "drug-approvals",
+   "recordId": "atezolizumab",
+   "kind": "drug",
+   "route": "/drugs/atezolizumab/",
+   "field": "approvals[2]",
+   "claim": "Atezolizumab: EU 2019, Unresectable locally advanced or metastatic TNBC with PD-L1 expression of 1 percent or more (SP142 immune cells), with nab-paclitaxel, no prior chemotherapy for metastatic disease (IMpassion130); the indication remains in the EU product information on 24 September 2026 (https://www.ema.europa.eu/en/medicines/human/EPAR/tecentriq)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Atezolizumab",
+    "https://www.nice.org.uk/guidance/ta639",
+    "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TECENTRIQ%22",
+    "https://www.ema.europa.eu/en/medicines/human/EPAR/tecentriq",
+    "https://www.nice.org.uk/guidance/ta520",
+    "https://www.nice.org.uk/guidance/ta584"
+   ],
+   "weight": 8.60733031374961,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:pemigatinib:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "pemigatinib",
+   "kind": "drug",
+   "route": "/drugs/pemigatinib/",
+   "field": "approvals[1]",
+   "claim": "Pemigatinib: EU 2021, Same",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pemigatinib",
+    "https://www.nice.org.uk/guidance/ta722"
+   ],
+   "weight": 5.459431618637297,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:ramucirumab:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "ramucirumab",
+   "kind": "drug",
+   "route": "/drugs/ramucirumab/",
+   "field": "approvals[1]",
+   "claim": "Ramucirumab: US 2019, HCC with AFP ≥400 ng/mL after sorafenib",
+   "sources": [
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/125477s040lbl.pdf",
+    "https://www.nice.org.uk/guidance/ta403"
+   ],
+   "weight": 6.554588851677638,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:thioguanine:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "thioguanine",
+   "kind": "drug",
+   "route": "/drugs/thioguanine/",
+   "field": "approvals[0]",
+   "claim": "Thioguanine: US 1966, Remission induction and consolidation of acute non-lymphocytic leukaemias",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=thioguanine",
+    "https://www.cancer.gov/about-cancer/treatment/drugs/thioguanine"
+   ],
+   "weight": 4.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:imetelstat:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "imetelstat",
+   "kind": "drug",
+   "route": "/drugs/imetelstat/",
+   "field": "approvals[0]",
+   "claim": "Imetelstat: US 2024, Low- to intermediate-1-risk MDS with transfusion-dependent anaemia after ESA failure",
+   "sources": [
+    "https://doi.org/10.1016/S0140-6736(23)01724-5",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=imetelstat"
+   ],
+   "weight": 4.906890595608519,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Year right (NDA217779, 2024-06-06); the label indication also covers patients 'ineligible for erythropoiesis-stimulating agents', which 'after ESA failure' leaves out.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22RYTELO%22"
+  },
+  {
+   "id": "drug-approvals:trastuzumab-emtansine:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "trastuzumab-emtansine",
+   "kind": "drug",
+   "route": "/drugs/trastuzumab-emtansine/",
+   "field": "approvals[1]",
+   "claim": "Trastuzumab emtansine: US 2019, Adjuvant HER2+ breast cancer with residual disease after neoadjuvant therapy",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trastuzumab%20emtansine"
+   ],
+   "weight": 6.700439718141092,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:ixazomib:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "ixazomib",
+   "kind": "drug",
+   "route": "/drugs/ixazomib/",
+   "field": "approvals[1]",
+   "claim": "Ixazomib: EU 2016, Same",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ixazomib"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:axicabtagene-ciloleucel:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "axicabtagene-ciloleucel",
+   "kind": "drug",
+   "route": "/drugs/axicabtagene-ciloleucel/",
+   "field": "approvals[1]",
+   "claim": "Axicabtagene ciloleucel: US 2022, Second-line LBCL refractory or relapsed within 12 months",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Axicabtagene%20ciloleucel",
+    "https://doi.org/10.1038/s41591-020-1061-7",
+    "https://doi.org/10.1182/blood.2021010930",
+    "https://doi.org/10.1158/2159-8290.CD-15-1020"
+   ],
+   "weight": 19.07265601385425,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:asciminib:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "asciminib",
+   "kind": "drug",
+   "route": "/drugs/asciminib/",
+   "field": "approvals[1]",
+   "claim": "Asciminib: US 2024, Newly diagnosed Ph+ CML in chronic phase (ASC4FIRST)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Asciminib"
+   ],
+   "weight": 5.700439718141092,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:osimertinib:approvals[3]",
+   "stratum": "drug-approvals",
+   "recordId": "osimertinib",
+   "kind": "drug",
+   "route": "/drugs/osimertinib/",
+   "field": "approvals[3]",
+   "claim": "Osimertinib: England (NICE) 2020, Untreated locally advanced or metastatic EGFR mutation-positive non-small-cell lung cancer (TA654, published 14 October 2020, recommends osimertinib within its marketing authorisation subject to the commercial arrangement.)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Osimertinib",
+    "https://www.nice.org.uk/guidance/ta654",
+    "https://www.nice.org.uk/guidance/ta1043",
+    "https://www.nice.org.uk/guidance/ta1060",
+    "https://www.nice.org.uk/guidance/ta1156"
+   ],
+   "weight": 8.294620748891628,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:enfortumab-vedotin:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "enfortumab-vedotin",
+   "kind": "drug",
+   "route": "/drugs/enfortumab-vedotin/",
+   "field": "approvals[1]",
+   "claim": "Enfortumab vedotin: US 2023, First-line advanced urothelial cancer with pembrolizumab",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Enfortumab%20vedotin"
+   ],
+   "weight": 6.523561956057013,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:selpercatinib:approvals[4]",
+   "stratum": "drug-approvals",
+   "recordId": "selpercatinib",
+   "kind": "drug",
+   "route": "/drugs/selpercatinib/",
+   "field": "approvals[4]",
+   "claim": "Selpercatinib: England (NICE) 2023, Untreated RET fusion-positive advanced non-small-cell lung cancer (TA911, published 26 July 2023, recommends selpercatinib with managed access only, under a managed access agreement.)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Selpercatinib",
+    "https://www.nice.org.uk/guidance/ta911",
+    "https://www.nice.org.uk/guidance/ta1042"
+   ],
+   "weight": 6.247927513443585,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:trastuzumab-deruxtecan:approvals[7]",
+   "stratum": "drug-approvals",
+   "recordId": "trastuzumab-deruxtecan",
+   "kind": "drug",
+   "route": "/drugs/trastuzumab-deruxtecan/",
+   "field": "approvals[7]",
+   "claim": "Trastuzumab deruxtecan: US 2024, Unresectable or metastatic HER2-positive (IHC 3+) solid tumours after previous systemic treatment, including colorectal cancer (Tumour-agnostic accelerated approval on 5 April 2024; the colorectal evidence is DESTINY-CRC01 and DESTINY-CRC02 at 5.4 mg/kg. No NICE recommendation for colorectal cancer at September 2026.)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trastuzumab%20deruxtecan",
+    "https://www.nice.org.uk/guidance/ta992",
+    "https://doi.org/10.1038/s41591-025-03981-4",
+    "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22ENHERTU%22",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications"
+   ],
+   "weight": 8.629356620079609,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Date right (BLA761139 S-28, 2024-04-05), but label 14.6 lists DESTINY-PanTumor02, DESTINY-Lung01 and DESTINY-CRC02 at 5.4 mg/kg; DESTINY-CRC01 (6.4 mg/kg) is not part of this approval.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22ENHERTU%22"
+  },
+  {
+   "id": "drug-approvals:folfox:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "folfox",
+   "kind": "drug",
+   "route": "/drugs/folfox/",
+   "field": "approvals[0]",
+   "claim": "FOLFOX (5-FU, leucovorin, oxaliplatin): US 2004, Adjuvant stage III colon cancer (oxaliplatin, MOSAIC)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/FOLFOX",
+    "https://doi.org/10.1200/JCO.2013.53.6995",
+    "https://doi.org/10.1200/JCO.2016.68.5776"
+   ],
+   "weight": 8.721099188707186,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:cemiplimab:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "cemiplimab",
+   "kind": "drug",
+   "route": "/drugs/cemiplimab/",
+   "field": "approvals[0]",
+   "claim": "Cemiplimab: US 2018, Advanced cutaneous squamous cell carcinoma",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Cemiplimab",
+    "https://www.nice.org.uk/guidance/ta1165"
+   ],
+   "weight": 7.554588851677638,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:decitabine-cedazuridine:approvals[1]",
+   "stratum": "drug-approvals",
+   "recordId": "decitabine-cedazuridine",
+   "kind": "drug",
+   "route": "/drugs/decitabine-cedazuridine/",
+   "field": "approvals[1]",
+   "claim": "Decitabine + cedazuridine (oral): US 2026, Newly diagnosed AML, unfit for intensive induction, with venetoclax (ASCERTAIN-V)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Decitabine"
+   ],
+   "weight": 4.700439718141093,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-approvals:sonidegib:approvals[0]",
+   "stratum": "drug-approvals",
+   "recordId": "sonidegib",
+   "kind": "drug",
+   "route": "/drugs/sonidegib/",
+   "field": "approvals[0]",
+   "claim": "Sonidegib: US 2015, Locally advanced BCC recurrent after surgery or radiation, or not candidates",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=sonidegib"
+   ],
+   "weight": 5,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-numbers:tagraxofusp:toxicity[0]",
+   "stratum": "drug-numbers",
+   "recordId": "tagraxofusp",
+   "kind": "drug",
+   "route": "/drugs/tagraxofusp/",
+   "field": "toxicity[0]",
+   "claim": "Tagraxofusp: Capillary leak syndrome any grade 55%, grade 3+ 9%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=Elzonris",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tagraxofusp"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "stale",
+   "note": "Current Elzonris label (2024-12-09, N=122): 'overall incidence of CLS was 53% (65/122)'; table 'Capillary leak syndrome 53 11'. 55%/9% were the 2018 label.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22ELZONRIS%22"
+  },
+  {
+   "id": "drug-numbers:erdafitinib:toxicity[0]",
+   "stratum": "drug-numbers",
+   "recordId": "erdafitinib",
+   "kind": "drug",
+   "route": "/drugs/erdafitinib/",
+   "field": "toxicity[0]",
+   "claim": "Erdafitinib: Hyperphosphataemia any grade 79%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Erdafitinib"
+   ],
+   "weight": 5,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "79% is not in the label: THOR Table 4 'Increased phosphate 76 5'; BLC2001 76; pooled 73%.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22BALVERSA%22"
+  },
+  {
+   "id": "drug-numbers:ibrutinib:toxicity[0]",
+   "stratum": "drug-numbers",
+   "recordId": "ibrutinib",
+   "kind": "drug",
+   "route": "/drugs/ibrutinib/",
+   "field": "toxicity[0]",
+   "claim": "Ibrutinib: Atrial fibrillation any grade 16%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=Imbruvica",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ibrutinib",
+    "https://doi.org/10.1016/j.annonc.2021.01.070",
+    "https://doi.org/10.1038/nature08638",
+    "https://doi.org/10.1056/NEJMoa1400029"
+   ],
+   "weight": 21.800359622084702,
+   "isNew": true,
+   "verdict": "wrong",
+   "note": "Label (pooled B-cell malignancy): 'atrial fibrillation and atrial flutter of any grade was 8.4% versus 1.6% and for Grade 3 or greater was 4.0%'. 16% is the ELEVATE-RR ibrutinib arm, not pooled long-term data; '5% grade 3+' is in neither source.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22IMBRUVICA%22"
+  },
+  {
+   "id": "drug-numbers:brentuximab-vedotin:toxicity[2]",
+   "stratum": "drug-numbers",
+   "recordId": "brentuximab-vedotin",
+   "kind": "drug",
+   "route": "/drugs/brentuximab-vedotin/",
+   "field": "toxicity[2]",
+   "claim": "Brentuximab vedotin: Constipation any grade 42%, grade 3+ 2%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3904f8dd-1aef-3490-e48f-bd55f32ed67f",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Brentuximab%20vedotin",
+    "https://doi.org/10.1038/nrc2542"
+   ],
+   "weight": 21.509775004326936,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-numbers:doxorubicin:toxicity[2]",
+   "stratum": "drug-numbers",
+   "recordId": "doxorubicin",
+   "kind": "drug",
+   "route": "/drugs/doxorubicin/",
+   "field": "toxicity[2]",
+   "claim": "Doxorubicin: Alopecia any grade 90%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Doxorubicin"
+   ],
+   "weight": 9.129283016944967,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Label's only alopecia figure is the adjuvant breast AC arm: 'Alopecia 92 71' (AC vs CMF); a combination figure, not 90% single-agent.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22DOXORUBICIN%20HYDROCHLORIDE%22"
+  },
+  {
+   "id": "drug-numbers:inotuzumab-ozogamicin:toxicity[0]",
+   "stratum": "drug-numbers",
+   "recordId": "inotuzumab-ozogamicin",
+   "kind": "drug",
+   "route": "/drugs/inotuzumab-ozogamicin/",
+   "field": "toxicity[0]",
+   "claim": "Inotuzumab ozogamicin: Hepatic veno-occlusive disease any grade 14%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=Besponsa",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Inotuzumab%20ozogamicin"
+   ],
+   "weight": 4.700439718141093,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-numbers:azacitidine:toxicity[2]",
+   "stratum": "drug-numbers",
+   "recordId": "azacitidine",
+   "kind": "drug",
+   "route": "/drugs/azacitidine/",
+   "field": "toxicity[2]",
+   "claim": "Azacitidine: Nausea any grade 44%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Azacitidine"
+   ],
+   "weight": 7.539158811108031,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "44% is the venetoclax plus azacitidine arm of VIALE-A ('44% ... azacitidine-venetoclax group and 35% ... control'), unlabelled as such on an azacitidine row.",
+   "checkedSource": "https://doi.org/10.1056/NEJMoa2012971"
+  },
+  {
+   "id": "drug-numbers:capivasertib:toxicity[0]",
+   "stratum": "drug-numbers",
+   "recordId": "capivasertib",
+   "kind": "drug",
+   "route": "/drugs/capivasertib/",
+   "field": "toxicity[0]",
+   "claim": "Capivasertib: Diarrhoea any grade 77%, grade 3+ 12%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Capivasertib",
+    "https://doi.org/10.1016/j.annonc.2025.12.012"
+   ],
+   "weight": 6.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-numbers:sacituzumab-govitecan:toxicity[7]",
+   "stratum": "drug-numbers",
+   "recordId": "sacituzumab-govitecan",
+   "kind": "drug",
+   "route": "/drugs/sacituzumab-govitecan/",
+   "field": "toxicity[7]",
+   "claim": "Sacituzumab govitecan: Vomiting any grade 33%, grade 3+ 1.6%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-hr-positive-breast-cancer",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sacituzumab-govitecan-advanced-urothelial-cancer",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sacituzumab%20govitecan",
+    "https://www.nice.org.uk/guidance/ta819"
+   ],
+   "weight": 7.658211482751795,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "drug-numbers:pluvicto:toxicity[4]",
+   "stratum": "drug-numbers",
+   "recordId": "pluvicto",
+   "kind": "drug",
+   "route": "/drugs/pluvicto/",
+   "field": "toxicity[4]",
+   "claim": "Lutetium-177 vipivotide tetraxetan: Nausea any grade 36%, grade 3+ ?%",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14908037-2892-4d98-a053-253ce35afb1a",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lutetium-177%20vipivotide%20tetraxetan",
+    "https://www.nice.org.uk/guidance/ta930"
+   ],
+   "weight": 6.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches Drugs@FDA/openFDA label, EMA EPAR or NICE guidance as read by the checker.",
+   "checkedSource": "https://api.fda.gov/drug/drugsfda.json"
+  },
+  {
+   "id": "cancer-numbers:extragonadal-germ-cell-tumour:stateOfArt[0].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "extragonadal-germ-cell-tumour",
+   "kind": "cancer",
+   "route": "/cancers/extragonadal-germ-cell-tumour/",
+   "field": "stateOfArt[0].s0",
+   "claim": "Extragonadal seminoma is cured as often as testicular seminoma: the 2002 international pooled analysis of 635 patients reported 88 percent overall survival whether the primary was mediastinal or retroperitoneal.",
+   "sources": [
+    "https://www.cancer.gov/types/extragonadal-germ-cell"
+   ],
+   "weight": 4.169925001442312,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Bokemeyer JCO 2002: 'the overall survival rate for patients with a seminomatous EGCT is 88%' (104 of 635 patients), not all 635; no comparison with testicular seminoma.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1200/jco.2002.07.062%22"
+  },
+  {
+   "id": "cancer-numbers:pancreatic:stateOfArt[10].s1",
+   "stratum": "cancer-numbers",
+   "recordId": "pancreatic",
+   "kind": "cancer",
+   "route": "/cancers/pancreatic/",
+   "field": "stateOfArt[10].s1",
+   "claim": "CA 19-9 has pooled sensitivity 79% and specificity 82%, rises with cholestasis and cannot be made by the roughly 10% of patients who are Lewis-negative; ctDNA predicts recurrence about three months before imaging, but most assays read only KRAS codons 12, 13 and 61 and no approval uses it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pancreatic_cancer",
+    "https://gco.iarc.who.int/media/globocan/factsheets/cancers/13-pancreas-fact-sheet.pdf",
+    "https://seer.cancer.gov/statfacts/html/pancreas.html",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/pancreatic-cancer",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/pancreatic-cancer/incidence",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/pancreatic-cancer/mortality"
+   ],
+   "weight": 11.098032082960527,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:oral-cavity-cancer:burden",
+   "stratum": "cancer-numbers",
+   "recordId": "oral-cavity-cancer",
+   "kind": "cancer",
+   "route": "/cancers/oral-cavity-cancer/",
+   "field": "burden",
+   "claim": "About 390,000 new cases a year worldwide, with the highest rates in South Asia from betel quid and tobacco chewing; it is the commonest cancer among men in India, and five-year survival is around 60 percent overall but far lower for late-stage disease.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oral_cancer"
+   ],
+   "weight": 6.20945336562895,
+   "isNew": false,
+   "verdict": "stale",
+   "note": "GLOBOCAN 2024 lip and oral cavity fact sheet: 'Cases 452 205' (390,000 was 2022); '~60% five-year survival' not in any cited source (SEER 69.9%); only Wikipedia cited.",
+   "checkedSource": "https://gco.iarc.who.int/media/globocan/factsheets/cancers/1-lip-oral-cavity-fact-sheet.pdf"
+  },
+  {
+   "id": "cancer-numbers:endometrial:prognosis.s1",
+   "stratum": "cancer-numbers",
+   "recordId": "endometrial",
+   "kind": "cancer",
+   "route": "/cancers/endometrial/",
+   "field": "prognosis.s1",
+   "claim": "Most cases are caught early because bleeding after the menopause is investigated: 67% are found while confined to the uterus, with five-year relative survival of 94.9%; it is 70.1% for regional disease (18% of cases) and 19.9% for distant disease (11% of cases).",
+   "sources": [
+    "https://seer.cancer.gov/statfacts/html/corp.html",
+    "https://en.wikipedia.org/wiki/Endometrial_cancer"
+   ],
+   "weight": 9.276124405274238,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:cutaneous-t-cell-lymphoma:burden",
+   "stratum": "cancer-numbers",
+   "recordId": "cutaneous-t-cell-lymphoma",
+   "kind": "cancer",
+   "route": "/cancers/cutaneous-t-cell-lymphoma/",
+   "field": "burden",
+   "claim": "Rare. In the United Kingdom population series that reports lymphoma by subtype, mycosis fungoides accounted for 39 of 5,796 lymphomas and the primary cutaneous CD30-positive lymphoproliferative disorders for 37, European age-standardised rates of 0.12 and 0.13 per 100,000 a year, with five-year relative survival of 86.6 and 88.3 per cent respectively. The remaining entities in the family are individually rarer than either.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mycosis_fungoides",
+    "https://doi.org/10.1038/s41375-022-01620-2",
+    "https://doi.org/10.1182/blood.2022015851",
+    "https://www.cancer.gov/types/lymphoma/hp/adult-nhl-treatment-pdq",
+    "https://lymphoma-action.org.uk/types-lymphoma",
+    "https://doi.org/10.1038/bjc.2015.94"
+   ],
+   "weight": 7.266786540694901,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:urothelial:stateOfArt[6].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "urothelial",
+   "kind": "cancer",
+   "route": "/cancers/urothelial/",
+   "field": "stateOfArt[6].s0",
+   "claim": "Durvalumab + BCG: first systemic immunotherapy approved in BCG-naive NMIBC (May 2026).",
+   "sources": [
+    "https://www.cancer.gov/types/bladder/hp/bladder-treatment-pdq",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-combination-bacillus-calmette-guerin-high-risk-non-muscle-invasive-bladder"
+   ],
+   "weight": 9.731319031025064,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:kras-g12c-pdac:stateOfArt[1].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "kras-g12c-pdac",
+   "kind": "cancer",
+   "route": "/cancers/kras-g12c-pdac/",
+   "field": "stateOfArt[1].s0",
+   "claim": "Daraxonrasib gives the G12C group, like every other KRAS subgroup, an approved RAS inhibitor with pancreatic phase 3 evidence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/KRAS",
+    "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1455"
+   ],
+   "weight": 5.459431618637297,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:colorectal:stateOfArt[5].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "colorectal",
+   "kind": "cancer",
+   "route": "/cancers/colorectal/",
+   "field": "stateOfArt[5].s0",
+   "claim": "KRAS G12C and HER2 have approved targeted combinations;",
+   "sources": [
+    "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1428",
+    "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1461",
+    "https://www.nccn.org/guidelines/guidelines-detail?category=2&id=1429",
+    "https://www.esmo.org/guidelines/esmo-clinical-practice-guidelines-gastrointestinal-cancers/",
+    "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq",
+    "https://www.nhs.uk/conditions/bowel-cancer/"
+   ],
+   "weight": 34.76895343954436,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:endometrial-pole-ultramutated:stateOfArt[1].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "endometrial-pole-ultramutated",
+   "kind": "cancer",
+   "route": "/cancers/endometrial-pole-ultramutated/",
+   "field": "stateOfArt[1].s0",
+   "claim": "PORTEC-3's molecular analysis showed that POLE-ultramutated tumours do not need chemotherapy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Endometrial_cancer"
+   ],
+   "weight": 4.906890595608519,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Leon-Castillo JCO 2020: POLEmut RFS '100% versus 97% ... (P = .637)' in 51 patients, a post-hoc subgroup; does not show chemotherapy is unnecessary.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1200/jco.20.00549%22"
+  },
+  {
+   "id": "cancer-numbers:burkitt-lymphoma:stateOfArt[0].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "burkitt-lymphoma",
+   "kind": "cancer",
+   "route": "/cancers/burkitt-lymphoma/",
+   "field": "stateOfArt[0].s0",
+   "claim": "Short intensive chemotherapy cures most children; rituximab added a further step in high-risk disease (Inter-B-NHL Ritux 2010).",
+   "sources": [
+    "https://www.cancer.gov/types/lymphoma/hp/child-nhl-treatment-pdq",
+    "https://doi.org/10.1056/NEJMoa1915315",
+    "https://doi.org/10.1002/pbc.24407"
+   ],
+   "weight": 7.22881869049588,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:hodgkin-lymphoma:burden",
+   "stratum": "cancer-numbers",
+   "recordId": "hodgkin-lymphoma",
+   "kind": "cancer",
+   "route": "/cancers/hodgkin-lymphoma/",
+   "field": "burden",
+   "claim": "~83,000 new cases a year worldwide, ~8,500 in the US, with age peaks at 20-30 and over 55. More than 85% are cured, so the research agenda is curing with less toxicity. Five-year survival is ~89% overall in high-income countries; ~23,000 deaths a year worldwide.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hodgkin_lymphoma",
+    "https://lymphoma-action.org.uk/information-and-support/support-you/helpline-services",
+    "https://lymphoma-action.org.uk/information-and-support/tests-scans-and-lymphoma-staging/questions-ask-your-medical-team-about-lymphoma",
+    "https://lymphoma-action.org.uk/information-and-support/living-and-beyond-lymphoma/follow-after-lymphoma-treatment",
+    "https://lymphoma-action.org.uk/information-and-support/side-effects-lymphoma-and-treatment/infections-risk-and-prevention",
+    "https://lymphoma-action.org.uk/information-and-support/side-effects-lymphoma-and-treatment/neutropenia-low-neutrophils"
+   ],
+   "weight": 9.285402218862249,
+   "isNew": false,
+   "verdict": "stale",
+   "note": "GLOBOCAN 2024 Hodgkin fact sheet: 'Cases 84 495 ... Deaths 19 515' (record had 2022 values); SEER 2026 estimate 8,920.",
+   "checkedSource": "https://gco.iarc.who.int/media/globocan/factsheets/cancers/33-hodgkin-lymphoma-fact-sheet.pdf"
+  },
+  {
+   "id": "cancer-numbers:retinoblastoma:stateOfArt[3].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "retinoblastoma",
+   "kind": "cancer",
+   "route": "/cancers/retinoblastoma/",
+   "field": "stateOfArt[3].s0",
+   "claim": "The gap is global: >90% survival where diagnosis is early, versus much lower survival with orbital and metastatic disease where it is not (Global Retinoblastoma Study, 2020).",
+   "sources": [
+    "https://www.cancer.gov/types/retinoblastoma/patient/retinoblastoma-treatment-pdq",
+    "https://doi.org/10.1001/jamaoncol.2019.6716",
+    "https://wechope.org/"
+   ],
+   "weight": 5.459431618637297,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Survival figures (99.5% HIC vs 57.3% LIC) come from the 2022 Lancet Glob Health outcome study, not the cited 2020 JAMA Oncol presentation paper.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/s2214-109x(22)00250-9%22"
+  },
+  {
+   "id": "cancer-numbers:nsclc:prognosis.s4",
+   "stratum": "cancer-numbers",
+   "recordId": "nsclc",
+   "kind": "cancer",
+   "route": "/cancers/nsclc/",
+   "field": "prognosis.s4",
+   "claim": "Survival is higher in women than men and falls steeply with age: 32.7 percent of women and 22.2 percent of men diagnosed at 15 to 44 survive ten years, against 9.2 percent of women and 5.2 percent of men diagnosed at 75 to 99.",
+   "sources": [
+    "https://seer.cancer.gov/statfacts/html/lungb.html",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer/survival",
+    "https://en.wikipedia.org/wiki/Non-small-cell_lung_cancer",
+    "https://gco.iarc.who.int/media/globocan/factsheets/cancers/15-trachea-bronchus-and-lung-fact-sheet.pdf",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer",
+    "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer/incidence"
+   ],
+   "weight": 11.96289600533726,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:breast-hr-positive:stateOfArt[5].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "breast-hr-positive",
+   "kind": "cancer",
+   "route": "/cancers/breast-hr-positive/",
+   "field": "stateOfArt[5].s0",
+   "claim": "ADCs before chemotherapy in endocrine-resistant disease: T-DXd for HER2-low and ultralow (DESTINY-Breast06), TROP2 ADCs for the rest.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Breast_cancer",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13114725/",
+    "https://seer.cancer.gov/statfacts/html/breast-subtypes.html",
+    "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html",
+    "https://www.nice.org.uk/guidance/ng101/chapter/recommendations",
+    "https://gco.iarc.who.int/media/globocan/factsheets/cancers/20-breast-fact-sheet.pdf"
+   ],
+   "weight": 10.948367231584678,
+   "isNew": false,
+   "verdict": "wrong",
+   "note": "Labels: TRODELVY HR+/HER2- after 'endocrine-based therapy and at least two additional systemic therapies'; DATROWAY after 'prior endocrine-based therapy and chemotherapy'. TROP2 ADCs come after chemotherapy, not before.",
+   "checkedSource": "https://api.fda.gov/drug/label.json"
+  },
+  {
+   "id": "cancer-numbers:leukaemia:stateOfArt[0].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "leukaemia",
+   "kind": "cancer",
+   "route": "/cancers/leukaemia/",
+   "field": "stateOfArt[0].s0",
+   "claim": "Childhood ALL cure rates near 90 percent through risk-adapted chemotherapy and measurable residual disease monitoring.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Leukemia",
+    "https://www.cancer.gov/types/leukemia"
+   ],
+   "weight": 8.761551232444479,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:prostate:stateOfArt[1].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "prostate",
+   "kind": "cancer",
+   "route": "/cancers/prostate/",
+   "field": "stateOfArt[1].s0",
+   "claim": "Triplet therapy (ADT + ARPI + docetaxel) for high-volume de novo disease, with OS HR ~0.7 (ARASENS, PEACE-1).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prostate_cancer",
+    "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1459",
+    "https://www.nice.org.uk/guidance/ng131/chapter/Recommendations",
+    "https://www.rcpath.org/static/8cc88604-2c8d-4df4-a99542df41c102af/G084-dataset-for-histopathology-reports-for-prostatic-carcinoma.pdf",
+    "https://tumourclassification.iarc.who.int/chapters/36",
+    "https://doi.org/10.1111/his.14711"
+   ],
+   "weight": 34.04950227437174,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:non-hodgkin-lymphoma:stateOfArt[3].s1",
+   "stratum": "cancer-numbers",
+   "recordId": "non-hodgkin-lymphoma",
+   "kind": "cancer",
+   "route": "/cancers/non-hodgkin-lymphoma/",
+   "field": "stateOfArt[3].s1",
+   "claim": "To make a better antibody a B cell deliberately mutates its own DNA while dividing fast, with its damage response held down by BCL6 and its exit locked by polycomb.",
+   "sources": [
+    "https://www.cancer.gov/types/lymphoma",
+    "https://doi.org/10.3322/caac.21660",
+    "https://lymphoma-action.org.uk/information-and-support/support-you/helpline-services",
+    "https://lymphoma-action.org.uk/information-and-support/tests-scans-and-lymphoma-staging/questions-ask-your-medical-team-about-lymphoma",
+    "https://lymphoma-action.org.uk/information-and-support/living-and-beyond-lymphoma/follow-after-lymphoma-treatment",
+    "https://lymphoma-action.org.uk/information-and-support/side-effects-lymphoma-and-treatment/infections-risk-and-prevention"
+   ],
+   "weight": 10.294620748891626,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:pancreatic-colloid-carcinoma:stateOfArt[0].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "pancreatic-colloid-carcinoma",
+   "kind": "cancer",
+   "route": "/cancers/pancreatic-colloid-carcinoma/",
+   "field": "stateOfArt[0].s0",
+   "claim": "Recognised since 2001 as a distinct, better-behaved variant; the favourable outcome of invasive IPMN is largely the colloid and oncocytic subtypes.",
+   "sources": [
+    "https://doi.org/10.1097/00000478-200101000-00003",
+    "https://doi.org/10.1136/gut.2010.232272",
+    "https://doi.org/10.1097/sla.0b013e318214bcb4",
+    "https://doi.org/10.1111/his.13975"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:richter-transformation-cll:stateOfArt[3].s1",
+   "stratum": "cancer-numbers",
+   "recordId": "richter-transformation-cll",
+   "kind": "cancer",
+   "route": "/cancers/richter-transformation-cll/",
+   "field": "stateOfArt[3].s1",
+   "claim": "Across 86 pathologically proven cases, TP53 disruption was present in 47.1% and MYC abnormality in 26.2%, while the usual drivers of de novo diffuse large B-cell lymphoma were rare or absent.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Richter%27s_transformation",
+    "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1478"
+   ],
+   "weight": 4.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "cancer-numbers:gastric-her2-positive:stateOfArt[1].s0",
+   "stratum": "cancer-numbers",
+   "recordId": "gastric-her2-positive",
+   "kind": "cancer",
+   "route": "/cancers/gastric-her2-positive/",
+   "field": "stateOfArt[1].s0",
+   "claim": "Trastuzumab deruxtecan gives a second HER2-directed line with a real survival gain, unlike lapatinib and trastuzumab emtansine before it.",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/20728210/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMoa2004413",
+    "https://en.wikipedia.org/wiki/Stomach_cancer"
+   ],
+   "weight": 6.247927513443585,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "tests:prolaris:summary.s0",
+   "stratum": "tests",
+   "recordId": "prolaris",
+   "kind": "drug",
+   "route": "/drugs/prolaris/",
+   "field": "summary.s0",
+   "claim": "Prolaris (Myriad Genetics) measures how fast tumour cells are dividing and reports a 10-year risk of dying from prostate cancer under conservative management and of metastasis after treatment.",
+   "sources": [
+    "https://myriad.com/oncology/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "unreachable",
+   "note": "Only cited link https://myriad.com/oncology/ returns HTTP 403 to a script; product page also 403; Wayback 429.",
+   "checkedSource": "https://myriad.com/oncology/"
+  },
+  {
+   "id": "tests:cancerguard:summary.s8",
+   "stratum": "tests",
+   "recordId": "cancerguard",
+   "kind": "drug",
+   "route": "/drugs/cancerguard/",
+   "field": "summary.s8",
+   "claim": "The Falcon Registry (NCT06589310) is following up to 25,000 people tested in practice.",
+   "sources": [
+    "https://www.exactsciences.com/newsroom/press-releases/exact-sciences-launches-cancerguard-first-of-its-kind-multi-cancer-early-detection-blood-test",
+    "https://doi.org/10.1158/1055-9965.EPI-26-0541",
+    "https://clinicaltrials.gov/study/NCT06589310",
+    "https://www.exactsciences.com/"
+   ],
+   "weight": 4.169925001442312,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:natera-mced:summary.s0",
+   "stratum": "tests",
+   "recordId": "natera-mced",
+   "kind": "drug",
+   "route": "/drugs/natera-mced/",
+   "field": "summary.s0",
+   "claim": "Natera announced on 9 October 2026 that the FDA had granted Breakthrough Device designation to its multi-cancer early detection assay, which analyses cell-free DNA in blood.",
+   "sources": [
+    "https://investor.natera.com/news/news-details/2026/FDA-Grants-Breakthrough-Device-Designation-for-Nateras-Multi-Cancer-Early-Detection-Assay/default.aspx"
+   ],
+   "weight": 6,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:ga68-dotatate:summary.s1",
+   "stratum": "tests",
+   "recordId": "ga68-dotatate",
+   "kind": "drug",
+   "route": "/drugs/ga68-dotatate/",
+   "field": "summary.s1",
+   "claim": "Cu-64 DOTATATE (Detectnet, 12.7-hour half-life allows central production) approved September 2020;",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=Netspot",
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=Detectnet"
+   ],
+   "weight": 4.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:oncoseek:summary.s4",
+   "stratum": "tests",
+   "recordId": "oncoseek",
+   "kind": "drug",
+   "route": "/drugs/oncoseek/",
+   "field": "summary.s4",
+   "claim": "7,565 participants plus a Johns Hopkins validation cohort) reported 51.7% sensitivity and 92.9% specificity.",
+   "sources": [
+    "https://www.seekincancer.com/oncoseek",
+    "https://doi.org/10.1038/s41698-025-01105-2",
+    "https://doi.org/10.1016/j.eclinm.2023.102041"
+   ],
+   "weight": 10.754887502163468,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:psycho-oncology:summary.s1",
+   "stratum": "tests",
+   "recordId": "psycho-oncology",
+   "kind": "technology",
+   "route": "/technologies/psycho-oncology/",
+   "field": "summary.s1",
+   "claim": "The NCCN Distress Thermometer (1999) and IPOS standard make distress screening part of quality cancer care (ACoS CoC requirement).",
+   "sources": [
+    "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1431",
+    "https://doi.org/10.1016/S0140-6736(14)61231-9",
+    "https://www.ipos-society.org/",
+    "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/living-with/coping",
+    "https://www.bowelcanceruk.org.uk/about-bowel-cancer/living-with-and-beyond-bowel-cancer/body-image-and-sex/",
+    "https://www.maggies.org/support-and-information/"
+   ],
+   "weight": 21.800359622084702,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:hpv-testing:summary.s1",
+   "stratum": "tests",
+   "recordId": "hpv-testing",
+   "kind": "technology",
+   "route": "/technologies/hpv-testing/",
+   "field": "summary.s1",
+   "claim": "Self-collected vaginal samples perform as well as clinician samples for PCR-based tests; the FDA approved self-collection in health-care settings in May 2024 and the first at-home kit in 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/HPV_DNA_test"
+   ],
+   "weight": 6.247927513443585,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:flow-cytometry-mrd:summary.s0",
+   "stratum": "tests",
+   "recordId": "flow-cytometry-mrd",
+   "kind": "technology",
+   "route": "/technologies/flow-cytometry-mrd/",
+   "field": "summary.s0",
+   "claim": "Eight- to ten-colour flow detects leukaemia-associated immunophenotypes or 'different-from-normal' patterns at 10^-4 sensitivity.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flow_cytometry"
+   ],
+   "weight": 18.62836009688685,
+   "isNew": true,
+   "verdict": "imprecise",
+   "note": "Cited Wikipedia 'Flow cytometry' says nothing on MRD. ELN 2021 (Heuser, Blood 2021): 'MFC-MRD test positivity is defined as >=0.1% of CD45-expressing cells', i.e. 10^-3 in AML, so a flat 10^-4 overstates. MRD area owned by another agent: reported, not edited.",
+   "checkedSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8718623/"
+  },
+  {
+   "id": "tests:spot-mas:summary.s2",
+   "stratum": "tests",
+   "recordId": "spot-mas",
+   "kind": "drug",
+   "route": "/drugs/spot-mas/",
+   "field": "summary.s2",
+   "claim": "In the earlier case-control study (Nguyen et al., eLife 2023;",
+   "sources": [
+    "https://doi.org/10.1186/s12916-025-03929-y",
+    "https://doi.org/10.7554/eLife.89083",
+    "https://genesolutions.com/news/spot-mas-launches-in-taiwan-ai-powered-multi-cancer-early-detection-ushers-in-a-new-era-of-precision-medicine/"
+   ],
+   "weight": 11.422064766172813,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:cologuard:summary.s2",
+   "stratum": "tests",
+   "recordId": "cologuard",
+   "kind": "drug",
+   "route": "/drugs/cologuard/",
+   "field": "summary.s2",
+   "claim": "It is a USPSTF-endorsed option at a three-year interval, covered by Medicare, and by 2024 more than 16 million tests had been performed.",
+   "sources": [
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130017",
+    "https://doi.org/10.1056/NEJMoa1311194",
+    "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "USPSTF page says both 'sDNA-FIT every 3 years' and 'every 1 to 3 years'. The '16 million tests' is a company figure not in the cited sources (could not be read).",
+   "checkedSource": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening"
+  },
+  {
+   "id": "tests:hrc-test:summary.s0",
+   "stratum": "tests",
+   "recordId": "hrc-test",
+   "kind": "drug",
+   "route": "/drugs/hrc-test/",
+   "field": "summary.s0",
+   "claim": "Epigeneres Biotech, Mumbai, describes the HrC test (Tripathi et al., Stem Cell Reviews and Reports 2021) as a numerical scale from non-cancer (0 to 2) through inflammation, high risk and stages I to IV, validated in 500 people with and 500 without cancer, and claims it detects and classifies solid tumours, blood cancers and sarcomas by stage; the abstract reports no sensitivity or specificity.",
+   "sources": [
+    "https://doi.org/10.1007/s12015-021-10167-1",
+    "https://doi.org/10.1093/stmcls/sxad015"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:adela-mced:summary.s2",
+   "stratum": "tests",
+   "recordId": "adela-mced",
+   "kind": "drug",
+   "route": "/drugs/adela-mced/",
+   "field": "summary.s2",
+   "claim": "The only performance reported is a company conference figure: an interim AACR 2023 training readout across 12 cancer types with an area under the curve of 0.94 (0.92 at stage I), without sensitivity or specificity.",
+   "sources": [
+    "https://clinicaltrials.gov/study/NCT05366881",
+    "https://www.adelabio.com/"
+   ],
+   "weight": 7.754887502163468,
+   "isNew": true,
+   "verdict": "imprecise",
+   "note": "Numbers right, design wrong: OncLive: 'The design was retrospective; samples were used from commercial, Ontario tumor banks, and University Health Network biobanks' (n = 1232, AUC 0.94); not an interim CAMPERR readout.",
+   "checkedSource": "https://www.onclive.com/view/novel-methylation-based-platform-shows-promise-for-multicancer-early-detection"
+  },
+  {
+   "id": "tests:ga68-psma-11:approvals[2]",
+   "stratum": "tests",
+   "recordId": "ga68-psma-11",
+   "kind": "drug",
+   "route": "/drugs/ga68-psma-11/",
+   "field": "approvals[2]",
+   "claim": "Gallium-68 gozetotide (PSMA-11): UK 2022, PSMA PET in prostate cancer (Locametz kit, MHRA 10 Aug 2022)",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Gallium-68%20gozetotide"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "tests:seekincare:summary.s2",
+   "stratum": "tests",
+   "recordId": "seekincare",
+   "kind": "drug",
+   "route": "/drugs/seekincare/",
+   "field": "summary.s2",
+   "claim": "A modelling paper estimated a cost of $143 per person screened; that is modelled, not a list price, and no price was found.",
+   "sources": [
+    "https://www.seekincancer.com/seekincare",
+    "https://doi.org/10.1016/j.jmoldx.2025.04.001"
+   ],
+   "weight": 9.965784284662087,
+   "isNew": true,
+   "verdict": "wrong",
+   "note": "Cancer Res Commun 2025: '$143 per individual screened' is the two-step OncoSeek-then-SeekInCare strategy; SeekInCare alone 'total costs reached $3,750 million' for five million adults. The paper was not cited.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1158/2767-9764.crc-24-0508%22&format=json&resultType=core"
+  },
+  {
+   "id": "tests:guardant360-cdx:summary.s3",
+   "stratum": "tests",
+   "recordId": "guardant360-cdx",
+   "kind": "drug",
+   "route": "/drugs/guardant360-cdx/",
+   "field": "summary.s3",
+   "claim": "Guardant360 also reports tumour profiling results beyond the companion claims as professional information.",
+   "sources": [
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010"
+   ],
+   "weight": 5.643856189774724,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "companies:alligator-bioscience:hq",
+   "stratum": "companies",
+   "recordId": "alligator-bioscience",
+   "kind": "company",
+   "route": "/companies/alligator-bioscience/",
+   "field": "hq",
+   "claim": "Alligator Bioscience is headquartered in Lund (SE)",
+   "sources": [
+    "https://www.alligatorbioscience.com/",
+    "https://doi.org/10.1016/S1470-2045(24)00263-8"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:innovent:ticker",
+   "stratum": "companies",
+   "recordId": "innovent",
+   "kind": "company",
+   "route": "/companies/innovent/",
+   "field": "ticker",
+   "claim": "Innovent Biologics trades as 1801.HK",
+   "sources": [
+    "https://www.innoventbio.com/",
+    "https://www.innoventbio.com/InvestorsAndMedia/PressReleaseDetail?key=524",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1205/2025120500041.pdf",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1229/2025122900104.pdf",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0208/2026020800009.pdf",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032500087.pdf"
+   ],
+   "weight": 6.426264754702098,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:omega-funds:hq",
+   "stratum": "companies",
+   "recordId": "omega-funds",
+   "kind": "company",
+   "route": "/companies/omega-funds/",
+   "field": "hq",
+   "claim": "Omega Funds is headquartered in Boston, MA (US)",
+   "sources": [
+    "https://omegafunds.com/",
+    "https://omegafunds.com/impact/"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:zyagnum:founded",
+   "stratum": "companies",
+   "recordId": "zyagnum",
+   "kind": "company",
+   "route": "/companies/zyagnum/",
+   "field": "founded",
+   "claim": "Zyagnum was founded in 2007",
+   "sources": [
+    "https://www.zyagnum.com/"
+   ],
+   "weight": 9.965784284662087,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:freenome:ticker",
+   "stratum": "companies",
+   "recordId": "freenome",
+   "kind": "company",
+   "route": "/companies/freenome/",
+   "field": "ticker",
+   "claim": "Freenome trades as FRNM",
+   "sources": [
+    "https://www.medtechdive.com/news/freenome-secures-fda-nod-for-blood-based-colorectal-cancer-test/826290/"
+   ],
+   "weight": 4.459431618637297,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:raysearch:hq",
+   "stratum": "companies",
+   "recordId": "raysearch",
+   "kind": "company",
+   "route": "/companies/raysearch/",
+   "field": "hq",
+   "claim": "RaySearch Laboratories is headquartered in Stockholm (SE)",
+   "sources": [
+    "https://www.raysearchlabs.com"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:phrontline-biopharma:funding[0]",
+   "stratum": "companies",
+   "recordId": "phrontline-biopharma",
+   "kind": "company",
+   "route": "/companies/phrontline-biopharma/",
+   "field": "funding[0]",
+   "claim": "Phrontline Biopharma: Pre-A+ 2025, US$60,000,000",
+   "sources": [
+    "https://www.phrontlinebio.com/News/89.html"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:scibrunch-therapeutics:founded",
+   "stratum": "companies",
+   "recordId": "scibrunch-therapeutics",
+   "kind": "company",
+   "route": "/companies/scibrunch-therapeutics/",
+   "field": "founded",
+   "claim": "SciBrunch Therapeutics was founded in 2024",
+   "sources": [
+    "https://www.scibrunch.com/",
+    "https://www.scibrunch.com/news/6",
+    "https://www.scibrunch.com/news/4",
+    "https://www.scibrunch.com/news/1",
+    "https://www.biospace.com/deals/merck-inks-up-to-2-13b-deal-to-dine-with-scibrunch-gain-rights-to-preclinical-kras-inhibitor"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:nucleai:hq",
+   "stratum": "companies",
+   "recordId": "nucleai",
+   "kind": "company",
+   "route": "/companies/nucleai/",
+   "field": "hq",
+   "claim": "Nucleai is headquartered in Tel Aviv (IL)",
+   "sources": [
+    "https://nucleai.ai/",
+    "https://nucleai.ai/news",
+    "https://nucleai.ai/nucleai-advances-ai-powered-tissue-intelligence-through-large-scale-oncology-adc-collaboration/"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:iaso-bio:founded",
+   "stratum": "companies",
+   "recordId": "iaso-bio",
+   "kind": "company",
+   "route": "/companies/iaso-bio/",
+   "field": "founded",
+   "claim": "IASO Biotherapeutics was founded in 2017",
+   "sources": [
+    "https://www.iasobio.com/"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:lanova-medicines:hq",
+   "stratum": "companies",
+   "recordId": "lanova-medicines",
+   "kind": "company",
+   "route": "/companies/lanova-medicines/",
+   "field": "hq",
+   "claim": "LaNova Medicines is headquartered in Shanghai (CN)",
+   "sources": [
+    "https://www.lanovamedicines.com",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0715/2025071500770.pdf",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042901036.pdf",
+    "https://clinicaltrials.gov/search?lead=LaNova%20Medicines%20Limited",
+    "https://www.lanovamedicines.com/en"
+   ],
+   "weight": 4.807354922057604,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:jecho:hq",
+   "stratum": "companies",
+   "recordId": "jecho",
+   "kind": "company",
+   "route": "/companies/jecho/",
+   "field": "hq",
+   "claim": "Jecho is headquartered in Frederick, MD (US)",
+   "sources": [
+    "https://www.jechobio.com/",
+    "https://clinicaltrials.gov/study/NCT07497373",
+    "https://clinicaltrials.gov/study/NCT07483970",
+    "https://clinicaltrials.gov/study/NCT07603479",
+    "https://clinicaltrials.gov/study/NCT07623850"
+   ],
+   "weight": 6,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:dxcover:hq",
+   "stratum": "companies",
+   "recordId": "dxcover",
+   "kind": "company",
+   "route": "/companies/dxcover/",
+   "field": "hq",
+   "claim": "Dxcover is headquartered in Glasgow (GB)",
+   "sources": [
+    "https://www.dxcover.com/"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:csl:founded",
+   "stratum": "companies",
+   "recordId": "csl",
+   "kind": "company",
+   "route": "/companies/csl/",
+   "field": "founded",
+   "claim": "CSL Limited was founded in 1994",
+   "sources": [
+    "https://www.csl.com",
+    "https://clinicaltrials.gov/search?lead=CSL%20Behring",
+    "https://www.wikidata.org/wiki/Q908265"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "wrong",
+   "note": "Founded 1916 as Commonwealth Serum Laboratories; 1994 is privatisation and listing (Wikipedia; Wikidata P571 holds 1994). csl.com refused scripts.",
+   "checkedSource": "https://en.wikipedia.org/wiki/CSL_Limited"
+  },
+  {
+   "id": "companies:ra-capital:founded",
+   "stratum": "companies",
+   "recordId": "ra-capital",
+   "kind": "company",
+   "route": "/companies/ra-capital/",
+   "field": "founded",
+   "claim": "RA Capital Management was founded in 2002",
+   "sources": [
+    "https://www.racap.com/",
+    "https://www.racap.com/portfolio",
+    "https://en.wikipedia.org/wiki/RA_Capital_Management"
+   ],
+   "weight": 5.247927513443585,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Firm's homepage: 'Since 2004, RA Capital has turned breakthrough science into lasting companies.' 2002 is Wikipedia's figure.",
+   "checkedSource": "https://www.racap.com/"
+  },
+  {
+   "id": "companies:parabilis-medicines:founded",
+   "stratum": "companies",
+   "recordId": "parabilis-medicines",
+   "kind": "company",
+   "route": "/companies/parabilis-medicines/",
+   "field": "founded",
+   "claim": "Parabilis Medicines was founded in 2015",
+   "sources": [
+    "https://parabilismed.com/",
+    "https://investors.parabilismed.com/",
+    "https://www.sec.gov/Archives/edgar/data/1657677/000119312526265983/pbls_424b4.htm",
+    "https://www.sec.gov/Archives/edgar/data/1657677/000119312526262880/ck0001657677-20260609.htm",
+    "https://investors.parabilismed.com/news-releases/news-release-details/parabilis-medicines-reports-second-quarter-2026-financial"
+   ],
+   "weight": 6,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:nkarta:hq",
+   "stratum": "companies",
+   "recordId": "nkarta",
+   "kind": "company",
+   "route": "/companies/nkarta/",
+   "field": "hq",
+   "claim": "Nkarta is headquartered in South San Francisco, CA (US)",
+   "sources": [
+    "https://www.nkartatx.com",
+    "https://www.fiercebiotech.com/biotech/nkartas-continues-pivot-autoimmune-disease-shelving-lymphoma-program-car-nk-candidate"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:t-maximum-pharmaceutical:hq",
+   "stratum": "companies",
+   "recordId": "t-maximum-pharmaceutical",
+   "kind": "company",
+   "route": "/companies/t-maximum-pharmaceutical/",
+   "field": "hq",
+   "claim": "T-MAXIMUM Pharmaceutical is headquartered in Beijing (CN)",
+   "sources": [
+    "https://t-maximum.com/",
+    "https://www.prnewswire.com/news-releases/t-maximum-pharmaceuticals-allogeneic-car-t-therapy-mt027-receives-fda-ind-clearance-to-proceed-to-phase-ii-clinical-trial-for-recurrent-glioblastoma-302647537.html",
+    "https://clinicaltrials.gov/study/NCT07386002",
+    "https://clinicaltrials.gov/study/NCT07897799"
+   ],
+   "weight": 9,
+   "isNew": true,
+   "verdict": "wrong",
+   "note": "Beijing is only a press-release dateline; the company's contact page lists 'R&D base Ningbo, Suzhou, Chongqing, Yantai Hong Kong, United States' and names no headquarters.",
+   "checkedSource": "https://t-maximum.com/contact.html"
+  },
+  {
+   "id": "companies:evergreen-theragnostics:hq",
+   "stratum": "companies",
+   "recordId": "evergreen-theragnostics",
+   "kind": "company",
+   "route": "/companies/evergreen-theragnostics/",
+   "field": "hq",
+   "claim": "Evergreen Theragnostics is headquartered in Springfield, NJ (US)",
+   "sources": [
+    "https://www.evergreentgn.com/",
+    "https://www.evergreentgn.com/2025/01/28/lantheus-to-acquire-evergreen-theragnostics-for-upfront-payment-of-250-million-to-drive-strategic-evolution-into-fully-integrated-radiopharmaceutical-leader/",
+    "https://www.sec.gov/Archives/edgar/data/1521036/000119312525069927/d905401d8k.htm",
+    "https://www.evergreentgn.com/news/"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "companies:daiichi-sankyo:ticker",
+   "stratum": "companies",
+   "recordId": "daiichi-sankyo",
+   "kind": "company",
+   "route": "/companies/daiichi-sankyo/",
+   "field": "ticker",
+   "claim": "Daiichi Sankyo trades as 4568.T",
+   "sources": [
+    "https://www.daiichisankyo.com"
+   ],
+   "weight": 7.894817763307944,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:rebecca-dent:role",
+   "stratum": "people",
+   "recordId": "rebecca-dent",
+   "kind": "person",
+   "route": "/people/rebecca-dent/",
+   "field": "role",
+   "claim": "Rebecca Dent: Deputy Chief Executive Officer (Clinical) (National Cancer Centre Singapore)",
+   "sources": [
+    "https://www.nccs.com.sg/about-nccs/leadership.html",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Dent+R%5BAuthor%5D+breast"
+   ],
+   "weight": 4.169925001442312,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:chen-chien-tzung:role",
+   "stratum": "people",
+   "recordId": "chen-chien-tzung",
+   "kind": "person",
+   "route": "/people/chen-chien-tzung/",
+   "field": "role",
+   "claim": "Chen Chien-Tzung: Superintendent of Linkou Chang Gung Memorial Hospital (Chang Gung Memorial Hospital)",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/林口長庚紀念醫院",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Chen+CT%5BAuthor%5D+AND+Chang+Gung+AND+plastic"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:herve-dombret:role",
+   "stratum": "people",
+   "recordId": "herve-dombret",
+   "kind": "person",
+   "route": "/people/herve-dombret/",
+   "field": "role",
+   "claim": "Hervé Dombret: Haematologist, Hôpital Saint-Louis (AP-HP), Paris (Cancer Institute AP-HP Nord, Université Paris Cité)",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Dombret%5BAuthor%5D"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:nikki-gallagher:role",
+   "stratum": "people",
+   "recordId": "nikki-gallagher",
+   "kind": "person",
+   "route": "/people/nikki-gallagher/",
+   "field": "role",
+   "claim": "Nikki Gallagher: Chief Executive Officer of the Irish Cancer Society (Irish Cancer Society)",
+   "sources": [
+    "https://www.cancer.ie/about-our-work/our-leadership"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:yoon-seung-kew:role",
+   "stratum": "people",
+   "recordId": "yoon-seung-kew",
+   "kind": "person",
+   "route": "/people/yoon-seung-kew/",
+   "field": "role",
+   "claim": "Yoon Seung-kew: President of Seoul St. Mary's Hospital (Seoul St. Mary's Hospital)",
+   "sources": [
+    "https://www.cmcseoul.or.kr/en.aboutus.greeting.sp"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:james-larkin:role",
+   "stratum": "people",
+   "recordId": "james-larkin",
+   "kind": "person",
+   "route": "/people/james-larkin/",
+   "field": "role",
+   "claim": "James Larkin: Consultant Medical Oncologist, Royal Marsden; Professor, ICR (The Royal Marsden)",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Larkin%20J%5BAuthor%5D%20melanoma%20nivolumab%20ipilimumab"
+   ],
+   "weight": 4,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:usha-menon:role",
+   "stratum": "people",
+   "recordId": "usha-menon",
+   "kind": "person",
+   "route": "/people/usha-menon/",
+   "field": "role",
+   "claim": "Usha Menon: Professor of Gynaecological Cancer, MRC Clinical Trials Unit at UCL (University College London Hospitals / UCL Cancer Institute)",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Menon%20U%5BAuthor%5D%20UKCTOCS"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "MRC CTU: 'Usha Menon Professor of Gynaecological Oncology'; ORCID: University College London. Record title and institution (UCLH) differ.",
+   "checkedSource": "https://www.mrcctu.ucl.ac.uk/about-us/our-people/"
+  },
+  {
+   "id": "people:cary-adams:role",
+   "stratum": "people",
+   "recordId": "cary-adams",
+   "kind": "person",
+   "route": "/people/cary-adams/",
+   "field": "role",
+   "claim": "Cary Adams: Chief Executive Officer, Union for International Cancer Control (since 2009) (Union for International Cancer Control)",
+   "sources": [
+    "https://www.uicc.org/mr-cary-adams-ceo",
+    "https://www.uicc.org/who-we-are/our-team"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:han-kwang-yang:role",
+   "stratum": "people",
+   "recordId": "han-kwang-yang",
+   "kind": "person",
+   "route": "/people/han-kwang-yang/",
+   "field": "role",
+   "claim": "Han-Kwang Yang: President (National Cancer Center Korea)",
+   "sources": [
+    "https://ncc.re.kr/main.ncc?uri=english/sub01_Greetings",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Yang+HK%5BAuthor%5D+AND+gastric"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:maria-victoria-mateos:role",
+   "stratum": "people",
+   "recordId": "maria-victoria-mateos",
+   "kind": "person",
+   "route": "/people/maria-victoria-mateos/",
+   "field": "role",
+   "claim": "María-Victoria Mateos: Consultant Hematologist and Director of the Myeloma Program, University Hospital of Salamanca (University Hospital of Salamanca / IBSAL)",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Mateos%20MV%5BAuthor%5D%20myeloma"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:james-yao:role",
+   "stratum": "people",
+   "recordId": "james-yao",
+   "kind": "person",
+   "route": "/people/james-yao/",
+   "field": "role",
+   "claim": "James C. Yao: Chair, Department of Gastrointestinal Medical Oncology, MD Anderson Cancer Center (MD Anderson Cancer Center)",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Yao%20JC%5BAuthor%5D%20neuroendocrine%20everolimus"
+   ],
+   "weight": 2.584962500721156,
+   "isNew": false,
+   "verdict": "stale",
+   "note": "MD Anderson profile: 'Chair, Gastrointestinal (GI) Medical Oncology ... 2015 - 2026'; the department page now shows 'Arvind Dasari, M.D. Department Chair'.",
+   "checkedSource": "https://faculty.mdanderson.org/profiles/james_yao.html"
+  },
+  {
+   "id": "people:shastri-surendra:role",
+   "stratum": "people",
+   "recordId": "shastri-surendra",
+   "kind": "person",
+   "route": "/people/shastri-surendra/",
+   "field": "role",
+   "claim": "Surendra Shastri: Preventive oncologist; former Head, Preventive Oncology, Tata Memorial Hospital (Tata Memorial Centre)",
+   "sources": [
+    "https://tmc.gov.in",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Shastri%20SS%5BAuthor%5D%20visual%20inspection%20acetic%20acid%20cervical"
+   ],
+   "weight": 3,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Tata Memorial preventive oncology affiliation documented, 'Head' title not found; papers since 2018 give MD Anderson Department of Health Disparities Research.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH:%22Shastri%20SS%22"
+  },
+  {
+   "id": "people:hu-junbo:role",
+   "stratum": "people",
+   "recordId": "hu-junbo",
+   "kind": "person",
+   "route": "/people/hu-junbo/",
+   "field": "role",
+   "claim": "Hu Junbo: President (院长) and Deputy Party Secretary, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology (Tongji Hospital, Huazhong University of Science and Technology)",
+   "sources": [
+    "https://www.tjh.com.cn/CurrentLeader/51393.html",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Hu+J%5BAuthor%5D+AND+Tongji+Hospital+Wuhan",
+    "https://en.wikipedia.org/wiki/Tongji_Hospital"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:kim-dong-wan:role",
+   "stratum": "people",
+   "recordId": "kim-dong-wan",
+   "kind": "person",
+   "route": "/people/kim-dong-wan/",
+   "field": "role",
+   "claim": "Dong-Wan Kim: Professor of Internal Medicine; thoracic oncology (Seoul National University Hospital)",
+   "sources": [
+    "https://www.snuh.org",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Kim%20DW%5BAuthor%5D%20Seoul%20National%20University%20ALK%20lung"
+   ],
+   "weight": 3.321928094887362,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "people:marek-svoboda:role",
+   "stratum": "people",
+   "recordId": "marek-svoboda",
+   "kind": "person",
+   "route": "/people/marek-svoboda/",
+   "field": "role",
+   "claim": "Marek Svoboda: General Director (Masaryk Memorial Cancer Institute)",
+   "sources": [
+    "https://www.mou.cz/en/management/t1644",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=Svoboda+M%5BAuthor%5D+Brno"
+   ],
+   "weight": 2,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Company site, SEC/HKEX filing, institution staff page, ORCID or recent paper affiliations agree."
+  },
+  {
+   "id": "precision-rows:dosing-fluorouracil-exposure:buys",
+   "stratum": "precision-rows",
+   "recordId": "dosing-fluorouracil-exposure",
+   "kind": "precision-row",
+   "route": "/live/precision/#dosing-fluorouracil-exposure",
+   "field": "buys",
+   "claim": "Fluorouracil dosing by measured blood level: In the one randomised trial, response rose from 18.3 to 33.7 per cent and severe toxicity fell; median survival was 16 against 22 months, a difference that did not reach significance. [plausible]",
+   "sources": [
+    "https://doi.org/10.1200/JCO.2007.13.3934"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:dosing-carboplatin-kidney:today",
+   "stratum": "precision-rows",
+   "recordId": "dosing-carboplatin-kidney",
+   "kind": "precision-row",
+   "route": "/live/precision/#dosing-carboplatin-kidney",
+   "field": "today",
+   "claim": "Carboplatin dosing by kidney function: 18.6 per cent with the best published equation, 25.5 per cent with Cockcroft-Gault, 14.2 per cent with a model built on the same cohort (2,471 white adults with cancer at Cambridge University Hospitals, compared with chromium-51 EDTA measured filtration) \"reduced the fraction of patients with a carboplatin dose absolute percentage error > 20% to 14.17% in contrast to 18.62% for the BSA-adjusted CKD-EPI and 25.51% for the Cockcroft-Gault formula\"",
+   "sources": [
+    "https://doi.org/10.1200/JCO.2017.72.7578"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:surg-5-ala-glioma-resection:today",
+   "stratum": "precision-rows",
+   "recordId": "surg-5-ala-glioma-resection",
+   "kind": "precision-row",
+   "route": "/live/precision/#surg-5-ala-glioma-resection",
+   "field": "today",
+   "claim": "5-aminolevulinic acid fluorescence for high-grade glioma surgery: 65 per cent with 5-aminolevulinic acid against 36 per cent under white light (Randomised phase 3 trial, 270 patients with suspected malignant glioma judged completely resectable, full-analysis population at interim (Stummer 2006)) \"Contrast-enhancing tumour was resected completely in 90 (65%) of 139 patients assigned 5-aminolevulinic acid compared with 47 (36%) of 131 assigned white light\"",
+   "sources": [
+    "https://doi.org/10.1016/S1470-2045(06)70665-9"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:dosing-thiopurines:buys",
+   "stratum": "precision-rows",
+   "recordId": "dosing-thiopurines",
+   "kind": "precision-row",
+   "route": "/live/precision/#dosing-thiopurines",
+   "field": "buys",
+   "claim": "TPMT and NUDT15 testing before thiopurine maintenance: Avoids the weeks of marrow failure that a full dose causes in a child with no enzyme, in a treatment given daily for about two years. [established]",
+   "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c6fc66b-522f-499d-961a-cde6ca0ec2e5"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "imprecise",
+   "note": "Label supports 'homozygous deficiency ... typically require 10% or less of the recommended dosage' and once-daily maintenance; it says nothing of 'weeks' of marrow failure or 'about two years'.",
+   "checkedSource": "https://api.fda.gov/drug/label.json?search=set_id:%229c6fc66b-522f-499d-961a-cde6ca0ec2e5%22"
+  },
+  {
+   "id": "precision-rows:img-psma-pet-detection-by-psa:today",
+   "stratum": "precision-rows",
+   "recordId": "img-psma-pet-detection-by-psa",
+   "kind": "precision-row",
+   "route": "/live/precision/#img-psma-pet-detection-by-psa",
+   "field": "today",
+   "claim": "PSMA PET: detection at biochemical recurrence by PSA level, and lymph node sensitivity at staging: 33, 45, 59, 75 and 95 per cent of scans positive at PSA 0 to 0.19, 0.2 to 0.49, 0.5 to 0.99, 1 to 1.99, and 2 ng/ml or more (Meta-analysis of 37 articles and 4,790 patients having gallium-68 PSMA PET, biochemical recurrence after prostatectomy or radiotherapy (Perera 2020)) \"For PSA categories 0-0.19, 0.2-0.49, 0.5-0.99, 1-1.99, and ≥2ng/ml, the percentages of positive scans were 33%, 45%, 59%, 75%, and 95%, respectively.\"",
+   "sources": [
+    "https://doi.org/10.1016/j.eururo.2019.01.049"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:rt-mr-guided-adaptive-prostate:buys",
+   "stratum": "precision-rows",
+   "recordId": "rt-mr-guided-adaptive-prostate",
+   "kind": "precision-row",
+   "route": "/live/precision/#rt-mr-guided-adaptive-prostate",
+   "field": "buys",
+   "claim": "MRI-guided adaptive stereotactic radiotherapy for prostate cancer: Fewer moderate acute urinary and bowel side effects in one randomised trial: grade 2 or worse urinary toxicity 24.4 per cent against 43.4 per cent, and bowel toxicity 0 against 10.5 per cent, within 90 days. Cancer control was not an endpoint. [established]",
+   "sources": [
+    "https://doi.org/10.1001/jamaoncol.2022.6558"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:mced-screening-precision:today",
+   "stratum": "precision-rows",
+   "recordId": "mced-screening-precision",
+   "kind": "precision-row",
+   "route": "/live/precision/#mced-screening-precision",
+   "field": "today",
+   "claim": "Multi-cancer early detection blood tests: stage I sensitivity and positive predictive value: Stage I sensitivity 16.8 per cent at 99.5 per cent specificity in the case-control validation; in screening, 45.8 to 58.0 per cent of positive results were cancer and the test found 26.7 to 37.2 per cent of all cancers diagnosed in a screening round (4,077 people in the third CCGA substudy (Klein 2021); 142,250 people aged 50 to 77 randomised in NHS-Galleri, three annual rounds (Neal 2026)) \"sensitivity increased with stage [stage I: 16.8% (14.5% to 19.5%), stage II: 40.4% (36.8% to 44.1%), stage III: 77.0% (73.4% to 80.3%), stage IV: 90.1% (87.5% to 92.2%)]\"",
+   "sources": [
+    "https://doi.org/10.1016/j.annonc.2021.05.806"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:img-low-dose-ct-nodule-false-positives:today",
+   "stratum": "precision-rows",
+   "recordId": "img-low-dose-ct-nodule-false-positives",
+   "kind": "precision-row",
+   "route": "/live/precision/#img-low-dose-ct-nodule-false-positives",
+   "field": "today",
+   "claim": "Low-dose CT lung screening: nodules, size thresholds and false positives: 24.2 per cent of low-dose CT screens were positive over three rounds, and 96.4 per cent of those positives were false (NLST, 53,454 people at high risk of lung cancer at 33 US centres, three annual screens) \"A total of 96.4% of the positive screening results in the low-dose CT group and 94.5% in the radiography group were false positive results.\"",
+   "sources": [
+    "https://doi.org/10.1056/NEJMoa1102873"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:ctdna-mrd-landmark-sensitivity:buys",
+   "stratum": "precision-rows",
+   "recordId": "ctdna-mrd-landmark-sensitivity",
+   "kind": "precision-row",
+   "route": "/live/precision/#ctdna-mrd-landmark-sensitivity",
+   "field": "buys",
+   "claim": "ctDNA residual disease tests after surgery: how many relapses one blood sample catches: Earlier warning of relapse for more people. Whether that warning changes the outcome depends on having a treatment that works at that point, which has been shown in one setting (see the row on ctDNA-triggered treatment) and not in general. The ESMO working group's 2022 position was that residual disease detection had high clinical validity and no proven clinical utility. [not-established]",
+   "sources": [
+    "https://doi.org/10.1016/j.annonc.2022.05.520"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "precision-rows:clonal-haematopoiesis-false-positives:buys",
+   "stratum": "precision-rows",
+   "recordId": "clonal-haematopoiesis-false-positives",
+   "kind": "precision-row",
+   "route": "/live/precision/#clonal-haematopoiesis-false-positives",
+   "field": "buys",
+   "claim": "Blood-cell mutations mistaken for cancer mutations in plasma tests: Fewer people offered a PARP inhibitor, or told they carry a mutation, on the strength of a variant from their blood cells rather than their cancer. [plausible]",
+   "sources": [
+    "https://doi.org/10.1001/jamaoncol.2020.5161"
+   ],
+   "weight": 3,
+   "isNew": true,
+   "verdict": "correct",
+   "note": "Matches the cited abstract, label, PMA order or registry; precision-row quotes match the Europe PMC abstract exactly.",
+   "checkedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+  },
+  {
+   "id": "country-cards:ru-how-it-differs:detail.s0",
+   "stratum": "country-cards",
+   "recordId": "ru-how-it-differs",
+   "kind": "country-card",
+   "route": "/countries/ru/",
+   "field": "detail.s0",
+   "claim": "First, the number the volumes lead with is the crude rate per 100,000 (493.9 in 2025), not the age-standardised rate that GLOBOCAN and Western registries use; the incidence volume does give world-standard rates, but by sex (287.8 in men and 243.0 in women in 2024).",
+   "sources": [
+    "https://glavonco.ru/cancer_register/",
+    "https://gco.iarc.who.int/today/en/data-sources-methods"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Crude 493.9 confirmed; 287.8 and 243.0 are world-standardised by sex, but the volume also gives a both-sexes standardised rate (255.27), so the sentence mislabels.",
+   "checkedSource": "https://glavonco.ru/cancer_register/"
+  },
+  {
+   "id": "country-cards:de-psma:detail.s2",
+   "stratum": "country-cards",
+   "recordId": "de-psma",
+   "kind": "country-card",
+   "route": "/countries/de/",
+   "field": "detail.s2",
+   "claim": "In 2016 Kratochwil and colleagues reported the first alpha-emitting version, 225Ac-PSMA-617, in men who had exhausted beta therapy (doi:10.2967/jnumed.116.178673).",
+   "sources": [
+    "https://doi.org/10.2967/jnumed.114.147413",
+    "https://doi.org/10.2967/jnumed.115.161299",
+    "https://doi.org/10.2967/jnumed.116.178673"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Kratochwil JNM 2016: 'one patient in whom treatment with beta-emitters was contraindicated (patient A) and one patient resistant to 177Lu-PSMA-617 (patient B)'; only one had exhausted beta therapy.",
+   "checkedSource": "https://jnm.snmjournals.org/content/57/12/1941"
+  },
+  {
+   "id": "country-cards:il-diagnostics-and-devices:detail.s0",
+   "stratum": "country-cards",
+   "recordId": "il-diagnostics-and-devices",
+   "kind": "country-card",
+   "route": "/countries/il/",
+   "field": "detail.s0",
+   "claim": "Investment in Israeli life sciences and health technology fell about 40 percent in 2025 to around 1.6 billion US dollars, with private investment about 1.45 billion across 165 deals, the lowest in five years, against about 1,800 active companies and 81,000 employees; the sector's own annual report has no count of oncology companies, so any such number is unsourced.",
+   "sources": [
+    "https://iati.co.il/wp-content/uploads/2026/06/Press-Release-IATI-and-Israel-Innovation-Authority-Life-Sciences-Report-2026.pdf",
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN220077",
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110039",
+    "https://www.sec.gov/Archives/edgar/data/1871321/000121390026025174/ea0279271-20f_alpha.htm",
+    "https://en.globes.co.il/en/article-xact-robotics-shuts-down-lays-off-65-1001456845"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "unsourced",
+   "note": "Press release confirms the 40% decline, ~$1.6 billion, >90% private, 81,000 employees; '1.45 billion across 165 deals' and '1,800 active companies' are not in the cited source.",
+   "checkedSource": "https://iati.co.il/wp-content/uploads/2026/06/Press-Release-IATI-and-Israel-Innovation-Authority-Life-Sciences-Report-2026.pdf"
+  },
+  {
+   "id": "country-cards:il-what-came-out-of-israel:detail.s0",
+   "stratum": "country-cards",
+   "recordId": "il-what-came-out-of-israel",
+   "kind": "country-card",
+   "route": "/countries/il/",
+   "field": "detail.s0",
+   "claim": "In 1989 Gross, Waks and Eshhar at the Weizmann Institute spliced the variable domains of an antibody onto the constant domains of the T-cell receptor and put the construct into a cytotoxic T-cell hybridoma.",
+   "sources": [
+    "https://doi.org/10.1073/pnas.86.24.10024",
+    "https://doi.org/10.1016/0006-291x(87)90502-x",
+    "https://api.nobelprize.org/2.1/nobelPrize/che/2004",
+    "https://doi.org/10.1016/j.jconrel.2012.03.020",
+    "https://www.sec.gov/Archives/edgar/data/765258/000104746908002103/a2183116zex-10_40.htm"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "country-cards:jp-outside:detail.s0",
+   "stratum": "country-cards",
+   "recordId": "jp-outside",
+   "kind": "country-card",
+   "route": "/countries/jp/",
+   "field": "detail.s0",
+   "claim": "Advanced medical care is one of the evaluation treatments the minister designates under the 2006 amendment to the Health Insurance Act, for techniques being assessed for future insurance cover; a hospital meeting the facility standard for a given technique may notify and then combine it with insured care.",
+   "sources": [
+    "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index.html",
+    "https://www.antm.or.jp/file/a406a8faf60416aa0c16fc92794b99244154eca1.pdf"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "country-cards:in-public-centres:detail.s0",
+   "stratum": "country-cards",
+   "recordId": "in-public-centres",
+   "kind": "country-card",
+   "route": "/countries/in/",
+   "field": "detail.s0",
+   "claim": "Tata Memorial Centre, run by the Department of Atomic Energy, registers well over 100,000 new patients a year across its Mumbai hospitals and its units in Varanasi, Sangrur and Mullanpur, Visakhapatnam, Muzaffarpur and Guwahati, treating the majority in the general (subsidised) category.",
+   "sources": [
+    "https://tmc.gov.in",
+    "https://www.cancerinstitutewia.in",
+    "https://pmssy.mohfw.gov.in"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "unreachable",
+   "note": "tmc.gov.in rejects scripted requests.",
+   "checkedSource": "https://tmc.gov.in"
+  },
+  {
+   "id": "country-cards:us-workforce:detail.s2",
+   "stratum": "country-cards",
+   "recordId": "us-workforce",
+   "kind": "country-card",
+   "route": "/countries/us/",
+   "field": "detail.s2",
+   "claim": "In 2024 only 45 per cent of counties (1,420) had an oncologist present, although those counties held 89 per cent of adults aged 55 and over.",
+   "sources": [
+    "https://doi.org/10.1200/OP-25-00144",
+    "https://www.cdc.gov/mmwr/volumes/66/ss/ss6614a1.htm"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "country-cards:il-apc-i1307k:detail.s1",
+   "stratum": "country-cards",
+   "recordId": "il-apc-i1307k",
+   "kind": "country-card",
+   "route": "/countries/il/",
+   "field": "detail.s1",
+   "claim": "The InSiGHT position statement of 2023, from a systematic review of 65 papers, records a gnomAD minor allele frequency of 3.6 percent in Ashkenazi Jewish ancestry against under 0.15 percent in European, Asian, Latino or African populations, and about 2.5 percent in Sephardi Jewish individuals; it classifies the variant as pathogenic with low penetrance, a risk factor in people of Ashkenazi Jewish origin who should be tested and offered surveillance, with insufficient evidence in other populations.",
+   "sources": [
+    "https://doi.org/10.1038/ng0997-79",
+    "https://doi.org/10.1136/jmg-2022-108984",
+    "https://doi.org/10.1136/jmg-2025-110911",
+    "https://doi.org/10.1002/ijc.29876"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "country-cards:de-speed:detail.s5",
+   "stratum": "country-cards",
+   "recordId": "de-speed",
+   "kind": "country-card",
+   "route": "/countries/de/",
+   "field": "detail.s5",
+   "claim": "For oncology alone Germany's median was 47 days against a European average of 598, with Romania at 1,227 and Portugal at 1,026.",
+   "sources": [
+    "https://www.efpia.eu/media/mnfdwzax/efpia-patients-wait-indicator-2025.pdf",
+    "https://www.efpia.eu/news-events/the-efpia-view/statements-press-releases/patients-in-europe-waiting-longer-for-new-medicines-as-inequality-grows-between-member-states/"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "wrong",
+   "note": "EFPIA W.A.I.T. 2025 p.27: Germany 47, EU average 598 correct, but 1,227 is Estonia and 1,026 Lithuania; Romania 925, Portugal 919.",
+   "checkedSource": "https://www.efpia.eu/media/mnfdwzax/efpia-patients-wait-indicator-2025.pdf"
+  },
+  {
+   "id": "country-cards:gb-what-counts:detail.s3",
+   "stratum": "country-cards",
+   "recordId": "gb-what-counts",
+   "kind": "country-card",
+   "route": "/countries/gb/",
+   "field": "detail.s3",
+   "claim": "Clark level greater than 1, melanoma of any site except eye); includes C43\": C44 does not appear on the list at all.",
+   "sources": [
+    "https://www.england.nhs.uk/long-read/national-cancer-waiting-times-monitoring-dataset-guidance/",
+    "https://publichealthscotland.scot/media/39235/2026-06-30-cwt-table-1-compliance-to-standard.xlsx",
+    "https://www.health-ni.gov.uk/sites/default/files/2026-07/hs-niwts-cwt-icd10-q4-25-26.xlsx"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "imprecise",
+   "note": "Quotation altered: workbook reads 'melanoma - new primary invasive (i.e. Clark level > 1, melanoma of any site except eye); includes C43 (Skin)'.",
+   "checkedSource": "https://publichealthscotland.scot/media/39235/2026-06-30-cwt-table-1-compliance-to-standard.xlsx"
+  },
+  {
+   "id": "country-cards:jp-evidence:detail.s1",
+   "stratum": "country-cards",
+   "recordId": "jp-evidence",
+   "kind": "country-card",
+   "route": "/countries/jp/",
+   "field": "detail.s1",
+   "claim": "The 2005 edition had graded endoscopy I, insufficient evidence; the upgrade to B came with the 2014 edition, and the guideline page names as its confirming evidence a Korean nested case-control study in 16.6 million people.",
+   "sources": [
+    "https://canscreen.ncc.go.jp/guideline/igan.html",
+    "https://canscreen.ncc.go.jp/",
+    "https://doi.org/10.1053/j.gastro.2017.01.029"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  },
+  {
+   "id": "country-cards:il-reliance:detail.s7",
+   "stratum": "country-cards",
+   "recordId": "il-reliance",
+   "kind": "country-card",
+   "route": "/countries/il/",
+   "field": "detail.s7",
+   "claim": "The general statutory deadline is 270 days from submission, with a stop-clock while the applicant completes the file.",
+   "sources": [
+    "https://he.wikisource.org/wiki/%D7%AA%D7%A7%D7%A0%D7%95%D7%AA_%D7%94%D7%A8%D7%95%D7%A7%D7%97%D7%99%D7%9D_(%D7%AA%D7%9B%D7%A9%D7%99%D7%A8%D7%99%D7%9D)",
+    "https://olaw.org.il/takanot/takanot-10083.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13475465/"
+   ],
+   "weight": 1,
+   "isNew": false,
+   "verdict": "correct",
+   "note": "Matches the cited statistics page, paper, label or regulation as read in raw text by the checker."
+  }
+ ]
+}

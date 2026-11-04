@@ -3104,7 +3104,7 @@ export const papersSubtypesWave: PaperInput[] = [
 
   p({ id: "paper-cemiplimab-bcc-stratigos-lancet-oncol-2021", name: "Cemiplimab in locally advanced basal cell carcinoma after hedgehog inhibitor therapy",
     tldr: "In patients whose locally advanced basal cell carcinoma had progressed on or could not tolerate a hedgehog inhibitor, cemiplimab shrank tumours in about three in ten, giving a second-line option where none existed.",
-    summary: "Phase 2 study of 84 patients with locally advanced basal cell carcinoma after progression on or intolerance of hedgehog pathway inhibitors treated with cemiplimab.\n\nObjective response was 31 percent (6 percent complete), with an estimated 85 percent of responses lasting at least a year and toxicity typical of PD-1 blockade; the metastatic cohort responded in about a fifth.",
+    summary: "Phase 2 study of 84 patients with locally advanced basal cell carcinoma after progression on or intolerance of hedgehog pathway inhibitors treated with cemiplimab.\n\nObjective response was 31 percent (6 percent complete), with an estimated 85 percent of responses lasting at least a year and toxicity typical of PD-1 blockade. The paper reports only the locally advanced group; the metastatic group's data had not matured.",
     journal: "The Lancet Oncology", year: 2021, doi: "10.1016/S1470-2045(21)00126-1", pmid: "34000246",
     authors: "Stratigos AJ, Sekulic A, Peris K, et al.", paperType: "observational", participants: 84, changedPractice: true,
     findings: ["Objective response 31 percent; complete response 6 percent.", "Estimated duration of response of at least 12 months in 85 percent of responders."],

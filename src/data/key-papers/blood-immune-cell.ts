@@ -136,7 +136,7 @@ export const papersBloodImmuneCell: PaperInput[] = [
     whatItMeans: "CARTITUDE-4 is the first randomised trial to show that a CAR-T improves survival in myeloma, and it moved cilta-cel into second-line use (FDA approval 2024). For patients whose disease returns after first-line lenalidomide, a one-off cell therapy now competes with continuous drug combinations. Capacity, cost and the need for bridging therapy still limit who actually receives it.",
     caveats: ["Open-label; standard-of-care arm was a mix of two regimens, neither of which is the strongest available.", "Intention-to-treat analysis includes patients who progressed during bridging; per-protocol PFS is even more favourable.", "Only about 15% of standard-arm patients later received CAR-T, so the comparison is partly CAR-T now versus never.", "Secondary haematological malignancies and late neurotoxicity remain concerns."],
     changedPractice: true, participants: 419,
-    links: [doi("10.1056/NEJMoa2303379"), ct("NCT04181827")],
+    links: [doi("10.1056/NEJMoa2303379"), doi("10.1016/S1470-2045(25)00653-9"), ct("NCT04181827")],
     cancers: ["multiple-myeloma"], drugs: ["ciltacabtagene-autoleucel", "daratumumab", "pomalidomide", "bortezomib"], targets: ["bcma"], technologies: ["car-t"], trials: ["cartitude-4", "cartitude-5"], terms: ["pfs", "os", "mrd-negativity-myeloma", "crs"], companies: ["legend-biotech", "johnson-johnson"], related: ["paper-karmma-3-ide-cel-nejm-2023"], bottlenecks: ["b-manufacturing-cell-therapy", "b-global-access"], journals: ["nejm"] }),
 
   p({ id: "paper-karmma-3-ide-cel-nejm-2023", name: "KarMMa-3: ide-cel CAR-T versus standard regimens in triple-class-exposed relapsed myeloma",

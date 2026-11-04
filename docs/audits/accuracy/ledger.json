@@ -1,0 +1,448 @@
+{
+ "rounds": [
+  {
+   "sample": "docs/audits/accuracy/sample-2026-11-03-20261103.json",
+   "drawn": "2026-11-03",
+   "seed": 20261103,
+   "corpusSize": 20224,
+   "pending": 0,
+   "overall": {
+    "n": 182,
+    "checked": 178,
+    "counts": {
+     "correct": 147,
+     "stale": 5,
+     "imprecise": 19,
+     "wrong": 6,
+     "unsourced": 1,
+     "unreachable": 4
+    },
+    "errorRate": 0.17415730337078653,
+    "errorCi": [
+     0.1254904096765339,
+     0.23659175414076644
+    ],
+    "wrongRate": 0.033707865168539325,
+    "wrongCi": [
+     0.01553822830688448,
+     0.07157935094890738
+    ]
+   },
+   "strata": {
+    "paper-identifiers": {
+     "n": 15,
+     "checked": 15,
+     "counts": {
+      "correct": 14,
+      "stale": 1,
+      "imprecise": 0,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.06666666666666667,
+     "errorCi": [
+      0.011866588606194856,
+      0.2981707755242399
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.20388926630434784
+     ]
+    },
+    "paper-findings": {
+     "n": 20,
+     "checked": 18,
+     "counts": {
+      "correct": 16,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 2
+     },
+     "errorRate": 0.1111111111111111,
+     "errorCi": [
+      0.031018868453582787,
+      0.3280024486660421
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.1758845505823749
+     ]
+    },
+    "trial-facts": {
+     "n": 25,
+     "checked": 25,
+     "counts": {
+      "correct": 25,
+      "stale": 0,
+      "imprecise": 0,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0,
+     "errorCi": [
+      0,
+      0.13319649395317873
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.13319649395317873
+     ]
+    },
+    "drug-approvals": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 18,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.1,
+     "errorCi": [
+      0.027865893984153206,
+      0.30103820641179335
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.16113012549493322
+     ]
+    },
+    "drug-numbers": {
+     "n": 10,
+     "checked": 10,
+     "counts": {
+      "correct": 5,
+      "stale": 1,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.5,
+     "errorCi": [
+      0.23658959361548731,
+      0.7634104063845126
+     ],
+     "wrongRate": 0.1,
+     "wrongCi": [
+      0.01787574951572113,
+      0.4041563854975721
+     ]
+    },
+    "cancer-numbers": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 14,
+      "stale": 2,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.3,
+     "errorCi": [
+      0.14547527396899385,
+      0.5189767762289793
+     ],
+     "wrongRate": 0.05,
+     "wrongCi": [
+      0.008881219432873136,
+      0.23613589351256675
+     ]
+    },
+    "tests": {
+     "n": 15,
+     "checked": 14,
+     "counts": {
+      "correct": 11,
+      "stale": 0,
+      "imprecise": 2,
+      "wrong": 1,
+      "unsourced": 0,
+      "unreachable": 1
+     },
+     "errorRate": 0.21428571428571427,
+     "errorCi": [
+      0.0757124833691637,
+      0.4758972377320828
+     ],
+     "wrongRate": 0.07142857142857142,
+     "wrongCi": [
+      0.012721886112291636,
+      0.3146926955395781
+     ]
+    },
+    "companies": {
+     "n": 20,
+     "checked": 20,
+     "counts": {
+      "correct": 17,
+      "stale": 0,
+      "imprecise": 1,
+      "wrong": 2,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.15,
+     "errorCi": [
+      0.05236779195949584,
+      0.36042329588695743
+     ],
+     "wrongRate": 0.1,
+     "wrongCi": [
+      0.027865893984153206,
+      0.30103820641179335
+     ]
+    },
+    "people": {
+     "n": 15,
+     "checked": 15,
+     "counts": {
+      "correct": 12,
+      "stale": 1,
+      "imprecise": 2,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.2,
+     "errorCi": [
+      0.07047420643610414,
+      0.4518593533465045
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.20388926630434784
+     ]
+    },
+    "precision-rows": {
+     "n": 10,
+     "checked": 10,
+     "counts": {
+      "correct": 9,
+      "stale": 0,
+      "imprecise": 1,
+      "wrong": 0,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.1,
+     "errorCi": [
+      0.01787574951572113,
+      0.4041563854975721
+     ],
+     "wrongRate": 0,
+     "wrongCi": [
+      0,
+      0.2775401687666166
+     ]
+    },
+    "country-cards": {
+     "n": 12,
+     "checked": 11,
+     "counts": {
+      "correct": 6,
+      "stale": 0,
+      "imprecise": 3,
+      "wrong": 1,
+      "unsourced": 1,
+      "unreachable": 1
+     },
+     "errorRate": 0.45454545454545453,
+     "errorCi": [
+      0.21270957543988045,
+      0.7199122443100118
+     ],
+     "wrongRate": 0.09090909090909091,
+     "wrongCi": [
+      0.01623175226282597,
+      0.3773646254862038
+     ]
+    }
+   },
+   "byAge": {
+    "lastMonth": {
+     "n": 39,
+     "checked": 39,
+     "counts": {
+      "correct": 33,
+      "stale": 0,
+      "imprecise": 3,
+      "wrong": 3,
+      "unsourced": 0,
+      "unreachable": 0
+     },
+     "errorRate": 0.15384615384615385,
+     "errorCi": [
+      0.07247373845051469,
+      0.2972976986573431
+     ],
+     "wrongRate": 0.07692307692307693,
+     "wrongCi": [
+      0.026506914073495688,
+      0.2032137312805527
+     ]
+    },
+    "older": {
+     "n": 143,
+     "checked": 139,
+     "counts": {
+      "correct": 114,
+      "stale": 5,
+      "imprecise": 16,
+      "wrong": 3,
+      "unsourced": 1,
+      "unreachable": 4
+     },
+     "errorRate": 0.17985611510791366,
+     "errorCi": [
+      0.12489545308444837,
+      0.252036757140024
+     ],
+     "wrongRate": 0.02158273381294964,
+     "wrongCi": [
+      0.007366681010400868,
+      0.06153201516774331
+     ]
+    }
+   }
+  },
+  {
+   "sample": "docs/audits/accuracy/sample-2026-11-03-round2-sweep.json",
+   "drawn": "2026-11-04",
+   "seed": 0,
+   "method": "sweep",
+   "round": 2,
+   "scope": "Census, not a sample: every numeric or dated sentence on the live country pages (src/data/country-us, -gb, -de, -il, -in, -jp, -ru, country-extras and china.ts) and every figure-bearing sentence on the 60 cancer pages with the most inbound links (summary, burden, prognosis, stateOfArt, standardOfCare, basics, openProblems). Verdicts record the text as it stood before this round's fixes; `fixed` says what changed.",
+   "skipped": 422,
+   "corpusSize": 20309,
+   "pending": 0,
+   "overall": {
+    "n": 3453,
+    "checked": 3402,
+    "counts": {
+     "correct": 2619,
+     "stale": 58,
+     "imprecise": 256,
+     "wrong": 95,
+     "unsourced": 374,
+     "unreachable": 51
+    },
+    "errorRate": 0.23015873015873015,
+    "errorCi": [
+     0.21632279036889157,
+     0.24460340185331858
+    ],
+    "wrongRate": 0.02792475014697237,
+    "wrongCi": [
+     0.02289831001315908,
+     0.03401613956077295
+    ]
+   },
+   "strata": {
+    "cancer-numbers": {
+     "n": 1632,
+     "checked": 1595,
+     "counts": {
+      "correct": 1264,
+      "stale": 28,
+      "imprecise": 132,
+      "wrong": 19,
+      "unsourced": 152,
+      "unreachable": 37
+     },
+     "errorRate": 0.20752351097178684,
+     "errorCi": [
+      0.18833549404802377,
+      0.22811701757038796
+     ],
+     "wrongRate": 0.011912225705329153,
+     "wrongCi": [
+      0.007639207989054015,
+      0.01853073905260414
+     ]
+    },
+    "country-cards": {
+     "n": 1821,
+     "checked": 1807,
+     "counts": {
+      "correct": 1355,
+      "stale": 30,
+      "imprecise": 124,
+      "wrong": 76,
+      "unsourced": 222,
+      "unreachable": 14
+     },
+     "errorRate": 0.2501383508577753,
+     "errorCi": [
+      0.23071350601860063,
+      0.2706233309526729
+     ],
+     "wrongRate": 0.042058660763696736,
+     "wrongCi": [
+      0.033734124698500484,
+      0.05232619112371169
+     ]
+    }
+   },
+   "byAge": {
+    "lastMonth": {
+     "n": 1489,
+     "checked": 1480,
+     "counts": {
+      "correct": 1150,
+      "stale": 25,
+      "imprecise": 113,
+      "wrong": 65,
+      "unsourced": 127,
+      "unreachable": 9
+     },
+     "errorRate": 0.22297297297297297,
+     "errorCi": [
+      0.20249899329477508,
+      0.24488137398971135
+     ],
+     "wrongRate": 0.04391891891891892,
+     "wrongCi": [
+      0.034606618940097866,
+      0.05559276622338588
+     ]
+    },
+    "older": {
+     "n": 1964,
+     "checked": 1922,
+     "counts": {
+      "correct": 1469,
+      "stale": 33,
+      "imprecise": 143,
+      "wrong": 30,
+      "unsourced": 247,
+      "unreachable": 42
+     },
+     "errorRate": 0.2356919875130073,
+     "errorCi": [
+      0.21725564011002865,
+      0.25518279927148646
+     ],
+     "wrongRate": 0.015608740894901144,
+     "wrongCi": [
+      0.010955076183690987,
+      0.022194898352117153
+     ]
+    }
+   }
+  }
+ ]
+}

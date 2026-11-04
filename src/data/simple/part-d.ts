@@ -12,7 +12,7 @@ export const simpleD: Record<string, string> = {
   ahod2131: "This trial is testing whether children and adults with early Hodgkin lymphoma can have immune drugs instead of some chemotherapy and radiation; there are no results yet.",
   alascca: "This trial tested whether three years of low-dose aspirin helped people whose bowel cancer carried certain gene changes; it found the cancer came back about half as often.",
   "alfa-0701": "This trial tested whether small doses of an antibody-drug added to chemotherapy helped people with acute leukaemia; it found they stayed free of the disease for longer.",
-  "alphamedix-02": "This trial tested a new radioactive drug in people with gut and pancreas hormone tumours; it found more than half of those new to radioactive treatment responded.",
+  "alphamedix-02": "This trial tested a new radioactive drug in people with gut and pancreas hormone tumours; the drug met all the trial's main goals, though the detailed results have not yet been published.",
   alpine: "This trial compared two pills for people whose chronic leukaemia had come back; it found the newer pill worked better and caused fewer heart rhythm problems.",
   amplify: "This trial tested whether two pills taken for a fixed time helped fit people with chronic leukaemia; it found they beat chemotherapy, and the pair was approved.",
   announce: "This trial tested whether adding a new antibody to chemotherapy helped people with soft tissue sarcoma; it found no benefit, and the drug was withdrawn.",

@@ -42,7 +42,7 @@ export const lymphomaCellOfOriginPapers: PaperInput[] = [
       "Microarray profiling on fresh-frozen tissue was never routinely available; the Hans immunohistochemistry algorithm was the compromise that carried the idea into clinics, at the cost of accuracy.",
     ],
     links: [doi("10.1056/NEJMoa012914", "New England Journal of Medicine 2002"), pubmed("12075054"), epmc("12075054")],
-    cancers: [CX.dlbcl, CX.nhl], targets: ["bcl2", "bcl6", "myc"],
+    cancers: [CX.dlbcl, CX.nhl], targets: ["bcl2", "bcl6", "myc-gene"],
     terms: ["cell-of-origin", "ipi-score"], sections: ["diagnostics", "ai-computation"],
     bottlenecks: ["b-tumor-heterogeneity", "b-biomarker-validation"], journals: ["nejm"],
     people: ["louis-staudt"], institutions: ["nci"],
@@ -268,7 +268,7 @@ export const lymphomaVirusPapers: PaperInput[] = [
       "The association with Epstein-Barr virus and with holoendemic malaria was established by others over the following two decades, not in this paper.",
     ],
     links: [doi("10.1002/bjs.18004619704", "British Journal of Surgery 1958"), pubmed("13628987"), epmc("13628987")],
-    cancers: [CX.burkitt, CX.nhl], targets: ["myc"], sections: ["diagnostics", "prevention"],
+    cancers: [CX.burkitt, CX.nhl], targets: ["myc-gene"], sections: ["diagnostics", "prevention"],
     bottlenecks: ["b-global-access", "b-rare-cancers"],
     related: ["paper-epstein-virus-particles-burkitt-lymphoblasts-lancet-1964", "lymphoma-roadmap"] }),
 
@@ -324,7 +324,7 @@ export const lymphomaVirusPapers: PaperInput[] = [
     name: "Adult T-cell leukemia: antigen in an ATL cell line and detection of antibodies to the antigen in human sera",
     aka: ["Hinuma 1981", "ATLA antigen", "Seroepidemiology of HTLV-1 in Japan"],
     tldr: "Japanese researchers found an antigen in cells from a patient with an unusual leukaemia, then found antibodies to it in every one of 44 patients with that leukaemia and in a quarter of healthy adults where the disease clusters.",
-    summary: "Yorio Hinuma and colleagues used indirect immunofluorescence to detect an antigen in the cytoplasm of 1 to 5 per cent of cells of MT-1, a T-cell line from a patient with adult T-cell leukaemia, a disease endemic in southwestern Japan. The antigen was absent from six other T-cell lines, seven B-cell lines and four non-T non-B lines, and did not cross-react with Epstein-Barr virus, herpes simplex virus, cytomegalovirus, varicella-zoster virus, herpesvirus saimiri or Marek disease virus. Culturing with 5-iodo-2'-deoxyuridine increased the proportion of antigen-bearing cells roughly fivefold, and electron microscopy of those cultures showed extracellular type C virus particles.\n\nThe serology is what made the case. Antibodies against the antigen were found in all 44 patients with adult T-cell leukaemia examined, in 32 of 40 patients with malignant T-cell lymphomas resembling it, in 26 per cent of healthy adults from endemic areas, and in only a few of those from non-endemic areas.\n\nTogether with Poiesz's isolation of the virus in the United States the year before, this established human T-lymphotropic virus type 1 as the cause of adult T-cell leukaemia/lymphoma, a disease the OnCo corpus does not yet hold as a record of its own.",
+    summary: "Yorio Hinuma and colleagues used indirect immunofluorescence to detect an antigen in the cytoplasm of 1 to 5 per cent of cells of MT-1, a T-cell line from a patient with adult T-cell leukaemia, a disease endemic in southwestern Japan. The antigen was absent from six other T-cell lines, seven B-cell lines and four non-T non-B lines, and did not cross-react with Epstein-Barr virus, herpes simplex virus, cytomegalovirus, varicella-zoster virus, herpesvirus saimiri or Marek disease virus. Culturing with 5-iodo-2'-deoxyuridine increased the proportion of antigen-bearing cells roughly fivefold, and electron microscopy of those cultures showed extracellular type C virus particles.\n\nThe serology is what made the case. Antibodies against the antigen were found in all 44 patients with adult T-cell leukaemia examined, in 32 of 40 patients with malignant T-cell lymphomas resembling it, in 26 per cent of healthy adults from endemic areas, and in only a few of those from non-endemic areas.\n\nTogether with Poiesz's isolation of the virus in the United States the year before, this established human T-lymphotropic virus type 1 as the cause of adult T-cell leukaemia/lymphoma.",
     journal: "Proceedings of the National Academy of Sciences", year: 1981, doi: "10.1073/pnas.78.10.6476", pmid: "7031654",
     authors: "Hinuma Y, Nagata K, Hanaoka M, et al.", paperType: "basic", changedPractice: true,
     findings: [

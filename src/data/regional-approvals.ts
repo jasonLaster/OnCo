@@ -121,7 +121,7 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   toripalimab: { US: A(2023, undefined, "Nasopharyngeal carcinoma (first PD-1 for NPC)"), EU: A(2024, epar("loqtorzi")), UK: A(2025, mhra("Loqtorzi")), CN: A(2018, NMPA, "Melanoma (Dec 2018); 10+ indications"), AU: A(2025, tga("Loqtorzi")) },
   serplulimab: { US: UR("BLA for ES-SCLC; bridging trial ASTRIDE"), EU: A(2025, epar("hetronifly"), "ES-SCLC with chemotherapy"), UK: A(2025, mhra("Hetronifly")), CN: A(2022, NMPA, "MSI-H solid tumours (Mar 2022); ES-SCLC") },
   camrelizumab: { US: UR("CRLs May 2024, Mar 2025 (with rivoceranib, HCC); resubmission"), CN: A(2019, NMPA, "cHL (May 2019); multiple indications"), EU: NF() },
-  "camrelizumab-rivoceranib": { US: UR("Third CRL 23 Jul 2026 for 1L HCC"), CN: A(2023, NMPA, "1L unresectable HCC (Jan 2023)") },
+  "camrelizumab-rivoceranib": { US: UR("Third CRL 10 Jul 2026 for 1L HCC"), CN: A(2023, NMPA, "1L unresectable HCC (Jan 2023)") },
   cadonilimab: { US: NF("Akeso has not filed ex-China"), CN: A(2022, NMPA, "Recurrent/metastatic cervical (Jun 2022); 1L gastric (Sep 2024)") },
   ivonescimab: { US: UR("Summit BLA for EGFR-mutant NSCLC post-TKI; PDUFA Nov 2026 (HARMONi-3 interim PFS miss noted)"), EU: NF("No MAA announced"), CN: A(2024, NMPA, "EGFR-mutant NSCLC after TKI (May 2024); 1L PD-L1+ NSCLC (Apr 2025)") },
   fianlimab: { US: UR("Phase 3 in melanoma missed primary endpoint 2026") },
@@ -189,7 +189,7 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   "lu177-psma-it": { US: UR("SPLASH phase 3 met rPFS, missed OS; BLA decision pending"), EU: UR("ECLIPSE/SPLASH; no MAA decision") },
   "ac225-psma": { US: UR("Phase 3 AcTION / AlphaBreak / PAnTHA") },
   ryz101: { US: UR("Phase 3 ACTION-1") },
-  "itm-11": { US: UR("PDUFA 28 Aug 2026 (COMPETE); decision not yet in corpus"), EU: UR("MAA 2026") },
+  "itm-11": { US: UR("CRL 7 Aug 2026 (manufacturing and facility items, no clinical issues); resubmission planned", "https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/itm-receives-complete-response-letter-for-177lu-edotreotide-itm-11-763/"), EU: UR("MAA 2026") },
   "aminolevulinic-acid-gleolan": { US: A(2017, daf("208630"), undefined, "Gleolan; 6 Jun 2017"), EU: A(2007, epar("gliolan"), undefined, "Gliolan; 7 Sep 2007"), UK: A(2007, mhra("Gliolan"), undefined, UK_FROM_EU), JP: A(2013, PMDA, "Alaglio (SBI Pharma)"), AU: A(undefined, tga("Gliolan")) },
   "fluciclovine-f18": { US: A(2016, daf("208054"), undefined, "Axumin; 27 May 2016"), EU: A(2017, epar("axumin"), undefined, "Axumin; 21 May 2017"), UK: A(2017, mhra("Axumin"), undefined, UK_FROM_EU), JP: A(2021, PMDA, "Axumin, imaging of suspected newly identified malignant glioma for resection planning; 23 Mar 2021 (Nihon Medi-Physics)") },
   "fluoroestradiol-f18": { US: A(2020, daf("212155"), "Oestrogen receptor-positive lesions in recurrent or metastatic breast cancer", "Cerianna; 20 May 2020"), EU: A(undefined, ansm("64307631"), undefined, "No centralised EPAR; France: Estrotep (GE Healthcare) national authorisation, 21 Jul 2016") },
@@ -206,7 +206,7 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   // ================= Kinase and small-molecule targeted =================
   osimertinib: global("Tagrisso", "tagrisso", 2015, 2016, 2016, 2016, 2017, 2016),
   furmonertinib: { US: UR("ArriVent: EGFR exon 20 insertion programme (FURVENT phase 3)"), CN: A(2021, NMPA, "T790M 2L Mar 2021; 1L EGFR-mutant Jun 2022") },
-  aumolertinib: { US: NF("No NDA"), EU: A(2026, epar("aumseqa"), "Aumseqa: first-line EGFR exon 19 deletion or L858R advanced NSCLC, and T790M-positive NSCLC; February 2026"), CN: A(2020, NMPA, "T790M 2L Mar 2020; 1L EGFR-mutant Dec 2021") },
+  aumolertinib: { US: NF("No NDA"), EU: W(2026, epar("aumseqa"), "Aumseqa authorised February 2026 (first-line EGFR exon 19 deletion or L858R advanced NSCLC, and T790M-positive NSCLC); the European Commission revoked the authorisation on 25 Sep 2026 after an EMA review found the application relied in part on another medicine's data still under regulatory data protection"), CN: A(2020, NMPA, "T790M 2L Mar 2020; 1L EGFR-mutant Dec 2021") },
   icotinib: { US: NF(), CN: A(2011, NMPA, "First China-invented targeted cancer drug; 2L NSCLC 2011, 1L 2014, adjuvant 2021") },
   savolitinib: { US: NF("Global SAFFRON phase 3 with osimertinib ongoing"), EU: NF(), CN: A(2021, NMPA, "MET exon 14 NSCLC (conditional Jun 2021); with osimertinib 2025") },
   anlotinib: { US: NF(), EU: R(2026, "CHMP negative opinion 23 Jul 2026 on Qezzaqar (catequentinib; applicant CATS Consultants) for synovial sarcoma and leiomyosarcoma"), CN: A(2018, NMPA, "3L NSCLC May 2018; sarcoma and SCLC 2019; MTC 2020") },
@@ -475,14 +475,14 @@ export const regionalApprovals: Record<string, RegionalRow> = {
 
   // ================= India-first products =================
   "talicabtagene-autoleucel": { IN: IN(2023, "https://immunoact.com", "Relapsed or refractory B-cell lymphoma and B-ALL", "NexCAR19 (ImmunoACT); first CAR-T approved in India") },
-  "varnimcabtagene-autoleucel": { IN: IN(2024, "https://www.immuneel.com", "Relapsed or refractory B-cell lymphoma", "Qartemi (Immuneel); Indian version of Barcelona's ARI-0001, which is approved in Spain under the hospital exemption") },
+  "varnimcabtagene-autoleucel": { IN: IN(undefined, "https://www.aabb.org/news-resources/news/article/2025/01/29/india-approves-second-car-t-cell-therapy", "Relapsed or refractory B-cell lymphoma", "Qartemi (Immuneel); approval reported as recent on 29 January 2025, exact date not found; Indian version of Barcelona's ARI-0001, which is approved in Spain under the hospital exemption") },
   cervavac: { IN: IN(2022, "https://www.seruminstitute.com/product_ind_cervavac.php", "Quadrivalent HPV vaccine, ages 9-26", "Serum Institute of India; introduced 2023") },
   // ================= Devices and tests =================
   optune: { US: A(2011, undefined, "GBM 2011/2015; NSCLC 2024; pancreatic 2026"), EU: A(2015, undefined, "CE mark (GBM); pancreatic and NSCLC CE marks 2024-26", "CE mark is not an EMA authorisation"), JP: A(2016, PMDA, "GBM"), CN: A(2020, NMPA, "GBM (Zai Lab)") },
   "foundationone-cdx": { US: A(2017, undefined, "FDA PMA companion diagnostic"), JP: A(2018, PMDA, "First CGP test approved in Japan"), EU: A(2019, undefined, "CE-IVD", "IVDR transition; CE marking is not an EMA approval") },
   shield: { US: A(2024, undefined, "FDA PMA; Medicare coverage"), EU: NF("CE-IVD not sought") },
   galleri: { US: UR("PMA submitted Jan 2026; advisory committee 23 Sep 2026"), UK: UR("NHS-Galleri final results 2026; no NHS rollout decision"), EU: NF("No CE-IVD filing announced") },
-  "artera-ai-prostate": { US: A(2025, undefined, "FDA de novo, Aug 2025") },
+  "artera-ai-prostate": { US: A(2025, undefined, "FDA de novo, Jul 2025") },
   "artera-ai-breast": { US: A(2026, undefined, "FDA 510(k)/de novo, May 2026") },
   "cetuximab-sarotalocan": { US: UR("Phase 3 in recurrent head and neck (Rakuten Medical)"), JP: A(2020, PMDA, "Akalux + BioBlade laser, recurrent HNSCC (Sep 2020); first photoimmunotherapy approval globally") },
   // ================= China-only approvals recorded on 16 Sept 2026 (pipeline wave 2) =================
@@ -589,6 +589,10 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   pixantrone: { EU: W(2024, epar("pixuvri"), "Pixuvri (Servier): conditional marketing authorisation 10 May 2012 for multiply relapsed or refractory aggressive B-cell non-Hodgkin lymphoma; the authorisation expired 12 Jun 2024 after the holder did not apply for renewal, citing lack of demand. EMA register: 'Expired: This medicine's authorisation has expired'; checked 2026-09-24") },
   alitretinoin: { US: A(1999, "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020886", "Cutaneous lesions of AIDS-related Kaposi sarcoma (Panretin gel); Feb 1999"), EU: W(2021, epar("panretin"), "Panretin (Amdipharm): authorised 11 Oct 2000 for cutaneous lesions of AIDS-related Kaposi sarcoma; marketing authorisation withdrawn 1 Jan 2021 at the holder's request for commercial reasons. EMA register: 'Withdrawn: This medicine's authorisation has been withdrawn'; checked 2026-09-24") },
   cediranib: { EU: W(undefined, epar("zemfirza"), "Zemfirza (AstraZeneca AB): marketing authorisation application for relapsed ovarian cancer withdrawn 19 Sep 2016 before a Commission decision. EMA register: 'Application withdrawn: The application for this medicine has been withdrawn'; checked 2026-09-24") },
+  // Universe-list gaps, 3 November 2026 (src/data/drugs-universe-gaps.ts): WHO Essential Medicines whose US labels on DailyMed list
+  // the palliative management of leukaemias and lymphomas. The labels read give no first approval year, so none is written.
+  hydrocortisone: { US: A(undefined, "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65eefd58-b166-4d71-ade6-45c8fdf86922", "Solu-Cortef label: palliative management of leukemias and lymphomas among its indications") },
+  methylprednisolone: { US: A(undefined, "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7271310c-7764-4812-aa30-a5e90987c7a9", "Solu-Medrol label: palliative management of leukemias and lymphomas among its indications") },
   imp4927: { EU: UR("Sepalna (senaparib; applicant SFL Pharmaceuticals Deutschland): CHMP positive opinion 17 Sep 2026 as maintenance monotherapy for advanced high-grade epithelial ovarian, fallopian tube or primary peritoneal cancer in response after first-line platinum chemotherapy; European Commission decision pending. EMA register: 'Opinion: EMA has issued an opinion on this medicine'; checked 2026-09-24", epar("sepalna")) },
 };
 

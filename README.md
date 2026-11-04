@@ -104,7 +104,7 @@ What changed, release by release, is in [CHANGELOG.md](CHANGELOG.md) and rendere
 
 - **Cite:** `CITATION.cff` holds the citation for the software and, under `preferred-citation`, for the corpus as a dataset; GitHub's "Cite this repository" button reads it. Each tagged release attaches the corpus (JSON, NDJSON, CSV, JSON Schema, OpenAPI, Markdown context files) at https://github.com/judegomila/OnCo/releases, and Zenodo archives releases with a DOI once the repository is linked there; the DOI goes into `CITATION.cff` when issued.
 - **Reuse:** data under CC BY-NC 4.0 (`LICENSE-DATA`): free for individual and educational use with the attribution line "Data from OnCo (onco.cc)" and a link to https://onco.cc; commercial use must contact us to pay for the data (issue labelled "licensing", or the contact on https://onco.cc/about/). Code under MIT (`LICENSE`). Every export, API file and CLI result carries the same attribution line.
-- **Machine access:** https://onco.cc/api/ (endpoint list), https://onco.cc/api/v1/openapi.json (OpenAPI 3.1), https://onco.cc/llms.txt and https://onco.cc/llms-full.txt (for language models), `npx onco` and `npx -y onco-mcp` (`docs/ACCESS.md`). Distribution plan and press kit: `docs/DISTRIBUTION.md`, `docs/press-kit.md`.
+- **Machine access:** https://onco.cc/api/ (endpoint list), https://onco.cc/api/v1/openapi.json (OpenAPI 3.1), https://onco.cc/llms.txt and https://onco.cc/llms-full.txt (for language models), `npx onco-cc` and `npx -y onco-mcp` (`docs/ACCESS.md`). Distribution plan and press kit: `docs/DISTRIBUTION.md`, `docs/press-kit.md`.
 
 ## Contributing and safety
 

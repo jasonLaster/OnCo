@@ -3145,10 +3145,7 @@ export const ucsfBreastTrials: TrialInput[] = [
     tldr: "This early study tests RNDO-564 alone or with pembrolizumab in selected advanced tumors. It examines dose, side effects and early treatment activity.",
     summary: "This early study tests RNDO-564 alone or with pembrolizumab in selected advanced tumors. It examines dose, side effects and early treatment activity.\n\nInterventional study registered as NCT07218003, sponsored by Rondo Therapeutics. Registry phase: 1. Registry enrollment is 149 participants (estimated). Registry status checked October 10, 2026: enrolling by invitation. UCSF lists this study as closed to local enrollment; local availability and overall registry status are separate. See the registry for full eligibility and current sites.",
     asOf: "2026-10-10",
-    cancers: [
-      "breast-cancer",
-      "tnbc"
-    ],
+    cancers: ["breast-cancer","tnbc","urothelial"],
     institutions: [
       "ucsf"
     ],

@@ -440,7 +440,7 @@ export const tnbcRegistryTrials: TrialInput[] = [
     setting: "Gene-edited T Regulatory Cells (CRG-150) for the Treatment of Relapsed/Refractory Malignancies",
     tldr: "A phase 1/2 trial in triple-negative breast cancer, run by CoRegen, Inc., not yet recruiting.",
     summary: "Gene-edited T Regulatory Cells (CRG-150) for the Treatment of Relapsed/Refractory Malignancies is a phase 1/2, interventional study registered as NCT07730125 by CoRegen, Inc., with a registry enrolment figure of 67 participants, started 2026-11 and due to reach its primary completion in 2029-06. Interventions recorded: CRG-150. Conditions listed: HR-positive, HER2-negative Breast Cancer; TNBC - Triple-Negative Breast Cancer; Prostate Cancer. Triple-negative eligibility wording from the registry: \"TNBC\". No results are recorded here; the registry entry is the source.",
-    cancers: ["tnbc-early"],
+    cancers: ["tnbc-early","breast-hr-positive","prostate"],
     links: [ct("NCT07730125")] },
   { id: "nct06140576", kind: "trial", name: "The Efficacy and Safety of Lenvatinib Combined With Sindilimab and Nab-paclitaxel in the First-line Treatment for Recurrent and Metastatic Triple Negative Breas", nct: "NCT06140576", phase: "1/2", status: "planned", sponsor: "Zhejiang Cancer Hospital", enrolled: 58, asOf, tags,
     setting: "The Efficacy and Safety of Lenvatinib Combined With Sindilimab and Nab-paclitaxel in the First-line Treatment for Recurrent and Metastatic Triple Negative Breast Cancer: a Phase Ib/IIa Clinical Trial.",

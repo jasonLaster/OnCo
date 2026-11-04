@@ -758,8 +758,10 @@ const idea: IdeaInput = {
 // =====================================================================================================================
 const NEW_TESTS = tests.map((x) => x.id);
 const supplements: Spike["supplements"] = [
-  { id: "mrd-testing", keyPapers: [P.northcott, P.klimova, P.parsons, P.santonja], bottlenecks: [BOTTLENECK], related: ["eclipse-subclone-ctdna", "genome-wide-ctdna-mutation-integration", "saferseqs"], trials: ["trak-er", "treat-ctdna"],
+  { id: "mrd-testing", keyPapers: [P.northcott, P.klimova, P.parsons, P.santonja], bottlenecks: [BOTTLENECK], related: ["eclipse-subclone-ctdna", "genome-wide-ctdna-mutation-integration", "saferseqs"], trials: ["ctong-2201", "trak-er", "treat-ctdna"],
     notes: ["Limits of detection are stated in different units by different makers: parts per million of tumour DNA (NeXT Personal, FoundationOne MRD, RaDaR ST), mean tumour molecules per mL (Haystack MRD, Signatera), or allele fraction (Signatera, Labcorp Plasma Detect and most Chinese assays). A limit in molecules per mL cannot be turned into parts per million without the sample's cell-free DNA concentration, so the figures on each test's page are not directly comparable.", "Every published limit is for the tumour signal pooled across the whole panel. None is a limit for naming a subclone; the one published method for that, ECLIPSE, works at 0.1 per cent clonal ctDNA and above."] } satisfies { id: string } & Partial<TechnologyInput>,
+  { id: "radar-mrd", trials: ["kan-her2-mrd"] } satisfies { id: string } & Partial<DrugInput>,
+  { id: "sintilimab", trials: ["ctong-2508"] } satisfies { id: string } & Partial<DrugInput>,
   { id: "liquid-biopsy", related: ["griffin-nucleosome-profiling", "meter-methylome-subtyping", "epic-seq", "plasma-epigenomic-profiling"] } satisfies { id: string } & Partial<TechnologyInput>,
   { id: "fragmentomics", related: ["griffin-nucleosome-profiling", "epic-seq"] } satisfies { id: string } & Partial<TechnologyInput>,
   { id: "ctdna-lymphoma-monitoring", keyPapers: [P.klimova], related: ["foresight-clarity"] } satisfies { id: string } & Partial<TechnologyInput>,

@@ -476,7 +476,7 @@ export const bottlenecks: BottleneckInput[] = [
       { label: "Five-year relative survival for pancreatic cancer diagnosed at localised vs distant stage (SEER, US)", value: "~44% vs ~3%", source: "NCI SEER Cancer Stat Facts: Pancreatic Cancer", url: "https://seer.cancer.gov/statfacts/html/pancreas.html" },
       { label: "Reduction in lung cancer mortality with low-dose CT screening vs chest X-ray in heavy smokers (NLST)", value: "20%", source: "National Lung Screening Trial Research Team, NEJM 2011", url: "https://doi.org/10.1056/NEJMoa1102873" },
       { label: "Ovarian cancer deaths prevented by annual multimodal screening over 16 years of follow-up (UKCTOCS)", value: "No significant reduction despite stage shift", source: "Menon et al., Lancet 2021", url: "https://doi.org/10.1016/S0140-6736(21)00731-5" },
-      { label: "New cancer cases and cancer deaths worldwide, 2022", value: "~20 million cases, 9.7 million deaths", source: "Bray et al., CA 2024 (GLOBOCAN 2022)", url: "https://doi.org/10.3322/caac.21834" },
+      { label: "New cancer cases and cancer deaths worldwide, 2024", value: "~20.6 million cases, 9.8 million deaths", source: "Sung et al., CA 2026 (GLOBOCAN 2024)", url: "https://doi.org/10.3322/caac.70090" },
     ],
     causes: [
       "Most cancers that prove fatal arise in deep organs without symptoms until they are locally advanced or metastatic.",

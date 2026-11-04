@@ -95,7 +95,7 @@ async function nciDrugs(): Promise<Envelope<NciDrug> | null> {
 }
 
 // ---------------------------------------------------------------------------------------------------
-// Cancer types: NCI "A to Z List of Cancer Types" and the GLOBOCAN 2022 site list.
+// Cancer types: NCI "A to Z List of Cancer Types" and the GLOBOCAN 2024 site list (2022 until 3 November 2026; the API no longer serves 2022).
 // ---------------------------------------------------------------------------------------------------
 const NCI_TYPES_URL = "https://www.cancer.gov/types";
 export type NciType = { name: string; link: string };
@@ -123,13 +123,13 @@ async function nciTypes(): Promise<Envelope<NciType> | null> {
 type MetaCancer = { cancer: number; label: string; ICD: string; cancer_order: number };
 export type GlobocanSite = { code: number; label: string; icd: string };
 async function globocanSites(): Promise<Envelope<GlobocanSite> | null> {
-  const url = "https://gco-api.iarc.fr/api/globocan/v3/2022/meta/cancers/all/";
+  const url = "https://gco-api.iarc.fr/api/globocan/v3/2024/meta/cancers/all/";
   const meta = await getJson<MetaCancer[]>(url);
   if (!meta || !Array.isArray(meta)) return null;
   const items = meta.filter((c) => c.cancer >= 1 && c.cancer <= 36).map((c) => ({ code: c.cancer, label: c.label.trim(), icd: c.ICD })).sort((a, b) => a.code - b.code);
   return {
-    checked: today(), source: { label: "IARC Global Cancer Observatory: GLOBOCAN 2022", url: "https://gco.iarc.who.int/today" },
-    method: "The 36 cancer sites GLOBOCAN 2022 estimates (codes 1 to 36 from the GCO metadata API; the aggregate codes 37 to 41 are excluded).",
+    checked: today(), source: { label: "IARC Global Cancer Observatory: GLOBOCAN 2024", url: "https://gco.iarc.who.int/today" },
+    method: "The 36 cancer sites GLOBOCAN 2024 estimates (codes 1 to 36 from the GCO metadata API; the aggregate codes 37 to 41 are excluded).",
     total: items.length, items,
   };
 }

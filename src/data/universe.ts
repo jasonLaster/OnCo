@@ -68,7 +68,7 @@ export const UNIVERSE: Denominator[] = [
     ours: "Cancers in OnCo matched to an NCI entry by name or alias (UK and US spellings treated as equal).", list: "nci-cancer-types",
   },
   {
-    id: "cancers-globocan", kind: "cancer", scope: "GLOBOCAN 2022 cancer sites",
+    id: "cancers-globocan", kind: "cancer", scope: "GLOBOCAN 2024 cancer sites",
     total: globocanSites.total, approx: false, source: globocanSites.source, method: globocanSites.method, checked: globocanSites.checked,
     ours: "GLOBOCAN sites that at least one OnCo cancer page maps to (src/data/globocan-map.ts).", list: "globocan-sites",
   },

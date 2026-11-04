@@ -7,15 +7,15 @@ export type CountryCard = { id: string; title: string; plain: string; detail: st
 
 export const IN_ASOF = "2026-09-10";
 
-/** Cancer profile: what is different about cancer in India. GLOBOCAN 2022 figures are rendered live from public/globocan/countries.json. */
+/** Cancer profile: what is different about cancer in India. GLOBOCAN 2024 figures are rendered live from public/globocan/countries.json. */
 export const IN_PROFILE: CountryCard[] = [
   {
     id: "shape",
     title: "A different shape of cancer: oral, cervical, breast, and gallbladder in the Gangetic belt",
     plain: "India has fewer cancers per person than rich countries but a very different mix. Cancers of the mouth and throat, driven by chewing tobacco and areca nut, and cervical cancer, caused by HPV, are far more common than in the West. Breast cancer is now the single most common cancer. Gallbladder cancer, rare almost everywhere else, is common along the Ganges.",
-    detail: "GLOBOCAN 2022 estimates about 1.41 million new cancers and 917,000 deaths in India, an age-standardised incidence of 98.5 per 100,000 (roughly a quarter of the US rate of 367) but with a high case-fatality because so many cancers are found late. Lip and oral cavity cancer alone accounts for about 144,000 cases, and the head and neck sites together exceed breast cancer. Cervical cancer (about 127,500 cases, 79,900 deaths) is the second cancer of women. India's registries record most breast (57%), cervical (60%) and head and neck (66.6%) cancers at a locally advanced stage. Gallbladder cancer is concentrated in the northern and north-eastern Gangetic states, where incidence in women is among the highest in the world.",
+    detail: "GLOBOCAN 2024 estimates about 1.56 million new cancers and 902,000 deaths in India, an age-standardised incidence of 104.1 per 100,000 (under a third of the US rate of 358) but with a high case-fatality because so many cancers are found late. Lip and oral cavity cancer alone accounts for about 206,000 cases, and the head and neck sites together exceed breast cancer. Cervical cancer (about 79,400 cases and 36,300 deaths in the 2024 estimate, against 127,500 and 79,900 in GLOBOCAN 2022) is still the second cancer of women. India's registries record most breast (57%), cervical (60%) and head and neck (66.6%) cancers at a locally advanced stage. Gallbladder cancer is concentrated in the northern and north-eastern Gangetic states, where incidence in women is among the highest in the world.",
     links: [
-      { label: "GLOBOCAN 2022: India fact sheet (IARC)", url: "https://gco.iarc.who.int/media/globocan/factsheets/populations/356-india-fact-sheet.pdf" },
+      { label: "GLOBOCAN 2024: India fact sheet (IARC)", url: "https://gco.iarc.who.int/media/globocan/factsheets/populations/356-india-fact-sheet.pdf" },
       { label: "Cancer Statistics, 2020: National Cancer Registry Programme (JCO Glob Oncol)", url: "https://doi.org/10.1200/GO.20.00122" },
       { label: "Cancer incidence estimates for 2022 and projection for 2025 (IJMR)", url: "https://doi.org/10.4103/ijmr.ijmr_1821_22" },
     ],
@@ -159,7 +159,7 @@ export const IN_GALLBLADDER: CountryCard[] = [
   {
     id: "gallbladder-burden",
     title: "One gallbladder cancer in six worldwide is Indian, and most of them are on the Ganges",
-    plain: "Gallbladder cancer is rare in the West and in the south of India, but common across the north, the north-east, the centre and the east. GLOBOCAN 2022 estimates 21,780 cases and 16,407 deaths a year in India, about a sixth of the world's 122,491 cases; the national rate looks modest (1.51 per 100,000, nineteenth in the world) only because the south and west dilute it. Patients are younger than in the West, mostly in their fifties and sixties, and two thirds are women.",
+    plain: "Gallbladder cancer is rare in the West and in the south of India, but common across the north, the north-east, the centre and the east. GLOBOCAN 2024 estimates 30,542 cases and 23,093 deaths a year in India, about a quarter of the world's 126,384 cases; the national rate looks modest (2.04 per 100,000, ninth in the world) only because the south and west dilute it. Patients are younger than in the West, mostly in their fifties and sixties, and two thirds are women.",
     detail: "The National Cancer Registry Programme's report for 2012-2016 ranks Kamrup urban (Guwahati, Assam) first of 28 population-based registries for gallbladder and biliary tract cancer, with age-adjusted rates of 16.2 per 100,000 in women and 7.9 in men, then Cachar district (11.9 and 5.6), Delhi (11.6 and 5.4) and, in women, Papumpare (10.7). Delhi registered 12,410 gallbladder cancers between 1988 and 2012 (8,400 in women), 6 percent of all its cancers in 2012, with rates rising in both sexes after 2004; the NCRP trend chapter gives Delhi men a 4.2 percent annual rise and Dibrugarh men 10.8 percent. Being born in a high-risk region carries an odds ratio of 4.82 that persists after moving south (1.36), pointing at an early environmental exposure. Dutta and colleagues put India's share of the global burden at about 10 percent; GLOBOCAN's count-based share is higher.",
     links: [
       { label: "NCRP 2020 report, Chapter 5, Fig. 5.12: gall bladder (C23-C24) by registry", url: "https://ncdirindia.org/All_Reports/Report_2020/resources/Chapter5ComparisonofcancerincidenceandpatternsofallPopulationBasedCancerRegistries.pdf" },
@@ -167,7 +167,7 @@ export const IN_GALLBLADDER: CountryCard[] = [
       { label: "Malhotra et al, Gallbladder cancer incidence in Delhi urban: a 25-year trend analysis (Indian J Cancer 2017)", url: "https://europepmc.org/article/MED/30082556" },
       { label: "Mhatre et al, Place of birth and risk of gallbladder cancer in India (Indian J Cancer 2016)", url: "https://europepmc.org/article/MED/28071634" },
       { label: "Dutta et al, Epidemiology of gallbladder cancer in India (Chin Clin Oncol 2019)", url: "https://europepmc.org/article/MED/31484488" },
-      { label: "GLOBOCAN 2022 (IARC Cancer Today), gallbladder by country and sex", url: "https://gco.iarc.who.int/today" },
+      { label: "GLOBOCAN 2024 (IARC Cancer Today), gallbladder by country and sex", url: "https://gco.iarc.who.int/today" },
     ],
   },
   {

@@ -906,7 +906,7 @@ export const tldr_de: Record<string, string> = {
   gimema: "Italiens Studiengruppe für Erwachsenenhämatologie, berühmt dafür, die akute Promyelozytenleukämie ohne Chemotherapie heilbar gemacht zu haben, und für die chemotherapiefreie Behandlung der Philadelphia-positiven ALL.",
   giredestrant: "Giredestrant ist der orale SERD von Roche: In der Erstlinie bei metastasierter Erkrankung konnte es einen Aromatasehemmer nicht schlagen, war aber nach der Operation und nach Versagen von CDK4/6-Hemmern erfolgreich.",
   glenmark: "Das indische Unternehmen, dessen trispezifischer Antikörper ISB 2001 gegen das multiple Myelom 2025 für 700 Millionen Dollar Vorauszahlung an AbbVie lizenziert wurde, der größte Deal für ein in Indien entdecktes Krebsmedikament.",
-  globocan: "GLOBOCAN sind die Krebszahlen der Welt: Schätzungen zu Neuerkrankungen und Sterblichkeit für 185 Länder und 36 Krebsarten.",
+  globocan: "GLOBOCAN sind die Krebszahlen der Welt: Schätzungen zu Neuerkrankungen und Sterblichkeit für 186 Länder und 36 Krebsarten.",
   "glycaemic-index": "Wie schnell ein Lebensmittel den Blutzucker ansteigen lässt (Index) und wie stark, bezogen auf die Portion (Last). Ernährungsweisen mit hoher glykämischer Last sind schwach mit einigen Krebsarten verknüpft, vor allem über Übergewicht und Insulin.",
   "great-ormond-street": "Londons Kinderkrankenhaus, in dem genom-editierte „universelle“ CAR-T-Zellen erstmals einem leukämiekranken Kind verabreicht wurden.",
   "growth-signal": "Die Anweisung, die eine Zelle erhält, um zu wachsen und sich zu teilen. Normale Zellen warten darauf; Krebszellen täuschen sie vor und teilen sich deshalb weiter, ob der Körper mehr von ihnen will oder nicht.",

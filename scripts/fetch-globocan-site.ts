@@ -7,7 +7,7 @@
  *
  * Same endpoint as the site-wide fetcher, one polite request per population (350 ms apart, four retries), cached in
  * /tmp/globocan-factsheets so a rerun costs nothing:
- *   https://gco-api.iarc.fr/api/globocan/v3/2022/factsheet/population/<population>/?group_CRC=1&include_nmsc=1&include_nmsc_other=0
+ *   https://gco-api.iarc.fr/api/globocan/v3/<year>/factsheet/population/<population>/?group_CRC=1&include_nmsc=1&include_nmsc_other=0
  * Rows: sex 0 both, 1 men, 2 women; type 0 incidence, 1 mortality; cancer_code as in meta/cancers/all/.
  *
  * Run: npm run fetch:globocan:site -- 12 gallbladder
@@ -17,7 +17,7 @@ import { join } from "node:path";
 
 const CODE = Number(process.argv[2] ?? 12);
 const SLUG = process.argv[3] ?? "gallbladder";
-const YEAR = 2022;
+const YEAR = Number(process.env.GLOBOCAN_EDITION ?? 2024);
 const API = `https://gco-api.iarc.fr/api/globocan/v3/${YEAR}`;
 const QS = "?group_CRC=1&include_nmsc=1&include_nmsc_other=0";
 const UA = "OnCo/1.0 (research use)";
@@ -85,12 +85,12 @@ async function main() {
   const worldRec = world ? await record(world) : null;
   const fetched = new Date().toISOString().slice(0, 10);
   const out = {
-    source: "GLOBOCAN 2022, International Agency for Research on Cancer (IARC), Global Cancer Observatory, Cancer Today",
+    source: `GLOBOCAN ${YEAR}, International Agency for Research on Cancer (IARC), Global Cancer Observatory, Cancer Today`,
     sourceUrl: "https://gco.iarc.who.int/today", apiUrl: API,
-    version: `GLOBOCAN ${YEAR} (Cancer Today version 1.1, API v3), read from the per-population factsheet endpoint`,
+    version: `GLOBOCAN ${YEAR} (Cancer Today ${YEAR === 2024 ? "2024 estimates, version 1.0" : "version 1.1"}, API v3), read from the per-population factsheet endpoint`,
     year: YEAR, fetched, cancerCode: CODE, icd: site.ICD, label: site.label.trim(),
     note: `Estimates, not registry counts. ASR = age-standardised rate per 100,000 (World standard population), all ages. Cell = [new cases, incidence ASR, deaths, mortality ASR] for both sexes, men and women. ${Object.keys(result).length} countries and the world aggregate; ${failed.length ? `failed: ${failed.join(", ")}` : "no population failed to fetch"}.`,
-    citation: "Ferlay J, Ervik M, Lam F, et al. Global Cancer Observatory: Cancer Today (version 1.1). Lyon: IARC; 2024.",
+    citation: YEAR === 2024 ? "Ervik M, Laversanne M, Lam F, Colombet M, Ferlay J, Filho AM, Bray F (2026). Global Cancer Observatory: Cancer Today (2024 estimates, version 1.0). Lyon, France: International Agency for Research on Cancer." : "Ferlay J, Ervik M, Lam F, et al. Global Cancer Observatory: Cancer Today (version 1.1). Lyon: IARC; 2024.",
     world: worldRec, countries: result,
   };
   const file = join(outDir, `${CODE}-${SLUG}-by-sex.json`);

@@ -1,5 +1,6 @@
 /**
- * Maps OnCo cancer ids to GLOBOCAN 2022 cancer codes (see public/globocan/countries.json → cancers).
+ * Maps OnCo cancer ids to GLOBOCAN cancer codes (see public/globocan/countries.json → cancers). The codes are the
+ * same in the 2022 and 2024 editions; the file holds GLOBOCAN 2024 since 3 November 2026.
  *
  * GLOBOCAN reports by anatomical site (ICD-10), not by molecular subtype or histology, so several OnCo
  * cancers share one site total and a few have no direct estimate at all. Every such case is stated in

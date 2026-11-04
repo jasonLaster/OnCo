@@ -21,7 +21,7 @@ describe("GLOBOCAN per-site rates by sex", () => {
     expect(r).toBeDefined();
     expect(r.cancerCode).toBe(12);
     expect(r.icd).toBe("C23");
-    expect(Object.keys(r.countries).length).toBe(185);
+    expect(Object.keys(r.countries).length).toBe(186); // GLOBOCAN 2024 covers 186 countries (Curaçao added); 2022 covered 185
     expect(r.world?.both[0]).toBeGreaterThan(100000);
     for (const [iso3, c] of Object.entries(r.countries)) {
       for (const sex of ["both", "women", "men"] as const) {
@@ -132,7 +132,7 @@ describe("cancer geography layer", () => {
     expect(j.sources.length).toBe(geographyUrls(geo).length);
     expect(j.regions[0].refs.every((r) => r.name)).toBe(true);
     for (const sex of ["both", "women", "men"]) { expect(j.rates.topTenIncidence[sex].length).toBe(10); expect(j.rates.topTenMortality[sex].length).toBe(10); }
-    expect(Object.keys(j.rates.countries).length).toBe(185);
+    expect(Object.keys(j.rates.countries).length).toBe(186);
   });
 });
 

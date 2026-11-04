@@ -51,7 +51,12 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // terminated or withdrawn out of "recruiting" and "active", and the registry ingests since 25 September added
   // finished trials. A finished trial is exactly what this gauge asks about, so the denominator grows.
   { id: "trial-outcomes", total: 1223, label: "Trials with structured outcomes, or with no results in public" },
-  { id: "institution-people", total: 700, label: "Institutions with people" },
+  // 700 to 1,033 on 4 November 2026: the institution gap round added records for the cancer charities, academic
+  // centres, children's hospitals and national cancer societies on seven outside registers (IRS, Charity Commission,
+  // AACI, Children's Oncology Group, National Cancer Grid, Japan's health ministry, UICC). Each is an institution page
+  // that should name the people who lead or work there, the kind this gauge asks about, so the denominator grows and
+  // the score falls, which is the true reading.
+  { id: "institution-people", total: 1033, label: "Institutions with people" },
   { id: "people-papers", total: 1567, label: "People with papers, or in a role that produces none" },
   // 45 to 55 on 4 November 2026: the rejuvenation front's agenda bottlenecks and, last, the residual disease bottleneck
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this

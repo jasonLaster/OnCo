@@ -77,6 +77,42 @@ Tried and not used, so the decision is visible:
   not ingest" below). Not attempted.
 - **Health Canada Notice of Compliance**: reachable in principle (B2), not attempted in this round.
 
+### A1c. Institution and charity universe lists (4 November 2026)
+
+Seven registers that say which cancer organisations exist, fetched by `scripts/fetch-universe-institutions.ts` into
+`src/data/universe-lists/` and measured by `npx tsx scripts/institution-coverage.ts [list]`, which counts an item as held
+when an institution or a company record (charities are held as either) agrees with it by name, alias or website. Every
+request sends `OnCo (https://onco.cc; hello@onco.cc)`, one at a time with a 1.5 second pause; robots.txt was read first.
+
+| List | Source | Licence | What one item is |
+|---|---|---|---|
+| `irs-cancer-charities` | IRS Exempt Organizations Business Master File Extract (irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf), four regional CSVs, posted 13 October 2026 | Public domain (US government work) | A 501(c)(3) organisation with NTEE code G30, G32, H30 or H32 or a cancer word in its registered name; the 300 with the largest revenue. Ronald McDonald House chapters are excluded. Detail links go to ProPublica's Nonprofit Explorer |
+| `ccew-cancer-charities` | Charity Commission for England and Wales register data extract (register-of-charities.charitycommission.gov.uk/en/register/full-register-download) | Open Government Licence v3.0 | A main registered charity with a cancer word in its name, hospices excepted; the 100 with the largest latest income |
+| `aaci-members` | Association of American Cancer Institutes member directory (aaci-cancer.org/members), searched by every state and province | Not stated; names and websites only | A member cancer centre |
+| `cog-members` | Children's Oncology Group member institutions, read through the site's public WordPress endpoint for its locator | Not stated; names, places and websites only | A member institution |
+| `ncg-members` | National Cancer Grid member list (ncgindia.org/hospitals-and-institutions/members), its four member types | Not stated; names and websites only | A member |
+| `uicc-member-directory` | Every profile under uicc.org/membership/ in the UICC sitemap | Not stated; names, categories and countries only | A member organisation |
+| `mhlw-cancer-hospitals` | Japan's Ministry of Health, Labour and Welfare lists of designated cancer care hospitals (as of 1 October 2026) and cancer genomic medicine hospitals (from 1 November 2026), two PDFs read with pdftotext | MHLW website terms (government information, reuse with attribution) | A prefectural hub hospital or a genomic medicine core hospital; English names from each hospital's own pages (`mhlw-english.ts`) |
+
+Coverage when first measured and after the records written that day (the before figure for Japan is after English
+names were added, since the list's Japanese names match nothing):
+
+| List | Before | After |
+|---|---|---|
+| `irs-cancer-charities` (300) | 33 (11.0%) | 99 (33.0%) |
+| `ccew-cancer-charities` (100) | 16 (16.0%) | 61 (61.0%) |
+| `aaci-members` (108) | 78 (72.2%) | 108 (100%) |
+| `cog-members` (226) | 53 (23.5%) | 117 (51.8%) |
+| `ncg-members` (435) | 29 (6.7%) | 70 (16.1%) |
+| `mhlw-cancer-hospitals` (64) | 15 (23.4%) | 56 (87.5%) |
+| `uicc-member-directory` (1,135) | about 114 (10.0%) | 184 (16.2%) |
+
+Tried and not used: **NCI Community Oncology Research Program sites** (ncorp.cancer.gov/findasite) disallow every path
+to every robot in robots.txt; **AACI's printable membership PDF** sits under /files/, which robots.txt disallows; **EORTC's
+network** and **China's National Cancer Center regional network** have no public machine-readable member list that was
+found. These lists are not yet shown on `/completeness/`: `src/lib/completeness.ts` would need a resolver that also reads
+company records, which is a product change.
+
 ### A2. Read by hand and cited (no script yet)
 
 | Source | What we take | Where it lands | Cadence | Licence and attribution | Coverage | Known gaps |

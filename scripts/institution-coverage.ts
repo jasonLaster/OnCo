@@ -41,10 +41,14 @@ function keysOf(names: string[]): string[] {
 }
 /** A shorter name that begins with one of these is a description ("institute for cancer research"), not a proper name, so it must match whole. */
 const GENERIC_START = /^(all india institute|institute|cancer|society|foundation|national|american|international|association|center|hospital|research|children s|university|regional|community)\b/;
+/** Words that on their own describe a kind of place rather than name one: "children s hospital" must match whole. */
+const GENERIC_WORDS = new Set(["children", "s", "hospital", "hospitals", "medical", "center", "cancer", "university", "of", "the", "and", "institute", "research", "foundation", "society", "national", "regional", "community", "clinic", "health", "care", "oncology", "comprehensive"]);
 function agree(a: string, b: string): boolean {
   if (a === b) return true;
   const [s, l] = a.length <= b.length ? [a, b] : [b, a];
-  if (s.length < 12) return false;
+  if (s.length < 12 || s.split(" ").every((w) => GENERIC_WORDS.has(w))) return false;
+  // "American Friends of X" is the US fundraising charity of X, a separate organisation.
+  if (/^american friends of /.test(l) && !/^american friends of /.test(s)) return false;
   if (l.startsWith(s + " ")) return s.split(" ").length >= 2 && !/^all india institute/.test(s);
   return l.endsWith(" " + s) && s.split(" ").length >= 3 && !GENERIC_START.test(s);
 }
@@ -77,7 +81,8 @@ export function coverage(list: string): Coverage {
   const held: Coverage["held"] = [];
   const missing: Item[] = [];
   for (const it of data.items) {
-    const ks = keysOf([it.name, ...(it.aka ? [it.aka] : [])]);
+    // List names join a university and its centre with a bare slash ("University of Kentucky/Markey Cancer Center").
+    const ks = keysOf([it.name, ...it.name.split(/\s*\/\s*/).filter((p) => p !== it.name), ...(it.aka ? [it.aka] : [])]);
     const cc = countryOf(list, it);
     const inCountry = recs.filter((r) => !cc || !r.country || r.country === cc);
     // An exact name beats a name that merely begins or ends the other.

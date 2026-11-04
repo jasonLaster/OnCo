@@ -185,7 +185,7 @@ export const sarcomaBoneSubtypes: CancerInput[] = [
     pipeline: ["mtor", "pazopanib"], openProblems: ["No approved drug and no randomised trial.", "Predicting which tumours will progress is unreliable.", "The fusion oncoprotein is a transcription factor with no direct inhibitor yet."],
     related: ["vascular-tumours", "angiosarcoma"], links: [{ label: "Wikipedia", url: W("Epithelioid_hemangioendothelioma") }] },
 
-  { id: "malignant-peripheral-nerve-sheath-tumour", kind: "cancer", name: "Malignant peripheral nerve sheath tumour (MPNST)", group: "sarcoma", parent: "sarcoma", asOf, tags, wikipedia: W("Malignant_peripheral_nerve_sheath_tumor"),
+  { id: "malignant-peripheral-nerve-sheath-tumour", institutions: ["childrens-tumor-foundation"], kind: "cancer", name: "Malignant peripheral nerve sheath tumour (MPNST)", group: "sarcoma", parent: "sarcoma", asOf, tags, wikipedia: W("Malignant_peripheral_nerve_sheath_tumor"),
     keyPapers: ["paper-kroep-mpnst-first-line-chemotherapy-ann-oncol-2011", "paper-lee-prc2-mpnst-nat-genet-2014", "paper-eortc-62012-doxorubicin-ifosfamide-judson-lancet-oncol-2014", "paper-esmo-sts-guideline-gronchi-ann-oncol-2021"],
     aka: ["MPNST", "Neurofibrosarcoma (historic)", "Malignant schwannoma (historic)"],
     burden: "About five percent of soft tissue sarcomas; half occur in people with neurofibromatosis type 1, whose lifetime risk is around one in ten, and it is the leading cause of death in that condition. Outcomes are poor, with five-year survival below half in most series.",

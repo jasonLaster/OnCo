@@ -12,6 +12,10 @@
  *   cog-members             Children's Oncology Group member institutions (COG's own location directory)
  *   ncg-members             National Cancer Grid (India) member list, with the member type NCG assigns
  *   uicc-member-directory   every member profile under uicc.org/membership/ (name, category, country)
+ *   mhlw-cancer-hospitals   Japan: the 51 prefectural designated cancer care hospitals (都道府県がん診療連携拠点病院) and
+ *                           the cancer genomic medicine core hospitals (がんゲノム医療中核拠点病院), from the two PDF lists
+ *                           of the Ministry of Health, Labour and Welfare; English names come from the hand-checked table
+ *                           in src/data/universe-lists/mhlw-english.ts. Needs `pdftotext` (poppler) on the PATH.
  *
  * Same envelope as scripts/fetch-universe.ts: { checked, source, method, total, items, ...extras }, written to
  * src/data/universe-lists/<name>.json; a source that fails keeps its previous snapshot. Every request sends the OnCo
@@ -28,6 +32,7 @@
  *
  * Run: npx tsx scripts/fetch-universe-institutions.ts            Only some: -- --only=aaci-members,cog-members
  */
+import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { decodeEntities, sleep, stripTags, today } from "./feed-utils";
@@ -359,6 +364,67 @@ async function uiccMembers(): Promise<Envelope | null> {
   };
 }
 
+// ---------------------------------------------------------------------------------------------------
+// Japan: MHLW designated cancer hospitals (prefectural tier) and cancer genomic medicine core hospitals.
+// ---------------------------------------------------------------------------------------------------
+const MHLW_PAGE = "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/gan/gan_byoin.html";
+export type MhlwHospital = { ja: string; prefecture: string; category: "prefectural" | "genome-core"; name?: string; website?: string };
+const PREF = "(?:北海道|東京都|京都府|大阪府|\\S{2,3}県)";
+
+/** Rows of the prefectural section of the designated-hospital list (pdftotext -layout output). */
+export function parseMhlwPrefectural(txt: string): MhlwHospital[] {
+  const out: MhlwHospital[] = [];
+  let inSection = false;
+  const row = new RegExp(`^\\s*\\d+\\s+(${PREF})\\s+(.+?)\\s*$`);
+  for (const line of txt.replace(/\f/g, "").split("\n")) {
+    if (line.includes("【")) { inSection = line.includes("【都道府県がん診療連携拠点病院】"); continue; }
+    const m = inSection ? line.match(row) : null;
+    if (m) out.push({ ja: m[2].replace(/\s+/g, " "), prefecture: m[1], category: "prefectural" });
+  }
+  return out;
+}
+
+/** Core hospitals in the genomic-medicine list: rows whose category column reads がんゲノム医療中核拠点病院. */
+export function parseMhlwGenomeCore(txt: string): MhlwHospital[] {
+  const out: MhlwHospital[] = [];
+  const row = new RegExp(`^(${PREF})\\s+(.+?)\\s+がんゲノム医療中核拠点病院`);
+  for (const line of txt.replace(/\f/g, "").split("\n")) {
+    const m = line.match(row);
+    const ja = m?.[2].trim().replace(/\s+/g, " ");
+    if (m && ja && !out.some((o) => o.ja === ja)) out.push({ ja, prefecture: m[1], category: "genome-core" });
+  }
+  return out;
+}
+
+async function pdfText(url: string): Promise<string> {
+  const r = await fetchRaw(url);
+  if (!r) throw new Error(`could not read ${url}`);
+  const d = join(CACHE, "mhlw");
+  mkdirSync(d, { recursive: true });
+  const pdf = join(d, url.split("/").pop() as string);
+  writeFileSync(pdf, Buffer.from(await r.arrayBuffer()));
+  execFileSync("pdftotext", ["-layout", pdf, pdf + ".txt"]);
+  return readFileSync(pdf + ".txt", "utf8");
+}
+
+async function mhlwCancerHospitals(): Promise<Envelope | null> {
+  const page = await text(MHLW_PAGE);
+  if (!page) return null;
+  const kyoten = page.match(/href="(\/content\/\d+\.pdf)"[^>]*>がん診療連携拠点病院等の一覧表（([^）]+)）/);
+  const genome = page.match(/href="(\/content\/\d+\.pdf)"[^>]*>がんゲノム医療中核拠点病院等一覧（([^）]+)）/);
+  if (!kyoten || !genome) throw new Error("list links not found on the MHLW page");
+  const pref = parseMhlwPrefectural(await pdfText(`https://www.mhlw.go.jp${kyoten[1]}`));
+  const core = parseMhlwGenomeCore(await pdfText(`https://www.mhlw.go.jp${genome[1]}`));
+  if (pref.length < 45 || core.length < 10) throw new Error(`parsed ${pref.length} prefectural and ${core.length} core hospitals`);
+  const { MHLW_ENGLISH } = await import("../src/data/universe-lists/mhlw-english");
+  const items = [...pref, ...core].map((h) => { const en = MHLW_ENGLISH[h.ja]; return en ? { ...h, name: en.name, ...(en.website ? { website: en.website } : {}) } : h; });
+  return {
+    checked: today(), source: { label: "Ministry of Health, Labour and Welfare: designated cancer care hospitals", url: MHLW_PAGE },
+    method: `The prefectural tier of the MHLW list of designated cancer care hospitals (都道府県がん診療連携拠点病院, list as of ${kyoten[2]}) and the core hospitals of the MHLW list of cancer genomic medicine hospitals (がんゲノム医療中核拠点病院, ${genome[2]}), read from the two PDFs linked on the ministry's page. A hospital in both tiers appears twice. Names are the ministry's Japanese names; the English name and website of each come from the hospital's own English pages, checked by hand (src/data/universe-lists/mhlw-english.ts).`,
+    total: items.length, prefectural: pref.length, genomeCore: core.length, listDates: { prefectural: kyoten[2], genomeCore: genome[2] }, items,
+  };
+}
+
 async function main() {
   await source("irs-cancer-charities", irsCancerCharities);
   await source("ccew-cancer-charities", ccewCancerCharities);
@@ -366,6 +432,7 @@ async function main() {
   await source("cog-members", cogMembers);
   await source("ncg-members", ncgMembers);
   await source("uicc-member-directory", uiccMembers);
+  await source("mhlw-cancer-hospitals", mhlwCancerHospitals);
   if (errors.length) { console.warn(`universe: ${errors.length} source(s) failed:\n  ${errors.join("\n  ")}`); if (errors.length >= 6) process.exit(1); }
 }
 

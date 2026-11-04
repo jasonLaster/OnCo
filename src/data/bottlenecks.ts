@@ -1558,7 +1558,7 @@ export const bottlenecks: BottleneckInput[] = [
       { label: "Cancer Grand Challenges", url: "https://cancergrandchallenges.org/" },
     ],
     cancers: ["pancreatic", "hcc", "gastric", "esophageal", "nsclc", "urothelial", "endometrial", "glioblastoma"],
-    institutions: ["nci", "cruk", "iarc", "aacr", "asco"],
+    institutions: ["nci", "cruk", "iarc", "aacr", "asco", "nfcr"],
     sections: ["prevention", "surgery", "radiation", "supportive-care"],
     related: ["globocan", "seer", "idea-fund-survivorship-endowment-levy", "idea-moon-cure-prizes"],
   }),
@@ -1760,7 +1760,7 @@ export const bottlenecks: BottleneckInput[] = [
     technologies: ["ai-trial-matching"],
     terms: ["orr", "pfs", "os", "standard-of-care"],
     companies: ["cancer-commons", "more-health", "patient-data-vault", "tempus"],
-    institutions: ["asco", "nccn-org", "nci"],
+    institutions: ["asco", "nccn-org", "nci", "healthtree-foundation"],
     related: ["cancer-gov-pdq", "nccn", "clinicaltrials-gov", "idea-moon-navigation-as-a-right", "idea-moon-plain-language-consent", "idea-moon-results-in-plain-words", "idea-acc-embedded-decision-aids", "idea-moon-patient-designed-trials", "idea-acc-financial-toxicity-screening-at-diagnosis", "idea-moon-goals-conversation-trigger", "idea-moon-patient-held-cancer-record", "idea-moon-funded-second-opinion", "idea-moon-recorded-consultations", "idea-moon-question-prompt-lists", "idea-moon-patient-experience-label", "idea-moon-results-back-to-participants", "idea-moon-peer-navigator-workforce", "idea-moon-time-toxicity-reporting", "idea-moon-preference-studies-before-phase3", "idea-moon-caregiver-in-the-plan", "idea-moon-literacy-first-design-standard", "idea-moon-trial-eligibility-at-every-decision"],
   }),
   b({

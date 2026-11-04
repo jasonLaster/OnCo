@@ -277,7 +277,7 @@ export function SearchResults() {
             </ul>
           )}
           {mine && rows.length > 0 && (
-            <button type="button" onClick={() => setForMine((v) => !v)} aria-pressed={forMine} title={forMine ? "Show results for every cancer" : `Only results linked to ${mine.name}`} className={`chip border ${forMine ? "bg-accent text-accent-fg border-accent" : "border-accent/40 bg-accent-soft text-accent hover:border-accent"}`}><CancerIcon cancerId={mine.id} className="h-3 w-3" />for {shortCancerName(mine.name)} <span className="tabular-nums opacity-70">{mineCount}</span></button>
+            <button type="button" onClick={() => setForMine((v) => !v)} aria-pressed={forMine} title={forMine ? "Show results for every cancer" : `Only results linked to ${mine.name}`} className={`chip border ${forMine ? "bg-accent-solid text-accent-fg border-accent-solid" : "border-accent/40 bg-accent-soft text-accent hover:border-accent"}`}><CancerIcon cancerId={mine.id} className="h-3 w-3" />for {shortCancerName(mine.name)} <span className="tabular-nums opacity-70">{mineCount}</span></button>
           )}
           {semanticReady === false && <span className="text-xs text-muted">Concept search is unavailable; showing word matches only.</span>}
         </div>

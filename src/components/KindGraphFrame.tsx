@@ -106,7 +106,7 @@ export function KindGraphFrame({ graph, list }: { graph: ReactNode; list: ReactN
   const onBlur = (e: React.FocusEvent) => { if (target(e.relatedTarget)) return; hide(); };
   const onKey = (e: React.KeyboardEvent) => { if (e.key === "Escape") hide(); };
 
-  const pill = (on: boolean) => `chip border inline-flex items-center gap-1 text-xs ${on ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`;
+  const pill = (on: boolean) => `chip border inline-flex items-center gap-1 text-xs ${on ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`;
 
   return (
     <div ref={root} className="kg" data-view={view} data-focus={focus ?? undefined} data-kg-root>

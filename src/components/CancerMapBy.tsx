@@ -54,7 +54,7 @@ export function CancerMapBy({ children }: { children: ReactNode }) {
         <span className="text-xs text-muted me-1">Badges count</span>
         {METRICS.map((m) => (
           <a key={m} href={m === "trials" ? "/cancers/map/" : `/cancers/map/?by=${m}`} onClick={(ev) => { ev.preventDefault(); choose(m); }} aria-current={by === m ? "true" : undefined} title={TIP[m]}
-            className={`chip border inline-flex items-center gap-1 text-xs ${by === m ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`}>
+            className={`chip border inline-flex items-center gap-1 text-xs ${by === m ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`}>
             <MetricGlyph m={m} />
             <span>{METRIC_LABEL[m]}</span>
           </a>

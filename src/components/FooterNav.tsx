@@ -15,7 +15,7 @@ export function FooterNav() {
         return (
           <nav key={g.id} aria-label={gt.label}>
             <div className="kicker mb-2"><Link className="inline-block py-1.5 hover:text-foreground" href={g.href}>{gt.label}</Link></div>
-            <ul className="space-y-1.5 text-[13px] leading-snug">
+            <ul className="space-y-2 text-[13px] leading-snug">
               {g.items.map((it) => {
                 const label = navItemText(it, lang).label;
                 return (

@@ -39,7 +39,7 @@ export function TrialFinder({ condition, intervention, title }: { condition?: st
           </div>
         </div>
         <div className="flex items-center gap-2 text-sm">
-          {state === "idle" && <button onClick={load} className="rounded-lg bg-accent text-white px-3 py-1.5 font-medium hover:brightness-110">Load recruiting trials</button>}
+          {state === "idle" && <button onClick={load} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 font-medium hover:brightness-110">Load recruiting trials</button>}
           {state === "done" && <button onClick={load} className="text-muted underline">Refresh</button>}
           <a href={searchUrl} rel="noopener" className="underline text-muted">Open on ClinicalTrials.gov →</a>
         </div>

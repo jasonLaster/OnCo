@@ -30,7 +30,7 @@ export function LayerToggle({ className = "" }: { className?: string }) {
         {/* Both runs of text share one baseline (see .ctl-text), whatever their sizes. */}
         <span className="ctl-text">
           <span aria-hidden className="font-semibold tracking-tight">Aa</span>{" "}
-          <span className="ctl-label text-muted xl:hidden 2xl:inline">{lang.code.toUpperCase()}</span>
+          <span className="ctl-label text-muted max-[389px]:hidden xl:hidden 2xl:inline">{lang.code.toUpperCase()}</span>
         </span>
       </button>
       {/* Phones: span the viewport below the header (an end-anchored 18rem panel would run off the far edge). */}

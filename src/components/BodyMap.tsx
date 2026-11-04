@@ -92,7 +92,8 @@ export function BodyMap({ regions, cancers, technologies, families }: Props) {
           </span>
         </div>
 
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto bm-figure" role="img" aria-label="Front view of the human body with clickable organs">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto bm-figure" role="group" aria-label="Front view of the human body with clickable organs">
+          {/* A group, not an image: role="img" makes its children presentational, so a screen reader never reached the organ buttons. */}
           <defs>
             <filter id="bm-glow" x="-30%" y="-30%" width="160%" height="160%">
               <feGaussianBlur stdDeviation="4" result="b" />
@@ -158,7 +159,7 @@ export function BodyMap({ regions, cancers, technologies, families }: Props) {
           <span className="kicker">System-wide</span>
           {visible.filter((r) => r.systemWide).map((r) => {
             const on = r.id === shown;
-            return <button key={r.id} type="button" onMouseEnter={() => setActive(r.id)} onMouseLeave={() => setActive(null)} onFocus={() => setActive(r.id)} onBlur={() => setActive(null)} onClick={() => setPinned((p) => (p === r.id ? null : r.id))} aria-pressed={on} aria-controls={DETAIL_ID} className={`chip border ${on ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`}>{r.label.replace(/ \(.*\)$/, "")} <span className={on ? "text-white/80" : "text-muted"}>{counts[r.id]}</span></button>;
+            return <button key={r.id} type="button" onMouseEnter={() => setActive(r.id)} onMouseLeave={() => setActive(null)} onFocus={() => setActive(r.id)} onBlur={() => setActive(null)} onClick={() => setPinned((p) => (p === r.id ? null : r.id))} aria-pressed={on} aria-controls={DETAIL_ID} className={`chip border ${on ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`}>{r.label.replace(/ \(.*\)$/, "")} <span className={on ? "text-white/80" : "text-muted"}>{counts[r.id]}</span></button>;
           })}
           <span className="ml-auto text-muted">shade = how many {mode === "cancers" ? "cancer types" : "technologies"} · click to pin</span>
         </div>

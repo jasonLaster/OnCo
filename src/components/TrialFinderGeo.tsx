@@ -144,7 +144,7 @@ export function TrialFinderGeo({ condition, intervention, title, drugNames = {} 
             {[25, 50, 100, 250, 500].map((r) => <option key={r} value={r}>{r} mi</option>)}
           </select>
         </label>
-        <button type="button" onClick={load} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">{state === "idle" ? "Find trials" : "Search again"}</button>
+        <button type="button" onClick={load} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">{state === "idle" ? "Find trials" : "Search again"}</button>
       </div>
       <p className="text-[11px] text-muted mt-2">Country and place are remembered in this browser only. A postcode is sent to OpenStreetMap&apos;s Nominatim service to find coordinates when you press the button; nothing else leaves your device.</p>
 

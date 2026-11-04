@@ -318,6 +318,8 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/children'?s oncology group|\bcog\b|children'?s cancer group|pediatric oncology group/, { id: "childrens-oncology-group", label: "Children's Oncology Group", kind: "cooperative-group" }],
   [/\becog\b|eastern cooperative|\bprecog\b/, { id: "ecog-acrin", label: "ECOG-ACRIN", kind: "cooperative-group" }],
   [/^swog|southwest oncology/, { id: "swog", label: "SWOG", kind: "cooperative-group" }],
+  // Alleanza Contro il Cancro's English name begins "Alliance"; it is the Italian research network, not the US group.
+  [/alleanza contro il cancro|^alliance against cancer/, { id: "alleanza-contro-il-cancro", label: "Alleanza Contro il Cancro (ACC)", kind: "institution" }],
   [/^alliance|cancer and leukemia group b|\bcalgb\b/, { id: "alliance-oncology", label: "Alliance for Clinical Trials in Oncology", kind: "cooperative-group" }],
   [/gog foundation|gog partners/, { id: "gog-foundation", label: "GOG Foundation", kind: "cooperative-group" }],
   [/nsabp foundation/, { id: "nsabp-foundation", label: "NSABP Foundation", kind: "cooperative-group" }],
@@ -389,6 +391,8 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/california, san francisco|ucsf/, { id: "ucsf", label: "UCSF", kind: "institution" }],
   [/california, los angeles|\bucla\b|jonsson/, { id: "ucla-jonsson", label: "UCLA Jonsson", kind: "institution" }],
   [/california, san diego|ucsd|moores/, { id: "ucsd-moores", label: "UC San Diego Moores", kind: "institution" }],
+  // The Uganda Cancer Institute's joint centre with Fred Hutch is named for both; its trials are the Kampala institute's.
+  [/uganda cancer institute|\buci[- ]fred hutch/, { id: "uganda-cancer-institute", label: "Uganda Cancer Institute", kind: "institution" }],
   [/fred hutch/, { id: "fred-hutch", label: "Fred Hutchinson Cancer Center", kind: "institution" }],
   [/city of hope/, { id: "city-of-hope", label: "City of Hope", kind: "institution" }],
   [/university of michigan|\brogel\b/, { id: "michigan-rogel", label: "University of Michigan Rogel", kind: "institution" }],

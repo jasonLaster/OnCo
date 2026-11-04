@@ -97,6 +97,10 @@ export const EN = {
   "header.stars": "{n} GitHub stars",
   "header.starsTitle": "{n} GitHub stars. Star the repo to help others find it.",
   "header.skip": "Skip to content",
+  "search.loading": "Loading search…",
+  "search.unavailable": "Search could not load.",
+  "search.retry": "Try again",
+  "search.namesOnly": "Names matched so far; full search still loading…",
 
   // ---- country (approvals) toggle ----
   "region.global": "Global",

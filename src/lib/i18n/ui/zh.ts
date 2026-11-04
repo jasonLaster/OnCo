@@ -78,6 +78,10 @@ export const zh: UiDict = {
   "header.stars": "{n} 个 GitHub 星标",
   "header.starsTitle": "{n} 个 GitHub 星标。给代码库加星，帮助更多人找到它。",
   "header.skip": "跳到正文",
+  "search.loading": "正在加载搜索…",
+  "search.unavailable": "无法加载搜索。",
+  "search.retry": "重试",
+  "search.namesOnly": "目前仅匹配名称；完整搜索仍在加载…",
 
   "region.global": "全球",
   "region.globalBlurb": "所有地区以国旗显示；单一国家的页面不在菜单中显示",

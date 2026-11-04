@@ -2,6 +2,7 @@ import { beforeAll, describe, expect, it } from "vitest";
 import MiniSearch from "minisearch";
 import { siteSearchDocs, type SearchDoc } from "../src/lib/search-index";
 import { SEARCH_INDEX_OPTIONS } from "../src/lib/search-rank";
+import { fromNameDoc, toNameDoc } from "../src/lib/search-names";
 import { ALLOWED_AMBIGUOUS, allowedRank, auditNames, MAX_ALLOWED_AMBIGUOUS, buildAuditIndex, describeFailure, nameOwners, positionBySearchRanked, positionOf, stratifiedSample, TOP, TYPED_NAME_WORDS, wordCount, type AuditIndex, type RankReport } from "./search-health-lib";
 
 /**
@@ -47,6 +48,34 @@ describe("search health: a record is found by its exact name", () => {
   it("finds the record the owner searched for", () => {
     expect(positionOf(index, "Jaime Leandro Foundation", "jaime-leandro-foundation").rank).toBe(1);
     expect(allowedRank("Jaime Leandro Foundation", nameOwners(docs))).toBe(TOP);
+  });
+});
+
+describe("search health: the names-only first stage finds every record by its exact name too", () => {
+  // The browser answers from search-names.json (src/lib/search-names.ts) until search.json has loaded, so a name typed
+  // in those first seconds must land where it does on the full index: the same audit, on an index built from that file
+  // exactly as search-client.ts builds it.
+  let stage: RankReport;
+  beforeAll(() => {
+    const names = docs.map(toNameDoc).map(fromNameDoc);
+    stage = auditNames(buildAuditIndex(names), nameOwners(names), names.filter((d) => wordCount(d.name) <= TYPED_NAME_WORDS));
+  }, SLOW_MS);
+
+  it("checks the same records as the full audit", () => {
+    expect(stage.checked).toBe(report.checked);
+  });
+
+  it("every typed name puts its record in the first three (five when shared), apart from the allowance list", () => {
+    const unexpected = stage.failures.filter((f) => !(f.id in ALLOWED_AMBIGUOUS));
+    expect(unexpected.map(describeFailure), "The first stage must rank names as the full index does: keep in search-names.json every field rankHits reads").toEqual([]);
+  });
+
+  it("drops the TL;DR and tags and nothing the lists show", () => {
+    const d = toNameDoc(docs.find((x) => x.id === "pembrolizumab")!);
+    expect(d).not.toHaveProperty("tldr");
+    expect(d).not.toHaveProperty("tags");
+    expect(d).toMatchObject({ id: "pembrolizumab", kind: "drug", route: "/drugs/pembrolizumab/" });
+    expect(d.aka).toContain("Keytruda");
   });
 });
 

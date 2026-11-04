@@ -7,9 +7,12 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 4 November 2026
-- GLOBOCAN 2024 across the site: every figure from IARC's 2024 estimates, the edition named from the data, and a map legend for every 2024 data-method code
+- The command-line tool is onco-cc, since the npm name onco belongs to someone else, and four EU approvals read from EMA's register
 - Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
 - Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+- The CLI is published as onco-cc, because the npm name onco belongs to an unrelated package and npx onco would run it
+- EU authorisation rows for elinzanetant, Lumeblue, gallium-68 edotreotide and epoetin beta, read from the EMA pages, with epoetin beta quoting its cancer indication
+- GLOBOCAN 2024 across the site: every figure from IARC's 2024 estimates, the edition named from the data, and a map legend for every 2024 data-method code
 - Ultra-sensitive residual disease: eight more MRD assays including China's, the methods that read clones and phenotype from blood, TROP2 PET tracers, eleven trials and the limit on telling subclones apart; and 47 portfolio companies the monitors found
 - Three new MRD trials are linked from their assay, drug and technology records
 - Residual disease tests with their stated detection limits, the subclone attribution bottleneck, TROP2 PET tracers and the trials that act on a breast cancer blood result

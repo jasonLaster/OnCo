@@ -165,6 +165,7 @@ import { companiesNew2026Radiopharma } from "./companies-new-2026-radiopharma";
 import { companiesNew2026CellGene } from "./companies-new-2026-cell-gene";
 import { companiesNew2026SmallMolecule } from "./companies-new-2026-small-molecule";
 import { companiesPortfolioMonitors } from "./companies-portfolio-monitors";
+import { companiesInvictus, drugsInvictus } from "./companies-invictus";
 import { portfolioMonitorDrugs, portfolioMonitorTrials } from "./products-portfolio-monitors";
 import { companiesNew2026DxAi } from "./companies-new-2026-dx-ai";
 import { companiesNew2026Sponsors } from "./companies-new-2026-sponsors";
@@ -372,7 +373,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesSponsors,
   ...companiesSponsorsWave3, ...companiesCooperativeGroups, ...companiesCooperativeGroupsMigrated,
   ...companiesMakersWave4,
-  ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors, ...companiesPortfolioMonitors,
+  ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors, ...companiesPortfolioMonitors, ...companiesInvictus,
   ...monitorsEdgarA, ...monitorsEdgarB, ...monitorsOrphans, ...monitorsSbirA, ...monitorsSbirB, ...monitorsSbirC, ...monitorsSbirD,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
   ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
@@ -382,7 +383,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...drugsPipelineWave2, ...drugsPipelineWave6, ...drugsDealAssets, ...drugsPipelineWave7, ...drugsChinaWave1, pvCancer, ...pvTrials, ...pvTerms, ...pvIdeas, ...pdacDrugs, ...pdacTrials, ...pdacCompanies, ...drugsSubtypesWave, ...diagnosticsTechnologies1, ...diagnosticsCompanies1, ...diagnosticsTechnologies2, ...diagnosticsCompanies2, ...ispyTrials, ...ispyCompanies, etCancer, ...etTrials, aspirinDrug, ...radiationTechnologies, ...radiationTerms, ...radiationTrials, ...cancerSubtypes, ...radiationDrugs, ...radiationCompanies, ...cancerParentsWave2, ...radiationTrials4, ...radiationTermsWave5, ...radiationTrialsWave5, ...thyroidSubtypes, ...headNeckSubtypes, ...ovarianSubtypes, ...kidneySubtypes, ...testisOesophagusSubtypes, ...bladderSubtypes, ...sarcomaLymphomaSubtypes, ...modelTechnologies, ...machineTechnologies, ...machineCompanies, ...manufacturingTechnologies, ...manufacturingCompanies, theoryHub, ...theoryTerms, ...platformTerms, ...platformTrials, ...prostateSubtypes, ...cnsSubtypes, ...machineTechnologies2, ...machineCompanies2, ...colorectalLymphomaSubtypes, ...colorectalLymphomaTrials, ...upperGiLiverSubtypes, ...bloodSubtypes, ...gynaecologicalSubtypes, ...skinSubtypes, ...skinTrials, ...lungSubtypes, ...lungSubtypeTrials, ...breastSubtypes, ...breastSubtypeTrials, ...sarcomaBoneSubtypes, ...sarcomaBoneTrials, ...paediatricSubtypes, ...neuroendocrineSubtypes, ...rareSubtypes, ...pancreaticSubtypes, ...headNeckHpvSubtypes, ...headNeckHpvTrials, ...trialsSubtypesWave, ...cancersWave4Parents, ...cancersWave4Lung, ...cancersWave4Breast, ...cancersWave4ColonKidneyTestis, ...cancersWave4Haematology, ...cancersWave4Rare, ...cancersWave4EndocrineThoracicGynae, ...trialsSocWave, ...papersSocWave,
   ...pipelineTrialsWave3,
   ...pipelineTrialsWave4,
-  ...pipelineTrialsWave5, ...pipelineTrialsWave6, ...companyPipelineGapDrugs, ...companyPipelineGapTrials, ...portfolioMonitorDrugs, ...portfolioMonitorTrials,
+  ...pipelineTrialsWave5, ...pipelineTrialsWave6, ...companyPipelineGapDrugs, ...companyPipelineGapTrials, ...portfolioMonitorDrugs, ...portfolioMonitorTrials, ...drugsInvictus,
   ...issuesWaveB,
   ...freeCollections, ...tumourTestCompanies,
   ...checkpointTargets, ...checkpointTerms,

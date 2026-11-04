@@ -48,7 +48,7 @@ const REGION: Record<string, string> = { US: "North America", CA: "North America
 const fmt = (n?: number) => (n === undefined || Number.isNaN(n) ? "-" : n >= 1000 ? Math.round(n).toLocaleString("en-GB") : n.toLocaleString("en-GB", { maximumFractionDigits: 1 }));
 const pct = (a: number, b: number) => (b ? `${Math.round((a / b) * 100)}%` : "-");
 
-export function CountryRanking({ rows, years, deepDives = [] }: { rows: CountryRow[]; years: number[]; /** ISO codes with a deep-dive page at /countries/<code>/. */ deepDives?: string[] }) {
+export function CountryRanking({ rows, years, deepDives = [], globocanYear }: { rows: CountryRow[]; years: number[]; /** ISO codes with a deep-dive page at /countries/<code>/. */ deepDives?: string[]; /** GLOBOCAN edition of the incidence and mortality rates (`year` in public/globocan/countries.json). */ globocanYear: number }) {
   const [perCapita, setPerCapita] = useState(false);
   const [region, setRegion] = useState<string[]>([]);
   const [min, setMin] = useState<string | null>("500");
@@ -100,7 +100,7 @@ export function CountryRanking({ rows, years, deepDives = [] }: { rows: CountryR
     { key: "oa", label: "Open access", sortable: true, hide: "hidden lg:table-cell", render: ({ r }) => <span className="tabular-nums text-muted">{pct(r.oa, r.total)}</span> },
     { key: "trials", label: perCapita ? "Trials / M pop" : "Trials with a site", sortable: true, hide: "hidden md:table-cell", render: ({ r }) => <span className="tabular-nums text-muted">{r.trials === undefined ? "-" : perCapita && r.population ? fmt(r.trials / r.population) : fmt(r.trials)}</span> },
     { key: "inst", label: "In OnCo", sortable: true, hide: "hidden lg:table-cell", render: ({ r }) => r.institutions ? <Link href="/institutions/" className="underline tabular-nums">{r.institutions}</Link> : <span className="text-muted">-</span> },
-    { key: "incidence", label: "Incidence / mortality", sortable: true, hide: "hidden xl:table-cell", render: ({ r }) => r.incidence ? <a className="tabular-nums text-muted underline decoration-dotted" href={r.gcoUrl} rel="noopener" title="GLOBOCAN 2022 age-standardised rates per 100,000">{r.incidence} / {r.mortality}</a> : <span className="text-muted">-</span> },
+    { key: "incidence", label: "Incidence / mortality", sortable: true, hide: "hidden xl:table-cell", render: ({ r }) => r.incidence ? <a className="tabular-nums text-muted underline decoration-dotted" href={r.gcoUrl} rel="noopener" title={`GLOBOCAN ${globocanYear} age-standardised rates per 100,000`}>{r.incidence} / {r.mortality}</a> : <span className="text-muted">-</span> },
     { key: "score", label: "Score", sortable: true, render: ({ score, parts }) => <span className="tabular-nums font-semibold" title={parts.map(([k, v]) => `${k} ${v.toFixed(1)}`).join(" · ")}>{score}</span> },
   ];
 

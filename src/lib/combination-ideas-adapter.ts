@@ -12,6 +12,7 @@
  * silently drifting out of the grid.
  */
 import { graph } from "./graph";
+import { GLOBOCAN } from "./globocan";
 import type { Engine, FormatIndex, ProposedCell } from "./modular";
 import type { FormatId } from "./modular-formats";
 import { CombinationIdeaSchema, type CombinationIdea, type CombinationIdeaInput } from "./schema";
@@ -101,5 +102,5 @@ export function proposedByFormat(e: Engine, ideas: CombinationIdeaInput[] = comb
 
 /** The score's parts in one line, for the tooltip on the score. */
 export function scoreParts(s: ProposedCell["score"]): string {
-  return `Score ${s.total} of 100 = burden ${s.burden}/40 (${s.worldDeaths.toLocaleString("en-GB")} world deaths in 2022 over the listed cancers) + validation of part A ${s.validationA}/15 + validation of part B ${s.validationB}/15 + plausibility ${s.plausibility}/30. Formula in docs/OPEN-PIPELINE.md.`;
+  return `Score ${s.total} of 100 = burden ${s.burden}/40 (${s.worldDeaths.toLocaleString("en-GB")} world deaths in ${GLOBOCAN.year} over the listed cancers) + validation of part A ${s.validationA}/15 + validation of part B ${s.validationB}/15 + plausibility ${s.plausibility}/30. Formula in docs/OPEN-PIPELINE.md.`;
 }

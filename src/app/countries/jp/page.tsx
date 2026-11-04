@@ -168,7 +168,7 @@ export default function JapanPage() {
                 <span className="text-xs text-muted">All cancers (C00-97): {fmt(all[0])} new cases, {fmt(all[2])} deaths; age-standardised incidence {fmt1(all[1])} and mortality {fmt1(all[3])} per 100,000; cumulative risk to 74: {fmt1(all[4])}%.</span>
               </div>
               <StaticTable rows={siteRows} columns={SITE_COLUMNS} noun="sites" defaultSort={{ key: "cases", dir: -1 }} />
-              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are IARC estimates for 2022; the registry counts quoted in the cards above are Japan&apos;s own for 2023 and differ. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
+              <p className="mt-3 text-xs text-muted">Source: {GLOBOCAN.citation} <a href={GLOBOCAN.sourceUrl} className="underline" rel="noopener">{GLOBOCAN.sourceUrl}</a>. ASR = age-standardised rate per 100,000 (World standard). These are IARC estimates for {GLOBOCAN.year}; the registry counts quoted in the cards above are Japan&apos;s own for 2023 and differ. Compare countries on the <Link href="/cases/" className="underline">cases by country</Link> page.</p>
             </div>
           )}
         </Section>
@@ -251,7 +251,7 @@ export default function JapanPage() {
         <section className="mt-10 grid md:grid-cols-2 gap-6 text-sm">
           <div className="card p-5 space-y-2">
             <h2 className="font-semibold text-base">How this page is built</h2>
-            <p>The cards and the three hand-built tables are written from the linked Japanese sources and dated {JP_ASOF}. The entity lists are pulled live from the corpus by id, so a new Japanese trial, company or person added anywhere in OnCo appears here once listed in <code>src/data/country-jp.ts</code>. Registry incidence is for diagnoses in 2023, deaths are from the 2024 vital statistics, and survival is for the 2018 diagnosis cohort; GLOBOCAN&apos;s 2022 estimates are given separately because they are estimates on a different basis. Crude rates from ganjoho are labelled as such: Japan&apos;s population is the oldest in the world and its crude rates run far above its age-standardised ones.</p>
+            <p>The cards and the three hand-built tables are written from the linked Japanese sources and dated {JP_ASOF}. The entity lists are pulled live from the corpus by id, so a new Japanese trial, company or person added anywhere in OnCo appears here once listed in <code>src/data/country-jp.ts</code>. Registry incidence is for diagnoses in 2023, deaths are from the 2024 vital statistics, and survival is for the 2018 diagnosis cohort; GLOBOCAN&apos;s {GLOBOCAN.year} estimates are given separately because they are estimates on a different basis. Crude rates from ganjoho are labelled as such: Japan&apos;s population is the oldest in the world and its crude rates run far above its age-standardised ones.</p>
           </div>
           <div className="card p-5 space-y-2 border-amber-300/60 dark:border-amber-700/50">
             <h2 className="font-semibold text-base">Verify before relying on it</h2>

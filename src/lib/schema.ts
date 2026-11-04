@@ -1028,7 +1028,7 @@ export const CombinationIdeaSchema = z.object({
   score: z.object({
     total: z.number().int().min(0).max(100),
     burden: z.number().int().min(0).max(40),
-    /** World deaths in 2022 (GLOBOCAN) summed over the distinct sites of `cancers`; the input to `burden`. */
+    /** World deaths in the GLOBOCAN edition of public/globocan/countries.json (its `year`), summed over the distinct sites of `cancers`; the input to `burden`. */
     worldDeaths: z.number().int().min(0),
     validationA: z.number().int().min(0).max(15),
     validationB: z.number().int().min(0).max(15),

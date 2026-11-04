@@ -475,7 +475,7 @@ export const EN = {
   // ---- idea rankings (/ideas/rankings/) ----
   "rank.pill": "Rankings",
   "rank.title": "Idea rankings",
-  "rank.lede": "Six ways to order the same {n} ideas, each built from fields the records already carry: how many people the linked cancers affect each year (GLOBOCAN 2022), how many cancers an idea spans, how much evidence is linked, its cost band, its horizon and its maturity. Every score shows its formula; nothing is estimated.",
+  "rank.lede": "Six ways to order the same {n} ideas, each built from fields the records already carry: how many people the linked cancers affect each year (GLOBOCAN {year}), how many cancers an idea spans, how much evidence is linked, its cost band, its horizon and its maturity. Every score shows its formula; nothing is estimated.",
   "rank.allIdeas": "All ideas",
   "rank.viewsAria": "Ranking views",
   "rank.view.bang-for-buck": "Best bang for buck",
@@ -484,7 +484,7 @@ export const EN = {
   "rank.view.closest-to-reality": "Closest to reality",
   "rank.view.cherry-picked": "Cherry picked",
   "rank.view.most-wanted": "Most wanted",
-  "rank.formula.bang-for-buck": "Score = burden (annual new cases of the linked cancers, GLOBOCAN 2022) divided by the cost band (small 1, medium 2, large 3) and divided again by one plus the horizon in years; ties go to more evidence.",
+  "rank.formula.bang-for-buck": "Score = burden (annual new cases of the linked cancers, GLOBOCAN {year}) divided by the cost band (small 1, medium 2, large 3) and divided again by one plus the horizon in years; ties go to more evidence.",
   "rank.formula.most-important": "Score = burden times breadth (the number of linked cancers); ties go to more evidence.",
   "rank.formula.hardest": "Score = cost band (1 to 3) plus horizon years divided by 5, plus distance from being tested at scale (0 to 3), plus missing evidence (3 minus linked evidence, never below 0); ties go to more burden.",
   "rank.formula.closest-to-reality": "Score = maturity rank (speculative 1 to being tested at scale 4) times 3, plus linked evidence; ties go to more burden.",

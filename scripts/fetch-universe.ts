@@ -230,15 +230,105 @@ export function parseNhsAlliances(html: string): NhsAlliance[] {
   return out;
 }
 
-async function nhsAlliances(): Promise<Envelope<NhsAlliance> | null> {
+/**
+ * The NHS England page has answered scripts with an empty bot-challenge page since September 2026, so the list is
+ * read from the Office for National Statistics instead: ONS publishes the Cancer Alliance geography for England on
+ * its Open Geography Portal, one release per boundary change (Cancer Alliances (April 2026) Boundaries EN BGC, and
+ * so on), each an ArcGIS feature service whose rows carry the official code (E56...) and name. The portal's search
+ * API finds the newest release, so a new boundary year is picked up without a code change. ONS gives no websites, so
+ * each alliance keeps the website and the label NHS England's own page gave it, matched by name; the date those
+ * were last read from NHS England is kept in `websitesChecked`. The NHS England page stays as the fallback.
+ */
+const ONS_SEARCH_URL = "https://geoportal.statistics.gov.uk/api/search/v1/collections/all/items?q=Cancer%20Alliances%20Boundaries%20EN%20BGC&limit=100";
+export type OnsAllianceRelease = { id: string; title: string; url: string; month: number; year: number };
+export type OnsAlliance = { code: string; name: string };
+export type NhsAllianceItem = NhsAlliance & { code?: string; onsName?: string };
+
+const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+
+/** The newest "Cancer Alliances (<Month> <Year>) Boundaries EN BGC" feature service in a portal search response. */
+export function latestOnsAllianceRelease(search: unknown): OnsAllianceRelease | null {
+  const features = (search as { features?: Array<{ id?: string; properties?: { title?: string; type?: string; url?: string } }> })?.features ?? [];
+  const releases: OnsAllianceRelease[] = [];
+  for (const f of features) {
+    const title = (f.properties?.title ?? "").replace(/\s+/g, " ").trim();
+    const m = /^Cancer Alliances \(([A-Za-z]+) (\d{4})\) Boundaries EN BGC$/.exec(title);
+    const url = f.properties?.url ?? "";
+    if (!m || f.properties?.type !== "Feature Service" || !/^https:\/\/services\d*\.arcgis\.com\/[^?#]+\/FeatureServer$/.test(url) || !f.id) continue;
+    const month = MONTHS.indexOf(m[1].toLowerCase());
+    if (month < 0) continue;
+    releases.push({ id: f.id, title, url, month: month + 1, year: Number(m[2]) });
+  }
+  releases.sort((a, b) => b.year - a.year || b.month - a.month);
+  return releases[0] ?? null;
+}
+
+/** Code and name of every row in a feature-service query; the field names carry the release year (CAL26CD, CAL26NM). */
+export function parseOnsAlliances(query: unknown): OnsAlliance[] {
+  const rows = (query as { features?: Array<{ attributes?: Record<string, unknown> }> })?.features ?? [];
+  const out = new Map<string, OnsAlliance>();
+  for (const r of rows) {
+    const a = r.attributes ?? {};
+    const codeKey = Object.keys(a).find((k) => /^CAL\d{2}CD$/i.test(k));
+    const nameKey = Object.keys(a).find((k) => /^CAL\d{2}NM$/i.test(k));
+    const code = codeKey ? String(a[codeKey] ?? "").trim() : "";
+    const name = nameKey ? String(a[nameKey] ?? "").replace(/\s+/g, " ").trim() : "";
+    if (/^E56\d{6}$/.test(code) && name) out.set(code, { code, name });
+  }
+  return [...out.values()].sort((a, b) => a.code.localeCompare(b.code));
+}
+
+/**
+ * ONS names an alliance by its area ("West London"); NHS England by the name it trades under. The one that differs
+ * in more than the suffix: RM Partners' own site says "RM Partners is one of 20 Cancer Alliances" serving "north
+ * west and south west London" (rmpartners.nhs.uk, read 4 November 2026), and the ODS record N78 for the same body is
+ * "WEST LONDON CANCER ALLIANCE".
+ */
+const ONS_ALLIANCE_LABELS: Record<string, string> = { "west london": "royal marsden partners" };
+const allianceKey = (s: string) => s.toLowerCase().replace(/&/g, " and ").replace(/\bcancer alliance\b/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+
+/** ONS rows joined to the previous snapshot's labels and websites by name; an alliance new to ONS gets its ONS name and no website. */
+export function nhsAlliancesFromOns(ons: OnsAlliance[], previousItems: NhsAlliance[]): NhsAllianceItem[] {
+  const byKey = new Map(previousItems.map((p) => [allianceKey(p.name), p]));
+  return ons.map((o) => {
+    const key = allianceKey(o.name);
+    const prev = byKey.get(ONS_ALLIANCE_LABELS[key] ?? key);
+    return { name: prev?.name ?? `${o.name} Cancer Alliance`, website: prev?.website ?? "", code: o.code, onsName: o.name };
+  });
+}
+
+async function nhsAlliancesOns(): Promise<Envelope<NhsAllianceItem> | null> {
+  const release = latestOnsAllianceRelease(await getJson<unknown>(ONS_SEARCH_URL));
+  if (!release) return null;
+  const query = await getJson<unknown>(`${release.url}/0/query?where=1%3D1&outFields=*&returnGeometry=false&f=json`);
+  const ons = parseOnsAlliances(query);
+  if (!ons.length) return null;
+  const prev = previous("nhs-cancer-alliances");
+  const items = nhsAlliancesFromOns(ons, (prev?.items ?? []) as NhsAlliance[]);
+  const websitesChecked = (prev?.websitesChecked as string | undefined) ?? (prev?.source.url === NHS_URL ? prev.checked : undefined);
+  return {
+    checked: today(), source: { label: `Office for National Statistics: ${release.title}`, url: release.url },
+    method: `Every Cancer Alliance in the newest ONS Cancer Alliance geography for England (${release.title}, read through the Open Geography Portal's feature service), with its official code. The label and website of each alliance are the ones NHS England's Cancer Alliances page gave it${websitesChecked ? ` when last read on ${websitesChecked}` : ""}, matched by name; that page now refuses scripts.`,
+    total: items.length, release: `${MONTHS[release.month - 1][0].toUpperCase()}${MONTHS[release.month - 1].slice(1)} ${release.year}`,
+    ...(websitesChecked ? { websitesChecked, websitesSource: NHS_URL } : {}),
+    items,
+  };
+}
+
+async function nhsAlliancesNhsPage(): Promise<Envelope<NhsAlliance> | null> {
   const html = await getText(NHS_URL, { accept: "text/html" });
   if (!html) return null;
   const items = parseNhsAlliances(html);
+  if (!items.length) return null;
   return {
     checked: today(), source: { label: "NHS England: Cancer Alliances", url: NHS_URL },
     method: "The numbered list of Cancer Alliances under 'Map of Cancer Alliances in England' on the NHS England page.",
     total: items.length, items,
   };
+}
+
+async function nhsAlliances(): Promise<Envelope<NhsAllianceItem> | null> {
+  return (await nhsAlliancesOns()) ?? (await nhsAlliancesNhsPage());
 }
 
 async function uicc(): Promise<Envelope | null> {

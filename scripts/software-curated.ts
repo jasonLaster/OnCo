@@ -1068,6 +1068,27 @@ export const CURATED: CuratedSoftware[] = [
     cancers: ["breast-cancer"],
     note: "Excluded from /open-source/ by design: free for non-commercial use, with the code not published.",
   },
+  // ─── Prognosis calculators (issue #43). Link-outs only: the owner's direction of 15 October 2026 is that OnCo's
+  // effort goes to treatments and possible treatments, so these rows say what each tool estimates and which paper
+  // tested it, and never reproduce an estimate. Predict Breast and Predict Prostate are on /open-source/ already and are
+  // in SKIPPED below with their validation papers, rather than recorded twice. Each paperQuery names the validation papers by DOI, each resolved
+  // through Europe PMC and its abstract read before it was listed here.
+  {
+    id: "mskcc-nomograms", name: "MSK prediction tools (nomograms)", vendor: "Memorial Sloan Kettering Cancer Center", vendorId: "mskcc", category: C.research, segment: S.risk,
+    summary: "A set of free online calculators, each built from records of people treated at Memorial Sloan Kettering, that estimate the chance of the cancer coming back or of survival after treatment for one cancer.",
+    url: "https://www.mskcc.org/nomograms", pageMatch: "nomograms",
+    paperQuery: 'DOI:"10.1002/cncr.20783" OR DOI:"10.1002/cncr.20570" OR DOI:"10.1002/cncr.27971"', paperMatch: "nomogram",
+    cancers: ["prostate", "colorectal", "colon-cancer", "rectal-cancer", "gastric", "gist", "urothelial", "rcc", "endometrial", "sarcoma", "synovial-sarcoma", "liposarcoma", "desmoid-tumour", "uterine-sarcoma", "leiomyosarcoma"],
+    note: "Tools to use with a clinician: each page says its results should be discussed with a physician. OnCo links to them and does not reproduce their estimates. The survival and recurrence tools listed on 4 November 2026: prostate cancer before and after prostatectomy, among others; colon cancer disease-free and overall survival after surgery; rectal cancer after multimodal or total neoadjuvant therapy; gastric cancer disease-specific survival after surgery; GIST recurrence after surgery; bladder cancer recurrence after surgery; kidney cancer recurrence after surgery; endometrial cancer overall survival after surgery; soft tissue, synovial and extremity liposarcoma survival, local recurrence and desmoid recurrence; uterine leiomyosarcoma overall survival after surgery. MSK also publishes tools for melanoma sentinel node spread, testicular cancer pathology after chemotherapy and transfusion during liver surgery, which predict findings rather than survival. Its breast cancer tools sit on a separate site that refused the fetch. The papers listed test the gastric, sarcoma and uterine leiomyosarcoma tools in patients treated elsewhere.",
+  },
+  {
+    id: "nci-crc-survival-calculator", name: "Calculator of Colorectal Cancer Survival Probability", vendor: "National Cancer Institute (NIH)", vendorId: "nci", category: C.research, segment: S.risk,
+    summary: "A free online calculator from the National Cancer Institute that estimates the chance that a person with colorectal cancer will not die of it in the next five years, which its makers describe for use in deciding when an organ transplant is safe.",
+    url: "https://dceg.cancer.gov/tools/risk-assessment/calculator-of-colorectal-cancer-survival-probability", pageMatch: "Calculator of Colorectal Cancer Survival Probability",
+    paperQuery: 'DOI:"10.1016/j.ajt.2024.08.018"', paperMatch: "colorectal cancer",
+    cancers: ["colorectal", "colon-cancer", "rectal-cancer"],
+    note: "A tool for health professionals, as the National Cancer Institute's page says; it uses sex, age, site, stage and first treatment and not molecular features. OnCo links to it and does not reproduce its estimates. The paper listed built the model on SEER registry records and compared its estimates with what happened to 956 people with a past colorectal cancer who went on to have an organ transplant.",
+  },
   {
     id: "lifex", name: "LIFEx", vendor: "Institut Curie and CEA", category: C.research, segment: S.tool,
     summary: "Radiomic feature extraction from PET, CT and MR images, free to use and widely cited in imaging biomarker work.",
@@ -1120,5 +1141,8 @@ export const SKIPPED: Array<{ name: string; reason: string }> = [
   { name: "Epic Beaker, Clinisys, Sunquest", reason: "General laboratory information systems rather than oncology software; recorded here only as context for the pathology platforms." },
   { name: "IBM Watson for Oncology", reason: "Withdrawn from the market; the evaluations that exist describe a product no one can now buy, so it is left to the literature rather than given a row." },
   { name: "ViewRay MRIdian", reason: "The company wound down in 2024 and its product pages are gone, so nothing current could be fetched." },
+  { name: "Predict Breast and Predict Prostate (University of Cambridge)", reason: "Already on /open-source/ (predict-breast, predict-prostate), because their code is published, so they are not recorded a second time here. Their validation papers: 10.1016/j.ejso.2011.02.001, 10.1186/s13058-017-0852-3 and 10.6004/jnccn.2025.7014 for breast; 10.1371/journal.pmed.1002758 for prostate." },
+  { name: "CancerMath (breast, melanoma and kidney cancer outcome calculators)", reason: "Its calculators at lifemath.net answer only over plain http, with no secure page a record could cite, and cancermath.net now serves a domain-sale page." },
+  { name: "Adjuvant! Online", reason: "adjuvantonline.com did not answer the fetch on 4 November 2026; Predict Breast, which was compared with it in a published validation, is on /open-source/." },
   { name: "Open-source projects of every kind", reason: "Out of scope by design: they are mapped in full on /open-source/, which this page links to rather than duplicating." },
 ];

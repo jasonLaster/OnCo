@@ -157,7 +157,7 @@ const technologies: TechnologyInput[] = [
     principle: "Structured and abstracted EHR data, claims, genomics, and mortality linked with privacy-preserving tokens; curated to common data models and analysed with target-trial emulation methods.",
     strengths: ["Scale and speed", "Populations trials exclude (older, sicker, rarer)"],
     limitations: ["Confounding and missing data", "Inconsistent endpoints (real-world progression)", "Access and cost"],
-    technologies: ["ai-trial-matching", "cgp"], companies: ["flatiron-health", "tempus", "concertai", "cota-healthcare", "trinetx", "komodo-health", "datavant"], terms: ["real-world-evidence", "omop-ohdsi", "mcode"],
+    technologies: ["ai-trial-matching", "cgp"], companies: ["flatiron-health", "tempus", "concertai", "cota-healthcare", "trinetx", "komodo-health", "datavant", "vizlitics"], terms: ["real-world-evidence", "omop-ohdsi", "mcode"],
   }),
 
   // ---- Clinical trial infrastructure ----

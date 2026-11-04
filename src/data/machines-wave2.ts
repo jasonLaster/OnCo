@@ -120,7 +120,7 @@ export const machineTechnologies2: TechnologyInput[] = [
     limitations: ["Light penetrates only millimetres", "Systemic drugs cause prolonged photosensitivity", "Little randomised evidence beyond skin indications"],
     cancers: ["skin-cancer", "basal-cell-carcinoma", "esophageal", "head-and-neck", "prostate", "non-muscle-invasive-bladder-cancer", "cholangiocarcinoma", "lung-cancer"], technologies: ["photoimmunotherapy", "sonodynamic-therapy", "cystoscopy-turbt"], related: ["litt-systems", "superficial-radiotherapy", "optical-imaging"],
     drugs: ["porfimer-sodium", "temoporfin", "aminolevulinic-acid", "methyl-aminolevulinate", "padeliporfin", "cetuximab-sarotalocan", "hexaminolevulinate"],
-    companies: ["biolitec", "modulight", "rakuten-medical", "photocure", "sbi-pharmaceuticals"],
+    companies: ["biolitec", "modulight", "rakuten-medical", "photocure", "sbi-pharmaceuticals", "photodynamic-solutions"],
     links: [{ label: "Agostinis et al., Photodynamic therapy of cancer: an update (CA: A Cancer Journal for Clinicians 2011)", url: "https://doi.org/10.3322/caac.20114" }, { label: "Modulight: medical lasers for photodynamic therapy", url: "https://www.modulight.com/" }] }),
   tech({ id: "litt-systems", name: "Laser interstitial thermal therapy systems (NeuroBlate, Visualase)", sections: ["surgery", "devices"], status: "established", since: 2007,
     tldr: "Two commercial systems thread a laser fibre through a hole the width of a pencil into a brain tumour and cook it while the surgeon watches the temperature on live MRI. They reach tumours too deep or too risky to remove with open surgery.",

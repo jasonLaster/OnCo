@@ -6,11 +6,12 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 4 November 2026
+- Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
+
 ### 3 November 2026
+- Review-list judgements from labels, registries and filings: drugs link the receptor they bind, an investor and a trials group no longer pose as makers, sponsors resolve to their own centres, ten company pages corrected, and two duplicate products cross-referenced with a merge plan
 - Accuracy round one fixes wrong paper ids, trials and side-effect figures; 28 FDA companion diagnostics and 11 tumour tests, FDA, EMA and WHO coverage lists, about 270 wrong links corrected, and deals and regimens linked to their records
-- 36 multi-cancer early detection tests, the Prometheus gaps filled (9 technologies, 18 companies, 2 drugs), and OpenOnco in the open-source catalogue
-- The weekly refresh reads Even One's new page again and opens an issue when a source goes stale or a portfolio company is missing
-- Cover brain-to-cancer neural circuit research
 - Readout pages keep tests and medicines apart: devices name their readouts, test cancer links rest on coverage, trials or papers, and three devices are credited to their FDA applicants
 - Every drug side-effect rate now names its source: the last 143 unsourced rows read against FDA labels and trial papers, and the count held at zero
 - Keep GC012F and AZD0120 as separate records for now: merging them adds a site redirect, which waits for the owner

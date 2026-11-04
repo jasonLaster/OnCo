@@ -94,7 +94,7 @@ const ROWS: Row[] = [
     holds: "Financing and supply of HPV vaccine for national programmes in lower-income countries, so that girls can be vaccinated free through their health system; the page lists the countries supported and how the programme has grown.",
     tldr: "Gavi pays for HPV vaccine in lower-income countries so national programmes can give it to girls for free, where cervical cancer kills most.",
     summary: "Most cervical cancer deaths happen in low- and middle-income countries with little screening, which makes vaccination the most effective tool available. Gavi co-finances HPV vaccine introduction and supply for eligible countries and, since the shift to a single-dose schedule endorsed by the WHO, has been able to reach far more girls with the same doses. The programme page lists supported countries and progress. For a family in a supported country, the vaccine is free through the national immunisation programme.",
-    technologies: ["hpv-vaccine"], cancers: ["cervical"], institutions: ["who"], tags: ["public"] },
+    technologies: ["hpv-vaccine"], cancers: ["cervical"], institutions: ["who", "chai-cancer-care"], tags: ["public"] },
 
   // Helplines
   { group: "helplines", id: "nci-cancer-information-service", name: "NCI Cancer Information Service", url: "https://www.cancer.gov/contact", maintainer: "US National Cancer Institute",
@@ -171,7 +171,7 @@ const ROWS: Row[] = [
     tags: ["patient-programme", "patient-org"] },
 
   // Second opinions (Cancer Commons already has a company record, linked from the service list; it links back to this one)
-  { group: "second-opinion", id: "thesecondopinion", related: ["cancer-commons"], name: "thesecondopinion", url: "https://thesecondopinion.org/", maintainer: "thesecondopinion",
+  { group: "second-opinion", id: "thesecondopinion", related: ["cancer-commons", "young-lives-vs-cancer-charity"], name: "thesecondopinion", url: "https://thesecondopinion.org/", maintainer: "thesecondopinion",
     holds: "Free multidisciplinary second opinions for adults with cancer in California: a panel of volunteer oncologists, surgeons, radiologists and pathologists reviews the case and meets the patient, with a written summary for the treating doctors.",
     tldr: "In California, thesecondopinion gives adults with cancer a free review of their diagnosis and treatment plan by a panel of volunteer cancer specialists.",
     summary: "thesecondopinion has offered free second opinions in San Francisco since 1969. A patient sends their records; a panel of volunteer specialists from different disciplines reviews the pathology, imaging and plan, then meets the patient and family to explain their view, and sends a written report to the treating team. The service is limited to adults with a cancer diagnosis in California, and it is free because the clinicians volunteer their time.",
@@ -207,7 +207,7 @@ const ROWS: Row[] = [
     tldr: "Maggie's centres sit next to NHS cancer hospitals and anyone can walk in, free, for support, benefits advice or a cup of tea.",
     summary: "Maggie's runs centres in the grounds of NHS cancer hospitals throughout the UK, plus a few abroad. Each is staffed by cancer support specialists, benefits advisers and psychologists, and runs courses such as Where Now for people finishing treatment, exercise and nutrition sessions, and groups for families. No referral or appointment is needed and everything is free. It is the model for hospital-adjacent support that other countries have copied.",
     technologies: ["psycho-oncology", "survivorship-care-plan"], tags: ["patient-org"] },
-  { group: "survivorship", id: "penny-brohn-uk", name: "Penny Brohn UK", url: "https://www.pennybrohn.org.uk/", maintainer: "Penny Brohn UK",
+  { group: "survivorship", id: "penny-brohn-uk", related: ["penny-brohn-cancer-care", "maggies"], name: "Penny Brohn UK", url: "https://www.pennybrohn.org.uk/", maintainer: "Penny Brohn UK",
     holds: "Free Living Well courses and one-to-one services for people with cancer and their supporters, in Bristol and online, covering nutrition, physical activity, sleep, stress and emotional wellbeing.",
     tldr: "Penny Brohn UK runs free courses and sessions on living well with cancer, in person in Bristol and online across the UK.",
     summary: "Penny Brohn UK is a charity that offers a whole-person approach alongside medical treatment. Its Living Well course covers eating, moving, resting and coping, and it provides free individual sessions with nutritional therapists, counsellors and other practitioners. Services are free to people with cancer and their supporters, funded by donations. It does not offer alternative treatment and works alongside the NHS.",

@@ -42,7 +42,7 @@ function keysOf(names: string[]): string[] {
 /** A shorter name that begins with one of these is a description ("institute for cancer research"), not a proper name, so it must match whole. */
 const GENERIC_START = /^(all india institute|institute|cancer|society|foundation|national|american|international|association|center|hospital|research|children s|university|regional|community)\b/;
 /** Words that on their own describe a kind of place rather than name one: "children s hospital" must match whole. */
-const GENERIC_WORDS = new Set(["children", "s", "hospital", "hospitals", "medical", "center", "cancer", "university", "of", "the", "and", "institute", "research", "foundation", "society", "national", "regional", "community", "clinic", "health", "care", "oncology", "comprehensive"]);
+const GENERIC_WORDS = new Set(["children", "s", "hospital", "hospitals", "medical", "center", "cancer", "university", "of", "the", "and", "institute", "research", "foundation", "society", "national", "regional", "community", "clinic", "health", "care", "oncology", "comprehensive", "council", "league", "association", "contra", "contre", "el", "la", "le", "de", "del", "lucha", "liga", "ligue", "asociacion", "fundacion", "fondation"]);
 function agree(a: string, b: string): boolean {
   if (a === b) return true;
   const [s, l] = a.length <= b.length ? [a, b] : [b, a];

@@ -10,7 +10,7 @@ const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 const tags = ["parent-page"];
 
 export const cancerParentsWave2: CancerInput[] = [
-  { id: "breast-cancer", institutions: ["komen", "national-breast-cancer-foundation", "lbbc"], kind: "cancer", name: "Breast cancer (all types)", group: "breast", asOf, tags, wikipedia: W("Breast_cancer"),
+  { id: "breast-cancer", institutions: ["komen", "national-breast-cancer-foundation", "lbbc", "prevent-breast-cancer", "breast-cancer-uk"], kind: "cancer", name: "Breast cancer (all types)", group: "breast", asOf, tags, wikipedia: W("Breast_cancer"),
     aka: ["TCGA-BRCA", "breast invasive carcinoma (TCGA BRCA cohort)", "Breast carcinoma", "Carcinoma of the breast"],
     // The burden is written with its cohorts and sources by the September 2026 family round
     // (src/data/spikes/breast-core.ts). The pair that stood here, "about 2.3 million new cases and 670,000 deaths"
@@ -57,7 +57,7 @@ export const cancerParentsWave2: CancerInput[] = [
     // family's own and carry their sources.
     openProblems: [],
     links: [{ label: "Wikipedia", url: W("Breast_cancer") }, { label: "NCI PDQ", url: "https://www.cancer.gov/types/breast" }] },
-  { id: "lung-cancer", institutions: ["go2-for-lung-cancer", "lcrf"], kind: "cancer", name: "Lung cancer (all types)", group: "thoracic", asOf, tags, wikipedia: W("Lung_cancer"),
+  { id: "lung-cancer", institutions: ["go2-for-lung-cancer", "lcrf", "btog"], kind: "cancer", name: "Lung cancer (all types)", group: "thoracic", asOf, tags, wikipedia: W("Lung_cancer"),
     aka: ["Bronchogenic carcinoma", "Lung carcinoma"],
     burden: "The leading cause of cancer death worldwide, with about 2.5 million new cases and 1.8 million deaths in 2022 by GLOBOCAN's estimate; most cases are caused by smoking, and survival depends heavily on the stage at diagnosis.",
     tldr: "Lung cancer splits into non-small-cell (about 85 percent) and small-cell (about 15 percent) disease, which behave and are treated very differently. Screening, staging and the things both types share are common ground; the rest belongs to each subtype.",
@@ -78,7 +78,7 @@ export const cancerParentsWave2: CancerInput[] = [
     ],
     pipeline: ["tarlatamab","datopotamab-deruxtecan"], openProblems: [],
     links: [{ label: "Wikipedia", url: W("Lung_cancer") }, { label: "NCI PDQ", url: "https://www.cancer.gov/types/lung" }, { label: "IARC Global Cancer Observatory: Cancer Today (GLOBOCAN 2022)", url: "https://gco.iarc.who.int/today" }] },
-  { id: "leukaemia", institutions: ["blood-cancer-united", "leukemia-research-foundation"], kind: "cancer", name: "Leukaemia (all types)", group: "haematologic", asOf, tags, wikipedia: W("Leukemia"),
+  { id: "leukaemia", institutions: ["blood-cancer-united", "leukemia-research-foundation", "cure-leukaemia", "leukaemia-uk", "leukaemia-care", "african-caribbean-leukaemia-trust", "children-with-cancer-uk"], kind: "cancer", name: "Leukaemia (all types)", group: "haematologic", asOf, tags, wikipedia: W("Leukemia"),
     aka: ["Leukemia", "Blood cancer (leukaemias)"],
     burden: "In 2022, GLOBOCAN estimated about 487,000 new cases and 305,000 deaths worldwide; the commonest cancer of childhood, where most cases are now cured, and a group of very different diseases in adults.",
     tldr: "Leukaemia means cancer of the blood-forming cells, but the four main types share little beyond the name: acute lymphoblastic and acute myeloid leukaemia are emergencies treated with intensive therapy, while chronic lymphocytic and chronic myeloid leukaemia are slow diseases controlled for years with pills. Each has its own page.",

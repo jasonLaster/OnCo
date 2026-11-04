@@ -125,6 +125,8 @@ import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci
 import { institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
 import { institutionsCogPaediatric } from "./institutions/cog-paediatric";
 import { institutionsIndiaNcg } from "./institutions/india-ncg";
+import { institutionsJapanMhlw } from "./institutions/japan-mhlw";
+import { institutionsUiccSocieties } from "./institutions/uicc-societies";
 import { institutionsGermany } from "./institutions/germany";
 import { institutionsIsrael } from "./institutions/israel";
 import { institutionsWaveInvestigators } from "./institutions-wave-investigators";
@@ -361,6 +363,8 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsUkCancerCharities,
   ...institutionsCogPaediatric,
   ...institutionsIndiaNcg,
+  ...institutionsJapanMhlw,
+  ...institutionsUiccSocieties,
   ...institutionsGermany,
   ...institutionsIsrael,
   ...institutionsWaveInvestigators,

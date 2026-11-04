@@ -15,7 +15,7 @@ const ct = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https:/
 const tags = ["subtype-page"];
 
 export const sarcomaBoneSubtypes: CancerInput[] = [
-  { id: "chondrosarcoma", kind: "cancer", trials: ["regobone"], name: "Chondrosarcoma", group: "sarcoma", parent: "sarcoma", asOf, tags, wikipedia: W("Chondrosarcoma"),
+  { id: "chondrosarcoma", institutions: ["bone-cancer-research-trust"], kind: "cancer", trials: ["regobone"], name: "Chondrosarcoma", group: "sarcoma", parent: "sarcoma", asOf, tags, wikipedia: W("Chondrosarcoma"),
     keyPapers: ["paper-amary-idh-cartilaginous-tumours-j-pathol-2011", "paper-esmo-bone-sarcoma-guideline-strauss-ann-oncol-2021"],
     aka: ["Cartilage sarcoma", "Atypical cartilaginous tumour (grade 1, limbs)", "Dedifferentiated chondrosarcoma", "Mesenchymal chondrosarcoma"],
     burden: "The commonest primary bone sarcoma of adults, typically diagnosed between 40 and 70 in the pelvis, proximal femur, shoulder girdle and ribs; low-grade tumours are cured by surgery alone, while dedifferentiated tumours are among the most lethal of all sarcomas.",

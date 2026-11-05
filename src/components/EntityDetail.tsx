@@ -732,7 +732,7 @@ function TechDependencies({ e }: { e: Extract<Entity, { kind: "technology" }> })
   const chip = (t: Entity) => <Link key={t.id} href={routeFor(t)} className="chip border bg-card border-border hover:bg-foreground/5 text-sm">{t.name}</Link>;
   const mapHref = `/dependencies/?root=${e.id}`;
   return (
-    <Block title="Dependencies" aside={<Link className="text-sm text-accent hover:underline whitespace-nowrap" href={mapHref}>Open the dependency map →</Link>}>
+    <Block title="Dependencies" aside={<Link className="text-sm text-accent hover:underline text-end" href={mapHref}>Open the dependency map →</Link>}>
       <div className="grid *:min-w-0 gap-4 sm:grid-cols-2">
         <div>
           <div className="kicker mb-1.5"><TL text="Depends on" /> <span className="text-muted font-normal">({up.length})</span></div>

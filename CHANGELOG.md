@@ -7,8 +7,10 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 5 November 2026
-- Cassian Yee of MD Anderson, with his programmes, advisory roles, key papers on adoptive T-cell therapy, the trials he leads, and the organisations in his profile
+- The Rare Cancer Research Foundation and its Pattern.org tissue donation programme, with 56 more rare-cancer foundations and coalitions from sarcoma and chordoma to ocular melanoma, NUT carcinoma and DIPG
 - The census fill rounds: hospices and Maggie's centres, psycho-oncology and fertility services, helplines, patient coalitions and patient guides, 87 reporting and staging systems, 103 graded complementary products, 27 hereditary syndromes and germline tests, vaccines and screening, donor registries, biobanks, laws, payers, open-source projects, veterinary drugs and prizes
+- Rare-cancer foundations: the Rare Cancer Research Foundation, Pattern.org and 56 more nonprofits
+- Cassian Yee of MD Anderson, with his programmes, advisory roles, key papers on adoptive T-cell therapy, the trials he leads, and the organisations in his profile
 - Cassian Yee of MD Anderson, with eight papers on endogenous T-cell therapy, nine trials from ClinicalTrials.gov, the term itself, and the companies and funders the faculty profile names
 - Twenty-one more country pages (Indonesia to Thailand, Viet Nam to Taiwan), the machines page built from its records, searches that find nothing can start research privately, and device and contrast-agent records
 - Seven product changes wait at /admin/

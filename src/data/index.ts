@@ -262,6 +262,10 @@ import { scoringSystemsGapTerms } from "./scoring-systems-gaps-2026-11";
 import { cansimTargets } from "./targets-cansim";
 import { issuesWaveB } from "./issues-2026-09-wave-b";
 import { READOUT_TEST_RECORDS } from "./readout-test-records";
+import { hospicesSupportGaps } from "./hospices-support-gaps-2026-11";
+import { palliativeNavigationFertilityGaps } from "./palliative-navigation-fertility-gaps-2026-11";
+import { psychosocialGeneticsGaps } from "./psychosocial-genetics-gaps-2026-11";
+import { helplinesGaps } from "./helplines-gaps-2026-11";
 
 const RAW_INPUTS: EntityInput[] = [
   ...ucsfBreastTrials,
@@ -406,6 +410,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...checkpointTargets, ...checkpointTerms,
   ...cansimOncologyTerms, ...cansimMethodsTerms, ...cansimTargets,
   ...scoringSystemsGapTerms,
+  ...hospicesSupportGaps, ...palliativeNavigationFertilityGaps, ...psychosocialGeneticsGaps, ...helplinesGaps,
 ];
 
 /** Readout ids by parent target id and by the drugs their current thresholds name (see the biomarker branch in ALL_INPUTS). */

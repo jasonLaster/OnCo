@@ -15,18 +15,10 @@
  * exclusive by design (e.g. China-only PD-1 antibodies without ex-China filings).
  */
 import { productClass } from "@/lib/product-class";
+import { REGIONS, REGION_META, type Region } from "@/lib/region-meta";
 
-export type Region = "US" | "EU" | "UK" | "JP" | "CN" | "AU" | "IN";
-export const REGIONS: Region[] = ["US", "EU", "UK", "JP", "CN", "AU", "IN"];
-export const REGION_META: Record<Region, { label: string; regulator: string; url: string; flag: string }> = {
-  US: { label: "United States", regulator: "FDA", url: "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications", flag: "🇺🇸" },
-  EU: { label: "European Union", regulator: "EMA / European Commission", url: "https://www.ema.europa.eu/en/medicines", flag: "🇪🇺" },
-  UK: { label: "United Kingdom", regulator: "MHRA (NICE for reimbursement)", url: "https://products.mhra.gov.uk/", flag: "🇬🇧" },
-  JP: { label: "Japan", regulator: "PMDA / MHLW", url: "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0002.html", flag: "🇯🇵" },
-  CN: { label: "China", regulator: "NMPA", url: "https://english.nmpa.gov.cn/", flag: "🇨🇳" },
-  AU: { label: "Australia", regulator: "TGA (PBS for reimbursement)", url: "https://www.tga.gov.au/resources/artg", flag: "🇦🇺" },
-  IN: { label: "India", regulator: "CDSCO (DCGI)", url: "https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/", flag: "🇮🇳" },
-};
+export type { Region };
+export { REGIONS, REGION_META };
 
 export type RegionalStatus = "approved" | "conditional" | "under-review" | "not-filed" | "withdrawn" | "rejected";
 export type RegionalEntry = { status: RegionalStatus; year?: number; indication?: string; source?: string; note?: string; verified?: boolean; /** ISO date of the last check against the regulator (EU rows: the EMA register). */ verifiedOn?: string };

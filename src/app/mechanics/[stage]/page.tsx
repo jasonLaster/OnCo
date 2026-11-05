@@ -16,6 +16,7 @@ import { Container, GroupKicker, PageHeader, StatusChip } from "@/components/ui"
 import { KindIcon } from "@/components/KindIcon";
 import { Tip } from "@/components/Tip";
 import { CheckpointPills } from "@/components/CheckpointPills";
+import "../mechanics.css";
 
 export function generateStaticParams() {
   return MECHANICS.flatMap((c) => c.stages.map((s) => ({ stage: s.id })));

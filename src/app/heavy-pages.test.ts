@@ -133,7 +133,7 @@ describe("heavy pages page their sections", () => {
     const firstPage = groups.reduce((n, grp) => n + Math.min(EXPLAINED_PAGE, grp.own.length), 0);
     expect(firstPage).toBeLessThan(unique.size);
     expect((html.match(/<details[\s>]/g) ?? []).length).toBe(firstPage);
-    // The row's markup is bare (one class; the card, arrow and "Open explanation" pill are CSS in globals.css).
+    // The row's markup is bare (one class; the card, arrow and "Open explanation" pill are CSS in src/app/explained/explained.css).
     expect((html.match(/class="explained-row"><summary><h3><a /g) ?? []).length).toBe(firstPage);
     expect(html).not.toContain("Open explanation");
     // Every section with more rows carries the IntersectionObserver sentinel and the Show more pill, and a noscript

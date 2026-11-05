@@ -8,6 +8,7 @@ import { EXPLAINED_PAGE, explainedGroups, explainedRow, OTHER_NAME } from "@/lib
 import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { ExplainedSection } from "@/components/ExplainedSection";
 import { CancerIcon, CancerIconDefs } from "@/components/CancerIcon";
+import "./explained.css";
 
 export const metadata: Metadata = pageMeta({
   title: "Trials in plain words",

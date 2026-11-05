@@ -3,6 +3,7 @@ import { pageMeta } from "@/lib/seo";
 import { graphData } from "@/lib/graph-export";
 import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { GraphExplorer } from "@/components/GraphExplorer";
+import "./graph.css";
 
 export const metadata: Metadata = pageMeta({ title: "Graph explorer", description: "Navigate the OnCo knowledge graph visually: cancers, targets, products, companies, trials, and more, linked.", path: "/graph/" });
 

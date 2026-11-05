@@ -425,7 +425,7 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/indiana university/, { id: "iu-simon", label: "Indiana University Simon", kind: "institution" }],
   [/university of washington/, { id: "fred-hutch", label: "Fred Hutch / University of Washington", kind: "institution" }],
   [/brigham/, { id: "dana-farber", label: "Dana-Farber Brigham", kind: "institution" }],
-  [/royal marsden/, { id: "royal-marsden", label: "The Royal Marsden", kind: "institution" }],
+  [/^(?!maggie).*royal marsden/, { id: "royal-marsden", label: "The Royal Marsden", kind: "institution" }],
   [/^(the )?institute of cancer research\b/, { id: "icr-london", label: "Institute of Cancer Research", kind: "institution" }],
   [/university college london|^ucl\b|uclh/, { id: "uclh", label: "UCL / UCLH", kind: "institution" }],
   [/christie/, { id: "the-christie", label: "The Christie", kind: "institution" }],

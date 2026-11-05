@@ -50,7 +50,11 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
       if (request.current !== current) return;
       if (!value.trim()) { setState("ready"); return; }
       // Every hit comes back so the grouping can pick the top rows per kind; the dropdown itself shows VISIBLE rows.
-      const lexical = searchRanked(ms, value) as SearchDoc[];
+      const ranked = searchRanked(ms, value);
+      // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md), only once the full index has answered;
+      // the names-only first stage cannot see summaries. Loaded only after a search.
+      if (full && value.trim().length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, ranked)).catch(() => {});
+      const lexical = ranked as SearchDoc[];
       setResults(lexical);
       if (upgrade) setActive(-1);
       // The names-only first stage (src/lib/search-client.ts) cannot say "No matches": a word in a summary may still

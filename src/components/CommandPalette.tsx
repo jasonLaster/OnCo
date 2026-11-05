@@ -210,7 +210,11 @@ export function CommandPalette() {
       // never let a decisive top hit lead, so a company or person typed in full sat under every treatment row ("Jaime
       // Leandro Foundation" was row 13 of 14, below the fold, on 4 November 2026).
       const seen = new Set(pages.map((p) => p.route));
-      const hits: Item[] = searchRanked(ms, value).filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status, score: h.score }));
+      const ranked = searchRanked(ms, value);
+      // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md), but only against the full index:
+      // the names-only first stage cannot see summaries. Loaded only after a search.
+      if (full && value.trim().length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, ranked)).catch(() => {});
+      const hits: Item[] = ranked.filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status, score: h.score }));
       setHitCount(hits.length);
       setGroups(groupByKind([...pages, ...hits], VISIBLE));
     }).catch(() => { if (request.current === id) { setFailed(true); setGroups(groupByKind(pages, VISIBLE)); } });

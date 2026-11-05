@@ -155,6 +155,8 @@ export function SearchResults() {
     // The first stage holds names only, so finding nothing in it is not "Nothing matched": a summary may still match.
     // The page stays on "Loading search…" until the full index re-runs the query (the effect below).
     if (!search.full && lexical.length === 0) { setRows(null); setPhase("loading"); return; }
+    // A settled query that found nothing may be counted (docs/SEARCH-MISSES.md), only once the full index has answered.
+    if (search.full && value.length >= 3) void import("@/lib/search-miss").then((m) => m.noteSearch(value, lexical, terms)).catch(() => {});
     const lexTerms = new Map(lexical.map((h) => [String(h.id), Object.keys(h.match ?? {})]));
     const build = (index: SemanticIndex | null): Row[] => {
       const concept = index ? semanticSearch(index, terms, TOP) : [];

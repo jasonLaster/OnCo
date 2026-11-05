@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { EVIDENCE_TIERS, KINDS, STATUSES, TARGET_DISTRIBUTIONS, TARGET_ROLES, TARGET_SPECIFICITIES } from "./kinds";
+import { EVIDENCE_TIERS, KINDS, MACHINE_FAMILIES, STATUSES, TARGET_DISTRIBUTIONS, TARGET_ROLES, TARGET_SPECIFICITIES } from "./kinds";
 import { DATE_PRECISIONS, YEAR_EVENT_GROUPS } from "./year-groups";
 
 export { KINDS, STATUSES, REL_FIELDS, KIND_META, PHASE_ORDER, routeFor, phaseLabel, normalisePhaseLabel, TARGET_ROLES, TARGET_ROLE_LABEL, EVIDENCE_TIERS, EVIDENCE_TIER_LABEL, TARGET_SPECIFICITIES, TARGET_SPECIFICITY_LABEL, TARGET_DISTRIBUTIONS, TARGET_DISTRIBUTION_LABEL } from "./kinds";
@@ -146,6 +146,8 @@ export const TechnologySchema = Base.extend({
   limitations: z.array(z.string()).default([]),
   /** Year first used in humans or first approved, if meaningful. */
   since: z.union([z.number().int(), z.string()]).optional(),
+  /** Set on a machine or device a hospital buys and runs: the family it is listed under on /machines/ (src/lib/machines.ts). */
+  machineFamily: z.enum(MACHINE_FAMILIES).optional(),
 });
 
 export const TargetSchema = Base.extend({

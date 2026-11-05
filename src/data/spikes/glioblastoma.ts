@@ -141,7 +141,7 @@ const entities: EntityInput[] = [
 
   // ======================= TECHNOLOGIES =======================
   {
-    id: "litt", kind: "technology", name: "Laser interstitial thermal therapy (LITT)", sections: ["surgery"], status: "established", asOf,
+    id: "litt", machineFamily: "ablation", kind: "technology", name: "Laser interstitial thermal therapy (LITT)", sections: ["surgery"], status: "established", asOf,
     tldr: "Laser interstitial thermal therapy guides a laser fibre through a small skull hole, monitored by real-time MRI, to heat and destroy deep brain tumours a surgeon could not safely reach.",
     summary: "MRI thermometry-guided ablation (NeuroBlate, Visualase) for deep-seated or recurrent gliomas, radiation necrosis, and brain metastases. Case series suggest survival comparable to resection for selected recurrent glioblastoma; may transiently open the blood-brain barrier, enabling drug delivery (LAANTERN registry, phase 2 combinations with immunotherapy). No randomised evidence yet.",
     principle: "Stereotactically placed laser fibre delivers thermal energy; MR thermometry maps the ablation zone in real time.",
@@ -150,7 +150,7 @@ const entities: EntityInput[] = [
     technologies: ["mri", "thermal-ablation"], cancers: ["glioblastoma"], terms: ["blood-brain-barrier"], links: [{ label: "Kamath et al., Glioblastoma treated with MRI-guided laser interstitial thermal therapy: safety, efficacy and outcomes (Neurosurgery 2018)", url: "https://doi.org/10.1093/neuros/nyy375" }],
   },
   {
-    id: "bbb-focused-ultrasound", links: [{ label: "Mainprize et al., Blood-brain barrier opening in primary brain tumours with non-invasive MR-guided focused ultrasound (Scientific Reports 2019)", url: "https://doi.org/10.1038/s41598-018-36340-0" }], kind: "technology", name: "Focused-ultrasound blood-brain barrier opening", sections: ["devices", "surgery"], status: "phase-2", asOf,
+    id: "bbb-focused-ultrasound", machineFamily: "ablation", links: [{ label: "Mainprize et al., Blood-brain barrier opening in primary brain tumours with non-invasive MR-guided focused ultrasound (Scientific Reports 2019)", url: "https://doi.org/10.1038/s41598-018-36340-0" }], kind: "technology", name: "Focused-ultrasound blood-brain barrier opening", sections: ["devices", "surgery"], status: "phase-2", asOf,
     tldr: "Sound waves plus microbubbles briefly open the brain's protective barrier so chemotherapy or antibodies can get to the tumour.",
     summary: "MR-guided (Insightec Exablate) or implantable (Carthera SonoCloud-9) ultrasound with intravenous microbubbles transiently and reversibly opens the BBB. Phase 1/2 trials show 4-6x higher brain concentrations of carboplatin, temozolomide, and albumin-bound paclitaxel, and enable liquid biopsy of glioma DNA released into blood. Efficacy trials (SonoCloud-9 with carboplatin, phase 3 SONOBIRD) are underway.",
     principle: "Acoustic cavitation of circulating microbubbles mechanically loosens endothelial tight junctions for several hours.",

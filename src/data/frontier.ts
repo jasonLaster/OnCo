@@ -151,7 +151,7 @@ const frontierRadical: EntityInput[] = [
     links: [{ label: "ClinicalTrials.gov: DNA nanostructure cancer", url: "https://clinicaltrials.gov/search?term=DNA%20nanostructure%20cancer" }],
   },
   {
-    id: "magnetic-nanoparticle-hyperthermia", companies: ["new-phase", "immunoblue"], kind: "technology", name: "Magnetic nanoparticle hyperthermia", sections: ["devices", "radiation"], status: "phase-2", asOf: RAD,
+    id: "magnetic-nanoparticle-hyperthermia", machineFamily: "ablation", companies: ["new-phase", "immunoblue"], kind: "technology", name: "Magnetic nanoparticle hyperthermia", sections: ["devices", "radiation"], status: "phase-2", asOf: RAD,
     tldr: "Magnetic nanoparticle hyperthermia injects iron-oxide nanoparticles into a tumour and heats them from outside with an alternating magnetic field.",
     summary: "NanoTherm received European approval for glioblastoma in 2010 and is used at a small number of German centres, usually with radiotherapy. A phase 2 adjuvant glioblastoma study is recruiting in Poland (NCT06271421); the US prostate focal-ablation study (NCT05010759) was terminated. Systemically delivered magnetic hyperthermia, as opposed to direct intratumoural injection, is still preclinical.",
     principle: "Superparamagnetic iron-oxide nanoparticles deposited in the tumour dissipate heat under an alternating magnetic field, reaching 40-45 °C and sensitising cells to radiation and chemotherapy.",
@@ -217,7 +217,7 @@ const frontierRadical: EntityInput[] = [
     links: [{ label: "ClinicalTrials.gov: proton arc therapy", url: "https://clinicaltrials.gov/search?term=proton%20arc%20therapy" }],
   },
   {
-    id: "lattice-radiotherapy", kind: "technology", name: "Lattice and GRID radiotherapy", sections: ["radiation", "immunotherapy"], status: "phase-2", asOf: RAD,
+    id: "lattice-radiotherapy", machineFamily: "radiotherapy", kind: "technology", name: "Lattice and GRID radiotherapy", sections: ["radiation", "immunotherapy"], status: "phase-2", asOf: RAD,
     tldr: "Lattice radiotherapy deliberately treats a bulky tumour unevenly, placing peaks of tumour-destroying dose at spaced points inside it while the tissue between receives far less, relying on bystander and immune effects to extend the kill. It runs on standard linear accelerators, but evidence is mostly palliative and single-arm, and the mechanism is unsettled.",
     summary: "Spatially fractionated radiotherapy places vertices of ablative dose inside a bulky tumour while valleys receive far less, exploiting bystander and immune effects rather than uniform coverage. Studies active in 2026 include Memorial Sloan Kettering (NCT05837767, recruiting), a randomised comparison against conventional radiotherapy in China (NCT06980259, recruiting), and combinations with checkpoint blockade (NCT07428148, NYU; NCT07041788). Most published series are palliative and single-arm.",
     principle: "High-dose vertices spaced across the tumour create steep dose gradients; abscopal and bystander signalling plus vascular damage are proposed to extend the effect beyond the peaks.",
@@ -492,7 +492,7 @@ const frontierRadical: EntityInput[] = [
     links: [{ label: "MA.32 adjuvant metformin (NCT01101438)", url: "https://clinicaltrials.gov/study/NCT01101438" }, { label: "Add-Aspirin (NCT02804815)", url: "https://clinicaltrials.gov/study/NCT02804815" }],
   },
   {
-    id: "total-body-pet-screening", kind: "technology", name: "Total-body PET for screening and ultra-low-dose imaging", sections: ["imaging", "early-detection"], status: "concept", asOf: RAD,
+    id: "total-body-pet-screening", machineFamily: "imaging", kind: "technology", name: "Total-body PET for screening and ultra-low-dose imaging", sections: ["imaging", "early-detection"], status: "concept", asOf: RAD,
     tldr: "Scanners sensitive enough to image the whole body in seconds at a fraction of the radiation dose, which raises the question of whether healthy people should be scanned at all.",
     summary: "Total-body PET systems capture the entire body in one field of view with roughly forty times the sensitivity of conventional scanners, enabling minute-long scans, tracer doses a fraction of the usual, and dynamic whole-body kinetics. That makes asymptomatic screening technically conceivable for the first time, but there is no evidence of mortality benefit, and incidentalomas, cost and radiation argue against it. The near-term value is in dosimetry, paediatrics and pharmacokinetic research.",
     principle: "A long axial field-of-view detector ring captures far more of the emitted photons, letting sensitivity be traded for dose, time, or both.",

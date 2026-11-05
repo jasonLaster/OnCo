@@ -121,6 +121,8 @@ import { mcedTrials } from "./mced-census-trials";
 import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
 import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
+import { institutionsPatientCoalitions, collectionsPatientCoalitions } from "./institutions/patient-coalitions-2026-11";
+import { patientEducationLinks } from "./patient-education-links-2026-11";
 import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci";
 import { companiesUkCancerCharities, institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
 import { institutionsCogPaediatric } from "./institutions/cog-paediatric";
@@ -361,6 +363,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...networkInstitutions, ...networkPeople,
   ...institutionsIndia,
   ...institutionsUsCancerCharities,
+  ...institutionsPatientCoalitions, ...collectionsPatientCoalitions,
   ...institutionsUsCentresAaci,
   ...institutionsUkCancerCharities,
   ...institutionsCogPaediatric,
@@ -468,6 +471,10 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // citing record, whatever its kind, gains the paper in `keyPapers`. Applied first so the kind-specific steps below see it.
   const cited = citedPaperLinksWave7[raw.id];
   let e: EntityInput = cited ? { ...raw, keyPapers: [...(raw.keyPapers ?? []), ...cited.filter((id) => !(raw.keyPapers ?? []).includes(id))] } : raw;
+  // Patient education links (src/data/patient-education-links-2026-11.ts): NCCN Guidelines for Patients, NCI PDQ patient
+  // summaries and ONS/NCODA patient education sheets, appended to the record's own links; an address it holds is not repeated.
+  const edu = patientEducationLinks[e.id];
+  if (edu) { const have = new Set((e.links ?? []).map((l) => l.url)); e = { ...e, links: [...(e.links ?? []), ...edu.filter((l) => !have.has(l.url))] }; }
   // Supportive care medicines (src/data/supportive-drugs.ts): the flag that keeps antiemetics, growth factors, bone agents,
   // antidotes and opioids out of treatment counts and rankings, and renders the "Supportive care" pill.
   if (e.kind === "drug" && SUPPORTIVE_DRUGS[e.id]) e = { ...e, supportive: true };
@@ -583,6 +590,9 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   if (unpatched.length) throw new Error(`Spike patches name cancers that do not exist: ${unpatched.join(", ")}`);
   const orphanedMerges = unappliedMergeSupplements();
   if (orphanedMerges.length) throw new Error(`Merge supplements name records that do not exist: ${orphanedMerges.join(", ")}`);
+  const ids = new Set(RECORDS.map((r) => r.id));
+  const strayEdu = Object.keys(patientEducationLinks).filter((id) => !ids.has(id));
+  if (strayEdu.length) throw new Error(`Patient education links name records that do not exist: ${strayEdu.join(", ")}`);
 }
 
 /**

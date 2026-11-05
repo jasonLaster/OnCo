@@ -40,16 +40,17 @@ const AJCC = { label: "AJCC Cancer Staging Manual, 8th edition (2017)", url: "ht
 
 export const stagingSystems: StagingSystem[] = [
   { id: "nsclc-tnm8", cancerIds: ["nsclc"], name: "Lung cancer TNM, 8th edition: stage groups", terms: ["tnm-staging"], source: { label: "Detterbeck et al., Chest 2017 (IASLC 8th edition)", url: doi("10.1016/j.chest.2016.10.010") },
+    note: "These are the 8th edition groups. The ninth edition has replaced them: the AJCC lists Lung among its Version 9 protocols released in 2025, and its Version 9 sites take effect on 1 January after release. The IASLC proposals behind it (Rami-Porta et al., J Thorac Oncol 2024, doi 10.1016/j.jtho.2024.02.011) split N2 into N2a, a single ipsilateral mediastinal or subcarinal station, and N2b, several ipsilateral mediastinal stations, and split M1c into M1c1, several metastases in one organ system outside the chest, and M1c2, metastases in several organ systems. T1N1 moves to IIA, T1N2a to IIB and T3N2a to IIIA; T2aN2b and T2bN2b are IIIB; M1c1 and M1c2 both stay IVB. The full ninth edition tables are in the AJCC and UICC manuals.",
     groups: [
       { stage: "IA1-IA3", definition: "T1a-c (3 cm or smaller) N0 M0; IA1 up to 1 cm, IA2 1-2 cm, IA3 2-3 cm.", settingMatch: ["stage i", "early", "resectable"] },
       { stage: "IB", definition: "T2a (3-4 cm, or main bronchus or visceral pleura) N0.", settingMatch: ["stage i", "early", "resectable"] },
       { stage: "IIA", definition: "T2b (4-5 cm) N0.", settingMatch: ["stage ii", "resectable", "adjuvant"] },
-      { stage: "IIB", definition: "T1-2 N1, or T3 (5-7 cm, chest wall, separate nodule same lobe) N0.", settingMatch: ["stage ii", "resectable", "adjuvant", "neoadjuvant"] },
-      { stage: "IIIA", definition: "T1-2 N2, T3 N1, or T4 (over 7 cm, mediastinal invasion, nodule in another ipsilateral lobe) N0-1.", settingMatch: ["stage iii", "locally advanced", "neoadjuvant", "perioperative"] },
+      { stage: "IIB", definition: "T1-2 N1, or T3 (5-7 cm, chest wall, separate nodule same lobe) N0.", settingMatch: ["stage ii", "resectable", "adjuvant", "neoadjuvant"], note: "Ninth edition: T1N1 is IIA, and T1N2a (a single N2 station) joins IIB." },
+      { stage: "IIIA", definition: "T1-2 N2, T3 N1, or T4 (over 7 cm, mediastinal invasion, nodule in another ipsilateral lobe) N0-1.", settingMatch: ["stage iii", "locally advanced", "neoadjuvant", "perioperative"], note: "Ninth edition: T1N2a moves to IIB, T3N2a moves here from IIIB, and T2aN2b and T2bN2b move to IIIB." },
       { stage: "IIIB", definition: "T1-2 N3, or T3-4 N2.", settingMatch: ["stage iii", "locally advanced", "unresectable"] },
       { stage: "IIIC", definition: "T3-4 N3.", settingMatch: ["stage iii", "unresectable"] },
       { stage: "IVA", definition: "M1a (pleural or pericardial spread, contralateral lung nodule) or M1b (single extrathoracic metastasis).", settingMatch: ["metastatic", "stage iv", "advanced"] },
-      { stage: "IVB", definition: "M1c: multiple extrathoracic metastases.", settingMatch: ["metastatic", "stage iv", "advanced"] },
+      { stage: "IVB", definition: "M1c: multiple extrathoracic metastases.", settingMatch: ["metastatic", "stage iv", "advanced"], note: "Ninth edition: M1c is split into M1c1 (one organ system) and M1c2 (several organ systems); both remain IVB." },
     ] },
   { id: "sclc-valg", cancerIds: ["sclc"], name: "Small-cell lung cancer: limited versus extensive stage", terms: ["limited-extensive-stage"], source: { label: "Kalemkerian et al., NCCN Small Cell Lung Cancer; VALG two-stage system", url: "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1462" },
     groups: [

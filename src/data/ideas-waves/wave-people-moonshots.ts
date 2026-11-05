@@ -23,7 +23,7 @@ export const ideasPeopleMoonshots: IdeaInput[] = [
     test: "Stepped-wedge rollout across one region or national payer: compare diagnosis-to-treatment interval, emergency admissions, trial enrolment and patient-reported understanding before and after entitlement; cost per quality-adjusted life-year against standard care.",
     actor: "policy", cost: "medium", horizonYears: 3,
     bottlenecks: ["b-patient-voice", "b-care-fragmentation"],
-    links: [{ label: "Harold P. Freeman Patient Navigation Institute", url: "https://www.hpfreemanpni.org/" }] }),
+    links: [{ label: "Harold P. Freeman Patient Navigation Institute (Internet Archive copy of 10 December 2019; the domain later lapsed and now serves an unrelated site)", url: "https://web.archive.org/web/20191210171915/http://hpfreemanpni.org/" }] }),
   i({ id: "idea-moon-plain-language-consent", name: "Two-page plain-language consent with teach-back for every cancer trial and treatment", maturity: "early-clinical",
     tldr: "Replace 30-page consent forms with a short plain summary the patient explains back in their own words before signing, so consent means understanding.",
     summary: "Trial consent documents run to tens of pages at university reading level; comprehension studies show many participants cannot state the purpose of the study or that treatment is experimental. The proposal is a regulatory requirement that every consent process include a two-page plain-language summary (reading age 12, translated, with pictograms for risk) followed by a documented teach-back, with the long form as an appendix. The EU Clinical Trials Regulation already requires lay summaries of results; this extends the principle upstream.",

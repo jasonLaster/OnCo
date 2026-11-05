@@ -264,17 +264,6 @@
   .eg-stop { background-image: repeating-linear-gradient(135deg, transparent 0 3px, rgb(255 255 255 / 0.4) 3px 4.5px); }
   .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
 
-  /* The oncolytic virotherapy page (/virotherapy/): its two timelines, the history and the 2024 case's protocol, repeat
-     the same utilities on every step, in the markup and again in the hydration payload, so the page sat 3,233 bytes
-     over its page-weight ceiling. Each class is exactly the utilities it replaced; nothing about the look changes.
-     .ov-step: a step on the rail, its dot drawn by ::before rather than an empty aria-hidden span (the <ol> is the
-     positioned box, as before). .ov-when: the step's date. .ov-what: its title. .ov-note: its detail. */
-  .ov-step { @apply pl-5; }
-  .ov-step::before { content: ""; @apply absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full bg-border; }
-  .ov-when { @apply text-xs font-medium text-muted; }
-  .ov-what { @apply font-medium mt-0.5; }
-  .ov-note { @apply text-sm text-muted mt-1 max-w-3xl; }
-
   /* Reference pills (src/lib/text.ts refChipClass): one kind's colours in one short class rather than the eight
      Tailwind utilities of KIND_COLOR repeated on every pill. The pills are how a record page lists what it links to,
      so a page carries as many as the record has links: a roadmap's Connected tab renders 186 of them and the class

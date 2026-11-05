@@ -11,12 +11,22 @@ import {
   caseEthics, caseFindings, caseLimits, caseProtocol, combination, failures, milestones, moves,
   openProblems, products, whySelective, type OvSource,
 } from "@/data/virotherapy";
+import "./virotherapy.css";
 
 export const metadata: Metadata = pageMeta({
   title: "Oncolytic virotherapy",
   description: "Why a virus kills a cancer cell and not its neighbour, the hundred-year history, every approved virus product with what its evidence actually shows, the engineering, the randomised failures, the combination question, and the 2024 case of a virologist who treated her own breast cancer.",
   path: "/virotherapy/",
 });
+
+/*
+ * The two timelines below (the history, the 2024 case's protocol) use short classes from ./virotherapy.css: .ov-step, a step
+ * on the rail whose dot is drawn by ::before rather than an empty aria-hidden span (the <ol> stays the positioned box);
+ * .ov-when, its date; .ov-what, its title; .ov-note, its detail. Each is exactly the utilities it replaced. Those
+ * strings repeated on every step, in the markup and again in the hydration payload, and in November 2026 the page sat
+ * 3,233 bytes over its page-weight ceiling (src/data/page-weight.json) after the shared table gained resize grips.
+ * They live in a file of their own, not globals.css, which every page loads and src/app/layout-imports.test.ts budgets.
+ */
 
 /** Source links under a block, separated by middots. */
 function Sources({ items, className = "" }: { items: OvSource[]; className?: string }) {

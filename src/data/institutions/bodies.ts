@@ -1,7 +1,7 @@
 import type { InstitutionInput } from "@/lib/schema";
 
 const asOf = "2026-09-09";
-type I = Omit<InstitutionInput, "kind" | "asOf">;
+type I = Omit<InstitutionInput, "kind" | "asOf"> & { asOf?: string };
 const b = (x: I): InstitutionInput => ({ kind: "institution", asOf, ...x });
 
 /**
@@ -33,11 +33,11 @@ export const institutionsBodies: InstitutionInput[] = [
   // ---------------------------------------------------------------------------------------
   // Funders and charities
   // ---------------------------------------------------------------------------------------
-  b({ id: "fondation-arc", name: "Fondation ARC pour la recherche sur le cancer", aka: ["ARC", "Fondation ARC"], institutionType: "consortium", city: "Villejuif", country: "FR", lat: 48.792, lng: 2.365, website: "https://www.fondation-arc.org",
+  b({ id: "fondation-arc", asOf: "2026-11-04", name: "Fondation ARC pour la recherche sur le cancer", aka: ["ARC", "Fondation ARC", "Prix Léopold Griffuel", "Prix Fondation ARC Léopold Griffuel", "Léopold Griffuel Prize"], institutionType: "consortium", city: "Villejuif", country: "FR", lat: 48.792, lng: 2.365, website: "https://www.fondation-arc.org",
     tldr: "France's largest charitable foundation devoted entirely to cancer research, funding laboratory and clinical projects across the country.",
-    summary: "Founded in 1962 and recognised as a public-utility foundation, Fondation ARC funds cancer research in France through competitive calls: young investigator fellowships, programme grants, translational and clinical research and international collaborations such as the SIGN'IT and PAIR programmes with the Institut National du Cancer. It is based in Villejuif beside Gustave Roussy and publishes patient information on prevention and treatment. ARC has supported early work in tumour immunology, precision oncology and paediatric cancer across French centres including Gustave Roussy, Institut Curie and the UNICANCER network.",
-    programs: ["Programme grants and young investigator fellowships", "SIGN'IT and PAIR programmes (with INCa)", "Patient information"],
-    links: [{ label: "Fondation ARC", url: "https://www.fondation-arc.org" }],
+    summary: "Founded in 1962 and recognised as a public-utility foundation, Fondation ARC funds cancer research in France through competitive calls: young investigator fellowships, programme grants, translational and clinical research and international collaborations such as the SIGN'IT and PAIR programmes with the Institut National du Cancer. It is based in Villejuif beside Gustave Roussy and publishes patient information on prevention and treatment. ARC has supported early work in tumour immunology, precision oncology and paediatric cancer across French centres including Gustave Roussy, Institut Curie and the UNICANCER network.\n\nIt gives the Prix Fondation ARC Léopold Griffuel, funded by the bequest of Léopold and Alice Griffuel and awarded for more than fifty years: a prize for fundamental research and a prize for translational and clinical research, each worth 200,000 euros. The foundation counts 67 laureates from about ten countries since the prizes began. The 54th prizes, on 23 April 2026, went to Andre Nussenzweig for work on genome integrity and DNA repair, and jointly to Marcus Conrad and Raphaël Rodriguez for work on ferroptosis. Since 2019 it has also given the Grand Prix Oberling-Haguenau Fondation ARC, worth 150,000 euros, with a thesis prize added in 2023.",
+    programs: ["Programme grants and young investigator fellowships", "SIGN'IT and PAIR programmes (with INCa)", "Patient information", "Prix Fondation ARC Léopold Griffuel (fundamental, and translational and clinical research)", "Grand Prix and Prix de thèse Oberling-Haguenau Fondation ARC"],
+    links: [{ label: "Fondation ARC", url: "https://www.fondation-arc.org" }, { label: "Fondation ARC: Prix Léopold Griffuel et Oberling-Haguenau 2026", url: "https://www.fondation-arc.org/actualites/prix-leopold-griffuel-et-oberling-haguenau/" }],
     institutions: ["gustave-roussy", "institut-curie", "ligue-contre-le-cancer"], companies: ["unicancer"], sections: ["drug-discovery", "prevention"], bottlenecks: ["b-funding-allocation"], people: ["dominique-bazy"] }),
 
   b({ id: "ligue-contre-le-cancer", name: "Ligue nationale contre le cancer", aka: ["La Ligue", "Ligue contre le cancer", "French League Against Cancer"], institutionType: "consortium", city: "Paris", country: "FR", lat: 48.857, lng: 2.352, website: "https://www.ligue-cancer.net",
@@ -52,7 +52,7 @@ export const institutionsBodies: InstitutionInput[] = [
     summary: "Founded in 1974 by Mildred Scheel, Deutsche Krebshilfe is funded entirely by donations and finances research, structural programmes and patient information. Its Oncology Centres of Excellence programme has funded and audited Germany's comprehensive cancer centres (including Heidelberg, Cologne, Berlin, Hamburg and Munich) since 2007, and it co-created the National Cancer Plan and the Mildred Scheel early-career programmes. It funds clinical trials, paediatric oncology, cancer prevention research and the Krebsinformationsdienst partnership with DKFZ, and it runs the INFONETZ KREBS patient information service.",
     programs: ["Oncology Centres of Excellence (Onkologische Spitzenzentren)", "Mildred Scheel early-career programmes", "Clinical trial and prevention research funding", "INFONETZ KREBS patient information"],
     links: [{ label: "Deutsche Krebshilfe", url: "https://www.krebshilfe.de" }],
-    institutions: ["dkfz", "heidelberg-nct", "uniklinik-koeln", "charite", "uke-hamburg", "lmu-munich"], sections: ["prevention"], bottlenecks: ["b-care-fragmentation", "b-funding-allocation"], people: ["rita-schmutzler"] }),
+    institutions: ["dkfz", "heidelberg-nct", "uniklinik-koeln", "charite", "uke-hamburg", "lmu-munich"], sections: ["prevention"], bottlenecks: ["b-care-fragmentation", "b-funding-allocation"], people: ["rita-schmutzler"], related: ["infonetz-krebs", "psychosoziale-krebsberatungsstellen"] }),
 
   b({ id: "kwf", name: "KWF Dutch Cancer Society", aka: ["KWF Kankerbestrijding", "KWF"], institutionType: "consortium", city: "Amsterdam", country: "NL", lat: 52.370, lng: 4.895, website: "https://www.kwf.nl",
     tldr: "The Netherlands' cancer charity and the main funder of Dutch cancer research, including much of the work at the Netherlands Cancer Institute.",
@@ -213,7 +213,7 @@ export const institutionsBodies: InstitutionInput[] = [
     summary: "Founded in 1948 as the Marie Curie Memorial Foundation, the charity provides hospice care and community nursing to people dying at home, originally for cancer and now for all terminal illnesses, and runs a free support line and information service. It is the largest charitable funder of palliative and end-of-life care research in the UK, supporting the Marie Curie Palliative Care Research Centres at Cardiff, UCL and elsewhere, and it campaigns on access to palliative care, bereavement support and dying well. Its Great Daffodil Appeal is its main fundraiser. Marie Curie nurses and hospices care for tens of thousands of people each year.",
     programs: ["Hospices and community nursing", "Palliative care research centres", "Support line and bereavement services", "Policy on end-of-life care"],
     links: [{ label: "Marie Curie", url: "https://www.mariecurie.org.uk" }, { label: "Research", url: "https://www.mariecurie.org.uk/research" }],
-    institutions: ["macmillan-cancer-support", "cruk"], sections: ["supportive-care"], bottlenecks: ["b-palliative", "b-toxicity-qol"], people: ["matthew-reed"] }),
+    institutions: ["macmillan-cancer-support", "cruk", "marie-curie-hospice-belfast", "marie-curie-hospice-bradford", "marie-curie-hospice-cardiff", "marie-curie-hospice-edinburgh", "marie-curie-hospice-glasgow", "marie-curie-hospice-hampstead", "marie-curie-hospice-liverpool", "marie-curie-hospice-newcastle", "marie-curie-hospice-west-midlands"], sections: ["supportive-care"], bottlenecks: ["b-palliative", "b-toxicity-qol"], people: ["matthew-reed"] }),
 
   b({ id: "uicc", name: "Union for International Cancer Control", aka: ["UICC"], institutionType: "consortium", city: "Geneva", country: "CH", lat: 46.204, lng: 6.143, website: "https://www.uicc.org",
     tldr: "The Geneva-based membership body of more than 1,100 cancer organisations that runs World Cancer Day, the World Cancer Congress and the TNM staging system.",

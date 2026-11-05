@@ -46,7 +46,7 @@ export type IraeEntry = {
 
 export const IRAE_SOURCES = {
   asco: { label: "ASCO 2021 guideline update (Schneider et al., JCO)", url: "https://doi.org/10.1200/JCO.21.01440" },
-  nccn: { label: "NCCN Management of Immunotherapy-Related Toxicities", url: "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1486" },
+  nccn: { label: "NCCN Management of Immune Checkpoint Inhibitor-Related Toxicities", url: "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1548" },
   esmo: { label: "ESMO 2022 Clinical Practice Guideline (Haanen et al., Ann Oncol)", url: "https://doi.org/10.1016/j.annonc.2022.10.001" },
 };
 const ALL = [IRAE_SOURCES.asco, IRAE_SOURCES.nccn, IRAE_SOURCES.esmo];

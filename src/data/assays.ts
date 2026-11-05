@@ -208,6 +208,20 @@ export const assays: Assay[] = [
     cutoff: "At least 10 mutations per megabase (pembrolizumab, tumour-agnostic, KEYNOTE-158)",
     targets: ["pd1"], drugs: ["pembrolizumab"], cancers: ["melanoma", "nsclc", "urothelial", "endometrial"], biomarkers: ["tmb-high"],
     note: "Panel size, germline filtering and the mutation types counted all shift the number; the Friends of Cancer Research TMB harmonisation project exists because 10 on one panel is not 10 on another.", source: FDA_CDX },
+  // Oestrogen and progesterone receptor kits (November 2026 census round): FDA 510(k) clearances under 21 CFR 864.1860,
+  // read from openFDA. The cut-off is the ASCO/CAP guideline's, not a label's; these kits are cleared, not companion diagnostics.
+  { id: "er-pr-ventana-confirm", name: "VENTANA CONFIRM anti-ER (SP1) and anti-PR (1E2)", vendor: "Roche Diagnostics", drugId: "ventana-confirm-er-pr", vendorIds: ["roche-genentech"], readouts: ["er-status", "pr-status"], platform: "IHC", analyte: "Oestrogen and progesterone receptor protein (tumour nuclei)", regulatory: "FDA cleared", approved: 2011,
+    cutoff: "Positive if at least 1% of tumour nuclei stain (ASCO/CAP guideline, Hammond et al. 2010)",
+    targets: ["estrogen-receptor", "pgr"], drugs: [], cancers: ["breast-hr-positive"], biomarkers: ["er-positive"],
+    note: "PR clone 1E2 cleared 16 November 2011 (K103818); ER clone SP1 cleared 17 December 2012 (K110215).", source: { label: "FDA 510(k) K110215", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K110215" } },
+  { id: "er-pr-dako", name: "Agilent (Dako) ER/PR pharmDx, ER EP1, PR PgR 636 and PgR 1294", vendor: "Agilent (Dako)", drugId: "dako-er-pr-ihc", vendorIds: ["agilent"], readouts: ["er-status", "pr-status"], platform: "IHC", analyte: "Oestrogen and progesterone receptor protein (tumour nuclei)", regulatory: "FDA cleared", approved: 2002,
+    cutoff: "Positive if at least 1% of tumour nuclei stain (ASCO/CAP guideline, Hammond et al. 2010)",
+    targets: ["estrogen-receptor", "pgr"], drugs: [], cancers: ["breast-hr-positive"], biomarkers: ["er-positive"],
+    note: "PR PgR 636 cleared 2002 (K020023); ER/PR pharmDx kit 2005 (K042884); ER EP1 2013 (K120663); Dako Omnis ER EP1 and PR PgR 1294 2017 (K170028, K170005).", source: { label: "FDA 510(k) K042884", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K042884" } },
+  { id: "er-pr-leica", name: "Leica Biosystems ER 6F11 and PR 16 (Novocastra, BOND)", vendor: "Leica Biosystems", drugId: "leica-er-pr-ihc", vendorIds: ["leica-biosystems"], readouts: ["er-status", "pr-status"], platform: "IHC", analyte: "Oestrogen and progesterone receptor protein (tumour nuclei)", regulatory: "FDA cleared", approved: 2006,
+    cutoff: "Positive if at least 1% of tumour nuclei stain (ASCO/CAP guideline, Hammond et al. 2010)",
+    targets: ["estrogen-receptor", "pgr"], drugs: [], cancers: ["breast-hr-positive"], biomarkers: ["er-positive"],
+    note: "ER clone 6F11 cleared 2006 (K060227, as Vision Biosystems); PR clone 16 cleared 2007 (K062615); BOND ready-to-use versions 2017 to 2020.", source: { label: "FDA 510(k) K060227", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K060227" } },
 ];
 
 export const assaysForTarget = (targetId: string): Assay[] => assays.filter((a) => a.targets.includes(targetId));

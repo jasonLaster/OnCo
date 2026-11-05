@@ -1,7 +1,7 @@
 import type { InstitutionInput } from "@/lib/schema";
 
 const asOf = "2026-09-10";
-type I = Omit<InstitutionInput, "kind" | "asOf">;
+type I = Omit<InstitutionInput, "kind" | "asOf"> & { asOf?: string };
 const b = (x: I): InstitutionInput => ({ kind: "institution", asOf, ...x });
 
 /**
@@ -61,12 +61,12 @@ export const institutionsDonorFoundations: InstitutionInput[] = [
     links: [{ label: "Teenage Cancer Trust", url: "https://www.teenagecancertrust.org/" }],
     people: ["stephen-sutton"], terms: ["aya-oncology"], bottlenecks: ["b-rare-cancers", "b-care-fragmentation"] }),
 
-  b({ id: "lasker-foundation", name: "Lasker Foundation", aka: ["Albert and Mary Lasker Foundation"], institutionType: "consortium", city: "New York", country: "US", lat: 40.76, lng: -73.98, website: "https://laskerfoundation.org",
+  b({ id: "lasker-foundation", asOf: "2026-11-04", name: "Lasker Foundation", aka: ["Albert and Mary Lasker Foundation", "Lasker Awards", "Lasker Award"], institutionType: "consortium", city: "New York", country: "US", lat: 40.76, lng: -73.98, website: "https://laskerfoundation.org",
     tldr: "The foundation Albert and Mary Lasker set up in 1942 to push medical research up the public agenda; its Lasker Awards became the most watched prize in American medicine.",
-    summary: "Albert Lasker, the advertising pioneer (1880-1952), and Mary Woodard Lasker (1901-1994) founded the Lasker Foundation in 1942. Its stated mission is to improve health by accelerating support for medical research through recognition of research excellence, advocacy, and education. The Lasker Awards, given since the mid-1940s, honour basic and clinical research and public service; the Foundation also runs education and advocacy programmes. Alongside Mary Lasker's lobbying for the National Cancer Act of 1971, the Foundation was the platform from which the Laskers turned cancer research into a matter of national policy.",
-    programs: ["Lasker Awards", "Research advocacy", "Education programmes"],
-    links: [{ label: "About the Lasker Foundation", url: "https://laskerfoundation.org/about/" }],
-    people: ["mary-lasker", "albert-lasker"], bottlenecks: ["b-funding-allocation", "b-knowledge-diffusion"] }),
+    summary: "Albert Lasker, the advertising pioneer (1880-1952), and Mary Woodard Lasker (1901-1994) founded the Lasker Foundation in 1942. Its stated mission is to improve health by accelerating support for medical research through recognition of research excellence, advocacy, and education. The Lasker Awards, given since the mid-1940s, honour basic and clinical research and public service; the Foundation also runs education and advocacy programmes. Alongside Mary Lasker's lobbying for the National Cancer Act of 1971, the Foundation was the platform from which the Laskers turned cancer research into a matter of national policy.\n\nThe Foundation's winners list files each award as basic, clinical, public service or special achievement. Cancer work it has honoured includes therapy for childhood leukaemia (Sidney Farber, 1966), combination chemotherapy for lymphoma and acute leukaemia (Emil Frei, Emil Freireich and Donald Pinkel among the 1972 clinical winners), lumpectomy for breast cancer (Bernard Fisher, 1985), tumour suppressor genes (Janet Rowley among the 1998 clinical winners), targeted treatment of chronic myeloid leukaemia (Brian Druker and Charles Sawyers among the 2009 clinical winners), breast cancer genetics and human rights (Mary-Claire King, 2014), cancer immunotherapy (James P. Allison, 2015), HPV vaccines for cancer prevention (Douglas Lowy among the 2017 clinical winners) and Herceptin for breast cancer (Dennis Slamon among the 2019 clinical winners). Its public service award has gone to Nancy Brinker for public awareness of cancer (2005).",
+    programs: ["Lasker Awards (basic, clinical, public service and special achievement)", "Research advocacy", "Education programmes"],
+    links: [{ label: "About the Lasker Foundation", url: "https://laskerfoundation.org/about/" }, { label: "Lasker Awards: winners", url: "https://laskerfoundation.org/winners/" }],
+    people: ["mary-lasker", "albert-lasker", "sidney-farber", "emil-frei", "emil-freireich", "donald-pinkel", "bernard-fisher", "janet-rowley", "paul-nurse", "aaron-ciechanover", "avram-hershko", "betty-ford", "nancy-brinker", "brian-druker", "charles-sawyers", "michael-bloomberg", "bill-gates", "mary-claire-king", "james-allison", "william-kaelin", "douglas-lowy", "dennis-slamon", "drew-weissman"], bottlenecks: ["b-funding-allocation", "b-knowledge-diffusion"] }),
 
   b({ id: "terry-fox-foundation", name: "Terry Fox Foundation", aka: ["Terry Fox Research Institute", "TFRI"], institutionType: "consortium", city: "Vancouver", country: "CA", lat: 49.263, lng: -123.117, website: "https://terryfox.org",
     tldr: "The foundation that grew out of Terry Fox's 1980 Marathon of Hope; with the Terry Fox Research Institute it funds cancer research across Canada from the annual Terry Fox Run.",

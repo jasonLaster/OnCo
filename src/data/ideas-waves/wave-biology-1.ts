@@ -531,7 +531,7 @@ export const ideasBiology1: IdeaInput[] = [
     rationale: "Spontaneous canine tumours share genomics and metastatic behaviour with human counterparts and progress on a compressed timescale, giving survival readouts within one to two years.",
     test: "Run parallel canine and murine studies for five agents entering human development and compare which better predicted human toxicity and pharmacodynamics.",
     actor: "research", cost: "medium", horizonYears: 5, bottlenecks: ["b-preclinical-models", "b-translational-valley"],
-    institutions: ["nci"], cancers: ["sarcoma", "glioblastoma", "dlbcl"],
+    institutions: ["nci", "comparative-oncology-trials-consortium"], cancers: ["sarcoma", "glioblastoma", "dlbcl"], drugs: ["toceranib", "tigilanol-tiglate", "rabacfosadine", "verdinexor"],
     links: [{ label: "NCI Comparative Oncology Program", url: "https://ccr.cancer.gov/comparative-oncology-program" }] }),
   i({ id: "idea-bio1-zebrafish-avatars", name: "Zebrafish avatars for a drug answer within a week", maturity: "preclinical-evidence",
     tldr: "Tumour cells injected into transparent fish embryos grow in days, so several drugs can be compared in about a week, fast enough to help a patient who cannot wait.",

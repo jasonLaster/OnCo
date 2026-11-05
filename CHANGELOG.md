@@ -7,9 +7,21 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 5 November 2026
+- Twenty-one more country pages (Indonesia to Thailand, Viet Nam to Taiwan), the machines page built from its records, searches that find nothing can start research privately, and device and contrast-agent records
 - The census fill rounds: hospices and Maggie's centres, psycho-oncology and fertility services, helplines, patient coalitions and patient guides, 87 reporting and staging systems, 103 graded complementary products, 27 hereditary syndromes and germline tests, vaccines and screening, donor registries, biobanks, laws, payers, open-source projects, veterinary drugs and prizes
+- Seven product changes wait at /admin/
+- chore: weekly roadmap registry check (public/roadmap-watch.json)
+- chore: refresh institution research output from OpenAlex (#359)
+- chore: draft change proposals that need review (#358)
+- chore: EU regional rows read from the EMA register pages (#357)
 
 ### 4 November 2026
+- The shared chrome no longer carries the regional approvals table or one-page styles
+- Country deep dives, wave 4: pages for Viet Nam, the Philippines, Ethiopia, South Africa, Colombia, Argentina, Ukraine, Romania, Malaysia, Algeria and Taiwan
+- Eleven more countries read from their own sources: registries, payers, regulators and screening for Viet Nam, the Philippines, Ethiopia, South Africa, Colombia, Argentina, Ukraine, Romania, Malaysia, Algeria and Taiwan
+- The timeline's year scrubber draws its pills with short classes, 91 KB lighter and unchanged on screen
+- The census fill rounds: hospices and Maggie's centres, psycho-oncology and fertility services, helplines, patient coalitions and patient guides, 87 reporting and staging systems, 103 graded complementary products, 27 hereditary syndromes and germline tests, vaccines and screening, donor registries, biobanks, laws, payers, open-source projects, veterinary drugs and prizes
+- Devices and contrast agents: ports, PICCs and pumps, stoma products, breast implants and prostheses, lymphoedema pumps, embolic beads, biopsy and localisation systems, pleural and peritoneal catheters, stents, laboratory analysers, Barrett's ablation, cholangioscopy and automated breast ultrasound, and 25 contrast agents and dyes
 - The health gauges count the records the census fill rounds added
 - Twenty US proton centres, 31 stem cell donor registries and cord blood banks, 20 biobanks including BBMRI-ERIC and NCI TARGET, the nine CDMRP cancer programmes and 22 more funding programmes, four European right-to-be-forgotten statutes, Medicare's negotiated cancer drug prices and 16 Medicare coverage rulings
 - Prevention and screening gaps: hepatitis B and Chinese HPV vaccines, sixteen national HPV programmes from WHO data, nineteen FDA screening tests, three ER and PR staining kits, and twenty-seven national screening programmes
@@ -20,19 +32,33 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - Complementary products: 103 graded records from Memorial Sloan Kettering's About Herbs and NCI PDQ, including milk thistle, black cohosh, low-dose naltrexone, PC-SPES, the Gonzalez regimen, kratom, cesium chloride, vitamins and minerals, medicinal mushrooms and herbal cancer cures
 - Hospices, end-of-life care, navigation, fertility preservation, psycho-oncology, genetics services and helplines: 31 Maggie's centres, the nine Marie Curie hospices, Sue Ryder and Hospice UK; advance care planning documents, hospice services and nine assisted dying laws read from their statutes; patient navigation and the Medicare navigation codes; six fertility preservation services and schemes; IPOS and its 28 national societies; the seven NHS genomic regions and the NSGC directory; and 23 cancer helplines and information services in 20 countries with the ICISG member list
 - Reporting systems, response criteria and staging systems: 87 glossary records from the November gap census, each citing its defining paper or society page
+- The virotherapy page's step classes move from globals.css into a stylesheet only that page loads
 - Open-source catalogue: 91 projects from the November gap census, pathology first, with the stale Sybil, GISTIC2 and Rcan skips corrected
+- The Aa button is named for what its menu now holds: reading, language and display settings, in all nine languages
+- The page-weight script weighs the page it is given: without --base the first path named was dropped and every recorded page was weighed instead
+- The virotherapy page comes back under its weight ceiling, and the timeline and the technology pages stop scrolling sideways on a 320 px phone
 - Census corrections: four more state wig-cover laws, ten NCCN guideline links that pointed at the wrong or a retired guideline, the UKONS and CTCAE links and the CTCAE v6 bands, Bravnetsa's September approval, the lung ninth edition, and aliases that sent readers to the wrong page
 - Empty files registered for the November gap fill of hospices, end-of-life care, navigation, fertility preservation, psycho-oncology, genetic counselling and helplines
+- The Aa menu gains text size, reading spacing and a reduce motion switch
 - Gap census: 174 kinds of oncology object measured against outside lists, with 3,313 sourced gaps, eight kinds with no record and the corrections found on the way
 - 268 cancer institutions measured against the IRS and Charity Commission registers, AACI, the Children's Oncology Group, Japan's designated cancer hospitals, India's National Cancer Grid and UICC, including the American Cancer Society itself
 - National cancer societies: 27 UICC members from Denmark, Norway, Finland, Belgium, New Zealand, South Africa, Singapore, Hong Kong, Japan, Korea, the Philippines, Egypt and Latin America, the registered names of fourteen centres the corpus held, and the institution lists described in the data sources
+- Search answers names from a small first file and says "Loading search…" until it can, and an exact name now comes first
+- Machines page lists every machine the corpus marks, by family, with its chain of development
+- Accessibility: survival-chart arms told apart by line and shape as well as colour, readable accent buttons in dark mode, the header fits at 320 px, and interactive drawings reachable by screen readers
+- The ten wave 3 country pages read against their sources: 1,895 claims checked, 206 faulty (10.9 per cent), every one fixed or labelled
+- Record header: the status chip and the "Also called" line share one baseline, with the same space under the lede on every record
 - The British Thoracic Oncology Group is held as a nonprofit company beside the other groups, and new charity records drop a tag that had no description
 - New centres keep their own trials: sponsor names for Loyola, Mass General Brigham, Mott, UCSF Benioff, UPMC Children's and St. Jude India resolve to their records, and UICC links the American Cancer Society itself
 - UK cancer charities and Japan's designated cancer hospitals: 46 charities from the Charity Commission register and Maggie's, 39 prefectural hub and genomic medicine core hospitals from the health ministry's lists with their own English names, and the UICC member directory as a list
 - Nineteen RNA tests, every radiotherapy machine line dated from its FDA record with scalp cooling, cryocompression and infusion chairs, Invictus Therapeutics and Invictus Oncology, and a daily check that the live search finds every record
+- Country deep dives, wave 3: pages for Indonesia, Pakistan, Türkiye, Bangladesh, Iran, Mexico, Egypt, Poland, Nigeria and Thailand
+- Ten more countries read from their own sources: registries, payers, regulators and screening for Indonesia, Pakistan, Türkiye, Bangladesh, Iran, Mexico, Egypt, Poland, Nigeria and Thailand
 - Cancer charities and paediatric centres: 45 US charities from the IRS register including the American Cancer Society and Blood Cancer United, 44 Children's Oncology Group member programmes and 36 National Cancer Grid members in India, each linked from the cancer, network or parent record it belongs to
 - Invictus: the two cancer companies of that name, Invictus Therapeutics in Sydney and Invictus Oncology in Delhi
 - Radiotherapy machines, chemotherapy chairs and scalp cooling: every model line dated from its FDA record, five roadmaps of how each machine family developed, and four improvement ideas
+- Search misses: a private research queue read from PostHog at run time, counts only in its output
+- Search: count a settled search that finds nothing, with consent, as one filtered PostHog event
 - A daily search health check: records missing from the live index, how far the site is behind main, and every typed name ranked by the site's own search
 - AACI member centres: 25 academic cancer centres and the association itself, five large US cancer centres from the IRS list, and the legal names of eleven centres the corpus already held; the Jaime Leandro Foundation's record now carries its IRS filing, how its vaccine process works and who it is named for
 - RNA tests: nineteen tests that read tumour RNA in tissue, urine and blood, a liquid RNA technology, and the proposal to read tumour RNA beside tumour DNA in one residual disease blood draw
@@ -40,6 +66,7 @@ Regenerated from the commit log each time the site ships (`scripts/changelog-syn
 - The CLI is published as onco-cc, because the npm name onco belongs to an unrelated package and npx onco would run it
 - Institution coverage: a proper name at the start of a longer name counts, a description at its end does not
 - Institution universe lists: US cancer charities (IRS), UK cancer charities (Charity Commission), AACI, Children's Oncology Group and National Cancer Grid members, with a coverage script
+- Country coverage: every GLOBOCAN 2024 country ranked by cases, deaths, research output and population, and the sixty without a page
 - EU authorisation rows for elinzanetant, Lumeblue, gallium-68 edotreotide and epoetin beta, read from the EMA pages, with epoetin beta quoting its cancer indication
 - The subclone residual disease record now says the 57 mutations came from exome sequencing, and states the design cut-off and molecule counts that limit naming a subclone
 - GLOBOCAN 2024 across the site: every figure from IARC's 2024 estimates, the edition named from the data, and a map legend for every 2024 data-method code

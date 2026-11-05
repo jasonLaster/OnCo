@@ -103,7 +103,7 @@ export function IdeaRankings({ views, total, globocanYear, initial = "bang-for-b
           const on = v.id === active;
           return (
             <a key={v.id} href={`/ideas/rankings/?view=${v.id}`} aria-current={on ? "true" : undefined} onClick={(e) => { e.preventDefault(); pick(v.id); }}
-              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition ${on ? "bg-accent text-white border-accent" : "bg-card border-border hover:border-border-strong hover:shadow-sm"}`}>
+              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition ${on ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:border-border-strong hover:shadow-sm"}`}>
               <RankGlyph name={v.glyph} className="h-4 w-4" />
               <span>{t(`rank.view.${v.id}` as UiKey)}</span>
               <span className={`text-xs tabular-nums ${on ? "text-white/80" : "text-muted"}`}>{views[v.id].ranked.toLocaleString("en-GB")}</span>

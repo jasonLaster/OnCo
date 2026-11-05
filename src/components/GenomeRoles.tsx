@@ -35,7 +35,7 @@ function Glyph({ name, className = "h-3.5 w-3.5" }: { name: keyof typeof GLYPH; 
 function Pill({ href, on, glyph, label, count, pick }: { href: string; on: boolean; glyph: keyof typeof GLYPH; label: string; count: number; pick: () => void }) {
   return (
     <a href={href} aria-current={on ? "true" : undefined} onClick={(e) => { e.preventDefault(); pick(); }}
-      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-sm font-medium transition ${on ? "bg-accent text-white border-accent" : "bg-card border-border hover:border-border-strong hover:shadow-sm"}`}>
+      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-sm font-medium transition ${on ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:border-border-strong hover:shadow-sm"}`}>
       <Glyph name={glyph} className="h-4 w-4" />
       <span>{label}</span>
       <span className={`text-xs tabular-nums ${on ? "text-white/80" : "text-muted"}`}>{n(count)}</span>

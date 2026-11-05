@@ -83,7 +83,7 @@ export function RecoveryMatrix({ rows, columns, cells }: { rows: MatrixRow[]; co
         right={<div className="inline-flex rounded-lg border border-border overflow-hidden" role="group" aria-label="View">
           {(["list", "grid"] as const).map((v) => (
             <button key={v} type="button" onClick={() => setView(v)} aria-pressed={view === v}
-              className={`px-3 py-1.5 text-sm ${view === v ? "bg-accent text-white" : "bg-card hover:bg-foreground/5"}`}>{v === "list" ? "List" : "Grid"}</button>
+              className={`px-3 py-1.5 text-sm ${view === v ? "bg-accent-solid text-accent-fg" : "bg-card hover:bg-foreground/5"}`}>{v === "list" ? "List" : "Grid"}</button>
           ))}
         </div>} />
 

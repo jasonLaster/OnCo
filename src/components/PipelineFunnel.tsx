@@ -49,7 +49,7 @@ export function PipelineFunnel({ funnels, crowding, fetched }: { funnels: Funnel
       <section>
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <div className="flex rounded-lg border border-border overflow-hidden text-sm" role="tablist">
-            {(["target", "modality", "cancer"] as const).map((g) => <button key={g} type="button" role="tab" aria-selected={group === g} onClick={() => onGroup(g)} className={`px-3 py-1.5 capitalize ${group === g ? "bg-accent text-white" : "bg-card hover:bg-surface"}`}>{g}</button>)}
+            {(["target", "modality", "cancer"] as const).map((g) => <button key={g} type="button" role="tab" aria-selected={group === g} onClick={() => onGroup(g)} className={`px-3 py-1.5 capitalize ${group === g ? "bg-accent-solid text-accent-fg" : "bg-card hover:bg-surface"}`}>{g}</button>)}
           </div>
           <select value={funnel?.key} onChange={(e) => setKey(e.target.value)} className="rounded-lg border border-border bg-card px-3 py-1.5 text-sm max-w-full" aria-label={`Choose a ${group}`}>
             {options.map((f) => <option key={f.key} value={f.key}>{f.label} ({f.products.length})</option>)}

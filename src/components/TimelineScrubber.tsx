@@ -86,7 +86,7 @@ export function TimelineScrubber({ data }: { data: TimelineData }) {
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold mb-2">All products approved by {year} ({firstApprovals.length})</h2>
-        <div className="flex flex-wrap gap-1.5">{firstApprovals.sort((a, b) => a.year - b.year).map((a) => <Link key={a.drug} href={a.route} className={`chip border ${a.year === year ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`}>{a.drug} <span className="opacity-70 ml-1">{a.year}</span></Link>)}</div>
+        <div className="flex flex-wrap gap-1.5">{firstApprovals.sort((a, b) => a.year - b.year).map((a) => <Link key={a.drug} href={a.route} className={`chip border ${a.year === year ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`}>{a.drug} <span className="opacity-70 ml-1">{a.year}</span></Link>)}</div>
       </section>
     </div>
   );

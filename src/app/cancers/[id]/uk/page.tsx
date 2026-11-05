@@ -180,7 +180,7 @@ function Page({ p, id }: { p: UkPathway; id: string }) {
           <ol className="relative border-s border-border ms-3 space-y-4">
             {p.timeline.map((t, i) => (
               <li key={t.id} id={`step-${t.id}`} className="ms-6 scroll-mt-24">
-                <span className="absolute -start-3 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-accent text-white text-[11px] font-semibold tabular-nums">{i + 1}</span>
+                <span className="absolute -start-3 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-accent-solid text-accent-fg text-[11px] font-semibold tabular-nums">{i + 1}</span>
                 <div className="card p-4">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="font-semibold">{t.label}</span>

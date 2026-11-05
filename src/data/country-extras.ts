@@ -38,6 +38,8 @@ export type CountryExtra = {
  * on 3 November 2026 and answered with the GLOBOCAN 2024 PDF.
  */
 const GCO_SLUG: Record<number, string> = {
+  // Added 4 November 2026 with the wave 3 country pages; each answered with the GLOBOCAN 2024 PDF that day.
+  50: "bangladesh", 360: "indonesia", 566: "nigeria", 586: "pakistan", 764: "thailand",
   36: "australia", 40: "austria", 56: "belgium", 76: "brazil", 124: "canada", 156: "china", 208: "denmark", 250: "france-metropolitan",
   276: "germany", 300: "greece", 356: "india", 364: "iran-islamic-republic-of", 376: "israel", 380: "italy", 392: "japan",
   410: "korea-republic-of", 484: "mexico", 528: "the-netherlands", 578: "norway", 616: "poland", 620: "portugal",
@@ -86,4 +88,11 @@ export const countryExtras: Record<string, CountryExtra> = {
   GR: { name: "Greece", population: 10, incidence: 273, mortality: 100, funder: "Hellenic Foundation for Research and Innovation", programmes: ["Hellenic Cooperative Oncology Group"], gcoUrl: gco(300) },
   PT: { name: "Portugal", population: 11, incidence: 293, mortality: 106, funder: "FCT; Liga Portuguesa Contra o Cancro", programmes: ["IPO Porto and Lisbon"], gcoUrl: gco(620) },
   NO: { name: "Norway", population: 6, incidence: 335, mortality: 86, funder: "Norwegian Cancer Society; Research Council of Norway", programmes: ["Cancer Registry of Norway", "Oslo University Hospital"], gcoUrl: gco(578) },
+  // Wave 3 (4 November 2026): rates from public/globocan/countries.json code 39, population from the World Bank 2024
+  // series. No funder is given because none was researched; each country page names its funders where it found them.
+  ID: { name: "Indonesia", population: 284, incidence: 151, mortality: 91, gcoUrl: gco(360) },
+  PK: { name: "Pakistan", population: 251, incidence: 107, mortality: 69, gcoUrl: gco(586) },
+  BD: { name: "Bangladesh", population: 174, incidence: 118, mortality: 88, gcoUrl: gco(50) },
+  NG: { name: "Nigeria", population: 233, incidence: 114, mortality: 71, gcoUrl: gco(566) },
+  TH: { name: "Thailand", population: 72, incidence: 142, mortality: 90, gcoUrl: gco(764) },
 };

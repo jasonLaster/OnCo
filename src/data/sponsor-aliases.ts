@@ -363,7 +363,7 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/\btelehealth research centers of excellence\b|\bnci trace\b/, { id: "nci-trace", label: "NCI Telehealth Research Centers of Excellence", kind: "other" }],
   [/national clinical trials network|nctn/, { id: "nci", label: "NCI National Clinical Trials Network", kind: "government" }],
   // ---- Government ----
-  [/^(us )?national cancer institute \(nci\)|^(us )?national cancer institute$|^nci\b(?! (cairo|egypt))|\(nci\)/, { id: "nci", label: "National Cancer Institute (US)", kind: "government" }],
+  [/^(us )?national cancer institute \(nci\)|^(us )?national cancer institute$|^nci\b(?! (cairo|egypt|thailand))|\(nci\)/, { id: "nci", label: "National Cancer Institute (US)", kind: "government" }],
   // Centres and institutes that carry the Cancer Research UK name are the host institutions, and a fund named for
   // the charity is its own record; only the charity itself resolves to `cruk` (link-sense review, 3 Nov 2026). The
   // City of London and Convergence Science centres are partnerships recorded as consortia, which no institution alias

@@ -103,7 +103,7 @@ export const fr: UiDict = {
   "theme.title": "Thème : {current}. Cliquez pour {next}.",
   "theme.aria": "Thème : {current}. Passer à {next}",
 
-  "layer.aria": "Niveau de lecture et langue du site",
+  "layer.aria": "Réglages de lecture, de langue et d'affichage",
   "layer.readingLevel": "Niveau de lecture",
   "layer.siteLanguage": "Langue du site",
   "layer.blurb": "Les menus, les titres, les libellés des tableaux et le TL;DR de chaque page sont traduits lorsqu'une traduction existe. Les traductions des TL;DR sont automatiques et non relues ; quand il en manque une, le TL;DR anglais s'affiche avec la marque EN. Les résumés détaillés, les tableaux de preuves et les sources restent en anglais, et votre navigateur peut les traduire.",

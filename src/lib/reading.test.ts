@@ -111,7 +111,9 @@ describe("reading preferences: a reader who changes nothing", () => {
 
   it("the Aa button renders byte for byte as it did before the controls (closed, defaults)", () => {
     // Captured from the dev server's HTML for / at the commit before this change (12bb33ebf).
-    const before = '<div class="relative flex items-center "><button type="button" data-onco-toggle="layer" aria-haspopup="dialog" aria-expanded="false" aria-label="Aa EN · English · Reading level and site language" class="ctl px-2.5 " title="Technical · English"><span class="ctl-text"><span aria-hidden="true" class="font-semibold tracking-tight">Aa</span> <span class="ctl-label text-muted max-[389px]:hidden xl:hidden 2xl:inline">EN</span></span></button></div>';
+    // The one difference since is the accessible name, renamed once the menu held text size, spacing and motion as
+    // well as reading level and language.
+    const before = '<div class="relative flex items-center "><button type="button" data-onco-toggle="layer" aria-haspopup="dialog" aria-expanded="false" aria-label="Aa EN · English · Reading, language and display settings" class="ctl px-2.5 " title="Technical · English"><span class="ctl-text"><span aria-hidden="true" class="font-semibold tracking-tight">Aa</span> <span class="ctl-label text-muted max-[389px]:hidden xl:hidden 2xl:inline">EN</span></span></button></div>';
     expect(renderToStaticMarkup(createElement(LayerToggle))).toBe(before);
   });
 

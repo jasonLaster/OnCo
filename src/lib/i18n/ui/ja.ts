@@ -103,7 +103,7 @@ export const ja: UiDict = {
   "theme.title": "テーマ: {current}。クリックで{next}に切り替えます。",
   "theme.aria": "テーマ: {current}。{next}に切り替える",
 
-  "layer.aria": "読みやすさのレベルとサイトの言語",
+  "layer.aria": "読み方・言語・表示の設定",
   "layer.readingLevel": "読みやすさのレベル",
   "layer.siteLanguage": "サイトの言語",
   "layer.blurb": "メニュー、見出し、表のラベル、各ページの TL;DR は、翻訳があるものだけ翻訳して表示します。TL;DR の翻訳は機械翻訳で未校閲です。翻訳がない場合は英語の TL;DR を EN マーク付きで表示します。詳しい要約、エビデンスの表、出典は英語のままで、ブラウザーの翻訳機能で翻訳できます。",

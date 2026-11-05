@@ -103,7 +103,7 @@ export const de: UiDict = {
   "theme.title": "Design: {current}. Klicken für {next}.",
   "theme.aria": "Design: {current}. Wechseln zu {next}",
 
-  "layer.aria": "Lesestufe und Sprache der Website",
+  "layer.aria": "Einstellungen für Lesen, Sprache und Darstellung",
   "layer.readingLevel": "Lesestufe",
   "layer.siteLanguage": "Sprache der Website",
   "layer.blurb": "Menüs, Überschriften, Tabellenbeschriftungen und das TL;DR jeder Seite werden übersetzt, wo eine Übersetzung vorliegt. TL;DR-Übersetzungen sind maschinell erstellt und ungeprüft; fehlt eine, erscheint das englische TL;DR mit der Marke EN. Ausführliche Zusammenfassungen, Evidenztabellen und Quellen bleiben auf Englisch; Ihr Browser kann sie übersetzen.",

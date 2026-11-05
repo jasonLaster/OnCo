@@ -125,7 +125,7 @@ export const EN = {
   "theme.aria": "Theme: {current}. Switch to {next}",
 
   // ---- reading level and language ----
-  "layer.aria": "Reading level and site language",
+  "layer.aria": "Reading, language and display settings",
   "layer.readingLevel": "Reading level",
   "layer.siteLanguage": "Site language",
   "layer.blurb": "Menus, headings, table labels and the TL;DR on each page are translated where a translation exists. TL;DR translations are machine-assisted and unreviewed; where one is missing, the English TL;DR is shown with an EN mark. Detailed summaries, evidence tables and sources stay in English, and your browser can translate them.",

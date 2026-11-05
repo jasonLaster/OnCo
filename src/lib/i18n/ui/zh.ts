@@ -103,7 +103,7 @@ export const zh: UiDict = {
   "theme.title": "主题：{current}。点击切换为{next}。",
   "theme.aria": "主题：{current}。切换为{next}",
 
-  "layer.aria": "阅读级别和网站语言",
+  "layer.aria": "阅读、语言和显示设置",
   "layer.readingLevel": "阅读级别",
   "layer.siteLanguage": "网站语言",
   "layer.blurb": "菜单、标题、表格标签以及每页的 TL;DR 在有译文时显示译文。TL;DR 译文由机器辅助生成，未经审校；缺少译文时显示英文 TL;DR 并标注 EN。详细摘要、证据表格和来源保持英文，浏览器可以为您翻译。",

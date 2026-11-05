@@ -31,11 +31,15 @@ const MAX_DRIFT = 0.2;
 
 /** Recorded 2026-09-25, after the gauge review that followed the 12,400-to-18,160 growth. */
 const RECORDED: Array<{ id: string; total: number; label: string }> = [
-  { id: "sources", total: 18160, label: "Records with a primary source" },
-  { id: "backlinks", total: 18141, label: "Records with three or more relations" },
-  { id: "orphans", total: 18141, label: "Records something links to" },
-  { id: "tldr", total: 18160, label: "TL;DRs that are full sentences" },
-  { id: "summary", total: 18160, label: "Summaries of 300 characters or more" },
+  // 18,160 to 21,838 records (18,141 to 21,818 counted without years) on 4 November 2026: the November gap rounds,
+  // ending with the census fill of particle therapy centres, donor registries, biobanks, funding programmes, laws and
+  // payers. These whole-corpus gauges ask about every record, and the new records are records like any other, so the
+  // denominators move with them; the labels still say what they count.
+  { id: "sources", total: 21838, label: "Records with a primary source" },
+  { id: "backlinks", total: 21818, label: "Records with three or more relations" },
+  { id: "orphans", total: 21818, label: "Records something links to" },
+  { id: "tldr", total: 21838, label: "TL;DRs that are full sentences" },
+  { id: "summary", total: 21838, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
   { id: "regional-approvals", total: 450, label: "Approved products with regional rows" },
   // 1,080 to 1,442 on 3 November 2026: 282 company pipeline products (src/data/company-pipeline-gap.ts, gap audit class 5)
@@ -62,13 +66,15 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
-  { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
-  { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
+  // 1,029 to 1,260 on 4 November 2026: term rounds since September, ending with the census fill's laws and Medicare
+  // coverage rulings. Each is a term a reader may look up on Wikipedia, the kind this gauge asks about.
+  { id: "term-wikipedia", total: 1260, label: "Terms with a Wikipedia link, or checked and found to have none" },
+  { id: "stale", total: 21838, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
-  { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },
-  { id: "simple", total: 18160, label: "Records with a simple explanation" },
-  { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
-  { id: "provenance", total: 18160, label: "Records with git provenance" },
+  { id: "reviewed", total: 21818, label: "Records a named human reviewer has signed off" },
+  { id: "simple", total: 21838, label: "Records with a simple explanation" },
+  { id: "translations", total: 21838, label: "Records with a TL;DR in all eight languages" },
+  { id: "provenance", total: 21838, label: "Records with git provenance" },
   // 3,798 to 4,561 on 4 November 2026: the 282 pipeline products and 14 targets released with the lighter engine pages,
   // and the drugs added by the startup monitors and the coverage lists. They are drugs and targets, which is what this
   // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.

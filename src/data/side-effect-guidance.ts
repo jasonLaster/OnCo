@@ -2,7 +2,7 @@
  * Plain-language guidance for each symptom group produced by `symptomGroup()` in src/lib/side-effects.ts.
  *
  * Thresholds are taken from the sources named on each row and phrased as the source phrases them:
- * grade definitions from NCI CTCAE v5.0, the fever rule from NICE CG151 and the UKONS 24-hour triage tool,
+ * grade definitions from NCI CTCAE v5.0, the fever rule from NICE CG151 and the UKONS 24-hour triage toolkit,
  * immune-related thresholds from the ASCO guideline, and CRS/ICANS from the ASTCT consensus grading.
  * Where a source gives no number, none is given here. Every row is orientation, not medical advice: the
  * treating team will have given specific instructions and a 24-hour number, and those take precedence.
@@ -23,8 +23,15 @@ export type SideEffectGuidance = {
   also?: SourceRef;
 };
 
-export const CTCAE: SourceRef = { label: "NCI CTCAE v5.0 grade definitions", url: "https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf" };
-export const UKONS: SourceRef = { label: "UKONS 24-hour triage tool", url: "https://www.ukons.org/site/assets/files/1134/oncology_haematology_24_hour_triage.pdf" };
+// CTCAE v5.0 (2017) is the version the thresholds below quote.
+// NCI released v6.0 in 2025 (dctd.cancer.gov adverse-events page, read 4 November 2026); it moved the neutrophil and
+// platelet bands, and the two rows that quote those bands say so. The old ctep.cancer.gov PDF path now redirects to a
+// landing page, so the link is the same v5.0 quick reference at its new address.
+export const CTCAE: SourceRef = { label: "NCI CTCAE v5.0 grade definitions", url: "https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events/ctcae-v5-8x11.pdf" };
+export const CTCAE_V6: SourceRef = { label: "NCI CTCAE v6.0 (2025)", url: "https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events/ctcae-v6.pdf" };
+// The old ukons.org /site/assets/files/1134/ PDF returns 404; the third edition (December 2024) is linked from
+// https://ukons.org/resources/publicly-available-resources (read 4 November 2026).
+export const UKONS: SourceRef = { label: "UKONS Oncology/Haemato-oncology 24-hour triage toolkit (3rd edition, December 2024)", url: "https://tempus-fujit.files.svdcdn.com/production/images/ukons_triage_toolkit_v3_final.pdf" };
 export const NICE_CG151: SourceRef = { label: "NICE CG151: neutropenic sepsis", url: "https://www.nice.org.uk/guidance/cg151" };
 export const ASCO_IRAE: SourceRef = { label: "ASCO guideline on immune-related adverse events (2021)", url: "https://ascopubs.org/doi/10.1200/JCO.21.01440" };
 export const ASTCT: SourceRef = { label: "ASTCT consensus grading for CRS and ICANS (2019)", url: "https://doi.org/10.1016/j.bbmt.2018.12.758" };
@@ -46,7 +53,7 @@ export const sideEffectGuidance: SideEffectGuidance[] = [
     plain: "Neutrophils are the white cells that fight bacteria. Chemotherapy and some targeted drugs lower them for a few days after each dose, which is when infections take hold.",
     selfCare: "Wash hands often, avoid people with infections, keep cuts clean, and know when your count is expected to be lowest (usually 7 to 14 days after chemotherapy).",
     callToday: "Any sign of infection: sore throat, cough, burning on passing urine, redness around a line or wound, mouth ulcers, or feeling unwell without a fever.",
-    emergency: FEVER_RULE + " CTCAE grade 3 is a count below 1,000 per cubic millimetre; grade 4 is below 500.",
+    emergency: FEVER_RULE + " CTCAE v5.0 grade 3 is a count below 1,000 per cubic millimetre and grade 4 below 500; CTCAE v6.0 (2025) moved the bands, so that grade 3 is below 500 and grade 4 below 100.",
     source: CTCAE, also: NICE_CG151,
   },
   {
@@ -62,8 +69,8 @@ export const sideEffectGuidance: SideEffectGuidance[] = [
     plain: "Platelets stop bleeding. When they fall, small bruises appear without injury and cuts and nosebleeds take longer to stop.",
     selfCare: "Use a soft toothbrush and an electric razor, avoid aspirin and ibuprofen unless prescribed, and avoid contact sports.",
     callToday: "Unexplained bruising, tiny red or purple spots on the skin, bleeding gums, or a nosebleed that takes more than a few minutes to stop. CTCAE grade 2 is a platelet count below 75,000.",
-    emergency: "Bleeding that will not stop, blood in vomit, urine or stool, a sudden severe headache, or confusion. CTCAE grade 3 is below 50,000 and grade 4 below 25,000.",
-    source: CTCAE,
+    emergency: "Bleeding that will not stop, blood in vomit, urine or stool, a sudden severe headache, or confusion. CTCAE v5.0 grade 3 is below 50,000 and grade 4 below 25,000; in CTCAE v6.0 (2025) grade 3 runs from below 50,000 to 10,000, with transfusion indicated, and grade 4 is below 10,000.",
+    source: CTCAE, also: CTCAE_V6,
   },
   {
     group: "Low lymphocytes (lymphopenia)",

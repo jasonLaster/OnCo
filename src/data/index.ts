@@ -117,10 +117,13 @@ import { tests } from "./tests";
 import { testsCdxDevices } from "./tests-cdx-devices";
 import { mcedPapers } from "./mced-census";
 import { mcedTests, mcedCompanies } from "./mced-census-tests";
+import { preventionScreeningGaps2026_11 } from "./prevention-screening-gaps-2026-11";
 import { mcedTrials } from "./mced-census-trials";
 import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
 import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
+import { institutionsPatientCoalitions, collectionsPatientCoalitions } from "./institutions/patient-coalitions-2026-11";
+import { patientEducationLinks } from "./patient-education-links-2026-11";
 import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci";
 import { companiesUkCancerCharities, institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
 import { institutionsCogPaediatric } from "./institutions/cog-paediatric";
@@ -179,14 +182,23 @@ import { companiesNew2026Sponsors } from "./companies-new-2026-sponsors";
 import { monitorsEdgarA } from "./companies-monitors-2026-11-edgar-a";
 import { monitorsEdgarB } from "./companies-monitors-2026-11-edgar-b";
 import { monitorsOrphans } from "./companies-monitors-2026-11-orphans";
+import { hereditarySyndromesGaps2026, hereditaryTestCompaniesGaps2026, hereditaryTestsGaps2026 } from "./hereditary-gaps-2026-11";
 import { monitorsSbirA } from "./companies-monitors-2026-11-sbir-a";
 import { monitorsSbirB } from "./companies-monitors-2026-11-sbir-b";
 import { monitorsSbirC } from "./companies-monitors-2026-11-sbir-c";
 import { monitorsSbirD } from "./companies-monitors-2026-11-sbir-d";
 import { prometheusGapTechnologies, prometheusGapDrugs } from "./prometheus-gaps-2026-11";
+import { veterinaryGapDrugs, veterinaryGapInstitutions } from "./veterinary-gaps-2026-11";
+import { institutionsPrizes202611 } from "./prizes-gaps-2026-11";
 import { companiesPrometheusGapsA } from "./companies-prometheus-gaps-a";
 import { companiesPrometheusGapsB } from "./companies-prometheus-gaps-b";
 import { institutionsPrometheusGaps, collectionsPrometheusGaps, termsPrometheusGaps } from "./prometheus-gaps-institutions";
+import { institutionsParticleTherapyGaps2026, particleTherapyHostBacklinks } from "./particle-therapy-gaps-2026-11";
+import { institutionsDonorRegistryGaps2026, donorRegistryBacklinks } from "./donor-registries-gaps-2026-11";
+import { institutionsBiobankGaps2026, collectionsBiobankGaps2026, biobankBacklinks } from "./biobanks-gaps-2026-11";
+import { institutionsGrantGaps2026, collectionsGrantGaps2026, trialsGrantGaps2026, grantBacklinks } from "./funding-programmes-gaps-2026-11";
+import { termsLawGaps2026, lawBacklinks } from "./laws-gaps-2026-11";
+import { termsPayerGaps2026, institutionsPayerGaps2026, payerBacklinks } from "./payers-gaps-2026-11";
 import { drugsPipelineWave1 } from "./drugs-pipeline-wave1";
 import { trop2DualPayload } from "./trop2-dual-payload";
 import { pipelineTrialsWave2 } from "./pipeline-trials-wave2";
@@ -261,9 +273,14 @@ import { pipelineTrialsWave6 } from "./pipeline-trials-wave6";
 import { checkpointTargets, checkpointTerms, IMMUNE_CHECKPOINT_TARGET_IDS } from "./checkpoint-map";
 import { cansimOncologyTerms } from "./terms-cansim-oncology";
 import { cansimMethodsTerms } from "./terms-cansim-methods";
+import { scoringSystemsGapTerms } from "./scoring-systems-gaps-2026-11";
 import { cansimTargets } from "./targets-cansim";
 import { issuesWaveB } from "./issues-2026-09-wave-b";
 import { READOUT_TEST_RECORDS } from "./readout-test-records";
+import { hospicesSupportGaps } from "./hospices-support-gaps-2026-11";
+import { palliativeNavigationFertilityGaps } from "./palliative-navigation-fertility-gaps-2026-11";
+import { psychosocialGeneticsGaps } from "./psychosocial-genetics-gaps-2026-11";
+import { helplinesGaps } from "./helplines-gaps-2026-11";
 
 const RAW_INPUTS: EntityInput[] = [
   ...ucsfBreastTrials,
@@ -360,10 +377,12 @@ const RAW_INPUTS: EntityInput[] = [
   ...tests,
   ...testsCdxDevices,
   ...mcedPapers, ...mcedTests, ...mcedCompanies, ...mcedTrials,
+  ...preventionScreeningGaps2026_11,
   ...nciCoverage,
   ...networkInstitutions, ...networkPeople,
   ...institutionsIndia,
   ...institutionsUsCancerCharities,
+  ...institutionsPatientCoalitions, ...collectionsPatientCoalitions,
   ...institutionsUsCentresAaci,
   ...institutionsUkCancerCharities,
   ...institutionsCogPaediatric,
@@ -393,8 +412,12 @@ const RAW_INPUTS: EntityInput[] = [
   ...companiesSponsorsWave3, ...companiesCooperativeGroups, ...companiesCooperativeGroupsMigrated,
   ...companiesMakersWave4,
   ...companiesNew2026Antibodies, ...companiesNew2026Radiopharma, ...companiesNew2026CellGene, ...companiesNew2026SmallMolecule, ...companiesNew2026DxAi, ...companiesNew2026Sponsors, ...companiesPortfolioMonitors, ...companiesInvictus,
+  ...hereditarySyndromesGaps2026, ...hereditaryTestCompaniesGaps2026, ...hereditaryTestsGaps2026,
   ...monitorsEdgarA, ...monitorsEdgarB, ...monitorsOrphans, ...monitorsSbirA, ...monitorsSbirB, ...monitorsSbirC, ...monitorsSbirD,
   ...prometheusGapTechnologies, ...prometheusGapDrugs, ...institutionsPrometheusGaps, ...collectionsPrometheusGaps, ...termsPrometheusGaps, ...companiesPrometheusGapsA, ...companiesPrometheusGapsB,
+  ...veterinaryGapDrugs, ...veterinaryGapInstitutions,
+  ...institutionsPrizes202611,
+  ...institutionsParticleTherapyGaps2026, ...institutionsDonorRegistryGaps2026, ...institutionsBiobankGaps2026, ...collectionsBiobankGaps2026, ...institutionsGrantGaps2026, ...collectionsGrantGaps2026, ...trialsGrantGaps2026, ...termsLawGaps2026, ...termsPayerGaps2026, ...institutionsPayerGaps2026,
   ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
@@ -407,6 +430,8 @@ const RAW_INPUTS: EntityInput[] = [
   ...freeCollections, ...tumourTestCompanies,
   ...checkpointTargets, ...checkpointTerms,
   ...cansimOncologyTerms, ...cansimMethodsTerms, ...cansimTargets,
+  ...scoringSystemsGapTerms,
+  ...hospicesSupportGaps, ...palliativeNavigationFertilityGaps, ...psychosocialGeneticsGaps, ...helplinesGaps,
 ];
 
 /** Readout ids by parent target id and by the drugs their current thresholds name (see the biomarker branch in ALL_INPUTS). */
@@ -458,6 +483,42 @@ const READOUT_TESTS_BY_COMPANY: Record<string, string[]> = (() => {
   return out;
 })();
 
+/**
+ * Inbound links for the November 2026 census fill (particle therapy centres, donor registries, biobanks, funding
+ * programmes, laws, payers): each fill file exports a map from an existing record to the new records it should list,
+ * so the host hospital, funder, drug or technology page shows them without editing the file that owns it. The field is
+ * chosen by the new record's kind, so a typed array only ever holds its own kind; collections go to `related`.
+ */
+const CENSUS_FILL_BACKLINKS: Map<string, Map<string, string[]>> = (() => {
+  const kindOf = new Map<string, string>([
+    ...institutionsParticleTherapyGaps2026, ...institutionsDonorRegistryGaps2026, ...institutionsBiobankGaps2026, ...collectionsBiobankGaps2026,
+    ...institutionsGrantGaps2026, ...collectionsGrantGaps2026, ...trialsGrantGaps2026, ...termsLawGaps2026, ...termsPayerGaps2026, ...institutionsPayerGaps2026,
+  ].map((e) => [e.id, e.kind] as [string, string]));
+  const fieldFor: Record<string, string> = { institution: "institutions", term: "terms", trial: "trials", collection: "related" };
+  const out = new Map<string, Map<string, string[]>>();
+  for (const map of [particleTherapyHostBacklinks, donorRegistryBacklinks, biobankBacklinks, grantBacklinks, lawBacklinks, payerBacklinks])
+    for (const [from, ids] of Object.entries(map)) for (const id of ids) {
+      const kind = kindOf.get(id);
+      if (!kind) throw new Error(`Census fill backlink names a record not in the fill files: ${id}`);
+      const byField = out.get(from) ?? new Map<string, string[]>(); out.set(from, byField);
+      const list = byField.get(fieldFor[kind]) ?? []; byField.set(fieldFor[kind], list);
+      if (!list.includes(id)) list.push(id);
+    }
+  return out;
+})();
+function withCensusFillBacklinks<T extends EntityInput>(e: T): T {
+  const add = CENSUS_FILL_BACKLINKS.get(e.id);
+  if (!add) return e;
+  const out: Record<string, unknown> = { ...e };
+  for (const [field, ids] of add) { const own = ((e as Record<string, unknown>)[field] as string[] | undefined) ?? []; out[field] = [...own, ...ids.filter((id) => id !== e.id && !own.includes(id))]; }
+  return out as T;
+}
+{
+  const ids = new Set(RAW_INPUTS_DEDUPED.map((e) => e.id));
+  const missing = [...CENSUS_FILL_BACKLINKS.keys()].filter((id) => !ids.has(id));
+  if (missing.length) throw new Error(`Census fill backlinks name records that do not exist: ${missing.join(", ")}`);
+}
+
 const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // Spike supplements (src/data/spikes/index.ts): partial records a cancer deep dive attaches to targets, readouts,
   // drugs and papers other files own; arrays append, scalars fill gaps. Applied before everything else.
@@ -466,11 +527,15 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // drugs and papers other files own) come next; arrays append, scalars fill gaps.
   // Merge supplements (src/data/merged-records.ts): what a record retired as a duplicate carried and its survivor did
   // not. Applied on the same terms as a spike supplement, so retiring an id loses no relation.
-  const raw = applyMergeSupplements(applySpikeSupplements(base.kind === "cancer" ? mergeSpikeInto(base) : base));
+  const raw = withCensusFillBacklinks(applyMergeSupplements(applySpikeSupplements(base.kind === "cancer" ? mergeSpikeInto(base) : base)));
   // Paper pages written for DOIs a record cites in its external links by scripts/fetch-cited-papers.ts (wave 7): the
   // citing record, whatever its kind, gains the paper in `keyPapers`. Applied first so the kind-specific steps below see it.
   const cited = citedPaperLinksWave7[raw.id];
   let e: EntityInput = cited ? { ...raw, keyPapers: [...(raw.keyPapers ?? []), ...cited.filter((id) => !(raw.keyPapers ?? []).includes(id))] } : raw;
+  // Patient education links (src/data/patient-education-links-2026-11.ts): NCCN Guidelines for Patients, NCI PDQ patient
+  // summaries and ONS/NCODA patient education sheets, appended to the record's own links; an address it holds is not repeated.
+  const edu = patientEducationLinks[e.id];
+  if (edu) { const have = new Set((e.links ?? []).map((l) => l.url)); e = { ...e, links: [...(e.links ?? []), ...edu.filter((l) => !have.has(l.url))] }; }
   // Supportive care medicines (src/data/supportive-drugs.ts): the flag that keeps antiemetics, growth factors, bone agents,
   // antidotes and opioids out of treatment counts and rankings, and renders the "Supportive care" pill.
   if (e.kind === "drug" && SUPPORTIVE_DRUGS[e.id]) e = { ...e, supportive: true };
@@ -586,6 +651,9 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   if (unpatched.length) throw new Error(`Spike patches name cancers that do not exist: ${unpatched.join(", ")}`);
   const orphanedMerges = unappliedMergeSupplements();
   if (orphanedMerges.length) throw new Error(`Merge supplements name records that do not exist: ${orphanedMerges.join(", ")}`);
+  const ids = new Set(RECORDS.map((r) => r.id));
+  const strayEdu = Object.keys(patientEducationLinks).filter((id) => !ids.has(id));
+  if (strayEdu.length) throw new Error(`Patient education links name records that do not exist: ${strayEdu.join(", ")}`);
 }
 
 /**

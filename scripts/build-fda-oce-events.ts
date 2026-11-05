@@ -54,6 +54,8 @@ function lookup(n?: string): { key: string; ids: string[] } {
 /**
  * The record for a notification's drug. A record named for the generic wins (Tepotinib, not "Capmatinib & tepotinib"); the
  * brand breaks the remaining ties (Jelmyto and Zusduri are the mitomycin record, not UGN-103 whose alias says mitomycin).
+ * A record the notification's brand names outweighs a generic-name match on another record: the 2024 Lutathera notice
+ * went to the generic PNT2003, whose name is the FDA's generic, until the brand was weighted above it (4 November 2026).
  */
 function resolveDrug(d: { generic: string; brand?: string }): string | undefined {
   const gen = lookup(d.generic), brand = lookup(d.brand);
@@ -61,7 +63,7 @@ function resolveDrug(d: { generic: string; brand?: string }): string | undefined
   if (!pool.length) return undefined;
   const score = (id: string) => {
     const e = g.get(id) as { name: string; status?: string };
-    return (gen.key && norm(nameParts(e.name)[0] ?? e.name) === gen.key ? 0 : 4) + (e.status === "approved" ? 0 : 2) + (isTest(id) ? 1 : 0) - (brand.ids.includes(id) ? 1 : 0);
+    return (gen.key && norm(nameParts(e.name)[0] ?? e.name) === gen.key ? 0 : 4) + (e.status === "approved" ? 0 : 2) + (isTest(id) ? 1 : 0) - (brand.ids.includes(id) ? 5 : 0);
   };
   return pool.sort((a, b) => score(a) - score(b))[0];
 }

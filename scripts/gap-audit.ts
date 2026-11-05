@@ -65,6 +65,8 @@ export type Finding = {
 
 /** Record-like entry for the name index: anything with an id, a kind and the names a reader might use. */
 export type IndexEntry = { id: string; kind: string; names: string[] };
+/** Names of single facilities (proton centres, biobanks, donor registries) that a university row must not resolve to by first word. */
+const FACILITY_NAME = /\b(proton|hadron|ion-beam|biobank|cord blood|donor registry)\b/;
 export type Hit = { id: string; kind: string; key: string; exact: boolean };
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -290,10 +292,13 @@ export function matchRow(r: Pick<SideRow, "name" | "want" | "owners">, idx: Name
     }
     // "Roche Molecular Systems", "Agilent": the first word is a company's whole name, or the first word of exactly one
     // company's own name ("Agilent Technologies").
-    const first = norm(bare(r.name)).split(" ")[0];
+    const words = norm(bare(r.name)).split(" ");
+    const first = words[0];
     if (first && first.length >= 5 && !GENERIC_WORDS.has(first)) {
-      hits = norm(bare(r.name)).split(" ").length > 1 ? idx.exact(first, r.want).filter((h) => idx.isPrimary(h.id, h.key)) : [];
-      if (!hits.length) { const p = idx.byFirstWord(first, r.want); if (p.length === 1) hits = p; }
+      hits = words.length > 1 ? idx.exact(first, r.want).filter((h) => idx.isPrimary(h.id, h.key)) : [];
+      // "Emory University" is not a division of the Emory Proton Therapy Center: a single treatment facility, biobank
+      // or donor registry that happens to be the only record starting with a university's place name is not its parent.
+      if (!hits.length) { const p = idx.byFirstWord(first, r.want).filter((h) => !(words[1] === "university" && FACILITY_NAME.test(h.key))); if (p.length === 1) hits = p; }
       if (hits.length) return { hits, mode: "first-word" };
     }
   }

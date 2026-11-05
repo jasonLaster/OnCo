@@ -86,12 +86,18 @@ async function fetchPage(url: string): Promise<{ status: number; body: string }>
  * First DOI in a text that is not a Zenodo concept DOI, else the first DOI at all. Brackets are allowed inside a DOI
  * (Elsevier's 10.1016/S1470-2045(24)00220-1 was cut to "10.1016/S1470-2045") and an unbalanced closing bracket, a
  * badge's ".svg" and Markdown emphasis ("..._") are trimmed off the end; scripts/doi-exists.test.ts checks the result.
+ * Also trimmed: a trailing "!" (DeepPurpose's README wrote "btaa1005)!"), the article number and title slug an
+ * Oxford Academic URL appends ("10.1093/annonc/mdx517/4110375/ClonEvol-..."), and a bioRxiv version suffix ("v1"),
+ * none of which are part of the registered DOI.
  */
 function firstDoi(text: string): string | undefined {
+  const trim = (s: string) => s.replace(/[.:_*!]+$/, "");
   const all = [...text.matchAll(/\b(10\.\d{4,9}\/[^\s"'<>\[\]{},;]+)/g)]
     .map((m) => {
-      let d = m[1].replace(/[.:_*]+$/, "");
-      while (d.endsWith(")") && (d.match(/\)/g) ?? []).length > (d.match(/\(/g) ?? []).length) d = d.slice(0, -1).replace(/[.:_*]+$/, "");
+      let d = trim(m[1]);
+      while (d.endsWith(")") && (d.match(/\)/g) ?? []).length > (d.match(/\(/g) ?? []).length) d = trim(d.slice(0, -1));
+      d = d.replace(/^(10\.1093\/[^/]+\/[^/]+)\/\d{6,}\/.*$/, "$1");
+      if (d.startsWith("10.1101/")) d = d.replace(/v\d+(\.full(\.pdf)?)?$/, "");
       return d;
     })
     .filter((d) => !/\.svg$/i.test(d));
@@ -106,6 +112,7 @@ const LICENCE_PATTERNS: Record<string, RegExp> = {
   "GPL-2.0": /GPL/,
   "GPL-2.0-or-later": /GPL/,
   "GPL-3.0": /GPL/,
+  "GPL-3.0-or-later": /GPL/,
   "MPL-2.0": /Mozilla/i,
   "Artistic-2.0": /artistic/i,
   "CC0-1.0": /CC0|cc0-1\.0/i,
@@ -144,7 +151,11 @@ async function main() {
 
     let maintainer = c.maintainer;
     let maintainerId: string | undefined;
-    if (maintainer) {
+    if (c.maintainerId) {
+      const e = g.get(c.maintainerId);
+      if (e && (e.kind === "institution" || e.kind === "company")) maintainerId = e.id;
+      else problems.push(`${c.id}: maintainerId "${c.maintainerId}" is not an institution or company in the corpus`);
+    } else if (maintainer) {
       const e = g.get(maintainer);
       if (e && (e.kind === "institution" || e.kind === "company")) { maintainerId = e.id; maintainer = e.name; }
     }

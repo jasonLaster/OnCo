@@ -199,7 +199,10 @@ export function auditEntities(entities: Entity[], opts: AuditOptions = {}): Find
       const approvedLikeStatus = APPROVED_LIKE.has(e.status ?? "") || e.status === "withdrawn" || e.status === "historic" || (isTest && e.status === "established");
       if (majorApprovals.length && !approvedLikeStatus) add("status-vs-approvals", "medium", e, `US/EU approvals recorded (${majorApprovals.map((a) => `${a.region} ${a.year}`).join(", ")}) but status is "${e.status ?? "unset"}"`);
       else if (hasApprovals && !majorApprovals.length && !APPROVED_LIKE.has(e.status ?? "")) add("regional-approval-only", "low", e, `approved only outside US/EU (${e.approvals.map((a) => `${a.region} ${a.year}`).join(", ")}); status "${e.status ?? "unset"}" describes the global stage`);
-      if (!APPROVED_LIKE.has(e.status ?? "") && e.status !== "withdrawn" && !isTest && /\b(was|is|were|been) approved\b|\bFDA approved\b|\bapproval (in|for) \d{4}/i.test(e.tldr + " " + e.summary) && !/\bChina\b|\bNMPA\b|\bJapan\b|\bEU\b|\bEMA\b/i.test(e.summary))
+      // A veterinary medicine (tag "veterinary": Palladia, Stelfonta, Tanovea, Laverdia) is approved for dogs and deliberately
+      // carries no human approved status, so its text naming the FDA's veterinary approval is correct, not a stale status.
+      const isVeterinary = e.tags.includes("veterinary");
+      if (!APPROVED_LIKE.has(e.status ?? "") && e.status !== "withdrawn" && !isTest && !isVeterinary && /\b(was|is|were|been) approved\b|\bFDA approved\b|\bapproval (in|for) \d{4}/i.test(e.tldr + " " + e.summary) && !/\bChina\b|\bNMPA\b|\bJapan\b|\bEU\b|\bEMA\b/i.test(e.summary))
         add("text-says-approved", "low", e, `text mentions approval but status is "${e.status ?? "unset"}"`);
       const approvalYears = e.approvals.map((a) => a.year);
       if (approvalYears.some((y) => y > year)) add("future-approval", "high", e, `approval year in the future: ${approvalYears.filter((y) => y > year).join(", ")}`);

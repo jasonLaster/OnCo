@@ -1,5 +1,8 @@
 import type { EntityInput, PaperInput, TechnologyInput } from "@/lib/schema";
 import type { EvidenceGrade, Use } from "@/lib/complementary";
+import { complementaryGaps202611, complementaryGapsIndex202611 } from "./complementary-gaps-2026-11";
+import { complementaryGaps202611Supplements, complementaryGapsIndex202611Supplements } from "./complementary-gaps-2026-11-supplements";
+import { complementaryGaps202611Botanicals, complementaryGapsIndex202611Botanicals } from "./complementary-gaps-2026-11-botanicals";
 
 /**
  * Complementary and supportive approaches: what people with cancer use alongside (and sometimes instead of)
@@ -631,7 +634,7 @@ const papers: PaperInput[] = [
     links: [doi("SCALP randomised trial (JAMA 2017)", "10.1001/jama.2016.20939"), doi("DigniCap prospective cohort with concurrent controls (JAMA 2017)", "10.1001/jama.2016.21038"), doi("Scalp cooling and the risk of scalp metastases: systematic review (Breast Cancer Res Treat 2017)", "10.1007/s10549-017-4185-9")], journals: ["jama"] }),
 ];
 
-export const complementary: EntityInput[] = [...acupuncture, ...mindBody, ...touch, ...herbsAndSupplements, ...cannabis, ...physical, ...hair, ...alternatives, ...papers];
+export const complementary: EntityInput[] = [...acupuncture, ...mindBody, ...touch, ...herbsAndSupplements, ...cannabis, ...physical, ...hair, ...alternatives, ...papers, ...complementaryGaps202611, ...complementaryGaps202611Supplements, ...complementaryGaps202611Botanicals];
 
 // =============================================================================
 // INDEX: grade and purposes, including existing records from other files
@@ -721,4 +724,8 @@ export const COMPLEMENTARY_INDEX: ComplementaryEntry[] = [
   { id: "antineoplastons", grade: "insufficient", uses: ["cancer-control"], line: "Five decades, sixty registered trials, no published completed result; severe salt imbalance." },
   { id: "fenbendazole-ivermectin-repurposing-claims", grade: "insufficient", uses: ["cancer-control"], line: "Cell-culture data and anecdotes only; liver injury reported." },
   { id: "essiac-herbal-cancer-cures", grade: "insufficient", uses: ["cancer-control"], line: "A century of sales, no controlled trial, no laboratory activity." },
+  // Gap round November 2026: products from MSK About Herbs and NCI PDQ with no graded record before
+  ...complementaryGapsIndex202611,
+  ...complementaryGapsIndex202611Supplements,
+  ...complementaryGapsIndex202611Botanicals,
 ];

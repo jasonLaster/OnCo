@@ -477,6 +477,13 @@ export const regionalApprovals: Record<string, RegionalRow> = {
   "talicabtagene-autoleucel": { IN: IN(2023, "https://immunoact.com", "Relapsed or refractory B-cell lymphoma and B-ALL", "NexCAR19 (ImmunoACT); first CAR-T approved in India") },
   "varnimcabtagene-autoleucel": { IN: IN(undefined, "https://www.aabb.org/news-resources/news/article/2025/01/29/india-approves-second-car-t-cell-therapy", "Relapsed or refractory B-cell lymphoma", "Qartemi (Immuneel); approval reported as recent on 29 January 2025, exact date not found; Indian version of Barcelona's ARI-0001, which is approved in Spain under the hospital exemption") },
   cervavac: { IN: IN(2022, "https://www.seruminstitute.com/product_ind_cervavac.php", "Quadrivalent HPV vaccine, ages 9-26", "Serum Institute of India; introduced 2023") },
+  // Vaccines WHO prequalified with an Indian or Chinese regulator responsible (WHO list of prequalified vaccines, read 4 November 2026).
+  // The year of the national licence was not read, so it is left blank.
+  bevac: { IN: IN(undefined, "https://extranet.who.int/prequal/vaccines/prequalified/export?page&_format=csv", "Hepatitis B vaccine (adult and paediatric)", "WHO prequalified 16 January 2025; responsible regulator CDSCO") },
+  "sii-hepatitis-b-vaccine": { IN: IN(undefined, "https://extranet.who.int/prequal/vaccines/prequalified/export?page&_format=csv", "Hepatitis B vaccine (rDNA), adult and paediatric", "WHO prequalified 12 November 2004; responsible regulator CDSCO") },
+  cecolin: { CN: A(undefined, "https://extranet.who.int/prequal/vaccines/prequalified/export?page&_format=csv", "Bivalent HPV vaccine", "WHO prequalified 14 October 2021; responsible regulator NMPA") },
+  walrinvax: { CN: A(undefined, "https://extranet.who.int/prequal/vaccines/prequalified/export?page&_format=csv", "Bivalent HPV vaccine", "WHO prequalified 2 August 2024; responsible regulator NMPA") },
+  "cecolin-9": { CN: A(2025, "https://doi.org/10.1016/j.lanwpc.2025.101671", "Nine-valent HPV vaccine", "Marketing authorisation in China in May 2025, as stated by the trial authors") },
   // ================= Devices and tests =================
   optune: { US: A(2011, undefined, "GBM 2011/2015; NSCLC 2024; pancreatic 2026"), EU: A(2015, undefined, "CE mark (GBM); pancreatic and NSCLC CE marks 2024-26", "CE mark is not an EMA authorisation"), JP: A(2016, PMDA, "GBM"), CN: A(2020, NMPA, "GBM (Zai Lab)") },
   "foundationone-cdx": { US: A(2017, undefined, "FDA PMA companion diagnostic"), JP: A(2018, PMDA, "First CGP test approved in Japan"), EU: A(2019, undefined, "CE-IVD", "IVDR transition; CE marking is not an EMA approval") },

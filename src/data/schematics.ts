@@ -576,6 +576,7 @@ import { prometheusGapsSchematicAliases } from "./schematic-aliases/prometheus-g
 import { breastResidualSubclonesSchematicAliases } from "./schematic-aliases/breast-residual-subclones";
 import { machineSchematicAliases3 } from "./schematic-aliases/machines-wave3";
 import { devicesGapsSchematicAliases } from "./schematic-aliases/devices-gaps-2026-11";
+import { complementaryGapsSchematicAliases } from "./schematic-aliases/complementary-gaps-2026-11";
 
 export const SCHEMATIC_ALIAS: Record<string, string> = {
   "stride-dna-break-detection": "wes-wgs",
@@ -583,6 +584,10 @@ export const SCHEMATIC_ALIAS: Record<string, string> = {
   // Clonality testing is multiplex PCR or targeted sequencing of the immunoglobulin and T-cell receptor loci, so it
   // reads as the NGS-based residual disease schematic rather than needing a drawing of its own.
   "clonality-testing": "ngs-mrd-clonoseq",
+  // Dignity therapy and CALM are one-to-one talking therapies (src/data/palliative-navigation-fertility-gaps-2026-11.ts),
+  // so they share the psycho-oncology drawing.
+  "dignity-therapy": "psycho-oncology",
+  "calm-psychotherapy": "psycho-oncology",
   ...radiationSchematicAliases,
   ...modelSchematicAliases,
   ...machineSchematicAliases,
@@ -599,6 +604,7 @@ export const SCHEMATIC_ALIAS: Record<string, string> = {
   ...rejuvenationMeasurementSchematicAliases,
   ...precisionDosingSchematicAliases,
   ...prometheusGapsSchematicAliases,
+  ...complementaryGapsSchematicAliases,
   ...breastResidualSubclonesSchematicAliases,
   ...machineSchematicAliases3,
   ...devicesGapsSchematicAliases,

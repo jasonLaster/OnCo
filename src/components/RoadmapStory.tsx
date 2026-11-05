@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { prefersReducedMotion } from "@/lib/reading";
 import Link from "next/link";
 import { STATUS_LABEL, statusClass } from "@/lib/text";
 import { useAnimationBudget, useMotionSnapshot } from "@/lib/use-animation-budget";
@@ -42,7 +43,7 @@ export function RoadmapStory({ title, steps, src }: { title: string; steps: Stor
   const go = (i: number) => {
     const el = refs.current[i];
     if (!el) return;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = prefersReducedMotion();
     const top = el.getBoundingClientRect().top + window.scrollY - 120;
     window.scrollTo({ top, behavior: reduced ? "auto" : "smooth" });
   };

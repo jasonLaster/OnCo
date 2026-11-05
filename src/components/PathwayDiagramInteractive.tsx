@@ -113,7 +113,7 @@ export function PathwayDiagramInteractive({ view, large = false }: { view: Pathw
           <button type="button" onClick={() => setSelected(null)} className={`chip border ${!selected ? "bg-foreground text-background border-foreground" : "bg-card border-border hover:bg-foreground/5"}`}>None</button>
           {view.products.slice(0, 18).map((p) => (
             <button key={p.id} type="button" onClick={() => setSelected(p.id === selected ? null : p.id)} aria-pressed={p.id === selected}
-              className={`chip border ${p.id === selected ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`}>{p.name}</button>
+              className={`chip border ${p.id === selected ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`}>{p.name}</button>
           ))}
           {view.products.length > 18 && <span className="text-xs text-muted">+{view.products.length - 18} more via the Connected tab</span>}
         </div>

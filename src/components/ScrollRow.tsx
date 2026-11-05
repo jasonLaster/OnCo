@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { prefersReducedMotion } from "@/lib/reading";
 
 /**
  * A wide element (matrix, table, chord) scrolls sideways inside this box instead of widening the page
@@ -29,7 +30,7 @@ export function ScrollRow({ children, className = "", label = "Scroll sideways",
     return () => { el.removeEventListener("scroll", measure); ro.disconnect(); };
   }, []);
 
-  const by = (dir: 1 | -1) => { const el = box.current; if (!el) return; el.scrollBy({ left: dir * Math.max(120, el.clientWidth * 0.8), behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); };
+  const by = (dir: 1 | -1) => { const el = box.current; if (!el) return; el.scrollBy({ left: dir * Math.max(120, el.clientWidth * 0.8), behavior: prefersReducedMotion() ? "auto" : "smooth" }); };
   const mask = edge.left && edge.right ? "linear-gradient(to right, transparent, #000 2.5rem, #000 calc(100% - 2.5rem), transparent)"
     : edge.right ? "linear-gradient(to right, #000 calc(100% - 2.5rem), transparent)"
     : edge.left ? "linear-gradient(to right, transparent, #000 2.5rem)" : undefined;

@@ -39,7 +39,7 @@ export function TimelineChart({ columns }: { columns: YearColumn[] }) {
 
   return (
     <figure className="card p-4">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" role="img" aria-label={`Dated entries per year from ${columns[0].year} to ${columns[columns.length - 1].year}, stacked by kind of entry.`}>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" role="group" aria-label={`Dated entries per year from ${columns[0].year} to ${columns[columns.length - 1].year}, stacked by kind of entry.`}>
         {paths.map(({ band, d }) => d && <path key={band.id} d={d} className={band.className.replace("fill-", "stroke-")} strokeWidth={r1(barW)} strokeLinecap="butt" fill="none" />)}
         {decades.map(({ c, i }) => {
           const x = r1(i * step + step / 2);

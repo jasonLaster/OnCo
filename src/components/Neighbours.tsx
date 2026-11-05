@@ -28,7 +28,7 @@ export function Neighbours({ groups, exclude = [], similar, max, moreHref }: { g
           {order.flatMap((k) => {
             const items = groups.get(k)!;
             if (k === "drug") return productGroups(items as Drug[]).map(({ cls, drugs }) => (
-              <section key={`drug-${cls}`} aria-label={PRODUCT_CLASS_META[cls].group} className="card p-4 min-w-0 sm:col-span-2" data-product-class={cls}>
+              <section key={`drug-${cls}`} aria-label={`Connected ${PRODUCT_CLASS_META[cls].group.toLowerCase()}`} className="card p-4 min-w-0 sm:col-span-2" data-product-class={cls}>
                 {/* Products split by what they are: a blood test sat under "Drugs" on the page pairing it with
                     adjuvant treatment until the owner caught it, 30 October 2026 (src/lib/product-class.ts). */}
                 <h3 className="kicker mb-2.5">{cls === "medicine" ? <KindName kind="drug" form="plural" fallback={KIND_META.drug.plural} /> : <ProductClassName cls={cls} form="group" />}</h3>
@@ -36,7 +36,7 @@ export function Neighbours({ groups, exclude = [], similar, max, moreHref }: { g
               </section>
             ));
             return [(
-              <section key={k} aria-label={KIND_META[k].plural} className="card p-4 min-w-0">
+              <section key={k} aria-label={`Connected ${KIND_META[k].plural}`} className="card p-4 min-w-0">
                 {/* No count beside the heading: the rows are right there, and where the list is capped the
                     "and N more" link below already says how many are not shown. Owner, 2 October 2026. */}
                 <h3 className="kicker mb-2.5"><KindName kind={k} form="plural" fallback={KIND_META[k].plural} /></h3>

@@ -259,6 +259,9 @@
   .eg-sq { @apply h-[26px] w-[26px] rounded-sm; }
   .eg-hit { @apply flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent; }
   .eg-rh { @apply sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]; }
+  /* Tried and stopped: hatched as well as dark, so it is not told from Approved by colour alone (WCAG 1.4.1). Under
+     protanopia the two fills sit 5 CIEDE2000 units apart. */
+  .eg-stop { background-image: repeating-linear-gradient(135deg, transparent 0 3px, rgb(255 255 255 / 0.4) 3px 4.5px); }
   .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
 
   /* Reference pills (src/lib/text.ts refChipClass): one kind's colours in one short class rather than the eight
@@ -637,15 +640,63 @@ html[data-motion~="reduced"] .nav-progress[data-state="running"] { animation: na
 @keyframes skel-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
 html[data-motion~="reduced"] .skel { animation: none; }
 
-/* Reduced motion: no transitions, no animation, instant scroll. */
+/* Reduced motion: no transitions, no animation, instant scroll. The device setting applies unless the reader turned
+   the Aa menu's Reduce motion switch off (<html data-reduce-motion="off">); the switch on applies the same rules on any
+   device (src/lib/reading.ts). :where() keeps every selector at the specificity it had before the switch existed. */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
-  a.card:hover, .card-link:hover { transform: none; }
-  .garden-sway { animation: none !important; }
-  .mech-pulse { display: none; }
-  .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
-  .skel { animation: none !important; }
+  :where(html:not([data-reduce-motion=off])), :where(html:not([data-reduce-motion=off])) *, :where(html:not([data-reduce-motion=off])) *::before, :where(html:not([data-reduce-motion=off])) *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  :where(html:not([data-reduce-motion=off])) a.card:hover, :where(html:not([data-reduce-motion=off])) .card-link:hover { transform: none; }
+  :where(html:not([data-reduce-motion=off])) .garden-sway { animation: none !important; }
+  :where(html:not([data-reduce-motion=off])) .mech-pulse { display: none; }
+  :where(html:not([data-reduce-motion=off])) .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
+  :where(html:not([data-reduce-motion=off])) .skel { animation: none !important; }
 }
+:where(html[data-reduce-motion=on]), :where(html[data-reduce-motion=on]) *, :where(html[data-reduce-motion=on]) *::before, :where(html[data-reduce-motion=on]) *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+:where(html[data-reduce-motion=on]) a.card:hover, :where(html[data-reduce-motion=on]) .card-link:hover { transform: none; }
+:where(html[data-reduce-motion=on]) :is(.garden-sway, .skel) { animation: none !important; }
+:where(html[data-reduce-motion=on]) .mech-pulse { display: none; }
+:where(html[data-reduce-motion=on]) .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
+
+/* Reading preferences from the Aa menu (src/lib/reading.ts). None of these attributes is present for a reader who
+   has not chosen, so the default page is exactly as before.
+   Text size scales the root font, so everything sized in rem grows with it; the fixed pixel text sizes used for
+   small labels are restated in rem so they grow too. */
+html[data-text=larger] { font-size: 112.5%; --header-h: calc(3.5rem / 1.125); }
+html[data-text=largest] { font-size: 125%; --header-h: calc(3.5rem / 1.25); }
+/* The header row is tuned to the pixel to hold every control from 320 to 1263 px (see SiteHeader), so it keeps its
+   default size: zoom undoes the larger root inside it, and --header-h (above, and here for what the header itself
+   positions) stays 56 px so sticky table headers and the Aa panel still meet its lower edge. */
+html[data-text=larger] body > header { zoom: 0.888889; --header-h: 3.5rem; }
+html[data-text=largest] body > header { zoom: 0.8; --header-h: 3.5rem; }
+/* Zoom shrinks pixel sizes as well; the header's icons are drawn at pixel sizes, so they are zoomed back to them. */
+html[data-text=larger] body > header svg[width] { zoom: 1.125; }
+html[data-text=largest] body > header svg[width] { zoom: 1.25; }
+/* Rows and cards sized to fit a 320 px screen at the default size, made to reflow when the text is larger: a button's
+   label wraps inside it; with larger text or relaxed spacing a table's count and export buttons and other nested rows fold onto a second line, and a
+   grid cell, wrapping row's item or list item never widens its container past the screen (a chip inside truncates;
+   its full name is in the tooltip). Long words break rather than push the page sideways. */
+html:is([data-text],[data-spacing]) main { overflow-wrap: break-word; }
+html:is([data-text],[data-spacing]) main td { hyphens: auto; }
+html[data-text] .btn { max-width: 100%; height: auto; min-height: 2.5rem; padding-block: 0.375rem; white-space: normal; line-height: 1.2; text-align: center; }
+html:is([data-text],[data-spacing]) main div:has(> span[aria-live]), html:is([data-text],[data-spacing]) main .flex-wrap > .flex { flex-wrap: wrap; }
+html:is([data-text],[data-spacing]) main :is(.grid, .flex-wrap, .card) > *, html:is([data-text],[data-spacing]) main li, html:is([data-text],[data-spacing]) main .chip { min-width: 0; max-width: 100%; }
+html[data-text] .text-\[7px\] { font-size: 0.4375rem; }
+html[data-text] .text-\[8px\] { font-size: 0.5rem; }
+html[data-text] .text-\[9px\] { font-size: 0.5625rem; }
+html[data-text] .text-\[10px\] { font-size: 0.625rem; }
+html[data-text] .text-\[11px\] { font-size: 0.6875rem; }
+html[data-text] .text-\[12px\] { font-size: 0.75rem; }
+html[data-text] .text-\[13px\] { font-size: 0.8125rem; }
+html[data-text] .text-\[15px\] { font-size: 0.9375rem; }
+html[data-text] .text-\[17px\] { font-size: 1.0625rem; }
+/* Reading spacing, relaxed: WCAG 1.4.12 text spacing on running text (letter 0.12em, word 0.16em, 2em after a
+   paragraph) with the line height raised from 1.55 to 1.8, since the site's default already passes the 1.5 minimum.
+   Tables, grids, navigation, chips and controls keep their spacing, where it would only truncate or break a row. */
+html[data-spacing=relaxed] main :is(p, li, dd, dt, blockquote, figcaption):not(:is(table, nav, [role=table], [role=grid], .chip, .ctl, .btn) *) { line-height: 1.8; letter-spacing: 0.12em; word-spacing: 0.16em; }
+html[data-spacing=relaxed] main p:not(:last-child):not(:is(table, nav, [role=table], [role=grid]) *) { margin-block-end: 2em; }
+html[data-spacing=relaxed] main :is(.chip, .ctl, .btn, kbd, code) { letter-spacing: normal; word-spacing: normal; }
+/* Arabic is a joined script: letter spacing would pull its letters apart, so it keeps the word, line and paragraph spacing only. */
+html[data-spacing=relaxed] main :is(p, li, dd, dt, blockquote, figcaption):lang(ar) { letter-spacing: normal; }
 
 /* ------------------------------------------------------------------------------------------------
    Languages. The layer writes the site language to <html lang>, <html dir> and `data-lang`; TldrText sets `lang`

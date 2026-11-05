@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type CSSProperties, type KeyboardEvent, type MouseEvent as ReactMouseEvent, type PointerEvent as ReactPointerEvent } from "react";
 import Link from "next/link";
+import { READING_EVENT, prefersReducedMotion } from "@/lib/reading";
 import { useRouter } from "next/navigation";
 import { geoGraticule10, geoNaturalEarth1, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
@@ -22,7 +23,8 @@ const MIN_K = 1, MAX_K = 14;
 const HOME: View = { k: 1, x: 0, y: 0 };
 
 const REDUCED = "(prefers-reduced-motion: reduce)";
-const subscribeReduced = (cb: () => void) => { const mq = window.matchMedia(REDUCED); mq.addEventListener("change", cb); return () => mq.removeEventListener("change", cb); };
+/** The device setting or the Aa menu's Reduce motion switch (src/lib/reading.ts), whichever the reader set last wins. */
+const subscribeReduced = (cb: () => void) => { const mq = window.matchMedia(REDUCED); mq.addEventListener("change", cb); window.addEventListener(READING_EVENT, cb); return () => { mq.removeEventListener("change", cb); window.removeEventListener(READING_EVENT, cb); }; };
 
 const clampView = (v: View): View => {
   const k = Math.min(MAX_K, Math.max(MIN_K, v.k));
@@ -58,7 +60,7 @@ export function WorldMap({ points, maxWeight, ariaLabel = "World map", note, emp
   const [animate, setAnimate] = useState(false);
   const [active, setActive] = useState(false);
   const [dragging, setDragging] = useState(false);
-  const reduced = useSyncExternalStore(subscribeReduced, () => window.matchMedia(REDUCED).matches, () => false);
+  const reduced = useSyncExternalStore(subscribeReduced, prefersReducedMotion, () => false);
   const [hover, setHover] = useState<{ p: MapPoint; x: number; y: number; touch: boolean } | null>(null);
 
   // Live gesture state lives in refs so native listeners never see a stale closure.

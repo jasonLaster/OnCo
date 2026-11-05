@@ -419,12 +419,12 @@ export default async function StagePage({ params }: { params: Promise<{ stage: s
             {next ? (
               <Link href={next.route} rel="next" className="card p-4 flex items-center gap-3 justify-end text-end hover:border-accent/50 bg-accent-soft/40">
                 <span className="min-w-0"><span className="kicker block">Next · {next.number} →</span><span className="font-medium leading-snug block text-balance">{next.stage.title}</span></span>
-                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-white"><MechanicsGlyph id={next.stage.id} className="h-5 w-5" sprite /></span>
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent-solid text-accent-fg"><MechanicsGlyph id={next.stage.id} className="h-5 w-5" sprite /></span>
               </Link>
             ) : (
               <Link href="/resistance/" className="card p-4 flex items-center gap-3 justify-end text-end hover:border-accent/50 bg-accent-soft/40">
                 <span className="min-w-0"><span className="kicker block">Continue →</span><span className="font-medium leading-snug block">How tumours escape, class by class</span></span>
-                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-white"><MechanicsGlyph id="failure" className="h-5 w-5" sprite /></span>
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent-solid text-accent-fg"><MechanicsGlyph id="failure" className="h-5 w-5" sprite /></span>
               </Link>
             )}
           </div>

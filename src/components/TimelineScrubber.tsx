@@ -51,7 +51,7 @@ export function TimelineScrubber({ data }: { data: TimelineData }) {
         <div className="flex items-center gap-4">
           <button type="button" onClick={() => setPlaying((p) => !p)} className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-foreground/5">{playing ? "Pause" : "Play"}</button>
           <div className="text-3xl font-semibold tabular-nums w-20">{year}</div>
-          <input type="range" min={data.min} max={data.max} value={year} onChange={(e) => { setPlaying(false); setYear(Number(e.target.value)); }} className="flex-1 accent-[var(--accent)]" aria-label="Year" />
+          <input type="range" min={data.min} max={data.max} value={year} onChange={(e) => { setPlaying(false); setYear(Number(e.target.value)); }} className="flex-1 min-w-0 accent-[var(--accent)]" aria-label="Year" />
           <div className="hidden sm:flex gap-1">{[1998, 2011, 2017, 2022, 2026].map((y) => <button key={y} type="button" onClick={() => { setPlaying(false); setYear(y); }} className={`chip border ${year === y ? "bg-foreground text-background border-foreground" : "bg-card border-border hover:bg-foreground/5"}`}>{y}</button>)}</div>
         </div>
         <div className="relative mt-2 h-4 text-[10px] text-muted">{ticks.map((t) => <span key={t} className="absolute -translate-x-1/2" style={{ left: `${((t - data.min) / (data.max - data.min)) * 100}%` }}>{t}</span>)}</div>
@@ -62,7 +62,10 @@ export function TimelineScrubber({ data }: { data: TimelineData }) {
         </div>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-2 mt-8">
+      {/* grid-cols-1, not the implicit auto track: an auto track is as wide as its widest pill's full label, and a
+          long trial or paper name made the page 1,584 px wide on a 320 px phone. A 0-minimum track lets the pills
+          truncate, as they already did inside each half from lg. */}
+      <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 mt-8">
         <section>
           <h2 className="text-lg font-semibold mb-2">This year: {year}</h2>
           {newThisYear.length === 0 && historyThisYear.length === 0 && trialsThisYear.length === 0 && <p className="text-sm text-muted">No dated approvals, trial readouts, or history events recorded for {year}. Nearby: {nearby.slice(0, 3).map((h) => `${h.year} ${h.title}`).join("; ") || "none"}.</p>}
@@ -83,7 +86,7 @@ export function TimelineScrubber({ data }: { data: TimelineData }) {
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold mb-2">All products approved by {year} ({firstApprovals.length})</h2>
-        <div className="flex flex-wrap gap-1.5">{firstApprovals.sort((a, b) => a.year - b.year).map((a) => <Link key={a.drug} href={a.route} className={`chip border ${a.year === year ? "bg-accent text-white border-accent" : "bg-card border-border hover:bg-foreground/5"}`}>{a.drug} <span className="opacity-70 ml-1">{a.year}</span></Link>)}</div>
+        <div className="flex flex-wrap gap-1.5">{firstApprovals.sort((a, b) => a.year - b.year).map((a) => <Link key={a.drug} href={a.route} className={`chip border ${a.year === year ? "bg-accent-solid text-accent-fg border-accent-solid" : "bg-card border-border hover:bg-foreground/5"}`}>{a.drug} <span className="opacity-70 ml-1">{a.year}</span></Link>)}</div>
       </section>
     </div>
   );

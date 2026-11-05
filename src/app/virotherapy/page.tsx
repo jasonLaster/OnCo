@@ -11,12 +11,22 @@ import {
   caseEthics, caseFindings, caseLimits, caseProtocol, combination, failures, milestones, moves,
   openProblems, products, whySelective, type OvSource,
 } from "@/data/virotherapy";
+import "./virotherapy.css";
 
 export const metadata: Metadata = pageMeta({
   title: "Oncolytic virotherapy",
   description: "Why a virus kills a cancer cell and not its neighbour, the hundred-year history, every approved virus product with what its evidence actually shows, the engineering, the randomised failures, the combination question, and the 2024 case of a virologist who treated her own breast cancer.",
   path: "/virotherapy/",
 });
+
+/*
+ * The two timelines below (the history, the 2024 case's protocol) use short classes from ./virotherapy.css: .ov-step, a step
+ * on the rail whose dot is drawn by ::before rather than an empty aria-hidden span (the <ol> stays the positioned box);
+ * .ov-when, its date; .ov-what, its title; .ov-note, its detail. Each is exactly the utilities it replaced. Those
+ * strings repeated on every step, in the markup and again in the hydration payload, and in November 2026 the page sat
+ * 3,233 bytes over its page-weight ceiling (src/data/page-weight.json) after the shared table gained resize grips.
+ * They live in a file of their own, not globals.css, which every page loads and src/app/layout-imports.test.ts budgets.
+ */
 
 /** Source links under a block, separated by middots. */
 function Sources({ items, className = "" }: { items: OvSource[]; className?: string }) {
@@ -109,11 +119,10 @@ export default function VirotherapyPage() {
           <p className="text-sm text-muted mb-5 max-w-3xl">Tumours were seen shrinking during ordinary virus infections before anyone could grow a virus. The field was tried, abandoned, and restarted twice. Nothing in it is new except the ability to design the virus rather than hunt for one.</p>
           <ol className="relative border-l border-border ml-3 space-y-6">
             {milestones.map((m) => (
-              <li key={m.year + m.what} className="pl-5">
-                <span className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full bg-border" aria-hidden="true" />
-                <div className="text-xs font-medium text-muted tabular-nums">{m.year}</div>
-                <div className="font-medium mt-0.5">{m.what}</div>
-                <p className="text-sm text-muted mt-1 max-w-3xl">{m.detail}</p>
+              <li key={m.year + m.what} className="ov-step">
+                <div className="ov-when tabular-nums">{m.year}</div>
+                <div className="ov-what">{m.what}</div>
+                <p className="ov-note">{m.detail}</p>
                 <RefChips ids={m.refs} className="mt-2" />
                 <Sources items={m.sources} className="mt-1.5" />
               </li>
@@ -128,7 +137,7 @@ export default function VirotherapyPage() {
             Two distinctions decide how to read this table. The first is whether the virus replicates in the tumour at all: nadofaragene firadenovec and aglatimagene besadenovec are replication-defective vectors that deliver a gene, and are routinely counted as oncolytic virus successes. The second is whether the trial measured a response in the treated lesion or a survival benefit. Every replicating oncolytic virus in the table was approved on a response endpoint. The only randomised survival result belongs to a product that does not replicate.
           </p>
           <StaticTable rows={productRows} columns={PRODUCT_COLUMNS} noun="products" url  />
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-4 grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <div key={p.id} className="card p-3" id={`src-${p.id}`}>
                 <div className="text-sm font-medium">{p.name}</div>
@@ -151,7 +160,7 @@ export default function VirotherapyPage() {
         <section id="failures" className="mt-14 scroll-mt-20">
           <h2 className="text-xl font-semibold mb-1">Why it has not worked more widely</h2>
           <p className="text-sm text-muted mb-5 max-w-3xl">Five programmes, each tested at a scale that should have settled the question, and what each one taught. A field is best judged by what it did when it was given a fair test.</p>
-          <div className="grid gap-4 lg:grid-cols-2">
+          <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
             {failures.map((f) => (
               <div key={f.id} id={f.id} className="card p-5">
                 <div className="font-medium">{f.programme}</div>
@@ -205,11 +214,10 @@ export default function VirotherapyPage() {
           <h3 className="text-base font-semibold mt-7 mb-3">The protocol</h3>
           <ol className="relative border-l border-border ml-3 space-y-5">
             {caseProtocol.map((s) => (
-              <li key={s.when + s.what} className="pl-5">
-                <span className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full bg-border" aria-hidden="true" />
-                <div className="text-xs font-medium text-muted">{s.when}</div>
-                <div className="font-medium mt-0.5">{s.what}</div>
-                <p className="text-sm text-muted mt-1 max-w-3xl">{s.detail}</p>
+              <li key={s.when + s.what} className="ov-step">
+                <div className="ov-when">{s.when}</div>
+                <div className="ov-what">{s.what}</div>
+                <p className="ov-note">{s.detail}</p>
               </li>
             ))}
           </ol>

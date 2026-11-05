@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { SearchResult } from "minisearch";
-import { askLexical, loadSearch, searchRanked } from "@/lib/search-client";
+import { askLexical, loadQuickSearch, loadSearch, onFullSearch, searchRanked } from "@/lib/search-client";
+import { useT } from "@/lib/i18n/ui";
 import { MoleculeSlot } from "./MoleculeSlot";
 import { PRODUCT_CLASS_META } from "@/lib/product-class";
 import { KindIcon } from "./KindIcon";
@@ -125,25 +126,35 @@ export function SearchResults() {
   const searchReady = useRef(false);
   const urlReady = useRef(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  /** False while the results come from the names-only first stage (src/lib/search-client.ts). */
+  const [full, setFull] = useState(true);
+  const { t } = useT();
 
-  const run = useCallback(async (raw: string) => {
+  /** `upgrade`: the full index has just landed, so the results on screen stay until the re-ranked ones replace them. */
+  const run = useCallback(async (raw: string, upgrade = false) => {
     const request = ++latest.current;
     const value = normaliseQuery(raw);
     // A repeated query is a new attempt too: retry the answer and invalidate earlier A-to-B-to-A work.
     setAttempt(request);
-    setQuery(value);
-    setAsk(null);
-    setRows(null);
-    setSuggestions([]);
+    if (!upgrade) {
+      setQuery(value);
+      setAsk(null);
+      setRows(null);
+      setSuggestions([]);
+    }
     if (!value) { setPhase("idle"); return; }
     const terms = searchTerms(value) || value;
     if (!searchReady.current) setPhase("loading");
-    const search = await loadSearch().catch(() => null);
+    const search = await loadQuickSearch().catch(() => null);
     if (latest.current !== request) return;
     if (!search) { setPhase("error"); return; }
     const { ms, byId } = search;
     searchReady.current = true;
+    setFull(search.full);
     const lexical: SearchResult[] = searchRanked(ms, terms, TOP);
+    // The first stage holds names only, so finding nothing in it is not "Nothing matched": a summary may still match.
+    // The page stays on "Loading search…" until the full index re-runs the query (the effect below).
+    if (!search.full && lexical.length === 0) { setRows(null); setPhase("loading"); return; }
     const lexTerms = new Map(lexical.map((h) => [String(h.id), Object.keys(h.match ?? {})]));
     const build = (index: SemanticIndex | null): Row[] => {
       const concept = index ? semanticSearch(index, terms, TOP) : [];
@@ -158,6 +169,9 @@ export function SearchResults() {
       setPhase("fused");
       setSuggestions(out.length < FEW_HITS ? usefulSuggestions(value, ms.autoSuggest(terms, { fuzzy: 0.3, prefix: true })) : []);
     };
+    // On the first stage the word matches are shown alone: the concept index waits for the re-run on the full index,
+    // so it does not share the connection with search.json.
+    if (!search.full) { setRows(build(null)); setPhase("lexical"); return; }
     if (semanticResolved !== undefined) { finish(semanticResolved); return; }
     // First paint straight from the word index; the concept index is fused in when it lands.
     setRows(build(null));
@@ -197,6 +211,13 @@ export function SearchResults() {
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => run(value), DEBOUNCE_MS);
   };
+  // When search.json lands behind the first stage, the query on screen is searched again on it and re-ranked; if it
+  // fails while the page is waiting on it, the page says so.
+  useEffect(() => onFullSearch(
+    () => { if (query) void run(query, true); },
+    () => setPhase((p) => (p === "loading" ? "error" : p)),
+  ), [query, run]);
+
   useEffect(() => {
     const pending = latest, debounce = timer;
     return () => { pending.current++; if (debounce.current) clearTimeout(debounce.current); };
@@ -262,12 +283,12 @@ export function SearchResults() {
         {query && <Link href={askHref(query)} className="rounded-lg border border-border bg-card px-4 py-2 text-sm hover:bg-foreground/5">Ask OnCo this</Link>}
       </form>
 
-      {phase === "loading" && <><p className="text-sm text-muted" role="status" aria-live="polite">Loading the search index…</p><Skeleton /></>}
-      {phase === "error" && <p className="text-sm text-muted" role="alert">Search is unavailable. Press Search to try again.</p>}
+      {phase === "loading" && <><p className="text-sm text-muted" role="status" aria-live="polite">{t("search.loading")}</p><Skeleton /></>}
+      {phase === "error" && <p className="text-sm text-muted" role="alert">{t("search.unavailable")} <button type="button" onClick={() => submit(q || query)} className="underline hover:text-foreground">{t("search.retry")}</button></p>}
 
       {rows && (
         <div className="flex flex-wrap items-center gap-2 mb-3 text-sm">
-          <p className="text-muted mr-1" role="status" aria-live="polite">{shown.length === rows.length ? `${rows.length} ${rows.length === 1 ? "result" : "results"}` : `${shown.length} of ${rows.length} results`} for <q>{query}</q>{phase === "lexical" ? ", concept search still loading" : ""}</p>
+          <p className="text-muted mr-1" role="status" aria-live="polite">{shown.length === rows.length ? `${rows.length} ${rows.length === 1 ? "result" : "results"}` : `${shown.length} of ${rows.length} results`} for <q>{query}</q>{phase === "lexical" && full ? ", concept search still loading" : ""}</p>
           {rows.length > 0 && (
             <ul className="flex flex-wrap gap-1.5" aria-label="Filter by kind">
               <li><button type="button" onClick={() => setKind(null)} aria-pressed={kind === null} className={`chip border ${kind === null ? "bg-foreground text-background border-foreground" : "bg-card border-border hover:bg-foreground/5"}`}>All <span className="tabular-nums opacity-70">{rows.length}</span></button></li>
@@ -277,9 +298,10 @@ export function SearchResults() {
             </ul>
           )}
           {mine && rows.length > 0 && (
-            <button type="button" onClick={() => setForMine((v) => !v)} aria-pressed={forMine} title={forMine ? "Show results for every cancer" : `Only results linked to ${mine.name}`} className={`chip border ${forMine ? "bg-accent text-accent-fg border-accent" : "border-accent/40 bg-accent-soft text-accent hover:border-accent"}`}><CancerIcon cancerId={mine.id} className="h-3 w-3" />for {shortCancerName(mine.name)} <span className="tabular-nums opacity-70">{mineCount}</span></button>
+            <button type="button" onClick={() => setForMine((v) => !v)} aria-pressed={forMine} title={forMine ? "Show results for every cancer" : `Only results linked to ${mine.name}`} className={`chip border ${forMine ? "bg-accent-solid text-accent-fg border-accent-solid" : "border-accent/40 bg-accent-soft text-accent hover:border-accent"}`}><CancerIcon cancerId={mine.id} className="h-3 w-3" />for {shortCancerName(mine.name)} <span className="tabular-nums opacity-70">{mineCount}</span></button>
           )}
           {semanticReady === false && <span className="text-xs text-muted">Concept search is unavailable; showing word matches only.</span>}
+          {!full && <span className="text-xs text-muted" role="status">{t("search.namesOnly")}</span>}
         </div>
       )}
 

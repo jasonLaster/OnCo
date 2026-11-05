@@ -202,13 +202,39 @@ function splitAliases(aka: string): string[] {
 
 export type Rankable = { kind: string; name: string; aka?: string | string[]; score: number };
 
-/** Re-scores MiniSearch hits by kind tier and name match and sorts them, best first; ties keep MiniSearch's order. */
+/**
+ * Re-scores MiniSearch hits by kind tier and name match and sorts them, best first; ties keep MiniSearch's order.
+ *
+ * Then one rule the multipliers alone cannot keep: a record whose name is exactly the query comes above every record
+ * whose name only contains it (starts with it, holds its words, or has it as an alias prefix). Found by the search
+ * health audit on 4 November 2026: the journal Cancer came sixth for "cancer", behind CancerSEEK, CancerFind and
+ * CancerGuard, because their summaries say "cancer" many times and their prefix boost (up to 3.2 as the query covers
+ * more of the name) was worth more than the exact name's 3; and "Renal cell carcinoma" put four of its own subtypes
+ * above the cancer of that name. No multiplier fixes that, since the text score can differ fourfold, so an exact hit
+ * is lifted to LEAD_MARGIN times the best inexact one instead: far enough that the dropdown, which lets a top hit lead
+ * whatever its kind only by that margin (groupByKind), shows it first as well as ranking it first.
+ *
+ * One exception, and it is the kind tier's reason to exist: an inexact cancer is not pushed down by an exact record of
+ * another kind. A reader typing "breast cancer" means the cancer, "Breast cancer (all types)", and not the review
+ * paper whose whole title is "Breast cancer" (see ALLOWED_AMBIGUOUS in scripts/search-health-lib.ts).
+ */
 export function rankHits<T extends Rankable>(hits: readonly T[], query: string): T[] {
-  return hits
-    .map((h, i) => { const b = nameBoost(query, h.name, h.aka); return { h: { ...h, score: h.score * tierWeightFor(h.kind, b) * b }, i }; })
-    .sort((a, b) => b.h.score - a.h.score || a.i - b.i)
-    .map((x) => x.h);
+  const scored = hits.map((h, i) => { const b = nameBoost(query, h.name, h.aka); return { h: { ...h, score: h.score * tierWeightFor(h.kind, b) * b }, i, exact: b === NAME_BOOST.exact && normaliseName(h.name) === normaliseName(query) }; });
+  if (scored.some((x) => x.exact)) {
+    let best = 0, bestNotCancer = 0;
+    for (const x of scored) if (!x.exact) { best = Math.max(best, x.h.score); if (tierOf(x.h.kind) !== 1) bestNotCancer = Math.max(bestNotCancer, x.h.score); }
+    for (const x of scored) {
+      if (!x.exact) continue;
+      const floor = tierOf(x.h.kind) === 1 ? best : bestNotCancer;
+      // The tiny second term keeps the lifted exact hits in their own order among themselves.
+      if (x.h.score < floor * LEAD_MARGIN) x.h.score = floor * LEAD_MARGIN + x.h.score * EXACT_ORDER;
+    }
+  }
+  return scored.sort((a, b) => b.h.score - a.h.score || a.i - b.i).map((x) => x.h);
 }
+
+/** What of its own score a lifted exact hit keeps, to order it among the others: enough to order them, too little to matter elsewhere. */
+const EXACT_ORDER = 1e-6;
 
 /** Rows of one kind for the dropdown, in ranked order. */
 export type KindGroup<T> = { kind: string; tier: Tier; items: T[] };

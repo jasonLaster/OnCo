@@ -63,9 +63,11 @@ describe("root layout static imports", () => {
   const why = (pattern: RegExp) => reached.filter((f) => pattern.test(f)).map((f) => `${f} <- ${[...files.get(join(ROOT, f))!.importers].join(", ")}`).join("\n");
 
   it("does not reach the graph, the data files or the structure index", () => {
-    // src/lib/region.tsx takes REGION_META (seven rows) from the regional approvals file; the approvals table itself is
-    // unused there and the bundler drops it (checked in the exported chunks), so that one file is allowed.
-    const data = reached.filter((f) => f.startsWith("src/data/") && f !== "src/data/regional-approvals.ts");
+    // No exceptions. src/lib/region.tsx used to take REGION_META from src/data/regional-approvals.ts, which put the whole
+    // approvals table (94 KB of source, growing with every data round) in this count; the seven regulator rows now live
+    // in src/lib/region-meta.ts and the approvals file re-exports them. A layout-level component that needs something
+    // from a data file takes it from a small module of its own, never from the data file.
+    const data = reached.filter((f) => f.startsWith("src/data/"));
     expect(data, why(/^src\/data\//)).toEqual([]);
     expect(reached, why(/graph\.ts$/)).not.toContain("src/lib/graph.ts");
     expect(reached.filter((f) => f.startsWith("public/")), why(/^public\//)).toEqual([]);
@@ -86,7 +88,17 @@ describe("root layout static imports", () => {
   it("stays inside a source budget", () => {
     const total = [...files.values()].reduce((a, f) => a + f.size, 0);
     const biggest = [...files].sort((a, b) => b[1].size - a[1].size).slice(0, 8).map(([f, i]) => `${i.size} ${rel(f)}`).join("\n");
-    // 3,105 KB before the split (Sept 2026), about 320 KB after; the budget leaves room for ordinary growth.
+    // 3,105 KB before the split (Sept 2026), about 320 KB after. November 2026: 492,673 B had crept past this budget,
+    // 93.8 KB of it the regional approvals table and 58.8 KB globals.css; the table left the chain and one-page rules
+    // moved beside their pages, leaving about 388 KB, so the budget leaves room for ordinary growth of the chrome.
     expect(total, `reachable source ${total} B; largest:\n${biggest}`).toBeLessThan(480 * 1024);
+  });
+
+  it("reaches no single large module", () => {
+    // A file this size in the shared chrome is almost always a table or a dataset that one page needs, pulled in for a
+    // label or a constant (as the 94 KB approvals table was, for seven regulator names). The largest legitimate files
+    // today are globals.css and src/lib/nav.ts, both well under it. Split the small part out rather than raise this.
+    const large = [...files].filter(([, i]) => i.size > 64 * 1024).map(([f, i]) => `${i.size} ${rel(f)} <- ${[...i.importers].join(", ")}`);
+    expect(large).toEqual([]);
   });
 });

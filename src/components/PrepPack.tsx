@@ -137,7 +137,7 @@ export function PrepPack({ data }: { data: PrepData }) {
               <div className="flex gap-2">
                 <input value={draft} onChange={(e) => setDraft(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); addCustom(); } }} placeholder="Type a question and press Enter" aria-label="Add your own question"
                   className="flex-1 rounded-lg border border-border bg-card px-3 py-1.5 text-sm outline-none focus:ring-2 focus:ring-accent/40" />
-                <button type="button" onClick={addCustom} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">Add</button>
+                <button type="button" onClick={addCustom} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">Add</button>
               </div>
               {state.custom.length > 0 && (
                 <ul className="mt-3 space-y-1.5 text-sm">

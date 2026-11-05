@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { searchHref } from "@/lib/search-query";
 import type { SearchDoc } from "@/lib/search-index";
 import { STATUS_LABEL, statusClass } from "@/lib/text";
-import { loadSearch, searchRanked } from "@/lib/search-client";
+import { loadQuickSearch, onFullSearch, searchRanked } from "@/lib/search-client";
+import { useT } from "@/lib/i18n/ui";
 import { flattenGroups, groupByKind } from "@/lib/search-rank";
 import { KindGroupHeader } from "./KindGroupHeader";
 
@@ -31,20 +32,31 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
   const request = useRef(0);
   const router = useRouter();
 
-  const runSearch = async (value: string) => {
+  const { t } = useT();
+  /** The query the dropdown is showing, so the full index can re-run it when it lands behind the first stage. */
+  const shown = useRef("");
+
+  /** `upgrade`: the full index has just arrived, so the rows on screen stay until the new ones replace them. */
+  const runSearch = async (value: string, upgrade = false) => {
     const current = ++request.current;
-    setActive(-1);
-    setResults([]);
-    setState("loading");
+    shown.current = value;
+    if (!upgrade) {
+      setActive(-1);
+      setResults([]);
+      setState("loading");
+    }
     try {
-      const { ms, byId } = await loadSearch();
+      const { ms, byId, full } = await loadQuickSearch();
       if (request.current !== current) return;
-      setState("ready");
-      if (!value.trim()) return;
+      if (!value.trim()) { setState("ready"); return; }
       // Every hit comes back so the grouping can pick the top rows per kind; the dropdown itself shows VISIBLE rows.
       const lexical = searchRanked(ms, value) as SearchDoc[];
       setResults(lexical);
-      if (lexical.length >= FALLBACK_BELOW) return;
+      if (upgrade) setActive(-1);
+      // The names-only first stage (src/lib/search-client.ts) cannot say "No matches": a word in a summary may still
+      // match, so an empty answer keeps "Loading search…" until the full index re-runs the query.
+      setState(full || lexical.length ? "ready" : "loading");
+      if (!full || lexical.length >= FALLBACK_BELOW) return;
       // Too few exact matches: add concept matches (paraphrases, linked names), labelled as such. The concept index
       // is optional: a failed chunk or request must not discard successful word matches.
       try {
@@ -60,10 +72,18 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
     }
   };
 
+  // When search.json lands behind the names-only first stage, the query on screen is searched again on it. runSearch
+  // reads only refs and state setters, so the subscription made on mount stays correct.
+  useEffect(() => onFullSearch(
+    () => { if (shown.current.trim()) void runSearch(shown.current, true); },
+    // An empty first-stage answer was waiting on the full index, which failed: say so, with the retry button.
+    () => setState((s) => (s === "loading" ? "error" : s)),
+  ), []);
+
   useEffect(() => {
     const pending = request;
     const onDoc = (e: MouseEvent) => {
-      if (box.current && !box.current.contains(e.target as Node)) { pending.current++; setOpen(false); setActive(-1); }
+      if (box.current && !box.current.contains(e.target as Node)) { pending.current++; shown.current = ""; setOpen(false); setActive(-1); }
     };
     document.addEventListener("mousedown", onDoc);
     return () => { pending.current++; document.removeEventListener("mousedown", onDoc); };
@@ -72,7 +92,7 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
   const placeholder = useMemo(() => "Search TROP2, Enhertu, PSMA PET, TNBC, Gustave Roussy…", []);
   // Grouped by kind in tier order (cancers, then treatments and trials, and so on), a few rows per kind.
   const groups = useMemo(() => groupByKind(results, VISIBLE), [results]);
-  const close = () => { request.current++; setOpen(false); setQ(""); setResults([]); setState("idle"); setActive(-1); };
+  const close = () => { request.current++; shown.current = ""; setOpen(false); setQ(""); setResults([]); setState("idle"); setActive(-1); };
   const rows = useMemo(() => flattenGroups(groups), [groups]);
 
   // Keep the highlighted row in view when arrowing past the bottom of the dropdown.
@@ -82,7 +102,7 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
   }, [active]);
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Escape") { request.current++; setOpen(false); setActive(-1); return; }
+    if (e.key === "Escape") { request.current++; shown.current = ""; setOpen(false); setActive(-1); return; }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       if (!rows.length) {
         // Closing invalidates pending work. Reopen a retained query without relying on a hidden completion.
@@ -130,12 +150,12 @@ export function SearchBox({ large = false, autoFocus = false }: { large?: boolea
       />
       {open && q.trim() && (
         <div className="absolute z-50 mt-1 w-full card shadow-xl max-h-96 overflow-auto">
-          {state === "loading" && <div role="status" className="p-3 text-sm text-muted">Loading index…</div>}
+          {state === "loading" && <div role="status" className="p-3 text-sm text-muted">{t("search.loading")}</div>}
           {state === "error" && <div className="p-3 text-sm">
-            <p role="status">Search is unavailable. Try again.</p>
-            <button type="button" onClick={() => { input.current?.focus(); void runSearch(q); }} className="mt-2 underline rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Retry search</button>
+            <p role="status">{t("search.unavailable")}</p>
+            <button type="button" onClick={() => { input.current?.focus(); void runSearch(q); }} className="mt-2 underline rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">{t("search.retry")}</button>
           </div>}
-          {state === "ready" && results.length === 0 && <div role="status" className="p-3 text-sm text-muted">No matches.</div>}
+          {state === "ready" && results.length === 0 && <div role="status" className="p-3 text-sm text-muted">{t("table.noMatches")}</div>}
           <ul id="searchbox-list" ref={list} role="listbox" aria-label="Results" aria-busy={state === "loading"}>
             {groups.map((g) => [
               <KindGroupHeader key={`h-${g.kind}`} kind={g.kind} />,

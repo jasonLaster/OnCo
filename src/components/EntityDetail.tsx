@@ -184,7 +184,13 @@ export function EntityDetail({ e }: { e: Entity }) {
         titleAttrs={nameAttrs(e.kind)}
         ledeNode={<TldrText id={e.id} tldr={e.tldr} simple={e.simple} />}
         logo={e.kind === "cancer" ? <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-accent/30 bg-accent-soft text-accent"><CancerIcon cancerId={e.id} className="h-10 w-10" /></span> : e.kind === "section" ? <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-accent/30 bg-accent-soft text-accent"><FrontIcon id={e.id} className="h-9 w-9" /></span> : "website" in e ? <Logo id={e.id} website={e.website} name={e.name} size={64} /> : "url" in e && (e.kind === "collection" || e.kind === "journal") ? <Logo id={e.id} website={e.url} name={e.name} size={64} /> : undefined}
-        under={<div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+        /* The status chip and the also-called line share one row, aligned on the baseline of their first line of
+           text, and the row owns the space under the lede. Until 4 November 2026 the row centred its items and the
+           aka line carried its own 12 px top margin, so the names sat 5 px below the chip on /trials/trak-er/, a
+           wrapped aka list pulled the chip down to its middle on /drugs/pegfilgrastim/, and a chip with no names
+           under it touched the lede on every trial and drug without an aka. `empty:hidden` drops the row, and its
+           margin, on a record with neither. Checked across one record of every kind at 1440 and 390 px. */
+        under={<div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-2 empty:hidden">
           {e.kind === "drug" ? <ApprovalChip drugId={e.id} status={e.status} approvedYear={approvedYearOf(e)} /> : <StatusChip status={e.status} />}
           <AkaLine e={e} />
         </div>}
@@ -281,7 +287,7 @@ function QuickLinks({ e }: { e: Entity }) {
   return (
     <nav className="card p-4 text-sm" aria-label="Connected records" data-quick-links>
       <div className="kicker mb-1.5"><TL text="Connected" /></div>
-      <ul className="space-y-0.5">{order.flatMap((k) => k === "drug"
+      <ul className="space-y-1">{order.flatMap((k) => k === "drug"
         // Products split as Connected splits them (src/lib/product-class.ts), so a test is not counted among the drugs.
         ? productGroups(groups.get(k)! as Drug[]).map(({ cls, drugs }) => (
           <li key={`drug-${cls}`}><a className="flex justify-between gap-3 hover:underline" href="#connected"><span className="first-letter:uppercase">{cls === "medicine" ? <KindName kind="drug" form="plural" fallback={KIND_META.drug.plural} /> : <ProductClassName cls={cls} form="group" />}</span><span className="tabular-nums text-muted">{drugs.length.toLocaleString("en-GB")}</span></a></li>
@@ -732,7 +738,7 @@ function TechDependencies({ e }: { e: Extract<Entity, { kind: "technology" }> })
   const chip = (t: Entity) => <Link key={t.id} href={routeFor(t)} className="chip border bg-card border-border hover:bg-foreground/5 text-sm">{t.name}</Link>;
   const mapHref = `/dependencies/?root=${e.id}`;
   return (
-    <Block title="Dependencies" aside={<Link className="text-sm text-accent hover:underline whitespace-nowrap" href={mapHref}>Open the dependency map →</Link>}>
+    <Block title="Dependencies" aside={<Link className="text-sm text-accent hover:underline text-end" href={mapHref}>Open the dependency map →</Link>}>
       <div className="grid *:min-w-0 gap-4 sm:grid-cols-2">
         <div>
           <div className="kicker mb-1.5"><TL text="Depends on" /> <span className="text-muted font-normal">({up.length})</span></div>

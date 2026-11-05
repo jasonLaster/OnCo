@@ -97,6 +97,10 @@ export const EN = {
   "header.stars": "{n} GitHub stars",
   "header.starsTitle": "{n} GitHub stars. Star the repo to help others find it.",
   "header.skip": "Skip to content",
+  "search.loading": "Loading search…",
+  "search.unavailable": "Search could not load.",
+  "search.retry": "Try again",
+  "search.namesOnly": "Names matched so far; full search still loading…",
 
   // ---- country (approvals) toggle ----
   "region.global": "Global",
@@ -125,10 +129,21 @@ export const EN = {
   "theme.aria": "Theme: {current}. Switch to {next}",
 
   // ---- reading level and language ----
-  "layer.aria": "Reading level and site language",
+  "layer.aria": "Reading, language and display settings",
   "layer.readingLevel": "Reading level",
   "layer.siteLanguage": "Site language",
   "layer.blurb": "Menus, headings, table labels and the TL;DR on each page are translated where a translation exists. TL;DR translations are machine-assisted and unreviewed; where one is missing, the English TL;DR is shown with an EN mark. Detailed summaries, evidence tables and sources stay in English, and your browser can translate them.",
+  "reading.textSize": "Text size",
+  "reading.text.default": "Default",
+  "reading.text.larger": "Larger",
+  "reading.text.largest": "Largest",
+  "reading.spacing": "Reading spacing",
+  "reading.spacing.default": "Default",
+  "reading.spacing.relaxed": "Relaxed",
+  "reading.spacing.blurb": "Relaxed adds space between lines, letters, words and paragraphs in running text. Tables and labels keep their spacing.",
+  "reading.motion": "Reduce motion",
+  "reading.motion.device": "Follows your device setting until you change it.",
+  "reading.motion.useDevice": "Use device setting",
   "level.technical": "Technical",
   "level.plain": "Plain",
   "level.simple": "Simple",

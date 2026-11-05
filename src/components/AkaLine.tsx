@@ -11,7 +11,8 @@ import { TL } from "./T";
  * `text-xs text-muted text-end max-w-xs` in the header's right slot: the smallest type on the page, grey,
  * right-aligned, wrapped into a narrow column beside the title, as one comma-separated run. It is now a
  * full-width line under the lede at reading size, the names separated by middots so a name that contains a comma
- * still reads as one name.
+ * still reads as one name. It carries no top margin of its own: it sits in the record header's row beside the
+ * status chip, which owns the space under the lede and aligns the two on their first baseline (EntityDetail).
  *
  * What the line shows is capped by count and by length: at most six names, and at most 160 characters of them.
  * 3,551 of the 24,612 names in the corpus are over 30 characters and 1,569 over 40 (the longest is 139, a subtype
@@ -45,7 +46,7 @@ export function AkaLine({ e }: { e: { kind: Kind; aka: readonly string[] } }) {
   const shown = e.aka.slice(0, n);
   const folded = e.aka.slice(n);
   return (
-    <div {...EN_TEXT} className="mt-3 max-w-3xl text-[15px] leading-relaxed" data-aka>
+    <div {...EN_TEXT} className="max-w-3xl text-[15px] leading-relaxed" data-aka>
       <span className="text-muted"><TL text="Also called" />: </span>
       <Names names={shown} kind={e.kind} />
       {folded.length > 0 && (

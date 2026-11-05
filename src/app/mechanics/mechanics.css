@@ -1,0 +1,27 @@
+/* The mechanics atlas journey and stage pages, moved from globals.css unchanged. Imported by src/app/mechanics/page.tsx
+   and src/app/mechanics/[stage]/page.tsx alone, so it stays out of the stylesheet and the source budget every page
+   carries (src/app/layout-imports.test.ts). The reduced-motion rules for the pulse come after the pulse itself, as they
+   did in globals.css, so they win at equal specificity.
+   @reference brings in the theme for @apply without emitting globals.css a second time. */
+@reference "../globals.css";
+
+/* Mechanics atlas journey (src/components/MechanicsJourney.tsx): a spine through the stage glyphs with a slow pulse
+   that travels its length. CSS only; `motion-css` pauses it off screen and reduced motion stops it below. */
+.mech-spine { height: 1px; background: linear-gradient(to right, transparent, var(--border-strong) 3%, var(--border-strong) 97%, transparent); }
+.mech-pulse { left: 0; height: 5px; width: 5px; margin-top: -2px; border-radius: 9999px; background: var(--accent-solid); box-shadow: 0 0 0 3px var(--accent-soft); animation: mech-travel 28s linear infinite; }
+@keyframes mech-travel { from { left: 1.5rem; } to { left: calc(100% - 1.5rem); } }
+/* The strip scrolls sideways when the 56 stages are wider than the screen; the right edge fades to say so. */
+.mech-journey { mask-image: linear-gradient(to right, #000 calc(100% - 3rem), transparent); }
+/* Stage pages: a pill never widens its column; a long name truncates with an ellipsis (the chip carries the full text as its title or tooltip). */
+.mech-content .chip, .mech-content .chip + span, .mech-content li, .mech-content span.inline-block { min-width: 0; max-width: 100%; }
+.mech-node:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+/* The vertical rail on small screens: stage cards hang off a line with their glyph on it. */
+.mech-rail { position: relative; }
+.mech-rail::before { content: ""; position: absolute; left: 1.25rem; top: 1.5rem; bottom: 1.5rem; width: 1px; background: var(--border-strong); }
+@media (min-width: 640px) { .mech-rail::before { display: none; } }
+
+/* Reduced motion (the device setting unless the Aa menu switch is off, or the switch on): no travelling pulse. */
+@media (prefers-reduced-motion: reduce) {
+  :where(html:not([data-reduce-motion=off])) .mech-pulse { display: none; }
+}
+:where(html[data-reduce-motion=on]) .mech-pulse { display: none; }

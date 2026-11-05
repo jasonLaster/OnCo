@@ -10,6 +10,7 @@ import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { Tip } from "@/components/Tip";
 import { FrontIcon } from "@/components/FrontIcon";
 import { THEORY_HUB_ID, THEORY_ICONS, THEORY_IDS, theoryStatus } from "@/data/theories-wave";
+import "./mechanics.css";
 
 export const metadata: Metadata = {
   title: "Mechanics of cancer",

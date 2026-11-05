@@ -1,0 +1,19 @@
+/* The year scrubber's repeated furniture (src/components/TimelineScrubber.tsx), as short classes built from exactly the
+   utilities the elements used to carry. At 2026 the scrubber renders every product approved to date, the derived
+   standard of care for every cancer and every dated event of the year, so a 55-character class string on one pill was
+   paid 650 times; the same look in a short class took about 90 KB off the page's markup. Imported by
+   src/app/timeline/page.tsx alone, so it stays out of the stylesheet every other page carries. @reference brings in
+   the theme for @apply without emitting globals.css a second time. Status chips use `.tone-*` from globals.css. */
+@reference "../globals.css";
+
+/* A pill: unselected (a product, a year button) and the product approved in the chosen year. */
+.tl-o { @apply border bg-card border-border hover:bg-foreground/5; }
+.tl-a { @apply border bg-accent-solid text-accent-fg border-accent-solid; }
+/* The year inside a product pill. */
+.tl-y { @apply opacity-70 ml-1; }
+/* A record's name as a link, and a cancer's name as a quieter link. */
+.tl-n { @apply font-medium hover:underline; }
+.tl-m { @apply text-muted hover:underline; }
+/* A reference pill (a product or technology the event names), and the row that holds them. */
+.tl-c { @apply bg-foreground/5 hover:underline; }
+.tl-r { @apply mt-1 flex flex-wrap gap-1; }

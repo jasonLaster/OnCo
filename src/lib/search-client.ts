@@ -3,32 +3,98 @@ import type { SearchResult } from "minisearch";
 import type { SearchDoc } from "@/lib/search-index";
 import { NAME_BOOST, nameBoost, rankHits, recordWeight, SEARCH_INDEX_OPTIONS, TYPED_SEARCH_OPTIONS } from "@/lib/search-rank";
 import { contentWords } from "@/lib/semantic";
+import { fromNameDoc, type SearchNameDoc } from "@/lib/search-names";
 
 /**
  * The browser-side search index: the exported /api/v1/search.json (every entity and page, one document each) inside a
  * MiniSearch instance, built once per page load and shared by the header palette, the search box, the search page,
  * Ask OnCo, the 404 helper and the WebMCP tools.
  *
+ * It arrives in two stages. search.json is 9.5 MB (2.1 MB over the wire), and until it had loaded every list was empty,
+ * which a reader cannot tell from "not found": the owner searched for a record that exists on 4 November 2026 and
+ * thought it was missing. So the lists that answer as someone types (palette, search box, search page, 404 helper)
+ * call `loadQuickSearch`, which builds a first index from /api/v1/search-names.json (names, aliases and the fields the
+ * ranking reads, src/lib/search-names.ts) and then fetches search.json behind it; `onFullSearch` tells them when to
+ * re-run the query on the full index. What needs the summaries (Ask OnCo, the WebMCP tool) calls `loadSearch`, which
+ * is the full index only. A list says "Loading search…" until an index is ready, and never "no matches" from the
+ * first stage, since a word in a summary can still match.
+ *
  * MiniSearch itself is loaded with the first search rather than imported statically: the palette is in the root
  * layout, so anything it imports statically ships with every page, and the library is only needed once a reader types.
  */
-export type SearchIndex = { ms: MiniSearch<SearchDoc>; docs: SearchDoc[]; byId: Map<string, SearchDoc> };
+export type SearchIndex = { ms: MiniSearch<SearchDoc>; docs: SearchDoc[]; byId: Map<string, SearchDoc>; /** False for the names-only first stage. */ full: boolean };
 
 let cache: Promise<SearchIndex> | null = null;
+let quick: Promise<SearchIndex> | null = null;
+let fullIndex: SearchIndex | null = null;
+let firstStage: SearchIndex | null = null;
+let library: Promise<typeof import("minisearch")> | null = null;
+type Listener = { loaded: (index: SearchIndex) => void; failed?: () => void };
+const listeners = new Set<Listener>();
 
+/** Fetches a file of documents and the MiniSearch library side by side, then indexes them. */
+function fetchIndex<T>(url: string, toDocs: (raw: T) => SearchDoc[], full: boolean): Promise<SearchIndex> {
+  // The library request starts with the first file and is shared by both stages.
+  library ??= import("minisearch").catch((error) => { library = null; throw error; });
+  return Promise.all([getJson<T>(url), library]).then(([raw, { default: MiniSearch }]) => {
+    const docs = toDocs(raw);
+    const ms = new MiniSearch<SearchDoc>(SEARCH_INDEX_OPTIONS);
+    ms.addAll(docs);
+    return { ms, docs, byId: new Map(docs.map((d) => [d.id, d])), full };
+  });
+}
+
+function getJson<T>(url: string): Promise<T> {
+  // Through a resolved promise, so a fetch that throws rather than rejecting still lands in the caller's catch.
+  return Promise.resolve().then(() => fetch(url)).then((r) => { if (!r.ok) throw new Error("Search index unavailable"); return r.json() as Promise<T>; });
+}
+
+/** The full index (search.json). Everything that reads summaries or tags waits for this. */
 export function loadSearch(): Promise<SearchIndex> {
   if (!cache) {
-    const docs = fetch("/api/v1/search.json").then((r) => { if (!r.ok) throw new Error("Search index unavailable"); return r.json() as Promise<SearchDoc[]>; });
-    cache = Promise.all([docs, import("minisearch")])
-      .then(([docs, { default: MiniSearch }]) => {
-        const ms = new MiniSearch<SearchDoc>(SEARCH_INDEX_OPTIONS);
-        ms.addAll(docs);
-        return { ms, docs, byId: new Map(docs.map((d) => [d.id, d])) };
-      })
-      .catch((error) => { cache = null; throw error; });
+    cache = fetchIndex<SearchDoc[]>("/api/v1/search.json", (docs) => docs, true)
+      .then((index) => { fullIndex = index; quick = null; firstStage = null; for (const l of listeners) l.loaded(index); return index; })
+      .catch((error) => { cache = null; for (const l of listeners) l.failed?.(); throw error; });
   }
   return cache;
 }
+
+/**
+ * The first index that can answer: the full one when it is already here, otherwise the names-only first stage, with
+ * the full index fetched behind it (not alongside, so the small file has the connection to itself). If the names file
+ * fails, this waits for the full index instead; it rejects only when neither can be had.
+ */
+export function loadQuickSearch(): Promise<SearchIndex> {
+  if (fullIndex) return Promise.resolve(fullIndex);
+  if (cache && !quick) return cache;
+  if (!quick) {
+    const attempt: Promise<SearchIndex> = fetchIndex<SearchNameDoc[]>("/api/v1/search-names.json", (docs) => docs.map(fromNameDoc), false)
+      .then((index) => { firstStage = index; fetchFull(); return fullIndex ?? index; })
+      .catch(() => loadSearch())
+      .catch((error) => { if (quick === attempt) quick = null; throw error; });
+    quick = attempt;
+  } else if (firstStage && !cache) fetchFull(); // The full index failed earlier: this call retries it.
+  return quick;
+}
+
+/** The full index fetched behind the first stage; a failure leaves the first stage answering. */
+function fetchFull(): void {
+  void loadSearch().catch(() => { /* The next loadQuickSearch retries. */ });
+}
+
+/**
+ * Calls `loaded` when the full index finishes loading, and `failed` when a load of it fails (a list holding an empty
+ * first-stage answer then says search is unavailable instead of loading forever). A caller already holding the full
+ * index (`index.full`) has nothing to wait for. Returns the unsubscribe.
+ */
+export function onFullSearch(loaded: (index: SearchIndex) => void, failed?: () => void): () => void {
+  const l: Listener = { loaded, failed };
+  listeners.add(l);
+  return () => { listeners.delete(l); };
+}
+
+/** The full index when it has loaded, for a list deciding whether an empty result is final. */
+export const fullSearchReady = (): boolean => fullIndex !== null;
 
 /** A hit as the UI reads it: MiniSearch's match data plus the stored document fields. */
 export type RankedHit = SearchResult & SearchDoc;

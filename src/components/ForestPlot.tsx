@@ -91,7 +91,7 @@ export function ForestPlot({ rows }: { rows: ForestRow[] }) {
       {shown.length === 0 ? <p className="text-sm text-muted">No trial in the corpus reports a hazard ratio for this combination. Clear a filter.</p> : (
         <div className="card p-3 overflow-x-auto">
           <ChartExport title={`Hazard ratios: ${subtitle}`} source="Trial publications recorded per outcome in the OnCo corpus" filename={`forest-${cancer ?? "all"}-${family ?? "all"}`} align="start">
-            <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto min-w-[640px]" role="img" aria-label={`Forest plot of ${shown.length} hazard ratios, ${subtitle}`}>
+            <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto min-w-[640px]" role="group" aria-label={`Forest plot of ${shown.length} hazard ratios, ${subtitle}`}>
               {/* header */}
               <text x={0} y={16} fontSize={11} fontWeight={600} fill="currentColor" fillOpacity={0.8}>Trial · endpoint</text>
               <text x={(x0 + x1) / 2} y={16} textAnchor="middle" fontSize={11} fill="currentColor" fillOpacity={0.6}>◀ favours experimental arm · favours control ▶</text>

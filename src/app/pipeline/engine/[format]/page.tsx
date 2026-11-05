@@ -13,6 +13,7 @@ import { proposedCells, PROPOSAL_STATUS, scoreParts } from "@/lib/combination-id
 import { Tip } from "@/components/Tip";
 import { graph } from "@/lib/graph";
 import { routeFor } from "@/lib/schema";
+import "./engine.css";
 
 export function generateStaticParams() {
   return FORMATS.map((f) => ({ format: f.id }));

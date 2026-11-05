@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { isValidElement, type ReactElement, type ReactNode } from "react";
 import type { SearchDoc } from "@/lib/search-index";
 import { buildSemanticIndex, type SemanticIndex } from "@/lib/semantic";
+import { toNameDoc } from "@/lib/search-names";
 
 // A small hook host exercises the actual component's event handlers and JSX without adding a DOM dependency.
 // Browser focus/layout are verified separately; loader, ranking, grouping and promise handling run unchanged.
@@ -27,6 +28,11 @@ vi.mock("next/navigation", () => ({ useRouter: () => ({ push: host.push }) }));
 vi.mock("next/link", () => ({ default: "a" }));
 vi.mock("./KindGroupHeader", () => ({ KindGroupHeader: "group-header" }));
 vi.mock("@/lib/semantic-client", () => ({ loadSemantic: host.semantic }));
+// The component reads its loading and failure lines from the chrome dictionary; English here, without the layer store.
+vi.mock("@/lib/i18n/ui", async (original) => {
+  const actual = await original<typeof import("@/lib/i18n/ui")>();
+  return { ...actual, useT: () => ({ t: (key: Parameters<typeof actual.t>[0], vars?: Parameters<typeof actual.t>[2]) => actual.t(key, "en", vars) }) };
+});
 
 type Props = { children?: ReactNode; [key: string]: unknown };
 type Node = ReactElement<Props>;
@@ -46,6 +52,8 @@ const deferred = <T,>() => {
 let Component: typeof import("./SearchBox").SearchBox;
 let tree: ReactNode;
 let requests: ReturnType<typeof deferred<Response>>[];
+/** Pending requests for search-names.json, or null when the fixture serves none (404). */
+let names: ReturnType<typeof deferred<Response>>[] | null;
 const draw = () => {
   host.cursor = 0;
   tree = Component({});
@@ -66,15 +74,23 @@ const focus = () => event(input(), "onFocus");
 const type = (value: string) => event(input(), "onChange", { target: { value } });
 const key = (key: string) => event(input(), "onKeyDown", { key, preventDefault() {} });
 const settle = async () => { for (let i = 0; i < 3; i++) await new Promise((resolve) => setImmediate(resolve)); draw(); };
-const succeed = async (values = docs) => { requests.at(-1)!.resolve(new Response(JSON.stringify(values))); await settle(); };
-const fail = async () => { requests.at(-1)!.reject(new Error("Offline fixture")); await settle(); };
+/** The newest search.json request. The client asks for search-names.json first and falls back a few ticks later, so wait for it. */
+const latest = async () => { for (let i = 0; i < 10; i++) await new Promise((resolve) => setImmediate(resolve)); return requests.at(-1)!; };
+// Waits for the index itself, as SearchResults.test.ts does: building it can take longer than a few ticks on a cold module.
+const succeed = async (values = docs) => { (await latest()).resolve(new Response(JSON.stringify(values))); await (await import("@/lib/search-client")).loadSearch(); await settle(); };
+const fail = async () => { (await latest()).reject(new Error("Offline fixture")); await settle(); };
 
 beforeEach(async () => {
   vi.resetModules();
   host.slots = []; host.cursor = 0; host.effects = [];
   host.push.mockReset(); host.semantic.mockReset().mockResolvedValue(null);
   requests = [];
-  vi.stubGlobal("fetch", vi.fn(() => { const request = deferred<Response>(); requests.push(request); return request.promise; }));
+  names = null;
+  // No first-stage file by default, so these cases run on search.json alone as before; the two-stage cases set one.
+  vi.stubGlobal("fetch", vi.fn((url: string) => {
+    if (url === "/api/v1/search-names.json") { if (!names) return Promise.resolve(new Response("Not found", { status: 404 })); const request = deferred<Response>(); names.push(request); return request.promise; }
+    const request = deferred<Response>(); requests.push(request); return request.promise;
+  }));
   vi.stubGlobal("document", { addEventListener() {}, removeEventListener() {} });
   Component = (await import("./SearchBox")).SearchBox;
   draw();
@@ -84,14 +100,14 @@ afterEach(() => vi.unstubAllGlobals());
 describe("search box recovery", () => {
   it("shows an index failure and retries the retained query", async () => {
     focus(); type("alpha"); await fail();
-    expect(text()).toContain("Search is unavailable");
-    expect(text()).not.toMatch(/Loading index|No matches/);
-    const retry = elements().find((node) => node.type === "button" && nodes(node).includes("Retry search"))!;
+    expect(text()).toContain("Search could not load");
+    expect(text()).not.toMatch(/Loading search|No matches/);
+    const retry = elements().find((node) => node.type === "button" && nodes(node).includes("Try again"))!;
     expect(retry).toBeDefined();
     event(retry, "onClick"); await succeed();
     expect(input().props.value).toBe("alpha");
     expect(options()).toHaveLength(3);
-    expect(text()).not.toMatch(/Loading index|No matches|unavailable/);
+    expect(text()).not.toMatch(/Loading search|No matches|unavailable/);
     expect(requests).toHaveLength(2);
   });
 
@@ -99,7 +115,7 @@ describe("search box recovery", () => {
     focus(); type("alpha"); await fail();
     key("Escape"); focus(); await succeed();
     expect(options()).toHaveLength(3);
-    expect(text()).not.toMatch(/Loading index|No matches|unavailable/);
+    expect(text()).not.toMatch(/Loading search|No matches|unavailable/);
   });
 
   it("recomputes a retained query when ArrowDown reopens a cancelled request", async () => {
@@ -117,7 +133,7 @@ describe("search box recovery", () => {
     focus(); type("alp"); await fail();
     type("alpha"); await succeed();
     expect(options()).toHaveLength(3);
-    expect(text()).not.toMatch(/Loading index|No matches|unavailable/);
+    expect(text()).not.toMatch(/Loading search|No matches|unavailable/);
   });
 
   it("clears stale rows before accepting Enter for a new query", async () => {
@@ -172,6 +188,45 @@ describe("search box recovery", () => {
     host.semantic.mockRejectedValue(new Error("Concept module unavailable"));
     focus(); type("alpha"); await succeed([docs[0]]);
     expect(options()).toHaveLength(1);
-    expect(text()).not.toMatch(/Loading index|No matches|unavailable/);
+    expect(text()).not.toMatch(/Loading search|No matches|unavailable/);
+  });
+});
+
+describe("search box on the two-stage index (src/lib/search-client.ts)", () => {
+  const tick = () => new Promise((resolve) => setImmediate(resolve));
+  /** Serves search-names.json (the documents without TL;DR and tags) and waits for the first-stage answer. */
+  const firstStage = async () => {
+    for (let i = 0; i < 10 && !names!.length; i++) await tick();
+    names!.at(-1)!.resolve(new Response(JSON.stringify(docs.map(toNameDoc))));
+    for (let i = 0; i < 10 && !requests.length; i++) await tick();
+    await settle();
+  };
+  beforeEach(() => { names = []; });
+
+  it("answers a name from the first stage, then re-runs it on the full index", async () => {
+    focus(); type("alpha"); await firstStage();
+    expect(options()).toHaveLength(3);
+    expect(text()).not.toContain("Synthetic search fixture");
+    expect(requests, "search.json is fetched behind the first stage, not alongside it").toHaveLength(1);
+    await succeed();
+    expect(options()).toHaveLength(3);
+    expect(text()).toContain("Synthetic search fixture");
+  });
+
+  it("says Loading search, never No matches, while only a summary could match", async () => {
+    focus(); type("synthetic"); await firstStage();
+    expect(options()).toHaveLength(0);
+    expect(text()).toContain("Loading search");
+    expect(text()).not.toMatch(/No matches/);
+    await succeed();
+    expect(options().length).toBeGreaterThan(0);
+    expect(text()).not.toMatch(/Loading search|No matches/);
+  });
+
+  it("says search could not load when the full index fails behind an empty first-stage answer", async () => {
+    focus(); type("synthetic"); await firstStage();
+    await fail();
+    expect(text()).toContain("Search could not load");
+    expect(text()).not.toMatch(/Loading search|No matches/);
   });
 });

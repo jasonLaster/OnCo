@@ -1,0 +1,16 @@
+/* The appointment sheet, moved from globals.css unchanged. Imported by src/app/prep/[id]/page.tsx alone, so it stays
+   out of the stylesheet and the source budget every page carries (src/app/layout-imports.test.ts).
+   @reference brings in the theme for @apply without emitting globals.css a second time. */
+@reference "../../globals.css";
+
+/* Appointment sheet (/prep/[id]/): one page, sections kept whole, ruled lines where a field is empty. */
+.prep-lines { background: repeating-linear-gradient(to bottom, transparent 0, transparent calc(1.5rem - 1px), var(--color-border, #ccc) calc(1.5rem - 1px), var(--color-border, #ccc) 1.5rem); }
+@media print {
+  .prep-sheet { font-size: 10pt; }
+  .prep-sheet .prep-part { break-inside: avoid; margin-top: 0.6rem; }
+  .prep-sheet h1 { font-size: 16pt; }
+  .prep-sheet h2 { font-size: 11pt; margin-top: 0; }
+  .prep-sheet .prep-lines { background: repeating-linear-gradient(to bottom, transparent 0, transparent calc(1.5rem - 1px), #999 calc(1.5rem - 1px), #999 1.5rem); }
+  .prep-sheet input, .prep-sheet textarea { display: none !important; }
+  .prep-sheet a[href^="http"]::after { content: none; }
+}

@@ -39,6 +39,11 @@ vi.mock("@/lib/use-my-cancer", () => ({ useMyCancer: () => ({}), pickMyCancer: (
 vi.mock("@/lib/use-my-cancer-list", () => ({ useMyCancerList: () => [] }));
 vi.mock("@/lib/semantic-client", () => ({ loadSemantic: host.semantic }));
 vi.mock("@/lib/ask-pipeline", () => ({ answerQuestion: host.answer }));
+// The component reads its loading and failure lines from the chrome dictionary; English here, without the layer store.
+vi.mock("@/lib/i18n/ui", async (original) => {
+  const actual = await original<typeof import("@/lib/i18n/ui")>();
+  return { ...actual, useT: () => ({ t: (key: Parameters<typeof actual.t>[0], vars?: Parameters<typeof actual.t>[2]) => actual.t(key, "en", vars) }) };
+});
 
 type Props = { children?: ReactNode; [key: string]: unknown };
 type Node = ReactElement<Props>;
@@ -56,6 +61,8 @@ let Component: typeof import("./SearchResults").SearchResults;
 let tree: ReactNode;
 let requests: ReturnType<typeof deferred<Response>>[];
 let indexStatus: number;
+/** Pending requests for search-names.json, or null when the fixture serves none (404). */
+let names: ReturnType<typeof deferred<Response>>[] | null;
 const draw = () => {
   do {
     host.dirty = false; host.cursor = 0; tree = Component();
@@ -79,12 +86,14 @@ const submit = (value: string) => {
 };
 const retry = () => event(elements().find((node) => node.type === "form")!, "onSubmit", { preventDefault() {} });
 const settle = async () => { for (let i = 0; i < 6; i++) { await new Promise((resolve) => setImmediate(resolve)); if (host.dirty) draw(); } };
+/** The newest search.json request. The client asks for search-names.json first and falls back a few ticks later, so wait for it. */
+const latest = async () => { for (let i = 0; i < 10; i++) await new Promise((resolve) => setImmediate(resolve)); return requests.at(-1)!; };
 const succeed = async () => {
-  requests.at(-1)!.resolve(new Response(JSON.stringify(docs)));
+  (await latest()).resolve(new Response(JSON.stringify(docs)));
   await (await import("@/lib/search-client")).loadSearch();
   await settle();
 };
-const fail = async () => { requests.at(-1)!.resolve(new Response("Offline fixture", { status: 503 })); await settle(); };
+const fail = async () => { (await latest()).resolve(new Response("Offline fixture", { status: 503 })); await settle(); };
 const unmount = () => { for (const slot of host.slots) (slot as { cleanup?: () => void } | undefined)?.cleanup?.(); };
 
 beforeEach(async () => {
@@ -93,8 +102,10 @@ beforeEach(async () => {
   host.semantic.mockReset().mockResolvedValue(null);
   const actual = await vi.importActual<typeof import("@/lib/ask-pipeline")>("@/lib/ask-pipeline");
   host.answer.mockReset().mockImplementation(actual.answerQuestion);
-  requests = []; indexStatus = 200;
+  requests = []; indexStatus = 200; names = null;
   vi.stubGlobal("fetch", vi.fn((url: string) => {
+    // No first-stage file by default, so these cases run on search.json alone as before; the two-stage cases set one.
+    if (url === "/api/v1/search-names.json") { if (!names) return Promise.resolve(new Response("Not found", { status: 404 })); const request = deferred<Response>(); names.push(request); return request.promise; }
     if (url === "/api/v1/search.json") { const request = deferred<Response>(); requests.push(request); return request.promise; }
     if (url === "/api/v1/ask-index.json") return Promise.resolve(new Response(JSON.stringify({ version: 1, kinds: ["term"], rows: docs.map((d) => [d.id, 0, d.name, []]), pairs: [] }), { status: indexStatus }));
     const doc = docs.find((d) => url === `/api/v1/entities/${d.id}.json`);
@@ -112,10 +123,10 @@ afterEach(() => { unmount(); vi.unstubAllGlobals(); });
 describe("search results recovery", () => {
   it("ends a failed lexical load and retries the unchanged question and Ask preview", async () => {
     submit("What is alpha 1?"); await fail();
-    expect(text()).toContain("Search is unavailable");
-    expect(text()).not.toContain("Loading the search index");
+    expect(text()).toContain("Search could not load");
+    expect(text()).not.toContain("Loading search");
     retry(); await succeed();
-    expect(text()).not.toMatch(/Search is unavailable|Loading the search index/);
+    expect(text()).not.toMatch(/Search could not load|Loading search/);
     expect(askText()).toContain(docs[0].tldr);
     expect(askText()).not.toContain("Reading the records");
     expect(requests).toHaveLength(2);
@@ -127,7 +138,7 @@ describe("search results recovery", () => {
     event(filter, "onClick"); retry(); await settle();
     expect(elements().find((node) => node.type === "button" && node.props.title === "Show every kind")?.props["aria-pressed"]).toBe(true);
     expect(resultIds()).toHaveLength(3);
-    expect(text()).not.toMatch(/Search is unavailable|Loading the search index/);
+    expect(text()).not.toMatch(/Search could not load|Loading search/);
   });
 
   it("restarts Ask when the same question recovers after an index failure", async () => {
@@ -172,7 +183,7 @@ describe("search results recovery", () => {
     submit("What is alpha 1?"); submit("");
     if (outcome === "success") await succeed(); else await fail();
     expect(input().props.value).toBe("");
-    expect(text()).not.toMatch(/Search is unavailable|Loading the search index|Reading the records/);
+    expect(text()).not.toMatch(/Search could not load|Loading search|Reading the records/);
     expect(resultIds()).toHaveLength(0);
   });
 

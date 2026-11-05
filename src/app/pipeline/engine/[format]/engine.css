@@ -1,0 +1,21 @@
+/* The engine pages' heat grid, headers and pills, moved from globals.css unchanged. Imported by
+   src/app/pipeline/engine/[format]/page.tsx alone, so it stays out of the stylesheet and the source budget every page
+   carries (src/app/layout-imports.test.ts). Kept in the components layer, after .chip, so utilities on the same element
+   still win and the border colour still beats .chip's transparent border. .eg-stop stays in globals.css because the
+   engine index and /modalities/<format>/ draw it in their legends too.
+   @reference brings in the theme for @apply without emitting globals.css a second time. */
+@reference "../../../globals.css";
+
+@layer components {
+  /* Engine pages (/pipeline/engine/<format>/): the same utilities as before in short classes, because the heat grid
+     repeats them on every square (705 untried squares on the small-molecule page) and the Not placed and evidence
+     pills on every item. Each class is exactly the utilities it replaced; nothing about the look changes.
+     .chip-pick: a pill that fills with the accent on hover. .chip-ev: a pill that rings on hover.
+     .eg-sq: a grid square. .eg-hit: a tried square's number and focus ring. .eg-rh / .eg-ch: row and column headers. */
+  .chip-pick { @apply border border-border bg-card hover:bg-accent-soft hover:text-accent hover:border-accent; }
+  .chip-ev { @apply border border-border bg-card hover:ring-2 hover:ring-accent/30; }
+  .eg-sq { @apply h-[26px] w-[26px] rounded-sm; }
+  .eg-hit { @apply flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent; }
+  .eg-rh { @apply sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]; }
+  .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
+}

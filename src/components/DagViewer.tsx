@@ -174,7 +174,7 @@ export function DagViewer({ data }: { data: DagViewData }) {
       <ChooseView name="dependency-map" pane={cv.pane} onPane={(p) => { if (p === "choose") closePanel(); else cv.setPane(p); }} className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]"
         chooseLabel="Map" viewLabel="Panel" viewHint={panel ? shorten(panel.name) : undefined} choose={
         <div className="card overflow-auto max-h-[72vh] relative" style={{ scrollbarGutter: "stable" }}>
-          <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`Dependency map, ${layers.length} layers`} className="block font-sans" style={{ minWidth: width }}>
+          <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} role="group" aria-label={`Dependency map, ${layers.length} layers`} className="block font-sans" style={{ minWidth: width }}>
             <defs>
               <marker id="dag-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0.8 7 4 0 7.2" fill="none" stroke="context-stroke" strokeWidth="1.2" strokeLinejoin="round" /></marker>
             </defs>

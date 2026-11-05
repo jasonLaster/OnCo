@@ -59,7 +59,11 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // AACI, Children's Oncology Group, National Cancer Grid, Japan's health ministry, UICC). Each is an institution page
   // that should name the people who lead or work there, the kind this gauge asks about, so the denominator grows and
   // the score falls, which is the true reading.
-  { id: "institution-people", total: 1033, label: "Institutions with people" },
+  // 1,033 to 1,330 on 4 November 2026: the census fill rounds (hospices, helplines, registries, biobanks, payers) and
+  // the country deep dives of waves 3 and 4 added the registries, ministries, insurers, regulators, assessment bodies
+  // and cancer centres each country page rests on. Each is an institution page that should name the people who lead
+  // it, the kind this gauge asks about, so the denominator grows and the score falls.
+  { id: "institution-people", total: 1330, label: "Institutions with people" },
   { id: "people-papers", total: 1567, label: "People with papers, or in a role that produces none" },
   // 45 to 55 on 4 November 2026: the rejuvenation front's agenda bottlenecks and, last, the residual disease bottleneck
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this

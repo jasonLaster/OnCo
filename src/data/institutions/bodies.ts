@@ -1,7 +1,7 @@
 import type { InstitutionInput } from "@/lib/schema";
 
 const asOf = "2026-09-09";
-type I = Omit<InstitutionInput, "kind" | "asOf">;
+type I = Omit<InstitutionInput, "kind" | "asOf"> & { asOf?: string };
 const b = (x: I): InstitutionInput => ({ kind: "institution", asOf, ...x });
 
 /**
@@ -33,11 +33,11 @@ export const institutionsBodies: InstitutionInput[] = [
   // ---------------------------------------------------------------------------------------
   // Funders and charities
   // ---------------------------------------------------------------------------------------
-  b({ id: "fondation-arc", name: "Fondation ARC pour la recherche sur le cancer", aka: ["ARC", "Fondation ARC"], institutionType: "consortium", city: "Villejuif", country: "FR", lat: 48.792, lng: 2.365, website: "https://www.fondation-arc.org",
+  b({ id: "fondation-arc", asOf: "2026-11-04", name: "Fondation ARC pour la recherche sur le cancer", aka: ["ARC", "Fondation ARC", "Prix Léopold Griffuel", "Prix Fondation ARC Léopold Griffuel", "Léopold Griffuel Prize"], institutionType: "consortium", city: "Villejuif", country: "FR", lat: 48.792, lng: 2.365, website: "https://www.fondation-arc.org",
     tldr: "France's largest charitable foundation devoted entirely to cancer research, funding laboratory and clinical projects across the country.",
-    summary: "Founded in 1962 and recognised as a public-utility foundation, Fondation ARC funds cancer research in France through competitive calls: young investigator fellowships, programme grants, translational and clinical research and international collaborations such as the SIGN'IT and PAIR programmes with the Institut National du Cancer. It is based in Villejuif beside Gustave Roussy and publishes patient information on prevention and treatment. ARC has supported early work in tumour immunology, precision oncology and paediatric cancer across French centres including Gustave Roussy, Institut Curie and the UNICANCER network.",
-    programs: ["Programme grants and young investigator fellowships", "SIGN'IT and PAIR programmes (with INCa)", "Patient information"],
-    links: [{ label: "Fondation ARC", url: "https://www.fondation-arc.org" }],
+    summary: "Founded in 1962 and recognised as a public-utility foundation, Fondation ARC funds cancer research in France through competitive calls: young investigator fellowships, programme grants, translational and clinical research and international collaborations such as the SIGN'IT and PAIR programmes with the Institut National du Cancer. It is based in Villejuif beside Gustave Roussy and publishes patient information on prevention and treatment. ARC has supported early work in tumour immunology, precision oncology and paediatric cancer across French centres including Gustave Roussy, Institut Curie and the UNICANCER network.\n\nIt gives the Prix Fondation ARC Léopold Griffuel, funded by the bequest of Léopold and Alice Griffuel and awarded for more than fifty years: a prize for fundamental research and a prize for translational and clinical research, each worth 200,000 euros. The foundation counts 67 laureates from about ten countries since the prizes began. The 54th prizes, on 23 April 2026, went to Andre Nussenzweig for work on genome integrity and DNA repair, and jointly to Marcus Conrad and Raphaël Rodriguez for work on ferroptosis. Since 2019 it has also given the Grand Prix Oberling-Haguenau Fondation ARC, worth 150,000 euros, with a thesis prize added in 2023.",
+    programs: ["Programme grants and young investigator fellowships", "SIGN'IT and PAIR programmes (with INCa)", "Patient information", "Prix Fondation ARC Léopold Griffuel (fundamental, and translational and clinical research)", "Grand Prix and Prix de thèse Oberling-Haguenau Fondation ARC"],
+    links: [{ label: "Fondation ARC", url: "https://www.fondation-arc.org" }, { label: "Fondation ARC: Prix Léopold Griffuel et Oberling-Haguenau 2026", url: "https://www.fondation-arc.org/actualites/prix-leopold-griffuel-et-oberling-haguenau/" }],
     institutions: ["gustave-roussy", "institut-curie", "ligue-contre-le-cancer"], companies: ["unicancer"], sections: ["drug-discovery", "prevention"], bottlenecks: ["b-funding-allocation"], people: ["dominique-bazy"] }),
 
   b({ id: "ligue-contre-le-cancer", name: "Ligue nationale contre le cancer", aka: ["La Ligue", "Ligue contre le cancer", "French League Against Cancer"], institutionType: "consortium", city: "Paris", country: "FR", lat: 48.857, lng: 2.352, website: "https://www.ligue-cancer.net",

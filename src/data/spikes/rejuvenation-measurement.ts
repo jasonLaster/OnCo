@@ -267,7 +267,8 @@ const specific: TechnologyInput[] = [
     technologies: ["lymphoedema-decongestive-therapy", "lymphoedema-surgery-and-early-detection", "rejuv-measure-patient-reported-outcomes", "rejuv-measure-minimally-important-difference"],
     terms: ["quality-of-life", "late-effects"], bottlenecks: ["b-survivorship", "b-toxicity-qol"],
     related: ["rejuv-measure-breast-q", "rejuv-access-rehabilitation-referral"],
-    links: [WEDIN_2020, SHAH_2024],
+    notes: ["Bioimpedance and tissue-fluid devices cleared by the FDA under product code OBH (extracellular fluid monitor for limb lymphoedema): ImpediMed's L-Dex U400 (K100811, 4 November 2011), SOZO (K180126, 16 April 2018) and SOZO Pro (K230530, 4 May 2023), whose L-Dex score 'is only indicated for patients who will have or who have had lymph nodes, from the axillary and/or pelvic regions, either removed, damaged or irradiated', and Delfin Technologies' MoistureMeterD Compact and LymphScanner (K220557, 27 May 2022). Read from openFDA and the SOZO 510(k) summary on 4 November 2026."],
+    links: [WEDIN_2020, SHAH_2024, { label: "FDA 510(k) K180126: ImpediMed SOZO (16 April 2018)", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K180126" }, { label: "FDA 510(k) K230530: SOZO Pro (4 May 2023)", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230530" }, { label: "FDA 510(k) K100811: ImpediMed L-Dex U400 (4 November 2011)", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K100811" }, { label: "FDA 510(k) K220557: Delfin MoistureMeterD Compact and LymphScanner (27 May 2022)", url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K220557" }],
   }),
 
   tech({

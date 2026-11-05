@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore, type RefObject } from "react";
+import { READING_EVENT, READING_KEY, readReading, reducedMotion } from "@/lib/reading";
 
 /**
  * One animation budget for the whole site (roadmap row 127: animation performance on Android and slower phones).
@@ -10,7 +11,8 @@ import { useEffect, useState, useSyncExternalStore, type RefObject } from "react
  * run right now. The answer combines:
  *
  *   - visibility: the element is on screen (IntersectionObserver) and the tab is shown (document.visibilityState);
- *   - the reader's motion preference: prefers-reduced-motion means a static frame, always;
+ *   - the reader's motion preference: prefers-reduced-motion means a static frame, always, unless the reader set the
+ *     Aa menu's Reduce motion switch (src/lib/reading.ts), which wins over the device setting either way;
  *   - the device: `navigator.connection.saveData` or four or fewer cores is a low budget, so the first frame is drawn
  *     still and the animation starts on a tap (or a hover on a pointer device);
  *   - a concurrency cap per pool: at most `max` thumbnails of one kind spin at once (default six); the others stay
@@ -144,10 +146,11 @@ export function ensureMotionEnv(): Env {
   if (env) return env;
   if (typeof window === "undefined") return { reduced: false, low: false, hidden: false, settled: false, subs: new Set() };
   const nav = navigator as Navigator & NavigatorLike & { connection?: (EventTarget & { saveData?: boolean }) | null };
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
   const reducedData = window.matchMedia("(prefers-reduced-data: reduce)");
+  const reduced = () => reducedMotion(readReading().motion, reducedMotionQuery.matches);
   const e: Env = {
-    reduced: reducedMotion.matches,
+    reduced: reduced(),
     low: isLowBudget(nav, reducedData.matches, readOverride()),
     hidden: document.visibilityState === "hidden",
     settled: false,
@@ -157,7 +160,10 @@ export function ensureMotionEnv(): Env {
   const settle = () => { if (!e.settled) { e.settled = true; emit(); } };
   const whenIdle = () => { if (typeof requestIdleCallback === "function") requestIdleCallback(settle, { timeout: 4000 }); else window.setTimeout(settle, 1500); };
   if (document.readyState === "complete") whenIdle(); else window.addEventListener("load", whenIdle, { once: true });
-  reducedMotion.addEventListener("change", () => { e.reduced = reducedMotion.matches; emit(); });
+  const rereduce = () => { e.reduced = reduced(); emit(); };
+  reducedMotionQuery.addEventListener("change", rereduce);
+  window.addEventListener(READING_EVENT, rereduce);
+  window.addEventListener("storage", (ev) => { if (ev.key === READING_KEY) rereduce(); });
   const relow = () => { e.low = isLowBudget(nav, reducedData.matches, readOverride()); emit(); };
   reducedData.addEventListener("change", relow);
   nav.connection?.addEventListener?.("change", relow);

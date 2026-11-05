@@ -73,7 +73,8 @@ const KB = 1024;
 const args = process.argv.slice(2);
 const baseAt = args.indexOf("--base");
 const base = baseAt >= 0 ? args[baseAt + 1] : BASE_DEFAULT;
-const pages = args.filter((a, i) => a.startsWith("/") && i !== baseAt + 1);
+// Without --base, baseAt + 1 is 0, so the first path named was dropped and every recorded page was weighed instead.
+const pages = args.filter((a, i) => a.startsWith("/") && (baseAt < 0 || i !== baseAt + 1));
 
 async function weigh(path: string) {
   const res = await fetch(new URL(path, base), { headers: { "user-agent": "OnCo page-weight (repo script)" } });

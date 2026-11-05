@@ -158,6 +158,9 @@
   input:focus-visible, select:focus-visible, textarea:focus-visible { outline-offset: 0; }
 }
 
+/* Rules used by one page live beside that page and are imported by it alone, so they stay out of the stylesheet every
+   page carries: timeline, virotherapy, explained, mechanics, graph, prep (appointment sheet) and the engine pages. */
+
 /* ------------------------------------------------------------------------------------------------
    Components. Kept in the components layer so Tailwind utilities on the same element still win.
    ------------------------------------------------------------------------------------------------ */
@@ -249,17 +252,11 @@
   .tone-acc { @apply bg-accent-soft text-accent border border-accent/30; }
   .tone-stop { @apply bg-zinc-200 text-zinc-800 dark:bg-zinc-700 dark:text-zinc-100; }
 
-  /* Engine pages (/pipeline/engine/<format>/): the same utilities as before in short classes, because the heat grid
-     repeats them on every square (705 untried squares on the small-molecule page) and the Not placed and evidence
-     pills on every item. Each class is exactly the utilities it replaced; nothing about the look changes.
-     .chip-pick: a pill that fills with the accent on hover. .chip-ev: a pill that rings on hover.
-     .eg-sq: a grid square. .eg-hit: a tried square's number and focus ring. .eg-rh / .eg-ch: row and column headers. */
-  .chip-pick { @apply border border-border bg-card hover:bg-accent-soft hover:text-accent hover:border-accent; }
-  .chip-ev { @apply border border-border bg-card hover:ring-2 hover:ring-accent/30; }
-  .eg-sq { @apply h-[26px] w-[26px] rounded-sm; }
-  .eg-hit { @apply flex items-center justify-center text-[10px] font-medium tabular-nums leading-none hover:ring-2 hover:ring-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent; }
-  .eg-rh { @apply sticky left-0 bg-card text-xs leading-none flex items-center pe-2 h-[26px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[220px]; }
-  .eg-ch { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] leading-none whitespace-nowrap max-h-28 overflow-hidden text-ellipsis hover:underline; }
+  /* Engine-page-only classes (the heat grid, its headers and pills) live in src/app/pipeline/engine/[format]/engine.css.
+     .eg-stop stays here because the engine index and /modalities/<format>/ legends draw it too. */
+  /* Tried and stopped: hatched as well as dark, so it is not told from Approved by colour alone (WCAG 1.4.1). Under
+     protanopia the two fills sit 5 CIEDE2000 units apart. */
+  .eg-stop { background-image: repeating-linear-gradient(135deg, transparent 0 3px, rgb(255 255 255 / 0.4) 3px 4.5px); }
 
   /* Reference pills (src/lib/text.ts refChipClass): one kind's colours in one short class rather than the eight
      Tailwind utilities of KIND_COLOR repeated on every pill. The pills are how a record page lists what it links to,
@@ -300,47 +297,6 @@
   .yr-t { @apply text-[15px] min-w-0; }
   .yr-n { @apply text-sm text-muted mt-0.5 sm:ms-[9.5rem]; }
   .yr-r { @apply flex flex-wrap gap-1 mt-1 sm:ms-[9.5rem]; }
-
-  /* Trials in plain words (src/app/explained/page.tsx, src/components/ExplainedSection.tsx). Six hundred rows, 256
-     section headings and 750 cross-reference pills share one page, so every byte of their markup is paid hundreds of
-     times and the page's HTML has a budget (src/app/heavy-pages.test.ts). A row is
-       <details class="explained-row"><summary><h3><a>name</a></h3><span class="chip tone-*">status</span><small>phase, year</small><p>summary</p></summary></details>
-     and everything else about its look lives here: the card, the disclosure arrow, the "Open explanation" pill (a
-     generated ::after with the speech-bubble glyph as its background, reading "Close" when open) and the clamped summary. */
-  .explained-row { scroll-margin-top: 5rem; background: var(--card); border: 1px solid var(--border); border-radius: 0.875rem; box-shadow: var(--shadow-1); }
-  .explained-row[open] { padding-bottom: 1rem; }
-  .explained-row > summary { cursor: pointer; list-style: none; padding: 0.75rem 1rem; border-radius: 0.875rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
-  .explained-row > summary::-webkit-details-marker { display: none; }
-  .explained-row > summary::before { content: "▶"; font-size: 0.7rem; color: var(--muted); transition: transform 160ms ease; }
-  .explained-row[open] > summary::before { transform: rotate(90deg); }
-  .explained-row > summary:focus-visible { outline: none; box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 40%, transparent); }
-  .explained-row h3 { font-size: 1.125rem; line-height: 1.75rem; font-weight: 600; }
-  .explained-row h3 a:hover { text-decoration: underline; }
-  .explained-row > summary > small { font-size: 0.75rem; color: var(--muted); }
-  .explained-row > summary > p { order: 2; flex-basis: 100%; margin: 0; font-size: 0.875rem; line-height: 1.25rem; color: var(--muted); max-width: 48rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .explained-row[open] > summary > p { display: block; }
-  .explained-row > summary::after { content: "Open explanation"; order: 1; margin-inline-start: auto; display: inline-flex; align-items: center; white-space: nowrap; border-radius: 9999px; border: 1px solid var(--border); padding: 0.125rem 0.6rem 0.125rem 1.7rem; font-size: 0.72rem; line-height: 1.35; font-weight: 600; letter-spacing: 0.01em; color: var(--accent); background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c2185b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5h16v11H9l-5 4V5Z'/%3E%3Cpath d='M8 9h8M8 12h5'/%3E%3C/svg%3E") 0.6rem center / 0.875rem 0.875rem no-repeat; }
-  .explained-row > summary:hover::after, .explained-row[open] > summary::after { background-color: var(--accent-soft); }
-  .explained-row[open] > summary::after { content: "Close"; }
-  .explained-body { padding: 0 1rem; font-size: 0.75rem; color: var(--muted); }
-  .explained-body > p:first-child a { text-decoration: underline; }
-  .explained-body > p:first-child a:hover { color: var(--foreground); }
-  /* Section heading (icon, cancer name, trial count), the jump chips above the sections, the cross-reference pills and
-     the noscript list of a section's remaining trials. */
-  .explained-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
-  .explained-head h2 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
-  .explained-head h2 a:hover { text-decoration: underline; }
-  .explained-head .count { margin-inline-start: auto; font-size: 0.875rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .explained-icon { display: inline-flex; flex: none; height: 2.25rem; width: 2.25rem; align-items: center; justify-content: center; border-radius: 0.75rem; background: var(--accent-soft); color: var(--accent); }
-  .explained-icon svg { height: 1.5rem; width: 1.5rem; }
-  .explained-jump, .explained-ref { border: 1px solid var(--border); background: var(--card); }
-  .explained-jump:hover { background: color-mix(in srgb, var(--foreground) 5%, transparent); }
-  .explained-jump span { margin-inline-start: 0.25rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .explained-ref:hover { background: var(--accent-soft); color: var(--accent); }
-  .explained-refs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; padding-bottom: 0.25rem; font-size: 0.875rem; }
-  .explained-refs > small { flex-basis: 100%; font-size: 0.875rem; color: var(--muted); }
-  .explained-rest { margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
-  .explained-rest a { text-decoration: underline; }
 
   /* Header controls share one 40px height and one look. */
   .ctl {
@@ -548,28 +504,11 @@
 }
 .garden-sway { animation: garden-sway var(--sway, 16s) ease-in-out infinite alternate; }
 
-/* Mechanics atlas journey (src/components/MechanicsJourney.tsx): a spine through the stage glyphs with a slow pulse
-   that travels its length. CSS only; `motion-css` pauses it off screen and reduced motion stops it below. */
-.mech-spine { height: 1px; background: linear-gradient(to right, transparent, var(--border-strong) 3%, var(--border-strong) 97%, transparent); }
-.mech-pulse { left: 0; height: 5px; width: 5px; margin-top: -2px; border-radius: 9999px; background: var(--accent-solid); box-shadow: 0 0 0 3px var(--accent-soft); animation: mech-travel 28s linear infinite; }
-@keyframes mech-travel { from { left: 1.5rem; } to { left: calc(100% - 1.5rem); } }
-/* The strip scrolls sideways when the 56 stages are wider than the screen; the right edge fades to say so. */
-.mech-journey { mask-image: linear-gradient(to right, #000 calc(100% - 3rem), transparent); }
-/* Stage pages: a pill never widens its column; a long name truncates with an ellipsis (the chip carries the full text as its title or tooltip). */
-.mech-content .chip, .mech-content .chip + span, .mech-content li, .mech-content span.inline-block { min-width: 0; max-width: 100%; }
-.mech-node:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
-/* The vertical rail on small screens: stage cards hang off a line with their glyph on it. */
-.mech-rail { position: relative; }
-.mech-rail::before { content: ""; position: absolute; left: 1.25rem; top: 1.5rem; bottom: 1.5rem; width: 1px; background: var(--border-strong); }
-@media (min-width: 640px) { .mech-rail::before { display: none; } }
-
 /* Animation budget (src/lib/use-animation-budget.ts). Elements with `motion-css` carry a CSS keyframe animation; it
    pauses while the tab is hidden, on low-budget devices (Save-Data, four or fewer cores: <html data-motion~="low">),
    and inside any box marked data-motion-paused (MotionScope, the body map, the resistance map) while that box is off
    screen. Reduced motion is handled below with everything else. */
 html[data-motion~="hidden"] .motion-css, html[data-motion~="low"] .motion-css, [data-motion-paused] .motion-css { animation-play-state: paused !important; }
-/* Graph explorer: on a low budget the nodes jump to their new places instead of gliding (each move re-lays out a hundred SVG groups). */
-html[data-motion~="low"] .gx-node, html[data-motion~="low"] .gx-bubble, html[data-motion~="low"] .gx-edge, html[data-motion~="low"] .gx-link, html[data-motion~="low"] .gx-band, html[data-motion~="low"] .gx-arc-chip, html[data-motion~="low"] .gx-label { transition-duration: 0s; animation: none; }
 /* Page-header art fades out towards the text on its left; hero art fades before the count grid. */
 .garden-fade { mask-image: linear-gradient(to left, #000 45%, transparent 100%); }
 .garden-hero-fade { mask-image: linear-gradient(to bottom, #000 52%, transparent 74%); }
@@ -581,37 +520,6 @@ html[data-motion~="low"] .gx-node, html[data-motion~="low"] .gx-bubble, html[dat
 [data-theme="contrast"] a { text-decoration: underline; }
 [data-theme="contrast"] .chip { border-color: currentColor; }
 [data-theme="contrast"] table.onco thead th { border-bottom-width: 2px; }
-
-/* Graph explorer (src/components/GraphExplorer.tsx). SVG is themed through variables; --k carries the node's kind hue.
-   Fills are the hue mixed into the card colour, so the same hue reads softly on both the cream and the night palette. */
-.gx { --gx-tint: 16%; --gx-tint-on: 30%; }
-@media (prefers-color-scheme: dark) { .gx { --gx-tint: 26%; --gx-tint-on: 42%; } }
-[data-theme="light"] .gx { --gx-tint: 16%; --gx-tint-on: 30%; }
-[data-theme="dark"] .gx { --gx-tint: 26%; --gx-tint-on: 42%; }
-.gx-node { cursor: pointer; outline: none; transition: transform 520ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 220ms ease; animation: gx-in 420ms ease backwards; }
-.gx-bubble { fill: color-mix(in srgb, var(--k) var(--gx-tint), var(--card)); stroke: var(--k); stroke-width: 1.25; transition: stroke-width 160ms ease, fill 160ms ease, r 520ms cubic-bezier(0.2, 0.7, 0.2, 1); }
-.gx-node:hover .gx-bubble, .gx-node:focus-visible .gx-bubble, .gx-node.is-hover .gx-bubble { stroke-width: 2; fill: color-mix(in srgb, var(--k) var(--gx-tint-on), var(--card)); }
-.gx-node.is-on .gx-bubble { stroke-width: 1.75; }
-.gx-node:focus-visible .gx-bubble { stroke: var(--ring); }
-.gx-ico { color: var(--k); pointer-events: none; }
-.gx-label { font-size: 11px; fill: var(--foreground); opacity: 0.8; paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; transition: opacity 200ms ease; }
-.gx-node.is-on .gx-label, .gx-node.is-hover .gx-label { opacity: 1; font-weight: 600; }
-.gx-center-label { font-size: 13px; font-weight: 600; fill: var(--foreground); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
-.gx-center-sub { font-size: 10.5px; fill: var(--muted); }
-.gx.is-dim .gx-node:not(.is-on):not(.is-hover):not(.is-center) { opacity: 0.26; }
-.gx-edge { fill: none; stroke-width: 1.1; stroke-linecap: round; opacity: 0.55; transition: opacity 200ms ease, stroke-width 200ms ease; animation: gx-in 420ms ease backwards; }
-.gx.is-dim .gx-edge:not(.is-on) { opacity: 0.08; }
-.gx-edge.is-on { opacity: 1; stroke-width: 1.8; }
-.gx-link { fill: none; stroke-width: 1.2; stroke-linecap: round; opacity: 0.5; animation: gx-in 220ms ease backwards; }
-.gx-ring { fill: none; stroke: var(--border-strong); stroke-dasharray: 2 6; opacity: 0.8; }
-.gx-band { fill: none; stroke: var(--k); stroke-width: 2.5; stroke-linecap: round; opacity: 0.4; animation: gx-in 420ms ease backwards; }
-.gx-kchip { background: color-mix(in srgb, var(--k) 14%, var(--card)); border-color: color-mix(in srgb, var(--k) 45%, var(--border)); color: var(--foreground); transition: background-color 120ms ease, border-color 120ms ease; }
-.gx-kchip:hover { background: color-mix(in srgb, var(--k) 24%, var(--card)); }
-.gx-kchip[aria-pressed="false"] { background: var(--card); border-color: var(--border); color: var(--muted); text-decoration: line-through; }
-.gx-arc-chip { position: absolute; z-index: 2; white-space: nowrap; box-shadow: var(--shadow-1); background: color-mix(in srgb, var(--k) 14%, var(--card)); border-color: color-mix(in srgb, var(--k) 45%, var(--border)); color: var(--foreground); animation: gx-in 420ms ease backwards; transition: background-color 120ms ease, left 520ms cubic-bezier(0.2, 0.7, 0.2, 1), top 520ms cubic-bezier(0.2, 0.7, 0.2, 1); }
-.gx-arc-chip:hover { background: color-mix(in srgb, var(--k) 26%, var(--card)); }
-.gx-avatar { background: color-mix(in srgb, var(--k) 16%, var(--card)); border: 1px solid color-mix(in srgb, var(--k) 45%, var(--border)); color: var(--k); }
-@keyframes gx-in { from { opacity: 0; } to { opacity: 1; } }
 
 /* Skip link for keyboard users. */
 .skip-link { position: absolute; left: 0.75rem; top: -3rem; z-index: 200; padding: 0.5rem 0.75rem; border-radius: 0.5rem; background: var(--accent-solid); color: var(--accent-fg); font-weight: 600; transition: top 120ms; }
@@ -637,15 +545,61 @@ html[data-motion~="reduced"] .nav-progress[data-state="running"] { animation: na
 @keyframes skel-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
 html[data-motion~="reduced"] .skel { animation: none; }
 
-/* Reduced motion: no transitions, no animation, instant scroll. */
+/* Reduced motion: no transitions, no animation, instant scroll. The device setting applies unless the reader turned
+   the Aa menu's Reduce motion switch off (<html data-reduce-motion="off">); the switch on applies the same rules on any
+   device (src/lib/reading.ts). :where() keeps every selector at the specificity it had before the switch existed. */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
-  a.card:hover, .card-link:hover { transform: none; }
-  .garden-sway { animation: none !important; }
-  .mech-pulse { display: none; }
-  .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
-  .skel { animation: none !important; }
+  :where(html:not([data-reduce-motion=off])), :where(html:not([data-reduce-motion=off])) *, :where(html:not([data-reduce-motion=off])) *::before, :where(html:not([data-reduce-motion=off])) *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  :where(html:not([data-reduce-motion=off])) a.card:hover, :where(html:not([data-reduce-motion=off])) .card-link:hover { transform: none; }
+  :where(html:not([data-reduce-motion=off])) .garden-sway { animation: none !important; }
+  :where(html:not([data-reduce-motion=off])) .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
+  :where(html:not([data-reduce-motion=off])) .skel { animation: none !important; }
 }
+:where(html[data-reduce-motion=on]), :where(html[data-reduce-motion=on]) *, :where(html[data-reduce-motion=on]) *::before, :where(html[data-reduce-motion=on]) *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+:where(html[data-reduce-motion=on]) a.card:hover, :where(html[data-reduce-motion=on]) .card-link:hover { transform: none; }
+:where(html[data-reduce-motion=on]) :is(.garden-sway, .skel) { animation: none !important; }
+:where(html[data-reduce-motion=on]) .nav-progress[data-state="running"] { animation: none !important; transform: scaleX(1); opacity: 0.7; }
+
+/* Reading preferences from the Aa menu (src/lib/reading.ts). None of these attributes is present for a reader who
+   has not chosen, so the default page is exactly as before.
+   Text size scales the root font, so everything sized in rem grows with it; the fixed pixel text sizes used for
+   small labels are restated in rem so they grow too. */
+html[data-text=larger] { font-size: 112.5%; --header-h: calc(3.5rem / 1.125); }
+html[data-text=largest] { font-size: 125%; --header-h: calc(3.5rem / 1.25); }
+/* The header row is tuned to the pixel to hold every control from 320 to 1263 px (see SiteHeader), so it keeps its
+   default size: zoom undoes the larger root inside it, and --header-h (above, and here for what the header itself
+   positions) stays 56 px so sticky table headers and the Aa panel still meet its lower edge. */
+html[data-text=larger] body > header { zoom: 0.888889; --header-h: 3.5rem; }
+html[data-text=largest] body > header { zoom: 0.8; --header-h: 3.5rem; }
+/* Zoom shrinks pixel sizes as well; the header's icons are drawn at pixel sizes, so they are zoomed back to them. */
+html[data-text=larger] body > header svg[width] { zoom: 1.125; }
+html[data-text=largest] body > header svg[width] { zoom: 1.25; }
+/* Rows and cards sized to fit a 320 px screen at the default size, made to reflow when the text is larger: a button's
+   label wraps inside it; with larger text or relaxed spacing a table's count and export buttons and other nested rows fold onto a second line, and a
+   grid cell, wrapping row's item or list item never widens its container past the screen (a chip inside truncates;
+   its full name is in the tooltip). Long words break rather than push the page sideways. */
+html:is([data-text],[data-spacing]) main { overflow-wrap: break-word; }
+html:is([data-text],[data-spacing]) main td { hyphens: auto; }
+html[data-text] .btn { max-width: 100%; height: auto; min-height: 2.5rem; padding-block: 0.375rem; white-space: normal; line-height: 1.2; text-align: center; }
+html:is([data-text],[data-spacing]) main div:has(> span[aria-live]), html:is([data-text],[data-spacing]) main .flex-wrap > .flex { flex-wrap: wrap; }
+html:is([data-text],[data-spacing]) main :is(.grid, .flex-wrap, .card) > *, html:is([data-text],[data-spacing]) main li, html:is([data-text],[data-spacing]) main .chip { min-width: 0; max-width: 100%; }
+html[data-text] .text-\[7px\] { font-size: 0.4375rem; }
+html[data-text] .text-\[8px\] { font-size: 0.5rem; }
+html[data-text] .text-\[9px\] { font-size: 0.5625rem; }
+html[data-text] .text-\[10px\] { font-size: 0.625rem; }
+html[data-text] .text-\[11px\] { font-size: 0.6875rem; }
+html[data-text] .text-\[12px\] { font-size: 0.75rem; }
+html[data-text] .text-\[13px\] { font-size: 0.8125rem; }
+html[data-text] .text-\[15px\] { font-size: 0.9375rem; }
+html[data-text] .text-\[17px\] { font-size: 1.0625rem; }
+/* Reading spacing, relaxed: WCAG 1.4.12 text spacing on running text (letter 0.12em, word 0.16em, 2em after a
+   paragraph) with the line height raised from 1.55 to 1.8, since the site's default already passes the 1.5 minimum.
+   Tables, grids, navigation, chips and controls keep their spacing, where it would only truncate or break a row. */
+html[data-spacing=relaxed] main :is(p, li, dd, dt, blockquote, figcaption):not(:is(table, nav, [role=table], [role=grid], .chip, .ctl, .btn) *) { line-height: 1.8; letter-spacing: 0.12em; word-spacing: 0.16em; }
+html[data-spacing=relaxed] main p:not(:last-child):not(:is(table, nav, [role=table], [role=grid]) *) { margin-block-end: 2em; }
+html[data-spacing=relaxed] main :is(.chip, .ctl, .btn, kbd, code) { letter-spacing: normal; word-spacing: normal; }
+/* Arabic is a joined script: letter spacing would pull its letters apart, so it keeps the word, line and paragraph spacing only. */
+html[data-spacing=relaxed] main :is(p, li, dd, dt, blockquote, figcaption):lang(ar) { letter-spacing: normal; }
 
 /* ------------------------------------------------------------------------------------------------
    Languages. The layer writes the site language to <html lang>, <html dir> and `data-lang`; TldrText sets `lang`
@@ -741,18 +695,6 @@ html[dir="rtl"] code, html[dir="rtl"] kbd, html[dir="rtl"] .tabular-nums { unico
   details[data-fold] > summary { display: none !important; }
   details[data-fold]::details-content { content-visibility: visible; }
   @page { margin: 14mm 12mm 16mm; }
-}
-
-/* Appointment sheet (/prep/[id]/): one page, sections kept whole, ruled lines where a field is empty. */
-.prep-lines { background: repeating-linear-gradient(to bottom, transparent 0, transparent calc(1.5rem - 1px), var(--color-border, #ccc) calc(1.5rem - 1px), var(--color-border, #ccc) 1.5rem); }
-@media print {
-  .prep-sheet { font-size: 10pt; }
-  .prep-sheet .prep-part { break-inside: avoid; margin-top: 0.6rem; }
-  .prep-sheet h1 { font-size: 16pt; }
-  .prep-sheet h2 { font-size: 11pt; margin-top: 0; }
-  .prep-sheet .prep-lines { background: repeating-linear-gradient(to bottom, transparent 0, transparent calc(1.5rem - 1px), #999 calc(1.5rem - 1px), #999 1.5rem); }
-  .prep-sheet input, .prep-sheet textarea { display: none !important; }
-  .prep-sheet a[href^="http"]::after { content: none; }
 }
 
 /* Dossier jump links land each heading below the sticky section bar, whose wrapped height DossierNav measures. */

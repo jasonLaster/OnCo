@@ -87,7 +87,7 @@ export function PrepSheet({ data }: { data: SheetData }) {
           <h2 className="font-semibold mb-1">Your own questions</h2>
           <div className="flex gap-2">
             <input value={draft} onChange={(e) => setDraft(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); addCustom(); } }} placeholder="Type a question and press Enter" aria-label="Add your own question" className="flex-1 rounded-lg border border-border bg-card px-3 py-1.5 text-sm outline-none focus:ring-2 focus:ring-accent/40" />
-            <button type="button" onClick={addCustom} className="rounded-lg bg-accent text-white px-3 py-1.5 text-sm font-medium hover:brightness-110">Add</button>
+            <button type="button" onClick={addCustom} className="rounded-lg bg-accent-solid text-accent-fg px-3 py-1.5 text-sm font-medium hover:brightness-110">Add</button>
           </div>
           {custom.length > 0 && <ul className="mt-2 space-y-1 text-sm">{custom.map((c, i) => <li key={`${i}-${c}`} className="flex items-start justify-between gap-3"><span>{c}</span><button type="button" onClick={() => commitPrep({ custom: custom.filter((_, j) => j !== i) })} className="text-xs underline text-muted shrink-0">Remove</button></li>)}</ul>}
           <p className="text-xs text-muted mt-2">Shared with the <Link href="/prep/" className="underline">prep pack</Link>, so questions you add there appear here too.</p>

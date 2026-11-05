@@ -133,7 +133,7 @@ describe("heavy pages page their sections", () => {
     const firstPage = groups.reduce((n, grp) => n + Math.min(EXPLAINED_PAGE, grp.own.length), 0);
     expect(firstPage).toBeLessThan(unique.size);
     expect((html.match(/<details[\s>]/g) ?? []).length).toBe(firstPage);
-    // The row's markup is bare (one class; the card, arrow and "Open explanation" pill are CSS in globals.css).
+    // The row's markup is bare (one class; the card, arrow and "Open explanation" pill are CSS in src/app/explained/explained.css).
     expect((html.match(/class="explained-row"><summary><h3><a /g) ?? []).length).toBe(firstPage);
     expect(html).not.toContain("Open explanation");
     // Every section with more rows carries the IntersectionObserver sentinel and the Show more pill, and a noscript
@@ -569,7 +569,9 @@ describe("the timeline and its years", () => {
     const unsupported = findings(graph()).filter((f) => !f.supported);
     expect((html.match(/Corpus cannot support this/g) ?? []).length).toBe(unsupported.length);
     const bytes = Buffer.byteLength(html, "utf8");
-    // 490 KB when written, of which 401 KB is the scrubber that was already on the page.
+    // 490 KB when written, of which 401 KB is the scrubber that was already on the page. 545 KB by November 2026 as
+    // devices and contrast agents added dated rows; the scrubber's repeated pills then moved to short classes
+    // (src/app/timeline/timeline.css), which took it to 454 KB with every row still on the page.
     expect(bytes / (640 * KB), `timeline markup is ${(bytes / KB).toFixed(1)} KB of its 640 KB ceiling`).toBeLessThan(MARGIN);
   });
 });

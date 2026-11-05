@@ -6,6 +6,7 @@ import { graph } from "@/lib/graph";
 import { buildSheet } from "@/lib/first-60-days";
 import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { PrepSheet } from "@/components/PrepSheet";
+import "./prep.css";
 
 export function generateStaticParams() {
   return graph().kind("cancer").map((c) => ({ id: c.id }));

@@ -1,0 +1,10 @@
+/* The virotherapy page's timeline steps; why they exist is in page.tsx. This file is imported by that page alone, so it
+   stays out of the stylesheet and source budget every other page carries. @reference brings in the theme for @apply
+   without emitting globals.css a second time. */
+@reference "../globals.css";
+
+.ov-step { @apply pl-5; }
+.ov-step::before { content: ""; @apply absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full bg-border; }
+.ov-when { @apply text-xs font-medium text-muted; }
+.ov-what { @apply font-medium mt-0.5; }
+.ov-note { @apply text-sm text-muted mt-1 max-w-3xl; }

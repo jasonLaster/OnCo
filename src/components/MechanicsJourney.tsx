@@ -32,7 +32,7 @@ export function MechanicsJourney({ active, compact = false, hash }: { active?: s
                   <li key={s.id} className="relative">
                     <Tip title={`${ci + 1}.${si + 1} ${s.title}`} text={firstSentence(s.plain)} href={`/mechanics/${s.id}/${hash ?? ""}`} linkLabel="Open the stage →" inline={false}>
                       <Link href={`/mechanics/${s.id}/${hash ?? ""}`} aria-current={on ? "page" : undefined}
-                        className={`mech-node relative inline-flex ${size} items-center justify-center rounded-full border transition-[transform,box-shadow] ${on ? "bg-accent text-white border-accent shadow-md scale-110" : "bg-card border-border text-foreground/80 hover:text-accent hover:border-accent/60 hover:-translate-y-0.5"}`}>
+                        className={`mech-node relative inline-flex ${size} items-center justify-center rounded-full border transition-[transform,box-shadow] ${on ? "bg-accent-solid text-accent-fg border-accent-solid shadow-md scale-110" : "bg-card border-border text-foreground/80 hover:text-accent hover:border-accent/60 hover:-translate-y-0.5"}`}>
                         <MechanicsGlyph id={s.id} className={glyph} sprite />
                         <span className="sr-only">{s.title}</span>
                       </Link>

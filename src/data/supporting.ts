@@ -463,6 +463,7 @@ const technologies: TechnologyInput[] = [
     strengths: ["Enables centralised liquid biopsy testing", "Standards exist for key biomarkers"],
     limitations: ["Fixation artefacts degrade DNA/RNA", "Adherence to windows uneven", "Little attention outside reference labs"],
     technologies: ["liquid-biopsy", "histopathology-ihc", "biobanking", "reference-laboratories"], companies: ["streck", "qiagen", "roche-genentech", "ellele-health"],
+    notes: ["Streck's Cell-Free DNA BCT was granted De Novo classification on 7 August 2020 (DEN200001), creating FDA product code QMA, blood collection device for cell-free nucleic acid (21 CFR 862.1676); the decision summary says 'Performance characteristics for this device have only been established on the Guardant360 CDx assay'. A further 510(k) followed on 26 July 2024 (K231776). Read from openFDA and the De Novo decision summary on 4 November 2026."],
   }),
   t({
     id: "ihc-autostainers-histology-automation", name: "Histology automation and IHC autostainers", sections: ["diagnostics"], status: "standard-of-care",

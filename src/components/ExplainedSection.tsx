@@ -38,7 +38,7 @@ const route = (id: string) => `/trials/${id}/`;
  *
  * Rows are props rather than server-rendered children: a client component's props are serialised once as compact
  * JSON, where a server-rendered tree is serialised element by element, which is what made the page 14 MB. The row
- * markup is bare (one class on the <details>, the rest is CSS in globals.css) because it is paid 600 times over.
+ * markup is bare (one class on the <details>, the rest is CSS in src/app/explained/explained.css) because it is paid 600 times over.
  */
 export function ExplainedSection({ section, rows, total = rows.length, refs = [], refTotal = refs.length }: {
   section: string; rows: ExplainedRow[]; total?: number; refs?: ExplainedRef[]; refTotal?: number;

@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import { REGION_META, type Region } from "@/data/regional-approvals";
+import { REGION_META, type Region } from "@/lib/region-meta";
 
 export type { Region };
 export { REGION_META };

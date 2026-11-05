@@ -80,7 +80,9 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
 
       <div className="overflow-x-auto px-2 pb-2">
         <div role="table" aria-label="Resistance mechanisms by drug class and category" className="min-w-[760px] grid text-sm" style={{ gridTemplateColumns: `minmax(180px, 1.5fr) repeat(${CATEGORIES.length}, minmax(64px, 1fr)) 56px` }}>
-          {/* Header row */}
+          {/* Header row. Rows are display: contents so their cells stay grid items; the row role is what lets a screen
+              reader announce the table as a table (a cell outside a row is ignored). */}
+          <div role="row" className="contents">
           <div role="columnheader" className="px-2 py-2 text-[11px] uppercase tracking-wider text-muted font-semibold self-end">Drug class</div>
           {CATEGORIES.map((c) => {
             const on = highlight === c.id, off = highlight !== null && !on;
@@ -97,15 +99,16 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
             );
           })}
           <div role="columnheader" className="px-1 py-2 text-[11px] uppercase tracking-wider text-muted font-semibold text-right self-end">All</div>
+          </div>
 
           {/* Body */}
           {rows.map((r) => {
             const rowTotal = CATEGORIES.reduce((s, c) => s + r.cells[c.id].length, 0);
             return (
               <div key={r.id} role="row" className="contents">
-                <a role="rowheader" href={`#${r.id}`} className="px-2 py-1.5 border-t border-border font-medium hover:underline decoration-foreground/30 underline-offset-[3px] truncate self-center" title={`Jump to ${r.label}`}>
+                <div role="rowheader" className="contents"><a href={`#${r.id}`} className="px-2 py-1.5 border-t border-border font-medium hover:underline decoration-foreground/30 underline-offset-[3px] truncate self-center" title={`Jump to ${r.label}`}>
                   {r.label}
-                </a>
+                </a></div>
                 {CATEGORIES.map((c, ci) => {
                   const names = r.cells[c.id];
                   const n = names.length;
@@ -133,11 +136,13 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
           })}
 
           {/* Footer totals */}
-          <div role="cell" className="px-2 py-2 border-t-2 border-border text-[11px] uppercase tracking-wider text-muted font-semibold">All classes</div>
+          <div role="row" className="contents">
+          <div role="rowheader" className="px-2 py-2 border-t-2 border-border text-[11px] uppercase tracking-wider text-muted font-semibold">All classes</div>
           {CATEGORIES.map((c) => (
             <div key={c.id} role="cell" className={`px-1 py-2 border-t-2 border-border text-center font-semibold tabular-nums transition-opacity ${highlight !== null && highlight !== c.id ? "opacity-30" : ""}`} style={{ color: c.color }}>{colTotals[c.id] || <span className="text-border">·</span>}</div>
           ))}
           <div role="cell" className="px-2 py-2 border-t-2 border-border text-right font-semibold tabular-nums">{total}</div>
+          </div>
         </div>
       </div>
 

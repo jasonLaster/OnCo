@@ -31,11 +31,15 @@ const MAX_DRIFT = 0.2;
 
 /** Recorded 2026-09-25, after the gauge review that followed the 12,400-to-18,160 growth. */
 const RECORDED: Array<{ id: string; total: number; label: string }> = [
-  { id: "sources", total: 18160, label: "Records with a primary source" },
-  { id: "backlinks", total: 18141, label: "Records with three or more relations" },
-  { id: "orphans", total: 18141, label: "Records something links to" },
-  { id: "tldr", total: 18160, label: "TL;DRs that are full sentences" },
-  { id: "summary", total: 18160, label: "Summaries of 300 characters or more" },
+  // 18,160 to 21,806 records on 4 November 2026 (18,141 to 21,786 where years are excluded): the gap rounds since the
+  // last recording, ending with 103 graded complementary products measured against MSK About Herbs
+  // (src/data/complementary-gaps-2026-11*.ts). Each is an ordinary record with a source, a TL;DR and a summary, the
+  // kind every whole-corpus gauge asks about, so the denominators move with them.
+  { id: "sources", total: 21806, label: "Records with a primary source" },
+  { id: "backlinks", total: 21786, label: "Records with three or more relations" },
+  { id: "orphans", total: 21786, label: "Records something links to" },
+  { id: "tldr", total: 21806, label: "TL;DRs that are full sentences" },
+  { id: "summary", total: 21806, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
   { id: "regional-approvals", total: 450, label: "Approved products with regional rows" },
   // 1,080 to 1,442 on 3 November 2026: 282 company pipeline products (src/data/company-pipeline-gap.ts, gap audit class 5)
@@ -45,7 +49,9 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // are the kind this gauge asks about, and almost none has a drawing of its own; they borrow one through
   // SCHEMATIC_ALIAS. So the denominator grows and the score falls, which is the true reading. The alternative,
   // excluding them, would have been the gauge flattering itself.
-  { id: "schematics", total: 710, label: "Technologies with a specific schematic" },
+  // 710 to 898 on 4 November 2026: later technology rounds and the 103 complementary products of the November gap
+  // round, each borrowing a drawing through SCHEMATIC_ALIAS. They are technologies, the kind this gauge asks about.
+  { id: "schematics", total: 898, label: "Technologies with a specific schematic" },
   { id: "target-prevalence", total: 1674, label: "Targets with sourced prevalence, or with no medicine aimed at them" },
   // 1,003 to 1,223 on 19 October 2026: the registry status pass that day moved trials the registry calls completed,
   // terminated or withdrawn out of "recruiting" and "active", and the registry ingests since 25 September added
@@ -63,12 +69,12 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
   { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
-  { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
+  { id: "stale", total: 21806, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
-  { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },
-  { id: "simple", total: 18160, label: "Records with a simple explanation" },
-  { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
-  { id: "provenance", total: 18160, label: "Records with git provenance" },
+  { id: "reviewed", total: 21786, label: "Records a named human reviewer has signed off" },
+  { id: "simple", total: 21806, label: "Records with a simple explanation" },
+  { id: "translations", total: 21806, label: "Records with a TL;DR in all eight languages" },
+  { id: "provenance", total: 21806, label: "Records with git provenance" },
   // 3,798 to 4,561 on 4 November 2026: the 282 pipeline products and 14 targets released with the lighter engine pages,
   // and the drugs added by the startup monitors and the coverage lists. They are drugs and targets, which is what this
   // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.

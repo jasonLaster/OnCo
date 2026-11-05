@@ -258,6 +258,7 @@ import { pipelineTrialsWave6 } from "./pipeline-trials-wave6";
 import { checkpointTargets, checkpointTerms, IMMUNE_CHECKPOINT_TARGET_IDS } from "./checkpoint-map";
 import { cansimOncologyTerms } from "./terms-cansim-oncology";
 import { cansimMethodsTerms } from "./terms-cansim-methods";
+import { scoringSystemsGapTerms } from "./scoring-systems-gaps-2026-11";
 import { cansimTargets } from "./targets-cansim";
 import { issuesWaveB } from "./issues-2026-09-wave-b";
 import { READOUT_TEST_RECORDS } from "./readout-test-records";
@@ -404,6 +405,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...freeCollections, ...tumourTestCompanies,
   ...checkpointTargets, ...checkpointTerms,
   ...cansimOncologyTerms, ...cansimMethodsTerms, ...cansimTargets,
+  ...scoringSystemsGapTerms,
 ];
 
 /** Readout ids by parent target id and by the drugs their current thresholds name (see the biomarker branch in ALL_INPUTS). */

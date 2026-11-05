@@ -32,8 +32,8 @@ const MAX_DRIFT = 0.2;
 /** Recorded 2026-09-25, after the gauge review that followed the 12,400-to-18,160 growth. */
 const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "sources", total: 18160, label: "Records with a primary source" },
-  { id: "backlinks", total: 18141, label: "Records with three or more relations" },
-  { id: "orphans", total: 18141, label: "Records something links to" },
+  { id: "backlinks", total: 21770, label: "Records with three or more relations" },
+  { id: "orphans", total: 21770, label: "Records something links to" },
   { id: "tldr", total: 18160, label: "TL;DRs that are full sentences" },
   { id: "summary", total: 18160, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
@@ -62,10 +62,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
-  { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
+  { id: "term-wikipedia", total: 1317, label: "Terms with a Wikipedia link, or checked and found to have none" },
   { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
-  { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },
+  { id: "reviewed", total: 21770, label: "Records a named human reviewer has signed off" },
   { id: "simple", total: 18160, label: "Records with a simple explanation" },
   { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
   { id: "provenance", total: 18160, label: "Records with git provenance" },

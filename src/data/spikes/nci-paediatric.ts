@@ -101,7 +101,7 @@ export const nciPaediatricCancers: CancerInput[] = [
     ],
     targets: ["gd2", "ezh2"], pathways: ["epigenetic-reprogramming", "p53-cell-cycle"], drugs: ["dordaviprone", "temozolomide"],
     technologies: ["imrt-igrt", "glioma-car-t", "bbb-focused-ultrasound", "car-t", "methylation-profiling", "palliative-care"], trials: ["action-dmg", "pediatric-match"],
-    institutions: ["siop-europe", "stanford", "dkfz"], companies: ["childrens-oncology-group"], terms: ["h3k27m", "blood-brain-barrier", "late-effects"], bottlenecks: ["b-brain-delivery", "b-rare-cancers"],
+    institutions: ["siop-europe", "stanford", "dkfz", "chadtough-defeat-dipg-foundation", "the-cure-starts-now", "abbies-army"], companies: ["childrens-oncology-group"], terms: ["h3k27m", "blood-brain-barrier", "late-effects"], bottlenecks: ["b-brain-delivery", "b-rare-cancers"],
     related: ["paediatric-low-grade-glioma", "glioblastoma", "race-for-children-act", "accelerate-platform", "idh-mutant-astrocytoma", "oligodendroglioma", "paediatric-high-grade-glioma"],
     links: [
       { label: "NCI PDQ: childhood astrocytomas and other gliomas (includes diffuse midline glioma)", url: PDQ("brain/hp/child-astrocytoma-treament-pdq") },
@@ -189,7 +189,7 @@ export const nciPaediatricCancers: CancerInput[] = [
       "Adult spinal and intracranial ependymoma lack dedicated trials and borrow from paediatric evidence.",
     ],
     targets: ["cdk4-6"], pathways: ["epigenetic-reprogramming", "inflammation-nfkb", "hippo-yap"], drugs: ["vincristine", "carboplatin", "cyclophosphamide", "etoposide"],
-    technologies: ["imrt-igrt", "proton-therapy", "methylation-profiling", "mri", "survivorship-care-plan"], trials: ["pediatric-match"], institutions: ["siop-europe", "st-jude", "dkfz"], companies: ["childrens-oncology-group"],
+    technologies: ["imrt-igrt", "proton-therapy", "methylation-profiling", "mri", "survivorship-care-plan"], trials: ["pediatric-match"], institutions: ["siop-europe", "st-jude", "dkfz", "cern-foundation"], companies: ["childrens-oncology-group"],
     terms: ["late-effects", "ependymoma-molecular-groups"], bottlenecks: ["b-rare-cancers", "b-survivorship"], related: ["medulloblastoma", "paediatric-low-grade-glioma", "atrt", "glioblastoma", "spinal-cord-tumours"],
     links: [
       { label: "NCI PDQ: childhood ependymoma", url: PDQ("brain/hp/child-ependymoma-treatment-pdq") },
@@ -373,7 +373,7 @@ export const nciPaediatricCancers: CancerInput[] = [
       "Adult LCH is under-recognised and under-studied; shared paediatric-adult guidelines are a first step.",
     ],
     targets: ["braf"], pathways: ["ras-mapk"], drugs: ["vinblastine", "vemurafenib", "dabrafenib-trametinib", "cladribine"],
-    technologies: ["kinase-inhibitors", "cytotoxic-chemotherapy", "mri", "liquid-biopsy", "survivorship-care-plan"], trials: ["lch-iii"], institutions: ["histiocyte-society", "siop-europe"], companies: ["childrens-oncology-group"],
+    technologies: ["kinase-inhibitors", "cytotoxic-chemotherapy", "mri", "liquid-biopsy", "survivorship-care-plan"], trials: ["lch-iii"], institutions: ["histiocyte-society", "siop-europe", "histiocytosis-association"], companies: ["childrens-oncology-group"],
     terms: ["late-effects"], bottlenecks: ["b-rare-cancers"], related: ["histiocytoses", "bpdcn", "aml"],
     links: [
       { label: "NCI PDQ: Langerhans cell histiocytosis", url: PDQ("langerhans/hp/langerhans-treatment-pdq") },

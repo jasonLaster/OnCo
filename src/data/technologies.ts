@@ -1,4 +1,5 @@
 import type { TechnologyInput } from "@/lib/schema";
+import { HEREDITARY_TEST_IDS_2026 } from "./hereditary-gaps-2026-11";
 
 const asOf = "2026-09-04";
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
@@ -308,6 +309,8 @@ export const technologies: TechnologyInput[] = [
     limitations: ["VUS burden", "Uptake and counselling capacity"],
     targets: ["brca", "tp53"],
     cancers: ["tnbc", "ovarian", "prostate", "pancreatic", "colorectal"], related: ["germline-to-parp"], links: [{ label: "Wikipedia", url: W("Genetic_testing") }], journals: ["familial-cancer"], companies: ["outcomes4me", "yemaachi-biotech", "fulgent-genetics", "invitae"],
+    // The named germline hereditary cancer tests (gap census round, 4 November 2026).
+    drugs: [...HEREDITARY_TEST_IDS_2026],
   },
   {
     id: "functional-drug-testing", related: ["functional-precision-medicine-haematology", "bh3-profiling", "parsortix-ctc-harvest"], kind: "technology", name: "Functional (ex vivo) drug testing", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf, wikipedia: W("Precision_medicine"),

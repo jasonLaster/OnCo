@@ -62,7 +62,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
-  { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
+  // 1,029 to 1,257 on 4 November 2026: glossary rounds since September and the hereditary syndrome round
+  // (src/data/hereditary-gaps-2026-11.ts, 27 genetics terms). They are terms, the kind this gauge asks about,
+  // so the denominator grows with them.
+  { id: "term-wikipedia", total: 1257, label: "Terms with a Wikipedia link, or checked and found to have none" },
   { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
   { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },

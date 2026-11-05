@@ -569,7 +569,9 @@ describe("the timeline and its years", () => {
     const unsupported = findings(graph()).filter((f) => !f.supported);
     expect((html.match(/Corpus cannot support this/g) ?? []).length).toBe(unsupported.length);
     const bytes = Buffer.byteLength(html, "utf8");
-    // 490 KB when written, of which 401 KB is the scrubber that was already on the page.
+    // 490 KB when written, of which 401 KB is the scrubber that was already on the page. 545 KB by November 2026 as
+    // devices and contrast agents added dated rows; the scrubber's repeated pills then moved to short classes
+    // (src/app/timeline/timeline.css), which took it to 454 KB with every row still on the page.
     expect(bytes / (640 * KB), `timeline markup is ${(bytes / KB).toFixed(1)} KB of its 640 KB ceiling`).toBeLessThan(MARGIN);
   });
 });

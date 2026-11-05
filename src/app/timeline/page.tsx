@@ -10,6 +10,7 @@ import { BANDS, MIN_N, findings, series, yearRecordsOf } from "@/lib/timeline";
 import { CONTINUOUS_FROM } from "@/lib/years";
 import { YEAR_EVENT_GROUPS, YEAR_GROUP_META } from "@/lib/year-groups";
 import { Block } from "@/components/record-blocks";
+import "./timeline.css";
 
 export const metadata: Metadata = pageMeta({
   title: "Timeline",

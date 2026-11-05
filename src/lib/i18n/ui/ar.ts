@@ -78,6 +78,10 @@ export const ar: UiDict = {
   "header.stars": "{n} نجمة على GitHub",
   "header.starsTitle": "{n} نجمة على GitHub. امنح المستودع نجمة لمساعدة الآخرين على العثور عليه.",
   "header.skip": "الانتقال إلى المحتوى",
+  "search.loading": "جارٍ تحميل البحث…",
+  "search.unavailable": "تعذّر تحميل البحث.",
+  "search.retry": "إعادة المحاولة",
+  "search.namesOnly": "مطابقة الأسماء فقط حتى الآن؛ البحث الكامل لا يزال قيد التحميل…",
 
   "region.global": "عالمي",
   "region.globalBlurb": "كل المناطق تُعرض كأعلام؛ الصفحات الخاصة ببلد واحد لا تظهر في القوائم",

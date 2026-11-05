@@ -20,10 +20,14 @@ vi.mock("./MoleculeSlot", () => ({ MoleculeSlot: "molecule-slot" }));
 vi.mock("@/lib/use-my-cancer", () => ({ useMyCancer: () => ({}), pickMyCancer: () => undefined, shortCancerName: (s: string) => s }));
 vi.mock("@/lib/use-my-cancer-list", () => ({ useMyCancerList: () => [] }));
 vi.mock("@/lib/semantic-client", () => ({ loadSemantic: host.semantic }));
-vi.mock("@/lib/search-client", () => ({
-  loadSearch: async () => ({ ms: { autoSuggest: () => [] }, byId: new Map(["alpha", "beta"].map((id) => [id, { id, name: id, kind: "term", route: `/terms/${id}/`, tldr: "Synthetic fixture" }])) }),
-  searchRanked: () => [{ id: "alpha", match: { alpha: ["name"] } }], askLexical: () => [],
-}));
+vi.mock("@/lib/search-client", () => {
+  const index = async () => ({ full: true, ms: { autoSuggest: () => [] }, byId: new Map(["alpha", "beta"].map((id) => [id, { id, name: id, kind: "term", route: `/terms/${id}/`, tldr: "Synthetic fixture" }])) });
+  return { loadSearch: index, loadQuickSearch: index, onFullSearch: () => () => {}, searchRanked: () => [{ id: "alpha", match: { alpha: ["name"] } }], askLexical: () => [] };
+});
+vi.mock("@/lib/i18n/ui", async (original) => {
+  const actual = await original<typeof import("@/lib/i18n/ui")>();
+  return { ...actual, useT: () => ({ t: (key: Parameters<typeof actual.t>[0]) => actual.t(key, "en") }) };
+});
 
 type Props = { children?: ReactNode; [key: string]: unknown };
 type Node = ReactElement<Props>;

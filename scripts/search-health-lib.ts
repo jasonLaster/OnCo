@@ -212,18 +212,12 @@ export function describeFailure(f: RankFailure): string {
  * ranking instead of adding to it.
  */
 export const ALLOWED_AMBIGUOUS: Readonly<Record<string, string>> = {
-  // Review papers whose whole title is the name of a cancer (The Lancet seminars, Nature Reviews Disease Primers).
-  // A reader typing "Breast cancer" wants the cancer and its subtypes, which is what comes first.
-  "paper-harbeck-nat-rev-dis-primers": "title is just \"Breast cancer\"",
-  "paper-dekker-lancet": "title is just \"Colorectal cancer\"",
-  "paper-crosbie-lancet": "title is just \"Endometrial cancer\"",
+  // Review papers whose whole title is the name of a cancer (Nature Reviews Disease Primers). A reader typing
+  // "Small-cell lung cancer" wants the cancer and its subtypes, which is what comes first: rankHits lifts an exact name
+  // above every inexact one except a cancer (src/lib/search-rank.ts), so these sit just under the cancer's subtypes.
+  // When that rule arrived on 4 November 2026 six entries left this list: the journal Cancer and the primers or
+  // seminars titled "Breast cancer", "Colorectal cancer", "Endometrial cancer", "Gastric cancer" and "Thyroid cancer".
   "paper-rudin-nat-rev-dis-primers": "title is just \"Small-cell lung cancer\"",
-  "paper-smyth-lancet": "title is just \"Gastric cancer\"",
-  "paper-cabanillas-lancet": "title is just \"Thyroid cancer\"",
   "paper-hsieh-nat-rev-dis-primers": "title is just \"Renal cell carcinoma\"",
-  // The journal Cancer: the query "cancer" is the most common word in the corpus and, typed alone, it means cancer in
-  // general. It comes sixth, behind CancerSEEK, CancerFind and CancerGuard, whose names start with the query; that is
-  // the prefix boost in src/lib/search-rank.ts, reported to the owner on 4 November 2026 rather than changed here.
-  "cancer-wiley": "the single word \"Cancer\"",
 };
-export const MAX_ALLOWED_AMBIGUOUS = 8;
+export const MAX_ALLOWED_AMBIGUOUS = 2;

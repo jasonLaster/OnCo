@@ -78,6 +78,10 @@ export const hi: UiDict = {
   "header.stars": "{n} GitHub स्टार",
   "header.starsTitle": "{n} GitHub स्टार। रिपॉज़िटरी को स्टार दें ताकि और लोग इसे खोज सकें।",
   "header.skip": "सामग्री पर जाएँ",
+  "search.loading": "खोज लोड हो रही है…",
+  "search.unavailable": "खोज लोड नहीं हो सकी।",
+  "search.retry": "फिर से कोशिश करें",
+  "search.namesOnly": "अभी केवल नामों का मिलान; पूरी खोज अभी लोड हो रही है…",
 
   "region.global": "वैश्विक",
   "region.globalBlurb": "सभी क्षेत्र झंडों के रूप में; किसी एक देश के पृष्ठ मेनू में नहीं दिखते",

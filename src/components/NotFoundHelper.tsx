@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { loadSearch, searchRanked } from "@/lib/search-client";
+import { loadQuickSearch, onFullSearch, searchRanked } from "@/lib/search-client";
+import { useT } from "@/lib/i18n/ui";
 import { KindIcon } from "./KindIcon";
 import type { SearchDoc } from "@/lib/search-index";
 import { PRODUCT_CLASS_META } from "@/lib/product-class";
@@ -12,7 +13,7 @@ import { brokenLinkIssueUrl, kindFromPath, MISSED_PATHS_KEY, parseMissed, pathTo
 
 const TOP = 8;
 
-type State = { path: string; query: string; kind: Kind | null; referrer: string; rows: SearchDoc[] | null };
+type State = { path: string; query: string; kind: Kind | null; referrer: string; /** null while loading; "error" when no index could be loaded. */ rows: SearchDoc[] | null | "error" };
 
 /**
  * The useful half of the 404 page. Reads the failed address from the browser (the export has no server),
@@ -22,24 +23,34 @@ type State = { path: string; query: string; kind: Kind | null; referrer: string;
  */
 export function NotFoundHelper() {
   const [s, setS] = useState<State | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const { t } = useT();
 
   useEffect(() => {
     let live = true;
+    let unsubscribe = () => {};
     // Deferred a frame: the address is an external fact read once after mount, like ?q= on the search page.
     const id = requestAnimationFrame(() => {
       const path = window.location.pathname;
       const query = pathToQuery(path);
       const kind = kindFromPath(path);
       const referrer = document.referrer && !document.referrer.startsWith(window.location.origin) ? document.referrer : "";
-      try { localStorage.setItem(MISSED_PATHS_KEY, JSON.stringify(recordMiss(parseMissed(localStorage.getItem(MISSED_PATHS_KEY)), path))); } catch { /* private mode or full */ }
+      if (attempt === 0) try { localStorage.setItem(MISSED_PATHS_KEY, JSON.stringify(recordMiss(parseMissed(localStorage.getItem(MISSED_PATHS_KEY)), path))); } catch { /* private mode or full */ }
       setS({ path, query, kind, referrer, rows: query ? null : [] });
       if (!query) return;
-      loadSearch()
-        .then(({ ms }) => { if (live) setS((prev) => (prev ? { ...prev, rows: searchRanked(ms, query, TOP) as SearchDoc[] } : prev)); })
-        .catch(() => { if (live) setS((prev) => (prev ? { ...prev, rows: [] } : prev)); });
+      // The names-only first stage answers first (src/lib/search-client.ts); an empty answer from it is not final, so
+      // the list stays "Loading search…" until the full index, which re-runs the query when it lands.
+      const show = (ms: Parameters<typeof searchRanked>[0], full: boolean) => {
+        const rows = searchRanked(ms, query, TOP) as SearchDoc[];
+        if (live && (full || rows.length)) setS((prev) => (prev ? { ...prev, rows } : prev));
+      };
+      unsubscribe = onFullSearch(({ ms }) => show(ms, true), () => { if (live) setS((prev) => (prev && prev.rows === null ? { ...prev, rows: "error" } : prev)); });
+      loadQuickSearch()
+        .then(({ ms, full }) => show(ms, full))
+        .catch(() => { if (live) setS((prev) => (prev ? { ...prev, rows: "error" } : prev)); });
     });
-    return () => { live = false; cancelAnimationFrame(id); };
-  }, []);
+    return () => { live = false; unsubscribe(); cancelAnimationFrame(id); };
+  }, [attempt]);
 
   if (!s) return <p className="text-sm text-muted">Looking for the nearest match…</p>;
   const hub = s.kind ? KIND_META[s.kind] : null;
@@ -58,11 +69,12 @@ export function NotFoundHelper() {
             <svg viewBox="0 0 24 24" aria-hidden className="h-5 w-5 text-accent" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm5 12 4 4" /></svg>
             Were you looking for one of these?
           </h2>
-          {s.rows === null && <p className="text-sm text-muted">Searching for &ldquo;{s.query}&rdquo;…</p>}
-          {s.rows && s.rows.length === 0 && (
+          {s.rows === null && <p className="text-sm text-muted" role="status">{t("search.loading")}</p>}
+          {s.rows === "error" && <p className="text-sm text-muted" role="status">{t("search.unavailable")} <button type="button" onClick={() => setAttempt((n) => n + 1)} className="underline hover:text-foreground">{t("search.retry")}</button></p>}
+          {Array.isArray(s.rows) && s.rows.length === 0 && (
             <p className="text-sm text-muted">Nothing in OnCo matches &ldquo;{s.query}&rdquo;. {hub ? <>Browse <Link href={`/${hub.route}/`} className="underline hover:text-foreground">all {hub.plural}</Link> or </> : "Try "}<Link href={`/search/?q=${encodeURIComponent(s.query)}`} className="underline hover:text-foreground">the full search</Link>, which also matches concepts.</p>
           )}
-          {s.rows && s.rows.length > 0 && (
+          {Array.isArray(s.rows) && s.rows.length > 0 && (
             <>
               <ol className="space-y-2">
                 {s.rows.map((r) => (

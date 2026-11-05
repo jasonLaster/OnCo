@@ -32,8 +32,8 @@ vi.mock("next/navigation", () => { const router = { push: vi.fn() }; return { us
 vi.mock("next/link", () => ({ default: "a" }));
 vi.mock("next/dynamic", () => ({ default: () => "molecule" }));
 vi.mock("./KindGroupHeader", () => ({ KindGroupHeader: "group-header" }));
-vi.mock("@/lib/i18n/ui", () => ({ useT: () => ({ kind: (name: string) => name, status: (name: string) => name }) }));
-vi.mock("@/lib/search-client", () => ({ loadSearch: vi.fn(() => new Promise(() => {})) }));
+vi.mock("@/lib/i18n/ui", () => ({ useT: () => ({ kind: (name: string) => name, status: (name: string) => name, t: (key: string) => key }) }));
+vi.mock("@/lib/search-client", () => ({ loadQuickSearch: vi.fn(() => new Promise(() => {})), onFullSearch: () => () => {} }));
 
 type Props = { children?: ReactNode; ref?: { current: Element | null }; [key: string]: unknown };
 type Node = ReactElement<Props>;

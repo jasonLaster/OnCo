@@ -74,8 +74,11 @@ describe("the command palette discards work the reader has moved past", () => {
     expect(run, "every run claims the next id").toContain("const id = ++request.current;");
     expect(run, "and a resolved load paints only if it is still current").toContain("if (request.current !== id) return;");
     expect(run, "a failed load is recorded against its own request").toContain("if (request.current === id)");
-    // The permanent "Loading index…" is gone: it now yields to the failure line.
-    expect(src).toContain("Search is unavailable. Type again to retry.");
-    expect(src).toContain("{!ready && !failed && q &&");
+    // The permanent "Loading index…" is gone: it now yields to the failure line, which carries a retry button.
+    expect(src).toContain('{t("search.unavailable")}');
+    expect(src).toContain('{t("search.retry")}');
+    expect(src).toContain("{waiting && !unavailable &&");
+    // "No matches" is said only by the full index, never by the names-only first stage (src/lib/search-client.ts).
+    expect(src).toContain('items.length === 0 && stage === "full"');
   });
 });

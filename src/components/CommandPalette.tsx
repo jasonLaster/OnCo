@@ -5,7 +5,7 @@ import { flushSync } from "react-dom";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
-import { loadSearch, searchRanked } from "@/lib/search-client";
+import { loadQuickSearch, onFullSearch, searchRanked } from "@/lib/search-client";
 import { flattenGroups, groupByKind, type KindGroup } from "@/lib/search-rank";
 import { KindGroupHeader } from "./KindGroupHeader";
 import { RowAvatar } from "./RowAvatar";
@@ -21,7 +21,7 @@ import type { SearchDoc } from "@/lib/search-index";
 import { statusClass } from "@/lib/text";
 import { useT } from "@/lib/i18n/ui";
 
-type Item = { id: string; kind: SearchDoc["kind"]; name: string; tldr: string; route: string; status?: string; portrait?: string; action?: true };
+type Item = { id: string; kind: SearchDoc["kind"]; name: string; tldr: string; route: string; status?: string; portrait?: string; action?: true; /** The ranked score, which groupByKind reads to let a decisive top hit lead whatever its kind. */ score?: number };
 
 /** Rows the palette shows in all for a query, across every kind group. */
 const VISIBLE = 14;
@@ -100,13 +100,20 @@ export function CommandPalette() {
   const [groups, setGroups] = useState<KindGroup<Item>[]>(PAGE_GROUPS);
   const items = useMemo(() => flattenGroups(groups), [groups]);
   const [active, setActive] = useState(0);
-  const [ready, setReady] = useState(false);
+  /** Which index has answered: none yet, the names-only first stage, or the full one (src/lib/search-client.ts). */
+  const [stage, setStage] = useState<"none" | "names" | "full">("none");
+  const ready = stage !== "none";
   const [indexed, setIndexed] = useState(0);
+  /** Index hits for the current query, so an empty first-stage answer reads "Loading search…" and not "No matches". */
+  const [hitCount, setHitCount] = useState(0);
+  const query = useRef("");
+  /** An index has answered a query in this palette, so a new keystroke can keep the rows on screen until its own answer lands. */
+  const answered = useRef(false);
   /** The index could not be loaded. Typing again retries, because loadSearch drops a failed promise (#188). */
   const [failed, setFailed] = useState(false);
   /** Monotonic id of the newest query, so a slower earlier one cannot paint over it (#159). */
   const request = useRef(0);
-  const { kind: kindName, status: statusName } = useT();
+  const { kind: kindName, status: statusName, t } = useT();
   const input = useRef<HTMLInputElement>(null);
   const list = useRef<HTMLUListElement>(null);
   const dialog = useRef<HTMLDivElement>(null);
@@ -170,8 +177,8 @@ export function CommandPalette() {
   useEffect(() => {
     if (!open) return;
     const t = setTimeout(() => input.current?.focus(), 0);
-    loadSearch()
-      .then(({ docs }) => { setIndexed(docs.length); setReady(true); setFailed(false); })
+    loadQuickSearch()
+      .then(({ docs, full }) => { setIndexed(docs.length); setStage((s) => (s === "full" || full ? "full" : "names")); setFailed(false); })
       .catch(() => setFailed(true));
     document.body.style.overflow = "hidden";
     return () => { clearTimeout(t); document.body.style.overflow = ""; };
@@ -185,20 +192,39 @@ export function CommandPalette() {
    */
   const run = useCallback((value: string) => {
     const id = ++request.current;
+    query.current = value;
     setActive(0);
     const needle = value.trim().toLowerCase();
     if (!needle) { setGroups(PAGE_GROUPS); return; }
     const pages = PAGES.filter((p) => `${p.name} ${p.tldr}`.toLowerCase().includes(needle)).slice(0, PAGE_MATCHES);
-    loadSearch().then(({ ms }) => {
+    // Until an index has answered, the list shows only the tool pages this query matches, under "Loading search…",
+    // rather than every tool page as if nothing had been typed.
+    if (!answered.current) setGroups(groupByKind(pages, VISIBLE));
+    loadQuickSearch().then(({ ms, full }) => {
       if (request.current !== id) return;
       setFailed(false);
+      answered.current = true;
+      setStage((s) => (s === "full" || full ? "full" : "names"));
       // The whole ranked list comes back so the grouping can take the top rows of each kind; a page the tool list
-      // already matched is not repeated from the index.
+      // already matched is not repeated from the index. The score travels with each row: without it groupByKind could
+      // never let a decisive top hit lead, so a company or person typed in full sat under every treatment row ("Jaime
+      // Leandro Foundation" was row 13 of 14, below the fold, on 4 November 2026).
       const seen = new Set(pages.map((p) => p.route));
-      const hits: Item[] = searchRanked(ms, value).filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status }));
+      const hits: Item[] = searchRanked(ms, value).filter((h) => !seen.has(h.route)).map((h) => ({ id: h.id, kind: h.kind, name: h.name, tldr: h.tldr, route: h.route, status: h.status, score: h.score }));
+      setHitCount(hits.length);
       setGroups(groupByKind([...pages, ...hits], VISIBLE));
     }).catch(() => { if (request.current === id) { setFailed(true); setGroups(groupByKind(pages, VISIBLE)); } });
   }, []);
+
+  // When search.json lands behind the names-only stage, the open query is searched again on the full index.
+  useEffect(() => {
+    if (!open) return;
+    return onFullSearch(({ docs }) => {
+      setIndexed(docs.length);
+      setStage("full");
+      if (query.current.trim()) run(query.current);
+    }, () => setFailed(true));
+  }, [open, run]);
 
   const go = (item: Item) => { setOpen(false); setQ(""); setGroups(PAGE_GROUPS); router.push(item.route); };
 
@@ -223,6 +249,11 @@ export function CommandPalette() {
   useEffect(() => { list.current?.querySelector(`#palette-opt-${active}`)?.scrollIntoView({ block: "nearest" }); }, [active]);
 
   // Render order: each group's header, then its rows numbered on through the flat list so ids and `active` agree.
+  // Search is unavailable only when there is nothing to show for it: first-stage rows stay up if the full index fails.
+  const unavailable = failed && !!q.trim() && (stage !== "names" || hitCount === 0);
+  // No index yet, or an empty answer from the names-only stage, which is not final.
+  const waiting = !!q.trim() && (!ready || (stage === "names" && hitCount === 0));
+
   const rows = useMemo(() => {
     let i = 0;
     return groups.map((g) => ({ kind: g.kind, rows: g.items.map((it) => ({ it, i: i++ })) }));
@@ -248,9 +279,11 @@ export function CommandPalette() {
         <ul id="palette-list" ref={list} className="max-h-[60vh] overflow-auto py-1" role="listbox" aria-label="Results">
           {/* "Loading index…" stayed on screen for the rest of the visit when the load failed, because `ready`
               never became true. It says what is true instead, and typing again retries (#188). */}
-          {failed && q && <li className="px-4 py-3 text-sm text-muted" role="presentation">Search is unavailable. Type again to retry.</li>}
-          {!ready && !failed && q && <li className="px-4 py-3 text-sm text-muted" role="presentation">Loading index…</li>}
-          {items.length === 0 && ready && !failed && <li className="px-4 py-3 text-sm text-muted" role="presentation">No matches.</li>}
+          {unavailable && <li className="px-4 py-3 text-sm text-muted" role="presentation">{t("search.unavailable")} <button type="button" onClick={() => { input.current?.focus(); run(q); }} className="underline hover:text-foreground">{t("search.retry")}</button></li>}
+          {/* An empty answer is final only from the full index: until it has loaded, a word in a summary can still
+              match, so an empty first-stage list says it is still loading rather than "No matches". */}
+          {waiting && !unavailable && <li className="px-4 py-3 text-sm text-muted" role="status">{t("search.loading")}</li>}
+          {items.length === 0 && stage === "full" && !failed && <li className="px-4 py-3 text-sm text-muted" role="presentation">{t("table.noMatches")}</li>}
           {rows.map((g) => [
             <KindGroupHeader key={`h-${g.kind}`} kind={g.kind} label={g.kind === "page" ? undefined : kindName(g.kind, "title")} />,
             ...g.rows.map(({ it, i }) => (
@@ -275,7 +308,7 @@ export function CommandPalette() {
           <span><kbd className="border border-border rounded px-1">↵</kbd> open</span>
           <span><kbd className="border border-border rounded px-1">⌘K</kbd> toggle</span>
           <button type="button" onClick={() => { setOpen(false); openShortcuts(); }} className="underline hover:text-foreground">All shortcuts <kbd className="border border-border rounded px-1">?</kbd></button>
-          <span className="ml-auto" aria-live="polite">{ready ? `${indexed.toLocaleString("en-GB")} objects indexed` : ""}</span>
+          <span className="ml-auto" aria-live="polite">{stage === "full" ? `${indexed.toLocaleString("en-GB")} objects indexed` : stage === "names" && q.trim() ? t("search.namesOnly") : ""}</span>
         </div>
       </div>
     </div>

@@ -78,6 +78,10 @@ export const ja: UiDict = {
   "header.stars": "GitHub スター {n}",
   "header.starsTitle": "GitHub スター {n}。リポジトリにスターを付けると、他の人が見つけやすくなります。",
   "header.skip": "本文へ移動",
+  "search.loading": "検索を読み込み中…",
+  "search.unavailable": "検索を読み込めませんでした。",
+  "search.retry": "再試行",
+  "search.namesOnly": "現在は名前のみ一致。完全な検索を読み込み中…",
 
   "region.global": "グローバル",
   "region.globalBlurb": "すべての地域を国旗で表示。特定の国向けページはメニューに表示されません",

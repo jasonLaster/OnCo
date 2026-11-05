@@ -13,6 +13,7 @@ import { z } from "zod";
 import { graph } from "../src/lib/graph";
 import { EntitySchema, KIND_META, KINDS, routeFor } from "../src/lib/schema";
 import { siteSearchDocs } from "../src/lib/search-index";
+import { toNameDoc } from "../src/lib/search-names";
 import { rankInstitutions } from "../src/lib/ranking";
 import { benchmark } from "../src/data/benchmark";
 import { OPEN_SOURCE_GENERATED, OPEN_SOURCE_SKIPPED, openSourceProjects } from "../src/data/open-source";
@@ -58,7 +59,10 @@ for (const e of g.entities) {
 
 write("all.json", { entities: g.entities, incoming });
 writeText("all.ndjson", toNdjson(g.entities.map((e) => ({ ...e, route: routeFor(e) }))));
-write("search.json", siteSearchDocs());
+const searchDocs = siteSearchDocs();
+write("search.json", searchDocs);
+// The first stage of the browser search (src/lib/search-names.ts): the same documents without TL;DR and tags.
+write("search-names.json", searchDocs.map(toNameDoc));
 for (const k of KINDS) {
   const list = g.kind(k);
   write(`${KIND_META[k].plural}.json`, list);

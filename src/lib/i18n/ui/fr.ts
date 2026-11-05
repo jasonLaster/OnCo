@@ -78,6 +78,10 @@ export const fr: UiDict = {
   "header.stars": "{n} étoiles GitHub",
   "header.starsTitle": "{n} étoiles GitHub. Ajoutez une étoile au dépôt pour aider d'autres à le trouver.",
   "header.skip": "Aller au contenu",
+  "search.loading": "Chargement de la recherche…",
+  "search.unavailable": "Impossible de charger la recherche.",
+  "search.retry": "Réessayer",
+  "search.namesOnly": "Correspondances de noms pour l'instant ; la recherche complète se charge encore…",
 
   "region.global": "Monde",
   "region.globalBlurb": "Toutes les régions sous forme de drapeaux ; les pages propres à un pays sont masquées des menus",

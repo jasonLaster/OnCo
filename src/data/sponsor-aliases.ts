@@ -357,6 +357,10 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/italian sarcoma/, { id: "italian-sarcoma-group", label: "Italian Sarcoma Group", kind: "cooperative-group" }],
   [/scandinavian sarcoma/, { id: "scandinavian-sarcoma-group", label: "Scandinavian Sarcoma Group", kind: "cooperative-group" }],
   [/dutch|^hovon/, { label: "Dutch cooperative groups", kind: "cooperative-group" }],
+  // NCI networks with their own records (census fill, 4 November 2026), above the broad NCI patterns.
+  [/\bimmuno-oncology translational network\b|\biotn\b/, { id: "iotn", label: "Immuno-Oncology Translational Network", kind: "other" }],
+  [/\bcancer screening research network\b/, { id: "nci-csrn", label: "NCI Cancer Screening Research Network", kind: "other" }],
+  [/\btelehealth research centers of excellence\b|\bnci trace\b/, { id: "nci-trace", label: "NCI Telehealth Research Centers of Excellence", kind: "other" }],
   [/national clinical trials network|nctn/, { id: "nci", label: "NCI National Clinical Trials Network", kind: "government" }],
   // ---- Government ----
   [/^(us )?national cancer institute \(nci\)|^(us )?national cancer institute$|^nci\b(?! (cairo|egypt))|\(nci\)/, { id: "nci", label: "National Cancer Institute (US)", kind: "government" }],
@@ -378,6 +382,13 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/national institutes of health|\bnih\b|national institute on aging/, { label: "US National Institutes of Health", kind: "government" }],
   [/national cancer center japan|national cancer center hospital/, { id: "ncc-japan", label: "National Cancer Center Japan", kind: "institution" }],
   // ---- Institutions ----
+  // Proton centres with their own records whose names contain their host's pattern below (census fill, 4 November 2026).
+  [/\bmd anderson proton therapy cent(er|re)\b|\bmd anderson cancer cent(er|re) -? ?proton therapy\b/, { id: "md-anderson-proton-therapy-center", label: "MD Anderson Proton Therapy Center", kind: "institution" }],
+  [/\bemory proton therapy cent(er|re)\b/, { id: "emory-proton-therapy-center", label: "Emory Proton Therapy Center", kind: "institution" }],
+  [/\bjohns hopkins (national )?proton therapy cent(er|re)\b/, { id: "johns-hopkins-proton-therapy-center", label: "Johns Hopkins Proton Therapy Center", kind: "institution" }],
+  [/\bnorthwestern medicine proton cent(er|re)\b/, { id: "northwestern-medicine-proton-center", label: "Northwestern Medicine Proton Center", kind: "institution" }],
+  [/\bschulze family foundation proton cent(er|re)\b|\bmoffitt proton cent(er|re)\b/, { id: "moffitt-schulze-proton-center", label: "Richard M. Schulze Family Foundation Proton Center", kind: "institution" }],
+  [/\bst\.? jude (red frog events )?proton therapy cent(er|re)\b/, { id: "st-jude-proton-therapy-center", label: "St. Jude Proton Therapy Center", kind: "institution" }],
   // Children's hospitals and centres whose names contain a broader institution's pattern below (added 4 November 2026).
   [/loyola/, { id: "loyola-cardinal-bernardin", label: "Loyola Cardinal Bernardin Cancer Center", kind: "institution" }],
   [/mass general brigham cancer institute/, { id: "mass-general-brigham-cancer-institute", label: "Mass General Brigham Cancer Institute", kind: "institution" }],

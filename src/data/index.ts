@@ -28,6 +28,7 @@ import { groups } from "./groups";
 import { frontier } from "./frontier";
 import { people } from "./people";
 import { peopleInvestigatorsWave } from "./people-investigators-wave";
+import { cassianYeePeople, cassianYeeCompanies, cassianYeeInstitutions, cassianYeeTerms, cassianYeePapers, cassianYeeTrials } from "./people-cassian-yee-2026-11";
 import { bottlenecks } from "./bottlenecks";
 import { sources } from "./sources";
 import { mechanisms } from "./mechanisms";
@@ -331,6 +332,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...groups,
   ...frontier,
   ...people, ...peopleInvestigatorsWave,
+  ...cassianYeePeople, ...cassianYeeCompanies, ...cassianYeeInstitutions, ...cassianYeeTerms, ...cassianYeePapers, ...cassianYeeTrials,
   ...bottlenecks,
   ...ideaWaves,
   ...sources,

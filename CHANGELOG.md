@@ -6,10 +6,25 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 5 November 2026
+- The census fill rounds: hospices and Maggie's centres, psycho-oncology and fertility services, helplines, patient coalitions and patient guides, 87 reporting and staging systems, 103 graded complementary products, 27 hereditary syndromes and germline tests, vaccines and screening, donor registries, biobanks, laws, payers, open-source projects, veterinary drugs and prizes
+
 ### 4 November 2026
+- The health gauges count the records the census fill rounds added
+- Twenty US proton centres, 31 stem cell donor registries and cord blood banks, 20 biobanks including BBMRI-ERIC and NCI TARGET, the nine CDMRP cancer programmes and 22 more funding programmes, four European right-to-be-forgotten statutes, Medicare's negotiated cancer drug prices and 16 Medicare coverage rulings
+- Prevention and screening gaps: hepatitis B and Chinese HPV vaccines, sixteen national HPV programmes from WHO data, nineteen FDA screening tests, three ER and PR staining kits, and twenty-seven national screening programmes
+- Hereditary cancer syndromes and germline tests: 27 syndrome pages from Orphanet and the NHS test directory with guideline-cited management, and 13 named hereditary cancer tests with their FDA or Genetic Testing Registry status
+- Patient coalitions and patient education: 33 European and international patient groups, NCCN Guidelines for Patients on 77 guides, 112 NCI PDQ patient summaries and 309 ONS/NCODA patient education sheets linked from their records
+- The four FDA-approved dog cancer medicines and the Comparative Oncology Trials Consortium, the bodies behind the Brupbacher, Pezcoller-AACR, King Faisal, Gairdner and Sjoberg prizes, and the AACR, ASCO, Lasker, Coley, Szent-Gyorgyi, Griffuel and Deutscher Krebspreis awards on the records that give them, with their laureates linked
+- Five product changes wait at /admin/: header alignment, country wave 3, faster search, the machines page and the search-miss event
+- Complementary products: 103 graded records from Memorial Sloan Kettering's About Herbs and NCI PDQ, including milk thistle, black cohosh, low-dose naltrexone, PC-SPES, the Gonzalez regimen, kratom, cesium chloride, vitamins and minerals, medicinal mushrooms and herbal cancer cures
+- Hospices, end-of-life care, navigation, fertility preservation, psycho-oncology, genetics services and helplines: 31 Maggie's centres, the nine Marie Curie hospices, Sue Ryder and Hospice UK; advance care planning documents, hospice services and nine assisted dying laws read from their statutes; patient navigation and the Medicare navigation codes; six fertility preservation services and schemes; IPOS and its 28 national societies; the seven NHS genomic regions and the NSGC directory; and 23 cancer helplines and information services in 20 countries with the ICISG member list
+- Reporting systems, response criteria and staging systems: 87 glossary records from the November gap census, each citing its defining paper or society page
+- Open-source catalogue: 91 projects from the November gap census, pathology first, with the stale Sybil, GISTIC2 and Rcan skips corrected
+- Census corrections: four more state wig-cover laws, ten NCCN guideline links that pointed at the wrong or a retired guideline, the UKONS and CTCAE links and the CTCAE v6 bands, Bravnetsa's September approval, the lung ninth edition, and aliases that sent readers to the wrong page
+- Empty files registered for the November gap fill of hospices, end-of-life care, navigation, fertility preservation, psycho-oncology, genetic counselling and helplines
+- Gap census: 174 kinds of oncology object measured against outside lists, with 3,313 sourced gaps, eight kinds with no record and the corrections found on the way
 - 268 cancer institutions measured against the IRS and Charity Commission registers, AACI, the Children's Oncology Group, Japan's designated cancer hospitals, India's National Cancer Grid and UICC, including the American Cancer Society itself
-- Accuracy round two checks every figure on the country pages and the 60 most-linked cancer pages against its source: 365 corrections, 37 dead DOIs replaced, and NICE's October reversal on trastuzumab deruxtecan for HER2-low breast cancer
-- Drugs now link what they bind rather than what they act on downstream, an investor and a trials group are no longer credited as makers, and stale company histories are corrected from registry and SEC records
 - National cancer societies: 27 UICC members from Denmark, Norway, Finland, Belgium, New Zealand, South Africa, Singapore, Hong Kong, Japan, Korea, the Philippines, Egypt and Latin America, the registered names of fourteen centres the corpus held, and the institution lists described in the data sources
 - The British Thoracic Oncology Group is held as a nonprofit company beside the other groups, and new charity records drop a tag that had no description
 - New centres keep their own trials: sponsor names for Loyola, Mass General Brigham, Mott, UCSF Benioff, UPMC Children's and St. Jude India resolve to their records, and UICC links the American Cancer Society itself

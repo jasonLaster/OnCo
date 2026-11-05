@@ -31,11 +31,15 @@ const MAX_DRIFT = 0.2;
 
 /** Recorded 2026-09-25, after the gauge review that followed the 12,400-to-18,160 growth. */
 const RECORDED: Array<{ id: string; total: number; label: string }> = [
-  { id: "sources", total: 18160, label: "Records with a primary source" },
-  { id: "backlinks", total: 18141, label: "Records with three or more relations" },
-  { id: "orphans", total: 18141, label: "Records something links to" },
-  { id: "tldr", total: 18160, label: "TL;DRs that are full sentences" },
-  { id: "summary", total: 18160, label: "Summaries of 300 characters or more" },
+  // 18,160 (18,141 for the gauges that leave out sections and years) to 21,793 and 21,773 on 4 November 2026: the
+  // November gap rounds, ending with the device and contrast agent round (src/data/devices-gaps-2026-11.ts and its two
+  // siblings). These whole-corpus gauges ask about every record, so every new record is the kind they count and the
+  // denominators move with them.
+  { id: "sources", total: 21793, label: "Records with a primary source" },
+  { id: "backlinks", total: 21773, label: "Records with three or more relations" },
+  { id: "orphans", total: 21773, label: "Records something links to" },
+  { id: "tldr", total: 21793, label: "TL;DRs that are full sentences" },
+  { id: "summary", total: 21793, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
   { id: "regional-approvals", total: 450, label: "Approved products with regional rows" },
   // 1,080 to 1,442 on 3 November 2026: 282 company pipeline products (src/data/company-pipeline-gap.ts, gap audit class 5)
@@ -63,12 +67,12 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
   { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
-  { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
+  { id: "stale", total: 21793, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
-  { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },
-  { id: "simple", total: 18160, label: "Records with a simple explanation" },
-  { id: "translations", total: 18160, label: "Records with a TL;DR in all eight languages" },
-  { id: "provenance", total: 18160, label: "Records with git provenance" },
+  { id: "reviewed", total: 21773, label: "Records a named human reviewer has signed off" },
+  { id: "simple", total: 21793, label: "Records with a simple explanation" },
+  { id: "translations", total: 21793, label: "Records with a TL;DR in all eight languages" },
+  { id: "provenance", total: 21793, label: "Records with git provenance" },
   // 3,798 to 4,561 on 4 November 2026: the 282 pipeline products and 14 targets released with the lighter engine pages,
   // and the drugs added by the startup monitors and the coverage lists. They are drugs and targets, which is what this
   // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.

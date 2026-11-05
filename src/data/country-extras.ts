@@ -95,4 +95,17 @@ export const countryExtras: Record<string, CountryExtra> = {
   BD: { name: "Bangladesh", population: 174, incidence: 118, mortality: 88, gcoUrl: gco(50) },
   NG: { name: "Nigeria", population: 233, incidence: 114, mortality: 71, gcoUrl: gco(566) },
   TH: { name: "Thailand", population: 72, incidence: 142, mortality: 90, gcoUrl: gco(764) },
+  // Wave 4 (4 November 2026): rates from public/globocan/countries.json code 39, population from the World Bank 2024
+  // series as tabulated in docs/proposals/country-coverage-2026-11.md. No funder is given because none was researched
+  // for this file; each country page names its funders where it found them.
+  VN: { name: "Viet Nam", population: 101, incidence: 142, mortality: 89, gcoUrl: gco(704) },
+  PH: { name: "Philippines", population: 116, incidence: 150, mortality: 89, gcoUrl: gco(608) },
+  ET: { name: "Ethiopia", population: 132, incidence: 95, mortality: 59, gcoUrl: gco(231) },
+  ZA: { name: "South Africa", population: 64, incidence: 162, mortality: 88, gcoUrl: gco(710) },
+  CO: { name: "Colombia", population: 53, incidence: 181, mortality: 79, gcoUrl: gco(170) },
+  AR: { name: "Argentina", population: 46, incidence: 215, mortality: 100, gcoUrl: gco(32) },
+  UA: { name: "Ukraine", population: 38, incidence: 218, mortality: 108, gcoUrl: gco(804) },
+  RO: { name: "Romania", population: 19, incidence: 266, mortality: 128, gcoUrl: gco(642) },
+  MY: { name: "Malaysia", population: 36, incidence: 141, mortality: 85, gcoUrl: gco(458) },
+  DZ: { name: "Algeria", population: 47, incidence: 153, mortality: 79, gcoUrl: gco(12) },
 };

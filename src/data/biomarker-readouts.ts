@@ -289,7 +289,7 @@ export const biomarkerReadouts: BiomarkerInput[] = [
       th({ value: "Hormone receptor-positive (guideline >= 1% nuclei)", drugId: "capivasertib", cancerId: "breast-hr-positive", regulator: "FDA", source: LABEL.truqap, quote: "in combination with fulvestrant for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN -alterations" }),
     ],
     definedBy: ASCO_CAP_ER,
-    cancers: ["breast-hr-positive", "breast-cancer", "hr-positive-early-high-risk", "hr-positive-metastatic-post-cdk46", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib", "ribociclib", "abemaciclib", "elacestrant", "alpelisib", "capivasertib"], tests: ["oncotype-dx-breast"],
+    cancers: ["breast-hr-positive", "breast-cancer", "hr-positive-early-high-risk", "hr-positive-metastatic-post-cdk46", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib", "ribociclib", "abemaciclib", "elacestrant", "alpelisib", "capivasertib"], tests: ["oncotype-dx-breast"], assays: ["er-pr-ventana-confirm", "er-pr-dako", "er-pr-leica"],
     forPatient: "If 1 percent or more of your tumour cells stain for the oestrogen receptor, the cancer is ER-positive and hormone-blocking drugs (tamoxifen, aromatase inhibitors, fulvestrant) are part of treatment, usually with a CDK4/6 inhibitor when the cancer has spread. A result between 1 and 10 percent is 'low positive'; your team may treat it more like ER-negative disease and discuss chemotherapy.",
     terms: ["hormone-receptor-status", "ihc", "serd"], related: ["pr-status", "ki-67-index", "esr1-mutation-ctdna"], links: [ASCO_CAP_ER], tags: ["biomarker", "hormone-receptor"] }),
 
@@ -300,7 +300,7 @@ export const biomarkerReadouts: BiomarkerInput[] = [
     scoringRule: { text: "PR-positive: at least 1 percent of tumour cell nuclei stain positive by IHC; PR-negative below 1 percent.", quote: "PgR-positive... if ≥ 1% of tumor cell nuclei are immunoreactive", source: ASCO_CAP_ER.url, sourceLabel: ASCO_CAP_ER.label },
     thresholds: [th({ value: "Hormone receptor-positive (ER or PR >= 1%)", drugId: "palbociclib", cancerId: "breast-hr-positive", regulator: "FDA", source: LABEL.ibrance, quote: "hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer", note: "Palbociclib label wording; the 1 percent rule is the ASCO/CAP guideline's, not the label's." })],
     definedBy: ASCO_CAP_ER,
-    cancers: ["breast-hr-positive", "breast-cancer", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib"],
+    cancers: ["breast-hr-positive", "breast-cancer", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib"], assays: ["er-pr-ventana-confirm", "er-pr-dako", "er-pr-leica"],
     forPatient: "A PR-positive result adds to the case for hormone-blocking treatment and generally means a better outlook; a PR-negative result in an ER-positive cancer is a sign the cancer may respond less well to hormone therapy alone. Either receptor at 1 percent or more makes the cancer hormone-receptor-positive for treatment purposes.",
     terms: ["hormone-receptor-status", "ihc"], related: ["er-status", "ki-67-index"], links: [ASCO_CAP_ER], tags: ["biomarker", "hormone-receptor"] }),
 

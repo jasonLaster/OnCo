@@ -117,6 +117,7 @@ import { tests } from "./tests";
 import { testsCdxDevices } from "./tests-cdx-devices";
 import { mcedPapers } from "./mced-census";
 import { mcedTests, mcedCompanies } from "./mced-census-tests";
+import { preventionScreeningGaps2026_11 } from "./prevention-screening-gaps-2026-11";
 import { mcedTrials } from "./mced-census-trials";
 import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
@@ -357,6 +358,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...tests,
   ...testsCdxDevices,
   ...mcedPapers, ...mcedTests, ...mcedCompanies, ...mcedTrials,
+  ...preventionScreeningGaps2026_11,
   ...nciCoverage,
   ...networkInstitutions, ...networkPeople,
   ...institutionsIndia,

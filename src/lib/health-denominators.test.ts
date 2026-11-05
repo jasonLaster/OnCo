@@ -62,7 +62,11 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // (src/data/spikes/breast-residual-subclones.ts). Each is a bottleneck that ideas are meant to attack, the kind this
   // gauge asks about, so the denominator moves with them.
   { id: "bottleneck-ideas", total: 55, label: "Bottlenecks with ten or more ideas" },
-  { id: "term-wikipedia", total: 1029, label: "Terms with a Wikipedia link, or checked and found to have none" },
+  // 1,029 to 1,277 on 4 November 2026: glossary rounds since the row was set, and last the prevention and screening
+  // gap round (src/data/prevention-screening-gaps-2026-11.ts), whose 47 terms are national HPV vaccination and
+  // screening programmes. They are terms, the kind this gauge asks about, and none has been checked against Wikipedia
+  // yet, so the denominator grows and the score falls, which is the true reading.
+  { id: "term-wikipedia", total: 1277, label: "Terms with a Wikipedia link, or checked and found to have none" },
   { id: "stale", total: 18160, label: "Records checked in the last 60 days" },
   { id: "kind-size", total: 18, label: "Open kinds with 25 or more records" },
   { id: "reviewed", total: 18141, label: "Records a named human reviewer has signed off" },

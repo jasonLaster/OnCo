@@ -56,7 +56,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "haematologic"], journals: ["leukemia-research"],
   }),
   c({
-    id: "mds", trials: ["nct05883956", "nct04256317", "nct04064060"], name: "Myelodysplastic syndromes / neoplasms (MDS)", aka: ["Myelodysplastic syndrome", "Myelodysplastic neoplasm"], group: "haematologic", wikipedia: W("Myelodysplastic_syndrome"),
+    id: "mds", institutions: ["aamds-international-foundation"], trials: ["nct05883956", "nct04256317", "nct04064060"], name: "Myelodysplastic syndromes / neoplasms (MDS)", aka: ["Myelodysplastic syndrome", "Myelodysplastic neoplasm"], group: "haematologic", wikipedia: W("Myelodysplastic_syndrome"),
     burden: "MDS affects around 4-5 per 100,000 people per year overall (4.7 in SEER 2001-2016), rising steeply with age; the median age at diagnosis in SEER data was 76.",
     tldr: "Bone-marrow disorders where blood cells are made badly and too few reach the blood; a third progress to acute leukaemia. Treatment ranges from transfusions and growth factors to hypomethylating drugs and, for the fit, transplant.",
     summary: "MDS are clonal myeloid neoplasms with ineffective haematopoiesis, cytopenias, dysplasia and variable risk of transformation to AML. Risk is stratified by IPSS-R and, since 2022, the molecular IPSS-M, which incorporates mutations (TP53 multi-hit, ASXL1, RUNX1, SF3B1 among 31 genes). The WHO 2022 and ICC classifications define genetically specified entities (SF3B1-mutant, del(5q), biallelic TP53) and renamed the group 'myelodysplastic neoplasms'.\n\nLower-risk disease is treated for anaemia: erythropoiesis-stimulating agents, lenalidomide for del(5q), luspatercept (MEDALIST 2020, COMMANDS 2023 first line), and imetelstat (IMerge, 2024) after ESA failure. Higher-risk disease is treated with hypomethylating agents (azacitidine, decitabine, oral decitabine-cedazuridine) and, for the fit with a donor, allogeneic transplant, the only cure. Three large phase 3 additions to azacitidine failed in 2023-25 (magrolimab ENHANCE, sabatolimab STIMULUS-MDS2, venetoclax VERONA), leaving azacitidine alone as the higher-risk standard.\n\nOpen problems: TP53-mutant MDS, post-HMA failure (median survival under six months), and how to use IPSS-M to time transplant.",
@@ -94,7 +94,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "haematologic"], people: ["uwe-platzbecker", "pierre-fenaux"], related: ["systemic-mastocytosis"], journals: ["leukemia-research"],
   }),
   c({
-    id: "myeloproliferative-neoplasms", institutions: ["leukaemia-care"], trials: ["nct06093672", "nct06351631", "nct04468984", "nct06468033", "nct04717414", "nct04562389", "verify", "nct07429266", "nct05481151", "nct06033586", "nct04064060", "impactmf", "nct04285086", "nct04655092"], name: "Myeloproliferative neoplasms (PV, ET, myelofibrosis)", group: "haematologic", wikipedia: W("Myeloproliferative_neoplasm"),
+    id: "myeloproliferative-neoplasms", institutions: ["leukaemia-care", "mpn-research-foundation"], trials: ["nct06093672", "nct06351631", "nct04468984", "nct06468033", "nct04717414", "nct04562389", "verify", "nct07429266", "nct05481151", "nct06033586", "nct04064060", "impactmf", "nct04285086", "nct04655092"], name: "Myeloproliferative neoplasms (PV, ET, myelofibrosis)", group: "haematologic", wikipedia: W("Myeloproliferative_neoplasm"),
     aka: ["MPN", "Polycythaemia vera", "Essential thrombocythaemia", "Primary myelofibrosis"],
     burden: "Combined incidence around 2-3 per 100,000 per year; PV and ET are chronic diseases lived with for decades, myelofibrosis has a median survival of about six years.",
     tldr: "Myeloproliferative neoplasms are slow-growing blood cancers in which the marrow overproduces red cells (polycythaemia vera), platelets (essential thrombocythaemia) or scar tissue (myelofibrosis). Almost all carry a mutation in JAK2, CALR or MPL; treatment aims to prevent clots and control symptoms, and only transplant cures myelofibrosis.",
@@ -286,7 +286,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "haematologic", "cns"],
   }),
   c({
-    id: "waldenstrom", related: ["marginal-zone-lymphoma", "follicular-lymphoma", "mantle-cell-lymphoma"], trials: ["aspen-wm"], name: "Waldenström macroglobulinaemia", group: "haematologic", wikipedia: W("Waldenstr%C3%B6m_macroglobulinemia"),
+    id: "waldenstrom", institutions: ["iwmf"], related: ["marginal-zone-lymphoma", "follicular-lymphoma", "mantle-cell-lymphoma"], trials: ["aspen-wm"], name: "Waldenström macroglobulinaemia", group: "haematologic", wikipedia: W("Waldenstr%C3%B6m_macroglobulinemia"),
     aka: ["Lymphoplasmacytic lymphoma", "WM"],
     burden: "About 3-4 per million per year; median age ~70; median survival now exceeds 10 years.",
     tldr: "A slow lymphoma that makes an abnormal IgM antibody, causing thick blood, anaemia and nerve damage. Nearly all cases share one mutation (MYD88 L265P), and BTK inhibitors control it for years.",
@@ -476,7 +476,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "skin"], pathways: ["basal-cell-carcinoma-signalling"],
   }),
   c({
-    id: "uveal-melanoma", related: ["mucosal-melanoma", "acral-melanoma", "advanced-melanoma"], trials: ["nct07804186", "nct07015190", "nct06581406", "nct05022901", "nct05987332", "nct06007690", "nct07136181"], name: "Uveal melanoma", group: "skin", wikipedia: W("Uveal_melanoma"),
+    id: "uveal-melanoma", institutions: ["a-cure-in-sight", "ocumel-uk", "ocular-melanoma-foundation"], related: ["mucosal-melanoma", "acral-melanoma", "advanced-melanoma"], trials: ["nct07804186", "nct07015190", "nct06581406", "nct05022901", "nct05987332", "nct06007690", "nct07136181"], name: "Uveal melanoma", group: "skin", wikipedia: W("Uveal_melanoma"),
     aka: ["Ocular melanoma", "Choroidal melanoma", "Intraocular Melanoma"],
     burden: "About 5-7 per million per year (the most common primary eye cancer in adults); half of patients eventually develop metastases, almost always in the liver.",
     tldr: "A melanoma inside the eye that is biologically unrelated to skin melanoma: different mutations, no response to standard immunotherapy, and a tendency to spread to the liver years later. Tebentafusp is the first drug ever to extend survival in the metastatic disease.",
@@ -544,7 +544,7 @@ export const gapCancers: CancerInput[] = [
   }),
   // ======================= Gastrointestinal =======================
   c({
-    id: "anal", name: "Anal cancer (squamous cell carcinoma)", group: "gastrointestinal", wikipedia: W("Anal_cancer"),
+    id: "anal", institutions: ["anal-cancer-foundation"], name: "Anal cancer (squamous cell carcinoma)", group: "gastrointestinal", wikipedia: W("Anal_cancer"),
     burden: "Uncommon, and rising ~2-3% a year in high-income countries; over 90% caused by HPV; higher in people living with HIV and in women.",
     tldr: "An HPV-caused cancer of the anal canal that is usually cured without surgery by combined chemotherapy and radiation. Prevention (HPV vaccination, screening of high-risk groups) and immunotherapy for advanced disease are the new fronts.",
     summary: "Anal squamous cell carcinoma is an HPV-driven cancer (HPV16 in most), biologically closer to cervical cancer than to rectal adenocarcinoma. Risk factors are HPV persistence, HIV, immunosuppression, receptive anal intercourse and smoking; high-grade anal intraepithelial neoplasia is the precursor, and the ANCHOR trial (2022) showed treating it in people with HIV cuts progression to cancer by more than half.\n\nDefinitive chemoradiation with mitomycin and 5-fluorouracil (Nigro regimen 1974; ACT II confirmed mitomycin-5-FU and no benefit of maintenance) cures ~70-80% and preserves the sphincter; salvage abdominoperineal resection is reserved for persistent or recurrent disease. Metastatic disease was treated with carboplatin-paclitaxel (InterAAct, 2020); PD-1 blockade showed activity in refractory disease (nivolumab NCI9673, pembrolizumab KEYNOTE-158), and POD1UM-303 (2024) established retifanlimab plus carboplatin-paclitaxel as first-line standard (FDA approval 2025). Response-adapted radiotherapy dose (PLATO trials) and ctHPV DNA monitoring are being developed.",
@@ -576,7 +576,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "gastrointestinal", "hpv"], related: ["urethral"],
   }),
   c({
-    id: "gist", related: ["leiomyosarcoma", "desmoid-tumour", "inflammatory-myofibroblastic-tumour", "dermatofibrosarcoma-protuberans"], trials: ["nct07585266", "nct05208047", "nct07218926", "nct07379047", "nct03673501", "grid", "navigator"], name: "Gastrointestinal stromal tumour (GIST)", group: "gastrointestinal", wikipedia: W("Gastrointestinal_stromal_tumor"),
+    id: "gist", institutions: ["gist-support-international"], related: ["leiomyosarcoma", "desmoid-tumour", "inflammatory-myofibroblastic-tumour", "dermatofibrosarcoma-protuberans"], trials: ["nct07585266", "nct05208047", "nct07218926", "nct07379047", "nct03673501", "grid", "navigator"], name: "Gastrointestinal stromal tumour (GIST)", group: "gastrointestinal", wikipedia: W("Gastrointestinal_stromal_tumor"),
     burden: "GIST affects about 10-15 per million per year (the most common sarcoma); stomach 60%, small bowel 30%; median age ~65.",
     tldr: "GIST is a sarcoma of the gut wall driven almost always by a KIT or PDGFRA mutation. It was the proof that a pill can control a solid tumour: imatinib turned a median survival of about a year into one of eight years or more, and the mutation now dictates which drug to use.",
     summary: "GIST arises from interstitial cells of Cajal and carries activating KIT mutations (~75%, mostly exon 11, some exon 9) or PDGFRA mutations (~10%, including the imatinib-resistant D842V); the remainder are SDH-deficient (young patients, Carney-Stratakis), NF1-associated, or BRAF/NTRK-driven. Risk after resection is estimated from size, mitotic rate and site (Miettinen/AFIP, modified NIH).\n\nSurgery is the only cure; adjuvant imatinib for three years improves survival in high-risk disease (SSGXVIII), with five years or longer under study. Advanced disease is treated with imatinib (400 mg; 800 mg for exon 9), then sunitinib (2006), regorafenib (2013) and ripretinib (INVICTUS, 2020) in sequence; avapritinib is the drug for PDGFRA D842V (2020). Resistance comes from secondary KIT mutations in the ATP-binding pocket (exon 13/14) or activation loop (exon 17/18) and is heterogeneous across lesions, which is why single next-generation inhibitors have struggled (INTRIGUE: ripretinib not superior to sunitinib overall, but better in ctDNA-defined exon 11 + 17/18 disease, now tested in INSIGHT) and why combinations (bezuclastinib + sunitinib, Peak) and ctDNA-guided selection are the current strategy. SDH-deficient GIST is TKI-insensitive and slow-growing; temozolomide has activity.",
@@ -609,7 +609,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "gastrointestinal", "sarcoma"],
   }),
   c({
-    id: "appendiceal", trials: ["nct06399757"], name: "Appendiceal cancer and pseudomyxoma peritonei", group: "gastrointestinal", wikipedia: W("Pseudomyxoma_peritonei"),
+    id: "appendiceal", institutions: ["acpmp-research-foundation", "guided-path", "appendix-cancer-connection", "pmp-pals", "pseudomyxoma-survivor"], trials: ["nct06399757"], name: "Appendiceal cancer and pseudomyxoma peritonei", group: "gastrointestinal", wikipedia: W("Pseudomyxoma_peritonei"),
     aka: ["Appendix cancer", "PMP", "Low-grade appendiceal mucinous neoplasm (LAMN)"],
     burden: "About 1-2 per 100,000 per year and rising, especially in adults under 50; most are found incidentally at appendicectomy.",
     tldr: "Rare tumours of the appendix that range from slow mucin-producing growths that fill the abdomen (pseudomyxoma peritonei) to aggressive adenocarcinomas. The slow forms are treated by extensive surgery with heated chemotherapy in the abdomen; the fast ones like colon cancer.",
@@ -988,7 +988,7 @@ export const gapCancers: CancerInput[] = [
     tags: ["gap-fill", "head-and-neck", "viral"], journals: ["tumour-virus-research"],
   }),
   c({
-    id: "thymic-epithelial", name: "Thymoma and thymic carcinoma", group: "thoracic", wikipedia: W("Thymoma"),
+    id: "thymic-epithelial", institutions: ["foundation-for-thymic-cancer-research"], name: "Thymoma and thymic carcinoma", group: "thoracic", wikipedia: W("Thymoma"),
     aka: ["Thymic epithelial tumours", "TET", "Thymus Cancer"],
     burden: "About 1.5-3 per million per year; the most common anterior mediastinal tumour in adults; a third of thymoma patients have myasthenia gravis.",
     tldr: "Thymoma and thymic carcinoma are rare tumours of the thymus gland in the chest. Thymomas grow slowly, often cause autoimmune diseases such as myasthenia gravis, and are usually cured by surgery; thymic carcinomas behave like other aggressive cancers and have few effective drugs.",

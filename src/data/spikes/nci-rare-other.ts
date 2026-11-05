@@ -342,7 +342,7 @@ export const nciRareOtherCancers: CancerInput[] = [
     tags: ["nci-coverage", "rare", "haematologic"],
   }),
   c({
-    id: "systemic-mastocytosis", trials: ["nct04910685"], name: "Systemic mastocytosis", group: "haematologic", wikipedia: W("Mastocytosis"),
+    id: "systemic-mastocytosis", institutions: ["mastocytosis-society"], trials: ["nct04910685"], name: "Systemic mastocytosis", group: "haematologic", wikipedia: W("Mastocytosis"),
     aka: ["SM", "Advanced systemic mastocytosis (AdvSM)", "Indolent systemic mastocytosis (ISM)", "Smouldering systemic mastocytosis", "Aggressive systemic mastocytosis", "Mast cell leukaemia", "SM with an associated haematological neoplasm (SM-AHN)"],
     burden: "Roughly one to two new cases per 100,000 per year, most of them indolent; advanced forms are rare, and many indolent cases go undiagnosed for years because symptoms mimic allergy (WHO; ECNM registry).",
     tldr: "Systemic mastocytosis is a clonal disease of mast cells, the immune cells that release histamine; almost every case is driven by a single mutation in the KIT gene. Precise KIT-blocking pills now shrink the mast cell burden, ease symptoms and, in the aggressive forms, prolong life. Most patients have the indolent form, where the goal is controlling symptoms and preventing anaphylaxis.",

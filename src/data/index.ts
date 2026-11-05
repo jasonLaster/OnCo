@@ -124,6 +124,7 @@ import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
 import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
 import { institutionsPatientCoalitions, collectionsPatientCoalitions } from "./institutions/patient-coalitions-2026-11";
+import { institutionsRareCancerFoundations, collectionsRareCancerFoundations } from "./institutions/rare-cancer-foundations-2026-11";
 import { patientEducationLinks } from "./patient-education-links-2026-11";
 import { institutionsUsCentresAaci } from "./institutions/us-cancer-centres-aaci";
 import { companiesUkCancerCharities, institutionsUkCancerCharities } from "./institutions/uk-cancer-charities";
@@ -406,6 +407,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...institutionsIndia,
   ...institutionsUsCancerCharities,
   ...institutionsPatientCoalitions, ...collectionsPatientCoalitions,
+  ...institutionsRareCancerFoundations, ...collectionsRareCancerFoundations,
   ...institutionsUsCentresAaci,
   ...institutionsUkCancerCharities,
   ...institutionsCogPaediatric,

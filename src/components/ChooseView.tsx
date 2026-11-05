@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { prefersReducedMotion } from "@/lib/reading";
 
 /**
  * Two-column tools on a phone (docs/MOBILE.md). A chooser (organ list, biomarker ticks, saved queries) on one side
@@ -62,7 +63,7 @@ export function ChooseView({ pane, onPane, choose, view, chooseLabel = "Choose",
     const el = root.current;
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.scrollY - 60;
-    if (window.scrollY > top) window.scrollTo({ top, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    if (window.scrollY > top) window.scrollTo({ top, behavior: prefersReducedMotion() ? "auto" : "smooth" });
     if (pane === "view") viewRef.current?.focus({ preventScroll: true });
   }, [pane]);
 

@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "provider": "Elicit API",
+  "endpoint": "https://elicit.com/api/v2/search/papers",
+  "retrievedAt": "2026-11-08T22:43:21.636Z",
+  "request": {
+    "query": "Which primary method studies identify overlooked distinctions in RNA and cell-therapy product characterization, delivery, process comparability, analytical method validation, impurities, stability and potency?",
+    "searchMode": "semantic",
+    "maxResults": 15,
+    "corpus": "elicit"
+  },
+  "response": {
+    "papers": [
+      {
+        "elicitId": "ss-221183292",
+        "title": "Transcriptomics uncovers substantial variability associated with alterations in manufacturing processes of macrophage cell therapy products",
+        "authors": [
+          "O. Gurvich",
+          "K. Puttonen",
+          "A. Bailey",
+          "A. Kailaanmäki",
+          "V. Skirdenko",
+          "Minna Sivonen",
+          "S. Pietikäinen",
+          "Nigel R. Parker",
+          "S. Ylä-Herttuala",
+          "T. Kekarainen"
+        ],
+        "year": 2020,
+        "abstract": "Gene expression plasticity is central for macrophages' timely responses to cues from the microenvironment permitting phenotypic adaptation from pro-inflammatory (M1) to wound healing and tissue-regenerative (M2, with several subclasses). Regulatory macrophages are a distinct macrophage type, possessing immunoregulatory, anti-inflammatory, and angiogenic properties. Due to these features, regulatory macrophages are considered as a potential cell therapy product to treat clinical conditions, e.g., non-healing diabetic foot ulcers. In this study we characterized two differently manufactured clinically relevant regulatory macrophages, programmable cells of monocytic origin and comparator macrophages (M1, M2a and M0) using flow-cytometry, RT-qPCR, phagocytosis and secretome measurements, and RNA-Seq. We demonstrate that conventional phenotyping had a limited potential to discriminate different types of macrophages which was ameliorated when global transcriptome characterization by RNA-Seq was employed. Using this approach we confirmed that macrophage manufacturing processes can result in a highly reproducible cell phenotype. At the same time, minor changes introduced in manufacturing resulted in phenotypically and functionally distinct regulatory macrophage types. Additionally, we have identified a novel constellation of process specific biomarkers, which will support further clinical product development.",
+        "doi": "10.1038/s41598-020-70967-2",
+        "pmid": "32820219",
+        "venue": "Scientific Reports",
+        "citedByCount": 33,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-1361553",
+        "title": "Microarray‐based gene expression analysis as a process characterization tool to establish comparability of complex biological products: Scale‐up of a whole‐cell immunotherapy product",
+        "authors": [
+          "Min Wang",
+          "R. Senger",
+          "C. Paredes",
+          "Gautam G. Banik",
+          "A. Lin",
+          "E. Papoutsakis"
+        ],
+        "year": 2009,
+        "abstract": "Whole‐cell immunotherapies and other cellular therapies have shown promising results in clinical trials. Due to the complex nature of the whole cell product and of the sometimes limited correlation of clinical potency with the proposed mechanism of action, these cellular immunotherapy products are generally not considered well characterized. Therefore, one major challenge in the product development of whole cell therapies is the ability to demonstrate comparability of product after changes in the manufacturing process. Such changes are nearly inevitable with increase in manufacturing experience leading to improved and robust processes that may have higher commercial feasibility. In order to comprehensively assess the impact of the process changes on the final product, and thus establish comparability, a matrix of characterization assays (in addition to lot release assays) assessing the various aspects of the cellular product are required. In this study, we assessed the capability of DNA‐microarray‐based, gene‐expression analysis as a characterization tool using GVAX cancer immunotherapy cells manufactured by Cell Genesys, Inc. The GVAX immunotherapy product consists two prostate cancer cell lines (CG1940 and CG8711) engineered to secrete human GM‐CSF. To demonstrate the capability of the assay, we assessed the transcriptional changes in the product when produced in the presence or absence of fetal bovine serum, and under normal and hypoxic conditions, both changes intended to stress the cell lines. We then assessed the impact of an approximately 10‐fold process scale‐up on the final product at the transcriptional level. These data were used to develop comparisons and statistical analyses suitable for characterizing culture reproducibility and cellular product similarity. Use of gene‐expression data for process characterization proved to be a reproducible and sensitive method for detecting differences due to small or large changes in culture conditions as might be encountered in process scale‐up or unanticipated bioprocess failures. Gene expression analysis demonstrated that cell products of representative lots under the same production process and at the same production scale were statistically identical. Large process changes that resulted from the artificial stress conditions used (absence of FBS and induction of hypoxia) displayed profoundly different gene expression patterns. We propose the use of simple t‐test analysis in combination with the herein introduced expression ratio with mean intensity (ERMI) analysis as useful tools for process characterization by global gene expression analysis. Biotechnol. Bioeng. 2009; 104: 796–808 © 2009 Wiley Periodicals, Inc.",
+        "doi": "10.1002/bit.22441",
+        "pmid": "19591186",
+        "venue": "Biotechnology and Bioengineering",
+        "citedByCount": 4,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-286323782",
+        "title": "Assessing mRNA and sgRNA Quality for Cell and Gene Therapy Applications Using Nanopore Direct RNA Sequencing.",
+        "authors": [
+          "Kamalakar Chatla",
+          "B. Roper",
+          "Luladey Ayalew",
+          "Peggy Ko",
+          "Steffen Lippold",
+          "Meenakshi K. Doma",
+          "Julien Camperi"
+        ],
+        "year": 2026,
+        "abstract": "Recent advances in RNA technology have enabled the development of diverse therapeutics spanning vaccines, immunotherapies, and genome-editing platforms. Ensuring clinical efficacy and safety requires precise characterization and control of RNA critical quality attributes (CQAs). Nanopore direct RNA sequencing (NDRS) has emerged as a powerful single-molecule analytical approach capable of simultaneously resolving sequence and structural features consistent with regulatory expectations. In this study, we establish NDRS as a comprehensive, multiattribute analytical platform by integrating novel strategies to assess key CQAs in a single assay. Following workflow optimization, NDRS accurately determined full-length mRNA sequences and evaluated transcript integrity. Notably, we developed the first sequencing-based method for quantifying 5' capping efficiency directly from native RNA molecules. Additionally, we demonstrated, for the first time, full-length sequencing of 100-nucleotide single-guide RNA (sgRNA) molecules by incorporating a 5' RNA oligo adapter, enabling complete identity verification. Quantitative results for poly(A) tail length, integrity, and capping efficiency were consistent with established orthogonal techniques, including chromatography and mass spectrometry. Moreover, functional correlation studies with Cas9 mRNA and sgRNA used in CRISPR-Cas9 editing revealed that increased mRNA degradation led to decreased knockout efficiency. Together, these findings position NDRS as a versatile and unified analytical platform for comprehensive characterization of mRNA and sgRNA, supporting quality assurance, comparability, and control in the development and manufacturing of next-generation RNA therapeutics.",
+        "doi": "10.1021/acs.analchem.5c06819",
+        "pmid": "41787951",
+        "venue": "Analytical Chemistry",
+        "citedByCount": 3,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-1312311",
+        "title": "Quality assessment of cellular therapies: the emerging role of molecular assays",
+        "authors": [
+          "D. Stroncek",
+          "P. Jin",
+          "Jia-Qiang Ren",
+          "Ji Feng",
+          "L. Castiello",
+          "S. Civini",
+          "E. Wang",
+          "F. Marincola",
+          "M. Sabatino"
+        ],
+        "year": 2010,
+        "abstract": "Cellular therapies are becoming increasingly important in treating cancer, hematologic malignancies, autoimmune disorders, and damaged tissue. These therapies are becoming more effective and are being used more frequently, but they are also becoming more complex. As a result, quality testing is becoming an increasingly important part of cellular therapy. Cellular therapies should be tested at several points during their production. The starting material, intermediate products and the final product are usually analyzed. Products are evaluated at critical steps in the manufacturing process and at the end of production prior to the release of the product for clinical use. In addition, the donor of the starting biologic material is usually evaluated. The testing of cellular therapies for stability, consistency, comparability and potency is especially challenging. We and others have found that global gene and microRNA expression analysis is useful for comparability testing and will likely be useful for potency, stability and consistency testing. Several examples of the use of gene expression analysis for assessing cellular therapies are presented.",
+        "doi": "10.5045/kjh.2010.45.1.14",
+        "pmid": "21120158",
+        "venue": "The Korean Journal of Hematology",
+        "citedByCount": 12,
+        "urls": [
+          "https://synapse.koreamed.org/upload/SynapseXML/0072kjh/pdf/kjh-45-14.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://synapse.koreamed.org/upload/SynapseXML/0072kjh/pdf/kjh-45-14.pdf"
+      },
+      {
+        "elicitId": "ss-280847003",
+        "title": "Characterisation of small RNA-based therapeutics and their process impurities by fast and sensitive liquid chromatography high resolution mass spectrometry.",
+        "authors": [
+          "Silvia Millán-Martín",
+          "Felipe Guapo",
+          "Sara Carillo",
+          "Ulrik H. Mistarz",
+          "Ken Cook",
+          "J. Bones"
+        ],
+        "year": 2025,
+        "abstract": null,
+        "doi": "10.1016/j.jpba.2025.117097",
+        "pmid": "40840061",
+        "venue": "Journal of Pharmaceutical and Biomedical Analysis",
+        "citedByCount": 6,
+        "urls": [
+          "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6836f8091a8f9bdab56d7885/original/characterisation-of-small-rna-based-therapeutics-and-their-process-impurities-by-fast-sensitive-and-reproducible-liquid-chromatography-high-resolution-mass-spectrometry.pdf",
+          "https://doi.org/10.1016/j.jpba.2025.117097",
+          "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/687026cbe1957b8c6143812e/original/characterisation-of-small-rna-based-therapeutics-and-their-process-impurities-by-fast-sensitive-and-reproducible-liquid-chromatography-high-resolution-mass-spectrometry.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 2,
+        "fullTextUrl": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6836f8091a8f9bdab56d7885/original/characterisation-of-small-rna-based-therapeutics-and-their-process-impurities-by-fast-sensitive-and-reproducible-liquid-chromatography-high-resolution-mass-spectrometry.pdf"
+      },
+      {
+        "elicitId": "ss-292760459",
+        "title": "Potency, off-target analysis, and comparability in vivo gene-edited therapy development",
+        "authors": [
+          "K. Lim"
+        ],
+        "year": 2026,
+        "abstract": "The guide RNA is a drug substance or a critical component with its own manufacturing requirement. It is not just a reagent and should not be treated as such. Abi Pinchbeck, Commissioning Editor, Cell & Gene Therapy Insights, speaks with Kok-Seong Lim, Principal, Eight Crest Strategies, about the analytical characterization of gene-edited therapies. They discussed the differences between ex vivo and in vivo approaches, potency assay development, off-target analysis and guide RNA specification, comparability after process changes, release testing, and the emerging technologies such as long-read next-generation sequencing set to reshape how these products are measured.",
+        "doi": "10.18609/cgti.2026.114",
+        "pmid": null,
+        "venue": "Cell and Gene Therapy Insights",
+        "citedByCount": 0,
+        "urls": [
+          "https://doi.org/10.18609/cgti.2026.114"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.18609/cgti.2026.114"
+      },
+      {
+        "elicitId": "ss-219503348",
+        "title": "The application of high content omics for comparability testing of an allogeneic cell therapy",
+        "authors": [
+          "J. Kearney",
+          "L. Li",
+          "T. Thwaites",
+          "T. B. Kheir",
+          "D. Marshall",
+          "D. Moss",
+          "A. Williams",
+          "R. Woodward",
+          "S. Grimster",
+          "S. Davies",
+          "S. Patel",
+          "R. Nuamah",
+          "U. Kadolsky",
+          "S. Kannambath",
+          "H. Bolt",
+          "M. Kleeman",
+          "Y. Kamra"
+        ],
+        "year": 2020,
+        "abstract": null,
+        "doi": "10.1016/j.jcyt.2020.03.089",
+        "pmid": null,
+        "venue": "Cytotherapy",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-256936308",
+        "title": "The Role of Separation Techniques in the Analysis of mRNA Therapeutic Drug Substances and Drug Products",
+        "authors": [
+          "C.J. Vanhinsbergh"
+        ],
+        "year": 2023,
+        "abstract": "Messenger ribonucleic acids (mRNA) therapeutics are becoming more widespread pharmaceutical tools to treat a wide range of diseases or infections, as highlighted by regulatory approval of two vaccines for SARS‑CoV-2. Alongside their use as vaccines, they also play a role in protein replacement therapy to ensure therapeutic protein is synthesized within the patient. Structural elements, such as the 5’ cap, UTR regions, reading frame, and poly A tail are considered as critical quality attributes (CQAs) that are subject to a range of analytical techniques. However, chromatography and other separation methods are commonly used for characterization and quantification of the drug substance and drug product. This article reviews a range of techniques available for separative analysis of mRNA therapeutics, their associated impurities, and delivery vehicles.",
+        "doi": "10.56530/lcgc.eu.hk6689y3",
+        "pmid": null,
+        "venue": "LCGC Europe",
+        "citedByCount": 1,
+        "urls": [
+          "https://cdn.sanity.io/files/0vv8moc6/chroma/f6a208c369620d3807fb64b519c8db65a51885e2.pdf/Vol%2036%20No%202%20LCGC%20Europe%20February%202023%20Regular%20Issue.pdf"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": "https://cdn.sanity.io/files/0vv8moc6/chroma/f6a208c369620d3807fb64b519c8db65a51885e2.pdf/Vol%2036%20No%202%20LCGC%20Europe%20February%202023%20Regular%20Issue.pdf"
+      },
+      {
+        "elicitId": "ss-254813004",
+        "title": "Comprehensive multi-attribute method workflow for biotherapeutic characterization and current good manufacturing practices testing",
+        "authors": [
+          "Silvia Millán-Martín",
+          "Craig Jakes",
+          "Sara Carillo",
+          "Richard S. Rogers",
+          "Da Ren",
+          "J. Bones"
+        ],
+        "year": 2022,
+        "abstract": "The multi-attribute method (MAM) is a liquid chromatography-mass spectrometry (LC-MS)-based method that is used to directly characterize and monitor numerous product quality attributes (PQAs) at the amino acid level of a biopharmaceutical product. MAM enables identity testing based on primary sequence verification, detection and quantitation of post-translational modifications and impurities. This ability to simultaneously and directly determine PQAs of therapeutic proteins makes MAM a more informative, streamlined and productive workflow than conventional chromatographic and electrophoretic assays. MAM relies on proteolytic digestion of the sample followed by reversed-phase chromatographic separation and high-resolution LC-MS analysis in two phases. First, a discovery study to determine quality attributes for monitoring is followed by the creation of a targeted library based on high-resolution retention time plus accurate mass analysis. The second aspect of MAM is the monitoring phase based on the target peptide library and new peak detection using differential analysis of the data to determine the presence, absence or change of any species that might affect the activity or stability of the biotherapeutic. The sample preparation process takes between 90 and 120 min, whereas the time spent on instrumental and data analyses might vary from one to several days for different sample sizes, depending on the complexity of the molecule, the number of attributes to be monitored and the information to be detailed in the final report. MAM is developed to be used throughout the product life cycle, from process development through upstream and downstream processes to quality control release or under current good manufacturing practices regulations enforced by regulatory agencies.\n\n© 2022. Springer Nature Limited.",
+        "doi": "10.1038/s41596-022-00785-5",
+        "pmid": "36526726",
+        "venue": "Nature Protocols",
+        "citedByCount": 39,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-290686247",
+        "title": "Capillary Electrophoresis in RNA Therapeutics: Toward a Core Analytical Platform for Development, Release Testing, and Process Analytics",
+        "authors": [
+          "Bo Yang",
+          "Xuanye Wei",
+          "Wenqian Bi",
+          "Chele Mugong",
+          "Sicheng Ye",
+          "Yunchong Jiang",
+          "Yoshinori Yamaguchi",
+          "Zhen-Qing Li"
+        ],
+        "year": 2026,
+        "abstract": "The rapid expansion of RNA therapeutics requires analytical methods that resolve molecular integrity, heterogeneity, and process-related impurities. Capillary electrophoresis (CE) provides direct RNA separation with low sample consumption and can be coupled with laser-induced fluorescence (LIF) or mass spectrometry (MS). This review assesses CE across RNA therapeutic development, release testing, and process analytics. We examine CE separation methods and platform formats for mRNA integrity and poly(A) tail analysis, size- and structure-related impurity profiling, circular RNA purity evaluation, RNA modification analysis by CE-MS, and aptamer discovery. We also discuss multi-capillary systems, microchip electrophoresis (MCE), automation, artificial intelligence (AI)-assisted data analysis, and bioprocess integration. CE is already highly useful for selected quality control tasks, especially mRNA integrity, poly(A) tail profiling, and circular RNA purity, but broader routine adoption requires improved sensitivity, standardization, method transfer, and regulatory acceptance.",
+        "doi": "10.3390/separations13080211",
+        "pmid": null,
+        "venue": "Separations",
+        "citedByCount": 0,
+        "urls": [
+          "https://www.mdpi.com/2297-8739/13/8/211/pdf?version=1784967956"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": 2,
+        "fullTextUrl": "https://www.mdpi.com/2297-8739/13/8/211/pdf?version=1784967956"
+      },
+      {
+        "elicitId": "ss-281277052",
+        "title": "Single-Cell Sequencing for the Characterization of Mesenchymal Cell Therapy Products: A Tool to Assess Batch-to-Batch Variability in Allogeneic Manufacturing",
+        "authors": [
+          "R. Moreno"
+        ],
+        "year": 2025,
+        "abstract": "Comprehensive characterization of cell therapy products is crucial to ensure product consistency, quality, and safety, particularly in the context of allogeneic manufacturing.In this study, we implemented a single-cell RNA sequencing (scRNA-seq) platform that integrates the Chromium system (10x Genomics) with Illumina sequencing to enable transcriptomic profiling of mesenchymal stromal cells (MSCs) at single-cell resolution.This approach enables the identification of transcriptionally distinct subpopulations within MSC products and provides insights into their functional heterogeneity.The platform was applied to multiple production batches of allogeneic MSCs to investigate inter-batch variability.Our results reveal differences in cell composition and gene expression signatures between batches, highlighting the presence of variable proportions of subpopulations potentially associated with immunomodulatory capacity, proliferation, or differentiation potential.Our findings demonstrate the value of scRNA-seq as a high-resolution tool for batch comparability assessments and the identification of critical quality attributes (CQAs) in MSC-based products.The integration of this technology into manufacturing workflows supports the development of robust quality control strategies, facilitates more predictable production outcomes, and contributes to more cost-effective manufacturing of allogeneic cell therapies.",
+        "doi": "10.51219/urforum.2025.roberto-moreno",
+        "pmid": null,
+        "venue": "2nd International Conference on Cell Science and Regenerative Medicine",
+        "citedByCount": 0,
+        "urls": [
+          "https://doi.org/10.51219/urforum.2025.roberto-moreno"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.51219/urforum.2025.roberto-moreno"
+      },
+      {
+        "elicitId": "ss-82424123",
+        "title": "Product Characterization from Gene to Therapeutic Product",
+        "authors": [
+          "K. Baker",
+          "S. Flatman",
+          "J. Birch"
+        ],
+        "year": 2007,
+        "abstract": "This chapter contains sections titled: Introduction Target Specifications Setting Specifications Physicochemical Properties Biological Activity Immunochemical Properties Purity and Impurities Stability Analysis The Role of Characterization During Process Development Effect of Process Changes on Product Characteristics: Case Studies Conclusions References",
+        "doi": "10.1002/9780470723791.CH22",
+        "pmid": null,
+        "venue": null,
+        "citedByCount": 3,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-282447165",
+        "title": "The Laboratory and Clinical Guide to RNA Therapeutic Analysis and Patient Management: Advanced Analytical Techniques and Nursing Considerations for the Physicochemical, Functional, and Safe Clinical Application of RNA Therapeutics",
+        "authors": [
+          "Laila Hafez Hakami",
+          "Ateyah Laheg Nami Alhadri",
+          "Abduallaziz Jarallah Obied Alenzi",
+          "S. Al-Mutairi",
+          "A. Alotaibi",
+          "Maryam Sushil Alneaimy",
+          "Bishi Moukli",
+          "H. Alshehri",
+          "Ahlam Alanazi",
+          "Ibrahim Ali Mdarbesh",
+          "Khalid Eid Alfaris",
+          "D. Alzahrani",
+          "F. Al-Otaibi"
+        ],
+        "year": 2024,
+        "abstract": "Background: The success of messenger RNA (mRNA) vaccines has established RNA as a foundation therapeutic modality. The field of RNA therapeutics, however, extends far beyond vaccines and includes heterogeneous molecules like small interfering RNAs (siRNAs), antisense oligonucleotides (ASOs), and circular RNAs (circRNAs), each with its respective set of analytical challenges.\n\nAim: The aim of this review is to outline advances from 2015-2025 to provide an overall view of the laboratory toolkit required to ensure the identity, purity, potency, and safety of the broad diversity of RNA therapeutics. Furthermore, this review briefly outlines the critical role of nursing professionals in the clinical administration and patient monitoring of these sophisticated therapeutics.\n\nMethods: We conducted a systematic review of the literature, spanning analytical techniques for the analysis of the RNA molecule itself—its primary sequence, integrity, and higher-order structure—and its delivery vehicles, with a focus on lipid nanoparticles (LNPs). Key in vitro and in vivo bioassays for determining biological activity were also discussed.\n\nResults: The analysis delineates a sophisticated, multi-dimensional toolkit. Techniques such as mass spectrometry and capillary electrophoresis determine RNA identity and purity, while methods such as SHAPE probing identify important higher-order structures. Lipid nanoparticle characterization relies on dynamic light scattering and cryo-electron microscopy for parameters like size and encapsulation efficiency. Functional potency is finally verified with cell-based assays and animal models.\n\nConclusion: A robust and in-depth analytical strategy is the foundation for the development of next-generation RNA drugs. This review is a beginning to address challenges in RNA analysis with a view to guaranteeing the safety and efficacy of such novel drugs.",
+        "doi": "10.64483/jmph-168",
+        "pmid": null,
+        "venue": "Saudi Journal of Medicine and Public Health",
+        "citedByCount": 0,
+        "urls": [
+          "https://doi.org/10.64483/jmph-168"
+        ],
+        "studyTypeTags": [
+          "Review",
+          "Systematic Review"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.64483/jmph-168"
+      },
+      {
+        "elicitId": "ss-246312888",
+        "title": "A high-resolution multi-attribute method for product characterization, process characterization, and quality control of therapeutic proteins.",
+        "authors": [
+          "Xiaoyan Guan",
+          "Tamer Eris",
+          "Le Zhang",
+          "D. Ren",
+          "M. Ricci",
+          "Tiffany Thiel",
+          "C. Goudar"
+        ],
+        "year": 2022,
+        "abstract": null,
+        "doi": "10.1016/j.ab.2022.114575",
+        "pmid": "35085546",
+        "venue": "Analytical Biochemistry",
+        "citedByCount": 27,
+        "urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0003269722000306/pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 3,
+        "fullTextUrl": "https://www.sciencedirect.com/science/article/pii/S0003269722000306/pdf"
+      },
+      {
+        "elicitId": "ss-289772788",
+        "title": "Harnessing analytical tool innovation for R&D, product characterization, and QC",
+        "authors": [
+          "Jeske Smink"
+        ],
+        "year": 2026,
+        "abstract": "“As RNA therapeutics continue their journey from niche technologies to mainstream medicines ... it has become a strategic enabler of innovation, manufacturability and regulatory confidence.",
+        "doi": "10.18609/nai.2026.043",
+        "pmid": null,
+        "venue": "Nucleic Acid Insights",
+        "citedByCount": 0,
+        "urls": [
+          "https://doi.org/10.18609/nai.2026.043"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.18609/nai.2026.043"
+      }
+    ],
+    "warnings": []
+  }
+}

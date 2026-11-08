@@ -2,6 +2,25 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-08
+
+### Systematic public-education coverage audit: access and regulation
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Companion diagnostics](/technologies/companion-diagnostic/) | Presented a diagnostic result as deciding whether a drug is right for an individual | FDA companion-diagnostic definition and intended-use guidance | Defines information requirements, intended use and interpretation limits; scopes the diagram label to the corresponding treatment |
+| 2026-11-08 | [Companion diagnostic term](/terms/companion-diagnostic-term/) | Said a companion test is universally required before prescribing a particular drug | FDA companion-diagnostic definition and both-label guidance | Scopes the requirement to the corresponding use and separates the result from clinical suitability |
+| 2026-11-08 | [Drug label and indication](/terms/label-indication/) | Treated label wording as defining reimbursement and mixed it with broader access conclusions | FDA off-label and marketing-application information | Separates indication, evidence, suitability and payment |
+| 2026-11-08 | [Off-label use](/terms/off-label/) | Gave an unsourced prescribing proportion and an unqualified evidence comparison | FDA explanation of unapproved use of approved drugs | Defines the category and separates it from investigational products and evidence strength |
+| 2026-11-08 | [Traditional approval](/terms/full-approval/) | Defined traditional approval only by direct demonstrated clinical benefit | FDA expedited-program guidance, surrogate-endpoint section | Includes validated surrogate endpoints and removes the universal survival-benefit implication |
+| 2026-11-08 | [Fast Track and RMAT](/terms/fast-track-rmat/) | Included an unsupported eventual-approval proportion and treated distinct programs as equivalents | FDA expedited-program and RMAT criteria | Keeps designation criteria distinct from authorization and timing; routes PRIME aliases to the existing EU owner with a scoped explanation |
+| 2026-11-08 | [Accelerated approval](/terms/accelerated-approval/) | Generalized example-based withdrawal language without retaining indication and regulatory-process context | FDA accelerated-approval program and expedited-program guidance | Retains indication-specific confirmation and applicable withdrawal procedures |
+| 2026-11-08 | [Research use only](/terms/research-use-only/) | Generalized IVD guidance into legal requirements for every research model and website | FDA RUO/IUO guidance | Scopes the category to applicable intended-use and distribution rules |
+| 2026-11-08 | [LDT rule](/terms/fda-ldt-rule/) | Assigned all LDT clinical claims one FDA-review status | Current FDA vacatur/restoration notice and CMS laboratory-quality materials | Separates test origin, laboratory oversight, product authorization and clinical evidence |
+| 2026-11-08 | [Marketing applications](/terms/bla-nda/) | Called the review target a deadline with a promised decision and generalized application timing | FDA NDA, BLA, IND and expedited-program information | Separates submission, filing, review goals and approval |
+| 2026-11-08 | [Expanded access](/terms/expanded-access/) | Gave a general review-time shortcut and omitted the new-IND versus existing-IND protocol distinction | FDA expanded-access questions and answers, April 2026, Q4 to Q9 | Adds route-specific criteria, calendar versus working-day rules, review duties and separate delivery dependencies |
+| 2026-11-08 | [Federal Right to Try](/terms/right-to-try/) | Omitted parts of the eligible-product test and used unsupported access-rate/timing comparisons | FDA current Right to Try criteria and FAQ | Retains the complete product criteria and separates individual review, consent, reporting and voluntary supply |
+
 ## 2026-11-04
 
 ### Corrections found by the November 2026 gap census

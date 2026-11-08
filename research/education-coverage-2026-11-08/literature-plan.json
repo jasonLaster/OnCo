@@ -1,0 +1,67 @@
+{
+  "createdAt": "2026-11-08T22:43:09.977256+00:00",
+  "scope": "Adjacent concept discovery beyond the pinned public curriculum; no trial availability or clinical recommendation inferred.",
+  "queries": [
+    {
+      "id": "access-and-regulation",
+      "query": "Which original studies and regulatory analyses identify common oncology misunderstandings about companion diagnostics, test clinical utility, investigator-sponsored studies, investigational authorization versus marketing approval, and trial-site or cohort access?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "biology-basics",
+      "query": "Which primary cancer-biology experiments expose important distinctions between gene dosage, transcription, RNA processing, protein localization, receptor binding and cell behavior that are needed to interpret molecular tests?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "breast-cancer",
+      "query": "Which original pathology and clinical-methods studies distinguish specimen orientation, inked margins, sampling, residual tumor cellularity, nodal deposits and treatment response in breast cancer pathology?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "cancer-biology",
+      "query": "Which original cancer-biology studies distinguish cell of origin, cell state, clonal evolution, lineage plasticity, tissue invasion, tumor dormancy and metastatic colonization, including limits of extrapolating models?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "engineering-and-manufacturing",
+      "query": "Which primary method studies identify overlooked distinctions in RNA and cell-therapy product characterization, delivery, process comparability, analytical method validation, impurities, stability and potency?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "evidence-and-statistics",
+      "query": "Which original statistical methods studies explain common oncology errors involving causal estimands, intercurrent events, treatment-effect interactions, competing risks, repeated biomarkers, calibration and clinical utility?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "immunology",
+      "query": "Which original immunology experiments distinguish central and peripheral tolerance, antigen display and recognition, co-stimulation, T-cell activation, exhaustion, memory, receptor specificity and immune-mediated tumor killing?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "measurement",
+      "query": "Which original methods studies show overlooked interpretation limits in spatial and single-cell omics, DNA copy number and loss of heterozygosity, RNA isoforms, phosphoproteomics, immune assays and functional tumor models?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    },
+    {
+      "id": "therapeutics",
+      "query": "Which primary studies identify important distinctions across next-generation oncology payloads, targeted degradation, immune agonists, metabolic and epigenetic agents, radiation biology, therapeutic delivery and mechanism-specific resistance?",
+      "maxResults": 15,
+      "lane": "semantic paper discovery"
+    }
+  ],
+  "rules": [
+    "Every result occurrence receives a disposition.",
+    "A semantic result is not verified evidence.",
+    "New concepts enter the same coverage ledger.",
+    "Registry sweeps are added for any program, trial, access or current-status claim.",
+    "Two full review passes without a new unrepresented learning requirement are required for scoped completion."
+  ]
+}

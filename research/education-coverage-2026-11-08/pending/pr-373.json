@@ -1,0 +1,2453 @@
+{
+  "pr": 373,
+  "head": "851dfd3b1dabcac4f7ff5dcdf3183b321d878a29",
+  "newCount": 36,
+  "modifiedCount": 9,
+  "records": [
+    {
+      "id": "proteomics",
+      "kind": "technology",
+      "name": "Proteomics & phosphoproteomics",
+      "aka": [],
+      "tldr": "These methods measure proteins or selected signals derived from them. Some also measure chemical modifications, which need to be interpreted separately from protein amount.",
+      "summary": "Mass-spectrometry and antibody-based methods measure different protein-derived signals under defined workflows. A primary yeast study measured protein expression alongside phosphorylation and showed why a changed phosphopeptide signal can reflect protein abundance as well as phosphorylation. That methodological result is not a validated cancer-treatment rule. Targeted plasma-protein assays likewise require evidence about recovery, calibration and quantitative range. A protein measurement, modification-site signal, functional pathway dependence and prediction of treatment benefit are distinct claims.",
+      "status": "emerging",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Proteomics",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Proteomics"
+        },
+        {
+          "label": "Correct interpretation of comprehensive phosphorylation dynamics requires normalization by protein expression changes.",
+          "url": "https://doi.org/10.1074/mcp.m111.009654"
+        },
+        {
+          "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+          "url": "https://doi.org/10.1038/nbt.1546"
+        },
+        {
+          "label": "A reverse phase protein array based phospho-antibody characterization approach and its applicability for clinical derived tissue specimens.",
+          "url": "https://doi.org/10.1038/s41598-022-26715-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "targeted-proteomics-quantification",
+        "tissue-preparation-assay-fit",
+        "rppa",
+        "binder-affinity-epitope-developability"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics",
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "elucidate-bio",
+        "acrivon-therapeutics",
+        "biodesix",
+        "helio-genomics",
+        "nonagen-bioscience",
+        "omanta",
+        "oncohost"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Measure protein-derived peptide or antibody signals, retaining assay specificity, preparation, calibration and the distinction between protein amount and modification state.",
+      "strengths": [
+        "Measures protein-derived abundance and modification signals"
+      ],
+      "limitations": [
+        "Throughput and standardisation"
+      ]
+    },
+    {
+      "id": "imaging-mass-cytometry",
+      "kind": "technology",
+      "name": "Imaging mass cytometry",
+      "aka": [],
+      "tldr": "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
+      "summary": "The original imaging mass cytometry method combined metal-tagged antibodies with laser ablation and mass cytometry to map marker signals in tumor sections. Multiplexed ion beam imaging is a related approach that uses secondary ion mass spectrometry; the acquisition methods are distinct. Assigning tissue signals to individual cells also requires image analysis. Marker selection, antibody performance and segmentation affect what a reported cell profile means; a spatial association does not by itself establish a cellular mechanism or treatment response.",
+      "status": "emerging",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mass_cytometry",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mass_cytometry"
+        },
+        {
+          "label": "Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry.",
+          "url": "https://doi.org/10.1038/nmeth.2869"
+        },
+        {
+          "label": "Multiplexed ion beam imaging of human breast tumors.",
+          "url": "https://doi.org/10.1038/nm.3488"
+        },
+        {
+          "label": "Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning.",
+          "url": "https://doi.org/10.1038/s41587-021-01094-0"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-segmentation",
+        "proteomics",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "single-cell-spatial"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "navignostics",
+        "ionpath"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Imaging mass cytometry reads laser-ablated metal-tagged antibody signals from tissue; related ion-beam methods use a distinct acquisition approach.",
+      "strengths": [
+        "Multiple markers localized on one tissue section",
+        "Preserves spatial marker information",
+        "Supports cell profiling when staining and segmentation are validated"
+      ],
+      "limitations": [
+        "Slow acquisition and small fields of view",
+        "Expensive instruments",
+        "Research use only"
+      ]
+    },
+    {
+      "id": "neoantigen",
+      "kind": "term",
+      "name": "Neoantigen",
+      "aka": [
+        "neoantigens"
+      ],
+      "tldr": "An immune-recognition target arising from a sequence change in a tumor. Sequencing can suggest candidates, while display and recognition need their own evidence.",
+      "summary": "Tumor sequencing can nominate altered protein sequences, and prediction methods can prioritize candidate peptides. Natural presentation and immune recognition are separate questions. A primary melanoma study recovered mutated HLA-associated peptides from native tumor material and tested selected peptides with immune assays. A consortium comparison likewise separated prediction features from measured immune interactions. A tumor-associated sequence alteration alone does not establish presentation, recognition, treatment benefit or a guarantee of healthy-tissue safety.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Neoantigen",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neoantigen"
+        },
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immune-product-evidence",
+        "binding-presentation-recognition",
+        "immunopeptidomics",
+        "peptide-hla-binding-prediction",
+        "self-similarity-immune-recognition",
+        "immunogenicity-versus-efficacy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "neoantigen-mrna-vaccine",
+        "tcr-t"
+      ],
+      "targets": [],
+      "drugs": [
+        "intismeran-autogene"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "immune-product-evidence",
+      "kind": "term",
+      "name": "Immune measurements and product evidence",
+      "aka": [],
+      "tldr": "Each immune test or product-quality check answers a particular question. Connecting those questions helps explain how a proposed treatment moves from molecular measurements to evidence in people.",
+      "summary": "This reading map links immune-assay readouts, antigen evidence, specimen preparation, RNA design, recognition modules and product quality. It is a set of evidence questions, not a required experimental sequence. Receptor binding, cytokine release, cell killing, lot potency and clinical benefit are different observations. A useful explanation names the sample, assay, model and comparison that support the claim, including the steps that remain untested.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Precision and linearity targets for validation of an IFNgamma ELISPOT, cytokine flow cytometry, and tetramer assay using CMV peptides.",
+          "url": "https://doi.org/10.1186/1471-2172-9-9"
+        },
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "elispot",
+        "intracellular-cytokine-staining",
+        "peptide-hla-multimer-staining",
+        "immune-cytotoxicity-assays",
+        "tcr-repertoire-sequencing",
+        "tcr-repertoire-clonality",
+        "pbmc-specimens",
+        "binding-presentation-recognition",
+        "immunopeptidome",
+        "immunopeptidomics",
+        "peptide-hla-binding-prediction",
+        "immunodominance",
+        "epitope-spreading",
+        "self-similarity-immune-recognition",
+        "immunogenicity-versus-efficacy",
+        "tissue-preparation-assay-fit",
+        "finite-tissue-budget",
+        "rna-integrity",
+        "specimen-provenance",
+        "mrna-construct-anatomy",
+        "codon-optimization",
+        "modified-rna-nucleosides",
+        "in-vitro-transcription",
+        "dsrna-impurities",
+        "multi-epitope-constructs",
+        "binder-targeting-module",
+        "binder-affinity-epitope-developability",
+        "binder-format-constraints",
+        "scfv-vhh-formats",
+        "delivery-target-versus-therapeutic-target",
+        "chemistry-manufacturing-controls",
+        "certificate-of-analysis",
+        "manufacturing-process-comparability",
+        "cell-segmentation",
+        "targeted-proteomics-quantification"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "elispot",
+      "kind": "term",
+      "name": "ELISpot secretion assays",
+      "aka": [
+        "ELISpot",
+        "enzyme-linked immunospot",
+        "IFN-gamma ELISpot"
+      ],
+      "tldr": "This test records spots where sampled cells release a chosen substance. A spot count describes secretion under the test conditions; other assays address recognition or killing.",
+      "summary": "The original enzyme-linked immunospot method counted antibody-secreting cells; cytokine versions are used to examine stimulated immune-cell responses. Cancer Vaccine Consortium proficiency panels showed that sample handling, protocol choices and plate reading affected results. A result needs the measured molecule, stimulation, cell input, background and reporting rule. A positive secretion response alone does not show that the sampled cells recognize or kill an unmodified tumor.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "A solid-phase enzyme-linked immunospot (ELISPOT) assay for enumeration of specific antibody-secreting cells.",
+          "url": "https://doi.org/10.1016/0022-1759(83)90308-3"
+        },
+        {
+          "label": "Results and harmonization guidelines from two large-scale international Elispot proficiency panels conducted by the Cancer Vaccine Consortium (CVC/SVI).",
+          "url": "https://doi.org/10.1007/s00262-007-0380-6"
+        },
+        {
+          "label": "Precision and linearity targets for validation of an IFNgamma ELISPOT, cytokine flow cytometry, and tetramer assay using CMV peptides.",
+          "url": "https://doi.org/10.1186/1471-2172-9-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "intracellular-cytokine-staining",
+        "immune-cytotoxicity-assays",
+        "pbmc-specimens"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "intracellular-cytokine-staining",
+      "kind": "term",
+      "name": "Intracellular cytokine staining",
+      "aka": [],
+      "tldr": "This test measures signaling proteins retained inside stimulated cells and identifies which stained cell groups produced them. The result describes a response in the assay.",
+      "summary": "An original multiparameter flow-cytometry study detected intracellular cytokine accumulation after antigen stimulation and measured several cytokines in individual cells. That study concerned viral responses, not cancer-treatment prediction. The stimulated material, measured cytokines, cell groups and analysis gates define the result. Cytokine production is distinct from direct measurement of target-cell death, and assay validation does not by itself establish clinical benefit.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Determination of antigen-specific memory/effector CD4+ T cell frequencies by flow cytometry: evidence for a novel, antigen-specific homeostatic mechanism in HIV-associated immunodeficiency.",
+          "url": "https://doi.org/10.1172/jci119338"
+        },
+        {
+          "label": "Precision and linearity targets for validation of an IFNgamma ELISPOT, cytokine flow cytometry, and tetramer assay using CMV peptides.",
+          "url": "https://doi.org/10.1186/1471-2172-9-9"
+        },
+        {
+          "label": "Sensitive and viable identification of antigen-specific CD8+ T cells by a flow cytometric assay for degranulation.",
+          "url": "https://doi.org/10.1016/s0022-1759(03)00265-5"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "flow-cytometry",
+        "elispot",
+        "immune-cytotoxicity-assays",
+        "pbmc-specimens"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "peptide-hla-multimer-staining",
+      "kind": "term",
+      "name": "Peptide-HLA multimer staining",
+      "aka": [
+        "peptide-MHC multimer staining",
+        "peptide-HLA tetramer staining",
+        "pMHC multimer staining"
+      ],
+      "tldr": "This test labels cells whose receptors bind a particular displayed peptide under the assay conditions. It helps identify a binding population that can then be studied for function.",
+      "summary": "The original peptide-MHC tetramer study made soluble multimeric peptide-display complexes to identify antigen-specific T cells. Binding correlated with cytotoxicity in the tested systems, but those observations are different measurements. The chosen peptide and HLA molecule define which interaction is tested. Detecting multimer-binding cells does not by itself establish natural display of that peptide by a tumor, successful target-cell killing or a clinical treatment effect.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+          "url": "https://doi.org/10.1126/science.274.5284.94"
+        },
+        {
+          "label": "Sensitive and viable identification of antigen-specific CD8+ T cells by a flow cytometric assay for degranulation.",
+          "url": "https://doi.org/10.1016/s0022-1759(03)00265-5"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "binding-presentation-recognition",
+        "intracellular-cytokine-staining",
+        "immune-cytotoxicity-assays"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "immune-cytotoxicity-assays",
+      "kind": "term",
+      "name": "Immune-cell cytotoxicity assays",
+      "aka": [
+        "immune cytotoxicity assay",
+        "target-cell killing assay"
+      ],
+      "tldr": "These experiments measure whether immune cells cause death of specified target cells. The target cells, comparison conditions and timing are part of the result.",
+      "summary": "A primary flow-cytometry method distinguished labeled target cells from immune effector cells and measured target death while characterizing the effector population. The study examined how timing and the effector-to-target ratio affected the assay. Degranulation markers provide a related functional readout, but they measure a step preceding cytolysis. Killing of a laboratory target does not establish recognition of every tumor cell or benefit in the person receiving a treatment.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "A novel multiparametric flow cytometry-based cytotoxicity assay simultaneously immunophenotypes effector cells: comparisons to a 4 h 51Cr-release assay.",
+          "url": "https://doi.org/10.1016/j.jim.2007.05.013"
+        },
+        {
+          "label": "Sensitive and viable identification of antigen-specific CD8+ T cells by a flow cytometric assay for degranulation.",
+          "url": "https://doi.org/10.1016/s0022-1759(03)00265-5"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "elispot",
+        "peptide-hla-multimer-staining",
+        "cell-therapy-release-testing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "tcr-repertoire-sequencing",
+      "kind": "term",
+      "name": "T-cell receptor repertoire sequencing",
+      "aka": [
+        "TCR repertoire sequencing",
+        "TCR sequencing for immune monitoring"
+      ],
+      "tldr": "Receptor sequencing records the immune-receptor sequences sampled from a population of cells. It can track which sequences are present and how their measured abundance changes.",
+      "summary": "An original sequencing study quantified rearranged T-cell receptor beta-chain sequences to examine repertoire diversity. A beta-chain repertoire is a sampled molecular measurement, not a complete map of paired receptors or the antigens they recognize. The specimen, sequencing method and definition of a clonotype belong with the result. Following a sequence over time is distinct from demonstrating its antigen specificity or the function of the cells that carry it.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
+          "url": "https://doi.org/10.1182/blood-2009-04-217604"
+        },
+        {
+          "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+          "url": "https://doi.org/10.1126/science.274.5284.94"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tcr-repertoire-clonality",
+        "clonality-testing",
+        "peptide-hla-multimer-staining",
+        "pbmc-specimens"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "tcr-repertoire-clonality",
+      "kind": "term",
+      "name": "T-cell receptor repertoire diversity and clonality",
+      "aka": [
+        "TCR repertoire clonality",
+        "TCR repertoire diversity"
+      ],
+      "tldr": "Repertoire measures describe how many receptor identities are sampled and how unevenly they are represented. A dominant sequence does not tell us what its cells recognize.",
+      "summary": "Repertoire sequencing can describe richness and the distribution of sampled receptor sequences. Those summaries depend on the sampled population and the way receptor identities and counts are defined; the original sequencing study found diversity estimates that differed from earlier methods. A repertoire dominated by a clone is a distributional observation. It is distinct from proving tumor specificity, a malignant clone or successful tumor killing, each of which needs additional evidence.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
+          "url": "https://doi.org/10.1182/blood-2009-04-217604"
+        },
+        {
+          "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+          "url": "https://doi.org/10.1126/science.274.5284.94"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tcr-repertoire-sequencing",
+        "clonality-testing",
+        "immune-cytotoxicity-assays"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "pbmc-specimens",
+      "kind": "term",
+      "name": "Peripheral blood mononuclear cell specimens",
+      "aka": [
+        "PBMC",
+        "PBMCs",
+        "peripheral blood mononuclear cells"
+      ],
+      "tldr": "This blood-cell preparation contains lymphocytes and monocytes used in many immune tests. Collection and handling affect which cells and responses can be measured.",
+      "summary": "The National Library of Medicine distinguishes mononuclear leukocytes from granulocytes and from monocytes alone. A primary study of immune monitoring in HIV vaccine research found that processing and cryopreservation conditions affected cell recovery, viability and measured antigen responses. Those were assay findings, not a validated cancer-treatment predictor. A blood preparation also samples a different compartment from a tumor biopsy; the specimen and handling conditions belong with its interpretation.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "NLM MeSH: mononuclear leukocytes, definition",
+          "url": "https://id.nlm.nih.gov/mesh/M0012412.json"
+        },
+        {
+          "label": "Defining blood processing parameters for optimal detection of cryopreserved antigen-specific responses for HIV vaccine trials.",
+          "url": "https://doi.org/10.1016/j.jim.2007.02.003"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "elispot",
+        "intracellular-cytokine-staining",
+        "tcr-repertoire-sequencing",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "binding-presentation-recognition",
+      "kind": "term",
+      "name": "Peptide binding, presentation and immune recognition",
+      "aka": [],
+      "tldr": "A peptide can bind a display molecule, be displayed by a cell, or be recognized by an immune receptor. These are different questions that require different evidence.",
+      "summary": "Binding prediction estimates one part of antigen selection. Immunopeptidomics examines peptides recovered with HLA molecules, while immune assays investigate receptor binding and functional responses. A primary melanoma study directly identified naturally presented mutated peptides and separately tested their immunogenicity. A consortium study likewise evaluated prediction against measured immune interactions. A candidate supported at one stage should retain that evidence level rather than being described as a demonstrated therapeutic target.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        },
+        {
+          "label": "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
+          "url": "https://doi.org/10.4049/jimmunol.1700893"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "neoantigen",
+        "immunopeptidome",
+        "peptide-hla-binding-prediction",
+        "peptide-hla-multimer-staining",
+        "immune-cytotoxicity-assays"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "immunopeptidome",
+      "kind": "term",
+      "name": "Immunopeptidome",
+      "aka": [
+        "HLA ligandome"
+      ],
+      "tldr": "The immunopeptidome is the collection of peptides associated with immune display molecules in a particular biological setting. A measurement recovers a view of that collection through a defined assay.",
+      "summary": "An immunopeptidome concerns displayed peptide ligands, rather than every protein or RNA message in a sample. Direct analysis of native melanoma tissue identified HLA-associated peptides, including some containing tumor mutations. What is recovered depends on the tissue and analytical workflow. The observed collection should retain its sample and method, and identifying a displayed peptide remains distinct from showing an immune response to it.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunopeptidomics",
+        "binding-presentation-recognition",
+        "proteomics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "immunopeptidomics",
+      "kind": "term",
+      "name": "Immunopeptidomics",
+      "aka": [],
+      "tldr": "This laboratory approach identifies peptides recovered with immune display molecules. It supplies evidence about peptide presentation in the material that was analyzed.",
+      "summary": "A primary melanoma study used mass spectrometry to identify HLA-associated peptides from native tumor tissue and then evaluated selected mutated peptides with immune assays. This is stronger evidence of natural presentation in the sampled material than a binding prediction alone. The analytical observation still has a defined specimen and workflow. It does not automatically establish the abundance of a ligand on every cancer cell, receptor recognition or a treatment effect.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunopeptidome",
+        "peptide-hla-binding-prediction",
+        "binding-presentation-recognition",
+        "finite-tissue-budget"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "peptide-hla-binding-prediction",
+      "kind": "term",
+      "name": "Peptide-HLA binding and ligand prediction",
+      "aka": [
+        "peptide-MHC binding prediction",
+        "HLA ligand prediction"
+      ],
+      "tldr": "A computer model can prioritize peptides expected to bind an immune display molecule or appear among its ligands. The prediction helps select candidates for testing.",
+      "summary": "NetMHCpan-4.0 combined peptide-binding affinity data with eluted-ligand data, which also contain information about processing and natural presentation. Those training signals and prediction tasks should be distinguished. A consortium comparison assessed candidate tumor epitopes using measured immune interactions and developed improved prioritization features. A model score is a prediction with a validation setting; it is not an observation of peptide display, tumor recognition or patient benefit.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
+          "url": "https://doi.org/10.4049/jimmunol.1700893"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "binding-presentation-recognition",
+        "immunopeptidomics",
+        "neoantigen"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "immunodominance",
+      "kind": "term",
+      "name": "Immunodominance",
+      "aka": [],
+      "tldr": "Immune responses to a set of possible targets are often uneven. Some epitopes attract a stronger measured response than others in the same setting.",
+      "summary": "A primary mouse experiment showed that T-cell populations could compete for access to antigen-bearing presenting cells, changing responses to dominant and subdominant epitopes. That identifies one mechanism of immunodominance in the studied system. It does not supply a universal ranking of human tumor epitopes. The antigen design, presentation context and responding repertoire all need to remain attached to an observation of a dominant response.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+          "url": "https://doi.org/10.1084/jem.192.8.1105"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "epitope",
+        "multi-epitope-constructs",
+        "tcr-repertoire-clonality"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "epitope-spreading",
+      "kind": "term",
+      "name": "Epitope spreading",
+      "aka": [],
+      "tldr": "An immune response can broaden to recognize additional epitopes over time. Showing that broadening requires measurements of the added specificities.",
+      "summary": "A follow-up study of a small melanoma neoantigen-vaccine cohort found persistent immune responses, evolving receptor clonotypes and evidence of responses beyond the original vaccine targets. The report provides clinical immune-monitoring evidence of spreading in that cohort. The response measurements are distinct from a randomized estimate of treatment benefit. Spreading should not be inferred solely from an increased total lymphocyte count or expansion of an unidentified receptor sequence.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Personal neoantigen vaccines induce persistent memory T cell responses and epitope spreading in patients with melanoma.",
+          "url": "https://doi.org/10.1038/s41591-020-01206-4"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunogenicity-versus-efficacy",
+        "tcr-repertoire-sequencing",
+        "immunodominance"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "self-similarity-immune-recognition",
+      "kind": "term",
+      "name": "Self-similarity and immune-recognition specificity",
+      "aka": [
+        "peptide self-similarity and immune specificity",
+        "TCR cross-recognition"
+      ],
+      "tldr": "A receptor may recognize more than one related peptide. Target-selection evidence needs to address recognition of healthy tissue as well as the intended target.",
+      "summary": "A primary investigation of an affinity-enhanced MAGE-A3-directed receptor identified cross-recognition of a peptide from titin after unexpected cardiac toxicity. This was a particular engineered-receptor program, not a toxicity rate for all T-cell therapies or neoantigen vaccines. It illustrates why target-gene expression and a sequence match alone are insufficient descriptions of receptor specificity. Proposed-target recognition and off-target recognition need evidence in relevant systems.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Identification of a Titin-derived HLA-A1-presented peptide as a cross-reactive target for engineered MAGE A3-directed T cells.",
+          "url": "https://doi.org/10.1126/scitranslmed.3006034"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "binding-presentation-recognition",
+        "binder-affinity-epitope-developability",
+        "tcr-t"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "immunogenicity-versus-efficacy",
+      "kind": "term",
+      "name": "Immunogenicity and clinical efficacy",
+      "aka": [],
+      "tldr": "An intervention can produce a measurable immune response. Whether it improves a clinical outcome is a separate question about people receiving the intervention.",
+      "summary": "A phase 1 personal neoantigen-vaccine report and its follow-up examined immune responses in small melanoma cohorts. Such work can demonstrate biological activity, persistence and broadening of responses. It does not by itself isolate the treatment effect on recurrence or survival from other explanations. An immune-assay endpoint, a clinical outcome and a comparative efficacy estimate should retain their distinct definitions and study designs.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://doi.org/10.1038/nature22991"
+        },
+        {
+          "label": "Personal neoantigen vaccines induce persistent memory T cell responses and epitope spreading in patients with melanoma.",
+          "url": "https://doi.org/10.1038/s41591-020-01206-4"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "elispot",
+        "immune-cytotoxicity-assays",
+        "surrogate-validation",
+        "binding-presentation-recognition"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Endpoints"
+    },
+    {
+      "id": "tissue-preparation-assay-fit",
+      "kind": "term",
+      "name": "Tissue preparation and assay suitability",
+      "aka": [
+        "FFPE versus fresh-frozen versus viable tissue",
+        "specimen fitness for purpose"
+      ],
+      "tldr": "Fixed, frozen and living tissue preserve different properties. A preparation that works for one test may not support another.",
+      "summary": "Paired-specimen studies found that fixation and extraction changed nucleic-acid measurements relative to fresh-frozen material. Viable organoid studies examine a different property: whether living cells can establish the studied culture. Preserved morphology, recoverable DNA or RNA, and viable cell behavior are therefore different specimen requirements. No preparation is universally best; the intended measurement and evidence for that particular workflow determine suitability.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Next-generation sequencing of RNA and DNA isolated from paired fresh-frozen and formalin-fixed paraffin-embedded samples of human cancer and normal tissue.",
+          "url": "https://doi.org/10.1371/journal.pone.0098187"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        },
+        {
+          "label": "A Living Biobank of Breast Cancer Organoids Captures Disease Heterogeneity.",
+          "url": "https://doi.org/10.1016/j.cell.2017.11.010"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "preanalytics-sample-stabilisation",
+        "rna-integrity",
+        "finite-tissue-budget",
+        "organoids"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Diagnostics & imaging"
+    },
+    {
+      "id": "finite-tissue-budget",
+      "kind": "term",
+      "name": "Finite tissue and specimen allocation",
+      "aka": [
+        "finite tissue budget",
+        "tissue allocation for testing"
+      ],
+      "tldr": "Sections, extractions and destructive tests consume stored tissue. Planning several tests requires knowing what material remains and which uses it must support.",
+      "summary": "NCI biospecimen guidance places pathology oversight of tissue release alongside the need to protect complete medical evaluation. It also treats divided and extracted material as traceable derivative samples. A thoracic small-specimen guideline addresses triage and handling for multiple ancillary studies in its own clinical scope. The general resource issue is finite material, not a universal order of tests: remaining tissue and assay requirements need to be established for the actual specimen.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        },
+        {
+          "label": "Collection and Handling of Thoracic Small Biopsy and Cytology Specimens for Ancillary Studies: Guideline From the College of American Pathologists in Collaboration With the American College of Chest Physicians, Association for Molecular Pathology, American Society of Cytopathology, American Thoracic Society, Pulmonary Pathology Society, Papanicolaou Society of Cytopathology, Society of Interventional Radiology, and Society of Thoracic Radiology.",
+          "url": "https://doi.org/10.5858/arpa.2020-0119-cp"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "specimen-provenance",
+        "tissue-preparation-assay-fit",
+        "preanalytics-sample-stabilisation",
+        "biopsy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Diagnostics & imaging"
+    },
+    {
+      "id": "rna-integrity",
+      "kind": "term",
+      "name": "RNA integrity and assay suitability",
+      "aka": [
+        "RNA integrity number",
+        "RIN score",
+        "DV200 RNA quality"
+      ],
+      "tldr": "RNA quality measurements describe the condition of extracted RNA. Their usefulness depends on the measurement workflow the material will enter.",
+      "summary": "The original RNA Integrity Number method summarized electrophoretic features to standardize quality assessment. DV200 describes the proportion of RNA fragments longer than 200 nucleotides. Comparisons of fixed and frozen tissue found that fragment-distribution measures and functional amplification assays could be more informative for particular workflows. The NCI preanalytical-variables study likewise found method-dependent sensitivity to handling effects. An integrity score is therefore not a universal pass or fail rule for every RNA assay; input, preparation and intended measurement still matter.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "The RIN: an RNA integrity number for assigning integrity values to RNA measurements.",
+          "url": "https://doi.org/10.1186/1471-2199-7-3"
+        },
+        {
+          "label": "Systematic evaluation of RNA quality, microarray data reliability and pathway analysis in fresh, fresh frozen and formalin-fixed paraffin-embedded tissue samples.",
+          "url": "https://doi.org/10.1038/s41598-018-24781-6"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tissue-preparation-assay-fit",
+        "rna-seq",
+        "preanalytics-sample-stabilisation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "specimen-provenance",
+      "kind": "term",
+      "name": "Specimen provenance and derivative tracking",
+      "aka": [
+        "biospecimen provenance",
+        "derivative sample tracking"
+      ],
+      "tldr": "A result needs to remain linked to the tissue or blood sample it came from. Dividing or extracting a specimen creates new material with its own history.",
+      "summary": "NCI guidance describes unique identification of specimens and their derivative samples, with recorded origins and links between parent material, aliquots and extractions. That history helps establish which specimen, preparation and handling conditions produced a measurement. Results from different pieces or time points should not silently be treated as measurements of the same input. Tracking supports interpretation and quality management; it does not make a small sample representative of an entire tumor.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "finite-tissue-budget",
+        "tissue-preparation-assay-fit",
+        "tumour-purity",
+        "biopsy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Diagnostics & imaging"
+    },
+    {
+      "id": "mrna-construct-anatomy",
+      "kind": "term",
+      "name": "Messenger RNA construct anatomy",
+      "aka": [
+        "mRNA construct anatomy",
+        "mRNA untranslated regions and poly(A) tail"
+      ],
+      "tldr": "An engineered messenger RNA includes a protein-coding message and surrounding features that affect how it is used. Those features are part of the construct being tested.",
+      "summary": "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+          "url": "https://doi.org/10.1182/blood-2006-04-015024"
+        },
+        {
+          "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+          "url": "https://doi.org/10.1073/pnas.1908052116"
+        },
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "codon-optimization",
+        "modified-rna-nucleosides",
+        "in-vitro-transcription",
+        "mrna-lnp-manufacturing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "codon-optimization",
+      "kind": "term",
+      "name": "Codon optimization",
+      "aka": [],
+      "tldr": "Synonymous codon changes can preserve the intended protein sequence while changing the RNA message. Their effects need to be measured in the intended expression system.",
+      "summary": "Primary experiments showed that synonymous codon choices can affect RNA stability and translation. Work on engineered messenger RNAs also separated codon usage from RNA secondary structure, showing that expression depends on more than a simple codon preference. Optimization is a design objective with a particular assay and system, not a guarantee of improved therapy. Changing codons is distinct from choosing which antigen or epitope the construct encodes.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Codon optimality is a major determinant of mRNA stability.",
+          "url": "https://doi.org/10.1016/j.cell.2015.02.029"
+        },
+        {
+          "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+          "url": "https://doi.org/10.1073/pnas.1908052116"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mrna-construct-anatomy",
+        "multi-epitope-constructs",
+        "in-vitro-transcription"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "modified-rna-nucleosides",
+      "kind": "term",
+      "name": "Modified nucleosides in messenger RNA",
+      "aka": [
+        "modified mRNA nucleosides",
+        "nucleoside-modified mRNA"
+      ],
+      "tldr": "Chemical changes to RNA building blocks can alter how a message is sensed and translated. The effect depends on the RNA and the system in which it is tested.",
+      "summary": "Primary experiments found that selected nucleoside modifications changed RNA-triggered innate immune activation. Later work showed that purification of modified transcripts also affected inflammatory responses and protein expression. Modification and removal of contaminants are therefore distinct design and manufacturing questions. Results from those experimental systems do not establish that one modification is best for every cancer vaccine, delivery platform or intended immune response.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA.",
+          "url": "https://doi.org/10.1016/j.immuni.2005.06.008"
+        },
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dsrna-impurities",
+        "mrna-construct-anatomy",
+        "mrna-lnp-manufacturing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "in-vitro-transcription",
+      "kind": "term",
+      "name": "In vitro transcription for RNA products",
+      "aka": [
+        "IVT RNA production",
+        "in-vitro-transcribed RNA"
+      ],
+      "tldr": "Enzymes can copy a DNA template into RNA outside a living cell. Producing the transcript is followed by questions about its identity, composition and suitability for use.",
+      "summary": "Experimental RNA-manufacturing studies distinguish the intended in vitro-transcribed RNA from contaminating products and test how purification affects its performance. A primary RNA-construct study then measured expression and immune stimulation after delivering transcripts to cells. RNA production, product quality and biological performance are separate observations. An RNA yield or a band of the expected size alone does not establish a released product or a clinical treatment effect.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        },
+        {
+          "label": "A Facile Method for the Removal of dsRNA Contaminant from In\u00a0Vitro-Transcribed mRNA.",
+          "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+        },
+        {
+          "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+          "url": "https://doi.org/10.1182/blood-2006-04-015024"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mrna-construct-anatomy",
+        "dsrna-impurities",
+        "chemistry-manufacturing-controls",
+        "plasmid-dna-manufacturing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "dsrna-impurities",
+      "kind": "term",
+      "name": "Double-stranded RNA impurities",
+      "aka": [
+        "dsRNA impurities",
+        "double-stranded RNA contaminants"
+      ],
+      "tldr": "RNA manufacture can also produce unwanted paired RNA material. Measuring and removing it is a product-quality question separate from the intended message.",
+      "summary": "Primary experiments identified double-stranded RNA among contaminants that affected innate immune activation and translation of in vitro-transcribed messenger RNA. Subsequent work developed and tested a cellulose-based removal method. Those studies support characterizing contaminants and their functional consequences in the tested workflows. They do not establish one universal acceptable impurity level or release method for all RNA products.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        },
+        {
+          "label": "A Facile Method for the Removal of dsRNA Contaminant from In\u00a0Vitro-Transcribed mRNA.",
+          "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "in-vitro-transcription",
+        "modified-rna-nucleosides",
+        "chemistry-manufacturing-controls"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "multi-epitope-constructs",
+      "kind": "term",
+      "name": "Multi-epitope constructs and antigen processing",
+      "aka": [
+        "polyepitope constructs",
+        "multi-epitope vaccine design"
+      ],
+      "tldr": "A construct can encode several intended immune targets. Each target still needs to be processed, displayed and recognized in the tested biological setting.",
+      "summary": "A primary multiepitope DNA-vaccine study found that flanking sequence changes altered processing efficiency and measured immunogenicity of encoded epitopes. That was evidence from the tested constructs, not a validated rule for every RNA cancer vaccine. The number of encoded epitopes is distinct from the number naturally displayed or recognized. Processing evidence, immune-response breadth and clinical outcome remain separate parts of a construct claim.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Optimization of epitope processing enhances immunogenicity of multiepitope DNA vaccines.",
+          "url": "https://doi.org/10.1016/s0264-410x(01)00233-x"
+        },
+        {
+          "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+          "url": "https://doi.org/10.1084/jem.192.8.1105"
+        },
+        {
+          "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+          "url": "https://doi.org/10.1182/blood-2006-04-015024"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunodominance",
+        "binding-presentation-recognition",
+        "codon-optimization",
+        "mrna-construct-anatomy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Immunology"
+    },
+    {
+      "id": "binder-targeting-module",
+      "kind": "term",
+      "name": "Binders as targeting modules",
+      "aka": [],
+      "tldr": "A recognition molecule can be used as one component of a larger therapeutic design. Its ability to bind is one property of that component.",
+      "summary": "Primary antibody-fragment studies showed how recognition domains can be used outside a complete antibody. Experiments with bispecific T-cell engagers then showed that constructs with similar binding affinity could differ in target-cell lysis because of epitope position and antigen geometry. A binder is therefore a module whose performance must be evaluated in its assembled format. Binding alone does not establish delivery, effector activity or clinical benefit.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Protein engineering of antibody binding sites: recovery of specific activity in an anti-digoxin single-chain Fv analogue produced in Escherichia coli.",
+          "url": "https://doi.org/10.1073/pnas.85.16.5879"
+        },
+        {
+          "label": "Naturally occurring antibodies devoid of light chains.",
+          "url": "https://doi.org/10.1038/363446a0"
+        },
+        {
+          "label": "Epitope distance to the target cell membrane and antigen size determine the potency of T cell-mediated lysis by BiTE antibodies specific for a large melanoma surface antigen.",
+          "url": "https://doi.org/10.1007/s00262-010-0844-y"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antibody",
+        "epitope",
+        "scfv-vhh-formats",
+        "binder-format-constraints"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Biology basics"
+    },
+    {
+      "id": "binder-affinity-epitope-developability",
+      "kind": "term",
+      "name": "Binder affinity, epitope and developability",
+      "aka": [
+        "antibody binder developability",
+        "affinity versus binder function"
+      ],
+      "tldr": "Binding strength, the site recognized and practical molecule properties answer different questions. A useful binder needs evaluation beyond a single affinity value.",
+      "summary": "A primary comparison of bispecific constructs found different lytic activity despite similar antigen-binding affinity, with epitope geometry contributing to the result. A separate clinical-stage antibody survey measured multiple biophysical properties relevant to developability. Those studies support evaluating recognition, function and molecule behavior separately. Their tested distributions and constructs do not establish a universal selection cutoff or guarantee that a candidate will become an effective drug.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Epitope distance to the target cell membrane and antigen size determine the potency of T cell-mediated lysis by BiTE antibodies specific for a large melanoma surface antigen.",
+          "url": "https://doi.org/10.1007/s00262-010-0844-y"
+        },
+        {
+          "label": "Biophysical properties of the clinical-stage antibody landscape.",
+          "url": "https://doi.org/10.1073/pnas.1616408114"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "epitope",
+        "binder-targeting-module",
+        "binder-format-constraints",
+        "self-similarity-immune-recognition"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "binder-format-constraints",
+      "kind": "term",
+      "name": "Format-dependent binder function",
+      "aka": [],
+      "tldr": "A recognition domain can behave differently when built into a different therapeutic structure. Its final format is part of the experiment.",
+      "summary": "Epitope-distance experiments in bispecific T-cell engagers linked target geometry to cell lysis in the tested models. A later comparison of CD123-directed single-chain and single-domain antibody fragments examined their behavior in engineered T cells and a mouse leukemia model. These are construct-specific findings. A successful binding measurement or one format comparison should not be generalized to all antibody fragments, targets, payloads or clinical settings.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Epitope distance to the target cell membrane and antigen size determine the potency of T cell-mediated lysis by BiTE antibodies specific for a large melanoma surface antigen.",
+          "url": "https://doi.org/10.1007/s00262-010-0844-y"
+        },
+        {
+          "label": "Antibody format matters: A comparative analysis of VHH and scFv domains reveals superior in vivo CAR T cell function with VHH domains.",
+          "url": "https://doi.org/10.1016/j.ymthe.2026.06.017"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "binder-targeting-module",
+        "scfv-vhh-formats",
+        "binder-affinity-epitope-developability",
+        "car-t"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "scfv-vhh-formats",
+      "kind": "term",
+      "name": "Single-chain and single-domain antibody fragments",
+      "aka": [
+        "scFv and VHH",
+        "single-chain variable fragment",
+        "VHH antibody domain",
+        "single-domain antibody fragment"
+      ],
+      "tldr": "An antibody recognition unit can be engineered from linked heavy- and light-chain variable regions or from a single suitable variable domain. These formats have different structures to evaluate.",
+      "summary": "The original single-chain Fv work linked antibody heavy- and light-chain variable regions and tested binding after expression and refolding. Camelid heavy-chain antibody studies established a different architecture without light chains, underlying VHH-derived formats. More recent engineered-cell comparisons test the behavior of particular fragments in particular constructs. Format names describe architecture; they do not by themselves establish stability, specificity or therapeutic superiority.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Protein engineering of antibody binding sites: recovery of specific activity in an anti-digoxin single-chain Fv analogue produced in Escherichia coli.",
+          "url": "https://doi.org/10.1073/pnas.85.16.5879"
+        },
+        {
+          "label": "Naturally occurring antibodies devoid of light chains.",
+          "url": "https://doi.org/10.1038/363446a0"
+        },
+        {
+          "label": "Antibody format matters: A comparative analysis of VHH and scFv domains reveals superior in vivo CAR T cell function with VHH domains.",
+          "url": "https://doi.org/10.1016/j.ymthe.2026.06.017"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antibody",
+        "binder-format-constraints",
+        "binder-targeting-module"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Biology basics"
+    },
+    {
+      "id": "delivery-target-versus-therapeutic-target",
+      "kind": "term",
+      "name": "Delivery targets and therapeutic targets",
+      "aka": [
+        "delivery targeting versus cancer targeting",
+        "delivery receptor versus effector target"
+      ],
+      "tldr": "The molecule used to deliver an intervention to a cell can differ from the target of the treatment that cell produces. Both targeting steps need to be named.",
+      "summary": "A primary mouse cardiac-fibrosis study used CD5-targeted lipid nanoparticles to deliver RNA encoding a receptor directed against fibroblast activation protein. CD5 specified a delivery interaction; the encoded receptor had a different recognition target. This is a non-oncology preclinical illustration of the distinction, not cancer-treatment evidence. Delivery, expression, effector recognition and clinical benefit should retain their separate experiments and biological settings.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "CAR T cells produced in vivo to treat cardiac injury.",
+          "url": "https://doi.org/10.1126/science.abm0594"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "in-vivo-car-t",
+        "binder-targeting-module",
+        "mrna-construct-anatomy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "chemistry-manufacturing-controls",
+      "kind": "term",
+      "name": "Chemistry, manufacturing and controls",
+      "aka": [
+        "chemistry manufacturing and controls",
+        "CMC quality information"
+      ],
+      "tldr": "This is the evidence describing a product, how it is made and how its quality is controlled. It addresses product questions alongside the separate evidence about clinical outcomes.",
+      "summary": "FDA guidance for human gene-therapy investigational applications describes information intended to assure product safety, identity, quality, purity and strength, including potency. The potency-assurance guidance further connects manufacturing design, controls and testing. These sources have defined product and regulatory scopes. A manufacturing dossier, a laboratory release result and evidence that an intervention improves clinical outcomes are related but distinct parts of product development.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "FDA: chemistry, manufacturing and control information for human gene therapy INDs",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug"
+        },
+        {
+          "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "certificate-of-analysis",
+        "manufacturing-process-comparability",
+        "cell-therapy-release-testing",
+        "mrna-lnp-manufacturing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "certificate-of-analysis",
+      "kind": "term",
+      "name": "Certificate of analysis",
+      "aka": [
+        "lot certificate of analysis"
+      ],
+      "tldr": "A certificate of analysis reports specified test results for an identified material lot. It needs to be read with the tests, acceptance criteria and intended use.",
+      "summary": "ICH Q7 describes certificates for active-ingredient or intermediate batches, including identity, batch details, tests, acceptance limits and results. FDA CAR T-cell guidance also discusses assessment of incoming material certificates. Requirements depend on the material and governing framework. A certificate is a lot-specific report, not independent proof of every possible property, general regulatory approval or clinical benefit.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "FDA/ICH Q7: certificates of analysis, section 11.4",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients-guidance-industry"
+        },
+        {
+          "label": "FDA: considerations for development of CAR T-cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "chemistry-manufacturing-controls",
+        "cell-therapy-release-testing",
+        "manufacturing-process-comparability"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "manufacturing-process-comparability",
+      "kind": "term",
+      "name": "Comparability after manufacturing changes",
+      "aka": [
+        "manufacturing process comparability",
+        "process-change comparability"
+      ],
+      "tldr": "A changed manufacturing process needs evidence about the product before and after the change. Comparability asks whether observed differences could matter to product quality, safety or effectiveness.",
+      "summary": "ICH Q5E provides a framework for comparing a biological product before and after manufacturing changes. It emphasizes quality attributes and assessing whether additional nonclinical or clinical evidence is needed. It does not prescribe one universal testing strategy. The question concerns a specified process change and product; it should not be collapsed into a general claim that all batches, sites or related products are interchangeable.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "EMA/ICH Q5E: comparability after a manufacturing-process change",
+          "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q-5-e-comparability-biotechnologicalbiological-products-step-5_en.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "chemistry-manufacturing-controls",
+        "certificate-of-analysis",
+        "biosimilar-manufacturing",
+        "cell-therapy-release-testing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "cell-segmentation",
+      "kind": "term",
+      "name": "Cell segmentation in tissue measurements",
+      "aka": [
+        "single-cell tissue segmentation"
+      ],
+      "tldr": "Image analysis estimates which pixels or detected molecules belong to each cell. Those assignments affect the measurements reported for that cell.",
+      "summary": "The Mesmer study developed and tested whole-cell segmentation across tissue images and used the estimated boundaries to extract cellular features. A separate spatial-transcriptomics reanalysis found that misassigned molecules could change downstream cell-state and interaction analyses. These findings concern defined datasets and methods, not one universal error rate. Segmentation quality and signal assignment need evaluation before a spatial measurement is treated as a biological conclusion.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning.",
+          "url": "https://doi.org/10.1038/s41587-021-01094-0"
+        },
+        {
+          "label": "Impact and correction of segmentation errors in spatial transcriptomics.",
+          "url": "https://doi.org/10.1038/s41588-025-02497-4"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "imaging-mass-cytometry",
+        "spatial-transcriptomics",
+        "tumour-purity"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "targeted-proteomics-quantification",
+      "kind": "term",
+      "name": "Targeted proteomics and quantification limits",
+      "aka": [
+        "targeted protein quantification",
+        "multiple-reaction-monitoring protein assays"
+      ],
+      "tldr": "A targeted protein assay measures selected peptide signals through a defined workflow. Reliable amounts require evidence about the quantitative range and precision of the assay.",
+      "summary": "A primary multilaboratory study evaluated isotope-dilution multiple-reaction-monitoring assays for selected plasma proteins, examining recovery, reproducibility, linear range, detection and quantification limits. The performance belonged to the tested materials, analytes and protocols. It was not a universal certificate for all proteins or specimens. A reported protein amount should retain its measured peptide, calibration approach, sample preparation and supported range.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+          "url": "https://doi.org/10.1038/nbt.1546"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "proteomics",
+        "rppa",
+        "analytical-vs-clinical-validation",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Methods and models"
+    },
+    {
+      "id": "antigen-presentation-immunoediting",
+      "kind": "pathway",
+      "name": "Antigen presentation & immune editing",
+      "aka": [],
+      "tldr": "Cells display protein fragments that immune cells can recognize. Tumors can escape by changing this display or suppressing immune responses. Recognition and target-cell killing are separate steps.",
+      "summary": "Proteasome-processed peptides are loaded on MHC class I (HLA-A/B/C, B2M) and presented to CD8 T cells; dendritic cells cross-present tumour antigens in lymph nodes. Immunoediting proceeds through elimination, equilibrium, and escape: loss of B2M or HLA, JAK1/2 or IFNGR mutations (blunting interferon-\u03b3 response), antigen loss, PD-L1 induction, and immunosuppressive niches. Candidate epitope selection considers presentation and immune recognition; these require evidence beyond mutation count or predicted binding. HLA genotype shapes which peptides can be displayed. Escape variants explain acquired resistance to checkpoint blockade and CAR-T (CD19 loss).",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Immunoediting",
+      "links": [
+        {
+          "label": "Schreiber, Old & Smyth, Cancer immunoediting (Science 2011)",
+          "url": "https://doi.org/10.1126/science.1203486"
+        },
+        {
+          "label": "Zaretsky et al., Mutations associated with acquired resistance to PD-1 blockade (NEJM 2016)",
+          "url": "https://doi.org/10.1056/NEJMoa1604958"
+        },
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        },
+        {
+          "label": "Epitope distance to the target cell membrane and antigen size determine the potency of T cell-mediated lysis by BiTE antibodies specific for a large melanoma surface antigen.",
+          "url": "https://doi.org/10.1007/s00262-010-0844-y"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "binding-presentation-recognition",
+        "immunopeptidome",
+        "immunopeptidomics",
+        "self-similarity-immune-recognition",
+        "immunogenicity-versus-efficacy"
+      ],
+      "cancers": [
+        "tnbc",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [],
+      "technologies": [
+        "neoantigen-mrna-vaccine",
+        "tcr-t",
+        "t-cell-engager",
+        "car-t",
+        "car-nk-macrophage",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [
+        "pd1",
+        "pdl1",
+        "cd3",
+        "gp100",
+        "mage-a4",
+        "prame",
+        "hla-a"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "wustl-siteman",
+        "mskcc",
+        "nci",
+        "johns-hopkins"
+      ],
+      "pathways": [
+        "pd1-checkpoint",
+        "cgas-sting",
+        "jak-stat"
+      ],
+      "terms": [
+        "neoantigen",
+        "hla-a02-restriction",
+        "tmb",
+        "cold-vs-hot",
+        "avoiding-immune-destruction"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-zaretsky-n-engl-j-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Schreiber (WashU) coined immunoediting; Chan and Ribas on neoantigen quality and escape (MSK, UCLA); NCI Surgery Branch on neoantigen-reactive T cells; Balachandran (MSK) on long-term vaccine responders.",
+        "Predicted peptide binding, natural peptide presentation and immune recognition have different evidence. Direct melanoma immunopeptidomics and a neoantigen-prediction consortium illustrate why a candidate at one stage should not be described as validated at every later stage."
+      ],
+      "analogy": "A cell displays a selection of protein fragments, like samples placed in a window. Display, recognition by an immune receptor and a response from that immune cell are separate steps.",
+      "nodes": [
+        {
+          "id": "prot",
+          "label": "Proteasome \u2192 peptides",
+          "x": 15,
+          "y": 30
+        },
+        {
+          "id": "tap",
+          "label": "TAP transport",
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "mhc",
+          "label": "MHC-I / B2M loading",
+          "x": 55,
+          "y": 30
+        },
+        {
+          "id": "surf",
+          "label": "Peptide-MHC on surface",
+          "x": 75,
+          "y": 30
+        },
+        {
+          "id": "tcr",
+          "label": "CD8 T cell (TCR)",
+          "x": 75,
+          "y": 65,
+          "targetId": "cd3"
+        },
+        {
+          "id": "ifn",
+          "label": "IFN-\u03b3 \u2192 JAK1/2 \u2192 STAT1",
+          "x": 45,
+          "y": 65
+        },
+        {
+          "id": "pdl1",
+          "label": "PD-L1 induction",
+          "x": 25,
+          "y": 85,
+          "targetId": "pdl1"
+        },
+        {
+          "id": "dc",
+          "label": "Dendritic cell cross-presentation",
+          "x": 92,
+          "y": 50
+        },
+        {
+          "id": "escape",
+          "label": "Escape: B2M/HLA loss, JAK mutation",
+          "x": 15,
+          "y": 60
+        }
+      ],
+      "edges": [
+        {
+          "from": "prot",
+          "to": "tap",
+          "type": "activates"
+        },
+        {
+          "from": "tap",
+          "to": "mhc",
+          "type": "activates"
+        },
+        {
+          "from": "mhc",
+          "to": "surf",
+          "type": "activates"
+        },
+        {
+          "from": "surf",
+          "to": "tcr",
+          "type": "activates"
+        },
+        {
+          "from": "dc",
+          "to": "tcr",
+          "type": "activates"
+        },
+        {
+          "from": "tcr",
+          "to": "ifn",
+          "type": "activates"
+        },
+        {
+          "from": "ifn",
+          "to": "mhc",
+          "type": "activates"
+        },
+        {
+          "from": "ifn",
+          "to": "pdl1",
+          "type": "activates"
+        },
+        {
+          "from": "pdl1",
+          "to": "tcr",
+          "type": "inhibits"
+        },
+        {
+          "from": "escape",
+          "to": "mhc",
+          "type": "inhibits"
+        },
+        {
+          "from": "escape",
+          "to": "ifn",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "Checkpoint inhibitors; personalised neoantigen vaccines supply encoded antigens; CAR-T and surface-antigen-directed T-cell engagers recognize targets without requiring peptide-HLA, while peptide-HLA-directed formats retain that requirement",
+        "TCR-T and ImmTACs (tebentafusp) target intracellular antigens via peptide-HLA",
+        "Epigenetic drugs and interferon can re-express MHC; MHC-independent NK-cell therapies address MHC-loss escape"
+      ]
+    },
+    {
+      "id": "cell-therapy-release-testing",
+      "kind": "technology",
+      "name": "Cell-therapy release and potency testing",
+      "aka": [],
+      "tldr": "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
+      "summary": "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
+      "status": "established",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: considerations for development of CAR T-cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "immune-cytotoxicity-assays",
+        "chemistry-manufacturing-controls",
+        "certificate-of-analysis",
+        "manufacturing-process-comparability",
+        "vein-to-vein-time"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "closed-automated-cell-manufacturing",
+        "flow-cytometry-mrd"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "charles-river",
+        "becton-dickinson"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Product-specific control strategies combine defined quality attributes, suitable assays and justified acceptance criteria; a release result retains its lot and intended use.",
+      "strengths": [
+        "Defines checkable quality requirements",
+        "Supports product-specific quality decisions"
+      ],
+      "limitations": [
+        "Testing and sample availability can constrain release",
+        "Relationship to clinical outcomes needs product-specific evidence",
+        "Sampling uses a portion of the lot"
+      ]
+    },
+    {
+      "id": "preanalytics-sample-stabilisation",
+      "kind": "technology",
+      "name": "Pre-analytics: blood-collection tubes and tissue fixation",
+      "aka": [],
+      "tldr": "Collection, fixation, storage and processing can change what a specimen test measures. Handling needs to fit the intended assay and remain part of the sample record.",
+      "summary": "Paired fixed and frozen tissue studies found preparation-dependent differences in nucleic-acid recovery and molecular measurements. The NCI Biospecimen Preanalytical Variables program examined delay and duration effects in defined tumor specimens and found that quality assays differed in what they detected. NCI best practices therefore emphasize documented collection, processing and tracking. A protocol or numerical limit appropriate to one assay should not be treated as a universal rule for every tissue, analyte or downstream test.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Wolff et al., HER2 testing in breast cancer: ASCO/CAP clinical practice guideline focused update, including fixation requirements (Journal of Clinical Oncology 2018)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "Next-generation sequencing of RNA and DNA isolated from paired fresh-frozen and formalin-fixed paraffin-embedded samples of human cancer and normal tissue.",
+          "url": "https://doi.org/10.1371/journal.pone.0098187"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        },
+        {
+          "label": "Systematic evaluation of RNA quality, microarray data reliability and pathway analysis in fresh, fresh frozen and formalin-fixed paraffin-embedded tissue samples.",
+          "url": "https://doi.org/10.1038/s41598-018-24781-6"
+        },
+        {
+          "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "tissue-preparation-assay-fit",
+        "finite-tissue-budget",
+        "rna-integrity",
+        "specimen-provenance",
+        "pbmc-specimens"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "liquid-biopsy",
+        "histopathology-ihc",
+        "biobanking",
+        "reference-laboratories"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "streck",
+        "qiagen",
+        "roche-genentech",
+        "ellele-health"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-wolff-j-clin-oncol-2018"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Streck's Cell-Free DNA BCT was granted De Novo classification on 7 August 2020 (DEN200001), creating FDA product code QMA, blood collection device for cell-free nucleic acid (21 CFR 862.1676); the decision summary says 'Performance characteristics for this device have only been established on the Guardant360 CDx assay'. A further 510(k) followed on 26 July 2024 (K231776). Read from openFDA and the De Novo decision summary on 4 November 2026."
+      ],
+      "principle": "Preserve the properties required by the planned measurement and record the collection, handling and preparation history used to interpret it.",
+      "strengths": [
+        "Enables centralised liquid biopsy testing",
+        "Standards exist for key biomarkers"
+      ],
+      "limitations": [
+        "Preparation can alter nucleic-acid measurements",
+        "Fixed and fresh material may need different workflows",
+        "Assay-specific validation and handling records are needed"
+      ]
+    },
+    {
+      "id": "flow-cytometry",
+      "kind": "term",
+      "name": "Flow cytometry (immunophenotyping)",
+      "aka": [
+        "immunophenotype",
+        "immunophenotyping",
+        "multiparameter flow cytometry",
+        "MFC",
+        "next-generation flow",
+        "NGF",
+        "CD markers",
+        "cluster of differentiation"
+      ],
+      "tldr": "A test that measures light signals from individual cells or particles. Stained markers can identify cell types, and specialized assays can examine what those cells are doing.",
+      "summary": "Flow cytometry measures features of prepared cells as they pass through an instrument. Immunophenotyping uses combinations of markers to distinguish cell populations, including in blood-cancer diagnosis and residual-disease testing. Other methods measure intracellular cytokines, degranulation or target-cell death. Primary method studies show that these are different readouts, and validation depends on preparation, panel, controls and analysis gates. The performance of one assay does not automatically validate every use of the platform.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Flow_cytometry",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Flow_cytometry"
+        },
+        {
+          "label": "Determination of antigen-specific memory/effector CD4+ T cell frequencies by flow cytometry: evidence for a novel, antigen-specific homeostatic mechanism in HIV-associated immunodeficiency.",
+          "url": "https://doi.org/10.1172/jci119338"
+        },
+        {
+          "label": "Precision and linearity targets for validation of an IFNgamma ELISPOT, cytokine flow cytometry, and tetramer assay using CMV peptides.",
+          "url": "https://doi.org/10.1186/1471-2172-9-9"
+        },
+        {
+          "label": "A novel multiparametric flow cytometry-based cytotoxicity assay simultaneously immunophenotypes effector cells: comparisons to a 4 h 51Cr-release assay.",
+          "url": "https://doi.org/10.1016/j.jim.2007.05.013"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mrd",
+        "umrd",
+        "blasts",
+        "antigen-escape",
+        "intracellular-cytokine-staining",
+        "peptide-hla-multimer-staining",
+        "immune-cytotoxicity-assays",
+        "pbmc-specimens"
+      ],
+      "cancers": [
+        "aml",
+        "all-leukemia",
+        "cll",
+        "multiple-myeloma"
+      ],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "vein-to-vein-time",
+      "kind": "term",
+      "name": "Vein-to-vein time and manufacturing slots",
+      "aka": [
+        "vein-to-vein",
+        "vein to vein",
+        "manufacturing time",
+        "manufacturing slot",
+        "manufacturing slots",
+        "turnaround time",
+        "manufacturing failure",
+        "out-of-specification",
+        "OOS product",
+        "slot allocation",
+        "chain of identity",
+        "chain of custody",
+        "cryopreserved product",
+        "fresh product",
+        "manufacturing failures"
+      ],
+      "tldr": "The interval from collecting a person's cells to infusing the manufactured cell product. Shipping, manufacturing, quality testing and clinical scheduling can all contribute to the wait.",
+      "summary": "The interval follows a patient-specific product through collection, manufacture, testing, transport and administration. Manufacturing outcome, lot quality and eventual infusion are separate observations. A UK retrospective CAR T-cell report used manufacturing failure as an umbrella covering both no product and an out-of-specification product, with some patients subsequently receiving a remanufactured or specially assessed lot. Published rates therefore need their study definitions; they do not directly state the chance that an individual will receive treatment.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "Risk factors for CAR T-cell manufacturing failure and patient outcomes in large B-cell lymphoma: a report from the UK National CAR T Panel.",
+          "url": "https://doi.org/10.1038/s41408-025-01225-9"
+        },
+        {
+          "label": "FDA: considerations for development of CAR T-cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "apheresis",
+        "bridging-therapy",
+        "lymphodepletion",
+        "cell-therapy-release-testing",
+        "chemistry-manufacturing-controls",
+        "certificate-of-analysis",
+        "manufacturing-process-comparability"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "closed-automated-cell-manufacturing",
+        "point-of-care-cell-manufacturing",
+        "cell-therapy-orchestration-software"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Chain of identity links material and product to the source and intended recipient. Chain-of-custody records describe movement, handoffs and handling. FDA CAR T-cell guidance addresses identity tracking; NCI biospecimen guidance describes custody records in its own specimen-management scope.",
+        "An out-of-specification lot does not meet at least one specified criterion. Its existence does not establish that it is suitable or authorized for infusion; disposition is a product- and situation-specific question."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "rppa",
+      "kind": "term",
+      "name": "Reverse-phase protein array (RPPA)",
+      "aka": [
+        "RPPA",
+        "reverse-phase protein array",
+        "reverse phase protein array",
+        "protein array data",
+        "RPPA data"
+      ],
+      "tldr": "This array tests protein extracts from many samples using selected antibodies. The panel and its validation determine which protein signals can be interpreted.",
+      "summary": "A reverse-phase protein array places sample lysates on an array and measures selected proteins or modifications with antibodies. The original tissue study examined signaling proteins in defined cell populations. A later study used phosphatase treatment as an independent control when characterizing phospho-antibodies for frozen and fixed tissue. Signal specificity, input preparation and validation matter. A lysate measurement does not restore the spatial arrangement lost during extraction, and phosphorylation signal needs interpretation alongside protein abundance.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray"
+        },
+        {
+          "label": "Reverse phase protein microarrays which capture disease progression show activation of pro-survival pathways at the cancer invasion front.",
+          "url": "https://doi.org/10.1038/sj.onc.1204265"
+        },
+        {
+          "label": "A reverse phase protein array based phospho-antibody characterization approach and its applicability for clinical derived tissue specimens.",
+          "url": "https://doi.org/10.1038/s41598-022-26715-9"
+        },
+        {
+          "label": "Correct interpretation of comprehensive phosphorylation dynamics requires normalization by protein expression changes.",
+          "url": "https://doi.org/10.1074/mcp.m111.009654"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "tcga-gdc",
+        "targeted-proteomics-quantification",
+        "tissue-preparation-assay-fit",
+        "cell-segmentation",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "proteomics"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "pathway-activation-state",
+        "mass-spec-proteome"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/rppa."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    }
+  ],
+  "normalization": "JSON public record shape; undefined-only runtime properties are omitted on both sides."
+}

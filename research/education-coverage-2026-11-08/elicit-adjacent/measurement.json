@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "provider": "Elicit API",
+  "endpoint": "https://elicit.com/api/v2/search/papers",
+  "retrievedAt": "2026-11-08T22:43:27.227Z",
+  "request": {
+    "query": "Which original methods studies show overlooked interpretation limits in spatial and single-cell omics, DNA copy number and loss of heterozygosity, RNA isoforms, phosphoproteomics, immune assays and functional tumor models?",
+    "searchMode": "semantic",
+    "maxResults": 15,
+    "corpus": "elicit"
+  },
+  "response": {
+    "papers": [
+      {
+        "elicitId": "ss-282312658",
+        "title": "Multi-sample and multi-group spatial colocalization analysis using PANORAMIC",
+        "authors": [
+          "Jacob Chang",
+          "Almudena Espin Perez",
+          "Perla Molina",
+          "Rohit Khurana",
+          "Wei-Ruo Zhang",
+          "L. Tian",
+          "Sylvia K. Plevritis"
+        ],
+        "year": 2026,
+        "abstract": "Motivation Spatial omics studies compare cell-cell organization across samples, but most methods model between-sample variability while treating sample-level spatial estimates as error-free. Overlooking within-sample uncertainty can distort inference in heterogeneous cohorts, motivating methods that explicitly quantify and propagate this uncertainty into cohort-level analyses. Results We present PANORAMIC, a hierarchical framework for spatial colocalization analysis that uses edge-corrected neighborhood enrichment to estimate local cell-type colocalization, spatial bootstrapping to quantify within-sample uncertainty, and multilevel random-effects meta-analysis to propagate this uncertainty across samples, patients, and conditions. In simulations, PANORAMIC improved recovery of within-sample uncertainty and between-sample heterogeneity relative to naive estimators across diverse spatial settings and progressive data degradation. Applied to a colorectal cancer tissue microarray profiled by multiplexed immunofluorescence imaging, PANORAMIC identified stronger B- and T-cell colocalization in tumors with Crohn’s-like reaction than in tumors with diffuse inflammatory infiltration, together with tighter higher-order immune organization consistent with immune aggregates. These results show that propagating within-sample spatial uncertainty can improve cohort-level inference in spatial omics studies. Availability and Implementation PANORAMIC is released as an open-source R package at https://github.com/plevritis-lab/panoramic. Contact [sylvia.plevritis@stanford.edu]",
+        "doi": "10.1093/bioinformatics/btag546",
+        "pmid": "42538825",
+        "venue": "bioRxiv",
+        "citedByCount": 0,
+        "urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13472731/pdf/btag546.pdf",
+          "https://doi.org/10.1093/bioinformatics/btag546",
+          "https://www.biorxiv.org/content/biorxiv/early/2025/12/20/2025.09.18.677135.full.pdf"
+        ],
+        "studyTypeTags": [
+          "Meta-Analysis"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13472731/pdf/btag546.pdf"
+      },
+      {
+        "elicitId": "ss-278456430",
+        "title": "INLAomics for Scalable and Interpretable Spatial Multiomic Data Integration",
+        "authors": [
+          "Lukas Arnroth",
+          "S. Vickovic"
+        ],
+        "year": 2025,
+        "abstract": "Integrating spatial transcriptomics with antibody-based proteomics enables the investigation of biological regulation within intact tissue architecture. However, current approaches for spatial multi-omics integration often depend on dimensionality reduction or autoencoders, which disregard spatial context, limit interpretability, and face challenges with scalability. To address these limitations, we developed INLAomics, a multivariate hierarchical Bayesian framework that models protein abundance in tissue sections by leveraging histological features and latent spatial factors inferred from spatial transcriptomics data. INLAomics supports two key applications: (1) identifying spatial gene co-expression programs to build interpretable gene–protein networks, and (2) predicting spatial protein expression in tissues lacking proteomics measurements. Applied across diverse datasets, INLAomics reveals previously unrecognized gene–protein associations and achieves substantial improvements in protein prediction accuracy over models that treat each modality independently. The framework is both computationally efficient and biologically interpretable, offering a scalable solution for integrative analysis of spatial multi-omics data",
+        "doi": "10.1101/2025.05.02.651831",
+        "pmid": "40654897",
+        "venue": "bioRxiv",
+        "citedByCount": 3,
+        "urls": [
+          "https://doi.org/10.1101/2025.05.02.651831"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.1101/2025.05.02.651831"
+      },
+      {
+        "elicitId": "ss-289441349",
+        "title": "Spatial omics illuminates tumor heterogeneity",
+        "authors": [
+          "Neha Srinivas",
+          "Serap Erdogmus",
+          "G. Mollaoglu"
+        ],
+        "year": 2026,
+        "abstract": null,
+        "doi": "10.1016/j.crmeth.2026.101504",
+        "pmid": "42320479",
+        "venue": "Cell Reports Methods",
+        "citedByCount": 0,
+        "urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13494549/pdf/main.pdf",
+          "https://www.cell.com/cell-reports-methods/pdf/S2667-2375(26)00205-5.pdf"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.cell.com/cell-reports-methods/pdf/S2667-2375(26)00205-5.pdf"
+      },
+      {
+        "elicitId": "ss-249313746",
+        "title": "Single cell‐ and spatial ‘Omics revolutionize physiology",
+        "authors": [
+          "Thomas Conrad",
+          "J. Altmuller"
+        ],
+        "year": 2022,
+        "abstract": "Single cell multi‐ ‘Omics and Spatial Transcriptomics are prominent technological highlights of recent years, and both fields still witness a ceaseless firework of novel approaches for high resolution profiling of additional omics layers. As all life processes in organs and organisms are based on the functions of their fundamental building blocks, the individual cells and their interactions, these methods are of utmost worth for the study of physiology in health and disease. Recent discoveries on embryonic development, tumor immunology, the detailed cellular composition and function of complex tissues like for example the kidney or the brain, different roles of the same cell type in different organs, the oncogenic program of individual tumor entities, or the architecture of immunopathology in infected tissue are based on single cell and spatial transcriptomics experiments. In this review, we will give a broad overview of technological concepts for single cell and spatial analysis, showing both advantages and limitations, and illustrate their impact with some particularly impressive case studies.",
+        "doi": "10.1111/apha.13848",
+        "pmid": "35656634",
+        "venue": "Acta Physiologica",
+        "citedByCount": 19,
+        "urls": [
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/apha.13848"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/apha.13848"
+      },
+      {
+        "elicitId": "ss-220517938",
+        "title": "Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data",
+        "authors": [
+          "X. Mallory",
+          "M. Edrisi",
+          "N. Navin",
+          "L. Nakhleh"
+        ],
+        "year": 2020,
+        "abstract": "Single-cell DNA sequencing technologies are enabling the study of mutations and their evolutionary trajectories in cancer. Somatic copy number aberrations (CNAs) have been implicated in the development and progression of various types of cancer. A wide array of methods for CNA detection has been either developed specifically for or adapted to single-cell DNA sequencing data. Understanding the strengths and limitations that are unique to each of these methods is very important for obtaining accurate copy number profiles from single-cell DNA sequencing data. We benchmarked three widely used methods–Ginkgo, HMMcopy, and CopyNumber–on simulated as well as real datasets. To facilitate this, we developed a novel simulator of single-cell genome evolution in the presence of CNAs. Furthermore, to assess performance on empirical data where the ground truth is unknown, we introduce a phylogeny-based measure for identifying potentially erroneous inferences. While single-cell DNA sequencing is very promising for elucidating and understanding CNAs, our findings show that even the best existing method does not exceed 80% accuracy. New methods that significantly improve upon the accuracy of these three methods are needed. Furthermore, with the large datasets being generated, the methods must be computationally efficient.",
+        "doi": "10.1371/journal.pcbi.1008012",
+        "pmid": "32658894",
+        "venue": "PLoS Comput. Biol.",
+        "citedByCount": 41,
+        "urls": [
+          "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008012&type=printable"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008012&type=printable"
+      },
+      {
+        "elicitId": "ss-284977072",
+        "title": "2D spatial tissue analysis often misrepresents true biological patterns of 3D tissues",
+        "authors": [
+          "David Le",
+          "David I. Kaplan",
+          "A. Trigos"
+        ],
+        "year": 2026,
+        "abstract": "Spatial omics technologies and analysis methods that profile tissue sections are widespread in biomedical research, but how well these methods capture 3D tissue biology is unknown. Using 3D spatial simulations and data, coupled with virtual tissue sectioning, we found that spurious associations, misrepresentation of biological trends and false negative findings are common in 2D spatial analyses. Understanding the limitations of 2D spatial analyses is needed to avoid misinterpreting research findings.",
+        "doi": "10.64898/2026.01.21.700966",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 1,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2026/01/22/2026.01.21.700966.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2026/01/22/2026.01.21.700966.full.pdf"
+      },
+      {
+        "elicitId": "ss-279620506",
+        "title": "Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering",
+        "authors": [
+          "Jie-Ran Sun",
+          "Kirti Biharie",
+          "Peiying Cai",
+          "N. Müller-Bötticher",
+          "Paul Kiessling",
+          "Meghan A. Turner",
+          "S. H. Dam",
+          "Florian Heyl",
+          "Sarusan Kathirchelvan",
+          "M. Emons",
+          "Samuel Gunz",
+          "Sven Twardziok",
+          "Amin El-Heliebi",
+          "Martin Zacharias",
+          "Roland Eils",
+          "M. Reinders",
+          "R. Gottardo",
+          "Christoph Kuppe",
+          "Brian Long",
+          "A. Mahfouz",
+          "Mark D. Robinson",
+          "N. Ishaque"
+        ],
+        "year": 2025,
+        "abstract": "Spatial omics technologies have revolutionized the study of tissue architecture and cellular heterogeneity by integrating molecular profiles with spatial localization. In spatially resolved transcriptomics, delineating higher-order anatomical structures is critical for understanding how cellular organization affects tissue and organ function. Since 2020, more than 50 spatially aware clustering (SAC) methods have been developed for this purpose. However, the reliability of current benchmarks is undermined by their narrow focus on Visium and brain tissue datasets, as well as incorrect interpretation of manual annotation as ground truth. Here, we present SACCELERATOR, a community-driven, extensible framework that standardizes data formatting, method integration, and metric evaluation, and is designed to rapidly incorporate new methods and datasets. SACCELERATOR currently includes 22 SAC methods applied to 15 datasets spanning 9 technologies and diverse tissue types. Our analysis revealed substantial limitations in the generalizability and reproducibility of SAC methods across tissues and platforms. We also demonstrate that anatomical labels commonly used as ground truths are often biased, potentially error-prone, and, in some cases, unsuitable for benchmarking efforts. Rather than scoring and comparing methods, we propose a consensus-guided workflow that aggregates clustering results to generate consensus representations. Descriptive spatial metrics highlight areas of high entropy where method disagreement is highest, enabling targeted feedback for tissue experts. Applied to brain and cancer datasets, this approach uncovered biologically meaningful patterns overlooked by individual methods and manual annotations. Our results underscore the need for iterative, expert-in-the-loop analysis and reveal that traditional evaluation metrics do not always capture the subjective qualities of results. By improving tissue annotation and addressing key benchmarking limitations, SACCELERATOR provides a robust foundation for advancing spatial omics research.",
+        "doi": "10.1101/2025.06.23.660861",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 4,
+        "urls": [
+          "https://doi.org/10.1101/2025.06.23.660861"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.1101/2025.06.23.660861"
+      },
+      {
+        "elicitId": "ss-286739673",
+        "title": "Advances in Explainable Models for Single-cell Transcriptomics and Spatial Transcriptomics Data Analysis",
+        "authors": [
+          "Luchang Ge"
+        ],
+        "year": 2025,
+        "abstract": "Tissue heterogeneity is supported by single-cell sequencing technology, and spatial transcriptomics provides an important technological platform to study the problem, continuous changes in cell state, and microenvironment interactions. Yet the high dimensionality and sparsity of data, batch effects, and spatial point mixing may confuse model inferences. In this review, we discuss recent progress of interpretable model and method developments in single-cell and spatial omics analysis with biological applications, especially for the deep generative model single-cell Variational Inference (scVI) as well as its multimodal extensions total Variational Inference (totalVI) and Multimodal Variational Inference (MultiVI); the spatial mapping method Tangram; and the intercellular communication inference frameworks NicheNet and CellChat. We additionally discuss how pre-trained base models like single-cell Bidirectional Encoder Representations from Transformers (scBERT) and single-cell Generative Pre-trained Transformer (scGPT) can be used for cross-dataset transfer, and the problems this poses to interpretability. This work highlights the construction of an evidential chain centered around “gene/pathway - spatial domain - communication network”, and indicates that spatial colocalization, multimodal consistency, and uncertainty assessment can enhance the confidence and repeatability of mechanistic inference, hence providing a testable hypothesis-generating platform for tumor immunology studies.",
+        "doi": "10.71052/srb2024/yuag4486",
+        "pmid": null,
+        "venue": "Scientific Research Bulletin",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-287172108",
+        "title": "Abstract 5519: SOMaC: An interpretable and generalizable framework for integrating and clustering multimodal spatial omics to resolve cell states and immune niches in cancer.",
+        "authors": [
+          "Junming Shi",
+          "Md Tauhidul Islam"
+        ],
+        "year": 2026,
+        "abstract": "Spatial omics technologies, including spatial transcriptomics and multiplex spatial proteomics, provide unprecedented opportunities to characterize cellular organization, microenvironmental interactions, and functional states within intact tumor tissues. However, integrating these heterogeneous modalities and resolving spatially coherent cell states and immune niches remain major computational challenges. Existing approaches typically analyze individual modalities in isolation, rely on expression-based feature spaces that overlook higher-order molecular structure, and provide limited interpretability for biological discovery. We present SOMaC, an interpretable and generalizable framework for integrating and clustering multimodal spatial omics data to resolve cellular and microenvironmental architecture in cancer tissues. SOMaC extends the OmicsMap paradigm by transforming each cell or spot into an image-like molecular interaction map that encodes pairwise gene or protein correlations, capturing regulatory structure beyond conventional expression matrices. These biologically grounded representations are jointly integrated with spatial topology using a convolutional autoencoder, graph neural network, and learnable-center clustering module, enabling end-to-end optimization of molecular-spatial embeddings for domain discovery. Across 13 benchmark datasets spanning nine human and mouse tissues profiled by 10x Visium, Xenium, Slide-seqV2, Stereo-seq, imaging mass cytometry (IMC), and CODEX, SOMaC consistently outperformed leading methods such as GraphST and SEDR. SOMaC achieved significantly higher clustering quality, with an average Silhouette score of 0.21 (vs. 0.11 for GraphST) and more than a two-fold improvement in the Calinski-Harabasz Index, indicating tighter and more separable spatial domains. On multiplex proteomics datasets, including human colon cancer IMC, SOMaC demonstrated strong cross-modality generalization, achieving a Calinski-Harabasz Index of 40,541 and a Davies-Bouldin Index of 3.03. Notably, SOMaC resolved fine-scale tumor-immune interfaces, stromal barriers, and functional immune niches that were poorly captured by existing methods. By jointly modeling molecular interaction structure and spatial architecture across transcriptomic and proteomic platforms, SOMaC provides a unified and interpretable framework for dissecting tumor ecosystems. This approach enables high-resolution discovery of spatially organized cell states, regulatory programs, and microenvironmental niches, offering new insights into cancer biology and therapeutic targeting.\n\nJunming Shi, Md Tauhidul Islam, . SOMaC: An interpretable and generalizable framework for integrating and clustering multimodal spatial omics to resolve cell states and immune niches in cancer [abstract]. In: Proceedings of the American Association for Cancer Research Annual Meeting 2026; Part 1 (Regular Abstracts); 2026 Apr 17-22; San Diego, CA. Philadelphia (PA): AACR; Cancer Res 2026;86(7 Suppl):Abstract nr 5519.",
+        "doi": "10.1158/1538-7445.am2026-5519",
+        "pmid": null,
+        "venue": "Cancer Research",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-269927925",
+        "title": "Spatially Resolved Single-Cell Omics: Methods, Challenges, and Future Perspectives.",
+        "authors": [
+          "F. Dezem",
+          "N. Morosini",
+          "Wani Arjumand",
+          "Hannah DuBose",
+          "Jasmine T. Plummer"
+        ],
+        "year": 2024,
+        "abstract": "Overlaying omics data onto spatial biological dimensions has been a promising technology to provide high-resolution insights into the interactome and cellular heterogeneity relative to the organization of the molecular microenvironment of tissue samples in normal and disease states. Spatial omics can be categorized into three major modalities: (a) next-generation sequencing-based assays, (b) imaging-based spatially resolved transcriptomics RNA approaches including in situ hybridization/in situ sequencing, and (c) imaging-based proteomics. These modalities allow assessment of transcripts and proteins at a cellular level, generating large and computationally challenging datasets. The lack of standardized computational pipelines to analyze and integrate these nonuniform structured data has made it necessary to apply artificial intelligence and machine learning strategies to best visualize and translate their complexity. In this review, we summarize the currently available techniques and computational strategies, highlight their advantages and limitations, and discuss their future prospects in the scientific field.",
+        "doi": "10.1146/annurev-biodatasci-102523-103640",
+        "pmid": "38768396",
+        "venue": "Annual Review of Biomedical Data Science",
+        "citedByCount": 48,
+        "urls": [
+          "https://doi.org/10.1146/annurev-biodatasci-102523-103640"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://doi.org/10.1146/annurev-biodatasci-102523-103640"
+      },
+      {
+        "elicitId": "ss-281323719",
+        "title": "Cancer subclone detection based on DNA copy number in single-cell and spatial omic sequencing data",
+        "authors": [
+          "Chi-Yun Wu",
+          "Jiazhen Rong",
+          "Anuja Sathe",
+          "Paul R. Hess",
+          "Billy T. Lau",
+          "Susan M. Grimes",
+          "Si-Jia Huang",
+          "Hanlee P. Ji",
+          "Nancy R. Zhang"
+        ],
+        "year": 2025,
+        "abstract": "Somatic mutations such as copy number alterations accumulate during cancer progression, driving intratumor heterogeneity that impacts therapy effectiveness. Understanding the characteristics and spatial distribution of genetically distinct subclones is essential for unraveling tumor evolution and improving cancer treatment. Here we present Clonalscope, a subclone detection method using copy number profiles, applicable to spatial transcriptomics and single-cell sequencing data. Clonalscope implements a nested Chinese Restaurant Process to identify de novo tumor subclones, which can incorporate prior information from matched bulk DNA sequencing data for improved subclone detection and malignant cell labeling. On single-cell RNA sequencing and single-cell assay for transposase-accessible chromatin using sequencing data from gastrointestinal tumors, Clonalscope successfully labeled malignant cells and identified genetically different subclones with thorough validations. On spatial transcriptomics data from various primary and metastasized tumors, Clonalscope labeled malignant spots, traced subclones and identified spatially segregated subclones with distinct differentiation levels and expression of genes associated with drug resistance and survival. Clonalscope is a method for cancer subclone detection leveraging copy number profiles estimated using spatial and single-cell sequencing data.",
+        "doi": "10.1038/s41592-025-02773-5",
+        "pmid": "40954304",
+        "venue": "Nature Methods",
+        "citedByCount": 6,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.05.498882.full.pdf",
+          "https://www.researchsquare.com/article/rs-1838921/latest.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.05.498882.full.pdf"
+      },
+      {
+        "elicitId": "ss-276104406",
+        "title": "Spatial-Omics Methods and Applications.",
+        "authors": [
+          "A. Kulasinghe",
+          "Naomi Berrell",
+          "M. Donovan",
+          "Benedikt S. Nilges"
+        ],
+        "year": 2025,
+        "abstract": "Traditional tissue profiling approaches have evolved from bulk studies to single-cell analysis over the last decade; however, the spatial context in tissues and microenvironments has always been lost. Over the last 5 years, spatial technologies have emerged that enabled researchers to investigate tissues in situ for proteins and transcripts without losing anatomy and histology. The field of spatial-omics enables highly multiplexed analysis of biomolecules like RNAs and proteins in their native spatial context-and has matured from initial proof-of-concept studies to a thriving field with widespread applications from basic research to translational and clinical studies. While there has been wide adoption of spatial technologies, there remain challenges with the standardization of methodologies, sample compatibility, throughput, resolution, and ease of use. In this chapter, we discuss the current state of the field and highlight technological advances and limitations.\n\n© 2025. The Author(s), under exclusive license to Springer Science+Business Media, LLC, part of Springer Nature.",
+        "doi": "10.1007/978-1-0716-4276-4_5",
+        "pmid": "39900756",
+        "venue": "Methods in molecular biology",
+        "citedByCount": 9,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 4,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-285449502",
+        "title": "Single-cell Spatial Multiomics: Technologies, Methods, and Biological Applications",
+        "authors": [
+          "Dong Xing",
+          "Rong Fan",
+          "Fang-Qing Zhao"
+        ],
+        "year": 2026,
+        "abstract": "Dong Xing, Rong Fan, Fangqing Zhao; Single-cell Spatial Multiomics: Technologies, Methods, and Biological Applications, Genomics, Proteomics & Bioinformati",
+        "doi": "10.1093/gpbjnl/qzag012",
+        "pmid": "41660845",
+        "venue": "Genomics, Proteomics & Bioinformatics",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-268384209",
+        "title": "Inferring allele-specific copy number aberrations and tumor phylogeography from spatially resolved transcriptomics",
+        "authors": [
+          "Cong Ma",
+          "Metin Balaban",
+          "Jingxian Liu",
+          "Siqi Chen",
+          "Michael J. Wilson",
+          "Christopher H. Sun",
+          "Li Ding",
+          "Benjamin J. Raphael"
+        ],
+        "year": 2024,
+        "abstract": "A key challenge in cancer research is to reconstruct the somatic evolution within a tumor over time and across space. Spatially resolved transcriptomics (SRT) measures gene expression at thousands of spatial locations in a tumor, but does not directly reveal genetic aberrations. We introduce CalicoST, an algorithm to simultaneously infer allele-specific copy number aberrations (CNAs) and a spatial model of tumor evolution from SRT of tumor slices. By modeling CNA-induced perturbations in both total and allele-specific gene expression, CalicoST identifies important types of CNAs – including copy-neutral loss of heterozygosity (CNLOH) and mirrored subclonal CNAs– that are invisible to total copy number analysis. On SRT data from nine patients from the Human Tumor Atlas Network (HTAN) with matched whole exome sequencing (WES) data, CalicoST achieves an average accuracy of 86%, approximately 21% higher than existing methods. On two patients with SRT data from multiple adjacent slices, CalicoST reconstructs a tumor phylogeography that describes the spread of cancerous clones in three-dimensional space. CalicoST analysis of multiple SRT slices from a cancerous prostate organ reveals five spatially coherent clones, with mirrored subclonal CNAs distinguishing clones on the two sides of the prostate, forming a bifurcating phylogeography in both genetic and physical space.",
+        "doi": "10.1038/s41592-024-02438-9",
+        "pmid": "39478176",
+        "venue": "bioRxiv",
+        "citedByCount": 31,
+        "urls": [
+          "https://doi.org/10.1038/s41592-024-02438-9",
+          "https://www.biorxiv.org/content/biorxiv/early/2024/03/13/2024.03.09.584244.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://doi.org/10.1038/s41592-024-02438-9"
+      },
+      {
+        "elicitId": "ss-248832021",
+        "title": "Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution",
+        "authors": [
+          "Bin Li",
+          "Wen Zhang",
+          "Chuang Guo",
+          "Hao Xu",
+          "Longfei Li",
+          "Ming-Hao Fang",
+          "Yinlei Hu",
+          "Xinye Zhang",
+          "Xinfeng Yao",
+          "Mei-Fang Tang",
+          "Ke Liu",
+          "Xuetong Zhao",
+          "Jun Lin",
+          "Linzhao Cheng",
+          "Falai Chen",
+          "Tian Xue",
+          "Kun Qu"
+        ],
+        "year": 2022,
+        "abstract": "Spatial transcriptomics approaches have substantially advanced our capacity to detect the spatial distribution of RNA transcripts in tissues, yet it remains challenging to characterize whole-transcriptome-level data for single cells in space. Addressing this need, researchers have developed integration methods to combine spatial transcriptomic data with single-cell RNA-seq data to predict the spatial distribution of undetected transcripts and/or perform cell type deconvolution of spots in histological sections. However, to date, no independent studies have comparatively analyzed these integration methods to benchmark their performance. Here we present benchmarking of 16 integration methods using 45 paired datasets (comprising both spatial transcriptomics and scRNA-seq data) and 32 simulated datasets. We found that Tangram, gimVI, and SpaGE outperformed other integration methods for predicting the spatial distribution of RNA transcripts, whereas Cell2location, SpatialDWLS, and RCTD are the top-performing methods for the cell type deconvolution of spots. We provide a benchmark pipeline to help researchers select optimal integration methods to process their datasets.\n\n© 2022. The Author(s), under exclusive licence to Springer Nature America, Inc.",
+        "doi": "10.1038/s41592-022-01480-9",
+        "pmid": "35577954",
+        "venue": "Nature Methods",
+        "citedByCount": 412,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      }
+    ],
+    "warnings": []
+  }
+}

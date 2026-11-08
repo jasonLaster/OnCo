@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "provider": "Elicit API",
+  "endpoint": "https://elicit.com/api/v2/search/papers",
+  "retrievedAt": "2026-11-08T22:43:23.039Z",
+  "request": {
+    "query": "Which original statistical methods studies explain common oncology errors involving causal estimands, intercurrent events, treatment-effect interactions, competing risks, repeated biomarkers, calibration and clinical utility?",
+    "searchMode": "semantic",
+    "maxResults": 15,
+    "corpus": "elicit"
+  },
+  "response": {
+    "papers": [
+      {
+        "elicitId": "ss-267301274",
+        "title": "Inference for Cumulative Incidences and Treatment Effects in Randomized Controlled Trials With Time‐to‐Event Outcomes Under ICH E9 (R1)",
+        "authors": [
+          "Yuhao Deng",
+          "Shasha Han",
+          "Xiao-Hua Zhou"
+        ],
+        "year": 2024,
+        "abstract": "In randomized controlled trials (RCTs) that focus on time‐to‐event outcomes, intercurrent events can arise in two ways: as semi‐competing events, which modify the hazard of the primary outcome events, or as competing events, which make the definition of the primary outcome events unclear. Although five strategies have been proposed in the ICH E9 (R1) addendum to address intercurrent events in RCTs, these strategies are not easily applicable to time‐to‐event outcomes when aiming for causal interpretations. In this study, we show how to define, estimate, and make inferences concerning objectives that have causal interpretations within these contexts. Specifically, we derive the mathematical formulations of the causal estimands corresponding to the five strategies and clarify the data structure needed to identify these causal estimands. Furthermore, we introduce nonparametric methods for estimating and making inferences about these causal estimands, including the asymptotic variance of estimators and the construction of hypothesis tests. Finally, we illustrate our methods using data from the LEADER Trial, which aims to investigate the effect of liraglutide on cardiovascular outcomes.",
+        "doi": "10.1002/sim.70091",
+        "pmid": "40386918",
+        "venue": "Statistics in Medicine",
+        "citedByCount": 2,
+        "urls": [
+          "https://arxiv.org/pdf/2401.14684",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sim.70091"
+        ],
+        "studyTypeTags": [
+          "RCT"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sim.70091"
+      },
+      {
+        "elicitId": "ss-292898630",
+        "title": "Estimands for combination therapy oncology trials with competing risks and their integration with Project SignifiCanT.",
+        "authors": [
+          "Ayon Mukherjee",
+          "Satrajit Roychoudhury",
+          "Atanu Bhattacharjee",
+          "J. Wason"
+        ],
+        "year": 2026,
+        "abstract": "The evaluation of combination therapies in oncology increasingly demands estimand frameworks that reflect component-specific treatment strategies, complex intercurrent events (ICEs), and competing or semi-competing risk structures. Traditional hazard-based analyses often lack causal interpretability in these settings, particularly when selective discontinuation, immune-mediated toxicity, or death modifies subsequent exposure and influences event pathways. To address these limitations, we propose a unified causal-estimand framework specifically tailored for combination oncology trials. Grounded in potential-outcomes theory and aligned with ICH E9 (R1), the framework (i) defines regimen-level, component-specific, and pathway-specific estimands; (ii) formally maps these estimands to ICE strategies - treatment policy, hypothetical, composite, principal stratum, and while-on-treatment; (iii) evaluates the compatibility of commonly used statistical approaches, including cause-specific hazards, subdistribution hazards, and multi-state models, with these estimands; and (iv) integrates these elements with the regulatory objectives of the FDA's Project SignifiCanT, with particular emphasis on mechanistic interpretability, benefit-risk assessment, and transparent justification of analytical choices. By expressing estimands as contrasts of counterfactual risk or state-occupation functions - rather than relying solely on model-based hazard ratios - the framework enhances clinical relevance, supports attribution of component-specific effects, and facilitates cross-trial comparability. This work provides a principled foundation for designing, analysing, and reporting combination oncology trials, thereby advancing both methodological rigour and regulatory clarity.",
+        "doi": "10.1080/10543406.2026.2741430",
+        "pmid": "42870401",
+        "venue": "Journal of Biopharmaceutical Statistics",
+        "citedByCount": 0,
+        "urls": [
+          "https://www.tandfonline.com/doi/pdf/10.1080/10543406.2026.2741430?needAccess=true"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 2,
+        "fullTextUrl": "https://www.tandfonline.com/doi/pdf/10.1080/10543406.2026.2741430?needAccess=true"
+      },
+      {
+        "elicitId": "ss-51620235",
+        "title": "Estimation of causal effects in clinical endpoint bioequivalence studies in the presence of intercurrent events: noncompliance and missing data",
+        "authors": [
+          "Y. Lou",
+          "Michael P. Jones",
+          "Wan-Jie Sun"
+        ],
+        "year": 2018,
+        "abstract": "ABSTRACT In clinical endpoint bioequivalence (BE) studies, the primary analysis for assessing equivalence between a generic and an innovator product is based on the observed per-protocol (PP) population (usually completers and compliers). However, missing data and noncompliance are post-randomization intercurrent events and may introduce selection bias. Therefore, PP analysis is generally not causal. The FDA Missing Data Working Group recommended using “causal estimands of primary interest.” In this paper, we propose a principal stratification causal framework and co-primary causal estimands to test equivalence, which was also recommended by the recently published ICH E9 (R1) addendum to address intercurrent events. We identify three conditions under which the current PP estimator is unbiased for one of the proposed co-primary causal estimands – the “Survivor Average Causal Effect” (SACE) estimand. Simulation shows that when these three conditions are not met, the PP estimator is biased and may inflate Type 1 error and/or change power. We also propose a tipping point sensitivity analysis to evaluate the robustness of the current PP estimator in testing equivalence when the sensitivity parameters deviate from the three identified conditions, but stay within a clinically meaningful range. Our work is the first causal equivalence assessment in equivalence studies with intercurrent events.",
+        "doi": "10.1080/10543406.2018.1489408",
+        "pmid": "29995564",
+        "venue": "Journal of Biopharmaceutical Statistics",
+        "citedByCount": 21,
+        "urls": [
+          "https://figshare.com/articles/journal_contribution/Estimation_of_causal_effects_in_clinical_endpoint_bioequivalence_studies_in_the_presence_of_intercurrent_events_noncompliance_and_missing_data/6804644"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 2,
+        "fullTextUrl": "https://figshare.com/articles/journal_contribution/Estimation_of_causal_effects_in_clinical_endpoint_bioequivalence_studies_in_the_presence_of_intercurrent_events_noncompliance_and_missing_data/6804644"
+      },
+      {
+        "elicitId": "ss-241190485",
+        "title": "Competing Risks",
+        "authors": [
+          "A. Latouche",
+          "Gang Li",
+          "Qinghe Yang"
+        ],
+        "year": 2019,
+        "abstract": "Competing risks are increasingly used in oncology to decipher the effect of a treatment on components of the overall survival. This chapter provides essential tools for summarizing treatment effect with an emphasize in oncology. After presenting the quantities of interest, we detail some new developments with a focus on joint inference. Finally, some case studies are provided with the corresponding R code to reproduce them (available on the book’s companion website https://www.crcpress.com//9781138083776 ).",
+        "doi": "10.1201/9781315112084-21",
+        "pmid": null,
+        "venue": "Textbook of Clinical Trials in Oncology",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-289706696",
+        "title": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
+        "authors": [
+          "Rui-Xi Zhao",
+          "M. Stensrud",
+          "Lin-Bo Wang"
+        ],
+        "year": 2026,
+        "abstract": "In longitudinal studies, outcomes of interest are often truncated by death, meaning that they are only observed or well-defined conditional on intercurrent events such as survival. Existing strategies face a trade-off: causally interpretable estimands, such as survivor average causal effects, target a latent subgroup, whereas while-alive and composite summaries apply to the full population but are difficult to interpret as causal effects on the non-mortality outcome. We address these challenges by introducing methodology for a new set of estimands that (i) concern the entire population, (ii) remain causally interpretable, and (iii) leverage the longitudinal data commonly available in studies with outcomes truncated by death. The set of estimands includes single-world marginal separable effects that generalize conditional separable effects to full-population summaries. We develop identification and estimation results for these estimands and apply the methodology in a reanalysis of a prostate cancer trial, highlighting how different estimands can yield different treatment conclusions.",
+        "doi": null,
+        "pmid": null,
+        "venue": null,
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [
+          "Longitudinal"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-276782359",
+        "title": "Estimating treatment effects with competing intercurrent events in randomized controlled trials",
+        "authors": [
+          "Sizhu Lu",
+          "Yan-Yao Yi",
+          "Y. Qu",
+          "Huayu Liu",
+          "Ting Ye",
+          "Peng Ding"
+        ],
+        "year": 2025,
+        "abstract": "The analysis of randomized controlled trials is often complicated by intercurrent events (ICEs) -- events that occur after treatment initiation and affect either the interpretation or existence of outcome measurements. Examples include treatment discontinuation or the use of additional medications. In two recent clinical trials for systemic lupus erythematosus with complications of ICEs, we classify the ICEs into two broad categories: treatment-related (e.g., treatment discontinuation due to adverse events or lack of efficacy) and treatment-unrelated (e.g., treatment discontinuation due to external factors such as pandemics or relocation). To define a clinically meaningful estimand, we adopt tailored strategies for each category of ICEs. For treatment-related ICEs, which are often informative about a patient's outcome, we use the composite variable strategy that assigns an outcome value indicative of treatment failure. For treatment-unrelated ICEs, we apply the hypothetical strategy, assuming their timing is conditionally independent of the outcome given treatment and baseline covariates, and hypothesizing a scenario in which such events do not occur. A central yet previously overlooked challenge is the presence of competing ICEs, where the first ICE censors all subsequent ones. Despite its ubiquity in practice, this issue has not been explicitly recognized or addressed in previous data analyses due to the lack of rigorous statistical methodology. In this paper, we propose a principled framework to formulate the estimand, establish its nonparametric identification and semiparametric estimation theory, and introduce weighting, outcome regression, and doubly robust estimators. We apply our methods to analyze the two systemic lupus erythematosus trials, demonstrating the robustness and practical utility of the proposed framework.",
+        "doi": null,
+        "pmid": null,
+        "venue": null,
+        "citedByCount": 1,
+        "urls": [],
+        "studyTypeTags": [
+          "RCT"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-270526128",
+        "title": "MSR80 Estimands and Strategies for Handling Treatment Switching As an Intercurrent Event in Evidence Synthesis of Randomized Clinical Trials in Oncology",
+        "authors": [
+          "R. Metcalfe",
+          "A. Gorst-Rasmussen",
+          "A. Morga",
+          "Remiro Azocar A",
+          "J. Park"
+        ],
+        "year": 2024,
+        "abstract": null,
+        "doi": "10.1016/j.jval.2024.03.1513",
+        "pmid": null,
+        "venue": "Value in Health",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-281310359",
+        "title": "Robust evaluation of treatment effects in longitudinal studies with truncation by death or other intercurrent events",
+        "authors": [
+          "Georgi Baklicharov",
+          "K. Van Lancker",
+          "S. Vansteelandt"
+        ],
+        "year": 2025,
+        "abstract": "Intercurrent events, such as treatment switching, rescue medication, or truncation by death, can complicate the interpretation of intention-to-treat (ITT) analyses in randomized clinical trials. Recent advances in causal inference address these challenges by targeting alternative estimands, such as hypothetical estimands or principal stratum estimands (e.g., survivor average causal effects). However, such approaches often require strong, unverifiable assumptions, partly due to limited data on time-varying confounders and the difficulty of adjusting for them. Additionally, strict trial protocols frequently lead to (near) violations of the positivity assumption, resulting in limited information for identifying these estimands. In this paper, we propose a novel approach that sidesteps these difficulties by focusing on testing the null hypothesis of no treatment effect in the presence of arbitrary intercurrent events, including truncation by death, using longitudinal trial data. Our key idea is to compare treated and untreated individuals, matched on baseline covariates, at the most recent time point before either experiences an intercurrent event. We refer to such contrasts as Pairwise Last Observation Time (PLOT) estimands. These estimands can be identified in randomized clinical trials without requiring additional structural assumptions, and even in the presence of the aforementioned positivity violations. However, they may still be susceptible to a form of residual selection bias. We show that this bias vanishes under the conditions typically required by alternative methods, and find it to be more generally small in extensive simulation studies. Building on this, we develop asymptotically efficient, model-free tests using data-adaptive estimation of nuisance parameters. We evaluate the method's performance via simulation studies.",
+        "doi": null,
+        "pmid": null,
+        "venue": null,
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [
+          "Longitudinal"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-281819272",
+        "title": "Estimating treatment effects in trials with outcome data truncated by death: A case study on aligning estimators with estimands",
+        "authors": [
+          "T. Pham",
+          "B. C. Kahan",
+          "Andre Lopes",
+          "Memuna Rashid",
+          "Peter Hoskin",
+          "Ian R. White"
+        ],
+        "year": 2025,
+        "abstract": "Background/Aims: Randomised clinical trials assessing treatment effects on health outcomes (e.g. quality of life) can be affected by data truncation by death, where some patients die before their outcome measure is assessed and their data become undefined after death. The ICH E9(R1) addendum on estimands discusses four strategies for handling such terminal intercurrent events: hypothetical, composite, while-alive, and principal stratum. While the addendum emphasises the importance of aligning statistical methods of analysis (i.e. estimators) with estimands, it does not provide specific guidance and consideration on the choice of estimators in practice. We aim to (1) demonstrate how some statistical methods commonly used in trials can be used to estimate different intercurrent event strategies for handling data truncation by death; and (2) describe how missing outcome data (e.g. due to missed assessments or loss to follow-up) can be handled for each estimator. Method: We use data from SCORAD, a non-inferiority randomised trial comparing single-fraction versus multifraction radiotherapy on ambulatory status at 8 weeks (primary outcome) among patients with spinal canal compression from metastatic cancer. Here, we estimate the effect of radiotherapy on quality of life (secondary outcome), quantified by the difference in mean global health status between the two groups at 8 weeks. We outline the strategies for handling death and describe a selection of commonly used estimators corresponding to each strategy. The handling of missing data is considered and demonstrated as part of the estimation process. Results: The hypothetical strategy, targeting a treatment effect assuming patients had not died, can be estimated using linear mixed models (a likelihood approach) or multiple imputation (a method commonly used for handling missing data). The composite and while-alive strategies relate to the ‘outcome’ attribute of the estimand; the former incorporates death into the definition of the primary outcome, the latter only uses outcome data before death. These can be estimated by re-defining the outcome, for example, assigning a value reflecting poor global health status post-death, or using the last global health status observed before death. The principal stratum strategy, targeting a treatment effect among patients who would not die under either treatment, can be estimated by an analysis of survivors under specific assumptions. Missing data can be handled with linear mixed models or multiple imputation. Conclusions: Regarding death as an intercurrent event in the process of defining the estimand for the trial will help clarify the choice of suitable estimators. When choosing the estimators, it is important to consider the assumptions required by the estimators as well as their plausibility given the setting of the trial.",
+        "doi": "10.1177/17407745251360645",
+        "pmid": "41045149",
+        "venue": "Clinical Trials",
+        "citedByCount": 7,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-271945658",
+        "title": "Estimands in clinical trials of complex disease processes",
+        "authors": [
+          "Richard J. Cook",
+          "J. Lawless"
+        ],
+        "year": 2024,
+        "abstract": "Clinical trials with random assignment of treatment provide evidence about causal effects of an experimental treatment compared to standard care. However, when disease processes involve multiple types of possibly semi-competing events, specification of target estimands and causal inferences can be challenging. Intercurrent events such as study withdrawal, the introduction of rescue medication, and death further complicate matters. There has been much discussion about these issues in recent years, but guidance remains ambiguous. Some recommended approaches are formulated in terms of hypothetical settings that have little bearing in the real world. We discuss issues in formulating estimands, beginning with intercurrent events in the context of a linear model and then move on to more complex disease history processes amenable to multistate modeling. We elucidate the meaning of estimands implicit in some recommended approaches for dealing with intercurrent events and highlight the disconnect between estimands formulated in terms of potential outcomes and the real world.",
+        "doi": "10.1177/17407745241268054",
+        "pmid": "39180288",
+        "venue": "Clinical Trials",
+        "citedByCount": 1,
+        "urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11528884/pdf/10.1177_17407745241268054.pdf",
+          "https://doi.org/10.1177/17407745241268054"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11528884/pdf/10.1177_17407745241268054.pdf"
+      },
+      {
+        "elicitId": "ss-235790535",
+        "title": "Hypothetical Estimands in Clinical Trials: A Unification of Causal Inference and Missing Data Methods",
+        "authors": [
+          "Camila Olarte Parra",
+          "R. Daniel",
+          "J. Bartlett"
+        ],
+        "year": 2021,
+        "abstract": "Abstract The ICH E9 addendum introduces the term intercurrent event to refer to events that happen after treatment initiation and that can either preclude observation of the outcome of interest or affect its interpretation. It proposes five strategies for handling intercurrent events to form an estimand but does not suggest statistical methods for estimation. In this article we focus on the hypothetical strategy, where the treatment effect is defined under the hypothetical scenario in which the intercurrent event is prevented. For its estimation, we consider causal inference and missing data methods. We establish that certain “causal inference estimators” are identical to certain “missing data estimators.” These links may help those familiar with one set of methods but not the other. Moreover, using potential outcome notation allows us to state more clearly the assumptions on which missing data methods rely to estimate hypothetical estimands. This helps to indicate whether estimating a hypothetical estimand is reasonable, and what data should be used in the analysis. We show that hypothetical estimands can be estimated by exploiting data after intercurrent event occurrence, which is typically not used. Supplementary materials for this article are available online.",
+        "doi": "10.1080/19466315.2022.2081599",
+        "pmid": "37260584",
+        "venue": "Statistics in Biopharmaceutical Research",
+        "citedByCount": 50,
+        "urls": [
+          "https://www.tandfonline.com/doi/epdf/10.1080/19466315.2022.2081599?needAccess=true&role=button",
+          "https://orca.cardiff.ac.uk/id/eprint/161213/1/Hypothetical%20Estimands%20in%20Clinical%20Trials%20A%20Unification%20of%20Causal%20Inference%20and%20Missing%20Data%20Methods.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10228513/pdf/USBR_15_2081599.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.tandfonline.com/doi/epdf/10.1080/19466315.2022.2081599?needAccess=true&role=button"
+      },
+      {
+        "elicitId": "ss-67761364",
+        "title": "The choice to define competing risk events as censoring events and implications for causal inference",
+        "authors": [
+          "Jessica G. Young",
+          "E. T. Tchetgen Tchetgen",
+          "M. Hernán"
+        ],
+        "year": 2018,
+        "abstract": "In failure-time settings, a competing risk event is any event that makes it impossible for the event of interest to occur. Different analytical methods are available for estimating the effect of a treatment on a failure event of interest that is subject to competing events. The choice of method depends on whether or not competing events are defined as censoring events. Though such definition has key implications for the causal interpretation of a given estimate, explicit consideration of those implications has been rare in the statistical literature. As a result, confusion exists as to how to choose amongst available methods for analyzing data with competing events and how to interpret effect estimates. This confusion can be alleviated by understanding that the choice to define a competing event as a censoring event or not corresponds to a choice between different causal estimands. In this paper, we describe the assumptions required to identify those causal estimands and provide a mapping between such estimands and standard terminology from the statistical literature---in particular, the terms \"subdistribution function\", \"subdistribution hazard\" and \"cause-specific hazard\". We show that when the censoring process depends on measured time-varying risk factors, conventional statistical methods for competing events are not valid and alternative methods derived from Robins's g-formula may recover the causal estimand of interest.",
+        "doi": null,
+        "pmid": null,
+        "venue": null,
+        "citedByCount": 10,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-252568207",
+        "title": "Multistate models as a framework for estimand specification in clinical trials of complex processes",
+        "authors": [
+          "A. Bühler",
+          "R. Cook",
+          "J. Lawless"
+        ],
+        "year": 2022,
+        "abstract": "Intensity‐based multistate models provide a useful framework for characterizing disease processes, the introduction of interventions, loss to followup, and other complications arising in the conduct of randomized trials studying complex life history processes. Within this framework we discuss the issues involved in the specification of estimands and show the limiting values of common estimators of marginal process features based on cumulative incidence function regression models. When intercurrent events arise we stress the need to carefully define the target estimand and the importance of avoiding targets of inference that are not interpretable in the real world. This has implications for analyses, but also the design of clinical trials where protocols may help in the interpretation of estimands based on marginal features.",
+        "doi": "10.1002/sim.9675",
+        "pmid": "36721334",
+        "venue": "Statistics in Medicine",
+        "citedByCount": 22,
+        "urls": [
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sim.9675"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sim.9675"
+      },
+      {
+        "elicitId": "ss-2500177",
+        "title": "Top ten errors of statistical analysis in observational studies for cancer research",
+        "authors": [
+          "A. Carmona-Bayonas",
+          "P. Jiménez-Fonseca",
+          "A. Fernández-Somoano",
+          "F. Álvarez-Manceñido",
+          "E. Castañón",
+          "A. Custodio",
+          "F. A. de la Peña",
+          "R. M. Payo",
+          "L. P. Valiente"
+        ],
+        "year": 2018,
+        "abstract": "Observational studies using registry data make it possible to compile quality information and can surpass clinical trials in some contexts. However, data heterogeneity, analytical complexity, and the diversity of aspects to be taken into account when interpreting results makes it easy for mistakes to be made and calls for mastery of statistical methodology. Some questionable research practices that include poor analytical data management are responsible for the low reproducibility of some results; yet, there is a paucity of information in the literature regarding specific statistical pitfalls of cancer studies. In addition to proposing how to avoid or solve them, this article seeks to expose ten common problematic situations in the analysis of cancer registries: convenience, dichotomization, stratification, regression to the mean, impact of sample size, competing risks, immortal time and survivor bias, management of missing values, and data dredging.",
+        "doi": "10.1007/s12094-017-1817-9",
+        "pmid": "29218627",
+        "venue": "Clinical and Translational Oncology",
+        "citedByCount": 26,
+        "urls": [
+          "http://hdl.handle.net/10651/46370"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 2,
+        "fullTextUrl": "http://hdl.handle.net/10651/46370"
+      },
+      {
+        "elicitId": "ss-226270378",
+        "title": "Estimand framework: Are we asking the right questions? A case study in the solid tumor setting",
+        "authors": [
+          "M. Casey",
+          "E. Degtyarev",
+          "M. Lechuga",
+          "P. Aimone",
+          "A. Ravaud",
+          "R. Motzer",
+          "Feng Liu",
+          "V. Stalbovskaya",
+          "R. Tang",
+          "E. Butler",
+          "O. Sailer",
+          "S. Halabi",
+          "D. George"
+        ],
+        "year": 2020,
+        "abstract": "The estimand framework requires a precise definition of the clinical question of interest (the estimand) as different ways of accounting for “intercurrent” events post randomization may result in different scientific questions. The initiation of subsequent therapy is common in oncology clinical trials and is considered an intercurrent event if the start of such therapy occurs prior to a recurrence or progression event. Three possible ways to account for this intercurrent event in the analysis are to censor at initiation, consider recurrence or progression events (including death) that occur before and after the initiation of subsequent therapy, or consider the start of subsequent therapy as an event in and of itself. The new estimand framework clarifies that these analyses address different questions (“does the drug delay recurrence if no patient had received subsequent therapy?” vs “does the drug delay recurrence with or without subsequent therapy?” vs “does the drug delay recurrence or start of subsequent therapy?”). The framework facilitates discussions during clinical trial planning and design to ensure alignment between the key question of interest, the analysis, and interpretation. This article is a result of a cross‐industry collaboration to connect the International Council for Harmonisation E9 addendum concepts to applications. Data from previously reported randomized phase 3 studies in the renal cell carcinoma setting are used to consider common intercurrent events in solid tumor studies, and to illustrate different scientific questions and the consequences of the estimand choice for study design, data collection, analysis, and interpretation.",
+        "doi": "10.1002/pst.2079",
+        "pmid": "33155417",
+        "venue": "Pharmaceutical statistics",
+        "citedByCount": 18,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      }
+    ],
+    "warnings": []
+  }
+}

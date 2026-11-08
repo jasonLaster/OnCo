@@ -18,7 +18,7 @@ import type { TermInput } from "@/lib/schema";
 
 const asOf = "2026-09-09";
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
-type T = Omit<TermInput, "kind" | "asOf">;
+type T = Omit<TermInput, "kind" | "asOf"> & { asOf?: string };
 const t = (x: T): TermInput => ({ kind: "term", asOf, links: x.wikipedia ? [{ label: "Wikipedia", url: x.wikipedia }] : undefined, ...x });
 
 const BIO = "Biology basics";
@@ -899,12 +899,13 @@ export const termsBasics: TermInput[] = [
   // Regulatory and access
   // =====================================================================================
   t({
+    asOf: "2026-11-08", links: [{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Off-label_use"},{"label":"FDA: unapproved use of an approved drug","url":"https://www.fda.gov/patients/learn-about-expanded-access-and-other-treatment-options/understanding-unapproved-use-approved-drugs-label"},{"label":"FDA: expanded access","url":"https://www.fda.gov/news-events/public-health-focus/expanded-access"}],
     id: "off-label", name: "Off-label", category: CLINIC,
     aka: ["off label", "off-label use", "off-label prescribing", "on-label", "labelled indication", "labeled indication", "approved indication", "approved indications", "drug label", "prescribing information"],
-    tldr: "Prescribing an approved drug for a use not listed on its official label, for example a different cancer or an earlier stage. Legal and common in oncology, but insurers may refuse to pay and the evidence is often thinner.",
-    summary: "A drug's label (its licence) specifies the diseases, stages, biomarkers and prior treatments for which regulators have judged the evidence sufficient; anything else is off-label. In oncology perhaps a third of prescribing is off-label, driven by tumour-agnostic biology (a KRAS G12C inhibitor approved in lung cancer used in colorectal cancer), by rare cancers where trials are infeasible, and by guideline recommendations that run ahead of regulators. Compendia such as NCCN largely determine which off-label uses insurers will reimburse in the United States, and tumour-agnostic approvals and basket trials are ways of bringing rational off-label use onto the label.",
+    tldr: "Off-label use means using an approved medicine outside its approved labeling. The evidence for that particular use and whether it will be paid for need separate assessment.",
+    summary: "A different disease, dose or route can make use of an approved medicine off label. FDA states that clinicians generally may prescribe an approved drug for an unapproved use when they consider it medically appropriate, but the original approval does not establish safety and effectiveness for that use. The supporting evidence can vary. A product never approved for any use is investigational rather than simply off label; clinical trials and expanded access have different arrangements. Approval, a guideline recommendation and insurance coverage are not interchangeable decisions.",
     wikipedia: W("Off-label_use"),
-    related: ["standard-of-care", "tumour-agnostic", "basket-umbrella-platform", "accelerated-approval", "orphan-drug", "rare-cancers", "companion-diagnostic-term"],
+    related: ["standard-of-care","tumour-agnostic","basket-umbrella-platform","accelerated-approval","orphan-drug","rare-cancers","companion-diagnostic-term","label-indication","expanded-access","investigational-new-drug-application"],
   }),
   t({
     id: "orphan-drug", name: "Orphan drug", category: CLINIC,

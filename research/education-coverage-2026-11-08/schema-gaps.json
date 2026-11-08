@@ -1,0 +1,28 @@
+[
+  {
+    "id": "assay-status-claims",
+    "status": "open; concrete schema proposal required",
+    "question": "Can a query distinguish test origin, development designation, product authorization and laboratory certification for the same assay and intended use?",
+    "currentFields": [
+      "src/data/assays.ts:Assay.regulatory",
+      "src/data/assays.ts:Assay.source"
+    ],
+    "finding": "One enum mixes LDT, Breakthrough device and FDA authorization labels. It cannot retain coexisting source-backed claims with separate subject and use scopes.",
+    "needed": "A backwards-compatible collection of scoped regulatory claims, preserving authority, jurisdiction, subject/product/laboratory, intended use, source and date. Unknown clinical utility must not be inferred from a status label.",
+    "approvalDependency": "Schema/library product changes require the repository product-approval workflow."
+  },
+  {
+    "id": "trial-site-status",
+    "status": "open; concrete schema proposal required",
+    "question": "Can a query report which named facility is recruiting while keeping overall status, local cohort availability and the dated source separate?",
+    "currentFields": [
+      "src/lib/schema.ts:TrialParticipationSchema.overallStatus",
+      "src/lib/schema.ts:TrialParticipationSchema.siteCount",
+      "src/lib/schema.ts:TrialParticipationSchema.recruitingSiteCount",
+      "src/lib/schema.ts:TrialParticipationSchema.studySha256"
+    ],
+    "finding": "Dated raw study captures and site counts exist, but the normalized participation row does not retain named facility statuses or cohort availability. This is not loss of the original registry source.",
+    "needed": "Optional source-backed facility-status observations with registry provenance; cohort/slot availability remains unknown unless separately reported. Do not infer it from overall status.",
+    "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated."
+  }
+]

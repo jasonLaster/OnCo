@@ -2,6 +2,16 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-08
+
+### Evidence interpretation found during the education-concept audit
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Biomarker](/terms/biomarker/) | Implied that biomarker selection spares excluded patients a useless drug and that a validated test thereby becomes a companion diagnostic | Public curriculum crosswalk; FDA biomarker and companion-diagnostic definitions and Ballman's predictive-biomarker methodology checked at source | Describes the biomarker roles and their context; selection does not guarantee benefit or universally exclude it. Companion diagnostics retain their specific regulatory purpose |
+| 2026-11-08 | [Actionable genomic biomarkers](/terms/cancer-drivers-vs-actionable/) | Said a genomic match directly changes what a patient is offered, conflating evidence of actionability with eligibility and access | ESCAT framework and ClinGen functional-evidence recommendations, resolved through Europe PMC and abstracts read | Retains exact alteration, disease, intervention and evidence tier; separates biological function, treatment evidence and access |
+| 2026-11-08 | [External validation](/terms/external-validation/) | Called an internal estimate "not a result" and implied external evaluation required another hospital, country or platform | Original TRIPOD statement, prediction-model studies section | Internal validation is evidence within its scope; external validation can also be temporal, and any evaluation retains its population, task and limitations |
+
 ## 2026-11-04
 
 ### Corrections found by the November 2026 gap census

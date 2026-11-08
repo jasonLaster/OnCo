@@ -1,5 +1,6 @@
 import type { TermInput } from "@/lib/schema";
 import { linkers, payloads } from "./payloads";
+import { adcPayloadFrontier } from "./adc-payload-frontier";
 
 const asOf = "2026-09-09";
 type T = Omit<TermInput, "kind" | "asOf" | "category">;
@@ -59,4 +60,4 @@ const linkerTerms: TermInput[] = linkers.map((l) => {
 });
 
 /** Payloads, payload classes and linkers as glossary objects, so every cell in the registry links somewhere. */
-export const adcChemistry: TermInput[] = [...payloadTerms, ...classTerms, ...linkerTerms];
+export const adcChemistry: TermInput[] = [...payloadTerms, ...classTerms, ...linkerTerms, ...adcPayloadFrontier];

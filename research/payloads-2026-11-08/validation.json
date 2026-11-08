@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "validate": "pass, 22714 entities",
+  "typecheck": "pass",
+  "lint": "pass; seven existing warnings in unrelated files; changed data files lint clean",
+  "fullSuite": {
+    "filesPassed": 280,
+    "filesFailed": 1,
+    "testsPassed": 2812,
+    "testsFailed": 1,
+    "testsSkipped": 2,
+    "failure": "link-sense fragment audit: added neodegrader synonym matched degrader only inside a word",
+    "resolution": "replaced with precise GSPT1 molecular glue synonym; audit has no regressions"
+  },
+  "focusedRerun": {
+    "files": [
+      "scripts/link-sense-audit.test.ts",
+      "src/lib/corpus-rules.test.ts",
+      "src/lib/tone.test.ts",
+      "src/lib/graph.test.ts"
+    ],
+    "filesPassed": 4,
+    "testsPassed": 83
+  },
+  "dedupe": "unchanged: nine baseline duplicate groups, no new groups",
+  "render": "35 server-rendered record pages inspected for ledes, sources and relationships; not a production deployment",
+  "secretScan": "gitleaks 8.24.3: no leaks",
+  "scope": "31 new concepts; four revised existing parent records; no schema or product changes"
+}

@@ -1,0 +1,228 @@
+import type { TermInput } from "@/lib/schema";
+
+const asOf = "2026-11-08";
+type Concept = Omit<TermInput, "kind" | "asOf" | "category">;
+const t = (x: Concept): TermInput => ({ kind: "term", asOf, category: "ADC chemistry", technologies: ["adc"], terms: ["payload"], ...x });
+const paper = (label: string, doi: string) => ({ label, url: `https://doi.org/${doi}` });
+const registry = (nct: string) => ({ label: `ClinicalTrials.gov: ${nct}`, url: `https://clinicaltrials.gov/study/${nct}` });
+
+// These are sourced mechanism concepts, not entries in the payload/linker comparison registry.
+// Many experimental payloads lack measured permeability, loading or human toxicity data.
+// Keep those properties unknown instead of inventing values to satisfy Payload's required fields.
+export const adcPayloadFrontier: TermInput[] = [
+  t({
+    id: "next-generation-adc-payloads", name: "Next-generation antibody-conjugate payloads", aka: ["non-TOP1 payloads", "novel ADC payload mechanisms", "ADC payload diversification"],
+    tldr: "Antibodies can carry drugs that block gene reading, remove proteins, interrupt cell signals or activate immune cells. Each approach needs its own evidence that the drug reaches its target and helps people safely.",
+    summary: "Payload diversification changes what an antibody delivers, independently of which surface antigen it binds. This map includes transcription and splicing inhibitors, repair-checkpoint inhibitors, metabolic and apoptosis agents, targeted protein degraders, immune agonists, signaling inhibitors, and additional tubulin and DNA-interacting scaffolds. Bispecific targeting is a delivery format; dual payload means distinct agents on one construct. Neither label alone establishes a new payload mechanism. Protein toxins, radionuclides, oligonucleotides, photosensitizers and antibody-directed nanocarriers have related delivery questions but retain their own format definitions. Evidence ranges from cell experiments and animal models to early clinical studies; a mechanism change does not by itself establish benefit after a TOP1 antibody-drug conjugate.",
+    technologies: ["adc", "dual-payload-adc", "bispecific-adc", "degrader-antibody-conjugate", "immune-stimulating-adc", "radioimmunotherapy", "antibody-oligonucleotide-conjugates", "photoimmunotherapy"],
+    related: ["transcription-inhibitor-payloads", "amanitin-payloads", "triptolide-payloads", "spliceosome-inhibitor-payloads", "cdk-inhibitor-payloads", "ddr-inhibitor-payloads", "atr-inhibitor-payloads", "nampt-inhibitor-payloads", "bcl-xl-inhibitor-payloads", "mcl1-inhibitor-payloads", "hdac-inhibitor-payloads", "gspt1-degrader-payloads", "brd4-degrader-payloads", "kif11-degrader-payloads", "ksp-inhibitor-payloads", "sting-agonist-payloads", "tlr-agonist-payloads", "gq11-inhibitor-payloads", "pi3k-pikk-inhibitor-payloads", "tubulysin-payloads", "hemiasterlin-payloads", "eribulin-payload", "cryptophycin-payloads", "anthracycline-payloads", "ign-payloads", "pdd-payloads", "protein-alkylator-payloads", "proteasome-inhibitor-payloads", "ferroptosis-conjugate-payloads", "protein-toxin-payloads"],
+    links: [paper("Yamazaki et al., dual-payload conjugates in breast cancer models (2021)", "10.1038/s41467-021-23793-7"), paper("Carlino et al., Gq/11 inhibitor conjugate phase 1 study (2026)", "10.1038/s41591-026-04518-z")],
+    notes: ["This is a map of publicly described mechanisms, not an exhaustive list of proprietary payload molecules or a ranking of treatments. Follow each concept to the experiment or trial supporting it."],
+  }),
+  t({
+    id: "transcription-inhibitor-payloads", name: "Transcription-inhibitor payloads", aka: ["RNA polymerase inhibitor payloads", "gene transcription payloads"],
+    tldr: "These payloads stop a cell from reading the instructions in its genes. Researchers are testing whether antibody delivery can make this different way of killing cancer cells usable safely.",
+    summary: "Transcription inhibition interrupts RNA production, unlike TOP1 poisons or tubulin inhibitors. Amanitin directly inhibits RNA polymerase II; triptolide interferes with the transcription factor TFIIH. The HDP-101 preclinical study included proliferating and resting myeloma cells. That result does not establish activity against every dormant tumor or clinical resistance mechanism. Targeted delivery, intracellular activity and tolerability must be demonstrated for each construct.",
+    related: ["amanitin-payloads", "triptolide-payloads", "cdk-inhibitor-payloads", "spliceosome-inhibitor-payloads"],
+    links: [paper("HDP-101 in proliferating and resting myeloma models (2021)", "10.1158/1535-7163.MCT-20-0287"), paper("Hayashi et al., CD26-directed triptolide conjugate (2019)", "10.3390/cancers11081138")],
+  }),
+  t({
+    id: "amanitin-payloads", name: "Amanitin payloads", aka: ["alpha-amanitin payload", "amatoxin payloads", "antibody-targeted amanitin conjugates", "ATAC payloads", "tismanitin"],
+    tldr: "Amanitin payloads block the machinery that copies genes into messages. Attaching them to an antibody aims to direct their cell-killing action toward cancer cells.",
+    summary: "Amanitin derivatives inhibit RNA polymerase II. HDP-101, also called pamlectabart tismanitin, links an amanitin derivative to an antibody against BCMA. Published preclinical work found activity in proliferating and resting myeloma cells and tumor regression in mouse models. The linked human trial is a separate safety and activity study. The toxicity of free amanitin and preclinical tolerability of a conjugate must not be treated as the same safety evidence.",
+    drugs: ["pamlectabart-tismanitin"], terms: ["payload", "transcription-inhibitor-payloads"],
+    links: [paper("HDP-101 preclinical study (2021)", "10.1158/1535-7163.MCT-20-0287"), registry("NCT04879043")],
+  }),
+  t({
+    id: "triptolide-payloads", name: "Triptolide payloads", aka: ["TFIIH inhibitor payloads", "Y-TR1", "Y-TR-1"],
+    tldr: "Triptolide payloads interfere with the cell's ability to make messages from its genes. An antibody-linked version has been studied in cancer cells and mice.",
+    summary: "Y-TR1 combines the CD26-directed antibody YS110 with a triptolide derivative that inhibits the general transcription factor TFIIH. The published study reported altered RNA synthesis and antitumor activity in CD26-positive experimental models. This is preclinical evidence for a transcription-directed conjugate, not evidence that triptolide is an established antibody payload in clinical care.",
+    terms: ["payload", "transcription-inhibitor-payloads"],
+    links: [paper("Hayashi et al., Y-TR1 transcription-inhibitor conjugate (2019)", "10.3390/cancers11081138")],
+  }),
+  t({
+    id: "spliceosome-inhibitor-payloads", name: "Spliceosome-inhibitor payloads", aka: ["RNA splicing inhibitor payloads", "thailanstatin", "thialanstatin", "spliceostatin payloads"],
+    tldr: "These payloads disrupt the editing of gene messages before the cell uses them. Antibody-linked versions have shown activity in laboratory cancer models.",
+    summary: "Thailanstatin and related spliceostatin-class agents inhibit pre-mRNA splicing. Primary studies demonstrated altered splicing and antigen-dependent killing with thailanstatin antibody conjugates, including activity in a gastric cancer xenograft model. Conjugation method and drug loading affected activity. This is distinct from stopping transcription and from degrading a translation protein. Laboratory activity in resistant cell lines does not establish clinical benefit after another antibody-drug conjugate.",
+    targets: ["sf3b1"],
+    links: [paper("Puthenveetil et al., splicing inhibitors as conjugate payloads (2016)", "10.1021/acs.bioconjchem.6b00291"), paper("Site-specific thailanstatin conjugates (2017)", "10.1371/journal.pone.0178452")],
+  }),
+  t({
+    id: "cdk-inhibitor-payloads", name: "Cyclin-dependent kinase inhibitor payloads", aka: ["CDK inhibitor payloads", "CDK2/7/9 inhibitor conjugates", "SNS-032 payload", "CDK9 inhibitor payloads"],
+    tldr: "These payloads block enzymes that help cells divide or read genes. An antibody may help deliver them to cancer cells that depend on those processes.",
+    summary: "A cetuximab conjugate carrying SNS-032 was tested in EGFR-expressing triple-negative breast cancer cells, spheroids and xenograft models. SNS-032 inhibits CDK2, CDK7 and CDK9; it should not be described as a selective CDK9 payload. The study supports preclinical cell-cycle-directed delivery. A CDK inhibitor payload is also different from a degrader payload that removes a CDK protein.",
+    related: ["transcription-inhibitor-payloads"],
+    links: [paper("Cetuximab-SNS-032 in breast cancer models (2024)", "10.1158/1078-0432.CCR-23-3110")],
+  }),
+  t({
+    id: "ddr-inhibitor-payloads", name: "DNA damage response inhibitor payloads", aka: ["DDR inhibitor payloads", "repair-checkpoint inhibitor payloads"],
+    tldr: "These payloads block the systems cells use to cope with damaged DNA. One strategy puts a damage-causing drug and a repair-checkpoint inhibitor on the same antibody.",
+    summary: "DNA damage response inhibition is a payload mechanism only when the inhibitor is carried by the conjugate. CLIO-8221 combines exatecan with the ATR inhibitor berzosertib on a HER2-directed antibody. Its published trial-design abstract describes preclinical rationale and a phase 1/2 study, not clinical proof that the combination overcomes resistance. Giving a separate PARP, ATR or WEE1 inhibitor alongside an antibody-drug conjugate is a combination regimen, not evidence of that inhibitor being an attached payload.",
+    technologies: ["adc", "dual-payload-adc"], related: ["atr-inhibitor-payloads"], trials: ["nct07300943"],
+    links: [paper("CLIO-8221 phase 1/2 trial-design abstract (2026)", "10.1200/JCO.2026.44.16_suppl.TPS3162"), paper("Azenosertib plus conjugates: a separate-drug combination study (2026)", "10.1016/j.isci.2026.116390")],
+    notes: ["PARP and WEE1 combination studies retrieved in this review were not relabelled as payload studies. Each proposed repair-inhibitor payload needs a source identifying what is physically carried."],
+  }),
+  t({
+    id: "atr-inhibitor-payloads", name: "ATR inhibitor payloads", aka: ["berzosertib payload", "TOP1 plus ATR dual payload", "CLIO-8221 payloads"],
+    tldr: "An ATR inhibitor blocks a checkpoint that helps cells survive stress while copying DNA. Combining it with a DNA-damaging payload on one antibody is being tested in early research.",
+    summary: "CLIO-8221 carries exatecan and berzosertib, pairing TOP1-mediated damage with ATR checkpoint inhibition. The primary trial-design abstract describes preclinical activity and the planned assessment of safety, dosing and activity in people. The direct registry records a phase 1/2 trial. These sources establish the construct and its evaluation, not comparative benefit or a validated biomarker for choosing it after TOP1 treatment.",
+    technologies: ["adc", "dual-payload-adc"], terms: ["payload", "ddr-inhibitor-payloads"], trials: ["nct07300943"],
+    links: [paper("CLIO-8221 trial-design abstract (2026)", "10.1200/JCO.2026.44.16_suppl.TPS3162"), registry("NCT07300943")],
+  }),
+  t({
+    id: "nampt-inhibitor-payloads", name: "NAMPT inhibitor payloads", aka: ["NAD depletion payloads", "nicotinamide phosphoribosyltransferase inhibitor payloads"],
+    tldr: "These payloads cut off a supply route for a molecule cells need to keep their metabolism working. Antibody delivery is being studied to direct that effect toward tumors.",
+    summary: "NAMPT inhibitors interfere with nicotinamide adenine dinucleotide, or NAD, salvage. Anti-c-KIT conjugates showed target-dependent efficacy in a gastrointestinal stromal tumor xenograft study. A later primary study examined physicochemical and metabolic optimization of NAMPT inhibitor conjugates for blood and solid tumor models. These are preclinical payload studies; the dependence of healthy tissues on NAD makes selective delivery and tolerability central questions.",
+    links: [paper("Karpov et al., NAMPT inhibitors as conjugate payloads (2018)", "10.1021/acsmedchemlett.8b00254"), paper("Ruedas et al., NAMPT payload optimization (2026)", "10.1021/acsbiomedchemau.6c00047")],
+  }),
+  t({
+    id: "bcl-xl-inhibitor-payloads", name: "BCL-XL inhibitor payloads", aka: ["clezutoclax", "mirzotamab clezutoclax", "ABBV-155"],
+    tldr: "These payloads release a brake that can stop damaged cells from dying. Attaching the drug to an antibody aims to concentrate that effect in cancer cells.",
+    summary: "BCL-XL is an anti-apoptotic protein. Primary preclinical research tested BCL-XL inhibitor conjugates and showed that drug-linker changes altered cardiovascular, kidney and platelet toxicities in animal studies. The resulting linker-payload was incorporated into the B7-H3-directed mirzotamab clezutoclax, or ABBV-155. The original solid-tumor trial is completed in the registry. This represents an apoptosis-directed payload, not proof that antibody targeting removes all toxicity from BCL-XL inhibition.",
+    related: ["mcl1-inhibitor-payloads"],
+    links: [paper("Judd et al., BCL-XL inhibitor conjugates (2024)", "10.1126/sciadv.ado7120"), registry("NCT03595059")],
+  }),
+  t({
+    id: "mcl1-inhibitor-payloads", name: "MCL-1 inhibitor payloads", aka: ["S64315 payload", "MIK665 payload", "S227928 payload"],
+    tldr: "These payloads block another protein that can protect cancer cells from dying. Antibody delivery is being studied to direct that effect toward selected blood cancers.",
+    summary: "S227928 links the MCL-1 inhibitor S64315, also called MIK665, to a CD74-directed antibody. The primary ASH abstract reported intracellular payload release and target engagement in leukemia models. Single-agent activity was modest in the reported models, while combining the conjugate with the separate BCL-2 inhibitor venetoclax increased activity. This is an MCL-1 payload plus a separate drug, not a dual-payload construct. Preclinical results and a registered early trial do not establish clinical benefit or removal of the safety concerns associated with MCL-1 inhibition.",
+    targets: ["mcl1"], related: ["bcl-xl-inhibitor-payloads"],
+    links: [paper("Maragno et al., S227928 preclinical ASH abstract (2024)", "10.1182/blood-2024-210048"), registry("NCT06563804")],
+    notes: ["The antibody binds CD74 on the cell surface; the payload acts on MCL-1 inside the cell. Approval of a different medicine linked to MCL1 does not establish approval of this conjugate."],
+  }),
+  t({
+    id: "hdac-inhibitor-payloads", name: "Histone deacetylase inhibitor payloads", aka: ["HDAC inhibitor payloads", "ST7612AA1"],
+    tldr: "These payloads alter how tightly genetic instructions are packaged and used. Researchers have attached them to antibodies to test targeted control of cancer-cell behavior.",
+    summary: "Cetuximab conjugates carrying the histone deacetylase inhibitor ST7612AA1 were studied with cleavable and non-cleavable linkers. The primary report demonstrated changes in histone and tubulin acetylation and antitumor activity in animal models. This supports an epigenetic payload concept even when the unconjugated molecule is less cytotoxic than conventional payloads. Human safety and benefit require separate evaluation.",
+    links: [paper("Cini et al., antibody delivery of an HDAC inhibitor (2018)", "10.1039/c7sc05266a")],
+  }),
+  t({
+    id: "gspt1-degrader-payloads", name: "GSPT1 degrader payloads", aka: ["SMol006", "GSPT1 molecular glue payloads", "translation termination degrader payloads"],
+    tldr: "These payloads tell the cell to destroy a protein used to finish making other proteins. The antibody directs the protein-removing drug toward cells carrying its target.",
+    summary: "ORM-5029 delivers the GSPT1 molecular glue degrader SMol006 using pertuzumab. Its primary preclinical abstract describes GSPT1 depletion, stress responses and antitumor activity in models. GSPT1 acts in translation termination, not RNA transcription. ORM-5029 and the CD33-directed ORM-6151 reached human studies; their linked trials are now terminated. Those trial outcomes must remain visible when describing the promise of this mechanism.",
+    technologies: ["adc", "degrader-antibody-conjugate"], drugs: ["orm-5029", "orm-6151"],
+    links: [paper("Palacino et al., ORM-5029 preclinical abstract (2022)", "10.1158/1538-7445.AM2022-3933"), registry("NCT05511844"), registry("NCT06419634")],
+  }),
+  t({
+    id: "brd4-degrader-payloads", name: "BRD4 degrader payloads", aka: ["BET degrader antibody payloads", "antibody-PROTAC payloads"],
+    tldr: "These payloads cause the cell to remove a protein that helps control gene activity. Antibody-linked versions have been tested in cancer cells and mice.",
+    summary: "BRD4-directed heterobifunctional degraders recruit the cell's protein-disposal machinery rather than simply occupying an enzyme. Primary work demonstrated antigen-dependent BRD4 depletion and antitumor activity with degrader-antibody conjugates in mouse xenografts. This evidence supports antibody-mediated delivery of a degrader but does not establish that every intracellular protein can be reached or that a clinical therapeutic window follows from protein removal.",
+    technologies: ["adc", "degrader-antibody-conjugate", "protac-degrader"], targets: ["brd4"],
+    links: [paper("Dragovich et al., antibody delivery of BRD4 degraders, part 2 (2021)", "10.1021/acs.jmedchem.0c01846")],
+  }),
+  t({
+    id: "kif11-degrader-payloads", name: "KIF11 degrader payloads", aka: ["dKIF976", "Eg5 degrader payloads", "KSP degrader payloads"],
+    tldr: "These experimental payloads remove a motor protein needed for cell division. They differ from drugs that block the same motor without removing it.",
+    summary: "An ASCO preclinical abstract described dKIF976, a cereblon-recruiting KIF11 degrader, and antibody conjugates with antigen-dependent protein degradation and cell-growth inhibition. KIF11 is also called Eg5 or kinesin spindle protein. The reported conjugate experiments were cellular studies; the abstract does not demonstrate clinical activity or an established safety advantage over KIF11 inhibitors.",
+    technologies: ["adc", "degrader-antibody-conjugate"], related: ["ksp-inhibitor-payloads"],
+    links: [paper("Feng et al., KIF11 degrader conjugate, ASCO abstract (2025)", "10.1200/JCO.2025.43.16_suppl.3092")],
+  }),
+  t({
+    id: "ksp-inhibitor-payloads", name: "Kinesin spindle protein inhibitor payloads", aka: ["KSP inhibitor payloads", "Eg5 inhibitor payloads", "KIF11 inhibitor payloads", "pyrrole-based KSP payloads"],
+    tldr: "These payloads block a motor that cells need to separate their chromosomes. They interrupt division through a different target from drugs that bind the cell's scaffolding.",
+    summary: "Kinesin spindle protein, also called Eg5 or KIF11, is a motor involved in spindle formation. Primary research linked pyrrole-based inhibitors to antibodies against HER2 and TWEAKR/Fn14 and demonstrated selective activity in cell and animal tumor models. The study emphasized stable conjugation and sustained intracellular exposure. Blocking this motor remains a mitosis-directed strategy; it is not a tubulin-binding mechanism and should not be classified as one.",
+    related: ["kif11-degrader-payloads", "tubulin-inhibitor-payloads"],
+    links: [paper("Lerchen et al., pyrrole-based KSP inhibitor conjugates (2018)", "10.1002/anie.201807619")],
+  }),
+  t({
+    id: "sting-agonist-payloads", name: "STING agonist payloads", aka: ["Immunosynthen", "XMT-2056 payload"],
+    tldr: "These payloads activate an internal alarm that can bring immune cells into action. Antibody delivery aims to trigger the alarm near tumors while limiting activation elsewhere.",
+    summary: "STING is an intracellular sensor pathway involved in innate immunity. XMT-2056 is a HER2-directed conjugate whose STING agonist activated cancer cells and tumor-resident immune cells in preclinical studies. Its development study must be distinguished from its human trial, which the registry now lists as terminated. STING activation is not equivalent to TLR activation, and tumor-directed delivery does not guarantee freedom from systemic inflammation.",
+    technologies: ["adc", "immune-stimulating-adc", "sting-agonist"],
+    links: [paper("XMT-2056 preclinical pharmacology (2025)", "10.1158/1078-0432.CCR-24-2449"), paper("STING agonist conjugate platform development (2023)", "10.1021/acs.jmedchem.3c00907"), registry("NCT05514717")],
+  }),
+  t({
+    id: "tlr-agonist-payloads", name: "Toll-like receptor agonist payloads", aka: ["TLR7/8 agonist payloads", "TLR8 agonist conjugates", "TLR7 agonist conjugates"],
+    tldr: "These payloads stimulate immune-cell sensors that recognize danger. The goal is to direct immune activation toward a tumor using an antibody.",
+    summary: "TLR7/8 agonist antibody conjugates have induced myeloid activation and adaptive immune responses in preclinical studies. The Ackerman study required tumor-antigen recognition, Fc-receptor-dependent phagocytosis and TLR activation, rather than payload toxicity alone. BDC-1001 and SBT6050 are human-study examples. The BDC-1001 registry studies are terminated; one SBT6050 study is of unknown status and another is terminated. Unknown status should not be presented as recruiting.",
+    technologies: ["adc", "immune-stimulating-adc"],
+    links: [paper("Ackerman et al., immune-stimulating conjugates (2021)", "10.1038/s43018-020-00136-x"), registry("NCT04278144"), registry("NCT05954143"), registry("NCT04460456"), registry("NCT05091528")],
+  }),
+  t({
+    id: "gq11-inhibitor-payloads", name: "Gq/11 inhibitor payloads", aka: ["SDZ475", "DYP688 payload", "GNAQ GNA11 inhibitor conjugates"],
+    tldr: "These payloads block a cell signal that drives some melanomas. An antibody carries the inhibitor into cells bearing a melanoma-associated surface protein.",
+    summary: "DYP688 targets the surface protein PMEL and delivers the Gq/11 inhibitor SDZ475. A published phase 1 study in metastatic uveal melanoma and other GNAQ/GNA11-mutant melanomas reported human safety and preliminary activity. This is direct pathway inhibition rather than a conventional tubulin or DNA-damaging payload. The study was an early dose-escalation trial, so it does not establish a comparative survival benefit or approval.",
+    trials: ["nct05415072"],
+    links: [paper("DYP688 phase 1 clinical study (2026)", "10.1038/s41591-026-04518-z"), registry("NCT05415072")],
+  }),
+  t({
+    id: "pi3k-pikk-inhibitor-payloads", name: "PI3K/PIKK inhibitor payloads", aka: ["HMPL-A580 payload", "PI3K/PIKK antibody-targeted therapy conjugates"],
+    tldr: "These payloads block enzymes that support cancer-cell growth and stress responses. Antibody delivery is being studied as a way to direct those effects toward tumors.",
+    summary: "The primary AACR abstract for HMPL-A580 describes an EGFR-directed antibody carrying a PI3K/PIKK inhibitor through a cleavable linker. Cell and xenograft experiments reported intracellular delivery, pathway inhibition and antitumor activity. PI3K and PIKK denote different kinase families; this broad payload label must not be reduced to a single selective kinase target without supporting data. The cited evidence is a preclinical conference abstract, not a clinical efficacy report.",
+    links: [paper("Cai et al., HMPL-A580 preclinical AACR abstract (2026)", "10.1158/1538-7445.AM2026-4549")],
+  }),
+  t({
+    id: "anthracycline-payloads", name: "Anthracycline payloads", aka: ["PNU-159682", "nemorubicin metabolite payloads", "anthracycline antibody conjugates"],
+    tldr: "Antibodies can carry potent relatives of an established chemotherapy family called anthracyclines. Researchers are testing these payloads as another way to kill targeted cancer cells.",
+    summary: "PNU-159682 is an anthracycline derivative used in experimental antibody conjugates. A primary study of a uPAR-directed PNU-159682 conjugate reported tumor suppression and changes in the immune environment in pancreatic cancer models. It is a distinct scaffold from camptothecin TOP1 payloads. An anthracycline label alone does not establish the dominant mechanism, resistance profile or clinical safety of each derivative.",
+    links: [paper("uPAR-directed anthracycline conjugate in pancreatic cancer models (2025)", "10.1126/sciadv.adq0513")],
+  }),
+  t({
+    id: "eribulin-payload", name: "Eribulin as an antibody-conjugate payload", aka: ["ecteribulin payload", "MORAb-202 payload", "halichondrin-derived payloads"],
+    tldr: "Eribulin is a drug that disrupts the scaffolding needed for cell division. Linking it to an antibody changes how it is delivered and needs separate evidence from eribulin given on its own.",
+    summary: "Farletuzumab ecteribulin, or MORAb-202, combines a folate receptor alpha antibody with eribulin through a cleavable linker. Primary preclinical work reported target-dependent activity, bystander killing in coculture, and activity in breast cancer xenografts. Eribulin represents another tubulin-directed scaffold, not a new biological target beyond tubulin. Evidence and toxicity of the conjugate must be kept separate from those of free eribulin.",
+    drugs: ["eribulin", "farletuzumab-ecteribulin"], terms: ["payload", "tubulin-inhibitor-payloads"],
+    links: [paper("MORAb-202 in breast cancer models (2021)", "10.1111/cas.14898")],
+  }),
+  t({
+    id: "tubulysin-payloads", name: "Tubulysin payloads", aka: ["tubulysin antibody conjugates", "tubulysin analog payloads"],
+    tldr: "Tubulysins are another family of drugs that disrupt the cell's scaffolding. Antibody-linked versions are being studied to deliver their cell-killing action more selectively.",
+    summary: "Tubulysin derivatives are tubulin-directed payloads distinct from auristatins and maytansinoids. A primary comparison of tubulysin antibody conjugates found that conjugation mode and site changed payload stability, pharmacokinetics and efficacy in a gastric cancer xenograft model. Results from a peptide or small-molecule tubulysin conjugate should not be described as antibody-conjugate evidence.",
+    terms: ["payload", "tubulin-inhibitor-payloads"],
+    links: [paper("Tubulysin conjugation site, stability and efficacy study (2025)", "10.1002/open.202400522")],
+  }),
+  t({
+    id: "hemiasterlin-payloads", name: "Hemiasterlin payloads", aka: ["SC209", "tazevibulin payload", "3-aminophenyl hemiasterlin", "SC239 linker-payload"],
+    tldr: "Hemiasterlin-derived payloads disrupt the scaffolding used in cell division. One is carried by the experimental antibody drug luveltamab tazevibulin.",
+    summary: "Luveltamab tazevibulin, or STRO-002, uses the folate receptor alpha antibody to deliver the tubulin-targeting hemiasterlin derivative SC209. SC239 is the linker-warhead used to assemble the conjugate, not a synonym for the released SC209 alone. The primary discovery study reported antigen-dependent killing, bystander activity and efficacy in xenograft models. This is a different scaffold within the tubulin class, not a mechanism unrelated to tubulin.",
+    drugs: ["luveltamab-tazevibulin"], terms: ["payload", "tubulin-inhibitor-payloads"],
+    links: [paper("Discovery of STRO-002 and its hemiasterlin payload (2023)", "10.1158/1535-7163.MCT-22-0322")],
+  }),
+  t({
+    id: "cryptophycin-payloads", name: "Cryptophycin payloads", aka: ["cryptophycin-55", "cryptophycin-52", "aza-cryptophycin payloads"],
+    tldr: "Cryptophycin payloads are powerful blockers of cell division. Antibody-linked versions are being investigated to improve how these drugs reach tumors.",
+    summary: "Cryptophycin-55 derivatives have been attached to trastuzumab and tested in HER2-positive cell lines and mouse xenografts. Cryptophycin-52 is a tubulin inhibitor; the primary conjugate study investigated release and conversion of the cryptophycin-55 prodrug. This is an experimental tubulin-directed scaffold. Activity of the free molecule, prodrug and intact antibody conjugate must be distinguished.",
+    terms: ["payload", "tubulin-inhibitor-payloads"],
+    links: [paper("Lai et al., cryptophycin-55/52 antibody conjugates (2020)", "10.1016/j.ejmech.2020.112364")],
+  }),
+  t({
+    id: "ign-payloads", name: "Indolinobenzodiazepine payloads", aka: ["IGN payloads", "indolinobenzodiazepine dimers", "monoimine IGN"],
+    tldr: "These payloads attach a chemical group to DNA and can prevent a cancer cell from surviving. Their chemistry differs from related payloads that join two DNA strands together.",
+    summary: "Indolinobenzodiazepine dimers, or IGNs, include monoimine DNA alkylators. A primary mechanistic study showed stable DNA adducts and distinguished monoimine IGNs from diimine crosslinking analogues. Sharing a dimer scaffold does not mean that an IGN makes the same DNA crosslinks as a PBD dimer. The mechanism of the particular payload and released catabolite should be recorded.",
+    terms: ["payload", "dna-alkylator-payloads"], related: ["pbd-dimer-payloads", "pdd-payloads"],
+    links: [paper("IGN DNA-binding and catabolite mechanism study (2019)", "10.1021/acs.molpharmaceut.9b00675")],
+  }),
+  t({
+    id: "pdd-payloads", name: "Pyridinobenzodiazepine payloads", aka: ["PDD payloads", "sequence-selective DNA mono-alkylating payloads"],
+    tldr: "These experimental payloads are designed to damage selected DNA sequences. They are related to other DNA-binding payloads but have their own chemistry and evidence.",
+    summary: "Pyridinobenzodiazepines, or PDDs, are sequence-selective DNA mono-alkylators. A primary study linked a PDD monomer derivative to trastuzumab and reported activity in a pancreatic cancer xenograft model. The results support a preclinical payload concept. They do not establish a clinical advantage over TOP1 conjugates or justify assigning the crosslinking mechanism of PBD dimers to PDD monomers.",
+    terms: ["payload", "dna-alkylator-payloads"], related: ["ign-payloads", "pbd-dimer-payloads"],
+    links: [paper("Andriollo et al., sequence-selective PDD payload (2025)", "10.1039/d4md01040j")],
+  }),
+  t({
+    id: "protein-alkylator-payloads", name: "Protein-alkylating payloads", aka: ["PA289", "ProAlk payloads", "cytosolic protein alkylator payloads"],
+    tldr: "These experimental payloads are proposed to kill cells by chemically modifying proteins. The reported mechanism is still being investigated.",
+    summary: "An AACR abstract described PA289, a seco-CBI-based prodrug linker-payload with a glucuronide trigger. The authors proposed alkylation of one or more cytosolic proteins and reported activity in cell and xenograft experiments, with exploratory monkey toxicology. The protein target was not established in the abstract. Protein alkylation should remain an attributed mechanism hypothesis, not be silently recast as proven DNA alkylation or human safety.",
+    links: [paper("Mysliwy et al., PA289 preclinical AACR abstract (2025)", "10.1158/1538-7445.AM2025-1579")],
+  }),
+  t({
+    id: "proteasome-inhibitor-payloads", name: "Proteasome inhibitor payloads", aka: ["carfilzomib conjugate payload", "lysosomal payload inactivation"],
+    tldr: "Blocking a cell's protein-disposal machinery is one proposed payload strategy. A study of antibody-linked carfilzomib shows why a drug that works on its own can lose activity after delivery.",
+    summary: "Carfilzomib was attached to antibodies against CD22 or HER2, but the resulting conjugates lost their cell-killing potency. The primary study found that lysosomal enzymes could release carfilzomib and then inactivate it. This is negative evidence for those constructs, not evidence that proteasome inhibition can never work as a payload. Intracellular chemical stability must be tested alongside release and target potency.",
+    drugs: ["carfilzomib"], related: ["proteasome-inhibitor"], tags: ["failure"],
+    links: [paper("Carfilzomib conjugates and lysosomal inactivation (2019)", "10.1124/dmd.119.086595")],
+  }),
+  t({
+    id: "ferroptosis-conjugate-payloads", name: "Ferroptosis-inducing payloads and antibody-directed carriers", aka: ["ferroptosis payloads", "sulfasalazine payload", "IKE antibody nanogel conjugate"],
+    tldr: "Ferroptosis is cell death caused by damage to fatty molecules in cell membranes. Antibody-directed carriers are being studied to deliver drugs that trigger it in tumors.",
+    summary: "A primary study linked an FGFR4 antibody to the ferroptosis inducer sulfasalazine through a cleavable linker and reported target-dependent activity in liver cancer models. A separate study used an anti-PD-L1 antibody linked to a nanogel encapsulating imidazole ketone erastin, or IKE, with ferroptosis and tumor suppression in experimental models. The former is a directly conjugated small-molecule payload; the latter is an antibody-directed nanocarrier. Both are preclinical evidence and should retain their different delivery formats.",
+    links: [paper("FGFR4 conjugate carrying sulfasalazine (2025)", "10.1016/j.isci.2025.113718"), paper("Antibody nanogel delivery of a ferroptosis inducer (2024)", "10.1016/j.chembiol.2024.10.014")],
+    notes: ["These studies concern sulfasalazine and IKE. They do not establish that every inhibitor of the ferroptosis-defense protein GPX4 can be made into a conventional antibody payload."],
+  }),
+  t({
+    id: "protein-toxin-payloads", name: "Protein toxin payloads and immunotoxins", aka: ["ribosome-inactivating protein payloads", "deBouganin", "bouganin conjugates"],
+    tldr: "An antibody can deliver a protein toxin that stops a cell making proteins. These larger payloads belong to the related field of immunotoxins and need different delivery and safety studies.",
+    summary: "DeBouganin is a modified ribosome-inactivating protein. A primary study tested trastuzumab-deBouganin conjugates and an antibody-fragment fusion protein in cells resistant to tubulin-payload conjugates. Both chemical conjugation and fusion-protein delivery were examined. These protein toxins are different from small-molecule degraders such as GSPT1 payloads and from conventional chemotherapy payloads. The cited cellular results do not establish clinical activity after antibody-drug conjugate treatment.",
+    links: [paper("DeBouganin conjugates and fusion proteins in resistant cells (2016)", "10.3390/molecules21121741")],
+  }),
+];

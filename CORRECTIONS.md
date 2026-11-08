@@ -2,6 +2,17 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-08
+
+### Antibody-conjugate payload mechanisms
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Payload](/terms/payload/) | Defined every payload as a poison and treated permeability as sufficient to determine bystander killing | Primary degrader, immune-agonist and lysosomal-inactivation studies, resolved through Europe PMC | Defines the payload as an active agent and separates released species, stability and exposure from mechanism; links the new payload map |
+| 2026-11-08 | [Dual-payload conjugates](/technologies/dual-payload-adc/) | Said a tumor cannot escape resistance and listed delayed resistance as an established strength | Primary dual-payload model study and CLIO-8221 trial-design abstract | Describes co-delivery as a strategy; requires construct-specific evidence for resistance and human benefit |
+| 2026-11-08 | [Degrader conjugates](/technologies/degrader-antibody-conjugate/) | Called degrader payloads non-cytotoxic, claimed lower potency as a class and described intracellular delivery as solved | BRD4 primary study, ORM-5029 primary abstract, direct trial records | Removes class-wide potency and safety assumptions; links distinct GSPT1, BRD4 and KIF11 concepts and records terminated clinical trials |
+| 2026-11-08 | [Immune-stimulating conjugates](/technologies/immune-stimulating-adc/) | Described delivery only to myeloid cells and named clinical examples without current trial lifecycle context | Raw TLR and STING primary abstracts and ClinicalTrials.gov records | Separates construct-specific cancer-cell and immune-cell activity and identifies terminated example studies |
+
 ## 2026-11-04
 
 ### Corrections found by the November 2026 gap census

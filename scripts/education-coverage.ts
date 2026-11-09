@@ -43,6 +43,13 @@ type RecordData = { id: string; kind: string; name: string; aka?: string[]; [key
 type CatalogRow = { version: string; record: RecordData };
 type SourcePhase = { id: string; guideRef: string; directory: string; sourceCount: number };
 type PhaseLedger = { guideRef: string; items: CurriculumItem[] };
+export type SourceAsset = {
+  id: string; path: string; guideRef: string; gitBlob: string; bytes: number;
+  scope: "unclassified" | "teaching" | "supporting";
+  scopeReview?: { auditor: string; checkedAt: string; rationale: string; gitBlob: string };
+  sections?: SourceSection[];
+  review: Review;
+};
 export type Candidate = { id: string; version: string; name: string; score: number; exactName: boolean; matchedNameTerms: string[] };
 
 export const sha256 = (value: string | Buffer) => createHash("sha256").update(value).digest("hex");
@@ -115,6 +122,20 @@ export function reviewProblems(item: Pick<CurriculumItem, "sourceType" | "review
     }
   }
   return errors;
+}
+
+/** A path-based asset role is never an exclusion or a completed semantic review. */
+export function sourceAssetProblems(asset: SourceAsset, catalog: Map<string, RecordData>): string[] {
+  if (asset.scope === "unclassified") return ["Source asset has no scope disposition"];
+  if (!["teaching", "supporting"].includes(asset.scope)) return ["Unknown source-asset scope"];
+  const r = asset.scopeReview;
+  if (!r?.auditor || !r.checkedAt || !r.rationale || r.gitBlob !== asset.gitBlob) return ["Source-asset scope review is missing or belongs to a different blob"];
+  if (asset.scope === "supporting") {
+    if (asset.review.points.length) return ["Supporting asset has teaching requirements; assess it as teaching"];
+    return [];
+  }
+  if (!asset.sections?.length) return ["Teaching asset needs explicit reading sections"];
+  return reviewProblems({ sourceType: "supplemental-teaching", sections: asset.sections, review: asset.review }, catalog);
 }
 
 /** Content representation alone is insufficient to finish the full audit. */
@@ -240,15 +261,38 @@ function main() {
     const ledger = existsSync(ledgerPath) ? readJSON<PhaseLedger>(ledgerPath) : undefined;
     return { ...phase, problems: sourcePhaseProblems(phase, ledger, catalogMap) };
   }) : [];
-  const dependencies = [...dependencyProblems(schemas, literature), ...sourcePhases.flatMap(phase => phase.problems)];
+  const registry = readJSON<{ primaryGuideRef: string; phases: SourcePhase[] }>(join(shared, "source-phases.json"));
+  const assetPhases = readJSON<{ phases: { guideRef: string; assetCount: number; items: SourceAsset[] }[] }>(join(shared, "source-assets.json")).phases;
+  const requiredRefs = [registry.primaryGuideRef, ...registry.phases.map(phase => phase.guideRef)];
+  const assetCensusProblems: string[] = [];
+  if (new Set(assetPhases.map(phase => phase.guideRef)).size !== assetPhases.length) assetCensusProblems.push("Duplicate source-asset phase");
+  for (const required of requiredRefs) if (!assetPhases.some(phase => phase.guideRef === required)) assetCensusProblems.push("Source-asset phase is missing: " + required);
+  const assetReports = assetPhases.map(phase => {
+    if (!requiredRefs.includes(phase.guideRef)) assetCensusProblems.push("Unregistered source-asset ref: " + phase.guideRef);
+    const tree = execFileSync("git", ["ls-tree", "-rlz", phase.guideRef, "--", "wiki/education/"], { cwd: guide, maxBuffer: 10_000_000 }).toString().split("\0").filter(Boolean);
+    const facts = new Map(tree.flatMap(line => {
+      const match = /^\d+ blob ([0-9a-f]+)\s+(\d+)\t(.+)$/.exec(line);
+      return match && !match[3].endsWith(".md") ? [[match[3], { gitBlob: match[1], bytes: Number(match[2]) }] as const] : [];
+    }));
+    if (phase.assetCount !== facts.size || phase.items.length !== facts.size || new Set(phase.items.map(asset => asset.path)).size !== facts.size) assetCensusProblems.push("Source-asset census differs: " + phase.guideRef);
+    const failures = phase.items.flatMap(asset => {
+      const fact = facts.get(asset.path);
+      const identity = asset.guideRef !== phase.guideRef || asset.id !== phase.guideRef + ":" + asset.path || !fact || fact.gitBlob !== asset.gitBlob || fact.bytes !== asset.bytes;
+      return (identity ? ["Source-asset identity differs from pinned tree"] : sourceAssetProblems(asset, catalogMap)).map(problem => ({ path: asset.path, guideRef: phase.guideRef, problem }));
+    });
+    return { guideRef: phase.guideRef, totalAssets: phase.items.length, teachingAssets: phase.items.filter(asset => asset.scope === "teaching").length, supportingAssets: phase.items.filter(asset => asset.scope === "supporting").length, unclassifiedAssets: phase.items.filter(asset => asset.scope === "unclassified").length, unresolvedAssets: new Set(failures.map(failure => failure.path)).size, failures };
+  });
+  const assetSummaries = assetReports.map(({ guideRef, totalAssets, teachingAssets, supportingAssets, unclassifiedAssets, unresolvedAssets }) => ({ guideRef, totalAssets, teachingAssets, supportingAssets, unclassifiedAssets, unresolvedAssets }));
+  const dependencies = [...dependencyProblems(schemas, literature), ...sourcePhases.flatMap(phase => phase.problems), ...assetCensusProblems, ...assetReports.filter(phase => phase.failures.length).map(phase => `Source-asset phase remains open: ${phase.guideRef} (${phase.unresolvedAssets} occurrences)` )];
   const count = (pred: (r: CurriculumItem) => boolean) => items.filter(pred).length;
   const content = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed");
   const closed = content.filter(r => !reviewProblems(r, catalogMap).length);
   const stats = { totalSources: items.length, conceptOrComparison: count(r => ["concept", "comparison"].includes(r.sourceType)), guideOrLesson: count(r => ["guide", "guide-lesson"].includes(r.sourceType)), navigation: count(r => r.sourceType === "navigation"), navigationReviewed: count(r => r.sourceType === "navigation" && r.review.status === "navigation" && !reviewProblems(r, catalogMap).length), navigationWithTeachingContent: count(r => r.sourceType === "navigation" && r.review.status === "reviewed"), semanticallyReviewed: count(r => r.review.status === "reviewed"), implementedCoverage: closed.length, mainCoverage: closed.filter(r => r.review.points.every(p => p.status === "covered-main")).length, unresolvedContentItems: content.length - closed.length, unresolvedSources: new Set(failures.map(f => f.path)).size, adjacentConcepts: adjacent.length, unresolvedAdjacentConcepts: new Set(adjacentFailures.map(f => f.path)).size, openSchemaGaps: schemas.filter(r => r.status !== "resolved").length, unreviewedLiteratureOccurrences: literature.filter(r => r.reviewStatus === "unreviewed").length, readyForFinalReaudit: !failures.length && !adjacentFailures.length && !dependencies.length };
-  writeJSON(join(out, "ledger.json"), { schemaVersion: 3, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), sourcePhases, stats, items, adjacent });
+  writeJSON(join(out, "ledger.json"), { schemaVersion: 4, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), sourcePhases, sourceAssetPhases: assetSummaries, stats, items, adjacent });
   writeJSON(join(out, "candidates.json"), { warning: "Lexical retrieval for manual review only; no match score establishes coverage.", items: candidates });
   writeJSON(join(out, "open-items.json"), [...failures, ...adjacentFailures]);
   writeJSON(join(out, "open-dependencies.json"), dependencies);
+  writeJSON(join(out, "open-source-assets.json"), assetReports.flatMap(phase => phase.failures));
   mkdirSync(packDir, { recursive: true });
   for (const [domain, rows] of Object.entries(reviewPack)) writeJSON(join(packDir, domain + ".json"), rows);
   console.log(JSON.stringify(stats));

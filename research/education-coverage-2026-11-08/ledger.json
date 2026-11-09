@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "attribution": "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.",
   "oncoBaseline": "0f8ebc2569e2dcb023364d8cb6971186f11f59ab",
   "oncoSnapshotSha256": "ee984f247eb1071d14760146e23fbb3ce60b6c3a635cf6b4f7a25023963caf75",
@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "a4e88b9f84f0f4c75857a8866f83029c4f29f896b1c42dd2cb259af30843fde0"
+      "recordSnapshotSha256": "499943efc734793a97a067c32a3c1076b57763841757cc4b6085a54d7320f479"
     },
     {
       "version": "draft-376",
@@ -55,8 +55,26 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (475 sources)"
+        "Source phase remains open: guide-c9689645 (474 sources)"
       ]
+    }
+  ],
+  "sourceAssetPhases": [
+    {
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "totalAssets": 1888,
+      "teachingAssets": 3,
+      "supportingAssets": 0,
+      "unclassifiedAssets": 1885,
+      "unresolvedAssets": 1885
+    },
+    {
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "totalAssets": 1888,
+      "teachingAssets": 3,
+      "supportingAssets": 0,
+      "unclassifiedAssets": 1885,
+      "unresolvedAssets": 1885
     }
   ],
   "stats": {
@@ -71,7 +89,7 @@
     "mainCoverage": 0,
     "unresolvedContentItems": 450,
     "unresolvedSources": 450,
-    "adjacentConcepts": 21,
+    "adjacentConcepts": 22,
     "unresolvedAdjacentConcepts": 1,
     "openSchemaGaps": 5,
     "unreviewedLiteratureOccurrences": 105,
@@ -49909,6 +49927,89 @@
                 "explanation": "The exploratory HRD example retains its denominator, definition and non-significant treatment interaction."
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-cytokine-receptor-architectures",
+      "title": "Synthetic cytokine receptor inputs and evidence scope",
+      "domain": "cell-therapies",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/29789554/",
+        "https://pubmed.ncbi.nlm.nih.gov/20562098/",
+        "https://pubmed.ncbi.nlm.nih.gov/42182394/",
+        "https://www.enoda.bio/"
+      ],
+      "discoveryOccurrences": [
+        "synthetic-cytokine-receptor-evidence:4",
+        "cytokine-receptor-direct:1",
+        "cytokine-receptor-direct:2"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex content audit; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read complete available abstracts and selected raw primary/preprint sections, resolve the sponsor name at its own raw page and verify actual owner text. Review, preprint, engineered-cell experiment and sponsor-description lanes remain distinct.",
+        "points": [
+          {
+            "id": "architecture-and-input",
+            "requirement": "Separate engineered receptors from engineered soluble cytokines; retain specific inputs, domains and cell context instead of assigning one platform's evidence to every design.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "synthetic-cytokine-receptors",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                "explanation": "Defines the category and non-equivalence of inputs and molecule types."
+              },
+              {
+                "recordId": "synthetic-cytokine-receptors",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                "explanation": "Names the distinct 2010, 2018 and preprint constructs."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "signal-and-clinical-readout",
+            "requirement": "Keep proliferation/signalling, viable counts, location, killing and durable patient outcomes distinct; component control does not demonstrate elimination.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "synthetic-cytokine-receptors",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                "explanation": "Separates the biological and clinical questions."
+              },
+              {
+                "recordId": "synthetic-cytokine-receptors",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                "explanation": "Keeps independent measurements and the conditional drug-gated control boundary."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "source-and-product-identity",
+            "requirement": "Do not treat MIMIC naming, a macrophage preprint or a broad review as clinical proof of a finished cell-therapy product.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "synthetic-cytokine-receptors",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                "explanation": "Labels Enoda's sponsor naming and the 2026 preprint; the 2018 study is not attributed to MIMIC."
+              }
+            ],
+            "remaining": []
           }
         ]
       }

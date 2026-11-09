@@ -1,8 +1,38 @@
 import { describe, expect, it } from "vitest";
-import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, sourcePhaseProblems, sourceSections, sourceSignature, type CurriculumItem } from "./education-coverage";
+import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, sourceAssetProblems, sourcePhaseProblems, sourceSections, sourceSignature, type CurriculumItem, type SourceAsset } from "./education-coverage";
 
 const record = { id: "example", kind: "term", name: "Example assay", summary: "Measures one readout under specified conditions." };
 const item = (): CurriculumItem => ({ path: "wiki/education/concepts/example.md", title: "Example assay", aliases: [], sourceType: "concept", domain: "measurement", sourceSha256: "source", gitBlob: "blob", sourceURL: "https://example.org/source", priorOwnerIds: [], review: { status: "unreviewed", points: [] } });
+
+describe("supplemental education sources", () => {
+  const asset = (): SourceAsset => ({ id: "ref:tool.html", path: "tool.html", guideRef: "ref", gitBlob: "blob", bytes: 100, scope: "unclassified", review: { status: "unreviewed", points: [] } });
+  it("requires a dated scope decision bound to the actual source blob", () => {
+    const row = asset();
+    expect(sourceAssetProblems(row, new Map())).toEqual(["Source asset has no scope disposition"]);
+    row.scope = "supporting";
+    expect(sourceAssetProblems(row, new Map())).toEqual(["Source-asset scope review is missing or belongs to a different blob"]);
+    row.scopeReview = { auditor: "agent", checkedAt: "2026-11-09", rationale: "Inspected authoring provenance, with no additional teaching.", gitBlob: row.gitBlob };
+    expect(sourceAssetProblems(row, new Map())).toEqual([]);
+    row.gitBlob = "changed";
+    expect(sourceAssetProblems(row, new Map())).toEqual(["Source-asset scope review is missing or belongs to a different blob"]);
+  });
+
+  it("keeps script-generated teaching open until its sections and actual owner fields are reviewed", () => {
+    const row = asset(); row.scope = "teaching";
+    row.scopeReview = { auditor: "agent", checkedAt: "2026-11-09", rationale: "An interactive quiz adds teaching.", gitBlob: row.gitBlob };
+    expect(sourceAssetProblems(row, new Map())).toEqual(["Teaching asset needs explicit reading sections"]);
+    row.sections = [{ ordinal: 0, kind: "quiz", sha256: "quiz-hash" }];
+    row.review = { status: "reviewed", auditor: "agent", checkedAt: "2026-11-09", rationale: "Read quiz choices and feedback.", sectionHashes: [], points: [{ id: "readout", requirement: "Retain measurement context.", status: "covered-draft", evidence: [{ recordId: record.id, version: "proposal-biology", field: "summary", fieldSha256: fieldHash(record.summary), explanation: "States the measurement conditions." }], remaining: [] }] };
+    const catalog = new Map([["proposal-biology:example", record]]);
+    expect(sourceAssetProblems(row, catalog)).toContain("Source section remains unreviewed: 0 (quiz)");
+    row.review.sectionHashes = ["quiz-hash"];
+    expect(sourceAssetProblems(row, catalog)).toEqual([]);
+    catalog.set("proposal-biology:example", { ...record, summary: "Different field." });
+    expect(sourceAssetProblems(row, catalog)).toContain("readout: evidence field changed");
+    row.scope = "supporting";
+    expect(sourceAssetProblems(row, catalog)).toEqual(["Supporting asset has teaching requirements; assess it as teaching"]);
+  });
+});
 
 describe("curriculum coverage closure", () => {
   it("does not close an exact name match or a retrieved prior owner", () => {

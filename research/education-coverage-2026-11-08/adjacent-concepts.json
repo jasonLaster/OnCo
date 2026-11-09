@@ -1200,5 +1200,88 @@
         }
       ]
     }
+  },
+  {
+    "id": "synthetic-cytokine-receptor-architectures",
+    "title": "Synthetic cytokine receptor inputs and evidence scope",
+    "domain": "cell-therapies",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/29789554/",
+      "https://pubmed.ncbi.nlm.nih.gov/20562098/",
+      "https://pubmed.ncbi.nlm.nih.gov/42182394/",
+      "https://www.enoda.bio/"
+    ],
+    "discoveryOccurrences": [
+      "synthetic-cytokine-receptor-evidence:4",
+      "cytokine-receptor-direct:1",
+      "cytokine-receptor-direct:2"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex content audit; not expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Read complete available abstracts and selected raw primary/preprint sections, resolve the sponsor name at its own raw page and verify actual owner text. Review, preprint, engineered-cell experiment and sponsor-description lanes remain distinct.",
+      "points": [
+        {
+          "id": "architecture-and-input",
+          "requirement": "Separate engineered receptors from engineered soluble cytokines; retain specific inputs, domains and cell context instead of assigning one platform's evidence to every design.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "synthetic-cytokine-receptors",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+              "explanation": "Defines the category and non-equivalence of inputs and molecule types."
+            },
+            {
+              "recordId": "synthetic-cytokine-receptors",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+              "explanation": "Names the distinct 2010, 2018 and preprint constructs."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "signal-and-clinical-readout",
+          "requirement": "Keep proliferation/signalling, viable counts, location, killing and durable patient outcomes distinct; component control does not demonstrate elimination.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "synthetic-cytokine-receptors",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+              "explanation": "Separates the biological and clinical questions."
+            },
+            {
+              "recordId": "synthetic-cytokine-receptors",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+              "explanation": "Keeps independent measurements and the conditional drug-gated control boundary."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "source-and-product-identity",
+          "requirement": "Do not treat MIMIC naming, a macrophage preprint or a broad review as clinical proof of a finished cell-therapy product.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "synthetic-cytokine-receptors",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+              "explanation": "Labels Enoda's sponsor naming and the 2026 preprint; the 2018 study is not attributed to MIMIC."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
   }
 ]

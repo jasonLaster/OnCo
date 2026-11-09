@@ -4,6 +4,15 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Synthetic cytokine receptors and omitted interactive teaching
+
+| Date | Entity or source | What was missing | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [Synthetic cytokine receptors](/terms/synthetic-cytokine-receptors/) | No canonical distinction between receptor architecture, soluble cytokine, platform naming and separate functional readouts | Later lab delta, resolved primary/preprint abstracts, selected raw results and Enoda's raw sponsor page | Adds the scientific concept with ligand-dependent/independent examples, sponsor-only MIMIC naming, explicit preprint status and distinct activity/elimination/clinical boundaries; links the existing armoured-CAR owner |
+| 2026-11-09 | Standalone CAR-T HTML lab and inline biology images | Markdown census omitted script-generated component/quiz teaching | Read the complete program and both light/dark diagrams; compare exact Git and decoded image bytes | Separate non-Markdown census with blob-bound scope reviews, reading/field checks and required closure; lab plus two PNGs reviewed per ref, 1,885 other roles per ref remain unclassified |
+
+[Primary identities](research/education-coverage-2026-11-08/cytokine-receptors-2026-11-09/primary-identities.json), [source scopes](research/education-coverage-2026-11-08/cytokine-receptors-2026-11-09/source-scopes.json) and [reading receipts](research/education-coverage-2026-11-08/cytokine-receptors-2026-11-09/source-reading.json) keep experiments, the 2026 preprint and sponsor claims distinct. Ten complete MED abstracts and eleven new discovery occurrences are screened. No raw source, lesson body or image is copied. The two 1,888-asset versions are identical but separately required; their counts are not added. [Reader checks](research/education-coverage-2026-11-08/cytokine-receptors-2026-11-09/render-verification.json) pass for 172 owners/eight authored body parts; validate/typecheck/lint and 283 files/2,827 tests pass, with two existing skips. [Scope and open work](research/education-coverage-2026-11-08/cytokine-receptors-2026-11-09/scope.json).
+
 ### Expanded-access information directory
 
 | Date | Entry | What was wrong | How found | Fix |

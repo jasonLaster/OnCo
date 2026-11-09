@@ -315,4 +315,49 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "local-treatment"
   ]
 },
+
+{
+  "id": "synthetic-cytokine-receptors",
+  "name": "Synthetic cytokine receptors",
+  "aka": [
+    "engineered cytokine receptors",
+    "chimeric cytokine receptors",
+    "SyCyR"
+  ],
+  "tldr": "An engineered cytokine receptor connects a specified input to signalling inside a cell. The added signal and the behaviour of the complete cell product need separate measurements.",
+  "summary": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+  "notes": ["Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.","In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.","A 2026 macrophage preprint studied ligand-independent receptors with varied signalling motifs in primary human macrophages and preclinical models. Marker expression, phagocytosis and mouse tumour observations were different readouts. The report remains a preprint and does not establish human treatment benefit.","Enoda uses MIMIC as the name of its synthetic cytokine-receptor assets. The platform name does not define all engineered cytokine receptors or establish clinical performance. Its website describes platform aims and sponsor claims; it is not a comparative clinical safety or efficacy report.","For a drug-gated construct, withdrawing the input can reduce a selected signal without eliminating cells already engineered. Receptor signalling, viable-cell counts, tissue location, target-cell killing and later disease control need distinct measurements. A growth or activity switch is different from a cell-elimination mechanism.","A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence."],
+  "links": [
+    {
+      "label": "Engelowski 2018: artificial ligands and synthetic receptors in experimental systems",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29789554/"
+    },
+    {
+      "label": "Wilkie 2010: IL-4-driven expansion and separate CAR targeting in human-cell experiments",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20562098/"
+    },
+    {
+      "label": "Lunger 2026 macrophage receptor preprint; not a clinical report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42182394/"
+    },
+    {
+      "label": "Enoda: MIMIC platform description; sponsor naming and claims",
+      "url": "https://www.enoda.bio/"
+    },
+    {
+      "label": "Wu et al.: small-molecule ON-switch CAR experiments (2015)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26405231/"
+    }
+  ],
+  "related": [
+    "armored-car",
+    "cytokine",
+    "safety-switch-car-t",
+    "cellular-kinetics-and-persistence",
+    "in-vivo-car-t"
+  ],
+  "kind": "term",
+  "asOf": "2026-11-09",
+  "category": "Immunology"
+},
 ];

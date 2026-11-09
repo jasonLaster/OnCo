@@ -41,6 +41,11 @@
       "version": "draft-376",
       "state": "Open draft product proposal; reader/search/decomposition and export consumers verified locally; owner approval and upstream preview pending; not merged",
       "recordSnapshotSha256": "1918af5f94a4955b126ff9a8ca63be3140b7c5a730858734d572bcd12e90c4e0"
+    },
+    {
+      "version": "proposal-service-directory",
+      "state": "directory data implemented in draft #375; not merged; not knowledge-graph entities",
+      "recordSnapshotSha256": "6fe2e87d6de63c1451e28daf6ab97b494ff743d95bd6ed4f89c6e0c7693083ed"
     }
   ],
   "sourcePhases": [
@@ -67,7 +72,7 @@
     "unresolvedContentItems": 450,
     "unresolvedSources": 450,
     "adjacentConcepts": 21,
-    "unresolvedAdjacentConcepts": 2,
+    "unresolvedAdjacentConcepts": 1,
     "openSchemaGaps": 5,
     "unreviewedLiteratureOccurrences": 105,
     "readyForFinalReaudit": false
@@ -49791,7 +49796,8 @@
       "domain": "access-and-regulation",
       "sourceURLs": [
         "https://www.law.cornell.edu/cfr/text/21/312.8",
-        "https://www.fda.gov/news-events/public-health-focus/expanded-access"
+        "https://www.fda.gov/news-events/public-health-focus/expanded-access",
+        "https://www.fda.gov/news-events/expanded-access/expanded-access-information-patients"
       ],
       "discoveryOccurrences": [
         "source-phase-c9689645-cost-follow-up"
@@ -49800,16 +49806,43 @@
         "status": "reviewed",
         "auditor": "Codex content audit; not expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "Following the corrected canonical expanded-access owner revealed a separate service-directory consumer. Naming this residual is not proof that its output has been repaired.",
+        "rationale": "Read FDA public/patient guidance and the previously captured 21 CFR 312.8 text, corrected the actual directory data, and verified its body and source/canonical links in an actual FreePage server render. This is one non-graph directory consumer; the rest of the directory is not certified.",
         "points": [
           {
             "id": "free-service-cost-wording",
             "requirement": "Keep sponsor drug-cost recovery distinct from every clinical-care charge or an unsupported typical/free-supply claim in the actual service-directory consumer.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The expanded-access entry in src/data/free-wave.ts retains an unscoped usually-free-supply assertion and generic cost-recovery wording. Check the actual directory output, repair its statement and retain a direct field/render proof for this non-graph consumer."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-service-directory",
+                "field": "name",
+                "fieldSha256": "29cc835f87be44613015d5fb07617b3ef1a362ffd0f77bcd8bd9775df9487d5c",
+                "explanation": "Names public information as the service offered."
+              },
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-service-directory",
+                "field": "what",
+                "fieldSha256": "20fff0271bcd7376a5833fd26117762ad1629c94daba1d85d001c0896fe6f065",
+                "explanation": "Separates information from supply, treatment availability, clinical care/review charges and FDA permission to charge."
+              },
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-service-directory",
+                "field": "url",
+                "fieldSha256": "6459186bc2cc3161c050e90738ca6582f9f5463aa7ff5fbaf5d81b6d80b016ac",
+                "explanation": "The directly linked FDA patient guidance discusses access cooperation and possible costs."
+              },
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-service-directory",
+                "field": "entityIds",
+                "fieldSha256": "00c0b0718af6b55c2a9e30c8eec1cbe4abb2bb616ff15d7ce49b91319fe9740c",
+                "explanation": "Links the directory reader to the corrected canonical expanded-access owner."
+              }
+            ],
+            "remaining": []
           }
         ]
       }

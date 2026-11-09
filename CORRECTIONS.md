@@ -4,6 +4,14 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Expanded-access information directory
+
+| Date | Entry | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [FDA information](/free/#expanded-access) | Implied access to free treatment and asserted usually-free supply without a denominator | Raw FDA public/patient guidance, charging regulation and the actual card body | Identifies free public information; separates conditional supply, care/review costs and permission to charge, and links the canonical access owner; [scoped receipt](research/education-coverage-2026-11-08/service-cost-2026-11-09/scope.json) |
+
+[Patient guidance](https://www.fda.gov/news-events/expanded-access/expanded-access-information-patients) and [21 CFR 312.8](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-A/section-312.8) support this correction. This checks one non-graph consumer, alongside 171 graph owners; it does not certify the whole directory or promise treatment. Validate/typecheck/lint and 283 files / 2,825 tests pass, with two existing skips. [Page-body and link checks](research/education-coverage-2026-11-08/service-cost-2026-11-09/render-verification.json) and [validation](research/education-coverage-2026-11-08/service-cost-2026-11-09/validation.json) are scoped separately.
+
 ### Research classification and clinical test scope
 
 | Date | Entity | What was wrong | How found | Fix |
@@ -16,7 +24,7 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 | Date | Entity | What was wrong | How found | Fix |
 |---|---|---|---|---|
-| 2026-11-09 | [Expanded access](/terms/expanded-access/) | Emergency clocks and permitted drug costs lacked their full anchors and category boundaries | Raw operative regulation text and current eCFR primary pages during source-version review | Keeps prior rapid authorisation, 15-working-day FDA and five-working-day IRB clocks, subsequent-use review, individual direct costs, excluded indirect costs and larger-program additions; the separate directory consumer remains open |
+| 2026-11-09 | [Expanded access](/terms/expanded-access/) | Emergency clocks and permitted drug costs lacked their full anchors and category boundaries | Raw operative regulation text and current eCFR primary pages during source-version review | Keeps prior rapid authorisation, 15-working-day FDA and five-working-day IRB clocks, subsequent-use review, individual direct costs, excluded indirect costs and larger-program additions; the separate directory consumer was subsequently corrected in the directory checkpoint above |
 | 2026-11-09 | [PERCIST](/terms/percist/) | Baseline/reference/timing and complete-category conditions were abbreviated; a cited breast comparison was absent | Original Table 7 passages and independently resolved PMID 28462446 with complete abstract | Adds scoped framework conditions and strict progression inequalities; retains the 65-person cohort and prognostic comparisons without claiming benefit from PET-directed treatment; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
 
 ### Response categories, clocks and image measurements

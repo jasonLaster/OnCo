@@ -122,5 +122,23 @@
       ],
       "consumerVerification": "PR #376 research/scoped-evidence-schema-2026-11-08/consumer-verification.json; scoped groups fit usable width, citations retain distinct observations, dual cargo remains one bundle; whole-document overflow outside the new groups remains 11px at 393 and 3px at 320. The legacy follow-up receipt at this head keeps Ed-04 and AZ14170133 distinct, leaves unnamed cargo unknown, and keeps TE-1182 in one combined-class cell; existing mobile engine overflow remains 32px beyond usable width."
     }
+  },
+  {
+    "id": "classification-context",
+    "status": "design required; not implemented",
+    "question": "Can Ask/API distinguish a research expression profile, histology, receptor-test category and inherited-risk grouping, retaining classifier version and measurement method without inferring a common hierarchy from names?",
+    "currentFields": [
+      "src/lib/schema.ts:CancerSchema.parent",
+      "src/lib/schema.ts:CancerSchema.subtypes",
+      "src/lib/schema.ts:Base.related"
+    ],
+    "finding": "Subtypes is an array of strings and parent is one entity id. Corrected reader prose can state the axis, but these fields do not retain a sourced classification system/version, profile role, assay or explicit overlap-versus-hierarchy relation. Parallel Burstein groups had been placed inside Lehmann BL1/IM subtype arrays.",
+    "needed": "A backwards-compatible sourced classification context or relationship contract, with explicit system/version, measured input, role and relation meaning. Demonstrate a real TNBC/PAM50/histology query and preserve ordinary cancer-family navigation.",
+    "approvalDependency": "Schema and query/reader changes need a concrete product proposal and owner approval before deployment; existing four prototypes do not implement this finding.",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/27310713/",
+      "https://pubmed.ncbi.nlm.nih.gov/25208879/",
+      "https://pubmed.ncbi.nlm.nih.gov/32406563/"
+    ]
   }
 ]

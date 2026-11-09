@@ -533,4 +533,66 @@ export const educationBiologyEvidence: TermInput[] = [
     "asOf": "2026-11-08",
     "category": "Biology & measurement"
   }
+,
+{
+  "id": "tnbc-molecular-subtyping",
+  "kind": "term",
+  "name": "TNBC molecular subtyping",
+  "aka": [
+    "TNBCtype",
+    "TNBCtype-4",
+    "Lehmann subtypes",
+    "TNBC expression subtypes"
+  ],
+  "category": "Cancer biology",
+  "asOf": "2026-11-09",
+  "tldr": "TNBC RNA subtyping compares gene-expression patterns under a named research classifier. Tissue mixture, method and version matter, and the result is separate from receptor tests or a treatment choice.",
+  "summary": "Lehmann's original TNBCtype system described six expression groups: BL1, BL2, IM, M, MSL and LAR. The 2016 TNBCtype-4 refinement retained BL1, BL2, M and LAR as tumour-focused profiles after evaluating immune and stromal contributions to the IM and MSL signals. Removed-profile samples were reassigned to their second-highest correlated tumour-profile centroid, not automatically to M.\n\nBL1 is associated with cell-cycle/DNA-damage-response programmes; BL2 with growth-factor and myoepithelial-associated expression; M with motility and differentiation; and LAR with luminal and androgen-related transcription. These are classifier associations, not proof of one cause, functional repair deficiency or dependence on an inhibitor.",
+  "notes": [
+    "Record tissue identity, timing relative to treatment, tumour content, RNA qualification, platform, gene coverage, preprocessing, normalisation, reference data, classifier/version and competing correlations. A reported correlation or permutation p-value is not automatically a probability. No universal RNA-quality cutoff qualifies every platform.",
+    "A mixed-tissue IM signal and a BL1 call from an enriched preparation can coexist without proving tumour evolution. Compare preparation, method and scores. Tumour-focused labels do not make every bulk input free of immune or stromal RNA.",
+    "PAM50 basal-like, AR protein positivity, an RNA LAR label, histology and receptor-defined TNBC are separate measurements. A lineage-associated programme does not establish an exact cell of origin.",
+    "The defining cell-model and retrospective chemotherapy studies generated treatment hypotheses. Prospective strategy research also exists: FUTURE-SUPER used a distinct Fudan classifier plus genomic biomarkers and compared matched regimens with nab-paclitaxel alone. Its pooled phase 2 result does not validate every same-named profile or isolate the value of a classifier from its treatment bundle."
+  ],
+  "links": [
+    {
+      "label": "Lehmann 2011: original expression profiles and cell-model experiments",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21633166/"
+    },
+    {
+      "label": "Lehmann 2016: tissue attribution and TNBCtype-4 refinement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27310713/"
+    },
+    {
+      "label": "Chen 2012: TNBCtype input and reported correlation/permutation statistics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22872785/"
+    },
+    {
+      "label": "Zhao 2020: specified Fudan research IHC classifier",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32406563/"
+    },
+    {
+      "label": "FUTURE-SUPER primary randomised phase 2 report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38211606/"
+    }
+  ],
+  "cancers": [
+    "tnbc"
+  ],
+  "keyPapers": [
+    "paper-lehmann-tnbc-subtypes-jci-2011",
+    "paper-lehmann-tnbctype-4-refinement-plos-one-2016",
+    "paper-future-super-lancet-oncology-2024"
+  ],
+  "related": [
+    "pam50",
+    "basal-like",
+    "luminal-androgen-receptor",
+    "future-super"
+  ],
+  "tags": [
+    "education-audit",
+    "classification"
+  ]
+},
 ];

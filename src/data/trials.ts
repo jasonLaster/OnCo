@@ -429,6 +429,98 @@ const raw: TrialInput[] = [
     "local-treatment"
   ]
 },
+
+{
+  "id": "future-super",
+  "kind": "trial",
+  "name": "FUTURE-SUPER",
+  "aka": [
+    "FUTURE SUPER",
+    "NCT04395989"
+  ],
+  "asOf": "2026-11-09",
+  "nct": "NCT04395989",
+  "phase": "2",
+  "status": "positive",
+  "design": "superiority",
+  "started": "2020-07-28",
+  "startedType": "actual",
+  "yearReported": 2024,
+  "enrolled": 139,
+  "enrolledBasis": "registry",
+  "setting": "Single-centre first-line untreated metastatic/recurrent TNBC; Fudan subtype/genomic-marker cohorts, matched combinations plus nab-paclitaxel versus nab-paclitaxel alone",
+  "sponsor": "Fudan University",
+  "tldr": "FUTURE-SUPER tested a defined subtype-linked treatment strategy in advanced TNBC. The pooled phase 2 PFS comparison was positive; the current registry does not establish availability.",
+  "summary": "Single-centre, open-label phase 2 study at Fudan University Shanghai Cancer Center. Participants were women aged 18-70, ECOG 0-1, with untreated metastatic or recurrent TNBC. Five cohorts combined a Fudan subtype classification with genomic biomarkers. Within that strategy, 139 participants were randomised to matched additions to nab-paclitaxel (69) or nab-paclitaxel alone (70). This is a different classifier from Lehmann TNBCtype-4.\n\nThe primary comparison was investigator-assessed progression-free survival in the pooled intention-to-treat groups. At the 31 May 2023 cutoff, median follow-up was 22.5 months (interquartile range 15.2-29.0). It tested a package of classification, matching rules and regimens; it did not separately establish each component's effect.",
+  "result": "At the 31 May 2023 analysis, median PFS was 11.3 versus 5.8 months, hazard ratio 0.44 (95 percent confidence interval 0.30-0.65). Treatment-related serious events occurred in 7/69 versus 0/70.",
+  "outcomes": [
+    {
+      "endpoint": "Investigator-assessed progression-free survival, pooled intention-to-treat comparison",
+      "primary": true,
+      "unit": "months",
+      "arms": [
+        {
+          "name": "Subtype/genomic-marker strategy plus nab-paclitaxel",
+          "n": 69,
+          "value": 11.3,
+          "note": "95 percent confidence interval 8.6-15.2"
+        },
+        {
+          "name": "Nab-paclitaxel alone",
+          "n": 70,
+          "value": 5.8,
+          "note": "95 percent confidence interval 4.0-6.7"
+        }
+      ],
+      "hr": 0.44,
+      "ci": [
+        0.3,
+        0.65
+      ],
+      "p": "<0.0001",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/38211606/"
+    }
+  ],
+  "notes": [
+    "The four Fudan subtype labels generated five treatment cohorts after genomic splitting. Additions included pyrotinib for LAR with activating HER2 mutation; everolimus in specified PI3K/AKT-altered LAR/MES groups; camrelizumab plus famitinib in IM; and bevacizumab in BLIS/MES without those alterations. This does not equate those groups with TNBCtype-4 or pathology receptor labels.",
+    "The positive outcome label refers to the published pooled primary comparison. Registry recruitment status captured on 9 November 2026 is UNKNOWN, last known ACTIVE_NOT_RECRUITING; last posted update 22 December 2023. It is not an available-slot claim. Registry actual enrollment is 139 and no results module is posted.",
+    "The registry uses enrollment for its PFS clock and first dose for its secondary OS clock. Do not silently make those endpoints share a start or turn the PFS result into a demonstrated OS benefit."
+  ],
+  "replication": "This single-centre phase 2 strategy result does not isolate a classifier or individual matched component; independent larger comparative validation and setting-specific comparators remain important.",
+  "cancers": [
+    "tnbc"
+  ],
+  "keyPapers": [
+    "paper-future-super-lancet-oncology-2024"
+  ],
+  "drugs": [
+    "nab-paclitaxel",
+    "pyrotinib",
+    "everolimus",
+    "camrelizumab",
+    "bevacizumab"
+  ],
+  "terms": [
+    "tnbc-molecular-subtyping"
+  ],
+  "related": [
+    "paper-future-super-lancet-oncology-2024"
+  ],
+  "links": [
+    {
+      "label": "ClinicalTrials.gov NCT04395989",
+      "url": "https://clinicaltrials.gov/study/NCT04395989"
+    },
+    {
+      "label": "Primary randomised report: PMID 38211606",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38211606/"
+    }
+  ],
+  "tags": [
+    "education-audit",
+    "subtyping-strategy"
+  ]
+},
 ];
 
 /** Structured outcomes, enrolment, and replication notes live in trial-outcomes.ts and are merged here. */

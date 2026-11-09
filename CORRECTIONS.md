@@ -4,6 +4,14 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Research classification and clinical test scope
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [TNBC](/cancers/tnbc/) and its six RNA-profile pages | Mixed research groups, histologies and treatment sensitivity; mapped MSL into M and placed independent classifier groups under BL1/IM | Original 2011/2016 classifier sources, independent cohorts and actual readers | Keeps classification axes, tissue attribution, next-best-centroid reassignment and model/cohort limits; removes unsupported child hierarchies and universal drug-resistance claims; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-09 | [PAM50](/terms/pam50/), [basal-like](/terms/basal-like/) and [LAR](/terms/luminal-androgen-receptor/) | Blended expression, cell ancestry, receptor testing and treatment benefit | Resolved classifier, paired-tissue and receptor-concordance abstracts with selected full text | Separates measurement, classifier/version, tissue mixture, subtype and recurrence-risk outputs |
+| 2026-11-09 | [Prosigna](/drugs/prosigna/) | Implied RNA sequencing, universal subtype reporting and chemotherapy benefit from a low risk score; old NICE scope and an unverified CE year | Exact FDA identity/date, selected original decision text and raw current NICE recommendations | Keeps digital hybridisation/counting, dated U.S. prognosis-only scope and distinct NHS/CE context; removes automatic therapy-benefit language and the unverified CE date |
+
 ### Later-source cost and PET distinctions
 
 | Date | Entity | What was wrong | How found | Fix |

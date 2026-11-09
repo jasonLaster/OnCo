@@ -8,22 +8,23 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Concepts/comparisons | 411 |
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 0 |
-| Teaching sources fully read (including seven navigation pages) | 83 |
-| Reviewed sources completely represented in drafts | 78 |
+| Teaching sources fully read (including seven navigation pages) | 85 |
+| Reviewed sources completely represented in drafts | 80 |
 | Reviewed sources retaining requirements | 5 |
-| Content sources unread | 447 |
-| Curriculum requirements | 336 |
-| Requirements with field evidence | 328 |
+| Content sources unread | 445 |
+| Curriculum requirements | 349 |
+| Requirements with field evidence | 341 |
 | Curriculum requirements open | 8 |
-| New records in draft #375 | 33 |
-| Existing owners updated in draft #375 | 125 |
+| New records in draft #375 | 36 |
+| Existing owners updated in draft #375 | 135 |
 | Reviewed-source completion on pinned main | 0 |
-| Adjacent concepts represented in drafts | 17 |
-| Adjacent concepts open | 3 |
-| Declared literature occurrences | 252 |
-| Literature occurrences screened | 147 |
+| Adjacent concepts represented in drafts | 19 |
+| Adjacent concepts open | 2 |
+| Declared literature occurrences | 280 |
+| Literature occurrences screened | 175 |
 | Literature occurrences unread | 105 |
-| Schema drafts awaiting approval/hosted preview | 4 |
+| Implemented schema drafts awaiting approval/hosted preview | 4 |
+| Additional classification schema design open | 1 |
 | Clean final full re-audits | 0 |
 
 Unread means unknown coverage. Drafts remain separate from main. The [ledger](ledger.json) and generated open-item/dependency reports are authoritative.
@@ -60,3 +61,5 @@ The active Guide checkout advanced during this checkpoint. An isolated sparse ch
 The known newer Guide commit is also a pending source delta before final re-audits; no later-version coverage is inferred from the original pin. Its path counts are recorded separately from the current 537-source census.
 
 The [later curriculum phase](source-phases/c9689645/README.md) separately verifies 550 files and retains 57 exact prior assessments plus 18 manual delta reviews. Seventy-three of 75 assessed sources have proposed representation; the phase has 314 of 316 requirements evidenced, 470 ordinary sources unread and five navigation sources unclassified. Five new requirements are filled at two existing owners; the actual service-directory cost consumer is a new open adjacent finding. Root closure requires every registered source phase, while preserving all eight original residual requirements. No cross-version totals are added. All 158 current owners and 14 authored field parts pass local reader checks. Validate/typecheck/lint and the fresh 282-file/2,823-test suite pass, with two existing skips; source and field proofs are current.
+
+The [subtype checkpoint](subtypes-2026-11-09/scope.json) fills thirteen new requirements for two sources whose teaching/metadata match across both pins. Original counts are now 85 read/80 represented and 341 of 349 requirements evidenced; later-phase counts are 77/75 and 327 of 329. Twenty-one adjacent findings include nineteen represented and two open. The TNBC parent and six linked profile pages separate measurements/classifiers, remove false hierarchies and retain visible interpretation limits. The distinct FUTURE-SUPER strategy has a resolved primary report and current registry source; its pooled result is not silently assigned to every research label. Four schema prototypes await review, and the new classification context contract needs design. All 171 owners and 98 authored field parts pass reader checks. The final full suite passes 282 files/2,823 tests with two existing skips; test floors, questions and ranking remain unchanged.

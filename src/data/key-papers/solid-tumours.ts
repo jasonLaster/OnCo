@@ -1685,4 +1685,55 @@ export const papersSolidTumours: PaperInput[] = [
     "local-treatment"
   ]
 },
+
+{
+  "id": "paper-future-super-lancet-oncology-2024",
+  "kind": "paper",
+  "name": "FUTURE-SUPER: first-line subtyping-based treatment in advanced TNBC",
+  "asOf": "2026-11-09",
+  "tldr": "This randomised phase 2 trial found longer progression-free survival with a specified subtype-based combination strategy than with nab-paclitaxel alone, with more serious treatment-related adverse events.",
+  "summary": "Single-centre, open-label phase 2 study at Fudan University Shanghai Cancer Center. Participants were women aged 18-70, ECOG 0-1, with untreated metastatic or recurrent TNBC. Five cohorts combined a Fudan subtype classification with genomic biomarkers. Within that strategy, 139 participants were randomised to matched additions to nab-paclitaxel (69) or nab-paclitaxel alone (70). This is a different classifier from Lehmann TNBCtype-4.\n\nThe primary comparison was investigator-assessed progression-free survival in the pooled intention-to-treat groups. At the 31 May 2023 cutoff, median follow-up was 22.5 months (interquartile range 15.2-29.0). It tested a package of classification, matching rules and regimens; it did not separately establish each component's effect.",
+  "journal": "The Lancet. Oncology",
+  "year": 2024,
+  "doi": "10.1016/s1470-2045(23)00579-x",
+  "pmid": "38211606",
+  "authors": "Fan L, Wang ZH, Ma LX, Wu SY, Wu J, Yu KD, Sui XY, Xu Y, Liu XY, Chen L, Zhang WJ, Jin X, Xiao Q, Shui RH, Xiao Y, Wang H, Yang YS, Huang XY, Cao AY, Li JJ, Di GH, Liu GY, Yang WT, Hu X, Xia Y, Liang QN, Jiang YZ, Shao ZM.",
+  "paperType": "rct",
+  "participants": 139,
+  "findings": [
+    "Median PFS: 11.3 months (95 percent confidence interval 8.6-15.2) with the pooled matched strategy versus 5.8 (4.0-6.7) with control; hazard ratio 0.44 (0.30-0.65), p<0.0001.",
+    "Grade 3-4 treatment-related neutropenia: 21/69 versus 16/70; anaemia: 5/69 versus 0/70; increased alanine aminotransferase: 4/69 versus 1/70. Treatment-related serious events: 7/69 versus 0/70; no treatment-related deaths reported."
+  ],
+  "caveats": [
+    "A pooled strategy result does not establish that every cohort benefits, validate an interchangeable RNA/IHC classifier, or prove a treatment-by-biomarker interaction for each drug.",
+    "Single-centre phase 2 evidence with an investigator-assessed endpoint and nab-paclitaxel-alone comparator does not establish superiority to every current regimen or a phase 3 survival benefit.",
+    "The current registry status is UNKNOWN, last known active/not recruiting with its last posted update on 22 December 2023. No posted registry results does not mean no publication.",
+    "Source use here is the complete independently resolved abstract and selected registry methods; no complete manuscript review is claimed."
+  ],
+  "whatItMeans": "Evidence that a particular subtype-linked treatment strategy can be tested prospectively. Keep the classifier, genomic rules, population, comparator, endpoint and harms attached to the result.",
+  "cancers": [
+    "tnbc"
+  ],
+  "trials": [
+    "future-super"
+  ],
+  "related": [
+    "tnbc-molecular-subtyping",
+    "pam50"
+  ],
+  "links": [
+    {
+      "label": "Primary publication: identity, complete abstract, population, PFS and safety",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38211606/"
+    },
+    {
+      "label": "ClinicalTrials.gov: independently captured NCT04395989",
+      "url": "https://clinicaltrials.gov/study/NCT04395989"
+    }
+  ],
+  "tags": [
+    "education-audit",
+    "randomised-phase-2"
+  ]
+},
 ];

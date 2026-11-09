@@ -692,7 +692,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. Navigation follow-up directly exposed a remaining RNA-subtype/clinical-category consumer problem in the TNBC parent. This reopens the adjacent finding without withdrawing its already represented ER/PR and nodal requirements.",
+      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. Navigation follow-up directly exposed a remaining RNA-subtype/clinical-category consumer problem in the TNBC parent. This reopens the adjacent finding without withdrawing its already represented ER/PR and nodal requirements. The subtype checkpoint repairs the actual parent and six linked RNA-profile readers. False child-subtype arrays were removed because parallel classifier labels and histologies are not established descendants; their distinctions remain in visible prose. Classification metadata still needs its separately tracked schema design.",
       "points": [
         {
           "id": "classification-versus-comparison",
@@ -734,11 +734,45 @@
         {
           "id": "molecular-profile-and-clinical-subtype-consumers",
           "requirement": "Keep research RNA groupings, tissue admixture, histological types, clinical receptor categories and validated drug-selection rules separate in canonical consumer pages.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "The current TNBC parent summary/subtypes still mixes old research subtype groupings, histologies and broad treatment-sensitivity labels. Read the pinned TNBC molecular-subtypes concept and independently resolve the relevant primary classification/admixture reports before correcting those consumers. Correct generic lineage/threshold terms do not repair that parent automatically."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "tnbc",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "1ddc9c0620c6373a09f39a63043c5fa3ed1c8f7e1197e71311f246efd839d500",
+              "explanation": "The actual parent separates clinical/research axes and removes universal mesenchymal/claudin-low resistance."
+            },
+            {
+              "recordId": "tnbc",
+              "version": "proposal-biology",
+              "field": "subtypes",
+              "fieldSha256": "856e2478afc0e934057642a9beb7285521ca780e1550affe49edf56d221f7c00",
+              "explanation": "The actual fourteen descriptors retain their classification roles; all are matched in the rendered parent after only colon/whitespace normalisation."
+            },
+            {
+              "recordId": "tnbc-mesenchymal-stem-like",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "f8ec020bfc960cfa42e224025908405cb4996a53209b4bd35a8adcd5adfdcde3",
+              "explanation": "The linked historical reader retains tissue attribution and next-best-centroid reassignment."
+            },
+            {
+              "recordId": "tnbc-basal-like-1",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "cc80b7f10070c1967db8cfbd6c921ac6588ca5f0db6a7e34aaf191c5211c4eb9",
+              "explanation": "DDR programme, an HRD assay and treatment interaction are different evidence."
+            },
+            {
+              "recordId": "tnbc-immunomodulatory",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "bf572838af276b501ad4903e1fd3958adba77886f9b96fae4f1028405136c068",
+              "explanation": "RNA immune profiles, histological lymphocyte assessment, PD-L1 and independent classifiers remain distinct."
+            }
+          ],
+          "remaining": []
         }
       ]
     }
@@ -1068,6 +1102,72 @@
           "evidence": [],
           "remaining": [
             "The expanded-access entry in src/data/free-wave.ts retains an unscoped usually-free-supply assertion and generic cost-recovery wording. Check the actual directory output, repair its statement and retain a direct field/render proof for this non-graph consumer."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "classifier-linked-treatment-strategy-evidence",
+    "title": "Classifier-linked treatment strategies and component inference",
+    "domain": "evidence-and-statistics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/38211606/",
+      "https://pubmed.ncbi.nlm.nih.gov/30335131/",
+      "https://clinicaltrials.gov/study/NCT04395989"
+    ],
+    "discoveryOccurrences": [
+      "subtype-prospective-strategies:2",
+      "subtype-direct-med:9"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex content audit; not expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Independent primary abstract, selected registry design and exploratory interaction were read. This is scoped proposed representation, not a universal clinical recommendation.",
+      "points": [
+        {
+          "id": "strategy-versus-label",
+          "requirement": "A prospective strategy result retains its actual classifier, genomic rules, treatment package, population, comparator and dated endpoint; shared subtype names do not make other classifiers interchangeable.",
+          "status": "covered-draft",
+          "remaining": [],
+          "evidence": [
+            {
+              "recordId": "paper-future-super-lancet-oncology-2024",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "d72f6d6b584179d437052394fc0f17414bc3d6898635844241236f586e980ef8",
+              "explanation": "Names the actual Fudan strategy, five cohorts, setting, randomised groups and primary analysis."
+            },
+            {
+              "recordId": "future-super",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "c5627a764ae4585fea4884207c31823df8e6fe5f3ffaad180ae1d0486829adbb",
+              "explanation": "Keeps cohort rules, registry status, endpoint clocks and classifier distinction."
+            }
+          ]
+        },
+        {
+          "id": "component-and-interaction",
+          "requirement": "A pooled strategy effect does not isolate the classifier, each treatment component or every subgroup; a within-group response association is different from evidence of differential treatment benefit.",
+          "status": "covered-draft",
+          "remaining": [],
+          "evidence": [
+            {
+              "recordId": "paper-future-super-lancet-oncology-2024",
+              "version": "proposal-therapeutic",
+              "field": "caveats",
+              "fieldSha256": "c3d3fa3d1d471e6499b48ba544fe531352826ffacdf7a32657e53024cb55a99e",
+              "explanation": "Keeps the package, individual cohort and external comparator limits."
+            },
+            {
+              "recordId": "tnbc-basal-like-1",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "cc80b7f10070c1967db8cfbd6c921ac6588ca5f0db6a7e34aaf191c5211c4eb9",
+              "explanation": "The exploratory HRD example retains its denominator, definition and non-significant treatment interaction."
+            }
           ]
         }
       ]

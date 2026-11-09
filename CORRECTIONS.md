@@ -4,6 +4,12 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### T-cell state and functional persistence
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [T-cell exhaustion and CAR-T persistence](/terms/t-cell-exhaustion-term/) | Equated inhibitory markers with uniformly inactive cells, universally ranked 4-1BB above CD28, treated B-cell aplasia as sufficient cancer-control evidence and discounted persistence in ALL | Resolved stem-like subset, tonic signalling, metabolic, infusion-product and disease-specific persistence studies; selected full-text B-cell-surrogate passages | Keeps heterogeneous states and function, specified construct/model findings, blood detection versus useful activity, selected long-term responders and reinfusion/transplant censoring context; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+
 ### Local treatment, exposure and trial interpretation
 
 | Date | Entity | What was wrong | How found | Fix |

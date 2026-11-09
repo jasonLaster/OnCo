@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "58c069029790d578460496dd3b8fcaff8a2e47bb544dedfbadbb84245b3b0a7c"
+      "recordSnapshotSha256": "1dc7be7d05d9ebfb1c09a1f86affc54972cb08e1d980be9273f65308c0020890"
     },
     {
       "version": "draft-376",
@@ -48,15 +48,15 @@
     "conceptOrComparison": 411,
     "guideOrLesson": 112,
     "navigation": 14,
-    "navigationReviewed": 4,
-    "navigationWithTeachingContent": 1,
-    "semanticallyReviewed": 75,
-    "implementedCoverage": 74,
+    "navigationReviewed": 7,
+    "navigationWithTeachingContent": 7,
+    "semanticallyReviewed": 81,
+    "implementedCoverage": 75,
     "mainCoverage": 0,
-    "unresolvedContentItems": 450,
-    "unresolvedSources": 459,
-    "adjacentConcepts": 18,
-    "unresolvedAdjacentConcepts": 2,
+    "unresolvedContentItems": 455,
+    "unresolvedSources": 455,
+    "adjacentConcepts": 19,
+    "unresolvedAdjacentConcepts": 3,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
     "readyForFinalReaudit": false
@@ -23106,7 +23106,22 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the non-table text. All 400 generated concept rows match their inventoried owners’ titles and summary metadata exactly. Owner content retains its separate reading and scientific requirements; this directory adds no independent scientific claim.",
+        "sectionHashes": [
+          "6fe3023a71d0278c23707089b437b34b4a88ec8c2e8ce7c7902ea667b766def8",
+          "43635b8666dab3ba4f51aed03c974e85bf62523ee4ee490e4903970e013224a3",
+          "e2809a4254103d8d57dff133159f35146848eecd070b1a5bcc4c1f9c66cb08d9",
+          "cde9be6bcaa99d4c75beb1f123d055a9df32918bc23449eeca15569141a3b4f0",
+          "7268637ed5dd8860469f7be4b4cf04bc38e75be359699e5cdec6c0aa9b503f28",
+          "b6d05bb16ed8367f91ab64935d5e027210c7d60055c0e3a31e2d4628b021b2c5",
+          "bb7c55e367048e957fa5b1ae1d28cabf88246672c673398f4f258e018714eedf",
+          "54d88ebbb342bbad39c2a08622c6a0342c3d85fb48c0e87658a2b324ee08730b",
+          "ba23d3bc12df4cbab259d6bd0e604f69d9ec8a5fd5f9bab8d414a7e2800c34f3",
+          "110b6caaa6d457831b1118ab7f47d79eadbb93d9b592b27b228048c0a81e604c"
+        ],
         "points": []
       }
     },
@@ -43915,7 +43930,14 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read non-table source-ownership and maintenance text. Of 381 generated image rows, 379 descriptions match owner alt text exactly and two are verified truncated prefixes at an apostrophe; both owning concepts were already read. Those two captions add no independent meaning. All rows point to inventoried teaching owners. This is a duplication check, not visual/scientific certification of unread illustrations, prompt availability or file-state columns.",
+        "sectionHashes": [
+          "173b30ea563e36d918b6e936a9b1e262e445842db8cb3a74c7ae2e238e1aa077",
+          "c2a9e189871f70942b2d25ff7d3cb466ba5b2841d973e2d6be41cd2d1ca3b650"
+        ],
         "points": []
       }
     },
@@ -45805,8 +45827,72 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "7e990ec9680a8e5d3d9a54dfd2c4f7c010310b793d6ea9a308def0f2e5db2ae1",
+          "fa0ccc5b0ea9c8fb80cb6c66bd440f5bccc13852b582724756a71de079ac2e07",
+          "b154ea13555ec300a2745e27de5bc30d7751c2bdcb309ef2b55c54529d110c79",
+          "d6b3c2f80eedd3d9a7361a9def7daf6d7970b3bb6576d729cc2e83c70baad998",
+          "dd3513c6f734c6688bc966a62c09f16258b60cb4cba23c5da16251996c6585fc"
+        ],
+        "points": [
+          {
+            "id": "measured-object-and-state",
+            "requirement": "Distinguish sequence, RNA amount, protein modification and functional response; keep the tested direction rather than inferring activity or dependence from amount.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "288314fccaa10df342290d007a0d21157e2922dfa4781c1c4a2438fe6c367789",
+                "explanation": "DNA, binding, chromatin, RNA and protein/function are separate observations."
+              },
+              {
+                "recordId": "pathway-activation-state",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a46145bb657235b86087440632d22249aaa44a9180baf7c9bf9fc3a9fc7aae02",
+                "explanation": "Phosphosite meaning, parent abundance, sample context and pathway output remain scoped."
+              },
+              {
+                "recordId": "pathway-activation-state",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "f8344ed769d098734abbb5b990c66552e6cf07e978605f70b8a3f1d6672098b9",
+                "explanation": "Changed signal does not itself establish dependence or drug benefit."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "flux-dependence-and-clinical-bridge",
+            "requirement": "Keep amount, ongoing flux and survival dependence separate, including perturbation/controls; a coherent pathway experiment does not by itself establish patient benefit.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "pathway-activation-state",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "f8344ed769d098734abbb5b990c66552e6cf07e978605f70b8a3f1d6672098b9",
+                "explanation": "Dependence needs controlled perturbations and functional readouts."
+              },
+              {
+                "recordId": "measurement-to-benefit-evidence",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "e943e3432e4691dfe72ee42492a3f37ff8c02bbe2bf8a0e4e361e22391d80581",
+                "explanation": "Mechanistic model results do not alone establish clinical benefit."
+              }
+            ],
+            "remaining": [
+              "Autophagy/proteostasis flux and supporting assay ownership require their dedicated source comparison."
+            ]
+          }
+        ]
       }
     },
     {
@@ -45842,8 +45928,49 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "0c9bf0e0310b92b827305d4bf19680fe94b8dcfb0cbf595e76b8c2b3e9f38f39",
+          "62b320e7a9e7f6a04b8de4275d8442dc4e7c1aae889a2b14a4f152f09382805e",
+          "24022ab3695073817ea37d1f4f3f8a4c10af111a68334b753a2879bc53dd5a44",
+          "d29356cee07b071529bfc95633df508f5e0fdd1e8c0ce2bb5d4053f03167b8bd"
+        ],
+        "points": [
+          {
+            "id": "assay-objects-and-limits",
+            "requirement": "Keep DNA, RNA, protein, spatial, functional and repeated blood measurements with their actual material, method and limits; agreement does not alone establish a drug response.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and primary-source comparison remains open for the complete requirement."
+            ]
+          },
+          {
+            "id": "mechanism-benefit-and-access",
+            "requirement": "Distinguish measured mechanism, clinical benefit and treatment eligibility rather than treating a research report as a care decision.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "measurement-to-benefit-evidence",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "e943e3432e4691dfe72ee42492a3f37ff8c02bbe2bf8a0e4e361e22391d80581",
+                "explanation": "Accurate measurement, relevant function and patient benefit are separate questions."
+              },
+              {
+                "recordId": "companion-diagnostic-term",
+                "version": "proposal-access",
+                "field": "summary",
+                "fieldSha256": "686052d94f5772668dcfe3bb752c4dcd3a68f38ea5dcad52cdd8c6286e3e763a",
+                "explanation": "Specified diagnostic-treatment use and eligibility do not become a universal actionability ladder."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -46584,8 +46711,72 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "04108bace3a3d6eaaef613b56f80e85e9cda94ca40d659c981de3d59679eab52",
+          "a1c37af24b639c62ac6dfe11a9a9989bea36319181a00274006e82526261c6ac",
+          "3cbd371e0eda1625ce1578eb537d3fc71ef2d37144ebf55204aa9fc97b672d5f",
+          "d265a95252821b501f50b08f73b4eeada049a040fa0eb44d68915303d3378c97",
+          "4672297448c2ef62778f57e56d3ac5f0451752e96fb0ff9a3da3d02609572b90"
+        ],
+        "points": [
+          {
+            "id": "family-state-and-malignancy",
+            "requirement": "Distinguish epithelial family, evidence of malignancy, cell state and clinical category; an expression program does not determine origin or receptor diagnosis.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+                "explanation": "Normal epithelial and stromal/immune contributions remain distinct from malignancy."
+              },
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+                "explanation": "Descent, identity, state and genetic clone are different claims."
+              },
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "6d840bee237973501bbd05b03f39de96732d10640f5ded0878f232165befddc2",
+                "explanation": "A reference-profile resemblance does not establish an individual tumour’s cell of origin."
+              },
+              {
+                "recordId": "er-pr-negative-threshold",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
+                "explanation": "Clinical ER categories use validated IHC and their own guideline/protocol context, rather than an RNA-program resemblance."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "pseudobulk-and-reference",
+            "requirement": "Define pooling counts from a selected cell group and the actual reference/comparison; a resemblance claim does not establish developmental origin or clinical receptor status.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "6d840bee237973501bbd05b03f39de96732d10640f5ded0878f232165befddc2",
+                "explanation": "The reference-profile versus origin boundary is represented."
+              }
+            ],
+            "remaining": [
+              "Pseudobulk pooling, denominators and reference-comparison ownership need their complete source/consumer review."
+            ]
+          }
+        ]
       }
     },
     {
@@ -46909,7 +47100,14 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the full page: route/order descriptions and linked recognition, tissue, measurement and cell-condition topics. It supplies no independent mechanism or result; linked lessons and concepts remain individually auditable.",
+        "sectionHashes": [
+          "54e3743db7e4947018999ec556e8131f7f09196c1f3c43508ee6ad84b4730c2b",
+          "f65350486e4a036620e474240fb12f564db36fec7fe36add09cbdc603cf5efb5"
+        ],
         "points": []
       }
     },
@@ -47053,8 +47251,83 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "9d3ff4830984228fdd40fe44a1441ff32e5795b2070b9be3117e2cd64ea7dc70",
+          "d3b5e83c30daa1ffa47225b4a48cc34f953eb1b2157ff4e6993dc5ec08fc373c",
+          "8e60cf1062e2d24ff723dbfe3b915a6dfd5c4d7c294b730d70c9c1e644045a81",
+          "3aa0fbf23d59edc6ea30686e23239aceb05b3f5c831b75fb70788334d12b22b8",
+          "23336a2d2459f9091f8f69f14a5c6383d688b31be062ff828e3aaf2d77881d63",
+          "48ec89d0860adb487709b829e17c22d85486fd05a513e760e275c8e607a161f2",
+          "d846b093e25ff86b532736a782d6e2fce1ab5bbf76fc05f510d0c7ba84c7bd63",
+          "2de738ab32decd3fa53ae5900ecda7684faa8da059f760e6c89d26dd2db69d5c",
+          "ac1108d9c1f500d0c0217a9b70dd71542bcf6cacadf58240f91fd10ac2df3c4a",
+          "bcf1db4fae266a629abe89b6cb0d8b5b5bab851a5868434bfdef62e001a95f9d"
+        ],
+        "points": [
+          {
+            "id": "specimen-and-measurement-card",
+            "requirement": "Record collection site/time, treatment context, analysed material, units, assay version and thresholds; preparation and sample attribution constrain comparisons.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and primary-source comparison remains open for the complete requirement."
+            ]
+          },
+          {
+            "id": "molecular-layer-versus-resolution",
+            "requirement": "Keep the measured molecular object separate from cell/spatial resolution, coverage and detection sensitivity; adding location does not automatically measure another molecular layer.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and primary-source comparison remains open for the complete requirement."
+            ]
+          },
+          {
+            "id": "evidence-status-comparison-and-decision",
+            "requirement": "Label observed, interpreted and predicted values and their validation; preserve the compatible comparison, unmeasured bridge and actual decision/eligibility.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "measurement-to-benefit-evidence",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "e943e3432e4691dfe72ee42492a3f37ff8c02bbe2bf8a0e4e361e22391d80581",
+                "explanation": "Observed mechanism and model performance do not automatically establish useful clinical prediction."
+              }
+            ],
+            "remaining": [
+              "The complete specimen/comparison and direct-measurement versus inferred-layer consumer chain remains to be checked."
+            ]
+          },
+          {
+            "id": "bulk-rna-worked-interpretation",
+            "requirement": "A high mixed-sample RNA result does not establish malignant-cell membrane protein, normal-tissue selectivity, dependence or treatment benefit; a model-derived image signal is not directly measured RNA.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "e8bac6bab4d435f320dd77e4c7ab3b909e88a2177aa2d6e8dd47c8cd4483ea1f",
+                "explanation": "Mixed-tissue signal requires attribution to particular cells."
+              },
+              {
+                "recordId": "gene-expression",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "288314fccaa10df342290d007a0d21157e2922dfa4781c1c4a2438fe6c367789",
+                "explanation": "RNA amount does not fix protein amount/activity or growth dependence."
+              }
+            ],
+            "remaining": [
+              "The model-predicted versus directly measured layer and reference-normalisation requirements remain open."
+            ]
+          }
+        ]
       }
     },
     {
@@ -47701,8 +47974,54 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "f165688db33cb9417b3d8ccf6184ba38f1a52e73612be3d3afe98f8b135052e6",
+          "461a8f96c6686aa632bfce08ea1f9ad0fbdb0effff349ce7b51f0973f2850c8e",
+          "ab66f2a17168406d980155ff13e8a802e36c05d4696bee8f10e5a7a6a6a97770",
+          "d2ffa88f17ff9b755979b22a26cc01d4383dc5077d2259cfd7b4b8fe8e1fb0b6"
+        ],
+        "points": [
+          {
+            "id": "recognition-action-exposure-and-evidence",
+            "requirement": "Keep molecular recognition, attached action, product delivery/exposure, normal-tissue questions and clinical evidence separate; a format name does not select a treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adc",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "0e0b8ba9e7870748e364612d2fbce0a909467835f1934bc49454713f80fac1f4",
+                "explanation": "Conjugate carrier, chemical action, delivery/processing and clinical setting are distinct."
+              },
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+                "explanation": "Receptor, encoding instructions and living cell are different objects; construct and product setting matter."
+              },
+              {
+                "recordId": "measurement-to-benefit-evidence",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "e943e3432e4691dfe72ee42492a3f37ff8c02bbe2bf8a0e4e361e22391d80581",
+                "explanation": "Observation, mechanism, intervention and patient outcome require separate evidence, not a guaranteed sequence."
+              },
+              {
+                "recordId": "adc",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "5ccd08a8652498423d429ce75d9b94f08edb9e3d76938679104b2f2c773c7649",
+                "explanation": "Normal-tissue exposure and product-specific harms remain possible despite a targeting format."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -47753,8 +48072,74 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "sectionHashes": [
+          "a14e069c3c1b98349771d79b24475c3e0f41f973201024d190bfe2c6d83f2962",
+          "f6c47470c035f8aa45d68339916924d3bddb69838e131258ee05d6b731f009e3",
+          "60da32b86c2b733dd99adfca25b894367b2cf1aa856f6ad15a862a18b8e0b2e8",
+          "45608d8517220efe67e0d325f2f898e04609541bfb8916060d8dea3c29d84425",
+          "360f0f386a502050259b44504496bc582bc905a52cf5d57567cb57172e7a282b",
+          "53308128cf316b53281dd73ccb8fce170b9016b159bd6cd76dae30058a9d0886",
+          "5b7fb6d429bbabf56ade258b0b7e42cc00457a97ee6d8a6f3e35eecfad1b1b61"
+        ],
+        "points": [
+          {
+            "id": "component-and-engineering-roles",
+            "requirement": "Separate carrier, encoding payload, receptor, added signalling component and living cell; ex vivo/in vivo refers to the site of engineering rather than proof of finished-product benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+                "explanation": "Receptor protein, its encoding instructions and the living carrier cell are distinct."
+              },
+              {
+                "recordId": "in-vivo-car-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "04180aa18c35dd3ff197af27e3bb910f3125163354e5f3a8a0e7fdf1a2e28d13",
+                "explanation": "Engineering location and delivery format do not establish product performance."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "baseline-and-control",
+            "requirement": "Compare a treated value with both its own start and the control at the stated time; lower than control need not be regression, and net counts do not show individual cell fates.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "growth-rate-inhibition",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "e5229c685af4a0e79c014ef749eee911c37d67ad928f3f58896035ac32aabf6c",
+                "explanation": "Initial, treated and untreated measurements and divisions affect experimental interpretation."
+              },
+              {
+                "recordId": "cytostasis-versus-cell-death",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "f2a058a38ee2a8e7b7bbf538265602cc518b885619996040b432f0117df99626",
+                "explanation": "Time-dependent counts and assay signals differ; a lower endpoint is not automatically cell killing."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "single-endpoint-and-durability",
+            "requirement": "Keep a hypothetical zero or small residual at one time separate from durable disease control or clinical response criteria; component activity, cell counts and patient benefit are different claims.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and primary-source comparison remains open for the complete requirement."
+            ]
+          }
+        ]
       }
     }
   ],
@@ -48115,7 +48500,12 @@
       "domain": "immunology",
       "sourceURLs": [
         "https://pubmed.ncbi.nlm.nih.gov/26885860/",
-        "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+        "https://pubmed.ncbi.nlm.nih.gov/33020644/",
+        "https://pubmed.ncbi.nlm.nih.gov/30635237/",
+        "https://pubmed.ncbi.nlm.nih.gov/25939063/",
+        "https://pubmed.ncbi.nlm.nih.gov/40554413/",
+        "https://pubmed.ncbi.nlm.nih.gov/42575986/",
+        "https://pubmed.ncbi.nlm.nih.gov/34156874/"
       ],
       "discoveryOccurrences": [
         "canonical-owner-follow-up:t-cell-exhaustion-term"
@@ -48123,17 +48513,30 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically.",
+        "checkedAt": "2026-11-09",
+        "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically. The actual canonical term is now corrected after 12 independently resolved MED identities/11 available complete abstracts and selected full-text surrogate sections. The narrative and all seven source links were checked in its rendered reader body; this is not clinical expert sign-off.",
         "points": [
           {
             "id": "existing-owner-consistency",
             "requirement": "Review and correct the existing exhaustion/persistence owner, including universal 4-1BB/CD28 ranking, marker-versus-function interpretation, B-cell aplasia and clinical-setting boundaries.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The main t-cell-exhaustion-term summary still contains broad unqualified claims. Resolve those clauses against primary studies during the T-cell-state audit; do not count a safe parent note as a repair to this owner."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-exhaustion-term",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "f113a51fccd27800c0bc8bc774235f93138f3b46624d87cec4cf11d027a2a3e9",
+                "explanation": "Heterogeneous states, marker/function distinctions, disease-specific transgene relationships, B-cell surrogate limits and transplantation/censoring replace the broad claims."
+              },
+              {
+                "recordId": "t-cell-exhaustion-term",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c2f93f9f604252c9e2ea76fa5ae97a61cda2d60206081144074e231af5286fa6",
+                "explanation": "Construct-specific CD28/4-1BB experiments, selected long-term responders and post-recovery interventions prevent universal rankings or guarantees."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -48427,13 +48830,14 @@
         "primary-follow-up:31928404",
         "primary-follow-up:35817765",
         "primary-follow-up:34341356",
-        "primary-follow-up:38745990"
+        "primary-follow-up:38745990",
+        "canonical-owner-follow-up:tnbc-summary-and-subtypes"
       ],
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
+        "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. Navigation follow-up directly exposed a remaining RNA-subtype/clinical-category consumer problem in the TNBC parent. This reopens the adjacent finding without withdrawing its already represented ER/PR and nodal requirements.",
         "points": [
           {
             "id": "classification-versus-comparison",
@@ -48471,6 +48875,15 @@
               }
             ],
             "remaining": []
+          },
+          {
+            "id": "molecular-profile-and-clinical-subtype-consumers",
+            "requirement": "Keep research RNA groupings, tissue admixture, histological types, clinical receptor categories and validated drug-selection rules separate in canonical consumer pages.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The current TNBC parent summary/subtypes still mixes old research subtype groupings, histologies and broad treatment-sensitivity labels. Read the pinned TNBC molecular-subtypes concept and independently resolve the relevant primary classification/admixture reports before correcting those consumers. Correct generic lineage/threshold terms do not repair that parent automatically."
+            ]
           }
         ]
       }
@@ -48667,6 +49080,66 @@
               }
             ],
             "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "response-classification-durability-and-surrogacy",
+      "title": "Response classification, duration and clinical-benefit interpretation",
+      "domain": "evidence",
+      "sourceURLs": [
+        "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/complete-response",
+        "https://www.fda.gov/media/71195/download?attachment=",
+        "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+      ],
+      "discoveryOccurrences": [
+        "canonical-owner-follow-up:complete-response",
+        "canonical-owner-follow-up:duration-of-response",
+        "canonical-owner-follow-up:complete-response-term",
+        "canonical-owner-follow-up:duration-of-response-term"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here.",
+        "points": [
+          {
+            "id": "response-criteria-and-confirmation",
+            "requirement": "Review complete versus partial/overall response, target/non-target/new-lesion requirements, node measurement and the trial-specific confirmation rule; preserve disease- and method-specific scope.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The existing complete-response and complete-response-term owners need source-verified repair."
+            ]
+          },
+          {
+            "id": "responder-population-and-clock",
+            "requirement": "Keep duration among responders, first-response origin, event/censoring definitions, follow-up and a not-reached median separate from all-patient comparative outcomes.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The existing duration-of-response owners retain unqualified duration/survival claims; primary follow-up remains open."
+            ]
+          },
+          {
+            "id": "clinical-benefit-and-regulatory-context",
+            "requirement": "Remove universal best-result, survival-tail and approval shortcuts; response and durability do not automatically establish clinical benefit, cure or identical regulatory requirements.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Current FDA guidance/context and existing owner wording require full raw-source comparison."
+            ]
+          },
+          {
+            "id": "disease-control-and-timing",
+            "requirement": "Define stable disease, disease/clinical benefit rates and response timing by the actual criterion and observation window rather than a universal treatment-family ranking.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The existing duration-of-response-term summary needs a scoped DCR/CBR/time-to-response review."
+            ]
           }
         ]
       }

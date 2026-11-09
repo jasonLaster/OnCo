@@ -355,7 +355,12 @@
     "domain": "immunology",
     "sourceURLs": [
       "https://pubmed.ncbi.nlm.nih.gov/26885860/",
-      "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+      "https://pubmed.ncbi.nlm.nih.gov/33020644/",
+      "https://pubmed.ncbi.nlm.nih.gov/30635237/",
+      "https://pubmed.ncbi.nlm.nih.gov/25939063/",
+      "https://pubmed.ncbi.nlm.nih.gov/40554413/",
+      "https://pubmed.ncbi.nlm.nih.gov/42575986/",
+      "https://pubmed.ncbi.nlm.nih.gov/34156874/"
     ],
     "discoveryOccurrences": [
       "canonical-owner-follow-up:t-cell-exhaustion-term"
@@ -363,17 +368,30 @@
     "review": {
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
-      "checkedAt": "2026-11-08",
-      "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically.",
+      "checkedAt": "2026-11-09",
+      "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically. The actual canonical term is now corrected after 12 independently resolved MED identities/11 available complete abstracts and selected full-text surrogate sections. The narrative and all seven source links were checked in its rendered reader body; this is not clinical expert sign-off.",
       "points": [
         {
           "id": "existing-owner-consistency",
           "requirement": "Review and correct the existing exhaustion/persistence owner, including universal 4-1BB/CD28 ranking, marker-versus-function interpretation, B-cell aplasia and clinical-setting boundaries.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "The main t-cell-exhaustion-term summary still contains broad unqualified claims. Resolve those clauses against primary studies during the T-cell-state audit; do not count a safe parent note as a repair to this owner."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "t-cell-exhaustion-term",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "f113a51fccd27800c0bc8bc774235f93138f3b46624d87cec4cf11d027a2a3e9",
+              "explanation": "Heterogeneous states, marker/function distinctions, disease-specific transgene relationships, B-cell surrogate limits and transplantation/censoring replace the broad claims."
+            },
+            {
+              "recordId": "t-cell-exhaustion-term",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "c2f93f9f604252c9e2ea76fa5ae97a61cda2d60206081144074e231af5286fa6",
+              "explanation": "Construct-specific CD28/4-1BB experiments, selected long-term responders and post-recovery interventions prevent universal rankings or guarantees."
+            }
+          ],
+          "remaining": []
         }
       ]
     }
@@ -667,13 +685,14 @@
       "primary-follow-up:31928404",
       "primary-follow-up:35817765",
       "primary-follow-up:34341356",
-      "primary-follow-up:38745990"
+      "primary-follow-up:38745990",
+      "canonical-owner-follow-up:tnbc-summary-and-subtypes"
     ],
     "review": {
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
+      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. Navigation follow-up directly exposed a remaining RNA-subtype/clinical-category consumer problem in the TNBC parent. This reopens the adjacent finding without withdrawing its already represented ER/PR and nodal requirements.",
       "points": [
         {
           "id": "classification-versus-comparison",
@@ -711,6 +730,15 @@
             }
           ],
           "remaining": []
+        },
+        {
+          "id": "molecular-profile-and-clinical-subtype-consumers",
+          "requirement": "Keep research RNA groupings, tissue admixture, histological types, clinical receptor categories and validated drug-selection rules separate in canonical consumer pages.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The current TNBC parent summary/subtypes still mixes old research subtype groupings, histologies and broad treatment-sensitivity labels. Read the pinned TNBC molecular-subtypes concept and independently resolve the relevant primary classification/admixture reports before correcting those consumers. Correct generic lineage/threshold terms do not repair that parent automatically."
+          ]
         }
       ]
     }
@@ -907,6 +935,66 @@
             }
           ],
           "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "response-classification-durability-and-surrogacy",
+    "title": "Response classification, duration and clinical-benefit interpretation",
+    "domain": "evidence",
+    "sourceURLs": [
+      "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/complete-response",
+      "https://www.fda.gov/media/71195/download?attachment=",
+      "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:complete-response",
+      "canonical-owner-follow-up:duration-of-response",
+      "canonical-owner-follow-up:complete-response-term",
+      "canonical-owner-follow-up:duration-of-response-term"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here.",
+      "points": [
+        {
+          "id": "response-criteria-and-confirmation",
+          "requirement": "Review complete versus partial/overall response, target/non-target/new-lesion requirements, node measurement and the trial-specific confirmation rule; preserve disease- and method-specific scope.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The existing complete-response and complete-response-term owners need source-verified repair."
+          ]
+        },
+        {
+          "id": "responder-population-and-clock",
+          "requirement": "Keep duration among responders, first-response origin, event/censoring definitions, follow-up and a not-reached median separate from all-patient comparative outcomes.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The existing duration-of-response owners retain unqualified duration/survival claims; primary follow-up remains open."
+          ]
+        },
+        {
+          "id": "clinical-benefit-and-regulatory-context",
+          "requirement": "Remove universal best-result, survival-tail and approval shortcuts; response and durability do not automatically establish clinical benefit, cure or identical regulatory requirements.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Current FDA guidance/context and existing owner wording require full raw-source comparison."
+          ]
+        },
+        {
+          "id": "disease-control-and-timing",
+          "requirement": "Define stable disease, disease/clinical benefit rates and response timing by the actual criterion and observation window rather than a universal treatment-family ranking.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The existing duration-of-response-term summary needs a scoped DCR/CBR/time-to-response review."
+          ]
         }
       ]
     }

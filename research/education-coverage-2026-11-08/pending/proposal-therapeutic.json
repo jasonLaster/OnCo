@@ -8934,6 +8934,208 @@
       "enrolled": 2012,
       "enrolledBasis": "registry",
       "outcomes": []
+    },
+    {
+      "id": "t-cell-exhaustion-term",
+      "kind": "term",
+      "name": "T-cell exhaustion and CAR-T persistence",
+      "aka": [
+        "exhaustion",
+        "exhausted T cells",
+        "T-cell fitness",
+        "T cell fitness",
+        "T-cell dysfunction",
+        "CAR-T persistence",
+        "CAR persistence",
+        "CAR-T expansion",
+        "peak expansion",
+        "in vivo expansion",
+        "B-cell aplasia",
+        "loss of persistence",
+        "memory phenotype",
+        "stem-like T cells"
+      ],
+      "tldr": "T-cell exhaustion describes altered differentiation and function under persistent stimulation. A marker, cell count or persisting CAR transgene does not by itself establish useful tumour killing.",
+      "summary": "Persistent stimulation can produce heterogeneous T-cell states, rather than one uniformly inactive population. In the studied tumour models, TCF1-positive, PD-1-positive cells could proliferate and generate more differentiated cells during checkpoint treatment. That result does not mean every exhausted cell has been reset. State-associated markers, receptor identity, proliferation and completed target-cell killing answer different questions.\n\nFor CAR-T, distinguish the infused preparation, expansion, later detection in blood, viable functional cells at relevant sites and disease control. A 24-patient axi-cel infusion-product study associated memory/exhaustion-related transcriptional features with outcomes; an association in that cohort does not prove that one modification will correct every failure. A detectable transgene is not itself a functional killing assay.\n\nB-cell aplasia is used as a surrogate of CD19-directed activity against normal B cells, not a guarantee that all cancer sites remain controlled. Relapse can occur while aplasia continues. In the 2025 tisagenlecleucel analysis, relationships differed between B-ALL and diffuse large B-cell lymphoma; blood transgene levels lacked robust relapse-prediction performance. Early B-cell recovery in B-ALL was also affected by subsequent transplantation and censoring. No universal recovery cutoff or rule that persistence is irrelevant in ALL follows from an early response.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/T_cell_exhaustion",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/T_cell_exhaustion"
+        },
+        {
+          "label": "Siddiqui 2019: stem-like and differentiated PD-1-positive cells in tumour models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30635237/"
+        },
+        {
+          "label": "Deng 2020: 24 lymphoma infusion-product associations",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+        },
+        {
+          "label": "Long 2015: specified CAR constructs and tonic signalling",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25939063/"
+        },
+        {
+          "label": "Kawalekar 2016: coreceptor domains, metabolism and memory in human CAR cells",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26885860/"
+        },
+        {
+          "label": "Awasthi 2025: transgene measurements and disease-specific predictive limits",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40554413/"
+        },
+        {
+          "label": "2026 lymphoma persistence series: selected long-term responders",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42575986/"
+        },
+        {
+          "label": "Myers 2021: humanised CD19 CAR pilot and B-cell surrogate limitations",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34156874/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antigen-escape",
+        "cold-vs-hot",
+        "hypogammaglobulinaemia"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy",
+        "immunotherapy"
+      ],
+      "technologies": [
+        "car-t",
+        "armored-car",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [
+        "pd1",
+        "lag3",
+        "tim3",
+        "tigit",
+        "cd57",
+        "cd69"
+      ],
+      "drugs": [
+        "favezelimab",
+        "fianlimab",
+        "hlx26",
+        "relatlimab-nivolumab",
+        "azd7789",
+        "lb1410",
+        "cobolimab",
+        "hb0036",
+        "rilvegostomig",
+        "tiragolumab",
+        "domvanalimab",
+        "vibostolimab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "checkmate-142",
+        "checkmate-358",
+        "fianlimab-phase3-melanoma",
+        "i-spy-2",
+        "nct03486873",
+        "nct03899155",
+        "nct03916627",
+        "nct04082364",
+        "nct04165070",
+        "nct04524871",
+        "nct04590326",
+        "nct04626479",
+        "nct04626518",
+        "nct04655976",
+        "nct04665856",
+        "nct04736173",
+        "nct04895722",
+        "nct04931654",
+        "nct04938817",
+        "nct04995523",
+        "nct05009069",
+        "nct05123482",
+        "nct05211895",
+        "nct05224141",
+        "nct05287113",
+        "nct05329766",
+        "nct05417321",
+        "nct05489211",
+        "nct05502237",
+        "nct05565378",
+        "nct05608291",
+        "nct05625399",
+        "nct05633667",
+        "nct05645692",
+        "nct05676931",
+        "nct05702229",
+        "nct05724563",
+        "nct05775159",
+        "nct05785767",
+        "nct05787613",
+        "nct05800015",
+        "nct05805501",
+        "nct05845814",
+        "nct05904886",
+        "nct05970497",
+        "nct06062420",
+        "nct06101134",
+        "nct06109779",
+        "nct06161441",
+        "nct06190951",
+        "nct06205836",
+        "nct06246916",
+        "nct06264180",
+        "nct06342037",
+        "nct06349980",
+        "nct06357533",
+        "nct06467357",
+        "nct06468358",
+        "nct06472076",
+        "nct06521567",
+        "nct06561386",
+        "nct06564844",
+        "nct06627647",
+        "nct06692738",
+        "nct06697197",
+        "nct06727565",
+        "nct06764875",
+        "nct06769698",
+        "nct06787612",
+        "nct06865339",
+        "nct06868277",
+        "nct06921785",
+        "nct06943820",
+        "nct06963905",
+        "nct06989112",
+        "nct06996782",
+        "nct07058012",
+        "nct07069712",
+        "nct07098338",
+        "nct07115043",
+        "nct07221253",
+        "nct07224022",
+        "nct07281768",
+        "nct07431281",
+        "nct07492680",
+        "nct07720284",
+        "relativity-047",
+        "relativity-098"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Long and colleagues studied antigen-independent receptor clustering, tonic signalling and specified CAR constructs. In that setting, CD28 increased and 4-1BB reduced exhaustion-related effects. Kawalekar and colleagues found different metabolic and memory features in defined human-cell CAR experiments. These are construct-and-assay findings, rather than a universal clinical ranking of every CD28 and 4-1BB product.",
+        "A 2026 lymphoma series found the CAR19 transgene beyond year five in five of eight tested long-term responders, with B-cell aplasia in three. This selected sample demonstrates possible long persistence, rather than its probability in every treated patient or proof of a required duration.",
+        "In the humanised CD19 CAR pilot, both B-cell recovery without subsequent relapse and relapse without preceding B-cell recovery were observed. Several patients received reinfusion or transplantation; these observations do not isolate outcomes without further treatment. Keep the product, disease, specimen, assay sensitivity, time and subsequent treatment with each persistence or functional-surrogate claim."
+      ],
+      "category": "Treatment jargon"
     }
   ]
 }

@@ -149,27 +149,8 @@ export const educationAccessEvidence: TermInput[] = [
     ],
     "tldr": "A trial search identifies studies to examine. The study team must separately check the relevant site, cohort and full eligibility requirements.",
     "summary": "NCI describes finding a study, discussing it with the team, informed consent and formal screening as distinct steps. A registry identifier helps distinguish studies, while the dated protocol and record describe the design and entry rules. Overall recruiting status can reflect an open facility elsewhere; it does not establish an available place in the relevant local cohort. A matching diagnosis or biomarker is only part of eligibility. Medical-history review and required tests can still exclude participation after an initial discussion.",
-    "notes": [
-      "Search with disease, treatment setting, intervention aliases, biomarker and location terms. Keep registry verification and update dates with the result; ask the team about the current protocol, site and cohort. A record or invitation to screen is not a promise of enrollment."
-    ],
-    "links": [
-      {
-        "label": "NCI: steps to find a clinical trial",
-        "url": "https://www.cancer.gov/research/participate/clinical-trials-search/steps"
-      },
-      {
-        "label": "NCI: what to expect during a clinical trial",
-        "url": "https://www.cancer.gov/research/participate/clinical-trials/what-to-expect"
-      },
-      {
-        "label": "ClinicalTrials.gov: protocol registration definitions",
-        "url": "https://clinicaltrials.gov/policy/protocol-definitions"
-      },
-      {
-        "label": "42 CFR 11.10: overall recruitment and individual-site status",
-        "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol1/pdf/CFR-2025-title42-vol1-sec11-10.pdf"
-      }
-    ],
+    "notes": ["Search with disease, treatment setting, intervention aliases, biomarker and location terms. Keep registry verification and update dates with the result; ask the team about the current protocol, site and cohort. A record or invitation to screen is not a promise of enrollment.","Estimated enrollment is a target total, while actual enrollment records people already enrolled. Neither is a count of places available now. Overall study recruitment, an individual facility’s status and availability in the relevant cohort or dose group require separate dated checks.","When a protocol randomizes participants, meeting its entry rules does not reserve the experimental arm. Assignment follows the protocol’s chance process rather than a choice by the participant or doctor. Screening, eligibility, enrollment, arm assignment and individual benefit are different steps; a plausible match or invitation to screen does not establish the later steps."],
+    "links": [{"label":"NCI: steps to find a clinical trial","url":"https://www.cancer.gov/research/participate/clinical-trials-search/steps"},{"label":"NCI: what to expect during a clinical trial","url":"https://www.cancer.gov/research/participate/clinical-trials/what-to-expect"},{"label":"ClinicalTrials.gov: protocol registration definitions","url":"https://clinicaltrials.gov/policy/protocol-definitions"},{"label":"42 CFR 11.10: overall recruitment and individual-site status","url":"https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol1/pdf/CFR-2025-title42-vol1-sec11-10.pdf"},{"label":"NCI: eligibility, randomization and clinical-trial comparisons","url":"https://www.cancer.gov/research/participate/clinical-trials/how-trials-work"}],
     "related": [
       "clinical-trial",
       "trial-registration",
@@ -179,7 +160,7 @@ export const educationAccessEvidence: TermInput[] = [
       "investigational-new-drug-application"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-09",
     "category": "Regulation & policy"
   }
 ];

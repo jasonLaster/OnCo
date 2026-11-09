@@ -198,7 +198,7 @@
       ],
       "tldr": "A trial search identifies studies to examine. The study team must separately check the relevant site, cohort and full eligibility requirements.",
       "summary": "NCI describes finding a study, discussing it with the team, informed consent and formal screening as distinct steps. A registry identifier helps distinguish studies, while the dated protocol and record describe the design and entry rules. Overall recruiting status can reflect an open facility elsewhere; it does not establish an available place in the relevant local cohort. A matching diagnosis or biomarker is only part of eligibility. Medical-history review and required tests can still exclude participation after an initial discussion.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "links": [
         {
           "label": "NCI: steps to find a clinical trial",
@@ -215,6 +215,10 @@
         {
           "label": "42 CFR 11.10: overall recruitment and individual-site status",
           "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol1/pdf/CFR-2025-title42-vol1-sec11-10.pdf"
+        },
+        {
+          "label": "NCI: eligibility, randomization and clinical-trial comparisons",
+          "url": "https://www.cancer.gov/research/participate/clinical-trials/how-trials-work"
         }
       ],
       "tags": [],
@@ -242,7 +246,9 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Search with disease, treatment setting, intervention aliases, biomarker and location terms. Keep registry verification and update dates with the result; ask the team about the current protocol, site and cohort. A record or invitation to screen is not a promise of enrollment."
+        "Search with disease, treatment setting, intervention aliases, biomarker and location terms. Keep registry verification and update dates with the result; ask the team about the current protocol, site and cohort. A record or invitation to screen is not a promise of enrollment.",
+        "Estimated enrollment is a target total, while actual enrollment records people already enrolled. Neither is a count of places available now. Overall study recruitment, an individual facility’s status and availability in the relevant cohort or dose group require separate dated checks.",
+        "When a protocol randomizes participants, meeting its entry rules does not reserve the experimental arm. Assignment follows the protocol’s chance process rather than a choice by the participant or doctor. Screening, eligibility, enrollment, arm assignment and individual benefit are different steps; a plausible match or invitation to screen does not establish the later steps."
       ],
       "category": "Regulation & policy"
     },
@@ -254,7 +260,7 @@
       "tldr": "A companion diagnostic supplies information needed for a corresponding medicine to be used safely and effectively. Its labeling defines the intended use of the result.",
       "summary": "FDA describes companion diagnostics as devices that supply essential information for a corresponding treatment. Their roles can include identifying likely benefit, increased risk of serious adverse effects or a specified monitoring need. The treatment label and diagnostic labeling retain the relevant disease, specimen, biomarker and decision rule. Some devices have documented group labeling for specified oncology therapies. Similar analyte names do not establish assay interchangeability, and a label-matched result does not guarantee individual benefit or complete clinical suitability.",
       "status": "standard-of-care",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "wikipedia": "https://en.wikipedia.org/wiki/Companion_diagnostic",
       "links": [
         {
@@ -276,6 +282,14 @@
         {
           "label": "FDA: labeling diagnostics for a group of oncology therapies",
           "url": "https://www.fda.gov/media/120340/download"
+        },
+        {
+          "label": "42 CFR 493.1256(f): acceptable controls before reporting patient results",
+          "url": "https://www.ecfr.gov/current/title-42/section-493.1256"
+        },
+        {
+          "label": "GovInfo: published 2025 control-procedure rule, independently read",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol5/pdf/CFR-2025-title42-vol5-sec493-1256.pdf"
         }
       ],
       "tags": [],
@@ -321,7 +335,9 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "An invalid, failed or inadequate test is not a valid negative biomarker result. The specimen and assay must meet the relevant acceptance criteria. U.S. CLIA control rules require applicable control results to be acceptable before patient results are reported. Whether to repeat a measurement or use another specimen depends on the actual test and laboratory criteria."
+      ],
       "principle": "Evaluate a specified diagnostic result within the corresponding device and treatment labeling.",
       "strengths": [
         "Connects a defined test use to treatment information",
@@ -340,7 +356,7 @@
       "aka": [],
       "tldr": "A companion diagnostic provides information required for a corresponding treatment to be used safely and effectively within its specified context. The result is one part of a treatment decision.",
       "summary": "The category concerns a device and a corresponding treatment use. FDA describes roles involving likely benefit, serious-adverse-effect risk or specified treatment monitoring. Check both the treatment and diagnostic labeling, including specimen, disease, biomarker and decision rule. A molecular report listing a drug is not by itself a companion-diagnostic authorization. Similar gene names do not establish assay interchangeability, and a positive result does not promise a response.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "wikipedia": "https://en.wikipedia.org/wiki/Companion_diagnostic",
       "links": [
         {
@@ -358,6 +374,14 @@
         {
           "label": "FDA: authorized companion diagnostic devices and intended uses",
           "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "42 CFR 493.1256(f): acceptable controls before reporting patient results",
+          "url": "https://www.ecfr.gov/current/title-42/section-493.1256"
+        },
+        {
+          "label": "GovInfo: published 2025 control-procedure rule, independently read",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol5/pdf/CFR-2025-title42-vol5-sec493-1256.pdf"
         }
       ],
       "tags": [],
@@ -383,7 +407,9 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "An invalid, failed or inadequate test is not a valid negative biomarker result. The specimen and assay must meet the relevant acceptance criteria. U.S. CLIA control rules require applicable control results to be acceptable before patient results are reported. Whether to repeat a measurement or use another specimen depends on the actual test and laboratory criteria."
+      ],
       "category": "Regulation & policy"
     },
     {
@@ -978,7 +1004,7 @@
       ],
       "tldr": "Expanded access permits qualifying treatment use of an investigational drug outside a clinical trial. Supply, physician responsibility and applicable regulatory and ethics requirements still need to be met.",
       "summary": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "wikipedia": "https://en.wikipedia.org/wiki/Expanded_access",
       "links": [
         {
@@ -1000,6 +1026,18 @@
         {
           "label": "FDA: expanded access information for institutional review boards",
           "url": "https://www.fda.gov/news-events/expanded-access/expanded-access-information-institutional-review-boards-irbs"
+        },
+        {
+          "label": "FDA: current Form 3926 instructions, including permission to reference another IND",
+          "url": "https://www.fda.gov/media/98627/download"
+        },
+        {
+          "label": "FDA: charging for investigational drugs under an IND, February 2024",
+          "url": "https://www.fda.gov/media/176308/download"
+        },
+        {
+          "label": "FDA: separate industry, physician, IRB and agency responsibilities",
+          "url": "https://www.fda.gov/news-events/expanded-access/expanded-access-information-industry"
         }
       ],
       "tags": [
@@ -1042,7 +1080,11 @@
       "dependsOn": [],
       "notes": [
         "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
-        "Emergency individual-patient use can receive prior FDA authorization by rapid communication, followed by a written submission within 15 working days. If there is insufficient time for prospective IRB review, the emergency use must be reported to the IRB within 5 working days. These are distinct events and units; no interval promises a treatment start date."
+        "Emergency individual-patient use can receive prior FDA authorization by rapid communication, followed by a written submission within 15 working days. If there is insufficient time for prospective IRB review, the emergency use must be reported to the IRB within 5 working days. These are distinct events and units; no interval promises a treatment start date.",
+        "A licensed physician acting as sponsor-investigator can use Form FDA 3926 for an individual-patient expanded-access IND. Form FDA 1571 remains an option. The streamlined individual-patient form is not a marketing application or a universal form for every access category.",
+        "When an application references another sponsor’s IND, a letter of authorization permits FDA to reference specified product information. That permission does not itself authorize treatment or guarantee drug supply. If such a letter is unavailable, the FDA review division can advise which other information may satisfy the applicable requirements.",
+        "For an unapproved investigational drug supplied under an IND, the IND sponsor needs separate prior written FDA authorization to charge for the drug. Recoverable costs and other conditions differ between clinical trials and expanded access. Treatment authorization does not itself authorize charging, and permission to recover drug costs does not decide insurer payment or the total cost of clinical care.",
+        "A reported FDA authorization rate needs its stated submitted-request denominator, period and request categories. It does not measure the fraction of everyone seeking the drug who obtains manufacturer supply, meets every requirement or actually receives treatment. An application authorization is not a personal probability of access or benefit."
       ],
       "category": "Regulation & policy"
     },

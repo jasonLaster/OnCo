@@ -25,7 +25,7 @@
     {
       "version": "proposal-access",
       "state": "implemented in this branch; validation and rendered-source checks passed; not merged",
-      "recordSnapshotSha256": "0555f66e4395302935bddaf83c3cb0bc424e32c7a2178a6c3f0b0e696715d61b"
+      "recordSnapshotSha256": "78526f213912906f2c28f73e14f579edd1df22c93756be4414a387775f37d5f6"
     },
     {
       "version": "proposal-biology",
@@ -51,10 +51,10 @@
     "navigationReviewed": 4,
     "navigationWithTeachingContent": 1,
     "semanticallyReviewed": 65,
-    "implementedCoverage": 52,
+    "implementedCoverage": 55,
     "mainCoverage": 0,
-    "unresolvedContentItems": 472,
-    "unresolvedSources": 481,
+    "unresolvedContentItems": 469,
+    "unresolvedSources": 478,
     "adjacentConcepts": 14,
     "unresolvedAdjacentConcepts": 3,
     "openSchemaGaps": 4,
@@ -802,7 +802,7 @@
         "status": "reviewed",
         "auditor": "Codex coverage audit; not expert sign-off",
         "checkedAt": "2026-11-08",
-        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The November 9 canonical-owner follow-up reads FDA forms/charging/industry guidance, the applicable published control rule and registry enrollment definition, plus NCI trial-method guidance. It adds the residual general distinctions without asserting a new cutoff, authorization rate, treatment probability or clinical eligibility determination.",
         "points": [
           {
             "id": "purpose",
@@ -897,11 +897,17 @@
           {
             "id": "invalid-result",
             "requirement": "Distinguish an invalid, inadequate or failed test from a valid negative result.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "companion-diagnostic-term",
+                "version": "proposal-access",
+                "field": "notes",
+                "fieldSha256": "96f3564c53521a1ed71aaf6d7b2599e576323a6f0b37edd2e3fef43a786b0a32",
+                "explanation": "Explicitly separates failed/inadequate/invalid results from a valid negative; uses verified control-procedure criteria rather than treating no result as marker absence."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -1563,7 +1569,7 @@
         "status": "reviewed",
         "auditor": "Codex coverage audit; not expert sign-off",
         "checkedAt": "2026-11-08",
-        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The November 9 canonical-owner follow-up reads FDA forms/charging/industry guidance, the applicable published control rule and registry enrollment definition, plus NCI trial-method guidance. It adds the residual general distinctions without asserting a new cutoff, authorization rate, treatment probability or clinical eligibility determination.",
         "points": [
           {
             "id": "purpose",
@@ -1604,7 +1610,7 @@
                 "recordId": "expanded-access",
                 "version": "proposal-access",
                 "field": "notes",
-                "fieldSha256": "abc9aae5598928d5ef988876af8bdeae29e2f7c07300c92682c5db2aaee8b866",
+                "fieldSha256": "6a5d4e749d76b0c9373470235dd840d32795c5c498a48c5c121bf57ec6001c52",
                 "explanation": "Distinguishes a new IND and an individual protocol under an existing IND, retains their different starting rules, and keeps calendar-day, working-day and delivery dependencies separate."
               }
             ],
@@ -1658,20 +1664,32 @@
           {
             "id": "access-paperwork-costs",
             "requirement": "Explain the roles of Form FDA 3926, permission to reference product information and route-specific authorization to charge for an investigational drug.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-access",
+                "field": "notes",
+                "fieldSha256": "6a5d4e749d76b0c9373470235dd840d32795c5c498a48c5c121bf57ec6001c52",
+                "explanation": "Separates the individual-patient form, permission to reference another IND, treatment authorization, charging authorization and payer/care costs."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "request-denominator",
             "requirement": "Separate FDA authorization of submitted expanded-access requests from manufacturer supply and actual patient receipt.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "expanded-access",
+                "version": "proposal-access",
+                "field": "notes",
+                "fieldSha256": "6a5d4e749d76b0c9373470235dd840d32795c5c498a48c5c121bf57ec6001c52",
+                "explanation": "Keeps a submitted-request authorization denominator separate from supplier agreement, practical access, actual receipt and individual benefit."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -1764,7 +1782,7 @@
         "status": "reviewed",
         "auditor": "Codex coverage audit; not expert sign-off",
         "checkedAt": "2026-11-08",
-        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "rationale": "Read the public general-teaching mechanism, interpretation and common-confusion sections; inspected candidate records and searched canonical names/aliases for missed owners. Clinical/legal source verification and corrections are tracked separately. The missing explanations were implemented in the access proposal and checked against official sources and actual component renders. Structured query gaps remain separately open in schema-gaps.json. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The November 9 canonical-owner follow-up reads FDA forms/charging/industry guidance, the applicable published control rule and registry enrollment definition, plus NCI trial-method guidance. It adds the residual general distinctions without asserting a new cutoff, authorization rate, treatment probability or clinical eligibility determination.",
         "points": [
           {
             "id": "identity-search",
@@ -1775,7 +1793,7 @@
                 "recordId": "trial-search-site-verification",
                 "version": "proposal-access",
                 "field": "notes",
-                "fieldSha256": "df119ba6d380046e1a61e42dca6dfcbdbc4249df7df09577025b9b441c6b6a04",
+                "fieldSha256": "df23f2d4359988c603819388408c9b396caae9411f96c950fd027fae3c892085",
                 "explanation": "The notes specify synonym-based disease/intervention/biomarker/location search and dated verification; the summary separately identifies the registry study key and protocol."
               },
               {
@@ -1850,20 +1868,32 @@
           {
             "id": "planned-enrollment",
             "requirement": "Separate planned enrollment from current open slots and local cohort availability.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "trial-search-site-verification",
+                "version": "proposal-access",
+                "field": "notes",
+                "fieldSha256": "df23f2d4359988c603819388408c9b396caae9411f96c950fd027fae3c892085",
+                "explanation": "Estimated and actual enrollment are defined separately from current places, overall/facility status and relevant cohort availability."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "randomization-benefit",
             "requirement": "Separate screening eligibility, randomized arm assignment and evidence of individual benefit.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "trial-search-site-verification",
+                "version": "proposal-access",
+                "field": "notes",
+                "fieldSha256": "df23f2d4359988c603819388408c9b396caae9411f96c950fd027fae3c892085",
+                "explanation": "Separates screening, entry criteria, enrollment, chance assignment and actual individual benefit; eligibility does not reserve the study arm."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [

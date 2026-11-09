@@ -9,12 +9,12 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 9 |
 | Teaching sources fully read (including one navigation shelf) | 65 |
-| Reviewed sources completely represented in drafts | 52 |
-| Reviewed sources retaining requirements | 13 |
+| Reviewed sources completely represented in drafts | 55 |
+| Reviewed sources retaining requirements | 10 |
 | Content sources unread | 459 |
 | Curriculum requirements | 271 |
-| Requirements with field evidence | 247 |
-| Curriculum requirements open | 24 |
+| Requirements with field evidence | 252 |
+| Curriculum requirements open | 19 |
 | New terms in draft #375 | 24 |
 | Existing owners updated in draft #375 | 69 |
 | Reviewed-source completion on pinned main | 0 |
@@ -32,10 +32,12 @@ The [CHK1 follow-up](chk1-follow-up/scope.json) supplements its existing owner w
 
 The earlier [cell-control checkpoint](cell-control-validation.md) closes five additional read sources and nine earlier TCE/TCR-mimic requirements, while retaining new source/scaffold/clinical-scope boundaries. Linked study cards are corrected at their owning records. The [source index](cell-control-record-sources.json), [identity/scopes](cell-control-primary/publication-identities.json), [rendered checks](cell-control-render-verification.json) and [retrieval measurement](cell-control-retrieval-verification.json) are retained.
 
-[Draft #376](https://github.com/judegomila/OnCo/pull/376) has now verified its reader/search/decomposition consumers locally. Its head is now `f5c50fd2732a6573bbd5d36d68a14cb7696fca8a`; legacy derivative identity, explicitly named dual cargo and ordinary-word links are also corrected. The recorded proposal head and unchanged optional-field snapshots have been refreshed; owner review and hosted preview remain pending. Global-layout limitations are retained there.
+[Draft #376](https://github.com/judegomila/OnCo/pull/376) has now verified its reader/search/decomposition consumers locally. Its head is now `95374f255e9dcaee8a63a9c50fe0d235e207a451`; legacy derivative identity, explicitly named dual cargo and ordinary-word links are also corrected. The recorded proposal head and unchanged optional-field snapshots have been refreshed; owner review and hosted preview remain pending. Global-layout limitations are retained there.
 
 The [payload reconciliation](payload-follow-up-reconciliation.json) refreshes draft #369 at `b5a3c341deb1f5cce51dcb3791b239898eea3647`: 39 owners (32 new, seven existing), 20 already-read curriculum requirements now evidenced and 20 additional screened discovery occurrences. Exact exatecan ownership, dosage hypotheses, corrected/retracted evidence and a registry source conflict are retained. No additional curriculum reading is claimed.
 
 Next work includes remaining payload comparison/chemical profiles, the existing exhaustion/persistence term, distinct esophageal 22C3 uses, residual requirements, unread curriculum/literature and semantic navigation review.
 
 The [9 November recovery](artifact-recovery-2026-11-09.json) restores the pinned baseline, 11 education responses and 39 older payload captures byte-exactly, and replaces lost visual-review images with 32 new matched SSR captures in persistent storage. Four newer Elicit response bodies and newer temporary-only primary captures remain unavailable. This changes custody status and the review-pack location, not content coverage.
+
+The [access completion](access-completion-2026-11-09/scope.json) closes five requirements at four existing owners without additional curriculum reading. All 11 authored notes were checked in the current rendered pages. Validate, restored-lock typecheck, four-file lint, 56 focused tests and the fresh 282-file/2,821-test suite pass with two existing skips. Dependencies were installed once outside Git from the unchanged lock and symlinked only into owned checkouts; no test floor or budget changed.

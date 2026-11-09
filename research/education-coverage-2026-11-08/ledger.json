@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "c4c79425f80cbded13f078508d2f2b48be6a29ee7302fff7bd9987029feb0781"
+      "recordSnapshotSha256": "58c069029790d578460496dd3b8fcaff8a2e47bb544dedfbadbb84245b3b0a7c"
     },
     {
       "version": "draft-376",
@@ -50,11 +50,11 @@
     "navigation": 14,
     "navigationReviewed": 4,
     "navigationWithTeachingContent": 1,
-    "semanticallyReviewed": 65,
-    "implementedCoverage": 63,
+    "semanticallyReviewed": 75,
+    "implementedCoverage": 74,
     "mainCoverage": 0,
-    "unresolvedContentItems": 461,
-    "unresolvedSources": 470,
+    "unresolvedContentItems": 450,
+    "unresolvedSources": 459,
     "adjacentConcepts": 18,
     "unresolvedAdjacentConcepts": 2,
     "openSchemaGaps": 4,
@@ -36762,8 +36762,99 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "563c1abb38610df225ebfebdc5180651f25109dd285a001a6d000d66061ec1f4",
+          "aa5e76b5946ffe04a45b67392aef8b00063b02e6d55ac586e94439dde700af38",
+          "8ba677c33d5e535140679ed568238afa496e5128e9de1d9ff150a3135d1a25aa",
+          "c3ba1b200c3ef6aec40b76763feae8fb055234079c28c412c8cf8cfe77593cd6",
+          "004665153258066af8d42269e3093fecc65520427fb447e1fbe40a7842fc0772",
+          "5c7a98f592a4dc15695b2d1626339c98ab66cecc91f0e4f8c8599a88739060f4",
+          "f8ee2f7e24f0b0ffce79c0bc203e9d8e221fa824affb0e22a5a3c365317470d1",
+          "6d88475dfc233e64d6cece1c21777011a368d5101731b6005609aba94640fc34",
+          "7b7b5eda76cf4313237ece557890ac06f5bac5e277f6de844aff9db0c7e4c784",
+          "279db1825eb4d45b14f8b7c6c68adba8268db248544f8ff7b4ec7027f4b83bfe",
+          "d18a90d1a8be88fb92001eb0af874b322102a713d79910bc0d0b0de4f8038503"
+        ],
+        "points": [
+          {
+            "id": "injury-method",
+            "requirement": "Distinguish thermal, chemical and electrical local ablation and the actual route of energy or substance delivery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4d2f9a65a24d49f2ad2c5913e0af2a92ee88b0b4fff9921bf94a0fecf1769635",
+                "explanation": "Names thermal, chemical and electrical ablation and actual delivery/access; the heading is not a universal treatment specification."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "coverage-not-sensor",
+            "requirement": "Separate applicator exposure, visible treatment zone, lethal tissue exposure and three-dimensional coverage, including margins and nearby structures.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4d2f9a65a24d49f2ad2c5913e0af2a92ee88b0b4fff9921bf94a0fecf1769635",
+                "explanation": "Separates applicator readings, visible zones, lethal exposure, margins and three-dimensional coverage."
+              },
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "54d8345409fe88889513a6c5e7d5651591bd21f98e636015c9f5282b30758d5a",
+                "explanation": "Records method, settings, watts/time/temperature, spatial assessment and imaging time without calling one reading proof of viability loss."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "model-boundary",
+            "requirement": "Retain freeze/thaw and flow-dependent mechanisms, the experimental tissue/model behind a numerical boundary and the lack of a universal human margin or size ceiling.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cryoablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "409bd5a1d844df58fad4b3a44a48e825789f85bfa45b547b95104297186e6a51",
+                "explanation": "Freeze/thaw and normal-swine-kidney study boundaries, vessel-related variation and the extrapolated renal margin remain explicit."
+              },
+              {
+                "recordId": "microwave-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "423560981128df8b239b256eca86c3414baf7199226c6da8390430f59314fcdb",
+                "explanation": "Perfused ex-vivo comparison and flow/device limits preclude a universal clinical winner or immunity to heat loss."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "follow-up-and-reach",
+            "requirement": "Separate procedural completion, initial efficacy, later local progression, complications, distant disease and immune benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4d2f9a65a24d49f2ad2c5913e0af2a92ee88b0b4fff9921bf94a0fecf1769635",
+                "explanation": "Procedural completion, defined follow-up efficacy, subsequent local progression, complications and systemic immune effects are separate."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36837,8 +36928,98 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "64d6fdf310ff8d017e1e18ecd0fb43095a01a2988cb52947747b79d6684d4ed2",
+          "cfec5b6da2bcb78a94861e282808e77986215b76ea71081a554e155af6482cdb",
+          "f7543eeba69ac8f473569760418222ebd0aa09064a1a6ab7d6a97c0f25943d33",
+          "847b011bbdbeb2c920bc521a57f3aa90a960488eb538fd5bba329809cc563d0b",
+          "37c55a1e19095bcfc55c396a9078bf3f952798861942a606a146fb7913c7193c",
+          "fb3023f3be1a41da61bbdf9a3cbf4e62fd9c32d15b32e295d8f948b3efcc6cf7",
+          "ce08bbe61dd65d1e573d72bf223f23c94dc8e40558364c72ee6233506192e793",
+          "8fe2a80f57c10f0f149c62c7d4b983eebd8fb855377b42ea7be5cd003c1b7f79",
+          "db321116c7eeecd9530f73ce7cf6bb082a051768be7b57401951fc6609d3319d",
+          "5401ac9b8a0eed746e26c7c14f741bfde5dedb5dde57026628cfa60fe94fe09e",
+          "a674d49cc0831f61eb8d851843441e549b49a5b5af8568f2de87d467322e03cc"
+        ],
+        "points": [
+          {
+            "id": "separate-jobs",
+            "requirement": "Separate breast-tissue removal, regional nodal sampling and reconstruction, with their actual extent, timing and specimens.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lumpectomy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "b6e12bef3a4fd1407efe769e4b8e9303553fc0d03a57b1813d3aa817f0c4fb76",
+                "explanation": "Breast excision, nodes and reconstruction have separate roles and specimens."
+              },
+              {
+                "recordId": "mastectomy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ce87bf06f9b2bbde3866aec7b11dcdaf575051efbdc8d409e5190f8676efd5c7",
+                "explanation": "Exact removed structures, nodes, reconstructive method and timing remain distinct."
+              },
+              {
+                "recordId": "breast-reconstruction",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "a82bdd9d091b86c431da14957c920395e34f906be9d9ba6016e7b46f346e0c54",
+                "explanation": "The winning canonical contribution retains the three jobs and does not replace cancer treatment."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "sampled-findings",
+            "requirement": "Keep operative descriptions and sampled pathology findings distinct; negative local margins or sampled nodes do not establish whole-body absence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sentinel-node",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "1aaed2670ce71ccf158529c691c74c30fd7fe23ccede7c9da1b5aef2c6ac58e2",
+                "explanation": "Mapping/removal and sampled pathology do not measure every unsampled node."
+              },
+              {
+                "recordId": "resection-margins",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "8d1a9fb561418fc161e84e7d058c9cb52f2241e616f804f1041013214e49ab85",
+                "explanation": "Operative description, assessed boundary and residual classification differ; local results do not prove whole-body absence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "complete-plan",
+            "requirement": "Compare complete plans with relevant harms and preferences; reconstruction and greater removal do not substitute automatically for radiation or systemic treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lumpectomy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "b6e12bef3a4fd1407efe769e4b8e9303553fc0d03a57b1813d3aa817f0c4fb76",
+                "explanation": "Complete plans, recovery and harms are compared; removal does not establish universally better survival."
+              },
+              {
+                "recordId": "mastectomy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ce87bf06f9b2bbde3866aec7b11dcdaf575051efbdc8d409e5190f8676efd5c7",
+                "explanation": "Reconstruction and greater removal do not automatically replace radiation or systemic therapy."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36916,8 +37097,99 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "004e98ac90286b15e8d70388400cb2e161a1e7c6b22a29b9109f0468ee440378",
+          "9c6d25d72008f2dc39f48225a91b5f6af17513b4d0ea51c9f468530a283b1d02",
+          "48d645c0729201644941c240e83150611846b0a4fea76e8e7bef0db934526919",
+          "d15f3e9cb029a590ac130813a1a56497043af12150a27e7a3f99011d78654359",
+          "63d92c27eab3d9abf36c382a5259e86ce0cfd91008e1f10ba0e953a96dc06d10",
+          "c6818f60d8d3219903455b8be10110ec878b6541a693788738b7eb307d890995",
+          "fe2c6cb8da5da49e1aa3b06b83e5da273dbdf708725b6a3e6047d0cdc009ae8b",
+          "7d0e08584a0ea9183cac0df849e73c24f3f841cb735733fb2a0a576afda1fde5",
+          "b51c4bf38c84de3de217c18b06c96cc6dccb3fd4286bfc9fb18580fd0e0a7d82",
+          "a4aade19928ff277cf7b19902318e4119b929755da1af51b9d4d08740604a57b",
+          "c8724a580b2f3aa2f46c179338583a1d6d4b89f198da1f07cc218c486c2adc46"
+        ],
+        "points": [
+          {
+            "id": "further-operation",
+            "requirement": "Distinguish re-excision, completion mastectomy and completion axillary dissection; pathology triggers review without selecting one operation universally.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "completion-surgery",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "30aec1a0b29db40c0767c652d509a5e3cba5b92796b377f983cba5d9d55315c3",
+                "explanation": "Re-excision, completion mastectomy and axillary dissection remove different tissues; pathology does not universally select one operation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "surgery-first-trials",
+            "requirement": "Retain the surgery-first Z0011 and AMAROS populations, comparisons, endpoint/time and other treatment; radiation replacement is not no treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "acosog-z0011",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4a0acbf1d92aee6f089206ac68b1c3f23ecfb82a1ba69bb57315b14834fffb56",
+                "explanation": "Surgery-first population, planned lumpectomy/radiation/systemic therapy, ten-year endpoint and non-inferiority margin remain."
+              },
+              {
+                "recordId": "amaros",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "eb09ad6b4bfd19c2c9e4d34acbe4c0890c0d0efdad53aa03f103e98b46d475f9",
+                "explanation": "Surgery versus radiation is not surgery versus no treatment; versions, recurrence and harms remain separate."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "post-neoadjuvant-setting",
+            "requirement": "Keep residual node-positive disease after neoadjuvant treatment distinct from surgery-first evidence and the actual A011202 registry arms/status.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "alliance-a011202",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "8eea4b766e453eafff1528c03c3b91c525326f5340a7463bdadc23701c091f39",
+                "explanation": "Residual positive-node population, both radiation-containing arms, size rule and captured active-not-recruiting state remain separate from surgery-first evidence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "finding-versus-benefit",
+            "requirement": "Finding additional involved nodes, preventing recurrence, lymphedema and local versus systemic effects answer different questions; re-excision is not recurrence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "amaros",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "eb09ad6b4bfd19c2c9e4d34acbe4c0890c0d0efdad53aa03f103e98b46d475f9",
+                "explanation": "Finding additional nodes and recurrence prevention are different observations; lymphoedema and versioned endpoints are retained."
+              },
+              {
+                "recordId": "completion-surgery",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "30aec1a0b29db40c0767c652d509a5e3cba5b92796b377f983cba5d9d55315c3",
+                "explanation": "Further surgery after initial pathology is not itself recurrence or treatment of whole-body disease."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36986,8 +37258,105 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "508f696962eaa4c632be808ff36a8c85ccfbb3131bbfc0d63bf18879a6f57389",
+          "54ae0a520763dcf5da765287f8f86785678efb4549a36ddf74f45360fc5dcba5",
+          "7f01493277c2d78ed1951aad320b74ec8e947642f9b831d22fc5bfa54c21e8b5",
+          "2308cfb032c5ea4dc37423421a093af7f7521e7a9cc5cfbb0cba0cc3efa10001",
+          "5dcc9470ca36b15fb0cc019f68af13e1ffa9c2a02c79dd77bf123dbf9085f618",
+          "07b10afd4ade75e65b13a8b44f7b9dff4e62d8356317691884fa8e778bc1443e",
+          "3f4a89057d3b69376798c1562baf19b0652ca91c4646330afc67cbdc798b91a6",
+          "dd2d72dbeb41e92e8d7f379619448e95f05188e1da1833cecbdb33b2712b8273",
+          "64704ebb15bd17f4da7061c7e54ab13343d802eec9d0da54f78864ad078bcb51",
+          "c7473d32b3b9bad5318c141da5283fa1ad02a4c1dd5c9209068f537ae9d133ec"
+        ],
+        "points": [
+          {
+            "id": "energy-comparison",
+            "requirement": "Compare heat extraction, resistive heating and electromagnetic heating using the same coverage question, without inferring a universal clinical winner.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cryoablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "409bd5a1d844df58fad4b3a44a48e825789f85bfa45b547b95104297186e6a51",
+                "explanation": "Heat extraction and freeze/thaw mechanisms are stated."
+              },
+              {
+                "recordId": "radiofrequency-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "84a10c766cff01f4e5a61856b02ebfb6a29499f502e66f00cbb6a3286ec88877",
+                "explanation": "Resistive heating and conduction are distinguished."
+              },
+              {
+                "recordId": "microwave-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "423560981128df8b239b256eca86c3414baf7199226c6da8390430f59314fcdb",
+                "explanation": "Oscillating field/polar molecules are distinguished from resistive heating without claiming clinical superiority."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "frozen-boundary",
+            "requirement": "Distinguish a visible frozen edge, probe temperature and lethal exposure; retain the normal-swine-kidney boundary and its extrapolation limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cryoablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "409bd5a1d844df58fad4b3a44a48e825789f85bfa45b547b95104297186e6a51",
+                "explanation": "Visible ice and lethal exposure differ; six test swine and the non-universal extrapolation remain named."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "flow-context",
+            "requirement": "Retain the perfused ex-vivo device comparison, measured outputs and flow effects on both RF and microwave treatment; no immunity to heat loss is inferred.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radiofrequency-ablation",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "9a02acbf5e22460c4fac51dc4647f1a3126aa3ab392dc0b42339ae583a2f63fb",
+                "explanation": "The calf-liver experiment and its volume/mass/density-dependent ordering are retained."
+              },
+              {
+                "recordId": "microwave-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "423560981128df8b239b256eca86c3414baf7199226c6da8390430f59314fcdb",
+                "explanation": "Flow affected both microwave and RF measurements; clinical superiority is not inferred."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "coverage-and-outcome",
+            "requirement": "Separate positioning and central readings from edge coverage, validated follow-up, normal-tissue injury and distant outcomes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4d2f9a65a24d49f2ad2c5913e0af2a92ee88b0b4fff9921bf94a0fecf1769635",
+                "explanation": "Central readings, spatial edge coverage, defined follow-up, normal tissue and distant outcomes have different evidence needs."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37063,8 +37432,100 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "531f671600580515a3cdffaf5991f842e7515bc3d16fa578e7e353ae60b454c8",
+          "2e493dc94beea93438b00a72eaf73adef79de25a699adfec95b0babbee7f66e9",
+          "17699315e057fe619987f37de505451452b31fc3257e9ce10a79275c6cb57e53",
+          "df95487d120a134f412b8c949184dbe0d71c2d413fa6bc372cc95d8dba1db6c7",
+          "87d8b7b2349e449ad83edfc4b653bcce14f63dac3f5fa3a3fc122a41e17ee7e8",
+          "48a57c4112ce69f3ece5da3401c65254424ac68060c5f3199ff56c2cfbd35c86",
+          "a558d6d32b0c363621a3569c9d04673115c58134098090a2760658f13a9273a8",
+          "5b5697b8d5ba050a39b256671a5c21cba7efd14fa6e6c9991e6f49d2442a280d",
+          "8d2789f3face972d6cc86258cf285df43fd82fb81e5adf0460c3c8a7a455ade9",
+          "47fc505407f5d472d41afbef0942997c948ec91f2f6ae6da292d3647b46eae1d",
+          "ea482da762706c3cfe72dfa1c5ba92c57a8e40f3588627774ed2bb730d2fa565"
+        ],
+        "points": [
+          {
+            "id": "schedule-fields",
+            "requirement": "Define larger fractions relative to a stated comparator; keep total dose, fraction count, spacing, overall duration, boost and treatment volume.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "A stated comparator, fraction size, total dose, count, spacing, duration, boost and volume are retained."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "physical-versus-biological",
+            "requirement": "Physical-dose arithmetic does not establish biological equivalence; repair, tissue and timing matter.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "Equal-fraction arithmetic is explicit and separate from repair/tissue/timing-dependent biological effect."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "model-parameters",
+            "requirement": "Keep alpha/beta as a model parameter with tissue/endpoint and uncertainty; conventional values and the START estimates are not universal tissue constants.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "Alpha/beta has units, model assumptions, direction of fraction sensitivity and endpoint-specific START uncertainty; conventions are not universal constants."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "tested-regimens",
+            "requirement": "Retain exact START and FAST-Forward populations, schedules, endpoints, follow-up and adverse effects; neither same visit count nor a null test establishes arbitrary equivalence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "START-B and FAST-Forward populations, exact regimens, time, endpoint and harms retain their scope and do not validate arbitrary visit-count equivalence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "delivery-and-immune-limits",
+            "requirement": "Distinguish hypofractionation, acceleration and stereotactic delivery; trial fractionation does not validate an immune-optimal schedule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "Acceleration, boost and stereotactic delivery differ; trial fractionation is not an immune-optimal schedule."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37141,8 +37602,92 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "0b122c35744af2f74d6f09d839b00bb345bd7421d83b758264bd6325d5197f3b",
+          "0c57fc86e4237225d9aa78104006f3a526c3b593a6b5a19b41a0d7a776a11f9a",
+          "338915351bb1083873ccbd37732beb2db4d278308f84fe109c3eb0d8797538b5",
+          "a0b2904b18ae1377820675049f16d9b80be4a4d22adff0361886cc6795557ec4",
+          "2015388bcf7dfdac85daaa7c5a1b5c1f448857157adaa98f6b1d4653559b5732",
+          "3a36303d45226ea059b9f95169a2958f4ad52057d5d0f25599d66b67466e84e5",
+          "a6650f27f2de17c0f4f003f245c0af6104db2a9f1acaf03d68ad19692bd44811",
+          "5dfc208836c690252daca7469663ca886249e43ca15128683300bb6aaba40683",
+          "419e99ac76ebf3819602a85f20190edc7f19c7b0df3d4cc0d6d9fa98e2baafc4",
+          "e45792b965bc4ddede09bb8bcd8cd038114dd51658c734ea825bc4904cbb7d2f",
+          "30b98cd4e61b8de15e841a53bd1decb9554247686519b2d780a78efb39edafc4"
+        ],
+        "points": [
+          {
+            "id": "physics-and-response",
+            "requirement": "Separate ionizing energy delivery, direct/indirect damage, repair and delayed loss of reproductive survival; exposure is not a count of immediately dead cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radiotherapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bce9300ef376207958105288eaae157b777e0262ce42c33fe79683ed263ce70a",
+                "explanation": "Direct/indirect damage, repair and delayed loss of reproductive survival are separate from physical exposure."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "geometry-and-normal-tissue",
+            "requirement": "Keep visible or at-risk target volumes, beam paths, positioning/motion, organ constraints and overlapping prior exposure; precision does not eliminate normal-tissue dose.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radiotherapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bce9300ef376207958105288eaae157b777e0262ce42c33fe79683ed263ce70a",
+                "explanation": "Targets can include microscopic risk; motion, geometry, organs and prior exposure remain relevant."
+              },
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Dose falloff and positioning uncertainty do not make normal tissue unexposed."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "units-and-schedule",
+            "requirement": "Define gray as energy per mass and retain total dose, fraction size, intervals and volume without inferring biological effect from one physical quantity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radiotherapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bce9300ef376207958105288eaae157b777e0262ce42c33fe79683ed263ce70a",
+                "explanation": "Gray is one joule per kilogram; dose, fraction, timing and volume do not alone prove biological equivalence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "goals-and-outcomes",
+            "requirement": "Separate curative/local-regional goals, selected-site control, symptom relief and distant/systemic outcomes; targets can include microscopic-risk regions after surgery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radiotherapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bce9300ef376207958105288eaae157b777e0262ce42c33fe79683ed263ce70a",
+                "explanation": "Local/regional control, palliation, distant disease and survival are different outcomes; postoperative microscopic-risk regions can be targets."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37219,8 +37764,106 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "d31c391f107acd5f7a9702946a367a14dfbd75c51fe0b427fc6560e8bb693834",
+          "a298febeebc28fdd6587b063354a07502917398503f60021096089fa38f91c85",
+          "d81c342e18ea7a0a17ff8701b3af7905617cc26ad9671188a79d4d929765f31b",
+          "48666de443de4e21f4acb955369f83bb7b299713ddeb6a061cf621ac235dd5c4",
+          "44542720160464c8505c4820375cbd9521f5d5e8c57e9944b16b0f494ee0df11",
+          "c0057eb510e166132c90cab529208efc7948a9104729458355670ce38eb3307e",
+          "e1380db0d23cb66359e7f742d836af3324ec1b5d2fde9aae08a1c9ccc79bd391",
+          "6ee900a14f5e49e137e726d8ca89365d8c6476ffe59152ec8908884ba3fc226b",
+          "b282bcdb5b70a6e8d8aceb847f953be731599462059603178f55cebe25e7dd7d",
+          "6d8a8bf661c99c68c8165a8a7b893f459f7e09da4ebea32f2d39b8961fb0551a",
+          "d3cc88781457a319750ad7aa96bb0036eb4e58938ecd0a3514a3c65531afda27"
+        ],
+        "points": [
+          {
+            "id": "fields-and-sampling",
+            "requirement": "Define regional nodal fields, pretreatment stage, ypN0/ypN+ and the nodes actually examined; ypN0 alone is not complete breast-and-node response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "regional-nodal-irradiation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "2968e15778e0de0e5a6b0b0af2778a34f168afacff698b62f8a847ae378ba977",
+                "explanation": "Axillary/supraclavicular/internal mammary fields, sampled post-treatment nodes and isolated-cell modifiers are retained."
+              },
+              {
+                "recordId": "lymph-node-status",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "d57572b1e680116918c2323c4f1f6ee4a1a184b32bbcc975938272eb7d5aab49",
+                "explanation": "Clinical and pathological stage definitions and timing differ; nodal response is not complete breast/body response."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "b51-scope",
+            "requirement": "Keep B-51 biopsy-proven cT1-3 N1 M0 to ypN0 population, analyzed denominator, primary endpoint/follow-up and uncertainty; nonsignificance is not zero effect or universal safe omission.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nsabp-b51",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9ef6f0e40b13b3decd6f61b939770dd27ea1099254e060692b5230170bfcbf73",
+                "explanation": "Biopsy-proven cT1-3N1M0 to ypN0, 1,556 primary-analysis denominator, endpoint, 59.5-month follow-up and uncertainty are retained."
+              },
+              {
+                "recordId": "nsabp-b51",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "d064151790fd3f205a643300c272f79347fd5663f5a3e4a8227ae9cea6aecafb",
+                "explanation": "Time-driven event analysis and allowed ypN0i+ category prevent an absolute-cellular-absence interpretation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "surgery-dependent-comparison",
+            "requirement": "Retain whole-breast radiation in both lumpectomy arms and chest-wall plus nodal radiation versus none after mastectomy; the intervention contrast differs.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nsabp-b51",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9ef6f0e40b13b3decd6f61b939770dd27ea1099254e060692b5230170bfcbf73",
+                "explanation": "Both lumpectomy arms received whole-breast radiation; mastectomy contrast included chest-wall and regional fields versus none."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "residual-disease-and-harms",
+            "requirement": "Keep the residual-node-positive A011202 question, both arms’ radiation and current registry state separate; harms and omission decisions remain setting-specific.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "alliance-a011202",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "8eea4b766e453eafff1528c03c3b91c525326f5340a7463bdadc23701c091f39",
+                "explanation": "Residual positivity and both radiation-containing strategies remain scoped to the captured registry."
+              },
+              {
+                "recordId": "regional-nodal-irradiation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "2968e15778e0de0e5a6b0b0af2778a34f168afacff698b62f8a847ae378ba977",
+                "explanation": "Organ exposure, lymphoedema and setting-specific omission decisions remain part of interpretation."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37294,8 +37937,106 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "b25e4a202281cb7e118018aba34358115daf7a00e5b5e367d6225ccab27cfeb1",
+          "9b177a5186fc9b7c0ca022347c20f8d62208a21bfe1d6ed89f275b69682f3ae1",
+          "49bb143ddcd0eaac79146ee6cbbb36ae347f643a7d88aef016014f313f898c44",
+          "9d7d4e317317a0c44cf5f1244a323fddd6954816879505c004defc893c7431a3",
+          "8909a095cde17569509be78147931e87e0b3909ac475bed543ee2bd096b56987",
+          "55397f66d87984bb842729e91edb57349408d36a45a86a89efa6088171b50cf4",
+          "400cce4805553973b13d5b8d2c189781ad9a0d561cecfac70fa3c9d2c4d6f655",
+          "219e1a01824ee1db15dd6e549d1356dd845920630d171598931d7d2fd8807135",
+          "ed4854bc096b3971aec8f1defa2d057ff99c5d50d9bdb2d6e633717c9afc128c",
+          "c9af9453829cbaf23f1f39d42bc7891e8264f2dbc4d170406668cb8c5ad4744b",
+          "e5f35f4c762cfd9ba5aa18ed1ffec9093782398bd9d7f418712ecf1629fff21e"
+        ],
+        "points": [
+          {
+            "id": "comparator-definition",
+            "requirement": "Specify the conventional comparator and distinguish stereotactic localization/delivery from fractionation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "A conventional schedule must be specified; fractionation is distinct from stereotactic delivery."
+              },
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Stereotactic localisation and verification remain defining delivery questions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "shared-tools",
+            "requirement": "Modern non-stereotactic radiation can also use imaging, conformal beams and motion assessment; these tools do not uniquely identify SBRT.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Modern non-stereotactic care can also use imaging, conformal beams and motion assessment."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "schedule-and-model",
+            "requirement": "A few visits or a BED calculation does not establish stereotactic delivery; keep the exact tested FAST-Forward breast/chest-wall schedules and limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "A visit count or BED calculation does not document actual delivery; BED statement is a teaching inference from the model/delivery distinction."
+              },
+              {
+                "recordId": "hypofractionation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "903af574982884249fbfbb7ebab9486369d39dec043dfd5f457189a2bb4e98cb",
+                "explanation": "The tested FAST-Forward breast/chest-wall schedules retain their own population and five-year limits."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "coverage-and-harms",
+            "requirement": "Both delivery approaches require actual coverage, normal-tissue dose, verification and follow-up evidence; neither label establishes a winner or systemic immune benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Actual coverage, verification and normal tissues need evidence in either delivery approach."
+              },
+              {
+                "recordId": "systemic-vs-local-therapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4a421e1fa4cf10e9dbfa856ad6d3ff88b0cd0b0f0f6f7fc5d08592a973607ea4",
+                "explanation": "Delivery labels and local control do not prove a winner or systemic survival benefit."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37372,8 +38113,85 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "a2da77a8baea3e6d6e91e03a6c5583a49676d9347e715515f405e08d8f8813f0",
+          "27ce2d5eb96dc7e2d8d8f8aa7bd41263d49df259135fe8b8e301c5d28291bdba",
+          "a5cc5e805002fe1a76876382d79888372e3399b213c8666ec3537ce81d0e4d66",
+          "3e586c0c9f9663eb3289e3874fcb34ae826b951295f9bcc62e0b624d7dce76f4",
+          "c2e1f6e32f2cd2107126aee14387cb0e028b7756e6be7c5e9310619db289bacc",
+          "e6d4292e531f91964350f1e931a3f75b542faff0c53ec23a69f4ffdc1620cecd",
+          "0b8afcf077214e66fa4ea33e982bf53f83405904e8ac1635c60dda1c1a40b6f8",
+          "0568443907bd963ce28d15f51680250183ac240bb09189cf0c0d99a4ad531058",
+          "5e369684404cb5a83ac4d21a7e1a772f5a8c66f4263a66dcc263d001e1cb030c",
+          "9fa5d5e21b5e714d5d41a72240fb9d4a46f413c4d826a757c0c64f6af66c7169",
+          "1e8b1f4a6581ac794a759506f171a6e0e0812966ff6f3058be66c9e809ef8892"
+        ],
+        "points": [
+          {
+            "id": "delivery-not-count",
+            "requirement": "Define stereotactic body delivery outside the brain through localization, imaging, positioning, high dose per fraction and verification rather than visit count alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Body localisation, planning, high dose per fraction, image guidance and verification identify delivery; visit count does not."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "planning-and-uncertainty",
+            "requirement": "Retain geometry, motion, dose falloff, prior exposure and organ-specific constraints; no universal size, dose or safe-distance threshold is inferred.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Motion, falloff, prior exposure, positioning and organ constraints remain; no universal size or safe-distance cutoff."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "clinical-setting",
+            "requirement": "Keep early peripheral inoperable lung study evidence and toxicity attached to that population rather than extending it to every organ or central target.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "The 2010 prospective evidence is scoped to peripheral medically inoperable early lung disease with toxicity, rather than all organs and central targets."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "local-versus-systemic",
+            "requirement": "Separate planned/delivered exposure, treated-site control, distant progression, survival and an unproven immune-priming schedule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Verified exposure, local response, distant outcomes, survival, palliation and immune benefit remain separate."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -37448,8 +38266,92 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general teaching section, worked example, image explanation and source-scope qualification in the pinned public concept. Generated routing metadata adds no separate teaching. Canonical-owner matching and independently verified supplementation remain open; source figures are not certified merely by reading. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
+        "sectionHashes": [
+          "e09fa5bdb38be93ddea596b8b95bc9ef564a73c904a02ddf446ef8ac2db3f7bd",
+          "837a41b114def4e9381232e1a5e4ec69b31e15043c053895f58fdebe4f9b22a0",
+          "08a7f1fc97d436e7a43fa6fe394527ec67da5e5d1b26d6bea6ae8ccda95831a4",
+          "eaf3d17df55603851671e5bd12d6f1131a050f3710b5f55c4ebc712140c16773",
+          "d091887ae93b9eaecba8ff09ba8c9832f7ed66b170cd16ba00757535d6acf516",
+          "1cdec7e12457b43839f087462700bcb68c53d2d4dd8178ce752802ecde9aef1c",
+          "464bc88658e4edd0f1aceccab69a62a055e214b06adf6ad5fc09471d41b3c57e",
+          "980ac0033b531d5600ab2576cb1384f5726a42afc0d2a45781775c24b81be447",
+          "e029515a1ffe70c82725b9c76c68869b256fbb53149a6a3e5273091e170039fa",
+          "3ff1689307e32d6c19054b209cd414ca11e54696ac8a3e4a3a03b7de6514ad3c",
+          "07149a176b84879264357bad310f87b62663f6020ee39483d90aa9e009f191e7"
+        ],
+        "points": [
+          {
+            "id": "pair-not-identity",
+            "requirement": "Define a supported diagnostic-to-treatment relationship; sharing a target does not mean identical molecules, isotope, chelator, mass, distribution or a validated pair.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "theranostics",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "1f6f0d8d1472436b571e6e116a0b1c1fe768e16eac5540ea291b1f609c3bdcda",
+                "explanation": "Shared target does not establish identical carrier/chelator/isotope/mass/distribution or validate a pair."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "signal-exposure-outcome",
+            "requirement": "Separate tracer uptake/sensitivity/heterogeneity, administered activity, retention, absorbed dose, normal-organ exposure and clinical benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "theranostics",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "1f6f0d8d1472436b571e6e116a0b1c1fe768e16eac5540ea291b1f609c3bdcda",
+                "explanation": "Tracer measurement, small/heterogeneous lesions, complete coverage, absorbed dose, safety and benefit are separate."
+              },
+              {
+                "recordId": "radioligand-dosimetry",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "35d3d6d03edf85ee69626082b1114f0ee56d52dbd8f3f4717409c4792c9e7f03",
+                "explanation": "Time-activity measurements, retention and absorbed dose differ from an early uptake snapshot or administered activity."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "product-specific-bridge",
+            "requirement": "Keep the exact PSMA diagnostic/therapeutic products and dated disease/regimen/approval context; no cross-cancer indication or personal eligibility is inferred.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "theranostics",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "1f6f0d8d1472436b571e6e116a0b1c1fe768e16eac5540ea291b1f609c3bdcda",
+                "explanation": "Exact therapeutic and diagnostic PSMA products and July 2026 FDA disease/regimen context are a dated example rather than cross-cancer eligibility."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "dosimetry-scope",
+            "requirement": "Separate product-specific absorbed-dose evidence from mandatory serial individual dosimetry; preserve the 2023 guideline’s then-labeled setting and uncertainty about adaptation benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "theranostics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "35c8ab6c5208c5d79c5098f4065ad0e823d95e047335bb9e2aa4d4c141c70112",
+                "explanation": "The 2023 guideline then-approved setting, fixed activities, non-mandatory individual dosimetry and uncertainty about adaptation benefit remain scoped."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -43536,8 +44438,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read every general section. This nominal navigation shelf adds planning boundaries and scoped trial comparisons, so it must be audited as teaching content. Canonical owner/primary-source matching remains open; no displayed figure is newly certified.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general section. This nominal navigation shelf adds planning boundaries and scoped trial comparisons, so it must be audited as teaching content. Canonical owner/primary-source matching remains open; no displayed figure is newly certified. Canonical contributing owners and resolved primary/official sources now support every recorded requirement, with model, clinical, timing and measurement limits. Actual rendered reader bodies were checked, separately from field hashes. This is draft representation, not expert sign-off or main coverage.",
         "sectionHashes": [
           "088312860d0ae6cd4cc55defd57d015454fab27213e17870662024f9f30e14dc",
           "5d513ebfe8b4b7af1463cd55e80447462cbd47ec27170f3deb7ded212c89e5d7",
@@ -43550,56 +44452,155 @@
           {
             "id": "planning",
             "requirement": "Retain modality-specific access, target-zone/margin, dose/motion/retention and normal-tissue planning constraints rather than inferring suitability from a technology name.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "thermal-ablation",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4d2f9a65a24d49f2ad2c5913e0af2a92ee88b0b4fff9921bf94a0fecf1769635",
+                "explanation": "Method-specific access, zones/margins and nearby structures matter."
+              },
+              {
+                "recordId": "sbrt",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6fe6182bb8ad54ca25c49b0f1bc4c4f4c89721fcc8d6d116c2d1d67facebb89a",
+                "explanation": "Dose geometry, motion, verification and organs matter."
+              },
+              {
+                "recordId": "radioligand-dosimetry",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "35d3d6d03edf85ee69626082b1114f0ee56d52dbd8f3f4717409c4792c9e7f03",
+                "explanation": "Retention and normal-tissue absorbed dose require product-specific evidence."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "study-context",
             "requirement": "Keep oligoresidual, oligoprogressive, limited metastatic and locoregional study settings, disease populations, prior treatment and ablation versus SBRT distinct.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "systemic-vs-local-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cf44943fcd721e59aa590be9d26631e391b0f01342e7ece39df81968d10d8005",
+                "explanation": "BOOSTER, CURB, NRG-BR002 and PACIFIC settings/contrasts differ."
+              },
+              {
+                "recordId": "paper-booster-ablation-immunotherapy-2025",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "3279b51557da8f7924996caf0f6086eb2e26558e9366c99816348b926efa60eb",
+                "explanation": "Oligoresidual lung eligibility and lung-only eligible-lesion treatment remain scoped."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "outcome-scope",
             "requirement": "Distinguish treated-site response, distant disease control, added progression/survival benefit and symptom relief; a null added-outcome result is endpoint- and comparison-specific.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "systemic-vs-local-therapy",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4a421e1fa4cf10e9dbfa856ad6d3ff88b0cd0b0f0f6f7fc5d08592a973607ea4",
+                "explanation": "Treated-site control, distant disease, progression, survival and palliation need different evidence."
+              },
+              {
+                "recordId": "paper-nrg-br002-jco-2026",
+                "version": "proposal-therapeutic",
+                "field": "whatItMeans",
+                "fieldSha256": "30cf369c90f05f865907c532e21afdc4eec305700982b34c8327216f6d006082",
+                "explanation": "A local method/small lesion count does not establish added patient-level benefit."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "immune-mechanism",
             "requirement": "Require evidence linking local injury/signals to presentation, priming and useful immune recognition rather than automatically calling injury an in-situ vaccine.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunogenic-cell-death",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "5b0507ccff51e77c14a3ffaa5fb96d3e63908e254b7c4a0451b7ffe49c627945",
+                "explanation": "Injury/markers are not adaptive priming; assay/model limitations remain."
+              },
+              {
+                "recordId": "in-situ-vaccination",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "5b3139274775080b318087a193dc3ab1810a02111eaaa273c5d55bffb33d3ad2",
+                "explanation": "Presentation and useful recognition are proposed steps requiring evidence."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "radiopharmaceutical-exposure",
             "requirement": "Separate tracer uptake, biodistribution, absorbed radiation dose and normal-organ exposure for the actual product.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "radioligand-dosimetry",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "35d3d6d03edf85ee69626082b1114f0ee56d52dbd8f3f4717409c4792c9e7f03",
+                "explanation": "Uptake, time-activity, administered activity and absorbed tissue dose differ."
+              },
+              {
+                "recordId": "radioligand-dosimetry",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "468a5198fce07e24214825d01fb2b7869cb761f0ee24e28a9d7963ba61bb15ed",
+                "explanation": "Decay, clearance, daughters and microscopic heterogeneity limit inference; FDA nonclinical guidance is not a universal clinical protocol."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "study-version-and-origin",
             "requirement": "Retain the inspected study version, population, two strategies, endpoint and starting time; a case report is not an estimate of added treatment effect.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and exact-source comparison remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "paper-booster-ablation-immunotherapy-2025",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "3279b51557da8f7924996caf0f6086eb2e26558e9366c99816348b926efa60eb",
+                "explanation": "Primary PFS began before randomisation; separate randomisation-origin analysis is named."
+              },
+              {
+                "recordId": "paper-curb-oligoprogression-lancet-2024",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "64d83f174a6f023ab48dfe5ac45df857bef9189ca6b14dd5fbaa30cb8a59d33c",
+                "explanation": "Population, strategies and randomisation-origin PFS remain scoped."
+              },
+              {
+                "recordId": "paper-spigel-pacific-five-year-survival-jco-2022",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "a4d7e6882eeade273ccd3658955e80d4606fdd9faaf9e3714393f497e985480d",
+                "explanation": "2022 update, cutoff and follow-up denominator differ from original primary analyses."
+              },
+              {
+                "recordId": "abscopal-effect",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "3fe2560f44b4795fccdf9d44045e447b09cc2baf4649e4214ab4e6f974707e3e",
+                "explanation": "Cases/uncontrolled combinations do not isolate added treatment effect."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -47417,7 +48418,10 @@
         "https://pubmed.ncbi.nlm.nih.gov/31928404/",
         "https://pubmed.ncbi.nlm.nih.gov/35817765/",
         "https://pubmed.ncbi.nlm.nih.gov/34341356/",
-        "https://pubmed.ncbi.nlm.nih.gov/38745990/"
+        "https://pubmed.ncbi.nlm.nih.gov/38745990/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/",
+        "https://clinicaltrials.gov/study/NCT01901094",
+        "https://pubmed.ncbi.nlm.nih.gov/38569931/"
       ],
       "discoveryOccurrences": [
         "primary-follow-up:31928404",
@@ -47429,7 +48433,7 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility.",
+        "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
         "points": [
           {
             "id": "classification-versus-comparison",
@@ -47442,6 +48446,28 @@
                 "field": "summary",
                 "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
                 "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "nodal-and-residual-classification",
+            "requirement": "Keep clinical versus pathological nodal definitions, time/prefixes and isolated-cell modifiers with the protocol; sampled margin or nodal categories do not establish absolute cellular absence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node-status",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "d57572b1e680116918c2323c4f1f6ee4a1a184b32bbcc975938272eb7d5aab49",
+                "explanation": "B-51 clinical N1 is not a pathological node-count shorthand; ypN0i+ and A011202 >0.2-mm protocol rules retain their context."
+              },
+              {
+                "recordId": "resection-margins",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "8d1a9fb561418fc161e84e7d058c9cb52f2241e616f804f1041013214e49ab85",
+                "explanation": "Assessed edge, residual classification and organ-specific complete-resection standards differ."
               }
             ],
             "remaining": []
@@ -47555,7 +48581,11 @@
       "sourceURLs": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/",
         "https://pubmed.ncbi.nlm.nih.gov/39282896/",
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12603194/",
+        "https://clinicaltrials.gov/study/NCT00003855",
+        "https://clinicaltrials.gov/study/NCT00014612",
+        "https://clinicaltrials.gov/study/NCT01872975"
       ],
       "discoveryOccurrences": [
         "expression-primary-follow-up:study-analysis-population-and-version"
@@ -47564,7 +48594,7 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+        "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
         "points": [
           {
             "id": "scope-and-interpretation",
@@ -47591,6 +48621,49 @@
                 "field": "notes",
                 "fieldSha256": "acb960cd1e3ad73cddd8b83f3fbe381257301611135ec16e9daa98919605e185",
                 "explanation": "The specific current SPL v28 ultralow regulatory analysis is named separately, including an interval spanning 1; it is not silently substituted into the original primary result."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "origin-denominator-and-registry-version",
+            "requirement": "Retain enrolled, randomised and analysed populations, actual endpoint starting times, source-version differences and reported statistical conventions; unresolved count or interval/test differences must not be silently corrected.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "paper-booster-ablation-immunotherapy-2025",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "3279b51557da8f7924996caf0f6086eb2e26558e9366c99816348b926efa60eb",
+                "explanation": "65 randomised versus 62 main analysis and PFS before randomisation are explicit."
+              },
+              {
+                "recordId": "paper-booster-ablation-immunotherapy-2025",
+                "version": "proposal-therapeutic",
+                "field": "caveats",
+                "fieldSha256": "ebbf7460eb936bed151385dc5205e315d842f7e4eff9dbf32c049bc0281222b5",
+                "explanation": "Exploratory modality selection, separate cytokine cohort and conflicting subgroup counts are not made causal."
+              },
+              {
+                "recordId": "acosog-z0011",
+                "version": "proposal-therapeutic",
+                "field": "enrolledNote",
+                "fieldSha256": "9d0c7320502b519d09f057453e85323c764e247dae691a526d685147ee1a1c3a",
+                "explanation": "605 registry versus 891 randomised report remains an unexplained source difference."
+              },
+              {
+                "recordId": "amaros",
+                "version": "proposal-therapeutic",
+                "field": "enrolledNote",
+                "fieldSha256": "2abb0b8c471d2db75496c6b3304b8ea88565dd3ec4f89252398f1f992a720e44",
+                "explanation": "Registry overall enrollment and published eligible/positive-node cohorts are not silently interchanged."
+              },
+              {
+                "recordId": "nsabp-b51",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "d064151790fd3f205a643300c272f79347fd5663f5a3e4a8227ae9cea6aecafb",
+                "explanation": "Registry/publication counts, time-driven primary analysis and isolated-cell subgroup uncertainty remain explicit."
               }
             ],
             "remaining": []

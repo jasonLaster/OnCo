@@ -211,4 +211,108 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "kind": "term",
     "asOf": "2026-11-08"
   }
+,
+{
+  "id": "completion-surgery",
+  "kind": "term",
+  "category": "Clinic basics",
+  "name": "Completion surgery",
+  "aka": [
+    "completion mastectomy",
+    "completion axillary dissection"
+  ],
+  "tldr": "Completion surgery is a further operation after an earlier procedure and its findings. The tissue, reason and clinical setting determine the question; a pathology finding does not select one operation automatically.",
+  "summary": "In breast care, further surgery can mean re-excision of a cavity, completion mastectomy or completion axillary dissection. These remove different tissues and address different findings. The final margin or node assessment, earlier treatment and full clinical context matter. A further operation after initial pathology is not itself a recurrence or a treatment for disease throughout the body.\n\nZ0011 studied a specified surgery-first population receiving lumpectomy and planned whole-breast radiation. AMAROS compared axillary dissection with radiation, rather than with no axillary treatment. Those studies do not directly answer residual positive sentinel nodes after neoadjuvant chemotherapy; A011202 studies that different setting. Finding more involved nodes by removing them is different from preventing recurrence, and harms such as lymphoedema need separate assessment.",
+  "cancers": [
+    "breast-cancer",
+    "tnbc"
+  ],
+  "trials": [
+    "acosog-z0011",
+    "amaros",
+    "alliance-a011202"
+  ],
+  "related": [
+    "resection-margins",
+    "breast-margins-and-re-excision",
+    "lumpectomy",
+    "mastectomy",
+    "sentinel-node",
+    "regional-nodal-irradiation"
+  ],
+  "links": [
+    {
+      "label": "NCI: lumpectomy and surrounding treatment",
+      "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+    },
+    {
+      "label": "Z0011 ten-year report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28898379/"
+    },
+    {
+      "label": "AMAROS original report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25439688/"
+    },
+    {
+      "label": "A011202 registry: post-neoadjuvant residual positive nodes",
+      "url": "https://clinicaltrials.gov/study/NCT01901094"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+  "id": "regional-nodal-irradiation",
+  "kind": "term",
+  "category": "Clinic basics",
+  "name": "Regional nodal irradiation in breast cancer",
+  "aka": [
+    "regional nodal irradiation",
+    "RNI"
+  ],
+  "tldr": "Regional nodal irradiation treats selected lymph-node regions. The exact fields, pretreatment findings and response after earlier therapy determine the clinical question.",
+  "summary": "Fields can include axillary, supraclavicular and internal mammary node regions, depending on the plan. This is distinct from breast or chest-wall irradiation, though they can be combined. After neoadjuvant treatment, ypN0 is a pathological nodal classification. Retain the sampled nodes and modifiers, including isolated-cell categories, rather than interpreting it as proof of absolute cellular absence or complete response in the breast.\n\nB-51 studied biopsy-proven cT1 to T3 N1 M0 disease that became ypN0. Its primary recurrence-interval comparison was not statistically significant at median follow-up 59.5 months; this is not proof of zero effect in all settings. After lumpectomy both groups received whole-breast radiation. After mastectomy the contrast included chest-wall plus nodal radiation versus none.\n\nA011202 instead studies residual positive sentinel nodes after neoadjuvant chemotherapy. Its registry describes dissection plus nodal radiation versus axillary and nodal radiation without dissection; both strategies include radiation. Do not transfer an omission conclusion between these different populations and contrasts. Organ exposure, lymphoedema and other harms remain part of the assessment.",
+  "cancers": [
+    "breast-cancer",
+    "tnbc"
+  ],
+  "trials": [
+    "nsabp-b51",
+    "alliance-a011202"
+  ],
+  "related": [
+    "lymph-node-status",
+    "sentinel-node",
+    "radiotherapy",
+    "completion-surgery",
+    "mastectomy",
+    "lumpectomy"
+  ],
+  "links": [
+    {
+      "label": "B-51 primary report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40466065/"
+    },
+    {
+      "label": "B-51 surgery-specific registry arms",
+      "url": "https://clinicaltrials.gov/study/NCT01872975"
+    },
+    {
+      "label": "A011202 residual-node-positive registry arms",
+      "url": "https://clinicaltrials.gov/study/NCT01901094"
+    },
+    {
+      "label": "NCI: radiation for breast cancer",
+      "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
 ];

@@ -291,6 +291,144 @@ const raw: TrialInput[] = [
     summary: "DYNAMIC, registered as ACTRN12615000381583, sponsored by the Walter and Eliza Hall Institute and published in the New England Journal of Medicine in 2022, showed that a circulating tumour DNA blood test can safely halve the number of stage II colon cancer patients given chemotherapy after surgery. It randomised 455 patients to ctDNA-guided management or standard management, and chemotherapy use fell from 28 to 15 percent while two-year recurrence-free survival was non-inferior. DYNAMIC-III in stage III gave a more nuanced result, and whether escalating treatment in ctDNA-positive patients helps is the open question.",
     result: "Chemotherapy use 15% vs 28% with non-inferior RFS.",
     technologies: ["mrd-testing"], cancers: ["colorectal"], terms: ["mrd"], links: [{ label: "NEJM 2022", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2200075" }], people: ["jeanne-tie"] }),
+
+{
+    outcomes:[{"endpoint":"Progression-free survival from randomisation, overall 2024 report","primary":true,"unit":"months","arms":[{"name":"SBRT plus standard care","n":55,"value":7.2},{"name":"Standard care","n":51,"value":3.2}],"hr":0.53,"ci":[0.35,0.81],"p":"0.0035","source":"https://pubmed.ncbi.nlm.nih.gov/38104577/"},{"endpoint":"Progression-free survival, prespecified NSCLC subgroup","unit":"months","arms":[{"name":"SBRT plus standard care","n":31,"value":10},{"name":"Standard care","n":28,"value":2.2}],"hr":0.41,"ci":[0.22,0.75],"p":"0.0039","source":"https://pubmed.ncbi.nlm.nih.gov/38104577/"},{"endpoint":"Progression-free survival, prespecified breast subgroup","unit":"months","arms":[{"name":"SBRT plus standard care","n":24,"value":4.4},{"name":"Standard care","n":23,"value":4.2}],"hr":0.78,"ci":[0.43,1.43],"p":"0.43","source":"https://pubmed.ncbi.nlm.nih.gov/38104577/"}],
+  "id": "curb-oligoprogression",
+  "kind": "trial",
+  "name": "CURB: SBRT for oligoprogressive breast or non-small-cell lung cancer",
+  "aka": [
+    "CURB oligoprogression trial",
+    "PROMISE-004"
+  ],
+  "nct": "NCT03808662",
+  "phase": "2",
+  "status": "mixed",
+  "yearReported": 2024,
+  "setting": "Metastatic breast cancer or NSCLC after at least first-line systemic treatment, with no more than five progressing lesions: SBRT plus standard care versus standard care",
+  "sponsor": "Memorial Sloan Kettering Cancer Center",
+  "started": "2019-01-16",
+  "startedType": "actual",
+  "enrolled": 106,
+  "enrolledBasis": "randomised",
+  "enrolledNote": "The 2024 primary report gives 106 randomised participants; the registry captured in November 2026 reports 107 actual enrollment. The reason for the source difference is not established here.",
+  "tldr": "CURB tested added SBRT for limited progression during systemic treatment. Its lung and breast subgroup findings should not be combined into one rule for every metastatic cancer.",
+  "summary": "The randomised phase 2 report compared standard care with or without SBRT in 106 participants, including 59 with NSCLC and 47 with breast cancer. Progression-free survival began at randomisation. The overall comparison favoured added SBRT; the prespecified lung subgroup showed a benefit and the breast estimate was imprecise and nonsignificant.\n\nThe captured registry lists active, not recruiting status and estimated 2027 completion. That administrative status is distinct from the published 2024 analysis or current availability at a site. It does not make the report a study in every oligoresidual or first-line limited-metastatic setting.",
+  "result": "Overall progression-free survival hazard ratio 0.53; breast subgroup 0.78 with 95 percent confidence interval 0.43 to 1.43. The latter does not establish exactly zero effect.",
+  "cancers": [
+    "nsclc",
+    "breast-cancer"
+  ],
+  "technologies": [
+    "sbrt"
+  ],
+  "keyPapers": [
+    "paper-curb-oligoprogression-lancet-2024"
+  ],
+  "links": [
+    {
+      "label": "ClinicalTrials.gov registry",
+      "url": "https://clinicaltrials.gov/study/NCT03808662"
+    },
+    {
+      "label": "Original randomised report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+    outcomes:[{"endpoint":"Progression-free survival from randomisation, eligible 2026 analysis","primary":true,"unit":"months","arms":[{"name":"Systemic therapy plus ablation","value":19.5,"note":"The 2026 eligible analysis; confidence interval for the hazard ratio is 95 percent."},{"name":"Systemic therapy without ablation","value":23}],"hr":0.92,"ci":[0.57,1.47],"p":"0.42","source":"https://pubmed.ncbi.nlm.nih.gov/42842849/"}],
+  "id": "nrg-br002",
+  "kind": "trial",
+  "name": "NRG-BR002: metastasis-directed ablation in limited metastatic breast cancer",
+  "aka": [
+    "NRG BR002"
+  ],
+  "nct": "NCT02364557",
+  "phase": "2/3",
+  "status": "negative",
+  "yearReported": 2026,
+  "setting": "Breast cancer with no more than four metastases, controlled primary and no progression on up to twelve months of first-line systemic therapy: standard care with or without metastasis-directed SBRT/surgery",
+  "sponsor": "NRG Oncology",
+  "started": "2014-12-24",
+  "startedType": "actual",
+  "enrolled": 129,
+  "enrolledBasis": "registry",
+  "tldr": "NRG-BR002 did not meet its progression endpoint for added metastasis-directed ablation in a selected breast-cancer population. The planned phase 3 portion did not proceed.",
+  "summary": "The 2026 report analysed 125 eligible participants among 129 enrolled. Most had HR-positive, HER2-negative disease; 93 percent of ablation was SBRT. The study compared first-line systemic treatment alone with the same approach plus treatment of visible metastases.\n\nProgression-free survival was measured from randomisation. The trial did not show a statistically significant progression-free or overall-survival improvement and did not proceed to phase 3. The captured registry lists completed status. These findings do not erase palliation or establish the effect in every breast subtype or other disease setting.",
+  "result": "Progression-free survival hazard ratio 0.92, 95 percent confidence interval 0.57 to 1.47; overall-survival hazard ratio 1.07, interval 0.60 to 1.89.",
+  "cancers": [
+    "breast-cancer"
+  ],
+  "technologies": [
+    "sbrt"
+  ],
+  "keyPapers": [
+    "paper-nrg-br002-jco-2026"
+  ],
+  "links": [
+    {
+      "label": "ClinicalTrials.gov registry",
+      "url": "https://clinicaltrials.gov/study/NCT02364557"
+    },
+    {
+      "label": "Primary 2026 report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42842849/"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+  "id": "alliance-a011202",
+  "kind": "trial",
+  "name": "Alliance A011202: axillary treatment after residual positive sentinel nodes",
+  "aka": [
+    "A011202"
+  ],
+  "nct": "NCT01901094",
+  "phase": "3",
+  "status": "active",
+  "setting": "cT1 to T3 N1 breast cancer with positive sentinel-node disease after neoadjuvant chemotherapy: axillary dissection plus nodal radiation versus axillary plus nodal radiation without dissection",
+  "sponsor": "Alliance for Clinical Trials in Oncology",
+  "started": "2014-02-24",
+  "startedType": "actual",
+  "enrolled": 2012,
+  "enrolledBasis": "registry",
+  "tldr": "A011202 studies how to treat the axilla when sentinel nodes remain positive after chemotherapy. Both registry arms include radiation; this differs from the B-51 ypN0 question.",
+  "summary": "The retrieved registry describes an open-label randomised phase 3 comparison in cT1 to T3 N1 breast cancer with residual positive sentinel-node disease after neoadjuvant chemotherapy. The protocol requires a nodal metastasis greater than 0.2 millimetres; isolated tumour cells at or below that size are treated as N0i+. One arm includes completion level I/II axillary dissection and nodal radiation. The other includes radiation to the full axilla and nodal regions without that dissection.\n\nThe captured record lists 2,012 actual participants, active not recruiting status and estimated primary completion on 31 January 2031. Its primary measure is invasive breast cancer recurrence-free interval, with a stated follow-up timeframe up to eight years after radiation completion. The captured record supplies no efficacy estimate. Registry status is separate from a treatment result or availability at a local site.",
+  "result": "The registry describes the comparison and follow-up, without an efficacy estimate.",
+  "cancers": [
+    "breast-cancer"
+  ],
+  "technologies": [
+    "sentinel-node",
+    "imrt-igrt"
+  ],
+  "terms": [
+    "completion-surgery",
+    "regional-nodal-irradiation"
+  ],
+  "links": [
+    {
+      "label": "Exact ClinicalTrials.gov record and arms",
+      "url": "https://clinicaltrials.gov/study/NCT01901094"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
 ];
 
 /** Structured outcomes, enrolment, and replication notes live in trial-outcomes.ts and are merged here. */

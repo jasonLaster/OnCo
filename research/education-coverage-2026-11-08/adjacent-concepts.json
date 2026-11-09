@@ -658,7 +658,10 @@
       "https://pubmed.ncbi.nlm.nih.gov/31928404/",
       "https://pubmed.ncbi.nlm.nih.gov/35817765/",
       "https://pubmed.ncbi.nlm.nih.gov/34341356/",
-      "https://pubmed.ncbi.nlm.nih.gov/38745990/"
+      "https://pubmed.ncbi.nlm.nih.gov/38745990/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/",
+      "https://clinicaltrials.gov/study/NCT01901094",
+      "https://pubmed.ncbi.nlm.nih.gov/38569931/"
     ],
     "discoveryOccurrences": [
       "primary-follow-up:31928404",
@@ -670,7 +673,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility.",
+      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
       "points": [
         {
           "id": "classification-versus-comparison",
@@ -683,6 +686,28 @@
               "field": "summary",
               "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
               "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "nodal-and-residual-classification",
+          "requirement": "Keep clinical versus pathological nodal definitions, time/prefixes and isolated-cell modifiers with the protocol; sampled margin or nodal categories do not establish absolute cellular absence.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "lymph-node-status",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "d57572b1e680116918c2323c4f1f6ee4a1a184b32bbcc975938272eb7d5aab49",
+              "explanation": "B-51 clinical N1 is not a pathological node-count shorthand; ypN0i+ and A011202 >0.2-mm protocol rules retain their context."
+            },
+            {
+              "recordId": "resection-margins",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "8d1a9fb561418fc161e84e7d058c9cb52f2241e616f804f1041013214e49ab85",
+              "explanation": "Assessed edge, residual classification and organ-specific complete-resection standards differ."
             }
           ],
           "remaining": []
@@ -796,7 +821,11 @@
     "sourceURLs": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/",
       "https://pubmed.ncbi.nlm.nih.gov/39282896/",
-      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12603194/",
+      "https://clinicaltrials.gov/study/NCT00003855",
+      "https://clinicaltrials.gov/study/NCT00014612",
+      "https://clinicaltrials.gov/study/NCT01872975"
     ],
     "discoveryOccurrences": [
       "expression-primary-follow-up:study-analysis-population-and-version"
@@ -805,7 +834,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
       "points": [
         {
           "id": "scope-and-interpretation",
@@ -832,6 +861,49 @@
               "field": "notes",
               "fieldSha256": "acb960cd1e3ad73cddd8b83f3fbe381257301611135ec16e9daa98919605e185",
               "explanation": "The specific current SPL v28 ultralow regulatory analysis is named separately, including an interval spanning 1; it is not silently substituted into the original primary result."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "origin-denominator-and-registry-version",
+          "requirement": "Retain enrolled, randomised and analysed populations, actual endpoint starting times, source-version differences and reported statistical conventions; unresolved count or interval/test differences must not be silently corrected.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "paper-booster-ablation-immunotherapy-2025",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "3279b51557da8f7924996caf0f6086eb2e26558e9366c99816348b926efa60eb",
+              "explanation": "65 randomised versus 62 main analysis and PFS before randomisation are explicit."
+            },
+            {
+              "recordId": "paper-booster-ablation-immunotherapy-2025",
+              "version": "proposal-therapeutic",
+              "field": "caveats",
+              "fieldSha256": "ebbf7460eb936bed151385dc5205e315d842f7e4eff9dbf32c049bc0281222b5",
+              "explanation": "Exploratory modality selection, separate cytokine cohort and conflicting subgroup counts are not made causal."
+            },
+            {
+              "recordId": "acosog-z0011",
+              "version": "proposal-therapeutic",
+              "field": "enrolledNote",
+              "fieldSha256": "9d0c7320502b519d09f057453e85323c764e247dae691a526d685147ee1a1c3a",
+              "explanation": "605 registry versus 891 randomised report remains an unexplained source difference."
+            },
+            {
+              "recordId": "amaros",
+              "version": "proposal-therapeutic",
+              "field": "enrolledNote",
+              "fieldSha256": "2abb0b8c471d2db75496c6b3304b8ea88565dd3ec4f89252398f1f992a720e44",
+              "explanation": "Registry overall enrollment and published eligible/positive-node cohorts are not silently interchanged."
+            },
+            {
+              "recordId": "nsabp-b51",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "d064151790fd3f205a643300c272f79347fd5663f5a3e4a8227ae9cea6aecafb",
+              "explanation": "Registry/publication counts, time-driven primary analysis and isolated-cell subgroup uncertainty remain explicit."
             }
           ],
           "remaining": []

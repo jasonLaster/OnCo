@@ -8,27 +8,27 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Concepts/comparisons | 411 |
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 9 |
-| Teaching sources fully read (including one navigation shelf) | 65 |
-| Reviewed sources completely represented in drafts | 63 |
-| Reviewed sources retaining requirements | 2 |
-| Content sources unread | 459 |
-| Curriculum requirements | 271 |
-| Requirements with field evidence | 264 |
-| Curriculum requirements open | 7 |
-| New terms in draft #375 | 24 |
-| Existing owners updated in draft #375 | 89 |
+| Teaching sources fully read (including one navigation shelf) | 75 |
+| Reviewed sources completely represented in drafts | 74 |
+| Reviewed sources retaining requirements | 1 |
+| Content sources unread | 449 |
+| Curriculum requirements | 311 |
+| Requirements with field evidence | 310 |
+| Curriculum requirements open | 1 |
+| New records in draft #375 | 33 |
+| Existing owners updated in draft #375 | 115 |
 | Reviewed-source completion on pinned main | 0 |
 | Adjacent concepts represented in drafts | 16 |
 | Adjacent concepts open | 2 |
-| Declared literature occurrences | 226 |
-| Literature occurrences screened | 121 |
+| Declared literature occurrences | 234 |
+| Literature occurrences screened | 129 |
 | Literature occurrences unread | 105 |
 | Schema drafts awaiting approval/hosted preview | 4 |
 | Clean final full re-audits | 0 |
 
 Unread means unknown coverage. Drafts remain separate from main. The [ledger](ledger.json) and generated open-item/dependency reports are authoritative.
 
-The [CHK1 follow-up](chk1-follow-up/scope.json) supplements its existing owner with negative delivery evidence, candidate-pair and clinical-combination boundaries. Eighteen further discovery occurrences have dispositions and 14 registry identities were fetched independently. Four navigation directories add routing only; the local-treatment shelf adds six still-open requirements. Four previously read target/format requirements now have explicit field evidence.
+The [CHK1 follow-up](chk1-follow-up/scope.json) supplements its existing owner with negative delivery evidence, candidate-pair and clinical-combination boundaries. Eighteen further discovery occurrences have dispositions and 14 registry identities were fetched independently. Four navigation directories add routing only; the local-treatment shelf adds six requirements, now represented in the local-treatment checkpoint. Four previously read target/format requirements now have explicit field evidence.
 
 The earlier [cell-control checkpoint](cell-control-validation.md) closes five additional read sources and nine earlier TCE/TCR-mimic requirements, while retaining new source/scaffold/clinical-scope boundaries. Linked study cards are corrected at their owning records. The [source index](cell-control-record-sources.json), [identity/scopes](cell-control-primary/publication-identities.json), [rendered checks](cell-control-render-verification.json) and [retrieval measurement](cell-control-retrieval-verification.json) are retained.
 
@@ -44,3 +44,7 @@ The [access completion](access-completion-2026-11-09/scope.json) closes five req
 
 The [biology completion](biology-completion-2026-11-09/scope.json) closes eight existing requirements and one newly surfaced cohort/classification finding. Twelve publication identities and their complete available MED abstracts were read. The 95 current owners and five TNBC section components pass source/date/anchor checks; changed reader text was read directly. After fixing authored punctuation and replacing an obsolete Ask assertion requiring receptor absence, the fresh full suite passes 282 files and 2,821 tests with two existing skips. Questions, expected entities, scoring, floors and budgets remain unchanged.
 The [expression completion](expression-completion-2026-11-09/scope.json) closes four requirements without additional curriculum reading, resolves the existing esophageal 22C3 finding and records three adjacent interpretation concepts. Eighteen existing owners are newly included; twenty current owners are touched. The 113 proposed owners and six TNBC section components pass source/date/anchor checks, and 124 authored field parts match reader text with JSON-LD excluded. Nineteen publication identities, 31 raw capture receipts and four registry identities are recorded outside-body public metadata. Eight new discovery occurrences are screened. Validate, typecheck and lint pass with seven existing warnings. The fresh full suite passes 282 files and 2,821 tests with two existing skips after UK spelling, a verified short excerpt and the CAP scoring-source specification were corrected. Approval-source checks, the quote-length floor, retrieval expectations and budgets remain unchanged.
+
+The [local-treatment checkpoint](local-treatment-2026-11-09/scope.json) reads ten concepts, closes 46 requirements, adds nine records and supplements 26 existing owners. The two existing classification/population findings gain protocol and denominator evidence without increasing the adjacent-concept count. Twenty-four resolved MED identities/complete abstracts, selected full-text sections, seven registry identities and official guidance retain scoped use. Fifty-one HTTP 200 captures include one excluded challenge response; three other requests failed. Eight Elicit occurrences have explicit screening depths, including unverified unused conference/presentation identifiers. All 148 current owners pass source/date/anchor checks and all 199 authored local-treatment field parts match actual reader text. Validation details are recorded in the receipt; no combined-draft export or deployment is claimed.
+
+Final local-treatment gates pass: 22,716 entities, typecheck, full lint (zero errors, seven existing warnings), 20 focused integration tests and 282 files / 2,821 full-suite tests with two existing skips. The same nine duplicate-survey groups remain, with no new DOI/PubMed duplicate. Closure exits 2 for documented unread/open work; no stale field proof is present.

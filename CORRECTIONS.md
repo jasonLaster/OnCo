@@ -4,6 +4,17 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Local treatment, exposure and trial interpretation
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [Ablation](/technologies/thermal-ablation/), [RF](/terms/radiofrequency-ablation/), [microwave](/terms/microwave-ablation/) and [cryoablation](/terms/cryoablation/) | Device readings, visible zones and model-specific boundaries implied universal complete coverage or technique superiority | Resolved SIR consensus, microwave mechanisms, perfused-liver experiment and swine renal study | Separates delivery/settings, lethal exposure, spatial margins, follow-up efficacy and later progression; extrapolated margins and device rankings retain their model limits; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-09 | [SBRT](/technologies/sbrt/) and [hypofractionation](/terms/hypofractionation/) | Short schedules, stereotactic delivery and modelled effect were conflated | NCI planning guidance, ASTRO safety abstract, IAEA model passages and resolved START/FAST-Forward reports | Retains localisation/verification, complete regimen and organ context; alpha/beta has model/endpoint uncertainty, and neither visit count nor BED documents actual delivery |
+| 2026-11-09 | [Immunogenic cell death](/terms/immunogenic-cell-death/) and [in situ vaccination](/technologies/in-situ-vaccination/) | Injury or marker release implied protective priming and distant clinical benefit | Resolved 2020 consensus definition, assay and model sections | Separates injury, danger signals, presentation, adaptive response and comparative outcomes; local treatment does not automatically create a useful vaccine |
+| 2026-11-09 | [B-51](/trials/nsabp-b51/), [nodal status](/terms/lymph-node-status/), [Z0011](/trials/acosog-z0011/) and [AMAROS](/trials/amaros/) | Clinical and pathological node definitions, sampled absence and different surgery/radiation settings were blended; paper and registry counts differed | Primary reports and seven independently retrieved registry identities | Retains clinical N1 anatomy, ypN0i+ allowance, the separate A011202 size rule, surgery-dependent radiation contrasts, uncertainty and unexplained count differences; no corrected denominator is invented |
+| 2026-11-09 | [PACIFIC](/trials/pacific/) and [five-year report](/key-papers/paper-spigel-pacific-five-year-survival-jco-2022/) | Consolidation evidence and updated survival landmarks lost their selected population, cutoff or interpretation boundary | Resolved primary identity, complete abstract and selected full-report sections | Keeps post-concurrent-chemoradiotherapy randomisation, 2022 update versus original estimates and different follow-up populations; survival landmarks do not establish individual cure or an immune mechanism |
+| 2026-11-09 | [Theranostics](/terms/theranostics/) | Shared targets, scan uptake, absorbed dose and validation of diagnostic-treatment pairs were conflated | FDA product-specific announcement/nonclinical guidance and resolved EANM/SNMMI guideline | Names the products and dated setting; mass/carrier/isotope changes and retention matter, and the guideline’s then-labelled individual-dosimetry statement is not universal |
+
 ### Expression, diagnostic context and study populations
 
 | Date | Entity | What was wrong | How found | Fix |

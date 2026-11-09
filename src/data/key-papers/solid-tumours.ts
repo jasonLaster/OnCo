@@ -1459,4 +1459,230 @@ export const papersSolidTumours: PaperInput[] = [
     changedPractice: true, participants: 594,
     links: [{ label: "Full text (DOI)", url: "https://doi.org/10.1016/S0140-6736(10)61121-X" }, { label: "ClinicalTrials.gov NCT01041404", url: "https://clinicaltrials.gov/study/NCT01041404" }],
     cancers: ["gastric"], drugs: ["trastuzumab", "cisplatin", "capecitabine", "fluorouracil"], targets: ["her2"], trials: ["toga"], people: ["bang-yung-jue"], companies: ["roche-genentech"], terms: ["her2-positive", "ihc", "os"], related: ["paper-slamon-trastuzumab-nejm-2001"] }),
+
+{
+  "id": "paper-booster-ablation-immunotherapy-2025",
+  "kind": "paper",
+  "name": "BOOSTER: ablation during continuing immunotherapy for limited residual lung cancer",
+  "tldr": "This small randomised phase 2 trial found longer progression-free survival with ablation in selected lung cancer after an immunotherapy response. It did not test SBRT or establish one ablation method as universally best.",
+  "summary": "Single-centre open-label trial in advanced non-small-cell lung cancer with limited residual disease after first-line anti-PD-1/PD-L1 treatment and no progression before randomisation. Sixty-five patients were allocated 2:1; the main analysis included 42 with ablation plus continuing immunotherapy and 20 with immunotherapy alone after three withdrawals. Eligible lung residual lesions were ablated; this was not treatment of every disease site.\n\nThe primary progression-free survival clock began at immunotherapy initiation, before randomisation. The main text also reports a separate analysis starting at randomisation. Keep those clocks and denominators separate when comparing estimates with another trial. The study enrolled fewer patients than planned and needs confirmation.",
+  "journal": "Signal transduction and targeted therapy",
+  "year": 2025,
+  "doi": "10.1038/s41392-025-02460-z",
+  "pmid": "41213939",
+  "authors": "Yang S, Liu X, Yu J, Chen X, Liu X, Zhao S, Jiang T, Sun H, Yang M, Wu F, Li A, Wang L, Gao G, Xu Y, Chen B, Ren S.",
+  "paperType": "rct",
+  "participants": 65,
+  "findings": [
+    "Main analysis: median progression-free survival from immunotherapy initiation was 26.7 versus 11.7 months; hazard ratio 0.213, 95 percent confidence interval 0.099 to 0.461.",
+    "The report gives overall-survival hazard ratio 0.242, confidence interval 0.057 to 1.019 and nominal p=0.036, with medians not reached. The interval and reported test are retained together; the progression endpoint is not proof of a settled survival gain.",
+    "Ablation-related pneumothorax occurred in 15 of 42 patients, including one grade 3 event; pleural effusion occurred in 10 and bronchopulmonary haemorrhage in eight. These are study-group observations, not individual risk predictions."
+  ],
+  "caveats": [
+    "The 65 randomised patients and 62 in the main analysis are different denominators; supplementary all-randomised analyses were reported separately.",
+    "Cryoablation versus heating was exploratory, with differences in lesion characteristics and no multiple-comparison correction. It was not a randomised comparison of modalities.",
+    "Peripheral cytokine measurements came from a separate 97-patient cohort. They do not establish tumour-specific priming or explain the randomised treatment effect.",
+    "The abstract and figure/main-text thermal-subgroup counts differ. No corrected subgroup count or universal technique ranking is invented here."
+  ],
+  "whatItMeans": "Provides a hypothesis-supporting result for this selected residual-lung-disease setting. It does not establish the same effect for breast cancer, oligoprogression, every local method or a proposed immune mechanism.",
+  "cancers": [
+    "nsclc"
+  ],
+  "trials": [],
+  "technologies": [
+    "thermal-ablation"
+  ],
+  "related": [
+    "systemic-vs-local-therapy"
+  ],
+  "links": [
+    {
+      "label": "Primary publication identity and abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41213939/"
+    },
+    {
+      "label": "Full report: methods, endpoint clocks, safety and subgroup limitations",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12603194/"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+  "id": "paper-curb-oligoprogression-lancet-2024",
+  "kind": "paper",
+  "name": "CURB: adding SBRT for oligoprogressive breast or non-small-cell lung cancer",
+  "tldr": "CURB found longer progression-free survival overall with added SBRT, with different findings in its lung and breast cohorts. The small breast comparison did not show a statistically significant improvement.",
+  "summary": "Open-label randomised phase 2 comparison after at least first-line systemic therapy in metastatic breast cancer or non-small-cell lung cancer with no more than five progressing lesions. The 2024 report randomised 106 patients: 51 to standard care and 55 to SBRT plus standard care. The primary endpoint was progression-free survival; the registry defines its clock from randomisation. Disease-site subgroup analysis was prespecified.\n\nThe overall median was 7.2 months with added SBRT versus 3.2 with standard care, hazard ratio 0.53. The NSCLC subgroup showed a longer median, while the breast subgroup’s estimate was imprecise and not statistically significant. Sixteen of 47 breast participants had TNBC; the combined breast result does not determine the effect in every subtype.",
+  "journal": "Lancet (London, England)",
+  "year": 2024,
+  "doi": "10.1016/s0140-6736(23)01857-3",
+  "pmid": "38104577",
+  "authors": "Tsai CJ, Yang JT, Shaverdian N, Patel J, Shepherd AF, Eng J, Guttmann D, Yeh R, Gelblum DY, Namakydoust A, Preeshagul I, Modi S, Seidman A, Traina T, Drullinsky P, Flynn J, Zhang Z, Rimner A, Gillespie EF, Gomez DR, Lee NY, Berger M, Robson ME, Reis-Filho JS, Riaz N, Rudin CM, Powell SN, CURB Study Group.",
+  "paperType": "rct",
+  "participants": 106,
+  "findings": [
+    "Overall progression-free survival: 7.2 versus 3.2 months with SBRT versus standard care; hazard ratio 0.53, 95 percent confidence interval 0.35 to 0.81.",
+    "NSCLC subgroup: 10.0 versus 2.2 months; hazard ratio 0.41, 95 percent confidence interval 0.22 to 0.75. Breast subgroup: 4.4 versus 4.2 months; hazard ratio 0.78, interval 0.43 to 1.43.",
+    "Grade 2 or worse adverse events occurred in 34 of 55 versus 21 of 51. Nine patients had SBRT-related grade 2 or worse toxicity, including pneumonitis and brachial plexopathy."
+  ],
+  "caveats": [
+    "The trial closed before its planned sample size after the preplanned interim efficacy analysis.",
+    "An imprecise nonsignificant breast comparison does not establish exactly zero effect in every breast-cancer population.",
+    "Oligoprogression after prior treatment differs from limited residual responding disease and newly limited metastatic disease.",
+    "The captured 2026 registry reports enrollment of 107, while this publication reports 106 randomised participants. The publication denominator is retained; no reason for the source difference is invented."
+  ],
+  "whatItMeans": "Supports a setting-specific comparison of adding SBRT. Neither treated-site control nor this progression endpoint alone establishes an immune mechanism or a universal survival benefit.",
+  "cancers": [
+    "nsclc",
+    "breast-cancer"
+  ],
+  "trials": [
+    "curb-oligoprogression"
+  ],
+  "technologies": [
+    "sbrt"
+  ],
+  "related": [
+    "systemic-vs-local-therapy"
+  ],
+  "links": [
+    {
+      "label": "Primary publication identity and abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+    },
+    {
+      "label": "Full original report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10880046/"
+    },
+    {
+      "label": "Registry: randomisation-based primary endpoint",
+      "url": "https://clinicaltrials.gov/study/NCT03808662"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+  "id": "paper-nrg-br002-jco-2026",
+  "kind": "paper",
+  "name": "NRG-BR002: metastasis-directed ablation during first-line therapy for limited metastatic breast cancer",
+  "tldr": "NRG-BR002 did not show improved progression-free or overall survival from adding metastasis-directed ablation in its selected breast-cancer population. This result is distinct from local palliation.",
+  "summary": "Randomised phase 2/3 design in breast cancer with no more than four metastases, a controlled primary and no progression during up to twelve months of first-line systemic treatment. All visible metastases had to be amenable to SBRT or surgery. The 2026 report enrolled 129 patients and analysed 125 eligible participants; 79 percent had HR-positive, HER2-negative disease. Ablation was SBRT in 93 percent.\n\nWith median follow-up 29.9 months and 72 progression events, the study did not meet the progression endpoint needed to proceed to phase 3. Its outcome does not establish that ablation is incapable of local control or symptom relief, or answer every breast subtype, later therapy or metastatic setting.",
+  "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+  "year": 2026,
+  "doi": "10.1200/jco-26-00201",
+  "pmid": "42842849",
+  "authors": "Chmura SJ, Winter KA, Woodward WA, Borges VF, Salama JK, Al-Hallaq HA, Matuszak MM, Milano MT, Jaskowiak NT, Jagsi R, Kuhn P, Lucci A, Meas S, Shishido SN, Mason J, Bazan JG, Nordal RA, Lee DY, Smith BD, Gabos Z, Ye JC, Kahn ST, Vallow LA, Zoberi I, Razaq W, Mishra MV, Lupinacci KM, Moughan J, Mamounas EP, White JR.",
+  "paperType": "rct",
+  "participants": 129,
+  "findings": [
+    "Median progression-free survival: 23.0 months without ablation versus 19.5 with it; hazard ratio 0.92, 95 percent confidence interval 0.57 to 1.47.",
+    "The report gives one-sided p=0.36 and stratified p=0.42 for progression. These are different reported analyses, not a value to silently interchange.",
+    "Overall-survival hazard ratio 1.07, 95 percent confidence interval 0.60 to 1.89; no statistically significant difference was shown.",
+    "No grade 5 toxicity was reported; this does not mean no lower-grade harms occurred."
+  ],
+  "caveats": [
+    "Most participants had HR-positive, HER2-negative cancer; the result does not independently settle every TNBC subgroup.",
+    "The trial did not proceed to phase 3. A planned phase 2/3 label is not evidence that the phase 3 portion was completed.",
+    "Exploratory circulating-tumour-cell findings do not establish a validated local-ablation selection rule.",
+    "The authors advise against routine use outside trials except palliation in this studied setting. The comparison does not erase the distinct symptom-relief question."
+  ],
+  "whatItMeans": "Demonstrates why a local-treatment name and a small number of metastases do not establish added patient-level benefit. Preserve the studied population, systemic strategy and endpoint.",
+  "cancers": [
+    "breast-cancer"
+  ],
+  "trials": [
+    "nrg-br002"
+  ],
+  "technologies": [
+    "sbrt"
+  ],
+  "related": [
+    "systemic-vs-local-therapy"
+  ],
+  "links": [
+    {
+      "label": "Primary publication identity and abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42842849/"
+    },
+    {
+      "label": "Full original report and analysis context",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13647293/"
+    },
+    {
+      "label": "NRG-BR002 registry",
+      "url": "https://clinicaltrials.gov/study/NCT02364557"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
+{
+  "id": "paper-nsabp-b51-nejm-2025",
+  "kind": "paper",
+  "name": "B-51: regional radiation after node-positive breast cancer becomes ypN0",
+  "tldr": "B-51 did not show a statistically significant recurrence benefit from regional irradiation in its selected post-chemotherapy ypN0 population. The confidence interval and surgery-specific comparison remain important.",
+  "summary": "Randomised comparison in biopsy-proven cT1 to T3 N1 M0 breast cancer that became pathologically node-negative after neoadjuvant chemotherapy. The 2025 report enrolled 1,641 patients; 1,556 entered the primary-event analysis, 772 with irradiation and 784 without. The primary endpoint counted invasive breast cancer recurrence or death from breast cancer.\n\nThe radiation contrast depended on surgery: after lumpectomy, both groups received whole-breast radiation with or without nodal fields; after mastectomy, chest-wall plus nodal irradiation was compared with none. A study-level statement about omission must retain these different strategies.",
+  "journal": "The New England journal of medicine",
+  "year": 2025,
+  "doi": "10.1056/nejmoa2414859",
+  "pmid": "40466065",
+  "authors": "Mamounas EP, Bandos H, White JR, Julian TB, Khan AJ, Shaitelman SF, Torres MA, Vicini FA, Ganz PA, McCloskey SA, Lucas PC, Gupta N, Li XA, McCormick B, Smith B, Tendulkar RD, Kavadi VS, Matsumoto K, Seaward SA, Irvin WJ, Lin JY, Mutter RW, Muanza TM, Stromberg J, Jagsi R, Weiss AC, Curran WJ, Wolmark N.",
+  "paperType": "rct",
+  "participants": 1641,
+  "findings": [
+    "At median follow-up 59.5 months, 109 primary events occurred: 50 with irradiation and 59 without.",
+    "Primary hazard ratio 0.88, 95 percent confidence interval 0.60 to 1.28, p=0.51; reported event-free estimates were 92.7 and 91.8 percent.",
+    "Grade 4 adverse events: 0.5 versus 0.1 percent. No deaths related to the protocol therapy were reported."
+  ],
+  "caveats": [
+    "Nonsignificance does not establish an exactly absent effect or prove safe omission in every population.",
+    "The study did not directly test pretreatment N2/N3 disease or residual ypN-positive disease.",
+    "ypN0 concerns the nodes examined; it is not by itself a complete breast-and-node response or a whole-body finding.",
+    "The registry’s estimated 1,636 and the publication’s enrolled/analysed counts are different source figures and should retain their versions.",
+    "The full report permitted ypN0i+ isolated tumour cells but did not collect their frequency or specific outcomes. The analysis used 109 primary events rather than the planned 172 in a protocol-specified time-driven report."
+  ],
+  "whatItMeans": "Informs the specified response-adapted radiation question with uncertainty. Residual-node-positive trials and personal treatment decisions require their own population and protocol context.",
+  "cancers": [
+    "breast-cancer"
+  ],
+  "trials": [
+    "nsabp-b51"
+  ],
+  "technologies": [
+    "imrt-igrt"
+  ],
+  "related": [
+    "systemic-vs-local-therapy"
+  ],
+  "links": [
+    {
+      "label": "Primary publication identity and abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40466065/"
+    },
+    {
+      "label": "Full report and methods",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+    },
+    {
+      "label": "Registry: surgery-specific arms and endpoint",
+      "url": "https://clinicaltrials.gov/study/NCT01872975"
+    }
+  ],
+  "asOf": "2026-11-09",
+  "tags": [
+    "education-audit",
+    "local-treatment"
+  ]
+},
 ];

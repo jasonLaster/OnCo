@@ -42,6 +42,7 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "category": "ADC"
   },
   {
+    targets:["chek1"],
     "id": "chk1-inhibitor-payloads",
     "name": "CHK1 inhibitor payloads",
     "aka": [
@@ -50,15 +51,8 @@ export const educationTherapeuticEvidence: TermInput[] = [
     ],
     "tldr": "A CHK1-inhibitor conjugate carries a drug that interferes with a replication-stress checkpoint. A published conference abstract reports a HER2-directed preclinical example.",
     "summary": "CHK1 inhibition is the cargo mechanism only when the inhibitor is physically attached to the conjugate. The AACR 2026 abstract describes engineered-cysteine trastuzumab, a cleavable linker and a CHK1-inhibitor payload. The investigators tested cells and a HER2-positive breast-cancer xenograft model. This establishes a publicly described payload design and model experiment, separate from giving an oral checkpoint inhibitor alongside another ADC. It does not establish human safety, benefit after a TOP1 ADC or a treatment-selection rule.",
-    "notes": [
-      "The antibody delivery antigen and the payload’s checkpoint target answer different questions. The proposed advantage depends on sufficient intracellular release and checkpoint dependence, not a HER2 or replication-stress label alone. The conference abstract reports limited model safety observations; lack of mouse weight loss cannot establish human marrow safety or a clinical therapeutic window."
-    ],
-    "links": [
-      {
-        "label": "Halazonetis et al.: CHK1-inhibitor conjugate, AACR 2026 abstract 1714",
-        "url": "https://doi.org/10.1158/1538-7445.am2026-1714"
-      }
-    ],
+    "notes": ["The antibody delivery antigen and the payload’s checkpoint target answer different questions. The proposed advantage depends on sufficient intracellular release and checkpoint dependence, not a HER2 or replication-stress label alone. The conference abstract reports limited model safety observations; lack of mouse weight loss cannot establish human marrow safety or a clinical therapeutic window.","An earlier 2020 study attached the checkpoint inhibitor AZD7762 to an antibody. The conjugate recognized the tested cell-surface target but lacked efficacy in that delivery experiment; the investigators pursued protease-activated cell-penetrating peptides instead. Physical attachment and target binding therefore did not establish a useful intracellular effect. This negative result does not establish that every CHK1-directed conjugate must fail.","The 2026 A067 conference abstract screened exatecan with prexasertib in cancer-cell and blood-progenitor assays. It proposes a candidate pair for dual-payload development; the abstract does not itself document both chemicals attached to a tested antibody. Pairwise synergy, a constructed dual-cargo product and a patient therapeutic window are separate claims.","NCT02124148 lists prexasertib and cetuximab as separately administered drugs with different schedules. It is not evidence of a cetuximab conjugate carrying a CHK1 inhibitor. Registry design, observed pharmacodynamic changes and patient outcomes also require separate interpretation."],
+    "links": [{"label":"Halazonetis et al.: CHK1-inhibitor conjugate, AACR 2026 abstract 1714","url":"https://doi.org/10.1158/1538-7445.am2026-1714"},{"label":"2020 antibody versus peptide radiosensitizer delivery experiment","url":"https://pubmed.ncbi.nlm.nih.gov/32304937/"},{"label":"Meng et al.: exatecan/prexasertib pair screening, AACR D3 abstract A067 (2026)","url":"https://doi.org/10.1158/1557-3265.d32026-a067"},{"label":"ClinicalTrials.gov: separate prexasertib/cetuximab administration in NCT02124148","url":"https://clinicaltrials.gov/study/NCT02124148"}],
     "related": [
       "adc",
       "atr-chk1-inhibitors",

@@ -579,7 +579,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-08",
-      "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse.",
+      "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse. The resolved product follow-up is recorded at f5c50fd2732a6573bbd5d36d68a14cb7696fca8a; the finding remains partial because data-comparison and broader legacy-chemistry review are unfinished.",
       "points": [
         {
           "id": "identity-and-consumers",
@@ -595,9 +595,48 @@
             }
           ],
           "remaining": [
-            "Legacy modular rules map Ed-04/brengitecan to the exact exatecan id; repair in the product proposal with scoped regression tests.",
-            "Remaining legacy comparison rows require exact-chemical and released-species verification."
+            "Remaining legacy comparison rows and chemical-family properties require exact-chemical and released-species verification.",
+            "Draft #376 corrects Ed-04/parent collapse and explicitly named legacy dual cargo; all ambiguous/novel legacy prose descriptions are not certified."
           ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "chk1-delivery-and-pair-evidence",
+    "title": "Negative conjugate delivery and candidate dual-cargo pairs",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://doi.org/10.1158/1538-7445.am2026-1714",
+      "https://pubmed.ncbi.nlm.nih.gov/32304937/",
+      "https://doi.org/10.1158/1557-3265.d32026-a067",
+      "https://clinicaltrials.gov/study/NCT02124148"
+    ],
+    "discoveryOccurrences": [
+      "chk1-attached-cargo:1",
+      "crossref-chk1-pair-title:1",
+      "primary-follow-up:32304937"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Canonical CHK1 owner already existed in draft #375. Re-read the publisher-deposited 2026 abstracts, the available 2020 MED abstract, and direct registry arms. Unavailable full manuscript excluded.",
+      "points": [
+        {
+          "id": "delivery-versus-combination",
+          "requirement": "Retain negative delivery evidence and distinguish pairwise synergy, physical dual conjugation and separately administered clinical regimens.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "chk1-inhibitor-payloads",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
+              "explanation": "The same owner now carries the negative antibody-delivery experiment, the candidate-pair limit and the separately dosed registry design."
+            }
+          ],
+          "remaining": []
         }
       ]
     }

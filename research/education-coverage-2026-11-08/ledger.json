@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "846af160695ce764270d84429dd22e02668eadc0a0a717bd33618f0cb20cd88c"
+      "recordSnapshotSha256": "673409aadfc07ee76f0f0ceffe408f15a4f424cf27b56ec54c4b2a7bf1c43ae9"
     },
     {
       "version": "draft-376",
@@ -48,14 +48,14 @@
     "conceptOrComparison": 411,
     "guideOrLesson": 112,
     "navigation": 14,
-    "navigationReviewed": 0,
-    "navigationWithTeachingContent": 0,
-    "semanticallyReviewed": 64,
-    "implementedCoverage": 51,
+    "navigationReviewed": 4,
+    "navigationWithTeachingContent": 1,
+    "semanticallyReviewed": 65,
+    "implementedCoverage": 52,
     "mainCoverage": 0,
     "unresolvedContentItems": 472,
-    "unresolvedSources": 486,
-    "adjacentConcepts": 13,
+    "unresolvedSources": 481,
+    "adjacentConcepts": 14,
     "unresolvedAdjacentConcepts": 3,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
@@ -634,7 +634,16 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex navigation classification; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the whole directory: ordered links, specialist/practice pointers and links to existing clinical owners. No unique mechanism, measurement or clinical assertion is added by the directory; linked lessons remain individually auditable.",
+        "sectionHashes": [
+          "e9c83a4cbc520aed4d3c9a2c511b5deb4daaba6819d4f78a2ec6324fb935b838",
+          "a94a5d94b808527f1d35c0f72d3695c9e5764a77ebc1befa520be70e2ed05f1c",
+          "5fcf6efbfe682fdf42cf2edc8bf42881448cf7bb8dc98d21ad5216490d71c12a",
+          "784f61a86a7eb622772803d150868247e7e939c887f2fc78181e41f54bbfb45c"
+        ],
         "points": []
       }
     },
@@ -696,7 +705,21 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex navigation classification; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read all question/comparison tables and practice instructions. Each row routes a learner question to a distinct inventoried comparison; no independent answer or clinical result is asserted here.",
+        "sectionHashes": [
+          "5c32b38eb902dc1b0357e17a83482615eeac6616f3a00d780fb3b1c1dc7b66a1",
+          "9e7710c73c4494746fd90071e4288509c69fe5f8a5710bf300d7dc8d93f1cd7d",
+          "283ed4f7c7f89987c8137f8267bb81bf99cb83f17f35528522ed91caf2c3fba8",
+          "69651168630ca93c66f5afa7013c64af5231fa8f7852dd643a9f7156c9f5d2b1",
+          "7b784859fb875e5c5903b650cf93ca6394c058c9d095adcc85844f14160d25bf",
+          "639919eb990b0168e709144e8a990503e93023b79486a9a706accb12da60fdcb",
+          "67139accd0021ffa21741bb0d9a7772acac7a6b5dee2bf11835bd06d1fb64bca",
+          "e3945c26e8a25a378454116b33701ba9627f01c472497d51e79382420d7e7feb",
+          "ba53b50a6ad3e6185724babefabb24798b1b44810f2cfd4e4ff1f140171c2155"
+        ],
         "points": []
       }
     },
@@ -30368,10 +30391,17 @@
                 "field": "summary",
                 "fieldSha256": "c676d6ddfa2881d7afd50a686127e1dbfc75a90fd49c0e636cad4efbf1a980d3",
                 "explanation": "The existing exatecan id now owns a defined chemical, distinct from derivative systems; free-regimen evidence is scoped."
+              },
+              {
+                "recordId": "chk1-inhibitor-payloads",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
+                "explanation": "Existing CHK1 owner now retains the 2020 negative delivery experiment, 2026 construct and pair-screening distinction, and separately dosed clinical regimen."
               }
             ],
             "remaining": [
-              "Verify the explicitly named CHK1 and other repair-directed attached-cargo evidence; a separately administered combination is not a conjugated payload.",
+              "CHK1 already has a cited draft owner, now supplemented with negative delivery evidence. Reconcile all remaining named family/subtype and legacy comparison properties against the exact chemical or construct before closing breadth.",
               "Reconcile remaining legacy comparison profiles and exact derivative identities, including modular Ed-04/brengitecan inference. The exatecan owner is repaired in draft #369, but that does not repair every derivative or consumer.",
               "An earlier review path was absent from the pinned public tree; its unverified provenance is excluded as evidence."
             ]
@@ -31143,7 +31173,7 @@
                 "recordId": "chk1-inhibitor-payloads",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "c4a7fe12278d96fd7ab82a54e96b280cbf489af3080d0af1dea5c3a14ecdaac0",
+                "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
                 "explanation": "Limited animal observations cannot establish human marrow safety or a clinical window."
               }
             ],
@@ -32389,7 +32419,7 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-08",
-        "rationale": "Read all general teaching and worked examples, including evidence and source-scope sections. Patient-specific content is excluded. The curriculum is a discovery source; categorical claims and current clinical details require independent verification. Canonical field matching and supplementation are tracked below.",
+        "rationale": "Read all general teaching and worked examples, including evidence and source-scope sections. Patient-specific content is excluded. The curriculum is a discovery source; categorical claims and current clinical details require independent verification. Canonical field matching and supplementation are tracked below. Re-read the actual completed antibody/ADC/bispecific/CAR/radioimmunotherapy fields and draft #373 binder-format owner. Their explicit distinctions jointly represent the general comparison; no cross-format clinical superiority or new efficacy claim is inferred.",
         "sectionHashes": [
           "a278e075e19231959f3d67cd4d71154b826dca13c4c2b8a2aaa5761c4c6082d6",
           "48b05d2338ed15a0b5698b88a28abb6f9ebd27701a487b494781a84f714fba75",
@@ -32408,38 +32438,118 @@
           {
             "id": "three-axes",
             "requirement": "Distinguish target antigen, binder or epitope and complete therapeutic format; shared names or sequence do not establish interchangeability.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "monoclonal-antibody",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e6fbd38ac45167d783b01c992757042f4a938b3563c363cc3edefaa677015c7b",
+                "explanation": "Separates a shared target name, epitope, recognition and assembled product action."
+              },
+              {
+                "recordId": "binder-format-constraints",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "29c5dc425df2ba026f49ec91f7d5f5bd8c0bb96f26b67be1c08b8d51c053ed9d",
+                "explanation": "A binding domain and epitope geometry have format-dependent tested function; one format does not establish interchangeability."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "format-requirements",
             "requirement": "Compare recognition with chemical delivery, immune bridging, living-cell action and radiation dose without ranking formats by name.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adc",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "0e0b8ba9e7870748e364612d2fbce0a909467835f1934bc49454713f80fac1f4",
+                "explanation": "Separates antigen recognition, chemical release and payload action."
+              },
+              {
+                "recordId": "bispecific-antibody",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ea20e554806ce686c69e82e2fe992c930e62f47e67d24c720f49db584ba9ba1d",
+                "explanation": "Separates cell bridging from other bispecific actions."
+              },
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "3975f65196e1fe400c3ea6a6b26ef05db2652bda5e58de6d77f6bfd3f369a64d",
+                "explanation": "Separates an external binder, cell-membrane assembly and intracellular signaling, retaining peptide-HLA exceptions."
+              },
+              {
+                "recordId": "radioimmunotherapy",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "2e093bd9a27e996a507d314d0b8a695555bfe9ea633410f7ab62a318d5169589",
+                "explanation": "Radiation deposition depends on labeled-product distribution/retention, emission and geometry."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "resistance-safety",
             "requirement": "Keep shared delivery failures, format-specific barriers and healthy-tissue recognition separate from a claim of resistance bypass.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adc",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "5ccd08a8652498423d429ce75d9b94f08edb9e3d76938679104b2f2c773c7649",
+                "explanation": "Delivery, processing, efflux/cell response and healthy tissue remain failure/toxicity routes."
+              },
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "f050833ed8c2f185ec26342ccc2b2c9a5cdc5ab64ba41a9701103ccc69649e2f",
+                "explanation": "Living-cell access, cell state, antigen heterogeneity and shared healthy targets are distinct constraints."
+              },
+              {
+                "recordId": "radioimmunotherapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "0b219fd2c94ce69197c58c2c6ca606def18de70eaa6f901635be8267a71d9434",
+                "explanation": "Crossfire does not establish clinical benefit after ADC resistance."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "complete-product",
             "requirement": "Require whole-product binding, functional, exposure or dosimetry evidence and clinical context before borrowing results across formats.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "monoclonal-antibody",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e6fbd38ac45167d783b01c992757042f4a938b3563c363cc3edefaa677015c7b",
+                "explanation": "Binding, functional activity, exposure and clinical benefit answer different questions for the assembled product."
+              },
+              {
+                "recordId": "binder-format-constraints",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "29c5dc425df2ba026f49ec91f7d5f5bd8c0bb96f26b67be1c08b8d51c053ed9d",
+                "explanation": "Retains exact experimental models and prevents transfer to all targets, payloads and clinical settings."
+              },
+              {
+                "recordId": "radioimmunotherapy",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "00acd97f615a377ff1ae8395d64aa8d2e06f37b0a9472287560154dc77337dbc",
+                "explanation": "Target expression and antibody/small-ligand kinetics do not establish a sufficient or interchangeable radiation dose."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -40394,7 +40504,15 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex navigation classification; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read all path rows, prerequisites and reference/learning guidance. It routes learner goals to inventoried paths; it adds no independent scientific claim.",
+        "sectionHashes": [
+          "57cc8e2280fad48322079e99ea174d69fb22816e35702a40564cab4a98b02664",
+          "ca20fb624062e56a7ee33b44cf4cb0c7e3fa5f66e9770720052624dcfd421a99",
+          "851c70bfc86fd0b12e8deb1b228ea3662425bc278976fec9a9e2d02b07231c26"
+        ],
         "points": []
       }
     },
@@ -42779,7 +42897,17 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
+        "status": "navigation",
+        "auditor": "Codex navigation classification; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the goal-path table, foundation order, concept and application-owner navigation. The index adds routing and source-ownership instructions; linked lessons retain their separate coverage requirements.",
+        "sectionHashes": [
+          "a7ca8109fc7253645262c49b5279b5eb40e2905a6c34c69796be5116f0602d5d",
+          "c6534aa744a49e97d3b8be7dae13e954e20ab831b6f7871c677b0b9ac0015fa6",
+          "d5701d2a3a6fa1534fb82432cb58d2759be9953b1214962fb4cc9f87f2bb815c",
+          "78f9ad52b9e862f081019f16ce1d93c27f1bc0e25bea370b407a90dc03e50af9",
+          "2778b2f551f89385790f8f4c3f3f3b3715e5aa7cd7fd0556107aac82e1faaa43"
+        ],
         "points": []
       }
     },
@@ -43248,8 +43376,74 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general section. This nominal navigation shelf adds planning boundaries and scoped trial comparisons, so it must be audited as teaching content. Canonical owner/primary-source matching remains open; no displayed figure is newly certified.",
+        "sectionHashes": [
+          "088312860d0ae6cd4cc55defd57d015454fab27213e17870662024f9f30e14dc",
+          "5d513ebfe8b4b7af1463cd55e80447462cbd47ec27170f3deb7ded212c89e5d7",
+          "3107f11dcb289350252b9351829e4ec80316049025b09c07ef4f2c12cc777f21",
+          "87c1d91bb4d9baa5510f7311e64c31c1ee03e92d1c1f4375bcb5eb87d6e2a242",
+          "3a1f0215bcb52d43278c86862d95f950d92954b46a3225418dcfe2f2a2524230",
+          "15c08665d8dd366ad38f5f25b55cdef4b2cf378c9ccb6b10f520d18171dbc72a"
+        ],
+        "points": [
+          {
+            "id": "planning",
+            "requirement": "Retain modality-specific access, target-zone/margin, dose/motion/retention and normal-tissue planning constraints rather than inferring suitability from a technology name.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          },
+          {
+            "id": "study-context",
+            "requirement": "Keep oligoresidual, oligoprogressive, limited metastatic and locoregional study settings, disease populations, prior treatment and ablation versus SBRT distinct.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          },
+          {
+            "id": "outcome-scope",
+            "requirement": "Distinguish treated-site response, distant disease control, added progression/survival benefit and symptom relief; a null added-outcome result is endpoint- and comparison-specific.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          },
+          {
+            "id": "immune-mechanism",
+            "requirement": "Require evidence linking local injury/signals to presentation, priming and useful immune recognition rather than automatically calling injury an in-situ vaccine.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          },
+          {
+            "id": "radiopharmaceutical-exposure",
+            "requirement": "Separate tracer uptake, biodistribution, absorbed radiation dose and normal-organ exposure for the actual product.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          },
+          {
+            "id": "study-version-and-origin",
+            "requirement": "Retain the inspected study version, population, two strategies, endpoint and starting time; a case report is not an estimate of added treatment effect.",
+            "status": "unreviewed",
+            "evidence": [],
+            "remaining": [
+              "Canonical-owner and exact-source comparison remains open."
+            ]
+          }
+        ]
       }
     },
     {
@@ -46986,7 +47180,7 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-08",
-        "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse.",
+        "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse. The resolved product follow-up is recorded at f5c50fd2732a6573bbd5d36d68a14cb7696fca8a; the finding remains partial because data-comparison and broader legacy-chemistry review are unfinished.",
         "points": [
           {
             "id": "identity-and-consumers",
@@ -47002,9 +47196,48 @@
               }
             ],
             "remaining": [
-              "Legacy modular rules map Ed-04/brengitecan to the exact exatecan id; repair in the product proposal with scoped regression tests.",
-              "Remaining legacy comparison rows require exact-chemical and released-species verification."
+              "Remaining legacy comparison rows and chemical-family properties require exact-chemical and released-species verification.",
+              "Draft #376 corrects Ed-04/parent collapse and explicitly named legacy dual cargo; all ambiguous/novel legacy prose descriptions are not certified."
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chk1-delivery-and-pair-evidence",
+      "title": "Negative conjugate delivery and candidate dual-cargo pairs",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://doi.org/10.1158/1538-7445.am2026-1714",
+        "https://pubmed.ncbi.nlm.nih.gov/32304937/",
+        "https://doi.org/10.1158/1557-3265.d32026-a067",
+        "https://clinicaltrials.gov/study/NCT02124148"
+      ],
+      "discoveryOccurrences": [
+        "chk1-attached-cargo:1",
+        "crossref-chk1-pair-title:1",
+        "primary-follow-up:32304937"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Canonical CHK1 owner already existed in draft #375. Re-read the publisher-deposited 2026 abstracts, the available 2020 MED abstract, and direct registry arms. Unavailable full manuscript excluded.",
+        "points": [
+          {
+            "id": "delivery-versus-combination",
+            "requirement": "Retain negative delivery evidence and distinguish pairwise synergy, physical dual conjugation and separately administered clinical regimens.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "chk1-inhibitor-payloads",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
+                "explanation": "The same owner now carries the negative antibody-delivery experiment, the candidate-pair limit and the separately dosed registry design."
+              }
+            ],
+            "remaining": []
           }
         ]
       }

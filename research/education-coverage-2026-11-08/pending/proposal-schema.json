@@ -3,7 +3,7 @@
   "state": "Open draft product proposal; reader/search/decomposition and export consumers verified locally; owner approval and upstream preview pending; not merged",
   "pr": 376,
   "url": "https://github.com/judegomila/OnCo/pull/376",
-  "head": "1982abcba38e08085e11dcbd244acca940630ad7",
+  "head": "f5c50fd2732a6573bbd5d36d68a14cb7696fca8a",
   "records": [
     {
       "id": "trastuzumab-emtansine",
@@ -443,7 +443,7 @@
       "name": "PD-L1 IHC 22C3 pharmDx",
       "aka": [],
       "tldr": "The 22C3 pharmDx assay is the PD-L1 stain tied to pembrolizumab since 2015 and the source of the combined positive score (CPS). The cut-off differs by cancer: 1% of tumour cells in lung cancer, CPS 1 in gastric, cervical and head and neck cancer, CPS 10 in oesophageal and triple-negative breast cancer, so one stain is read differently per disease.",
-      "summary": "Approved 2 October 2015 (PMA P150013, Dako, now Agilent) as the companion diagnostic for pembrolizumab in non-small-cell lung cancer, initially at TPS ≥50% and from 2016 at TPS ≥1%. It has since been approved for gastric and gastro-oesophageal junction cancer (CPS ≥1, 2017), cervical cancer (CPS ≥1, 2018), head and neck squamous cell carcinoma (CPS ≥1, 2019), oesophageal squamous cell carcinoma (CPS ≥10, 2019) and triple-negative breast cancer (CPS ≥10, 2020, KEYNOTE-355). The many cut-offs are a source of confusion for patients: the same stain is read differently depending on the cancer and the trial that set the threshold.",
+      "summary": "Approved 2 October 2015 (PMA P150013, Dako, now Agilent) as the companion diagnostic for pembrolizumab in non-small-cell lung cancer, initially at TPS \u226550% and from 2016 at TPS \u22651%. It has since been approved for gastric and gastro-oesophageal junction cancer (CPS \u22651, 2017), cervical cancer (CPS \u22651, 2018), head and neck squamous cell carcinoma (CPS \u22651, 2019), oesophageal squamous cell carcinoma (CPS \u226510, 2019) and triple-negative breast cancer (CPS \u226510, 2020, KEYNOTE-355). The many cut-offs are a source of confusion for patients: the same stain is read differently depending on the cancer and the trial that set the threshold.",
       "status": "approved",
       "asOf": "2026-11-08",
       "links": [
@@ -574,17 +574,17 @@
         {
           "region": "US",
           "year": 2017,
-          "indication": "Gastric / GEJ adenocarcinoma, CPS ≥1"
+          "indication": "Gastric / GEJ adenocarcinoma, CPS \u22651"
         },
         {
           "region": "US",
           "year": 2019,
-          "indication": "Head and neck squamous cell carcinoma (CPS ≥1) and oesophageal squamous cell carcinoma (CPS ≥10)"
+          "indication": "Head and neck squamous cell carcinoma (CPS \u22651) and oesophageal squamous cell carcinoma (CPS \u226510)"
         },
         {
           "region": "US",
           "year": 2020,
-          "indication": "Triple-negative breast cancer, CPS ≥10 (pembrolizumab plus chemotherapy)"
+          "indication": "Triple-negative breast cancer, CPS \u226510 (pembrolizumab plus chemotherapy)"
         }
       ],
       "mechanismSteps": [],
@@ -852,7 +852,7 @@
         },
         {
           "id": "out",
-          "label": "Cyclin D1, MYC → proliferation",
+          "label": "Cyclin D1, MYC \u2192 proliferation",
           "x": 50,
           "y": 97
         },
@@ -900,7 +900,7 @@
               "sourceDate": "1993-12-01",
               "basis": "observed",
               "context": "Recombinant Raf-1 (CRAF) and Mek1 proteins produced in Sf9 insect cells; association and phosphorylation experiments.",
-              "statement": "The study reported a Raf-1–Mek1 complex and Mek1 activation associated with serine phosphorylation after coexpression with Raf-1.",
+              "statement": "The study reported a Raf-1\u2013Mek1 complex and Mek1 activation associated with serine phosphorylation after coexpression with Raf-1.",
               "limitation": "This experiment concerns CRAF and MEK1 in a recombinant system. It does not establish the same behaviour for every RAF isoform or show patient benefit from a drug combination."
             }
           ]
@@ -927,7 +927,7 @@
         }
       ],
       "interventions": [
-        "KRAS G12C inhibitors (sotorasib, adagrasib) ± anti-EGFR in colorectal cancer",
+        "KRAS G12C inhibitors (sotorasib, adagrasib) \u00b1 anti-EGFR in colorectal cancer",
         "Pan-RAS(ON) inhibitor daraxonrasib (phase 3, pancreatic)",
         "BRAF + MEK inhibitors (dabrafenib/trametinib, encorafenib/binimetinib)",
         "Encorafenib + cetuximab (+ chemo) in BRAF V600E CRC",

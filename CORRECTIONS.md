@@ -4,6 +4,23 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-08
 
+### Systematic public-education coverage audit: therapeutic mechanisms
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Drug-to-antibody ratio](/terms/dar/) | Defined a loading number on each antibody and guaranteed homogeneous loading with better PK | Hamblett loading experiments; Junutula and Lyon studies | Defines the mean/distribution and model-specific loading/exposure tradeoffs; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Linker chemistry](/terms/linker/) | Said all cleavable linkers release free drug and every noncleavable catabolite cannot cross membranes | Gradual SN-38 release; T-DM1 catabolite transport and Ogitani comparisons | Retains actual released species, construct-specific processing and transport; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Site-specific conjugation](/technologies/site-specific-conjugation/) | Guaranteed homogeneous DAR and safer, more effective products; the drawing repeated the guarantee | Engineered-cysteine and hydrophilicity experiments | Qualifies near-homogeneity, measurement and animal-versus-human evidence; corrects the drawing; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Antibody-drug conjugates](/technologies/adc/) | Guaranteed a hundredfold therapeutic-window gain and grouped enfortumab with TOP1 payloads | FDA clinical-pharmacology scope; raw DailyMed PADCEV description; primary release and bystander studies | Removes unsupported universal gain and the incorrect payload-class grouping; separates design steps; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Bystander killing](/terms/bystander-effect/) | Made a cleavable linker an absolute requirement and equated model chemistry with clinical benefit | Ogitani mixed-cell and opposite-flank experiments | Defines the released-species and local-exposure mechanism with explicit model limits; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Bispecific conjugates](/technologies/bispecific-adc/) | Guaranteed better tumor selectivity, uptake and safe high loading from two binding targets | Li biparatopic and Andreev trafficking experiments | Retains design-specific recognition/uptake and the need for complete-product clinical comparisons; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Cross-resistance](/terms/cross-resistance/) | Narrowed shared ADC resistance to the payload rather than delivery and processing as well | Kinneer transporter and Rampa resistance studies; Abelman selected cohort | Separates failure layers, mixed mechanisms and model versus clinical evidence; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Monoclonal antibodies](/technologies/monoclonal-antibody/) | Restricted the general mechanism to human IgG and implied IV-only use; an inherited note declared CD20 non-internalizing | NCI, FDA Q6B and raw RITUXAN HYCELA description; Lim rituximab-CD20 experiments | Defines complete-product function and variation; corrects the internalization claim in both owning notes; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [ATR and CHK1 inhibitors](/technologies/atr-chk1-inhibitors/) | Guaranteed death from checkpoint inhibition and illustrated the mechanism as PARP trapping | Camonsertib/prexasertib reports and attached-cargo abstracts | Retains context-specific dependence and toxicity; uses the direct kinase illustration; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Dosimetry](/terms/dosimetry/) | Presented estimated dose as a direct measurement of what tissue actually received and one scan method as universal | MIRD dosimetry and EPA unit definitions | Separates activity, modeled absorbed dose, sampling, geometry and uncertainty; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Radioimmunotherapy](/technologies/radioimmunotherapy/) | Said any ADC target becomes a radiation target and described chelation as universal | FDA radiopharmaceutical scope, MIRD, J591 and historical BEXXAR covalent-labeling description | Retains product-specific attachment, distribution, dose and normal-tissue exposure; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+
+
 ### Systematic public-education coverage audit: biology
 
 | Date | Entity | What was wrong | How found | Fix |

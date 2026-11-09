@@ -456,7 +456,7 @@ S["dual-payload-adc"] = () => { const m = adcMesh(8, [true, true], ["Antibody", 
 S["degrader-antibody-conjugate"] = () => { const m = adcMesh(4, [true, true], ["Antibody", "Degrader payload (glue / PROTAC)", "Antigen-binding arm"]); return m; };
 S["immune-stimulating-adc"] = () => adcMesh(4, [true, true], ["Antibody", "TLR / STING agonist payload", "Tumour antigen arm"]);
 S["masked-adc"] = () => { const m = adcMesh(6, [true, true], ["Antibody", "Payload", "Binding arm"]); const [l, r] = antibodyTips(1.0); add(m, polyline([[l[0] - 0.15, l[1] + 0.05, 0], [l[0] + 0.15, l[1] + 0.2, 0]], "hot")); add(m, polyline([[r[0] - 0.15, r[1] + 0.2, 0], [r[0] + 0.15, r[1] + 0.05, 0]], "hot")); label(m, [r[0], r[1] + 0.2, 0], "Peptide mask, cleaved by tumour proteases"); return m; };
-S["site-specific-conjugation"] = () => adcMesh(4, [true, true], ["Antibody", "Defined attachment sites (homogeneous DAR)", "Fab arm"]);
+S["site-specific-conjugation"] = () => adcMesh(4, [true, true], ["Antibody", "Selected attachment sites; loading checked", "Fab arm"]);
 S["bispecific-adc"] = () => { const m = adcMesh(8, [true, false], ["Antibody", "TOP1 payload", "Arm 1 (e.g. EGFR)"]); const [, r] = antibodyTips(1.0); add(m, polyline([[0.12, -0.05, 0], [r[0], r[1] + 0.05, 0]], undefined)); add(m, sphere(0.14, 3, 8), { at: [r[0], r[1] + 0.05, 0] }); label(m, [r[0], r[1] + 0.05, 0], "Arm 2 (e.g. HER3)"); return m; };
 S["peptide-drug-conjugate"] = () => { const m = empty(); add(m, polyline([[-0.6, 0.3, 0], [-0.3, 0.6, 0.1], [0.1, 0.5, -0.1], [0.4, 0.2, 0.1], [0.2, -0.2, 0], [-0.3, -0.1, -0.1]], undefined, true)); add(m, line([0.4, 0.2, 0.1], [0.9, 0.1, 0.1], "soft")); add(m, octahedron(0.12, "accent"), { at: [1.05, 0.1, 0.1] }); label(m, [-0.3, 0.6, 0.1], "Bicyclic peptide binder"); label(m, [1.05, 0.1, 0.1], "Payload"); return m; };
 S["adc-payload-neutralizer"] = () => { const m = adcMesh(6, [true, true], ["ADC", "Payload", "Binding arm"]); add(m, sphere(0.3, 3, 8, "hot"), { at: [1.2, -0.9, 0] }); add(m, octahedron(0.07, "accent"), { at: [1.2, -0.9, 0] }); label(m, [1.2, -0.9, 0], "Free payload captured"); return m; };
@@ -649,7 +649,7 @@ export const SCHEMATIC_ALIAS: Record<string, string> = {
   "gamma-secretase-inhibitors": "kinase-inhibitors",
   celmods: "molecular-glue-platforms",
   "lsd1-inhibitors": "epigenetic-drugs",
-  "atr-chk1-inhibitors": "parp-inhibitor",
+  "atr-chk1-inhibitors": "kinase-inhibitors",
   "kat6-inhibitors": "epigenetic-drugs",
   "genetically-engineered-mouse-models": "pdx-models",
   "humanised-mouse-models": "pdx-models",

@@ -37,5 +37,19 @@
     "finding": "PathwayEdgeSchema retains only endpoints and activates/inhibits. The rendered RNA-splicing map illustrates how context-dependent effects and dependencies acquire categorical arrow wording even when prose is qualified. Record-level sources/notes exist, but the edge has no scoped evidence/provenance fields.",
     "needed": "A backwards-compatible optional edge-evidence/context structure and a reviewed rendering rule that preserves uncertainty. Do not infer universal causality from a pathway diagram or replace verified mechanisms with generic doubt.",
     "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now."
+  },
+  {
+    "id": "conjugate-payload-composition",
+    "status": "open; concrete schema proposal required",
+    "question": "Can a drug query distinguish delivery antigen, payload chemical identity, payload mechanism/class, released species and per-payload loading for a dual-payload construct?",
+    "currentFields": [
+      "src/lib/schema.ts:DrugSchema.payload",
+      "src/lib/schema.ts:DrugSchema.linker",
+      "src/lib/schema.ts:DrugSchema.targets",
+      "src/lib/schema.ts:CombinationIdeaSchema.components"
+    ],
+    "finding": "Drug payload and linker are optional strings. Combination ideas support string-valued component axes, but this does not normalize sourced multi-payload drug composition, distinguish delivery from payload targets, or preserve per-component loading/analyte evidence. Existing descriptions and payload-class term records are acknowledged.",
+    "needed": "Optional backwards-compatible sourced composition entries distinguishing chemical identities, class/mechanism references and released catabolites, with scoped loading observations and dates. Preserve unknown values; do not split a total DAR into invented component ratios or classify radiation as a small-molecule cytotoxic mechanism.",
+    "approvalDependency": "Drug schema, format decomposition and any display changes need a concrete product proposal and owner review."
   }
 ]

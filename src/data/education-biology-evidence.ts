@@ -206,7 +206,8 @@ export const educationBiologyEvidence: TermInput[] = [
       "epigenetic-reprogramming",
       "methylation-profiling",
       "methylation-arrays",
-      "gene-expression"
+      "gene-expression",
+      "histone-lactylation"
     ],
     "kind": "term",
     "asOf": "2026-11-08",

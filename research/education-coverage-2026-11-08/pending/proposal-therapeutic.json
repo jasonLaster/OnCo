@@ -1,0 +1,1333 @@
+{
+  "version": "proposal-therapeutic",
+  "state": "implemented in isolated worktree; draft contribution, not merged",
+  "records": [
+    {
+      "id": "adc",
+      "kind": "technology",
+      "name": "Antibody-drug conjugate (ADC)",
+      "aka": [],
+      "tldr": "An antibody-drug conjugate links a target-binding antibody to an active drug. Binding, delivery, release and drug action each matter, and normal tissues can also be exposed.",
+      "summary": "The antibody recognizes an accessible antigen; the attachment chemistry and linker affect stability and release; the payload acts through its own molecular mechanism. Cytotoxic examples include TOP1 inhibitors, tubulin inhibitors and DNA-damaging agents. Uptake and lysosomal processing are important for many constructs, while some linkers also release drug outside cells. A surface antigen can be a delivery address without being a driver the tumor depends on. The dose, mean loading, loading distribution, released species and exposure must be interpreted for the finished product. There is no universal fold improvement in the therapeutic window.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "FDA: clinical pharmacology considerations for cytotoxic antibody-drug conjugates (2024)",
+          "url": "https://www.fda.gov/media/155997/download"
+        },
+        {
+          "label": "Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26101915/"
+        },
+        {
+          "label": "Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36741448/"
+        },
+        {
+          "label": "Ogitani et al.: released-species permeability and local bystander killing in models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41591991/"
+        },
+        {
+          "label": "FDA: companion diagnostics and corresponding therapeutic uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "Lim et al.: rituximab-CD20 internalization in B-cell malignancies (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21768293/"
+        },
+        {
+          "label": "Kinneer et al.: lysosomal-transporter-dependent conjugate resistance (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30131388/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "idea-efflux-agnostic",
+        "idea-neoadjuvant-adc-io",
+        "db-1305",
+        "ibi130",
+        "9mw2921",
+        "bat8008",
+        "avzo-103",
+        "ibi3014",
+        "bhv-1510",
+        "vbc103"
+      ],
+      "cancers": [
+        "dlbcl",
+        "hodgkin-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "adcs"
+      ],
+      "technologies": [
+        "topoisomerase-inhibitors",
+        "bispecific-adc",
+        "dual-payload-adc",
+        "degrader-antibody-conjugate",
+        "immune-stimulating-adc",
+        "masked-adc",
+        "site-specific-conjugation",
+        "radioimmunotherapy"
+      ],
+      "targets": [
+        "trop2",
+        "her2",
+        "her3",
+        "nectin4",
+        "b7h3",
+        "cldn18-2",
+        "folr1",
+        "tissue-factor",
+        "cdh6",
+        "met",
+        "cd19",
+        "bcma",
+        "cd33",
+        "cd123",
+        "ror1",
+        "cd79b",
+        "cd30",
+        "cd22"
+      ],
+      "drugs": [],
+      "companies": [
+        "celldex",
+        "tubulis",
+        "adcendo",
+        "alentis-therapeutics",
+        "bighat-biosciences",
+        "callio-therapeutics",
+        "cytomx-therapeutics",
+        "dantari",
+        "emergence-therapeutics",
+        "enlaza-therapeutics",
+        "firefly-bio",
+        "ideaya-biosciences",
+        "iksuda-therapeutics",
+        "mablink-bioscience",
+        "myricx-bio",
+        "mythic-therapeutics",
+        "nbe-therapeutics",
+        "orum-therapeutics",
+        "pheon-therapeutics",
+        "profoundbio",
+        "tallac-therapeutics",
+        "valink-therapeutics",
+        "neok-bio",
+        "sidewinder-therapeutics",
+        "adcytherix",
+        "stipple-bio",
+        "indupro-therapeutics",
+        "crescent-biopharma",
+        "kivu-bioscience",
+        "disco-pharmaceuticals",
+        "angiex",
+        "novelty-nobility",
+        "intocell",
+        "tagworks-pharmaceuticals",
+        "axcynsis-therapeutics",
+        "oncusp-therapeutics",
+        "primelink-biotherapeutics",
+        "dem-biopharma",
+        "var2-pharmaceuticals",
+        "biolojic-design",
+        "phrontline-biopharma",
+        "nanolattix",
+        "solve-therapeutics",
+        "advesya",
+        "dauntless-biotherapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "linker",
+        "dar",
+        "bystander-effect",
+        "ild",
+        "adc-analytes-and-exposure",
+        "chk1-inhibitor-payloads",
+        "parp-inhibitor-payloads"
+      ],
+      "trials": [
+        "aaml0531",
+        "luminosity",
+        "nct07299747",
+        "nct06797999",
+        "nct06842498",
+        "nct07354711",
+        "nct07258407",
+        "nct06464055"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "monoclonal-antibody",
+        "adc-cdmo-manufacturing",
+        "high-potency-payload-synthesis",
+        "site-specific-conjugation",
+        "sterile-fill-finish"
+      ],
+      "notes": [
+        "The treatment and diagnostic labels retain product-specific indications and testing requirements. A companion diagnostic validated for one drug or intended use is not automatically interchangeable with another. Keep the study population, comparator and prior exposure with any clinical result; a binding result or shared antigen name does not transfer benefit.",
+        "Lymphoma: binding and antigen abundance do not by themselves establish usable payload delivery. Internalization, intracellular processing and payload transport need construct-specific evidence. CD20 is not universally non-internalizing: rituximab-CD20 uptake varied with target-cell Fc-gamma receptor IIb in the cited experiments. Lysosomal-transporter experiments with other conjugates also show that a block after uptake can cause resistance. These observations do not establish one limiting toxicity for all lymphoma ADCs."
+      ],
+      "principle": "Binding can support delivery, but uptake, processing, access to the payload’s target and cellular response require separate evidence.",
+      "generation": "Attachment chemistry, payload and delivery format vary across products",
+      "strengths": [
+        "Can deliver an active drug through a selected molecular address",
+        "Some constructs kill neighboring target-negative cells in defined models"
+      ],
+      "limitations": [
+        "Normal-tissue exposure and product-specific lung, blood-cell, nerve or eye toxicity remain possible",
+        "Antigen, trafficking, release, efflux and cell-response changes can cause resistance",
+        "Binding or an expression score alone does not establish benefit"
+      ],
+      "since": 2000
+    },
+    {
+      "id": "site-specific-conjugation",
+      "kind": "technology",
+      "name": "Site-specific conjugation & linker chemistry",
+      "aka": [],
+      "tldr": "Attachment sites, loading and linker chemistry shape the finished conjugate. More controlled manufacture can help, but safety and effectiveness require evidence for that product.",
+      "summary": "Conventional attachment to available lysines or reduced cysteines can produce mixtures of attachment sites and loading states. Engineered sites and other selective chemistries aim to control these features. In one engineered-cysteine study, a near-homogeneous anti-MUC16 conjugate retained mouse antitumor activity and was tolerated at higher doses in rats and monkeys than its conventional comparator. That result supports a design strategy, not a guarantee of identical loading or improved human outcomes for every site-specific product. Hydrophilic drug-linker designs have also reduced accelerated clearance in studied high-loading constructs.",
+      "status": "established",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bioconjugation",
+      "links": [
+        {
+          "label": "Junutula et al.: engineered-cysteine conjugation and animal therapeutic index (2008)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18641636/"
+        },
+        {
+          "label": "Lyon et al.: hydrophobicity, loading and conjugate pharmacokinetics (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26076429/"
+        },
+        {
+          "label": "Hamblett et al.: drug loading in one anti-CD30 conjugate, cell and mouse experiments (2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15501986/"
+        },
+        {
+          "label": "Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26101915/"
+        },
+        {
+          "label": "Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36741448/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [
+        "adcs",
+        "drug-discovery"
+      ],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "tubulis",
+        "enlaza-therapeutics",
+        "bright-peak-therapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "dar",
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Protease cleavage, hydrolysis or reduction can release a payload from appropriate cleavable linkers. Noncleavable designs rely on antibody breakdown and can leave an active linker-bearing catabolite. HIC, mass spectrometry, attachment-site mapping and stability assays answer different characterization questions; an average DAR or the name of a platform does not establish equivalence."
+      ],
+      "principle": "Attachment site, site occupancy, linker chemistry and released chemical species are separate properties of the complete conjugate.",
+      "strengths": [
+        "More control of attachment and loading in suitable designs",
+        "Can support defined single- or multiple-payload constructs"
+      ],
+      "limitations": [
+        "Loading distribution and impurities still require measurement",
+        "Stability, aggregation, exposure and safety remain product-specific"
+      ]
+    },
+    {
+      "id": "linker",
+      "kind": "term",
+      "name": "Linker (ADC)",
+      "aka": [],
+      "tldr": "The linker connects antibody and payload. Its chemistry affects where the drug separates and which active chemical species becomes available.",
+      "summary": "Cleavable linkers can respond to enzymes, reduction or hydrolysis under specified conditions. Release is construct-specific and need not occur exclusively inside a cancer cell. A noncleavable linker can remain on the payload while the antibody is broken down, leaving an active amino-acid-linker-payload catabolite. For T-DM1, Lys-SMCC-DM1 must leave the lysosome to reach its intracellular site of action; SLC46A3 directly transports this catabolite in experimental systems. The released species can differ from the unconjugated parent drug in transport and permeability.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26101915/"
+        },
+        {
+          "label": "Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36741448/"
+        },
+        {
+          "label": "Ogitani et al.: released-species permeability and local bystander killing in models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Lyon et al.: hydrophobicity, loading and conjugate pharmacokinetics (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26076429/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "site-specific-conjugation"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The T-DM1 catabolite has low membrane permeability in the cited comparison; that is not a chemical rule that every noncleavable catabolite is impermeable. Bystander activity depends on release, diffusion, local concentration and neighboring-cell susceptibility. Linker hydrophilicity can mitigate hydrophobicity in particular designs without guaranteeing freedom from aggregation or toxicity."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dar",
+      "kind": "term",
+      "name": "Drug-to-antibody ratio (DAR)",
+      "aka": [
+        "drug-to-antibody ratios"
+      ],
+      "tldr": "DAR usually reports the average number of payload molecules attached per antibody. The average can hide a mixture of differently loaded molecules.",
+      "summary": "Drug-to-antibody ratio describes payload loading. A preparation can contain antibodies with different numbers and sites of attachment, so the reported mean does not specify every molecule. Two preparations with the same mean can differ in their loading distribution and attachment chemistry. Higher loading can increase cell-assay potency while also changing hydrophobicity, aggregation, clearance and tolerated exposure. Hamblett and colleagues separated differently loaded versions of one anti-CD30 conjugate and found that greater cell-assay potency did not translate into a proportional mouse treatment advantage. That experiment does not set one optimal DAR for every product.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "Hamblett et al.: drug loading in one anti-CD30 conjugate, cell and mouse experiments (2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15501986/"
+        },
+        {
+          "label": "Junutula et al.: engineered-cysteine conjugation and animal therapeutic index (2008)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18641636/"
+        },
+        {
+          "label": "Lyon et al.: hydrophobicity, loading and conjugate pharmacokinetics (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26076429/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "site-specific-conjugation"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Site-directed attachment can improve control, but occupancy, remaining heterogeneity, stability and function still need measurement. Hydrophobic-interaction chromatography and suitable mass-spectrometric methods can characterize loading; an average alone cannot establish product equivalence or clinical benefit. For multiple payload types, retain each component’s loading instead of inventing its share from total DAR."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "bystander-effect",
+      "kind": "term",
+      "name": "Bystander effect (ADC)",
+      "aka": [],
+      "tldr": "A conjugate can harm neighboring cells when an active released species reaches them, including neighbors with little or none of the delivery target.",
+      "summary": "Bystander killing is a local drug effect, distinct from radiation crossfire or immune memory. It depends on the chemical species actually released, its transport through membranes and tissue, the concentration reaching neighboring cells and their susceptibility. Ogitani and colleagues compared a permeable DXd species, a poorly permeable alternative and the T-DM1 catabolite Lys-SMCC-DM1. Their coculture and mixed-tumor mouse experiments showed neighboring target-negative-cell killing with the permeable DXd construct; a separate target-negative tumor on the opposite flank did not respond in that experiment. These findings support a local mechanism in those models, not a universal safety or patient-benefit claim.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "Ogitani et al.: released-species permeability and local bystander killing in models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26101915/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-ogitani-cancer-sci"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Neither a cleavable-linker label nor a permeability result alone proves bystander killing in a tumor. More chemical spread can also expose normal cells, so it is not an efficacy ranking."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "cross-resistance",
+      "kind": "term",
+      "name": "Cross-resistance",
+      "aka": [
+        "cross-resistant",
+        "cross resistance",
+        "payload cross-resistance",
+        "cross-reactive resistance",
+        "collateral sensitivity",
+        "optimal sequencing"
+      ],
+      "tldr": "Resistance to one treatment can also reduce sensitivity to another when the treatments share a vulnerable step. A different drug name does not establish an independent mechanism.",
+      "summary": "For antibody-drug conjugates, resistance can involve antigen access or uptake, intracellular processing and transport, the payload’s molecular target, drug efflux, or the cell’s response to injury. Breast cancer models selected for resistance to T-DXd or sacituzumab govitecan showed shared payload-associated resistance and renewed activity with some non-TOP1 conjugates. A selected patient cohort and functional experiments also linked particular TOP1 mutations to reduced sensitivity to SN-38 and deruxtecan. These are distinct forms of evidence, not proof that every resistant tumor has the same cause or that switching class improves outcomes for everyone.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cross-resistance",
+      "links": [
+        {
+          "label": "Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41591991/"
+        },
+        {
+          "label": "Abelman et al.: selected patient samples and functional TOP1-mutant experiments (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39745368/"
+        },
+        {
+          "label": "Kinneer et al.: lysosomal-transporter loss and resistance to noncleavable conjugates (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30131388/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "adc-sequencing",
+        "resistance",
+        "rechallenge",
+        "first-line"
+      ],
+      "cancers": [],
+      "sections": [
+        "adcs",
+        "targeted-therapy"
+      ],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Changing the antibody target can leave shared efflux or cell-response resistance intact. Changing payload mechanism can leave a delivery or processing defect intact. A transporter may handle more than one drug, and different tumor cells can carry different resistance mechanisms. Collateral sensitivity is the separate possibility that adaptation to one treatment increases sensitivity to another."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "adc-sequencing",
+      "kind": "term",
+      "name": "ADC sequencing",
+      "aka": [],
+      "tldr": "ADC sequencing asks whether a second conjugate can help after the first fails, especially when it carries the same payload class. The earlier response and reason for stopping matter.",
+      "summary": "A second conjugate may retain activity after a first, but neither shared nor different target names settle the outcome. Payload cross-resistance, altered delivery and tumor evolution can all matter. Retrospective treatment sequences are affected by who lived long enough and remained fit to receive another drug, treatment line, prior response and clinician selection. A selected cohort with post-treatment plasma profiling and laboratory TOP1-mutant experiments supports a resistance hypothesis; cell and mouse payload-switching experiments test a different question. Neither design establishes the best clinical sequence.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "Abelman et al.: selected patient samples and functional TOP1-mutant experiments (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39745368/"
+        },
+        {
+          "label": "Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41591991/"
+        },
+        {
+          "label": "Kinneer et al.: lysosomal-transporter loss and resistance to noncleavable conjugates (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30131388/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "tnbc",
+        "breast-hr-positive"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Mechanism experiments can compare an intact conjugate with its free payload, measure uptake and released species, and perturb a suspected transporter or resistance gene. These experiments require controls and do not by themselves validate a clinical test for choosing the next ADC. A trial in ADC-naive patients cannot establish effectiveness specifically after progression on a prior TOP1 ADC."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "bispecific-adc",
+      "kind": "technology",
+      "name": "Bispecific ADC",
+      "aka": [
+        "bispecific ADC",
+        "bispecific antibody-drug conjugate",
+        "bispecific antibody-drug conjugates",
+        "bsADC"
+      ],
+      "tldr": "A bispecific antibody-drug conjugate uses two recognition features to deliver a payload. Its design can change delivery; phase 3 testing still evaluates the complete drug.",
+      "summary": "Different-antigen designs recognize two proteins; biparatopic designs recognize distinct epitopes on one protein. Depending on the molecule and cell, the design may favor binding to either target, combined binding, receptor clustering or transport through an internalizing partner. A biparatopic HER2 conjugate carrying a tubulysin derivative promoted clustering and lysosomal trafficking in preclinical models. A separate HER2-by-prolactin-receptor study increased uptake and cell killing by linking a slower-trafficking target to a rapidly internalized partner. These experiments do not isolate a universal clinical advantage of two-target binding. Clinical examples need their own evidence: the registry identifies izalontamab brengitecan (EGFR-by-HER3) in the phase 3 BL-B01D1-307/PANKU-Breast02 study of previously treated advanced triple-negative breast cancer against chemotherapy. That design does not isolate the added contribution of the bispecific format over another ADC.",
+      "status": "phase-3",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT06382142: BL-B01D1-307",
+          "url": "https://clinicaltrials.gov/study/NCT06382142"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT06304974: PANKU-Esophagus01 (BL-B01D1-305)",
+          "url": "https://clinicaltrials.gov/study/NCT06304974"
+        },
+        {
+          "label": "BCG033 PTK7-by-TROP2 conjugates: preclinical AACR abstract (2024)",
+          "url": "https://doi.org/10.1158/1538-7445.am2024-2616"
+        },
+        {
+          "label": "Li et al.: biparatopic HER2 conjugate in preclinical models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26766593/"
+        },
+        {
+          "label": "Andreev et al.: HER2 and prolactin-receptor trafficking experiments (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28108597/"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "bcg033"
+      ],
+      "cancers": [
+        "tnbc",
+        "nsclc",
+        "esophageal",
+        "urothelial"
+      ],
+      "sections": [
+        "adcs"
+      ],
+      "technologies": [
+        "adc",
+        "bispecific-antibody"
+      ],
+      "targets": [
+        "egfr",
+        "her3",
+        "met",
+        "nectin4",
+        "trop2",
+        "her2",
+        "b7h3",
+        "pdl1"
+      ],
+      "drugs": [
+        "izalontamab-brengitecan",
+        "tilatamig-samrotecan",
+        "ak146d1"
+      ],
+      "companies": [
+        "systimmune",
+        "bms",
+        "astrazeneca",
+        "akeso",
+        "avenzo",
+        "valink-therapeutics",
+        "neok-bio",
+        "sidewinder-therapeutics",
+        "indupro-therapeutics",
+        "disco-pharmaceuticals",
+        "axcynsis-therapeutics",
+        "primelink-biotherapeutics",
+        "phrontline-biopharma"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "adc",
+        "bispecific-antibody"
+      ],
+      "notes": [
+        "A bispecific ADC is distinct from a T-cell engager and from a dual-payload ADC. Measure each recognition interaction, tissue expression, uptake, processing and function; a single target score is not a universal eligibility rule. The clinical-program records retain study-specific evidence. A trial against chemotherapy does not by itself measure the added contribution of the bispecific format over a matched conventional ADC."
+      ],
+      "principle": "Recognition geometry, avidity, target distribution and intracellular trafficking must be tested for the complete construct.",
+      "generation": "4th (next-gen)",
+      "strengths": [
+        "Can alter recognition or intracellular delivery in suitable designs",
+        "Offers a way to test heterogeneous target expression"
+      ],
+      "limitations": [
+        "Healthy cells may express one or both targets",
+        "Two binding specificities do not establish two payload mechanisms",
+        "Selectivity, loading, release and toxicity require construct-specific evidence"
+      ],
+      "since": 2023
+    },
+    {
+      "id": "monoclonal-antibody",
+      "kind": "technology",
+      "name": "Monoclonal antibodies",
+      "aka": [],
+      "tldr": "A monoclonal antibody is a manufactured protein with a defined recognition design. Its other functional parts and the target biology determine what follows binding.",
+      "summary": "Monoclonal does not by itself mean patient-specific or physically identical molecules in every detail. A therapeutic preparation can contain characterized molecular variants, including different sugar modifications. Recognition can be used to block an interaction, recruit immune effectors, carry a drug or radionuclide, or bridge cells, depending on the complete product. A shared target name does not establish the same epitope or action. Binding, functional activity, exposure and clinical benefit answer different questions.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Monoclonal_antibody_therapy",
+      "links": [
+        {
+          "label": "NCI: monoclonal antibodies and distinct immune actions",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/monoclonal-antibodies"
+        },
+        {
+          "label": "FDA Q6B: characterization, molecular heterogeneity and biological activity",
+          "url": "https://www.fda.gov/media/71510/download"
+        },
+        {
+          "label": "Li et al.: one recognition format can alter trafficking and activity in models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26766593/"
+        },
+        {
+          "label": "Lim et al.: rituximab-CD20 internalization in B-cell malignancies (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21768293/"
+        },
+        {
+          "label": "Kinneer et al.: lysosomal-transporter-dependent conjugate resistance (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30131388/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cd40-agonists",
+        "cd47-blockade"
+      ],
+      "cancers": [
+        "non-hodgkin-lymphoma",
+        "dlbcl",
+        "follicular-lymphoma"
+      ],
+      "sections": [
+        "targeted-therapy",
+        "immunotherapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "morphosys",
+        "alentis-therapeutics",
+        "bicara-therapeutics",
+        "bighat-biosciences",
+        "inhibrx",
+        "ose-immunotherapeutics",
+        "tradewind-bioscience",
+        "peregrine-avid",
+        "stipple-bio",
+        "ottimo-pharma",
+        "novelty-nobility",
+        "damora-therapeutics",
+        "mabquest",
+        "chiome-bioscience",
+        "ascendo-biotechnology",
+        "epsilogen",
+        "allterum-therapeutics",
+        "domain-therapeutics",
+        "pheast-therapeutics",
+        "zumutor-biologics",
+        "biotroy-therapeutics",
+        "biond-biologics",
+        "solstice-oncology",
+        "immunoah",
+        "pilatus-biosciences",
+        "solu-therapeutics",
+        "abcellera"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "adcc",
+        "fc-effector",
+        "lymphoma-bio-lineage-antigen-cost"
+      ],
+      "trials": [
+        "notable-trial"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "monoclonal-antibody-manufacturing"
+      ],
+      "notes": [
+        "FDA Q6B separates protein quantity, biological activity and quality characterization. Identity, purity, aggregation, heterogeneity and stability tests address different attributes. A potency result needs a defined assay and reference; protein mass alone does not measure the same quantity. These manufacturing measurements do not replace clinical evidence.",
+        "Lymphoma: internalization is not an immutable property of the antigen name. Lim and colleagues found that target-cell Fc-gamma receptor IIb promoted internalization of rituximab-CD20 complexes, with substantial variation across the studied B-cell malignancies. This changes antibody exposure and access for effector cells; it does not establish that any particular CD20 conjugate will deliver an effective or safe payload."
+      ],
+      "principle": "A defined recognition region makes contact; the assembled product and biological setting determine the tested effect.",
+      "strengths": [
+        "Defined molecular recognition can support different therapeutic mechanisms"
+      ],
+      "limitations": [
+        "Healthy tissue can share the recognized target",
+        "Human or humanized sequence does not establish freedom from adverse effects",
+        "Identity or binding alone does not establish potency or clinical benefit"
+      ],
+      "since": 1997
+    },
+    {
+      "id": "radioligand-therapy",
+      "kind": "technology",
+      "name": "Radioligand therapy (beta emitters)",
+      "aka": [],
+      "tldr": "A target-binding molecule carries a radionuclide whose emissions deposit radiation in tissue. Distribution and retention help determine tumor and normal-organ exposure.",
+      "summary": "Lutetium-177 therapies deliver beta-particle radiation through target-binding molecules. VISION tested PSMA-targeted treatment added to protocol-permitted standard care in selected, previously treated metastatic castration-resistant prostate cancer. NETTER-1 tested lutetium-177-dotatate in progressive, somatostatin-receptor-positive midgut neuroendocrine tumors. Their clinical results belong to those populations and products, rather than every tumor expressing the target. Small molecules, peptides and antibodies have different distribution and clearance even when directed at a shared target.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Radioligand_therapy",
+      "links": [
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        },
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "EPA: activity, absorbed dose and their units",
+          "url": "https://www.epa.gov/radiation/radiation-terms-and-units"
+        },
+        {
+          "label": "Sartor et al.: VISION, primary randomized trial report (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34161051/"
+        },
+        {
+          "label": "Strosberg et al.: NETTER-1, primary randomized trial report (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28076709/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "prostate",
+        "neuroendocrine"
+      ],
+      "sections": [
+        "radiopharma",
+        "radiation"
+      ],
+      "technologies": [
+        "psma-pet",
+        "spect",
+        "targeted-alpha-therapy"
+      ],
+      "targets": [
+        "psma",
+        "sstr2",
+        "fap"
+      ],
+      "drugs": [
+        "pluvicto",
+        "lutathera"
+      ],
+      "companies": [
+        "clarity-pharmaceuticals",
+        "abdera-therapeutics",
+        "alpha-9-oncology",
+        "ariceum-therapeutics",
+        "artbio",
+        "atomic-alchemy",
+        "evergreen-theragnostics",
+        "mariana-oncology",
+        "nucleus-radiopharma",
+        "point-biopharma",
+        "precirix",
+        "radionetics-oncology",
+        "ratio-therapeutics",
+        "relit-biosciences",
+        "monopar",
+        "actithera",
+        "blue-earth-therapeutics",
+        "radiomer-therapeutics",
+        "nuclide-therapeutics",
+        "skopos-bio",
+        "chengdu-new-radiomedicine-technology",
+        "curasight",
+        "antelope-surgical-solutions",
+        "peptidream",
+        "full-life-technologies",
+        "lumina-pharmaceuticals",
+        "pentixapharm",
+        "nuclidium",
+        "matrisome-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [
+        "cancer-biotherapy-and-radiopharmaceuticals"
+      ],
+      "dependsOn": [
+        "therapy-isotope-supply-chain",
+        "radiopharmacy-network",
+        "medical-cyclotrons-synthesis-modules",
+        "pet-ct",
+        "radioligand-dosimetry"
+      ],
+      "notes": [
+        "Radioactive activity is a decay rate in becquerels; absorbed dose is deposited energy per mass in gray. A single bright image is not time-integrated exposure. Dosimetry combines suitable activity measurements or models over time with tissue geometry and emission properties. Neither the targeting-molecule mass nor the administered activity alone specifies tumor dose.",
+        "Radioimmunotherapy uses an antibody carrier. The broader radiopharmaceutical category also includes organ-seeking products without a separate targeting ligand. Not every attachment uses a metal chelator. Alpha and beta emissions have different path and energy-deposition properties; neither label alone ranks safety or effectiveness. Daughter redistribution and microscopic geometry can matter."
+      ],
+      "principle": "Where the complete radioactive product travels, how long it remains and which emissions reach tissue jointly determine radiation delivery.",
+      "strengths": [
+        "Targeted delivery of radiation through an accessible molecular feature",
+        "Emitted particles can reach neighboring cells"
+      ],
+      "limitations": [
+        "Kidney, marrow and other normal-tissue exposure can limit treatment",
+        "A positive scan alone does not establish absorbed dose or clinical benefit",
+        "Results from one radionuclide or carrier do not establish equivalence of another"
+      ],
+      "since": 2018
+    },
+    {
+      "id": "dosimetry",
+      "kind": "term",
+      "name": "Dosimetry",
+      "aka": [],
+      "tldr": "Dosimetry estimates the radiation energy deposited per unit mass in a specified tissue or target. The estimate depends on measurements, geometry and a stated model.",
+      "summary": "Absorbed dose is reported in gray, equivalent to joules per kilogram. It differs from radioactive activity in becquerels, which describes decays per second. For a radiopharmaceutical, dose estimation uses the location and time course of radioactivity, the emissions and the target’s mass and geometry. Suitable calibrated serial imaging can inform the estimate; it does not turn one uptake value into a measured tumor dose. External-beam and internal-emitter methods answer related dose questions using different inputs.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Dosimetry",
+      "links": [
+        {
+          "label": "EPA: activity, absorbed dose and their units",
+          "url": "https://www.epa.gov/radiation/radiation-terms-and-units"
+        },
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "spect",
+        "radioligand-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Report the method, time sampling, target volume and uncertainty. An organ-average dose can hide uneven cellular exposure, especially for short-range alpha emissions. Absorbed dose and clinical outcome remain distinct; no single organ threshold or schedule applies to all products."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "radioligand-dosimetry",
+      "kind": "technology",
+      "name": "Radioligand dosimetry",
+      "aka": [],
+      "tldr": "Radioligand dosimetry estimates radiation deposited in tumors and normal tissues from where radioactivity goes and how it changes with time.",
+      "summary": "Calibrated activity measurements, often from suitable serial SPECT or PET imaging, inform a time-activity model. Time-integrated decays, emission properties, tissue mass and spatial assumptions then inform absorbed dose. Equal uptake on an early scan can be followed by different retention and different doses. Administered activity is an input, not a substitute for patient- or tissue-level dosimetry. The estimates can support evaluation of dosing strategies, but improved outcomes from a particular adaptation require their own evidence.",
+      "status": "established",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Dosimetry",
+      "links": [
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "EPA: activity, absorbed dose and their units",
+          "url": "https://www.epa.gov/radiation/radiation-terms-and-units"
+        },
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [
+        "radiopharma",
+        "imaging"
+      ],
+      "technologies": [
+        "radioligand-therapy",
+        "lu177-radioligand-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "spect"
+      ],
+      "notes": [
+        "Physical decay, biological clearance and radioactive daughters all affect interpretation. Alpha-emitter dosimetry may need additional microscopic considerations. FDA’s cited document addresses nonclinical development; it is not a universal clinical dosing protocol or evidence of a jurisdiction-wide reimbursement requirement."
+      ],
+      "principle": "Estimate activity through time in specified source regions, then calculate the energy deposited in relevant target regions with explicit assumptions.",
+      "strengths": [
+        "Makes tumor and normal-tissue exposure explicit",
+        "Can evaluate why the same administered activity produces different dose estimates"
+      ],
+      "limitations": [
+        "Calibration, time sampling and segmentation affect estimates",
+        "Organ averages can miss uneven microscopic exposure",
+        "Method-specific dose estimates do not establish a universal clinical threshold"
+      ]
+    },
+    {
+      "id": "radioimmunotherapy",
+      "kind": "technology",
+      "name": "Radio-antibody & radio-ADC",
+      "aka": [],
+      "tldr": "Radioimmunotherapy uses an antibody or antibody fragment to carry a radionuclide. Its radiation delivery and safety depend on the complete labeled product.",
+      "summary": "An antibody provides recognition while the radionuclide provides radiation. This differs from releasing a small-molecule cytotoxic drug after intracellular processing. Attachment chemistry depends on the isotope and product; a chelator is not required for every radionuclide. In a historical phase 2 study, lutetium-177-J591 targeted PSMA in men with metastatic castration-resistant prostate cancer and produced substantial hematologic toxicity. That disease-specific experience does not establish current approval, breast-cancer efficacy or the suitability of every ADC antigen for radioimmunotherapy.",
+      "status": "phase-2",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Radioimmunotherapy",
+      "links": [
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        },
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "Tagawa et al.: lutetium-177-J591 phase 2 study in metastatic castration-resistant prostate cancer (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23714732/"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "idea-alpha-after-adc"
+      ],
+      "cancers": [],
+      "sections": [
+        "radiopharma",
+        "adcs"
+      ],
+      "technologies": [
+        "adc",
+        "targeted-alpha-therapy"
+      ],
+      "targets": [
+        "psma",
+        "cd33",
+        "dll3",
+        "her2"
+      ],
+      "drugs": [],
+      "companies": [
+        "abdera-therapeutics",
+        "actinium-pharmaceuticals",
+        "convergent-therapeutics",
+        "tagworks-pharmaceuticals"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [
+        "cancer-biotherapy-and-radiopharmaceuticals"
+      ],
+      "dependsOn": [
+        "monoclonal-antibody",
+        "therapy-isotope-supply-chain"
+      ],
+      "notes": [
+        "Crossfire means radiation from one location reaching nearby cells. It is distinct from a diffusible chemical payload and does not require the same release chemistry. Neither crossfire nor an immune-effect hypothesis establishes clinical benefit after ADC resistance."
+      ],
+      "principle": "The labeled antibody’s distribution and retention, radionuclide emissions and tissue geometry determine where radiation is deposited.",
+      "strengths": [
+        "Can deliver radiation with an antibody recognition route",
+        "Particles can reach cells beyond the bound target cell"
+      ],
+      "limitations": [
+        "Circulating and normal-organ radioactivity can cause toxicity",
+        "Target expression alone does not establish sufficient tumor dose",
+        "Antibody and small-ligand kinetics are not interchangeable"
+      ]
+    },
+    {
+      "id": "adc-analytes-and-exposure",
+      "kind": "term",
+      "name": "ADC analytes and exposure",
+      "aka": [
+        "conjugated antibody and total antibody",
+        "unconjugated payload exposure",
+        "ADC bioanalysis"
+      ],
+      "tldr": "An antibody-drug conjugate and its released drug do not follow one shared concentration curve. The measured chemical form matters.",
+      "summary": "A conjugate assay measures antibody carrying payload, or antibody-bound drug, according to the validated method. Total antibody includes conjugated and unconjugated antibody; unconjugated payload measures released drug separately. Active metabolites or catabolites can add further relevant species. Concentration, time course and exposure therefore belong to a named analyte. A conjugate dose in milligrams per kilogram is not the same quantity as the mass of free payload reaching a tumor or the blood.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "FDA: clinical pharmacology considerations for cytotoxic ADCs (2024)",
+          "url": "https://www.fda.gov/media/155997/download"
+        },
+        {
+          "label": "Ravenstijn et al.: translational and bioanalytical questions for dual-payload conjugates (2026 perspective)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42089685/"
+        },
+        {
+          "label": "Hamblett et al.: loading and exposure in one conjugate, cell and mouse experiments (2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15501986/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "adc",
+        "dar",
+        "linker",
+        "pharmacokinetics",
+        "dual-payload-adc"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "FDA’s 2024 guidance for cytotoxic small-molecule ADCs recommends validated measurements of the conjugate and relevant constituent parts, with later omissions justified by pharmacology, assay sensitivity and exposure data. It does not require every conceivable analyte in every study or automatically apply to every immune agonist or other cargo.",
+        "For a construct carrying different payloads, keep each chemical identity, loading distribution, release behavior and exposure distinct. A manufactured loading ratio does not establish the ratio reaching tissue over time. The same total DAR does not establish equal loading of each component or equal biological activity."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "chk1-inhibitor-payloads",
+      "kind": "term",
+      "name": "CHK1 inhibitor payloads",
+      "aka": [
+        "CHK1i ADC payloads",
+        "checkpoint kinase 1 inhibitor cargo"
+      ],
+      "tldr": "A CHK1-inhibitor conjugate carries a drug that interferes with a replication-stress checkpoint. A published conference abstract reports a HER2-directed preclinical example.",
+      "summary": "CHK1 inhibition is the cargo mechanism only when the inhibitor is physically attached to the conjugate. The AACR 2026 abstract describes engineered-cysteine trastuzumab, a cleavable linker and a CHK1-inhibitor payload. The investigators tested cells and a HER2-positive breast-cancer xenograft model. This establishes a publicly described payload design and model experiment, separate from giving an oral checkpoint inhibitor alongside another ADC. It does not establish human safety, benefit after a TOP1 ADC or a treatment-selection rule.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Halazonetis et al.: CHK1-inhibitor conjugate, AACR 2026 abstract 1714",
+          "url": "https://doi.org/10.1158/1538-7445.am2026-1714"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "adc",
+        "atr-chk1-inhibitors",
+        "replication-stress",
+        "synthetic-lethality",
+        "adc-analytes-and-exposure"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The antibody delivery antigen and the payload’s checkpoint target answer different questions. The proposed advantage depends on sufficient intracellular release and checkpoint dependence, not a HER2 or replication-stress label alone. The conference abstract reports limited model safety observations; lack of mouse weight loss cannot establish human marrow safety or a clinical therapeutic window."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "parp-inhibitor-payloads",
+      "kind": "term",
+      "name": "PARP inhibitor payloads",
+      "aka": [
+        "PARP1 inhibitor cargo",
+        "PARPi antibody-drug conjugates"
+      ],
+      "tldr": "A PARP-inhibitor payload attaches a repair-targeting drug to an antibody. A published preclinical abstract describes a TROP2 conjugate carrying a PARP1-selective inhibitor.",
+      "summary": "The AACR 2025 abstract describes a TROP2 antibody joined through a cleavable linker to a PARP1-selective inhibitor. Cell comparisons included the conjugate, free payload and antibody alone; a breast-cancer xenograft experiment compared their activity and blood-cell effects. The reported activity varied between tested cell models, illustrating that more delivery antigen is not sufficient to establish payload sensitivity. This is a conference-abstract proof of concept, not clinical evidence that antibody delivery reverses PARP resistance or removes systemic toxicity.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Koo et al.: PARP1-selective payload in a TROP2 conjugate, AACR 2025 abstract 5467",
+          "url": "https://doi.org/10.1158/1538-7445.am2025-5467"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "adc",
+        "parp",
+        "parp-inhibitor",
+        "synthetic-lethality",
+        "adc-analytes-and-exposure"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An approved PARP-inhibitor pill, a free PARP drug combined with an ADC and a physically attached PARP payload are different products and evidence questions. Retain the actual conjugated chemical species, linker, release and exposure. A repair-gene variant alone does not prove the tumor’s current functional dependence or establish eligibility for an experimental conjugate."
+      ],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "atr-chk1-inhibitors",
+      "kind": "technology",
+      "name": "ATR and CHK1 inhibitors",
+      "aka": [],
+      "tldr": "ATR and CHK1 inhibitors interfere with checkpoint responses to stressed DNA replication. Researchers test whether particular tumors depend on those responses enough to create a treatment window.",
+      "summary": "ATR and downstream checkpoint signaling help cells respond when replication is stressed. Repair defects or other tumor features can increase dependence in specific models, but a gene name or stress marker alone does not establish patient benefit. A phase 1 camonsertib study enrolled selected advanced solid tumors with predicted sensitizing repair-gene alterations; a separate small prexasertib pilot studied previously treated BRCA-wild-type triple-negative breast cancer. These are different drugs, populations and designs. Blood-cell toxicity remained important, and neither study validates every proposed repair-defect biomarker.",
+      "status": "phase-2",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ataxia_telangiectasia_and_Rad3_related",
+      "links": [
+        {
+          "label": "Yap et al.: camonsertib phase 1 study in selected repair-deficient advanced solid tumors (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37277454/"
+        },
+        {
+          "label": "Gatti-Mays et al.: prexasertib single-arm TNBC pilot (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32510664/"
+        },
+        {
+          "label": "Duplessis et al.: single-payload ATR-inhibitor conjugates, AACR D3 2026 abstract A003",
+          "url": "https://doi.org/10.1158/1557-3265.d32026-a003"
+        },
+        {
+          "label": "Halazonetis et al.: CHK1-inhibitor conjugate, AACR 2026 abstract 1714",
+          "url": "https://doi.org/10.1158/1538-7445.am2026-1714"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "ovarian",
+        "nsclc",
+        "clear-cell-ovarian-cancer"
+      ],
+      "sections": [
+        "targeted-therapy"
+      ],
+      "technologies": [
+        "synthetic-lethality-approaches",
+        "parp-inhibitor"
+      ],
+      "targets": [
+        "atr"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An attached checkpoint inhibitor is a distinct payload design. The AACR 2026 A003 abstract describes single-payload ATR-inhibitor conjugates, including TROP2-directed constructs, and reports isogenic repair-state comparisons and xenografts. The separate CHK1 abstract describes an engineered trastuzumab conjugate. These are preclinical conference reports, not human efficacy or marrow-safety results. A separately administered ATR or CHK1 inhibitor is a combination regimen rather than attached cargo.",
+        "Downstream DNA-damage or phosphorylation changes support a response in the stated model, not direct target engagement by themselves. Appropriate target, repair-state and exposure controls help distinguish delivery, inhibitor activity and cell susceptibility. Changing from a TOP1 payload does not guarantee bypass of a shared delivery or resistance defect."
+      ],
+      "principle": "Inhibiting checkpoint signaling can impair a stressed cell’s response; exposure, repair state and other cellular processes determine whether that produces death.",
+      "strengths": [
+        "Tests a repair- or replication-stress dependence hypothesis",
+        "Can be studied with DNA-damaging treatments using appropriate safety controls"
+      ],
+      "limitations": [
+        "Blood-cell toxicity can limit exposure",
+        "Biomarker and combination results belong to the tested drug, population and regimen"
+      ]
+    },
+    {
+      "id": "histone-lactylation",
+      "kind": "term",
+      "name": "Histone lactylation",
+      "aka": [
+        "histone lysine lactylation",
+        "histone Kla"
+      ],
+      "tldr": "Lactate can contribute to a chemical modification of histone proteins. Experiments connect this mark to gene regulation in particular cell states and disease models.",
+      "summary": "Lactylation adds a lactate-derived modification to histone lysine residues, rather than changing the DNA sequence. The original study identified this mark in human and mouse cells and investigated its timing and gene-regulatory effects in stimulated macrophages. A later mechanistic study in EGFR T790M-positive tumor models connected radiation, LDHA-dependent lactate production, histone lactylation and DNA-repair responses. Its cell, organoid and xenograft experiments provide a context-specific mechanism hypothesis, not a validated clinical radiation-selection test.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Zhang et al.: original histone-lactylation and gene-regulation study (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31645732/"
+        },
+        {
+          "label": "EGFR-mutant metabolic, chromatin and radiation-response models (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42399513/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "epigenetic-marks",
+        "gene-expression",
+        "warburg-effect",
+        "egfr"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Bulk lactate concentration, a particular histone modification, its genomic location, RNA output and DNA-repair activity are different measurements. The radiation study combined biochemical and chromatin measurements with genetic or pharmacological perturbations. A high lactate value alone does not establish that this mechanism is present, dominant or targetable in another tumor."
+      ],
+      "category": "Clinic basics"
+    }
+  ]
+}

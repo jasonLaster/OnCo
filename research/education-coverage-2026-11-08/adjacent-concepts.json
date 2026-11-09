@@ -129,5 +129,70 @@
         }
       ]
     }
+  },
+  {
+    "id": "histone-lactylation",
+    "title": "Histone lactylation and context-specific radiation response",
+    "domain": "cancer-biology",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/42399513/",
+      "https://pubmed.ncbi.nlm.nih.gov/31645732/"
+    ],
+    "discoveryOccurrences": [
+      "therapeutics:2"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Elicit discovery followed by independent European PMC identity and abstract checks for the original modification study and the context-specific radiation study. Canonical name/alias and source-file searches found no dedicated owner. The new term retains experimental and assay limits; no full manuscript or clinical efficacy review is claimed.",
+      "points": [
+        {
+          "id": "1",
+          "requirement": "Distinguish a lactate-derived histone lysine modification from DNA mutation, DNA methylation and a universal consequence of high bulk lactate.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "histone-lactylation",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "cb91bac47c96846eef16a1d3e7edd2d6bd430736539432b6c06c01edb0cb9da3",
+              "explanation": "Defines the lactate-derived protein mark and distinguishes sequence change, retaining the original macrophage and cell-model scope."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "2",
+          "requirement": "Keep histone modification measurements, gene-regulatory effects and perturbation evidence separate.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "histone-lactylation",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "6ec477a19d699f14ca15e95527b21ef361010709b1be55963546f687eb23b3f5",
+              "explanation": "Separates lactate, histone modification, location, RNA and repair measurements and requires model-specific perturbation evidence."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "3",
+          "requirement": "Retain the model-specific EGFR-mutant metabolic-radiation findings without inferring a validated patient-selection assay or clinical radiosensitizing treatment.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "histone-lactylation",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "cb91bac47c96846eef16a1d3e7edd2d6bd430736539432b6c06c01edb0cb9da3",
+              "explanation": "Retains the exact EGFR-mutant cell/organoid/xenograft context and explicitly avoids a clinical radiation-selection interpretation."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
   }
 ]

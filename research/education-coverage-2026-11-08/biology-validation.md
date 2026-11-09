@@ -1,5 +1,7 @@
 # Biology checkpoint
 
+This records the initial biology implementation at commit 67eee0b. The later section-complete review adds supplemental requirements and reopens incomplete sources; the current authoritative counts are in the main ledger and therapeutic checkpoint. RNA and cell-division notes were subsequently expanded for supplied-message translation and response-measurement boundaries.
+
 Fourteen new terms and 27 canonical-owner updates add or correct general biology and measurement interpretation. The 41 records have current check dates; 23 factual correction rows explain the errors. Twelve new terms cover curriculum requirements; receptor reserve and biased agonism also enter the adjacent-concept ledger. No owner overlaps the three previous draft proposals.
 
 All 28 biology sources received first-pass semantic review. Eighty-five explicit learning requirements have versioned, hashed proposed field evidence. One further breast-receptor classification requirement stays open: negative receptor tests must not be described as absolute absence of receptor molecules. Thus 27 biology sources have proposed complete representation and one remains open. No main-coverage or expert-review claim is made.

@@ -460,6 +460,7 @@ describe("Ask OnCo end to end", () => {
     // 26 Oct 2026, the precision follow-ups: one duplicate paper record and seven duplicate idea records retired into
     // their survivors. Measured immediately before and after at the same figures.
     { date: "2026-10-26", recall: 0.4301, note: "Paganetti RBE review and seven protocol-upgrade idea duplicates merged; extractive rubric 0.6925, both unchanged by the merge" },
+    { date: "2026-11-08", recall: 0.4276, note: "systematic concept audit: restored complete bispecific-antibody aliases and phase 3 context, and explicit second-ADC/same-payload wording; extractive rubric 0.6850; both floors unchanged" },
   ];
   /** Floors set since the ratchet began, in order. Each entry must be at least the one before it. */
   const EXTRACTIVE_FLOORS: ReadonlyArray<{ date: string; recall: number; rubric: number; change: string }> = [

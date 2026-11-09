@@ -12,7 +12,7 @@
         "lineage tracing",
         "cell ancestry"
       ],
-      "tldr": "A cell\u2019s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
+      "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
       "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
       "asOf": "2026-11-08",
       "links": [
@@ -47,7 +47,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor\u2019s origin from its expression profile."
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile."
       ],
       "category": "Clinic basics"
     },
@@ -62,7 +62,7 @@
         "basement membrane"
       ],
       "tldr": "Tissue contains different cell groups and supporting material. Knowing which compartment produced a signal helps explain what the result can mean.",
-      "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell\u2019s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+      "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
       "asOf": "2026-11-08",
       "links": [
         {
@@ -226,7 +226,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Variant allele frequency counts supporting reads or molecules under the assay\u2019s definition. Purity, local copy state, subclonal mixtures and method affect it; it is not directly a cancer-cell percentage or a zygosity call. Phase asks whether specified variants share a DNA copy, a further question that a gene-name match does not answer."
+        "Variant allele frequency counts supporting reads or molecules under the assay’s definition. Purity, local copy state, subclonal mixtures and method affect it; it is not directly a cancer-cell percentage or a zygosity call. Phase asks whether specified variants share a DNA copy, a further question that a gene-name match does not answer."
       ],
       "category": "Clinic basics"
     },
@@ -244,7 +244,7 @@
         "histone modification"
       ],
       "tldr": "Chemical features of DNA and its packaging can influence how genes are used. Their location and cellular context matter; a mark does not have one universal effect.",
-      "summary": "DNA methylation changes a base\u2019s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
+      "summary": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
       "asOf": "2026-11-08",
       "links": [
         {
@@ -269,7 +269,8 @@
         "epigenetic-reprogramming",
         "methylation-profiling",
         "methylation-arrays",
-        "gene-expression"
+        "gene-expression",
+        "histone-lactylation"
       ],
       "cancers": [],
       "sections": [],
@@ -372,7 +373,7 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/1547488/"
         },
         {
-          "label": "Immunoglobulin and T Cell Receptor Genes: IMGT(\u00ae) and the Birth and Rise of Immunoinformatics.",
+          "label": "Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/24600447/"
         },
         {
@@ -427,8 +428,8 @@
         "predicted aligned error",
         "PAE"
       ],
-      "tldr": "A protein\u2019s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule\u2019s arrangement or function.",
-      "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain\u2019s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
+      "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
+      "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
       "asOf": "2026-11-08",
       "links": [
         {
@@ -474,7 +475,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant\u2019s functional effect or clinical benefit."
+        "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit."
       ],
       "category": "Clinic basics"
     },
@@ -598,7 +599,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Santos and colleagues altered feedback arrangements in a PC12 differentiation model, demonstrating that input context can change network dynamics and cell response. O\u2019Reilly and colleagues examined released feedback after mTOR inhibition in cancer models with patient-tumor pharmacodynamic observations. Neither study establishes universal tumor wiring or combination-treatment benefit.",
+        "Santos and colleagues altered feedback arrangements in a PC12 differentiation model, demonstrating that input context can change network dynamics and cell response. O’Reilly and colleagues examined released feedback after mTOR inhibition in cancer models with patient-tumor pharmacodynamic observations. Neither study establishes universal tumor wiring or combination-treatment benefit.",
         "Use time-resolved measurements and controlled perturbation of the proposed connection, with exposure and viability controls. Similar curves can arise from different circuits; a diagram or one late signal cannot identify the mechanism."
       ],
       "category": "Clinic basics"
@@ -702,7 +703,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Ehlert and colleagues\u2019 methods analyzed receptor-state affinities and pathway sensitivity using analytical proofs, simulations and previously published data. The constitutively active-mutant approach assumes that the mutation changes receptor-state equilibrium without changing ligand affinities and requires checking that assumption. These method studies do not establish clinical superiority of a biased ligand or validate every cellular assay."
+        "Ehlert and colleagues’ methods analyzed receptor-state affinities and pathway sensitivity using analytical proofs, simulations and previously published data. The constitutively active-mutant approach assumes that the mutation changes receptor-state equilibrium without changing ligand affinities and requires checking that assumption. These method studies do not establish clinical superiority of a biased ligand or validate every cellular assay."
       ],
       "category": "Clinic basics"
     },
@@ -716,7 +717,7 @@
         "enhancer",
         "transcription factor"
       ],
-      "tldr": "Genes are regulated through DNA regions, binding proteins and cellular context. A bound regulator or accessible DNA region does not prove that a gene\u2019s output changed.",
+      "tldr": "Genes are regulated through DNA regions, binding proteins and cellular context. A bound regulator or accessible DNA region does not prove that a gene’s output changed.",
       "summary": "A promoter is a DNA region where transcription machinery assembles. Enhancers influence transcription through regulatory interactions, sometimes across a long linear distance brought together in three-dimensional space. Transcription factors recognize sequence features and participate in regulatory networks. Chromatin state and cellular partners affect access and function. Regulation also occurs through RNA processing and removal, translation, and protein modification or turnover.",
       "asOf": "2026-11-08",
       "links": [
@@ -830,7 +831,7 @@
         "surface of the cell",
         "membrane-bound"
       ],
-      "tldr": "The cell membrane forms a selective boundary. Binding at the surface, entering a vesicle and reaching the cell\u2019s internal working fluid are different steps.",
+      "tldr": "The cell membrane forms a selective boundary. Binding at the surface, entering a vesicle and reaching the cell’s internal working fluid are different steps.",
       "summary": "A lipid bilayer and its proteins separate the cell from its surroundings. Permeability depends on size, charge and chemical properties, rather than a universal small-molecule versus antibody rule. Passive movement follows the relevant gradient; active transport uses energy directly or through a coupled gradient. Endocytosis encloses material in a membrane-bound compartment. Delivery to cytosol or another target compartment requires further steps. Cytosol is fluid outside organelle interiors; cytoplasm includes that fluid and structures outside the nucleus.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Cell_membrane",
@@ -1041,7 +1042,8 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect."
+        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+        "Side effects are not a test of whether chemotherapy is controlling a tumor. NCI explicitly separates those observations; clinical assessment needs the appropriate examination, imaging or other response evaluation. A proliferation-marker fraction also does not by itself measure treatment benefit."
       ],
       "category": "Biology basics"
     },
@@ -1063,7 +1065,7 @@
         "cell of origin"
       ],
       "tldr": "Differentiation develops specialized cellular properties. In pathology, resemblance to a mature tissue can contribute to grading, whose meaning depends on the cancer.",
-      "summary": "Differentiation concerns development of specialized cell features and functions. Stem or progenitor ancestry, current state and genetic clone are distinct questions. In cancer pathology, well or poorly differentiated describes resemblance to a mature tissue within the applicable classification; it is not a universal rule that one category grows at a particular speed. Tumor plasticity can change marker expression or lineage programs. A present-day expression cluster alone does not reconstruct the cell\u2019s ancestry or prove a reversal of its developmental history.",
+      "summary": "Differentiation concerns development of specialized cell features and functions. Stem or progenitor ancestry, current state and genetic clone are distinct questions. In cancer pathology, well or poorly differentiated describes resemblance to a mature tissue within the applicable classification; it is not a universal rule that one category grows at a particular speed. Tumor plasticity can change marker expression or lineage programs. A present-day expression cluster alone does not reconstruct the cell’s ancestry or prove a reversal of its developmental history.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Cellular_differentiation",
       "links": [
@@ -1121,11 +1123,11 @@
       "tldr": "Epithelial cells can change a coordinated set of properties, sometimes entering intermediate states. The consequences depend on the cells and the experimental or clinical context.",
       "summary": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
       "asOf": "2026-11-08",
-      "wikipedia": "https://en.wikipedia.org/wiki/Epithelial\u2013mesenchymal_transition",
+      "wikipedia": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition",
       "links": [
         {
           "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Epithelial\u2013mesenchymal_transition"
+          "url": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition"
         },
         {
           "label": "Guidelines and definitions for research on epithelial-mesenchymal transition.",
@@ -1184,7 +1186,7 @@
       "nodes": [
         {
           "id": "tgf",
-          "label": "TGF-\u03b2, Wnt, Notch, hypoxia",
+          "label": "TGF-β, Wnt, Notch, hypoxia",
           "x": 50,
           "y": 5
         },
@@ -1281,7 +1283,7 @@
       "interventions": [
         "No approved direct EMT inhibitor",
         "Payloads with low efflux susceptibility (sac-TMT's belotecan derivative claims this) and radiation (efflux-independent)",
-        "TGF-\u03b2 pathway blockade (mostly failed so far)",
+        "TGF-β pathway blockade (mostly failed so far)",
         "Ferroptosis inducers for mesenchymal-state cells (preclinical)",
         "Immune approaches to overcome exclusion (STING, radiation)"
       ]
@@ -1373,7 +1375,7 @@
         "genome"
       ],
       "tldr": "DNA stores sequence information. Its packaging, copying and use as a template for RNA are different processes.",
-      "summary": "DNA contains nucleotide chains with a sugar\u2013phosphate backbone and the bases A, T, C and G. Complementary A\u2013T and C\u2013G pairing joins antiparallel strands. Nuclear chromosomes contain DNA associated with proteins as chromatin; nucleosomes organize DNA around histones. Mitochondria carry a separate genome. A gene is a functional region within DNA, rather than an entire chromosome. Replication copies DNA, while transcription produces RNA from a selected template. Packaging and gene presence do not establish active transcription or a functional protein.",
+      "summary": "DNA contains nucleotide chains with a sugar–phosphate backbone and the bases A, T, C and G. Complementary A–T and C–G pairing joins antiparallel strands. Nuclear chromosomes contain DNA associated with proteins as chromatin; nucleosomes organize DNA around histones. Mitochondria carry a separate genome. A gene is a functional region within DNA, rather than an entire chromosome. Replication copies DNA, while transcription produces RNA from a selected template. Packaging and gene presence do not establish active transcription or a functional protein.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/DNA",
       "links": [
@@ -1436,7 +1438,7 @@
         "transcription"
       ],
       "tldr": "RNA is a family of molecules with several jobs. Messenger RNA provides a protein-making template; other RNAs help build, regulate or carry out cellular processes.",
-      "summary": "RNA uses ribose and usually uracil in place of DNA\u2019s thymine. It is often single-stranded but can fold through internal pairing. Messenger RNA carries a coding template; ribosomal RNA contributes to ribosome structure and catalysis; transfer RNA brings amino acids; regulatory RNAs influence other molecules. Many nuclear messages receive a 5-prime cap and poly(A) tail and have introns removed by splicing before translation, but these features are not universal to all RNAs. Ribosomes read a coding sequence in codons to produce a polypeptide; processing, folding and localization follow.",
+      "summary": "RNA uses ribose and usually uracil in place of DNA’s thymine. It is often single-stranded but can fold through internal pairing. Messenger RNA carries a coding template; ribosomal RNA contributes to ribosome structure and catalysis; transfer RNA brings amino acids; regulatory RNAs influence other molecules. Many nuclear messages receive a 5-prime cap and poly(A) tail and have introns removed by splicing before translation, but these features are not universal to all RNAs. Ribosomes read a coding sequence in codons to produce a polypeptide; processing, folding and localization follow.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/RNA",
       "links": [
@@ -1490,7 +1492,8 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity."
+        "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+        "After successful delivery, a supplied ordinary mRNA can be translated at cytoplasmic ribosomes; that translation step does not require the message to enter the nucleus. Supplying a message, measuring endogenous tumor RNA and demonstrating nuclear DNA modification are separate observations. The NHGRI vaccine example illustrates supplied RNA instructions, not a general cancer-efficacy claim."
       ],
       "category": "Biology basics"
     },
@@ -1571,7 +1574,7 @@
         "proteins"
       ],
       "tldr": "Proteins are amino-acid products that provide structure, catalysis, transport and signaling. A detected fragment and a complete working protein are different findings.",
-      "summary": "Amino acids join through peptide bonds into polypeptide chains; linked amino acids are residues. Peptide and protein usage overlaps without a universal length boundary. A protein may contain one or several chains, folded domains and flexible regions. Processing, chemical modifications, localization, production and degradation affect its form and behavior. Genes specify coding templates, but a DNA or RNA finding does not measure the resulting protein\u2019s intact structure or activity.",
+      "summary": "Amino acids join through peptide bonds into polypeptide chains; linked amino acids are residues. Peptide and protein usage overlaps without a universal length boundary. A protein may contain one or several chains, folded domains and flexible regions. Processing, chemical modifications, localization, production and degradation affect its form and behavior. Genes specify coding templates, but a DNA or RNA finding does not measure the resulting protein’s intact structure or activity.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Protein",
       "links": [
@@ -1635,7 +1638,7 @@
         "enzymatic"
       ],
       "tldr": "An enzyme speeds a chemical reaction and is reused through its reaction cycle. Binding to an enzyme does not by itself show that the reaction or a cell response changed.",
-      "summary": "Catalysis lowers a reaction\u2019s activation barrier without supplying an unlimited energy source. Most familiar enzymes are proteins, while some RNAs also catalyze reactions. Active-site interactions help chemistry; other binding sites can regulate activity. Binding, catalytic rate, substrate preference and activity in a cell are different properties. An inhibitor can act through the active site or another mechanism, and turnover rates are not one universal number.",
+      "summary": "Catalysis lowers a reaction’s activation barrier without supplying an unlimited energy source. Most familiar enzymes are proteins, while some RNAs also catalyze reactions. Active-site interactions help chemistry; other binding sites can regulate activity. Binding, catalytic rate, substrate preference and activity in a cell are different properties. An inhibitor can act through the active site or another mechanism, and turnover rates are not one universal number.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Enzyme",
       "links": [
@@ -1704,7 +1707,7 @@
         "high expression"
       ],
       "tldr": "Gene expression produces RNA and, for coding messages, protein. Measurements at those steps are related but do not answer the same question.",
-      "summary": "Transcription makes RNA from DNA; translation reads a coding message in codons to make a polypeptide. This information-flow description does not require every RNA to become protein. A promoter recruits transcription machinery. Enhancers influence transcription through regulatory interactions that can span distant DNA positions. Transcription factors recognize sequence features and participate in regulation. Chromatin, RNA processing and turnover, translation, protein processing and degradation all influence the eventual product. A transcript\u2019s frame and reference context matter when interpreting a sequence change.",
+      "summary": "Transcription makes RNA from DNA; translation reads a coding message in codons to make a polypeptide. This information-flow description does not require every RNA to become protein. A promoter recruits transcription machinery. Enhancers influence transcription through regulatory interactions that can span distant DNA positions. Transcription factors recognize sequence features and participate in regulation. Chromatin, RNA processing and turnover, translation, protein processing and degradation all influence the eventual product. A transcript’s frame and reference context matter when interpreting a sequence change.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Gene_expression",
       "links": [
@@ -1791,7 +1794,7 @@
       "wikipedia": "https://en.wikipedia.org/wiki/RNA_splicing",
       "links": [
         {
-          "label": "Bradley & Anczuk\u00f3w, RNA splicing dysregulation and the hallmarks of cancer (Nature Reviews Cancer 2023)",
+          "label": "Bradley & Anczuków, RNA splicing dysregulation and the hallmarks of cancer (Nature Reviews Cancer 2023)",
           "url": "https://doi.org/10.1038/s41568-022-00541-7"
         },
         {
@@ -2044,7 +2047,7 @@
         "binding partner"
       ],
       "tldr": "A ligand binds a molecular partner. Binding does not necessarily activate a receptor or prove that a treatment will help.",
-      "summary": "Hormones, growth factors and other molecules can bind receptors, but ligand describes the interaction rather than one functional effect. A bound ligand may activate a specified response, oppose another ligand, or show no effect in that assay. Some targeting ligands localize a payload. An accessible binding address need not be a cancer\u2019s growth driver; delivery, intracellular action and clinical benefit require further evidence.",
+      "summary": "Hormones, growth factors and other molecules can bind receptors, but ligand describes the interaction rather than one functional effect. A bound ligand may activate a specified response, oppose another ligand, or show no effect in that assay. Some targeting ligands localize a payload. An accessible binding address need not be a cancer’s growth driver; delivery, intracellular action and clinical benefit require further evidence.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Ligand_(biochemistry)",
       "links": [
@@ -2212,7 +2215,7 @@
         "EC50"
       ],
       "tldr": "Agonists promote a specified receptor response; antagonists oppose agonist action. The labels depend on the measured system, and strong binding does not necessarily mean strong activation.",
-      "summary": "A full agonist can reach a system\u2019s maximal measured response. A partial agonist has lower activating capacity; its observed maximum depends on receptor amount and amplification and is not defined by giving a smaller dose of a full agonist. Competing partial agonists can reduce a full agonist\u2019s response when they replace it. A neutral antagonist opposes agonist action without changing agonist-independent baseline activity; an inverse agonist reduces that activity when it is measurable. Antagonism need not use the agonist\u2019s binding site.",
+      "summary": "A full agonist can reach a system’s maximal measured response. A partial agonist has lower activating capacity; its observed maximum depends on receptor amount and amplification and is not defined by giving a smaller dose of a full agonist. Competing partial agonists can reduce a full agonist’s response when they replace it. A neutral antagonist opposes agonist action without changing agonist-independent baseline activity; an inverse agonist reduces that activity when it is measurable. Antagonism need not use the agonist’s binding site.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Agonist",
       "links": [
@@ -2274,7 +2277,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Kd describes binding under specified conditions. Functional EC50 describes half of the compound\u2019s defined response change in that assay. Measure concentration curves, baseline, a reference agonist, receptor/system context, timing and toxicity controls. Suppressing a signal through toxicity does not prove inverse agonism. Receptor efficacy is not clinical efficacy.",
+        "Kd describes binding under specified conditions. Functional EC50 describes half of the compound’s defined response change in that assay. Measure concentration curves, baseline, a reference agonist, receptor/system context, timing and toxicity controls. Suppressing a signal through toxicity does not prove inverse agonism. Receptor efficacy is not clinical efficacy.",
         "Chidiac and colleagues examined agonist-independent beta-adrenergic signaling in expressed-receptor systems. This establishes a mechanistic distinction in those systems, rather than classifying every ligand in every tissue."
       ],
       "category": "Biology basics"
@@ -2298,7 +2301,7 @@
         "intracellular signaling"
       ],
       "tldr": "A signaling pathway connects an input to cellular changes. Real pathways branch, interact and feed back, so one changed marker does not describe the whole network.",
-      "summary": "Signal transduction uses receptors, second messengers, switches, scaffolds, enzymes and gene regulation in intersecting networks. Not every component is a kinase: RAS is a switch regulated by GTP binding and hydrolysis, and scaffolds organize partners. Kinases can modify proteins or lipids. Responses may involve movement, metabolism, growth, survival or differentiation. The RAS\u2013RAF\u2013MEK\u2013ERK and PI3K\u2013AKT\u2013mTOR systems are examples, rather than a single universal surface-to-nucleus chain.",
+      "summary": "Signal transduction uses receptors, second messengers, switches, scaffolds, enzymes and gene regulation in intersecting networks. Not every component is a kinase: RAS is a switch regulated by GTP binding and hydrolysis, and scaffolds organize partners. Kinases can modify proteins or lipids. Responses may involve movement, metabolism, growth, survival or differentiation. The RAS–RAF–MEK–ERK and PI3K–AKT–mTOR systems are examples, rather than a single universal surface-to-nucleus chain.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Signal_transduction",
       "links": [
@@ -2450,7 +2453,7 @@
         "phospho-",
         "phosphorylate"
       ],
-      "tldr": "Adding phosphate can change a protein\u2019s behavior in several ways. The site and cellular context determine whether a measured change indicates activation, inhibition or something else.",
+      "tldr": "Adding phosphate can change a protein’s behavior in several ways. The site and cellular context determine whether a measured change indicates activation, inhibition or something else.",
       "summary": "Protein kinases commonly transfer phosphate from ATP to a substrate, producing ADP. Protein phosphatases remove phosphate by hydrolysis without regenerating ATP. A modification can affect catalysis, binding, localization or interactions; sites on one protein can have different functions. Src experiments demonstrated an inhibitory tail-phosphorylation mechanism in their defined preparation, so phosphorylation should not be treated as universal activation.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Protein_phosphorylation",
@@ -2595,8 +2598,8 @@
       "kind": "term",
       "name": "Variant allele frequency (VAF)",
       "aka": [],
-      "tldr": "Variant allele frequency is the fraction of informative reads or molecules that support a variant under a test\u2019s definition. It is not directly the fraction of cancer cells.",
-      "summary": "Read-based VAF divides variant-supporting reads by informative reads at the locus. Some assays instead report a molecule-based measure, so keep the laboratory\u2019s definition. Tumor purity, local allele-specific copy number, ploidy, subclonal mixture and assay behavior affect the value. VAF alone cannot assign zygosity, variant origin, the number of clones or a cancer-cell percentage. Changes over time in plasma also require attention to specimen and non-tumor DNA contributors.",
+      "tldr": "Variant allele frequency is the fraction of informative reads or molecules that support a variant under a test’s definition. It is not directly the fraction of cancer cells.",
+      "summary": "Read-based VAF divides variant-supporting reads by informative reads at the locus. Some assays instead report a molecule-based measure, so keep the laboratory’s definition. Tumor purity, local allele-specific copy number, ploidy, subclonal mixture and assay behavior affect the value. VAF alone cannot assign zygosity, variant origin, the number of clones or a cancer-cell percentage. Changes over time in plasma also require attention to specimen and non-tumor DNA contributors.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Allele_frequency",
       "links": [
@@ -2659,7 +2662,7 @@
         "genomic scar score"
       ],
       "tldr": "This assay-defined score summarizes genomic regions that lost previously different allelic information. It can reflect a past repair defect, including changes that preserve total DNA copy count.",
-      "summary": "Loss of heterozygosity means loss of previously distinct allelic information at a locus. It can accompany copy loss or occur with a copy-neutral allelic change; tumor purity and ploidy complicate inference. Genome-wide loss of heterozygosity summarizes affected interrogated regions according to the assay\u2019s definition. It is studied as a genomic scar associated with some homologous-recombination-repair defects, rather than a direct measurement of present repair function.\n\nThe threshold belongs to the assay and setting. ARIEL2 part 1 prespecified 14 percent or more as LOH high in its ovarian-cancer analysis; this does not establish a universal cutoff. Pan-cancer studies found elevated gLOH associated with biallelic BRCA1/2 alterations and with a core set of other repair-gene alterations, with effects differing by cancer context. Monoallelic calls and an HRR-gene-list label are not interchangeable with those findings. TP53 loss was independently associated with gLOH in the Westphalen analysis.\n\nIn 3,476 prostate tumors, Chung and colleagues found BRCA1/2, ATR and FANCA alterations associated with high gLOH, while CDK12-altered tumors, about 6 percent of that cohort, were infrequently gLOH high. The study did not correlate these findings with clinical outcomes. Such associations support gene-specific biological questions; they do not establish an individual patient\u2019s drug benefit or current treatment eligibility.",
+      "summary": "Loss of heterozygosity means loss of previously distinct allelic information at a locus. It can accompany copy loss or occur with a copy-neutral allelic change; tumor purity and ploidy complicate inference. Genome-wide loss of heterozygosity summarizes affected interrogated regions according to the assay’s definition. It is studied as a genomic scar associated with some homologous-recombination-repair defects, rather than a direct measurement of present repair function.\n\nThe threshold belongs to the assay and setting. ARIEL2 part 1 prespecified 14 percent or more as LOH high in its ovarian-cancer analysis; this does not establish a universal cutoff. Pan-cancer studies found elevated gLOH associated with biallelic BRCA1/2 alterations and with a core set of other repair-gene alterations, with effects differing by cancer context. Monoallelic calls and an HRR-gene-list label are not interchangeable with those findings. TP53 loss was independently associated with gLOH in the Westphalen analysis.\n\nIn 3,476 prostate tumors, Chung and colleagues found BRCA1/2, ATR and FANCA alterations associated with high gLOH, while CDK12-altered tumors, about 6 percent of that cohort, were infrequently gLOH high. The study did not correlate these findings with clinical outcomes. Such associations support gene-specific biological questions; they do not establish an individual patient’s drug benefit or current treatment eligibility.",
       "asOf": "2026-11-08",
       "wikipedia": "https://en.wikipedia.org/wiki/Loss_of_heterozygosity",
       "links": [
@@ -2842,7 +2845,7 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay\u2019s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modeling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumor."
+        "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay’s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modeling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumor."
       ],
       "category": "Biomarkers"
     },

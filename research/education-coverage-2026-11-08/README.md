@@ -8,15 +8,19 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
-First-pass review covers 37 curriculum sources. Thirty-six have complete proposed representation; the remaining reviewed source retains a specific breast-receptor-classification gap. Another 486 content sources and 14 navigation pages remain unreviewed. Two additional literature-derived concepts have proposed representation. These are review/implementation counts, not an estimate that every unreviewed source is missing from OnCo.
+First-pass review covers 54 curriculum sources: all 9 access/regulation, 28 biology and 17 antibody-based therapeutic pages. Thirty-five have complete proposed representation under the current requirements. Nineteen reviewed sources retain explicit follow-ups; 469 content sources and 14 navigation pages remain unreviewed. These are review counts, not a claim that every unreviewed source is missing from OnCo. The curriculum ledger now has 212 explicit learning requirements: 161 have field evidence and 51 remain open.
 
-Draft [#375](https://github.com/judegomila/OnCo/pull/375) now contains 18 new terms and 40 canonical-owner updates across access/regulation and biology. The 58 owners do not overlap the three earlier proposals. All proposals remain separate from main. Three schema gaps need concrete proposals and product review; 120 literature occurrences remain unscreened. [Biology checks](biology-validation.md) and [record-source scopes](biology-record-sources.json) state the evidence and validation limits.
+The source-section check has reopened several earlier pages: a mechanism summary alone cannot close an unread worked example or side section. Every general teaching section now has a pinned hash, with completed section review recorded separately from semantic coverage. The 37 earlier pages have been reread for supplemental teaching and their newly identified requirements remain visible.
+
+Draft [#375](https://github.com/judegomila/OnCo/pull/375) contains 22 new terms and 54 canonical-owner updates across access/regulation, biology and therapeutics. The 76 owners do not overlap the three earlier proposals, and no proposal is counted as main coverage. CHK1 and PARP1 cargo concepts retain their preclinical conference-abstract evidence. Histone lactylation is a third independently discovered concept, alongside receptor reserve and biased agonism; all three have proposed representation.
+
+Four schema gaps need concrete proposals and product review. Another 105 literature occurrences remain unscreened. [Therapeutic checks](therapeutic-validation.md), [biology checks](biology-validation.md) and the per-domain record-source indexes retain the evidence and validation limits. The goal remains active; this is not the final re-audit.
 
 ## Method
 
 1. Inventory every pinned Markdown source. Verify working bytes against its Git blob before extracting public metadata. No silently omitted file or unknown document type is permitted.
 2. Generate canonical-owner candidates from names, aliases and explanatory fields, including the three draft versions separately. Candidates are retrieval aids; an exact name or high score never closes a gap.
-3. Read each source's general teaching content and the candidate records. Write explicit, generic learning requirements. Assess the definition/mechanism, measurement or use, and interpretation boundaries where applicable. Guide objectives add requirements that are not already represented by their linked concepts. Navigation pages must be checked for unique teaching content before exclusion.
+3. Read every general teaching section, including practice, worked examples, side panels and source-scope qualifications, and the candidate records. Section hashes record actual reading; title or mechanism-only review is insufficient. Write explicit, generic learning requirements. Assess the definition/mechanism, measurement or use, and interpretation boundaries where applicable. Guide objectives add requirements that are not already represented by their linked concepts. Navigation pages must be checked for unique teaching content before exclusion.
 4. Identify existing owners before adding a record. Record field-level evidence with a hash of the actual field and an explanation of what it covers. A list of related names alone is insufficient. Existing-source coverage is an assessment of representation, not a new expert sign-off or a certification of every number elsewhere on the page.
 5. Keep each missing or partial requirement open. Resolve new/changed claims through primary publications, official guidance or registries. Capture web/Elicit queries, returned identifiers, raw responses and dispositions. Search adjacent concepts systematically by domain; add new omissions to the same ledger.
 6. Implement, date, deduplicate and validate changes; read the affected rendered pages and small examples. Schema additions need a concrete question that existing fields cannot answer. Keep product approval dependencies separate from content implementation.
@@ -44,7 +48,8 @@ npx tsx scripts/education-coverage.ts \
   --baseline /path/to/onco-baseline.json \
   --out research/education-coverage-2026-11-08 \
   --proposal research/education-coverage-2026-11-08/pending/proposal-access.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-biology.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-biology.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-therapeutic.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

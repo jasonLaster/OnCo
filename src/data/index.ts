@@ -16,6 +16,7 @@ import { pathways } from "./pathways";
 import { terms } from "./terms";
 import { educationAccessEvidence } from "./education-access-evidence";
 import { educationBiologyEvidence } from "./education-biology-evidence";
+import { educationTherapeuticEvidence } from "./education-therapeutic-evidence";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -325,7 +326,8 @@ const RAW_INPUTS: EntityInput[] = [
   ...pathways,
   ...terms,
   ...educationAccessEvidence,
-    ...educationBiologyEvidence,
+  ...educationBiologyEvidence,
+  ...educationTherapeuticEvidence,
   ...trials,
   ...pairings,
   ...roadmaps,

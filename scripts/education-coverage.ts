@@ -21,8 +21,10 @@ export type Review = {
   auditor?: string;
   checkedAt?: string;
   rationale?: string;
+  sectionHashes?: string[];
   points: LearningPoint[];
 };
+export type SourceSection = { ordinal: number; kind: string; sha256: string };
 export type CurriculumItem = {
   path: string;
   title: string | null;
@@ -33,6 +35,7 @@ export type CurriculumItem = {
   gitBlob: string;
   sourceURL: string;
   priorOwnerIds: string[];
+  sections?: SourceSection[];
   review: Review;
 };
 type RecordData = { id: string; kind: string; name: string; aka?: string[]; [key: string]: unknown };
@@ -76,15 +79,22 @@ export function candidateFinder(catalog: CatalogRow[]) {
 }
 
 /** Closure requires a semantic review and unchanged field evidence, not a lexical match. */
-export function reviewProblems(item: Pick<CurriculumItem, "sourceType" | "review">, catalog: Map<string, RecordData>): string[] {
+export function reviewProblems(item: Pick<CurriculumItem, "sourceType" | "review" | "sections">, catalog: Map<string, RecordData>): string[] {
   const r = item.review, errors: string[] = [];
+  const sectionProblems = () => {
+    const checked = new Set(r.sectionHashes ?? []);
+    for (const s of item.sections ?? []) if (!checked.has(s.sha256)) errors.push(`Source section remains unreviewed: ${s.ordinal} (${s.kind})`);
+    for (const hash of checked) if (item.sections && !item.sections.some(s => s.sha256 === hash)) errors.push("Reviewed section does not belong to this source version");
+  };
   if (item.sourceType === "navigation" && r.status !== "reviewed") {
     if (r.status !== "navigation") errors.push("Navigation item lacks a navigation disposition");
     if (!r.auditor || !r.checkedAt || !r.rationale) errors.push("Navigation disposition needs a dated review of whether it adds unique teaching content");
     if (r.points.length) errors.push("Navigation with unique teaching content must be assessed as content");
+    if (r.status === "navigation") sectionProblems();
     return errors;
   }
   if (r.status !== "reviewed") return ["Content remains unreviewed"];
+  sectionProblems();
   if (!r.auditor || !r.checkedAt || !r.rationale) errors.push("Semantic review lacks auditor, date or rationale");
   if (!r.points.length) errors.push("Semantic review has no learning points");
   for (const p of r.points) {
@@ -110,6 +120,19 @@ export function dependencyProblems(schemas: { id: string; status: string }[], li
     ...schemas.filter(r => r.status !== "resolved").map(r => "Schema gap remains open: " + r.id),
     ...literature.filter(r => r.reviewStatus === "unreviewed").map(r => "Literature screening remains open: " + r.queryId + ":" + r.rank),
   ];
+}
+
+/** Include practice and side panels; publish hashes rather than source bodies or personal headings. */
+export function sourceSections(path: string, body: string): SourceSection[] {
+  const cleaned = body.replace(/<!-- BEGIN GENERATED USED IN -->[\s\S]*?<!-- END GENERATED USED IN -->/g, "");
+  const chunks = cleaned.split(/^(## .+)$/m), parts: { heading: string; body: string }[] = [];
+  if (chunks[0].trim()) parts.push({ heading: "preamble", body: chunks[0] });
+  for (let i = 1; i + 1 < chunks.length; i += 2) parts.push({ heading: chunks[i].slice(3).trim(), body: chunks[i + 1] });
+  return parts.filter(p => !/\bin .{1,60}['’]s case\b|personal case|patient-specific/i.test(p.heading)).filter(p => {
+    if (!/^related concepts$/i.test(p.heading)) return true;
+    const rest = p.body.replace(/\[\[[^\]]+\]\]/g, "").replace(/\[[^\]]*\]\([^)]*\)/g, "").replace(/<!--[\s\S]*?-->/g, "").replace(/[^a-z0-9]/gi, "");
+    return !!rest;
+  }).map((p, ordinal) => ({ ordinal, kind: /preamble/i.test(p.heading) ? "preamble" : /try it|worked example|explain it back/i.test(p.heading) ? "practice-or-worked-example" : /source/i.test(p.heading) ? "source-scope" : /how it (works|is measured)|confusion/i.test(p.heading) ? "mechanism-measurement-interpretation" : "additional-teaching", sha256: sha256(path + "\n" + p.heading + "\n" + p.body) }));
 }
 
 function readJSON<T>(path: string): T { return JSON.parse(readFileSync(path, "utf8")) as T; }
@@ -157,7 +180,7 @@ function main() {
     const previous = oldMap.get(path), sourceSha256 = sha256(raw);
     if (previous && previous.sourceSha256 !== sourceSha256) throw new Error("Source changed; re-review explicitly before replacing: " + path);
     const review: Review = previous?.review ?? { status: "unreviewed", points: [] };
-    const item: CurriculumItem = { path, title, aliases, sourceType, domain, sourceSha256, gitBlob: blob, sourceURL: "https://github.com/jasonLaster/oncoguide/blob/" + ref + "/" + path, priorOwnerIds: prior[path] ?? [], review };
+    const item: CurriculumItem = { path, title, aliases, sourceType, domain, sourceSha256, gitBlob: blob, sourceURL: "https://github.com/jasonLaster/oncoguide/blob/" + ref + "/" + path, priorOwnerIds: prior[path] ?? [], sections: sourceSections(path, body.slice(fm[0].length)), review };
     items.push(item);
     (reviewPack[domain.split("/")[0]] ??= []).push({ path, title, meta, body: body.slice(fm[0].length) });
   }
@@ -174,7 +197,7 @@ function main() {
   const content = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed");
   const closed = content.filter(r => !reviewProblems(r, catalogMap).length);
   const stats = { totalSources: items.length, conceptOrComparison: count(r => ["concept", "comparison"].includes(r.sourceType)), guideOrLesson: count(r => ["guide", "guide-lesson"].includes(r.sourceType)), navigation: count(r => r.sourceType === "navigation"), navigationReviewed: count(r => r.sourceType === "navigation" && r.review.status === "navigation" && !reviewProblems(r, catalogMap).length), navigationWithTeachingContent: count(r => r.sourceType === "navigation" && r.review.status === "reviewed"), semanticallyReviewed: count(r => r.review.status === "reviewed"), implementedCoverage: closed.length, mainCoverage: closed.filter(r => r.review.points.every(p => p.status === "covered-main")).length, unresolvedContentItems: content.length - closed.length, unresolvedSources: new Set(failures.map(f => f.path)).size, adjacentConcepts: adjacent.length, unresolvedAdjacentConcepts: new Set(adjacentFailures.map(f => f.path)).size, openSchemaGaps: schemas.filter(r => r.status !== "resolved").length, unreviewedLiteratureOccurrences: literature.filter(r => r.reviewStatus === "unreviewed").length, readyForFinalReaudit: !failures.length && !adjacentFailures.length && !dependencies.length };
-  writeJSON(join(out, "ledger.json"), { schemaVersion: 2, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), stats, items, adjacent });
+  writeJSON(join(out, "ledger.json"), { schemaVersion: 3, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), stats, items, adjacent });
   writeJSON(join(out, "candidates.json"), { warning: "Lexical retrieval for manual review only; no match score establishes coverage.", items: candidates });
   writeJSON(join(out, "open-items.json"), [...failures, ...adjacentFailures]);
   writeJSON(join(out, "open-dependencies.json"), dependencies);

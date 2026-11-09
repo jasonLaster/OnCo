@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, type CurriculumItem } from "./education-coverage";
+import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, sourceSections, type CurriculumItem } from "./education-coverage";
 
 const record = { id: "example", kind: "term", name: "Example assay", summary: "Measures one readout under specified conditions." };
 const item = (): CurriculumItem => ({ path: "wiki/education/concepts/example.md", title: "Example assay", aliases: [], sourceType: "concept", domain: "measurement", sourceSha256: "source", gitBlob: "blob", sourceURL: "https://example.org/source", priorOwnerIds: [], review: { status: "unreviewed", points: [] } });
@@ -56,5 +56,18 @@ describe("curriculum coverage closure", () => {
     row.sourceType = "adjacent-concept";
     row.review = { status: "reviewed", auditor: "agent", checkedAt: "2026-11-08", rationale: "Read the discovered concept and its proposed owner.", points: [{ id: "new-distinction", requirement: "Retain assay context.", status: "covered-draft", remaining: [], evidence: [{ recordId: "example", version: "proposal-biology", field: "summary", fieldSha256: fieldHash(record.summary), explanation: "States the readout and its conditions." }] }] };
     expect(reviewProblems(row, new Map([["proposal-biology:example", record]]))).toEqual([]);
+  });
+
+  it("cannot close a page while an additional worked example remains unread", () => {
+    const row = item();
+    row.sections = sourceSections(row.path, "# Example\n\n## How it works\nCore definition.\n\n## Worked example\nAn additional interpretation boundary.\n\n## In a participant's case\nExcluded personal context.\n\n## Related concepts\n- [Another concept](/another)\n");
+    expect(row.sections.map(s => s.kind)).toEqual(["preamble", "mechanism-measurement-interpretation", "practice-or-worked-example"]);
+    row.review = { status: "reviewed", auditor: "agent", checkedAt: "2026-11-08", rationale: "The record field covers the named requirement.", sectionHashes: row.sections.slice(0, 2).map(s => s.sha256), points: [{ id: "readout", requirement: "Assay context.", status: "covered-main", remaining: [], evidence: [{ recordId: "example", version: "main", field: "summary", fieldSha256: fieldHash(record.summary), explanation: "Names the measurement and context." }] }] };
+    const catalog = new Map([["main:example", record]]);
+    expect(reviewProblems(row, catalog)).toContain("Source section remains unreviewed: 2 (practice-or-worked-example)");
+    row.review.sectionHashes = row.sections.map(s => s.sha256);
+    expect(reviewProblems(row, catalog)).toEqual([]);
+    row.sections = sourceSections(row.path, "# Example\n\n## How it works\nCore definition.\n\n## Worked example\nChanged interpretation boundary.\n");
+    expect(reviewProblems(row, catalog)).toContain("Reviewed section does not belong to this source version");
   });
 });

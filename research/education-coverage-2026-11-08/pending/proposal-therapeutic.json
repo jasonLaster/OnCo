@@ -3259,6 +3259,2593 @@
       ],
       "changedPractice": true,
       "participants": 66
+    },
+    {
+      "id": "trop2",
+      "kind": "target",
+      "name": "TROP2",
+      "aka": [],
+      "tldr": "TROP2 is a surface protein found in normal epithelial cells and many cancers. It is used to deliver antibody-drug conjugates and has biological signalling roles; those observations do not establish an individual tumour’s response.",
+      "summary": "TROP2, encoded by TACSTD2, is a transmembrane protein used as a delivery target by sacituzumab govitecan and datopotamab deruxtecan. Experimental studies have also linked wild-type TROP2 expression and signalling to growth in defined cell and animal models. Its delivery role, biological function, possible genomic alterations and clinical treatment-selection rules are separate questions. The current U.S. breast-cancer indications of these two ADCs do not require a TROP2 expression test, while other disease, prior-treatment and regimen-specific criteria still apply.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "UniProt P09758: TACSTD2 (TROP2)",
+          "url": "https://www.uniprot.org/uniprotkb/P09758/entry"
+        },
+        {
+          "label": "Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)",
+          "url": "https://doi.org/10.1016/j.annonc.2021.06.002"
+        },
+        {
+          "label": "TRODELVY prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "DATROWAY prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        },
+        {
+          "label": "Human Protein Atlas: TACSTD2 normal-tissue protein and RNA context",
+          "url": "https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"
+        },
+        {
+          "label": "Wild-type TROP2 and growth in experimental systems (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22349828/"
+        },
+        {
+          "label": "TROP2/AKT pathway experiments and preclinical drug sensitivity (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27022065/"
+        }
+      ],
+      "tags": [
+        "adc-target",
+        "pet-target"
+      ],
+      "related": [
+        "ga68-my6349",
+        "ga68-nota-t4",
+        "b-subclone-attribution-residual-disease",
+        "trop2-expression"
+      ],
+      "cancers": [
+        "tnbc",
+        "breast-hr-positive",
+        "nsclc",
+        "urothelial"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "ak146d1",
+        "bio-106",
+        "datopotamab-deruxtecan",
+        "eb-nk-301",
+        "lcb84",
+        "sacituzumab-govitecan",
+        "sacituzumab-tirumotecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct04617522",
+        "nct05922930",
+        "nct06311214",
+        "nct06454890",
+        "nct06902389",
+        "nct06929663",
+        "nct07067567",
+        "nct07101432",
+        "nct07299747",
+        "nct07377526",
+        "nct07509008",
+        "nct07553390",
+        "nct07631013"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-bardia-ascent-trop2-biomarker-ann-oncol-2021",
+        "paper-notini-trop2-pan-cancer-multiomic-npj-precis-oncol-2026",
+        "paper-coates-sacituzumab-resistance-tacstd2-cancer-discov-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The Human Protein Atlas reports substantial membrane and cytoplasmic protein expression in normal respiratory and squamous epithelial cells. A summary of selected normal-tissue staining does not establish tumour-exclusive expression or predict a person’s toxicity. RNA abundance, protein localisation and drug exposure are different observations; retain the assay and sampled cell types.",
+        "Wild-type TROP2 overexpression and knockdown experiments, and later AKT-pathway studies, support biological activity in their studied models. The 2013 growth paper did not establish TROP2-induced oncogenic transformation or a requirement for tumour-associated TROP2 mutations. Model-level growth or drug-sensitivity findings do not validate TROP2 as a clinical AKT-inhibitor selection test or establish a dependency in every tumour.",
+        "Triple-negative breast cancer: sacituzumab govitecan benefit was seen at high and medium Trop-2 H-score in ASCENT with a low group too small to judge (Bardia 2021); no label requires the test. TACSTD2 amplification is rare, 2.5 to 4.4% (cBioPortal)."
+      ],
+      "symbol": "TACSTD2",
+      "role": [],
+      "sources": [],
+      "specificity": "tumour-associated",
+      "distribution": "few-types",
+      "specificityNote": "Tumour-associated overexpression: 6 cell-killing or cell-finding medicines (AK146D1, BIO-106, Datopotamab deruxtecan and more) aim at the antigen, which HPA finds stained high in 1 normal tissue; the medicine relies on the tumour carrying more of it than the normal tissue it shares it with. HPA TACSTD2: RNA tissue enhanced (esophagus 1,245 nTPM, salivary gland 585 nTPM, skin 1 555 nTPM); blood lineage group enriched (dendritic cells 4 nTPM, granulocytes 15 nTPM, monocytes 4 nTPM); high antibody staining in 1 normal tissue; highest cancer staining urothelial cancer (1 of 11 high). Distribution: 4 cancer families in the corpus carry a prevalence row, label threshold or catalogue link for it (Breast cancer (all types), Lung cancer (all types), Bladder & urothelial cancer, Pancreatic ductal adenocarcinoma); approvals of single-target medicines aimed at it also list Endometrial cancer, Cervical cancer, not counted; Open Targets associates it with 3 specific cancer types at or above 0.5 (breast cancer, non-small cell lung carcinoma, triple-negative breast carcinoma). (Rule 5 of scripts/fetch-target-specificity.ts.)",
+      "specificitySources": [
+        {
+          "label": "Human Protein Atlas TACSTD2 tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Human Protein Atlas TACSTD2 pathology",
+          "url": "https://www.proteinatlas.org/ENSG00000184292-TACSTD2/pathology",
+          "note": "patients per staining level per cancer type (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Open Targets ENSG00000184292 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000184292/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:11530",
+      "ensembl": "ENSG00000184292",
+      "uniprot": "P09758",
+      "entrez": "4070",
+      "firstDescribed": 1989,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Linnenbach A.J. et al, Proc. Natl. Acad. Sci. U.S.A, 1989, \"Sequence investigation of the major gastrointestinal tumor-associated antigen gene family, GA733\".",
+      "firstDescribedSource": "https://pubmed.ncbi.nlm.nih.gov/2911574/",
+      "biology": "TROP2 is used as a surface target for antibody-drug conjugate delivery and also has biological signalling functions in studied experimental systems. Wild-type overexpression, knockdown and AKT-pathway experiments support growth-related roles in their model contexts. Delivery, biological function and clinical treatment selection remain separate questions: expression does not measure every delivery step or establish a universal tumour dependency.",
+      "whereFound": [
+        "Triple-negative breast cancer (~80-90% express)",
+        "HR+ breast cancer",
+        "NSCLC",
+        "Urothelial carcinoma",
+        "Gastric, pancreatic, endometrial cancers",
+        "Triple-negative breast cancer: gene amplification (copy number) 2.5-4.4%"
+      ],
+      "targetClass": "surface-antigen",
+      "prevalence": [
+        {
+          "cancerId": "tnbc",
+          "pct": "80-90",
+          "measure": "IHC, any/moderate-high expression",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/",
+          "note": "ASCENT's exploratory biomarker analysis supported benefit in the high/medium H-score groups; the low-expression group was too small for definitive conclusions (290 of 468 assessable patients had TROP2 data). No TROP2 companion test is required for the breast-cancer indications."
+        },
+        {
+          "cancerId": "breast-hr-positive",
+          "pct": "75-90",
+          "measure": "IHC, any expression",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/"
+        },
+        {
+          "cancerId": "nsclc",
+          "pct": "60-70",
+          "measure": "IHC, moderate-high",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/",
+          "note": "Adenocarcinoma and squamous"
+        },
+        {
+          "cancerId": "urothelial",
+          "pct": "80-90",
+          "measure": "IHC, any expression",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/"
+        },
+        {
+          "cancerId": "pancreatic",
+          "pct": 50,
+          "measure": "IHC, any expression",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/",
+          "note": "Approximate; heterogeneous"
+        },
+        {
+          "cancerId": "tnbc",
+          "pct": "2.5-4.4",
+          "measure": "Gene amplification (copy number)",
+          "source": "https://www.cbioportal.org/study/summary?id=brca_tcga_pan_can_atlas_2018",
+          "note": "Trop-2 expression was assessable in 290 of 468 ASCENT patients and sacituzumab govitecan benefit was seen at high and medium expression (progression-free survival 6.9 and 5.6 versus 2.5 and 2.2 months), with the low group too small to judge (Bardia 2021); cBioPortal: TACSTD2 amplification in the TNBC-filtered copy-number cohorts, 3 of 119, 2.5%, in brca_tcga_pan_can_atlas_2018 and 14 of 320, 4.4%, in brca_metabric; no TACSTD2 mutation in either."
+        }
+      ]
+    },
+    {
+      "id": "trop2-expression",
+      "kind": "biomarker",
+      "name": "TROP2 expression",
+      "aka": [
+        "TROP2",
+        "TROP-2",
+        "Trop-2 expression",
+        "TACSTD2 expression",
+        "TROP2 QCS",
+        "TROP2 normalised membrane ratio"
+      ],
+      "tldr": "TROP2 expression is a measured feature, not a universal ADC selection rule. The current U.S. breast-cancer uses of sacituzumab govitecan and datopotamab deruxtecan do not require a TROP2 test; other treatment requirements still apply.",
+      "summary": "In ASCENT, a prespecified exploratory analysis used an immunohistochemical H-score to examine TROP2 expression. Results were available for 290 of the 468 patients in the primary population without brain metastases. The authors supported benefit in the high and medium groups and said the low group was too small for a definitive benefit conclusion. This analysis does not establish equal effects at every expression level or a validated universal threshold. A marker association, a randomised treatment comparison and a treatment-by-marker interaction answer different questions.\n\nThe current U.S. breast indications for sacituzumab govitecan and datopotamab deruxtecan do not require a TROP2 selection assay. That regulatory rule does not prove that the target or its delivery is biologically irrelevant. Check the exact drug, subtype, setting and prior treatment. The first-line sacituzumab-pembrolizumab regimen has a separate PD-L1 CPS requirement of at least 10 using an FDA-authorized test. A research H-score or computational membrane score is not automatically an interchangeable clinical selection test.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "TRODELVY prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "DATROWAY prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        },
+        {
+          "label": "FDA: Trodelvy urothelial indication withdrawal",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sacituzumab-govitecan-advanced-urothelial-cancer"
+        },
+        {
+          "label": "FDA: first-line sacituzumab TNBC indications, June 24, 2026",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"
+        },
+        {
+          "label": "FDA: Dato-DXd TNBC indication, May 22, 2026",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer"
+        },
+        {
+          "label": "ASCENT prespecified exploratory TROP2 analysis: primary populations and subgroup limits",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34116144/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "surface-antigen",
+        "no-threshold"
+      ],
+      "related": [
+        "her2-low",
+        "nectin-4-expression"
+      ],
+      "cancers": [
+        "tnbc",
+        "tnbc-metastatic",
+        "breast-hr-positive",
+        "urothelial",
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "sacituzumab-govitecan",
+        "datopotamab-deruxtecan",
+        "sacituzumab-tirumotecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-bardia-ascent-trop2-biomarker-ann-oncol-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A biopsy samples one lesion at one time. Surface staining does not measure binding, uptake, released active drug, intracellular transport or sensitivity to that drug. Those steps can differ even when two samples have similar staining. Drug-specific mechanistic evidence and clinical evidence are needed before turning expression into a treatment rule.",
+        "Triple-negative breast cancer: ASCENT's exploratory H-score analysis showed sacituzumab govitecan benefit at high and medium Trop-2 (response 44% and 38% versus 1% and 11% on chemotherapy) with the low group too small to interpret (Bardia 2021); neither sacituzumab govitecan nor datopotamab deruxtecan requires the test."
+      ],
+      "target": "trop2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "ASCENT used a validated research immunohistochemistry assay and histochemical H-score in a prespecified exploratory analysis. Its high, medium and low research groups are not a labelled TROP2 cutoff for the U.S. breast indications described here.",
+        "quote": "prespecified, exploratory biomarker analysis",
+        "source": "https://doi.org/10.1016/j.annonc.2021.06.002",
+        "sourceLabel": "Bardia and colleagues, ASCENT exploratory biomarker analysis, 2021"
+      },
+      "thresholds": [],
+      "tests": [],
+      "assays": [],
+      "companionDiagnostics": [],
+      "forPatient": "A TROP2 result describes the tested sample. It does not by itself tell whether an ADC will work. These two U.S. breast-cancer drug labels do not require a TROP2 test, but the exact subtype, prior treatment and regimen still matter; the first-line sacituzumab-pembrolizumab combination requires its separate PD-L1 result."
+    },
+    {
+      "id": "her2-low",
+      "kind": "term",
+      "name": "HER2-low and HER2-ultralow",
+      "aka": [
+        "HER2-low",
+        "HER2 low",
+        "HER2-ultralow",
+        "HER2 ultralow",
+        "HER2-ultra-low",
+        "HER2 IHC 1+",
+        "IHC 1+",
+        "IHC 2+ ISH-negative",
+        "HER2 IHC 0",
+        "HER2-zero",
+        "HER2 0",
+        "HER2 immunohistochemistry score",
+        "HER2-low status"
+      ],
+      "tldr": "HER2-low and HER2-ultralow describe particular staining categories used in breast-cancer studies and specified treatment labels. They do not mean that everyone in a category has the same biology or qualifies for the same treatment.",
+      "summary": "HER2-low generally denotes IHC 1+ or IHC 2+ with a negative ISH result in the relevant breast-cancer context. HER2-ultralow denotes the IHC 0 pattern with membrane staining used in DESTINY-Breast06 and the corresponding U.S. ENHERTU label. These are measured categories with assay and reporting context. The September 2026 CAP template records the membrane-staining pattern as negative score 0+, separately from negative score 0 with no detected membrane staining.\n\nDESTINY-Breast04 studied previously chemotherapy-treated HER2-low metastatic disease, including hormone receptor-positive and hormone receptor-negative participants. DESTINY-Breast06 studied hormone receptor-positive disease after endocrine therapy without prior chemotherapy for metastatic disease; its primary comparison concerned HER2-low disease and its ultralow analysis was exploratory. Neither trial establishes that every low-expression category is one biological disease or validates a cutoff for every ADC. The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/HER2",
+      "links": [
+        {
+          "label": "NCI Dictionary of Cancer Terms: HER2-low breast cancer",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/her2-low-breast-cancer"
+        },
+        {
+          "label": "Quinn et al., Histopathology 2026;89(2):199 to 218: World Health Organization classification of tumours of the breast, 6th edition 2026",
+          "url": "https://doi.org/10.1111/his.70149"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Current U.S. ENHERTU prescribing information: indications and patient selection",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "Historical HER2 reader-concordance study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35113160/"
+        }
+      ],
+      "tags": [
+        "precision"
+      ],
+      "related": [],
+      "cancers": [
+        "tnbc",
+        "breast-hr-positive"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-testing-uk-breast",
+        "who-breast-classification"
+      ],
+      "trials": [
+        "destiny-breast04",
+        "destiny-breast06"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a historical study of 18 pathologists reading 170 selected biopsies, concordance in the 0 versus 1+ range was lower than for 2+ versus 3+ (Fernandez 2022). That is a result of that study, not the probability that an individual report is wrong. Tissue, sampling time, reader and assay matter; a second review or a different specimen needs clinical and laboratory context and does not guarantee a changed result or access to a medicine.",
+        "The 2026 WHO review describes changes in HER2 reporting after DESTINY-Breast04 and DESTINY-Breast06. The September 2026 CAP template distinguishes score 0 with no detected membrane staining from score 0+ with faint incomplete membrane staining in 10 percent or fewer tumour cells. The template itself is not required for accreditation. The reporting category, the drug label and an individual’s clinical eligibility are separate; not every trace-staining result in every breast-cancer setting has the same treatment implication."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "her2-low-and-trop2-adc-eligibility-tnbc",
+      "kind": "term",
+      "name": "HER2-low eligibility for trastuzumab deruxtecan, and TROP2 ADCs without a test (triple-negative disease)",
+      "aka": [
+        "HER2-low TNBC",
+        "HER2 0 versus 1+",
+        "T-DXd eligibility in triple-negative breast cancer",
+        "Sacituzumab govitecan eligibility",
+        "TROP2 testing not required"
+      ],
+      "tldr": "ADC selection depends on the exact product and clinical setting. HER2-low can meet one biomarker condition for a specified trastuzumab deruxtecan use; the listed U.S. TROP2 ADC breast indications do not require TROP2 staining.",
+      "summary": "The current U.S. ENHERTU label defines HER2-low as IHC 1+ or IHC 2+/ISH-negative with an FDA-authorized test. Its unresectable or metastatic HER2-low breast indication after chemotherapy can include hormone receptor-negative disease; the separate HER2-ultralow use after endocrine therapy is restricted to hormone receptor-positive disease. A HER2-ultralow result in TNBC does not acquire that latter indication from DESTINY-Breast06.\n\nDESTINY-Breast04 randomised 557 patients after prior chemotherapy, with 494 hormone receptor-positive and 63 hormone receptor-negative at randomisation. The small hormone receptor-negative efficacy analysis and later follow-up reports need their own denominators and versions. DESTINY-Breast06 enrolled hormone receptor-positive disease only and analysed ultralow disease exploratorily. Trial activity, a labelled biomarker category and individual eligibility remain distinct.\n\nThe current U.S. breast-cancer uses of sacituzumab govitecan and datopotamab deruxtecan do not require a TROP2 test. This does not show that TROP2 is irrelevant or that benefit is established in every expression subgroup: ASCENT’s low-TROP2 group was too small for a definitive conclusion. The first-line sacituzumab-pembrolizumab regimen still requires its separate PD-L1 CPS of at least 10 and other label conditions. The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Trastuzumab_deruxtecan",
+      "links": [
+        {
+          "label": "Wolff, J Clin Oncol 2018: ASCO/CAP HER2 testing guideline focused update",
+          "url": "https://doi.org/10.1200/jco.2018.77.8738"
+        },
+        {
+          "label": "Wolff, J Clin Oncol 2023: ASCO-CAP HER2 testing update (IHC 0 versus 1+ after DESTINY-Breast04)",
+          "url": "https://doi.org/10.1200/jco.22.02864"
+        },
+        {
+          "label": "Modi, N Engl J Med 2022: DESTINY-Breast04, trastuzumab deruxtecan in HER2-low advanced breast cancer",
+          "url": "https://doi.org/10.1056/nejmoa2203690"
+        },
+        {
+          "label": "Bardia, N Engl J Med 2021: ASCENT, sacituzumab govitecan in metastatic triple-negative breast cancer",
+          "url": "https://doi.org/10.1056/nejmoa2028485"
+        },
+        {
+          "label": "NICE TA819: sacituzumab govitecan for unresectable triple-negative advanced breast cancer after 2 or more therapies (August 2022)",
+          "url": "https://www.nice.org.uk/guidance/ta819"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Current U.S. ENHERTU prescribing information: indications and patient selection",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "Current U.S. TRODELVY breast indications",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "Current U.S. DATROWAY breast indications",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        },
+        {
+          "label": "ASCENT exploratory biomarker analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34116144/"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        }
+      ],
+      "tags": [
+        "breast",
+        "tnbc"
+      ],
+      "related": [],
+      "cancers": [
+        "tnbc",
+        "tnbc-metastatic",
+        "her2-low-metastatic-breast-cancer"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [
+        "her2",
+        "trop2"
+      ],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "sacituzumab-govitecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "er-pr-negative-threshold"
+      ],
+      "trials": [
+        "destiny-breast04",
+        "ascent"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the specimen, lesion or block, assay and scoring method with the result. The September 2026 CAP template separates negative score 0 with no detected membrane staining from negative score 0+ with faint, incomplete membrane staining in 10 percent or fewer tumour cells. Earlier scoring systems included both patterns within IHC 0; the ENHERTU label calls the membrane-staining pattern HER2-ultralow. An older study’s notation must be interpreted using that study’s assay and definitions. No detected staining is an observation with a particular test, rather than proof that every HER2 molecule is absent."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "her2-low-ihc",
+      "kind": "biomarker",
+      "name": "HER2-low (IHC 1+ or IHC 2+/ISH-negative)",
+      "aka": [
+        "HER2-low breast cancer",
+        "HER2-low readout",
+        "IHC 1+ or 2+/ISH-",
+        "HER2 low expression",
+        "HER2-low (IHC 1+ or IHC 2+/ISH-)"
+      ],
+      "tldr": "In the relevant breast-cancer setting, HER2-low means IHC 1+ or IHC 2+ with a negative ISH result. This score is one part of a product-specific treatment rule, not a promise of benefit or an indication in every disease stage.",
+      "summary": "HER2-low is a staining/ISH category used in specified studies and treatment labelling. It does not establish a universal biological boundary or mean that every HER2-negative cancer is eligible for an ADC. DESTINY-Breast04 studied previously chemotherapy-treated metastatic disease; DESTINY-Breast06 studied hormone receptor-positive disease after endocrine therapy without prior metastatic chemotherapy. The latter trial’s ultralow analysis was exploratory. The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "HER2 scoring concordance in a defined historical study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35113160/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ihc-1-plus",
+        "her2-ihc-2-plus",
+        "her2-ultralow"
+      ],
+      "cancers": [
+        "her2-low-metastatic-breast-cancer",
+        "breast-hr-positive",
+        "tnbc-metastatic",
+        "breast-cancer",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc",
+        "fish"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-destiny-breast04-nejm-2022",
+        "paper-schettini-her2-low-features-npj-breast-cancer-2021",
+        "paper-denkert-her2-low-pooled-neoadjuvant-lancet-oncol-2021",
+        "paper-boissiere-michot-her2-ultralow-tnbc-virchows-arch-2026"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the specimen, lesion or block, assay and scoring method with the result. The September 2026 CAP template separates negative score 0 with no detected membrane staining from negative score 0+ with faint, incomplete membrane staining in 10 percent or fewer tumour cells. Earlier scoring systems included both patterns within IHC 0; the ENHERTU label calls the membrane-staining pattern HER2-ultralow. An older study’s notation must be interpreted using that study’s assay and definitions. No detected staining is an observation with a particular test, rather than proof that every HER2 molecule is absent.",
+        "In a historical study of 18 pathologists reading 170 selected biopsies, concordance in the 0 versus 1+ range was lower than for 2+ versus 3+ (Fernandez 2022). That is a result of that study, not the probability that an individual report is wrong. Tissue, sampling time, reader and assay matter; a second review or a different specimen needs clinical and laboratory context and does not guarantee a changed result or access to a medicine.",
+        "Triple-negative breast cancer: DESTINY-Breast04 defined HER2-low as IHC 1+ or IHC 2+ with negative in situ hybridisation and enrolled 63 hormone receptor-negative patients among 557 (Modi 2022); the U.S. HER2-low breast indication also requires unresectable or metastatic disease and the specified prior chemotherapy or early recurrence after adjuvant chemotherapy. HER2-low is 36.6% of TNBC (Schettini 2021), 34.0% of hormone receptor-negative trial patients (Denkert 2021) and 24.0% of untreated TNBCs (Boissiere-Michot 2026). Historical reader-agreement findings at the 0 versus 1+ boundary are assay- and study-dependent. Any second review or alternative specimen needs clinical and laboratory context; it does not guarantee reclassification, individual benefit or treatment access."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "For invasive breast-cancer reporting, IHC 1+ is a negative protein-overexpression category with faint incomplete membrane staining in more than 10 percent of cells. IHC 2+ is equivocal and requires the applicable ISH interpretation. IHC 1+ or IHC 2+/ISH-negative defines the HER2-low group used in the corresponding studies and label.",
+        "quote": "IHC Score 1+",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 1+ or IHC 2+/ISH-",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "her2-low-metastatic-breast-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "HER2-low (IHC 1+ or IHC 2+/ISH-) breast cancer, as determined by an FDA-authorized test, who have received a prior chemotherapy in the metastatic setting or developed disease recurrence during or within 6 months of completing adjuvant chemotherapy",
+          "status": "current",
+          "note": "The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit."
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5",
+        "her2-ish"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S047 (09/30/2022)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "VENTANA HER2 Dual ISH DNA Probe Cocktail",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P190031/S015 (05/15/2026)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "Keep the underlying IHC score and any ISH result, even when the report says HER2-negative. A low result can meet the biomarker condition of a specified advanced-breast-cancer treatment use; stage, hormone receptor status, prior treatment and the rest of the label still matter."
+    },
+    {
+      "id": "her2-ultralow",
+      "kind": "biomarker",
+      "name": "HER2-ultralow (IHC 0 with membrane staining)",
+      "aka": [
+        "HER2-ultralow",
+        "HER2 ultralow",
+        "ultralow",
+        "IHC 0 with faint staining",
+        "IHC >0 <1+"
+      ],
+      "tldr": "HER2-ultralow describes faint incomplete membrane staining within the historical IHC 0 band. A specified U.S. trastuzumab deruxtecan use requires hormone receptor-positive unresectable or metastatic breast cancer after endocrine therapy.",
+      "summary": "In DESTINY-Breast06 and the U.S. ENHERTU label, HER2-ultralow means IHC 0 with membrane staining. The September 2026 CAP breast template separately reports negative score 0+ for faint incomplete membrane staining in 10 percent or fewer tumour cells and score 0 for no detected membrane staining. The source, assay and scoring version matter when comparing a report with an older study.\n\nDESTINY-Breast06 enrolled hormone receptor-positive disease only; the primary endpoint concerned HER2-low disease and the ultralow analysis was exploratory. Its results do not establish an ultralow treatment indication in TNBC. For the U.S. ultralow use, adults need unresectable or metastatic HR-positive disease that progressed on one or more endocrine therapies in the metastatic setting and an FDA-authorized HER2 test. A trace of staining alone does not establish all these conditions or individual benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "HER2 scoring concordance in a defined historical study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35113160/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ihc-0",
+        "her2-low-ihc"
+      ],
+      "cancers": [
+        "her2-low-metastatic-breast-cancer",
+        "breast-hr-positive",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-boissiere-michot-her2-ultralow-tnbc-virchows-arch-2026"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a historical study of 18 pathologists reading 170 selected biopsies, concordance in the 0 versus 1+ range was lower than for 2+ versus 3+ (Fernandez 2022). That is a result of that study, not the probability that an individual report is wrong. Tissue, sampling time, reader and assay matter; a second review or a different specimen needs clinical and laboratory context and does not guarantee a changed result or access to a medicine.",
+        "Triple-negative breast cancer: ultralow (IHC 0 with faint incomplete membrane staining in 10% or fewer cells) was 37.6% of 367 untreated TNBCs, with 38.4% null (Boissiere-Michot 2026). DESTINY-Breast06 enrolled hormone receptor-positive disease only, so the ultralow label does not extend to TNBC; the study did not find added prognostic value for these categories in that specific cohort. This does not prove the absence of an association in every TNBC population."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "The September 2026 CAP breast template records negative score 0+ when incomplete, faint or barely perceptible membrane staining is present in 10 percent or fewer tumour cells. The ENHERTU label describes the corresponding ultralow category as IHC 0 with membrane staining. The classification is separate from clinical indication.",
+        "quote": "Negative (Score 0+)",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 0 with membrane staining, HR-positive, after endocrine therapy",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "her2-low-metastatic-breast-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "Select patients for treatment of unresectable or metastatic HER2-low (IHC 1+ or IHC 2+/ISH-) or HER2-ultralow (IHC 0 with membrane staining) breast cancer with ENHERTU based on HER2 expression",
+          "status": "current",
+          "note": "The U.S. ultralow breast indication is for adults with unresectable or metastatic HR-positive disease that progressed on one or more endocrine therapies in the metastatic setting, with an FDA-authorized HER2 test. It is not an ultralow TNBC indication. The quoted selection excerpt does not replace the full indication."
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S055 (01/27/2025)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "An older report saying HER2 0 can include different staining patterns. The report’s assay, validity and membrane-staining description matter. The U.S. ultralow use described here is restricted to HR-positive unresectable or metastatic disease after specified endocrine therapy; it is not established by a TNBC ultralow result."
+    },
+    {
+      "id": "her2-ihc-0",
+      "kind": "biomarker",
+      "name": "HER2 IHC 0 and 0+ (negative reporting categories)",
+      "aka": [
+        "HER2 IHC 0",
+        "HER2 0",
+        "IHC 0",
+        "HER2-negative IHC",
+        "HER2 null",
+        "IHC 0 with membrane staining"
+      ],
+      "tldr": "An IHC 0 label must be read with its scoring system and staining description. Older breast scoring includes no detected membrane staining and faint staining in a small fraction of cells; the September 2026 CAP template reports these separately.",
+      "summary": "Keep the specimen, lesion or block, assay and scoring method with the result. The September 2026 CAP template separates negative score 0 with no detected membrane staining from negative score 0+ with faint, incomplete membrane staining in 10 percent or fewer tumour cells. Earlier scoring systems included both patterns within IHC 0; the ENHERTU label calls the membrane-staining pattern HER2-ultralow. An older study’s notation must be interpreted using that study’s assay and definitions. No detected staining is an observation with a particular test, rather than proof that every HER2 molecule is absent.\n\nThe current U.S. ENHERTU ultralow use requires IHC 0 with membrane staining, HR-positive unresectable or metastatic breast cancer, progression on one or more endocrine therapies in the metastatic setting and an FDA-authorized test. It does not follow from every report labelled 0 or from an ultralow TNBC result. A research response in an IHC 0 cohort does not itself expand the drug label or validate a universal cutoff.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "ASCO/CAP HER2 testing in breast cancer guideline, 2018 focused update (Wolff et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "HER2 scoring concordance in a defined historical study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35113160/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ultralow",
+        "her2-ihc-1-plus",
+        "her2-low-ihc"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "her2-low-metastatic-breast-cancer",
+        "breast-hr-positive",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a historical study of 18 pathologists reading 170 selected biopsies, concordance in the 0 versus 1+ range was lower than for 2+ versus 3+ (Fernandez 2022). That is a result of that study, not the probability that an individual report is wrong. Tissue, sampling time, reader and assay matter; a second review or a different specimen needs clinical and laboratory context and does not guarantee a changed result or access to a medicine."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "The September 2026 CAP breast template uses negative score 0 for no detected membrane staining, and negative score 0+ for incomplete faint membrane staining in 10 percent or fewer tumour cells. Earlier ASCO/CAP scoring placed both patterns within IHC 0. Interpret the notation using the actual source and assay.",
+        "quote": "No membrane staining detected",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 0 with membrane staining (ultralow), HR-positive",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "her2-low-metastatic-breast-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "Select patients for treatment of unresectable or metastatic HER2-low (IHC 1+ or IHC 2+/ISH-) or HER2-ultralow (IHC 0 with membrane staining) breast cancer with ENHERTU based on HER2 expression",
+          "status": "current",
+          "note": "The U.S. ultralow breast indication is for adults with unresectable or metastatic HR-positive disease that progressed on one or more endocrine therapies in the metastatic setting, with an FDA-authorized HER2 test. It is not an ultralow TNBC indication. The quoted selection excerpt does not replace the full indication."
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S055 (01/27/2025)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "Ask what staining pattern and scoring system the report describes. A 0 result does not prove the absence of every HER2 molecule. A membrane-staining result is only one condition for a particular advanced HR-positive breast-cancer use; it does not automatically establish eligibility."
+    },
+    {
+      "id": "her2-ihc-1-plus",
+      "kind": "biomarker",
+      "name": "HER2 IHC 1+",
+      "aka": [
+        "HER2 IHC 1+",
+        "HER2 1+",
+        "IHC 1+",
+        "HER2 1+ breast cancer"
+      ],
+      "tldr": "In invasive breast-cancer scoring, IHC 1+ means faint incomplete HER2 membrane staining in more than 10 percent of tumour cells. It is a negative protein-overexpression category and can meet one biomarker condition of a specified HER2-low treatment use.",
+      "summary": "The September 2026 CAP breast template retains IHC 1+ as a negative category for protein overexpression: incomplete membrane staining that is faint or barely perceptible in more than 10 percent of tumour cells. It is one HER2-low category in DESTINY-Breast04, DESTINY-Breast06 and the corresponding U.S. ENHERTU label. This does not make the category biologically uniform or establish eligibility by the score alone. The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "ASCO/CAP HER2 testing in breast cancer guideline, 2018 focused update (Wolff et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "DESTINY-Breast04 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "DESTINY-Breast06 primary report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "HER2 scoring concordance in a defined historical study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35113160/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-low-ihc",
+        "her2-ihc-0",
+        "her2-ihc-2-plus"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "her2-low-metastatic-breast-cancer",
+        "breast-hr-positive"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a historical study of 18 pathologists reading 170 selected biopsies, concordance in the 0 versus 1+ range was lower than for 2+ versus 3+ (Fernandez 2022). That is a result of that study, not the probability that an individual report is wrong. Tissue, sampling time, reader and assay matter; a second review or a different specimen needs clinical and laboratory context and does not guarantee a changed result or access to a medicine."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "For invasive breast cancer, IHC 1+ is incomplete membrane staining that is faint or barely perceptible in more than 10 percent of tumour cells. It is negative for protein overexpression.",
+        "quote": "Negative (Score 1+)",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 1+ (HER2-low)",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "her2-low-metastatic-breast-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "Select patients for treatment of unresectable or metastatic HER2-low (IHC 1+ or IHC 2+/ISH-) or HER2-ultralow (IHC 0 with membrane staining) breast cancer with ENHERTU based on HER2 expression",
+          "status": "current",
+          "note": "The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit."
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S047 (09/30/2022)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "A valid 1+ result retains useful information within a HER2-negative report. Whether a particular treatment applies also depends on the disease stage, hormone receptor status, prior treatment, test and drug label."
+    },
+    {
+      "id": "her2-ihc-2-plus",
+      "kind": "biomarker",
+      "name": "HER2 IHC 2+ (equivocal, reflex to ISH)",
+      "aka": [
+        "HER2 IHC 2+",
+        "HER2 2+",
+        "IHC 2+",
+        "HER2 equivocal",
+        "2+/ISH",
+        "IHC 2+/ISH-negative",
+        "IHC 2+/ISH+"
+      ],
+      "tldr": "In breast-cancer scoring, IHC 2+ is equivocal for HER2 protein overexpression. The applicable ISH and laboratory interpretation are needed before assigning final HER2 status or applying a treatment rule.",
+      "summary": "The September 2026 CAP breast template lists weak to moderate complete membrane staining in more than 10 percent of cells as a common IHC 2+ pattern, with additional equivocal patterns and artefact considerations. The breast testing algorithm uses ISH to resolve the result. Ratio, copy number, concurrent IHC and any required recounting matter in uncommon groups; a gene-count shortcut does not replace the algorithm.\n\nIHC 2+/ISH-negative is a HER2-low category for specified trastuzumab deruxtecan breast uses, while a completed HER2-positive interpretation belongs to different treatment rules. Tissue-specific scoring and the actual product label must be retained; a breast scoring rule is not automatically a gastric, colorectal or biliary rule. The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "ASCO/CAP HER2 testing in breast cancer guideline, 2018 focused update (Wolff et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ihc-3-plus",
+        "her2-ish-amplified",
+        "her2-low-ihc"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "her2-low-metastatic-breast-cancer",
+        "gastric-her2-positive",
+        "gallbladder",
+        "biliary-tract-cancer"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "trastuzumab",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-positive",
+        "her2-low",
+        "fish",
+        "ihc",
+        "her2-testing-in-biliary-cancer"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-angerilli-her2-ihc-cish-biliary-hum-pathol-2026",
+        "paper-harding-lancet-oncol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the specimen, lesion or block, assay and scoring method with the result. The September 2026 CAP template separates negative score 0 with no detected membrane staining from negative score 0+ with faint, incomplete membrane staining in 10 percent or fewer tumour cells. Earlier scoring systems included both patterns within IHC 0; the ENHERTU label calls the membrane-staining pattern HER2-ultralow. An older study’s notation must be interpreted using that study’s assay and definitions. No detected staining is an observation with a particular test, rather than proof that every HER2 molecule is absent.",
+        "Gallbladder and biliary cancer: IHC 2+ was 8.6% of 140 resected biliary cancers and only a subset were amplified on chromogenic ISH, with a lower mean ERBB2/CEP17 ratio (3.9) than 3+ tumours (6.2) (Angerilli 2026). HERIZON-BTC-01 counted ISH-confirmed 2+ as HER2-positive (Harding 2023), but the zanidatamab label is written at IHC 3+, so a 2+ result needs ISH and, even when amplified, is off-label in the United States."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "In invasive breast cancer, common 2+ staining is weak to moderate and complete in more than 10 percent of cells; other specified equivocal patterns also occur. Resolve the result through the applicable ISH/IHC algorithm, including recounting where required.",
+        "quote": "Equivocal (Score 2+)",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 2+/ISH+ (HER2-positive)",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "gastric-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "based on HER2 protein overexpression or HER2 gene amplification (IHC 3+ or IHC 2+/ISH+)",
+          "status": "current"
+        },
+        {
+          "value": "IHC 2+/ISH- (HER2-low)",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "her2-low-metastatic-breast-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "HER2-low (IHC 1+ or IHC 2+/ISH-) breast cancer, as determined by an FDA-authorized test, who have received a prior chemotherapy in the metastatic setting or developed disease recurrence during or within 6 months of completing adjuvant chemotherapy",
+          "status": "current",
+          "note": "The U.S. ENHERTU HER2-low and HER2-ultralow breast indications require an FDA-authorized HER2 test and unresectable or metastatic disease. One use is HR-positive HER2-low or HER2-ultralow disease that has progressed on one or more endocrine therapies in the metastatic setting. A separate HER2-low use requires prior chemotherapy in the metastatic setting, or recurrence during or within six months after adjuvant chemotherapy. The latter low-expression use does not require HR-positive disease; the ultralow indication does. The score alone does not establish eligibility or individual benefit."
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5",
+        "her2-ish"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S047 (09/30/2022)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "A 2+ score is an equivocal test result, not a treatment decision. The completed laboratory interpretation and the exact product, cancer type, stage and prior treatment determine what options may apply."
+    },
+    {
+      "id": "her2-ihc-3-plus",
+      "kind": "biomarker",
+      "name": "HER2 IHC 3+ (HER2-positive by immunohistochemistry)",
+      "aka": [
+        "HER2 IHC 3+",
+        "HER2 3+",
+        "IHC 3+",
+        "HER2 overexpression",
+        "HER2-positive IHC",
+        "HER2 protein overexpression"
+      ],
+      "tldr": "In invasive breast cancer, IHC 3+ means intense complete HER2 membrane staining in more than 10 percent of tumour cells. It meets a protein-overexpression criterion; treatment still depends on the exact drug and clinical setting.",
+      "summary": "The September 2026 CAP breast template defines IHC 3+ as complete, intense circumferential membrane staining in more than 10 percent of tumour cells, interpreted with specimen and assay quality. Other tissues can use different scoring rules. A score is not a universal prescription for every HER2-directed treatment.\n\nThe current U.S. ENHERTU label contains distinct early-breast, HER2-positive advanced-breast, gastric and IHC 3+ solid-tumour uses, each with its own setting, regimen and prior-treatment requirements. These are different from its HER2-low/ultralow breast uses. Read the relevant indication rather than inferring it from a shared target or a score alone.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "Herceptin prescribing information (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2"
+        },
+        {
+          "label": "ASCO/CAP HER2 testing in breast cancer guideline, 2018 focused update (Wolff et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ihc-2-plus",
+        "her2-ihc-1-plus",
+        "her2-ihc-0",
+        "her2-low-ihc",
+        "her2-ultralow",
+        "her2-ish-amplified",
+        "her2-mutation"
+      ],
+      "cancers": [
+        "breast-her2-positive",
+        "her2-positive-early-breast-cancer",
+        "gastric-her2-positive",
+        "biliary-tract-cancer",
+        "metastatic-cancer",
+        "colorectal",
+        "gallbladder"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab",
+        "pertuzumab",
+        "trastuzumab-emtansine",
+        "trastuzumab-deruxtecan",
+        "tucatinib",
+        "margetuximab",
+        "neratinib",
+        "zanidatamab",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-positive",
+        "ihc",
+        "dual-her2-blockade",
+        "her2-testing-in-biliary-cancer"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-valtorta-her2-scoring-colorectal-heracles-mod-pathol-2015",
+        "paper-richman-her2-amplification-quasar-focus-piccolo-j-pathol-2016",
+        "paper-harding-lancet-oncol",
+        "paper-angerilli-her2-ihc-cish-biliary-hum-pathol-2026",
+        "paper-hiraoka-her2-status-biliary-hum-pathol-2020",
+        "paper-oh-destiny-pantumor02-biliary-pancreatic-esmo-open-2026"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the specimen, lesion or block, assay and scoring method with the result. The September 2026 CAP template separates negative score 0 with no detected membrane staining from negative score 0+ with faint, incomplete membrane staining in 10 percent or fewer tumour cells. Earlier scoring systems included both patterns within IHC 0; the ENHERTU label calls the membrane-staining pattern HER2-ultralow. An older study’s notation must be interpreted using that study’s assay and definitions. No detected staining is an observation with a particular test, rather than proof that every HER2 molecule is absent.",
+        "Colorectal cancer: the colorectal-specific rule requires intense membranous staining in more than 50% of cells, against the 10% used in gastric cancer, because the colorectal-specific criteria were written and validated separately on 256 archival and 830 screening samples (Valtorta 2015). Overexpression was found in 2.2% of stage IV and 1.3% of stage II-III patients, and rose to 5.2% in KRAS and BRAF wild-type stage IV disease (Richman 2016).",
+        "Gallbladder and biliary cancer: HERIZON-BTC-01 confirmed ERBB2 amplification by central in situ hybridisation and treated IHC 2+ or 3+ as HER2-positive (Harding 2023); the zanidatamab label requires IHC 3+ with the Ventana PATHWAY 4B5 assay. Scoring follows the gastro-oesophageal guideline, which accepts incomplete basolateral staining. In 140 resected biliary cancers 6.4% were 3+, every 3+ tumour was amplified, and staining often involved under half of tumour cells (Angerilli 2026); heterogeneity was seen in 83% of HER2-positive biliary cancers, with loss in deeper invasive areas (Hiraoka 2020). In the DESTINY-PanTumor02 biliary cohort the objective response rate was 56.3% in centrally confirmed IHC 3+ tumours against 22.0% overall (Oh 2026)."
+      ],
+      "target": "her2",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "For invasive breast cancer, IHC 3+ is complete, intense circumferential membrane staining in more than 10 percent of tumour cells. This is a tissue-specific protein-overexpression interpretation, not a universal rule across organs.",
+        "quote": "Positive (Score 3+)",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "IHC 3+ or ISH+",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "ENHERTU, in combination with pertuzumab, is indicated for the first-line treatment of adult patients with unresectable or metastatic HER2-positive (IHC 3+ or ISH+) breast cancer, as determined by an FDA-authorized test",
+          "status": "current"
+        },
+        {
+          "value": "IHC 3+",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "metastatic-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "Select patients for treatment of unresectable or metastatic solid tumors with ENHERTU based on HER2-positive (IHC 3+) specimens",
+          "status": "current",
+          "note": "The label adds: An FDA-authorized test for the detection of HER2-positive (IHC 3+) solid tumors for treatment with ENHERTU is not currently available."
+        },
+        {
+          "value": "IHC 3+ or IHC 2+/ISH+",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "gastric-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "Select patients with locally advanced or metastatic HER2-positive gastric cancer based on HER2 protein overexpression or HER2 gene amplification (IHC 3+ or IHC 2+/ISH+).",
+          "status": "current"
+        },
+        {
+          "value": "HER2 overexpression or amplification",
+          "drugId": "trastuzumab",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2",
+          "quote": "Select patients based on HER2 protein overexpression or HER2 gene amplification in tumor specimens",
+          "status": "current"
+        },
+        {
+          "value": "HER2 overexpression (gastric scoring)",
+          "drugId": "trastuzumab",
+          "cancerId": "gastric-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2",
+          "quote": "Assessment of HER2 protein overexpression and HER2 gene amplification in metastatic gastric cancer should be performed using FDA-authorized tests specifically for gastric cancers due to differences in gastric vs. breast histopathology, including incomplete membrane staining and more frequent heterogeneous expression of HER2 seen in gastric cancers.",
+          "status": "current"
+        },
+        {
+          "value": "IHC 3+",
+          "drugId": "zanidatamab",
+          "cancerId": "biliary-tract-cancer",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae5d9425-fae5-4541-a158-150998343348",
+          "quote": "Select patients for treatment of unresectable or metastatic biliary tract cancer based on HER2-positive (IHC 3+) tumor specimens, as detected by an FDA-authorized test",
+          "status": "current"
+        },
+        {
+          "value": "IHC 3+ (with chemotherapy) or IHC 3+ or IHC 2+/ISH+ (with chemotherapy and tislelizumab)",
+          "drugId": "zanidatamab",
+          "cancerId": "gastric-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae5d9425-fae5-4541-a158-150998343348",
+          "quote": "in combination with fluoropyrimidine- and platinum-containing chemotherapy, and tislelizumab-jsgr, as first-line treatment of adult patients with HER2-positive (IHC 3+ or IHC 2+/ISH+) unresectable locally advanced or metastatic gastric, gastroesophageal junction, or esophageal adenocarcinoma, as detected by an FDA-authorized test.",
+          "status": "current"
+        },
+        {
+          "value": "HER2-positive",
+          "drugId": "trastuzumab-emtansine",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e",
+          "quote": "Assessment of HER2 protein overexpression and/or HER2 gene amplification should be performed using FDA-authorized tests specific for breast cancers by laboratories with demonstrated proficiency.",
+          "status": "current"
+        }
+      ],
+      "tests": [
+        "caris-mi-profile"
+      ],
+      "assays": [
+        "her2-herceptest",
+        "her2-pathway-4b5"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "HercepTest",
+          "maker": "Dako Denmark A/S (Agilent)",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P980018 (09/25/1998)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HercepTest",
+          "maker": "Dako Denmark A/S (Agilent)",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Gastric and Gastroesophageal Cancer - Tissue",
+          "pma": "P980018/S010 (10/20/2010)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081 (11/28/2000)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "zanidatamab"
+          ],
+          "indication": "Biliary Tract Cancer (gallbladder adenocarcinoma, intrahepatic cholangiocarcinoma, and extrahepatic cholangiocarcinoma) - Tissue",
+          "pma": "P990081/S054 (11/20/2024)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan",
+            "pertuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S059 (12/15/2025)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "Bond Oracle HER2 IHC System",
+          "maker": "Leica Biosystems",
+          "companyId": "leica-biosystems",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P090015 (04/18/2012)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HercepTest",
+          "maker": "Dako Denmark A/S",
+          "companyId": "agilent",
+          "drugs": [
+            "pertuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P980018/S015 (06/08/2012)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HercepTest",
+          "maker": "Dako Denmark A/S",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab-emtansine"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P980018/S016 (02/22/2013)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "InSite Her-2/neu (CB11) Monoclonal Antibody",
+          "maker": "Biogenex Laboratories, Inc.",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P040030 (12/22/2004)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody",
+          "maker": "Ventana Medical Systems, Inc.",
+          "drugs": [
+            "trastuzumab-emtansine"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P990081/S039 (05/03/2019)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "A valid breast IHC 3+ result is HER2-positive for protein overexpression. The appropriate treatment also depends on the specific disease, stage, regimen and other label requirements. Scoring conventions and treatment rules can differ in other organs."
+    },
+    {
+      "id": "her2-ish-amplified",
+      "kind": "biomarker",
+      "name": "HER2 ISH amplified (ERBB2 gene amplification)",
+      "aka": [
+        "HER2 ISH+",
+        "HER2 FISH positive",
+        "ERBB2 amplification",
+        "HER2 amplified",
+        "HER2/CEP17 ratio >= 2.0",
+        "HER2 gene amplification",
+        "HER2 Dual ISH"
+      ],
+      "tldr": "HER2 ISH measures gene signals in sampled cells. In breast cancer, the ratio, average copy number and sometimes concurrent protein staining must be interpreted together; one number alone does not settle every case.",
+      "summary": "Dual-probe breast ISH reports the HER2/CEP17 ratio and average HER2 signals per cell. The CAP September 2026 template identifies group 1 by ratio at least 2.0 with average HER2 count at least 4.0, and group 5 by ratio below 2.0 with average count below 4.0. Uncommon groups 2 to 4 require the specified concurrent IHC interpretation and, when IHC is 2+, second-observer recounting under the algorithm. Group 3 is not automatically positive regardless of protein staining: concurrent IHC 0 or 1+ leads to a negative interpretation in that guidance.\n\nThese are breast-specific interpretation rules. A ratio of 2 or a copy number of 6 does not universally establish a final positive result for every specimen, organ or jurisdiction. A completed laboratory interpretation and the actual treatment label retain the relevant tissue and clinical context.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ASCO/CAP HER2 testing in breast cancer guideline, 2018 focused update (Wolff et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.2018.77.8738"
+        },
+        {
+          "label": "FDA: List of FDA-Authorized Companion Diagnostic Devices",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: specimen, scoring method and interpretation",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Current U.S. ENHERTU prescribing information: indications and patient selection",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "FDA: current companion diagnostic intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "RCPath G148 breast dataset, version 3, November 2024",
+          "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "her2"
+      ],
+      "related": [
+        "her2-ihc-3-plus",
+        "her2-ihc-2-plus"
+      ],
+      "cancers": [
+        "breast-her2-positive",
+        "gastric-her2-positive",
+        "her2-positive-early-breast-cancer",
+        "colorectal",
+        "gallbladder",
+        "biliary-tract-cancer"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "trastuzumab",
+        "pertuzumab",
+        "trastuzumab-emtansine",
+        "trastuzumab-deruxtecan",
+        "her2-testing-assays"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "fish",
+        "gene-amplification",
+        "her2-positive",
+        "her2-testing-in-biliary-cancer"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-valtorta-her2-scoring-colorectal-heracles-mod-pathol-2015",
+        "paper-sartore-bianchi-heracles-trastuzumab-lapatinib-lancet-oncol-2016",
+        "paper-richman-her2-amplification-quasar-focus-piccolo-j-pathol-2016",
+        "paper-nakamura-triumph-ctdna-pertuzumab-trastuzumab-her2-colorectal-nat-med-2021",
+        "paper-harding-lancet-oncol",
+        "paper-angerilli-her2-ihc-cish-biliary-hum-pathol-2026",
+        "paper-mondaca-erbb2-gallbladder-us-chile-jco-go-2024"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The November 2024 RCPath G148 dataset describes UK ratio/copy-number conventions that differ in some uncommon cases from ASCO/CAP. In current CAP breast guidance, group 2 with IHC 3+ is positive; describing every U.S. group 2 case as negative loses that condition. Keep the jurisdiction, guideline version and concurrent IHC with the result.",
+        "Colorectal cancer: the HERACLES diagnostic criteria, not the breast or gastric ones, define positivity. A tumour is HER2-positive when intense membranous HER2 staining is present in more than 50% of cells (immunohistochemistry 3+), or immunohistochemistry 2+ with in situ hybridisation confirmation in more than 50% of cells; in the validation, no immunohistochemistry 0 or 1+ case was amplified and silver and fluorescence in situ hybridisation agreed completely (Valtorta 2015). That threshold selects about 5% of RAS wild-type patients (48 of 914 screened for HERACLES) and 2 to 3% of all colorectal cancers. Plasma HER2 copy number, adjusted for tumour fraction, selected patients as well as tissue in TRIUMPH (Nakamura 2021).",
+        "Gallbladder and biliary cancer: ERBB2 amplification confirmed by central ISH was the entry criterion of HERIZON-BTC-01 (Harding 2023). By sequencing, amplification was present in 8% of 260 gallbladder cancer patients alone and 1.5% with a mutation (Mondaca 2024) and in 10.2% of 244 samples in cBioPortal gbc_mskcc_2022. Chromogenic dual ISH found amplification in all IHC 3+ and some 2+ and 1+ tumours (Angerilli 2026)."
+      ],
+      "target": "her2",
+      "measurement": "fish-ratio",
+      "scoringRule": {
+        "text": "For dual-probe invasive-breast ISH, interpret the ratio and average copy number using the complete algorithm. Groups 2 to 4 require concurrent IHC; a second reviewer recounts ISH when IHC is 2+. Retain raw counts, ratio, IHC, heterogeneity and the final laboratory interpretation.",
+        "quote": "concurrent review of IHC",
+        "source": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "sourceLabel": "CAP breast biomarker reporting template, version 1.6.2.0, September 2026"
+      },
+      "thresholds": [
+        {
+          "value": "ISH+ (IHC 3+ or ISH+)",
+          "drugId": "trastuzumab-deruxtecan",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6",
+          "quote": "based on confirmed HER2-positive status or HER2 gene amplification (IHC 3+ or ISH+)",
+          "status": "current"
+        },
+        {
+          "value": "HER2 gene amplification",
+          "drugId": "trastuzumab",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2",
+          "quote": "Select patients based on HER2 protein overexpression or HER2 gene amplification in tumor specimens",
+          "status": "current"
+        },
+        {
+          "value": "HER2 gene amplification",
+          "drugId": "pertuzumab",
+          "cancerId": "breast-her2-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17f85d17-ab71-4f5b-9fe3-0b8c822f69ff",
+          "quote": "Assessment of HER2 protein overexpression and HER2 gene amplification should be performed using FDA-approved tests specific for breast cancer by laboratories with demonstrated proficiency.",
+          "status": "current"
+        }
+      ],
+      "tests": [],
+      "assays": [
+        "her2-ish"
+      ],
+      "companionDiagnostics": [
+        {
+          "device": "HER2 FISH pharmDx Kit",
+          "maker": "Dako Denmark A/S (Agilent)",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P040005 (05/03/2005)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HER2 FISH pharmDx Kit",
+          "maker": "Dako Denmark A/S (Agilent)",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Gastric and Gastroesophageal Cancer - Tissue",
+          "pma": "P040005/S005 (10/20/2010)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "PathVysion HER-2 DNA Probe Kit",
+          "maker": "Abbott Molecular",
+          "companyId": "abbott",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P980024 (12/11/1998)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "Ventana HER2 Dual ISH DNA Probe Cocktail",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P190031 (07/28/2020)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "Ventana HER2 Dual ISH DNA Probe Cocktail",
+          "maker": "Ventana Medical Systems (Roche)",
+          "companyId": "roche-genentech",
+          "drugs": [
+            "trastuzumab-deruxtecan",
+            "pertuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P190031/S014 (12/15/2025)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "VENTANA HER2 Dual ISH DNA Probe Cocktail",
+          "maker": "Ventana Medical Systems, Inc.",
+          "drugs": [
+            "zanidatamab"
+          ],
+          "indication": "Gastroesophageal adenocarcinoma (GEA: gastric, gastroesophageal junction, and esophageal adenocarcinoma)",
+          "pma": "P190031/S016 (08/25/2026)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "FoundationOne CDx",
+          "maker": "Foundation Medicine, Inc.",
+          "companyId": "foundation-medicine",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P170019 (11/30/2017)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "FoundationOne CDx",
+          "maker": "Foundation Medicine, Inc.",
+          "companyId": "foundation-medicine",
+          "drugs": [
+            "pertuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P170019 (11/30/2017)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "FoundationOne CDx",
+          "maker": "Foundation Medicine, Inc.",
+          "companyId": "foundation-medicine",
+          "drugs": [
+            "trastuzumab-emtansine"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P170019 (11/30/2017)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HER2 CISH pharmDx Kit",
+          "maker": "Dako Denmark A/S",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P100024 (11/30/2011)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HER2 FISH pharmDx Kit",
+          "maker": "Dako Denmark A/S",
+          "companyId": "agilent",
+          "drugs": [
+            "pertuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P040005/S006 (06/08/2012)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "HER2 FISH pharmDx Kit",
+          "maker": "Dako Denmark A/S",
+          "companyId": "agilent",
+          "drugs": [
+            "trastuzumab-emtansine"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P040005/S009 (02/22/2013)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "INFORM HER-2/neu",
+          "maker": "Ventana Medical Systems, Inc.",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P940004 (12/30/1997)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "device": "SPOT-LIGHT HER2 CISH Kit",
+          "maker": "Life Technologies Corporation",
+          "companyId": "thermo-fisher",
+          "drugs": [
+            "trastuzumab"
+          ],
+          "indication": "Breast Cancer - Tissue",
+          "pma": "P050040 (07/01/2008)",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        }
+      ],
+      "forPatient": "The ratio and copy count need the laboratory’s final interpretation and applicable guideline. Some uncommon combinations require protein staining and additional review. A numeric shortcut should not be used to infer eligibility for every HER2 treatment."
+    },
+    {
+      "id": "ascent",
+      "kind": "trial",
+      "name": "ASCENT",
+      "aka": [],
+      "tldr": "ASCENT compared sacituzumab govitecan with single-agent chemotherapy in previously treated metastatic triple-negative breast cancer. The primary analysis excluded patients with brain metastases.",
+      "summary": "ASCENT (NCT02574455), published in the New England Journal of Medicine in 2021, randomised 529 patients overall. The primary population comprised 468 without brain metastases. Sacituzumab govitecan improved progression-free and overall survival compared with physician’s-choice single-agent chemotherapy in that population. The randomised comparison does not establish equal effects at every TROP2 expression level.\n\nA prespecified exploratory biomarker analysis had TROP2 data for 290 of the 468 primary-population patients. The authors supported benefit in the high and medium groups and considered the low group too small for a definitive conclusion. The absence of a TROP2 label-selection requirement is a separate regulatory fact. Post hoc demographic and brain-metastasis analyses retain their own populations and uncertainty; none is a prospective validation of a universal marker cutoff.",
+      "status": "positive",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT02574455",
+          "url": "https://clinicaltrials.gov/study/NCT02574455"
+        },
+        {
+          "label": "ASCENT primary analysis (NEJM 2021)",
+          "url": "https://doi.org/10.1056/NEJMoa2028485"
+        },
+        {
+          "label": "ASCENT subgroup analyses (npj Breast Cancer 2024)",
+          "url": "https://doi.org/10.1038/s41523-024-00635-5"
+        },
+        {
+          "label": "NICE TA819 (17 August 2022)",
+          "url": "https://www.nice.org.uk/guidance/ta819"
+        },
+        {
+          "label": "ASCENT original randomised report, 2021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33882206/"
+        },
+        {
+          "label": "ASCENT prespecified exploratory biomarker analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34116144/"
+        },
+        {
+          "label": "ASCENT post hoc subgroup report, 2024",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38664404/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "tnbc",
+        "tnbc-metastatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [
+        "trop2"
+      ],
+      "drugs": [
+        "sacituzumab-govitecan"
+      ],
+      "companies": [
+        "gilead"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "ascent-03",
+        "ascent-04",
+        "keynote-119"
+      ],
+      "people": [
+        "aditya-bardia"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-bardia-ascent-trop2-biomarker-ann-oncol-2021",
+        "paper-ascent-nejm-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The 2021 primary report gives progression-free survival of 5.6 versus 1.7 months and overall survival of 12.1 versus 6.7 months in the population without brain metastases. The total randomised count, the primary population and the biomarker-assessable subset are different denominators. Current breast-cancer labels and sequencing questions should be read separately from the original comparison.",
+        "Design (NEJM 2021): 529 patients with relapsed or refractory metastatic triple-negative disease after at least two prior therapies randomised 1 to 1 to sacituzumab govitecan 10 mg/kg on days 1 and 8 of 21 or physician's choice of eribulin, vinorelbine, capecitabine or gemcitabine; 468 without brain metastases formed the primary population. Progression-free survival 5.6 versus 1.7 months (hazard ratio 0.41), overall survival 12.1 versus 6.7 months (0.48), response 35 versus 5 percent; grade 3 or higher neutropenia 51 versus 33 percent, diarrhoea 10 versus below 1 percent. Post hoc subgroups (npj Breast Cancer 2024) reported longer progression-free and overall survival in the examined older and Black participant groups; these were exploratory comparisons, not prospective marker-interaction tests. In the stable-brain-metastasis subgroup, progression-free survival was numerically longer but overall survival similar.",
+        "UK sites (registry, 11): Colchester, University Hospital Coventry, University Hospital of North Durham, Royal Surrey Guildford, Hereford County Hospital, Royal Free London, the Christie, Nottingham City Hospital, Derriford Plymouth, Musgrove Park Taunton, Pinderfields Wakefield. NICE TA819 (17 August 2022) commissions the drug after two or more therapies."
+      ],
+      "nct": "NCT02574455",
+      "phase": "3",
+      "setting": "Pretreated metastatic TNBC: sacituzumab govitecan vs chemotherapy",
+      "sponsor": "Gilead (Immunomedics)",
+      "participation": [
+        {
+          "nct": "NCT02574455",
+          "source": "https://clinicaltrials.gov/study/NCT02574455",
+          "fetchedAt": "2026-10-07T16:52:48.013Z",
+          "studySha256": "a72c9e94c5e3f7bd668e7bcf8e461d8c672b72016dee4908861480b9f0322832",
+          "overallStatus": "COMPLETED",
+          "lastUpdatePosted": "2022-06-15",
+          "leadSponsor": "Gilead Sciences",
+          "collaboratorCount": 0,
+          "minimumAge": "18 Years",
+          "sex": "ALL",
+          "healthyVolunteers": false,
+          "hasEligibility": true,
+          "enrolment": 529,
+          "enrolmentType": "ACTUAL",
+          "siteCount": 230,
+          "recruitingSiteCount": 0,
+          "countries": [
+            "Belgium",
+            "Canada",
+            "France",
+            "Germany",
+            "Spain",
+            "United Kingdom",
+            "United States"
+          ]
+        }
+      ],
+      "result": "OS 12.1 vs 6.7 months, HR 0.48.",
+      "started": "2017-11-07",
+      "startedType": "actual",
+      "yearReported": 2020,
+      "enrolled": 529,
+      "enrolledBasis": "registry",
+      "outcomes": [
+        {
+          "endpoint": "Progression-free survival (patients without brain metastases)",
+          "primary": true,
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Sacituzumab govitecan",
+              "n": 235,
+              "value": 5.6
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 233,
+              "value": 1.7
+            }
+          ],
+          "hr": 0.41,
+          "ci": [
+            0.32,
+            0.52
+          ],
+          "p": "<0.001",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2028485"
+        },
+        {
+          "endpoint": "Overall survival",
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Sacituzumab govitecan",
+              "value": 12.1
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "value": 6.7
+            }
+          ],
+          "hr": 0.48,
+          "ci": [
+            0.38,
+            0.59
+          ],
+          "p": "<0.001",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2028485"
+        },
+        {
+          "endpoint": "Objective response rate",
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Sacituzumab govitecan",
+              "value": 35
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "value": 5
+            }
+          ],
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2028485"
+        }
+      ],
+      "replication": "Consistent with the single-arm IMMU-132-01 basket (ORR 33%) that led to accelerated approval, with TROPiCS-02 in HR+ disease, and with the first-line ASCENT-03/04 results; real-world series report similar PFS."
+    },
+    {
+      "id": "destiny-breast04",
+      "kind": "trial",
+      "name": "DESTINY-Breast04",
+      "aka": [],
+      "tldr": "DESTINY-Breast04 compared trastuzumab deruxtecan with chemotherapy in previously treated HER2-low metastatic breast cancer. Its results concern the enrolled score categories and clinical setting.",
+      "summary": "DESTINY-Breast04 (NCT03734029) randomised 557 patients with HER2-low metastatic breast cancer after one or two prior lines of chemotherapy: 494 were hormone receptor-positive and 63 hormone receptor-negative at randomisation. HER2-low meant IHC 1+ or IHC 2+/ISH-negative. The primary endpoint was progression-free survival in the hormone receptor-positive cohort; key secondary endpoints included overall-population progression-free survival and overall survival. The 2022 report showed longer progression-free and overall survival with trastuzumab deruxtecan.\n\nThe study did not randomize IHC 0 tumours and does not establish a universal HER2-expression floor, biological category or eligibility for everyone with HER2-negative disease. Exploratory hormone receptor-negative analyses use their specified efficacy populations, distinct from the randomised stratification count. The later Nature Medicine report and current drug label are separate dated sources, not interchangeable versions of the original result.",
+      "status": "positive",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03734029",
+          "url": "https://clinicaltrials.gov/study/NCT03734029"
+        },
+        {
+          "label": "DESTINY-Breast04 long-term survival (Nature Medicine 2025)",
+          "url": "https://doi.org/10.1038/s41591-025-03981-4"
+        },
+        {
+          "label": "NICE TA1197 (7 October 2026): recommended",
+          "url": "https://www.nice.org.uk/guidance/ta1197"
+        },
+        {
+          "label": "NICE TA992 (29 July 2024): not recommended, replaced by TA1197",
+          "url": "https://www.nice.org.uk/guidance/ta992"
+        },
+        {
+          "label": "Original 2022 report: methods, Table 2 and analysis-population footnotes",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/"
+        },
+        {
+          "label": "Original publication identity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+        },
+        {
+          "label": "Later 32-month-follow-up report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41062831/"
+        },
+        {
+          "label": "Current U.S. ENHERTU indication and study context",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "breast-hr-positive",
+        "tnbc",
+        "her2-low-metastatic-breast-cancer",
+        "tnbc-metastatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [
+        "daiichi-sankyo",
+        "astrazeneca"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low"
+      ],
+      "trials": [],
+      "people": [
+        "shanu-modi"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-schettini-her2-low-features-npj-breast-cancer-2021",
+        "paper-destiny-breast04-nejm-2022",
+        "paper-destiny-breast04-nat-med-2025-update"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The original paper’s hormone receptor-negative efficacy table uses 40 versus 18 patients, while 63 were classified hormone receptor-negative at randomisation. For primary and key secondary intention-to-treat analyses, status came from the interactive response system at randomisation, including mis-stratified patients; other analyses used electronic data corrected for mis-stratification. Preserve the endpoint-specific denominator.",
+        "At randomisation, 63 of 557 patients were hormone receptor-negative. The original exploratory efficacy table uses 40 versus 18 such patients: progression-free survival 8.5 versus 2.9 months, hazard ratio 0.46. The paper distinguishes receptor-status data at randomisation from corrected data used in other analyses. Separately, the 2025 report with median follow-up 32.0 months gives overall-population survival of 22.9 versus 16.8 months, hazard ratio 0.69; this is not a hormone receptor-negative subgroup estimate. The original 2022 study reported drug-related interstitial lung disease or pneumonitis in 12.1 percent, with 0.8 percent grade 5 events. UK sites (registry, 7): Royal Cornwall Truro, Queen Mary University of London, University College London Hospitals, Royal Free, Western General Edinburgh, Nottingham City, Royal Surrey Guildford. England: NICE TA992 (29 July 2024) did not recommend the drug for HER2-low disease; its rapid review, TA1197 (7 October 2026), recommends it."
+      ],
+      "nct": "NCT03734029",
+      "phase": "3",
+      "setting": "HER2-low metastatic breast cancer after chemotherapy: T-DXd vs chemotherapy",
+      "sponsor": "Daiichi Sankyo / AstraZeneca",
+      "participation": [
+        {
+          "nct": "NCT03734029",
+          "source": "https://clinicaltrials.gov/study/NCT03734029",
+          "fetchedAt": "2026-10-07T16:53:07.935Z",
+          "studySha256": "336253125c5537640ff7b627e23053ae19d6318270c8c01f9b7a889853d0a067",
+          "overallStatus": "COMPLETED",
+          "lastUpdatePosted": "2026-09-28",
+          "leadSponsor": "Daiichi Sankyo",
+          "collaboratorCount": 2,
+          "minimumAge": "18 Years",
+          "sex": "ALL",
+          "healthyVolunteers": false,
+          "hasEligibility": true,
+          "enrolment": 557,
+          "enrolmentType": "ACTUAL",
+          "siteCount": 208,
+          "recruitingSiteCount": 0,
+          "countries": [
+            "Austria",
+            "Belgium",
+            "Canada",
+            "China",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Israel",
+            "Italy",
+            "Japan",
+            "Portugal",
+            "Russia",
+            "South Korea",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "Taiwan",
+            "United Kingdom",
+            "United States"
+          ]
+        }
+      ],
+      "result": "OS HR 0.64.",
+      "started": "2018-12-27",
+      "startedType": "actual",
+      "yearReported": 2022,
+      "enrolled": 557,
+      "enrolledBasis": "registry",
+      "outcomes": [
+        {
+          "endpoint": "Progression-free survival, HR+ cohort (BICR)",
+          "primary": true,
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "n": 331,
+              "value": 10.1
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 163,
+              "value": 5.4
+            }
+          ],
+          "hr": 0.51,
+          "ci": [
+            0.4,
+            0.64
+          ],
+          "p": "<0.001",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2203690"
+        },
+        {
+          "endpoint": "Overall survival, all patients",
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "n": 373,
+              "value": 23.4
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 184,
+              "value": 16.8
+            }
+          ],
+          "hr": 0.64,
+          "ci": [
+            0.49,
+            0.84
+          ],
+          "p": "0.001",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2203690"
+        },
+        {
+          "endpoint": "Progression-free survival, HR-negative (TNBC) cohort",
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "n": 40,
+              "value": 8.5,
+              "note": "Exploratory cohort"
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 18,
+              "value": 2.9
+            }
+          ],
+          "hr": 0.46,
+          "ci": [
+            0.24,
+            0.89
+          ],
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2203690"
+        }
+      ],
+      "replication": "Confirmed and extended by DESTINY-Breast06 (HER2-low and ultralow, chemotherapy-naive) with a near-identical PFS hazard ratio."
+    },
+    {
+      "id": "destiny-breast06",
+      "kind": "trial",
+      "name": "DESTINY-Breast06",
+      "aka": [],
+      "tldr": "DESTINY-Breast06 compared trastuzumab deruxtecan with chemotherapy after endocrine therapy in hormone receptor-positive metastatic breast cancer without prior chemotherapy for metastatic disease.",
+      "summary": "DESTINY-Breast06 (NCT04494425), reported in 2024, randomised 866 patients with hormone receptor-positive metastatic breast cancer after endocrine-based therapy and no prior chemotherapy for metastatic disease. Of these, 713 had HER2-low and 153 HER2-ultralow disease. The primary endpoint was blinded-central-review progression-free survival in HER2-low disease; the ultralow analysis was exploratory.\n\nIn the primary HER2-low population, median progression-free survival was 13.2 versus 8.1 months, hazard ratio 0.62 with 95 percent confidence interval 0.52 to 0.75. Overall survival was immature in the original report. The trial did not establish an ultralow treatment effect in TNBC or test every HER2 expression category. Prior chemotherapy in a non-metastatic setting is not the same as prior metastatic chemotherapy. Current drug-label eligibility is a separate product-specific question.",
+      "status": "positive",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT04494425",
+          "url": "https://clinicaltrials.gov/study/NCT04494425"
+        },
+        {
+          "label": "Original 2024 report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "Current U.S. ENHERTU indication and regulatory study analysis",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "breast-hr-positive",
+        "her2-low-metastatic-breast-cancer",
+        "hr-positive-metastatic-post-cdk46"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [
+        "daiichi-sankyo",
+        "astrazeneca"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low"
+      ],
+      "trials": [],
+      "people": [
+        "giuseppe-curigliano"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-destiny-breast06-nejm-2024"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The current U.S. ENHERTU label has a specified HR-positive low/ultralow indication after progression on endocrine therapy in the metastatic setting. Do not turn that into an ultralow indication for hormone receptor-negative disease or infer a universal cutoff for other ADCs."
+      ],
+      "nct": "NCT04494425",
+      "phase": "3",
+      "setting": "HR+ HER2-low/ultralow breast cancer after endocrine therapy, chemotherapy-naive: T-DXd vs chemotherapy",
+      "sponsor": "Daiichi Sankyo / AstraZeneca",
+      "participation": [
+        {
+          "nct": "NCT04494425",
+          "source": "https://clinicaltrials.gov/study/NCT04494425",
+          "fetchedAt": "2026-10-07T16:53:21.208Z",
+          "studySha256": "98b76ee7e4dc9c950c8990e4d661043c1d82928d6b5ff702051306da53d2db07",
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "lastUpdatePosted": "2026-03-04",
+          "leadSponsor": "AstraZeneca",
+          "collaboratorCount": 1,
+          "minimumAge": "18 Years",
+          "maximumAge": "105 Years",
+          "sex": "ALL",
+          "healthyVolunteers": false,
+          "hasEligibility": true,
+          "enrolment": 866,
+          "enrolmentType": "ACTUAL",
+          "siteCount": 293,
+          "recruitingSiteCount": 0,
+          "countries": [
+            "Argentina",
+            "Australia",
+            "Austria",
+            "Belgium",
+            "Brazil",
+            "Canada",
+            "China",
+            "Denmark",
+            "France",
+            "Germany",
+            "Hungary",
+            "India",
+            "Israel",
+            "Italy",
+            "Japan",
+            "Mexico",
+            "Netherlands",
+            "Poland",
+            "Portugal",
+            "Russia",
+            "Saudi Arabia",
+            "Singapore",
+            "South Korea",
+            "Spain",
+            "Sweden",
+            "Taiwan",
+            "United Kingdom",
+            "United States"
+          ]
+        }
+      ],
+      "result": "PFS HR 0.62.",
+      "started": "2020-07-24",
+      "startedType": "actual",
+      "yearReported": 2024,
+      "enrolled": 866,
+      "enrolledBasis": "registry",
+      "outcomes": [
+        {
+          "endpoint": "Progression-free survival, HER2-low (BICR)",
+          "primary": true,
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "n": 359,
+              "value": 13.2
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 354,
+              "value": 8.1
+            }
+          ],
+          "hr": 0.62,
+          "ci": [
+            0.51,
+            0.74
+          ],
+          "p": "<0.0001",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407086"
+        },
+        {
+          "endpoint": "Progression-free survival, ITT (HER2-low + ultralow)",
+          "unit": "months",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "n": 436,
+              "value": 13.2
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "n": 430,
+              "value": 8.1
+            }
+          ],
+          "hr": 0.63,
+          "ci": [
+            0.53,
+            0.75
+          ],
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407086"
+        },
+        {
+          "endpoint": "Objective response rate, HER2-low",
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Trastuzumab deruxtecan",
+              "value": 56.5
+            },
+            {
+              "name": "Chemotherapy (TPC)",
+              "value": 32.2
+            }
+          ],
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407086"
+        }
+      ],
+      "replication": "Replicates DESTINY-Breast04 in an earlier line and extends it to HER2-ultralow."
+    },
+    {
+      "id": "paper-destiny-breast04-nejm-2022",
+      "kind": "paper",
+      "name": "DESTINY-Breast04: trastuzumab deruxtecan after chemotherapy in HER2-low metastatic breast cancer",
+      "aka": [],
+      "tldr": "In a randomised trial of previously treated HER2-low metastatic breast cancer, trastuzumab deruxtecan prolonged progression-free and overall survival compared with chemotherapy. The study did not include IHC 0 disease.",
+      "summary": "Open-label phase 3 trial of 557 patients with HER2-low metastatic breast cancer after one or two previous lines of chemotherapy, randomised 2:1 to trastuzumab deruxtecan or physician’s-choice chemotherapy. Eligibility used IHC 1+ or IHC 2+/ISH-negative. At randomisation, 494 were hormone receptor-positive and 63 hormone receptor-negative. The primary endpoint was progression-free survival in the hormone receptor-positive cohort.\n\nAt the original 11 January 2022 primary data cutoff, progression-free and overall survival favored trastuzumab deruxtecan in the prespecified populations. Exploratory analyses, corrected receptor-status datasets and later follow-up reports need their own denominators. Trial eligibility does not establish a new biologically uniform disease or treatment access for everyone with HER2-low staining.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "NEJM 2022",
+          "url": "https://doi.org/10.1056/NEJMoa2203690"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT03734029",
+          "url": "https://clinicaltrials.gov/study/NCT03734029"
+        },
+        {
+          "label": "Full original report and Table 2 population footnotes",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/"
+        },
+        {
+          "label": "Current U.S. ENHERTU prescribing information",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "idea-payload-switching",
+        "her2-low-ihc"
+      ],
+      "cancers": [
+        "breast-hr-positive",
+        "tnbc",
+        "tnbc-metastatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "histopathology-ihc",
+        "companion-diagnostic"
+      ],
+      "targets": [
+        "her2"
+      ],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [
+        "daiichi-sankyo",
+        "astrazeneca"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc",
+        "bystander-effect",
+        "ild",
+        "pfs",
+        "os"
+      ],
+      "trials": [
+        "destiny-breast04"
+      ],
+      "people": [
+        "sohn-joohyuk",
+        "park-yeon-hee",
+        "xu-binghe",
+        "im-seock-ah",
+        "hope-rugo",
+        "kim-sung-bae",
+        "david-cameron"
+      ],
+      "bottlenecks": [
+        "b-biomarker-validation",
+        "b-toxicity-qol"
+      ],
+      "keyPapers": [],
+      "journals": [
+        "nejm"
+      ],
+      "dependsOn": [],
+      "notes": [],
+      "journal": "New England Journal of Medicine",
+      "year": 2022,
+      "doi": "10.1056/NEJMoa2203690",
+      "authors": "Modi S, Jacot W, Yamashita T, et al.",
+      "paperType": "rct",
+      "findings": [
+        "Original hormone receptor-positive intention-to-treat cohort: median progression-free survival 10.1 versus 5.4 months, hazard ratio 0.51; median overall survival 23.9 versus 17.5 months, hazard ratio 0.64.",
+        "Original overall randomised population: median progression-free survival 9.9 versus 5.1 months, hazard ratio 0.50; median overall survival 23.4 versus 16.8 months, hazard ratio 0.64.",
+        "The hormone receptor-negative efficacy table uses 40 versus 18 patients. Median progression-free survival was 8.5 versus 2.9 months, hazard ratio 0.46 with 95 percent confidence interval 0.24 to 0.89; the small analysis was exploratory. The 58-person efficacy analysis is not the 63-person randomised stratification count.",
+        "The original safety analysis reported adjudicated drug-related interstitial lung disease or pneumonitis in 12.1 percent, with grade 5 events in 0.8 percent. These are study-population results, not individual risk predictions."
+      ],
+      "whatItMeans": "Patients whose breast cancer was previously called HER2-negative may now be eligible for an effective HER2-directed drug if their tumour has even low-level HER2 staining, so pathology reports must now distinguish HER2-low (1+ or 2+/ISH-negative) from HER2-zero. This applies to metastatic disease after at least one line of chemotherapy; it does not mean these patients benefit from trastuzumab or other older HER2 drugs.",
+      "caveats": [
+        "IHC 0 tumours were not randomised, so this trial cannot estimate a treatment effect for that category or validate a universal expression cutoff.",
+        "The primary and key secondary intention-to-treat analyses use receptor status recorded at randomisation, including mis-stratified patients. Other endpoint analyses use corrected electronic data; denominators can differ within the same publication.",
+        "The hormone receptor-negative analysis was small and exploratory. Similar findings across selected subgroups do not by themselves establish a treatment-by-marker interaction.",
+        "Serious and fatal pneumonitis occurred. Current product safety instructions and later analyses remain separate from these original 2022 results."
+      ],
+      "changedPractice": true,
+      "participants": 557
+    },
+    {
+      "id": "paper-destiny-breast06-nejm-2024",
+      "kind": "paper",
+      "name": "DESTINY-Breast06: trastuzumab deruxtecan after endocrine therapy and before metastatic chemotherapy in HR-positive breast cancer",
+      "aka": [],
+      "tldr": "This randomised trial found longer progression-free survival with trastuzumab deruxtecan than chemotherapy in HR-positive, HER2-low metastatic breast cancer after endocrine therapy. The ultralow analysis was exploratory.",
+      "summary": "Open-label phase 3 trial of 866 patients with hormone receptor-positive metastatic breast cancer after endocrine-based therapy and no previous chemotherapy for metastatic disease. The population contained 713 HER2-low and 153 HER2-ultralow participants. Patients were randomised to trastuzumab deruxtecan or physician’s-choice chemotherapy; the primary endpoint was blinded-central-review progression-free survival in HER2-low disease.\n\nThe original 2024 report found median progression-free survival of 13.2 versus 8.1 months in HER2-low disease, with hazard ratio 0.62 and 95 percent confidence interval 0.52 to 0.75. Ultralow results were described as consistent in an exploratory analysis. Overall survival was immature. This does not establish the same effect in every expression category or an ultralow effect in hormone receptor-negative disease.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "PubMed search: DESTINY-Breast06",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=DESTINY-Breast06+trastuzumab+deruxtecan+HER2-low+chemotherapy-naive"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT04494425",
+          "url": "https://clinicaltrials.gov/study/NCT04494425"
+        },
+        {
+          "label": "Original 2024 publication identity and abstract",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/"
+        },
+        {
+          "label": "ENHERTU U.S. label: regulatory study analysis",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "breast-hr-positive"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "histopathology-ihc"
+      ],
+      "targets": [
+        "her2"
+      ],
+      "drugs": [
+        "trastuzumab-deruxtecan"
+      ],
+      "companies": [
+        "daiichi-sankyo",
+        "astrazeneca"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-low",
+        "ihc",
+        "pfs",
+        "ild",
+        "first-line"
+      ],
+      "trials": [
+        "destiny-breast06"
+      ],
+      "people": [
+        "hu-xichun",
+        "yonemori-kan",
+        "barrios-carlos",
+        "sohn-joohyuk",
+        "im-seock-ah",
+        "giuseppe-curigliano"
+      ],
+      "bottlenecks": [
+        "b-biomarker-validation",
+        "b-drug-pricing",
+        "b-trial-design"
+      ],
+      "keyPapers": [],
+      "journals": [
+        "nejm"
+      ],
+      "dependsOn": [],
+      "notes": [
+        "The ENHERTU U.S. SPL version 28, published 28 May 2026, separately reports an exploratory ultralow subgroup of 153 patients: median progression-free survival 15.1 versus 8.3 months, hazard ratio 0.76 with 95 percent confidence interval 0.49 to 1.17. This is the labelled regulatory analysis as recorded in that version, not the HER2-low primary comparison; the interval includes 1. Keep the source version and analysis population with the estimate."
+      ],
+      "journal": "New England Journal of Medicine",
+      "year": 2024,
+      "doi": "10.1056/NEJMoa2407086",
+      "pmid": "39282896",
+      "authors": "Bardia A, Hu X, Dent R, et al.",
+      "paperType": "rct",
+      "findings": [
+        "Primary HER2-low comparison: median progression-free survival 13.2 versus 8.1 months; hazard ratio 0.62, 95 percent confidence interval 0.52 to 0.75.",
+        "Of 866 randomised participants, 713 were HER2-low and 153 HER2-ultralow. The primary endpoint concerned HER2-low disease; ultralow analysis was exploratory.",
+        "Overall-survival data were immature in the original report. No absence of a survival effect is inferred from immature data.",
+        "Original report: grade 3 or higher adverse events in 52.8 percent versus 44.4 percent; adjudicated interstitial lung disease or pneumonitis in 11.3 percent with three grade 5 events in the trastuzumab deruxtecan group, versus 0.2 percent with one grade 2 event in the chemotherapy group."
+      ],
+      "whatItMeans": "Patients with hormone-receptor-positive metastatic breast cancer that has stopped responding to endocrine therapy can be offered trastuzumab deruxtecan as their first chemotherapy-type treatment if the tumour shows any HER2 staining, rather than waiting until after conventional chemotherapy. Whether to use it before or after chemotherapy is now a choice, since overall survival was not shown to differ and the drug carries a risk of lung inflammation.",
+      "caveats": [
+        "The population had no prior chemotherapy for metastatic disease; this does not mean no prior chemotherapy in any setting.",
+        "The study was open-label, with blinded central review for the primary progression endpoint.",
+        "The ultralow subgroup was exploratory. A confidence interval or estimate from a regulatory analysis must not be substituted for the HER2-low primary comparison or attributed to a different source version.",
+        "The trial does not establish ultralow efficacy in TNBC or validate the same staining threshold for another ADC. Serious interstitial lung disease, including fatal events, remains material."
+      ],
+      "changedPractice": true,
+      "participants": 866
+    },
+    {
+      "id": "her2-testing-uk-breast",
+      "kind": "term",
+      "name": "HER2 testing in the UK: reflex ISH, the ratio against the copy number, and where the UK differs from ASCO/CAP",
+      "aka": [
+        "HER2 testing",
+        "HER2 test",
+        "HER2 IHC 2+",
+        "reflex ISH",
+        "dual-probe ISH",
+        "HER2 CEP17 ratio",
+        "HER2 copy number",
+        "FISH group 2",
+        "HER2 equivocal",
+        "HER2 borderline",
+        "HER2 heterogeneity",
+        "UK HER2 recommendations",
+        "chicken wire"
+      ],
+      "tldr": "Breast HER2 interpretation depends on the assay, scoring system and guideline. UK and U.S. guidance differ in some uncommon ISH cases; the concurrent protein-staining result matters.",
+      "summary": "RCPath G148 version 3, dated November 2024, describes UK breast HER2 testing with immunohistochemistry followed by ISH for equivocal cases, or an ISH approach in specified circumstances. It calls for the HER2/chromosome-17 ratio, HER2 copy number and chromosome-17 copy number to be reported, with specimen quality, heterogeneity and final interpretation. An uninterpretable test must not be guessed to be negative.\n\nG148 retains UK ratio/copy-number conventions, including a positive classification for the uncommon IHC 2+ cases with HER2/CEP17 ratio at least 2.0 and average HER2 copy number below 4.0 discussed in that guidance. The September 2026 CAP breast template instead uses concurrent IHC and the specified recounting algorithm for uncommon groups 2 to 4. In U.S. group 2, IHC 0 to 2+ leads to a negative interpretation after the required workup, while IHC 3+ is positive. Thus, saying every U.S. group 2 case is negative loses an important condition.\n\nKeep the jurisdiction and guideline version with an interpretation. The September 2026 CAP template also records no detected membrane staining separately from faint membrane staining within the historical IHC 0 band. A reporting convention is different from a product-specific clinical indication, and neither a raw count nor a staining score alone establishes an individual treatment decision.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Royal College of Pathologists G148: dataset for histopathological reporting of breast disease in surgical excision specimens of breast cancer, version 3, November 2024 (full review due November 2026)",
+          "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+        },
+        {
+          "label": "Rakha et al., Journal of Clinical Pathology 2023;76:217 to 227: UK recommendations for HER2 assessment in breast cancer, an update",
+          "url": "https://doi.org/10.1136/jcp-2022-208632"
+        },
+        {
+          "label": "Quinn et al., Histopathology 2026;89(2):199 to 218: World Health Organization classification of tumours of the breast, 6th edition 2026",
+          "url": "https://doi.org/10.1111/his.70149"
+        },
+        {
+          "label": "CAP breast biomarker template, September 2026: uncommon ISH groups and concurrent IHC",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "her2-positive",
+        "her2-low",
+        "fish",
+        "ihc",
+        "co-amplification"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "breast-her2-positive",
+        "her2-low-metastatic-breast-cancer",
+        "tnbc",
+        "breast-hr-positive"
+      ],
+      "sections": [
+        "diagnostics",
+        "targeted-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-positive",
+        "her2-low",
+        "her2-low-and-trop2-adc-eligibility-tnbc",
+        "er-pr-scoring-breast",
+        "receptor-conversion-breast",
+        "grade-stage-receptor-breast",
+        "fish",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Biomarkers"
     }
   ]
 }

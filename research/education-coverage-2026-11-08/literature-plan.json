@@ -97,6 +97,16 @@
       "query": "Combined Top1 and CHK Inhibitor Dual-Payload Strategy for Synergistic Reversal of Tumor Drug Resistance",
       "maxResults": 3,
       "lane": "Crossref title resolver; exact report and two adjacent candidates screened at deposited-abstract depth."
+    },
+    {
+      "id": "europepmc-trop2-growth-title",
+      "query": "TITLE:\"Trop-2\" AND (TITLE:\"growth\" OR TITLE:\"oncogen\")",
+      "maxResults": 20,
+      "lane": "Europe PMC title search; all eight returned MED abstracts read. Discovery metadata does not by itself establish clinical evidence.",
+      "responseFile": "expression-primary/trop2-growth-search.json",
+      "responseSha256": "602ed29ae7a42a0568d7dbbad8399783cc5e46dfddabafbb8594eb468e5909f8",
+      "hitCount": 8,
+      "returnedCount": 8
     }
   ],
   "rules": [

@@ -383,7 +383,10 @@
     "title": "22C3 esophageal intended-use scopes",
     "domain": "access-and-regulation",
     "sourceURLs": [
-      "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+      "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287",
+      "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S016",
+      "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S032"
     ],
     "discoveryOccurrences": [
       "schema-example-follow-up:dako-pd-l1-22c3-pharmdx"
@@ -391,17 +394,23 @@
     "review": {
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
-      "checkedAt": "2026-11-08",
-      "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false.",
+      "checkedAt": "2026-11-09",
+      "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false. The corresponding therapeutic label, both FDA device-list rows and both PMA approval-order profiles are now independently retrieved and read; the canonical test overview retains histology, regimen, prior-line and anatomic constraints.",
       "points": [
         {
           "id": "therapy-setting-thresholds",
           "requirement": "Reconcile the existing esophageal CPS description with therapy-specific FDA authorization and labeling; retain coexisting valid uses rather than a single generic threshold.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "dako-pd-l1-22c3-pharmdx",
+              "version": "proposal-access",
+              "field": "summary",
+              "fieldSha256": "70029f8d172b07c604eebc187521dddf6e1e1ef7bbcd97d274737aadcc2238a0",
+              "explanation": "Current KEYTRUDA section 1.11 and FDA P150013/S016 and S032 retain coexisting CPS 1 combination and CPS 10 specified single-agent esophageal uses."
+            }
+          ],
+          "remaining": []
         }
       ]
     }
@@ -674,6 +683,155 @@
               "field": "summary",
               "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
               "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "target-function-delivery-and-normal-tissue",
+    "title": "Target biological function, delivery and normal-tissue expression",
+    "domain": "biology",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/22349828/",
+      "https://pubmed.ncbi.nlm.nih.gov/27022065/",
+      "https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"
+    ],
+    "discoveryOccurrences": [
+      "expression-primary-follow-up:target-function-delivery-and-normal-tissue"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+      "points": [
+        {
+          "id": "scope-and-interpretation",
+          "requirement": "Keep experimental biological function, ADC delivery, normal-tissue measurements and validated clinical selection distinct; model growth or drug sensitivity does not establish a universal dependency or patient-selection rule.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "trop2",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "fd8798169f983832383edc12256016ed1499fa281a7b92eb555526f551766cef",
+              "explanation": "The overview retains TROP2 delivery and experimental signaling roles without claiming that one excludes the other."
+            },
+            {
+              "recordId": "trop2",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "fd92a03ce2f6edd9aabb8eeefe8029e7b22e85c7d31514f9d936c0bfb39e074e",
+              "explanation": "Normal-tissue RNA/protein context and model-level growth/AKT findings do not imply tumor exclusivity, individual toxicity or clinical AKT selection."
+            },
+            {
+              "recordId": "trop2",
+              "version": "proposal-therapeutic",
+              "field": "biology",
+              "fieldSha256": "3fdab1bb9007feb8359b4e645ea98ccb58dfb829b9012416f6ca6f4da14a27db",
+              "explanation": "The separate biology field also retains the same model and delivery limits."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "her2-reporting-notation-and-jurisdiction",
+    "title": "HER2 reporting notation and jurisdiction-specific interpretation",
+    "domain": "measurement",
+    "sourceURLs": [
+      "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+      "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+    ],
+    "discoveryOccurrences": [
+      "expression-primary-follow-up:her2-reporting-notation-and-jurisdiction"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+      "points": [
+        {
+          "id": "scope-and-interpretation",
+          "requirement": "Retain the source version and jurisdiction when interpreting score notation and uncommon breast ISH groups; shared glyphs or numeric shortcuts are not interchangeable algorithms or treatment indications.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "her2-ihc-0",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "6070576cf5cf86f782a8757a8569901b1661f485f17c430ec25d1ed263a88029",
+              "explanation": "Current score 0 versus 0+ reporting patterns remain negative categories and must be interpreted using the relevant scoring source."
+            },
+            {
+              "recordId": "her2-ish-amplified",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "c20ed6aee5180c2209defbc811ca46dac4fe2130f23c5610149bdd9a2235d7d6",
+              "explanation": "Ratio, counts, concurrent IHC and required recounting replace a universal single-number interpretation."
+            },
+            {
+              "recordId": "her2-testing-uk-breast",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "2526d0e58f62db8a66bb17d5fb4e1799c4522a669df5f1850643222c795282e8",
+              "explanation": "The UK dataset and current CAP algorithm are compared with the IHC 3+ exception retained, rather than saying all U.S. group 2 cases are negative."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "study-analysis-population-and-version",
+    "title": "Analysis populations and dated study versions",
+    "domain": "evidence",
+    "sourceURLs": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/",
+      "https://pubmed.ncbi.nlm.nih.gov/39282896/",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+    ],
+    "discoveryOccurrences": [
+      "expression-primary-follow-up:study-analysis-population-and-version"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+      "points": [
+        {
+          "id": "scope-and-interpretation",
+          "requirement": "Keep randomization strata, corrected efficacy populations, primary versus exploratory endpoints and original-paper versus regulatory-analysis versions with each estimate.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "paper-destiny-breast04-nejm-2022",
+              "version": "proposal-therapeutic",
+              "field": "caveats",
+              "fieldSha256": "b9071af82c5b867120bafc67f14ebc8adee1744345e9bef10a2daf0bc9fe3b0b",
+              "explanation": "The original paper explains why 63 at randomization and 58 in the receptor-negative efficacy table are different valid denominators."
+            },
+            {
+              "recordId": "paper-destiny-breast06-nejm-2024",
+              "version": "proposal-therapeutic",
+              "field": "findings",
+              "fieldSha256": "c836a1ec9b4a1692c15fd2ad7be95a9087d8a4d7ea5f651816af7324a5ea9dd6",
+              "explanation": "Original primary HER2-low PFS, exploratory ultralow status and immature overall survival are retained."
+            },
+            {
+              "recordId": "paper-destiny-breast06-nejm-2024",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "acb960cd1e3ad73cddd8b83f3fbe381257301611135ec16e9daa98919605e185",
+              "explanation": "The specific current SPL v28 ultralow regulatory analysis is named separately, including an interval spanning 1; it is not silently substituted into the original primary result."
             }
           ],
           "remaining": []

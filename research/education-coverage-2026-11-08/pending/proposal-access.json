@@ -1235,6 +1235,117 @@
       ],
       "category": "Regulation & policy",
       "wikipediaChecked": "2026-09-22"
+    },
+    {
+      "id": "dako-pd-l1-22c3-pharmdx",
+      "kind": "drug",
+      "name": "PD-L1 IHC 22C3 pharmDx",
+      "aka": [],
+      "tldr": "PD-L1 IHC 22C3 pharmDx is an assay whose scoring and cutoff depend on the medicine, disease and regimen. Valid esophageal uses include both CPS 1 and CPS 10 under different pembrolizumab treatment conditions.",
+      "summary": "FDA lists multiple tissue- and treatment-specific intended uses for the 22C3 PD-L1 assay. TPS and CPS are different scores. Even within one cancer family, one generic cutoff loses important conditions.\n\nFor locally advanced or metastatic esophageal or GEJ carcinoma with a tumour epicenter 1 to 5 centimeters above the junction not amenable to surgical resection or definitive chemoradiation, the current U.S. KEYTRUDA label uses CPS at least 1 with platinum- and fluoropyrimidine-based chemotherapy. Its single-agent use after one or more prior systemic lines is restricted to squamous histology with CPS at least 10. The FDA diagnostic listing retains the esophageal/GEJ CPS 1 authorization P150013/S032 and the ESCC CPS 10 authorization P150013/S016. Both are valid scoped uses, not contradictory generic thresholds.\n\nOther tissue, medicine and regimen combinations have their own intended uses. A result described as positive without the score type, assay, disease and treatment context is incomplete.",
+      "status": "approved",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA PMA P150013",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013"
+        },
+        {
+          "label": "Agilent: PD-L1 IHC 22C3 pharmDx",
+          "url": "https://www.agilent.com/en/product/pharmdx/pd-l1-ihc-22c3-pharmdx"
+        },
+        {
+          "label": "FDA: current diagnostic intended uses, including both esophageal rows",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "FDA authorization P150013/S016: ESCC CPS 10 intended use",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S016"
+        },
+        {
+          "label": "FDA authorization P150013/S032: expanded esophageal/GEJ intended use",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S032"
+        },
+        {
+          "label": "Current U.S. KEYTRUDA label, section 1.11: separate combination and single-agent uses",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        }
+      ],
+      "tags": [
+        "test"
+      ],
+      "related": [],
+      "cancers": [
+        "nsclc",
+        "gastric",
+        "cervical",
+        "head-and-neck",
+        "esophageal",
+        "tnbc",
+        "tnbc-metastatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "companion-diagnostic",
+        "histopathology-ihc"
+      ],
+      "targets": [
+        "pdl1"
+      ],
+      "drugs": [
+        "pembrolizumab"
+      ],
+      "companies": [
+        "agilent"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "pd-l1-testing",
+        "cps",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-rugo-pd-l1-assay-comparison-impassion130-jnci-2021",
+        "paper-sigurjonsdottir-sp142-22c3-tnbc-bcr-2023"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The current therapeutic label and the diagnostic intended use must be read together. An assay authorization does not itself establish that an individual meets the treatment indication; the same stain or numerical score is not interchangeable across every medicine, regimen or disease."
+      ],
+      "brand": "PD-L1 IHC 22C3 pharmDx",
+      "modality": "PD-L1 immunohistochemistry companion diagnostic assay",
+      "mechanism": "Mouse monoclonal antibody 22C3 on the Dako Autostainer Link 48, reported as tumour proportion score (TPS) in lung cancer or combined positive score (CPS, tumour plus immune cells relative to tumour cells) in other cancers.",
+      "approvals": [
+        {
+          "region": "US",
+          "year": 2015,
+          "indication": "Companion diagnostic for pembrolizumab in NSCLC (TPS)"
+        },
+        {
+          "region": "US",
+          "year": 2017,
+          "indication": "Gastric / GEJ adenocarcinoma, CPS ≥1"
+        },
+        {
+          "region": "US",
+          "year": 2019,
+          "indication": "Head and neck squamous cell carcinoma (CPS ≥1) and oesophageal squamous cell carcinoma (CPS ≥10)"
+        },
+        {
+          "region": "US",
+          "year": 2020,
+          "indication": "Triple-negative breast cancer, CPS ≥10 (pembrolizumab plus chemotherapy)"
+        }
+      ],
+      "mechanismSteps": [],
+      "toxicity": [],
+      "access": [],
+      "regulatoryEvents": []
     }
   ]
 }

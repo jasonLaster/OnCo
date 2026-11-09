@@ -4,6 +4,17 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Expression, diagnostic context and study populations
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [TROP2](/targets/trop2/) and [expression readout](/biomarkers/trop2-expression/) | Biological function, delivery and clinical selection were conflated; an exploratory expression analysis implied a universal no-threshold benefit conclusion | Independently resolved experimental TROP2 and ASCENT reports, current HPA tissue profile and U.S. drug labels | Keeps model evidence and normal-tissue context, the 290-person exploratory subset and underpowered low group, and separate TROP2/PD-L1 label conditions; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-09 | [HER2-low](/terms/her2-low/), [HER2 readouts](/biomarkers/her2-low-ihc/) and [UK testing](/terms/her2-testing-uk-breast/) | Staining categories implied universal eligibility, reporting mandates or numeric ISH shortcuts; U.S./UK rare groups lost concurrent IHC conditions | Current CAP template, RCPath dataset, current ENHERTU label and resolved reader-agreement/cohort reports | Retains tissue/method/version, negative 0/0+ patterns, complete uncommon-group interpretation and exact low/ultralow setting; the template is optional and re-review does not guarantee access |
+| 2026-11-09 | [DESTINY-Breast04 paper](/key-papers/paper-destiny-breast04-nejm-2022/) and [trial](/trials/destiny-breast04/) | Randomization and efficacy subgroup counts were blended, and later overall-population survival appeared in receptor-negative discussion | Original full report methods/Table 2 footnotes and independently resolved later report | Keeps 63 at randomization and 58 in the exploratory efficacy table with the documented analysis distinction; original, later and regulatory versions remain separate |
+| 2026-11-09 | [DESTINY-Breast06 paper](/key-papers/paper-destiny-breast06-nejm-2024/) and [trial](/trials/destiny-breast06/) | Original primary confidence interval and exploratory/regulatory figures were mixed; prior metastatic chemotherapy was shortened to all chemotherapy | Independently resolved original abstract and current SPL v28 study table | Restores primary HER2-low interval 0.52 to 0.75, exact prior-treatment setting, immature OS and a separately versioned exploratory ultralow regulatory analysis; no TNBC ultralow indication inferred |
+| 2026-11-09 | [22C3 assay](/drugs/dako-pd-l1-22c3-pharmdx/) | A generic esophageal cutoff lost coexisting regimen/histology/prior-line conditions | Current KEYTRUDA section 1.11, FDA device-list rows and both PMA approval-order profiles | Retains CPS 1 with chemotherapy and CPS 10 for specified single-agent use, including the clinical/anatomic scope of the label |
+| 2026-11-09 | [ASCENT](/trials/ascent/) and [TNBC](/cancers/tnbc/) | Linked publication year, exploratory subgroup interpretation and HER2-low access wording were oversimplified | Original 2021 ASCENT report, biomarker/post hoc reports and current label text | Corrects the report year, keeps primary and biomarker populations distinct, and removes a score-only eligibility shortcut; other clinical sections are not newly certified |
+
 ### Receptor classifications and cohort comparisons
 
 | Date | Entity | What was wrong | How found | Fix |

@@ -9,19 +9,19 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 9 |
 | Teaching sources fully read (including one navigation shelf) | 65 |
-| Reviewed sources completely represented in drafts | 62 |
-| Reviewed sources retaining requirements | 3 |
+| Reviewed sources completely represented in drafts | 63 |
+| Reviewed sources retaining requirements | 2 |
 | Content sources unread | 459 |
 | Curriculum requirements | 271 |
-| Requirements with field evidence | 260 |
-| Curriculum requirements open | 11 |
+| Requirements with field evidence | 264 |
+| Curriculum requirements open | 7 |
 | New terms in draft #375 | 24 |
-| Existing owners updated in draft #375 | 71 |
+| Existing owners updated in draft #375 | 89 |
 | Reviewed-source completion on pinned main | 0 |
-| Adjacent concepts represented in drafts | 12 |
-| Adjacent concepts open | 3 |
-| Declared literature occurrences | 218 |
-| Literature occurrences screened | 113 |
+| Adjacent concepts represented in drafts | 16 |
+| Adjacent concepts open | 2 |
+| Declared literature occurrences | 226 |
+| Literature occurrences screened | 121 |
 | Literature occurrences unread | 105 |
 | Schema drafts awaiting approval/hosted preview | 4 |
 | Clean final full re-audits | 0 |
@@ -36,10 +36,11 @@ The earlier [cell-control checkpoint](cell-control-validation.md) closes five ad
 
 The [payload reconciliation](payload-follow-up-reconciliation.json) refreshes draft #369 at `b5a3c341deb1f5cce51dcb3791b239898eea3647`: 39 owners (32 new, seven existing), 20 already-read curriculum requirements now evidenced and 20 additional screened discovery occurrences. Exact exatecan ownership, dosage hypotheses, corrected/retracted evidence and a registry source conflict are retained. No additional curriculum reading is claimed.
 
-Next work includes remaining payload comparison/chemical profiles, the existing exhaustion/persistence term, distinct esophageal 22C3 uses, residual requirements, unread curriculum/literature and semantic navigation review.
+Next work includes remaining payload comparison/chemical profiles, the existing exhaustion/persistence term, residual requirements, unread curriculum/literature and semantic navigation review.
 
 The [9 November recovery](artifact-recovery-2026-11-09.json) restores the pinned baseline, 11 education responses and 39 older payload captures byte-exactly, and replaces lost visual-review images with 32 new matched SSR captures in persistent storage. Four newer Elicit response bodies and newer temporary-only primary captures remain unavailable. This changes custody status and the review-pack location, not content coverage.
 
 The [access completion](access-completion-2026-11-09/scope.json) closes five requirements at four existing owners without additional curriculum reading. All 11 authored notes were checked in the current rendered pages. Validate, restored-lock typecheck, four-file lint, 56 focused tests and the fresh 282-file/2,821-test suite pass with two existing skips. Dependencies were installed once outside Git from the unchanged lock and symlinked only into owned checkouts; no test floor or budget changed.
 
 The [biology completion](biology-completion-2026-11-09/scope.json) closes eight existing requirements and one newly surfaced cohort/classification finding. Twelve publication identities and their complete available MED abstracts were read. The 95 current owners and five TNBC section components pass source/date/anchor checks; changed reader text was read directly. After fixing authored punctuation and replacing an obsolete Ask assertion requiring receptor absence, the fresh full suite passes 282 files and 2,821 tests with two existing skips. Questions, expected entities, scoring, floors and budgets remain unchanged.
+The [expression completion](expression-completion-2026-11-09/scope.json) closes four requirements without additional curriculum reading, resolves the existing esophageal 22C3 finding and records three adjacent interpretation concepts. Eighteen existing owners are newly included; twenty current owners are touched. The 113 proposed owners and six TNBC section components pass source/date/anchor checks, and 124 authored field parts match reader text with JSON-LD excluded. Nineteen publication identities, 31 raw capture receipts and four registry identities are recorded outside-body public metadata. Eight new discovery occurrences are screened. Validate, typecheck and lint pass with seven existing warnings. The fresh full suite passes 282 files and 2,821 tests with two existing skips after UK spelling, a verified short excerpt and the CAP scoring-source specification were corrected. Approval-source checks, the quote-length floor, retrieval expectations and budgets remain unchanged.

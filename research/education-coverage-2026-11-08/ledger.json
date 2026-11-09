@@ -25,17 +25,17 @@
     {
       "version": "proposal-access",
       "state": "implemented in this branch; validation and rendered-source checks passed; not merged",
-      "recordSnapshotSha256": "78526f213912906f2c28f73e14f579edd1df22c93756be4414a387775f37d5f6"
+      "recordSnapshotSha256": "993b898d255a960bc34cfaed29ec8b1a296cd0ce9a6df5e23ddac23732be66cc"
     },
     {
       "version": "proposal-biology",
       "state": "implemented and locally validated in draft PR #375; not merged",
-      "recordSnapshotSha256": "7c24d1de67dfc4511ddb020964003b4f8cfcd6dab86ae08e215c711095510ff8"
+      "recordSnapshotSha256": "6d2dbbef1431c2c4c1b3dec6209b2a84b7a262e72a89073843c7be7bfe1011e8"
     },
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "673409aadfc07ee76f0f0ceffe408f15a4f424cf27b56ec54c4b2a7bf1c43ae9"
+      "recordSnapshotSha256": "c4c79425f80cbded13f078508d2f2b48be6a29ee7302fff7bd9987029feb0781"
     },
     {
       "version": "draft-376",
@@ -51,12 +51,12 @@
     "navigationReviewed": 4,
     "navigationWithTeachingContent": 1,
     "semanticallyReviewed": 65,
-    "implementedCoverage": 62,
+    "implementedCoverage": 63,
     "mainCoverage": 0,
-    "unresolvedContentItems": 462,
-    "unresolvedSources": 471,
-    "adjacentConcepts": 15,
-    "unresolvedAdjacentConcepts": 3,
+    "unresolvedContentItems": 461,
+    "unresolvedSources": 470,
+    "adjacentConcepts": 18,
+    "unresolvedAdjacentConcepts": 2,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
     "readyForFinalReaudit": false
@@ -4961,7 +4961,7 @@
                 "recordId": "dna-term",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "817fc614c9b125743799f983e39d7a5ffdf2ed9b15b9a89c93c297b21551a1d4",
+                "fieldSha256": "e008504c8a37e678e28d657d2c74bd8feb6ee1fdf28ddb01eea8f48b7f41e403",
                 "explanation": "Lesion, stable sequence variant and a histone damage-response signal are different observations and assay questions."
               }
             ],
@@ -32370,8 +32370,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read all general teaching and worked examples, including evidence and source-scope sections. Patient-specific content is excluded. The curriculum is a discovery source; categorical claims and current clinical details require independent verification. Canonical field matching and supplementation are tracked below.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read all general teaching and worked examples, including evidence and source-scope sections. Patient-specific content is excluded. The curriculum is a discovery source; categorical claims and current clinical details require independent verification. Canonical field matching and supplementation are tracked below. The four existing requirements now have actual field evidence after current primary/official-source review and canonical rendered checks. This checkpoint adds no curriculum reading.",
         "sectionHashes": [
           "cb201e8843e68a329a7835727eeb34c2e89c3f0f9f3b0b74836942f9dc925b7e",
           "efcab089bd288539e0fb0a07eea50185c007a7620a1be89f55aad6c27cbf2981",
@@ -32387,38 +32387,111 @@
           {
             "id": "expression-delivery",
             "requirement": "Separate target abundance and sampling from delivery, released drug and payload response; an expression gradient need not yield a universal efficacy cutoff.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "trop2-expression",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "ab448be21e74513546c245994f7e17a685d462960ca0ad6331957290ec7f78d6",
+                "explanation": "The actual canonical note distinguishes sampled surface expression from binding, uptake, active-drug release, intracellular movement and sensitivity."
+              },
+              {
+                "recordId": "antigen-expression-and-response",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8893468370d10c0ac328540445b3d92e6d2cf9691d55d8bf5d7cf01067ca2095",
+                "explanation": "Existing draft owner separates antigen measurement, uptake, processing and payload sensitivity; DAISY activity is not a universal efficacy floor."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "test-context",
             "requirement": "Retain assay scoring, reader agreement, spatial and temporal heterogeneity and product-specific diagnostic requirements.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "her2-low-ihc",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "db1c447d82a1660bf6abb9681e467ff3c2fabf7862dfffd4347d98df17865f72",
+                "explanation": "Specimen, time, assay and reader agreement remain contextual. A historical reader study is not an individual error probability; re-review does not guarantee access."
+              },
+              {
+                "recordId": "her2-ihc-0",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6070576cf5cf86f782a8757a8569901b1661f485f17c430ec25d1ed263a88029",
+                "explanation": "Current negative score 0 and 0+ patterns retain method/version context rather than asserting absolute molecular absence."
+              },
+              {
+                "recordId": "her2-ish-amplified",
+                "version": "proposal-therapeutic",
+                "field": "scoringRule",
+                "fieldSha256": "14447f603d57ce300f47558e5ccf31726446b5a15f5a7e4512f9325d5a1bf2d0",
+                "explanation": "Concurrent IHC, ratio/copy counts and required review are retained for uncommon breast ISH groups."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "trial-design",
             "requirement": "Separate randomized treatment effects, exploratory marker subgroups and uncontrolled response cohorts; absence of a test requirement does not prove the target is biologically irrelevant.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ascent",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e0d573b08759212d7821857a3c2ee551261978fae9c0c7ae6ef21efc3d08c89c",
+                "explanation": "Randomized main comparison, biomarker-assessable exploratory subset, low-group uncertainty and lack of label testing requirement are separate."
+              },
+              {
+                "recordId": "antigen-expression-and-response",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8893468370d10c0ac328540445b3d92e6d2cf9691d55d8bf5d7cf01067ca2095",
+                "explanation": "DAISY single-arm cohort activity is distinguished from randomized comparative benefit."
+              },
+              {
+                "recordId": "prognostic-versus-predictive-biomarkers",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "832a234d4177f167b2d5813c562243c40af6dac613cd94ef1fb2852118c616d4",
+                "explanation": "Within-treated marker association, treatment comparisons and interaction assessment answer different questions."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "retained-categories",
             "requirement": "Keep HER2 score categories, TROP2 research scores and clinical eligibility tied to the exact product, setting and evidence.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "her2-low-and-trop2-adc-eligibility-tnbc",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "b2341b0c7c20c6fa3d25506546df2877a95bd9fa240a27cfd5e25d5f4e4de8d3",
+                "explanation": "HER2-low breast use, HR-positive ultralow use, separate TNBC limitations and TROP2/PD-L1 selection requirements retain product and setting."
+              },
+              {
+                "recordId": "trop2-expression",
+                "version": "proposal-therapeutic",
+                "field": "scoringRule",
+                "fieldSha256": "56860ec022f15e1caeef650447f8f6f8969ddc3d7df1009ae0987231ba0c9102",
+                "explanation": "The ASCENT research H-score is not turned into a labeled universal ADC cutoff."
+              },
+              {
+                "recordId": "destiny-breast06",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "968e835ac067e88333ae70108985ebe7456cd76c9a8e29a8be8b386be4607321",
+                "explanation": "The HR-positive population, prior metastatic chemotherapy exclusion and exploratory ultralow analysis are retained."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -47069,7 +47142,10 @@
       "title": "22C3 esophageal intended-use scopes",
       "domain": "access-and-regulation",
       "sourceURLs": [
-        "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S016",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150013S032"
       ],
       "discoveryOccurrences": [
         "schema-example-follow-up:dako-pd-l1-22c3-pharmdx"
@@ -47077,17 +47153,23 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false.",
+        "checkedAt": "2026-11-09",
+        "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false. The corresponding therapeutic label, both FDA device-list rows and both PMA approval-order profiles are now independently retrieved and read; the canonical test overview retains histology, regimen, prior-line and anatomic constraints.",
         "points": [
           {
             "id": "therapy-setting-thresholds",
             "requirement": "Reconcile the existing esophageal CPS description with therapy-specific FDA authorization and labeling; retain coexisting valid uses rather than a single generic threshold.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dako-pd-l1-22c3-pharmdx",
+                "version": "proposal-access",
+                "field": "summary",
+                "fieldSha256": "70029f8d172b07c604eebc187521dddf6e1e1ef7bbcd97d274737aadcc2238a0",
+                "explanation": "Current KEYTRUDA section 1.11 and FDA P150013/S016 and S032 retain coexisting CPS 1 combination and CPS 10 specified single-agent esophageal uses."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -47360,6 +47442,155 @@
                 "field": "summary",
                 "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
                 "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "target-function-delivery-and-normal-tissue",
+      "title": "Target biological function, delivery and normal-tissue expression",
+      "domain": "biology",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/22349828/",
+        "https://pubmed.ncbi.nlm.nih.gov/27022065/",
+        "https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"
+      ],
+      "discoveryOccurrences": [
+        "expression-primary-follow-up:target-function-delivery-and-normal-tissue"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+        "points": [
+          {
+            "id": "scope-and-interpretation",
+            "requirement": "Keep experimental biological function, ADC delivery, normal-tissue measurements and validated clinical selection distinct; model growth or drug sensitivity does not establish a universal dependency or patient-selection rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "trop2",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "fd8798169f983832383edc12256016ed1499fa281a7b92eb555526f551766cef",
+                "explanation": "The overview retains TROP2 delivery and experimental signaling roles without claiming that one excludes the other."
+              },
+              {
+                "recordId": "trop2",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fd92a03ce2f6edd9aabb8eeefe8029e7b22e85c7d31514f9d936c0bfb39e074e",
+                "explanation": "Normal-tissue RNA/protein context and model-level growth/AKT findings do not imply tumor exclusivity, individual toxicity or clinical AKT selection."
+              },
+              {
+                "recordId": "trop2",
+                "version": "proposal-therapeutic",
+                "field": "biology",
+                "fieldSha256": "3fdab1bb9007feb8359b4e645ea98ccb58dfb829b9012416f6ca6f4da14a27db",
+                "explanation": "The separate biology field also retains the same model and delivery limits."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "her2-reporting-notation-and-jurisdiction",
+      "title": "HER2 reporting notation and jurisdiction-specific interpretation",
+      "domain": "measurement",
+      "sourceURLs": [
+        "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true",
+        "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+      ],
+      "discoveryOccurrences": [
+        "expression-primary-follow-up:her2-reporting-notation-and-jurisdiction"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+        "points": [
+          {
+            "id": "scope-and-interpretation",
+            "requirement": "Retain the source version and jurisdiction when interpreting score notation and uncommon breast ISH groups; shared glyphs or numeric shortcuts are not interchangeable algorithms or treatment indications.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "her2-ihc-0",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "6070576cf5cf86f782a8757a8569901b1661f485f17c430ec25d1ed263a88029",
+                "explanation": "Current score 0 versus 0+ reporting patterns remain negative categories and must be interpreted using the relevant scoring source."
+              },
+              {
+                "recordId": "her2-ish-amplified",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "c20ed6aee5180c2209defbc811ca46dac4fe2130f23c5610149bdd9a2235d7d6",
+                "explanation": "Ratio, counts, concurrent IHC and required recounting replace a universal single-number interpretation."
+              },
+              {
+                "recordId": "her2-testing-uk-breast",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "2526d0e58f62db8a66bb17d5fb4e1799c4522a669df5f1850643222c795282e8",
+                "explanation": "The UK dataset and current CAP algorithm are compared with the IHC 3+ exception retained, rather than saying all U.S. group 2 cases are negative."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "study-analysis-population-and-version",
+      "title": "Analysis populations and dated study versions",
+      "domain": "evidence",
+      "sourceURLs": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10561652/",
+        "https://pubmed.ncbi.nlm.nih.gov/39282896/",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+      ],
+      "discoveryOccurrences": [
+        "expression-primary-follow-up:study-analysis-population-and-version"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed.",
+        "points": [
+          {
+            "id": "scope-and-interpretation",
+            "requirement": "Keep randomization strata, corrected efficacy populations, primary versus exploratory endpoints and original-paper versus regulatory-analysis versions with each estimate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "paper-destiny-breast04-nejm-2022",
+                "version": "proposal-therapeutic",
+                "field": "caveats",
+                "fieldSha256": "b9071af82c5b867120bafc67f14ebc8adee1744345e9bef10a2daf0bc9fe3b0b",
+                "explanation": "The original paper explains why 63 at randomization and 58 in the receptor-negative efficacy table are different valid denominators."
+              },
+              {
+                "recordId": "paper-destiny-breast06-nejm-2024",
+                "version": "proposal-therapeutic",
+                "field": "findings",
+                "fieldSha256": "c836a1ec9b4a1692c15fd2ad7be95a9087d8a4d7ea5f651816af7324a5ea9dd6",
+                "explanation": "Original primary HER2-low PFS, exploratory ultralow status and immature overall survival are retained."
+              },
+              {
+                "recordId": "paper-destiny-breast06-nejm-2024",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "acb960cd1e3ad73cddd8b83f3fbe381257301611135ec16e9daa98919605e185",
+                "explanation": "The specific current SPL v28 ultralow regulatory analysis is named separately, including an interval spanning 1; it is not silently substituted into the original primary result."
               }
             ],
             "remaining": []

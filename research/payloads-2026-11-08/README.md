@@ -2,13 +2,27 @@
 
 Date: 2026-11-08. Baseline: `0f8ebc256` (current upstream main at the start of this contribution). Issue: https://github.com/judegomila/OnCo/issues/368.
 
-This contribution adds 31 mechanism and scaffold concepts and revises four existing parent records. It does not claim every proprietary payload molecule has been disclosed or found. Conventional TOP1, auristatin, maytansinoid, PBD, calicheamicin and duocarmycin records remain their existing owners.
+This draft now adds 32 records (31 mechanism/scaffold concepts and the POLR2A target) and updates seven existing owners. All 39 retain canonical identities and do not overlap draft #375. It does not claim every proprietary payload molecule or worldwide program has been disclosed or found. The systematic audit remains active; this contribution is not expert sign-off or coverage merged into main.
+
+## Follow-up checkpoint
+
+The [follow-up reader and source scopes](follow-up/reading-scope.json) document nine changed owners, including the new POLR2A target. Two distinct cargoes can share TOP1 action, and co-attachment need not mean simultaneous release. ISAC innate activation, myeloid function, adaptive priming, clinical pharmacodynamics and patient benefit remain separate. Trial stopping reasons are retained without declaring a whole mechanism invalid.
+
+Exatecan retains its existing id as a cited chemical/concept record. The earlier comparison row grouped distinct derivatives under a shared permeability, efflux, loading and toxicity profile. That unverified row is removed; no missing measurement is replaced with a guess. The existing derivative-product relationships remain at the TOP1 class. Primary free-exatecan and conjugate studies retain their actual regimens and models. Older modular inference rules still collapse Ed-04/brengitecan into the parent exatecan component id; that product follow-up remains open.
+
+POLR2A dosage is a research hypothesis, not a TP53-mutation eligibility rule. The corrected colorectal and siRNA-nanoparticle papers remain distinct from separate retracted prostate and HER2-low reports. The Chinese HDP-101 registry has structured maximum age 18 but narrative minimum age 18; the source conflict is shown without inventing a corrected limit. An external source correction is still needed for an unambiguous age rule.
+
+Two additional Elicit paper queries returned 20 occurrences, all screened; a trial query returned three results, including one poisoning study excluded from oncology. Every returned NCT was directly captured. [Metadata responses](follow-up/top1-chemical-exposure.json), [POLR2A search](follow-up/polr2a-dosage-evidence.json), [trial discovery](follow-up/amanitin-programs.json) and [dispositions](follow-up/literature-dispositions.json) preserve the request, provider timestamps, warnings and scope. Across this contribution, the original five paper queries and these two queries returned 145 paper occurrences; this is not a deduplicated paper count.
+
+The [validation receipt](follow-up/validation.json) records 22,715 entities, typecheck, lint, 281 files / 2,813 passing tests and two existing skips. Retrieval is 0.4309 recall and 0.6875 rubric over 100 questions, above unchanged floors. All 39 owners were server-rendered; dates/source URLs and anchors pass, and changed narratives were read. The new target's missing cross-reference was caught by existing tests and repaired with source-derived HGNC data. No test floor, budget, ranking or expected entity was changed.
+
+Complete abstract bodies formerly retained in 39 source files are excluded at the current head; 167 exact originals are retained outside the public checkout. [Custody hashes](capture-custody.json) retain that transformation. New captures likewise publish metadata and hashes, with article/notice bodies outside the checkout. No history rewrite, edited quotation, private project material or patient data is introduced.
 
 ## Search boundary
 
 Public oncology antibody-conjugate payload mechanisms, including historical experimental scaffolds and negative studies that remain relevant to current diversification. Web search extended beyond OncoGuide to primary papers, conference abstracts, and direct ClinicalTrials.gov v2 records. Five Elicit paper queries and one trial query were run. No patient data or private-project material was queried or copied.
 
-### Elicit requests and full JSON responses
+### Original Elicit requests and JSON metadata
 
 - [clinical-exemplars](elicit/clinical-exemplars.json): `{"query": "Antibody conjugates carrying non-topoisomerase payloads: amanitin HDP-101, BCL-XL ABBV-155, degrader ORM-5029 ORM-6151, STING agonist XMT-2056 TAK-500, TLR agonist BDC-1001 SBT6050", "searchMode": "semantic", "maxResults": 25}`
 - [completion-check](elicit/completion-check.json): `{"query": "Antibody drug conjugates carrying MCL-1 inhibitor S64315 S227928, ferroptosis inducer sulfasalazine FGFR4 RZ-11, RIG-I agonist RNA and XPO1 inhibitor payloads: primary evidence for directly attached payloads rather than separate drug combinations", "searchMode": "semantic", "maxResults": 20, "corpus": "elicit"}`
@@ -17,9 +31,9 @@ Public oncology antibody-conjugate payload mechanisms, including historical expe
 - [immune-ddr-degrader](elicit/immune-ddr-degrader.json): `{"query": "Antibody conjugate payloads beyond cytotoxic chemotherapy: STING TLR7 TLR8 immune agonists, ATR PARP DNA damage repair inhibitors, GSPT1 molecular glue and BRD4 PROTAC degraders, dual payload constructs", "searchMode": "semantic", "maxResults": 25, "corpus": "elicit"}`
 - [mechanisms](elicit/mechanisms.json): `{"query": "What novel antibody drug conjugate payload mechanisms beyond topoisomerase I inhibition have primary preclinical or clinical evidence, including NAMPT, BCL-XL, kinesin spindle protein, RNA splicing, amanitin, CDK9, protein degradation and immune agonists?", "searchMode": "semantic", "maxResults": 30, "corpus": "elicit"}`
 
-These are saved API discovery responses, not permanent Elicit report URLs. Every publication used for a new concept was independently resolved through Europe PMC or Crossref, and its abstract read. Search-engine summaries are discovery material. Publisher fetches for some AACR/RSC pages returned 403; the load-bearing abstracts were read from raw Crossref/Europe PMC JSON instead. Initial Crossref requests hit rate limits; all required abstract captures were ultimately recovered and checked.
+These are saved API discovery metadata responses, not permanent Elicit report URLs. Complete abstract bodies are excluded and their exact hashes retained; original bytes are outside the checkout. Every publication used for a new concept was independently resolved through Europe PMC or Crossref, and its abstract read. Search-engine summaries are discovery material. Publisher fetches for some AACR/RSC pages returned 403; the load-bearing abstracts were read from raw Crossref/Europe PMC JSON instead. Initial Crossref requests hit rate limits; all required abstract captures were ultimately recovered and checked.
 
-## Added concepts and primary evidence
+## Original 31 concepts and primary evidence
 
 | Concept | Primary source |
 |---|---|
@@ -63,7 +77,7 @@ The OnCo routes above are intended destinations after merge and deployment; they
 - Distinct formats: bispecific targeting, two different payloads on one antibody, and separate-drug combinations are not interchangeable.
 - Distinct cellular processes: transcription, RNA splicing, translation termination, protein degradation and proteasome inhibition remain separate.
 - Distinct chemistry: SC209 is a released hemiasterlin cytotoxin; SC239 is its linker-warhead. IGN/PDD mono-alkylators are not assigned PBD crosslinking. KSP inhibitors and KIF11 degraders are not tubulin-binding payloads.
-- Distinct evidence: cell assays, xenografts, animal toxicology, conference abstracts, trial designs and human activity reports retain their setting. No response percentages, survival comparisons or clinical post-TOP1 benefit claims were added.
+- Distinct evidence: cell assays, xenografts, animal toxicology, conference abstracts, trial designs and human activity reports retain their setting. The original mechanism wave added no response percentages or survival comparisons. The follow-up separately retains the exact free-exatecan randomized regimen; no clinical post-TOP1 benefit is inferred.
 - Negative evidence: the carfilzomib conjugate study lost potency after lysosomal inactivation. Terminated GSPT1/STING/TLR program trials remain visible. The reason for a terminated trial is not inferred from its status.
 - Adjacent delivery: sulfasalazine was directly conjugated to an FGFR4 antibody; IKE was encapsulated in an antibody-directed nanogel; deBouganin was delivered as a conjugate or fusion protein. Neither is silently treated as a conventional small-molecule ADC.
 
@@ -75,13 +89,13 @@ The uPAR anthracycline paper has a transposed payload identifier in its indexed 
 - [Paper dispositions](paper-dispositions.json): every Elicit paper result, including existing records and discoveries not used for facts.
 - [Trial dispositions](trial-dispositions.json): every directly captured trial and all semantic NCT results, reconciled to canonical owners where present.
 - [Registry capture manifest](registry/manifest.json) and [supplement](registry-supplement/manifest.json): full raw pages, complete pagination and SHA-256 hashes.
-- [Primary capture manifest](primary/manifest.json): resolver URLs, saved times and raw-response hashes.
+- [Primary capture manifest](primary/manifest.json): resolver URLs, saved times, original-capture hashes and retained-file hashes after abstract exclusion.
 - [Artifact hashes](sha256.json): saved discovery/source artifacts.
 
 ## Remaining schema work
 
-The five-class comparison registry still requires boolean permeability and other values that many experimental payload studies do not report. These concepts enter the existing glossary and graph without filling those unknown fields with guessed measurements. Multiple structured payload identities, measured-property uncertainty, construct-specific loading and assertion-level evidence are still separate schema work. No schema or product behavior is changed here.
+The comparison registry still requires boolean permeability and other values that many experimental payload studies do not report. These concepts enter the existing glossary and graph without filling those unknown fields with guessed measurements. The unverified exatecan-family comparison row has been retired while its canonical concept record is retained. Multiple structured payload identities, measured-property uncertainty, construct-specific loading and assertion-level evidence are still separate schema work. The existing term data mapper now preserves the TOP1 owner’s date, notes, citations and class-level product links. No UI, schema, search-ranking or product-policy code changes are introduced.
 
 ## Unresolved scope
 
-PARP/WEE1 combination papers did not establish attached PARP/WEE1 payloads in this search. They are not promoted into supported payload classes. Proprietary or patent-only claims without a resolved supporting abstract remain outside the new factual records. This is broad mechanism coverage within a declared search boundary, not a census of all global programs.
+PARP/WEE1 combination papers did not establish attached PARP/WEE1 payloads in this search. They are not promoted into supported payload classes. Proprietary or patent-only claims without a resolved supporting abstract remain outside the new factual records. This is broad mechanism coverage within a declared search boundary, not a census of all global programs. The continuing systematic audit retains unresolved CHK1/other repair-payload evidence, remaining legacy comparison claims and exact-component inference as explicit follow-ups.

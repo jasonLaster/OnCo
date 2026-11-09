@@ -34,11 +34,7 @@ export const payloads: Payload[] = [
     permeable: true, effluxSubstrate: "partial", typicalDar: "8 (T-DXd), 4 (Dato-DXd)",
     toxicities: "Interstitial lung disease/pneumonitis, nausea, neutropenia, fatigue; stomatitis and ocular surface events with Dato-DXd.",
     adcs: ["trastuzumab-deruxtecan", "datopotamab-deruxtecan", "patritumab-deruxtecan", "ifinatamab-deruxtecan", "raludotatug-deruxtecan"] },
-  { id: "exatecan", name: "Exatecan (and derivatives)", aka: "DX-8951; Ed-04 in iza-bren; ZD06519", class: "Topoisomerase-I inhibitor",
-    mechanism: "Highly potent camptothecin analogue; the parent scaffold for many next-generation payloads (iza-bren's Ed-04, Zymeworks' ZD06519, MediLink's C24).",
-    permeable: true, effluxSubstrate: "partial", typicalDar: "8",
-    toxicities: "Myelosuppression (notably with iza-bren), nausea, ILD class signal.",
-    adcs: ["izalontamab-brengitecan", "tilatamig-samrotecan", "ak146d1", "puxitatug-samrotecan"], note: "Hydrophilic linkers are what make DAR 8 exatecan ADCs manufacturable." },
+
   { id: "t030", name: "T030 (belotecan derivative)", aka: "KL610023", class: "Topoisomerase-I inhibitor",
     mechanism: "Belotecan-derived TOP1 inhibitor used in sacituzumab tirumotecan; reported to be a weaker efflux-pump substrate than SN-38.",
     permeable: true, effluxSubstrate: "low", typicalDar: "~7.4",

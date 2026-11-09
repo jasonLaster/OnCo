@@ -1,5 +1,16 @@
 # Corrections
 
+### Payload identity, exposure and source-scope follow-up
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Exatecan](/terms/exatecan/) | Grouped distinct derivatives as synonyms, assigned shared measurements and attributed free-drug failure solely to toxicity | PubChem identity, original randomized report and defined conjugate studies | Keeps the canonical chemical id and cited evidence; removes the unverified family comparison row and retains derivative links at the mechanism class; [draft #369](https://github.com/judegomila/OnCo/pull/369) |
+| 2026-11-08 | [TOP1 payloads](/terms/topoisomerase-i-payloads/) | Generalized permeability, high loading, resistance and toxicity across chemicals and constructs | Named biochemical, resistant-model and patient-cohort studies | Separates trapping, chemical properties, exposure and model/clinical findings; no generic selection rule or post-ADC benefit claim; [draft #369](https://github.com/judegomila/OnCo/pull/369) |
+| 2026-11-08 | [Dual-payload ADCs](/technologies/dual-payload-adc/) | A two-class/guaranteed-escape definition excluded same-mechanism cargoes and implied shared timing | Dual-TOP1 conference abstract and sequential-release primary study | Defines two active cargoes, with independent class, loading, release, exposure and contribution questions; [draft #369](https://github.com/judegomila/OnCo/pull/369) |
+| 2026-11-08 | [Payload](/terms/payload/) | Defined every payload as a poison too toxic to give freely | Primary cargo/formulation evidence and FDA terminology | Distinguishes cargo, chemical species, delivery product and measured exposure; [draft #369](https://github.com/judegomila/OnCo/pull/369) |
+| 2026-11-08 | [HDP-101 source scope](/drugs/pamlectabart-tismanitin/) | The Chinese registry's structured maximumAge=18 conflicts with its narrative age-at-least-18 criterion | Direct API capture reconciled with semantic discovery | Discloses both source fields and leaves eligibility confirmation external; no corrected age is invented and the registry itself is not changed; [draft #369](https://github.com/judegomila/OnCo/pull/369) |
+
+
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
 ## 2026-11-08

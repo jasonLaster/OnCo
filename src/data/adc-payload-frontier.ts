@@ -11,6 +11,58 @@ const registry = (nct: string) => ({ label: `ClinicalTrials.gov: ${nct}`, url: `
 // Keep those properties unknown instead of inventing values to satisfy Payload's required fields.
 export const adcPayloadFrontier: TermInput[] = [
   t({
+  "id": "exatecan",
+  "name": "Exatecan",
+  "aka": [
+    "DX-8951",
+    "DX8951"
+  ],
+  "tldr": "Exatecan is a camptothecin-class TOP1 poison. It has been studied as a free drug and as cargo in delivery products; those formulations have different evidence and exposure.",
+  "summary": "Exatecan is a defined chemical, commonly called DX-8951. DXd and other related payloads are separate chemical species or drug-linker systems, not interchangeable names for exatecan. Structure, attachment and the species actually released matter when interpreting potency, transport or safety.\n\nIn a randomized first-line advanced-pancreatic-cancer trial, adding exatecan to gemcitabine did not improve overall survival and increased specified severe blood-cell toxicities. That regimen does not establish that every standalone use failed solely because of toxicity or that attaching exatecan automatically supplies a useful therapeutic window.",
+  "notes": ["The Abou-Alfa phase 3 report randomized 349 people to exatecan plus gemcitabine or gemcitabine alone. Median survival was 6.7 versus 6.2 months (P=.52); grade 3/4 neutropenia and thrombocytopenia were more frequent with the combination. This is one defined regimen and comparison.","Jo reported stronger experimental TOP1-DNA trapping by exatecan than comparison TOP1 inhibitors. Weng evaluated specific traceless antibody-exatecan constructs in resistant models. Neither observation by itself establishes superior patient outcomes or benefit from switching between all related ADCs.","A phosphonamidate-linker study and a separate camptothecin-derivative study changed solubility, loading or released chemical forms and measured bystander behavior in their own models. A family name does not provide a shared permeability, drug loading, efflux profile or clinical toxicity value.","Keep the delivery antigen, linker/attached form, released exatecan or derivative, exposure and prior resistance setting separate. Shared TOP1 action can allow cross-resistance, but its frequency and the effect of another treatment depend on the mechanism and clinical context.","Permeability, transporter handling and payload loading need the exact chemical or construct. No universal derivative profile follows from the exatecan name. The CLIO-8221 source identifies exatecan among two cargoes and supplies trial design, rather than a clinical-benefit result."],
+  "links": [
+    {
+      "label": "PubChem: independently resolved exatecan chemical identity",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/151115"
+    },
+    {
+      "label": "Abou-Alfa et al.: exatecan/gemcitabine versus gemcitabine randomized trial (2006)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16983112/"
+    },
+    {
+      "label": "Jo et al.: exatecan TOP1-DNA trapping and experimental combinations (2022)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35439320/"
+    },
+    {
+      "label": "Weng et al.: antibody-exatecan conjugates in resistant models (2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36693125/"
+    },
+    {
+      "label": "Schmitt et al.: phosphonamidate-linked exatecan constructs (2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37828728/"
+    },
+    {
+      "label": "Li et al.: distinct camptothecin derivatives and released species (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31620223/"
+    }
+  ],
+  "technologies": [
+    "adc"
+  ],
+  "terms": [
+    "payload",
+    "topoisomerase-i-payloads"
+  ],
+  "drugs": [
+    "clio-8221"
+  ],
+  "related": [
+    "topoisomerase-i-payloads",
+    "dxd",
+    "adc-sequencing"
+  ]
+}),
+  t({
     id: "next-generation-adc-payloads", name: "Next-generation antibody-conjugate payloads", aka: ["non-TOP1 payloads", "novel ADC payload mechanisms", "ADC payload diversification"],
     tldr: "Antibodies can carry drugs that block gene reading, remove proteins, interrupt cell signals or activate immune cells. Each approach needs its own evidence that the drug reaches its target and helps people safely.",
     summary: "Payload diversification changes what an antibody delivers, independently of which surface antigen it binds. This map includes transcription and splicing inhibitors, repair-checkpoint inhibitors, metabolic and apoptosis agents, targeted protein degraders, immune agonists, signaling inhibitors, and additional tubulin and DNA-interacting scaffolds. Bispecific targeting is a delivery format; dual payload means distinct agents on one construct. Neither label alone establishes a new payload mechanism. Protein toxins, radionuclides, oligonucleotides, photosensitizers and antibody-directed nanocarriers have related delivery questions but retain their own format definitions. Evidence ranges from cell experiments and animal models to early clinical studies; a mechanism change does not by itself establish benefit after a TOP1 antibody-drug conjugate.",
@@ -20,18 +72,20 @@ export const adcPayloadFrontier: TermInput[] = [
     notes: ["This is a map of publicly described mechanisms, not an exhaustive list of proprietary payload molecules or a ranking of treatments. Follow each concept to the experiment or trial supporting it."],
   }),
   t({
+    notes:["Transcription makes RNA from a DNA template; replication copies DNA. Amanitin acts on RNA polymerase II, while triptolide-directed designs interfere with other transcription machinery. A transcription-directed cargo is not automatically the same chemical or target as another member of the category.","The Figueroa-Vazquez HDP-101 study included proliferating and resting myeloma cells, with BCMA-negative controls and animal models. This establishes an experimental cell-state scope, not eradication of every dormant clone, intrinsic tumor specificity or human benefit.","The POLR2A dosage hypothesis concerns measured loss of a neighboring essential gene, sometimes with TP53-region deletion. A TP53 point mutation alone does not establish POLR2A loss or a clinical response rule. The colorectal amanitin-conjugate report and the TNBC siRNA-nanoparticle report used different delivery formats.","Healthy cells also rely on transcription. The chemical species released from a conjugate, linker stability, antigen access, cellular uptake and normal-organ exposure remain relevant. OATP1B3-mediated uptake was studied for amatoxins; it does not give a permeability or toxicity value for every attached derivative.","The 2015 colorectal dosage report and the 2019 TNBC nanoparticle paper have published corrections. Separate prostate/17p-loss and HER2-low/17p-loss reports were retracted in 2026 and are excluded from support. A corrected or retracted preclinical report must not become an unqualified clinical claim.","A registry establishes a study design and dated status. Sponsor response reports, model regressions, patient-derived laboratory material and randomized patient outcomes are different evidence types. None should be substituted for an independently reviewed human benefit result."], targets:["polr2a"],
     id: "transcription-inhibitor-payloads", name: "Transcription-inhibitor payloads", aka: ["RNA polymerase inhibitor payloads", "gene transcription payloads"],
     tldr: "These payloads stop a cell from reading the instructions in its genes. Researchers are testing whether antibody delivery can make this different way of killing cancer cells usable safely.",
     summary: "Transcription inhibition interrupts RNA production, unlike TOP1 poisons or tubulin inhibitors. Amanitin directly inhibits RNA polymerase II; triptolide interferes with the transcription factor TFIIH. The HDP-101 preclinical study included proliferating and resting myeloma cells. That result does not establish activity against every dormant tumor or clinical resistance mechanism. Targeted delivery, intracellular activity and tolerability must be demonstrated for each construct.",
     related: ["amanitin-payloads", "triptolide-payloads", "cdk-inhibitor-payloads", "spliceosome-inhibitor-payloads"],
-    links: [paper("HDP-101 in proliferating and resting myeloma models (2021)", "10.1158/1535-7163.MCT-20-0287"), paper("Hayashi et al., CD26-directed triptolide conjugate (2019)", "10.3390/cancers11081138")],
+    links: [{"label":"HDP-101 in proliferating and resting myeloma models (2021)","url":"https://doi.org/10.1158/1535-7163.MCT-20-0287"},{"label":"Hayashi et al., CD26-directed triptolide conjugate (2019)","url":"https://doi.org/10.3390/cancers11081138"},{"label":"Bushnell et al.: amanitin/RNA polymerase II structural study (2002)","url":"https://pubmed.ncbi.nlm.nih.gov/11805306/"},{"label":"Liu et al.: POLR2A dosage hypothesis in colorectal models (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25901683/"},{"label":"Xu et al.: POLR2A siRNA nanoparticles in TNBC models (2019)","url":"https://pubmed.ncbi.nlm.nih.gov/30804480/"},{"label":"Author correction to the colorectal POLR2A report (2021)","url":"https://pubmed.ncbi.nlm.nih.gov/34433970/"},{"label":"Publisher correction to the TNBC nanoparticle report (2019)","url":"https://pubmed.ncbi.nlm.nih.gov/30837690/"},{"label":"Author correction to the TNBC nanoparticle report (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/31953520/"},{"label":"Retraction notice for a separate HER2-low/17p-loss report (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/41984934/"},{"label":"Letschert et al.: amatoxin transport in cells and human hepatocytes (2006)","url":"https://pubmed.ncbi.nlm.nih.gov/16495352/"},{"label":"Retraction notice for the separate prostate/17p-loss report (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/42414292/"}],
   }),
   t({
+    targets:["polr2a"], notes:["The active target is RNA polymerase II, whose largest subunit is encoded by POLR2A. BCMA or TROP2 can instead be the antibody delivery address. A source identifying one does not identify the other.","Papacharisi tested TROP2-directed amanitin conjugates in cells and pancreatic/TNBC xenografts. Potency, reported serum stability and tumor eradication belong to those constructs and models. Their comparison with Trodelvy is not a randomized human comparison.","The Letschert uptake experiments identified OATP1B3-mediated amatoxin transport in engineered cells and primary human hepatocytes. Passive permeability, bystander activity and normal-organ toxicity still need evaluation for the actual released species; they cannot be assigned from the toxin-family name.","HDP-101 is being evaluated in separately registered dose-finding/expansion studies. The registry does not establish response benefit, a safe dose or prospective validation of POLR2A or 17p selection. The Chinese study has a source age-field inconsistency, described on the drug record; a generated eligibility summary is not sufficient."],
     id: "amanitin-payloads", name: "Amanitin payloads", aka: ["alpha-amanitin payload", "amatoxin payloads", "antibody-targeted amanitin conjugates", "ATAC payloads", "tismanitin"],
     tldr: "Amanitin payloads block the machinery that copies genes into messages. Attaching them to an antibody aims to direct their cell-killing action toward cancer cells.",
     summary: "Amanitin derivatives inhibit RNA polymerase II. HDP-101, also called pamlectabart tismanitin, links an amanitin derivative to an antibody against BCMA. Published preclinical work found activity in proliferating and resting myeloma cells and tumor regression in mouse models. The linked human trial is a separate safety and activity study. The toxicity of free amanitin and preclinical tolerability of a conjugate must not be treated as the same safety evidence.",
     drugs: ["pamlectabart-tismanitin"], terms: ["payload", "transcription-inhibitor-payloads"],
-    links: [paper("HDP-101 preclinical study (2021)", "10.1158/1535-7163.MCT-20-0287"), registry("NCT04879043")],
+    links: [{"label":"HDP-101 preclinical study (2021)","url":"https://doi.org/10.1158/1535-7163.MCT-20-0287"},{"label":"ClinicalTrials.gov: NCT04879043","url":"https://clinicaltrials.gov/study/NCT04879043"},{"label":"Papacharisi et al.: TROP2 amanitin-conjugate preclinical study (2025)","url":"https://pubmed.ncbi.nlm.nih.gov/39564769/"},{"label":"Letschert et al.: human-hepatocyte amatoxin transport (2006)","url":"https://pubmed.ncbi.nlm.nih.gov/16495352/"},{"label":"HDP-101 Chinese phase 1 study and source eligibility discrepancy","url":"https://clinicaltrials.gov/study/NCT07529782"}],
   }),
   t({
     id: "triptolide-payloads", name: "Triptolide payloads", aka: ["TFIIH inhibitor payloads", "Y-TR1", "Y-TR-1"],

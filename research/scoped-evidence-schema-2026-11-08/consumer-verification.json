@@ -47,11 +47,12 @@
     "The original assay category/year filters remain summaries of the retained registry fields; detailed intended-use observations are separate. This does not revalidate all inherited assay data.",
     "Alternative renderings such as CSV and RDF are not claimed to carry every observation property; full scoped data are in entity JSON and Markdown.",
     "The esophageal 22C3 use review remains open in the content audit.",
-    "Expert review, upstream-accessible preview and owner approval remain pending."
+    "Expert review, upstream-accessible preview and owner approval remain pending.",
+    "Legacy derivative and explicitly joined dual-cargo rules are corrected in the follow-up receipt; all possible legacy prose composition is not certified."
   ],
   "tests": {
     "fullFiles": 285,
-    "fullPassed": 2830,
+    "fullPassed": 2833,
     "existingSkipped": 2,
     "finalFocusedPassed": 47,
     "extractiveRecallRounded": 0.4309,
@@ -1581,5 +1582,6 @@
     "src/lib/modular.ts": "f220ed3d285e9d0ccae7c74be441176e4422ec113c33565d9775f72c98971460",
     "scripts/build-context.ts": "07e3f4c4cd378e2c0dba3fcb5e62cca4f99b317c40c3cb576eba40cf99d261c8",
     "src/data/assay-regulatory-claims.ts": "4be7fc760b27527fabe51b207a5321db454fa945b705634069759164c30551b8"
-  }
+  },
+  "legacyFollowUp": "legacy-identity-consumer-verification.json"
 }

@@ -37,3 +37,5 @@ The earlier [cell-control checkpoint](cell-control-validation.md) closes five ad
 The [payload reconciliation](payload-follow-up-reconciliation.json) refreshes draft #369 at `b5a3c341deb1f5cce51dcb3791b239898eea3647`: 39 owners (32 new, seven existing), 20 already-read curriculum requirements now evidenced and 20 additional screened discovery occurrences. Exact exatecan ownership, dosage hypotheses, corrected/retracted evidence and a registry source conflict are retained. No additional curriculum reading is claimed.
 
 Next work includes remaining payload comparison/chemical profiles, the existing exhaustion/persistence term, distinct esophageal 22C3 uses, residual requirements, unread curriculum/literature and semantic navigation review.
+
+The [9 November recovery](artifact-recovery-2026-11-09.json) restores the pinned baseline, 11 education responses and 39 older payload captures byte-exactly, and replaces lost visual-review images with 32 new matched SSR captures in persistent storage. Four newer Elicit response bodies and newer temporary-only primary captures remain unavailable. This changes custody status and the review-pack location, not content coverage.

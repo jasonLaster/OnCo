@@ -7,6 +7,7 @@ import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { createRequire } from "node:module";
+import { homedir } from "node:os";
 
 export type Evidence = { recordId: string; version: string; field: string; fieldSha256: string; explanation: string };
 export type LearningPoint = {
@@ -141,6 +142,21 @@ function main() {
   const args = process.argv.slice(2);
   const arg = (name: string) => { const i = args.indexOf(name); if (i < 0 || !args[i + 1]) throw new Error("Missing " + name); return args[i + 1]; };
   const guide = resolve(arg("--guide")), ref = arg("--guide-ref"), baseline = resolve(arg("--baseline")), out = resolve(arg("--out"));
+  const packDir = args.includes("--review-pack-out") ? resolve(arg("--review-pack-out")) : join(homedir(), ".cache", "onco-reference", "education-review-pack", ref.slice(0, 12));
+  // Review bodies can include excluded case context. Keep them outside every Git checkout,
+  // including when the requested directory has not been created yet.
+  let ancestor = packDir;
+  while (!existsSync(ancestor)) {
+    const parent = resolve(ancestor, "..");
+    if (parent === ancestor) break;
+    ancestor = parent;
+  }
+  let insideGit = false;
+  try {
+    execFileSync("git", ["rev-parse", "--show-toplevel"], { cwd: ancestor, stdio: "ignore" });
+    insideGit = true;
+  } catch { /* No containing checkout. */ }
+  if (insideGit) throw new Error("Review packs must be outside Git checkouts");
   const yaml = createRequire(join(process.cwd(), "package.json"))("js-yaml") as { load(s: string): Record<string, unknown> };
   mkdirSync(out, { recursive: true });
   const base = readJSON<RecordData[]>(baseline);
@@ -201,7 +217,7 @@ function main() {
   writeJSON(join(out, "candidates.json"), { warning: "Lexical retrieval for manual review only; no match score establishes coverage.", items: candidates });
   writeJSON(join(out, "open-items.json"), [...failures, ...adjacentFailures]);
   writeJSON(join(out, "open-dependencies.json"), dependencies);
-  const packDir = "/tmp/onco-systematic-review-pack"; mkdirSync(packDir, { recursive: true });
+  mkdirSync(packDir, { recursive: true });
   for (const [domain, rows] of Object.entries(reviewPack)) writeJSON(join(packDir, domain + ".json"), rows);
   console.log(JSON.stringify(stats));
   if (args.includes("--check-closed") && (failures.length || adjacentFailures.length || dependencies.length)) process.exitCode = 2;

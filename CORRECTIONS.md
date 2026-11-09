@@ -2,6 +2,14 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-09
+
+### Receptor classifications and cohort comparisons
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [TNBC](/cancers/tnbc/) and [ER/PR threshold](/terms/er-pr-negative-threshold/) | Repeated complete receptor absence and categorical equivalence of ER-low disease to TNBC; a benchmark narrative and an Ask assertion required the same inaccurate wording | Public-education requirement review; independently resolved ASCO/CAP guidelines and Yoder, Dieci and Acs cohort abstracts; current official testing explanations | Separates negative test categories, molecular absence, ER-specific low-positive reporting, selected observational comparisons and actual protocol eligibility. Corrects base and contributing notes, keeps cohort figures with their scopes and updates the obsolete assertion without changing questions, entity expectations, retrieval floors or budgets; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+
 ## 2026-11-08
 
 ### Systematic public-education coverage audit: cell controls and recognition formats

@@ -46,23 +46,8 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "Tissue contains different cell groups and supporting material. Knowing which compartment produced a signal helps explain what the result can mean.",
     "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
-    "notes": [
-      "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity."
-    ],
-    "links": [
-      {
-        "label": "NCI SEER: epithelial organization and basement membrane",
-        "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"
-      },
-      {
-        "label": "A spatially resolved single-cell genomic atlas of the adult human breast.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/37380767/"
-      },
-      {
-        "label": "A single-cell and spatially resolved atlas of human breast cancers.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/34493872/"
-      }
-    ],
+    "notes": ["Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.","An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer."],
+    "links": [{"label":"NCI SEER: epithelial organization and basement membrane","url":"https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"},{"label":"A spatially resolved single-cell genomic atlas of the adult human breast.","url":"https://pubmed.ncbi.nlm.nih.gov/37380767/"},{"label":"A single-cell and spatially resolved atlas of human breast cancers.","url":"https://pubmed.ncbi.nlm.nih.gov/34493872/"},{"label":"NCI SEER: Summary Stage 2018 manual v3.4, October 2026, in-situ and localized boundaries","url":"https://seer.cancer.gov/tools/ssm/Summary-Stage_v3.4.pdf"}],
     "related": [
       "cell-membrane",
       "carcinoma",
@@ -70,7 +55,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "tumor-microenvironment"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-09",
     "category": "Biology & measurement"
   },
   {
@@ -265,32 +250,8 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "Developing lymphocytes assemble receptor genes from selected DNA segments. Making a receptor is separate from showing what it recognizes or whether it produces a useful response.",
     "summary": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
-    "notes": [
-      "Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.",
-      "Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination."
-    ],
-    "links": [
-      {
-        "label": "Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/8521468/"
-      },
-      {
-        "label": "RAG-1-deficient mice have no mature B and T lymphocytes.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/1547488/"
-      },
-      {
-        "label": "Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/24600447/"
-      },
-      {
-        "label": "EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/22918122/"
-      },
-      {
-        "label": "Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/20139091/"
-      }
-    ],
+    "notes": ["Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.","Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination.","Off-target RAG rearrangement must be interpreted in its cellular and sequence context. In the 2014 ETV6-RUNX1 acute lymphoblastic leukemia study, the authors found breakpoint recombination-signal motifs, junctional additions and enrichment at active B-development promoters and enhancers; single-cell analysis supported continuing rearrangement in the examined leukemias. This is evidence from that disease context, not a demonstration that RAG expression in any sampled cell proves active cutting or the same mechanism.","Different rearrangement paths can produce the same receptor amino-acid sequence. Influenza-specific mouse TCR-beta analysis and a separate human naive/memory CD8 T-cell study support convergent recombination and receptor sharing. The human study sampled four individuals; neither study establishes an individual cancer response. A shared receptor sequence or an expanded sequence count alone does not establish unique recent ancestry, antigen specificity or tumor killing."],
+    "links": [{"label":"Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.","url":"https://pubmed.ncbi.nlm.nih.gov/8521468/"},{"label":"RAG-1-deficient mice have no mature B and T lymphocytes.","url":"https://pubmed.ncbi.nlm.nih.gov/1547488/"},{"label":"Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.","url":"https://pubmed.ncbi.nlm.nih.gov/24600447/"},{"label":"EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.","url":"https://pubmed.ncbi.nlm.nih.gov/22918122/"},{"label":"Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access","url":"https://pubmed.ncbi.nlm.nih.gov/20139091/"},{"label":"Papaemmanuil and colleagues: RAG-associated rearrangement in ETV6-RUNX1 ALL","url":"https://pubmed.ncbi.nlm.nih.gov/24413735/"},{"label":"Venturi and colleagues: convergent recombination in influenza-specific mouse TCR-beta responses","url":"https://pubmed.ncbi.nlm.nih.gov/17130450/"},{"label":"Venturi and colleagues: human naive/memory CD8 TCR sharing, four individuals","url":"https://pubmed.ncbi.nlm.nih.gov/21383244/"}],
     "related": [
       "clonality-testing",
       "ig-tcr-clonality",
@@ -299,7 +260,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "germinal-centre-reaction"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-09",
     "category": "Biology & measurement"
   },
   {
@@ -317,38 +278,15 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
     "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
-    "notes": [
-      "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit."
-    ],
-    "links": [
-      {
-        "label": "EMBL-EBI: domains, motifs and disorder",
-        "url": "https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"
-      },
-      {
-        "label": "EMBL-EBI: AlphaFold2 confidence measures",
-        "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"
-      },
-      {
-        "label": "OpenStax Biology 2e: 3-4-proteins",
-        "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
-      },
-      {
-        "label": "EMBL-EBI: pLDDT local confidence",
-        "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"
-      },
-      {
-        "label": "EMBL-EBI: PAE and relative-region uncertainty",
-        "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"
-      }
-    ],
+    "notes": ["Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.","X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function."],
+    "links": [{"label":"EMBL-EBI: domains, motifs and disorder","url":"https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"},{"label":"EMBL-EBI: AlphaFold2 confidence measures","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"},{"label":"OpenStax Biology 2e: 3-4-proteins","url":"https://openstax.org/books/biology-2e/pages/3-4-proteins"},{"label":"EMBL-EBI: pLDDT local confidence","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"},{"label":"EMBL-EBI: PAE and relative-region uncertainty","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"},{"label":"RCSB PDB-101: experimental structure methods and their preparation, data and model limits","url":"https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"}],
     "related": [
       "protein",
       "structural-biology-infrastructure",
       "binding-affinity-and-kinetics"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-09",
     "category": "Biology & measurement"
   },
   {

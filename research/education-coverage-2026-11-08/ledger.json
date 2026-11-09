@@ -30,7 +30,7 @@
     {
       "version": "proposal-biology",
       "state": "implemented and locally validated in draft PR #375; not merged",
-      "recordSnapshotSha256": "9be5d1aad3a98221ef9dc74a8514cbac0bc273d95a208fc62376ff57697905dc"
+      "recordSnapshotSha256": "7c24d1de67dfc4511ddb020964003b4f8cfcd6dab86ae08e215c711095510ff8"
     },
     {
       "version": "proposal-therapeutic",
@@ -51,11 +51,11 @@
     "navigationReviewed": 4,
     "navigationWithTeachingContent": 1,
     "semanticallyReviewed": 65,
-    "implementedCoverage": 55,
+    "implementedCoverage": 62,
     "mainCoverage": 0,
-    "unresolvedContentItems": 469,
-    "unresolvedSources": 478,
-    "adjacentConcepts": 14,
+    "unresolvedContentItems": 462,
+    "unresolvedSources": 471,
+    "adjacentConcepts": 15,
     "unresolvedAdjacentConcepts": 3,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
@@ -2743,8 +2743,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -2777,7 +2777,7 @@
                 "recordId": "cell-division",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "fe541da6aaeddef489113deb68312a63fbf9fb8a31c3b7487f7abe7463e13dc2",
+                "fieldSha256": "aee53d4bee20a1cf7da95b690d6b99e322b7607758c6f3f8335d71e7c81b7775",
                 "explanation": "Retains the adult-mouse neuronal experimental example and its nonclinical scope."
               }
             ],
@@ -2792,7 +2792,7 @@
                 "recordId": "cell-division",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "fe541da6aaeddef489113deb68312a63fbf9fb8a31c3b7487f7abe7463e13dc2",
+                "fieldSha256": "aee53d4bee20a1cf7da95b690d6b99e322b7607758c6f3f8335d71e7c81b7775",
                 "explanation": "Separates arrest, death and production-versus-loss counts and bounds extrapolation from the experiment."
               }
             ],
@@ -2807,7 +2807,7 @@
                 "recordId": "cell-division",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "fe541da6aaeddef489113deb68312a63fbf9fb8a31c3b7487f7abe7463e13dc2",
+                "fieldSha256": "aee53d4bee20a1cf7da95b690d6b99e322b7607758c6f3f8335d71e7c81b7775",
                 "explanation": "The appended NCI-backed note separates side effects and proliferation-marker fractions from tumor response."
               }
             ],
@@ -2816,11 +2816,17 @@
           {
             "id": "durability",
             "requirement": "Separate a short-term growth difference from survivor regrowth and durable tumor control.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-division",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "aee53d4bee20a1cf7da95b690d6b99e322b7607758c6f3f8335d71e7c81b7775",
+                "explanation": "Appended note separates one-time growth/count effects, survivor regrowth and assay/model-limited clonogenic survival from clinical durability."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -3222,8 +3228,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -3264,7 +3270,7 @@
                 "recordId": "epithelium-and-stroma",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "cfce785888f0e0aff446547572198d0fa3fd3039f72f8a2dc043cd4cde69700e",
+                "fieldSha256": "e8bac6bab4d435f320dd77e4c7ab3b909e88a2177aa2d6e8dd47c8cd4483ea1f",
                 "explanation": "Explains cell-composition versus within-cell expression and requires attribution in mixed material."
               }
             ],
@@ -3273,11 +3279,17 @@
           {
             "id": "tissue-architecture",
             "requirement": "Interpret epithelial markers and tissue boundaries with architecture and context rather than as universal stand-alone malignancy or invasion tests.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "e8bac6bab4d435f320dd77e4c7ab3b909e88a2177aa2d6e8dd47c8cd4483ea1f",
+                "explanation": "Lineage stains are separated from architectural invasion assessment; epithelial carcinoma and site-specific SEER limits are explicit."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -4292,8 +4304,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -4319,7 +4331,7 @@
                 "recordId": "mutation",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "8723c0c18d070db4f4c91ab4cc6cc11b42cc6d0124c48ab6d658099a1124a8c2",
+                "fieldSha256": "4dc29ace795854ee7f8e70dd48f11c3075d7b881c73ac86b59a7a473de9ba637",
                 "explanation": "Separates DNA rearrangement, joined RNA, protein fusion and predicted consequences."
               }
             ],
@@ -4334,7 +4346,7 @@
                 "recordId": "mutation",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "8723c0c18d070db4f4c91ab4cc6cc11b42cc6d0124c48ab6d658099a1124a8c2",
+                "fieldSha256": "4dc29ace795854ee7f8e70dd48f11c3075d7b881c73ac86b59a7a473de9ba637",
                 "explanation": "Retains build/reference version, coverage/change classes and the distinct pathogenicity/origin/sensitivity questions."
               }
             ],
@@ -4343,11 +4355,17 @@
           {
             "id": "in-frame-indels",
             "requirement": "Explain that an in-frame coding insertion or deletion preserves the downstream reading frame without preserving every local amino acid or function.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mutation",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "4dc29ace795854ee7f8e70dd48f11c3075d7b881c73ac86b59a7a473de9ba637",
+                "explanation": "Frame preservation in a specified coding transcript is separated from local amino-acid/stop changes, functional preservation and predicted consequences."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -4724,8 +4742,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -4751,7 +4769,7 @@
                 "recordId": "vdj-recombination",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "58cc4f4aa288298296882f2a3abadf5d1a7f76f64bb0417288d76fc87f99966b",
+                "fieldSha256": "127c1ff3dcf102f90cef975b77d9df7fac9d2f094bf6e4b7254893c219a536ae",
                 "explanation": "Distinguishes productive assembly, expression/developmental selection and later antibody changes from recognition."
               }
             ],
@@ -4766,7 +4784,7 @@
                 "recordId": "vdj-recombination",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "58cc4f4aa288298296882f2a3abadf5d1a7f76f64bb0417288d76fc87f99966b",
+                "fieldSha256": "127c1ff3dcf102f90cef975b77d9df7fac9d2f094bf6e4b7254893c219a536ae",
                 "explanation": "Separates somatic receptor ancestry, RAG expression, active recombination and malignant diagnosis."
               }
             ],
@@ -4775,20 +4793,32 @@
           {
             "id": "rag-context",
             "requirement": "Retain the cellular and sequence context of off-target RAG rearrangements without treating RAG expression as proof of ongoing functional recombination.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vdj-recombination",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "127c1ff3dcf102f90cef975b77d9df7fac9d2f094bf6e4b7254893c219a536ae",
+                "explanation": "The RAG observation retains ETV6–RUNX1 ALL, breakpoint/active-B-context evidence and a limit on inference from expression alone."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "convergent-receptors",
             "requirement": "Explain why a shared or expanded receptor sequence alone does not establish unique ancestry, antigen specificity or tumor killing.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vdj-recombination",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "127c1ff3dcf102f90cef975b77d9df7fac9d2f094bf6e4b7254893c219a536ae",
+                "explanation": "Mouse influenza and four-person human CD8 sharing studies support convergence; sequence sharing/expansion does not alone prove ancestry, specificity or tumor killing."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -4874,8 +4904,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -4925,11 +4955,17 @@
           {
             "id": "damage-versus-variant",
             "requirement": "Distinguish a DNA lesion or damage response from a fixed sequence variant and the assays that measure each.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-term",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "817fc614c9b125743799f983e39d7a5ffdf2ed9b15b9a89c93c297b21551a1d4",
+                "explanation": "Lesion, stable sequence variant and a histone damage-response signal are different observations and assay questions."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -5443,8 +5479,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -5470,7 +5506,7 @@
                 "recordId": "protein-structure-and-domains",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "151821cbbc45c3b59ac82a50482da969fac37dadcaefd8f85a6a34e5337c1bc5",
+                "fieldSha256": "736574437d265f0c2a8c89c66f862870d6828cd7022a61fb92f760f09c2d35c7",
                 "explanation": "Scopes experimental structures to preparations/conditions and possible omissions."
               }
             ],
@@ -5485,7 +5521,7 @@
                 "recordId": "protein-structure-and-domains",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "151821cbbc45c3b59ac82a50482da969fac37dadcaefd8f85a6a34e5337c1bc5",
+                "fieldSha256": "736574437d265f0c2a8c89c66f862870d6828cd7022a61fb92f760f09c2d35c7",
                 "explanation": "Distinguishes local confidence from relative placement and rejects affinity/function/clinical interpretations of confidence scores."
               }
             ],
@@ -5494,11 +5530,17 @@
           {
             "id": "structure-methods",
             "requirement": "Identify X-ray crystallography, NMR and cryo-electron microscopy as different experimental routes with preparation and interpretation limits.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Supplemental general-teaching section read; canonical field match and any necessary primary-source-backed supplement remain to be checked."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein-structure-and-domains",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "736574437d265f0c2a8c89c66f862870d6828cd7022a61fb92f760f09c2d35c7",
+                "explanation": "Crystallography, NMR and cryo-EM retain preparation, data/model interpretation and local/missing-region validation limits."
+              }
+            ],
+            "remaining": []
           }
         ],
         "sectionHashes": [
@@ -6030,8 +6072,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded. Supplemental general teaching, worked examples and scope sections have also been read; newly identified requirements remain separately open. Personal-case sections are excluded. The already-read residual requirement is now checked against verified primary/official sources and current canonical fields; no additional curriculum reading is counted.",
         "points": [
           {
             "id": "requirement-1",
@@ -6103,11 +6145,24 @@
           {
             "id": "breast-receptor-classification",
             "requirement": "Distinguish the ER, PR and HER2 test classifications used in TNBC from absolute absence of receptor molecules and from mechanistic receptor-family labels.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The current TNBC introduction describes negative test classifications as absent receptors. Resolve against the relevant receptor-testing guidance in the breast-cancer review, without inferring treatment eligibility from this signaling comparison."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tnbc",
+                "version": "proposal-biology",
+                "field": "tldr",
+                "fieldSha256": "e0cc14b5bbb65d6ff31a6cdd45039a94052abdd0cd591072f84f71e2c125614f",
+                "explanation": "Canonical cancer introduction now defines negative test categories without asserting complete receptor absence; this proof concerns classification rather than the other unrevalidated clinical sections."
+              },
+              {
+                "recordId": "er-pr-negative-threshold",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
+                "explanation": "ASCO/CAP thresholds, validity and ER-specific low-positive reporting are distinguished from selected observational cohort outcomes and current protocol eligibility."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "normal-targets",
@@ -47265,6 +47320,46 @@
                 "field": "notes",
                 "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
                 "explanation": "The same owner now carries the negative antibody-delivery experiment, the candidate-pair limit and the separately dosed registry design."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "diagnostic-categories-and-cohort-equivalence",
+      "title": "Diagnostic categories and observational cohort comparisons",
+      "domain": "measurement",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/31928404/",
+        "https://pubmed.ncbi.nlm.nih.gov/35817765/",
+        "https://pubmed.ncbi.nlm.nih.gov/34341356/",
+        "https://pubmed.ncbi.nlm.nih.gov/38745990/"
+      ],
+      "discoveryOccurrences": [
+        "primary-follow-up:31928404",
+        "primary-follow-up:35817765",
+        "primary-follow-up:34341356",
+        "primary-follow-up:38745990"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility.",
+        "points": [
+          {
+            "id": "classification-versus-comparison",
+            "requirement": "Keep assay classifications, selected observational outcomes, historical national practice and current treatment/protocol eligibility distinct; a nonsignificant difference does not establish equivalence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "er-pr-negative-threshold",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
+                "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
               }
             ],
             "remaining": []

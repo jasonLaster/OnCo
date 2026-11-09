@@ -442,14 +442,14 @@ const her2PositivePatch: Spike["patch"] = {
 };
 
 const tnbcPatch: Spike["patch"] = {
-  asOf,
+  asOf: "2026-11-09",
   aka: ["ER negative PR negative HER2 negative", "all three receptors negative", "receptor negative breast cancer", "grade 3 triple negative breast cancer", "ER- PR- HER2- breast cancer"],
   terms: ["grade-stage-receptor-breast", "nottingham-grade", "er-pr-scoring-breast", "her2-testing-uk-breast", "receptor-conversion-breast", "tnm-breast-cancer-editions", "who-breast-classification", "nottingham-prognostic-index"],
   // SRC.seerSubtypes is not repeated here: src/data/spikes/tnbc-core.ts already carries the same SEER
   // breast-subtypes URL on this record under its own label, and two labels on one URL is a duplicate React key.
-  links: [SRC.g148],
+  links: [SRC.g148, { label: "NCI: tumor grade and its relation to other clinical features", url: "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/tumor-grade" }],
   notes: [
-    "What this page is called on a report, and why grade 3 does not send you anywhere else. Triple-negative means the oestrogen receptor under 1 percent, the progesterone receptor under 1 percent and HER2 scored 0 or 1+, or 2+ without amplification. Most triple-negative cancers are also grade 3, and a grade is not a page: someone told 'grade 3, triple negative' has been told one thing that chooses the page and one thing that does not. Grade 3 is expected here rather than alarming on top of the diagnosis, and the grade still matters, because it feeds the Nottingham Prognostic Index and the American prognostic stage. An oestrogen receptor figure of 1 to 10 percent is not triple-negative on paper but behaves like it, and those patients are excluded from most triple-negative trials.",
+    "Receptor classification, grade and stage describe different features. Triple-negative refers to the ER, PR and HER2 test results; grade describes microscopic features, and stage describes extent together with the factors in the applicable staging system. A grade does not replace receptor testing or establish an individual prognosis. ER 1 to 10 percent is ER Low Positive under ASCO/CAP criteria, with limited endocrine-benefit evidence; it should not be relabelled ER-negative from an average cohort comparison. Trial entry rules require the actual protocol.",
   ],
 };
 

@@ -640,5 +640,45 @@
         }
       ]
     }
+  },
+  {
+    "id": "diagnostic-categories-and-cohort-equivalence",
+    "title": "Diagnostic categories and observational cohort comparisons",
+    "domain": "measurement",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/31928404/",
+      "https://pubmed.ncbi.nlm.nih.gov/35817765/",
+      "https://pubmed.ncbi.nlm.nih.gov/34341356/",
+      "https://pubmed.ncbi.nlm.nih.gov/38745990/"
+    ],
+    "discoveryOccurrences": [
+      "primary-follow-up:31928404",
+      "primary-follow-up:35817765",
+      "primary-follow-up:34341356",
+      "primary-follow-up:38745990"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "The receptor requirement exposed repeated categorical equivalence in the canonical parent and linked threshold term. The guideline and three cohorts were independently resolved and their complete available MED abstracts read; selected-cohort null comparisons are not universal equivalence or current trial eligibility.",
+      "points": [
+        {
+          "id": "classification-versus-comparison",
+          "requirement": "Keep assay classifications, selected observational outcomes, historical national practice and current treatment/protocol eligibility distinct; a nonsignificant difference does not establish equivalence.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "er-pr-negative-threshold",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "a59e8e87f5b5b7cb06804caaddbf93fb3dd1153ca57c5b8b06e45f6686babbe5",
+              "explanation": "Preserves the three cohort populations/endpoints while separating their null statistical comparisons from guideline categories, individual benefit and current eligibility."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
   }
 ]

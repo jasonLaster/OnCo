@@ -9,16 +9,16 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 9 |
 | Teaching sources fully read (including one navigation shelf) | 65 |
-| Reviewed sources completely represented in drafts | 55 |
-| Reviewed sources retaining requirements | 10 |
+| Reviewed sources completely represented in drafts | 62 |
+| Reviewed sources retaining requirements | 3 |
 | Content sources unread | 459 |
 | Curriculum requirements | 271 |
-| Requirements with field evidence | 252 |
-| Curriculum requirements open | 19 |
+| Requirements with field evidence | 260 |
+| Curriculum requirements open | 11 |
 | New terms in draft #375 | 24 |
-| Existing owners updated in draft #375 | 69 |
+| Existing owners updated in draft #375 | 71 |
 | Reviewed-source completion on pinned main | 0 |
-| Adjacent concepts represented in drafts | 11 |
+| Adjacent concepts represented in drafts | 12 |
 | Adjacent concepts open | 3 |
 | Declared literature occurrences | 218 |
 | Literature occurrences screened | 113 |
@@ -41,3 +41,5 @@ Next work includes remaining payload comparison/chemical profiles, the existing 
 The [9 November recovery](artifact-recovery-2026-11-09.json) restores the pinned baseline, 11 education responses and 39 older payload captures byte-exactly, and replaces lost visual-review images with 32 new matched SSR captures in persistent storage. Four newer Elicit response bodies and newer temporary-only primary captures remain unavailable. This changes custody status and the review-pack location, not content coverage.
 
 The [access completion](access-completion-2026-11-09/scope.json) closes five requirements at four existing owners without additional curriculum reading. All 11 authored notes were checked in the current rendered pages. Validate, restored-lock typecheck, four-file lint, 56 focused tests and the fresh 282-file/2,821-test suite pass with two existing skips. Dependencies were installed once outside Git from the unchanged lock and symlinked only into owned checkouts; no test floor or budget changed.
+
+The [biology completion](biology-completion-2026-11-09/scope.json) closes eight existing requirements and one newly surfaced cohort/classification finding. Twelve publication identities and their complete available MED abstracts were read. The 95 current owners and five TNBC section components pass source/date/anchor checks; changed reader text was read directly. After fixing authored punctuation and replacing an obsolete Ask assertion requiring receptor absence, the fresh full suite passes 282 files and 2,821 tests with two existing skips. Questions, expected entities, scoring, floors and budgets remain unchanged.

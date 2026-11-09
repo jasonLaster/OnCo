@@ -322,6 +322,9 @@ class Decomposer {
 
   /** Antigen-like targets: the record's own first (high), else those the prose names (medium), else an "anti-X" the mechanism spells out (low, no page). */
   private antigens(d: Drug, opts: { allowProse?: boolean } = { allowProse: true }): { ids: string[]; names: string[]; confidence: Confidence; from: string[] } {
+    // A scoped composition separates the delivery address from the cargo's molecular targets. Do not
+    // reintroduce those targets through legacy prose or backlinks when the delivery address is unstated.
+    if (d.conjugateComposition) return { ids: d.conjugateComposition.deliveryTargetIds ?? [], names: [], confidence: "high", from: ["conjugateComposition.deliveryTargetIds"] };
     const own = d.targets.filter((t) => !NOT_ANTIGEN.has(t));
     if (own.length) return { ids: own, names: [], confidence: "high", from: ["targets"] };
     const back = this.targetsNaming(d.id);
@@ -353,6 +356,32 @@ class Decomposer {
 
   private payload(d: Drug): { payload?: Resolved; payloadClass?: Resolved; dar?: Resolved } {
     const out: { payload?: Resolved; payloadClass?: Resolved; dar?: Resolved } = {};
+    if (d.conjugateComposition) {
+      const parts = d.conjugateComposition.payloads;
+      // Keep a multi-cargo construct as one bundle, rather than assigning its development/approval state
+      // to each single-payload combination. Unlinked chemical identities stay local to their drug.
+      const chemicals = parts.map(p => ({ id: p.chemical.entityId ?? `${d.id}-${p.id}`, name: p.chemical.name }));
+      const join = (key: "payload" | "payloadClass", values: Array<{ id: string; name: string }>, field: string): Resolved | undefined => {
+        if (!values.length) return undefined;
+        const unique = [...new Map(values.map(v => [v.id, v])).values()].sort((a, b) => a.id.localeCompare(b.id));
+        return { key, id: unique.map(v => v.id).join("+"), name: unique.map(v => v.name).join(" + "),
+          href: unique.length === 1 ? this.entityHref(unique[0].id) : undefined,
+          confidence: "high", from: [field], ...(parts.length > 1 ? { detail: "Reported together on one construct; no component ratio inferred" } : {}) };
+      };
+      out.payload = join("payload", chemicals, "conjugateComposition.payloads[].chemical");
+      // A class is unresolved if any cargo lacks its class; a partial list must not stand for the bundle.
+      if (parts.every(p => p.classIds?.length)) {
+        out.payloadClass = join("payloadClass", parts.flatMap(p => p.classIds!.map(id => ({ id, name: this.g.must(id).name }))), "conjugateComposition.payloads[].classIds");
+      }
+      // A single scoped mean can be shown exactly. Do not round it, add unlike observations, select a lot
+      // from several, or borrow a total DAR from prose to invent per-cargo loading.
+      const loads = parts.length === 1 ? parts[0].loadingObservations : undefined;
+      if (loads?.length === 1 && loads[0].unit === "payload-molecules/antibody") {
+        const l = loads[0];
+        out.dar = this.named("dar", { id: String(l.value), name: `Mean loading ${l.value}` }, "high", ["conjugateComposition.payloads[].loadingObservations"], [], `${l.unit}. ${l.scope}`);
+      }
+      return out;
+    }
     const reg = this.payloadByDrug.get(d.id);
     const classFor = (cls: keyof typeof PAYLOAD_CLASSES) => PAYLOAD_CLASSES[cls];
     if (reg) {
@@ -732,7 +761,9 @@ export function engine(): Engine {
     const missingA = !components[def.axes[0]];
     if (missingA) {
       const missing = def.components.filter((k) => !components[k]);
-      bucket.unresolved.push({ id: d.id, name: d.name, route, format: cl.format, modality: d.modality, missing, why: `No ${COMPONENT_LABEL[def.axes[0]].toLowerCase()} on the record: the targets field is empty and the modality and mechanism text name none the corpus knows.` });
+      bucket.unresolved.push({ id: d.id, name: d.name, route, format: cl.format, modality: d.modality, missing, why: d.conjugateComposition
+        ? `No ${COMPONENT_LABEL[def.axes[0]].toLowerCase()} on the record's scoped composition; legacy targets and prose are not substituted for its delivery address.`
+        : `No ${COMPONENT_LABEL[def.axes[0]].toLowerCase()} on the record: the targets field is empty and the modality and mechanism text name none the corpus knows.` });
       continue;
     }
     const resolved = Object.values(components) as Resolved[];

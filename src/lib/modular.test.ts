@@ -96,6 +96,24 @@ describe("decomposer coverage", () => {
     const deg = by("degrader");
     expect(deg.drugs.find((d) => d.id === "lenalidomide")!.components.ligase?.id).toBe("cereblon");
   });
+
+  it("keeps dual cargo together, separates its delivery antigen and preserves exact scoped loading", () => {
+    const adc = by("adc");
+    const dual = adc.drugs.find(d => d.id === "clio-8221")!;
+    expect(dual.components.target?.id).toBe("her2");
+    expect(dual.components.target?.id).not.toContain("atr");
+    expect(dual.components.payload?.name).toContain("Exatecan");
+    expect(dual.components.payload?.name).toContain("Berzosertib");
+    expect(dual.components.payload?.href).toBeUndefined();
+    expect(dual.components.payloadClass?.id).toBe("atr-chk1-inhibitors+topoisomerase-i-payloads");
+    expect(dual.components.dar).toBeUndefined();
+    // The dual construct is not counted as a single-cargo medicine in either grid cell.
+    expect(adc.cells.filter(c => c.drugs.some(d => d.id === dual.id)).map(c => c.b.id)).toEqual([dual.components.payloadClass!.id]);
+    const dm1 = adc.drugs.find(d => d.id === "trastuzumab-emtansine")!;
+    expect(dm1.components.dar?.id).toBe("3.5");
+    expect(dm1.components.dar?.detail).toContain("payload-molecules/antibody");
+    expect(dm1.components.payload?.id).toBe("dm1");
+  });
 });
 
 describe("permutation grid", () => {

@@ -494,5 +494,112 @@
         }
       ]
     }
+  },
+  {
+    "id": "dual-payload-mechanism-count",
+    "title": "Cargo count, mechanism count and release timing",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://doi.org/10.1158/1538-7445.AM2024-2600",
+      "https://pubmed.ncbi.nlm.nih.gov/41121984/"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:draft-369"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read independently resolved conference and primary abstracts and the resulting rendered owner; retain preliminary/model scope. Source identities are recorded in draft #369 follow-up metadata.",
+      "points": [
+        {
+          "id": "count-and-timing",
+          "requirement": "Distinguish two chemical cargoes from two mechanism classes, and co-attachment from simultaneous release.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "dual-payload-adc",
+              "version": "draft-369",
+              "field": "notes",
+              "fieldSha256": "d95dca728f200ae00f89cd61d567109e81e6868718f73a679a1924709ce9dc0e",
+              "explanation": "Retains two TOP1-cargo conference evidence and sequential exatecan/triptolide release as separate model observations."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "registry-internal-eligibility-conflict",
+    "title": "Conflicting eligibility fields within one registry record",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://clinicaltrials.gov/study/NCT07529782"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:draft-369"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Direct registry response and the semantic trial response were compared. The educational disclosure is represented; external correction or protocol confirmation is still needed for an unambiguous real eligibility determination.",
+      "points": [
+        {
+          "id": "retain-conflict",
+          "requirement": "Retain contradictory structured and narrative eligibility fields, without inventing a corrected age or blaming a discovery result that reflects the source.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "pamlectabart-tismanitin",
+              "version": "draft-369",
+              "field": "notes",
+              "fieldSha256": "293cf95a921a14d61161aedfb3ce8b6703d8092fe45726d0482e3ad97f110504",
+              "explanation": "Discloses maximumAge=18 versus narrative age-at-least-18 and leaves eligibility confirmation to protocol/study team."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "payload-chemical-identity-vs-class",
+    "title": "Chemical identity and derivative inference in payload consumers",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://pubchem.ncbi.nlm.nih.gov/compound/151115",
+      "https://pubmed.ncbi.nlm.nih.gov/31620223/"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:draft-369"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse.",
+      "points": [
+        {
+          "id": "identity-and-consumers",
+          "requirement": "Keep exact chemicals, derivatives and class-level properties distinct throughout data and decomposition.",
+          "status": "partial",
+          "evidence": [
+            {
+              "recordId": "exatecan",
+              "version": "draft-369",
+              "field": "summary",
+              "fieldSha256": "c676d6ddfa2881d7afd50a686127e1dbfc75a90fd49c0e636cad4efbf1a980d3",
+              "explanation": "Existing owner now identifies exatecan, rather than treating DXd and all derivative systems as aliases."
+            }
+          ],
+          "remaining": [
+            "Legacy modular rules map Ed-04/brengitecan to the exact exatecan id; repair in the product proposal with scoped regression tests.",
+            "Remaining legacy comparison rows require exact-chemical and released-species verification."
+          ]
+        }
+      ]
+    }
   }
 ]

@@ -35,7 +35,12 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "bb8b48fea674192e9e8e1bb1fda600b92a92c0a993c1da66bd9f2e1ec6f21eb8"
+      "recordSnapshotSha256": "8487e419d1bc5157971ded4372f4a8f9f2bbfc33a27954801ceb36a134cd24bc"
+    },
+    {
+      "version": "draft-376",
+      "state": "Open draft product proposal; owner approval and upstream preview pending; not merged",
+      "recordSnapshotSha256": "a331c408635bb325d3d10fab314d62381125ae6cbd754597a7f9d1be5e36a960"
     }
   ],
   "stats": {
@@ -45,13 +50,13 @@
     "navigation": 14,
     "navigationReviewed": 0,
     "navigationWithTeachingContent": 0,
-    "semanticallyReviewed": 54,
-    "implementedCoverage": 35,
+    "semanticallyReviewed": 59,
+    "implementedCoverage": 40,
     "mainCoverage": 0,
-    "unresolvedContentItems": 488,
-    "unresolvedSources": 502,
-    "adjacentConcepts": 3,
-    "unresolvedAdjacentConcepts": 0,
+    "unresolvedContentItems": 483,
+    "unresolvedSources": 497,
+    "adjacentConcepts": 9,
+    "unresolvedAdjacentConcepts": 2,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
     "readyForFinalReaudit": false
@@ -30359,7 +30364,8 @@
               }
             ],
             "remaining": [
-              "Reconcile all named family/subtype owners, new standalone repair-inhibitor reports and the pinned public payload review; do not infer exhaustive proprietary-molecule coverage."
+              "Reconcile all named payload family/subtype owners and standalone repair-inhibitor reports. An earlier review path was not found in the pinned public tree; do not assume its provenance or depend on it as a public source.",
+              "The canonical exatecan-family TL;DR still makes broad free-drug toxicity and post-ADC switching assertions; reconcile this owner rather than assuming the corrected cross-resistance parent repairs it."
             ]
           },
           {
@@ -32662,8 +32668,100 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, figure-caption, measurement, practice and source-scope section at the pinned source. Personal-case material excluded. These are requirements to assess, not claims that the curriculum or corpus is clinically validated. Canonical field matches and independent source checks remain open.",
+        "sectionHashes": [
+          "88082d564670073c6fa57f95671a7f08ca755e966d5408390e714b3ef93508de",
+          "88952f2c84e63932e4841c84fb7c7a50a3df0476974443fbcd3f58ce3f34cdcd",
+          "5295fd1b9c52d331cd187f687758de0c21e51f3749999a7f99ee92da542b06af",
+          "80c28a467305e8e33f29ff784499f7211e27a6eaed00e61793a36b7fa27c7807",
+          "4f20cbd08a955340a951340b8f31a5a5336bf96213e6e564ca9b27b0ac8097d5",
+          "f553394ef941781c61e4e6c971319845098db2930e092e7601ef2e264ce30eb8",
+          "0931d46133905e66be1d3c5193c6e3353c63cff9a3a46a46140f4042902a7e7b",
+          "0eaecf72abe87a78c6b447abfd9fe76a54f3782ac616e994c0e4ddd767eaa705",
+          "7da381a46c918bceba3644b5d6188ded8c62311b9a2bfc50a6150612066a511a",
+          "9e23fd768d67cba4588eb1beece2f31ed580377593aa5d316fecb743da77975e",
+          "8aaa93c480ce02d43400ab1b59315060baa82c288febd83624983d0ca5bfff90"
+        ],
+        "points": [
+          {
+            "id": "added-function",
+            "requirement": "Define armoring by the exact added cytokine, receptor variant or response program, including continuous, induced or surface-held support; do not treat a dominant-negative receptor as a gene deletion.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "armored-car",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "a810abdace2a0e46f82130d067c626439fb28d4b041e3e2aa152bada9a630099",
+                "explanation": "Names continuous/induced/surface-held support and distinguishes a receptor variant from gene deletion."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "specific-barrier",
+            "requirement": "Separate resistance to one suppressive signal from antigen coverage, tumor access, activity in other inhibitory environments and protection of healthy tissues.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "armored-car",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "a810abdace2a0e46f82130d067c626439fb28d4b041e3e2aa152bada9a630099",
+                "explanation": "Separates a specific inhibitory response, antigen coverage, access and healthy-tissue safety."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "truck-induction",
+            "requirement": "Explain antigen-triggered NFAT/IL-12 TRUCK designs and indirect recruitment without redefining the CAR target or treating universal in the name as universal killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "armored-car",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "57bfcb16898daa8a380c81702d45cded062c8a90f3ab8041dc3fee9147d90edc",
+                "explanation": "Retains TRUCK terminology, NFAT induction, indirect macrophage effects and the limitation of universal in the name."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "distribution-harm",
+            "requirement": "Separate local triggering from local-only cytokine exposure; retain whole-product serious harms and the limits of attributing combination-construct outcomes to one component.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "armored-car",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "57bfcb16898daa8a380c81702d45cded062c8a90f3ab8041dc3fee9147d90edc",
+                "explanation": "Separates triggering and distribution; keeps combined-construct attribution and the distinct prostate/melanoma clinical harms scoped."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "matched-evaluation",
+            "requirement": "Require matched with/without-function controls, suppressive conditions, healthy targets and separate cytokine, cell-count and killing readouts; expansion alone does not establish safety or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "armored-car",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "57bfcb16898daa8a380c81702d45cded062c8a90f3ab8041dc3fee9147d90edc",
+                "explanation": "Names matched feature controls, repeated stimulation, healthy targets and distinct concentration/count/killing endpoints."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32737,8 +32835,107 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, figure-caption, measurement, practice and source-scope section at the pinned source. Personal-case material excluded. These are requirements to assess, not claims that the curriculum or corpus is clinically validated. Canonical field matches and independent source checks remain open.",
+        "sectionHashes": [
+          "aa75053c800a033d52c05758954b6d3d21ed7099f028f1c09a828a93d383c566",
+          "853a996714bcb52fcc1d97166ab8bf8882490d9ea684a4c56e54545b90374eb5",
+          "bd7d53e75280207dd09125ab4b70e5a610bdb685595d9fa8a844a6ca73bdbf32",
+          "b6dac38d7939134c965869ac02527f60a17dfbd531bab3c16aff9d9f3b3404ee",
+          "3618efabd8ab3e17b2b411019f1da9c34e272f94528df3629ae34a29c7358e9a",
+          "f035d9896c4b6ae1134b512074f6f23024b2ff08cd9f7e531e7ff3290b866bd6",
+          "45f3f8f9d56599893cfcb5ab9ffd41e5fd41378fa939c637c0aadaef4bb0ce1c",
+          "5d99347f886816e6ef0bae99a488451195783397960e497eea4f67e372b473a1",
+          "1e0489809688cd151207ecf6a0782d20035dc2c58e9517d54239177ed60bf2af",
+          "b3fc0c2b88f364f0bb37e8eaa89185f03da1b8b27b5336f9858d2d9f058e3c36",
+          "0e5f498b03ff9cda7825c0aadf16e8a4c1282f4e241b12800d68c5ae3adda3e0"
+        ],
+        "points": [
+          {
+            "id": "receptor-parts",
+            "requirement": "Distinguish the CAR protein, its encoding instructions and the living carrier; locate binder, spacer, membrane anchor and intracellular signaling domains.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+                "explanation": "Distinguishes the protein, its encoding instructions and the living carrier; names all four connected parts."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "target-recognition",
+            "requirement": "Distinguish ordinary accessible-antigen CAR recognition from conventional peptide-HLA TCR recognition while retaining specialized peptide-HLA CAR exceptions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "3975f65196e1fe400c3ea6a6b26ef05db2652bda5e58de6d77f6bfd3f369a64d",
+                "explanation": "Qualifies conventional peptide-HLA-independent recognition."
+              },
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "explanation": "Names the verified WT1/HLA-A*02:01 preclinical exception."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "architecture-ranking",
+            "requirement": "Explain first-, second- and third-generation signaling arrangements and variable later-generation labels without ranking clinical benefit by domain count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "explanation": "Defines common first/second/third-generation arrangements and variable later labels without ranking clinical benefit."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "domain-context",
+            "requirement": "Treat CD28/4-1BB, spacer geometry and baseline signaling as construct-specific experimental comparisons rather than universal speed, persistence or safety rules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "explanation": "Keeps CD28/4-1BB metabolism, co-infused product kinetics and spacer/Fc experiments in their actual study contexts."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "causal-comparison",
+            "requirement": "Separate binding, receptor expression, activation and killing; identify confounded multi-component comparisons and retain healthy-tissue recognition and matched controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "explanation": "Separates binding, surface expression, activation, proliferation and killing and specifies matched/healthy-tissue controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32813,8 +33010,114 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, figure-caption, measurement, practice and source-scope section at the pinned source. Personal-case material excluded. These are requirements to assess, not claims that the curriculum or corpus is clinically validated. Canonical field matches and independent source checks remain open.",
+        "sectionHashes": [
+          "1f5c96ce0b3ad5708242caa8783a7baec20a763b56ca5eb8459ff1439159bd1f",
+          "541347c9001b111b935078214d9aa265313feba8bff52e55b60d7e69157e6da3",
+          "64dc2901b42f52d9fd4cc42f98f723561e6046905208004d19a8ff5203217c35",
+          "cd5128fc8fed013ea9345f6c20f26c6ca7c100f49a26f776d9e6df5e6f106225",
+          "5ff73deff696c0eefda289902f5d57ee9f9e0f0649bbc871354923e8f81e96f3",
+          "4b29cc4de7bfd967b180b84e2977fd9986442bd9cd784128c51724d17ea973b0",
+          "605f95d6146459e8e95df4155f9990e9867b08d0c9c8219693c5a63ac05ed97b",
+          "4229373120ba6fedbd7b03e5ea19c84e1eb75eee571d5efedbe7c5080eed6b41",
+          "a2f31132b7fad1e126c8611b1e4a2e803e4dbe5efab5799b5f4f1632fa7c4ec3",
+          "ee5635459c2830aa9020b879ed91ad3b81faaada5739c184c63ec84cd4782b79",
+          "34b0cb0ee196535e3ae7e52b0ca478e6f5f91cd8e02a1bc07b961662cfb04b54"
+        ],
+        "points": [
+          {
+            "id": "native-inputs",
+            "requirement": "Describe an added CAR input alongside native NK activation, inhibition and education; reduced HLA display does not guarantee killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "76399fb65fee32c616b9dacde556311ee386d46cff405b81511240ae4aed61cf",
+                "explanation": "Separates native NK inhibition/activation and education, missing self and the added CAR."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "cell-source",
+            "requirement": "Distinguish donor blood, cord blood, iPSC-derived NK cells and irradiated NK-92 line products; irradiation limits division and prevents transferring source-specific persistence assumptions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "7762e8815cab445b09db3d46ce3dc1d8f45cc89502f502e108ed5a64693a8b66",
+                "explanation": "Names different starting-material categories."
+              },
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "76399fb65fee32c616b9dacde556311ee386d46cff405b81511240ae4aed61cf",
+                "explanation": "Retains irradiated NK-92 processing separately from cytokine-supported cord-blood persistence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "engineered-support",
+            "requirement": "Retain IL-15/safety-switch construct context and separate detectable persistence from useful function; do not assign every NK product a uniformly short lifespan.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "76399fb65fee32c616b9dacde556311ee386d46cff405b81511240ae4aed61cf",
+                "explanation": "Retains the combined IL-15/caspase-9 construct and its observed low-level detection."
+              },
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bc11ee02882ff37f70160df15abc1ba4433cd9660cfbe80f14f4dc7b346944d8",
+                "explanation": "Separates marker detection, viable receptor-positive cells, location and useful activity."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "compatibility-safety",
+            "requirement": "Separate absence of a conventional TCR from universal compatibility or absence of rejection, contamination, inflammatory or neurologic risk; NK and NKT are different families.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "76399fb65fee32c616b9dacde556311ee386d46cff405b81511240ae4aed61cf",
+                "explanation": "Qualifies absent conventional TCR, native-cell family and zero-risk/compatibility generalizations."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "attribution-assays",
+            "requirement": "Use matched CAR-positive/negative effector and target pairs, native-receptor perturbations and source/time/ratio context to separate native NK activity, CAR binding, cytokine release and completed killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-nk-macrophage",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "76399fb65fee32c616b9dacde556311ee386d46cff405b81511240ae4aed61cf",
+                "explanation": "Includes matched effector/target pairs, independent native-receptor perturbation controls, ratios/times and distinct functional endpoints."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32888,8 +33191,100 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, figure-caption, measurement, practice and source-scope section at the pinned source. Personal-case material excluded. These are requirements to assess, not claims that the curriculum or corpus is clinically validated. Canonical field matches and independent source checks remain open.",
+        "sectionHashes": [
+          "469ff449dbbd8ce0b66c83ec270809821d906127a6901d0d3437fcc5f68eb9a8",
+          "a2d98c43e545de9be4eeffabe3a15b1da0dd7fd5c8b41e92800b341d3daa167b",
+          "532ec9cfd79a3fe4a3e50479e6513ee3e9e3eed74b8c900fea8ceddc57e53081",
+          "fd9a1818eb9741e87600fd72d7603a0fdf1707e1e969424249085d44b2dac7d3",
+          "db64c53eb1a2b0c04bdf38b5ab533e2b132f58415e7b4ff938024ee945f53f6b",
+          "eaccad968bfa5dda17d9b026ae81432fc4f0724ec10e67abae181a77e2a8ca92",
+          "da32ff973db3cd3992db8302d5c474b60245ba873479ba992f6f9f5af561f203",
+          "5ea32396fe30f83b9d34da188d73036ddee95d424bedb0ae99f0738398a53b46",
+          "8b28ac08d88dd7cd5a558447ea57c7070f5561152b2f17eceb239844de8cf143",
+          "02f357386fd7d49440d1ea870f3a25d7609f0eace17edd3d15ac1f31db74a2f7",
+          "573793b95b28c88599b98844441686e41340c3ba425cff00cde337385f3f5202"
+        ],
+        "points": [
+          {
+            "id": "dose-dynamics",
+            "requirement": "Separate initial cell dose from subsequent division, survival, redistribution and continued in-vivo generation; sampled blood concentration is not a total-body cell count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "bc11ee02882ff37f70160df15abc1ba4433cd9660cfbe80f14f4dc7b346944d8",
+                "explanation": "Separates initial dose, division/survival/redistribution, possible ongoing generation and sampled-compartment abundance."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "source-engineering",
+            "requirement": "Separate ex-vivo versus in-vivo engineering from autologous versus allogeneic cell source; an off-the-shelf delivery product can generate autologous cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Explicitly defines autologous/allogeneic and keeps that axis separate from in/ex vivo engineering and carrier availability."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "persistence-function",
+            "requirement": "Separate marker persistence, viable surface-expressing cells, tumor entry and useful function; sequence copy number is not automatically a viable functional cell count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "A genetic sequence measurement is not a count of viable, surface-expressing functional cells; separates detection from useful function."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "denominators",
+            "requirement": "Keep time, compartment, method, percentage denominator and absolute concentration together; a falling receptor-positive fraction can coexist with unchanged absolute concentration.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Keeps method/time/compartment/units and denominator; explains a declining fraction with unchanged absolute concentration."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "control-and-harm",
+            "requirement": "Explain why stopping administration does not instantly remove engineered cells or prior injury, and why a specified safety switch is not an antidote to every harmful effect.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Stopping administration, cell elimination, receptor shutoff and treating downstream injury are different control questions."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32966,8 +33361,107 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, figure-caption, measurement, practice and source-scope section at the pinned source. Personal-case material excluded. These are requirements to assess, not claims that the curriculum or corpus is clinically validated. Canonical field matches and independent source checks remain open.",
+        "sectionHashes": [
+          "fc69d00131236930c7826caad3e22bdc25561736e8ff012fcabf378082d2a926",
+          "fb89539c51054fe819c7e09c3a7f0bc07d6b8fbe40899f286e3f409a9a3dbf33",
+          "e4e45b77767a333eea7f909b8623e42923932d1c082a009e94c4dd81036e1d2a",
+          "830f0e2f70ee07b32ea3cde2534da6cf470987e38ddf59432bb49da6374d51c5",
+          "c930449352b5c8263d1e44cfb1b36ba8716ef3f6d9b3413c08022fa54632a18d",
+          "30422245d02b75a569819f160678fe0e1c6f30e6e3fc0b7f8395552dcd9e68e6",
+          "0ec490c8a0a1e530aa099f48b6f98b7baf1fd9115c19f98be4d01b2605ffebdc",
+          "af1cd8b314c8d395a121186007e60c8fdd1db8758215063e31b054eb66c8a42e",
+          "388ee3baa05636f966f0f5d1a850dab91989982efa2624a05ea64f93a760cab4",
+          "385ed50965c9f2adb53c51fc56ed215efb33e815c99fdcfae921483f3c472b4f",
+          "aa0b3a2d568e947e2659334934cbd902079c92a53901e8ffa64bb3fd00903c46"
+        ],
+        "points": [
+          {
+            "id": "and-or-distinction",
+            "requirement": "Distinguish split/tuned activation-costimulation AND-like designs from OR-like either-target coverage; two fully activating CARs do not establish AND selectivity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Explains tuned split signaling versus either-target recognition and rejects two fully activating CARs as sufficient AND logic."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "not-inhibition",
+            "requirement": "Describe antigen-driven inhibitory recognition separately from externally triggered cell elimination, retaining expression and antigen-density dependence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Separates inhibitory recognition from externally activated elimination and retains signal-balance dependence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "sequential-memory",
+            "requirement": "Explain synNotch induction of a second receptor over time, persistence after priming and movement between tissues rather than simultaneous same-cell AND recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Describes induction/decay and the actual bystander-sparing mouse result without turning it into universal clinical safety."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "failure-matrix",
+            "requirement": "Test every missing-input combination, low density, mixed cells, healthy tissue and repeated/separated encounters; a printed truth table is a design hypothesis, not a safety result.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Names all missing-input combinations, density, mixtures, repeated/sequential contacts and healthy-tissue controls."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "outcomes-and-tradeoffs",
+            "requirement": "Separate activation, proliferation and killing with units, times and assay costs; stricter gates may miss tumor cells while broader OR recognition may add normal-tissue targets.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Separates activation, proliferation and killing with units, timing and preparation."
+              },
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "465d4ec036558ee7a159869fa4faeb131ab3631417f8e18aff7c8b207bdb6883",
+                "explanation": "Names loss of coverage with stricter gates and added normal-tissue routes with broader OR recognition."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -45345,6 +45839,217 @@
               }
             ],
             "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "endogenous-promoter-payload-control",
+      "title": "Control of cell payloads by endogenous promoters",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/40604285/",
+        "https://pubmed.ncbi.nlm.nih.gov/35316028/"
+      ],
+      "discoveryOccurrences": [
+        "cell-therapies:1"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+        "points": [
+          {
+            "id": "endogenous-versus-synthetic",
+            "requirement": "Distinguish endogenous-locus payload control from a separate synthetic response-element promoter.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "endogenous-promoter-payload-control",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "21a5f05217eae13e48654e1e88986e2e5881b6f3e04ee098650c568976572a4a",
+                "explanation": "Separates the CRISPR-locus study from the synthetic NR4A-responsive promoter experiment."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "expression-exposure",
+            "requirement": "Keep induced expression, secretion, distribution and benefit/safety separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "endogenous-promoter-payload-control",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "c223c75d7d4b060d6a726bb78887ab5015394606bdc760cce9a77ca0026d11c0",
+                "explanation": "Retains preclinical cell/mouse context and does not infer tumor-only secretion or patient benefit."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "car-signaling-domain-order",
+      "title": "CAR signaling-domain arrangement",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://doi.org/10.1101/2024.02.26.582129"
+      ],
+      "discoveryOccurrences": [
+        "cell-therapies:15"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+        "points": [
+          {
+            "id": "order-context",
+            "requirement": "Retain signaling-domain arrangement, repeated stimulation and cell-state endpoints beyond generation labels.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "explanation": "The independently resolved preprint is described as an assay/library study, without a clinical ranking."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "post-thaw-functional-recovery",
+      "title": "Cell preparation and recovery after thawing",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/27371639/"
+      ],
+      "discoveryOccurrences": [
+        "primary-follow-up:CD19-CD20-addendum"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+        "points": [
+          {
+            "id": "recovery-not-initial-viability",
+            "requirement": "Separate initial post-thaw viability from later recovery and antitumor function; no universal cutoff inferred.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "logic-gated-therapeutics",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+                "explanation": "Retains the original addendum's donor/preparation limitation and mouse-model endpoint."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "in-vivo-platform-bounds",
+      "title": "In vivo engineering: conditioning, kinetics and cost",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/30224381/",
+        "https://pubmed.ncbi.nlm.nih.gov/34990237/",
+        "https://clinicaltrials.gov/study/NCT06539338"
+      ],
+      "discoveryOccurrences": [
+        "canonical-owner-follow-up:in-vivo-car-t"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+        "points": [
+          {
+            "id": "platform-bounds",
+            "requirement": "Separate preclinical cell generation, human trial design, conditioning, repeat dosing and actual process cost.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vivo-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "7c1d1c889c0ec6f2517b6601a830b2d780b2f57d3e8c9e239ec689b1977bbbdd",
+                "explanation": "Separates the humanized lymphoma model, cardiac-injury mRNA model and phase 1 registry; removes a platform-wide cost/conditioning guarantee."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "car-persistence-state-interpretation",
+      "title": "T-cell state and persistence interpretation",
+      "domain": "immunology",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/26885860/",
+        "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+      ],
+      "discoveryOccurrences": [
+        "canonical-owner-follow-up:t-cell-exhaustion-term"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically.",
+        "points": [
+          {
+            "id": "existing-owner-consistency",
+            "requirement": "Review and correct the existing exhaustion/persistence owner, including universal 4-1BB/CD28 ranking, marker-versus-function interpretation, B-cell aplasia and clinical-setting boundaries.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The main t-cell-exhaustion-term summary still contains broad unqualified claims. Resolve those clauses against primary studies during the T-cell-state audit; do not count a safe parent note as a repair to this owner."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "22c3-esophageal-intended-use-scopes",
+      "title": "22C3 esophageal intended-use scopes",
+      "domain": "access-and-regulation",
+      "sourceURLs": [
+        "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+      ],
+      "discoveryOccurrences": [
+        "schema-example-follow-up:dako-pd-l1-22c3-pharmdx"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false.",
+        "points": [
+          {
+            "id": "therapy-setting-thresholds",
+            "requirement": "Reconcile the existing esophageal CPS description with therapy-specific FDA authorization and labeling; retain coexisting valid uses rather than a single generic threshold.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
+            ]
           }
         ]
       }

@@ -4,6 +4,18 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-08
 
+### Systematic public-education coverage audit: cell therapies
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [CAR-T receptor architecture](/technologies/car-t/) | The mechanism assumed one costimulatory architecture and unqualified HLA-independent recognition | FDA guidance and peptide-HLA CAR, spacer and signaling comparisons | Defines the parts and common generations, retains the peptide-HLA exception, separates the B-ALL antigen-escape study from the lymphoma cell-state study, and preserves study-specific limits; preserves sourced approved examples and regulatory safety history; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Armored CAR cells](/technologies/armored-car/) | Mixed added support, recognition logic and safety switches and implied a simple two-signal guarantee | TRUCK framework, IL-12 models and prostate/melanoma clinical studies | Names the exact added function, NFAT trigger caveats, distribution and separate whole-product harms; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Logic-gated therapeutics](/technologies/logic-gated-therapeutics/) | Guaranteed simultaneous input requirements and healthy-tissue sparing and declared complexity always less potent | Kloss, Fedorov, Roybal and Zah primary experiments/addendum | Separates AND/OR/inhibitory/sequential designs and directly tested timing, density, preparation and safety limits; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [CAR-NK and CAR-macrophages](/technologies/car-nk-macrophage/) | Generalized no graft-versus-host risk, short persistence and comparative safety across distinct products | Liu cord-blood clinical construct, irradiated NK-92 methods and macrophage models | Retains source/construct context, low-level long detection in the studied cohort and limits of a cross-platform ranking; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [NK-cell therapy](/technologies/nk-cell-therapy/) | Presented uniform poor persistence, low cytokine risk and repeated dosing as family properties | Liu and Tang primary reports | Separates cell sources, engineered support, detectability, function, compatibility and product-specific dosing questions; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Natural killer cells](/terms/nk-cell/) | Treated HLA loss as sufficient for NK targeting and matching/rejection as irrelevant | Original missing-self mouse work and the scoped cord-blood clinical study | Qualifies integrated activating/inhibitory signals and source-specific compatibility instead of an automatic response rule; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [In vivo CAR-T](/technologies/in-vivo-car-t/) | Generalized no conditioning, redosability and a tenfold cost benefit while mixing models with human responses | Pfeiffer and Rurik primary models; INT2104 registry identity/design | Separates vector/cell dose and delivery formats, retains model versus clinical-design scope and removes unsupported platform-wide guarantees; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+
 ### Systematic public-education coverage audit: therapeutic mechanisms
 
 | Date | Entity | What was wrong | How found | Fix |

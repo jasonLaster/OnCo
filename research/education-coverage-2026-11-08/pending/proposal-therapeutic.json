@@ -1328,6 +1328,860 @@
         "Bulk lactate concentration, a particular histone modification, its genomic location, RNA output and DNA-repair activity are different measurements. The radiation study combined biochemical and chromatin measurements with genetic or pharmacological perturbations. A high lactate value alone does not establish that this mechanism is present, dominant or targetable in another tumor."
       ],
       "category": "Clinic basics"
+    },
+    {
+      "id": "car-t",
+      "kind": "technology",
+      "name": "CAR-T cell therapy",
+      "aka": [
+        "CAR-T",
+        "CAR T cells",
+        "CAR T-cell therapy",
+        "Chimeric antigen receptor T cells"
+      ],
+      "tldr": "CAR-T therapy uses T cells carrying an engineered receptor. Approved products treat selected blood cancers, with product-specific eligibility and safety requirements.",
+      "summary": "CAR-T cell therapy uses T cells carrying a chimeric antigen receptor to recognize a target. FDA-approved products include CD19- and BCMA-directed CAR-T cells for selected blood cancers, including B-cell leukemias, lymphomas and multiple myeloma. The individual product label defines the treatment setting and eligibility. A common autologous approach collects a person’s T cells, engineers and expands them outside the body, then infuses them back; conditioning and follow-up depend on the protocol.\n\nA common antibody-derived CAR joins an external binding region, a hinge or spacer, a membrane anchor and intracellular signaling domains. The receptor is a protein; its encoding instructions and the living cell carrying it are different objects. Approved products and experimental constructs differ in cell source, receptor, manufacturing and clinical setting. Product labels and trial records define their actual uses; a platform name does not establish eligibility or benefit.\n\nIn early work, Gross, Waks and Eshhar joined antibody-variable regions to T-cell receptor components in 1989. Eshhar and colleagues subsequently tested single-chain antibody-binding regions joined to gamma or zeta signaling chains in 1993. These experimental designs helped separate recognition from the signaling machinery attached to it.\n\nFDA-approved examples include tisagenlecleucel, axicabtagene ciloleucel, lisocabtagene maraleucel, brexucabtagene autoleucel, obecabtagene autoleucel, idecabtagene vicleucel and ciltacabtagene autoleucel. Their labeled diseases, treatment settings and eligibility differ; the individual product records retain those distinctions.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "Gross, Waks and Eshhar, the first chimeric antigen receptor (PNAS 1989)",
+          "url": "https://doi.org/10.1073/pnas.86.24.10024"
+        },
+        {
+          "label": "Sotillo et al., Cancer Discov 2015: acquired mutations and alternative splicing of CD19 enable resistance to CART-19",
+          "url": "https://doi.org/10.1158/2159-8290.CD-15-1020"
+        },
+        {
+          "label": "Deng et al., Nat Med 2020: single-cell features of the axicabtagene ciloleucel infusion product that track efficacy and toxicity in 24 patients",
+          "url": "https://doi.org/10.1038/s41591-020-1061-7"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy and harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Eshhar et al.: single-chain binding and signaling receptors (1993)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8421711/"
+        },
+        {
+          "label": "Hudecek et al.: spacer composition, Fc interactions and mouse-model activity (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25212991/"
+        },
+        {
+          "label": "Kawalekar et al.: costimulatory domains and human T-cell metabolism (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26885860/"
+        },
+        {
+          "label": "Ramos et al.: co-infused second- and third-generation constructs (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30309819/"
+        },
+        {
+          "label": "Rafiq et al.: WT1 peptide-HLA-targeting CAR proof of concept (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27924074/"
+        },
+        {
+          "label": "CAR signaling-domain library, pooled screening and single-cell analysis (2024 preprint)",
+          "url": "https://doi.org/10.1101/2024.02.26.582129"
+        },
+        {
+          "label": "FDA: approved cellular and gene therapy products",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: elimination of REMS for named autologous CAR T-cell products (2025)",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor"
+        },
+        {
+          "label": "FDA: boxed-warning changes for T-cell malignancy risk (2024)",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "logic-gated-therapeutics"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "mantle-cell-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "in-vivo-car-t",
+        "allogeneic-cell-therapy",
+        "armored-car"
+      ],
+      "targets": [
+        "cd19",
+        "bcma",
+        "cldn18-2",
+        "gpc3",
+        "gprc5d",
+        "cd70",
+        "mesothelin"
+      ],
+      "drugs": [
+        "ciltacabtagene-autoleucel",
+        "axicabtagene-ciloleucel",
+        "satricabtagene-autoleucel",
+        "tisagenlecleucel",
+        "lisocabtagene-maraleucel",
+        "brexucabtagene-autoleucel",
+        "obecabtagene-autoleucel",
+        "idecabtagene-vicleucel"
+      ],
+      "companies": [
+        "cellogen",
+        "adicet-bio",
+        "allotera-therapeutics",
+        "arcellx",
+        "cargo-therapeutics",
+        "century-therapeutics",
+        "imugene",
+        "leah-labs",
+        "lyell-immunopharma",
+        "modulari-t",
+        "poseida-therapeutics",
+        "tmunity-therapeutics",
+        "cartesian-therapeutics",
+        "vor-biopharma",
+        "cartx-therapeutics",
+        "juventas-cell-therapy",
+        "dispatch-bio",
+        "link-cell-therapies",
+        "tikva-allocell",
+        "brainchild-bio",
+        "leucid-bio",
+        "arovella-therapeutics",
+        "avencell-therapeutics",
+        "outpace-bio",
+        "utc-therapeutics",
+        "march-biosciences",
+        "gyala-therapeutics",
+        "triarm-therapeutics",
+        "genomefrontier-therapeutics",
+        "ticaros",
+        "cero-therapeutics",
+        "hemogenyx-pharmaceuticals",
+        "vittoria-biotherapeutics",
+        "arce-therapeutics",
+        "moonlight-bio",
+        "advesya",
+        "famicordtx",
+        "t-maximum-pharmaceutical",
+        "mabswitch"
+      ],
+      "institutions": [
+        "fact-cellular-therapy"
+      ],
+      "pathways": [],
+      "terms": [
+        "crs",
+        "icans",
+        "lymphoma-bio-antigen-escape",
+        "lymphoma-bio-lineage-antigen-cost"
+      ],
+      "trials": [
+        "nct07036250",
+        "nct05759728",
+        "nct07103668",
+        "nct07523555",
+        "nct06055439",
+        "nct05652920"
+      ],
+      "people": [
+        "zelig-eshhar"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-gross-eshhar-chimeric-receptor-pnas-1989"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cell-therapy-orchestration-software"
+      ],
+      "notes": [
+        "Generation labels describe common signaling architectures. First-generation constructs use an activation domain, often CD3 zeta; second-generation designs add one costimulatory region; third-generation designs combine two. Fourth-generation and later labels vary across authors. More domains do not establish better patient outcomes. The full binder, spacer, anchor, signaling arrangement and cell preparation still matter.",
+        "CD28 and 4-1BB are borrowed intracellular signaling regions, not separately administered receptors. Kawalekar compared metabolic and memory features in defined human-cell experiments. Ramos co-infused two specified second- and third-generation products in lymphoma; different expansion and persistence did not isolate comparative clinical benefit. Neither study ranks all products by signaling-domain name.",
+        "Binding, surface CAR expression, activation, proliferation and completed target-cell killing are distinct readouts. Compare otherwise matched constructs, target-positive and target-negative cells, healthy-tissue targets and unstimulated activity. Hudecek found that particular IgG-derived spacers could support killing in a dish yet impair activity in mouse models through Fc interactions.",
+        "A peptide-HLA target is an exception to blanket HLA-independent descriptions. Rafiq tested a WT1 peptide presented by HLA-A*02:01 in cell and mouse models; this was a proof of concept, not evidence that every intracellular protein or every HLA type is addressable by that construct.",
+        "Relapse mechanisms need separate investigation. Sotillo found CD19 sequence and splicing changes affecting recognition in B-ALL relapse material and experiments. Deng found infusion-product transcriptional features associated with outcomes in a selected cohort of 24 large B-cell lymphoma infusion products; those associations did not prove that one engineered modification would correct every failure.",
+        "A 2024 preprint used a pooled signaling-domain library, repeated stimulation and single-cell sequencing to study how domain arrangement affected T-cell states over time. Its membrane-proximal-domain findings are construct-and-assay observations, not a clinical ranking of domains or a validation of pooled-screen hits as treatments.",
+        "FDA initiated boxed-warning changes in 2024 for the risk of T-cell malignancies after the then-approved BCMA- or CD19-directed autologous CAR T-cell products. Its communication calls for lifelong monitoring for secondary malignancies. This is a scoped regulatory warning, not a claim that every type of engineered immune cell has the same risk.",
+        "In June 2025, FDA eliminated REMS requirements for the named autologous CAR T-cell products in its notice. Product warnings and safety monitoring continued. The manufacturer postmarketing observational studies with 15-year follow-up described in that notice are different from the lifelong patient-monitoring statement in the earlier safety communication.",
+        "Lymphoma: failure comes in two shapes and they need different answers. Relapse without the antigen, through deletion, exon 2 mutation or selection for a spliced transcript the receptor cannot see (Sotillo 2015), is answered by changing the address. Relapse with the antigen still there is usually about the cells: single-cell sequencing of 24 axicabtagene ciloleucel products found three times the frequency of memory-signature CD8 T cells in patients who reached complete response at three months, and an exhaustion signature that tracked a poor molecular response at day 7 (Deng 2020). Collecting T cells earlier in the disease course, allogeneic and in vivo products, and armoured constructs are the responses to the second."
+      ],
+      "principle": "A common CAR presents a binder outside the cell and signaling domains inside it, connected through a spacer and transmembrane region. Conventional surface-antigen recognition can bypass peptide-HLA presentation; specialized peptide-HLA-targeting CARs retain the relevant HLA and antigen-processing requirements.",
+      "strengths": [
+        "Antigen-directed recognition in engineered T cells",
+        "Established uses for specific products in selected blood cancers"
+      ],
+      "limitations": [
+        "Shared healthy-tissue targets and inflammatory, neurologic or blood-count harms",
+        "Manufacturing, access and cost depend on the product and setting",
+        "Antigen heterogeneity, cell state, tissue access and local inhibition"
+      ],
+      "since": 2017
+    },
+    {
+      "id": "armored-car",
+      "kind": "technology",
+      "name": "Armoured, logic-gated & next-gen CARs",
+      "aka": [
+        "armored CAR",
+        "armoured CAR",
+        "CAR armoring",
+        "TRUCKs",
+        "T cells redirected for universal cytokine-mediated killing"
+      ],
+      "tldr": "Armored immune cells add a specified function, such as cytokine support or a changed response to an inhibitory signal. Each added function brings its own activity and safety questions.",
+      "summary": "Armoring adds functions beyond a basic recognition receptor. Designs include continuous, activation-induced or surface-held cytokine support and modifications to particular inhibitory responses. A dominant-negative TGF-beta receptor is a receptor variant that interferes with signaling; it is different from deleting a receptor gene. Recognition logic and cell-elimination switches are separate design choices. None guarantees access to every tumor, coverage of antigen-negative cells or protection of healthy tissue.",
+      "status": "phase-1",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03373097: GD2-CART01 (Bambino Gesù phase 1/2)",
+          "url": "https://clinicaltrials.gov/study/NCT03373097"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        },
+        {
+          "label": "Chmielewski et al.: inducible IL-12 and macrophage recruitment in tumor models (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21742772/"
+        },
+        {
+          "label": "Chmielewski and Abken: TRUCK terminology and NFAT control (2012 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22274776/"
+        },
+        {
+          "label": "Narayan et al.: TGF-beta-insensitive PSMA CAR T-cell phase 1 study (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35314843/"
+        },
+        {
+          "label": "Zhang et al.: inducible IL-12 TIL study and systemic toxicity (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+        },
+        {
+          "label": "Chen et al.: endogenous-locus control of cytokine payloads in preclinical models (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40604285/"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "logic-gated-therapeutics",
+        "cellular-kinetics-and-persistence",
+        "endogenous-promoter-payload-control"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "modulari-t",
+        "tmunity-therapeutics",
+        "link-cell-therapies",
+        "avencell-therapeutics",
+        "outpace-bio",
+        "utc-therapeutics",
+        "moonlight-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "car-t"
+      ],
+      "notes": [
+        "TRUCKs is commonly expanded as T cells redirected for universal cytokine-mediated killing. Early CAR-triggered IL-12 experiments recruited macrophage-dependent activity against antigen-loss cells in tumor models; this did not change the CAR binder itself. Universal is part of the name, not a result of universal cancer killing.",
+        "The TRUCK framework describes NFAT-responsive inducible IL-12 expression. NFAT can also respond to physiological T-cell receptor stimulation, so activation-responsive is not automatically CAR-exclusive or tumor-exclusive. Induction, secretion, distribution and systemic effects must each be measured.",
+        "Liu studied one cord-blood CD19 CAR-NK product combining interleukin-15 support and an inducible caspase-9 switch. Its outcomes do not isolate the effect of interleukin-15. Narayan tested a PSMA CAR with a dominant-negative TGF-beta receptor in a prostate-cancer phase 1 study; a fatal event occurred with severe cytokine release syndrome and concurrent sepsis. Resistance to one signal was not resistance to every inhibitory pathway or every harm.",
+        "Inducible production does not establish confinement. In a separate melanoma study, NFAT-driven IL-12-producing TILs were associated with high serum cytokines and serious systemic toxicity. Those cells were TILs, not the same CAR construct as the earlier TRUCK model.",
+        "Use otherwise matched cells with and without the added function, with relevant suppressive signals, repeated stimulation and healthy-tissue targets. Cytokine concentration, viable-cell abundance and killing at a specified time answer different questions. Greater expansion alone does not establish a wider safety window."
+      ],
+      "principle": "Specify the added gene or receptor, the cells carrying it, when and where it is expressed, and the response it is intended to change. Test its contribution alongside the behavior and harms of the complete product.",
+      "strengths": [
+        "Experimental ways to address a specified inhibitory signal or add supportive activity"
+      ],
+      "limitations": [
+        "Local triggering does not establish local-only exposure",
+        "Added functions may also increase harmful activity",
+        "Component effects and whole-product clinical outcomes need separate evidence"
+      ]
+    },
+    {
+      "id": "logic-gated-therapeutics",
+      "kind": "technology",
+      "name": "Logic-gated therapeutics (AND, NOT gates)",
+      "aka": [],
+      "tldr": "Recognition circuits combine inputs to broaden target coverage or restrict activation. AND-like, OR-like, inhibitory and sequential designs have different failure modes and need direct testing.",
+      "summary": "In cell-based examples, split and tuned activation/costimulation can implement an AND-like requirement, either-target recognition can broaden coverage with an OR-like rule, and a protective-antigen input can inhibit activity. SynNotch-to-CAR systems induce a second receptor over time, creating a primed state rather than requiring two antigens to remain simultaneously present on one cell. Thresholds, expression, decay and movement between tissues matter. An intended rule is a design hypothesis, not proof that healthy tissue is spared or that the complete product improves outcomes.",
+      "status": "phase-1",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov: logic-gated CAR T",
+          "url": "https://clinicaltrials.gov/search?term=logic%20gated%20CAR%20T"
+        },
+        {
+          "label": "Kloss et al.: balanced activation and costimulation in tumor models (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23242161/"
+        },
+        {
+          "label": "Zah et al.: CD19/CD20 OR-like recognition in tumor models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27059623/"
+        },
+        {
+          "label": "Zah et al.: experimental addendum on cell viability and OR-gate results (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27371639/"
+        },
+        {
+          "label": "Fedorov et al.: inhibitory CARs in defined experimental systems (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24337479/"
+        },
+        {
+          "label": "Roybal et al.: sequential synNotch-CAR circuit and priming/decay tests (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26830879/"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        }
+      ],
+      "tags": [
+        "frontier",
+        "promising"
+      ],
+      "related": [
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy",
+        "targeted-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "armored-car",
+        "masked-adc",
+        "bispecific-adc",
+        "in-vivo-car-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "arsenal-bio",
+        "sana-biotechnology",
+        "senti-biosciences",
+        "cartography-biosciences"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Kloss combined suboptimal activation through one receptor with costimulation through another in specified tumor models. Two fully activating CARs do not, by themselves, establish an AND rule. Zah tested CD19/CD20 OR-like recognition; recognizing either target is a coverage strategy rather than proof of greater tumor selectivity.",
+        "Fedorov used PD-1- or CTLA-4-derived inhibitory receptors to restrain responses in defined experiments. Such a NOT-like recognition input differs from an externally activated switch that eliminates engineered cells. Receptor expression and the balance of activating and inhibitory inputs still need measurement.",
+        "Roybal used a synNotch input to induce a CAR for another antigen. CAR expression decayed after the priming stimulus was removed, rather than disappearing instantly. The studied bilateral mouse model did not show killing of the separate single-antigen bystander tumor. Whether another circuit remains active long enough to act elsewhere still needs a timing and tissue-distribution experiment; neither result establishes universal clinical safety.",
+        "Test A only, B only, both and neither, together with low antigen density, mixed populations, healthy tissues, repeated encounters and separated or sequential contacts. Activation, proliferation and completed killing are different outputs. Retain cell preparation, donor, cell ratio, timing and the units of each readout; a selected assay threshold is not a universal safe/unsafe boundary.",
+        "The Zah experimental addendum found that post-thaw viability over subsequent culture differed between donors and affected xenograft results, despite similar initial viability measurements. That result supports checking preparation and recovery; it does not validate a universal clinical viability cutoff or guarantee freedom from antigen escape."
+      ],
+      "principle": "Define the actual receptors, signaling split, thresholds and timing. Measure the intended output for each relevant input combination and after the priming input disappears.",
+      "strengths": [
+        "Can test combinations of recognition inputs rather than a single target",
+        "Coverage and selectivity can be explored as separate design goals"
+      ],
+      "limitations": [
+        "Stricter gates may miss tumors lacking a required input",
+        "Broader OR recognition may add healthy-tissue recognition routes",
+        "Residual activity, antigen density, manufacture and clinical harms need product-specific evidence"
+      ]
+    },
+    {
+      "id": "car-nk-macrophage",
+      "kind": "technology",
+      "name": "CAR-NK & CAR-macrophage",
+      "aka": [
+        "CAR-NK",
+        "CAR-NK cells",
+        "CAR-macrophage"
+      ],
+      "tldr": "CAR-NK cells and CAR-macrophages add recognition receptors to different innate immune-cell families. Their native functions, starting materials and engineered support still matter.",
+      "summary": "A CAR adds a recognition input rather than replacing the effector cell. NK cells retain activating and inhibitory receptor inputs; macrophages have different functions, including phagocytosis and antigen handling. Donor blood, cord blood, pluripotent-cell-derived products and NK cell lines are distinct starting materials. Product-specific manufacture, expansion, persistence, tissue access, compatibility and harms need their own evidence. A small favorable blood-cancer study does not rank every NK product as safer than every T-cell product or establish solid-tumor benefit.",
+      "status": "phase-1",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Liu et al., CAR-transduced natural killer cells in CD19-positive lymphoid tumours (NEJM 2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        },
+        {
+          "label": "Klichinsky et al., Human chimeric antigen receptor macrophages for cancer immunotherapy (Nature Biotechnology 2020)",
+          "url": "https://doi.org/10.1038/s41587-020-0462-y"
+        },
+        {
+          "label": "Tang et al.: irradiated CD33-CAR NK-92 cells in an early AML study (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30034945/"
+        },
+        {
+          "label": "Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3951539/"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "nk-cell-therapy",
+        "trop2-car-il15-cord-blood-nk",
+        "nk-cell",
+        "cellular-kinetics-and-persistence",
+        "armored-car"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "allogeneic-cell-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "indapta-therapeutics",
+        "onk-therapeutics",
+        "liberate-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-klichinsky-nat-biotechnol",
+        "paper-liu-n-engl-j-med"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "viral-vector-manufacturing",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "In the 11-patient Liu study, cord-blood CD19 CAR-NK cells also encoded IL-15 and inducible caspase-9. No cytokine release syndrome, neurotoxicity or graft-versus-host disease was observed in that cohort, and low-level cells remained detectable for at least 12 months. This is neither proof of zero risk nor evidence for a uniformly short lifespan across CAR-NK platforms.",
+        "NK-92 is a continuously growing cell line, not a donor primary-cell preparation. Tang used CD33-CAR NK-92 cells irradiated with 10 Gy before infusion in an early AML study. Irradiation to limit proliferation makes its persistence question different from that of a cytokine-supported cord-blood product; the irradiation dose is not a universal CAR-NK treatment dose.",
+        "Reduced HLA display can reduce some inhibitory NK inputs, but activating signals, NK education and the actual cell-target pair still matter. CAR recognition, native NK activity and missing-self recognition are different inputs. An NK cell is not a natural killer T cell, and absence of a conventional TCR does not remove every compatibility, rejection or product-contamination concern.",
+        "Compare matched engineered and unmodified effector cells with target-positive and target-negative cells; retain donor/source, cell ratio and observation time. Attribution to a native receptor needs an independent perturbation with controls for changes in other ligands and target-cell viability. Binding, cytokine or granule release, viable-cell abundance and completed killing should not be substituted for one another.",
+        "Klichinsky engineered human macrophages and studied antigen-specific phagocytosis, inflammatory changes and tumor effects in cell and mouse models. These results describe a macrophage construct and those models; they do not establish a clinical efficacy or persistence ranking against CAR-NK or CAR-T."
+      ],
+      "principle": "Add a specified CAR to an NK cell or macrophage and evaluate the receptor together with the cell family, source, engineering and native responses.",
+      "strengths": [
+        "Different native effector functions can be investigated alongside CAR recognition",
+        "Some NK products have shown allogeneic feasibility in defined early studies"
+      ],
+      "limitations": [
+        "Persistence depends on source and engineered support",
+        "Host rejection, inflammatory harms and manufacturing quality remain product-specific questions",
+        "Cell and mouse results do not establish clinical benefit in solid tumors"
+      ]
+    },
+    {
+      "id": "nk-cell-therapy",
+      "kind": "technology",
+      "name": "NK cell therapy and CAR-NK",
+      "aka": [],
+      "tldr": "NK-cell therapies use natural killer cells, with or without an added CAR. Cell source and engineering determine what must be tested for persistence, compatibility, activity and harms.",
+      "summary": "Natural killer cells integrate activating and inhibitory signals and can be prepared from different starting materials. Some products use donor or cord-blood cells; others use pluripotent-cell-derived cells or cell lines. A CAR supplies an additional recognition route, while cytokines or other engineering can alter subsequent behavior. Early clinical observations belong to the actual source, construct, conditioning and population studied. They do not establish universal compatibility, negligible inflammatory risk or uniformly poor persistence.",
+      "status": "phase-2",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Natural_killer_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Natural_killer_cell"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        },
+        {
+          "label": "Tang et al.: irradiated CD33-CAR NK-92 cells in an early AML study (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30034945/"
+        },
+        {
+          "label": "Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3951539/"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-nk-macrophage",
+        "nk-cell",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "dlbcl",
+        "aml"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "allogeneic-cell-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "senti-biosciences",
+        "zelluna",
+        "celularity"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct04616209",
+        "nct06687681",
+        "nct06730009"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "The cord-blood CAR-NK construct reported by Liu combined anti-CD19 recognition, IL-15 and inducible caspase-9. Its low-level detection for at least 12 months is a counterexample to assigning all CAR-NK cells a short lifespan. Detectability still does not by itself prove continuing useful function.",
+        "Irradiated NK-92 line products and nonirradiated primary-cell preparations answer different manufacturing and persistence questions. Tang reported 10 Gy irradiation for the studied CD33-CAR NK-92 preparation; that is a source-specific processing detail, not a universal protocol.",
+        "A comparison intended to isolate CAR-dependent killing needs matched effector cells without the CAR and otherwise matched targets with and without the antigen. Native NK inhibition and activation can change the result even when CAR binding is retained. HLA loss alone does not establish a favorable therapeutic response."
+      ],
+      "principle": "Define the starting cells, expansion and engineering process, conditioning and administered viable cells; then measure native and CAR-associated activity in the intended context.",
+      "strengths": [
+        "Potential for prepared allogeneic products in specified platforms",
+        "Native effector functions can complement engineered recognition under tested conditions"
+      ],
+      "limitations": [
+        "Host rejection, tissue access and inhibitory signals may limit activity",
+        "Persistence and repeat-dosing questions vary by product",
+        "Clinical benefit and safety require construct- and setting-specific studies"
+      ]
+    },
+    {
+      "id": "nk-cell",
+      "kind": "term",
+      "name": "NK cell",
+      "aka": [
+        "NK cells",
+        "natural killer cell",
+        "natural killer cells",
+        "natural killer",
+        "NK-cell",
+        "CAR-NK"
+      ],
+      "tldr": "Natural killer cells integrate activating and inhibitory inputs to respond to abnormal cells. An added CAR supplies another recognition route; missing self is one input rather than a guarantee of killing.",
+      "summary": "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Natural_killer_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Natural_killer_cell"
+        },
+        {
+          "label": "Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3951539/"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell",
+        "immune-system",
+        "adcc",
+        "antibody",
+        "fc-effector"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "car-nk-macrophage",
+        "allogeneic-cell-therapy",
+        "monoclonal-antibody"
+      ],
+      "targets": [
+        "cd56",
+        "fcgr3a",
+        "cd57"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
+        "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "in-vivo-car-t",
+      "kind": "technology",
+      "name": "In vivo CAR-T",
+      "aka": [],
+      "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
+      "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+      "status": "phase-1",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
+          "url": "https://doi.org/10.15252/emmm.201809158"
+        },
+        {
+          "label": "Rurik et al.: targeted mRNA nanoparticles in a mouse cardiac-injury model (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34990237/"
+        },
+        {
+          "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
+          "url": "https://clinicaltrials.gov/study/NCT06539338"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "abbvie",
+        "adicet-bio",
+        "capstan-therapeutics",
+        "kelonia-therapeutics",
+        "kernal-biologics",
+        "strand-therapeutics",
+        "azalea-therapeutics",
+        "stylus-medicine",
+        "vivacta-bio",
+        "utc-therapeutics",
+        "starna-therapeutics",
+        "gigamune"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pfeiffer-embo-mol-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+        "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+        "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+        "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+        "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products."
+      ],
+      "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
+      "strengths": [
+        "Investigates an alternative to administering cells engineered outside the body",
+        "May reduce some separate ex vivo manufacturing steps in a specified process"
+      ],
+      "limitations": [
+        "Cell targeting, off-target engineering and immune responses require measurement",
+        "Instruction dose does not specify final cell number or functional exposure",
+        "Conditioning, repeat dosing and cost are product- and protocol-specific"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "cellular-kinetics-and-persistence",
+      "kind": "term",
+      "name": "Cellular kinetics and persistence",
+      "aka": [
+        "living-drug kinetics",
+        "cell-therapy abundance and function",
+        "cell dose and persistence"
+      ],
+      "tldr": "A living cell therapy can change its number, location and state after administration. The starting dose, a sampled cell count and useful function are different measurements.",
+      "summary": "After a cell infusion, measured abundance depends on division, survival and redistribution. In vivo engineering may also continue to generate newly engineered cells. A blood sample describes one compartment and time; it cannot count all cells in the body or establish entry into a tumor. Detectable receptor-encoding sequences, viable receptor-positive cells, persistent markers and functional activity should be reported separately.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy and harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-t",
+        "car-nk-macrophage",
+        "nk-cell-therapy",
+        "in-vivo-car-t",
+        "t-cell-exhaustion-term"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "FDA CAR T-cell guidance treats exposure/kinetics, pharmacodynamic response, immunogenicity, identity, viability and potency as distinct assessments. Blood concentration-time measurements and optional disease-tissue sampling answer different distribution questions. A sequence assay is not automatically a count of viable cells expressing a functional surface receptor.",
+        "Keep the measurement method, time, compartment, units and denominator attached. A receptor-positive percentage can fall while absolute receptor-positive cells per microliter remain unchanged if the sampled denominator increases. Neither measure alone establishes an unchanged total-body cell population, tumor entry or antitumor benefit.",
+        "An administered cell dose is an input. The dose of a vector or particle used for in vivo engineering does not directly specify the later number of engineered cells. Autologous means the recipient’s own cells; allogeneic means cells from another person. Engineering outside versus inside the body is a separate axis; a prepared delivery product can engineer the recipient's own cells.",
+        "Expansion and persistence can prolong useful activity or harmful recognition. Stopping further administration does not instantly remove living cells or reverse an injury already triggered. A safety switch addresses a specified control mechanism; cell elimination, receptor shutoff and treatment of downstream inflammation are different interventions.",
+        "In the Liu cord-blood CAR-NK study, low-level detection at least 12 months after treatment belonged to a construct with IL-15 and an inducible caspase-9 switch. It does not establish the behavior of every NK-cell source or equate marker detection with continuing useful function."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "endogenous-promoter-payload-control",
+      "kind": "term",
+      "name": "Control of cell payloads by endogenous promoters",
+      "aka": [
+        "NR4A2 cytokine payload control",
+        "RGS16 cytokine payload control",
+        "activation-responsive cytokine expression"
+      ],
+      "tldr": "An engineered cell can place a payload under the control of a naturally regulated gene. The resulting expression pattern still needs measurement in the actual cells and tissues.",
+      "summary": "A CRISPR knock-in can connect an engineered cytokine payload to regulatory control at an endogenous gene locus. In preclinical work, NR4A2 and RGS16 control supported cytokine expression in specified CAR T-cell settings, with tumor and safety measurements in mouse models. This is distinct from adding synthetic response elements to a separate promoter. Neither the locus name nor an activation-responsive design proves tumor-only secretion, clinical safety or patient benefit.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Chen et al.: endogenous-locus control of cytokine payloads in preclinical models (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40604285/"
+        },
+        {
+          "label": "Guo et al.: synthetic NR4A-responsive payload promoter in human-cell experiments (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35316028/"
+        },
+        {
+          "label": "Zhang et al.: inducible IL-12 TIL study and systemic toxicity (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "armored-car",
+        "gene-regulatory-elements",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Chen and colleagues screened endogenous genes and investigated NR4A2/RGS16 regulation for payloads including IL-12 and IL-2 in cell and mouse models. Patient-derived cells were also studied experimentally; that is not a clinical treatment result in those patients. The edited locus, retained native gene function, off-state expression, inducibility and persistence need characterization.",
+        "Guo and colleagues instead tested a synthetic NR4A-responsive promoter against a conventional NFAT-responsive promoter in human-cell experiments with weak stimulation. Reporter expression and improved proliferation in that system do not establish a clinical potency or safety ranking, and the synthetic promoter is distinct from an endogenous NR4A2-locus knock-in.",
+        "Keep trigger recognition, payload transcription, secretion, tissue distribution and downstream activity separate. The IL-12 TIL clinical experience shows why inducible production alone cannot establish confinement or freedom from systemic toxicity. Viable producer-cell abundance, time and cell state matter alongside cytokine concentration."
+      ],
+      "category": "Treatment jargon"
     }
   ]
 }

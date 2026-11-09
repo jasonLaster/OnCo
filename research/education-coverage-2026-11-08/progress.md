@@ -1,25 +1,33 @@
 # Audit progress
 
-The goal is active. This is a first-domain checkpoint, not a completed audit.
+The goal is active. This is a dated checkpoint, not a completed audit. Counts come from the pinned ledger and explicit screening states.
 
 | Measure | Current checkpoint |
-|---|---:|
+| --- | ---: |
 | Pinned public Markdown sources | 537 |
 | Concepts/comparisons | 411 |
 | Guides/lessons | 112 |
-| Navigation sources requiring classification | 14 |
-| Content sources semantically reviewed | 9 |
-| Learning requirements recorded in that subset | 26 |
-| Covered by baseline main fields in that subset | 2 |
-| Covered by the current proposed fields in that subset | 24 |
-| Content sources with complete proposed representation | 9 |
-| Reviewed content sources fully represented on main | 0 |
-| Content sources not closed | 514 |
-| Open schema questions | 2 |
-| Adjacent semantic-search occurrences awaiting screening | 135 |
+| Navigation sources still unreviewed | 14 |
+| Content sources semantically reviewed | 59 |
+| Reviewed sources with complete proposed representation | 40 |
+| Reviewed sources with residual requirements | 19 |
+| Content sources still unread | 464 |
+| Curriculum learning requirements | 237 |
+| Requirements with field evidence | 186 |
+| Curriculum requirements still open | 51 |
+| New terms in this draft | 24 |
+| Existing owners supplemented/corrected in this draft | 61 |
+| Full reviewed-source coverage on pinned main | 0 |
+| Adjacent concepts represented in drafts | 7 |
+| Adjacent concepts still open | 2 |
+| Declared literature result occurrences | 180 |
+| Literature occurrences screened | 75 |
+| Literature occurrences still unreviewed | 105 |
+| Schema prototypes awaiting consumer review and approval | 4 |
+| Clean final full re-audits completed | 0 |
 
-Unreviewed items are unknown coverage, not evidence of absence. Name matches are retrieval suggestions. Pending drafts and the current implementation are proposed coverage; none is counted as main. The biological-foundation review has started, but its remaining owner searches are not counted as completed reviews.
+Unreviewed means unknown coverage. Name matches never count as field evidence. Coverage in drafts #369, #371, #373, #375 or #376 is distinct from main. The [ledger](ledger.json) and generated open-item/dependency reports are authoritative.
 
-The first data batch adds four terms and deepens 13 existing owners. [Validation](access-validation.md), [actual render checks](access-render-verification.json), [official-source captures and scope checks](access-primary/manifest.json), [schema questions](schema-gaps.json) and the full [ledger](ledger.json) are retained.
+The latest cell batch adds two terms and corrects/deepens seven existing owners. [Cell validation](cell-validation.md), [field/source index](cell-record-sources.json), [publication identities and reading scope](cell-primary/publication-identities.json) and [rendered checks](cell-render-verification.json) are retained. [Draft #376](https://github.com/judegomila/OnCo/pull/376) supplies the separate schema prototype and its local build/render checks.
 
-The source navigation label is not enough to exclude a file: several index pages include substantive teaching. These will be reviewed as content where needed. The final worklist can therefore add learning requirements without hiding the original 537-source denominator.
+The next known work includes payload-family reconciliation, the existing exhaustion/persistence term, distinct 22C3 esophageal uses, remaining reviewed-page requirements, and the unread curriculum/literature. Navigation pages require semantic classification before exclusion.

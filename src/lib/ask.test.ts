@@ -461,6 +461,7 @@ describe("Ask OnCo end to end", () => {
     // their survivors. Measured immediately before and after at the same figures.
     { date: "2026-10-26", recall: 0.4301, note: "Paganetti RBE review and seven protocol-upgrade idea duplicates merged; extractive rubric 0.6925, both unchanged by the merge" },
     { date: "2026-11-08", recall: 0.4276, note: "systematic concept audit: restored complete bispecific-antibody aliases and phase 3 context, and explicit second-ADC/same-payload wording; extractive rubric 0.6850; both floors unchanged" },
+    { date: "2026-11-08", recall: 0.4326, note: "cell-therapy education: sourced approved-cancer overview retained in the CAR-T short definition; extractive rubric 0.6875; no ranking or floor change" },
   ];
   /** Floors set since the ratchet began, in order. Each entry must be at least the one before it. */
   const EXTRACTIVE_FLOORS: ReadonlyArray<{ date: string; recall: number; rubric: number; change: string }> = [

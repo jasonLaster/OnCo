@@ -194,5 +194,216 @@
         }
       ]
     }
+  },
+  {
+    "id": "endogenous-promoter-payload-control",
+    "title": "Control of cell payloads by endogenous promoters",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/40604285/",
+      "https://pubmed.ncbi.nlm.nih.gov/35316028/"
+    ],
+    "discoveryOccurrences": [
+      "cell-therapies:1"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+      "points": [
+        {
+          "id": "endogenous-versus-synthetic",
+          "requirement": "Distinguish endogenous-locus payload control from a separate synthetic response-element promoter.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "endogenous-promoter-payload-control",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "21a5f05217eae13e48654e1e88986e2e5881b6f3e04ee098650c568976572a4a",
+              "explanation": "Separates the CRISPR-locus study from the synthetic NR4A-responsive promoter experiment."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "expression-exposure",
+          "requirement": "Keep induced expression, secretion, distribution and benefit/safety separate.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "endogenous-promoter-payload-control",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "c223c75d7d4b060d6a726bb78887ab5015394606bdc760cce9a77ca0026d11c0",
+              "explanation": "Retains preclinical cell/mouse context and does not infer tumor-only secretion or patient benefit."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-signaling-domain-order",
+    "title": "CAR signaling-domain arrangement",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://doi.org/10.1101/2024.02.26.582129"
+    ],
+    "discoveryOccurrences": [
+      "cell-therapies:15"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+      "points": [
+        {
+          "id": "order-context",
+          "requirement": "Retain signaling-domain arrangement, repeated stimulation and cell-state endpoints beyond generation labels.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "car-t",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+              "explanation": "The independently resolved preprint is described as an assay/library study, without a clinical ranking."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-thaw-functional-recovery",
+    "title": "Cell preparation and recovery after thawing",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/27371639/"
+    ],
+    "discoveryOccurrences": [
+      "primary-follow-up:CD19-CD20-addendum"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+      "points": [
+        {
+          "id": "recovery-not-initial-viability",
+          "requirement": "Separate initial post-thaw viability from later recovery and antitumor function; no universal cutoff inferred.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "logic-gated-therapeutics",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "b95185f659a620b5cae2cc4488513ed4c7cef37ac4bfa99c3fbe606c434884a7",
+              "explanation": "Retains the original addendum's donor/preparation limitation and mouse-model endpoint."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "in-vivo-platform-bounds",
+    "title": "In vivo engineering: conditioning, kinetics and cost",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/30224381/",
+      "https://pubmed.ncbi.nlm.nih.gov/34990237/",
+      "https://clinicaltrials.gov/study/NCT06539338"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:in-vivo-car-t"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read returned discovery context where available, resolved the adopted publication identities independently, read available primary abstracts and the named targeted methods/addendum sections. Named study/model limits remain visible. This is not expert sign-off or whole-program clinical validation.",
+      "points": [
+        {
+          "id": "platform-bounds",
+          "requirement": "Separate preclinical cell generation, human trial design, conditioning, repeat dosing and actual process cost.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "in-vivo-car-t",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "7c1d1c889c0ec6f2517b6601a830b2d780b2f57d3e8c9e239ec689b1977bbbdd",
+              "explanation": "Separates the humanized lymphoma model, cardiac-injury mRNA model and phase 1 registry; removes a platform-wide cost/conditioning guarantee."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-persistence-state-interpretation",
+    "title": "T-cell state and persistence interpretation",
+    "domain": "immunology",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/26885860/",
+      "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+    ],
+    "discoveryOccurrences": [
+      "canonical-owner-follow-up:t-cell-exhaustion-term"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "The existing canonical term was read while checking cell-therapy prerequisites. Its broader state/marker and clinical assertions need their own systematic primary-source review; the newly qualified CAR-T parent does not repair that owner automatically.",
+      "points": [
+        {
+          "id": "existing-owner-consistency",
+          "requirement": "Review and correct the existing exhaustion/persistence owner, including universal 4-1BB/CD28 ranking, marker-versus-function interpretation, B-cell aplasia and clinical-setting boundaries.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The main t-cell-exhaustion-term summary still contains broad unqualified claims. Resolve those clauses against primary studies during the T-cell-state audit; do not count a safe parent note as a repair to this owner."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "22c3-esophageal-intended-use-scopes",
+    "title": "22C3 esophageal intended-use scopes",
+    "domain": "access-and-regulation",
+    "sourceURLs": [
+      "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+    ],
+    "discoveryOccurrences": [
+      "schema-example-follow-up:dako-pd-l1-22c3-pharmdx"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "The canonical test description and FDA listing rows were checked during the schema examples. Different esophageal thresholds require therapy/setting/authorization reconciliation, not a declaration that an older scoped threshold is false.",
+      "points": [
+        {
+          "id": "therapy-setting-thresholds",
+          "requirement": "Reconcile the existing esophageal CPS description with therapy-specific FDA authorization and labeling; retain coexisting valid uses rather than a single generic threshold.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
+          ]
+        }
+      ]
+    }
   }
 ]

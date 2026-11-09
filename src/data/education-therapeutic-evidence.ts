@@ -130,5 +130,91 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "kind": "term",
     "asOf": "2026-11-08",
     "category": "Biology & measurement"
+  },
+  {
+    "id": "cellular-kinetics-and-persistence",
+    "name": "Cellular kinetics and persistence",
+    "aka": [
+      "living-drug kinetics",
+      "cell-therapy abundance and function",
+      "cell dose and persistence"
+    ],
+    "tldr": "A living cell therapy can change its number, location and state after administration. The starting dose, a sampled cell count and useful function are different measurements.",
+    "summary": "After a cell infusion, measured abundance depends on division, survival and redistribution. In vivo engineering may also continue to generate newly engineered cells. A blood sample describes one compartment and time; it cannot count all cells in the body or establish entry into a tumor. Detectable receptor-encoding sequences, viable receptor-positive cells, persistent markers and functional activity should be reported separately.",
+    "notes": [
+      "FDA CAR T-cell guidance treats exposure/kinetics, pharmacodynamic response, immunogenicity, identity, viability and potency as distinct assessments. Blood concentration-time measurements and optional disease-tissue sampling answer different distribution questions. A sequence assay is not automatically a count of viable cells expressing a functional surface receptor.",
+      "Keep the measurement method, time, compartment, units and denominator attached. A receptor-positive percentage can fall while absolute receptor-positive cells per microliter remain unchanged if the sampled denominator increases. Neither measure alone establishes an unchanged total-body cell population, tumor entry or antitumor benefit.",
+      "An administered cell dose is an input. The dose of a vector or particle used for in vivo engineering does not directly specify the later number of engineered cells. Autologous means the recipient’s own cells; allogeneic means cells from another person. Engineering outside versus inside the body is a separate axis; a prepared delivery product can engineer the recipient's own cells.",
+      "Expansion and persistence can prolong useful activity or harmful recognition. Stopping further administration does not instantly remove living cells or reverse an injury already triggered. A safety switch addresses a specified control mechanism; cell elimination, receptor shutoff and treatment of downstream inflammation are different interventions.",
+      "In the Liu cord-blood CAR-NK study, low-level detection at least 12 months after treatment belonged to a construct with IL-15 and an inducible caspase-9 switch. It does not establish the behavior of every NK-cell source or equate marker detection with continuing useful function."
+    ],
+    "related": [
+      "car-t",
+      "car-nk-macrophage",
+      "nk-cell-therapy",
+      "in-vivo-car-t",
+      "t-cell-exhaustion-term"
+    ],
+    "sections": [
+      "cell-therapy"
+    ],
+    "links": [
+      {
+        "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+        "url": "https://www.fda.gov/media/156896/download"
+      },
+      {
+        "label": "NCI: T-cell transfer therapy and harms",
+        "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+      },
+      {
+        "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+        "url": "https://doi.org/10.1056/NEJMoa1910607"
+      }
+    ],
+    "category": "Treatment jargon",
+    "kind": "term",
+    "asOf": "2026-11-08"
+  },
+  {
+    "id": "endogenous-promoter-payload-control",
+    "name": "Control of cell payloads by endogenous promoters",
+    "aka": [
+      "NR4A2 cytokine payload control",
+      "RGS16 cytokine payload control",
+      "activation-responsive cytokine expression"
+    ],
+    "tldr": "An engineered cell can place a payload under the control of a naturally regulated gene. The resulting expression pattern still needs measurement in the actual cells and tissues.",
+    "summary": "A CRISPR knock-in can connect an engineered cytokine payload to regulatory control at an endogenous gene locus. In preclinical work, NR4A2 and RGS16 control supported cytokine expression in specified CAR T-cell settings, with tumor and safety measurements in mouse models. This is distinct from adding synthetic response elements to a separate promoter. Neither the locus name nor an activation-responsive design proves tumor-only secretion, clinical safety or patient benefit.",
+    "notes": [
+      "Chen and colleagues screened endogenous genes and investigated NR4A2/RGS16 regulation for payloads including IL-12 and IL-2 in cell and mouse models. Patient-derived cells were also studied experimentally; that is not a clinical treatment result in those patients. The edited locus, retained native gene function, off-state expression, inducibility and persistence need characterization.",
+      "Guo and colleagues instead tested a synthetic NR4A-responsive promoter against a conventional NFAT-responsive promoter in human-cell experiments with weak stimulation. Reporter expression and improved proliferation in that system do not establish a clinical potency or safety ranking, and the synthetic promoter is distinct from an endogenous NR4A2-locus knock-in.",
+      "Keep trigger recognition, payload transcription, secretion, tissue distribution and downstream activity separate. The IL-12 TIL clinical experience shows why inducible production alone cannot establish confinement or freedom from systemic toxicity. Viable producer-cell abundance, time and cell state matter alongside cytokine concentration."
+    ],
+    "related": [
+      "armored-car",
+      "gene-regulatory-elements",
+      "cellular-kinetics-and-persistence"
+    ],
+    "sections": [
+      "cell-therapy"
+    ],
+    "links": [
+      {
+        "label": "Chen et al.: endogenous-locus control of cytokine payloads in preclinical models (2025)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40604285/"
+      },
+      {
+        "label": "Guo et al.: synthetic NR4A-responsive payload promoter in human-cell experiments (2022)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35316028/"
+      },
+      {
+        "label": "Zhang et al.: inducible IL-12 TIL study and systemic toxicity (2015)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+      }
+    ],
+    "category": "Treatment jargon",
+    "kind": "term",
+    "asOf": "2026-11-08"
   }
 ];

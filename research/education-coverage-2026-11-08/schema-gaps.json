@@ -1,7 +1,7 @@
 [
   {
     "id": "assay-status-claims",
-    "status": "open; concrete schema proposal required",
+    "status": "implemented prototype; consumer review and owner approval pending",
     "question": "Can a query distinguish test origin, development designation, product authorization and laboratory certification for the same assay and intended use?",
     "currentFields": [
       "src/data/assays.ts:Assay.regulatory",
@@ -9,11 +9,28 @@
     ],
     "finding": "One enum mixes LDT, Breakthrough device and FDA authorization labels. It cannot retain coexisting source-backed claims with separate subject and use scopes.",
     "needed": "A backwards-compatible collection of scoped regulatory claims, preserving authority, jurisdiction, subject/product/laboratory, intended use, source and date. Unknown clinical utility must not be inferred from a status label.",
-    "approvalDependency": "Schema/library product changes require the repository product-approval workflow."
+    "approvalDependency": "Schema/library product changes require the repository product-approval workflow.",
+    "proposal": {
+      "url": "https://github.com/judegomila/OnCo/pull/376",
+      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "fields": [
+        "RegulatoryClaimSchema",
+        "DrugSchema.regulatoryClaims",
+        "Assay.regulatoryClaims"
+      ],
+      "state": "Open draft; not merged or deployed",
+      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "remaining": [
+        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
+        "Maintainer issue triage and requested review",
+        "Owner approval under PRODUCT-APPROVAL.md",
+        "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
+      ]
+    }
   },
   {
     "id": "trial-site-status",
-    "status": "open; concrete schema proposal required",
+    "status": "implemented prototype; consumer review and owner approval pending",
     "question": "Can a query report which named facility is recruiting while keeping overall status, local cohort availability and the dated source separate?",
     "currentFields": [
       "src/lib/schema.ts:TrialParticipationSchema.overallStatus",
@@ -23,11 +40,28 @@
     ],
     "finding": "Dated raw study captures and site counts exist, but the normalized participation row does not retain named facility statuses or cohort availability. This is not loss of the original registry source.",
     "needed": "Optional source-backed facility-status observations with registry provenance; cohort/slot availability remains unknown unless separately reported. Do not infer it from overall status.",
-    "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated."
+    "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated.",
+    "proposal": {
+      "url": "https://github.com/judegomila/OnCo/pull/376",
+      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "fields": [
+        "TrialParticipationSchema.facilities",
+        "TrialParticipationSchema.cohortObservations",
+        "TrialParticipationSchema.responseStudySha256"
+      ],
+      "state": "Open draft; not merged or deployed",
+      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "remaining": [
+        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
+        "Maintainer issue triage and requested review",
+        "Owner approval under PRODUCT-APPROVAL.md",
+        "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
+      ]
+    }
   },
   {
     "id": "mechanism-edge-evidence",
-    "status": "open; concrete schema proposal required",
+    "status": "implemented prototype; consumer review and owner approval pending",
     "question": "Can a mechanism edge retain its model, observation versus hypothesis, source and uncertainty instead of representing every connection only as activation or inhibition?",
     "currentFields": [
       "src/lib/schema.ts:PathwayEdgeSchema.from",
@@ -36,11 +70,27 @@
     ],
     "finding": "PathwayEdgeSchema retains only endpoints and activates/inhibits. The rendered RNA-splicing map illustrates how context-dependent effects and dependencies acquire categorical arrow wording even when prose is qualified. Record-level sources/notes exist, but the edge has no scoped evidence/provenance fields.",
     "needed": "A backwards-compatible optional edge-evidence/context structure and a reviewed rendering rule that preserves uncertainty. Do not infer universal causality from a pathway diagram or replace verified mechanisms with generic doubt.",
-    "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now."
+    "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now.",
+    "proposal": {
+      "url": "https://github.com/judegomila/OnCo/pull/376",
+      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "fields": [
+        "PathwayEdgeSchema.evidence",
+        "PathwayDiagramInteractive evidence disclosure"
+      ],
+      "state": "Open draft; not merged or deployed",
+      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "remaining": [
+        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
+        "Maintainer issue triage and requested review",
+        "Owner approval under PRODUCT-APPROVAL.md",
+        "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
+      ]
+    }
   },
   {
     "id": "conjugate-payload-composition",
-    "status": "open; concrete schema proposal required",
+    "status": "implemented prototype; consumer review and owner approval pending",
     "question": "Can a drug query distinguish delivery antigen, payload chemical identity, payload mechanism/class, released species and per-payload loading for a dual-payload construct?",
     "currentFields": [
       "src/lib/schema.ts:DrugSchema.payload",
@@ -50,6 +100,23 @@
     ],
     "finding": "Drug payload and linker are optional strings. Combination ideas support string-valued component axes, but this does not normalize sourced multi-payload drug composition, distinguish delivery from payload targets, or preserve per-component loading/analyte evidence. Existing descriptions and payload-class term records are acknowledged.",
     "needed": "Optional backwards-compatible sourced composition entries distinguishing chemical identities, class/mechanism references and released catabolites, with scoped loading observations and dates. Preserve unknown values; do not split a total DAR into invented component ratios or classify radiation as a small-molecule cytotoxic mechanism.",
-    "approvalDependency": "Drug schema, format decomposition and any display changes need a concrete product proposal and owner review."
+    "approvalDependency": "Drug schema, format decomposition and any display changes need a concrete product proposal and owner review.",
+    "proposal": {
+      "url": "https://github.com/judegomila/OnCo/pull/376",
+      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "fields": [
+        "DrugSchema.conjugateComposition",
+        "ConjugateCompositionSchema",
+        "PayloadComponentSchema"
+      ],
+      "state": "Open draft; not merged or deployed",
+      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "remaining": [
+        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
+        "Maintainer issue triage and requested review",
+        "Owner approval under PRODUCT-APPROVAL.md",
+        "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
+      ]
+    }
   }
 ]

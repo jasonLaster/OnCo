@@ -1,7 +1,7 @@
 import type { PathwayInput } from "@/lib/schema";
 
 const asOf = "2026-09-04";
-type P = Omit<PathwayInput, "kind" | "asOf">;
+type P = Omit<PathwayInput, "kind" | "asOf"> & { asOf?: string };
 const p = (x: P): PathwayInput => ({ kind: "pathway", asOf, ...x });
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 
@@ -32,7 +32,7 @@ export const pathways: PathwayInput[] = [
     targets: ["pik3ca", "akt", "her2", "egfr"], drugs: ["capivasertib", "inavolisib", "gedatolisib"], cancers: ["breast-hr-positive", "endometrial", "prostate"], links: [{ label: "Wikipedia", url: W("PI3K/AKT/mTOR_pathway") }],
   }),
   p({
-    id: "ras-mapk", name: "RAS / RAF / MEK / ERK (MAPK)", wikipedia: W("MAPK/ERK_pathway"),
+    id: "ras-mapk", name: "RAS / RAF / MEK / ERK (MAPK)", wikipedia: W("MAPK/ERK_pathway"), asOf: "2026-11-08",
     tldr: "The RAS-MAPK pathway is the cell's 'divide' relay. A signal at the surface flips RAS on, which passes to RAF, MEK, and ERK, which tell the nucleus to make the cell divide. KRAS and BRAF mutations jam it in the on position.",
     summary: "Growth-factor receptors recruit GRB2/SOS to load GTP onto RAS (KRAS, NRAS, HRAS). RAS-GTP recruits RAF (BRAF, CRAF) dimers, which phosphorylate MEK1/2, which phosphorylate ERK1/2. ERK drives transcription of cyclin D1, MYC, and negative feedback (DUSP, SPRY). Alterations: KRAS (pancreatic 90%, CRC 45%, lung 30%), BRAF V600E (melanoma 50%), NF1 loss, receptor fusions (ALK, RET, NTRK). Drugs: KRAS G12C inhibitors, pan-RAS(ON) inhibitors, BRAF+MEK doublets, upstream RTK inhibitors. Feedback reactivation (loss of ERK-mediated inhibition of RTKs) is why single agents fail and vertical combinations (BRAF+MEK, KRAS+EGFR in CRC) work.",
     analogy: "A relay race: receptor hands the baton to RAS, RAS to RAF, RAF to MEK, MEK to ERK, ERK runs into the nucleus and shouts 'divide'. A KRAS mutation is a runner who never stops running whether or not anyone handed them the baton.",
@@ -41,14 +41,22 @@ export const pathways: PathwayInput[] = [
       { id: "sos", label: "GRB2 / SOS1", x: 50, y: 20 },
       { id: "ras", label: "RAS (KRAS)", x: 50, y: 36, targetId: "kras" },
       { id: "nf1", label: "NF1 (GAP)", x: 15, y: 36 },
-      { id: "raf", label: "RAF (BRAF)", x: 50, y: 52, targetId: "braf" },
+      { id: "raf", label: "RAF (BRAF, CRAF)", x: 50, y: 52, targetId: "braf" },
       { id: "mek", label: "MEK1/2", x: 50, y: 68 },
       { id: "erk", label: "ERK1/2", x: 50, y: 82 },
       { id: "out", label: "Cyclin D1, MYC → proliferation", x: 50, y: 97 },
       { id: "fb", label: "DUSP / SPRY feedback", x: 85, y: 60 },
     ],
     edges: [
-      { from: "rtk", to: "sos" }, { from: "sos", to: "ras" }, { from: "nf1", to: "ras", type: "inhibits" }, { from: "ras", to: "raf" }, { from: "raf", to: "mek" }, { from: "mek", to: "erk" }, { from: "erk", to: "out" }, { from: "erk", to: "fb" }, { from: "fb", to: "rtk", type: "inhibits" },
+      { from: "rtk", to: "sos" }, { from: "sos", to: "ras" }, { from: "nf1", to: "ras", type: "inhibits" }, { from: "ras", to: "raf" },
+      { from: "raf", to: "mek", evidence: [{
+        basis: "observed", context: "Recombinant Raf-1 (CRAF) and Mek1 proteins produced in Sf9 insect cells; association and phosphorylation experiments.",
+        statement: "The study reported a Raf-1–Mek1 complex and Mek1 activation associated with serine phosphorylation after coexpression with Raf-1.",
+        limitation: "This experiment concerns CRAF and MEK1 in a recombinant system. It does not establish the same behaviour for every RAF isoform or show patient benefit from a drug combination.",
+        sources: [{ label: "Huang et al., PNAS 1993 (primary experiment)", url: "https://doi.org/10.1073/pnas.90.23.10947" }],
+        sourceDate: "1993-12-01", checkedOn: "2026-11-08",
+      }] },
+      { from: "mek", to: "erk" }, { from: "erk", to: "out" }, { from: "erk", to: "fb" }, { from: "fb", to: "rtk", type: "inhibits" },
     ],
     interventions: ["KRAS G12C inhibitors (sotorasib, adagrasib) ± anti-EGFR in colorectal cancer", "Pan-RAS(ON) inhibitor daraxonrasib (phase 3, pancreatic)", "BRAF + MEK inhibitors (dabrafenib/trametinib, encorafenib/binimetinib)", "Encorafenib + cetuximab (+ chemo) in BRAF V600E CRC", "Upstream: EGFR, ALK, RET, MET, NTRK inhibitors and bispecifics"],
     targets: ["kras", "braf", "egfr", "alk", "ret", "met", "ntrk", "fgfr2", "kit", "nras", "shp2", "nf1"], drugs: ["sotorasib", "adagrasib", "daraxonrasib", "encorafenib", "osimertinib", "lorlatinib"], cancers: ["pancreatic", "colorectal", "nsclc", "melanoma"], links: [{ label: "Wikipedia", url: W("MAPK/ERK_pathway") }],

@@ -2,6 +2,12 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-08
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | Pathway product highlighting | Diagnostic tests with target metadata appeared among products said to hit and block a pathway | Rendered RAS–MAPK review showed cobas BRAF/EGFR tests in the treatment selector; checked against the shared product classification | Restrict treatment highlighting to the existing medicine class; retain test records and their graph relationships |
+
 ## 2026-11-04
 
 ### Corrections found by the November 2026 gap census

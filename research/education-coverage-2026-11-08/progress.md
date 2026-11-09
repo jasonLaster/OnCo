@@ -19,9 +19,9 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Existing owners updated in draft #375 | 125 |
 | Reviewed-source completion on pinned main | 0 |
 | Adjacent concepts represented in drafts | 17 |
-| Adjacent concepts open | 2 |
-| Declared literature occurrences | 251 |
-| Literature occurrences screened | 146 |
+| Adjacent concepts open | 3 |
+| Declared literature occurrences | 252 |
+| Literature occurrences screened | 147 |
 | Literature occurrences unread | 105 |
 | Schema drafts awaiting approval/hosted preview | 4 |
 | Clean final full re-audits | 0 |
@@ -58,3 +58,5 @@ The [response/criteria checkpoint](response-endpoints-2026-11-09/scope.json) rea
 The active Guide checkout advanced during this checkpoint. An isolated sparse checkout of the original pin now supplies the same 537 verified Markdown hashes; the [receipt](source-checkout-isolation-2026-11-09.json) preserves that boundary. Newer source content is not silently substituted into earlier field proofs.
 
 The known newer Guide commit is also a pending source delta before final re-audits; no later-version coverage is inferred from the original pin. Its path counts are recorded separately from the current 537-source census.
+
+The [later curriculum phase](source-phases/c9689645/README.md) separately verifies 550 files and retains 57 exact prior assessments plus 18 manual delta reviews. Seventy-three of 75 assessed sources have proposed representation; the phase has 314 of 316 requirements evidenced, 470 ordinary sources unread and five navigation sources unclassified. Five new requirements are filled at two existing owners; the actual service-directory cost consumer is a new open adjacent finding. Root closure requires every registered source phase, while preserving all eight original residual requirements. No cross-version totals are added. All 158 current owners and 14 authored field parts pass local reader checks. Validate/typecheck/lint and the fresh 282-file/2,823-test suite pass, with two existing skips; source and field proofs are current.

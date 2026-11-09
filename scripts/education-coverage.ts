@@ -41,6 +41,8 @@ export type CurriculumItem = {
 };
 type RecordData = { id: string; kind: string; name: string; aka?: string[]; [key: string]: unknown };
 type CatalogRow = { version: string; record: RecordData };
+type SourcePhase = { id: string; guideRef: string; directory: string; sourceCount: number };
+type PhaseLedger = { guideRef: string; items: CurriculumItem[] };
 export type Candidate = { id: string; version: string; name: string; score: number; exactName: boolean; matchedNameTerms: string[] };
 
 export const sha256 = (value: string | Buffer) => createHash("sha256").update(value).digest("hex");
@@ -123,6 +125,17 @@ export function dependencyProblems(schemas: { id: string; status: string }[], li
   ];
 }
 
+/** A later source version cannot disappear from closure behind the original pin. */
+export function sourcePhaseProblems(phase: SourcePhase, ledger: PhaseLedger | undefined, catalog: Map<string, RecordData>): string[] {
+  if (!ledger) return ["Source phase ledger is missing: " + phase.id];
+  const problems: string[] = [];
+  if (ledger.guideRef !== phase.guideRef) problems.push("Source phase ref differs: " + phase.id);
+  if (ledger.items.length !== phase.sourceCount || new Set(ledger.items.map(r => r.path)).size !== phase.sourceCount) problems.push("Source phase census differs: " + phase.id);
+  const open = ledger.items.filter(item => reviewProblems(item, catalog).length).length;
+  if (open) problems.push(`Source phase remains open: ${phase.id} (${open} sources)`);
+  return problems;
+}
+
 /** Include practice and side panels; publish hashes rather than source bodies or personal headings. */
 export function sourceSections(path: string, body: string): SourceSection[] {
   const cleaned = body.replace(/<!-- BEGIN GENERATED USED IN -->[\s\S]*?<!-- END GENERATED USED IN -->/g, "");
@@ -136,12 +149,24 @@ export function sourceSections(path: string, body: string): SourceSection[] {
   }).map((p, ordinal) => ({ ordinal, kind: /preamble/i.test(p.heading) ? "preamble" : /try it|worked example|explain it back/i.test(p.heading) ? "practice-or-worked-example" : /source/i.test(p.heading) ? "source-scope" : /how it (works|is measured)|confusion/i.test(p.heading) ? "mechanism-measurement-interpretation" : "additional-teaching", sha256: sha256(path + "\n" + p.heading + "\n" + p.body) }));
 }
 
+/** Compare teaching and interpretation-relevant metadata without publishing lesson bodies. */
+export function sourceSignature(metadata: Record<string, unknown>, body: string): { teachingSha256: string; metadataSha256: string } {
+  // Unknown metadata is conservatively significant. An allowlist could silently ignore a
+  // new learning-goal, audience or population key when the source schema evolves.
+  const operational = new Set(["used_by", "updated", "source_checked", "review_status", "reviewed", "reviewed_by", "expert_review", "learner_review", "minutes"]);
+  const relevant = Object.fromEntries(Object.keys(metadata).filter(key => !operational.has(key)).sort().map(key => [key, metadata[key]]));
+  return { teachingSha256: fieldHash(sourceSections("PATH_INDEPENDENT_CONTENT", body)), metadataSha256: fieldHash(relevant) };
+}
+
 function readJSON<T>(path: string): T { return JSON.parse(readFileSync(path, "utf8")) as T; }
 function writeJSON(path: string, value: unknown) { writeFileSync(path, JSON.stringify(value, null, 2) + "\n"); }
 function main() {
   const args = process.argv.slice(2);
   const arg = (name: string) => { const i = args.indexOf(name); if (i < 0 || !args[i + 1]) throw new Error("Missing " + name); return args[i + 1]; };
   const guide = resolve(arg("--guide")), ref = arg("--guide-ref"), baseline = resolve(arg("--baseline")), out = resolve(arg("--out"));
+  // Source versions have independent reading ledgers and share one set of canonical proposals,
+  // adjacent findings, schema dependencies and literature dispositions.
+  const shared = args.includes("--shared-audit-root") ? resolve(arg("--shared-audit-root")) : out;
   const packDir = args.includes("--review-pack-out") ? resolve(arg("--review-pack-out")) : join(homedir(), ".cache", "onco-reference", "education-review-pack", ref.slice(0, 12));
   // Review bodies can include excluded case context. Keep them outside every Git checkout,
   // including when the requested directory has not been created yet.
@@ -161,7 +186,7 @@ function main() {
   mkdirSync(out, { recursive: true });
   const base = readJSON<RecordData[]>(baseline);
   const catalog: CatalogRow[] = base.map(record => ({ version: "main", record }));
-  const pending = [369, 371, 373].map(pr => readJSON<{ pr: number; head: string; records: RecordData[] }>(join(out, "pending", "pr-" + pr + ".json")));
+  const pending = [369, 371, 373].map(pr => readJSON<{ pr: number; head: string; records: RecordData[] }>(join(shared, "pending", "pr-" + pr + ".json")));
   for (const p of pending) for (const record of p.records) catalog.push({ version: "draft-" + p.pr, record });
   const proposals = args.flatMap((value, index) => {
     if (value !== "--proposal") return [];
@@ -204,16 +229,23 @@ function main() {
   const find = candidateFinder(catalog);
   const candidates = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed").map(r => ({ path: r.path, candidates: find(r) }));
   const failures = items.flatMap(item => reviewProblems(item, catalogMap).map(problem => ({ path: item.path, problem })));
-  const adjacent = existsSync(join(out, "adjacent-concepts.json")) ? readJSON<{ id: string; title: string; domain: string; sourceURLs: string[]; discoveryOccurrences: string[]; review: Review }[]>(join(out, "adjacent-concepts.json")) : [];
+  const adjacent = existsSync(join(shared, "adjacent-concepts.json")) ? readJSON<{ id: string; title: string; domain: string; sourceURLs: string[]; discoveryOccurrences: string[]; review: Review }[]>(join(shared, "adjacent-concepts.json")) : [];
   const adjacentFailures = adjacent.flatMap(item => reviewProblems({ sourceType: "adjacent-concept", review: item.review }, catalogMap).map(problem => ({ path: "adjacent/" + item.id, problem })));
-  const schemas = readJSON<{ id: string; status: string }[]>(join(out, "schema-gaps.json"));
-  const literature = readJSON<{ queryId: string; rank: number; reviewStatus: string }[]>(join(out, "literature-dispositions.json"));
-  const dependencies = dependencyProblems(schemas, literature);
+  const schemas = readJSON<{ id: string; status: string }[]>(join(shared, "schema-gaps.json"));
+  const literature = readJSON<{ queryId: string; rank: number; reviewStatus: string }[]>(join(shared, "literature-dispositions.json"));
+  const sourcePhases = shared === out && existsSync(join(shared, "source-phases.json")) ? readJSON<{ phases: SourcePhase[] }>(join(shared, "source-phases.json")).phases.map(phase => {
+    const directory = resolve(shared, phase.directory);
+    if (!directory.startsWith(shared + "/")) throw new Error("Source phase must be inside the shared audit root: " + phase.id);
+    const ledgerPath = join(directory, "ledger.json");
+    const ledger = existsSync(ledgerPath) ? readJSON<PhaseLedger>(ledgerPath) : undefined;
+    return { ...phase, problems: sourcePhaseProblems(phase, ledger, catalogMap) };
+  }) : [];
+  const dependencies = [...dependencyProblems(schemas, literature), ...sourcePhases.flatMap(phase => phase.problems)];
   const count = (pred: (r: CurriculumItem) => boolean) => items.filter(pred).length;
   const content = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed");
   const closed = content.filter(r => !reviewProblems(r, catalogMap).length);
   const stats = { totalSources: items.length, conceptOrComparison: count(r => ["concept", "comparison"].includes(r.sourceType)), guideOrLesson: count(r => ["guide", "guide-lesson"].includes(r.sourceType)), navigation: count(r => r.sourceType === "navigation"), navigationReviewed: count(r => r.sourceType === "navigation" && r.review.status === "navigation" && !reviewProblems(r, catalogMap).length), navigationWithTeachingContent: count(r => r.sourceType === "navigation" && r.review.status === "reviewed"), semanticallyReviewed: count(r => r.review.status === "reviewed"), implementedCoverage: closed.length, mainCoverage: closed.filter(r => r.review.points.every(p => p.status === "covered-main")).length, unresolvedContentItems: content.length - closed.length, unresolvedSources: new Set(failures.map(f => f.path)).size, adjacentConcepts: adjacent.length, unresolvedAdjacentConcepts: new Set(adjacentFailures.map(f => f.path)).size, openSchemaGaps: schemas.filter(r => r.status !== "resolved").length, unreviewedLiteratureOccurrences: literature.filter(r => r.reviewStatus === "unreviewed").length, readyForFinalReaudit: !failures.length && !adjacentFailures.length && !dependencies.length };
-  writeJSON(join(out, "ledger.json"), { schemaVersion: 3, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), stats, items, adjacent });
+  writeJSON(join(out, "ledger.json"), { schemaVersion: 3, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), sourcePhases, stats, items, adjacent });
   writeJSON(join(out, "candidates.json"), { warning: "Lexical retrieval for manual review only; no match score establishes coverage.", items: candidates });
   writeJSON(join(out, "open-items.json"), [...failures, ...adjacentFailures]);
   writeJSON(join(out, "open-dependencies.json"), dependencies);

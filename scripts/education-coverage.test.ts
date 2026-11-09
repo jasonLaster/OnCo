@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, sourceSections, type CurriculumItem } from "./education-coverage";
+import { candidateFinder, dependencyProblems, fieldHash, reviewProblems, sourcePhaseProblems, sourceSections, sourceSignature, type CurriculumItem } from "./education-coverage";
 
 const record = { id: "example", kind: "term", name: "Example assay", summary: "Measures one readout under specified conditions." };
 const item = (): CurriculumItem => ({ path: "wiki/education/concepts/example.md", title: "Example assay", aliases: [], sourceType: "concept", domain: "measurement", sourceSha256: "source", gitBlob: "blob", sourceURL: "https://example.org/source", priorOwnerIds: [], review: { status: "unreviewed", points: [] } });
@@ -69,5 +69,30 @@ describe("curriculum coverage closure", () => {
     expect(reviewProblems(row, catalog)).toEqual([]);
     row.sections = sourceSections(row.path, "# Example\n\n## How it works\nCore definition.\n\n## Worked example\nChanged interpretation boundary.\n");
     expect(reviewProblems(row, catalog)).toContain("Reviewed section does not belong to this source version");
+  });
+
+  it("compares teaching independently of generated routing without hiding added requirements or metadata", () => {
+    const metadata = { title: "Response", type: "concept", summary: "A measured response.", prerequisites: ["baseline"], updated: "2026-11-08" };
+    const body = "# Response\n\n## How it works\nMeasure under stated criteria.\n";
+    const original = sourceSignature(metadata, body);
+    expect(sourceSignature({ ...metadata, updated: "2026-11-09" }, body + "<!-- BEGIN GENERATED USED IN -->\nNew route\n<!-- END GENERATED USED IN -->")).toEqual(original);
+    expect(sourceSignature(metadata, body + "\n## Worked example\nA new population condition.\n").teachingSha256).not.toEqual(original.teachingSha256);
+    expect(sourceSignature({ ...metadata, prerequisites: ["baseline", "MRI"] }, body).metadataSha256).not.toEqual(original.metadataSha256);
+    expect(sourceSignature({ ...metadata, newPopulationCondition: "Only this cohort" }, body).metadataSha256).not.toEqual(original.metadataSha256);
+    expect(sourceSignature(metadata, body.replace("stated criteria", "[stated criteria](/new-route)")).teachingSha256).not.toEqual(original.teachingSha256);
+  });
+
+  it("keeps later source phases and changed field evidence in the final closure check", () => {
+    const phase = { id: "newer-guide", guideRef: "new-ref", directory: "source-phases/new-ref", sourceCount: 1 };
+    expect(sourcePhaseProblems(phase, undefined, new Map())).toEqual(["Source phase ledger is missing: newer-guide"]);
+    expect(sourcePhaseProblems(phase, { guideRef: "old-ref", items: [] }, new Map())).toEqual(["Source phase ref differs: newer-guide", "Source phase census differs: newer-guide"]);
+    const row = item();
+    expect(sourcePhaseProblems(phase, { guideRef: "new-ref", items: [row] }, new Map())).toEqual(["Source phase remains open: newer-guide (1 sources)"]);
+    row.review = { status: "reviewed", auditor: "agent", checkedAt: "2026-11-09", rationale: "Read this source version.", points: [{ id: "readout", requirement: "Retain assay context.", status: "covered-draft", evidence: [{ recordId: record.id, version: "proposal-biology", field: "summary", fieldSha256: fieldHash(record.summary), explanation: "States the measurement conditions." }], remaining: [] }] };
+    const catalog = new Map([["proposal-biology:example", record]]);
+    expect(sourcePhaseProblems(phase, { guideRef: "new-ref", items: [row] }, catalog)).toEqual([]);
+    catalog.set("proposal-biology:example", { ...record, summary: "Changed field." });
+    expect(sourcePhaseProblems(phase, { guideRef: "new-ref", items: [row] }, catalog)).toEqual(["Source phase remains open: newer-guide (1 sources)"]);
+    expect(sourcePhaseProblems(phase, { guideRef: "new-ref", items: [row, row] }, catalog)).toContain("Source phase census differs: newer-guide");
   });
 });

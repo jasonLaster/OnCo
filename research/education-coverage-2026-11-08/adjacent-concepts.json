@@ -1043,5 +1043,34 @@
         }
       ]
     }
+  },
+  {
+    "id": "expanded-access-service-cost-consumer",
+    "title": "Expanded-access cost statements in the service directory",
+    "domain": "access-and-regulation",
+    "sourceURLs": [
+      "https://www.law.cornell.edu/cfr/text/21/312.8",
+      "https://www.fda.gov/news-events/public-health-focus/expanded-access"
+    ],
+    "discoveryOccurrences": [
+      "source-phase-c9689645-cost-follow-up"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex content audit; not expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Following the corrected canonical expanded-access owner revealed a separate service-directory consumer. Naming this residual is not proof that its output has been repaired.",
+      "points": [
+        {
+          "id": "free-service-cost-wording",
+          "requirement": "Keep sponsor drug-cost recovery distinct from every clinical-care charge or an unsupported typical/free-supply claim in the actual service-directory consumer.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The expanded-access entry in src/data/free-wave.ts retains an unscoped usually-free-supply assertion and generic cost-recovery wording. Check the actual directory output, repair its statement and retain a direct field/render proof for this non-graph consumer."
+          ]
+        }
+      ]
+    }
   }
 ]

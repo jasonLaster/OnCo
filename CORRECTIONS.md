@@ -4,6 +4,15 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Response categories, clocks and image measurements
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [ORR](/terms/orr/) and [complete response](/terms/complete-response/) | ORR implied every tumour shrank 30 percent; complete response used target disappearance alone and required confirmation in every study | Original RECIST definitions and FDA endpoint guidance, with independently resolved identities | Keeps population, full-disease assessment, specified dimensions and design-specific confirmation; an observation does not establish cure or lasting benefit; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-09 | [Duration](/terms/duration-of-response/) and [DCR/CBR](/terms/duration-of-response-term/) | Responder clocks, stable-disease definitions, survival plateaus and universal treatment-family/regulatory claims were blended | RECIST duration sections, FDA guidance and two historical AR-study abstracts | Keeps event/censoring/follow-up rules, responder populations, study-specific CBR timepoints and evaluable criteria; removes automatic clinical-benefit and timing rankings |
+| 2026-11-09 | [RECIST](/terms/recist/), [iRECIST](/terms/irecist/) and [PERCIST](/terms/percist/) | Axes, baseline/nadir and full-disease conditions were abbreviated; iUPD and a PET percentage implied sufficient decisions | Original criterion passages and RECIST Working Group clarifications | Retains target/nodal axes, relative plus absolute progression, clinical stability/data authority, and the proposed PET relative-plus-absolute change with technical/other-disease conditions |
+| 2026-11-09 | [Quantitative imaging](/technologies/quantitative-imaging-biomarkers/) | Claimed every trial used imaging endpoints and progression automatically ended therapy; conflated measurements, criteria and clinical validation, with an unsupported family-origin year | FDA technical-performance guidance, QIBA documents and the criterion papers | Separates measurement error/conformance and clinical use, removes the year and categorical commands, and routes distinct criterion/SUV aliases to their existing owners |
+
 ### T-cell state and functional persistence
 
 | Date | Entity | What was wrong | How found | Fix |

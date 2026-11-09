@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "1dc7be7d05d9ebfb1c09a1f86affc54972cb08e1d980be9273f65308c0020890"
+      "recordSnapshotSha256": "1536784dbc31e80b14c0cb8f65efc659049046c4ae7a84a79bd1fe85e1bf37e6"
     },
     {
       "version": "draft-376",
@@ -50,13 +50,13 @@
     "navigation": 14,
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
-    "semanticallyReviewed": 81,
-    "implementedCoverage": 75,
+    "semanticallyReviewed": 83,
+    "implementedCoverage": 78,
     "mainCoverage": 0,
-    "unresolvedContentItems": 455,
-    "unresolvedSources": 455,
+    "unresolvedContentItems": 452,
+    "unresolvedSources": 452,
     "adjacentConcepts": 19,
-    "unresolvedAdjacentConcepts": 3,
+    "unresolvedAdjacentConcepts": 2,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
     "readyForFinalReaudit": false
@@ -17052,8 +17052,122 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general section, worked example, illustration explanation and source-scope qualification in the pinned public concept. Generated routing adds no independent teaching. Canonical-owner matching, primary-source verification and supplementation remain open; reading does not certify source figures. All eleven requirements across this pair now have actual canonical-field evidence after primary definition/abstract and selected full-text/guidance review. Current rendered bodies were checked; no expert sign-off or production coverage is claimed.",
+        "sectionHashes": [
+          "690904c109903f102eaf3628e7305cc43e77b38b6c1bd41412457ec02933b209",
+          "41960a9d2c03b47249415baa4b24aeb53ffa56c8b4d212709e8caca52c30e6a6",
+          "99f51b12358dfd570e44e09fe37c735e26c70fc9d6efc69ecf17ad82fbbd6160",
+          "a47c9b2aff531a7ae18fb5c6649f001d61c141d3a2a577991b1d1327bd52c457",
+          "bda086aaf0d7f533dd389c7f0555b0eebfb6217e80e84dd922705b4c8f363b67",
+          "9c72d5704a015c231f3107b43d165be63098f5c3eb7ab50b9958178f586c601f",
+          "aefb6ed860bcec08b23aa29dafd0b15e62fb17f58b75ac1ad4cc2a223601c171",
+          "0c12256649807d6a5c5530c2fba28510ab75012bc5e17feb637132fa72818b85",
+          "60c962e8954520d1d4577cd391b5671abed05c48de9924abd08d45d1ea41c0c3",
+          "6e5715bbefca70a08886ed166cd6847f4051c6adeb5c4f322bc9114ec4063ca4",
+          "675f735c037e89390285896710f6443618d50275743230fc1a94612fd9dba2f5",
+          "1d2455388db860102828f8b3abac0ef0968c1a9db43412122e7efdcaaeac076a"
+        ],
+        "points": [
+          {
+            "id": "categories-and-duration-rules",
+            "requirement": "Define ORR, DCR and CBR by actual categories and protocol rules; SD is not ORR or necessarily unchanged size, and benefit in a label is not a universal clinical-outcome definition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "orr",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+                "explanation": "CR/PR and specified population/window define the rate, rather than universal shrinkage or SD."
+              },
+              {
+                "recordId": "duration-of-response-term",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ef369d64703bd5ca27bffd2713160b43a17b5c940ac3cf023229d21b670b4b90",
+                "explanation": "DCR/CBR categories and durable-stability rules are protocol-specific; names do not establish every clinical benefit."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "population-and-readout-card",
+            "requirement": "Keep numerator, participant or lesion denominator, evaluability, biomarker requirements, missing-data rules, reviewer, schedule, cutoff and confidence interval with a reported rate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "orr",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+                "explanation": "Participant versus lesion denominator, biomarker/evaluability rules, missingness, reviewer, schedule, cutoff and CI remain explicit."
+              },
+              {
+                "recordId": "duration-of-response-term",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6ed48f3c7853f404fc7390726fb5462886a2375140776edbc16ba1a9f07bf258",
+                "explanation": "The 118 enrolled versus 78 evaluable enzalutamide populations retain both AR and assessment requirements."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "confirmation-and-best-response",
+            "requirement": "Distinguish confirmed/unconfirmed response, best overall response and a fixed-visit status; response confirmation follows the trial design and protocol.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "orr",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+                "explanation": "Confirmed/unconfirmed rates, fixed visit versus best response and the non-randomised response-primary confirmation rule remain distinct."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "cbr-example-identity",
+            "requirement": "Retain the two historical AR-study populations, six-month versus 16-/24-week definitions and all-enrolled versus specified evaluable analysis, without transferring current eligibility or a comparative treatment claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "duration-of-response-term",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6ed48f3c7853f404fc7390726fb5462886a2375140776edbc16ba1a9f07bf258",
+                "explanation": "Historical six-month bicalutamide CBR, 16/24-week enzalutamide CBR and all-enrolled/evaluable definitions remain attached to the study; no current eligibility or comparative claim is inferred."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "duration-and-clinical-outcomes",
+            "requirement": "Keep duration among responders and its first-response/event/censoring rules distinct from full-population PFS and comparative survival benefit; the fictional fractions do not show an individual trajectory.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "duration-of-response",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+                "explanation": "First response and complete-response clocks, responding versus full study populations, events/censoring and follow-up are explicit."
+              },
+              {
+                "recordId": "orr",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+                "explanation": "A response fraction does not automatically establish comparative survival or an individual forecast."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -25297,8 +25411,132 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read every general section, worked example, illustration explanation and source-scope qualification in the pinned public concept. Generated routing adds no independent teaching. Canonical-owner matching, primary-source verification and supplementation remain open; reading does not certify source figures. All eleven requirements across this pair now have actual canonical-field evidence after primary definition/abstract and selected full-text/guidance review. Current rendered bodies were checked; no expert sign-off or production coverage is claimed.",
+        "sectionHashes": [
+          "38961e9a9cf7f19e5fb6a02eff9ba4cc39eaa57751f10730f327e59a19b375ac",
+          "b41dc26058b2f215c2334a5b2dea0fc93d20209c550106bbd9558e2543669681",
+          "9503f9d4f545bb829bc4468132cdd7d2071fd7a4b9a9bcf19d46ebb0cc390be4",
+          "b4562091cf8af3892afae7784b3577acdc9882d0617d7df75114ae02a05e2bdb",
+          "4c3b32f942aac8847fd18b8cdd0a21fb786cb8c342fd77aab3b9aada0d8e821c",
+          "ba9ee91cb2c4c44a6046024f7c4cc0142b23bbacaa5c9730106a557d90b1078d",
+          "f6a95d3957e5ceba25cda675f37c6349e8f0bcee20189b57f488eaaa6a41a6a5",
+          "c5d32a52b2b647c782059b806b529704a298fe25193a9441e000f37f1378ed2b",
+          "eef1d4cab6d00c80b5f17a7cf88c24307015ea6271eec1bc73e5ae1be361fd3e",
+          "79bd94ebd77112410c46d9a678d18cb9fec3bba4b6892a8896253732810967e9",
+          "6942e66f353be783e310ef7d1f91c90261275ec861b579213329053e15b620e6",
+          "bd053a9249da5ab49d1fe69f3e96d8b71e5adc3f0172848fbdf4c1cb82eb9268",
+          "7e4aa386679dc2d0c348d53aa541ca7dfeb321673284a359c7ae181c04d50c63",
+          "dba69b142c4bc80ccc5247214007564aa471385edbc7308ce8b73e0fe763ceca"
+        ],
+        "points": [
+          {
+            "id": "target-selection-and-units",
+            "requirement": "Keep RECIST target selection, five-total/two-per-organ limits, ordinary longest versus nodal short axes and dimensions distinct from total tumour volume or all disease.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "recist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e79e9f5d2fe72d23522fdaf6dcda9490f2ea7ae45333ec6ef40e6950594e6585",
+                "explanation": "Up to five/two-per-organ target selection and ordinary/nodal axes are distinct from total volume or an all-disease census."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "reference-and-overall-disease",
+            "requirement": "PR uses baseline; target PD uses nadir plus relative and absolute increase. New/non-target disease can change overall response; preserve the fictional 100/60/73-mm assumptions and rule-specific calculation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "recist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e79e9f5d2fe72d23522fdaf6dcda9490f2ea7ae45333ec6ef40e6950594e6585",
+                "explanation": "Baseline for PR, nadir with relative-plus-absolute increase for target PD, and outside/new disease remain separate."
+              },
+              {
+                "recordId": "recist",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "d5a3a42636a1f19b89cd8a96170728deffa76311e0dd9e71c05d2de612aaabc6",
+                "explanation": "The fictional 100/60/73-mm exercise retains its assumptions and both progression increases, rather than treating below-baseline as no progression."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "irecist-and-clinical-stability",
+            "requirement": "Distinguish iUPD/iCPD and possible pseudoprogression, reassessment timing and clinical-stability criteria from automatic permission to continue treatment; trial data handling is not an individual care rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "irecist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "42d9a6a3a6d26c1123db0a30671ee8db35cb81c08904a2c871f18eef38c89114",
+                "explanation": "iUPD/iCPD data rules, generally 4-8-week reassessment, stability and protocol exceptions do not automatically permit personal treatment continuation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "percist-object-and-conditions",
+            "requirement": "Keep FDG SUL normalisation, ROI, acquisition/reference suitability and the complete proposal threshold/other disease conditions distinct from anatomical response and tissue clearance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "percist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "4af69831f5d8e8ec077e28b2ffa3ef8bf73c8e8e94a93022371c1d16138bd650",
+                "explanation": "SUL normalisation, peak ROI, input/reference suitability, the Table 7 percentage and absolute change, and other disease conditions remain distinct from anatomy or tissue clearance."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "response-and-tissue-scope",
+            "requirement": "An imaging category does not establish pathological complete response, microscopic absence, cure or comparative treatment benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "complete-response",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ca880b07b5409f827cc67398a5bdf6b59ccf0d795509996764efe59cdfc0e657",
+                "explanation": "Imaging and tissue assessment have different criteria; undetected disease, durability and clinical outcomes remain separate."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-card-and-missingness",
+            "requirement": "Record criteria/version, targets, baseline/nadir/current values, dates, non-target/new findings and acquisition comparability; missing or equivocal observations require the protocol rather than an invented category.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "recist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e79e9f5d2fe72d23522fdaf6dcda9490f2ea7ae45333ec6ef40e6950594e6585",
+                "explanation": "Framework/version, lesions, dates, baseline/nadir/current values and acquisition/outside-disease findings are recorded; missing/equivocal values do not acquire an invented category."
+              },
+              {
+                "recordId": "quantitative-imaging-biomarkers",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e6d2572ded37c7e14c81a3c82f01706c31c72cd852a8ced39fd38c5b563f1fc9",
+                "explanation": "Technical error/conformance and clinical interpretation need separate evidence."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -48075,7 +48313,7 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons.",
+        "rationale": "Read every general teaching section, worked example and scope qualification; application-owner pointers are excluded and no patient findings are copied. Explicit requirements distinguish currently evidenced fields from unresolved comparisons. Its previously open endpoint/durability requirement is now represented after repairing the actual response owners.",
         "sectionHashes": [
           "a14e069c3c1b98349771d79b24475c3e0f41f973201024d190bfe2c6d83f2962",
           "f6c47470c035f8aa45d68339916924d3bddb69838e131258ee05d6b731f009e3",
@@ -48133,11 +48371,24 @@
           {
             "id": "single-endpoint-and-durability",
             "requirement": "Keep a hypothetical zero or small residual at one time separate from durable disease control or clinical response criteria; component activity, cell counts and patient benefit are different claims.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner and primary-source comparison remains open for the complete requirement."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "complete-response",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fc1ece9bff91546f76c8ae51abc75291ef792a03bab7947d57408c00e8b24a96",
+                "explanation": "The canonical note explicitly separates fictional zero, clinical criteria and later follow-up."
+              },
+              {
+                "recordId": "duration-of-response",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+                "explanation": "Durability requires a responding-population clock and follow-up, not one observation."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -49103,43 +49354,88 @@
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here.",
+        "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here. Nine actual canonical owners, including the imaging overview and criterion pages, now retain the primary definitions. Five independently resolved MED identities/complete abstracts and named selected primary passages/guidance were read. Blocked/unrelated HTTP bodies are excluded; original HTML is not claimed recovered by the parsed primary-web capture.",
         "points": [
           {
             "id": "response-criteria-and-confirmation",
             "requirement": "Review complete versus partial/overall response, target/non-target/new-lesion requirements, node measurement and the trial-specific confirmation rule; preserve disease- and method-specific scope.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The existing complete-response and complete-response-term owners need source-verified repair."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "recist",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e79e9f5d2fe72d23522fdaf6dcda9490f2ea7ae45333ec6ef40e6950594e6585",
+                "explanation": "Full-disease conditions, pathological-node axis, references and design-specific confirmation are explicit."
+              },
+              {
+                "recordId": "complete-response-term",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "d78522ed5af7cb98f946b8094c930eb257084cb313ed84c7dc8035f679e94034",
+                "explanation": "Solid-tumour target-diameter rules are not universal blood-cancer or volume criteria."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "responder-population-and-clock",
             "requirement": "Keep duration among responders, first-response origin, event/censoring definitions, follow-up and a not-reached median separate from all-patient comparative outcomes.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The existing duration-of-response owners retain unqualified duration/survival claims; primary follow-up remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "duration-of-response",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+                "explanation": "Responders, first-response versus CR origin, events, censoring, follow-up and not-reached interpretation remain distinct."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "clinical-benefit-and-regulatory-context",
             "requirement": "Remove universal best-result, survival-tail and approval shortcuts; response and durability do not automatically establish clinical benefit, cure or identical regulatory requirements.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "Current FDA guidance/context and existing owner wording require full raw-source comparison."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "orr",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+                "explanation": "FDA context replaces universal approval, clinical-benefit and personal-forecast shortcuts."
+              },
+              {
+                "recordId": "duration-of-response",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+                "explanation": "Duration does not automatically create a survival plateau or comparative survival benefit."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "disease-control-and-timing",
             "requirement": "Define stable disease, disease/clinical benefit rates and response timing by the actual criterion and observation window rather than a universal treatment-family ranking.",
-            "status": "gap",
-            "evidence": [],
-            "remaining": [
-              "The existing duration-of-response-term summary needs a scoped DCR/CBR/time-to-response review."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "duration-of-response-term",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "ef369d64703bd5ca27bffd2713160b43a17b5c940ac3cf023229d21b670b4b90",
+                "explanation": "DCR/CBR and stable disease need protocol-specific categories/duration; response timing is not ranked universally by treatment family."
+              },
+              {
+                "recordId": "duration-of-response-term",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6ed48f3c7853f404fc7390726fb5462886a2375140776edbc16ba1a9f07bf258",
+                "explanation": "The two concrete historical studies retain different endpoints and analysis populations."
+              }
+            ],
+            "remaining": []
           }
         ]
       }

@@ -8,20 +8,20 @@ The goal is active. This checkpoint is not a completed audit. Counts derive from
 | Concepts/comparisons | 411 |
 | Guides/lessons | 112 |
 | Navigation sources awaiting classification | 0 |
-| Teaching sources fully read (including seven navigation pages) | 81 |
-| Reviewed sources completely represented in drafts | 75 |
-| Reviewed sources retaining requirements | 6 |
-| Content sources unread | 449 |
-| Curriculum requirements | 325 |
-| Requirements with field evidence | 316 |
-| Curriculum requirements open | 9 |
+| Teaching sources fully read (including seven navigation pages) | 83 |
+| Reviewed sources completely represented in drafts | 78 |
+| Reviewed sources retaining requirements | 5 |
+| Content sources unread | 447 |
+| Curriculum requirements | 336 |
+| Requirements with field evidence | 328 |
+| Curriculum requirements open | 8 |
 | New records in draft #375 | 33 |
-| Existing owners updated in draft #375 | 116 |
+| Existing owners updated in draft #375 | 125 |
 | Reviewed-source completion on pinned main | 0 |
-| Adjacent concepts represented in drafts | 16 |
-| Adjacent concepts open | 3 |
-| Declared literature occurrences | 246 |
-| Literature occurrences screened | 141 |
+| Adjacent concepts represented in drafts | 17 |
+| Adjacent concepts open | 2 |
+| Declared literature occurrences | 251 |
+| Literature occurrences screened | 146 |
 | Literature occurrences unread | 105 |
 | Schema drafts awaiting approval/hosted preview | 4 |
 | Clean final full re-audits | 0 |
@@ -36,7 +36,7 @@ The earlier [cell-control checkpoint](cell-control-validation.md) closes five ad
 
 The [payload reconciliation](payload-follow-up-reconciliation.json) refreshes draft #369 at `b5a3c341deb1f5cce51dcb3791b239898eea3647`: 39 owners (32 new, seven existing), 20 already-read curriculum requirements now evidenced and 20 additional screened discovery occurrences. Exact exatecan ownership, dosage hypotheses, corrected/retracted evidence and a registry source conflict are retained. No additional curriculum reading is claimed.
 
-Next work includes remaining payload comparison/chemical profiles, newly exposed endpoint terms, residual measurement requirements and unread curriculum/literature.
+Next work includes remaining payload comparison/chemical profiles, the TNBC classification consumer and residual measurement requirements and unread curriculum/literature.
 
 The [9 November recovery](artifact-recovery-2026-11-09.json) restores the pinned baseline, 11 education responses and 39 older payload captures byte-exactly, and replaces lost visual-review images with 32 new matched SSR captures in persistent storage. Four newer Elicit response bodies and newer temporary-only primary captures remain unavailable. This changes custody status and the review-pack location, not content coverage.
 
@@ -52,3 +52,9 @@ Final local-treatment gates pass: 22,716 entities, typecheck, full lint (zero er
 The [state/navigation checkpoint](state-and-navigation-2026-11-09/scope.json) classifies all remaining navigation pages. Six are teaching sources with fourteen new requirements, of which six already have field evidence. Three are routing/generated metadata. Source roles do not silently exclude teaching. The actual exhaustion/persistence term is corrected at its owner using twelve resolved MED identities, eleven available complete abstracts and selected passages from two full texts. One adjacent finding closes; a new four-point response/duration finding remains open. All 149 owners and seven changed field parts pass reader checks. Validate (22,716 entities), typecheck, lint and the full 282-file/2,821-test suite pass, with two existing skips; no floors or budgets changed.
 
 The navigation comparison also reopens the existing classification finding with one additional consumer requirement: the TNBC parent still mixes research RNA groups, histologies and treatment-sensitivity shortcuts. Its earlier ER/PR/nodal points remain represented. A generic lineage note does not count as repairing this parent.
+
+The [response/criteria checkpoint](response-endpoints-2026-11-09/scope.json) reads two concepts and closes twelve curriculum requirements, including the lab’s earlier durability point, plus four adjacent endpoint requirements. Nine actual owners are corrected, with no new record. Five resolved MED identities/complete abstracts, selected primary criterion passages and official guidance are scoped. Failed or unrelated bodies are excluded; a retained parsed primary-page capture is distinct from original HTML. All 158 current owners and 53 changed field parts pass rendered checks; the exact current HTML bundle is archived outside Git. Validate (22,716 entities), typecheck, lint and 282 files / 2,821 tests pass with two existing skips. No floors or budgets changed.
+
+The active Guide checkout advanced during this checkpoint. An isolated sparse checkout of the original pin now supplies the same 537 verified Markdown hashes; the [receipt](source-checkout-isolation-2026-11-09.json) preserves that boundary. Newer source content is not silently substituted into earlier field proofs.
+
+The known newer Guide commit is also a pending source delta before final re-audits; no later-version coverage is inferred from the original pin. Its path counts are recorded separately from the current 537-source census.

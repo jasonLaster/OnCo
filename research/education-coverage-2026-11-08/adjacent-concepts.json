@@ -958,43 +958,88 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here.",
+      "rationale": "Following the learning-lab durability requirement exposed categorical claims in four existing owners. All four canonical narratives were read. Primary sources have been located/captured but their complete identity/definition and raw passage review is pending; no correction is credited here. Nine actual canonical owners, including the imaging overview and criterion pages, now retain the primary definitions. Five independently resolved MED identities/complete abstracts and named selected primary passages/guidance were read. Blocked/unrelated HTTP bodies are excluded; original HTML is not claimed recovered by the parsed primary-web capture.",
       "points": [
         {
           "id": "response-criteria-and-confirmation",
           "requirement": "Review complete versus partial/overall response, target/non-target/new-lesion requirements, node measurement and the trial-specific confirmation rule; preserve disease- and method-specific scope.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "The existing complete-response and complete-response-term owners need source-verified repair."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "recist",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "e79e9f5d2fe72d23522fdaf6dcda9490f2ea7ae45333ec6ef40e6950594e6585",
+              "explanation": "Full-disease conditions, pathological-node axis, references and design-specific confirmation are explicit."
+            },
+            {
+              "recordId": "complete-response-term",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "d78522ed5af7cb98f946b8094c930eb257084cb313ed84c7dc8035f679e94034",
+              "explanation": "Solid-tumour target-diameter rules are not universal blood-cancer or volume criteria."
+            }
+          ],
+          "remaining": []
         },
         {
           "id": "responder-population-and-clock",
           "requirement": "Keep duration among responders, first-response origin, event/censoring definitions, follow-up and a not-reached median separate from all-patient comparative outcomes.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "The existing duration-of-response owners retain unqualified duration/survival claims; primary follow-up remains open."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "duration-of-response",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+              "explanation": "Responders, first-response versus CR origin, events, censoring, follow-up and not-reached interpretation remain distinct."
+            }
+          ],
+          "remaining": []
         },
         {
           "id": "clinical-benefit-and-regulatory-context",
           "requirement": "Remove universal best-result, survival-tail and approval shortcuts; response and durability do not automatically establish clinical benefit, cure or identical regulatory requirements.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "Current FDA guidance/context and existing owner wording require full raw-source comparison."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "orr",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "11fe45f764038324619b2008b0e87cf59e7d43348b04836a075e178577d697e5",
+              "explanation": "FDA context replaces universal approval, clinical-benefit and personal-forecast shortcuts."
+            },
+            {
+              "recordId": "duration-of-response",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "dd933943d6ca0153cc63519a922010c48b2408fa2b8c0b8eef2dd34c1ed9d07c",
+              "explanation": "Duration does not automatically create a survival plateau or comparative survival benefit."
+            }
+          ],
+          "remaining": []
         },
         {
           "id": "disease-control-and-timing",
           "requirement": "Define stable disease, disease/clinical benefit rates and response timing by the actual criterion and observation window rather than a universal treatment-family ranking.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "The existing duration-of-response-term summary needs a scoped DCR/CBR/time-to-response review."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "duration-of-response-term",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "ef369d64703bd5ca27bffd2713160b43a17b5c940ac3cf023229d21b670b4b90",
+              "explanation": "DCR/CBR and stable disease need protocol-specific categories/duration; response timing is not ranked universally by treatment family."
+            },
+            {
+              "recordId": "duration-of-response-term",
+              "version": "proposal-therapeutic",
+              "field": "notes",
+              "fieldSha256": "6ed48f3c7853f404fc7390726fb5462886a2375140776edbc16ba1a9f07bf258",
+              "explanation": "The two concrete historical studies retain different endpoints and analysis populations."
+            }
+          ],
+          "remaining": []
         }
       ]
     }

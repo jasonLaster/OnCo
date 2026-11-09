@@ -175,6 +175,39 @@
       "responseSha256": "f8f9308ddaf7e380f5c3e87df63ed1a9604c393b95c78255839a412e18107631",
       "hitCount": 4,
       "returnedCount": 4
+    },
+    {
+      "id": "endpoint-definitions-recist-core",
+      "query": "DOI%3A10.1016/j.ejca.2008.10.026",
+      "queryEncoding": "URL-encoded Europe PMC field query; capture manifest retains exact request URL",
+      "maxResults": 25,
+      "lane": "Targeted primary identity lookup; every returned complete MED abstract read. Not an exhaustive endpoint-methodology literature census.",
+      "responseFile": "response-endpoint-primary/recist-core.json",
+      "responseSha256": "52d96d27b58672569eaa347d64cbfb6692181da66e635fe6fa6d678f0303ee36",
+      "hitCount": 1,
+      "returnedCount": 1
+    },
+    {
+      "id": "endpoint-definitions-cbr-examples-core",
+      "query": "%28EXT_ID%3A23965901%20OR%20EXT_ID%3A29373071%29%20AND%20SRC%3AMED",
+      "queryEncoding": "URL-encoded Europe PMC field query; capture manifest retains exact request URL",
+      "maxResults": 25,
+      "lane": "Targeted primary identity lookup; every returned complete MED abstract read. Not an exhaustive endpoint-methodology literature census.",
+      "responseFile": "response-endpoint-primary/cbr-examples-core.json",
+      "responseSha256": "b2d93e5cfb962bd4ea9f2ee340dc38361da47a8130bdf542898aae259d41ae67",
+      "hitCount": 2,
+      "returnedCount": 2
+    },
+    {
+      "id": "endpoint-definitions-criteria-med-quoted",
+      "query": "DOI%3A%2210.1016/S1470-2045%2817%2930074-8%22%20OR%20DOI%3A%2210.2967/jnumed.108.057307%22",
+      "queryEncoding": "URL-encoded Europe PMC field query; capture manifest retains exact request URL",
+      "maxResults": 25,
+      "lane": "Targeted primary identity lookup; every returned complete MED abstract read. Not an exhaustive endpoint-methodology literature census.",
+      "responseFile": "response-endpoint-primary/criteria-med-quoted.json",
+      "responseSha256": "7c0f59bee2b1054ab3dda9dcd8ca400799bda2fda14a51b8eea28117d3596049",
+      "hitCount": 2,
+      "returnedCount": 2
     }
   ],
   "rules": [

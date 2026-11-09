@@ -626,10 +626,11 @@ const germinalCentrePathway: PathwayInput = {
 
 // ======================= NEW TECHNOLOGY: CLONALITY TESTING =======================
 const clonalityTechnology: TechnologyInput = {
-  kind: "technology", asOf, id: "clonality-testing", name: "Immunoglobulin and T-cell receptor clonality testing",
+    related:["vdj-recombination","cell-lineage-and-state"],
+  kind: "technology", asOf:"2026-11-08", id: "clonality-testing", name: "Immunoglobulin and T-cell receptor clonality testing",
   aka: ["IGH clonality", "TCR clonality", "BIOMED-2", "EuroClonality", "gene rearrangement study", "B-cell clonality", "T-cell clonality"],
-  tldr: "A test that asks whether a group of lymphocytes is one family descended from a single cell, or a crowd of unrelated ones. Cancer is one family. It is used when the appearance under the microscope is not enough to decide.",
-  summary: "Every B cell and T cell rearranges its antigen receptor genes into a sequence unique to itself, so the length and sequence of that rearrangement is a fingerprint for the cell and all its descendants. A reactive lymph node contains thousands of different rearrangements and gives a smooth, polyclonal distribution; a lymphoma contains one, repeated, and gives a single peak.\n\nThe European BIOMED-2 collaboration standardised the assay into 107 primers in 18 multiplex tubes covering the immunoglobulin heavy chain in two configurations, the kappa and lambda light chains, the T-cell receptor beta, gamma and delta loci, and the BCL1-IGH and BCL2-IGH translocations, read by heteroduplex analysis or fragment sizing. The EuroClonality-NGS successor sequences the amplicons instead of sizing them, which both improves resolution and produces a patient-specific sequence that can be followed afterwards as a residual disease marker.\n\nThe assay is most often ordered where morphology and immunohistochemistry disagree or where the sample is small: a skin biopsy in suspected cutaneous T-cell lymphoma, a gastric biopsy in suspected MALT lymphoma, a marrow with an ambiguous infiltrate, or a lymph node with an atypical but not clearly malignant population.",
+  tldr: "Receptor-gene patterns can provide evidence of a clonal lymphocyte population. The result must be interpreted with the tissue findings and does not diagnose cancer by itself.",
+  summary: "Developing lymphocytes rearrange antigen-receptor genes. Shared rearrangements can support common ancestry, but a detected clonal pattern is not synonymous with malignancy, and a negative assay does not exclude it. Sampling, reactive expansions, multiple alleles, primer coverage and technical artifacts affect interpretation. The number of peaks is not a direct count of clones.\n\nThe European BIOMED-2 collaboration standardised the assay into 107 primers in 18 multiplex tubes covering the immunoglobulin heavy chain in two configurations, the kappa and lambda light chains, the T-cell receptor beta, gamma and delta loci, and the BCL1-IGH and BCL2-IGH translocations, read by heteroduplex analysis or fragment sizing. The EuroClonality-NGS successor sequences the amplicons instead of sizing them, which both improves resolution and produces a patient-specific sequence that can be followed afterwards as a residual disease marker.\n\nThe assay is most often ordered where morphology and immunohistochemistry disagree or where the sample is small: a skin biopsy in suspected cutaneous T-cell lymphoma, a gastric biopsy in suspected MALT lymphoma, a marrow with an ambiguous infiltrate, or a lymph node with an atypical but not clearly malignant population.",
   principle: "Multiplex PCR, or targeted sequencing, across the V, D and J segments of the immunoglobulin and T-cell receptor loci. A clonal population gives amplicons of one length and sequence; a polyclonal population gives a Gaussian spread of lengths. The output is a pattern, not a diagnosis.",
   strengths: [
     "Works on tiny and on fixed samples, including paraffin blocks and skin punch biopsies, where flow cytometry cannot be done",
@@ -647,12 +648,12 @@ const clonalityTechnology: TechnologyInput = {
   cancers: [CX.nhl, CX.ctcl, CX.sezary, CX.malt, CX.mzl, CX.ptcl, CX.fl, CX.dlbcl],
   technologies: ["ngs-mrd-clonoseq", "histopathology-ihc", "flow-cytometry-mrd", "mrd-testing"],
   terms: ["ngs", "mrd", "lymphoma-bio-germinal-centre"],
-  links: [SRC.vandongen2003],
+  links: [{"label":"van Dongen et al., Leukemia 2003: BIOMED-2 multiplex PCR for clonal immunoglobulin and T-cell receptor rearrangements","url":"https://doi.org/10.1038/sj.leu.2403202"},{"label":"EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.","url":"https://pubmed.ncbi.nlm.nih.gov/22918122/"}],
   tags: ["diagnostics", "lymphoma"],
 };
 
 // ======================= NEW GLOSSARY TERMS =======================
-const term = (x: Omit<TermInput, "kind" | "asOf">): TermInput => ({ kind: "term", asOf, ...x });
+const term = (x: Omit<TermInput, "kind" | "asOf"> & { asOf?: string }): TermInput => ({ kind: "term", asOf, ...x });
 
 const terms: TermInput[] = [
   term({
@@ -888,10 +889,11 @@ const readouts: BiomarkerInput[] = [
     links: [SRC.green2010, SRC.roemer2016, SRC.roemer2018, SRC.ansell2015], tags: ["biomarker", "lymphoma"],
   },
   {
-    kind: "biomarker", asOf, id: "ig-tcr-clonality", name: "Immunoglobulin and T-cell receptor clonality",
+    related:["vdj-recombination","cell-lineage-and-state"],
+    kind: "biomarker", asOf:"2026-11-08", id: "ig-tcr-clonality", name: "Immunoglobulin and T-cell receptor clonality",
     aka: ["IGH clonality", "TCR clonality", "clonal rearrangement", "gene rearrangement study", "B-cell clonality", "T-cell clonality", "BIOMED-2"],
-    tldr: "A test that asks whether a group of lymphocytes all descend from one cell. Cancer is one family; a normal immune response is a crowd. It is used when the appearance under the microscope does not settle the question.",
-    summary: "Every lymphocyte rearranges its antigen receptor genes into a sequence unique to itself, so a lymphoma made of one clone gives amplicons of one length and sequence while a reactive population gives a smooth spread.\n\nThe European BIOMED-2 collaboration standardised the assay into 107 primers in 18 multiplex tubes covering IGH in two configurations, IGK, IGL, TCRB, TCRG and TCRD plus the BCL1-IGH and BCL2-IGH translocations, with products read by heteroduplex analysis or fragment sizing. The complementarity of the tubes is what makes the detection rate high: combined IGH and IGK tubes detect virtually all clonal B-cell proliferations even where somatic hypermutation is heavy, and combined TCRB and TCRG tubes detect virtually all clonal T-cell populations (van Dongen 2003). The EuroClonality-NGS successor sequences the amplicons rather than sizing them and produces a patient-specific sequence that can be followed afterwards as a residual disease marker.\n\nThe result is a pattern, not a diagnosis, and the commonest harm this test does is being read as one.",
+    tldr: "Receptor-gene patterns can provide evidence of a clonal lymphocyte population. The result must be interpreted with the tissue findings and does not diagnose cancer by itself.",
+    summary: "Developing lymphocytes rearrange antigen-receptor genes. Shared rearrangements can support common ancestry, but a detected clonal pattern is not synonymous with malignancy, and a negative assay does not exclude it. Sampling, reactive expansions, multiple alleles, primer coverage and technical artifacts affect interpretation. The number of peaks is not a direct count of clones.\n\nThe European BIOMED-2 collaboration standardised the assay into 107 primers in 18 multiplex tubes covering IGH in two configurations, IGK, IGL, TCRB, TCRG and TCRD plus the BCL1-IGH and BCL2-IGH translocations, with products read by heteroduplex analysis or fragment sizing. The complementarity of the tubes is what makes the detection rate high: combined IGH and IGK tubes detect virtually all clonal B-cell proliferations even where somatic hypermutation is heavy, and combined TCRB and TCRG tubes detect virtually all clonal T-cell populations (van Dongen 2003). The EuroClonality-NGS successor sequences the amplicons rather than sizing them and produces a patient-specific sequence that can be followed afterwards as a residual disease marker.\n\nThe result is a pattern, not a diagnosis, and the commonest harm this test does is being read as one.",
     noParentReason: "The readout is a pattern across the immunoglobulin and T-cell receptor loci rather than a result for one gene or protein: the question is whether the population is monoclonal, and no single parent gene answers it.",
     measurement: "sequencing-variant",
     scoringRule: { text: "Multiplex PCR, or targeted sequencing, across the V, D and J segments, reported as clonal, polyclonal or oligoclonal, with the loci tested named. A clonal result should be read with the morphology and immunophenotype and never alone: clonal populations occur in reactive, autoimmune and age-related conditions, and a polyclonal result does not exclude a lymphoma in which the malignant cells are a small minority.", quote: "In particular, combined application of IGH (VH-JH and DH-JH) and IGK tubes can detect virtually all clonal B-cell proliferations, even in B-cell malignancies with high levels of somatic mutations.", source: doi("10.1038/sj.leu.2403202"), sourceLabel: "van Dongen et al., Leukemia 2003" },
@@ -900,7 +902,7 @@ const readouts: BiomarkerInput[] = [
     cancers: [CX.nhl, CX.ctcl, CX.sezary, CX.malt, CX.ptcl, CX.fl], targets: [],
     pathways: ["clonal-evolution"], terms: ["ngs", "mrd", "lymphoma-bio-germinal-centre"],
     technologies: ["clonality-testing", "ngs-mrd-clonoseq", "flow-cytometry-mrd"],
-    links: [SRC.vandongen2003], tags: ["biomarker", "lymphoma"],
+    links: [{"label":"van Dongen et al., Leukemia 2003: BIOMED-2 multiplex PCR for clonal immunoglobulin and T-cell receptor rearrangements","url":"https://doi.org/10.1038/sj.leu.2403202"},{"label":"EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.","url":"https://pubmed.ncbi.nlm.nih.gov/22918122/"}], tags: ["biomarker", "lymphoma"],
   },
 ];
 

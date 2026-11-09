@@ -48,4 +48,13 @@ describe("curriculum coverage closure", () => {
     expect(dependencyProblems([{ id: "assay-status", status: "pending approval" }], [{ queryId: "immunology", rank: 1, reviewStatus: "unreviewed" }])).toEqual(["Schema gap remains open: assay-status", "Literature screening remains open: immunology:1"]);
     expect(dependencyProblems([{ id: "assay-status", status: "resolved" }], [{ queryId: "immunology", rank: 1, reviewStatus: "screened-unused" }])).toEqual([]);
   });
+
+  it("applies semantic closure to discoveries outside the curriculum", () => {
+    const discovered = { sourceType: "adjacent-concept", review: { status: "unreviewed" as const, points: [] } };
+    expect(reviewProblems(discovered, new Map())).toEqual(["Content remains unreviewed"]);
+    const row = item();
+    row.sourceType = "adjacent-concept";
+    row.review = { status: "reviewed", auditor: "agent", checkedAt: "2026-11-08", rationale: "Read the discovered concept and its proposed owner.", points: [{ id: "new-distinction", requirement: "Retain assay context.", status: "covered-draft", remaining: [], evidence: [{ recordId: "example", version: "proposal-biology", field: "summary", fieldSha256: fieldHash(record.summary), explanation: "States the readout and its conditions." }] }] };
+    expect(reviewProblems(row, new Map([["proposal-biology:example", record]]))).toEqual([]);
+  });
 });

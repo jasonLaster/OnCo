@@ -1,7 +1,7 @@
 import type { PathwayInput } from "@/lib/schema";
 
 const asOf = "2026-09-04";
-type P = Omit<PathwayInput, "kind" | "asOf">;
+type P = Omit<PathwayInput, "kind" | "asOf"> & { asOf?: string };
 const p = (x: P): PathwayInput => ({ kind: "pathway", asOf, ...x });
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 
@@ -266,9 +266,10 @@ export const pathways: PathwayInput[] = [
     targets: ["gpc3"], cancers: ["colorectal", "hcc", "endometrial"], technologies: ["chemoprevention"], links: [{ label: "Wikipedia", url: W("Wnt_signaling_pathway") }],
   }),
   p({
-    id: "emt", related: ["theories-of-cancer", "cancer-stem-cell-theory"], name: "Epithelial-mesenchymal transition & drug efflux", keyPapers: ["paper-lamouille-emt-molecular-mechanisms-nrmcb-2014"], wikipedia: W("Epithelial–mesenchymal_transition"),
-    tldr: "How a cancer cell changes shape to migrate and to shrug off drugs. Transcription factors like ZEB1 and SNAIL loosen the cell, switch on pumps that eject chemotherapy, and hide it from the immune system.",
-    summary: "TGF-β, Wnt, Notch, hypoxia, and inflammation induce ZEB1/2, SNAIL, SLUG, TWIST, which repress E-cadherin and epithelial genes and induce vimentin, N-cadherin, and matrix proteases. EMT confers invasiveness, stemness, resistance to apoptosis, upregulated ABC efflux transporters (ABCB1/P-gp, ABCG2), and immune exclusion. Partial EMT states dominate in tumours. Clinically: the mesenchymal/claudin-low TNBC subtype, sarcomatoid carcinomas, and TKI resistance (EGFR NSCLC). No approved EMT drug; strategies include TGF-β blockade (bintrafusp failed), efflux-agnostic payloads, and targeting mesenchymal-state dependencies (GPX4, ferroptosis).",
+    asOf:"2026-11-08", notes:["Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment."],
+    id: "emt", related: ["theories-of-cancer","cancer-stem-cell-theory","cell-lineage-and-state","epithelium-and-stroma","cell-composition-confound"], name: "Epithelial-mesenchymal transition & drug efflux", keyPapers: ["paper-lamouille-emt-molecular-mechanisms-nrmcb-2014"], wikipedia: W("Epithelial–mesenchymal_transition"),
+    tldr: "Epithelial cells can change a coordinated set of properties, sometimes entering intermediate states. The consequences depend on the cells and the experimental or clinical context.",
+    summary: "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
     analogy: "A brick in a wall (epithelial cell) turning into a nomad: it lets go of its neighbours, packs pumps to spit out poison, and puts on camouflage. The wall-brick was easy to hit; the nomad is not.",
     nodes: [
       { id: "tgf", label: "TGF-β, Wnt, Notch, hypoxia", x: 50, y: 5 },
@@ -284,7 +285,7 @@ export const pathways: PathwayInput[] = [
       { from: "tgf", to: "tf" }, { from: "tf", to: "ecad", type: "inhibits" }, { from: "tf", to: "vim" }, { from: "tf", to: "abc" }, { from: "tf", to: "stem" }, { from: "tf", to: "imm" }, { from: "vim", to: "out" }, { from: "abc", to: "out" }, { from: "stem", to: "out" },
     ],
     interventions: ["No approved direct EMT inhibitor", "Payloads with low efflux susceptibility (sac-TMT's belotecan derivative claims this) and radiation (efflux-independent)", "TGF-β pathway blockade (mostly failed so far)", "Ferroptosis inducers for mesenchymal-state cells (preclinical)", "Immune approaches to overcome exclusion (STING, radiation)"],
-    targets: ["trop2"], technologies: ["adc", "radioligand-therapy", "single-cell-spatial"], cancers: ["tnbc", "nsclc"], terms: ["efflux-pump", "resistance"], links: [{ label: "Wikipedia", url: W("Epithelial–mesenchymal_transition") }],
+    targets: ["trop2"], technologies: ["adc", "radioligand-therapy", "single-cell-spatial"], cancers: ["tnbc", "nsclc"], terms: ["efflux-pump", "resistance"], links: [{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition"},{"label":"Guidelines and definitions for research on epithelial-mesenchymal transition.","url":"https://pubmed.ncbi.nlm.nih.gov/32300252/"},{"label":"Identification of the tumour transition states occurring during EMT.","url":"https://pubmed.ncbi.nlm.nih.gov/29670281/"},{"label":"Epithelial-to-mesenchymal transition is not required for lung metastasis but contributes to chemoresistance.","url":"https://pubmed.ncbi.nlm.nih.gov/26560033/"}],
   }),
   p({
     id: "bcr-signalling", name: "B-cell receptor / BTK signalling (to NF-κB)", wikipedia: W("B-cell_receptor"),

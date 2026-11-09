@@ -76,7 +76,7 @@ export function candidateFinder(catalog: CatalogRow[]) {
 }
 
 /** Closure requires a semantic review and unchanged field evidence, not a lexical match. */
-export function reviewProblems(item: CurriculumItem, catalog: Map<string, RecordData>): string[] {
+export function reviewProblems(item: Pick<CurriculumItem, "sourceType" | "review">, catalog: Map<string, RecordData>): string[] {
   const r = item.review, errors: string[] = [];
   if (item.sourceType === "navigation" && r.status !== "reviewed") {
     if (r.status !== "navigation") errors.push("Navigation item lacks a navigation disposition");
@@ -124,9 +124,12 @@ function main() {
   const catalog: CatalogRow[] = base.map(record => ({ version: "main", record }));
   const pending = [369, 371, 373].map(pr => readJSON<{ pr: number; head: string; records: RecordData[] }>(join(out, "pending", "pr-" + pr + ".json")));
   for (const p of pending) for (const record of p.records) catalog.push({ version: "draft-" + p.pr, record });
-  const proposalIndex = args.indexOf("--proposal");
-  const proposal = proposalIndex >= 0 ? readJSON<{ version: string; state: string; records: RecordData[] }>(resolve(args[proposalIndex + 1])) : undefined;
-  if (proposal) {
+  const proposals = args.flatMap((value, index) => {
+    if (value !== "--proposal") return [];
+    if (!args[index + 1] || args[index + 1].startsWith("--")) throw new Error("Missing --proposal path");
+    return [readJSON<{ version: string; state: string; records: RecordData[] }>(resolve(args[index + 1]))];
+  });
+  for (const proposal of proposals) {
     if (!proposal.version || !proposal.state || proposal.version === "main" || catalog.some(r => r.version === proposal.version)) throw new Error("Proposal needs a distinct version and an explicit contribution state");
     for (const record of proposal.records) catalog.push({ version: proposal.version, record });
   }
@@ -162,21 +165,23 @@ function main() {
   const find = candidateFinder(catalog);
   const candidates = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed").map(r => ({ path: r.path, candidates: find(r) }));
   const failures = items.flatMap(item => reviewProblems(item, catalogMap).map(problem => ({ path: item.path, problem })));
+  const adjacent = existsSync(join(out, "adjacent-concepts.json")) ? readJSON<{ id: string; title: string; domain: string; sourceURLs: string[]; discoveryOccurrences: string[]; review: Review }[]>(join(out, "adjacent-concepts.json")) : [];
+  const adjacentFailures = adjacent.flatMap(item => reviewProblems({ sourceType: "adjacent-concept", review: item.review }, catalogMap).map(problem => ({ path: "adjacent/" + item.id, problem })));
   const schemas = readJSON<{ id: string; status: string }[]>(join(out, "schema-gaps.json"));
   const literature = readJSON<{ queryId: string; rank: number; reviewStatus: string }[]>(join(out, "literature-dispositions.json"));
   const dependencies = dependencyProblems(schemas, literature);
   const count = (pred: (r: CurriculumItem) => boolean) => items.filter(pred).length;
   const content = items.filter(r => r.sourceType !== "navigation" || r.review.status === "reviewed");
   const closed = content.filter(r => !reviewProblems(r, catalogMap).length);
-  const stats = { totalSources: items.length, conceptOrComparison: count(r => ["concept", "comparison"].includes(r.sourceType)), guideOrLesson: count(r => ["guide", "guide-lesson"].includes(r.sourceType)), navigation: count(r => r.sourceType === "navigation"), navigationReviewed: count(r => r.sourceType === "navigation" && r.review.status === "navigation" && !reviewProblems(r, catalogMap).length), navigationWithTeachingContent: count(r => r.sourceType === "navigation" && r.review.status === "reviewed"), semanticallyReviewed: count(r => r.review.status === "reviewed"), implementedCoverage: closed.length, mainCoverage: closed.filter(r => r.review.points.every(p => p.status === "covered-main")).length, unresolvedContentItems: content.length - closed.length, unresolvedSources: new Set(failures.map(f => f.path)).size, openSchemaGaps: schemas.filter(r => r.status !== "resolved").length, unreviewedLiteratureOccurrences: literature.filter(r => r.reviewStatus === "unreviewed").length, readyForFinalReaudit: !failures.length && !dependencies.length };
-  writeJSON(join(out, "ledger.json"), { schemaVersion: 1, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposal: proposal ? { version: proposal.version, state: proposal.state, recordSnapshotSha256: sha256(JSON.stringify(proposal.records)) } : undefined, stats, items });
+  const stats = { totalSources: items.length, conceptOrComparison: count(r => ["concept", "comparison"].includes(r.sourceType)), guideOrLesson: count(r => ["guide", "guide-lesson"].includes(r.sourceType)), navigation: count(r => r.sourceType === "navigation"), navigationReviewed: count(r => r.sourceType === "navigation" && r.review.status === "navigation" && !reviewProblems(r, catalogMap).length), navigationWithTeachingContent: count(r => r.sourceType === "navigation" && r.review.status === "reviewed"), semanticallyReviewed: count(r => r.review.status === "reviewed"), implementedCoverage: closed.length, mainCoverage: closed.filter(r => r.review.points.every(p => p.status === "covered-main")).length, unresolvedContentItems: content.length - closed.length, unresolvedSources: new Set(failures.map(f => f.path)).size, adjacentConcepts: adjacent.length, unresolvedAdjacentConcepts: new Set(adjacentFailures.map(f => f.path)).size, openSchemaGaps: schemas.filter(r => r.status !== "resolved").length, unreviewedLiteratureOccurrences: literature.filter(r => r.reviewStatus === "unreviewed").length, readyForFinalReaudit: !failures.length && !adjacentFailures.length && !dependencies.length };
+  writeJSON(join(out, "ledger.json"), { schemaVersion: 2, attribution: "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.", oncoBaseline: "0f8ebc2569e2dcb023364d8cb6971186f11f59ab", oncoSnapshotSha256: sha256(readFileSync(baseline)), guideRef: ref, pending: pending.map(p => ({ pr: p.pr, head: p.head, state: "open draft; not merged" })), proposals: proposals.map(p => ({ version: p.version, state: p.state, recordSnapshotSha256: sha256(JSON.stringify(p.records)) })), stats, items, adjacent });
   writeJSON(join(out, "candidates.json"), { warning: "Lexical retrieval for manual review only; no match score establishes coverage.", items: candidates });
-  writeJSON(join(out, "open-items.json"), failures);
+  writeJSON(join(out, "open-items.json"), [...failures, ...adjacentFailures]);
   writeJSON(join(out, "open-dependencies.json"), dependencies);
   const packDir = "/tmp/onco-systematic-review-pack"; mkdirSync(packDir, { recursive: true });
   for (const [domain, rows] of Object.entries(reviewPack)) writeJSON(join(packDir, domain + ".json"), rows);
   console.log(JSON.stringify(stats));
-  if (args.includes("--check-closed") && (failures.length || dependencies.length)) process.exitCode = 2;
+  if (args.includes("--check-closed") && (failures.length || adjacentFailures.length || dependencies.length)) process.exitCode = 2;
 }
 
 if (process.argv[1]?.endsWith("education-coverage.ts")) main();

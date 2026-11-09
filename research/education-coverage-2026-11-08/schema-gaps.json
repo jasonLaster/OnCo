@@ -24,5 +24,18 @@
     "finding": "Dated raw study captures and site counts exist, but the normalized participation row does not retain named facility statuses or cohort availability. This is not loss of the original registry source.",
     "needed": "Optional source-backed facility-status observations with registry provenance; cohort/slot availability remains unknown unless separately reported. Do not infer it from overall status.",
     "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated."
+  },
+  {
+    "id": "mechanism-edge-evidence",
+    "status": "open; concrete schema proposal required",
+    "question": "Can a mechanism edge retain its model, observation versus hypothesis, source and uncertainty instead of representing every connection only as activation or inhibition?",
+    "currentFields": [
+      "src/lib/schema.ts:PathwayEdgeSchema.from",
+      "src/lib/schema.ts:PathwayEdgeSchema.to",
+      "src/lib/schema.ts:PathwayEdgeSchema.type"
+    ],
+    "finding": "PathwayEdgeSchema retains only endpoints and activates/inhibits. The rendered RNA-splicing map illustrates how context-dependent effects and dependencies acquire categorical arrow wording even when prose is qualified. Record-level sources/notes exist, but the edge has no scoped evidence/provenance fields.",
+    "needed": "A backwards-compatible optional edge-evidence/context structure and a reviewed rendering rule that preserves uncertainty. Do not infer universal causality from a pathway diagram or replace verified mechanisms with generic doubt.",
+    "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now."
   }
 ]

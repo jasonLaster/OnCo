@@ -6,6 +6,12 @@ The pinned public curriculum has 537 Markdown sources: 411 concepts/comparisons,
 
 Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). The public curriculum inventory retains titles, paths, aliases and exact blob hashes. Patient-specific examples and lesson bodies are not copied into this repository. Local review packs stay outside the checkout.
 
+## Current checkpoint
+
+First-pass review covers 37 curriculum sources. Thirty-six have complete proposed representation; the remaining reviewed source retains a specific breast-receptor-classification gap. Another 486 content sources and 14 navigation pages remain unreviewed. Two additional literature-derived concepts have proposed representation. These are review/implementation counts, not an estimate that every unreviewed source is missing from OnCo.
+
+Draft [#375](https://github.com/judegomila/OnCo/pull/375) now contains 18 new terms and 40 canonical-owner updates across access/regulation and biology. The 58 owners do not overlap the three earlier proposals. All proposals remain separate from main. Three schema gaps need concrete proposals and product review; 120 literature occurrences remain unscreened. [Biology checks](biology-validation.md) and [record-source scopes](biology-record-sources.json) state the evidence and validation limits.
+
 ## Method
 
 1. Inventory every pinned Markdown source. Verify working bytes against its Git blob before extracting public metadata. No silently omitted file or unknown document type is permitted.
@@ -25,7 +31,7 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 - `source-blocked`: a required source has not been verified; still open.
 - Navigation is excluded only after a dated check that its teaching content is repeated in audited sources, or after adding any unique requirements to the ledger.
 
-[ledger.json](ledger.json) is the authoritative worklist. [candidates.json](candidates.json) contains unreviewed retrieval suggestions. [open-items.json](open-items.json) is generated from the content closure checks. [open-dependencies.json](open-dependencies.json) retains schema work and unreviewed literature. Earlier selected-batch crosswalks are retained as provenance and suggestions, not copied as completed assessments.
+[ledger.json](ledger.json) is the authoritative worklist. [candidates.json](candidates.json) contains unreviewed retrieval suggestions. [open-items.json](open-items.json) is generated from the content closure checks. [open-dependencies.json](open-dependencies.json) retains schema work and unreviewed literature. [adjacent-concepts.json](adjacent-concepts.json) adds independently discovered requirements to the same closure rules. Repeat `--proposal` for independently versioned domain snapshots. Earlier selected-batch crosswalks are retained as provenance and suggestions, not copied as completed assessments.
 
 ## Reproduce
 
@@ -37,7 +43,8 @@ npx tsx scripts/education-coverage.ts \
   --guide-ref 7510db6be8053b64708b6c6c037ab1ea564a35ab \
   --baseline /path/to/onco-baseline.json \
   --out research/education-coverage-2026-11-08 \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-access.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-access.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-biology.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "provider": "Elicit API",
+  "endpoint": "https://elicit.com/api/v2/search/papers",
+  "retrievedAt": "2026-11-08T23:39:04.005Z",
+  "request": {
+    "query": "Which original single-cell lineage tracing experiments show why similar gene expression states do not establish common ancestry, future cell fate or a genetic clone?",
+    "searchMode": "semantic",
+    "maxResults": 15,
+    "corpus": "elicit"
+  },
+  "response": {
+    "papers": [
+      {
+        "elicitId": "ss-22763828",
+        "title": "The state of engrailed expression is not clonally transmitted during early Drosophila development.",
+        "authors": [
+          "J. Vincent",
+          "P. O’Farrell"
+        ],
+        "year": 1992,
+        "abstract": null,
+        "doi": "10.1016/0092-8674(92)90035-B",
+        "pmid": "1547492",
+        "venue": "Cell",
+        "citedByCount": 174,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-242709900",
+        "title": "Faculty Opinions recommendation of Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo.",
+        "authors": [
+          "K. Artinger"
+        ],
+        "year": null,
+        "abstract": "High-throughput mapping of cellular differentiation hierarchies from single-cell data promises to empower systematic interrogations of vertebrate development and disease. Here we applied single-cell RNA sequencing to >92,000 cells from zebrafish embryos during the first day of development. Using a graph-based approach, we mapped a cell-state landscape that describes axis patterning, germ layer formation, and organogenesis. We tested how clonally related cells traverse this landscape by developing a transposon-based barcoding approach (TracerSeq) for reconstructing single-cell lineage histories. Clonally related cells were often restricted by the state landscape, including a case in which two independent lineages converge on similar fates. Cell fates remained restricted to this landscape in embryos lacking the chordin gene. We provide web-based resources for further analysis of the single-cell data.Copyright © 2018 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim to original U.S. Government Works. PMID: 29700229 Funding information This work was supported by: Wellcome Trust, United Kingdom NIGMS NIH HHS, United States Grant ID: K99 GM121852 NIGMS NIH HHS, United States Grant ID: T32 GM080177 NIDCD NIH HHS, United States Grant ID: R01 DC015478 Howard Hughes Medical Institute, United States NIGMS NIH HHS, United States Grant ID: R01 GM107733 More Less keyboard_arrow_down",
+        "doi": "10.3410/f.733108042.793583885",
+        "pmid": null,
+        "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+        "citedByCount": 1,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-293891528",
+        "title": "LineageFlow: growth-corrected state dynamics for probabilistic cell-fate prediction",
+        "authors": [
+          "Yang Liu",
+          "Qi Liu",
+          "Wei Wang",
+          "Jian Liu",
+          "Yu Wang",
+          "Wei Zhang"
+        ],
+        "year": 2026,
+        "abstract": "Single-cell lineage tracing links early transcriptional states to the fates of their descendants, but forecasting clonal fate remains challenging because differentiation and unequal cell expansion jointly shape descendant populations. Here we introduce LineageFlow, a computational framework that combines continuous-time cell-state transitions, relative net growth and state-conditioned generative flows to predict future fate distributions and transcriptional profiles from early single-cell measurements. In clone-disjoint evaluations of lineage-traced hematopoiesis, LineageFlow improves fate prediction and expression-distribution accuracy over matched computational baselines. A separately retrained analysis of cord-blood lineage data shows a similar advantage at a longer prediction horizon. Controlled simulations show that accounting for differential growth improves fate prediction when descendant states expand at different rates, while offering little benefit under equal growth. These findings highlight the importance of modeling state transitions and relative expansion together when predicting the fate of unseen clones.",
+        "doi": "10.64898/2026.10.17.759846",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 0,
+        "urls": [
+          "https://doi.org/10.64898/2026.10.17.759846"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://doi.org/10.64898/2026.10.17.759846"
+      },
+      {
+        "elicitId": "ss-293915742",
+        "title": "Virtual lineages: in silico lineage tracing from single-cell and spatial transcriptomes",
+        "authors": [
+          "Yong-Jie Lin",
+          "Yi-Han Lin"
+        ],
+        "year": 2026,
+        "abstract": "Experimental lineage tracing reveals histories and fates of individual cells but is costly and often impractical, particularly in primary human tissues. Gene expression differences that persist across cell divisions provide a basis for inferring ancestry from more accessible single cell transcriptomes, yet accurate lineage reconstruction remains challenging. Here, we introduce isCORAL, an in silico lineage-tracing framework that reconstructs clonal relationships and maps cell-fate dynamics from transcriptome snapshots alone. By identifying memory genes with heritable expression differences, isCORAL infers probabilistic clonal relationships and uses them to construct clone-oriented embeddings and dynamic cell-fate maps. Across diverse lineage-tracing datasets, isCORAL markedly outperforms tested alternatives in both memory-gene identification and lineage reconstruction. We use isCORAL to resolve early fate biases among transcriptionally similar hematopoietic stem cells and predict distinct developmental routes to shared outcomes. We extend isCORAL to spatial transcriptomics, validating inferred clonal relationships against an experimentally recorded lineage tree in mouse tumors and inferring early epiblast and amnion dynamics in a human embryo. Together, isCORAL enables lineage-resolved studies of development and disease from standard single cell and spatial transcriptomes, and provides an explicit representation of lineage memory for future virtual cell models.",
+        "doi": "10.64898/2026.10.19.760045",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 0,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2026/10/20/2026.10.19.760045.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2026/10/20/2026.10.19.760045.full.pdf"
+      },
+      {
+        "elicitId": "ss-92723587",
+        "title": "Lineage tracing on transcriptional landscapes links state to fate during differentiation",
+        "authors": [
+          "Caleb Weinreb",
+          "Alejo E. Rodriguez-Fraticelli",
+          "F. Camargo",
+          "Allon M. Klein"
+        ],
+        "year": 2018,
+        "abstract": "Mapping cell fate during hematopoiesis Biologists have long attempted to understand how stem and progenitor cells in regenerating and embryonic tissues differentiate into mature cell types. Through the use of recent technical advances to sequence the genes expressed in thousands of individual cells, differentiation mechanisms are being revealed. Weinreb et al. extended these methods to track clones of cells (cell families) across time. Their approach reveals differences in cellular gene expression as cells progress through hematopoiesis, which is the process of blood production. Using machine learning, they tested how well gene expression measurements account for the choices that cells make. This work reveals that a considerable gap still exists in understanding differentiation mechanisms, and future methods are needed to fully understand—and ultimately control—cell differentiation. Science, this issue p. eaaw3381 Single-cell barcoding allows the tracking of gene expression states over time as blood cells differentiate during hematopoiesis. INTRODUCTION During tissue turnover, stem and progenitor cells differentiate to produce mature cell types. To understand and ultimately control differentiation, it is important to establish how initial differences between cells influence their ultimate choice of cell fate. This challenge is exemplified in hematopoiesis, the ongoing process of blood regeneration in bone marrow, in which multipotent progenitors give rise to red cells of the blood, as well as myeloid and lymphoid immune cell types. In hematopoiesis, progenitor cell states have been canonically defined by their expression of several antigens. However, as in several other tissues, recent transcriptome analysis by single-cell RNA sequencing (scSeq) showed that the canonically defined intermediate cell types are not uniform, but rather contain cells in a variety of gene expression states. scSeq also showed that the states of hematopoietic progenitors form a continuum, differing from classic depictions of a discrete stepwise hierarchy. RATIONALE In this study, we set out to establish how variation in transcriptional state biases future cell fate and whether scSeq is sufficient to completely distinguish cells with distinct fate biases. Directly linking whole-transcriptome descriptions of cells to their future fate is challenging because cells are destroyed during scSeq measurement. We therefore developed a tool we call LARRY (lineage and RNA recovery) that clonally tags cells with DNA barcodes that can be read using scSeq. Using LARRY, we aimed to reconstruct the genome-wide transcriptional trajectories of cells as they differentiate. RESULTS We linked transcriptional progenitor states with their clonal fates by barcoding heterogeneous cells, allowing cell division, and then sampling cells for scSeq immediately or at later time points after differentiation in culture or in transplanted mice. We profiled >300,000 cells in total, comprising 10,968 clones that gave information on lineage relationships at single time points and 2632 clones spanning multiple time points in culture or in mice. We confirmed that clonal trajectories over time approximated the trajectories of single cells and were thus able to identify states of primed fate potential on the continuous transcriptional landscape. From this analysis, we identified genes correlating with fate, established a lineage hierarchy for hematopoiesis in culture and after transplantation, and revealed two routes of monocyte differentiation that give rise to distinct gene expression programs in mature cells. The data made it possible to test state-of the-art algorithms of scSeq analysis, and we found that fate choice occurs earlier than predicted algorithmically but that computationally predicted pseudotime orderings faithfully describe clonal dynamics. We investigated whether there are stable cellular properties that have a cell-autonomous influence on fate choice yet are not detected by scSeq. By analyzing clones split between wells or transplanted into separate mice, we found that the variance in cell fate choice attributable to cell-autonomous fate bias was greater than what could be explained by initial transcriptional state. Less formally, sister cells tended to be far more similar in their fate choice than pairs of cells with similar transcriptomes. These results suggest that current scSeq measurements cannot fully separate progenitor cells with distinct fate bias. The missing signature of future fate choice might be detectable in the RNA that is not sampled during scSeq. Alternatively, other stable cellular properties such as chromatin state could encode the missing information. CONCLUSION By integrating transcriptome and lineage measurements, we established a map of clonal fate on a continuous transcriptional landscape. The map revealed transcriptional correlates of fate among putatively multipotent cells, convergent differentiation trajectories, and fate boundaries that could be not be predicted using current trajectory inference methods. However, the map is far from complete because scSeq cannot separate cells with distinct fate bias. Our results argue for looking beyond scSeq to define cellular maps of stem and progenitor cells and offer an approach for linking cell state and fate in other tissues. Lineage and transcriptome measurements allow fate mapping on continuous cell state landscapes. A tool we named LARRY labels cell clones with an scSeq-compatible barcode. By barcoding cells, letting them divide, and then sampling them immediately or after differentiation, it is possible to link the initial states of cells with their differentiation outcomes and produce a map of cell fate bias on a continuous transcriptional landscape. A challenge in biology is to associate molecular differences among progenitor cells with their capacity to generate mature cell types. Here, we used expressed DNA barcodes to clonally trace transcriptomes over time and applied this to study fate determination in hematopoiesis. We identified states of primed fate potential and located them on a continuous transcriptional landscape. We identified two routes of monocyte differentiation that leave an imprint on mature cells. Analysis of sister cells also revealed cells to have intrinsic fate biases not detectable by single-cell RNA sequencing. Finally, we benchmarked computational methods of dynamic inference from single-cell snapshots, showing that fate choice occurs earlier than is detected by state-of the-art algorithms and that cells progress steadily through pseudotime with precise and consistent dynamics.",
+        "doi": "10.1126/science.aaw3381",
+        "pmid": "31974159",
+        "venue": "Science",
+        "citedByCount": 694,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2018/12/01/467886.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2018/12/01/467886.full.pdf"
+      },
+      {
+        "elicitId": "ss-22218985",
+        "title": "Single-cell lineage tracing in the mammary gland reveals stochastic clonal dispersion of stem/progenitor cell progeny",
+        "authors": [
+          "F. Davis",
+          "B. Lloyd-Lewis",
+          "Olivia B. Harris",
+          "Sarah Kozar",
+          "D. Winton",
+          "Leila Mureşan",
+          "C. Watson"
+        ],
+        "year": 2016,
+        "abstract": "The mammary gland undergoes cycles of growth and regeneration throughout reproductive life, a process that requires mammary stem cells (MaSCs). Whilst recent genetic fate-mapping studies using lineage-specific promoters have provided valuable insights into the mammary epithelial hierarchy, the true differentiation potential of adult MaSCs remains unclear. To address this, herein we utilize a stochastic genetic-labelling strategy to indelibly mark a single cell and its progeny in situ, combined with tissue clearing and 3D imaging. Using this approach, clones arising from a single parent cell could be visualized in their entirety. We reveal that clonal progeny contribute exclusively to either luminal or basal lineages and are distributed sporadically to branching ducts or alveoli. Quantitative analyses suggest that pools of unipotent stem/progenitor cells contribute to adult mammary gland development. Our results highlight the utility of tracing a single cell and reveal that progeny of a single proliferative MaSC/progenitor are dispersed throughout the epithelium.",
+        "doi": "10.1038/ncomms13053",
+        "pmid": "27779190",
+        "venue": "Nature Communications",
+        "citedByCount": 129,
+        "urls": [
+          "https://www.nature.com/articles/ncomms13053.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.nature.com/articles/ncomms13053.pdf"
+      },
+      {
+        "elicitId": "ss-268741733",
+        "title": "Hierarchal single-cell lineage tracing reveals differential fate commitment of CD8 T-cell clones in response to acute infection",
+        "authors": [
+          "Leena Abdullah",
+          "F. Emiliani",
+          "Chinmay M. Vaidya",
+          "Hannah Stuart",
+          "F. Kolling",
+          "M. Ackerman",
+          "Li Song",
+          "A. McKenna",
+          "Yi-Na H. Huang"
+        ],
+        "year": 2024,
+        "abstract": "Generating balanced populations of CD8 effector and memory T cells is necessary for immediate and durable immunity to infections and cancer. Yet, a definitive understanding of CD8 differentiation remains unclear. We used CARLIN, a processive lineage recording mouse model with single-cell RNA-seq and TCR-seq to track endogenous antigen-specific CD8 T cells during acute viral infection. We identified a diverse repertoire of expanded T-cell clones represented by seven transcriptional states. TCR enrichment analysis revealed differential memory- or effector-fate biases within clonal populations. Shared Vb segments and amino acid motifs were found within biased categories despite high TCR diversity. Using single-cell CARLIN barcode-seq we tracked multi-generational clones and found that unlike unbiased or memory-biased clones, which stably retain their fate profiles, effector-biased clones could adopt memory- or effector-bias within subclones. Collectively, our study demonstrates that a heterogenous T-cell repertoire specific for a shared antigen is composed of clones with distinct TCR-intrinsic fate-biases.",
+        "doi": "10.1101/2024.03.21.586160",
+        "pmid": "38585810",
+        "venue": "bioRxiv",
+        "citedByCount": 1,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2024/03/27/2024.03.21.586160.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2024/03/27/2024.03.21.586160.full.pdf"
+      },
+      {
+        "elicitId": "ss-13773987",
+        "title": "Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo",
+        "authors": [
+          "Daniel E. Wagner",
+          "Caleb Weinreb",
+          "Zach M. Collins",
+          "James A. Briggs",
+          "Sean Gregory Megason",
+          "Allon M. Klein"
+        ],
+        "year": 2018,
+        "abstract": "Mapping the vertebrate developmental landscape As embryos develop, numerous cell types with distinct functions and morphologies arise from pluripotent cells. Three research groups have used single-cell RNA sequencing to analyze the transcriptional changes accompanying development of vertebrate embryos (see the Perspective by Harland). Wagner et al. sequenced the transcriptomes of more than 90,000 cells throughout zebrafish development to reveal how cells differentiate during axis patterning, germ layer formation, and early organogenesis. Farrell et al. profiled the transcriptomes of tens of thousands of embryonic cells and applied a computational approach to construct a branching tree describing the transcriptional trajectories that lead to 25 distinct zebrafish cell types. The branching tree revealed how cells change their gene expression as they become more and more specialized. Briggs et al. examined whole frog embryos, spanning zygotic genome activation through early organogenesis, to map cell states and differentiation across all cell lineages over time. These data and approaches pave the way for the comprehensive reconstruction of transcriptional trajectories during development. Science, this issue p. 981, p. eaar3131, p. eaar5780; see also p. 967 Single-cell RNA sequencing reveals cell type trajectories and cell lineage in the developing zebrafish embryo. High-throughput mapping of cellular differentiation hierarchies from single-cell data promises to empower systematic interrogations of vertebrate development and disease. Here we applied single-cell RNA sequencing to >92,000 cells from zebrafish embryos during the first day of development. Using a graph-based approach, we mapped a cell-state landscape that describes axis patterning, germ layer formation, and organogenesis. We tested how clonally related cells traverse this landscape by developing a transposon-based barcoding approach (TracerSeq) for reconstructing single-cell lineage histories. Clonally related cells were often restricted by the state landscape, including a case in which two independent lineages converge on similar fates. Cell fates remained restricted to this landscape in embryos lacking the chordin gene. We provide web-based resources for further analysis of the single-cell data.",
+        "doi": "10.1126/science.aar4362",
+        "pmid": "29700229",
+        "venue": "Science",
+        "citedByCount": 760,
+        "urls": [
+          "https://science.sciencemag.org/content/sci/360/6392/981.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://science.sciencemag.org/content/sci/360/6392/981.full.pdf"
+      },
+      {
+        "elicitId": "ss-255801496",
+        "title": "Lineage tracing reveals fate bias and transcriptional memory in human B cells",
+        "authors": [
+          "Michael Swift",
+          "Felix Horns",
+          "S. Quake"
+        ],
+        "year": 2023,
+        "abstract": "We combined lineage tracing and single-cell transcriptomics to quantify the extent of cell-intrinsic fate bias in human B cells. We combined single-cell transcriptomics and lineage tracing to understand fate choice in human B cells. Using the antibody sequences of B cells, we tracked clones during in vitro differentiation. Clonal analysis revealed a subset of IgM+ B cells which were more proliferative than other B-cell types. Whereas the population of B cells adopted diverse states during differentiation, clones had a restricted set of fates available to them; there were two times more single-fate clones than expected given population-level cell-type diversity. This implicated a molecular memory of initial cell states that was propagated through differentiation. We then identified the genes which had strongest coherence within clones. These genes significantly overlapped known B-cell fate determination programs, suggesting the genes which determine cell identity are most robustly controlled on a clonal level. Persistent clonal identities were also observed in human plasma cells from bone marrow, indicating that these transcriptional programs maintain long-term cell identities in vivo. Thus, we show how cell-intrinsic fate bias influences differentiation outcomes in vitro and in vivo.",
+        "doi": "10.26508/lsa.202201792",
+        "pmid": "36639222",
+        "venue": "Life Science Alliance",
+        "citedByCount": 3,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2022/07/19/2022.07.14.499766.full.pdf",
+          "https://www.life-science-alliance.org/content/lsa/6/3/e202201792.full.pdf",
+          "https://authors.library.caltech.edu/119176/1/LSA-2022-01792.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9840405/pdf/LSA-2022-01792.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.life-science-alliance.org/content/lsa/6/3/e202201792.full.pdf"
+      },
+      {
+        "elicitId": "ss-262087544",
+        "title": "Single-cell mitochondrial lineage tracing decodes fate decision and spatial clonal architecture in human hematopoietic organoids",
+        "authors": [
+          "Yan Xue",
+          "Jun-Hao Su",
+          "Yiming Chao",
+          "Lu Liu",
+          "Xin-Yi Lin",
+          "Yang Xiang",
+          "Mun Kay Ho",
+          "Ze-Zhuo Su",
+          "Junyi Chen",
+          "Zhuo-Juan Luo",
+          "Chengqi Lin",
+          "Rui-Bang Luo",
+          "Theo Aurich",
+          "Jianfeng Wu",
+          "K. S. C. Cheung",
+          "Yuan-Hua Huang",
+          "J. Ho",
+          "Ryohichi Sugimura"
+        ],
+        "year": 2025,
+        "abstract": "The ability to perform lineage tracing at the single-cell level is critical to reconstructing dynamic transitions during cell differentiation. However, prospective tracing approaches inevitably encounter outstanding challenges including barcoding precision, barcode diversity, and detection efficiency, which can skew inferred lineage relationships. Human pluripotent stem cells (hPSCs) even face risks of DNA-damage-induced toxicity-related cell death. We explored the use of naturally occurring somatic mutations in mitochondrial transcripts detected in single-cell RNA-seq as genetic lineage barcodes in hPSCs. In this study, we used an enrichment of scRNA-seq mitochondrial reads and a robust computational method to identify clonally relevant mitochondrial variants as endogenous genetic barcodes for clonal tracking of early embryonic hematopoiesis from hPSC. We modeled the development of embryonic tissues from hPSCs and delineated cell fate specification by integrating synthetic barcoding with mitochondrial lineage tracing. Using a biophysical model, we reconstructed the sequential transcriptional logic of fate specification and its underlying regulatory network. We further applied mitochondrial lineage tracing to spatial transcriptomics, which enabled us to identify the spatial clonal architecture of human embryonic organoids. Our analysis revealed that this spatial zonation was orchestrated by NOTCH-mediated crosstalk between stromal cells and hematopoietic progenitors. Our multi-modal framework links clonal dynamics with niche-specific fate decisions, providing a generalizable approach to dissecting tissue organization in development and disease. This study underscores the utility of mitochondrial variants as endogenous markers for high-resolution spatial clonal tracking in stem cell-derived organoid models of human development.",
+        "doi": "10.1101/2023.09.18.558215",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 2,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2023/09/18/2023.09.18.558215.full.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2023/09/18/2023.09.18.558215.full.pdf"
+      },
+      {
+        "elicitId": "ss-284916308",
+        "title": "Single‐Cell Mitochondrial Lineage Tracing Decodes Fate Decision and Spatial Clonal Architecture in Human Hematopoietic Organoids",
+        "authors": [
+          "Yan Xue",
+          "Jun-Hao Su",
+          "Yiming Chao",
+          "Lu Liu",
+          "Xin-Yi Lin",
+          "Yang Xiang",
+          "Mun Kay Ho",
+          "Ze-Zhuo Su",
+          "Junyi Chen",
+          "Zhuo-Juan Luo",
+          "Chengqi Lin",
+          "Rui-Bang Luo",
+          "Theo Aurich",
+          "Jianfeng Wu",
+          "K. S. C. Cheung",
+          "Yuanhua Huang",
+          "J. W. Ho",
+          "Ryohichi Sugimura"
+        ],
+        "year": 2026,
+        "abstract": "Lineage tracing at single‐cell resolution is vital for mapping cell fate decisions, yet synthetic barcoding faces limitations in precision, diversity, and toxicity—especially in human pluripotent stem cells (hPSCs). Here, we repurpose naturally occurring somatic mutations in mitochondrial transcripts from single‐cell RNA sequencing as endogenous genetic barcodes. By enriching mitochondrial reads and applying a robust computational pipeline, we identified clonally informative variants to trace hematopoietic lineage emergence from hPSCs during early embryogenesis. Integrating mitochondrial barcoding with synthetic lineage tracing, we modeled embryonic tissue development and reconstructed the transcriptional logic and regulatory networks driving fate specification using a dynamical systems model. Extending this approach to spatial transcriptomics, we mapped the clonal architecture of human embryonic organoids, revealing spatial zonation orchestrated by NOTCH‐mediated crosstalk between stromal cells and hematopoietic progenitors. This multimodal strategy links clonal dynamics with niche‐driven fate decisions, offering a scalable, non‐invasive method to dissect tissue organization in development and disease. Together, our work establishes a scalable, non‐invasive multimodal framework that leverages endogenous mitochondrial DNA variants to reconstruct high‐resolution spatiotemporal clonal dynamics and decode niche‐driven fate decisions in a human stem cell‐derived model. This approach provides a powerful strategy for dissecting tissue self‐organization in development and disease.",
+        "doi": "10.1002/advs.202518084",
+        "pmid": "41560697",
+        "venue": "Advancement of science",
+        "citedByCount": 1,
+        "urls": [
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202518084",
+          "https://www.biorxiv.org/content/biorxiv/early/2023/09/18/2023.09.18.558215.full.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13042525/pdf/ADVS-13-e18084.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202518084"
+      },
+      {
+        "elicitId": "ss-292803103",
+        "title": "Lineage tracing reveals asynchronous fate restriction in mouse embryos and stem cell-derived embryo models",
+        "authors": [
+          "Yun-Zheng Liu",
+          "Jihye Park",
+          "Laura Amaya",
+          "Sergi Junyent",
+          "Xiang-Kai Sun",
+          "Jiabao Sean Xiao",
+          "Yu-Qi Wang",
+          "Hao Wang",
+          "Yun-Rui Lu",
+          "S. Nakagawa",
+          "Sung-Eun Park",
+          "Wen-Qi Hu",
+          "Shi-Chen Liu",
+          "Jiang-Bo Wei",
+          "H. Kim",
+          "Matt Thomson",
+          "Cheng-Wei Ju",
+          "Marianne E. Bronner",
+          "Jun-Hong Choi",
+          "Magdalena Zernicka-Goetz"
+        ],
+        "year": 2026,
+        "abstract": "How a flexible mammalian embryo gives rise to a reproducible body plan remains unclear, partly because cell lineages cannot be followed continuously in vivo. We combined DNA Typewriter lineage recording with tetraploid complementation to reconstruct high-resolution single-cell genealogies across mouse development and built FateVec, an analysis framework that infers fate-bias dynamics and lineage-associated transcriptional programs from reconstructed phylogenies. Loss of developmental potential proved progressive and asynchronous, with multiple lineages acquiring detectable fate bias before morphological diversification at gastrulation. Within the neural crest, most cells remained multipotent over an extended window, while independent founder clades differed markedly in restriction timing. Extending lineage recording to a stem-cell-derived embryo model revealed that cells with shared transcriptional identities can arise from distinct lineage relationships. We further found embryonic-lineage contributions to extraembryonic-like states, exposing an unexplored lineage plasticity. This lineage-resolved view of embryogenesis reveals that cell identity alone predicts neither developmental ancestry nor the timing of fate restriction.",
+        "doi": "10.64898/2026.10.06.756974",
+        "pmid": null,
+        "venue": "bioRxiv",
+        "citedByCount": 0,
+        "urls": [],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": null
+      },
+      {
+        "elicitId": "ss-281259076",
+        "title": "Deciphering Cell Fate and Clonal Dynamics via Integrative Single-Cell Lineage Modeling",
+        "authors": [
+          "Yun-Tian Fu",
+          "D. Mathew",
+          "Mingshuang Wang",
+          "Xinyi E. Chen",
+          "Kevin Lin",
+          "Dylan Schaff",
+          "Sydney M. Shaffer",
+          "D. Pardoll",
+          "Christina Jackson",
+          "Nancy Zhang"
+        ],
+        "year": 2025,
+        "abstract": "Through natural or synthetic lineage barcodes, single-cell technologies now enable the joint measurement of molecular states and clonal identities, providing an unprecedented opportunity to study cell fate and dynamics. Yet, most computational methods for inferring cell development and differentiation rely exclusively on transcriptional similarity, overlooking the lineage information encoded by lineage barcodes. This limitation is exemplified by T cells, where subtle transcriptional differences mark divergent fates with distinct biological activity. Single-cell RNA and matched TCR sequencing is now ubiquitous in the analysis of clinical samples, where the TCR sequence provides an endogenous clonal barcode and could reveal clonal T cell responses. We present Clonotrace, a computational framework that jointly models gene expression and clonotype information to infer cell state transitions and fate biases with higher fidelity. While motivated by challenges in analyzing T cell populations, especially in the tumor microenvironment and immunotherapy settings, Clonotrace is broadly applicable to any lineage-barcoded single-cell dataset. Across diverse systems including T cells, hematopoietic differentiation, and cancer therapy resistance models, Clonotrace reveals differentiation hierarchies, distinguishes unipotent from multipotent states, and identifies candidate fate-determining genes driving lineage commitment.",
+        "doi": "10.21203/rs.3.rs-7510946/v1",
+        "pmid": "41041551",
+        "venue": "Research Square",
+        "citedByCount": 2,
+        "urls": [
+          "https://www.researchsquare.com/article/rs-7510946/latest.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": null,
+        "fullTextUrl": "https://www.researchsquare.com/article/rs-7510946/latest.pdf"
+      },
+      {
+        "elicitId": "ss-248264087",
+        "title": "Connecting past and present: single-cell lineage tracing",
+        "authors": [
+          "Cheng Chen",
+          "Yuanxin Liao",
+          "Guang-Dun Peng"
+        ],
+        "year": 2022,
+        "abstract": "Central to the core principle of cell theory, depicting cells’ history, state and fate is a fundamental goal in modern biology. By leveraging clonal analysis and single-cell RNA-seq technologies, single-cell lineage tracing provides new opportunities to interrogate both cell states and lineage histories. During the past few years, many strategies to achieve lineage tracing at single-cell resolution have been developed, and three of them (integration barcodes, polylox barcodes, and CRISPR barcodes) are noteworthy as they are amenable in experimentally tractable systems. Although the above strategies have been demonstrated in animal development and stem cell research, much care and effort are still required to implement these methods. Here we review the development of single-cell lineage tracing, major characteristics of the cell barcoding strategies, applications, as well as technical considerations and limitations, providing a guide to choose or improve the single-cell barcoding lineage tracing.",
+        "doi": "10.1007/s13238-022-00913-7",
+        "pmid": "35441356",
+        "venue": "Protein & Cell",
+        "citedByCount": 78,
+        "urls": [
+          "https://link.springer.com/content/pdf/10.1007/s13238-022-00913-7.pdf"
+        ],
+        "studyTypeTags": [
+          "Review"
+        ],
+        "journalQuartile": null,
+        "fullTextUrl": "https://link.springer.com/content/pdf/10.1007/s13238-022-00913-7.pdf"
+      },
+      {
+        "elicitId": "ss-247023715",
+        "title": "CoSpar identifies early cell fate biases from single-cell transcriptomic and lineage information",
+        "authors": [
+          "Shou-Wen Wang",
+          "M. Herriges",
+          "Kilian Hurley",
+          "D. Kotton",
+          "Allon M. Klein"
+        ],
+        "year": 2022,
+        "abstract": "A goal of single-cell genome-wide profiling is to reconstruct dynamic transitions during cell differentiation, disease onset and drug response. Single-cell assays have recently been integrated with lineage tracing, a set of methods that identify cells of common ancestry to establish bona fide dynamic relationships between cell states. These integrated methods have revealed unappreciated cell dynamics, but their analysis faces recurrent challenges arising from noisy, dispersed lineage data. In this study, we developed coherent, sparse optimization (CoSpar) as a robust computational approach to infer cell dynamics from single-cell transcriptomics integrated with lineage tracing. Built on assumptions of coherence and sparsity of transition maps, CoSpar is robust to severe downsampling and dispersion of lineage data, which enables simpler experimental designs and requires less calibration. In datasets representing hematopoiesis, reprogramming and directed differentiation, CoSpar identifies early fate biases not previously detected, predicting transcription factors and receptors implicated in fate choice. Documentation and detailed examples for common experimental designs are available at https://cospar.readthedocs.io/. A computational algorithm integrates lineage tracing with single-cell RNA sequencing and improves early cell fate prediction.",
+        "doi": "10.1038/s41587-022-01209-1",
+        "pmid": "35190690",
+        "venue": "Nature Biotechnology",
+        "citedByCount": 103,
+        "urls": [
+          "https://www.biorxiv.org/content/biorxiv/early/2021/05/07/2021.05.06.443026.full.pdf",
+          "https://www.researchsquare.com/article/rs-502709/latest.pdf"
+        ],
+        "studyTypeTags": [],
+        "journalQuartile": 1,
+        "fullTextUrl": "https://www.biorxiv.org/content/biorxiv/early/2021/05/07/2021.05.06.443026.full.pdf"
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "attribution": "Data from OnCo (onco.cc), CC BY-NC 4.0. Public curriculum metadata only; no lesson bodies copied.",
   "oncoBaseline": "0f8ebc2569e2dcb023364d8cb6971186f11f59ab",
   "oncoSnapshotSha256": "ee984f247eb1071d14760146e23fbb3ce60b6c3a635cf6b4f7a25023963caf75",
@@ -21,11 +21,18 @@
       "state": "open draft; not merged"
     }
   ],
-  "proposal": {
-    "version": "proposal-access",
-    "state": "implemented in this branch; validation and rendered-source checks passed; not merged",
-    "recordSnapshotSha256": "0555f66e4395302935bddaf83c3cb0bc424e32c7a2178a6c3f0b0e696715d61b"
-  },
+  "proposals": [
+    {
+      "version": "proposal-access",
+      "state": "implemented in this branch; validation and rendered-source checks passed; not merged",
+      "recordSnapshotSha256": "0555f66e4395302935bddaf83c3cb0bc424e32c7a2178a6c3f0b0e696715d61b"
+    },
+    {
+      "version": "proposal-biology",
+      "state": "implemented and locally validated in draft PR #375; not merged",
+      "recordSnapshotSha256": "0dc42d0f790db86e3a5e4ac6986bb74bfddc313ed524bac7b334d3e94addbd0a"
+    }
+  ],
   "stats": {
     "totalSources": 537,
     "conceptOrComparison": 411,
@@ -33,13 +40,15 @@
     "navigation": 14,
     "navigationReviewed": 0,
     "navigationWithTeachingContent": 0,
-    "semanticallyReviewed": 9,
-    "implementedCoverage": 9,
+    "semanticallyReviewed": 37,
+    "implementedCoverage": 36,
     "mainCoverage": 0,
-    "unresolvedContentItems": 514,
-    "unresolvedSources": 528,
-    "openSchemaGaps": 2,
-    "unreviewedLiteratureOccurrences": 135,
+    "unresolvedContentItems": 487,
+    "unresolvedSources": 501,
+    "adjacentConcepts": 2,
+    "unresolvedAdjacentConcepts": 0,
+    "openSchemaGaps": 3,
+    "unreviewedLiteratureOccurrences": 120,
     "readyForFinalReaudit": false
   },
   "items": [
@@ -1120,8 +1129,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/cell-and-membrane.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain the lipid-bilayer boundary and distinguish cytosol from cytoplasm and membrane-bound interiors.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-membrane",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "74bd87a22f3a3ccd143870a307c3683103f9fecccfebfce4066ba0ffd054fc87",
+                "explanation": "Defines the bilayer and proteins, cytosol, cytoplasm and organelle interiors."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Distinguish passive, energy-dependent and vesicular transport, including electrochemical gradients.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-membrane",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "74bd87a22f3a3ccd143870a307c3683103f9fecccfebfce4066ba0ffd054fc87",
+                "explanation": "Separates passive gradients, direct or coupled energy use and membrane-enclosed uptake."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish cell-associated signal, uptake, cytosolic access and membrane-integrity measurements from productive delivery or complete cell function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-membrane",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "6acd25140176ad2f7ed57c2633d35b24769c21d6208cdbd0c1776cb270e22982",
+                "explanation": "Separates associated fluorescence, entry and cytosolic access, and bounds the exclusion-dye endpoint."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1143,8 +1201,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/cell-cycle.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish G1, S, G2, mitosis, cytokinesis and functional noncycling G0 states; checkpoints do not guarantee error-free division.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-cycle",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "3510ad65ec0abba2ee9b49aaeeb1e041313f02ca2931fe2fc57f88fb61fd3ff5",
+                "explanation": "Names G1/S/G2, nuclear mitosis, cytoplasmic cytokinesis and functional G0; qualifies checkpoint control."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain what DNA-content and proliferation-marker measurements resolve, including phase overlap and doublet controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-cycle",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "09f3984e77369966b1c7fa5c6510946da7991a04cdb5de72739ae6e6a6e5d4e9",
+                "explanation": "Explains DNA-content phase overlap and the need for added markers and doublet discrimination."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep a phase fraction, Ki-67-positive fraction, division rate and population doubling time distinct.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-cycle",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "09f3984e77369966b1c7fa5c6510946da7991a04cdb5de72739ae6e6a6e5d4e9",
+                "explanation": "Explicitly separates Ki-67/phase fractions from division rate and population doubling time."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1163,8 +1270,64 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/cell-division-and-why-chemo-hits-dividing-cells.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain division, DNA copying and the possibility of unequal or altered daughters without inferring division history from mutation count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-division",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "80dfd6774fa9697969dfde3e764ce02982a5b76b084fbd9a842b3c549cee0677",
+                "explanation": "Separates copying/segregation/cytokinesis and explains why mutation counts are not a division-history clock."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain why chemotherapy can affect normal renewal and why drug mechanisms and nondividing-cell effects differ.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-division",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "80dfd6774fa9697969dfde3e764ce02982a5b76b084fbd9a842b3c549cee0677",
+                "explanation": "Describes drug-specific DNA/microtubule effects and normal renewal."
+              },
+              {
+                "recordId": "cell-division",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "a446f58892aff981b8dbb957b7729941eaa34e962fd3d33f43ba04000f408ada",
+                "explanation": "Retains the adult-mouse neuronal experimental example and its nonclinical scope."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Separate growth arrest, cell death, production-versus-loss counts and experimental mechanisms from clinical benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-division",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "a446f58892aff981b8dbb957b7729941eaa34e962fd3d33f43ba04000f408ada",
+                "explanation": "Separates arrest, death and production-versus-loss counts and bounds extrapolation from the experiment."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1183,8 +1346,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/cell-lineage-and-differentiation.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish cell ancestry, broad cell family, genetic clone and current cell state.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+                "explanation": "Defines ancestry, type, state and genetic clone without equating an RNA cluster with ancestry."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain stem/progenitor differentiation and context-dependent developmental potential.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+                "explanation": "Explains renewal, specialization and context-restricted progenitor potential."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish measured expression clusters from lineage/fate evidence supplied by tracing or a suitable time-resolved experiment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-lineage-and-state",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "6d840bee237973501bbd05b03f39de96732d10640f5ded0878f232165befddc2",
+                "explanation": "Distinguishes atlas classification from tracing and gives the barcoded time-course example with limits."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1204,8 +1416,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/epithelial-mesenchymal-transition.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain epithelial-mesenchymal plasticity, hybrid states and normal as well as cancer contexts.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "emt",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "5e97366e20595954505e432ce25f3fd61c0d0b87aecc1c9ef67b20c56b1182c1",
+                "explanation": "Includes physiological and disease contexts, coordinated programs and intermediate states."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Require multiple properties, cell attribution and time/tracing evidence rather than one marker or mixed-tissue RNA alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "emt",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "510fe86224b5955a2f738cff2d17b19dad82deb38b0293636fd18f2e07bd884f",
+                "explanation": "Calls for multiple properties, cell/spatial attribution and time or lineage evidence; flags stromal RNA."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain model/context limits for associations with migration, resistance and treatment response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "emt",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "510fe86224b5955a2f738cff2d17b19dad82deb38b0293636fd18f2e07bd884f",
+                "explanation": "Retains reporter/model boundaries and rejects an EMT label as treatment-sensitivity evidence."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1225,8 +1486,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/epithelium-and-stroma.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish normal epithelium from malignant epithelial cells and basement membrane from a cell membrane.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+                "explanation": "Defines epithelium without calling every epithelial cell malignant and distinguishes extracellular basement membrane."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain the cellular, vascular and extracellular components of stroma.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+                "explanation": "Includes supporting cells, extracellular matrix and vascular structures rather than collagen alone."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain spatial/cell attribution when interpreting mixed-tissue expression or staining.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epithelium-and-stroma",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "cfce785888f0e0aff446547572198d0fa3fd3039f72f8a2dc043cd4cde69700e",
+                "explanation": "Explains cell-composition versus within-cell expression and requires attribution in mixed material."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1247,8 +1557,64 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/cells/organelles-overview.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Describe nucleus, ribosome, endoplasmic reticulum, Golgi, lysosome and mitochondrion roles, including mitochondrial DNA and non-energy roles.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-compartments",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+                "explanation": "Identifies the principal compartments, ribosomes and mitochondrial genome."
+              },
+              {
+                "recordId": "cellular-compartments",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "cc1ee5a592337ca409b60b003cf861ac2d31242f2dd337addcb2b7f78bf0a2e7",
+                "explanation": "Adds a scoped cytochrome-c experiment and distinguishes non-energy mitochondrial roles."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Describe a selected secretory-cargo route without assigning every protein the same itinerary; disambiguate endoplasmic reticulum from estrogen receptor.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-compartments",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+                "explanation": "Scopes ER/Golgi traffic to selected cargo rather than every protein."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep localization, abundance, colocalization, function and flux as separate measurements.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cellular-compartments",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "cc1ee5a592337ca409b60b003cf861ac2d31242f2dd337addcb2b7f78bf0a2e7",
+                "explanation": "Separates localization, interaction, abundance, function and flux; disambiguates ER meanings."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1268,8 +1634,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/allele-and-zygosity.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish sequence alleles and homozygous, heterozygous or hemizygous state from total DNA copy count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "alleles-and-zygosity",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "e15d15ce7479a262346074215dcafddb84ebf6acfa92203b9d4a51e5dff6ce5c",
+                "explanation": "Defines sequence versions and heterozygous/homozygous/hemizygous contexts separately from tumor copy count."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain that loss of heterozygosity can occur with copy loss or a copy-neutral allele change.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "alleles-and-zygosity",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "e15d15ce7479a262346074215dcafddb84ebf6acfa92203b9d4a51e5dff6ce5c",
+                "explanation": "Explains copy-loss and copy-neutral loss of allelic differences."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep read fraction, cancer-cell fraction, purity/ploidy and allelic phase separate; VAF alone cannot establish zygosity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "alleles-and-zygosity",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "042c365c6c09bffd0dd93fce3953f887ace01f5c9a25745f27f96dc311299992",
+                "explanation": "Separates VAF, purity/ploidy/subclones, zygosity and phase."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1287,8 +1702,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/central-dogma.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish DNA replication, transcription and codon/frame-based translation of a coding message.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "central-dogma-information-flow",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a758407a62f025879aa7dbf4f2b2c0218995cfc7cc0c4c1789caa859576c5b6d",
+                "explanation": "Distinguishes replication, transcription and codon/frame-based translation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Include functional noncoding RNAs and RNA-to-DNA copying without treating every gene as one protein recipe.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "central-dogma-information-flow",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "a758407a62f025879aa7dbf4f2b2c0218995cfc7cc0c4c1789caa859576c5b6d",
+                "explanation": "Includes functional noncoding RNA and RNA-to-DNA copying in specified contexts."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Separate RNA production/processing/turnover from protein abundance, location and activity; no fixed RNA-to-protein conversion applies.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "central-dogma-information-flow",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "db827ca0d40e0ef51848379755938742d97aace89d470af2d86dd1cf392ccf49",
+                "explanation": "Retains processing, turnover, intact product, location and activity as separate evidence."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1308,8 +1772,64 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/epigenetics-and-methylation.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain chemical DNA/chromatin marks without changing base sequence; promoter and other genomic contexts differ.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epigenetic-marks",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "73a68198dbdbb45bc8bc34ae3a9d673d3ca45d80d5471baddb0d626c0b483b96",
+                "explanation": "Distinguishes marks from sequence substitutions and includes position, persistence and promoter-context qualifications."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Distinguish DNA methylation, histone modifications, 5-methylcytosine and 5-hydroxymethylcytosine.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epigenetic-marks",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "73a68198dbdbb45bc8bc34ae3a9d673d3ca45d80d5471baddb0d626c0b483b96",
+                "explanation": "Separates DNA marks from histone modifications."
+              },
+              {
+                "recordId": "epigenetic-marks",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "be440cd29166723604b3a62d61bb773bb4484b937148ba70a1062db8becb983d",
+                "explanation": "Defines the standard-bisulfite 5mC/5hmC limitation and oxidative-bisulfite distinction."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain bisulfite-method resolution, mixed-cell proportions and the boundary between association, causation and drug sensitivity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epigenetic-marks",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "be440cd29166723604b3a62d61bb773bb4484b937148ba70a1062db8becb983d",
+                "explanation": "Retains conversion/method resolution, mixtures, genomic context and the association/causation/clinical-response boundary."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1330,8 +1850,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/gene-regulation.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define promoter, enhancer and transcription-factor roles and regulation beyond transcription.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-regulatory-elements",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "4f2622debb771197267052bd5c87274015eb5a6c5ce7689af9d1284b2661c995",
+                "explanation": "Defines promoter/enhancer/factor roles, three-dimensional regulatory interactions and regulation beyond transcription."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Distinguish regulator binding or chromatin accessibility from active transcription or changed protein output.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-regulatory-elements",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "9122fdab54d0cce6f1bc08f7a9eae920b6beb7f364e98102f24250dd610d56f0",
+                "explanation": "Separates occupancy/accessibility from regulation and output."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Match RNA, chromatin, binding and reporter readouts to their questions; test regulatory causality with controlled perturbation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-regulatory-elements",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "9122fdab54d0cce6f1bc08f7a9eae920b6beb7f364e98102f24250dd610d56f0",
+                "explanation": "Matches assay families to different questions and describes controlled perturbation with indirect-effect controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1350,8 +1919,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/germline-vs-somatic.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish inherited and de novo constitutional origin, acquired somatic changes and mosaic distribution; somatic does not mean tumor-only.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "germline-vs-somatic",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "8921d3b8120d2692dbf6ccbfe474697f2431cdd24799df731804d9d0dc3f1189",
+                "explanation": "Distinguishes inherited, de novo, constitutional, acquired and mosaic contexts; normal tissues can carry somatic variants."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain suitable tumor/normal comparisons and blood-clone, contamination and detection-limit attribution issues.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "germline-vs-somatic",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "3f7a0a99c31bbf3056eecb1442eccef34d6ee1eddc5a6cba55c4164eba744d2c",
+                "explanation": "Names blood clones, plasma source attribution, contamination, mosaicism and detection limits."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish tumor sequencing from clinical hereditary testing and bound a negative result by specimen, coverage and assay.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "germline-vs-somatic",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "3f7a0a99c31bbf3056eecb1442eccef34d6ee1eddc5a6cba55c4164eba744d2c",
+                "explanation": "Separates tumor/research analysis from clinical hereditary testing and bounds negative results."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1373,8 +1991,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/mutation-types.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish substitutions, indels, copy-number and structural changes, including overlapping categories and transcript-dependent coding consequences.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mutation",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "2f46ccaa4c008bcffa9e04112318d3e1c2e82f660f025622e6957dbbcfd2ddc2",
+                "explanation": "Distinguishes substitutions, indels, larger copy/structural changes and coding consequences in transcript context."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Keep DNA rearrangement, joined RNA, protein product and predicted consequence separate; an indel need not be a frameshift.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mutation",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8723c0c18d070db4f4c91ab4cc6cc11b42cc6d0124c48ab6d658099a1124a8c2",
+                "explanation": "Separates DNA rearrangement, joined RNA, protein fusion and predicted consequences."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain reference build/transcript version, tested change classes and limits; origin, pathogenicity and sensitivity do not follow from class.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mutation",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8723c0c18d070db4f4c91ab4cc6cc11b42cc6d0124c48ab6d658099a1124a8c2",
+                "explanation": "Retains build/reference version, coverage/change classes and the distinct pathogenicity/origin/sensitivity questions."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1392,8 +2059,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/nonsense-mediated-decay.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain premature-stop recognition and one splicing/exon-junction-complex-linked route to RNA surveillance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nonsense-mediated-decay",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "82e29f10e7fec526e1b4ba88c0927c5afa7863d6ab108126e2e643d1de66ba60",
+                "explanation": "Describes splicing-associated junction protein complexes, translation termination and one downstream-complex-linked route."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Keep NMD susceptibility transcript- and termination-context dependent instead of imposing a universal distance cutoff.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nonsense-mediated-decay",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "82e29f10e7fec526e1b4ba88c0927c5afa7863d6ab108126e2e643d1de66ba60",
+                "explanation": "Includes several transcript features and rejects a universal junction-distance cutoff."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Test allele/transcript RNA fate separately from protein amount/function; compensation and mixtures can mask gene-level effects.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nonsense-mediated-decay",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "fe774a401e19bf6bf8e0c05a174a3ca5607c1c171ce7a326df0ca4e19ade312a",
+                "explanation": "Explains compensation/mixtures and allele/transcript measurement separately from protein persistence and function."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1413,8 +2129,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/splicing.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define exons, introns, splice sites and alternative isoforms, including untranslated exonic sequence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-splicing",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+                "explanation": "Defines RNA splicing, retained untranslated exons, introns, donor/acceptor sites and alternative products."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain altered splicing without making exon skipping synonymous with frameshift, protein loss or inevitable NMD.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-splicing",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+                "explanation": "Separates skipping from frameshift and predicted RNA fate from measured protein outcome."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish junction-read support from complete isoform/protein identity and attribute mixed-tissue RNA to its source.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-splicing",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "ada2ec5bff6f90ac8697d8a2103c4b3f8b0415f0133c9ed9840743a7a4dca621",
+                "explanation": "Bounds junction reads and pooled gene counts by RNA quality, coverage, reference and cell source."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1433,8 +2198,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/genetics/vdj-recombination.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Describe V(D)J segment assembly, chain-specific VDJ versus VJ arrangements and RAG cutting with DNA-repair-mediated joining.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vdj-recombination",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "2df08f0ff436ebb86cb24bd0d1d32cf1eda4989741e335ad2520087390c62d9a",
+                "explanation": "Names V/D/J chain arrangements, RAG-initiated cutting and classical end joining as separate steps."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Separate receptor assembly and developmental selection from antigen specificity or useful immune response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vdj-recombination",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "58cc4f4aa288298296882f2a3abadf5d1a7f76f64bb0417288d76fc87f99966b",
+                "explanation": "Distinguishes productive assembly, expression/developmental selection and later antibody changes from recognition."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep RAG expression, active recombination, somatic receptor ancestry and malignant diagnosis distinct.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vdj-recombination",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "58cc4f4aa288298296882f2a3abadf5d1a7f76f64bb0417288d76fc87f99966b",
+                "explanation": "Separates somatic receptor ancestry, RAG expression, active recombination and malignant diagnosis."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1452,8 +2266,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/dna.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Explain nucleotide pairing, antiparallel DNA, chromatin/nucleosome packaging and nuclear versus mitochondrial DNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-term",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "452c5f071dc46e0536f22c30f61f13e627faef290d061dc52051ab82f9c23e55",
+                "explanation": "Defines complementary antiparallel DNA, chromatin/nucleosomes and mitochondrial genome context."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Keep DNA packaging, replication and transcription as separate processes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-term",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "452c5f071dc46e0536f22c30f61f13e627faef290d061dc52051ab82f9c23e55",
+                "explanation": "Separates packaging, replication and transcription."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish the DNA molecule, a gene region, sequence presence and functional activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-term",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "452c5f071dc46e0536f22c30f61f13e627faef290d061dc52051ab82f9c23e55",
+                "explanation": "Distinguishes the molecule, a gene region, presence and active transcription/function."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1475,8 +2338,64 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/enzymes-and-binding.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish catalytic reaction, reversible binding, affinity and specificity; enzymes can include catalytic RNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "enzyme",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "bf93daabb0696ef735c96f5e210240c8485070b2775c748627dfc1b350ae9bf1",
+                "explanation": "Separates catalytic transformation from binding, includes catalytic RNA and rejects one universal turnover/mechanism rule."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Define Kd and occupancy under stated free-ligand/equilibrium assumptions and distinguish them from Km and turnover.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "binding-affinity-and-kinetics",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "73e5256ec367cb32ab761329edae9c711c203528289670f261906f6302a8cd2b",
+                "explanation": "Defines Kd/free reactants and the conditional occupancy model."
+              },
+              {
+                "recordId": "binding-affinity-and-kinetics",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "57f39443506eff8ac555c004ea8810191e48b49660c78cd1bb09b3703159554d",
+                "explanation": "Separates Michaelis-Menten Km and turnover from affinity."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Define an assay-specific IC50 and keep biochemical inhibition, cell response and clinical benefit separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "binding-affinity-and-kinetics",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "57f39443506eff8ac555c004ea8810191e48b49660c78cd1bb09b3703159554d",
+                "explanation": "Defines response-specific IC50/EC50 and the assay variables and clinical-evidence boundary."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1494,8 +2413,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/gene.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define a gene as a DNA region yielding a functional RNA product, with coding and noncoding cases.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+                "explanation": "Includes functional coding/noncoding RNA products and multiple transcripts."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Distinguish promoter/regulatory regions, transcripts, exons, introns, coding sequence and untranslated regions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+                "explanation": "Distinguishes regulatory regions, retained exons, removed introns, coding and untranslated sequence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain transcript/reference identity; gene-level RNA counts do not establish a particular intact protein or cell source.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "b955a941370e40a47246fbf7e00fdb2f31056b693eebe739d9628728d1d7cce5",
+                "explanation": "Requires accession/version and separates covered DNA, pooled RNA and protein products."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1515,8 +2483,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/protein-and-peptide.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define amino acids, peptide bonds, polypeptides and residues without a universal peptide/protein length boundary.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b9d38a3c0b26a18f1b0a10d2b962ac4319745c594bb995634115cc56b1b2a60c",
+                "explanation": "Defines peptide-bond-linked residues/polypeptides and overlapping peptide/protein usage."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain multiple chains, folding, processing, modification, turnover and location as distinct product properties.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b9d38a3c0b26a18f1b0a10d2b962ac4319745c594bb995634115cc56b1b2a60c",
+                "explanation": "Includes multiple chains, folds/flexible regions, processing, modification, location and turnover."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish a detected epitope or digested peptide from an intact active protein or an HLA-presented antigen.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "af9b9e75f45491c022958bcd5459486c6da76bf89c41decb79b53094ccccf114",
+                "explanation": "Separates epitope/peptide detection from intact form, function and HLA presentation."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1536,8 +2553,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/protein-structure-and-domains.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish sequence, local/whole-chain/assembly structure, domains, motifs, interfaces and functional disorder.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein-structure-and-domains",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "700437deefb6f2d878d6d90a1839878f755bc4e5cc54d69c5633afddf6974010",
+                "explanation": "Distinguishes structural levels, domain, motif, contacting interface and functional disorder."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Retain the conditions and omissions of experimental structures.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein-structure-and-domains",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "151821cbbc45c3b59ac82a50482da969fac37dadcaefd8f85a6a34e5337c1bc5",
+                "explanation": "Scopes experimental structures to preparations/conditions and possible omissions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish AlphaFold2 local confidence from relative-region uncertainty; neither measures affinity, abundance, variant effect or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "protein-structure-and-domains",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "151821cbbc45c3b59ac82a50482da969fac37dadcaefd8f85a6a34e5337c1bc5",
+                "explanation": "Distinguishes local confidence from relative placement and rejects affinity/function/clinical interpretations of confidence scores."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1556,8 +2622,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/molecules/rna-and-mrna.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Describe RNA chemistry/folding and messenger, ribosomal, transfer and regulatory functions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "1327a5fc4bed9ea29c2980d91ac7ee35f5fee3fd9129fa4c729619ab372c9bff",
+                "explanation": "Defines RNA chemistry/folding and messenger, ribosomal, transfer and regulatory roles."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Describe common nuclear mRNA processing, codon-based translation and RNA turnover without making them rules for every RNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "1327a5fc4bed9ea29c2980d91ac7ee35f5fee3fd9129fa4c729619ab372c9bff",
+                "explanation": "Names common cap/tail/splicing steps and codon translation without making them universal."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep short-read signal, full-length transcript, transcription rate, protein amount and activity distinct.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "c979c5ef5fa8a94b82cee51eebe8bd20ea3d7c2e36dce99494a17a5b870db93c",
+                "explanation": "Separates abundance/turnover, short reads, intact message and protein amount/activity."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1578,8 +2693,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/agonist-and-antagonist.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish full and partial agonists, neutral antagonists and inverse agonists in a specified receptor system.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "agonist-antagonist",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "944fa034efa1ccd58dc3990c3fa8c1ed7f4975d3023a27c47c64b8f16420081e",
+                "explanation": "Defines full/partial agonism, neutral blockade and inverse agonism in a specified system."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Retain constitutive-activity and receptor/system context; a partial agonist is not merely an underdosed full agonist.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "agonist-antagonist",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "944fa034efa1ccd58dc3990c3fa8c1ed7f4975d3023a27c47c64b8f16420081e",
+                "explanation": "Retains receptor amount/amplification, competition and measurable agonist-independent baseline."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Distinguish affinity/Kd from functional EC50 and clinical efficacy, using concentration curves, baseline and toxicity controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "agonist-antagonist",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "5213495b9d98a20b8953a9b04dd85a498b9d92cc11d49ecfa40772aef3e5ab61",
+                "explanation": "Separates Kd/EC50 and clinical efficacy and names curves, reference/baseline, timing and toxicity controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1599,8 +2763,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/feedback-loops.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define negative/positive feedback by a returning effect and distinguish feedforward circuitry.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "feedback-and-feedforward",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b2a271d5c4a4fe8655bd8338a49fc5c012caf64ffae39e9e02df416bdabea91f",
+                "explanation": "Defines returning inhibition/reinforcement and a separate direct/indirect forward route."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain time-dependent, transient, persistent or oscillating responses without equating rebound with a new mutation or every positive loop with irreversibility.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "feedback-and-feedforward",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "b2a271d5c4a4fe8655bd8338a49fc5c012caf64ffae39e9e02df416bdabea91f",
+                "explanation": "Includes delays, transient/sustained/oscillating responses and limits on irreversible-state/new-mutation inferences."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Test wiring with time-resolved perturbations and independent outputs; similar curves or a diagram do not identify a tumor circuit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "feedback-and-feedforward",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "d7a18b350286486d5859c64ad6eab516f70285b2bc6b45ad25f3e9d8b7f2a73e",
+                "explanation": "Retains scoped experiments and time-resolved perturbations, independent evidence and viability/exposure controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1617,8 +2830,88 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/ligand-and-receptor.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define ligand binding and receptor response separately; an antagonist or targeting address need not activate a growth signal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ligand",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "4db76a923116db1ea768478deb7ccb9f54385d27423460f17845abf0d7493024",
+                "explanation": "Separates partner binding, receptor function and a delivery address."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Compare intracellular hormone regulation, EGFR kinase signaling and PD-1 immune inhibition while retaining receiver/context; FAP targeting is not evidence that FAP is a signaling receptor.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ligand",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8e27e5c98b45abc54ca550f3314e2327890f3bd36aebaba344bc497bc98937f1",
+                "explanation": "Compares extracellular EGF/EGFR, distinct hormone receptors, inhibitory PD-1 and FAP protease with receiver context."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Keep accessibility, binding, delivery, growth dependence and clinical treatment eligibility/benefit separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ligand",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "4db76a923116db1ea768478deb7ccb9f54385d27423460f17845abf0d7493024",
+                "explanation": "Separates accessibility/address, delivery, action and clinical benefit."
+              },
+              {
+                "recordId": "ligand",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8e27e5c98b45abc54ca550f3314e2327890f3bd36aebaba344bc497bc98937f1",
+                "explanation": "Requires functional dependence and rejects mechanistic comparison as clinical eligibility."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-4",
+            "requirement": "Match purified binding, surface staining and living-cell functional readouts to their questions with free-concentration and timing controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ligand",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8e27e5c98b45abc54ca550f3314e2327890f3bd36aebaba344bc497bc98937f1",
+                "explanation": "Separates staining, purified binding and cell function with free/added concentration, timing and controls."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "breast-receptor-classification",
+            "requirement": "Distinguish the ER, PR and HER2 test classifications used in TNBC from absolute absence of receptor molecules and from mechanistic receptor-family labels.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The current TNBC introduction describes negative test classifications as absent receptors. Resolve against the relevant receptor-testing guidance in the breast-cancer review, without inferring treatment eligibility from this signaling comparison."
+            ]
+          }
+        ]
       }
     },
     {
@@ -1637,8 +2930,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/phosphorylation.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Describe ATP-dependent phosphate transfer and phosphatase hydrolysis without claiming dephosphorylation regenerates ATP.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "phosphorylation",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "195c6cca4ed3b086efbd066475ebe18fbd3da88676abb4988d87000cc124baef",
+                "explanation": "Separates ATP-to-ADP transfer from phosphatase hydrolysis without ATP regeneration."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Retain site-dependent activation, inhibition, partner or location changes rather than universal activation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "phosphorylation",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "195c6cca4ed3b086efbd066475ebe18fbd3da88676abb4988d87000cc124baef",
+                "explanation": "Retains activating/inhibitory/interaction/location functions and a scoped Src example."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Separate phosphosite intensity, parent-protein abundance and site occupancy; retain timing, localization confidence and specimen handling.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "phosphorylation",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "ae3174b264301f9272080fe1e9940fe96e6408c01103945a57307df6c8f7e87f",
+                "explanation": "Separates intensity, parent amount and occupancy, and retains site confidence, method, handling and time."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1660,8 +3002,57 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/receptor-types.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish ion-channel, G-protein-coupled, intrinsic-enzyme, enzyme-associated and intracellular receptor mechanisms.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+                "explanation": "Distinguishes ion channels, G proteins, intrinsic/recruited enzymes and nuclear receptor mechanisms."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Keep family membership separate from fixed cellular location and surface signaling separate from the location of downstream gene effects.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+                "explanation": "Separates protein family, subcellular location and downstream gene effects."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Measure receptor identity/location, accessible binding and function separately; positive staining does not establish dependence or sensitivity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "24c27a966e4a1a6989c3832acaa2e2faa27836079941f24c0382e63847a55e9b",
+                "explanation": "Separates staining/location/binding/function from calibrated count, dependence and sensitivity."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -1680,8 +3071,71 @@
       "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/concepts/biology-basics/signaling/signal-transduction-and-kinases.md",
       "priorOwnerIds": [],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read the public general teaching content and canonical owners, then checked the authored fields and rendered output against the listed learning requirements. Primary/official source scope is retained separately. This records proposed representation, not main coverage or expert sign-off. Fictional exercise and case-specific data are excluded.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define kinase substrates and distinguish protein/lipid phosphorylation, RAS GTP switches and noncatalytic relay components.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "kinase",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "9a32d47e73eb51c406363490198dbca79fcac182bec3b63b23cf5c239ee80f90",
+                "explanation": "Includes protein/lipid substrates and site context."
+              },
+              {
+                "recordId": "signalling-pathway",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "0aa00614916d90db138e7732e8e99d5f2e5210bcf2282a0950414bfbf54fcbff",
+                "explanation": "Identifies RAS GTP binding/hydrolysis and noncatalytic scaffolds."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Explain intersecting signal transduction and the defined EGFR asymmetric activation example without making activation-loop phosphorylation universal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "kinase",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "9a32d47e73eb51c406363490198dbca79fcac182bec3b63b23cf5c239ee80f90",
+                "explanation": "Scopes the EGFR asymmetric-dimer activation example without requiring activation-loop phosphorylation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Separate isolated-enzyme activity, a named cellular phosphosite, whole-pathway behavior and functional dependence; retain ATP, exposure and timing controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "kinase",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "8e659dc6d886f58a87d449df8f01284ebf2f88d50aceb0bf35d3d485573577d8",
+                "explanation": "Retains ATP/substrate/enzyme/time/endpoint controls and the limits of a phosphosite signal."
+              },
+              {
+                "recordId": "signalling-pathway",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "5508991ceaeed156ea3bc8ac5b3d21539e19bfae8decb4f149fe670daa397cbd",
+                "explanation": "Separates isolated/cellular/functional outputs and calls for independent perturbation and exposure controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11043,6 +12497,139 @@
       "review": {
         "status": "unreviewed",
         "points": []
+      }
+    }
+  ],
+  "adjacent": [
+    {
+      "id": "receptor-reserve",
+      "title": "Receptor reserve and system-dependent potency",
+      "domain": "biology-basics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/6141562/",
+        "https://pubmed.ncbi.nlm.nih.gov/31244653/"
+      ],
+      "discoveryOccurrences": [
+        "biology-binding-response:10"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Elicit discovery followed by independent publication-identity/abstract checks. Canonical name/alias and public-curriculum search found no dedicated owner for this distinction; an incidental use of functional selectivity in another context is not receptor bias. The evidence is quantitative-method/model work, not clinical efficacy.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Distinguish maximal response from full receptor occupancy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor-reserve",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "2db5cda0efadd2e31624cb8030d02d5fa57befbb73725c543c95e29eb3b89854",
+                "explanation": "Defines reserve and separates occupancy and response curves."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Separate binding affinity from apparent potency, receptor availability and amplification.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor-reserve",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "2db5cda0efadd2e31624cb8030d02d5fa57befbb73725c543c95e29eb3b89854",
+                "explanation": "Explains EC50/Kd and expression/amplification effects on apparent partial-agonist behavior."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain the model and experimental requirements without inferring a clinical dose.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "receptor-reserve",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "18d094359d5d637d8a83c62b6325e20ed9dee000b52538b498dcbacd7454c749",
+                "explanation": "Identifies the operational/two-state frameworks and the needed binding/function or controlled-availability evidence."
+              }
+            ],
+            "remaining": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "biased-agonism",
+      "title": "Ligand bias and system-dependent pathway comparison",
+      "domain": "biology-basics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/24434717/",
+        "https://pubmed.ncbi.nlm.nih.gov/27725245/"
+      ],
+      "discoveryOccurrences": [
+        "biology-binding-response:8",
+        "biology-binding-response:15"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Elicit discovery followed by independent publication-identity/abstract checks. Canonical name/alias and public-curriculum search found no dedicated owner for this distinction; an incidental use of functional selectivity in another context is not receptor bias. The evidence is quantitative-method/model work, not clinical efficacy.",
+        "points": [
+          {
+            "id": "requirement-1",
+            "requirement": "Define relative pathway preference with a reference ligand and named outputs.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "biased-agonism",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "4c78969aa132aa6b745ddd4cf08f9788e57aed368b7652b3a460676a61db6ede",
+                "explanation": "Retains ligand comparison, reference, endpoints, expression, timing and model assumptions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-2",
+            "requirement": "Separate ligand behavior from pathway amplification, baseline and assay/system bias.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "biased-agonism",
+                "version": "proposal-biology",
+                "field": "summary",
+                "fieldSha256": "4c78969aa132aa6b745ddd4cf08f9788e57aed368b7652b3a460676a61db6ede",
+                "explanation": "Explains why potency differences across assays do not isolate a ligand-specific effect."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "requirement-3",
+            "requirement": "Retain source-method assumptions and distinguish analytical/simulation/reanalysis evidence from clinical superiority.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "biased-agonism",
+                "version": "proposal-biology",
+                "field": "notes",
+                "fieldSha256": "167e3f2b0f50322673f08da0b3b5dd40644c164db37e0d9ca75e199eee5b2169",
+                "explanation": "Names the constitutively active-mutant assumption, its required check and the clinical-evidence boundary."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     }
   ]

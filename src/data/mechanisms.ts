@@ -12,7 +12,7 @@ import type { EntityInput, IdeaInput, PathwayInput, TermInput } from "@/lib/sche
 const asOf = "2026-09-08";
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 type P = Omit<PathwayInput, "kind" | "asOf"> & { asOf?: string };
-type T = Omit<TermInput, "kind" | "asOf" | "category"> & { category?: string };
+type T = Omit<TermInput, "kind" | "asOf" | "category"> & { category?: string; asOf?: string };
 type I = Omit<IdeaInput, "kind" | "asOf">;
 const p = ({ asOf: checked = asOf, ...x }: P): PathwayInput => ({ kind: "pathway", asOf: checked, ...x });
 const t = ({ category = "Cancer biology", ...x }: T): TermInput => ({ kind: "term", asOf, category, ...x });
@@ -429,10 +429,11 @@ const pathways: PathwayInput[] = [
     tags: ["mechanism"],
   }),
   p({
+    asOf:"2026-11-08", related:["rna","gene","mutation","nonsense-mediated-decay"],
     id: "rna-splicing", name: "RNA splicing", wikipedia: W("RNA_splicing"),
-    tldr: "Genes are cut and pasted into messages before they are used. Blood cancers often carry mutations in the splicing machinery, and the errors create abnormal proteins that could serve as targets or immune flags.",
-    summary: "Spliceosome mutations (SF3B1, SRSF2, U2AF1, ZRSR2) occur in ~50% of MDS and in CLL and uveal melanoma; they cause mis-splicing, R-loops, and dependence on the remaining wild-type spliceosome (H3B-8800, negative), and on PRMT5 and NMD. Splicing produces drug-resistance isoforms (AR-V7 in prostate cancer, BCL2L1 isoforms) and neoantigens (splice-junction-derived) that may be immunogenic across patients. RNA-targeting small molecules (risdiplam-like) and antisense oligonucleotides are the therapeutic tools; MYC-driven tumours are spliceosome-dependent.",
-    analogy: "Splicing is film editing. The raw footage (pre-mRNA) is cut into a final movie. Cancer's editor makes odd cuts: some create villains (AR-V7), some create scenes no one has seen before (neoantigens), and the editing room itself becomes a place where the cancer can be attacked.",
+    tldr: "RNA processing removes introns and joins retained exons. Different processing choices can produce different messages without changing the underlying gene sequence.",
+    summary: "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.\n\nCancer-associated splicing changes can arise through altered RNA-processing factors or their expression. SF3B1, SRSF2, U2AF1 and ZRSR2 illustrate studied factors; AR-V7 and BCL2L1 illustrate named transcript contexts. The linked review describes disease-specific mechanisms and therapeutic research. An altered transcript alone does not establish an intact abnormal protein, immune presentation, a therapeutic dependency or patient benefit. Free-drug development and a conjugated payload also require their own construct-specific evidence.",
+    analogy: "Splicing is like editing a recording into different versions. A changed edit can alter the final product, but the RNA join alone does not show which complete protein is made or what it does.",
     nodes: [
       { id: "pre", label: "Pre-mRNA", x: 12, y: 40 }, { id: "sf3b1", label: "SF3B1 / SRSF2 / U2AF1 (mutant)", x: 38, y: 20 }, { id: "spl", label: "Spliceosome", x: 38, y: 60 }, { id: "iso", label: "Aberrant isoforms (AR-V7)", x: 66, y: 25, targetId: "androgen-receptor" },
       { id: "neo", label: "Splice neoantigens", x: 66, y: 60 }, { id: "rloop", label: "R-loops, replication stress", x: 66, y: 90 }, { id: "prmt5", label: "PRMT5 dependence", x: 90, y: 60 },
@@ -441,8 +442,8 @@ const pathways: PathwayInput[] = [
     interventions: ["Spliceosome modulators (H3B-8800 negative; next generation in development)", "PRMT5 inhibitors in MTAP-deleted and splicing-mutant cancers", "Antisense oligonucleotides to redirect splicing (AR-V7, BCL2L1)", "Splice-derived neoantigen vaccines (research)"],
     pathways: ["myc", "replication-stress", "ar-signaling", "antigen-presentation-immunoediting"], targets: ["androgen-receptor"], cancers: ["aml", "cll", "melanoma", "prostate"], terms: ["ar-v7", "neoantigen"], technologies: ["antisense-sirna", "rna-seq"],
     institutions: ["mskcc", "dana-farber", "fred-hutch"],
-    notes: ["Leading programmes: Abdel-Wahab (MSK) on spliceosome mutations; Bradley (Fred Hutch) on splicing and neoantigens; Ebert (Dana-Farber) on SF3B1 in MDS."],
-    links: [{ label: "Bradley & Anczuków, RNA splicing dysregulation and the hallmarks of cancer (Nature Reviews Cancer 2023)", url: "https://doi.org/10.1038/s41568-022-00541-7" }],
+    notes: ["Leading programmes: Abdel-Wahab (MSK) on spliceosome mutations; Bradley (Fred Hutch) on splicing and neoantigens; Ebert (Dana-Farber) on SF3B1 in MDS.","A junction read supports a local RNA join, not necessarily a complete isoform. Gene-level counts can hide transcript differences. RNA quality, read coverage, reference version and cell mixture affect interpretation; protein quantity and function need separate evidence.","The pathway drawing groups possible consequences studied in particular cancer systems. Its arrows do not mean that every splice change causes every listed outcome; protein formation, presentation and functional dependence require their own evidence."],
+    links: [{"label":"Bradley & Anczuków, RNA splicing dysregulation and the hallmarks of cancer (Nature Reviews Cancer 2023)","url":"https://doi.org/10.1038/s41568-022-00541-7"},{"label":"NHGRI: Exon","url":"https://www.genome.gov/genetics-glossary/Exon"},{"label":"NHGRI: Intron","url":"https://www.genome.gov/genetics-glossary/Intron"},{"label":"OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation","url":"https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"},{"label":"Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.","url":"https://pubmed.ncbi.nlm.nih.gov/9671053/"},{"label":"HGVS: reference sequences","url":"https://hgvs-nomenclature.org/stable/background/refseq/"}],
     tags: ["mechanism"],
   }),
   p({

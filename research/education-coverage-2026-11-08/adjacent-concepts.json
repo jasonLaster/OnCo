@@ -1,0 +1,133 @@
+[
+  {
+    "id": "receptor-reserve",
+    "title": "Receptor reserve and system-dependent potency",
+    "domain": "biology-basics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/6141562/",
+      "https://pubmed.ncbi.nlm.nih.gov/31244653/"
+    ],
+    "discoveryOccurrences": [
+      "biology-binding-response:10"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Elicit discovery followed by independent publication-identity/abstract checks. Canonical name/alias and public-curriculum search found no dedicated owner for this distinction; an incidental use of functional selectivity in another context is not receptor bias. The evidence is quantitative-method/model work, not clinical efficacy.",
+      "points": [
+        {
+          "id": "requirement-1",
+          "requirement": "Distinguish maximal response from full receptor occupancy.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "receptor-reserve",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "2db5cda0efadd2e31624cb8030d02d5fa57befbb73725c543c95e29eb3b89854",
+              "explanation": "Defines reserve and separates occupancy and response curves."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "requirement-2",
+          "requirement": "Separate binding affinity from apparent potency, receptor availability and amplification.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "receptor-reserve",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "2db5cda0efadd2e31624cb8030d02d5fa57befbb73725c543c95e29eb3b89854",
+              "explanation": "Explains EC50/Kd and expression/amplification effects on apparent partial-agonist behavior."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "requirement-3",
+          "requirement": "Retain the model and experimental requirements without inferring a clinical dose.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "receptor-reserve",
+              "version": "proposal-biology",
+              "field": "notes",
+              "fieldSha256": "18d094359d5d637d8a83c62b6325e20ed9dee000b52538b498dcbacd7454c749",
+              "explanation": "Identifies the operational/two-state frameworks and the needed binding/function or controlled-availability evidence."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "biased-agonism",
+    "title": "Ligand bias and system-dependent pathway comparison",
+    "domain": "biology-basics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/24434717/",
+      "https://pubmed.ncbi.nlm.nih.gov/27725245/"
+    ],
+    "discoveryOccurrences": [
+      "biology-binding-response:8",
+      "biology-binding-response:15"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Elicit discovery followed by independent publication-identity/abstract checks. Canonical name/alias and public-curriculum search found no dedicated owner for this distinction; an incidental use of functional selectivity in another context is not receptor bias. The evidence is quantitative-method/model work, not clinical efficacy.",
+      "points": [
+        {
+          "id": "requirement-1",
+          "requirement": "Define relative pathway preference with a reference ligand and named outputs.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "biased-agonism",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "4c78969aa132aa6b745ddd4cf08f9788e57aed368b7652b3a460676a61db6ede",
+              "explanation": "Retains ligand comparison, reference, endpoints, expression, timing and model assumptions."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "requirement-2",
+          "requirement": "Separate ligand behavior from pathway amplification, baseline and assay/system bias.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "biased-agonism",
+              "version": "proposal-biology",
+              "field": "summary",
+              "fieldSha256": "4c78969aa132aa6b745ddd4cf08f9788e57aed368b7652b3a460676a61db6ede",
+              "explanation": "Explains why potency differences across assays do not isolate a ligand-specific effect."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "requirement-3",
+          "requirement": "Retain source-method assumptions and distinguish analytical/simulation/reanalysis evidence from clinical superiority.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "biased-agonism",
+              "version": "proposal-biology",
+              "field": "notes",
+              "fieldSha256": "167e3f2b0f50322673f08da0b3b5dd40644c164db37e0d9ca75e199eee5b2169",
+              "explanation": "Names the constitutively active-mutant assumption, its required check and the clinical-evidence boundary."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  }
+]

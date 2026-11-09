@@ -1,7 +1,7 @@
 import type { PaperInput } from "@/lib/schema";
 
 const asOf = "2026-09-08";
-type P = Omit<PaperInput, "kind" | "asOf">;
+type P = Omit<PaperInput, "kind" | "asOf"> & Partial<Pick<PaperInput, "asOf">>;
 const p = (x: P): PaperInput => ({ kind: "paper", asOf, ...x });
 
 /**
@@ -484,29 +484,16 @@ export const papersSolidTumours: PaperInput[] = [
     terms: ["os", "pfs", "standard-of-care"], companies: ["astrazeneca"],
     people: ["cho-byoung-chul"], bottlenecks: ["b-immunotherapy-response", "b-surgery-radiation-innovation"], journals: ["nejm"] }),
 
-  p({ id: "paper-dellphi-301-nejm-2023", name: "DeLLphi-301: tarlatamab, a DLL3-targeting T-cell engager, in previously treated small-cell lung cancer",
-    tldr: "A bispecific antibody that pulls T cells onto small-cell lung cancer cells produced responses in 40% of patients whose cancer had come back after chemotherapy, lasting far longer than any previous drug in this setting.",
-    summary: "Open-label phase 2 trial of 220 patients with small-cell lung cancer that had progressed after platinum-based chemotherapy (and usually immunotherapy), testing tarlatamab, a DLL3 x CD3 bispecific T-cell engager, at 10 mg or 100 mg every two weeks. Primary endpoint was objective response rate.\n\nAt 10 mg the response rate was 40%, median PFS 4.9 months and median OS 14.3 months, with cytokine release syndrome in about half of patients, mostly grade 1-2 and mainly during the first cycle. It led to accelerated FDA approval in 2024 and was confirmed by the phase 3 DeLLphi-304 trial, which showed a survival benefit over chemotherapy (median OS 13.6 vs 8.3 months, HR 0.60).",
+  p({
+    asOf:"2026-11-08", id: "paper-dellphi-301-nejm-2023", name: "DeLLphi-301: tarlatamab, a DLL3-targeting T-cell engager, in previously treated small-cell lung cancer",
+    tldr: "In the phase 2 DeLLphi-301 study, tarlatamab produced an objective response in 40% of the evaluated 10-mg group. This study did not compare it with standard chemotherapy.",
+    summary: "DeLLphi-301 was an open-label phase 2 study of tarlatamab, a DLL3/CD3 T-cell-engaging protein, in previously treated small-cell lung cancer. The publication reports 220 treated patients, with 10-mg and 100-mg dose groups. Blinded independent central review assessed objective response.\n\nAt the reported cutoff, objective response was 40% in the 10-mg group and 32% in the 100-mg group. Median progression-free survival was 4.9 and 3.9 months, respectively. The abstract reports estimated survival at 9 months, rather than a mature median overall-survival comparison with chemotherapy. The later DeLLphi-304 randomized chemotherapy comparison is a separate study, reflected in FDA’s 2025 traditional-approval decision.",
     journal: "New England Journal of Medicine", year: 2023, doi: "10.1056/NEJMoa2307980",
     authors: "Ahn MJ, Cho BC, Felip E, et al.", paperType: "rct", participants: 220, changedPractice: true,
-    findings: [
-      "Objective response 40% at 10 mg and 32% at 100 mg; median duration of response over 9 months.",
-      "At 10 mg: median PFS 4.9 months; median overall survival 14.3 months in a population with a historical OS of 6-8 months.",
-      "Cytokine release syndrome 51% (10 mg) and 61% (100 mg), mostly grade 1-2 in cycle 1; ICANS or associated neurological events in about 8% (10 mg).",
-      "Discontinuation for treatment-related adverse events 3% at the 10 mg dose, which was selected for further development.",
-      "DeLLphi-304 phase 3 (2025): OS 13.6 vs 8.3 months versus chemotherapy, HR 0.60.",
-    ],
-    whatItMeans: "Patients with small-cell lung cancer that has relapsed after chemotherapy now have a drug that works far better than topotecan or lurbinectedin, and it is the first T-cell engager approved for a solid tumour. Treatment requires inpatient monitoring for the first doses because of cytokine release syndrome, which most centres now manage on a short-stay basis. It does not yet apply to first-line treatment, where trials are ongoing.",
-    caveats: [
-      "Single-arm phase 2 with a randomised dose comparison, not a randomised comparison against chemotherapy (that came with DeLLphi-304).",
-      "Cytokine release syndrome and neurotoxicity require hospital-based step-up dosing and limit use in frail patients or centres without experience.",
-      "Every-two-week intravenous dosing is burdensome for patients with a short life expectancy.",
-      "DLL3 expression was not required for entry and was not predictive, so there is no selection biomarker.",
-    ],
-    links: [
-      { label: "NEJM 2023", url: "https://doi.org/10.1056/NEJMoa2307980" },
-      { label: "ClinicalTrials.gov NCT05060016", url: "https://clinicaltrials.gov/study/NCT05060016" },
-    ],
+    findings: ["Objective response: 40% (97.5% CI 29 to 52) in the 10-mg group and 32% (97.5% CI 21 to 44) in the 100-mg group.","Among 68 responders across the dose groups, 40 (59%) had a response lasting at least six months at the reported cutoff. This responder denominator is different from all treated patients.","Median progression-free survival: 4.9 months (95% CI 2.9 to 6.7) at 10 mg and 3.9 months (95% CI 2.6 to 4.4) at 100 mg. Estimated survival at nine months was 68% and 66%, respectively.","Cytokine-release syndrome occurred in 51% and 61% of the respective groups, mostly grade 1 or 2 and mainly during cycle 1. Grade 3 CRS was reported in 1% and 6%.","The abstract reports 3% discontinuation because of treatment-related adverse events across the study; it does not assign that figure only to the 10-mg group."],
+    whatItMeans: "This study demonstrated antitumor activity in previously treated SCLC, while leaving comparative benefit against chemotherapy to another trial. The later FDA traditional approval concerns extensive-stage disease progressing on or after platinum chemotherapy. CRS and neurologic toxicity remain serious risks. The September 2026 label specifies 6-to-8-hour monitoring in an appropriate healthcare setting on cycle 1 days 1 and 8, with next-day assessments and further caregiver/proximity instructions; the full current label governs the regimen.",
+    caveats: ["Randomized dose allocation is different from randomization against standard chemotherapy. DeLLphi-304 supplies the later chemotherapy comparison.","Response duration among responders, progression-free survival and overall survival have different endpoints and denominators. Results at one cutoff do not establish superiority to every earlier treatment.","The current label retains boxed warnings for CRS and neurologic toxicity, including ICANS. A shorter specified monitoring period does not mean absence of serious risk."],
+    links: [{"label":"NEJM 2023","url":"https://doi.org/10.1056/NEJMoa2307980"},{"label":"ClinicalTrials.gov NCT05060016","url":"https://clinicaltrials.gov/study/NCT05060016"},{"label":"PubMed","url":"https://pubmed.ncbi.nlm.nih.gov/37861218/"},{"label":"FDA: tarlatamab traditional approval and separate DeLLphi-304 comparison (2025)","url":"https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer"},{"label":"Current IMDELLTRA label: September 2026 monitoring revision and serious warnings","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"}],
     cancers: ["sclc"], drugs: ["tarlatamab"], targets: ["dll3", "cd3"], technologies: ["t-cell-engager", "bispecific-antibody"],
     trials: ["dellphi-304"], terms: ["orr", "crs", "icans", "accelerated-approval"], companies: ["amgen"],
     institutions: ["samsung-medical-center"], people: ["ahn-myung-ju", "cho-byoung-chul", "enriqueta-felip", "juergen-wolf", "fiona-blackhall"], bottlenecks: ["b-undruggable-targets", "b-dose-optimisation", "b-toxicity-qol"], journals: ["nejm"] }),

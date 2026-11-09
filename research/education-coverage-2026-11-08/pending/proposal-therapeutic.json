@@ -1523,11 +1523,10 @@
         "CD28 and 4-1BB are borrowed intracellular signaling regions, not separately administered receptors. Kawalekar compared metabolic and memory features in defined human-cell experiments. Ramos co-infused two specified second- and third-generation products in lymphoma; different expansion and persistence did not isolate comparative clinical benefit. Neither study ranks all products by signaling-domain name.",
         "Binding, surface CAR expression, activation, proliferation and completed target-cell killing are distinct readouts. Compare otherwise matched constructs, target-positive and target-negative cells, healthy-tissue targets and unstimulated activity. Hudecek found that particular IgG-derived spacers could support killing in a dish yet impair activity in mouse models through Fc interactions.",
         "A peptide-HLA target is an exception to blanket HLA-independent descriptions. Rafiq tested a WT1 peptide presented by HLA-A*02:01 in cell and mouse models; this was a proof of concept, not evidence that every intracellular protein or every HLA type is addressable by that construct.",
-        "Relapse mechanisms need separate investigation. Sotillo found CD19 sequence and splicing changes affecting recognition in B-ALL relapse material and experiments. Deng found infusion-product transcriptional features associated with outcomes in a selected cohort of 24 large B-cell lymphoma infusion products; those associations did not prove that one engineered modification would correct every failure.",
         "A 2024 preprint used a pooled signaling-domain library, repeated stimulation and single-cell sequencing to study how domain arrangement affected T-cell states over time. Its membrane-proximal-domain findings are construct-and-assay observations, not a clinical ranking of domains or a validation of pooled-screen hits as treatments.",
         "FDA initiated boxed-warning changes in 2024 for the risk of T-cell malignancies after the then-approved BCMA- or CD19-directed autologous CAR T-cell products. Its communication calls for lifelong monitoring for secondary malignancies. This is a scoped regulatory warning, not a claim that every type of engineered immune cell has the same risk.",
         "In June 2025, FDA eliminated REMS requirements for the named autologous CAR T-cell products in its notice. Product warnings and safety monitoring continued. The manufacturer postmarketing observational studies with 15-year follow-up described in that notice are different from the lifelong patient-monitoring statement in the earlier safety communication.",
-        "Lymphoma: failure comes in two shapes and they need different answers. Relapse without the antigen, through deletion, exon 2 mutation or selection for a spliced transcript the receptor cannot see (Sotillo 2015), is answered by changing the address. Relapse with the antigen still there is usually about the cells: single-cell sequencing of 24 axicabtagene ciloleucel products found three times the frequency of memory-signature CD8 T cells in patients who reached complete response at three months, and an exhaustion signature that tracked a poor molecular response at day 7 (Deng 2020). Collecting T cells earlier in the disease course, allogeneic and in vivo products, and armoured constructs are the responses to the second."
+        "Relapse mechanisms need separate investigation. Sotillo found CD19 sequence and splicing changes affecting recognition in B-ALL relapse material and experiments. Deng found infusion-product transcriptional features associated with outcomes in a selected cohort of 24 large B-cell lymphoma infusion products; those associations did not prove that one engineered modification would correct every failure."
       ],
       "principle": "A common CAR presents a binder outside the cell and signaling domains inside it, connected through a spacer and transmembrane region. Conventional surface-antigen recognition can bypass peptide-HLA presentation; specialized peptide-HLA-targeting CARs retain the relevant HLA and antigen-processing requirements.",
       "strengths": [
@@ -2182,6 +2181,1067 @@
         "Keep trigger recognition, payload transcription, secretion, tissue distribution and downstream activity separate. The IL-12 TIL clinical experience shows why inducible production alone cannot establish confinement or freedom from systemic toxicity. Viable producer-cell abundance, time and cell state matter alongside cytokine concentration."
       ],
       "category": "Treatment jargon"
+    },
+    {
+      "id": "safety-switch-car-t",
+      "kind": "technology",
+      "name": "Cell-therapy safety switches",
+      "aka": [
+        "suicide gene",
+        "safety switch",
+        "inducible caspase 9",
+        "iCasp9",
+        "iC9",
+        "EGFRt",
+        "truncated EGFR switch",
+        "off switch for CAR-T",
+        "Safety-switch (suicide gene) CAR-T",
+        "cell-therapy safety switches",
+        "activity switch",
+        "ON-switch CAR"
+      ],
+      "tldr": "An engineered switch can control a specified cell activity or promote cell removal. Lower signaling, fewer living cells and reversal of injury are different outcomes.",
+      "summary": "A living cell product can persist after administration stops. Activity switches regulate a defined function; elimination switches aim to remove cells. A drug-gated receptor may require a supplied molecule for signaling, whereas inducible caspase-9 activates a cell-death pathway when its dimerizing trigger is given. A removable surface tag offers another clearance route. These mechanisms need evidence within the actual finished product, including trigger exposure, speed, completeness and residual activity. None guarantees instant removal from every tissue or reversal of prior injury.\n\nDi Stasi tested inducible caspase-9 in donor T cells after haploidentical stem-cell transplantation, rather than as a general CAR-T rescue trial. In the GD2-CART01 neuroblastoma report, the suicide switch was activated in one participant.",
+      "status": "phase-2",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Di Stasi et al. 2011, NEJM: inducible apoptosis as a safety switch for adoptive cell therapy",
+          "url": "https://doi.org/10.1056/NEJMoa1106152"
+        },
+        {
+          "label": "Wang et al. 2011, Blood: a transgene-encoded cell surface polypeptide (truncated EGFR) for selection, tracking and ablation of engineered cells",
+          "url": "https://doi.org/10.1182/blood-2011-02-337360"
+        },
+        {
+          "label": "Wu et al.: small-molecule ON-switch CAR experiments (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26405231/"
+        },
+        {
+          "label": "Del Bufalo et al.: GD2-CART01 neuroblastoma study and activated suicide gene (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37018492/"
+        },
+        {
+          "label": "FDA: CAR T-cell product-development guidance, including related engineered lymphocytes (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "logic-gated-therapeutics",
+        "apoptosis"
+      ],
+      "cancers": [
+        "neuroblastoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "armored-car"
+      ],
+      "targets": [],
+      "drugs": [
+        "cetuximab"
+      ],
+      "companies": [
+        "bellicum"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "crs"
+      ],
+      "trials": [
+        "gd2-cart01"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Wu separated antigen-binding and signaling components in an ON-switch CAR that assembled under a small-molecule input in preclinical systems. Reducing a controlled signal is different from eliminating every cell. Trigger clearance, response time and remaining functions need their own measurements.",
+        "In the five-person Di Stasi study, four recipients developed graft-versus-host disease and received AP1903. The report describes a reduction exceeding 90% of modified T cells within half an hour and control of that disease. This is a specified transplant setting, not proof of complete whole-body clearance or reversal of every CAR-associated toxicity.",
+        "Wang described a truncated EGFR marker lacking ligand-binding regions and intracellular kinase activity while retaining a cetuximab-binding epitope. The cell-engineering report studied selection, tracking and antibody-mediated clearance. A drug having an approved use does not establish that every marker/antibody combination is a validated clinical rescue system.",
+        "The Del Bufalo GD2-CART01 phase 1/2 report states that the inducible caspase-9 suicide gene was activated in one participant, with rapid elimination reported. This observation does not establish the speed or completeness of every other switch.",
+        "Record the exact trigger, concentration, time and viable-cell input. Compare switch-positive and switch-negative cells and untriggered controls. Keep receptor signaling, secretion, proliferation, target-cell killing, absolute surviving cells and the surviving fraction distinct. A sequence check does not demonstrate a functional switch. Check baseline leakage, incomplete switch expression, survivors that regrow, and the trigger’s access to relevant tissues. Evaluate the switch after manufacture within the finished cell product; a sequence result cannot substitute for these functional tests.",
+        "A fictional activity assay could fall sharply while many viable cells remain and retain target killing. The supported conclusion would be reduced activity in that assay, not complete cell elimination or resolved injury. Sampled blood or a culture well does not establish the result in every tissue."
+      ],
+      "principle": "Name the controlled process and trigger, then measure receptor activity, viable engineered-cell abundance and downstream harms separately before and after triggering.",
+      "strengths": [
+        "Additional control over a specified activity or a cell population in tested constructs"
+      ],
+      "limitations": [
+        "Some cells or functions can survive the trigger",
+        "Released mediators and tissue injury can persist after cells decline",
+        "Cell removal can also remove useful activity; trigger access and product quality matter"
+      ],
+      "since": 2011
+    },
+    {
+      "id": "t-cell-engager",
+      "kind": "technology",
+      "name": "T-cell engagers (bispecific)",
+      "aka": [
+        "T-cell engager",
+        "T cell engager",
+        "TCE",
+        "TCEs",
+        "bispecific T-cell engager",
+        "BiTE",
+        "soluble TCR engager",
+        "TCR-mimic engager"
+      ],
+      "tldr": "T-cell engagers are proteins that bind a specified target and recruit T cells, often through CD3. A binding bridge does not by itself establish completed killing.",
+      "summary": "A dosed T-cell engager supplies a protein connecting target recognition to an available T cell. It does not itself install receptor instructions or supply engineered living responders. Product design can use antibody-derived binding fragments or a soluble TCR recognition domain; some target arms require a particular peptide-HLA complex. Compact BiTE designs, Fc-containing architectures and half-life extension describe features that can overlap rather than mutually exclusive treatment categories.\n\nClinical examples include blinatumomab in B-cell precursor acute lymphoblastic leukemia, teclistamab in multiple myeloma and tarlatamab in extensive-stage small-cell lung cancer. Their actual labels define different settings, combinations, prior treatments and harms. Tebentafusp is a peptide-HLA-directed soluble TCR/CD3 protein with its own allele- and disease-specific use. Neither a common platform name nor binding in a laboratory establishes eligibility or comparative benefit.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bi-specific_T-cell_engager",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bi-specific_T-cell_engager"
+        },
+        {
+          "label": "Liddy et al.: soluble TCR/CD3 ImmTAC constructs (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22561687/"
+        },
+        {
+          "label": "Dao et al.: antibody-derived WT1 peptide-HLA/CD3 engager (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26389576/"
+        },
+        {
+          "label": "Giffin et al.: defined AMG 757 preclinical and exposure models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33203642/"
+        },
+        {
+          "label": "KIMMTRAK label: peptide-HLA/CD3 protein, intended use and pharmacology",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+        },
+        {
+          "label": "FDA tarlatamab application correspondence: BiTE binding domains with an IgG Fc region",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2024/761344Orig1s000AdminCorres.pdf"
+        },
+        {
+          "label": "FDA: tarlatamab traditional approval, DeLLphi-304 and warnings (2025)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer"
+        },
+        {
+          "label": "FDA: the specified blinatumomab consolidation use in B-cell precursor ALL (2024)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-blinatumomab-consolidation-cd19-positive-philadelphia-chromosome-negative-b-cell"
+        },
+        {
+          "label": "FDA: teclistamab combination and monotherapy use scopes (2026)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-teclistamab-combination-daratumumab-hyaluronidase-fihj-relapsed-or-refractory-multiple"
+        },
+        {
+          "label": "Mack et al.: two single-chain Fv fragments in a compact experimental T-cell engager (1995)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7624362/"
+        },
+        {
+          "label": "Bluemel et al.: epitope distance and antigen size in BiTE-directed cell lysis (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20309546/"
+        },
+        {
+          "label": "Kebenko et al.: solitomab phase 1 study in refractory solid tumors (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30221040/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "nk-cell-engagers",
+        "car-t",
+        "tcr-t",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "immunotherapy"
+      ],
+      "technologies": [
+        "bispecific-antibody"
+      ],
+      "targets": [
+        "cd3",
+        "cd19",
+        "cd20",
+        "bcma",
+        "gprc5d",
+        "dll3",
+        "gp100",
+        "psma"
+      ],
+      "drugs": [
+        "tarlatamab",
+        "teclistamab",
+        "glofitamab",
+        "tebentafusp",
+        "blinatumomab"
+      ],
+      "companies": [
+        "xencor",
+        "amunix-pharmaceuticals",
+        "cullinan-therapeutics",
+        "cytomx-therapeutics",
+        "enlaza-therapeutics",
+        "harpoon-therapeutics",
+        "igm-biosciences",
+        "janux-therapeutics",
+        "marengo-therapeutics",
+        "cytospire-therapeutics",
+        "third-arc-bio",
+        "clasp-therapeutics",
+        "disco-pharmaceuticals",
+        "excalipoint-therapeutics",
+        "juri-biosciences",
+        "chiome-bioscience",
+        "cartography-biosciences",
+        "cdr-life",
+        "vitruviae",
+        "crossbow-therapeutics",
+        "duboce-biopharmaceuticals",
+        "shine-on-biomedical",
+        "normunity"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "crs"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "bispecific-antibody"
+      ],
+      "notes": [
+        "An antibody-derived TCR mimic recognizes a peptide-HLA complex using an antibody scaffold. A soluble TCR/CD3 engager instead uses a TCR-derived recognition scaffold attached to a recruiting arm. TCR-T administers cells carrying receptor chains. Target recognition, molecular scaffold and administered object are separate axes; a mimic can be part of an engager without becoming a TCR protein.",
+        "Liddy studied soluble TCR/CD3 ImmTAC proteins in experimental systems. Dao studied an antibody-derived WT1/HLA-A*02:01/CD3 engager in cells and mice. Their results do not establish clinical benefit for every scaffold, HLA allele or cancer. Recruiting another T cell does not require that cell’s native receptor to recognize the target, but does not remove the target arm’s HLA restriction.",
+        "The KIMMTRAK label identifies tebentafusp as a soluble gp100 peptide-HLA/CD3 protein for HLA-A*02:01-positive adults with unresectable or metastatic uveal melanoma. This is a named clinical protein example, not an engineered-cell product or evidence that other peptide-HLA binders share its indication or outcomes.",
+        "Binding to supplied peptide-HLA reagent can bypass natural processing and display. Source-protein expression or a compatible genotype alone is not a functional target assay. For a research claim, compare naturally presenting targets, irrelevant peptides, the wrong HLA allele, antigen-negative targets, suitable effector cells, no-effector conditions and healthy tissues. Labeled clinical selection tests remain a separate clinical-use rule. Record the peptide sequence, HLA allele, display method and its detection or recovery limits; no universal target-density cutoff follows from the format name.",
+        "The Mack construct joined two single-chain Fv fragments with a peptide linker in one compact protein; this is different from an IgG architecture with an Fc region. The FDA tarlatamab application describes DLL3/CD3 binding domains combined with an IgG Fc region in a half-life-extended BiTE. Thus BiTE, Fc-containing and half-life-extended are not three exclusive buckets. Fc design, binding geometry, affinity, target density, distribution and measured exposure still belong to the specific molecule. The Giffin cell, mouse and nonhuman-primate study does not define a universal human schedule.",
+        "Compare recognition, T-cell activation, proliferation, target death, cytokine release and protein exposure at named times. Record effector source/state, target density, effector-to-target ratio, dose or concentration and denominator; include target-negative and no-effector controls. A granule or cytokine signal does not substitute for completed target-cell death or clinical benefit. Cytokines in a culture are a measured laboratory endpoint, not a diagnosis of clinical cytokine-release syndrome.",
+        "Bluemel compared epitope positions and antigen sizes in engineered cell systems. Constructs with similar target-binding affinity differed in target-cell lysis, supporting functional testing of the actual geometry rather than ranking every molecule by affinity alone. In the solitomab phase 1 solid-tumor study, dose-limiting diarrhea and liver abnormalities constrained dose escalation; an accessible target and a binding bridge did not by themselves establish a useful therapeutic window.",
+        "Compared with administered CAR-T or TCR-T cells, a protein engager recruits effectors rather than supplying engineered responders. Protein mass/concentration and viable-cell dose have different units; clearance differs from cell survival, expansion and trafficking. A shared target name does not establish matched epitope, affinity, contact geometry, exposure, controllability or safety.",
+        "The 2025 FDA tarlatamab decision followed the randomized DeLLphi-304 comparison after platinum-based treatment in SCLC. Its survival finding belongs to that drug and setting. The cited blinatumomab consolidation and teclistamab combination/monotherapy decisions likewise retain their own settings; none is a class-wide treatment-sequencing rule.",
+        "For a lymphoma engager, target presence, access to suitable T cells and useful effector function need separate evidence. Antigen expression alone does not establish these other steps. These biological questions do not by themselves select an earlier treatment line; treatment timing needs evidence for the actual drug and setting."
+      ],
+      "principle": "A specified target-binding region and T-cell-recruiting region promote encounters. CD3 recruitment can bypass the recruited cell’s own antigen specificity; a peptide-HLA-binding target arm still retains its peptide and HLA requirements.",
+      "strengths": [
+        "Established clinical uses for particular products in defined settings",
+        "Protein exposure can be adjusted through a specified dosing regimen"
+      ],
+      "limitations": [
+        "Productive encounters need accessible targets and functional effectors",
+        "Healthy-tissue recognition, cytokine release and neurologic harms need product-specific evidence",
+        "Stopping administration does not instantly clear protein or reverse an effect already triggered"
+      ]
+    },
+    {
+      "id": "tcr-t",
+      "kind": "technology",
+      "name": "TCR-T cell therapy",
+      "aka": [
+        "TCR-T",
+        "TCR T cells",
+        "TCR-engineered T cells",
+        "engineered T-cell receptor therapy"
+      ],
+      "tldr": "TCR-T supplies living T cells carrying a selected receptor that recognizes a specified peptide with its presenting HLA molecule. A source-protein name alone does not establish that target.",
+      "summary": "Conventional alpha-beta TCR-T introduces selected paired receptor-chain instructions into therapeutic T cells. The receptor recognizes a displayed peptide-HLA complex, rather than entering the tumor cell to bind the whole source protein. Natural processing, the required HLA allele, surface display, receptor expression and useful cell function remain different questions. This differs from administering a soluble TCR/CD3 protein that recruits other T cells.\n\nAfamitresgene autoleucel (Tecelra) is an approved TCR-T example. FDA initially approved it in 2024 and converted the specified adult use to traditional approval in June 2026, extending the indication to patients aged 12 and older. Its synovial-sarcoma indication retains prior-chemotherapy, selected HLA and MAGE-A4 testing requirements. The full label also contains exclusions and safety requirements; a broad HLA-A*02 label is not a complete eligibility rule.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03967223: IGNYTE-ESO",
+          "url": "https://clinicaltrials.gov/study/NCT03967223"
+        },
+        {
+          "label": "Morgan et al.: receptor gene transfer in metastatic melanoma (2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16946036/"
+        },
+        {
+          "label": "Cameron et al.: Titin cross-reactivity of one MAGE-A3 receptor (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23926201/"
+        },
+        {
+          "label": "Dong et al.: human TCR-CD3 complex assembly (2019 abstract)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
+        },
+        {
+          "label": "WT1/HLA-A*24:02 CAR study in experimental models (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30045840/"
+        },
+        {
+          "label": "Liddy et al.: soluble TCR/CD3 experimental proteins (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22561687/"
+        },
+        {
+          "label": "TECELRA label, revised June 2026: indication, contraindication and receptor design",
+          "url": "https://www.fda.gov/media/180565/download"
+        },
+        {
+          "label": "FDA June 17, 2026 TECELRA conversion/expansion letter",
+          "url": "https://www.fda.gov/media/193220/download"
+        },
+        {
+          "label": "FDA: CAR T-cell product-development guidance, including related engineered lymphocytes (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Bendle et al.: mixed introduced/endogenous TCR chains and autoimmunity in mouse models (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20400962/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell-engager",
+        "car-t",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "sarcoma",
+        "melanoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [
+        "mage-a4",
+        "gp100",
+        "kras",
+        "tp53"
+      ],
+      "drugs": [
+        "afamitresgene-autoleucel"
+      ],
+      "companies": [
+        "affini-t-therapeutics",
+        "neogene-therapeutics",
+        "invocata",
+        "alaunos",
+        "medigene",
+        "anocca",
+        "captain-t-cell",
+        "neowise-biotechnology",
+        "zelluna",
+        "outpace-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "Morgan transferred receptor genes into autologous lymphocytes in a metastatic-melanoma study. Introducing selected recognition instructions differs from expanding a tumor-derived population with its existing receptors. Viral transduction describes a delivery method, not the definition of every receptor-engineering process.",
+        "The conventional receptor uses paired alpha and beta chains alongside the CD3 complex. Cloning selected receptor coding sequences means copying instructions; one sequenced chain does not establish a complete functional receptor or its specificity. Expression and assembly in the finished cells require evaluation. The Dong structural study distinguishes recognition chains from associated signaling components. Bendle showed in mouse models that introduced and endogenous chains could form self-reactive mixed receptors; vector and cell-population changes reduced that model risk. This does not supply a clinical risk rate for every TCR-T product.",
+        "Protein expression and HLA typing lie upstream of the displayed ligand. Antigen/HLA loss or impaired presentation can remove one recognition route; retaining another allele does not rescue a receptor requiring the lost allele. A different receptor using a retained allele needs its own specificity and functional evidence.",
+        "In research, test paired receptor expression and naturally presenting targets, with relevant antigen/HLA removal and restoration, irrelevant peptides, unmodified effectors and healthy tissue. Multimer or peptide-loaded reagent binding is different from natural processing, target-cell death or patient benefit. This research validation is distinct from the approved product’s clinical testing rule.",
+        "Cameron investigated fatal cardiac toxicity with one affinity-enhanced MAGE-A3 receptor and identified a cross-reactive Titin peptide presented by HLA-A*01 as the most likely cause. Earlier screening had not detected the hazard. This was a different receptor from the MAGE-A4 product Tecelra; stronger binding does not establish improved specificity or safety for either a new construct or an entire family.",
+        "The June 2026 Tecelra label names HLA-A*02:01P, -A*02:02P, -A*02:03P and -A*02:06P and a MAGE-A4 tumor test in its indication, with a separate HLA-A*02:05P contraindication. The approval letter documents the adult conversion and pediatric expansion. These are product-specific regulatory scopes, not a general rule for every TCR-T.",
+        "Conventional surface-antigen CARs and peptide-HLA-directed receptors have different recognition requirements, but peptide-HLA CARs also exist. The WT1/HLA-A*24:02 CAR study is a preclinical counterexample to saying all intracellular source antigens are unreachable by any CAR. A format change does not supply a missing required peptide-HLA complex.",
+        "For a soluble TCR/CD3 protein, the dosed molecule supplies recognition and recruits available T cells. TCR-T instead supplies receptor-bearing living cells. Protein exposure, cell trafficking/persistence and useful target-dependent function need separate measurements; neither format wins by definition."
+      ],
+      "principle": "Selected alpha-beta recognition chains operate with the cell’s CD3 signaling machinery. The intended target is the particular naturally displayed peptide-HLA complex, not genotype, RNA abundance or source protein alone.",
+      "strengths": [
+        "Can investigate targets derived from intracellular proteins through peptide-HLA display",
+        "A selected receptor can confer recognition on engineered cells in defined settings"
+      ],
+      "limitations": [
+        "Allele and antigen-processing/display dependencies can limit recognition",
+        "Cross-reactivity, healthy-tissue recognition and whole-regimen harms require evaluation",
+        "Receptor-positive cells still need appropriate state, tissue access and function"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "til-therapy",
+      "kind": "technology",
+      "name": "TIL therapy",
+      "aka": [
+        "TIL therapy",
+        "tumor-infiltrating lymphocyte therapy",
+        "tumour-infiltrating lymphocyte therapy",
+        "TIL transfer"
+      ],
+      "tldr": "TIL therapy expands lymphocytes collected from a tumor and returns a prepared cell product. Tissue origin, culture yield and useful tumor recognition are different claims.",
+      "summary": "Tumor-infiltrating lymphocyte therapy starts with cells collected from tumor tissue, commonly using their existing T-cell receptors. Infiltration does not prove that every cell recognizes the cancer. Culture and selection can change which clones become abundant; final viable-cell yield, recognition breadth and useful function need their own evidence. Manufacturing, conditioning, cytokine support and follow-up form a complete regimen with separate contributions and harms.\n\nLifileucel (Amtagvi) received accelerated FDA approval in 2024 for specified previously treated unresectable or metastatic melanoma. Its label defines the prior-treatment conditions and regimen. TILVANCE-301 is a phase 3 advanced-melanoma study of a lifileucel regimen with pembrolizumab versus pembrolizumab. Neither a registry design nor clinical evidence from one TIL process establishes benefit for every tumor or manufacturing method.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor-infiltrating_lymphocytes",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tumor-infiltrating_lymphocytes"
+        },
+        {
+          "label": "Besser et al., intent-to-treat analysis of TIL therapy at Sheba (Clin Cancer Res 2013)",
+          "url": "https://doi.org/10.1158/1078-0432.ccr-13-0380"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy, collection, engineering and regimen harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Simoni et al.: bystander CD8 T cells in human tumor infiltrates (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+        },
+        {
+          "label": "Rohaan et al.: specified TIL regimen versus ipilimumab in advanced melanoma (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36477031/"
+        },
+        {
+          "label": "FDA: AMTAGVI product, accelerated indication and supporting documents",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/approved-blood-products/amtagvi"
+        },
+        {
+          "label": "AMTAGVI label: tumor-derived cells and the complete regimen",
+          "url": "https://www.fda.gov/media/176417/download"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT05727904: TILVANCE-301 design and melanoma setting",
+          "url": "https://clinicaltrials.gov/study/NCT05727904"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tcr-t",
+        "car-t",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "melanoma",
+        "nsclc",
+        "cervical",
+        "advanced-melanoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "lifileucel"
+      ],
+      "companies": [
+        "iovance",
+        "obsidian-therapeutics",
+        "turnstone-biologics",
+        "geek-gene",
+        "sinorda",
+        "instil-bio",
+        "beijing-xunsheng-biomedical",
+        "attachbio"
+      ],
+      "institutions": [
+        "sheba"
+      ],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "pragmatil"
+      ],
+      "people": [
+        "michal-besser",
+        "jacob-schachter"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-besser-til-melanoma-intent-to-treat-ccr-2013"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cytokine-therapy"
+      ],
+      "notes": [
+        "Simoni studied human lung and colorectal tumor infiltrates and found CD8 T cells recognizing viral epitopes unrelated to the cancer. Tumor location did not establish tumor specificity. Its CD39 observations belong to those sampled populations, not a universal marker rule that proves the specificity of every manufactured cell.",
+        "Conventional alpha-beta T cells recognize peptide-HLA targets. A mixed TIL product can contain multiple specificities, but breadth must be tested against relevant naturally presenting targets and lesions. Polyclonality does not guarantee freedom from antigen/presentation escape or other resistance.",
+        "Record input tissue, culture/selection conditions, viable-cell yield, identity and the final receptor mixture. An expanding bystander clone can increase total yield while reducing the proportion with useful tumor recognition. A receptor repertoire measured before culture is not automatically the infusion product’s repertoire.",
+        "A pathology infiltration estimate describes a tissue feature under a specified scoring rule; it is not the viable-cell count recovered for manufacture, a dose, or proof of tumor reactivity. Functional studies need target material, HLA/antigen controls, suitable effectors, timing, units and readout context. Binding, target death and clinical outcome remain different endpoints.",
+        "Rohaan randomized patients with advanced melanoma to a specified TIL regimen or ipilimumab. In the reported intention-to-treat population, median progression-free survival was 7.2 versus 3.1 months. The TIL arm included lymphodepleting chemotherapy and high-dose IL-2; grade 3 or higher events in that arm were mainly chemotherapy-related myelosuppression. This comparison concerns the whole regimen and is not the lifileucel registration dataset or an isolated test of cells alone.",
+        "FDA’s Amtagvi source describes an autologous tumor-derived product and a defined previously treated melanoma use. The label requires conditioning and post-infusion IL-2 and carries serious regimen warnings. A manufacturing success, a registry listing or a positive cellular assay is not an independent clinical-benefit claim for another process or cancer. Its label lists the specific mechanism of action as unknown. General TIL recognition biology does not establish which clones or components explain an individual response.",
+        "The NCT05727904 registry identifies TILVANCE-301 as a randomized phase 3 study in untreated advanced melanoma, with a lifileucel/conditioning/IL-2 regimen plus pembrolizumab compared with pembrolizumab. The registry description does not supply an efficacy result or local availability for a participant.",
+        "TIL describes tissue origin, while added receptor or other genetic engineering describes an additional property. Experimental engineering can overlap that origin category; neither name implies the other. Tumor entry before collection also does not guarantee trafficking or useful persistence after transfer."
+      ],
+      "principle": "Recover tumor-derived lymphocytes, expand or select them through a specified process, characterize the final cells and evaluate the complete treatment regimen in its disease setting.",
+      "strengths": [
+        "Can investigate multiple naturally occurring recognition specificities",
+        "Clinical evidence exists for specified melanoma products and regimens"
+      ],
+      "limitations": [
+        "Usable tissue and suitable manufacture are required",
+        "Bystander cells and culture selection can limit useful recognition",
+        "Conditioning, cytokine support, cell infusion and follow-up have their own risks and access requirements"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "bispecific-antibody",
+      "kind": "technology",
+      "name": "Bispecific antibodies",
+      "aka": [],
+      "tldr": "A bispecific antibody has two binding specificities. They can recognize different antigens or different parts of one antigen; the finished molecule can have more than two binding sites.",
+      "summary": "Bispecific describes recognition, rather than one required shape or biological action. Some molecules bridge a target cell to an immune effector. Others engage two targets or two epitopes without bridging two cells. Antibody fragments, IgG-based structures and added binding domains can arrange these specificities differently. A T-cell engager is one functional use; a conjugated payload is another product feature.\n\nTwo specificities do not establish that both targets are reached together, that binding produces killing, or that a molecule improves on a comparison treatment. Function, exposure, manufacturing quality and harms need evidence for the actual product and indication. A class containing approved drugs does not make every bispecific design an approved therapy.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bispecific_monoclonal_antibody",
+      "links": [
+        {
+          "label": "FDA: Bispecific Antibody Development Programs guidance (2021), definitions, format, function and quality considerations",
+          "url": "https://www.fda.gov/media/123313/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "trispecific-antibodies"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "targeted-therapy",
+        "immunotherapy"
+      ],
+      "technologies": [
+        "t-cell-engager",
+        "bispecific-adc"
+      ],
+      "targets": [
+        "cd3",
+        "cd20"
+      ],
+      "drugs": [
+        "amivantamab",
+        "zanidatamab",
+        "zenocutuzumab",
+        "ivonescimab"
+      ],
+      "companies": [
+        "xencor",
+        "amunix-pharmaceuticals",
+        "bicara-therapeutics",
+        "compass-therapeutics",
+        "cullinan-therapeutics",
+        "igm-biosciences",
+        "janux-therapeutics",
+        "marengo-therapeutics",
+        "xilio-therapeutics",
+        "ranata-therapeutics",
+        "harbour-biomed",
+        "third-arc-bio",
+        "indupro-therapeutics",
+        "ottimo-pharma",
+        "crescent-biopharma",
+        "clasp-therapeutics",
+        "epibiologics",
+        "mestag-therapeutics",
+        "juri-biosciences",
+        "ltz-therapeutics",
+        "cartography-biosciences",
+        "cdr-life",
+        "instil-bio",
+        "duboce-biopharmaceuticals",
+        "hemogenyx-pharmaceuticals",
+        "rondo-therapeutics",
+        "immunoah",
+        "normunity"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "monoclonal-antibody-manufacturing"
+      ],
+      "notes": [
+        "Specificity counts what is recognized; valency counts binding sites. Two different epitopes on the same antigen can provide two specificities. Added sites do not necessarily add a new specificity, and one molecule is different from separately dosed antibodies.",
+        "FDA guidance distinguishes products that bridge two cells from products whose functions do not require that bridge. Some mechanisms require both target interactions at the same time; others do not. Do not assume that every bispecific recruits T cells or that every target pair acts as an AND gate.",
+        "The manufacturing evaluation includes molecular identity, correct pairing, aggregation, fragments, stability and biological potency. Affinity, binding kinetics, avidity, target distribution and exposure belong to the actual format. Two successful binding assays do not by themselves demonstrate the intended combined function.",
+        "CD20/CD3 lymphoma engagers illustrate one bispecific format: CD20 recognition connects to T-cell recruitment through CD3. The target-binding step does not require tumor peptide-HLA recognition, but that does not guarantee useful cell function or response. Cytokine release syndrome and neurologic toxicity do not demonstrate effective tumor killing; step-up dosing is product-specific risk management, not freedom from serious harm."
+      ],
+      "principle": "Describe each recognition site, its epitope and copy number, then test whether simultaneous binding is needed for the intended effect in the relevant biological setting.",
+      "strengths": [
+        "Can place two recognition functions within a defined molecule",
+        "Different formats can be tested for a particular intended mechanism"
+      ],
+      "limitations": [
+        "Binding-site geometry and exposure can change function",
+        "Healthy tissues can carry either recognized target",
+        "Additional specificities do not establish greater benefit or freedom from harm"
+      ]
+    },
+    {
+      "id": "tarlatamab",
+      "kind": "drug",
+      "name": "Tarlatamab",
+      "aka": [],
+      "tldr": "Tarlatamab is a DLL3/CD3 T-cell-engaging protein approved for extensive-stage small-cell lung cancer progressing on or after platinum chemotherapy.",
+      "summary": "Tarlatamab connects DLL3 recognition to recruitment through CD3. FDA initially granted accelerated approval in 2024 and granted traditional approval in November 2025 after the randomized DeLLphi-304 comparison with chemotherapy. Its labeled use is extensive-stage SCLC progressing on or after platinum-based chemotherapy; findings from an earlier response study and the later survival comparison belong to different trials.\n\nCRS and neurologic toxicity, including ICANS, remain boxed warnings. The September 2026 label specifies 6-to-8-hour monitoring in an appropriate healthcare setting on cycle 1 days 1 and 8, next-day assessments and further caregiver/proximity instructions. Dose step-up, interruptions and toxicity management follow the full current label; the protein format does not guarantee an immediately reversible effect.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tarlatamab",
+      "links": [
+        {
+          "label": "FDA label (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tarlatamab"
+        },
+        {
+          "label": "NICE TA1091: tarlatamab for extensive-stage small-cell lung cancer after 2 or more treatments (not recommended)",
+          "url": "https://www.nice.org.uk/guidance/ta1091"
+        },
+        {
+          "label": "Patient education sheet (ONS, NCODA, HOPA and ACCC): Tarlatamab",
+          "url": "https://ncoda.org/pes/tarlatamab/"
+        },
+        {
+          "label": "FDA: tarlatamab traditional approval and separate DeLLphi-304 comparison (2025)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer"
+        },
+        {
+          "label": "Current IMDELLTRA label: September 2026 monitoring revision and serious warnings",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "sclc",
+        "extensive-stage-sclc",
+        "limited-stage-sclc",
+        "lung-cancer"
+      ],
+      "sections": [],
+      "technologies": [
+        "t-cell-engager"
+      ],
+      "targets": [
+        "dll3",
+        "cd3"
+      ],
+      "drugs": [],
+      "companies": [
+        "amgen"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "crs"
+      ],
+      "trials": [
+        "dellphi-304",
+        "nct07005128",
+        "nct06117774",
+        "nct07778316",
+        "nct06502977",
+        "nct05060016",
+        "nct06745323",
+        "dellphi-305"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-dellphi-301-nejm-2023"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "brand": "Imdelltra",
+      "modality": "Bispecific T-cell engager (DLL3×CD3)",
+      "mechanism": "Half-life-extended BiTE binding DLL3 on tumour and CD3 on T cells.",
+      "approvals": [
+        {
+          "region": "US",
+          "year": 2024,
+          "indication": "Extensive-stage SCLC after platinum chemotherapy"
+        },
+        {
+          "region": "EU",
+          "year": 2026,
+          "indication": "ES-SCLC after platinum-based chemotherapy; 29 May 2026"
+        },
+        {
+          "region": "England (NICE)",
+          "year": 2025,
+          "indication": "Extensive-stage small-cell lung cancer progressing after two or more lines of treatment including platinum-based chemotherapy: not recommended",
+          "note": "TA1091, published 20 August 2025, says tarlatamab should not be used in the NHS in England for this indication."
+        }
+      ],
+      "mechanismSteps": [
+        "One arm binds DLL3 on the tumour cell",
+        "The other arm binds CD3 on any passing T cell",
+        "An artificial immune synapse forms, independent of MHC",
+        "The T cell releases perforin and granzymes into the tumour cell",
+        "Tumour cell dies; cytokines are released (source of CRS)"
+      ],
+      "dosing": {
+        "route": "IV infusion over 1 hour",
+        "schedule": "Step-up: 1 mg on cycle 1 day 1, then 10 mg on day 8 and every 2 weeks thereafter",
+        "modifications": "Hold for grade 2 CRS/ICANS until resolved; dexamethasone premedication and IV fluids for first two doses",
+        "monitoring": "Inpatient monitoring 22-24 h after first two doses; temperature, blood pressure, neurology; ICE score",
+        "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"
+      },
+      "toxicity": [
+        {
+          "event": "Cytokine release syndrome",
+          "anyGradePct": 55,
+          "grade3PlusPct": 1.6,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Haemoglobin decreased",
+          "anyGradePct": 58,
+          "grade3PlusPct": 5,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Fatigue",
+          "anyGradePct": 51,
+          "grade3PlusPct": 10,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Dysgeusia",
+          "anyGradePct": 36,
+          "grade3PlusPct": 0,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Pyrexia",
+          "anyGradePct": 36,
+          "grade3PlusPct": 0,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Decreased appetite",
+          "anyGradePct": 34,
+          "grade3PlusPct": 2.7,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Musculoskeletal pain",
+          "anyGradePct": 30,
+          "grade3PlusPct": 1.1,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Constipation",
+          "anyGradePct": 30,
+          "grade3PlusPct": 0.5,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Nausea",
+          "anyGradePct": 22,
+          "grade3PlusPct": 1.6,
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "DeLLphi-301, n=187"
+        },
+        {
+          "event": "Neurologic toxicity incl. ICANS",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782",
+          "note": "Boxed warning; ICANS in a minority, mostly grade 1-2"
+        }
+      ],
+      "access": [
+        {
+          "country": "US",
+          "reimbursement": "Medicare Part B (physician-administered); commercial plans per formulary",
+          "assistance": "https://www.amgensupportplus.com",
+          "source": "https://www.cms.gov/medicare/payment/part-b-drugs/asp-pricing-files",
+          "asOf": "2026-09-06"
+        },
+        {
+          "country": "UK",
+          "reimbursement": "NICE: appraisal for ES-SCLC after platinum in progress (2026)",
+          "source": "https://www.nice.org.uk/guidance/published?ngt=Technology%20appraisal%20guidance",
+          "asOf": "2026-09-06"
+        }
+      ],
+      "regulatoryEvents": [
+        {
+          "date": "2022-11",
+          "type": "designation",
+          "region": "US",
+          "note": "Breakthrough Therapy designation, ES-SCLC after platinum",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2024-05-16",
+          "type": "accelerated-approval",
+          "region": "US",
+          "note": "Accelerated approval, ES-SCLC after platinum (DeLLphi-301)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications",
+          "indication": "Adult patients with extensive stage small cell lung cancer (ES-SCLC) with disease progression on or after platinum-based chemotherapy"
+        },
+        {
+          "date": "2025-06",
+          "type": "filing",
+          "region": "US",
+          "note": "Phase 3 DeLLphi-304 OS benefit presented; conversion to full approval pursued",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2025-11-19",
+          "type": "conversion",
+          "region": "US",
+          "note": "Confirmed: the accelerated approval of 2024 converted to traditional approval 1.5 years after it was granted.",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer",
+          "indication": "Adult patients with extensive stage small cell lung cancer (ES-SCLC) with disease progression on or after platinum-based chemotherapy"
+        },
+        {
+          "date": "2025-12",
+          "type": "approval",
+          "region": "US",
+          "note": "Full approval based on DeLLphi-304",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        }
+      ]
+    },
+    {
+      "id": "paper-dellphi-301-nejm-2023",
+      "kind": "paper",
+      "name": "DeLLphi-301: tarlatamab, a DLL3-targeting T-cell engager, in previously treated small-cell lung cancer",
+      "aka": [],
+      "tldr": "In the phase 2 DeLLphi-301 study, tarlatamab produced an objective response in 40% of the evaluated 10-mg group. This study did not compare it with standard chemotherapy.",
+      "summary": "DeLLphi-301 was an open-label phase 2 study of tarlatamab, a DLL3/CD3 T-cell-engaging protein, in previously treated small-cell lung cancer. The publication reports 220 treated patients, with 10-mg and 100-mg dose groups. Blinded independent central review assessed objective response.\n\nAt the reported cutoff, objective response was 40% in the 10-mg group and 32% in the 100-mg group. Median progression-free survival was 4.9 and 3.9 months, respectively. The abstract reports estimated survival at 9 months, rather than a mature median overall-survival comparison with chemotherapy. The later DeLLphi-304 randomized chemotherapy comparison is a separate study, reflected in FDA’s 2025 traditional-approval decision.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "NEJM 2023",
+          "url": "https://doi.org/10.1056/NEJMoa2307980"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT05060016",
+          "url": "https://clinicaltrials.gov/study/NCT05060016"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37861218/"
+        },
+        {
+          "label": "FDA: tarlatamab traditional approval and separate DeLLphi-304 comparison (2025)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer"
+        },
+        {
+          "label": "Current IMDELLTRA label: September 2026 monitoring revision and serious warnings",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "paper-tarlatamab-sclc-n-engl-j-med-2025",
+        "paper-dll3-sclc-clin-cancer-res-2019",
+        "paper-rudin-sclc-molecular-subtypes-nat-rev-cancer-2019"
+      ],
+      "cancers": [
+        "sclc",
+        "lung-cancer",
+        "extensive-stage-sclc"
+      ],
+      "sections": [
+        "immunotherapy",
+        "drug-discovery"
+      ],
+      "technologies": [
+        "t-cell-engager",
+        "bispecific-antibody"
+      ],
+      "targets": [
+        "dll3",
+        "cd3"
+      ],
+      "drugs": [
+        "tarlatamab"
+      ],
+      "companies": [
+        "amgen"
+      ],
+      "institutions": [
+        "samsung-medical-center"
+      ],
+      "pathways": [],
+      "terms": [
+        "orr",
+        "crs",
+        "icans",
+        "accelerated-approval",
+        "resistance"
+      ],
+      "trials": [
+        "dellphi-304"
+      ],
+      "people": [
+        "ahn-myung-ju",
+        "cho-byoung-chul",
+        "enriqueta-felip",
+        "juergen-wolf",
+        "fiona-blackhall",
+        "luis-paz-ares"
+      ],
+      "bottlenecks": [
+        "b-undruggable-targets",
+        "b-dose-optimisation",
+        "b-toxicity-qol",
+        "b-rare-cancers",
+        "b-manufacturing-cell-therapy",
+        "b-care-fragmentation"
+      ],
+      "keyPapers": [],
+      "journals": [
+        "nejm"
+      ],
+      "dependsOn": [],
+      "notes": [],
+      "journal": "New England Journal of Medicine",
+      "year": 2023,
+      "doi": "10.1056/NEJMoa2307980",
+      "pmid": "37861218",
+      "authors": "Ahn MJ, Cho BC, Felip E, et al.",
+      "paperType": "rct",
+      "findings": [
+        "Objective response: 40% (97.5% CI 29 to 52) in the 10-mg group and 32% (97.5% CI 21 to 44) in the 100-mg group.",
+        "Among 68 responders across the dose groups, 40 (59%) had a response lasting at least six months at the reported cutoff. This responder denominator is different from all treated patients.",
+        "Median progression-free survival: 4.9 months (95% CI 2.9 to 6.7) at 10 mg and 3.9 months (95% CI 2.6 to 4.4) at 100 mg. Estimated survival at nine months was 68% and 66%, respectively.",
+        "Cytokine-release syndrome occurred in 51% and 61% of the respective groups, mostly grade 1 or 2 and mainly during cycle 1. Grade 3 CRS was reported in 1% and 6%.",
+        "The abstract reports 3% discontinuation because of treatment-related adverse events across the study; it does not assign that figure only to the 10-mg group."
+      ],
+      "whatItMeans": "This study demonstrated antitumor activity in previously treated SCLC, while leaving comparative benefit against chemotherapy to another trial. The later FDA traditional approval concerns extensive-stage disease progressing on or after platinum chemotherapy. CRS and neurologic toxicity remain serious risks. The September 2026 label specifies 6-to-8-hour monitoring in an appropriate healthcare setting on cycle 1 days 1 and 8, with next-day assessments and further caregiver/proximity instructions; the full current label governs the regimen.",
+      "caveats": [
+        "Randomized dose allocation is different from randomization against standard chemotherapy. DeLLphi-304 supplies the later chemotherapy comparison.",
+        "Response duration among responders, progression-free survival and overall survival have different endpoints and denominators. Results at one cutoff do not establish superiority to every earlier treatment.",
+        "The current label retains boxed warnings for CRS and neurologic toxicity, including ICANS. A shorter specified monitoring period does not mean absence of serious risk."
+      ],
+      "changedPractice": true,
+      "participants": 220
+    },
+    {
+      "id": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+      "kind": "paper",
+      "name": "C-144-01: lifileucel, tumour-infiltrating lymphocytes grown from a patient's own tumour, in melanoma after checkpoint inhibitors have failed",
+      "aka": [],
+      "tldr": "The reported 66-person phase 2 lifileucel cohort had a 36% objective response rate after prior checkpoint therapy. It tested a complete TIL regimen without a randomized comparator.",
+      "summary": "This open-label, single-arm phase 2 report evaluated centrally manufactured lifileucel in advanced melanoma after checkpoint treatment. Sixty-six patients received lymphodepletion, a single lifileucel infusion and up to six high-dose IL-2 doses. The abstract reports a mean of 3.3 prior therapies, not a median. Investigator-assessed objective response was the primary endpoint.\n\nObjective response was 36% (95% CI 25 to 49), comprising two complete and 22 partial responses. Median response duration had not been reached at 18.7 months of median follow-up. These are the reported cohort and cutoff; they are separate from later pooled analyses and the FDA regulatory analysis.",
+      "asOf": "2026-11-08",
+      "links": [
+        {
+          "label": "Sarnaik et al.: exact 2021 C-144-01 report and abstract",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33979178/"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT02360579",
+          "url": "https://clinicaltrials.gov/study/NCT02360579"
+        },
+        {
+          "label": "FDA: February 2024 Amtagvi approval announcement and precise modality scope",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-unresectable-or-metastatic-melanoma"
+        },
+        {
+          "label": "AMTAGVI label: intended use, complete regimen and boxed warnings",
+          "url": "https://www.fda.gov/media/176417/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "paper-rohaas-til-vs-ipilimumab-nejm-2022"
+      ],
+      "cancers": [
+        "melanoma"
+      ],
+      "sections": [],
+      "technologies": [
+        "til-therapy"
+      ],
+      "targets": [],
+      "drugs": [
+        "lifileucel",
+        "aldesleukin",
+        "cyclophosphamide"
+      ],
+      "companies": [
+        "iovance"
+      ],
+      "institutions": [
+        "moffitt",
+        "nci"
+      ],
+      "pathways": [],
+      "terms": [
+        "tils",
+        "orr"
+      ],
+      "trials": [
+        "c-144-01"
+      ],
+      "people": [
+        "amod-sarnaik",
+        "steven-rosenberg"
+      ],
+      "bottlenecks": [
+        "b-manufacturing-cell-therapy",
+        "b-immunotherapy-response"
+      ],
+      "keyPapers": [],
+      "journals": [
+        "jco"
+      ],
+      "dependsOn": [],
+      "notes": [],
+      "journal": "Journal of Clinical Oncology",
+      "year": 2021,
+      "doi": "10.1200/JCO.21.00612",
+      "pmid": "33979178",
+      "authors": "Sarnaik AA, Hamid O, Khushalani NI, et al.",
+      "paperType": "translational",
+      "findings": [
+        "66 treated patients; the reported mean number of prior therapies was 3.3. All had prior anti-PD-1 or anti-PD-L1 treatment.",
+        "Objective response was 36% (95% CI 25 to 49): two complete and 22 partial responses. Disease control was 80% (95% CI 69 to 89).",
+        "Median response duration was not reached after median follow-up of 18.7 months. This is a censored response-duration estimate, not proof that every response persists indefinitely.",
+        "The regimen included lymphodepletion and high-dose IL-2. The abstract describes a safety profile consistent with those treatments; it does not isolate adverse effects or benefit attributable to the infused cells alone."
+      ],
+      "whatItMeans": "The report supports activity of a specified manufactured TIL regimen in previously treated melanoma. FDA’s February 2024 decision subsequently granted accelerated approval to lifileucel for a defined melanoma use, describing it as the first FDA-approved tumor-derived T-cell immunotherapy. That is a product, modality and jurisdiction scope, rather than a statement about every cellular cancer treatment. The current product label retains serious warnings and requires an inpatient setting with appropriate intensive-care support.",
+      "caveats": [
+        "Single-arm response evidence does not establish comparative survival benefit. The reported 66-person cohort is not interchangeable with later pooled or regulatory populations.",
+        "Response among treated patients is different from the probability of obtaining tissue or successfully manufacturing a product.",
+        "The product label has a boxed warning covering treatment-related mortality, prolonged severe cytopenia, severe infection, and cardiopulmonary and renal impairment. Conditioning and IL-2 are part of the complete regimen.",
+        "The primary abstract is not a complete adverse-event account. Full-study safety and current prescribing information need to be read alongside the activity results."
+      ],
+      "changedPractice": true,
+      "participants": 66
     }
   ]
 }

@@ -1,7 +1,7 @@
 [
   {
     "id": "assay-status-claims",
-    "status": "implemented prototype; consumer review and owner approval pending",
+    "status": "implemented draft with locally verified consumers; owner approval and hosted preview pending",
     "question": "Can a query distinguish test origin, development designation, product authorization and laboratory certification for the same assay and intended use?",
     "currentFields": [
       "src/data/assays.ts:Assay.regulatory",
@@ -12,25 +12,25 @@
     "approvalDependency": "Schema/library product changes require the repository product-approval workflow.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "head": "1982abcba38e08085e11dcbd244acca940630ad7",
       "fields": [
         "RegulatoryClaimSchema",
         "DrugSchema.regulatoryClaims",
         "Assay.regulatoryClaims"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "validation": "285 files / 2830 tests, 47 final focused tests, 52905-page webpack export, API/Markdown/graph/engine round-trips, scoped reader/Ask/semantic/decomposition checks and 20 hydrated viewport checks; global overflow outside new groups remains documented",
       "remaining": [
-        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
         "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
-      ]
+      ],
+      "consumerVerification": "PR #376 research/scoped-evidence-schema-2026-11-08/consumer-verification.json; scoped groups fit usable width, citations retain distinct observations, dual cargo remains one bundle; whole-document overflow outside the new groups remains 11px at 393 and 3px at 320."
     }
   },
   {
     "id": "trial-site-status",
-    "status": "implemented prototype; consumer review and owner approval pending",
+    "status": "implemented draft with locally verified consumers; owner approval and hosted preview pending",
     "question": "Can a query report which named facility is recruiting while keeping overall status, local cohort availability and the dated source separate?",
     "currentFields": [
       "src/lib/schema.ts:TrialParticipationSchema.overallStatus",
@@ -43,25 +43,25 @@
     "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "head": "1982abcba38e08085e11dcbd244acca940630ad7",
       "fields": [
         "TrialParticipationSchema.facilities",
         "TrialParticipationSchema.cohortObservations",
         "TrialParticipationSchema.responseStudySha256"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "validation": "285 files / 2830 tests, 47 final focused tests, 52905-page webpack export, API/Markdown/graph/engine round-trips, scoped reader/Ask/semantic/decomposition checks and 20 hydrated viewport checks; global overflow outside new groups remains documented",
       "remaining": [
-        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
         "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
-      ]
+      ],
+      "consumerVerification": "PR #376 research/scoped-evidence-schema-2026-11-08/consumer-verification.json; scoped groups fit usable width, citations retain distinct observations, dual cargo remains one bundle; whole-document overflow outside the new groups remains 11px at 393 and 3px at 320."
     }
   },
   {
     "id": "mechanism-edge-evidence",
-    "status": "implemented prototype; consumer review and owner approval pending",
+    "status": "implemented draft with locally verified consumers; owner approval and hosted preview pending",
     "question": "Can a mechanism edge retain its model, observation versus hypothesis, source and uncertainty instead of representing every connection only as activation or inhibition?",
     "currentFields": [
       "src/lib/schema.ts:PathwayEdgeSchema.from",
@@ -73,24 +73,24 @@
     "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "head": "1982abcba38e08085e11dcbd244acca940630ad7",
       "fields": [
         "PathwayEdgeSchema.evidence",
         "PathwayDiagramInteractive evidence disclosure"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "validation": "285 files / 2830 tests, 47 final focused tests, 52905-page webpack export, API/Markdown/graph/engine round-trips, scoped reader/Ask/semantic/decomposition checks and 20 hydrated viewport checks; global overflow outside new groups remains documented",
       "remaining": [
-        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
         "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
-      ]
+      ],
+      "consumerVerification": "PR #376 research/scoped-evidence-schema-2026-11-08/consumer-verification.json; scoped groups fit usable width, citations retain distinct observations, dual cargo remains one bundle; whole-document overflow outside the new groups remains 11px at 393 and 3px at 320."
     }
   },
   {
     "id": "conjugate-payload-composition",
-    "status": "implemented prototype; consumer review and owner approval pending",
+    "status": "implemented draft with locally verified consumers; owner approval and hosted preview pending",
     "question": "Can a drug query distinguish delivery antigen, payload chemical identity, payload mechanism/class, released species and per-payload loading for a dual-payload construct?",
     "currentFields": [
       "src/lib/schema.ts:DrugSchema.payload",
@@ -103,20 +103,20 @@
     "approvalDependency": "Drug schema, format decomposition and any display changes need a concrete product proposal and owner review.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "1fde97f4d986c9c7845abe54d67b1fe8495140c2",
+      "head": "1982abcba38e08085e11dcbd244acca940630ad7",
       "fields": [
         "DrugSchema.conjugateComposition",
         "ConjugateCompositionSchema",
         "PayloadComponentSchema"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "284 test files / 2824 tests, API round-trip, 52905 webpack-exported pages and local rendered checks; named local rendering limitations retained",
+      "validation": "285 files / 2830 tests, 47 final focused tests, 52905-page webpack export, API/Markdown/graph/engine round-trips, scoped reader/Ask/semantic/decomposition checks and 20 hydrated viewport checks; global overflow outside new groups remains documented",
       "remaining": [
-        "Review reader, search and format-decomposition consumers against the new optional fields; API/graph/pathway checks do not certify all legacy consumers.",
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
         "Upstream preview/externally accessible paired captures; connected account returned 403, and native consent lookup returned 404 for both reported id and slug"
-      ]
+      ],
+      "consumerVerification": "PR #376 research/scoped-evidence-schema-2026-11-08/consumer-verification.json; scoped groups fit usable width, citations retain distinct observations, dual cargo remains one bundle; whole-document overflow outside the new groups remains 11px at 393 and 3px at 320."
     }
   }
 ]

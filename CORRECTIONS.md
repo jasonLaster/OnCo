@@ -4,6 +4,18 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-08
 
+### Systematic public-education coverage audit: cell controls and recognition formats
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-08 | [Cell-therapy safety switches](/technologies/safety-switch-car-t/) | Claimed the GD2-CART01 switch was unused and generalized transplant evidence into CAR-T rescue | Independently resolved Di Stasi, Wang, Wu and Del Bufalo abstracts | Separates activity, elimination and injury; retains the one reported activation, finished-product controls and survivors; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [T-cell engagers](/technologies/t-cell-engager/) | Treated architectures as exclusive and generalized HLA independence and treatment timing | Primary construct/geometry studies, FDA application and product-specific labels | Separates scaffold, recognition, recruited cells, exposure and measured killing; clinical uses remain scoped; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [TCR-T](/technologies/tcr-t/) | Retained an outdated Tecelra approval scope and categorical surface-CAR contrast | Current FDA label/letter and independently resolved receptor, pairing and cross-reactivity studies | Keeps selected alleles/contraindication and 2026 approval scope, paired-chain/CD3 behavior and preclinical peptide-HLA CAR exceptions; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [TIL therapy](/technologies/til-therapy/) | Misidentified TILVANCE-301 as NSCLC and implied tumor origin established useful specificity | Exact registry identity, FDA label and Simoni/Rohaan primary abstracts | Restores melanoma design, bystander/repertoire and whole-regimen boundaries; specific Amtagvi mechanism remains unknown; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [Bispecific antibodies](/technologies/bispecific-antibody/) | Defined every construct as two arms and two different targets and implied combined action without format-specific evidence | Raw FDA 2021 guidance; EMA historical authorization record | Separates specificity, valency, biparatopic recognition and mechanisms; removes unqualified 2014 family dates from this and the engager owner; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [DeLLphi-301 study card](/key-papers/paper-dellphi-301-nejm-2023/) and [tarlatamab](/drugs/tarlatamab/) | Mixed original and later survival cutoffs, assigned overall discontinuation to one dose, overclaimed first/relative benefit and retained older monitoring wording | Exact primary abstract, randomized-dose registry design, 2025 FDA decision and September 2026 label | Restores study-specific endpoints/denominators and current monitoring with serious risks; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+| 2026-11-08 | [C-144-01 lifileucel study card](/key-papers/paper-c-144-01-lifileucel-melanoma-jco-2021/) | Called the reported mean a median and blended original, pooled and regulatory populations with a broad first-cell-therapy claim | Exact 2021 abstract, FDA approval wording and current product label | Separates the 66-person study from later analyses, narrows modality/jurisdiction scope and retains serious regimen warnings; unchecked detailed safety/cost claims are not repeated; [draft #375](https://github.com/judegomila/OnCo/pull/375) |
+
 ### Systematic public-education coverage audit: cell therapies
 
 | Date | Entity | What was wrong | How found | Fix |

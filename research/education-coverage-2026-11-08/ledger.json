@@ -35,12 +35,12 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "8487e419d1bc5157971ded4372f4a8f9f2bbfc33a27954801ceb36a134cd24bc"
+      "recordSnapshotSha256": "846af160695ce764270d84429dd22e02668eadc0a0a717bd33618f0cb20cd88c"
     },
     {
       "version": "draft-376",
-      "state": "Open draft product proposal; owner approval and upstream preview pending; not merged",
-      "recordSnapshotSha256": "a331c408635bb325d3d10fab314d62381125ae6cbd754597a7f9d1be5e36a960"
+      "state": "Open draft product proposal; reader/search/decomposition and export consumers verified locally; owner approval and upstream preview pending; not merged",
+      "recordSnapshotSha256": "1918af5f94a4955b126ff9a8ca63be3140b7c5a730858734d572bcd12e90c4e0"
     }
   ],
   "stats": {
@@ -50,12 +50,12 @@
     "navigation": 14,
     "navigationReviewed": 0,
     "navigationWithTeachingContent": 0,
-    "semanticallyReviewed": 59,
-    "implementedCoverage": 40,
+    "semanticallyReviewed": 64,
+    "implementedCoverage": 47,
     "mainCoverage": 0,
-    "unresolvedContentItems": 483,
-    "unresolvedSources": 497,
-    "adjacentConcepts": 9,
+    "unresolvedContentItems": 476,
+    "unresolvedSources": 490,
+    "adjacentConcepts": 10,
     "unresolvedAdjacentConcepts": 2,
     "openSchemaGaps": 4,
     "unreviewedLiteratureOccurrences": 105,
@@ -32026,38 +32026,62 @@
           {
             "id": "bridging",
             "requirement": "Distinguish tumor-target and CD3 engagement from native TCR specificity, with productive contact and functional T cells still required.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "af2cab4df910eb79964ccef90e4525733f4cb0a09b4c2ec9ec94c8d5665a7520",
+                "explanation": "Separates CD3 recruitment from native specificity and keeps accessible targets and functional effectors necessary."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "overlapping-formats",
             "requirement": "Distinguish compact BiTE, Fc-containing designs and half-life extension without treating them as mutually exclusive architectures.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Contrasts the compact two-scFv construct and FDA-described Fc-containing half-life-extended BiTE without exclusive categories."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "function-exposure",
             "requirement": "Separate recognition, activation, target-cell killing, exposure and persistence; a dosed protein is not receptor-engineered living cells.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Separates recognition, activation, target death, protein exposure and living-cell behavior."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "controls-safety",
             "requirement": "Retain cell-source, target density, timing, effector-to-target ratios, target-negative and no-effector controls and healthy-tissue or cytokine risk.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Records cell state, density, ratios, timing, denominators, negative/no-effector/healthy controls and laboratory cytokines separately from clinical CRS."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -32415,47 +32439,84 @@
           {
             "id": "recognition-scaffold",
             "requirement": "Distinguish antibody-derived TCR mimics, soluble TCR/CD3 proteins and receptor-engineered living T cells.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Distinguishes antibody mimic, soluble TCR protein and receptor-bearing living cells."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "exact-target",
             "requirement": "Retain exact peptide and HLA allele, natural processing and measured display separately from source-protein abundance or compatible genotype.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Retains exact peptide/allele, processing/display assay and detection/recovery limits without a universal density cutoff."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "effector-route",
             "requirement": "Separate redirected effector native specificity from target HLA restriction and the need for functional cells.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "af2cab4df910eb79964ccef90e4525733f4cb0a09b4c2ec9ec94c8d5665a7520",
+                "explanation": "CD3 recruitment changes the responding cell route, not the target-arm HLA requirement."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "controls-safety",
             "requirement": "Retain wrong-allele, target-negative, no-effector and healthy-cell controls; artificial peptide loading and higher affinity do not establish natural display or safety.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Names wrong-allele/irrelevant-peptide/negative/no-effector/healthy controls and natural-display limits; the TCR-T owner retains the scoped cross-reactivity hazard."
+              },
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "The specifically identified affinity-enhanced MAGE-A3/Titin cross-reactivity hazard was missed by earlier screening; no family-wide risk estimate inferred."
+              }
+            ],
+            "remaining": []
           },
           {
             "id": "clinical-scope",
             "requirement": "Keep a labeled allele- and disease-specific protein example separate from efficacy of other scaffolds or diseases.",
-            "status": "unreviewed",
-            "evidence": [],
-            "remaining": [
-              "Canonical-owner review or verified supplement remains open."
-            ]
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "The named current KIMMTRAK label is separated from other scaffolds and diseases."
+              }
+            ],
+            "remaining": []
           }
         ]
       }
@@ -32884,7 +32945,7 @@
                 "recordId": "car-t",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
                 "explanation": "Names the verified WT1/HLA-A*02:01 preclinical exception."
               }
             ],
@@ -32899,7 +32960,7 @@
                 "recordId": "car-t",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
                 "explanation": "Defines common first/second/third-generation arrangements and variable later labels without ranking clinical benefit."
               }
             ],
@@ -32914,7 +32975,7 @@
                 "recordId": "car-t",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
                 "explanation": "Keeps CD28/4-1BB metabolism, co-infused product kinetics and spacer/Fc experiments in their actual study contexts."
               }
             ],
@@ -32929,7 +32990,7 @@
                 "recordId": "car-t",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
                 "explanation": "Separates binding, surface expression, activation, proliferation and killing and specifies matched/healthy-tissue controls."
               }
             ],
@@ -33537,8 +33598,122 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, measurement, practice, comparison and source-scope section at the pinned curriculum. Personal-case material excluded. Compared canonical merged records and independently resolved the adopted primary sources; drafted representation remains separate from main.",
+        "sectionHashes": [
+          "4ee66728f19e620eb544e46fb5ea48fc195ea3e6a7fb7f65332d632cf83f722a",
+          "dc56d59ecba9aa19bd6d09a228153714422db67273cf1a030c7410b947ba6b66",
+          "01d0633d55854c89fca84d0f8f1c9b340749b9c53e5eb06eec300d6e78f4167c",
+          "8ee745b5cdc1ee24de5b5b192cb834c64c9e02e8788ebe7d432924531f676e92",
+          "515d95d8bbfaaec44b2e5857f4b436aeb7b09eea45185c3e818d45a5a4de9d66",
+          "fd7c9a184add5bae7540764c08496a3542515f8b3746fdad06876047a1647b44",
+          "6d22c2ccb77109d4d30bd9451dac4a123b3d740404b3c5f1dceafdf2801380b8",
+          "87229768e1f1595450c805f1a354af0f2122779416c62175aab95f348f318885",
+          "7f2685b8ad49944f9611691ec457916441280b3755801c84eae49c9c2b48c8ff",
+          "2e598054203ff0ca209810e9ef66cca798b1a314bb61840f4134991df0b151ab",
+          "9f4aba7440eecb56abf6817a088b44fd2d83cdf52447b95652003756e068e4e7"
+        ],
+        "points": [
+          {
+            "id": "control-outcomes",
+            "requirement": "Separate control of a specified activity, elimination of living cells and reversal of prior injury.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e6dbce44c16f8ed63b5bbffd3a71ea2971e40dc49c57fc4b703d3080992ea434",
+                "explanation": "Defines activity and elimination mechanisms and keeps injury reversal separate."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "mechanism-evidence",
+            "requirement": "Retain the exact trigger, product and study setting for drug-gated receptors, inducible caspase-9 and removable markers.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                "explanation": "Names the preclinical ON-switch, donor-transplant caspase-9 study and experimental EGFRt clearance; the GD2-CART01 activation is correctly scoped."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "finished-product",
+            "requirement": "Evaluate the functional switch within the manufactured cell product; a sequence result does not establish function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                "explanation": "Requires finished-product tests and distinguishes genetic identity from functional response."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "survivors-harms",
+            "requirement": "Retain baseline leakage, incomplete expression, tissue access, survivors, regrowth, sacrificed useful cells and persistent downstream harm.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                "explanation": "Names leakage, incomplete expression, trigger access and survivor regrowth; the summary and limitations preserve residual harms and useful-cell loss."
+              },
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "c7dcf50223a0ab6c076625de09a5284b60a8505246376bc62b79aced18419fd0",
+                "explanation": "Cell removal can remove useful activity; surviving functions and prior tissue injury remain separate limits."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurements-controls",
+            "requirement": "Keep trigger concentration/time, viable input, switch-positive/negative controls, signaling, secretion, division, killing and absolute surviving cells distinct.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                "explanation": "Records trigger/input/time, untriggered and nonexpressing controls and separate activity/count endpoints."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "interpretation-example",
+            "requirement": "A lower activity signal with viable cells retaining function supports reduced measured activity, not complete elimination, every-tissue clearance or injury reversal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "safety-switch-car-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                "explanation": "The explicitly fictional example retains viable survivors and residual killing with limits on sampled compartments."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33617,8 +33792,122 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, measurement, practice, comparison and source-scope section at the pinned curriculum. Personal-case material excluded. Compared canonical merged records and independently resolved the adopted primary sources; drafted representation remains separate from main.",
+        "sectionHashes": [
+          "8db14a7bac74c883c1ec22ac22e2aecf4ea525a65ec2fae505e5e2cb188a0066",
+          "a269180a5995882fcb7df54dbb8dfde687713d94c3ab0c4432e964045196b4b2",
+          "4b2046de909d318536ce10d8a5fabfdd6459a8399acc2d5e8913918491ca82d7",
+          "a369edaafeef55741da79da0c9cde16e63fb700f24addcfea67f258991f3e5d9",
+          "3697629a15eec7bfb6770969084ca8fd68661969172ae937154b3344d7418ef9",
+          "a32173780da4169f74a52fd3f3e7674e7ceb0ba53ba2b208299db909e73c5ff3",
+          "d9b41a48f8a3ffcd6b01a66327aa2b8f1eb32c2817e17a63039f6e94224e6638",
+          "934a343121d4ebfc81bfe997c2c035614b18e1e6787f8659eb46631a4e350193",
+          "94163b9a775c28e8d0739a508a363525958fd25cb21ebcef0fdd80dadb267c7e",
+          "1e21282214c16aad05b0e2e2f2edda17b37e8f5f7d3a7cdb243c3f87bb87b5f6",
+          "0819fa2343daa17816ca0f274cb636a9235241243a58f4433f51671be1761467",
+          "68691ccffcfb5456b2a07d693ee744480dfe9927ab08a5f77453fc72f9cba573"
+        ],
+        "points": [
+          {
+            "id": "administered-object",
+            "requirement": "Distinguish a dosed recruiting protein from administered viable CAR-bearing cells and a separate in-body engineering carrier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "871ec9ccc71a98ac47dbdbca5c653ee7806b0640b5a395fd0996b6402a442e5b",
+                "explanation": "The protein does not install instructions or supply engineered responders; the CAR-T and living-cell owners retain the different engineering/delivery objects."
+              },
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Explicitly separates vector/particle input, in-body engineering and later engineered-cell number, apart from cell-source origin."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "effectors-connection",
+            "requirement": "Separate recruited available T cells from supplied engineered responders, and binding/activation from completed killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Compares supplied and recruited effectors and separates recognition, activation and target death."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "recognition-geometry",
+            "requirement": "A shared surface target does not establish matched epitopes, affinity, geometry, distribution or safety; peptide-HLA binders retain their requirements.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "The exact binding route and geometry remain construct-specific; scaffold and HLA requirements are stated explicitly."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "exposure-control",
+            "requirement": "Keep protein mass/concentration, distribution and clearance separate from viable-cell dose, expansion, trafficking and useful persistence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Defines the distinct dose units and dynamics; stopping administration does not instantly clear exposure or effects."
+              },
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "28f81c330f1a2be4c951ff96e4f6536c4d56de6177673503d650d7c20001ecd3",
+                "explanation": "Stopping protein administration does not instantly clear existing protein or reverse an effect already triggered."
+              },
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Stopping administration does not instantly remove living cells; receptor shutoff, cell elimination and treatment of inflammation are separate controls."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "evidence-no-ranking",
+            "requirement": "Use target-negative, effector/product and healthy-target controls; access, function, exposure, persistence and harm need evidence without a format-wide winner.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Names the assay inputs and controls and rejects binding or persistent detection as proof of useful clinical benefit."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33697,8 +33986,115 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, measurement, practice, comparison and source-scope section at the pinned curriculum. Personal-case material excluded. Compared canonical merged records and independently resolved the adopted primary sources; drafted representation remains separate from main.",
+        "sectionHashes": [
+          "339be448b9f0650e989bc09c46331036e7a48afe9a53e03636121a83532ac320",
+          "a99e22175c6b6f9dfe7119ce494be9a92bfbe2b8edf87988b6c3f79bd0e88470",
+          "cd7cded70fc4d089beecac823edf1b7c84ca89fd496266b825b9a74772245072",
+          "f6915fef3e2f116107b38abd4da6e3981bf2b094b22401fb385aabb91878c369",
+          "ff323a1480cad8735086a22f851c6526228a0668db59f32c3bba73280752e37b",
+          "3b7ce7fd90e59bffd45402235ef6ecce0ac6ffb2911a07cdc86cd3850c0cc06a",
+          "9d6f17d211ad33e94cc544c9865d5ecca91527051e2d4339474f5980df76d3d1",
+          "5d819bb73f77cf8520685b4ecc698611a99ed4f84ff3a79db74f313abb3e80c4",
+          "d8f81859c49cfb1e218d9abc6f575b9b9d89988000777fbca4c63016d451be46",
+          "a03855a62752ac80cd9f8bd3829dc4cb5fca562bd64b0074b391afef1f975a76",
+          "b4486dd323b57e0af27b7cc64fe2582f2b0613c6288283ecb30d90c532df35f5",
+          "1ce062a9fbe05c3370c4c848d39e24d0c0042a45b90c03ab4d2f6f8fbaac8092"
+        ],
+        "points": [
+          {
+            "id": "shared-target",
+            "requirement": "Fix the exact peptide-HLA complex; source protein, genotype or loaded reagent does not establish natural display or a different required allele.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Separates HLA/antigen loss, reagent binding and naturally presenting target tests; another allele needs a different validated receptor."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "scaffold-object",
+            "requirement": "Separate installed paired TCR chains on cells, a soluble TCR/CD3 protein and an antibody-derived TCR mimic.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "c4670c4de4f06dbff7c17d1664b0331ded2e6879ac317bdd9b286ee0f3d0798e",
+                "explanation": "Defines recognition scaffold separately from administered protein or engineered living cells."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "signaling-effectors",
+            "requirement": "Distinguish receptor-associated CD3 in supplied TCR-T cells from recruitment through CD3 on available T cells; recruitment does not remove target HLA restriction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "principle",
+                "fieldSha256": "af2cab4df910eb79964ccef90e4525733f4cb0a09b4c2ec9ec94c8d5665a7520",
+                "explanation": "The recruited effector need not share native specificity, while the target arm still requires its own peptide and HLA."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "exposure-persistence",
+            "requirement": "Track protein exposure and clearance separately from cell survival, expansion, trafficking, receptor expression and functional persistence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "The soluble-protein comparison preserves the different exposure questions and supplies no format-wide winner."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "controls-limits",
+            "requirement": "Test naturally presenting cells, peptide/HLA and unmodified-effector controls and healthy tissues; reagent binding, stopping a dose or detecting cells does not settle killing or safety.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Names natural-display controls and the difference between reagent recognition, target death and benefit; the linked kinetics owner retains stopping/control limitations."
+              },
+              {
+                "recordId": "t-cell-engager",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "28f81c330f1a2be4c951ff96e4f6536c4d56de6177673503d650d7c20001ecd3",
+                "explanation": "Stopping protein administration does not instantly clear existing protein or reverse an effect already triggered."
+              },
+              {
+                "recordId": "cellular-kinetics-and-persistence",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "6095dda6437422970d1e2bcd8dcf036bab21e059b3cc778e4e049de1754b0482",
+                "explanation": "Stopping administration does not instantly remove living cells; receptor shutoff, cell elimination and treatment of inflammation are separate controls."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33773,8 +34169,122 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, measurement, practice, comparison and source-scope section at the pinned curriculum. Personal-case material excluded. Compared canonical merged records and independently resolved the adopted primary sources; drafted representation remains separate from main.",
+        "sectionHashes": [
+          "844590c278a21e62f8f8fa002a0e600b6889c392bd29706e5f3c3ac3de66d5f2",
+          "be01419616ed2475a48b0bf8c6b89dd9c2ceff6ebdecbc929b7612efd3bcbe43",
+          "96d841efdd7e555cd058e73181a4ffbeafbe6a006203be925fd3c1cbb613aab3",
+          "f541a7f49fb116567b86544e0fee01e9019b066a220ab86837dbf144daaeb5da",
+          "f3eb49b50a20256efbacc773144b032e9d48aba12c5075184a59a6f8c0c68c7c",
+          "b5da4be39b3c97f8cbc4095abe46c640ce1a383cc27674bdfef1a0a586c06cdd",
+          "8009c16eb7173f6f1c862f87e791cdfe2288d36d63199c0ea0a4675545c62d18",
+          "41938e4db3d12e496d399cb96f7962c68e3f92cdc936338e18e8e8e04de81504",
+          "bac5073fa5784fb8caf3b099c7262e44fa5904f0cae7cd2d1aabb980fd2b4dcd",
+          "77ea5fca58c892eaaafbae0ae7c76f6ae58456b675b9b2c3b00a482f31dff5b9",
+          "f6d5119ca6facdf25d93d00cf0d090f43f6b6ebf50811db0dc9885f20a93e539"
+        ],
+        "points": [
+          {
+            "id": "engineering-pair",
+            "requirement": "Explain installing paired alpha/beta receptor instructions, cloning those sequences and vector transduction separately from expansion of native cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Defines selected-chain installation and viral transfer without treating one delivery method as the universal process."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "assembly-state",
+            "requirement": "Retain expression, receptor/CD3 assembly, endogenous-chain pairing and final cell function; one chain does not establish receptor specificity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Includes the assembly distinction and scoped mouse evidence on self-reactive mixed receptors."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "presentation-restriction",
+            "requirement": "Separate intracellular source protein, peptide processing, required HLA allele, display and useful recognition; an alternative allele or format does not repair a missing specified target.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "d1edbe8d5112e1ae46cb32ad9eeb3149b19cb7ab83e9c9dc9039711b39db539a",
+                "explanation": "Defines the naturally displayed peptide-HLA target and separate expression/function dependencies."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "specificity-safety",
+            "requirement": "Higher affinity and a reassuring screen do not prove safety; keep intended healthy-tissue recognition and unintended cross-reactivity product-specific.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "The MAGE-A3/Titin investigation is separated from the MAGE-A4 product and any family-wide risk rate."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "functional-controls",
+            "requirement": "Separate multimer or peptide-loaded reagent binding from natural processing and target death; use HLA/antigen perturbations, irrelevant peptides, unmodified effectors and healthy targets.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Lists paired-expression and natural-target controls with research-versus-clinical-testing boundaries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "clinical-use-scope",
+            "requirement": "Keep the exact approved product, indication, selected HLA alleles, antigen test and contraindication separate from general research validation or eligibility claims.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "cd22984a4efcd4beb56aa76bf90adda658cdc425f4f1c4ca2d865132acc09c41",
+                "explanation": "Uses the current June 2026 Tecelra label and approval letter, including the separate A*02:05P contraindication."
+              },
+              {
+                "recordId": "tcr-t",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "d1edbe8d5112e1ae46cb32ad9eeb3149b19cb7ab83e9c9dc9039711b39db539a",
+                "explanation": "Defines the June 2026 adult traditional approval conversion and age-12-and-older expansion in the actual disease setting."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33848,8 +34358,122 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read every general teaching, measurement, practice, comparison and source-scope section at the pinned curriculum. Personal-case material excluded. Compared canonical merged records and independently resolved the adopted primary sources; drafted representation remains separate from main.",
+        "sectionHashes": [
+          "dad5c6e13062fdefa4e9ab4ebf13fbb44a518c2d3a0e3cfb0fc6f9ed1c81ecfc",
+          "ecb08a6775da1ab742bb4630957f9473c6d45d0749239e0426c6e871a73dde49",
+          "16f51571d990caeb8e505c07d02629f57164aae926c052c369527208c065911d",
+          "3fd57d7175761dbd2417dbae28ccf5f271ae7652d5f3bdad351a889ba32f4230",
+          "b31d045deffe8fce51ab92793a34168c77c7a1a86df2a30bfb14cc68bbde51ac",
+          "4158ff6a796faada185e0b83aa9444497ed45076d27a16fb25eb664d34c05d91",
+          "1ecbccddee7a9c27baa19399c7aa58c95a7c1a4cde2153090106fe59bfbf5a3a",
+          "72b8051f6cd162353c198cc741980692c2fd72e4934796c5caf953b78296e2fe",
+          "fbc76abf724afae9494138562b5f08d32f482a81d4b1e88d3913a2b7c5418ba0",
+          "f436c4b917ded11a6c36f9fd81630ea69eb060f7436ca0008db9ddc6adf4f937",
+          "698b9597a9c6c7134ce3fcf29565c496168ebb0db9cdc7beb02221890cb9ddf2"
+        ],
+        "points": [
+          {
+            "id": "origin-specificity",
+            "requirement": "Tumor origin does not prove tumor-specific recognition; viral bystanders and manufacturing selection can change the final mixture.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "Scopes Simoni to human lung/colorectal infiltrates and separates tissue repertoire from the infusion product."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "native-recognition-breadth",
+            "requirement": "Describe native peptide-HLA recognition and possible multiple specificities without treating a mixed product as escape-proof or identical to receptor engineering.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "Keeps native recognition, tested breadth and optional added engineering as different properties."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "yield-potency",
+            "requirement": "Culture yield, viable-cell identity and receptor mixture do not establish useful tumor recognition or durable activity; expanding bystanders can change proportions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "The manufacturing description separates counts, repertoire and functional recognition."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "whole-regimen",
+            "requirement": "Attribute evidence and serious harms to the defined manufacturing/conditioning/cytokine regimen and cancer, rather than the cells alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "The randomized melanoma regimen, lifileucel label and design-only registry are distinct sources; the label-specific mechanism remains unknown."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-controls",
+            "requirement": "Separate pathology stromal-area infiltration from recovered viable-cell count, dose, receptor repertoire, target death and outcome; retain target preparation, HLA/effector controls, timing and units.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "Explicitly distinguishes tissue scoring and manufactured-cell measures and requires functional assay context."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "access-persistence",
+            "requirement": "Obtaining tissue and manufacturing cells is not clinical benefit; earlier tumor entry does not establish post-transfer trafficking or functional persistence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "fbf1347cc6c4b94c489c8d3c1e6084e41ed44797b2247e4897ad083c50cc7d57",
+                "explanation": "Preserves process-specific feasibility, disease scope and the difference between collection origin and later behavior."
+              },
+              {
+                "recordId": "til-therapy",
+                "version": "proposal-therapeutic",
+                "field": "limitations",
+                "fieldSha256": "935ad4584f5bd301576290bb11c35e1ae08360b6d6b1b1b8a7b0a5bdb6af783d",
+                "explanation": "Obtaining usable tissue, manufacture, conditioning/cytokine risks and access requirements remain separate prerequisites."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -45918,7 +46542,7 @@
                 "recordId": "car-t",
                 "version": "proposal-therapeutic",
                 "field": "notes",
-                "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+                "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
                 "explanation": "The independently resolved preprint is described as an assay/library study, without a clinical ranking."
               }
             ],
@@ -46050,6 +46674,95 @@
             "remaining": [
               "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cell-therapy-study-and-label-scopes",
+      "title": "Cell-therapy study endpoints and regulatory scopes",
+      "domain": "therapeutics",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37861218/",
+        "https://pubmed.ncbi.nlm.nih.gov/33979178/",
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-unresectable-or-metastatic-melanoma",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"
+      ],
+      "discoveryOccurrences": [
+        "rendered-linked-card:bispecific-antibody",
+        "rendered-linked-card:til-therapy"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Codex first-pass content audit; not an expert sign-off",
+        "checkedAt": "2026-11-08",
+        "rationale": "Read linked rendered cards, resolved exact DOI/PMID identities, read both complete available abstracts, the raw FDA approval wording, registry dose-allocation design and current label monitoring paragraphs. Unseen full-study safety appendices are not certified.",
+        "points": [
+          {
+            "id": "endpoint-cutoff",
+            "requirement": "Separate dose comparisons, standard-care comparisons, treated/responding denominators, original cutoffs and reported mean versus median.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "paper-dellphi-301-nejm-2023",
+                "version": "proposal-therapeutic",
+                "field": "findings",
+                "fieldSha256": "bacae1b4c2096ab6a243542aa248aac0fb5adea71ff8bd8f445aa103fbf33ce8",
+                "explanation": "Restores original response and nine-month survival endpoints with the reported populations; 3% discontinuation is not restricted to one dose."
+              },
+              {
+                "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "9aaa26c459211a10e96e4a3a533bf14549b51ae89f04727510d875b8532204bd",
+                "explanation": "Restores mean prior therapies and the reported 66-person cohort separately from later pooled/regulatory analyses."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "regulatory-scope",
+            "requirement": "A first-approval statement needs the actual product, modality and jurisdiction; one labeled TCE is not every engager and one TIL is not every cell therapy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+                "version": "proposal-therapeutic",
+                "field": "whatItMeans",
+                "fieldSha256": "8ce9e7a1f90fc174020fe8d3a8ef9fd5684fa6f3048741e317583f66603877db",
+                "explanation": "Retains the exact narrower FDA tumor-derived T-cell modality scope."
+              },
+              {
+                "recordId": "paper-dellphi-301-nejm-2023",
+                "version": "proposal-therapeutic",
+                "field": "whatItMeans",
+                "fieldSha256": "088310eb3b1e846d95f5f5846b8ce6c1ed841c228099c564b3ef9ccb262e937a",
+                "explanation": "Replaces the unqualified first-solid-tumor claim with the exact approved disease/prior-treatment use."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "current-care-requirements",
+            "requirement": "Keep current label monitoring and serious harms separate from historical study schedules and blanket inpatient assertions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tarlatamab",
+                "version": "proposal-therapeutic",
+                "field": "summary",
+                "fieldSha256": "e7724305c564091f5a8d93612a50a52465d9f8c4a592b24e42a5795568f4e48d",
+                "explanation": "Retains September 2026 label-specific monitoring, additional assessments and serious-risk boundaries."
+              },
+              {
+                "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+                "version": "proposal-therapeutic",
+                "field": "caveats",
+                "fieldSha256": "adc23e212e186e02c1e30dbc95c844088bee2a0799018b7680664f4c40470a61",
+                "explanation": "Includes the specific current boxed-warning harms and distinguishes abstract activity from full-study safety."
+              }
+            ],
+            "remaining": []
           }
         ]
       }

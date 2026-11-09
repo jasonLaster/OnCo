@@ -270,7 +270,7 @@
               "recordId": "car-t",
               "version": "proposal-therapeutic",
               "field": "notes",
-              "fieldSha256": "e6d9dfd7430ab7871ef754a339139174a571bb2af9368d450dc592201835e378",
+              "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
               "explanation": "The independently resolved preprint is described as an assay/library study, without a clinical ranking."
             }
           ],
@@ -402,6 +402,95 @@
           "remaining": [
             "Resolve the corresponding therapy labels and authorization supplements before editing. The two NSCLC examples in draft #376 do not close this separate esophageal-use review."
           ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "cell-therapy-study-and-label-scopes",
+    "title": "Cell-therapy study endpoints and regulatory scopes",
+    "domain": "therapeutics",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/37861218/",
+      "https://pubmed.ncbi.nlm.nih.gov/33979178/",
+      "https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-unresectable-or-metastatic-melanoma",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782"
+    ],
+    "discoveryOccurrences": [
+      "rendered-linked-card:bispecific-antibody",
+      "rendered-linked-card:til-therapy"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex first-pass content audit; not an expert sign-off",
+      "checkedAt": "2026-11-08",
+      "rationale": "Read linked rendered cards, resolved exact DOI/PMID identities, read both complete available abstracts, the raw FDA approval wording, registry dose-allocation design and current label monitoring paragraphs. Unseen full-study safety appendices are not certified.",
+      "points": [
+        {
+          "id": "endpoint-cutoff",
+          "requirement": "Separate dose comparisons, standard-care comparisons, treated/responding denominators, original cutoffs and reported mean versus median.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "paper-dellphi-301-nejm-2023",
+              "version": "proposal-therapeutic",
+              "field": "findings",
+              "fieldSha256": "bacae1b4c2096ab6a243542aa248aac0fb5adea71ff8bd8f445aa103fbf33ce8",
+              "explanation": "Restores original response and nine-month survival endpoints with the reported populations; 3% discontinuation is not restricted to one dose."
+            },
+            {
+              "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "9aaa26c459211a10e96e4a3a533bf14549b51ae89f04727510d875b8532204bd",
+              "explanation": "Restores mean prior therapies and the reported 66-person cohort separately from later pooled/regulatory analyses."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "regulatory-scope",
+          "requirement": "A first-approval statement needs the actual product, modality and jurisdiction; one labeled TCE is not every engager and one TIL is not every cell therapy.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+              "version": "proposal-therapeutic",
+              "field": "whatItMeans",
+              "fieldSha256": "8ce9e7a1f90fc174020fe8d3a8ef9fd5684fa6f3048741e317583f66603877db",
+              "explanation": "Retains the exact narrower FDA tumor-derived T-cell modality scope."
+            },
+            {
+              "recordId": "paper-dellphi-301-nejm-2023",
+              "version": "proposal-therapeutic",
+              "field": "whatItMeans",
+              "fieldSha256": "088310eb3b1e846d95f5f5846b8ce6c1ed841c228099c564b3ef9ccb262e937a",
+              "explanation": "Replaces the unqualified first-solid-tumor claim with the exact approved disease/prior-treatment use."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "current-care-requirements",
+          "requirement": "Keep current label monitoring and serious harms separate from historical study schedules and blanket inpatient assertions.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "tarlatamab",
+              "version": "proposal-therapeutic",
+              "field": "summary",
+              "fieldSha256": "e7724305c564091f5a8d93612a50a52465d9f8c4a592b24e42a5795568f4e48d",
+              "explanation": "Retains September 2026 label-specific monitoring, additional assessments and serious-risk boundaries."
+            },
+            {
+              "recordId": "paper-c-144-01-lifileucel-melanoma-jco-2021",
+              "version": "proposal-therapeutic",
+              "field": "caveats",
+              "fieldSha256": "adc23e212e186e02c1e30dbc95c844088bee2a0799018b7680664f4c40470a61",
+              "explanation": "Includes the specific current boxed-warning harms and distinguishes abstract activity from full-study safety."
+            }
+          ],
+          "remaining": []
         }
       ]
     }

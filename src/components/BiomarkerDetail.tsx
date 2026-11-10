@@ -53,6 +53,9 @@ export function BiomarkerDetail({ bm }: { bm: Biomarker }) {
   const shownTests = tests.slice(0, READOUT_TEST_CAP);
   const trials = trialsNaming(bm);
   const ent = (id: string) => g.get(id);
+  // A companion diagnostic device links to its record unless the Tests box above already links it: one link per product.
+  const testHrefs = new Set(shownTests.map((t) => t.href));
+  const deviceRecord = (id?: string) => { const d = id ? ent(id) : undefined; return d && !testHrefs.has(routeFor(d)) ? d : undefined; };
   return (
     <div className="mt-8 space-y-8">
       <PartOf bm={bm} />
@@ -98,7 +101,8 @@ export function BiomarkerDetail({ bm }: { bm: Biomarker }) {
           <ScrollRow className="card"><table className="onco text-sm"><thead><tr><th>Device</th><th>Maker</th><th>Indication and sample</th><th>Drug</th><th>PMA / 510(k)</th></tr></thead>
             <tbody>{bm.companionDiagnostics.map((c, i) => {
               const co = c.companyId ? ent(c.companyId) : undefined;
-              return <tr key={i}><td className="font-medium">{c.device}</td><td>{co ? <Link className="underline" href={routeFor(co)}>{c.maker}</Link> : c.maker}</td><td className="text-muted">{c.indication}</td><td>{c.drugs.map((id) => { const d = ent(id); return d ? <Link key={id} className="underline me-2" href={routeFor(d)}>{d.name}</Link> : null; })}</td><td className="text-muted tabular-nums"><a className="underline" href={c.source} rel="noopener">{c.pma ?? "FDA list"}</a></td></tr>;
+              const dev = deviceRecord(c.deviceId);
+              return <tr key={i}><td className="font-medium">{dev ? <Link className="underline" href={routeFor(dev)}>{c.device}</Link> : c.device}</td><td>{co ? <Link className="underline" href={routeFor(co)}>{c.maker}</Link> : c.maker}</td><td className="text-muted">{c.indication}</td><td>{c.drugs.map((id) => { const d = ent(id); return d ? <Link key={id} className="underline me-2" href={routeFor(d)}>{d.name}</Link> : null; })}</td><td className="text-muted tabular-nums"><a className="underline" href={c.source} rel="noopener">{c.pma ?? "FDA list"}</a></td></tr>;
             })}</tbody></table></ScrollRow>
         </section>
       )}

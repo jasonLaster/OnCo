@@ -856,7 +856,7 @@ export async function collect(): Promise<Finding[]> {
   for (const b of g.kind("biomarker")) {
     const bl = loc(b.id);
     for (const c of b.companionDiagnostics) {
-      rows.push({ table: `${b.id}.companionDiagnostics.device`, family: "biomarker companionDiagnostics.device", where: bl, name: c.device, want: ["drug"], idField: "", owners: [c.maker], pages: [routeFor(b)], named: true });
+      rows.push({ table: `${b.id}.companionDiagnostics.device`, family: "biomarker companionDiagnostics.device", where: bl, name: c.device, want: ["drug"], idField: "deviceId", id: c.deviceId, owners: [c.maker], pages: [routeFor(b)], named: true });
       rows.push({ table: `${b.id}.companionDiagnostics.maker`, family: "biomarker companionDiagnostics.maker", where: bl, name: c.maker, want: ["company"], idField: "companyId", id: c.companyId, pages: [routeFor(b)], named: true });
     }
   }
@@ -967,7 +967,7 @@ export async function collect(): Promise<Finding[]> {
   // Class 5: companies.
   const namedInTables = new Map<string, string[]>();
   for (const t of TUMOUR_TESTS) if (!t.drugId) push(namedInTables, t.companyId, t.name);
-  for (const b of g.kind("biomarker")) for (const c of b.companionDiagnostics) if (c.companyId && !idx.exact(c.device, ["drug"]).length) push(namedInTables, c.companyId, c.device);
+  for (const b of g.kind("biomarker")) for (const c of b.companionDiagnostics) if (c.companyId && !c.deviceId && !idx.exact(c.device, ["drug"]).length) push(namedInTables, c.companyId, c.device);
   for (const d of deals) if (!d.assets.length && d.from.id) push(namedInTables, d.from.id, d.assetText);
   const cos: CompanyLite[] = g.kind("company").map((c) => {
     const productCount = new Set([...c.drugs, ...(g.incoming(c.id).get("drug") ?? []).map((d) => d.id)]).size;

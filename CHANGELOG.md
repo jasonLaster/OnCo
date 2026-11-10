@@ -7,10 +7,16 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 10 November 2026
+- Drug labels that came from word fragments are corrected (37 antagonists no longer read as agonists, fluoropyrimidines no longer as degraders), companion-diagnostic rows link their devices, and the open-source catalogue keeps projects whose GitHub page went away
+- A kept open-source record cites a page that answers today: paquo and tiffslide now cite PyPI, without the GitHub-only star counts
+- paquo and tiffslide stay in the open-source catalogue from PyPI after their GitHub repositories went away
 - Ten nonprofits move from companies to institutions, among them the Jaime Leandro Foundation and Chan Zuckerberg Initiative, and two drugs held twice become one record each: GFH375 with VS-7375, AZD0120 with GC012F
+- Open-source catalogue: fuck-cancer, a patient brief skill for AI agents, joins the patient-facing projects
+- Companion diagnostic rows carry their device's record, and the readout table links it
 - Static redirect pages for the retired drug ids and the moved nonprofits
 - Redirect the retired drug ids and the moved nonprofits' company routes
 - Merge GFH375 with VS-7375 and AZD0120 with GC012F, and move ten nonprofits from company to institution records
+- Classifier patterns read whole words: antagonists are no longer agonists, benzimidazoles no longer IMiDs
 - chore: draft change proposals that need review (#385)
 - chore: EU regional rows read from the EMA register pages (#384)
 

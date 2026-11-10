@@ -1,37 +1,38 @@
 # Audit progress
 
-The goal is active. These independent source versions overlap and are never added together. Counts derive from current ledgers; worker output is credited only after coordinator integration and exact proof checks.
+The goal is active. Independent source versions overlap and are never added. Worker output receives credit only after coordinator field, source and integration checks.
 
 | Measure | Current checkpoint |
 | --- | ---: |
-| Pinned original Markdown files | 537 |
-| Original teaching sources assessed | 94 |
+| Original assessed teaching sources | 108 |
 | Original routing-only navigation files classified | 7 |
-| Original reviewed files / denominator | 101 / 537 |
-| Original assessed sources fully represented in drafts | 90 |
-| Original assessed sources retaining requirements | 4 |
-| Original ordinary content sources unread | 436 |
-| Original requirements / evidenced / open | 391 / 384 / 7 |
-| Later assessed teaching sources / denominator | 86 / 550 |
-| Later assessed sources fully represented in drafts | 86 |
-| Later requirements / evidenced / open | 371 / 371 / 0 |
-| Later ordinary content unread / navigation unclassified | 459 / 5 |
-| Canonical owners in draft #375 | 180 (40 new / 140 existing) |
+| Original assessed/classified files / denominator | 115 / 537 |
+| Original assessed sources fully draft represented / residual | 104 / 4 |
+| Original ordinary content unread | 422 |
+| Original requirements / evidenced / open | 475 / 468 / 7 |
+| Later assessed teaching sources / denominator | 100 / 550 |
+| Later assessed sources fully draft represented | 100 |
+| Later requirements / evidenced / open | 455 / 455 / 0 |
+| Later ordinary unread / navigation unclassified | 445 / 5 |
+| Canonical owners in draft #375 | 194 (47 new / 147 existing) |
 | Canonical owners in draft #369 | 65 (34 new / 31 existing) |
-| Alternative summary consumers / present / English fallback | 306 / 274 / 32 |
+| Canonical owners in draft #373 | 45 (36 new / 9 existing) |
+| Summary consumers / present / English fallback | 432 / 301 / 131 |
 | Non-graph directory consumers | 1 |
-| Assets per source ref / reviewed teaching / unclassified | 1888 / 19 / 1869 |
-| Adjacent findings / represented / partial | 23 / 22 / 1 |
-| Literature occurrences / screened / unreviewed | 359 / 251 / 108 |
-| Schema findings / implemented pending approval / design needed | 6 / 5 / 1 |
+| Assets per ref / teaching reviewed / unclassified | 1888 / 34 / 1854 |
+| Adjacent findings / represented / open | 24 / 22 / 2 |
+| Literature occurrences / screened / unread | 398 / 290 / 108 |
+| Schema findings / implemented pending approval / design | 6 / 5 / 1 |
 | Fully covered sources on pinned main | 0 |
-| Completed clean final re-audits | 0 |
+| Clean complete final re-audits | 0 |
 
-The [chemical-species checkpoint](payload-chemical-species-2026-11-09/README.md) updates exact species, observations and draft dependencies. It reassesses one existing requirement in each version, without adding a newly read page. Broader legacy inference remains partial. The [ledger](ledger.json), later source ledger and generated open-item/dependency reports remain authoritative.
+The [T-cell checkpoint](tcells-2026-11-09/README.md) adds fourteen assessed files per inventory, seven terms, seven existing root owners and ten requirements at three existing #373 owners. Forty-nine shared requirements become 84 per-source occurrences in each version. Fifteen referenced figure paths and all 261 blocks have dispositions. The generated gene file stays unchanged, and specific aliases are assigned to their own concepts.
 
-The current refresh changes audit metadata and snapshots only. Data #369 and product #376 carry their own current validation receipts; no full-suite, build, browser or live result from those branches is relabelled as a fresh #375 result. The focused audit check is recorded separately.
+Current checks pass: root validate 22,730 entities, typecheck, lint (seven pre-existing warnings) and 284 files/2,829 tests; shared #373 validate 22,719, typecheck, focused lint and 281 files/2,813 tests. Both suites retain two existing skips. All 59 affected reader records have current source/anchor checks, all 49 passages appear in body text, 126 summary selectors and 39 root JSON/Markdown passages match. Dedupe remains at nine baseline groups. The 12 audit tests and both closure checks pass their integrity conditions while closure exits 2 for genuine open work.
 
-Completed first-round packets await integration. Haiku citation results are provisional identity screening, and the new partial content packet has zero full-page credit.
+The broader preserved immune maps and CD8 prognostic denominator stay open. Provisional Haiku results and other returned packets are uncredited pending integration. The prior [chemical checkpoint](payload-chemical-species-2026-11-09/README.md) and all five optional product contracts retain their data/product dependencies and approval boundary.
+
+No new production build, browser hydration/responsive/hosted review, expert/language sign-off, merge or deployment is claimed. The unchanged named GRAPH_JSON page export remains a documented baseline build limitation. Actual generator outputs and immutable local reader/export artifacts are separately hashed.
 
 ## Historical checkpoint notes
 

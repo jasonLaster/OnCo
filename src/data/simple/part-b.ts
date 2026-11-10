@@ -86,7 +86,7 @@ export const simpleB: Record<string, string> = {
   "ras-mapk": "The cell's 'divide' relay. A signal at the surface passes along a chain of proteins telling the cell to divide. KRAS and BRAF faults jam it 'on'.",
   "p53-cell-cycle": "The cell's brakes. p53 senses damage and stops the cell copying itself. Cancers cut these brakes.",
   ddr: "The DNA repair crews. Lose one crew and the cell survives; lose two and it dies. That is how PARP pills work.",
-  "pd1-checkpoint": "How T cells decide to attack. They need a target and a 'go' signal; PD-1 and CTLA-4 are 'stop' signals that tumours exploit.",
+  "pd1-checkpoint": "PD-1 and CTLA-4 help control T-cell responses. Changing their signals does not by itself show cancer recognition, killing or treatment benefit.",
   "cgas-sting": "The cell's alarm for DNA in the wrong place. When it goes off, the immune system is called in.",
   "er-signaling": "In hormone-driven breast cancer, oestrogen binds its receptor and switches on genes that make the cell divide.",
   "ar-signaling": "Prostate cancer's engine. Testosterone binds its receptor and drives growth. Treatments remove the fuel or block the receptor.",

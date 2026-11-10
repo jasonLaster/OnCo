@@ -178,7 +178,7 @@ export const simpleE: Record<string, string> = {
   "lipid-metabolism-cancer": "Dividing cells need fatty membranes, so cancers switch on fat-building enzymes most adult tissues keep off and steal fat from neighbouring cells, which links obesity to cancer.",
   "angiogenic-switch": "A tumour cannot grow beyond a couple of millimetres without its own blood supply; the switch flips when signals for new vessels outweigh the brakes, producing leaky chaotic vessels.",
   "nutrient-competition-tme": "Tumours and immune cells eat from the same plate; cancer cells hoard sugar, dump acid and burn nutrients into by-products that paralyse T cells, so the immune system loses.",
-  "t-cell-exhaustion": "T cells that fight their target for weeks without winning shut down and raise brakes like PD-1; checkpoint drugs revive the partly exhausted, but the fully exhausted are beyond reach.",
+  "t-cell-exhaustion": "Long stimulation can change how T cells respond. Exhausted T cells include groups that retain different abilities and respond differently to checkpoint drugs.",
   "immune-desert-exclusion": "Tumours come in three immune weathers, inflamed, excluded or desert; most common cancers keep T cells at the edge or out, and turning them 'hot' is immunotherapy's central problem.",
   "myeloid-suppression-axis": "Tumours recruit the body's clean-up cells, macrophages and immature myeloid cells, and retrain them as bodyguards that switch off T cells and refuse to eat the cancer.",
   "complement-in-cancer": "Complement is a cascade of blood proteins that punches holes in cells marked by antibodies; rituximab uses it to kill cancer cells, and tumours defend themselves with protein shields.",

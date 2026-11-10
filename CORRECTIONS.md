@@ -4,6 +4,10 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### T-cell identity and exhaustion
+
+- **T cell and T-cell exhaustion pathway:** the generic T-cell definition implied universal target recognition and killing, and the exhaustion description used absolute rescue and DNA-fixation wording. The 14-page public education audit separated identity, recognition, state, measured function and benefit; it also removed subset/state aliases from the generic owner and placed true aliases on the specific terms. Primary sources include [human class-II-dependent CD4 cytotoxicity](https://pubmed.ncbi.nlm.nih.gov/32497499/), [distinct exhaustion programmes](https://pubmed.ncbi.nlm.nih.gov/17950003/), [different exhausted subsets](https://pubmed.ncbi.nlm.nih.gov/30778252/), [chromatin stability after blockade](https://pubmed.ncbi.nlm.nih.gov/27789795/) and [human clonal replacement](https://pubmed.ncbi.nlm.nih.gov/31359002/). Twenty-seven translated/simplified entries now preserve these limits. This is an automated source audit, not expert or fluent-language sign-off. The existing detailed intervention maps retain a separately queued evidence review.
+
 ### Cell manufacture, preservation and traceability
 
 | Date | Entity | What was wrong | How found | Fix |

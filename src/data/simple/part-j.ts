@@ -230,7 +230,7 @@ export const simpleJ: Record<string, string> = {
   "tumour-marker": "A tumour marker is a substance a tumour releases into the blood, and rising or falling levels track whether the cancer is growing or responding.",
   "genomic-profiling": "Genomic profiling means reading a tumour's DNA to list the mutations it carries and match them to drugs, now routine in many common cancers.",
   "immune-system": "The immune system is the body's defence network that destroys infected and abnormal cells, killing most would-be cancers before anyone notices them.",
-  "t-cell": "A T cell is an immune cell trained to recognise one specific target and kill infected or cancerous cells, and most immunotherapy works by unleashing them.",
+  "t-cell": "T cells are immune cells with different jobs. Finding them does not show that they recognise or kill cancer.",
   "b-cell": "B cells are the immune cells that make antibodies, and they matter in cancer as the source of antibody drugs and as the cells that go wrong in most lymphomas.",
   "nk-cell": "NK cells are fast-acting immune cells that destroy abnormal cells without training on a specific target, specialising in cells that have hidden from T cells.",
   "macrophage": "Macrophages are large immune cells that eat debris and microbes, but tumours retrain them so in many cancers they end up helping the tumour.",

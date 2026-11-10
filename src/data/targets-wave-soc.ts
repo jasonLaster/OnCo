@@ -25,7 +25,7 @@ const provenance = { editedBy: "OnCo content wave 5 (HGNC REST, UniProt REST, co
 const tags = ["wave5-target"];
 const NO_PREVALENCE = "Prevalence not recorded in this wave: HGNC and UniProt carry no positivity rates and no other source was consulted.";
 
-type T = Omit<TargetInput, "kind" | "asOf" | "provenance" | "tags">;
+type T = Omit<TargetInput, "kind" | "asOf" | "provenance" | "tags"> & Partial<Pick<TargetInput, "asOf">>;
 const t = (x: T): TargetInput => ({
   kind: "target", asOf, provenance, tags,
   ...x,
@@ -53,7 +53,11 @@ export const targetsWaveSoc: TargetInput[] = [
     biology: "CD28 is constitutively expressed on T cells, and CD80 on antigen-presenting cells is its primary auxiliary signal (UniProt P33681). The bispecific approach costimulates only T cells whose other arm is already engaged with a tumour antigen, here PSMA.",
     whereFound: ["T cells (constitutive); the costimulatory domain of CD19 CAR-T products", "Prostate cancer (PSMA x CD28 bispecific JNJ-87189401)"],
     cancers: ["prostate", "dlbcl"], pathways: ["cancer-immunity-cycle", "pd1-checkpoint"], technologies: ["car-t", "bispecific-antibody"],
-    drugs: ["jnj-87189401"], related: ["ipilimumab", "axicabtagene-ciloleucel", "brexucabtagene-autoleucel", "lisocabtagene-maraleucel", "ctla4", "cd80", "psma"] }),
+    drugs: ["jnj-87189401"], related: ["ipilimumab", "axicabtagene-ciloleucel", "brexucabtagene-autoleucel", "lisocabtagene-maraleucel", "ctla4", "cd80", "psma"] ,
+    asOf: "2026-11-09",
+    links: [{"label":"HGNC HGNC:1653","url":"https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1653"},{"label":"UniProt P10747","url":"https://www.uniprot.org/uniprotkb/P10747/entry"},{"label":"NCBI Gene 940","url":"https://www.ncbi.nlm.nih.gov/gene/940"},{"label":"PubMed 1847722","url":"https://pubmed.ncbi.nlm.nih.gov/1847722/"},{"label":"PubMed 21474713","url":"https://pubmed.ncbi.nlm.nih.gov/21474713/"},{"label":"PubMed 28280249","url":"https://pubmed.ncbi.nlm.nih.gov/28280249/"}],
+    notes: ["Prevalence not recorded in this wave: HGNC and UniProt carry no positivity rates and no other source was consulted.","CD28 engages CD80/CD86 (B7) on presenting cells. Controlled B7/CD28 experiments demonstrated support for proliferation and IL-2 responses. CTLA-4 shares these ligands and can capture and degrade them by trans-endocytosis, reducing CD28 support. Shared binding partners do not make CD28 and CTLA-4 equivalent.","CD28/B7 support was required for effective PD-1 therapy in chronic viral infection and tumour-bearing mouse experiments. In related human lung-cancer observations, proliferating blood CD8 cells after treatment were predominantly CD28-positive. This does not validate CD28 abundance as a stand-alone treatment-selection test."]
+  }),
 
   t({ id: "hla-a", name: "HLA-A", symbol: "HLA-A", aka: ["HLA-A*02", "HLA-A*02:01", "major histocompatibility complex, class I, A"], hgnc: "HGNC:4931", ensembl: "ENSG00000206503", uniprot: "P04439", entrez: "3105", targetClass: "surface-antigen",
     tldr: "HLA-A is the molecule that holds up short pieces of a cell's proteins for T cells to inspect. Engineered T-cell receptor therapies such as tebentafusp and afami-cel only work in people with the HLA-A*02 variant, because the receptor recognises the tumour peptide sitting in that particular groove.",

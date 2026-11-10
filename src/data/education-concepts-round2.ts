@@ -375,40 +375,84 @@ export const educationRound2: TermInput[] = [
     name: "Immunopeptidomics",
     category: "Methods and models",
     tldr: "This laboratory approach identifies peptides recovered with immune display molecules. It supplies evidence about peptide presentation in the material that was analyzed.",
-    summary: "A primary melanoma study used mass spectrometry to identify HLA-associated peptides from native tumor tissue and then evaluated selected mutated peptides with immune assays. This is stronger evidence of natural presentation in the sampled material than a binding prediction alone. The analytical observation still has a defined specimen and workflow. It does not automatically establish the abundance of a ligand on every cancer cell, receptor recognition or a treatment effect.",
+    summary: "A primary melanoma study used mass spectrometry to identify HLA-associated peptides from native tumor tissue and then evaluated selected mutated peptides with immune assays. This is stronger evidence of natural presentation in the sampled material than a binding prediction alone. The analytical observation still has a defined specimen and workflow. It does not automatically establish the abundance of a ligand on every cancer cell, receptor recognition or a treatment effect. A published protocol isolates MHC-peptide complexes by immunoaffinity capture, dissociates the peptides by acid denaturation, fractionates them by HPLC and identifies them by nano-UPLC tandem mass spectrometry, from cell lines and tissues (Purcell and colleagues, 2019). Capture starts from mild-detergent solubilised lysates (Chong and colleagues, 2018; Sarkizova and colleagues, 2020 immunoprecipitated HLA from soluble lysates), so a lysate is not a surface-only survey, and in multi-allele samples a peptide was assigned to the best-scoring allele or alleles by computation (Sarkizova and colleagues, 2020). Identification depends on the analysis: a deep-learning model trained on more than 300,000 synthetic peptides improved HLA peptide identification up to 7-fold and indicated that 87 per cent of the proposed proteasomally spliced HLA peptides may be incorrect (Wilhelm and colleagues, 2021). A quantitative tissue study isolated peptide-HLA complexes from snap-frozen tissue and used formalin-fixed paraffin-embedded blocks only for histology (Science Translational Medicine, 2022).",
     links: [
-      {
-        label: "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
-        url: "https://doi.org/10.1038/ncomms13404"
-      },
-      {
-        label: "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
-        url: "https://doi.org/10.1016/j.cell.2020.09.015"
-      }
-    ],
+  {
+    "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+    "url": "https://doi.org/10.1038/ncomms13404"
+  },
+  {
+    "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+    "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+  },
+  {
+    "label": "Purcell et al., Mass spectrometry-based identification of MHC-bound peptides for immunopeptidomics (Nature Protocols 2019)",
+    "url": "https://doi.org/10.1038/s41596-019-0133-y"
+  },
+  {
+    "label": "Chong et al., High-throughput and Sensitive Immunopeptidomics Platform Reveals Profound Interferon-gamma-Mediated Remodeling of the Human Leukocyte Antigen Self-Peptidome (Molecular and Cellular Proteomics 2018)",
+    "url": "https://doi.org/10.1074/mcp.TIR117.000383"
+  },
+  {
+    "label": "Wilhelm et al., Deep learning boosts sensitivity of mass spectrometry-based immunopeptidomics (Nature Communications 2021)",
+    "url": "https://doi.org/10.1038/s41467-021-23713-9"
+  },
+  {
+    "label": "Quantitative immunopeptidomics reveals a tumor stroma-specific target for T cell therapy (Science Translational Medicine 2022)",
+    "url": "https://doi.org/10.1126/scitranslmed.abo6135"
+  },
+  {
+    "label": "A large peptidome dataset improves HLA class I epitope prediction across most of the human population (Nature Biotechnology 2020)",
+    "url": "https://doi.org/10.1038/s41587-019-0322-9"
+  }
+],
     related: [
       "immunopeptidome",
       "peptide-hla-binding-prediction",
       "binding-presentation-recognition",
       "finite-tissue-budget"
     ]
-  }),
+  ,
+"notes": [
+  "Reading guide (OnCo inference). In a mixed specimen a recovered HLA-associated peptide does not reveal its cell of origin or its abundance on living cell surfaces. Non-detection does not show biological absence: it also reflects capture, allele coverage, the searchable sequence set and instrument and software sensitivity, and detection does not show safe tumour recognition. No source read here establishes that formalin-fixed tissue is usable for an assay validated on cells or frozen tissue; the lesson's statement that one protocol proposed an adaptation could not be checked (publisher page unavailable), so that claim is withheld and compatibility must be shown for the named method.",
+  "Fictional worked example. A specimen yields peptide A but not peptide B. A has measured support in that preparation. For B, ask whether its allele was recovered, whether the altered sequence was searchable and whether sensitivity was adequate; 'A detected, B absent everywhere' is stronger than the experiment supports. If B is simply missing from the search database it could not have been identified as configured, so its absence is not a clean biological negative, and correcting the database does not by itself guarantee recovery or prove natural display.",
+  "Reading guide: binding prediction estimates a model output, whereas immunopeptidomics identifies recovered peptides, and total-protein measurements are a different question from HLA-associated fragments (a protein can be abundant without any of its peptides being displayed, an inference); presentation, immune response and efficacy are three separate claims.",
+  "Measurement card in words (a reading guide). Input: which tissue preparation and preservation are compatible, and how much material is consumed. Output and units: peptide identities and unique-sequence counts; instrument intensities are method-dependent and not copies per cell. Identification threshold: the sequence database, the false-discovery rule (spectrum or peptide level) and the supporting spectra. Coverage: which HLA classes and alleles were captured and which allele assignments were measured or inferred. Material and cost: protocol-specific input, preservation, consumption, turnaround and analysis cost, requested before a scarce specimen is used. Validation: recovery, reproducibility and reference-peptide checks for the method. Failure modes: low input, poor recovery, mixed cell populations, database gaps and wrong sequence assignments. Limits: non-detection does not prove absence and detection does not prove safe recognition; there is no universal tissue requirement or detection threshold."
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "peptide-hla-binding-prediction",
     name: "Peptide-HLA binding and ligand prediction",
     category: "Methods and models",
     tldr: "A computer model can prioritize peptides expected to bind an immune display molecule or appear among its ligands. The prediction helps select candidates for testing.",
-    summary: "NetMHCpan-4.0 combined peptide-binding affinity data with eluted-ligand data, which also contain information about processing and natural presentation. Those training signals and prediction tasks should be distinguished. A consortium comparison assessed candidate tumor epitopes using measured immune interactions and developed improved prioritization features. A model score is a prediction with a validation setting; it is not an observation of peptide display, tumor recognition or patient benefit.",
+    summary: "NetMHCpan-4.0 combined peptide-binding affinity data with eluted-ligand data, which also contain information about processing and natural presentation. Those training signals and prediction tasks should be distinguished. A consortium comparison assessed candidate tumor epitopes using measured immune interactions and developed improved prioritization features. A model score is a prediction with a validation setting; it is not an observation of peptide display, tumor recognition or patient benefit. The NetMHCpan-4.1 documentation expresses binder thresholds as percentile rank, the position of a predicted score against the scores of random natural peptides, and lets the user set the strong and weak binder thresholds, so a 0.4 per cent rank places a candidate within the top 0.4 per cent of that reference and is not a 99.6 per cent probability of presentation, recognition or benefit. The server predicts binding of a peptide to an MHC molecule of known sequence, and its model is trained on more than 850,000 binding-affinity and mass-spectrometry eluted-ligand peptides, two different training signals (Reynisson and colleagues, 2020). A model trained on more than 185,000 peptides eluted from 95 single-allele cell lines improved prediction of presented peptides (Sarkizova and colleagues, 2020). In a consortium study, 608 predicted epitopes were then tested for T-cell binding in patient-matched samples, a separate experiment from the prediction (Wells and colleagues, 2020), so expression, processing, display, T-cell receptor recognition and sparing of healthy tissue remain to be shown after a favourable score.",
     links: [
-      {
-        label: "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
-        url: "https://doi.org/10.4049/jimmunol.1700893"
-      },
-      {
-        label: "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
-        url: "https://doi.org/10.1016/j.cell.2020.09.015"
-      }
-    ],
+  {
+    "label": "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
+    "url": "https://doi.org/10.4049/jimmunol.1700893"
+  },
+  {
+    "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+    "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+  },
+  {
+    "label": "NetMHCpan-4.1 server documentation",
+    "url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/"
+  },
+  {
+    "label": "NetMHCpan-4.1 and NetMHCIIpan-4.0: improved predictions of MHC antigen presentation by concurrent motif deconvolution and integration of MS MHC eluted ligand data (Nucleic Acids Research 2020)",
+    "url": "https://doi.org/10.1093/nar/gkaa379"
+  },
+  {
+    "label": "A large peptidome dataset improves HLA class I epitope prediction across most of the human population (Nature Biotechnology 2020)",
+    "url": "https://doi.org/10.1038/s41587-019-0322-9"
+  },
+  {
+    "label": "Cer et al., IC50-to-Ki: conversion assumptions for enzyme inhibition and ligand binding (Nucleic Acids Research 2009)",
+    "url": "https://doi.org/10.1093/nar/gkp253"
+  }
+],
     related: [
       "binding-presentation-recognition",
       "immunopeptidomics",
@@ -418,7 +462,15 @@ export const educationRound2: TermInput[] = [
       "peptide-MHC binding prediction",
       "HLA ligand prediction"
     ]
-  }),
+  ,
+"notes": [
+  "Assay distinction. A predicted binding IC50 estimates a competitive-binding assay endpoint. An IC50 depends on the assay conditions and is not automatically an equilibrium dissociation constant. Cer and colleagues' 2009 IC50-to-Ki tool calculates binding or inhibition constants using the interaction mechanism, concentrations and other assumptions; this is a biochemical distinction, not validation of an HLA model or a measure of cancer-cell growth inhibition. Reading guide (OnCo inference): Record the model and version, allele, peptide length, prediction task, units, reference distribution and threshold beside every score, and do not put a rank and an IC50 in one unlabelled column. A threshold is a selection rule for a stated workflow and cannot repair the wrong allele or an unsupported task. Inputs are peptide or source-protein sequences and an exact allele; scoring uses no tumour tissue; held-out validation, allele coverage and the endpoint (binding, recovery or T-cell recognition) decide what a good score means.",
+  "Figure reading (fictional numbers, light and dark renders agree): a 1,000-score reference for HLA-A*02:01 9-mer peptides has bin counts 250, 240, 200, 130, 80, 50, 30, 16 and 4, which sum to 1,000. Four reference scores lie beyond the candidate boundary, so 4 / 1,000 x 100 = 0.4 per cent. A separate binding-affinity output of 40 nM is a predicted IC50. Neither value observes display.",
+  "Fictional worked example. Candidate A has an eluted-ligand rank of 0.4 per cent and candidate B a predicted binding IC50 of 40 nM. The numbers come from different outputs with different units and tasks, so neither ranks the candidates against each other or shows tumour coverage; request matched outputs for the relevant allele and method, and test display and recognition separately.",
+  "Output table in words. Predicted binding IC50 in nanomolar units: lower values mean stronger predicted competitive binding for that output, and it is not a measured concentration, an equilibrium dissociation constant or a functional T-cell response. Percentile rank: a lower rank places the candidate nearer the model's stronger-scoring reference peptides, and it is not a percent chance of tumour killing or the fraction of tumour cells covered."
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "immunodominance",
     name: "Immunodominance",
@@ -1189,17 +1241,25 @@ export const educationRound2: TermInput[] = [
     name: "Cell segmentation in tissue measurements",
     category: "Methods and models",
     tldr: "Image analysis estimates which pixels or detected molecules belong to each cell. Those assignments affect the measurements reported for that cell.",
-    summary: "The Mesmer study developed and tested whole-cell segmentation across tissue images and used the estimated boundaries to extract cellular features. A separate spatial-transcriptomics reanalysis found that misassigned molecules could change downstream cell-state and interaction analyses. These findings concern defined datasets and methods, not one universal error rate. Segmentation quality and signal assignment need evaluation before a spatial measurement is treated as a biological conclusion.",
+    summary: "The Mesmer study developed and tested whole-cell segmentation across tissue images and used the estimated boundaries to extract cellular features. A separate spatial-transcriptomics reanalysis found that misassigned molecules could change downstream cell-state and interaction analyses. These findings concern defined datasets and methods, not one universal error rate. Segmentation quality and signal assignment need evaluation before a spatial measurement is treated as a biological conclusion. Mesmer was trained on TissueNet, a dataset of more than 1 million manually labelled cells, and was reported to generalise across the tissue types and imaging platforms in that dataset at human-level performance; its authors note that segmentation inaccuracies can substantially bias the identification and counting of cells, and that cells whose nucleus lies outside the imaging plane are missed by nucleus-based methods (Greenwald and colleagues, 2022). In that evaluation, a predicted and a true cell with a one-to-one match by intersection over union count as accurate, predicted cells with no match are false positives and true cells with no match are false negatives. The Cellpose study reported a generalist method trained on more than 70,000 segmented objects that worked without retraining across the image types it evaluated (Stringer and colleagues, 2021). Baysor was developed because methods that approximate cell positions from nuclear stains make cell boundaries hard to distinguish in single-molecule spatial data (Petukhov and colleagues, 2022).",
     links: [
-      {
-        label: "Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning.",
-        url: "https://doi.org/10.1038/s41587-021-01094-0"
-      },
-      {
-        label: "Impact and correction of segmentation errors in spatial transcriptomics.",
-        url: "https://doi.org/10.1038/s41588-025-02497-4"
-      }
-    ],
+  {
+    "label": "Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning.",
+    "url": "https://doi.org/10.1038/s41587-021-01094-0"
+  },
+  {
+    "label": "Impact and correction of segmentation errors in spatial transcriptomics.",
+    "url": "https://doi.org/10.1038/s41588-025-02497-4"
+  },
+  {
+    "label": "Stringer et al., Cellpose: a generalist algorithm for cellular segmentation (Nature Methods 2021)",
+    "url": "https://doi.org/10.1038/s41592-020-01018-x"
+  },
+  {
+    "label": "Petukhov et al., Cell segmentation in imaging-based spatial transcriptomics (Nature Biotechnology 2022)",
+    "url": "https://doi.org/10.1038/s41587-021-01044-w"
+  }
+],
     related: [
       "imaging-mass-cytometry",
       "spatial-transcriptomics",
@@ -1208,19 +1268,35 @@ export const educationRound2: TermInput[] = [
     aka: [
       "single-cell tissue segmentation"
     ]
-  }),
+  ,
+"notes": [
+  "Reading guide (definitions plus OnCo inference). Detection asks whether a cell was found, segmentation asks which pixels belong to it, and phenotyping classifies the cell afterwards; finding a nucleus does not give a reliable whole-cell boundary. Intersection over union is the area two masks share divided by the area either covers, from 0 to 1, and a single value can hide missed or merged cells, so check object counts and characteristic errors too. A mask assigns existing signals to estimated regions and is not a measurement of a new marker. Merging, splitting and missing cells distort counts, marker combinations and spatial relations, so overlay masks on the original channels.",
+  "Fictional worked example (two stipulated cells). One mask covers a small T cell and an adjacent cancer cell, so one table row reports both an immune marker and keratin; that is a merged object, not a hybrid cell. A split into three objects for two cells adds objects, not cells. Correcting the mask may show two neighbouring cells, and their proximity still does not prove immune recognition.",
+  "Figure reading (synthetic, light and dark renders agree): the marker channels A (immune) and K (keratin) stay fixed while a merged mask gives one object, a split gives three, and a shifted border assigns signals to the wrong object; the table changes and the image does not. An overlay does not prove identity or function.",
+  "Analysis card in words (a reading guide). Input and tissue cost: existing image channels and scale information; computation consumes no additional tissue, though upstream staining or imaging may already have consumed material. Output and units: labelled masks, object counts, estimated cell area in square micrometres when calibrated, coordinates and distances in micrometres, and unitless overlap scores. Controls: original-image overlays, representative manual annotations, held-out images, checks by cell type and region, and recorded software, model and settings. Thresholds: error tolerances set for the downstream task. Failure modes: merged, split or missing cells, weak boundary stains, misaligned channels, debris, and tissue or stain differences from the development data. Cannot tell you: new molecular signals, complete cell outlines outside the section, receptor specificity, interaction or killing. Validation context: an image-analysis component validated for a defined tissue, acquisition and task."
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "targeted-proteomics-quantification",
     name: "Targeted proteomics and quantification limits",
     category: "Methods and models",
     tldr: "A targeted protein assay measures selected peptide signals through a defined workflow. Reliable amounts require evidence about the quantitative range and precision of the assay.",
-    summary: "A primary multilaboratory study evaluated isotope-dilution multiple-reaction-monitoring assays for selected plasma proteins, examining recovery, reproducibility, linear range, detection and quantification limits. The performance belonged to the tested materials, analytes and protocols. It was not a universal certificate for all proteins or specimens. A reported protein amount should retain its measured peptide, calibration approach, sample preparation and supported range.",
+    summary: "A primary multilaboratory study evaluated isotope-dilution multiple-reaction-monitoring assays for selected plasma proteins, examining recovery, reproducibility, linear range, detection and quantification limits. The performance belonged to the tested materials, analytes and protocols. It was not a universal certificate for all proteins or specimens. A reported protein amount should retain its measured peptide, calibration approach, sample preparation and supported range. An NIH workshop report on targeted mass spectrometry found no consensus on the criteria for a successful peptide assay and set out three tiers of assay performance, with response and calibration curves generated for each analyte in the relevant matrix to establish limits of detection and quantification; quantification rests on precursor-product ion pairs, called transitions, shown to be free of interference, and a surrogate protein standard must be shown to behave like the native analyte in tests of recovery after adding a known amount (Carr and colleagues, 2014). Stable-isotope-labelled internal standard peptides with the sequence of the analyte are spiked into the digest, and extended peptides or recombinant proteins can compensate for variability in digestion (Hoofnagle and colleagues, 2016). A multilaboratory plasma study reported reproducibility, recovery, linear range and limits of detection and quantification at microgram-per-millilitre protein concentrations (Addona and colleagues, 2009).",
     links: [
-      {
-        label: "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
-        url: "https://doi.org/10.1038/nbt.1546"
-      }
-    ],
+  {
+    "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+    "url": "https://doi.org/10.1038/nbt.1546"
+  },
+  {
+    "label": "Carr et al., Targeted peptide measurements in biology and medicine (Molecular and Cellular Proteomics 2014)",
+    "url": "https://doi.org/10.1074/mcp.M113.036095"
+  },
+  {
+    "label": "Hoofnagle et al., Recommendations for the Generation, Quantification, Storage, and Handling of Peptides Used for Mass Spectrometry-Based Assays (Clinical Chemistry 2016)",
+    "url": "https://doi.org/10.1373/clinchem.2015.250563"
+  }
+],
     related: [
       "proteomics",
       "rppa",
@@ -1231,5 +1307,13 @@ export const educationRound2: TermInput[] = [
       "targeted protein quantification",
       "multiple-reaction-monitoring protein assays"
     ]
-  }),
+  ,
+"notes": [
+  "Reading guide (OnCo inference built on the ICH definitions). A signal detected below the quantification limit is meaningful as detection, but it does not support a reliable amount, and neither it nor non-detection means biological zero. An upper limit also bounds the range, and a saturated response cannot separate larger inputs. Keep the denominator with every amount (for example femtomoles per microgram of total extracted protein or a concentration per volume), because it describes the mixture and not receptors per malignant cell; a selected peptide is a proxy for its source protein and cannot count intact receptors or surface copies. Tight repeats show precision, which can coexist with systematic bias. A standard added after digestion can control later measurement but cannot correct material already lost.",
+  "Fictional worked example. A summary says 'receptor peptide R is absent' for an assay that detected R below its quantification limit. The result should read 'detected below the validated quantification limit', with the limit and units: it supports detection under that assay's rules but neither a dependable amount nor biological absence.",
+  "Figure reading (fictional calibration, light and dark renders agree, no cutoff): a calibration plot has four regions in order of rising input, blank or background (no detection claim), detected below the lower limit of quantification (no reliable amount), validated range (report amount and units) and upper saturation (the response flattens), with replicate points scattered on the curve; a second panel says peptide amount is not surface location, and tight repeats alone do not rule out bias. Limits belong to the analyte and matrix.",
+  "Assay card in words (a reading guide). Measures and how: selected peptide amounts, by extracting, digesting, measuring specified ions and fragments with controls, calibrating and assessing analyte performance. Input and tissue cost: a validated tissue, cell or fluid matrix; extraction and digestion consume material, and required mass or volume and fixation compatibility are assay-specific. Output and units: peptide identity, amount or ratio, with the denominator and the peptide-to-protein inference kept. Thresholds: analyte-specific limit of detection, quantification limit, upper limit, bias and precision acceptance and reportable range, with no universal limit or treatment threshold. Failure modes: incomplete recovery or digestion, shared peptides, interference, unstable standards, matrix effects and signal outside the validated range. Limits: no automatic intact-form, location, cell-of-origin, accessibility, occupancy or drug-dependence conclusion. Validation tier: fit-for-purpose research tiers describe analytical characterisation and do not themselves confer clinical approval."
+],
+"asOf": "2026-11-10"
+}),
 ];

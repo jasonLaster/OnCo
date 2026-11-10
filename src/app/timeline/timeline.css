@@ -11,9 +11,12 @@
 .tl-a { @apply border bg-accent-solid text-accent-fg border-accent-solid; }
 /* The year inside a product pill. */
 .tl-y { @apply opacity-70 ml-1; }
+/* On the accent pill the year keeps full strength: white at 70 per cent on the pink is under 3:1 in the dark theme. */
+.tl-a .tl-y { @apply opacity-100; }
 /* A record's name as a link, and a cancer's name as a quieter link. */
 .tl-n { @apply font-medium hover:underline; }
-.tl-m { @apply text-muted hover:underline; }
+/* Underlined, not only greyer: a link inside a sentence must not rely on colour alone (WCAG 1.4.1, axe link-in-text-block). */
+.tl-m { @apply text-muted underline decoration-from-font underline-offset-2 hover:text-foreground; }
 /* A reference pill (a product or technology the event names), and the row that holds them. */
 .tl-c { @apply bg-foreground/5 hover:underline; }
 .tl-r { @apply mt-1 flex flex-wrap gap-1; }

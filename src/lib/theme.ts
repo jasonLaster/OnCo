@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 
 /**
- * The colour theme store behind the header ThemeToggle: light (default), dark, high contrast or the OS setting.
+ * The colour theme store behind the header ThemeToggle: the device setting (default), light, dark or high contrast.
+ * A reader with no saved choice follows prefers-color-scheme (owner, 10 November 2026: "6. do"); an explicit saved
+ * choice always wins.
  * One localStorage key, applied as `data-theme` on <html> (CSS variables for each live near the top of globals.css),
  * and broadcast on a window event so the toggle, the account menu and the signed-in preference sync all follow one
  * write. The pre-paint script that avoids a flash is ThemeScript in src/components/ThemeToggle.tsx.
@@ -15,9 +17,12 @@ export const THEME_EVENT = "onco:theme";
 
 export function isTheme(v: unknown): v is Theme { return typeof v === "string" && (THEMES as readonly string[]).includes(v); }
 
+/** The theme a reader gets with nothing saved: follow the device. */
+export const DEFAULT_THEME: Theme = "system";
+
 export function readTheme(): Theme {
-  if (typeof window === "undefined") return "light";
-  try { const saved = window.localStorage.getItem(THEME_KEY); return isTheme(saved) ? saved : "light"; } catch { return "light"; }
+  if (typeof window === "undefined") return DEFAULT_THEME;
+  try { const saved = window.localStorage.getItem(THEME_KEY); return isTheme(saved) ? saved : DEFAULT_THEME; } catch { return DEFAULT_THEME; }
 }
 
 export function applyTheme(t: Theme) {
@@ -32,9 +37,9 @@ export function writeTheme(t: Theme) {
   window.dispatchEvent(new CustomEvent(THEME_EVENT, { detail: t }));
 }
 
-/** The current theme, light on the server and first client render, then synced with storage and every write. */
+/** The current theme, the default on the server and first client render, then synced with storage and every write. */
 export function useTheme(): [Theme, (t: Theme) => void] {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>(DEFAULT_THEME);
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       const th = readTheme();

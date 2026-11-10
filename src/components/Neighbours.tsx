@@ -70,7 +70,7 @@ export function SimilarStrip({ items }: { items: SimilarLink[] }) {
             <div className="flex items-center gap-1.5 mb-1">
               <KindChip kind={s.kind} cls={s.cls} />
             </div>
-            <IntentLink href={s.route} className="font-medium leading-snug hover:underline">{s.name}</IntentLink>
+            <IntentLink href={s.route} className="block py-[3px] -my-[3px] font-medium leading-snug hover:underline">{s.name}</IntentLink>
             <p className="text-xs text-muted mt-1 leading-snug">
               Shares {s.shared.map((x, i) => <span key={x.id}>{i > 0 && ", "}<IntentLink href={x.route} className="underline decoration-foreground/20 hover:decoration-foreground">{x.name}</IntentLink></span>)}
               {s.sharedTags.length > 0 && <span>{s.shared.length ? " and " : ""}the tag{s.sharedTags.length > 1 ? "s" : ""} {s.sharedTags.join(", ")}</span>}.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 import { resistance } from "@/data/resistance";
-import { CATEGORY_BY_ID } from "@/lib/resistance-categories";
+import { CATEGORY_BY_ID, INK_CLASS, inkStyle } from "@/lib/resistance-categories";
 import { resistanceGaps, gapCountByClass, type ResistanceGap } from "@/lib/resistance-gaps";
 import { Container, GroupKicker, PageHeader, ChipList } from "@/components/ui";
 import { RefChips } from "@/components/RefChips";
@@ -18,7 +18,7 @@ function GapCard({ gap }: { gap: ResistanceGap }) {
   return (
     <div className="card p-4 flex flex-col gap-3">
       <div>
-        <div className="flex items-center gap-1.5 text-[11px] font-semibold" style={{ color: cat.color }}><span className="inline-block h-2 w-2 rounded-full" style={{ background: cat.color }} /> {cat.label} · <Link href={`/resistance/#${gap.classId}`} className="text-muted hover:underline font-normal">{shortLabel(gap.drugClass)}</Link></div>
+        <div className={`flex items-center gap-1.5 text-[11px] font-semibold ${INK_CLASS}`} style={inkStyle(cat)}><span className="inline-block h-2 w-2 rounded-full" style={{ background: cat.color }} /> {cat.label} · <Link href={`/resistance/#${gap.classId}`} className="text-muted hover:underline font-normal">{shortLabel(gap.drugClass)}</Link></div>
         <div className="font-medium leading-snug mt-0.5">{m.name}</div>
         {m.frequency && <div className="text-xs text-muted mt-0.5 tabular-nums">Frequency: {m.frequency}</div>}
         <p className="text-sm text-muted mt-1.5 leading-relaxed">{m.how}</p>

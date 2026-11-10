@@ -121,7 +121,7 @@ describe("heavy pages page their sections", () => {
     expect(groups.reduce((n, grp) => n + grp.own.length, 0)).toBe(unique.size);
     expect(groups.reduce((n, grp) => n + grp.refs.length, 0)).toBe(placements - unique.size);
     // One section per cancer, in order, each with its heading, trial count and at most EXPLAINED_PAGE full rows
-    // (heading, summary, page link, Open explanation pill); the rest of the rows come from /api/v1/explained/<id>.json.
+    // (heading, summary, Open explanation pill, page link inside); the rest of the rows come from /api/v1/explained/<id>.json.
     const sections = html.split('<section id="cancer-').slice(1);
     expect(sections).toHaveLength(groups.length);
     sections.forEach((s, i) => {
@@ -134,7 +134,10 @@ describe("heavy pages page their sections", () => {
     expect(firstPage).toBeLessThan(unique.size);
     expect((html.match(/<details[\s>]/g) ?? []).length).toBe(firstPage);
     // The row's markup is bare (one class; the card, arrow and "Open explanation" pill are CSS in src/app/explained/explained.css).
-    expect((html.match(/class="explained-row"><summary><h3><a /g) ?? []).length).toBe(firstPage);
+    // The name in the summary is plain text (a link inside a <summary> is nested-interactive, src/app/a11y.test.ts);
+    // the trial page link is a bare link right after it, in the HTML whether or not the row is open.
+    expect((html.match(/class="explained-row"><summary><h3>[^<]/g) ?? []).length).toBe(firstPage);
+    expect((html.match(/<\/summary><a href="\/trials\//g) ?? []).length).toBe(firstPage);
     expect(html).not.toContain("Open explanation");
     // Every section with more rows carries the IntersectionObserver sentinel and the Show more pill, and a noscript
     // list of the rows beyond the first page so that crawlers and readers without JavaScript see every trial's name

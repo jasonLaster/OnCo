@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import { resistance, type Mechanism, type ResistanceClass } from "@/data/resistance";
-import { CATEGORIES, categoryOf, type MechanismCategory } from "@/lib/resistance-categories";
+import { CATEGORIES, categoryOf, INK_CLASS, inkStyle, type MechanismCategory } from "@/lib/resistance-categories";
 import { Container, GroupKicker, PageHeader } from "@/components/ui";
 import { RefChips } from "@/components/RefChips";
 import { AtlasProvider, CategoryDot, CategoryScope, ResistanceMatrix, type MatrixRow } from "@/components/ResistanceMatrix";
@@ -18,7 +18,7 @@ function MechanismCard({ m, id }: { m: Mechanism; id: string }) {
   return (
     <CategoryScope category={m.category} id={id} className="card p-4 scroll-mt-32 flex flex-col gap-3">
       <div className="border-l-2 border-accent/70 pl-3">
-        <div className="flex items-center gap-1.5 text-[11px] font-semibold" style={{ color: cat.color }}><CategoryDot category={m.category} size={7} /> {cat.label}</div>
+        <div className={`flex items-center gap-1.5 text-[11px] font-semibold ${INK_CLASS}`} style={inkStyle(cat)}><CategoryDot category={m.category} size={7} /> {cat.label}</div>
         <div className="font-medium leading-snug mt-0.5">{m.name}</div>
         {m.frequency && <div className="text-xs text-muted mt-0.5 tabular-nums">Frequency: {m.frequency}</div>}
         <p className="text-sm text-muted mt-1.5 leading-relaxed">{m.how}</p>

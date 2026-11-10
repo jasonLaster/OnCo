@@ -20,7 +20,7 @@ import { questionsFor } from "@/data/open-questions";
 import { assaysForTarget } from "@/data/assays";
 import { modelsFor, cellLineIds } from "@/data/preclinical-models";
 import { resistance, type Mechanism } from "@/data/resistance";
-import { CATEGORY_BY_ID } from "@/lib/resistance-categories";
+import { CATEGORY_BY_ID, INK_CLASS, inkStyle } from "@/lib/resistance-categories";
 import { Tip } from "./Tip";
 import { StaticTable } from "./filters/StaticTable";
 import { pageRows } from "@/lib/static-tables";
@@ -212,7 +212,7 @@ export function Dossier({ target: t }: { target: Target }) {
               const cat = CATEGORY_BY_ID[m.category];
               return (
                 <div key={`${classId}-${m.name}`} className="card p-4">
-                  <div className="flex items-center gap-1.5 text-[11px] font-semibold" style={{ color: cat.color }}><span className="inline-block h-2 w-2 rounded-full" style={{ background: cat.color }} /> {cat.label} · <Link href={`/resistance/#${classId}`} className="text-muted hover:underline font-normal">{drugClass.split(" (")[0]}</Link></div>
+                  <div className={`flex items-center gap-1.5 text-[11px] font-semibold ${INK_CLASS}`} style={inkStyle(cat)}><span className="inline-block h-2 w-2 rounded-full" style={{ background: cat.color }} /> {cat.label} · <Link href={`/resistance/#${classId}`} className="text-muted hover:underline font-normal">{drugClass.split(" (")[0]}</Link></div>
                   <div className="font-medium leading-snug mt-0.5">{m.name}</div>
                   {m.frequency && <div className="text-xs text-muted tabular-nums">Frequency: {m.frequency}</div>}
                   <p className="text-sm text-muted mt-1.5 leading-relaxed">{m.how}</p>

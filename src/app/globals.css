@@ -31,6 +31,8 @@
   --shadow-3: 0 20px 44px -20px rgb(31 40 33 / 0.26), 0 4px 12px -4px rgb(31 40 33 / 0.08);
   --header-h: 3.5rem;
   --sticky-top: var(--header-h);
+  /* No saved theme: form controls, scrollbars and the canvas follow the device too. Each data-theme sets its own. */
+  color-scheme: light dark;
 }
 
 @theme inline {
@@ -73,7 +75,7 @@
     --accent-solid: #db2777;
     --accent-fg: #ffffff;
     --accent-soft: #3b1a2b;
-    --ring: #f87171;
+    --ring: #f9a8d4;
     --wire-hot: #fbbf24;
     --garden-1: #3d5a45;
     --garden-2: #5f7f63;

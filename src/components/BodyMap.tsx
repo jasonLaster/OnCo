@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { Fragment, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { FIGURE, type BodyRegion } from "@/data/body-regions";
 import { useAnimationBudget, useMotionSnapshot } from "@/lib/use-animation-budget";
@@ -126,8 +126,11 @@ export function BodyMap({ regions, cancers, technologies, families }: Props) {
             const alpha = r.systemWide ? 0.5 : 0.14 + 0.46 * (n / max);
             const stroke = on ? "var(--accent)" : r.systemWide ? "currentColor" : tint;
             const wrapperClass = r.id === "lung" ? "bm-lungs motion-css" : undefined;
+            // The control's name is the words drawn beside it, so a voice-control reader can say what they see.
+            const count = `${n} ${mode === "cancers" ? (n === 1 ? "cancer type" : "cancer types") : (n === 1 ? "technology" : "technologies")}`;
             return (
-              <g key={r.id} tabIndex={0} role="button" aria-pressed={on} aria-label={`${r.label}: ${n} ${mode}`} aria-controls={DETAIL_ID}
+              <Fragment key={r.id}>
+              <g tabIndex={0} role="button" aria-pressed={on} aria-label={`${r.label} ${count}`} aria-controls={DETAIL_ID}
                 className="bm-region" data-mobile-control
                 onMouseEnter={() => setActive(r.id)} onMouseLeave={() => setActive(null)} onFocus={() => setActive(r.id)} onBlur={() => setActive(null)}
                 onClick={() => setPinned((p) => (p === r.id ? null : r.id))} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setPinned((p) => (p === r.id ? null : r.id)); } }}>
@@ -141,16 +144,18 @@ export function BodyMap({ regions, cancers, technologies, families }: Props) {
                     </g>
                   ))}
                 </g>
-                {/* leader + margin label */}
+              </g>
+                {/* Leader and margin label, beside the control rather than inside it: the button's name is its
+                    aria-label, and SVG text inside it would be read as run-together words ("Brain1 cancer type"). */}
                 {!r.systemWide && (
-                  <g className="pointer-events-none">
+                  <g className="pointer-events-none" aria-hidden>
                     <path d={`M${r.anchor[0]} ${r.anchor[1]} L${elbowX(r.side)} ${r.labelY} L${r.side === "L" ? 40 : W - 40} ${r.labelY}`} fill="none" stroke="currentColor" strokeWidth={0.8} strokeOpacity={on ? 0.9 : 0.28} />
                     <circle cx={r.anchor[0]} cy={r.anchor[1]} r={1.8} fill="currentColor" fillOpacity={on ? 1 : 0.5} />
                     <text x={labelX(r.side)} y={r.labelY - 3} textAnchor={r.side === "L" ? "start" : "end"} className="fill-foreground" style={{ fontSize: 11, fontWeight: on ? 700 : 500, opacity: on ? 1 : 0.85 }}>{r.label}</text>
-                    <text x={labelX(r.side)} y={r.labelY + 9} textAnchor={r.side === "L" ? "start" : "end"} className="fill-muted" style={{ fontSize: 9 }}>{n} {mode === "cancers" ? (n === 1 ? "cancer type" : "cancer types") : (n === 1 ? "technology" : "technologies")}</text>
+                    <text x={labelX(r.side)} y={r.labelY + 9} textAnchor={r.side === "L" ? "start" : "end"} className="fill-muted" style={{ fontSize: 9 }}>{count}</text>
                   </g>
                 )}
-              </g>
+              </Fragment>
             );
           })}
         </svg>

@@ -45,13 +45,17 @@ export function TimelineChart({ columns }: { columns: YearColumn[] }) {
           const x = r1(i * step + step / 2);
           return <text key={c.year} x={x} y={H - 5} textAnchor="middle" className="fill-current text-[9px] opacity-60">{c.year}</text>;
         })}
-        {columns.map((c, i) => (
-          <Link key={c.year} href={`/years/${c.year}/`}>
-            <rect x={r1(i * step)} y={0} width={r1(step)} height={H - PAD_B} fill="transparent" className="hover:fill-current hover:opacity-10">
-              <title>{`${c.year}: ${c.total.toLocaleString("en-GB")} dated ${c.total === 1 ? "entry" : "entries"}`}</title>
-            </rect>
-          </Link>
-        ))}
+        {columns.map((c, i) => {
+          // An SVG <title> gives the hover tip but does not name a link for assistive technology; aria-label does.
+          const label = `${c.year}: ${c.total.toLocaleString("en-GB")} dated ${c.total === 1 ? "entry" : "entries"}`;
+          return (
+            <Link key={c.year} href={`/years/${c.year}/`} aria-label={label}>
+              <rect x={r1(i * step)} y={0} width={r1(step)} height={H - PAD_B} fill="transparent" className="hover:fill-current hover:opacity-10">
+                <title>{label}</title>
+              </rect>
+            </Link>
+          );
+        })}
       </svg>
       <figcaption className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
         {BANDS.map((b) => <span key={b.id} className="inline-flex items-center gap-1.5"><span className={`inline-block h-2 w-2 rounded-sm ${b.className.replace("fill-", "bg-")}`} />{b.label}</span>)}
@@ -65,7 +69,7 @@ export function EarlyStrip({ columns }: { columns: YearColumn[] }) {
   if (!columns.length) return null;
   return (
     <div className="flex flex-wrap gap-1.5 mt-3">
-      {columns.map((c) => <Link key={c.year} href={`/years/${c.year}/`} className="chip tabular-nums" title={`${c.total} dated ${c.total === 1 ? "entry" : "entries"}`}>{c.year}<span className="opacity-60 ms-1">{c.total}</span></Link>)}
+      {columns.map((c) => <Link key={c.year} href={`/years/${c.year}/`} className="chip tabular-nums" title={`${c.total} dated ${c.total === 1 ? "entry" : "entries"}`}>{c.year}<span className="text-muted ms-1">{c.total}</span></Link>)}
     </div>
   );
 }
@@ -83,7 +87,7 @@ export function YearIndex({ columns }: { columns: YearColumn[] }) {
             <div className="w-24 shrink-0 font-semibold tabular-nums">{d}s</div>
             <div className="w-28 shrink-0 text-xs text-muted tabular-nums">{total.toLocaleString("en-GB")} entries</div>
             <div className="flex flex-wrap gap-1.5 min-w-0">
-              {inDecade.map((c) => <Link key={c.year} href={`/years/${c.year}/`} className={`chip tabular-nums ${c.total === 0 ? "opacity-50" : ""}`} title={`${c.total} dated ${c.total === 1 ? "entry" : "entries"}`}>{c.year}<span className="opacity-60 ms-1">{c.total}</span></Link>)}
+              {inDecade.map((c) => <Link key={c.year} href={`/years/${c.year}/`} className={`chip tabular-nums ${c.total === 0 ? "text-muted border-dashed" : ""}`} title={`${c.total} dated ${c.total === 1 ? "entry" : "entries"}`}>{c.year}<span className="text-muted ms-1">{c.total}</span></Link>)}
             </div>
           </div>
         );

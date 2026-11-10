@@ -7,6 +7,8 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
 ### 10 November 2026
+- The site follows the device's light or dark setting until a reader chooses, an accessibility check runs on every ship, and the faults it found are fixed: unnamed timeline links, links hidden in expandable rows, mislabelled body and resistance buttons, low-contrast colours and small targets
+- feat: the theme follows the device by default, and accessibility is checked in CI
 - Drug labels that came from word fragments are corrected (37 antagonists no longer read as agonists, fluoropyrimidines no longer as degraders), companion-diagnostic rows link their devices, and the open-source catalogue keeps projects whose GitHub page went away
 - A kept open-source record cites a page that answers today: paquo and tiffslide now cite PyPI, without the GitHub-only star counts
 - paquo and tiffslide stay in the open-source catalogue from PyPI after their GitHub repositories went away

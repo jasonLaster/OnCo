@@ -61,7 +61,7 @@ export const institutionsRareCancerFoundations: InstitutionInput[] = [
     programs: ["Rare Cancer Data Initiative with Case Comprehensive Cancer Center and the Rare Cancer Research Foundation", "Rare cancer landscape study", "National coordination of rare cancer tissue, model and data infrastructure"],
     links: [{ label: "Alliance for Rare Cancers", url: "https://allianceforrarecancers.org/" }, { label: "ARC: vision", url: "https://allianceforrarecancers.org/vision" }, { label: "ARC: leadership", url: "https://allianceforrarecancers.org/leadership" }, { label: "Pattern.org: Rare Cancer Data Initiative", url: "https://pattern.org/" }, RCRF_PARTNERS, irs("862610819")],
     notes: ["The alliance has no IRS record of its own; the EIN shown is the Jedi Rare Cancer Foundation's, which the alliance's site names as its fiscal sponsor."],
-    terms: ["rare-cancers"], bottlenecks: ["b-rare-cancers"], institutions: ["case-ccc"], companies: ["chan-zuckerberg-initiative", "sarc"],
+    terms: ["rare-cancers"], bottlenecks: ["b-rare-cancers"], institutions: ["case-ccc", "chan-zuckerberg-initiative"], companies: ["sarc"],
     related: ["jedi-rare-cancer-foundation", "rare-cancer-research-foundation", "pattern-org", "childrens-tumor-foundation"] }),
 
   i({ id: "rare-cancers-australia", name: "Rare Cancers Australia", aka: ["Rare Cancers Australia Ltd", "RCA (Rare Cancers Australia)"], institutionType: "consortium", city: "Bowral", country: "AU", lat: -34.478, lng: 150.418, website: "https://www.rarecancers.org.au",

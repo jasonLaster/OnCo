@@ -123,6 +123,7 @@ import { mcedTrials } from "./mced-census-trials";
 import { nciCoverage } from "./nci-coverage";
 import { institutionsIndia } from "./institutions/india";
 import { institutionsUsCancerCharities } from "./institutions/us-cancer-charities";
+import { institutionsNonprofitsFromCompanies } from "./institutions/nonprofits-from-companies";
 import { institutionsPatientCoalitions, collectionsPatientCoalitions } from "./institutions/patient-coalitions-2026-11";
 import { institutionsRareCancerFoundations, collectionsRareCancerFoundations } from "./institutions/rare-cancer-foundations-2026-11";
 import { patientEducationLinks } from "./patient-education-links-2026-11";
@@ -406,6 +407,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...networkInstitutions, ...networkPeople,
   ...institutionsIndia,
   ...institutionsUsCancerCharities,
+  ...institutionsNonprofitsFromCompanies,
   ...institutionsPatientCoalitions, ...collectionsPatientCoalitions,
   ...institutionsRareCancerFoundations, ...collectionsRareCancerFoundations,
   ...institutionsUsCentresAaci,

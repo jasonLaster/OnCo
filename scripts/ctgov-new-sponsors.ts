@@ -116,7 +116,9 @@ async function main() {
   const g = graph();
   const keys = new Set<string>();
   const hosts = new Set<string>();
-  for (const c of g.kind("company")) {
+  // Institutions count too: a nonprofit sponsor held as an institution record (src/data/institutions/nonprofits-from-companies.ts)
+  // is already in the corpus and must not come back as a new company candidate.
+  for (const c of [...g.kind("company"), ...g.kind("institution")]) {
     for (const k of companyKeys(c)) keys.add(k);
     try { if (c.website) hosts.add(new URL(c.website).hostname.replace(/^www\./, "")); } catch { /* a malformed URL fails validation elsewhere */ }
   }

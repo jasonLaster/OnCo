@@ -1,8 +1,8 @@
 {
   "pr": 369,
-  "head": "b5a3c341deb1f5cce51dcb3791b239898eea3647",
-  "newCount": 32,
-  "modifiedCount": 7,
+  "head": "c6deecb92b279b11964c7ef81f419e6a18e26aeb",
+  "newCount": 34,
+  "modifiedCount": 31,
   "records": [
     {
       "id": "dual-payload-adc",
@@ -658,8 +658,20 @@
       ],
       "tldr": "Antibodies can carry drugs that block gene reading, remove proteins, interrupt cell signals or activate immune cells. Each approach needs its own evidence that the drug reaches its target and helps people safely.",
       "summary": "Payload diversification changes what an antibody delivers, independently of which surface antigen it binds. This map includes transcription and splicing inhibitors, repair-checkpoint inhibitors, metabolic and apoptosis agents, targeted protein degraders, immune agonists, signaling inhibitors, and additional tubulin and DNA-interacting scaffolds. Bispecific targeting is a delivery format; dual payload means distinct agents on one construct. Neither label alone establishes a new payload mechanism. Protein toxins, radionuclides, oligonucleotides, photosensitizers and antibody-directed nanocarriers have related delivery questions but retain their own format definitions. Evidence ranges from cell experiments and animal models to early clinical studies; a mechanism change does not by itself establish benefit after a TOP1 antibody-drug conjugate.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "links": [
+        {
+          "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/"
+        },
+        {
+          "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/"
+        },
+        {
+          "label": "IMGC936 with DM21-C: preclinical studies (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35511740/"
+        },
         {
           "label": "Yamazaki et al., dual-payload conjugates in breast cancer models (2021)",
           "url": "https://doi.org/10.1038/s41467-021-23793-7"
@@ -671,6 +683,8 @@
       ],
       "tags": [],
       "related": [
+        "af-hpa",
+        "dm21-c-maytansinoid-system",
         "transcription-inhibitor-payloads",
         "amanitin-payloads",
         "triptolide-payloads",
@@ -729,7 +743,8 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "This is a map of publicly described mechanisms, not an exhaustive list of proprietary payload molecules or a ranking of treatments. Follow each concept to the experiment or trial supporting it."
+        "This is a map of publicly described mechanisms, not an exhaustive list of proprietary payload molecules or a ranking of treatments. Follow each concept to the experiment or trial supporting it.",
+        "Chemical redesign also matters within an existing mechanism. The Dolaflexin studies distinguish AF-HPA from its active auristatin F metabolite. The IMGC936 preclinical report describes a peptide-linked DM21-C maytansinoid system. These are distinct cargo designs within the tubulin category, rather than proof that every redesign introduces a new mechanism or avoids clinical resistance."
       ],
       "category": "ADC chemistry"
     },
@@ -2273,7 +2288,1468 @@
       "toxicity": [],
       "access": [],
       "regulatoryEvents": []
+    },
+    {
+      "id": "sn-38",
+      "kind": "term",
+      "name": "SN-38",
+      "aka": [
+        "7-ethyl-10-hydroxycamptothecin"
+      ],
+      "tldr": "SN-38 is an irinotecan metabolite used as a DNA-damaging payload in sacituzumab govitecan. Its release, loading and safety need the context of the whole product.",
+      "summary": "SN-38 stabilises the normally temporary TOP1-DNA cleavage complex, interfering with DNA resealing. It is chemically distinct from irinotecan and from the other camptothecin-derived ADC cargo.\n\nThe sacituzumab govitecan label describes a hydrolysable CL2A linkage and mean loading of seven to eight SN-38 molecules per antibody. That is a product example, rather than a loading requirement dictated by free-drug potency. The label warns about neutropenia and diarrhoea; reduced UGT1A1 activity increases specified blood-count risks. A transporter experiment does not establish a clinical sequencing rule.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/SN-38",
+      "links": [
+        {
+          "label": "TRODELVY prescribing information: SN-38, loading and safety",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        },
+        {
+          "label": "Cardillo et al.: prototype CL2A-SN-38 conjugate (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21372224/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump",
+        "topoisomerase-inhibitors",
+        "irinotecan"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "sacituzumab-govitecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "topoisomerase-i-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dxd",
+      "kind": "term",
+      "name": "DXd",
+      "aka": [
+        "MAAA-1181a",
+        "MAAA-1181a; an exatecan derivative"
+      ],
+      "tldr": "DXd is an exatecan-derived topoisomerase poison. Its released chemical, attached linker-drug and complete antibody conjugates are different objects.",
+      "summary": "DXd, also called MAAA-1181a, is the released TOP1 poison. Deruxtecan denotes a linker-DXd component. Neither is simply an alias for every exatecan derivative.\n\nThe T-DXd and Dato-DXd labels describe mean loading of eight and four respectively. A common free chemical does not impose the same loading, exposure or safety on each conjugate. Permeability and local bystander activity were measured for defined species and models; these findings alone do not explain all clinical benefit in HER2-low disease or guarantee limited systemic harm.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Deruxtecan",
+      "links": [
+        {
+          "label": "ENHERTU prescribing information: DXd, loading and transporters",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "DATROWAY prescribing information: DXd and mean loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        },
+        {
+          "label": "Ogitani et al.: released species, membrane assays and local bystander models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump",
+        "topoisomerase-inhibitors",
+        "ild"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "datopotamab-deruxtecan",
+        "patritumab-deruxtecan",
+        "ifinatamab-deruxtecan",
+        "raludotatug-deruxtecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "topoisomerase-i-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "t030",
+      "kind": "term",
+      "name": "T030 (KL610023)",
+      "aka": [
+        "T030",
+        "KL610023",
+        "Belotecan-derived KL610023"
+      ],
+      "tldr": "T030, also called KL610023, is the belotecan-derived payload in SKB264. It is distinct from the TL033 drug-linker intermediate.",
+      "summary": "The SKB264 preclinical paper identifies KL610023, also named T030, as a belotecan-derived TOP1 inhibitor. TL033 denotes the drug-linker intermediate, and SKB264 denotes the complete TROP2-directed ADC.\n\nThe study reports approximately 7.4 payload molecules per antibody by reversed-phase chromatography and a TOP1-mediated DNA relaxation assay. Its cell and animal work does not establish a specified ABCB1 or ABCG2 comparison against SN-38. Lower efflux susceptibility and better clinical sequencing should remain unestablished here until supported by the relevant direct experiment.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Belotecan",
+      "links": [
+        {
+          "label": "SKB264 structure, TOP1 assay and animal pharmacokinetics (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36620535/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump",
+        "topoisomerase-inhibitors"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "sacituzumab-tirumotecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "topoisomerase-i-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "mmae",
+      "kind": "term",
+      "name": "MMAE",
+      "aka": [
+        "monomethyl auristatin E",
+        "Monomethyl auristatin E"
+      ],
+      "tldr": "MMAE is a tubulin-disrupting auristatin cargo. Its released-drug behaviour helps explain a particular conjugate, but does not make all vedotin products equivalent.",
+      "summary": "Monomethyl auristatin E disrupts tubulin-dependent cell division. Vedotin denotes the linked component used in named ADCs, rather than free MMAE alone.\n\nThe brentuximab vedotin label describes proteolytic release and mean loading of about four. Cellular transporter and bystander experiments need their exact construct and model. Antigen distribution, exposure, processing and sensitivity of neighbouring cells also influence the effect. Peripheral neuropathy and blood-count effects in a named product are clinical findings, distinct from a free-MMAE membrane assay.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Monomethyl_auristatin_E",
+      "links": [
+        {
+          "label": "ADCETRIS prescribing information: MMAE, loading and safety",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3904f8dd-1aef-3490-e48f-bd55f32ed67f"
+        },
+        {
+          "label": "Li et al.: intracellular MMAE release and bystander models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26921341/"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "enfortumab-vedotin",
+        "brentuximab-vedotin",
+        "tisotumab-vedotin",
+        "telisotuzumab-vedotin",
+        "disitamab-vedotin",
+        "zilovertamab-vedotin",
+        "cmg901"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "mmaf",
+      "kind": "term",
+      "name": "MMAF",
+      "aka": [
+        "monomethyl auristatin F",
+        "Monomethyl auristatin F"
+      ],
+      "tldr": "Free MMAF and the cysteine-containing metabolite released by a mafodotin ADC are different chemicals. Their membrane access and transporter findings must be kept separate.",
+      "summary": "Monomethyl auristatin F is a tubulin-disrupting auristatin. Early experiments inferred reduced access of the free compound to cells; reduced access does not mean zero passage across every membrane or absence of injury to neighbouring healthy tissues.\n\nThe belantamab mafodotin label identifies cys-mcMMAF as a released catabolite. Its transporter statements differ from experiments on free MMAF because the materials are different. The product has ocular and blood-count risks despite limited bystander activity in specified models.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Monomethyl_auristatin_F",
+      "links": [
+        {
+          "label": "Doronina et al.: MMAF conjugates and released catabolites (2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16417259/"
+        },
+        {
+          "label": "BLENREP prescribing information: mcMMAF and cys-mcMMAF",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "belantamab-mafodotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dm1",
+      "kind": "term",
+      "name": "DM1",
+      "aka": [
+        "mertansine",
+        "Mertansine"
+      ],
+      "tldr": "DM1 is a tubulin-disrupting maytansinoid. Free DM1, the MCC-DM1 component and a lysine-containing released catabolite have different chemical identities.",
+      "summary": "DM1, also called mertansine, is the maytansinoid cargo in trastuzumab emtansine. Emtansine denotes its MCC-DM1 linked component. The product label distinguishes DM1, MCC-DM1 and Lys-MCC-DM1 analytes.\n\nLow permeability measured for a lysine-containing catabolite is not a measurement of free DM1. It also does not establish a clinical requirement for uniformly high HER2 or explain a comparison of whole ADCs by itself. Labelled product risks include thrombocytopenia, liver injury and peripheral neuropathy.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mertansine",
+      "links": [
+        {
+          "label": "KADCYLA prescribing information: description, mechanism and pharmacology",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+        },
+        {
+          "label": "Ogitani et al.: released species, membrane assays and local bystander models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-emtansine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dm4",
+      "kind": "term",
+      "name": "DM4",
+      "aka": [
+        "ravtansine",
+        "Ravtansine"
+      ],
+      "tldr": "DM4 is a tubulin-disrupting maytansinoid. Its linked component, unconjugated form and S-methyl metabolite should be named separately.",
+      "summary": "DM4, also called ravtansine, is attached through sulfo-SPDB in mirvetuximab soravtansine. The product label distinguishes unconjugated DM4 and S-methyl-DM4 and reports P-gp substrate behaviour for both.\n\nRelated SPDB-DM4 experiments describe catabolites and bystander activity in cells and xenografts. Those experiments are not an exact sulfo-SPDB chemical or clinical comparison with DM1. The mirvetuximab label gives mean loading of 3.4 and important ocular and other product risks.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ravtansine",
+      "links": [
+        {
+          "label": "ELAHERE prescribing information: DM4, sulfo-SPDB and transporter statements",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00c424b5-6ccd-48ab-9e88-1986451120e2"
+        },
+        {
+          "label": "Kellogg et al.: SPDB-DM4 catabolites in cell and xenograft models (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21425776/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "mirvetuximab-soravtansine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-widdison-j-med-chem"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "pbd-sg3199",
+      "kind": "term",
+      "name": "SG3199 (PBD dimer)",
+      "aka": [
+        "SG3199",
+        "pyrrolobenzodiazepine dimer",
+        "Pyrrolobenzodiazepine dimer SG3199"
+      ],
+      "tldr": "SG3199 is a DNA-crosslinking PBD dimer. Tesirine, also called SG3249, is its drug-linker component and is not a free-SG3199 synonym.",
+      "summary": "SG3199 forms DNA crosslinks in the minor groove. Limited helix distortion does not make its damage undetectable or independent of DNA repair: the primary study tested repair-defective and multidrug-resistant cells.\n\nThe loncastuximab tesirine label describes mean loading of 2.3 SG3249 components per antibody and release of SG3199. Potency in a cell panel does not imply a wide clinical safety margin, no transporter susceptibility or activity in every slow-growing tumour. The label and a later cell study give different ABCG2/BCRP findings; both contexts are retained below.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Pyrrolobenzodiazepine",
+      "links": [
+        {
+          "label": "ZYNLONTA prescribing information: SG3199, SG3249 and transporter statements",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af54af12-3edf-4301-8bc5-0446bc813c1d"
+        },
+        {
+          "label": "SG3199 DNA-crosslinking and resistance models (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29992976/"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "zynlonta"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "pbd-dimer-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "calicheamicin",
+      "kind": "term",
+      "name": "Calicheamicin-family payloads",
+      "aka": [
+        "Enediyne cargo, including modified calicheamicins"
+      ],
+      "tldr": "Calicheamicins are DNA-damaging enediyne cargo. The modified components used in ozogamicin ADCs should be distinguished from unmodified family members.",
+      "summary": "Calicheamicin-family enediynes can produce DNA strand injury after activation. The ozogamicin labels describe chemically modified calicheamicin components and their processing, rather than an interchangeable free chemical for every family member.\n\nGemtuzumab ozogamicin has mean loading of two to three components, while inotuzumab ozogamicin has mean loading of six in the respective labels. Their distributions differ too. A free calicheamicin gamma1 transporter assay is not an assay of every released ozogamicin species. Liver injury and blood-count effects are important product risks.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Calicheamicin",
+      "links": [
+        {
+          "label": "MYLOTARG prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32fd2bb2-1cfa-4250-feb8-d7956c794e05"
+        },
+        {
+          "label": "BESPONSA prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc7014b1-c775-411d-b374-8113248b4077"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "gemtuzumab-ozogamicin",
+        "inotuzumab-ozogamicin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "dna-cleaver-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "duocarmycin",
+      "kind": "term",
+      "name": "Duocarmycin-family payloads",
+      "aka": [
+        "DNA-alkylating cargo, including the seco-DUBA design"
+      ],
+      "tldr": "Duocarmycin payload designs damage DNA by alkylation. Their prodrugs, activated chemicals and linker-drugs are distinct, and preclinical activity does not establish benefit in every slow-growing cancer.",
+      "summary": "Duocarmycin designs combine DNA binding and alkylating features. The SYD985 chemistry study distinguishes an inactive seco prodrug from the activated drug and its attached linker-drug. It reports a mean loading of about 2.8 after fractionation of the particular preparation.\n\nThese properties are not interchangeable across all duocarmycin analogues. TULIP tested the complete trastuzumab duocarmazine product in previously treated HER2-positive advanced breast cancer; ocular toxicity affected tolerability. That study does not establish that a payload family treats all indolent or TOP1-resistant cancers.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Duocarmycin",
+      "links": [
+        {
+          "label": "Elgersma et al.: duocarmycin linker-drug design and SYD985 composition (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25635711/"
+        },
+        {
+          "label": "TULIP randomised phase 3 report (2024)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39442070/"
+        },
+        {
+          "label": "Trastuzumab duocarmazine phase 1 study (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31257177/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-duocarmazine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "dna-alkylator-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "af-hpa",
+      "kind": "term",
+      "name": "AF-HPA and auristatin F",
+      "aka": [
+        "AF-HPA",
+        "auristatin F-hydroxypropylamide",
+        "Auristatin F-hydroxypropylamide"
+      ],
+      "tldr": "AF-HPA is an auristatin cargo used in the Dolaflexin platform. It can convert to active auristatin F, which has less access across membranes.",
+      "summary": "The Dolaflexin preclinical studies distinguish membrane-accessible auristatin F-hydroxypropylamide, or AF-HPA, from its less membrane-accessible but still active auristatin F metabolite. Auristatin F is not the same chemical as monomethyl auristatin F.\n\nThe XMT-1536 preclinical report describes roughly 10 to 15 AF-HPA molecules per antibody. This is a preparation-specific report, rather than a fixed mean or a common loading of eight. The earlier polyacetal Fleximer study used a vinca derivative; its platform name must not be treated as evidence for Dolaflexin composition. Cell and animal activity does not establish patient benefit or complete payload confinement.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/"
+        },
+        {
+          "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/"
+        },
+        {
+          "label": "Polyacetal Fleximer with a vinca derivative, a distinct platform (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26113086/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "upifitamab-rilsodotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dm21-c-maytansinoid-system",
+      "kind": "term",
+      "name": "DM21-C peptide-linked maytansinoid system",
+      "aka": [
+        "DM21-C"
+      ],
+      "tldr": "DM21-C is a peptide-linked maytansinoid system used in the investigational ADAM9-directed IMGC936 construct. Its attached component and released metabolites should be identified separately.",
+      "summary": "The IMGC936 preclinical report describes a DM21-C maytansinoid system with a cleavable tripeptide, site-specific conjugation and loading of approximately two. Earlier peer-reviewed chemical work studied peptide-cleavable self-immolative maytansinoids with different side chains and stereochemistry. That design family should not be collapsed into DM1 or DM4.\n\nA 2019 conference abstract reports DM51 as a major released catabolite of its DM21-C conjugates by LC-MS. That conference observation does not make DM51 an alias for the attached DM21-C system or identify every compound number in related papers. The IMGC936 phase 1/2 registry is completed and has posted results; no patient-benefit estimate is inferred here from the preclinical report or registry state.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "IMGC936 with DM21-C: preclinical studies (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35511740/"
+        },
+        {
+          "label": "Peptide-cleavable self-immolative maytansinoid conjugates (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31620224/"
+        },
+        {
+          "label": "AACR 2019 abstract 538: DM21-C and DM51, conference evidence",
+          "url": "https://doi.org/10.1158/1538-7445.AM2019-538"
+        },
+        {
+          "label": "IMGC936 registry NCT04622774, last update 15 January 2025",
+          "url": "https://clinicaltrials.gov/study/NCT04622774"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bystander-effect",
+        "efflux-pump"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "tubulin-inhibitor-payloads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "cl2a",
+      "kind": "term",
+      "name": "CL2A",
+      "aka": [],
+      "tldr": "CL2A is a hydrolysable linker that can release SN-38 from sacituzumab govitecan. Release is not restricted to tumour tissue.",
+      "summary": "Hydrolysis of the SN-38 linkage. SN-38.\n\nThe prototype studied in 2011 is distinct from every later commercial preparation. Plasma release can contribute to exposure outside targeted cells; it is not confined to acidic tumour tissue.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sacituzumab_govitecan",
+      "links": [
+        {
+          "label": "TRODELVY prescribing information: SN-38, loading and safety",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "Cardillo et al.: prototype CL2A-SN-38 conjugate (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21372224/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "sn-38",
+        "bystander-effect"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "sacituzumab-govitecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-cardillo-clin-cancer-res"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "ggfg",
+      "kind": "term",
+      "name": "Tetrapeptide GGFG (maleimide-GGFG-aminomethyl)",
+      "aka": [],
+      "tldr": "GGFG is a sequence of four amino acids in a protease-cleavable linker used to release DXd. Loading and safety belong to the named conjugate.",
+      "summary": "Proteolytic processing of the tetrapeptide-containing linker. DXd after processing of the linker-drug.\n\nNamed products have different mean loading: T-DXd 8 and Dato-DXd 4. Neither a sequence nor high loading alone establishes safety.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Trastuzumab_deruxtecan",
+      "links": [
+        {
+          "label": "Ogitani et al.: DS-8201a preclinical design (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27026201/"
+        },
+        {
+          "label": "ENHERTU prescribing information: DXd, loading and transporters",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "DATROWAY prescribing information: DXd and mean loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dxd"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-deruxtecan",
+        "datopotamab-deruxtecan",
+        "patritumab-deruxtecan",
+        "ifinatamab-deruxtecan",
+        "raludotatug-deruxtecan"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-ogitani-clin-cancer-res"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "mc-vc-pabc",
+      "kind": "term",
+      "name": "mc-Val-Cit-PABC",
+      "aka": [],
+      "tldr": "mc-Val-Cit-PABC is a peptide-containing linker design that releases MMAE after enzymatic processing. Its behaviour depends on the construct and test conditions.",
+      "summary": "Proteolytic cleavage of the valine-citrulline linker and spacer processing. MMAE in the cited vedotin design.\n\nThe whole construct and processing conditions matter. Do not infer universal tumour-only cleavage or a common clinical safety profile.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Brentuximab_vedotin",
+      "links": [
+        {
+          "label": "Doronina et al.: auristatin conjugates (2003)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12778055/"
+        },
+        {
+          "label": "ADCETRIS prescribing information: MMAE, loading and safety",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3904f8dd-1aef-3490-e48f-bd55f32ed67f"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mmae",
+        "bystander-effect"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "enfortumab-vedotin",
+        "brentuximab-vedotin",
+        "tisotumab-vedotin",
+        "telisotuzumab-vedotin",
+        "disitamab-vedotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-doronina-nat-biotechnol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "smcc",
+      "kind": "term",
+      "name": "SMCC (thioether, non-cleavable)",
+      "aka": [],
+      "tldr": "SMCC links DM1 to an antibody without a designed payload-cleavage site. Antibody processing can leave a lysine-containing linker-drug catabolite.",
+      "summary": "Antibody proteolysis; the linker is not designed as a cleavable payload-release site. Lys-MCC-DM1 and other measured DM1-containing analytes, depending on processing and sample.\n\nLow permeability of the lysine-containing catabolite is not a free-DM1 property. This chemistry alone does not explain a head-to-head clinical outcome.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Succinimidyl_4-(N-maleimidomethyl)cyclohexane-1-carboxylate",
+      "links": [
+        {
+          "label": "KADCYLA prescribing information: description, mechanism and pharmacology",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+        },
+        {
+          "label": "Ogitani et al.: released species, membrane assays and local bystander models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Human liver S9 catabolism method and retained linker species (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27206324/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dm1"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-emtansine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "sulfo-spdb",
+      "kind": "term",
+      "name": "Sulfo-SPDB (disulfide)",
+      "aka": [],
+      "tldr": "Sulfo-SPDB is the disulfide linker used with DM4 in mirvetuximab soravtansine. It differs from the related SPDB used in some model experiments.",
+      "summary": "Processing of a disulfide-linked DM4 component. The mirvetuximab label distinguishes unconjugated DM4 and S-methyl-DM4.\n\nDo not equate sulfo-SPDB with the related SPDB linker used in the cited huC242 preclinical experiments.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mirvetuximab_soravtansine",
+      "links": [
+        {
+          "label": "ELAHERE prescribing information: DM4, sulfo-SPDB and transporter statements",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00c424b5-6ccd-48ab-9e88-1986451120e2"
+        },
+        {
+          "label": "Kellogg et al.: SPDB-DM4 catabolites in cell and xenograft models (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21425776/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dm4"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "mirvetuximab-soravtansine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-kellogg-bioconjug-chem"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "hydrazone",
+      "kind": "term",
+      "name": "Acid-labile hydrazone (AcBut)",
+      "aka": [],
+      "tldr": "A hydrazone is an acid-sensitive linkage used in the modified calicheamicin components of ozogamicin conjugates. The particular product and released species matter.",
+      "summary": "Hydrolysis of the acid-sensitive linkage. A modified calicheamicin species, followed by activation; not necessarily unmodified calicheamicin gamma1.\n\nAcBut and the attached modified calicheamicin component must be named. The two product labels specify different mean loading and distributions.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hydrazone",
+      "links": [
+        {
+          "label": "MYLOTARG prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32fd2bb2-1cfa-4250-feb8-d7956c794e05"
+        },
+        {
+          "label": "BESPONSA prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc7014b1-c775-411d-b374-8113248b4077"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "calicheamicin"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "gemtuzumab-ozogamicin",
+        "inotuzumab-ozogamicin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "val-ala",
+      "kind": "term",
+      "name": "Val-Ala dipeptide",
+      "aka": [],
+      "tldr": "Val-Ala is a peptide segment in the tesirine linker-drug system, which releases SG3199 after processing.",
+      "summary": "Proteolytic processing of the valine-alanine-containing tesirine component. SG3199 from the SG3249 (tesirine) drug-linker system.\n\nThe cited ADCT-402 study does not establish that every Val-Ala design is easier to manufacture or clinically safer than every Val-Cit design.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Loncastuximab_tesirine",
+      "links": [
+        {
+          "label": "Zammarchi et al.: ADCT-402 preclinical studies (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29298756/"
+        },
+        {
+          "label": "ZYNLONTA prescribing information: SG3199, SG3249 and transporter statements",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af54af12-3edf-4301-8bc5-0446bc813c1d"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pbd-sg3199"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "zynlonta"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-zammarchi-blood"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "mc-non-cleavable",
+      "kind": "term",
+      "name": "Maleimidocaproyl (mc), non-cleavable",
+      "aka": [],
+      "tldr": "In belantamab mafodotin, antibody processing releases cys-mcMMAF, which retains cysteine and the mc linker.",
+      "summary": "Antibody proteolysis; the maleimidocaproyl linkage is protease resistant. cys-mcMMAF in the belantamab mafodotin label.\n\nThe released species retains cysteine and linker material. Catabolism need not mean complete digestion of every antibody molecule.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Doronina et al.: MMAF conjugates and released catabolites (2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16417259/"
+        },
+        {
+          "label": "BLENREP prescribing information: mcMMAF and cys-mcMMAF",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+        },
+        {
+          "label": "Human liver S9 catabolism method and retained linker species (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27206324/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mmaf"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "belantamab-mafodotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-doronina-bioconjug-chem"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "hydrophilic-next-gen",
+      "kind": "term",
+      "name": "Hydrophilic linker and carrier designs",
+      "aka": [],
+      "tldr": "Hydrophilic linker and carrier designs are a varied group. Water affinity does not specify a common cargo, release trigger or loading.",
+      "summary": "No common cleavage trigger; specify the actual linker and carrier. Depends on the construct: TOP1 cargo, auristatins, vinca derivatives or other cargo.\n\nHydrophilicity, coupling chemistry and release trigger are separate design features. Dolaflexin uses AF-HPA, whereas the earlier polyacetal Fleximer study used a vinca derivative; neither establishes universal efflux escape or loading of eight.\n\nIn SKB264, sulfonyl-pyrimidine is a coupling feature, while the carbonate linkage is discussed as a release site. A polymer carrier, an antibody attachment group, a solubilising segment and a cleavage trigger are different parts of a design. Assess them for the named construct; none alone proves efflux avoidance or clinical tolerability.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Polyacetal Fleximer with a vinca derivative, a distinct platform (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26113086/"
+        },
+        {
+          "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/"
+        },
+        {
+          "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/"
+        },
+        {
+          "label": "SKB264 structure, TOP1 assay and animal pharmacokinetics (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36620535/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t030",
+        "efflux-pump",
+        "dar"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "upifitamab-rilsodotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "linker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-yurkovetskiy-cancer-res"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry",
+      "wikipediaChecked": "2026-09-22"
+    },
+    {
+      "id": "tubulin-inhibitor-payloads",
+      "kind": "term",
+      "name": "Tubulin inhibitor payloads",
+      "aka": [
+        "auristatins",
+        "auristatin",
+        "maytansinoids",
+        "maytansinoid",
+        "microtubule payloads"
+      ],
+      "tldr": "Tubulin payloads include auristatins and maytansinoids. The exact released chemical and linker affect cell access and handling.",
+      "summary": "MMAE, MMAF, AF-HPA, DM1, DM4 and peptide-linked maytansinoid systems share a broad tubulin mechanism but are distinct designs. The attached component, released catabolite and further metabolite can differ.\n\nFree DM1 must not inherit a Lys-MCC-DM1 membrane measurement. Free MMAF must not inherit the cys-mcMMAF transporter result, and auristatin F is not MMAF. Membrane passage, lysosome-to-cytoplasm transport and export from the cell are different barriers. Product-specific loading, safety and clinical results remain separate from these assays.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mitotic_inhibitor",
+      "links": [
+        {
+          "label": "Ogitani et al.: released species, membrane assays and local bystander models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "BLENREP prescribing information: mcMMAF and cys-mcMMAF",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+        },
+        {
+          "label": "KADCYLA prescribing information: description, mechanism and pharmacology",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+        },
+        {
+          "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/"
+        },
+        {
+          "label": "IMGC936 with DM21-C: preclinical studies (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35511740/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "efflux-pump",
+        "bystander-effect",
+        "af-hpa",
+        "dm21-c-maytansinoid-system"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "enfortumab-vedotin",
+        "brentuximab-vedotin",
+        "tisotumab-vedotin",
+        "telisotuzumab-vedotin",
+        "disitamab-vedotin",
+        "zilovertamab-vedotin",
+        "cmg901",
+        "belantamab-mafodotin",
+        "trastuzumab-emtansine",
+        "mirvetuximab-soravtansine",
+        "upifitamab-rilsodotin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "pbd-dimer-payloads",
+      "kind": "term",
+      "name": "DNA crosslinker payloads (PBD dimers)",
+      "aka": [
+        "pyrrolobenzodiazepine dimers",
+        "PBD dimer payloads"
+      ],
+      "tldr": "PBD dimers crosslink DNA. Their free warheads and linker-drugs need separate names, and cell potency does not define a clinical safety margin.",
+      "summary": "Pyrrolobenzodiazepine dimers are DNA-crosslinking cargo designs. SG3199 is a free warhead; SG3249, also called tesirine, is its drug-linker component.\n\nThe SG3199 primary study tested DNA-repair-defective and resistant cells, so limited distortion of DNA does not mean the injury escapes all detection or repair. The loncastuximab label gives a particular mean loading and product safety profile. Neither a common loading near two nor universal low efflux follows from membership in this family.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Pyrrolobenzodiazepine",
+      "links": [
+        {
+          "label": "SG3199 DNA-crosslinking and resistance models (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29992976/"
+        },
+        {
+          "label": "ZYNLONTA prescribing information: SG3199, SG3249 and transporter statements",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af54af12-3edf-4301-8bc5-0446bc813c1d"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pbd-sg3199"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "zynlonta"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dna-cleaver-payloads",
+      "kind": "term",
+      "name": "DNA cleaver payloads (enediynes)",
+      "aka": [
+        "calicheamicin class",
+        "enediyne cargo"
+      ],
+      "tldr": "Enediyne cargo can injure DNA strands after activation. Calicheamicin-family chemicals, attached components and released modified species are distinct.",
+      "summary": "The ozogamicin ADCs use modified calicheamicin components. A free calicheamicin gamma1 assay is not automatically a measurement of the species released from either complete product.\n\nGemtuzumab ozogamicin and inotuzumab ozogamicin differ in mean loading and distribution in their labels. Product-related liver and blood-count risks cannot be assigned to an interchangeable family-wide dose. Compare the exact chemical, conjugate and clinical setting.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Enediyne",
+      "links": [
+        {
+          "label": "MYLOTARG prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32fd2bb2-1cfa-4250-feb8-d7956c794e05"
+        },
+        {
+          "label": "BESPONSA prescribing information: modified calicheamicin and loading",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc7014b1-c775-411d-b374-8113248b4077"
+        },
+        {
+          "label": "Paired-cell transporter studies of specified ADC payloads (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41668804/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "calicheamicin"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "gemtuzumab-ozogamicin",
+        "inotuzumab-ozogamicin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "dna-alkylator-payloads",
+      "kind": "term",
+      "name": "DNA alkylator payloads",
+      "aka": [
+        "duocarmycins",
+        "seco-DUBA"
+      ],
+      "tldr": "Duocarmycin designs alkylate DNA. Their prodrug activation and preclinical cell effects should be distinguished from a clinical benefit in a defined cancer setting.",
+      "summary": "Duocarmycin designs include an inactive seco prodrug, its activated species and an attached linker-drug. Results for one chemical or construct do not establish permeability, transporter behaviour or resistance avoidance for the whole family.\n\nTrastuzumab duocarmazine has been tested in a randomised trial in previously treated HER2-positive advanced breast cancer. That clinical setting is different from a general claim that DNA alkylation treats every slow-growing or TOP1-resistant tumour.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Duocarmycin",
+      "links": [
+        {
+          "label": "Elgersma et al.: duocarmycin linker-drug design and SYD985 composition (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25635711/"
+        },
+        {
+          "label": "TULIP randomised phase 3 report (2024)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39442070/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "duocarmycin"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc"
+      ],
+      "targets": [],
+      "drugs": [
+        "trastuzumab-duocarmazine"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "ADC chemistry"
+    },
+    {
+      "id": "upifitamab-rilsodotin",
+      "kind": "drug",
+      "name": "Upifitamab rilsodotin",
+      "aka": [
+        "XMT-1536",
+        "UpRi"
+      ],
+      "tldr": "Upifitamab rilsodotin is an investigational antibody-drug conjugate directed at NaPi2b, carrying AF-HPA through the Dolaflexin platform.",
+      "summary": "Upifitamab rilsodotin, also called XMT-1536, uses a NaPi2b-directed antibody and the Dolaflexin AF-HPA cargo. The preclinical report describes roughly 10 to 15 payload molecules per antibody, cell and xenograft activity, and conversion of AF-HPA to the less membrane-accessible but active auristatin F metabolite. These findings do not establish patient benefit or complete confinement of the cargo.\n\nNCT03319628 is a registered phase 1/2 study. Its last posted update is 13 November 2023 and records active, no longer recruiting status with 523 participants actually enrolled. A registry state is separate from a clinical outcome, current local access or a product authorisation.",
+      "status": "phase-2",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov: trials of Upifitamab rilsodotin",
+          "url": "https://clinicaltrials.gov/search?intr=Upifitamab%20rilsodotin"
+        },
+        {
+          "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/"
+        },
+        {
+          "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/"
+        },
+        {
+          "label": "NCT03319628 registry, last posted update 13 November 2023",
+          "url": "https://clinicaltrials.gov/study/NCT03319628"
+        }
+      ],
+      "tags": [
+        "pipeline",
+        "ctgov-ingest"
+      ],
+      "related": [],
+      "cancers": [
+        "ovarian",
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "slc34a2"
+      ],
+      "drugs": [],
+      "companies": [
+        "mersana"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "af-hpa"
+      ],
+      "trials": [
+        "nct03319628"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "provenance": {
+        "editedBy": "OnCo ingestion (ClinicalTrials.gov v2, registry-only)",
+        "editedOn": "2026-09-16"
+      },
+      "modality": "Antibody-drug conjugate",
+      "mechanism": "An antibody directed at NaPi2b (SLC34A2) carries AF-HPA through the Dolaflexin platform; AF-HPA can convert to active auristatin F.",
+      "approvals": [],
+      "mechanismSteps": [],
+      "toxicity": [],
+      "access": [],
+      "regulatoryEvents": []
     }
   ],
-  "normalization": "JSON public record shape; undefined-only runtime properties are omitted on both sides."
+  "normalization": "Actual data-only graph JSON. Baseline TermSchema strips chemicalObservations; combined optional-contract/consumer evidence is retained separately and requires PR376."
 }

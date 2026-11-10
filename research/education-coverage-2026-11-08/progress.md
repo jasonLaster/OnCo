@@ -1,33 +1,41 @@
 # Audit progress
 
-The goal is active. This checkpoint is not a completed audit. Counts derive from the pinned ledger and explicit screening states.
+The goal is active. These independent source versions overlap and are never added together. Counts derive from current ledgers; worker output is credited only after coordinator integration and exact proof checks.
 
 | Measure | Current checkpoint |
 | --- | ---: |
-| Pinned public Markdown sources | 537 |
-| Concepts/comparisons | 411 |
-| Guides/lessons | 112 |
-| Navigation sources awaiting classification | 0 |
-| Teaching sources fully read (including seven navigation pages) | 85 |
-| Reviewed sources completely represented in drafts | 80 |
-| Reviewed sources retaining requirements | 5 |
-| Content sources unread | 445 |
-| Curriculum requirements | 349 |
-| Requirements with field evidence | 341 |
-| Curriculum requirements open | 8 |
-| New records in draft #375 | 36 |
-| Existing owners updated in draft #375 | 135 |
-| Reviewed-source completion on pinned main | 0 |
-| Adjacent concepts represented in drafts | 19 |
-| Adjacent concepts open | 2 |
-| Declared literature occurrences | 280 |
-| Literature occurrences screened | 175 |
-| Literature occurrences unread | 105 |
-| Implemented schema drafts awaiting approval/hosted preview | 4 |
-| Additional classification schema design open | 1 |
-| Clean final full re-audits | 0 |
+| Pinned original Markdown files | 537 |
+| Original teaching sources assessed | 94 |
+| Original routing-only navigation files classified | 7 |
+| Original reviewed files / denominator | 101 / 537 |
+| Original assessed sources fully represented in drafts | 90 |
+| Original assessed sources retaining requirements | 4 |
+| Original ordinary content sources unread | 436 |
+| Original requirements / evidenced / open | 391 / 384 / 7 |
+| Later assessed teaching sources / denominator | 86 / 550 |
+| Later assessed sources fully represented in drafts | 86 |
+| Later requirements / evidenced / open | 371 / 371 / 0 |
+| Later ordinary content unread / navigation unclassified | 459 / 5 |
+| Canonical owners in draft #375 | 180 (40 new / 140 existing) |
+| Canonical owners in draft #369 | 65 (34 new / 31 existing) |
+| Alternative summary consumers / present / English fallback | 306 / 274 / 32 |
+| Non-graph directory consumers | 1 |
+| Assets per source ref / reviewed teaching / unclassified | 1888 / 19 / 1869 |
+| Adjacent findings / represented / partial | 23 / 22 / 1 |
+| Literature occurrences / screened / unreviewed | 359 / 251 / 108 |
+| Schema findings / implemented pending approval / design needed | 6 / 5 / 1 |
+| Fully covered sources on pinned main | 0 |
+| Completed clean final re-audits | 0 |
 
-Unread means unknown coverage. Drafts remain separate from main. The [ledger](ledger.json) and generated open-item/dependency reports are authoritative.
+The [chemical-species checkpoint](payload-chemical-species-2026-11-09/README.md) updates exact species, observations and draft dependencies. It reassesses one existing requirement in each version, without adding a newly read page. Broader legacy inference remains partial. The [ledger](ledger.json), later source ledger and generated open-item/dependency reports remain authoritative.
+
+The current refresh changes audit metadata and snapshots only. Data #369 and product #376 carry their own current validation receipts; no full-suite, build, browser or live result from those branches is relabelled as a fresh #375 result. The focused audit check is recorded separately.
+
+Completed first-round packets await integration. Haiku citation results are provisional identity screening, and the new partial content packet has zero full-page credit.
+
+## Historical checkpoint notes
+
+The following notes retain the counts and heads at each recorded checkpoint; they do not replace the current table.
 
 The [CHK1 follow-up](chk1-follow-up/scope.json) supplements its existing owner with negative delivery evidence, candidate-pair and clinical-combination boundaries. Eighteen further discovery occurrences have dispositions and 14 registry identities were fetched independently. Four navigation directories add routing only; the local-treatment shelf adds six requirements, now represented in the local-treatment checkpoint. Four previously read target/format requirements now have explicit field evidence.
 

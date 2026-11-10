@@ -7,7 +7,7 @@
   "pending": [
     {
       "pr": 369,
-      "head": "b5a3c341deb1f5cce51dcb3791b239898eea3647",
+      "head": "c6deecb92b279b11964c7ef81f419e6a18e26aeb",
       "state": "open draft; not merged"
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "version": "draft-376",
-      "state": "Open draft product proposal; reader/search/decomposition and export consumers verified locally; owner approval and upstream preview pending; not merged",
+      "state": "Open draft product proposal; current local checks and historical browser/build scopes are recorded separately; owner approval and hosted preview pending; not merged.",
       "recordSnapshotSha256": "1918af5f94a4955b126ff9a8ca63be3140b7c5a730858734d572bcd12e90c4e0"
     },
     {
@@ -56,6 +56,16 @@
       "version": "draft-373-summary-consumers",
       "state": "Actual summary tables at PR 373 head 1329c14243c52b30fab3459bb0c68eadb63bdd8b; open draft, not merged.",
       "recordSnapshotSha256": "700ef98537ff44e83750974a839c9a1124e2dcaeb7d1381e0208c37af3407a16"
+    },
+    {
+      "version": "draft-369-summary-consumers",
+      "state": "Actual selected summary entries in data draft #369; 209 present and 25 English fallbacks; not graph entities or named-language review.",
+      "recordSnapshotSha256": "d5834df3b5a4ba06fa611b4dedaf3169d57fb4bb47146bbbe1656a0e37fc4aa1"
+    },
+    {
+      "version": "draft-369-376-chemical-consumers",
+      "state": "Actual temporary integration of data #369 and product #376; neither merged nor deployed. Audit consumer owners, not new canonical graph entities.",
+      "recordSnapshotSha256": "5aee1b0ea7e434f33ca536a63840504e1ee633e0d38110a0c62b65c914165c37"
     }
   ],
   "sourcePhases": [
@@ -65,7 +75,7 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (465 sources)"
+        "Source phase remains open: guide-c9689645 (464 sources)"
       ]
     }
   ],
@@ -95,13 +105,13 @@
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
     "semanticallyReviewed": 94,
-    "implementedCoverage": 89,
+    "implementedCoverage": 90,
     "mainCoverage": 0,
-    "unresolvedContentItems": 441,
-    "unresolvedSources": 441,
+    "unresolvedContentItems": 440,
+    "unresolvedSources": 440,
     "adjacentConcepts": 23,
     "unresolvedAdjacentConcepts": 1,
-    "openSchemaGaps": 5,
+    "openSchemaGaps": 6,
     "unreviewedLiteratureOccurrences": 108,
     "readyForFinalReaudit": false
   },
@@ -32401,8 +32411,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read all general teaching, worked examples and source-scope sections. Excluded personal-case sections. The following semantic requirements need canonical-owner review and independent verification of any new claims. The curriculum is a gap-discovery source, not assumed correct in every statement.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Read all general teaching, worked examples and source-scope sections. Excluded personal-case sections. The following semantic requirements need canonical-owner review and independent verification of any new claims. The curriculum is a gap-discovery source, not assumed correct in every statement. Chemical breadth follow-up: re-read the same pinned public lesson and verified the actual current canonical summaries, 46 scoped comparison observations and linked exact-species receipts. The breadth requirement has draft representation; broader ambiguous-prose inference remains a separate open adjacent requirement and release still requires product approval. No new source-page reading count is added for this recheck.",
         "sectionHashes": [
           "fd39e13020b9d673461075204c5eaf3ea8fbe347aae0889a2a25072b03cfb5c1",
           "f53180eed9f549580bb4be3fadfd90305b18fbfcb5ec1fad7e6a202d8e270f0f",
@@ -32433,35 +32443,80 @@
           {
             "id": "class-breadth",
             "requirement": "Represent established and emerging non-TOP1 payload mechanisms, retaining construct-specific development status and evidence limits.",
-            "status": "partial",
+            "status": "covered-draft",
             "evidence": [
               {
                 "recordId": "next-generation-adc-payloads",
                 "version": "draft-369",
                 "field": "summary",
                 "fieldSha256": "5c61537bd63d65d70b1d9d232fcb19df696354bd932a790bbfd0cfccccfef4fb",
-                "explanation": "Maps publicly described non-TOP1 mechanism families without assigning clinical benefit."
+                "explanation": "Maps named mechanisms and related delivery formats while retaining preclinical/early-clinical evidence and avoiding a post-TOP1 benefit claim."
               },
               {
-                "recordId": "exatecan",
+                "recordId": "transcription-inhibitor-payloads",
                 "version": "draft-369",
                 "field": "summary",
-                "fieldSha256": "c676d6ddfa2881d7afd50a686127e1dbfc75a90fd49c0e636cad4efbf1a980d3",
-                "explanation": "The existing exatecan id now owns a defined chemical, distinct from derivative systems; free-regimen evidence is scoped."
+                "fieldSha256": "f54503f5f3cc1a6bb60b72706d876a3efa2fb20b8afbdadb3ac58dce5cd32379",
+                "explanation": "Separates transcription targets, named constructs and tested cell-state scope from clinical benefit."
               },
               {
-                "recordId": "chk1-inhibitor-payloads",
-                "version": "proposal-therapeutic",
-                "field": "notes",
-                "fieldSha256": "0dca1c1688edda26fac06775f4fc2d75108d789f8b033f7124d13208d52e441b",
-                "explanation": "Existing CHK1 owner now retains the 2020 negative delivery experiment, 2026 construct and pair-screening distinction, and separately dosed clinical regimen."
+                "recordId": "ddr-inhibitor-payloads",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "15a03ff82d95b79d2ccaa20129c72c5543c7f2e395f857328ff7346bac167681",
+                "explanation": "Distinguishes a physically attached repair inhibitor and trial design from separately dosed combinations and proof of resistance reversal."
+              },
+              {
+                "recordId": "degrader-antibody-conjugate",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "e856f06780e37e42a99cd806396b668795cbfbf96da20bcd73d3ca0f880424f3",
+                "explanation": "Represents targeted degradation as a cargo strategy with its own mechanism and evidence limits."
+              },
+              {
+                "recordId": "immune-stimulating-adc",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "3bc07b566d90c698c33c427cdfb9fbf3146c672b333285d093fb4add18d9001b",
+                "explanation": "Represents immune agonist cargo independently of direct cytotoxic mechanisms."
+              },
+              {
+                "recordId": "tubulin-inhibitor-payloads",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "91b7b1276d53a46b8b0e4833037498307e265cb56b6fe1f641d257ee61276ad6",
+                "explanation": "Separates exact free drugs, attached components and catabolites within the shared tubulin mechanism."
+              },
+              {
+                "recordId": "af-hpa",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "f1478f87bc4c53c405bfab10b3643f2ec72e7a62bf6a3d289e1cf00b055b3567",
+                "explanation": "Retains AF-HPA versus auristatin F versus MMAF, preparation-specific loading and the earlier Fleximer-vinca distinction."
+              },
+              {
+                "recordId": "dm21-c-maytansinoid-system",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "394141461e8661c697f769bc3b4e8847c2afde0e85ef6c34269ff338d0348ffd",
+                "explanation": "Retains peptide-linked maytansinoid design, conference-only DM51 evidence and registry-versus-benefit limits."
+              },
+              {
+                "recordId": "chemical-observations-mmaf",
+                "version": "draft-369-376-chemical-consumers",
+                "field": "chemicalObservations",
+                "fieldSha256": "1d8767168f578a439147c9c96d51748b375f9b009da365fc31addce08baea797",
+                "explanation": "Actual current comparison/query contract retains free-MMAF versus cys-mcMMAF contexts, transporter endpoints and named loading."
+              },
+              {
+                "recordId": "chemical-observations-pbd-sg3199",
+                "version": "draft-369-376-chemical-consumers",
+                "field": "chemicalObservations",
+                "fieldSha256": "105c9c746032c3bdea048319d07097dcfe9769f3206240e37a3ccdebe0a194b3",
+                "explanation": "Retains SG3199 versus linked tesirine and coexisting label/cell-assay transporter findings with their methods and limits."
               }
             ],
-            "remaining": [
-              "CHK1 already has a cited draft owner, now supplemented with negative delivery evidence. Reconcile all remaining named family/subtype and legacy comparison properties against the exact chemical or construct before closing breadth.",
-              "Reconcile remaining legacy comparison profiles and exact derivative identities, including modular Ed-04/brengitecan inference. The exatecan owner is repaired in draft #369, but that does not repair every derivative or consumer.",
-              "An earlier review path was absent from the pinned public tree; its unverified provenance is excluded as evidence."
-            ]
+            "remaining": []
           },
           {
             "id": "released-exposure",
@@ -50720,8 +50775,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "Codex first-pass content audit; not an expert sign-off",
-        "checkedAt": "2026-11-08",
-        "rationale": "Read canonical data ownership and the actual modular inference rules. A corrected concept does not by itself repair consumer identity collapse. The resolved product follow-up is recorded at f5c50fd2732a6573bbd5d36d68a14cb7696fca8a; the finding remains partial because data-comparison and broader legacy-chemistry review are unfinished.",
+        "checkedAt": "2026-11-09",
+        "rationale": "Rechecked canonical summaries, 12 exact-species comparison owners, source-scoped observations and current modular inference boundaries. The comparison follow-up is represented in coordinated drafts, but this broader all-consumer finding remains partial because ambiguous legacy prose and clinical-causation shortcuts still need reconciliation.",
         "points": [
           {
             "id": "identity-and-consumers",
@@ -50734,11 +50789,41 @@
                 "field": "summary",
                 "fieldSha256": "c676d6ddfa2881d7afd50a686127e1dbfc75a90fd49c0e636cad4efbf1a980d3",
                 "explanation": "Existing owner now identifies exatecan, rather than treating DXd and all derivative systems as aliases."
+              },
+              {
+                "recordId": "af-hpa",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "f1478f87bc4c53c405bfab10b3643f2ec72e7a62bf6a3d289e1cf00b055b3567",
+                "explanation": "Retains AF-HPA versus auristatin F versus MMAF, preparation-specific loading and the earlier Fleximer-vinca distinction."
+              },
+              {
+                "recordId": "dm21-c-maytansinoid-system",
+                "version": "draft-369",
+                "field": "summary",
+                "fieldSha256": "394141461e8661c697f769bc3b4e8847c2afde0e85ef6c34269ff338d0348ffd",
+                "explanation": "Retains peptide-linked maytansinoid design, conference-only DM51 evidence and registry-versus-benefit limits."
+              },
+              {
+                "recordId": "chemical-observations-mmaf",
+                "version": "draft-369-376-chemical-consumers",
+                "field": "chemicalObservations",
+                "fieldSha256": "1d8767168f578a439147c9c96d51748b375f9b009da365fc31addce08baea797",
+                "explanation": "Actual current comparison/query contract retains free-MMAF versus cys-mcMMAF contexts, transporter endpoints and named loading."
+              },
+              {
+                "recordId": "chemical-observations-pbd-sg3199",
+                "version": "draft-369-376-chemical-consumers",
+                "field": "chemicalObservations",
+                "fieldSha256": "105c9c746032c3bdea048319d07097dcfe9769f3206240e37a3ccdebe0a194b3",
+                "explanation": "Retains SG3199 versus linked tesirine and coexisting label/cell-assay transporter findings with their methods and limits."
               }
             ],
             "remaining": [
-              "Remaining legacy comparison rows and chemical-family properties require exact-chemical and released-species verification.",
-              "Draft #376 corrects Ed-04/parent collapse and explicitly named legacy dual cargo; all ambiguous/novel legacy prose descriptions are not certified."
+              "The current modular payload-word/stem inference still needs a bounded census of family-to-exact-species mappings, including hemiasterlin, PBD, calicheamicin, duocarmycin, IGN and the PNU-159682 family assignment.",
+              "The generic prose DAR extractor rounds a parsed value; ranges and preparation-specific prose need reconciliation before certifying all legacy descriptions.",
+              "Existing product summaries outside this chemistry patch still contain unverified causal shortcuts, including T-DM1 bystander/clinical-comparison wording and other DM4/membrane claims. Correct each canonical owner with primary evidence and carry corrections into its consumers.",
+              "Draft #376 corrects Ed-04/parent collapse and explicitly named legacy dual cargo, but does not certify every ambiguous or novel prose description."
             ]
           }
         ]

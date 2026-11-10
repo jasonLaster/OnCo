@@ -12,14 +12,14 @@
     "approvalDependency": "Schema/library product changes require the repository product-approval workflow.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "95374f255e9dcaee8a63a9c50fe0d235e207a451",
+      "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
       "fields": [
         "RegulatoryClaimSchema",
         "DrugSchema.regulatoryClaims",
         "Assay.regulatoryClaims"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "285 files / 2833 tests, API generation and 52905-page webpack export; scoped consumer tests and legacy derivative/dual-cargo checks; 12 additional matched captures and five page/API/table routes; prior 20 hydrated scoped-panel checks retained.",
+      "validation": "Current standalone product checks: validate 22,683 entities, typecheck, lint (0 errors/7 pre-existing warnings), 286 files/2,838 tests passed with 2 skips. Actual temporary data/product integration retains 46 scoped observations in JSON and Markdown and structural endpoint requirements. No new production build or hydration/responsive/hosted-preview check for this follow-up. Earlier 52,905-page export and hydrated checks apply only to their recorded historical heads.",
       "remaining": [
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
@@ -44,14 +44,14 @@
     "approvalDependency": "Schema and ingestion/UI changes need scoped product review; source data must not be fabricated.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "95374f255e9dcaee8a63a9c50fe0d235e207a451",
+      "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
       "fields": [
         "TrialParticipationSchema.facilities",
         "TrialParticipationSchema.cohortObservations",
         "TrialParticipationSchema.responseStudySha256"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "285 files / 2833 tests, API generation and 52905-page webpack export; scoped consumer tests and legacy derivative/dual-cargo checks; 12 additional matched captures and five page/API/table routes; prior 20 hydrated scoped-panel checks retained.",
+      "validation": "Current standalone product checks: validate 22,683 entities, typecheck, lint (0 errors/7 pre-existing warnings), 286 files/2,838 tests passed with 2 skips. Actual temporary data/product integration retains 46 scoped observations in JSON and Markdown and structural endpoint requirements. No new production build or hydration/responsive/hosted-preview check for this follow-up. Earlier 52,905-page export and hydrated checks apply only to their recorded historical heads.",
       "remaining": [
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
@@ -75,13 +75,13 @@
     "approvalDependency": "Schema and diagram-rendering changes require the product-approval workflow; a prose interpretation boundary is included now.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "95374f255e9dcaee8a63a9c50fe0d235e207a451",
+      "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
       "fields": [
         "PathwayEdgeSchema.evidence",
         "PathwayDiagramInteractive evidence disclosure"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "285 files / 2833 tests, API generation and 52905-page webpack export; scoped consumer tests and legacy derivative/dual-cargo checks; 12 additional matched captures and five page/API/table routes; prior 20 hydrated scoped-panel checks retained.",
+      "validation": "Current standalone product checks: validate 22,683 entities, typecheck, lint (0 errors/7 pre-existing warnings), 286 files/2,838 tests passed with 2 skips. Actual temporary data/product integration retains 46 scoped observations in JSON and Markdown and structural endpoint requirements. No new production build or hydration/responsive/hosted-preview check for this follow-up. Earlier 52,905-page export and hydrated checks apply only to their recorded historical heads.",
       "remaining": [
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
@@ -106,14 +106,14 @@
     "approvalDependency": "Drug schema, format decomposition and any display changes need a concrete product proposal and owner review.",
     "proposal": {
       "url": "https://github.com/judegomila/OnCo/pull/376",
-      "head": "95374f255e9dcaee8a63a9c50fe0d235e207a451",
+      "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
       "fields": [
         "DrugSchema.conjugateComposition",
         "ConjugateCompositionSchema",
         "PayloadComponentSchema"
       ],
       "state": "Open draft; not merged or deployed",
-      "validation": "285 files / 2833 tests, API generation and 52905-page webpack export; scoped consumer tests and legacy derivative/dual-cargo checks; 12 additional matched captures and five page/API/table routes; prior 20 hydrated scoped-panel checks retained.",
+      "validation": "Current standalone product checks: validate 22,683 entities, typecheck, lint (0 errors/7 pre-existing warnings), 286 files/2,838 tests passed with 2 skips. Actual temporary data/product integration retains 46 scoped observations in JSON and Markdown and structural endpoint requirements. No new production build or hydration/responsive/hosted-preview check for this follow-up. Earlier 52,905-page export and hydrated checks apply only to their recorded historical heads.",
       "remaining": [
         "Maintainer issue triage and requested review",
         "Owner approval under PRODUCT-APPROVAL.md",
@@ -140,5 +140,38 @@
       "https://pubmed.ncbi.nlm.nih.gov/25208879/",
       "https://pubmed.ncbi.nlm.nih.gov/32406563/"
     ]
+  },
+  {
+    "id": "chemical-property-observations",
+    "status": "implemented draft with locally verified consumers; owner approval and hosted preview pending",
+    "question": "Can readers and queries retain coexisting observations for an exact free, attached or released chemical species, a defined experimental endpoint, transporter and named conjugate, while distinguishing missing data from a negative result?",
+    "currentFields": [
+      "src/data/payloads.ts:Payload.chemicalObservations",
+      "src/lib/schema.ts:TermSchema.chemicalObservations"
+    ],
+    "finding": "The baseline comparison used an unqualified permeability boolean, efflux grade and approximate loading. Its canonical Term schema discarded source-scoped chemical observations. Family-level summaries cannot substitute for a measured species, assay or construct.",
+    "needed": "Optional source-scoped observations retaining species, property, context, method, statement, evidence type, sources and dates; transporter endpoints require transporters, loading endpoints require a conjugate. Preserve conflicting or coexisting contexts, range wording and unknown values through actual consumers.",
+    "approvalDependency": "Product owner approval and accessible hosted review remain required. Release requires coordinated data PR369 and product PR376; data-only comparison and canonical schema do not expose these observations.",
+    "proposal": {
+      "url": "https://github.com/judegomila/OnCo/pull/376",
+      "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
+      "fields": [
+        "ChemicalPropertyObservationSchema",
+        "TermSchema.chemicalObservations",
+        "queryChemicalObservations",
+        "ChemicalEvidence",
+        "payload comparison and glossary readers",
+        "Ask/search passages",
+        "JSON/Markdown/OpenAPI exports"
+      ],
+      "state": "Open draft; not merged or deployed",
+      "validation": "46 observations across 12 chemical owners; 65 canonical owners and comparison page rendered in matched before/after states (66 each); actual JSON and Markdown generation checked for all 65 owners; loading/transporter structural requirements survive schema export; combined typecheck passed. Product full suite: 286 files/2,838 tests, 2 skips.",
+      "remaining": [
+        "Owner approval under PRODUCT-APPROVAL.md",
+        "Upstream-accessible hosted preview and visual review for the current follow-up",
+        "Coordinated data/product integration before release"
+      ],
+      "consumerVerification": "payload-chemical-species-2026-11-09/scope.json and immutable public receipts in data PR369 and product PR376"
+    }
   }
 ]

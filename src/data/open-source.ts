@@ -164,14 +164,6 @@ export const OPEN_SOURCE_SKIPPED: Array<{ name: string; reason: string }> = [
   {
     "name": "DeepLIIF",
     "reason": "Its licence is Apache 2.0 with the Commons Clause, and the README limits it to non-commercial academic purposes; not an open-source licence (read 4 November 2026)."
-  },
-  {
-    "name": "paquo",
-    "reason": "GitHub API returned 404 for Bayer-Group/paquo on 2026-11-10; not recorded."
-  },
-  {
-    "name": "tiffslide",
-    "reason": "GitHub API returned 404 for Bayer-Group/tiffslide on 2026-11-10; not recorded."
   }
 ];
 
@@ -9992,6 +9984,36 @@ export const openSourceProjects: OpenSourceProject[] = [
     }
   },
   {
+    "id": "paquo",
+    "name": "paquo",
+    "summary": "Bayer's Python interface to QuPath projects and annotations.",
+    "description": "PAthological QUpath Obsession - QuPath and Python conversations",
+    "category": "pathology",
+    "licence": "GPL-3.0",
+    "language": "Python",
+    "repo": "https://github.com/Bayer-Group/paquo",
+    "maintainer": "Bayer",
+    "maintainerId": "bayer",
+    "since": 2020,
+    "lastCommit": "2026-04-30",
+    "stars": 138,
+    "cancers": [],
+    "targets": [],
+    "technologies": [
+      "digital-pathology-ai"
+    ],
+    "dataSources": [],
+    "collections": [],
+    "openness": "open-code",
+    "oncology": true,
+    "source": {
+      "url": "https://api.github.com/repos/Bayer-Group/paquo",
+      "status": 200,
+      "fetched": "2026-11-05"
+    },
+    "opennessNote": "Published on PyPI; the GitHub repository (Bayer-Group/paquo) returned 404 on 10 November 2026, so the catalogue keeps its last good record."
+  },
+  {
     "id": "patchcamelyon",
     "name": "PatchCamelyon (PCam)",
     "summary": "A benchmark of 327,680 small image patches cut from lymph-node slides, each labelled for whether metastatic tissue is present, sized so a model can be trained on a single GPU.",
@@ -13086,6 +13108,38 @@ export const openSourceProjects: OpenSourceProject[] = [
       "status": 200,
       "fetched": "2026-11-10"
     }
+  },
+  {
+    "id": "tiffslide",
+    "name": "tiffslide",
+    "summary": "Bayer's drop-in replacement for openslide-python, reading whole-slide images (including from cloud storage) with tifffile.",
+    "description": "TiffSlide - cloud native openslide-python replacement based on tifffile",
+    "category": "pathology",
+    "licence": "BSD-3-Clause",
+    "licenceNote": "GitHub reports no SPDX id; the LICENSE file is the New BSD (three-clause) licence, copyright Bayer AG.",
+    "language": "Python",
+    "repo": "https://github.com/Bayer-Group/tiffslide",
+    "maintainer": "Bayer",
+    "maintainerId": "bayer",
+    "since": 2021,
+    "lastCommit": "2026-07-03",
+    "stars": 107,
+    "doi": "10.5281/zenodo.6327079",
+    "cancers": [],
+    "targets": [],
+    "technologies": [
+      "whole-slide-scanners"
+    ],
+    "dataSources": [],
+    "collections": [],
+    "openness": "open-code",
+    "oncology": true,
+    "source": {
+      "url": "https://api.github.com/repos/Bayer-Group/tiffslide",
+      "status": 200,
+      "fetched": "2026-11-05"
+    },
+    "opennessNote": "Published on PyPI; the GitHub repository (Bayer-Group/tiffslide) returned 404 on 10 November 2026, so the catalogue keeps its last good record."
   },
   {
     "id": "titan",

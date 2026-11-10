@@ -56,6 +56,7 @@ import { cellsForDrug as recoveryCellsForDrug } from "@/data/recovery-matrix";
 import { AccessTable } from "./AccessTable";
 import { RegulatoryTimeline } from "./RegulatoryTimeline";
 import { ConjugateComposition, RegulatoryClaims } from "./ScopedEvidence";
+import { ChemicalEvidence } from "./ChemicalEvidence";
 import { SeeItInAction } from "./SeeItInAction";
 import { modalityGroup } from "@/lib/modality-group";
 import { TldrText } from "./TldrText";
@@ -466,7 +467,7 @@ function kindTabs(e: Entity): Tab[] {
         { id: "interventions", label: "How drugs attack it", count: e.interventions.length, content: <Bullets items={e.interventions} linked={(t) => withTermHovers(t, { skipId: e.id })} /> },
       ];
     case "term":
-      return [overview(<><div className="mt-8"><TermVisualPanel term={e} /></div><ReadoutsForTerm termId={e.id} /><div className="mt-6"><Field label="Category"><Link className="underline" href={`/terms/?category=${encodeURIComponent(e.category)}`}>{e.category}</Link></Field></div></>)];
+      return [overview(<><div className="mt-8"><TermVisualPanel term={e} /></div><ReadoutsForTerm termId={e.id} />{!!e.chemicalObservations?.length && <ChemicalEvidence id={e.id} name={e.name} observations={e.chemicalObservations} />}<div className="mt-6"><Field label="Category"><Link className="underline" href={`/terms/?category=${encodeURIComponent(e.category)}`}>{e.category}</Link></Field></div></>)];
     case "trial":
       return [
         overview(<div className="grid *:min-w-0 gap-6 sm:grid-cols-2 mt-8">

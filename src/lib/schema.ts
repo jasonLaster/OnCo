@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { EVIDENCE_TIERS, KINDS, MACHINE_FAMILIES, STATUSES, TARGET_DISTRIBUTIONS, TARGET_ROLES, TARGET_SPECIFICITIES } from "./kinds";
 import { DATE_PRECISIONS, YEAR_EVENT_GROUPS } from "./year-groups";
-import { ConjugateCompositionSchema, MechanismEvidenceSchema, RegulatoryClaimSchema, TrialCohortObservationSchema, TrialFacilitySchema } from "./scoped-evidence";
+import { ChemicalPropertyObservationSchema, ConjugateCompositionSchema, MechanismEvidenceSchema, RegulatoryClaimSchema, TrialCohortObservationSchema, TrialFacilitySchema } from "./scoped-evidence";
 
 export { KINDS, STATUSES, REL_FIELDS, KIND_META, PHASE_ORDER, routeFor, phaseLabel, normalisePhaseLabel, TARGET_ROLES, TARGET_ROLE_LABEL, EVIDENCE_TIERS, EVIDENCE_TIER_LABEL, TARGET_SPECIFICITIES, TARGET_SPECIFICITY_LABEL, TARGET_DISTRIBUTIONS, TARGET_DISTRIBUTION_LABEL } from "./kinds";
 export type { Kind, Status, RelField, TargetRole, EvidenceTier, TargetSpecificity, TargetDistribution } from "./kinds";
@@ -343,6 +343,7 @@ export const PathwaySchema = Base.extend({
 export const TermSchema = Base.extend({
   kind: z.literal("term"),
   category: z.string(),
+  chemicalObservations: z.array(ChemicalPropertyObservationSchema).optional(),
   /**
    * Date English Wikipedia was last searched for this term and found to have no article about it (title or redirect
    * matching the name or an alias, medical sense). Set by scripts/fetch-term-wikipedia.ts for its SKIP list; the

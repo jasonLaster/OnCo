@@ -447,7 +447,10 @@ function tMechanism(c: Ctx, r: AskEntityRecord): boolean {
     }
     case "pathway": c.b.add(s, e.analogy, "analogy"); for (const x of first(e.summary, 1)) c.b.add(s, x, "summary"); for (const x of e.interventions?.slice(0, 2) ?? []) c.b.add(s, x, "interventions"); for (const p of scopedEvidencePassages(e).slice(0, 2)) c.b.add(s, p.text, p.field); return true;
     case "target": c.b.add(s, e.biology, "biology"); for (const x of first(e.summary, 1)) c.b.add(s, x, "summary"); return true;
-    case "term": for (const x of first(e.summary, 2)) c.b.add(s, x, "summary"); return true;
+    case "term":
+      for (const x of first(e.summary, 2)) c.b.add(s, x, "summary");
+      for (const observation of scopedEvidencePassages(e)) c.b.add(s, observation.text, observation.field);
+      return true;
     default: return false;
   }
 }

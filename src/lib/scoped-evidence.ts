@@ -65,6 +65,34 @@ export const MechanismEvidenceSchema = SourceObservationSchema.extend({
 export type MechanismEvidence = z.infer<typeof MechanismEvidenceSchema>;
 
 const chemicalIdentity = z.object({ name: nonempty, entityId: entityId.optional() });
+/** A result belongs to the tested species and method. Loading additionally names the whole conjugate. */
+const ChemicalObservationBaseSchema = SourceObservationSchema.extend({
+  species: chemicalIdentity,
+  conjugate: chemicalIdentity.optional(),
+  context: nonempty,
+  method: nonempty,
+  statement: nonempty,
+  evidenceType: z.enum(["experimental", "label-stated", "conference-abstract"]),
+  limitation: nonempty.optional(),
+});
+// Structural alternatives also preserve the required endpoint context in the exported JSON Schema.
+export const ChemicalPropertyObservationSchema = z.discriminatedUnion("property", [
+  ChemicalObservationBaseSchema.extend({
+    property: z.enum(["chemical-identity", "release", "membrane-access", "bystander-killing"]),
+    transporters: z.never().optional(),
+  }),
+  ChemicalObservationBaseSchema.extend({
+    property: z.enum(["transporter-substrate", "transporter-inhibition"]),
+    transporters: z.array(nonempty).min(1),
+  }),
+  ChemicalObservationBaseSchema.extend({
+    property: z.literal("conjugate-loading"),
+    conjugate: chemicalIdentity,
+    transporters: z.never().optional(),
+  }),
+]);
+export type ChemicalPropertyObservation = z.infer<typeof ChemicalPropertyObservationSchema>;
+
 export const PayloadLoadingObservationSchema = SourceObservationSchema.extend({
   quantity: z.literal("mean-count-per-antibody"),
   value: z.number().finite().nonnegative(),

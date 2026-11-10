@@ -17,11 +17,11 @@ export const LINE_LABEL: Record<Line, string> = {
 
 /** Biomarker subgroups recognised in setting text, longest pattern first so "HER2-low" wins over "HER2". */
 const SUBGROUPS: Array<[RegExp, string]> = [
-  [/her2[- ]low|her2[- ]ultralow/i, "HER2-low"], [/her2[- ]?(positive|\+|amplified|mutant)|her2\b/i, "HER2"], [/hr[- ]?(positive|\+)|er[- ]?(positive|\+)|hormone[- ]receptor|endocrine/i, "HR-positive"], [/triple[- ]negative|tnbc/i, "Triple-negative"],
-  [/egfr exon 20|exon 20/i, "EGFR exon 20"], [/egfr/i, "EGFR"], [/\balk\b/i, "ALK"], [/ros1/i, "ROS1"], [/kras ?g12c/i, "KRAS G12C"], [/kras|\bras\b/i, "RAS"], [/braf/i, "BRAF"], [/\bret\b/i, "RET"], [/\bmet\b/i, "MET"], [/ntrk/i, "NTRK"], [/nrg1/i, "NRG1"],
-  [/msi|dmmr|mismatch|microsatellite/i, "MSI-H / dMMR"], [/pmmr|microsatellite[- ]stable|\bmss\b/i, "pMMR / MSS"], [/pd-?l1|cps|tps/i, "PD-L1"], [/tmb/i, "TMB-high"],
-  [/brca|hrd|homologous/i, "BRCA / HRD"], [/pik3ca|akt|pten/i, "PIK3CA / AKT / PTEN"], [/esr1/i, "ESR1"], [/fgfr/i, "FGFR"], [/idh/i, "IDH"], [/flt3/i, "FLT3"], [/npm1/i, "NPM1"], [/kmt2a|menin/i, "KMT2A"], [/ph[- ]?positive|bcr::abl|bcr-abl/i, "Ph-positive"], [/del\(17p\)|tp53/i, "TP53 / del(17p)"], [/ighv/i, "IGHV"],
-  [/cldn18|claudin/i, "Claudin 18.2"], [/fr[αa]|folate receptor/i, "FRα"], [/psma/i, "PSMA"], [/dll3/i, "DLL3"], [/mgmt/i, "MGMT"], [/hpv|p16/i, "HPV"], [/castration[- ]resistant|crpc|mcrpc/i, "Castration-resistant"], [/hormone[- ]sensitive|castration[- ]sensitive|mhspc|mcspc/i, "Hormone-sensitive"],
+  [/her2[- ]low|her2[- ]ultralow/i, "HER2-low"], [/her2[- ]?(positive|\+|amplified|mutant)|her2\b/i, "HER2"], [/\bhr[- ]?(positive|\+)|\ber[- ]?(positive|\+)|hormone[- ]receptor|\bendocrine/i, "HR-positive"], [/triple[- ]negative|tnbc/i, "Triple-negative"],
+  [/egfr exon 20|exon 20/i, "EGFR exon 20"], [/\begfr/i, "EGFR"], [/\balk\b/i, "ALK"], [/\bros1/i, "ROS1"], [/kras ?g12c/i, "KRAS G12C"], [/kras|\bras\b/i, "RAS"], [/\bbraf/i, "BRAF"], [/\bret\b/i, "RET"], [/\bmet\b/i, "MET"], [/ntrk/i, "NTRK"], [/nrg1/i, "NRG1"],
+  [/\bmsi\b|msi-h|\bdmmr|mismatch|microsatellite/i, "MSI-H / dMMR"], [/pmmr|microsatellite[- ]stable|\bmss\b/i, "pMMR / MSS"], [/pd-?l1|\bcps\b|\btps\b/i, "PD-L1"], [/\btmb\b/i, "TMB-high"],
+  [/brca|\bhrd\b|homologous/i, "BRCA / HRD"], [/pik3ca|\bakt\d?\b|\bpten\b/i, "PIK3CA / AKT / PTEN"], [/\besr1\b/i, "ESR1"], [/\bfgfr/i, "FGFR"], [/\bidh/i, "IDH"], [/flt3/i, "FLT3"], [/npm1/i, "NPM1"], [/kmt2a|\bmenin\b/i, "KMT2A"], [/ph[- ]?positive|bcr::abl|bcr-abl/i, "Ph-positive"], [/del\(17p\)|tp53/i, "TP53 / del(17p)"], [/ighv/i, "IGHV"],
+  [/cldn18|claudin/i, "Claudin 18.2"], [/fr[αa]|folate receptor/i, "FRα"], [/psma/i, "PSMA"], [/dll3/i, "DLL3"], [/mgmt/i, "MGMT"], [/hpv|\bp16\b/i, "HPV"], [/castration[- ]resistant|crpc|mcrpc/i, "Castration-resistant"], [/hormone[- ]sensitive|castration[- ]sensitive|mhspc|mcspc/i, "Hormone-sensitive"],
   [/germline/i, "Germline"], [/imdc|favourable risk|intermediate.*poor|poor risk/i, "IMDC risk"], [/children|paediatric|pediatric|infant|adolescent/i, "Age group"], [/unfit|frail|elderly|older|over 7\d/i, "Unfit / older"], [/high[- ]risk|standard[- ]risk|low[- ]risk|intermediate[- ]risk|very[- ]low/i, "Risk group"], [/\bfit\b/i, "Fit"],
 ];
 

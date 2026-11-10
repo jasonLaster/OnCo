@@ -293,7 +293,7 @@ export const simpleJ: Record<string, string> = {
   "nephrectomy": "A nephrectomy removes a kidney or just the tumour-bearing part of it, with the partial operation preferred for small tumours because it preserves kidney function.",
   "mastectomy": "A mastectomy removes the whole breast, done to treat cancer or to prevent it in women with a very high inherited risk.",
   "lumpectomy": "A lumpectomy removes only the tumour with a rim of normal breast and keeps the breast, almost always followed by radiotherapy.",
-  "sentinel-lymph-node-biopsy": "Sentinel node biopsy finds and removes the first one or two lymph nodes a tumour drains to, checking for spread without removing all the nodes.",
+
   "lymphadenectomy": "A lymphadenectomy is surgically removing the lymph nodes that drain a tumour, both to stage the cancer and to clear any spread.",
   "gastrectomy": "A gastrectomy removes part or all of the stomach for stomach cancer, with the bowel then joined to whatever remains.",
   "colectomy": "A colectomy removes the part of the colon containing the cancer along with its blood supply and lymph nodes, then joins the ends back together.",
@@ -357,7 +357,7 @@ export const simpleJ: Record<string, string> = {
   "tumour-differentiation": "Tumour differentiation is how much cancer cells still resemble the normal tissue they came from, with poorly differentiated tumours having lost their identity and behaving aggressively.",
   "dysplasia": "Dysplasia is abnormal-looking cells in a surface lining that are not yet cancer but on the way, and removing them is how screening prevents cancer.",
   "carcinoma-in-situ": "Carcinoma in situ is cancer cells filling the lining layer where they started without breaking through into the tissue beneath, so they cannot yet spread.",
-  "dcis": "Ductal carcinoma in situ is breast cancer cells confined inside the milk ducts, usually found by mammography and not life-threatening itself, though some would progress if left.",
+
   "pd-l1-testing": "PD-L1 testing is a stain on the tumour biopsy measuring how much of the do-not-attack-me protein is present, which helps predict whether immunotherapy will work.",
   "hormone-receptor-status": "Hormone receptor status shows whether a breast cancer carries receptors for oestrogen and progesterone, meaning the cancer is fed by hormones and can be treated by blocking them.",
   "her2-positive": "HER2-positive means a cancer has too much HER2 growth protein or extra copies of its gene, once the most aggressive breast cancer and now among the most treatable.",

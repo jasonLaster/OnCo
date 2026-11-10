@@ -398,8 +398,8 @@ export const tldr_es: Record<string, string> = {
   os: "Cuánto tiempo viven los pacientes, sin más. El criterio de referencia.",
   efs: "En cáncer temprano: cuánto tiempo permanecen los pacientes libres de recaída, progresión o muerte.",
   "hazard-ratio": "Un número que compara la tasa de eventos adversos en dos grupos. 0,5 significa que el riesgo se reduce a la mitad en cualquier momento.",
-  pcr: "No queda cáncer invasivo en la mama ni en los ganglios cuando el cirujano extrae el tejido tras el tratamiento previo a la cirugía.",
-  rcb: "Una puntuación de cuánto cáncer queda tras el tratamiento previo a la cirugía, de 0 (nada) a III (mucho).",
+
+
   ppv: "Si una prueba dice 'cáncer', la probabilidad de que tenga razón.",
   "stage-shift": "Encontrar más cánceres pronto y menos tarde. El objetivo medible del cribado.",
   suv: "Un número que indica cuánto brilla un punto en un PET.",
@@ -442,7 +442,7 @@ export const tldr_es: Record<string, string> = {
   "alpha-vs-beta": "Las partículas beta (lutecio-177) recorren milímetros y sirven para enfermedad voluminosa; las alfa (actinio-225) recorren pocas células y matan con mucha más energía.",
   dosimetry: "Medir cuánta dosis de radiación recibió realmente cada órgano y tumor de un fármaco radiactivo.",
   "germline-vs-somatic": "Las mutaciones germinales se heredan y están en todas las células; las somáticas surgen solo en el tumor.",
-  "tnm-staging": "El sistema universal que describe el tamaño del tumor (T), la extensión ganglionar (N) y la metástasis a distancia (M).",
+
   "cold-vs-hot": "Los tumores 'calientes' están llenos de células inmunitarias y responden a la inmunoterapia; los 'fríos' han mantenido fuera al sistema inmunitario.",
   "adc-sequencing": "La pregunta abierta de si un segundo ADC funciona tras fallar el primero, sobre todo cuando ambos llevan el mismo tipo de carga.",
 
@@ -2717,7 +2717,7 @@ export const tldr_es: Record<string, string> = {
   "david-porter": "Trató a los primeros pacientes adultos con LLC mediante CAR-T y comunicó una década de remisiones duraderas.",
   "dawna-1": "El ensayo que convirtió a dalpiciclib en el primer inhibidor de CDK4/6 chino aprobado, al más que duplicar el tiempo hasta la progresión del cáncer de mama cuando se añadió a fulvestrant.",
   "day-one-biopharmaceuticals": "Empresa oncológica centrada primero en pediatría cuyo tovorafenib se convirtió en la primera terapia dirigida para el glioma de bajo grado infantil.",
-  dcis: "Células de cáncer de mama confinadas dentro de los conductos galactóforos, detectadas sobre todo por mamografía en forma de calcificaciones. No es mortal en sí mismo, pero alrededor de un tercio progresaría a cáncer invasivo si no se tratara.",
+
   "dcruz-anil": "Dirigió el ensayo del Tata Memorial que zanjó una pregunta de décadas, al demostrar que extirpar los ganglios linfáticos del cuello en la primera operación por cáncer oral temprano salva vidas.",
   "deauville-score": "Una puntuación de 1 a 5 de cuán brillante se ve un linfoma en la PET en comparación con el hígado; 1-3 se considera respuesta metabólica completa.",
   "deb-schrag": "Dirigió PATHFINDER, el primer estudio prospectivo de un análisis de sangre multicáncer en la práctica, y el ensayo PROSPECT de cáncer de recto.",
@@ -3413,7 +3413,7 @@ export const tldr_es: Record<string, string> = {
   "secondary-malignancy": "Un cáncer nuevo y distinto causado por el tratamiento del primero: leucemia tras quimioterapia con alquilantes o inhibidores de PARP, tumores sólidos en tejido irradiado décadas después y, raramente, linfoma de células T tras CAR-T. Es raro por paciente, pero importa sobre todo a quienes se curan jóvenes.",
   selinexor: "Selinexor es una pastilla primera de su clase que atrapa las proteínas supresoras de tumores dentro del núcleo; aprobado en mieloma, fracasó en su prueba en cáncer de endometrio en 2026.",
   selumetinib: "Selumetinib (Koselugo) es el primer medicamento para niños y adultos con neurofibromatosis tipo 1 cuyos neurofibromas plexiformes, tumores nerviosos benignos pero desfigurantes y dolorosos, no pueden extirparse mediante cirugía.",
-  "sentinel-lymph-node-biopsy": "Localizar y extirpar el primer ganglio linfático o los dos primeros a los que drena un tumor, para ver si el cáncer se ha extendido, en lugar de extirpar toda la cadena ganglionar.",
+
   severance: "El Severance Hospital alberga el Yonsei Cancer Center y el primer centro de terapia con iones pesados (carbono) de Corea (2023).",
   "sherry-lansing": "La exdirectora de Paramount cofundó Stand Up To Cancer, cuyos especiales televisados y Dream Teams han comprometido más de 800 millones de dólares para investigación colaborativa que contribuyó a varios fármacos oncológicos aprobados.",
   "sibylle-loibl": "Dirige el German Breast Group, cuyos ensayos GeparX definieron la quimioterapia y la inmunoterapia neoadyuvantes en el cáncer de mama.",

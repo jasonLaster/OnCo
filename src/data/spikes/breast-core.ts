@@ -161,16 +161,81 @@ const SRC = {
 // ======================= TERMS =======================
 /** The ten things the breast glossary did not say, written once for the whole family. */
 export const breastCoreTerms: TermInput[] = [
-  { id: "terminal-duct-lobular-unit", kind: "term", asOf, name: "Ducts, lobules and the terminal duct lobular unit", category: "Anatomy", wikipedia: W("Terminal_duct_lobular_unit"),
+  { id: "terminal-duct-lobular-unit", kind: "term", asOf: "2026-11-10", name: "Ducts, lobules and the terminal duct lobular unit", category: "Anatomy", wikipedia: W("Terminal_duct_lobular_unit"),
     aka: ["terminal duct lobular unit", "TDLU", "ducts and lobules", "milk ducts", "lobule", "breast lobule", "breast duct", "ductal", "lobular", "breast anatomy", "mammary gland"],
-    tldr: "The breast is a tree: fifteen to twenty branching duct systems, each ending in a cluster of milk-making sacs called a lobule. Almost every breast cancer starts at the junction between the smallest ducts and their lobule, which is why the two commonest kinds are called ductal and lobular.",
-    summary: "Each breast holds fifteen to twenty lobes, and each lobe is a branching system of ducts that ends in lobules, the grape-like clusters of acini that make milk. The junction where the smallest duct meets its lobule is the terminal duct lobular unit, and it is where almost all breast carcinoma and almost all of the benign lesions that mimic it arise. The rest of the breast is fat, fibrous tissue and skin, with lymphatic channels that drain mostly to the axilla and, from the inner part of the breast, to the internal mammary chain behind the ribs, which is why the armpit is examined and scanned at the first appointment.\n\nThe names of the two commonest types come from this anatomy, but they are misleading in an instructive way. Invasive carcinoma of no special type, still widely called invasive ductal carcinoma, does not arise in the large ducts, and invasive lobular carcinoma does not arise in the lobules: both begin in the terminal duct lobular unit, and the words describe what the tumour looks like down the microscope rather than where it started. The real difference is E-cadherin, the protein that glues cells to their neighbours. Lobular cancers have lost it, so they infiltrate in single files rather than forming a mass, which is why they are harder to feel, harder to see on a mammogram and harder to measure before surgery.\n\nMen have ducts too, and a small amount of breast tissue behind the nipple, but generally lack the terminal lobules, which is the reason the male breast cancer page gives for male breast cancer being almost always of no special type and lobular carcinoma in a man being very rare. The breast changes throughout life: it is densest in young women, involutes after the menopause, and density itself both raises risk and hides cancers on a mammogram.",
+    tldr: "Breast ducts connect to milk-producing acini, with supporting tissues around them. This anatomy helps interpret a sample but does not by itself establish cancer.",
+    summary: "The breast contains an interconnected duct-lobular epithelial system within connective and fatty tissue. A terminal duct with its associated acini forms a terminal duct lobular unit. Tissue compartments and their proportions matter when interpreting imaging, microscopy or bulk molecular measurements. Histological diagnosis, grade, receptor status and disease extent require their own evidence.\n\nNCI DCEG describes the TDLU as the origin of most breast cancer precursors and cancers. The names ductal and lobular are diagnostic morphology, not proof of an exact ancestral cell. Characteristic loss of E-cadherin in invasive lobular carcinoma reduces cell adhesion; diffuse growth in unconnected lines can make a lesion harder to feel or detect on imaging. The SEER description concerns this growth pattern rather than a universal test result for every lobular tumour.\n\nMale breasts have ducts and may have lobules, but far fewer than female breasts; NCI describes lobular cancer as rare in men. Breast tissue and mammographic density change over life. Greater density is associated with higher breast-cancer risk and can obscure cancers on a mammogram; increasing age and childbearing are associated with lower density, alongside other influences. Mammographic density, TDLU involution and histological diagnosis are different observations.",
     cancers: ["breast-cancer", "invasive-breast-carcinoma-no-special-type", "invasive-lobular-carcinoma", "male-breast-cancer"],
     terms: ["who-breast-classification", "carcinoma-in-situ", "lymph-node-status"],
-    related: ["carcinoma-in-situ", "lymph-node-status", "mammography", "sentinel-lymph-node-biopsy"],
+    related: [
+  "carcinoma-in-situ",
+  "lymph-node-status",
+  "mammography",
+  "sentinel-lymph-node-biopsy",
+  "myoepithelial-cells-and-basement-membrane",
+  "lymphatic-drainage-and-axilla"
+],
     sections: ["diagnostics"],
-    links: [SRC.who5, SRC.crukTypes, SRC.g148],
+    links: [
+  {
+    "label": "Tan et al., Histopathology 2020: the 2019 WHO classification of tumours of the breast (5th edition)",
+    "url": "https://doi.org/10.1111/his.14091"
   },
+  {
+    "label": "Cancer Research UK: types of breast cancer",
+    "url": "https://www.cancerresearchuk.org/about-cancer/breast-cancer/types"
+  },
+  {
+    "label": "Royal College of Pathologists G148: dataset for histopathological reporting of breast disease in surgical excision specimens of breast cancer, version 3, November 2024 (full review due November 2026)",
+    "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+  },
+  {
+    "label": "UBC pathology: Cytodiagnosis of Breast Lesions, normal breast histology, page 22",
+    "url": "https://file.pathology.ubc.ca/BreastCytoBook.pdf"
+  },
+  {
+    "label": "NCI DCEG: terminal duct lobular unit involution",
+    "url": "https://dceg.cancer.gov/research/cancer-types/breast-cancer/tdlu-involution-with-komen"
+  },
+  {
+    "label": "NCI SEER mammary gland anatomy",
+    "url": "https://training.seer.cancer.gov/anatomy/reproductive/female/glands.html"
+  },
+  {
+    "label": "A spatially resolved single-cell genomic atlas of the adult human breast.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37380767/"
+  },
+  {
+    "label": "Normal and tumor-derived myoepithelial cells differ in their ability to interact with luminal breast epithelial cells for polarity and basement membrane deposition.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11801722/"
+  },
+  {
+    "label": "NCI DCIS: ductal boundary and invasion",
+    "url": "https://www.cancer.gov/types/breast/breast-cancer-types/dcis"
+  },
+  {
+    "label": "NCI male breast cancer anatomy",
+    "url": "https://www.cancer.gov/types/breast/male-breast-cancer"
+  },
+  {
+    "label": "NCI dense breasts",
+    "url": "https://www.cancer.gov/types/breast/screening/dense-breasts"
+  },
+  {
+    "label": "SEER invasive lobular carcinoma",
+    "url": "https://seer.cancer.gov/statfacts/html/ilc.html"
+  }
+],
+
+"notes": [
+  "The terminal duct lobular unit contains a terminal duct and its associated acini. Acini make milk during lactation; ducts carry it towards the nipple. Lobules and larger lobes are different levels of organisation. Their size and abundance vary with physiology and life stage; an illustrative branch count is not a fixed anatomical count. A schematic grouping bracket is an annotation, not a tissue capsule or basement membrane. NCI DCEG describes TDLU involution with physiological ageing and completion of childbearing as reductions in acini per unit and total unit counts. This is an observational normal-tissue description, not a diagnostic rule for an individual.",
+  "From a typical normal acinus lumen outward, distinguish luminal epithelial cells, living myoepithelial cells, extracellular basement membrane and surrounding stroma. Stroma includes connective tissue, fat, vessels and immune cells. A basement membrane is neither a cell layer nor the plasma membrane around one cell.",
+  "An epithelial marker or abundant epithelial RNA can come from normal epithelium. A sample richer in glands and poorer in stroma can change a bulk measurement without a change within either cell type. Imaging, tissue morphology and protein staining observe different scales; a normal-breast atlas is a reference, not a stand-alone cancer diagnosis.",
+  "A quadrant or clock position locates a lesion. It does not identify its ancestral cell, receptor class or invasiveness. Likewise, ductal and lobular diagnostic names do not prove the precise ancestral location, and anatomical luminal position does not assign a molecular luminal subtype. A milk-flow diagram is not a cancer-progression sequence.",
+  "Ducts are epithelium-lined channels connected to milk-producing acini in lobules. The TDLU is a tissue unit, not one cell or a molecular subtype. Epithelial tissue can be normal, in situ or invasive: DCIS remains within the ductal boundary, whereas invasion enters surrounding tissue. In a fictional bulk assay, abundant epithelial RNA cannot establish invasion; that distinction needs tissue organisation, not simply epithelial abundance.",
+  "Milk ducts and lymphatic drainage are different networks. A quadrant or clock address supplies neither a drainage map nor lineage. Normal-anatomy drawings simplify scale, cell counts and branching; selected source text and captions support the arrangement illustrated, not a diagnosis or a universal number of cells."
+]
+},
 
   { id: "who-breast-classification", kind: "term", asOf, name: "The WHO classification of breast tumours, and what the 6th edition changed", category: "Pathology", wikipedia: W("WHO_Blue_Books"),
     aka: ["WHO classification of tumours of the breast", "WHO breast classification", "WHO 5th edition breast", "WHO 6th edition breast", "blue book", "WHO blue book breast", "breast tumour classification", "special type", "no special type", "NST"],
@@ -184,16 +249,50 @@ export const breastCoreTerms: TermInput[] = [
     notes: ["Why the corpus still cites the fifth edition. The pages in this family were written against the edition the pathologist follows, not the newest one published. Where the sixth edition changes a name or a rule, this term records the change and the page it affects keeps the fifth-edition wording until the UK dataset moves, so that the page and the report in the reader's hand agree."],
   },
 
-  { id: "nottingham-grade", kind: "term", asOf, name: "Nottingham grade (breast cancer grade 1, 2 and 3)", category: "Pathology", wikipedia: W("Breast_cancer_classification"),
+  { id: "nottingham-grade", kind: "term", asOf: "2026-11-10", name: "Nottingham grade (breast cancer grade 1, 2 and 3)", category: "Pathology", wikipedia: W("Breast_cancer_classification"),
     aka: ["Nottingham grade", "Nottingham grading system", "Nottingham histological grade", "Elston-Ellis grade", "Elston and Ellis", "Bloom-Richardson", "Bloom and Richardson", "Scarff-Bloom-Richardson", "SBR grade", "breast cancer grade", "grade 1 breast cancer", "grade 2 breast cancer", "grade 3 breast cancer", "tubule formation", "nuclear pleomorphism", "mitotic count", "histological grade breast"],
-    tldr: "The grade on a breast report is a sum of three scores: how much of the tumour still forms tubes, how ugly its nuclei are, and how many cells are caught dividing. Each is scored 1 to 3, and the total of 3 to 9 becomes grade 1, 2 or 3. Grade says how the cancer behaves, not how far it has spread.",
-    summary: "The method is the one Elston and Ellis described in 1991, a deliberately more objective revision of Bloom and Richardson's grade, and UK practice allows no other: the dataset in force says that grading systems other than this one should not be used. Three features are scored from 1 to 3. Tubule and acinar formation: score 1 if more than 75 percent of the tumour forms tubular structures with a clear central lumen, 2 if 10 to 75 percent, 3 if under 10 percent. Nuclear atypia and pleomorphism: score 1 for small regular nuclei up to about twice the diameter of a red blood cell, rising to 3 for obvious atypia. Mitotic count: counted in a defined field area and standardised to the microscope's field diameter, because the number of cells in a high-power field varies between microscopes. The three scores are added: 3, 4 or 5 is grade 1, 6 or 7 is grade 2, 8 or 9 is grade 3. Tubule formation is judged across the whole tumour; nuclei and mitoses are judged in the worst area, usually at the edge.\n\nThe grade earns its place on the report. In the Nottingham/Tenovus study, grade was assessed in 1,831 of more than 2,200 patients with primary operable breast cancer entered since 1973, and grade 1 tumours had significantly better survival than grade 2 and 3 (p less than 0.0001) (Elston 1991). Grading is required for every invasive carcinoma, including the rare special types and including adenoid cystic carcinoma, because prognosis varies by grade within a type. For audit it is mandatory to record the three component scores and not only the total.\n\nTwo cautions a reader should have. First, the grades are not meant to come out in equal thirds: the dataset gives the expected ratio of grades 1, 2 and 3 as about 2:3:5 in symptomatic breast cancer and about 3:5:2 in screen-detected breast cancer, and a unit whose distribution departs far from that is told to review its fixation and grading protocols. A grade 3 is therefore commoner in a cancer found because of a lump than in one found by screening. Second, the grade on the needle biopsy and the grade on the surgical specimen agree only about 70 percent of the time, and where they differ the surgical specimen is normally used for management; if a mixed tumour turns out to have a higher-grade component that the biopsy missed, the dataset asks for the receptor assays to be repeated as well.",
+    tldr: "Nottingham grade combines three microscopic feature scores into grade 1, 2 or 3. It describes invasive breast tissue and does not by itself establish disease extent.",
+    summary: "Nottingham histological grade combines tubule formation, nuclear pleomorphism and mitotic activity, each scored from 1 to 3. Totals 3 to 5 are grade 1, 6 to 7 grade 2 and 8 to 9 grade 3. CAP records component scores and the overall grade when grading is applicable; its template excludes microinvasion-only cases from grading. Mitotic assessment depends on a defined observation area and microscope calibration. In Elston and Ellis' 1991 Nottingham/Tenovus study, 1,831 of more than 2,200 patients with primary operable breast cancer were graded; grade 1 had better survival than grades 2 and 3 (P less than 0.0001). This observational prognostic evidence does not turn grade into stage or a treatment-benefit estimate.",
     cancers: ["breast-cancer", "invasive-breast-carcinoma-no-special-type", "invasive-lobular-carcinoma", "tnbc", "breast-hr-positive"],
     terms: ["nottingham-prognostic-index", "grade-stage-receptor-breast", "tumour-grade", "breast-tumour-size-on-the-report", "who-breast-classification"],
     related: ["tumour-grade", "grade-vs-stage", "tumour-differentiation", "digital-pathology-ai"],
     sections: ["diagnostics"],
-    links: [SRC.g148, SRC.elston1991, SRC.who5],
-    notes: ["Grade is not the grade of a side effect. A treatment side effect is also given a grade, from 1 to 5, on a completely separate scale (see `toxicity-grade`). A grade 3 cancer and a grade 3 side effect have nothing to do with each other."],
+    links: [
+  {
+    "label": "Royal College of Pathologists G148: dataset for histopathological reporting of breast disease in surgical excision specimens of breast cancer, version 3, November 2024 (full review due November 2026)",
+    "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+  },
+  {
+    "label": "Elston and Ellis, Histopathology 1991;19:403 to 410: pathological prognostic factors in breast cancer, the value of histological grade, with long-term follow-up of 1,831 graded patients",
+    "url": "https://doi.org/10.1111/j.1365-2559.1991.tb00229.x"
+  },
+  {
+    "label": "Tan et al., Histopathology 2020: the 2019 WHO classification of tumours of the breast (5th edition)",
+    "url": "https://doi.org/10.1111/his.14091"
+  },
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "NCI tumour grade",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/tumor-grade"
+  },
+  {
+    "label": "NCI professional PDQ: AJCC eighth-edition breast staging tables",
+    "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+  }
+],
+    notes: [
+  "Grade is not the grade of a side effect. A treatment side effect is also given a grade, from 1 to 5, on a completely separate scale (see `toxicity-grade`). A grade 3 cancer and a grade 3 side effect have nothing to do with each other.",
+  "Nottingham grading of invasive breast carcinoma combines tubule formation, nuclear pleomorphism and recognisable mitotic figures. Each receives 1 to 3 points: totals 3 to 5 give grade 1, 6 to 7 grade 2, and 8 to 9 grade 3. Thus assigned components 2, 3 and 3 sum to 8, grade 3; the sum is not a percentage.",
+  "Mitotic scoring uses ten consecutive high-power fields in the most mitotically active region, with field size calibrated for the microscope. Count recognisable division, excluding dark, fragmented or apoptotic nuclei. Equal raw counts over different observation areas need not receive the same score. Ki-67 staining does not replace the mitotic component.",
+  "Histological type describes morphology, grade scores microscopic features, and anatomical stage describes extent. Grade 3 does not mean stage III, low grade does not mean benign, and invasive Nottingham grading differs from DCIS nuclear grading. Grade can contribute to prognostic staging without becoming another measure of spread.",
+  "Retain the biopsy or resection, tissue region and treatment time point when comparing grades. Heterogeneity, limited tissue and treatment effects can restrict comparison. One section does not represent every tumour region, and grade alone supplies neither nodal/distant status nor a personal treatment-benefit estimate.",
+  "A nucleus contains a cell's genetic material. Nuclear pleomorphism means variation in nuclear size and appearance; a mitotic figure is a cell visibly dividing. These microscopic observations differ from Ki-67 protein staining, and a dark or dying nucleus should not simply be counted as division.",
+  "In CAP 4.11, tubule-formation scores 1, 2 and 3 correspond to greater than 75%, 10 to 75%, and less than 10% of tumour area forming glandular or tubular structures. Its nuclear descriptors compare with benign epithelial nuclei, alongside chromatin, nucleoli and variation in size and shape; a red-blood-cell diameter is not the comparator in that template. The reporting template marks microinvasion-only cases as not graded.",
+  "RCPath's November 2024 G148 dataset specifies the Nottingham method and recording its individual components for audit. It describes approximate grade 1:2:3 distributions of 2:3:5 in symptomatic and 3:5:2 in screen-detected cancers, as audit context rather than diagnostic quotas. It reports about 70% agreement between core-biopsy and corresponding surgical grades. Tubule assessment covers the tumour overall, while pleomorphism and mitoses use the worst area, often the periphery. If a higher-grade or morphologically different component in the resection was absent from the preoperative sample, the dataset recommends repeat receptor assays. These are source-specific reporting instructions, not an individual prognosis."
+],
   },
 
   { id: "nottingham-prognostic-index", kind: "term", asOf, name: "Nottingham Prognostic Index (NPI), and PREDICT", category: "Clinical", wikipedia: W("Nottingham_Prognostic_Index"),
@@ -318,8 +417,8 @@ const supplements: SpikeSupplement[] = [
 
   { id: "ajcc-prognostic-stage-breast", terms: ["tnm-breast-cancer-editions", "grade-stage-receptor-breast"], related: ["tnm-breast-cancer-editions"],
     links: [SRC.g148, SRC.tnm9], notes: [
-      "Why a UK report does not carry it. The Royal College of Pathologists dataset in force stages against UICC TNM 8, reprints it as its own appendix, and warns that 'it is recommended to use UICC TNM 8 (not AJCC TNM 8) as there are significant differences between the two staging systems'. NICE NG101 names neither edition nor the prognostic stage. The ninth edition of UICC TNM, in force from 1 January 2026, leaves the breast classification unchanged and clarifies only the post-treatment yp classification (Brierley 2026).",
-    ] },
+  "RCPath's November 2024 G148 dataset, Appendix D, recommends UICC TNM 8 rather than AJCC TNM 8 because the systems differ. This is the named dataset's reporting instruction, not evidence that every UK report omits prognostic staging. An anatomical UICC category alone does not establish an AJCC prognostic group; the latter also requires its specified grade, receptor and assessment inputs."
+] },
 
   { id: "carcinoma-in-situ", terms: ["tnm-breast-cancer-editions", "terminal-duct-lobular-unit"], cancers: ["lobular-carcinoma-in-situ"],
     notes: ["How in-situ disease is written in a breast stage. Tis carries the type in brackets: Tis (DCIS), Tis (LCIS), or Tis (Paget's) for Paget disease of the nipple with no underlying carcinoma. A carcinoma in the breast that happens to have Paget disease over the nipple is staged on the carcinoma, with the Paget disease noted."] },
@@ -477,7 +576,7 @@ const lcisPatch: Spike["patch"] = {
 };
 
 const nstPatch: Spike["patch"] = {
-  asOf,
+  asOf: "2026-11-10",
   aka: ["ordinary breast cancer", "usual type breast cancer", "no special type", "NST breast cancer", "IDC NST"],
   terms: ["who-breast-classification", "nottingham-grade", "grade-stage-receptor-breast", "terminal-duct-lobular-unit", "breast-tumour-size-on-the-report"],
   // SRC.who5 is not repeated here: src/data/cancers-wave4-breast.ts already carries the Tan 2020 DOI on this

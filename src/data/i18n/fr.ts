@@ -503,7 +503,7 @@ export const tldr_fr: Record<string, string> = {
   "parp-inhibitor": "Des comprimés qui bloquent un système de secours de réparation de l'ADN, tuant les cellules cancéreuses qui ont déjà perdu leur système de réparation principal (BRCA).",
   "pathology-foundation-model": "De très grands modèles d'IA entraînés sur des millions de lames ou d'images médicales, qui peuvent être adaptés à presque n'importe quelle question diagnostique.",
   payload: "La charge utile est le poison transporté par un ADC, généralement une chimiothérapie bien trop toxique pour être administrée seule.",
-  pcr: "Aucun cancer invasif restant dans le sein et les ganglions lymphatiques lorsque le chirurgien retire les tissus après le traitement préopératoire.",
+
   pd1: "PD-1 est un frein sur les cellules T. Le bloquer libère le système immunitaire contre la tumeur et a permis de guérir certains cancers auparavant incurables.",
   "pd1-checkpoint": "PD-1 et CTLA-4 contribuent à réguler les réponses des lymphocytes T. Modifier leurs signaux ne prouve pas, à soi seul, la reconnaissance ou la destruction du cancer, ni un bénéfice thérapeutique.",
   pdl1: "PD-L1 est le versant tumoral du frein PD-1, et aussi le biomarqueur qui décide qui reçoit une immunothérapie.",
@@ -2280,7 +2280,7 @@ export const tldr_fr: Record<string, string> = {
   rambam: "L'hôpital de recours du nord d'Israël, affilié au Technion, où ont été faites les découvertes sur le système ubiquitine-protéasome à l'origine des inhibiteurs du protéasome et des dégradeurs.",
   "rasolute-302": "L'essai qui a presque doublé la survie dans le cancer du pancréas déjà traité, présenté en séance plénière de l'ASCO 2026. Le plus grand résultat de l'histoire de cette maladie.",
   ratify: "L'essai qui a fait de FLT3 la première mutation ciblable dans l'AML : l'ajout de midostaurin à la chimiothérapie a triplé la survie médiane.",
-  rcb: "Un score qui mesure la quantité de cancer restant après le traitement préopératoire, de 0 (aucun) à III (beaucoup).",
+
   "re-irradiation": "Réadministrer une radiothérapie dans une région déjà traitée, ce que l'on croyait autrefois impossible parce que les tissus sains gardent la mémoire de la première dose. Les techniques modernes de précision la rendent possible chez des patients sélectionnés.",
   "rebecca-dent": "Oncologue médicale spécialisée dans le cancer du sein et directrice générale adjointe chargée des opérations cliniques au National Cancer Centre Singapore, figure internationale de premier plan des essais sur le cancer du sein triple négatif.",
   "redifferentiation-rai": "Une courte cure d'un comprimé inhibiteur de MEK ou de BRAF peut amener un cancer de la thyroïde résistant à l'iode à recapter l'iode, ce qui permet à l'iode radioactif d'agir de nouveau.",
@@ -2394,7 +2394,7 @@ export const tldr_fr: Record<string, string> = {
   tivozanib: "Le tivozanib est un comprimé très sélectif du récepteur du VEGF pour le cancer du rein après au moins deux traitements antérieurs, remarquable par sa tolérance et par un essai qui a fermé la porte à la reprise de l'immunothérapie.",
   "tki-plus-blinatumomab-ph-all": "Un comprimé qui coupe le moteur de la leucémie, associé à une immunothérapie qui élimine les cellules survivantes, sans aucune chimiothérapie.",
   tmucih: "Le berceau de l'oncologie chinoise (un hôpital missionnaire de 1861, devenu hôpital de cancérologie en 1952 sous Jin Xianzhai) et un centre national pour les cancers du sein et du pancréas.",
-  "tnm-staging": "La classification TNM est le système universel qui décrit la taille de la tumeur (T), l'atteinte des ganglions lymphatiques (N) et les métastases à distance (M).",
+
   "tohoku-university-hospital": "L'hôpital universitaire de Sendai et bras clinique du Tohoku Medical Megabank, avec des points forts en cancer du sein, gastro-entérologie et imagerie.",
   "toni-choueiri": "Dirige la recherche mondiale sur le cancer du rein, notamment les essais sur le pembrolizumab adjuvant et le belzutifan.",
   "topaz-1": "TOPAZ-1 a été le premier succès de l'immunothérapie dans le cancer des voies biliaires, avec un gain médian modeste mais une proportion croissante de survivants à long terme.",
@@ -2670,7 +2670,7 @@ export const tldr_fr: Record<string, string> = {
   "david-porter": "Il a traité les premiers patients adultes atteints de LLC par CAR-T et a rapporté une décennie de rémissions durables.",
   "dawna-1": "L'essai qui a fait du dalpiciclib le premier inhibiteur de CDK4/6 chinois approuvé, en faisant plus que doubler le temps avant la progression du cancer du sein lorsqu'il est ajouté au fulvestrant.",
   "day-one-biopharmaceuticals": "Société d'oncologie à vocation d'abord pédiatrique, dont le tovorafenib est devenu la première thérapie ciblée du gliome de bas grade de l'enfant.",
-  dcis: "Cellules de cancer du sein confinées à l'intérieur des canaux galactophores, découvertes surtout par mammographie sous forme de calcifications. Il n'est pas mortel en lui-même, mais environ un tiers évoluerait vers un cancer invasif s'il était laissé en place.",
+
   "dcruz-anil": "Il a dirigé l'essai du Tata Memorial qui a tranché une question vieille de plusieurs décennies, en montrant que l'ablation des ganglions lymphatiques du cou lors de la première opération d'un cancer buccal précoce sauve des vies.",
   "dcvax-l": "Un vaccin personnalisé fabriqué à partir des propres cellules immunitaires et de la tumeur du patient. Son essai de phase 3 vieux de 20 ans a rapporté une survie plus longue, mais la manière dont le résultat a été analysé a divisé le domaine.",
   "deauville-score": "Un score de 1 à 5 mesurant la brillance d'un lymphome au TEP par rapport au foie ; 1-3 est considéré comme une réponse métabolique complète.",
@@ -3394,7 +3394,7 @@ export const tldr_fr: Record<string, string> = {
   "secondary-malignancy": "Un nouveau cancer, différent, causé par le traitement du premier : leucémie après une chimiothérapie alkylante ou des inhibiteurs de PARP, tumeurs solides dans les tissus irradiés des décennies plus tard et, rarement, lymphome T après CAR-T. Rare par patient, mais c'est ce qui compte le plus pour ceux guéris jeunes.",
   selinexor: "Le selinexor est un comprimé premier de sa classe qui piège les protéines suppressives de tumeurs dans le noyau ; approuvé dans le myélome, il a échoué à son test dans le cancer de l'endomètre en 2026.",
   selumetinib: "Le selumetinib (Koselugo) est le premier médicament pour les enfants et les adultes atteints de neurofibromatose de type 1 dont les neurofibromes plexiformes, tumeurs nerveuses bénignes mais défigurantes et douloureuses, ne peuvent pas être enlevés par chirurgie.",
-  "sentinel-lymph-node-biopsy": "Repérer et retirer le premier ou les deux premiers ganglions lymphatiques dans lesquels une tumeur se draine, pour voir si le cancer s'est propagé, au lieu de retirer toute l'aire ganglionnaire.",
+
   severance: "Le Severance Hospital abrite le Yonsei Cancer Center et le premier centre de thérapie par ions lourds (carbone) de Corée (2023).",
   "sherry-lansing": "L'ancienne dirigeante de Paramount a cofondé Stand Up To Cancer, dont les émissions spéciales télévisées et les Dream Teams ont engagé plus de 800 millions de dollars dans une recherche collaborative qui a contribué à plusieurs médicaments anticancéreux approuvés.",
   "sibylle-loibl": "Dirige le German Breast Group, dont les essais GeparX ont défini la chimiothérapie et l'immunothérapie néoadjuvantes dans le cancer du sein.",

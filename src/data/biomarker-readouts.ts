@@ -306,14 +306,42 @@ export const biomarkerReadouts: BiomarkerInput[] = [
 
   b({ id: "ki-67-index", name: "Ki-67 index (proliferation by IHC)", aka: ["Ki-67", "Ki67", "Ki-67 index", "Ki-67 labelling index", "Ki-67 score", "MIB-1 index", "Ki-67 >= 20%", "Ki-67 ≥20%", "proliferation index"],
     target: "mki67", measurement: "ihc-score",
-    tldr: "Ki-67 is the percentage of tumour cells that are dividing. In neuroendocrine tumours it sets the grade; in breast cancer a 20 percent cut-off was briefly a condition of adjuvant abemaciclib, then dropped from the label in 2023.",
-    summary: "The Ki-67 labelling index is the percentage of tumour cell nuclei staining with the MIB-1 antibody. In gastroenteropancreatic neuroendocrine tumours the WHO classification grades G1 (< 3 percent), G2 (3 to 20 percent) and G3 (> 20 percent). In breast cancer the October 2021 FDA approval of adjuvant abemaciclib (monarchE cohort 1) required node-positive, high-risk, HR-positive HER2-negative disease with Ki-67 >= 20 percent by the Ki-67 IHC MIB-1 pharmDx (Dako Omnis) companion diagnostic; the March 2023 label expansion removed the Ki-67 requirement, and the current label describes the assay only in the trial narrative. The International Ki-67 in Breast Cancer Working Group considers scores of 5 percent or less and 30 percent or more reproducible and the range between them not.",
+    tldr: "The Ki-67 index is the percentage of evaluated tumour-cell nuclei that stain for a protein associated with the active cell cycle.",
+    summary: "Ki-67 immunohistochemistry reports the percentage of evaluated tumour-cell nuclei positive under the defined staining and scoring method. In gastroenteropancreatic neuroendocrine tumours the WHO classification grades G1 (< 3 percent), G2 (3 to 20 percent) and G3 (> 20 percent). The FDA's March 3, 2023 breast-cancer expansion removed the Ki-67 testing requirement for the specified high-risk HR-positive, HER2-negative adjuvant abemaciclib indication. Trial cohort definitions are distinct from that regulatory testing rule. The International Ki67 in Breast Cancer Working Group limited its 2021 clinical-utility conclusion to selected anatomically favourable ER-positive, HER2-negative breast cancers under standardised scoring, with prognosis assessment at 5 percent or less or 30 percent or more. These extremes are not universal thresholds for other cancers, methods or treatment decisions.",
     scoringRule: { text: "Percentage of tumour cell nuclei staining for Ki-67 (MIB-1), counted in the invasive tumour; in monarchE cohort 2 a score of 20 percent or more was required, measured centrally with the Ki-67 IHC MIB-1 pharmDx.", quote: "Breast tumor samples were tested at central sites using the Ki-67 IHC MIB-1 pharmDx (Dako Omnis) assay to establish if the Ki-67 score was ≥20%.", source: LABEL.verzenio, sourceLabel: "Verzenio prescribing information (clinical studies section)" },
     thresholds: [th({ value: "Ki-67 >= 20% (2021 adjuvant approval, requirement removed March 2023)", drugId: "abemaciclib", cancerId: "hr-positive-early-high-risk", regulator: "FDA", source: LABEL.verzenio, quote: "To be enrolled in cohort 2, patients had to have 1-3 pALN and Ki-67 score ≥20%.", status: "historic", note: "The current label no longer restricts adjuvant abemaciclib by Ki-67; the threshold is kept as the historic 2021 approval condition." })],
     definedBy: { label: "WHO Classification of Tumours, Digestive System Tumours, 5th edition (neuroendocrine grading by Ki-67)", url: "https://tumourclassification.iarc.who.int/" },
     cancers: ["breast-hr-positive", "hr-positive-early-high-risk", "neuroendocrine", "pancreatic-net", "lung-net"], drugs: ["abemaciclib"], assays: ["ki67-mib1"],
-    forPatient: "Ki-67 tells you how fast the cancer is growing. In a neuroendocrine tumour it sets the grade, which steers treatment. In early breast cancer a high Ki-67 (20 percent or more) was once required for adjuvant abemaciclib; it no longer is, but the number still helps your team judge how much benefit chemotherapy or a CDK4/6 inhibitor is likely to add.",
-    terms: ["net-grade-ki67", "proliferation", "ihc"], related: ["er-status", "pr-status"], links: [{ label: "Verzenio prescribing information (DailyMed)", url: LABEL.verzenio }], tags: ["biomarker", "proliferation"] }),
+    forPatient: "Ki-67 measures the share of evaluated tumour nuclei staining for an active-cell-cycle protein. It is not a direct growth speed or a stand-alone estimate of treatment benefit. Its meaning depends on the cancer, sample and scoring method.",
+    terms: ["net-grade-ki67", "proliferation", "ihc"], related: ["er-status", "pr-status"], links: [
+  {
+    "label": "Verzenio prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=be4bc0de-0fdc-4d46-8d25-be43c79e6a06"
+  },
+  {
+    "label": "Assessment of Ki67 in Breast Cancer: Updated Recommendations From the International Ki67 in Breast Cancer Working Group.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33369635/"
+  },
+  {
+    "label": "CAP breast biomarker template 1.6.2.0, September 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "FDA March 3, 2023 abemaciclib expansion",
+    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-expands-early-breast-cancer-indication-abemaciclib-endocrine-therapy"
+  }
+], tags: ["biomarker", "proliferation"] ,
+"asOf": "2026-11-10",
+"notes": [
+  "Ki-67 is associated with active cell-cycle phases and is generally absent from resting G0 cells. Its immunohistochemical index is positive eligible tumour-cell nuclei divided by all eligible nuclei evaluated, expressed as a percentage. MIB-1 names an antibody. Staining intensity is not the denominator; 30 positive nuclei among 100 eligible nuclei gives 30% in that field.",
+  "Ki-67 is not a visible-mitosis count, a doubling time, a percentage growth per day, a recurrence probability or a complete Nottingham grade. A treatment-related decrease does not independently establish cell killing or patient benefit. RNA proliferation scores and protein immunostaining measure different features.",
+  "Sampling and aggregation change the estimate. With fictional fields containing 90 positive nuclei out of 900 and 50 out of 100, pooling gives 140/1000 = 14%; averaging the two field percentages gives 30%; selecting the second field gives 50%. These are different estimators. They do not reproduce the International Ki67 Working Group's calibrated, area-weighted global method.",
+  "Retain specimen, treatment time point, fixation, antibody/platform, counterstaining, controls, eligible nuclei and regional scoring rule. Poor visibility of negative nuclei can distort the denominator. The working group's weighted-global approach estimates areas with different staining levels and samples nuclei from those field types after calibration; it is not simply an unweighted hotspot average.",
+  "The 2021 working-group utility conclusion concerned anatomically favourable T1 to T2, N0 to N1, ER-positive, HER2-negative breast cancer under standardised methods, with limited prognosis use at the specified extremes. It did not establish a universal triple-negative treatment cutoff. CAP's September 2026 template treats breast Ki-67 testing as optional; do not transfer one assay's clinical rule to another cancer or setting.",
+  "The reviewed monarchE label defines cohort 1 by at least four positive axillary nodes, or one to three plus grade 3 or tumour size at least 50 mm. Cohort 1 was not defined by a mandatory Ki-67 threshold. Cohort 2 enrolled those not eligible for cohort 1 with one to three positive axillary nodes and centrally assessed Ki-67 at least 20% using MIB-1/Dako Omnis. The former regulatory testing requirement must not be mistaken for cohort 1 eligibility. This history is not a TNBC treatment rule.",
+  "An index is a snapshot of eligible nuclei in active cell-cycle phases. Net tumour growth also depends on cell loss and the duration of cell-cycle phases; the same index need not imply the same doubling time. Neither staining intensity nor percentage positive establishes a daily growth rate."
+]
+}),
 
   // ---- Mismatch repair, microsatellite instability, tumour mutational burden ----
   b({ id: "dmmr-ihc", name: "dMMR (mismatch repair deficiency by IHC)", aka: ["dMMR", "MMR-deficient", "mismatch repair deficient", "MMRd", "loss of MLH1", "loss of MSH2", "loss of MSH6", "loss of PMS2", "MMR IHC", "MMR protein loss"],

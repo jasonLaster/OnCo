@@ -11,7 +11,7 @@ import type { TermInput } from "@/lib/schema";
 const asOf = "2026-09-17";
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 type L = { label: string; url: string };
-type T = Omit<TermInput, "kind" | "asOf" | "links" | "category"> & { wikipedia?: string; links?: L[] };
+type T = Omit<TermInput, "kind" | "asOf" | "links" | "category"> & { wikipedia?: string; links?: L[]; asOf?: TermInput["asOf"] };
 const t = (x: T): TermInput => {
   const links: L[] = [...(x.wikipedia ? [{ label: "Wikipedia", url: x.wikipedia }] : []), ...(x.links ?? [])];
   return { kind: "term", asOf, category: "Biomarkers", ...x, links: links.length ? links : undefined };
@@ -387,11 +387,44 @@ export const biomarkerTerms: TermInput[] = [
   t({
     id: "extranodal-extension", wikipediaChecked: "2026-09-22", name: "Extranodal extension (ENE)",
     aka: ["ENE", "extranodal extension", "extracapsular extension", "extracapsular spread", "extracapsular nodal spread", "ECS", "ENE-positive", "ENE-negative", "pathological extranodal extension", "radiological extranodal extension", "rENE", "major ENE", "minor ENE"],
-    tldr: "Extranodal extension means cancer in a lymph node has burst through the node's capsule into the surrounding fat; in head and neck cancer it is the single finding after surgery that most often turns radiotherapy into chemoradiotherapy, and in HPV-negative disease it moves the stage up.",
-    summary: "What is measured: growth of nodal metastasis through the lymph node capsule into perinodal tissue. How: the pathologist's examination of the neck dissection specimen, graded in AJCC 8th edition as major (more than 2 mm beyond the capsule or soft-tissue deposit) or minor (2 mm or less), with pathological N stage for HPV-negative head and neck and cutaneous squamous cell carcinomas upstaged to pN2a or pN3b by its presence; radiological extranodal extension on CT or MRI (irregular capsule, infiltration of fat, matted nodes) is moderately accurate and is not used to stage HPV-positive disease. What a positive result changes: in the pooled analysis of EORTC 22931 and RTOG 9501, extranodal extension and positive margins were the two findings for which adding cisplatin to postoperative radiotherapy (60 to 66 Gy) improved survival, so either mandates chemoradiotherapy in head and neck squamous cell carcinoma; in HPV-positive oropharyngeal cancer its prognostic weight is smaller and the ECOG 3311 and PATHOS trials test whether chemotherapy can be omitted after transoral surgery; in melanoma, breast (extracapsular extension) and penile and vulvar carcinoma it raises the risk of regional relapse and drives adjuvant nodal radiotherapy. Where it matters: oral cavity, oral tongue and buccal cancers, HPV-negative and HPV-positive head and neck cancer, salivary duct and mucoepidermoid carcinoma.",
-    cancers: ["oral-cavity-cancer", "oral-tongue-cancer", "buccal-mucosa-cancer", "hpv-negative-head-and-neck-cancer", "hpv-positive-oropharyngeal-cancer", "salivary-duct-carcinoma", "mucoepidermoid-carcinoma"],
+    tldr: "Extranodal extension describes cancer growing beyond a lymph node capsule into surrounding tissue. Its staging and treatment implications depend on the cancer and clinical setting.",
+    summary: "What is measured: growth of nodal metastasis through the lymph node capsule into perinodal tissue. How: the pathologist's examination of the neck dissection specimen, graded in AJCC 8th edition as major (more than 2 mm beyond the capsule or soft-tissue deposit) or minor (2 mm or less), with pathological N stage for HPV-negative head and neck and cutaneous squamous cell carcinomas upstaged to pN2a or pN3b by its presence; radiological extranodal extension on CT or MRI (irregular capsule, infiltration of fat, matted nodes) is moderately accurate and is not used to stage HPV-positive disease. What a positive result changes: in the pooled analysis of EORTC 22931 and RTOG 9501, extranodal extension and positive margins were the two findings for which adding cisplatin to postoperative radiotherapy (60 to 66 Gy) improved survival, so either mandates chemoradiotherapy in head and neck squamous cell carcinoma; in HPV-positive oropharyngeal cancer its prognostic weight is smaller and the ECOG 3311 and PATHOS trials test whether chemotherapy can be omitted after transoral surgery; in breast cancer it provides additional regional tissue information, with observational outcome associations rather than a universal radiation rule. Other cancer sites require their own evidence and guidance. Where it matters: oral cavity, oral tongue and buccal cancers, HPV-negative and HPV-positive head and neck cancer, salivary duct and mucoepidermoid carcinoma.",
+    cancers: [
+  "oral-cavity-cancer",
+  "oral-tongue-cancer",
+  "buccal-mucosa-cancer",
+  "hpv-negative-head-and-neck-cancer",
+  "hpv-positive-oropharyngeal-cancer",
+  "salivary-duct-carcinoma",
+  "mucoepidermoid-carcinoma",
+  "breast-cancer"
+],
     related: ["lymph-node", "resection-margins", "cisplatin", "radiotherapy", "hpv-status", "depth-of-invasion", "perineural-invasion"],
-  }),
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "Extranodal extension, an international survey on its evaluation and reporting in breast cancer patients.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36030639/"
+  },
+  {
+    "label": "Prognostic value of extranodal extension in axillary lymph node-positive breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33953240/"
+  }
+],
+"notes": [
+  "Extranodal extension means a nodal cancer deposit extends through the capsule into neighbouring soft tissue, which can include axillary fat. It is distinct from tumour in a vessel lumen, tumour at a specimen cut edge and the nodal deposit itself. A lymph-node capsule is not a surgical margin.",
+  "Regional nodal ENE does not by itself establish distant metastasis, M1, stage IV or a universal next treatment. A cohort association with subsequent outcomes is prognostic evidence, not proof that a particular operation or radiation strategy benefits every person with ENE.",
+  "Report the observed presence and any measurable extent with its method and millimetre units. CAP permits descriptive reporting and optional size measurement, with no proven superior direction. The whole metastasis diameter and ENE extent are different parameters. Disrupted or replaced capsule, vascular involvement and treatment changes can complicate interpretation.",
+  "Tang and colleagues' 2022 survey of 70 pathologists documented measurement variation and interpretive difficulties; it was not a diagnostic-performance trial. In Ma and colleagues' retrospective 402-case axillary-dissection cohort, ENE was independently associated with disease recurrence-free survival (adjusted HR 1.745, 95% CI 1.152 to 2.642). The adjusted overall-survival result was not significant (HR 1.639, 95% CI 0.824 to 3.260), despite the univariable association. Perpendicular 2-mm and circumferential 3-mm cutoffs did not show significant prognostic value. These are cohort results, not universal thresholds.",
+  "Keep four questions separate: is a nodal deposit present, has it crossed the capsule into soft tissue, is tumour present inside a vessel lumen, and does tumour reach a surgical cut edge? One finding does not establish the other three. CAP permits recording the larger ENE extent preferentially when measuring; evidence has not established one superior measurement direction.",
+  "Head-and-neck ENE extent conventions using 2 mm to distinguish minor from major extension and evidence for treatment in those cancers must not be transferred into a breast ENE threshold or treatment mandate. Breast cohort prognosis does not establish that a particular radiation or chemotherapy strategy benefits every person with ENE."
+]
+}),
   t({
     id: "depth-of-invasion", wikipediaChecked: "2026-09-22", name: "Depth of invasion (DOI)",
     aka: ["DOI", "depth of invasion", "tumour depth", "tumor depth", "invasion depth", "depth of stromal invasion", "submucosal invasion depth", "SM1", "SM2", "T1a versus T1b", "myometrial invasion", "deep myometrial invasion", "thickness versus depth"],

@@ -398,8 +398,8 @@ export const tldr_pt: Record<string, string> = {
   os: "Quanto tempo os pacientes vivem, ponto final. O desfecho padrão-ouro.",
   efs: "No câncer inicial: quanto tempo os pacientes permanecem livres de recorrência, progressão ou morte.",
   "hazard-ratio": "Um número que compara a taxa de eventos ruins em dois grupos. 0,5 significa que o risco é reduzido à metade a qualquer momento.",
-  pcr: "Nenhum câncer invasivo restante na mama e nos linfonodos quando o cirurgião remove o tecido após o tratamento pré-cirúrgico.",
-  rcb: "Um escore de quanto câncer resta após o tratamento pré-cirúrgico, de 0 (nenhum) a III (muito).",
+
+
   ppv: "Se um teste diz 'câncer', a chance de estar certo.",
   "stage-shift": "Encontrar mais cânceres cedo e menos tarde. O objetivo mensurável do rastreamento.",
   suv: "Um número para quão intensamente um ponto acende em um PET.",
@@ -442,7 +442,7 @@ export const tldr_pt: Record<string, string> = {
   "alpha-vs-beta": "Partículas beta (lutécio-177) percorrem milímetros e são boas para doença volumosa; partículas alfa (actínio-225) percorrem a largura de poucas células e matam com muito mais energia.",
   dosimetry: "Medir quanta dose de radiação cada órgão e tumor realmente recebeu de uma droga radioativa.",
   "germline-vs-somatic": "Mutações germinativas são herdadas e estão em todas as células; mutações somáticas surgem só no tumor.",
-  "tnm-staging": "O sistema universal que descreve tamanho do tumor (T), disseminação para linfonodos (N) e metástase à distância (M).",
+
   "cold-vs-hot": "Tumores 'quentes' estão cheios de células imunes e respondem à imunoterapia; tumores 'frios' mantiveram o sistema imune de fora.",
   "adc-sequencing": "A pergunta em aberto sobre se um segundo ADC funciona após a falha do primeiro, especialmente quando ambos carregam o mesmo tipo de carga.",
 
@@ -2717,7 +2717,7 @@ export const tldr_pt: Record<string, string> = {
   "david-porter": "Tratou os primeiros pacientes adultos com LLC usando CAR-T e relatou uma década de remissões duradouras.",
   "dawna-1": "O ensaio que tornou o dalpiciclib o primeiro inibidor de CDK4/6 chinês aprovado, mais do que duplicando o tempo até o crescimento do câncer de mama quando adicionado ao fulvestrant.",
   "day-one-biopharmaceuticals": "Empresa de oncologia com foco pediátrico cujo tovorafenib se tornou a primeira terapia-alvo para o glioma de baixo grau infantil.",
-  dcis: "Células de câncer de mama confinadas ao interior dos ductos mamários, encontradas sobretudo pela mamografia na forma de calcificações. Não é fatal em si, mas cerca de um terço progrediria para câncer invasivo se não fosse tratado.",
+
   "dcruz-anil": "Liderou o ensaio do Tata Memorial que resolveu uma questão de décadas, mostrando que remover os gânglios linfáticos do pescoço na primeira operação para câncer oral precoce salva vidas.",
   "deauville-score": "Uma pontuação de 1 a 5 para quão brilhante um linfoma aparece na PET em comparação com o fígado; 1-3 é considerado resposta metabólica completa.",
   "deb-schrag": "Liderou o PATHFINDER, o primeiro estudo prospectivo de um exame de sangue multicâncer na prática, e o ensaio PROSPECT em câncer de reto.",
@@ -3413,7 +3413,7 @@ export const tldr_pt: Record<string, string> = {
   "secondary-malignancy": "Um câncer novo e diferente causado pelo tratamento do primeiro: leucemia após quimioterapia com agentes alquilantes ou inibidores de PARP, tumores sólidos em tecido irradiado décadas depois e, raramente, linfoma de células T após CAR-T. Raro por paciente, mas importa sobretudo para quem é curado jovem.",
   selinexor: "Selinexor é um comprimido primeiro da sua classe que aprisiona proteínas supressoras de tumor dentro do núcleo; aprovado em mieloma, falhou no seu teste em câncer de endométrio em 2026.",
   selumetinib: "Selumetinib (Koselugo) é o primeiro medicamento para crianças e adultos com neurofibromatose tipo 1 cujos neurofibromas plexiformes, tumores nervosos benignos mas desfigurantes e dolorosos, não podem ser removidos por cirurgia.",
-  "sentinel-lymph-node-biopsy": "Localizar e remover o primeiro ou os dois primeiros linfonodos para os quais um tumor drena, para ver se o câncer se espalhou, em vez de remover toda a cadeia linfonodal.",
+
   severance: "O Severance Hospital abriga o Yonsei Cancer Center e o primeiro centro de terapia com íons pesados (carbono) da Coreia (2023).",
   "sherry-lansing": "A ex-presidente da Paramount cofundou a Stand Up To Cancer, cujos especiais de televisão e Dream Teams já comprometeram mais de 800 milhões de dólares em pesquisa colaborativa que contribuiu para vários medicamentos oncológicos aprovados.",
   "sibylle-loibl": "Lidera o German Breast Group, cujos ensaios GeparX definiram a quimioterapia e a imunoterapia neoadjuvantes no câncer de mama.",

@@ -528,10 +528,53 @@ export const tnbcTerms: TermInput[] = [
 
   tm({ id: "ajcc-prognostic-stage-breast", name: "AJCC 8th edition prognostic stage for breast cancer", category: "Clinic basics", wikipedia: W("Breast_cancer_classification"),
     aka: ["Prognostic stage group", "Clinical prognostic stage", "Pathological prognostic stage", "Anatomic stage versus prognostic stage", "AJCC 8th edition breast"],
-    tldr: "Since 2018 the American staging system gives breast cancer two stages: the anatomic stage from tumour size, nodes and spread, and a prognostic stage that also counts grade and the three receptors. Because triple-negative cancers are usually grade 3 and receptor negative, their prognostic stage is often a step higher than their anatomic stage; UK pages and NICE quote the anatomic TNM stage.",
-    summary: "The eighth edition of the American Joint Committee on Cancer TNM classification for breast cancer, prepared by a multidisciplinary panel, kept the anatomic TNM stage so the system stays usable worldwide, but recognised the prognostic influence of grade, oestrogen and progesterone receptor expression and HER2 amplification and mandated their inclusion, and acknowledged gene expression panels: tumour biomarkers and a low Oncotype DX recurrence score can alter the stage, giving a flexible platform that will be updated online (Giuliano 2017). Validation in 3,327 patients with stage I to IIIC disease treated with surgery first at MD Anderson (2007 to 2013) found the prognostic stage moved 29.5 percent of patients up and 28.1 percent down relative to the anatomic stage, and stratified disease-specific survival better (C index 0.8357 against 0.737); in 54,727 patients in the California Cancer Registry (2005 to 2009) it upstaged 31.0 percent and downstaged 20.6 percent and again performed better (C index 0.8426), supporting its use (Weiss 2018). Patients treated with neoadjuvant systemic therapy were excluded from that validation, which matters for triple-negative disease, where most stage II and III patients now have chemotherapy first and the response at surgery (pathological complete response or residual cancer burden) is the stronger prognostic marker. Cancer Research UK describes the TNM 8th edition and the number stages in plain words and notes that the TNM system is the commonest way to stage breast cancer in the UK, with staging confirmed after surgery; UK clinicians do not usually quote the prognostic stage group.",
-    cancers: ["tnbc", "breast-cancer", "breast-hr-positive", "breast-her2-positive"], terms: ["tnm-staging", "tumour-grade", "pcr", "rcb"],
-    links: [SRC.giuliano2017, SRC.weiss2018, SRC.crukTnm, SRC.crukStages] }),
+    tldr: "AJCC eighth-edition breast prognostic staging combines extent, grade and receptor results. The clinical and surgery-first pathological tables have different uses.",
+    summary: "AJCC eighth-edition breast prognostic staging combines anatomical extent with grade, ER, PR and HER2, with narrowly prescribed multigene-test uses. Giuliano and colleagues described these changes in 2017. Weiss and colleagues' surgery-first validation included 3,327 MD Anderson patients with stage I to IIIC disease and 54,727 California Cancer Registry patients. Prognostic staging moved 29.5% up and 28.1% down at MD Anderson (disease-specific survival C index 0.8357 versus 0.737 for anatomical staging); in California it moved 31.0% up and 20.6% down (C index 0.8426 versus 0.8097). Neoadjuvant-treated patients were excluded. These population comparisons do not validate entering residual yp findings into the surgery-first table or rank response measures against staging for an individual.",
+    cancers: ["tnbc", "breast-cancer", "breast-hr-positive", "breast-her2-positive"], terms: [
+  "tnm-staging",
+  "tumour-grade",
+  "pcr",
+  "rcb"
+],
+    links: [
+  {
+    "label": "Giuliano, CA Cancer J Clin 2017: major changes in the AJCC 8th edition breast cancer staging manual",
+    "url": "https://doi.org/10.3322/caac.21393"
+  },
+  {
+    "label": "Weiss, JAMA Oncol 2018: validation of the AJCC 8th edition prognostic stage against the anatomic stage",
+    "url": "https://doi.org/10.1001/jamaoncol.2017.4298"
+  },
+  {
+    "label": "CRUK: TNM staging of breast cancer",
+    "url": "https://www.cancerresearchuk.org/about-cancer/breast-cancer/stages-grades/tnm-staging"
+  },
+  {
+    "label": "CRUK: number stages of breast cancer",
+    "url": "https://www.cancerresearchuk.org/about-cancer/breast-cancer/stages-grades/number-stages"
+  },
+  {
+    "label": "NCI professional PDQ: AJCC eighth-edition breast staging tables",
+    "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+  },
+  {
+    "label": "NCI breast stages",
+    "url": "https://www.cancer.gov/types/breast/stages"
+  },
+  {
+    "label": "AJCC current staging-system table, 2026",
+    "url": "https://www.facs.org/media/c5ik5tkr/ajcc-current-staging-system-2026.pdf"
+  }
+] ,
+"asOf": "2026-11-10",
+"notes": [
+  "AJCC eighth-edition breast staging distinguishes anatomical TNM extent from prognostic grouping using grade, oestrogen receptor, progesterone receptor and HER2. State the disease-specific edition, assessment type and treatment timing. A newer version for another cancer does not automatically update breast staging.",
+  "Clinical prognostic staging uses pretreatment clinical evidence, including available biopsy findings. Pathological prognostic grouping applies when surgery is initial treatment. After neoadjuvant therapy retain pretreatment clinical stage and report yc or yp residual findings and response; do not enter ypT and ypN into the surgery-first pathological prognostic table.",
+  "In the eighth-edition clinical table, grade-3 ER-negative, PR-negative, HER2-negative T2 N1 M0 maps to IIIB, while its anatomical group is IIB. T3 N1 M0 maps to IIIC clinically prognostic and IIIA anatomically. T4 or N3 with M0 is IIIC in this specified grade/receptor context. Different group labels can therefore both be correct when their tables are named.",
+  "Prognostic groups reflect populations offered appropriate systemic treatment, not untreated natural history or an individual forecast. A missing receptor or grade cannot be invented to finish a table. A narrowly prescribed multigene staging use does not authorise substitution of any RNA signature. Biopsy information alone does not constitute a complete surgical pathological stage; pM0 is not valid.",
+  "Residual ypT and ypN remain valid descriptions after neoadjuvant treatment even though the surgery-first pathological prognostic table does not apply. Research TNBC RNA signatures and risk scores cannot substitute for the specific receptor, grade and eligible multigene inputs prescribed by a staging table."
+]
+}),
 
   tm({ id: "interval-breast-cancer", name: "Interval breast cancer (a cancer found between screening rounds)", category: "Epidemiology & prevention", wikipedia: W("Breast_cancer_screening"),
     aka: ["Interval cancer", "Screen-detected versus interval cancer", "Cancer between mammograms", "NHS Breast Screening Programme interval"],

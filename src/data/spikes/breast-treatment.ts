@@ -40,10 +40,54 @@ const BREAST_ALL = [BREAST, ...SUBTYPES];
 const terms: TermInput[] = [
   term({ id: "breast-conserving-surgery-versus-mastectomy", name: "Breast conservation or mastectomy", category: "Treatment decisions",
     aka: ["lumpectomy versus mastectomy", "breast conservation versus mastectomy", "wide local excision or mastectomy"],
-    tldr: "For most early breast cancers, removing the lump with a rim of healthy tissue and then giving radiotherapy leads to exactly the same chance of being alive in twenty years as removing the whole breast. The choice is about the breast, not about survival.",
+    tldr: "For eligible early breast cancers, trials found no significant survival difference between breast conservation with radiation and mastectomy. Local recurrence and the rest of the treatment plan still matter.",
     summary: "Four randomised trials settled this and all four reported at twenty years or more. NSABP B-06 randomised 1,851 women three ways and found no significant difference in disease-free, distant-disease-free or overall survival between total mastectomy, lumpectomy alone and lumpectomy with irradiation; the hazard ratio for death after lumpectomy with irradiation against mastectomy was 0.97 (95 percent confidence interval 0.83 to 1.14). Milan I randomised 701 women to Halsted radical mastectomy or quadrantectomy with radiotherapy and found death from any cause at twenty years of 41.2 and 41.7 percent (p=1.0). EORTC 10801 randomised 868 patients including tumours up to 5 cm and found time to death at a median 22.1 years no different (hazard ratio 1.11, 0.94 to 1.33). NSABP B-04, at twenty-five years, found no advantage to radical mastectomy over lesser operations at all.\n\nWhat does differ is the chance of the cancer returning in the breast that was kept: 14.3 percent at twenty years in NSABP B-06 with radiotherapy, against 39.2 percent without it, and 8.8 against 2.3 percent between quadrantectomy and radical mastectomy in Milan I. A recurrence in a conserved breast is usually salvageable by mastectomy, which is part of why survival is unaffected: in the EORTC boost trial, mastectomy was the first salvage treatment for 279 of 354 such recurrences (79 percent) in one arm and 178 of 237 (75 percent) in the other.\n\nMastectomy is still the right operation for some: a tumour too large for the breast to give a good result, several tumours in different quadrants, inflammatory breast cancer, a margin that cannot be cleared by re-excision, a woman who cannot have radiotherapy, and a woman who has weighed the options and wants the breast off. Risk-reducing mastectomy in a BRCA1 or BRCA2 carrier is a different operation for a different reason.\n\nIn England NICE NG101 recommendation 1.4.3 offers further surgery when tumour is at the inked margin, and recommendation 1.4.5 considers it when tumour cells lie within 1 mm of the radial margin, a threshold the guideline lowered from 2 mm in 2024 to reduce re-operations.",
     cancers: BREAST_ALL, sections: ["surgery"], related: ["lumpectomy", "mastectomy", "resection-margins", "oncoplastic-breast-surgery", "breast-reconstruction"], trials: ["nsabp-b06", "milan-i", "eortc-10801", "nsabp-b04"],
-    links: [doi("NSABP B-06 at twenty years (New England Journal of Medicine 2002)", "10.1056/NEJMoa022152"), doi("Milan I at twenty years (New England Journal of Medicine 2002)", "10.1056/NEJMoa020989"), nice("ng101", "NICE NG101 recommendations 1.4.3 and 1.4.5, surgery to the breast")] }),
+    links: [
+  {
+    "label": "NSABP B-06 at twenty years (New England Journal of Medicine 2002)",
+    "url": "https://doi.org/10.1056/NEJMoa022152"
+  },
+  {
+    "label": "Milan I at twenty years (New England Journal of Medicine 2002)",
+    "url": "https://doi.org/10.1056/NEJMoa020989"
+  },
+  {
+    "label": "NICE NG101 recommendations 1.4.3 and 1.4.5, surgery to the breast",
+    "url": "https://www.nice.org.uk/guidance/ng101"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized trial comparing total mastectomy, lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393820/"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized study comparing breast-conserving surgery with radical mastectomy for early breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393819/"
+  },
+  {
+    "label": "NCI lumpectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+  },
+  {
+    "label": "NCI mastectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/mastectomy"
+  },
+  {
+    "label": "NCI choosing lumpectomy or mastectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/choosing-lumpectomy-mastectomy"
+  }
+] ,
+"notes": [
+  "Lumpectomy, partial mastectomy and segmental excision can describe breast-conserving removal of a lesion with surrounding tissue. Mastectomy removes breast tissue more extensively. Skin-sparing and nipple-sparing variants retain selected outer structures while removing the underlying gland; retained skin does not mean the gland remains.",
+  "The breast operation does not specify the nodal procedure, final margins or reconstruction. Mastectomy with sentinel biopsy does not mean axillary dissection. Reconstruction reshapes or restores the breast area and does not replace cancer treatment. Either breast operation can be accompanied by radiation or systemic medicines as the setting requires.",
+  "At 20 years, Fisher and colleagues' NSABP B-06 report included 1851 women with follow-up and known nodal status and found no significant overall-survival difference among total mastectomy, lumpectomy and lumpectomy with irradiation. The death hazard ratio for lumpectomy with irradiation versus mastectomy was 0.97 (95% CI 0.83 to 1.14). Ipsilateral recurrence was 14.3% with breast irradiation versus 39.2% without; survival and local recurrence are different endpoints.",
+  "Veronesi and colleagues' Milan I trial enrolled 701 women with tumours no larger than 2 cm. At median 20 years, all-cause death was 41.2% after radical mastectomy and 41.7% after quadrantectomy with radiation. These eligible historical trial populations do not establish exact equality for every contemporary person or every disease setting.",
+  "Compare complete plans and eligibility, including lesion distribution and size relative to breast, margin findings, radiation feasibility, prior treatment, inherited risk and preferences. A larger operation does not automatically establish a survival gain. Negative margins describe evaluated local boundaries, not whole-body absence of cancer.",
+  "The amount removed and resulting breast shape vary with the lesion and operation. An illustrative breast-excision sketch does not promise an unchanged shape or show a nodal operation. Retaining skin or nipple structures differs from retaining the underlying gland; read the operative report and nodal procedure separately.",
+  "In Milan I, local recurrence at 20 years was 8.8% after quadrantectomy with radiation versus 2.3% after radical mastectomy, despite no significant survival difference. B-06 separately compared lumpectomy with and without radiation. These comparisons do not establish equal local recurrence or quantify that radiation closes most of a mastectomy-versus-conservation gap."
+],
+"asOf": "2026-11-10"
+}),
 
   term({ id: "oncoplastic-breast-surgery", name: "Oncoplastic breast surgery", category: "Procedures",
     aka: ["oncoplastic surgery", "therapeutic mammaplasty", "volume displacement", "volume replacement", "oncoplastic breast conservation"],
@@ -61,10 +105,47 @@ const terms: TermInput[] = [
 
   term({ id: "targeted-axillary-dissection", tags: ["precision"], name: "Targeted axillary dissection", category: "Procedures",
     aka: ["TAD", "clipped node removal", "marked lymph node biopsy", "MARI procedure"],
-    tldr: "When chemotherapy is given before surgery, the surgeon marks the lymph node that was known to contain cancer with a clip before treatment starts, then removes that exact node afterwards along with the sentinel nodes. It is the difference between missing leftover cancer one time in ten and one time in fifty.",
-    summary: "ACOSOG Z1071 exposed the problem. Among 525 women with biopsy-proven node-positive disease who had two or more sentinel nodes removed after chemotherapy, the sentinel nodes were clear but the axillary clearance was not in 39 cases, a false-negative rate of 12.6 percent against a pre-specified acceptable threshold of 10 percent. Chemotherapy scars and reroutes lymphatics, so the node the tracer reaches after treatment is not reliably the node that was diseased before it.\n\nThe MD Anderson prospective study fixed it by marking the node. Placing a clip in the biopsied node before chemotherapy and localising it at surgery gave a false-negative rate of 4.2 percent for the clipped node alone (95 percent confidence interval 1.4 to 9.5), against 10.1 percent for sentinel node dissection alone (4.2 to 19.8); combining the two brought it to 1.4 percent (0.03 to 7.3, p=0.03), and formal targeted axillary dissection in 85 patients gave 2.0 percent. The finding that justifies the whole technique is that the clipped node was not retrieved as a sentinel node in 23 percent of patients, and six women had negative sentinel nodes but metastasis in the clipped node.\n\nLocalisation is by iodine-125 seed, radiofrequency or magnetic marker, wire, or carbon tattoo, depending on what the unit has. Dual tracer mapping and removing at least three sentinel nodes lower the false-negative rate further.\n\nWhat happens after a clear targeted axillary dissection is the live question. NSABP B-51 has answered the radiotherapy half: regional nodal irradiation adds nothing once the nodes are pathologically clear. ATNEC is asking the surgical half and is still recruiting.",
+    tldr: "Targeted axillary dissection combines sentinel-node sampling with removal of a previously marked node. Marker recovery and the pathological result need their own documentation.",
+    summary: "In the studied post-neoadjuvant setting, a node with biopsy-confirmed metastasis is marked before treatment and localised for removal alongside mapped sentinel nodes. The marked node may not be a sentinel node. Caudle and colleagues reported a 2.0% false-negative rate (1 of 50 patients with residual disease) for targeted dissection followed by the full axillary reference procedure. This result depends on the population, technique and reference assessment and is not a guarantee for every patient or centre.\n\nLocalisation approaches include an iodine-125 seed, magnetic seed, carbon tattoo, wire-guided localisation and radiofrequency-based tags. The IMTAD primary study compared the first three; its discussion describes separate feasibility reports for wire and radiofrequency approaches, not a head-to-head comparison of every method. Carbon is detected visually, whereas the iodine and magnetic seeds are probe-detected. Mapping technique, marker recovery and examined-node number need to be documented rather than assuming identical performance across methods.\n\nSubsequent surgery and regional irradiation are separate questions. In NSABP B-51, patients with biopsy-proven cT1 to T3, cN1, M0 disease who reached ypN0 after neoadjuvant chemotherapy were randomised to regional nodal irradiation or its omission. Irradiation did not significantly improve the primary invasive breast cancer recurrence-free interval at the reported follow-up; this is not proof of no benefit in every setting. ATNEC separately studies axillary management after neoadjuvant chemotherapy; its registry lists recruiting, last updated 30 March 2026.",
     cancers: BREAST_ALL, sections: ["surgery"], technologies: ["sentinel-node"], related: ["sentinel-lymph-node-biopsy", "lymphadenectomy", "axillary-surgery-de-escalation", "neoadjuvant-versus-adjuvant-breast"], trials: ["acosog-z1071", "targeted-axillary-dissection-md-anderson", "atnec", "nsabp-b51"],
-    links: [doi("Targeted axillary dissection (Journal of Clinical Oncology 2016)", "10.1200/JCO.2015.64.0094"), doi("ACOSOG Z1071 (JAMA 2013)", "10.1001/jama.2013.278932")] }),
+    links: [
+  {
+    "label": "Targeted axillary dissection (Journal of Clinical Oncology 2016)",
+    "url": "https://doi.org/10.1200/JCO.2015.64.0094"
+  },
+  {
+    "label": "ACOSOG Z1071 (JAMA 2013)",
+    "url": "https://doi.org/10.1001/jama.2013.278932"
+  },
+  {
+    "label": "Improved Axillary Evaluation Following Neoadjuvant Therapy for Patients With Node-Positive Breast Cancer Using Selective Evaluation of Clipped Nodes: Implementation of Targeted Axillary Dissection.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26811528/"
+  },
+  {
+    "label": "Sentinel lymph node surgery after neoadjuvant chemotherapy in patients with node-positive breast cancer: the ACOSOG Z1071 (Alliance) clinical trial.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24101169/"
+  },
+  {
+    "label": "IMTAD prospective localisation study (Žatecký 2023)",
+    "url": "https://doi.org/10.1186/s12957-023-03147-x"
+  },
+  {
+    "label": "NSABP B-51/RTOG 1304 (Mamounas 2025)",
+    "url": "https://doi.org/10.1056/NEJMoa2414859"
+  },
+  {
+    "label": "ATNEC registry",
+    "url": "https://clinicaltrials.gov/study/NCT04109079"
+  }
+] ,
+"asOf": "2026-11-10",
+"notes": [
+  "Targeted axillary dissection combines sentinel sampling and localisation/removal of a previously marked node. In the studied neoadjuvant setting that node had biopsy-proven involvement before therapy. A clip and a tracer identify different properties and may or may not mark the same node. Document recovery of the marker and that node's pathology.",
+  "A negative set of mapped nodes does not establish that a separately clipped node was retrieved or cleared. Preserve side, basin, procedure, pretreatment status, therapy timing, examined-node denominator, deposit dimensions and ENE. Zero of three means no qualifying disease found in three examined nodes, not in every node or distant organ.",
+  "Boughey and colleagues' Z1071 analysis of initially cN1 disease after chemotherapy found a 12.6% false-negative rate with at least two sentinel nodes examined, missing residual disease in 39 cases; the prespecified goal was 10% or less. Among 525 patients with at least two sentinel nodes, 215 (41.0%) had no residual axillary cancer. These denominators answer different questions.",
+  "In Caudle and colleagues' prospective clipped-node study, clipped-node assessment alone had a 4.2% false-negative rate (95% CI 1.4 to 9.5). Sentinel dissection alone had 10.1% (7 of 69 with residual disease); adding the clipped node reduced it to 1.4% (95% CI 0.03 to 7.3; P = 0.03). Formal targeted dissection followed by axillary dissection had 2.0% (1 of 50; 95% CI 0.05 to 10.7). The clipped node was not a sentinel node in 23% (31 of 134), including six cases with negative sentinel nodes but cancer in the clipped node. These overlapping study analyses have different denominators and do not guarantee performance in every setting."
+]
+}),
 
   term({ id: "breast-cancer-related-lymphoedema", name: "Lymphoedema after breast cancer treatment", category: "Side effects",
     aka: ["breast cancer-related lymphoedema", "arm lymphoedema", "arm swelling after breast cancer"],

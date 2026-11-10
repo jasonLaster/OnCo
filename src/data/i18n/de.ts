@@ -503,7 +503,7 @@ export const tldr_de: Record<string, string> = {
   "parp-inhibitor": "Tabletten, die ein Ersatzsystem der DNA-Reparatur blockieren und so Krebszellen abtöten, die ihr Hauptreparatursystem (BRCA) bereits verloren haben.",
   "pathology-foundation-model": "Sehr große KI-Modelle, die mit Millionen von Gewebeschnitten oder Bildaufnahmen trainiert wurden und sich an fast jede diagnostische Frage anpassen lassen.",
   payload: "Die Payload ist das Gift, das ein ADC transportiert, meist eine Chemotherapie, die für sich allein viel zu giftig wäre.",
-  pcr: "Kein invasiver Krebs mehr in Brust und Lymphknoten, wenn der Chirurg das Gewebe nach der Behandlung vor der Operation entfernt.",
+
   pd1: "PD-1 ist eine Bremse auf T-Zellen. Sie zu blockieren setzt das Immunsystem gegen den Tumor frei und hat einige zuvor unheilbare Krebsarten geheilt.",
   "pd1-checkpoint": "PD-1 und CTLA-4 helfen, T-Zell-Antworten zu regulieren. Eine Änderung ihrer Signale allein belegt weder die Erkennung noch die Abtötung von Krebs oder einen Behandlungsnutzen.",
   pdl1: "PD-L1 ist die Seite des Tumors an der PD-1-Bremse und zugleich der Biomarker, der entscheidet, wer eine Immuntherapie bekommt.",
@@ -2280,7 +2280,7 @@ export const tldr_de: Record<string, string> = {
   rambam: "Das tertiäre Krankenhaus Nordisraels, dem Technion angegliedert, wo die Entdeckungen zum Ubiquitin-Proteasom-System gemacht wurden, auf denen Proteasominhibitoren und Degrader beruhen.",
   "rasolute-302": "Die Studie, die das Überleben beim vorbehandelten Bauchspeicheldrüsenkrebs nahezu verdoppelte, vorgestellt in der Plenarsitzung der ASCO 2026. Das größte Ergebnis in der Geschichte dieser Krankheit.",
   ratify: "Die Studie, die FLT3 zur ersten gezielt behandelbaren Mutation bei AML machte: Die Zugabe von midostaurin zur Chemotherapie verdreifachte das mediane Überleben.",
-  rcb: "Ein Score dafür, wie viel Krebs nach der Behandlung vor der Operation noch übrig ist, von 0 (nichts) bis III (viel).",
+
   "re-irradiation": "Eine bereits bestrahlte Region erneut bestrahlen, was früher als unmöglich galt, weil sich gesundes Gewebe an die erste Dosis erinnert. Moderne Präzisionstechniken machen es bei ausgewählten Patienten möglich.",
   "rebecca-dent": "Internistische Onkologin mit Schwerpunkt Brustkrebs und stellvertretende CEO für den klinischen Betrieb am National Cancer Centre Singapore, international führend bei Studien zum dreifach negativen Brustkrebs.",
   "redifferentiation-rai": "Eine kurze Behandlung mit einer MEK- oder BRAF-Tablette kann einen jodresistenten Schilddrüsenkrebs dazu bringen, wieder Jod aufzunehmen, sodass radioaktives Jod erneut wirken kann.",
@@ -2394,7 +2394,7 @@ export const tldr_de: Record<string, string> = {
   tivozanib: "Tivozanib ist eine hochselektive VEGF-Rezeptor-Tablette für Nierenkrebs nach zwei oder mehr Vortherapien, bemerkenswert wegen ihrer Verträglichkeit und wegen einer Studie, die der erneuten Immuntherapie die Tür verschloss.",
   "tki-plus-blinatumomab-ph-all": "Eine Tablette, die den Motor der Leukämie abschaltet, plus eine Immuntherapie, die die überlebenden Zellen beseitigt, ganz ohne Chemotherapie.",
   tmucih: "Die Wiege der chinesischen Onkologie (ein Missionskrankenhaus von 1861, 1952 unter Jin Xianzhai zum Krebskrankenhaus gemacht) und ein nationales Zentrum für Brust- und Bauchspeicheldrüsenkrebs.",
-  "tnm-staging": "Die TNM-Klassifikation ist das weltweit einheitliche System zur Beschreibung von Tumorgröße (T), Lymphknotenbefall (N) und Fernmetastasen (M).",
+
   "tohoku-university-hospital": "Das Universitätsklinikum von Sendai und klinischer Arm der Tohoku Medical Megabank, mit Schwerpunkten in Brustkrebs, Gastroenterologie und Bildgebung.",
   "toni-choueiri": "Führt die weltweite Nierenkrebsforschung an, einschließlich der Studien zu adjuvantem Pembrolizumab und Belzutifan.",
   "topaz-1": "TOPAZ-1 war der erste Erfolg der Immuntherapie beim Gallengangskrebs, mit einem kleinen medianen Gewinn, aber einem wachsenden Anteil von Langzeitüberlebenden.",
@@ -2670,7 +2670,7 @@ export const tldr_de: Record<string, string> = {
   "david-porter": "Behandelte die ersten erwachsenen CLL-Patienten mit CAR-T und berichtete über ein Jahrzehnt anhaltender Remissionen.",
   "dawna-1": "Die Studie, die Dalpiciclib zum ersten zugelassenen chinesischen CDK4/6-Inhibitor machte; in Kombination mit Fulvestrant verlängerte sie die Zeit bis zum Wachstum des Brustkrebses auf mehr als das Doppelte.",
   "day-one-biopharmaceuticals": "Onkologieunternehmen mit pädiatrischem Fokus, dessen Tovorafenib die erste zielgerichtete Therapie für niedriggradige Gliome im Kindesalter wurde.",
-  dcis: "Brustkrebszellen, die auf das Innere der Milchgänge beschränkt sind und meist bei der Mammographie als Verkalkungen entdeckt werden. An sich ist es nicht lebensbedrohlich, doch etwa ein Drittel würde unbehandelt zu invasivem Krebs fortschreiten.",
+
   "dcruz-anil": "Leitete die Studie des Tata Memorial, die eine jahrzehntealte Frage klärte, indem sie zeigte, dass die Entfernung der Halslymphknoten bei der ersten Operation eines frühen Mundhöhlenkarzinoms Leben rettet.",
   "dcvax-l": "Ein personalisierter Impfstoff aus den eigenen Immunzellen und dem Tumor des Patienten. Seine 20 Jahre alte Phase-3-Studie berichtete ein längeres Überleben, aber die Art der Auswertung des Ergebnisses hat das Fachgebiet gespalten.",
   "deauville-score": "Ein Score von 1 bis 5 dafür, wie hell ein Lymphom im PET im Vergleich zur Leber erscheint; 1-3 gilt als komplettes metabolisches Ansprechen.",
@@ -3394,7 +3394,7 @@ export const tldr_de: Record<string, string> = {
   "secondary-malignancy": "Ein neuer, anderer Krebs, der durch die Behandlung des ersten verursacht wird: Leukämie nach alkylierender Chemotherapie oder PARP-Inhibitoren, solide Tumoren in bestrahltem Gewebe Jahrzehnte später und selten ein T-Zell-Lymphom nach CAR-T. Pro Patient selten, aber am wichtigsten für diejenigen, die jung geheilt wurden.",
   selinexor: "Selinexor ist eine First-in-Class-Tablette, die Tumorsuppressorproteine im Zellkern einschließt; beim Myelom zugelassen, scheiterte es 2026 an seiner Prüfung beim Endometriumkarzinom.",
   selumetinib: "Selumetinib (Koselugo) ist das erste Medikament für Kinder und Erwachsene mit Neurofibromatose Typ 1, deren plexiforme Neurofibrome, gutartige, aber entstellende und schmerzhafte Nerventumoren, nicht operativ entfernt werden können.",
-  "sentinel-lymph-node-biopsy": "Das Auffinden und Entfernen der ersten ein oder zwei Lymphknoten, in die ein Tumor abfließt, um zu prüfen, ob sich der Krebs ausgebreitet hat, statt die gesamte Lymphknotenregion zu entfernen.",
+
   severance: "Das Severance Hospital beherbergt das Yonsei Cancer Center und Koreas erstes Zentrum für Schwerionentherapie (Kohlenstoff) (2023).",
   "sherry-lansing": "Die frühere Paramount-Chefin war Mitgründerin von Stand Up To Cancer, dessen Fernsehsondersendungen und Dream Teams über 800 Millionen Dollar für kooperative Forschung zugesagt haben, die in mehrere zugelassene Krebsmedikamente einfloss.",
   "sibylle-loibl": "Leitet die German Breast Group, deren GeparX-Studien die neoadjuvante Chemotherapie und Immuntherapie beim Brustkrebs definierten.",

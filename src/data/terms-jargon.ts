@@ -22,10 +22,157 @@ export const termsJargon: TermInput[] = [
   t({ id: "cystectomy", name: "Radical cystectomy", category: "Procedures", aka: ["cystectomy", "cystectomies"], tldr: "Removing the bladder (and nearby organs) for bladder cancer that has grown into the muscle wall; urine is then diverted through a stoma or a new bladder made of bowel.", summary: "The standard for muscle-invasive bladder cancer (MIBC), preceded by cisplatin-based neoadjuvant chemotherapy or, since NIAGARA, chemo-immunotherapy. Reconstruction uses an ileal conduit (external bag) or an orthotopic neobladder. It is a major operation with 60% complication rates and a permanent change to daily life, so bladder-sparing trimodality therapy (TURBT plus chemoradiation) and, for patients with complete response to enfortumab vedotin plus pembrolizumab, bladder preservation trials are active alternatives.", wikipedia: W("Cystectomy"), cancers: ["urothelial"], trials: ["niagara"], related: ["turbt", "stoma", "nmibc-vs-mibc", "organ-preservation"], sections: ["surgery"] }),
   t({ id: "nephrectomy", name: "Nephrectomy", category: "Procedures", aka: ["partial nephrectomy", "radical nephrectomy", "cytoreductive nephrectomy", "nephrectomies"], tldr: "Removing a kidney (radical) or just the tumour-bearing part of it (partial).", summary: "Partial nephrectomy, usually robotic, is preferred for small renal masses because it preserves kidney function with equal cancer control; radical nephrectomy is for larger or central tumours. Cytoreductive nephrectomy (removing the kidney despite metastases) lost its routine role after CARMENA in the targeted-therapy era but is used selectively after response to immunotherapy. Adjuvant pembrolizumab (KEYNOTE-564) follows resection of high-risk disease.", wikipedia: W("Nephrectomy"), cancers: ["rcc"], technologies: ["robotic-surgery", "thermal-ablation"], related: ["active-surveillance", "debulking"], sections: ["surgery"] }),
   t({
-    asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Mastectomy"},{"label":"Macmillan: removing the breast (mastectomy)","url":"https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/removing-the-breast-mastectomy"},{"label":"NHS: mastectomy","url":"https://www.nhs.uk/tests-and-treatments/mastectomy/"},{"label":"NICE NG101: early and locally advanced breast cancer, recommendations (updated 2025)","url":"https://www.nice.org.uk/guidance/ng101/chapter/Recommendations"},{"label":"Cancer Research UK: breast reconstruction","url":"https://www.cancerresearchuk.org/about-cancer/breast-cancer/treatment/surgery/breast-reconstruction"},{"label":"NCI: mastectomy, nodal distinctions and reconstruction","url":"https://www.cancer.gov/types/breast/treatment/surgery/mastectomy"},{"label":"NCI: surgical treatment roles","url":"https://www.cancer.gov/types/breast/treatment/surgery"}], id: "mastectomy", name: "Mastectomy", category: "Procedures", aka: ["mastectomies", "risk-reducing mastectomy", "prophylactic mastectomy", "nipple-sparing mastectomy"], tldr: "Mastectomy removes breast tissue. The exact operation, nodal procedure and reconstruction are separate parts of the plan, and removal does not automatically eliminate the need for radiation or medicines.", summary: "Different mastectomy procedures remove different skin, nipple or chest-wall structures and may be accompanied by a separate nodal operation. The operative report specifies what was removed; pathology describes the examined tissue and boundaries. Neither the operation’s name nor a negative local finding establishes the absence of cancer throughout the body.\n\nReconstruction can use implants or a person’s tissue and may occur immediately or later. It addresses restoration or reshaping, rather than replacing indicated cancer treatment. Radiation and systemic therapy decisions retain disease extent, prior treatment and the full plan; a margin finding does not universally choose completion mastectomy over another approach.", wikipedia: W("Mastectomy"), cancers: ["breast-hr-positive", "breast-her2-positive", "tnbc"], targets: ["brca"], related: ["lumpectomy", "sentinel-lymph-node-biopsy", "gbrca-mutation"], sections: ["surgery"] }),
+    asOf:"2026-11-10", links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mastectomy"
+  },
+  {
+    "label": "Macmillan: removing the breast (mastectomy)",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/removing-the-breast-mastectomy"
+  },
+  {
+    "label": "NHS: mastectomy",
+    "url": "https://www.nhs.uk/tests-and-treatments/mastectomy/"
+  },
+  {
+    "label": "NICE NG101: early and locally advanced breast cancer, recommendations (updated 2025)",
+    "url": "https://www.nice.org.uk/guidance/ng101/chapter/Recommendations"
+  },
+  {
+    "label": "Cancer Research UK: breast reconstruction",
+    "url": "https://www.cancerresearchuk.org/about-cancer/breast-cancer/treatment/surgery/breast-reconstruction"
+  },
+  {
+    "label": "NCI: mastectomy, nodal distinctions and reconstruction",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/mastectomy"
+  },
+  {
+    "label": "NCI: surgical treatment roles",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized trial comparing total mastectomy, lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393820/"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized study comparing breast-conserving surgery with radical mastectomy for early breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393819/"
+  },
+  {
+    "label": "NCI lumpectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+  },
+  {
+    "label": "NCI choosing lumpectomy or mastectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/choosing-lumpectomy-mastectomy"
+  }
+], id: "mastectomy", name: "Mastectomy", category: "Procedures", aka: ["mastectomies", "risk-reducing mastectomy", "prophylactic mastectomy", "nipple-sparing mastectomy"], tldr: "Mastectomy removes breast tissue. The exact operation, nodal procedure and reconstruction are separate parts of the plan, and removal does not automatically eliminate the need for radiation or medicines.", summary: "Different mastectomy procedures remove different skin, nipple or chest-wall structures and may be accompanied by a separate nodal operation. The operative report specifies what was removed; pathology describes the examined tissue and boundaries. Neither the operation’s name nor a negative local finding establishes the absence of cancer throughout the body.\n\nReconstruction can use implants or a person’s tissue and may occur immediately or later. It addresses restoration or reshaping, rather than replacing indicated cancer treatment. Radiation and systemic therapy decisions retain disease extent, prior treatment and the full plan; a margin finding does not universally choose completion mastectomy over another approach.", wikipedia: W("Mastectomy"), cancers: ["breast-hr-positive", "breast-her2-positive", "tnbc"], targets: ["brca"], related: [
+  "lumpectomy",
+  "sentinel-lymph-node-biopsy",
+  "gbrca-mutation",
+  "breast-conserving-surgery-versus-mastectomy"
+], sections: ["surgery"] ,
+"notes": [
+  "Read the breast-conserving surgery versus mastectomy comparison for differences in gland removal, retained skin or nipple, local recurrence and survival evidence. The breast operation does not specify the nodal operation, final margins or reconstruction; record each separately."
+]
+}),
   t({
-    asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Lumpectomy"},{"label":"Macmillan: breast-conserving surgery","url":"https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/breast-conserving-surgery-for-breast-cancer"},{"label":"NICE NG101: early and locally advanced breast cancer, recommendations (updated 2025)","url":"https://www.nice.org.uk/guidance/ng101/chapter/Recommendations"},{"label":"Breast Cancer Now: surgery for primary breast cancer","url":"https://breastcancernow.org/about-breast-cancer/treatment/surgery-for-primary-breast-cancer"},{"label":"Veronesi et al., twenty-year follow-up of breast-conserving surgery versus radical mastectomy, Milan trial (NEJM 2002)","url":"https://doi.org/10.1056/NEJMoa020989"},{"label":"Fisher et al., twenty-year follow-up of total mastectomy, lumpectomy, and lumpectomy plus irradiation, NSABP B-06 (NEJM 2002)","url":"https://doi.org/10.1056/NEJMoa022152"},{"label":"EBCTCG, radiotherapy after breast-conserving surgery: meta-analysis of 10,801 women in 17 randomised trials (Lancet 2011)","url":"https://doi.org/10.1016/S0140-6736(11)61629-2"},{"label":"NCI: lumpectomy, pathology, other treatment and reconstruction","url":"https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"}], id: "lumpectomy", name: "Lumpectomy (breast-conserving surgery)", category: "Procedures", aka: ["breast-conserving", "breast-conserving surgery", "breast conservation", "wide excision"], tldr: "Lumpectomy removes a breast tumour with surrounding tissue while preserving the rest of the breast. Margin findings, nodal procedures and other treatments need separate description.", summary: "The removed tissue is examined by pathology, including its cut boundaries and any separately submitted margins. The operation’s name does not establish a negative final margin, specify the nodal procedure or exclude microscopic disease elsewhere. A further operation depends on the findings and applicable clinical standard, rather than the word lumpectomy alone.\n\nBreast-conserving treatment commonly includes radiation, and medicines may be given before or after surgery. Oncoplastic reshaping or later reconstruction is a separate role. Compare complete treatment plans, local outcomes, recovery and harms; greater removal does not automatically establish better survival for every person.", wikipedia: W("Lumpectomy"), cancers: ["breast-hr-positive", "breast-her2-positive", "tnbc"], related: ["mastectomy", "resection-margins", "hypofractionation"], sections: ["surgery", "radiation"] }),
-  t({ id: "sentinel-lymph-node-biopsy", tags: ["precision"], name: "Sentinel node biopsy", category: "Procedures", aka: ["sentinel lymph node biopsy", "sentinel lymph node", "sentinel node", "sentinel lymph node mapping", "SLNB"], tldr: "Finding and removing the first one or two lymph nodes a tumour drains to, to see whether cancer has spread, instead of removing the whole nodal basin.", summary: "A dye or radioactive tracer (technetium tilmanocept, indocyanine green, blue dye) injected at the tumour travels to the 'sentinel' node, which is removed and examined. If it is clear, the remaining nodes are almost certainly clear and a full dissection with its lymphoedema risk is avoided. Standard in breast cancer, melanoma (from ~0.8 mm Breslow), endometrial and vulval cancers and increasingly oral cavity cancer; even positive sentinel nodes often no longer trigger full axillary dissection (Z0011, SENOMAC).", wikipedia: W("Sentinel_lymph_node"), technologies: ["sentinel-node", "fluorescence-guided-surgery"], related: ["lymphadenectomy", "lymph-node-status", "tilmanocept-tc99m"], sections: ["surgery"] }),
+    asOf:"2026-11-10", links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lumpectomy"
+  },
+  {
+    "label": "Macmillan: breast-conserving surgery",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/breast-conserving-surgery-for-breast-cancer"
+  },
+  {
+    "label": "NICE NG101: early and locally advanced breast cancer, recommendations (updated 2025)",
+    "url": "https://www.nice.org.uk/guidance/ng101/chapter/Recommendations"
+  },
+  {
+    "label": "Breast Cancer Now: surgery for primary breast cancer",
+    "url": "https://breastcancernow.org/about-breast-cancer/treatment/surgery-for-primary-breast-cancer"
+  },
+  {
+    "label": "Veronesi et al., twenty-year follow-up of breast-conserving surgery versus radical mastectomy, Milan trial (NEJM 2002)",
+    "url": "https://doi.org/10.1056/NEJMoa020989"
+  },
+  {
+    "label": "Fisher et al., twenty-year follow-up of total mastectomy, lumpectomy, and lumpectomy plus irradiation, NSABP B-06 (NEJM 2002)",
+    "url": "https://doi.org/10.1056/NEJMoa022152"
+  },
+  {
+    "label": "EBCTCG, radiotherapy after breast-conserving surgery: meta-analysis of 10,801 women in 17 randomised trials (Lancet 2011)",
+    "url": "https://doi.org/10.1016/S0140-6736(11)61629-2"
+  },
+  {
+    "label": "NCI: lumpectomy, pathology, other treatment and reconstruction",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized trial comparing total mastectomy, lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393820/"
+  },
+  {
+    "label": "Twenty-year follow-up of a randomized study comparing breast-conserving surgery with radical mastectomy for early breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12393819/"
+  },
+  {
+    "label": "NCI mastectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/mastectomy"
+  },
+  {
+    "label": "NCI choosing lumpectomy or mastectomy",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/choosing-lumpectomy-mastectomy"
+  }
+], id: "lumpectomy", name: "Lumpectomy (breast-conserving surgery)", category: "Procedures", aka: ["breast-conserving", "breast-conserving surgery", "breast conservation", "wide excision"], tldr: "Lumpectomy removes a breast tumour with surrounding tissue while preserving the rest of the breast. Margin findings, nodal procedures and other treatments need separate description.", summary: "The removed tissue is examined by pathology, including its cut boundaries and any separately submitted margins. The operation’s name does not establish a negative final margin, specify the nodal procedure or exclude microscopic disease elsewhere. A further operation depends on the findings and applicable clinical standard, rather than the word lumpectomy alone.\n\nBreast-conserving treatment commonly includes radiation, and medicines may be given before or after surgery. Oncoplastic reshaping or later reconstruction is a separate role. Compare complete treatment plans, local outcomes, recovery and harms; greater removal does not automatically establish better survival for every person.", wikipedia: W("Lumpectomy"), cancers: ["breast-hr-positive", "breast-her2-positive", "tnbc"], related: [
+  "mastectomy",
+  "resection-margins",
+  "hypofractionation",
+  "breast-conserving-surgery-versus-mastectomy"
+], sections: ["surgery", "radiation"] ,
+"notes": [
+  "Read the breast-conserving surgery versus mastectomy comparison for differences in gland removal, retained skin or nipple, local recurrence and survival evidence. The breast operation does not specify the nodal operation, final margins or reconstruction; record each separately."
+]
+}),
+  t({ id: "sentinel-lymph-node-biopsy", tags: ["precision"], name: "Sentinel node biopsy", category: "Procedures", aka: ["sentinel lymph node biopsy", "sentinel lymph node", "sentinel node", "sentinel lymph node mapping", "SLNB"], tldr: "Sentinel-node biopsy identifies and examines selected draining nodes. Its result describes that sampling procedure, with limits that depend on the disease and treatment setting.", summary: "A dye, radiotracer or other mapping agent identifies draining nodes for removal and pathological examination. Sentinel sampling and broader nodal dissection provide different amounts of tissue and have different risks. Neither a negative sampled node nor the operation name establishes the status of every regional node or distant organ.\n\nThe NCI fact sheet describes a radioactive tracer, blue dye or both for mapping. It identifies breast cancer and melanoma as the most common uses and notes use or investigation in other cancers, including endometrial, penile, vulvar, cervical and head-and-neck disease. Eligibility and the next operation depend on the disease-specific setting; a negative result can be false negative. A thickness threshold used in melanoma must not be transferred to breast cancer.", wikipedia: W("Sentinel_lymph_node"), technologies: ["sentinel-node", "fluorescence-guided-surgery"], related: [
+  "lymphadenectomy",
+  "lymph-node-status",
+  "tilmanocept-tc99m"
+], sections: ["surgery"] ,
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sentinel_lymph_node"
+  },
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "NCI sentinel-node biopsy",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet"
+  },
+  {
+    "label": "Sentinel lymph node surgery after neoadjuvant chemotherapy in patients with node-positive breast cancer: the ACOSOG Z1071 (Alliance) clinical trial.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24101169/"
+  },
+  {
+    "label": "Improved Axillary Evaluation Following Neoadjuvant Therapy for Patients With Node-Positive Breast Cancer Using Selective Evaluation of Clipped Nodes: Implementation of Targeted Axillary Dissection.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26811528/"
+  }
+],
+"notes": [
+  "Sentinel biopsy removes tracer-identified draining nodes for pathological examination; there can be more than one. Axillary dissection removes a broader tissue packet from specified axillary levels, not every regional chain and not a universally fixed number of nodes. CAP separately uses the sn modifier when fewer than six sentinel and nonsentinel nodes are removed.",
+  "For retrieval of a previously marked positive node after neoadjuvant therapy and the Z1071 and clipped-node false-negative analyses, see targeted axillary dissection. Sentinel mapping alone does not document recovery of that separate marker.",
+  "False-negative rate compares the sampled test with a defined reference among those with disease. Nodal surgery can cause lymphoedema and other harms; sentinel biopsy is not risk-free and dissection does not guarantee complications. A positive sentinel result does not select one universal subsequent operation without the full treatment setting.",
+  "In a fictional mapping sketch, tracer-identified nodes A and B and a separately clipped node C may overlap: one node can carry both designations. A wider packet outline depicts broader sampling. Mapping lines are procedural tracing, not observed routes of cancer spread. A negative sentinel result cannot establish that C was retrieved.",
+  "Isolated tumour cells and micrometastases are reported differently under nodal classification; a binary positive/negative label can hide those distinctions. A false-negative rate needs the tested procedure, reference assessment and denominator with disease. It is not the probability that every negative result missed disease, and it says nothing about all distant organs."
+]
+}),
   t({ id: "lymphadenectomy", name: "Lymphadenectomy (lymph node dissection)", category: "Procedures", aka: ["lymph node dissection", "nodal dissection", "axillary dissection", "axillary lymph node dissection", "neck dissection", "D2 lymphadenectomy", "D2 dissection", "pelvic lymph node dissection", "retroperitoneal lymph node dissection", "mediastinal node dissection", "lymph node sampling"], tldr: "Surgically removing the lymph nodes that drain a tumour, both to stage the cancer and to clear any spread.", summary: "The extent is organ-specific: D2 gastrectomy removes perigastric and regional nodes; axillary dissection clears levels I-II for breast cancer; neck dissection is graded by levels for head and neck cancer; retroperitoneal dissection is used in testicular cancer. It improves staging accuracy (and so adjuvant decisions) and sometimes cure, at the cost of lymphoedema, nerve injury and longer surgery. Sentinel node biopsy has replaced it wherever a negative sentinel node is reliable.", wikipedia: W("Lymphadenectomy"), related: ["sentinel-lymph-node-biopsy", "lymph-node-status", "gastrectomy"], sections: ["surgery"] }),
   t({ id: "gastrectomy", name: "Gastrectomy", category: "Procedures", aka: ["total gastrectomy", "subtotal gastrectomy", "gastrectomies"], tldr: "Removing part (subtotal) or all (total) of the stomach for stomach cancer, with the bowel joined to what remains.", summary: "Curative surgery for localised gastric cancer, combined with D2 lymphadenectomy and perioperative FLOT chemotherapy in the West or adjuvant chemotherapy in East Asia, where screening finds earlier disease and endoscopic resection can cure tumours confined to the mucosa. Laparoscopic and robotic approaches are standard in Korea and Japan (KLASS, JCOG trials). Consequences include small-meal eating, dumping, vitamin B12 deficiency and weight loss, hence the drive to avoid palliative gastrectomy in metastatic disease.", wikipedia: W("Gastrectomy"), cancers: ["gastric", "early-gastric-cancer", "esophageal"], related: ["lymphadenectomy", "endoscopic-resection", "flot"], sections: ["surgery"] }),
   t({ id: "colectomy", name: "Colectomy", category: "Procedures", aka: ["hemicolectomy", "right hemicolectomy", "left hemicolectomy", "segmental colectomy", "colectomies"], tldr: "Removing the part of the colon containing the cancer along with its blood supply and lymph nodes, then joining the ends.", summary: "Right or left hemicolectomy removes the affected half of the colon; the bowel is usually reconnected without a permanent stoma. Laparoscopic colectomy is oncologically equivalent to open surgery (COST, CLASICC). At least 12 nodes should be examined for accurate staging; adjuvant FOLFOX or CAPOX follows for stage III and high-risk stage II, increasingly guided by ctDNA (DYNAMIC, CIRCULATE). Rectal cancer uses different operations (total mesorectal excision, abdominoperineal resection).", wikipedia: W("Colectomy"), cancers: ["colorectal"], trials: ["dynamic", "circulate-japan"], related: ["total-mesorectal-excision", "abdominoperineal-resection", "folfox-family"], sections: ["surgery"] }),
@@ -82,7 +229,53 @@ export const termsJargon: TermInput[] = [
   t({ id: "pleural-effusion", name: "Malignant pleural effusion and ascites", category: "Anatomy", aka: ["pleural effusion", "effusion", "effusions", "ascites", "malignant ascites", "paracentesis"], tldr: "Fluid that builds up around the lung (pleural effusion) or in the abdomen (ascites) because cancer cells irritate the lining and block lymph drainage; it causes breathlessness or a swollen, tight belly.", summary: "Both are signs of advanced disease (stage IV in lung cancer; a criterion in Child-Pugh and BCLC for liver cancer) and both are diagnosed and relieved by draining the fluid, which can also be sent for cytology and ctDNA. Repeated drainage, indwelling catheters, pleurodesis and, for ascites, diuretics or intraperitoneal therapy are the management options; effective systemic treatment of the cancer is what stops the fluid re-forming. Ovarian cancer classically presents with ascites.", wikipedia: W("Malignant_pleural_effusion"), cancers: ["nsclc", "ovarian", "hcc", "mesothelioma"], related: ["pleura", "pleurodesis", "peritoneum", "child-pugh"], sections: ["supportive-care"] }),
   t({ id: "retroperitoneum", name: "Retroperitoneum", category: "Anatomy", aka: ["retroperitoneal", "retroperitoneal sarcoma", "retroperitoneal nodes", "para-aortic nodes", "para-aortic"], tldr: "The space at the back of the abdomen, behind the gut's lining, holding the kidneys, adrenals, pancreas, aorta and the para-aortic lymph nodes. Tumours here grow large before they are felt.", summary: "Retroperitoneal sarcomas (liposarcoma, leiomyosarcoma) are removed en bloc with adjacent organs and were the subject of the STRASS trials of preoperative radiotherapy; kidney, adrenal and pancreatic cancers are retroperitoneal organs. Para-aortic and retroperitoneal lymph nodes are staging sites for testicular, cervical, endometrial and gastric cancers, and retroperitoneal lymph node dissection remains part of testicular cancer treatment. Retroperitoneal spread often presents as back pain or ureteric obstruction.", wikipedia: W("Retroperitoneal_space"), cancers: ["sarcoma", "rcc", "pancreatic"], related: ["lymphadenectomy", "lymph-node-status"], sections: ["surgery"] }),
   t({
-    asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Lymph_node_metastasis"},{"label":"B-51 full report: clinical stage, sampled nodes and isolated-cell eligibility","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"},{"label":"A011202: greater-than-0.2-mm nodal inclusion threshold","url":"https://clinicaltrials.gov/study/NCT01901094"},{"label":"NCI: breast surgery and nodal assessment","url":"https://www.cancer.gov/types/breast/treatment/surgery"}], id: "lymph-node-status", name: "Lymph node status (node-positive / node-negative)", category: "Anatomy", aka: ["nodal burden", "number of positive nodes", "lymph-node status", "node-positive", "node-negative", "nodal", "nodal status", "nodal staging", "nodal disease", "lymph node involvement", "lymph node metastases", "lymph node-positive", "N0", "regional nodes", "positive nodes", "involved nodes"], tldr: "Lymph-node status classifies nodal involvement at a specified time and by a particular assessment. It does not measure every cancer cell throughout the body.", summary: "Clinical assessment before treatment and pathological assessment of removed nodes are different observations. Record the organ, method, timing, prefixes and modifiers rather than using positive or negative alone. A negative sampled-node result does not establish that every unsampled node is negative.\n\nIn the breast B-51 trial, clinical N1 described movable ipsilateral level I/II axillary involvement. Do not replace this clinical definition with a pathological one-to-three-node count. After neoadjuvant treatment, ypN0 is a pathological classification and can have modifiers. B-51 permitted ypN0i+ isolated tumour cells but did not collect their prevalence or specific outcomes.\n\nThe separate A011202 registry requires a nodal metastasis greater than 0.2 millimetres and treats deposits at or below 0.2 millimetres as N0i+. Those protocol rules do not make every use of positive or negative interchangeable. Nodal response alone is not a complete response in the breast or proof of whole-body clearance.", wikipedia: W("Lymph_node_metastasis"), related: ["sentinel-lymph-node-biopsy", "lymphadenectomy", "tnm-staging", "lymphovascular-invasion"], trials: ["monarche"], sections: ["surgery"] }),
+    asOf:"2026-11-10", links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lymph_node_metastasis"
+  },
+  {
+    "label": "B-51 full report: clinical stage, sampled nodes and isolated-cell eligibility",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+  },
+  {
+    "label": "A011202: greater-than-0.2-mm nodal inclusion threshold",
+    "url": "https://clinicaltrials.gov/study/NCT01901094"
+  },
+  {
+    "label": "NCI: breast surgery and nodal assessment",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery"
+  },
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "NCI professional PDQ: AJCC eighth-edition breast staging tables",
+    "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+  },
+  {
+    "label": "AJCC current staging-system table, 2026",
+    "url": "https://www.facs.org/media/c5ik5tkr/ajcc-current-staging-system-2026.pdf"
+  }
+], id: "lymph-node-status", name: "Lymph node status (node-positive / node-negative)", category: "Anatomy", aka: ["nodal burden", "number of positive nodes", "lymph-node status", "node-positive", "node-negative", "nodal", "nodal status", "nodal staging", "nodal disease", "lymph node involvement", "lymph node metastases", "lymph node-positive", "N0", "regional nodes", "positive nodes", "involved nodes"], tldr: "Lymph-node status classifies nodal involvement at a specified time and by a particular assessment. It does not measure every cancer cell throughout the body.", summary: "Clinical assessment before treatment and pathological assessment of removed nodes are different observations. Record the organ, method, timing, prefixes and modifiers rather than using positive or negative alone. A negative sampled-node result does not establish that every unsampled node is negative.\n\nIn the breast B-51 trial, clinical N1 described movable ipsilateral level I/II axillary involvement. Do not replace this clinical definition with a pathological one-to-three-node count. After neoadjuvant treatment, ypN0 is a pathological classification and can have modifiers. B-51 permitted ypN0i+ isolated tumour cells but did not collect their prevalence or specific outcomes.\n\nThe separate A011202 registry requires a nodal metastasis greater than 0.2 millimetres and treats deposits at or below 0.2 millimetres as N0i+. Those protocol rules do not make every use of positive or negative interchangeable. Nodal response alone is not a complete response in the breast or proof of whole-body clearance.", wikipedia: W("Lymph_node_metastasis"), related: [
+  "sentinel-lymph-node-biopsy",
+  "lymphadenectomy",
+  "tnm-staging",
+  "lymphovascular-invasion",
+  "internal-mammary-nodes",
+  "lymphatic-drainage-and-axilla"
+], trials: ["monarche"], sections: ["surgery"] ,
+"notes": [
+  "For AJCC eighth-edition breast N categories, first preserve clinical cN, pathological pN or post-neoadjuvant ypN and the side and regional basin. Clinical cN1 describes movable ipsilateral level I/II axillary involvement, not a one-to-three-node surgical count. cN2a denotes fixed or matted level I/II nodes; cN2b internal mammary involvement without axillary involvement. cN3a, cN3b and cN3c describe infraclavicular, combined internal mammary/axillary and supraclavicular patterns respectively.",
+  "Pathological deposits use dimensions and cell context: isolated tumour cells are at most 0.2 mm, micrometastases exceed 0.2 mm but are at most 2 mm, and macrometastases exceed 2 mm. The approximately 200-cell guideline concerns one node profile, not counts added across levels. Dispersed minimal disease needs pathological judgement. ITC-only nodes are not counted as positive for AJCC N classification.",
+  "pN0(i+) denotes ITCs only; pN0(mol+) denotes molecular detection without histologically identified ITCs. pN1mi is micrometastatic disease only. If a macrometastasis is present, pN1a covers 1 to 3 involved axillary nodes, pN2a 4 to 9 and pN3a at least 10. Infraclavicular involvement is another location-defined route to pN3a. Nodes with micrometastases join the involved count when a macrometastasis exists; multiple micrometastases alone do not become pN2a.",
+  "Internal mammary sentinel involvement excluding ITCs is pN1b; combined with pN1a it is pN1c. Clinically detected internal mammary disease with pathologically negative axillary nodes is pN2b. pN3b includes pN1a or pN2a with clinically detected internal mammary involvement, or pN2a with internal mammary sentinel involvement; pN3c is ipsilateral supraclavicular involvement. These patterns cannot be reduced to node count alone.",
+  "A needle biopsy can confirm clinical involvement without measuring the entire deposit. Rare cN1mi requires the appropriate resected-node clinical context, rather than assigning a deposit size from needle material. If pathological nodes are unavailable, do not assume pN0. Intramammary nodes count with axillary nodes; regional ENE does not alone make N3 or M1.",
+  "Two of five involved means two among the five examined, not 40% of all regional nodes. Three 0.8-mm axillary deposits in a surgery-first example are pN1mi, whereas three involved axillary nodes including a 4-mm deposit support pN1a, assuming no other regional involvement. After therapy exclude adjacent treatment fibrosis from the contiguous residual staging dimension and retain baseline cN separately.",
+  "Clinical cN0 means no regional nodal metastasis identified by clinical assessment; cNX means regional nodes cannot be assessed. Level III axillary nodes are infraclavicular. Clinical cN3a is a location-based infraclavicular pattern; cN3b combines internal mammary and axillary involvement, and cN3c is supraclavicular. Ten involved axillary nodes is a pathological pN3a count criterion, not the definition of clinical cN3."
+]
+}),
   t({ id: "gej", name: "Gastro-oesophageal junction (GEJ)", category: "Anatomy", aka: ["GEJ", "GOJ", "gastroesophageal junction", "gastro-oesophageal junction", "oesophagogastric junction", "junctional", "Siewert", "esophagogastric junction"], tldr: "Where the food pipe meets the stomach. Cancers here are classed by how far above or below the junction they centre (Siewert I-III), which decides whether they are treated like oesophageal or stomach cancer.", summary: "Adenocarcinoma of the GEJ has risen sharply in Western countries with obesity and reflux (via Barrett's oesophagus). Siewert type I (mainly oesophageal) is treated with chemoradiation (CROSS) and oesophagectomy; type III (mainly gastric) with perioperative FLOT and extended gastrectomy; type II either way. Drug trials for HER2, PD-L1 and claudin 18.2 usually enrol gastric and GEJ tumours together, so the label 'gastric or GEJ adenocarcinoma' is common on approvals.", wikipedia: W("Gastroesophageal_junction"), cancers: ["esophageal", "gastric"], trials: ["cross"], related: ["barretts-esophagus", "oesophagectomy", "gastrectomy", "flot"], sections: ["surgery"] }),
   t({ id: "head-neck-subsites", name: "Head and neck subsites (oral cavity, oropharynx, larynx)", category: "Anatomy", aka: ["oral cavity", "oropharynx", "oropharyngeal", "hypopharynx", "nasopharynx", "nasopharyngeal", "larynx", "laryngeal", "larynx preservation", "salivary gland", "salivary glands"], tldr: "Head and neck cancer is really several cancers named by exact location: mouth (oral cavity), back of the throat (oropharynx, where HPV cancers arise), voice box (larynx), lower throat (hypopharynx) and behind the nose (nasopharynx). Each behaves and is treated differently.", summary: "Oral cavity cancers are treated surgically first. Oropharyngeal cancers, now mostly HPV-driven, respond so well to chemoradiation that de-escalation trials are under way; laryngeal cancer is often treated with radiotherapy to preserve the voice, with laryngectomy for salvage; nasopharyngeal carcinoma, EBV-driven and concentrated in southern China, gets IMRT plus platinum and is monitored by plasma EBV DNA. Subsite determines staging (AJCC 8 gives HPV-positive oropharynx its own system), surgical access and functional consequences for speech and swallowing.", wikipedia: W("Head_and_neck_cancer"), cancers: ["head-and-neck"], related: ["hpv-status", "ebv-term", "chemoradiation", "plasma-ebv-dna"], sections: ["surgery", "radiation"] }),
   t({ id: "leptomeningeal-disease", name: "Leptomeningeal disease", category: "Anatomy", aka: ["leptomeningeal", "leptomeningeal metastases", "leptomeningeal carcinomatosis", "carcinomatous meningitis"], tldr: "Cancer cells spreading in the fluid and membranes that bathe the brain and spinal cord, rather than as a solid lump. It causes headaches, nerve palsies and confusion and has been one of the hardest situations to treat.", summary: "Occurs in 5-10% of solid tumours (breast, lung, melanoma) and in leukaemia and lymphoma; diagnosed by MRI and cerebrospinal fluid cytology or ctDNA. Median survival has been weeks to months. Treatments are intrathecal chemotherapy or trastuzumab, craniospinal radiotherapy (proton craniospinal showed benefit at MSK), and increasingly CNS-penetrant drugs such as osimertinib at high dose, tucatinib and T-DXd. CNS prophylaxis in high-risk leukaemia and lymphoma exists to prevent it.", wikipedia: W("Leptomeningeal_cancer"), related: ["brain-metastases", "intrathecal-therapy", "cns-penetration"], sections: ["radiation", "chemotherapy"] }),
@@ -94,11 +287,108 @@ export const termsJargon: TermInput[] = [
   t({ id: "lymphovascular-invasion", name: "Lymphovascular invasion (LVI)", category: "Pathology & biomarkers", aka: ["LVI", "lymphovascular", "vascular invasion", "lymphatic invasion", "venous invasion", "extramural venous invasion", "EMVI"], tldr: "The pathologist has seen cancer cells inside small lymph or blood vessels in the removed tissue: a sign the tumour has found the exit routes, even if the nodes are clear.", summary: "Reported in most resection specimens, LVI raises the risk of node metastases and recurrence and is a criterion for adjuvant chemotherapy in stage II colon cancer, for surgery rather than endoscopic resection in early gastric and oesophageal cancer, for adjuvant therapy in stage I testicular cancer, and for cystectomy in bladder cancer. Extramural venous invasion (EMVI) on MRI is a high-risk feature in rectal cancer. It is one of several 'high-risk features' alongside grade, perineural invasion and positive margins.", wikipedia: W("Lymphovascular_invasion"), related: ["perineural-invasion", "lymph-node-status", "resection-margins", "endoscopic-resection"], sections: ["diagnostics"] }),
   t({ id: "perineural-invasion", name: "Perineural invasion (PNI)", category: "Pathology & biomarkers", aka: ["PNI", "perineural", "nerve invasion", "neural invasion"], tldr: "Cancer cells growing along the sheath of a nerve. Nerves act as tracks for spread, so this finding predicts recurrence, especially in pancreatic, prostate and head and neck cancers.", summary: "Nearly universal in pancreatic cancer (explaining its pain and local recurrence), common in prostate cancer biopsies and in cutaneous squamous and salivary cancers, PNI is an adverse pathological feature that can trigger adjuvant radiotherapy or wider margins. Biologically, nerves and tumours signal to each other (adrenergic and cholinergic signalling drive proliferation), which underpins the cancer neuroscience field and trials of beta-blockers and denervation. It is recorded in nearly every pathology report as present or absent.", wikipedia: W("Perineural_invasion"), cancers: ["pancreatic", "prostate", "head-and-neck"], technologies: ["nerve-tumour-denervation"], related: ["lymphovascular-invasion", "resection-margins"], sections: ["diagnostics"] }),
   t({
-    asOf:"2026-11-09", notes:["After breast conservation, further excision, completion mastectomy and axillary surgery address different findings and tissues. A second operation after initial pathology is not itself evidence of recurrence. Negative examined margins do not guarantee complete absence of microscopic disease."], links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Resection_margin"},{"label":"Campbell, Histopathology 2009: classification of R1 resections, tumour within 1 mm of a margin","url":"https://doi.org/10.1111/j.1365-2559.2009.03376.x"},{"label":"Ghaneh, Ann Surg 2019: positive resection margins, survival and recurrence in ESPAC-3 (1,151 patients)","url":"https://doi.org/10.1097/sla.0000000000002557"},{"label":"NCI: lumpectomy and tissue assessment","url":"https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"},{"label":"NCI: breast surgery roles and extent","url":"https://www.cancer.gov/types/breast/treatment/surgery"},{"label":"IASLC 2024 residual-tumour classification proposal: definitions and uncertainty","url":"https://pubmed.ncbi.nlm.nih.gov/38569931/"}], id: "resection-margins", tags: ["precision"], name: "Resection margins (R0 / R1 / R2)", category: "Pathology & biomarkers", aka: ["margins", "margin", "surgical margins", "negative margins", "positive margins", "margin-negative", "margin-positive", "clear margins", "R0", "R0 resection", "R1 resection", "R2 resection", "microscopic residual disease", "margin status", "circumferential resection margin", "CRM", "positive margin", "resection margin"], tldr: "Resection margins describe the assessed boundaries of removed tissue. A clear local boundary is not proof that no cancer exists elsewhere, and interpretation depends on the organ and reporting standard.", summary: "Margin assessment examines the cut boundaries of a submitted specimen and any additional margins. The operative account, sampled pathology and final residual-disease classification are connected but different observations. In the traditional R classification, R0 means no residual tumour under the applied assessment, R1 microscopic residual tumour and R2 gross residual tumour. These categories do not establish absence of every unseen cancer cell.\n\nDefinitions and required margin distances can vary by organ, disease and jurisdiction. The 2024 IASLC proposal describes an additional lung-cancer category for uncertain residual status. A clear microscopic edge is therefore not interchangeable with every definition of complete resection. Use the relevant report and standard rather than transferring a breast or pancreatic convention to every cancer.", wikipedia: W("Resection_margin"), related: ["wide-local-excision", "whipple", "lymphovascular-invasion", "mohs-surgery"], sections: ["surgery", "diagnostics"] }),
+    asOf:"2026-11-10", notes:[
+  "After breast conservation, further excision, completion mastectomy and axillary surgery address different findings and tissues. A second operation after initial pathology is not itself evidence of recurrence. Negative examined margins do not guarantee complete absence of microscopic disease.",
+  "For breast resection, final margin status uses the oriented main specimen together with relevant separately submitted margins. Ink identifies cut surfaces. An old main-specimen edge may cease to be the final edge when an additional oriented strip is removed; if their relationship is unclear, preserve uncertainty and request surgical correlation.",
+  "Report invasive carcinoma and DCIS separately, including the named final edge, whether the component reaches ink and its distance in millimetres when measurable. At ink is involved; a small gap without cancer at ink is a narrow negative margin. Ink artefact, limited sampling, compression and unclear orientation can limit interpretation.",
+  "The 2014 invasive-cancer consensus supported no ink on tumour for stage I to II invasive disease treated with breast conservation and whole-breast irradiation. Its evidence base excluded neoadjuvant therapy and pure DCIS. The 2016 pure-DCIS consensus supported a 2-mm adequate-margin standard with whole-breast irradiation; a narrower negative margin alone was not an indication for mastectomy. These are scoped standards, not interchangeable rules for every organ or operation.",
+  "In a fictional confirmed final edge with DCIS 0.7 mm from ink and no cancer at ink, the margin is narrow and negative rather than involved. Distance alone does not choose another operation. Conversely, invasive cancer at the confirmed outer edge of an additional lateral specimen remains a local margin finding even if a blood assay is negative.",
+  "Negative invasive margins and involved DCIS margins can coexist. A pCR definition permitting DCIS can coexist with a DCIS margin problem. The lymph-node capsule, a vessel lumen and a surgical cut edge are different boundaries. Margin status does not diagnose distant metastasis or whole-body clearance; completion excision, mastectomy and axillary surgery address different tissues.",
+  "A margin is a cut boundary of removed tissue. Pathology assesses sampled sections of that local boundary: a positive final margin means cancer reaches the evaluated cut edge. Sampling, sectioning and staining consume finite tissue, and cannot examine every possible cell. No ink on tumour does not mean no cancer anywhere in the person."
+], links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Resection_margin"
+  },
+  {
+    "label": "Campbell, Histopathology 2009: classification of R1 resections, tumour within 1 mm of a margin",
+    "url": "https://doi.org/10.1111/j.1365-2559.2009.03376.x"
+  },
+  {
+    "label": "Ghaneh, Ann Surg 2019: positive resection margins, survival and recurrence in ESPAC-3 (1,151 patients)",
+    "url": "https://doi.org/10.1097/sla.0000000000002557"
+  },
+  {
+    "label": "NCI: lumpectomy and tissue assessment",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+  },
+  {
+    "label": "NCI: breast surgery roles and extent",
+    "url": "https://www.cancer.gov/types/breast/treatment/surgery"
+  },
+  {
+    "label": "IASLC 2024 residual-tumour classification proposal: definitions and uncertainty",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38569931/"
+  },
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "Society of Surgical Oncology-American Society for Radiation Oncology consensus guideline on margins for breast-conserving surgery with whole-breast irradiation in stages I and II invasive breast cancer.",
+    "url": "https://doi.org/10.1245/s10434-014-3481-4"
+  },
+  {
+    "label": "Society of Surgical Oncology-American Society for Radiation Oncology-American Society of Clinical Oncology Consensus Guideline on Margins for Breast-Conserving Surgery with Whole-Breast Irradiation in Ductal Carcinoma In Situ.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27527714/"
+  }
+], id: "resection-margins", tags: ["precision"], name: "Resection margins (R0 / R1 / R2)", category: "Pathology & biomarkers", aka: ["margins", "margin", "surgical margins", "negative margins", "positive margins", "margin-negative", "margin-positive", "clear margins", "R0", "R0 resection", "R1 resection", "R2 resection", "microscopic residual disease", "margin status", "circumferential resection margin", "CRM", "positive margin", "resection margin"], tldr: "Resection margins describe the assessed boundaries of removed tissue. A clear local boundary is not proof that no cancer exists elsewhere, and interpretation depends on the organ and reporting standard.", summary: "Margin assessment examines the cut boundaries of a submitted specimen and any additional margins. The operative account, sampled pathology and final residual-disease classification are connected but different observations. In the traditional R classification, R0 means no residual tumour under the applied assessment, R1 microscopic residual tumour and R2 gross residual tumour. These categories do not establish absence of every unseen cancer cell.\n\nDefinitions and required margin distances can vary by organ, disease and jurisdiction. The 2024 IASLC proposal describes an additional lung-cancer category for uncertain residual status. A clear microscopic edge is therefore not interchangeable with every definition of complete resection. Use the relevant report and standard rather than transferring a breast or pancreatic convention to every cancer.", wikipedia: W("Resection_margin"), related: ["wide-local-excision", "whipple", "lymphovascular-invasion", "mohs-surgery"], sections: ["surgery", "diagnostics"] }),
   t({ id: "tumour-differentiation", name: "Tumour differentiation (well / moderately / poorly differentiated)", category: "Pathology & biomarkers", aka: ["well-differentiated", "well differentiated", "moderately differentiated", "poorly differentiated", "poorly-differentiated", "undifferentiated", "dedifferentiated", "differentiated thyroid cancer", "differentiated"], tldr: "How much the cancer cells still resemble the normal tissue they came from. Well-differentiated tumours look almost normal and tend to grow slowly; poorly differentiated ones have lost their identity and behave aggressively. It is the basis of grade.", summary: "Pathologists assign differentiation from gland formation, nuclear appearance and mitotic rate; it underlies grading systems such as Gleason (prostate), Nottingham (breast) and WHO grade for neuroendocrine tumours (well-differentiated NETs versus poorly differentiated neuroendocrine carcinomas, which are treated like small-cell cancer). Well-differentiated mucosal gastric cancers qualify for endoscopic resection; poorly differentiated thyroid cancer loses iodine uptake. Dedifferentiation over time (liposarcoma, thyroid, prostate to neuroendocrine) marks transformation to a more aggressive state.", wikipedia: W("Grading_(tumors)"), cancers: ["neuroendocrine", "thyroid", "prostate"], related: ["gleason-grade-group", "adenocarcinoma", "dysplasia"], sections: ["diagnostics"] }),
   t({ id: "dysplasia", name: "Dysplasia (pre-cancerous change)", category: "Pathology & biomarkers", aka: ["dysplastic", "high-grade dysplasia", "low-grade dysplasia", "atypical hyperplasia", "atypia", "intraepithelial neoplasia", "CIN", "premalignant", "pre-malignant", "precancerous", "pre-cancerous", "precursor lesion", "precursor lesions"], tldr: "Abnormal-looking cells in a surface lining that are not yet cancer but are on the way. Finding and removing dysplasia (cervical smears, Barrett's surveillance, colon polyps) is how screening prevents cancer rather than just detecting it early.", summary: "Dysplasia is graded low or high by how disordered the cells and architecture are; high-grade dysplasia is treated because a substantial fraction progresses to invasive cancer. Cervical intraepithelial neoplasia (CIN 2-3) is excised or ablated; Barrett's with dysplasia is ablated by radiofrequency after endoscopic resection; adenomatous polyps are removed at colonoscopy; oral leukoplakia and anal intraepithelial neoplasia are watched or treated. Atypical hyperplasia of the breast raises risk and can justify preventive tamoxifen. Carcinoma in situ is the most severe form, in which the whole epithelium is malignant but has not invaded.", wikipedia: W("Dysplasia"), cancers: ["cervical", "esophageal", "colorectal"], related: ["carcinoma-in-situ", "barretts-esophagus", "colonoscopy", "hpv-status"], sections: ["early-detection", "prevention"] }),
   t({ id: "carcinoma-in-situ", name: "Carcinoma in situ (CIS)", category: "Pathology & biomarkers", aka: ["CIS", "in situ carcinoma", "in situ", "Tis", "lobular carcinoma in situ", "LCIS", "stage 0", "non-invasive cancer", "intraepithelial"], tldr: "Cancer cells that fill the lining layer where they started but have not broken through the basement membrane into the tissue beneath. They cannot spread yet, so removal is usually curative; it is 'stage 0'.", summary: "Staged as Tis, in situ disease is found in breast (ductal and lobular), bladder (flat CIS, which is aggressive and treated with BCG), cervix (CIN 3), skin (Bowen's disease, melanoma in situ), oesophagus and lung (adenocarcinoma in situ). Whether and how fast it would have progressed is often unknowable, which raises overdiagnosis questions in screening. Treatment is local (excision, ablation, intravesical therapy) without systemic chemotherapy, sometimes with radiotherapy or endocrine therapy for breast DCIS.", wikipedia: W("Carcinoma_in_situ"), cancers: ["urothelial", "cervical", "melanoma"], related: ["dcis", "dysplasia", "intravesical-therapy", "tnm-staging"], sections: ["early-detection"] }),
-  t({ id: "dcis", name: "Ductal carcinoma in situ (DCIS)", category: "Pathology & biomarkers", aka: ["DCIS", "ductal carcinoma in situ", "ductal in situ"], tldr: "Breast cancer cells confined inside the milk ducts, found mostly by mammography as calcifications. It is not life-threatening in itself, but around a third would progress to invasive cancer if left.", summary: "DCIS makes up 20-25% of screen-detected breast cancers. Standard treatment is lumpectomy with radiotherapy (or mastectomy for extensive disease) plus tamoxifen or an aromatase inhibitor if ER-positive; low-dose tamoxifen (5 mg, TAM-01) halves recurrence with fewer side effects. Because many DCIS lesions are indolent, active surveillance trials (COMET, LORIS, LORD) tested omitting surgery for low-risk disease, and COMET found no excess invasive cancer at 2 years. It is a leading example of the overdiagnosis debate in screening.", wikipedia: W("Ductal_carcinoma_in_situ"), cancers: ["breast-hr-positive"], drugs: ["tamoxifen"], related: ["carcinoma-in-situ", "lumpectomy", "active-surveillance"], sections: ["early-detection"] }),
+  t({ id: "dcis", name: "Ductal carcinoma in situ (DCIS)", category: "Pathology & biomarkers", aka: ["DCIS", "ductal carcinoma in situ", "ductal in situ"], tldr: "Ductal carcinoma in situ means abnormal cancer cells remain within breast ducts, without invasion identified in that component.", summary: "Ductal carcinoma in situ (DCIS) and invasive breast carcinoma describe different tissue relationships. They can coexist, so each component must remain visible in the report. DCIS grade describes microscopic appearance; staging describes extent under a specified system. Individual management requires the complete diagnosis and treatment context, rather than a fixed progression probability inferred from the name.\n\nNCI's Breast Cancer Treatment PDQ estimates that DCIS accounts for about 25% of invasive and noninvasive breast tumours detected by screening. Treatment choices include breast-conserving surgery, usually considered with radiotherapy, or mastectomy; endocrine risk reduction depends on hormone-receptor status and the full clinical setting. Screening detection and the name DCIS do not establish one fixed probability of progression.\n\nTAM-01 studied tamoxifen 5 mg daily for three years against placebo after surgery, with or without irradiation, in 500 women with breast intraepithelial neoplasia; 69% had DCIS. Its 10-year report found fewer breast events in that mixed study population. It did not compare 5 mg with standard-dose tamoxifen. Active-monitoring programmes ask a different question: COMET's two-year noninferiority result concerned selected women aged at least 40 with hormone-receptor-positive, grade 1 or 2 DCIS, and does not establish long-term equivalence for all DCIS. LORD separately studies active surveillance in selected screen-detected low-risk DCIS. LORIS was developed to compare surgery with active monitoring in selected low-risk DCIS; its protocol describes a research question, not a result establishing safety for every lesion.", wikipedia: W("Ductal_carcinoma_in_situ"), cancers: ["breast-hr-positive"], drugs: ["tamoxifen"], related: [
+  "carcinoma-in-situ",
+  "lumpectomy",
+  "active-surveillance",
+  "myoepithelial-cells-and-basement-membrane"
+], sections: ["early-detection"] ,
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ductal_carcinoma_in_situ"
+  },
+  {
+    "label": "NCI ductal carcinoma in situ",
+    "url": "https://www.cancer.gov/types/breast/breast-cancer-types/dcis"
+  },
+  {
+    "label": "NCI professional PDQ: AJCC eighth-edition breast staging tables",
+    "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+  },
+  {
+    "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+    "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+  },
+  {
+    "label": "Gusterson et al. 1982: myoepithelial cells and basement membrane",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6290045/"
+  },
+  {
+    "label": "TAM-01 10-year follow-up (Lazzeroni 2023)",
+    "url": "https://doi.org/10.1200/JCO.22.02900"
+  },
+  {
+    "label": "COMET randomised trial (Hwang 2025)",
+    "url": "https://doi.org/10.1001/jama.2024.26698"
+  },
+  {
+    "label": "LORD study registry",
+    "url": "https://clinicaltrials.gov/study/NCT02492607"
+  },
+  {
+    "label": "LORIS trial development (Francis 2015)",
+    "url": "https://doi.org/10.1016/j.ejca.2015.07.017"
+  }
+],
+"notes": [
+  "Ductal carcinoma in situ describes malignant epithelial cells within the ductal tissue boundary, without invasion identified in that component. An invasive component can coexist in the same specimen. Reading DCIS present does not cancel a separately reported invasive diagnosis. DCIS may be called precancer, noninvasive breast cancer or stage 0 disease; these terms retain the anatomical distinction and do not guarantee that every lesion has the same future risk.",
+  "Grade and extent are separate observations. High-grade DCIS does not establish distant spread. AJCC eighth-edition stage 0 is Tis N0 M0; an associated invasive component requires its own staging assessment. A study confined to DCIS does not establish treatment benefit in invasive triple-negative disease.",
+  "Mammographic abnormalities can prompt evaluation, but tissue examination establishes the diagnosis. Preserve the component, specimen and full diagnosis. Neither a schematic boundary nor one marker is a diagnostic test, and the phrase in situ does not predict every lesion's future behaviour.",
+  "In the AJCC eighth-edition tables reproduced by NCI, stage 0 is Tis N0 M0. Tis includes DCIS and nipple Paget disease without associated invasive carcinoma or DCIS in the underlying breast parenchyma. When underlying parenchymal carcinoma is present, its characteristics determine classification. A fictional report of invasive carcinoma with associated high-grade DCIS is therefore not stage 0 merely because DCIS is present.",
+  "CAP records the invasive and DCIS components separately. The surrounding myoepithelial cells are living cells; basement membrane is extracellular matrix, including proteins studied by Gusterson and colleagues. Their detection is not a stand-alone invasion test. Drawing colours, simplified counts and sizes represent locations rather than grade, stage or an inevitable progression."
+]
+}),
   t({ id: "pd-l1-testing", name: "PD-L1 expression testing (22C3, SP142, SP263)", category: "Pathology & biomarkers", aka: ["PD-L1 expression", "PD-L1-positive", "PD-L1 positive", "PD-L1-negative", "PD-L1 negative", "PD-L1-high", "PD-L1 high", "PD-L1-low", "PD-L1 status", "PD-L1 IHC", "22C3", "SP142", "SP263", "28-8", "PD-L1 ≥50%", "PD-L1 ≥1%"], tldr: "A stain on the tumour biopsy that measures how much of the PD-L1 'don't attack me' protein is present, scored as a tumour proportion or combined positive score. Higher levels usually mean checkpoint inhibitors work better, and approvals in lung, triple-negative breast, gastric and head and neck cancer set minimum scores; yet PD-L1-negative tumours sometimes respond.", summary: "Several antibody clones (22C3 for pembrolizumab, SP142 for atezolizumab, SP263 for durvalumab, 28-8 for nivolumab) and scoring systems (tumour proportion score, combined positive score, immune cell score) are in use and are only partly interchangeable (Blueprint project), which complicates practice. PD-L1 ≥50% TPS in lung cancer permits pembrolizumab alone; CPS ≥10 gates pembrolizumab in triple-negative breast and CPS ≥1 or ≥5 in gastric and head and neck cancer. It is an imperfect biomarker: PD-L1-negative tumours sometimes respond and expression is heterogeneous and changes with treatment.", wikipedia: W("PD-L1"), targets: ["pdl1"], technologies: ["checkpoint-inhibitor", "histopathology-ihc", "companion-diagnostic"], related: ["cps", "tmb", "immuno-oncology"], sections: ["immunotherapy", "diagnostics"] }),
   t({ id: "hormone-receptor-status", name: "Hormone receptor status (ER / PR)", category: "Pathology & biomarkers", aka: ["HR+/HER2−", "HR+/HER2-", "HR-positive, HER2-negative", "HR-positive/HER2-negative", "ER/PR", "ER-positive", "ER positive", "ER+", "ER-negative", "ER−", "PR-positive", "PR+", "HR-positive", "HR+", "HR-negative", "HR−", "hormone receptor-positive", "hormone receptor positive", "hormone-receptor-positive", "oestrogen receptor-positive", "progesterone receptor", "ER-low", "PgR", "estrogen receptor-positive", "estrogen receptor positive", "estrogen-receptor-positive", "oestrogen-receptor-positive", "oestrogen-driven", "estrogen-driven", "luminal", "luminal A", "luminal B"], tldr: "Whether a breast cancer's cells carry receptors for oestrogen (ER) and progesterone (PR). If they do, the cancer is fed by these hormones and can be treated by blocking them; about 70% of breast cancers are hormone receptor-positive.", summary: "Measured by immunohistochemistry on every breast cancer; ≥1% of nuclei staining counts as positive (1-10% is 'ER-low' and behaves more like negative). HR-positive/HER2-negative disease receives endocrine therapy (tamoxifen, aromatase inhibitors, SERDs) with CDK4/6 inhibitors in high-risk or metastatic settings; HR status combined with HER2 defines the four clinical subtypes (HR+/HER2−, HER2+, triple-negative). Endometrial, ovarian and some other cancers are also ER/PR tested. Loss of ER at relapse and ESR1 mutations mark endocrine resistance.", wikipedia: W("Estrogen_receptor"), cancers: ["breast-hr-positive", "tnbc"], targets: ["estrogen-receptor"], technologies: ["endocrine-therapy", "histopathology-ihc"], related: ["her2-positive", "aromatase-inhibitor", "serd", "endocrine-resistance"], sections: ["hormonal", "diagnostics"] }),
   t({ id: "her2-positive", name: "HER2-positive (IHC 3+ or ISH-amplified)", category: "Pathology & biomarkers", aka: ["HER2-positive", "HER2 positive", "HER2+", "HER2-negative", "HER2 negative", "HER2−", "IHC 3+", "IHC 2+", "HER2 IHC", "HER2-amplified", "HER2 amplification", "ISH-amplified", "HER2 overexpression", "HER2-overexpressing", "HER2-mutant", "HER2 status", "ASCO/CAP"], tldr: "A cancer with too much HER2 growth-signal protein, either scored 3+ on the stain or shown to have extra copies of the gene. Once the most aggressive breast cancer subtype, it is now among the most treatable thanks to anti-HER2 drugs.", summary: "About 15-20% of breast cancers and a similar share of gastric/GEJ cancers are HER2-positive by ASCO/CAP criteria (IHC 3+, or IHC 2+ with in situ hybridisation amplification). They receive trastuzumab, pertuzumab, T-DM1 and T-DXd in curative and metastatic settings, with response-adapted pathways (KATHERINE, DESTINY-Breast). HER2-low (IHC 1+ or 2+/ISH-negative) and ultralow tumours are not 'positive' but respond to T-DXd, so the category is now a spectrum. HER2 mutations (rather than amplification) in lung cancer are targeted by T-DXd and zongertinib; HER2 amplification also occurs in colorectal, bladder and biliary cancers.", wikipedia: W("HER2"), cancers: ["breast-her2-positive", "gastric", "nsclc"], targets: ["her2"], drugs: ["trastuzumab", "trastuzumab-deruxtecan", "pertuzumab"], trials: ["katherine", "aphinity"], related: ["her2-low", "fish", "hormone-receptor-status", "ihc"], sections: ["targeted-therapy", "diagnostics"] }),

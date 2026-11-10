@@ -33,8 +33,8 @@ export const simpleB: Record<string, string> = {
   os: "How long patients live. The most important measure.",
   efs: "In early cancer, how long patients stay free of the cancer coming back.",
   "hazard-ratio": "A number comparing how often bad events happen in two groups. 0.5 means the risk is halved.",
-  pcr: "No cancer left in the breast and lymph nodes when the surgeon removes the tissue after pre-surgery treatment.",
-  rcb: "A score for how much cancer is left after pre-surgery treatment, from none to a lot.",
+
+
   ppv: "If a test says 'cancer', the chance it is right.",
   "stage-shift": "Finding more cancers early and fewer late. The goal of screening.",
   suv: "A number for how brightly a spot lights up on a PET scan.",
@@ -77,7 +77,7 @@ export const simpleB: Record<string, string> = {
   "alpha-vs-beta": "Beta particles travel millimetres and suit bulky tumours; alpha particles travel a few cells' width and hit far harder.",
   dosimetry: "Measuring how much radiation each organ and tumour actually received from a radioactive drug.",
   "germline-vs-somatic": "Germline changes are inherited and in every cell; somatic changes arise only in the tumour.",
-  "tnm-staging": "The universal system describing tumour size (T), lymph node spread (N), and distant spread (M).",
+
   "cold-vs-hot": "'Hot' tumours are full of immune cells and respond to immune drugs; 'cold' tumours keep the immune system out.",
   "adc-sequencing": "The open question of whether a second antibody-drug works after the first one fails.",
 

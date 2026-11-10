@@ -75,8 +75,54 @@ export const terms: TermInput[] = [
     asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Abscopal_effect"},{"label":"ICD consensus: adaptive immunity and experimental abscopal models","url":"https://pubmed.ncbi.nlm.nih.gov/32209603/"},{"label":"CURB: population-specific randomised progression endpoint","url":"https://pubmed.ncbi.nlm.nih.gov/38104577/"}], id: "abscopal-effect", aka: ["abscopal effects"], name: "Abscopal effect", category: "Immunology", tldr: "An abscopal response is regression outside an irradiated area, studied as a possible systemic effect of local radiation. Observing it does not by itself establish the cause or an added survival benefit.", summary: "Responses at non-irradiated sites motivate investigation of immune effects of local radiation. Keep the irradiated and unirradiated lesions, other treatments and observation times explicit. A proposed immune mechanism needs more than local injury or circulating markers.\n\nA case or uncontrolled combination cannot isolate the added effect of radiation. Comparative local-treatment studies must retain their populations and endpoints: a response outside the field, progression-free survival, overall survival and symptom relief are different outcomes.", wikipedia: W("Abscopal_effect"), technologies: ["sbrt", "checkpoint-inhibitor"], pathways: ["cgas-sting"] }),
   t({
     asOf:"2026-11-09", notes:["In a local-treatment study, follow injury and signals through presentation, priming, recognition and measured tumour outcomes. Circulating cytokines or proliferating T cells alone do not establish tumour-specific killing, distant control or an optimal radiation dose."], links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Immunogenic_cell_death"},{"label":"Consensus definition, assay interpretation and model limits, 2020","url":"https://pubmed.ncbi.nlm.nih.gov/32209603/"},{"label":"BOOSTER: exploratory peripheral cytokines are separate from clinical endpoints","url":"https://pubmed.ncbi.nlm.nih.gov/41213939/"}], id: "immunogenic-cell-death", name: "Immunogenic cell death", category: "Immunology", tldr: "Immunogenic cell death is regulated cell death that can initiate adaptive immunity against the dying cells in a suitable host and context. Injury alone does not establish it.", summary: "The 2020 consensus defines immunogenic cell death through the adaptive immune response, not merely the appearance of dead cells. Antigens, appropriately timed danger signals, antigen-presenting cells and a responsive host all matter. Apoptotic or other death machinery does not by itself classify the immune outcome.\n\nCalreticulin exposure, ATP or HMGB1 release and interferon-related signals are useful mechanistic readouts, but none alone proves protective immunity. Functional cross-priming and appropriate in-vivo immune tests address later steps. The consensus distinguishes mouse vaccination models from established disease; neither a surrogate marker nor a positive mouse assay establishes clinical benefit in a person.", wikipedia: W("Immunogenic_cell_death"), technologies: ["adc", "oncolytic-virus", "photoimmunotherapy"] }),
-  t({ id: "adcc", name: "ADCC (antibody-dependent cellular cytotoxicity)", category: "Immunology", tldr: "In ADCC, an antibody flags a cell, and NK cells recognise the flag and kill it.", summary: "ADCC, antibody-dependent cellular cytotoxicity, is the process in which an antibody flags a cell and NK cells recognise the flag and kill it. It is mediated by the interaction between the antibody Fc region and FcγRIIIa (CD16) on the NK cell, and it can be enhanced by afucosylating the antibody, as in obinutuzumab, margetuximab and belantamab. ADCC contributes to the activity of trastuzumab, rituximab and cetuximab, and the mechanism belongs to the Monoclonal antibodies technology entry. Drug records that cite it include Margetuximab, Zolbetuximab, Obinutuzumab, Rituximab, Tafasitamab, Daratumumab, Mogamulizumab, Elotuzumab and Dinutuximab (ch14.18) / dinutuximab beta, and it is referenced by the Gastric & gastro-oesophageal junction cancer and Neuroblastoma (paediatric) entries.", wikipedia: W("Antibody-dependent_cellular_cytotoxicity"), technologies: ["monoclonal-antibody"] }),
-  t({ id: "fc-effector", wikipedia: W("Fragment_crystallizable_region"), name: "Fc engineering / effector function", category: "Immunology", tldr: "Tweaking the antibody's tail to make it recruit immune cells more strongly, or not at all.", summary: "Fc engineering means tweaking the antibody's tail, the Fc region, so that it recruits immune cells more strongly, or not at all. Afucosylation and Fc mutations enhance ADCC, whereas Fc-silencing through an IgG4 backbone or LALA mutations prevents unwanted immune activation in checkpoint inhibitors and T-cell engagers, and FcRn-binding mutations extend half-life. The term is linked to the Monoclonal antibodies and Bispecific antibodies technologies and to the terms Antibody, NK cell and Half-life. It is cited by the drug records for Margetuximab, Tislelizumab and Mogamulizumab, by the pathways on myeloid suppression, complement in cancer and NK-cell recognition, and by an idea on bispecific antibodies that engage macrophages instead of T cells.", technologies: ["monoclonal-antibody", "bispecific-antibody"] }),
+  t({ id: "adcc", name: "ADCC (antibody-dependent cellular cytotoxicity)", category: "Immunology", tldr: "In ADCC, immune effector cells attack an antibody-coated target. NK cells are a familiar example; coating alone does not show completed killing.", summary: "ADCC, antibody-dependent cellular cytotoxicity, is the process in which an antibody flags a cell and NK cells recognise the flag and kill it. In the familiar NK-cell route, the antibody Fc region interacts with FcγRIIIa (CD16). Changes to Fc sequence or glycans can alter receptor interactions; the resulting activity needs measurement in a defined system. ADCC contributes to the activity of trastuzumab, rituximab and cetuximab, and the mechanism belongs to the Monoclonal antibodies technology entry. Drug records that cite it include Margetuximab, Zolbetuximab, Obinutuzumab, Rituximab, Tafasitamab, Daratumumab, Mogamulizumab, Elotuzumab and Dinutuximab (ch14.18) / dinutuximab beta, and it is referenced by the Gastric & gastro-oesophageal junction cancer and Neuroblastoma (paediatric) entries. NK cells are the familiar example, not the only one: other immune cells can contribute antibody-dependent cytotoxicity, and phagocytes can instead engulf a coated cell (ADCP) or complement can damage its membrane (CDC). Receptor binding or contact does not show completed killing.", wikipedia: W("Antibody-dependent_cellular_cytotoxicity"), technologies: ["monoclonal-antibody"] ,
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Antibody-dependent_cellular_cytotoxicity"
+  },
+  {
+    "label": "Inhibitory Fc receptors modulate in vivo cytotoxicity against tumor targets.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10742152/"
+  },
+  {
+    "label": "Macrophages eliminate circulating tumor cells after monoclonal antibody therapy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24430180/"
+  },
+  {
+    "label": "Complement is activated by IgG hexamers assembled at the cell surface.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24626930/"
+  }
+],
+"related": [
+  "adcc-adcp-cdc"
+]
+}),
+  t({ id: "fc-effector", wikipedia: W("Fragment_crystallizable_region"), name: "Fc engineering / effector function", category: "Immunology", tldr: "Fc engineering changes selected antibody interactions with immune cells, complement or recycling receptors. Each interaction needs its own measurement.", summary: "Fc engineering means tweaking the antibody's tail, the Fc region, so that it recruits immune cells more strongly, or not at all. Fc sequence and glycan changes can alter effector recruitment. Fc-silencing variants reduce selected interactions in a defined system; an IgG4 backbone or an engineering label alone does not establish complete silence or human safety. FcRn-mediated recycling is a separate property. The term is linked to the Monoclonal antibodies and Bispecific antibodies technologies and to the terms Antibody, NK cell and Half-life. It is cited by the drug records for Margetuximab, Tislelizumab and Mogamulizumab, by the pathways on myeloid suppression, complement in cancer and NK-cell recognition, and by an idea on bispecific antibodies that engage macrophages instead of T cells. Reduced binding to one receptor does not establish silence everywhere: neonatal Fc receptor binding, which governs recycling and half-life, needs its own measurement, and IgG4 is not a universal synonym for a fully silent Fc.", technologies: ["monoclonal-antibody", "bispecific-antibody"] ,
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fragment_crystallizable_region"
+  },
+  {
+    "label": "Effector-attenuating Substitutions That Maintain Antibody Stability and Reduce Toxicity in Mice.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28077575/"
+  },
+  {
+    "label": "Divergent immunoglobulin g subclass activity through selective Fc receptor binding.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16322460/"
+  },
+  {
+    "label": "IgG subclasses and allotypes: from structure to effector functions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+  }
+],
+"related": [
+  "isotypes-and-fc-silencing"
+]
+}),
 
   // ---- Clinical / regulatory ----
   t({ id: "oligometastatic", wikipediaChecked: "2026-09-22", links: [{ label: "NCI Dictionary of Cancer Terms: oligometastasis", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/oligometastasis" }, { label: "Lievens et al., Defining oligometastatic disease from a radiation oncology perspective: an ESTRO-ASTRO consensus (Radiotherapy and Oncology 2020)", url: "https://doi.org/10.1016/j.radonc.2020.04.003" }], name: "Oligometastatic disease", category: "Clinical", tldr: "Cancer that has spread to only a few places, which may still be curable by treating each spot.", summary: "Oligometastatic disease is cancer that has spread to only a few sites, usually no more than three to five metastases, and may still be curable if each spot is treated. The SABR-COMET trial supported metastasis-directed SBRT / SABR (stereotactic radiotherapy), and the ESTRO/EORTC classification distinguishes synchronous, oligorecurrent and oligoprogressive disease, the last covered by the related term Oligoprogression. PSMA PET has expanded detection of this state in Prostate cancer, and the term is also referenced by the Renal cell carcinoma entry and the bottleneck on metastasis biology. Ideas building on it include PSMA-PET-guided metastasis-directed therapy as a curative strategy and a test to tell true oligometastatic disease from hidden widespread spread.", technologies: ["sbrt", "psma-pet"] }),

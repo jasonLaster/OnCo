@@ -4,35 +4,39 @@ The goal is active. Independent source versions overlap and are never added. Wor
 
 | Measure | Current checkpoint |
 | --- | ---: |
-| Original assessed teaching sources | 108 |
+| Original assessed teaching sources | 124 |
 | Original routing-only navigation files classified | 7 |
-| Original assessed/classified files / denominator | 115 / 537 |
-| Original assessed sources fully draft represented / residual | 104 / 4 |
-| Original ordinary content unread | 422 |
-| Original requirements / evidenced / open | 475 / 468 / 7 |
-| Later assessed teaching sources / denominator | 100 / 550 |
-| Later assessed sources fully draft represented | 100 |
-| Later requirements / evidenced / open | 455 / 455 / 0 |
-| Later ordinary unread / navigation unclassified | 445 / 5 |
-| Canonical owners in draft #375 | 194 (47 new / 147 existing) |
+| Original assessed/classified files / denominator | 131 / 537 |
+| Original assessed sources fully draft represented / residual | 120 / 4 |
+| Original ordinary content unread | 406 |
+| Original requirements / evidenced / open | 529 / 522 / 7 |
+| Later assessed teaching sources / denominator | 116 / 550 |
+| Later assessed sources fully draft represented | 116 |
+| Later requirements / evidenced / open | 509 / 509 / 0 |
+| Later ordinary unread / navigation unclassified | 429 / 5 |
+| Canonical owners in draft #375 | 224 (59 new / 165 existing) |
 | Canonical owners in draft #369 | 65 (34 new / 31 existing) |
 | Canonical owners in draft #373 | 45 (36 new / 9 existing) |
-| Summary consumers / present / English fallback | 432 / 301 / 131 |
+| Summary consumers / present / English fallback | 702 / 301 / 401 |
 | Non-graph directory consumers | 1 |
-| Assets per ref / teaching reviewed / unclassified | 1888 / 34 / 1854 |
-| Adjacent findings / represented / open | 24 / 22 / 2 |
-| Literature occurrences / screened / unread | 398 / 290 / 108 |
+| Assets per ref / teaching reviewed / unclassified | 1888 / 48 / 1840 |
+| Adjacent findings / represented / open | 26 / 23 / 3 |
+| Literature occurrences / screened / unread | 445 / 337 / 108 |
 | Schema findings / implemented pending approval / design | 6 / 5 / 1 |
 | Fully covered sources on pinned main | 0 |
 | Clean complete final re-audits | 0 |
 
-The [T-cell checkpoint](tcells-2026-11-09/README.md) adds fourteen assessed files per inventory, seven terms, seven existing root owners and ten requirements at three existing #373 owners. Forty-nine shared requirements become 84 per-source occurrences in each version. Fifteen referenced figure paths and all 261 blocks have dispositions. The generated gene file stays unchanged, and specific aliases are assigned to their own concepts.
+The original census has **131/537 files assessed or classified**: 124 teaching sources, including seven teaching navigation pages, plus seven routing-only navigation files. Of 529 per-source requirements, 522 have exact draft evidence and seven remain open. Complete draft representation covers 120 assessed sources; four retain residual requirements and 406 ordinary content sources remain unread.
 
-Current checks pass: root validate 22,730 entities, typecheck, lint (seven pre-existing warnings) and 284 files/2,829 tests; shared #373 validate 22,719, typecheck, focused lint and 281 files/2,813 tests. Both suites retain two existing skips. All 59 affected reader records have current source/anchor checks, all 49 passages appear in body text, 126 summary selectors and 39 root JSON/Markdown passages match. Dedupe remains at nine baseline groups. The 12 audit tests and both closure checks pass their integrity conditions while closure exits 2 for genuine open work.
+The later inventory independently has **116/550 teaching sources assessed and draft represented**, with all 509 assessed requirements evidenced. It retains 429 ordinary unread sources and five unclassified navigation sources. Counts overlap and are never added. Each ref retains 1,888 assets: 48 teaching paths are reviewed and 1,840 remain unclassified.
 
-The broader preserved immune maps and CD8 prognostic denominator stay open. Provisional Haiku results and other returned packets are uncredited pending integration. The prior [chemical checkpoint](payload-chemical-species-2026-11-09/README.md) and all five optional product contracts retain their data/product dependencies and approval boundary.
+Draft [#375](https://github.com/judegomila/OnCo/pull/375) now covers 224 canonical owners (59 new and 165 existing), distinct from earlier drafts, plus one directory consumer. Across #375, #373 and #369, 702 summary-consumer entries are snapshotted: 301 contain text and 401 use English fallback. These are consumer entries, not graph records or named language reviews.
 
-No new production build, browser hydration/responsive/hosted review, expert/language sign-off, merge or deployment is claimed. The unchanged named GRAPH_JSON page export remains a documented baseline build limitation. Actual generator outputs and immutable local reader/export artifacts are separately hashed.
+The [antigen/antibody checkpoint](antigen-antibodies-2026-11-09/README.md) adds sixteen assessed lessons per inventory, 54 teaching requirements, eight concepts and four processing-gene owners. Ten earlier owners and eight existing gene owners receive corrections/context; four existing owners in [#373](https://github.com/judegomila/OnCo/pull/373) are supplemented at `4064995963b71f72ac0d1d2bd486454b55838d80`. A separate adjacent requirement verifies the processing-gene owners. All 55 passages appear in body text, all 30 root JSON exports match and all 51 root passages remain in actual Markdown. The four shared passages have current field/body evidence. All 270 checked selectors use English fallback after 63 stale short entries were removed. Generated gene and base cross-reference files are unchanged.
+
+The earlier [T-cell checkpoint](tcells-2026-11-09/README.md) and [chemical checkpoint](payload-chemical-species-2026-11-09/README.md) retain their exact source and validation scopes. Shared state now has 26 adjacent findings (23 represented, three open), 445 literature occurrences (337 screened, 108 unreviewed) and six open schema findings (five implemented contracts awaiting product review, one requiring design). Occurrences are not independent studies. Other returned packets remain uncredited pending integration.
+
+Root validation, typecheck, lint and the final full suite pass: 284 files, 2,829 tests and two existing skips. The shared suite passes 281 files and 2,813 tests with two skips. A real side-table omission caught by the initial root suite was corrected and rechecked. The broader generated-role/function template issue is explicitly open. Source closures still exit 2 for genuine remaining work with no stale or missing field proofs. No complete source coverage on main, final re-audit, new production build, browser/hosted or expert sign-off, merge or deployment is claimed.
 
 ## Historical checkpoint notes
 

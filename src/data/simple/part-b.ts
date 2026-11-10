@@ -61,8 +61,8 @@ export const simpleB: Record<string, string> = {
   irae: "Side effects of immune drugs where the immune system attacks the body's own organs.",
   "abscopal-effect": "When irradiating one tumour makes untreated tumours elsewhere shrink, through the immune system.",
   "immunogenic-cell-death": "A way of dying that alerts the immune system.",
-  adcc: "An antibody flags a cell, and natural killer cells recognise the flag and destroy it.",
-  "fc-effector": "Adjusting the antibody's tail to make it recruit immune cells more strongly, or not at all.",
+
+
   oligometastatic: "Cancer that has spread to only a few places, which may still be curable by treating each spot.",
   "neoadjuvant-adjuvant": "Treatment given before surgery (neoadjuvant), after surgery (adjuvant), or both.",
   "first-line": "First-line is the first treatment for advanced cancer; second-line comes after it stops working, and so on.",

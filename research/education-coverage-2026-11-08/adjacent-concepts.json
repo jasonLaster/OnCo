@@ -1435,5 +1435,140 @@
         }
       ]
     }
+  },
+  {
+    "id": "antigen-gene-and-fc-owner-context",
+    "title": "Antigen-processing genes and Fc-receptor context",
+    "domain": "immunology",
+    "sourceURLs": [
+      "https://www.uniprot.org/",
+      "https://www.genenames.org/"
+    ],
+    "discoveryOccurrences": [
+      "antigen-canonical-owner-proposals"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator source-backed canonical integration",
+      "checkedAt": "2026-11-09",
+      "rationale": "Four distinct processing-gene owners and their HGNC side-table join are added; eight existing gene owners receive the antigen/Fc context without editing generated base files. Short definitions describe checked protein functions while earlier catalogue assertions retain their source scope.",
+      "points": [
+        {
+          "id": "antigen-r54",
+          "requirement": "PSMB8, PSMB9, CIITA, TAP1/2, ERAP1/2 as separate target records",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "antigen-processing-machinery",
+              "version": "proposal-antigen-antibodies",
+              "field": "notes",
+              "fieldSha256": "fd1c5167067ad7d96ba73034ed16e27aabae78afb9de5c3055b4d4e57d9ede92",
+              "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "display-genes",
+          "requirement": "Link the existing B2M/HLA owners to their class-I or class-II teaching context and retain shared versus allele-specific display dependencies.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "b2m",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "d70fa85f35017ff2f9851ae3f8207e30166577a1bf0d7c0931509fae8d8b95b0",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "hla-b",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "8cb031558f284cf694c97ca0c0311aae31a91bf54f6fca55ca96853d2ac4ae78",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "hla-c",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "ec5a34089ef19d8f27fda58e272ae36c8ea92ed6b0d9fd58e2f41f73060d7200",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "hla-dra",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "926798bf34bf19dad464ec3dbcad1ef836a2d33166dd9b998af63c514e3aa798",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "hla-dqa1",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "f838f035b32bbda28a2a5bc3765c56cda6dcb5d25050a3f17118a5f1a5022ba9",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "fc-genes",
+          "requirement": "Link existing Fc-receptor owners to the antibody-effector teaching context, keeping receptor binding separate from completed function.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "fcgr2a",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "e0bcf2cb839bbf9d516436ab3272f92c71d50b715535ceb94015854188bf33f3",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "fcgr2b",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "9d05208364af6051918284b8387c9ea5c1652bad9534b7bb5e6a828373147b31",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            },
+            {
+              "recordId": "fcgr3a",
+              "version": "proposal-antigen-antibodies",
+              "field": "tldr",
+              "fieldSha256": "4d05e63d9bad9d3f9a3602ad9329148b573cd41ab6f876427bccb4599f3b9dd7",
+              "explanation": "Checked human UniProt molecular-function definition, with current body rendering and actual JSON/Markdown output."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "gene-catalogue-role-versus-molecular-function",
+    "title": "Cancer catalogue roles versus normal molecular function",
+    "domain": "cancer-biology",
+    "sourceURLs": [
+      "https://github.com/judegomila/OnCo/blob/0f8ebc2569e2dcb023364d8cb6971186f11f59ab/scripts/fetch-cancer-genes.ts"
+    ],
+    "discoveryOccurrences": [
+      "antigen-existing-gene-short-definitions"
+    ],
+    "review": {
+      "status": "unreviewed",
+      "auditor": "Coordinator intake of a reproducible generator-template issue",
+      "checkedAt": "2026-11-09",
+      "rationale": "The generator maps tumour-suppressor and oncogene categories to generic claims about growth control. This misdescribed B2M, HLA-B, HLA-C and FCGR2B and overinterpreted HLA-DQA1; eight reviewed owners now use protein-function definitions. The remaining generated corpus and reproducibility of future regeneration have not been audited.",
+      "points": [
+        {
+          "id": "catalogue-role-function-scope",
+          "requirement": "Audit generated short definitions and the generator so a cancer-catalogue role does not supply an unsupported statement of normal molecular function; retain dated source scope and test any systemic correction.",
+          "status": "unreviewed",
+          "evidence": [],
+          "remaining": [
+            "Inventory affected owners, verify their molecular functions and correct the generation rule without discarding supported cancer-role evidence."
+          ]
+        }
+      ]
+    }
   }
 ]

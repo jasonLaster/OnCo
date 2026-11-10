@@ -196,9 +196,9 @@ export const simpleJ: Record<string, string> = {
   "phosphorylation": "Phosphorylation is attaching a small phosphate tag to a protein to switch it on or off, the cell's main way of passing signals along.",
   "inhibitor": "An inhibitor is a drug that blocks a specific protein from doing its job by lodging in the pocket it needs, and most targeted drugs are inhibitors.",
   "agonist-antagonist": "An agonist switches a receptor on by imitating its natural signal, while an antagonist sits in the receptor and blocks it, and cancer medicine uses both.",
-  "antibody": "An antibody is a Y-shaped protein the immune system makes to grab one specific target, and manufactured antibodies are now a cornerstone of cancer treatment.",
-  "antigen": "An antigen is anything an antibody or immune cell can recognise, usually a surface protein, acting in cancer as the flag that marks which cells to attack.",
-  "epitope": "An epitope is the exact small patch on a protein that an antibody grips, so two antibodies can bind the same protein at different spots.",
+
+
+
   "monoclonal": "Monoclonal means made from a single clone of cells, so every antibody molecule in the vial is identical and binds exactly the same spot.",
   "cell-cycle": "The cell cycle is the ordered sequence a cell follows to copy its DNA and split in two, with checkpoints that cancer cells run straight through.",
   "cell-division": "Cell division is one cell splitting into two identical daughters, which tissues need for growth and repair, and cancer is cell division that no longer stops.",
@@ -231,7 +231,7 @@ export const simpleJ: Record<string, string> = {
   "genomic-profiling": "Genomic profiling means reading a tumour's DNA to list the mutations it carries and match them to drugs, now routine in many common cancers.",
   "immune-system": "The immune system is the body's defence network that destroys infected and abnormal cells, killing most would-be cancers before anyone notices them.",
   "t-cell": "T cells are immune cells with different jobs. Finding them does not show that they recognise or kill cancer.",
-  "b-cell": "B cells are the immune cells that make antibodies, and they matter in cancer as the source of antibody drugs and as the cells that go wrong in most lymphomas.",
+
   "nk-cell": "NK cells are fast-acting immune cells that destroy abnormal cells without training on a specific target, specialising in cells that have hidden from T cells.",
   "macrophage": "Macrophages are large immune cells that eat debris and microbes, but tumours retrain them so in many cancers they end up helping the tumour.",
   "cytokine": "Cytokines are small proteins immune cells use to talk to each other, some used as drugs and some dangerous when immunotherapy releases a flood of them.",

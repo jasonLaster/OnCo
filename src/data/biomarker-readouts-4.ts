@@ -233,10 +233,14 @@ export const biomarkerReadouts4: BiomarkerInput[] = [
     forPatient: "A positive ctDNA test after surgery means traces of the cancer's DNA are still in your blood and relapse is likely without more treatment. In muscle-invasive bladder cancer a positive Signatera result now selects a year of atezolizumab; in bowel cancer it is used in trials and by some teams to decide on chemotherapy. A negative result is reassuring but not a guarantee, and testing is usually repeated over time.",
     terms: ["ctdna", "mrd", "tumour-informed-assay", "cfdna"], related: ["tmb-high", "esr1-mutation-ctdna"], links: [{ label: FDA_CDX_LABEL, url: FDA_CDX_URL }, { label: "TECENTRIQ prescribing information (DailyMed)", url: LABEL.tecentriq }, { label: "CMS MolDX billing article A58376: minimal residual disease testing for solid tumour cancers", url: "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58376" }], tags: ["biomarker", "genome-wide", "ctdna", "precision"] }),
 
-  b({ id: "hla-a-02-01", name: "HLA-A*02:01 (HLA typing for TCR therapies)", aka: ["HLA-A*02:01", "HLA-A2", "HLA-A*02:01-positive", "HLA-A0201", "HLA typing", "HLA-A*02"],
+  b({ id: "hla-a-02-01", name: "HLA-A*02:01 (HLA typing for TCR therapies)", aka: [
+  "HLA-A*02:01",
+  "HLA-A*02:01-positive",
+  "HLA-A0201"
+],
     target: "hla-a", measurement: "hla-typing",
-    tldr: "HLA-A*02:01 is the commonest tissue-type molecule in people of European descent and the one the first T-cell receptor therapies were built for. Tebentafusp and afamitresgene autoleucel work only in patients who carry it, so a blood HLA test comes before the tumour test.",
-    summary: "HLA typing by sequencing (the SeCore CDx HLA Sequencing System is the FDA-listed companion diagnostic for both drugs) reports the patient's HLA-A alleles. Tebentafusp (Kimmtrak) is labelled for HLA-A*02:01-positive adults with unresectable or metastatic uveal melanoma; afamitresgene autoleucel (Tecelra) for synovial sarcoma in patients who are HLA-A*02:01P, -A*02:02P, -A*02:03P or -A*02:06P positive and whose tumour expresses MAGE-A4 by the MAGE-A4 IHC 1F9 pharmDx, with HLA-A*02:05P as an exclusion allele. About 45 percent of Europeans and fewer people of African or East Asian ancestry carry A*02:01, which limits access and drives development of TCR therapies for other alleles.",
+    tldr: "HLA-A*02:01 is a specific allele used as an eligibility marker for some T-cell receptor therapies. Typing alone does not establish eligibility, target display or benefit.",
+    summary: "HLA typing by sequencing (the SeCore CDx HLA Sequencing System is the FDA-listed companion diagnostic for both drugs) reports the patient's HLA-A alleles. Tebentafusp (Kimmtrak) is labelled for HLA-A*02:01-positive adults with unresectable or metastatic uveal melanoma; afamitresgene autoleucel (Tecelra) for synovial sarcoma in patients who are HLA-A*02:01P, -A*02:02P, -A*02:03P or -A*02:06P positive and whose tumour expresses MAGE-A4 by the MAGE-A4 IHC 1F9 pharmDx, with HLA-A*02:05P as an exclusion allele. About 45 percent of Europeans and fewer people of African or East Asian ancestry carry A*02:01, which limits access and drives development of TCR therapies for other alleles. A typing report is read with its resolution: a group-level result such as HLA-A*02 cannot be completed as A*02:01, because the group holds different protein variants, and typing of inherited DNA does not show whether the tumour still expresses the allele or displays the target peptide.",
     scoringRule: { text: "Presence of the HLA-A*02:01 allele (for tebentafusp) or of HLA-A*02:01P, A*02:02P, A*02:03P or A*02:06P without A*02:05P (for afamitresgene autoleucel) by HLA sequencing of blood.", quote: "Eligible alleles: HLA-A*02:01, HLA-A*02:02, HLA-A*02:03 or HLA-A*02:06 and their P-group alleles. Exclusion alleles: HLA-A*02:05 and its P-group alleles.", source: FDA_CDX_URL, sourceLabel: FDA_CDX_LABEL },
     thresholds: [
       th({ value: "HLA-A*02:01-positive", drugId: "tebentafusp", cancerId: "uveal-melanoma", regulator: "FDA", source: LABEL.kimmtrak, quote: "KIMMTRAK is indicated for the treatment of HLA-A*02:01-positive adult patients with unresectable or metastatic uveal melanoma." }),
@@ -245,7 +249,29 @@ export const biomarkerReadouts4: BiomarkerInput[] = [
     cancers: ["uveal-melanoma", "synovial-sarcoma", "melanoma"], drugs: ["tebentafusp", "afamitresgene-autoleucel"],
     companionDiagnostics: [cdx("SeCore CDx HLA Sequencing System", "One Lambda (Thermo Fisher Scientific)", "Uveal Melanoma - Whole Blood", ["tebentafusp"], "BR220737 (11/28/2022)", "one-lambda"), cdx("SeCore CDx HLA Sequencing System", "One Lambda (Thermo Fisher Scientific)", "Synovial sarcoma - Whole blood", ["afamitresgene-autoleucel"], "BK241074 (08/01/2024)", "one-lambda"), cdx("MAGE-A4 IHC 1F9 pharmDx", "Agilent Technologies", "Synovial sarcoma - Tissue", ["afamitresgene-autoleucel"], "P230016 (08/01/2024)", "agilent")],
     forPatient: "Your HLA type is inherited and tested from a blood sample. If you carry HLA-A*02:01, tebentafusp is on label for advanced uveal melanoma, the only drug shown to extend survival in that disease, and afamitresgene autoleucel is an option for synovial sarcoma if the tumour also expresses MAGE-A4. If you do not carry the allele these particular treatments cannot work, and trials for other HLA types are the route to ask about.",
-    terms: ["hla-a02-restriction", "uveal-melanoma-prognostic-markers"], related: ["pd-l1-cps"], links: [{ label: "KIMMTRAK prescribing information (DailyMed)", url: LABEL.kimmtrak }, { label: "TECELRA prescribing information (DailyMed)", url: LABEL.tecelra }], tags: ["biomarker", "hla"] }),
+    terms: ["hla-a02-restriction", "uveal-melanoma-prognostic-markers"], related: [
+  "pd-l1-cps",
+  "hla-typing-and-nomenclature"
+], links: [
+  {
+    "label": "KIMMTRAK prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+  },
+  {
+    "label": "TECELRA prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab24631f-3364-46e1-8074-7244863bcbab"
+  },
+  {
+    "label": "OptiType: precision HLA typing from next-generation sequencing data.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25143287/"
+  },
+  {
+    "label": "Phase-defined complete sequencing of the HLA genes by next-generation sequencing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23714642/"
+  }
+], tags: ["biomarker", "hla"] ,
+"asOf": "2026-11-09"
+}),
 ];
 
 /**

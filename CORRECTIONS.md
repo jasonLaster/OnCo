@@ -4,6 +4,12 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Antigen presentation, antibody functions and gene definitions
+
+- **Antibody, epitope, B cell, ADCC, Fc function and HLA typing:** the sixteen-lesson audit separates receptor binding, display, activation and completed function; removes antibody-format and Fc-silencing generalisations; and prevents broad HLA names from standing in for a resolved allele. Stale short-summary entries now use corrected English fallback.
+- **B2M, HLA and Fc-receptor genes:** short definitions describe checked protein functions rather than treating cancer-catalogue roles as definitions of normal growth control. Dated catalogue assertions retain their original scope. The remaining generator/corpus issue is explicitly queued.
+- **HLA-C:** the observed peptide share retains the cell-line and assignment-method limits reported by [Schellens and colleagues](https://pubmed.ncbi.nlm.nih.gov/26375851/), alongside [allele-dependent expression](https://pubmed.ncbi.nlm.nih.gov/28649982/). This audit does not establish a universal peptide fraction or clinical response rule.
+
 ### T-cell identity and exhaustion
 
 - **T cell and T-cell exhaustion pathway:** the generic T-cell definition implied universal target recognition and killing, and the exhaustion description used absolute rescue and DNA-fixation wording. The 14-page public education audit separated identity, recognition, state, measured function and benefit; it also removed subset/state aliases from the generic owner and placed true aliases on the specific terms. Primary sources include [human class-II-dependent CD4 cytotoxicity](https://pubmed.ncbi.nlm.nih.gov/32497499/), [distinct exhaustion programmes](https://pubmed.ncbi.nlm.nih.gov/17950003/), [different exhausted subsets](https://pubmed.ncbi.nlm.nih.gov/30778252/), [chromatin stability after blockade](https://pubmed.ncbi.nlm.nih.gov/27789795/) and [human clonal replacement](https://pubmed.ncbi.nlm.nih.gov/31359002/). Twenty-seven translated/simplified entries now preserve these limits. This is an automated source audit, not expert or fluent-language sign-off. The existing detailed intervention maps retain a separately queued evidence review.

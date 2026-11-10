@@ -181,7 +181,7 @@ export const simpleE: Record<string, string> = {
   "t-cell-exhaustion": "Long stimulation can change how T cells respond. Exhausted T cells include groups that retain different abilities and respond differently to checkpoint drugs.",
   "immune-desert-exclusion": "Tumours come in three immune weathers, inflamed, excluded or desert; most common cancers keep T cells at the edge or out, and turning them 'hot' is immunotherapy's central problem.",
   "myeloid-suppression-axis": "Tumours recruit the body's clean-up cells, macrophages and immature myeloid cells, and retrain them as bodyguards that switch off T cells and refuse to eat the cancer.",
-  "complement-in-cancer": "Complement is a cascade of blood proteins that punches holes in cells marked by antibodies; rituximab uses it to kill cancer cells, and tumours defend themselves with protein shields.",
+
   "nk-cell-recognition": "Natural killer cells patrol for cells that lost their identity papers or show stress flags, so cancers hiding from T cells become visible to them unless they add disguises.",
   "invasion-ecm-degradation": "To invade, a cancer cell grips the scaffolding, dissolves a path with enzymes and pulls itself forward; enzyme blockers failed in the 1990s, so today's drugs target the grip.",
   "intravasation-ctc-survival": "Getting into the bloodstream kills almost every cancer cell that tries; the few survivors travel in clusters or cloaked in platelets, and blood tests catch what is left.",

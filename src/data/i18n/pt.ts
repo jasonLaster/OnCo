@@ -426,8 +426,8 @@ export const tldr_pt: Record<string, string> = {
   irae: "Efeitos colaterais autoimunes dos inibidores de checkpoint: colite, problemas de tireoide, erupção, hepatite, pneumonite.",
   "abscopal-effect": "Quando irradiar um tumor faz tumores não tratados em outros lugares encolherem, via sistema imune.",
   "immunogenic-cell-death": "Um modo de morrer que alerta o sistema imune, ao contrário da apoptose silenciosa.",
-  adcc: "Um anticorpo marca uma célula, e células NK reconhecem a marca e a matam.",
-  "fc-effector": "Ajustar a cauda do anticorpo para que recrute células imunes mais fortemente, ou nem um pouco.",
+
+
   oligometastatic: "Câncer que se espalhou para apenas alguns lugares, que ainda pode ser curável tratando cada ponto.",
   "neoadjuvant-adjuvant": "Tratamento dado antes da cirurgia (neoadjuvante), depois da cirurgia (adjuvante) ou ambos (perioperatório).",
   "first-line": "Primeira linha é o primeiro tratamento para câncer avançado; segunda linha é o que vem depois que ele falha, e assim por diante.",
@@ -602,7 +602,7 @@ export const tldr_pt: Record<string, string> = {
   cmml: "São cânceres da medula óssea que se comportam em parte como mielodisplasia (células sanguíneas mal formadas) e em parte como uma doença proliferativa (excesso de monócitos ou plaquetas). Medicamentos que reprogramam o controle genético da medula (agentes hipometilantes) ajudam muitos pacientes, um transplante de células-tronco pode curar os que têm boa condição física, e as mutações condutoras que agora estão sendo mapeadas apontam para medicamentos direcionados.",
   "cold-spring-harbor": "Centro de pesquisa básica em câncer onde a biologia do RAS, os supressores tumorais e os modelos de organoides foram avançados.",
   "colorectal-screening": "Encontrar e remover pólipos antes que se tornem câncer. A colonoscopia previne o câncer; os exames de fezes e de sangue o detectam cedo e fazem com que mais pessoas façam o rastreamento.",
-  "complement-in-cancer": "O complemento é uma cascata de proteínas do sangue que abre buracos no que foi marcado por anticorpos e convoca células inflamatórias. Anticorpos terapêuticos como o rituximab usam-no para matar células cancerosas; os tumores se defendem com escudos (CD46, CD55, CD59), e os subprodutos da própria cascata (C5a) podem recrutar as células mieloides que protegem o tumor.",
+
   craniopharyngioma: "O craniofaringioma é um tumor benigno, mas destrutivo, que cresce a partir de restos embrionários ao lado da hipófise e do hipotálamo. A cirurgia, ou uma cirurgia limitada mais radioterapia, cura a maioria das pessoas, mas o preço pode ser deficiência hormonal para o resto da vida e obesidade grave. A forma adulta (papilar) carrega uma mutação em BRAF e encolhe drasticamente com inibidores de BRAF e MEK, seu primeiro tratamento medicamentoso.",
   cruk: "Cancer Research UK é a maior instituição de caridade independente de pesquisa sobre o câncer do mundo, financiando o Crick, o ICR, Manchester, Cambridge e os ensaios STAMPEDE e TRACERx.",
   "cruk-cambridge-centre": "A parceria em câncer de Cambridge entre a universidade e o Addenbrooke's, famosa pela genômica do câncer de mama, pela biópsia líquida e pela detecção precoce do câncer de esôfago.",
@@ -866,9 +866,9 @@ export const tldr_pt: Record<string, string> = {
   amplify: "AMPLIFY é o ensaio por trás do primeiro esquema para CLL totalmente oral e de duração fixa aprovado nos EUA (fevereiro de 2026): 14 ciclos de dois comprimidos, e depois parar.",
   anlotinib: "Anlotinib é um dos comprimidos contra o câncer mais usados na China, aprovado primeiro para câncer de pulmão após falha de outros tratamentos e depois para vários tumores mais raros.",
   anthracycline: "Uma família de quimioterápicos vermelhos derivados de uma bactéria do solo que danificam o DNA do câncer. Pilares do tratamento do câncer de mama, linfoma, leucemia e sarcoma, mas enfraquecem o coração de forma dependente da dose, por isso há um limite para toda a vida.",
-  antibody: "Uma proteína em forma de Y que o sistema imunológico produz para se agarrar a um alvo específico. Os anticorpos fabricados são hoje um pilar do tratamento do câncer, seja bloqueando uma proteína, seja levando uma carga até ela.",
+
   "antiemetic-therapy": "Os medicamentos que fizeram a quimioterapia deixar de significar dias de vômitos: bloqueadores de 5-HT3 (ondansetron, palonosetron), bloqueadores de NK1 (aprepitant), dexametasona e olanzapina, administrados de acordo com o risco emético de cada esquema.",
-  antigen: "Qualquer coisa que um anticorpo ou uma célula imune consiga reconhecer, tipicamente uma proteína na superfície de uma célula. No câncer, um antígeno é a bandeira que diz a um medicamento ou a uma célula imune 'esta é a célula a atacar'.",
+
   "arcagy-gineco": "O grupo francês de ensaios em câncer ginecológico que liderou o PAOLA-1, o ensaio que adicionou olaparib à manutenção com bevacizumab no câncer de ovário.",
   "aromatase-inhibitor": "Comprimidos que impedem o corpo de produzir estrogênio (após a menopausa, quando ele vem da gordura e do músculo em vez dos ovários), privando o câncer de mama com receptor hormonal positivo de alimento. Tomados por cinco a dez anos após a cirurgia, reduzem a recorrência pela metade.",
   "asan-medical-center": "Asan Medical Center é o maior hospital da Coreia e um líder mundial em transplante de fígado e cirurgia do câncer gástrico.",
@@ -884,7 +884,7 @@ export const tldr_pt: Record<string, string> = {
   "avoiding-immune-destruction": "Os cânceres se escondem do sistema imunológico ou o desligam, perdendo as moléculas que exibem seus antígenos ou acionando os freios dos pontos de controle.",
   axitinib: "Axitinib é um comprimido seletivo contra o receptor de VEGF, hoje usado principalmente com pembrolizumab ou avelumab como tratamento de primeira linha do câncer de rim.",
   "aya-oncology": "Câncer em pessoas de 15 a 39 anos, cerca de 90.000 casos por ano nos EUA, com uma mistura distinta de cânceres, melhora da sobrevida mais lenta do que em crianças ou adultos mais velhos, e necessidades específicas: fertilidade, educação e trabalho, apoio psicossocial e acesso a ensaios.",
-  "b-cell": "As células imunes que produzem anticorpos. Elas importam no câncer por dois motivos: como fonte de todo anticorpo terapêutico e como as células que dão errado na maioria dos linfomas, leucemias e no mieloma.",
+
   "bariatric-surgery-cancer-incidence": "Pessoas com obesidade grave que fazem cirurgia para perda de peso desenvolvem cerca de um terço menos cânceres na década seguinte, especialmente câncer de útero e outros cânceres relacionados a hormônios, do que pessoas semelhantes que não a fazem.",
   "basement-membrane-tissue-barriers": "Cada órgão mantém suas células de revestimento atrás de uma lâmina fina e densa de proteína chamada membrana basal. Um tumor que não a atravessou é 'in situ' e essencialmente curável; atravessá-la é o momento em que o câncer se torna invasivo.",
   bayer: "A Bayer é dona do Xofigo, o único emissor alfa aprovado, e está desenvolvendo agentes PSMA de actínio de nova geração.",
@@ -2759,7 +2759,7 @@ export const tldr_pt: Record<string, string> = {
   "epcore-nhl-1": "O EPCORE NHL-1 foi o estudo pivotal de braço único por trás da aprovação do epcoritamab; cerca de metade dos pacientes com resposta completa continua em remissão aos três anos.",
   "epigenetics-roadmap": "Os medicamentos epigenéticos mudam a forma como os genes são lidos, e não os genes em si. Começaram como uma quimioterapia suave para cânceres do sangue e estão se tornando medicamentos precisos contra as enzimas e os arcabouços de que determinados cânceres dependem.",
   "epithelioid-vs-sarcomatoid": "O mesotelioma ocorre em uma forma 'epitelioide' mais lenta e em uma forma 'sarcomatoide' agressiva. A quimioterapia funciona melhor na primeira; a imunoterapia ajuda mais na segunda.",
-  epitope: "O pequeno ponto exato de um antígeno que um anticorpo ou uma célula T realmente agarra, como o ponto específico de uma maçaneta que a mão segura. Dois anticorpos podem se ligar à mesma proteína em epítopos diferentes.",
+
   erasca: "A Erasca desenvolve comprimidos que desligam a via de sinalização RAS, um dos impulsionadores mais comuns do câncer. Seus dois medicamentos principais visam bloquear todas as formas de RAS ou KRAS em vez de uma única mutação.",
   eribulin: "Uma quimioterapia derivada de esponja marinha que prolongou a sobrevida no câncer de mama intensamente pré-tratado e no lipossarcoma, onde quase nada mais havia conseguido.",
   "escort-1st": "ESCORT-1st é o ensaio chinês de imunoterapia de primeira linha para o câncer de esôfago escamoso, um dos cinco que, em conjunto, tornaram a quimioimunoterapia o padrão global.",

@@ -231,7 +231,7 @@ export const tldr_de: Record<string, string> = {
   "cold-vs-hot": "„Heiße“ Tumoren sind voller Immunzellen und sprechen auf Immuntherapie an; „kalte“ Tumoren haben das Immunsystem ausgesperrt.",
   "colorectal-screening": "Polypen finden und entfernen, bevor sie zu Krebs werden. Die Darmspiegelung verhindert Krebs; Stuhl- und Bluttests erkennen ihn früh und sorgen dafür, dass mehr Menschen an der Vorsorge teilnehmen.",
   "companion-diagnostic": "Der Test, der entscheidet, ob ein bestimmtes Medikament für Sie geeignet ist, und der zusammen mit dem Medikament zugelassen wird.",
-  "complement-in-cancer": "Das Komplementsystem ist eine Kaskade von Blutproteinen, die Löcher in alles schlägt, was von Antikörpern markiert wurde, und Entzündungszellen herbeiruft. Therapeutische Antikörper wie rituximab nutzen es, um Krebszellen zu töten; Tumoren verteidigen sich mit Schutzschilden (CD46, CD55, CD59), und die Nebenprodukte der Kaskade selbst (C5a) können die myeloischen Zellen anlocken, die den Tumor schützen.",
+
   cps: "Ein PD-L1-Score, der angefärbte Tumorzellen und Immunzellen zusammen zählt.",
   craniopharyngioma: "Das Kraniopharyngeom ist ein gutartiger, aber zerstörerischer Tumor, der aus embryonalen Resten neben der Hirnanhangsdrüse und dem Hypothalamus wächst. Eine Operation, oder eine begrenzte Operation plus Strahlentherapie, heilt die meisten Betroffenen, aber der Preis kann ein lebenslanger Hormonmangel und schwere Fettleibigkeit sein. Die Erwachsenenform (papillär) trägt eine BRAF-Mutation und schrumpft unter BRAF- und MEK-Hemmern dramatisch, ihrer ersten medikamentösen Behandlung.",
   "crispr-screens": "Jedes Gen einzeln in Krebszellen ausschalten, um herauszufinden, ohne welche sie nicht überleben können.",
@@ -678,7 +678,7 @@ export const tldr_de: Record<string, string> = {
   "active-surveillance-term": "Einen Krebs bewusst noch nicht zu behandeln, ihn aber regelmäßig mit Bluttests, Bildgebung oder Biopsien zu kontrollieren und erst dann zu behandeln, wenn er Anzeichen eines Fortschreitens zeigt. Standard bei Prostatakrebs mit niedrigem Risiko, kleinen Nierentumoren und mehreren anderen langsam verlaufenden Erkrankungen.",
   adaura: "Zeigte, dass eine zielgerichtete Tablette nach einer Lungenkrebsoperation das Sterberisiko halbiert, das erste derartige Ergebnis für eine zielgerichtete Therapie.",
   "adc-cdmo-manufacturing": "Eine hochgiftige Wirkstofffracht sicher und in großem Maßstab an einen Antikörper koppeln. Nur wenige Auftragshersteller können das, was mitbestimmt, wer ADCs entwickeln kann.",
-  adcc: "Bei der ADCC markiert ein Antikörper eine Zelle, und NK-Zellen erkennen die Markierung und töten sie.",
+
   "aditya-bardia": "Leitete ASCENT, die Studie, die sacituzumab govitecan zum ersten ADC für dreifach negativen Brustkrebs machte, sowie die EMERALD-Studie zu elacestrant.",
   "afamitresgene-autoleucel": "Afamitresgene autoleucel war die erste Therapie mit gentechnisch verändertem T-Zell-Rezeptor, die für einen soliden Tumor, das Synovialsarkom, zugelassen wurde.",
   agitg: "Die Studiengruppe für gastrointestinale Krebserkrankungen Australiens und Neuseelands, die praxisrelevante Studien zu Magen-, Speiseröhren-, Darm- und Bauchspeicheldrüsenkrebs durchführt, darunter ctDNA-gesteuerte adjuvante Studien.",
@@ -692,9 +692,9 @@ export const tldr_de: Record<string, string> = {
   amplify: "AMPLIFY ist die Studie hinter dem ersten in den USA zugelassenen rein oralen CLL-Therapieschema mit fester Behandlungsdauer (Februar 2026): 14 Zyklen mit zwei Tabletten, dann Stopp.",
   anlotinib: "Anlotinib ist eine der meistverwendeten Krebstabletten in China, zunächst zugelassen für Lungenkrebs nach Versagen anderer Behandlungen und dann für mehrere seltenere Tumoren.",
   anthracycline: "Eine Familie roter Chemotherapeutika, die aus einem Bodenbakterium stammen und die DNA von Krebszellen schädigen. Eckpfeiler der Behandlung von Brustkrebs, Lymphom, Leukämie und Sarkom, aber sie schwächen das Herz dosisabhängig, weshalb es eine Lebenszeit-Höchstdosis gibt.",
-  antibody: "Ein Y-förmiges Protein, das das Immunsystem herstellt, um ein ganz bestimmtes Ziel zu packen. Hergestellte Antikörper sind heute ein Grundpfeiler der Krebsbehandlung, indem sie entweder ein Protein blockieren oder eine Wirkstoffladung zu ihm bringen.",
+
   "antiemetic-therapy": "Die Medikamente, die dafür sorgten, dass Chemotherapie nicht mehr tagelanges Erbrechen bedeutet: 5-HT3-Blocker (ondansetron, palonosetron), NK1-Blocker (aprepitant), Dexamethason und Olanzapin, dosiert nach dem emetogenen Risiko des jeweiligen Schemas.",
-  antigen: "Alles, was ein Antikörper oder eine Immunzelle erkennen kann, typischerweise ein Protein auf der Zelloberfläche. Beim Krebs ist ein Antigen die Flagge, die einem Medikament oder einer Immunzelle sagt: 'Das ist die Zelle, die angegriffen werden soll'.",
+
   "arcagy-gineco": "Die französische Studiengruppe für gynäkologische Krebserkrankungen, die PAOLA-1 leitete, die Studie, in der olaparib zur Erhaltungstherapie mit bevacizumab bei Eierstockkrebs hinzugefügt wurde.",
   "aromatase-inhibitor": "Tabletten, die den Körper daran hindern, Östrogen zu bilden (nach den Wechseljahren, wenn es aus Fett und Muskeln statt aus den Eierstöcken stammt), und so hormonrezeptorpositiven Brustkrebs aushungern. Fünf bis zehn Jahre nach der Operation eingenommen, halbieren sie das Rückfallrisiko.",
   "artera-ai-prostate": "Das erste von der FDA zugelassene KI-Werkzeug, das beim Prostatakrebs aus einem routinemäßigen Biopsieschnitt sowohl die Prognose als auch den Nutzen einer Behandlung vorhersagt.",
@@ -712,7 +712,7 @@ export const tldr_de: Record<string, string> = {
   "avoiding-immune-destruction": "Krebszellen verstecken sich vor dem Immunsystem oder schalten es ab, indem sie die Moleküle verlieren, die ihre Antigene präsentieren, oder indem sie die Checkpoint-Bremsen hochfahren.",
   axitinib: "Axitinib ist eine selektive VEGF-Rezeptor-Tablette, die heute vor allem zusammen mit pembrolizumab oder avelumab als Erstlinienbehandlung bei Nierenkrebs gegeben wird.",
   "aya-oncology": "Krebs bei Menschen im Alter von 15 bis 39 Jahren, etwa 90.000 Fälle pro Jahr in den USA, mit einem eigenen Spektrum an Krebsarten, langsamerer Verbesserung des Überlebens als bei Kindern oder älteren Erwachsenen und spezifischen Bedürfnissen: Fruchtbarkeit, Ausbildung und Beruf, psychosoziale Unterstützung und Zugang zu Studien.",
-  "b-cell": "Die Immunzellen, die Antikörper bilden. Beim Krebs sind sie doppelt wichtig: als Quelle jedes therapeutischen Antikörpers und als die Zellen, die bei den meisten Lymphomen, Leukämien und beim Myelom entarten.",
+
   "bariatric-surgery-cancer-incidence": "Menschen mit schwerer Adipositas, die sich einer Operation zur Gewichtsreduktion unterziehen, entwickeln im folgenden Jahrzehnt etwa ein Drittel weniger Krebserkrankungen, insbesondere Gebärmutterkrebs und andere hormonabhängige Krebsarten, als vergleichbare Menschen ohne Operation.",
   "basement-membrane-tissue-barriers": "Jedes Organ hält seine Deckzellen hinter einer dünnen, dichten Proteinschicht, der Basalmembran. Ein Tumor, der sie nicht durchbrochen hat, ist 'in situ' und im Wesentlichen heilbar; sie zu durchbrechen ist der Moment, in dem Krebs invasiv wird.",
   bayer: "Bayer besitzt Xofigo, den einzigen zugelassenen Alphastrahler, und entwickelt Actinium-PSMA-Wirkstoffe der nächsten Generation.",
@@ -1720,7 +1720,7 @@ export const tldr_de: Record<string, string> = {
   "f-stephen-hodi": "Erstautor der Ipilimumab-Studie von 2010, die bewies, dass Immuntherapie das Überleben beim Melanom verlängern kann.",
   "falp-chile": "Chiles größtes spezialisiertes Krebsinstitut, eine 1954 gegründete gemeinnützige Stiftung und das aktivste Zentrum des Landes für onkologische Studien und moderne Strahlentherapie.",
   "fasting-mimicking-diet": "Einige Tage rund um jede Chemotherapiedosis sehr wenig zu essen, könnte normale Zellen schützen und den Tumor empfindlicher machen. Frühe Studien sind spannend, aber klein, und man sollte es nicht ohne Ernährungsfachkraft versuchen.",
-  "fc-effector": "Den Schwanz des Antikörpers so verändern, dass er Immunzellen stärker anlockt, oder gar nicht.",
+
   "ferdinandos-skoulidis": "Leitete CodeBreaK 100, die Studie, die Sotorasib zum ersten zugelassenen KRAS-Hemmer machte, und zeigte, dass STK11/KEAP1-Ko-Mutationen die Wirkung der Immuntherapie abschwächen.",
   "fgfr2-fusion": "Ein gebrochenes und neu zusammengefügtes FGFR2-Gen, das etwa jeden achten intrahepatischen Gallengangskrebs antreibt und sich mit Tabletten abschalten lässt.",
   fianlimab: "Fianlimab ist der LAG-3-Blocker von Regeneron. Vielversprechende frühe Daten mit Cemiplimab hielten in einer Erstlinien-Phase-3-Studie 2026 dem Vergleich mit Pembrolizumab nicht stand.",
@@ -2717,7 +2717,7 @@ export const tldr_de: Record<string, string> = {
   "epcore-nhl-1": "EPCORE NHL-1 war die zulassungsrelevante einarmige Studie hinter der Zulassung von Epcoritamab; etwa die Hälfte der Patienten mit komplettem Ansprechen ist nach drei Jahren noch in Remission.",
   "epigenetics-roadmap": "Epigenetische Medikamente verändern, wie Gene gelesen werden, nicht die Gene selbst. Sie begannen als schonende Chemotherapie bei Blutkrebs und werden zu präzisen Wirkstoffen gegen die Enzyme und Gerüstproteine, von denen bestimmte Krebsarten abhängen.",
   "epithelioid-vs-sarcomatoid": "Das Mesotheliom tritt in einer langsameren „epitheloiden“ und einer aggressiven „sarkomatoiden“ Form auf. Die Chemotherapie wirkt bei der ersten besser; die Immuntherapie hilft am meisten bei der zweiten.",
-  epitope: "Die genaue kleine Stelle auf einem Antigen, an der ein Antikörper oder eine T-Zelle tatsächlich anpackt, wie die bestimmte Stelle eines Türgriffs, die eine Hand ergreift. Zwei Antikörper können dasselbe Protein an unterschiedlichen Epitopen binden.",
+
   eprenetapopt: "Eprenetapopt (APR-246) war ein Medikament, das mutiertes p53, das am häufigsten defekte Protein bei Krebs, neu falten sollte. Seine Phase 3 bei Blutkrebs scheiterte 2020.",
   erasca: "Erasca entwickelt Tabletten, die den RAS-Signalweg abschalten, einen der häufigsten Treiber von Krebs. Seine beiden Leitwirkstoffe sollen alle Formen von RAS oder KRAS blockieren statt einer einzelnen Mutation.",
   eribulin: "Eine aus einem Meeresschwamm gewonnene Chemotherapie, die das Überleben bei stark vorbehandeltem Brustkrebs und beim Liposarkom verlängerte, wo fast nichts anderes dies geschafft hatte.",

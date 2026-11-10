@@ -275,27 +275,107 @@ export const termsBasics: TermInput[] = [
   t({
     id: "antibody", name: "Antibody", category: BIO,
     aka: ["antibodies", "immunoglobulin", "immunoglobulins", "IgG", "therapeutic antibody", "therapeutic antibodies", "antibody-based", "antibody drug", "antibody drugs"],
-    tldr: "A Y-shaped protein the immune system makes to grab onto one specific target. Manufactured antibodies are now a cornerstone of cancer treatment, either blocking a protein or delivering a payload to it.",
-    summary: "Each antibody's two arm tips bind one specific antigen with great precision, while its stem (the Fc region) can recruit immune cells and complement or extend the antibody's life in the blood. Therapeutic antibodies block growth receptors (trastuzumab on HER2, cetuximab on EGFR), release the brakes on T cells (pembrolizumab on PD-1), flag cancer cells for immune killing (rituximab on CD20), or serve as the targeting vehicle of ADCs and radioimmunotherapy. Bispecific antibodies have two different arm tips and can physically pull a T cell onto a tumour cell.",
+    tldr: "A typical IgG antibody has antigen-binding arms and a stem that can interact with other parts of the immune system. Binding alone does not specify its function.",
+    summary: "A typical IgG has two antigen-binding arms; receptor binding and cross-reactivity depend on the particular molecule and test system, while its stem (the Fc region) can recruit immune cells and complement or extend the antibody's life in the blood. Therapeutic antibodies block growth receptors (trastuzumab on HER2, cetuximab on EGFR), release the brakes on T cells (pembrolizumab on PD-1), flag cancer cells for immune killing (rituximab on CD20), or serve as the targeting vehicle of ADCs and radioimmunotherapy. Bispecific formats have two binding specificities. Some are designed to bring a T cell and a target cell together; their structures and functions vary. Fab, the arm with the binding site, and Fc, the stem, are separate parts: binding does not guarantee killing, and Fc effector contacts need compatible effector cells or complement.",
     wikipedia: W("Antibody"),
-    related: ["antigen", "epitope", "monoclonal", "adcc", "fc-effector", "immune-system", "b-cell"], technologies: ["monoclonal-antibody", "bispecific-antibody", "adc", "checkpoint-inhibitor", "t-cell-engager"], drugs: ["trastuzumab", "pembrolizumab"],
-  }),
+    related: [
+  "antigen",
+  "epitope",
+  "monoclonal",
+  "adcc",
+  "fc-effector",
+  "immune-system",
+  "b-cell",
+  "antibody-structure",
+  "adcc-adcp-cdc",
+  "isotypes-and-fc-silencing"
+], technologies: ["monoclonal-antibody", "bispecific-antibody", "adc", "checkpoint-inhibitor", "t-cell-engager"], drugs: ["trastuzumab", "pembrolizumab"],
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Antibody"
+  },
+  {
+    "label": "IgG subclasses and allotypes: from structure to effector functions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+  },
+  {
+    "label": "Effector-attenuating Substitutions That Maintain Antibody Stability and Reduce Toxicity in Mice.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28077575/"
+  }
+]
+}),
   t({
     id: "antigen", name: "Antigen", category: BIO,
     aka: ["antigens", "tumour antigen", "tumour antigens", "tumor antigen", "tumor antigens", "target antigen", "target antigens", "antigenic", "tumour-associated antigen", "tumour-associated antigens", "tumor-associated antigen", "tumor-associated antigens", "antigen-negative", "antigen loss"],
-    tldr: "Anything an antibody or immune cell can recognise, typically a protein on a cell's surface. In cancer, an antigen is the flag that tells a drug or an immune cell 'this is the cell to attack'.",
-    summary: "Most cancer antigens are ordinary human proteins that a tumour makes in unusual amounts (HER2, TROP2, CD19, PSMA), so drugs targeting them also touch normal cells that carry a little; truly tumour-specific antigens arise from mutations (neoantigens) or from viral proteins. A good drug antigen is abundant on tumour cells, scarce on essential normal tissue, and stable over time. Tumours escape by losing the antigen, which is how CD19-negative relapse defeats CAR-T, and by hiding the pieces of antigen they would normally display to T cells.",
+    tldr: "An antigen is a molecular target an immune receptor can recognise. Recognition alone does not establish immune activation or safe tumour targeting.",
+    summary: "Most cancer antigens are ordinary human proteins that a tumour makes in unusual amounts (HER2, TROP2, CD19, PSMA), so drugs targeting them also touch normal cells that carry a little; truly tumour-specific antigens arise from mutations (neoantigens) or from viral proteins. A good drug antigen is abundant on tumour cells, scarce on essential normal tissue, and stable over time. Tumours escape by losing the antigen, which is how CD19-negative relapse defeats CAR-T, and by hiding the pieces of antigen they would normally display to T cells. Recognition differs from immunogenicity, the ability to elicit an immune response in a particular setting. An antibody can recognise an accessible part of a molecule directly, whereas a conventional peptide-directed T-cell receptor recognises a processed peptide together with a particular HLA molecule, so a surface-expression result cannot by itself establish peptide-HLA display. A self molecule can be an antigen, and tumour-associated is not the same as tumour-specific.",
     wikipedia: W("Antigen"),
-    related: ["antibody", "epitope", "neoantigen", "t-cell", "antigen-presentation-immunoediting", "resistance"], targets: ["her2", "trop2", "cd19", "psma", "bcma"], technologies: ["adc", "car-t", "t-cell-engager"],
-  }),
+    related: [
+  "antibody",
+  "epitope",
+  "neoantigen",
+  "t-cell",
+  "antigen-presentation-immunoediting",
+  "resistance",
+  "hla",
+  "tumor-associated-antigen",
+  "antigen-processing-machinery"
+], targets: ["her2", "trop2", "cd19", "psma", "bcma"], technologies: ["adc", "car-t", "t-cell-engager"],
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Antigen"
+  },
+  {
+    "label": "Structure of the complex between human T-cell receptor, viral peptide and HLA-A2.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8906788/"
+  },
+  {
+    "label": "IgG subclasses and allotypes: from structure to effector functions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+  }
+]
+}),
   t({
     id: "epitope", name: "Epitope", category: BIO,
     aka: ["epitopes", "binding site", "binding sites", "binding domain", "binding domains"],
-    tldr: "The exact small patch on an antigen that an antibody or T cell actually grips, like the specific spot on a door handle a hand grabs. Two antibodies can bind the same protein at different epitopes.",
-    summary: "An epitope is typically a cluster of five to fifteen amino acids on the surface of a protein. Trastuzumab and pertuzumab both bind HER2 but at different epitopes, which is why they can be given together, and zanidatamab is a single antibody built to grab both spots at once. For T cells, the epitope is a short peptide fragment held in an HLA molecule on the cell surface; a mutation that changes or removes the epitope lets a tumour cell slip past an antibody or T cell without changing anything else.",
+    tldr: "An epitope is the molecular feature an immune receptor recognises. Antibodies and T-cell receptors can recognise different surfaces from the same source protein.",
+    summary: "An epitope is a molecular feature recognised by an immune receptor; its definition depends on the receptor and the tested molecular preparation. Trastuzumab and pertuzumab both bind HER2 but at different epitopes, which is why they can be given together, and zanidatamab is a single antibody built to grab both spots at once. For T cells, the epitope is a short peptide fragment held in an HLA molecule on the cell surface; an alteration that changes recognition can permit escape, but its effects on processing, display and other cell functions need their own evidence. The epitope an antibody recognises can be a continuous stretch of sequence or a surface formed by folding, so distant parts of the chain can meet; accessibility matters, and binding to an isolated protein does not show the same site is reachable on an intact cell. For a conventional T-cell receptor the target is the peptide together with the restricting HLA molecule, and the same peptide on another HLA molecule is a different recognition surface.",
     wikipedia: W("Epitope"),
-    related: ["antigen", "antibody", "neoantigen", "t-cell"], targets: ["her2"], drugs: ["trastuzumab", "zanidatamab"],
-  }),
+    related: [
+  "antigen",
+  "antibody",
+  "neoantigen",
+  "t-cell",
+  "antibody-structure",
+  "hla"
+], targets: ["her2"], drugs: ["trastuzumab", "zanidatamab"],
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Epitope"
+  },
+  {
+    "label": "Structure of the complex between human T-cell receptor, viral peptide and HLA-A2.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8906788/"
+  },
+  {
+    "label": "Structure of a covalently stabilized complex of a human alphabeta T-cell receptor, influenza HA peptide and MHC class II molecule, HLA-DR1.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11060013/"
+  },
+  {
+    "label": "IgG subclasses and allotypes: from structure to effector functions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+  }
+]
+}),
   t({
     id: "monoclonal", name: "Monoclonal", category: BIO,
     aka: ["monoclonal antibody", "monoclonal antibodies", "mAb", "mAbs", "monoclonals"],
@@ -581,12 +661,42 @@ export const termsBasics: TermInput[] = [
   }),
   t({
     id: "b-cell", name: "B cell", category: BIO,
-    aka: ["B cells", "B-cell", "B-cells", "B lymphocyte", "B lymphocytes", "plasma cell", "plasma cells", "antibody-producing cells"],
-    tldr: "The immune cells that make antibodies. They matter in cancer twice over: as the source of every therapeutic antibody, and as the cells that go wrong in most lymphomas, leukaemias and myeloma.",
-    summary: "Each B cell makes one antibody; when it meets its antigen it multiplies and matures into plasma cells that pump out that antibody in bulk, which is the response the hybridoma technique captured to make monoclonal antibodies. B cells carry surface markers (CD19, CD20, CD22) throughout their lives and plasma cells carry BCMA, and these markers make B-cell cancers (most lymphomas, CLL, ALL, myeloma) the most successful targets of rituximab, CAR-T and bispecific antibodies; since normal B cells are also wiped out, patients need antibody replacement and are prone to infection. B cells inside solid tumours, organised into structures resembling lymph nodes, are associated with better responses to immunotherapy.",
+    aka: [
+  "B cells",
+  "B-cell",
+  "B-cells",
+  "B lymphocyte",
+  "B lymphocytes"
+],
+    tldr: "B cells can develop into antibody-secreting cells or memory cells. Their presence does not identify what an antibody recognises or whether it helps against cancer.",
+    summary: "Each B cell makes one antibody; when it meets its antigen it multiplies and matures into plasma cells that pump out that antibody in bulk, which is the response the hybridoma technique captured to make monoclonal antibodies. B cells carry surface markers (CD19, CD20, CD22) throughout their lives and plasma cells carry BCMA, and these markers make B-cell cancers (most lymphomas, CLL, ALL, myeloma) the most successful targets of rituximab, CAR-T and bispecific antibodies; since normal B cells are also wiped out, patients need antibody replacement and are prone to infection. B cells inside solid tumours, organised into structures resembling lymph nodes, are associated with better responses to immunotherapy. Plasma cells are the antibody-secreting end of the lineage, plasmablasts an earlier dividing stage and memory B cells a separate lasting trace of a response; a high immunoglobulin RNA signal in a tumour sample can come from plasma cells and does not show that cancer cells made it.",
     wikipedia: W("B_cell"),
-    related: ["antibody", "t-cell", "immune-system", "lymphoma-type", "leukaemia-type", "monoclonal"], targets: ["cd19", "cd20", "bcma", "cd38"], cancers: ["dlbcl", "cll", "multiple-myeloma", "all-leukemia"], technologies: ["car-t", "t-cell-engager"],
-  }),
+    related: [
+  "antibody",
+  "t-cell",
+  "immune-system",
+  "lymphoma-type",
+  "leukaemia-type",
+  "monoclonal",
+  "b-cells-and-plasma-cells"
+], targets: ["cd19", "cd20", "bcma", "cd38"], cancers: ["dlbcl", "cll", "multiple-myeloma", "all-leukemia"], technologies: ["car-t", "t-cell-engager"],
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/B_cell"
+  },
+  {
+    "label": "Blimp-1 is required for the formation of immunoglobulin secreting plasma cells and pre-plasma memory B cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14563324/"
+  },
+  {
+    "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+  }
+]
+}),
   t({
     asOf:"2026-11-08", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Natural_killer_cell"},{"label":"Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)","url":"https://pubmed.ncbi.nlm.nih.gov/3951539/"},{"label":"Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)","url":"https://doi.org/10.1056/NEJMoa1910607"}], notes:["The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.","A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."],
     id: "nk-cell", name: "NK cell", category: BIO, targets: ["cd56", "fcgr3a", "cd57"],

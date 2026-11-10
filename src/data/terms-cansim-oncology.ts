@@ -93,10 +93,33 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Cancer immunotherapy stimulates the immune system to treat cancer (Wikipedia). Only a minority of patients respond to checkpoint inhibitors, and the approved predictors (PD-L1 staining, mismatch repair deficiency, tumour mutational burden) are imperfect, so pathology and multimodal foundation models are trained to predict benefit from slides, sequencing and clinical data; MUSK reported such a task. Response is defined by imaging criteria at set time points, which makes the label noisy.",
     technologies: ["checkpoint-inhibitor", "musk"], terms: ["tmb", "biomarker"], related: ["pdl1"] }),
   t({ id: "tertiary-lymphoid-structures", name: "Tertiary lymphoid structures (TLS)", category: "Immunology", aka: ["tertiary lymphoid structures", "tertiary lymphoid structure", "TLS"],
-    links: [{ label: "Sautès-Fridman et al., Tertiary lymphoid structures in the era of cancer immunotherapy (Nature Reviews Cancer 2019)", url: DOI("10.1038/s41568-019-0144-6") }], cansim: "/terms/tertiary-lymphoid-structures",
-    tldr: "Tertiary lymphoid structures are organised clusters of immune cells that form inside tumours and resemble small lymph nodes; their presence is linked to better immunotherapy outcomes.",
-    summary: "Sautès-Fridman and colleagues review tertiary lymphoid structures as organised aggregates of B cells, T cells and dendritic cells that develop in chronically inflamed tissues including tumours, where they are generally associated with longer survival and response to checkpoint inhibitors. Because they are visible on H&E and spatial assays, they are a known-biology probe: a slide or spatial model that recovers TLS is learning something real. No medicine in OnCo is designed to build them. Two linked trials use them directly: a phase 3 trial in triple-negative breast cancer enrols only patients whose residual tumour contains them, and a pancreatic cancer vaccine trial counts how many patients form them as a primary outcome.",
-    terms: ["immunotherapy-response", "microenvironment-inflammation-theory"], technologies: ["spatial-transcriptomics"], trials: ["nct06313463", "nct06782932"] }),
+    links: [
+  {
+    "label": "Sautès-Fridman et al., Tertiary lymphoid structures in the era of cancer immunotherapy (Nature Reviews Cancer 2019)",
+    "url": "https://doi.org/10.1038/s41568-019-0144-6"
+  },
+  {
+    "label": "Mature tertiary lymphoid structures predict immune checkpoint inhibitor efficacy in solid tumors independently of PD-L1 expression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35118423/"
+  },
+  {
+    "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+  },
+  {
+    "label": "CD4⁺ follicular helper T cell infiltration predicts breast cancer survival.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23778140/"
+  }
+], cansim: "/terms/tertiary-lymphoid-structures",
+    tldr: "Organised immune-cell clusters can form within or beside tumours. Their architecture and association with treatment outcomes depend on the study and assay.",
+    summary: "Sautès-Fridman and colleagues review tertiary lymphoid structures as organised aggregates of B cells, T cells and dendritic cells that develop in chronically inflamed tissues including tumours, where they are generally associated with longer survival and response to checkpoint inhibitors. Because they are visible on H&E and spatial assays, they are a known-biology probe: a slide or spatial model that recovers TLS is learning something real. No medicine in OnCo is designed to build them. Two linked trials use them directly: a phase 3 trial in triple-negative breast cancer enrols only patients whose residual tumour contains them, and a pancreatic cancer vaccine trial counts how many patients form them as a primary outcome. In the retrospective immune checkpoint cohorts of Vanhersecke et al. (Nature Cancer 2021, PMID 35118423) a structure was called mature when at least one CD23-positive cell with dendritic morphology was found within it, and mature structures were associated with better response rate, progression-free survival and overall survival independently of PD-L1 status and CD8 density; a CD23-positive cell elsewhere in tissue does not establish that architecture. Any TLS were seen in 105 of 328 discovery-cohort cases (32 per cent), 84 of them mature. That is an association in treated cohorts, so it does not by itself show extra benefit from the treatment, and no universal abundance or maturity rule selects a therapy. Aggregate, B-cell follicle and germinal centre are different architectural levels, and an RNA signature alone cannot show a germinal centre. Report density with its area and the criteria used (structures per mm2; two organised structures in 4 mm2 is 0.5 per mm2), because thresholds are method- and study-specific, and small sections or disrupted architecture limit the reading. Report density with its area and the criteria used (structures per mm2; two organised structures in 4 mm2 is 0.5 per mm2), because thresholds are method- and study-specific, and small sections or disrupted architecture limit the reading.",
+    terms: ["immunotherapy-response", "microenvironment-inflammation-theory"], technologies: ["spatial-transcriptomics"], trials: ["nct06313463", "nct06782932"] ,
+"asOf": "2026-11-09",
+"related": [
+  "cancer-ai-vocabulary",
+  "b-cells-and-plasma-cells"
+]
+}),
   t({ id: "pharmacogenomics-term", name: "Pharmacogenomics", category: GEN, aka: ["pharmacogenomics", "pharmacogenomic", "pharmacogenetics", "PGx"],
     wikipedia: W("Pharmacogenomics"), cansim: "/terms/pharmacogenomics",
     tldr: "Pharmacogenomics studies how a person's genes, and a tumour's genes, change the way drugs work or cause harm.",

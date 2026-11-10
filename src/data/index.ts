@@ -18,6 +18,7 @@ import { educationAccessEvidence } from "./education-access-evidence";
 import { educationBiologyEvidence } from "./education-biology-evidence";
 import { educationTherapeuticEvidence } from "./education-therapeutic-evidence";
 import { educationParallelTcells, educationParallelTcellTargets } from "./education-parallel-tcells-2026-11";
+import { educationAntigenAntibodiesTerms, educationAntigenProcessingTargets } from "./education-parallel-antigen-antibodies-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -331,6 +332,8 @@ const RAW_INPUTS: EntityInput[] = [
   ...educationTherapeuticEvidence,
   ...educationParallelTcells,
   ...educationParallelTcellTargets,
+  ...educationAntigenAntibodiesTerms,
+  ...educationAntigenProcessingTargets,
   ...trials,
   ...pairings,
   ...roadmaps,

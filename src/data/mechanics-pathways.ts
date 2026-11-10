@@ -464,8 +464,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "complement-in-cancer", name: "Complement in cancer", wikipedia: W("Complement_system"),
-    tldr: "Complement is a cascade of blood proteins that punches holes in things marked by antibodies and calls in inflammatory cells. Therapeutic antibodies such as rituximab use it to kill cancer cells; tumours defend themselves with shields (CD46, CD55, CD59), and the cascade's own by-products (C5a) can recruit the myeloid cells that protect the tumour.",
-    summary: "Three routes converge on C3 convertase: classical (C1q binding IgG1/IgG3 Fc clusters, the basis of complement-dependent cytotoxicity by rituximab, obinutuzumab less so, daratumumab), lectin, and alternative (spontaneous C3 tick-over). C3b opsonises for phagocytosis via CR3; C5 convertase releases C5a and assembles the membrane attack complex (C5b-9). Tumours over-express membrane regulators CD46, CD55 (DAF) and CD59 (protectin) and secrete factor H, limiting CDC; CD20 shaving and antigen loss add to rituximab resistance. Conversely, intratumoural complement activation is often pro-tumour: C5a-C5aR1 and C3a-C3aR recruit and activate MDSCs and neutrophils, suppress CD8 T cells, and promote angiogenesis; C1q from macrophages supports invasion. Blocking C5aR1 (avdoralimab) with anti-PD-1 was tested; complement is also a mediator of infusion reactions and of CAR-T-associated inflammation. Fc engineering (afucosylation for ADCC versus hexamerisation for CDC) tunes which effector dominates.",
+    tldr: "Complement proteins can coat targets, recruit inflammation and sometimes damage membranes. Complement deposition and completed target killing are different findings.",
+    summary: "Three routes converge on C3 convertase: classical (C1q binding IgG1/IgG3 Fc clusters, the basis of complement-dependent cytotoxicity by rituximab, obinutuzumab less so, daratumumab), lectin, and alternative (spontaneous C3 tick-over). C3b opsonises for phagocytosis via CR3; C5 convertase releases C5a and assembles the membrane attack complex (C5b-9). Tumours over-express membrane regulators CD46, CD55 (DAF) and CD59 (protectin) and secrete factor H, limiting CDC; CD20 shaving and antigen loss add to rituximab resistance. Conversely, intratumoural complement activation is often pro-tumour: C5a-C5aR1 and C3a-C3aR recruit and activate MDSCs and neutrophils, suppress CD8 T cells, and promote angiogenesis; C1q from macrophages supports invasion. Blocking C5aR1 (avdoralimab) with anti-PD-1 was tested; complement is also a mediator of infusion reactions and of CAR-T-associated inflammation. Fc engineering (afucosylation for ADCC versus hexamerisation for CDC) tunes which effector dominates. Complement deposition on a coated cell is an earlier step than a membrane pore, and a pore is a different observation from measured lysis, so deposition alone does not demonstrate completed CDC; heat-inactivated or depleted complement tests complement dependence.",
     analogy: "A demolition crew that follows the flags an antibody plants on a building: they blow holes in the walls (membrane attack complex) and call in the bulldozers (phagocytes). Tumours paint over the flags (CD55, CD59), and the noise of the demolition attracts the wrong kind of crowd (C5a-recruited suppressor cells).",
     nodes: [
       { id: "ab", label: "IgG1 antibody (rituximab)", x: 12, y: 15, targetId: "cd20" }, { id: "c1q", label: "C1q classical route", x: 40, y: 15 }, { id: "alt", label: "Alternative / lectin", x: 40, y: 45 },
@@ -478,8 +478,22 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["CD20 and CD38 antibodies (rituximab, obinutuzumab, daratumumab, isatuximab) kill partly through complement; Fc engineering tunes CDC versus ADCC", "Blocking complement regulators (CD55/CD59) to restore CDC (preclinical)", "C5aR1 antagonists with checkpoint inhibitors to remove myeloid recruitment (early trials)", "Complement inhibition to manage infusion reactions and CAR-T inflammation"],
     targets: ["cd20", "cd38", "cd19", "pd1", "csf1r"], drugs: ["rituximab", "obinutuzumab", "daratumumab", "isatuximab"], technologies: ["monoclonal-antibody", "checkpoint-inhibitor"], terms: ["adcc", "fc-effector", "crs", "myeloid-derived-suppressor-cells"], pathways: ["myeloid-suppression-axis", "inflammation-nfkb", "nk-cell-recognition", "extrinsic-apoptosis-death-receptors"], cancers: ["dlbcl", "follicular-lymphoma", "cll", "multiple-myeloma"],
-    links: [{ label: "Roumenina et al., Context-dependent roles of complement in cancer (Nat Rev Cancer 2019)", url: "https://doi.org/10.1038/s41568-019-0210-0" }],
-  }),
+    links: [
+  {
+    "label": "Roumenina et al., Context-dependent roles of complement in cancer (Nat Rev Cancer 2019)",
+    "url": "https://doi.org/10.1038/s41568-019-0210-0"
+  },
+  {
+    "label": "Complement is activated by IgG hexamers assembled at the cell surface.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24626930/"
+  }
+],
+
+"asOf": "2026-11-09",
+"related": [
+  "adcc-adcp-cdc"
+]
+}),
   p({
     id: "nk-cell-recognition", name: "NK-cell recognition: missing self & stress ligands", wikipedia: W("Natural_killer_cell"),
     tldr: "Natural killer cells patrol for cells that have lost their identity papers (MHC-I) or that display stress flags. Cancers that hide from T cells by dropping MHC-I become visible to NK cells, unless they also shed the stress flags, wrap themselves in a second inhibitory badge (HLA-E), or soak the neighbourhood in TGF-β.",

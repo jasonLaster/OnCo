@@ -231,7 +231,7 @@ export const tldr_fr: Record<string, string> = {
   "cold-vs-hot": "Les tumeurs « chaudes » sont remplies de cellules immunitaires et répondent à l'immunothérapie ; les tumeurs « froides » ont tenu le système immunitaire à l'écart.",
   "colorectal-screening": "Trouver et retirer les polypes avant qu'ils ne deviennent un cancer. La coloscopie prévient le cancer ; les tests sur les selles et le sang le détectent tôt et permettent de dépister davantage de personnes.",
   "companion-diagnostic": "Le test qui détermine si un médicament précis vous convient, approuvé en même temps que le médicament.",
-  "complement-in-cancer": "Le complément est une cascade de protéines du sang qui perce des trous dans ce que les anticorps ont marqué et appelle des cellules inflammatoires. Les anticorps thérapeutiques comme le rituximab s'en servent pour tuer les cellules cancéreuses ; les tumeurs se défendent avec des boucliers (CD46, CD55, CD59), et les sous-produits de la cascade elle-même (C5a) peuvent recruter les cellules myéloïdes qui protègent la tumeur.",
+
   cps: "Un score PD-L1 qui compte ensemble les cellules tumorales et les cellules immunitaires marquées.",
   craniopharyngioma: "Le craniopharyngiome est une tumeur bénigne mais destructrice qui se développe à partir de vestiges embryonnaires à côté de l'hypophyse et de l'hypothalamus. La chirurgie, ou une chirurgie limitée associée à une radiothérapie, guérit la plupart des personnes, mais le prix peut être un déficit hormonal à vie et une obésité sévère. La forme de l'adulte (papillaire) porte une mutation de BRAF et régresse de façon spectaculaire sous inhibiteurs de BRAF et de MEK, son premier traitement médicamenteux.",
   "crispr-screens": "Inactiver chaque gène, un par un, dans des cellules cancéreuses pour découvrir ceux dont elles ne peuvent pas se passer.",
@@ -678,7 +678,7 @@ export const tldr_fr: Record<string, string> = {
   "active-surveillance-term": "Ne pas traiter volontairement un cancer pour l'instant, mais le surveiller régulièrement par des analyses de sang, des examens d'imagerie ou des biopsies, et ne traiter que s'il montre des signes de progression. C'est la norme pour le cancer de la prostate à faible risque, les petites masses rénales et plusieurs autres affections d'évolution lente.",
   adaura: "A montré qu'un comprimé ciblé après une chirurgie du cancer du poumon divise par deux le risque de décès, le premier résultat de ce type pour une thérapie ciblée.",
   "adc-cdmo-manufacturing": "Relier une charge hautement toxique à un anticorps de façon sûre et à grande échelle. Peu de sous-traitants savent le faire, ce qui détermine qui peut développer des ADC.",
-  adcc: "Dans l'ADCC, un anticorps marque une cellule, et les cellules NK reconnaissent ce marquage et la tuent.",
+
   "aditya-bardia": "A dirigé ASCENT, l'essai qui a fait du sacituzumab govitecan le premier ADC pour le cancer du sein triple négatif, et l'essai EMERALD de l'elacestrant.",
   "afamitresgene-autoleucel": "Afamitresgene autoleucel a été la première thérapie par récepteur de lymphocytes T modifié approuvée pour une tumeur solide, le sarcome synovial.",
   agitg: "Le groupe d'essais sur les cancers digestifs d'Australie et de Nouvelle-Zélande, qui mène des essais influençant la pratique dans les cancers de l'estomac, de l'œsophage, colorectal et du pancréas, y compris des études adjuvantes guidées par le ctDNA.",
@@ -692,9 +692,9 @@ export const tldr_fr: Record<string, string> = {
   amplify: "AMPLIFY est l'essai à l'origine du premier traitement de la CLL entièrement par voie orale et de durée fixe approuvé aux États-Unis (février 2026) : 14 cycles de deux comprimés, puis arrêt.",
   anlotinib: "Anlotinib est l'un des comprimés anticancéreux les plus utilisés en Chine, d'abord approuvé pour le cancer du poumon après échec d'autres traitements, puis pour plusieurs tumeurs plus rares.",
   anthracycline: "Une famille de médicaments de chimiothérapie de couleur rouge, dérivés d'une bactérie du sol, qui endommagent l'ADN du cancer. Piliers du traitement du cancer du sein, du lymphome, de la leucémie et du sarcome, mais ils affaiblissent le cœur de façon dose-dépendante, d'où une limite à vie.",
-  antibody: "Une protéine en forme de Y que le système immunitaire fabrique pour s'accrocher à une cible précise. Les anticorps fabriqués sont aujourd'hui une pierre angulaire du traitement du cancer, soit en bloquant une protéine, soit en lui apportant une charge.",
+
   "antiemetic-therapy": "Les médicaments grâce auxquels la chimiothérapie ne rime plus avec des jours de vomissements : bloqueurs 5-HT3 (ondansetron, palonosetron), bloqueurs NK1 (aprepitant), dexaméthasone et olanzapine, administrés selon le risque émétique de chaque protocole.",
-  antigen: "Tout ce qu'un anticorps ou une cellule immunitaire peut reconnaître, généralement une protéine à la surface d'une cellule. Dans le cancer, un antigène est le drapeau qui indique à un médicament ou à une cellule immunitaire « voici la cellule à attaquer ».",
+
   "arcagy-gineco": "Le groupe français d'essais en cancérologie gynécologique qui a mené PAOLA-1, l'essai ajoutant l'olaparib au bevacizumab en entretien dans le cancer de l'ovaire.",
   "aromatase-inhibitor": "Des comprimés qui empêchent le corps de produire des œstrogènes (après la ménopause, quand ils proviennent de la graisse et du muscle plutôt que des ovaires), privant ainsi le cancer du sein à récepteurs hormonaux positifs de son carburant. Pris pendant cinq à dix ans après la chirurgie, ils réduisent de moitié les récidives.",
   "artera-ai-prostate": "Le premier outil d'IA autorisé par la FDA pour prédire à la fois le pronostic et le bénéfice du traitement à partir d'une lame de biopsie de routine, dans le cancer de la prostate.",
@@ -712,7 +712,7 @@ export const tldr_fr: Record<string, string> = {
   "avoiding-immune-destruction": "Les cancers se cachent du système immunitaire ou le désactivent, en perdant les molécules qui présentent leurs antigènes ou en renforçant les freins des points de contrôle.",
   axitinib: "Axitinib est un comprimé sélectif contre le récepteur du VEGF, désormais donné surtout avec pembrolizumab ou avelumab en traitement de première ligne du cancer du rein.",
   "aya-oncology": "Le cancer chez les personnes de 15 à 39 ans, environ 90 000 cas par an aux États-Unis, avec un éventail de cancers particulier, une amélioration de la survie plus lente que chez les enfants ou les adultes plus âgés, et des besoins spécifiques : fertilité, études et travail, soutien psychosocial et accès aux essais.",
-  "b-cell": "Les cellules immunitaires qui fabriquent les anticorps. Elles comptent doublement dans le cancer : comme source de tout anticorps thérapeutique, et comme cellules qui déraillent dans la plupart des lymphomes, des leucémies et du myélome.",
+
   "bariatric-surgery-cancer-incidence": "Les personnes souffrant d'obésité sévère qui subissent une chirurgie de l'obésité développent environ un tiers de cancers en moins au cours de la décennie suivante, en particulier des cancers de l'utérus et d'autres cancers hormono-dépendants, par rapport à des personnes similaires non opérées.",
   "basement-membrane-tissue-barriers": "Chaque organe maintient ses cellules de revêtement derrière une fine et dense couche de protéines appelée membrane basale. Une tumeur qui ne l'a pas franchie est 'in situ' et essentiellement curable ; la franchir est le moment où le cancer devient invasif.",
   bayer: "Bayer détient Xofigo, le seul émetteur alpha approuvé, et développe des agents PSMA à l'actinium de nouvelle génération.",
@@ -1720,7 +1720,7 @@ export const tldr_fr: Record<string, string> = {
   "f-stephen-hodi": "Premier auteur de l'essai sur l'ipilimumab de 2010 qui a prouvé que l'immunothérapie pouvait prolonger la survie dans le mélanome.",
   "falp-chile": "Le plus grand institut du Chili dédié au cancer, une fondation à but non lucratif créée en 1954 et le centre le plus actif du pays pour les essais en oncologie et la radiothérapie avancée.",
   "fasting-mimicking-diet": "Manger très peu pendant quelques jours autour de chaque cure de chimiothérapie pourrait protéger les cellules normales et sensibiliser la tumeur. Les premiers essais sont intrigants mais de petite taille, et ce n'est pas à tenter sans diététicien.",
-  "fc-effector": "Modifier la queue de l'anticorps pour qu'il recrute les cellules immunitaires plus fortement, ou pas du tout.",
+
   "ferdinandos-skoulidis": "Il a dirigé CodeBreaK 100, l'essai qui a fait du sotorasib le premier inhibiteur de KRAS approuvé, et a montré que les co-mutations STK11/KEAP1 affaiblissent l'immunothérapie.",
   "fgfr2-fusion": "Un gène FGFR2 cassé puis ressoudé qui est le moteur d'environ un cancer des voies biliaires intrahépatiques sur huit et que des comprimés peuvent éteindre.",
   fianlimab: "Le fianlimab est l'anti-LAG-3 de Regeneron. Les données précoces prometteuses avec le cemiplimab ne se sont pas confirmées face au pembrolizumab dans un essai de phase 3 de première ligne en 2026.",
@@ -2717,7 +2717,7 @@ export const tldr_fr: Record<string, string> = {
   "epcore-nhl-1": "EPCORE NHL-1 a été l'étude pivot à bras unique à l'origine de l'approbation de l'epcoritamab ; environ la moitié des répondeurs complets sont encore en rémission à trois ans.",
   "epigenetics-roadmap": "Les médicaments épigénétiques modifient la façon dont les gènes sont lus plutôt que les gènes eux-mêmes. Ils ont débuté comme une chimiothérapie douce pour les cancers du sang et deviennent des médicaments précis contre les enzymes et les échafaudages dont dépendent certains cancers.",
   "epithelioid-vs-sarcomatoid": "Le mésothéliome existe sous une forme « épithélioïde » plus lente et une forme « sarcomatoïde » agressive. La chimiothérapie fonctionne mieux dans la première ; l'immunothérapie aide surtout dans la seconde.",
-  epitope: "La petite zone exacte d'un antigène qu'un anticorps ou un lymphocyte T saisit réellement, comme l'endroit précis d'une poignée de porte que la main attrape. Deux anticorps peuvent se lier à la même protéine sur des épitopes différents.",
+
   eprenetapopt: "L'eprenetapopt (APR-246) était un médicament censé replier le p53 mutant, la protéine défectueuse la plus fréquente dans le cancer. Sa phase 3 dans les cancers du sang a échoué en 2020.",
   erasca: "Erasca développe des comprimés qui éteignent la voie de signalisation RAS, l'un des moteurs les plus fréquents du cancer. Ses deux médicaments phares visent à bloquer toutes les formes de RAS ou de KRAS plutôt qu'une seule mutation.",
   eribulin: "Une chimiothérapie dérivée d'une éponge marine qui a prolongé la survie dans le cancer du sein lourdement prétraité et dans le liposarcome, où presque rien d'autre n'y était parvenu.",

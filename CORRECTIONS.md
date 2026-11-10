@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Pneumonitis attribution and product-specific labels
+
+- **Interruption and discontinuation:** replaced a single generic grade ladder with the named product's instructions. The May 2026 trastuzumab deruxtecan table retains its separate adjuvant radiotherapy-only footnote; datopotamab deruxtecan and the October 2026 pembrolizumab label retain their own confirmation, severity and resumption conditions.
+- **Monitoring and incidence:** removed the unsupported scheduled-imaging requirement and universal workup. The warning sections specify symptom monitoring and prompt investigation, including imaging for suspected disease. Naidoo's incidence estimates retain their two-institution cohort, denominators and observational scope.
+
+The [source and field checkpoint](research/pneumonitis-labels-2026-11-10/README.md) records the targeted reading, current-label check and validation. This corrects one record; it does not close the broader pharmacology and toxicity curriculum audit.
+
 ### Effect measures and evidence interpretation
 
 - **Statistical interpretation:** corrected the lead-time superlative, the p-value probability gloss, an inverted absence-of-evidence sentence and unsupported hazard-ratio examples. Frequentist intervals, equivalence, non-inferiority, competing risks and survival clocks now retain their different questions and assumptions. Fictional calculations are labelled as such.

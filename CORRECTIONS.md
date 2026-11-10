@@ -2,6 +2,14 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-10
+
+### RNA design, delivery and evidence boundaries
+
+- **AAV:** the source audit distinguishes a named viral genome, packaged-genome measurements and usable coding capacity. A general self-complementary capacity figure is replaced with the original inverted-repeat experiment and its coding-capacity trade-off. The blanket claim that none of the cited studies concerns cancer is corrected: the T-cell editing study includes a mouse leukaemia model, while human cancer benefit is not established here. Sources include [McCarty 2001](https://pubmed.ncbi.nlm.nih.gov/11509958/), [McCarty 2008](https://pubmed.ncbi.nlm.nih.gov/18682697/) and [Eyquem](https://pubmed.ncbi.nlm.nih.gov/28225754/).
+- **RNA carriers and constructs:** ionisable-lipid charge is qualified by lipid and environment. Entry, endosomal release, expression, integration, receptor recognition and useful activity retain their own assays and populations. A residual-DNA number from a review is not treated as a universal release specification; the [NEB IVT protocol](https://www.neb.com/en-us/protocols/evaluation-of-ivt-reaction-products?pdf=true) supplies the explicitly vendor-scoped UV measurement caveat.
+- **Coverage and ownership:** repeated takeaways and source lists retain dispositions without earning extra teaching credit. The assertion that on-target/off-tumour toxicity had no owner is corrected after finding existing therapeutic-index and lineage-antigen aliases. Their broader class-safety claims remain queued for verification rather than being inherited as fact.
+
 ## 2026-11-09
 
 ### Cell death, stress and source-review corrections

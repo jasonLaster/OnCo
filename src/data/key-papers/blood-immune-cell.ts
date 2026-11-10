@@ -534,7 +534,20 @@ export const papersBloodImmuneCell: PaperInput[] = [
     whatItMeans: "Pancreatic cancer was thought to be immunologically inert because of its low mutation burden; this study showed that with the right vaccine platform its few neoantigens can still be targeted. It is the strongest human evidence so far that personalised cancer vaccines can generate durable, tumour-specific immunity, and it justifies the randomised trials now running in pancreatic cancer and melanoma. Benefit is not yet proven, because responders may simply have had more immunogenic tumours.",
     caveats: ["Tiny, non-randomised study; the association between immune response and recurrence could reflect confounding.", "Half the patients did not mount a response, for reasons that are only partly understood (for example, splenectomy).", "Manufacturing an individual vaccine within weeks of surgery is expensive and logistically complex.", "Clinical benefit awaits the randomised IMCODE003 result."],
     changedPractice: false, participants: 16,
-    links: [pubmed("Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer Rojas Nature 2023"), ct("NCT04161755")],
+    links: [
+  {
+    "label": "PubMed search",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37165196/"
+  },
+  {
+    "label": "ClinicalTrials.gov NCT04161755",
+    "url": "https://clinicaltrials.gov/study/NCT04161755"
+  },
+  {
+    "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+    "url": "https://doi.org/10.1038/s41586-023-06063-y"
+  }
+],
     cancers: ["pancreatic", "melanoma"], drugs: ["autogene-cevumeran", "atezolizumab", "intismeran-autogene"], targets: ["pd1"], technologies: ["neoantigen-mrna-vaccine"], trials: ["interpath-001"], terms: ["neoantigen", "tmb"], institutions: ["mskcc"], companies: ["biontech", "roche-genentech"], related: ["vaccine-plus-pd1"], bottlenecks: ["b-immunotherapy-response", "b-manufacturing-cell-therapy", "b-tme-immunosuppression"], journals: ["nature"] }),
 
   // paper-checkmate-067-ten-year-nejm-2025 merged into paper-checkmate-067-10-year-nejm-2025 on 2026-09-25: see src/data/merged-records.ts.

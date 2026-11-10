@@ -123,11 +123,51 @@ export const manufacturingTechnologies: TechnologyInput[] = [
   // ---------------------------------------------------------------- mRNA
   tech({ id: "mrna-lnp-manufacturing", name: "mRNA and lipid nanoparticle manufacturing", status: "phase-3", since: 2020, sections: ["immunotherapy"],
     tldr: "An mRNA cancer vaccine is made without cells: a DNA template is copied into RNA by an enzyme in a tank, cleaned up, and wrapped in tiny fat bubbles. For personalised vaccines the whole run is done once for each patient, against that patient's own tumour mutations, in a few weeks.",
-    summary: "mRNA manufacture begins with a plasmid DNA template (covered in the plasmid record), which is linearised and transcribed in vitro by T7 RNA polymerase with a cap analogue and modified nucleotides. The RNA is purified by tangential flow filtration and chromatography (oligo-dT affinity, and reverse-phase or cellulose steps that remove the double-stranded RNA that triggers unwanted inflammation), then mixed with an ionisable lipid, a phospholipid, cholesterol and a PEG-lipid in a microfluidic or T-junction mixer so lipid nanoparticles self-assemble around it. The particles are buffer-exchanged, sterile-filtered, filled and frozen. Every step is cell-free, which is why COVID-19 vaccines could be scaled in months, and the same enzymes, cap analogues, lipids and single-use mixers are the supply chain for cancer vaccines.\n\nPersonalised neoantigen vaccines change the logistics. For intismeran autogene (mRNA-4157, Moderna with Merck) the tumour and blood are sequenced, up to thirty-four neoantigens are chosen by algorithm, a patient-specific plasmid is made and the RNA and nanoparticle steps are run as a single-patient GMP batch, with a turnaround of weeks; Moderna produces these at its Norwood, Massachusetts, site and has built a dedicated individualised therapy facility in Marlborough. BioNTech makes autogene cevumeran in Mainz on a similar cycle. Constraints are ionisable lipid patents and supply, enzyme and cap analogue suppliers, and the per-patient release testing that has to be as fast as the manufacture. A Phase 3 trial in melanoma (with pembrolizumab) and trials in lung and pancreatic cancer will decide whether this factory model is worth industrialising.",
+    summary: "mRNA manufacture begins with a plasmid DNA template (covered in the plasmid record), which is linearised and transcribed in vitro by T7 RNA polymerase with a cap analogue and modified nucleotides. The RNA is purified by tangential flow filtration and chromatography (oligo-dT affinity, and reverse-phase or cellulose steps that remove the double-stranded RNA that triggers unwanted inflammation), then mixed with an ionisable lipid, a phospholipid, cholesterol and a PEG-lipid in a microfluidic or T-junction mixer so lipid nanoparticles self-assemble around it. The particles are buffer-exchanged, sterile-filtered, filled and frozen. Every step is cell-free, which is why COVID-19 vaccines could be scaled in months, and the same enzymes, cap analogues, lipids and single-use mixers are the supply chain for cancer vaccines.\n\nPersonalised neoantigen vaccines change the logistics. For intismeran autogene (mRNA-4157, Moderna with Merck) the tumour and blood are sequenced, up to thirty-four neoantigens are chosen by algorithm, a patient-specific plasmid is made and the RNA and nanoparticle steps are run as a single-patient GMP batch, with a turnaround of weeks; Moderna produces these at its Norwood, Massachusetts, site and has built a dedicated individualised therapy facility in Marlborough. BioNTech makes autogene cevumeran in Mainz on a similar cycle. Constraints are ionisable lipid patents and supply, enzyme and cap analogue suppliers, and the per-patient release testing that has to be as fast as the manufacture. A Phase 3 trial in melanoma (with pembrolizumab) and trials in lung and pancreatic cancer will decide whether this factory model is worth industrialising.\n\nTwo details matter when reading a product description. First, double-stranded RNA can arise from the transcription step itself: in one study T7 polymerase started transcription from a promoter-less DNA end and made an antisense strand that paired with the intended RNA and stimulated the innate sensor MDA5, and the effect fell with modified nucleotides or a lower magnesium concentration (Mu and colleagues). Purification was tested separately: HPLC removed contaminants including double-stranded RNA from nucleoside-modified transcripts and raised translation 10 to 1,000-fold in primary cells (Karikó and colleagues), and a cellulose method removed at least 90 per cent of double-stranded RNA with over 65 per cent recovery, taking out duplexes of 30 base pairs or longer while most of a 21 base-pair duplex remained (Baiersdörfer and colleagues). Second, a lipid nanoparticle is not the only formulation in use: in the pancreatic cancer phase I trial of autogene cevumeran each patient's vaccine held two uridine mRNA strands, each encoding up to 10 neoepitopes, formulated as lipoplex nanoparticles of about 400 nm made from the cationic lipid DOTMA and the phospholipid DOPE and given intravenously (Rojas and colleagues). Release testing is layered: a review of mRNA analytics lists identity and modification analysis, poly(A) tail, RNA content and integrity, double-stranded RNA and residual DNA as separate attributes, and a review of mRNA manufacturing cites a regulator-recommended residual DNA limit of 10 ng per dose (Losada and colleagues; Nowak and colleagues). Particle size and composition measurements do not by themselves show that usable RNA reaches the cytosol of the intended cell.",
     principle: "Cell-free enzymatic synthesis of RNA from a DNA template, purified and encapsulated in self-assembling lipid nanoparticles; personalised products run the whole chain once per patient.",
     strengths: ["No cell culture, so weeks not months", "Sequence can change without changing the process", "Same platform for shared and personalised antigens"], limitations: ["Cold chain at minus 20 or minus 70 degrees", "Lipid and enzyme supply and patents", "Per-patient release testing must keep pace"],
     technologies: ["plasmid-dna-manufacturing", "neoantigen-mrna-vaccine", "single-use-bioprocessing", "sterile-fill-finish", "cell-therapy-cold-chain", "shared-antigen-vaccine"], drugs: ["intismeran-autogene", "autogene-cevumeran"], companies: ["moderna", "biontech", "merck", "aldevron", "touchlight", "thermo-fisher", "lonza"], cancers: ["melanoma", "pancreatic", "nsclc"],
-    links: [{ label: "FDA guidance: CMC information for human gene therapy INDs", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug" }, { label: "Wikipedia", url: W("MRNA_vaccine") }] }),
+    links: [
+  {
+    "label": "FDA guidance: CMC information for human gene therapy INDs",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/MRNA_vaccine"
+  },
+  {
+    "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+    "url": "https://doi.org/10.1093/nar/gky177"
+  },
+  {
+    "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+    "url": "https://doi.org/10.1093/nar/gkr695"
+  },
+  {
+    "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+    "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+  },
+  {
+    "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+    "url": "https://doi.org/10.1038/s41586-023-06063-y"
+  },
+  {
+    "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+    "url": "https://doi.org/10.1007/s00216-026-06615-x"
+  },
+  {
+    "label": "Process and analytical strategies for the safe production of mRNA vaccines and therapeutics.",
+    "url": "https://doi.org/10.1007/s11033-026-11455-0"
+  }
+] ,
+"asOf": "2026-11-09",
+"related": [
+  "lipid-nanoparticle",
+  "rna-lipoplex",
+  "targeted-lnps"
+]
+}),
 
   // ---------------------------------------------------------------- isotopes
   tech({ id: "research-reactor-isotope-production", name: "Research reactors for medical isotopes (Mo-99, Lu-177, I-131)", status: "standard-of-care", since: 1960, sections: ["radiopharma"],

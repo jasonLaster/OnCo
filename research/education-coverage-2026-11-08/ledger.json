@@ -17,7 +17,7 @@
     },
     {
       "pr": 373,
-      "head": "4064995963b71f72ac0d1d2bd486454b55838d80",
+      "head": "961a6994e776d2cf426d0605c14898c9269dbab8",
       "state": "open draft; not merged"
     }
   ],
@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "e8fbe2ea3a8ef0c85a795096057f6a03466fcac27a77e15d7176facb52b17cf5"
+      "recordSnapshotSha256": "fc6ac700afedf6a7e2fd0edc1bc956438ed1b2987f7b69c550fdbcf577f3870f"
     },
     {
       "version": "draft-376",
@@ -54,8 +54,8 @@
     },
     {
       "version": "draft-373-summary-consumers",
-      "state": "Actual summary tables at PR 373 head 1329c14243c52b30fab3459bb0c68eadb63bdd8b; open draft, not merged.",
-      "recordSnapshotSha256": "700ef98537ff44e83750974a839c9a1124e2dcaeb7d1381e0208c37af3407a16"
+      "state": "81 actual selected short-summary entries at the current shared draft head; 63 additional RNA selectors use English fallback. Earlier 18 entries and their scopes are retained. No new named language review.",
+      "recordSnapshotSha256": "f2247923c8afe6248d414ec32353363b1643ccd77f11374b89dcc1697e266082"
     },
     {
       "version": "draft-369-summary-consumers",
@@ -96,6 +96,16 @@
       "version": "proposal-death-summary-consumers",
       "state": "117 additional checked selectors: nine unchanged ICD entries contain text and 108 use corrected English fallback. Seventy-two stale short entries removed.",
       "recordSnapshotSha256": "cf2bf186d7eb99521b11b995cfbbc1198aa8e67512a8ab9367e4bb4eb453a3d3"
+    },
+    {
+      "version": "proposal-rna-delivery",
+      "state": "Integrated in draft375 only: six new delivery concepts and three additional existing owners. In-vivo-car-t retains proposal-therapeutic ownership; seven RNA construct owners remain in draft373.",
+      "recordSnapshotSha256": "9af078b431fd74f7dde76f3db0ddb3a10198faee44c106612d2ef43671b4c954"
+    },
+    {
+      "version": "proposal-rna-summary-consumers",
+      "state": "81 additional actual root selectors: 20 stored entries and 61 English fallbacks. Existing in-vivo-CAR-T selectors retain their earlier snapshot. No new language review.",
+      "recordSnapshotSha256": "fb4d977ea39c5361530e1d389b27fd30929b03d5ca48ecc0a5dc20fa0ee91eff"
     }
   ],
   "sourcePhases": [
@@ -105,7 +115,7 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (420 sources)"
+        "Source phase remains open: guide-c9689645 (407 sources)"
       ]
     }
   ],
@@ -113,18 +123,18 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 70,
+      "teachingAssets": 88,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1818,
-      "unresolvedAssets": 1818
+      "unclassifiedAssets": 1800,
+      "unresolvedAssets": 1800
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 70,
+      "teachingAssets": 88,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1818,
-      "unresolvedAssets": 1818
+      "unclassifiedAssets": 1800,
+      "unresolvedAssets": 1800
     }
   ],
   "stats": {
@@ -134,15 +144,15 @@
     "navigation": 14,
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
-    "semanticallyReviewed": 138,
-    "implementedCoverage": 134,
+    "semanticallyReviewed": 151,
+    "implementedCoverage": 147,
     "mainCoverage": 0,
-    "unresolvedContentItems": 396,
-    "unresolvedSources": 396,
-    "adjacentConcepts": 26,
-    "unresolvedAdjacentConcepts": 3,
+    "unresolvedContentItems": 383,
+    "unresolvedSources": 383,
+    "adjacentConcepts": 30,
+    "unresolvedAdjacentConcepts": 7,
     "openSchemaGaps": 6,
-    "unreviewedLiteratureOccurrences": 108,
+    "unreviewedLiteratureOccurrences": 110,
     "readyForFinalReaudit": false
   },
   "items": [
@@ -17878,8 +17888,256 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "54712848c53c1a4d56f71b71e1c7de3f139ee0c3b90b9c00b24dd8d1d9beddac",
+          "c81c6a5f9d88c4736b8207d5a7524db1ea07172d25c763b386937e69920b2a13",
+          "5dad01da670523659614e33565abd6c530e59d56121a27a6ca7fc083626284db",
+          "5b8a82693b6fff1f721c318ca335d298bd9a8d1e8e30ff1e82dfd47491d3c0c9",
+          "406250e63780cf1c868c7f1b322cea3736450f5a9413ff0e63e131942c525454",
+          "aacc4f9461c5aae3d538d9983d7d0a9e958718eb3ad0cda83b728130b85b2654",
+          "99785aebffaaa077899f7a19424e367487c06473e1c542bcdd7cf061ccac82f2",
+          "6874c908940a8e6b64e0e2b82433ecd6a47684be64f17d2caef517a9a6585efe",
+          "5a74dd5f81a088a38077b489e3c8fb8db5ffcfe04c0c3a0d1180ada0f945b504",
+          "1678bd26105ca663503729725d8e8e89a0391c3100f2f3d536fd6138946f7333",
+          "123ca66d54e21de9ff7fb0136617275ea9b009456632aa729acde9e3b6bcf4e0"
+        ],
+        "points": [
+          {
+            "id": "rna-aav-vector:r01",
+            "requirement": "AAV is an engineered particle: the capsid influences cell entry, the cassette decides what could be made, and address is not payload job.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r02",
+            "requirement": "Delivered DNA must reach the nucleus and act as a transcription template before RNA and protein; DNA location and expression are separate layers (figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r03",
+            "requirement": "Episomes are DNA outside chromosomes; sampled human muscle held persistent circular vector genomes whose recovered sequences were expression-competent (tissue- and construct-specific).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r04",
+            "requirement": "Episomal genomes can be lost on cell division; mouse liver regeneration separated extrachromosomal from integrated forms and expression.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "743d8074ecd5dcc8c98656f422e1a75a8e1825e6920efa92656cc59784c22613",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r05",
+            "requirement": "'Often episomal' is not 'never integrates'; persistent DNA does not ensure an intact cassette, adequate protein or a surviving functional cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r06",
+            "requirement": "Capsid-directed immunity can reduce delivery or persistence: human liver study showed expression loss alongside evidence of immunity against transduced cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r07",
+            "requirement": "Re-dosing: neutralising antibodies against the capsid make re-administration difficult; whether a product can be given again is product-specific.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r08",
+            "requirement": "AAV inside T-cell genome-editing workflows: AAV6 can carry a donor repair template into electroporated T cells while Cas9 mRNA and guide RNA make the cut; the lasting change is the knocked-in receptor, not direct AAV targeting of T cells in a patient.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r09",
+            "requirement": "Packaging capacity: oversized plasmid-encoded vectors (4.7 to 8.7 kb) in AAV2/5/8 packaged at no more than 5.2 kb, truncated at the 5' end and less efficiently expressed than genomes under 5 kb; a multi-component design cannot assume all sequences fit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r10",
+            "requirement": "Distinguish the named AAV2 genome sequence, measured packaged-genome lengths and usable coding capacity. Self-complementary designs trade coding capacity for an inverted repeat that can pair with itself; do not infer one universal packaging ceiling.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r11",
+            "requirement": "AAV usual genetic behaviour gives no universal safety advantage; assessment is product-specific (FDA long-term follow-up guidance).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r12",
+            "requirement": "Measurement: vector genome copies per stated denominator; sequence and DNA-form analyses for integrity, episomes or integration; RNA and protein in identified cells; copy counts cannot determine location or antitumour function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "743d8074ecd5dcc8c98656f422e1a75a8e1825e6920efa92656cc59784c22613",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r13",
+            "requirement": "Common confusions: nonintegrating category is not zero integration; persistence is not survival through every division; capsid targeting is not cancer targeting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-aav-vector:r14",
+            "requirement": "Inference from the muscle-to-CAR persistence example: a long-lived expression result in human muscle cannot be assigned to rapidly dividing T cells carrying a different cassette; test genome form and expression in the intended cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "743d8074ecd5dcc8c98656f422e1a75a8e1825e6920efa92656cc59784c22613",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "aav-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -17961,8 +18219,152 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "81ba799dfdc1756a34d8fbe62e285b2c8acf96f82540c26533f5f432012d5ec4",
+          "add2f36ec3315af713104bd9703a814b7be58147b691781fa01be6ad30b3d1eb",
+          "273610e56c7a8f54143e274e1ceef1226d69f510c7dad749d8452d3f44c31b08",
+          "1cd32b680eb214d968f63afec97861207c237f0837b26ede875d569ff0defa76",
+          "55cdc34aa51bcd426ee0696f1db8d76c2fcc5f2b645235f0c8743bddfebac607",
+          "b3de8fc799dcba6815ec598147e152ac0966171c8d81ca4c84b351ac68026cc8",
+          "5923be8dac1b28b77f9c2d26357c24da3c715d3dbd8496f577935c94146ef02b",
+          "5bda2edbd211745a5be036c24586845540da74f7d322ccfa34b9243431fd13f4",
+          "dc0a0772caac4b40e0c76fc0d7fec817a3fab4cc9437a3b6af9cb25c22428536",
+          "9f176ceff4a8488f18e88a2a893214d0baa128ed886379c3ad6a0d87b0c9c1ec",
+          "d2705de5a7312ed0aa4b45a4a5de1b3a2cdf654d9cb7012327d401406b9719b4",
+          "e68ca7094fabba0eee8dc97b1f89eb6a616fb5086f614ebd71f9d43b292d0532"
+        ],
+        "points": [
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r01",
+            "requirement": "Delivery targeting decides which cells receive the intervention; cancer targeting is what the resulting molecule or cell recognises; carrier marker A and receptor antigen B need not match (diagram).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7b911e2fa22396fcf85f6ff75fac9884a1acd8c14e865982de114362e3deaad8",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r02",
+            "requirement": "Binding or particle uptake may occur without expression; a CAR that binds B may fail to activate or kill; binding, expression, signalling and target-cell effects need separate tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7b911e2fa22396fcf85f6ff75fac9884a1acd8c14e865982de114362e3deaad8",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r03",
+            "requirement": "The delivery address can be an antigen-presenting cell in a vaccine; vaccine-carrier targeting is not direct tumour delivery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r04",
+            "requirement": "Comparison tables: three targeting questions (who receives usable cargo; what the receptor recognises; where engineered cells act) with measurement and remaining boundary.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r05",
+            "requirement": "Selective engineering does not remove on-target, off-tumour risk; little unintended-cell expression in a sample does not establish absence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7b911e2fa22396fcf85f6ff75fac9884a1acd8c14e865982de114362e3deaad8",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r06",
+            "requirement": "Measurement card: flow cytometry for receptor-positive fractions in identified subsets; functional assays with matched antigen-positive and antigen-negative controls; percentage among expressing cells differs from percentage of all T cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7b911e2fa22396fcf85f6ff75fac9884a1acd8c14e865982de114362e3deaad8",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-delivery-targeting-vs-cancer-targeting:r07",
+            "requirement": "Inferences from the worked example: report receptor-positive percentages within each sampled population (30% of T cells, 5% of non-T cells) rather than calling delivery exclusive; activity against B-positive healthy cells with little activity against B-negative controls shows B-dependent activity and a safety concern, not selective cancer killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7b911e2fa22396fcf85f6ff75fac9884a1acd8c14e865982de114362e3deaad8",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18041,8 +18443,196 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "4df711a95f3fc94e0412e078d277f96f9c404e354bbc71b54fa0f9aa85b771e8",
+          "b5315aebacab0b189321220037144cfc2f251841c2f5b0e3fdd9252a36e9c45d",
+          "87b0f8d3666f320a93ae86cfbad2a1ffb9e8cda3b3a42a82c10bc864a9313812",
+          "71e044d1298db5a80206357e50cf2a7dcfaf3737f95cc8d8439d6dd4364c3774",
+          "06478ae1eace5171f30a17f403b848115d0952e70880d64ca81f3951591f3d9c",
+          "918fce90372f74b65e17a930205f2d3a40f93c3094f7b56c90fd1ea3ec0c1acc",
+          "fbb2c10a0eb5454083e516577911090d0ed18483c7fb9fde213d5f1b457f0696",
+          "93db559b17f188fd4a4d31bea7a3336135c4ac82eccd51115d5d10bf85564f2b",
+          "408c13769fa0b7cc2165842fd73ad454d2b4ddb01847f58475af6f145ce37390",
+          "5e3dfb60877d62bc40c5bacd9d307a319b06172af131bb5a4373542f049750fc",
+          "caebce46130dce69e5751625eb8feb6b4ac7c9d221bff518ab86cd41bbf73bbc",
+          "98e837aca2fd6f4e2de976d354a71a51af78f96c53193daafaee0986caa6ff16"
+        ],
+        "points": [
+          {
+            "id": "rna-lentiviral-vector:r01",
+            "requirement": "Lentiviral vectors package an RNA genome; after entry reverse transcription makes DNA; in an integrating design integrase inserts it; an internal promoter drives the cassette; this is transduction; envelope influences entry (pseudotyping) not what a CAR recognises.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r02",
+            "requirement": "Replication-defective does not replace testing for replication-competent virus.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r03",
+            "requirement": "Self-inactivating: LTR regulatory sequences disabled, internal promoter can still express; SIN does not mean the cassette removes itself or cannot integrate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r04",
+            "requirement": "Integration-deficient designs reduce but do not guarantee zero integration; expression in defined cultures and mouse brain with residual integration and loss in dividing cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r05",
+            "requirement": "Foundational lentiviral gene transfer in defined cells and neurons in vivo.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r06",
+            "requirement": "An integrated cassette can be inherited on division but does not guarantee survival, stable expression, tumour entry or killing; integration sites, copy number and clonality bear on insertional-mutagenesis assessment; risk is product-specific, not a viral-versus-nonviral ranking.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r07",
+            "requirement": "Measurement: physical particle or genome counts versus functional titre on a named test system; vector copies per cell, receptor-positive fraction, insertion sites; a particle can be nonfunctional; DNA detection alone is not integration, surface protein or function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r08",
+            "requirement": "Confusions: lentiviral vector is not ordinary infection; SIN is not nonintegrating; more copies are not better therapy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "tldr",
+                "fieldSha256": "e7d744fb22b9b11aa31917ca5f56858981a0648698ab5f43b4253640ba83deb7",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lentiviral-vector:r09",
+            "requirement": "Inferences from the worked example and Try it: expression in sampled mouse T cells does not establish unintended-cell exposure, insertion pattern, tumour access or function; vector-genome counts and low functional titre are not contradictory.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18121,8 +18711,175 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "5c751d975b1ca2601e910ef773ba2cd5eff636ec56a068c68a9869ee317a065c",
+          "f31e4a1896cb16038eb4cf8c8413a1cc3807631bcd1d7f9552d64cf87fbd0b4e",
+          "edad995d9bc1e05b8aaba7611e97d8723ccf8be6251c559b2f858c6e7970bdf7",
+          "a8f954e3c7696a8483fbe14a419b02b41ad774b645184fb8cd444b8c2f39d2b0",
+          "d277f1d409aa8742f78ba34f32d4e138c67a63ddf242b883ae498090012273ae",
+          "8fbfd8e65ba179ed7b9ff667b3596b2c6ba42ebd60d14288a6c1125fa592d2a5",
+          "5d5c66d47f6cd4e4d6b8fbb9a0f2e2008f23cfb2a1f06a66c6eb2ed39d320a30",
+          "d3575c4d6d980fc02ac8f41b67c6fbac19e099da152c5cd1477ab13211c32e36",
+          "4db09626f28f7293576e79f2f7d4afe2c198c97f747b01c483971a77823583c9",
+          "f0474a32c821234dcef556eec5212f25d68e9f15375175a20c1d3f361b5ecbc2",
+          "bc8e860dc755f994a6df2cfc7759232215be3c958d5841733c81b8b9cefd0c4f",
+          "565b025e28ab72ef966dee4911ebb5c8bf7d744e6f2eb2f49e0a40731d3c0a4e"
+        ],
+        "points": [
+          {
+            "id": "rna-lipid-nanoparticle:r01",
+            "requirement": "An LNP must do more than enter a cell: its RNA must become usable; the parcel analogy cannot predict which cells, how much escapes or whether the protein works.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "tldr",
+                "fieldSha256": "f49e40623af7aae720d81c37a2a9a683b7c0a710d41bf774189fc66cb93ac6f5",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r02",
+            "requirement": "Many RNA LNPs combine an ionisable lipid, helper lipids, cholesterol and a PEG lipid; this is a common design, not a universal list; LNP alone does not name a product.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r03",
+            "requirement": "Endosome versus cytosol: mRNA is translated in the cytosol and does not need the nucleus; escape pathways depend on formulation and cell; an endosome-bursting picture is not a universal mechanism (figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r04",
+            "requirement": "Six formulations in human adipocytes, fibroblasts and HeLa cells: total uptake did not adequately predict useful delivery; RNA accumulated in compartments without productive release; the brightest uptake need not make the most protein.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r05",
+            "requirement": "Biodistribution is not universal: many intravenous LNPs favour the liver but not as a law; intramuscular particles also reached liver and spleen; local injection does not establish local delivery; mouse distribution is not another product's human distribution.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r06",
+            "requirement": "LNPs can carry antigen instructions or instructions for engineering immune cells; delivery targeting and cancer targeting are separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r07",
+            "requirement": "Assay card: particle size and distribution, RNA amount, integrity, encapsulated fraction, labelled lipid or RNA location, protein per identified live cell, denominators stated; fluorescent lipid is not intact RNA; encapsulation is not endosomal escape; performance belongs to the tested formulation, route, cells, species, time.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r08",
+            "requirement": "Confusions: LNP versus RNA-lipoplex naming overlap; temporary message is not an immediate off switch; same RNA is not the same product.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-lipid-nanoparticle:r09",
+            "requirement": "Inference from the 100-cell Try it: a formulation with more uptake-positive cells can have fewer protein-positive cells; report protein-positive fraction among identified live cells with the denominator; do not read it as escape fraction or function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-nanoparticle",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "998337d2909d0307292e8958ebd0f741891c35a02ae9cf4de20147ce59a05eaf",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18202,8 +18959,168 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "cbd8e4580c555eaacfe090789498229b485f42dcbee615188a6771d137f92191",
+          "67260b1773226a9fb7673544e59ef6ce42a98dadb3414b619d761b5c8cd0952c",
+          "0c4d789e66172b46e97d2c1adfbb23b0c593fcbb81ad373bee6b1f000c824f02",
+          "cd6aa956563f03e58f0978d8c39bdf05e4936b15c13379a916d6ee98d17ebd45",
+          "53b56157e252f5af19b0f6d4ea714d8de6d19e65969e96c96f59856e3dd0c789",
+          "c5793744f3efac3a5dad25ad68dfe9e91afdb57718e8c1fafbb17e88dba138af",
+          "4b2a87ba7b8b4c8399cc9196c22a06c2ba967c031f111b8b5185b3f3f4e86dd0",
+          "6b49bd6659d32e9699ef968ce6d08c0894f9d36e1a2cda4e1389a1d63c727eff",
+          "0cdbbf026a48e7e691dc200f30019fdd30d1ec0240a549de310d9d458f8498b7",
+          "a40badf8c7aa3a05bbddae99206e8c2a14c0392eb2f324fa506424a42a61c73b",
+          "61f4ee191b62a69f68f4e6a7dcf95957bb28843c4760fff80e2bc7e074240371",
+          "c4f748853f62f43cdf1321bfb224c44d3b0ac30f07d086dd3edc9a6c95ded028"
+        ],
+        "points": [
+          {
+            "id": "rna-rna-lipoplex:r01",
+            "requirement": "RNA-lipoplex: RNA negative charge associates with positively charged lipids; the final particle need not be positive; RNA-LPX is a family, not one product.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r02",
+            "requirement": "Lipoplexes can themselves be called lipid nanoparticles; Rojas's methods describe lipoplex nanoparticles; no strict naming boundary.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r03",
+            "requirement": "Kranz adjusted a particular formulation's charge for intravenous use; delivery to dendritic cells and macrophages in lymphoid compartments without a cell-binding ligand; not all lipoplexes share this.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r04",
+            "requirement": "For mRNA, endosomal entry is not enough; usable RNA must reach the cytosol; innate immune sensing of a formulation is not antigen expression, antigen-specific immunity or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r05",
+            "requirement": "A vaccine can deliver instructions to an antigen-presenting cell rather than the tumour; expression still needs processing, display and recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "783b0165cba9baddd6a2a9ca13aefc480b0d54be02a827cc2e5ec71fec57e2c3",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r06",
+            "requirement": "Rojas studied one intravenous RNA-lipoplex vaccine after pancreatic cancer surgery within a phase I sequence with other treatments; it gives product-specific methods and immune observations, not a lipoplex-versus-LNP ranking or isolated benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r07",
+            "requirement": "Assay card: size and distribution by light scattering, zeta potential in mV under stated conditions, RNA encapsulation/integrity; a favourable particle measurement does not prove cytosolic release or expression.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "783b0165cba9baddd6a2a9ca13aefc480b0d54be02a827cc2e5ec71fec57e2c3",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r08",
+            "requirement": "Confusions: positive ingredient versus positive particle; lipoplex versus fixed route; innate activation versus tumour recognition; carrier signal versus useful delivery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-rna-lipoplex:r09",
+            "requirement": "Inference from the Try it: a different lipid formulation or route with the same antigen windows is not the same product and cannot inherit stability, immune-response or safety claims.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "tldr",
+                "fieldSha256": "cadf788b4030052cc89720cbf4f13c4f8f92a5705a108a6d0a6b3dd5d56024b1",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18284,8 +19201,211 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "4462e4558f10a2f24da14935f0ef9595fd6547d683ea314621420fd88df89211",
+          "9b62f7a30d97ab6c6c028a0075e5f6b1a2f284bbaf88739f44f7ac666fcf5ad7",
+          "191509b50cd881346fc8f3aa8cd5cd89a6425888b353d64f90f219b89e49a647",
+          "24d4399795aff7c6275215ae46c95b1f3de9c87e9121a543a02140df3a514e7a",
+          "b9ad50981b3794fd1fbc20d62715b58abaee402f0fa3bf71c19889a0f0e190d3",
+          "99fa740ebf455e17981f197c35df721e3825b8bb788172e476f4f8e1f0aff8b6",
+          "3e44526637ec41192c182a64962dc5ba4640ba2c38a2673bf62b3e4e33045d91",
+          "75033bc55fc3acedf8866f2309d8a0709f6bdea61ba7e7ac189d0cfd31acdd80",
+          "42a9eee7669f7f9237edee4381812c0291e7c0a65666bec61c642aa658744799",
+          "178f4bcd382fe53ed378def9c7b86fc7165c4c0f47f026fa5b90648bfef8cd29",
+          "8293b00072bcdb42312bd3114afce0c3dcd8612249c1f53ed08365e04f197691",
+          "58c314d0e16b3997c8f0b175c4ff14a7b61539cebc5ab9f7bd28e75067ad78d8"
+        ],
+        "points": [
+          {
+            "id": "rna-targeted-lnps:r01",
+            "requirement": "Targeting is an address that does not prove the contents are used; needs usable cargo in the right compartment; competition from other tissues.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r02",
+            "requirement": "Ligand strategy: an antibody or fragment recognises a marker; binding must lead to uptake and release; the marker may be on other cells; other distribution pathways remain.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r03",
+            "requirement": "Formulation strategy (SORT): changing an added lipid shifted expression among liver, spleen and lung in mouse experiments; not a universal composition-to-organ rule for patients.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r04",
+            "requirement": "Biodistribution versus functional delivery; mRNA must reach the cytosol; endosomal material can be detected without expression.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r05",
+            "requirement": "Rurik: CD5-directed LNPs delivered CAR-encoding RNA against fibroblast activation protein in a mouse cardiac-injury model; CD5 was the address and the receptor had another target; liver expression also detected; fibrosis model, not human cancer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r06",
+            "requirement": "Hunter 2025: targeted RNA engineering in human-cell experiments, humanized mouse tumour models and monkeys; each answers a different question; human-cell and monkey results are not benefit in human solid tumours.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r07",
+            "requirement": "For cell engineering ask which cell makes which receptor; for a vaccine the recipient may be an antigen-presenting cell; ordinary CAR RNA gives transient expression; editor RNA can cause lasting DNA change.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r08",
+            "requirement": "Assay card: material per tissue amount, protein or percent protein-positive cells within each live subset by flow cytometry, intended and unintended populations, matched untargeted controls, species and marker-expression bounds.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r09",
+            "requirement": "Confusions: organ versus cell targeting; binding versus expression; targeted versus safe; more uptake versus better delivery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-targeted-lnps:r10",
+            "requirement": "Inferences from the lung-fluorescence and 20-versus-15 percent Try its: whole-organ signal does not identify expressing cells; 20% of T cells versus 15% of non-T cells is enrichment, not exclusivity; expression does not show function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "targeted-lnps",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18361,8 +19481,182 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "3438f3e90dfccf8b0fa70b5f4deeaad284779d55ccb13cb238edd1d2ea2c75f9",
+          "ae91bd3d69367adfdb0789544d97e6cd4d9ef5b82dd4b147c0ae0ad70da3ed27",
+          "f2ea63bd6a4e597e8e1c0f0410fafb85668d479c991e88897da08fbddef0a9f4",
+          "e1e421f9f25e0f73b51f30090b5cad6f938bac7fb9ed19c1298e68e91e23323a",
+          "8f5c06aa13477185e1bd80cfeba614d22de8d4e9d67f76df1fabf3111b9dde70",
+          "740e1bbe335b83450a4513abd49d9cb81668419f0e177328ed4f7b90eae0ee82",
+          "f65ea061cfc39df4f804d466121bb755c92cc8e63eb07d3bc4a783ade0c0b552",
+          "ad9c917b804ab3f829171402c760678ba69d49c5da5cc1087c4e0bc37557522c",
+          "776c694c770214659341671183442a12e66295c9895c8118be29527ff8427141",
+          "0cff0eb0bb037ba9b704ead75a7c3fa825b4524da39596483b234c3dbc3a5903",
+          "76a7ce21c5339f6d0390713612a68b2004c7d1eb5e5c175e747c108e71196aa3"
+        ],
+        "points": [
+          {
+            "id": "rna-transposon:r01",
+            "requirement": "A transposon system is a gene-insertion tool; something else must deliver the components; analogy misses insertion preferences and disruption.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r02",
+            "requirement": "Two parts: a cassette flanked by boundaries and a transposase that recognises them; transposase may be supplied as protein or instructions; delivery is separate from insertion (figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r03",
+            "requirement": "Sleeping Beauty cut-and-paste activity was reconstructed in defined cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r04",
+            "requirement": "Electroporation delivers components into collected cells; other delivery designs need their own evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r05",
+            "requirement": "Inserted cassettes are copied on division; expression depends on elements, context and state; continued transposase can remobilise cassettes; transposase persistence and cargo persistence need different measurements.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "940397582035e374638e35ce0224487a28ca92bd41234fee3834a66f80e33936",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r06",
+            "requirement": "Insertion preferences differ among systems; 'not aimed at one site' does not mean equal likelihood; absence of observed hotspots in one sampled product does not certify all insertions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r07",
+            "requirement": "Early Sleeping Beauty phase I studies used two plasmids, ex vivo electroporation and expansion before infusion; this is a manufacturing route, not direct injection and not universal superiority; 'nonviral' does not mean nonintegrating, temporary, harmless or effective.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r08",
+            "requirement": "Measurement card: copy number per denominator, insertion-site sequencing, receptor-positive cells, separate tests for retained transposase and antigen-dependent activity; average copy counts hide cell differences; insertion-site recovery is incomplete.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "940397582035e374638e35ce0224487a28ca92bd41234fee3834a66f80e33936",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r09",
+            "requirement": "Confusions: transposon is not the carrier; temporary transposase is not a temporary insert; more insertions are not more benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "940397582035e374638e35ce0224487a28ca92bd41234fee3834a66f80e33936",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-transposon:r10",
+            "requirement": "Inference from the Try it: 'nonviral, ex vivo transposon-engineered CAR T cells' does not mean 'nonintegrating' or 'injected to engineer cells in the body'; genetic fate and engineering location are separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "transposon",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "5132c3a8a94e92220ac16521f1816ff89733e42fbfbaadd94ccf02e12407147c",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18438,8 +19732,144 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "f40d7eba31c4ed5cda6a4110429287e4517c7c7a5342c9dd9fb1d19cc2b8e7bc",
+          "4c7ba98345d07e5a8c785873c9e50fb78c362c0bef4d62885335b2507363ff76",
+          "d0a92671f88438939f480afcbdbd8cfc73aaf5403aa6bae3f83d3837b1678584",
+          "6339c2b46cba20c2e92caa5fb6aa91403782363bdc917d418f09f696269b1b12",
+          "214389ec42eb37490d7005843a9d607f114948c31e4516f20b768f63609c3a96",
+          "63f5c5e751ad74642972bc6df80f32b56c2bfe23a3690bc5319352c3dab7f6ff",
+          "ae2e9f0e46ef00e7acd037fe9d56402726bae2782d7ad828ae9782e86f86ed06",
+          "4faeb4b9596b3f0abcd87166e62a6ca484818c7613e3c651179c956fb929fd67",
+          "49ec0380abe86628c653ac9e156dc76db7c1e3670e7955810b4b89ec6779c454",
+          "3e63bb68323941b209e55c3bef8aa29830d56ea6df6937c18dc7f5b217ba24f4",
+          "e7587f8a2e649f93732745dd8943d510e3ac0e414a636e8e878f1f6eb75f1101"
+        ],
+        "points": [
+          {
+            "id": "rna-codon-optimization:r01",
+            "requirement": "Codon optimisation changes synonymous codons to influence RNA behaviour and protein production while preserving the amino-acid sequence; a codon is three bases; GCU and GCC both specify alanine (figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r02",
+            "requirement": "tRNA abundance depends on cell and state; codon frequency alone is an incomplete guide; Wu measured codon-dependent RNA decay in human cell lines.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "b4bc60f160b30c5515c57a736308bd56c7c84135cc1344e6407a7ffab12fe443",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r03",
+            "requirement": "RNA folds by internal pairing; location of structure matters; Mauger separated codon usage from coding-region structure; more structured coding regions could prolong the period of active translation; removing all structure or maximising a codon score is not a universal optimum.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r04",
+            "requirement": "'Optimised' must name an objective and tested context; prediction remains a proposal until measured; nucleoside chemistry, cap, UTRs and delivery also affect the result.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "b4bc60f160b30c5515c57a736308bd56c7c84135cc1344e6407a7ffab12fe443",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r05",
+            "requirement": "Synonymous redesign does not fix the tumour mutation or change the antigen; more protein cannot establish processing, display or recognition; amino-acid spacers are a separate design change.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r06",
+            "requirement": "Measurement table: sequence checks, RNA time course, protein quantity or activity; matched RNA amount, chemistry, cap, UTRs, purity, delivery; reporter signal alone cannot establish RNA half-life, translation fidelity, presentation or benefit; transfer to new cell, formulation or antigen needs testing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-codon-optimization:r07",
+            "requirement": "Inference from the Try it (reporter 200 versus 100): twice the reporter signal at one time is not twice the RNA lifetime, a better neoantigen or any display; confirm intended protein, use a time course, choose the next assay for the next claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "codon-optimization",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "b4bc60f160b30c5515c57a736308bd56c7c84135cc1344e6407a7ffab12fe443",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18516,8 +19946,165 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "6960d10c729d110cff4f3c472c32f3525821dca0abdc3bd07e16b470f7d30901",
+          "b47367fbc816c08b5ba7d1bbe5843f6cd6f01cb7efccac7d3cf89be0e844fea5",
+          "3d8294b87b52b4e03b7138ccf69cd5ab1357fc21e3ecab2b5d6ee88634899e87",
+          "42a155d029fb6c5849280ca2696c3809daae91192dd06b35f3c3e13e7ee3cf12",
+          "9c2fca29f98233f3ae307098dead7663703c7e60d1482d6558e38acfeaa7cc4f",
+          "94cb2febef8e0e62c71d33f8dff3960abcac0420171f68411390a64318ad12db",
+          "797938693b4837331ba5cccfbe87add4329f2244c6e498038a82033cc06b9acc",
+          "05d79032e74c7f559fd579710eb58a6c7b520905d6abcc2e92364c88561ceb71",
+          "eff5c9fec0045c0f6e7425ca3ea6531b9673e7baf1da97ae5cc6a0484cd6c4cd",
+          "db2d1525e432eeee3c0dd451abcff4fa62138f7202a4452c93b45cdf2e7b98a9",
+          "050c58925180b5f0e2dbb8e905ccc3d6d725d79d2918b7c12f644fc3a85bae37"
+        ],
+        "points": [
+          {
+            "id": "rna-dsrna-impurities-and-purification:r01",
+            "requirement": "dsRNA has paired complementary regions; T7 can make an antisense strand that pairs with the intended strand; Mu showed promoter-independent initiation at a DNA end and activation of a long-dsRNA sensor; one documented origin, not the only one.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r02",
+            "requirement": "A truncated transcript is not dsRNA; folding within a message is not an unwanted duplex (figure: paired byproduct, truncated strand, fold).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r03",
+            "requirement": "Innate sensing depends on length, structure, chemistry, delivery and cell context; modified nucleosides do not establish absence of dsRNA; Karikó tested purification as an additional determinant.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r04",
+            "requirement": "Baiersdörfer tested cellulose binding with measurements of recovery, integrity and cellular effects; the method did not remove every tested short duplex equally; method performance is not a clinical impurity limit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r05",
+            "requirement": "A vaccine may seek immune activation but an uncontrolled byproduct is not antigen-specific immunity; cleaner RNA improving a measurement in one system does not prove tumour recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r06",
+            "requirement": "Measurement table: dsRNA-binding antibody assay plus size and integrity and expression assays; units and recovery; detection and quantitation limits; calibrator, structure-recognition and matrix failure modes; antibody recognition depends on length and chemistry.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-dsrna-impurities-and-purification:r07",
+            "requirement": "Inference from the Try it (lower dsRNA signal but substantial fragmentation): the dsRNA readout improved but integrity worsened; reassess recovery, degradation and other specifications; neither result answers every quality question.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "dsrna-impurities",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "775697ca19eb994d5d954edc48c118cd51116812392c30f1ba85b9494ea144c2",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18593,8 +20180,151 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "0d3cf3d06cd3c22562f589a12bb5e832e2f49183744354f649ab19f3de7ae25d",
+          "d43a547b62c86fc31a06ec9ba829d7563811fc85c936fb67c447d347db0635f2",
+          "0690e6b0d2ec9c782568c80c9d5676e0f98e43f3ffa0d50204ca1682a5ae4285",
+          "b82872aa88451d93f90056a38358efe571759fe3972ff647ecb367ed3d167aef",
+          "623bea4e966724ee3a45161713a406f0d0f7ae116e4889378c59e837a6405694",
+          "1ff3e219240c8179499d7f41c1f0324da9e80bd1bd21cb59c2e834fe73232769",
+          "da200fcedc33f999812be9807b857791a16c795b020f2e088e08d28ae5446a6c",
+          "57d85f925c19dbb6b0e84166e89997367a2036d8b34fd673dcaa499c9c17855b",
+          "663b964e822c02cbbba2c2c423482ae28397cc61917193b44ef38324b365f07a",
+          "24d05d212eab2d76af7ace9395b3f91831e63ec54875e2c0918db585ab562653",
+          "8f6d4e313355f8c8675b4b07b8397289c7fc0cf3e9843f851f37237eaa1bec55"
+        ],
+        "points": [
+          {
+            "id": "rna-in-vitro-transcription:r01",
+            "requirement": "IVT makes RNA from a DNA template with an RNA polymerase outside living cells; T7 starts at its promoter, distinct from the Kozak context; template defines sequence and endpoint.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r02",
+            "requirement": "Cap can be added during transcription or afterwards; poly(A) can be encoded or added enzymatically; alternatives, not identical ends.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r03",
+            "requirement": "After synthesis the preparation can contain template DNA, enzymes, free building blocks, incomplete transcripts and dsRNA; each cleanup removes different things.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "20b02e8ad9fe3e53c5f9ad88e35f5f01c50c5f92c021e787d0f7ece7110e11c4",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r04",
+            "requirement": "Mu demonstrates one route by which T7 generates unintended complementary RNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "20b02e8ad9fe3e53c5f9ad88e35f5f01c50c5f92c021e787d0f7ece7110e11c4",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r05",
+            "requirement": "The DNA is a manufacturing input, not a DNA-delivery therapy; residual DNA is a separate quality question; RNA must stay traceable to the antigen design; expression and potency assays add functional evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r06",
+            "requirement": "Distinguish sequence and chemistry identity, poly(A), RNA content, length and integrity, dsRNA, residual DNA and expression assays. Unincorporated nucleotides and template DNA affect UV absorbance, so purification and measurement method must be stated rather than treating an unpurified absorbance reading as transcript-specific mass.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "20b02e8ad9fe3e53c5f9ad88e35f5f01c50c5f92c021e787d0f7ece7110e11c4",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-in-vitro-transcription:r07",
+            "requirement": "Inference from the Try it (expected total mass but many short molecules): total mass includes non-full-length material; investigate template, synthesis, handling and cleanup, and assess by the specified methods; neither mass nor one failing observation settles release.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "156fca900022fef07fea5db62a0bfbf05ab864a1642338cd58f4d6a1556e3585",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "in-vitro-transcription",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "20b02e8ad9fe3e53c5f9ad88e35f5f01c50c5f92c021e787d0f7ece7110e11c4",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18672,8 +20402,137 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "a4910024d4a90ac77dd27fc9f3c3d36e73d71a2e57b364a88cec3932d3907d09",
+          "66d3dc95f46a76b23cc3c739711faaa60b28ebe1612cb50fee8e3a4006336412",
+          "5440f83d8b0d0689ee010a1af23c23180d65cbb33af0aba5178fe066cb49863e",
+          "8b09ac9c406998cbda9ae4bee3547d556119c5d379775245eafb8bcc2e2abf7e",
+          "3d72608973ab03ba8304b97f617f27e7d5fc9cc47144e3eb972a8b907b23292d",
+          "d7df7eeba15b86baf333c6b4f1e668042639df42886ec2738e20b8c104b93683",
+          "b8164da41c41a5d12a8a092073537ace96fa55d8c07c19acfd24580b1456e5b9",
+          "aa0c24853bf839513d198bf1e4e7ac3c232e84b072b443824dfe9df65328f7d9",
+          "00ae3de671f0549f5a519026a92d5088c2e93e7f2583cc23269ae4722e2a661e",
+          "89f5b43201699cebfa08b039a3ab55fcb259716907fa26419a3baa24bc8ef83c",
+          "e0c5d1f0abc054ab15460054c443e3a2272ce2065148e528aafba50ccd7b978b"
+        ],
+        "points": [
+          {
+            "id": "rna-modified-nucleosides:r01",
+            "requirement": "Modified nucleosides (pseudouridine, N1-methylpseudouridine) are alternative building blocks; the intended coding message can stay the same while chemistry changes; nucleoside versus nucleotide (figure: sequence, chemistry, byproducts).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r02",
+            "requirement": "Karikó tested human TLR systems and dendritic cells: particular modifications reduced the measured activation; Andries compared m1Ψ with Ψ in cell lines and mice.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r03",
+            "requirement": "Intended sequence and sensing are separate; chemistry and purity are separate; modified transcripts can still contain dsRNA; Karikó 2011 tested purification as another source of activation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r04",
+            "requirement": "Mulroney: sequence-dependent +1 frameshifts with m1Ψ RNA in experimental systems, reduced by synonymous changes; not every modified construct mistranslates and no adverse clinical outcomes were established.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "2a6d3c275e2496d30d6b78e5dae635dc28f830872c278f192eda0137491c114a",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r05",
+            "requirement": "RNA sensing can influence antigen production and immune activation; lower innate activation in one assay is not lower antigen-specific immunity; more protein is not a stronger T-cell response; chemistry does not choose the target.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "2a6d3c275e2496d30d6b78e5dae635dc28f830872c278f192eda0137491c114a",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r06",
+            "requirement": "Measurement table: chemistry and identity analysis, impurity testing, protein identity and quantity, innate-sensing readouts; matched sequence, amount, cap, UTRs, purity, formulation; single translation or cytokine readout cannot establish display, recognition, safety or efficacy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-modified-nucleosides:r07",
+            "requirement": "Inference from the Try it (more reporter, less cytokine): one matched cell-line comparison does not show a stronger antigen-specific T-cell response; check protein identity and comparable impurity/delivery conditions, then test downstream biology.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "2a6d3c275e2496d30d6b78e5dae635dc28f830872c278f192eda0137491c114a",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "modified-rna-nucleosides",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "2990e29a491960dc9e36a0dc8f7f8ffc08f1376dbb41d08de9a590d8bb82a1ba",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18750,8 +20609,114 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "da3238c4aea81c1015167e0a6536574037468210ac5e5093b2480b0f5cea1d43",
+          "326900ecb373fd8fb9582aa465630651e2da4f529fbe4d6b4fba29b0e8880dc9",
+          "079e90df19e2e7d8296b8d66cc97fc3f0c341af4c8efd7cf12a27c37a0d1424b",
+          "bddbe2dc6852a9d0512e5c321bbb30f30174e0a49670525b6ed1bb0b5810a1a9",
+          "aefd7e4f66c335e8a3ecdc1d42891a68a4bc056753247855e53b1e5723a33787",
+          "bd4120aebeb6894eab02ead4a5feb6929db7176003303f1f8e37b63b42bb044e",
+          "265477e003f4d55a07459a17ab4bea4a4e926cb0eaf34662997aba89628a5fee",
+          "7e1378d6b7e49c437c18f72bd6f45fd095c91a4817f7a47f6a4ec931273dfb94",
+          "660180eecce60882410889e9bed74cac3aa50bb527dd6c11321a0083452edd06",
+          "21a531f30eaee53c025bd1115625efbfe41da49931ce99f6c02ea0f74a84b3c2",
+          "ae1960556ca1c4b885f347e47bec45fa1223363fd22c82e747fabc97552bd6d3"
+        ],
+        "points": [
+          {
+            "id": "rna-mrna-construct-anatomy:r01",
+            "requirement": "An mRNA construct combines a coding message with features influencing translation, stability and processing; 5′ and 3′ ends; cap, 5′ UTR, Kozak context, ORF, 3′ UTR, poly(A) tail (table; figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "ef9de1f9403334cc6510d4210eee3f0490d52b8a646300700ccdcd1fb5e5d959",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "938bcc8184e4df98f8bd12388d5fe1c1ef94b670338cec643f628df2b9dd7a12",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-mrna-construct-anatomy:r02",
+            "requirement": "Kozak's start-context experiments and Gallie's cap/tail experiments tested particular constructs and cell systems; Holtkamp altered 3′ features in antigen RNA delivered to dendritic cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "938bcc8184e4df98f8bd12388d5fe1c1ef94b670338cec643f628df2b9dd7a12",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-mrna-construct-anatomy:r03",
+            "requirement": "A target list is not the finished construct; multi-epitope designs add windows, spacers and trafficking features; UTR change alters expression, spacer change alters the combined protein; chemistry and formulation are additional specifications.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "ef9de1f9403334cc6510d4210eee3f0490d52b8a646300700ccdcd1fb5e5d959",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-mrna-construct-anatomy:r04",
+            "requirement": "Measurement table: sequence identity, size and integrity, cap/tail characterisation, expression comparison; no universal good-construct score; reporter comparison supports that model.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "ef9de1f9403334cc6510d4210eee3f0490d52b8a646300700ccdcd1fb5e5d959",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-mrna-construct-anatomy:r05",
+            "requirement": "Inference from the Try it (3' UTR change doubling reporter signal): the antigen sequence is unchanged and the result supports greater reporter output only; it is not a different antigen, processing, recognition or clinical benefit; confirm identity and integrity first.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "938bcc8184e4df98f8bd12388d5fe1c1ef94b670338cec643f628df2b9dd7a12",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "mrna-construct-anatomy",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "ef9de1f9403334cc6510d4210eee3f0490d52b8a646300700ccdcd1fb5e5d959",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -18828,8 +20793,172 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet source/figure assessment and bounded coordinator follow-up; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both pinned source identities and all 296 section signatures are reproduced. All 133 assessment rows retain dispositions: 108 semantic requirements, 13 mapped repeated takeaways and 12 source-list rows excluded from teaching credit. Figures were individually viewed in lesson context. Source/field scopes and actual reader/export passages are retained in rna-delivery-2026-11-10.",
+        "sectionHashes": [
+          "c3ed0cd907aa88847db23308464a886562688ae650d10e07d3149b7868e99675",
+          "d461cffb889b9fc7347573b7f6142a91998c8ded71ed93032cd7314999fc9069",
+          "dbde712b1900b0691306de07a094599a0df4b14e21e508c9e079f2999edb9440",
+          "6577cf4fed4e22dca601a108cd74a1c4f9fbfb69c109ce3c3ffc7465bd7537b6",
+          "b831d7da74291308c9371f818644e9fd4c82ec9ea555773e9958dd90a2d1ca57",
+          "7d56749d580d202709f60ca7c921d05f3c4f936a68488d73338099d42093008c",
+          "9d48a0033633048f482361c43c32d74162a9002b89404bc023575e45f8912a1f",
+          "fd40e8427ca6b2259823dc8cbe2af849bce2cb54bd9c1cf5eafa5f0ec4d38a4d",
+          "be56f2c5a2f8e84a53ffdf403bf4ca48b2fc7c1e2c5ab9ae662a2909afdb96f4",
+          "a447161a74f061bc9fefb7570a3480486ebbbc4ecb1108c49a5fb250d2864626",
+          "32562572a13bf9e9d5c89ca5f150ea220c1529a9d23309164099695b397bfe71"
+        ],
+        "points": [
+          {
+            "id": "rna-multi-epitope-constructs:r01",
+            "requirement": "An epitope is a feature recognised by an immune receptor; encoded windows are not necessarily the displayed peptide; string-of-beads designs concatenate windows with spacers; junction peptides can span neighbours (figure).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "epitope",
+                "version": "proposal-antigen-antibodies",
+                "field": "tldr",
+                "fieldSha256": "0a3e82c731089020a8c7ef835fbcdfe7d47a831a8ebb9f85ca130fe09e63d68f",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r02",
+            "requirement": "Schubert and Kohlbacher modelled class-I cleavage and binding to optimise spacers; gains are predicted, not measured human protection.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r03",
+            "requirement": "Signal peptide routes the protein, not the carrier; Kreiter combined an N-terminal leader with a C-terminal trafficking signal in human and mouse dendritic cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r04",
+            "requirement": "Helper segments aim to engage CD4 T cells through HLA class II but are not universally necessary; multi-target vaccines can distribute targets across strands.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r05",
+            "requirement": "Multiple targets broaden opportunities but target count is not response breadth; tumour expression, processing, HLA match and recognition remain gates; spacer change is not synonymous codon redesign.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "binding-presentation-recognition",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "3feeb5535314dc503869a6caa4a1098fd345d23167a5d0ef6988d2ceb927c97a",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r06",
+            "requirement": "Measurement table: sequence verification, expression assays, immunopeptidomics for recovered HLA peptides, functional assays; prediction scores are not presentation thresholds; non-detection does not prove absence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "rna-multi-epitope-constructs:r07",
+            "requirement": "Inference from the Try it (spacer replaced, A and B unchanged): the combined protein and boundaries changed; retain old evidence but renew expression, processing and display testing for the new revision; the old result did not establish B's display or tumour recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              },
+              {
+                "recordId": "multi-epitope-constructs",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "5b0343c77af0f91fe1d3c30868327eddfd032eb7320743daebf053a44f862aaa",
+                "explanation": "Exact current passage and declared source/model scope are retained in rna-delivery-2026-11-10. Actual body and JSON/Markdown verification pass."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -55408,6 +57537,152 @@
             "evidence": [],
             "remaining": [
               "Inventory affected owners, verify their molecular functions and correct the generation rule without discarding supported cancer-role evidence."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna-insertional-mutagenesis-scope",
+      "title": "Insertion, mutagenesis and longitudinal clonal risk",
+      "domain": "rna-delivery-adjacent",
+      "sourceURLs": [
+        "https://www.fda.gov/media/113768/download"
+      ],
+      "discoveryOccurrences": [
+        "rna-delivery-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator intake; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Define insertional mutagenesis separately from insertion itself; assess genetic disruption, clonality and long-term observations in a named product and cell population.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "notes",
+                "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+                "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              }
+            ],
+            "remaining": [
+              "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna-toxicity-owner-and-class-claims",
+      "title": "Existing toxicity owner and blanket class-safety claims",
+      "domain": "rna-delivery-adjacent",
+      "sourceURLs": [
+        "https://www.fda.gov/media/156896/download"
+      ],
+      "discoveryOccurrences": [
+        "rna-delivery-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator intake; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Use the existing therapeutic-index and lineage-antigen owners for on-target/off-tumour definitions; verify their broad dose, chemotherapy and ADC class statements before adopting them.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "delivery-target-versus-therapeutic-target",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+                "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              }
+            ],
+            "remaining": [
+              "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna-pseudotyping-scope",
+      "title": "Pseudotyping and envelope-specific delivery evidence",
+      "domain": "rna-delivery-adjacent",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/8602510/",
+        "https://pubmed.ncbi.nlm.nih.gov/29654266/"
+      ],
+      "discoveryOccurrences": [
+        "rna-delivery-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator intake; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Envelope versus receptor targeting is represented; the explicit term and envelope-specific source comparison remain queued.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Define pseudotyping and distinguish an envelope change, cell entry, physical and functional titre, distribution and the encoded receptor target.",
+            "status": "partial",
+            "evidence": [
+              {
+                "recordId": "lentiviral-vector",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+                "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              }
+            ],
+            "remaining": [
+              "Envelope versus receptor targeting is represented; the explicit term and envelope-specific source comparison remain queued."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna-multiple-cargo-co-delivery",
+      "title": "Multiple RNA cargos, co-encapsulation and same-cell delivery",
+      "domain": "rna-delivery-adjacent",
+      "sourceURLs": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8811815/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11022722/"
+      ],
+      "discoveryOccurrences": [
+        "rna-delivery-completion-review"
+      ],
+      "review": {
+        "status": "unreviewed",
+        "auditor": "Coordinator intake; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Distinguish a mixture of RNA products, co-encapsulation, delivery to the same cell and expression stoichiometry.",
+            "status": "gap",
+            "evidence": [
+              {
+                "recordId": "rna-lipoplex",
+                "version": "proposal-rna-delivery",
+                "field": "summary",
+                "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+                "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              }
+            ],
+            "remaining": [
+              "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets."
             ]
           }
         ]

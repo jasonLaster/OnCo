@@ -40,14 +40,46 @@ const technologies: TechnologyInput[] = [
     technologies: ["closed-automated-cell-manufacturing", "car-t"], companies: ["cellares", "galapagos"],
   }),
   t({
-    id: "viral-vector-manufacturing", dependsOn: ["plasmid-dna-manufacturing"], links: [{ label: "FDA guidance: chemistry, manufacturing and control information for human gene therapy INDs", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug" }], name: "Viral vector manufacturing (lentiviral, retroviral, AAV)", sections: ["cell-therapy", "drug-discovery"], status: "established",
+    id: "viral-vector-manufacturing", dependsOn: ["plasmid-dna-manufacturing"], links: [
+  {
+    "label": "FDA guidance: chemistry, manufacturing and control information for human gene therapy INDs",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug"
+  },
+  {
+    "label": "Testing of Retroviral Vector-Based Human Gene Therapy Products for Replication Competent Retrovirus During Product Manufacture and Patient Follow-up: guidance for industry, January 2020",
+    "url": "https://www.fda.gov/media/113790/download"
+  },
+  {
+    "label": "Effect of genome size on AAV vector packaging.",
+    "url": "https://doi.org/10.1038/mt.2009.255"
+  },
+  {
+    "label": "Nucleotide sequence and organization of the adeno-associated virus 2 genome.",
+    "url": "https://doi.org/10.1128/jvi.45.2.555-564.1983"
+  },
+  {
+    "label": "Adeno-Associated Virus (AAV) as a Vector for Gene Therapy.",
+    "url": "https://doi.org/10.1007/s40259-017-0234-5"
+  },
+  {
+    "label": "Clinical use of lentiviral vectors.",
+    "url": "https://doi.org/10.1038/s41375-018-0106-0"
+  }
+], name: "Viral vector manufacturing (lentiviral, retroviral, AAV)", sections: ["cell-therapy", "drug-discovery"], status: "established",
     tldr: "Producing the engineered viruses that carry a CAR gene into T cells. Viral vector manufacturing is a long-standing bottleneck for cell and gene therapy.",
-    summary: "Lentiviral vectors for CAR-T are made by transient transfection of HEK293 cells with plasmid DNA, or increasingly by stable producer cell lines; AAV serves in vivo gene therapy. Capacity shortages in 2018-2022 delayed trials; large CDMOs (Lonza, Thermo Fisher, Charles River, Oxford Biomedica) and in-house plants (Kite, Novartis, BMS) have since expanded. Titre, empty-capsid ratio, and cost per dose are the quality and economic levers.",
+    summary: "Lentiviral vectors for CAR-T are made by transient transfection of HEK293 cells with plasmid DNA, or increasingly by stable producer cell lines; AAV serves in vivo gene therapy. Capacity shortages in 2018-2022 delayed trials; large CDMOs (Lonza, Thermo Fisher, Charles River, Oxford Biomedica) and in-house plants (Kite, Novartis, BMS) have since expanded. Titre, empty-capsid ratio, and cost per dose are the quality and economic levers. Retroviral and lentiviral lots are also tested for replication-competent virus during manufacture and again in patient follow-up, under FDA guidance of January 2020. A vector's capacity is a manufacturing constraint too. The AAV2 genome is a single-stranded DNA of 4,675 nucleotides (Srivastava and colleagues, 1983), a review gives about 4.8 kb for AAV genomes and about 3.3 kb of capacity for self-complementary designs (Naso and colleagues), and these are sizes of the genomes and designs named, not a universal packaging limit. In one laboratory study of plasmid-encoded AAV2, AAV5 and AAV8 vectors of 4.7 to 8.7 kb, packaged genomes never exceeded 5.2 kb, genomes from plasmids over 5 kb were heterogeneous and truncated at the 5' end, and reporter expression at high multiplicity of infection was substantially lower than from genomes under 5 kb (Wu and colleagues, 2010).",
     principle: "Packaging and transfer plasmids co-transfected into producer cells; harvested particles are purified by chromatography and tested for titre, potency, and replication competence.",
     strengths: ["Mature quality systems", "Stable producer lines lowering cost"],
     limitations: ["Long lead times and high cost", "Batch variability", "Plasmid supply dependency"],
     technologies: ["car-t", "plasmid-dna-manufacturing"], companies: ["lonza", "oxford-biomedica", "thermo-fisher", "charles-river"],
-  }),
+
+"asOf": "2026-11-09",
+"related": [
+  "aav-vector",
+  "lentiviral-vector",
+  "transposon"
+]
+}),
   t({
     id: "plasmid-dna-manufacturing", links: [{ label: "FDA guidance: chemistry, manufacturing and control information for human gene therapy INDs", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug" }], name: "Plasmid DNA and mRNA raw-material manufacturing", sections: ["cell-therapy", "immunotherapy"], status: "established",
     tldr: "Plasmid DNA and mRNA raw materials are the DNA templates and enzymes behind viral vectors and mRNA vaccines. They are invisible to patients but decisive for supply.",

@@ -1570,5 +1570,151 @@
         }
       ]
     }
+  },
+  {
+    "id": "rna-insertional-mutagenesis-scope",
+    "title": "Insertion, mutagenesis and longitudinal clonal risk",
+    "domain": "rna-delivery-adjacent",
+    "sourceURLs": [
+      "https://www.fda.gov/media/113768/download"
+    ],
+    "discoveryOccurrences": [
+      "rna-delivery-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; not expert sign-off",
+      "checkedAt": "2026-11-10",
+      "rationale": "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Define insertional mutagenesis separately from insertion itself; assess genetic disruption, clonality and long-term observations in a named product and cell population.",
+          "status": "partial",
+          "evidence": [
+            {
+              "recordId": "lentiviral-vector",
+              "version": "proposal-rna-delivery",
+              "field": "notes",
+              "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
+              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+            }
+          ],
+          "remaining": [
+            "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "rna-toxicity-owner-and-class-claims",
+    "title": "Existing toxicity owner and blanket class-safety claims",
+    "domain": "rna-delivery-adjacent",
+    "sourceURLs": [
+      "https://www.fda.gov/media/156896/download"
+    ],
+    "discoveryOccurrences": [
+      "rna-delivery-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; not expert sign-off",
+      "checkedAt": "2026-11-10",
+      "rationale": "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Use the existing therapeutic-index and lineage-antigen owners for on-target/off-tumour definitions; verify their broad dose, chemotherapy and ADC class statements before adopting them.",
+          "status": "partial",
+          "evidence": [
+            {
+              "recordId": "delivery-target-versus-therapeutic-target",
+              "version": "draft-373",
+              "field": "summary",
+              "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
+              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+            }
+          ],
+          "remaining": [
+            "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "rna-pseudotyping-scope",
+    "title": "Pseudotyping and envelope-specific delivery evidence",
+    "domain": "rna-delivery-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/8602510/",
+      "https://pubmed.ncbi.nlm.nih.gov/29654266/"
+    ],
+    "discoveryOccurrences": [
+      "rna-delivery-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; not expert sign-off",
+      "checkedAt": "2026-11-10",
+      "rationale": "Envelope versus receptor targeting is represented; the explicit term and envelope-specific source comparison remain queued.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Define pseudotyping and distinguish an envelope change, cell entry, physical and functional titre, distribution and the encoded receptor target.",
+          "status": "partial",
+          "evidence": [
+            {
+              "recordId": "lentiviral-vector",
+              "version": "proposal-rna-delivery",
+              "field": "summary",
+              "fieldSha256": "1257460fec3f7e9df76049ce3fc157d0c32b86e5561a0b235eb9cf4f208f7321",
+              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+            }
+          ],
+          "remaining": [
+            "Envelope versus receptor targeting is represented; the explicit term and envelope-specific source comparison remain queued."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "rna-multiple-cargo-co-delivery",
+    "title": "Multiple RNA cargos, co-encapsulation and same-cell delivery",
+    "domain": "rna-delivery-adjacent",
+    "sourceURLs": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8811815/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11022722/"
+    ],
+    "discoveryOccurrences": [
+      "rna-delivery-completion-review"
+    ],
+    "review": {
+      "status": "unreviewed",
+      "auditor": "Coordinator intake; not expert sign-off",
+      "checkedAt": "2026-11-10",
+      "rationale": "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Distinguish a mixture of RNA products, co-encapsulation, delivery to the same cell and expression stoichiometry.",
+          "status": "gap",
+          "evidence": [
+            {
+              "recordId": "rna-lipoplex",
+              "version": "proposal-rna-delivery",
+              "field": "summary",
+              "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
+              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+            }
+          ],
+          "remaining": [
+            "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets."
+          ]
+        }
+      ]
+    }
   }
 ]

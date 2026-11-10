@@ -73,7 +73,7 @@ export const simpleA: Record<string, string> = {
   lag3: "The third immune brake to be blocked with an approved drug, used with a PD-1 blocker in melanoma.",
   tigit: "An immune brake that looked promising but failed in several big lung cancer trials.",
   kras: "The most commonly broken gene in cancer. For 40 years it was called impossible to drug, until 2021.",
-  braf: "A growth-signal gene broken in half of melanomas. Blocking it with two drugs at once became a model for targeted treatment.",
+
   alk: "A joined-up gene in about one in twenty lung cancers. Pills against it work remarkably well and for a long time.",
   met: "A growth receptor that is either broken in some lung cancers or turned up as an escape route when other pills stop working.",
   ret: "A gene altered in thyroid cancer and a few lung cancers. One selective pill treats it wherever the tumour is.",
@@ -94,9 +94,9 @@ export const simpleA: Record<string, string> = {
   vegf: "The signal tumours send to grow their own blood vessels. Blocking it starves tumours and helps immune drugs work.",
   hif2a: "A master switch that kidney cancer cells leave permanently on. The pill belzutifan turns it off.",
   "estrogen-receptor": "The hormone switch that drives most breast cancers. Blocking or destroying it is the oldest and best targeted treatment.",
-  "androgen-receptor": "The hormone switch that drives prostate cancer, attacked by lowering testosterone and by pills that block the switch.",
+
   tp53: "The 'guardian of the genome', broken in half of all cancers. No drug fixes it directly yet, so drugs attack what its loss makes cancers depend on.",
-  brca: "DNA repair genes. Inheriting a broken copy raises cancer risk, but tumours that lose them become very sensitive to certain pills and chemotherapy.",
+
   cd47: "The 'don't eat me' sign cancer cells show to immune scavenger cells. Blocking it looked promising but the main drug failed.",
 
   // ---- technologies ----

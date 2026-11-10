@@ -485,9 +485,9 @@ export const targets: TargetInput[] = [
     ], drugs: ["guardant360-cdx", "therascreen-cdx", "tempus-xt-cdx", "resolution-ctdx-first", "calderasib", "jdq443", "gfh375", "setidegrasib", "incb161734", "vs-7375", "jyp0015"], links: [{ label: "Wikipedia", url: W("KRAS") }], companies: ["adventris-pharmaceuticals", "bridgebio-oncology-therapeutics", "cogent-biosciences", "erasca", "imagene-ai", "inivata", "kumquat-biosciences", "lucence", "treeline-biosciences"],
   },
   {
-    id: "braf", trials: ["nct05503797"], kind: "target", name: "BRAF", symbol: "BRAF", hgnc: "HGNC:1097", ensembl: "ENSG00000157764", uniprot: "P15056", entrez: "673", targetClass: "kinase", asOf, wikipedia: W("BRAF_(gene)"),
-    tldr: "BRAF is a signalling kinase mutated in half of melanomas; blocking it with two drugs at once became a template for targeted therapy.",
-    summary: "BRAF V600E/K mutations occur in ~50% of melanoma, ~10% of colorectal, ~2% of NSCLC, most papillary thyroid cancers, and hairy-cell leukaemia. BRAF+MEK inhibitor doublets (dabrafenib/trametinib, encorafenib/binimetinib) are standard; encorafenib+cetuximab (+chemotherapy, BREAKWATER) is first-line in BRAF V600E colorectal cancer since 2025-2026. Tumour-agnostic approval of dabrafenib/trametinib exists.",
+    id: "braf", trials: ["nct05503797"], kind: "target", name: "BRAF", symbol: "BRAF", hgnc: "HGNC:1097", ensembl: "ENSG00000157764", uniprot: "P15056", entrez: "673", targetClass: "kinase",  wikipedia: W("BRAF_(gene)"),
+    tldr: "BRAF is a protein kinase in the RAS/MAPK signalling network. Different BRAF alterations and cellular settings can have different effects and treatment implications.",
+    summary: "BRAF is a protein kinase that can pass signals through the RAS/MAPK network. Its normal molecular function is separate from the effects of a particular cancer-associated alteration.\n\nThe exact allele and intervention matter. In chemical-genetic cell experiments, ATP-competitive RAF inhibitors could increase ERK signaling through RAS-dependent RAF dimer transactivation in wild-type-BRAF settings. Reduced downstream phosphorylation, growth dependence and clinical benefit are separate endpoints. A pathway name or RNA score cannot identify the upstream driver or predict the direction of an inhibitor effect.",
     biology: "Serine/threonine kinase in the MAPK cascade; class I (V600) mutants are monomer-active and inhibitor-sensitive, class II/III are not.",
     whereFound: ["Melanoma", "Colorectal", "Thyroid", "NSCLC", "Glioma (paediatric)"],
     pathways: ["ras-mapk", "colorectal-cancer-signalling", "glioma-signalling", "melanoma-signalling", "pancreatic-cancer-signalling", "thyroid-cancer-signalling"],
@@ -498,8 +498,23 @@ export const targets: TargetInput[] = [
       { cancerId: "colorectal", pct: "8-12", measure: "V600E mutation", source: "https://www.cbioportal.org/study/summary?id=coadread_tcga_pan_can_atlas_2018" },
       { cancerId: "thyroid", pct: "40-60", measure: "Papillary V600E", source: "https://www.cbioportal.org/study/summary?id=thca_tcga_pan_can_atlas_2018", note: "Near-universal in some PTC variants" },
       { cancerId: "nsclc", pct: "2-4", measure: "V600E and non-V600", source: "https://www.cbioportal.org/study/summary?id=luad_tcga_pan_can_atlas_2018" },
-    ], drugs: ["guardant360-cdx", "oncomine-dx-target-test", "therascreen-cdx", "gc101-til"], links: [{ label: "Wikipedia", url: W("BRAF_(gene)") }], companies: ["imagene-ai", "nested-therapeutics"],
+    ], drugs: ["guardant360-cdx", "oncomine-dx-target-test", "therascreen-cdx", "gc101-til"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BRAF_(gene)"
   },
+  {
+    "label": "RAF inhibitors transactivate RAF dimers and ERK signalling in cells with wild-type BRAF. (primary abstract; 2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20179705/"
+  },
+  {
+    "label": "UniProt P15056: reviewed human protein function",
+    "url": "https://www.uniprot.org/uniprotkb/P15056/entry"
+  }
+], companies: ["imagene-ai", "nested-therapeutics"],
+
+"asOf": "2026-11-10"
+},
   {
     id: "alk", drugs: ["ceritinib", "brigatinib", "ensartinib", "guardant360-cdx", "tri-611"], kind: "target", name: "ALK", symbol: "ALK", hgnc: "HGNC:427", ensembl: "ENSG00000171094", uniprot: "Q9UM73", entrez: "238", targetClass: "kinase", asOf, wikipedia: W("Anaplastic_lymphoma_kinase"),
     tldr: "ALK is a gene fusion driver in about 4 to 5% of non-small-cell lung cancers that responds to a succession of ALK inhibitor pills. Lorlatinib kept about 60% of patients progression-free at five years, alectinib is approved after surgery, and neladalkib targets compound resistance mutations.",
@@ -787,9 +802,9 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("Estrogen_receptor_alpha") }],
   },
   {
-    id: "androgen-receptor", kind: "target", name: "Androgen receptor", symbol: "AR", hgnc: "HGNC:644", ensembl: "ENSG00000169083", uniprot: "P10275", entrez: "367", targetClass: "nuclear-receptor", asOf, wikipedia: W("Androgen_receptor"),
-    tldr: "The hormone switch that drives prostate cancer, attacked by castration and by pills that block the receptor.",
-    summary: "Androgen deprivation plus AR pathway inhibitors (abiraterone, enzalutamide, apalutamide, darolutamide) is standard in advanced prostate cancer. AR degraders, AR N-terminal domain inhibitors, and combinations with PARP or AKT inhibitors address castration resistance. AR is also a target in a subset of TNBC (luminal androgen receptor subtype).",
+    id: "androgen-receptor", kind: "target", name: "Androgen receptor", symbol: "AR", hgnc: "HGNC:644", ensembl: "ENSG00000169083", uniprot: "P10275", entrez: "367", targetClass: "nuclear-receptor",  wikipedia: W("Androgen_receptor"),
+    tldr: "The androgen receptor can bind androgen hormones and regulate gene activity. Receptor staining, an RNA subtype and dependence on the receptor are different findings.",
+    summary: "The full-length androgen receptor is a hormone-binding protein that can regulate transcription. Its interactions with other proteins, receptor form and cellular setting affect its activity.\n\nReceptor amount, location, transcription and growth dependence are different observations. Nuclear AR immunostaining reports protein in sampled cells; a luminal androgen receptor, or LAR, label is a versioned RNA-classifier result. TBCRC 032 correlative analyses found AR protein expression alone insufficient to identify AR-dependent tumors. Neither staining nor classifier membership alone proves patient benefit.\n\nFull-length AR has distinct regions for transcriptional regulation, DNA binding and ligand binding. Androgens can change receptor interactions, nuclear localization and regulatory-DNA binding, with effects determined by partners, accessible DNA and receptor form. Tran's antiandrogen experiments in prostate models tested binding, nuclear movement and transcriptional effects separately. An RNA signal does not characterize a truncated protein or transfer those prostate results to breast-cancer treatment.\n\nA fictional tumor with 20% AR-positive nuclei but a non-LAR RNA classification need not have a mistaken result. The assays measure different layers; compare antibody, scoring, tumor-cell content, preservation, sampling, normalization and classifier version. Twenty percent stained nuclei is not twenty percent of patients expected to respond. Dependence requires a controlled receptor perturbation with downstream and growth or survival measurements.\n\nLehmann 2016 refined TNBCtype from six classes to four tumor-specific classes after immune and stromal contributions explained the former immunomodulatory and mesenchymal stem-like signals. LAR does not mean estrogen-receptor-positive disease. TBCRC 032 was a defined phase Ib/II metastatic breast-cancer study of enzalutamide with or without taselisib, with phase II focused on AR-positive TNBC; its exploratory correlations do not turn an RNA subtype into a universal treatment rule or import a prostate indication.",
     biology: "Nuclear receptor; amplification, splice variants (AR-V7), and ligand-binding-domain mutations drive resistance.",
     whereFound: ["Prostate cancer", "LAR-subtype TNBC", "Salivary duct carcinoma"],
     pathways: ["ar-signaling", "prostate-cancer-signalling"],
@@ -798,8 +813,31 @@ export const targets: TargetInput[] = [
     prevalence: [
       { cancerId: "prostate", pct: ">95", measure: "AR-driven at diagnosis", source: "https://en.wikipedia.org/wiki/Androgen_receptor", note: "AR-V7 in ~20-40% of mCRPC" },
       { cancerId: "tnbc", pct: "10-15", measure: "Luminal androgen receptor subtype", source: "https://en.wikipedia.org/wiki/Androgen_receptor" },
-    ], drugs: ["nilutamide", "triptorelin", "bms-986365", "azd9750", "ep0062", "qlh12016"], links: [{ label: "Wikipedia", url: W("Androgen_receptor") }], companies: ["oric-pharmaceuticals"],
+    ], drugs: ["nilutamide", "triptorelin", "bms-986365", "azd9750", "ep0062", "qlh12016"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Androgen_receptor"
   },
+  {
+    "label": "TBCRC 032 IB/II Multicenter Study: Molecular Insights to AR Antagonist and PI3K Inhibitor Efficacy in Patients with AR+ Metastatic Triple-Negative Breast Cancer. (primary abstract; 2020)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31822498/"
+  },
+  {
+    "label": "Development of a second-generation antiandrogen for treatment of advanced prostate cancer. (2009; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19359544/"
+  },
+  {
+    "label": "Refinement of Triple-Negative Breast Cancer Molecular Subtypes: Implications for Neoadjuvant Chemotherapy Selection. (2016; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27310713/"
+  },
+  {
+    "label": "UniProt P10275: reviewed human protein function",
+    "url": "https://www.uniprot.org/uniprotkb/P10275/entry"
+  }
+], companies: ["oric-pharmaceuticals"],
+
+"asOf": "2026-11-10"
+},
   {
     id: "tp53", trials: ["nct07060989"], keyPapers: ["paper-vogelstein-surfing-p53-network-nature-2000"], drugs: ["ose2101", "krt-232"], kind: "target", name: "TP53", symbol: "TP53", hgnc: "HGNC:11998", ensembl: "ENSG00000141510", uniprot: "P04637", entrez: "7157", targetClass: "tumor-suppressor", asOf, wikipedia: W("P53"),
     tldr: "TP53 is the 'guardian of the genome', broken in half of all cancers. Fixing it directly has so far defeated every attempt, so drugs exploit what its loss makes cancers depend on.",
@@ -819,9 +857,9 @@ export const targets: TargetInput[] = [
     ], companies: ["bulsara-bioworks", "nested-therapeutics", "photys-therapeutics"], links: [{ label: "Wikipedia", url: W("P53") }],
   },
   {
-    id: "brca", drugs: ["bracanalysis-cdx", "mychoice-cdx", "olaparib", "rucaparib", "talazoparib"], kind: "target", name: "BRCA1 / BRCA2 (HRD)", symbol: "BRCA1, BRCA2", targetClass: "tumor-suppressor", asOf, wikipedia: W("BRCA_mutation"),
-    tldr: "DNA repair genes. Inheriting a broken copy raises breast and ovarian cancer risk, but tumours that lose them become uniquely vulnerable to PARP inhibitors and platinum.",
-    summary: "BRCA1 and BRCA2 are homologous recombination repair genes; a tumour that loses both copies must rely on error-prone repair, which makes it uniquely vulnerable to PARP inhibitors and platinum. Germline BRCA1/2 mutations account for roughly 5 to 10 percent of breast cancers and about 15 percent of ovarian cancers, with 10 to 20 percent of triple-negative breast cancers (mostly BRCA1) and 3 to 5 percent of HR-positive cases (mostly BRCA2); BRCA2 alterations occur in 8 to 12 percent of metastatic prostate cancers and germline BRCA1/2 in 5 to 8 percent of pancreatic cancers. Homologous recombination deficiency (HRD) extends the phenotype to BRCA-wild-type tumours and is measured by genomic scars (myChoice CDx). HRD predicts benefit from PARP inhibitors and platinum, though the best assay and cut-off remain debated. The same genes guide both prevention and treatment.",
+    id: "brca", drugs: ["bracanalysis-cdx", "mychoice-cdx", "olaparib", "rucaparib", "talazoparib"], kind: "target", name: "BRCA1 / BRCA2 (HRD)", symbol: "BRCA1, BRCA2", targetClass: "tumor-suppressor",  wikipedia: W("BRCA_mutation"),
+    tldr: "BRCA1 and BRCA2 help repair damaged DNA. A reported variant, inherited cancer risk, remaining gene copies and current repair function need separate interpretation.",
+    summary: "BRCA1 and BRCA2 name genes everyone normally carries. Interpret a reported variant by its classification, sample and origin, then assess the remaining allele and repair function. An uncertain BRCA2 variant with no normal sample and no remaining-copy assessment establishes neither inheritance nor biallelic loss nor current repair deficiency. Tumor purity and complex copy-number states can limit allele interpretation.\n\nBRCA1 and BRCA2 have different repair roles. Brca1-deficient mouse embryonic stem cells had impaired homologous repair of defined chromosome breaks in Moynahan 1999. Purified full-length human BRCA2 promoted RAD51 assembly on single-stranded DNA in Jensen 2010. These model-specific results do not determine the effect of every human variant; the matching-template diagram omits many preparation and finishing steps.\n\nIn the CIMBA analysis, the invasive-breast-cancer results included 3,797 BRCA1 and 2,392 BRCA2 carriers, with individual marker data available for varying subsets. Among tumors with relevant marker information, 68% in BRCA1 carriers and 16% in BRCA2 carriers were triple-negative. These are pathology proportions among cancers in mutation carriers, not the chance that an individual carrier develops cancer or that a person with triple-negative disease carries a BRCA variant. Age and ascertainment matter.\n\nRepair capacity can change after treatment. In the selected eight-person resistant metastatic breast cancer cohort of Waks 2020, four acquired definite or putative BRCA reversions; other mechanisms could restore repair too. A reversion can restore a disrupted reading frame, while old genomic patterns remain. This selected cohort does not establish a common or most-frequent mechanism across all breast cancers, and a single tissue or blood sample can miss heterogeneous reversions.",
     biology: "Homologous recombination repair; loss forces reliance on error-prone pathways.",
     whereFound: ["Breast (esp. TNBC)", "Ovarian", "Prostate", "Pancreatic"],
     pathways: ["ddr", "breast-cancer-signalling", "pancreatic-cancer-signalling"],
@@ -833,8 +871,39 @@ export const targets: TargetInput[] = [
       { cancerId: "prostate", pct: "8-12", measure: "Germline or somatic BRCA2 (metastatic)", source: "https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018" },
       { cancerId: "pancreatic", pct: "5-8", measure: "Germline BRCA1/2", source: "https://www.cbioportal.org/study/summary?id=paad_tcga_pan_can_atlas_2018" },
       { cancerId: "breast-hr-positive", pct: "3-5", measure: "Germline BRCA1/2", source: "https://en.wikipedia.org/wiki/BRCA_mutation", note: "BRCA2 predominant" },
-    ], related: ["platinum-plus-hrd"], links: [{ label: "Wikipedia", url: W("BRCA_mutation") }],
+    ], related: ["platinum-plus-hrd"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BRCA_mutation"
   },
+  {
+    "label": "NCI: BRCA findings and test interpretation",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet"
+  },
+  {
+    "label": "RAD51 foci as a functional biomarker of homologous recombination repair and PARP inhibitor resistance in germline BRCA-mutated breast cancer. (2018; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+  },
+  {
+    "label": "Brca1 controls homology-directed DNA repair. (1999; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10549283/"
+  },
+  {
+    "label": "Purified human BRCA2 stimulates RAD51-mediated recombination. (2010; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20729832/"
+  },
+  {
+    "label": "Pathology of breast and ovarian cancers among BRCA1 and BRCA2 mutation carriers: results from the Consortium of Investigators of Modifiers of BRCA1/2 (CIMBA). (2012; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22144499/"
+  },
+  {
+    "label": "Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer. (2020; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+  }
+],
+
+"asOf": "2026-11-10"
+},
   {
     id: "cd47", technologies: ["cd47-blockade"], drugs: ["peluntamig", "spevatamig"], kind: "target", name: "CD47", symbol: "CD47", hgnc: "HGNC:1682", ensembl: "ENSG00000196776", uniprot: "Q08722", entrez: "961", targetClass: "checkpoint", asOf, wikipedia: W("CD47"),
     tldr: "CD47 is the 'don't eat me' signal: it binds SIRP-alpha on macrophages to stop them engulfing the cell, and over 90% of AML blasts and large B-cell lymphoma cells display it. Blocking it should let macrophages eat tumour cells, but red cells carry CD47 too, so anaemia is built in, and the lead antibody magrolimab was dropped after failed trials.",

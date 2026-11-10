@@ -74,7 +74,7 @@ export const tldr_es: Record<string, string> = {
   lag3: "El tercer freno inmunitario en alcanzar la aprobación, combinado con el bloqueo de PD-1 en melanoma.",
   tigit: "Un freno inmunitario que parecía prometedor y luego fracasó en varios grandes ensayos de cáncer de pulmón. Una advertencia.",
   kras: "El gen del cáncer mutado con más frecuencia, llamado 'no farmacológico' durante 40 años hasta 2021.",
-  braf: "Una quinasa de señalización mutada en la mitad de los melanomas; bloquearla con dos fármacos a la vez se convirtió en un modelo de terapia dirigida.",
+
   alk: "Una fusión génica en alrededor del 5 % de los cánceres de pulmón que responde de forma espectacular a pastillas, ahora durante muchos años.",
   met: "Un receptor mutado en algunos cánceres de pulmón o amplificado como vía de escape cuando otros fármacos fallan.",
   ret: "Una quinasa alterada en el cáncer de tiroides y una pequeña parte del cáncer de pulmón, tratable con una pastilla selectiva independientemente de dónde esté el tumor.",
@@ -95,9 +95,9 @@ export const tldr_es: Record<string, string> = {
   vegf: "La señal que usan los tumores para crear su propio riego sanguíneo. Bloquearla los priva de nutrientes y, sorprendentemente, ayuda a la inmunoterapia.",
   hif2a: "Un interruptor maestro que las células del cáncer de riñón dejan encendido al perder el gen VHL; belzutifan lo bloquea.",
   "estrogen-receptor": "El interruptor hormonal que impulsa la mayoría de los cánceres de mama. Bloquearlo o destruirlo es la terapia dirigida más antigua y eficaz.",
-  "androgen-receptor": "El interruptor hormonal que impulsa el cáncer de próstata, atacado con la castración y con pastillas que bloquean el receptor.",
+
   tp53: "El 'guardián del genoma', roto en la mitad de todos los cánceres. Repararlo directamente ha frustrado todos los intentos, así que los fármacos explotan aquello de lo que su pérdida hace depender al cáncer.",
-  brca: "Genes de reparación del ADN. Heredar una copia rota aumenta el riesgo de cáncer de mama y ovario, pero los tumores que los pierden se vuelven muy vulnerables a inhibidores de PARP y platino.",
+
   cd47: "La señal de 'no me comas' que las células cancerosas muestran a los macrófagos. Bloquearla parecía prometedor pero el fármaco principal fracasó.",
 
   // ---- tecnologías ----
@@ -409,14 +409,14 @@ export const tldr_es: Record<string, string> = {
   tils: "Células inmunitarias que han entrado en el tumor. Cuantas más, mejores resultados en cáncer de mama triple negativo.",
   tmb: "Cuántas mutaciones tiene un tumor. Más mutaciones significan más dianas para el sistema inmunitario.",
   msi: "Un corrector ortográfico del ADN roto que crea miles de mutaciones, haciendo al tumor muy visible para la inmunoterapia.",
-  hrd: "Un tumor que no puede reparar bien las roturas de doble cadena del ADN, normalmente por pérdida de BRCA o genes relacionados.",
+
   ctdna: "Fragmentos de ADN liberados por las células tumorales a la sangre, detectables con secuenciación sensible.",
   mrd: "Cáncer aún presente tras el tratamiento pero demasiado pequeño para verse en las exploraciones, detectado por pruebas de sangre o médula.",
   vaf: "La fracción de lecturas de ADN que llevan una mutación. Indica cuánto de la muestra es mutante y cuán clonal es.",
   vus: "Un cambio genético que se ha encontrado pero del que nadie sabe aún si importa.",
   ngs: "Leer millones de fragmentos de ADN en paralelo, el motor de toda prueba genómica moderna.",
   "gene-fusion": "Dos genes rotos y unidos, que crean una proteína híbrida capaz de impulsar el cáncer. A menudo exquisitamente sensible a fármacos.",
-  "mutational-signature": "Un patrón característico de mutaciones que revela su causa: tabaco, UV, un gen de reparación roto.",
+
   pam50: "Una prueba de 50 genes que clasifica los cánceres de mama en luminal A, luminal B, HER2-enriquecido y basal.",
   neoantigen: "Un fragmento de proteína creado por una mutación tumoral que el sistema inmunitario nunca ha visto, por lo que puede atacarlo sin dañar células normales.",
   "oncogene-addiction": "Cuando un cáncer depende tan completamente de un gen mutado que bloquearlo hace colapsar el tumor.",
@@ -447,10 +447,10 @@ export const tldr_es: Record<string, string> = {
   "adc-sequencing": "La pregunta abierta de si un segundo ADC funciona tras fallar el primero, sobre todo cuando ambos llevan el mismo tipo de carga.",
 
   // ---- vías ----
-  "pi3k-akt-mtor": "El circuito de 'crecer y sobrevivir' de la célula. Las señales de crecimiento de la superficie encienden PI3K, que enciende AKT, que enciende mTOR, que fabrica proteínas y bloquea la autodestrucción.",
-  "ras-mapk": "El relevo de 'dividirse' de la célula. Una señal en la superficie activa RAS, que pasa a RAF, MEK y ERK, que ordenan al núcleo dividir la célula. Las mutaciones de KRAS y BRAF lo dejan atascado en encendido.",
+
+
   "p53-cell-cycle": "Los frenos. p53 detecta el daño y detiene la copia de la célula; RB retiene la célula en la puerta G1 hasta que CDK4/6 la abre. Los cánceres cortan estos frenos.",
-  ddr: "Los equipos de reparación. Las roturas de una cadena las repara PARP; las de doble cadena, la recombinación homóloga dependiente de BRCA. Pierde un equipo y la célula sobrevive; pierde ambos y muere. Así funcionan los inhibidores de PARP.",
+
   "pd1-checkpoint": "PD-1 y CTLA-4 ayudan a regular las respuestas de las células T. Cambiar sus señales por sí solo no demuestra reconocimiento o destrucción del cáncer ni beneficio del tratamiento.",
   "cgas-sting": "La alarma de la célula ante ADN fuera de lugar. La radiación, la quimioterapia y los ADC derraman ADN en el citoplasma; cGAS lo detecta, STING da la alarma y el interferón llama al sistema inmunitario.",
   "er-signaling": "En el cáncer de mama hormonal, el estrógeno se une a su receptor, que enciende genes que hacen dividir la célula. Toda terapia endocrina corta esta cadena en algún punto.",
@@ -458,7 +458,7 @@ export const tldr_es: Record<string, string> = {
   "apoptosis-bcl2": "El interruptor de autodestrucción de la célula. BCL-2 lo mantiene cerrado; BAX y BAK lo abren. El venetoclax aparta a BCL-2 para que el interruptor pueda disparar.",
   "vegf-angiogenesis": "Cómo los tumores crean su propio riego sanguíneo. La falta de oxígeno hace que las células liberen VEGF, que ordena a las células de los vasos brotar hacia el tumor.",
   "hif-vhl": "Cómo las células perciben el oxígeno (Nobel 2019). VHL destruye HIF cuando hay oxígeno. Los cánceres de riñón pierden VHL, así que HIF-2α queda siempre encendido e impulsa el crecimiento de vasos y la proliferación.",
-  wnt: "Una vía del desarrollo secuestrada por el cáncer colorrectal. Normalmente un complejo de destrucción mantiene baja la β-catenina; perder APC la deja inundar el núcleo e impulsar genes de crecimiento.",
+
   emt: "Cómo una célula cancerosa cambia de forma para migrar y sacudirse los fármacos. Factores como ZEB1 y SNAIL sueltan la célula, encienden bombas que expulsan la quimioterapia y la ocultan del sistema inmunitario.",
   // ---- cánceres (segunda ola: todos los cánceres restantes) ----
   adrenocortical: "El carcinoma corticosuprarrenal es un cáncer raro y agresivo de la glándula suprarrenal que a menudo produce hormonas en exceso. La cirugía es la única curación, el mitotano es el único fármaco específico (con toxicidad real) y la quimioterapia o la inmunoterapia solo ayudan a una minoría.",
@@ -649,7 +649,7 @@ export const tldr_es: Record<string, string> = {
   "hereditary-cancer-syndromes": "Alrededor del 5-10% de los cánceres se deben a un fallo genético heredado. Reconocer estos síndromes (BRCA, Lynch, Li-Fraumeni, VHL, MEN, FAP, retinoblastoma y decenas más) cambia el cribado, la cirugía y el tratamiento tanto para el paciente como para sus familiares.",
   histiocytoses: "Las histiocitosis son enfermedades en las que células limpiadoras del sistema inmunitario se acumulan en los huesos, el corazón, el cerebro, los riñones y la piel. Antes se trataban como enfermedades inflamatorias con esteroides e interferón. El descubrimiento de que la mayoría presenta mutaciones en la misma vía de crecimiento que el melanoma las convirtió en cánceres tratables con terapias dirigidas: las pastillas inhibidoras de BRAF y MEK producen ahora respuestas en casi todos los pacientes tratados.",
   "hiv-associated-lymphoma": "Las personas que viven con HIV tienen un mayor riesgo de linfomas agresivos, impulsados por la supresión inmunitaria y por virus como el virus de Epstein-Barr. La gran transformación de las últimas dos décadas es que, manteniendo la terapia antirretroviral durante el tratamiento, estos linfomas se tratan con los mismos esquemas de quimioterapia a dosis completas y anticuerpos que en cualquier otra persona, con probabilidades de curación similares.",
-  "homologous-recombination-repair": "Una rotura que atraviesa las dos hebras del ADN es la lesión más peligrosa a la que se enfrenta una célula. Dos equipos compiten por repararla: la recombinación homóloga copia la respuesta del cromosoma hermano (precisa, necesita BRCA), mientras que la unión de extremos simplemente pega los extremos (rápida, chapucera). Cuál de los dos gana decide si los inhibidores de PARP y la radiación matan la célula.",
+
   hormonal: "Cortar el suministro de las hormonas que algunos cánceres, sobre todo los de mama y próstata, necesitan para crecer.",
   "hospital-clinic-barcelona": "El hospital universitario de Barcelona, cuna del sistema de estadificación BCLC del cáncer de hígado y del primer CAR-T académico de Europa, y líder en genómica del cáncer de mama y del linfoma.",
   "hpv-testing": "Una muestra tomada con un hisopo que se analiza para detectar el virus que causa el cáncer de cuello uterino, más precisa que la prueba de Papanicolaou y que puede hacerse en casa.",
@@ -675,12 +675,12 @@ export const tldr_es: Record<string, string> = {
   "keynote-522": "El ensayo que añadió inmunoterapia a la quimioterapia previa a la cirugía en el cáncer de mama triple negativo y que, de forma excepcional, mejoró la supervivencia.",
   kinase: "Una enzima que activa otras proteínas añadiéndoles un grupo fosfato. La señalización del cáncer funciona a base de quinasas, y los inhibidores de quinasas son la clase más grande de fármacos dirigidos.",
   "rare-childhood-cancers": "Algunos cánceres infantiles son tan raros que ningún hospital por sí solo ve suficientes casos para aprender de ellos. El NCI los agrupa: tumores del corazón, papilomas de las vías respiratorias, cánceres de tiroides, de las glándulas suprarrenales, de la nariz y la garganta, melanoma y carcinomas más típicos de los adultos. La respuesta han sido los registros internacionales y las redes de expertos que reúnen todos los casos, de modo que existen guías de tratamiento incluso sin ensayos clínicos.",
-  "replication-stress": "Los cánceres copian su ADN demasiado rápido y con los puntos de control averiados, así que las horquillas de replicación se detienen y colapsan. Solo sobreviven apoyándose en quinasas de reparación de emergencia como ATR, CHK1 y WEE1, y por eso bloquear esas quinasas puede ser letal de forma selectiva.",
+
   "resistance-routes-map": "Cuando un fármaco bloquea el motor de un cáncer, el cáncer tiene cinco maneras de recuperarse: cambiar la pieza a la que se une el fármaco, fabricar más de ella, tomar un camino alternativo, cambiar a un motor completamente distinto o dejar de permitir la entrada del fármaco. Saber qué ruta tomó un tumor decide cuál será el siguiente fármaco.",
   rituximab: "Rituximab fue el primer anticuerpo aprobado para el cáncer (1997). Convirtió la quimioinmunoterapia en el estándar para la CLL durante una década, y los biosimilares lo mantienen barato y disponible en todas partes.",
   "roche-genentech": "Creadora de Herceptin, Avastin y Rituxan, y propietaria de Foundation Medicine; la empresa que definió la oncología basada en anticuerpos.",
   "royal-marsden": "The Royal Marsden fue el primer hospital del mundo dedicado al cáncer (1851) y está asociado con el Institute of Cancer Research.",
-  "rtk-activation": "Los receptores de factores de crecimiento son antenas en la superficie celular que se emparejan cuando llega una señal y encienden los relevos de crecimiento del interior. Los cánceres mutan, multiplican o fusionan estas antenas para que transmitan la orden de «crecer» sin ninguna señal. La mayoría de los fármacos dirigidos, anticuerpos y ADC empiezan aquí.",
+
   sanofi: "Sanofi fabrica Sarclisa (isatuximab), ahora disponible en una forma subcutánea aprobada en julio de 2026.",
   screening: "Hacer pruebas a personas sin síntomas para detectar el cáncer, o sus lesiones precursoras, lo bastante pronto para curarlo. Está demostrado para el cáncer de mama, de cuello uterino, colorrectal y (en fumadores) de pulmón; toda prueba también encuentra algunos cánceres que nunca habrían causado daño.",
   seer: "SEER registra cuántas personas en EE. UU. desarrollan cada tipo de cáncer y cuánto tiempo viven, según el estadio, la edad, la raza y el año.",
@@ -779,7 +779,7 @@ export const tldr_es: Record<string, string> = {
   mskcc: "El hospital oncológico mejor clasificado del mundo, sede de la secuenciación MSK-IMPACT, del estudio de dostarlimab en cáncer de recto y de pioneros de la terapia CAR-T.",
   "multiple-endocrine-neoplasia": "Los síndromes MEN son fallos hereditarios en un solo gen que causan tumores en varias glándulas hormonales a lo largo de la vida. Como el gen puede detectarse en la infancia, los familiares en riesgo pueden hacerse la prueba, ser vigilados y, en el MEN2, someterse a la extirpación de la tiroides antes de que aparezca el cáncer; y para el cáncer de tiroides del MEN2 que sí se extiende, ahora existe una pastilla de precisión, selpercatinib, que bloquea la proteína RET defectuosa.",
   "mutagenesis-signatures": "Cada causa de daño en el ADN deja su propia huella en el genoma: la luz solar, el tabaco, una enzima de reparación defectuosa, una bacteria intestinal. Leer estas huellas indica qué causó un cáncer y qué equipos de reparación le faltan, lo que a su vez predice qué fármacos funcionarán.",
-  myc: "MYC es el gen del cáncer que se amplifica con más frecuencia, un interruptor maestro que activa miles de genes de crecimiento. No tiene un bolsillo donde encaje un fármaco convencional, por lo que se consideró «intratable con fármacos» durante 40 años; los primeros fármacos dirigidos directamente contra MYC entraron finalmente en ensayos clínicos en la década de 2020.",
+
   "myeloid-suppression-axis": "Los tumores reclutan a las células de limpieza del organismo (macrófagos y células mieloides inmaduras) y las reeducan como guardaespaldas. Estas apagan a los linfocitos T, construyen vasos sanguíneos y, cuando un anticuerpo terapéutico marca una célula cancerosa para que sea devorada, reciben de la proteína CD47 de su superficie la orden «no me comas».",
   "national-cancer-grid": "Una red de más de 360 centros oncológicos de la India, dirigida desde el Tata Memorial, que acuerda guías de tratamiento comunes, compra fármacos contra el cáncer de forma conjunta a una fracción del precio de lista y organiza comités de tumores y ensayos clínicos compartidos.",
   "ncc-hospital-east": "El campus de Kashiwa del National Cancer Center de Japón, una potencia en terapia de protones y ensayos de fase temprana que lidera SCRUM-Japan y muchos ensayos internacionales sobre cáncer gastrointestinal.",
@@ -1273,7 +1273,7 @@ export const tldr_es: Record<string, string> = {
   "nmpa-cde": "El regulador de medicamentos de China y su centro de evaluación, cuyas reformas desde 2015 convirtieron a China en la segunda mayor fuente mundial de nuevos fármacos contra el cáncer y en líder en ADC y biespecíficos.",
   "nogapendekin-alfa": "Nogapendekin alfa inbakicept es una versión modificada de la proteína estimulante del sistema inmunitario IL-15, administrada con BCG dentro de la vejiga, aprobada en 2024 para el cáncer de vejiga temprano que la BCG sola ya no controla.",
   "northwestern-lurie": "El centro oncológico de Northwestern en Chicago, líder mundial en el tratamiento de tumores cerebrales, desde los Tumour Treating Fields hasta la apertura de la barrera hematoencefálica con ultrasonido.",
-  notch: "Una señal de contacto entre células que decide el destino celular. Impulsa la leucemia de células T cuando una mutación la deja activada, actúa como supresor tumoral en algunos cánceres escamosos cuando se pierde, y su ligando DLL3 se convirtió en una diana farmacológica en el cáncer de pulmón de células pequeñas.",
+
   npm1: "NPM1 es la mutación más frecuente en la leucemia del adulto. Desplaza una proteína nuclear al citoplasma y, según se ha descubierto, hace que la leucemia dependa de menin.",
   "nsabp-foundation": "El histórico grupo estadounidense de ensayos de tratamiento adyuvante quirúrgico que demostró que la tumorectomía equivale a la mastectomía, que tamoxifen previene el cáncer de mama y que trastuzumab cura más casos de enfermedad HER2-positiva.",
   ntuh: "El principal hospital académico de Taiwán y cuna del programa de vacunación contra la hepatitis B que redujo el cáncer de hígado infantil, con un nuevo centro oncológico dedicado.",

@@ -44,14 +44,14 @@ export const simpleB: Record<string, string> = {
   tils: "Immune cells that have got inside the tumour. More of them means a better outlook in triple-negative breast cancer.",
   tmb: "How many mutations a tumour has. More mutations give the immune system more to attack.",
   msi: "A broken DNA spell-checker that creates thousands of mutations, making the tumour easy for immune drugs to see.",
-  hrd: "A tumour that cannot properly repair broken DNA, usually because of BRCA or similar gene loss.",
+
   ctdna: "Bits of DNA shed by tumour cells into the blood, detectable with sensitive tests.",
   mrd: "Cancer still present after treatment but too small to see on scans, found by blood or marrow tests.",
   vaf: "The share of DNA reads carrying a mutation, which shows how much of the sample is cancer.",
   vus: "A genetic change that has been found but nobody yet knows whether it matters.",
   ngs: "Reading millions of DNA pieces at once, the engine behind every modern genetic test.",
   "gene-fusion": "Two genes broken and joined together, making a hybrid protein that can drive cancer and is often very drug-sensitive.",
-  "mutational-signature": "A pattern of mutations that reveals what caused them: tobacco, sunlight, or a broken repair gene.",
+
   pam50: "A 50-gene test that sorts breast cancers into four biological groups.",
   neoantigen: "A protein fragment created by a tumour mutation that the immune system has never seen before, so it can attack it safely.",
   "oncogene-addiction": "When a cancer depends so completely on one broken gene that blocking it collapses the tumour.",
@@ -82,10 +82,10 @@ export const simpleB: Record<string, string> = {
   "adc-sequencing": "The open question of whether a second antibody-drug works after the first one fails.",
 
   // ---- pathways ----
-  "pi3k-akt-mtor": "The cell's 'grow and survive' circuit. Growth signals switch on a chain of proteins that build the cell up and stop it self-destructing.",
-  "ras-mapk": "The cell's 'divide' relay. A signal at the surface passes along a chain of proteins telling the cell to divide. KRAS and BRAF faults jam it 'on'.",
+
+
   "p53-cell-cycle": "The cell's brakes. p53 senses damage and stops the cell copying itself. Cancers cut these brakes.",
-  ddr: "The DNA repair crews. Lose one crew and the cell survives; lose two and it dies. That is how PARP pills work.",
+
   "pd1-checkpoint": "PD-1 and CTLA-4 help control T-cell responses. Changing their signals does not by itself show cancer recognition, killing or treatment benefit.",
   "cgas-sting": "The cell's alarm for DNA in the wrong place. When it goes off, the immune system is called in.",
   "er-signaling": "In hormone-driven breast cancer, oestrogen binds its receptor and switches on genes that make the cell divide.",
@@ -93,7 +93,7 @@ export const simpleB: Record<string, string> = {
   "apoptosis-bcl2": "The cell's self-destruct switch. BCL-2 holds it shut; the pill venetoclax lets it fire.",
   "vegf-angiogenesis": "How tumours grow their own blood supply by sending out a signal called VEGF.",
   "hif-vhl": "How cells sense oxygen. Kidney cancers break this system so a growth switch stays permanently on.",
-  wnt: "A pathway from early development that bowel cancer hijacks by breaking the gene that normally keeps it in check.",
+
   emt: "How a cancer cell changes shape to travel and to shrug off drugs.",
 
   // ---- fronts ----

@@ -190,6 +190,7 @@ import { companiesSponsors } from "./companies-sponsors";
 import { companiesSponsorsWave3 } from "./companies-sponsors-wave3";
 import { companiesMakersWave4 } from "./companies-makers-wave4";
 import { targetsWaveSoc } from "./targets-wave-soc";
+import { repairEducationTargets } from "./targets-repair-education-2026-11";
 import { targetsPipelineGap } from "./targets-pipeline-gap";
 import { targetsGenesWave } from "./targets-genes-wave";
 import { targetsImmuneMarkers } from "./targets-immune-markers";
@@ -461,7 +462,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...veterinaryGapDrugs, ...veterinaryGapInstitutions,
   ...institutionsPrizes202611,
   ...institutionsParticleTherapyGaps2026, ...institutionsDonorRegistryGaps2026, ...institutionsBiobankGaps2026, ...collectionsBiobankGaps2026, ...institutionsGrantGaps2026, ...collectionsGrantGaps2026, ...trialsGrantGaps2026, ...termsLawGaps2026, ...termsPayerGaps2026, ...institutionsPayerGaps2026,
-  ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
+  ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...repairEducationTargets, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
   ...pipelineTrialsWave2,

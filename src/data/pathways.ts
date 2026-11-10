@@ -9,8 +9,8 @@ const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 export const pathways: PathwayInput[] = [
   p({
     id: "pi3k-akt-mtor", name: "PI3K / AKT / mTOR", wikipedia: W("PI3K/AKT/mTOR_pathway"),
-    tldr: "The cell's 'grow and survive' circuit. Growth signals from the surface switch on PI3K, which switches on AKT, which switches on mTOR, which builds proteins and blocks self-destruction.",
-    summary: "Receptor tyrosine kinases (HER2, EGFR, IGF1R) activate PI3K (p110α, encoded by PIK3CA), producing PIP3, which recruits AKT. PTEN reverses this step and is a tumour suppressor. AKT phosphorylates many targets including TSC2, releasing mTORC1 to drive protein synthesis, and inhibits FOXO and BAD. The most frequently altered pathway in cancer: PIK3CA mutation (~40% HR+ breast, endometrial, head and neck), PTEN loss (prostate, endometrial, glioblastoma), AKT1 E17K. Drugs: alpelisib, inavolisib (PI3Kα), capivasertib (AKT), everolimus (mTOR), gedatolisib (PI3K/mTOR). Feedback: mTOR inhibition releases AKT, so combinations and endocrine partners are needed.",
+    tldr: "This network links growth signals and nutrients to protein production, metabolism and recycling. Different branches can respond differently to an intervention.",
+    summary: "Class I PI3K phosphorylates a membrane lipid, producing PIP3; PTEN removes its position-3 phosphate. AKT and mTOR are protein kinases. A PIP3 lipid result and an AKT1 Ser473 phosphosite result are therefore different molecular measurements. Document specimen preservation, cell mixture, protein site, timing, exposure, comparator and total-protein normalization before interpreting a change as activity or dependence.\n\nMembrane recruitment helps organize AKT activation. PDK1 phosphorylates AKT1 Thr308, whereas the rictor-mTOR complex supplies Ser473 phosphorylation in the defined experimental route. AKT can inhibit TSC2, relieving the TSC1/2 brake on RHEB, which promotes mTORC1 signaling. The diagram's indirect AKT-to-mTORC1 connection stands for these regulatory steps; it is not direct phosphorylation of mTORC1 by AKT.\n\nRaptor-containing mTORC1 and rictor-containing mTORC2 are distinct complexes. mTORC1 regulates protein production and autophagy-initiation machinery; releasing initiation restraint is not proof of completed recycling flux. Harrington linked S6K activity to reduced IRS-1 function, and O'Reilly observed increased IRS-1 and AKT signaling after RAD001 in cell models and treated tumors. Feedback release can change an output without proving that a combination improves outcomes in every setting.\n\nIn a fictional mTORC1 perturbation, lower production-regulator phosphorylation followed by higher AKT1 Ser473 and unchanged growth supports biochemical changes, not essentiality or failed engagement; timing alone does not prove the feedback connection. Test the proposed wiring and functional outcome independently. The FDA's 2023 capivasertib-with-fulvestrant approval specified adults with hormone-receptor-positive, HER2-negative advanced breast cancer, qualifying PIK3CA/AKT1/PTEN alterations on an approved test and specified prior endocrine treatment or early recurrence. It is not a TNBC indication inferred from a pathway label.",
     analogy: "Think of a factory: the receptor is the order desk, PI3K and AKT are the managers relaying the order, PTEN is the accountant cancelling orders, and mTOR is the assembly line. Cancer forges orders (PIK3CA mutation) or fires the accountant (PTEN loss).",
     nodes: [
       { id: "rtk", label: "RTK (HER2, EGFR)", x: 50, y: 5, targetId: "her2" },
@@ -29,12 +29,59 @@ export const pathways: PathwayInput[] = [
       { from: "akt", to: "foxo", type: "inhibits" }, { from: "mtor", to: "growth" },
     ],
     interventions: ["PI3Kα inhibitors (alpelisib, inavolisib) for PIK3CA-mutant HR+ breast cancer", "AKT inhibitor capivasertib for PIK3CA/AKT1/PTEN-altered breast and PTEN-deficient prostate cancer", "mTOR inhibitor everolimus", "Dual PI3K/mTOR gedatolisib (2026)", "Upstream: anti-HER2, anti-EGFR"],
-    targets: ["pik3ca", "akt", "her2", "egfr"], drugs: ["capivasertib", "inavolisib", "gedatolisib"], cancers: ["breast-hr-positive", "endometrial", "prostate"], links: [{ label: "Wikipedia", url: W("PI3K/AKT/mTOR_pathway") }],
-  }),
+    targets: ["pik3ca", "akt", "her2", "egfr"], drugs: ["capivasertib", "inavolisib", "gedatolisib"], cancers: ["breast-hr-positive", "endometrial", "prostate"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/PI3K/AKT/mTOR_pathway"
+  },
+  {
+    "label": "The tumor suppressor, PTEN/MMAC1, dephosphorylates the lipid second messenger, phosphatidylinositol 3,4,5-trisphosphate. (primary abstract; 1998)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9593664/"
+  },
+  {
+    "label": "mTOR inhibition induces upstream receptor tyrosine kinase signaling and activates Akt. (primary abstract; 2006)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16452206/"
+  },
+  {
+    "label": "3-Phosphoinositide-dependent protein kinase-1 (PDK1): structural and functional homology with the Drosophila DSTPK61 kinase. (1997; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9368760/"
+  },
+  {
+    "label": "Phosphorylation and regulation of Akt/PKB by the rictor-mTOR complex. (2005; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15718470/"
+  },
+  {
+    "label": "TSC2 is phosphorylated and inhibited by Akt and suppresses mTOR signalling. (2002; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12172553/"
+  },
+  {
+    "label": "Rheb GTPase is a direct target of TSC2 GAP activity and regulates mTOR signaling. (2003; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12869586/"
+  },
+  {
+    "label": "Raptor, a binding partner of target of rapamycin (TOR), mediates TOR action. (2002; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12150926/"
+  },
+  {
+    "label": "ULK1.ATG13.FIP200 complex mediates mTOR signaling and is essential for autophagy. (2009; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+  },
+  {
+    "label": "The TSC1-2 tumor suppressor controls insulin-PI3K signaling via regulation of IRS proteins. (2004; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15249583/"
+  },
+  {
+    "label": "FDA 2023 capivasertib with fulvestrant approval population",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-capivasertib-fulvestrant-breast-cancer"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "ras-mapk", name: "RAS / RAF / MEK / ERK (MAPK)", wikipedia: W("MAPK/ERK_pathway"),
-    tldr: "The RAS-MAPK pathway is the cell's 'divide' relay. A signal at the surface flips RAS on, which passes to RAF, MEK, and ERK, which tell the nucleus to make the cell divide. KRAS and BRAF mutations jam it in the on position.",
-    summary: "Growth-factor receptors recruit GRB2/SOS to load GTP onto RAS (KRAS, NRAS, HRAS). RAS-GTP recruits RAF (BRAF, CRAF) dimers, which phosphorylate MEK1/2, which phosphorylate ERK1/2. ERK drives transcription of cyclin D1, MYC, and negative feedback (DUSP, SPRY). Alterations: KRAS (pancreatic 90%, CRC 45%, lung 30%), BRAF V600E (melanoma 50%), NF1 loss, receptor fusions (ALK, RET, NTRK). Drugs: KRAS G12C inhibitors, pan-RAS(ON) inhibitors, BRAF+MEK doublets, upstream RTK inhibitors. Feedback reactivation (loss of ERK-mediated inhibition of RTKs) is why single agents fail and vertical combinations (BRAF+MEK, KRAS+EGFR in CRC) work.",
+    tldr: "A signalling network in which RAS proteins act as molecular switches and RAF, MEK and ERK relay signals. A gene alteration or downstream signal alone does not establish dependence or treatment benefit.",
+    summary: "A measured downstream signal does not uniquely identify its upstream driver, survival dependence or clinical benefit. Particular alleles and drug mechanisms matter: Poulikakos found RAS-dependent RAF-dimer transactivation and increased ERK signaling in wild-type-BRAF cell settings exposed to certain ATP-competitive RAF inhibitors. This is an experimental context-dependent effect, not a direction assigned to every RAF drug or RAS alteration.\n\nThis MAPK branch relays signals from receptor and other inputs through the GDP/GTP RAS switch to RAF kinases, MEK and ERK. RAS is a GTP-binding switch; RAF, MEK and ERK are protein kinases. Moodie examined active-RAS complexes, and Kyriakis tested Raf-1 activation of MAP kinase kinase. These defined experiments support steps in the relay; other MAPK branches exist and the simplified map omits regulators.\n\nA fictional compound that lowers phospho-ERK within an hour without changing growth has demonstrated a sampled downstream biochemical effect, subject to assay controls. It has not alone proved direct target binding, attributed growth dependence or patient benefit. Specify the allele, protein site, total-protein normalization, preservation, exposure, timing and cell population, then confirm engagement and functional effects with independent perturbations and appropriate controls.\n\nShared inputs, branches and feedback can alter the magnitude or even direction of a perturbation response over time. High pathway-associated RNA is not a universal activity meter, and a changed ERK site cannot identify a sole upstream receptor. Davies' BRAF work established transforming activity for specific mutations in defined models, not a common effect for every uncertain BRAF variant. Drug selection still needs its own allele-, disease- and setting-specific evidence.",
     analogy: "A relay race: receptor hands the baton to RAS, RAS to RAF, RAF to MEK, MEK to ERK, ERK runs into the nucleus and shouts 'divide'. A KRAS mutation is a runner who never stops running whether or not anyone handed them the baton.",
     nodes: [
       { id: "rtk", label: "RTK (EGFR, ALK, RET, MET)", x: 50, y: 5, targetId: "egfr" },
@@ -51,8 +98,31 @@ export const pathways: PathwayInput[] = [
       { from: "rtk", to: "sos" }, { from: "sos", to: "ras" }, { from: "nf1", to: "ras", type: "inhibits" }, { from: "ras", to: "raf" }, { from: "raf", to: "mek" }, { from: "mek", to: "erk" }, { from: "erk", to: "out" }, { from: "erk", to: "fb" }, { from: "fb", to: "rtk", type: "inhibits" },
     ],
     interventions: ["KRAS G12C inhibitors (sotorasib, adagrasib) ± anti-EGFR in colorectal cancer", "Pan-RAS(ON) inhibitor daraxonrasib (phase 3, pancreatic)", "BRAF + MEK inhibitors (dabrafenib/trametinib, encorafenib/binimetinib)", "Encorafenib + cetuximab (+ chemo) in BRAF V600E CRC", "Upstream: EGFR, ALK, RET, MET, NTRK inhibitors and bispecifics"],
-    targets: ["kras", "braf", "egfr", "alk", "ret", "met", "ntrk", "fgfr2", "kit", "nras", "shp2", "nf1"], drugs: ["sotorasib", "adagrasib", "daraxonrasib", "encorafenib", "osimertinib", "lorlatinib"], cancers: ["pancreatic", "colorectal", "nsclc", "melanoma"], links: [{ label: "Wikipedia", url: W("MAPK/ERK_pathway") }],
-  }),
+    targets: ["kras", "braf", "egfr", "alk", "ret", "met", "ntrk", "fgfr2", "kit", "nras", "shp2", "nf1"], drugs: ["sotorasib", "adagrasib", "daraxonrasib", "encorafenib", "osimertinib", "lorlatinib"], cancers: ["pancreatic", "colorectal", "nsclc", "melanoma"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/MAPK/ERK_pathway"
+  },
+  {
+    "label": "RAF inhibitors transactivate RAF dimers and ERK signalling in cells with wild-type BRAF. (2010; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20179705/"
+  },
+  {
+    "label": "Complexes of Ras.GTP with Raf-1 and mitogen-activated protein kinase kinase. (1993; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8503013/"
+  },
+  {
+    "label": "Raf-1 activates MAP kinase-kinase. (1992; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/"
+  },
+  {
+    "label": "Mutations of the BRAF gene in human cancer. (2002; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12068308/"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "p53-cell-cycle", name: "p53 / RB / cell-cycle checkpoint", wikipedia: W("Cell_cycle_checkpoint"),
     tldr: "The p53 and RB checkpoints are the cell's brakes. p53 senses damage and stops the cell from copying itself; RB holds the cell at the G1 gate until CDK4/6 unlocks it. Cancers cut these brakes.",
@@ -78,8 +148,8 @@ export const pathways: PathwayInput[] = [
   }),
   p({
     id: "ddr", name: "DNA damage response & homologous recombination", wikipedia: W("DNA_repair"),
-    tldr: "The DNA damage response is the cell's set of repair crews. Single-strand breaks are patched by PARP; double-strand breaks by BRCA-dependent homologous recombination. Lose one crew and the cell survives; lose both and it dies. That is how PARP inhibitors work.",
-    summary: "Single-strand breaks recruit PARP1 for base-excision repair. Unrepaired breaks collapse replication forks into double-strand breaks, repaired by homologous recombination (BRCA1, BRCA2, PALB2, RAD51) in S/G2 or by error-prone NHEJ/POLQ-mediated end joining. ATR senses replication stress and signals via CHK1; ATM senses double-strand breaks. HR-deficient tumours (BRCA mutation, HRD) depend on PARP, POLQ, and ATR: the basis of synthetic lethality. Resistance: BRCA reversion, 53BP1/Shieldin loss restoring HR, drug efflux.",
+    tldr: "Cells detect DNA damage, coordinate repair and adjust their cell cycle. A damage signal is different from completed repair, and a repair-gene finding alone does not predict treatment benefit.",
+    summary: "A DNA lesion is a physical or chemical problem; a mutation is a lasting sequence change. Repair can remove damage before a mutation is fixed. Recognition and checkpoint signaling are responses to the problem, whereas successful repair, tolerated damage, arrest and death are separate outcomes. The lesson map therefore ends by measuring the outcome instead of assuming that the alarm completed the repair.\n\nSelected repair jobs address different problems: base excision begins by removing a damaged base, nucleotide excision removes a lesion-containing stretch, and mismatch repair corrects copying mismatches. Lindahl purified an E. coli enzyme that released uracil without cutting the DNA backbone, a specific early base-excision step rather than proof of all human repair routes. Double-strand breaks can use matching-template homologous repair or end joining. These are selected jobs, not exclusive assignments of every lesion to one pathway.\n\nGamma-H2AX is histone H2AX phosphorylated at serine 139. Rogakou 1998 observed a rapid response after experimentally induced double-strand breaks in mammalian systems. A microscopy focus is a response around damage, not direct sequencing of a break or a universal repair-failure test. In a fictional culture with a bulky lesion and increased gamma-H2AX, measure lesion removal over time with suitable controls before claiming nucleotide-excision failure, homologous repair deficiency or drug sensitivity.\n\nPlatinum agents can form DNA crosslinks; interstrand links block strand separation and require coordinated repair machinery. The Fanconi pathway links DNA-processing activities, and homologous repair can contribute to resolving replication-associated damage. This does not mean every platinum lesion is an interstrand link or that every HR-deficient tumor responds. A repair mechanism, an observed drug effect and clinical benefit in a defined population need separate evidence.",
     analogy: "Two repair crews for a road: PARP fixes potholes, BRCA rebuilds collapsed bridges. A town that has lost its bridge crew (BRCA mutation) survives as long as potholes are fixed before they become bridge collapses. Block the pothole crew (PARP inhibitor) and the bridges fall.",
     nodes: [
       { id: "ssb", label: "Single-strand break", x: 20, y: 8 },
@@ -96,8 +166,47 @@ export const pathways: PathwayInput[] = [
       { from: "ssb", to: "parp" }, { from: "parp", to: "fork", type: "inhibits" }, { from: "ssb", to: "fork" }, { from: "fork", to: "dsb" }, { from: "atr", to: "fork", type: "inhibits" }, { from: "dsb", to: "brca" }, { from: "dsb", to: "nhej" }, { from: "brca", to: "fix" }, { from: "nhej", to: "death" },
     ],
     interventions: ["PARP inhibitors in BRCA/HRD ovarian, breast, prostate, pancreatic cancer", "Platinum chemotherapy (crosslinks) in HRD tumours", "ATR inhibitors (ceralasertib) in ATM-deficient or PARP-resistant tumours", "POLQ inhibitors (novobiocin analogues) in HRD", "PARP1-selective saruparib to widen therapeutic window"],
-    targets: ["parp", "brca", "atr", "wee1", "tp53"], drugs: ["olaparib", "niraparib", "talazoparib", "carboplatin"], technologies: ["parp-inhibitor", "hrd-testing", "synthetic-lethality-approaches", "platinum", "parp-pet"], cancers: ["ovarian", "tnbc", "prostate", "pancreatic"], links: [{ label: "Wikipedia", url: W("DNA_repair") }],
-  }),
+    targets: ["parp", "brca", "atr", "wee1", "tp53"], drugs: ["olaparib", "niraparib", "talazoparib", "carboplatin"], technologies: ["parp-inhibitor", "hrd-testing", "synthetic-lethality-approaches", "platinum", "parp-pet"], cancers: ["ovarian", "tnbc", "prostate", "pancreatic"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/DNA_repair"
+  },
+  {
+    "label": "OpenStax Biology 2e, section 14.6: DNA repair",
+    "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+  },
+  {
+    "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+  },
+  {
+    "label": "An N-glycosidase from Escherichia coli that releases free uracil from DNA containing deaminated cytosine residues. (1974; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/4610583/"
+  },
+  {
+    "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+  },
+  {
+    "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+  },
+  {
+    "label": "DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139. (1998; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+  },
+  {
+    "label": "DNA interstrand crosslink repair and cancer. (2011; review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21701511/"
+  },
+  {
+    "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "pd1-checkpoint", name: "PD-1 / PD-L1 immune checkpoint & T-cell activation", wikipedia: W("Immune_checkpoint"),
     tldr: "PD-1 and CTLA-4 help regulate T-cell responses. Changing their signals does not by itself establish cancer recognition, killing or benefit.",
@@ -250,8 +359,8 @@ export const pathways: PathwayInput[] = [
   }),
   p({
     id: "wnt", name: "Wnt / β-catenin", wikipedia: W("Wnt_signaling_pathway"),
-    tldr: "Wnt/β-catenin is a developmental pathway hijacked by colorectal cancer. Normally a destruction complex keeps β-catenin low; losing APC lets it flood the nucleus and drive growth genes.",
-    summary: "Without Wnt, β-catenin is phosphorylated by the destruction complex (APC, AXIN, GSK3β, CK1) and degraded. Wnt binding to Frizzled/LRP5/6 disables the complex; β-catenin accumulates, enters the nucleus, and with TCF/LEF drives MYC, cyclin D1, LGR5, AXIN2. APC loss initiates ~80% of colorectal cancers; CTNNB1 mutations occur in HCC, endometrial, and desmoid tumours; RNF43/RSPO alterations define a ligand-dependent subset. Wnt is also immunosuppressive (excludes dendritic cells). Drugs have been hard: porcupine inhibitors for RSPO/RNF43 tumours, tankyrase inhibitors, and nirogacestat (gamma-secretase, desmoid) are the closest.",
+    tldr: "Canonical Wnt signalling regulates beta-catenin and gene activity. Its output, dependence on a Wnt ligand and effects on cell growth are separate questions.",
+    summary: "Canonical pathway output, dependence on secreted Wnt, growth dependence and clinical response are separate claims. Nuclear beta-catenin can reflect pathway signaling, whereas total beta-catenin also includes adhesion functions. Lower AXIN2 RNA supports an output effect with suitable controls, not selective killing or patient benefit. Wnt routes that do not use beta-catenin are outside this canonical readout.\n\nCanonical Wnt uses Frizzled with LRP5/6 co-receptor machinery. Without an effective signal, the Axin/APC-organized destruction machinery and sequential kinase steps promote beta-catenin degradation; signaling can change that control and allow nuclear regulation with partners. PORCN supplies a lipid modification required for proper Wnt secretion in the studied systems. Blocking that upstream step need not overcome a downstream escape from destruction control.\n\nTwo fictional cultures have nuclear beta-catenin. Secretion blockade reduces the nuclear signal in culture A but not in culture B, where downstream bypass is stipulated. A supports a ligand-dependent hypothesis; B illustrates how an upstream block can leave a downstream output intact. The symbols represent qualitative readouts, not protein counts or a real drug dataset. Neither pattern alone establishes selective killing; measure viability and control intervention specificity.\n\nAssays can measure localization, AXIN2 RNA or a defined transcriptional reporter, before and after a specified perturbation. Preservation, composition, global transcription effects, model validation and tissue consumption matter; there is no universal Wnt-high treatment cutoff. In Rodon's phase 1 WNT974 study of 94 people with advanced solid tumors, AXIN2 fell in many paired biopsies while no RECIST responses were observed. Target-related output and tumor response must therefore be reported separately, alongside safety rather than a claim of demonstrated benefit.",
     analogy: "β-catenin is a messenger constantly being shredded by a committee (APC and friends). A Wnt signal tells the committee to stand down. Colorectal cancer fires the committee (APC loss), so the messenger runs unchecked into the nucleus.",
     nodes: [
       { id: "wnt", label: "Wnt ligand", x: 20, y: 8 },
@@ -266,8 +375,35 @@ export const pathways: PathwayInput[] = [
       { from: "wnt", to: "fzd" }, { from: "rnf43", to: "fzd", type: "inhibits" }, { from: "fzd", to: "dc", type: "inhibits" }, { from: "dc", to: "bcat", type: "inhibits" }, { from: "bcat", to: "tcf" }, { from: "tcf", to: "genes" },
     ],
     interventions: ["Porcupine inhibitors (RSPO-fusion / RNF43-mutant tumours, trials)", "Gamma-secretase inhibitor nirogacestat in desmoid tumours (approved 2023)", "Tankyrase inhibitors (preclinical/early)", "Indirect: chemoprevention with aspirin/COX-2 in Lynch and FAP"],
-    targets: ["gpc3"], cancers: ["colorectal", "hcc", "endometrial"], technologies: ["chemoprevention"], links: [{ label: "Wikipedia", url: W("Wnt_signaling_pathway") }],
-  }),
+    targets: ["gpc3"], cancers: ["colorectal", "hcc", "endometrial"], technologies: ["chemoprevention"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wnt_signaling_pathway"
+  },
+  {
+    "label": "Phase 1 study of single-agent WNT974, a first-in-class Porcupine inhibitor, in patients with advanced solid tumours. (primary abstract; 2021)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33941878/"
+  },
+  {
+    "label": "LDL-receptor-related proteins in Wnt signal transduction. (2000; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11029007/"
+  },
+  {
+    "label": "Control of beta-catenin phosphorylation/degradation by a dual-kinase mechanism. (2002; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11955436/"
+  },
+  {
+    "label": "Wnt signaling controls the phosphorylation status of beta-catenin. (2002; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11834740/"
+  },
+  {
+    "label": "Monounsaturated fatty acid modification of Wnt protein: its role in Wnt secretion. (2006; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17141155/"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     asOf:"2026-11-08", notes:["Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment."],
     id: "emt", related: ["theories-of-cancer","cancer-stem-cell-theory","cell-lineage-and-state","epithelium-and-stroma","cell-composition-confound"], name: "Epithelial-mesenchymal transition & drug efflux", keyPapers: ["paper-lamouille-emt-molecular-mechanisms-nrmcb-2014"], wikipedia: W("Epithelial–mesenchymal_transition"),

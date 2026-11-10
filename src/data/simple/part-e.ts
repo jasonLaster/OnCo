@@ -130,7 +130,7 @@ export const simpleE: Record<string, string> = {
   "tumor-microenvironment": "A tumour is a neighbourhood of fibroblasts, immune cells, blood vessels and scaffolding that the cancer recruits and corrupts, and which decides whether drugs and immune cells get in.",
   "antigen-presentation-immunoediting": "Tumours display fragments of their proteins for immune cells to inspect; the cells that survive immune attack are the ones that stopped showing fragments or switched on brakes.",
   "cancer-metabolism": "Cancer cells rewire how they eat, burning sugar fast but wastefully and gorging on other nutrients, which is why PET scans light them up and metabolism is a drug target.",
-  "replication-stress": "Cancers copy their DNA too fast with broken checkpoints, so they rely on emergency repair enzymes such as ATR and WEE1, and blocking those can kill them selectively.",
+
   "chromosomal-instability": "Most cancers have the wrong number of chromosomes and keep reshuffling them, which fuels resistance but also stresses the cell and can trigger immune alarms researchers hope to exploit.",
   "telomere-maintenance": "Normal cells can divide only so many times because their chromosome caps wear down, but cancers switch the cap-rebuilding enzyme telomerase back on so they divide forever.",
 
@@ -140,11 +140,11 @@ export const simpleE: Record<string, string> = {
   "clonal-evolution": "A tumour evolves by natural selection: treatment kills the sensitive cells and leaves the rest, so measuring what survives and adapting therapy is the counter-strategy.",
   "inflammation-nfkb": "Long-term inflammation is soil for cancer, feeding growth signals and DNA damage through a master switch called NF-κB, and colitis, hepatitis and stomach infections are the proof.",
   hedgehog: "Hedgehog is a growth pathway that shapes embryos and is switched back on in basal cell skin cancer and some brain tumours, and pills that block it are approved.",
-  notch: "Notch is a cell-contact signal that drives T-cell leukaemia when stuck on, acts as a brake in some squamous cancers, and its partner DLL3 became a drug target.",
+
   "jak-stat": "JAK-STAT is the relay that turns hormone-like signals into gene changes; it is overactive in some blood cancers, and tumours cut it to hide from interferon and immunotherapy.",
   "tgf-beta": "TGF-beta is a signal that stops normal cells dividing but switches sides once cancer is established, building scar-like tissue, walling out immune cells and pushing cells to migrate.",
   "hippo-yap": "The Hippo pathway tells organs when to stop growing; mesothelioma disables it so the growth drivers YAP and TAZ stay on, and blocking drugs are in trials.",
-  myc: "MYC is the most commonly amplified cancer gene, a master switch for thousands of growth genes with no drug pocket, and the first direct MYC drugs reached trials recently.",
+
   "keap1-nrf2": "KEAP1-NRF2 is the cell's antioxidant defence switch; some lung cancers break the off-switch so it stays on, detoxifying chemotherapy and radiation and resisting almost everything.",
   "swi-snf-chromatin": "SWI/SNF is a machine that opens and closes DNA so genes can be read; one in five cancers has a broken part, often creating a druggable dependence on its twin.",
   "epigenetic-reprogramming": "Cancer changes how its genes are read, using chemical tags to silence guardians and wake growth programmes, and unlike mutations these tags can be reversed by drugs.",
@@ -167,10 +167,10 @@ export const simpleE: Record<string, string> = {
   "cell-cycle-engine-cdks": "Cell division runs on a clock made of proteins called cyclins and CDKs that fire in order; cancers speed the clock up, and CDK-blocking pills slow it down.",
   "dna-replication-licensing": "Before dividing a cell must copy three billion DNA letters once, using thousands of licensed start points; cancers fire too many too fast, and many chemotherapies jam the copying.",
   "mitotic-spindle-checkpoint": "When a cell divides a scaffold called the spindle pulls chromosomes apart, and taxane chemotherapy freezes the spindle so the cell is stuck at that step until it dies.",
-  "rtk-activation": "Growth-factor receptors are antennas that switch on growth inside; cancers mutate, multiply or fuse them so they shout 'grow' without a signal, and most targeted drugs act here.",
+
   "transcription-addiction": "Cancer cells run a few key genes at extreme volume from giant control regions and depend unusually heavily on the shared amplifier proteins involved, which makes those amplifiers druggable.",
 
-  "homologous-recombination-repair": "A double-strand DNA break is the most dangerous damage a cell faces, and whether it is repaired accurately with BRCA or sloppily glued decides if PARP pills kill it.",
+
   "mismatch-repair-msi": "After DNA is copied a proofreading crew fixes wrong letters; lose it and the genome fills with errors that make abnormal proteins the immune system can see, so immunotherapy works.",
   "base-excision-repair-parp": "A repair crew snips out damaged DNA letters all day long, with PARP marking each nick; PARP pills trap PARP on the DNA, turning nicks into lethal breaks.",
   "synthetic-lethality-map": "Two genes are synthetically lethal when losing either is fine but losing both kills the cell, so cancers that have already lost one become vulnerable to drugs against the other.",

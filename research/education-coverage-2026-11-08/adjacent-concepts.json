@@ -1716,5 +1716,94 @@
         }
       ]
     }
+  },
+  {
+    "id": "repair-assay-owner-definitions",
+    "title": "Existing HRD testing owner and assay layers",
+    "domain": "repair-signaling-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/26957554/",
+      "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+    ],
+    "discoveryOccurrences": [
+      "repair-signaling-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; no extra coverage credit",
+      "checkedAt": "2026-11-10",
+      "rationale": "Adjacent work is queued so it does not repeatedly interrupt the assigned batch.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Correct the HRD-testing owner’s conflation of composite GIS with standalone LOH, classification of SBS3 as functional and blanket treatment-sensitivity claims.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Correct the HRD-testing owner’s conflation of composite GIS with standalone LOH, classification of SBS3 as functional and blanket treatment-sensitivity claims.",
+            "Existing canonical owner: hrd-testing"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "repair-checkpoint-dependence-scope",
+    "title": "Checkpoint dependence beyond the replication-stress owner",
+    "domain": "repair-signaling-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/12791985/",
+      "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+    ],
+    "discoveryOccurrences": [
+      "repair-signaling-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; no extra coverage credit",
+      "checkedAt": "2026-11-10",
+      "rationale": "Adjacent work is queued so it does not repeatedly interrupt the assigned batch.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Review ATR, CHK1 and WEE1 owner definitions for universal checkpoint-dependence or selective-lethality statements; the corrected replication-stress record does not certify other owners.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Review ATR, CHK1 and WEE1 owner definitions for universal checkpoint-dependence or selective-lethality statements; the corrected replication-stress record does not certify other owners.",
+            "Existing canonical owner: replication-stress"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "repair-clinical-landscape-scope",
+    "title": "Clinical landscape statements in repair and signalling",
+    "domain": "repair-signaling-adjacent",
+    "sourceURLs": [
+      "https://www.fda.gov/drugs/cancer-approvals/fda-approves-capivasertib-fulvestrant-breast-cancer"
+    ],
+    "discoveryOccurrences": [
+      "repair-signaling-completion-review"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator intake; no extra coverage credit",
+      "checkedAt": "2026-11-10",
+      "rationale": "Adjacent work is queued so it does not repeatedly interrupt the assigned batch.",
+      "points": [
+        {
+          "id": "scope",
+          "requirement": "Reconcile dated prevalence, medicine-development, indication, guideline, turnaround and cost statements separately from the completed molecular and assay teaching. Source-scoped summaries replace unsupported blanket lead paragraphs in this batch.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Reconcile dated prevalence, medicine-development, indication, guideline, turnaround and cost statements separately from the completed molecular and assay teaching. Source-scoped summaries replace unsupported blanket lead paragraphs in this batch.",
+            "Existing canonical owner: brca"
+          ]
+        }
+      ]
+    }
   }
 ]

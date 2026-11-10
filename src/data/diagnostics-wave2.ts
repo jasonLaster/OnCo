@@ -32,17 +32,48 @@ export const diagnosticsTechnologies2: TechnologyInput[] = [
     related: ["companion-diagnostic", "intodna", "b-biomarker-validation"],
     links: [{ label: "EMBO Molecular Medicine 2018: A RAD51 assay feasible in routine tumor samples calls PARP inhibitor response beyond BRCA mutation", url: "https://doi.org/10.15252/emmm.201809172" }] },
 
-  { id: "hrd-genomic-scar-scores", kind: "technology", name: "HRD genomic scar scores (GIS, LOH, HRDetect)", status: "standard-of-care", since: 2019, asOf, sections: ["diagnostics"],
+  { id: "hrd-genomic-scar-scores", kind: "technology", name: "HRD genomic scar scores (GIS, LOH, HRDetect)", status: "standard-of-care", since: 2019,  sections: ["diagnostics"],
     aka: ["genomic instability score", "GIS", "LOH score", "HRDetect", "genomic scar", "homologous recombination deficiency score"],
-    tldr: "A family of sequencing scores that read the scars a broken DNA repair system leaves across a tumour's genome; a high score qualifies ovarian cancer patients for PARP inhibitor maintenance even without a BRCA mutation.",
-    summary: "What they measure. When homologous recombination fails, the genome accumulates a characteristic pattern of large deletions, loss of heterozygosity and rearranged chromosome ends. Scar scores count these footprints from tumour sequencing. The Myriad myChoice genomic instability score adds up loss of heterozygosity, telomeric allelic imbalance and large-scale state transitions; FoundationOne CDx reports a genome-wide loss of heterozygosity percentage; HRDetect (Nature Medicine 2017) weighs mutational signatures, including signature 3 and small deletions with microhomology, from whole-genome data; and academic and regional laboratories run their own versions on targeted panels or low-pass genomes. All are reported with a threshold that calls the tumour HRD positive or negative.\n\nWho should have it. Guidelines recommend tumour HRD testing at diagnosis of advanced high-grade ovarian cancer to decide maintenance treatment. In PRIMA (niraparib) and PAOLA-1 (olaparib plus bevacizumab), the benefit of PARP inhibitor maintenance was concentrated in HRD-positive tumours, and the drug labels in Europe are written around that status. Use in breast, prostate and pancreatic cancer is investigational; there the decision still rests on BRCA and related gene mutations.\n\nWhat changes. HRD positive without a BRCA mutation opens PARP inhibitor maintenance; HRD negative usually means bevacizumab alone or observation, though a share of HRD-negative patients still respond. The scar is permanent: it stays after the tumour restores repair and becomes resistant, so a positive score in relapsed disease overstates current sensitivity, which is where functional assays such as the RAD51 test aim to help. The thresholds differ between assays, so a tumour can be positive on one test and negative on another.\n\nRegulatory status and cost. myChoice CDx is FDA approved as a companion diagnostic; several kit-based European tests are CE marked. The test is a tumour-tissue sequencing assay with a turnaround of two to four weeks, priced in the range of a comprehensive genomic panel, and covered by many health systems for ovarian cancer.",
+    tldr: "These scores measure selected patterns of accumulated chromosome change. The assay and cutoff matter; a high score alone does not establish current repair failure or treatment eligibility.",
+    summary: "Genomic scars are historical patterns in sampled tumor DNA. They can remain after a surviving population restores homologous repair, so a scar result is not a direct measurement of current function or a guarantee of drug benefit. DNA extraction consumes material; purity, ploidy estimation, segmentation, specimen quality and algorithm version affect the reported result. Counts are not percentages of cells whose repair has failed.\n\nLoss of heterozygosity means losing one parental version, with or without a reduction in total copy number. Abkevich 2012 counted LOH regions longer than 15 megabases but shorter than a whole chromosome in epithelial ovarian cancer analyses. Birkbak counted imbalanced regions reaching a telomere without crossing the centromere. Popova studied transitions between adjacent regions at least 10 megabases long in basal-like breast carcinoma. The original LST method estimated counts separately within each chromosome arm, excluding centromeric breaks, after filtering and smoothing variations smaller than 3 megabases. Segment filters and clinical score cutoffs are different rules.\n\nA composite score can sum different scar features. Telli 2016 used the unweighted sum of LOH, telomeric allelic imbalance and large-scale transitions, with a predefined high-score boundary reported as 42 in the abstract, or a deleterious BRCA1/2 finding, in three platinum-containing neoadjuvant triple-negative breast cancer trials. The training population used to choose a boundary, the treated population used to test response, the assay scale and the intended use are different facts. A number on another assay cannot be read against this threshold without validation; a response association is not an interchangeable treatment-selection rule.\n\nIn a fictional, already filtered within-arm profile, a 12-megabase segment next to an 8-megabase segment fails the requirement that both neighbors be at least 10 megabases. A 12-megabase segment next to a 14-megabase segment meets that size component. This tests counting, not a 10-megabase deletion rule, present repair function or a clinical response cutoff. The original algorithm filters and validation population still apply.",
     principle: "Count genome-wide footprints of failed homologous recombination (loss of heterozygosity, telomeric allelic imbalance, large-scale transitions, mutational signature 3) from tumour sequencing and call HRD against a validated threshold.",
     strengths: ["Extends PARP inhibitor benefit beyond BRCA carriers", "Runs on the same tissue sequencing as a gene panel", "Backed by randomised trials and drug labels in ovarian cancer"],
     limitations: ["Scar persists after resistance, so it overstates current sensitivity", "Different assays and thresholds disagree", "Needs adequate tumour content in the sample"],
     cancers: ["high-grade-serous-ovarian-cancer", "ovarian", "breast-cancer", "prostate", "pancreatic"], targets: ["brca", "parp"], terms: ["hrd"],
     technologies: ["hrd-testing", "rad51-foci-assay", "cgp", "wes-wgs", "companion-diagnostic", "parp-inhibitor"], drugs: ["olaparib", "niraparib", "mychoice-cdx", "foundationone-cdx"], companies: ["myriad-genetics", "foundation-medicine"], trials: ["paola-1", "prima"],
     related: ["stride-dna-break-detection"],
-    links: [{ label: "PRIMA: niraparib maintenance in advanced ovarian cancer, with the largest benefit in HRD-positive tumours (New England Journal of Medicine 2019)", url: "https://doi.org/10.1056/NEJMoa1910962" }, { label: "Nature Medicine 2017: HRDetect is a predictor of BRCA1 and BRCA2 deficiency based on mutational signatures", url: "https://doi.org/10.1038/nm.4292" }] },
+    links: [
+  {
+    "label": "PRIMA: niraparib maintenance in advanced ovarian cancer, with the largest benefit in HRD-positive tumours (New England Journal of Medicine 2019)",
+    "url": "https://doi.org/10.1056/NEJMoa1910962"
+  },
+  {
+    "label": "Nature Medicine 2017: HRDetect is a predictor of BRCA1 and BRCA2 deficiency based on mutational signatures",
+    "url": "https://doi.org/10.1038/nm.4292"
+  },
+  {
+    "label": "Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer. (2020; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+  },
+  {
+    "label": "Patterns of genomic loss of heterozygosity predict homologous recombination repair defects in epithelial ovarian cancer. (2012; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23047548/"
+  },
+  {
+    "label": "Telomeric allelic imbalance indicates defective DNA repair and sensitivity to DNA-damaging agents. (2012; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22576213/"
+  },
+  {
+    "label": "Ploidy and large-scale genomic instability consistently identify basal-like breast carcinomas with BRCA1/2 inactivation. (2012; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22933060/"
+  },
+  {
+    "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+  }
+] ,
+"asOf": "2026-11-10"
+},
 
   // ---- Circulating tumour cells -------------------------------------------------------------------------------
   { id: "cellsearch-ctc-count", kind: "technology", name: "CellSearch circulating tumour cell count", status: "approved", since: 2004, asOf, sections: ["diagnostics"],

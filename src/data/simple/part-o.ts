@@ -165,7 +165,7 @@ export const simpleO: Record<string, string> = {
   "gene-expression-prognostic-assays": "Gene-expression assays measure a set of genes in a removed tumour to estimate how likely it is to come back, so patients with low scores can safely skip chemotherapy.",
   "hand-held-ultrasound": "Hand-held ultrasound probes the size of a phone plug into a tablet, so a clinic nurse or district doctor can check a lump or a liver without sending the patient to a city hospital.",
   "hdr-brachytherapy": "High-dose-rate brachytherapy steps a tiny, intensely radioactive source through tubes placed in or beside the tumour for a few minutes, then withdraws it.",
-  "hrd-genomic-scar-scores": "HRD scar scores read the marks a broken DNA repair system leaves across a tumour's genome, and a high score qualifies ovarian cancer patients for PARP inhibitor maintenance.",
+
   "hyperthermia-systems": "Hyperthermia machines warm a tumour to about 40 to 43 degrees for an hour using radio waves or microwaves, making radiotherapy or chemotherapy given alongside work better.",
   "hypofractionated-radiotherapy": "Hypofractionated radiotherapy gives fewer, larger daily doses, and large trials in breast and prostate cancer showed the same control with far less time in hospital.",
   "imaging-mass-cytometry": "Imaging mass cytometry stains a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, mapping which cells are where.",

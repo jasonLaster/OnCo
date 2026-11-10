@@ -92,7 +92,7 @@ export const tldr_de: Record<string, string> = {
   amivantamab: "Ein zweiarmiger Antikörper, der EGFR und seinen Ausweichpartner MET blockiert, jetzt Erstlinientherapie bei EGFR-mutiertem Lungenkrebs zusammen mit lazertinib.",
   ampullary: "Ampullenkrebs entsteht dort, wo Gallengang und Bauchspeicheldrüsengang in den Dünndarm münden. Weil er den Gallenfluss früh blockiert, wird er oft entdeckt, solange er noch entfernt werden kann, und die Whipple-Operation heilt einen guten Teil der Patienten. Die Tumoren kommen in zwei Varianten vor, darmähnlich und bauchspeicheldrüsenähnlich, und die Chemotherapie wird zunehmend danach ausgewählt, welche davon der Pathologe sieht.",
   "androgen-deprivation": "Die Androgenentzugstherapie senkt den Testosteronspiegel oder blockiert dessen Rezeptor und ist seit 1941 die Grundlage der Prostatakrebsbehandlung (Nobelpreis 1966).",
-  "androgen-receptor": "Der Hormonschalter, der Prostatakrebs antreibt; er wird durch Kastration und durch Tabletten angegriffen, die den Rezeptor blockieren.",
+
   "angiogenic-switch": "Ein Tumor kann ohne eigene Blutversorgung nicht über ein paar Millimeter hinauswachsen. Der „Schalter“ kippt, wenn die Signale, die neue Gefäße anfordern (VEGF, FGF, Angiopoietin), stärker werden als jene, die sie zurückhalten (Thrombospondin). Die entstehenden Gefäße sind undicht und chaotisch, was dem Tumor Sauerstoff entzieht, Medikamente abblockt und Krebszellen einen Ausweg eröffnet.",
   antiangiogenic: "Die anti-angiogene Therapie schneidet den Tumor von seiner Blutversorgung ab; heute wird sie vor allem eingesetzt, damit die Immuntherapie besser wirkt.",
   "antigen-presentation-immunoediting": "Wie das Immunsystem Krebs erkennt und wie Krebs lernt, sich zu verstecken. Tumoren präsentieren Bruchstücke ihrer Proteine auf MHC-Molekülen; T-Zellen töten die Zellen, die sie erkennen; übrig bleiben diejenigen, die keine Bruchstücke mehr zeigen oder Bremsen eingeschaltet haben.",
@@ -203,8 +203,8 @@ export const tldr_de: Record<string, string> = {
   bms: "Pionier der Checkpoint-Inhibitoren (Opdivo, Yervoy), der jetzt auf das erste erfolgreiche bispezifische ADC und auf Alpha-Radiopharmazeutika setzt.",
   bortezomib: "Bortezomib war der erste Proteasom-Hemmer: Es blockiert die Protein-Recycling-Maschine der Zelle, was die als Antikörperfabriken arbeitenden Plasmazellen nicht vertragen.",
   brachytherapy: "Bei der Brachytherapie wird eine radioaktive Quelle direkt in den Tumor oder unmittelbar daneben eingebracht.",
-  braf: "BRAF ist eine Signalkinase, die bei der Hälfte der Melanome mutiert ist; ihre Blockade mit zwei Medikamenten zugleich wurde zur Vorlage für die zielgerichtete Therapie.",
-  brca: "Gene für die DNA-Reparatur. Wer eine defekte Kopie erbt, hat ein höheres Risiko für Brust- und Eierstockkrebs, doch Tumoren, die diese Gene verlieren, werden auf einzigartige Weise anfällig für PARP-Hemmer und Platin.",
+
+
   "brentuximab-vedotin": "Das ADC, das dem modernen Feld Glaubwürdigkeit verschaffte (2011), für das Hodgkin-Lymphom und CD30+-Lymphome.",
   "broad-institute": "Das Broad Institute ist das Genomik-Kraftzentrum hinter DepMap, der Mitentwicklung von cBioPortal und der Cancer Cell Line Encyclopedia.",
   btk: "Das Signalenzym, mit dem B-Zell-Krebsarten überleben. Seine Blockade machte aus der chronischen lymphatischen Leukämie eine Krankheit, die sich mit einer täglichen Tablette kontrollieren lässt.",
@@ -324,12 +324,12 @@ export const tldr_de: Record<string, string> = {
   histiocytoses: "Histiozytosen sind Erkrankungen, bei denen sich Fresszellen des Immunsystems in Knochen, Herz, Gehirn, Nieren und Haut ansammeln. Früher wurden sie als entzündliche Erkrankungen mit Steroiden und Interferon behandelt. Die Entdeckung, dass die meisten Mutationen im selben Wachstumssignalweg wie das Melanom tragen, machte sie zu zielgerichtet behandelbaren Krebserkrankungen: BRAF- und MEK-Hemmer in Tablettenform erzielen heute bei fast jedem behandelten Patienten ein Ansprechen.",
   "histopathology-ihc": "Histopathologie bedeutet, Krebszellen unter dem Mikroskop zu betrachten, und die Immunhistochemie färbt sie auf bestimmte Proteine an. Zusammen bilden sie noch immer die Grundlage jeder Diagnose.",
   "hiv-associated-lymphoma": "Menschen, die mit HIV leben, haben ein erhöhtes Risiko für aggressive Lymphome, bedingt durch die Schwächung des Immunsystems und Viren wie das Epstein-Barr-Virus. Der Wandel der letzten zwei Jahrzehnte besteht darin, dass diese Lymphome, bei fortgeführter antiretroviraler Therapie während der Behandlung, mit denselben volldosierten Chemotherapie- und Antikörperschemata behandelt werden wie bei allen anderen, mit ähnlichen Heilungschancen.",
-  "homologous-recombination-repair": "Ein Bruch durch beide DNA-Stränge ist die gefährlichste Schädigung, der eine Zelle ausgesetzt ist. Zwei Reparaturteams konkurrieren darum, ihn zu beheben: Die homologe Rekombination kopiert die Lösung vom Schwesterchromosom (genau, braucht BRCA), während die Endverknüpfung die Enden einfach zusammenklebt (schnell, schlampig). Welches Team gewinnt, entscheidet darüber, ob PARP-Hemmer und Strahlung die Zelle abtöten.",
+
   hormonal: "Die Hormone abschneiden, die manche Krebsarten, vor allem Brust- und Prostatakrebs, zum Wachsen brauchen.",
   "hospital-clinic-barcelona": "Das Universitätsklinikum Barcelonas, Heimat des BCLC-Stadiensystems für Leberkrebs, der ersten akademischen CAR-T-Therapie Europas und führender Genomforschung zu Brustkrebs und Lymphomen.",
   "hpv-testing": "Ein Abstrich, der auf das Virus untersucht wird, das Gebärmutterhalskrebs verursacht, genauer als der Pap-Abstrich und auch zu Hause durchführbar.",
   "hpv-vaccine": "Impfstoffe, die die Virusinfektionen verhindern, die hinter Gebärmutterhals-, Rachen-, Anal- und Leberkrebs stehen. Die wirksamste Maßnahme gegen Krebs, die je entwickelt wurde.",
-  hrd: "Ein Tumor, der DNA-Doppelstrangbrüche nicht richtig reparieren kann, meist wegen des Verlusts von BRCA oder einem verwandten Gen.",
+
   iarc: "Die IARC ist die Krebsagentur der WHO, zuständig für weltweite Krebsstatistiken (GLOBOCAN), die Einstufung krebserregender Stoffe und Präventionsforschung.",
   ibrutinib: "Die Tablette, die für die meisten CLL-Erkrankungen das Ende der Chemotherapie bedeutete. Sie blockiert das Überlebenssignal, auf das B-Zellen angewiesen sind, und war das erste Medikament, das die Chemoimmuntherapie in fast jeder CLL-Situation übertraf.",
   icans: "ICANS bezeichnet Verwirrtheit, Sprachstörungen und selten Krampfanfälle nach einer CAR-T- oder bispezifischen Therapie.",
@@ -368,10 +368,10 @@ export const tldr_de: Record<string, string> = {
   "kras-inhibitors": "Medikamente gegen das häufigste Krebsgen, das bis zu sotorasib im Jahr 2021 als unmöglich anzugreifen galt.",
   lag3: "LAG-3 ist die dritte Immunbremse, die eine Zulassung erreicht hat, in Kombination mit PD-1-Blockade beim Melanom.",
   "rare-childhood-cancers": "Manche Krebserkrankungen im Kindesalter sind so selten, dass kein einzelnes Krankenhaus genug Fälle sieht, um daraus zu lernen. Das NCI fasst sie zusammen: Herztumoren, Papillome der Atemwege, Krebs der Schilddrüse, der Nebennieren, der Nase und des Rachens, Melanome und Karzinome, die eher für Erwachsene typisch sind. Die Antwort waren internationale Register und Expertennetzwerke, die jeden Fall zusammentragen, sodass es Behandlungsempfehlungen gibt, auch ohne Studien.",
-  "ras-mapk": "Der RAS-MAPK-Signalweg ist die Staffel, die der Zelle das Kommando „teilen“ gibt. Ein Signal an der Oberfläche schaltet RAS ein, das den Befehl an RAF, MEK und ERK weitergibt, die dem Zellkern mitteilen, dass sich die Zelle teilen soll. Mutationen in KRAS und BRAF klemmen ihn in der Ein-Stellung fest.",
+
   "real-world-evidence": "Daten aus der Routineversorgung statt aus klinischen Studien, mit denen geprüft wird, ob die Ergebnisse auch außerhalb der Studienpopulation gelten.",
   recist: "RECIST ist das Regelwerk, nach dem auf Bildgebungsaufnahmen gemessen wird, ob Tumoren gewachsen oder geschrumpft sind.",
-  "replication-stress": "Krebszellen kopieren ihre DNA zu schnell und mit defekten Kontrollpunkten, sodass die Replikationsgabeln ins Stocken geraten und zusammenbrechen. Sie überleben nur, indem sie sich auf Notfall-Reparaturkinasen wie ATR, CHK1 und WEE1 stützen, weshalb das Blockieren dieser Kinasen selektiv tödlich sein kann.",
+
   resistance: "Warum Krebsmedikamente aufhören zu wirken: Entweder war der Tumor nie von der Zielstruktur abhängig, oder er entwickelt sich so weiter, dass er die Blockade umgeht.",
   "resistance-routes-map": "Wenn ein Medikament den Motor eines Krebses blockiert, hat der Krebs fünf Wege zurück: das Teil verändern, an das das Medikament bindet, mehr davon herstellen, einen Seitenweg nehmen, ganz auf einen anderen Motor umschalten oder das Medikament nicht mehr hereinlassen. Zu wissen, welchen Weg ein Tumor genommen hat, entscheidet über das nächste Medikament.",
   ret: "RET ist eine Kinase, die bei Schilddrüsenkrebs und einem kleinen Teil der Lungenkrebsfälle verändert ist und sich mit einer einzigen selektiven Tablette behandeln lässt, unabhängig davon, wo der Tumor sitzt.",
@@ -382,7 +382,7 @@ export const tldr_de: Record<string, string> = {
   "robotic-surgery": "Chirurgen operieren durch kleine Schnitte mit Roboterarmen, die zitterfreie Präzision und 3D-Sicht bieten.",
   "roche-genentech": "Schöpfer von Herceptin, Avastin und Rituxan sowie Eigentümer von Foundation Medicine; das Unternehmen, das die Antikörper-Onkologie geprägt hat.",
   "royal-marsden": "The Royal Marsden war das erste Krankenhaus der Welt, das sich dem Krebs widmete (1851), und ist mit dem Institute of Cancer Research verbunden.",
-  "rtk-activation": "Wachstumsfaktor-Rezeptoren sind Antennen auf der Zelloberfläche, die sich paaren, wenn ein Signal eintrifft, und die Wachstumsstaffeln im Zellinneren einschalten. Krebszellen mutieren, vervielfachen oder fusionieren diese Antennen, sodass sie „wachsen“ senden, ohne dass überhaupt ein Signal vorliegt. Die meisten zielgerichteten Medikamente, Antikörper und ADCs setzen hier an.",
+
   "sacituzumab-govitecan": "Das erste ADC, das auf TROP2 zielt. Es bringt eine starke Chemotherapie direkt zu Brust- und Blasenkrebszellen und ist heute eine Erstlinienoption beim triple-negativen Brustkrebs.",
   "sacituzumab-tirumotecan": "Sacituzumab tirumotecan ist ein drittes TROP2-ADC aus China, das für ein sehr großes globales Programm an Merck lizenziert wurde. Es ist in China zugelassen; in den USA hat es einen Prioritätsgutschein, aber noch keine Zulassung.",
   sanofi: "Sanofi stellt Sarclisa (isatuximab) her, das es jetzt in einer im Juli 2026 zugelassenen subkutanen Form gibt.",
@@ -434,7 +434,7 @@ export const tldr_de: Record<string, string> = {
   daratumumab: "Der CD38-Antikörper, der aus Dreifachkombinationen Vierfachkombinationen machte: Zur Standardinduktion hinzugefügt, halbiert er das Risiko, dass das Myelom fortschreitet, in etwa.",
   daraxonrasib: "Das erste Medikament, das alle aktiven RAS-Varianten blockiert, im August 2026 von der FDA für metastasierten Bauchspeicheldrüsenkrebs zugelassen, bei dem KRAS 90 % der Tumoren antreibt.",
   "datopotamab-deruxtecan": "Datopotamab deruxtecan (Datroway) ist das zweite TROP2-ADC und nutzt denselben Payload wie Enhertu. 2026 wurde es zu einer Erstlinienoption für Patientinnen mit dreifach negativem Brustkrebs, die keine Immuntherapie erhalten können.",
-  ddr: "Die DNA-Schadensantwort ist die Gesamtheit der Reparaturteams der Zelle. Einzelstrangbrüche werden von PARP geflickt, Doppelstrangbrüche durch die BRCA-abhängige homologe Rekombination. Fällt ein Team aus, überlebt die Zelle; fallen beide aus, stirbt sie. Genau so wirken PARP-Inhibitoren.",
+
   "desmoid-tumour": "Desmoidtumoren sind lokal aggressive Wucherungen fibroblastenähnlicher Zellen, die sich nie in entfernte Organe ausbreiten, aber Nerven, Darm und Muskeln durchdringen können. Viele hören von selbst auf zu wachsen oder schrumpfen, weshalb zunächst abzuwarten heute Standard ist, und bei denen, die fortschreiten, verkleinert das erste eigens für diese Krankheit entwickelte Medikament, der Gamma-Sekretase-Hemmer nirogacestat, die Tumoren und lindert die Schmerzen.",
   devices: "Geräte und physikalische Therapien behandeln Krebs mit elektrischen Feldern, Wärme oder Schall statt mit Chemikalien.",
   diagnostics: "Untersuchungen an Gewebe und Blut, die zeigen, um welche Krebsart es sich handelt, was sie antreibt und welche Medikamente wirken könnten.",
@@ -519,7 +519,7 @@ export const tldr_de: Record<string, string> = {
   pfizer: "Kaufte Seagen für 43 Milliarden Dollar, um zu einem führenden ADC-Anbieter zu werden; stellt außerdem Ibrance, Lorbrena, Braftovi und den ersten PROTAC her.",
   pfs: "Das progressionsfreie Überleben (PFS) ist die Zeit, die Patienten leben, ohne dass ihr Krebs wächst.",
   "pheochromocytoma-paraganglioma": "Phäochromozytome und Paragangliome sind Tumoren des adrenalinproduzierenden Gewebes, die gefährliche Blutdruckanstiege verursachen. Eine Operation nach sorgfältiger Blutdruckblockade heilt die meisten Patienten, Gentests finden bei fast der Hälfte eine erbliche Ursache, und für die Minderheit, bei der sich der Tumor ausbreitet, gibt es inzwischen radioaktive Medikamente, die den Tumor gezielt aufsuchen, sowie seit 2025 die erste zielgerichtete Tablette zum Einnehmen, belzutifan.",
-  "pi3k-akt-mtor": "Der „Wachsen und Überleben“-Schaltkreis der Zelle. Wachstumssignale von der Oberfläche schalten PI3K ein, das AKT einschaltet, das mTOR einschaltet, das Proteine aufbaut und die Selbstzerstörung blockiert.",
+
   pik3ca: "PIK3CA ist das am häufigsten mutierte Gen beim hormonabhängigen Brustkrebs. Medikamente dagegen wirken, aber es dauerte Jahre, es gezielt zu treffen, ohne den Blutzucker zu erhöhen.",
   pirtobrutinib: "Ein BTK-Blocker, der noch wirkt, wenn die älteren nicht mehr helfen, weil er an einer anderen Stelle des Enzyms angreift. Im Dezember 2025 vollständig für CLL zugelassen.",
   "pituitary-tumours": "Hypophysentumoren sind meist gutartige Wucherungen der Hormondrüse an der Unterseite des Gehirns, die Probleme verursachen, indem sie zu viele Hormone produzieren oder auf die Sehnerven drücken. Prolaktin produzierende Tumoren schmelzen mit einer Tablette dahin, die meisten anderen werden durch eine Operation durch die Nase geheilt, und die seltenen aggressiven Formen sprechen auf das Chemotherapeutikum temozolomide an.",
@@ -561,8 +561,8 @@ export const tldr_de: Record<string, string> = {
   mskcc: "Das weltweit bestplatzierte Krebskrankenhaus, Heimat der MSK-IMPACT-Sequenzierung, der Studie zu dostarlimab beim Rektumkarzinom und von CAR-T-Pionieren.",
   "multiple-endocrine-neoplasia": "Die MEN-Syndrome sind vererbte Defekte in einem einzelnen Gen, die im Laufe des Lebens Tumoren in mehreren Hormondrüsen verursachen. Da das Gen bereits im Kindesalter nachgewiesen werden kann, können gefährdete Angehörige getestet und überwacht werden und sich bei MEN2 die Schilddrüse entfernen lassen, bevor Krebs entsteht; und für MEN2-Schilddrüsenkrebs, der sich doch ausbreitet, gibt es heute eine zielgerichtete Tablette, selpercatinib, die das fehlerhafte RET-Protein blockiert.",
   "mutagenesis-signatures": "Jede Ursache von DNA-Schäden hinterlässt ihren eigenen Fingerabdruck im Genom: Sonnenlicht, Tabak, ein defektes Reparaturenzym, ein Darmbakterium. Wer diese Fingerabdrücke liest, erkennt, was einen Krebs verursacht hat und welche Reparaturmannschaften ihm fehlen, was wiederum vorhersagt, welche Medikamente wirken werden.",
-  "mutational-signature": "Ein charakteristisches Muster von Mutationen, das verrät, was sie verursacht hat: Tabak, UV-Strahlung, ein defektes Reparaturgen.",
-  myc: "MYC ist das am häufigsten amplifizierte Krebsgen, ein Hauptschalter, der Tausende von Wachstumsgenen anschaltet. Es hat keine Bindungstasche für ein herkömmliches Medikament und galt daher 40 Jahre lang als „nicht medikamentös angreifbar“; die ersten direkt gegen MYC gerichteten Medikamente kamen in den 2020er-Jahren endlich in klinische Studien.",
+
+
   "myeloid-suppression-axis": "Tumoren rekrutieren die Aufräumzellen des Körpers (Makrophagen und unreife myeloische Zellen) und schulen sie zu Leibwächtern um. Diese schalten T-Zellen ab, bauen Gefäße und bekommen, wenn ein therapeutischer Antikörper eine Krebszelle zum Fressen markiert, von CD47 auf deren Oberfläche das Signal „friss mich nicht“.",
   "national-cancer-grid": "Ein Netzwerk von mehr als 360 indischen Krebszentren, das vom Tata Memorial aus geleitet wird, sich auf gemeinsame Behandlungsleitlinien einigt, Krebsmedikamente gemeinsam zu einem Bruchteil des Listenpreises einkauft und gemeinsame Tumorkonferenzen und Studien durchführt.",
   "ncc-hospital-east": "Der Kashiwa-Campus des japanischen National Cancer Center, ein Schwergewicht in der Protonentherapie und bei Studien in frühen Phasen, das SCRUM-Japan und viele internationale Studien zu Magen-Darm-Krebs leitet.",
@@ -662,7 +662,7 @@ export const tldr_de: Record<string, string> = {
   wee1: "Eine Checkpoint-Kinase, die Zellen Zeit gibt, ihre DNA vor der Teilung zu reparieren. Wird sie ausgeschaltet, werden geschädigte Krebszellen in eine tödliche Teilung gezwungen.",
   "wellcome-sanger": "Das britische Genominstitut, dessen Cancer Genome Project die BRAF-Mutation beim Melanom entdeckte, COSMIC aufbaute und die Mutationssignaturen definierte.",
   "wes-wgs": "Das Auslesen aller Gene (Exom) oder der gesamten DNA (Genom) eines Tumors statt nur eines ausgewählten Panels.",
-  wnt: "Wnt/β-catenin ist ein Entwicklungssignalweg, den Darmkrebs für sich kapert. Normalerweise hält ein Abbaukomplex den β-catenin-Spiegel niedrig; geht APC verloren, flutet β-catenin den Zellkern und schaltet Wachstumsgene an.",
+
   "y-combinator": "Y Combinator ist der Start-up-Accelerator, der jedes Jahr Hunderte neuer Unternehmen gegen eine kleine Beteiligung finanziert. Seit 2014 unterstützt er einen stetigen Strom von Unternehmen, die sich Krebs vorgenommen haben, von Bluttests bis zu gentechnisch veränderten Viren.",
   zanidatamab: "Zanidatamab (Ziihera) ist ein Antikörper, der HER2 an zwei verschiedenen Stellen packt, zugelassen für HER2+ Gallengangskrebs.",
   zanubrutinib: "Zanubrutinib ist der einzige BTK-Blocker, der ibrutinib in einer direkten Vergleichsstudie sowohl bei der Wirksamkeit als auch bei der Sicherheit geschlagen hat. Er ist heute der am häufigsten verschriebene BTK-Hemmer bei CLL.",
@@ -1133,7 +1133,7 @@ export const tldr_de: Record<string, string> = {
   "nmpa-cde": "Chinas Arzneimittelbehörde und ihr Bewertungszentrum, deren Reformen seit 2015 China zur zweitgrößten Quelle neuer Krebsmedikamente der Welt und zu einem Vorreiter bei ADCs und bispezifischen Antikörpern gemacht haben.",
   "nogapendekin-alfa": "Nogapendekin alfa inbakicept ist eine gentechnisch veränderte Version des immunstimulierenden Proteins IL-15, die zusammen mit BCG in die Blase gegeben wird und 2024 für frühen Blasenkrebs zugelassen wurde, den BCG allein nicht mehr kontrolliert.",
   "northwestern-lurie": "Chicagos Northwestern-Krebszentrum, weltweit führend in der Hirntumortherapie, von Tumour Treating Fields bis zur Öffnung der Blut-Hirn-Schranke mit Ultraschall.",
-  notch: "Ein Kontaktsignal zwischen Zellen, das über das Zellschicksal entscheidet. Es treibt die T-Zell-Leukämie an, wenn es durch Mutation dauerhaft eingeschaltet ist, wirkt bei einigen Plattenepithelkarzinomen als Tumorsuppressor, wenn es verloren geht, und sein Ligand DLL3 wurde zur Zielstruktur für Medikamente beim kleinzelligen Lungenkrebs.",
+
   npm1: "NPM1 ist die häufigste Mutation bei Leukämie im Erwachsenenalter. Sie verlagert ein Kernprotein ins Zytoplasma und macht die Leukämie, wie sich herausstellt, von menin abhängig.",
   "nsabp-foundation": "Die traditionsreiche US-Studiengruppe für chirurgische adjuvante Therapie, die bewies, dass die brusterhaltende Operation der Mastektomie gleichwertig ist, dass tamoxifen Brustkrebs verhindert und dass trastuzumab mehr HER2-positive Erkrankungen heilt.",
   ntuh: "Taiwans führendes akademisches Krankenhaus und Geburtsort des Hepatitis-B-Impfprogramms, das den Leberkrebs im Kindesalter zurückgedrängt hat, mit einem neuen eigenen Krebszentrum.",

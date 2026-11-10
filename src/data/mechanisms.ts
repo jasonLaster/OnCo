@@ -107,9 +107,9 @@ const pathways: PathwayInput[] = [
   }),
   p({
     id: "replication-stress", name: "DNA replication stress", wikipedia: W("Replication_stress"),
-    tldr: "Cancers copy their DNA too fast and with broken checkpoints, so replication forks stall and collapse. They survive only by leaning on emergency repair kinases such as ATR, CHK1, and WEE1, which is why blocking those kinases can be selectively lethal.",
-    summary: "Oncogene activation (MYC, cyclin E, RAS) shortens G1, increases origin firing, and causes fork stalling, ssDNA gaps, and transcription-replication conflicts. ATR senses stalled forks and signals via CHK1 to slow origin firing and stabilise forks; WEE1 restrains CDK1/2. TP53-mutant and CCNE1-amplified cells depend on this axis (G1 checkpoint gone, G2/M checkpoint essential), the rationale for ATR (ceralasertib, camonsertib), CHK1, WEE1 (azenosertib), and PKMYT1 (lunresertib) inhibitors, often with PARP inhibitors or chemotherapy. Toxicity is the recurring limitation because normal proliferating tissue also uses these checkpoints.",
-    analogy: "A photocopier running at triple speed with the paper-jam sensor removed. It keeps working only because a technician (ATR/CHK1/WEE1) constantly clears jams. Remove the technician and it destroys itself.",
+    tldr: "Replication stress means difficulty copying DNA. Slowed forks, damage responses and dependence on a checkpoint are different observations.",
+    summary: "Replication stress concerns difficulty copying DNA, including slow or stalled forks. A stalled fork can be protected and restart; it is not automatically a broken chromosome. Checkpoint activation, recovery, incomplete copying, damage and death are separate stages and measurements. High checkpoint-gene RNA or rapid proliferation alone does not establish fork stress, dependence or drug sensitivity.\n\nRPA coats exposed single-stranded DNA and helps recruit ATR through ATRIP, initiating checkpoint signaling in biochemical and cellular experiments. Activated H-Ras in normal human-cell models produced hyper-replication before damage signaling and senescence. Bester studied HPV E6/E7 or cyclin-E-driven models in which nucleotide limitation disturbed replication and nucleoside supplementation in culture improved dynamics. These experiments do not recommend supplements or predict the behavior of every oncogene-bearing tumor.\n\nIn a fictional DNA-combing exercise, live cells receive a 30-minute IdU pulse followed by a 30-minute CldU pulse. At the stated example stretching calibration of 2 kilobases per micrometre, a 7.5-micrometre second track represents 15 kilobases copied in 30 minutes, or 0.5 kilobases per minute; a 15-micrometre track gives 1 kilobase per minute. Bester used those pulse times and calibration, but these example lengths are not that study's results and the calibration is not universal.\n\nDNA-fiber measurements require viable cells that incorporate labels; extraction destroys sampled cells. Ordinary fixed pathology cannot retrospectively supply live-label tracks. Document pulse timing, labeling, stretching, track selection, cell-cycle distribution, model and comparison group. A lower population S-phase fraction is distinct from the speed of one selected molecule. Track length alone establishes neither the cause, breaks, restart nor death; checkpoint dependence needs a targeted perturbation and a separate functional outcome, without a universal patient-positive cutoff.",
+    analogy: "A copying machine can pause and recover, or remain stalled. Measuring the pause, the response and the final result answers different questions.",
     nodes: [
       { id: "onc", label: "Oncogenes (MYC, cyclin E, RAS)", x: 15, y: 20, targetId: "kras" }, { id: "origin", label: "Excess origin firing, short G1", x: 45, y: 20 }, { id: "fork", label: "Stalled forks, ssDNA gaps", x: 75, y: 20 },
       { id: "atr", label: "ATR → CHK1", x: 75, y: 55, targetId: "atr" }, { id: "wee1", label: "WEE1 / PKMYT1 restrain CDK1", x: 45, y: 55, targetId: "wee1" }, { id: "g2m", label: "G2/M checkpoint", x: 15, y: 55 },
@@ -122,9 +122,28 @@ const pathways: PathwayInput[] = [
     pathways: ["ddr", "p53-cell-cycle", "myc"], targets: ["atr", "wee1", "tp53", "parp"], technologies: ["synthetic-lethality-approaches", "parp-inhibitor"], terms: ["synthetic-lethality", "genome-instability-mutation"],
     institutions: ["icr-london", "dana-farber", "nki", "francis-crick"],
     notes: ["Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies."],
-    links: [{ label: "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)", url: "https://doi.org/10.1016/j.molcel.2022.05.004" }],
+    links: [
+  {
+    "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
+    "url": "https://doi.org/10.1016/j.molcel.2022.05.004"
+  },
+  {
+    "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+  },
+  {
+    "label": "Oncogene-induced senescence is a DNA damage response triggered by DNA hyper-replication. (2006; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17136094/"
+  },
+  {
+    "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "chromosomal-instability", name: "Chromosomal instability & aneuploidy", wikipedia: W("Chromosome_instability"),
     tldr: "Most cancers have the wrong number of chromosomes and keep shuffling them at every division. This chaos fuels evolution and drug resistance, but it also stresses the cell and can trigger immune alarms, a double edge that researchers are trying to exploit.",
@@ -508,8 +527,8 @@ const pathways: PathwayInput[] = [
   }),
   p({
     id: "notch", name: "Notch signalling", wikipedia: W("Notch_signaling_pathway"),
-    tldr: "A cell-to-cell contact signal that decides cell fate. It drives T-cell leukaemia when mutated on, acts as a tumour suppressor in some squamous cancers when lost, and its ligand DLL3 became a drug target in small-cell lung cancer.",
-    summary: "Notch receptors are cleaved by γ-secretase on ligand binding (Delta-like, Jagged), releasing NICD to activate HES/HEY genes. Activating NOTCH1 mutations occur in >50% of T-ALL and in CLL (shorter survival); inactivating mutations in head and neck, oesophageal, and cutaneous squamous carcinomas mark a tumour-suppressor role. γ-secretase inhibitors failed as anticancer drugs (gut toxicity) but nirogacestat is approved in desmoid tumours (2023). DLL3, an inhibitory Notch ligand aberrantly on SCLC cell surfaces, is targeted by tarlatamab. Context dependence is the central lesson.",
+    tldr: "Notch receptors can relay signals between contacting cells. The effect depends on the receptor, ligand, alteration and tissue; receiving a signal does not by itself prove growth dependence.",
+    summary: "A ligand-bearing sender, receptor amount, received signal and growth dependence are separate observations. Locate malignant, vessel and other neighboring cells before assigning a Notch mechanism. Ligand on a vessel is not evidence that the tumor received the signal, and total receptor is different from a released nuclear intracellular domain.\n\nCommon contact-dependent Notch signaling begins when Delta-like or Jagged ligand on one cell engages a receptor on a neighbor. Ligand-regulated extracellular cleavage permits subsequent gamma-secretase-mediated membrane cleavage; the released Notch intracellular domain, NICD, can enter the nucleus and work with transcriptional partners. This route differs from an RTK phosphorylation relay and omits receptor maturation and sender mechanics.\n\nWeng found activating NOTCH1 changes in extracellular heterodimerization or PEST regions in more than half of the studied T-ALLs. Agrawal identified predicted inactivating alterations in head-and-neck squamous tumors, suggesting a tumor-suppressor role there. An uncharacterized allele inherits neither direction from the pathway name; tissue, cell identity and alteration effect matter.\n\nA fictional T-ALL culture with high nuclear NICD without a ligand-bearing neighbor, and lower NICD after gamma-secretase blockade, supports a ligand-independent activation hypothesis. A contact-blocking experiment that lowers NICD without changing growth instead supports reduced received signaling without demonstrating a growth requirement. Control general toxicity, contact conditions, independent pathway perturbations and compensation. Gamma-secretase also processes other proteins; responsive HES/HEY RNA and nuclear staining need validated assays and are not universal eligibility cutoffs.",
     analogy: "A doorbell that only works when a neighbour presses it. In some cancers the bell rings constantly (T-ALL); in others it has been ripped out so cells never hear 'stop and mature'.",
     nodes: [
       { id: "lig", label: "DLL/JAG ligand (neighbour)", x: 15, y: 40 }, { id: "notch", label: "NOTCH receptor", x: 40, y: 40 }, { id: "gs", label: "γ-secretase cleavage", x: 60, y: 40 }, { id: "nicd", label: "NICD → RBPJ", x: 80, y: 40 }, { id: "hes", label: "HES1/HEY, MYC", x: 80, y: 78 },
@@ -520,9 +539,36 @@ const pathways: PathwayInput[] = [
     pathways: ["cancer-stem-cells-plasticity", "myc"], targets: ["dll3"], drugs: ["tarlatamab", "nirogacestat"], cancers: ["sclc", "all-leukemia", "cll", "head-and-neck"],
     institutions: ["dana-farber", "penn-abramson"],
     notes: ["Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL)."],
-    links: [{ label: "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)", url: "https://doi.org/10.1146/annurev-pathol-052016-100127" }],
+    links: [
+  {
+    "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
+    "url": "https://doi.org/10.1146/annurev-pathol-052016-100127"
+  },
+  {
+    "label": "Notch-1 signalling requires ligand-induced proteolytic release of intracellular domain. (primary abstract; 1998)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9620803/"
+  },
+  {
+    "label": "Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. (primary abstract; 2004)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15472075/"
+  },
+  {
+    "label": "Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. (primary abstract; 2011)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21798897/"
+  },
+  {
+    "label": "A ligand-induced extracellular cleavage regulates gamma-secretase-like proteolytic activation of Notch1. (2000; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10882062/"
+  },
+  {
+    "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "jak-stat", keyPapers: ["paper-darnell-jak-stat-science-1994"], name: "JAK-STAT signalling", wikipedia: W("JAK-STAT_signaling_pathway"),
     tldr: "The relay that turns cytokine signals into gene changes. Overactive in blood cancers (JAK2 in myelofibrosis), it is also the wire that carries interferon's cancer-killing message, so tumours cut it to escape immunotherapy.",
@@ -575,8 +621,8 @@ const pathways: PathwayInput[] = [
   }),
   p({
     id: "myc", name: "MYC", wikipedia: W("Myc"),
-    tldr: "MYC is the most commonly amplified cancer gene, a master switch that turns on thousands of growth genes. It has no pocket for a conventional drug, so it remained 'undruggable' for 40 years; the first direct MYC drugs finally entered trials in the 2020s.",
-    summary: "MYC family transcription factors (MYC, MYCN, MYCL) dimerise with MAX to drive ribosome biogenesis, metabolism, and proliferation; deregulated in >50% of cancers via amplification, translocation (Burkitt), or upstream signalling (Wnt, RAS, Notch). MYC also suppresses immune recognition (CD47, PD-L1). Direct approaches: OMO-103 (Omomyc mini-protein, phase 1/2 in PDAC), MYC degraders, and MAX-stabilising molecules; indirect: CDK9 and BET inhibitors that reduce MYC transcription, PLK1 and AURKA inhibitors that destabilise MYC/MYCN protein (neuroblastoma), and synthetic-lethal dependencies (mTOR, splicing).",
+    tldr: "MYC is a protein that helps regulate gene activity and cell growth. Gene copy number, RNA, protein amount and dependence on MYC are different findings.",
+    summary: "MYC is a transcription regulator involved in programs of cell growth and metabolism. Its abundance and activity depend on cellular context and regulatory partners.\n\nCopy gain, RNA abundance, protein amount, chromatin binding, a transcriptional program and functional dependence are separate layers. MYC pairs with MAX for sequence-specific DNA binding. A high RNA level or subtype association alone does not establish that disrupting MYC will selectively impair the sampled cancer.\n\nMYC helps regulate programs involving growth, metabolism and proliferation through partners and regulatory context. Sabo's mouse and cultured-cell work separated selective gene regulation from broader RNA increases accompanying altered cell state; direct binding and indirect transcription effects are not equivalent. Normalize for cell composition, proliferation and RNA per cell before assigning a MYC mechanism to a gene-expression pattern.\n\nIn a fictional sample with high MYC RNA, unmeasured protein and growth suppression by a broadly acting compound, MYC dependence remains unresolved. Confirm the relevant cells and MYC disruption, use independent perturbations, appropriate restoration and normal-cell comparisons, and measure growth and death separately. General transcriptional damage or many changed messages does not attribute the compound's effect to MYC.\n\nHoriuchi compared MYC-related patterns in human TNBC and tested CDK-inhibitor vulnerabilities in selected models; it did not establish dependence in every patient. Soucek used reversible genetic MYC inhibition in a Ras-driven mouse lung-cancer model and observed tumor regression alongside effects on normal regenerating tissues. Delmore showed JQ1-associated MYC transcription reduction in myeloma models. Genetic MYC inhibition, BET inhibition and a particular medicine's exposure, safety and clinical benefit remain different evidence settings.",
     analogy: "A conductor who can make every section of the orchestra play louder at once. You cannot take away the baton, so drugs try to silence the score (transcription), tire the conductor (degradation), or exploit the fact that a full-volume orchestra cannot afford a single missing player.",
     nodes: [
       { id: "up", label: "Wnt, RAS, Notch, amplification", x: 12, y: 40 }, { id: "myc", label: "MYC/MAX", x: 40, y: 40 }, { id: "ribo", label: "Ribosome biogenesis, metabolism", x: 70, y: 20 }, { id: "prol", label: "Proliferation", x: 90, y: 40 },
@@ -587,9 +633,44 @@ const pathways: PathwayInput[] = [
     pathways: ["wnt", "ras-mapk", "notch", "cancer-metabolism", "mrna-translation-eif4f", "rna-splicing"], targets: ["cd47", "kras"], cancers: ["neuroblastoma", "dlbcl", "pancreatic"], terms: ["mycn-amplification", "sustaining-proliferative-signaling"],
     institutions: ["vall-dhebron", "ucsf", "dana-farber", "cold-spring-harbor"],
     notes: ["Leading programmes: Soucek (VHIO, Omomyc/Peptomyc); Felsher (Stanford, MYC addiction); Eilers (Würzburg); Dang (Ludwig); Bradner/Vakoc (CSHL, BET inhibitors)."],
-    links: [{ label: "Dhanasekaran et al., The MYC oncogene: the grand orchestrator of cancer growth and immune evasion (Nature Reviews Clinical Oncology 2022)", url: "https://doi.org/10.1038/s41571-021-00549-2" }, { label: "OMO-103 first-in-human (Nature Medicine 2024)", url: "https://doi.org/10.1038/s41591-024-02875-1" }],
+    links: [
+  {
+    "label": "Dhanasekaran et al., The MYC oncogene: the grand orchestrator of cancer growth and immune evasion (Nature Reviews Clinical Oncology 2022)",
+    "url": "https://doi.org/10.1038/s41571-021-00549-2"
+  },
+  {
+    "label": "Garralda et al., MYC targeting by OMO-103 in solid tumors: a phase 1 trial (Nature Medicine 2024)",
+    "url": "https://doi.org/10.1038/s41591-024-02805-1"
+  },
+  {
+    "label": "Max: a helix-loop-helix zipper protein that forms a sequence-specific DNA-binding complex with Myc. (primary abstract; 1991)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2006410/"
+  },
+  {
+    "label": "Selective transcriptional regulation by Myc in cellular growth control and lymphomagenesis. (2014; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25043028/"
+  },
+  {
+    "label": "MYC pathway activation in triple-negative breast cancer is synthetic lethal with CDK inhibition. (2012; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22430491/"
+  },
+  {
+    "label": "Modelling Myc inhibition as a cancer therapy. (2008; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18716624/"
+  },
+  {
+    "label": "BET bromodomain inhibition as a therapeutic strategy to target c-Myc. (2011; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21889194/"
+  },
+  {
+    "label": "UniProt P01106: reviewed human protein function",
+    "url": "https://www.uniprot.org/uniprotkb/P01106/entry"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "keap1-nrf2", name: "KEAP1-NRF2 antioxidant pathway", wikipedia: W("NFE2L2"),
     tldr: "KEAP1-NRF2 is the cell's antioxidant defence switch. Lung cancers often break the off-switch (KEAP1), leaving NRF2 permanently on, which detoxifies chemotherapy and radiation and makes these tumours resistant to almost everything.",

@@ -3,7 +3,7 @@
   "state": "Open draft product proposal; current local checks and historical browser/build scopes are recorded separately; owner approval and hosted preview pending; not merged.",
   "pr": 376,
   "url": "https://github.com/judegomila/OnCo/pull/376",
-  "head": "d994b257f1c4ad6ddc2681ab1dee20ec01bd0ffe",
+  "head": "873163fc1bf27a57a2dbb232025fdbca2d8338c4",
   "records": [
     {
       "id": "trastuzumab-emtansine",
@@ -749,14 +749,30 @@
       "kind": "pathway",
       "name": "RAS / RAF / MEK / ERK (MAPK)",
       "aka": [],
-      "tldr": "The RAS-MAPK pathway is the cell's 'divide' relay. A signal at the surface flips RAS on, which passes to RAF, MEK, and ERK, which tell the nucleus to make the cell divide. KRAS and BRAF mutations jam it in the on position.",
-      "summary": "Growth-factor receptors recruit GRB2/SOS to load GTP onto RAS (KRAS, NRAS, HRAS). RAS-GTP recruits RAF (BRAF, CRAF) dimers, which phosphorylate MEK1/2, which phosphorylate ERK1/2. ERK drives transcription of cyclin D1, MYC, and negative feedback (DUSP, SPRY). Alterations: KRAS (pancreatic 90%, CRC 45%, lung 30%), BRAF V600E (melanoma 50%), NF1 loss, receptor fusions (ALK, RET, NTRK). Drugs: KRAS G12C inhibitors, pan-RAS(ON) inhibitors, BRAF+MEK doublets, upstream RTK inhibitors. Feedback reactivation (loss of ERK-mediated inhibition of RTKs) is why single agents fail and vertical combinations (BRAF+MEK, KRAS+EGFR in CRC) work.",
-      "asOf": "2026-11-08",
+      "tldr": "A signalling network in which RAS proteins act as molecular switches and RAF, MEK and ERK relay signals. A gene alteration or downstream signal alone does not establish dependence or treatment benefit.",
+      "summary": "A measured downstream signal does not uniquely identify its upstream driver, survival dependence or clinical benefit. Particular alleles and drug mechanisms matter: Poulikakos found RAS-dependent RAF-dimer transactivation and increased ERK signaling in wild-type-BRAF cell settings exposed to certain ATP-competitive RAF inhibitors. This is an experimental context-dependent effect, not a direction assigned to every RAF drug or RAS alteration.\n\nThis MAPK branch relays signals from receptor and other inputs through the GDP/GTP RAS switch to RAF kinases, MEK and ERK. RAS is a GTP-binding switch; RAF, MEK and ERK are protein kinases. Moodie examined active-RAS complexes, and Kyriakis tested Raf-1 activation of MAP kinase kinase. These defined experiments support steps in the relay; other MAPK branches exist and the simplified map omits regulators.\n\nA fictional compound that lowers phospho-ERK within an hour without changing growth has demonstrated a sampled downstream biochemical effect, subject to assay controls. It has not alone proved direct target binding, attributed growth dependence or patient benefit. Specify the allele, protein site, total-protein normalization, preservation, exposure, timing and cell population, then confirm engagement and functional effects with independent perturbations and appropriate controls.\n\nShared inputs, branches and feedback can alter the magnitude or even direction of a perturbation response over time. High pathway-associated RNA is not a universal activity meter, and a changed ERK site cannot identify a sole upstream receptor. Davies' BRAF work established transforming activity for specific mutations in defined models, not a common effect for every uncertain BRAF variant. Drug selection still needs its own allele-, disease- and setting-specific evidence.",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/MAPK/ERK_pathway",
       "links": [
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/MAPK/ERK_pathway"
+        },
+        {
+          "label": "RAF inhibitors transactivate RAF dimers and ERK signalling in cells with wild-type BRAF. (2010; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20179705/"
+        },
+        {
+          "label": "Complexes of Ras.GTP with Raf-1 and mitogen-activated protein kinase kinase. (1993; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8503013/"
+        },
+        {
+          "label": "Raf-1 activates MAP kinase-kinase. (1992; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/"
+        },
+        {
+          "label": "Mutations of the BRAF gene in human cancer. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12068308/"
         }
       ],
       "tags": [],

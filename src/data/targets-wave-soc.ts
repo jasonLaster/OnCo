@@ -174,12 +174,40 @@ export const targetsWaveSoc: TargetInput[] = [
     drugs: ["epacadostat", "io102-io103"], related: ["pdl1"] }),
 
   t({ id: "brd4", name: "BRD4", symbol: "BRD4", aka: ["BET", "BET bromodomain proteins (BRD2, BRD3, BRD4, BRDT)", "bromodomain containing 4", "MCAP", "HUNK1"], hgnc: "HGNC:13575", ensembl: "ENSG00000141867", uniprot: "O60885", entrez: "23476", targetClass: "transcription",
-    tldr: "BRD4 is a reader protein that docks on acetylated DNA packaging and pulls in the machinery that switches growth genes such as MYC on. BET inhibitors such as pelabresib and ZEN-3694 block that docking; in NUT carcinoma the cancer's own driver is a BRD4 fusion.",
-    summary: "BRD4 (chromosome 19p13.12) is a chromatin reader of the BET (bromodomain and extra-terminal) family that binds acetylated histones, stays on chromatin through the cell cycle to preserve epigenetic memory and higher-order chromatin structure, and recruits the P-TEFb elongation complex to promoters and to distal enhancers to drive transcription of signal-inducible genes (UniProt O60885). In OnCo, BET inhibitors include pelabresib (phase 3 in primary myelofibrosis) and ZEN-3694, which binds the bromodomains of BRD2, BRD3 and BRD4 and is being tested in NUT carcinoma, prostate and triple-negative breast cancer; fedratinib carries BRD4 activity alongside JAK2 and FLT3; and NUT carcinoma is driven by a BRD4-NUT fusion, itself a BET protein, that the inhibitors displace from chromatin so the cells differentiate.",
+    tldr: "BRD4 reads acetyl marks on DNA-packaging proteins and helps regulate transcription. Blocking a recognition pocket and removing the whole protein test different functions.",
+    summary: "BRD4 is a chromatin reader that recognizes acetylated histones and helps regulate transcription. Its recognition pockets and other protein interactions can contribute different functions.\n\nEngaging an acetyl-recognition pocket and depleting a whole protein are different interventions. In selected TNBC models with acquired BET-inhibitor resistance, cells remained dependent on BRD4 through bromodomain-independent regulation. Verify pocket engagement and depletion independently before comparing growth outcomes. Neither operation alone establishes clinical benefit or a vulnerability caused by an uncharacterized BET-family variant.\n\nBET proteins read acetylated lysine marks; they do not write the acetyl mark. The family includes BRD2, BRD3, BRD4 and BRDT, with two bromodomains and an extra-terminal interaction region. BRD4 can recruit transcription-elongation machinery, but other bromodomain proteins are not all BET proteins and family members are not functionally interchangeable. The lesson figure retains the histone mark during pocket occupation and depletion; its representative pocket does not claim JQ1 is BD1-specific.\n\nIn a fictional culture, an engaged BET pocket probe leaves growth unchanged while independently controlled BRD4 depletion impairs growth. The findings can coexist if the remaining protein supplies functions the probe does not block, as the resistant-model work illustrates. Binding assays, chromatin occupancy, early RNA changes, later growth and death, general transcription effects and appropriate restoration controls answer different questions. Lower MYC RNA alone does not attribute a later effect to MYC.\n\nFrench identified a BRD4-NUT fusion in the defined carcinoma; a fusion is a different biological alteration from an ordinary sequence variant. Stathis reported four people with confirmed BRD4-NUT carcinomas treated with OTX015/MK-8628 in compassionate use: two had rapid regression, with no randomized comparison or established survival benefit. The report described thrombocytopenia, including reversible grade 3 events and a grade 4 event in one patient. This small selected series does not establish efficacy across BET-altered tumors.",
     biology: "The ZEN-3694 record describes BET inhibitors as blocking the bromodomain proteins that switch on growth genes such as MYC, with objective but short-lived responses in early NUT carcinoma trials of molibresib and birabresib; the epigenetic-reprogramming pathway record lists BET proteins among the chromatin readers hijacked in cancer.",
     whereFound: ["NUT carcinoma (BRD4-NUT fusion)", "Primary myelofibrosis (pelabresib)", "Castration-resistant prostate cancer and triple-negative breast cancer (ZEN-3694 trials)"],
     cancers: ["nut-carcinoma", "primary-myelofibrosis", "prostate", "tnbc"], pathways: ["transcription-addiction", "epigenetic-reprogramming", "myc"], technologies: ["epigenetic-drugs"],
-    drugs: ["pelabresib", "zen-3694", "fedratinib"], related: ["myc", "jak2"] }),
+    drugs: ["pelabresib", "zen-3694", "fedratinib"], related: ["myc", "jak2"] ,
+"links": [
+  {
+    "label": "Response and resistance to BET bromodomain inhibitors in triple-negative breast cancer. (primary abstract; 2016)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26735014/"
+  },
+  {
+    "label": "Selective inhibition of BET bromodomains. (primary abstract; 2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20871596/"
+  },
+  {
+    "label": "Recruitment of P-TEFb for stimulation of transcriptional elongation by the bromodomain protein Brd4. (2005; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16109377/"
+  },
+  {
+    "label": "BET bromodomain inhibition as a therapeutic strategy to target c-Myc. (2011; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21889194/"
+  },
+  {
+    "label": "BRD4-NUT fusion oncogene: a novel mechanism in aggressive carcinoma. (2003; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12543779/"
+  },
+  {
+    "label": "Clinical Response of Carcinomas Harboring the BRD4-NUT Oncoprotein to the Targeted Bromodomain Inhibitor OTX015/MK-8628. (2016; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26976114/"
+  }
+],
+"asOf": "2026-11-10"
+}),
 
   t({ id: "irf4", name: "IRF4", symbol: "IRF4", aka: ["MUM1", "LSIRF", "interferon regulatory factor 4"], hgnc: "HGNC:6119", ensembl: "ENSG00000137265", uniprot: "Q15306", entrez: "3662", targetClass: "transcription",
     tldr: "IRF4 is a master transcription factor of plasma cells and a protein myeloma cells cannot do without. Lenalidomide and its successors lower IRF4 by destroying the two factors, Ikaros and Aiolos, that keep it switched on.",

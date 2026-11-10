@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Repair, signalling and what the assays establish
+
+- **MYC citation:** the inherited link labelled OMO-103 resolved to a glioma CAR-T trial. The DOI is corrected to the independently resolved [Garralda phase 1 OMO-103 study](https://doi.org/10.1038/s41591-024-02805-1), already represented by the existing paper owner. No clinical benefit is inferred from MYC abundance.
+- **Repair:** the short definitions no longer equate a variant, a genomic scar or a damage signal with current repair failure or treatment eligibility. Classical end joining is not described as universally inaccurate, and paired repair disruptions are not described as universally lethal. The [original LST study](https://pubmed.ncbi.nlm.nih.gov/22933060/), [Telli study](https://pubmed.ncbi.nlm.nih.gov/26957554/) and [selected resistance cohort](https://pubmed.ncbi.nlm.nih.gov/32245699/) retain their own methods, populations and endpoints.
+- **Signalling:** receptor amount, phosphorylation, drug engagement, functional dependence and clinical benefit have distinct interpretations. The [RAF transactivation experiment](https://pubmed.ncbi.nlm.nih.gov/20179705/) and [WNT974 phase 1 study](https://pubmed.ncbi.nlm.nih.gov/33941878/) are scoped to their actual interventions and observations. The existing KEAP1 identity receives a handwritten override through the established generated-target precedence rule, preserving its catalogue fields and lung supplement; generated gene files are unchanged.
+- **Source and reader boundaries:** the crosslink-repair review is labelled as a review. DNA-fiber calibration and numerical practice examples are explicitly protocol-specific or fictional. Unscoped legacy prevalence, treatment, price and turnaround assertions are replaced by the completed source-scoped explanations; a clinical landscape update is a separate queued task. Stale short translations use the current English fallback and receive no new language-review claim.
+
 ### RNA design, delivery and evidence boundaries
 
 - **AAV:** the source audit distinguishes a named viral genome, packaged-genome measurements and usable coding capacity. A general self-complementary capacity figure is replaced with the original inverted-repeat experiment and its coding-capacity trade-off. The blanket claim that none of the cited studies concerns cancer is corrected: the T-cell editing study includes a mouse leukaemia model, while human cancer benefit is not established here. Sources include [McCarty 2001](https://pubmed.ncbi.nlm.nih.gov/11509958/), [McCarty 2008](https://pubmed.ncbi.nlm.nih.gov/18682697/) and [Eyquem](https://pubmed.ncbi.nlm.nih.gov/28225754/).

@@ -200,8 +200,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "rtk-activation", name: "Receptor tyrosine kinase activation", wikipedia: W("Receptor_tyrosine_kinase"),
-    tldr: "Growth-factor receptors are antennas on the cell surface that pair up when a signal lands and switch on the growth relays inside. Cancers mutate, multiply, or fuse these antennas so they broadcast 'grow' with no signal at all. Most targeted drugs, antibodies and ADCs start here.",
-    summary: "Ligand binding (EGF, HGF, FGF, NRG, SCF, PDGF, VEGF) dimerises RTKs, trans-autophosphorylating tyrosines that recruit SH2/PTB adaptors: GRB2-SOS to RAS-MAPK, p85 to PI3K-AKT, PLCγ, SRC, STAT3/5, and CBL for ubiquitin-mediated downregulation. Oncogenic activation: kinase-domain mutations (EGFR L858R/exon 19, exon 20 insertions; FLT3-ITD; KIT exon 11; HER2), extracellular-domain truncation (EGFRvIII), amplification (HER2, MET, FGFR1/2), fusions (ALK, ROS1, RET, NTRK, FGFR2/3, with dimerisation domains that pair the kinase constitutively), autocrine loops, and PTPN11 or CBL loss. Drug classes: reversible and covalent TKIs (with resistance via gatekeeper/solvent-front mutations such as EGFR C797S, ALK G1202R), antibodies that block ligand or receptor and recruit Fc effectors (trastuzumab, cetuximab), bispecifics (amivantamab EGFR×MET, zanidatamab HER2×HER2), and ADCs that use the receptor as a delivery address regardless of signalling (T-DXd on HER2-low). Bypass via a parallel RTK (MET amplification under EGFR blockade, HER3 upregulation) is the classic escape.",
+    tldr: "Receptor tyrosine kinases can relay signals from outside a cell through protein phosphorylation. Receptor amount, signalling, drug binding and growth dependence are different measurements.",
+    summary: "EGFR, FGFR and FLT3 are examples of receptor tyrosine kinases. Their normal roles and activation arrangements differ across receptor families.\n\nReceptor amount, phosphorylation, direct drug engagement, growth dependence and clinical benefit are separate observations. Lower receptor phosphorylation supports a biochemical effect under the assay conditions but can also reflect indirect regulation; it does not by itself prove direct binding. A controlled functional effect with independent specificity tests is needed before assigning receptor dependence.\n\nMany RTKs have extracellular ligand-binding regions, membrane-spanning regions and intracellular tyrosine-kinase machinery. Families activate differently: Zhang demonstrated an asymmetric EGFR kinase-domain interaction, while Stauber examined an FGF1-FGFR2 extracellular complex with a proposed heparin-related assembly arrangement. Ligand, helper molecules, receptor member and context matter. A downstream phosphosite can have multiple upstream causes and is not a universal receptor meter.\n\nSlamon 1987 studied 189 primary breast cancers and reported HER2 amplification in 30%, associated with relapse and survival; that historical study is not a present-day universal prevalence or a causal drug-response experiment. In the 2001 randomized trial of 469 women with HER2-overexpressing metastatic breast cancer, adding trastuzumab to chemotherapy increased median survival from 20.3 to 25.1 months, with cardiac toxicity as a material risk. A trial median summarizes a group and does not predict an individual survival time.\n\nIn a fictional comparison, two cultures contain a receptor, but only the amplified, high-surface-protein culture slows growth after a blocking antibody, while receptor phosphorylation falls in both. This separates amount, sampled signaling and growth response; the pattern suggests dependence but attribution still needs controls and independent perturbation. RNA is not surface accessibility, a family-name inhibitor need not engage every member at the tested exposure, and For an antibody-drug conjugate, receptor access and payload delivery are separate questions from whether growth requires that receptor's signaling. Fixed-tissue staining and viable-model perturbation have different input costs and validation scopes.",
     analogy: "Two halves of a walkie-talkie that only transmit when clipped together by a signal from outside. Cancer glues them together (fusions, mutations) or installs hundreds of extra sets (amplification), so the room is full of shouted 'grow' orders. TKIs pull the battery, antibodies tape over the microphone, ADCs use the aerial as a mailing address for poison.",
     nodes: [
       { id: "lig", label: "Ligand (EGF, HGF, NRG)", x: 15, y: 10 }, { id: "rtk", label: "RTK dimer (EGFR, HER2, MET)", x: 45, y: 25, targetId: "egfr" }, { id: "alt", label: "Mutation, amp, fusion", x: 80, y: 10, targetId: "alk" },
@@ -214,8 +214,35 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["TKIs by driver: osimertinib (EGFR), lorlatinib/alectinib (ALK), selpercatinib (RET), larotrectinib/entrectinib (NTRK), capmatinib/tepotinib (MET), imatinib (KIT/PDGFRA/BCR-ABL), zongertinib (HER2)", "Antibodies: trastuzumab/pertuzumab (HER2), cetuximab/panitumumab (EGFR); bispecifics amivantamab (EGFR×MET), zanidatamab, zenocutuzumab (HER2×HER3)", "ADCs use the receptor as an address: T-DXd, T-DM1, patritumab deruxtecan (HER3), telisotuzumab vedotin (MET)", "Combining with MET or downstream inhibitors closes bypass routes"],
     targets: ["egfr", "her2", "her3", "met", "alk", "ret", "ros1", "ntrk", "fgfr2", "kit", "flt3", "pdgfra", "kras", "pik3ca"], drugs: ["osimertinib", "lorlatinib", "alectinib", "selpercatinib", "larotrectinib", "entrectinib", "capmatinib-tepotinib", "imatinib", "zongertinib", "trastuzumab", "pertuzumab", "cetuximab", "panitumumab", "amivantamab", "zanidatamab", "zenocutuzumab", "trastuzumab-deruxtecan", "patritumab-deruxtecan", "telisotuzumab-vedotin"], technologies: ["kinase-inhibitors", "monoclonal-antibody", "bispecific-antibody", "adc", "companion-diagnostic"], terms: ["oncogene-addiction", "gene-fusion", "egfr-exon19-l858r", "egfr-exon20-insertion", "c797s", "met-amplification", "egfrviii", "her2-low", "adcc"], pathways: ["ras-mapk", "pi3k-akt-mtor", "jak-stat", "resistance-routes-map"], cancers: ["nsclc", "breast-her2-positive", "gastric", "gist", "thyroid", "cholangiocarcinoma"],
-    links: [{ label: "Lemmon & Schlessinger, Cell signaling by receptor tyrosine kinases (Cell 2010)", url: "https://doi.org/10.1016/j.cell.2010.06.011" }],
-  }),
+    links: [
+  {
+    "label": "Lemmon & Schlessinger, Cell signaling by receptor tyrosine kinases (Cell 2010)",
+    "url": "https://doi.org/10.1016/j.cell.2010.06.011"
+  },
+  {
+    "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor. (2006; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+  },
+  {
+    "label": "Use of chemotherapy plus a monoclonal antibody against HER2 for metastatic breast cancer that overexpresses HER2. (2001; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11248153/"
+  },
+  {
+    "label": "Structural interactions of fibroblast growth factor receptor with its ligands. (2000; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10618369/"
+  },
+  {
+    "label": "Human breast cancer: correlation of relapse and survival with amplification of the HER-2/neu oncogene. (1987; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3798106/"
+  },
+  {
+    "label": "UniProt P36888: reviewed human FLT3 protein function",
+    "url": "https://www.uniprot.org/uniprotkb/P36888/entry"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "transcription-addiction", name: "Transcriptional machinery & addiction", wikipedia: W("Super-enhancer"),
     tldr: "Cancer cells run a few genes (MYC, their lineage factors, their fusion oncogenes) at extreme volume from giant control regions called super-enhancers. The amplifiers, BRD4, CDK7, CDK9 and Mediator, are the same in every cell, but cancers are unusually dependent on them, and that dependence is druggable.",
@@ -304,8 +331,8 @@ export const mechanicsPathways: PathwayInput[] = [
   // ------------------------------------------------------------------ 4. Evading death and repair
   p({
     id: "homologous-recombination-repair", name: "Double-strand break repair: HR versus end joining", wikipedia: W("Homologous_recombination"),
-    tldr: "A break through both strands of DNA is the most dangerous lesion a cell faces. Two crews compete to fix it: homologous recombination copies the answer from the sister chromosome (accurate, needs BRCA), while end joining simply glues the ends (fast, sloppy). Which crew wins decides whether PARP inhibitors and radiation kill the cell.",
-    summary: "The MRN complex (MRE11-RAD50-NBS1) senses the break and activates ATM, which phosphorylates H2AX, CHK2 and p53. Pathway choice is set by resection: 53BP1-RIF1-Shieldin protect ends and favour classical NHEJ (Ku70/80, DNA-PKcs, Artemis, XRCC4-LIG4), dominant in G1 and used by radiation-damaged cells; BRCA1-CtIP promote resection in S/G2, RPA coats the single strand, and PALB2-BRCA2 load RAD51 to form a filament that invades the sister chromatid for accurate copying. Polymerase-theta-mediated end joining (TMEJ) is the backup that leaves microhomology-flanked deletions, the scar of HR deficiency. BRCA1/2, PALB2, RAD51C/D and ATM loss define HRD; such tumours cannot repair replication-associated breaks caused by PARP trapping, platinum crosslinks or topoisomerase poisons, and depend on POLQ and ATR. Reversion mutations, 53BP1/Shieldin loss (restoring resection in BRCA1-null cells), and fork protection restore HR under PARP-inhibitor pressure. DNA-PK inhibitors radiosensitise; ATM loss sensitises to ATR inhibition.",
+    tldr: "Cells can repair breaks through both DNA strands using a matching template or several end-joining routes. The available template, cell state and broken ends affect which route can operate.",
+    summary: "Double-strand breaks can be repaired through matching-template homologous recombination or several end-joining routes. Homologous repair often uses the sister chromatid after DNA copying. The substrate, available template and cell-cycle state affect which route can operate.\n\nClassical nonhomologous end joining reconnects ends without requiring a long matching template and can preserve compatible ends. Microhomology-associated joining uses short matching sequences after end processing. Theta-mediated end joining names a POLQ-mediated mechanism; finding short matches alone does not identify that enzyme. These routes overlap in outcomes without becoming interchangeable definitions.\n\nKu binds broken ends, and ligase IV with supporting factors can help align and seal them; difficult ends can require processing. Resection exposes single-stranded regions for alternative joining, where short matches can align and intervening sequence can be lost. Purified-factor experiments, defined chromosome-break reporters and controlled cellular studies test particular substrates and factor dependencies, not a universal menu for every break.\n\nA fictional top-strand sequence CA-GAC-TT|AA-GAC-GT has 14 base pairs before joining. A selected short-match product CA-GAC-GT retains seven, losing the four-base TTAA interval and one three-base GAC repeat. In the pictured selected alignment, trimming the unmatched TT flaps leaves seven paired positions and two backbone nicks to seal, without a gap to fill. Other substrates can require synthesis; this arithmetic and schematic geometry are not measured repair frequencies.\n\nSequence a repaired junction and measure a defined repair reporter, then perturb the proposed factor with specificity controls and, where feasible, rescue. Repair fraction, junction distribution and cell survival are distinct outputs. A deletion with microhomology is compatible with a joining route, but does not demonstrate POLQ dependence, selective killing or benefit from a POLQ inhibitor in a patient. Viable-cell and purified-component studies have model-specific input and material costs.",
     analogy: "A torn page. The careful archivist (HR) fetches the twin copy from the shelf and transcribes it letter for letter; the hurried clerk (NHEJ) tapes the two halves together, losing a few words. Tumours missing the archivist survive on the clerk, so anything that adds more torn pages (PARP inhibitors, platinum, radiation) buries them.",
     nodes: [
       { id: "dsb", label: "Double-strand break", x: 45, y: 8 }, { id: "mrn", label: "MRN → ATM → CHK2", x: 45, y: 28, targetId: "atr" }, { id: "53bp1", label: "53BP1-Shieldin (protect)", x: 78, y: 28 },
@@ -318,8 +345,51 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib) in BRCA/HRD ovarian, breast, prostate, pancreatic cancer", "Platinum chemotherapy and radiation add breaks HR-deficient cells cannot fix", "POLQ inhibitors (novobiocin analogues), ATR inhibitors after ATM loss, DNA-PK inhibitors with radiotherapy (trials)", "HRD testing (genomic scars, BRCA sequencing) and RAD51 foci assays select patients; reversion mutations detected in ctDNA flag resistance"],
     targets: ["brca", "parp", "atr", "wee1"], drugs: ["olaparib", "niraparib", "rucaparib", "talazoparib", "carboplatin", "cisplatin"], technologies: ["parp-inhibitor", "hrd-testing", "platinum", "imrt-igrt", "sbrt", "germline-testing", "synthetic-lethality-approaches"], terms: ["hrd", "synthetic-lethality", "mutational-signature", "germline-vs-somatic", "hereditary-cancer-syndromes"], pathways: ["ddr", "replication-stress", "base-excision-repair-parp", "synthetic-lethality-map", "cgas-sting"], cancers: ["ovarian", "tnbc", "prostate", "pancreatic"],
-    links: [{ label: "Chang, Pannunzio, Adachi & Lieber, Non-homologous DNA end joining and alternative pathways to double-strand break repair (Nat Rev Mol Cell Biol 2017)", url: "https://doi.org/10.1038/nrm.2017.48" }, { label: "Lord & Ashworth, PARP inhibitors: synthetic lethality in the clinic (Science 2017)", url: "https://doi.org/10.1126/science.aam7344" }],
-  }),
+    links: [
+  {
+    "label": "Chang, Pannunzio, Adachi & Lieber, Non-homologous DNA end joining and alternative pathways to double-strand break repair (Nat Rev Mol Cell Biol 2017)",
+    "url": "https://doi.org/10.1038/nrm.2017.48"
+  },
+  {
+    "label": "Lord & Ashworth, PARP inhibitors: synthetic lethality in the clinic (Science 2017)",
+    "url": "https://doi.org/10.1126/science.aam7344"
+  },
+  {
+    "label": "Structural role for DNA Ligase IV in promoting the fidelity of non-homologous end joining. (2024; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38341432/"
+  },
+  {
+    "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+  },
+  {
+    "label": "Alternative-NHEJ is a mechanistically distinct pathway of mammalian chromosome break repair. (2008; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18584027/"
+  },
+  {
+    "label": "DNA Ligase IV Guides End-Processing Choice during Nonhomologous End Joining. (2017; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28930678/"
+  },
+  {
+    "label": "Essential Roles for Polymerase θ-Mediated End Joining in the Repair of Chromosome Breaks. (2016; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27453047/"
+  },
+  {
+    "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+  },
+  {
+    "label": "Brca1 controls homology-directed DNA repair. (1999; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10549283/"
+  },
+  {
+    "label": "Purified human BRCA2 stimulates RAD51-mediated recombination. (2010; primary evidence)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20729832/"
+  }
+],
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "mismatch-repair-msi", name: "Mismatch repair & microsatellite instability", wikipedia: W("DNA_mismatch_repair"),
     tldr: "After DNA is copied, a proofreading crew fixes the letters the polymerase got wrong. Lose it and the genome fills with thousands of small errors, especially in repetitive stretches (microsatellites). Those errors make abnormal proteins that the immune system can see, which is why immunotherapy works so well in these cancers.",

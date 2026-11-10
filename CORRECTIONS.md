@@ -4,6 +4,15 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Binder evidence and manufacturing quality
+
+- **Cell-product identity and release:** an older definition and summary presented HLA identity and a generic rapid-sterility timeline as a release checklist. They now distinguish engineered-cell identity, chain of identity, viability, potency and product-specific testing. FDA's scoped 2020 short-shelf-life example does not become a universal early-release rule. Corrected short translations already present in the shared draft are preserved with the aligned English definition.
+- **Peptide benchmark and vaccine regimen:** the 29-peptide Truex vendor comparison used deliberately difficult sequences. The Rojas study gave vaccine and atezolizumab to sixteen recipients, followed by chemotherapy in fifteen; the observed response is not attributed to vaccine alone.
+- **Binder comparison scope:** Kinna's thermal and particle measurements are separated from predicted aggregation scores. Its xenograft used a human AML cell line in mice, and its single-donor limitation concerns preceding cell work. Single-domain shark binding fragments are distinguished from the full receptor.
+- **Guidance identity:** FDA's final November 2026 potency guidance has a different landing URL from the retained December 2023 draft page. The final PDF and 3 November Federal Register notice support the current text; a content-current date is not treated as an issuance day. US manufacturer release and conditional official FDA lot release retain their separate scopes.
+
+Exact fields, source identities and read-depth limits are retained in the [binder and manufacturing checkpoint](research/education-coverage-2026-11-08/binders-cmc-2026-11-10/README.md).
+
 ### Innate immunity, cell identity and source scope
 
 - **Macrophage states:** the retained TAM summary treated an M2-like label as the prevailing identity. It now explains that M1/M2 labels arise from laboratory stimulation and do not certify a tumour cell's state or suppressive function. The location name, measured programme and functional test remain separate. Sources and exact fields are in the [innate source reconciliation](research/education-coverage-2026-11-08/innate-immunity-2026-11-10/primary-sources.json).

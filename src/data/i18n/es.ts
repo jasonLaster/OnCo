@@ -3625,7 +3625,7 @@ export const tldr_es: Record<string, string> = {
   cdmo: "Una empresa que fabrica medicamentos para otras empresas. La mayoría de los ADC, los biológicos y las terapias celulares los fabrican un puñado de ellas.",
   "cell-membrane": "La piel exterior grasa de una célula. La mayoría de los fármacos y anticuerpos actúan en esta frontera, ya sea uniéndose a las proteínas que sobresalen de ella o atravesándola.",
   "cell-of-origin": "Si un linfoma de células B grandes se parece a una célula B del centro germinal o a una célula B activada; el tipo activado tiene peor pronóstico y depende de vías distintas.",
-  "cell-therapy-release-testing": "Los controles de calidad que debe superar un lote de CAR-T antes de administrarse: estéril, identidad correcta, suficientes células vivas CAR-positivas y ausencia de virus capaz de replicarse.",
+
   cellogen: "Una start-up de Delhi que desarrolla células CAR-T biespecíficas contra CD19 y CD20 y terapias génicas para la talasemia, con el objetivo de reducir los costes del tratamiento hasta un 90%; aún no ha iniciado su primer ensayo.",
   "cellxgene-hca": "CELLxGENE y el Human Cell Atlas albergan datos de célula única de tejidos sanos y enfermos, que se pueden explorar y descargar.",
   "centre-henri-becquerel": "El centro oncológico de Unicancer para la región de Ruan, en Normandía, un Comprehensive Cancer Centre acreditado por la OECI con un sólido programa de hematología y linfoma.",
@@ -7266,4 +7266,5 @@ export const tldr_es: Record<string, string> = {
   zipalertinib: "Zipalertinib es un fármaco experimental de molécula pequeña de Taiho Oncology en ensayos de fase 3 para cáncer de pulmón de células no pequeñas, dirigido a EGFR.",
   "zl-1310": "ZL-1310 es un conjugado anticuerpo-fármaco experimental de Zai Lab (Shanghai) en ensayos de fase 3 para cáncer de pulmón de células no pequeñas, dirigido a DLL3.",
   zovegalisib: "Zovegalisib es un fármaco experimental de molécula pequeña de Relay Therapeutics en ensayos de fase 3 para cáncer de mama HR-positivo / HER2-negativo, dirigido a PIK3CA / PI3K-alfa.",
+  "cell-therapy-release-testing": "Un lote de un producto celular se evalúa frente a requisitos de calidad especificados antes de decidir sobre su uso. La identidad, las mediciones de células vivas y la actividad biológica responden a preguntas diferentes sobre ese lote.",
 };

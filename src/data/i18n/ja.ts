@@ -3614,7 +3614,7 @@ export const tldr_ja: Record<string, string> = {
   cdmo: "他社のために医薬品を製造する企業である。ADC・生物学的製剤・細胞治療の大半は、ごく少数のこうした企業によって作られている。",
   "cell-membrane": "細胞の油性の外皮である。大半の薬や抗体はこの境界で働き、そこから突き出たタンパク質に結合するか、膜をすり抜けて中に入る。",
   "cell-of-origin": "大細胞型B細胞リンパ腫が胚中心B細胞に似ているか活性化B細胞に似ているかの区別である。活性化型のほうが予後が悪く、異なる経路に依存している。",
-  "cell-therapy-release-testing": "CAR-Tのロットを投与する前に合格しなければならない品質検査である。無菌であること、正しい同一性、十分な数の生きたCAR陽性細胞、そして増殖可能なウイルスがないことを確認する。",
+
   cellogen: "デリーのスタートアップで、CD19とCD20を標的とする二重特異性CAR-T細胞とサラセミア向け遺伝子治療を開発し、治療費を最大90%削減することを目指している。最初の試験はまだ始まっていない。",
   "cellxgene-hca": "CELLxGENEとHuman Cell Atlasは、健康な組織と病変組織のシングルセルデータを保有しており、閲覧・ダウンロードが可能である。",
   "centre-henri-becquerel": "ノルマンディー地方ルーアン地域を担うUnicancerのがんセンターで、OECI認定の総合がんセンターであり、血液学とリンパ腫の充実したプログラムを持つ。",
@@ -7255,4 +7255,5 @@ export const tldr_ja: Record<string, string> = {
   zipalertinib: "ZipalertinibはTaiho Oncologyの実験的な低分子薬で、非小細胞肺がんを対象とした第3相試験段階にあり、EGFRを標的としています。",
   "zl-1310": "ZL-1310はZai Lab (Shanghai)の実験的な抗体薬物複合体で、非小細胞肺がんを対象とした第3相試験段階にあり、DLL3を標的としています。",
   zovegalisib: "ZovegalisibはRelay Therapeuticsの実験的な低分子薬で、HR陽性 / HER2陰性乳がんを対象とした第3相試験段階にあり、PIK3CA / PI3K-alphaを標的としています。",
+  "cell-therapy-release-testing": "細胞製品のロットは、その使用について判断する前に、定められた品質要件に照らして検査されます。同一性、生きた細胞の測定、生物学的活性は、そのロットに関する異なる問いに答えるものです。",
 };

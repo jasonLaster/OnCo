@@ -350,7 +350,7 @@ export const simpleD: Record<string, string> = {
   "cancer-associated-thrombosis": "Blood clots are a leading cause of death in cancer, so risk scores pick who needs preventive blood thinners and pills now treat most clots.",
   "stroma-directed-car": "Engineering immune cells to strip away the scaffolding and suppressive cells that protect a tumour, rather than attacking the cancer cell itself.",
   "cell-therapy-orchestration-software": "Software can help teams plan and track cell collection, manufacture, transport and treatment. It supports the records used to follow the process and investigate problems.",
-  "cell-therapy-release-testing": "The quality checks a batch of CAR-T (engineered immune cells) must pass before it can be given: sterile, correct, alive and safe.",
+
   "c2s-scale": "An AI approach that turns a cell's gene activity into a sentence so a language model can reason about it; one idea it proposed was confirmed in the lab.",
   cellfm: "A large AI model trained on a hundred million human cells to recognise cell types and predict how cells respond.",
   "chai-1": "AI programs that predict protein shapes and design antibodies, with the newer version reporting high success rates on first attempt.",
@@ -403,4 +403,5 @@ export const simpleD: Record<string, string> = {
   "financial-navigation": "Cancer treatment can bankrupt patients even with insurance, so programmes screen for money problems and connect people to help, reducing distress and debt.",
   "foresight-ehr": "An AI model trained on millions of hospital records that forecasts which diagnoses a patient is likely to get next.",
   gears: "An AI model predicting the effect of switching genes off; the tests built around it showed how hard this problem is.",
+  "cell-therapy-release-testing": "A batch of cells is checked against quality requirements before a decision about its use. Checking which cells are present, how many are alive and what they do answers different questions.",
 };

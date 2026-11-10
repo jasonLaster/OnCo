@@ -11,7 +11,7 @@ const asOf = "2026-09-08";
 
 type T = Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string };
 type C = Omit<CompanyInput, "kind" | "asOf">;
-type M = Omit<TermInput, "kind" | "asOf">;
+type M = Omit<TermInput, "kind" | "asOf"> & { asOf?: string };
 const t = (x: T): TechnologyInput => ({ kind: "technology", asOf, ...x, tags: ["supporting", ...(x.tags ?? [])] });
 const c = (x: C): CompanyInput => ({ kind: "company", asOf, tags: ["supporting"], ...x });
 const m = (x: M): TermInput => ({ kind: "term", asOf, ...x });
@@ -412,14 +412,65 @@ const technologies: TechnologyInput[] = [
     technologies: ["car-t", "cell-therapy-cold-chain"],
   }),
   t({
-    id: "cell-therapy-release-testing", links: [{ label: "FDA guidance: potency assurance for cellular and gene therapy products", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products" }], name: "Cell-therapy release and potency testing", sections: ["cell-therapy"], status: "established",
-    tldr: "The quality checks a CAR-T batch must pass before it can be given: sterile, correct identity, enough live CAR-positive cells, and no replicating virus.",
-    summary: "Release panels include sterility (rapid methods such as BacT/ALERT cut 14 days to about 7), mycoplasma PCR, endotoxin, identity (HLA), viability and CAR expression by flow cytometry, vector copy number by qPCR, replication-competent lentivirus, and potency (cytokine release or cytotoxicity). Testing time is a large share of vein-to-vein time; rapid and in-line methods and reduced-testing strategies for early-phase products are active regulatory topics.",
+    id: "cell-therapy-release-testing", links: [
+  {
+    "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+  },
+  {
+    "label": "FDA: considerations for development of CAR T-cell products",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+  },
+  {
+    "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+    "url": "https://www.fda.gov/media/156896/download"
+  },
+  {
+    "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+    "url": "https://www.fda.gov/media/113760/download"
+  },
+  {
+    "label": "FDA: final potency-assurance guidance, November 2026, original document",
+    "url": "https://www.fda.gov/media/196183/download"
+  },
+  {
+    "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+    "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+  },
+  {
+    "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+  }
+], name: "Cell-therapy release and potency testing", sections: ["cell-therapy"], status: "established",
+    tldr: "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
+    summary: "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
     principle: "Compendial and validated assays performed on samples of the final product, with defined acceptance criteria in the marketing authorisation.",
     strengths: ["Patient safety", "Regulatory clarity"],
     limitations: ["Adds days to delivery", "Potency assays poorly predictive of clinical activity", "Sample volume consumes product"],
     technologies: ["car-t", "closed-automated-cell-manufacturing", "flow-cytometry-mrd"], companies: ["charles-river", "becton-dickinson"],
-  }),
+
+"asOf": "2026-11-10",
+"related": [
+  "good-manufacturing-practice",
+  "batch-release"
+],
+"notes": [
+  "FDA's November 2026 final potency-assurance guidance supersedes its January 2011 potency-tests guidance. Its scope is cellular and gene therapy biological products regulated under section 351 of the U.S. Public Health Service Act. Potency assurance includes process and material controls, in-process evidence, release assays, stability and in-use handling; a release assay alone does not establish the clinical benefit of a particular lot. Federal Register notice 2026-22427, published 3 November 2026, announces the final guidance and finalises the December 2023 draft.",
+  "For CAR T cells, FDA's 2024 guidance recommends identity evidence for the transgene and intended cellular composition. HLA typing alone does not detect the genetic modification or replace chain-of-identity records. Biological identity and the association with the intended recipient are separate checks.",
+  "For an integrating-vector CAR T-cell product, the 2024 guidance describes average vector copy number per CAR-positive cell on the lot certificate of analysis. Including CAR-negative cells in the denominator can understate the value in the modified population. The average does not show insertion locations or clonal distribution. Short processes can retain non-integrated vector copies, so a release measurement may need a later assessment in cultured cells to determine stable integration; the interval is product-specific.",
+  "Replication-competent virus testing, microbial sterility, mycoplasma, endotoxin and engineered-cell identity address different hazards or attributes. The applicable tests, methods and acceptance criteria depend on the product, process and development stage. Detecting a sequence or a receptor does not demonstrate every intended biological activity.",
+  "For ex vivo genetically modified cells administered immediately after manufacture, FDA's 2020 gene-therapy CMC guidance describes an in-process sterility sample taken 48 to 72 hours before final harvest plus a rapid test such as a Gram stain on final product. Under that approach, negative Gram stain and no growth in the in-process test can support release while the final-product culture continues for its full duration, for example 14 days for USP <71>. The guidance calls for a plan addressing a later positive result, clinical management, investigation and reporting to the investigator and FDA. These are scoped recommendations, not universal early-release criteria for every cell product.",
+  "FDA's CAR T-cell examples distinguish activity against each target in a multi-antigen product, production of an added cytokine and a drug-resistance function. Each relevant transgene activity may need suitable evidence. A single expression or cell-count result is not the complete functional package.",
+  "In a fictional 100-cell teaching sample, 80 cells are live and 60 of those live cells express the receptor. Viability is 80/100, receptor positivity among live cells is 60/80, and live receptor-positive cells among all counted cells are 60/100. Receptor status of the nonlive cells is unspecified. These different denominators establish neither potency nor a clinical release cutoff.",
+  "Scope boundary with general release records. This record owns release and potency testing of cell and gene products. General lot disposition, out-of-specification handling and good manufacturing practice are taught in the batch release and good manufacturing practice records; decaying radiopharmaceuticals are in radiopharmaceutical quality and release.",
+  "Potency is relevant biological activity under defined conditions. FDA's November 2026 guidance aims for every released lot to have the ability to achieve the intended therapeutic effect and expects the relationship between a measured attribute and the product's mechanism of action to be supported by characterisation, nonclinical or clinical studies; where the mechanism is not fully understood, a statistical relationship such as a correlation with outcomes may help. Identity, receptor expression and viability do not establish activity.",
+  "Direct and surrogate measures. A direct biological assay measures activity such as target-cell killing; a surrogate measures a related attribute and needs a supported link to function. FDA's January 2011 potency guidance (now superseded) used the term assay matrix for complementary tests. The 2026 guidance recommends developing multiple assays that measure potency-related CQAs early, with redundant assays discontinued later. Many unrelated measurements do not add up to potency.",
+  "Controls, reference material and handling state. Potency protocols should set predefined sample and system suitability criteria, and a run should be invalidated if system suitability fails. Reference material lots should be qualified and monitored for stability. Release assays must use a sample taken after all manufacturing steps that may affect potency, with cryopreservation named as an example, so a test on fresh material does not stand for the final product.",
+  "Reading a killing result. A figure such as 60 per cent killing is not comparable between laboratories unless target identity, effector-to-target ratio and observation time are stated, and relative potency needs a named reference and model. FDA's CAR T guidance describes orthogonal methods such as a cell-killing assay, transduction efficiency and cytokine measurement. No universal passing cutoff applies across products.",
+  "Validation is about the assay, not the drug. The 2026 guidance asks that release assays measure potency with sufficient specificity, accuracy or precision over their reportable range, that performance be established under actual conditions of use, and that phase-appropriate acceptance criteria be set with failing lots rejected. Qualification and validation do not show that a drug improves a clinical endpoint.",
+  "Different questions. Sterility and potency are separate attributes with separate tests, and a passing potency result is a quality finding, not a clinical response rate. Inference lesson: a lot with high viability and receptor expression whose target-specific killing falls below its predefined criterion is not rescued by the two passing tests, and the failure is investigated under the controlled process."
+]
+}),
   t({
     id: "allogeneic-cell-banking", links: [{ label: "21 CFR Part 1271: human cells, tissues, and cellular and tissue-based products", url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1271" }], name: "Allogeneic donor and iPSC master cell banks", sections: ["cell-therapy"], status: "emerging",
     tldr: "Making cell therapies from a healthy donor or stem-cell line in advance, so patients get an off-the-shelf product instead of waiting weeks.",
@@ -1022,7 +1073,35 @@ const terms: TermInput[] = [
   m({ id: "cdmo", wikipedia: "https://en.wikipedia.org/wiki/Contract_development_and_manufacturing_organization", name: "CDMO (contract development and manufacturing organisation)", category: "Pharmacology",
     tldr: "A company that makes drugs for other companies. Most ADCs, biologics, and cell therapies are made by a handful of them.",
     summary: "A CDMO, or contract development and manufacturing organisation, is a company that makes drugs for other companies, and most ADCs, biologics and cell therapies are made by a handful of them. Capacity, containment for highly potent ADC payloads and regulatory track record at CDMOs such as Lonza, WuXi, Samsung Biologics and Catalent set the timelines for the whole field. Geopolitical measures, notably the US BIOSECURE Act of 2024 to 2025, are reshaping sourcing away from China-based sites. The term is linked to the technologies ADC bioconjugation manufacturing (CDMOs), Viral vector manufacturing (lentiviral, retroviral, AAV) and Sterile fill-finish and lyophilisation, and to the related term BIOSECURE Act. It is referenced by the company records for Lonza and OXB (Oxford Biomedica).",
-    technologies: ["adc-cdmo-manufacturing", "viral-vector-manufacturing", "sterile-fill-finish"], related: ["biosecure-act"], links: [{ label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Contract_development_and_manufacturing_organization" }] }),
+    technologies: ["adc-cdmo-manufacturing", "viral-vector-manufacturing", "sterile-fill-finish"], related: [
+  "biosecure-act",
+  "binder-discovery",
+  "peptide-synthesis-spps",
+  "batch-release",
+  "platform-vs-personalized-components",
+  "good-manufacturing-practice"
+], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Contract_development_and_manufacturing_organization"
+  },
+  {
+    "label": "FDA: contract manufacturing arrangements for drugs, quality agreements (November 2016)",
+    "url": "https://www.fda.gov/media/86193/download"
+  },
+  {
+    "label": "ICH Q10: pharmaceutical quality system (April 2009), section 2.7",
+    "url": "https://www.fda.gov/media/71553/download"
+  }
+] ,
+"asOf": "2026-11-10",
+"notes": [
+  "Scope must be read from the contract. A partner may develop a process, synthesise a molecule, formulate it, fill vials or run analytical testing, and a service label does not show which of these a contract covers. FDA's November 2016 quality-agreement guidance treats owner and contract facility as both responsible for CGMP and says contract analytical laboratories are covered.",
+  "The agreement assigns activities but cannot contract away responsibilities. FDA states that quality agreements cannot be used to delegate statutory or regulatory CGMP responsibilities. The guidance is written for commercial manufacture and does not explicitly cover investigational material, though FDA believes quality agreements can be valuable in research and development arrangements. ICH Q10 section 2.7 extends the quality system to outsourced activities, with the pharmaceutical company ultimately responsible.",
+  "Handoff inference. A controlled handoff connects the approved design version to materials, records and the resulting lot. If a contractor proposes an edit and supplies a passing identity result on the revised lot, the missing items are the authorised version and approval of the edit, assessment of affected product properties and the full quality package. Identity alone does not show activity, authorisation or benefit, and sharing a contractor does not establish comparability.",
+  "A contractor's experience or a facility's track record does not establish release of a particular lot, and manufacturing acceptance, clinical-program authorisation and efficacy are separate questions."
+]
+}),
   m({ id: "biosecure-act", wikipedia: "https://en.wikipedia.org/wiki/Biosecure_Act", name: "BIOSECURE Act", category: "Regulatory",
     tldr: "Proposed US legislation restricting federally funded work with certain Chinese biotech service companies, which would affect where ADCs and sequencing get done.",
     summary: "The BIOSECURE Act is proposed US legislation that would restrict federally funded work with certain Chinese biotechnology service companies, affecting where ADCs are made and where sequencing is done. It passed the House in 2024 and was reintroduced in 2025, naming WuXi AppTec, WuXi Biologics, BGI, MGI and Complete Genomics, and sponsors are already diversifying their CDMO and sequencing supply in anticipation. Its status should be verified before it is cited as law. The term is linked to the companies WuXi XDC and MGI Tech, to the technologies ADC bioconjugation manufacturing (CDMOs) and New short-read sequencing platforms, and to the related term CDMO (contract development and manufacturing organisation), each of which references it in turn.",

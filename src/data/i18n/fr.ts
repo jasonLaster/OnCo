@@ -3614,7 +3614,7 @@ export const tldr_fr: Record<string, string> = {
   cdmo: "Une entreprise qui fabrique des médicaments pour d'autres entreprises. La plupart des ADC, des biomédicaments et des thérapies cellulaires sont produits par une poignée d'entre elles.",
   "cell-membrane": "L'enveloppe externe huileuse d'une cellule. La plupart des médicaments et des anticorps agissent à cette frontière, soit en se fixant aux protéines qui en dépassent, soit en la traversant.",
   "cell-of-origin": "Selon qu'un lymphome à grandes cellules B ressemble à un lymphocyte B du centre germinatif ou à un lymphocyte B activé ; le type activé a un moins bon pronostic et dépend de voies différentes.",
-  "cell-therapy-release-testing": "Les contrôles de qualité qu'un lot de CAR-T doit réussir avant d'être administré : stérilité, identité correcte, nombre suffisant de cellules vivantes CAR-positives et absence de virus capable de se répliquer.",
+
   cellogen: "Une start-up de Delhi qui développe des cellules CAR-T bispécifiques anti-CD19 et CD20 et des thérapies géniques pour la thalassémie, avec l'objectif de réduire les coûts de traitement jusqu'à 90 % ; elle n'a pas encore lancé son premier essai.",
   "cellxgene-hca": "CELLxGENE et le Human Cell Atlas rassemblent des données de cellule unique issues de tissus sains et malades, consultables et téléchargeables.",
   "centre-henri-becquerel": "Le centre de lutte contre le cancer Unicancer de la région de Rouen, en Normandie, Comprehensive Cancer Centre labellisé OECI, doté d'un solide programme d'hématologie et de lymphomes.",
@@ -7255,4 +7255,5 @@ export const tldr_fr: Record<string, string> = {
   zipalertinib: "Zipalertinib est un médicament expérimental à petite molécule de Taiho Oncology en essais de phase 3 pour le cancer du poumon non à petites cellules, ciblant EGFR.",
   "zl-1310": "ZL-1310 est un conjugué anticorps-médicament expérimental de Zai Lab (Shanghai) en essais de phase 3 pour le cancer du poumon non à petites cellules, ciblant DLL3.",
   zovegalisib: "Zovegalisib est un médicament expérimental à petite molécule de Relay Therapeutics en essais de phase 3 pour le cancer du sein HR-positif / HER2-négatif, ciblant PIK3CA / PI3K-alpha.",
+  "cell-therapy-release-testing": "Un lot de produit cellulaire est évalué selon des exigences de qualité définies avant de décider de son utilisation. L'identité, les mesures des cellules vivantes et l'activité biologique répondent à des questions différentes sur ce lot.",
 };

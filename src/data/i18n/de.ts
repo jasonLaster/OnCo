@@ -3614,7 +3614,7 @@ export const tldr_de: Record<string, string> = {
   cdmo: "Ein Unternehmen, das Medikamente für andere Unternehmen herstellt. Die meisten ADCs, Biologika und Zelltherapien werden von einer Handvoll solcher Firmen produziert.",
   "cell-membrane": "Die ölige Außenhaut einer Zelle. Die meisten Medikamente und Antikörper wirken an dieser Grenze, indem sie entweder an herausragende Proteine binden oder hindurchschlüpfen.",
   "cell-of-origin": "Ob ein großzelliges B-Zell-Lymphom einer Keimzentrums-B-Zelle oder einer aktivierten B-Zelle ähnelt; der aktivierte Typ verläuft schlechter und hängt von anderen Signalwegen ab.",
-  "cell-therapy-release-testing": "Die Qualitätsprüfungen, die eine CAR-T-Charge vor der Verabreichung bestehen muss: steril, richtige Identität, genügend lebende CAR-positive Zellen und kein replikationsfähiges Virus.",
+
   cellogen: "Ein Start-up aus Delhi, das bispezifische CAR-T-Zellen gegen CD19 und CD20 sowie Gentherapien gegen Thalassämie entwickelt und die Behandlungskosten um bis zu 90% senken will; die erste Studie steht noch aus.",
   "cellxgene-hca": "CELLxGENE und der Human Cell Atlas enthalten Einzelzelldaten aus gesundem und krankem Gewebe, die durchsucht und heruntergeladen werden können.",
   "centre-henri-becquerel": "Das Unicancer-Krebszentrum für die Region Rouen in der Normandie, ein von der OECI anerkanntes Comprehensive Cancer Centre mit einem starken Hämatologie- und Lymphomprogramm.",
@@ -7255,4 +7255,5 @@ export const tldr_de: Record<string, string> = {
   zipalertinib: "Zipalertinib ist ein experimentelles niedermolekulares Medikament von Taiho Oncology in Phase-3-Studien bei nicht-kleinzelligem Lungenkarzinom, das auf EGFR abzielt.",
   "zl-1310": "ZL-1310 ist ein experimentelles Antikörper-Wirkstoff-Konjugat von Zai Lab (Shanghai) in Phase-3-Studien bei nicht-kleinzelligem Lungenkarzinom, das auf DLL3 abzielt.",
   zovegalisib: "Zovegalisib ist ein experimentelles niedermolekulares Medikament von Relay Therapeutics in Phase-3-Studien bei HR-positivem / HER2-negativem Brustkrebs, das auf PIK3CA / PI3K-alpha abzielt.",
+  "cell-therapy-release-testing": "Eine Charge eines Zellprodukts wird anhand festgelegter Qualitätsanforderungen geprüft, bevor über ihre Verwendung entschieden wird. Identität, Messungen lebender Zellen und biologische Aktivität beantworten unterschiedliche Fragen zu dieser Charge.",
 };

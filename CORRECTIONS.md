@@ -2,6 +2,14 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-10
+
+### Evidence interpretation and worked examples
+
+- **Absence of evidence:** corrected an inverted double negative. A documented search without an exact-variant drug-response report establishes neither resistance nor benefit. Nonsignificance, equivalence and non-inferiority retain their distinct hypotheses, assumptions and margins.
+- **Measurements and transport:** connected notes now distinguish variant evidence, pathway signals, dependence, engagement and clinical outcomes; tumour-volume examples retain their different scope from cell-assay growth-rate metrics and RECIST. Trial eligibility, transport assumptions and individual prediction remain separate. Repeated batch examples are consolidated without dropping unique teaching or earlier links.
+- **Source identity:** newly cached DOIs were individually resolved. The shared cache date is preserved; it does not claim every citation was freshly checked.
+
 ## 2026-11-08
 
 ### Evidence interpretation found during the education-concept audit

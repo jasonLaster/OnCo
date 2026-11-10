@@ -133,9 +133,9 @@ export const simpleE: Record<string, string> = {
   "replication-stress": "Cancers copy their DNA too fast with broken checkpoints, so they rely on emergency repair enzymes such as ATR and WEE1, and blocking those can kill them selectively.",
   "chromosomal-instability": "Most cancers have the wrong number of chromosomes and keep reshuffling them, which fuels resistance but also stresses the cell and can trigger immune alarms researchers hope to exploit.",
   "telomere-maintenance": "Normal cells can divide only so many times because their chromosome caps wear down, but cancers switch the cap-rebuilding enzyme telomerase back on so they divide forever.",
-  autophagy: "Autophagy is the cell's recycling programme, which pancreatic and RAS-driven cancers use to survive starvation and drug stress, so the malaria drug hydroxychloroquine that blocks it is being tested.",
-  "ferroptosis-cell-death": "Cells can die in several programmed ways; ferroptosis kills through iron-driven fat damage, and drug-resistant cancer cells turn out to be unusually prone to it.",
-  senescence: "Damaged cells can retire instead of dying, but retired cells linger, leak inflammatory signals and can help tumours relapse after chemotherapy, so drugs to clear them are being tested.",
+
+
+
   "cancer-stem-cells-plasticity": "Some cancer cells act like stem cells that can regrow the whole tumour, resist treatment and switch identity, which explains relapse and why some cancers transform into another type.",
   "clonal-evolution": "A tumour evolves by natural selection: treatment kills the sensitive cells and leaves the rest, so measuring what survives and adapting therapy is the counter-strategy.",
   "inflammation-nfkb": "Long-term inflammation is soil for cancer, feeding growth signals and DNA damage through a master switch called NF-κB, and colitis, hepatitis and stomach infections are the proof.",
@@ -169,13 +169,13 @@ export const simpleE: Record<string, string> = {
   "mitotic-spindle-checkpoint": "When a cell divides a scaffold called the spindle pulls chromosomes apart, and taxane chemotherapy freezes the spindle so the cell is stuck at that step until it dies.",
   "rtk-activation": "Growth-factor receptors are antennas that switch on growth inside; cancers mutate, multiply or fuse them so they shout 'grow' without a signal, and most targeted drugs act here.",
   "transcription-addiction": "Cancer cells run a few key genes at extreme volume from giant control regions and depend unusually heavily on the shared amplifier proteins involved, which makes those amplifiers druggable.",
-  "ubiquitin-proteasome-system": "Cells tag unwanted proteins and feed them into a shredder called the proteasome; myeloma cells die if the shredder jams, and newer drugs hijack the tagging to destroy cancer proteins.",
+
   "homologous-recombination-repair": "A double-strand DNA break is the most dangerous damage a cell faces, and whether it is repaired accurately with BRCA or sloppily glued decides if PARP pills kill it.",
   "mismatch-repair-msi": "After DNA is copied a proofreading crew fixes wrong letters; lose it and the genome fills with errors that make abnormal proteins the immune system can see, so immunotherapy works.",
   "base-excision-repair-parp": "A repair crew snips out damaged DNA letters all day long, with PARP marking each nick; PARP pills trap PARP on the DNA, turning nicks into lethal breaks.",
   "synthetic-lethality-map": "Two genes are synthetically lethal when losing either is fine but losing both kills the cell, so cancers that have already lost one become vulnerable to drugs against the other.",
   "glutamine-metabolism": "After glucose, glutamine is the tumour's favourite food, feeding energy and DNA building; MYC- and KRAS-driven cancers eat so much of it that they starve nearby T cells.",
-  "lipid-metabolism-cancer": "Dividing cells need fatty membranes, so cancers switch on fat-building enzymes most adult tissues keep off and steal fat from neighbouring cells, which links obesity to cancer.",
+
   "angiogenic-switch": "A tumour cannot grow beyond a couple of millimetres without its own blood supply; the switch flips when signals for new vessels outweigh the brakes, producing leaky chaotic vessels.",
   "nutrient-competition-tme": "Tumours and immune cells eat from the same plate; cancer cells hoard sugar, dump acid and burn nutrients into by-products that paralyse T cells, so the immune system loses.",
   "t-cell-exhaustion": "Long stimulation can change how T cells respond. Exhausted T cells include groups that retain different abilities and respond differently to checkpoint drugs.",

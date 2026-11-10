@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Cell death, stress and source-review corrections
+
+- **Cell-death mechanisms:** apoptosis no longer owns the broad aliases “cell death” or “programmed cell death”. The assessed records distinguish mitochondrial/death-receptor routes, necrotic appearance, durable senescence and adaptive immune consequences. Immunogenic markers alone do not establish useful immunity; [consensus assay guidance](https://pubmed.ncbi.nlm.nih.gov/32209603/) retains that boundary.
+- **Autophagy, ferroptosis and metabolism:** descriptions now keep assay, model and perturbation limits. They no longer turn a selected cell-state dependency into a universal cancer property or a metabolic perturbation into clinical benefit. [Horton’s transgenic comparison](https://pubmed.ncbi.nlm.nih.gov/9616204/) separates SREBP-relative effects and measured synthesis; [Freed-Pastor’s 3D cultures](https://pubmed.ncbi.nlm.nih.gov/22265415/) retain the nonsterol rescue distinction. Oxygen-consumption calculations now name the [published ATP-rate correction](https://pubmed.ncbi.nlm.nih.gov/30097494/).
+- **Antibody, HLA, tertiary lymphoid structures and TAP:** independent source review found three overcredited requirements, an omitted scoped association, duplicated TLS prose and an imprecise TAP citation label. Exact fields now state that same-target antibody formats can differ, distinguish ectopic location from a developmental stage, retain the scope of breast/melanoma associations and identify the TAP1 experiment. The [primary HLA comparison](https://pubmed.ncbi.nlm.nih.gov/25754738/) keeps its specific haplotype and method dependence.
+
+
 ### Antigen presentation, antibody functions and gene definitions
 
 - **Antibody, epitope, B cell, ADCC, Fc function and HLA typing:** the sixteen-lesson audit separates receptor binding, display, activation and completed function; removes antibody-format and Fc-silencing generalisations; and prevents broad HLA names from standing in for a resolved allele. Stale short-summary entries now use corrected English fallback.

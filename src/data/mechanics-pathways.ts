@@ -236,8 +236,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "ubiquitin-proteasome-system", name: "Ubiquitin-proteasome system & protein homeostasis", wikipedia: W("Proteasome"),
-    tldr: "Cells tag unwanted proteins with a small marker called ubiquitin and feed them into a shredder, the proteasome. Myeloma cells, which make antibody in bulk, die if the shredder jams; and the newest drugs hijack the tagging machinery to make a cancer destroy its own oncoproteins.",
-    summary: "E1 activates ubiquitin, E2 carries it, and one of ~600 E3 ligases (CRL4-CRBN, VHL, MDM2, SCF-FBXW7, APC/C) attaches it to a substrate lysine; K48 chains send substrates to the 26S proteasome, whose β5 subunit is the target of bortezomib, carfilzomib and ixazomib. Deubiquitinases (USP7, USP14) reverse tagging. Plasma cells and myeloma depend on proteasome capacity to clear misfolded immunoglobulin; inhibition triggers the unfolded protein response (PERK, IRE1, ATF6) and death, and stabilises IκB to shut NF-κB. Cereblon modulators (thalidomide, lenalidomide, pomalidomide; CELMoDs iberdomide, mezigdomide, golcadomide) are molecular glues that redirect CRL4-CRBN to degrade IKZF1/3. PROTACs (vepdegestrant for ER, ARV-766 for AR, BGB-16673 for BTK) link a target ligand to an E3 ligand. Oncogenic lesions in the system: FBXW7 loss stabilises MYC, cyclin E and NOTCH; SPOP mutations in prostate; VHL loss stabilises HIF; MDM2 amplification degrades p53. HSP90 and chaperones buffer mutant kinases; HSP90 inhibitors mostly failed on toxicity.",
+    tldr: "Ubiquitin can change a protein's interactions, location or fate. Some tags support proteasomal destruction; tagging alone does not establish completed degradation.",
+    summary: "E1 enzymes activate ubiquitin, E2 enzymes carry it and E3 ligases help select substrates and assemble modifications. Chain architecture and cellular context influence the result; ubiquitination is not universally a destruction signal. Deubiquitinases can remove or remodel tags, and proteasomal degradation is a later process that needs its own evidence. A protein can fall because synthesis changes, cells are lost or degradation increases, so abundance alone does not identify the route. In targeted-degradation experiments, target binding, E3 recruitment, protein loss, proteasome dependence and sustained cellular effects are distinct observations. Proteasome inhibitors and recruited-degradation strategies intervene at different steps; mechanistic measurements do not by themselves establish clinical benefit.",
     analogy: "A recycling plant with barcode stickers (ubiquitin) and a shredder (proteasome). Myeloma is a paper mill that produces so much waste it dies when the shredder stops (bortezomib). PROTACs and glues are forged stickers that get the plant to shred the cancer's own machinery.",
     nodes: [
       { id: "e1", label: "E1 → E2 ubiquitin", x: 12, y: 15 }, { id: "e3", label: "E3 ligase (CRBN, VHL, MDM2)", x: 40, y: 15, targetId: "mdm2" }, { id: "sub", label: "Substrate (IKZF1/3, p53, HIF)", x: 70, y: 15, targetId: "hif2a" },
@@ -249,9 +249,57 @@ export const mechanicsPathways: PathwayInput[] = [
       { from: "prot", to: "upr", type: "inhibits" }, { from: "glue", to: "e3" }, { from: "glue", to: "sub" }, { from: "chap", to: "sub", type: "inhibits" },
     ],
     interventions: ["Proteasome inhibitors bortezomib, carfilzomib, ixazomib in multiple myeloma and mantle cell lymphoma", "Cereblon glues: lenalidomide, pomalidomide; CELMoDs iberdomide, mezigdomide, golcadomide", "PROTACs: vepdegestrant (ER), BGB-16673 (BTK), AR degraders; degrader-antibody conjugates deliver them by antibody", "Reactivating degradation of oncoproteins (MDM2 inhibition for p53) and blocking DUBs are in trials"],
-    targets: ["mdm2", "hif2a", "estrogen-receptor", "btk", "bcma", "androgen-receptor"], drugs: ["bortezomib", "carfilzomib", "ixazomib", "lenalidomide", "pomalidomide", "iberdomide", "mezigdomide", "golcadomide", "vepdegestrant", "bgb-16673"], technologies: ["protac-degrader", "molecular-glue-platforms", "degrader-antibody-conjugate"], terms: ["r-iss", "high-risk-myeloma"], pathways: ["hif-vhl", "p53-mdm2-axis", "inflammation-nfkb", "myc"], cancers: ["multiple-myeloma", "mantle-cell-lymphoma", "prostate", "breast-hr-positive"],
-    links: [{ label: "Békés, Langley & Crews, PROTAC targeted protein degraders: the past is prologue (Nat Rev Drug Discov 2022)", url: "https://doi.org/10.1038/s41573-021-00371-6" }],
-  }),
+    targets: [
+  "mdm2",
+  "hif2a",
+  "estrogen-receptor",
+  "btk"
+], drugs: ["bortezomib", "carfilzomib", "ixazomib", "lenalidomide", "pomalidomide", "iberdomide", "mezigdomide", "golcadomide", "vepdegestrant", "bgb-16673"], technologies: ["protac-degrader", "molecular-glue-platforms", "degrader-antibody-conjugate"], terms: ["r-iss", "high-risk-myeloma"], pathways: ["hif-vhl", "p53-mdm2-axis", "inflammation-nfkb", "myc"], cancers: ["multiple-myeloma", "mantle-cell-lymphoma", "prostate", "breast-hr-positive"],
+    links: [
+  {
+    "label": "Békés, Langley & Crews, PROTAC targeted protein degraders: the past is prologue (Nat Rev Drug Discov 2022)",
+    "url": "https://doi.org/10.1038/s41573-021-00371-6"
+  },
+  {
+    "label": "Source identity and scope, PMID 6305978",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6305978/"
+  },
+  {
+    "label": "Source identity and scope, PMID 3031653",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3031653/"
+  },
+  {
+    "label": "Source identity and scope, PMID 28421184",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28421184/"
+  },
+  {
+    "label": "Source identity and scope, PMID 19345192",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19345192/"
+  },
+  {
+    "label": "Source identity and scope, PMID 15282312",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15282312/"
+  },
+  {
+    "label": "Source identity and scope, PMID 15958804",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15958804/"
+  }
+],
+
+"notes": [
+  "Ubiquitin is a small protein attached through enzyme steps: E1 uses ATP for activation, E2 carries activated ubiquitin, and E3 promotes substrate selection and transfer. Reticulocyte experiments separated these functions. E3 families differ in transfer mechanism; no single cartoon specifies all of them.",
+  "Suitable tagged cargo can be unfolded by ATP-dependent proteasomal machinery and broken into fragments, while ubiquitin is removed and reused. Other ubiquitin signals organise interactions rather than destruction, and yeast experiments show overlapping chain functions. Lysosomal autophagy and proteasomal breakdown are distinct routes.",
+  "Protein abundance reflects synthesis and removal. Measure named-substrate decay over time with synthesis, handling and viability controls; restoration of an E3 adaptor can strengthen attribution without proving direct binding or global proteasome failure. Catalytic activity per time, ubiquitinated-cargo intensity and protein lifetime in hours are different readouts. KEAP1 is one CUL3 adaptor for NRF2, so a CUL3 change cannot uniquely identify that substrate. Pulse labelling or a controlled temporary synthesis block can help estimate turnover but may cause stress. Independent perturbation and restoration help distinguish a selected-substrate effect from a secondary response; enzyme engagement alone does not establish selective killing.",
+  "In a randomised trial of 669 people with relapsed myeloma after one to three prior therapies, bortezomib prolonged median time to progression compared with high-dose dexamethasone: 6.22 versus 3.49 months. This historical clinical result does not make an arbitrary E3 variant or abundant protein a predictive treatment biomarker."
+],
+"asOf": "2026-11-09"
+,
+"related": [
+  "bcma",
+  "androgen-receptor",
+  "er-stress-and-unfolded-protein-response"
+]
+}),
 
   // ------------------------------------------------------------------ 4. Evading death and repair
   p({
@@ -351,8 +399,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "lipid-metabolism-cancer", name: "Lipid synthesis, uptake & cholesterol", wikipedia: W("Fatty_acid_synthesis"),
-    tldr: "Dividing cells need membranes, and membranes are fat. Cancers switch on the fat-building enzymes most adult tissues keep off, and in fatty environments (breast, omentum, bone marrow) they also steal lipids from neighbouring fat cells. This links obesity to cancer and offers new drug targets.",
-    summary: "Citrate exported from mitochondria is cleaved by ACLY to acetyl-CoA, carboxylated by ACC to malonyl-CoA, and built into palmitate by FASN, then desaturated by SCD1 and elongated; SREBP1/2, activated by mTORC1 and hypoxia and restrained by AMPK and LKB1, is the master transcriptional switch. The mevalonate pathway (HMGCR) makes cholesterol and the isoprenoids needed to anchor RAS to membranes; mutant p53 activates it. Exogenous uptake via CD36, LDLR and lipoprotein lipase supplies fatty acids from adipocytes (omental metastasis of ovarian cancer, prostate cancer in bone) and fatty acid oxidation (CPT1) fuels dormant, metastatic and leukaemia stem cells. Lipid saturation sets ferroptosis sensitivity (PUFAs are the substrate; SCD1 protects). Epidemiologically obesity raises risk of 13 cancers via insulin/IGF-1, oestrogen, inflammation and lipid supply; GLP-1 agonists and bariatric surgery lower incidence. Drugs: FASN inhibitor denifanstat (TVB-2640) in trials, statins repurposed (mostly negative in RCTs), CD36 antibodies preclinical; SCD1 inhibition to sensitise to ferroptosis.",
+    tldr: "Cells can make, import, store and reuse lipids. The route they use and their dependence on it vary with the cell and conditions.",
+    summary: "Lipid metabolism includes synthesis, uptake, storage, membrane remodelling and oxidation. Cholesterol regulation and fatty-acid regulation overlap but are not interchangeable. Identify the SREBP member, cellular compartment and measured output rather than treating a transcript, precursor, nuclear fragment, sterol amount and synthesis rate as the same observation. SCAP-SREBP transport responds to endoplasmic reticulum cholesterol in the cited cell experiments. The mevalonate pathway supplies sterols and nonsterol products, including substrates for protein prenylation. Rescue by mevalonate therefore cannot uniquely identify cholesterol as the limiting product. Transcript abundance, lipid abundance, labelled production and a controlled survival-dependence experiment answer different questions. Results from a particular cell model or mouse experiment do not establish a universal tumour vulnerability or a preferred diet or treatment.",
     analogy: "A factory that must build its own walls. Normal adult tissue buys wall panels from a supplier (dietary fat); cancer reopens its own panel plant (FASN) and, when it lands in a fat depot, simply strips panels off the buildings next door.",
     nodes: [
       { id: "cit", label: "Citrate → ACLY → acetyl-CoA", x: 12, y: 20 }, { id: "acc", label: "ACC → malonyl-CoA", x: 40, y: 20 }, { id: "fasn", label: "FASN → palmitate", x: 68, y: 20 },
@@ -365,8 +413,33 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["FASN inhibitor denifanstat and SCD1 inhibitors in trials; statins repurposed with mostly negative randomised data", "Weight management, GLP-1 agonists and bariatric surgery reduce obesity-related cancer incidence", "Exercise and dietary pattern interventions during treatment", "Ferroptosis inducers exploit the lipid composition of mesenchymal and persister cells"],
     targets: ["akt", "kras", "estrogen-receptor"], technologies: ["metabolic-therapy", "glp1-agonists-cancer-risk", "bariatric-surgery-cancer-incidence", "mediterranean-plant-forward-diet", "exercise-oncology", "dietitian-led-weight-loss-breast"], terms: ["obesity-related-cancers", "energy-balance", "metabolic-syndrome", "body-composition", "deregulating-cellular-energetics"], pathways: ["cancer-metabolism", "ferroptosis-cell-death", "pi3k-akt-mtor", "tumor-dormancy"], cancers: ["ovarian", "prostate", "breast-hr-positive", "endometrial", "hcc"],
-    links: [{ label: "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)", url: "https://doi.org/10.1038/nrc.2016.89" }],
-  }),
+    links: [
+  {
+    "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+    "url": "https://doi.org/10.1038/nrc.2016.89"
+  },
+  {
+    "label": "Source identity and scope, PMID 19041766",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+  },
+  {
+    "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+  },
+  {
+    "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+  }
+],
+
+"notes": [
+  "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+  "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing.",
+  "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+  "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation."
+],
+"asOf": "2026-11-09"
+}),
   p({
     id: "angiogenic-switch", name: "The angiogenic switch & tumour vessels", wikipedia: W("Angiogenesis"),
     tldr: "A tumour cannot grow beyond a couple of millimetres without its own blood supply. The 'switch' flips when the signals calling for new vessels (VEGF, FGF, angiopoietin) outweigh the ones holding them back (thrombospondin). The vessels that result are leaky and chaotic, which starves the tumour of oxygen, blocks drugs, and gives cancer cells a way out.",

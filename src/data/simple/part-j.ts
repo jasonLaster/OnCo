@@ -92,7 +92,7 @@ export const simpleJ: Record<string, string> = {
   "polymorphic-microbiomes": "Polymorphic microbiomes means the bacteria living in and on us differ between people and influence cancer risk, growth and how well treatments work.",
   "senescent-cells": "Senescent cells have permanently stopped dividing but stay alive and release inflammatory signals that help nearby cancer cells grow and resist treatment.",
   "disseminated-tumor-cells": "Disseminated tumour cells are single cancer cells that have already reached distant organs, often found in bone marrow years before any spread appears.",
-  "warburg-effect": "The Warburg effect is cancer cells burning sugar wastefully even when oxygen is plentiful, a fast way to make building blocks that PET scans exploit.",
+
   "immune-exclusion": "Immune exclusion describes a tumour where immune cells arrive but are stopped at the edge by scar-like tissue and signals, so immunotherapy works poorly.",
   "cancer-associated-fibroblasts": "Cancer-associated fibroblasts are scaffolding cells that tumours recruit to build scar-like tissue around themselves, feeding the cancer and blocking drugs and immune cells.",
   "tumor-associated-macrophages": "Tumour-associated macrophages are immune cells that should eat cancer cells but are retrained by the tumour to protect it instead, often the commonest immune cell present.",
@@ -205,8 +205,8 @@ export const simpleJ: Record<string, string> = {
   "proliferation": "Proliferation is rapid multiplication of cells, and a tumour's proliferation rate, often measured by the marker Ki-67, shows how fast it is growing.",
   "differentiation": "Differentiation is how closely a cancer cell still resembles the mature tissue it came from, with well-differentiated tumours usually behaving better than poorly differentiated ones.",
   "stem-cell": "A stem cell can copy itself indefinitely and produce a tissue's specialised cells, and cancers may be kept going by stem-like cells that survive treatment.",
-  "apoptosis": "Apoptosis is the cell's built-in self-destruct programme that tidily removes damaged cells, which cancer cells disable and many drugs try to switch back on.",
-  "necrosis": "Necrosis is messy, uncontrolled cell death where the cell bursts, and in tumours it usually means cells have outgrown their blood supply and starved.",
+
+
   "angiogenesis": "Angiogenesis is the growth of new blood vessels, which a tumour needs once it is bigger than a pinhead and which some cancer drugs cut off.",
   "benign-vs-malignant": "A benign tumour grows but stays put, while a malignant tumour invades surrounding tissue and can spread, and only malignant tumours are cancer.",
   "primary-tumour": "The primary tumour is where a cancer started, and the cancer keeps that name for life even after spreading to other organs.",

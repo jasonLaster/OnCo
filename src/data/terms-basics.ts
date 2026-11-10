@@ -276,7 +276,7 @@ export const termsBasics: TermInput[] = [
     id: "antibody", name: "Antibody", category: BIO,
     aka: ["antibodies", "immunoglobulin", "immunoglobulins", "IgG", "therapeutic antibody", "therapeutic antibodies", "antibody-based", "antibody drug", "antibody drugs"],
     tldr: "A typical IgG antibody has antigen-binding arms and a stem that can interact with other parts of the immune system. Binding alone does not specify its function.",
-    summary: "A typical IgG has two antigen-binding arms; receptor binding and cross-reactivity depend on the particular molecule and test system, while its stem (the Fc region) can recruit immune cells and complement or extend the antibody's life in the blood. Therapeutic antibodies block growth receptors (trastuzumab on HER2, cetuximab on EGFR), release the brakes on T cells (pembrolizumab on PD-1), flag cancer cells for immune killing (rituximab on CD20), or serve as the targeting vehicle of ADCs and radioimmunotherapy. Bispecific formats have two binding specificities. Some are designed to bring a T cell and a target cell together; their structures and functions vary. Fab, the arm with the binding site, and Fc, the stem, are separate parts: binding does not guarantee killing, and Fc effector contacts need compatible effector cells or complement.",
+    summary: "A typical IgG has two antigen-binding arms; receptor binding and cross-reactivity depend on the particular molecule and test system, while its stem (the Fc region) can recruit immune cells and complement or extend the antibody's life in the blood. Therapeutic antibodies block growth receptors (trastuzumab on HER2, cetuximab on EGFR), release the brakes on T cells (pembrolizumab on PD-1), flag cancer cells for immune killing (rituximab on CD20), or serve as the targeting vehicle of ADCs and radioimmunotherapy. Bispecific formats have two binding specificities. Some are designed to bring a T cell and a target cell together; their structures and functions vary. Fab, the arm with the binding site, and Fc, the stem, are separate parts: binding does not guarantee killing, and Fc effector contacts need compatible effector cells or complement. Antibodies that bind the same target can act differently: a blocking antibody, an antibody-drug conjugate and a bispecific format can share a target and still differ in what follows.",
     wikipedia: W("Antibody"),
     related: [
   "antigen",
@@ -373,7 +373,15 @@ export const termsBasics: TermInput[] = [
   {
     "label": "IgG subclasses and allotypes: from structure to effector functions.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+  },
+  {
+    "label": "Review: Fundamentals and Methods for T- and B-Cell Epitope Prediction.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29445754/"
   }
+]
+,
+"notes": [
+  "The accessible epitope-prediction review distinguishes sequential residues from discontinuous exposed patches. This supplies review support for linear versus conformational epitopes, not a universal prediction-accuracy claim."
 ]
 }),
   t({
@@ -433,20 +441,121 @@ export const termsBasics: TermInput[] = [
   }),
   t({
     id: "apoptosis", name: "Apoptosis", category: BIO,
-    aka: ["apoptotic", "programmed cell death", "cell death", "pro-apoptotic", "anti-apoptotic", "undergo apoptosis", "induce apoptosis", "induces apoptosis", "triggers apoptosis"],
-    tldr: "The cell's built-in self-destruct programme, which tidily dismantles a damaged or unwanted cell without alarming its neighbours. Cancer cells disable it by mutating TP53 or overproducing BCL-2; chemotherapy and radiation work largely by inflicting enough damage to trigger it, and venetoclax removes the BCL-2 shield directly.",
-    summary: "Apoptosis is triggered from inside (DNA damage sensed by p53, which tips the balance of BCL-2 family proteins and releases enzymes called caspases) or from outside (death signals from immune cells). Tumours resist it by mutating TP53, overexpressing BCL-2 or MCL-1, or losing the proteins that would push them over the edge; 'resisting cell death' is one of the hallmarks of cancer. Chemotherapy and radiation work largely by inflicting enough damage to trigger apoptosis, venetoclax removes the BCL-2 shield directly, and the calm, non-inflammatory nature of apoptosis is why it does not, by itself, alert the immune system, unlike immunogenic cell death.",
+    aka: [
+  "apoptotic",
+  "pro-apoptotic",
+  "anti-apoptotic",
+  "undergo apoptosis",
+  "induce apoptosis",
+  "induces apoptosis",
+  "triggers apoptosis"
+],
+    tldr: "Apoptosis is a regulated process that dismantles a cell. Whether the dying cell stimulates protective immunity is a separate question.",
+    summary: "The mitochondrial route uses BCL-2-family control of BAX and BAK and cytochrome c release. In cell experiments, combined BAX and BAK loss blocked mitochondrial responses to several apoptotic stimuli; this does not establish resistance to all forms of death. Death-receptor signals provide another route. Apoptosis is not inherently immune-silent: anthracycline-treated tumour cells showed calreticulin-dependent immunogenicity in mouse experiments. A death marker, a mitochondrial response and sustained killing answer different questions. Protein abundance alone cannot establish dependence or choose a treatment.",
     wikipedia: W("Apoptosis"),
-    related: ["necrosis", "resisting-cell-death", "immunogenic-cell-death", "tumour-suppressor-gene", "ferroptosis-cell-death"], pathways: ["apoptosis-bcl2", "p53-cell-cycle"], targets: ["bcl2", "tp53"], drugs: ["venetoclax"],
-  }),
+    related: [
+  "necrosis",
+  "resisting-cell-death",
+  "immunogenic-cell-death",
+  "tumour-suppressor-gene",
+  "ferroptosis-cell-death",
+  "er-stress-and-unfolded-protein-response"
+], pathways: ["apoptosis-bcl2", "p53-cell-cycle"], targets: ["bcl2", "tp53"], drugs: ["venetoclax"],
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Primary source, PMID 11326099",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11326099/"
+  },
+  {
+    "label": "Primary source, PMID 17187072",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17187072/"
+  },
+  {
+    "label": "Source identity and scope, PMID 8689682",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8689682/"
+  },
+  {
+    "label": "Source identity and scope, PMID 9727492",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9727492/"
+  },
+  {
+    "label": "Source identity and scope, PMID 29362479",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+  },
+  {
+    "label": "Source identity and scope, PMID 24355989",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24355989/"
+  },
+  {
+    "label": "Source identity and scope, PMID 11782314",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11782314/"
+  },
+  {
+    "label": "Source identity and scope, PMID 23291630",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23291630/"
+  },
+  {
+    "label": "Source identity and scope, PMID 32209603",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+  },
+  {
+    "label": "Source identity and scope, PMID 22632970",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+  },
+  {
+    "label": "Source identity and scope, PMID 29258294",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29258294/"
+  },
+  {
+    "label": "Source identity and scope, PMID 24439385",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24439385/"
+  }
+],
+"notes": [
+  "Intrinsic apoptosis involves mitochondrial outer-membrane permeabilisation, cytochrome c release into the cytosol, apoptosome assembly and caspase-9 activation upstream of executioner caspases such as caspase-3 and caspase-7. Death-receptor signalling can activate caspase-8; BID cleavage links this route to mitochondria. Initiator and executioner roles differ.",
+  "The BCL-2 family contains survival proteins, including BCL-2, BCL-XL and MCL-1; BH3-only stress mediators, including BIM, BID and PUMA; and pore-forming effectors BAX and BAK. In experimental cells, loss of both BAX and BAK blocked several mitochondrial apoptotic responses, rather than every possible form of death.",
+  "Cytochrome c moves from the mitochondrial intermembrane compartment, including crista stores, across the outer membrane to the cytosol. It does not begin in the matrix. The inner membrane separates these compartments; the spatial sketch is simplified, with no implied pore stoichiometry.",
+  "A stain for BCL-XL measures abundance rather than survival dependence. BCL2 and BCL2L1 are different genes, and inhibitor selectivity matters. Souers and colleagues re-engineered dual BCL-2/BCL-XL inhibition into BCL-2-selective ABT-199, sparing human platelets; early tumour lysis in three refractory chronic lymphocytic leukaemia patients does not establish benefit in every tumour. A mitochondrial response, caspase marker, sustained killing and immune protection remain separate outcomes. Keep cell identity, timing, handling controls and later survival or regrowth with cleaved-caspase assays, membrane readouts and microscopy. Mitochondrial BH3 challenges test readiness under a defined protocol, rather than completed killing or clinical benefit.",
+  "Compare mechanism, morphology, immune consequence and living arrest separately. Apoptosis uses regulated dismantling; necrotic morphology describes boundary failure; ferroptosis requires iron-dependent lipid damage causing death; immunogenicity requires a compatible adaptive response; senescence is a living arrest. These categories are not mutually exclusive outcomes or a universal appearance-based classifier.",
+  "In the fictional killing experiment, rescue by both an iron chelator and a lipid-protecting compound with no caspase-inhibitor rescue supports a ferroptosis hypothesis. Check lipid damage, death timing, perturbation specificity and GPX4 or glutathione-related mechanisms before attribution; immunogenicity is a separate test. A single stain is not enough."
+]
+}),
   t({
     id: "necrosis", name: "Necrosis", category: BIO,
     aka: ["necrotic", "tumour necrosis", "tumor necrosis", "necrotic core"],
-    tldr: "Messy, uncontrolled cell death, where the cell bursts and spills its contents. In tumours it usually means cells have outgrown their blood supply and starved.",
-    summary: "Unlike apoptosis, necrosis releases the cell's contents into the surroundings, provoking inflammation; a necrotic core is common in fast-growing tumours whose centres lie too far from a blood vessel to get oxygen, and pathologists note its presence as a marker of aggressiveness in tumours such as glioblastoma. Necrosis after treatment (on imaging or in a surgical specimen) can be a sign that a drug or radiation has worked, and 'pathologic complete response' means no living tumour cells remain. Necroptosis and pyroptosis are regulated forms of necrosis that the cell can be induced to undergo and that, because they are inflammatory, may help alert the immune system.",
+    tldr: "Necrosis describes cell and tissue breakdown with loss of membrane integrity. The appearance alone does not identify its cause.",
+    summary: "Necrotic appearance can follow overwhelming injury or regulated death mechanisms. A late membrane-integrity measurement cannot reconstruct the preceding death sequence. Histology describes the sampled region; necrosis there does not establish the absence of viable tumour elsewhere, treatment success or a particular molecular pathway. Distinguish tissue appearance from a mechanism established by controlled perturbation and complementary readouts. Inflammation and antigen-specific adaptive immune protection are separate outcomes.",
     wikipedia: W("Necrosis"),
     related: ["apoptosis", "angiogenesis", "inflammation", "pcr", "immunogenic-cell-death"], cancers: ["glioblastoma"],
-  }),
+
+"asOf": "2026-11-09",
+"links": [
+  {
+    "label": "Primary source, PMID 29362479",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+  },
+  {
+    "label": "Primary source, PMID 32209603",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+  },
+  {
+    "label": "Source identity and scope, PMID 22265413",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22265413/"
+  },
+  {
+    "label": "Source identity and scope, PMID 12110890",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12110890/"
+  }
+],
+"notes": [
+  "Necrosis describes loss of membrane integrity and tissue breakdown, rather than one molecular route. Overwhelming injury, regulated mechanisms and late secondary necrosis after apoptosis with inadequate clearance can converge on membrane loss. Necrosis is broader than necroptosis.",
+  "RIPK3-dependent MLKL activation is an example regulated necrotic mechanism. Sun and colleagues used biochemical and cellular perturbations to establish MLKL downstream of RIP3; a necrotic region or membrane-impermeant dye alone cannot establish that pathway.",
+  "Histology describes the sampled region; viable tumour may remain elsewhere. A membrane-compromised fraction, qualitative tissue necrosis and method-defined necrotic area answer different questions. Handling, delayed fixation and late sampling affect interpretation, and no universal necrosis percentage identifies a death mechanism or proves treatment success. Preparing and staining a section consumes tissue, while live-cell dye assays use tested aliquots and report a defined membrane-compromised fraction. Clinical morphology and experimental pathway perturbation have different validation contexts.",
+  "HMGB1-deficient necrotic cells produced less inflammation in defined experiments. That result concerns danger signalling, rather than automatic adaptive immune memory. Dye entry after an intervention cannot establish necroptosis, vaccine activity or clinical benefit without the separate causal and host tests."
+]
+}),
   t({
     id: "angiogenesis", name: "Angiogenesis", category: BIO,
     aka: ["angiogenic", "anti-angiogenic", "antiangiogenic", "anti-angiogenesis", "new blood vessels", "blood vessel growth", "neovascularisation", "neovascularization", "tumour vasculature", "tumor vasculature", "vascularised", "vascularized", "anti-angiogenics"],
@@ -694,7 +803,15 @@ export const termsBasics: TermInput[] = [
   {
     "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+  },
+  {
+    "label": "Review: The Maintenance of Memory Plasma Cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31024553/"
   }
+]
+,
+"notes": [
+  "Selected plasma-cell review passages support the distinction between proliferating plasmablasts and longer-lived plasma-cell populations; identifying a cell does not establish antibody specificity."
 ]
 }),
   t({

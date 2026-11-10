@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "2475033333efdaf63d365ae17f45bc435fa48ea4422bcddc66d78093f203750b"
+      "recordSnapshotSha256": "e8fbe2ea3a8ef0c85a795096057f6a03466fcac27a77e15d7176facb52b17cf5"
     },
     {
       "version": "draft-376",
@@ -79,13 +79,23 @@
     },
     {
       "version": "proposal-antigen-antibodies",
-      "state": "Integrated into draft375 only. Twelve new owners (eight concepts, four processing genes), ten earlier owners and eight existing gene owners; generated gene and base cross-reference files unchanged.",
-      "recordSnapshotSha256": "79e995280a48f66b5d52512bba43aad09eda3f2c646a756ea0c68148387b41b9"
+      "state": "Integrated in draft375, with independent source review objections corrected. Twelve new owners and eighteen existing owners; generated base files unchanged.",
+      "recordSnapshotSha256": "eb216dca43cce8838cd6906fc9b278a232edae4a78fd370cc751d9a07a18999c"
     },
     {
       "version": "proposal-antigen-summary-consumers",
       "state": "270 actual selectors use corrected English fallback; 63 stale short entries removed. No named language review claimed.",
       "recordSnapshotSha256": "0f06cab95304f9e7a7e387bfa118bb8cfbc4ecec6f1e70553760b44e00ee19b4"
+    },
+    {
+      "version": "proposal-death-metabolism",
+      "state": "Integrated in draft375 only: four new terms and eight existing owners. The ninth existing owner, immunogenic-cell-death, remains in proposal-therapeutic.",
+      "recordSnapshotSha256": "418d8c7e4f28c62d82f1df6a275849f7acd522bd67c35b3d0ec5e7052e92a7f7"
+    },
+    {
+      "version": "proposal-death-summary-consumers",
+      "state": "117 additional checked selectors: nine unchanged ICD entries contain text and 108 use corrected English fallback. Seventy-two stale short entries removed.",
+      "recordSnapshotSha256": "cf2bf186d7eb99521b11b995cfbbc1198aa8e67512a8ab9367e4bb4eb453a3d3"
     }
   ],
   "sourcePhases": [],
@@ -93,18 +103,18 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 48,
+      "teachingAssets": 70,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1840,
-      "unresolvedAssets": 1840
+      "unclassifiedAssets": 1818,
+      "unresolvedAssets": 1818
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 48,
+      "teachingAssets": 70,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1840,
-      "unresolvedAssets": 1840
+      "unclassifiedAssets": 1818,
+      "unresolvedAssets": 1818
     }
   ],
   "stats": {
@@ -114,11 +124,11 @@
     "navigation": 7,
     "navigationReviewed": 0,
     "navigationWithTeachingContent": 2,
-    "semanticallyReviewed": 116,
-    "implementedCoverage": 116,
+    "semanticallyReviewed": 130,
+    "implementedCoverage": 130,
     "mainCoverage": 0,
-    "unresolvedContentItems": 429,
-    "unresolvedSources": 434,
+    "unresolvedContentItems": 415,
+    "unresolvedSources": 420,
     "adjacentConcepts": 26,
     "unresolvedAdjacentConcepts": 3,
     "openSchemaGaps": 6,
@@ -9656,8 +9666,85 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "caef6d7d62458f22a940955619a826b43bd5b977ce6def1273b1051a175d5e88",
+          "b8afb36d179bdbbb2f67b4c828088ddd85efba4df0ca7d98942aa75a53251043",
+          "982d54d1fbaffb6c70f72ef5cb3867da79ff0f310f6df2a94a51db4eb7c3cf18",
+          "7edb530cdf60614ba0d53fa757e55bd6d3073a8763b6ef76c4db5dba57b1e379",
+          "06bf64d525198e61f498644f9bfa8b3b676a51993ad2f9723a12c05de5befd92",
+          "e31e84b90d9faef3f0ae71a99abda13235d77b97309addf00ebf64c2fc6933ac",
+          "c1fa4d7122088c8c579d9988cea8f4ba02d0724ea7ac99b4bf9426ecb37eb1c8",
+          "6b0879c42d32b5b9b33c74a8856597c97bc0e1127b283e0ecf848b6ebe52c827",
+          "a69b32e8fa2194d2b69e11cda06e01da168aee3d7d1d6dd5b668f6459be46ec6",
+          "819d13161fd33a175b5205c9c09418fbbc60274ea59b3ae2d80e35412ec42d3d",
+          "f47834c953ef3927e2a323a1cd4c43fbc71680a8cf1505dba429af161d8baf82"
+        ],
+        "points": [
+          {
+            "id": "death-apoptosis-and-bcl2-family-mechanism",
+            "requirement": "Intrinsic apoptosis involves mitochondrial outer-membrane permeabilisation, cytochrome c release into the cytosol, apoptosome assembly and caspase-9 activation upstream of executioner caspases such as caspase-3 and caspase-7. Death-receptor signalling can activate caspase-8; BID cleavage links this route to mitochondria. Initiator and executioner roles differ.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-apoptosis-and-bcl2-family-family",
+            "requirement": "The BCL-2 family contains survival proteins, including BCL-2, BCL-XL and MCL-1; BH3-only stress mediators, including BIM, BID and PUMA; and pore-forming effectors BAX and BAK. In experimental cells, loss of both BAX and BAK blocked several mitochondrial apoptotic responses, rather than every possible form of death.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-apoptosis-and-bcl2-family-compartment",
+            "requirement": "Cytochrome c moves from the mitochondrial intermembrane compartment, including crista stores, across the outer membrane to the cytosol. It does not begin in the matrix. The inner membrane separates these compartments; the spatial sketch is simplified, with no implied pore stoichiometry.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-apoptosis-and-bcl2-family-interpretation",
+            "requirement": "A stain for BCL-XL measures abundance rather than survival dependence. BCL2 and BCL2L1 are different genes, and inhibitor selectivity matters. Souers and colleagues re-engineered dual BCL-2/BCL-XL inhibition into BCL-2-selective ABT-199, sparing human platelets; early tumour lysis in three refractory chronic lymphocytic leukaemia patients does not establish benefit in every tumour. A mitochondrial response, caspase marker, sustained killing and immune protection remain separate outcomes. Keep cell identity, timing, handling controls and later survival or regrowth with cleaved-caspase assays, membrane readouts and microscopy. Mitochondrial BH3 challenges test readiness under a defined protocol, rather than completed killing or clinical benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -9729,8 +9816,54 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "0d5faeb388fbced46943f1ee964238df3c5f1d788fda4561f2a205922352fa8e",
+          "38ac1584d8d73174236a692d73e05669db13dcf1c66466d1be442f0030ad0503",
+          "97dfd9b7064031db3e76ebd51694589dfe3a76e65769f65a5470f8bba1a01c44",
+          "5108dafdf67666e9cf1a3bd27ff118b4b1deadac7cc4c34180b47a76b5e0d282",
+          "0a7e755f8d4db9227d98ffaa8573d03605a3bf2a309d0304ae6dc27b8c25c2cf",
+          "f8eee049456780e8ea1fe4b39cbec7f79696f98711a4fc50882c3d10ff0b966f",
+          "91f66b26bea764759ef546c63b5f76531d8f0cd57bacb46c730bad17cefb217c",
+          "c29f9f62b8eb825a063ece28a5672c92a3af8373a8ecc7693889872edd6f6a4b",
+          "74eb71fc3538f446a09f225f0156ebc251ee299fbc5187d13b295afb1f2ddd03",
+          "9d8024171c38b14bfdca15e45eadcfaea684a61456b8aa1e62d325495706e701"
+        ],
+        "points": [
+          {
+            "id": "death-apoptosis-vs-necrosis-vs-ferroptosis-comparison",
+            "requirement": "Compare mechanism, morphology, immune consequence and living arrest separately. Apoptosis uses regulated dismantling; necrotic morphology describes boundary failure; ferroptosis requires iron-dependent lipid damage causing death; immunogenicity requires a compatible adaptive response; senescence is a living arrest. These categories are not mutually exclusive outcomes or a universal appearance-based classifier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-apoptosis-vs-necrosis-vs-ferroptosis-exercise",
+            "requirement": "In the fictional killing experiment, rescue by both an iron chelator and a lipid-protecting compound with no caspase-inhibitor rescue supports a ferroptosis hypothesis. Check lipid damage, death timing, perturbation specificity and GPX4 or glutathione-related mechanisms before attribution; immunogenicity is a separate test. A single stain is not enough.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "apoptosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "40841efb0661cdedf492a453964578499d8abf926694a35e2dfd101d37818b2d",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -9810,8 +9943,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "4fa1116f16e2bfc0aad0f6709472e81df327a179711085b8e9dcf37275160cd8",
+          "791463d7468d3f6adf7ba8de5eea99c9c859fbcaef598312acb55397e83f6293",
+          "d0bbb8e43da03fcaf5a567f93fa40437aacccd27a757758c3ad1cbecbe2f9e01",
+          "59e4a846bc621b141e704b907ad9480ed75ff459ec3a5f6346faf0c0d96b529b",
+          "7ddcdf8479e0a69328ce7769cd79166d7d4baa8b409d5c300b598394136dbff4",
+          "3dfb70f323ac6b85477c98463acaa45a56c6632d097cb0737732b0cb4b7f519d",
+          "8a38a3311223512382293a6b1fe392c6199229f95bd9c119ad8e45d241400b21",
+          "900850010b11b09b538918bfc00eb60fb4a13f47a44ca36588fe723ba038e018",
+          "6e103d9b137e07985b03a7545ccd10c8e4c4f472b25f1665e693da5c6c156175",
+          "8459845150cef329669008ec19cc6387c2776378b98b6682725446f09635f5fc",
+          "0b009e21abd3fb352f36d6ef8697defaece4f16499c2330967dd0fadb14a9089",
+          "b1b6e6b088412ab746c5db7cccf43854e0a826cc16f791c6b91b1361eb21c9dd"
+        ],
+        "points": [
+          {
+            "id": "death-autophagy-mechanism",
+            "requirement": "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "autophagy",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "15185250204e0a3441fcb29fd51aa015ceb66a7760d582a747f0badd82562aad",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-autophagy-flux",
+            "requirement": "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "autophagy",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "15185250204e0a3441fcb29fd51aa015ceb66a7760d582a747f0badd82562aad",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-autophagy-specificity",
+            "requirement": "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "autophagy",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "15185250204e0a3441fcb29fd51aa015ceb66a7760d582a747f0badd82562aad",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-autophagy-clinical",
+            "requirement": "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "autophagy",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "15185250204e0a3441fcb29fd51aa015ceb66a7760d582a747f0badd82562aad",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -9896,8 +10107,87 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "8fa5d8599918dc56821a125a4254965f53ccc4d815f91aafbe155fec30785ba0",
+          "af62a3dce296e9dbea6ce0600fb67c44ed4a1249884de56492f2d4615b7369b7",
+          "92f610d90332fabfffd078da19a5663af5cc7c3a9125c3fd1b8d07dfb68b5394",
+          "a9882f2f8f1a5913f7bc2f575d4f4848a7a2f0e995904049038f8b29662f280f",
+          "4f40f6b6013a5c3e18732771bd01c00082b070ab931844c1a2566d32282f167c",
+          "11cd15732307d35510b0edf657b2a81482114b87ad0da9e0562a5800ece86491",
+          "ea7bb27e5bd5b572f54a90160cec775d718c301681cd6c294be2bc9c8c8109af",
+          "e133e2d215e959a104186d05f75828dd89f756aade1f8d704dd1b8c7d2db59f9",
+          "6a8782805557871fb0df99b5b230b51679fecf38f432b62af95c7c1a38945809",
+          "c23cdd578df90518bd882163f49dd27314f23809e5588302711fc2d34b86e874",
+          "da635fef2f5460b44e8ae7a5edd1144e775fffefe6d878290b09d9f1d3ea576f",
+          "27f6709aa885b38843b36794a7ac2de848e931d819f61f246e2339be56b30fcd",
+          "bcb8dd34c8b8e0b6986be0a0a36992a84a697fab4857df4779479423c38aff49"
+        ],
+        "points": [
+          {
+            "id": "death-ferroptosis-mechanism",
+            "requirement": "Ferroptosis involves iron-dependent membrane-lipid peroxidation causing death. Erastin experiments implicated cystine uptake through system xc-, connecting cysteine and glutathione supply to antioxidant defence. Vulnerable polyunsaturated lipid chains, iron availability and cellular conditions matter; general reactive-oxygen fluorescence does not establish this mechanism.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ferroptosis-cell-death",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "8f88f14c5a87d72b01c2c5a85904cc15fe36b2095cc31412c539a414ed05ee2c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ferroptosis-defences",
+            "requirement": "GPX4 uses glutathione to reduce lipid hydroperoxides to lipid alcohols. FSP1 provides a parallel coenzyme-Q radical-trapping defence; it does not replace every GPX4 function or describe the whole protection network. Protein abundance alone does not measure protective activity or predict compound sensitivity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ferroptosis-cell-death",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "8f88f14c5a87d72b01c2c5a85904cc15fe36b2095cc31412c539a414ed05ee2c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ferroptosis-measurement",
+            "requirement": "Assigning ferroptosis needs convergent measurements of death, lipid damage preceding death, iron dependence and appropriately controlled rescue. Independent genetic and chemical perturbations strengthen attribution; rescue alone is not complete proof. Probe chemistry, concentration, nutrients, cell density and observation time can alter results. A lipid-probe ratio and death fraction are different outputs, with no universal diagnostic staining threshold. Live death and rescue tests consume viable model material. Specify lipid-probe oxidation ratios and independently measured death percentages over a stated interval; a marker snapshot does not reconstruct the full causal sequence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ferroptosis-cell-death",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "8f88f14c5a87d72b01c2c5a85904cc15fe36b2095cc31412c539a414ed05ee2c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ferroptosis-translation",
+            "requirement": "A culture with abundant GPX4, a general oxidation signal and no death has not demonstrated ferroptosis. Cell-line and xenograft vulnerabilities do not establish tolerable exposure, selective cancer killing or benefit in patients. Alternative defences can confer resistance, so a strong antioxidant programme is not automatically a treatment vulnerability.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ferroptosis-cell-death",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "8f88f14c5a87d72b01c2c5a85904cc15fe36b2095cc31412c539a414ed05ee2c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -9971,8 +10261,85 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "1892fb9afafb08b22513ff4f6de4df999ae85c51823550981303e85a8a6c6fe1",
+          "1a23bbd9ad4a7e7fa1eca84c925d49442e9341a8e0c3103b4e92df1e3989cda4",
+          "9adafc4e35e674512a001ba19dadda397119a139d8c0bf57085d0495a8230940",
+          "55f075a7e2aaf8e3b237735148332a3c8c2ae30eb2582e415800aa3825fd5b81",
+          "287f906a4bf046ed974a64e5b8463e5ad300b73888bc733d0bc013ff945af02a",
+          "2c6d12ddb33c0432f20aaae642e0f17dc70adc1691a20a72a006496d69dbf9b4",
+          "c24d30dd0959b9ac8a5c1650be66e4464b87807a2d3099e02dec6867c254a8e8",
+          "7af7bf07f13bc18abb70d508d244f8438fa0a9b0db460613fe302f37b7ecfbff",
+          "f125472f76a8968058c6950ecae7e50af82fa8aa0d168502eeef9c90a7dd3996",
+          "ef609d928603f04daa9c1e7c1b337cda74dda4fc005a6307155e55953b0e17c0",
+          "42502b5db0a3f675e236718940ee922224baa4e88c6685eb55de8c8dc44ba4bc"
+        ],
+        "points": [
+          {
+            "id": "death-immunogenic-cell-death-definition",
+            "requirement": "Immunogenic cell death is regulated death capable of initiating antigen-specific adaptive immunity in a compatible responding host. Antigenicity and appropriately timed adjuvant signals are both necessary considerations. It is an immune consequence, not an exclusive machine opposed to apoptosis or necrotic appearance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunogenic-cell-death",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "9701ead78a4339a9f7e4915252b8bfd390d88c5cd55a75749e31ac436fc2506c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-immunogenic-cell-death-signals",
+            "requirement": "Surface calreticulin, released ATP and HMGB1 have distinct mechanistic roles in defined experiments. Calreticulin supported dying-cell uptake, ATP signalled through dendritic-cell P2X7/inflammasome pathways, and HMGB1/TLR4 supported processing and presentation. These are examples rather than a universal sufficient three-marker checklist. A DAMP is not automatically a tumour-specific antigen.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunogenic-cell-death",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "9701ead78a4339a9f7e4915252b8bfd390d88c5cd55a75749e31ac436fc2506c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-immunogenic-cell-death-functional-test",
+            "requirement": "In the consensus vaccination assay, remove residual inducing chemical and add no separate adjuvant before vaccinating immunocompetent syngeneic mice with dying tumour cells. Compare later challenge with living matched tumour cells in vaccinated and unvaccinated hosts, and test specificity with unrelated compatible tumour cells. Incidence and growth are functional readouts. Immune-competent versus deficient comparisons alone cannot isolate immunogenic death from other immunostimulation. Assays consume tumour-cell aliquots, supernatant or host-model material and report separate dead-cell fractions, signal concentrations or surface staining and challenge incidence or growth. Residual inducer, contamination, incompatible antigens and poor death confirmation can invalidate attribution. No universal DAMP cutoff establishes immunogenicity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunogenic-cell-death",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "9701ead78a4339a9f7e4915252b8bfd390d88c5cd55a75749e31ac436fc2506c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-immunogenic-cell-death-translation",
+            "requirement": "Death plus extracellular ATP does not establish a cancer vaccine. Danger signals, cross-priming, functional protection, distant control and patient benefit are separate claims. Even a positive mouse vaccination assay remains model-bound and does not select a clinical treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunogenic-cell-death",
+                "version": "proposal-therapeutic",
+                "field": "notes",
+                "fieldSha256": "9701ead78a4339a9f7e4915252b8bfd390d88c5cd55a75749e31ac436fc2506c",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -10047,8 +10414,85 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "ccdd7d8588b5a8b926b9e30023f0f779b012b8008b8e9c033f9458fa84c3cf8a",
+          "ebd3d5fb70f6ed09174650296882c7782fbe648faae2e5dcf8d0b29c3c64ad9a",
+          "1b145de0631701f6ec38f4bb9c2de9450288f33b7aa46d7072550e7c298a2a94",
+          "95d71843214f46923533be84638147f902c8cf4524986ca4fed2f059a8ebcec5",
+          "d76fdcab906fcc84b09d4b4540cc5b4e69cba17c957ff3b1452d28834856cadc",
+          "494dedbd141f0c5342b8fa0a6b4c85d4cd3965b69c8a6eefc368e0f150a96a3c",
+          "d0974eab43a462f1e223dc59fb4eac54aaa7a925f5cccfad8795aef681632c36",
+          "5904ff26fed9fce03c11bdb99c18e194f9c3855301607437c936dd9e60d59558",
+          "365ab635aafd33529b537a8b7e2cc5c58d1dbb2ad2aa6fdf282c15185101feb5",
+          "f2ed6883a8074c623951e2199ef6415c9ef98d60738184d54a6a894d5e51d20b",
+          "fc031b80abbeadfe13836f03c9d6ad5a7b1b146a32b8eff389905dc86db14f7e"
+        ],
+        "points": [
+          {
+            "id": "death-necrosis-mechanism",
+            "requirement": "Necrosis describes loss of membrane integrity and tissue breakdown, rather than one molecular route. Overwhelming injury, regulated mechanisms and late secondary necrosis after apoptosis with inadequate clearance can converge on membrane loss. Necrosis is broader than necroptosis.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "necrosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "3f090ecf660c8cb70e8f2d260249639b1ca1d989b74566df5d71effd9990d5e0",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-necrosis-necroptosis",
+            "requirement": "RIPK3-dependent MLKL activation is an example regulated necrotic mechanism. Sun and colleagues used biochemical and cellular perturbations to establish MLKL downstream of RIP3; a necrotic region or membrane-impermeant dye alone cannot establish that pathway.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "necrosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "3f090ecf660c8cb70e8f2d260249639b1ca1d989b74566df5d71effd9990d5e0",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-necrosis-sampling",
+            "requirement": "Histology describes the sampled region; viable tumour may remain elsewhere. A membrane-compromised fraction, qualitative tissue necrosis and method-defined necrotic area answer different questions. Handling, delayed fixation and late sampling affect interpretation, and no universal necrosis percentage identifies a death mechanism or proves treatment success. Preparing and staining a section consumes tissue, while live-cell dye assays use tested aliquots and report a defined membrane-compromised fraction. Clinical morphology and experimental pathway perturbation have different validation contexts.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "necrosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "3f090ecf660c8cb70e8f2d260249639b1ca1d989b74566df5d71effd9990d5e0",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-necrosis-immunity",
+            "requirement": "HMGB1-deficient necrotic cells produced less inflammation in defined experiments. That result concerns danger signalling, rather than automatic adaptive immune memory. Dye entry after an intervention cannot establish necroptosis, vaccine activity or clinical benefit without the separate causal and host tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "necrosis",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "3f090ecf660c8cb70e8f2d260249639b1ca1d989b74566df5d71effd9990d5e0",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -10124,8 +10568,85 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "d7811e1afa95e3073ca057e9e8664110f927e768a425c2c0961d12814e138ca0",
+          "9af192e4768e64c30c100bd437459256e77884ae6747fd8210463a7cd26c5133",
+          "0533793ef171f2825e34dd4c268f32afe7284fd745e10ce0245978b5d3f01718",
+          "12464c9844482b023ea69b014432c5599d669709cc2b2558ce96044e5a084a3a",
+          "d873f435cf98ef4d319221c236d0c5628b575dd4a513f61543c94c41e92eab96",
+          "9d5c040c9dac2b66510714b978fdad77e303c1e773306a4f61ca920b4170fabb",
+          "3467b077338dec8df216021546f46315f2317d4847269a05d55e466949e02aa9",
+          "cfc55c2608c5126c1ee7b8dbeed5441de88e1d9d48d199d8fe0ae82dd51621ad",
+          "30f59e600aa84ccd652a77aa993140c56cbd2178a9a579d840c2d52805d3873c",
+          "c5119832a21279048b8acb5009ace9d2cc1983f2a85208d5c452a1683bbe2d64",
+          "3396b6fce9897d5108f69ccc6dac49799c981679b8af281e105b28dff00f3f1b"
+        ],
+        "points": [
+          {
+            "id": "death-senescence-state",
+            "requirement": "Senescent cells remain alive and metabolically active while division is durably arrested. Damage, oncogenic signals and treatment stresses can induce the state. It is distinct from death, reversible quiescence, the broader concept of dormancy and immune exhaustion, and is not a synonym for a person's age.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "senescence",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a95bc470a939d19589b6d3ee7d7f6aca1065f8936d81022d84b625cea3c33e47",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-senescence-measurement",
+            "requirement": "Low proliferation and increased p21 one day after stress do not establish durable senescence or a harmful secretory programme. Combine cell identity, longitudinal arrest or regrowth assessment and complementary features such as p16, p21, damage markers and senescence-associated beta-galactosidase. Fixed tissue cannot test later recovery, and no universal marker or arrest-duration cutoff works across contexts. Research outputs include method-defined cell fractions, marker intensities and longitudinal proliferation or regrowth. Stained sections and tested cells consume material. Secretions and their functional effects require their own readouts rather than inference from an arrest marker.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "senescence",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a95bc470a939d19589b6d3ee7d7f6aca1065f8936d81022d84b625cea3c33e47",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-senescence-secretions",
+            "requirement": "The senescence-associated secretory phenotype varies with cell, stimulus, timing and environment. In Coppé and colleagues' culture experiments, selected secretions promoted epithelial invasiveness; in Demaria and colleagues' mouse skin wounds, senescent cells and PDGF-AA supported repair. Neither experiment establishes a universal harmful mixture or a clinical instruction to remove senescent cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "senescence",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a95bc470a939d19589b6d3ee7d7f6aca1065f8936d81022d84b625cea3c33e47",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-senescence-escape",
+            "requirement": "Genetically switchable blood-cancer models showed enhanced clonogenic growth after release from senescence. This supports possible escape in those systems, not inevitable restart, relapse prediction or a preferred senolytic treatment. Arrest, secretion and effects on neighbouring cells require separate tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "senescence",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a95bc470a939d19589b6d3ee7d7f6aca1065f8936d81022d84b625cea3c33e47",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -10206,8 +10727,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "691b463799e6eb027fbe968bb1beb82ee889108ae34d6e04a4561e585a5f54d1",
+          "0d18b1646b00158c5106f8b91eec8977af1646a6ade0fc7682b3616e43174120",
+          "0e815e65bfc9f6c2f837a5b4fab05777cebb2ec3f12fda8332084d942f65faa8",
+          "06814253361377b73ebf45fa9518b1ae9479ea2bd3efd09ac43b7d1b37436a47",
+          "9a76a90297258828bf87b785b3319766c81749141dd2254a21d0f23ed1287aec",
+          "de92c122d1a21cab83c7cdd90c32516b558e9419d4feb4026cf9ea0d46010ff8",
+          "0cef1621409478f528007045a56092e4c567ff7505bff5b7db8397c1230e5650",
+          "63df9c52ff4f7f8f358d925ae0aa00f16364833e7fdd1d1ce038de0f350593a3",
+          "fe5993cfa4b171fe6686e5c0f7a4d3628ce3de3b8599ed72473eb99e87ffbd58",
+          "d1c3f5249651dc727df7ae023d29129bdb23cef90db56ad99000f951b546f91e",
+          "c3254bae0b9f60c452b9bd75f03f76a124cc3721a45af86646b4ccbcb919a87b",
+          "38d6b1940b106c044431caeda4a4d2972a10e1707224c34a97ce6b800c274a84"
+        ],
+        "points": [
+          {
+            "id": "death-ubiquitin-and-proteasome-enzymes",
+            "requirement": "Ubiquitin is a small protein attached through enzyme steps: E1 uses ATP for activation, E2 carries activated ubiquitin, and E3 promotes substrate selection and transfer. Reticulocyte experiments separated these functions. E3 families differ in transfer mechanism; no single cartoon specifies all of them.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ubiquitin-proteasome-system",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "bc730b546c63bb37fc720af909353c25a4f6680ef348adadd1a5d7e1b0ff7976",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ubiquitin-and-proteasome-fates",
+            "requirement": "Suitable tagged cargo can be unfolded by ATP-dependent proteasomal machinery and broken into fragments, while ubiquitin is removed and reused. Other ubiquitin signals organise interactions rather than destruction, and yeast experiments show overlapping chain functions. Lysosomal autophagy and proteasomal breakdown are distinct routes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ubiquitin-proteasome-system",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "bc730b546c63bb37fc720af909353c25a4f6680ef348adadd1a5d7e1b0ff7976",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ubiquitin-and-proteasome-measurement",
+            "requirement": "Protein abundance reflects synthesis and removal. Measure named-substrate decay over time with synthesis, handling and viability controls; restoration of an E3 adaptor can strengthen attribution without proving direct binding or global proteasome failure. Catalytic activity per time, ubiquitinated-cargo intensity and protein lifetime in hours are different readouts. KEAP1 is one CUL3 adaptor for NRF2, so a CUL3 change cannot uniquely identify that substrate. Pulse labelling or a controlled temporary synthesis block can help estimate turnover but may cause stress. Independent perturbation and restoration help distinguish a selected-substrate effect from a secondary response; enzyme engagement alone does not establish selective killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ubiquitin-proteasome-system",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "bc730b546c63bb37fc720af909353c25a4f6680ef348adadd1a5d7e1b0ff7976",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-ubiquitin-and-proteasome-clinical",
+            "requirement": "In a randomised trial of 669 people with relapsed myeloma after one to three prior therapies, bortezomib prolonged median time to progression compared with high-dose dexamethasone: 6.22 versus 3.49 months. This historical clinical result does not make an arbitrary E3 variant or abundant protein a predictive treatment biomarker.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ubiquitin-proteasome-system",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "bc730b546c63bb37fc720af909353c25a4f6680ef348adadd1a5d7e1b0ff7976",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11045,8 +11644,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "0e79e4da28f0ca9af87fe9ccfcd7516c5308f0a343007a25212b70c9c60894d7",
+          "73758111c8bf37a8b32cde86efd029fd28cc183e1b4470333712bb371e76a002",
+          "4ffca95c07c6fc1ed90f8bf96793335ee47cc8081b737895cabaa5f913315761",
+          "88cb09b6b1ff716af989b4db996b8ba7f97daa50d47ab1303e55276065e2e226",
+          "77fb649ef4a72bf86bc9e23a0015b436721f4fdcd4077b7667ce9dd71753c3bf",
+          "678b889570d3426b5f5db98a1bca4c4fc96f5df594e1644c2df2fb9399cf7530",
+          "7ff6cae9a77c6987496d5c42700ac4ad6d10a1723ed0e78162adad546499d8a7",
+          "a4041b1c3fedd973335a0cb540ad9635b8900f1f912a254f9c037cd75768575f",
+          "e7d1f1842a2a89de71687ab7caa8549d224e7af1392aa92060bb356da6c7c069",
+          "f24e7d9e49e78c3fbb18e78f87692d266840897ea7f278a738b8e8db3ad47564",
+          "f4bb26319bd25062a7685e7412d134bbaf174f7149a778b43ae9f673bc164731",
+          "e8db6938be9fe6c7fea443d3f88a0e50c7b20f74d39a4ffb4a83586e5e75d5e8"
+        ],
+        "points": [
+          {
+            "id": "death-cholesterol-and-srebp-transport",
+            "requirement": "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-metabolism-cancer",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a2b2291dead9fcf7e20ebc7aeec42a20ef927dc05887bb35c1a1f5519ef90a09",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-cholesterol-and-srebp-members",
+            "requirement": "Identify the SREBP member and compartment: SREBP-2 is especially associated with cholesterol regulation, whereas SREBP-1 has major fatty-acid roles. Precursor, nuclear fragment, transcript, total sterol, uptake and synthesis rate are different readouts. A labelled production experiment answers a different question from an abundance snapshot.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-metabolism-cancer",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a2b2291dead9fcf7e20ebc7aeec42a20ef927dc05887bb35c1a1f5519ef90a09",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-cholesterol-and-srebp-compensation",
+            "requirement": "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-metabolism-cancer",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a2b2291dead9fcf7e20ebc7aeec42a20ef927dc05887bb35c1a1f5519ef90a09",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-cholesterol-and-srebp-rescue",
+            "requirement": "A statin inhibits HMG-CoA reductase in the mevalonate pathway, which supplies cholesterol and other products. Mevalonate rescue therefore cannot uniquely identify cholesterol as the limiting product. A pathway perturbation is not equivalent to every alteration of SCAP-SREBP regulation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lipid-metabolism-cancer",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "a2b2291dead9fcf7e20ebc7aeec42a20ef927dc05887bb35c1a1f5519ef90a09",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11131,8 +11808,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "d7b5fcd5277bfbdbe5a471e2fef63a3b40dfa6646f6001c38c4ef67b9636945f",
+          "b86aa0c48399d5fdd9ed91c324888bb3c2889af7409c80d2c4fec5b76676267c",
+          "3833b259740faf39e4096d422ebd37a6028280c0f0034b277aea7ef04f00f8b7",
+          "21ba4c96a2e325ddac93ace18dc25622cf27c59c18eb4044b1fcf0d05675f4ac",
+          "21c22312b3f06b2f89b33261644748d72a174b8088915266d07678a2df496a65",
+          "9bfadb4c357333f995744491ac625d1a64876c8d3be9e6221af3a73b269f87f9",
+          "145670f2ad118dbabf8a13d9b842f03a58466d23d83c57ed2c693e327a9010c2",
+          "0983d9c3dcfa06e6a181cfbd54c00410dd23c26aa1b53e3e63b07fc79af5300b",
+          "9a5e231131d6ddc2906a8bf8d4c5f5fd6e5011be6c996b2ef959d111535cde19",
+          "675c831846ea1d546790d4af5d663d87bda1bdeb9f5622fdfefcee23fb1c1dcd",
+          "2b23e3b35ecd7a4fabc5f621d322a8908fbdbe2f68a37f6ba80b4b72f0e742bf",
+          "a46892822635170a38641ff38ca4b58c2260db678003589e092222ad07a40396"
+        ],
+        "points": [
+          {
+            "id": "death-er-stress-and-unfolded-protein-response-branches",
+            "requirement": "ER stress is an imbalance between protein-folding demand and local capacity; the unfolded protein response is an adaptation programme, not the same thing as the stress. IRE1 processes XBP1 RNA, PERK phosphorylates eIF2alpha and ATF6 processing releases a nuclear regulator. Distinct branches can alter folding capacity, incoming translation and disposal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "er-stress-and-unfolded-protein-response",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "aacfa05341bf0ec1fca3c82891e4255954b84f8648b1b9d0b1e78fdb7df83bd8",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-er-stress-and-unfolded-protein-response-compartments",
+            "requirement": "ATF6 travels from ER to Golgi for processing; the released fragment, rather than the intact membrane-bound precursor, acts in the nucleus. Total XBP1 RNA differs from its splice-form fraction. Other kinases can phosphorylate eIF2alpha, so one phosphosite cannot identify the whole response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "er-stress-and-unfolded-protein-response",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "aacfa05341bf0ec1fca3c82891e4255954b84f8648b1b9d0b1e78fdb7df83bd8",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-er-stress-and-unfolded-protein-response-measurement",
+            "requirement": "Specify preserved material, RNA quality, isoform-specific methods, total-protein controls, timing and identified cell populations. Splice-form fractions, processed ATF6 and defined phosphoprotein signals are different outputs. Increased XBP1 splicing with stable viable-cell counts supports a branch response, not lethal stress; measure growth and death directly and test causality independently. RNA or protein preparations and compatible tissue stains use material; functional dependence tests require viable cells. Report splice-form fractions, defined phosphosite signals or processed fragments with assay-specific controls, rather than a universal UPR-positive treatment threshold.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "er-stress-and-unfolded-protein-response",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "aacfa05341bf0ec1fca3c82891e4255954b84f8648b1b9d0b1e78fdb7df83bd8",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-er-stress-and-unfolded-protein-response-cancer",
+            "requirement": "XBP1 depletion altered tumour growth and relapse in defined triple-negative breast cancer models, with an HIF1alpha transcriptional interaction. Model findings and patient expression-signature associations do not establish universal XBP1 dependence, an assay cutoff or a treatment benefit. Successful stress adaptation can support survival.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "er-stress-and-unfolded-protein-response",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "aacfa05341bf0ec1fca3c82891e4255954b84f8648b1b9d0b1e78fdb7df83bd8",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11213,8 +11968,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "dd5ac31351508e78ac5ba9fb2320b5f186aa70977834d665e6fefb550f783aed",
+          "bca96cf61b368bc09f6687ae87466df2f0e9ea2d05a8eaebf9759954c66cea77",
+          "1adbf289e6deee272f32a884b0750e8f662e1aa1c05af78655ca4be389e0a5d9",
+          "575b809eea06a9d877ad8bcf82a8dac3687a909a3e64bf6583bf58fc0c5478ee",
+          "5c4fd6aabbc979807024dc32848cf7fb7ba6d70dceac4e8954a7c5ee1b790e0f",
+          "fa5a2b5faa0b0e25b00972942f22be389da531cd35f791fad5832074283eb26d",
+          "8a01a488b87431bb7725bf2ab4bad7beffd236910f5fc6fe2dbac0cb748afb47",
+          "b50d79d304312e4e4c5898f1ba257977d94d7a15c40e58db572ba35c8136333e",
+          "7fe688985cb036309a4cf3e37763a39372e1820976ff8ca011a0cb327e07ba65",
+          "ba186e63244f28df6a96e9a61fcf499ad3b6e9fd687b8bde657af391fc62468d",
+          "129d8580d56dbbee9bf2f480be3c6344a24f0a2752d20ba8e22399a203302a85",
+          "4caa01d93533e056027c7c6e65b16682f897ce64132f453f9a7a995c5784782a"
+        ],
+        "points": [
+          {
+            "id": "death-nutrient-sensing-ampk-energy",
+            "requirement": "AMP-activated protein kinase is a catalytic and regulatory complex responding to energy state. AMP and ADP can protect activating phosphorylation, but AMP also supplies direct allosteric activation that ADP does not. ATP, ADP and AMP quantities and ratios are different from a phosphoprotein readout.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nutrient-sensing-ampk",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "cfd26c9961394135eea0ccf82516dcc909d1e5eda5ecad15eb56f75458cd1278",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-nutrient-sensing-ampk-inputs",
+            "requirement": "LKB1 and a calcium-sensitive CaMKK2 route can activate AMPK in suitable systems. AMPK can phosphorylate raptor and restrain mTORC1, connecting energy supply to costly growth-related work. An AMPK phosphosite does not uniquely identify glucose deprivation or every nutrient signal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nutrient-sensing-ampk",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "cfd26c9961394135eea0ccf82516dcc909d1e5eda5ecad15eb56f75458cd1278",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-nutrient-sensing-ampk-adaptation",
+            "requirement": "During energy stress in model experiments, AMPK preserved reducing power through altered fatty-acid metabolism and supported survival. Increased AMPK and raptor phosphorylation, slower growth and greater survival than an AMPK-deficient comparison are compatible observations. This is not a universal benefit from activating or inhibiting AMPK.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nutrient-sensing-ampk",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "cfd26c9961394135eea0ccf82516dcc909d1e5eda5ecad15eb56f75458cd1278",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-nutrient-sensing-ampk-measurement",
+            "requirement": "Keep collection timing, preservation, total protein, antibody specificity and matched perturbations with energy-state and phosphosite measurements. Mixed tissue can combine malignant and nonmalignant responses. Slower growth is not death, an altered gene needs direction-of-function evidence, and a marker change does not make a multitarget drug a selective AMPK intervention. Report concentrations or ratios of energy carriers, normalised activating phosphorylation and defined downstream sites. Preserved tissue can support staining, while viable-model perturbations use material. No universal AMPK-high cutoff establishes vulnerability.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nutrient-sensing-ampk",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "cfd26c9961394135eea0ccf82516dcc909d1e5eda5ecad15eb56f75458cd1278",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11300,8 +12133,87 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "d8c5d0d44aa9bd57d5adbb1c16565e21cebbe2f907c13309a1728798526f7f35",
+          "314047f720744591b5cbedcf764de704e844194d64e11e5015b4e9e4aad33fc5",
+          "09799ed727f732491e96c702771b501b61db5e5172fcd0fdc56e4f32e1e4939f",
+          "0753b8a2f82dc1374d733739e538156f4dadfcb0667a42a208e5ac8cc2bb5a88",
+          "66ca51e13d51974bfe5511c47921b9e4bbb6c20368d72667cd53de80f3ab266e",
+          "0c5519d275381537f94a4c3ddb6ef573e708d97e90f288fa03f78a3cfbb7db6a",
+          "389ba407fd113aa002fcc8e03652a480946d6fd20de04e984cd38686c6e08882",
+          "dd9a97a851249b16c211a7d52c8cd39d145f1625454b78818e547b41d71c95cf",
+          "3a8fda5af6335578dc14b7db6dc2dcf9ca5604d3565d724425a208d96698572b",
+          "f19a8f422dee3de5a8d7d144ff8d6e3326c30559798b6b7564a9dacf7e5b15c3",
+          "720ad18fffd66a673643e810afb604de580d75d9f82beffb60a768c201cc3288",
+          "dd16c7c200f764d2678afcb8fce07b95f2b92c7689cf871c81da36303b54ce2e",
+          "c335e7c505422ee0ab02b38abd23b4581f1f49aae4a1eabcf07dd6f6db289d21"
+        ],
+        "points": [
+          {
+            "id": "death-oxidative-phosphorylation-gradient",
+            "requirement": "Distinguish electron transport, proton pumping from the mitochondrial matrix to the intermembrane space, return through ATP synthase and leak. Treat the foundational reconstitution as a named artificial-vesicle coupling experiment, with its own orientation, rather than a universal cellular orientation or fixed proton-to-ATP ratio.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "oxidative-phosphorylation",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0fba10989ba89adb3607d1d5e9473536d11d68998d217407bb6b591cb86afe59",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-oxidative-phosphorylation-rates",
+            "requirement": "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "oxidative-phosphorylation",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0fba10989ba89adb3607d1d5e9473536d11d68998d217407bb6b591cb86afe59",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-oxidative-phosphorylation-calculation",
+            "requirement": "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "oxidative-phosphorylation",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0fba10989ba89adb3607d1d5e9473536d11d68998d217407bb6b591cb86afe59",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-oxidative-phosphorylation-method-version",
+            "requirement": "Extracellular acidification includes respiratory carbon dioxide as well as glycolytic acid production. Quantitative glycolytic or ATP-rate calculations need appropriate corrections and an identified method version; the contents of the published correction must be checked before adopting a corrected formula or conversion ratio.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "oxidative-phosphorylation",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0fba10989ba89adb3607d1d5e9473536d11d68998d217407bb6b591cb86afe59",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11383,8 +12295,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "a25554e3589199e6a2816104a593dadb858c8862709b3800a01f1469f814c3aa",
+          "20eb6e68eaf5f12f717891d5ba23c4da7fdaa199ff668e25f7819548d19ca735",
+          "91d45f97a46805c74e34d0ce14a1bf78e7db65a95abee5d6618921e14b28ad88",
+          "fc00933dca1a85fb89b1eff163c028571fce50343c032dfe4f318baf66fb16a6",
+          "63c6df0d4dd71a2f301ababf257e88c172e03499d2d7155a99b10144811dd0f1",
+          "e220c59a08e64e499b874883752cbd05aa8a03efb5bfd5c401a741ca8c73a17d",
+          "48126791d9faafff9593b7852c8f30a42889274b6f932ff53ea65a16de187fb9",
+          "e8bd1086f446b0caaf8a99a74278ce87b3f40be91b5090036466adcb6e9a4230",
+          "212f52174f6149fb4881a8b3de6b684fa0a6bfba2172e002e42e9d7a326ce89b",
+          "5c0e1cae2deed7256fcfb43e467e15d2cb045403c107bde3e099eb11f661d843",
+          "ad1f724fa6201c3ee1dae5590d387865def574d8bdf77f5b406b5ed0d60c028a",
+          "e85c1fa2cde205c8a00bb4e0347c4cd00b3f3e89d61d8e4ed1ce2e24c0838d96"
+        ],
+        "points": [
+          {
+            "id": "death-reactive-oxygen-species-chemistry",
+            "requirement": "Reactive oxygen species include chemically different molecules; superoxide is a radical and hydrogen peroxide is not. Location, amount and time affect signalling and damage. A measured level reflects both production and removal, while antioxidant transcripts are neither a production rate nor a species measurement.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "reactive-oxygen-species",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "c794ccf11f355ed79060fd00a99a43a6fa87f2462251772e888a780b72d22ccd",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-reactive-oxygen-species-sensors",
+            "requirement": "An oxidation-sensitive fluorescence signal needs a named probe, loading and cell-health controls, location, timing and appropriate calibration. HyPer and HyPer7 are peroxide reporters with distinct pH and sensitivity properties, rather than universal measurements of all reactive oxygen species. Fixed-tissue damage staining cannot reconstruct a live chemical rate. Live reporters require viable material or engineered models. Outputs can be relative fluorescence or calibrated ratios; unstimulated, positive, probe-only and cell-health controls address different failure modes. The result is not a universal concentration of all reactive oxygen species.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "reactive-oxygen-species",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "c794ccf11f355ed79060fd00a99a43a6fa87f2462251772e888a780b72d22ccd",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-reactive-oxygen-species-outcomes",
+            "requirement": "A general fluorescent increase does not establish mitochondrial origin, lipid damage, ferroptosis or death. Validate chemistry and compartment first, then follow damage, viability and relevant independent perturbation or rescue over time. No general ROS-positive threshold selects a cancer treatment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "reactive-oxygen-species",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "c794ccf11f355ed79060fd00a99a43a6fa87f2462251772e888a780b72d22ccd",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-reactive-oxygen-species-context",
+            "requirement": "Antioxidants supported energy recovery and survival in detached mammary epithelial models; oncogene-driven NRF2 detoxification also supported tumour development in experimental settings. Less oxidation cannot therefore be assumed to mean less cancer. These findings do not recommend adding or withholding antioxidant supplements.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "reactive-oxygen-species",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "c794ccf11f355ed79060fd00a99a43a6fa87f2462251772e888a780b72d22ccd",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -11464,8 +12454,86 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of completed Sonnet assessment and coordinator primary follow-up; not expert sign-off",
+        "checkedAt": "2026-11-09",
+        "rationale": "All source sections and exact line blocks reconciled at both pins; actual light/dark figures reviewed with their lessons. Nine distinct Mermaid maps were additionally rendered and viewed with code hashes. Fifty-three original and fifty-four later semantic requirements retain scoped source and current field/body/export evidence.",
+        "sectionHashes": [
+          "366b7b20b4c85865fdf3b3951259ea5013ed99da9ea0afd72d0712b9dc830c28",
+          "03e28ce5e89986a5e7f82ecc4956a3625fcf9f8e5d72deb601749a39f6d31fd2",
+          "978aa702e8bccab6e1627a1522ac5a481145455f72cca242449fa06056f411f0",
+          "bb617283d1ede0f82a71aed86fbac7d7a42c4e3e4449cfed4f9088dbe6b838fb",
+          "946bb070faab7ebd86c98e9348e568102210eb6a4f4cc059272255a5a11ec7ca",
+          "454bd0a10549f9de62868e0a54da5296f48d26958adf6a58a3100229d0e2ccf0",
+          "6f0e41561e84ebd9536ee11a959a8d1342d6d0494c0102a1df690cbbe7d5d1ea",
+          "70c24f15a94a8fc4d0db1cf4717960fc673309e2dd83112be9bfb09ad06dc88b",
+          "59d8e68b7769a4cc1c82c3121988392df21e2832a3b2bd9dd5a17d03b0791c9a",
+          "a70431054a20f37f4661f5a2dfaecfe0e6f07e3eb7fb3b28b72f1e8b54c496f1",
+          "9dab4a6360f39c35a5a609ace97e1cc41b94b01449fdee8a8c7cdcc99cd5b6b0",
+          "2e94fa4a9f0a8f5e3cb5c1113729301d86aa3807a4f70e16bb517f134d7cb9a9"
+        ],
+        "points": [
+          {
+            "id": "death-warburg-effect-pattern",
+            "requirement": "The Warburg effect describes substantial glucose-to-lactate metabolism with oxygen available. Glycolysis can supply ATP and lactate formation regenerates a carrier needed for its continuation. Lactate production does not imply absent mitochondrial oxidation, and proliferating normal cells can use aerobic glycolysis too.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "warburg-effect",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0616edb75b2288c4ee9cb4aa67391a9fb73e398210f1002107bf6bec67cf8c77",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-warburg-effect-heterogeneity",
+            "requirement": "Intraoperative glucose-tracer studies in nine people with non-small-cell lung cancer found enhanced glycolysis alongside glucose oxidation, with heterogeneity within and between tumours and evidence for other nutrient use. These observations do not describe every cancer or establish an irreplaceable survival route.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "warburg-effect",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0616edb75b2288c4ee9cb4aa67391a9fb73e398210f1002107bf6bec67cf8c77",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-warburg-effect-measurement",
+            "requirement": "FDG imaging measures uptake and trapping of a glucose analogue, not lactate production or a cancer-exclusive process. Respiratory carbon dioxide contributes to medium acidification, so pH change is not pure glycolysis. Keep oxygen conditions, viable-cell normalisation, tracer identity, metabolites and timing with rate measurements; tracer labelling alone is not automatically a complete flux estimate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "warburg-effect",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0616edb75b2288c4ee9cb4aa67391a9fb73e398210f1002107bf6bec67cf8c77",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "death-warburg-effect-interpretation",
+            "requirement": "Lactate release, oxygen consumption and labelled glucose reaching mitochondrial metabolites can coexist. High pathway activity, a transcript signature or glucose uptake does not prove survival dependence. A culture nutrient-removal experiment does not establish that changing a person's diet selectively starves a tumour or identifies a medicine. Functional rate or tracer studies use viable cells, slices or a defined in-vivo experiment and consume or perturb material. No universal Warburg-positive threshold predicts treatment benefit; a functional perturbation and survival outcome are separate from the metabolic pattern.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "warburg-effect",
+                "version": "proposal-death-metabolism",
+                "field": "notes",
+                "fieldSha256": "0616edb75b2288c4ee9cb4aa67391a9fb73e398210f1002107bf6bec67cf8c77",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -21095,7 +22163,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "265653f848ea93462c253a8c459d7149af97e889dabc45e0556e0445924e0431",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21110,7 +22178,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "265653f848ea93462c253a8c459d7149af97e889dabc45e0556e0445924e0431",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21125,7 +22193,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "265653f848ea93462c253a8c459d7149af97e889dabc45e0556e0445924e0431",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21140,7 +22208,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "265653f848ea93462c253a8c459d7149af97e889dabc45e0556e0445924e0431",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21155,7 +22223,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "9fd3606fdde94275445c0af090b830b1256952edec2fd3fd15f2d42217ad5ef9",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21170,7 +22238,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "86c936e78d5af2ca8d59ba49695b5694455d5a66de44061e5c865c4d9f5345ec",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21279,7 +22347,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "9e821c4f6a65f17cff69fd80601e8e3dfcc320faf47d31a171797c3b0d2d952e",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21294,7 +22362,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "9e821c4f6a65f17cff69fd80601e8e3dfcc320faf47d31a171797c3b0d2d952e",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21309,7 +22377,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "9e821c4f6a65f17cff69fd80601e8e3dfcc320faf47d31a171797c3b0d2d952e",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21323,8 +22391,8 @@
                 "recordId": "antibody",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "731c8424ecfc0c82204c9545c374f96750e194912e405f25e50a83930306d2f2",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c6d8b9356798a90ec35d4a3a7fa3a4edbb4217233183b00e4f97de3844b0d146",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21423,7 +22491,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1cc8485377d7e84e1f9f23fc937ceabfb2a1fe35f661a0637a13198c00b088c7",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21438,7 +22506,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1cc8485377d7e84e1f9f23fc937ceabfb2a1fe35f661a0637a13198c00b088c7",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21453,7 +22521,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1cc8485377d7e84e1f9f23fc937ceabfb2a1fe35f661a0637a13198c00b088c7",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21468,7 +22536,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1cc8485377d7e84e1f9f23fc937ceabfb2a1fe35f661a0637a13198c00b088c7",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21483,7 +22551,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "d5ea3fbfaf3273fe56244fc0422ec2dac99ef2230b842ca05170a5a1b00e0e71",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21580,7 +22648,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "e457999dbc6bc3d3121713b7a01ad5ca409754dcb8c9504cb3afafdb2b888235",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21595,7 +22663,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "e457999dbc6bc3d3121713b7a01ad5ca409754dcb8c9504cb3afafdb2b888235",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21610,7 +22678,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "e457999dbc6bc3d3121713b7a01ad5ca409754dcb8c9504cb3afafdb2b888235",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21625,7 +22693,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "16f9e26a0578a0056d3eaa43d4104ccbc5c5c1ef3653c239ea60bcb6fd3946e6",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21708,7 +22776,7 @@
         "status": "reviewed",
         "auditor": "Sol coordinator integration of Sonnet source/figure assessment; not expert sign-off",
         "checkedAt": "2026-11-09",
-        "rationale": "All sections read at both pinned versions. Normalised teaching signatures match; routing/link and Used-in differences were inspected separately. Exact field proofs, bounded primary/review/textbook reading and the sixteen referenced light figures are retained in antigen-antibodies-2026-11-09. All requirements have current body passages; unviewed dark/supporting assets remain in the independent global inventory.",
+        "rationale": "All sections read at both pinned versions. Normalised teaching signatures match; routing/link and Used-in differences were inspected separately. Exact field proofs, bounded primary/review/textbook reading and the sixteen referenced light figures are retained in antigen-antibodies-2026-11-09. All requirements have current body passages; unviewed dark/supporting assets remain in the independent global inventory. Independent review found an omitted, scoped breast/melanoma association requirement; it is now represented without implying treatment benefit.",
         "sectionHashes": [
           "a055e6a3c355f00c47f763fdc6ab9c3e3f4f948e7f00376d720edfe0e089c542",
           "2ef62fb7b6a7bdb87f6aa7f611402c2cf3d71462d147121bb6009822b2e618a6",
@@ -21732,8 +22800,8 @@
                 "recordId": "tertiary-lymphoid-structures",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "5f55b4b1c4123b5e87136604096e266231a37d74dffe071a1dae6810ec7c9638",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "7d05f139a6d4a8a2b282e85ed4a1df7e5d2729b223084c4d1f0adbeb6433e089",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21747,8 +22815,8 @@
                 "recordId": "tertiary-lymphoid-structures",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "5f55b4b1c4123b5e87136604096e266231a37d74dffe071a1dae6810ec7c9638",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "7d05f139a6d4a8a2b282e85ed4a1df7e5d2729b223084c4d1f0adbeb6433e089",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21762,8 +22830,8 @@
                 "recordId": "tertiary-lymphoid-structures",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "5f55b4b1c4123b5e87136604096e266231a37d74dffe071a1dae6810ec7c9638",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "7d05f139a6d4a8a2b282e85ed4a1df7e5d2729b223084c4d1f0adbeb6433e089",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21777,8 +22845,23 @@
                 "recordId": "tertiary-lymphoid-structures",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "5f55b4b1c4123b5e87136604096e266231a37d74dffe071a1dae6810ec7c9638",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "7d05f139a6d4a8a2b282e85ed4a1df7e5d2729b223084c4d1f0adbeb6433e089",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "antigen-r55",
+            "requirement": "Breast and melanoma studies associate organised immune responses with outcomes, retaining each study's specimens, methods and setting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tertiary-lymphoid-structures",
+                "version": "proposal-antigen-antibodies",
+                "field": "summary",
+                "fieldSha256": "7d05f139a6d4a8a2b282e85ed4a1df7e5d2729b223084c4d1f0adbeb6433e089",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21965,7 +23048,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "5b351841d2c0d996d65a1beba8ae38603c617a8f012aa8291346190d26047a2a",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21980,7 +23063,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "b53115041d88326fad4539f4f50565696641f7212488c392ec43d56f8f8b7ad9",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -21995,7 +23078,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "b53115041d88326fad4539f4f50565696641f7212488c392ec43d56f8f8b7ad9",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22109,7 +23192,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "d455d0b31d2a485b633de647d02310d2f72ea4e0f1aa6db595d7e0c54b7d6671",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22124,7 +23207,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "d455d0b31d2a485b633de647d02310d2f72ea4e0f1aa6db595d7e0c54b7d6671",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22139,7 +23222,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "d455d0b31d2a485b633de647d02310d2f72ea4e0f1aa6db595d7e0c54b7d6671",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22154,7 +23237,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "d455d0b31d2a485b633de647d02310d2f72ea4e0f1aa6db595d7e0c54b7d6671",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22266,8 +23349,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22281,8 +23364,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22296,8 +23379,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22311,8 +23394,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22416,7 +23499,7 @@
                 "version": "draft-373",
                 "field": "notes",
                 "fieldSha256": "ae1f8436f6c03d0f4568d7a3db7d85c8d3323c7f1e99cb021b3b11f38cd2914d",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22529,7 +23612,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1623809f22875fc0a0f3f85776426b6b7563b30f7fe52df92cd7cb8c9daf738e",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22544,7 +23627,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "1623809f22875fc0a0f3f85776426b6b7563b30f7fe52df92cd7cb8c9daf738e",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22664,7 +23747,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "f682be094871060bd3d144119c3b7fada82669b9385ffae9653dc07cf0923461",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22679,7 +23762,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "f682be094871060bd3d144119c3b7fada82669b9385ffae9653dc07cf0923461",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22694,7 +23777,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "f682be094871060bd3d144119c3b7fada82669b9385ffae9653dc07cf0923461",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22709,7 +23792,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "f682be094871060bd3d144119c3b7fada82669b9385ffae9653dc07cf0923461",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22724,7 +23807,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "f682be094871060bd3d144119c3b7fada82669b9385ffae9653dc07cf0923461",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22739,7 +23822,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "8a02fe0745bcfedb8848347eed1bc103bd0662d45d92d0737fcfab1f10d95961",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22853,8 +23936,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22868,8 +23951,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22883,8 +23966,8 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -22898,23 +23981,23 @@
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
-                "fieldSha256": "ed5f199ac00b0c551b65ac34d2c2adf8ab28d314b2688dc9e24b7cd6747c1144",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
           },
           {
             "id": "antigen-r38",
-            "requirement": "HLA-C lower expression than A/B and smaller peptide share (Guide claim): only allele-specific variation verified (Kaur)",
+            "requirement": "Distinguish allele-specific HLA-C expression, a scoped HLA-A/B/C comparison and a method-dependent observed peptide share, without inferring a universal expression hierarchy or binding advantage.",
             "status": "covered-draft",
             "evidence": [
               {
                 "recordId": "hla",
                 "version": "proposal-antigen-antibodies",
                 "field": "notes",
-                "fieldSha256": "66e112da300e2a2fb975f650509382d69fac5a98385503632e082465d59d8633",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "2e726229ab460d92ac471d8c5386d9928e4d91d678476ad9b582f6317f4d6bab",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23021,7 +24104,7 @@
                 "version": "draft-373",
                 "field": "notes",
                 "fieldSha256": "91da2d80d6c232c5757528a377f227e7c09f3dc94e62530d284619cb86c2e307",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23134,7 +24217,7 @@
                 "version": "draft-373",
                 "field": "notes",
                 "fieldSha256": "83c841ad54865bfa4e4a061440237be5ce2a0a2b13274b8624e63a8a8dff433b",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23248,7 +24331,7 @@
                 "version": "draft-373",
                 "field": "notes",
                 "fieldSha256": "c2ab19852443dbd31e65d5855fb5821fe295d0f442bcf1b62208ea025a741a35",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23361,7 +24444,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "ede250610b2438fe85da4d7dbd4a122ce0384fbe9d88c5f06ac97477b9b1bf6a",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23376,7 +24459,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "ede250610b2438fe85da4d7dbd4a122ce0384fbe9d88c5f06ac97477b9b1bf6a",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -23391,7 +24474,7 @@
                 "version": "proposal-antigen-antibodies",
                 "field": "summary",
                 "fieldSha256": "ede250610b2438fe85da4d7dbd4a122ce0384fbe9d88c5f06ac97477b9b1bf6a",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []
@@ -55013,8 +56096,8 @@
                 "recordId": "antigen-processing-machinery",
                 "version": "proposal-antigen-antibodies",
                 "field": "notes",
-                "fieldSha256": "fd1c5167067ad7d96ba73034ed16e27aabae78afb9de5c3055b4d4e57d9ede92",
-                "explanation": "Exact current authored passage and source scope are recorded in antigen-antibodies-2026-11-09; body rendering and applicable actual export checks pass."
+                "fieldSha256": "5c63101140c343d9f0d0a7504603c1c290aa11edf43e8e9ef348c5599062ae28",
+                "explanation": "Exact current field passage, bounded source reading, actual reader body and applicable actual export checks are retained in the batch packet."
               }
             ],
             "remaining": []

@@ -166,27 +166,116 @@ const pathways: PathwayInput[] = [
   }),
   p({
     id: "autophagy", name: "Autophagy", wikipedia: W("Autophagy"),
-    tldr: "Autophagy is the cell's recycling programme. Cancer cells, especially pancreatic and RAS-driven tumours, use it to survive starvation and drug stress, which is why hydroxychloroquine, an old malaria drug that blocks it, keeps appearing in trials.",
-    summary: "Macroautophagy engulfs organelles and proteins into autophagosomes for lysosomal degradation, supplying amino acids and nucleotides under stress. RAS-mutant and pancreatic cancers are autophagy-addicted; KRAS or MEK inhibition further increases autophagy, so hydroxychloroquine or ULK1 inhibitors are combined with trametinib (phase 1/2, PDAC) and with KRAS inhibitors. Autophagy also degrades MHC-I in PDAC (immune evasion) and is context-dependent: tumour-suppressive early, pro-survival late. No selective autophagy drug is approved; hydroxychloroquine achieves inconsistent lysosomal inhibition at tolerated doses.",
+    tldr: "Autophagy delivers cellular material for breakdown and reuse. The amount present, the rate of recycling and whether cells need it to survive are different questions.",
+    summary: "Macroautophagy encloses cargo in autophagosomes for lysosomal delivery and breakdown. LC3 abundance alone cannot distinguish increased formation from reduced removal. Tandem fluorescent LC3 reporters exploit different responses to acidic and degradative conditions to examine maturation in cell experiments; interpretation requires appropriate controls. Flux and survival dependence need separate tests. In a randomised phase 2 trial of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel did not improve the primary endpoint of survival at 12 months. A drug trial does not by itself establish selective autophagy dependence in a tumour.",
     analogy: "A besieged city that starts recycling furniture into firewood. It keeps the lights on through the siege, and burning the 'wanted posters' (MHC) hides its criminals too.",
     nodes: [
-      { id: "stress", label: "Nutrient stress, KRAS/MEK inhibition", x: 15, y: 30, targetId: "kras" }, { id: "ulk", label: "ULK1 / AMPK", x: 40, y: 30 }, { id: "mtor", label: "mTORC1 (inhibits)", x: 40, y: 70 },
-      { id: "phag", label: "Autophagosome", x: 65, y: 30 }, { id: "lys", label: "Lysosome (HCQ blocks)", x: 85, y: 30 }, { id: "fuel", label: "Recycled fuel → survival", x: 85, y: 70 }, { id: "mhc", label: "MHC-I degradation (PDAC)", x: 65, y: 90 },
-    ],
+  {
+    "id": "stress",
+    "label": "Defined nutrient or drug stress",
+    "x": 15,
+    "y": 30,
+    "targetId": "kras"
+  },
+  {
+    "id": "ulk",
+    "label": "ULK1 / AMPK",
+    "x": 40,
+    "y": 30
+  },
+  {
+    "id": "mtor",
+    "label": "mTORC1 (inhibits)",
+    "x": 40,
+    "y": 70
+  },
+  {
+    "id": "phag",
+    "label": "Autophagosome",
+    "x": 65,
+    "y": 30
+  },
+  {
+    "id": "lys",
+    "label": "Lysosomal delivery and breakdown",
+    "x": 85,
+    "y": 30
+  },
+  {
+    "id": "fuel",
+    "label": "Reused building blocks; test survival",
+    "x": 85,
+    "y": 70
+  },
+  {
+    "id": "mhc",
+    "label": "MHC-I degradation (PDAC)",
+    "x": 65,
+    "y": 90
+  }
+],
     edges: [
       { from: "stress", to: "ulk" }, { from: "mtor", to: "ulk", type: "inhibits" }, { from: "ulk", to: "phag" }, { from: "phag", to: "lys" }, { from: "lys", to: "fuel" }, { from: "lys", to: "mhc" },
     ],
-    interventions: ["Hydroxychloroquine + MEK inhibitor or + KRAS inhibitor in PDAC (phase 1/2)", "ULK1 inhibitors (DCC-3116) in RAS-driven cancers", "Autophagy inhibition to restore MHC-I and immunotherapy response (preclinical)"],
+    interventions: [
+  "Clinical drug studies and mechanistic dependence tests answer different questions.",
+  "Assess flux, selected cargo and survival separately with complementary controls."
+],
     pathways: ["ras-mapk", "pi3k-akt-mtor", "cancer-metabolism", "antigen-presentation-immunoediting"], targets: ["kras"], cancers: ["pancreatic"], technologies: ["kras-inhibitors"],
     institutions: ["penn-abramson", "cold-spring-harbor"],
-    notes: ["Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy."],
-    links: [{ label: "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)", url: "https://doi.org/10.1038/s41586-020-2229-5" }],
+    notes: [
+  "Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy.",
+  "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+  "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+  "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+  "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination."
+],
+    links: [
+  {
+    "label": "Primary source, PMID 17534139",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17534139/"
+  },
+  {
+    "label": "Primary source, PMID 31120501",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+  },
+  {
+    "label": "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)",
+    "url": "https://doi.org/10.1038/s41586-020-2229-5"
+  },
+  {
+    "label": "Source identity and scope, PMID 33634751",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+  },
+  {
+    "label": "Source identity and scope, PMID 29362479",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+  },
+  {
+    "label": "Source identity and scope, PMID 33584716",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33584716/"
+  },
+  {
+    "label": "Source identity and scope, PMID 19250911",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19250911/"
+  },
+  {
+    "label": "Source identity and scope, PMID 19258318",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-09"
+,
+"related": [
+  "nutrient-sensing-ampk"
+]
+}),
   p({
     id: "ferroptosis-cell-death", name: "Ferroptosis & regulated cell death", wikipedia: W("Ferroptosis"),
-    tldr: "Cells can die in several programmed ways. Beyond the classic apoptosis, ferroptosis kills through iron-driven fat oxidation, and drug-resistant, mesenchymal cancer cells turn out to be unusually prone to it.",
-    summary: "Ferroptosis is iron-dependent lipid peroxidation restrained by GPX4 (using glutathione from the cystine transporter SLC7A11/xCT) and by FSP1. Therapy-persistent, mesenchymal, and dedifferentiated cancer cells depend on GPX4; radiation and some immunotherapies act partly via ferroptosis. Necroptosis (RIPK3/MLKL) and pyroptosis (gasdermins) are inflammatory death modes that can be immunogenic. No ferroptosis inducer is approved; GPX4 inhibitors lack drug-like properties, so xCT inhibition, cyst(e)inase, and sulfasalazine repurposing are the clinical routes.",
+    tldr: "Ferroptosis is a form of cell death involving iron-dependent membrane-lipid damage. General oxidative stress or one positive marker does not establish this mechanism.",
+    summary: "Ferroptosis involves iron-dependent membrane-lipid peroxidation and death. Cystine uptake through system xc- can support cysteine and glutathione availability; it does not transport glutathione itself. GPX4 uses glutathione to reduce lipid hydroperoxides, while FSP1 provides a parallel coenzyme-Q-associated defence. Dependence on these routes varies with the model and cellular conditions. Establishing the mechanism requires appropriately controlled measurements of death, lipid damage, iron dependence and rescue, with complementary perturbations. Findings in persistent or mesenchymal model cells do not establish a universal vulnerability or a treatment recommendation. Necrotic appearance, danger signals and adaptive antitumour immunity are separate questions.",
     analogy: "Ferroptosis is rust. Iron plus oxygen eats through the cell's membranes unless an antioxidant crew (GPX4) keeps repainting them. Cells that changed shape to dodge chemotherapy have thinner paint.",
     nodes: [
       { id: "cys", label: "Cystine import (SLC7A11)", x: 15, y: 30 }, { id: "gsh", label: "Glutathione", x: 40, y: 30 }, { id: "gpx4", label: "GPX4", x: 65, y: 30 }, { id: "lpo", label: "Lipid peroxidation", x: 65, y: 70 },
@@ -198,29 +287,152 @@ const pathways: PathwayInput[] = [
     interventions: ["xCT inhibitors, cyst(e)inase, sulfasalazine repurposing (early trials)", "Radiotherapy and IFN-γ from T cells induce lipid peroxidation", "BH3 mimetics (venetoclax) exploit apoptosis; MCL-1 inhibitors in development", "Persister-cell targeting after EGFR/ALK inhibitors (preclinical)"],
     pathways: ["apoptosis-bcl2", "emt", "cancer-metabolism"], targets: ["bcl2"], drugs: ["venetoclax"], terms: ["resisting-cell-death", "resistance"],
     institutions: ["mskcc", "stanford", "broad-institute"],
-    notes: ["Leading programmes: Stockwell (Columbia, coined ferroptosis); Dixon (Stanford); Schreiber (Broad) on persister-cell GPX4 dependence; Jiang (MSK) on ferroptosis in immunotherapy."],
-    links: [{ label: "Stockwell, Ferroptosis turns 10 (Cell 2022)", url: "https://doi.org/10.1016/j.cell.2022.06.003" }, { label: "Viswanathan et al., Dependency of a therapy-resistant state on a lipid peroxidase pathway (Nature 2017)", url: "https://doi.org/10.1038/nature23007" }],
+    notes: [
+  "Leading programmes: Stockwell (Columbia, coined ferroptosis); Dixon (Stanford); Schreiber (Broad) on persister-cell GPX4 dependence; Jiang (MSK) on ferroptosis in immunotherapy.",
+  "Ferroptosis involves iron-dependent membrane-lipid peroxidation causing death. Erastin experiments implicated cystine uptake through system xc-, connecting cysteine and glutathione supply to antioxidant defence. Vulnerable polyunsaturated lipid chains, iron availability and cellular conditions matter; general reactive-oxygen fluorescence does not establish this mechanism.",
+  "GPX4 uses glutathione to reduce lipid hydroperoxides to lipid alcohols. FSP1 provides a parallel coenzyme-Q radical-trapping defence; it does not replace every GPX4 function or describe the whole protection network. Protein abundance alone does not measure protective activity or predict compound sensitivity.",
+  "Assigning ferroptosis needs convergent measurements of death, lipid damage preceding death, iron dependence and appropriately controlled rescue. Independent genetic and chemical perturbations strengthen attribution; rescue alone is not complete proof. Probe chemistry, concentration, nutrients, cell density and observation time can alter results. A lipid-probe ratio and death fraction are different outputs, with no universal diagnostic staining threshold. Live death and rescue tests consume viable model material. Specify lipid-probe oxidation ratios and independently measured death percentages over a stated interval; a marker snapshot does not reconstruct the full causal sequence.",
+  "A culture with abundant GPX4, a general oxidation signal and no death has not demonstrated ferroptosis. Cell-line and xenograft vulnerabilities do not establish tolerable exposure, selective cancer killing or benefit in patients. Alternative defences can confer resistance, so a strong antioxidant programme is not automatically a treatment vulnerability."
+],
+    links: [
+  {
+    "label": "Stockwell, Ferroptosis turns 10 (Cell 2022)",
+    "url": "https://doi.org/10.1016/j.cell.2022.06.003"
+  },
+  {
+    "label": "Viswanathan et al., Dependency of a therapy-resistant state on a lipid peroxidase pathway (Nature 2017)",
+    "url": "https://doi.org/10.1038/nature23007"
+  },
+  {
+    "label": "Source identity and scope, PMID 22632970",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+  },
+  {
+    "label": "Source identity and scope, PMID 27506793",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27506793/"
+  },
+  {
+    "label": "Source identity and scope, PMID 24439385",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24439385/"
+  },
+  {
+    "label": "Source identity and scope, PMID 31634900",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31634900/"
+  },
+  {
+    "label": "Source identity and scope, PMID 29362479",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-09"
+,
+"related": [
+  "reactive-oxygen-species"
+]
+}),
   p({
     id: "senescence", name: "Cellular senescence", wikipedia: W("Cellular_senescence"),
-    tldr: "Damaged cells can stop dividing permanently instead of dying. That protects against cancer at first, but senescent cells linger, secrete inflammatory signals, and after chemotherapy can help tumours relapse, so removing them (senolytics) is a new strategy.",
-    summary: "Oncogene-induced and therapy-induced senescence engage p53/p21 and p16/RB to arrest the cycle; the senescence-associated secretory phenotype (SASP: IL-6, IL-8, MMPs) remodels the microenvironment, promotes inflammation, immune recruitment, and paradoxically tumour progression and treatment resistance. 'One-two punch' therapy induces senescence (e.g., CDK4/6 inhibitors, chemotherapy) then clears it with senolytics (BCL-XL/BCL-2 inhibitors, navitoclax; dasatinib+quercetin; uPAR CAR-T in mice). Senescent cells are a 2022 hallmark. Clinical proof in oncology is early; toxicity of BCL-XL inhibition (platelets) drives PROTAC approaches.",
-    analogy: "Retired workers who refuse to leave the office. They no longer do the job, but they shout, clutter the corridors, and sometimes hire back the very people who were fired.",
+    tldr: "Senescent cells remain alive while their division is durably arrested. Their effects depend on the cells, signals and surrounding tissue.",
+    summary: "Senescence is a stress-associated cell state with durable cell-cycle arrest and other context-dependent features. Identifying it requires combined measurements rather than one marker. In genetically switchable blood-cancer models, release from senescence allowed renewed division with enhanced clonogenic potential. That experimental result does not predict that every senescent cell will restart or that a person will relapse. Arrest, secretion and effects on neighbouring cells require separate assessment. Model findings do not establish a preferred senolytic treatment.",
+    analogy: "A workshop can stop making copies while continuing to use energy and send messages. The messages and their effects must be measured in context.",
     nodes: [
-      { id: "dmg", label: "Oncogene / therapy stress", x: 15, y: 30 }, { id: "p53", label: "p53 → p21", x: 40, y: 20, targetId: "tp53" }, { id: "p16", label: "p16 → RB", x: 40, y: 45, targetId: "cdk4-6" },
-      { id: "arrest", label: "Stable arrest", x: 65, y: 30 }, { id: "sasp", label: "SASP (IL-6, IL-8, MMPs)", x: 65, y: 70 }, { id: "tme", label: "Inflammation, relapse, resistance", x: 90, y: 70 }, { id: "seno", label: "Senolytics (BCL-XL, uPAR CAR-T)", x: 90, y: 30 },
-    ],
+  {
+    "id": "dmg",
+    "label": "Oncogene / therapy stress",
+    "x": 15,
+    "y": 30
+  },
+  {
+    "id": "p53",
+    "label": "p53 → p21",
+    "x": 40,
+    "y": 20,
+    "targetId": "tp53"
+  },
+  {
+    "id": "p16",
+    "label": "p16 → RB",
+    "x": 40,
+    "y": 45,
+    "targetId": "cdk4-6"
+  },
+  {
+    "id": "arrest",
+    "label": "Stable arrest",
+    "x": 65,
+    "y": 30
+  },
+  {
+    "id": "sasp",
+    "label": "Variable secretory programme",
+    "x": 65,
+    "y": 70
+  },
+  {
+    "id": "tme",
+    "label": "Context-dependent neighbour effects",
+    "x": 90,
+    "y": 70
+  },
+  {
+    "id": "seno",
+    "label": "Investigational clearance approaches",
+    "x": 90,
+    "y": 30
+  }
+],
     edges: [
       { from: "dmg", to: "p53" }, { from: "dmg", to: "p16" }, { from: "p53", to: "arrest" }, { from: "p16", to: "arrest" }, { from: "arrest", to: "sasp" }, { from: "sasp", to: "tme" }, { from: "seno", to: "arrest", type: "inhibits" },
     ],
-    interventions: ["Senescence-inducing therapy (CDK4/6 inhibitors, chemotherapy, radiation) followed by senolytics (one-two punch)", "Navitoclax and BCL-XL PROTACs; uPAR-targeted CAR-T (preclinical)", "SASP modulation with JAK inhibitors or IL-6 blockade"],
+    interventions: [
+  "Experimental induction, persistence and clearance require separate measurements.",
+  "Model findings do not establish a preferred senolytic treatment."
+],
     pathways: ["p53-cell-cycle", "apoptosis-bcl2", "inflammation-nfkb", "tumor-microenvironment"], targets: ["tp53", "cdk4-6", "bcl2"], technologies: ["cdk46-inhibitor"], terms: ["senescent-cells"],
     institutions: ["mskcc", "cold-spring-harbor", "mayo-clinic"],
-    notes: ["Leading programmes: Lowe (MSK) on senescence and immune clearance; Campisi legacy (Buck); Kirkland (Mayo) on senolytics; Demaria (ERIBA Groningen); Peeper (NKI) on one-two punch."],
-    links: [{ label: "Schmitt, Wang & Demaria, Senescence and cancer: role and therapeutic opportunities (Nature Reviews Clinical Oncology 2022)", url: "https://doi.org/10.1038/s41571-022-00668-4" }],
+    notes: [
+  "Leading programmes: Lowe (MSK) on senescence and immune clearance; Campisi legacy (Buck); Kirkland (Mayo) on senolytics; Demaria (ERIBA Groningen); Peeper (NKI) on one-two punch.",
+  "Senescent cells remain alive and metabolically active while division is durably arrested. Damage, oncogenic signals and treatment stresses can induce the state. It is distinct from death, reversible quiescence, the broader concept of dormancy and immune exhaustion, and is not a synonym for a person's age.",
+  "Low proliferation and increased p21 one day after stress do not establish durable senescence or a harmful secretory programme. Combine cell identity, longitudinal arrest or regrowth assessment and complementary features such as p16, p21, damage markers and senescence-associated beta-galactosidase. Fixed tissue cannot test later recovery, and no universal marker or arrest-duration cutoff works across contexts. Research outputs include method-defined cell fractions, marker intensities and longitudinal proliferation or regrowth. Stained sections and tested cells consume material. Secretions and their functional effects require their own readouts rather than inference from an arrest marker.",
+  "The senescence-associated secretory phenotype varies with cell, stimulus, timing and environment. In Coppé and colleagues' culture experiments, selected secretions promoted epithelial invasiveness; in Demaria and colleagues' mouse skin wounds, senescent cells and PDGF-AA supported repair. Neither experiment establishes a universal harmful mixture or a clinical instruction to remove senescent cells.",
+  "Genetically switchable blood-cancer models showed enhanced clonogenic growth after release from senescence. This supports possible escape in those systems, not inevitable restart, relapse prediction or a preferred senolytic treatment. Arrest, secretion and effects on neighbouring cells require separate tests."
+],
+    links: [
+  {
+    "label": "Primary source, PMID 31675495",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31675495/"
+  },
+  {
+    "label": "Primary source, PMID 29258294",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29258294/"
+  },
+  {
+    "label": "Schmitt, Wang & Demaria, Senescence and cancer: role and therapeutic opportunities (Nature Reviews Clinical Oncology 2022)",
+    "url": "https://doi.org/10.1038/s41571-022-00668-4"
+  },
+  {
+    "label": "Source identity and scope, PMID 29362479",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+  },
+  {
+    "label": "Source identity and scope, PMID 39121846",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39121846/"
+  },
+  {
+    "label": "Source identity and scope, PMID 19053174",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19053174/"
+  },
+  {
+    "label": "Source identity and scope, PMID 25499914",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25499914/"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-09"
+}),
   p({
     id: "cancer-stem-cells-plasticity", related: ["theories-of-cancer", "cancer-stem-cell-theory"], keyPapers: ["paper-singh-brain-tumour-initiating-cells-nature-2004"], name: "Cancer stem cells & phenotypic plasticity", wikipedia: W("Cancer_stem_cell"),
     tldr: "Some cancer cells behave like stem cells: they can regrow the whole tumour, resist treatment, and switch identities. This plasticity explains why tumours come back and why some lung and prostate cancers transform into a different cancer type under therapy.",
@@ -611,7 +823,36 @@ const terms: TermInput[] = [
   t({ id: "senescent-cells", wikipedia: "https://en.wikipedia.org/wiki/Cellular_senescence", name: "Hallmark (2022): senescent cells", tldr: "Cells that have permanently stopped dividing but stay alive and secrete inflammatory signals, helping nearby cancer cells grow and resist treatment.", summary: "Senescent cells, a hallmark added in 2022, are cells that have permanently stopped dividing but stay alive and secrete inflammatory signals, helping nearby cancer cells grow and resist treatment. The senescence-associated secretory phenotype arises from both stromal and tumour cells after therapy, and the underlying biology is laid out in the Cellular senescence pathway. Senolytic drugs aim to clear these cells in a one-two punch after cancer treatment, the strategy explored in the idea One-two punch: clear senescent cells after chemotherapy. Readers meet this hallmark from the Hallmarks of Cancer overview and from the 2022 hallmarks paper that added phenotypic plasticity, epigenetic reprogramming, microbiomes and senescent cells to the framework.", pathways: ["senescence"], links: [HALLMARKS_2022], tags: ["hallmark"] }),
   // core mechanism vocabulary
   t({ id: "disseminated-tumor-cells", wikipedia: W("Micrometastasis"), name: "Disseminated tumour cells (DTCs)", aka: ["disseminated tumour cell"], tldr: "Single cancer cells that have already spread to distant organs, often found in bone marrow years before any metastasis appears.", summary: "Disseminated tumour cells (DTCs) are single cancer cells that have already spread to distant organs, often found in bone marrow years before any metastasis appears. They are detected by bone marrow aspiration with cytokeratin staining in a substantial minority of early breast cancer patients and are prognostic for relapse, yet most are dormant and non-proliferating, as described in The metastatic cascade and Tumour dormancy pathways. DTCs are the biological substrate of Minimal / molecular residual disease (MRD), measured by MRD / molecular residual disease testing, and of Late recurrence. Readers meet the term in the hallmark Activating invasion and metastasis, the Metastasis and Recurrence and relapse entries, and the idea What decides which disseminated cells ever colonise?", pathways: ["metastatic-cascade", "tumor-dormancy"], terms: ["mrd", "late-recurrence"], technologies: ["mrd-testing"], links: [{ label: "Braun et al., A pooled analysis of bone marrow micrometastasis in breast cancer (NEJM 2005)", url: "https://doi.org/10.1056/NEJMoa050434" }] }),
-  t({ id: "warburg-effect", related: ["metabolic-theory-of-cancer"], name: "Warburg effect", wikipedia: W("Warburg_effect_(oncology)"), tldr: "Cancer cells burn glucose into lactate even when oxygen is plentiful, an inefficient but fast way to make building blocks. Otto Warburg described it in the 1920s.", summary: "The Warburg effect is the tendency of cancer cells to burn glucose into lactate even when oxygen is plentiful, an inefficient but fast way to make building blocks, first described by Otto Warburg in the 1920s. This aerobic glycolysis is driven by oncogenic signalling and HIF, as set out in the Cancer metabolism and VHL / HIF oxygen sensing pathways; it supplies intermediates for nucleotide, lipid and amino-acid synthesis and acidifies the microenvironment. It is the basis of FDG PET imaging and of the Standardised uptake value (SUV) used to report it. Readers meet the term in the hallmark Reprogramming cellular metabolism, the Glutamine addiction pathway, and the entries on Warburg-effect diet claims, Ketogenic diets in glioblastoma and the ERGO2 trial.", pathways: ["cancer-metabolism", "hif-vhl"], technologies: ["fdg-pet"], terms: ["suv"], links: [{ label: "Wikipedia", url: W("Warburg_effect_(oncology)") }] }),
+  t({ id: "warburg-effect", related: [
+  "metabolic-theory-of-cancer",
+  "oxidative-phosphorylation",
+  "nutrient-sensing-ampk"
+], name: "Warburg effect", wikipedia: W("Warburg_effect_(oncology)"), tldr: "The Warburg effect is a pattern of making lactate from glucose while oxygen is available. It does not mean that mitochondrial energy production has stopped.", summary: "Aerobic glycolysis can coexist with mitochondrial glucose oxidation and use of other nutrients. Human lung-tumour tracer experiments demonstrated variation within and between tumours, rather than a single cancer-wide metabolic state. The pattern can support proliferation but does not establish an irreplaceable survival requirement. Glucose uptake, lactate release, oxygen consumption and calculated energy production answer different questions. Neither this pattern nor a culture nutrient-removal result supplies a dietary or drug recommendation.", pathways: ["cancer-metabolism", "hif-vhl"], technologies: ["fdg-pet"], terms: ["suv"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Warburg_effect_(oncology)"
+  },
+  {
+    "label": "Source identity and scope, PMID 19460998",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19460998/"
+  },
+  {
+    "label": "Source identity and scope, PMID 26853473",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26853473/"
+  },
+  {
+    "label": "Source identity and scope, PMID 25449966",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25449966/"
+  }
+] ,
+"asOf": "2026-11-09",
+"notes": [
+  "The Warburg effect describes substantial glucose-to-lactate metabolism with oxygen available. Glycolysis can supply ATP and lactate formation regenerates a carrier needed for its continuation. Lactate production does not imply absent mitochondrial oxidation, and proliferating normal cells can use aerobic glycolysis too.",
+  "Intraoperative glucose-tracer studies in nine people with non-small-cell lung cancer found enhanced glycolysis alongside glucose oxidation, with heterogeneity within and between tumours and evidence for other nutrient use. These observations do not describe every cancer or establish an irreplaceable survival route.",
+  "FDG imaging measures uptake and trapping of a glucose analogue, not lactate production or a cancer-exclusive process. Respiratory carbon dioxide contributes to medium acidification, so pH change is not pure glycolysis. Keep oxygen conditions, viable-cell normalisation, tracer identity, metabolites and timing with rate measurements; tracer labelling alone is not automatically a complete flux estimate.",
+  "Lactate release, oxygen consumption and labelled glucose reaching mitochondrial metabolites can coexist. High pathway activity, a transcript signature or glucose uptake does not prove survival dependence. A culture nutrient-removal experiment does not establish that changing a person's diet selectively starves a tumour or identifies a medicine. Functional rate or tracer studies use viable cells, slices or a defined in-vivo experiment and consume or perturb material. No universal Warburg-positive threshold predicts treatment benefit; a functional perturbation and survival outcome are separate from the metabolic pattern."
+]
+}),
   t({ id: "immune-exclusion", wikipedia: W("Tumor_microenvironment"), name: "Immune exclusion", tldr: "A tumour where the immune cells arrive but are stopped at the edge, held back by scar tissue and signals such as TGF-β.", summary: "Immune exclusion describes a tumour where immune cells arrive but are stopped at the edge, held back by scar tissue and signals such as TGF-β. It is one of three immune phenotypes (inflamed, excluded and desert) and is associated with TGF-β-activated fibroblasts, dense extracellular matrix and abnormal vessels, as described in the TGF-β signalling and Tumour microenvironment (TME) pathways and the Hot vs cold tumours entry. It predicts poor response to checkpoint inhibitors in bladder, colorectal and pancreatic cancer, and the candidate targets are TGF-β, FAP, CXCL12/CXCR4 and VEGF / VEGFR. Readers meet the term in the hallmark Avoiding immune destruction, in the cold tumours pathway, and in the idea What actually holds T cells at the tumour border?", pathways: ["tgf-beta", "tumor-microenvironment", "pd1-checkpoint"], terms: ["cold-vs-hot", "tils"], targets: ["fap", "vegf", "cxcr3"], drugs: ["retlirafusp-alfa", "ficerafusp-alfa"], trials: ["fortifi-hn01", "nct04950322", "nct05300269", "nct05503888", "nct05671822", "nct06679673", "nct07102901", "nct07175220", "nct07478731", "nct07503639", "nct07728019", "nct07752550", "nct07773363", "nct07797244", "nct07802184", "nct07807163", "nct07814859", "nct07815288"], links: [{ label: "Mariathasan et al., TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells (Nature 2018)", url: "https://doi.org/10.1038/nature25501" }] }),
   t({ id: "cancer-associated-fibroblasts", name: "Cancer-associated fibroblasts (CAFs)", wikipedia: W("Cancer-associated_fibroblast"), tldr: "The scaffolding cells that tumours recruit to build scar-like tissue around themselves. They feed the cancer, block drugs and immune cells, and carry the FAP protein that PET scans can now see.", summary: "Heterogeneous (myCAF, iCAF, apCAF); sources include resident fibroblasts, stellate cells, and mesenchymal stem cells. Secrete TGF-β, IL-6, CXCL12; deposit ECM. Depletion experiments show both pro- and anti-tumour roles, so targeting is moving toward reprogramming (vitamin D receptor agonists) and FAP-directed theranostics.", pathways: ["tumor-microenvironment", "tgf-beta"], targets: ["fap"], technologies: ["fapi-pet", "radioligand-therapy"], terms: ["desmoplasia"], drugs: ["fap-2286", "eb-mf-car-nk-01"], trials: ["nct04939610", "nct06710756", "nct07036380", "nct07510815"], links: [{ label: "Wikipedia", url: W("Cancer-associated_fibroblast") }] }),
   t({ id: "tumor-associated-macrophages", name: "Tumour-associated macrophages (TAMs)", wikipedia: W("Tumor-associated_macrophage"), tldr: "Tumour-associated macrophages are immune cells that should eat cancer cells but are re-educated by the tumour to protect it instead. They are often the most abundant immune cell in a tumour.", summary: "Mostly M2-like, immunosuppressive, pro-angiogenic; recruited by CSF1 and CCL2; express PD-L1, SIRPα, TREM2. Targets: CSF1R (pexidartinib approved in TGCT; broadly disappointing in cancer), CD47/SIRPα (magrolimab failed), TREM2, CD40 agonists. Depleting M2 TAMs is also the rationale of the MERTK ADC RGX-019-MMAE.", pathways: ["tumor-microenvironment", "myc"], targets: ["cd47", "pdl1", "csf1r", "sirpa", "cd40", "mertk", "cd163", "cd14"], drugs: ["magrolimab", "ak117", "evorpacept", "peluntamig", "spevatamig", "selicrelumab", "mitazalimab", "axatilimab", "emactuzumab"], trials: ["aspen-06", "nct03424005", "nct03768063", "nct04313881", "nct04675294", "nct04675333", "nct04778397", "nct04888312", "nct04980885", "nct05079230", "nct05227664", "nct05229497", "nct05382442", "nct05482893", "nct05491226", "nct05652686", "nct05849480", "nct05868226", "nct06488378", "nct06601335", "nct06789848", "nct06953999", "nct07007559", "nct07015853", "nct07036380", "nct07199764", "nct07245446", "nct07437287"], links: [{ label: "Wikipedia", url: W("Tumor-associated_macrophage") }] }),

@@ -2,6 +2,15 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-09
+
+### Manufacturing clocks, release evidence and reader summaries
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [Cell-therapy release and potency testing](/technologies/cell-therapy-release-testing/) | Existing summaries did not retain the distinct identity, vector-copy denominator and limited-shelf-life sterility settings; simplified English said passing checks meant a batch was safe | Selected raw FDA CAR T-cell, gene-therapy CMC and November 2026 final potency-assurance passages, then actual consumer-table review | Adds product-specific measurement and function distinctions, scopes continuing sterility testing, and removes the blanket safety assurance from simplified and translated summaries |
+| 2026-11-09 | [Vein-to-vein time](/terms/vein-to-vein-time/) | The English clock definition needed event/denominator detail, while eight translations and simplified English still gave three to six weeks as a general wait | Manufacturing guidance, existing cohort-scoped evidence, rendered body and all loaded summary tables | Defines collection-to-infusion separately from culture and other clocks; retains non-infusion and bridging context; updates all nine alternative summaries without a universal duration |
+
 ## 2026-11-08
 
 ### Evidence boundaries in immune assays and manufacturing

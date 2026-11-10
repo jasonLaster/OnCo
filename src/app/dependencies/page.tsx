@@ -87,7 +87,7 @@ export default function DependenciesPage() {
       <>
         <span className="inline-flex shrink-0 text-accent mt-0.5"><FrontIcon id={t.sections[0] ?? ""} className="h-5 w-5" /></span>
         <span className="min-w-0">
-          {linkInExtra ? <Link href={href} className="block font-medium leading-snug hover:underline">{t.name}</Link> : <span className="block font-medium leading-snug">{t.name}</span>}
+          {linkInExtra ? <Link href={href} className="block py-px font-medium leading-snug hover:underline">{t.name}</Link> : <span className="block font-medium leading-snug">{t.name}</span>}
           <span className="block text-xs text-muted mt-0.5">{extra}</span>
         </span>
       </>

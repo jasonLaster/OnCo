@@ -1,7 +1,7 @@
 "use client";
 
-import { useId, useRef, useState, type ReactNode } from "react";
-import { CATEGORY_BY_ID, type MechanismCategory } from "@/lib/resistance-categories";
+import { Fragment, useId, useRef, useState, type ReactNode } from "react";
+import { CATEGORY_BY_ID, INK_CLASS, inkStyle, type MechanismCategory } from "@/lib/resistance-categories";
 import { useAnimationBudget, useMotionSnapshot } from "@/lib/use-animation-budget";
 import { CategoryDot, useAtlas } from "./ResistanceMatrix";
 
@@ -77,7 +77,7 @@ export function ResistanceMap({ drugLabel, exemplarCount, routes, details }: { d
         <aside className="border-t lg:border-t-0 lg:border-l border-border p-4 text-sm min-h-[7rem]" aria-live="polite" data-mobile-driven>
           {current ? (
             <>
-              <div className="flex items-center gap-2 text-xs font-semibold" style={{ color: CATEGORY_BY_ID[current.category].color }}>
+              <div className={`flex items-center gap-2 text-xs font-semibold ${INK_CLASS}`} style={inkStyle(CATEGORY_BY_ID[current.category])}>
                 <CategoryDot category={current.category} size={8} /> {CATEGORY_BY_ID[current.category].label}
                 <span className="text-muted font-normal">· route {(focus ?? 0) + 1} of {routes.length}</span>
               </div>
@@ -95,7 +95,7 @@ export function ResistanceMap({ drugLabel, exemplarCount, routes, details }: { d
               <p className="text-muted mt-1 leading-relaxed">{routes.length} documented way{routes.length === 1 ? "" : "s"} a tumour gets past {drugLabel}. Hover a route to read how it works; click to open its countermeasures.</p>
               <ul className="mt-2 space-y-1 text-xs">
                 {[...counts.entries()].map(([cat, n]) => (
-                  <li key={cat} className="flex items-center gap-2"><CategoryDot category={cat} size={8} /><span className="font-medium" style={{ color: CATEGORY_BY_ID[cat].color }}>{CATEGORY_BY_ID[cat].label}</span><span className="text-muted">× {n}</span></li>
+                  <li key={cat} className="flex items-center gap-2"><CategoryDot category={cat} size={8} /><span className={`font-medium ${INK_CLASS}`} style={inkStyle(CATEGORY_BY_ID[cat])}>{CATEGORY_BY_ID[cat].label}</span><span className="text-muted">× {n}</span></li>
                 ))}
               </ul>
             </>
@@ -199,7 +199,8 @@ function Diagram({ uid, compact, drugLabel, exemplarCount, routes, focus, open, 
         const dim = (highlight !== null && highlight !== route.category) || (anyFocus && !isFocus);
         const gateW = compact ? 22 : 26, gateH = compact ? 16 : 20, gx = ex + 6;
         return (
-          <g key={i} role="button" tabIndex={0} aria-label={`${route.name}${route.frequency ? `, ${route.frequency}` : ""}, ${route.countermeasures} countermeasures`} aria-pressed={isOpen}
+          <Fragment key={i}>
+          <g role="button" tabIndex={0} aria-label={`${route.name}${route.frequency ? `, ${route.frequency}` : ""}, ${route.countermeasures} countermeasure${route.countermeasures === 1 ? "" : "s"}`} aria-pressed={isOpen}
             className="cursor-pointer outline-none transition-opacity duration-300" style={{ opacity: dim ? 0.22 : 1 }}
             onMouseEnter={() => onHover(i)} onFocus={() => onHover(i)} onBlur={() => onHover(null)} onClick={() => onToggle(i)}
             onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onToggle(i); } }}>
@@ -211,12 +212,15 @@ function Diagram({ uid, compact, drugLabel, exemplarCount, routes, focus, open, 
             <circle cx={sx} cy={sy} r={isFocus ? 3.6 : 2.6} fill={color} />
             {/* Gate: number of countermeasures */}
             <rect x={gx} y={ey - gateH / 2} width={gateW} height={gateH} rx={4} fill={isOpen ? "#16a34a" : "rgba(22,163,74,0.12)"} stroke="#16a34a" strokeWidth={1.2} />
-            <text x={gx + gateW / 2} y={ey + (compact ? 3.5 : 4)} textAnchor="middle" fill={isOpen ? "#fff" : "#16a34a"} style={{ fontSize: compact ? 9.5 : 11, fontWeight: 700 }}>{route.countermeasures}</text>
+            {compact && <circle cx={ex - 12} cy={ey} r={7} fill={color} />}
+          </g>
+          {/* The drawn words sit beside the control, not inside it: its name is the aria-label, and words cut short
+              mid-word inside it are a label/content mismatch for voice control (axe). A mouse still opens the route
+              from them; the gate number lets clicks fall through to the gate. */}
+          <g aria-hidden className="cursor-pointer transition-opacity duration-300" style={{ opacity: dim ? 0.22 : 1 }} onMouseEnter={() => onHover(i)} onClick={() => onToggle(i)}>
+            <text x={gx + gateW / 2} y={ey + (compact ? 3.5 : 4)} textAnchor="middle" fill={isOpen ? "#fff" : "#16a34a"} className="pointer-events-none" style={{ fontSize: compact ? 9.5 : 11, fontWeight: 700 }}>{route.countermeasures}</text>
             {compact ? (
-              <>
-                <circle cx={ex - 12} cy={ey} r={7} fill={color} />
-                <text x={ex - 12} y={ey + 3} textAnchor="middle" fill="#fff" style={{ fontSize: 8.5, fontWeight: 700 }}>{i + 1}</text>
-              </>
+              <text x={ex - 12} y={ey + 3} textAnchor="middle" fill="#fff" className="pointer-events-none" style={{ fontSize: 8.5, fontWeight: 700 }}>{i + 1}</text>
             ) : (
               <>
                 <text x={gx + gateW + 8} y={ey + (route.frequency ? -1 : 4)} className="fill-foreground" style={{ fontSize: 12, fontWeight: 600 }}>{ELLIPSIS(route.name, 30)}</text>
@@ -224,6 +228,7 @@ function Diagram({ uid, compact, drugLabel, exemplarCount, routes, focus, open, 
               </>
             )}
           </g>
+          </Fragment>
         );
       })}
 

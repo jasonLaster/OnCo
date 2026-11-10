@@ -61,12 +61,12 @@ function Cards({ cards }: { cards: CountryCard[] }) {
             <summary className="cursor-pointer text-sm text-muted hover:text-foreground select-none">More detail</summary>
             <p className="mt-2 text-sm leading-relaxed text-foreground/85">{s.detail}</p>
           </details>
-          <ul className="mt-auto pt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs">
+          <ul className="mt-auto pt-2 flex flex-wrap gap-x-3 text-xs">
             {s.links.map((l) => (
               <li key={l.url}>
                 {l.url.startsWith("/")
-                  ? <Link href={l.url} className="underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">{l.label}</Link>
-                  : <a href={l.url} target="_blank" rel="noopener noreferrer" className="underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">{l.label}</a>}
+                  ? <Link href={l.url} className="inline-block py-1 underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">{l.label}</Link>
+                  : <a href={l.url} target="_blank" rel="noopener noreferrer" className="inline-block py-1 underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">{l.label}</a>}
               </li>
             ))}
           </ul>
@@ -222,7 +222,7 @@ export default function UnitedKingdomPage() {
                   <dt className="text-muted">Can it change?</dt>
                   <dd className="text-foreground/85">{r.reversible}</dd>
                 </dl>
-                <p className="mt-3 text-xs"><a href={r.url} target="_blank" rel="noopener noreferrer" className="underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">Read it on the source</a></p>
+                <p className="mt-3 text-xs"><a href={r.url} target="_blank" rel="noopener noreferrer" className="inline-block py-1 underline decoration-foreground/20 underline-offset-[3px] hover:decoration-foreground text-muted hover:text-foreground">Read it on the source</a></p>
               </article>
             ))}
           </div>

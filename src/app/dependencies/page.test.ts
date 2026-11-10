@@ -32,7 +32,7 @@ describe("dependency map page", () => {
     if (html.includes("Only vendor: ")) {
       expect(html).toMatch(/Only vendor: <a class="underline" href="\/companies\//);
       // The technology name is the link when the vendor is one too, so both stay clickable without nesting.
-      expect(html).toMatch(/<a class="block font-medium leading-snug hover:underline" href="\/dependencies\/?\?root=/);
+      expect(html).toMatch(/<a class="block py-px font-medium leading-snug hover:underline" href="\/dependencies\/?\?root=/);
     }
   });
 

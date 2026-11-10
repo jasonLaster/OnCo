@@ -1,8 +1,11 @@
 name: Accessibility audit
 
-# Builds the static export and runs axe-core (WCAG 2.1 A/AA) through Playwright on a representative set of
-# pages (scripts/a11y.ts). Serious and critical violations fail the job; the full report is uploaded.
-# Playwright and axe-core are installed for the run only (no package.json change).
+# Builds the static export and runs axe-core (WCAG 2.0, 2.1 and 2.2 A and AA plus best practice) in headless Chrome
+# over the DevTools protocol (scripts/a11y.ts): every sampled page in the light theme, and one page of each type in
+# the dark-device default and the high-contrast theme too. This is the half that needs a browser (colour contrast,
+# target size, the dark default actually painting dark). The markup rules run in the ship gates
+# (src/app/a11y.test.ts). Serious and critical violations not on the allowance list in
+# src/test-utils/a11y-allowance.ts fail the job; the full report is uploaded.
 on:
   pull_request:
   schedule:
@@ -19,7 +22,7 @@ concurrency:
 jobs:
   axe:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,12 +31,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Install Playwright and axe-core for this run
-        run: |
-          npm install --no-save --no-package-lock playwright@1 axe-core@4
-          npx playwright install --with-deps chromium
+      # GitHub's Ubuntu image ships Google Chrome; axe-core is a devDependency, so nothing else is installed.
       - name: Run the audit
-        run: npx tsx scripts/a11y.ts --report a11y-report.json
+        run: CHROME="$(command -v google-chrome || command -v google-chrome-stable)" npx tsx scripts/a11y.ts --report a11y-report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

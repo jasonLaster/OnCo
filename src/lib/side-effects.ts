@@ -138,8 +138,8 @@ export function modalityClass(m: string): string {
   if (/bispecific/i.test(m)) return "Bispecific antibody";
   if (/anti-pd-1|anti-pd-l1|anti-ctla-4|anti-lag-3/i.test(m)) return "Checkpoint inhibitor";
   if (/monoclonal/i.test(m)) return "Antibody";
-  if (/car-t|til|tcr-t/i.test(m)) return "Cell therapy";
-  if (/radioligand|alpha|theranostic|radiopharm|radioactive/i.test(m)) return "Radiopharmaceutical";
+  if (/car-t|\btil\b|tumou?r-infiltrating|tcr-t/i.test(m)) return "Cell therapy";
+  if (/radioligand|alpha[- ](?:therapy|emitt|particle)|targeted alpha|theranostic|radiopharm|radioactive/i.test(m)) return "Radiopharmaceutical";
   if (/cdk4\/6|cdk4/i.test(m)) return "CDK4/6 inhibitor";
   if (/parp/i.test(m)) return "PARP inhibitor";
   if (/btk/i.test(m)) return "BTK inhibitor";

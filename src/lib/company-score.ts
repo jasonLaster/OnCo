@@ -62,14 +62,14 @@ export function modalityClass(m: string): string {
   if (/engager|immtac/i.test(m)) return "T-cell engager";
   if (/bispecific/i.test(m)) return "Bispecific antibody";
   if (/car-t|\btil\b|tcr-t|cell therapy|autoleucel|maraleucel|vicleucel|ciloleucel/i.test(m)) return "Cell therapy";
-  if (/radioligand|alpha|theranostic|radiopharm/i.test(m)) return "Radiopharmaceutical";
-  if (/pet|imaging|fluorescen|radiotracer|lymphatic mapping/i.test(m)) return "Imaging agent";
+  if (/radioligand|alpha[- ](?:therapy|emitt|particle)|targeted alpha|theranostic|radiopharm/i.test(m)) return "Radiopharmaceutical";
+  if (/\bpet\b|imaging|fluorescen|radiotracer|lymphatic mapping/i.test(m)) return "Imaging agent";
   if (/vaccine|oncolytic|dendritic|bacterial immunotherapy/i.test(m)) return "Vaccine or oncolytic";
   if (/monoclonal|antibody|fc-engineered|biosimilar/i.test(m)) return "Antibody";
-  if (/degrader|protac|molecular glue|celmod|imid|cereblon/i.test(m)) return "Degrader or glue";
+  if (/degrader|protac|molecular glue|celmod|\bimids?\b|cereblon/i.test(m)) return "Degrader or glue";
   if (/small[- ]molecule|inhibitor|tki|kinase|serd|serm|antagonist|agonist|analogue|antiandrogen|aromatase/i.test(m)) return "Small molecule";
-  if (/cytotoxic|chemotherapy|alkylat|platinum|taxane|antimetabolite|nucleoside|anthracycline|vinca|topoisomerase|antifolate/i.test(m)) return "Chemotherapy";
-  if (/test|assay|classifier|profiling|screening/i.test(m)) return "Diagnostic";
+  if (/cytotoxic|chemotherapy|alkylat|platinum|taxane|antimetabolite|nucleoside|anthracycline|vinca|topoisomerase|antifolate|fluoropyrimidine/i.test(m)) return "Chemotherapy";
+  if (/\btests?\b|assay|classifier|profiling|screening/i.test(m)) return "Diagnostic";
   if (/device/i.test(m)) return "Device";
   return "Other";
 }

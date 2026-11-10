@@ -18,8 +18,76 @@ export const FDA_CDX_LABEL = "FDA: List of FDA-Authorized Companion Diagnostic D
 export const b = (x: Omit<BiomarkerInput, "kind" | "asOf">): BiomarkerInput => ({ kind: "biomarker", asOf, ...x });
 type Th = Omit<BiomarkerThreshold, "status"> & { status?: BiomarkerThreshold["status"] };
 export const th = (x: Th): BiomarkerThreshold => ({ status: "current", ...x });
-/** One FDA companion diagnostic list row. */
-export const cdx = (device: string, maker: string, indication: string, drugs: string[], pma: string, companyId?: string): CompanionDiagnostic => ({ device, maker, companyId, drugs, indication, pma, source: FDA_CDX_URL });
+/**
+ * The record for each FDA list device name that has one, so the companion diagnostic table links to it. Matched on 10
+ * November 2026 by exact device name or by the PMA, HDE or 510(k) number the record cites, and each pair read by hand.
+ * Several names point at one record where the record covers them: FoundationOne CDx and Liquid CDx share a record,
+ * as do HercepTest, PATHWAY 4B5 and the HER2 Dual ISH cocktail, and the therascreen kits whose gene the family record
+ * names; Signatera CDx (P260004) is the companion diagnostic version of the Signatera record, whose IMvigor011
+ * approval it is (src/data/tumour-tests.ts says so). Not mapped, because no record covers the device: Guardant360 Liquid
+ * CDx (P250027, a different PMA from Guardant360 CDx), HER2 CISH pharmDx, INFORM HER-2/neu, InSite Her-2/neu (CB11),
+ * PGDx elio tissue complete, SPOT-LIGHT HER2 CISH, cobas EZH2, cobas KRAS and therascreen PDGFRA (the therascreen
+ * family record does not name it).
+ */
+export const CDX_DEVICE_IDS: Record<string, string> = {
+  "Abbott RealTime IDH1": "abbott-realtime-idh1",
+  "Abbott RealTime IDH2": "abbott-realtime-idh2",
+  "Agilent Resolution ctDx FIRST assay": "resolution-ctdx-first",
+  "BRACAnalysis CDx": "bracanalysis-cdx",
+  "Bond Oracle HER2 IHC System": "bond-oracle-her2-ihc",
+  "CRCDx RAS Mutation Detection Assay Kit": "crcdx-ras",
+  "FoundationFocus CDxBRCA Assay": "foundationfocus-cdxbrca",
+  "FoundationOne CDx": "foundationone-cdx",
+  "FoundationOne Liquid CDx": "foundationone-cdx",
+  "Guardant360 CDx": "guardant360-cdx",
+  "HER2 FISH pharmDx Kit": "her2-fish-pharmdx",
+  "HercepTest": "her2-testing-assays",
+  "Idylla CDx MSI Test": "idylla-cdx-msi",
+  "KIT D816V Assay": "arup-kit-d816v",
+  "LeukoStrat CDx FLT3 Mutation Assay": "leukostrat-cdx-flt3",
+  "MAGE-A4 IHC 1F9 pharmDx": "mage-a4-ihc-1f9-pharmdx",
+  "MI Cancer Seek (MCS)": "caris-mi-cancer-seek",
+  "MI Cancer Seek": "caris-mi-cancer-seek",
+  "MMR IHC Panel pharmDx (Dako Omnis)": "mmr-ihc-panel-pharmdx",
+  "MRDx BCR-ABL Test": "mrdx-bcr-abl",
+  "Myriad myChoice CDx": "mychoice-cdx",
+  "ONCO/Reveal Dx Lung & Colon Cancer Assay (O/RDx-LCCA)": "onco-reveal-dx-lung-colon",
+  "ONCO/Reveal Dx Lung and Colon Cancer Assay": "onco-reveal-dx-lung-colon",
+  "OncoMate MSI Dx Analysis System": "oncomate-msi-dx",
+  "Oncomine Dx Express Test": "oncomine-dx-express",
+  "Oncomine Dx Target Test": "oncomine-dx-target-test",
+  "PATHWAY anti-HER-2/neu (4B5) Rabbit Monoclonal Primary Antibody": "her2-testing-assays",
+  "PATHWAY anti-Her2/neu (4B5) Rabbit Monoclonal Primary Antibody": "her2-testing-assays",
+  "PD-L1 IHC 22C3 pharmDx": "dako-pd-l1-22c3-pharmdx",
+  "PD-L1 IHC 28-8 pharmDx": "pd-l1-ihc-28-8-pharmdx",
+  "PathVysion HER-2 DNA Probe Kit": "pathvysion-her2",
+  "SeCore CDx HLA Sequencing System": "secore-cdx-hla",
+  "Signatera CDx": "signatera",
+  "THxID BRAF Kit": "thxid-braf",
+  "TruSight Oncology Comprehensive": "trusight-oncology-comprehensive",
+  "VENTANA CLDN18 (43-14A) RxDx Assay": "ventana-cldn18-43-14a",
+  "VENTANA HER2 Dual ISH DNA Probe Cocktail": "her2-testing-assays",
+  "VENTANA MET (SP44) RxDx Assay": "ventana-met-sp44",
+  "VENTANA PTEN (SP218) RxDx Assay": "ventana-pten-sp218",
+  "Ventana ALK (D5F3) CDx Assay": "ventana-alk-d5f3-cdx",
+  "Ventana FOLR1 (FOLR-2.1) RxDx Assay": "ventana-folr1-rxdx",
+  "Ventana HER2 Dual ISH DNA Probe Cocktail": "her2-testing-assays",
+  "Ventana MMR RxDx Panel": "ventana-mmr-rxdx",
+  "Ventana PD-L1 (SP142) Assay": "ventana-pd-l1-sp142",
+  "Ventana PD-L1 (SP263) Assay": "ventana-pd-l1-sp263",
+  "Vysis ALK Break Apart FISH Probe Kit": "vysis-alk-break-apart-fish",
+  "Vysis CLL FISH Probe Kit": "vysis-cll-fish",
+  "cobas 4800 BRAF V600 Mutation Test": "cobas-4800-braf-v600",
+  "cobas EGFR Mutation Test v2": "cobas-egfr-mutation-test",
+  "therascreen BRAF V600E RGQ PCR Kit": "therascreen-cdx",
+  "therascreen EGFR RGQ PCR Kit": "therascreen-cdx",
+  "therascreen FGFR RGQ RT-PCR Kit": "therascreen-cdx",
+  "therascreen KRAS RGQ PCR Kit": "therascreen-cdx",
+  "therascreen PIK3CA RGQ PCR Kit": "therascreen-cdx",
+  "xT CDx": "tempus-xt-cdx",
+};
+/** One FDA companion diagnostic list row; the device's record id comes from CDX_DEVICE_IDS. */
+export const cdx = (device: string, maker: string, indication: string, drugs: string[], pma: string, companyId?: string): CompanionDiagnostic => ({ device, maker, companyId, deviceId: CDX_DEVICE_IDS[device], drugs, indication, pma, source: FDA_CDX_URL });
 
 // Label set ids (DailyMed), read 23 Sept 2026.
 export const LABEL = {

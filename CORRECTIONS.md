@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Innate immunity, cell identity and source scope
+
+- **Macrophage states:** the retained TAM summary treated an M2-like label as the prevailing identity. It now explains that M1/M2 labels arise from laboratory stimulation and do not certify a tumour cell's state or suppressive function. The location name, measured programme and functional test remain separate. Sources and exact fields are in the [innate source reconciliation](research/education-coverage-2026-11-08/innate-immunity-2026-11-10/primary-sources.json).
+- **Recognition systems:** the immune-system definition replaces a rigid fast/generic versus slow/remembering division with inherited receptor systems versus receptors assembled during development, while preserving qualified trained-monocyte and memory-like NK findings. Chemokine activation effects and soluble complement defences are explicit rather than lost in the comparison.
+- **Experimental scope:** the checkpoint additions keep the galectin-9/Bat3 binding result in the tested 293T setting, separate from the Th1-cell death result. The reviewed receptor-selection article is described as a review. Interferon protein amount, RNA score and controlled-exposure activity retain distinct readouts; receptor-family labels do not measure dose or potency.
+- **Glossary routing:** singular and plural interferon lookup now belong to the dedicated interferon-family term; the broad cytokine definition remains linked. No ambiguous DCs alias is added.
+
 ### Breast anatomy, pathology and source scope
 
 - **Ki-67 and monarchE:** the retained summary attributed the 20% eligibility threshold to cohort 1. It belonged to cohort 2; cohort 1 used its specified node, grade and size criteria. The current note separates trial eligibility from the FDA's 2023 removal of the testing requirement. MIB-1 remains a named assay antibody, rather than the definition of every Ki-67 index. Source: [FDA abemaciclib expansion](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-expands-early-breast-cancer-indication-abemaciclib-endocrine-therapy).

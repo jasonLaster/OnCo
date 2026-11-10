@@ -698,10 +698,49 @@ export const termsBasics: TermInput[] = [
     id: "lymph-node", name: "Lymph node", category: BIO,
     aka: ["lymph nodes", "lymph-node", "lymph-nodes", "node-positive", "node-negative", "nodal", "nodal involvement", "nodal disease", "lymphatic", "lymphatics", "lymphatic system", "sentinel lymph node", "sentinel node", "axillary nodes", "regional nodes", "regional lymph nodes"],
     tldr: "Small bean-shaped filters along the lymph vessels where immune cells gather. They are often the first place a cancer spreads, so surgeons check them to see how far the disease has gone.",
-    summary: "Lymph drains fluid from tissues back to the blood, passing through nodes where T and B cells inspect it for infection; cancer cells that enter lymph vessels lodge in the nearest nodes first, so node involvement (the N in TNM) is a central marker of a cancer's tendency to spread and raises the stage. Sentinel-node biopsy identifies and removes only the first node or two that drain a tumour, sparing patients the arm swelling (lymphoedema) that removing all nodes causes. Lymph nodes are also where immune responses against a tumour are launched, and where immunotherapy needs functioning T cells to be primed.",
+    summary: "Lymph drains fluid from tissues back to the blood, passing through nodes where T and B cells inspect it for infection; cancer cells that enter lymph vessels lodge in the nearest nodes first, so node involvement (the N in TNM) is a central marker of a cancer's tendency to spread and raises the stage. Sentinel-node biopsy identifies and removes only the first node or two that drain a tumour, sparing patients the arm swelling (lymphoedema) that removing all nodes causes. Lymph nodes are also where immune responses against a tumour are launched, and where immunotherapy needs functioning T cells to be primed. Afferent vessels bring lymph into a node and efferent vessels carry it out, and a draining node names a route and not a finding of cancer. Immune material and cells reach a node by different routes: soluble antigen can reach resident dendritic cells through conduits in the node before migrating dendritic cells arrive (Sixt et al., 2005, mouse), while lymphocytes are recruited from the blood through high endothelial venules (Brulois et al., 2020, mouse). Lymph is interstitial fluid collected by lymph capillaries and returned to the venous blood (National Cancer Institute SEER training), so lymph and blood are different fluids and a sample of one does not stand in for the other. A tertiary lymphoid structure is an ectopic lymphoid aggregate that forms in tissue such as a tumour, and it is not a lymph node (Schumacher and Thommen, 2022). Size on imaging is a measurement in millimetres and not a finding of cancer or priming, and a report should say which node was measured, by what method and when (OnCo reporting advice). A node has a cortex, a paracortex and a medulla, and B cells and T cells home to separate areas within them (Willard-Mack, 2006); in the mouse, a venous population in the medulla was predicted to recruit myeloid cells rather than lymphocytes, which videomicroscopy confirmed (Brulois et al., 2020). In gene-targeted mice, loss of the chemokine receptor CCR7 altered the organisation of lymphoid organs and stopped skin dendritic cells reaching draining nodes (Förster et al., 1999). Arrival of material in a node does not show that priming succeeded. Pathological involvement means cancer was identified in examined tissue, which differs from a drainage route, enlargement or an imaging observation, and a negative sampled node does not certify the unsampled nodes (the National Cancer Institute notes that a false-negative biopsy gives a false sense of security about the extent of cancer).",
     wikipedia: W("Lymph_node"),
     related: ["metastasis", "cancer-stage", "tnm-staging", "lymphoma-type", "immune-system", "t-cell"], technologies: ["sentinel-node"],
-  }),
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lymph_node"
+  },
+  {
+    "label": "The conduit system transports soluble antigens from the afferent lymph to resident dendritic cells in the T cell area of the lymph node.",
+    "url": "https://doi.org/10.1016/j.immuni.2004.11.013"
+  },
+  {
+    "label": "CCR7 coordinates the primary immune response by establishing functional microenvironments in secondary lymphoid organs.",
+    "url": "https://doi.org/10.1016/s0092-8674(00)80059-8"
+  },
+  {
+    "label": "A molecular map of murine lymph node blood vascular endothelium at single cell resolution.",
+    "url": "https://doi.org/10.1038/s41467-020-17291-5"
+  },
+  {
+    "label": "National Cancer Institute: Sentinel Lymph Node Biopsy",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet"
+  },
+  {
+    "label": "Normal structure, function, and histology of lymph nodes.",
+    "url": "https://doi.org/10.1080/01926230600867727"
+  },
+  {
+    "label": "National Cancer Institute SEER Training: Introduction to the Lymphatic System",
+    "url": "https://training.seer.cancer.gov/anatomy/lymphatic/"
+  },
+  {
+    "label": "Tertiary lymphoid structures in cancer.",
+    "url": "https://doi.org/10.1126/science.abf9419"
+  }
+],
+"terms": [
+  "tertiary-lymphoid-structures"
+]
+}),
   t({
     id: "biopsy", name: "Biopsy", category: CLINIC,
     aka: ["biopsies", "biopsied", "tissue sample", "tissue samples", "core biopsy", "needle biopsy", "core needle biopsy", "tissue biopsy", "rebiopsy", "re-biopsy", "surgical biopsy", "excisional biopsy", "fine needle aspiration", "FNA"],
@@ -751,10 +790,129 @@ export const termsBasics: TermInput[] = [
     id: "immune-system", name: "Immune system", category: BIO,
     aka: ["immunity", "immune response", "immune responses", "immune cells", "immune cell", "immune attack", "immune recognition", "immune surveillance", "immunosurveillance", "innate immunity", "adaptive immunity", "innate immune", "adaptive immune", "white blood cells", "white blood cell", "leukocytes", "lymphocytes", "lymphocyte"],
     tldr: "The body's defence network of cells and molecules that recognises and destroys infected, foreign and abnormal cells. It kills most would-be cancers before they are ever noticed; the ones that survive have learned to hide from it.",
-    summary: "The innate arm (macrophages, neutrophils, natural killer cells, dendritic cells) responds fast and generically; the adaptive arm (T cells and B cells) learns specific targets and remembers them. Tumours are recognised because they display mutated proteins and stress signals, but successful tumours evade destruction by displaying 'don't attack me' checkpoint signals, hiding their antigens, recruiting suppressive cells, and walling themselves off; 'avoiding immune destruction' is one of the hallmarks of cancer. Immunotherapy in its many forms (checkpoint inhibitors, engineered T cells, bispecifics, vaccines) works by restoring or engineering the immune system's ability to see and kill the tumour.",
+    summary: "Innate immunity uses inherited sensing systems (barriers, soluble defences such as complement, phagocytes such as macrophages and neutrophils, natural killer cells, and sensors of microbial or damage-related features), while adaptive immunity expands T cells and B cells whose diverse antigen receptors are assembled during development and selected by an encounter, with some descendants persisting as memory cells. The two cooperate: dendritic cells, cytokines and lymph nodes connect innate sensing to adaptive responses, and antibodies and T cells in turn guide innate cells.",
     wikipedia: W("Immune_system"),
-    related: ["t-cell", "b-cell", "nk-cell", "macrophage", "cytokine", "antigen", "immune-checkpoint", "immunotherapy-term", "avoiding-immune-destruction", "cold-vs-hot", "tumor-microenvironment"],
-  }),
+    related: [
+  "t-cell",
+  "b-cell",
+  "nk-cell",
+  "macrophage",
+  "cytokine",
+  "antigen",
+  "immune-checkpoint",
+  "immunotherapy-term",
+  "avoiding-immune-destruction",
+  "cold-vs-hot",
+  "tumor-microenvironment",
+  "dendritic-cells",
+  "gamma-delta-t-cells",
+  "nkt-cells",
+  "peripheral-tolerance",
+  "pattern-recognition-damps-and-pamps",
+  "macrophage-states",
+  "adenosine-and-ido",
+  "interferons"
+],
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Immune_system"
+  },
+  {
+    "label": "Candida albicans infection affords protection against reinfection via functional reprogramming of monocytes.",
+    "url": "https://doi.org/10.1016/j.chom.2012.06.006"
+  },
+  {
+    "label": "Adaptive immune features of natural killer cells.",
+    "url": "https://doi.org/10.1038/nature07665"
+  },
+  {
+    "label": "Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors.",
+    "url": "https://doi.org/10.1126/science.aah4573"
+  },
+  {
+    "label": "An introduction to immunology and immunopathology.",
+    "url": "https://doi.org/10.1186/s13223-018-0278-1"
+  },
+  {
+    "label": "Cytotoxic CD4 T cells in the mucosa and in cancer.",
+    "url": "https://doi.org/10.3389/fimmu.2023.1233261"
+  },
+  {
+    "label": "Recommendations for myeloid-derived suppressor cell nomenclature and characterization standards.",
+    "url": "https://doi.org/10.1038/ncomms12150"
+  },
+  {
+    "label": "MHC restriction is imposed on a diverse T cell receptor repertoire by CD4 and CD8 co-receptors during thymic selection.",
+    "url": "https://doi.org/10.1016/j.it.2012.05.006"
+  },
+  {
+    "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
+    "url": "https://doi.org/10.21769/bioprotoc.4285"
+  },
+  {
+    "label": "Mechanisms of central tolerance for B cells.",
+    "url": "https://doi.org/10.1038/nri.2017.19"
+  },
+  {
+    "label": "Recognition of microorganisms and activation of the immune response.",
+    "url": "https://doi.org/10.1038/nature06246"
+  },
+  {
+    "label": "Vaccine adjuvants: putting innate immunity to work.",
+    "url": "https://doi.org/10.1016/j.immuni.2010.10.002"
+  },
+  {
+    "label": "Hayday and Vantourout, 2020: The Innate Biologies of Adaptive Antigen Receptors",
+    "url": "https://doi.org/10.1146/annurev-immunol-102819-023144"
+  },
+  {
+    "label": "Oettinger et al., 1990: RAG-1 and RAG-2 and V(D)J recombination",
+    "url": "https://doi.org/10.1126/science.2360047"
+  },
+  {
+    "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+    "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+  },
+  {
+    "label": "Rodero et al., 2017: Interferon-alpha protein and cellular sources",
+    "url": "https://doi.org/10.1084/jem.20161451"
+  },
+  {
+    "label": "Peiseler and Kubes, 2019: Neutrophils in tissue repair",
+    "url": "https://doi.org/10.1172/JCI124616"
+  },
+  {
+    "label": "de Gruijter et al., 2022: Cytokine production by human B cells",
+    "url": "https://doi.org/10.1093/cei/uxac090"
+  },
+  {
+    "label": "Wynn and Vannella, 2016: Macrophages in tissue repair, regeneration and fibrosis",
+    "url": "https://doi.org/10.1016/j.immuni.2016.02.015"
+  },
+  {
+    "label": "Afonso et al., 2012: Leukotriene B4 signal relay during neutrophil chemotaxis",
+    "url": "https://doi.org/10.1016/j.devcel.2012.02.003"
+  }
+],
+"notes": [
+  "Fast and memoryless against slow and remembering is a starting tendency and not a rule: mice lacking functional T and B cells were protected against repeat Candida albicans infection in a monocyte-dependent way (Quintin et al., 2012), and natural killer cells carrying the Ly49H receptor expanded about 100-fold in the spleen after mouse cytomegalovirus infection, persisted for months and expanded again after transfer to a new host (Sun et al., 2009).",
+  "A list of cell types is a roster and not a functional report: a cell-family name does not show what a cell is doing, a marker shared by several populations is not a complete identity test (single-cell sequencing of human blood found six dendritic-cell and four monocyte subtypes; Villani et al., 2017), and a fraction of immune cells depends on its denominator (percent of recovered immune cells, of T cells and of all tissue cells are different quantities). Blood composition does not substitute for tumour composition, and a count of immune cells in a tumour does not by itself show recognition or killing. CD4 and CD8 are co-receptors and not permanent helper and killer assignments, tumour-associated macrophage names a setting, myeloid-derived suppressor cells need an operational phenotype and a test of suppressive function, and natural killer T cells are a T-cell family distinct from natural killer cells despite the name. In the classical description innate immunity is rapid and without immunologic memory while adaptive immunity is antigen-specific with a capacity for memory, and the two are not mutually exclusive (Marshall et al., 2018). Cytotoxic CD4 T cells have been found in infections, tumours and inflammatory disease, so a CD4 or CD8 label does not fix a helper or killer role (Venkatesh et al., 2023), and a myeloid-derived suppressor cell label rests on myeloid origin plus shown suppressive function (Bronte et al., 2016). CD4 and CD8 are coreceptors for T-cell receptors that recognise MHC, and a review discusses how they help impose MHC specificity during thymic selection (Van Laethem et al., 2012), so a CD4 or CD8 label names a coreceptor and not a job.",
+  "Among innate cells, phagocytes (neutrophils and macrophages) engulf and kill microbes, and natural killer cells play a major role in the rejection of tumours and the destruction of virus-infected cells through perforins and granzymes (Marshall et al., 2018). The receptor comparison concerns how recognition equipment is generated: inherited, germline-encoded receptors include Toll-like and natural killer receptors, whereas developing T and B cells assemble diverse antigen receptors by somatic V(D)J recombination (Hayday and Vantourout, 2020; Oettinger et al., 1990; Nemazee, 2017); one review describes the adaptive system as in turn activating innate effector mechanisms in an antigen-specific manner (Medzhitov, 2007).",
+  "Most adjuvants are thought to enhance T-cell and B-cell responses by engaging the innate immune system and not the lymphocytes directly (Coffman et al., 2010), so a vaccine can create an inflammatory context, and a response to an unrelated control antigen has to be measured to show that a response to the vaccine antigen is selective; in OnCo's reasoning, a manufactured antibody is also not evidence that the recipient made antibodies. Counts of cells, concentrations in picograms per millilitre and antigen-matched functional assays answer different questions, and a report should say which specimen, which time, which stimulation and which background control was used (OnCo reporting advice).",
+  "Tumours are recognised because they display mutated proteins and stress signals, but successful tumours evade destruction by displaying 'don't attack me' checkpoint signals, hiding their antigens, recruiting suppressive cells, and walling themselves off; 'avoiding immune destruction' is one of the hallmarks of cancer. Immunotherapy in its many forms (checkpoint inhibitors, engineered T cells, bispecifics, vaccines) aims to restore or engineer the immune system's ability to see and kill the tumour.",
+  "Cell-family roster, T cells: diverse antigen receptors support antigen-specific responses; functions can include help through signals, regulation and target-cell killing. A CD4 or CD8 marker is a coreceptor label, not a permanent helper or killer assignment. Interpretation: the presence of T cells does not establish which antigen they recognise or that killing is occurring (Marshall et al., 2018; Venkatesh et al., 2023).",
+  "Cell-family roster, B cells and plasma cells: B cells recognise antigen, can present it to T cells and can produce cytokine signals; plasma cells specialise in antibody secretion (Marshall et al., 2018; de Gruijter et al., 2022). Interpretation: counting either family does not identify what its antibodies bind or whether those antibodies help control a tumour.",
+  "Cell-family roster, natural killer cells: activating and inhibitory inputs together influence target-cell damage and cytokine production; these cells can release perforin, granzymes and interferon gamma (Marshall et al., 2018). Interpretation: a count of natural killer cells does not show that every abnormal cell will be attacked. The required signals, cell state and tested target still matter.",
+  "Cell-family roster, macrophages: engulfment, antigen presentation and signalling coexist with roles in tissue maintenance and repair. The repair, inflammatory and fibrotic programmes described by Wynn and Vannella (2016) depend on context. Interpretation: a macrophage count or location does not establish a universally beneficial or suppressive function.",
+  "Cell-family roster, dendritic cells: they collect and display antigen and provide signals that can shape T-cell priming, connecting innate and adaptive immunity (Marshall et al., 2018). Interpretation: their presence does not establish that the relevant antigen was displayed with the supporting signals needed for a useful response.",
+  "Cell-family roster, neutrophils: engulfment and antimicrobial activity are accompanied by inflammatory signalling and tissue effects. Afonso et al. (2012) showed cell-to-cell signal relay by leukotriene B4 in defined neutrophil chemotaxis experiments, including cells from mice with or without the formyl peptide receptor 1. Peiseler and Kubes (2019) review roles in tissue damage, resolution of inflammation and repair, including sterile injury. Interpretation: a neutrophil count alone does not diagnose infection or establish cancer promotion or cancer control.",
+  "Recognition-system comparison: innate recognition equipment is inherited; T-cell and B-cell antigen receptors are diversified and assembled during development. Exposure can change innate activation, recruitment and later responsiveness, while an adaptive response can select clones that expand, differentiate and persist as memory. Speed is a separate axis: innate responses are often early but can persist, and adaptive recall can be rapid. Mouse fungal and viral experiments demonstrate particular forms of trained monocyte or memory-like natural killer responses, not a rule that every innate response has conventional T-cell or B-cell memory (Quintin et al., 2012; Sun et al., 2009; Hayday and Vantourout, 2020). Antigen specificity alone does not establish activation or benefit.",
+  "Measurement comparison: cell counts describe a sampled population, protein concentration describes an amount per volume, and an antigen-matched functional assay describes an activity under its test conditions. Rodero et al. (2017) measured interferon-alpha protein, interferon-responsive RNA and antiviral activity as different readouts; Sanz et al. (2023) separately measured gamma-delta cell phenotype, receptor repertoire and target-cell killing. The reporting inference is to keep specimen, collection time, cell identity, stimulation, viability and background controls explicit. A concentration in picograms per millilitre is not a cell count or an antigen-specific response."
+]
+}),
   t({
     id: "t-cell", name: "T cell", category: BIO,
     aka: ["T cells", "T-cell", "T-cells", "T lymphocyte", "T lymphocytes"],
@@ -815,11 +973,64 @@ export const termsBasics: TermInput[] = [
 ]
 }),
   t({
-    asOf:"2026-11-08", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Natural_killer_cell"},{"label":"Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)","url":"https://pubmed.ncbi.nlm.nih.gov/3951539/"},{"label":"Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)","url":"https://doi.org/10.1056/NEJMoa1910607"}], notes:["The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.","A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."],
+    asOf:"2026-11-10", links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Natural_killer_cell"
+  },
+  {
+    "label": "Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3951539/"
+  },
+  {
+    "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+    "url": "https://doi.org/10.1056/NEJMoa1910607"
+  },
+  {
+    "label": "Recognition of Self and Viral Ligands by NK Cell Receptors.",
+    "url": "https://doi.org/10.1111/imr.13435"
+  },
+  {
+    "label": "MHC class I molecules and KIRs in human history, health and survival.",
+    "url": "https://doi.org/10.1038/nri1570"
+  },
+  {
+    "label": "HLA-E binds to natural killer cell receptors CD94/NKG2A, B and C.",
+    "url": "https://doi.org/10.1038/35869"
+  },
+  {
+    "label": "Activation of NK Cells and T Cells by NKG2D, a Receptor for Stress-Inducible MICA.",
+    "url": "https://doi.org/10.1126/science.285.5428.727"
+  },
+  {
+    "label": "Controlling Natural Killer Cell Responses: Integration of Signals for Activation and Inhibition.",
+    "url": "https://doi.org/10.1146/annurev-immunol-020711-075005"
+  },
+  {
+    "label": "Education of hyporesponsive NK cells by cytokines.",
+    "url": "https://doi.org/10.1002/eji.200939307"
+  },
+  {
+    "label": "Mutations Associated with Acquired Resistance to PD-1 Blockade in Melanoma.",
+    "url": "https://doi.org/10.1056/nejmoa1604958"
+  },
+  {
+    "label": "A versatile flow-based assay for immunocyte-mediated cytotoxicity.",
+    "url": "https://doi.org/10.1016/j.jim.2019.112668"
+  },
+  {
+    "label": "CD107a as a functional marker for the identification of natural killer cell activity.",
+    "url": "https://doi.org/10.1016/j.jim.2004.08.008"
+  },
+  {
+    "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
+    "url": "https://doi.org/10.21769/bioprotoc.4285"
+  }
+], notes:["The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.","A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."],
     id: "nk-cell", name: "NK cell", category: BIO, targets: ["cd56", "fcgr3a", "cd57"],
     aka: ["NK cells", "natural killer cell", "natural killer cells", "natural killer", "NK-cell", "CAR-NK"],
     tldr: "Natural killer cells integrate activating and inhibitory inputs to respond to abnormal cells. An added CAR supplies another recognition route; missing self is one input rather than a guarantee of killing.",
-    summary: "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters.",
+    summary: "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters. The principle comes from mouse experiments: lymphoma cells selected for loss of H-2 were less malignant at low dose and were rejected by a non-adaptive mechanism, which suggested that natural killer cells are effectors in a defence system geared to detect reduced self MHC (Kärre et al., 1986); that does not guarantee the same outcome for any human tumour. MHC class I molecules are ligands for killer-cell immunoglobulin-like receptors (Parham, 2005): two-domain KIR2D receptors bind HLA-C alleles and three-domain KIR3D receptors bind HLA-A and HLA-B alleles, and the KIR family includes activating as well as inhibitory members (Mariuzza et al., 2025). CD94/NKG2A binds HLA-E, and HLA-E surface expression was enough to protect target cells from lysis by CD94/NKG2A-positive NK clones (Braud et al., 1998). NKG2D binds class I-related proteins including MICA, MICB and ULBP1 to 3 (Mariuzza et al., 2025), and engagement of NKG2D activated NK and gamma-delta T-cell cytolysis against epithelial tumour cells expressing MICA (Bauer et al., 1999). No single activating receptor dominates, since NK cells integrate synergistic signals from several (Long et al., 2013), and responsiveness depends on prior education: in human cell experiments, cytokine stimulation let hyporesponsive NK cells acquire KIR and function when the cognate MHC was present (Juelke et al., 2009). Loss of one HLA allele is not loss of all class I. Loss of beta-2 microglobulin removed surface class I in one of four relapsing melanoma patients (Zaretsky et al., 2016), and because HLA-E is assembled with beta-2 microglobulin, the KIR and NKG2A restraints would be expected to lift together; that last step is an inference not tested in the cited abstracts. A flow-based cytotoxicity assay that stains target and effector nuclei separately and distinguishes live from dead nuclei has been validated with NK-92 cells, CAR-T cells and tumour-infiltrating lymphocytes (Rabinovich et al., 2019). Target death is not a count of effector cells that released granule contents: surface CD107a marked NK cells that degranulated after stimulation with MHC-devoid targets and correlated with lysis, and also marked a large subset that did not secrete cytokine, so different readouts count different cells (Alter et al., 2004). CD16 is a low-affinity Fc receptor for IgG that mediates antibody-dependent cellular cytotoxicity by NK cells (Liu, 2022), a route separate from missing-self recognition. Neither assay readout shows tumour entry or clinical benefit.",
     wikipedia: W("Natural_killer_cell"),
     related: ["t-cell", "immune-system", "adcc", "antibody", "fc-effector"], technologies: ["car-nk-macrophage", "allogeneic-cell-therapy", "monoclonal-antibody"],
   }),
@@ -827,34 +1038,227 @@ export const termsBasics: TermInput[] = [
     id: "macrophage", name: "Macrophage", category: BIO,
     aka: ["macrophages", "myeloid cells", "myeloid cell", "monocyte", "monocytes", "phagocyte", "phagocytes", "phagocytosis"],
     tldr: "Large immune cells that engulf debris, microbes and dead cells and coordinate inflammation. Tumours recruit and retrain them: tumour-associated macrophages can make up half the cells in some tumours, where they feed blood-vessel growth and suppress T cells, and cancer cells display CD47 as a 'don't eat me' signal to avoid being engulfed.",
-    summary: "Macrophages can be pro-inflammatory and tumour-killing or tissue-repairing and immunosuppressive, and tumours push them towards the latter; tumour-associated macrophages can make up half the cells in some tumours, where they promote blood-vessel growth, suppress T cells, help cancer cells invade, and take up ADC payloads that contribute to side effects. Cancer cells display CD47, a 'don't eat me' signal, to stop macrophages engulfing them, and CD47 blockers are in trials. Efforts to reprogramme macrophages (CSF1R inhibitors, CD40 agonists, CAR-macrophages) have been harder to translate than T-cell approaches.",
+    summary: "Macrophages engulf material and take part in defence, tissue maintenance and repair. Their current state (a set of activity programmes) is separate from their lineage (developmental origin) and is shaped by origin, tissue, signals and history, so they do not fall into two types: the M1 and M2 labels come from simplified laboratory contrasts, consensus guidance asks authors to state the source, the activators and the markers (Murray et al., 2014), and human macrophages stimulated with diverse signals showed a spectrum of states that extends the two-type model (Xue et al., 2014). A macrophage can combine inflammatory, tissue-repair and other programmes, and a marker or an M2-like label does not by itself show what a cell is doing to T cells or to cancer cells. Tumour-associated macrophages can make up half the cells in some tumours, where they promote blood-vessel growth, suppress T cells, help cancer cells invade, and take up ADC payloads that contribute to side effects. Cancer cells display CD47, a 'don't eat me' signal, to stop macrophages engulfing them, and CD47 blockers are in trials. Efforts to reprogramme macrophages (CSF1R inhibitors, CD40 agonists, CAR-macrophages) have been harder to translate than T-cell approaches.",
     wikipedia: W("Macrophage"),
-    related: ["immune-system", "inflammation", "tumor-associated-macrophages", "myeloid-derived-suppressor-cells", "tumor-microenvironment", "cytokine"], targets: ["cd47"], technologies: ["car-nk-macrophage"],
-  }),
+    related: [
+  "immune-system",
+  "inflammation",
+  "tumor-associated-macrophages",
+  "myeloid-derived-suppressor-cells",
+  "tumor-microenvironment",
+  "cytokine",
+  "macrophage-states"
+], targets: ["cd47"], technologies: ["car-nk-macrophage"],
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Macrophage"
+  },
+  {
+    "label": "Macrophage activation and polarization: nomenclature and experimental guidelines.",
+    "url": "https://doi.org/10.1016/j.immuni.2014.06.008"
+  },
+  {
+    "label": "Transcriptome-based network analysis reveals a spectrum model of human macrophage activation.",
+    "url": "https://doi.org/10.1016/j.immuni.2014.01.006"
+  }
+]
+}),
   t({
     id: "cytokine", name: "Cytokine", category: BIO,
-    aka: ["cytokines", "interleukin", "interleukins", "IL-2", "IL-6", "interferon", "interferons", "chemokine", "chemokines", "pro-inflammatory cytokines", "inflammatory cytokines"],
+    aka: [
+  "cytokines",
+  "interleukin",
+  "interleukins",
+  "IL-2",
+  "IL-6",
+  "chemokine",
+  "chemokines",
+  "pro-inflammatory cytokines",
+  "inflammatory cytokines"
+],
     tldr: "Small proteins immune cells use to talk to each other: alarms, recruitment calls, growth orders and stand-down signals. Some are cancer drugs, and a flood of them is the danger of certain immunotherapies.",
-    summary: "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor; IL-2 drives T-cell growth and was one of the first immunotherapies (aldesleukin), interferon-alpha was used in melanoma and leukaemia, and engineered cytokines aim to keep the benefit while losing the toxicity. Tumours secrete cytokines that recruit suppressive cells and drive inflammation, and IL-6 is a major driver of cancer cachexia. When CAR-T cells or T-cell engagers activate en masse they release cytokines in a surge (cytokine release syndrome), treated by blocking IL-6 with tocilizumab.",
+    summary: "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor; IL-2 drives T-cell growth and was one of the first immunotherapies (aldesleukin), interferon-alpha was used in melanoma and leukaemia, and engineered cytokines aim to keep the benefit while losing the toxicity. Tumours secrete cytokines that recruit suppressive cells and drive inflammation, and IL-6 is a major driver of cancer cachexia. When CAR-T cells or T-cell engagers activate en masse they release cytokines in a surge (cytokine release syndrome), treated by blocking IL-6 with tocilizumab. A cytokine name does not specify one outcome: one cytokine can act differently on different receiving cells (pleiotropy), different signals can give overlapping outputs (redundancy), and receptor availability, concentration, exposure time and cell state all shape the response. A review of receptor biology said that all cytokines, to a greater or lesser extent, show pleiotropy (multiple biological actions) and redundancy (shared biological actions), and proposed that redundancy might be explained by related cytokines using a common receptor subunit, while pleiotropy requires that receptors exert different activities on different cells (Nicola, 1994). Different IL-2 and anti-IL-2 antibody complexes selectively expanded CD8 T cells or CD4 regulatory T cells in mice, so the formulation and the receiving cells mattered (Boyman et al., 2006). Chemokines help direct cell movement through gradients: in mouse skin an immobilised CCL21 gradient guided dendritic cells towards lymphatic vessels, and displacing or swamping it abolished directed migration (Weber et al., 2013), but movement also needs a compatible receptor and a traversable route. Measurements answer different questions: a concentration in picograms per millilitre of a named fluid, the percentage of a defined cell gate making a protein after stimulation, and RNA expression are different layers, a blood concentration does not reconstruct a tumour gradient, and two preparations can share an average (0 and 20, or 10 and 10, picograms per millilitre both average 10) while differing in spatial pattern. Intracellular cytokine staining usually involves a stimulation of a few hours (4 to 6 hours was usually sufficient to detect interferon gamma and tumour necrosis factor), a block on secretion with brefeldin A or monensin so that the protein stays inside the cell, and negative and positive controls (Cossarizza et al., 2019). Calibration and a detection limit belong in the same report; that is OnCo's reporting advice and not a finding of the cited guideline. Chemokines are a family of cytokines and not a separate category, a growth-support signal such as IL-2 does not choose the antigen a T cell recognises, and more signal is not automatically more useful or safer immunity. For interferons, timing and the receiving cell mattered in mouse experiments: endogenous type I interferon was needed to prevent the growth of carcinogen-induced and transplanted tumours and acted through host blood-lineage cells (Dunn et al., 2005), whereas prolonged interferon signalling in experimental tumours maintained a resistance programme to checkpoint blockade (Benci et al., 2016). That a signal is tumour-associated does not by itself make it a safe target; this is OnCo's boundary statement and not a cited finding.",
     wikipedia: W("Cytokine"),
-    related: ["immune-system", "t-cell", "inflammation", "crs", "ligand", "receptor", "cachexia"], technologies: ["cytokine-therapy", "car-t", "t-cell-engager"], drugs: ["aldesleukin"],
-  }),
+    related: [
+  "immune-system",
+  "t-cell",
+  "inflammation",
+  "crs",
+  "ligand",
+  "receptor",
+  "cachexia",
+  "interferons"
+], technologies: ["cytokine-therapy", "car-t", "t-cell-engager"], drugs: ["aldesleukin"],
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cytokine"
+  },
+  {
+    "label": "Interstitial dendritic cell guidance by haptotactic chemokine gradients.",
+    "url": "https://doi.org/10.1126/science.1228456"
+  },
+  {
+    "label": "Selective stimulation of T cell subsets with antibody-cytokine immune complexes.",
+    "url": "https://doi.org/10.1126/science.1122927"
+  },
+  {
+    "label": "Cytokine pleiotropy and redundancy: a view from the receptor.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7696967/"
+  },
+  {
+    "label": "Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition).",
+    "url": "https://doi.org/10.1002/eji.201970107"
+  },
+  {
+    "label": "A critical function for type I interferons in cancer immunoediting.",
+    "url": "https://doi.org/10.1038/ni1213"
+  },
+  {
+    "label": "Tumor Interferon Signaling Regulates a Multigenic Resistance Program to Immune Checkpoint Blockade.",
+    "url": "https://doi.org/10.1016/j.cell.2016.11.022"
+  },
+  {
+    "label": "British Society for Immunology: Cytokines, Introduction",
+    "url": "https://www.immunology.org/sites/default/files/2022-08/cytokines%20-%20introduction.pdf"
+  },
+  {
+    "label": "NLM MeSH: Chemokines",
+    "url": "https://id.nlm.nih.gov/mesh/D018925"
+  }
+],
+"notes": [
+  "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response."
+]
+}),
   t({
     id: "inflammation", keyPapers: ["paper-balkwill-mantovani-inflammation-virchow-lancet-2001"], name: "Inflammation", category: BIO,
     aka: ["inflammatory", "inflamed", "chronic inflammation", "anti-inflammatory", "pro-inflammatory", "inflammatory response"],
     tldr: "The body's response to injury or infection: immune cells and fluid rush in, causing redness, heat and swelling. Short bursts heal; long-term smouldering inflammation promotes cancer.",
-    summary: "Chronic inflammation from infection (hepatitis B and C, H. pylori, HPV), irritation (tobacco, asbestos, acid reflux) or disease (ulcerative colitis) supplies growth factors, free radicals that mutate DNA, and blood-vessel growth, and it is estimated to underlie around a fifth of cancers; 'tumour-promoting inflammation' is a recognised enabling characteristic in the hallmarks of cancer. Yet inflammation is also how the immune system attacks tumours, and an 'inflamed' or 'hot' tumour is one full of T cells that responds well to checkpoint inhibitors. Aspirin and other anti-inflammatory drugs reduce colorectal cancer risk, and the inflammatory markers CRP and IL-6 track cachexia and prognosis.",
+    summary: "Chronic inflammation from infection (hepatitis B and C, H. pylori, HPV), irritation (tobacco, asbestos, acid reflux) or disease (ulcerative colitis) supplies growth factors, free radicals that mutate DNA, and blood-vessel growth, and it is estimated to underlie around a fifth of cancers; 'tumour-promoting inflammation' is a recognised enabling characteristic in the hallmarks of cancer. Yet inflammation is also how the immune system attacks tumours, and an 'inflamed' or 'hot' tumour is one full of T cells that responds well to checkpoint inhibitors. Aspirin and other anti-inflammatory drugs reduce colorectal cancer risk, and the inflammatory markers CRP and IL-6 track cachexia and prognosis. Inflammation is not the same as infection: infection and injury are classic triggers, and tissue stress or malfunction can induce a graded response, called para-inflammation, that relies mainly on tissue-resident macrophages (Medzhitov, 2008). Recruited cells can support containment and repair, or persist and add to injury, and increased vessel permeability is not the growth of new vessels. Resolution is a coordinated and active process that restores tissue integrity and function, and is not simply everything switching off (Ortega-Gómez et al., 2013). In experimental cancer systems one DNA-sensing pathway has had opposite roles: host STING-dependent sensing was needed for spontaneous CD8 T-cell priming against mouse tumours (Woo et al., 2014), while a tumour-cell response to cytosolic DNA in chromosomally unstable tumours promoted metastasis (Bakhoum et al., 2018). These are contextual mechanisms and not a head-to-head clinical comparison. Inflammation after an intervention does not show tumour-specific immune learning: a local reaction, immunogenic cell death, recognition of untreated cancer cells and clinical benefit each need their own evidence, and one raised blood marker does not identify the source of inflammation. Acute against chronic and local against systemic are separate axes, and they need not share a trigger or a consequence.",
     wikipedia: W("Inflammation"),
     related: ["immune-system", "cytokine", "macrophage", "tumor-promoting-inflammation", "inflammation-nfkb", "cold-vs-hot", "risk-factor", "aspirin-cancer-prevention", "theories-of-cancer", "microenvironment-inflammation-theory"],
-  }),
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Inflammation"
+  },
+  {
+    "label": "Origin and physiological roles of inflammation.",
+    "url": "https://doi.org/10.1038/nature07201"
+  },
+  {
+    "label": "STING-dependent cytosolic DNA sensing mediates innate immune recognition of immunogenic tumors.",
+    "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+  },
+  {
+    "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+    "url": "https://doi.org/10.1038/nature25432"
+  },
+  {
+    "label": "Resolution of inflammation: an integrated view.",
+    "url": "https://doi.org/10.1002/emmm.201202382"
+  }
+]
+}),
   t({
     id: "immune-checkpoint", name: "Immune checkpoint", category: BIO,
     aka: ["immune checkpoints", "checkpoint protein", "checkpoint proteins", "checkpoint blockade", "immune checkpoint blockade", "checkpoint inhibition", "checkpoint inhibitor", "checkpoint inhibitors", "immune checkpoint inhibitor", "immune checkpoint inhibitors", "ICI", "ICIs", "PD-1 blockade", "PD-1/PD-L1", "anti-PD-1", "anti-PD-L1", "anti-CTLA-4", "PD-(L)1"],
     tldr: "Brakes on the immune system that stop T cells attacking healthy tissue. Tumours pull these brakes to protect themselves; checkpoint inhibitor drugs release them so T cells can attack the cancer.",
-    summary: "PD-1 on a T cell, when it meets PD-L1 on another cell, tells the T cell to stand down; CTLA-4 acts earlier, when T cells are first activated. Tumours coat themselves in PD-L1 and exploit this, and antibodies that block PD-1 (pembrolizumab, nivolumab), PD-L1 (atezolizumab, durvalumab) or CTLA-4 (ipilimumab) restore the attack, producing durable remissions in melanoma, lung, kidney, bladder and many other cancers since 2011. The price is autoimmune side effects when the brakes come off everywhere, and only a minority of patients respond, which drives the search for newer checkpoints (LAG-3, TIGIT) and combinations. The 'checkpoint' in 'cell-cycle checkpoint' is an unrelated concept.",
+    summary: "PD-1 on a T cell, when it meets PD-L1 on another cell, tells the T cell to stand down; CTLA-4 is often emphasised earlier, during priming, and PD-1 during ongoing responses in tissues, but these are overlapping emphases and not separate addresses. Reviews describe CTLA-4 as acting early in lymph nodes and PD-1 later in peripheral tissues, while CTLA-4 is also expressed on activated effector CD8 T cells (Buchbinder and Desai, 2016; Pardoll, 2012), and LAG-3, TIM-3 and TIGIT as co-inhibitory receptors with their own specialised functions (Anderson et al., 2016), so the early or late shorthand for CTLA-4 and PD-1 should not be stretched to them. Tumours coat themselves in PD-L1 and exploit this, and antibodies that block PD-1 (pembrolizumab, nivolumab), PD-L1 (atezolizumab, durvalumab) or CTLA-4 (ipilimumab) restore the attack, producing durable remissions in melanoma, lung, kidney, bladder and many other cancers since 2011. The price is autoimmune side effects when the brakes come off everywhere, and only a minority of patients respond, which drives the search for newer checkpoints (LAG-3, TIGIT) and combinations. The 'checkpoint' in 'cell-cycle checkpoint' is an unrelated concept. The checkpoints work through different contacts and are not interchangeable versions of PD-1. In reconstitution and cell experiments, PD-1 engaged by PD-L1 recruited the phosphatase Shp2, which dephosphorylated the co-receptor CD28 in preference to the T-cell receptor (Hui et al., 2017). PD-1 has two ligands, PD-L1 and PD-L2, and PD-L1 is found on leukocytes and on non-haematopoietic cells in non-lymphoid tissues as well as on cancer cells, and can be induced by interferon gamma (Buchbinder and Desai, 2016). In the current US prescribing information for pembrolizumab, the indication for high-risk early-stage triple-negative breast cancer (chemotherapy before surgery, then pembrolizumab alone afterwards) carries no PD-L1 qualifier, whereas the indications for locally recurrent unresectable or metastatic disease (with chemotherapy) and for unresectable locally advanced or metastatic disease (with sacituzumab govitecan) name a PD-L1 combined positive score of 10 or more as determined by an FDA-authorized test. That describes how the approved uses are worded and is not a trial finding about who benefits. CTLA-4 shares the ligands CD80 and CD86 with CD28 and can capture them from opposing cells by trans-endocytosis, so the neighbouring cell has fewer costimulatory ligands to offer (Qureshi et al., 2011). These descriptions concern the receptors' own contacts and are not a model of what a blocking antibody does or a prediction of clinical benefit. LAG-3 selectively recognised stable complexes of peptide and MHC class II and suppressed T cells responding to them, without recognising every class II complex or blocking CD4 binding (Maruhashi et al., 2018). Bat3 bound to and repressed TIM-3 function and protected helper T cells from galectin-9-mediated death, and in cell-line co-expression experiments galectin-9 abolished Bat3 binding to TIM-3 (Rangachari et al., 2012). TIGIT disrupted dimerisation of the costimulatory receptor CD226 on the same cell, and in mouse tumour and chronic-infection models combined TIGIT and PD-L1 antibody blockade enhanced CD8 T-cell function in a CD226-dependent way (Johnston et al., 2014). Staining for a checkpoint measures a component in sampled cells and not ligand contact or causal inhibition: PD-1-positive cells need not all be exhausted or cancer-reactive, more staining does not prove more inhibition or greater drug benefit, and TIM-3-positive cells do not select TIM-3 over PD-1 blockade. A checkpoint inhibitor interrupts one pathway: it does not teach T cells a new target, build a route into the tumour or repair every dysfunctional cell, and changing normal regulation can also harm healthy organs.",
     wikipedia: W("Immune_checkpoint"),
-    related: ["checkpoint", "t-cell", "immune-system", "immunotherapy-term", "irae", "cold-vs-hot", "cps", "avoiding-immune-destruction"], targets: ["pd1", "pdl1", "ctla4", "lag3", "tigit"], technologies: ["checkpoint-inhibitor"], drugs: ["pembrolizumab", "nivolumab", "ipilimumab", "atezolizumab", "durvalumab"], pathways: ["pd1-checkpoint"],
-  }),
+    related: [
+  "checkpoint",
+  "t-cell",
+  "immune-system",
+  "immunotherapy-term",
+  "irae",
+  "cold-vs-hot",
+  "cps",
+  "avoiding-immune-destruction",
+  "pd-l1-cps",
+  "peripheral-tolerance",
+  "adenosine-and-ido"
+], targets: [
+  "pd1",
+  "pdl1",
+  "ctla4",
+  "lag3",
+  "tigit",
+  "pdcd1lg2"
+], technologies: ["checkpoint-inhibitor"], drugs: ["pembrolizumab", "nivolumab", "ipilimumab", "atezolizumab", "durvalumab"], pathways: ["pd1-checkpoint"],
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Immune_checkpoint"
+  },
+  {
+    "label": "Trans-endocytosis of CD80 and CD86: a molecular basis for the cell-extrinsic function of CTLA-4.",
+    "url": "https://doi.org/10.1126/science.1202947"
+  },
+  {
+    "label": "T cell costimulatory receptor CD28 is a primary target for PD-1-mediated inhibition.",
+    "url": "https://doi.org/10.1126/science.aaf1292"
+  },
+  {
+    "label": "LAG-3 inhibits the activation of CD4+ T cells that recognize stable pMHCII through its conformation-dependent recognition of pMHCII.",
+    "url": "https://doi.org/10.1038/s41590-018-0217-9"
+  },
+  {
+    "label": "Rangachari et al., 2012, Nature Medicine: Bat3 and TIM-3",
+    "url": "https://doi.org/10.1038/nm.2871"
+  },
+  {
+    "label": "The immunoreceptor TIGIT regulates antitumor and antiviral CD8(+) T cell effector function.",
+    "url": "https://doi.org/10.1016/j.ccell.2014.10.018"
+  },
+  {
+    "label": "CTLA-4 and PD-1 Pathways: Similarities, Differences, and Implications of Their Inhibition.",
+    "url": "https://doi.org/10.1097/coc.0000000000000239"
+  },
+  {
+    "label": "The blockade of immune checkpoints in cancer immunotherapy.",
+    "url": "https://doi.org/10.1038/nrc3239"
+  },
+  {
+    "label": "Lag-3, Tim-3, and TIGIT: Co-inhibitory Receptors with Specialized Functions in Immune Regulation.",
+    "url": "https://doi.org/10.1016/j.immuni.2016.05.001"
+  },
+  {
+    "label": "KEYTRUDA (pembrolizumab) prescribing information, US Food and Drug Administration label via DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+  },
+  {
+    "label": "Event-free Survival with Pembrolizumab in Early Triple-Negative Breast Cancer.",
+    "url": "https://doi.org/10.1056/nejmoa2112651"
+  },
+  {
+    "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+    "url": "https://doi.org/10.1056/nejmoa2409932"
+  },
+  {
+    "label": "Pembrolizumab plus chemotherapy versus placebo plus chemotherapy for previously untreated locally recurrent inoperable or metastatic triple-negative breast cancer (KEYNOTE-355): a randomised, placebo-controlled, double-blind, phase 3 clinical trial.",
+    "url": "https://doi.org/10.1016/s0140-6736(20)32531-9"
+  }
+],
+"trials": [
+  "keynote-522",
+  "keynote-355"
+]
+,
+"notes": [
+  "In KEYNOTE-522, patients with previously untreated stage II or III triple-negative breast cancer received pembrolizumab or placebo with chemotherapy before surgery, followed by pembrolizumab or placebo after surgery. The pembrolizumab regimen improved event-free survival (Schmid et al., 2022) and overall survival (Schmid et al., 2024). These are results for the tested early-stage regimen, not evidence that a checkpoint marker alone establishes benefit in another setting."
+]
+}),
 
   // =====================================================================================
   // Treatment types

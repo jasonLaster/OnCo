@@ -236,7 +236,7 @@ export const pathways: PathwayInput[] = [
   p({
     id: "cgas-sting", name: "cGAS-STING innate sensing", wikipedia: W("Stimulator_of_interferon_genes"),
     tldr: "cGAS-STING is the cell's alarm for DNA in the wrong place. Radiation, chemotherapy, and ADCs spill DNA into the cytoplasm; cGAS detects it, STING sounds the alarm, and interferon calls in the immune system.",
-    summary: "Cytosolic double-stranded DNA (from micronuclei after DNA damage, or from dying tumour cells taken up by dendritic cells) is sensed by cGAS, producing cGAMP, which activates STING on the ER, recruiting TBK1 to phosphorylate IRF3 and NF-κB, driving type I interferon and chemokines (CXCL10) that recruit and prime T cells. Explains the immunogenic effects of radiation (abscopal effect), PARP inhibitors, and TOP1-payload ADCs. Tumours silence STING or express ENPP1 (degrades cGAMP). STING agonists as drugs have disappointed; ENPP1 inhibitors and STING-agonist ADCs are being tested.",
+    summary: "Cytosolic double-stranded DNA (from micronuclei after DNA damage, or from dying tumour cells taken up by dendritic cells) is sensed by cGAS, producing cGAMP, which activates STING on the ER, recruiting TBK1 to phosphorylate IRF3 and NF-κB, driving type I interferon and chemokines (CXCL10) that recruit and prime T cells. Explains the immunogenic effects of radiation (abscopal effect), PARP inhibitors, and TOP1-payload ADCs. Tumours silence STING or express ENPP1 (degrades cGAMP). STING agonists as drugs have disappointed; ENPP1 inhibitors and STING-agonist ADCs are being tested. Sensor and messenger are separate steps: in cell experiments cGAS bound DNA in the cytoplasm and made the second messenger cGAMP, which binds and activates STING (Sun et al., 2013), and the presence of DNA does not by itself measure cGAS activity. STING normally sits in the endoplasmic reticulum; in the cells tested it moved to perinuclear compartments on activation, and palmitoylation at the Golgi was essential for activation (Mukai et al., 2016). That is intracellular trafficking, not release of STING as a circulating messenger. The consequence depends on the cell. Host STING was needed for spontaneous CD8 T-cell priming against tumours in mice (Woo et al., 2014). In chromosomally unstable tumour models, ruptured micronuclei spilled DNA into the cytosol and activated cGAS and STING, and continuing chromosome segregation errors promoted invasion and metastasis in a STING-dependent manner (Bakhoum et al., 2018). A later study reported interferon tachyphylaxis and an endoplasmic reticulum stress response downstream of chronic STING activation in such cells, and an association of chromosomal instability and cGAS activation in micronuclei with immune suppression and metastasis in human triple-negative breast cancer (Li et al., 2023). An interferon RNA signal in a tumour sample cannot identify the producing cell or the sensor behind it, and acute and repeated stimulation can differ, which is not a rule that short stimulation helps and long stimulation harms.",
     analogy: "A smoke detector wired to the fire brigade. DNA in the cytoplasm is smoke; cGAS is the detector; STING is the alarm bell; interferon is the 999 call that brings the immune system. Many tumours have quietly removed the batteries.",
     nodes: [
       { id: "dmg", label: "Radiation, chemo, ADC payload", x: 50, y: 5 },
@@ -252,8 +252,38 @@ export const pathways: PathwayInput[] = [
       { from: "dmg", to: "dna" }, { from: "dna", to: "cgas" }, { from: "cgas", to: "cgamp" }, { from: "enpp1", to: "cgamp", type: "inhibits" }, { from: "cgamp", to: "sting" }, { from: "sting", to: "tbk1" }, { from: "tbk1", to: "ifn" },
     ],
     interventions: ["Radiotherapy (especially hypofractionated) + checkpoint inhibitors", "PARP inhibitor + PD-1 combinations", "STING agonists (intratumoural, systemic, antibody-conjugated)", "ENPP1 inhibitors", "TOP1-payload ADCs + IO (ASCENT-04, EV-302 analogues)"],
-    targets: ["parp", "pd1"], technologies: ["sbrt", "sting-agonist", "immune-stimulating-adc", "parp-inhibitor", "adc"], terms: ["abscopal-effect", "immunogenic-cell-death"], links: [{ label: "Wikipedia", url: W("Stimulator_of_interferon_genes") }],
-  }),
+    targets: ["parp", "pd1"], technologies: ["sbrt", "sting-agonist", "immune-stimulating-adc", "parp-inhibitor", "adc"], terms: ["abscopal-effect", "immunogenic-cell-death"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Stimulator_of_interferon_genes"
+  },
+  {
+    "label": "Cyclic GMP-AMP Synthase Is a Cytosolic DNA Sensor That Activates the Type I Interferon Pathway.",
+    "url": "https://doi.org/10.1126/science.1232458"
+  },
+  {
+    "label": "Activation of STING requires palmitoylation at the Golgi.",
+    "url": "https://doi.org/10.1038/ncomms11932"
+  },
+  {
+    "label": "STING-Dependent Cytosolic DNA Sensing Mediates Innate Immune Recognition of Immunogenic Tumors.",
+    "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+  },
+  {
+    "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+    "url": "https://doi.org/10.1038/nature25432"
+  },
+  {
+    "label": "Non-cell-autonomous cancer progression from chromosomal instability.",
+    "url": "https://doi.org/10.1038/s41586-023-06464-z"
+  }
+],
+
+"asOf": "2026-11-10",
+"related": [
+  "pattern-recognition-damps-and-pamps"
+]
+}),
   p({
     id: "er-signaling", name: "Oestrogen receptor signalling", wikipedia: W("Estrogen_receptor"),
     tldr: "In hormone-positive breast cancer, oestrogen binds its receptor, which switches on genes that make the cell divide. Every endocrine therapy cuts this chain somewhere.",

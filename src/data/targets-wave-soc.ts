@@ -167,11 +167,26 @@ export const targetsWaveSoc: TargetInput[] = [
 
   t({ id: "ido1", name: "IDO1", symbol: "IDO1", aka: ["IDO", "INDO", "indoleamine 2,3-dioxygenase 1"], hgnc: "HGNC:6059", ensembl: "ENSG00000131203", uniprot: "P14902", entrez: "3620", targetClass: "enzyme",
     tldr: "IDO1 is an enzyme tumours use to burn up tryptophan, starving T cells and producing by-products that switch them off. Epacadostat blocked it but its programme ended in failure; the IO102-IO103 vaccine instead teaches T cells to attack the IDO1-expressing cells themselves.",
-    summary: "IDO1 (chromosome 8p11.21) catalyses the first, rate-limiting step of tryptophan catabolism along the kynurenine pathway; the tryptophan shortage stops T lymphocytes dividing and the catabolites induce T-cell apoptosis and regulatory T-cell differentiation, so the enzyme maintains peripheral tolerance, protects the fetus from maternal rejection, limits intracellular pathogens and suppresses anti-tumour immunity (UniProt P14902). In OnCo, IDO1 is the target of epacadostat, a selective reversible enzyme inhibitor recorded as a negative programme in melanoma, and one of the two antigens (with PD-L1) of the IO102-IO103 peptide vaccine in phase 3 for melanoma and head and neck cancer.",
+    summary: "IDO1 (chromosome 8p11.21) catalyses the first, rate-limiting step of tryptophan catabolism along the kynurenine pathway; the tryptophan shortage stops T lymphocytes dividing and the catabolites induce T-cell apoptosis and regulatory T-cell differentiation, so the enzyme maintains peripheral tolerance, protects the fetus from maternal rejection, limits intracellular pathogens and suppresses anti-tumour immunity (UniProt P14902). In OnCo, IDO1 is the target of epacadostat, a selective reversible enzyme inhibitor recorded as a negative programme in melanoma, and one of the two antigens (with PD-L1) of the IO102-IO103 peptide vaccine in phase 3 for melanoma and head and neck cancer. The negative programme is the phase 3 ECHO-301/KEYNOTE-252 trial: in 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker, epacadostat plus pembrolizumab did not improve progression-free survival (median 4.7 against 4.9 months, hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21) or overall survival (hazard ratio 1.13, 0.86 to 1.49) compared with placebo plus pembrolizumab, and the authors concluded that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain (Long et al., 2019). That bounds one drug, one dose and one disease.",
     biology: "The two corpus approaches differ in kind: epacadostat blocked the enzyme's chemistry, while IO102-IO103 raises T cells against cells that express IDO1 or PD-L1 in the tumour microenvironment, turning the suppressive cells themselves into targets.",
     whereFound: ["Tumour cells and myeloid cells of the tumour microenvironment", "Melanoma and head and neck cancer (IO102-IO103); melanoma (epacadostat)"],
     cancers: ["melanoma", "head-and-neck"], pathways: ["nutrient-competition-tme", "immune-desert-exclusion", "cancer-immunity-cycle"], technologies: ["checkpoint-inhibitor"],
-    drugs: ["epacadostat", "io102-io103"], related: ["pdl1"] }),
+    drugs: ["epacadostat", "io102-io103"], related: ["pdl1"] ,
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
+    "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
+  },
+  {
+    "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
+    "url": "https://doi.org/10.1172/jci21583"
+  }
+],
+"notes": [
+  "Expression of IDO1 in a tissue section shows a measured protein in the sampled cells and not local enzyme activity, immune suppression or benefit from an inhibitor; IDO-dependent suppression has been shown by selected plasmacytoid dendritic cells in mouse tumour-draining lymph nodes (Munn et al., 2004), a separate layer of evidence from expression in human tissue."
+]
+}),
 
   t({ id: "brd4", name: "BRD4", symbol: "BRD4", aka: ["BET", "BET bromodomain proteins (BRD2, BRD3, BRD4, BRDT)", "bromodomain containing 4", "MCAP", "HUNK1"], hgnc: "HGNC:13575", ensembl: "ENSG00000141867", uniprot: "O60885", entrez: "23476", targetClass: "transcription",
     tldr: "BRD4 reads acetyl marks on DNA-packaging proteins and helps regulate transcription. Blocking a recognition pocket and removing the whole protein test different functions.",

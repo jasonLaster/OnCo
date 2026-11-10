@@ -35,7 +35,7 @@
     {
       "version": "proposal-therapeutic",
       "state": "implemented in isolated worktree; draft contribution, not merged",
-      "recordSnapshotSha256": "5a74f00201d4929af83a316e4a90c8ca018908d4f9a2b7f5e74964de650bd3a8"
+      "recordSnapshotSha256": "8d3054f4572ef1a6c9c37748bbc90618c977718b93e3a608e38ca1866f1cd934"
     },
     {
       "version": "draft-376",
@@ -146,6 +146,16 @@
       "version": "proposal-breast-summary-consumers",
       "state": "Current selector snapshots; stale source-dependent short text falls back to current English. No new named language review.",
       "recordSnapshotSha256": "922e976c2b2b24de0116f951f7f5853c2f984e300fbb88ca62cf6b7c73c43f8a"
+    },
+    {
+      "version": "proposal-innate-immunity",
+      "state": "implemented-draft-not-merged",
+      "recordSnapshotSha256": "aba35b88d0ccac958d3133a2b30893f4e76b722dd6599a99f315de46ab340b41"
+    },
+    {
+      "version": "proposal-innate-summary-consumers",
+      "state": "checked-draft-not-merged",
+      "recordSnapshotSha256": "3e259ea7da4f89949e3b6e1d3656a5d20d9feb775f44c557b00ecd55e3711e16"
     }
   ],
   "sourcePhases": [],
@@ -153,17 +163,17 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 216,
+      "teachingAssets": 236,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1672,
+      "unclassifiedAssets": 1652,
       "unresolvedAssets": 1672
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 216,
+      "teachingAssets": 236,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1672,
+      "unclassifiedAssets": 1652,
       "unresolvedAssets": 1672
     }
   ],
@@ -174,13 +184,13 @@
     "navigation": 7,
     "navigationReviewed": 0,
     "navigationWithTeachingContent": 2,
-    "semanticallyReviewed": 215,
-    "implementedCoverage": 215,
+    "semanticallyReviewed": 231,
+    "implementedCoverage": 231,
     "mainCoverage": 0,
-    "unresolvedContentItems": 330,
-    "unresolvedSources": 335,
-    "adjacentConcepts": 44,
-    "unresolvedAdjacentConcepts": 21,
+    "unresolvedContentItems": 314,
+    "unresolvedSources": 319,
+    "adjacentConcepts": 46,
+    "unresolvedAdjacentConcepts": 23,
     "openSchemaGaps": 6,
     "unreviewedLiteratureOccurrences": 95,
     "readyForFinalReaudit": false
@@ -32343,8 +32353,185 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "fad4f08d601f00cf946291e59fde277c55d2854b47294bdfb845dad290bf0900",
+          "156375287969fc78cba0e3060d107c805a0d60bddcec49546711798bb1a2128c",
+          "3f0a8fb25d65c49f8bd3c54d6d3f74966457d2cab31265524f1e8a5209c2a369",
+          "f3df26a10f919300313232b6adf9d7fd249c6a341d0ee642c2e44625f830d4c8",
+          "dbab2b5028709422758734d8e9479c13a7c8ad57d994f52fc464a24d42aa18b7",
+          "ed2f37466e16ab1798cd7087e841486389d7ae20253f54f2fb2a3c7d8460a1f7",
+          "b70222b9234743b1bfdcba725a2a51618f9b83b0ccf42d220623bae5a60049e3",
+          "9807c9d0ea919bfb5d2ac464a70083a5f56f7fe7b4ac0783076373a453564edb",
+          "06a10c42ba014c9b25ee1072e68c0c62fef14fb703acd3ef88b534fa001938c8"
+        ],
+        "points": [
+          {
+            "id": "innate-adeno.routes",
+            "requirement": "Adenosine signalling (CD39 and CD73 make adenosine outside the cell, an A2A receptor reads it) and IDO1 tryptophan breakdown (inside a producing cell) are different routes; IDO is neither an adenosine receptor nor an ATP-degrading enzyme.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.fig-routes",
+            "requirement": "Figure: two metabolic routes, 'Enzyme is not receptor'; surface enzymes make adenosine for a receptor, intracellular IDO1 starts tryptophan breakdown; kynurenine pathway arrow summarises several steps; expression does not establish activity or inhibitor benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.mouse-evidence",
+            "requirement": "Mechanism evidence is scoped: CD39/CD73-dependent Treg function and A2A-dependent antitumour responses in mice; IDO-dependent suppression by selected dendritic cells in mouse tumour-draining nodes, with a separate human observational layer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.why-cancer",
+            "requirement": "Immune presence and activity are separate; a mouse perturbation tests causation only in that model and does not establish clinical benefit of an inhibitor; normal-tissue protection and adverse effects belong in the assessment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "cd73-adenosine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4d3efc1c08e868b1fc0f9e6a94bc47411b22dca28821dbd3eea0a0cae78f849d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.ecoh",
+            "requirement": "ECHO-301/KEYNOTE-252: adding the IDO1 inhibitor epacadostat to pembrolizumab did not improve PFS or OS in unresectable or metastatic melanoma; this bounds the regimen and neither proves all IDO research futile nor validates another inhibitor or setting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "ido1",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8070b3d6ec03f7b5629edb14a5e5f57112e9cd09c57fb06b7cb39f4e98de164b",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.confusions",
+            "requirement": "Adenosine versus IDO (receptor ligand versus enzyme pathway); RNA or staining versus activity; a blood metabolite versus a tumour mechanism; mechanism versus inhibitor benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "ido1",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "5a397a8b697051e735bdda7c967d73bc57db3bfbd245ded7e81915054e60e2e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.measure",
+            "requirement": "Protein or RNA locates components, biochemical assays measure activity, functional experiments need controls; blood adenosine changes with handling; a circulating value does not locate producing cells; a single expression cutoff does not universally select an inhibitor.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "cd73-adenosine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4d3efc1c08e868b1fc0f9e6a94bc47411b22dca28821dbd3eea0a0cae78f849d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-adeno.try-cd73",
+            "requirement": "A fictional tumour section stains for CD73 and IDO1: it does not establish one dominant suppressive mechanism or the best inhibitor; separate the metabolic route, the measured immune effect and the clinical result.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "adenosine-and-ido",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32424,8 +32611,146 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "c03294a5da0b69e32b3eeb5e698e37842d0cefcfeeef18e4390bd7c418a11ea5",
+          "d380b13825f4de080ed67b69503ec227152da51f31bc1d39ec8697abc53253aa",
+          "7282d2449190310c2e409a5364cc92d812abd12128d02993e0bdc3fa8d68587f",
+          "46ecc1d7b6fd3b3ec68d8b14c848999600f67a8d3215145f6cd1f713dbc7cf1b",
+          "00fd2c2c44f1cc4b4fd67bd3a2c04581499a1937b2c7ba01255622f07e5b49bb",
+          "805ea3deb3cc368f5ecf8c585d7511b852a4f38e9b7de0bb770628132a58b6b0",
+          "c42ab085fbdd1e2d1c3c9a36d73172b1cc1f16072dc8a0d05fb7e3a3eeae84d3",
+          "7fe7caebf2f67eeada9b04029b8e6b260b4e35b80400294b6ab04cc386829f19",
+          "8b6b6508e116e1c8c85f3859499c343432e11c7a75f19119af79c369d4b90c73",
+          "24c0d6f7ffa5c679e8f7732b1ac9f5ed84708f00f9180ae758f68df3b58699ae",
+          "be6acaaff91a6f42e2cc07d836183c64bcda8add566d741c98d6ef5b4cd4a65b",
+          "6b861fb8961e3b1075eb4ef82eb6850b971eef7814a0b9360cbe32f119fa19e3"
+        ],
+        "points": [
+          {
+            "id": "innate-cyto.definition",
+            "requirement": "Cytokines are signalling proteins that change cell behaviour; chemokines are a family of cytokines; signals can act on the producer, neighbours or (if they reach the circulation) distant cells; they carry information, not fuel; a message matters only with a receptor and response machinery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.pleio",
+            "requirement": "Pleiotropy and redundancy; receptor availability, concentration, exposure and cell state shape the response; one cytokine name does not specify one outcome.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.il2",
+            "requirement": "IL-2 can support effector T cells and regulatory T cells; different IL-2/antibody complexes favoured different subsets in mice; formulation and receiving cells mattered; not a universal instruction to raise or lower IL-2 in cancer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.gradient",
+            "requirement": "Chemokines create gradients (some immobilised on matrix); movement also needs a compatible receptor, adhesion and a traversable route; an immobilised CCL21 gradient guided dendritic cells to lymphatics in mouse skin and disrupting it impaired migration; not proof that high concentration improves tumour entry.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.fig-average",
+            "requirement": "Figure and worked example: two equal-sized compartments with 0 and 20 pg/mL versus 10 and 10 pg/mL both average 10; only A has a concentration difference; equal averages do not establish equal function; not a physiological gradient or dose.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.why-cancer",
+            "requirement": "Cytokines shape priming, recruitment and local regulation; the same signal acts on several populations; a tumour-associated signal or increased cytokine output by a cell product does not identify a safe target or show cancer-cell killing; interferons are a group where timing and receiver matter.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.measure",
+            "requirement": "pg/mL in a named fluid, intracellular cytokine staining as percent of a gate after stimulation, RNA as a different layer from released protein; specify fluid, time, stimulation, calibration and detection limit; blood does not reconstruct a tumour gradient; migration needs a functional experiment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-cyto.confusions",
+            "requirement": "Chemokines are cytokines; a growth-support signal does not choose the antigen; gene-expression increase is not a secreted-protein increase; more signal is not automatically safer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cytokine",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32506,8 +32831,189 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "76a0dd7a8adb18ad1e2935c39f7394732ca4ba59125c3412e4341d826bd6444a",
+          "252050e302f53b6a592634f88294ba240a5f127c87b9e2b5cf5c5456d58b3425",
+          "fd885101a73c519caee72a933c3349aef2f578668d76c3a218df7c23e331aa92",
+          "93b4f1b4b75f47081fadc4da5c67178c4bd01349f18dcfdc54cb0edfa6a705aa",
+          "e5bbb77753888024216e77ef28f793b1914033f73853e188d716f3b53e5451b1",
+          "519cc931d9dac4da5219be7a5dd296087aef91f75f433e0e340764122c5bfe96",
+          "72ae407e1d9c8a59dca4c2193860fa448a4d8425ae00bc4de2f1411eda48d289",
+          "fc567438f61c97c227044d7597ff3aee6a85a64f4f64660ce7d3572704b3c147",
+          "52568962e25e257882480e2dec41bbd8192ad59e224262ea4a9ec7d3da99153e",
+          "68c72c77962efa2d2ecbd15e4834691d2d4df3a5e5c23cbf79ff24ba7ebf6b1d",
+          "e0a21d91fc66eb1833b5fb475670b51caceb7ddfcb67351f9ed0369016ce2570",
+          "bafddaa450ecac34a37c0924e39c0bc44a806f61020ac4307dbfcd13a1ba5bbc"
+        ],
+        "points": [
+          {
+            "id": "innate-chk.pd1",
+            "requirement": "Checkpoints are regulatory interactions; PD-1 on activated immune cells binds PD-L1 and PD-L2 (PD-L1 on cancer and non-cancer cells); PD-1 signalling preferentially reduced CD28 signalling in biochemical and cell experiments, not necessarily CD28 only.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.ctla4",
+            "requirement": "CTLA-4 shares CD80 and CD86 with CD28 and limits costimulation by competition and trans-endocytosis (capture and removal from the neighbouring cell).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.fig-contact",
+            "requirement": "Figure (three scenes): PD-1 reduces CD28 signalling inside the T cell; CTLA-4 binds CD86; CD86 is captured into the T cell leaving fewer ligands. Illustrated molecule counts are schematic; the PD-1/CD28 relation is symbolic, not a universal CD28-only effect; not a drug-blockade diagram.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.table",
+            "requirement": "LAG-3 (stable peptide-class II complexes), TIM-3 (Bat3 and galectin-9) and TIGIT (CD226 disruption in cis) are different regulatory contacts, each with its own boundary; examples are not a ligand list or a ranking of targets.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.sites",
+            "requirement": "CTLA-4 is often emphasised in priming and PD-1 in ongoing tissue responses, as non-exclusive emphases; LAG-3, TIM-3 and TIGIT cannot be assigned to one exclusive box.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.why-cancer",
+            "requirement": "Checkpoint pathways can restrain cancer-reactive responses; an inhibitor interrupts one pathway and does not teach a new target; recognition, access and function remain requirements; normal regulation changes can harm organs; benefit needs evidence for the drug, population and setting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.anchors",
+            "requirement": "Interferon gamma raises PD-L1 (adaptive resistance); pembrolizumab with chemotherapy improved event-free and overall survival in early TNBC (KEYNOTE-522); PD-L1 scoring selects patients for checkpoint inhibitors in advanced, not early, TNBC.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "58b2d0603b232deb6d567fed30aeb15c66c9cc4703ba204580c4472da57e3574",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.measure",
+            "requirement": "Staining and expression measure components in sampled cells; neither alone shows ligand contact or causal inhibition; a controlled functional experiment compares the same stimulus with and without a perturbation, with viability and specificity controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-chk.confusions",
+            "requirement": "Checkpoints are normal regulation; PD-1-positive cells need not be exhausted or cancer-reactive; more staining does not prove more inhibition or benefit; a TIM-3-positive sample does not select TIM-3 over PD-1 blockade.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-checkpoint",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32571,8 +33077,142 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "839814545aa887f9686b0c8e1c864fe49807de12ef3a52bcb2f019a95fc07715",
+          "882ea864b1088ff43e3a573d06aa96b8be16533e79d6c110423723f32a5d3248",
+          "5c8b93052482936bd676f5a75a30ed973c56e2f68de47068c245f5df2ec3fb4e",
+          "ca50f0d01822706f104d0e0760ac458a3df315fcd9e42cab464d0454fb394876",
+          "643451984cd1d60c2b330b40a7fca3b500e68c4ed5d6e6fd777838009de166a1",
+          "49ab7df6d1b062077fbac9bbbe1c9b616aa0774dec0d4f8844217d4f9f3b9d7d",
+          "cf92b89b5ab9273ed2fb46252e07ac262b46bf9ca8966687aa1e3ce4871056e9",
+          "a558a66a9ac438444ab427dee184f062340187433d6bd20c556fd28a08c854a0",
+          "106ab1e482ea6cc47de32ca5634ed4652c6e78386fe6bf7f3c50cf1f864cf357"
+        ],
+        "points": [
+          {
+            "id": "innate-tol.definition",
+            "requirement": "Central tolerance (thymic T-cell selection, bone-marrow B-cell development) versus peripheral tolerance (mature cells in tissues and lymphoid organs); these name when and where restraint operates and are not two complete filters.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "551824f5e3a440cd9a8a365a7d59ae82b8e5d6309ff3e8fc4d5ae8a93a49d8e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "551824f5e3a440cd9a8a365a7d59ae82b8e5d6309ff3e8fc4d5ae8a93a49d8e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.mechanisms",
+            "requirement": "Mechanisms include anergy, deletion, regulatory T cells, inhibitory pathways and limited supporting signals; tolerance is the combined outcome; deletion and restraint differ.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "551824f5e3a440cd9a8a365a7d59ae82b8e5d6309ff3e8fc4d5ae8a93a49d8e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.examples",
+            "requirement": "Kurts 1997 (CD4 help impairs CD8 deletion and favours autoimmunity in transgenic mice); Sakaguchi 1995 (regulatory-cell dependence in mouse transfer experiments); Qureshi 2011 (CTLA-4 removes CD80/CD86); each is a defined mechanism, not an instruction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "551824f5e3a440cd9a8a365a7d59ae82b8e5d6309ff3e8fc4d5ae8a93a49d8e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "551824f5e3a440cd9a8a365a7d59ae82b8e5d6309ff3e8fc4d5ae8a93a49d8e1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.ignorance",
+            "requirement": "Immune ignorance (no effective encounter) differs from tolerance after an encounter; antibody concentration cannot show B-cell deletion or restraint.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8a4cbf955f2d1dd2f81db3ab78a09bd4bce515cc41389833ef31a4bd1d9dd151",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.fig-diagram",
+            "requirement": "Mermaid diagram: the same quiet response can arise from different mechanisms; a missing encounter is another possibility.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8a4cbf955f2d1dd2f81db3ab78a09bd4bce515cc41389833ef31a4bd1d9dd151",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.why-cancer",
+            "requirement": "Many tumour-associated targets are in healthy tissue; tolerance explains why recognition and activation differ; tumours can exploit regulatory pathways but releasing restraint can harm organs; a neoantigen sequence difference alone does not show recognition, activation or safety.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8a4cbf955f2d1dd2f81db3ab78a09bd4bce515cc41389833ef31a4bd1d9dd151",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-tol.measure",
+            "requirement": "Tolerance is inferred from mechanism-specific experiments, not a blood score; deletion needs lineage and count evidence, suppression needs coculture or pathway tests; a non-response may be absent receptors, poor viability or an unsuitable assay; viable antigen-specific cells that respond poorly do not show deletion; a self-similarity calculation does not measure tolerance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peripheral-tolerance",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8a4cbf955f2d1dd2f81db3ab78a09bd4bce515cc41389833ef31a4bd1d9dd151",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32648,8 +33288,115 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "0d01fda8a7d19bf45d98b22718a38be8ddf3a3c93c4436da1cdf21b58927dd0d",
+          "cfe47308079afcedcaf8ee09e115c5cb270ed5242b1c34b0bcf549ad1e58c20f",
+          "995ef972b2b9ae1ec0a5b3ff1212413b9e724ee34afd800f8b87ddffde7cba8e",
+          "1aea7e4f339986e364f1aacd0fb183cec27ed2503295d7d7afca03699d8f2525",
+          "230c5d13ca7b3ffd3e941655325781b8343551a833b5e8c871acc65a477913ee",
+          "87dd07e26b358182aeb463f61e8d13cecd861bae1a2c2cf9d74f7f91efd9f0f2",
+          "0496bb72e183310fc83c57169a98a3749150d3713d7f31370a9d688fd94026a8",
+          "874aa9ea3adc2250fe8354f4695f51e107ccdbafad80b984e83397443dc695bc",
+          "49d12932d42459603499c362c04b48fa7d02eecc3297d67aa689735eb6127537",
+          "b2924439eb5195a331640d9298a16649aeea8359309463ea72d1baa3c3405ff3",
+          "4146aa37d7711b6deae951c38c9f95e9b1c8410b87ce7fd14c7357f5cda149b4"
+        ],
+        "points": [
+          {
+            "id": "innate-sting.sensor-messenger",
+            "requirement": "cGAS binds accessible DNA and makes the messenger cGAMP, which binds STING; DNA presence does not measure cGAS activity; the response depends on cell and setting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-sting.sting-traffic",
+            "requirement": "STING sits in the ER and traffics toward the Golgi on activation; Golgi palmitoylation is required in the tested cells; this is intracellular trafficking, not release of STING as a messenger.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-sting.fig-dna",
+            "requirement": "Figure: DNA sensing inside a cell (cGAS, cGAMP, ER-to-Golgi STING traffic, nuclear gene-response question); host cell and cancer cell read separately; 'signal is not benefit'.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-sting.downstream",
+            "requirement": "Downstream signalling can induce type I interferons and other inflammatory programmes; these signals do not specify a tumour antigen; presentation and responders are separate steps.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-sting.host-vs-cancer",
+            "requirement": "Host STING supports innate sensing and T-cell priming in mouse tumour models; chronic cancer-cell signalling linked to chromosome instability, micronuclei, metastasis and an immune-suppressive environment (Woo 2014, Bakhoum 2018, Li 2023); acute versus repeated stimulation is not a universal short-helps-long-harms rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-sting.assay-card",
+            "requirement": "Assay card: what layer is measured, controls, no universal STING-active cutoff, failure modes; bulk interferon RNA cannot identify its source cell or sensor; an interferon signal is not tumour-specific immunity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cgas-sting",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "07f80ce3895622e1bf5ec0aa30478543553d01df48880436c034a287ae92f78d",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32726,8 +33473,152 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "89c09b878210a56f4c9e7f78c32f2d87c5f8d32d35c94432400a71c1c0adc6ab",
+          "7e50c6e2c06cf91467ed1c5310b1afecefbfac653cfcb01c379d0a0a95df46ee",
+          "4e2fec3e2a50d8451c585cde06b166eac9c814233396bf8a588d2dad9cf9a3bd",
+          "eae075a3940232b51e25d007eb18fc49a1af55da4c76b87a087350ac8984e21e",
+          "47d9178f1f0977f2a0d312626c91ed39318b6c47d79f8327dcf33ba91efdfb58",
+          "03a6d464e489434b073bd3a0ce9a69fb41cccf8c188bffe826e02e31b64171fd",
+          "941d23a9c79f9dcb444177c028a627e52cb8705554029ff9b737c293ee149df8",
+          "ceab6402de6ca040c11c5b3bf671418ad7c001f621e27c6fdddb1b14ed3b743f",
+          "279bdd10f4399bc025a975c16127cf8506948155a415f0fac0ca08794404923b",
+          "d290f0d7f28501cd8a9d53da0c9008ddf04227a0d44a0cb54b0345f034467dbe",
+          "4ae29acd4613de54551fa9a2d92909cd29c33df040a89d72e630a418e71af4ad"
+        ],
+        "points": [
+          {
+            "id": "innate-dc.definition",
+            "requirement": "Dendritic cells acquire or make antigen, process proteins and display fragments on HLA; a matching TCR recognises a peptide-HLA pair; class I (internal and cross-presented) versus class II routes are processing categories, not proof of priming.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "39ea900f1d29bbac997a19d130a9e3bcdb10c2e7ffb9562db7b3e6958662ebeb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.cdc1",
+            "requirement": "cDC1 are particularly important for cross-presentation; Batf3-deficient mice lacked the population and rejected tumours less well; this is a specific dependency, not proof that all DCs do the same job or that a biopsy count predicts benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "39ea900f1d29bbac997a19d130a9e3bcdb10c2e7ffb9562db7b3e6958662ebeb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.subsets",
+            "requirement": "Identity table: cDC1 (cross-presentation and CD8), cDC2 (class II and CD4), pDC (type I interferon); human blood subdivides marker-defined groups so one marker is weaker than a subset assignment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "39ea900f1d29bbac997a19d130a9e3bcdb10c2e7ffb9562db7b3e6958662ebeb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "39ea900f1d29bbac997a19d130a9e3bcdb10c2e7ffb9562db7b3e6958662ebeb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.state",
+            "requirement": "Immature and mature are states, not identities; maturation changes antigen handling, costimulation, cytokines and migration without converting cDC2 into cDC1; presentation can support tolerance as well as activation; uptake, mature-looking markers and priming are different observations.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8c2504aea34f166fa1379d5f1819b0ff3b4d0c7da947ecb40abb911e68be9846",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.routes",
+            "requirement": "Some DCs migrate to draining nodes; resident node DCs take up soluble antigen first (Sixt, mouse); costimulation, inhibitory interactions and cytokines shape what the T cell does.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8c2504aea34f166fa1379d5f1819b0ff3b4d0c7da947ecb40abb911e68be9846",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.cooperation",
+            "requirement": "NK cells recruit cDC1 into mouse tumours (CCL5, XCL1); PGE2 disrupts the axis; human associations; not a complete immune map from one count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8c2504aea34f166fa1379d5f1819b0ff3b4d0c7da947ecb40abb911e68be9846",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.vaccine-hla",
+            "requirement": "A vaccine reaching a DC need not use cross-presentation; successful DC presentation does not repair a cancer cell's missing HLA allele; a DC that primes a naive T cell has not shown the T cell recognises the cancer cells (HLA allele lost).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8c2504aea34f166fa1379d5f1819b0ff3b4d0c7da947ecb40abb911e68be9846",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-dc.measure",
+            "requirement": "Flow, tissue staining, spatial and RNA methods identify populations; functional tests ask whether identified cells present a defined target and stimulate a suitable responder; preserve subset definitions, site and timing; a low count in one biopsy does not show no priming elsewhere.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dendritic-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "8c2504aea34f166fa1379d5f1819b0ff3b4d0c7da947ecb40abb911e68be9846",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32804,8 +33695,166 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "b15c420b39a4f49be448ee4228a20ff04356d3c52a35b73d6c93299f33383610",
+          "0900e3953e5e1188701e2b89a8a476417954cf0a797c67c545d420a942e2040e",
+          "eb0a24983ee20c0f13e31b9a6f7711cf600146e60aa9c43c0071fcc45a250ff6",
+          "6ac3e8c70eb13f8c395f46630afe757adfa37fd4019faaba3e4f05bbdb8ff5a6",
+          "200715c89b10adb7a98519997dff928c04954d9d538087725aafe966e4f59590",
+          "383cf83723b7394f17a455f239ab4d5cd135e1b4661d1b82f5ed6ab9ac0eeeeb",
+          "b58c0c303c1a01a897d987130f1242cf7e7284b2c22b9189acb9b89c9a8f67e2",
+          "d741df32d118da855c86c9649e28146fd2b0f09f24a7e6e57ac1c3e893023d4b",
+          "8dd1b2b618b7348a6c05abda1f68b9a0ba34136eed603d8c493a47edd51fa740",
+          "34bfba3c2cca0c1a2d1403c0af8d27be150af9491a070b02b264dabe59e2f4d3",
+          "453ffe09421716d039afcb6208e0fc93feb3845132912cba9d9ee64c038c38d0"
+        ],
+        "points": [
+          {
+            "id": "innate-gd.definition",
+            "requirement": "Gamma-delta T cells have gamma and delta TCR chains, carry other activating and inhibitory receptors, remain T cells distinct from NK cells; the family name does not say which sensor a cell uses.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "d55521a08e94ae80138a0fe4ffdc6853f904b854cd67f09fef027abea6b8bafb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.subsets",
+            "requirement": "Vδ1 and Vγ9Vδ2 describe receptor variable regions; Vδ1 populations are prominent in tissues such as breast, Vγ9Vδ2 in blood; a polyclonal product is not automatically broader or more effective.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.phosphoantigen",
+            "requirement": "Vγ9Vδ2 recognition: phosphoantigens (small phosphorylated metabolites) sensed through BTN3A1 and BTN2A1; BTN2A1 directly contacts the TCR; not a peptide docking in an HLA groove.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.fig-contacts",
+            "requirement": "Figure: native Vγ9Vδ2 contact (BTN2A1 and BTN3A1 with target-cell phosphoantigens) versus an added CAR binding target X; native route varies by subset; CAR needs X; test function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.hla",
+            "requirement": "Many responses avoid peptide-HLA, but HLA independence is not universal: one characterised γδ TCR recognises an HLA-A*24:02 context; that is not an eligibility rule; NKG2D stress receptors contribute separately.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.car",
+            "requirement": "A CAR adds its own target requirement; an HLA-G-directed CAR product exists in a registry record; CAR-gamma-delta describes gamma-delta cells carrying a CAR; GD2-CAR gamma-delta cells showed enhanced killing and retained cross-presentation in preclinical work; this does not establish tumour entry, usefulness or prevention of antigen escape.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.tnbc",
+            "requirement": "A breast-tissue study associated Vδ1 representation with outcomes in a small TNBC cohort and did not test infused cells; HLA loss can motivate testing a mechanism but cannot select a therapy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "d55521a08e94ae80138a0fe4ffdc6853f904b854cd67f09fef027abea6b8bafb",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-gd.measure",
+            "requirement": "Flow cytometry, TCR sequencing and cytotoxicity assays with receptor-blocking and matched controls; abundance does not give targets; a response against one line does not establish trafficking or benefit; innate-like is not nonspecific; HLA-low does not mean target-positive; CAR does not prevent escape.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "gamma-delta-t-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32873,8 +33922,120 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "7360ba131cac60fc71cc8d6c161b315e57d73f7cc0c69cbce4b97cd638f852ce",
+          "7639b9dca9a42943b483a5815e1d5570505a4cda3197c19d338c153ca9783e91",
+          "50538c82b44df9e3211df21d83c88974c22b6eee9dab486c24c69977c3b1f4e0",
+          "363c30de877df9cb62f50d1e68b0af39e319922256725b59d80a4cc2cfc414c2",
+          "29428e7fb1463ad72938ebe919320bc3c2e0a26eacefaabe0d44f7b2a8311972",
+          "08f96da741d8045e88ed2cabf63e6119da779c6c1521e353abbf28aaa7a4d6e5",
+          "51d48a0cb9e5799427e0872e57a26891a4a285b77835dc53760a7ba7574c0b7f",
+          "e1d659892dd58f0065725ff43975b98ea88ecd01c7b3505ec43643989245e3d5",
+          "be38c965214738bea78e3876af166b72981dfa97f40cf4ae14ada5ca6ace99dd"
+        ],
+        "points": [
+          {
+            "id": "innate-mac.definition",
+            "requirement": "State (programmes at a time) differs from lineage (origin); local signals, nutrients, oxygen, neighbours and prior stimulation shape programmes; a state label is not a complete biography.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4f4ec692ce02faadf6a38ef98dad1c9bd83410461357703156ded5952c0683ab",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-mac.m1m2",
+            "requirement": "M1/M2 grew from simplified experiments (interferon gamma and microbial stimulation versus interleukin-4) and is ambiguous unless source, stimulus and markers are stated; it does not sort every human tissue macrophage into two kinds.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4f4ec692ce02faadf6a38ef98dad1c9bd83410461357703156ded5952c0683ab",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-mac.spectrum",
+            "requirement": "Xue 2014 (human macrophages with diverse signals gave a spectrum beyond M1/M2) and Lavin 2014 (local environments shape regulatory landscapes in mouse macrophages) support diversity and plasticity without proving any macrophage can be converted to any state.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4f4ec692ce02faadf6a38ef98dad1c9bd83410461357703156ded5952c0683ab",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-mac.fig-programs",
+            "requirement": "Figure: invented 24-hour RNA programme scores (interferon, lipid handling, antigen display) for profiles A and B; several programmes coexist; scores are not independent knobs, fractions of cells or functions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "4f4ec692ce02faadf6a38ef98dad1c9bd83410461357703156ded5952c0683ab",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-mac.tam",
+            "requirement": "A TAM is named for its location; a tumour can contain several programmes in different places and times; an expression cluster is a hypothesis, not suppression; CD163 alone is not a suppressive state; different samples do not prove conversion; 'M1 good, M2 bad' loses context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "642ae349006637f0aa171db85ec7dc426283eebb7b0f67e6a557d3d30b92e8c7",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "tumor-associated-macrophages",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "6a8bb9f89713be242ff7e6a122324cc3e6a88aa39d43a0e09cbe9fbe7920227f",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-mac.measure",
+            "requirement": "Protein panels, flow and single-cell RNA describe markers or programmes; report identification rules, source, stimulation, time and denominator (fraction of recovered macrophages versus cells per area); functional tests need controls; a CD163-rich 'M2' cluster does not prove T-cell suppression.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage-states",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "642ae349006637f0aa171db85ec7dc426283eebb7b0f67e6a557d3d30b92e8c7",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32954,8 +34115,161 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "ad5b2c263af20ad8a66f408020e322edf5977331055fbe15ef4b86161c9d5ee2",
+          "af229a62b54f4d4624dd2a1f480b99d9039b611199e99c8f5abc162455c5e2c0",
+          "e17002e96425ab11d5b2cc3c0611027bbc9750d4f843716c27c4da84e1e09a3f",
+          "02d98ffcfa69f6aaa15103740b0194711398745d18eb8942a08f58927f4509c1",
+          "1ce049fb5c220638004c8038642727303c1989e34d59c8bb6775eb559af04292",
+          "091ee976b5bef13d12d1529b4eb663125a07e2220ff1e4d76d745b81e8e0b620",
+          "fdc1d8c0894885cf48fbac8daf38e0e29ebc9edd1b18b7409aa3f13c36d45f47",
+          "963a829b42f62e2243395ce473de623d00ae6896e44f62b95f365761fbf4ed17",
+          "bdcfe791a11b151a5c21548bbca38c62439a4ca027f07b6ddf2f1f89db7cfea4",
+          "0422e894d67048b88861943d6db501d3b2d632acf457f3ea73bf8420125a21bd",
+          "bb8cbcf608ae3900ef924a6504d6dba3eaec52631a5284f29412e16f648bc136",
+          "14e6e5e7aeb2dbca7fee0e2dcda8e905b54d82d775f637777c2fbc80cc42ec41"
+        ],
+        "points": [
+          {
+            "id": "innate-nk.integrate",
+            "requirement": "NK cells integrate activating and inhibitory signals without a rearranged TCR; reduced self display can remove part of the inhibition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.missing-self",
+            "requirement": "Missing-self recognition was shown with mouse lymphoma variants lacking H-2; it is a principle, not a guarantee for human tumours; one lost HLA allele is not loss of all class I; other inhibitory contacts and activating inputs remain.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.receptors",
+            "requirement": "KIR (HLA-C, B and some A), CD94/NKG2A (HLA-E), NKG2D (stress-induced proteins) and CD16 (antibody Fc, ADCC); the original version had this as a table, the later version as prose plus a link to an NK-cell receptors page.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.education",
+            "requirement": "Prior education, local environment and capacity to act affect responsiveness; cytokines can change responsiveness (Juelke 2009).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.b2m",
+            "requirement": "Loss of B2M removes HLA-E as well as classical class I, so KIR and NKG2A brakes lift together; 'possible' vulnerability, not a guaranteed trade.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.fig-nk",
+            "requirement": "Figure: two NK-target scenes differing by one inhibitory HLA contact; another inhibitory contact and an activating input remain; test the actual pair.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.worked",
+            "requirement": "A tumour loses one HLA allele: a restricted TCR loses its display route but NK killing does not follow automatically; targets with reduced HLA killed more than restored matched targets support an HLA-related effect only for the tested pair.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.assay",
+            "requirement": "Cytotoxicity assay on an actual effector-target pair: preparation, target HLA and ligands, E:T ratio, time, target-only death; fraction of dead targets is not fraction of NK cells releasing granules; no tumour entry or benefit claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nk.cancer",
+            "requirement": "NK recognition explains different vulnerabilities and motivates engineered NK therapies, but does not show a therapy reaches a solid tumour, persists or benefits a patient; NK and NKT are different families.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nk-cell",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "35e94169ce92409f0d36ef593c3f2a8529ae2dbe57bf4cc914b1dbf5ba228bc5",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33116,8 +34430,166 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "14281cf470553bae007f1accec510db988bf98a9e36613062712b664a94f12fb",
+          "6862aab631aeeff10f1c7aa058a97c100cbb5970bdba9092fca69f233567353b",
+          "e694defd8888104c4b42bbd5771e830134b41c69bfafb290dcede52f6b8ee53d",
+          "8cfb2bd926fca4647e41a0a50ff52e6ef64d73182ed7fa386acc090b06068c30",
+          "4e36388baf2d20d6d0a831f4c3608d60b5d6b9e8f32ac7c4589545be28f4882f",
+          "1ed8918d84548537d0439934b37cf148d9e589a13a47ceb449ad75bcd63ae700",
+          "d944b0b3a0d77aeb6442bcc8588dd01e1aaad1c5f215f73bba33103f2f525acf",
+          "9acc12a7b028f9e7f76c25f84de01d4f607a4c0d8c0d5e30ebdac4de635b23d9",
+          "08422609f80b4e23bfb3de78cb9b8db9208926f6854d4826d30cbd0abdff9f23",
+          "ee6e74eeffcd0bc5b6480f3c4e1f90ba42e5fc216604f1ddd59f29ea07f21ed6",
+          "69369c6e010ec6213e5bc3a92c88baf289dfcce4378a19c5baa7f99785202c9d"
+        ],
+        "points": [
+          {
+            "id": "innate-nkt.definition",
+            "requirement": "NKT cells are T cells with a rearranged TCR (not a mixture of NK and T); an NK-associated marker alone does not define the family; they recognise lipid-based antigens on CD1d.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "7e9a26f5a98d262547747ec88f1a9264d0fbe4f478d7f34cd7044732918d712a",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.cd1d",
+            "requirement": "CD1d displays lipid and glycolipid antigens; a suitable CD1d-antigen complex can stimulate an NKT receptor (Kawano 1997, mouse); lipid tails fit inside CD1d.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "7e9a26f5a98d262547747ec88f1a9264d0fbe4f478d7f34cd7044732918d712a",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.fig-cd1d",
+            "requirement": "Figure: an iNKT TCR contacts lipid on CD1d versus a conventional TCR contacts peptide in HLA; NKT are T cells and NK cells differ; one iNKT example, not all NKT.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "7e9a26f5a98d262547747ec88f1a9264d0fbe4f478d7f34cd7044732918d712a",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.types",
+            "requirement": "Type I (invariant, semi-invariant alpha chain with variable beta junctions) versus type II (diverse repertoire, different antigen patterns); 'invariant' does not mean identical function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "7e9a26f5a98d262547747ec88f1a9264d0fbe4f478d7f34cd7044732918d712a",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.table-compare",
+            "requirement": "Comparison: conventional alpha-beta T cells (peptide-HLA), NKT cells (CD1d-lipid), NK cells (integrated innate inputs, no rearranged TCR); CD1d-dependent is not peptide-HLA-dependent, and a change in HLA display does not show CD1d or an NKT response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.function",
+            "requirement": "NKT cells release cytokines and can be cytotoxic; human blood subsets and stimuli gave different cytokine and perforin responses; tumour-rejection capacity differed by NKT subset and organ in mouse models; 'NKT' alone does not mean protection.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.car",
+            "requirement": "A CAR supplies an engineered recognition route; CAR-NKT, CAR-NK and CAR-T are different families; native and engineered recognition need separate measurement; neither proves access, safety or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-nkt.measure",
+            "requirement": "Research identification uses defined CD1d-antigen tetramers, gating and separate function tests; a tetramer reagent can miss other subsets; an NKT-like (NK-marker-positive T cell) gate needs an operational definition; counts do not show killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "nkt-cells",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "d7008f0065eb3d15f438d378620f2745aca0936a00694d823374361e5f1cadb3",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -33188,8 +34660,149 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "be5af56e6df2a82c0f4dde71e697b58a544e1990c8f844107def11b2c93e508f",
+          "ae008f699e54580bdcf0ecb45bf55d02b5d44a32558a8bb0776a2a195762e286",
+          "bb3ffd22e49d587efde93901292646c53905a3295ffe23f6592a77a4adf525f2",
+          "99ceaddf8f7816570dfa7f7fc1a649dca81023c9b52c7093f87f8533848db819",
+          "b6b0f023f36c4fae63f89d9c10988d2ec968e08a46c12408728dd2bb327e720f",
+          "6298afb73ca4b1aa4be82a3e765b8d8fca1b96ba4eabda38d3bac290cb77ca2f",
+          "3c055cec4078510d59c20af8dbebc768cf1eea6300aed39ee896e7730e46c999",
+          "9e9d24605854729d15deb9cb21f2e46fa635c00576fd46f971145d4ab79cbbe5",
+          "0c32a65da86ac6c0b9f5f859b644ddc99b987a53453721028ac554cc9de85517"
+        ],
+        "points": [
+          {
+            "id": "innate-prr.prr-definition",
+            "requirement": "PRRs are encoded sensing proteins that, unlike a rearranged TCR, do not each assemble a unique recognition sequence; they sense microbial or damage features without specifying a tumour antigen.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.pamp-damp",
+            "requirement": "PAMPs are microbial features (LPS, microbial nucleic acid), not whole pathogens; DAMPs are host-derived signals whose release, altered form or location indicate injury; host material outside its usual compartment can matter even with an unchanged sequence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.tlr4",
+            "requirement": "TLR4 senses LPS through an accessory system; Tlr4 mutations in mice impaired responses; a specific sensing dependency, not a universal detector.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "f15920ea404901111620f3efd43a381cbeb92e0fb316bcafecb528fafec06a11",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.dna",
+            "requirement": "Cytosolic DNA, microbial or mislocated host DNA, can activate cGAS-STING, so the response alone does not show infection or a tumour-specific adaptive response; other sensors recognise other features and compartments.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "f15920ea404901111620f3efd43a381cbeb92e0fb316bcafecb528fafec06a11",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.fig-dna",
+            "requirement": "Figure: cytosolic DNA, cGAS, cGAMP, ER-to-Golgi STING traffic, separate nuclear gene-response question; the picture does not identify the DNA source; sensing alone proves neither infection nor tumour-specific immunity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "f15920ea404901111620f3efd43a381cbeb92e0fb316bcafecb528fafec06a11",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.hmgb1",
+            "requirement": "HMGB1 and TLR4 in DC processing of dying-cell material in defined anticancer-treatment experiments; a measurable injury signal and a productive response differ; immunogenic cell death is a stronger conditional claim; stronger innate activation is not automatically safer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-prr.measure",
+            "requirement": "Signal, sensor engagement and downstream response are different measurements; vehicle, viability and time controls and receptor perturbation; contamination controls for purified host molecules; a sterile-injury sample activating a DNA reporter proves neither infection nor T-cell immunity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "pattern-recognition-damps-and-pamps",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "6f221a80ec4938642573174b0c07c6d19cacd12a933cc32187bd80b9b7ce53ed",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -35905,8 +37518,205 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "1215cbea11c786a5c59d128be2bda439c091deef59c17e09595c6bc56dc2feee",
+          "fde651dd30bc330958e91e695537c4e60dc142f8db6707fb81d25cb6c3b7760d",
+          "e2c42e705c39d0932ceb6b03201eacb73b82ae63129afe4f14505c1fcba08569",
+          "f97290a60721debbe1ece25b48b64965f54941d901a08d05fa20b8911fc9c517",
+          "2a1af87a32c950aa694436d0ea96ecebb1939c96c3c05a453883eaebc0bfccde",
+          "ef80a7550f00707a948303163cfc804fbbaa7848613c4b5376b39776a4dbaf78",
+          "82f92d114356b8222c5e2e7f3313d711c11fe72ba3d53961598a26a11de18c43",
+          "7bb7ca2dcf4753aaf425a43b824c1f6585a7bbcd36148ffc85a610dca86c4de2",
+          "3fd9a14f073ef4ef8e6a8b9521d0f9e5b316e3dccde08fff18d9e518d4567936",
+          "a773dae04dbdbd2a3325b8482d15925d44074d0bfb0e654c63bb447a8ecc0515",
+          "05c7d3f651337e6528ee39e37d975f0683c1ffd15c352694f7e5e1ca84f572c0"
+        ],
+        "points": [
+          {
+            "id": "innate-roster.principle",
+            "requirement": "The innate/adaptive axis describes recognition systems and the roster describes cells; the axes overlap; a cell-family name does not show what a cell is doing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-roster.table",
+            "requirement": "Roster of families (T, B and plasma, NK, macrophages, DCs, neutrophils) with the jobs to recognise and what presence alone cannot establish.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-roster.states",
+            "requirement": "CD4/CD8 are co-receptors not fixed helper/killer roles; regulatory cells restrain; macrophage states extend beyond M1/M2; names such as TAM and MDSC describe setting or tested behaviour; NKT is a T-cell family distinct from NK.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-roster.denominator",
+            "requirement": "Name the denominator (percent of viable recovered immune cells, of T cells or of all tissue cells); worked example 60/100 versus 60/200 T cells, each with 30 CD8 cells; blood composition cannot substitute for tumour composition; counts do not show recognition or killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-roster.why-cancer",
+            "requirement": "A tumour can hold many immune cells with recognition, access or killing unresolved; mixed tissue can contribute the same signal from several populations; abundance is not a useful antitumour response; a marker shared by populations is not a complete identity test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -35971,8 +37781,113 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "d102e4396e22f2dc46818bb0d3a1ee139b875a05c2248ccc541d833bff5c0e49",
+          "37cee6c14f0205d6328aafebf281f1c78ac68d2a6eef3e3f7cc1a7720a71918e",
+          "3fc5e3758bcc4332b8ee54a1a329492390e7722d0f02363392d75ffd0812df7e",
+          "5f04e611a300399f5d4df503e3d0115b9c7f02f2dce691a6aad62f535ebc068a",
+          "810990c4248fdddce528e69c8a0c99f68e2397c80419544f9e5485056a837d90",
+          "3888d39bd261b26f7db4f24b995786d4ba59cd00a371a95255536714a083b5e5",
+          "f806e7dea36c4a94397221c96146322f7662672b3fce4cfb5a96ab9ec014c885",
+          "7843494ec9daa30ecff5c1dca6895db10e36cfa1a4d8aeecb5af8db03b4d4576",
+          "d5e97aa88e7a7f4fb640a2f1f89d73ea114bcde77621ddeef6fc8a46682eb251"
+        ],
+        "points": [
+          {
+            "id": "innate-infl.definition",
+            "requirement": "Inflammation is a tissue response to infection, injury or disturbed function; triggers include sterile injury; cytokines, chemokines, vessel permeability and recruited cells; heat, swelling, redness and pain differ from a molecular programme.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "inflammation",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-infl.fig-tissue",
+            "requirement": "Figure: signals, a blood vessel, recruited cells and fluid/protein entry; the cell-entry arrow differs from the permeability arrow; permeability is not new vessel growth; responders may contain and repair or persist and injure; schematic with no time course.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "inflammation",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-infl.response",
+            "requirement": "The recruited response is not only attack (clearing, containing, reshaping, repairing); it may resolve, persist or add injury; resolution is coordinated, not everything switching off; acute versus chronic and local versus systemic are separate axes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "inflammation",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-infl.macrophages",
+            "requirement": "Macrophage states illustrate complexity; M1/M2 labels are not universal functional classification; a marker or RNA score is not a complete functional identity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "macrophage",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "bc429db07ab61548b73b80bbfceea1371641839867928ca31d666a4655ca55a1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-infl.cancer",
+            "requirement": "Inflammatory signalling can support recognition in one context and progression in another: host STING sensing supports antitumour responses in tumour models, cytosolic DNA response promotes metastasis in other experimental systems; not a head-to-head clinical comparison; inflammation after an intervention does not show tumour-specific immune learning.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "inflammation",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-infl.measure",
+            "requirement": "Tissue-cell patterns, RNA programmes, protein concentrations and clinical observations have different units and denominators; one raised blood marker does not identify the source; a tumour RNA programme does not show which cell made each message; a local swelling with an RNA signal and no antigen-specific test shows a local response only.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "inflammation",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36046,8 +37961,269 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "771f17e2d1e02e0150869e2145e99460a5cb54d16df9f67e5f7a24fac499fa73",
+          "32fbccbc59358c3aea86dece4815f3538653290aea244ca25686531c04d9caae",
+          "274475e27702e780b6d776a318260733b829021ce639b7345f4f00ebde461225",
+          "b857e679fa42a787f8abeef7858bace2388b37cccb24e18b4667f1b171c20365",
+          "d948b5fb7559cbc691816ad9e1af30bed15c499c0c927d00dfa68a0c6e9ba3f4",
+          "8dec7f6d7d770c697e515e2f57a0cd2ecf59f9189f79e5f64350bd62b8cb7445",
+          "1180797f33047e1aad3636c693fdfe2f7579cc7ea58ab5095aa7930a13aba8a9",
+          "29fa08b701f442a93eea8dc50a2ea06baea62502bb419d36f41803ac6acd78f4",
+          "4a01e4c8ee4a80f5470e695c9cbbc07a6512e28295a64d7cc11588003aaa9e71",
+          "12c4e03087408335e89ef0c48bc191cdd01b7b0058b7cdc10a6d809602e62d0d",
+          "2bfb189dee4cf1fab444f4936ce418a6ddc946fe8595fa4df3450256841573ec"
+        ],
+        "points": [
+          {
+            "id": "innate-ia.architecture",
+            "requirement": "Innate immunity uses inherited sensing systems (barriers, soluble defences, phagocytes, NK cells, PRRs); adaptive immunity expands T and B cells with diverse assembled receptors, with selection, differentiation and memory; specificity does not guarantee activation or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "3d711f105ec5cb1459cbde2a0ce1f95b9b4d27df4ffcc316a1aad9a5a241c01c",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ia.cooperation",
+            "requirement": "DCs, cytokines and lymph nodes connect sensing to adaptive responses; adaptive antibodies and T cells guide innate cells; arrows show cooperation, not a compulsory sequence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "3d711f105ec5cb1459cbde2a0ce1f95b9b4d27df4ffcc316a1aad9a5a241c01c",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ia.table",
+            "requirement": "Table of recognition-equipment source, what exposure can change, and whether speed is the definition (innate: inherited, activation and later responsiveness, often early but can persist; adaptive: assembled receptors, selection and memory, recall can be rapid).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ia.exceptions",
+            "requirement": "Innate memory-like findings qualify the division: monocyte-dependent protection in mice lacking functional T and B cells (Quintin 2012) and memory-like NK cells in a mouse CMV model (Sun 2009), without equating them with T/B memory.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ia.cancer",
+            "requirement": "A vaccine can create inflammatory context without a response to its antigen; blood antigen-specific responses may not reach cancer; 'immune activation' needs a named cell, target, compartment and outcome; a manufactured antibody is not evidence the recipient made it; equal responses to the vaccine antigen and an unrelated control do not show selectivity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ia.measure",
+            "requirement": "Counts, pg/mL concentrations and antigen-matched functional assays answer different questions; report specimen, timing, stimulation and background controls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "immune-system",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "14c31f4ee1f04347dae2f3c743413d68283ec729012c201327cbd1aa66ca6302",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36126,8 +38302,136 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "c9e73e20f343143b55ce1d9486c9f5c94451bcb5001ce5eff0e6be86eb9cf88b",
+          "57427a346ca791c56f633da7a7fb5e96d6e0d2f07f44f7057180d3e0bcdc9b7f",
+          "409395d5b32bc7cb8f1586ad44621a983bb92f7a7e65cf092e21fb36591243db",
+          "ad40699f95591adaa894f2488707401146c50b4a079e2a307bd6b47695c40af5",
+          "1f6e1c875be25eb67dbe5f139408d945dca1aa9bcea31ef7ee5fee15040a44d3",
+          "d5594982ae8fcbab25d8d0841b8cc589891dbfa76890ceb8b3c5543f3f035c71",
+          "6951d05d8476159633a7d63cba659091335eadbbfca9eb0f36214c313927a836",
+          "9f1d954dadb042fb9a24fe10751d31f22b6ba7e6267f1603e999351a567b84dd",
+          "298d5fdcb167f4e5d3a2537e6bf988c446347c841a23c88ba75b206a4040f976",
+          "a1e7bf7babdf8db59af540869df18965e7f88fb53d97ef4862368ceeeb18082f",
+          "3ce0e91bf8674a396cfc1c76353c48e7c4f05a30defae2eaec76ef047d73bb8a"
+        ],
+        "points": [
+          {
+            "id": "innate-ifn.types",
+            "requirement": "Interferons are cytokines whose receptor systems define three types: I (alpha, beta; shared receptor on many cell types), II (gamma; different receptor, activated immune cells), III (lambda; another receptor, restricted responsiveness, epithelial barriers); Greek letters are not doses.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "53a827a1c6de39e3767a494011a0f30a3649f7c52e2198710365de8500e4d3b7",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ifn.jakstat",
+            "requirement": "Many responses use JAK-STAT signalling; responses can increase antigen-processing or HLA display machinery, antiviral defences, division, survival or regulatory signals; production, receipt and function are separate steps.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "53a827a1c6de39e3767a494011a0f30a3649f7c52e2198710365de8500e4d3b7",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ifn.fig-map",
+            "requirement": "Diagram: IFN exposure, compatible receptor, intracellular response, changed gene programmes, functional outcome to be tested; not every changed programme helps control cancer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "53a827a1c6de39e3767a494011a0f30a3649f7c52e2198710365de8500e4d3b7",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ifn.dunn-benci",
+            "requirement": "Dunn 2005 (type I and gamma dependencies in mouse tumour models; host blood-cell targets); Benci 2016 (persistent signalling drives resistance programmes in experimental tumours; human associations); 'more IFN is better' loses duration and context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ifn.zaretsky",
+            "requirement": "Zaretsky 2016: four melanoma patients with acquired resistance to PD-1 blockade, JAK1/JAK2 loss-of-function in two and B2M truncation in one; not a frequency for any cancer; an IFN score cannot identify the producing cell, prove natural recognition or select treatment; inducible display cannot repair structural HLA or processing loss.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-ifn.measure",
+            "requirement": "Concentration (pg/mL) versus RNA expression versus change from a matched unstimulated condition answer different questions; report family, preparation, concentration, exposure time, cell identity, viability and controls; a signature is not a concentration; capacity is not natural exposure; a fourfold rise in a display-gene score is not fourfold killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              },
+              {
+                "recordId": "interferons",
+                "version": "proposal-innate-immunity",
+                "field": "notes",
+                "fieldSha256": "fa834f400780b2577f2e1be165c23c67ac8395957d0a90c4656cb1b4ed3a6cfd",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36203,8 +38507,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator integration of scoped source assessment and independent evidence/figure review; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both inventories and all 337 section signatures reproduce. Every table cell, comparison axis and recap has explicit current field coverage. Sixteen source-list rows are metadata. Accessible alternative sources close previously blocked teaching clauses; named source-access and legacy limits are retained.",
+        "sectionHashes": [
+          "0f5dd8eedcc2725dc8349ded34178f321ba079a1e566efb3165e63d830354a70",
+          "e0d468ec630034c6b8d0470428977d1637d5625dd6ef2355392232d66d9209e4",
+          "9d997c79d197cd35a1252e46120739af2e807304c53de0c848cafb69b1d00416",
+          "e20b2954dd37628a7e19e7357fb55f2ca56fe5c4e74fe703485c8f1b940a875f",
+          "15191d93fbf644432d5682b8cb4448e9faced3bcc2eadf41bd6c68cfab246cf0",
+          "7cef0f954e615cb509e2c142b95723f640e426889e9a6b757ae5fb05eb9639ae",
+          "2b19e7a9ab8ec7de61a67a22bb19d8d144431cb949521f701f49fe45109c4c53",
+          "cc22c0b0d1578bede0965fe0a40416e09f4c876bc00066b224caac2c6bbf8365",
+          "c7d64e215e978407ca941e48128ab7cc26ffe49884b585ac3ba4d83a92a1df76",
+          "7a3dc9665a2108f6511e51fc25c21e1ceb822c3bad7aed9222f4d658863f33ae",
+          "db18fe23675d56191b2d99df61914cc88b99d8a58aa64835234611893557e900"
+        ],
+        "points": [
+          {
+            "id": "innate-lymph.route",
+            "requirement": "Lymphatic vessels return tissue fluid to the blood and carry immune material to nodes; afferent in, efferent out; a draining node names a route, not a cancer finding; vessels versus nodes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.compartments",
+            "requirement": "Nodes hold B cells in follicles and T cells in neighbouring regions; naive lymphocytes commonly arrive from the blood through specialised vessels (HEV).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.fig-routes",
+            "requirement": "Figure: tissue material in afferent lymph and subcapsular sinus, B-cell follicles and T-cell region, artery-capillary-HEV-vein route, naive lymphocyte crossing at an HEV, efferent lymph continuing; schematic; drainage does not prove cancer involvement; arrival does not prove priming.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.dc-route",
+            "requirement": "Soluble antigen reaches resident DCs through conduits before migrating DCs arrive (Sixt, mouse); arrival does not prove presentation or priming; arrival says nothing about cancer cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.ccr7",
+            "requirement": "Disrupting CCR7 in mice altered lymphoid organisation and migration; a trafficking dependency, not a guarantee that providing one signal yields immunity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.cancer",
+            "requirement": "Tumour material can reach a node without a response; cancer cells can travel in lymph, but not every draining or enlarged node is cancer-positive; pathologic involvement differs from drainage, immune accumulation or imaging; a sampled negative node does not certify unsampled nodes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "innate-lymph.measure",
+            "requirement": "Imaging (millimetres), mapping, pathology and immune experiments answer different questions; record which node, method, timing and regions; size alone establishes neither cancer nor priming; a tertiary lymphoid structure is not a lymph node; blood and lymph samples are not interchangeable.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "lymph-node",
+                "version": "proposal-innate-immunity",
+                "field": "summary",
+                "fieldSha256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+                "explanation": "Exact current authored passage, source scope and reader/export check in innate-immunity-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -70592,6 +73018,60 @@
             "evidence": [],
             "remaining": [
               "Resolve the documented scientific, labelling, layout and provenance questions in the twenty original Guide figure families; the figures are not copied into OnCo and corrected interpretation is in canonical text."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "innate-guide-source-artwork",
+      "title": "Innate lesson source wording and artwork defects",
+      "domain": "immunology",
+      "sourceURLs": [],
+      "discoveryOccurrences": [
+        "innate-source-reconciliation-2026-11-10"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator source reconciliation; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Named adjacent work is retained without interrupting this owned batch.",
+        "sectionHashes": [],
+        "points": [
+          {
+            "id": "innate-guide-source-artwork-1",
+            "requirement": "Reconcile the Rangachari 293T-versus-Th1 wording and nine figure defects with the Guide owner; the OnCo notes preserve the corrected scientific scope.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Reconcile the Rangachari 293T-versus-Th1 wording and nine figure defects with the Guide owner; the OnCo notes preserve the corrected scientific scope."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "innate-retained-trial-scopes",
+      "title": "Retained checkpoint-trial and score reporting assertions",
+      "domain": "immunology",
+      "sourceURLs": [],
+      "discoveryOccurrences": [
+        "innate-source-reconciliation-2026-11-10"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator source reconciliation; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Named adjacent work is retained without interrupting this owned batch.",
+        "sectionHashes": [],
+        "points": [
+          {
+            "id": "innate-retained-trial-scopes-1",
+            "requirement": "Independently verify the retained KEYNOTE-355 no-benefit-below-threshold wording, KEYNOTE-522 later-update summary figures and the PD-L1 CPS reporting cap against the named original sources. These legacy fields are outside the credited innate additions.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Independently verify the retained KEYNOTE-355 no-benefit-below-threshold wording, KEYNOTE-522 later-update summary figures and the PD-L1 CPS reporting cap against the named original sources. These legacy fields are outside the credited innate additions."
             ]
           }
         ]

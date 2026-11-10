@@ -24,6 +24,7 @@ import { rnaDeliveryTerms } from "./terms-rna-delivery-audit-2026-11";
 import { educationParallelSpatialComputationalTerms } from "./education-parallel-spatial-computational-2026-11";
 import { educationMeasurementTerms } from "./terms-education-measurement";
 import { breastPathologyEducationTerms } from "./breast-pathology-education-2026-11";
+import { educationParallelInnateImmuneTerms } from "./education-parallel-innate-immune-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -345,6 +346,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...educationParallelSpatialComputationalTerms,
   ...educationMeasurementTerms,
   ...breastPathologyEducationTerms,
+  ...educationParallelInnateImmuneTerms,
   ...trials,
   ...pairings,
   ...roadmaps,

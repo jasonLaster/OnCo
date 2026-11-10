@@ -20,7 +20,7 @@ const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 const DM = (q: string) => `https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=${encodeURIComponent(q)}`;
 
 const d = (x: Omit<DrugInput, "kind" | "asOf">): DrugInput => ({ kind: "drug", asOf, ...x });
-const tg = (x: Omit<TargetInput, "kind" | "asOf">): TargetInput => ({ kind: "target", asOf, ...x });
+const tg = (x: Omit<TargetInput, "kind" | "asOf"> & { asOf?: string }): TargetInput => ({ kind: "target", asOf, ...x });
 const tech = (x: Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string }): TechnologyInput => ({ kind: "technology", asOf, ...x });
 const term = (x: Omit<TermInput, "kind" | "asOf">): TermInput => ({ kind: "term", asOf, ...x });
 const col = (x: Omit<CollectionInput, "kind" | "asOf">): CollectionInput => ({ kind: "collection", asOf, ...x });
@@ -857,12 +857,31 @@ export const gapTargets: TargetInput[] = [
     links: [{ label: "BNT211 CARVac (Nat Med 2023)", url: "https://doi.org/10.1038/s41591-023-02612-0" }], tags: ["gap-fill"] }),
   tg({ id: "cd73-adenosine", drugs: ["ak119", "mavrostobart", "oleclumab", "quemliclustat", "uliledlimab"], trials: ["nct03334617", "nct03381274", "nct03742102", "nct04068610", "nct04969315", "nct05024097", "nct05061550", "nct05221840", "nct05329766", "nct05403385", "nct05431270", "nct05633667", "nct05676931", "nct05689853", "nct05846867", "nct06048133", "nct06606847", "nct06608927", "nct06984588", "nct07005336", "nct07146230", "nct07172802"], name: "CD73 / adenosine axis", symbol: "NT5E", hgnc: "HGNC:8021", ensembl: "ENSG00000135318", uniprot: "P21589", entrez: "4907", targetClass: "enzyme", wikipedia: W("5%27-nucleotidase"),
     tldr: "CD73 is an enzyme on tumour and immune cells that converts AMP into adenosine, which switches off T and natural killer cells through A2A and A2B receptors. Oleclumab (anti-CD73) with durvalumab slowed progression in a phase 2 lung cancer trial and quemliclustat is in phase 3 in pancreatic cancer, but A2A blockers gave only modest signals and several were dropped.",
-    summary: "CD39 converts extracellular ATP to AMP and CD73 (NT5E) converts AMP to adenosine, which suppresses T and NK cells via A2A/A2B receptors; hypoxia drives the axis. Oleclumab (anti-CD73) plus durvalumab improved PFS in the phase 2 COAST trial (stage III NSCLC) but the phase 3 PACIFIC-9 result is pending; quemliclustat (CD73 inhibitor) is in phase 3 in pancreatic cancer (PRISM-1); A2A antagonists (ciforadenant, etrumadenant, taminadenant) gave modest single-agent signals in RCC and prostate cancer and several were discontinued. CD39 antibodies (TTX-030) and uliledlimab continue in trials.",
+    summary: "CD39 converts extracellular ATP to AMP and CD73 (NT5E) converts AMP to adenosine, which suppresses T and NK cells via A2A/A2B receptors; hypoxia drives the axis. Oleclumab (anti-CD73) plus durvalumab improved PFS in the phase 2 COAST trial (stage III NSCLC) but the phase 3 PACIFIC-9 result is pending; quemliclustat (CD73 inhibitor) is in phase 3 in pancreatic cancer (PRISM-1); A2A antagonists (ciforadenant, etrumadenant, taminadenant) gave modest single-agent signals in RCC and prostate cancer and several were discontinued. CD39 antibodies (TTX-030) and uliledlimab continue in trials. The CD39 and CD73 route is separate from the IDO1 route: surface enzymes make adenosine outside the cell for a receptor to read, while IDO1 breaks down tryptophan inside a producing cell. In mice, deleting the host A2A receptor led to rejection of established immunogenic tumours in about 60 per cent of deficient mice and none of normal mice, with autoimmunity seen during melanoma rejection (Ohta et al., 2006), and regulatory T cells from Cd39-null mice had impaired suppression (Deaglio et al., 2007); these mechanisms do not show benefit from an inhibitor in people, and expression of CD73 in a sample does not show local adenosine production. Blood adenosine is sensitive to sampling: its half-life in human blood is 1 to 2 seconds, and in one experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip and 7 per cent when it was added afterwards (Shryock et al., 1990).",
     biology: "Ecto-5'-nucleotidase anchored by GPI; produces adenosine that binds Gs-coupled A2A/A2B receptors, raising cAMP/PKA in lymphocytes and blunting TCR signalling, cytokine release and cytotoxicity; also promotes Treg and MDSC function.",
     whereFound: ["Pancreatic cancer (high CD73)", "NSCLC (especially KRAS/STK11-mutant)", "TNBC, ovarian, colorectal cancer", "Tregs, MDSCs and endothelium in the microenvironment"],
     cancers: ["pancreatic", "nsclc", "tnbc", "rcc", "prostate"], technologies: ["checkpoint-inhibitor", "monoclonal-antibody"], pathways: ["pd1-checkpoint"], companies: ["astrazeneca", "gilead"],
     notes: ["Prevalence is not well characterised: CD73 expression is continuous and scored by cutoff-dependent IHC or multiplex assays (NSCLC n=642, Inoue 2017, doi:10.18632/oncotarget.14434; TNBC n=122, Buisseret 2018, doi:10.1093/annonc/mdx730), which report prognostic associations of high expression rather than a positivity rate, and no trial has selected patients on CD73."],
-    prevalence: [{"cancerId":"metastatic-cancer","pct":"immune","measure":"Immune-cell target (CD73 and adenosine on tumour and immune cells; tumour expression varies and is measured in trials): expressed on immune cells rather than on the tumour, so patient selection rests on the cancer type and, in trials, on PD-L1 or immune biomarkers."}], links: [{ label: "COAST (JCO 2022)", url: "https://doi.org/10.1200/JCO.22.00227" }], tags: ["gap-fill"] }),
+    prevalence: [{"cancerId":"metastatic-cancer","pct":"immune","measure":"Immune-cell target (CD73 and adenosine on tumour and immune cells; tumour expression varies and is measured in trials): expressed on immune cells rather than on the tumour, so patient selection rests on the cancer type and, in trials, on PD-L1 or immune biomarkers."}], links: [
+  {
+    "label": "COAST (JCO 2022)",
+    "url": "https://doi.org/10.1200/JCO.22.00227"
+  },
+  {
+    "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
+    "url": "https://doi.org/10.1073/pnas.0605251103"
+  },
+  {
+    "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
+    "url": "https://doi.org/10.1084/jem.20062512"
+  },
+  {
+    "label": "A new method of sampling blood for measurement of plasma adenosine.",
+    "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
+  }
+], tags: ["gap-fill"] ,
+"asOf": "2026-11-10"
+}),
   tg({ id: "vista", name: "VISTA", symbol: "VSIR", hgnc: "HGNC:30085", ensembl: "ENSG00000107738", uniprot: "Q9H7M9", entrez: "64115", targetClass: "checkpoint",
     tldr: "An immune checkpoint on myeloid cells that works at the acidic pH inside tumours and is a suspected escape route after PD-1 therapy; antibodies are in early trials.",
     summary: "VISTA (VSIR, PD-1H) is expressed mainly on myeloid cells and naive T cells, binds PSGL-1 selectively at acidic pH (tumour microenvironment) and VSIG3, and suppresses T-cell activation. It is upregulated after anti-CTLA-4 in prostate cancer and after chemotherapy in some tumours, suggesting adaptive resistance. Anti-VISTA antibodies (CI-8993, SNS-101 which binds only at low pH, HMBD-002, KVA12123) are in phase 1/2; the first agent (JNJ-61610588) was halted for cytokine release. No efficacy has yet been shown.",

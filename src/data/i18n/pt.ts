@@ -993,7 +993,7 @@ export const tldr_pt: Record<string, string> = {
   "destiny-breast06": "Colocou o Enhertu à frente da quimioterapia no câncer de mama com receptores hormonais positivos e o estendeu ao HER2 'ultrabaixo'.",
   "differentiation-syndrome": "Quando um medicamento direcionado faz as células da leucemia amadurecerem todas de uma vez, causando febre, líquido nos pulmões e ganho de peso. Tratável com esteroides se detectado cedo.",
   dinutuximab: "O anticorpo que elevou as taxas de cura do neuroblastoma infantil de alto risco em cerca de 20 pontos quando administrado após o transplante com estimulantes imunológicos e retinoide.",
-  "dose-modification": "As ferramentas do dia a dia para conviver com os efeitos colaterais: pausar um medicamento até que um problema se resolva (interrupção), reiniciar em dose mais baixa (redução) ou suspendê-lo definitivamente (descontinuação). A frequência com que os pacientes precisam disso é uma medida essencial de se a dose foi definida corretamente.",
+
   "driver-mutation": "Uma das poucas mutações de um tumor que realmente o fazem crescer. Todas as outras são passageiras, apenas acompanhando. As mutações condutoras são as que os medicamentos têm como alvo.",
   "drug-repurposing": "Testar medicamentos antigos e baratos, aspirina, metformina, estatinas, betabloqueadores, como tratamentos contra o câncer, porque são seguros, disponíveis e às vezes funcionam.",
   dxd: "DXd é o veneno de topoisomerase dentro do Enhertu e do Dato-DXd: cerca de dez vezes mais forte que o SN-38, ele se espalha para as células vizinhas e sai do corpo rapidamente depois de liberado.",

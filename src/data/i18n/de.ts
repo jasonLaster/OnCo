@@ -830,7 +830,7 @@ export const tldr_de: Record<string, string> = {
   dinutuximab: "Der Antikörper, der die Heilungsraten beim Hochrisiko-Neuroblastom im Kindesalter um etwa 20 Punkte anhob, wenn er nach der Transplantation zusammen mit Immunverstärkern und einem Retinoid gegeben wird.",
   "disitamab-vedotin": "Disitamab vedotin ist ein chinesisches HER2-ADC, zugelassen für Magen- und Blasenkrebs, das jetzt gemeinsam mit Pfizer in globalen Studien geprüft wird.",
   dordaviprone: "Dordaviprone ist das erste je zugelassene Medikament für einen Hirntumor bei Kindern und jungen Erwachsenen, für den es zuvor keines gab, das diffuse Mittelliniengliom mit der H3-K27M-Mutation (August 2025).",
-  "dose-modification": "Die Alltagswerkzeuge im Umgang mit Nebenwirkungen: ein Medikament pausieren, bis ein Problem abklingt (Unterbrechung), mit niedrigerer Dosis wieder beginnen (Reduktion) oder es endgültig absetzen (Abbruch). Wie oft Patienten dies brauchen, ist ein zentrales Maß dafür, ob eine Dosis richtig festgelegt wurde.",
+
   "driver-mutation": "Eine der wenigen Mutationen in einem Tumor, die ihn tatsächlich wachsen lassen. Alles andere sind Passagiere, die nur mitfahren. Treibermutationen sind die Mutationen, auf die Medikamente zielen.",
   "drug-repurposing": "Billige alte Medikamente, Aspirin, Metformin, Statine, Betablocker, als Krebsbehandlungen zu prüfen, weil sie sicher und verfügbar sind und manchmal wirken.",
   "dual-payload-adc": "Ein Dual-Payload-ADC ist ein ADC, der zwei verschiedene Gifte gleichzeitig trägt, sodass der Tumor nicht entkommen kann, indem er gegen eines davon resistent wird.",

@@ -830,7 +830,7 @@ export const tldr_fr: Record<string, string> = {
   dinutuximab: "L'anticorps qui a augmenté d'environ 20 points les taux de guérison du neuroblastome de haut risque de l'enfant lorsqu'il est administré après la greffe avec des stimulants immunitaires et un rétinoïde.",
   "disitamab-vedotin": "Disitamab vedotin est un ADC chinois anti-HER2 approuvé dans le cancer gastrique et le cancer de la vessie, aujourd'hui en essais mondiaux avec Pfizer.",
   dordaviprone: "Dordaviprone est le tout premier médicament approuvé pour une tumeur cérébrale de l'enfant et du jeune adulte qui n'en avait aucun, le gliome diffus de la ligne médiane avec la mutation H3 K27M (août 2025).",
-  "dose-modification": "Les outils du quotidien pour vivre avec les effets secondaires : suspendre un médicament jusqu'à ce qu'un problème se calme (interruption), le reprendre à une dose plus faible (réduction) ou l'arrêter définitivement (arrêt). La fréquence à laquelle les patients en ont besoin est une mesure clé pour savoir si la dose a été bien fixée.",
+
   "driver-mutation": "L'une des rares mutations d'une tumeur qui la font réellement grossir. Toutes les autres sont des passagères qui suivent le mouvement. Les mutations conductrices sont celles que visent les médicaments.",
   "drug-repurposing": "Tester de vieux médicaments bon marché, aspirine, metformine, statines, bêtabloquants, comme traitements du cancer, parce qu'ils sont sûrs, disponibles et parfois efficaces.",
   "dual-payload-adc": "Un ADC à double charge est un ADC qui transporte deux poisons différents à la fois, de sorte que la tumeur ne peut pas s'échapper en devenant résistante à l'un d'eux.",

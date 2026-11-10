@@ -4,6 +4,11 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Dose changes and CRS grading
+
+- **Dose modification:** removed unsourced class-wide dose-reduction and discontinuation ranges, a universal 85% dose-intensity claim, and an implication that lower targeted-drug doses are generally equivalent. The record now defines its reference and time basis, gives labelled fictional arithmetic, and scopes the Zhang observational and Goetz exploratory analyses to their populations. Eight stale short translations use current English fallback; the accurate simple definition is retained. Sources: [Alberto, 1995](https://pubmed.ncbi.nlm.nih.gov/7626852/), [Zhang et al., 2018](https://pubmed.ncbi.nlm.nih.gov/29368311/), [Goetz et al., 2024](https://doi.org/10.1038/s41523-024-00639-1).
+- **CRS grading:** the lymphoma record described grade 2 hypotension as responding to fluids. The 2019 consensus uses hypotension not requiring vasopressors. The correction preserves the vasopressin exceptions, oxygen-support criteria and the rule that subsequent grading can proceed without fever after treatment of established CRS. Other management and trial text is carried forward outside this focused verification. Source: [Lee et al., original consensus author manuscript, Table 2 and footnotes](https://pmc.ncbi.nlm.nih.gov/articles/PMC12180426/).
+
 ### Binder evidence and manufacturing quality
 
 - **Cell-product identity and release:** an older definition and summary presented HLA identity and a generic rapid-sterility timeline as a release checklist. They now distinguish engineered-cell identity, chain of identity, viability, potency and product-specific testing. FDA's scoped 2020 short-shelf-life example does not become a universal early-release rule. Corrected short translations already present in the shared draft are preserved with the aligned English definition.

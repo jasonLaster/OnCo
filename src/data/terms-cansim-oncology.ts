@@ -308,11 +308,48 @@ export const cansimOncologyTerms: TermInput[] = [
     tldr: "A research use only label means a test, reagent or model has not been validated or cleared for making decisions about a patient and must not be used that way.",
     summary: "The FDA's 2013 guidance describes in vitro diagnostic products labelled for research use only as products in the laboratory research phase of development, not intended for clinical diagnostic use, and sets out what manufacturers may and may not do when distributing them. The label travels with research models and datasets: a prediction shown as research only is not a clinical result, and a site that publishes such models has to say so on every page.",
     terms: ["samd", "analytical-vs-clinical-validation"] }),
-  t({ id: "analytical-vs-clinical-validation", asOf: "2026-11-08", name: "Analytical versus clinical validation", category: BM, aka: ["analytical validation", "clinical validation", "analytical validity", "clinical validity", "clinical utility", "validation of a biomarker test"],
-    wikipedia: W("Biomarker_(medicine)"), links: [{ label: "FDA: Software as a Medical Device (SaMD)", url: "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd" }, { label: "FDA: diagnostic-test study interpretation", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda" }, { label: "DYNAMIC randomized ctDNA-guided treatment strategy (2022)", url: DOI("10.1056/NEJMoa2200075") }], cansim: "/terms/clinical-vs-analytical-validation",
+  t({ id: "analytical-vs-clinical-validation", asOf: "2026-11-10", name: "Analytical versus clinical validation", category: BM, aka: ["analytical validation", "clinical validation", "analytical validity", "clinical validity", "clinical utility", "validation of a biomarker test"],
+    wikipedia: W("Biomarker_(medicine)"), links: [
+  {
+    "label": "FDA: Software as a Medical Device (SaMD)",
+    "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd"
+  },
+  {
+    "label": "FDA: diagnostic-test study interpretation",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda"
+  },
+  {
+    "label": "DYNAMIC randomized ctDNA-guided treatment strategy (2022)",
+    "url": "https://doi.org/10.1056/NEJMoa2200075"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Biomarker_(medicine)"
+  },
+  {
+    "label": "MedlinePlus Genetics: judging a valid and useful test",
+    "url": "https://medlineplus.gov/genetics/understanding/testing/validtest/"
+  },
+  {
+    "label": "FDA: Use of Circulating Tumor DNA for Curative-Intent Solid Tumor Drug Development (guidance)",
+    "url": "https://www.fda.gov/media/183874/download"
+  },
+  {
+    "label": "Riley et al., Evaluation of clinical prediction models (part 2): how to undertake an external validation study (BMJ 2024)",
+    "url": "https://doi.org/10.1136/bmj-2023-074820"
+  }
+], cansim: "/terms/clinical-vs-analytical-validation",
     tldr: "Analytical validity concerns the measurement. Clinical validity concerns its relationship to a clinical condition or outcome, and clinical utility concerns the consequences of using it for a decision.",
-    summary: "Repeatability or detection accuracy does not establish that a test predicts an outcome, and an outcome association does not establish benefit from acting on the result. These questions depend on the assay version, specimen, population and intended use. Clinical utility can be studied by comparing decision strategies: DYNAMIC randomized people with stage II colon cancer to ctDNA-guided or standard management and evaluated chemotherapy use and recurrence-free survival. That design illustrates evidence about a particular strategy; it does not validate every residual-disease test or treatment change. Prediction-model validation and a study of model-guided care also answer different questions.",
-    terms: ["external-validation", "calibration", "samd", "biomarker"], related: ["measurement-to-benefit-evidence", "detection-versus-quantification", "test-agreement-versus-accuracy", "biomarker-qualification-context", "decision-curve-net-benefit"] }),
+    summary: "Repeatability or detection accuracy does not establish that a test predicts an outcome, and an outcome association does not establish benefit from acting on the result. These questions depend on the assay version, specimen, population and intended use. Clinical utility can be studied by comparing decision strategies: DYNAMIC randomized people with stage II colon cancer to ctDNA-guided or standard management and evaluated chemotherapy use and recurrence-free survival. That design illustrates evidence about a particular strategy; it does not validate every residual-disease test or treatment change. Prediction-model validation and a study of model-guided care also answer different questions. MedlinePlus Genetics describes analytical validity as how well a test detects whether a specific genetic variant is present or absent, clinical validity as how well the variant relates to the presence, absence or risk of a disease, and clinical utility as whether the test provides helpful information about diagnosis, treatment, management or prevention. Laboratory certification under CLIA standards is designed to ensure analytical validity and does not address clinical validity or clinical utility. FDA guidance on circulating tumour DNA in curative-intent solid tumour drug development says analytical validation ensures that an assay measures the intended analytes in the intended tumour type and establishes its performance characteristics, and that pre-analytical factors such as sample collection, storage and handling should be controlled because they affect sensitivity and specificity. The same guidance says the evidence for clinical validity or clinical utility of ctDNA varies across malignancies and patient populations, and that a trial in which a minimal residual disease result guides de-escalation of treatment should be randomised. A prediction model is judged on overall fit, calibration and discrimination, so separating risk groups well does not by itself give accurate individual probabilities (Riley and colleagues, 2024); an outcome association also does not show who benefits from a treatment, which is a separate comparison of strategies.",
+    terms: ["external-validation", "calibration", "samd", "biomarker"], related: ["measurement-to-benefit-evidence", "detection-versus-quantification", "test-agreement-versus-accuracy", "biomarker-qualification-context", "decision-curve-net-benefit"] ,
+"notes": [
+  "Reading guide (OnCo inference built on the definitions above): a test-guided strategy is the test, its result rule, the action taken and the care setting taken together, and its utility is judged against a defined alternative using outcomes and harms. Measurement evidence (repeat readings of a spiked target), meaning evidence (a result followed by a later outcome) and use evidence (the strategy compared with an alternative) are three separate questions, and an answer to one is not an answer to another.",
+  "Evidence table in words. Does it measure correctly? Inspect reference specimens, repeats, background, input range and failures; the tempting overread is that reliable measurement must predict benefit. Does the result mean something clinically? Inspect an appropriate population, endpoint, follow-up and independent validation; the tempting overread is that association means the proposed intervention works. Does acting on it help? Inspect a defined decision strategy against a comparator with meaningful outcomes and harms; the tempting overread is that a changed decision must be improved care.",
+  "Fictional worked example. A blood test detects a spiked target reproducibly, and in a separate cohort more recurrences follow positive calls. No study compares starting Drug A after a positive call with a specified alternative, so the utility of the Drug A strategy is unsupported: the first finding supports analytical performance and the second a scoped clinical association, and neither tests whether the action helps more than it harms.",
+  "Figure reading (fictional example, light and dark renders agree): three parallel panels ask whether the test measures (a spiked target and repeat readings), what its result is associated with (a result followed by a later outcome) and whether the strategy helps (positive result then Drug A against a defined alternative, with both outcome boxes unanswered and outcomes and harms not compared). The empty boxes mark the missing comparison; they are not a validation ladder or a treatment recommendation.",
+  "Lead time (an inference that applies the existing lead-time-bias record, which is framed for screening): a blood result that anticipates recurrence earlier lengthens how long a person knows about the disease even if the date of the outcome does not change, so benefit needs a comparison of outcomes with and without acting early, measured on the same clock."
+]
+}),
 
   // ---- Genome and identifier standards ----
   t({ id: "hgnc-symbol", name: "HGNC gene symbol", category: GEN, aka: ["HGNC symbol", "HGNC gene symbol", "approved gene symbol", "official gene symbol", "gene symbol", "HGNC id", "HGNC ID"],

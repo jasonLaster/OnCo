@@ -1,6 +1,6 @@
 import type { TermInput } from "@/lib/schema";
 
-type Concept = Omit<TermInput, "kind" | "asOf">;
+type Concept = Omit<TermInput, "kind" | "asOf"> & { asOf?: string };
 const t = (x: Concept): TermInput => ({ kind: "term", asOf: "2026-11-08", ...x });
 const paper = (label: string, doi: string) => ({ label, url: `https://doi.org/${doi}` });
 const FDA_BIOMARKERS = { label: "FDA: biomarkers, roles and qualification", url: "https://www.fda.gov/drugs/biomarker-qualification-program/about-biomarkers-and-qualification" };
@@ -89,10 +89,12 @@ export const evidenceBridges: TermInput[] = [
   t({
     id: "detection-versus-quantification", name: "Detection and quantification limits", category: "Diagnostics & imaging", aka: ["limit of detection", "limit of quantification", "limit of quantitation", "LoD versus LoQ"],
     tldr: "A test may detect that a signal is present before it can measure its amount reliably. Both limits need to be defined for the method and sample conditions.",
-    summary: "A detection limit concerns the lowest amount that can be detected under stated conditions; a quantitation limit concerns an amount measurable with suitable accuracy and precision. These are analytical properties, distinct from the proportion of patients with a condition who test positive. Input, recovery, background, calling rules and acceptable error influence what a stated limit means. The FDA/ICH source supplies general analytical definitions for drug procedures, not certification of any particular clinical tumor-DNA assay.",
+    summary: "A detection limit concerns the lowest amount that can be detected under stated conditions; a quantitation limit concerns an amount measurable with suitable accuracy and precision. These are analytical properties, distinct from the proportion of patients with a condition who test positive. Input, recovery, background, calling rules and acceptable error influence what a stated limit means. The FDA/ICH source supplies general analytical definitions for drug procedures, not certification of any particular clinical tumor-DNA assay. The ICH Q2(R2) glossary, as reproduced in FDA guidance, defines the detection limit as the lowest amount of an analyte that can be detected but not necessarily quantitated as an exact value, and the quantitation limit as the lowest amount that can be quantitatively determined with suitable precision and accuracy. It defines accuracy as closeness of agreement between an accepted reference value and the measured value, and precision as the closeness of agreement, or scatter, between a series of measurements of the same homogeneous sample, which is usually expressed as a variance, standard deviation or coefficient of variation. Mass spectrometry assay validation also considers the limit of the blank, the lower limit of quantification, linearity and parallelism (Carr and colleagues, 2014).",
     related: ["sensitivity-specificity", "analytical-vs-clinical-validation", "finite-molecule-sampling"],
     links: [{ label: "FDA/ICH Q2(R2): analytical procedure validation, glossary", url: "https://www.fda.gov/media/161201/download" }, paper("Primary limit-of-detection estimation method (2004)", "10.1373/clinchem.2003.029983")],
-  }),
+
+"asOf": "2026-11-10"
+}),
   t({
     id: "finite-molecule-sampling", name: "Finite-molecule sampling in blood tests", category: "Biomarkers", aka: ["ctDNA molecular sampling", "independent molecules versus sequencing reads"],
     tldr: "A small blood sample contains a finite number of original DNA molecules. Sequencing copies of those molecules more deeply cannot recover a tumor molecule that never entered the analyzed sample.",

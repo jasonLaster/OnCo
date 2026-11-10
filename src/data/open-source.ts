@@ -9995,8 +9995,6 @@ export const openSourceProjects: OpenSourceProject[] = [
     "maintainer": "Bayer",
     "maintainerId": "bayer",
     "since": 2020,
-    "lastCommit": "2026-04-30",
-    "stars": 138,
     "cancers": [],
     "targets": [],
     "technologies": [
@@ -10007,9 +10005,9 @@ export const openSourceProjects: OpenSourceProject[] = [
     "openness": "open-code",
     "oncology": true,
     "source": {
-      "url": "https://api.github.com/repos/Bayer-Group/paquo",
+      "url": "https://pypi.org/project/paquo/",
       "status": 200,
-      "fetched": "2026-11-05"
+      "fetched": "2026-11-10"
     },
     "opennessNote": "Published on PyPI; the GitHub repository (Bayer-Group/paquo) returned 404 on 10 November 2026, so the catalogue keeps its last good record."
   },
@@ -13122,8 +13120,6 @@ export const openSourceProjects: OpenSourceProject[] = [
     "maintainer": "Bayer",
     "maintainerId": "bayer",
     "since": 2021,
-    "lastCommit": "2026-07-03",
-    "stars": 107,
     "doi": "10.5281/zenodo.6327079",
     "cancers": [],
     "targets": [],
@@ -13135,9 +13131,9 @@ export const openSourceProjects: OpenSourceProject[] = [
     "openness": "open-code",
     "oncology": true,
     "source": {
-      "url": "https://api.github.com/repos/Bayer-Group/tiffslide",
+      "url": "https://pypi.org/project/tiffslide/",
       "status": 200,
-      "fetched": "2026-11-05"
+      "fetched": "2026-11-10"
     },
     "opennessNote": "Published on PyPI; the GitHub repository (Bayer-Group/tiffslide) returned 404 on 10 November 2026, so the catalogue keeps its last good record."
   },

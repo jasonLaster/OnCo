@@ -1,6 +1,6 @@
 import type { TermInput } from "@/lib/schema";
 
-type Concept = Omit<TermInput, "kind" | "asOf">;
+type Concept = Omit<TermInput, "kind" | "asOf"> & { asOf?: string };
 const t = (x: Concept): TermInput => ({ kind: "term", asOf: "2026-11-08", ...x });
 
 /** Evidence boundaries checked against primary methods, experimental studies and official guidance. */
@@ -208,15 +208,31 @@ export const educationRound2: TermInput[] = [
     tldr: "Repertoire measures describe how many receptor identities are sampled and how unevenly they are represented. A dominant sequence does not tell us what its cells recognize.",
     summary: "Repertoire sequencing can describe richness and the distribution of sampled receptor sequences. Those summaries depend on the sampled population and the way receptor identities and counts are defined; the original sequencing study found diversity estimates that differed from earlier methods. A repertoire dominated by a clone is a distributional observation. It is distinct from proving tumor specificity, a malignant clone or successful tumor killing, each of which needs additional evidence.",
     links: [
-      {
-        label: "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
-        url: "https://doi.org/10.1182/blood-2009-04-217604"
-      },
-      {
-        label: "Phenotypic analysis of antigen-specific T lymphocytes.",
-        url: "https://doi.org/10.1126/science.274.5284.94"
-      }
-    ],
+  {
+    "label": "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
+    "url": "https://doi.org/10.1182/blood-2009-04-217604"
+  },
+  {
+    "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+    "url": "https://doi.org/10.1126/science.274.5284.94"
+  },
+  {
+    "label": "PubMed 26324409",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
+  },
+  {
+    "label": "PubMed 24952902",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+  },
+  {
+    "label": "PubMed 31359002",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31359002/"
+  },
+  {
+    "label": "PubMed 22365666",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22365666/"
+  }
+],
     related: [
       "tcr-repertoire-sequencing",
       "clonality-testing",
@@ -226,6 +242,13 @@ export const educationRound2: TermInput[] = [
       "TCR repertoire clonality",
       "TCR repertoire diversity"
     ]
+  ,
+    notes: [
+  "The repertoire is a distribution of receptor identities and abundances in a stated population and time. A clone is a cellular lineage; a clonotype is an operational sequence grouping. Single-chain labels and paired identities have different resolution. V(D)J assembly and thymic selection contribute diversity, while expansion changes abundance; diversity and total T-cell count are different quantities.",
+  "Blood, tumour and lymph nodes sample overlapping but different populations. Infection, therapy, age and movement can change a sample; absence from one tube may reflect sampling or detection rather than whole-body absence. A pretreatment blood sample is not a complete stored repertoire. Lower measured diversity after infection may reflect a vigorous response and does not establish cancer specificity, vaccine causation or uniformly worse immunity.",
+  "Fictional matched receptor samples contain 10 clonotype A cells among 1,000 T cells (1%) and 10 among 100 (10%). The sampled count remains 10; the changed denominator drives the larger fraction. Absolute expansion requires comparable sampling and calibrated counts, and neither frequency identifies antigen. State sampling depth, chain definition, compartment, method and timing."
+],
+    asOf: "2026-11-09",
   }),
   t({
     id: "pbmc-specimens",
@@ -360,16 +383,36 @@ export const educationRound2: TermInput[] = [
     tldr: "Immune responses to a set of possible targets are often uneven. Some epitopes attract a stronger measured response than others in the same setting.",
     summary: "A primary mouse experiment showed that T-cell populations could compete for access to antigen-bearing presenting cells, changing responses to dominant and subdominant epitopes. That identifies one mechanism of immunodominance in the studied system. It does not supply a universal ranking of human tumor epitopes. The antigen design, presentation context and responding repertoire all need to remain attached to an observation of a dominant response.",
     links: [
-      {
-        label: "T cells compete for access to antigen-bearing antigen-presenting cells.",
-        url: "https://doi.org/10.1084/jem.192.8.1105"
-      }
-    ],
+  {
+    "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+    "url": "https://doi.org/10.1084/jem.192.8.1105"
+  },
+  {
+    "label": "PubMed 18641351",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18641351/"
+  },
+  {
+    "label": "PubMed 21367907",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21367907/"
+  },
+  {
+    "label": "PubMed 33038342",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33038342/"
+  }
+],
     related: [
       "epitope",
       "multi-epitope-constructs",
       "tcr-repertoire-clonality"
     ]
+  ,
+    notes: [
+  "Immunodominance is a contextual hierarchy of measured responses, distinct from encoded target count and from epitope spreading. Presentation, precursor frequency, repertoire, priming, HLA, delivery, immune history, tissue and time can change the hierarchy. A favourable binding prediction does not establish immunogenicity, and more encoded targets do not guarantee balanced immunity or independent tumour coverage.",
+  "Naive precursor frequency is the starting abundance of cells with a relevant specificity. Mouse LCMV and human HLA-A2-restricted HCV experiments linked precursor frequencies to response hierarchies. Binding alone did not strictly predict the hierarchy. These studies provide no universal cancer-vaccine weights, human marker requirement or instruction to remove dominant clones.",
+  "Fictional matched IFN-gamma ELISpot means of 45, 11 and 5 spots for A, B and C, minus matched background 5, give 40, 6 and 0 spots per 200,000 plated PBMCs. A dominates that measured response. Protocol replicate and positivity rules classify C as undetectable. Zero adjusted spots do not prove absent tumour display or universal uselessness, nor do three encoded sequences imply three equally effective responses.",
+  "A measured hierarchy needs offered targets, compartment, cell denominator, baseline, timing, matched per-target stimulation, background and positive controls. Detection thresholds and in vitro expansion can alter apparent ranking. Peptide response is not evidence of natural tumour display or tumour-cell killing."
+],
+    asOf: "2026-11-09",
   }),
   t({
     id: "epitope-spreading",
@@ -378,16 +421,31 @@ export const educationRound2: TermInput[] = [
     tldr: "An immune response can broaden to recognize additional epitopes over time. Showing that broadening requires measurements of the added specificities.",
     summary: "A follow-up study of a small melanoma neoantigen-vaccine cohort found persistent immune responses, evolving receptor clonotypes and evidence of responses beyond the original vaccine targets. The report provides clinical immune-monitoring evidence of spreading in that cohort. The response measurements are distinct from a randomized estimate of treatment benefit. Spreading should not be inferred solely from an increased total lymphocyte count or expansion of an unidentified receptor sequence.",
     links: [
-      {
-        label: "Personal neoantigen vaccines induce persistent memory T cell responses and epitope spreading in patients with melanoma.",
-        url: "https://doi.org/10.1038/s41591-020-01206-4"
-      }
-    ],
+  {
+    "label": "Personal neoantigen vaccines induce persistent memory T cell responses and epitope spreading in patients with melanoma.",
+    "url": "https://doi.org/10.1038/s41591-020-01206-4"
+  },
+  {
+    "label": "PubMed 33479501",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33479501/"
+  },
+  {
+    "label": "PubMed 28678778",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+  }
+],
     related: [
       "immunogenicity-versus-efficacy",
       "tcr-repertoire-sequencing",
       "immunodominance"
     ]
+  ,
+    notes: [
+  "Epitope spreading is additional detected recognition beyond the initially targeted epitope set, potentially within one source protein or across proteins. More response to the same target is expansion. Responses to both directly encoded A and B do not themselves demonstrate spreading. Newly detected is not newly created: baseline sensitivity can miss pre-existing responsive cells.",
+  "Tumour injury can release additional antigen for uptake and presentation, but one follow-up response does not establish that entire causal chain. Define peptide-HLA targets and compare matched baseline and follow-up assays with background, presentation and cross-reactivity controls; assess intervening treatment. Vaccine recruitment or expansion does not normally rewrite mature TCRs. An immune response, including one to healthy self, does not establish recurrence prevention, safety or clinical benefit.",
+  "In a fictional A/B vaccine experiment, baseline C is undetectable and matched follow-up detects unencoded C, consistent with an additional detected specificity. The A-cell icons are qualitative, not counts. Ten additional receptor sequences without target testing demonstrate repertoire change, not recognition of C; causation and patient benefit remain separate questions."
+],
+    asOf: "2026-11-09",
   }),
   t({
     id: "self-similarity-immune-recognition",

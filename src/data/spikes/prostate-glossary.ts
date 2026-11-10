@@ -106,21 +106,66 @@ const NEPC = "prostate-nepc";
 export const prostateGlossaryTerms: TermInput[] = [
 
   // ---------------------------------------------------------------- the screening argument
-  { id: "lead-time-bias", kind: "term", asOf, tags, name: "Lead time, and lead-time bias", category: "Epidemiology & prevention", wikipedia: W("Lead_time_bias"),
+  { id: "lead-time-bias", kind: "term", asOf: "2026-11-10", tags, name: "Lead time, and lead-time bias", category: "Epidemiology & prevention", wikipedia: W("Lead_time_bias"),
     aka: ["lead time", "lead-time", "lead time bias", "screening lead time", "lead time in prostate cancer screening"],
-    tldr: "Finding a cancer earlier means you know about it for longer, even if nothing you do changes the day you die. That extra stretch of knowing is called the lead time, and lead-time bias is the mistake of counting it as extra life. It is the single biggest reason survival figures make screening look better than it is.",
-    summary: "Lead time is the interval between the moment a screening test finds a cancer and the moment that cancer would have been diagnosed because it caused symptoms. Lead-time bias is what happens when survival is measured from diagnosis: a man whose cancer is found five years earlier appears to survive five years longer even if the date of his death is unchanged. It is why survival from diagnosis is close to useless as a measure of whether a screening programme works, and why randomised screening trials report mortality in the whole invited population instead.\n\nProstate cancer has the longest lead time of any common cancer, and the honest figure is a range rather than a number. Draisma and Etzioni ran three independently built models of prostate cancer progression and detection, all calibrated to Surveillance, Epidemiology, and End Results incidence in United States men aged 54 to 80 between 1985 and 2000. Among screen-detected cancers that would have surfaced in the man's lifetime, mean lead time was 5.4 to 6.9 years across the three models; the original MISCAN model fitted instead to the Rotterdam section of the European screening trial gave 7.9 years. Published estimates before that work spanned 3 to 12 years. The three models agreed closely with each other for any single definition of lead time and disagreed substantially across definitions, which is the paper's real finding: the number is a property of the question, not of the disease.\n\nThe consequence is practical. Lead time is what generates overdiagnosis: if the lead time is longer than the man's remaining life, the cancer would never have troubled him, and the same modelling put overdiagnosis at 23 to 42 percent of screen-detected cancers in the United States calibration and 66 percent in the Rotterdam one. It is also why the 2018 United States task force statement expresses benefit as deaths and metastatic cases prevented per 1,000 men screened over about 13 years rather than as a survival rate, and why the two 2009 randomised trials, ERSPC and PLCO, are the evidence rather than any registry series.",
+    tldr: "Finding a cancer earlier starts the survival clock sooner, even if the date of death does not change. Counting that extra time as longer life is lead-time bias. Survival measured from diagnosis alone cannot establish that screening saves lives.",
+    summary: "Lead time is the interval between the moment a screening test finds a cancer and the moment that cancer would have been diagnosed because it caused symptoms. Lead-time bias is what happens when survival is measured from diagnosis: a man whose cancer is found five years earlier appears to survive five years longer even if the date of his death is unchanged. It is why survival from diagnosis is unreliable on its own as a measure of whether a screening programme works, and why randomised screening trials report mortality in the whole invited population instead.\n\nFor prostate-specific antigen screening, estimated lead time depends on the definition and population. The following numbers are model estimates from specified settings, not a ranking of lead times across cancers. Draisma and Etzioni ran three independently built models of prostate cancer progression and detection, all calibrated to Surveillance, Epidemiology, and End Results incidence in United States men aged 54 to 80 between 1985 and 2000. Among screen-detected cancers that would have surfaced in the man's lifetime, mean lead time was 5.4 to 6.9 years across the three models; the original MISCAN model fitted instead to the Rotterdam section of the European screening trial gave 7.9 years. Published estimates before that work spanned 3 to 12 years. The three models agreed closely with each other for any single definition of lead time and disagreed substantially across definitions, which is the paper's real finding: the number is a property of the question, not of the disease.\n\nThe consequence is practical. Lead time is what generates overdiagnosis: if the lead time is longer than the man's remaining life, the cancer would never have troubled him, and the same modelling put overdiagnosis at 23 to 42 percent of screen-detected cancers in the United States calibration and 66 percent in the Rotterdam one. It is also why the 2018 United States task force statement expresses benefit as deaths and metastatic cases prevented per 1,000 men screened over about 13 years rather than as a survival rate, and why the two 2009 randomised trials, ERSPC and PLCO, are the evidence rather than any registry series.",
     cancers: [PROSTATE, LOW_RISK, INTERMEDIATE_RISK],
     terms: ["overdiagnosis", "overtreatment", "number-needed-to-screen", "screening", "psa"],
     related: ["overdiagnosis", "number-needed-to-screen", "overtreatment", "paper-draisma-lead-time-overdiagnosis-psa-jnci-2009", "prostate-screening-psa-mri"],
     sections: ["early-detection", "prevention"],
     keyPapers: ["paper-draisma-lead-time-overdiagnosis-psa-jnci-2009", "paper-welch-albertsen-psa-era-diagnosis-treatment-jnci-2009", "paper-schroder-erspc-screening-mortality-nejm-2009"],
     bottlenecks: ["b-overdiagnosis", "b-early-detection", "b-trial-design"],
-    links: [SRC.draisma, SRC.welch, SRC.uspstf2018, SRC.erspc2009],
+    links: [
+  {
+    "label": "Draisma et al., Journal of the National Cancer Institute 2009: lead time and overdiagnosis in prostate-specific antigen screening, importance of methods and context",
+    "url": "https://doi.org/10.1093/jnci/djp001"
+  },
+  {
+    "label": "Welch and Albertsen, Journal of the National Cancer Institute 2009: prostate cancer diagnosis and treatment after the introduction of prostate-specific antigen screening, 1986 to 2005",
+    "url": "https://doi.org/10.1093/jnci/djp278"
+  },
+  {
+    "label": "US Preventive Services Task Force, JAMA 2018: screening for prostate cancer, recommendation statement",
+    "url": "https://doi.org/10.1001/jama.2018.3710"
+  },
+  {
+    "label": "Schroder et al., New England Journal of Medicine 2009 (ERSPC): screening and prostate cancer mortality in a randomised European study",
+    "url": "https://doi.org/10.1056/nejmoa0810084"
+  },
+  {
+    "label": "NCI: screening statistics and lead-time bias",
+    "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean"
+  },
+  {
+    "label": "FDA: ctDNA in curative-intent drug development (2024)",
+    "url": "https://www.fda.gov/media/183874/download"
+  },
+  {
+    "label": "Results of the c-TRAK TN trial: a clinical trial utilising ctDNA mutation tracking to detect molecular residual disease and trigger intervention in patients with moderate- and high-risk early-stage triple-negative breast cancer.",
+    "url": "https://doi.org/10.1016/j.annonc.2022.11.005"
+  },
+  {
+    "label": "OncoGuide: lead-time-bias (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/reasoning-tools/lead-time-bias.md"
+  },
+  {
+    "label": "Rosselli Del Turco et al., JAMA 1994: intensive diagnostic follow-up",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7848404/"
+  },
+  {
+    "label": "GIVIO Investigators, JAMA 1994: follow-up testing",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8182811/"
+  }
+],
     notes: [
-      "Why a five-year survival rate cannot settle a screening argument. Three biases push it up without anyone living longer: lead-time bias, because the clock starts earlier; length bias, because a test that samples the population at intervals preferentially catches slow-growing cancers that sit around waiting to be found; and overdiagnosis, because cancers that would never have surfaced are added to the numerator of survivors. All three run in the same direction. Mortality in a randomised invited population is immune to all three, which is why it is the endpoint the trials used.",
-      "Lead time is not the same as overdiagnosis, although the two are produced by the same mechanism. Lead time is how much earlier the diagnosis came. Overdiagnosis is the case where the lead time exceeded the rest of the man's life, so the diagnosis never needed to come at all. A long lead time with a long life left is exactly what screening is for.",
-    ] },
+  "Why a five-year survival rate cannot settle a screening argument. Three biases push it up without anyone living longer: lead-time bias, because the clock starts earlier; length bias, because a test that samples the population at intervals preferentially catches slow-growing cancers that sit around waiting to be found; and overdiagnosis, because cancers that would never have surfaced are added to the numerator of survivors. All three run in the same direction. Mortality in a randomised invited population is immune to all three, which is why it is the endpoint the trials used.",
+  "Lead time is not the same as overdiagnosis, although the two are produced by the same mechanism. Lead time is how much earlier the diagnosis came. Overdiagnosis is the case where the lead time exceeded the rest of the man's life, so the diagnosis never needed to come at all. A long lead time with a long life left is exactly what screening is for.",
+  "Lead time is the interval between defined earlier and later detection events. Lead-time bias occurs when that timing difference is mistaken for a better outcome. In a fictional course, detection at year 4 and death at year 6 gives two years from diagnosis. Moving detection to year 3 with death still at year 6 gives three recorded years without adding life. Similarly, labelling post-treatment recurrence at a blood signal before imaging confirmation can mechanically lengthen survival measured from recurrence. Align the endpoint, qualifying event and clock origin. Ten months of detection lead time is not ten added months of life. Earlier effective intervention could help, but its benefit needs separate evidence; correcting the clock alone does not solve selection, confounding or missing follow-up.",
+  "Length bias favours conditions with longer detectable preclinical periods. Overdiagnosis means detecting disease that would not have caused clinical harm during the person's lifetime. Neither is another name for lead-time bias. Screening examples explain the distinctions but cannot establish their magnitude in post-treatment molecular monitoring.",
+  "A monitoring strategy includes its schedule, positive-result rule and resulting action. Comparing that strategy with a meaningful alternative from a common origin, such as randomisation, can assess clinical outcomes and harms. Counting all assigned participants avoids selecting only those with detectable earlier signals. Analysis must also address when groups entered, how follow-up ended, whether positive tests triggered extra imaging and whether people without prior detection were omitted. c-TRAK TN tested a specific blood-surveillance and intervention design; its detection and feasibility findings do not establish a beneficial intervention window for every early signal. A fictional contrast of median survival of 24 months after blood detection versus 18 after imaging detection, without a common-origin comparison, cannot show that testing saves lives. Some or all of the difference could arise from the earlier clock or other group differences.",
+  "The same timing distinction extends beyond the prostate-screening context of this record. Historical breast-cancer surveillance trials illustrate why strategy and outcome must stay together. Rosselli Del Turco and colleagues' 1994 trial enrolled 1,243 surgically treated patients with unilateral invasive breast cancer and no metastases. Adding six-monthly chest radiographs and bone scans detected more isolated intrathoracic and bone metastases, 112 versus 71, and the report described earlier detection of recurrences in that group; five-year relapse-free survival, which stops at detection, was significantly lower with intensive follow-up, while five-year mortality was 18.6% versus 19.5%, with no mortality improvement reported. The separate GIVIO trial enrolled 1,320 women and reported no overall-survival or quality-of-life difference, and no significant difference in time to recurrence detection. Thus the trials should not both be described as showing earlier detection: only the first reported it. Their results do not establish equivalence or the effects of modern imaging and treatment, and a nonsignificant comparison is not proof of exactly zero benefit."
+] },
 
   { id: "overtreatment", kind: "term", asOf, tags, name: "Overtreatment", category: "Epidemiology & prevention", wikipedia: W("Unnecessary_health_care"),
     aka: ["over-treatment", "overtreatment of prostate cancer", "unnecessary treatment", "treatment of overdiagnosed cancer"],

@@ -1,6 +1,6 @@
 {
   "pr": 373,
-  "head": "390ad658620b31deeebb9438c88cd959751f68aa",
+  "head": "81ba4451081a20825cd7b526da708c4cc52701c9",
   "newCount": 36,
   "modifiedCount": 9,
   "records": [
@@ -1085,7 +1085,7 @@
       "aka": [],
       "tldr": "An intervention can produce a measurable immune response. Whether it improves a clinical outcome is a separate question about people receiving the intervention.",
       "summary": "A phase 1 personal neoantigen-vaccine report and its follow-up examined immune responses in small melanoma cohorts. Such work can demonstrate biological activity, persistence and broadening of responses. It does not by itself isolate the treatment effect on recurrence or survival from other explanations. An immune-assay endpoint, a clinical outcome and a comparative efficacy estimate should retain their distinct definitions and study designs.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-10",
       "links": [
         {
           "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
@@ -1094,6 +1094,26 @@
         {
           "label": "Personal neoantigen vaccines induce persistent memory T cell responses and epitope spreading in patients with melanoma.",
           "url": "https://doi.org/10.1038/s41591-020-01206-4"
+        },
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+        },
+        {
+          "label": "FDA: oncology clinical-trial endpoints (2018)",
+          "url": "https://www.fda.gov/media/71195/download"
+        },
+        {
+          "label": "OncoGuide: immunogenicity-vs-efficacy (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/immunogenicity-vs-efficacy.md"
+        },
+        {
+          "label": "OncoGuide: positive immune assay, recurrence and combined-treatment attribution",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/personalized-cancer-vaccine/08-dosing-and-measuring-response.md#worked-example-a-positive-assay-and-a-recurrence"
+        },
+        {
+          "label": "OncoGuide: receptor changes and tumour-DNA attribution",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/how-the-immune-system-fights-cancer/08-measure-a-response.md#try-it"
         }
       ],
       "tags": [],
@@ -1118,7 +1138,12 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "Immunogenicity asks whether an intervention elicits an immune response; clinical efficacy asks what adding it changes in a defined clinical endpoint, population and comparison. An immune result can justify further investigation without settling whether adding the intervention improves outcomes. For a therapeutic cancer vaccine, antigen-stimulated secretion and recurrence over follow-up answer different questions. The immune result needs its specimen, stimulus, preparation, timing, controls and denominator. The clinical result needs the intervention components, comparator, outcome rule, starting clock, follow-up, missing-data handling, harms and uncertainty. A surrogate endpoint also needs evidence connecting it to clinical benefit in that setting. Comparing standard care plus vaccine with the same care without vaccine can address the addition. Randomisation strengthens attribution, while measurement quality and follow-up remain necessary. Even a clinical outcome difference does not identify the particular clone or immune mechanism that caused it. The FDA's 2018 endpoint guidance informs these general distinctions, rather than current regulatory or treatment advice.",
+        "ELISpot measures secretion under defined stimulation. Supplying peptide can bypass natural processing, and laboratory expansion changes which cells and states are measured. In the 2017 phase I melanoma vaccine study by Ott and colleagues, the selected assay passages distinguish direct ex vivo measurements from responses detected after peptide-driven expansion. That specific study supports assay interpretation; it is not an added-benefit comparison for every vaccine. A change in receptor frequency alone establishes neither antigen specificity nor vaccine-induced function, and a weak blood signal can miss responses in tissue. Natural tumour recognition, location, function and safety require their own evidence.",
+        "Consider a fictional single-arm vaccine study in which peptide-reactive cells appear and some participants later recur. The measured immune response can remain real. Recurrence does not identify whether natural antigen display, tissue access, cell state or immune escape limited its effect, and without a suitable clinical comparison the recurrence frequency cannot isolate the vaccine's contribution from standard care or selection. In a second fictional example, circulating tumour DNA becomes undetectable after standard treatment plus vaccine. This tumour-derived DNA result is not an immune measurement. Timing, treatment effects, sampling and detection limits prevent attributing clearance to the vaccine alone. These observations supply no calculable added-efficacy estimate and do not prove an effect of zero.",
+        "A related fictional example finds a clone becoming more frequent after treatment while circulating tumour DNA is no longer detected. This establishes a receptor-repertoire change alongside a tumour-DNA result, not that the clone eliminated the cancer. Relative frequency can rise because that clone increased, others declined, or both. Tumour specificity, function, causal attribution and assay detection limits remain separate questions, and timing, other treatments, shedding and sampling can also shape a tumour-DNA result. Suitable comparisons and target-specific experiments strengthen attribution; temporal coincidence alone does not supply it."
+      ],
       "category": "Endpoints"
     },
     {

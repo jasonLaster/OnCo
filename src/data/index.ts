@@ -26,6 +26,7 @@ import { educationMeasurementTerms } from "./terms-education-measurement";
 import { breastPathologyEducationTerms } from "./breast-pathology-education-2026-11";
 import { educationParallelInnateImmuneTerms } from "./education-parallel-innate-immune-2026-11";
 import { bindersCmcEducation2026 } from "./binders-cmc-education-2026-11";
+import { educationEffectReasoningTerms } from "./education-effect-reasoning-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -349,6 +350,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...breastPathologyEducationTerms,
   ...educationParallelInnateImmuneTerms,
   ...bindersCmcEducation2026,
+  ...educationEffectReasoningTerms,
   ...trials,
   ...pairings,
   ...roadmaps,

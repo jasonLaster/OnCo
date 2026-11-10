@@ -310,7 +310,7 @@ export const tldr_de: Record<string, string> = {
   "guardant-health": "Führend in der Flüssigbiopsie: Guardant360 für die Genotypisierung, Reveal für MRD und Shield für das Screening.",
   "guardant360-cdx": "Ein Bluttest, der die Mutationen eines Tumors ohne Gewebebiopsie ausliest und die von der FDA zugelassene Eintrittskarte zu mehreren zielgerichteten Medikamenten ist.",
   "gustave-roussy": "Gustave Roussy ist Europas führendes Krebszentrum, Heimat der ESMO-MCBS-Skala und federführend bei großen Studien zu ADC und Immuntherapie.",
-  "hazard-ratio": "Eine Hazard Ratio ist eine Zahl, die die Rate ungünstiger Ereignisse in zwei Gruppen vergleicht. Eine HR von 0,5 bedeutet, dass das Risiko zu jedem Zeitpunkt halbiert ist.",
+
   "heidelberg-nct": "Heidelberg ist Deutschlands Hauptstadt der Krebsforschung, Sitz des DKFZ (des größten Krebsforschungsinstituts in Deutschland) und des NCT sowie Geburtsort des FAPI PET und des Methylierungsklassifikators für Hirntumoren.",
   hengrui: "Jiangsu Hengrui ist Chinas größtes Onkologie-Pharmaunternehmen, Hersteller von pyrotinib und des HER2-ADC trastuzumab rezetecan und einer der größten Auslizenzierer chinesischer Wirkstoffe.",
   her2: "Ein Rezeptor für Wachstumssignale. Manche Krebsarten bilden viel zu viel davon, und Medikamente, die ihn blockieren oder als Andockstelle nutzen, haben diese Krebsarten grundlegend verändert.",
@@ -2643,7 +2643,7 @@ export const tldr_de: Record<string, string> = {
   "cogent-biosciences": "Cogent Biosciences stellt Bezuclastinib her, eine Tablette, die ein mutiertes Protein namens KIT blockiert. Sie wird bei einem seltenen Darmtumor namens GIST und bei der systemischen Mastozytose, einer Erkrankung überaktiver Immunzellen, geprüft.",
   colectomy: "Die Entfernung des krebstragenden Dickdarmabschnitts samt seiner Blutversorgung und Lymphknoten, anschließend werden die Enden wieder verbunden.",
   "colorectal-cancer-signalling": "Diese KEGG-Karte verfolgt Schritt für Schritt den genetischen Weg von der normalen Darmschleimhaut zum Darmkrebs: Der Verlust von APC entfesselt Wnt, eine KRAS-Mutation treibt das Wachstum an, dann beseitigt der Verlust von TP53 und TGF-beta/SMAD4 die letzten Bremsen; oder alternativ versagt die Mismatch-Reparatur und Mutationen häufen sich an. Zu wissen, welchen Weg ein Tumor genommen hat, entscheidet darüber, welche Medikamente wirken.",
-  "confidence-interval": "Der Wertebereich, der mit den Studiendaten vereinbar ist, meist mit 95% angegeben. Eine Hazard Ratio von 0,70 mit einem Intervall von 0,55 bis 0,89 bedeutet, dass der wahre Effekt wahrscheinlich irgendwo in diesem Bereich liegt; würde der Bereich 1,0 einschließen, wäre das Ergebnis nicht signifikant.",
+
   "contact-03": "Die Fortführung der Immuntherapie nach ihrem Versagen, zusammen mit einer zielgerichteten Tablette, brachte nichts außer Nebenwirkungen. Der erste definitive Test der „IO-Rechallenge“ (erneuten Immuntherapie).",
   convert: "Beendete die Debatte über den Bestrahlungsplan bei der Erkrankung im begrenzten Stadium: Keiner der beiden Pläne war überlegen, daher bleiben 45 Gy zweimal täglich der Standard, und einmal täglich ist eine akzeptable Alternative.",
   "core-needle-biopsy": "Die Entnahme eines schmalen Gewebezylinders (Stanze) oder einiger Zellen (Feinnadelaspiration) über eine Nadel unter Ultraschall-, CT- oder MRT-Kontrolle, um den Krebs zu diagnostizieren und seine Marker ohne Operation zu testen.",
@@ -2789,7 +2789,7 @@ export const tldr_de: Record<string, string> = {
   "harry-de-koning": "Leitete die NELSON-Studie, die bestätigte, dass CT-Screening in Europa die Lungenkrebstodesfälle senkt, und die Screening-Politik prägte.",
   "hawaii-cancer-center": "Das einzige vom NCI benannte Zentrum im Pazifik, Mitbegründer der Multiethnic Cohort Study zum Krebsrisiko in asiatischen, pazifischen und anderen Bevölkerungsgruppen.",
   "haystack-oncology": "Haystack Oncology, heute im Besitz von Quest Diagnostics, stellt einen Bluttest her, der nach einer Krebsoperation nach winzigen Spuren von Tumor-DNA sucht, um zu erkennen, ob Krebs zurückgeblieben ist oder zurückkehrt.",
-  "hazard-ratio-basics": "Eine Hazard Ratio von 0,70 bedeutet, dass Patienten unter der neuen Behandlung zu jedem gegebenen Zeitpunkt ein um 30% geringeres Risiko für das Ereignis (Tod, Progression) hatten als die in der Vergleichsgruppe. Sie sagt nichts darüber aus, wie viele Monate das wert ist.",
+
   "head-neck-subsites": "Kopf-Hals-Krebs ist in Wirklichkeit eine Gruppe mehrerer Krebsarten, die nach ihrer genauen Lage benannt sind: Mund (Mundhöhle), hinterer Rachen (Oropharynx, wo HPV-Krebse entstehen), Kehlkopf (Larynx), unterer Rachen (Hypopharynx) und hinter der Nase (Nasopharynx). Jede verhält sich anders und wird anders behandelt.",
   "heinz-josef-lenz": "Kolorektalonkologe, der CheckMate 142 leitete und CheckMate 8HW mitleitete und damit Nivolumab plus Ipilimumab zur MSI-high-Erkrankung brachte.",
   "helio-genomics": "Helio Genomics verkauft HelioLiver, einen Bluttest, der DNA-Chemie, Proteinmarker und Patientendaten kombiniert, um Leberkrebs früher zu finden als die üblicherweise zur Überwachung eingesetzten Ultraschalluntersuchungen.",
@@ -4240,7 +4240,7 @@ export const tldr_de: Record<string, string> = {
   "ovarian-cancer-research-alliance": "Die Ovarian Cancer Research Alliance ist die größte US-Organisation für Eierstockkrebs, entstanden aus der Fusion von Forschungs- und Patientenhilfsorganisationen; sie finanziert Forschung und setzt sich für flächendeckende Gentests und Prävention durch Salpingektomie ein, da Screening nicht funktioniert.",
   "oyler-john": "John Oyler gründete 2010 in Peking BeiGene mit und machte es zum ersten in China entstandenen Biotech-Unternehmen, das globale Studien durchführte, FDA-Zulassungen erhielt und mit Zanubrutinib westliche Konkurrenten im Verkauf übertraf.",
   "p-cure": "P-Cure baut ein kompaktes Protonentherapiesystem, bei dem der Patient aufrecht in einem drehbaren Stuhl vor einem festen Strahl sitzt, sodass die Behandlung in einen gewöhnlichen Strahlentherapieraum passt statt in ein eigens errichtetes mehrstöckiges Gebäude.",
-  "p-value": "Die Wahrscheinlichkeit, einen mindestens so großen Unterschied zu sehen, wenn die Behandlung in Wirklichkeit gar nichts bewirkt hätte. Unter 0,05 (eine Chance von 1 zu 20) liegt die übliche Schwelle, ab der ein Ergebnis als 'statistisch signifikant' gilt. Er misst Überraschung, nicht Bedeutung.",
+
   pafolacianine: "Ein injizierter Farbstoff, der Eierstock- und Lungenkrebsherde während der Operation zum Leuchten bringt, damit Chirurgen Läsionen finden, die sie sonst übersehen würden.",
   "paige-prostate": "Die erste von der FDA zugelassene KI zum Auswerten von Biopsieschnitten, die Pathologen auf Prostatakrebs hinweist, den sie sonst übersehen könnten.",
   palifermin: "Palifermin (Kepivance) ist ein Wachstumsfaktor, der an drei Tagen vor und nach einer Hochdosis-Chemotherapie mit Stammzellrettung gespritzt wird, um die schweren Mundgeschwüre (Mukositis) zu verringern, die diese Behandlung bei Menschen mit Blutkrebs verursacht.",

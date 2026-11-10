@@ -14,7 +14,7 @@ const ICH_E9 = { label: "ICH E9 and E9(R1): statistical principles for clinical 
 const CONSORT = { label: "CONSORT statement: reporting randomised trials", url: "https://www.consort-statement.org/" };
 const FDA_GUIDANCE = "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/";
 type L = { label: string; url: string };
-type T = Omit<TermInput, "kind" | "asOf" | "links"> & { wikipedia?: string; links?: L[] };
+type T = Omit<TermInput, "kind" | "asOf" | "links"> & { asOf?: string; wikipedia?: string; links?: L[] };
 const t = (x: T): TermInput => {
   const links: L[] = [...(x.wikipedia ? [{ label: "Wikipedia", url: x.wikipedia }] : []), ...(x.links ?? [])];
   return { kind: "term", asOf, sections: ["drug-discovery"], ...x, links: links.length ? links : undefined };
@@ -206,12 +206,62 @@ export const trialDesignTerms: TermInput[] = [
     id: "kaplan-meier-curve", name: "Kaplan-Meier curve, censoring and proportional hazards", category: "Endpoints",
     aka: ["Kaplan-Meier curve", "Kaplan-Meier curves", "Kaplan–Meier curve", "KM curve", "KM curves", "KM plot", "Kaplan-Meier estimate", "Kaplan-Meier estimator", "Kaplan-Meier analysis", "Kaplan-Meier method", "censored", "censoring", "censor", "censored observations", "censored at last follow-up", "number at risk", "at-risk table", "log-rank test", "log-rank", "Cox model", "Cox regression", "proportional hazards assumption", "non-proportional hazards", "nonproportional hazards", "delayed separation", "delayed separation of the curves", "crossing curves", "the curves cross", "step function", "survival probability"],
     wikipedia: W("Kaplan-Meier_estimator"),
-    links: [ICH_E9],
+    links: [
+  {
+    "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+    "url": "https://www.ich.org/page/efficacy-guidelines"
+  },
+  {
+    "label": "NIST: Kaplan-Meier calculation",
+    "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr215.htm"
+  },
+  {
+    "label": "Analysis of survival by tumor response.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6668489/"
+  },
+  {
+    "label": "Introduction to the Analysis of Survival Data in the Presence of Competing Risks.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26858290/"
+  },
+  {
+    "label": "Royston and Parmar, 2013: restricted mean survival time and nonproportional hazards",
+    "url": "https://doi.org/10.1186/1471-2288-13-152"
+  },
+  {
+    "label": "OncoGuide: kaplan-meier (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/kaplan-meier.md"
+  },
+  {
+    "label": "Therneau, Crowson and Atkinson: multi-state models and competing risks (September 2026)",
+    "url": "https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf"
+  }
+],
     tldr: "A Kaplan-Meier curve shows the share of patients still alive (or still free of progression) at each point in time; it steps down at each event and uses everyone's follow-up even if they have not had the event yet.",
-    summary: "Survival endpoints are awkward because at the moment of analysis most patients have not died or progressed and have been followed for different lengths of time. The Kaplan-Meier method handles this by working through time step by step: at each event it multiplies the survival probability so far by the fraction of patients still at risk who survived that moment. Patients who are alive at their last visit are censored, meaning they contribute follow-up up to that point and then drop out of the calculation without being counted as an event. The result is the stepped curve in every trial paper, with a number-at-risk table underneath showing how many patients remain at each time; when that number gets small, the tail of the curve is unreliable however dramatic it looks. The median survival is where the curve crosses 50 percent, and a landmark such as five-year survival is read off at that time.\n\nThe log-rank test asks whether two curves differ over their whole length, and the Cox model summarises the difference as a hazard ratio. Both assume proportional hazards: that the relative risk between arms is roughly constant over time. Immunotherapy trials often break that assumption. In CheckMate 067 the curves for nivolumab with ipilimumab separate from ipilimumab alone and then flatten into a plateau, with about half of patients alive at ten years when melanoma-specific survival is counted; the hazard ratio compresses a shape like that into one number and understates what the plateau means for an individual. Delayed separation, where curves overlap for months before diverging, and crossing curves, where an early excess of harm gives way to a later benefit, both make the hazard ratio misleading, and analysts turn to the restricted mean survival time or to landmark comparisons instead.\n\nCensoring hides a trap. The method assumes patients censored at a given time are no more or less likely to have the event than those still being followed. If patients leave a trial because they are doing badly, or are censored when they start another therapy, the curve is biased upwards. Informative censoring is one reason progression-free survival read from investigator scans can flatter an open-label trial, and one reason the estimand framework asks trialists to say in advance how they will treat patients who switch, stop or are lost.",
-    related: ["os", "pfs", "hazard-ratio", "hazard-ratio-basics", "median-survival", "landmark-survival", "data-maturity", "estimand", "confidence-interval", "crossover"],
+    summary: "Survival endpoints are awkward because at the moment of analysis most patients have not died or progressed and have been followed for different lengths of time. The Kaplan-Meier method handles this by working through time step by step: at each event it multiplies the survival probability so far by the fraction of patients still at risk who survived that moment. Patients who are alive at their last visit are censored, meaning they contribute follow-up up to that point and then drop out of the calculation without being counted as an event. The result is the stepped curve in every trial paper, with a number-at-risk table underneath showing how many patients remain at each time; when that number gets small, the tail of the curve is unreliable however dramatic it looks. The median survival is where the curve crosses 50 percent, and a fixed-time estimate such as five-year survival is read off at that time.\n\nThe log-rank test compares survival distributions. The usual constant-effect Cox model assumes proportional hazards, meaning a constant hazard ratio over time. The Kaplan-Meier calculation itself does not impose a constant between-group hazard ratio. Nonproportional hazards can reduce the power of a log-rank comparison and make a single hazard ratio an incomplete account of treatment effect. A prespecified restricted mean survival-time contrast describes the difference in areas under the curves up to a stated horizon; a fixed-time survival contrast answers another question. Neither a late plateau nor a group hazard ratio predicts one individual's future.\n\nCensoring hides a trap. The method assumes patients censored at a given time are no more or less likely to have the event than those still being followed. If patients leave a trial because they are doing badly, or are censored when they start another therapy, the curve is biased upwards. Informative censoring is one reason progression-free survival read from investigator scans can flatter an open-label trial, and one reason the estimand framework asks trialists to say in advance how they will treat patients who switch, stop or are lost.",
+    related: [
+  "os",
+  "pfs",
+  "hazard-ratio",
+  "hazard-ratio-basics",
+  "median-survival",
+  "landmark-survival",
+  "data-maturity",
+  "estimand",
+  "confidence-interval",
+  "crossover",
+  "graph-reading"
+],
     trials: ["checkmate-067", "adaura", "pacific"],
-  }),
+
+"asOf": "2026-11-10",
+"notes": [
+  "A Kaplan-Meier curve estimates the probability of remaining free of a defined event from a stated starting time while accounting for incomplete follow-up. At each event time, the previous estimate is multiplied by the fraction of people still at risk just before that time who avoid the event. Right censoring means observation ended without the event being seen, for example at cutoff or loss to follow-up. It leaves the current height unchanged but removes that person from later risk sets. A censor tick is neither an event nor proof of permanent event freedom. Interpretation requires censoring to be sufficiently independent of future event time within the analysis; losing contact because disease is worsening can bias the estimate.",
+  "Five fictional participants start follow-up for first recurrence, with no deaths in this example. One recurrence at month 1 leaves 4/5, or 80%, recurrence-free. One person is censored at month 2, so the estimate remains 80% but only three are at risk before the next recurrence at month 3. The new estimate is (4/5) × (2/3) = 8/15, about 53.3%. Subtracting two observed recurrences from the original five would ignore the missing later observation. The censored person is known to have been recurrence-free only through month 2; the group estimate does not fill in that person's month-3 outcome. The example stops at month 3 and supplies no later outcome, confidence interval or individual prognosis.",
+  "A five-year curve height is an estimate from its stated origin. A landmark analysis instead selects people meeting a condition at a later time, such as being observed and event-free at month 6, then evaluates subsequent outcomes. It changes the population and clock and handles early events differently from the original trial comparison. Classifying people by a later response can also bias survival comparisons if timing is mishandled. Read the endpoint, origin, cutoff, censoring rules, confidence intervals and number-at-risk table together. At-risk counts are changing denominators, not new enrolment; a flat late tail may rest on very few people and does not establish cure. Median survival is when the curve reaches 50%; “not reached” means it did not reach that level during observed follow-up. Median follow-up describes observation time. Neither statement implies there were no events. Curve height is not a hazard ratio, and curve separation needs a suitable study design for a causal interpretation.",
+  "Treating deaths that occur before the recurrence of interest as censoring and calculating one minus Kaplan-Meier targets a different quantity from cumulative incidence and can overstate that real-world recurrence probability. Cumulative incidence addresses that competing-risk question. The nonparametric Aalen-Johansen estimator estimates state probabilities, including cumulative incidence as a competing-risk special case, under the relevant event, observation and censoring assumptions. Fine-Gray regression is a separate model for covariate effects on the subdistribution hazard. Austin and colleagues' 2016 tutorial supports the bias and hazard distinctions; Therneau, Crowson and Atkinson's September 2026 technical vignette separately supplies the Aalen-Johansen method name and its relationship to cumulative incidence. Neither estimator removes the need for an appropriate event definition and follow-up.",
+  "The Kaplan-Meier event-fraction calculation does not specify a constant between-group hazard ratio. In Royston and Parmar's 2013 simulations, log-rank significance levels remained close to their planned value under the studied proportional and nonproportional patterns, while power differed. That illustrates why a model assumption, a test's calibration and its power are separate questions; it is not proof that every survival analysis is valid."
+]
+}),
   t({
     id: "group-sequential-design", name: "Group sequential design, stopping rules and alpha spending", category: "Trials",
     aka: ["group sequential", "group sequential design", "group-sequential design", "group sequential trial", "stopping rule", "stopping rules", "stopping boundary", "stopping boundaries", "efficacy boundary", "efficacy stopping boundary", "crossed the efficacy boundary", "pre-specified efficacy boundary", "O'Brien-Fleming", "O'Brien-Fleming boundary", "Lan-DeMets", "alpha spending function", "alpha-spending function", "alpha spending", "alpha spent", "alpha allocated", "nominal significance level", "one-sided alpha", "stopped early for efficacy", "stopped early for benefit", "early stopping for benefit", "unblinded early", "overrunning", "truncated trial", "truncated trials", "overestimation from early stopping"],
@@ -226,12 +276,53 @@ export const trialDesignTerms: TermInput[] = [
     id: "absolute-benefit", name: "Absolute versus relative benefit (number needed to treat)", category: "Endpoints",
     aka: ["absolute benefit", "absolute risk reduction", "absolute risk", "absolute difference", "absolute gain", "percentage-point difference", "percentage points", "relative benefit", "relative risk reduction", "relative reduction", "number needed to treat", "NNT", "number needed to harm", "NNH", "one in every", "out of 100", "per 100 patients", "per 100 treated", "how many patients benefit", "baseline risk", "risk difference", "difference in medians", "months gained", "median gain"],
     wikipedia: W("Number_needed_to_treat"),
-    links: [CONSORT],
+    links: [
+  {
+    "label": "CONSORT statement: reporting randomised trials",
+    "url": "https://www.consort-statement.org/"
+  },
+  {
+    "label": "The number needed to treat: a clinically useful measure of treatment effect.",
+    "url": "https://doi.org/10.1136/bmj.310.6977.452"
+  },
+  {
+    "label": "Calculating the number needed to treat for trials where the outcome is time to an event.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1117211/"
+  },
+  {
+    "label": "Confidence intervals for the number needed to treat.",
+    "url": "https://doi.org/10.1136/bmj.317.7168.1309"
+  },
+  {
+    "label": "OncoGuide: absolute-relative-risk-and-nnt (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/absolute-relative-risk-and-nnt.md"
+  }
+],
     tldr: "A relative benefit says the risk fell by a third; an absolute benefit says how many people out of 100 were actually spared, which depends on how common the bad event was to begin with, and is the number that matters for deciding whether a treatment is worth its side effects.",
-    summary: "Trial results are usually headlined as relative effects: a hazard ratio of 0.72, a 28 percent reduction in the risk of recurrence. Relative effects travel well between populations and are what the statistics estimate directly, but they say nothing about how many people were helped. That requires the baseline risk. Cutting a risk of recurrence from 30 percent to 21 percent is a nine-percentage-point absolute reduction, and about eleven people must be treated for one of them to be spared a recurrence. Cutting a risk from 3 percent to 2.1 percent is the same relative reduction, a 0.9-point absolute reduction, and more than a hundred people must be treated to spare one. The side effects, cost and inconvenience fall on everyone treated, so the absolute benefit is the number to weigh them against.\n\nCHALLENGE illustrates the arithmetic in the corpus. Five-year disease-free survival was 80.3 percent with the exercise programme against 73.9 percent with health education, a hazard ratio of 0.72 and an absolute gain of about six percentage points, so roughly one in sixteen participants avoided a recurrence or death in that window. KEYNOTE-564 reported a disease-free survival hazard ratio of 0.72 as well; how many patients that helps depends on the recurrence risk of the population enrolled, which is why adjuvant trials restrict entry to higher-risk stages where the absolute benefit is worth a year of treatment. The Trials in plain words page on this site converts every trial result with structured outcomes into people out of 100 for exactly this reason.\n\nDifferences in medians are a third way of describing the same result and the easiest to misread. A median gain of two months means the middle patient in each arm differed by two months; it does not mean every patient gained two months, and when a survival curve has a long tail, as with immunotherapy, the median can understate the benefit to the minority who do very well. A trustworthy report gives the relative effect, the absolute difference at a stated time point, and the medians, and says which population they apply to.",
-    related: ["hazard-ratio", "hazard-ratio-basics", "confidence-interval", "median-survival", "landmark-survival", "kaplan-meier-curve", "os", "efs"],
+    summary: "Trial results are often headlined as relative effects: a treatment-versus-control hazard ratio of 0.72 describes a 28 percent lower hazard for the stated event under that model, rather than a 28 percent reduction in fixed-time recurrence risk. Carrying a relative effect to another population requires relevant assumptions and population fit; the ratio alone does not say how many people were helped. That requires the baseline risk. Cutting a risk of recurrence from 30 percent to 21 percent is a nine-percentage-point absolute reduction, and about eleven people must be treated for one of them to be spared a recurrence. Cutting a risk from 3 percent to 2.1 percent is the same relative reduction, a 0.9-point absolute reduction, and more than a hundred people must be treated to spare one. The side effects, cost and inconvenience fall on everyone treated, so the absolute benefit is the number to weigh them against.\n\nCHALLENGE illustrates the arithmetic in the corpus. Five-year disease-free survival was 80.3 percent with the exercise programme against 73.9 percent with health education, a hazard ratio of 0.72 and an absolute gain of about six percentage points, so roughly one in sixteen participants avoided a recurrence or death in that window. KEYNOTE-564 reported a disease-free survival hazard ratio of 0.72 as well; how many patients that helps depends on the recurrence risk of the population enrolled, which is why adjuvant trials restrict entry to higher-risk stages where the absolute benefit is worth a year of treatment. The Trials in plain words page on this site converts every trial result with structured outcomes into people out of 100 for exactly this reason.\n\nDifferences in medians are a third way of describing the same result and the easiest to misread. A median gain of two months means the middle patient in each arm differed by two months; it does not mean every patient gained two months, and when a survival curve has a long tail, as with immunotherapy, the median can understate the benefit to the minority who do very well. A trustworthy report gives the relative effect, the absolute difference at a stated time point, and the medians, and says which population they apply to.",
+    related: [
+  "hazard-ratio",
+  "hazard-ratio-basics",
+  "confidence-interval",
+  "median-survival",
+  "landmark-survival",
+  "kaplan-meier-curve",
+  "os",
+  "efs",
+  "cross-trial-comparison",
+  "denominators-and-conditional-probability"
+],
     trials: ["challenge", "keynote-564", "adaura"],
-  }),
+
+"asOf": "2026-11-10",
+"notes": [
+  "Absolute risk is the chance of a defined event by a stated time. For an undesirable event, absolute risk reduction is control risk minus treatment risk, the risk ratio is treatment risk divided by control risk, and relative risk reduction is one minus that ratio. When the absolute reduction is positive, number needed to treat is its reciprocal, using a fraction rather than a percentage. Risks are percentages, absolute differences are percentage points, ratios have no units, and number needed to treat refers to people over the specified horizon. The population, comparator, event direction and time must match. With incomplete follow-up, suitable time-specific estimates are needed; dividing recorded events by enrolment may answer a different question.",
+  "The sign carries the meaning. If a fictional adverse effect occurs in 6% of controls and 8% with treatment over one year, the absolute risk increase is 2 percentage points and the number needed to harm is 1/0.02 = 50 over that year. Calling it a benefit number needed to treat would reverse the result. A zero absolute difference has no finite reciprocal; a risk ratio is undefined if control risk is zero. For a desirable outcome, define improvement in the opposite direction before calculating.",
+  "Suppose a fictional comparison estimates first recurrence or death by five years at 20% with control and 14% with the new strategy. The absolute reduction is 6 percentage points, the risk ratio is 0.14/0.20 = 0.70, and the relative reduction is 30%. The five-year number needed to treat is 1/0.06, about 16.7, rounded up to 17. Thinking of two groups of 100 gives 20 versus 14 expected events, not paired observations showing which six people were helped. This is an average contrast between strategies; it does not mean every seventeenth person benefits. Harms require their own outcomes and calculations.",
+  "Uncertainty belongs beside the absolute difference. In a fictional five-year example, an absolute risk reduction interval of 2 to 10 percentage points transforms to a number-needed-to-treat interval of 10 to 50. If the risk-difference interval crosses zero, its reciprocal passes through infinity into regions representing benefit and harm. Showing the risk-difference interval may communicate that uncertainty more clearly than one apparently bounded interval for number needed to treat.",
+  "A one-third relative risk reduction could mean 3 events becoming 2 per 100, or 30 becoming 20. Baseline risk changes the absolute difference. A hazard ratio compares conditional rates rather than fixed-time risks, so its reciprocal is not number needed to treat and the ratio alone supplies no absolute risk reduction. Three-year and five-year estimates answer different questions. Avoiding an event by a date does not establish permanent cure, and a favourable number needed to treat does not combine toxicity, quality of life and benefit into one decision. All numbers here are fictional arithmetic examples, rather than clinical thresholds or predictions."
+]
+}),
   t({
     id: "estimand", name: "Estimands and intercurrent events (ICH E9(R1))", category: "Trials",
     aka: ["estimand", "estimands", "estimand framework", "ICH E9(R1)", "E9(R1)", "intercurrent event", "intercurrent events", "treatment policy strategy", "treatment policy estimand", "hypothetical strategy", "hypothetical estimand", "composite strategy", "while on treatment strategy", "principal stratum", "principal stratum strategy", "sensitivity analysis", "sensitivity analyses", "missing data", "missing data handling", "handling of missing data", "discontinued treatment", "treatment discontinuation", "rescue medication", "subsequent anticancer therapy", "what the trial is estimating"],
@@ -248,13 +339,82 @@ export const trialDesignTerms: TermInput[] = [
     id: "surrogate-validation", name: "Surrogate endpoint validation: which stand-ins have earned trust", category: "Endpoints",
     aka: ["surrogate validation", "validated surrogate endpoint", "validation of surrogate endpoints", "surrogate threshold effect", "trial-level correlation", "trial-level association", "patient-level correlation", "individual-level surrogacy", "meta-analytic validation", "meta-analysis of surrogacy", "reasonably likely surrogate", "reasonably likely to predict", "accepted surrogate", "surrogate for overall survival", "surrogate for OS", "does not correlate with survival", "did not translate into survival", "PFS-OS correlation", "pCR-EFS correlation", "MRD as an endpoint", "MRD negativity as endpoint", "stage shift without mortality benefit", "FDA table of surrogate endpoints"],
     wikipedia: W("Surrogate_endpoint"),
-    links: [{ label: "FDA table of surrogate endpoints that were the basis of drug approval or licensure", url: "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure" }, { label: "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics", url: FDA_GUIDANCE + "clinical-trial-endpoints-approval-cancer-drugs-and-biologics" }],
+    links: [
+  {
+    "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
+    "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
+  },
+  {
+    "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+  },
+  {
+    "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
+  },
+  {
+    "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+  },
+  {
+    "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
+  },
+  {
+    "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+  },
+  {
+    "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
+  },
+  {
+    "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
+    "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
+  },
+  {
+    "label": "DUO-O, Harter et al. 2026",
+    "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
+  },
+  {
+    "label": "BEAT-meso, Felip et al. 2025",
+    "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
+  },
+  {
+    "label": "ANNOUNCE, Tap et al. 2020",
+    "url": "https://doi.org/10.1001/jama.2020.1707"
+  },
+  {
+    "label": "ATLANTIS, Aix et al. 2023",
+    "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
+  },
+  {
+    "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
+  },
+  {
+    "label": "FDA approval summary: lurbinectedin, 2021",
+    "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
+  },
+  {
+    "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
+  }
+],
     tldr: "A surrogate endpoint only deserves trust if trials have shown that moving it moves the outcome that matters, in that disease and for that kind of drug; some stand-ins have passed that test, several have not, and the record differs endpoint by endpoint.",
-    summary: "Validating a surrogate means more than showing it predicts prognosis. A patient whose tumour responds usually lives longer than one whose tumour does not, but that is a patient-level correlation and it holds for almost any marker of a less aggressive cancer. What matters for using a surrogate in place of survival is trial-level surrogacy: across many randomised trials, does the size of the treatment effect on the surrogate predict the size of the treatment effect on survival or on how patients feel and function? That requires a meta-analysis of completed trials in a given disease and drug class, and the answer can be yes in one setting and no in the next. Regulators keep a public table of surrogates that have supported approvals and distinguish validated surrogates, which can support full approval, from those reasonably likely to predict benefit, which support accelerated approval with a confirmatory trial owed.\n\nThe corpus shows the range. Pathological complete response after neoadjuvant therapy is strongly prognostic for the individual, and KEYNOTE-522 converted a higher rate into a later event-free and overall survival benefit, but pooled analyses across breast cancer trials have found only a weak trial-level association, so pCR supports accelerated approval and not more. Progression-free survival is accepted in some settings and has repeatedly failed to predict survival in others: TROPION-Breast01 met its progression endpoint with a hazard ratio of 0.63 while overall survival was 1.01, CodeBreaK 200 delayed progression without lengthening life, and DUO-O and BEAT-meso are similar stories. Disease-free and event-free survival in the adjuvant setting have a stronger record, and monarchE, NATALEE and ADAURA rest on them, with ADAURA's survival benefit arriving later. Measurable residual disease in myeloma was accepted by an FDA advisory committee in 2024 as an endpoint for accelerated approval after a meta-analysis of trial-level correlation, and PERSEUS and CAPTIVATE show how it now drives treatment decisions inside trials. Objective response rate underpinned the accelerated approvals of olaratumab and lurbinectedin, and the confirmatory trials ANNOUNCE and ATLANTIS then failed to show a survival benefit. In screening, UKCTOCS found cancers earlier without reducing deaths, the clearest warning that a stage shift is not a life saved.\n\nThe practical reading rule is to ask three questions of any trial that wins on a surrogate: has this surrogate been validated at trial level for this disease and this class of drug, was survival at least not harmed, and is a confirmatory trial under way? The bottleneck page on trial design and the idea of an independent programme to validate surrogate endpoints take the question further.",
+    summary: "A marker can be associated with a later outcome without being validated as a substitute for it. For treatment-effect surrogacy, the question is whether changes caused by treatment in the proposed surrogate predict changes in the outcome of interest. Trial-level validation examines treatment effects across suitable randomised studies, with attention to disease, treatment class, endpoint and intended outcome. A patient-level association alone cannot establish that relationship.\n\nNamed examples require their own population, regimen and analysis. In the final TROPION-Breast01 analysis of previously treated hormone-receptor-positive, HER2-negative advanced breast cancer, overall survival was not statistically significantly improved (hazard ratio 1.01, 95% confidence interval 0.83 to 1.22); this does not establish exactly zero effect. Later antibody-drug-conjugate use was imbalanced between arms (12.3% with datopotamab deruxtecan and 24.0% with chemotherapy); the authors note that it may have affected the survival result. DUO-O met its progression-free-survival endpoints for a specified multi-drug strategy in newly diagnosed non-BRCA-mutated advanced ovarian cancer, while the reported overall-survival analysis was interim at 39% maturity. BEAT-meso tested adding atezolizumab to bevacizumab and chemotherapy in advanced pleural mesothelioma: progression-free survival improved, while its primary overall-survival comparison did not meet statistical significance. These are distinct comparisons, rather than interchangeable evidence that progression-free survival cannot matter.\n\nOlaratumab is not an example of approval resting on response rate alone. FDA's 2016 review described an uncertain survival estimate from a small randomised study as central to accelerated approval and did not regard its response-rate effect as clinically meaningful. ANNOUNCE subsequently did not confirm the survival benefit. Lurbinectedin's 2020 accelerated approval instead relied on response rate and duration of response. ATLANTIS tested lower-dose lurbinectedin combined with doxorubicin against chemotherapy in relapsed small-cell lung cancer; it did not demonstrate a statistically significant survival improvement. That result must retain its combination, dose and comparator rather than being described as a test of the approved monotherapy regimen.\n\nFor a trial that improves a surrogate, ask whether trial-level validation applies to this disease, treatment class and intended outcome. Read the clinical-outcome estimate and its uncertainty for benefit and harm compatible with the data, and check the status of any required confirmatory trial. A nonsignificant survival comparison alone establishes neither equivalence nor absence of harm.\n\nOther linked records include CodeBreaK 200, adjuvant trials, residual-disease trials and UKCTOCS screening. They remain related studies, rather than interchangeable validation of a surrogate. This account does not reassert their previously listed outcome or regulatory-validation claims, which require source-specific verification. The linked trial-design bottleneck and proposal for independent surrogate validation extend the methodological questions.",
     related: ["surrogate-endpoint", "pcr", "pfs", "os", "efs", "orr", "mrd", "recist", "accelerated-approval", "confirmatory-trial", "crossover", "trial-failure-modes"],
     trials: ["keynote-522", "tropion-breast01", "codebreak-200", "monarche", "natalee", "adaura", "perseus", "captivate", "announce", "atlantis", "ukctocs", "imvigor011"],
     bottlenecks: ["b-trial-design"],
-  }),
+
+"asOf": "2026-11-10",
+"notes": [
+  "A surrogate is a measured outcome used in place of a direct clinical-benefit outcome, with evidence needed for that substitution in the intended setting. Two relationships must be separated: people with a favourable marker may have better outcomes, while treatments that improve that marker may or may not improve the outcome. The first is a prognostic association; the second concerns agreement between treatment effects across suitable randomised comparisons. A treatment can change another pathway, later disease or toxicity as well as the marker. Validation is specific to disease, treatment context and intended outcome. An early measure is not automatically validated, and regulatory acceptance in one programme does not transfer to another. “Validated” and “reasonably likely to predict benefit” carry different evidence claims. Even a pathology or imaging response does not capture every benefit and harm.",
+  "Imagine twenty fictional people grouped by whether they achieved pathological complete response, with complete event follow-up to three years. A difference in events between those groups would describe an association after response was achieved, rather than preserve a randomised treatment comparison. Across six fictional randomised trials, a different analysis would compare each trial's treatment-related gain in response with its gain in three-year event-free survival, both in percentage points. Those are different units of evidence; neither constructed example is the CTNeoBC dataset. Similarly, a fictional trial increasing complete response from 40/100 to 55/100 establishes a 15-percentage-point response difference under its definition, with uncertainty still needed. Immature survival follow-up does not supply a proven survival gain.",
+  "Pathological complete response is assessed in the surgical specimen after neoadjuvant treatment, rather than a presurgical scan or biopsy. Retain the exact definition, such as ypT0/Tis ypN0 meaning no invasive disease in breast or nodes, and how missing surgery or specimens affect denominators. CTNeoBC pooled 11,955 people from 12 trials: achieving that response was associated with event-free-survival HR 0.48 and overall-survival HR 0.36; corresponding triple-negative subgroup estimates were 0.24 and 0.16. Yet trial-level R-squared was 0.03 for event-free survival (95% interval 0.00 to 0.25) and 0.24 for overall survival (0.00 to 0.70). Conforti and colleagues' analysis of 54 trials and 32,611 participants found R-squared 0.14 (95% interval 0.00 to 0.29) for disease-free and 0.08 (0.00 to 0.22) for overall survival. R-squared here is the share of variation in the treatment effects on survival that is explained by the treatment effects on pathological complete response; 1 would be a perfect fit. Thus response can be strongly associated with outcomes among participants while remaining a weak substitute for treatment effects across trials. This fitted association is not an individually validated risk prediction. These fitted associations concern variation in treatment effects across trials, with substantial uncertainty; they are not personal prognosis models.",
+  "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims."
+]
+}),
   t({
     id: "quality-adjusted-survival", name: "Quality-adjusted survival (QALYs and Q-TWiST)", category: "Endpoints",
     aka: ["quality-adjusted survival", "quality-adjusted life-years", "quality-adjusted life years gained", "QALYs gained", "Q-TWiST", "Q-TWiST analysis", "TWiST", "time without symptoms or toxicity", "time without symptoms of disease or toxicity", "quality-adjusted time", "utility weights", "utility values", "health state utility", "EQ-5D utility", "quality-adjusted progression-free survival", "quality-adjusted PFS", "net clinical benefit", "benefit-harm balance", "quality-adjusted survival analysis"],

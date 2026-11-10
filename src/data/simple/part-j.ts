@@ -261,10 +261,10 @@ export const simpleJ: Record<string, string> = {
   "blinding": "A blinded trial keeps patients, and often doctors too, from knowing who is on which treatment, so hopes and expectations cannot colour the results.",
   "endpoint": "An endpoint is the specific outcome a trial is designed to measure, fixed in advance, such as how long before the cancer grows.",
   "surrogate-endpoint": "A surrogate endpoint is a quicker, easier measurement standing in for what really matters, such as tumour shrinkage standing in for living longer.",
-  "hazard-ratio-basics": "A hazard ratio compares the risk of an event, such as progression, between two treatment groups at any moment, without saying how many months that is worth.",
+
   "median-survival": "Median survival is the time by which half the patients in a group have died, a midpoint of a wide spread rather than a prediction for anyone.",
-  "confidence-interval": "A confidence interval is the range of values consistent with a trial's data, and if the range includes no difference the result is not significant.",
-  "p-value": "A P-value is the chance of seeing a difference this large if the treatment did nothing, measuring surprise rather than how important the result is.",
+
+
   "dose": "Dose is how much of a drug is given, how often and for how long, and regulators now push for doses chosen for benefit rather than maximum tolerability.",
   "half-life": "Half-life is the time it takes for the amount of a drug in the blood to fall by half, which decides how often it must be given.",
   "toxicity-grade": "Toxicity grade is a 1 to 5 severity scale for side effects, from mild to fatal, with trials reporting how many patients had grade 3 or worse.",

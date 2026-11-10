@@ -397,7 +397,7 @@ export const tldr_pt: Record<string, string> = {
   pfs: "Quanto tempo os pacientes vivem sem que seu câncer cresça.",
   os: "Quanto tempo os pacientes vivem, ponto final. O desfecho padrão-ouro.",
   efs: "No câncer inicial: quanto tempo os pacientes permanecem livres de recorrência, progressão ou morte.",
-  "hazard-ratio": "Um número que compara a taxa de eventos ruins em dois grupos. 0,5 significa que o risco é reduzido à metade a qualquer momento.",
+
 
 
   ppv: "Se um teste diz 'câncer', a chance de estar certo.",
@@ -2691,7 +2691,7 @@ export const tldr_pt: Record<string, string> = {
   "cogent-biosciences": "A Cogent Biosciences fabrica o bezuclastinib, um comprimido que bloqueia uma proteína mutada chamada KIT. Ele está sendo testado em um tumor intestinal raro chamado GIST e na mastocitose sistêmica, uma doença de células imunes hiperativas.",
   colectomy: "Remover a parte do cólon que contém o câncer junto com seu suprimento sanguíneo e linfonodos, e depois unir as extremidades.",
   "colorectal-cancer-signalling": "Este mapa do KEGG traça a rota genética passo a passo do revestimento intestinal normal ao câncer colorretal: a perda de APC libera a via Wnt, a mutação de KRAS impulsiona o crescimento, e então a perda de TP53 e de TGF-beta/SMAD4 remove os últimos freios; ou, alternativamente, o reparo de erros de pareamento falha e as mutações se acumulam. Saber qual rota o tumor seguiu decide quais fármacos funcionam.",
-  "confidence-interval": "A faixa de valores compatível com os dados do ensaio, geralmente dada a 95%. Uma razão de risco de 0,70 com um intervalo de 0,55 a 0,89 significa que o efeito verdadeiro provavelmente está em algum ponto dessa faixa; se a faixa cruzasse 1,0, o resultado não seria significativo.",
+
   "contact-03": "Continuar a imunoterapia depois que ela falhou, junto com um comprimido dirigido, não acrescentou nada além de efeitos colaterais. O primeiro teste definitivo do 'IO rechallenge' (reintrodução da imunoterapia).",
   convert: "Encerrou o debate sobre o esquema de radioterapia na doença em estágio limitado: nenhum dos esquemas foi superior, então 45 Gy duas vezes ao dia continua sendo o padrão e uma vez ao dia é uma alternativa aceitável.",
   "core-needle-biopsy": "Retirar uma lasca de tecido (fragmento) ou algumas células (aspiração por agulha fina) por meio de uma agulha guiada por ultrassom, TC ou RM, para diagnosticar o câncer e testar seus marcadores sem cirurgia.",
@@ -2825,7 +2825,7 @@ export const tldr_pt: Record<string, string> = {
   "harry-de-koning": "Liderou o ensaio NELSON, que confirmou que o rastreamento por TC reduz as mortes por câncer de pulmão na Europa e moldou a política de rastreamento.",
   "hawaii-cancer-center": "O único centro designado pelo NCI no Pacífico, cofundador do Multiethnic Cohort Study sobre risco de câncer em populações asiáticas, das ilhas do Pacífico e outras.",
   "haystack-oncology": "A Haystack Oncology, agora pertencente à Quest Diagnostics, produz um exame de sangue que procura vestígios mínimos de DNA tumoral após a cirurgia do câncer para saber se restou algum câncer ou se ele está voltando.",
-  "hazard-ratio-basics": "Um hazard ratio de 0,70 significa que, em qualquer momento dado, os pacientes no novo tratamento tinham 30% menos risco do evento (morte, progressão) do que os do comparador. Não diz nada sobre quantos meses isso vale.",
+
   "head-neck-subsites": "O câncer de cabeça e pescoço é na verdade vários cânceres nomeados pela localização exata: boca (cavidade oral), fundo da garganta (orofaringe, onde surgem os cânceres por HPV), laringe, garganta inferior (hipofaringe) e atrás do nariz (nasofaringe). Cada um se comporta e é tratado de forma diferente.",
   "heinz-josef-lenz": "Oncologista colorretal que liderou o CheckMate 142 e coliderou o CheckMate 8HW, levando nivolumabe mais ipilimumabe à doença com MSI alta.",
   "helio-genomics": "A Helio Genomics vende o HelioLiver, um exame de sangue que combina química do DNA, marcadores proteicos e dados do paciente para encontrar o câncer de fígado mais cedo do que as ultrassonografias habitualmente usadas para vigilância.",
@@ -4251,7 +4251,7 @@ export const tldr_pt: Record<string, string> = {
   "ovarian-cancer-research-alliance": "A Ovarian Cancer Research Alliance é a maior organização de câncer de ovário dos EUA, nascida da fusão de entidades de pesquisa e de apoio a pacientes; financia pesquisas e faz campanha por testes genéticos universais e prevenção por salpingectomia, já que o rastreamento não funciona.",
   "oyler-john": "John Oyler cofundou a BeiGene em Pequim em 2010 e a transformou na primeira biotech nascida na China a conduzir ensaios globais, obter aprovações da FDA e superar as vendas dos rivais ocidentais com o zanubrutinibe.",
   "p-cure": "A P-Cure fabrica um sistema compacto de terapia com prótons em que o paciente fica sentado ereto em uma cadeira giratória diante de um feixe fixo, de modo que o tratamento cabe em uma sala comum de radioterapia em vez de um prédio de vários andares construído para esse fim.",
-  "p-value": "A probabilidade de ver uma diferença pelo menos deste tamanho se o tratamento na verdade não fizesse nada. Abaixo de 0,05 (uma chance de 1 em 20) é o limiar convencional para chamar um resultado de 'estatisticamente significativo'. Mede surpresa, não importância.",
+
   pafolacianine: "Um corante injetável que faz os focos de câncer de ovário e de pulmão brilharem durante a cirurgia, para que os cirurgiões encontrem lesões que de outra forma deixariam passar.",
   "paige-prostate": "A primeira IA para leitura de lâminas de biópsia autorizada pela FDA, que aponta aos patologistas cânceres de próstata que de outra forma poderiam passar despercebidos.",
   palifermin: "A palifermina (Kepivance) é um fator de crescimento injetado durante três dias antes e depois da quimioterapia em altas doses e do resgate com células-tronco, para reduzir as feridas graves na boca (mucosite) que esse tratamento causa em pessoas com cânceres do sangue.",

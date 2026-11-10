@@ -397,7 +397,7 @@ export const tldr_es: Record<string, string> = {
   pfs: "Cuánto tiempo viven los pacientes sin que su cáncer crezca.",
   os: "Cuánto tiempo viven los pacientes, sin más. El criterio de referencia.",
   efs: "En cáncer temprano: cuánto tiempo permanecen los pacientes libres de recaída, progresión o muerte.",
-  "hazard-ratio": "Un número que compara la tasa de eventos adversos en dos grupos. 0,5 significa que el riesgo se reduce a la mitad en cualquier momento.",
+
 
 
   ppv: "Si una prueba dice 'cáncer', la probabilidad de que tenga razón.",
@@ -2691,7 +2691,7 @@ export const tldr_es: Record<string, string> = {
   "cogent-biosciences": "Cogent Biosciences fabrica bezuclastinib, una pastilla que bloquea una proteína mutada llamada KIT. Se está probando en un tumor intestinal raro llamado GIST y en la mastocitosis sistémica, una enfermedad de células inmunitarias hiperactivas.",
   colectomy: "Extirpar la parte del colon que contiene el cáncer junto con su irrigación sanguínea y sus ganglios linfáticos, y después unir los extremos.",
   "colorectal-cancer-signalling": "Este mapa de KEGG traza la ruta genética paso a paso desde el revestimiento intestinal normal hasta el cáncer colorrectal: la pérdida de APC desata Wnt, la mutación de KRAS impulsa el crecimiento, y luego la pérdida de TP53 y de TGF-beta/SMAD4 elimina los últimos frenos; o bien falla la reparación de errores de emparejamiento y las mutaciones se acumulan. Saber qué ruta siguió un tumor decide qué fármacos funcionan.",
-  "confidence-interval": "El rango de valores compatible con los datos del ensayo, normalmente dado al 95%. Un cociente de riesgos de 0,70 con un intervalo de 0,55 a 0,89 significa que el efecto real probablemente está en algún punto de ese rango; si el rango cruzara 1,0 el resultado no sería significativo.",
+
   "contact-03": "Continuar la inmunoterapia después de que haya fracasado, junto con una pastilla dirigida, no añadió nada salvo efectos secundarios. La primera prueba definitiva de la 'reintroducción de la inmunoterapia' (IO rechallenge).",
   convert: "Zanjó el debate sobre el esquema de radioterapia en la enfermedad en estadio limitado: ninguno de los dos esquemas fue superior, por lo que 45 Gy dos veces al día sigue siendo el estándar y una vez al día es una alternativa aceptable.",
   "core-needle-biopsy": "Tomar una lámina de tejido (cilindro) o unas pocas células (punción-aspiración con aguja fina) a través de una aguja guiada por ecografía, TC o RM, para diagnosticar el cáncer y analizar sus marcadores sin cirugía.",
@@ -2825,7 +2825,7 @@ export const tldr_es: Record<string, string> = {
   "harry-de-koning": "Dirigió el ensayo NELSON, que confirmó que el cribado con TC reduce las muertes por cáncer de pulmón en Europa y dio forma a la política de cribado.",
   "hawaii-cancer-center": "El único centro designado por el NCI en el Pacífico, cofundador del Multiethnic Cohort Study sobre el riesgo de cáncer en poblaciones asiáticas, de las islas del Pacífico y otras.",
   "haystack-oncology": "Haystack Oncology, ahora propiedad de Quest Diagnostics, fabrica un análisis de sangre que busca rastros diminutos de ADN tumoral tras la cirugía del cáncer para saber si queda algún cáncer o si está volviendo.",
-  "hazard-ratio-basics": "Un hazard ratio de 0,70 significa que en cualquier momento dado los pacientes con el nuevo tratamiento tenían un 30% menos de riesgo del evento (muerte, progresión) que los del comparador. No dice nada sobre cuántos meses vale eso.",
+
   "head-neck-subsites": "El cáncer de cabeza y cuello es en realidad varios cánceres nombrados según su localización exacta: boca (cavidad oral), parte posterior de la garganta (orofaringe, donde surgen los cánceres por HPV), laringe, garganta inferior (hipofaringe) y detrás de la nariz (nasofaringe). Cada uno se comporta y se trata de forma distinta.",
   "heinz-josef-lenz": "Oncólogo colorrectal que dirigió CheckMate 142 y codirigió CheckMate 8HW, llevando nivolumab más ipilimumab a la enfermedad con MSI alta.",
   "helio-genomics": "Helio Genomics vende HelioLiver, un análisis de sangre que combina química del ADN, marcadores proteicos y datos del paciente para detectar el cáncer de hígado antes que las ecografías que se usan habitualmente para la vigilancia.",
@@ -4251,7 +4251,7 @@ export const tldr_es: Record<string, string> = {
   "ovarian-cancer-research-alliance": "La Ovarian Cancer Research Alliance es la mayor organización estadounidense dedicada al cáncer de ovario, nacida de la fusión de entidades benéficas de investigación y de apoyo a pacientes; financia investigación y hace campaña por las pruebas genéticas universales y la prevención mediante salpingectomía, dado que el cribado no funciona.",
   "oyler-john": "John Oyler cofundó BeiGene en Pekín en 2010 y la convirtió en la primera biotecnológica nacida en China en realizar ensayos globales, obtener aprobaciones de la FDA y superar en ventas a sus rivales occidentales con zanubrutinib.",
   "p-cure": "P-Cure fabrica un sistema compacto de terapia de protones en el que el paciente se sienta erguido en una silla giratoria frente a un haz fijo, de modo que el tratamiento cabe en una sala de radioterapia normal en lugar de un edificio de varias plantas construido a medida.",
-  "p-value": "La probabilidad de observar una diferencia al menos tan grande si el tratamiento en realidad no hiciera nada. Por debajo de 0.05 (una probabilidad de 1 entre 20) es el umbral convencional para llamar a un resultado 'estadísticamente significativo'. Mide la sorpresa, no la importancia.",
+
   pafolacianine: "Un colorante inyectado que hace brillar los depósitos de cáncer de ovario y de pulmón durante la cirugía, para que los cirujanos encuentren lesiones que de otro modo pasarían por alto.",
   "paige-prostate": "La primera inteligencia artificial para leer láminas de biopsia autorizada por la FDA, que señala a los patólogos cánceres de próstata que de otro modo podrían pasar por alto.",
   palifermin: "El palifermin (Kepivance) es un factor de crecimiento que se inyecta durante tres días antes y después de la quimioterapia a dosis altas y el rescate con células madre, para reducir las úlceras graves en la boca (mucositis) que este tratamiento causa en personas con cánceres de la sangre.",

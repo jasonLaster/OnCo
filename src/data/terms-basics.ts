@@ -1472,11 +1472,23 @@ export const termsBasics: TermInput[] = [
   t({
     id: "hazard-ratio-basics", name: "Reading a hazard ratio", category: CLINIC,
     aka: ["hazard ratios", "relative risk", "risk reduction", "relative risk reduction", "reduced the risk of", "lower risk of death", "risk of death or progression", "risk of progression or death", "relative risks"],
-    tldr: "A hazard ratio of 0.70 means that at any given moment patients on the new treatment had 30% less risk of the event (death, progression) than those on the comparison. It says nothing about how many months that is worth.",
-    summary: "The hazard ratio comes from a model that compares event rates across the entire follow-up period, not just at one time point; the confidence interval around it must exclude 1.0 for the difference to be considered statistically significant, and the closer to zero, the larger the effect. Because it is relative, the same hazard ratio can mean very different absolute gains: 0.70 might add one month to a median of three, or two years to a median of six, so it should always be read alongside the median difference and the survival curves. A hazard ratio also assumes the effect is roughly constant over time, which immunotherapy, with its delayed benefit and long tail, often violates.",
+    tldr: "A hazard ratio of 0.70 means that at any given moment the event rate among people still at risk in the treatment group is 30% lower than in the comparison group under the model. It says nothing about how many months that is worth.",
+    summary: "A hazard ratio compares instantaneous event rates among people who remain at risk. Its value alone does not specify absolute survival probabilities or a difference between median survival times. Read it with event counts, follow-up, survival curves and uncertainty. A proportional-hazards model treats the hazard ratio as constant over time; if it changes, one summary ratio can conceal that change. Comparing later at-risk groups also requires care because their membership can differ, even after initial randomisation.",
     wikipedia: W("Hazard_ratio"),
     related: ["hazard-ratio", "confidence-interval", "p-value", "median-survival", "os", "pfs", "endpoint", "absolute-benefit", "kaplan-meier-curve"],
-  }),
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "Cox: proportional-hazards model",
+    "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x"
+  },
+  {
+    "label": "Hernan: interpretation of hazard ratios",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20010207/"
+  }
+]
+}),
   t({
     id: "median-survival", name: "Median survival", category: CLINIC,
     aka: ["median overall survival", "median OS", "median PFS", "median progression-free survival", "median", "median follow-up", "median time to", "survival curve", "survival curves", "Kaplan-Meier", "Kaplan–Meier", "landmark analysis", "long tail"],
@@ -1488,19 +1500,84 @@ export const termsBasics: TermInput[] = [
   t({
     id: "confidence-interval", name: "Confidence interval", category: CLINIC,
     aka: ["confidence intervals", "95% CI", "95% confidence interval", "95%CI", "interval estimate", "margin of error"],
-    tldr: "The range of values consistent with the trial's data, usually given at 95%. A hazard ratio of 0.70 with an interval of 0.55 to 0.89 means the true effect probably lies somewhere in that range; if the range crossed 1.0 the result would not be statistically significant, and an upper end close to 1.0 signals a fragile result.",
-    summary: "Because a trial studies a sample rather than every patient in the world, its estimate carries uncertainty, and the confidence interval expresses it: a narrow interval comes from a large trial with more events, a wide one from a small trial. For a hazard ratio, an interval that excludes 1.0 corresponds to a p-value below 0.05; for a difference in months or percentage points, the interval must exclude zero. Reading the interval rather than just the point estimate shows how large or small the true benefit could plausibly be, and an interval whose upper end is close to 1.0 signals a fragile result even if it is technically significant.",
+    tldr: "A confidence interval shows an estimate's precision under a stated method. A 95% method covers the fixed true value in about 95% of repeated valid applications; it does not assign a 95% probability to the value lying in this particular interval.",
+    summary: "Because a trial studies a sample rather than every patient in the world, its estimate carries uncertainty, and the confidence interval expresses it: more information often narrows the interval, while the method, data structure and assumptions also matter. For a conventional matching two-sided 95% interval and test, a hazard-ratio interval that excludes 1.0 corresponds to a p-value below 0.05; for a difference in months or percentage points, the interval must exclude zero. Reading the interval rather than just the point estimate shows how large or small the true benefit could plausibly be, and limits close to no effect should be read with the whole interval, clinical question and assumptions. Their position alone does not quantify how the result would change under different data or analyses.",
     wikipedia: W("Confidence_interval"),
-    related: ["p-value", "hazard-ratio", "hazard-ratio-basics", "randomised-trial", "endpoint", "statistical-significance", "non-inferiority-margin", "absolute-benefit", "bayesian-trial-design", "sample-size-re-estimation"],
-  }),
+    related: [
+  "p-value",
+  "hazard-ratio",
+  "hazard-ratio-basics",
+  "randomised-trial",
+  "endpoint",
+  "statistical-significance",
+  "non-inferiority-margin",
+  "absolute-benefit",
+  "bayesian-trial-design",
+  "sample-size-re-estimation",
+  "odds-ratio",
+  "population-versus-individual-risk"
+],
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "NIST: confidence limits and repeated coverage",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+  },
+  {
+    "label": "Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4877414/"
+  },
+  {
+    "label": "Greenland et al., 2016: statistical tests and confidence-interval interpretation",
+    "url": "https://doi.org/10.1007/s10654-016-0149-3"
+  },
+  {
+    "label": "OncoGuide: confidence-interval (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/confidence-interval.md"
+  }
+],
+"notes": [
+  "A frequentist confidence interval describes estimation precision using a procedure with a stated coverage rate under its assumptions. Across repeated valid applications, a 95% procedure would include the fixed true parameter in 95% of its intervals. This does not assign a 95% probability to that parameter being inside one interval after it has been calculated, or describe a range containing 95% of patients. The result depends on the data structure, estimator, confidence level, model and calculation method, including adjustment, missing-data handling and multiplicity. More observations often improve precision but do not remove biased measurement, confounding or a wrong model.",
+  "The no-difference value is zero for differences and one for ratios. Including it does not prove equality. A fictional hazard ratio of 0.70 with an interval of 0.35 to 1.40 leaves substantial benefit and harm compatible with the analysis; 0.70 with an interval of 0.65 to 0.76 is more precise. Neither establishes personal benefit or applicability to another population. Likewise, a risk-difference interval of -8 to +10 percentage points does not establish equivalence. That requires justified, preferably prespecified lower and upper bounds and a suitable equivalence analysis; non-inferiority asks a separate question about one permitted-loss margin. Compare groups by estimating their difference directly, rather than judging whether two separate intervals overlap. Many unadjusted intervals also raise a multiplicity problem.",
+  "For a fictional binary outcome in 50 of 100 independent people, the normal-approximation standard error is sqrt(0.50 × 0.50/100) = 0.05. The approximate 95% interval is 0.50 ± 1.96 × 0.05, or 40.2% to 59.8%. With 5,000 of 10,000 people, the proportion stays 50% but the standard error becomes 0.005 and the interval 49.02% to 50.98%. Small counts, proportions near zero or one, clustering and incomplete outcomes may require other methods. A hand-picked set of ten such intervals, nine containing a fixed 50% truth and one missing it, illustrates coverage but does not measure a procedure's coverage rate. A 95% method need not cover in exactly 95% of a small set. Narrower bounds indicate greater sampling precision, not less bias.",
+  "A prediction interval addresses a future observation and includes additional variability. A Bayesian credible interval gives a probability interpretation conditional on the chosen model and prior. These are different constructions, not alternative names for a frequentist confidence interval."
+]
+}),
   t({
     id: "p-value", name: "P-value", category: CLINIC,
     aka: ["p-values", "p value", "p values", "p<0.05", "p < 0.05", "p<0.001", "p < 0.001", "significance level", "two-sided", "one-sided", "nominal p", "nominally significant", "did not reach statistical significance", "not statistically significant", "non-significant", "nonsignificant"],
-    tldr: "The probability of seeing a difference at least this large if the treatment actually did nothing. Below 0.05 (a 1 in 20 chance) is the conventional threshold for calling a result 'statistically significant'. It measures surprise, not the size of the benefit: a trivial gain in a huge trial can have a tiny p-value.",
-    summary: "A small p-value means the result would be unlikely under pure chance, but it does not measure how big or how clinically meaningful the effect is; a trivial benefit in a huge trial can have a tiny p-value while a large benefit in a small trial can miss significance. Trials with several endpoints or several interim looks must spend their 0.05 across them (hierarchical testing, alpha spending), which is why an endpoint can be 'nominally significant' yet not count formally. The confidence interval conveys the same information about significance while also showing the size of the effect, and is generally more useful.",
+    tldr: "The probability of a test statistic at least as extreme as observed, assuming the specified null model and all analysis assumptions. A value below 0.05 is conventionally called statistically significant. It does not give the probability that this finding is false or measure the size of a benefit.",
+    summary: "A small p-value means the result would be unlikely under the specified null model and analysis assumptions, but it does not measure how big or how clinically meaningful the effect is; a trivial benefit in a huge trial can have a tiny p-value while a large benefit in a small trial can miss significance. Trials with several endpoints or several interim looks must control their overall error allowance using the planned method (such as hierarchical testing or alpha spending), which is why an endpoint can be 'nominally significant' yet not count formally. The confidence interval conveys the same information about significance while also showing the size of the effect, and is generally more useful.",
     wikipedia: W("P-value"),
     related: ["confidence-interval", "hazard-ratio", "endpoint", "randomised-trial", "statistical-significance", "group-sequential-design", "bayesian-trial-design", "prespecified-vs-post-hoc"],
-  }),
+
+"asOf": "2026-11-10",
+"links": [
+  {
+    "label": "The ASA Statement on p -Values: Context, Process, and Purpose",
+    "url": "https://doi.org/10.1080/00031305.2016.1154108"
+  },
+  {
+    "label": "ASA: official statement principles (2016)",
+    "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+  },
+  {
+    "label": "FDA: multiple endpoints in clinical trials (2022)",
+    "url": "https://www.fda.gov/media/162416/download"
+  },
+  {
+    "label": "OncoGuide: p-values-and-multiple-testing (pinned teaching source)",
+    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/p-values-and-multiple-testing.md"
+  }
+],
+"notes": [
+  "A p-value is calculated for a specified null hypothesis and analysis. Assuming that null model and the other analysis assumptions are true, it is the probability of a test statistic at least as extreme as the one observed. A small value indicates poor fit to that model; it is not the probability that the hypothesis is true, that the result occurred “by chance”, or that the selected finding is false. In particular, p = 0.03 does not mean a 97% probability of benefit. Omics analyses may test thousands of genes or pathways, and reporting only the most striking result hides the search. A selected small value can generate a hypothesis without establishing a drug dependency or clinical benefit. Error control cannot repair biased measurement or an irrelevant comparison, and prespecification reduces analytical flexibility without guaranteeing a sound design.",
+  "With multiple hypotheses, the family-wise error rate is the probability of at least one false rejection in a defined family. The false discovery rate is the expected proportion of false rejections among the findings selected, conventionally zero when none are selected. They control different quantities. A confirmatory trial may allocate its error allowance across endpoints and interim analyses or use a prespecified testing sequence; exploratory analyses have a different role. Interpretation needs the complete family, hypotheses, test assumptions, one- or two-sided specification, order and chosen error-control method. Label raw and adjusted p-values and show effects and intervals beside them. Post hoc choices of outcomes, cutpoints or subgroups must remain visible.",
+  "Suppose twenty independent valid tests all have true null hypotheses and each has a 5% false-rejection probability. The chance of at least one false rejection is 1 - 0.95^20, about 64.2%. For one, five and twenty tests, this chance is about 5%, 22.6% and 64.2%, respectively. This fictional calculation concerns the whole search, not the truth probability of an individual finding. Bonferroni divides a family allowance of 0.05 by twenty, giving 0.0025 per test: p = 0.03 passes an unadjusted 0.05 threshold but fails this correction. Correlation changes the independent-tests calculation; Bonferroni control itself does not require independence when the individual tests are valid. Family definition and method choice still matter.",
+  "If fifty pathways were tested and one reported p = 0.04, a Bonferroni threshold for that family at 0.05 would be 0.05/50 = 0.001. The reported result fails that threshold; it does not prove the pathway has no biological role. The full results, planned method, effect estimate and uncertainty are needed. Missing a significance threshold can reflect low power and does not establish no effect. Conversely, a tiny p-value can accompany an effect too small to matter clinically. Equivalence and non-inferiority require their own justified margins and analyses. A diagnostic false-positive rate is a different quantity from a multiple-testing allowance. A Bayesian analysis can instead report posterior probabilities conditional on its specified model and prior. Those probabilities answer a different question from a p-value."
+]
+}),
 
   // =====================================================================================
   // Drugs, dosing, safety

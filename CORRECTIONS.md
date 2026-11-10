@@ -4,6 +4,15 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Effect measures and evidence interpretation
+
+- **Statistical interpretation:** corrected the lead-time superlative, the p-value probability gloss, an inverted absence-of-evidence sentence and unsupported hazard-ratio examples. Frequentist intervals, equivalence, non-inferiority, competing risks and survival clocks now retain their different questions and assumptions. Fictional calculations are labelled as such.
+- **Endpoint source scope:** STEEP 2.0's actual table distinguishes distant RFI from distant relapse-free survival. Aalen-Johansen is attributed to the reviewed technical vignette, separately from Austin's competing-risk tutorial. FDA endpoint guidance retains its December 2018, nonbinding scope. IDFS's existing check date is unchanged.
+- **Surrogate examples:** corrected the historical olaratumab approval rationale and scoped the named trial comparisons. The TROPION-Breast01 account includes later antibody-drug-conjugate use. Unchecked legacy CodeBreaK 200, adjuvant-endpoint, MRD and UKCTOCS assertions are deliberately withdrawn from the summary and retained as named source follow-ups; related-study links remain.
+- **Reader text and citations:** consolidated this batch's repeated notes while preserving published notes and unique source-backed teaching. Clinical benefit, assay signals, model outputs and personal predictions remain separate. DOI-cache additions record only individually resolved identifiers and preserve the broader cache date.
+
+Source versions, exact fields, independent review findings and remaining work are recorded in the [statistics checkpoint](research/education-coverage-2026-11-08/effect-reasoning-2026-11-10/README.md).
+
 ### Dose changes and CRS grading
 
 - **Dose modification:** removed unsourced class-wide dose-reduction and discontinuation ranges, a universal 85% dose-intensity claim, and an implication that lower targeted-drug doses are generally equivalent. The record now defines its reference and time basis, gives labelled fictional arithmetic, and scopes the Zhang observational and Goetz exploratory analyses to their populations. Eight stale short translations use current English fallback; the accurate simple definition is retained. Sources: [Alberto, 1995](https://pubmed.ncbi.nlm.nih.gov/7626852/), [Zhang et al., 2018](https://pubmed.ncbi.nlm.nih.gov/29368311/), [Goetz et al., 2024](https://doi.org/10.1038/s41523-024-00639-1).

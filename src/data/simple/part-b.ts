@@ -32,7 +32,7 @@ export const simpleB: Record<string, string> = {
   pfs: "How long patients live without their cancer growing.",
   os: "How long patients live. The most important measure.",
   efs: "In early cancer, how long patients stay free of the cancer coming back.",
-  "hazard-ratio": "A number comparing how often bad events happen in two groups. 0.5 means the risk is halved.",
+
 
 
   ppv: "If a test says 'cancer', the chance it is right.",

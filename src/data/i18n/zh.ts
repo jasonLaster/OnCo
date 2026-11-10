@@ -397,7 +397,7 @@ export const tldr_zh: Record<string, string> = {
   pfs: "患者在癌症不增长的情况下存活的时间。",
   os: "患者存活的时间，仅此而已。金标准终点。",
   efs: "在早期癌症中：患者保持无复发、无进展、无死亡的时间。",
-  "hazard-ratio": "比较两组不良事件发生率的数字。0.5意味着任一时刻风险减半。",
+
 
 
   ppv: "如果检测说“癌症”，它正确的概率。",
@@ -2691,7 +2691,7 @@ export const tldr_zh: Record<string, string> = {
   "cogent-biosciences": "Cogent Biosciences生产bezuclastinib，这是一种阻断名为KIT的突变蛋白的口服药。它正在一种名为GIST的罕见胃肠道肿瘤和系统性肥大细胞增多症（一种免疫细胞过度活跃的疾病）中进行试验。",
   colectomy: "切除含有癌症的那段结肠及其血供和淋巴结，然后将两端接合。",
   "colorectal-cancer-signalling": "这张KEGG图谱追踪了从正常肠壁到结直肠癌的逐步遗传路径：APC缺失释放Wnt，KRAS突变驱动生长，随后TP53和TGF-beta/SMAD4的缺失解除最后的制动；或者错配修复失效，突变不断累积。了解肿瘤走了哪条路径，决定了哪些药物有效。",
-  "confidence-interval": "与试验数据相符的取值范围，通常以95%给出。风险比为0.70、区间为0.55至0.89，意味着真实效应很可能落在该范围内的某处；如果该范围跨过1.0，结果就不具有显著性。",
+
   "contact-03": "在免疫治疗失败后继续使用它并联合一种靶向口服药，除了副作用之外没有带来任何获益。这是对“IO再挑战”的首次决定性检验。",
   convert: "解决了局限期疾病中放疗方案的争论：两种方案均不优于对方，因此每日两次的45 Gy仍是标准，每日一次是可接受的替代方案。",
   "core-needle-biopsy": "在超声、CT或MRI引导下，通过穿刺针取出一小条组织（芯）或少量细胞（细针抽吸），以便在不做手术的情况下诊断癌症并检测其标志物。",
@@ -2825,7 +2825,7 @@ export const tldr_zh: Record<string, string> = {
   "harry-de-koning": "领导了NELSON试验，该试验证实CT筛查可降低欧洲的肺癌死亡，并影响了筛查政策。",
   "hawaii-cancer-center": "太平洋地区唯一的NCI指定中心，也是研究亚裔、太平洋岛民及其他人群癌症风险的Multiethnic Cohort Study的共同发起者。",
   "haystack-oncology": "Haystack Oncology现归Quest Diagnostics所有，其血液检测在癌症手术后寻找微量肿瘤DNA，以判断是否有癌症残留或复发。",
-  "hazard-ratio-basics": "风险比为0.70意味着在任一给定时刻，接受新治疗的患者发生事件（死亡、进展）的风险比对照组低30%。它并不说明这相当于多少个月。",
+
   "head-neck-subsites": "头颈癌实际上是按确切位置命名的多种癌症：口腔、喉咽后部（口咽，HPV相关癌症发生于此）、喉、下咽以及鼻后方（鼻咽）。每种癌症的表现和治疗方式各不相同。",
   "heinz-josef-lenz": "结直肠肿瘤学家，领导了CheckMate 142并共同领导了CheckMate 8HW，将nivolumab联合ipilimumab带入MSI高表达疾病的治疗。",
   "helio-genomics": "Helio Genomics销售HelioLiver，这是一种结合DNA化学、蛋白标志物和患者信息的血液检测，能比通常用于监测的超声检查更早发现肝癌。",
@@ -4251,7 +4251,7 @@ export const tldr_zh: Record<string, string> = {
   "ovarian-cancer-research-alliance": "Ovarian Cancer Research Alliance是美国最大的卵巢癌组织，由研究类和患者支持类慈善机构合并而成；鉴于筛查无效，它资助研究并倡导普遍基因检测和通过输卵管切除术进行预防。",
   "oyler-john": "John Oyler于2010年在北京联合创立BeiGene，并将其打造成首家开展全球试验、获得FDA批准并凭zanubrutinib在销售上超越西方竞争对手的中国本土生物技术公司。",
   "p-cure": "P-Cure生产一种紧凑型质子治疗系统，患者直立坐在固定射束前的旋转椅上，因此治疗可以在普通放疗室内进行，而无需专门建造的多层建筑。",
-  "p-value": "如果治疗实际上毫无作用，观察到至少这么大差异的概率。低于0.05（即20分之1的几率）是把结果称为“统计学显著”的惯例阈值。它衡量的是意外程度，而不是重要性。",
+
   pafolacianine: "一种注射用染料，能让卵巢癌和肺癌病灶在手术中发光，帮助外科医生发现原本可能遗漏的病变。",
   "paige-prostate": "首个获FDA授权用于阅读活检切片的AI，它能提示病理医生注意原本可能漏诊的前列腺癌。",
   palifermin: "Palifermin（Kepivance）是一种生长因子，在大剂量化疗和干细胞救援前后各注射三天，用于减轻这种治疗在血液肿瘤患者中引起的严重口腔溃疡（黏膜炎）。",

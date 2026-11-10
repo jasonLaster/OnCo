@@ -7428,7 +7428,7 @@ export const tldr_zh: Record<string, string> = {
   "mdm2-inhibitors": "阻止MDM2摧毁p53的药物，在p53完整但被抑制的肿瘤（如部分肉瘤和白血病）中重新唤醒细胞的“守护者”蛋白。",
   "menin-inhibitors": "打断menin与KMT2A蛋白相互作用的口服药，KMT2A重排或NPM1突变的急性白血病依赖这一相互作用；revumenib于2024年成为首个获批药物。",
   "cns-tumour-methylation-classifier": "读取脑肿瘤DNA甲基化模式并与参考库匹配的检测，比单靠显微镜给出更可靠的诊断。",
-  "multiplex-immunofluorescence": "在一张肿瘤切片上用不同颜色染出多种蛋白，再用软件计数免疫细胞和癌细胞并测量它们的距离。",
+
   "nk-cell-engagers": "把自然杀伤细胞拉到肿瘤细胞旁并激活它的双特异性或三特异性抗体，是T细胞衔接器之外副作用可能更温和的替代方案。",
   "nk-cell-therapy": "输注来自供者或脐带血的自然杀伤细胞，有时装配CAR，提供比CAR-T细胞因子释放更少的现货型替代方案。",
   "oral-serds": "摧毁而非仅仅阻断雌激素受体的口服药，即使受体已发生突变以逃避老一代激素治疗仍然有效。",
@@ -7436,7 +7436,7 @@ export const tldr_zh: Record<string, string> = {
   "pi3k-akt-mtor-inhibitors": "针对癌症中最常突变的生长通路之一的药物，现与激素治疗联用于乳腺癌，也用于肾癌和神经内分泌肿瘤，共同的副作用是高血糖。",
   "radioligand-dosimetry": "根据每次给药后的扫描，测量放射性配体实际向肿瘤以及肾脏和骨髓递送了多少辐射，使治疗得以个体化。",
   radiomics: "把普通的CT、MRI和PET扫描转化为数百个形状和纹理的测量特征，由计算机把它们与肿瘤生物学和预后联系起来。",
-  "spatial-transcriptomics": "在保留组织空间结构的同时读取肿瘤切片中每个点或每个细胞开启了哪些基因的方法，使科学家能看到癌细胞、免疫细胞和基质细胞如何相邻排布。",
+
   "tigit-blockade": "针对TIGIT的抗体——T细胞和自然杀伤细胞上的一道“刹车”，与PD-L1药物联合测试；迄今最大的肺癌试验均告失败。",
   "tim3-blockade": "针对TIM-3的抗体——疲惫T细胞和髓系细胞上的检查点，主要与PD-1药物联合并在血液肿瘤中测试。",
   "trispecific-antibodies": "经改造可同时结合三个目标的抗体，例如一个肿瘤抗原、一个T细胞激活剂和一个共刺激信号，以产生更强或更具选择性的免疫攻击。",

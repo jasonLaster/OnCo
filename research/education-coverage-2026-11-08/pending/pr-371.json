@@ -1,6 +1,6 @@
 {
   "pr": 371,
-  "head": "ad5e1ab52b04fe001fe95653dff99a6c93b3a370",
+  "head": "b982113a4dbd3264c94db95aead8262c36c91db9",
   "newCount": 29,
   "modifiedCount": 5,
   "records": [
@@ -540,8 +540,8 @@
         "LoD versus LoQ"
       ],
       "tldr": "A test may detect that a signal is present before it can measure its amount reliably. Both limits need to be defined for the method and sample conditions.",
-      "summary": "A detection limit concerns the lowest amount that can be detected under stated conditions; a quantitation limit concerns an amount measurable with suitable accuracy and precision. These are analytical properties, distinct from the proportion of patients with a condition who test positive. Input, recovery, background, calling rules and acceptable error influence what a stated limit means. The FDA/ICH source supplies general analytical definitions for drug procedures, not certification of any particular clinical tumor-DNA assay.",
-      "asOf": "2026-11-08",
+      "summary": "A detection limit concerns the lowest amount that can be detected under stated conditions; a quantitation limit concerns an amount measurable with suitable accuracy and precision. These are analytical properties, distinct from the proportion of patients with a condition who test positive. Input, recovery, background, calling rules and acceptable error influence what a stated limit means. The FDA/ICH source supplies general analytical definitions for drug procedures, not certification of any particular clinical tumor-DNA assay. The ICH Q2(R2) glossary, as reproduced in FDA guidance, defines the detection limit as the lowest amount of an analyte that can be detected but not necessarily quantitated as an exact value, and the quantitation limit as the lowest amount that can be quantitatively determined with suitable precision and accuracy. It defines accuracy as closeness of agreement between an accepted reference value and the measured value, and precision as the closeness of agreement, or scatter, between a series of measurements of the same homogeneous sample, which is usually expressed as a variance, standard deviation or coefficient of variation. Mass spectrometry assay validation also considers the limit of the blank, the lower limit of quantification, linearity and parallelism (Carr and colleagues, 2014).",
+      "asOf": "2026-11-10",
       "links": [
         {
           "label": "FDA/ICH Q2(R2): analytical procedure validation, glossary",
@@ -1558,8 +1558,8 @@
         "validation of a biomarker test"
       ],
       "tldr": "Analytical validity concerns the measurement. Clinical validity concerns its relationship to a clinical condition or outcome, and clinical utility concerns the consequences of using it for a decision.",
-      "summary": "Repeatability or detection accuracy does not establish that a test predicts an outcome, and an outcome association does not establish benefit from acting on the result. These questions depend on the assay version, specimen, population and intended use. Clinical utility can be studied by comparing decision strategies: DYNAMIC randomized people with stage II colon cancer to ctDNA-guided or standard management and evaluated chemotherapy use and recurrence-free survival. That design illustrates evidence about a particular strategy; it does not validate every residual-disease test or treatment change. Prediction-model validation and a study of model-guided care also answer different questions.",
-      "asOf": "2026-11-08",
+      "summary": "Repeatability or detection accuracy does not establish that a test predicts an outcome, and an outcome association does not establish benefit from acting on the result. These questions depend on the assay version, specimen, population and intended use. Clinical utility can be studied by comparing decision strategies: DYNAMIC randomized people with stage II colon cancer to ctDNA-guided or standard management and evaluated chemotherapy use and recurrence-free survival. That design illustrates evidence about a particular strategy; it does not validate every residual-disease test or treatment change. Prediction-model validation and a study of model-guided care also answer different questions. MedlinePlus Genetics describes analytical validity as how well a test detects whether a specific genetic variant is present or absent, clinical validity as how well the variant relates to the presence, absence or risk of a disease, and clinical utility as whether the test provides helpful information about diagnosis, treatment, management or prevention. Laboratory certification under CLIA standards is designed to ensure analytical validity and does not address clinical validity or clinical utility. FDA guidance on circulating tumour DNA in curative-intent solid tumour drug development says analytical validation ensures that an assay measures the intended analytes in the intended tumour type and establishes its performance characteristics, and that pre-analytical factors such as sample collection, storage and handling should be controlled because they affect sensitivity and specificity. The same guidance says the evidence for clinical validity or clinical utility of ctDNA varies across malignancies and patient populations, and that a trial in which a minimal residual disease result guides de-escalation of treatment should be randomised. A prediction model is judged on overall fit, calibration and discrimination, so separating risk groups well does not by itself give accurate individual probabilities (Riley and colleagues, 2024); an outcome association also does not show who benefits from a treatment, which is a separate comparison of strategies.",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/Biomarker_(medicine)",
       "links": [
         {
@@ -1577,6 +1577,18 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Biomarker_(medicine)"
+        },
+        {
+          "label": "MedlinePlus Genetics: judging a valid and useful test",
+          "url": "https://medlineplus.gov/genetics/understanding/testing/validtest/"
+        },
+        {
+          "label": "FDA: Use of Circulating Tumor DNA for Curative-Intent Solid Tumor Drug Development (guidance)",
+          "url": "https://www.fda.gov/media/183874/download"
+        },
+        {
+          "label": "Riley et al., Evaluation of clinical prediction models (part 2): how to undertake an external validation study (BMJ 2024)",
+          "url": "https://doi.org/10.1136/bmj-2023-074820"
         }
       ],
       "tags": [
@@ -1611,6 +1623,11 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
+        "Reading guide (OnCo inference built on the definitions above): a test-guided strategy is the test, its result rule, the action taken and the care setting taken together, and its utility is judged against a defined alternative using outcomes and harms. Measurement evidence (repeat readings of a spiked target), meaning evidence (a result followed by a later outcome) and use evidence (the strategy compared with an alternative) are three separate questions, and an answer to one is not an answer to another.",
+        "Evidence table in words. Does it measure correctly? Inspect reference specimens, repeats, background, input range and failures; the tempting overread is that reliable measurement must predict benefit. Does the result mean something clinically? Inspect an appropriate population, endpoint, follow-up and independent validation; the tempting overread is that association means the proposed intervention works. Does acting on it help? Inspect a defined decision strategy against a comparator with meaningful outcomes and harms; the tempting overread is that a changed decision must be improved care.",
+        "Fictional worked example. A blood test detects a spiked target reproducibly, and in a separate cohort more recurrences follow positive calls. No study compares starting Drug A after a positive call with a specified alternative, so the utility of the Drug A strategy is unsupported: the first finding supports analytical performance and the second a scoped clinical association, and neither tests whether the action helps more than it harms.",
+        "Figure reading (fictional example, light and dark renders agree): three parallel panels ask whether the test measures (a spiked target and repeat readings), what its result is associated with (a result followed by a later outcome) and whether the strategy helps (positive result then Drug A against a defined alternative, with both outcome boxes unanswered and outcomes and harms not compared). The empty boxes mark the missing comparison; they are not a validation ladder or a treatment recommendation.",
+        "Lead time (an inference that applies the existing lead-time-bias record, which is framed for screening): a blood result that anticipates recurrence earlier lengthens how long a person knows about the disease even if the date of the outcome does not change, so benefit needs a comparison of outcomes with and without acting early, measured on the same clock.",
         "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/clinical-vs-analytical-validation."
       ],
       "provenance": {
@@ -1635,8 +1652,8 @@
         "generalizability"
       ],
       "tldr": "External validation evaluates a developed model in participant data that were not used to develop it. It shows how the model performs in that evaluation setting.",
-      "summary": "The original TRIPOD reporting framework distinguishes internal validation within development data from evaluation in other participant data. External studies can use a later time period, another institution or a different population; these test different degrees of transfer. The original model's predictions are compared with observed outcomes, with discrimination, calibration and uncertainty reported for the task. Internal validation remains evidence within its scope. An external evaluation does not guarantee performance in every setting or show that using the model improves patient outcomes.",
-      "asOf": "2026-11-08",
+      "summary": "The original TRIPOD reporting framework distinguishes internal validation within development data from evaluation in other participant data. External studies can use a later time period, another institution or a different population; these test different degrees of transfer. The original model's predictions are compared with observed outcomes, with discrimination, calibration and uncertainty reported for the task. Internal validation remains evidence within its scope. An external evaluation does not guarantee performance in every setting or show that using the model improves patient outcomes. Riley and colleagues define external validation as evaluating a model's predictive performance in a different but relevant dataset that was not used in its development, and advise examining overall fit, calibration and discrimination in the overall population and, ideally, in key subgroups. They separate reproducibility, where the validation data come from a similar population and setting and where internal methods such as cross-validation and bootstrapping also apply, from transportability, where the setting is intentionally different (BMJ 2024).",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/External_validity",
       "links": [
         {
@@ -1646,6 +1663,10 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/External_validity"
+        },
+        {
+          "label": "Riley et al., Evaluation of clinical prediction models (part 2): how to undertake an external validation study (BMJ 2024)",
+          "url": "https://doi.org/10.1136/bmj-2023-074820"
         }
       ],
       "tags": [

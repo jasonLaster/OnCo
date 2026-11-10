@@ -16,9 +16,63 @@ export const cansimMethodsTerms: TermInput[] = [
   // ---- Models and pretraining ----
   t({ id: "foundation-model", name: "Foundation model", category: M, aka: ["foundation model", "foundation models", "FM", "bulk-native foundation model", "single-cell foundation model", "large x model"],
     wikipedia: W("Foundation_model"), cansim: "/terms/foundation-model",
-    tldr: "A foundation model is a large model trained on a vast amount of data without a specific task in mind, then adapted to many downstream uses.",
-    summary: "In artificial intelligence a foundation model is a machine-learning model trained on vast datasets so that it can be applied across a wide range of use cases; large language models are the common example (Wikipedia). In oncology the term covers pathology encoders trained on millions of tiles (UNI, Virchow), single-cell models trained on tens of millions of cells (UCE, GeneCompass), bulk transcriptome models (BulkFormer) and genomic sequence models (Evo 2). A model pretrained on single cells is out of distribution for bulk tumour data, so bulk-native and single-cell-native are different claims.",
-    terms: ["self-supervised-pretraining", "fine-tuning-vs-frozen", "pathology-foundation-models"], technologies: ["pathology-foundation-model", "ai-compute-platforms"], related: ["idea-multimodal-foundation-model"] }),
+    tldr: "A foundation model learns reusable representations from broad data and can be adapted to different tasks. Its performance needs evaluation for each task and setting.",
+    summary: "A foundation model learns reusable representations during pretraining and can be adapted to different tasks. Geneformer was pretrained on about 30 million single-cell transcriptomes and scGPT on over 33 million cells, then adapted to downstream tasks (Theodoris and colleagues, 2023; Cui and colleagues, 2024). Pretraining and task-specific fitting are different stages, and zero-shot use (no further training), fine-tuning and a small predictor fitted on frozen features are different evaluation settings that should not be compared as if they used the same information. A zero-shot evaluation of Geneformer and scGPT found that in some cases they were outperformed by simpler methods; one evaluation dataset partly overlapped Geneformer's pretraining data and two were included in scGPT's, so overlap between pretraining and test data has to be checked, including whether the same participants or donors sit on both sides (the TRIPOD+AI reporting guidance asks that evaluation data share no participants with the data used to train, tune or select a model; Kedzierska and colleagues, 2025). A 2025 benchmark found that none of five single-cell foundation models and two other deep-learning models beat deliberately simple baselines at predicting transcriptome changes after single or double gene perturbations (Ahlmann-Eltze and colleagues, 2025). An embedding is a computed representation, not a measured function, and a published result belongs to its model version, task, data and adaptation method. Foundation model, generative model and virtual cell are overlapping but different ideas: an AI virtual cell is described as a multi-scale, multi-modal large neural network model (Bunne and colleagues, 2024, a perspective rather than a validation), and none of the labels shows that simulated interventions predict tumour killing or improve care. Failure modes worth recording are population or assay mismatch, leakage, technical shortcuts, unavailable input features and poor calibration.",
+    terms: [
+  "self-supervised-pretraining",
+  "fine-tuning-vs-frozen",
+  "pathology-foundation-models",
+  "zero-shot",
+  "transfer-learning",
+  "embedding",
+  "data-leakage",
+  "external-validation"
+], technologies: [
+  "pathology-foundation-model",
+  "ai-compute-platforms",
+  "geneformer",
+  "scgpt"
+], related: ["idea-multimodal-foundation-model"] ,
+"links": [
+  {
+    "label": "Theodoris et al., Transfer learning enables predictions in network biology (Nature 2023)",
+    "url": "https://doi.org/10.1038/s41586-023-06139-9"
+  },
+  {
+    "label": "Cui et al., scGPT: toward building a foundation model for single-cell multi-omics using generative AI (Nature Methods 2024)",
+    "url": "https://doi.org/10.1038/s41592-024-02201-0"
+  },
+  {
+    "label": "Kedzierska et al., Zero-shot evaluation reveals limitations of single-cell foundation models (Genome Biology 2025)",
+    "url": "https://doi.org/10.1186/s13059-025-03574-x"
+  },
+  {
+    "label": "Ahlmann-Eltze et al., Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines (Nature Methods 2025)",
+    "url": "https://doi.org/10.1038/s41592-025-02772-6"
+  },
+  {
+    "label": "Collins et al., TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods (BMJ 2024)",
+    "url": "https://doi.org/10.1136/bmj-2023-078378"
+  },
+  {
+    "label": "Bunne et al., How to build the virtual cell with artificial intelligence: Priorities and opportunities (Cell 2024)",
+    "url": "https://doi.org/10.1016/j.cell.2024.11.015"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Foundation_model"
+  }
+],
+"asOf": "2026-11-10",
+"provenance": {
+  "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts and selected full texts read",
+  "editedOn": "2026-11-09",
+  "note": "Added from Theodoris 2023 (PMID 37258680), Cui 2024 (PMID 38409223), Kedzierska 2025 (PMID 40251685, full text PMC12007350 read for the pretraining overlap) and Ahlmann-Eltze 2025 (PMID 40759747). The earlier CanSim terms-map text is unchanged: CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project."
+},
+"notes": [
+  "Model card for a biological foundation model (a reading guide, not a score). Input and cost: the data type, preparation and normalisation used; running a model uses computing resources and no new tissue, but the original assays that produced the data consumed specimens. Training and adaptation: the pretraining source and version, any overlap with later test data, and which parts were left fixed or fine-tuned. Output and units: embedding coordinates, labels or predicted molecular values, with the original units and transforms kept. Controls and thresholds: baselines that use the same information, independent evaluation, and a decision rule set before testing; there is no general passing size or score. Failure modes: population or assay mismatch, leakage, technical shortcuts, unavailable features and poor calibration. Validation tier: evidence for the stated task only, with no implied clinical authorisation or benefit."
+]
+}),
   t({ id: "self-supervised-pretraining", name: "Self-supervised pretraining (SSL)", category: M, aka: ["self-supervised pretraining", "self-supervised learning", "SSL pretraining", "label-free pretraining", "pretraining objective", "pretrained encoder"],
     wikipedia: W("Self-supervised_learning"), cansim: "/terms/self-supervised-pretraining",
     tldr: "Self-supervised pretraining teaches a model from unlabelled data by hiding part of each example and asking it to predict the hidden part, so no expert labels are needed.",
@@ -105,10 +159,52 @@ export const cansimMethodsTerms: TermInput[] = [
     summary: "SpaGCN, from Hu and colleagues, uses a graph convolutional network over spots linked by spatial proximity and histology to identify spatial domains and their marker genes. Simpler versions average each spot with its k nearest neighbours (Wikipedia on k-NN) before principal components and k-means clustering (Wikipedia), which reduces the sparsity of spatial counts and yields coherent regions at the cost of blurring boundaries. Moran's I then tests whether the resulting labels or risk scores are spatially structured.",
     terms: ["spatial-autocorrelation", "pca", "spatial-transcriptomics-platforms"], technologies: ["spatial-transcriptomics"] }),
   t({ id: "virtual-cell-models", name: "Virtual cell models and in-silico perturbation screens", category: M, aka: ["virtual cell", "virtual cell model", "virtual cells", "in-silico perturbation", "in silico perturbation", "in-silico knockout screen", "in silico knockout", "perturbation prediction", "Virtual Cell Challenge", "CZI Virtual Cells", "OCTO-vc", "Noetik OCTO-VirtualCell"],
-    wikipedia: W("Cellular_model"), links: [{ label: "Arc Institute Virtual Cell Challenge", url: "https://virtualcellchallenge.org/" }, { label: "CZ Biohub AI-supported Virtual Cells platform", url: "https://virtualcellmodels.cziscience.com/" }, { label: "Wikipedia: in silico", url: W("In_silico") }, { label: "Noetik", url: "https://www.noetik.ai/" }], cansim: "/terms/virtual-cell",
-    tldr: "A virtual cell is a computer model of a cell that predicts what happens when a gene is knocked out or a drug is added, letting researchers run perturbation experiments in software before the laboratory.",
-    summary: "A cellular model or virtual cell is a computational model of aspects of a biological cell for in silico research (Wikipedia). The Arc Institute's Virtual Cell Challenge scores models on predicting expression after unseen genetic perturbations, and the Chan Zuckerberg Biohub's Virtual Cells platform hosts models, data and benchmarks for the field. Noetik's OCTO-vc applies a masked-token spatial single-cell transformer to proprietary tumour data for the same purpose. Whether a model recovers known biology (the right pathway for a known drug) is the first test of any in-silico screen, and a screen that returns nothing for mutation-driven drugs is behaving correctly, not failing.",
-    terms: ["foundation-model", "mechanism-of-action-recovery", "single-cell-rna-seq"], related: ["noetik", "idea-data-open-cell-foundation-model"], technologies: ["crispr-screens"] }),
+    wikipedia: W("Cellular_model"), links: [
+  {
+    "label": "Arc Institute Virtual Cell Challenge",
+    "url": "https://virtualcellchallenge.org/"
+  },
+  {
+    "label": "CZ Biohub AI-supported Virtual Cells platform",
+    "url": "https://virtualcellmodels.cziscience.com/"
+  },
+  {
+    "label": "Wikipedia: in silico",
+    "url": "https://en.wikipedia.org/wiki/In_silico"
+  },
+  {
+    "label": "Noetik",
+    "url": "https://www.noetik.ai/"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cellular_model"
+  },
+  {
+    "label": "Lotfollahi et al., scGen predicts single-cell perturbation responses (Nature Methods 2019)",
+    "url": "https://doi.org/10.1038/s41592-019-0494-8"
+  },
+  {
+    "label": "Ahlmann-Eltze et al., Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines (Nature Methods 2025)",
+    "url": "https://doi.org/10.1038/s41592-025-02772-6"
+  },
+  {
+    "label": "Bunne et al., How to build the virtual cell with artificial intelligence: Priorities and opportunities (Cell 2024)",
+    "url": "https://doi.org/10.1016/j.cell.2024.11.015"
+  }
+], cansim: "/terms/virtual-cell",
+    tldr: "A virtual cell is a computer model of specified aspects of cells. A predicted response is a model output whose accuracy must be tested against independent measurements.",
+    summary: "A virtual cell is a computational model of specified aspects of cells. Its outputs and evaluation depend on the task, training data and model version. scGen combined variational autoencoders with latent-space vector arithmetic and was reported to model perturbation and infection responses across cell types, studies and species, having noted that generalisation to phenomena absent from training data had not previously been shown (Lotfollahi and colleagues, 2019). A 2025 benchmark found that none of five single-cell foundation models and two other deep-learning models predicted transcriptome changes after single or double gene perturbations better than deliberately simple baselines; for most genes the predictions of scGPT, UCE and scBERT did not vary across perturbations, and those of GEARS and scFoundation varied considerably less than the observed values (Ahlmann-Eltze and colleagues, 2025). An AI virtual cell is described as a multi-scale, multi-modal large neural network model in a perspective that sets priorities for accelerating discoveries and guiding experiments, not a validation (Bunne and colleagues, 2024).",
+    terms: ["foundation-model", "mechanism-of-action-recovery", "single-cell-rna-seq"], related: ["noetik", "idea-data-open-cell-foundation-model"], technologies: ["crispr-screens"] ,
+"notes": [
+  "Reading guide (OnCo inference). The task defines what an output means: filling a missing RNA value from an image, estimating a drug response and predicting a gene-disruption response are different tasks, and success at one does not validate another. A virtual perturbation changes a model input and calculates an output; it is not a performed experiment, and masking a gene value is not the same as removing the gene's function. Predicted RNA is not measured RNA, protein activity or patient benefit. Agreement summarised across all genes can conceal poor prediction of the few genes that changed, so compare against simple baselines on the genes that moved. An association learned from untreated tissue does not by itself identify a causal drug effect. Whether a model's output supports treatment selection needs separate intended-use clinical evidence, whereas prioritising experiments is a lesser claim.",
+  "Fictional worked example. A model accurately fills missing RNA values from images of familiar samples. That is measurement completion; it says nothing about a drug that was never tested. To claim a drug response, define the intervention and outcome, reserve independent measured experiments, and compare with baselines and the measured response.",
+  "Fictional worked example. A model learns RNA responses to interventions in one cell line and correctly predicts additional cells exposed to a familiar intervention. That did not test a never-tested intervention in breast tumour cells; a reserved set of measured interventions and compatible breast-cell data would support a closer evaluation.",
+  "Model card in words (a reading guide). Input and tissue cost: the measured data, preprocessing and missing inputs; computation uses data, while new data collection may consume tissue. Output: the predicted object with units, intervention, dose and time. Version and scope: model version, training population and intended task. Evaluation: what was held out, the baselines, error measures and external data. Failure modes: leakage, incompatible inputs, context shift or the wrong endpoint. Cannot establish alone: a performed perturbation, complete cell biology or better clinical outcomes.",
+  "Figure reading (fictional teaching scene, light and dark renders agree): panel 1 fills a missing observation, where images paired with RNA from a defined population train a model that outputs a computed RNA value for a held-out donor and is tested against the masked measured value; panel 2 trains on measured responses to familiar X and forecasts withheld Y, tested later against a reserved measured response; panel 3 says a new donor tests donor generalisation, a new intervention tests intervention transfer, and neither automatically tests a new cell type. Computed is not measured, and the population, task and version stay attached."
+],
+"asOf": "2026-11-10"
+}),
 
   // ---- Drug-response modelling ----
   t({ id: "drug-response-splits", wikipediaChecked: "2026-09-25", name: "Drug-response data splits: leave-cell-line-out, leave-drug-out, leave-tissue-out", category: M, aka: ["leave-cell-line-out", "LCO split", "leave-drug-out", "LDO split", "leave-tissue-out", "LTO split", "leave-pair-out", "random pair split", "cross-study validation"],
@@ -134,15 +230,58 @@ export const cansimMethodsTerms: TermInput[] = [
 
   // ---- Statistics and evaluation ----
   t({ id: "cross-validation", name: "Cross-validation and stratified k-fold", category: M, aka: ["cross-validation", "cross validation", "k-fold cross-validation", "5-fold cross-validation", "stratified k-fold", "stratified cross-validation", "nested cross-validation", "random seed"],
-    wikipedia: W("Cross-validation_(statistics)"), links: [{ label: "Wikipedia: stratified sampling", url: W("Stratified_sampling") }], cansim: "/terms/cross-validation",
-    tldr: "Cross-validation splits the data into k folds, trains on k minus one and tests on the last, rotating so every sample is tested once; stratified folds keep the class balance the same in each fold.",
-    summary: "Cross-validation is a family of model validation techniques for assessing how a statistical analysis will generalise to independent data, using resampling and sample splitting (Wikipedia); stratifying the folds (Wikipedia on stratified sampling) keeps rare classes represented. It estimates performance but is not a substitute for an external cohort, and every preprocessing step (scaling, PCA, feature selection) must be fitted inside the training fold or the estimate leaks. Reporting the seed makes the folds reproducible.",
-    terms: ["train-test-discipline", "data-leakage", "external-validation", "bootstrap"] }),
+    wikipedia: W("Cross-validation_(statistics)"), links: [
+  {
+    "label": "Wikipedia: stratified sampling",
+    "url": "https://en.wikipedia.org/wiki/Stratified_sampling"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cross-validation_(statistics)"
+  },
+  {
+    "label": "Collins et al., TRIPOD+AI statement (BMJ 2024)",
+    "url": "https://doi.org/10.1136/bmj-2023-078378"
+  }
+], cansim: "/terms/cross-validation",
+    tldr: "Cross-validation repeatedly fits a model on part of the data and evaluates it on reserved data. Choices made using those results still belong to model development.",
+    summary: "Cross-validation is a family of model validation techniques for assessing how a statistical analysis will generalise to independent data, using resampling and sample splitting (Wikipedia); stratifying the folds aims to preserve class proportions, subject to the available examples in each class. It estimates performance but is not a substitute for an external cohort, and every preprocessing step (scaling, PCA, feature selection) must be fitted inside the training fold or the estimate leaks. Reporting the seed makes the folds reproducible. If cross-validation is also used to choose settings, those choices belong to model development, so the same folds cannot also serve as the independent test; TRIPOD+AI defines internal validation (for example a train-test split or cross-validation) as evaluation within the population the model was developed on and asks that evaluation data stay distinct from data used for tuning.",
+    terms: ["train-test-discipline", "data-leakage", "external-validation", "bootstrap"] ,
+"asOf": "2026-11-10"
+}),
   t({ id: "train-test-discipline", name: "Train, validation and test split discipline", category: M, aka: ["train/validation/test split", "training set", "validation set", "test set", "held-out test set", "held-out test split", "80/20 split", "hold-out set"],
     wikipedia: W("Training,_validation,_and_test_data_sets"), cansim: "/terms/train-validation-test",
-    tldr: "Data is divided into a training set the model learns from, a validation set used to choose settings, and a test set touched once at the end; using the test set to make choices turns it into a second validation set.",
-    summary: "In machine learning the input data used to build a model is divided into a training set, a validation set for tuning and a test set for the final, unbiased evaluation (Wikipedia). The discipline is behavioural: the test set is looked at once, patients (not samples) are the unit of splitting so one patient's slides do not appear on both sides, and the split is decided before modelling. A held-out 80/20 split is the minimum; an external cohort from another institution is the real test.",
-    terms: ["cross-validation", "data-leakage", "external-validation", "pre-registered-experiment"] }),
+    tldr: "Training data fit a model, validation data guide choices, and reserved evaluation data test the locked version. The split must match the intended population and prediction task. Choices made using evaluation results make those data part of model development.",
+    summary: "Training data fit a model, validation data guide choices, and final evaluation data test the locked version. The split needs to match the intended claim; no single split proportion establishes validity. The TRIPOD+AI guidance defines evaluation data as data used to estimate model performance that are distinct from the data used to train the model, tune hyperparameters or select a model, with no overlap in participants (Collins and colleagues, 2024). It asks authors to describe the target population and intended purpose, and to define the outcome and its time horizon. Many cells or repeated wells from one donor are not many independent donors, so a new-donor test has to reserve whole donors across every fitting and tuning choice. Different holdouts answer different questions. In a 2025 benchmark, models were fitted on single perturbations plus 62 of 124 double perturbations and scored on the other 62 double perturbations, repeated over five random partitions, and the same study separately tested prediction of unseen single perturbations in CRISPR interference datasets (Ahlmann-Eltze and colleagues, 2025). Simple baselines, a no-change model and an additive model, were part of the comparison.",
+    terms: [
+  "cross-validation",
+  "data-leakage",
+  "external-validation",
+  "pre-registered-experiment",
+  "overfitting"
+] ,
+"notes": [
+  "Evaluation card in words (a reading guide). Input and cost: the data, their provenance and the independent units; computation adds no tissue, but generating reference assays or outcomes has its own cost. Output and units: a named error or discrimination metric, calibration where relevant, uncertainty, and subgroup and failure denominators. Rule and threshold: the version, preprocessing and decision cutoff fixed before final evaluation, with no universal passing cutoff. Failure modes: leakage, overlap, a mismatched outcome, selective missing data or a changed population. Validation tier: task-specific performance evidence, with regulatory status and helpful clinical use as separate questions.",
+  "Fictional worked example. A dataset holds cells from 20 donors, and each donor's cells are split between training and testing. Every one of the 20 donors was seen during fitting, so the result addresses a within-donor question and cannot establish performance on new donors; for that question whole donors must be reserved across fitting and tuning (for illustration 16 donors for development and 4 reserved, 16 + 4 = 20, with no recommended proportion).",
+  "Fictional worked example. Withholding more cells exposed to intervention X does not show that the response to intervention Y can be predicted. For an unseen-intervention claim, Y's measured response must be absent from fitting and tuning, and the donor, batch and intervention relationships must be kept visible.",
+  "Figure reading (fictional identities, light and dark renders agree): panel 1 keeps donors D1 and D2 on both sides, with new cells only; panel 2 fits on D1 and D2 and reserves D3 and D4, a new-donor question; panel 3 fits on use of intervention X and reserves the response to Y, which is absent from fitting and tuning. Donor and intervention splits ask different generalisation questions, and no panel claims performance."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets"
+  },
+  {
+    "label": "Collins et al., TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods (BMJ 2024)",
+    "url": "https://doi.org/10.1136/bmj-2023-078378"
+  },
+  {
+    "label": "Ahlmann-Eltze et al., Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines (Nature Methods 2025)",
+    "url": "https://doi.org/10.1038/s41592-025-02772-6"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "data-leakage", name: "Data leakage in model evaluation", category: M, aka: ["data leakage", "leakage", "train-test leakage", "cross-validation leakage", "leaky preprocessing", "fit on train fold only", "benchmark contamination", "test set contamination"],
     wikipedia: W("Leakage_(machine_learning)"), cansim: "/terms/cross-validation-leakage",
     tldr: "Leakage is when information from the test data reaches the model during training, through a scaler fitted on all samples, a patient split across folds or a benchmark that appeared in the pretraining set, making the model look better than it is.",

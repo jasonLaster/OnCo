@@ -182,7 +182,7 @@ export const simpleO: Record<string, string> = {
   "sarcoma-methylation-classifier": "The sarcoma methylation classifier reads a bone or soft tissue tumour's DNA methylation and assigns it to one of more than sixty classes when the microscope cannot decide.",
   "mri-field-strengths": "MRI scanners are sold by magnet strength, with 1.5 tesla the reliable workhorse, 3 tesla giving more signal for prostate, brain and breast scans, and 7 tesla for research.",
   "mrna-lnp-manufacturing": "An mRNA cancer vaccine is made without cells by copying a DNA template into RNA in a tank and wrapping it in tiny fat bubbles, done once per patient for personalised vaccines.",
-  "multiplex-immunofluorescence": "Multiplex immunofluorescence stains one tumour slide for several proteins in different colours, then software counts immune and cancer cells and measures how close they are.",
+
   "multitarget-stool-rna-test": "ColoSense is a home stool test that reads RNA shed by the bowel lining together with a blood test, approved in the US in 2024 for average-risk screening from age 45.",
   "nk-cell-engagers": "NK cell engagers are antibodies that hold a natural killer cell against a tumour cell and switch it on, an alternative to T-cell engagers with possibly milder side effects.",
   "oncology-information-systems": "Oncology information systems hold a radiotherapy patient's plan, check that machine settings match it before every beam and record every dose given.",
@@ -207,7 +207,7 @@ export const simpleO: Record<string, string> = {
   "ring-gantry-linac": "Ring-gantry linacs are radiotherapy machines built like a CT scanner, with the accelerator spinning inside an enclosed ring, and Ethos redraws the plan to each day's anatomy.",
   "serum-tumour-markers": "Serum tumour markers are the classic cancer blood tests, excellent for following a known cancer but useless as general screening because common benign conditions raise them too.",
   "single-use-bioprocessing": "Modern biologics plants grow cells in giant sterile plastic bags instead of steel tanks, which makes plants faster to build but ties the industry to a few bag and filter makers.",
-  "spatial-transcriptomics": "Spatial transcriptomics reads which genes are switched on in each spot or cell of a tumour slice while keeping the tissue's geography, showing how cancer and immune cells sit together.",
+
   "spect-ct": "SPECT/CT is a gamma camera with a CT scanner bolted on, so a hot spot on a bone scan is pinned to the exact bone or lymph node.",
   "sabr-oligometastases": "Stereotactic ablative radiotherapy treats every visible metastasis with high doses when there are only a few, on the idea that some patients with limited spread can still be cured.",
   "radiosurgery-srs": "Stereotactic radiosurgery aims a single very high dose, or a few doses, at a small brain or spine target with millimetre precision, replacing whole-brain radiotherapy for most brain metastases.",

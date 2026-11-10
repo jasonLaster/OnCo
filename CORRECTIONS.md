@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Spatial methods and model evaluation
+
+- **Model evaluation:** a held-out 80/20 split is no longer described as a universal minimum. Internal, external, donor and intervention holdouts answer different questions, and choices made using evaluation results become part of development. Sources include [TRIPOD+AI](https://doi.org/10.1136/bmj-2023-078378) and the [single-cell perturbation benchmark](https://doi.org/10.1038/s41592-025-02772-6).
+- **Protein measurements:** mass spectrometry does not measure every protein or directly establish cellular function, and it is not an exclusive route to phosphorylation information. Protein-derived peptides, phosphosite signals, model estimates, cell assignments and functional effects retain their own scopes. Sources include the [protein-inference methods paper](https://doi.org/10.1021/pr401072g) and the [breast proteogenomic study](https://doi.org/10.1038/nature18003).
+- **Predictions and assays:** unqualified transfer and clinical-response claims are removed from inherited lead paragraphs. A virtual-cell model returning no response to a mutation-driven drug is not guaranteed to be correct. The [IC50-to-Ki methods paper](https://doi.org/10.1093/nar/gkp253) supports the assay-condition distinction; an unverified FFPE immunopeptidomics adaptation is explicitly withheld. Existing notes carry the worked examples and reading guides, and four stale short summaries use current English fallback without a new language-review claim.
+
+
 ### Repair, signalling and what the assays establish
 
 - **MYC citation:** the inherited link labelled OMO-103 resolved to a glioma CAR-T trial. The DOI is corrected to the independently resolved [Garralda phase 1 OMO-103 study](https://doi.org/10.1038/s41591-024-02805-1), already represented by the existing paper owner. No clinical benefit is inferred from MYC abundance.

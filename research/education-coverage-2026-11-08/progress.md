@@ -1,43 +1,42 @@
 # Audit progress
 
-The goal is active. Independent source versions overlap and are never added. Worker output receives credit only after coordinator field, source and integration checks.
+The goal remains active. Source inventories and draft owner counts overlap and are never added. Worker output receives coverage only after coordinator evidence and integration checks.
 
 | Measure | Current checkpoint |
 | --- | ---: |
-| Original assessed teaching sources | 167 |
-| Original routing-only navigation files classified | 7 |
-| Original assessed/classified files / denominator | 174 / 537 |
-| Original sources fully draft represented / residual | 163 / 4 |
-| Original ordinary content unread | 363 |
-| Original requirements / evidenced / open | 752 / 745 / 7 |
-| Later assessed teaching sources / denominator | 159 / 550 |
-| Later requirements / evidenced / open | 736 / 736 / 0 |
-| Later ordinary unread / navigation unclassified | 386 / 5 |
-| Canonical owners in draft #375 | 262 (69 new / 193 existing) |
-| Canonical owners in draft #369 | 65 (34 new / 31 existing) |
-| Canonical owners in draft #373 | 45 (36 new / 9 existing) |
-| Summary consumers / present / English fallback | 1116 / 330 / 786 |
+| Original assessed teaching sources | 184 |
+| Original routing-only files classified | 7 |
+| Original assessed/classified / denominator | 191 / 537 |
+| Original fully draft represented / residual | 180 / 4 |
+| Original ordinary sources unread | 346 |
+| Original requirements / evidenced / open | 925 / 918 / 7 |
+| Later assessed and draft represented / denominator | 176 / 550 |
+| Later requirements / evidenced / open | 909 / 909 / 0 |
+| Later ordinary unread / navigation unclassified | 369 / 5 |
+| Draft #375 owners | 272 (71 new / 201 existing) |
+| Draft #373 owners | 45 (36 new / 9 existing) |
+| Draft #371 owners | 34 (29 new / 5 existing) |
+| Draft #369 owners | 65 (34 new / 31 existing) |
+| Distinct summary consumers / present / fallback | 1296 / 341 / 955 |
 | Non-graph directory consumers | 1 |
-| Assets per ref / teaching reviewed / unclassified | 1888 / 116 / 1772 |
-| Adjacent findings / represented / open | 33 / 23 / 10 |
-| Literature occurrences / screened / unread | 633 / 523 / 110 |
+| Assets per ref / teaching reviewed / unclassified | 1888 / 146 / 1742 |
+| Adjacent findings / represented / open | 39 / 23 / 16 |
+| Literature occurrences / screened / unread | 688 / 578 / 110 |
 | Schema findings / implemented pending approval / design | 6 / 5 / 1 |
 | Fully covered sources on pinned main | 0 |
 | Clean complete final re-audits | 0 |
 
-The original census has **174/537 files assessed or classified**: 167 teaching sources plus 7 routing-only files. Of 752 assessed requirements, 745 have exact draft evidence and 7 remain open. Complete draft representation covers 163 sources; 4 retain residual requirements and 363 ordinary content sources remain unread.
+The original census has **191/537 files assessed or classified**: 184 teaching sources and 7 routing-only files. Of 925 assessed requirements, 918 have exact draft evidence and 7 remain open. Complete draft representation covers 180 sources; 4 retain residual requirements. Another 346 ordinary sources are unread.
 
-The later inventory independently has **159/550 teaching sources assessed and draft represented**, with all 736 assessed requirements evidenced. It retains 386 ordinary unread sources and 5 unclassified navigation sources. Counts overlap and are never added. Each ref retains 1,888 assets: 116 teaching paths are reviewed and 1772 remain unclassified.
+The later census independently has **176/550 teaching sources assessed and draft represented**, with 909/909 assessed requirements evidenced. It retains 369 ordinary unread sources and 5 unclassified navigation sources. These inventories overlap and are never added. Each ref retains 1,888 assets: 146 teaching paths are reviewed and 1742 remain unclassified.
 
-Draft [#375](https://github.com/judegomila/OnCo/pull/375) covers 262 canonical owners (69 new and 193 existing), plus one directory consumer. Across #375, #373 and #369, 1116 distinct summary-consumer entries are snapshotted: 330 contain text and 786 use English fallback. Consumer entries are not graph records or named language reviews.
+The [spatial and computational checkpoint](spatial-computational-2026-11-10/README.md) adds seventeen assessed lessons at each ref, with 173 semantic requirements, 374 section signatures and 215 exact passages verified in actual readers and Markdown. Twenty owners are changed across drafts [#375](https://github.com/judegomila/OnCo/pull/375), [#373](https://github.com/judegomila/OnCo/pull/373) and [#371](https://github.com/judegomila/OnCo/pull/371). Only overfitting and multi-omic integration are new subjects. Existing notes carry the reading guides, cards and worked examples; this batch adds no schema dependency. Thirty individual light/dark figures and 55 publication occurrences retain their actual source roles and reading depths.
 
-The [repair/signalling checkpoint](repair-signaling-2026-11-10/README.md) adds sixteen assessed lessons per ref and supplements seventeen existing owners. All 388 sections reproduce. The 128 assessment rows retain 125 applicable versioned proofs: 61 original and 64 later requirements. Three later-only additions earn no original-version credit. No new canonical identities are created. KEAP1 uses the established handwritten-target precedence rule, preserving generated catalogue fields and its lung supplement. The schema draft receives the same RAS narrative while retaining distinct nodes/edges and pending approval.
+The IC50 endpoint distinction now has readable primary methods support. The FFPE adaptation assertion remains explicitly unverified. Inherited universal split rules, all-protein claims, exclusive phosphosite-route claims and virtual-cell intervention guarantees are corrected. All three standalone gate chains pass. Twenty-two selected JSON outputs, 215 rendered and Markdown passages and 198 summary selectors are checked. No new Next production build, browser hydration, hosted review, expert sign-off, named language review, merge or deployment is asserted.
 
-The checkpoint corrects a misidentified inherited OMO-103 link, separates repair history from current function and benefit, and restores the source-scoped FLT3 relationship explanation. All 30 light/dark figure paths are reviewed with lesson context. All 67 selected body and actual Markdown passages pass, and 18 selected JSON records match their owning graphs. All 162 selected short-summary selectors use corrected English fallback; 153 are distinct new audit entries. Full standalone suites pass. No new named language review, Next production build, hosted review, expert sign-off, merge or deployment is asserted.
+Draft #375 now covers 272 canonical owners (71 new and 201 existing), plus one directory consumer. Across the recorded drafts, 1296 distinct summary-consumer entries are snapshotted: 341 contain existing text and 955 use English fallback. These entries are neither graph records nor language reviews. Per-draft owner counts overlap and are not added.
 
-Shared state has 33 adjacent findings (23 represented, 10 open), 633 literature occurrences (523 screened, 110 unreviewed) and six open schema findings (five implemented contracts awaiting product review, one requiring design). Occurrences are not independent studies. New adjacent work covers the HRD-testing owner, other checkpoint-dependence definitions and dated clinical landscape claims.
-
-The earlier [RNA](rna-delivery-2026-11-10/README.md), [cell-death](death-metabolism-2026-11-09/README.md), [antigen/antibody](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints retain their records, source versions and residual work. Main coverage and clean complete final re-audits remain zero. The goal remains active.
+Shared state has 39 adjacent findings (23 represented and 16 open), 688 literature occurrences (578 screened and 110 unreviewed), and six open schema findings (five implemented contracts awaiting product review and one requiring design). Occurrences are not independent studies. Earlier [repair/signalling](repair-signaling-2026-11-10/README.md), [RNA](rna-delivery-2026-11-10/README.md), [cell-death](death-metabolism-2026-11-09/README.md), [antigen/antibody](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints are preserved. Main coverage and clean final re-audits remain zero. The goal is active.
 
 ## Historical checkpoint notes
 

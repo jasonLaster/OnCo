@@ -12,12 +12,12 @@
     },
     {
       "pr": 371,
-      "head": "ad5e1ab52b04fe001fe95653dff99a6c93b3a370",
+      "head": "b982113a4dbd3264c94db95aead8262c36c91db9",
       "state": "open draft; not merged"
     },
     {
       "pr": 373,
-      "head": "961a6994e776d2cf426d0605c14898c9269dbab8",
+      "head": "0ead93edcaf4c3ab6ff52327c83f37d26d526ba9",
       "state": "open draft; not merged"
     }
   ],
@@ -116,6 +116,16 @@
       "version": "proposal-repair-summary-consumers",
       "state": "153 additional actual short-summary selectors use the corrected English fallback. Nine matching RAS selectors were also checked in the schema draft without counting those pairs twice. No new named language review.",
       "recordSnapshotSha256": "86c5c99b500d8db0b7e07f76a52a715706f629e9be8a44d0a0659b3d7ed6fbe3"
+    },
+    {
+      "version": "proposal-spatial-computational",
+      "state": "Ten canonical owners integrated in draft375: two new subjects and eight existing owners. Seven further owners are supplemented in draft373 and three in draft371, with no competing records created. No merge or deployment.",
+      "recordSnapshotSha256": "490488318e2265cccc29b486ef06e9cbf803d3e6388f65c5549a893ccc0c5f6a"
+    },
+    {
+      "version": "proposal-spatial-summary-consumers",
+      "state": "180 additional distinct actual short-summary selectors across the 20 supplemented or new owners: 11 existing entries and 169 English fallbacks. Two unchanged supporting owners were additionally checked without adding their 18 selectors to this denominator. No new named language review.",
+      "recordSnapshotSha256": "a3d1d3a350b755af0243d6fbca0bf8a0de0f3e57c1fdaddd736a9ce41be7899b"
     }
   ],
   "sourcePhases": [
@@ -125,7 +135,7 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (391 sources)"
+        "Source phase remains open: guide-c9689645 (374 sources)"
       ]
     }
   ],
@@ -133,18 +143,18 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 116,
+      "teachingAssets": 146,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1772,
-      "unresolvedAssets": 1772
+      "unclassifiedAssets": 1742,
+      "unresolvedAssets": 1742
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 116,
+      "teachingAssets": 146,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1772,
-      "unresolvedAssets": 1772
+      "unclassifiedAssets": 1742,
+      "unresolvedAssets": 1742
     }
   ],
   "stats": {
@@ -154,13 +164,13 @@
     "navigation": 14,
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
-    "semanticallyReviewed": 167,
-    "implementedCoverage": 163,
+    "semanticallyReviewed": 184,
+    "implementedCoverage": 180,
     "mainCoverage": 0,
-    "unresolvedContentItems": 367,
-    "unresolvedSources": 367,
-    "adjacentConcepts": 33,
-    "unresolvedAdjacentConcepts": 10,
+    "unresolvedContentItems": 350,
+    "unresolvedSources": 350,
+    "adjacentConcepts": 39,
+    "unresolvedAdjacentConcepts": 16,
     "openSchemaGaps": 6,
     "unreviewedLiteratureOccurrences": 110,
     "readyForFinalReaudit": false
@@ -32058,8 +32068,174 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "36a25f2dd743c06e846195b52dd79a5c80465c65276bc91037de6a2b0ca285c1",
+          "1909362fc53cac4acda00c5113260ce7de6ee6433fa38e9aff8484406b0f63d7",
+          "6ffb6a32dede654f4e896e568ff775a137eb6fdffd5b7fbd62051869f6b175be",
+          "2b48905f4b763c598afdf3d8b618c51d1358d3d6a736e62d03c0c4abdb75aa94",
+          "41687b1d2bbfbe14660ce0980123ad0f7601ad580006941437faa5a40906d014",
+          "b92823a6055f0893fd1adcdf6f793a380c20ff26967c70abe9cffa468d706a22",
+          "da46d9afda5dc4ead0205eaf21e592a456ca440d6bb1d4d0571c839ce8961a34",
+          "1353d73bb74578e6ede93cd5e5254cc8b63124fc6be39f54e9fc0eec14b4d6b6",
+          "8383967ea791942c9a32349530b483934a75793848318400ede437a41c0d44a2",
+          "ba994314ac3e8eb8a7ff000f08698c27858158000a7af90b4011a0e88b812045",
+          "e643c51c88fc62a15df514fe14b27fa64e563e91b97e4b5a875b0854e3689647"
+        ],
+        "points": [
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::measure-meaning-use",
+            "requirement": "Distinguish analytical validity (does it measure correctly), clinical validity (does the result relate to a defined condition or outcome) and clinical utility (does using it help patients) as three separate evidence questions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "tldr",
+                "fieldSha256": "5fc7115ac9c47a595b5233f23f0cd8e99b736785f128e32e733678e33f12cc29",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::analytical-specificity",
+            "requirement": "Analytical performance is specific to specimen, analyte, input, workflow and software version and may not transfer from prepared material to damaged clinical specimens.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8d651a1c0fe5958b9bed3d6de1bc32f3586677172ccf7df974cbca4e5e208ed4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::association-vs-benefit",
+            "requirement": "An outcome association does not identify who benefits from a treatment; discrimination between risk groups does not guarantee accurate individual probabilities.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8d651a1c0fe5958b9bed3d6de1bc32f3586677172ccf7df974cbca4e5e208ed4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::strategy-vs-comparator",
+            "requirement": "Clinical utility compares a defined test-guided strategy (test, result rule, action, care setting) with a meaningful alternative, counting harms.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8d651a1c0fe5958b9bed3d6de1bc32f3586677172ccf7df974cbca4e5e208ed4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::worked-drug-a",
+            "requirement": "Worked example: reproducible spiked-target measurement plus a recurrence association leaves the utility of starting Drug A after positivity unsupported.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::figure-parallel-scenes",
+            "requirement": "Figure parallel-measurement-meaning-and-use: three parallel questions; the unanswered outcome boxes show the missing comparison, not a validation ladder.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::lead-time-outcome-clock",
+            "requirement": "A blood result can anticipate recurrence without proving that earlier treatment improves survival; lead-time bias is one reason to examine the outcome clock.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::accreditation-label-not-utility",
+            "requirement": "Laboratory accreditation or a product label does not establish every proposed clinical use; commercial availability does not complete a clinical-utility study.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "8d651a1c0fe5958b9bed3d6de1bc32f3586677172ccf7df974cbca4e5e208ed4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-analytical-validity-clinical-validity-and-utility::table-evidence",
+            "requirement": "Evidence table: measure, meaning and use each need their own evidence, with the tempting overread for each.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "analytical-vs-clinical-validation",
+                "version": "draft-371",
+                "field": "notes",
+                "fieldSha256": "a2e3f431e975e3c41178e22d7c61638af9bacbb293c484809ab51e15a1af8a8b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32141,8 +32317,226 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "7f16ac3a7e482ae694d396bceeb8a1008d34409d4f5f0e7f27b3842d8ce6d2fb",
+          "37f7aa5a9f76a6852497c37d83bc1c4e13cd0e73ca64be788c1d043ef33dee5c",
+          "9a45004b193ee635f52bb3c6953a4459b9c5baeb1257ac5033214600bf650d90",
+          "c3cce7f7e908ef743125f09a26f39a3791527a7d246bf0e5c22d97a735e1d64d",
+          "782a349ab563f7814853d57f0b94e5284f158486b44d27f22231d1a23ead8fed",
+          "7d39bfe105f788ceebbc980bb9684eee30801d06a25bf7e25e8c6c2df28f9576",
+          "393429e07c3c2837df4361c043db04014ed713807fde7ea4ab4c6edcd51d3339",
+          "e7cac88ebabf6114bb9f3e0affa76343d63da62d668f39349864c025c4ae3bb0",
+          "d7c2792059fc03fee7f134cb7ba7c2bececde8b65a859bb60228bbeb1fb88589",
+          "3e3b4bf21dd77fb532c2ea439fdfc02ec71500928e2c793e53871071c435cea5",
+          "3db270b48b9ef2e3701f2c49e1644bc5d32c92fffdfe9951b885fcb84be41338",
+          "b4af5bf2b1cdf8ee5187d3a68f4de0791349cf50d00dc4847c7c5a0a70796e42"
+        ],
+        "points": [
+          {
+            "id": "spatial-binding-prediction::prediction-not-observation",
+            "requirement": "A binding score is a model estimate and does not measure peptide display, immune recognition or treatment benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::rank-meaning",
+            "requirement": "A percentile rank (e.g. 0.4%) locates a score within the model reference distribution; it is not a 99.6% probability of presentation or benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::ba-vs-el-ic50",
+            "requirement": "Binding-affinity and eluted-ligand outputs have different labels and training data; predicted competitive-binding IC50 is not equilibrium Kd or a cell-growth IC50.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::record-model-context",
+            "requirement": "Record model and version, allele, peptide length, task, units, reference ranking and threshold with every score.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::downstream-chain",
+            "requirement": "Expression, processing, display, TCR recognition and sparing of healthy targets remain untested after a favourable prediction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::figure-toy-rank",
+            "requirement": "Figure score-distribution-rank: invented 1,000-score reference with four stronger peptides gives 4/1,000 = 0.4%; separate BA output of 40 nM.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::worked-candidates",
+            "requirement": "Worked example: a 0.4% EL rank and a 40 nM predicted IC50 estimate different things; neither establishes tumour coverage.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::thresholds-are-workflow-rules",
+            "requirement": "Thresholds are selection rules for a specified workflow, not biological guarantees.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::allele-and-task-match",
+            "requirement": "A threshold cannot compensate for using the wrong allele or an unsupported prediction task.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::readout-inputs-validation",
+            "requirement": "Inputs are sequences and an exact HLA allele, scoring uses no tumour tissue, outputs and thresholds are model-specific, and a model good at one task (binding, recovery, T-cell recognition) is not validated for all three.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26e50b0ef392017a797db7b11aa80f2a1a2241ec2a8d4f49ab2d08f9d883ce27",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-binding-prediction::table-evidence",
+            "requirement": "Output table: predicted binding IC50 and percentile rank are read differently and neither establishes measured affinity, display, recognition or coverage.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "peptide-hla-binding-prediction",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32218,8 +32612,145 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "be7aabd87403a0742a2b8016482ea413259cc04887505395c18d6d3f2de1ecfc",
+          "e68d5b95a1550c24b97ce495a72cfd58813035baca8c0928628500422d64ee54",
+          "26f2ffecae715297950928961070699f07ed90dd10557938eef2dec244c610b7",
+          "3be70afe2f20b0be21560ac4966f2bb9c911a21857095ee0e7667ba4f3512450",
+          "3da3dffce57120f702bcba9640dd998024a43a62802057a2838afccf102759d8",
+          "05afc32ea736e2dac0579171ec7707faf707e99d6759813d6957d99969a4e4e1",
+          "1f050d0b0ff338c39e57f17c8e8c1719def90c42cf3b63286a71a03f2f83ff41",
+          "284498a047d3fca010de4994ab86bb17a4b4ad77a3896a8afb4e8116c7428fe1",
+          "044f64ec702ef75142f5723320a4f89a02d06b60c0257fa57b21ac935bcf6464",
+          "48926319c3062a7469a8f43450d027dbea23332309fee18bb07859b18750c42b",
+          "3c5ed811cd880bedab9c6e560948b1649ef05261b1ba4d4d1caa6dc2d7942817"
+        ],
+        "points": [
+          {
+            "id": "spatial-foundation-models::definition-representation",
+            "requirement": "A foundation model is pretrained on broad data and learns reusable representations (embeddings); representations are computed features, not measured functions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "tldr",
+                "fieldSha256": "d32dcb6cbf064fc48bf79a3285e9ccf6aa3b12e1ff53d1ed74dd54d684755168",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::transfer-finetune-zeroshot",
+            "requirement": "Transfer learning, fine-tuning and zero-shot use are different evaluation settings and are not interchangeable comparisons.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::pretraining-overlap",
+            "requirement": "Pretraining corpora can overlap later test data; check overlap at patient/donor level, not only identical records.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::performance-scoped",
+            "requirement": "Published performance belongs to its evaluated model version, task, datasets and adaptation method.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::labels-not-synonyms",
+            "requirement": "Foundation, generative and virtual-cell are overlapping but different ideas; none establishes simulated-intervention accuracy or clinical benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::failure-modes",
+            "requirement": "Model-card failure modes: population or assay mismatch, leakage, technical shortcuts, unavailable features, poor calibration.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::worked-masked-rna-breast",
+            "requirement": "Worked example: masked-RNA accuracy in lung samples does not test postoperative breast treatment selection; the intended input, disease, setting and outcome need their own independent evaluation with comparators.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "6e3ca2852832074f58aa207fa2f04d754f61e232aa415d6f809f97c5a9e52f7d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-foundation-models::table-card",
+            "requirement": "Model card: input and cost, training and adaptation, output and units, controls and thresholds, failure modes, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "foundation-model",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "e62408148b16474dc33dea1996558ad19ef242c401ecdaede6f98ed9d9233d90",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32298,8 +32829,218 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "d831ff9801416261096fb6eb375542464226477764c09ef1597f0172a6e09809",
+          "0c9b47406c3238eb5b60a2a66236e48da75ac4e5039299c8e32fb794aac4a1cd",
+          "9cde6171b0f9db0e606ae1b6ac76915e76b0761c4468cb41d430a08481c48997",
+          "bb6bc895e8d27963e65f7205c041a1db772752e8a39b81d651b1b40ad0ba4fe9",
+          "64d0e4ff55eab5bd56437761b89e45d06b90009f93371d15a99e8472b8b80d91",
+          "dda86a209537b4805e69c60fba2fd5943e799a4951f02aeb489fe3f3cdc430c8",
+          "fc8ac4a1536fa40d81423f0fc4312406b880989cf671c3b41d1eb9e09ab8a5a9",
+          "298f202ea49f89fa3ecfe842b31a00dff29f49d703991fd959936a5d52e0e1f0",
+          "c115f50acaf773abdaaf39490aa7353b8f6c1ff2101f2bbecad0428c3578cb85",
+          "41ff2824685fbd05009265338b17b3cd858e34bcf2c607b198d4b7bca2ece13c",
+          "f6122d6b5c4505c5b479d078684dc3ac353923d83511f53df0bdca0f221acc42"
+        ],
+        "points": [
+          {
+            "id": "spatial-model-validation-basics::define-task",
+            "requirement": "Define input available at prediction time, population, model version, outcome, time origin and horizon before evaluating.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::dataset-roles",
+            "requirement": "Training fits, validation selects settings/thresholds, test evaluates locked choices; cross-validation that also selects settings cannot be reported as an independent test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "cross-validation",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "5081349aa0f320b71b5e1368dd9575bf080f37b48fbb45fc110f2a6d78fdddaa",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::leakage-independent-units",
+            "requirement": "Leakage routes (post-hoc gene choice, preprocessing fitted on the test cohort, same donor on both sides); many cells or wells from one person are not many independent people.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "data-leakage",
+                "version": "main",
+                "field": "summary",
+                "fieldSha256": "89c0a98b8ebea82e3a17711a5a575a2ead3ee38fb3502f0988a6c60fb6d9bf11",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::split-questions",
+            "requirement": "New-cell, new-donor and unseen-perturbation tests ask different generalisation questions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::baselines-calibration",
+            "requirement": "Compare against simple baselines; discrimination is not calibration; inspect subgroups with their uncertainty.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "external-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "266c38828d7eb36231a5eda9f058f3d208e112561c9beb26907c1415b8498a9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "ffa87c60149f79989413ecf6aadc9062f4c035160d0f726a266aad0c294ef183",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::external-evaluation",
+            "requirement": "External evaluation uses data outside development with documented differences; overlapping development patients do not make an independent population test; a revised model is a new version.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "external-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "266c38828d7eb36231a5eda9f058f3d208e112561c9beb26907c1415b8498a9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::worked-20-donors",
+            "requirement": "Worked example: cells from 20 donors split within donor cannot establish performance on new donors.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "b3ce6c08d16632dec72c823e80c00ffcad94f9cf5e991180e961b29611199fe1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::figure-held-out",
+            "requirement": "Figure donors-cells-and-held-out-interventions: shared donors, reserved donors and reserved intervention Y are different holdouts; no performance claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "b3ce6c08d16632dec72c823e80c00ffcad94f9cf5e991180e961b29611199fe1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::context-shift-no-universal-threshold",
+            "requirement": "A score tested in advanced disease may fail after surgery or in a different treatment era; there is no universal accuracy number that validates every decision.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "external-validation",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "266c38828d7eb36231a5eda9f058f3d208e112561c9beb26907c1415b8498a9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::worked-intervention-split",
+            "requirement": "Withholding more cells exposed to intervention X does not establish prediction of Y’s response; Y’s response must be reserved across fitting and tuning.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "b3ce6c08d16632dec72c823e80c00ffcad94f9cf5e991180e961b29611199fe1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-model-validation-basics::table-card",
+            "requirement": "Evaluation card: input and cost, output and units, rule and threshold, failure modes, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "b3ce6c08d16632dec72c823e80c00ffcad94f9cf5e991180e961b29611199fe1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32381,8 +33122,221 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "27f032707f2d52643be56cbffb40d2a291eadcab167a9e15aa23e9aa67fe1f9b",
+          "06f798ff13dc32400110a36e5cb82a63e693df5c29fe748c40ba5451eec0b151",
+          "316eae21774ca9ac81250a4a5741476bfbad932101b828d54c39062f78f459fd",
+          "95b125bfdeb1d9598f52930950c4888781271b8ba62835e1323f629f14378367",
+          "43e9f35a31d11502a8d42a6191c229bcfbc13d6603b98ce088c2db8cc3e7b31f",
+          "82c6737096c363d29a24f2d33a4b4380f6c758e71a89a41c7269425dd3f39890",
+          "618b5d81c12922f2d90b5daaaa6c6d5b91151234dc39beb48c682afdcbd658c4",
+          "d009288193a2a329bc914ae44ec15326ff7a40cfffc042af69af1fa88be4cda8",
+          "cd83892100214d05bb92ecef231f34d423549316ac2a5f3d8c81422bb3b125be",
+          "f8c1384c0a55f6afe1a0e1d39cffda2fac4b7803a93d0f0ccc16e4feecb36d60",
+          "be885b23a2aa602b8258d31a10ba4d630c369cde0d2607f20e5a45d9fe536cff",
+          "dcb37c1ff3515674227bcf3634e667dc5674eecc39da4982b10854c68aece8c5"
+        ],
+        "points": [
+          {
+            "id": "spatial-multi-omic-integration::layers-and-copies",
+            "requirement": "DNA, RNA and protein are different measurement layers; three reports copying one DNA call add no new layer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::evidence-record-pairing",
+            "requirement": "Keep an evidence record per measurement (unit, sample, time, region, method, units, quality); same-specimen measurements are paired, separate cohorts are not.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::measured-vs-imputed",
+            "requirement": "Imputation is a model estimate and must stay labelled even beside measured values.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::factor-models",
+            "requirement": "Factor models such as MOFA find shared or layer-specific patterns that can be biological or technical and are not mechanisms or validated tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::batch-confounding",
+            "requirement": "Batch effects and confounding (treatment time with method) cannot be separated by software alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::patient-level-splits",
+            "requirement": "A patient present in several layers must not appear on both sides of a patient-level split.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::worked-target-q",
+            "requirement": "Worked example: abundant bulk RNA and vessel-cell protein can both be right; averaging into one confidence score hides the unresolved malignant-cell question.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::figure-reports-raster",
+            "requirement": "Figure reports-and-observations (raster): report copies repeat one observation; a new assay addresses a new question.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2d04ff95e85c34af33e7ed476a280f955d6de91a8c911a42cbec8560f4174af2",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::figure-specimen-context",
+            "requirement": "Figure multiomic-specimen-and-cell-context: paired layers need not describe identical cells; imputed Q stays a model estimate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2d04ff95e85c34af33e7ed476a280f955d6de91a8c911a42cbec8560f4174af2",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::try-it-method-ab",
+            "requirement": "Worked example: all pretreatment samples on Method A and all post-treatment on Method B confounds treatment with method, so a separated cluster does not establish a treatment effect.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::correlation-not-dependency",
+            "requirement": "Correlation between layers is not a tested dependency; a controlled intervention addresses a different question.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::integration-outputs-benefit",
+            "requirement": "Integration can reveal agreement, competing explanations, missing evidence or a sample mismatch; molecular detail alone does not ensure a matching treatment will help.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b08e2e3bb15c097460ef025be72797db5f7a4c5da4c43dec6487922e342dcc04",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multi-omic-integration::table-card",
+            "requirement": "Integration card: measures, how, input and tissue cost, output and units, thresholds, failure modes, cannot establish alone, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multi-omic-integration",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2d04ff95e85c34af33e7ed476a280f955d6de91a8c911a42cbec8560f4174af2",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32453,8 +33407,181 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "e7f0c3ac6c4baf0b139d116059ff7217407cfd600b781414c4048ae895130205",
+          "a4e7cc999dd642357740f6dea0d6816f5a47ad816feeaeca4fa470ade31ce878",
+          "1081c1e16e3fcf54e1eb874c7f5a42bdbbfa0310c93193d358d5e9b92c832155",
+          "5cce6345b80722bca6e653c86f58346f360310c2365be99fe0008467c298adbd",
+          "8472582be8c68cc1834cf13f3738e95dafe2ab16eea0cc1c7c3125c09f10be90",
+          "48f3cce69cb57e88cfb3496f456170b9c5810a51d686dbaddd050550d231496d",
+          "3d6cc21aa552ae0e4542fb7724db4e8192b20d850bca2758a934e403b1e794f4",
+          "e0fb7f03eb6857e057fd8f52c4258ee0912219db7fd085c48a680dbdcce8f868",
+          "31878b9f47e5e722b22b8b4e557eb485f6306064498ac48b104b5e7a363cacc4",
+          "9b46a3fdcc3e24085430fdc135c665dd79d190c0754db4177c1485fbb19df303"
+        ],
+        "points": [
+          {
+            "id": "spatial-overfitting::definition",
+            "requirement": "Overfitting is learning noise and quirks of development data so accuracy looks good there and is worse in new patients.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "tldr",
+                "fieldSha256": "880be627da038a6cbd5eb09a2cd3294a40b0edc4afb73a223100c5390abb0332",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::many-features-few-patients",
+            "requirement": "With many candidate measurements and few patients, chance alone separates outcomes in some features.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::three-habits",
+            "requirement": "Habits that hide it: testing on training patients, tuning after looking, one lucky split.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::michiels-evidence",
+            "requirement": "Evidence claim (to verify at source): reanalysis of seven microarray prognosis studies found five did no better than chance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::venet-evidence",
+            "requirement": "Evidence claim (to verify at source): >90% of random gene sets >100 genes associated with breast-cancer outcome; 28 of 47 published signatures (60%) no better than random.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::defence",
+            "requirement": "Defence: model locked before testing, independent patients, comparison with a simple baseline.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::cv-vs-external",
+            "requirement": "Cross-validation reduces optimism but does not test a new hospital, batch or population.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::worked-50-gene",
+            "requirement": "Worked example: a 50-gene score with 95% accuracy where genes and cutoff were chosen in the same 80 patients describes fit, not prediction; ask for the locked score in separate patients and a simple baseline.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::bias-vs-overfitting",
+            "requirement": "Overfitting comes from fitting noise; a model can also be wrong because its training patients differ from the patients it is used on; both lower real-world accuracy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "b84120973b3e7b693251e25f7d3097e8645848ed11d1f64ab4d3f385fafe4bca",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-overfitting::significant-not-useful",
+            "requirement": "A statistically significant association in many-gene data can be reached by random signatures, so significance is not usefulness.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "overfitting",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "7e6c8be68e3b828a2f4471e5829a2b15b07a856e465926ed918bba417afca11b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32535,8 +33662,220 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "5b8b787dbee888c4cb60d9466dae4fb1b176616222b36b88b19213d677e06e65",
+          "c89a14c7ed131022a08ce3deb630a495d5a36881700e4a5c54c7d3d4ece6fd84",
+          "bfc20c28643db3c514715762d94d930c97f70c00d53904f6e32a02f89900d408",
+          "0141f721d294374de0e6d0d33e4edd6639469c2c3e79d6547a22a882ac4172a5",
+          "3a3f7e166e3cf8d0eeb873b06bed67c8eef25f081255c27191c8753cf2aa976a",
+          "29dfdf8596216a7dfc02c63f452cbe2fea60ee5aa5f8a182e82b2264f2c22240",
+          "fc32759b675b53dd30295710b6e315bb838377d1bd9acab4057d3ef79b8883ee",
+          "0a62ff5f7e039f7ec46754204a0abdb59a347c15fd23ff3537e524a648c3d1db",
+          "741dd3314e05b9004384bd9e9f4b6961ea73e22d9e202b65fbcf449d3ad80a4b",
+          "63eb3eb071ffb7908eff0df47c639f6d0839951d810e9fadf6ba7abacdf8b922",
+          "951014e817e62d11dd5b4fe55158f86d6d835ce28f0208434a6c5e211d5713ff",
+          "362fc2db28e49499f450b733b38d1398d9476f4e810a4f7252436c73d59d6216"
+        ],
+        "points": [
+          {
+            "id": "spatial-variant-effect-prediction::exact-finding-transcript",
+            "requirement": "Specify reference genome, position, alleles and transcript version; the same genomic change can differ by transcript.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::annotation-not-effect",
+            "requirement": "Consequence annotation (e.g. missense, HIGH impact) is a category, not measured loss of function or treatment benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::task-specific-scores",
+            "requirement": "A score from one prediction task cannot answer another (missense vs splice vs regulatory).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::tool-non-independence",
+            "requirement": "Agreement between tools sharing training data or inputs is not independent confirmation; interpretation depends on calibration.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::clingen-scope",
+            "requirement": "ClinGen calibration covers specific missense tools in a germline framework, not universal probabilities or tumour drug response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::somatic-interpretation",
+            "requirement": "Somatic guidance treats computational results as one evidence line, not a sufficient basis for a clinical decision.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::worked-splice-score",
+            "requirement": "Worked example: a splice score of 0.92 with unspecified scale is not a 92% chance of lost repair function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::figure-two-transcripts",
+            "requirement": "Figure variant-transcript-context: same position P lies in an exon of T1 and an intron of T2; annotation, prediction and RNA assay are separate questions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "e70a44c1825ee51d034d8dad611288cb540e9809c114bb661e9fee829270240f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::try-it-two-reports",
+            "requirement": "Worked example: two reports repeating the same prediction from the same software version are two copies of one computed result, not independent functional experiments.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::evidence-gaps-differ",
+            "requirement": "RNA junction evidence, functional experiments and clinical studies address different gaps and none is interchangeable with a sequence score.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::no-prediction-not-benign",
+            "requirement": "No prediction does not mean benign: the tool may not cover that variant type or transcript.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-variant-effect-prediction::table-card",
+            "requirement": "Model card: measures, how, input and tissue cost, output and units, thresholds, failure modes, cannot establish alone, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-effect-prediction",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "e70a44c1825ee51d034d8dad611288cb540e9809c114bb661e9fee829270240f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -32617,8 +33956,250 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "9a6baf5ff3946df680d19630b109a997e19414829fbcefc2347ea18255f979c6",
+          "84f7c5a3b01a950e2809d96fe292c08e4802c56a75f2b859b50f8ac383ec0776",
+          "a115476e1d59e06d1497218959c17238558ff30e8e29ee42885511b9e066519b",
+          "e5eb86b7285185ac76c878e247a5fb399592ded5d53c15ba06bdf5389f6f0e00",
+          "51d63f7b7c6626905e871acd37c31b7578b98040dcf79161d64b51e045e43525",
+          "016df8efeb9713bfd0906581b49633d93eb18ad2bf0696731b9a5db3095c0aaa",
+          "42949c49c4dab1478af811d8e7534bcb06b365a15861e6fa1d7bd63a98bc8007",
+          "b3ec3c9f6721a58972b64ccf1d13310cfe51fd3725aea28750d6e9ed2a5d70c5",
+          "1a8f29f7b205712dc17fd5b8e6dd135f8feb60e4cf860b4b4e91c381643b73d4",
+          "bb131c971feceb05227f8e9dc25d8ddfcc26c5c23bcb77e26c2ec4f490b85b08",
+          "b4e195eb1f472ffe34795086fabcd3c6fac99ae41ffa3f8a93d4697911419e6e",
+          "cd64196e538a8d13616cad06069bd106a8ad41c8dc62c539409f385829c5a566"
+        ],
+        "points": [
+          {
+            "id": "spatial-virtual-cell-model::task-defines-output",
+            "requirement": "The task defines what output means; filling a missing measurement does not validate intervention prediction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::virtual-perturbation",
+            "requirement": "A virtual perturbation changes a model input; it is not a performed experiment and masking a gene is not removing its function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::heldout-claims",
+            "requirement": "Holding out cells, donors, interventions or cell types tests different claims; avoid shared patients/batches/labels leaking across the split.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "244a4b495e8bda2e7c0bfb9cef2a2d1e6a93fa9c048612a6aea9f6d20340144a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::portability",
+            "requirement": "Portability needs fresh evaluation across cancer type, preparation, dose or laboratory.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "244a4b495e8bda2e7c0bfb9cef2a2d1e6a93fa9c048612a6aea9f6d20340144a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::baseline-benchmark",
+            "requirement": "Complex models must beat meaningful baselines; claim to verify at source: a 2025 benchmark found none of five single-cell foundation models and two other deep-learning models beat simple baselines for single/double gene perturbation prediction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "244a4b495e8bda2e7c0bfb9cef2a2d1e6a93fa9c048612a6aea9f6d20340144a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::predicted-not-measured",
+            "requirement": "Predicted RNA is not measured RNA, protein activity or patient benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::figure-missing-vs-unseen",
+            "requirement": "Figure missing-observation-versus-unseen-intervention: filling a missing observation and forecasting an unseen intervention are different tasks with different reserved tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::try-it-fill-rna",
+            "requirement": "Worked example: accurately filling missing RNA values in familiar samples does not support a claim about a never-tested drug; define the intervention, reserve independent experiments and use baselines.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::prioritisation-not-selection",
+            "requirement": "A model can prioritise experiments or organise candidate mechanisms; supporting treatment selection needs separate intended-use clinical evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "244a4b495e8bda2e7c0bfb9cef2a2d1e6a93fa9c048612a6aea9f6d20340144a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::worked-new-tissue-intervention",
+            "requirement": "Worked example: success on additional cells exposed to a familiar intervention in one cell line does not test a never-tested intervention in breast tumour cells; a reserved set of measured interventions and compatible breast-cell data is needed.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::aggregate-agreement-hides",
+            "requirement": "High agreement across all genes can conceal poor prediction of the few genes that changed.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "244a4b495e8bda2e7c0bfb9cef2a2d1e6a93fa9c048612a6aea9f6d20340144a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::untreated-association-not-causal",
+            "requirement": "An association learned from untreated tissue does not automatically identify a causal drug effect.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::test-set-reuse",
+            "requirement": "Changing the test set repeatedly until performance looks good weakens its independence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "train-test-discipline",
+                "version": "proposal-spatial-computational",
+                "field": "tldr",
+                "fieldSha256": "d2070facbdb10bb76e1ffae1178bec6b81c4e76ea61c38ac9b57885b5db1fd8c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-virtual-cell-model::table-card",
+            "requirement": "Model card: input and tissue cost, output, version and scope, evaluation, failure modes, cannot establish alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "virtual-cell-models",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "51e0b02ae3b3b733e447d96b7fef64b9af1b275e5d4c22a2769304d800e6a96d",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36239,8 +37820,186 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "57775929893de76ba06ebce4164f4a55dde231dcefd8db1e30671eab74aabbaa",
+          "a6529e311c94d38354a87f5471a1eebc8906284f359fab92f30a5544fb8149a8",
+          "852fd5f7302acdeaf287488e8c71c131610489a3774887ce74c96c7a98ae1b6f",
+          "487fb11486050af7b7682d2d9707d72d8bc8e6f05867ae3e0e1f4420fe86c50c",
+          "e14204c5f3c3a5e2a5d34dbcef7fdd8e602b9910ccef5fee37ecea3733c425f2",
+          "f3c386f9e85dafd3852b63bfc76842a513ee97a99744a71702d2244597d8d2c7",
+          "07c706b83c66b56aeb942e36260b290aa5082f9016ef2f59cb5636a1a96ceb88",
+          "e2bced03f4e28a50550be0e2e0d7fc95d8d19fabf753fa729fc06446baa8816f",
+          "d74eed7490c0a5dab3b37244befe6136606265a32abe41dd687b0258d8adecff"
+        ],
+        "points": [
+          {
+            "id": "spatial-cell-segmentation::mask-is-estimate",
+            "requirement": "A segmentation boundary is an estimate; a 2-D section may hold only part of a cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::detect-segment-phenotype",
+            "requirement": "Detection, segmentation and phenotyping are distinct steps; finding a nucleus does not give a whole-cell boundary.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::merge-split-missing",
+            "requirement": "Merging, splitting and missing cells distort counts, marker combinations and spatial relations; check overlays on original channels.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::iou",
+            "requirement": "Intersection over union is shared area over union area (0-1) and can hide missed objects or mergers; also check counts and characteristic errors.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::tissue-specific-validation",
+            "requirement": "Validation is specific to tissue, stain, acquisition and task; benchmark accuracy is not guaranteed on a new specimen.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::worked-merged-mask",
+            "requirement": "Worked example: a merged mask can create false marker coexpression; correcting it does not prove immune recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::figure-mask-errors",
+            "requirement": "Figure raw-channels-and-mask-errors: fixed channels and two stipulated cells; merged, split (3 objects) and shifted masks change the table, not the image.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::mask-not-measurement",
+            "requirement": "A mask is not a measurement of a new marker; it assigns existing signals to estimated regions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "8e0c4c7511731836ed688838cb3ed800472df38891455f43073661d2d6656e3f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-cell-segmentation::table-card",
+            "requirement": "Analysis card: input and tissue cost, output and units, controls, thresholds, failure modes, what it cannot tell you, validation context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "cell-segmentation",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "f4f98058fb64619951130d3d70f1d3197159497e4beddbc9efca988caa3a7bc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36307,8 +38066,171 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "88e887f2179f7293f98303dccd6b2bf13083058f805cff9da26480ef8ee54452",
+          "0b0358d812359393b178ea1134093bce01f4aaa3f90d694b7b31db1ca28314f8",
+          "0270e7cc3d6f7b78361f9d3e1aa9b0386ae5cc19825719b85ac922691c7887b7",
+          "a23bfab24deb6f2eec0bcdaf4759bb1196d79fe35fbf33b4af9f67adf91ad3b7",
+          "7a2584aa29b50c096c16ec5af73b82e113b6c3a7a0d76aad4a350c0016a2326c",
+          "9cadd8fc1a27e3e00c0f4bbd14197baaf29ebae998c3c223482a513a8acc0bbe",
+          "327822a600b21fc86827416677ab73b395b683382cef9ce00d2a2f4de0df25ed",
+          "3275e2e2d3a4f9686d3f3d47b1223bf7a6cd22101a79134d32cd8e2053fae0a0",
+          "cea97949117d4fcc1757c42d95a5a76aaced597f8e45c756ffc66f44076d74ce"
+        ],
+        "points": [
+          {
+            "id": "spatial-imaging-mass-cytometry::workflow-destructive",
+            "requirement": "IMC laser-samples a metal-tagged section at recorded coordinates; ablation removes material.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "28727b2472a59ad57261765f7cbf08b4ac0df8f59bc22a2030665403a7cfed4a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::imc-vs-suspension",
+            "requirement": "Mass cytometry is not always spatial; suspension measurements lose arrangement.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "28727b2472a59ad57261765f7cbf08b4ac0df8f59bc22a2030665403a7cfed4a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::interference-not-absent",
+            "requirement": "Channel interference is reduced relative to many fluorescence panels but not absent (isotope impurity, oxides, instrument effects).",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "28727b2472a59ad57261765f7cbf08b4ac0df8f59bc22a2030665403a7cfed4a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::panel-selects",
+            "requirement": "The antibody panel selects what can be measured; IMC is not untargeted proteomics.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "28727b2472a59ad57261765f7cbf08b4ac0df8f59bc22a2030665403a7cfed4a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::proximity-not-interaction",
+            "requirement": "Spatial proximity is not functional interaction, killing or patient benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::worked-double-positive",
+            "requirement": "Worked example: a rare double-positive population needs interference, staining-control and boundary checks before a new-cell-state claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "28727b2472a59ad57261765f7cbf08b4ac0df8f59bc22a2030665403a7cfed4a",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::figure-metal-tag",
+            "requirement": "Figure metal-tag-channels-and-spatial-sampling: recorded x,y address links each metal-tag channel; estimated borders need checking; suspension cells lose arrangement.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-imaging-mass-cytometry::table-card",
+            "requirement": "Assay card: input and tissue cost, output and units, controls, thresholds, failure modes, what it cannot tell you, validation context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36393,8 +38315,228 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "d908dd916a713c9207277ade4ad1cacd2eddae3302bff34178377fcedb775705",
+          "8a82cbd464802728c81951841bfe29125de2f3c6ae4e0b1a3b3bdfe2364502ca",
+          "c3c4228550aae15ca5023f9c8ea8bf544ee60a79ed54e87c138e9b77ea49010a",
+          "baf1a8b12a9c6fb1954d550a17c27c0254263a85d1335a0b8c76d8caea5eb144",
+          "1eb2be8a593fb6f488c307f8694679ccfcbaf7acc3e49a73223d838540421170",
+          "f4001c3f5515793619afdf24634435d222997974a103dcb00b8b1cfb1db6c1ea",
+          "547697959686e88da6a4fa54c9ca94cbf183ef261c293c8d28d08e4272a6f431",
+          "17c5d23dc8ee7823d749f9608d9fc13c33260e61b5ad40bd13c5ac764a2baaa2",
+          "1a0742397986d36a22745d1975f577780ea2191e684f0568c9ba11dbb4a39a8e",
+          "24ac1fe4830006779b47b26ed6a61588055b5830d03476eb79f0d9402d54592a",
+          "42068f089215553ef097177d315f8e997fc1222c868552cd002b68cf0bdec17e",
+          "5ae7434e86ae6b916519705c89cec64ee55ab01fd3a047f6e90ff9b5ae17f351",
+          "5c14dbbb2cf365980685b30caa51c4736f5743465cafc91df1b29bc3eb5b6bbb"
+        ],
+        "points": [
+          {
+            "id": "spatial-immunopeptidomics::repertoire-vs-list",
+            "requirement": "The reported peptide list is a recovered and identified subset of the biological immunopeptidome.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidome",
+                "version": "draft-373",
+                "field": "tldr",
+                "fieldSha256": "d31ae4a7ea954f6703a4728e95d76ade657c9c43643d6cfe106925eafe1343c8",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::workflow",
+            "requirement": "HLA-peptide complexes are isolated, peptides released, separated by LC and fragmented by MS/MS, then matched to candidate sequences.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::database-and-fdr",
+            "requirement": "Search database content and false-discovery rules matter; adding sequences can raise incorrect matches; synthetic references strengthen single identifications only.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::mixed-origin",
+            "requirement": "In a mixed specimen, an HLA-associated peptide does not reveal its cell of origin or surface abundance.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::lysate-and-allele",
+            "requirement": "Whole-cell lysate is not surface-only; allele assignment in multi-allele preparations may be inferred.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::ffpe-compatibility",
+            "requirement": "FFPE tissue cannot be assumed usable for an assay validated on cells or frozen tissue.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::nondetection",
+            "requirement": "Non-detection does not prove biological absence; detection does not prove safe tumour recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::worked-a-b",
+            "requirement": "Worked example: peptide A detected and peptide B not; B may reflect allele recovery, an unsearchable altered sequence or sensitivity, so it is not a clean biological negative.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::adds-presentation-evidence",
+            "requirement": "Immunopeptidomics adds experimental presentation evidence to a vaccine candidate board and can reveal peptides a shortlist missed, but does not show TCR recognition or patient benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "26ff5bd653fc5923b330fb7d41154eb75fa82b6903d7012fd353887673bf70c1",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::binding-vs-identification",
+            "requirement": "Binding prediction estimates a model output; immunopeptidomics identifies recovered peptides; total protein is not the same as HLA-associated fragments.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::try-it-database-gap",
+            "requirement": "Worked example: a peptide missing from the search database that is not identified is not a clean biological negative; correcting the database does not guarantee recovery or prove natural display.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-immunopeptidomics::table-card",
+            "requirement": "Measurement card: input, output and units, identification threshold, coverage, material and cost, validation, failure modes, limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immunopeptidomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36464,8 +38606,173 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "41282e36aab36086749c01d84db6a30f9fa3ffa3a8d2255875dbf01f1b18cf68",
+          "d76aeca183205fdf167f7fc5f51589bc0d5365fc5d4aa1d6351dd5cfd7b2ba3a",
+          "9f70f8c5ef78f6bc46b61b2380d6e5f4576355c7c354cfbf61383cc38887b673",
+          "57f81ae81a7a16572b01733848806eee3fe4f1319d17973c82f827953b2b6e0b",
+          "acdc54b9db32e12a8147924da64ac44ab0a29a62ea57e2653773b8a23f023c9e",
+          "f1063df734dc6c65dccec95ec562aac8296e88d1417278da34085d07b44ed091",
+          "738beee4e9fddd48b52b92f4c64ce98b355b2c302d89f75f72a21bec702a908c",
+          "3801d90e9a2301ffb81fdba6e92711e52ba4bccdf862f532bfa56e5d778534ba",
+          "3e3de947fa69fb44ca9119ec9a37d9fd0c90a09317ff78d9e38abef84d038c18",
+          "15e8b2750e03c00eac3337dd29d90d13aa936fc5c5ad719563b16841b3218e71"
+        ],
+        "points": [
+          {
+            "id": "spatial-mass-spectrometry-proteomics::bottom-up",
+            "requirement": "Bottom-up proteomics: digest to peptides, LC separation, MS and MS/MS, software identification.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bf9cb6f3bb824e5e583a381a64e971f0f2d5a10b77931f568f8387724ad6c2b4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::protein-inference",
+            "requirement": "A shared peptide cannot choose between candidate proteins; inference uses other peptides and reports ambiguity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bf9cb6f3bb824e5e583a381a64e971f0f2d5a10b77931f568f8387724ad6c2b4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::fdr-set-level",
+            "requirement": "Estimated FDR is a set-level expectation under assumptions; peptide, spectrum and protein levels are reported separately; it does not certify each identification.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bf9cb6f3bb824e5e583a381a64e971f0f2d5a10b77931f568f8387724ad6c2b4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::relative-vs-absolute",
+            "requirement": "Ratios need a denominator; absolute amounts need calibration; standards do not guarantee recovery of original protein.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::bulk-extract-limits",
+            "requirement": "Bulk extract mixes cells and loses location; per-extract abundance is not receptors per cancer cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::proteogenomic-claim",
+            "requirement": "Claim to verify at source: integrated breast-cancer proteogenomic work shows transcript, protein and phosphorylation add different information.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bf9cb6f3bb824e5e583a381a64e971f0f2d5a10b77931f568f8387724ad6c2b4",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::figure-peptide-inference",
+            "requirement": "Figure peptide-observation-and-protein-inference: proteins cut into peptides, a shared 4-residue peptide fits two candidates, intact form/cell source/surface access unresolved.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::try-it-receptor-peptide",
+            "requirement": "Worked example: twice as much receptor-derived peptide per microgram of extract does not show twice as many accessible receptors per cancer cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-mass-spectrometry-proteomics::table-card",
+            "requirement": "Assay card: measures and method, input and tissue cost, output and units, thresholds, failure modes, limits, validation context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "mass-spec-proteome",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "2ef9054ec187da7e70c576a9aedf4c324c17cb7e0118dd9c590501b212145a7b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36531,8 +38838,172 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "81321c0f72c8caaa98df0bdfb0f3c657fd455b61808a4fd205fa75392dac5be7",
+          "7b60f75744e9dc8128c973dd319e741983b42e37edb10360c47465dcc48fbc4d",
+          "01399977c63acfbfb9fbce8ca884e5754318256cad789e83ac25d6b80525e4d7",
+          "5c03bdd593673c0176191d8fa435d473c98e128b6bdb8c3afd80d8114dbb352b",
+          "542a7af9fc4eecfabcdea158d1d0fa0095beb591047bfa1b66f4ba3f3fc32d02",
+          "b4705ae3ef6d3eb78ee51a4f26a00000015af1910c6e8e2e74e82277443b666f",
+          "d884f857037a9181ce4f8d8a2b5bd71fea0f49765d18747c0b35263bb3bd7fbb",
+          "ca4bc842de1f5a9cbd7a7d265c29dee9764907b2a0b85418dd82ef3d0ce59812",
+          "d2cf3e3f9fef182caee519180f9877f69bef38e2de4f66733b0cef9e45be1bb6"
+        ],
+        "points": [
+          {
+            "id": "spatial-multiplex-immunofluorescence::cyclic-not-simultaneous",
+            "requirement": "Multiplex does not require simultaneous imaging; cyclic methods need validated registration and tissue retention.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "f1177fd4d20fb69e415cb84aae97aa67f7f9505c81fd6890d19b36c04286322f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::phenotype-is-panel-based",
+            "requirement": "A cell phenotype is a rule-based classification from the measured panel, not a full account of the cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::denominators-distances",
+            "requirement": "Densities and fractions need denominators; distances must state centre-to-centre vs boundary rules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::proximity-not-recognition",
+            "requirement": "A close immune-cancer pair does not show receptor engagement or killing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "f1177fd4d20fb69e415cb84aae97aa67f7f9505c81fd6890d19b36c04286322f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::validation-scope",
+            "requirement": "Validation is specific to panel, staining, imaging, analysis and intended use.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::virtual-mif",
+            "requirement": "Virtual mIF is a computational prediction, different evidence from performed staining.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "f1177fd4d20fb69e415cb84aae97aa67f7f9505c81fd6890d19b36c04286322f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::worked-t-cell-neighbour",
+            "requirement": "Worked example: close centres without touching boundaries show proximity under a rule, not recognition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "f1177fd4d20fb69e415cb84aae97aa67f7f9505c81fd6890d19b36c04286322f",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::figure-two-rulers",
+            "requirement": "Figure channels-masks-and-two-distance-rulers: channels measured, masks estimated, distance calculated; two rulers give different distances.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "0bfa3fb73a6110ed2ecdf3645d2364cbb66d71dd9afd369d0aa8b7e15e3b1324",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-multiplex-immunofluorescence::table-card",
+            "requirement": "Assay card: input and tissue cost, output and units, controls, thresholds, failure modes, what it cannot tell you, validation context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "0bfa3fb73a6110ed2ecdf3645d2364cbb66d71dd9afd369d0aa8b7e15e3b1324",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36604,8 +39075,187 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "417350a787d8a7eb9162f12252f02412b366b54cc1a23726f73c0c9247d82fa0",
+          "6bba665ea7e7ae92e991fdb35b18ababab02615df772e84d07074bc9ad63db37",
+          "4ba942be1584bbee2f8c1b2756caedfa2dee7ce9872a22bb57a889c681824efe",
+          "bc1eeab1912f52fdd1c2acd7cebf9d89a4c3f93c509077c14e9194568212abd0",
+          "ba24e0d54d9c8c3fb6a7d8ed3a3e2dfa94d625e828cebe26263a329fed4b382d",
+          "1d7c63dba1ecb8cb0afc3276e68517e673d2f1a5d15a6f6c11d7c65a29ac35ea",
+          "4c43252fb774da7cbcf6d48cf8b1479ca6a77768f32d0c0ea3e2b8c64bed265d",
+          "bb489bc22756b4dd9811bf990e6c8fc75e353209fb59a744e133ec8fe3a5a832",
+          "6a677507040031784c57a6426307aea12380ac13343a56ee4ae77ca3b1b03bfd",
+          "be400a400a44cd58b35ebeb3cb924e34b969353f1241492c249bc0162851810b"
+        ],
+        "points": [
+          {
+            "id": "spatial-phosphoproteomics::kinase-phosphatase",
+            "requirement": "Kinases add and phosphatases remove phosphate; a larger signal is not universally greater activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::enrichment-bias",
+            "requirement": "Phosphopeptide enrichment changes what is recovered; the sample is not an unbiased count of proteins.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "ad5e46131973cf9d4e458f50bdccb3ab5d68f338a80cb9a8ecd8680dba502359",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::site-localization",
+            "requirement": "Site localisation is separate from peptide identification and reported with its own confidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "ad5e46131973cf9d4e458f50bdccb3ab5d68f338a80cb9a8ecd8680dba502359",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::intensity-vs-occupancy",
+            "requirement": "Phosphopeptide intensity reflects protein amount, modified fraction and recovery; intensity or fold change is not occupancy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "ad5e46131973cf9d4e458f50bdccb3ab5d68f338a80cb9a8ecd8680dba502359",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::ischemia-handling",
+            "requirement": "Post-removal ischemia can change signalling; record collection and preservation conditions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "ad5e46131973cf9d4e458f50bdccb3ab5d68f338a80cb9a8ecd8680dba502359",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::pathway-limits",
+            "requirement": "Supported sites inform a pathway hypothesis; they do not measure pathway rate, dependence or drug benefit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::figure-parent-protein",
+            "requirement": "Figure parent-protein-and-phosphosignal: 100->200 and 20->40 are each 2-fold; 2 / 2 = 1; raw 20/100 is not a molecule fraction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::kinase-inference-not-causality",
+            "requirement": "An inferred kinase from a phosphorylation pattern is not measured causality.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-phosphoproteomics::table-card",
+            "requirement": "Assay card: measures and method, input and tissue cost, output and units, thresholds, failure modes, limits, validation context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "proteomics",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "7a3915ddd93c1b09d8c1468447415e8a6695f835189bacb7bc33558171e72ecb",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36682,8 +39332,174 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "b57879b848baa2c105f8c97849db0e8c33cfece51a4154b16a82b6ef2e9745a1",
+          "7373608801dba81022c027ee4e7ba77876770c526d4064623366d11fa3c11faa",
+          "748a8600d7a97375bd893312840aae5ae45a37f6526c9b25a9898948081cc616",
+          "9c613d2c26c6226ecc1685a90c8f10d3bd90bdaa5674630a46e74b37a6e874a8",
+          "d7078d5541e3b01271f73a60917348254c53e29b3180478b6058b8b5c757d02e",
+          "9092d60a555a3be599cb60220f5c55dcfc87991d1b2f6ba69494aa43a0727822",
+          "c6740c5fd1abe82ee9af17bf068cb57be5502e2254480e0a9c00c0ac7f048f24",
+          "c7fc3702f41ae07d08ac11a8476b31bdabf1229497134a11ae213058d35d51e9",
+          "74077aa5e152a0a4fcde9da87ac5dd9f4c69430052fcab145f15048d6b40bb42",
+          "f6e51226af3dd7c020059512beb10232cee04584ac57fae1c90f6c594ee8db8f",
+          "47e5feb924d1f38cfb2ef32ba683ffbda4d6e551df5ff5f411d2cbbcd9091e19"
+        ],
+        "points": [
+          {
+            "id": "spatial-rppa::reverse-arrangement",
+            "requirement": "RPPA immobilises the sample lysate and probes with antibody, the reverse of capture-probe arrays.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "cab501c167f73837d44a559c250334e6744bf6a432067f0927c298884b979b9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::address-not-position",
+            "requirement": "A spot address names sample and dilution, not a cell position in tissue; each spot is a mixture.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "cab501c167f73837d44a559c250334e6744bf6a432067f0927c298884b979b9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::antibody-validation",
+            "requirement": "Antibody specificity is central: RNAi knock-down and size-resolving comparison; same-target antibodies differ.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "cab501c167f73837d44a559c250334e6744bf6a432067f0927c298884b979b9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::dilution-normalisation",
+            "requirement": "Dilution curves, background, references and loading normalisation define the usable range; antibody scales are not comparable.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "cab501c167f73837d44a559c250334e6744bf6a432067f0927c298884b979b9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::phosphosite-not-occupancy",
+            "requirement": "A phosphosite signal is not occupancy or enzymatic activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::ischemia-no-safe-delay",
+            "requirement": "Ischemia study supports recording preservation, not a universal safe delay.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "cab501c167f73837d44a559c250334e6744bf6a432067f0927c298884b979b9c",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::figure-lysate-addresses",
+            "requirement": "Figure rppa-mixed-lysate-addresses-and-dilutions: sample x dilution print addresses, replicate arrays R and phospho-R, spots remain mixed.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::try-it-phospho-r",
+            "requirement": "Worked example: a doubled phospho-R signal without total R or loading evaluation cannot be called doubled R activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-rppa::table-card",
+            "requirement": "Assay card: measures and how, input and tissue cost, output and units, thresholds, failure modes, limits, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rppa",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "82dd827169cf7c586eca735953dc7f082c1004fc64aaae78d058e09095468f49",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36763,8 +39579,176 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "c2875359d6255076ded6fde5f98f1131693a628d4f0b7497727429c12ad7d5c7",
+          "4f71c03ce91ddc868d76e84104445f31780a28542e3e781f3a3da75cb61a2819",
+          "5e2138251e921f4f76a5ddee98974c3c1b094451e39b4a3fcf3f749137b444cf",
+          "b7f8bf48ba4bc4a5868af12d5509aa80eadaa2da1c205180a632c22d7f283757",
+          "592d6dfde1beb2ab31caf4e9baee564f58b62bff40ce014e1e87625d6d6c2556",
+          "930c012df65096a2c84a2d891f0a6cb819dae9e5482c35df577c53db539aaf1f",
+          "27c46584fda6e8e83fb3fed227e9c54254058df0b52de4b97fbadee65112ab98",
+          "58e6824e1340c8ee80a6860e7f4ae2dcfb46d4e12ef7131ce9e22160b80443e8",
+          "5177b805d7c9da426f38de715449d1b53bd615484ed8b15293aedd46588a66e1",
+          "29e4edbb4088b2547d27b918552ddd561093ded1ec0343f70b8dc37d5fd0a321",
+          "9292dc091a630ded15d00ef575379b652e91aa2425293f8550686f0b7e6c2b04",
+          "8721b647dff68d15c5454f66bbebb913d385539a36532e9c8ac063259affbfde"
+        ],
+        "points": [
+          {
+            "id": "spatial-spatial-transcriptomics::three-strategies",
+            "requirement": "Sequencing capture, imaging-based detection and region-of-interest profiling recover different evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::capture-unit-not-cell",
+            "requirement": "A capture spot/bin is not automatically one cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::roi-numbers",
+            "requirement": "Claim to verify at source: DSP region 1 to ~5,000 cells; 44 proteins or 1,412 genes (sequencing readout) on FFPE.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::targeted-panel",
+            "requirement": "Imaging methods such as MERFISH measure a probe-defined gene set, not every transcript.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::segmentation-assignment",
+            "requirement": "Nuclear outlines may not define whole cells; overlap, crowding and boundary error misassign molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::imputation",
+            "requirement": "Imputed values (e.g. Tangram) are model outputs, not new observed RNA molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::adjacent-sections",
+            "requirement": "Adjacent sections share regional context but not identical cells; a section is not the whole tumour.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "8ede25cf48c86f25b5d272e348a0931b1f5fd24e7b9531dd963a95b0841f81a0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::figure-four-layers",
+            "requirement": "Figure spatial-observation-assignment-imputation: capture spot = one barcode, six decoded G/H coordinates, alternative masks, hatched inferred R.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "265fd2c37d6df7b19d7f97db7d92bca714ab82ee42074f6e53317ab0b41d8f19",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::try-it-imputed-r",
+            "requirement": "Worked example: gene R shown in segmented cancer cells but absent from the probe panel is imputed, not directly measured; the reference, model and validation must be reported.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "limitations",
+                "fieldSha256": "8ede25cf48c86f25b5d272e348a0931b1f5fd24e7b9531dd963a95b0841f81a0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-spatial-transcriptomics::table-card",
+            "requirement": "Assay card: measures and how, input and tissue cost, output and units, thresholds, failure modes, limits, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-computational",
+                "field": "notes",
+                "fieldSha256": "265fd2c37d6df7b19d7f97db7d92bca714ab82ee42074f6e53317ab0b41d8f19",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -36847,8 +39831,211 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning Sonnet assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "All 34 source identities, 374 section signatures and 346 requirement anchors reproduce. Learning requirements precede their canonical field comparison. Actual reader and export passages pass; source observations, definitions, fictional examples and labelled inferences retain distinct roles. The unverified FFPE adaptation assertion is withheld and remains in the adjacent queue.",
+        "sectionHashes": [
+          "84402a22773fcdf91f5eee97f101d593d9dd426a89f8630672fd2143cab7a06a",
+          "e52b42037b2047e28405917a317dc7bcc1130b53e68c3d23395a473cde941e23",
+          "1bedb2711a110ab67fddd989e8f5a0874469ffcd9c6feae0d24af6032f1578aa",
+          "558a5f593c21b227944ea59283ae22ae32877db1c5f270f649c8c14894487df8",
+          "bf59eb911ef5f2ea2f7668ab51c4a873f9ae06724c37780aa3316bf95399fc13",
+          "c91bb29a550b3c97feb436b8b5d7364826df08ad93120ecadfe7f212bbae2b2a",
+          "e8a10fb543b2545039440506a6703b648634f96d2aa0212ba1c67993e84cc630",
+          "3f25fee26ffe6fc69dc61aea77910ff264f2e13410aea98d6f082af8eaf6f81f",
+          "ce8e167de1682334d66907762fcb0f8255f5c03ef3f9ce21db845d6eba0b65bb",
+          "a4cb4b9414570283e25682da0564d6b967633402023951f3df7a2e64b99e88e6",
+          "996a80910020e55bbcf5750eb67ccc9443ef0901b5edcd122e39baad1085a882",
+          "a4e25e4625066599d4d9adfa183eb33d5cc4d003fdb073e9e38fda04bf96b1e5"
+        ],
+        "points": [
+          {
+            "id": "spatial-targeted-proteomics-and-loq::mrm",
+            "requirement": "MRM follows predefined precursor-to-fragment transitions; identity, interference and performance are checked per peptide.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "da8845a21271a12f8bce6f54f06fc6366ba74ef529e79fd24b4086fd94bf020b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::peptide-proxy",
+            "requirement": "A selected peptide is a proxy for its source protein; it cannot count intact receptors or surface copies.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "da8845a21271a12f8bce6f54f06fc6366ba74ef529e79fd24b4086fd94bf020b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::standards-and-matrix",
+            "requirement": "Internal standard timing matters: a peptide added after digestion cannot correct failed extraction or digestion; matrix affects recovery.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "da8845a21271a12f8bce6f54f06fc6366ba74ef529e79fd24b4086fd94bf020b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::lod-vs-loq",
+            "requirement": "LoD distinguishes signal from background; LLOQ is where quantitative performance meets defined precision/bias criteria; an upper limit also bounds the range.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "detection-versus-quantification",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "77e5dcdae8abd2d463de3a164ade3c04e89e4b9e53b2b9a34d1131d69ccbcfc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::below-loq-not-zero",
+            "requirement": "Detected below LoQ is meaningful without a reliable amount, and neither it nor not-detected means biological zero.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "detection-versus-quantification",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "77e5dcdae8abd2d463de3a164ade3c04e89e4b9e53b2b9a34d1131d69ccbcfc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::denominator",
+            "requirement": "Report the denominator (e.g. total extract protein); it describes the mixture, not receptors per malignant cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "summary",
+                "fieldSha256": "da8845a21271a12f8bce6f54f06fc6366ba74ef529e79fd24b4086fd94bf020b",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::worked-below-loq",
+            "requirement": "Worked example: summary changing detected-below-LoQ to absent must be corrected to retain the limit and units.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::figure-reportable-range",
+            "requirement": "Figure peptide-response-and-reportable-range: blank, detected-below-LLOQ, validated and saturated regions; saturated response supports no dependable amount.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::precision-vs-accuracy",
+            "requirement": "Repeated agreement (precision) can coexist with systematic bias, so precision is not accuracy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "detection-versus-quantification",
+                "version": "draft-371",
+                "field": "summary",
+                "fieldSha256": "77e5dcdae8abd2d463de3a164ade3c04e89e4b9e53b2b9a34d1131d69ccbcfc0",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              },
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-targeted-proteomics-and-loq::table-card",
+            "requirement": "Assay card: measures and how, input and tissue cost, output and units, thresholds, failure modes, limits, validation tier.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "targeted-proteomics-quantification",
+                "version": "draft-373",
+                "field": "notes",
+                "fieldSha256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+                "explanation": "Exact current authored passage, source role and actual reader/export checks retained in spatial-computational-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -58987,6 +62174,182 @@
             "remaining": [
               "Reconcile dated prevalence, medicine-development, indication, guideline, turnaround and cost statements separately from the completed molecular and assay teaching. Source-scoped summaries replace unsupported blanket lead paragraphs in this batch.",
               "Existing canonical owner: brca"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-paper-owner-census",
+      "title": "Paper ownership for method publications",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1371/journal.pcbi.1002240"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Dedupe the resolved publications against existing paper owners before adding any missing paper records or keyPapers links.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Dedupe the resolved publications against existing paper owners before adding any missing paper records or keyPapers links.",
+              "Existing or candidate canonical owner: mass-spec-proteome"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-mif-clinical-prediction",
+      "title": "Clinical prediction claims for multiplex imaging",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1136/jitc-2020-002197"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "The inherited unqualified checkpoint-response meta-analysis sentence is removed from this method summary; verify any proposed clinical prediction claim for the specified panel, setting, comparator and outcome.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The inherited unqualified checkpoint-response meta-analysis sentence is removed from this method summary; verify any proposed clinical prediction claim for the specified panel, setting, comparator and outcome.",
+              "Existing or candidate canonical owner: multiplex-immunofluorescence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-ffpe-immunopeptidomics",
+      "title": "Preparation-specific HLA ligand recovery",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.3791/63052",
+        "https://doi.org/10.1016/j.labinv.2022.100052",
+        "https://doi.org/10.1093/clinchem/hvab047"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Resolve the lesson’s claim that Sirois 2021 proposed an FFPE adaptation. The publisher remains inaccessible; targeted FFPE protein quantification is not interchangeable with recovery of naturally HLA-bound ligands.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Resolve the lesson’s claim that Sirois 2021 proposed an FFPE adaptation. The publisher remains inaccessible; targeted FFPE protein quantification is not interchangeable with recovery of naturally HLA-bound ligands.",
+              "Existing or candidate canonical owner: immunopeptidomics"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-segmentation-error-taxonomy",
+      "title": "Segmentation error classes",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1038/s41587-021-01094-0"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Read the original error-class method cited by Greenwald before adding a detailed taxonomy beyond the assessed merge, split, miss and assignment concepts.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Read the original error-class method cited by Greenwald before adding a detailed taxonomy beyond the assessed merge, split, miss and assignment concepts.",
+              "Existing or candidate canonical owner: cell-segmentation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-lead-time-monitoring",
+      "title": "Lead time in recurrence monitoring",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://www.fda.gov/media/183874/download"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Supplement the existing screening-framed lead-time owner for recurrence monitoring with appropriately scoped source evidence; the method note in analytical validation is labelled inference.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Supplement the existing screening-framed lead-time owner for recurrence monitoring with appropriately scoped source evidence; the method note in analytical validation is labelled inference.",
+              "Existing or candidate canonical owner: lead-time-bias"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-model-landscape-scope",
+      "title": "Model catalogue and intervention guarantees",
+      "domain": "spatial-computational-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1038/s41592-025-02772-6"
+      ],
+      "discoveryOccurrences": [
+        "spatial-computational-completion-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope reconciliation; no extra coverage credit",
+        "checkedAt": "2026-11-10",
+        "rationale": "Adjacent discovery queued separately from this assigned batch.",
+        "points": [
+          {
+            "id": "scope",
+            "requirement": "Review other model owners for the broad vendor, transfer and mutation-drug response claims removed from inherited lead paragraphs here. No guarantee that returning no response to a mutation-driven drug is correct is retained.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Review other model owners for the broad vendor, transfer and mutation-drug response claims removed from inherited lead paragraphs here. No guarantee that returning no response to a mutation-driven drug is correct is retained.",
+              "Existing or candidate canonical owner: virtual-cell-models"
             ]
           }
         ]

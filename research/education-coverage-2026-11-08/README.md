@@ -8,19 +8,17 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
-The original census has **174/537 files assessed or classified**: 167 teaching sources plus 7 routing-only files. Of 752 assessed requirements, 745 have exact draft evidence and 7 remain open. Complete draft representation covers 163 sources; 4 retain residual requirements and 363 ordinary content sources remain unread.
+The original census has **191/537 files assessed or classified**: 184 teaching sources and 7 routing-only files. Of 925 assessed requirements, 918 have exact draft evidence and 7 remain open. Complete draft representation covers 180 sources; 4 retain residual requirements. Another 346 ordinary sources are unread.
 
-The later inventory independently has **159/550 teaching sources assessed and draft represented**, with all 736 assessed requirements evidenced. It retains 386 ordinary unread sources and 5 unclassified navigation sources. Counts overlap and are never added. Each ref retains 1,888 assets: 116 teaching paths are reviewed and 1772 remain unclassified.
+The later census independently has **176/550 teaching sources assessed and draft represented**, with 909/909 assessed requirements evidenced. It retains 369 ordinary unread sources and 5 unclassified navigation sources. These inventories overlap and are never added. Each ref retains 1,888 assets: 146 teaching paths are reviewed and 1742 remain unclassified.
 
-Draft [#375](https://github.com/judegomila/OnCo/pull/375) covers 262 canonical owners (69 new and 193 existing), plus one directory consumer. Across #375, #373 and #369, 1116 distinct summary-consumer entries are snapshotted: 330 contain text and 786 use English fallback. Consumer entries are not graph records or named language reviews.
+The [spatial and computational checkpoint](spatial-computational-2026-11-10/README.md) adds seventeen assessed lessons at each ref, with 173 semantic requirements, 374 section signatures and 215 exact passages verified in actual readers and Markdown. Twenty owners are changed across drafts [#375](https://github.com/judegomila/OnCo/pull/375), [#373](https://github.com/judegomila/OnCo/pull/373) and [#371](https://github.com/judegomila/OnCo/pull/371). Only overfitting and multi-omic integration are new subjects. Existing notes carry the reading guides, cards and worked examples; this batch adds no schema dependency. Thirty individual light/dark figures and 55 publication occurrences retain their actual source roles and reading depths.
 
-The [repair/signalling checkpoint](repair-signaling-2026-11-10/README.md) adds sixteen assessed lessons per ref and supplements seventeen existing owners. All 388 sections reproduce. The 128 assessment rows retain 125 applicable versioned proofs: 61 original and 64 later requirements. Three later-only additions earn no original-version credit. No new canonical identities are created. KEAP1 uses the established handwritten-target precedence rule, preserving generated catalogue fields and its lung supplement. The schema draft receives the same RAS narrative while retaining distinct nodes/edges and pending approval.
+The IC50 endpoint distinction now has readable primary methods support. The FFPE adaptation assertion remains explicitly unverified. Inherited universal split rules, all-protein claims, exclusive phosphosite-route claims and virtual-cell intervention guarantees are corrected. All three standalone gate chains pass. Twenty-two selected JSON outputs, 215 rendered and Markdown passages and 198 summary selectors are checked. No new Next production build, browser hydration, hosted review, expert sign-off, named language review, merge or deployment is asserted.
 
-The checkpoint corrects a misidentified inherited OMO-103 link, separates repair history from current function and benefit, and restores the source-scoped FLT3 relationship explanation. All 30 light/dark figure paths are reviewed with lesson context. All 67 selected body and actual Markdown passages pass, and 18 selected JSON records match their owning graphs. All 162 selected short-summary selectors use corrected English fallback; 153 are distinct new audit entries. Full standalone suites pass. No new named language review, Next production build, hosted review, expert sign-off, merge or deployment is asserted.
+Draft #375 now covers 272 canonical owners (71 new and 201 existing), plus one directory consumer. Across the recorded drafts, 1296 distinct summary-consumer entries are snapshotted: 341 contain existing text and 955 use English fallback. These entries are neither graph records nor language reviews. Per-draft owner counts overlap and are not added.
 
-Shared state has 33 adjacent findings (23 represented, 10 open), 633 literature occurrences (523 screened, 110 unreviewed) and six open schema findings (five implemented contracts awaiting product review, one requiring design). Occurrences are not independent studies. New adjacent work covers the HRD-testing owner, other checkpoint-dependence definitions and dated clinical landscape claims.
-
-The earlier [RNA](rna-delivery-2026-11-10/README.md), [cell-death](death-metabolism-2026-11-09/README.md), [antigen/antibody](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints retain their records, source versions and residual work. Main coverage and clean complete final re-audits remain zero. The goal remains active.
+Shared state has 39 adjacent findings (23 represented and 16 open), 688 literature occurrences (578 screened and 110 unreviewed), and six open schema findings (five implemented contracts awaiting product review and one requiring design). Occurrences are not independent studies. Earlier [repair/signalling](repair-signaling-2026-11-10/README.md), [RNA](rna-delivery-2026-11-10/README.md), [cell-death](death-metabolism-2026-11-09/README.md), [antigen/antibody](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints are preserved. Main coverage and clean final re-audits remain zero. The goal is active.
 
 ## Method
 
@@ -71,7 +69,9 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-rna-delivery.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-rna-summary-consumers.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-repair-signaling.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-repair-summary-consumers.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-repair-summary-consumers.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-spatial-computational.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-spatial-summary-consumers.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

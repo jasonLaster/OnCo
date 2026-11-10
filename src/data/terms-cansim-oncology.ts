@@ -18,7 +18,7 @@ const provenance = { editedBy: "OnCo CanSim terms wave (Wikipedia summaries, sta
 export const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 export const DOI = (d: string) => `https://doi.org/${d}`;
 
-type T = Omit<TermInput, "kind" | "asOf" | "provenance" | "tags"> & { cansim?: string } & { asOf?: string };
+type T = Omit<TermInput, "kind" | "asOf" | "provenance" | "tags"> & { cansim?: string } & { asOf?: string; provenance?: TermInput["provenance"] };
 /** Term with the CanSim attribution note and a link back to the hub term, so no record is an orphan. */
 export const cansimTerm = (x: T): TermInput => {
   const { cansim, ...rest } = x;
@@ -186,10 +186,51 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Moran's I is a measure of spatial autocorrelation, the correlation of a signal among nearby locations in space, developed by P. A. P. Moran (Wikipedia). Values near +1 mean neighbouring spots agree, near 0 no spatial pattern, and a permutation test gives the p-value. In spatial transcriptomics it is used to show that predicted risk, subtype or expression forms coherent domains rather than noise, and methods such as SpaGCN build the neighbourhood structure into clustering.",
     technologies: ["spatial-transcriptomics"], terms: ["permutation-test", "spagcn"] }),
   t({ id: "variant-effect-prediction", name: "Variant effect prediction", category: GEN, aka: ["variant effect prediction", "variant effect predictor", "predicted pathogenicity", "in silico pathogenicity prediction", "missense effect prediction"],
-    wikipedia: W("Variant_calling"), links: [{ label: "HGVS nomenclature", url: "https://hgvs-nomenclature.org/stable/" }], cansim: "/terms/variant-effect-prediction",
-    tldr: "Variant effect prediction uses computation to guess whether a DNA change damages a protein or matters clinically, before or instead of laboratory evidence.",
-    summary: "Variant calling, per Wikipedia, identifies single nucleotide and other variants from sequencing reads; effect prediction is the next step, scoring each variant's likely consequence from conservation, protein structure or, latterly, sequence and protein language models. Predictions feed ACMG-style classification as supporting evidence, and genomic foundation models such as Evo 2 have claimed zero-shot pathogenicity prediction, a claim that has to be tested on held-out variants with clinical labels.",
-    terms: ["variant-calling", "hgvs"], technologies: ["evo2", "nucleotide-transformer"], related: ["clinvar"] }),
+    wikipedia: W("Variant_calling"), links: [
+  {
+    "label": "HGVS nomenclature",
+    "url": "https://hgvs-nomenclature.org/stable/"
+  },
+  {
+    "label": "Ensembl: calculated variant consequences (release 116 documentation)",
+    "url": "https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html"
+  },
+  {
+    "label": "Li et al., Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer (Journal of Molecular Diagnostics 2017)",
+    "url": "https://doi.org/10.1016/j.jmoldx.2016.10.002"
+  },
+  {
+    "label": "Pejaver et al., Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria (American Journal of Human Genetics 2022)",
+    "url": "https://doi.org/10.1016/j.ajhg.2022.10.013"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Variant_calling"
+  }
+], cansim: "/terms/variant-effect-prediction",
+    tldr: "A variant-effect prediction estimates a defined consequence of a DNA change for a specified transcript or task. It does not by itself establish disease causation or treatment benefit.",
+    summary: "Variant-effect prediction estimates a specified consequence of a sequence change, whereas variant calling identifies changes from sequence data. Ensembl maps each allele of a variant onto every overlapping transcript with a rule-based approach, so the same genomic change can have a different consequence in different transcripts, and its impact categories (high, moderate, low, modifier) are qualitative assumptions about likely effect, not a measured loss of function (Ensembl documentation, release 116). A score from a missense tool does not answer a splice or regulatory question, and a prediction should name the reference genome, the alleles and the transcript (with its version) it was made for. A raw model score is not automatically a probability: a splice score of 0.92 on an unspecified scale does not mean a 92 per cent chance of lost function, because thresholds and evidence strengths belong to a particular tool and task. The absence of a prediction does not make a variant benign, because a tool may not cover that variant type or transcript. RNA junction evidence, functional experiments and clinical studies address different gaps, and none is interchangeable with a sequence score. Two reports of the same prediction from the same software version are two copies of one computed result, not two independent experiments. Where a tool's training data overlap the variants used to evaluate it, its performance can be overestimated, which is why the ClinGen calibration of thirteen missense tools to ACMG/AMP pathogenicity and benignity evidence strengths, estimated from local positive predictive value, used datasets assembled to minimise that circularity (Pejaver and colleagues, 2022). That calibration used ClinVar missense variants classified as pathogenic or benign and rare in gnomAD, within the ACMG/AMP recommendations for variants in genes associated with monogenic disease, and it selected no tool designed for splice variants. Its introduction notes that many methods overlap and so do not offer independent assessment of pathogenicity, which is why agreement between tools that share training data or inputs is not independent confirmation. The AMP, ASCO and CAP guideline for somatic variants notes that early prediction algorithms were developed and validated for germline variants and recommends that their results never be used as the sole evidence for variant classification or clinical decision making (Li and colleagues, 2017).",
+    terms: [
+  "variant-calling",
+  "hgvs",
+  "data-leakage",
+  "external-validation"
+], technologies: [
+  "evo2",
+  "nucleotide-transformer",
+  "alphamissense"
+], related: ["clinvar"] ,
+"asOf": "2026-11-10",
+"provenance": {
+  "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts, selected full texts and the Ensembl documentation read",
+  "editedOn": "2026-11-09",
+  "note": "Added from the Ensembl release 116 consequence documentation, Li 2017 (PMID 27993330, PMC HTML read for the in silico prediction section), and Pejaver 2022 (PMID 36413997, full text PMC9748256 read for the circularity discussion and for the absence of any somatic or drug-response analysis). The earlier CanSim terms-map text is unchanged: CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project."
+},
+"notes": [
+  "Model card for a variant-effect tool (a reading guide, not a score). Measures: a predicted consequence or effect for a stated sequence change and task. How: confirm the input change, choose the reference and model, calculate the output, then interpret it against calibration that suits the task. Input and tissue cost: existing sequence data and reference metadata; the computation uses no tissue, although producing the sequence input may have consumed a specimen. Output and units: consequence terms or model-specific scores, with tool version and transcript. Thresholds: tool-, task- and validation-specific, with no universal damaging cutoff. Failure modes: wrong transcript, unsupported variant type, biased evaluation or incompatible inputs. Cannot establish alone: measured protein function, a complete tumour mechanism or benefit from a drug. Validation tier: a software output has no automatic clinical status; the laboratory's validated intended use is a separate question.",
+  "Figure reading (fictional layouts, no real coordinates): one genomic change, labelled P (C to T), falls inside an exon of transcript T1 and inside an intron of transcript T2 because the two transcripts have different exon boundaries. Three separate questions follow: annotation asks where P sits, a splice model asks whether exon joining could change, and an RNA assay tests the proposed joins. A score needs its model's task and scale, and a predicted effect does not establish benefit."
+]
+}),
 
   // ---- Assays and data modalities ----
   t({ id: "bulk-rna-seq", name: "Bulk RNA sequencing (RNA-seq) and the full transcriptome", category: GEN, aka: ["bulk RNA-seq", "bulk RNA sequencing", "bulk transcriptome", "bulk expression", "full transcriptome", "whole transcriptome", "transcriptome-wide expression", "~20k genes"],
@@ -289,10 +330,52 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "A reverse phase protein lysate microarray is a dot-blot platform that measures protein expression in many samples simultaneously and quantitatively where high-quality antibodies exist (Wikipedia). TCGA ran RPPA on most tumours for roughly 150 to 200 proteins and phosphoproteins chosen for signalling pathways, which makes it the only pan-cancer protein data at scale, though a targeted rather than genome-wide view. Deep mass spectrometry from CPTAC covers thousands of proteins on fewer tumours.",
     technologies: ["proteomics"], terms: ["pathway-activation-state", "mass-spec-proteome"], related: ["tcga-gdc"] }),
   t({ id: "mass-spec-proteome", name: "Deep mass-spectrometry proteome (CPTAC)", category: BM, aka: ["mass-spectrometry proteome", "mass spectrometry proteomics", "deep proteome", "global proteome", "MS proteomics", "TMT proteomics", "phospho-proteomics data"],
-    wikipedia: W("Mass_spectrometry"), links: [{ label: "CPTAC (NCI Office of Cancer Clinical Proteomics Research)", url: "https://proteomics.cancer.gov" }], cansim: "/terms/deep-ms-proteome",
-    tldr: "Mass spectrometry weighs fragments of every protein in a sample to identify and quantify thousands of proteins and their phosphorylation sites, the closest measurement to what a cell is actually doing.",
-    summary: "Mass spectrometry measures the mass-to-charge ratio of ions and is used to identify molecules (Wikipedia); in proteomics, peptides from digested proteins are quantified, often with isobaric tags across samples. CPTAC applied this genome-scale proteomics and phosphoproteomics to TCGA-linked tumours through several processing centres, giving paired RNA and protein for about a thousand tumours. It is the reference for mRNA-protein concordance and the only route to phosphosite-level pathway activity.",
-    technologies: ["proteomics", "proteomics-platforms"], related: ["cptac"], terms: ["rppa", "mrna-protein-concordance", "pathway-activation-state"] }),
+    wikipedia: W("Mass_spectrometry"), links: [
+  {
+    "label": "CPTAC (NCI Office of Cancer Clinical Proteomics Research)",
+    "url": "https://proteomics.cancer.gov"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mass_spectrometry"
+  },
+  {
+    "label": "Aebersold and Mann, Mass spectrometry-based proteomics (Nature 2003)",
+    "url": "https://doi.org/10.1038/nature01511"
+  },
+  {
+    "label": "Lukasse and America, Protein inference using peptide quantification patterns (Journal of Proteome Research 2014)",
+    "url": "https://doi.org/10.1021/pr401072g"
+  },
+  {
+    "label": "Elias and Gygi, Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry (Nature Methods 2007)",
+    "url": "https://doi.org/10.1038/nmeth1019"
+  },
+  {
+    "label": "Mertins et al., Proteogenomics connects somatic mutations to signalling in breast cancer (Nature 2016)",
+    "url": "https://doi.org/10.1038/nature18003"
+  },
+  {
+    "label": "Carr et al., Targeted peptide measurements in biology and medicine (Molecular and Cellular Proteomics 2014)",
+    "url": "https://doi.org/10.1074/mcp.M113.036095"
+  }
+], cansim: "/terms/deep-ms-proteome",
+    tldr: "Mass-spectrometry proteomics identifies protein-derived peptides and can quantify signals under a defined workflow. It does not measure every protein or directly establish a cell's activity.",
+    summary: "Bottom-up mass-spectrometry proteomics identifies protein-derived peptides and can quantify selected signals under a defined workflow. Mass spectrometry-based proteomics can identify and increasingly quantify thousands of proteins in complex samples (Aebersold and Mann, 2003). Protein inference, working out which proteins are present from the identified peptides, is difficult because many peptide sequences occur in several proteins (Lukasse and America, 2014). The target-decoy strategy uses hits to a decoy database to distinguish correct from incorrect peptide identifications (Elias and Gygi, 2007), and a dataset-level false-positive rate is a property of the accepted set, not a guarantee for each identification (Beausoleil and colleagues, 2006 reported a peptide false-positive rate of 1.3 per cent for their dataset). In 105 genomically annotated breast cancers, 77 of which gave high-quality data, pathway analysis of the phosphoproteome identified a G-protein-coupled receptor cluster that was not readily identified at the mRNA level (Mertins and colleagues, 2016).",
+    technologies: ["proteomics", "proteomics-platforms"], related: ["cptac"], terms: [
+  "rppa",
+  "mrna-protein-concordance",
+  "pathway-activation-state",
+  "multi-omic-integration"
+] ,
+"notes": [
+  "Reading guide (OnCo inference built on the sources). Bottom-up proteomics digests proteins to peptides, separates them by liquid chromatography, measures ions and fragments by tandem mass spectrometry, and identifies peptides by software, so evidence for an intact, functional protein is indirect. A shared peptide cannot choose between candidate proteins; inference uses the other peptides recovered and reports ambiguity. A ratio needs its denominator, an absolute amount needs calibration with standards in a matched matrix (Carr and colleagues, 2014), and a peptide standard does not by itself show recovery of the original protein. A bulk extract mixes cells and loses their positions, so a peptide signal per mass of extract is not receptors per cancer cell.",
+  "Fictional worked example. A bulk assay reports twice as much receptor-derived peptide per microgram of extract. Twice as much signal per unit of extract mass (2 x) does not mean twice as many accessible receptors on each cancer cell, because cell mixture, location and the relation of the quantified peptide to receptor forms are unresolved; a cell-specific surface measurement answers a different question.",
+  "Figure reading (fictional schematic, light and dark renders agree): proteins from a defined mixed sample are extracted and digested into a peptide mixture; peptide signals come from a separation and measurement step; one shared peptide fits both candidate protein A and candidate protein B, so it cannot say which was present; intact form, source cells and surface access remain separate questions that need other evidence.",
+  "Assay card in words (a reading guide). Measures and method: protein-derived peptide identity and abundance after extraction, digestion, separation and ion measurement. Input and tissue cost: a defined tissue or cell extract; fresh-frozen and formalin-fixed workflows exist with method-specific input needs; extraction consumes material and destroys spatial arrangement. Output and units: peptide and protein identifiers, normalised intensity or ratios; calibrated assays may report amounts such as femtomoles per microgram of input protein. Thresholds: identification false-discovery rate, analyte-specific detection and quantification limits, missing-value rules and calibrated range, with no universal abundance cutoff for treatment. Failure modes: incomplete extraction or digestion, shared peptides, interference, missing low-abundance analytes and inconsistent preparation. Limits: no automatic intact-form, location, accessibility, cell-of-origin or dependency conclusion. Validation context: broad discovery and targeted clinical measurement have different requirements."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "ehr-text-pathology-reports", name: "Clinical text: EHR notes and pathology reports", category: CLIN, aka: ["EHR text", "electronic health record text", "free-text clinical notes", "pathology report text", "pathology reports", "clinical notes", "unstructured clinical data"],
     wikipedia: W("Electronic_health_record"), cansim: "/terms/ehr-text",
     tldr: "Much of what is known about a patient sits in free text, in clinic notes and pathology reports; language models are now used to read it and to pair it with slides.",

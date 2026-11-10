@@ -1131,15 +1131,59 @@ export const technologies: TechnologyInput[] = [
 
   // ======================= Areas from the Prometheus technology map that OnCo lacked (15 Sept 2026) =======================
   {
-    id: "spatial-transcriptomics", related: ["htan"], companies: ["navignostics", "vicinity-bio"], dependsOn: ["spatial-biology-instruments", "rna-seq"], kind: "technology", name: "Spatial transcriptomics", sections: ["diagnostics","drug-discovery"], status: "emerging", asOf, wikipedia: W("Spatial_transcriptomics"),
-    tldr: "Methods that read which genes are switched on in each spot or cell of a tumour slice while keeping the tissue's geography, so scientists can see how cancer, immune and stromal cells sit next to one another.",
-    summary: "Spatial transcriptomics measures gene expression across a tissue section without losing position. Sequencing-based platforms capture RNA on barcoded spots (10x Genomics Visium), while imaging-based platforms read hundreds to thousands of RNA species in place at single-cell resolution (MERFISH, 10x Xenium, NanoString CosMx). In oncology it maps the tumour microenvironment, immune exclusion and clonal territories, and it underpins atlases such as the Human Tumor Atlas Network.",
+    id: "spatial-transcriptomics", related: ["htan"], companies: ["navignostics", "vicinity-bio"], dependsOn: ["spatial-biology-instruments", "rna-seq"], kind: "technology", name: "Spatial transcriptomics", sections: ["diagnostics","drug-discovery"], status: "emerging", asOf: "2026-11-10", wikipedia: W("Spatial_transcriptomics"),
+    tldr: "These methods measure RNA signals while keeping information about position in a tissue section. A measured spot, an estimated cell boundary and an imputed value are different kinds of evidence.",
+    summary: "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
     principle: "Tissue sections are either overlaid on barcoded capture arrays whose oligonucleotides record position before sequencing, or hybridised with fluorescent probes read out over many imaging rounds with combinatorial barcodes.",
     strengths: ["Keeps position, which single-cell sequencing discards","Reveals immune exclusion, niches and cell neighbourhoods","Works on archived formalin-fixed tissue on newer platforms"],
-    limitations: ["Costly and data-heavy, mostly research use","Spot-based methods mix several cells per spot","No agreed clinical assay yet"],
+    limitations: [
+  "Costly and data-heavy, mostly research use",
+  "A capture unit may contain contributions from more than one cell",
+  "Assigning molecules to cells relies on estimated cell boundaries",
+  "A section samples part of a tumour, and adjacent sections do not contain identical cells",
+  "Genes imputed from a single-cell reference are model estimates, not measurements",
+  "Region-of-interest profiling depends on which regions are chosen",
+  "No agreed clinical assay yet"
+],
     technologies: ["single-cell-spatial","digital-pathology-ai"],
-    links: [{ label: "Wikipedia", url: W("Spatial_transcriptomics") }],
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Spatial_transcriptomics"
   },
+  {
+    "label": "Stahl et al., Visualization and analysis of gene expression in tissue sections by spatial transcriptomics (Science 2016)",
+    "url": "https://doi.org/10.1126/science.aaf2403"
+  },
+  {
+    "label": "Merritt et al., Multiplex digital spatial profiling of proteins and RNA in fixed tissue (Nature Biotechnology 2020)",
+    "url": "https://doi.org/10.1038/s41587-020-0472-9"
+  },
+  {
+    "label": "Chen et al., Spatially resolved, highly multiplexed RNA profiling in single cells (Science 2015)",
+    "url": "https://doi.org/10.1126/science.aaa6090"
+  },
+  {
+    "label": "Petukhov et al., Cell segmentation in imaging-based spatial transcriptomics (Nature Biotechnology 2022)",
+    "url": "https://doi.org/10.1038/s41587-021-01044-w"
+  },
+  {
+    "label": "Biancalani et al., Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram (Nature Methods 2021)",
+    "url": "https://doi.org/10.1038/s41592-021-01264-7"
+  }
+],
+
+"terms": [],
+"provenance": {
+  "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts and selected full texts read",
+  "editedOn": "2026-11-09",
+  "note": "Added from Stahl 2016 (PMID 27365449), Merritt 2020 (PMID 32393914), Chen 2015 (PMID 25858977), Petukhov 2022 (PMID 34650268) and Biancalani 2021 (PMID 34711971): DOI and PMID resolved and matched on title, authors and year; numbers read in the abstracts. The Xenium segmentation documentation cited by the lesson could not be fetched (HTTP 429) and is not used."
+},
+"notes": [
+  "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+  "Figure reading (fictional geometry, no platform scale): a capture spot is one barcode that can pool several cells. Imaging decodes six RNA coordinates, three for gene G and three for gene H (3 + 3 = 6), and these are coordinates, not cell labels. Moving the estimated cell masks changes which cell a coordinate is assigned to while the RNA stays fixed. Gene R is absent from the G and H panel, so a model-inferred R value is not an observed molecule, and RNA position is not protein or function."
+]
+},
   {
     id: "imaging-mass-cytometry", companies: ["navignostics", "ionpath"], kind: "technology", name: "Imaging mass cytometry", sections: ["diagnostics"], status: "emerging", asOf, wikipedia: W("Mass_cytometry"),
     tldr: "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
@@ -1151,15 +1195,50 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Mass_cytometry") }],
   },
   {
-    id: "multiplex-immunofluorescence", companies: ["navignostics", "vicinity-bio", "strand-ai"], kind: "technology", name: "Multiplex immunofluorescence", sections: ["diagnostics"], status: "established", asOf, wikipedia: W("Immunofluorescence"),
-    tldr: "Staining one tumour slide for several proteins in different colours, then using software to count immune and cancer cells and measure how close they are.",
-    summary: "Multiplex immunofluorescence extends standard immunohistochemistry to six to eight markers per slide using tyramide signal amplification and multispectral imaging (Akoya Phenoptics), or to dozens with cyclic staining (CODEX/PhenoCycler). Combined with image analysis it quantifies immune-cell composition and spatial arrangement, which large meta-analyses have found to predict response to checkpoint inhibitors better than PD-L1 staining alone.",
+    id: "multiplex-immunofluorescence", companies: ["navignostics", "vicinity-bio", "strand-ai"], kind: "technology", name: "Multiplex immunofluorescence", sections: ["diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: W("Immunofluorescence"),
+    tldr: "This approach measures several protein markers in a tissue section, in one or more imaging cycles. Image analysis then estimates cells, counts and distances under defined rules.",
+    summary: "Multiplex immunofluorescence measures selected protein-marker signals in a tissue section, using one or several imaging cycles. Cyclic methods build a high-plex image of one section by repeating staining, imaging and signal removal and then registering the cycles: t-CyCIF produced up to 60-plex images of formalin-fixed specimens and showed that antigenicity changes with cycle number (Lin and colleagues, 2018), and IBEX imaged more than 65 parameters in one section by iterative staining and chemical bleaching (Radtke and colleagues, 2020). A six-institution study of a six-plex PD-1 and PD-L1 panel, imaged with a locked-down image analysis algorithm, reported average intersite concordance of cell densities of R squared 0.75 in breast carcinoma and 0.72 in non-small cell lung cancer tissue microarrays (Taube and colleagues, 2021); that is reproducibility for one specified panel and workflow, not for multiplex immunofluorescence in general. A cell phenotype is a rule-based call from the measured panel, a density needs a stated denominator, and a distance needs a stated definition (cell centre or cell boundary).",
     principle: "Sequential antibody staining with fluorescent tyramide deposition, antibody stripping between rounds, and spectral unmixing to separate channels.",
     strengths: ["Uses standard pathology sections","Captures cell-to-cell proximity","Better predictor of immunotherapy response than single-marker IHC in pooled studies"],
-    limitations: ["Panel design and validation are laborious","Inter-laboratory standardisation incomplete","Not yet a routine clinical test"],
+    limitations: [
+  "Panel design and validation are laborious",
+  "Inter-laboratory standardisation incomplete",
+  "Cell calls depend on estimated cell boundaries, and repeated cycles can change signal or tissue retention",
+  "Closeness of an immune cell to a cancer cell does not show recognition or killing",
+  "A virtual or computationally predicted marker map is a prediction, not performed staining",
+  "Clinical use needs evidence for the specific panel, analysis and intended decision"
+],
     technologies: ["digital-pathology-ai"],
-    links: [{ label: "Wikipedia", url: W("Immunofluorescence") }],
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Immunofluorescence"
   },
+  {
+    "label": "Lin et al., Highly multiplexed immunofluorescence imaging of human tissues and tumors using t-CyCIF and conventional optical microscopes (eLife 2018)",
+    "url": "https://doi.org/10.7554/eLife.31657"
+  },
+  {
+    "label": "Radtke et al., IBEX: A versatile multiplex optical imaging approach for deep phenotyping and spatial analysis of cells in complex tissues (PNAS 2020)",
+    "url": "https://doi.org/10.1073/pnas.2018488117"
+  },
+  {
+    "label": "Taube et al., Multi-institutional TSA-amplified Multiplexed Immunofluorescence Reproducibility Evaluation (MITRE) Study (Journal for ImmunoTherapy of Cancer 2021)",
+    "url": "https://doi.org/10.1136/jitc-2020-002197"
+  }
+],
+
+"terms": [],
+"provenance": {
+  "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts and selected full texts read",
+  "editedOn": "2026-11-09",
+  "note": "Added from Lin 2018 (PMID 29993362, full text PMC6075866 read for the cycle-number and staining-order experiment), Radtke 2020 (PMID 33376221) and Taube 2021 (PMID 34266881, results read in the abstract and full text PMC8286792): DOI and PMID resolved and matched on title, authors and year. The existing meta-analysis sentence on checkpoint-inhibitor prediction was not re-verified in this batch and is unchanged."
+},
+"notes": [
+  "Assay card for multiplex immunofluorescence (a reading guide, not a score). Input and tissue cost: a compatible fixed or frozen section; staining uses material and may involve repeated processing, and the section does not preserve viable cells for a killing assay. Output and units: marker images, fluorescence intensity in assay-dependent units, cell counts, cells per square millimetre, cell fractions and defined distances in micrometres. Controls: marker-positive and marker-negative material, comparison with validated single-marker staining, channel or spectral controls, background assessment, cycle alignment and boundary overlays. Thresholds: panel-specific marker and phenotype rules locked before the intended comparison and tested for reproducibility. Failure modes: autofluorescence, overlapping signals, nonspecific antibodies, staining-order effects, tissue loss, alignment errors and incorrect cell boundaries. Cannot establish: all proteins, live-cell behaviour, antigen specificity, actual killing or universal treatment eligibility. Validation: specific to the panel, staining, imaging, analysis and intended use.",
+  "Figure reading (fictional, no cutoff): channels A and B are measured, registered marker images; the overlay adds estimated cell masks. Centre-to-centre distance includes the cell interiors, while boundary-to-boundary distance spans only the gap, so the two rulers give different numbers for the same pair. Proximity under either rule is not contact, recognition or killing."
+]
+},
   {
     id: "ai-pathology-scoring", related: ["ai-mitosis-detection"], tags: ["precision"], companies: ["vicinity-bio", "acurion", "imagenomix"], dependsOn: ["digital-pathology-ai"], kind: "technology", name: "AI scoring of biomarkers and grade on pathology slides", sections: ["diagnostics","ai-computation"], status: "approved", asOf, since: 2021, wikipedia: W("Digital_pathology"),
     tldr: "Software that reads digitised biopsy slides to detect cancer, grade it, and score biomarkers such as HER2, PD-L1 and Ki-67 more consistently than the eye alone.",

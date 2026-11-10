@@ -10,8 +10,8 @@ export const foundationRoadmaps: RoadmapInput[] = [
     tldr: "The attempt to build a computer model of a cell good enough to predict what a drug or mutation will do before anyone runs the experiment.",
     summary: "A virtual cell would let researchers test thousands of drug ideas in silico and personalise treatment from a patient's own tumour profile. The field moved from static atlases to perturbation-trained models in five years; the honest status is that current models generalise poorly to unseen contexts and barely beat simple baselines on rigorous benchmarks, while data generation has begun to scale to the size the problem needs.",
     technologies: ["geneformer", "scgpt", "state-arc", "c2s-scale", "universal-cell-embedding", "gears", "transcriptformer", "single-cell-spatial", "crispr-screens"],
-    institutions: ["arc-institute", "stanford", "yale-school-of-medicine"],
-    companies: ["vevo-therapeutics", "chan-zuckerberg-initiative", "google-deepmind"],
+    institutions: ["arc-institute", "stanford", "yale-school-of-medicine", "chan-zuckerberg-initiative"],
+    companies: ["vevo-therapeutics", "google-deepmind"],
     steps: [
       { era: "2008-2018", title: "Atlases and bulk omics", status: "historic", description: "TCGA catalogues the genomes of 11,000 tumours; single-cell RNA-seq matures; the Human Cell Atlas begins. Models are statistical, per-dataset, and descriptive.", refs: ["tcga-gdc", "cellxgene-hca", "single-cell-spatial"] },
       { era: "2019-2022", title: "Pooled perturbation screens meet single cells", status: "historic", description: "Perturb-seq and genome-wide CRISPR screens (DepMap) give causal training data; GEARS shows graph models can predict some unseen knockouts.", refs: ["crispr-screens", "depmap", "gears"] },

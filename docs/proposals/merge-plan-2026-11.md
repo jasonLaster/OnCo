@@ -1,8 +1,10 @@
 # Merge plan, November 2026: two drug pairs that are one product each
 
-Status: **proposed, waiting for the owner.** A merge retires an id and adds a redirect to `vercel.json`, which
-`scripts/change-class.ts` classes as product, so neither pair has been merged. Until then each record names the other
-as the same product, cites the source and links to it through `related`, so a reader on either page is not misled.
+Status: **approved by the owner on 10 November 2026 and merged the same day** with `scripts/merge-records.ts`. Both
+pairs are in `MERGED_RECORDS` in `src/data/merged-records.ts`, the retired ids redirect, and the cross-references and
+`related` links of 3 November are gone. The translated and simple-English text keyed to the retired ids was dropped
+rather than renamed: it described the retired record (VS-7375 and GC012F in phase 2), which the survivor is not, and
+each survivor keeps its own.
 
 The procedure is the one in `docs/DUPLICATE-RECORDS.md`. Both pairs were run through
 `npx tsx scripts/merge-records.ts <survivor> <retired> "<reason>" --dry` on 3 November 2026; the dry run reported

@@ -70,7 +70,7 @@ export const netherlandsTrials: TrialInput[] = [
       { label: "ClinicalTrials.gov NCT02925234", url: "https://clinicaltrials.gov/study/NCT02925234" },
       { label: "Nature 2019 first report", url: "https://doi.org/10.1038/s41586-019-1600-x" },
     ],
-    institutions: ["nki", "oncode-institute"], companies: ["hartwig-medical-foundation"], people: ["emile-voest"], keyPapers: ["paper-drup-van-der-velden-nature-2019"], related: ["idea-reg-generic-targeted-therapy-drup"] }),
+    institutions: ["nki", "oncode-institute", "hartwig-medical-foundation"], people: ["emile-voest"], keyPapers: ["paper-drup-van-der-velden-nature-2019"], related: ["idea-reg-generic-targeted-therapy-drup"] }),
 ];
 
 export const netherlandsPapers: PaperInput[] = [
@@ -83,7 +83,7 @@ export const netherlandsPapers: PaperInput[] = [
     whatItMeans: "It showed that a country can let patients use an approved drug off-label without each case vanishing into an anecdote: every treatment is a trial cohort, and a cohort that works can make the case for paying for that use.",
     caveats: ["Non-randomised cohorts with small numbers each; a benefit signal is not proof of benefit over other options.", "Stable disease beyond 16 weeks counts as benefit, which flatters slow-growing tumours.", "Drugs are contributed by companies, so the menu is limited to what they offer."],
     links: [{ label: "Nature 2019", url: "https://doi.org/10.1038/s41586-019-1600-x" }, { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/31570881/" }],
-    trials: ["drup"], institutions: ["nki", "oncode-institute"], companies: ["hartwig-medical-foundation"], people: ["emile-voest", "myriam-chalabi"], related: ["paper-priestley-hartwig-metastatic-wgs-nature-2019"] }),
+    trials: ["drup"], institutions: ["nki", "oncode-institute", "hartwig-medical-foundation"], people: ["emile-voest", "myriam-chalabi"], related: ["paper-priestley-hartwig-metastatic-wgs-nature-2019"] }),
 
   p({ id: "paper-priestley-hartwig-metastatic-wgs-nature-2019", name: "Whole-genome sequencing of 2,520 metastatic tumours from the Dutch Hartwig cohort",
     tldr: "The Hartwig Medical Foundation's whole-genome analysis of metastatic cancers from Dutch patients found a variant that could steer treatment towards an approved or trial drug in 62 per cent of them.",
@@ -94,5 +94,5 @@ export const netherlandsPapers: PaperInput[] = [
     whatItMeans: "This is the cohort behind the Hartwig Medical Database, which the foundation describes as the largest of its kind, offered free of charge to researchers. It showed whole-genome sequencing of metastases done at national scale, and found a variant that could point to a treatment in most of the patients sequenced.",
     caveats: ["Actionable is not the same as benefited: the paper counts variants that could direct treatment, not outcomes after treatment.", "Patients were those referred into Dutch trial and sequencing programmes, not a population sample."],
     links: [{ label: "Nature 2019", url: "https://doi.org/10.1038/s41586-019-1689-y" }, { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/31645765/" }, { label: "Hartwig Medical Database", url: "https://www.hartwigmedicalfoundation.nl/en/data/database/" }],
-    companies: ["hartwig-medical-foundation"], technologies: ["wes-wgs"], related: ["drup"] }),
+    institutions: ["hartwig-medical-foundation"], technologies: ["wes-wgs"], related: ["drup"] }),
 ];

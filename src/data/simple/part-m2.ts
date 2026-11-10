@@ -9,7 +9,6 @@ export const simpleM2: Record<string, string> = {
   velzatinib: "GlaxoSmithKline is comparing Velzatinib, an experimental medicine of undisclosed type and target, against imatinib in a phase 3 trial for people with untreated gastrointestinal stromal tumours [a rare gut cancer].",
   vepugratinib: "Vepugratinib is an Eli Lilly small-molecule drug designed to block FGFR3 [a growth signal receptor], now in a phase 3 trial for bladder and urothelial cancer.",
   vrn110755: "Voronoi's VRN110755 is an oral small-molecule capsule that blocks faulty EGFR [a growth signal protein], including the C797S resistance mutation, in a phase 2 trial for EGFR-mutant non-small-cell lung cancer.",
-  "vs-7375": "Verastem's VS-7375 is an oral small-molecule drug that blocks the KRAS G12D mutation [a faulty gene found in several cancers], in phase 2 trials for pancreatic, lung and colorectal cancers.",
   vyriad: "Vyriad, a biotechnology company in Rochester in the United States, engineers viruses to attack cancer and runs two late-stage trials in melanoma, head and neck cancer and colorectal cancer.",
   "wigen-biomedicine-technology-shanghai": "Wigen Biomedicine Technology (Shanghai), a China-based biotechnology company, develops targeted anti-tumour drugs and is running two late-stage cancer trials of its capsule WJB001 in advanced solid tumours.",
   xnw27011: "Astellas makes XNW27011, an antibody-drug conjugate [an antibody carrying chemotherapy to cancer cells] aimed at Claudin 18.2 [CLDN18.2], in phase 2 trials for pancreatic, lung and ovarian cancers.",

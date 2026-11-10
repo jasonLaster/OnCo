@@ -204,7 +204,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["One test, all actionable alterations", "Trial matching"],
     limitations: ["Tissue quantity", "VUS interpretation", "2-3 week turnaround"],
     terms: ["ngs", "tmb", "msi", "vus"],
-    companies: ["foundation-medicine", "tempus", "caris", "guardant-health", "strata-oncology", "billiontoone", "cambridge-cancer-genomics", "data-driven-bioscience", "fidocure", "inivata", "lucence", "omanta", "oncobox", "yemaachi-biotech", "valius", "belay-diagnostics", "oncodna", "hartwig-medical-foundation", "protean-biodiagnostics", "epistamai-biotech", "predicta-biosciences"], people: ["razelle-kurzrock"], links: [{ label: "Wikipedia", url: W("Cancer_genome_sequencing") }], journals: ["cancer-genetics", "cancer-genomics-and-proteomics", "genes-chromosomes-and-cancer", "nar-cancer"],
+    companies: ["foundation-medicine", "tempus", "caris", "guardant-health", "strata-oncology", "billiontoone", "cambridge-cancer-genomics", "data-driven-bioscience", "fidocure", "inivata", "lucence", "omanta", "oncobox", "yemaachi-biotech", "valius", "belay-diagnostics", "oncodna", "protean-biodiagnostics", "epistamai-biotech", "predicta-biosciences"], institutions: ["hartwig-medical-foundation"], people: ["razelle-kurzrock"], links: [{ label: "Wikipedia", url: W("Cancer_genome_sequencing") }], journals: ["cancer-genetics", "cancer-genomics-and-proteomics", "genes-chromosomes-and-cancer", "nar-cancer"],
   },
   {
     id: "wes-wgs", dependsOn: ["ngs-bioinformatics-software"], kind: "technology", name: "Whole-exome & whole-genome sequencing", sections: ["diagnostics", "drug-discovery"], status: "established", asOf, wikipedia: W("Whole_genome_sequencing"),
@@ -319,7 +319,7 @@ export const technologies: TechnologyInput[] = [
     principle: "Fresh tumour tissue dissociated and cultured in matrix; viability read-outs per drug within 1-3 weeks.",
     strengths: ["Phenotype captures what genotype misses", "Tests combinations"],
     limitations: ["Take rate and timeline", "No stroma or immune component in most systems"],
-    technologies: ["organoids"], links: [{ label: "Wikipedia", url: W("Precision_medicine") }], companies: ["certis-oncology-solutions", "known-medicine", "notable-labs", "origin-bio", "zpredicta", "kernis-health", "palitra-bio", "valius", "specicare", "storemytumor", "travera", "first-ascent-biomedical", "kiyatec", "cure-first", "sagemedic", "kyan-technologies", "cancertain", "2curex", "oncosyne"],
+    technologies: ["organoids"], links: [{ label: "Wikipedia", url: W("Precision_medicine") }], companies: ["certis-oncology-solutions", "known-medicine", "notable-labs", "origin-bio", "zpredicta", "kernis-health", "palitra-bio", "valius", "specicare", "storemytumor", "travera", "first-ascent-biomedical", "kiyatec", "sagemedic", "kyan-technologies", "cancertain", "2curex", "oncosyne"], institutions: ["cure-first"],
   },
   {
     id: "organoids", related: ["immune-tumour-coculture-models", "tumour-spheroid-models"], keyPapers: ["paper-sato-lgr5-organoids-nature-2009"], kind: "technology", name: "Patient-derived organoids", sections: ["drug-discovery"], status: "established", asOf, wikipedia: W("Organoid"),
@@ -327,7 +327,7 @@ export const technologies: TechnologyInput[] = [
     summary: "Patient-derived organoids are grown by stem-cell-driven 3D culture in an extracellular matrix with defined growth factors, so a piece of a patient's tumour becomes a self-renewing miniature that keeps its genotype and drug response. Living biobanks of organoids (HUB, Broad) preserve genotype and drug response across many cancer types. They are used for drug screening, CRISPR studies, and increasingly co-cultured with immune cells for immunotherapy testing. The main limitation is that organoids lack vasculature and the full microenvironment, so stromal and immune effects are only partly captured, and prospective evidence that organoid drug testing improves patient outcomes is still being gathered. For a newcomer, an organoid is a lab-grown copy of one person's tumour that can be tested against drugs before the patient is.",
     principle: "Stem-cell-driven 3D culture in extracellular matrix with defined growth factors.",
     strengths: ["Fidelity to patient tumour", "Scalable"],
-    limitations: ["Lacks vasculature and full microenvironment"], links: [{ label: "Wikipedia", url: W("Organoid") }], companies: ["known-medicine", "zpredicta", "kernis-health", "specicare", "kiyatec", "cure-first", "sagemedic", "2curex", "orakl-oncology", "oncosyne", "signet-therapeutics", "aummune", "cellesce"],
+    limitations: ["Lacks vasculature and full microenvironment"], links: [{ label: "Wikipedia", url: W("Organoid") }], companies: ["known-medicine", "zpredicta", "kernis-health", "specicare", "kiyatec", "sagemedic", "2curex", "orakl-oncology", "oncosyne", "signet-therapeutics", "aummune", "cellesce"], institutions: ["cure-first"],
   },
   {
     id: "pdx-models", related: ["genetically-engineered-mouse-models", "humanised-mouse-models"], kind: "technology", name: "Patient-derived xenografts", sections: ["drug-discovery"], status: "established", asOf, wikipedia: W("Patient_derived_xenograft"),
@@ -808,7 +808,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Fully personalised, low toxicity", "Adjuvant setting where tumour burden is low"],
     limitations: ["6-8 week manufacturing", "Cost", "Neoantigen prediction is imperfect; low-TMB tumours have few targets"],
     drugs: ["intismeran-autogene", "autogene-cevumeran"],
-    companies: ["moderna", "merck", "biontech", "roche-genentech", "gritstone", "serova", "curevac", "evaxion", "gamgee", "geneos-therapeutics", "kernal-biologics", "nykode-therapeutics", "tarebio", "transgene", "echo-immune", "jaime-leandro-foundation", "invoke-bio", "ubivac", "breakbio"],
+    companies: ["moderna", "merck", "biontech", "roche-genentech", "gritstone", "serova", "curevac", "evaxion", "gamgee", "geneos-therapeutics", "kernal-biologics", "nykode-therapeutics", "tarebio", "transgene", "echo-immune", "invoke-bio", "ubivac", "breakbio"], institutions: ["jaime-leandro-foundation"],
     trials: ["interpath-001", "nct07002203"],
     cancers: ["melanoma", "pancreatic", "nsclc", "rcc"],
     terms: ["neoantigen"], related: ["idea-neoantigen-immunogenicity-rules"], links: [{ label: "Wikipedia", url: W("Cancer_vaccine") }],

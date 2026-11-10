@@ -69,7 +69,7 @@ export const ideasData: IdeaInput[] = [
     test: "Pilot in ten cancer centres: offer the donor card at first oncology visit, measure uptake, withdrawal and demographic skew over 24 months; compare research-ready cohort size with matched centres that do not offer it.",
     bottlenecks: ["b-data-silos", "b-patient-voice"], actor: "patients", cost: "medium", horizonYears: 3,
     links: [{ label: "Count Me In", url: "https://joincountmein.org/" }],
-    sections: ["ai-computation"], companies: ["patient-data-vault", "cancer-commons"] }),
+    sections: ["ai-computation"], companies: ["patient-data-vault"], institutions: ["cancer-commons"] }),
   i({ id: "idea-data-dynamic-consent-app", name: "Dynamic consent with usage receipts", maturity: "early-clinical",
     tldr: "An app where patients choose what their data can be used for, see every time it is used, and can switch permissions on or off.",
     summary: "Dynamic consent replaces the one-off paper form with an ongoing digital relationship: granular preferences (commercial use, genomic data, contact for trials), notifications when data are used, and revocation that propagates to data holders. Pilots in Australia (CTRL platform) and rare-disease registries have shown feasibility. The oncology-specific version adds automatic trial-matching alerts as a return of value to the patient.",

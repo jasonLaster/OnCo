@@ -208,6 +208,39 @@
       "responseSha256": "7c0f59bee2b1054ab3dda9dcd8ca400799bda2fda14a51b8eea28117d3596049",
       "hitCount": 2,
       "returnedCount": 2
+    },
+    {
+      "id": "cell-manufacturing-process-outcomes",
+      "queryId": "cell-manufacturing-process-outcomes",
+      "query": "How do starting cell composition, cryopreservation and manufacturing process changes affect release quality, treatment attrition and collection-to-infusion time for cancer cell therapies?",
+      "maxResults": 8,
+      "minYear": 2022,
+      "lane": "Bounded semantic discovery; full JSON outside Git, public metadata and exact response hash.",
+      "responseFile": "cell-manufacturing-2026-11-09/elicit-discovery.json",
+      "responseSha256": "da5eddea4863a072c4d838903172dd298f2e830cddf34cba2fb8e1eb12835060",
+      "returnedCount": 8
+    },
+    {
+      "id": "cell-manufacturing-direct",
+      "lane": "Fourteen exact primary-source MED identity lookups from the nine concepts and consequential existing-owner claims; not an exhaustive clinical programme census.",
+      "requestFiles": [
+        "med-28123068.json",
+        "med-33308471.json",
+        "med-36970059.json",
+        "med-38231412.json",
+        "med-30030295.json",
+        "med-14085017.json",
+        "med-31178392.json",
+        "med-30910382.json",
+        "med-40066375.json",
+        "med-40377509.json",
+        "uk-panel-med.json",
+        "med-40536974.json",
+        "med-34990237.json",
+        "depil-med.json"
+      ],
+      "responseManifest": "cell-manufacturing-2026-11-09/capture-manifest.json",
+      "returnedCount": 14
     }
   ],
   "rules": [

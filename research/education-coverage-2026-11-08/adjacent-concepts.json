@@ -340,7 +340,7 @@
               "recordId": "in-vivo-car-t",
               "version": "proposal-therapeutic",
               "field": "notes",
-              "fieldSha256": "7c1d1c889c0ec6f2517b6601a830b2d780b2f57d3e8c9e239ec689b1977bbbdd",
+              "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300",
               "explanation": "Separates the humanized lymphoma model, cardiac-injury mRNA model and phase 1 registry; removes a platform-wide cost/conditioning guarantee."
             }
           ],
@@ -1277,6 +1277,90 @@
               "field": "notes",
               "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
               "explanation": "Labels Enoda's sponsor naming and the 2026 preprint; the 2018 study is not attributed to MIMIC."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "manufacturing-metric-definitions-and-supply-pathways",
+    "title": "Manufacturing-metric definitions and nonconforming-product supply pathways",
+    "domain": "engineering-and-manufacturing",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/40066375/",
+      "https://pubmed.ncbi.nlm.nih.gov/40032870/",
+      "https://pubmed.ncbi.nlm.nih.gov/40377509/",
+      "https://clinicaltrials.gov/study/NCT04094311"
+    ],
+    "discoveryOccurrences": [
+      "cell-manufacturing-direct:9",
+      "cell-manufacturing-direct:10",
+      "cell-manufacturing-direct:11"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Codex systematic content audit; not expert sign-off",
+      "checkedAt": "2026-11-09",
+      "rationale": "Primary reports require separate report-defined denominators, national supply pathways and evaluable populations. Read complete MED abstracts and selected Iwamoto methods/results; registry design is independently captured. No statistical equivalence, current slot or universal clinical eligibility is inferred.",
+      "points": [
+        {
+          "id": "process-events",
+          "requirement": "Separate terminated manufacture, completed nonconforming lot, report-defined success, shipment availability and infusion; terminology is source-specific.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "cell-manufacturing-outcomes",
+              "field": "summary",
+              "explanation": "Separates terminated, nonconforming, conforming, shipped and infused outcomes; source terms may differ.",
+              "version": "proposal-therapeutic",
+              "fieldSha256": "33d2b25b32e2106e8e26bc1ad63672f7443599e078483a09eaf63e72c494b493"
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "source-denominators",
+          "requirement": "Retain orders/collections/runs/batches/patients and cancellation exclusions with each rate; Iwamoto denominators differ from a generic completed-run example.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "cell-manufacturing-outcomes",
+              "field": "notes",
+              "explanation": "Retains Iwamoto initiated-batch/cancellation definitions and the UK report's different MF umbrella.",
+              "version": "proposal-therapeutic",
+              "fieldSha256": "4e98e6483db7765683797d80aa9cb41b0074fcd53322ddcd525ee3f2e57b965b"
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "oos-attributes-and-pathway",
+          "requirement": "Name missed attributes and the country/product/programme supply pathway; viability and low/high dose misses are different.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "cell-manufacturing-outcomes",
+              "field": "notes",
+              "explanation": "Names the missed attribute, method, lot, programme and jurisdiction; NCT04094311 is a specific pathway.",
+              "version": "proposal-therapeutic",
+              "fieldSha256": "4e98e6483db7765683797d80aa9cb41b0074fcd53322ddcd525ee3f2e57b965b"
+            }
+          ],
+          "remaining": []
+        },
+        {
+          "id": "actual-cohort-boundaries",
+          "requirement": "Iwamoto Japan 2019-2023 excludes specified cancellations and performs no formal analysis; Kato is single-arm with distinct enrolled/infused/evaluable/batch denominators, without proven equivalence.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "cell-manufacturing-outcomes",
+              "field": "notes",
+              "explanation": "Keeps Iwamoto period/definitions/no formal analysis and Kato enrolled/infused/evaluable/batch denominators without causal or equivalence claims.",
+              "version": "proposal-therapeutic",
+              "fieldSha256": "4e98e6483db7765683797d80aa9cb41b0074fcd53322ddcd525ee3f2e57b965b"
             }
           ],
           "remaining": []

@@ -415,7 +415,7 @@ export const simpleO: Record<string, string> = {
   "angiogenesis-models": "Angiogenesis models describe how tumours recruit blood vessels and how anti-angiogenic drugs at the right dose can normalise those vessels so drugs and oxygen get in.",
   "astatine-211-alpha-therapy": "Astatine-211 is a rare alpha-emitting atom that behaves like iodine, so it can be attached to antibodies and tested in leukaemia, brain and ovarian cancer.",
   "atr-chk1-inhibitors": "ATR and CHK1 inhibitors disable the checkpoint cancer cells use to pause and repair DNA under stress, pushing tumours with faulty DNA repair into collapse.",
-  "car-t-manufacturing-process": "Each CAR-T dose is a separate factory run for one patient: collect their T cells, add the CAR gene with a virus, grow them for a week or two, then freeze and ship them back.",
+  "car-t-manufacturing-process": "An autologous CAR T-cell product is made from the cells of the person who will receive it. Collection, changes to the cells, growth, quality checks and treatment scheduling are different steps.",
   "bcl2-inhibitors": "BCL-2 inhibitors switch off the protein that lets cancer cells refuse to die, and venetoclax transformed treatment of chronic lymphocytic leukaemia.",
   "body-surface-area-dosing": "Chemotherapy doses are usually written per square metre of body surface, a convention from 1958 that is imprecise and has been replaced by flat doses for many newer drugs.",
   "cancer-cell-line-encyclopedias": "Cancer cell line encyclopedias are large public collections of cancer cells profiled for their genomes, drug sensitivity and gene dependencies, used to find new targets.",

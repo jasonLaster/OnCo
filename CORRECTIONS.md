@@ -4,6 +4,18 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-09
 
+### Cell manufacture, preservation and traceability
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-09 | [Allogeneic cell therapy](/technologies/allogeneic-cell-therapy/) | Said TRAC editing prevents graft-versus-host disease, combined distinct HLA/CD52 strategies and promised immediate availability with a general conditioning requirement | Resolved early UCART19 and Chen clinical reports, selected CALM methods/results and current registry identity | Separates source/location and immune directions, retains specific edits/cohorts/risks and removes guaranteed readiness or conditioning claims |
+| 2026-11-09 | [Apheresis](/terms/apheresis/) | Described collection as skimming one cell type over a fixed duration | FDA starting-material guidance and NIH supervised-procedure consent example | Describes a variable white-cell-rich mixture, receiving acceptance and distinct counts/volumes; scopes access and citrate risks without a universal schedule |
+| 2026-11-09 | [Cryopreservation and cell-therapy cold chain](/technologies/cell-therapy-cold-chain/) | Gave one freezing/storage process and promised that the living product arrives alive and correctly matched | Actual YESCARTA/KYMRIAH formulation/storage passages, scoped preservation experiments and traceability guidance | Retains product-specific conditions, viable recovery versus recovered-set viability, separate function and authorised excursion assessment |
+| 2026-11-09 | [Cell-therapy orchestration software](/technologies/cell-therapy-orchestration-software/) | Said software guarantees correct on-time return, eliminates mix-ups and that named commercial systems are regulator-required | Raw FDA traceability passage and bounded ICCBBA identity/custody definitions | Describes controlled workflow support and separate identity, custody, quality and clinical decisions without a vendor mandate or guarantee |
+| 2026-11-09 | [Autologous CAR-T manufacturing](/technologies/car-t-manufacturing-process/) | Equated each dose with one run and generalised culture time, release order, waiting time and current plant/vendor claims | Product-specific FDA process guidance and primary manufacturing/outcome reports | Separates collections, runs, lots, samples, doses, clocks and clinical attrition; removes the unsupported general timings and plant/vendor assertions |
+| 2026-11-09 | Alternative summaries for the five owners above and [in vivo CAR-T](/technologies/in-vivo-car-t/) | Simplified and translated text could retain older source, freezing, workflow and manufacturing claims after English correction | Actual dictionary imports and each selected entry compared with the corrected concept | Corrects 47 existing reader summaries and one inline Chinese export; retains seven missing translations as explicit English fallback, without inventing language-review status |
+
+
 ### Synthetic cytokine receptors and omitted interactive teaching
 
 | Date | Entity or source | What was missing | How found | Fix |

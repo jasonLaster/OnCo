@@ -327,7 +327,7 @@ export const simpleJ: Record<string, string> = {
   "pci-term": "Prophylactic cranial irradiation gives the brain a preventive dose of radiation when a cancer is very likely to spread there, mainly in small-cell lung cancer.",
   "biliary-stent": "Stenting places a small mesh or plastic tube to hold open a duct or passage that a tumour is squeezing shut, relieving jaundice, swallowing trouble or breathlessness.",
   "pleurodesis": "Pleurodesis stops fluid repeatedly collecting around the lung, either by sealing the two lung linings together with talc or by leaving a small drain at home.",
-  "apheresis": "Apheresis runs a patient's blood through a machine that skims off one type of cell and returns the rest, providing the raw material for CAR-T or transplant.",
+  "apheresis": "A machine separates some blood components and returns others to the body. Collecting white blood cells gives a mixture that may be used to start a cell therapy or a research study.",
   "intrathecal-therapy": "Intrathecal therapy gives drugs directly into the fluid around the brain and spinal cord, because most drugs cannot cross into that space from the blood.",
   "central-venous-access": "Central venous access is a long-term line into a large vein near the heart, so chemotherapy can be given and blood drawn without repeated needle sticks.",
   "feeding-tube": "A feeding tube is placed into the stomach or small bowel so a patient who cannot swallow enough can still be fed through the gut.",

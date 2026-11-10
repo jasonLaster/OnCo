@@ -1,6 +1,6 @@
 {
   "pr": 373,
-  "head": "851dfd3b1dabcac4f7ff5dcdf3183b321d878a29",
+  "head": "1329c14243c52b30fab3459bb0c68eadb63bdd8b",
   "newCount": 36,
   "modifiedCount": 9,
   "records": [
@@ -2081,7 +2081,7 @@
       "tldr": "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
       "summary": "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
       "status": "established",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "links": [
         {
           "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
@@ -2090,6 +2090,18 @@
         {
           "label": "FDA: considerations for development of CAR T-cell products",
           "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+          "url": "https://www.fda.gov/media/113760/download"
+        },
+        {
+          "label": "FDA: final potency-assurance guidance, November 2026, original document",
+          "url": "https://www.fda.gov/media/196183/download"
         }
       ],
       "tags": [
@@ -2126,7 +2138,15 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "FDA's November 2026 final potency-assurance guidance supersedes its January 2011 potency-tests guidance. Its scope is cellular and gene therapy biological products regulated under section 351 of the U.S. Public Health Service Act. Potency assurance includes process and material controls, in-process evidence, release assays, stability and in-use handling; a release assay alone does not establish the clinical benefit of a particular lot.",
+        "For CAR T cells, FDA's 2024 guidance recommends identity evidence for the transgene and intended cellular composition. HLA typing alone does not detect the genetic modification or replace chain-of-identity records. Biological identity and the association with the intended recipient are separate checks.",
+        "For an integrating-vector CAR T-cell product, the 2024 guidance describes average vector copy number per CAR-positive cell on the lot certificate of analysis. Including CAR-negative cells in the denominator can understate the value in the modified population. The average does not show insertion locations or clonal distribution. Short processes can retain non-integrated vector copies, so a release measurement may need a later assessment in cultured cells to determine stable integration; the interval is product-specific.",
+        "Replication-competent virus testing, microbial sterility, mycoplasma, endotoxin and engineered-cell identity address different hazards or attributes. The applicable tests, methods and acceptance criteria depend on the product, process and development stage. Detecting a sequence or a receptor does not demonstrate every intended biological activity.",
+        "For ex vivo genetically modified cells administered immediately after manufacture, FDA's 2020 gene-therapy CMC guidance describes an in-process sterility sample taken 48 to 72 hours before final harvest plus a rapid test such as a Gram stain on final product. Under that approach, negative Gram stain and no growth in the in-process test can support release while the final-product culture continues for its full duration, for example 14 days for USP <71>. The guidance calls for a plan addressing a later positive result, clinical management, investigation and reporting to the investigator and FDA. These are scoped recommendations, not universal early-release criteria for every cell product.",
+        "FDA's CAR T-cell examples distinguish activity against each target in a multi-antigen product, production of an added cytokine and a drug-resistance function. Each relevant transgene activity may need suitable evidence. A single expression or cell-count result is not the complete functional package.",
+        "In a fictional 100-cell teaching sample, 80 cells are live and 60 of those live cells express the receptor. Viability is 80/100, receptor positivity among live cells is 60/80, and live receptor-positive cells among all counted cells are 60/100. Receptor status of the nonlive cells is unspecified. These different denominators establish neither potency nor a clinical release cutoff."
+      ],
       "principle": "Product-specific control strategies combine defined quality attributes, suitable assays and justified acceptance criteria; a release result retains its lot and intended use.",
       "strengths": [
         "Defines checkable quality requirements",
@@ -2315,9 +2335,9 @@
         "fresh product",
         "manufacturing failures"
       ],
-      "tldr": "The interval from collecting a person's cells to infusing the manufactured cell product. Shipping, manufacturing, quality testing and clinical scheduling can all contribute to the wait.",
+      "tldr": "Vein-to-vein time measures the interval from collecting a person's cells to infusing the manufactured cell product. Shipping, manufacturing, quality testing and clinical scheduling can all contribute to the wait.",
       "summary": "The interval follows a patient-specific product through collection, manufacture, testing, transport and administration. Manufacturing outcome, lot quality and eventual infusion are separate observations. A UK retrospective CAR T-cell report used manufacturing failure as an umbrella covering both no product and an out-of-specification product, with some patients subsequently receiving a remanufactured or specially assessed lot. Published rates therefore need their study definitions; they do not directly state the chance that an individual will receive treatment.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
       "links": [
         {
@@ -2335,6 +2355,10 @@
         {
           "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
           "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+          "url": "https://www.fda.gov/media/156896/download"
         }
       ],
       "tags": [],
@@ -2371,7 +2395,11 @@
       "dependsOn": [],
       "notes": [
         "Chain of identity links material and product to the source and intended recipient. Chain-of-custody records describe movement, handoffs and handling. FDA CAR T-cell guidance addresses identity tracking; NCI biospecimen guidance describes custody records in its own specimen-management scope.",
-        "An out-of-specification lot does not meet at least one specified criterion. Its existence does not establish that it is suitable or authorized for infusion; disposition is a product- and situation-specific question."
+        "An out-of-specification lot does not meet at least one specified criterion. Its existence does not establish that it is suitable or authorized for infusion; disposition is a product- and situation-specific question.",
+        "A timing estimate needs its exact start and end events. Collection-to-infusion, order-to-infusion, enrolment-to-infusion, receipt-to-release and culture duration are different clocks. State elapsed calendar days, the cohort, handling of repeat collections and the spread, rather than assigning one turnaround to every product.",
+        "In a fictional workflow, collection is day 0, culture ends on day 7, release is day 12 and infusion is day 18. Collection-to-infusion time is 18 days; the stated culture interval is seven days. These teaching numbers are not a scheduling promise.",
+        "A median calculated among infused people cannot assign an infusion time to people who never received cells. Report how many entered the stated pathway, how many reached infusion, the follow-up window and reasons for non-infusion separately. Manufacturing, conformity, shipment and patient readiness need their own denominators and event definitions.",
+        "FDA's 2024 CAR T-cell guidance discusses disease progression and changing eligibility during manufacturing, product availability before a high-risk lymphodepleting regimen, and contingency plans for failure to treat. Bridging therapy can also confound response attribution; the guidance recommends appropriate disease reassessment and prespecified analyses that retain bridging-treatment context. This is clinical-study guidance, not a universal bridging or scheduling rule."
       ],
       "category": "Treatment jargon"
     },

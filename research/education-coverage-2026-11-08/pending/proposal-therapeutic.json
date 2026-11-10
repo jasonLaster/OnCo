@@ -2010,7 +2010,7 @@
       "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
       "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
       "status": "phase-1",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "links": [
         {
           "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
@@ -2023,13 +2023,23 @@
         {
           "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
           "url": "https://clinicaltrials.gov/study/NCT06539338"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Hunter et al., 2025: human-cell, humanised-mouse and monkey experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40536974/"
         }
       ],
       "tags": [
         "frontier"
       ],
       "related": [
-        "cellular-kinetics-and-persistence"
+        "cellular-kinetics-and-persistence",
+        "ex-vivo-cell-expansion",
+        "chain-of-identity-and-custody"
       ],
       "cancers": [],
       "sections": [
@@ -2070,7 +2080,10 @@
         "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
         "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
         "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
-        "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products."
+        "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+        "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+        "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+        "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed."
       ],
       "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
       "strengths": [
@@ -10076,6 +10089,657 @@
         "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence."
       ],
       "category": "Immunology"
+    },
+    {
+      "id": "allogeneic-cell-therapy",
+      "kind": "technology",
+      "name": "Allogeneic (off-the-shelf) cell therapy",
+      "aka": [],
+      "tldr": "Allogeneic cell therapy uses cells from someone other than the recipient. A banked product may avoid collecting the recipient's cells, but treatment still requires a suitable product and clinical preparation.",
+      "summary": "Autologous cells come from the intended recipient; allogeneic cells come from another person. This source distinction is separate from whether engineering occurs outside or inside the body and from whether a cell product or a carrier is administered. Donor-cell manufacture can provide inventory for later recipients, but usable supply, quality disposition, matching requirements, preparation and clinical eligibility still govern access. Donor immune cells can attack recipient tissues, while the recipient's immune system can reject donor cells. The relevant mechanisms depend on cell type, construct, edits, conditioning and setting.",
+      "status": "emerging",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Depil et al., 'Off-the-shelf' allogeneic CAR T cells: development and challenges (Nature Reviews Drug Discovery 2020)",
+          "url": "https://doi.org/10.1038/s41573-019-0051-2"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Qasim et al., 2017: two-infant donor CAR T-cell report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28123068/"
+        },
+        {
+          "label": "Benjamin et al., 2020: early UCART19 child and adult cohorts",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33308471/"
+        },
+        {
+          "label": "Dupouy et al., 2022: adult CALM cellular kinetics and manufacturing context",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36970059/"
+        },
+        {
+          "label": "Chen et al., 2024: distinct edits, laboratory models and nine recipients",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38231412/"
+        },
+        {
+          "label": "ClinicalTrials.gov: NCT03229876, dated registry state differs from publication wording",
+          "url": "https://clinicaltrials.gov/study/NCT03229876"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "chain-of-identity-and-custody",
+        "cell-manufacturing-outcomes",
+        "in-vivo-car-t"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [
+        "cd70",
+        "cd19"
+      ],
+      "drugs": [],
+      "companies": [
+        "adicet-bio",
+        "allotera-therapeutics",
+        "century-therapeutics",
+        "guardian-bio",
+        "imugene",
+        "indapta-therapeutics",
+        "mendus",
+        "onk-therapeutics",
+        "orca-bio",
+        "poseida-therapeutics",
+        "captain-t-cell",
+        "tikva-allocell",
+        "senti-biosciences",
+        "zelluna",
+        "arovella-therapeutics",
+        "avencell-therapeutics",
+        "brightpath-biotherapeutics",
+        "t-maximum-pharmaceutical",
+        "edigene"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-depil-nat-rev-drug-discov"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "allogeneic-cell-banking",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "Disrupting TRAC can reduce endogenous alpha-beta T-cell receptor activity in a specified T-cell product. HLA changes address different recognition pathways. Broad loss of class I HLA can also expose cells to natural-killer-cell rejection. CD52 disruption has a distinct role in allowing an engineered product to resist an anti-CD52 conditioning antibody. These modifications are not interchangeable and are not required in every allogeneic cell type.",
+        "Qasim's 2017 report described two infants given donor CAR T cells edited at TRAC and CD52, with lymphodepletion including an anti-CD52 antibody and subsequent allogeneic transplantation. Benjamin's 2020 report combined early cohorts of seven children and fourteen adults; graft-versus-host disease, cytokine release syndrome, infections and treatment-related deaths were reported. A source or edit label does not eliminate clinical risks. These are small, uncontrolled reports, and their participant counts must not be added to later overlapping CALM analyses.",
+        "Dupouy's 2022 analysis concerns twenty-five adults in CALM, not a separate additional cohort to sum with earlier CALM recipients. Nine batches from six donors were infused. Blood transgene kinetics, flow cytometry, donor/product characteristics and conditioning exposure were examined separately. Associations between alemtuzumab exposure and expansion do not establish a randomised conditioning comparison or a universal need for deeper lymphodepletion.",
+        "Chen's 2024 report includes cell and mouse experiments plus nine treated people. Six recipients received B2M/TRAC-disrupted cells without observed in-body expansion or antitumour response; three received HLA-A/HLA-B/TRAC-disrupted cells and had early MRD-negative responses. These groups were small and differently prepared, not a randomised test of editing alone. No observed graft-versus-host disease in nine recipients is not proof of zero risk or durable benefit.",
+        "Chen's paper calls the study phase 1, whereas the captured NCT03229876 registry record has phase NA and overall status suspended, with a last posted update of 24 July 2023. This source/version discrepancy is retained; the paper is not evidence that treatment is currently available.",
+        "Persistence is a measured outcome, not a fixed property of donor origin. Blood detection differs from distribution across tissues and useful cell function; conditioning before a later transplant can end observation of a product. Availability also requires the intended source, construct version, lot, dose and recipient relationships to remain traceable."
+      ],
+      "principle": "Keep cell source, engineering location, administered material and each direction of immune recognition distinct; evaluate the actual construct and clinical cohort.",
+      "strengths": [
+        "Can manufacture and bank donor-derived cells ahead of an individual recipient's treatment",
+        "Investigates supply from a source other than the recipient's own collection"
+      ],
+      "limitations": [
+        "Gene editing does not guarantee absence of graft-versus-host disease or rejection",
+        "Conditioning, infections, toxicity and persistence require product-specific evidence",
+        "Banked inventory does not establish immediate availability, eligibility or clinical benefit"
+      ]
+    },
+    {
+      "id": "apheresis",
+      "kind": "term",
+      "name": "Apheresis (leukapheresis)",
+      "aka": [
+        "leukapheresis",
+        "apheresis collection",
+        "stem cell mobilisation",
+        "stem cell collection",
+        "plerixafor mobilisation"
+      ],
+      "tldr": "Apheresis separates components from blood and returns other components to the circulation. Leukapheresis collects a white-cell-rich mixture that can be starting material for a cell therapy or research.",
+      "summary": "Leukapheresis uses an extracorporeal separation circuit to collect white-cell-rich material. A leukopak can contain lymphocytes and monocytes in variable proportions; it is not automatically a purified T-cell population or a released treatment. The collection method, intended cells and receiving programme determine the required material, measurements and handling. Collection for a cell therapy, research or a stem-cell procedure retains its own protocol rather than sharing one duration or universal preparation rule.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apheresis",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apheresis"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NIH consent library version 18: supervised leukapheresis, February 2026",
+          "url": "https://irbo.nih.gov/documents/306/2026_02_05_Consent_Library_v18.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "autologous-transplant",
+        "vein-to-vein-time",
+        "lymphodepletion",
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "apheresis-starting-material"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Processed blood volume, collected bag volume, total white-cell number, viable-cell recovery and numbers or fractions of intended subsets are different measurements. A large bag or high overall white-cell count does not establish an adequate viable T-cell input. FDA's CAR T-cell guidance recommends product-development-specific starting-material acceptance criteria and discusses CD3, CD4, CD8, NK-cell, monocyte and B-cell characterisation.",
+        "Collection is supervised clinical care. Access may use peripheral veins or a central catheter. Citrate anticoagulant can lower available calcium and cause symptoms requiring monitoring or treatment; access, blood-pressure, bleeding and infection risks depend on the procedure and person. The NIH consent example is not a universal duration, risk estimate or permission to change medicines.",
+        "Prior treatment, current cell composition, collection and shipping conditions can affect the starting material. Retain source identity, time, handling, receiving acceptance and relevant samples through subsequent manufacture. A successful collection does not guarantee culture growth, a conforming final lot or eventual infusion.",
+        "Research collection and therapeutic collection can have different acceptance, consent, banking and testing requirements. Tumour-infiltrating-lymphocyte manufacture uses tumour-derived material, not simply this blood collection. Vaccines and other cell-based protocols have their own collection requirements; leukapheresis is not a universal prerequisite for vaccination."
+      ],
+      "category": "Procedures"
+    },
+    {
+      "id": "cell-therapy-cold-chain",
+      "kind": "technology",
+      "name": "Cryopreservation and cell-therapy cold chain",
+      "aka": [],
+      "tldr": "Freezing, storage, shipping and thawing can preserve cells for later use. The validated conditions and checks belong to the particular cell product.",
+      "summary": "Cryopreservation manages cooling, water movement, ice formation, concentrated solutes and warming injury; it does not literally stop all molecular motion. Cryoprotectant formulation, exposure, freezing, storage, transport, thawing and permitted holding times form a defined process. Some materials are handled fresh. A temperature log documents conditions, while stability evidence and the quality system determine the consequences of a deviation. Neither a shipper nor a barcode guarantees viable, functional material or the correct recipient.",
+      "status": "established",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA guidance: considerations for the development of CAR T cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "DailyMed: YESCARTA label captured 9 November 2026, sections 11 and 16",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b70606e-b99c-4272-a0f1-b5523cce0c59"
+        },
+        {
+          "label": "DailyMed: KYMRIAH label captured 9 November 2026, sections 11 and 16",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aad3ba54-dfd3-4cb3-9e2b-c5ef89559189"
+        },
+        {
+          "label": "Mazur, 1963: water movement and intracellular freezing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14085017/"
+        },
+        {
+          "label": "Panch et al., 2019: scoped fresh/frozen CAR T-cell comparisons",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31178392/"
+        },
+        {
+          "label": "Wang et al., 2019: post-thaw assay conditions for one CAR T-cell preparation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30910382/"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "apheresis-starting-material",
+        "cell-therapy-orchestration-software"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "cryoport",
+        "biolife-solutions"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The labels captured on 9 November 2026 illustrate why a single temperature or formulation is misleading. YESCARTA describes 5% DMSO with 2.5% human albumin, whereas KYMRIAH describes 7.5% (v/v) DMSO. These are particular labelled formulations, not a general recipe for other cells, research specimens, RNA or carrier products.",
+        "The captured YESCARTA section 16 distinguishes shipment at minus 150 degrees Celsius or colder from storage at minus 120 degrees or colder, and describes bounded transfers and a one-time minus 80 degrees plus or minus 10 degrees storage option for up to 90 days without exceeding expiry. Its transfer restrictions matter. KYMRIAH section 16 specifies monitored storage at minus 120 degrees or colder and its own transport provisions. Consult the complete current label and product procedures; these examples do not authorise an unlisted excursion or an improvised thaw/rest schedule.",
+        "In a fictional input of 100 million viable cells, 80 million cells are recovered after processing and 72 million of those are live. Recovered-cell viability is 72/80, or 90%, while viable recovery relative to input is 72/100, or 72%. The missing 20 million are not silently included among tested recovered cells. Neither fraction measures the intended biological activity or establishes a release threshold.",
+        "Panch's 2019 retrospective single-centre analysis covered 158 autologous CAR T-cell products from six trials and additional donor experiments. It did not detect differences in selected manufacturing or clinical measures under its tested conditions, while molecular and cellular changes were observed. This does not demonstrate universal equivalence of fresh and frozen material or interchangeability of starting-material and final-product freezing.",
+        "Wang's 2019 work concerns an in vitro post-thaw potency assay for a particular third-generation CD19 CAR T-cell preparation. Assay recovery or rest conditions are not instructions to change clinical preparation or infusion. Preserve sampling time, denominator, cell composition and intended test when comparing results.",
+        "Research banking and clinical cell-product storage have different intended uses and acceptance requirements. An excursion requires documented investigation, relevant stability evidence and a disposition by the authorised programme. Identity records, custody records, temperature logs, test samples and final-product decisions remain distinct."
+      ],
+      "principle": "Validate preservation and transport for the specified material and intended use; distinguish documented handling, recovered-cell viability, input-relative recovery and biological activity.",
+      "strengths": [
+        "Can separate collection, manufacture and administration in a validated workflow",
+        "Supports banking and transport when the particular material remains suitable under demonstrated conditions"
+      ],
+      "limitations": [
+        "Freezing, warming and cryoprotectant exposure can change cell recovery, state or function",
+        "Conditions and permitted excursions cannot be transferred between products without evidence",
+        "Traceability and temperature records do not replace quality assessment or authorised disposition"
+      ]
+    },
+    {
+      "id": "cell-therapy-orchestration-software",
+      "kind": "technology",
+      "name": "Cell-therapy orchestration and chain-of-identity software",
+      "aka": [],
+      "tldr": "Scheduling and tracking software can support a cell therapy's collection, manufacture, transport and treatment records. It helps teams follow the workflow and investigate problems.",
+      "summary": "Orchestration systems can coordinate appointments, inventory, material identifiers, handoffs, manufacturing status and clinical scheduling. Their records must preserve the actual source, material, construct, lot, sample, dose and intended-recipient relationships. Software supports a controlled workflow; it does not by itself eliminate mix-ups, deliver on-time treatment or establish product quality. FDA's traceability requirements and recommendations do not require the named commercial platforms previously listed here.",
+      "status": "established",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA guidance: considerations for the development of CAR T cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "ICCBBA: Chain of Identity standard ST-028, version 1.1.0 (June 2025)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_0aa7a5f7202c4b43be4cc11bcd2048ef.pdf"
+        },
+        {
+          "label": "ICCBBA: single-patient collection examples IG-050, version 1.0.0 (December 2023)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_badfaf3c48d443f78006340096a671e0.pdf"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "chain-of-identity-and-custody",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy",
+        "ai-computation"
+      ],
+      "technologies": [
+        "car-t",
+        "cell-therapy-cold-chain"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Chain of identity concerns the association between source, materials, product and intended recipient. Chain of custody concerns guardianship, handoffs, times and relevant handling conditions. A temperature trace is handling evidence; an HLA result is a biological measurement. Neither substitutes for the complete recipient/material relationship or the quality decision.",
+        "A collection can branch into separate processing lots, doses and test samples. Retain parent links and the construct version when a process changes. A single-recipient branching example does not define every donor-bank or multi-recipient workflow; validate the actual product relationships.",
+        "FDA's January 2024 CAR T-cell guidance describes documented labelling and tracking from collection through administration, unique-identifier recommendations for autologous products, and independent bedside patient/label checks. Compliance is assessed against applicable requirements and a controlled process, not the presence of a particular vendor's portal.",
+        "A completed software workflow is not a potency result, a stability conclusion, an authorised lot disposition or a patient eligibility decision. Discrepancies need reconciliation and investigation; a reported excursion does not determine its own clinical significance."
+      ],
+      "principle": "Maintain controlled, reconcilable records across the actual workflow, with identifiers and recorded handoffs supporting separate identity and quality decisions.",
+      "strengths": [
+        "Can make status, handoffs and scheduling information available to responsible teams",
+        "Can support reconciliation, traceability and investigation when records and interfaces are controlled"
+      ],
+      "limitations": [
+        "Incorrect inputs or broken links can propagate across connected systems",
+        "A recorded handoff or barcode does not establish identity, acceptable quality or clinical readiness",
+        "Workflow design, access controls, integration and contingency arrangements need evaluation"
+      ]
+    },
+    {
+      "id": "car-t-manufacturing-process",
+      "kind": "technology",
+      "name": "Autologous CAR-T manufacturing, batch by batch",
+      "aka": [],
+      "tldr": "An autologous CAR T-cell product is made from the intended recipient's cells. Collection, engineering, culture, quality assessment and treatment scheduling are distinct steps.",
+      "summary": "A defined ex vivo process receives starting material, selects or enriches cells as needed, activates and engineers them, cultures them under controlled conditions, and prepares material for testing, storage and administration. The sequence, vector or other gene-transfer method, culture duration, fresh or frozen handling and assays depend on the product. A collection, manufacturing run, product lot, test sample and administered dose are not interchangeable units. One collection can yield multiple containers or doses; a run need not culminate in an infused treatment.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA guidance: considerations for the development of CAR T cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "21 CFR Part 1271: human cells, tissues and cellular products",
+          "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1271"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "FDA: human gene-therapy IND CMC guidance, January 2020",
+          "url": "https://www.fda.gov/media/113760/download"
+        }
+      ],
+      "tags": [
+        "manufacturing-wave"
+      ],
+      "related": [
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [
+        "dlbcl",
+        "all-leukemia",
+        "multiple-myeloma",
+        "mantle-cell-lymphoma",
+        "follicular-lymphoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "closed-automated-cell-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cell-therapy-orchestration-software",
+        "point-of-care-cell-manufacturing",
+        "allogeneic-cell-banks",
+        "single-use-bioprocessing",
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [
+        "tisagenlecleucel",
+        "axicabtagene-ciloleucel",
+        "brexucabtagene-autoleucel",
+        "lisocabtagene-maraleucel",
+        "idecabtagene-vicleucel",
+        "ciltacabtagene-autoleucel",
+        "obecabtagene-autoleucel",
+        "lifileucel"
+      ],
+      "companies": [
+        "novartis",
+        "gilead",
+        "bms",
+        "legend-biotech",
+        "autolus",
+        "miltenyi-biotec",
+        "cytiva",
+        "lonza",
+        "cellares",
+        "immunoact",
+        "genomefrontier-therapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "vein-to-vein-time",
+        "apheresis"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [
+        "b-manufacturing-cell-therapy"
+      ],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Enrichment changes the composition of a mixture; activation changes cell state; expansion increases the absolute number of a defined living population. Measure the intended population consistently before and after culture. A higher percentage, a different volume or a higher concentration alone does not demonstrate expansion.",
+        "Release evidence retains identity, purity, viable amount, intended biological activity and relevant contamination risks. Some tests can continue after disposition only within a justified and authorised setting with appropriate follow-up. Neither receptor expression nor a viable-cell count alone establishes every required function.",
+        "Culture duration is only one clock. Collection-to-infusion also includes material acceptance, transport, processing, testing, clinical reassessment and scheduling, with steps sometimes overlapping. A number measured among infused recipients does not describe people who never reached infusion. Avoid a universal week range or a cross-product timing ranking.",
+        "Manufacturing can end without a product, yield a product outside specified requirements, or provide a conforming lot that is never administered. A lack of a collection or treatment slot is another access event. Keep the report's event definition, denominator, period and cancellation rules with any rate.",
+        "The process remains traceable through collections, intermediate material, product lots, doses and samples. Source and intended-recipient matching, biological identity testing, custody and conditions, lot disposition and clinical readiness each require their own evidence.",
+        "FDA's 2024 document focuses on ex vivo CAR T-cell development. Its recommendations do not automatically validate every in vivo carrier, other immune-cell product or research-bank process. Process changes need relevant evidence rather than a promise that automation or shorter culture preserves all attributes.",
+        "In a separate fictional cohort, ten people undergo collection and eight receive an infusion. The two never infused are reported separately; they are not assigned the collection-to-infusion time calculated among the eight. State the follow-up window and reasons for non-infusion before interpreting this proportion."
+      ],
+      "provenance": {
+        "editedBy": "OnCo manufacturing expansion",
+        "editedOn": "2026-09-17"
+      },
+      "principle": "Retain the product-specific process, starting material, defined cell population, parent/lot/dose relationships, control strategy and separate manufacturing and clinical outcomes.",
+      "strengths": [
+        "Supports a defined recipient-linked manufacturing and quality-control process",
+        "Individual steps can be studied and improved with relevant comparability and functional evidence"
+      ],
+      "limitations": [
+        "Starting-material variability, contamination, growth or engineering problems can prevent a suitable product",
+        "A completed lot, a conforming lot, shipment and infusion are distinct outcomes",
+        "Shorter culture does not establish a shorter total wait, equivalent quality or better clinical outcomes"
+      ],
+      "since": 2017
+    },
+    {
+      "id": "chain-of-identity-and-custody",
+      "kind": "term",
+      "name": "Cell-product chain of identity and custody",
+      "aka": [
+        "cell-therapy traceability",
+        "COI and COC",
+        "chain of identity",
+        "chain of custody"
+      ],
+      "tldr": "Identity records connect cells and products to their source and intended recipient. Custody records show who held them and what happened during handoffs.",
+      "summary": "Traceability preserves relationships across source material, engineering construct, processing lots, containers, samples and intended recipients. Chain of identity and chain of custody answer different questions: what material and recipient are associated, and who had responsibility at each stage under which recorded conditions. A coded identifier makes a relationship recordable; it does not independently prove that the label, material and recipient agree.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "ICCBBA: Chain of Identity standard ST-028, version 1.1.0 (June 2025)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_0aa7a5f7202c4b43be4cc11bcd2048ef.pdf"
+        },
+        {
+          "label": "ICCBBA: single-patient collection examples IG-050, version 1.0.0 (December 2023)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_badfaf3c48d443f78006340096a671e0.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "apheresis",
+        "cell-therapy-orchestration-software",
+        "cell-therapy-cold-chain",
+        "car-t-manufacturing-process",
+        "allogeneic-cell-therapy"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A collection can branch into processing lots, doses or test samples. Retain parent links and construct versions so a sample result can be attributed to the material it represents. One bag need not mean one manufacturing run or one dose; an allogeneic workflow can relate donor material to later recipients according to its actual design.",
+        "ICCBBA ST-028 version 1.1.0, June 2025, describes chain-of-identity relationships and responsibilities. IG-050 version 1.0.0, December 2023, gives bounded examples in which material is returned to the same patient; it explicitly does not cover one collection manufactured into therapies for multiple patients. That example scope must not be generalised into a complete donor-bank scheme.",
+        "In a fictional single-recipient example, collection A produces lot A, which branches into doses A1 and A2 and test sample S. Each child retains the parent link. A separate custody trail records handlers, handoff times and conditions. Keeping those links does not establish acceptable quality or clinical suitability.",
+        "Barcodes, biological identity assays, HLA typing, potency results and temperature traces are different evidence. None alone replaces the complete material/intended-recipient verification. A discrepancy or excursion requires investigation and the authorised quality disposition; an audit trail is evidence to assess, not a guarantee of safety.",
+        "FDA's CAR T-cell guidance addresses documented tracking from collection to administration and independent recipient/label checks. The required process is not equivalent to purchasing a particular orchestration system. Research samples, fresh products, cryopreserved products and in vivo carriers retain their own applicable identities and handling context."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "ex-vivo-cell-expansion",
+      "kind": "term",
+      "name": "Ex vivo cell expansion",
+      "aka": [
+        "cell culture expansion",
+        "fold expansion",
+        "cell enrichment versus expansion"
+      ],
+      "tldr": "Cell expansion increases the number of a defined group of living cells outside the body. Selecting cells or activating them answers a different question.",
+      "summary": "Expansion compares absolute counts of a specified living population at stated points in a culture process. Enrichment or selection changes mixture composition, while activation changes cellular state. Measurements need a consistent cell definition, viability basis, sampling method and interval. Cell concentration can change with dilution or volume, and a higher fraction can result from losing other cells rather than producing more intended cells.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Ghassemi et al., 2018: defined culture-duration comparisons and mouse experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30030295/"
+        },
+        {
+          "label": "Dupouy et al., 2022: factory expansion and adult CALM cellular kinetics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36970059/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-t-manufacturing-process",
+        "cell-therapy-cold-chain",
+        "cellular-kinetics-and-persistence",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional mixture, 20 million intended cells and 80 million other cells become 20 million intended and five million other cells after enrichment. The intended fraction rises from 20/100 to 20/25 without increasing the intended-cell count. In a separate culture example, 20 million viable intended cells becoming 100 million is five-fold expansion. These are invented arithmetic examples, not process-performance targets.",
+        "Culture conditions, activation, gene transfer, duration, selection and preservation can change subsets, differentiation, viability and function. A greater count does not establish equal starting-cell quality, a favourable state or greater tumour killing. Activation markers and intended biological activity require suitable separate measurements.",
+        "Ghassemi's 2018 study compared shorter and longer preparation in human CAR T-cell experiments, a mouse acute-lymphoblastic-leukaemia model and manufacturing-feasibility work. The reported culture comparison does not prove that every shorter process improves human outcomes or specify one optimal duration for all products.",
+        "Dupouy's adult CALM analysis distinguishes factory fold expansion from later blood transgene and flow-cytometry kinetics. In-body detection depends on sampling, proliferation, distribution, loss and expression. A blood copy count is not an absolute whole-body count or a direct functional assay.",
+        "Expansion can be one input to a product-specific control strategy. It does not replace identity, purity, viability, potency, contamination testing, lot disposition or clinical readiness. Manufacturing yield, culture time, collection-to-infusion time and patient benefit remain separate outcomes."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "cell-manufacturing-outcomes",
+      "kind": "term",
+      "name": "Cell-manufacturing outcomes and nonconforming products",
+      "aka": [
+        "cell manufacturing failure",
+        "out-of-specification cell product",
+        "OOS cell product",
+        "manufacturing success rate",
+        "shipment success rate"
+      ],
+      "tldr": "Making a cell product, meeting its quality requirements, shipping it and treating a person are different outcomes. A report's definition and denominator determine what its success rate means.",
+      "summary": "A process can stop without a product, produce a nonconforming lot, make a conforming product that is never shipped, or supply material that is never infused. Out-of-specification means at least one stated requirement was missed; it does not determine which attribute, severity or disposition applies. Studies sometimes include such lots within manufacturing failure, while others report separate categories. Keep orders, collections, runs, batches, people, cancellations and follow-up with the reported measure.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Iwamoto et al., 2025: Japan manufacturing and shipment definitions",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40066375/"
+        },
+        {
+          "label": "UK National CAR T Panel, 2025: source-defined manufacturing failure and patient outcomes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40032870/"
+        },
+        {
+          "label": "Kato et al., 2025: single-arm nonconforming tisagenlecleucel cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40377509/"
+        },
+        {
+          "label": "ClinicalTrials.gov: NCT04094311, design and dated registry state",
+          "url": "https://clinicaltrials.gov/study/NCT04094311"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-t-manufacturing-process",
+        "cell-therapy-release-testing",
+        "vein-to-vein-time",
+        "apheresis",
+        "chain-of-identity-and-custody"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional 100-collection pathway, 94 produce completed products, four of those 94 miss a stated specification, and 85 people are ultimately infused. Completion, conformity and infusion have different numerators and can require different denominators. These invented numbers do not define a standard manufacturing-success metric, describe a real cohort or imply that an out-of-specification product was used.",
+        "Iwamoto's 2025 report covers Japanese tisagenlecleucel manufacturing from August 2019 to July 2023. Its manufacturing-success numerator is batches meeting health-authority release criteria; its shipment-success numerator also includes selected nonconforming products made available for shipment. Both use initiated batches excluding specified cancellations during manufacturing. Cancellation rate instead uses all initiated batches and can include cancellations after receipt. The methods report no formal statistical analysis; observed before/after changes do not isolate a causal process effect.",
+        "The UK National CAR T Panel's 2025 retrospective report uses manufacturing failure to include no product and out-of-specification product. Approved, remanufactured, infused and never-infused people remain separate groups. Its report of no statistically significant outcome differences is not a demonstration of equivalence, and its associations do not establish individual risk or treatment selection.",
+        "Kato's 2025 single-arm Japanese report enrolled 29 people and infused 28, with 23 DLBCL and five ALL recipients. Response was assessed in 15 of the 23 DLBCL recipients; it is not correct to give the evaluable response denominator as all 23. The abstract's batch denominators also differ by missed attribute: low viability 15/24, low dose 8/23 DLBCL and high dose 4/5 ALL. Do not combine those fractions or treat single-arm comparisons as proof of equal safety or efficacy.",
+        "The Kato report's NCT04094311 identifies a specific clinical supply pathway for nonconforming tisagenlecleucel. The captured registry remains a larger recruiting study with no posted results, not just that dated published cohort. Registry design, national supply rules and a report of use do not authorise use of another nonconforming lot or establish a local treatment slot.",
+        "Record the missed specification, test method, material, lot, jurisdiction and programme. Selected access can involve a separate authorised pathway and case-specific quality and clinical assessment; a low-viability miss is not interchangeable with a dose miss or contamination. A conforming product also does not establish patient readiness or clinical benefit."
+      ],
+      "category": "Methods and models"
     }
   ]
 }

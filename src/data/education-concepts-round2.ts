@@ -285,19 +285,31 @@ export const educationRound2: TermInput[] = [
     tldr: "A peptide can bind a display molecule, be displayed by a cell, or be recognized by an immune receptor. These are different questions that require different evidence.",
     summary: "Binding prediction estimates one part of antigen selection. Immunopeptidomics examines peptides recovered with HLA molecules, while immune assays investigate receptor binding and functional responses. A primary melanoma study directly identified naturally presented mutated peptides and separately tested their immunogenicity. A consortium study likewise evaluated prediction against measured immune interactions. A candidate supported at one stage should retain that evidence level rather than being described as a demonstrated therapeutic target.",
     links: [
-      {
-        label: "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
-        url: "https://doi.org/10.1038/ncomms13404"
-      },
-      {
-        label: "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
-        url: "https://doi.org/10.1016/j.cell.2020.09.015"
-      },
-      {
-        label: "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
-        url: "https://doi.org/10.4049/jimmunol.1700893"
-      }
-    ],
+  {
+    "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+    "url": "https://doi.org/10.1038/ncomms13404"
+  },
+  {
+    "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+    "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+  },
+  {
+    "label": "NetMHCpan-4.0: Improved Peptide-MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding Affinity Data.",
+    "url": "https://doi.org/10.4049/jimmunol.1700893"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1093/nar/gkaa379"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1038/s41596-019-0133-y"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1126/science.274.5284.94"
+  }
+],
     related: [
       "neoantigen",
       "immunopeptidome",
@@ -305,7 +317,12 @@ export const educationRound2: TermInput[] = [
       "peptide-hla-multimer-staining",
       "immune-cytotoxicity-assays"
     ]
-  }),
+  ,
+"notes": [
+  "Peptide-to-HLA binding and TCR-to-peptide-HLA binding are different contacts. Evidence maps to claims: a binding prediction supports a model estimate for one exact peptide and allele (Reynisson et al., 2020, PMID 32406916); measured binding supports binding under that assay; immunopeptidomics supports association with the recovered preparation (Purcell et al., 2019, PMID 31092913), not guaranteed cancer-cell origin, surface location or complete recovery; peptide-HLA multimer staining shows cells binding a defined reagent (Altman et al., 1996, PMID 8810254), not affinity or killing; only a controlled response to naturally presenting target cells supports recognition or the measured function. Supplied-peptide stimulation can bypass processing, and secretion and target-cell death are different outputs."
+],
+"asOf": "2026-11-09"
+}),
   t({
     id: "immunopeptidome",
     name: "Immunopeptidome",
@@ -313,20 +330,46 @@ export const educationRound2: TermInput[] = [
     tldr: "The immunopeptidome is the collection of peptides associated with immune display molecules in a particular biological setting. A measurement recovers a view of that collection through a defined assay.",
     summary: "An immunopeptidome concerns displayed peptide ligands, rather than every protein or RNA message in a sample. Direct analysis of native melanoma tissue identified HLA-associated peptides, including some containing tumor mutations. What is recovered depends on the tissue and analytical workflow. The observed collection should retain its sample and method, and identifying a displayed peptide remains distinct from showing an immune response to it.",
     links: [
-      {
-        label: "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
-        url: "https://doi.org/10.1038/ncomms13404"
-      }
-    ],
+  {
+    "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+    "url": "https://doi.org/10.1038/ncomms13404"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1074/mcp.tir117.000383"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.3389/fimmu.2019.00141"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1038/s41467-021-23713-9"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1038/s41587-019-0322-9"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1038/s41596-019-0133-y"
+  }
+],
     related: [
       "immunopeptidomics",
       "binding-presentation-recognition",
       "proteomics"
     ],
     aka: [
-      "HLA ligandome"
-    ]
-  }),
+  "HLA ligandome",
+  "HLA peptidome"
+]
+  ,
+"notes": [
+  "The immunopeptidome is a biological repertoire in a defined cell population and context; an immunopeptidomics list is a method-dependent subset recovered and identified from a sample. Class I and class II repertoires are separate, and a protein can be abundant while a derived peptide is poorly generated, loaded or retained. Inflammatory signals changed peptide patterns in cancer cell lines (Chong et al., 2018, ovarian cancer cells and interferon gamma, PMID 29242379; Javitt et al., 2019, lung cancer cells and TNF-alpha and interferon gamma acting through HLA-B, PMID 30833945), which shows context-dependent remodelling and not that inflammation adds useful targets. Whole-lysate capture can recover intracellular as well as surface complexes, mixed tissue adds cancer, immune and stromal sources, relative instrument intensity is not surface copies per cell, and a reported sequence can be misassigned (Wilhelm et al., 2021, PMID 34099720). Method B identifying 1,200 peptides against method A's 800 (fictional) shows no biological difference. Sarkizova et al. (2020) gives allele-dependent repertoires from mono-allelic lines."
+],
+"asOf": "2026-11-09"
+}),
   t({
     id: "immunopeptidomics",
     name: "Immunopeptidomics",
@@ -454,11 +497,31 @@ export const educationRound2: TermInput[] = [
     tldr: "A receptor may recognize more than one related peptide. Target-selection evidence needs to address recognition of healthy tissue as well as the intended target.",
     summary: "A primary investigation of an affinity-enhanced MAGE-A3-directed receptor identified cross-recognition of a peptide from titin after unexpected cardiac toxicity. This was a particular engineered-receptor program, not a toxicity rate for all T-cell therapies or neoantigen vaccines. It illustrates why target-gene expression and a sequence match alone are insufficient descriptions of receptor specificity. Proposed-target recognition and off-target recognition need evidence in relevant systems.",
     links: [
-      {
-        label: "Identification of a Titin-derived HLA-A1-presented peptide as a cross-reactive target for engineered MAGE A3-directed T cells.",
-        url: "https://doi.org/10.1126/scitranslmed.3006034"
-      }
-    ],
+  {
+    "label": "Identification of a Titin-derived HLA-A1-presented peptide as a cross-reactive target for engineered MAGE A3-directed T cells.",
+    "url": "https://doi.org/10.1126/scitranslmed.3006034"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1182/blood-2013-03-490565"
+  },
+  {
+    "label": "Primary evidence for the antigen-presentation teaching distinctions",
+    "url": "https://doi.org/10.1038/s41586-022-04735-9"
+  },
+  {
+    "label": "Primary tolerance mechanism experiment (PubMed 3260350)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3260350/"
+  },
+  {
+    "label": "Primary tolerance mechanism experiment (PubMed 3029267)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3029267/"
+  },
+  {
+    "label": "Primary tolerance mechanism experiment (PubMed 7636184)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7636184/"
+  }
+],
     related: [
       "binding-presentation-recognition",
       "binder-affinity-epitope-developability",
@@ -468,7 +531,12 @@ export const educationRound2: TermInput[] = [
       "peptide self-similarity and immune specificity",
       "TCR cross-recognition"
     ]
-  }),
+  ,
+"notes": [
+  "Central and peripheral tolerance include distinct mechanisms. Kisielow and colleagues demonstrated deletion of self-reactive developing cells in an H-Y-receptor transgenic mouse model. Jenkins and Schwartz demonstrated antigen-related unresponsiveness after altered antigen presentation in mouse experiments, and Sakaguchi and colleagues linked a CD4/CD25 regulatory population to prevention of autoimmunity in mice. These are mechanistic examples, rather than universal human response or safety thresholds. A tumour-specific mutation can make a peptide distinguishable from its normal counterpart, but display and a responsive receptor are still needed, and there is no universal percentage of identity that makes a target safe. Higher receptor affinity is not automatically more selective. Receptors can cross-react with peptides from unrelated proteins, as in the titin peptide recognised by the MAGE-A3-directed receptor (Cameron et al., 2013, PMID 23926201; Linette et al., 2013, PMID 23770775). Luksza et al. (Nature 2022, PMID 35589842) modelled neoantigen quality, using non-selfness and selfness, in pancreatic cancer survivors; the model is not a clinical safety rule. In a loaded-peptide concentration series, compare mutant and normal peptides at the same concentration with the same HLA and responder; artificial loading leaves natural processing open and a response threshold is not a patient safety threshold."
+],
+"asOf": "2026-11-09"
+}),
   t({
     id: "immunogenicity-versus-efficacy",
     name: "Immunogenicity and clinical efficacy",

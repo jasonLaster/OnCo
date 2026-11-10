@@ -2,6 +2,13 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-10
+
+### Immunogenicity and clinical efficacy
+
+- **Exercise scope:** the linked fictional exercise supplies a receptor-repertoire change alongside a tumour-DNA result. It does not supply a tumour sequence match or a positive peptide test. The corrected account separates specificity, function, attribution and detection limits without adding those facts.
+- **Evidence boundaries:** connected notes retain assay preparation, natural tumour recognition, clinical comparisons, harms and uncertainty. An immune result can justify further investigation without settling added clinical benefit. Repeated batch material is consolidated; existing links remain. A newly cached DOI was individually resolved without updating the broader cache date.
+
 ## 2026-11-09
 
 ### Manufacturing clocks, release evidence and reader summaries

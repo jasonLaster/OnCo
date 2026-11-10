@@ -378,7 +378,7 @@ export const tldr_fr: Record<string, string> = {
   revumenib: "Revumenib (Revuforj) est le premier inhibiteur de la ménine (2024), destiné aux leucémies aiguës présentant un réarrangement de KMT2A ou une mutation de NPM1.",
   ribociclib: "Ribociclib est l'inhibiteur de CDK4/6 dont le bénéfice sur la survie est le plus constant, approuvé depuis 2024 pour une large population de patients atteints d'un cancer du sein précoce.",
   rituximab: "Rituximab a été le premier anticorps jamais approuvé contre le cancer (1997). Il a fait de la chimio-immunothérapie le traitement standard de la CLL pendant une décennie, et les biosimilaires le maintiennent bon marché et disponible partout.",
-  "rna-seq": "Mesurer quels gènes une tumeur utilise activement, ce qui révèle son sous-type et permet de trouver des fusions de gènes.",
+
   "robotic-surgery": "Les chirurgiens opèrent par de petites incisions à l'aide de bras robotisés, avec une précision sans tremblement et une vision en 3D.",
   "roche-genentech": "Créatrice d'Herceptin, d'Avastin et de Rituxan, et propriétaire de Foundation Medicine ; l'entreprise qui a défini l'oncologie par anticorps.",
   "royal-marsden": "The Royal Marsden a été le premier hôpital du monde consacré au cancer (1851) et travaille en tandem avec l'Institute of Cancer Research.",
@@ -396,7 +396,7 @@ export const tldr_fr: Record<string, string> = {
   "shared-antigen-vaccine": "Des vaccins dirigés contre des mutations ou des protéines communes à de nombreux patients, ce qui permet de les fabriquer à l'avance.",
   sheba: "Le plus grand hôpital d'Israël, dont le centre de cancérologie a dirigé l'essai POLO sur l'olaparib dans le cancer du pancréas et qui gère l'un des rares programmes de thérapie par TIL au monde.",
   signatera: "Le test sanguin le plus utilisé pour détecter un reliquat de cancer après la chirurgie, personnalisé selon les mutations tumorales de chaque patient.",
-  "single-cell-spatial": "Lire les gènes de chaque cellule individuellement et cartographier la position de chaque cellule dans la tumeur.",
+
   "targeted-therapy": "Les thérapies ciblées sont des médicaments conçus pour désactiver une protéine défectueuse précise dont le cancer dépend.",
   tarlatamab: "Le premier engageur de lymphocytes T à améliorer la survie dans une tumeur solide fréquente, le cancer du poumon à petites cellules.",
   "tata-memorial": "Le plus grand centre de cancérologie d'Inde, pionnier des essais à faible coût et à fort impact, comme l'immunothérapie à faible dose et la chimiothérapie métronomique orale.",
@@ -414,7 +414,7 @@ export const tldr_fr: Record<string, string> = {
   tils: "Des cellules immunitaires qui ont pénétré à l'intérieur de la tumeur. Plus elles sont nombreuses, meilleurs sont les résultats dans le cancer du sein triple négatif.",
   tisagenlecleucel: "Tisagenlecleucel a été la toute première thérapie CAR-T approuvée (2017), pour les enfants et les jeunes adultes dont la leucémie était revenue après tous les autres traitements.",
   tislelizumab: "Un bloqueur de PD-1 développé en Chine, conçu pour éviter une voie parallèle qui peut atténuer l'effet d'autres médicaments anti-PD-1, désormais approuvé aux États-Unis et dans l'UE pour le cancer de l'œsophage et de l'estomac.",
-  tmb: "Le nombre de mutations que porte une tumeur. Plus il y a de mutations, plus le système immunitaire a de cibles.",
+
   "tnbc-history": "Comment le cancer du sein triple négatif est passé, en six ans, du sous-type sans aucune thérapie ciblée à un sous-type disposant d'une immunothérapie, d'inhibiteurs de PARP, de trois ADC et d'un ADC bispécifique aux résultats positifs.",
   "topoisomerase-inhibitors": "Les inhibiteurs de la topoisomérase I agissent en bloquant l'enzyme qui démêle l'ADN pendant sa copie. Ils sont peu efficaces sous forme libre dans de nombreux cancers, mais redoutables lorsqu'ils sont délivrés par un ADC.",
   tp53: "TP53 est le « gardien du génome », défectueux dans la moitié de tous les cancers. Le réparer directement a jusqu'ici fait échouer toutes les tentatives, alors les médicaments exploitent ce dont sa perte rend les cancers dépendants.",
@@ -557,7 +557,7 @@ export const tldr_fr: Record<string, string> = {
   "mrd-negative-cr": "Une rémission complète MRD négative signifie non seulement qu'aucune leucémie n'est visible au microscope, mais qu'aucune n'est détectable avec des tests mille fois plus sensibles. C'est l'objectif du traitement moderne de la leucémie.",
   "mrd-testing": "Une analyse de sang ultrasensible réalisée après la chirurgie, qui détecte le cancer résiduel des mois avant qu'une imagerie ne le fasse.",
   mri: "Utilise des aimants et des ondes radio, sans rayonnement, pour fournir des images très détaillées des tissus mous tels que le cerveau, le sein, le foie et la prostate.",
-  msi: "L'instabilité des microsatellites est la marque d'un correcteur orthographique de l'ADN défaillant qui crée des milliers de mutations, rendant la tumeur très visible pour l'immunothérapie.",
+
   mskcc: "L'hôpital de cancérologie le mieux classé au monde, berceau du séquençage MSK-IMPACT, de l'étude du dostarlimab dans le cancer du rectum et de pionniers des CAR-T.",
   "multiple-endocrine-neoplasia": "Les syndromes MEN sont des anomalies héréditaires d'un seul gène qui provoquent des tumeurs dans plusieurs glandes hormonales au cours de la vie. Comme le gène peut être détecté dès l'enfance, les proches à risque peuvent être testés, surveillés et, dans le MEN2, se faire retirer la thyroïde avant l'apparition du cancer ; et pour le cancer de la thyroïde du MEN2 qui se propage malgré tout, il existe désormais un comprimé de précision, le selpercatinib, qui bloque la protéine RET défectueuse.",
   "mutagenesis-signatures": "Chaque cause de dommage à l'ADN laisse sa propre empreinte dans le génome : la lumière du soleil, le tabac, une enzyme de réparation défectueuse, une bactérie intestinale. Lire ces empreintes indique ce qui a causé un cancer et quelles équipes de réparation lui manquent, ce qui permet à son tour de prédire quels médicaments seront efficaces.",
@@ -1123,7 +1123,7 @@ export const tldr_fr: Record<string, string> = {
   "nct-dresden": "Le deuxième site du Centre national des maladies tumorales, connu pour la recherche en protonthérapie à OncoRay et pour l'IA en pathologie et en chirurgie.",
   nectin4: "Nectin-4 est une protéine d'adhésion abondante sur les cellules du cancer de la vessie, utilisée comme site d'amarrage pour l'ADC enfortumab vedotin.",
   "newcastle-cancer-centre": "Le centre de cancérologie du nord-est de l'Angleterre et le berceau du premier inhibiteur de PARP à atteindre les patients, le rucaparib.",
-  ngs: "Lire des millions de fragments de DNA en parallèle, le moteur de tout test génomique moderne.",
+
   "ngs-bioinformatics-software": "Un logiciel qui transforme la sortie brute du séquenceur en un rapport indiquant quelles mutations comptent et vers quels médicaments elles orientent.",
   "nhs-galleri": "Le plus grand essai de dépistage du cancer jamais mené, qui teste si un test sanguin multi-cancers réduit les diagnostics à un stade avancé.",
   nilotinib: "Nilotinib est un comprimé de deuxième génération contre la CML qui produit des réponses plus profondes et plus rapides que l'imatinib, au prix d'effets secondaires cardiovasculaires et métaboliques.",
@@ -3159,7 +3159,7 @@ export const tldr_fr: Record<string, string> = {
   lobectomy: "Ablation d'un lobe du poumon (le poumon droit en compte trois, le gauche deux). L'opération standard du cancer du poumon à un stade précoce.",
   "locally-advanced": "Cancer qui a dépassé son organe d'origine pour atteindre les tissus voisins ou les ganglions lymphatiques, mais ne s'est pas propagé à distance. Il est traité dans un but curatif, mais nécessite généralement plusieurs traitements combinés (chirurgie, radiothérapie, médicaments).",
   "loi-sherene": "A montré que les cellules immunitaires présentes dans les tumeurs du sein prédisent le pronostic, base de la désescalade de la chimiothérapie dans le TNBC.",
-  "long-read-sequencing": "Lire l'ADN par très longs segments, ce qui révèle des réarrangements et une méthylation que les machines à lectures courtes ne détectent pas.",
+
   "lori-pierce": "Lori Pierce est une radiothérapeute spécialisée dans le cancer du sein et ancienne présidente de l'ASCO, engagée pour l'équité dans les soins du cancer.",
   "lori-wirth": "A dirigé LIBRETTO-001 dans le cancer de la thyroïde, qui a fait du selpercatinib le premier médicament sélectif de RET approuvé pour les tumeurs dépendantes de RET.",
   lumicell: "Spin-off du MIT dont le colorant Lumisight et le système d'imagerie montrent le cancer du sein résiduel dans la cavité de tumorectomie avant la fin de l'opération.",
@@ -3437,7 +3437,7 @@ export const tldr_fr: Record<string, string> = {
   therapixel: "Le logiciel MammoScreen de Therapixel utilise l'intelligence artificielle pour signaler les zones suspectes sur les mammographies et évaluer leur probabilité d'être un cancer, aidant les radiologues aux États-Unis et en Europe à lire les examens de dépistage.",
   "thyroid-cancer-signalling": "Cette carte KEGG montre que les cancers de la thyroïde sont presque entièrement pilotés par un seul relais, la voie MAPK, activée par des fusions RET ou NTRK et des mutations BRAF dans les tumeurs papillaires et par des mutations RAS ou la fusion PAX8-PPARG dans les tumeurs folliculaires, la perte de TP53 marquant le passage au cancer indifférencié agressif. Elle est importante parce que beaucoup de ces interrupteurs ont désormais leur propre médicament.",
   "tissue-factor": "Le facteur tissulaire est une protéine de la coagulation que les cancers exposent anormalement à leur surface, utilisée comme cible d'ADC dans le cancer du col de l'utérus.",
-  "tmb-testing": "Compter combien de mutations une tumeur porte par segment d'ADN ; les tumeurs fortement mutées ont plus de chances de répondre à l'immunothérapie.",
+
   tmist: "L'essai qui tranchera si les mammographies 3D préviennent plus de cancers dangereux que les 2D standard, ou en trouvent simplement davantage de petits.",
   toga: "L'essai qui a apporté le médicament du cancer du sein Herceptin au cancer de l'estomac, première thérapie ciblée à améliorer la survie dans cette maladie.",
   "ton-schumacher": "Immunologiste qui a montré que les cellules T reconnaissent les néoantigènes du cancer, base des vaccins personnalisés et des thérapies TCR.",

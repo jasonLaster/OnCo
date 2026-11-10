@@ -216,22 +216,114 @@ export const technologies: TechnologyInput[] = [
     terms: ["mutational-signature", "hrd"], companies: ["valius", "c2i-genomics", "haystack-oncology", "isabl"], related: ["idea-ecdna-targeting", "clonal-evolution-models", "evolutionary-game-theory-cancer", "goldie-coldman-model", "metastasis-seeding-models"], links: [{ label: "Wikipedia", url: W("Whole_genome_sequencing") }],
   },
   {
-    id: "rna-seq", related: ["gene-expression-prognostic-assays"], kind: "technology", name: "RNA sequencing & expression profiling", sections: ["diagnostics"], status: "established", asOf, wikipedia: W("RNA-Seq"),
-    tldr: "Measuring which genes a tumour is actively using, which reveals its subtype and finds gene fusions.",
-    summary: "RNA sequencing reverse-transcribes a tumour's RNA to cDNA and sequences it, so read counts per gene quantify which genes are actively expressed rather than merely present. Bulk RNA-seq detects gene fusions (NTRK, RET, NRG1) that DNA panels can miss, defines expression subtypes such as PAM50 in breast cancer, TNBC subtypes and the consensus molecular subtypes in colorectal cancer, and measures immune signatures. Commercial prognostic assays including Oncotype DX, MammaPrint and Prosigna are expression-based and guide chemotherapy de-escalation in HR-positive breast cancer. The strengths are fusion detection and a readout of functional state rather than genotype alone. RNA degrades in formalin-fixed tissue, and bulk measurements average over all cell types. It measures which genes a tumour is using, revealing its subtype and finding fusions a DNA test can overlook.",
-    principle: "Reverse transcription of RNA to cDNA and sequencing; counts per gene quantify expression.",
-    strengths: ["Fusion detection", "Functional state, not just genotype"],
-    limitations: ["RNA degrades in FFPE", "Bulk averages over cell types"],
-    terms: ["gene-fusion", "pam50"], links: [{ label: "Wikipedia", url: W("RNA-Seq") }], companies: ["blank-bio", "cofactor-genomics", "data-driven-bioscience", "exai-bio", "insight-molecular-diagnostics", "isabl", "lucence", "oncobox"],
+    id: "rna-seq", related: [
+  "gene-expression-prognostic-assays"
+], kind: "technology", name: "RNA sequencing & expression profiling", sections: ["diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: W("RNA-Seq"),
+    tldr: "RNA sequencing measures captured RNA messages and, with a suitable library and analysis, can examine transcript joins.",
+    summary: "RNA normally carries and helps process cellular messages. Sequencing captures part of that RNA information through a defined preparation and analysis. Pooled abundance, transcript structure and cell origin are separate questions. A supported RNA join does not automatically establish a DNA rearrangement, functional protein or treatment benefit.",
+    principle: "A common workflow reverse-transcribes RNA to complementary DNA for sequencing. Other chemistries, including probe-based counting, require their own interpretation of the captured signal.",
+    strengths: [
+  "Captured transcript abundance with defined comparison rules",
+  "Fusion and splice evidence when the library and analysis cover the join"
+],
+    limitations: [
+  "Preparation and RNA integrity affect recovery",
+  "Bulk signal mixes cell sources",
+  "RNA evidence does not directly measure protein function"
+],
+    terms: ["gene-fusion", "pam50"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/RNA-Seq"
   },
   {
-    id: "single-cell-spatial", dependsOn: ["spatial-biology-instruments"], kind: "technology", name: "Single-cell & spatial profiling", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf, wikipedia: W("Spatial_transcriptomics"),
-    tldr: "Reading the genes of each individual cell, and mapping where each cell sits in the tumour.",
-    summary: "scRNA-seq (10x Genomics) resolves tumour, immune, and stromal populations; spatial transcriptomics (Visium, Xenium, CosMx, MERFISH) and multiplex protein imaging (CODEX, IMC) keep tissue architecture. Revealing how ADC bystander killing, T-cell exclusion, and resistance niches work. Research-grade; entering trials as correlative science.",
-    principle: "RNA is captured with barcodes per cell or per spatial location, or read by imaging-based in situ hybridisation for hundreds to thousands of genes.",
-    strengths: ["Resolves heterogeneity and microenvironment", "Discovery engine for new targets"],
-    limitations: ["Cost, throughput, analysis burden", "Not yet clinically actionable"], companies: ["valius", "elucidate-bio", "immunai", "mission-bio", "nucleai", "origin-bio"], related: ["idea-immune-exclusion-drivers"], links: [{ label: "Wikipedia", url: W("Spatial_transcriptomics") }],
+    "label": "Deep RNA sequencing analysis of readthrough gene fusions in human prostate adenocarcinoma and reference samples.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21261984/"
   },
+  {
+    "label": "Anchored multiplex PCR for targeted next-generation sequencing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25384085/"
+  },
+  {
+    "label": "A new view of transcriptome complexity and regulation through the lens of local splicing variations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26829591/"
+  },
+  {
+    "label": "Accuracy assessment of fusion transcript detection via read-mapping and de novo fusion transcript assembly-based methods.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31639029/"
+  },
+  {
+    "label": "10x fixed RNA probe chemistry, Cell Ranger 7.2",
+    "url": "https://www.10xgenomics.com/support/software/cell-ranger/7.2/getting-started/cr-flex-what-is-frp"
+  }
+], companies: ["blank-bio", "cofactor-genomics", "data-driven-bioscience", "exai-bio", "insight-molecular-diagnostics", "isabl", "lucence", "oncobox"],
+
+"notes": [
+  "RNA abundance and RNA structure are distinct measurements. Gene-level totals can conceal splice products. Some workflows sequence synthetic probes rather than original transcript-derived material; their counts cannot establish arbitrary fusion or splice sequences. Sources: Conesa et al., methods review, https://doi.org/10.1186/s13059-016-0881-8; official fixed RNA profiling chemistry, https://www.10xgenomics.com/support/software/cell-ranger/7.2/getting-started/cr-flex-what-is-frp.",
+  "An RNA join does not by itself establish a DNA rearrangement. Readthrough messages were observed in prostate tumour and reference samples. Authenticate independent sequence support and evaluate the genomic mechanism, protein consequence and clinical significance separately. Source: Nacu et al., 2011, https://pubmed.ncbi.nlm.nih.gov/21261984/.",
+  "Splice junctions join transcript regions and many are normal; a fusion transcript has sequence from different genes; an RNA junction does not establish the DNA mechanism; neighbouring-gene readthrough occurs in tumour and reference tissue.",
+  "A split read maps across the junction; a spanning pair places two ends on opposite sides leaving the insert unsequenced; amplified copies are not independent molecules; benchmark thresholds are not clinical cutoffs.",
+  "PSI is an inclusion estimate for a defined event and denominator; local junction evidence does not reconstruct a full transcript; unfinished nuclear RNA with introns is not automatically pathological intron retention.",
+  "Whole-transcriptome, short-end counting and targeted panels recover different information; anchored multiplex PCR searches from a targeted gene end toward an unknown partner and was tested in FFPE in the original method, which does not validate later panels.",
+  "Fixed-RNA probe-ligation counts are not unrestricted fusion or splice sequence evidence.",
+  "Failure to detect a join is informative only within coverage and sensitivity; RNA support leaves DNA mechanism, protein effect and drug benefit as separate tests.",
+  "Fictional teaching exercise: A candidate A-B junction supported by three identical amplified reads cannot be called confirmed DNA rearrangement or effective target.",
+  "Use protocol-compatible RNA and record aliquot consumption, integrity, reference/transcript versions, partners, junction coordinates and independent read/molecule support. State the event denominator for splice fractions. Low expression, uncovered joins, degradation, similar sequence and preparation/assembly artefacts constrain detection. Validate support thresholds, event classes and confirmation for the exact panel and specimen; a caller name supplies no clinical validation."
+]
+},
+  {
+    id: "single-cell-spatial", dependsOn: ["spatial-biology-instruments"], kind: "technology", name: "Single-cell & spatial profiling", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf: "2026-11-10", wikipedia: W("Spatial_transcriptomics"),
+    tldr: "Bulk, cell or nucleus profiling, and spatial RNA methods attach measurements to different units and retain different context.",
+    summary: "Bulk RNA pools a specimen; cell or nucleus profiling separates recovered profiles; spatial methods retain capture positions or decoded molecule coordinates. Spots can contain several cells, and segmentation or imputation adds inference. Split aliquots and adjacent sections are not the same cells. Recovery, measured genes, physical resolution, replication and intended use determine which question each method can address.",
+    principle: "RNA is captured with barcodes per cell or per spatial location, or read by imaging-based in situ hybridisation for hundreds to thousands of genes.",
+    strengths: [
+  "Profiles recovered cellular heterogeneity",
+  "Retains spatial context in compatible workflows"
+],
+    limitations: [
+  "Preparation, recovery and analysis affect results",
+  "Clinical utility requires evidence for the intended use"
+], companies: ["valius", "elucidate-bio", "immunai", "mission-bio", "nucleai", "origin-bio"], related: ["idea-immune-exclusion-drivers"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Spatial_transcriptomics"
+  },
+  {
+    "label": "RNA imaging. Spatially resolved, highly multiplexed RNA profiling in single cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25858977/"
+  },
+  {
+    "label": "Cell type-specific gene expression differences in complex tissues.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20208531/"
+  },
+  {
+    "label": "Visualization and analysis of gene expression in tissue sections by spatial transcriptomics.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27365449/"
+  },
+  {
+    "label": "Confronting false discoveries in single-cell differential expression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34584091/"
+  },
+  {
+    "label": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30586455/"
+  }
+],
+
+"notes": [
+  "Bulk RNA reports pooled abundance, cell or nucleus profiling reports recovered profiles, and spatial measurement attaches observations to tissue positions. A capture position can contain multiple cells. Directly observed RNA, cell assignments and model-imputed expression are distinct outputs. The original positional capture study examined mouse brain and human breast cancer tissue. Source: https://pubmed.ncbi.nlm.nih.gov/27365449/.",
+  "Fictional comparison exercise: 60 immune-assigned profiles among 300 recovered nuclei is 20% of recovered profiles. It does not establish 20% tissue area or original cell abundance. Split aliquots and adjacent sections are not the same cells. Biological replication and recovery bias still constrain cross-method comparisons. Source for biological-replicate requirements: https://pubmed.ncbi.nlm.nih.gov/34584091/.",
+  "The axis that differs is the measured unit and the context still attached: pooled specimen, recovered cell or nucleus profile, or capture position or decoded molecule coordinates.",
+  "Estimating cell sources from a bulk mixture needs assumptions and references and is not direct counting.",
+  "Single-cell uses barcodes; whole cells capture nuclear and cytoplasmic RNA while nuclei mainly nuclear RNA; dissociation and filtering affect recovery; profile-based identity is an assignment, not proof of malignancy.",
+  "A spatial capture spot or bin can contain several cells; imaging locates decoded molecules but segmentation affects cell-level reading; observed molecule, assigned cell and imputed value are different outputs.",
+  "Adjacent sections or split aliquots are not the same cells; two libraries from one portion are technical repeats of one biological specimen.",
+  "Cells from one specimen are not independent biological replicates.",
+  "Fictional teaching exercise: Of 300 recovered nuclei, 60 immune is 20% of recovered nuclei, not a tissue-area or original-cell fraction.",
+  "Budget finite tissue, aliquots and sections for each compatible preparation. Report counts or normalised abundance per pool, recovered cell/nucleus or spatial unit, with physical resolution, measured genes and cell-boundary rules. Quality criteria, recovery, processing/imaging/analysis cost and controls vary by assay. Independent specimens support biological comparisons; attractive maps and technical repeats do not provide clinical validation.",
+  "OnCo reading inference: finer spatial resolution does not automatically provide broader measured-gene coverage or more complete recovery. A missing RNA count can reflect preparation or detection limits; an inferred cell source or protein activity is a different kind of output."
+]
+},
   {
     id: "liquid-biopsy", tags: ["precision"], keyPapers: ["paper-razavi-cfdna-variant-sources-clonal-haematopoiesis-nat-med-2019", "paper-bettegowda-ctdna-early-late-stage-stm-2014", "paper-esmo-ctdna-assay-recommendations-ann-oncol-2022"], trials: ["nct07510828"], related: ["ctdna-tests", "cellsearch-ctc-count", "parsortix-ctc-harvest", "serum-tumour-markers", "cea-surveillance-colorectal", "multitarget-stool-rna-test"], dependsOn: ["cgp", "ngs-bioinformatics-software", "preanalytics-sample-stabilisation"], kind: "technology", name: "Liquid biopsy (ctDNA)", sections: ["diagnostics"], status: "standard-of-care", asOf, wikipedia: W("Liquid_biopsy"),
     tldr: "A blood test that reads fragments of DNA shed by the tumour, so you can genotype or monitor cancer without a needle in the tumour.",
@@ -789,15 +881,15 @@ export const technologies: TechnologyInput[] = [
 
   // ======================= IMMUNOTHERAPY =======================
   {
-    id: "checkpoint-inhibitor", dependsOn: ["monoclonal-antibody"], related: ["tigit-blockade", "tim3-blockade"], keyPapers: ["paper-ribas-wolchok-checkpoint-blockade-science-2018", "paper-chen-mellman-cancer-immunity-cycle-immunity-2013"], kind: "technology", name: "Immune checkpoint inhibitors", sections: ["immunotherapy"], status: "standard-of-care", asOf, since: 2011, wikipedia: W("Checkpoint_inhibitor"),
+    id: "checkpoint-inhibitor", dependsOn: ["monoclonal-antibody"], related: ["tigit-blockade", "tim3-blockade"], keyPapers: ["paper-ribas-wolchok-checkpoint-blockade-science-2018", "paper-chen-mellman-cancer-immunity-cycle-immunity-2013"], kind: "technology", name: "Immune checkpoint inhibitors", sections: ["immunotherapy"], status: "standard-of-care", asOf: "2026-11-10", since: 2011, wikipedia: W("Checkpoint_inhibitor"),
     tldr: "Immune checkpoint inhibitors are antibodies against CTLA-4, PD-1 or PD-L1 that release the brakes on T cells so they attack the cancer. They are approved in more than 20 tumour types and produce lasting, sometimes curative responses that chemotherapy rarely does, but most patients do not respond and autoimmune side effects are the cost.",
-    summary: "Anti-CTLA-4 (ipilimumab), anti-PD-1 (pembrolizumab, nivolumab, cemiplimab, dostarlimab, toripalimab, tislelizumab), anti-PD-L1 (atezolizumab, durvalumab, avelumab), anti-LAG-3 (relatlimab). Approved across >20 tumour types and tumour-agnostically for MSI-H/dMMR and TMB-high. Moving earlier: neoadjuvant/perioperative in melanoma, NSCLC, TNBC (KEYNOTE-522), bladder, and MSI-H colorectal (where dostarlimab produced 100% complete responses in rectal cancer without surgery). Immune-related adverse events are the cost.",
+    summary: "Anti-CTLA-4 (ipilimumab), anti-PD-1 (pembrolizumab, nivolumab, cemiplimab, dostarlimab, toripalimab, tislelizumab), anti-PD-L1 (atezolizumab, durvalumab, avelumab), anti-LAG-3 (relatlimab). Approved across >20 tumour types. The U.S. tumour-agnostic pembrolizumab indication covers adult and paediatric patients with unresectable or metastatic MSI-H or dMMR solid tumours, determined by an FDA-authorised test, that have progressed following prior treatment and who have no satisfactory alternative treatment options. The separate colorectal indication covers unresectable or metastatic MSI-H or dMMR colorectal cancer determined by an FDA-authorised test, without that prior-treatment restriction. For the U.S. tumour-agnostic pembrolizumab indication, TMB-H means at least 13 mutations per megabase, determined by an FDA-authorised test, in adult and paediatric patients with unresectable or metastatic solid tumours that have progressed following prior treatment and who have no satisfactory alternative treatment options. Moving earlier: neoadjuvant/perioperative in melanoma, NSCLC, TNBC (KEYNOTE-522), bladder, and MSI-H colorectal (where dostarlimab produced 100% complete responses in rectal cancer without surgery). Immune-related adverse events are the cost.",
     principle: "Blocking inhibitory receptor-ligand interactions restores T-cell priming (CTLA-4) and effector function (PD-1).",
     strengths: ["Durable, sometimes curative responses", "Broad applicability"],
     limitations: ["Most patients do not respond", "Autoimmune toxicity", "Biomarkers are imperfect"],
     targets: ["pd1", "pdl1", "ctla4", "lag3", "tigit"],
     drugs: ["pembrolizumab", "nivolumab", "ipilimumab", "atezolizumab", "durvalumab", "relatlimab-nivolumab", "dostarlimab", "cemiplimab"],
-    terms: ["cps", "tmb", "msi", "irae"], people: ["lieping-chen"], trials: ["rationale-302"], links: [{ label: "Wikipedia", url: W("Checkpoint_inhibitor") }], journals: ["cancer-immunology-immunotherapy", "journal-of-immunotherapy", "oncoimmunology"], companies: ["compass-therapeutics", "eris-biotech", "onc-ai", "ose-immunotherapeutics", "persephone-biosciences", "xilio-therapeutics", "mabquest", "ascendo-biotechnology", "bright-peak-therapeutics", "pheast-therapeutics", "zumutor-biologics", "biond-biologics", "solstice-oncology"],
+    terms: ["cps", "tmb", "msi", "irae"], people: ["lieping-chen"], trials: ["rationale-302"], links: [...([{ label: "Wikipedia", url: W("Checkpoint_inhibitor") }]), ...[{"label":"FDA, 16 October 2026: updated tumour-agnostic TMB-H indication","url":"https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph"},{"label":"KEYTRUDA current prescribing information, sections 1.8, 1.9, 1.18 and 2.1","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"}]], journals: ["cancer-immunology-immunotherapy", "journal-of-immunotherapy", "oncoimmunology"], companies: ["compass-therapeutics", "eris-biotech", "onc-ai", "ose-immunotherapeutics", "persephone-biosciences", "xilio-therapeutics", "mabquest", "ascendo-biotechnology", "bright-peak-therapeutics", "pheast-therapeutics", "zumutor-biologics", "biond-biologics", "solstice-oncology"],
   },
   {
     aka:["T-cell engager","T cell engager","TCE","TCEs","bispecific T-cell engager","BiTE","soluble TCR engager","TCR-mimic engager"], notes:["An antibody-derived TCR mimic recognizes a peptide-HLA complex using an antibody scaffold. A soluble TCR/CD3 engager instead uses a TCR-derived recognition scaffold attached to a recruiting arm. TCR-T administers cells carrying receptor chains. Target recognition, molecular scaffold and administered object are separate axes; a mimic can be part of an engager without becoming a TCR protein.","Liddy studied soluble TCR/CD3 ImmTAC proteins in experimental systems. Dao studied an antibody-derived WT1/HLA-A*02:01/CD3 engager in cells and mice. Their results do not establish clinical benefit for every scaffold, HLA allele or cancer. Recruiting another T cell does not require that cell’s native receptor to recognize the target, but does not remove the target arm’s HLA restriction.","The KIMMTRAK label identifies tebentafusp as a soluble gp100 peptide-HLA/CD3 protein for HLA-A*02:01-positive adults with unresectable or metastatic uveal melanoma. This is a named clinical protein example, not an engineered-cell product or evidence that other peptide-HLA binders share its indication or outcomes.","Binding to supplied peptide-HLA reagent can bypass natural processing and display. Source-protein expression or a compatible genotype alone is not a functional target assay. For a research claim, compare naturally presenting targets, irrelevant peptides, the wrong HLA allele, antigen-negative targets, suitable effector cells, no-effector conditions and healthy tissues. Labeled clinical selection tests remain a separate clinical-use rule. Record the peptide sequence, HLA allele, display method and its detection or recovery limits; no universal target-density cutoff follows from the format name.","The Mack construct joined two single-chain Fv fragments with a peptide linker in one compact protein; this is different from an IgG architecture with an Fc region. The FDA tarlatamab application describes DLL3/CD3 binding domains combined with an IgG Fc region in a half-life-extended BiTE. Thus BiTE, Fc-containing and half-life-extended are not three exclusive buckets. Fc design, binding geometry, affinity, target density, distribution and measured exposure still belong to the specific molecule. The Giffin cell, mouse and nonhuman-primate study does not define a universal human schedule.","Compare recognition, T-cell activation, proliferation, target death, cytokine release and protein exposure at named times. Record effector source/state, target density, effector-to-target ratio, dose or concentration and denominator; include target-negative and no-effector controls. A granule or cytokine signal does not substitute for completed target-cell death or clinical benefit. Cytokines in a culture are a measured laboratory endpoint, not a diagnosis of clinical cytokine-release syndrome.","Bluemel compared epitope positions and antigen sizes in engineered cell systems. Constructs with similar target-binding affinity differed in target-cell lysis, supporting functional testing of the actual geometry rather than ranking every molecule by affinity alone. In the solitomab phase 1 solid-tumor study, dose-limiting diarrhea and liver abnormalities constrained dose escalation; an accessible target and a binding bridge did not by themselves establish a useful therapeutic window.","Compared with administered CAR-T or TCR-T cells, a protein engager recruits effectors rather than supplying engineered responders. Protein mass/concentration and viable-cell dose have different units; clearance differs from cell survival, expansion and trafficking. A shared target name does not establish matched epitope, affinity, contact geometry, exposure, controllability or safety.","The 2025 FDA tarlatamab decision followed the randomized DeLLphi-304 comparison after platinum-based treatment in SCLC. Its survival finding belongs to that drug and setting. The cited blinatumomab consolidation and teclistamab combination/monotherapy decisions likewise retain their own settings; none is a class-wide treatment-sequencing rule."],

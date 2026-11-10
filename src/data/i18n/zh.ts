@@ -131,8 +131,8 @@ export const tldr_zh: Record<string, string> = {
   "histopathology-ihc": "在显微镜下观察癌细胞并染色特定蛋白。仍是每一个诊断的基础。",
   cgp: "从活检组织一次测序数百个癌基因，找出药物可靶向的突变。",
   "wes-wgs": "读取肿瘤的全部基因（外显子组）或全部DNA（基因组），而非选定的面板。",
-  "rna-seq": "测量肿瘤正在活跃使用哪些基因，揭示其亚型并发现基因融合。",
-  "single-cell-spatial": "读取每个单细胞的基因，并绘制每个细胞在肿瘤中的位置。",
+
+
   "liquid-biopsy": "读取肿瘤脱落DNA片段的血液检测，无需穿刺肿瘤即可分型或监测。",
   "mrd-testing": "术后的超敏血液检测，比影像早数月发现残留癌症。",
   mced: "一次血液检测旨在同时筛查数十种癌症，包括目前没有筛查的癌症。",
@@ -407,14 +407,14 @@ export const tldr_zh: Record<string, string> = {
   "her2-low": "带少量HER2（IHC 1+或2+且无扩增）或微量（超低）的肿瘤，旧HER2药物忽视它们，但Enhertu可以攻击。",
   cps: "把染色的肿瘤细胞和免疫细胞一起计数的PD-L1评分。",
   tils: "进入肿瘤内部的免疫细胞。越多，三阴性乳腺癌的结局越好。",
-  tmb: "肿瘤的突变数量。突变越多，免疫系统的靶点越多。",
-  msi: "损坏的DNA拼写检查器，产生数千突变，使肿瘤在免疫治疗面前高度可见。",
+
+
 
   ctdna: "肿瘤细胞脱落到血液中的DNA片段，可用敏感测序检测。",
   mrd: "治疗后仍存在但影像上看不到的癌症，通过血液或骨髓检测发现。",
   vaf: "携带突变的DNA读数比例。告知样本中突变占比及克隆性。",
   vus: "已发现但尚不知是否重要的基因改变。",
-  ngs: "并行读取数百万DNA片段，是每一项现代基因组检测的引擎。",
+
   "gene-fusion": "两个基因断裂并拼接，产生可驱动癌症的杂合蛋白。往往对药物极度敏感。",
 
   pam50: "一项50基因检测，将乳腺癌分为luminal A、luminal B、HER2富集型和基底样型。",
@@ -3193,7 +3193,7 @@ export const tldr_zh: Record<string, string> = {
   lobectomy: "切除肺的一个叶（右肺有三叶，左肺有两叶）。这是早期肺癌的标准手术。",
   "locally-advanced": "癌症已超出其所在器官，长入邻近组织或淋巴结，但尚未扩散到远处部位。治疗以治愈为目标，但通常需要联合多种治疗（手术、放疗、药物）。",
   "loi-sherene": "证明乳腺肿瘤内的免疫细胞可预测预后，这是在TNBC中降低化疗强度的依据。",
-  "long-read-sequencing": "以很长的片段读取DNA，从而揭示短读长机器遗漏的重排和甲基化。",
+
   "lori-pierce": "Lori Pierce是乳腺放射肿瘤学家和ASCO前任主席，专注于癌症治疗的公平性。",
   "lori-wirth": "领导了甲状腺癌的LIBRETTO-001试验，使selpercatinib成为首个获批用于RET驱动肿瘤的RET选择性药物。",
   lumicell: "MIT衍生公司，其Lumisight染料和成像系统能在手术结束前显示乳房肿块切除腔内残留的乳腺癌。",
@@ -3453,7 +3453,7 @@ export const tldr_zh: Record<string, string> = {
   "the-breast": "The Breast是European Society of Mastology关于乳腺疾病和乳腺癌的开放获取期刊，涵盖外科、肿瘤学、筛查和生存者照护。",
   therapixel: "Therapixel的MammoScreen软件利用人工智能指出乳腺X线摄影上的可疑区域，并对其为癌症的可能性进行评分，帮助美国和欧洲的放射科医生阅读筛查检查。",
   "thyroid-cancer-signalling": "这张KEGG图谱显示，甲状腺癌几乎完全由一个信号中继（MAPK通路）驱动，在乳头状肿瘤中由RET或NTRK融合和BRAF突变开启，在滤泡状肿瘤中由RAS突变或PAX8-PPARG融合开启，而TP53缺失标志着向侵袭性未分化癌的转变。它之所以重要，是因为其中许多开关如今都有了各自的药物。",
-  "tmb-testing": "计算肿瘤每段DNA携带多少突变；突变负荷高的肿瘤更可能对免疫治疗产生反应。",
+
   tmist: "这项试验将裁定3D乳腺X线摄影是否比标准2D摄影预防更多危险的癌症，还是只是发现更多小癌症。",
   toga: "将乳腺癌药物Herceptin引入胃癌的试验，这是首个在该疾病中改善生存的靶向治疗。",
   "ton-schumacher": "证明T细胞能识别癌症新抗原的免疫学家，这是个体化疫苗和TCR疗法的基础。",

@@ -130,8 +130,8 @@ export const simpleA: Record<string, string> = {
   "histopathology-ihc": "Looking at cancer cells under a microscope and staining them to see which proteins they carry. Still the basis of every diagnosis.",
   cgp: "Reading hundreds of cancer genes at once from a biopsy to find the changes a drug can target.",
   "wes-wgs": "Reading all of a tumour's genes, or its entire DNA, instead of a chosen list.",
-  "rna-seq": "Measuring which genes a tumour is actively using, which shows its type and finds joined-up genes.",
-  "single-cell-spatial": "Reading the genes of each single cell and mapping exactly where each cell sits inside the tumour.",
+
+
   "liquid-biopsy": "A blood test that reads bits of DNA shed by the tumour, so doctors can learn about the cancer without a needle in it.",
   "mrd-testing": "A very sensitive blood test after surgery that finds leftover cancer months before a scan could.",
   mced: "One blood test meant to screen for dozens of cancers at once, including ones with no screening today.",

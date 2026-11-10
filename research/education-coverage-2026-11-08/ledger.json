@@ -30,7 +30,7 @@
     {
       "version": "proposal-biology",
       "state": "implemented and locally validated in draft PR #375; not merged",
-      "recordSnapshotSha256": "bf7c41136bb2bb0e005da60186d006a51823c9d19b7a33ad3439f868f41e5f1f"
+      "recordSnapshotSha256": "f13c8dc3618ecd405cd394d4bfffe6c5b6efe0072bba4871354c62da841f5362"
     },
     {
       "version": "proposal-therapeutic",
@@ -126,6 +126,16 @@
       "version": "proposal-spatial-summary-consumers",
       "state": "180 additional distinct actual short-summary selectors across the 20 supplemented or new owners: 11 existing entries and 169 English fallbacks. Two unchanged supporting owners were additionally checked without adding their 18 selectors to this denominator. No new named language review.",
       "recordSnapshotSha256": "a3d1d3a350b755af0243d6fbca0bf8a0de0f3e57c1fdaddd736a9ce41be7899b"
+    },
+    {
+      "version": "proposal-measurement-sequencing",
+      "state": "Twenty-eight canonical owners integrated in draft375: seven new subjects and 21 existing owners. Twenty measurement lessons plus bounded TMB policy consistency; no merge or deployment.",
+      "recordSnapshotSha256": "3c90f254f0e8b0c9671ddd761388c91abff7597a1239d91f4dc58802087a1cb5"
+    },
+    {
+      "version": "proposal-measurement-summary-consumers",
+      "state": "252 additional distinct current short-summary selectors. Existing unchanged text is preserved; stale source-dependent entries fall back to current English. No new named language review.",
+      "recordSnapshotSha256": "864c8fe80e7dc171e6ef2e6cb3787a48f972d5f70deba6ca6fcc0a7cce663561"
     }
   ],
   "sourcePhases": [
@@ -135,7 +145,7 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (374 sources)"
+        "Source phase remains open: guide-c9689645 (354 sources)"
       ]
     }
   ],
@@ -143,18 +153,18 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 146,
+      "teachingAssets": 176,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1742,
-      "unresolvedAssets": 1742
+      "unclassifiedAssets": 1712,
+      "unresolvedAssets": 1712
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 146,
+      "teachingAssets": 176,
       "supportingAssets": 0,
-      "unclassifiedAssets": 1742,
-      "unresolvedAssets": 1742
+      "unclassifiedAssets": 1712,
+      "unresolvedAssets": 1712
     }
   ],
   "stats": {
@@ -164,15 +174,15 @@
     "navigation": 14,
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
-    "semanticallyReviewed": 184,
-    "implementedCoverage": 180,
+    "semanticallyReviewed": 204,
+    "implementedCoverage": 200,
     "mainCoverage": 0,
-    "unresolvedContentItems": 350,
-    "unresolvedSources": 350,
-    "adjacentConcepts": 39,
-    "unresolvedAdjacentConcepts": 16,
+    "unresolvedContentItems": 330,
+    "unresolvedSources": 330,
+    "adjacentConcepts": 42,
+    "unresolvedAdjacentConcepts": 19,
     "openSchemaGaps": 6,
-    "unreviewedLiteratureOccurrences": 110,
+    "unreviewedLiteratureOccurrences": 95,
     "readyForFinalReaudit": false
   },
   "items": [
@@ -3709,7 +3719,7 @@
                 "recordId": "genome-wide-loss-of-heterozygosity",
                 "version": "proposal-biology",
                 "field": "notes",
-                "fieldSha256": "4b52dd932abb0330fe10b098ba01a1c59d39fbba493e6a2812af0657d00920f6",
+                "fieldSha256": "2936ba6d43201ce5b685a678490fc07cec54505ae22c5dd50e5968b0d4fce151",
                 "explanation": "A genomic scar does not establish inactivation of both alleles or a present functional defect. These are separate questions from finding two variants."
               }
             ],
@@ -40122,8 +40132,162 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "619b2bae1157a989a6cae63502a8c21cfbc65ec4592c2bd859dba2c2bde12ea8",
+          "c746fe931aabb38a74189c200c5b57dbb85fe4ede22107155cf9d6d2d02e09e6",
+          "d9fa6eddbb2a68f41c81bf3df7fb8d9669ec3a978604186b9c75882ea8ffc565",
+          "63e2c1597819457e6da8e42bd4346d8ded7e5e7719c323f79b4745b98a67cba1",
+          "76724eb8322b97a8f70ae9ff4d3ec998b4c13c9d4d50c6e76c3fd43e942f3358",
+          "a5ae0b1ecbae64869cf9b0068528b3a8254d1b790c1a33bca0bd51bb4527346c",
+          "a7fb2a0208e8fcfe85891597c4b2cfac1e3e08fba4ae35da63f0295f7c1ec2b2",
+          "477512ce408b444ff786a8f9efa8d4c41fae1be7c73fff5163cb6d10e721c9b7",
+          "220fd189c93a1cebbd6dd28e0d558c0ace7b032780fb7f9ba9b6598a1fb697b3",
+          "af110929d5908b47fb79734244fa717acfb1ccac8720cd096bf2c9add4ac2029",
+          "75681e33ec8d4842011082b35c5d40dc41ca30d8576890cb40a0a5368b30fa5b",
+          "b728deff26bb93acd68c9a06e891aa416c3d1218e807adca850b5b95ecd32678",
+          "09183f551ebc96181ac9ced637b0e14a461c6599f3dd6d076ed58ca8b5575d41"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.copy-number-and-loh.total-vs-allele-specific",
+            "requirement": "Total copy number counts copies of a region; allele-specific copy number estimates the contributions of the distinguishable sequence versions A and B.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.state-table",
+            "requirement": "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.loh-not-deletion",
+            "requirement": "LOH is not synonymous with deletion: copy-neutral LOH can follow loss plus duplication or recombination; a gain does not necessarily erase either version.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.major-minor-phasing",
+            "requirement": "Major and minor counts are the larger and smaller allelic contributions; minor of zero supports LOH under the model; they do not identify parental origin or assign a mutation to a copy; phasing needs suitable evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.ploidy-purity",
+            "requirement": "Local copy count differs from ploidy; relative signal can fit different purity and ploidy pairs; fractional counts can reflect mixture or subclonal states.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.measurement",
+            "requirement": "Methods combine relative coverage with allele balance at informative heterozygous sites, segment the genome and fit states; a matched normal helps; a total-copy profile alone cannot separate 1+1 from 2+0; homozygous sites are uninformative.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.function-limit",
+            "requirement": "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.worked-copy-neutral",
+            "requirement": "Two A copies and no B copies under an adequate model is copy-neutral LOH: not deleted and not proven inactive.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.copy-number-and-loh.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-amplification",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e7bab6a883f6d56dd7dd075e9f4d36674880aecade6646f01d19ff75916b95bd",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40198,8 +40362,145 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "50c6f7f3ff27458a0187ba8039eb418e25539e509ceeea400be1735ac0e8fdfe",
+          "7d5d3806712038cd8e7e0e59a44dcbd0f685ca239e01b93c165d438c45559357",
+          "bf1ab3d248fc4a07a281d3bdeb6c68d5cdffd24030b566db29fc580e1e369ded",
+          "9b22cdd3273cbc69d25c3e4d983742f6342229a3e4f443de36ab0b05cfe0f473",
+          "88f8b224d968a61a903293789b76941e4b740b23c3ada61e4d9636cdf6da528e",
+          "7695d38b9c8d678213760d02a9eb4e020b6fede82917966392dea1ed15ad23e1",
+          "aebf93a0c9d724baf73d9ea6cd7c2cd596cd51c62a37e1c895397d275999e15a",
+          "b14f6cf44dcc4c9cd945ddc1e6a5d2521c9c679e458532d1e086cb860e1a84ed",
+          "08f1b1289bf0026dc016e43f338170a1ffa58270f3653f28617708c4d2c11b8d",
+          "3968301b305cf6a99c5918af32d4be07cdaace1e8d819d3e86c1e494b0dcad7e",
+          "aeb5f8560f178dd6028f04cdca2f5ef8d7fd1398c36cb8b6c0ad1f0725b9a285"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.hla-loh.locus-haplotype",
+            "requirement": "Identify the inherited HLA-A, HLA-B and HLA-C versions on chromosome 6, retain their verified gene-specific locations, and distinguish possible linked loss from a claim of how commonly a whole haplotype is lost.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.lohhla-nsclc",
+            "requirement": "LOHHLA found HLA LOH in 36 of 90 (40%) TRACERx non-small-cell lung cancers; it used patient-specific HLA sequences with purity and ploidy; not a prevalence for every breast cancer.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.all-or-none-regions",
+            "requirement": "Distinguish selected all-loci-loss or no-loss validation regions from an estimate of typical regional HLA-loss frequency.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.subclonal-uninformative",
+            "requirement": "A loss may be present in one tumour population; normal and other tumour cells contribute reads; weak or indeterminate calls are not proof of retention; one region does not map every lesion.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.dna-rna-protein-b2m",
+            "requirement": "DNA loss, reduced allele-specific RNA, reduced surface protein and B2M functional loss are separate findings; B2M loss affects many alleles at once.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.neoantigen-implication",
+            "requirement": "A credible loss call asks which proposed targets depend on the lost allele and what supports presentation through retained alleles; it does not show all targets fail.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.worked-haplotype",
+            "requirement": "Loss of a maternal haplotype carrying A*X, B*Y, C*Z challenges peptides predicted for A*X and for B*Y; retention of paternal alleles does not itself prove display.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.hla-loh.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "hla-loh",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40274,8 +40575,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "fbd4b0aa482ed36a1f7b854bad34f7cc8c73edc30b753d190e8d286f66c20213",
+          "de17bb03e626018eb36ccb67236fed6aad058e5bf920869e5c6975c43ebf2143",
+          "50670774b75ed0cabfc02337cd0da0ddc405bfe808a5b77ff0b5ecf08fa3b6a9",
+          "108fa53182cd459bbb15cc8899cf23bf61d9cccc6ef5971d75bb81dfb24bacda",
+          "5a3e68af3059e30fb67d4a4df3fc3da306683cbb3738142c28b3f77b7ce611bf",
+          "7ba5d090dd9ef34caa5e9474670ebe14352b4d2915e90279a989efd1b2b0f42d",
+          "4851ae7d760c56ea4ff486bee2efd9c6d1a20eeb58edbba3b067b336a84b0a09",
+          "d59eb7f5d7b9bd1a14d5cc3779d6d08169ddf27398a7735d555444a3d8bb64e0",
+          "4bc8920798b0b7e8cdfe63dc65c1d0b2309759bee346f4502193ac95ab1308d2",
+          "98dfe2b49b75cc3f3d280a157881577ba44cb4521f6951f83dd5e82ac428fc11",
+          "798119e967096e1dbb16fc639bf41f0a578660dee17cd637cd0c25c561ebdd8e"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.long-read-reach",
+            "requirement": "Long reads can span repeats, rearrangement boundaries and nearby variants, supporting phasing; the human reference-genome experiment did not establish universal clinical detection in every tumour.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.methylation-not-sequence",
+            "requirement": "DNA methylation is a chemical modification, not a change in base sequence; detection needs a specific workflow.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.three-workflows",
+            "requirement": "Native nanopore current with a trained modification caller (Simpson 2017), SMRT polymerase kinetics with a validated model (Tse 2021) and bisulfite conversion (Frommer 1992) detect marks differently; a long-read report does not imply a modification analysis.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.amplification-loses-marks",
+            "requirement": "Ordinary amplification of unconverted DNA copies sequence without faithfully copying native marks; conversion encodes chemical state before amplification.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.independent-capabilities",
+            "requirement": "Long read and methylation assay are independent capabilities; a long RNA or cDNA read does not measure tumour DNA methylation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.fraction-vs-confidence",
+            "requirement": "Eight of ten usable molecules called methylated at one site is 80% of those molecules; it is not 80% malignant cells or 80% gene silencing; per-molecule confidence differs from a fraction across molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.long-read-and-methylation-sequencing.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "long-read-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "7843a1d288dabc765d8a454580e927aa470236ab3b10e82649a53f2220a10118",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40351,8 +40774,145 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "a641e28dd44b368dcb82513a4f32fc489a104054190840f60f6d4486325f0c0b",
+          "af8cd288423fb8d2244921e9c9591df86b1c89e3b349fd90cfec83ad2a50e883",
+          "ded80f43d9f9c6076997965324863dc9a1a4027b4270fdb15528117636278863",
+          "8ee0a832dd4df04653a84f9917fa5dbcf2de737f8be4f7d9501932de95eda90b",
+          "2d70fe5f3dba6080fe8b0b4f461707a6cdb697bbfd6a08856c92fe391d429575",
+          "4bc9b0e9a336bea3cbe7723e3f154c28dcd6de99c1c5b47a2859946d67127ed2",
+          "831309c8242668cc09428f8f48c7476cad487bacb8c1f5d977c4ff6bfa517ede",
+          "8bf56fea26b9d249a81227360f13359f5b68119396c9565cc6196d6e644f2728",
+          "98f931f51ab24b198e2a4b0389316148c292ea370d2a976a078d88a86b0313b1",
+          "b6af905ef85a032af798f91df2820577aebb80e5c611aba42b7c6b1452f3562c",
+          "2059959870405b285ed8b51e58151bce93dbd60e2523f8befed8482df013052e"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.msi.definitions",
+            "requirement": "Microsatellites are short repeats; MSI is altered repeats in tumour DNA; MMR corrects some copying errors; dMMR lets repeat changes accumulate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.two-approaches",
+            "requirement": "PCR or validated sequencing observes repeat instability; IHC observes staining for MLH1, PMS2, MSH2 and MSH6; they ask different questions and neither is a complete repair test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.labels",
+            "requirement": "MSI-H, MSS and indeterminate are assay labels; an inadequate or indeterminate specimen must keep that label rather than become MSS.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.cap-validation",
+            "requirement": "CAP recommends cancer-type-specific validation for cancers outside better-established settings and says TMB should not be used as a surrogate for MMR status.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.lynch-and-methylation",
+            "requirement": "A tumour MSI or dMMR finding does not alone diagnose Lynch syndrome; some colorectal tumours lose MLH1 by methylation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.label-1-8",
+            "requirement": "The U.S. pembrolizumab label section 1.8 covers unresectable or metastatic MSI-H or dMMR solid tumours, as determined by an FDA-authorised test, that progressed after prior treatment with no satisfactory alternatives; this is a reason to measure accurately, not a guarantee of response.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.worked-indeterminate",
+            "requirement": "Retained IHC staining with an indeterminate DNA MSI result cannot be reported as confirmed MSS; keep both results.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.msi.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "msi",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "f760cbc5190e2deb3988fed5a9562cae3377be06ae89132a525a27f7ba218df0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40440,8 +41000,162 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "caa02a38b049f504d8c2f0c013801831cf76c348dce98b85ce028904ff64a25a",
+          "ae323d102885d7d4bad63e35282951c9fc95257cd816cce3141e1aa659bb697f",
+          "be418cda38c8bcf3842d7baed81e93ff4b3c83c15ca86ada6d464aac729fd120",
+          "6f12f3e2fa734aabf128d9adc22d8924def8a2969c1162ba0a1dbf041e55158d",
+          "21fa4e93c6c3f68b9d978841812b708a207008fcfb7e5214d4f4b115405f195f",
+          "7c8e13106b31aa579b44cce2db4cc51a07fb00df790d192d39dae74178a6c3fd",
+          "8da99c5b83296f4af3bc1af71d94d052131392495cc2ad0661549089f2a3cf3f",
+          "924859957f92dcc724ffea4650c77b039dbc32b4b0172d1a323c494d75a25f55",
+          "5ab0c85dcc6718b9ad659773e55d15cfcf42c3e1cdf9a533b8a0bfe6ce0ce536",
+          "8f1b64dbe176a55de217dd281d875368a905328423bc8b27b6cb594342e0d872",
+          "e69d911c815f44e2abbf50ba579bd2d773409e3a21d5bf8e0f50139131692d5f",
+          "b2f9517fa225476dda2f990029ba9dbd4456dc357863536f0d411c066c5ca3e4",
+          "e843de52e6f8b6544d86b37f9e1ed69dd19f78d4bd561dcf38f8538aae2791e4"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.panel-exome-genome.territory-table",
+            "requirement": "Targeted panel, exome and genome differ in intended territory; check exact coordinates and analysed change classes rather than gene count.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.exome-meaning",
+            "requirement": "Exons include untranslated sequence; exome does not mean every captured base codes for protein nor that regulatory regions or rearrangement breakpoints were examined.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.rough-sizes",
+            "requirement": "Human genome is about 3,000 Mb; protein-coding sequence is about 1%, roughly 30 Mb across about 180,000 exons.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.zehir-panel-depth",
+            "requirement": "One hospital panel (MSK-IMPACT) covered 341 genes (2,809 tumours) then 410 (8,136 tumours) at mean 718x; downsampling to 150x exome depth would have missed at least 9% of mutations.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.budget-tradeoff",
+            "requirement": "At a fixed budget broader territory commonly spreads reads thinner, but actual depth depends on design and usable yield; broader territory guarantees neither uniform sensitivity nor all-variant detection.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.class-specific-performance",
+            "requirement": "Territory labels do not specify performance for small variants, copy number or rearrangements, and conventional WGS does not automatically measure methylation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.reduced-coverage",
+            "requirement": "Reduced-coverage regions exist even in clinical exome and genome workflows, including clinically relevant genes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.worked-negatives",
+            "requirement": "A research genome negative at a repeat does not supersede a validated panel; a panel that never examines a fusion breakpoint cannot exclude it by a negative report.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.panel-exome-genome.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "ngs",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "432b4cbff3c1d8c7e622dbb6864b4a68a43bae90c307fc32f81da0dbf90fa883",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40522,8 +41236,146 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "25ddd178fda212a52709cf899ba4f9d805b6255e28c5c6698ccf08032b71b764",
+          "b07c913bbd56f7bc447ed4811f67aa13758ba76d411bb8267e28e64733a48e8a",
+          "117077a36409a782797f2744bf2ccdf6a364b7620d7c0d12a8ed9ba79b24ec8b",
+          "9d814023ddc7161e9d0e9f4f85ea24883f5224d9b0572e85f881ae713c014282",
+          "6175e6a421ffb82216c56330a080b44ba4b6fd82e51f83c0414eb363ed89bb33",
+          "f9f81ae7322b60a8a684f6a84109299ab21661ac04721541d028da5f50e6b0de",
+          "3c86482b33befa56cc7fb743187ba160f7b9b4d59fddf6a820dad90a5f5468db",
+          "5baa918de726a404bd8e3c351a748c91f72551ec3d041f6bc3263abfb15e3ae1",
+          "68d69b84d1c70696e6ba566afaefb795f51605a69935ac51539371e2f6367eac",
+          "9dd8ec387a229a8f65c4ee2636e8eb889a03ea041beefadfe8c8cd993dec1235",
+          "4098d3ee788e2835903c2d34928ecf0fbd7e00c428b4c0656e8f5fe4377fda27",
+          "f34adf662777c86ff2836df753b118b6bb86465b50d9179bb71724e958dc12f0"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.depth-definition",
+            "requirement": "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.mean-vs-breadth",
+            "requirement": "Mean depth averages positions; coverage breadth is the fraction of a named target (denominator: target bases, not reads or cells) meeting a stated minimum depth; neither shows which important positions were missed.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.worked-100x-90pct",
+            "requirement": "Fictional report: mean 100x, 900 of 1,000 target bases at or above an illustrative 20x criterion gives 90% breadth, while the position of interest has 4 usable observations; 20x is not a clinical cutoff.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.read-vs-molecular-depth",
+            "requirement": "Read depth differs from molecular depth: overlapping pair ends and amplification copies inflate reads without adding independent fragments; HTSlib defaults are software definitions, not clinical validation criteria.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.more-sequencing-limit",
+            "requirement": "More sequencing cannot recover a region absent from the library or create independent molecules from duplicates; library complexity, input, preservation, capture and alignment limit usable evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.negative-scope",
+            "requirement": "A negative report covers tested regions, detectable change classes and validated sensitivity; identical depths can support different detection limits; depth does not establish origin, function or actionability.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.deep-vs-broad",
+            "requirement": "A narrow panel can be deep and a genome broad but thinner per position; territory asks where, depth asks how many.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-depth-and-coverage.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-depth-and-coverage",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40603,8 +41455,131 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "54a944357b1382619b52f696410413171e18c447da246301996a5b3608eb2e55",
+          "7be1cfe2a3d364801dd514c2eaed11c7625c3bb18c6be8d124a7a6136c3896ea",
+          "994276eff6f8168b2132e85faef91a8a79faf0f6ae8ea07888918afb3ad63141",
+          "e62d9a88ce943c64b5a46e48c745fc4cc05e938482ad847239dd1e1ab658a173",
+          "c8e01e2cb11680405ffceb10cf20e80f6a3305b38983851c455313d44c4f6596",
+          "c30250e780ed6ef43fb36dade1da2c30c632ea0dca96cbbf9e09dd66c7062b31",
+          "279922663745c1657a6c3d83ed141d492c72c9c4203ac8b941bafac335384290",
+          "6b093e3f81ee71d5e85b72688c8a9dd334a69b58319831dd501261bd9a440a33",
+          "4f8b15430d99b23b02ed8b43d91d0be1ee117a0be5c70c2152d993cacb3bbb1b",
+          "2a1d2a0f09272d60ff41f1b343aa99b7ca837c16d224157ff97adec232f228e7",
+          "1088a84e52f07190ae9d2317b6fc251ff718aabf366b4cbe99ea7a67b410a7f9",
+          "fda7a17278f07cd459df7afc086d77caed21df83b766c916fc26a51c3799e72c"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.sequencing-reads.definition",
+            "requirement": "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.phred",
+            "requirement": "Phred quality: Q20 is an estimated 1% per-base error probability and Q30 0.1%; these are model-based base-call estimates, not the probability that a reported mutation is real; Q30 is a scale value, not a universal pass rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.base-vs-mapping",
+            "requirement": "Base quality (a letter) and mapping confidence (a location) are separate; repeats can make placement ambiguous; one read can have more than one proposed alignment record.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.paired-end",
+            "requirement": "Paired-end reads come from opposite ends of one fragment, so they are complementary placement evidence, not two independent molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.amplification-duplicates",
+            "requirement": "Amplification copies one fragment many times; duplicate recognition or validated molecular tags assess independent support but do not repair errors introduced before tagging; in amplicon assays identical start and end coordinates cannot separate copies from independent molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.raw-vs-usable",
+            "requirement": "Raw versus usable reads: filtering changes the denominator for downstream support; a read does not identify a cell, establish function or alone prove a somatic mutation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.sequencing-reads.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "sequencing-reads",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40680,8 +41655,160 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "ec090e6eb1f29289b59b3197bc40834e7baf09bd9b29186ef6fa38c37e50c300",
+          "8eb58d3924751077889a7b7ca052b7c1cc44c8738fb485517c8d0acf5d7d5c86",
+          "5ff51a1325205f67ffae2bf9b8f5d1291e6f7673409582754f0b42ee04887ef9",
+          "6fe9f7d42e2350f87780256b0b7e409292b347ffe4a2dbbe799069f49966c9a8",
+          "a34450ba691227c9a4e42a68e9e72db8133859b4c44f5cc71efba8fb7c5da54a",
+          "3a9f66bff5165025d4de9f7ed456b608ffd063c08b79ba28bb3b73284538c880",
+          "7622191f1ea8ac1863f85650188c629bafe7ddc2bde1571311b4400846a817f4",
+          "fae12efc6ce7033e8df1ff06155107307ec9b573cac6370c306115b912a2f41f",
+          "1bdef5486f5518e96b35bc4ded1ab86dcbe6209aadcf32ed33a851ddeee3ccaf",
+          "c3626c2316217fe3bd50ff8e92a977c30fb4529489eebcba647038b08ed6f646",
+          "2a232fee22d310eba856f5aa35f1d5fd11ffbc68dea8da34c4348e38ac885901"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.tumor-mutational-burden.density-definition",
+            "requirement": "TMB is the density of eligible somatic mutations over the assay reporting region, in mut/Mb (Mb = one million bases); the numerator rules, filters and any calibration are method-specific.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.denominator",
+            "requirement": "Panel, exome and genome examine different regions; a cancer-gene-enriched region need not behave as a random genomic sample.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.harmonisation",
+            "requirement": "When laboratories analysed the same exome data with their own regions and pipelines panel TMB estimates varied; this was a computational comparison, not proof of interchangeability for treatment selection.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.neoantigen-limit",
+            "requirement": "More mutations offer more candidate neoantigens, but processing, HLA display and immune function still matter; high TMB neither guarantees checkpoint benefit nor applies to all cancers.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.label-1-18",
+            "requirement": "Retain the FDA-authorised test, disease and treatment-setting conditions, and distinguish the historical 10-mut/Mb accelerated indication from the October 2026 13-mut/Mb traditional indication.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.worked-12-vs-24",
+            "requirement": "24 eligible mutations over 2 Mb is 12 mut/Mb and over 1 Mb is 24 mut/Mb; not comparable clinically without counting and calibration rules; a research result does not establish authorised-test eligibility.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.not-cin-not-msi",
+            "requirement": "TMB differs from copy-number instability and from MSI, and a TMB category does not settle an individual outcome.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-mutational-burden.study-design-boundary",
+            "requirement": "Retain the nonrandomized supporting analysis and distinguish its population from early triple-negative breast cancer treatment selection.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tmb",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e87cc48e835ef8a4b8dddcff301b12711e044a475122a0c49a5fbd788e2b42ca",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40752,8 +41879,129 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "3f915a389554dca4830f54d88c1d9d918153d010c701e42aa7228f42532fc1f3",
+          "b8c6f7727536380ae3ed142a700efd7a8765861bb4ca619711d50727c662812c",
+          "8a2746e5f9a3e7f8d15cf0a42429f09283886d6e2d61808f1f75e6e383d12c2b",
+          "c9fb2ac13b1b9d2217c918eef1ba5ea6ee95d4a85662ccc92843198db56ab908",
+          "eec72776efd594dec5546707d205702f0b6549ddfaa83b3a8ad23066f3c5eaca",
+          "7513d18645aaa0c75b1cec8534a46c9139097a54197a32f3bdf9cc2921386201",
+          "0d24abbab41e129f69179274b462d30f0cf9b810b302cf50fd1f9431313f775b",
+          "5044001c8eb7a5876fed82c8c15c338c47e8f905a060293bc0512a8e6c596846",
+          "d85144d030f92fc0a5d7711a0cde60f83e516d5e314fffe9b9ff41c8f791bada",
+          "e059e95258cbb2d81c0300f066b2f99901506492db3fd2cd5112ff31c0d104b6"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.matched-normal-def",
+            "requirement": "A matched normal is a separately collected specimen from the same person chosen to represent constitutional DNA; normal is an analytical role, not a guarantee of uncomplicated cells; it differs from a healthy reference cohort.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.attribution-logic",
+            "requirement": "Evidence in the normal supports constitutional origin; adequate tumour and normal depth with no normal support supports somatic origin; inadequate normal depth leaves an attribution gap and absence there is uninformative.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.tumor-only-inference",
+            "requirement": "Tumour-only workflows infer origin from population databases, allele fractions and models; rare germline variants may be absent from databases; a hotspot or familiar gene does not prove tumour-only origin.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.jones-2015",
+            "requirement": "In 815 tumour-normal pairs across 15 tumour types, germline changes in cancer-predisposing genes were found in 3% of apparently sporadic cancers; tumour-only analysis could not identify them and added false positives of 31% (targeted) and 65% (exome) of alterations.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.origin-not-function",
+            "requirement": "Origin does not establish function, hereditary-risk conclusions or drug benefit; paired research sequencing is not a validated hereditary test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.worked-48pct",
+            "requirement": "A tumour-only rare repair-gene variant at 48% allele fraction absent from databases cannot be labelled inherited or somatic from those facts; review copy state and attribution model.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.tumor-normal-vs-tumor-only-sequencing.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tumor-normal-vs-tumor-only-sequencing",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "5d918b2b352e2faae9ad3878a983693c42e1276a7db92e7833f5410d3cd50ebf",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40842,8 +42090,147 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "77f9e88cbeb4098f287c63e63b453be322c0c6ca3d6453de980be83ebfef87c4",
+          "d615e15fcb16cc3d9b5028f35f48b9440136b07d86523c9019d498cf8ce75e0a",
+          "bdf223958752c9ba67ba3a76595ccda75a079c4bdc90d0516de3841e537bfd5b",
+          "a88eb866904538c25eeca937e5e92faf844d8519e63f64fd7103228b1b9a52d1",
+          "8ee8ad2fcb04047a572f670ef3101bac65480c7486fb58942aade44caf3826a9",
+          "521e5acf0d195a1e451eb35c97702f6954c07b0d3ce694ff532c237c72a2749d",
+          "e572f4155b01eb1775e1b294fe641d662bc2abf68fcf3155ba0b50181c11f865",
+          "1496c2d3c260fbf9e2735fffd47593e3ecccd6f3fbd3e15dd83d3bc637fcdc0b",
+          "8e72f3784b59a300992cbca0477c97d1ca773e477e05b52efda353e1c86e570d",
+          "ef92932cee444f9549c52ffecbdbc9b4f3a74f4714438f0b9e6b3c2fd1060e39",
+          "8e42cf3b84f8a4f2232d48d3419869be9a71d2e8f7c2f6b029558aad238993ed",
+          "0ee80851cae6d9a863e1f62be3de7a18cc3e889ee6aa48e3239f6b3e084e339c",
+          "9deb9500d86e5f9473b7c0386eca6e97744d6e1983ce7662354a5c9041bad447"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.vaf-definition",
+            "requirement": "VAF is the proportion of usable reads or assay-defined molecules supporting the alternate sequence; keep the denominator: 25 of 100 usable observations is 25%.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.ccf-and-denominators",
+            "requirement": "CCF is carrier cancer cells over all sampled cancer cells; its inputs have distinct denominators: cell purity p, DNA contribution, pathology cellularity (method-defined, for RCB the tumour-bed area), global ploidy P, local copy number C, mutant multiplicity m.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.dna-contribution-formula",
+            "requirement": "With equal recovery per genome copy and diploid normals, tumour DNA contribution is p*P/[p*P+2*(1-p)]; half the cells at ploidy four contribute two thirds of DNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.expected-vaf-formula",
+            "requirement": "For uniform local copies, expected VAF is p*f*m/[p*C+(1-p)*2]; assumptions: two normal copies, uniform cancer copies, fixed multiplicity, unbiased observations; subclonal copy change needs a richer model.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.same-cells-25-vs-33",
+            "requirement": "Same 50 cancer plus 50 normal cells, every cancer cell carrying one variant copy: expected VAF 50/200=25% with two local cancer copies and 50/150 about 33% with one; CCF stays 100% and purity 50%.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.try-it-one-sixth",
+            "requirement": "Purity 0.5, one mutant copy: four local copies with CCF 100% and two local copies with CCF 2/3 both predict VAF 1/6 (about 16.7%); copy evidence separates them; CCF above 100% signals incompatible assumptions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.vaf-limits",
+            "requirement": "High VAF alone cannot establish truncal ancestry or origin or function; a rise after treatment can reflect mixture or copy change as well as carrier expansion; uncertain inputs give alternative CCF fits, not counted cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-allele-fraction-and-cancer-cell-fraction.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "vaf",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "8c904d31c888ce2c54ae24f02f57a2d28d05c920293f0f621a12b1ce0149dffc",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -40913,8 +42300,129 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "9a7dc5f5f617e08c3522d0e04047175ed0564b6181b9f3b96728838112d653f9",
+          "a2d5b0156bc681944246ab44c2c3bc69548727dcbe74eb5060eb78c285ad492b",
+          "325c8990ef5beaff46b07740ef622a15eaa2f492725940ee2132c76e031a9687",
+          "b2ab1e146cb7c4775e2ab86da3aecaa035a6810825c2e71a22e56c7a394eaa65",
+          "198679ab8682cba328e21b23be31efe1fa4befc281c424e4a2f66e51bf68e75d",
+          "f0a9cb0a940b10454342a8b17f46d421e315a86d6559d945eb06e59bf6e82140",
+          "ae5791ae9877fef78fc404e0029b8b6458f2b3c133cb363380162cc942951c0e",
+          "e11da0030171e931e9f1f9fb866bfe59972f787b6788d4808b2afd60f440b6b1",
+          "0c46ba3508f208fcc8bcc5526cafb88efe7684d5a4b4bcb26a816c38933a357a",
+          "2cebb56c6fb214360c5a08cc0d87bb19b8298c25d4840c1bd2f5574abcd5a11d"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.variant-calling.definition",
+            "requirement": "Variant calling evaluates sequence evidence and error models to identify candidate differences; methods are class-specific (substitutions, indels, copy changes, rearrangements) and a workflow calling one class may not call another.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.evidence-inputs",
+            "requirement": "Evidence includes usable depth, base and mapping quality, strand and fragment distribution and comparison-sample support; somatic callers must handle low-frequency evidence in mixed samples.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.vcf-filter",
+            "requirement": "In VCF, PASS means the call passed the stated filters; a dot means filters have not been applied; counts and allele fractions need defined denominators.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.annotation-vs-calling",
+            "requirement": "Annotation adds gene or predicted consequence and is separate from calling; machine learning is one method, not the definition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.agreement-not-independence",
+            "requirement": "Two callers agreeing on shared reads can share misalignment error; confirmation needs an independent suitable method; a negative call set is bounded by detectable regions, classes and fractions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.worked-ambiguous-mapping",
+            "requirement": "A call that is PASS in two tools but supported only by reads aligning ambiguously to duplicated regions has not resolved location.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.variant-calling.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "variant-calling",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "040b4825da3630580e4545532424c1b2d97f6702301eeff1a7c9879cea46d4ab",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41603,8 +43111,144 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "b77ed6fcd3b7613cfc212755cbbfbac4870533661c7501c540b1792236c78368",
+          "1054226ccd487c30a0d8633c30afa8412f824d9f281f93d96924624d4209d3da",
+          "70b1dacf18947da59871d11e7c84324a5f886d2cc1e4b9310e655e5e6e1be8b6",
+          "1e2856c62b9c74d54501750a3bfb421da6a67ee5cdc779162c9fd2913c6ab023",
+          "95f27ce71ea53c0d06c2161c94c6246f2eeb2e9cbfce6cd1c938241740c9a130",
+          "5b7c90d240654d89840f1af2ce84b6764f80654228c7248d8794962d792a8733",
+          "1e1e964c09c5f3bc826ba82a91b6754479b36ec60833944825473df1e866387c",
+          "5925cccf4cf1ebf5c25149b574d94d7bccd5bd73c3df2446acdd1715aba6a9d4",
+          "86ae8ad3a3b85239c51d0d2db01e9e2a334d47e450b6e899d1f090b3659b3128",
+          "6afee77fc1e01bebbafea41ab4623c351973fd00992d462dadce004ff507f81a"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.batch-effects.definition",
+            "requirement": "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.normalisation-vs-correction",
+            "requirement": "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.confounding",
+            "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.biology-not-batch",
+            "requirement": "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.replicates",
+            "requirement": "Reprocessing one extract is a technical, not a biological, replicate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.multi-lab-reproducibility",
+            "requirement": "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.batch-effects.crossed-design-exercise",
+            "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "batch-effects",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41681,8 +43325,145 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "97de384301d89278fcdf723eaae36113b751b13b034e2c88c8a9ea45ab8cba74",
+          "1a51e8dd7659de186db24f9252dde53f35f1e3371a4d6d6712050d0333594b0a",
+          "b67b2c99e87cfac060358f63c783181609fec7354fd0778141a609f57e91d9ca",
+          "5914dfbc36c15cc56bc7eb1b6b9ef4d54d6814fcfd6d44ebfe790e8549552207",
+          "a280b73d2d8a7f04cf69b0778ce6ecaf5ddbe99b1154e772469f8c5e23a2a746",
+          "c46209c82d39443f495501be7aa964c13032955a486516258b2b9020cdb98fcb",
+          "747e9053048c994e93829802fb37ece5c5e6bd18c539aa389f13f05be74239c4",
+          "900c3557ea9842fa05f9ca6f9873174fb742fb33adf2fde8f085a7f636a63bc4",
+          "5aa30ad4899e346862249cb42fe151fdf75e7db3ff57b4abb4b5696dff02992f",
+          "a9dbb46d090f08da053cfad41bc5ec29344903f98d59134b4ddf54a029d4a338",
+          "f10945ea6bbc9c33a7bcace935505189edb6b1f5fdcc23155feeefe61c447e6b"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.bulk-rna-seq.workflow",
+            "requirement": "Bulk RNA-seq extracts RNA, prepares a library (often cDNA), may select mRNA or deplete rRNA or capture regions; bulk does not mean equal capture of all molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.assignment",
+            "requirement": "Reads or fragments are assigned to genes or transcripts; shared sequences make assignment ambiguous; a count table is already shaped by preparation and analysis.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.mixture",
+            "requirement": "A bulk signal can rise because more cells of a type contribute, expression within them rises, or both; deconvolution estimates contributions under a model and does not separate cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.isoform-hidden",
+            "requirement": "Gene-level counts can hide isoform differences; a mutant or splice product needs sequence or junction evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.claim-limits",
+            "requirement": "Bulk RNA can nominate expressed targets and summarise programmes but does not establish cell origin, surface protein, pathway flux or drug dependence; zero reads is not absence; thousands of genes from one biopsy are not thousands of patients.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.worked-20-to-40",
+            "requirement": "With equal RNA per cell, a lymphocyte-only marker and 100-cell pieces, raising lymphocytes from 20 to 40 doubles the pooled marker (20 to 40 stipulated molecules) without changing any cancer cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.specimen-validation",
+            "requirement": "Record sampled region and RNA integrity; research profiling differs from a validated clinical RNA test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-rna-seq.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "bulk-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "e4df0fa5245446b8fef7328e2551e53e82db69d5a095f2f699d12378394d7ce1",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41761,8 +43542,153 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "362915225f59bed9195b7661a56915e356cc80fc16f167fb782c21cc4563b463",
+          "f0f52f3db4ab81b591b6a7e7c77ae5b5c6ab819a3e7beff77267bf00734325ac",
+          "f435f269f3d9458b29f9960da2be9df0c5ed912ed99f5acb8cbcfd7f9301e8cc",
+          "055f981bb78244ef296686841fe518f62d5e0a286c552fc36dc116871774f0a5",
+          "50a6445566997c931d874fc8bbc318cc6a1193499c5ef1278b05417e7900b367",
+          "b0ee1df6b0d9f4246b4e31454f83f5be485b01b290eb990a33ae9395cf74c643",
+          "addac37f3f2ce63eb90efe5a06ee4605b66de5f18f1f74eb7c7f06e02037a289",
+          "afedbedb799a9f65bf1e3837f6a0e22b6b89c4fc9dc56b7a6e29031ef30cfa5b",
+          "85256ea34d4f86f2a4c6412e39d5eca227f15eb9777a13e87cf669d139064d0b",
+          "200e1b7579b5b2c2da613377467b91649b8d5d3989e2a27bc2982675e31b1e75",
+          "07c6e55f7d37ca351536a97c5bd42c865b3120100e4f8a23fd3fda892d95e967",
+          "a23c4b8d767739d5022a6c575c84f2598f138450edddc8a46536d78cc4c27df0"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.measured-unit",
+            "requirement": "The axis that differs is the measured unit and the context still attached: pooled specimen, recovered cell or nucleus profile, or capture position or decoded molecule coordinates.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.deconvolution-assumption",
+            "requirement": "Estimating cell sources from a bulk mixture needs assumptions and references and is not direct counting.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.sc-sn-compartments",
+            "requirement": "Single-cell uses barcodes; whole cells capture nuclear and cytoplasmic RNA while nuclei mainly nuclear RNA; dissociation and filtering affect recovery; profile-based identity is an assignment, not proof of malignancy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.spatial-units",
+            "requirement": "A spatial capture spot or bin can contain several cells; imaging locates decoded molecules but segmentation affects cell-level reading; observed molecule, assigned cell and imputed value are different outputs.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.same-cells-caution",
+            "requirement": "Adjacent sections or split aliquots are not the same cells; two libraries from one portion are technical repeats of one biological specimen.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.replication",
+            "requirement": "Cells from one specimen are not independent biological replicates.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.worked-60-of-300",
+            "requirement": "Of 300 recovered nuclei, 60 immune is 20% of recovered nuclei, not a tissue-area or original-cell fraction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.bulk-vs-single-cell-vs-spatial-rna.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              },
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41842,8 +43768,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "2d62db01998ba39c64384c56c225c713068a0e2e574ee74b91c7daecabeec27a",
+          "4b5fc3821e9ace29b3566e491a4b657ec8ebb0c4497213bc50e4848287a5672e",
+          "f61b57ea3b94503de9466d2a83ccbf39e87f6c6ef28d77f74ec541d5a9c09616",
+          "11ceb03db304d5b8e7af7ca0d370f2c29b858f60b654f909e0200ab80ecedbba",
+          "1cab2f0c8fdc556f67b19a24c4ba520b963b8649a190f1b14c95610f527777b0",
+          "d1b182b22f45cd7bfea3b98b0d82c498dfeec3092cd0af2293d675bd7b23bdb9",
+          "a98d623f1b6f86aa2b47d9a43d7bc2bea9cd61eff212ddcea4133b66412459f7",
+          "2bde4a8d1353556f9e86412cb1535f0771db393eede9683fb4f2997b2ebd8e0b",
+          "6cf345168e5d44ecce967e6d23f6932b8591f40c5aea1b68b4dbe581387a9afa",
+          "7a7672348ab6053f71418e2ed39bfe657d90919a57b357958f1855d100628815",
+          "9c20c28dc2c51e0c7989cd0d69d42fa010a1d1904a66a3d8335a7b49616e0c10"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.counts-normalization.counting-unit-umi",
+            "requirement": "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.cpm",
+            "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.tpm",
+            "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.composition",
+            "requirement": "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+            "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.not-batch-or-absolute",
+            "requirement": "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.counts-normalization.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "tpm-fpkm-counts",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41918,8 +43966,152 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "67017d46cc77934c83c3b5d4cdf0335a02f585a5639aef24167d6a08a06660ca",
+          "83128929dc7d497381cf3faddf65e1e3454d42d1481dd09a65166bc6229664b1",
+          "e710697d4cb44b7a84cbe04faebd6650d01392c318c9f84fb58ea375ede446cc",
+          "2560b268bb5f5f31a7bf6e88c772cfcc22fe0854e164227f9ef7d9aef0a2c733",
+          "32a9764efe0f6e21dc6cf826b90cabe4591b7b9fa0613da752ae99f33a0c2e28",
+          "3caf3efe4c390f6d9833f0e270c8264c186ebb5d6896d3d34f02b75b46c39a60",
+          "70b630267680dabe659803a6dfa025dbd65069a410540bf75f99b6ad041c16ce",
+          "20cd69974379f4cb775c188498faccbe3c432ccacc42c98579af618e8d3a6a66",
+          "d018616289d1e3748a314b5e66c7b4643a09a962f8a0c8342f9a4431be4d09b4",
+          "2ec4f29208f63551e8026486f95b46cf11f819466f78418df1f6a9ae242663cf",
+          "5a5df6afea8809d5e9d26a45f4e4503aaf4a9aac52bac25b89e7be8cc2081575"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.junction-vs-fusion",
+            "requirement": "Splice junctions join transcript regions and many are normal; a fusion transcript has sequence from different genes; an RNA junction does not establish the DNA mechanism; neighbouring-gene readthrough occurs in tumour and reference tissue.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.split-vs-spanning",
+            "requirement": "A split read maps across the junction; a spanning pair places two ends on opposite sides leaving the insert unsequenced; amplified copies are not independent molecules; benchmark thresholds are not clinical cutoffs.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.psi",
+            "requirement": "PSI is an inclusion estimate for a defined event and denominator; local junction evidence does not reconstruct a full transcript; unfinished nuclear RNA with introns is not automatically pathological intron retention.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.assay-reach",
+            "requirement": "Whole-transcriptome, short-end counting and targeted panels recover different information; anchored multiplex PCR searches from a targeted gene end toward an unknown partner and was tested in FFPE in the original method, which does not validate later panels.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              },
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "principle",
+                "fieldSha256": "9673ba28a1063e8b34b2d2138ea95e77b549ee21b4ff2023f63557c21f710d60",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.probe-chemistry",
+            "requirement": "Fixed-RNA probe-ligation counts are not unrestricted fusion or splice sequence evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.negative-scope",
+            "requirement": "Failure to detect a join is informative only within coverage and sensitivity; RNA support leaves DNA mechanism, protein effect and drug benefit as separate tests.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.worked-three-copies",
+            "requirement": "A candidate A-B junction supported by three identical amplified reads cannot be called confirmed DNA rearrangement or effective target.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.fusion-and-splice-detection.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "1ad7677860d648d6690793456e5c2f1a93aa19476f79ac2a6b87e06649d9b691",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -41995,8 +44187,160 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "e5af4f69b5c4a3ae9acfc48d69143b9aeb2d108dd02c5b0651509f27ea1c3053",
+          "4ee6d96295bdf4712cc0b86e780cfbc22c2d2ad58be20cec0f387b0fea00be5d",
+          "ea1078d64c51aa6ce08c5aa519d7c983fa101b4ef5c163ee4488f669d53ec6b1",
+          "33584637345f7ecbddc31caa85a51f332c18f1e78eb41c4a38c50f9bfd5eb2fe",
+          "1c7507ce4b9383998288f5a5993443ba262fef21d2e18aefdac615b1b4791b50",
+          "bc8a186fd50021f5a65db36ca07434005fd79f36402b52eb0cd1e66265a74624",
+          "8978eec4eda78b07e705e436b5524093dc921ee4888faf197be7d522ffd80e86",
+          "289ee0b95c4fc20c128a82484d93ecb6234786cf43d2539f0c50d1cadab26377",
+          "b18c397fdf8bcdef28417dfd1f63174b017b6612661d7a4d48d553267320456a",
+          "4185d7b0ddaeece8b71b09206621d3ec5876aa85b9e8706ca1d9731faee52373",
+          "168800ac79b15094a353327390033021d32aa1f36571650878d942dc0d76b008"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.gene-expression-signatures.definition",
+            "requirement": "A signature combines selected RNA measurements by a defined algorithm; preprocessing, weights, reference data and software version are part of the definition; a gene list alone is not a test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.three-kinds",
+            "requirement": "Pattern or module score, subtype classifier and outcome predictor answer different questions; performance belongs to a population, endpoint and horizon.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.pam50",
+            "requirement": "The original PAM50 work used a defined 50-gene method for intrinsic subtypes and risk models and does not validate every later similar score.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.module-vs-gsea",
+            "requirement": "Module scores subtract matched control genes from selected-gene mean expression; GSEA tests accumulation toward one end of a ranked list; outputs cannot share a cutoff.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.locked-and-venet",
+            "requirement": "A clinical predictor needs a locked procedure; in breast cancer more than 90% of random signatures over 100 genes were significant outcome predictors, so association alone does not show the named biology matters.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.validity-ladder",
+            "requirement": "Analytical repeatability, clinical validity and clinical utility are separate questions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.bulk-origin",
+            "requirement": "A bulk inflammatory signature can rise from more immune cells, changed state or both; a stress score does not establish protein activation, metabolic rate or dependence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.worked-new-normalisation",
+            "requirement": "Replacing normalisation while retaining the old high cutoff is not validated; the old cutoff cannot supply missing validation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.gene-expression-signatures.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "gene-expression-signatures",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "a4d15fe9e0d366c5244040b8216207b4cbbcdd2789211e035f6decd0986959d3",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -42073,8 +44417,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "ac2b7cb28e5d6c4744eae33541f732b4b8a843cae8cc635d09f99a877587f5e8",
+          "59d2c7128e09156630f36ef4953b0ec89e5e6bd32b1ab2b1cfa694d7c1cfc378",
+          "6302b7455c976c74c767dbac3cf321ccae709682f1b4fd9716b0f88f2b68a302",
+          "c88f7b8734b7c30744ffa057e36a111236972cf810dcb0a9b8090dbd8ae45ba1",
+          "b7afe2ed5ebf2c30cad9452d0cdb5079d1c7d4311d46aa554b198402c62b78b5",
+          "6f315644547c15bdced3074ef01d983d0bb959e365c4823ed6be1bf951672249",
+          "ced120084b31a4b403517cae3e8b2f6f3ad397c91b86f6cfaa33698b16dd3241",
+          "ee19f7d4562fd11ac9119921c9d9ca6d1b7cd98ca34649dd9e76f1184fdb32f6",
+          "8bbe4dd2d602e5987020966b047a56154a5e18030c7bd3656292643149b94b4d",
+          "92df4dccb57810891b162543f53220827c06e21d0d33759d529657c8fd5e65c3",
+          "3fd66400826f047a2f9298ff0f285eb9cf655366cf4d61033d547c84c52c9967"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.immune-deconvolution.definition",
+            "requirement": "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+            "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+            "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.state-reconstruction",
+            "requirement": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.validation-comparators",
+            "requirement": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+            "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.immune-deconvolution.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "immune-deconvolution",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -42152,8 +44618,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "be7bf6927fc05cfaed882d819182624d24b00dddf8c2088ccd6c59ac8ec70d09",
+          "027037bf83d3d81df4daa2063906327f2622bfa975d212f29bc0b3859b7f9924",
+          "1b263c185ff474ed4b888a48b8e02543c44a9793a9011e8d469e0b514a9d51d2",
+          "b6bfceef195d58aa3ea1ae8544eec9a12c0adc4eee9f27ae7d659a46145c5a3f",
+          "b9ca6d83e1a00c4d5a3241b1213d2c87a62dafaa8f989f544c3a7a6a6199d608",
+          "0229474835e48279e2566128836a48cfd09abade6bfe5146fdf474684047f9c3",
+          "57e323619c3481c79fb893e2d6ba7a3747773272c91e923305b1e239b4bc825a",
+          "95a9e1233ec07d5bc6706a0ec18d39b29782972247095f1e897f7bddcb38fca0",
+          "0af076d018fb893a97c8274a60a82f83d0337a6adbc49944cfdefbd294770e7a",
+          "ee1cd657745ff588d0a5651b2a0f2d42444386ab2e62b4ea902f37e13d60fecb",
+          "60ab7d1866e09ff9205cc0bef843edb05915c807e073fb0c4c17256d24912afa"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.rna-pathway-scoring.inputs",
+            "requirement": "Inputs are expression data, a gene set and scoring rules; shared genes make pathway scores related; two numbers called pathway score are not necessarily comparable.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.ssgsea-vs-gsva",
+            "requirement": "ssGSEA compares rank distributions inside and outside a set within a sample, with optional scaling that can involve the supplied score collection; GSVA estimates each gene's distribution across supplied samples first, so changing the cohort changes the comparison; the GSVA package also implements ssGSEA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.score-semantics",
+            "requirement": "A score is commonly unitless and is not automatically a significance test or probability; a percentile ranks against a defined group, so the 90th percentile is not 90% activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.function-limit",
+            "requirement": "RNA scores do not directly measure protein, phosphorylation, flux or dependence; feedback can raise messages while output falls; a response classifier needs its own locked model.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.worked-mean-rank",
+            "requirement": "Ranks A to E, set {A,C,E}: mean rank (1+3+5)/3=3; a teaching calculation, neither ssGSEA nor GSVA, and not an activity measure.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.gsea-cohort",
+            "requirement": "GSEA is a cohort-level enrichment framework, not interchangeable with every per-sample score.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.rna-pathway-scoring.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "rna-pathway-scoring",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "9f1603a25a14f7d24593c4496b4de66e6c42a2dbe30983cf0b3eba220b133a80",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -42229,8 +44817,130 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Sol coordinator integration of medium-reasoning source assessment; not expert sign-off",
+        "checkedAt": "2026-11-10",
+        "rationale": "Both source inventories, 454 section signatures, 474 heading blocks and 836 intake source anchors reproduce. Source-defined requirements, assay tables, captions and exercises have current fields. Recaps and analogies reuse the specified learning requirements; related links and source lists are metadata. The HLA validation-region frequency overstatement is explicitly corrected, and current TMB policy is distinguished from the pinned historical criterion. No personal-case teaching or source body is copied.",
+        "sectionHashes": [
+          "083f1ce2b6e47c03874ee7a9ef0f69151be04bdf674131cfe54cbb7a00ed0d7a",
+          "8700da239585b9f74c20fa999e578e7b22984ab62b5841949fef319a1bf5d81d",
+          "9d147f84164a3b4a31260b273319626d1ec8248df1447f4ba4c2a668f06bc634",
+          "2e5012f76568357117486bdc5b1b00acc2a692329b0e470105b0a77927adf28b",
+          "9687e635eec0471bb9543100154c6bf37670b42f3104d2d136d3ef3f8601a046",
+          "76596b2055a2067fb554521953754c3bee5f067de0ae48189c8c1996ee14c563",
+          "237651e4606700105ebe970a4eb79d1e3ad5ed884a7a094ca3f3de78dad16b4f",
+          "ff1a54b942b273c1b9068c4e9d9128f3b0855a12b73cda4754f6f8d7eb752be6",
+          "d45d21f2b9411f039cc66333455301b781490f0c1a00ebb18eef1debf479c5cd",
+          "07477e261773d8d9ecb57ed7670d517c51e8815044e367bc2597b089f430555a",
+          "0b2b1cd0de9e43b64bf3c328fcb2f688b016a18eaf981437cc3ed005a8c28694"
+        ],
+        "points": [
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.barcode-umi",
+            "requirement": "A barcode labels a reaction compartment and a UMI separates captured molecules from amplified copies, giving a gene-by-barcode table; a barcode does not guarantee one intact cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.nucleus-vs-cell",
+            "requirement": "Single-nucleus sequencing samples nuclear RNA including unfinished transcripts with introns, whole cells also capture cytoplasmic messages; a mouse cortex study showed different recovery; not proof nuclei are better for tumours.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.preparation-bias",
+            "requirement": "Dissociation can lose fragile cells; nuclei can come from frozen tissue; fixed-material probe methods count ligated probes and cannot reveal every variant or splice product.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.zeros-ambient-doublets",
+            "requirement": "A zero can be a missed molecule (dropout) rather than absence; ambient RNA contaminates profiles; a doublet combines cells or nuclei; correction does not certify every barcode.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.cluster-limit",
+            "requirement": "A cluster groups similar profiles and does not prove malignancy, lineage or a clone; cancer-cell identification needs supporting evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.nested-replication",
+            "requirement": "Thousands of cells from one biopsy are nested in one biological sample; splitting into two libraries does not create two patients; replicate-level aggregation is one approach.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "measurement-r1.single-cell-and-single-nucleus-rna-seq.assay-contract",
+            "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-rna-seq",
+                "version": "proposal-measurement-sequencing",
+                "field": "notes",
+                "fieldSha256": "489b12990a891e53f7378d824a0cf644efe00743940a9392605685025c24c913",
+                "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -62350,6 +65060,250 @@
             "remaining": [
               "Review other model owners for the broad vendor, transfer and mutation-drug response claims removed from inherited lead paragraphs here. No guarantee that returning no response to a mutation-driven drug is correct is retained.",
               "Existing or candidate canonical owner: virtual-cell-models"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "measurement-adjacent-literature",
+      "title": "Adjacent literature discovered during measurement review",
+      "domain": "measurement-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1093/bioinformatics/btag546",
+        "https://doi.org/10.1101/2025.05.02.651831",
+        "https://doi.org/10.1016/j.crmeth.2026.101504",
+        "https://doi.org/10.1111/apha.13848",
+        "https://doi.org/10.1371/journal.pcbi.1008012",
+        "https://doi.org/10.64898/2026.01.21.700966",
+        "https://doi.org/10.1101/2025.06.23.660861",
+        "https://doi.org/10.71052/srb2024/yuag4486",
+        "https://doi.org/10.1158/1538-7445.am2026-5519",
+        "https://doi.org/10.1146/annurev-biodatasci-102523-103640",
+        "https://doi.org/10.1038/s41592-025-02773-5",
+        "https://doi.org/10.1007/978-1-0716-4276-4_5",
+        "https://doi.org/10.1093/gpbjnl/qzag012",
+        "https://doi.org/10.1038/s41592-024-02438-9",
+        "https://doi.org/10.1038/s41592-022-01480-9"
+      ],
+      "discoveryOccurrences": [
+        "measurement-sequencing-completion-r1",
+        "tmb-context-20-owner-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope intake; no extra graph coverage",
+        "checkedAt": "2026-11-10",
+        "rationale": "Concrete adjacent requirements retained separately so they do not repeatedly interrupt the assigned lessons.",
+        "points": [
+          {
+            "id": "discovery-1",
+            "requirement": "Assess Multi-sample and multi-group spatial colocalization analysis using PANORAMIC (ss-282312658) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Multi-sample and multi-group spatial colocalization analysis using PANORAMIC (ss-282312658) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-2",
+            "requirement": "Assess INLAomics for Scalable and Interpretable Spatial Multiomic Data Integration (ss-278456430) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess INLAomics for Scalable and Interpretable Spatial Multiomic Data Integration (ss-278456430) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-3",
+            "requirement": "Assess Spatial omics illuminates tumor heterogeneity (ss-289441349) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Spatial omics illuminates tumor heterogeneity (ss-289441349) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-4",
+            "requirement": "Assess Single cell‐ and spatial ‘Omics revolutionize physiology (ss-249313746) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Single cell‐ and spatial ‘Omics revolutionize physiology (ss-249313746) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-5",
+            "requirement": "Assess Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data (ss-220517938) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data (ss-220517938) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-6",
+            "requirement": "Assess 2D spatial tissue analysis often misrepresents true biological patterns of 3D tissues (ss-284977072) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess 2D spatial tissue analysis often misrepresents true biological patterns of 3D tissues (ss-284977072) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-7",
+            "requirement": "Assess Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering (ss-279620506) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering (ss-279620506) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-8",
+            "requirement": "Assess Advances in Explainable Models for Single-cell Transcriptomics and Spatial Transcriptomics Data Analysis (ss-286739673) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Advances in Explainable Models for Single-cell Transcriptomics and Spatial Transcriptomics Data Analysis (ss-286739673) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-9",
+            "requirement": "Assess Abstract 5519: SOMaC: An interpretable and generalizable framework for integrating and clustering multimodal spatial omics to resolve cell states and immune niches in cancer. (ss-287172108) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Abstract 5519: SOMaC: An interpretable and generalizable framework for integrating and clustering multimodal spatial omics to resolve cell states and immune niches in cancer. (ss-287172108) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-10",
+            "requirement": "Assess Spatially Resolved Single-Cell Omics: Methods, Challenges, and Future Perspectives. (ss-269927925) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Spatially Resolved Single-Cell Omics: Methods, Challenges, and Future Perspectives. (ss-269927925) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-11",
+            "requirement": "Assess Cancer subclone detection based on DNA copy number in single-cell and spatial omic sequencing data (ss-281323719) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Cancer subclone detection based on DNA copy number in single-cell and spatial omic sequencing data (ss-281323719) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-12",
+            "requirement": "Assess Spatial-Omics Methods and Applications. (ss-276104406) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Spatial-Omics Methods and Applications. (ss-276104406) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-13",
+            "requirement": "Assess Single-cell Spatial Multiomics: Technologies, Methods, and Biological Applications (ss-285449502) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Single-cell Spatial Multiomics: Technologies, Methods, and Biological Applications (ss-285449502) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-14",
+            "requirement": "Assess Inferring allele-specific copy number aberrations and tumor phylogeography from spatially resolved transcriptomics (ss-268384209) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Inferring allele-specific copy number aberrations and tumor phylogeography from spatially resolved transcriptomics (ss-268384209) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          },
+          {
+            "id": "discovery-15",
+            "requirement": "Assess Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution (ss-248832021) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution (ss-248832021) for actual source identity/version, model and dataset, uncertainty, comparator and canonical relevance before any empirical claim is adopted."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "measurement-rna-inferred-copy-state",
+      "title": "Allele-specific copy inference from spatial RNA",
+      "domain": "measurement-adjacent",
+      "sourceURLs": [],
+      "discoveryOccurrences": [
+        "measurement-sequencing-completion-r1",
+        "tmb-context-20-owner-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope intake; no extra graph coverage",
+        "checkedAt": "2026-11-10",
+        "rationale": "Concrete adjacent requirements retained separately so they do not repeatedly interrupt the assigned lessons.",
+        "points": [
+          {
+            "id": "method-scope",
+            "requirement": "Assess the CalicoST extension against an existing or justified new canonical owner, retaining matched-WES comparator, purity selection, event resolution and method uncertainty. It is not taught on either assigned source version.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Assess the CalicoST extension against an existing or justified new canonical owner, retaining matched-WES comparator, purity selection, event resolution and method uncertainty. It is not taught on either assigned source version."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "measurement-tmb-context-residuals",
+      "title": "TMB and MSI policy-adjacent source questions",
+      "domain": "measurement-adjacent",
+      "sourceURLs": [
+        "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+      ],
+      "discoveryOccurrences": [
+        "measurement-sequencing-completion-r1",
+        "tmb-context-20-owner-review"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scope intake; no extra graph coverage",
+        "checkedAt": "2026-11-10",
+        "rationale": "Concrete adjacent requirements retained separately so they do not repeatedly interrupt the assigned lessons.",
+        "points": [
+          {
+            "id": "salivary-pdl1",
+            "requirement": "Verify the separate PD-L1-positive salivary treatment branch before presenting it as routine eligibility; current tumour-agnostic label conditions are already sourced.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Verify the separate PD-L1-positive salivary treatment branch before presenting it as routine eligibility; current tumour-agnostic label conditions are already sourced."
+            ]
+          },
+          {
+            "id": "mmr-aggregate",
+            "requirement": "Verify Singhi denominators and distinguish combined MSI-H/TMB-H frequency from measured mismatch-repair deficiency.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Verify Singhi denominators and distinguish combined MSI-H/TMB-H frequency from measured mismatch-repair deficiency."
+            ]
+          },
+          {
+            "id": "msi-marker-definitions",
+            "requirement": "Reconcile the inherited MSI-high biomarker summary’s Bethesda versus mononucleotide-panel wording and assay-specific categories; the current label correction does not certify those retained assay definitions.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Reconcile the inherited MSI-high biomarker summary’s Bethesda versus mononucleotide-panel wording and assay-specific categories; the current label correction does not certify those retained assay definitions."
             ]
           }
         ]

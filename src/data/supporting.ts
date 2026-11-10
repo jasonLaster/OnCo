@@ -123,14 +123,52 @@ const technologies: TechnologyInput[] = [
 
   // ---- Sequencing and omics platforms ----
   t({
-    id: "long-read-sequencing", machineFamily: "laboratory", links: [{ label: "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)", url: "https://doi.org/10.1038/s41576-020-0236-x" }], name: "Long-read sequencing (PacBio, Oxford Nanopore)", sections: ["diagnostics", "drug-discovery"], status: "established",
-    tldr: "Long-read sequencing (PacBio HiFi, Oxford Nanopore) reads single DNA molecules in stretches of thousands of bases, so rearrangements, repeat expansions, gene fusions and methylation appear in one run where short-read machines miss them. Nanopore can classify a brain tumour during surgery in under an hour; throughput per dollar still trails the largest short-read instruments.",
-    summary: "PacBio HiFi and Oxford Nanopore reads span kilobases, resolving structural variants, phasing, repeat expansions, and base modifications in one run. In oncology: rapid intraoperative methylation classification of brain tumours (nanopore, under an hour), fusion detection, and complex rearrangement mapping. Cost per genome is approaching short-read levels; accuracy is now clinical-grade for HiFi.",
-    principle: "Single-molecule real-time fluorescence (PacBio) or ionic current through a protein nanopore (ONT) reads native or circular-consensus molecules without amplification.",
-    strengths: ["Structural variants and methylation natively", "Fast, portable (nanopore)"],
-    limitations: ["Higher per-base error historically (improving)", "Lower throughput per dollar than the largest short-read instruments"],
+    id: "long-read-sequencing", machineFamily: "laboratory", links: [
+  {
+    "label": "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)",
+    "url": "https://doi.org/10.1038/s41576-020-0236-x"
+  },
+  {
+    "label": "A genomic sequencing protocol that yields a positive display of 5-methylcytosine residues in individual DNA strands.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1542678/"
+  },
+  {
+    "label": "Detecting DNA cytosine methylation using nanopore sequencing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28218898/"
+  },
+  {
+    "label": "Genome-wide detection of cytosine methylation by single molecule real-time sequencing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33495335/"
+  }
+], name: "Long-read sequencing (PacBio, Oxford Nanopore)", sections: ["diagnostics", "drug-discovery"], status: "established",
+    tldr: "Long reads connect extended sequence information; chemical-mark detection requires a separately specified workflow.",
+    summary: "Long-read sequencing can connect variants, repeats and rearrangement boundaries on extended molecules. DNA methylation is a chemical feature requiring native-signal inference or an appropriate conversion workflow. Long sequence alone does not establish that modification analysis occurred. Preparation, molecule integrity, supported caller and controls constrain the result; neither sequence nor a methylation fraction alone establishes gene function or treatment benefit.",
+    principle: "Connect extended molecule sequences; infer specified DNA marks only from a supported native-signal model or conversion-based workflow.",
+    strengths: [
+  "Extended sequence connections and phasing evidence",
+  "Modification information when supported by the exact workflow"
+],
+    limitations: [
+  "Input integrity and usable site coverage",
+  "Preparation and caller-specific detection limits",
+  "Clinical use requires intended-use validation"
+],
     technologies: ["wes-wgs", "methylation-profiling"], companies: ["pacbio", "oxford-nanopore"],
-  }),
+
+"notes": [
+  "Long sequence connections and chemical-mark detection require separately specified workflows. Nanopore methylation inference uses native current signals and a trained modification model; ordinary sequence letters alone do not supply that analysis. Source: Simpson et al., 2017 method experiment, https://pubmed.ncbi.nlm.nih.gov/28218898/.",
+  "Bisulfite conversion encodes methylation information before amplification; ordinary amplification of unconverted DNA does not faithfully preserve original methylation marks. The original bisulfite method tested defined genomic sequences, rather than clinical treatment selection. Source: Frommer et al., 1992, https://pubmed.ncbi.nlm.nih.gov/1542678/.",
+  "Fictional methylation exercise: eight called methylated molecules among ten usable molecules at one site gives 80%. That fraction does not establish 80% cancer cells or 80% gene silencing. Retain site, usable-molecule denominator, calling uncertainty and specimen mixture.",
+  "Long reads can span repeats, rearrangement boundaries and nearby variants, supporting phasing; the human reference-genome experiment did not establish universal clinical detection in every tumour.",
+  "DNA methylation is a chemical modification, not a change in base sequence; detection needs a specific workflow.",
+  "Native nanopore current with a trained modification caller (Simpson 2017), SMRT polymerase kinetics with a validated model (Tse 2021) and bisulfite conversion (Frommer 1992) detect marks differently; a long-read report does not imply a modification analysis.",
+  "Ordinary amplification of unconverted DNA copies sequence without faithfully copying native marks; conversion encodes chemical state before amplification.",
+  "Long read and methylation assay are independent capabilities; a long RNA or cDNA read does not measure tumour DNA methylation.",
+  "Eight of ten usable molecules called methylated at one site is 80% of those molecules; it is not 80% malignant cells or 80% gene silencing; per-molecule confidence differs from a fraction across molecules.",
+  "Record the molecule type and integrity, aliquot used, library preparation, sequence and modification callers, and any retained native signals. Report sequence length separately from modification confidence or site fraction. Fragmentation, unsupported models, amplification and conversion failure have different effects. Input requirements, usable-site filters and intended-use validation belong to the exact assay."
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "next-gen-short-read-platforms", machineFamily: "laboratory", links: [{ label: "Almogy et al., Cost-efficient whole-genome sequencing using mostly natural sequencing-by-synthesis chemistry (Ultima Genomics, bioRxiv 2022)", url: "https://doi.org/10.1101/2022.05.29.493900" }], name: "New short-read sequencing platforms", sections: ["diagnostics"], status: "emerging",
     tldr: "New short-read sequencing platforms from Ultima Genomics, Element Biosciences, Roche and MGI compete with Illumina by cutting the cost per gigabase, with Ultima claiming a genome under 100 dollars. Cheaper reads make whole-genome tumour-normal sequencing and deep ctDNA testing affordable in principle, but clinical assays must be revalidated and Illumina's installed base still dominates.",

@@ -55,7 +55,7 @@ export const simpleF: Record<string, string> = {
   "plasmid-dna-manufacturing": "Plasmid DNA and mRNA raw materials are the DNA templates and enzymes behind viral vectors and mRNA vaccines, invisible to patients but decisive for supply.",
   "radiopharmacy-network": "Radiopharmacy networks are the factories and courier routes that make short-lived radioactive tracers and deliver them to hospitals within hours before they decay.",
   "therapy-isotope-supply-chain": "The therapeutic isotope supply chain is where the radioactive atoms for imaging and therapy come from: ageing reactors, new accelerators and a scramble for scarce actinium.",
-  "long-read-sequencing": "Long-read sequencing reads DNA in very long stretches, revealing rearrangements and chemical marks that short-read machines miss, and can classify brain tumours during surgery.",
+
   "next-gen-short-read-platforms": "New short-read sequencing platforms are challengers to Illumina promising cheaper genomes, which matters for making tumour sequencing a routine part of care.",
   "spatial-biology-instruments": "Spatial biology instruments are machines that map which genes and proteins are active in each part of a tumour slice, transforming research though clinical use is nascent.",
   "whole-slide-scanners": "Whole-slide scanners turn glass pathology slides into gigapixel digital images, and the software that stores and serves them is what lets pathology AI run.",

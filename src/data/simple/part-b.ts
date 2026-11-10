@@ -42,14 +42,14 @@ export const simpleB: Record<string, string> = {
   "her2-low": "Tumours with just a little HER2, which older HER2 drugs ignored but Enhertu can attack.",
   cps: "A PD-L1 score that counts both stained tumour cells and stained immune cells.",
   tils: "Immune cells that have got inside the tumour. More of them means a better outlook in triple-negative breast cancer.",
-  tmb: "How many mutations a tumour has. More mutations give the immune system more to attack.",
-  msi: "A broken DNA spell-checker that creates thousands of mutations, making the tumour easy for immune drugs to see.",
+
+
 
   ctdna: "Bits of DNA shed by tumour cells into the blood, detectable with sensitive tests.",
   mrd: "Cancer still present after treatment but too small to see on scans, found by blood or marrow tests.",
   vaf: "The share of DNA reads carrying a mutation, which shows how much of the sample is cancer.",
   vus: "A genetic change that has been found but nobody yet knows whether it matters.",
-  ngs: "Reading millions of DNA pieces at once, the engine behind every modern genetic test.",
+
   "gene-fusion": "Two genes broken and joined together, making a hybrid protein that can drive cancer and is often very drug-sensitive.",
 
   pam50: "A 50-gene test that sorts breast cancers into four biological groups.",

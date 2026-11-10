@@ -2660,7 +2660,7 @@
       "aka": [],
       "tldr": "Variant allele frequency is the fraction of informative reads or molecules that support a variant under a test’s definition. It is not directly the fraction of cancer cells.",
       "summary": "Read-based VAF divides variant-supporting reads by informative reads at the locus. Some assays instead report a molecule-based measure, so keep the laboratory’s definition. Tumor purity, local allele-specific copy number, ploidy, subclonal mixture and assay behavior affect the value. VAF alone cannot assign zygosity, variant origin, the number of clones or a cancer-cell percentage. Changes over time in plasma also require attention to specimen and non-tumor DNA contributors.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/Allele_frequency",
       "links": [
         {
@@ -2706,7 +2706,16 @@
       ],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "VAF is the proportion of usable reads or assay-defined molecules supporting the alternate sequence; keep the denominator: 25 of 100 usable observations is 25%.",
+        "CCF is carrier cancer cells over all sampled cancer cells; its inputs have distinct denominators: cell purity p, DNA contribution, pathology cellularity (method-defined, for RCB the tumour-bed area), global ploidy P, local copy number C, mutant multiplicity m.",
+        "With equal recovery per genome copy and diploid normals, tumour DNA contribution is p*P/[p*P+2*(1-p)]; half the cells at ploidy four contribute two thirds of DNA.",
+        "For uniform local copies, expected VAF is p*f*m/[p*C+(1-p)*2]; assumptions: two normal copies, uniform cancer copies, fixed multiplicity, unbiased observations; subclonal copy change needs a richer model.",
+        "Same 50 cancer plus 50 normal cells, every cancer cell carrying one variant copy: expected VAF 50/200=25% with two local cancer copies and 50/150 about 33% with one; CCF stays 100% and purity 50%.",
+        "Purity 0.5, one mutant copy: four local copies with CCF 100% and two local copies with CCF 2/3 both predict VAF 1/6 (about 16.7%); copy evidence separates them; CCF above 100% signals incompatible assumptions.",
+        "High VAF alone cannot establish truncal ancestry or origin or function; a rise after treatment can reflect mixture or copy change as well as carrier expansion; uncertain inputs give alternative CCF fits, not counted cells.",
+        "Retain DNA and copy-state inputs, filtered support denominators, fractions, local copies, multiplicity, purity, model version and alternative fits. New extraction consumes material; reanalysis alone does not. Artifacts, few molecules, recovery bias and uncertain copy/mixture estimates limit conversion. Detection thresholds and model-fit criteria do not establish a universal clonal-target cutoff or treatment benefit."
+      ],
       "category": "Genomics & genetics"
     },
     {
@@ -2723,7 +2732,7 @@
       ],
       "tldr": "This assay-defined score summarizes genomic regions that lost previously different allelic information. It can reflect a past repair defect, including changes that preserve total DNA copy count.",
       "summary": "Loss of heterozygosity means loss of previously distinct allelic information at a locus. It can accompany copy loss or occur with a copy-neutral allelic change; tumor purity and ploidy complicate inference. Genome-wide loss of heterozygosity summarizes affected interrogated regions according to the assay’s definition. It is studied as a genomic scar associated with some homologous-recombination-repair defects, rather than a direct measurement of present repair function.\n\nThe threshold belongs to the assay and setting. ARIEL2 part 1 prespecified 14 percent or more as LOH high in its ovarian-cancer analysis; this does not establish a universal cutoff. Pan-cancer studies found elevated gLOH associated with biallelic BRCA1/2 alterations and with a core set of other repair-gene alterations, with effects differing by cancer context. Monoallelic calls and an HRR-gene-list label are not interchangeable with those findings. TP53 loss was independently associated with gLOH in the Westphalen analysis.\n\nIn 3,476 prostate tumors, Chung and colleagues found BRCA1/2, ATR and FANCA alterations associated with high gLOH, while CDK12-altered tumors, about 6 percent of that cohort, were infrequently gLOH high. The study did not correlate these findings with clinical outcomes. Such associations support gene-specific biological questions; they do not establish an individual patient’s drug benefit or current treatment eligibility.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/Loss_of_heterozygosity",
       "links": [
         {
@@ -2753,6 +2762,10 @@
         {
           "label": "Absolute quantification of somatic DNA alterations in human cancer.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+        },
+        {
+          "label": "FACETS allele-specific copy-state method (Shen and Seshan, 2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27270079/"
         }
       ],
       "tags": [
@@ -2821,9 +2834,10 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "A scar is different from a present functional defect. gLOH does not by itself establish which repair gene is affected, whether both alleles are inactivated, or whether repair remains impaired. A tumor can retain an earlier genomic scar after its functional state changes.",
+        "A scar is different from a present functional defect. gLOH does not by itself establish which repair gene is affected, whether both alleles are inactivated, or whether repair remains impaired. A tumour can retain an earlier genomic scar after its functional state changes.",
         "There is no single gLOH-high cutoff across assays and cancers. ARIEL2 part 1 used a prespecified assay threshold in ovarian carcinoma. Preserve the assay, specimen and reporting context, including uncertainty near a categorical threshold.",
-        "Tumor sequencing and clinical hereditary testing answer different questions. The historical TRITON2 study reported similar objective response rates in germline- and somatic-BRCA groups in its enrolled prostate-cancer population; that result is not a current treatment-access rule or evidence that a negative hereditary assay excludes acquired tumor variants."
+        "Tumour sequencing and clinical hereditary testing answer different questions. The historical TRITON2 study reported similar objective response rates in germline- and somatic-BRCA groups in its enrolled prostate-cancer population; that result is not a current treatment-access rule or evidence that a negative hereditary assay excludes acquired tumour variants.",
+        "A local LOH state and a genome-wide LOH score have different scope. In an idealised informative A/B region, 1+1 and 2+0 both total two copies, but only 2+0 loses one sequence version. A total-copy profile alone cannot distinguish them. Allele-aware inputs and purity/ploidy assumptions constrain the call; a genome-wide score does not identify the retained sequence, phase a mutation or directly measure current gene function."
       ],
       "category": "Genomics & genetics"
     },
@@ -2854,8 +2868,8 @@
         "aneuploidy"
       ],
       "tldr": "Cancer cells often have extra copies of a growth gene (amplification) or have lost copies of a protective one (deletion), rather than a spelling change within the gene. Extra copies of HER2 or MYCN are classic examples that change treatment.",
-      "summary": "Amplification (detected by FISH, ISH or NGS copy-number calls) drives overexpression: HER2 in breast and gastric cancer, MYCN in high-risk neuroblastoma, MET amplification as a resistance route to EGFR inhibitors, CCNE1 in ovarian and gastric cancer, MDM2 in liposarcoma, CDK4 in glioma. Deletions remove tumour suppressors: del(17p)/TP53 in CLL and myeloma (predicting chemo-resistance), CDKN2A/B in glioma (defining grade 4), MTAP (creating a PRMT5 vulnerability), 9p21 loss linked to immunotherapy resistance. Loss of heterozygosity and large-scale copy changes are summed into genomic-scar scores used to infer HRD and predict PARP inhibitor benefit.",
-      "asOf": "2026-11-08",
+      "summary": "Amplification (detected by FISH, ISH or NGS copy-number calls) can increase gene dosage and expression: HER2 in breast and gastric cancer, MYCN in high-risk neuroblastoma, MET amplification as a resistance route to EGFR inhibitors, CCNE1 in ovarian and gastric cancer, MDM2 in liposarcoma, CDK4 in glioma. Deletions remove tumour suppressors: del(17p)/TP53 in CLL and myeloma (predicting chemo-resistance), CDKN2A/B in glioma (defining grade 4), MTAP (creating a PRMT5 vulnerability), 9p21 loss linked to immunotherapy resistance. Loss of heterozygosity and larger chromosome changes contribute to some method-defined genomic-scar scores. Their clinical interpretation depends on the exact test, cancer and treatment setting; a copy state alone does not establish current repair function or drug benefit.",
+      "asOf": "2026-11-10",
       "wikipedia": "https://en.wikipedia.org/wiki/Gene_duplication",
       "links": [
         {
@@ -2905,7 +2919,16 @@
       "journals": [],
       "dependsOn": [],
       "notes": [
-        "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay’s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modeling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumor."
+        "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay’s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modelling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumour.",
+        "Total copy number counts copies of a region; allele-specific copy number estimates the contributions of the distinguishable sequence versions A and B.",
+        "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+        "LOH is not synonymous with deletion: copy-neutral LOH can follow loss plus duplication or recombination; a gain does not necessarily erase either version.",
+        "Major and minor counts are the larger and smaller allelic contributions; minor of zero supports LOH under the model; they do not identify parental origin or assign a mutation to a copy; phasing needs suitable evidence.",
+        "Local copy count differs from ploidy; relative signal can fit different purity and ploidy pairs; fractional counts can reflect mixture or subclonal states.",
+        "Methods combine relative coverage with allele balance at informative heterozygous sites, segment the genome and fit states; a matched normal helps; a total-copy profile alone cannot separate 1+1 from 2+0; homozygous sites are uninformative.",
+        "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+        "Fictional teaching exercise: Two A copies and no B copies under an adequate model is copy-neutral LOH: not deleted and not proven inactive.",
+        "For copy-state analysis, record tumour and suitable normal DNA, extraction consumption, relative depth and informative-site balance, segmentation, total/major/minor copies and purity/ploidy uncertainty. Reanalysis alone needs no tissue. Low purity, uninformative sites and ambiguous fits limit inference; amplification and functional-loss criteria are method-specific."
       ],
       "category": "Biomarkers"
     },

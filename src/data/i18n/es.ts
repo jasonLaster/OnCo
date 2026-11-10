@@ -131,8 +131,8 @@ export const tldr_es: Record<string, string> = {
   "histopathology-ihc": "Observar las células cancerosas al microscopio y teñirlas para proteínas concretas. Sigue siendo la base de todo diagnóstico.",
   cgp: "Secuenciar cientos de genes del cáncer a la vez a partir de una biopsia para encontrar las mutaciones que un fármaco puede atacar.",
   "wes-wgs": "Leer todos los genes (exoma) o todo el ADN (genoma) de un tumor, en lugar de un panel elegido.",
-  "rna-seq": "Medir qué genes está usando activamente un tumor, lo que revela su subtipo y encuentra fusiones génicas.",
-  "single-cell-spatial": "Leer los genes de cada célula individual y cartografiar dónde se sitúa cada célula en el tumor.",
+
+
   "liquid-biopsy": "Un análisis de sangre que lee fragmentos de ADN liberados por el tumor, para genotipar o vigilar el cáncer sin una aguja en el tumor.",
   "mrd-testing": "Un análisis de sangre ultrasensible tras la cirugía que detecta cáncer residual meses antes que una exploración.",
   mced: "Un único análisis de sangre pensado para cribar docenas de cánceres a la vez, incluidos los que hoy no tienen cribado.",
@@ -407,14 +407,14 @@ export const tldr_es: Record<string, string> = {
   "her2-low": "Tumores con un poco de HER2 (IHC 1+ o 2+ sin amplificación), o un rastro (ultrabajo), que los fármacos anti-HER2 antiguos ignoraban pero Enhertu puede atacar.",
   cps: "Una puntuación de PD-L1 que cuenta juntas las células tumorales y las inmunitarias teñidas.",
   tils: "Células inmunitarias que han entrado en el tumor. Cuantas más, mejores resultados en cáncer de mama triple negativo.",
-  tmb: "Cuántas mutaciones tiene un tumor. Más mutaciones significan más dianas para el sistema inmunitario.",
-  msi: "Un corrector ortográfico del ADN roto que crea miles de mutaciones, haciendo al tumor muy visible para la inmunoterapia.",
+
+
 
   ctdna: "Fragmentos de ADN liberados por las células tumorales a la sangre, detectables con secuenciación sensible.",
   mrd: "Cáncer aún presente tras el tratamiento pero demasiado pequeño para verse en las exploraciones, detectado por pruebas de sangre o médula.",
   vaf: "La fracción de lecturas de ADN que llevan una mutación. Indica cuánto de la muestra es mutante y cuán clonal es.",
   vus: "Un cambio genético que se ha encontrado pero del que nadie sabe aún si importa.",
-  ngs: "Leer millones de fragmentos de ADN en paralelo, el motor de toda prueba genómica moderna.",
+
   "gene-fusion": "Dos genes rotos y unidos, que crean una proteína híbrida capaz de impulsar el cáncer. A menudo exquisitamente sensible a fármacos.",
 
   pam50: "Una prueba de 50 genes que clasifica los cánceres de mama en luminal A, luminal B, HER2-enriquecido y basal.",
@@ -3193,7 +3193,7 @@ export const tldr_es: Record<string, string> = {
   lobectomy: "Extirpación de un lóbulo del pulmón (el pulmón derecho tiene tres y el izquierdo dos). Es la operación estándar para el cáncer de pulmón en fase temprana.",
   "locally-advanced": "Cáncer que ha crecido más allá de su órgano hacia el tejido cercano o los ganglios linfáticos, pero no se ha extendido a lugares distantes. Se trata con el objetivo de curar, pero suele requerir varios tratamientos combinados (cirugía, radioterapia, fármacos).",
   "loi-sherene": "Demostró que las células inmunitarias dentro de los tumores de mama predicen el pronóstico, la base para reducir la quimioterapia en el TNBC.",
-  "long-read-sequencing": "Leer el ADN en tramos muy largos, lo que revela reordenamientos y metilación que las máquinas de lectura corta pasan por alto.",
+
   "lori-pierce": "Lori Pierce es una oncóloga radioterápica especializada en mama y expresidenta de ASCO centrada en la equidad en la atención oncológica.",
   "lori-wirth": "Dirigió LIBRETTO-001 en cáncer de tiroides, que convirtió a selpercatinib en el primer fármaco selectivo de RET aprobado para tumores impulsados por RET.",
   lumicell: "Empresa derivada del MIT cuyo colorante Lumisight y su sistema de imagen muestran el cáncer de mama residual en la cavidad de la tumorectomía antes de que termine la operación.",
@@ -3453,7 +3453,7 @@ export const tldr_es: Record<string, string> = {
   "the-breast": "The Breast es la revista de acceso abierto de la European Society of Mastology sobre enfermedades de la mama y cáncer de mama, que cubre cirugía, oncología, cribado y supervivencia.",
   therapixel: "El software MammoScreen de Therapixel utiliza inteligencia artificial para señalar áreas sospechosas en las mamografías y puntuar la probabilidad de que sean cáncer, ayudando a los radiólogos de Estados Unidos y Europa a leer los exámenes de cribado.",
   "thyroid-cancer-signalling": "Este mapa de KEGG muestra que los cánceres de tiroides están impulsados casi por completo por un solo relevo, la vía MAPK, activada por fusiones de RET o NTRK y mutaciones de BRAF en los tumores papilares y por mutaciones de RAS o la fusión PAX8-PPARG en los tumores foliculares, con la pérdida de TP53 marcando el paso hacia el cáncer indiferenciado agresivo. Importa porque muchos de estos interruptores tienen ya su propio fármaco.",
-  "tmb-testing": "Contar cuántas mutaciones porta un tumor por tramo de ADN; los tumores muy mutados tienen más probabilidades de responder a la inmunoterapia.",
+
   tmist: "El ensayo que zanjará si las mamografías 3D previenen más cánceres peligrosos que las 2D estándar, o simplemente encuentran más cánceres pequeños.",
   toga: "El ensayo que llevó el fármaco para cáncer de mama Herceptin al cáncer de estómago, la primera terapia dirigida que mejoró la supervivencia en esta enfermedad.",
   "ton-schumacher": "Inmunólogo que demostró que las células T reconocen los neoantígenos del cáncer, base de las vacunas personalizadas y las terapias con TCR.",

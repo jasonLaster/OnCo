@@ -341,7 +341,7 @@ export const biomarkerReadouts: BiomarkerInput[] = [
   b({ id: "msi-high", name: "MSI-high (microsatellite instability by PCR or sequencing)", aka: ["MSI-H", "MSI-high", "MSI high", "microsatellite instability-high", "microsatellite unstable", "MSI status", "MSI-H/dMMR", "MSS", "microsatellite stable"],
     target: "mmr", measurement: "msi-status",
     tldr: "MSI-high means the tumour's DNA has unstable repeat sequences, the footprint of failed mismatch repair. It is measured by PCR or sequencing, gives the same answer as dMMR in most tumours, and unlocks the same immunotherapies.",
-    summary: "Microsatellite instability is scored by PCR across a panel of mononucleotide repeats (MSI-H when a set fraction of markers is unstable, typically 2 of 5 Bethesda or Promega markers, or 30 percent or more of a larger panel) or by next-generation sequencing algorithms that count unstable loci across hundreds of sites; MSS is stable and MSI-L is intermediate and grouped with MSS. Labels write 'MSI-H or dMMR' and accept either route; FoundationOne CDx and Caris MI Cancer Seek carry MSI-H companion claims for pembrolizumab and dostarlimab, the Biocartis Idylla MSI test for nivolumab in colorectal cancer, and, in the other direction, the Promega OncoMate MSI and Caris assays report 'not MSI-H' to select pembrolizumab with lenvatinib in endometrial cancer.",
+    summary: "Microsatellite instability is scored by PCR across a panel of mononucleotide repeats (MSI-H when a set fraction of markers is unstable, typically 2 of 5 Bethesda or Promega markers, or 30 percent or more of a larger panel) or by next-generation sequencing algorithms that count unstable loci across hundreds of sites; MSS is stable and MSI-L is intermediate and grouped with MSS. Labels write 'MSI-H or dMMR' and accept either route; FoundationOne CDx and Caris MI Cancer Seek carry MSI-H companion claims for pembrolizumab and dostarlimab, the Biocartis Idylla MSI test for nivolumab in colorectal cancer, and, in the other direction, the Promega OncoMate MSI and Caris assays report 'not MSI-H' to select pembrolizumab with lenvatinib in endometrial cancer.\n\nThe U.S. tumour-agnostic pembrolizumab indication covers adult and paediatric patients with unresectable or metastatic MSI-H or dMMR solid tumours, determined by an FDA-authorised test, that have progressed following prior treatment and who have no satisfactory alternative treatment options. The separate colorectal indication covers unresectable or metastatic MSI-H or dMMR colorectal cancer determined by an FDA-authorised test, without that prior-treatment restriction. For non-colorectal solid tumours, the KEYTRUDA label recommends confirmation of MSI-H or dMMR by an FDA-authorised test if feasible because local and FDA-authorised tests can disagree. If confirmatory MSI-H/dMMR testing cannot be performed, TMB of at least 13 mutations per megabase determined by an FDA-authorised test may be used to select treatment. This is a treatment-selection alternative, not laboratory evidence that the tumour is MSI-H or dMMR.",
     scoringRule: { text: "MSI-H: instability at the required fraction of tested microsatellite loci (for example 2 or more of 5 mononucleotide markers by PCR, or the sequencing panel's validated cut-off across many loci); otherwise microsatellite stable.", quote: "Microsatellite instability – High (MSI-H)", source: FDA_CDX_URL, sourceLabel: FDA_CDX_LABEL },
     thresholds: [
       th({ value: "MSI-H or dMMR, tumour-agnostic", drugId: "pembrolizumab", cancerId: "metastatic-cancer", regulator: "FDA", source: LABEL.keytruda, quote: "unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options." }),
@@ -357,19 +357,66 @@ export const biomarkerReadouts: BiomarkerInput[] = [
       cdx("Idylla CDx MSI Test", "Biocartis", "Colorectal Cancer (CRC) - Tissue", ["nivolumab", "ipilimumab"], "P250005 (08/15/2025)", "biocartis"),
       cdx("OncoMate MSI Dx Analysis System", "Promega", "Endometrial Carcinoma (EC) - Tissue", ["pembrolizumab", "lenvatinib"], "P240026 (11/05/2025)", "promega"),
     ],
-    forPatient: "MSI-high on a PCR or sequencing report means the same for treatment as dMMR on a stain: checkpoint immunotherapy is on label across many cancers once other treatment has been tried, and first line in bowel cancer. A stable (MSS) result in endometrial cancer selects a different combination, pembrolizumab with lenvatinib. Either result should prompt a conversation about inherited risk.",
-    terms: ["msi", "mss-pmmr", "ngs", "tumour-agnostic"], related: ["dmmr-ihc", "tmb-high"], links: [{ label: "KEYTRUDA prescribing information (DailyMed)", url: LABEL.keytruda }, { label: "OPDIVO prescribing information (DailyMed)", url: LABEL.opdivo }], tags: ["biomarker", "mmr"] }),
+    forPatient: "An MSI-high or dMMR result can support pembrolizumab treatment when the cancer, test and treatment-setting conditions in the label are met. The U.S. tumour-agnostic pembrolizumab indication covers adult and paediatric patients with unresectable or metastatic MSI-H or dMMR solid tumours, determined by an FDA-authorised test, that have progressed following prior treatment and who have no satisfactory alternative treatment options. The separate colorectal indication covers unresectable or metastatic MSI-H or dMMR colorectal cancer determined by an FDA-authorised test, without that prior-treatment restriction. For non-colorectal solid tumours, the KEYTRUDA label recommends confirmation of MSI-H or dMMR by an FDA-authorised test if feasible because local and FDA-authorised tests can disagree. If confirmatory MSI-H/dMMR testing cannot be performed, TMB of at least 13 mutations per megabase determined by an FDA-authorised test may be used to select treatment. This is a treatment-selection alternative, not laboratory evidence that the tumour is MSI-H or dMMR. A stable (MSS) result in endometrial cancer may support pembrolizumab with lenvatinib for adults with advanced disease after progression following prior systemic therapy who are not candidates for curative surgery or radiation, with status determined by an FDA-authorised test. Discuss the result and any inherited-risk assessment with your care team.",
+    terms: ["msi", "mss-pmmr", "ngs", "tumour-agnostic"], related: ["dmmr-ihc", "tmb-high"], links: [...([{ label: "KEYTRUDA prescribing information (DailyMed)", url: LABEL.keytruda }, { label: "OPDIVO prescribing information (DailyMed)", url: LABEL.opdivo }]), ...[{"label":"FDA, 16 October 2026: updated tumour-agnostic TMB-H indication","url":"https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph"},{"label":"KEYTRUDA current prescribing information, sections 1.8, 1.9, 1.18 and 2.1","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"}]], tags: ["biomarker", "mmr"] ,
+"asOf": "2026-11-10"
+}),
 
-  b({ id: "tmb-high", name: "TMB-high (tumour mutational burden >= 10 mutations per megabase)", aka: ["TMB-H", "TMB-high", "TMB high", "tumor mutational burden", "tumour mutational burden", "TMB >= 10 mut/Mb", "TMB ≥10", "TMB-H solid tumors", "bTMB", "blood TMB"],
+  b({ id: "tmb-high", name: "TMB-high (tumour mutational burden)", aka: [
+  "TMB-H",
+  "TMB-high",
+  "TMB high",
+  "tumor mutational burden",
+  "tumour mutational burden",
+  "TMB-H solid tumors",
+  "bTMB",
+  "blood TMB",
+  "TMB >= 13 mut/Mb",
+  "TMB ≥13"
+],
     measurement: "tmb-threshold",
-    tldr: "TMB counts how many mutations a tumour carries per million DNA letters. Ten or more, measured by FoundationOne CDx, allows pembrolizumab for almost any solid tumour after other treatment has failed.",
-    summary: "Tumour mutational burden is the number of somatic non-synonymous (and, on some panels, synonymous) mutations per megabase of sequenced coding DNA, estimated from a large targeted panel and calibrated to whole-exome values. Pembrolizumab's US label (June 2020, KEYNOTE-158) covers unresectable or metastatic TMB-H solid tumours defined as >= 10 mutations per megabase by an FDA-authorised test, after prior treatment and with no satisfactory alternative; FoundationOne CDx is the listed companion diagnostic. Because panels differ in gene content and algorithms, a TMB of 10 on one assay is not the same as 10 on another; the label's limitation of use notes the benefit was not established in patients with central nervous system cancers. TMB is a genome-wide readout with no parent gene, so it sits under no target here.",
-    scoringRule: { text: "Somatic mutations per megabase of coding sequence counted on a validated panel; 10 or more is TMB-high for the pembrolizumab indication.", quote: "tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test", source: LABEL.keytruda, sourceLabel: "KEYTRUDA prescribing information" },
-    thresholds: [th({ value: "TMB >= 10 mutations per megabase", drugId: "pembrolizumab", cancerId: "metastatic-cancer", regulator: "FDA", source: LABEL.keytruda, quote: "for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options." })],
+    tldr: "This result reports a high density of acquired DNA changes under a specified test’s rules.",
+    summary: "Tumour mutational burden estimates the density of eligible acquired DNA changes under assay-specific counting, filtering and calibration rules. Identical units do not make different assays interchangeable. FDA’s 16 October 2026 conversion of the U.S. tumour-agnostic pembrolizumab indication to traditional approval changed its criterion from 10 to at least 13 mutations per megabase. The indication covers adults and children with unresectable or metastatic solid tumours, measured by an FDA-authorised test, that progressed after prior treatment and have no satisfactory alternative treatment options. A research value or a high category alone does not establish these conditions or guarantee benefit.",
+    scoringRule: {
+  "text": "For the U.S. tumour-agnostic pembrolizumab indication updated in October 2026, TMB-H means at least 13 mutations per megabase by an FDA-authorised test. Other studies and indications retain their own criteria.",
+  "quote": "tumor mutational burden-high (TMB-H) [≥13 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test",
+  "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287",
+  "sourceLabel": "KEYTRUDA current prescribing information, section 1.18"
+},
+    thresholds: [
+  {
+    "value": "TMB >= 13 mutations per megabase by an FDA-authorised test; unresectable or metastatic solid tumour after prior treatment, with no satisfactory alternatives",
+    "drugId": "pembrolizumab",
+    "cancerId": "metastatic-cancer",
+    "regulator": "FDA",
+    "status": "current",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287",
+    "quote": "KEYTRUDA is indicated for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥13 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test [see Dosage and Administration (2.1)], that have progressed following prior treatment and who have no satisfactory alternative treatment options."
+  }
+],
     cancers: ["metastatic-cancer", "nsclc", "melanoma", "urothelial"], drugs: ["pembrolizumab", "foundationone-cdx"], tests: ["foundationone-liquid-cdx", "caris-mi-cancer-seek", "tempus-xt", "trusight-oncology-500", "stratangs", "omniseq-insight", "altera", "oncoextra", "bostongene-tumor-portrait", "tempus-xe"], assays: ["tmb-panel", "foundationone-cdx-panel"],
     companionDiagnostics: [cdx("FoundationOne CDx", "Foundation Medicine", "Solid Tumors - Tissue", ["pembrolizumab"], "P170019/S016 (06/16/2020)", "foundation-medicine")],
-    forPatient: "If a FoundationOne CDx report gives a TMB of 10 or more mutations per megabase, pembrolizumab is on label for your cancer once other treatments have been tried, whatever the organ it started in. A TMB from a different test may use a different scale; ask whether the number was measured on an FDA-authorised assay before treating it as the same threshold.",
-    terms: ["tmb", "ngs", "tumour-agnostic", "neoantigen"], related: ["msi-high", "dmmr-ihc"], links: [{ label: "KEYTRUDA prescribing information (DailyMed)", url: LABEL.keytruda }], tags: ["biomarker", "genome-wide", "precision"] }),
+    forPatient: "Ask which test measured the result and which treatment setting it applies to. The current U.S. tumour-agnostic pembrolizumab indication requires at least 13 mutations per megabase by an FDA-authorised test, an unresectable or metastatic solid tumour that progressed after prior treatment, and no satisfactory alternative treatment options. The former threshold of 10 belongs to the earlier accelerated approval. Other cancer-specific indications have separate rules. A high number does not guarantee response.",
+    terms: ["tmb", "ngs", "tumour-agnostic", "neoantigen"], related: ["msi-high", "dmmr-ihc"], links: [
+  {
+    "label": "KEYTRUDA current prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+  },
+  {
+    "label": "FDA, 16 October 2026: traditional approval and updated TMB-H indication",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph"
+  },
+  {
+    "label": "Merino et al., 2020: in silico TMB harmonisation study",
+    "url": "https://doi.org/10.1136/jitc-2019-000147"
+  }
+], tags: ["biomarker", "genome-wide", "precision"] ,
+"asOf": "2026-11-10",
+"notes": [
+  "FDA’s October 2026 conversion changed the tumour-agnostic indication from accelerated to traditional approval. FDA states that efficacy supporting traditional approval was not confirmed for TMB from 10 to below 13 mutations per megabase. This does not establish universal lack of benefit or a contraindication below 13; other indications and individual evidence have separate scope.",
+  "Published cohort frequencies and study thresholds below retain their original assay, cutoff and population. They must not be substituted for the current drug-label criterion. Blood and tissue estimates also require their own validation."
+]
+}),
 
   // ---- BRCA and HRD ----
   b({ id: "brca-germline", name: "Germline BRCA1/2 pathogenic variant (gBRCAm)", aka: ["gBRCA", "gBRCAm", "germline BRCA", "germline BRCA1", "germline BRCA2", "BRCA carrier", "inherited BRCA mutation", "deleterious germline BRCA mutation"],

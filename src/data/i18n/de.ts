@@ -378,7 +378,7 @@ export const tldr_de: Record<string, string> = {
   revumenib: "Revumenib (Revuforj) ist der erste Menin-Inhibitor (2024), für akute Leukämien mit KMT2A-Rearrangements oder NPM1-Mutationen.",
   ribociclib: "Ribociclib ist der CDK4/6-Inhibitor mit dem beständigsten Überlebensvorteil und seit 2024 für eine breite Gruppe von Patienten mit frühem Brustkrebs zugelassen.",
   rituximab: "Rituximab war der erste Antikörper, der je gegen Krebs zugelassen wurde (1997). Er machte die Chemoimmuntherapie für ein Jahrzehnt zum Standard bei der CLL, und Biosimilars halten ihn günstig und überall verfügbar.",
-  "rna-seq": "Messung, welche Gene ein Tumor aktiv nutzt, was seinen Subtyp offenbart und Genfusionen aufspürt.",
+
   "robotic-surgery": "Chirurgen operieren durch kleine Schnitte mit Roboterarmen, die zitterfreie Präzision und 3D-Sicht bieten.",
   "roche-genentech": "Schöpfer von Herceptin, Avastin und Rituxan sowie Eigentümer von Foundation Medicine; das Unternehmen, das die Antikörper-Onkologie geprägt hat.",
   "royal-marsden": "The Royal Marsden war das erste Krankenhaus der Welt, das sich dem Krebs widmete (1851), und ist mit dem Institute of Cancer Research verbunden.",
@@ -396,7 +396,7 @@ export const tldr_de: Record<string, string> = {
   "shared-antigen-vaccine": "Impfstoffe gegen Mutationen oder Proteine, die viele Patienten gemeinsam haben, sodass sie im Voraus hergestellt werden können.",
   sheba: "Israels größtes Krankenhaus, dessen Krebszentrum die POLO-Studie zu olaparib bei Bauchspeicheldrüsenkrebs leitete und eines der weltweit wenigen TIL-Therapieprogramme betreibt.",
   signatera: "Der am weitesten verbreitete Bluttest zum Nachweis von Restkrebs nach einer Operation, individuell auf die Tumormutationen jedes Patienten zugeschnitten.",
-  "single-cell-spatial": "Die Gene jeder einzelnen Zelle auslesen und kartieren, wo jede Zelle im Tumor sitzt.",
+
   "targeted-therapy": "Zielgerichtete Therapien sind Medikamente, die ein bestimmtes defektes Protein abschalten sollen, von dem ein Krebs abhängig ist.",
   tarlatamab: "Der erste T-Zell-Engager, der das Überleben bei einem häufigen soliden Tumor, dem kleinzelligen Lungenkrebs, verbessert.",
   "tata-memorial": "Indiens größtes Krebszentrum, führend bei kostengünstigen Studien mit großer Wirkung, etwa zu niedrig dosierter Immuntherapie und oraler metronomischer Chemotherapie.",
@@ -414,7 +414,7 @@ export const tldr_de: Record<string, string> = {
   tils: "Immunzellen, die in den Tumor eingedrungen sind. Je mehr davon vorhanden sind, desto besser sind die Ergebnisse bei dreifach negativem Brustkrebs.",
   tisagenlecleucel: "Tisagenlecleucel war die erste überhaupt zugelassene CAR-T-Therapie (2017), für Kinder und junge Erwachsene, deren Leukämie nach allen anderen Behandlungen zurückgekehrt war.",
   tislelizumab: "Ein in China entwickelter PD-1-Blocker, der so konstruiert wurde, dass er einen Nebenweg vermeidet, der andere PD-1-Medikamente abschwächen kann, und inzwischen in den USA und der EU für Speiseröhren- und Magenkrebs zugelassen ist.",
-  tmb: "Wie viele Mutationen ein Tumor hat. Mehr Mutationen bedeuten mehr Angriffspunkte für das Immunsystem.",
+
   "tnbc-history": "Wie dreifach negativer Brustkrebs in sechs Jahren vom Subtyp ohne zielgerichtete Therapie zu einem mit Immuntherapie, PARP-Inhibitoren, drei ADCs und einem positiv getesteten bispezifischen ADC wurde.",
   "topoisomerase-inhibitors": "Topoisomerase-I-Inhibitoren blockieren das Enzym, das die DNA beim Kopieren entwirrt. Als freie Wirkstoffe sind sie bei vielen Krebsarten schwach, aber verheerend wirksam, wenn sie über ein ADC zugeführt werden.",
   tp53: "TP53 ist der „Wächter des Genoms“ und in der Hälfte aller Krebserkrankungen defekt. Es direkt zu reparieren ist bisher an jedem Versuch gescheitert, deshalb nutzen Medikamente aus, wovon Krebszellen durch seinen Verlust abhängig werden.",
@@ -557,7 +557,7 @@ export const tldr_de: Record<string, string> = {
   "mrd-negative-cr": "MRD-negative komplette Remission bedeutet, dass nicht nur unter dem Mikroskop keine Leukämie mehr sichtbar ist, sondern auch mit tausendfach empfindlicheren Tests keine mehr nachweisbar ist. Sie ist das Ziel der modernen Leukämiebehandlung.",
   "mrd-testing": "Ein hochempfindlicher Bluttest nach der Operation, der verbliebenen Krebs Monate früher nachweist, als es eine Bildgebung könnte.",
   mri: "Nutzt Magnete und Radiowellen, ohne Strahlung, um sehr detaillierte Bilder von Weichgewebe wie Gehirn, Brust, Leber und Prostata zu liefern.",
-  msi: "Mikrosatelliteninstabilität ist das Kennzeichen einer defekten DNA-Rechtschreibprüfung, die Tausende von Mutationen erzeugt und den Tumor für die Immuntherapie gut sichtbar macht.",
+
   mskcc: "Das weltweit bestplatzierte Krebskrankenhaus, Heimat der MSK-IMPACT-Sequenzierung, der Studie zu dostarlimab beim Rektumkarzinom und von CAR-T-Pionieren.",
   "multiple-endocrine-neoplasia": "Die MEN-Syndrome sind vererbte Defekte in einem einzelnen Gen, die im Laufe des Lebens Tumoren in mehreren Hormondrüsen verursachen. Da das Gen bereits im Kindesalter nachgewiesen werden kann, können gefährdete Angehörige getestet und überwacht werden und sich bei MEN2 die Schilddrüse entfernen lassen, bevor Krebs entsteht; und für MEN2-Schilddrüsenkrebs, der sich doch ausbreitet, gibt es heute eine zielgerichtete Tablette, selpercatinib, die das fehlerhafte RET-Protein blockiert.",
   "mutagenesis-signatures": "Jede Ursache von DNA-Schäden hinterlässt ihren eigenen Fingerabdruck im Genom: Sonnenlicht, Tabak, ein defektes Reparaturenzym, ein Darmbakterium. Wer diese Fingerabdrücke liest, erkennt, was einen Krebs verursacht hat und welche Reparaturmannschaften ihm fehlen, was wiederum vorhersagt, welche Medikamente wirken werden.",
@@ -1123,7 +1123,7 @@ export const tldr_de: Record<string, string> = {
   "nct-dresden": "Der zweite Standort des Nationalen Centrums für Tumorerkrankungen, bekannt für Protonentherapieforschung am OncoRay und KI in Pathologie und Chirurgie.",
   nectin4: "Nectin-4 ist ein Adhäsionsprotein, das auf Blasenkrebszellen reichlich vorhanden ist und als Andockstelle für das ADC enfortumab vedotin dient.",
   "newcastle-cancer-centre": "Das Krebszentrum im Nordosten Englands und der Geburtsort des ersten PARP-Inhibitors, der Patienten erreichte, rucaparib.",
-  ngs: "Millionen DNA-Fragmente parallel lesen, der Motor hinter jedem modernen genomischen Test.",
+
   "ngs-bioinformatics-software": "Software, die die Rohdaten des Sequenziergeräts in einen Bericht darüber verwandelt, welche Mutationen von Bedeutung sind und auf welche Medikamente sie hinweisen.",
   "nhs-galleri": "Die größte Krebsfrüherkennungsstudie, die je durchgeführt wurde; sie prüft, ob ein Bluttest auf mehrere Krebsarten die Zahl der Diagnosen im Spätstadium senkt.",
   nilotinib: "Nilotinib ist eine CML-Tablette der zweiten Generation, die schneller tiefere Remissionen erzielt als imatinib, um den Preis kardiovaskulärer und metabolischer Nebenwirkungen.",
@@ -3159,7 +3159,7 @@ export const tldr_de: Record<string, string> = {
   lobectomy: "Entfernung eines Lungenlappens (die rechte Lunge hat drei, die linke zwei). Die Standardoperation bei frühem Lungenkrebs.",
   "locally-advanced": "Krebs, der über sein Organ hinaus in benachbartes Gewebe oder Lymphknoten gewachsen ist, sich aber nicht in entfernte Körperregionen ausgebreitet hat. Er wird mit dem Ziel der Heilung behandelt, braucht aber meist mehrere Behandlungen (Operation, Strahlentherapie, Medikamente) zusammen.",
   "loi-sherene": "Zeigte, dass Immunzellen in Brusttumoren den Verlauf vorhersagen, die Grundlage für die Deeskalation der Chemotherapie beim TNBC.",
-  "long-read-sequencing": "DNA in sehr langen Abschnitten lesen, was Umlagerungen und Methylierung sichtbar macht, die Short-Read-Geräte übersehen.",
+
   "lori-pierce": "Lori Pierce ist eine auf Brustkrebs spezialisierte Strahlentherapeutin und ehemalige ASCO-Präsidentin mit Fokus auf Gerechtigkeit in der Krebsversorgung.",
   "lori-wirth": "Leitete LIBRETTO-001 beim Schilddrüsenkrebs, das Selpercatinib zum ersten RET-selektiven Medikament machte, das für RET-getriebene Tumoren zugelassen wurde.",
   lumicell: "MIT-Ausgründung, deren Farbstoff Lumisight und Bildgebungssystem verbliebenen Brustkrebs in der Lumpektomiehöhle zeigen, bevor die Operation endet.",
@@ -3437,7 +3437,7 @@ export const tldr_de: Record<string, string> = {
   therapixel: "Die Software MammoScreen von Therapixel nutzt künstliche Intelligenz, um verdächtige Bereiche auf Mammographien zu markieren und deren Krebswahrscheinlichkeit zu bewerten, und hilft Radiologen in den USA und Europa beim Befunden von Screeninguntersuchungen.",
   "thyroid-cancer-signalling": "Diese KEGG-Karte zeigt, dass Schilddrüsenkrebs fast ausschließlich von einem einzigen Relais, dem MAPK-Signalweg, angetrieben wird, der bei papillären Tumoren durch RET- oder NTRK-Fusionen und BRAF-Mutationen und bei follikulären Tumoren durch RAS-Mutationen oder die PAX8-PPARG-Fusion eingeschaltet wird, wobei der Verlust von TP53 den Schritt zum aggressiven undifferenzierten Krebs markiert. Sie ist wichtig, weil viele dieser Schalter inzwischen ein eigenes Medikament haben.",
   "tissue-factor": "Der Gewebefaktor ist ein Gerinnungsprotein, das Krebszellen abnormal auf ihrer Oberfläche zeigen, genutzt als ADC-Ziel bei Gebärmutterhalskrebs.",
-  "tmb-testing": "Zählen, wie viele Mutationen ein Tumor pro DNA-Abschnitt trägt; stark mutierte Tumoren sprechen eher auf Immuntherapie an.",
+
   tmist: "Die Studie, die klären wird, ob 3D-Mammographien mehr gefährliche Krebserkrankungen verhindern als herkömmliche 2D-Aufnahmen oder nur mehr kleine finden.",
   toga: "Die Studie, die das Brustkrebsmedikament Herceptin zum Magenkrebs brachte, die erste zielgerichtete Therapie, die bei dieser Krankheit das Überleben verbesserte.",
   "ton-schumacher": "Immunologe, der zeigte, dass T-Zellen Krebs-Neoantigene erkennen, die Grundlage personalisierter Impfstoffe und TCR-Therapien.",

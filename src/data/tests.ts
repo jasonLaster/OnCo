@@ -25,7 +25,7 @@ const CT = (nct: string) => ({ label: `ClinicalTrials.gov ${nct}`, url: `https:/
 const MOLDX_MRD_ARTICLE = { label: "CMS MolDX billing article A58376: minimal residual disease testing for solid tumour cancers", url: "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58376" };
 
 const d = (x: Omit<DrugInput, "kind" | "asOf"> & { asOf?: string }): DrugInput => ({ kind: "drug", asOf, tags: ["test", ...(x.tags ?? [])], ...x, });
-const tech = (x: Omit<TechnologyInput, "kind" | "asOf">): TechnologyInput => ({ kind: "technology", asOf, ...x });
+const tech = (x: Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string }): TechnologyInput => ({ kind: "technology", asOf, ...x });
 const co = (x: Omit<CompanyInput, "kind" | "asOf">): CompanyInput => ({ kind: "company", asOf, ...x });
 const t = (x: Omit<TrialInput, "kind" | "asOf">): TrialInput => ({ kind: "trial", asOf, ...x, ...TRIAL_OUTCOMES[x.id] });
 const term = (x: Omit<TermInput, "kind" | "asOf"> & { asOf?: string }): TermInput => ({ kind: "term", asOf, ...x });
@@ -591,14 +591,56 @@ const technologies: TechnologyInput[] = [
     cancers: ["colorectal", "endometrial", "gastric"], drugs: ["pembrolizumab", "dostarlimab", "ventana-mmr-rxdx", "foundationone-cdx"], terms: ["msi", "mss-pmmr", "lynch-syndrome", "tmb"],
     technologies: ["histopathology-ihc", "companion-diagnostic", "germline-testing"],
     links: [{ label: "FDA: pembrolizumab tissue-agnostic approval for MSI-H/dMMR tumours (2017) (archived copy)", url: "https://web.archive.org/web/20260420012135/https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-pembrolizumab-first-tissuesite-agnostic-indication" }] }),
-  tech({ id: "tmb-testing", tags: ["precision"], keyPapers: ["paper-marabelle-keynote-158-tmb-lancet-oncol-2020", "paper-mcgrail-tmb-pan-cancer-response-ann-oncol-2021"], name: "Tumour mutational burden testing", sections: ["diagnostics"], status: "established",
-    tldr: "Counting how many mutations a tumour carries per stretch of DNA; heavily mutated tumours are more likely to respond to immunotherapy.",
-    summary: "Tumour mutational burden is reported by comprehensive genomic profiling panels as mutations per megabase. In June 2020 the FDA granted pembrolizumab a tissue-agnostic accelerated approval for unresectable or metastatic solid tumours with TMB of at least 10 mutations per megabase, as measured by FoundationOne CDx, based on the KEYNOTE-158 study. The threshold is contested: panel size, the inclusion of synonymous variants and germline filtering all shift the number, and the Friends of Cancer Research TMB Harmonization Project showed that different panels can disagree around the cut-off. Blood TMB from liquid biopsy panels is an emerging alternative when tissue is inadequate. TMB is most useful in cancers where PD-L1 and MSI do not explain response, such as some sarcomas and rare tumours.",
-    principle: "Somatic non-synonymous mutations across the panel's coding territory are counted and normalised to the sequenced megabases, after filtering germline and known driver variants.",
-    strengths: ["Adds a route to immunotherapy for rare cancers", "Reported free with every large panel"],
-    limitations: ["Panel-dependent values and a debated cut-off", "Weak predictive value in some cancers with high TMB such as those driven by tobacco"],
+  tech({ id: "tmb-testing", tags: ["precision"], keyPapers: [
+  "paper-marabelle-keynote-158-tmb-lancet-oncol-2020",
+  "paper-mcgrail-tmb-pan-cancer-response-ann-oncol-2021"
+], name: "Tumour mutational burden testing", sections: ["diagnostics"], status: "established",
+    tldr: "Tumour mutational burden testing estimates eligible mutation density using a specified assay and reporting territory.",
+    summary: "A TMB test reports eligible somatic mutation density after assay-specific counting, filtering and calibration. The reporting territory, specimen, local measurement quality and inherited-variant handling affect the number. Computational harmonisation comparisons show why identical units do not make assays interchangeable. A research estimate alone does not establish the test and disease-setting requirements of a clinical indication.",
+    principle: "Count eligible somatic variants under specified filtering and calibration rules, then normalise to eligible megabases.",
+    strengths: [
+  "Mutation-density measurement with explicit rules"
+],
+    limitations: [
+  "Assay, territory and specimen affect estimates",
+  "A biomarker category does not guarantee benefit"
+],
     drugs: ["pembrolizumab", "foundationone-cdx", "trusight-oncology-comprehensive"], terms: ["tmb", "msi"], technologies: ["cgp", "companion-diagnostic"],
-    links: [{ label: "FDA: pembrolizumab approval for TMB-H solid tumours (2020)", url: "https://www.fda.gov/drugs/drug-approvals-and-databases/fda-approves-pembrolizumab-adults-and-children-tmb-h-solid-tumors" }] }),
+    links: [
+  {
+    "label": "FDA: pembrolizumab approval for TMB-H solid tumours (2020)",
+    "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/fda-approves-pembrolizumab-adults-and-children-tmb-h-solid-tumors"
+  },
+  {
+    "label": "FDA pembrolizumab label revised July 2026",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+  },
+  {
+    "label": "Merino et al. (2020), in-silico TMB harmonization",
+    "url": "https://friendsofcancerresearch.org/wp-content/uploads/JITC_Establishing_guidelines_to_harmonize-TMB_2.pdf"
+  },
+  {
+    "label": "FDA, 16 October 2026: traditional approval and updated TMB-H indication",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph"
+  },
+  {
+    "label": "KEYTRUDA current prescribing information, sections 1.18 and 2.1",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+  }
+] ,
+"notes": [
+  "TMB is the density of eligible somatic mutations over the assay reporting region, in mut/Mb (Mb = one million bases); the numerator rules, filters and any calibration are method-specific.",
+  "Panel, exome and genome examine different regions; a cancer-gene-enriched region need not behave as a random genomic sample.",
+  "When laboratories analysed the same exome data with their own regions and pipelines panel TMB estimates varied; this was a computational comparison, not proof of interchangeability for treatment selection.",
+  "More mutations offer more candidate neoantigens, but processing, HLA display and immune function still matter; high TMB neither guarantees checkpoint benefit nor establishes benefit in every cancer.",
+  "On 16 October 2026, FDA converted the U.S. tumour-agnostic pembrolizumab indication to traditional approval and changed its TMB-H criterion from 10 to at least 13 mutations per megabase. Section 1.18 covers adults and children with unresectable or metastatic solid tumours, measured by an FDA-authorised test, that have progressed after prior treatment and have no satisfactory alternative treatment options. This criterion does not replace thresholds in other indications or historical studies.",
+  "Fictional teaching exercise: 24 eligible mutations over 2 Mb is 12 mut/Mb and over 1 Mb is 24 mut/Mb; not comparable clinically without counting and calibration rules; a research result does not establish authorised-test eligibility.",
+  "TMB differs from copy-number instability and from MSI, and a TMB category does not settle an individual outcome.",
+  "Retain specimen type, DNA consumption, eligible mutation classes and reporting territory, germline/artefact filtering, calibration, mut/Mb, quality and uncertainty. Blood and tissue estimates need separate validation. Low tumour signal and uneven coverage can bias the count; both analytical performance and clinical applicability must match the assay, cancer and setting.",
+  "The July 2026 pembrolizumab label describes the TMB supporting KEYNOTE-158 analysis as a prospectively planned retrospective analysis of ten nonrandomized cohorts. That design does not establish TMB-based selection for early triple-negative breast cancer; retain the population, endpoint and clinical setting with the evidence."
+],
+"asOf": "2026-11-10"
+}),
   tech({ id: "nhs-targeted-lung-health-check", name: "NHS Targeted Lung Health Check (lung cancer screening programme)", sections: ["early-detection", "imaging"], status: "standard-of-care", since: 2019,
     tldr: "England's lung screening programme: people aged 55 to 74 who have ever smoked are invited for a risk assessment and, if high risk, a low-dose CT scan, often in a mobile unit in a supermarket car park.",
     summary: "The Targeted Lung Health Check programme began in 2019 in areas with high lung cancer mortality, inviting ever-smokers aged 55 to 74 through their GP records for a telephone or face-to-face risk assessment using the PLCOm2012 and Liverpool Lung Project risk models; those above threshold have a low-dose CT scan, repeated at 24 months. In 2022 the UK National Screening Committee recommended targeted lung screening nationally and in June 2023 NHS England committed to full national rollout by 2029. Programme data reported that around three quarters of cancers were found at stage 1 or 2, reversing the usual stage distribution, and that uptake was highest where mobile scanners were used. Incidental findings, smoking-cessation support at the visit and radiology capacity are the practical constraints.",

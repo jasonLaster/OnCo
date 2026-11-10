@@ -4,6 +4,13 @@ Every factual correction to the OnCo corpus, newest first. Format: date · entit
 
 ## 2026-11-10
 
+### Sequencing, RNA measurements and updated TMB policy
+
+- **TMB selection:** current tumour-agnostic pembrolizumab statements now use the FDA October 2026 traditional-approval criterion of at least 13 mutations per megabase, with the authorised-test, disease and treatment-setting conditions. The former 10-mut/Mb criterion and published study cutoffs retain their historical scope; no response guarantee or universal low-TMB contraindication is inferred. Sources: [FDA conversion and updated indication](https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph), [current KEYTRUDA label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287).
+- **What sequencing establishes:** read count, independent molecules, local depth, breadth, mutation density, cell purity and inferred cancer-cell fraction keep their own denominators and assumptions. Tumour-only sequencing does not establish constitutional origin from a familiar gene or allele fraction. Sources include [Jones et al.](https://doi.org/10.1126/scitranslmed.aaa7161) and [the TMB harmonisation experiment](https://doi.org/10.1136/jitc-2019-000147). Numerical exercises are fictional, not clinical thresholds.
+- **HLA source scope:** the [LOHHLA study](https://doi.org/10.1016/j.cell.2017.10.001) selected all-loci-loss or no-loss regions for a validation comparison; that selection does not establish typical regional frequency. Gene-specific HLA locations are verified against HGNC. DNA retention, RNA expression, surface protein and peptide display remain distinct findings.
+- **RNA readers:** captured RNA, probe counts, expression scores, inferred mixture components and functional output retain their separate methods. Reverse transcription is a common workflow rather than a definition of every RNA chemistry. Sixty-three stale short summaries use current English fallback, while 47 unchanged short entries retain their text and positions; no new named language review is claimed.
+
 ### Spatial methods and model evaluation
 
 - **Model evaluation:** a held-out 80/20 split is no longer described as a universal minimum. Internal, external, donor and intervention holdouts answer different questions, and choices made using evaluation results become part of development. Sources include [TRIPOD+AI](https://doi.org/10.1136/bmj-2023-078378) and the [single-cell perturbation benchmark](https://doi.org/10.1038/s41592-025-02772-6).

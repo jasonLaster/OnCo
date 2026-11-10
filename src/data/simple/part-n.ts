@@ -306,7 +306,7 @@ export const simpleN: Record<string, string> = {
   "icad-profound-ai": "iCAD's ProFound AI was the first AI software cleared in the United States for 3D mammography, and it now belongs to RadNet's imaging network after a 2025 deal.",
   "kheiron-mia": "Mia, a breast screening AI built in London by Kheiron, was trialled across NHS sites as a second reader and became part of RadNet's DeepHealth after a 2024 acquisition.",
   "msi-mmr-testing": "MSI and mismatch-repair tests show whether a tumour has lost its DNA spell-checker, which means immunotherapy works unusually well and an inherited syndrome [Lynch syndrome] may be present.",
-  "tmb-testing": "Tumour mutational burden testing counts how many mutations a tumour carries per stretch of DNA, because heavily mutated tumours are more likely to respond to immunotherapy.",
+
   "nhs-targeted-lung-health-check": "England's Targeted Lung Health Check programme invites people aged 55 to 74 who have ever smoked for a risk assessment and, if high risk, a low-dose CT scan.",
   "prostate-screening-psa-mri": "Prostate screening is still debated, but the modern approach uses a PSA blood test followed by an MRI scan to find the cancers that matter while leaving harmless ones alone.",
   "skin-cancer-screening": "Whole-skin checks for suspicious moles find melanomas earlier, but no trial has yet shown that screening everyone saves lives, so most countries focus on people at high risk.",

@@ -234,25 +234,104 @@ export const cansimOncologyTerms: TermInput[] = [
 
   // ---- Assays and data modalities ----
   t({ id: "bulk-rna-seq", name: "Bulk RNA sequencing (RNA-seq) and the full transcriptome", category: GEN, aka: ["bulk RNA-seq", "bulk RNA sequencing", "bulk transcriptome", "bulk expression", "full transcriptome", "whole transcriptome", "transcriptome-wide expression", "~20k genes"],
-    wikipedia: W("RNA-Seq"), links: [{ label: "Wikipedia: transcriptome", url: W("Transcriptome") }], cansim: "/terms/bulk-rna-seq",
-    tldr: "Bulk RNA sequencing reads all the messenger RNA in a piece of tumour at once, giving one averaged expression value per gene for the whole sample.",
-    summary: "RNA-Seq is a next-generation sequencing technique that quantifies and identifies the RNA molecules in a sample, a snapshot of the transcriptome at one time, by sequencing cDNA made from RNA (Wikipedia). Bulk means the whole tissue is processed together, so the profile averages cancer, stromal and immune cells. The transcriptome is the set of all RNA transcripts; the roughly twenty thousand protein-coding genes are the full-transcriptome feature set that gene panels subsample.",
-    technologies: ["rna-seq"], terms: ["tpm-fpkm-counts", "star-salmon", "single-cell-rna-seq", "tumour-purity"] }),
+    wikipedia: W("RNA-Seq"), links: [
+  {
+    "label": "Wikipedia: transcriptome",
+    "url": "https://en.wikipedia.org/wiki/Transcriptome"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/RNA-Seq"
+  },
+  {
+    "label": "A comprehensive assessment of RNA-seq accuracy, reproducibility and information content by the Sequencing Quality Control Consortium.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25150838/"
+  },
+  {
+    "label": "A survey of best practices for RNA-seq data analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26813401/"
+  }
+], cansim: "/terms/bulk-rna-seq",
+    tldr: "Bulk RNA sequencing measures captured messages pooled across a tissue sample, including contributions from multiple cell types.",
+    summary: "RNA carries cellular messages; bulk sequencing samples those messages from combined tissue after protocol-specific capture and preparation. Analysis assigns usable observations to genes or transcripts and applies a defined comparison scale. A change can reflect cell composition, expression within cells or both. Gene totals can conceal transcript differences, and pooled RNA does not directly establish protein localisation, pathway flux or drug dependence.",
+    technologies: ["rna-seq"], terms: ["tpm-fpkm-counts", "star-salmon", "single-cell-rna-seq", "tumour-purity"] ,
+"notes": [
+  "Bulk RNA sequencing measures captured messages pooled across a specimen. Cancer, immune and supporting cells can contribute different amounts of RNA; a higher signal can reflect a changed mixture, changed expression within cells, or both. Zero detected reads does not establish biological absence. Source: Conesa et al., 2016 methods review, https://doi.org/10.1186/s13059-016-0881-8.",
+  "Name the counting unit and normalisation denominator. Estimated transcript counts, length-adjusted transcripts per million and tagged molecule counts answer different measurement questions. A gene total can conceal splice products; pooled RNA does not directly measure surface protein, pathway flux or drug dependence. Sources: https://salmon.readthedocs.io/en/latest/file_formats.html and https://doi.org/10.1186/s13059-016-0881-8.",
+  "Fictional mixture exercise: in two 100-cell samples, increasing identical marker-producing lymphocytes from 20 to 40 doubles their stipulated marker molecules if each contributes one and other cells contribute none. This does not show cancer-cell activation. Equal RNA contribution and matched recovery are assumptions, not measured tissue properties.",
+  "Bulk RNA-seq extracts RNA, prepares a library (often cDNA), may select mRNA or deplete rRNA or capture regions; bulk does not mean equal capture of all molecules.",
+  "Reads or fragments are assigned to genes or transcripts; shared sequences make assignment ambiguous; a count table is already shaped by preparation and analysis.",
+  "A bulk signal can rise because more cells of a type contribute, expression within them rises, or both; deconvolution estimates contributions under a model and does not separate cells.",
+  "Gene-level counts can hide isoform differences; a mutant or splice product needs sequence or junction evidence.",
+  "Bulk RNA can nominate expressed targets and summarise programmes but does not establish cell origin, surface protein, pathway flux or drug dependence; zero reads is not absence; thousands of genes from one biopsy are not thousands of patients.",
+  "Fictional teaching exercise: With equal RNA per cell, a lymphocyte-only marker and 100-cell pieces, raising lymphocytes from 20 to 40 doubles the pooled marker (20 to 40 stipulated molecules) without changing any cancer cell.",
+  "Record sampled region and RNA integrity; research profiling differs from a validated clinical RNA test.",
+  "Record protocol-compatible preservation, sampled region, RNA integrity and material consumed by extraction. Track capture, sequence assignment, read/fragment units, normalisation and transcript calls. Preparation time varies; reference material, process controls and biological replicates test different uncertainties. Degradation, contamination, ambiguous annotation, batch and mixture shifts constrain purpose-specific cutoffs and clinical intended-use validation."
+],
+"asOf": "2026-11-10",
+"related": [
+  "cancer-ai-vocabulary",
+  "gene-expression-signatures",
+  "immune-deconvolution",
+  "rna-pathway-scoring"
+]
+}),
   t({ id: "tpm-fpkm-counts", name: "TPM, FPKM and raw counts (expression units)", category: GEN, aka: ["TPM", "transcripts per million", "FPKM", "RPKM", "log2 TPM", "log2(TPM+1)", "raw counts", "read counts", "expression units"],
     wikipedia: W("RNA-Seq"), links: [{ label: "Salmon: fast and bias-aware quantification of transcript expression (Nature Methods 2017)", url: DOI("10.1038/nmeth.4197") }], cansim: "/terms/tpm-fpkm-counts",
-    tldr: "Raw counts are how many sequencing reads hit each gene; TPM and FPKM rescale them for gene length and sequencing depth so genes and samples can be compared, and log2 TPM is the usual model input.",
-    summary: "RNA-Seq analysis quantifies expression from read counts per gene (Wikipedia); because longer genes and deeper libraries collect more reads, counts are normalised to fragments per kilobase per million (FPKM) or transcripts per million (TPM), which sum to a constant per sample. Quantifiers such as Salmon estimate transcript abundance and TPM directly. Models usually take log2(TPM + 1); mixing units, or mixing TPM from one pipeline with counts from another, is a classic source of batch effects.",
-    terms: ["bulk-rna-seq", "batch-effects", "quantile-normalisation"] }),
+    tldr: "RNA count units depend on what was counted, the normalisation denominator and any transcript-length adjustment.",
+    summary: "Raw RNA tables can contain assigned reads, fragments or model-estimated counts. Counts per million divide by a named library denominator. Transcripts per million first adjust for transcript length and scale the adjusted values to a total of one million; effective length depends on the quantifier. FPKM uses a different denominator and does not in general sum to a fixed total. UMI molecule counting and three-prime tag workflows need their own rules. Composition scaling, batch handling and statistical comparison remain separate questions; no single transformed unit is the universal model input.",
+    terms: ["bulk-rna-seq", "batch-effects", "quantile-normalisation"] ,
+"asOf": "2026-11-10",
+"notes": [
+  "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+  "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+  "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+  "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+  "Fictional teaching exercise: Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+  "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+  "Rescaling an existing feature table needs its counting unit, annotation, library metadata, denominator and any length rule; adding molecular tags requires library preparation. Report CPM, TPM or the chosen model input explicitly. Runtime, controls, replicates and composition checks vary. Wrong units, tag errors, broad shifts and incompatible annotations undermine filters/comparisons; normalisation alone does not validate a clinical test."
+]
+}),
   t({ id: "star-salmon", wikipediaChecked: "2026-09-25", name: "STAR and Salmon (RNA-seq alignment and quantification)", category: GEN, aka: ["STAR aligner", "STAR RNA-seq aligner", "Salmon quantification", "Salmon quantifier", "pseudoalignment"],
     links: [{ label: "STAR on GitHub (alexdobin/STAR)", url: "https://github.com/alexdobin/STAR" }, { label: "Dobin et al., STAR: ultrafast universal RNA-seq aligner (Bioinformatics 2013)", url: DOI("10.1093/bioinformatics/bts635") }, { label: "Salmon documentation", url: "https://salmon.readthedocs.io/en/latest/" }, { label: "Patro et al., Salmon (Nature Methods 2017)", url: DOI("10.1038/nmeth.4197") }], cansim: "/terms/star-salmon",
     tldr: "STAR lines sequencing reads up against the genome and Salmon estimates how much of each transcript is present; they are the two most common first steps of an RNA-seq pipeline.",
     summary: "STAR (Spliced Transcripts Alignment to a Reference) is the ultrafast universal RNA-seq aligner described by Dobin and colleagues and used by the GDC pipeline; Salmon, from Patro and colleagues, quantifies transcript expression quickly and with correction for sequence and GC bias, using a lightweight mapping rather than full alignment. Which tool, genome build and annotation were used are provenance fields a model's training data should record, because they change the numbers.",
     terms: ["bulk-rna-seq", "tpm-fpkm-counts", "genome-builds"], related: ["ngs-bioinformatics-software"] }),
   t({ id: "variant-calling", name: "Variant calling", category: GEN, aka: ["variant calling", "somatic variant calling", "variant caller", "variant callers", "SNV calling", "mutation calling"],
-    wikipedia: W("SNV_calling_from_NGS_data"), links: [{ label: "Lawrence et al., Mutational heterogeneity in cancer and the search for new cancer-associated genes (MutSigCV, Nature 2013)", url: DOI("10.1038/nature12213") }], cansim: "/terms/variant-calling",
-    tldr: "Variant calling is the computational step that turns raw sequencing reads into a list of the DNA changes present in a tumour.",
-    summary: "SNV calling from NGS data is any of a range of computational methods for identifying single nucleotide variants from next-generation sequencing results (Wikipedia); somatic callers such as Mutect2 compare tumour with matched normal reads. Calling is imperfect at low purity and low coverage, callers disagree, and the mutation lists TCGA released changed between pipeline versions. MutSigCV then asks which genes are mutated more often than the background rate, the standard driver-gene test.",
-    terms: ["germline-vs-somatic", "variant-effect-prediction", "mutsig"], technologies: ["wes-wgs", "ngs-bioinformatics-software"] }),
+    wikipedia: W("SNV_calling_from_NGS_data"), links: [
+  {
+    "label": "Lawrence et al., Mutational heterogeneity in cancer and the search for new cancer-associated genes (MutSigCV, Nature 2013)",
+    "url": "https://doi.org/10.1038/nature12213"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/SNV_calling_from_NGS_data"
+  },
+  {
+    "label": "Sensitive detection of somatic point mutations in impure and heterogeneous cancer samples.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23396013/"
+  },
+  {
+    "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+  }
+], cansim: "/terms/variant-calling",
+    tldr: "Variant calling evaluates sequence evidence and error models to identify candidate changes within a defined assay scope.",
+    summary: "Variant calling assesses whether observed sequence or regional evidence supports a difference from a reference or comparison sample. Evidence quality, independent fragments, local depth, error models and the alteration class matter. Annotation describes possible consequence after calling; neither annotation nor a passed filter independently proves function or treatment relevance. Negative calls retain the workflow coverage and detection limits.",
+    terms: ["germline-vs-somatic", "variant-effect-prediction", "mutsig"], technologies: ["wes-wgs", "ngs-bioinformatics-software"] ,
+"notes": [
+  "Base quality concerns confidence in a sequence letter; mapping quality concerns its proposed location. A clear letter can still map ambiguously. Depth depends on the chosen quality, duplicate and overlapping-pair filters, so retain these rules with support counts. Source: https://www.htslib.org/doc/samtools-depth.html, samtools 1.25 manual.",
+  "Passing a computational filter does not establish biological function or treatment benefit. Agreement between callers using the same reads does not create independent molecular evidence; a shared mapping problem can remain. The exact regions, alteration classes and usable local evidence constrain a negative result.",
+  "Variant calling evaluates sequence evidence and error models to identify candidate differences; methods are class-specific (substitutions, indels, copy changes, rearrangements) and a workflow calling one class may not call another.",
+  "Evidence includes usable depth, base and mapping quality, strand and fragment distribution and comparison-sample support; somatic callers must handle low-frequency evidence in mixed samples.",
+  "In VCF, PASS means the call passed the stated filters; a dot means filters have not been applied; counts and allele fractions need defined denominators.",
+  "Annotation adds gene or predicted consequence and is separate from calling; machine learning is one method, not the definition.",
+  "Two callers agreeing on shared reads can share misalignment error; confirmation needs an independent suitable method; a negative call set is bounded by detectable regions, classes and fractions.",
+  "Fictional teaching exercise: A call that is PASS in two tools but supported only by reads aligning ambiguously to duplicated regions has not resolved location.",
+  "Calling uses existing reads, a reference assembly and optional comparison files; a new confirmation assay can consume more material. Report coordinates, alleles, support, quality, filters and defined fractions/copy estimates. Retain caller version, detectable regions/classes and thresholds. Contamination, damage, misalignment and reference mismatch require specimen-specific end-to-end validation; filter thresholds are not treatment thresholds."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "somatic-mutations-wxs-wgs", name: "Somatic mutations from exome and genome sequencing (WXS, WGS)", category: GEN, aka: ["WXS", "whole-exome sequencing data", "somatic mutation data", "mutation calls", "MAF file", "mutation annotation format"],
     wikipedia: W("Exome_sequencing"), links: [{ label: "Wikipedia: whole genome sequencing", url: W("Whole_genome_sequencing") }], cansim: "/terms/somatic-mutations",
     tldr: "Somatic mutations are the DNA changes a tumour acquired during life; they are read from exome (protein-coding) or whole-genome sequencing of tumour and matched normal tissue.",
@@ -274,10 +353,45 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Lawrence and colleagues showed that mutation rates vary enormously between patients and across the genome (with expression level and replication timing) and that ignoring this heterogeneity produces spurious driver genes; MutSigCV corrects for it using patient-specific rates and gene covariates. It became the standard driver test in TCGA marker papers alongside GISTIC for copy number. Like GISTIC it is distributed under a Broad research licence rather than an open repository.",
     terms: ["driver-mutation", "variant-calling", "gistic"], related: ["intogen"] }),
   t({ id: "batch-effects", name: "Batch effects and harmonisation", category: GEN, aka: ["batch effects", "batch effect", "batch correction", "ComBat", "platform effect", "cross-platform harmonisation", "harmonisation across platforms"],
-    wikipedia: W("Batch_effect"), links: [{ label: "Johnson, Li and Rabinovic, Adjusting batch effects in microarray expression data using empirical Bayes methods (ComBat, Biostatistics 2007)", url: DOI("10.1093/biostatistics/kxj037") }, { label: "sva Bioconductor package (ComBat)", url: "https://bioconductor.org/packages/release/bioc/html/sva.html" }], cansim: "/terms/batch-effects",
-    tldr: "A batch effect is a difference in the data caused by when, where or how samples were processed rather than by biology; if it lines up with the outcome, a model learns the batch instead of the disease.",
-    summary: "In molecular biology a batch effect occurs when non-biological factors cause changes in the data, and it leads to wrong conclusions when its causes correlate with the outcome of interest (Wikipedia). Moving between RNA-seq and microarray, or between TCGA and a hospital cohort, is the extreme case. ComBat, from Johnson, Li and Rabinovic, is the standard empirical Bayes correction; per-gene z-scoring, quantile normalisation and rank transforms are the alternatives that need no batch labels. Any correction fitted on test data leaks.",
-    terms: ["quantile-normalisation", "tpm-fpkm-counts", "microarray-expression", "data-leakage"] }),
+    wikipedia: W("Batch_effect"), links: [
+  {
+    "label": "Johnson, Li and Rabinovic, Adjusting batch effects in microarray expression data using empirical Bayes methods (ComBat, Biostatistics 2007)",
+    "url": "https://doi.org/10.1093/biostatistics/kxj037"
+  },
+  {
+    "label": "sva Bioconductor package (ComBat)",
+    "url": "https://bioconductor.org/packages/release/bioc/html/sva.html"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batch_effect"
+  },
+  {
+    "label": "Normalization of RNA-seq data using factor analysis of control genes or samples.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25150836/"
+  },
+  {
+    "label": "Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24037425/"
+  }
+], cansim: "/terms/batch-effects",
+    tldr: "A batch effect is a systematic measurement difference associated with how samples were prepared, processed or analysed.",
+    summary: "Technical conditions can shift molecular measurements and become confused with biological groups. Normalization and batch modelling address specified effects under assumptions; they cannot manufacture contrasts absent from the design. Biological changes in tissue mixture should not automatically be removed as technical variation. Controls, recorded metadata, distributed preparation and independent replication help evaluate the comparison.",
+    terms: ["quantile-normalisation", "tpm-fpkm-counts", "microarray-expression", "data-leakage"] ,
+"notes": [
+  "Record preparation, laboratory, protocol and analysis conditions before comparing RNA profiles. The GEUVADIS study examined lymphoblastoid cell lines across laboratories; its reproducibility findings apply to that design and do not validate every tumour preparation. Source: https://doi.org/10.1038/nbt.2702.",
+  "Fictional design exercise: if all baseline specimens use laboratory A and all follow-up specimens use laboratory B, the observed difference cannot separate laboratory from time. Correction cannot supply the missing crossed comparison. A changed tissue mixture can be real biology; a tidy corrected plot alone does not establish a treatment effect.",
+  "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+  "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+  "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+  "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+  "Reprocessing one extract is a technical, not a biological, replicate.",
+  "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+  "Assess technical variation using preparation metadata, appropriate controls, diagnostic plots and a defined design/model. Reanalysis uses no new tissue; new preparations use extract and resequencing can use an existing library. Acceptance criteria depend on the comparison. Missing metadata, complete confounding and removal of genuine biology can invalidate correction; check assumptions and reproducibility rather than a universal batch-size cutoff.",
+  "Fictional design exercise: six baseline specimens in lab A and six follow-up specimens in lab B leave two group-laboratory cells unobserved. Allocating three to each of the four cells retains six per time point while adding the crossed contrasts. The design supports a stated model, with other biases and assumptions still requiring checks."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "gsea", name: "Gene set enrichment analysis (GSEA and ssGSEA)", category: GEN, aka: ["gene set enrichment analysis", "gene set enrichment", "GSEA", "ssGSEA", "single-sample GSEA", "pathway enrichment", "enrichment analysis", "enrichment score"],
     wikipedia: W("Gene_set_enrichment_analysis"), links: [{ label: "Subramanian et al., Gene set enrichment analysis (PNAS 2005)", url: DOI("10.1073/pnas.0506580102") }, { label: "Barbie et al., ssGSEA introduced in Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1 (Nature 2009)", url: DOI("10.1038/nature08460") }, { label: "MSigDB", url: "https://www.gsea-msigdb.org/gsea/msigdb/" }], cansim: "/terms/gsea-ssgsea",
     tldr: "Gene set enrichment analysis asks whether the genes that changed in an experiment cluster in a known pathway or signature, turning a list of genes into a biological story.",
@@ -285,9 +399,45 @@ export const cansimOncologyTerms: TermInput[] = [
     terms: ["pathway-activation-state", "gene-co-expression"] }),
   t({ id: "single-cell-rna-seq", name: "Single-cell RNA sequencing (scRNA-seq, 10x Chromium)", category: GEN, aka: ["single-cell RNA-seq", "scRNA-seq", "single-cell RNA sequencing", "single-cell transcriptomics", "single-cell expression", "10x Chromium", "Chromium single cell", "pseudobulk"],
     wikipedia: W("Single-cell_transcriptomics"), cansim: "/terms/single-cell-rna-seq",
-    tldr: "Single-cell RNA sequencing measures gene expression one cell at a time, revealing the cell types inside a tumour that bulk sequencing averages away.",
-    summary: "Single-cell transcriptomics is the quantification and analysis of the transcriptomes of individual cells, which makes it possible to unravel heterogeneous cell populations, reconstruct developmental pathways and model transcriptional dynamics (Wikipedia). Droplet platforms such as 10x Genomics Chromium capture thousands of cells per run; CELLxGENE and the Human Cell Atlas hold tens of millions of profiled cells and are the training data for single-cell foundation models. Pseudobulk, summing the cells of a sample, recovers a bulk-like profile for comparison. Single-cell data is sparse and normalised differently from bulk, so a model trained on one is out of distribution on the other.",
-    technologies: ["single-cell-spatial"], related: ["cellxgene-hca", "10x-genomics"], terms: ["bulk-rna-seq", "spatial-transcriptomics-platforms", "foundation-model"] }),
+    tldr: "Single-cell and single-nucleus RNA sequencing profile captured messages assigned to recovered cells or nuclei.",
+    summary: "RNA is distributed across cellular compartments. Whole-cell and nucleus preparations sample different material and can recover different populations. Barcodes label captured profiles rather than certifying one intact cell; quality, ambient RNA and doublet checks remain necessary. Sparse capture and selective recovery prevent a complete census, and many profiles from one biopsy do not create independent patient replicates.",
+    technologies: ["single-cell-spatial"], related: ["cellxgene-hca", "10x-genomics"], terms: ["bulk-rna-seq", "spatial-transcriptomics-platforms", "foundation-model"] ,
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Single-cell_transcriptomics"
+  },
+  {
+    "label": "Massively parallel digital transcriptional profiling of single cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28091601/"
+  },
+  {
+    "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33367645/"
+  },
+  {
+    "label": "Confronting false discoveries in single-cell differential expression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34584091/"
+  },
+  {
+    "label": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30586455/"
+  }
+],
+"notes": [
+  "A barcode identifies a captured reaction profile, requiring checks for ambient RNA and multiple contributing cells. Whole-cell and isolated-nucleus preparations sample different compartments; recovered profiles are not a complete tissue census. A zero count does not establish biological absence. Sources: https://pubmed.ncbi.nlm.nih.gov/28091601/ and https://pubmed.ncbi.nlm.nih.gov/33367645/.",
+  "Thousands of profiles from one biopsy remain nested within one biological specimen. Two technical libraries do not create two patients. Differential-expression comparisons must account for variation between biological replicates. Source: Squair et al., 2021, https://pubmed.ncbi.nlm.nih.gov/34584091/.",
+  "Check library chemistry before seeking sequence variants or splice junctions. In the documented fixed RNA profiling workflow, synthetic ligated probes are sequenced rather than captured-transcript complementary DNA. Gene counts from that workflow do not provide unrestricted original transcript sequence. Source: https://www.10xgenomics.com/support/software/cell-ranger/7.2/getting-started/cr-flex-what-is-frp.",
+  "A barcode labels a reaction compartment and a UMI separates captured molecules from amplified copies, giving a gene-by-barcode table; a barcode does not guarantee one intact cell.",
+  "Single-nucleus sequencing samples nuclear RNA including unfinished transcripts with introns, whole cells also capture cytoplasmic messages; a mouse cortex study showed different recovery; not proof nuclei are better for tumours.",
+  "Dissociation can lose fragile cells; nuclei can come from frozen tissue; fixed-material probe methods count ligated probes and cannot reveal every variant or splice product.",
+  "A zero can be a missed molecule (dropout) rather than absence; ambient RNA contaminates profiles; a doublet combines cells or nuclei; correction does not certify every barcode.",
+  "A cluster groups similar profiles and does not prove malignancy, lineage or a clone; cancer-cell identification needs supporting evidence.",
+  "Thousands of cells from one biopsy are nested in one biological sample; splitting into two libraries does not create two patients; replicate-level aggregation is one approach.",
+  "Record compatible viable/frozen/fixed preparation, material used, chemistry, cell/nucleus recovery and quality/identity checks. Report a gene-by-barcode table with its UMI/read/probe counting unit. Cell calling, low-quality and doublet criteria are chemistry/version-specific. Selective recovery, sparse capture, ambient RNA, degradation and batch require validation; a platform name provides neither a complete census nor clinical validity."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "spatial-transcriptomics-platforms", name: "Spatial transcriptomics platforms (Visium HD, Xenium, MERFISH, CosMx, CODEX)", category: PATH, aka: ["Visium", "Visium HD", "Xenium", "MERFISH", "CosMx", "CODEX", "PhenoCycler", "spatial molecular imaging", "in situ sequencing", "spatial omics platform"],
     wikipedia: W("Spatial_transcriptomics"), links: [{ label: "10x Genomics Visium HD", url: "https://www.10xgenomics.com/products/visium-hd-spatial-gene-expression" }, { label: "10x Genomics Xenium", url: "https://www.10xgenomics.com/platforms/xenium" }, { label: "Chen et al., MERFISH: spatially resolved, highly multiplexed RNA profiling in single cells (Science 2015)", url: DOI("10.1126/science.aaa6090") }, { label: "He et al., CosMx spatial molecular imager (Nature Biotechnology 2022)", url: DOI("10.1038/s41587-022-01483-z") }, { label: "Goltsev et al., CODEX multiplexed imaging (Cell 2018)", url: DOI("10.1016/j.cell.2018.07.010") }], cansim: "/terms/spatial-platforms",
     tldr: "Spatial platforms measure RNA or protein while keeping each measurement's position on the tissue slide, so cell types and gene programmes can be mapped onto the tumour's architecture.",

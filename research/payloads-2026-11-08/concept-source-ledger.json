@@ -18,6 +18,30 @@
         "doi": "10.1038/s41591-026-04518-z",
         "pmid": "42443515",
         "capture": "primary/gq11.json"
+      },
+      {
+        "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/",
+        "resolvedTitle": "Dolaflexin: A Novel Antibody-Drug Conjugate Platform Featuring High Drug Loading and a Controlled Bystander Effect.",
+        "doi": "10.1158/1535-7163.mct-20-0166",
+        "pmid": "33722857",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/",
+        "resolvedTitle": "The Dolaflexin-based Antibody-Drug Conjugate XMT-1536 Targets the Solid Tumor Lineage Antigen SLC34A2/NaPi2b.",
+        "doi": "10.1158/1535-7163.mct-20-0183",
+        "pmid": "33722858",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "IMGC936 with DM21-C: preclinical studies (2022)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35511740/",
+        "resolvedTitle": "Preclinical Evaluation of IMGC936, a Next-Generation Maytansinoid-based Antibody-drug Conjugate Targeting ADAM9-expressing Tumors.",
+        "doi": "10.1158/1535-7163.mct-21-0915",
+        "pmid": "35511740",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
       }
     ],
     "owner": "src/data/adc-payload-frontier.ts"
@@ -567,5 +591,71 @@
       }
     ],
     "owner": "src/data/adc-payload-frontier.ts"
+  },
+  {
+    "conceptId": "af-hpa",
+    "disposition": "new-concept",
+    "sources": [
+      {
+        "label": "Dolaflexin: AF-HPA and auristatin F in preclinical models (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33722857/",
+        "resolvedTitle": "Dolaflexin: A Novel Antibody-Drug Conjugate Platform Featuring High Drug Loading and a Controlled Bystander Effect.",
+        "doi": "10.1158/1535-7163.mct-20-0166",
+        "pmid": "33722857",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "XMT-1536 preclinical composition and NaPi2b-directed models (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33722858/",
+        "resolvedTitle": "The Dolaflexin-based Antibody-Drug Conjugate XMT-1536 Targets the Solid Tumor Lineage Antigen SLC34A2/NaPi2b.",
+        "doi": "10.1158/1535-7163.mct-20-0183",
+        "pmid": "33722858",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "Polyacetal Fleximer with a vinca derivative, a distinct platform (2015)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26113086/",
+        "resolvedTitle": "A Polymer-Based Antibody-Vinca Drug Conjugate Platform: Characterization and Preclinical Efficacy.",
+        "doi": "10.1158/0008-5472.can-15-0129",
+        "pmid": "26113086",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      }
+    ]
+  },
+  {
+    "conceptId": "dm21-c-maytansinoid-system",
+    "disposition": "new-concept",
+    "sources": [
+      {
+        "label": "IMGC936 with DM21-C: preclinical studies (2022)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35511740/",
+        "resolvedTitle": "Preclinical Evaluation of IMGC936, a Next-Generation Maytansinoid-based Antibody-drug Conjugate Targeting ADAM9-expressing Tumors.",
+        "doi": "10.1158/1535-7163.mct-21-0915",
+        "pmid": "35511740",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "Peptide-cleavable self-immolative maytansinoid conjugates (2019)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31620224/",
+        "resolvedTitle": "Peptide-Cleavable Self-immolative Maytansinoid Antibody-Drug Conjugates Designed To Provide Improved Bystander Killing.",
+        "doi": "10.1021/acsmedchemlett.9b00310",
+        "pmid": "31620224",
+        "capture": "chemical-species-2026-11-09/publication-identities.json"
+      },
+      {
+        "label": "AACR 2019 abstract 538: DM21-C and DM51, conference evidence",
+        "url": "https://doi.org/10.1158/1538-7445.AM2019-538",
+        "resolvedTitle": "Abstract 538: LC-MS based catabolite identification study of an ADC with DM21-C, a novel maytansinoid linker-payload",
+        "doi": "10.1158/1538-7445.am2019-538",
+        "capture": "chemical-species-2026-11-09/reading-scope.json",
+        "evidence": "conference abstract"
+      },
+      {
+        "label": "IMGC936 registry NCT04622774, last update 15 January 2025",
+        "url": "https://clinicaltrials.gov/study/NCT04622774",
+        "nct": "NCT04622774",
+        "capture": "chemical-species-2026-11-09/registry-observations.json"
+      }
+    ]
   }
 ]

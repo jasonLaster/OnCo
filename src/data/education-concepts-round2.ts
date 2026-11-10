@@ -677,168 +677,290 @@ export const educationRound2: TermInput[] = [
     name: "Messenger RNA construct anatomy",
     category: "Genomics & genetics",
     tldr: "An engineered messenger RNA includes a protein-coding message and surrounding features that affect how it is used. Those features are part of the construct being tested.",
-    summary: "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.",
+    summary: "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.\n\nStart-codon context was tested by single-base substitutions around the AUG initiator in a cloned preproinsulin gene, where the best sequence identified changed proinsulin yield over a 20-fold range (Kozak). The interaction of the cap and the poly(A) tail was tested with luciferase mRNAs delivered by electroporation into tobacco protoplasts, Chinese hamster ovary cells and yeast, where the tail's effect depended on the cap (Gallie). A textbook describes the 5' cap, 5' and 3' untranslated regions that regulate translation initiation and mRNA stability, a poly-A tail of about 200 A residues added by poly-A polymerase to cellular mRNA, and a ribosome that moves from the cap to the AUG, with Kozak's rules describing the sequence around it (OpenStax Biology 2e). The cellular tail length is not a rule for engineered constructs: one dendritic-cell study found that a 120-nucleotide tail, an unmasked tail end and two 3' untranslated regions each improved stability and translation, and it measured transcript amount by RT-PCR, protein by eGFP, peptide-MHC density and T-cell stimulation separately (Holtkamp and colleagues), so a doubled reporter signal after a 3' change is one measurement, not a different antigen or a clinical benefit. These are tested constructs and cell systems, not one best sequence for a clinical product.",
     links: [
-      {
-        label: "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
-        url: "https://doi.org/10.1182/blood-2006-04-015024"
-      },
-      {
-        label: "mRNA structure regulates protein expression through changes in functional half-life.",
-        url: "https://doi.org/10.1073/pnas.1908052116"
-      },
-      {
-        label: "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
-        url: "https://doi.org/10.1093/nar/gkr695"
-      }
-    ],
+  {
+    "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+    "url": "https://doi.org/10.1182/blood-2006-04-015024"
+  },
+  {
+    "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+    "url": "https://doi.org/10.1073/pnas.1908052116"
+  },
+  {
+    "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+    "url": "https://doi.org/10.1093/nar/gkr695"
+  },
+  {
+    "label": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+    "url": "https://doi.org/10.1016/0092-8674(86)90762-2"
+  },
+  {
+    "label": "The cap and poly(A) tail function synergistically to regulate mRNA translational efficiency.",
+    "url": "https://doi.org/10.1101/gad.5.11.2108"
+  },
+  {
+    "label": "Biology 2e, 15.4 RNA Processing in Eukaryotes (OpenStax)",
+    "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+  },
+  {
+    "label": "Biology 2e, 15.5 Ribosomes and Protein Synthesis (OpenStax)",
+    "url": "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"
+  }
+],
     related: [
-      "codon-optimization",
-      "modified-rna-nucleosides",
-      "in-vitro-transcription",
-      "mrna-lnp-manufacturing"
-    ],
+  "codon-optimization",
+  "modified-rna-nucleosides",
+  "in-vitro-transcription",
+  "mrna-lnp-manufacturing",
+  "multi-epitope-constructs"
+],
     aka: [
       "mRNA construct anatomy",
       "mRNA untranslated regions and poly(A) tail"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated."
+]
+}),
   t({
     id: "codon-optimization",
     name: "Codon optimization",
     category: "Genomics & genetics",
     tldr: "Synonymous codon changes can preserve the intended protein sequence while changing the RNA message. Their effects need to be measured in the intended expression system.",
-    summary: "Primary experiments showed that synonymous codon choices can affect RNA stability and translation. Work on engineered messenger RNAs also separated codon usage from RNA secondary structure, showing that expression depends on more than a simple codon preference. Optimization is a design objective with a particular assay and system, not a guarantee of improved therapy. Changing codons is distinct from choosing which antigen or epitope the construct encodes.",
+    summary: "Primary experiments showed that synonymous codon choices can affect RNA stability and translation. Work on engineered messenger RNAs also separated codon usage from RNA secondary structure, showing that expression depends on more than a simple codon preference. Optimization is a design objective with a particular assay and system, not a guarantee of improved therapy. Changing codons is distinct from choosing which antigen or epitope the construct encodes.\n\nIn four human cell lines, three independent methods showed that mRNA stability tracked codon identity rather than nucleotide content, stabilising codons tended to coincide with higher tRNA levels, and the effect depended on translation (Wu and colleagues, 2019). Another study separated codon usage from coding-region structure in eGFP constructs and defined functional half-life as the time an mRNA is actively translated, which differs from RNA that is merely present or protein that persists, so a doubled reporter signal at one time point does not show twice the RNA lifetime, a better neoantigen or any clinical effect (Mauger and colleagues).",
     links: [
-      {
-        label: "Codon optimality is a major determinant of mRNA stability.",
-        url: "https://doi.org/10.1016/j.cell.2015.02.029"
-      },
-      {
-        label: "mRNA structure regulates protein expression through changes in functional half-life.",
-        url: "https://doi.org/10.1073/pnas.1908052116"
-      }
-    ],
+  {
+    "label": "Codon optimality is a major determinant of mRNA stability.",
+    "url": "https://doi.org/10.1016/j.cell.2015.02.029"
+  },
+  {
+    "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+    "url": "https://doi.org/10.1073/pnas.1908052116"
+  },
+  {
+    "label": "Translation affects mRNA stability in a codon-dependent manner in human cells.",
+    "url": "https://doi.org/10.7554/elife.45396"
+  },
+  {
+    "label": "NCBI: standard genetic code, table 1; DNA alphabet uses T for U",
+    "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
+  }
+],
     related: [
-      "mrna-construct-anatomy",
-      "multi-epitope-constructs",
-      "in-vitro-transcription"
-    ]
-  }),
+  "mrna-construct-anatomy",
+  "multi-epitope-constructs",
+  "in-vitro-transcription"
+]
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "A codon is a three-base unit. In the standard genetic code, GCU and GCC both encode alanine; synonymous redesign can preserve the intended amino-acid sequence while altering the RNA. RNA structure, available decoding machinery and experimental conditions still matter. Compare matched RNA amount, chemistry, cap, UTRs, purity and delivery, using RNA and protein time courses and protein identity or activity. A codon score or single reporter measurement cannot establish translation fidelity, peptide display, recognition or benefit, and a changed amino-acid spacer is a different design change.",
+  "In Mauger's engineered eGFP constructs, highly expressed messages could have highly structured coding regions, and coding-region structure affected the duration of active translation. This concerns the tested coding regions and does not show that removing every fold or maximising one codon score improves every message."
+]
+}),
   t({
     id: "modified-rna-nucleosides",
     name: "Modified nucleosides in messenger RNA",
     category: "Genomics & genetics",
     tldr: "Chemical changes to RNA building blocks can alter how a message is sensed and translated. The effect depends on the RNA and the system in which it is tested.",
-    summary: "Primary experiments found that selected nucleoside modifications changed RNA-triggered innate immune activation. Later work showed that purification of modified transcripts also affected inflammatory responses and protein expression. Modification and removal of contaminants are therefore distinct design and manufacturing questions. Results from those experimental systems do not establish that one modification is best for every cancer vaccine, delivery platform or intended immune response.",
+    summary: "Primary experiments found that selected nucleoside modifications changed RNA-triggered innate immune activation. Later work showed that purification of modified transcripts also affected inflammatory responses and protein expression. Modification and removal of contaminants are therefore distinct design and manufacturing questions. Results from those experimental systems do not establish that one modification is best for every cancer vaccine, delivery platform or intended immune response.\n\nIn cell lines and mice, N1-methylpseudouridine, alone or with 5-methylcytidine, gave higher reporter expression than pseudouridine-based mRNA, up to about 44-fold for double-modified mRNA and about 13-fold for single-modified mRNA as the abstract reports (cell lines and mice respectively), with less innate immunogenicity and better cell viability in vitro (Andries and colleagues). Separately, N1-methylpseudouridine caused +1 ribosomal frameshifting in vitro at slippery sequences, cellular immunity to +1 products was found in mice and humans after vaccination with BNT162b2 vaccine mRNA, and synonymous changes at those sequences reduced frameshifted products; the authors note that no adverse outcomes from mistranslation of the SARS-CoV-2 vaccines have been reported (Mulroney and colleagues). More reporter signal with less cytokine in one matched comparison does not show a stronger antigen-specific T-cell response: unmodified mRNAs were translated better after purification yet still induced high cytokine secretion, and purified modified mRNA was translated 10 to 1000-fold more in primary cells (Karikó and colleagues, 2011), so sensing, expression and T-cell readouts each need their own evidence.",
     links: [
-      {
-        label: "Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA.",
-        url: "https://doi.org/10.1016/j.immuni.2005.06.008"
-      },
-      {
-        label: "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
-        url: "https://doi.org/10.1093/nar/gkr695"
-      }
-    ],
+  {
+    "label": "Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA.",
+    "url": "https://doi.org/10.1016/j.immuni.2005.06.008"
+  },
+  {
+    "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+    "url": "https://doi.org/10.1093/nar/gkr695"
+  },
+  {
+    "label": "N(1)-methylpseudouridine-incorporated mRNA outperforms pseudouridine-incorporated mRNA by providing enhanced protein expression and reduced immunogenicity in mammalian cell lines and mice.",
+    "url": "https://doi.org/10.1016/j.jconrel.2015.08.051"
+  },
+  {
+    "label": "N<sup>1</sup>-methylpseudouridylation of mRNA causes +1 ribosomal frameshifting.",
+    "url": "https://doi.org/10.1038/s41586-023-06800-3"
+  },
+  {
+    "label": "OpenStax Organic Chemistry 28.1: nucleosides and nucleotides",
+    "url": "https://openstax.org/books/organic-chemistry/pages/28-1-nucleotides-and-nucleic-acids"
+  }
+],
     related: [
-      "dsrna-impurities",
-      "mrna-construct-anatomy",
-      "mrna-lnp-manufacturing"
-    ],
+  "dsrna-impurities",
+  "mrna-construct-anatomy",
+  "mrna-lnp-manufacturing"
+],
     aka: [
       "modified mRNA nucleosides",
       "nucleoside-modified mRNA"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "A nucleoside combines a base with a sugar; a nucleotide also carries phosphate. Modified RNA building blocks change chemistry separately from the intended sequence and from contaminating byproducts. Characterise chemistry and identity, impurities, protein identity and quantity, and innate-sensing readouts under matched sequence, amount, cap, UTR, purity and formulation conditions. A translation or cytokine result cannot establish every later immune or clinical outcome.",
+  "Karikó's 2005 experiments compared human TLR systems and dendritic-cell readouts under selected nucleoside modifications. In the 2011 study, modified transcripts still contained activating contaminants including double-stranded RNA, and purification changed innate activation and translation. A change in building-block chemistry is therefore separate from removal of byproducts."
+]
+}),
   t({
     id: "in-vitro-transcription",
     name: "In vitro transcription for RNA products",
     category: "Methods and models",
     tldr: "Enzymes can copy a DNA template into RNA outside a living cell. Producing the transcript is followed by questions about its identity, composition and suitability for use.",
-    summary: "Experimental RNA-manufacturing studies distinguish the intended in vitro-transcribed RNA from contaminating products and test how purification affects its performance. A primary RNA-construct study then measured expression and immune stimulation after delivering transcripts to cells. RNA production, product quality and biological performance are separate observations. An RNA yield or a band of the expected size alone does not establish a released product or a clinical treatment effect.",
+    summary: "Experimental RNA-manufacturing studies distinguish the intended in vitro-transcribed RNA from contaminating products and test how purification affects its performance. A primary RNA-construct study then measured expression and immune stimulation after delivering transcripts to cells. RNA production, product quality and biological performance are separate observations. An RNA yield or a band of the expected size alone does not establish a released product or a clinical treatment effect.\n\nA protocol from authors affiliated with TriLink Biotechnologies describes co-transcriptional capping with the company's CleanCap AG reagent, reported to give 94 per cent cap 1 structure at 5 mg/ml of transcription, against cap 0 products at lower efficiency from first-generation cap analogues (Henderson and colleagues). It describes one reagent and is not a release specification. Separately, T7 polymerase initiated transcription from a promoter-less DNA end and made an antisense strand that paired with the intended RNA as long double-stranded RNA, which stimulated the innate sensor MDA5; the activity was suppressed by modified nucleotides or a lower magnesium concentration (Mu and colleagues). Release analytics are layered: reviews list sequence and modification identity, poly(A) tail, RNA content by UV spectrophotometry, integrity and transcript length by gel or capillary electrophoresis or chromatography, double-stranded RNA by immunoblot or ELISA, and residual DNA as separate attributes; purification has to remove template DNA, unincorporated nucleotides and enzymes; residual nucleotides are controlled below predefined thresholds that need much lower detection limits than the main product, with the intact mRNA itself complicating their detection (Losada and colleagues; Nowak and colleagues). Because RNA content and integrity are separate assays, total mass alone does not show full-length product.",
     links: [
-      {
-        label: "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
-        url: "https://doi.org/10.1093/nar/gkr695"
-      },
-      {
-        label: "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
-        url: "https://doi.org/10.1016/j.omtn.2019.02.018"
-      },
-      {
-        label: "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
-        url: "https://doi.org/10.1182/blood-2006-04-015024"
-      }
-    ],
+  {
+    "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+    "url": "https://doi.org/10.1093/nar/gkr695"
+  },
+  {
+    "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+    "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+  },
+  {
+    "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+    "url": "https://doi.org/10.1182/blood-2006-04-015024"
+  },
+  {
+    "label": "Cap 1 Messenger RNA Synthesis with Co-transcriptional CleanCap® Analog by In Vitro Transcription.",
+    "url": "https://doi.org/10.1002/cpz1.39"
+  },
+  {
+    "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+    "url": "https://doi.org/10.1093/nar/gky177"
+  },
+  {
+    "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+    "url": "https://doi.org/10.1007/s00216-026-06615-x"
+  },
+  {
+    "label": "Process and analytical strategies for the safe production of mRNA vaccines and therapeutics.",
+    "url": "https://doi.org/10.1007/s11033-026-11455-0"
+  },
+  {
+    "label": "NEB: Evaluation of IVT Reaction Products, analytical protocol",
+    "url": "https://www.neb.com/en-us/protocols/evaluation-of-ivt-reaction-products?pdf=true"
+  }
+],
     related: [
-      "mrna-construct-anatomy",
-      "dsrna-impurities",
-      "chemistry-manufacturing-controls",
-      "plasmid-dna-manufacturing"
-    ],
+  "mrna-construct-anatomy",
+  "dsrna-impurities",
+  "chemistry-manufacturing-controls",
+  "plasmid-dna-manufacturing"
+],
     aka: [
       "IVT RNA production",
       "in-vitro-transcribed RNA"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "In vitro transcription copies a DNA template into RNA outside living cells. A T7 promoter recruits the transcription machinery; a Kozak context acts at translation initiation. Cap addition during transcription or afterwards, and template-encoded or enzyme-added poly(A), are distinct process choices. The DNA is a manufacturing input; residual DNA in the product is a separate quality attribute. Preserve the connection from the intended antigen sequence through the finished construct and its expression and potency tests.",
+  "NEB's IVT evaluation protocol says unincorporated nucleotides and template DNA affect the 260-nanometre absorbance reading and calls for their removal before RNA quantification. This is vendor analytical guidance, not a clinical specification. Record purification and the quantification method separately from transcript length and integrity; total mass alone does not identify full-length RNA."
+]
+}),
   t({
     id: "dsrna-impurities",
     name: "Double-stranded RNA impurities",
     category: "Methods and models",
     tldr: "RNA manufacture can also produce unwanted paired RNA material. Measuring and removing it is a product-quality question separate from the intended message.",
-    summary: "Primary experiments identified double-stranded RNA among contaminants that affected innate immune activation and translation of in vitro-transcribed messenger RNA. Subsequent work developed and tested a cellulose-based removal method. Those studies support characterizing contaminants and their functional consequences in the tested workflows. They do not establish one universal acceptable impurity level or release method for all RNA products.",
+    summary: "Primary experiments identified double-stranded RNA among contaminants that affected innate immune activation and translation of in vitro-transcribed messenger RNA. Subsequent work developed and tested a cellulose-based removal method. Those studies support characterizing contaminants and their functional consequences in the tested workflows. They do not establish one universal acceptable impurity level or release method for all RNA products.\n\nOne documented origin is T7 polymerase initiating transcription from a promoter-less DNA end, producing an antisense strand and long double-stranded RNA that activated the sensor MDA5 (Mu and colleagues). In purification studies, unmodified mRNAs were translated better after HPLC purification but still induced high levels of cytokine secretion (Karikó and colleagues). A cellulose method removed at least 90 per cent of double-stranded RNA with over 65 per cent recovery regardless of mRNA length, coding sequence or nucleoside composition and increased translation in mice, and agarose gels showed that the purified mRNA stayed intact, but it removed duplexes of 30 base pairs or longer efficiently while most of a 21 base-pair duplex remained (Baiersdörfer and colleagues). Detection has its own scope: that paper notes an earlier report that about 40 base pairs of duplex are needed for detection by the J2 antibody, and a review of mRNA analytics lists immunoblot or ELISA for double-stranded RNA alongside separate integrity assays (Losada and colleagues). A lower dsRNA signal with worse fragmentation or recovery therefore does not show a better product. Method performance in those systems is not a clinical impurity limit.",
     links: [
-      {
-        label: "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
-        url: "https://doi.org/10.1093/nar/gkr695"
-      },
-      {
-        label: "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
-        url: "https://doi.org/10.1016/j.omtn.2019.02.018"
-      }
-    ],
+  {
+    "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+    "url": "https://doi.org/10.1093/nar/gkr695"
+  },
+  {
+    "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+    "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+  },
+  {
+    "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+    "url": "https://doi.org/10.1093/nar/gky177"
+  },
+  {
+    "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+    "url": "https://doi.org/10.1007/s00216-026-06615-x"
+  }
+],
     related: [
-      "in-vitro-transcription",
-      "modified-rna-nucleosides",
-      "chemistry-manufacturing-controls"
-    ],
+  "in-vitro-transcription",
+  "modified-rna-nucleosides",
+  "chemistry-manufacturing-controls"
+],
     aka: [
       "dsRNA impurities",
       "double-stranded RNA contaminants"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "Distinguish a shorter transcript, a fold within the intended message and an unwanted complementary RNA duplex; transcript length alone cannot identify these categories. State the antibody or other detection chemistry, calibrator, sample matrix, units, detection and quantitation limits, and recovery behind a dsRNA result. Test recognised structures and relevant RNA chemistries rather than assuming every duplex is equally visible. Assess RNA size, integrity and expression separately: lower antibody signal alone cannot establish a better product or antigen-specific immunity."
+]
+}),
   t({
     id: "multi-epitope-constructs",
     name: "Multi-epitope constructs and antigen processing",
     category: "Immunology",
     tldr: "A construct can encode several intended immune targets. Each target still needs to be processed, displayed and recognized in the tested biological setting.",
-    summary: "A primary multiepitope DNA-vaccine study found that flanking sequence changes altered processing efficiency and measured immunogenicity of encoded epitopes. That was evidence from the tested constructs, not a validated rule for every RNA cancer vaccine. The number of encoded epitopes is distinct from the number naturally displayed or recognized. Processing evidence, immune-response breadth and clinical outcome remain separate parts of a construct claim.",
+    summary: "A primary multiepitope DNA-vaccine study found that flanking sequence changes altered processing efficiency and measured immunogenicity of encoded epitopes. That was evidence from the tested constructs, not a validated rule for every RNA cancer vaccine. The number of encoded epitopes is distinct from the number naturally displayed or recognized. Processing evidence, immune-response breadth and clinical outcome remain separate parts of a construct claim.\n\nA computational study of spacer design for class-I-restricted string-of-beads polypeptides reported a fivefold increase in predicted epitope recovery and a 44 per cent reduction in predicted neo-epitope immunogenicity compared with designs without spacers (Schubert and Kohlbacher); these are predictions, not measured protection. Combining an N-terminal leader peptide with an MHC class I trafficking signal at the C terminus improved presentation of class I and class II epitopes in human and mouse dendritic cells and expanded antigen-specific CD8 and CD4 T cells in vitro and in mice (Kreiter and colleagues). In a first-in-human RNA poly-neo-epitope melanoma study all patients developed T-cell responses against multiple vaccine neo-epitopes (Sahin and colleagues; abstract only), and each patient's vaccine in the Rojas pancreatic cancer trial used two uridine mRNA strands, each encoding up to 10 neoepitopes. Mass spectrometry can identify recovered HLA-bound peptides. Caron and colleagues' 2015 review describes class I peptides predominantly 9 to 12 amino acids long and reports that about 10 per cent of acquired spectra could be confidently assigned at a 1 per cent false discovery rate in the workflows discussed. It also describes evidence that mass spectrometry underestimates the self-HLA peptide repertoire, so non-detection does not prove absence. Prediction is not presentation: of more than 1,300 amino acid changes in two mouse tumour models about 13 per cent were predicted to bind MHC class I and a small fraction of those were confirmed by mass spectrometry (Yadav and colleagues). Because a single amino acid after an epitope changed its immunogenicity in a multiepitope DNA vaccine (Livingston and colleagues, already linked), a changed spacer is a changed construct that needs renewed processing and display evidence, while earlier evidence is retained for the parts that did not change.",
     links: [
-      {
-        label: "Optimization of epitope processing enhances immunogenicity of multiepitope DNA vaccines.",
-        url: "https://doi.org/10.1016/s0264-410x(01)00233-x"
-      },
-      {
-        label: "T cells compete for access to antigen-bearing antigen-presenting cells.",
-        url: "https://doi.org/10.1084/jem.192.8.1105"
-      },
-      {
-        label: "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
-        url: "https://doi.org/10.1182/blood-2006-04-015024"
-      }
-    ],
+  {
+    "label": "Optimization of epitope processing enhances immunogenicity of multiepitope DNA vaccines.",
+    "url": "https://doi.org/10.1016/s0264-410x(01)00233-x"
+  },
+  {
+    "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+    "url": "https://doi.org/10.1084/jem.192.8.1105"
+  },
+  {
+    "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+    "url": "https://doi.org/10.1182/blood-2006-04-015024"
+  },
+  {
+    "label": "Designing string-of-beads vaccines with optimal spacers.",
+    "url": "https://doi.org/10.1186/s13073-016-0263-6"
+  },
+  {
+    "label": "Increased antigen presentation efficiency by coupling antigens to MHC class I trafficking signals.",
+    "url": "https://doi.org/10.4049/jimmunol.180.1.309"
+  },
+  {
+    "label": "Personalized RNA mutanome vaccines mobilize poly-specific therapeutic immunity against cancer.",
+    "url": "https://doi.org/10.1038/nature23003"
+  },
+  {
+    "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+    "url": "https://doi.org/10.1038/s41586-023-06063-y"
+  },
+  {
+    "label": "Analysis of Major Histocompatibility Complex (MHC) Immunopeptidomes Using Mass Spectrometry.",
+    "url": "https://doi.org/10.1074/mcp.o115.052431"
+  },
+  {
+    "label": "Predicting immunogenic tumour mutations by combining mass spectrometry and exome sequencing.",
+    "url": "https://doi.org/10.1038/nature14001"
+  }
+],
     related: [
-      "immunodominance",
-      "binding-presentation-recognition",
-      "codon-optimization",
-      "mrna-construct-anatomy"
-    ],
+  "immunodominance",
+  "binding-presentation-recognition",
+  "codon-optimization",
+  "mrna-construct-anatomy"
+],
     aka: [
       "polyepitope constructs",
       "multi-epitope vaccine design"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "An encoded antigen window is not necessarily the peptide eventually displayed. Joined windows and spacers can create new junction sequences. A protein-routing signal concerns the encoded protein rather than the particle delivery address. Identify any intended helper segment and test its HLA class II presentation and CD4 response in the relevant setting. Verify sequence and expression, recovered HLA-bound peptides and functional recognition separately; prediction scores do not supply a presentation threshold. Changing a spacer changes the construct even if two selected windows are unchanged. More encoded targets create opportunities only where relevant antigen expression, processing, compatible HLA presentation and functional recognition can occur. Target count alone is not measured response breadth."
+]
+}),
   t({
     id: "binder-targeting-module",
     name: "Binders as targeting modules",
@@ -953,23 +1075,40 @@ export const educationRound2: TermInput[] = [
     name: "Delivery targets and therapeutic targets",
     category: "Treatment jargon",
     tldr: "The molecule used to deliver an intervention to a cell can differ from the target of the treatment that cell produces. Both targeting steps need to be named.",
-    summary: "A primary mouse cardiac-fibrosis study used CD5-targeted lipid nanoparticles to deliver RNA encoding a receptor directed against fibroblast activation protein. CD5 specified a delivery interaction; the encoded receptor had a different recognition target. This is a non-oncology preclinical illustration of the distinction, not cancer-treatment evidence. Delivery, expression, effector recognition and clinical benefit should retain their separate experiments and biological settings.",
+    summary: "A primary mouse cardiac-fibrosis study used CD5-targeted lipid nanoparticles to deliver RNA encoding a receptor directed against fibroblast activation protein. CD5 specified a delivery interaction; the encoded receptor had a different recognition target. This is a non-oncology preclinical illustration of the distinction, not cancer-treatment evidence. Delivery, expression, effector recognition and clinical benefit should retain their separate experiments and biological settings.\n\nTargeted-LNP studies show three separate questions. Which cells receive usable cargo: in the CD5 study mRNA reached most cultured mouse T cells (83 per cent expressed the receptor, against 7 per cent with isotype-control particles) and receptor expression appeared across the main T-cell subsets in injured mice, while liver expression occurred with both CD5 and control particles; recombination in a Cre reporter reached 81.1 per cent of CD4-positive and 75.6 per cent of CD8-positive splenocytes but also 15.0 per cent of CD3-negative cells, and the statement that 87 per cent of receptor-positive cells were CD4-positive is a share of expressing cells, not the share of CD4 T cells that expressed the receptor, so each percentage needs its denominator. What the receptor recognises: FDA's January 2024 CAR T guidance says cytokine release and killing should be antigen-dependent, testable with cells that vary in target antigen expression, and asks sponsors to assess targeting of healthy tissue that expresses the intended antigen (on-target, off-tumour) and of other antigens (off-target); activity against antigen-positive healthy cells would therefore show target-dependent activity and a safety concern, not selective cancer killing. Where engineered cells act is a further question: a later study with targeted lipid nanoparticles reports reprogrammed CD8-positive T cells from healthy donors and autoimmune patients, tumour control in humanised mice and B-cell depletion in cynomolgus monkeys, each a different experiment and setting (Hunter and colleagues; abstract only). For a vaccine the address can instead be an antigen-presenting cell: intravenous RNA-lipoplexes were aimed at dendritic cells and macrophages in lymphoid compartments by adjusting net charge, without a molecular ligand (Kranz and colleagues).",
     links: [
-      {
-        label: "CAR T cells produced in vivo to treat cardiac injury.",
-        url: "https://doi.org/10.1126/science.abm0594"
-      }
-    ],
+  {
+    "label": "CAR T cells produced in vivo to treat cardiac injury.",
+    "url": "https://doi.org/10.1126/science.abm0594"
+  },
+  {
+    "label": "In vivo CAR T cell generation to treat cancer and autoimmune disease.",
+    "url": "https://doi.org/10.1126/science.ads8473"
+  },
+  {
+    "label": "Systemic RNA delivery to dendritic cells exploits antiviral defence for cancer immunotherapy.",
+    "url": "https://doi.org/10.1038/nature18300"
+  },
+  {
+    "label": "Considerations for the Development of Chimeric Antigen Receptor (CAR) T Cell Products: guidance for industry, January 2024",
+    "url": "https://www.fda.gov/media/156896/download"
+  }
+],
     related: [
-      "in-vivo-car-t",
-      "binder-targeting-module",
-      "mrna-construct-anatomy"
-    ],
+  "in-vivo-car-t",
+  "binder-targeting-module",
+  "mrna-construct-anatomy"
+],
     aka: [
       "delivery targeting versus cancer targeting",
       "delivery receptor versus effector target"
     ]
-  }),
+  ,
+"asOf": "2026-11-09",
+"notes": [
+  "Separate delivery-marker binding, uptake, expression, receptor engagement, signalling and target-cell effects. A comparison needs identified live-cell populations and matched antigen-positive and antigen-negative controls. A small amount of unintended-cell expression in a sample cannot establish absence across all cells or tissues, and selectively engineering one cell population does not remove risk to healthy antigen-positive targets."
+]
+}),
   t({
     id: "chemistry-manufacturing-controls",
     name: "Chemistry, manufacturing and controls",

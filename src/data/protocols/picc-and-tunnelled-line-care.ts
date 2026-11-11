@@ -288,7 +288,7 @@ export const piccAndTunnelledLineCare = protocol({
   ],
   technologies: ["picc-lines", "catheter-securement-devices", "needleless-connector-disinfecting-caps", "catheter-lock-solutions", "infusion-devices-vascular-access"],
   terms: ["central-venous-access"],
-  related: ["implanted-port-access-and-care", "suspected-central-line-infection", "catheter-related-thrombosis-in-cancer"],
+  related: ["implanted-port-access-and-care", "suspected-central-line-infection", "catheter-related-thrombosis-in-cancer", "central-line-maintenance-bundle", "community-care-of-vascular-access-devices"],
   upgrades: ["idea-upgrade-antiseptic-caps-for-long-term-lines-at-home"],
   gaps: [
     "Almost all the evidence comes from intensive care and acute hospital wards; trials of dressing type, interval and hub care in people with cancer living at home with a PICC or tunnelled line are few. SHEA's 7-day dressing interval is stated for non-tunnelled lines.",

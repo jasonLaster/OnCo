@@ -207,7 +207,7 @@ export const headAndNeckRadiotherapyOralMucositis = protocol({
   cancers: ["head-and-neck", "oral-cavity-cancer", "oropharyngeal-cancer"],
   technologies: ["photobiomodulation-mucositis", "honey-radiation-mucositis", "glutamine-mucositis-neuropathy"],
   terms: ["mucositis"],
-  related: ["idea-moon-mucositis-taste-programme", "head-and-neck-radiotherapy-dental-assessment-osteoradionecrosis"],
+  related: ["idea-moon-mucositis-taste-programme", "head-and-neck-radiotherapy-dental-assessment-osteoradionecrosis", "oral-mucositis-prevention-and-oral-care"],
   upgrades: ["idea-pu-photobiomodulation-every-head-neck-centre"],
   gaps: [
     "MASCC/ISOO 2020 remains the latest full edition; an erratum was published in 2021 (Cancer, doi 10.1002/cncr.33549) whose text could not be retrieved, so what it corrects was not checked.",

@@ -219,7 +219,7 @@ export const centralLineMaintenanceBundle = protocol({
   cancers: ["childhood-cancers"],
   technologies: ["implanted-ports", "picc-lines", "allogeneic-hsct"],
   terms: ["central-venous-access", "febrile-neutropenia"],
-  related: ["implanted-port-access-and-care", "central-line-insertion-bundle"],
+  related: ["implanted-port-access-and-care", "central-line-insertion-bundle", "picc-and-tunnelled-line-care", "community-care-of-vascular-access-devices"],
   sections: ["supportive-care"],
   tags: ["protocol", "clabsi", "vascular-access", "paediatric"],
 });

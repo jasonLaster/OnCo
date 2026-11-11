@@ -140,7 +140,7 @@ export const enhancedRecoveryAfterHeadAndNeckFreeFlapSurgery = protocol({
   ],
   cancers: ["head-and-neck", "oral-cavity-cancer"],
   technologies: ["eras-perioperative-nutrition", "enteral-parenteral-nutrition"],
-  related: ["surgical-site-infection-prevention", "vte-prophylaxis-after-cancer-surgery", "mouth-care-during-cancer-treatment", "routine-preoperative-tests"],
+  related: ["surgical-site-infection-prevention", "vte-prophylaxis-after-cancer-surgery", "oral-mucositis-prevention-and-oral-care", "routine-preoperative-tests"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance"],
   gaps: [
     "The ERAS head and neck review (2017) could be read only as an abstract; the grade of each element, the flap-monitoring schedule, tracheostomy and airway care, and the antibiotic duration it recommends are not on this page.",

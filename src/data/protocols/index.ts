@@ -120,7 +120,6 @@ import { iraeThyroid } from "./irae-thyroid";
 import { irinotecanEarlyCholinergicSyndromeAndLateDiarrhoea } from "./irinotecan-early-cholinergic-syndrome-and-late-diarrhoea";
 import { linearAcceleratorQualityAssurance } from "./linear-accelerator-quality-assurance";
 import { lutetium177TherapyHomeRadiationSafety } from "./lutetium-177-therapy-home-radiation-safety";
-import { lymphoedemaRiskReductionAfterNodeSurgery } from "./lymphoedema-risk-reduction-after-node-surgery";
 import { lymphoedemaRiskReductionSurveillanceAndTreatment } from "./lymphoedema-risk-reduction-surveillance-and-treatment";
 import { malignantAscitesDrainage } from "./malignant-ascites-drainage";
 import { malignantBowelObstruction } from "./malignant-bowel-obstruction";
@@ -128,7 +127,6 @@ import { malignantPericardialEffusion } from "./malignant-pericardial-effusion";
 import { medicinesReconciliationInCancerCare } from "./medicines-reconciliation-in-cancer-care";
 import { metastaticSpinalCordCompression } from "./metastatic-spinal-cord-compression";
 import { midlineCathetersForAnticancerTherapy } from "./midline-catheters-for-anticancer-therapy";
-import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { mriSafetyScreeningImplants } from "./mri-safety-screening-implants";
 import { nauseaAndVomitingInAdvancedCancer } from "./nausea-and-vomiting-in-advanced-cancer";
 import { neratinibDiarrhoeaProphylaxisAndDoseEscalation } from "./neratinib-diarrhoea-prophylaxis-and-dose-escalation";
@@ -318,7 +316,6 @@ export const protocols: ProtocolInput[] = [
   irinotecanEarlyCholinergicSyndromeAndLateDiarrhoea,
   linearAcceleratorQualityAssurance,
   lutetium177TherapyHomeRadiationSafety,
-  lymphoedemaRiskReductionAfterNodeSurgery,
   lymphoedemaRiskReductionSurveillanceAndTreatment,
   malignantAscitesDrainage,
   malignantBowelObstruction,
@@ -326,7 +323,6 @@ export const protocols: ProtocolInput[] = [
   medicinesReconciliationInCancerCare,
   metastaticSpinalCordCompression,
   midlineCathetersForAnticancerTherapy,
-  mouthCareDuringCancerTreatment,
   mriSafetyScreeningImplants,
   nauseaAndVomitingInAdvancedCancer,
   neratinibDiarrhoeaProphylaxisAndDoseEscalation,

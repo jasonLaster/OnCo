@@ -174,7 +174,7 @@ export const centralLineInsertionBundle = protocol({
   institutions: [],
   technologies: ["implanted-ports", "picc-lines"],
   terms: ["central-venous-access"],
-  related: ["central-line-maintenance-bundle", "implanted-port-access-and-care"],
+  related: ["central-line-maintenance-bundle", "implanted-port-access-and-care", "central-venous-catheter-insertion-for-anticancer-therapy"],
   sections: ["supportive-care"],
   tags: ["protocol", "clabsi", "vascular-access"],
 });

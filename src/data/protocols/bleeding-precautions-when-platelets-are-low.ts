@@ -179,7 +179,7 @@ export const bleedingPrecautionsWhenPlateletsAreLow = protocol({
     },
   ],
   terms: ["thrombocytopenia"],
-  related: ["mouth-care-during-cancer-treatment", "diet-alcohol-and-weight-during-cancer-treatment"],
+  related: ["oral-mucositis-prevention-and-oral-care", "diet-alcohol-and-weight-during-cancer-treatment"],
   gaps: [
     "No trial has tested whether home bleeding precautions prevent bleeding; every home step here is expert advice, and none is graded.",
     "The sources do not say at what platelet count the precautions should start or stop; that is left to the treating team.",

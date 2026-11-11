@@ -239,7 +239,7 @@ export const centralVenousCatheterInsertionForAnticancerTherapy = protocol({
   ],
   technologies: ["picc-lines", "implanted-ports", "infusion-devices-vascular-access"],
   terms: ["central-venous-access"],
-  related: ["venous-access-device-selection-for-anticancer-therapy", "picc-and-tunnelled-line-care", "implanted-port-access-and-care", "catheter-related-thrombosis-in-cancer"],
+  related: ["venous-access-device-selection-for-anticancer-therapy", "picc-and-tunnelled-line-care", "implanted-port-access-and-care", "catheter-related-thrombosis-in-cancer", "central-line-insertion-bundle"],
   upgrades: [],
   gaps: [
     "No guideline read is specific to inserting tunnelled cuffed (Hickman type) catheters; the steps here are the general central line bundle, and tunnelling technique and cuff position are not covered. OnCo has no technology record for tunnelled catheters.",

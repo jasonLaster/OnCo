@@ -198,7 +198,7 @@ export const dietAlcoholAndWeightDuringCancerTreatment = protocol({
     },
   ],
   sections: ["nutrition-lifestyle"],
-  related: ["bleeding-precautions-when-platelets-are-low"],
+  related: ["bleeding-precautions-when-platelets-are-low", "food-safety-and-neutropenic-diet"],
   gaps: [
     "The ASCO 2022 guideline and the ACS 2022 survivor guideline were read as abstracts; their recommendation strengths and the ACS recommendations themselves were not read.",
     "No graded recommendation on alcohol during active treatment was found; the advice read is tied to specific risks (low platelets, diarrhoea), and ESPEN's alcohol recommendation is for survivors.",

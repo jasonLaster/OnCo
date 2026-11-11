@@ -138,4 +138,5 @@ export const paediatricOralMucositisPrevention = protocol({
   terms: ["mucositis"],
   sections: ["supportive-care"],
   tags: ["protocol", "paediatric", "mucositis"],
+  related: ["oral-mucositis-prevention-and-oral-care"],
 });

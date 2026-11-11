@@ -131,7 +131,7 @@ export const communityCareOfVascularAccessDevices = protocol({
   ],
   technologies: ["picc-lines", "implanted-ports"],
   terms: ["central-venous-access"],
-  related: ["picc-and-tunnelled-line-care", "implanted-port-access-and-care", "blood-sampling-from-a-central-line", "central-line-occlusion-management"],
+  related: ["picc-and-tunnelled-line-care", "implanted-port-access-and-care", "blood-sampling-from-a-central-line", "central-line-occlusion-management", "central-line-maintenance-bundle"],
   upgrades: [],
   gaps: [
     "NICE CG139 was last updated in 2017 and several of its line-care recommendations date from 2003; no newer UK community guideline on central line care was found.",

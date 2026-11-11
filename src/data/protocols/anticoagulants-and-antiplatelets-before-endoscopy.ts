@@ -179,7 +179,7 @@ export const anticoagulantsAndAntiplateletsBeforeEndoscopy = protocol({
   drugs: ["aspirin"],
   technologies: ["cancer-associated-thrombosis", "endoscopic-resection"],
   terms: ["endoscopy", "colonoscopy", "vte"],
-  related: [],
+  related: ["antithrombotic-interruption-around-surgery"],
   upgrades: ["idea-pu-lmwh-plan-around-endoscopy"],
   gaps: [
     "Image-guided percutaneous biopsy and other interventional radiology procedures are not covered: the SIR 2019 consensus guidelines (no abstract in Europe PMC, paywalled) and the CIRSE 2021 Standards of Practice (paywalled; abstract states only the aim) could not be read.",

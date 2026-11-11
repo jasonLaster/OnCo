@@ -161,4 +161,5 @@ export const foodSafetyAndNeutropenicDiet = protocol({
   terms: ["neutropenia", "febrile-neutropenia"],
   sections: ["supportive-care", "nutrition-lifestyle"],
   tags: ["protocol", "neutropenic-diet", "food-safety", "paediatric"],
+  related: ["diet-alcohol-and-weight-during-cancer-treatment", "neutropenic-precautions-and-daily-life"],
 });

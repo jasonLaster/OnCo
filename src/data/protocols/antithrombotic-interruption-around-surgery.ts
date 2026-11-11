@@ -202,7 +202,7 @@ export const antithromboticInterruptionAroundSurgery = protocol({
   drugs: ["aspirin"],
   technologies: ["cancer-associated-thrombosis"],
   terms: ["biopsy", "core-needle-biopsy"],
-  related: ["vte-prophylaxis-after-cancer-surgery", "routine-preoperative-tests"],
+  related: ["vte-prophylaxis-after-cancer-surgery", "routine-preoperative-tests", "anticoagulants-and-antiplatelets-before-endoscopy"],
   upgrades: [],
   gaps: [
     "CHEST 2022 could be read only as its abstract: its DOAC intervals, its position on bridging for mechanical heart valves and VTE, and its minor-procedure recommendations are not reproduced here.",

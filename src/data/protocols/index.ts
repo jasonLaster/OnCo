@@ -1,4 +1,5 @@
 import type { ProtocolInput } from "@/lib/schema";
+import { bispecificStepUpDosing } from "./bispecific-step-up-dosing";
 import { checkpointInhibitorBaselineAndMonitoring } from "./checkpoint-inhibitor-baseline-and-monitoring";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { crsGradingAndManagement } from "./crs-grading-and-management";
@@ -11,12 +12,14 @@ import { iraeHepatitis } from "./irae-hepatitis";
 import { iraeHypophysitisAdrenal } from "./irae-hypophysitis-adrenal";
 import { iraePneumonitis } from "./irae-pneumonitis";
 import { metastaticSpinalCordCompression } from "./metastatic-spinal-cord-compression";
+import { tumourLysisSyndrome } from "./tumour-lysis-syndrome";
 
 /**
  * Every care protocol, one import per file. Fill agents add their file here; the list is a plain union, so a parallel
  * round resolves by keeping both sides. Rules in docs/PROTOCOLS.md.
  */
 export const protocols: ProtocolInput[] = [
+  bispecificStepUpDosing,
   checkpointInhibitorBaselineAndMonitoring,
   chemotherapyExtravasationManagement,
   crsGradingAndManagement,
@@ -29,4 +32,5 @@ export const protocols: ProtocolInput[] = [
   iraeHypophysitisAdrenal,
   iraePneumonitis,
   metastaticSpinalCordCompression,
+  tumourLysisSyndrome,
 ];

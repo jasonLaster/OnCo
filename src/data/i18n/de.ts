@@ -555,7 +555,7 @@ export const tldr_de: Record<string, string> = {
   "mr-linac": "Der MR-Linac ist ein Strahlengerät mit eingebautem MRT, sodass der Bestrahlungsplan an die Lage des Tumors am jeweiligen Tag angepasst wird.",
 
   "mrd-negative-cr": "MRD-negative komplette Remission bedeutet, dass nicht nur unter dem Mikroskop keine Leukämie mehr sichtbar ist, sondern auch mit tausendfach empfindlicheren Tests keine mehr nachweisbar ist. Sie ist das Ziel der modernen Leukämiebehandlung.",
-  "mrd-testing": "Ein hochempfindlicher Bluttest nach der Operation, der verbliebenen Krebs Monate früher nachweist, als es eine Bildgebung könnte.",
+
   mri: "Nutzt Magnete und Radiowellen, ohne Strahlung, um sehr detaillierte Bilder von Weichgewebe wie Gehirn, Brust, Leber und Prostata zu liefern.",
 
   mskcc: "Das weltweit bestplatzierte Krebskrankenhaus, Heimat der MSK-IMPACT-Sequenzierung, der Studie zu dostarlimab beim Rektumkarzinom und von CAR-T-Pionieren.",

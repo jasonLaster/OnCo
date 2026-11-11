@@ -546,4 +546,7 @@ export const simpleB: Record<string, string> = {
 "ctdna-units": "A tumour-DNA result needs its unit. A concentration, a share of all measured DNA and a yes-or-no call answer different questions.",
 "ctdna-imaging-discordance": "A blood test measures material in a blood sample, while a scan measures a region of the body. Different results need their timing and limits checked before deciding what they mean.",
 "ctdna-monitoring-lead-time": "The gap between a qualifying positive blood test and a later defined event. It depends on the study rules and sampling schedule and is not extra time added to life."
+,
+"ctdna-mrd-positive": "A positive residual-disease blood result meets that test's detection rules. Its source and clinical setting matter; it does not guarantee recurrence or show which treatment will help.",
+"tumour-informed-assay": "One method first selects features from a sampled tumour to track in blood. Another starts with predefined features. Their performance depends on the actual tests, samples and clinical question."
 };

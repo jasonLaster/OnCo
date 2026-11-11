@@ -134,7 +134,7 @@ export const tldr_es: Record<string, string> = {
 
 
   "liquid-biopsy": "Un análisis de sangre que lee fragmentos de ADN liberados por el tumor, para genotipar o vigilar el cáncer sin una aguja en el tumor.",
-  "mrd-testing": "Un análisis de sangre ultrasensible tras la cirugía que detecta cáncer residual meses antes que una exploración.",
+
   mced: "Un único análisis de sangre pensado para cribar docenas de cánceres a la vez, incluidos los que hoy no tienen cribado.",
   "digital-pathology-ai": "Escanear las láminas del microscopio y dejar que el software mida cosas que un patólogo no puede ver, incluidas predicciones de quién se beneficiará de un tratamiento.",
   "companion-diagnostic": "La prueba que decide si un fármaco concreto es adecuado para ti, aprobada junto con el fármaco.",

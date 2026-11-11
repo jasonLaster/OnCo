@@ -134,7 +134,7 @@ export const tldr_pt: Record<string, string> = {
 
 
   "liquid-biopsy": "Um exame de sangue que lê fragmentos de DNA liberados pelo tumor, para genotipar ou monitorar o câncer sem uma agulha no tumor.",
-  "mrd-testing": "Um exame de sangue ultrassensível após a cirurgia que detecta câncer residual meses antes de um exame de imagem.",
+
   mced: "Um único exame de sangue destinado a rastrear dezenas de cânceres de uma vez, incluindo os que hoje não têm rastreamento.",
   "digital-pathology-ai": "Escanear lâminas de microscópio e deixar o software medir coisas que um patologista não vê, incluindo previsões de quem se beneficiará de um tratamento.",
   "companion-diagnostic": "O teste que decide se uma droga específica é certa para você, aprovado junto com a droga.",

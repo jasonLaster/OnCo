@@ -1,6 +1,6 @@
 {
   "version": "proposal-blood-immune-summary-consumers",
-  "state": "Actual short-summary selectors; no new language or expert approval.",
+  "state": "Actual selected text or current English fallback; no new named language review.",
   "records": [
     {
       "id": "cfdna-ar",
@@ -116,8 +116,8 @@
       "name": "MRD / molecular residual disease testing (ar)",
       "canonicalRecordId": "mrd-testing",
       "language": "ar",
-      "available": true,
-      "text": "تحليل دم فائق الحساسية يُجرى بعد الجراحة ويكشف السرطان المتبقي قبل أشهر من أن يظهر في الفحص التصويري."
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-ar",
@@ -287,8 +287,8 @@
       "name": "MRD / molecular residual disease testing (de)",
       "canonicalRecordId": "mrd-testing",
       "language": "de",
-      "available": true,
-      "text": "Ein hochempfindlicher Bluttest nach der Operation, der verbliebenen Krebs Monate früher nachweist, als es eine Bildgebung könnte."
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-de",
@@ -458,8 +458,8 @@
       "name": "MRD / molecular residual disease testing (es)",
       "canonicalRecordId": "mrd-testing",
       "language": "es",
-      "available": true,
-      "text": "Un análisis de sangre ultrasensible tras la cirugía que detecta cáncer residual meses antes que una exploración."
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-es",
@@ -629,8 +629,8 @@
       "name": "MRD / molecular residual disease testing (fr)",
       "canonicalRecordId": "mrd-testing",
       "language": "fr",
-      "available": true,
-      "text": "Une analyse de sang ultrasensible réalisée après la chirurgie, qui détecte le cancer résiduel des mois avant qu'une imagerie ne le fasse."
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-fr",
@@ -800,8 +800,8 @@
       "name": "MRD / molecular residual disease testing (hi)",
       "canonicalRecordId": "mrd-testing",
       "language": "hi",
-      "available": true,
-      "text": "सर्जरी के बाद अति-संवेदी रक्त जाँच जो स्कैन से महीनों पहले बचा कैंसर पकड़ती है।"
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-hi",
@@ -971,8 +971,8 @@
       "name": "MRD / molecular residual disease testing (ja)",
       "canonicalRecordId": "mrd-testing",
       "language": "ja",
-      "available": true,
-      "text": "手術後に行う超高感度の血液検査で、画像検査より何か月も早く残ったがんを見つけ出す。"
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-ja",
@@ -1142,8 +1142,8 @@
       "name": "MRD / molecular residual disease testing (pt)",
       "canonicalRecordId": "mrd-testing",
       "language": "pt",
-      "available": true,
-      "text": "Um exame de sangue ultrassensível após a cirurgia que detecta câncer residual meses antes de um exame de imagem."
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-pt",
@@ -1313,8 +1313,8 @@
       "name": "MRD / molecular residual disease testing (zh)",
       "canonicalRecordId": "mrd-testing",
       "language": "zh",
-      "available": true,
-      "text": "术后的超敏血液检测，比影像早数月发现残留癌症。"
+      "available": false,
+      "text": null
     },
     {
       "id": "tumour-informed-assay-zh",
@@ -1322,8 +1322,8 @@
       "name": "Tumour-informed versus tumour-naive ctDNA assays (zh)",
       "canonicalRecordId": "tumour-informed-assay",
       "language": "zh",
-      "available": true,
-      "text": "肿瘤知情型血液检测为一位患者专门定制：先测肿瘤序列，再在血液中寻找该患者自己的突变。肿瘤非知情型检测对所有人用同一套固定组合（常为甲基化标记），不需要肿瘤样本，出结果更快。"
+      "available": false,
+      "text": null
     },
     {
       "id": "flow-cytometry-zh",
@@ -1475,8 +1475,8 @@
       "name": "ctDNA MRD positivity (molecular residual disease after curative treatment) (simple)",
       "canonicalRecordId": "ctdna-mrd-positive",
       "language": "simple",
-      "available": false,
-      "text": null
+      "available": true,
+      "text": "A positive residual-disease blood result meets that test's detection rules. Its source and clinical setting matter; it does not guarantee recurrence or show which treatment will help."
     },
     {
       "id": "mrd-testing-simple",
@@ -1485,7 +1485,7 @@
       "canonicalRecordId": "mrd-testing",
       "language": "simple",
       "available": true,
-      "text": "A very sensitive blood test after surgery that finds leftover cancer months before a scan could."
+      "text": "A residual-disease test looks for a small disease signal after treatment; a negative result does not prove cure, and earlier detection alone does not show that changing treatment helps."
     },
     {
       "id": "tumour-informed-assay-simple",
@@ -1493,8 +1493,8 @@
       "name": "Tumour-informed versus tumour-naive ctDNA assays (simple)",
       "canonicalRecordId": "tumour-informed-assay",
       "language": "simple",
-      "available": false,
-      "text": null
+      "available": true,
+      "text": "One method first selects features from a sampled tumour to track in blood. Another starts with predefined features. Their performance depends on the actual tests, samples and clinical question."
     },
     {
       "id": "flow-cytometry-simple",

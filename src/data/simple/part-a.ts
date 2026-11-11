@@ -133,7 +133,7 @@ export const simpleA: Record<string, string> = {
 
 
   "liquid-biopsy": "A blood test that reads bits of DNA shed by the tumour, so doctors can learn about the cancer without a needle in it.",
-  "mrd-testing": "A very sensitive blood test after surgery that finds leftover cancer months before a scan could.",
+  "mrd-testing": "A residual-disease test looks for a small disease signal after treatment; a negative result does not prove cure, and earlier detection alone does not show that changing treatment helps.",
   mced: "One blood test meant to screen for dozens of cancers at once, including ones with no screening today.",
   "digital-pathology-ai": "Scanning microscope slides and letting software measure things a doctor cannot see, including who will benefit from a treatment.",
   "companion-diagnostic": "The test that decides whether a particular drug is right for you, approved together with the drug.",

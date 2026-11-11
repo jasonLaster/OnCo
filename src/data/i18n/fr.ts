@@ -555,7 +555,7 @@ export const tldr_fr: Record<string, string> = {
   "mr-linac": "Le MR-linac est un appareil de radiothérapie qui intègre une IRM, de sorte que le plan de traitement est ajusté à l'emplacement exact de la tumeur ce jour-là.",
 
   "mrd-negative-cr": "Une rémission complète MRD négative signifie non seulement qu'aucune leucémie n'est visible au microscope, mais qu'aucune n'est détectable avec des tests mille fois plus sensibles. C'est l'objectif du traitement moderne de la leucémie.",
-  "mrd-testing": "Une analyse de sang ultrasensible réalisée après la chirurgie, qui détecte le cancer résiduel des mois avant qu'une imagerie ne le fasse.",
+
   mri: "Utilise des aimants et des ondes radio, sans rayonnement, pour fournir des images très détaillées des tissus mous tels que le cerveau, le sein, le foie et la prostate.",
 
   mskcc: "L'hôpital de cancérologie le mieux classé au monde, berceau du séquençage MSK-IMPACT, de l'étude du dostarlimab dans le cancer du rectum et de pionniers des CAR-T.",

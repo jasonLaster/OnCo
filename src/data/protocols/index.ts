@@ -6,6 +6,7 @@ import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
 import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-venous-catheter-insertion-for-anticancer-therapy";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
+import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-education-before-anticancer-treatment";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
@@ -35,6 +36,7 @@ export const protocols: ProtocolInput[] = [
   catheterRelatedThrombosisInCancer,
   centralVenousCatheterInsertionForAnticancerTherapy,
   chemotherapyExtravasationManagement,
+  consentAndEducationBeforeAnticancerTreatment,
   dpydTestingBeforeFluoropyrimidines,
   febrileNeutropeniaFirstHour,
   hazardousDrugHandlingInClinicalAreas,

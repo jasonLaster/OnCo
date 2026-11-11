@@ -239,7 +239,7 @@ export const hazardousDrugHandlingInClinicalAreas = protocol({
   technologies: ["closed-system-transfer-devices", "pharmacy-automation", "cytotoxic-chemotherapy"],
   drugs: ["cyclophosphamide", "ifosfamide"],
   related: ["sact-administration-checks-at-the-chair"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-closed-system-transfer-device-outcome-trial"],
   gaps: [
     "USP chapter 800 (usp.org refused a script) and the ISOPP Standards for the Safe Handling of Cytotoxics (2022, paywalled) could not be read; what USP chapter 800 requires is stated here only as ASCO (2019) reports it.",
     "NIOSH moved its PPE-by-activity guidance from the hazardous drug list into 'Managing Hazardous Drug Exposures: Information for Healthcare Settings' (2023), which could not be retrieved; the PPE steps here come from the 2004 NIOSH Alert, which is older.",

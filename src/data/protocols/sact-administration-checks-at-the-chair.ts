@@ -143,7 +143,7 @@ export const sactAdministrationChecksAtTheChair = protocol({
   technologies: ["smart-infusion-pumps", "infusion-devices-vascular-access", "cytotoxic-chemotherapy"],
   terms: ["extravasation-infusion-reaction", "crs"],
   related: ["sact-prescribing-and-pharmacy-verification", "chemotherapy-extravasation-management"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-video-second-check-safety-study"],
   gaps: [
     "The standards are not graded and no trial compares two-person checks with one-person checks, barcode scanning or smart-pump drug libraries for anticancer drugs; none of those technologies is required by the standards read.",
     "No UK or European standard for the chair-side check could be read: the ONS Chemotherapy and Immunotherapy Guidelines are a priced book and no current UKONS or RCN document was found.",

@@ -47,7 +47,10 @@ from a typed list:
 - any record a protocol names in its relation arrays: a drug lists its administration protocols, a device such as
   `implanted-ports` its care protocols, a glossary term the protocols filed under it;
 - a cancer, as well, lists the protocols naming a cancer above it in the family, and those naming a medicine or
-  technology the cancer's own record lists, with that treatment named as the reason;
+  technology the cancer's own record lists, with that treatment named as the reason, unless the protocol names
+  other cancers only (breast radiotherapy positioning shares IMRT with prostate cancer and is not a prostate
+  protocol). On the cancer page those reached through a treatment are one line per treatment, and only the ones
+  naming the cancer keep a card;
 - a protocol that names no cancer and none of a cancer's treatments is general: it is on `/protocols/` and on the
   pages of what it does name, and is not repeated on every cancer page.
 
@@ -106,9 +109,9 @@ protocol comes first; the page is for understanding care, not for doing it at ho
 
 ## When the kind grows
 
-`/protocols/` ships every row while there are few. Once there are more than sixty (`KIND_PAGE`), add `protocol` to
-`PAGED_KINDS` in `src/lib/tables/kinds.ts` so the page carries one page of rows and fetches the rest; its weight
-ceiling in `src/data/page-weight.json` is pinned on that assumption (docs/MOBILE.md).
+`/protocols/` is a paged table: since 11 November 2026, when the fill rounds passed sixty protocols (`KIND_PAGE`),
+`protocol` is in `PAGED_KINDS` in `src/lib/tables/kinds.ts`, so the page carries one page of rows and fetches the
+rest; its weight ceiling in `src/data/page-weight.json` is pinned on that assumption (docs/MOBILE.md).
 
 ## One protocol, one record
 

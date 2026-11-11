@@ -37,7 +37,7 @@ const RULES: Array<[RegExp, string]> = [
   [/hypogammaglobulin|b-cell aplasia/i, "Low antibody levels (hypogammaglobulinaemia)"],
   [/hepatitis b reactivation/i, "Infections"],
   [/infection|pneumonia\b|covid|otitis|urinary tract|upper respiratory/i, "Infections"],
-  [/leukocytosis/i, "Blood chemistry or blood count changes (other)"],
+  [/\bleukocytosis/i, "Blood chemistry or blood count changes (other)"],
 
   // Second cancers.
   [/\bmds\b|myelodysplastic|acute leukaemia|malignan|second primary|squamous cell carcinoma|keratoacanthoma|endometrial cancer/i, "Second cancers"],
@@ -57,7 +57,7 @@ const RULES: Array<[RegExp, string]> = [
   [/weight gain/i, "Weight gain"],
 
   // Lungs and airways.
-  [/\bild\b|interstitial|pneumonitis|pulmonary toxicity/i, "Lung inflammation (pneumonitis, ILD)"],
+  [/\bild\b|\binterstitial|pneumonitis|pulmonary toxicity/i, "Lung inflammation (pneumonitis, ILD)"],
   [/dyspn|cough|hypoxia|pneumothorax|pulmonary arterial hypertension/i, "Breathlessness or cough"],
   [/dysphonia|voice/i, "Voice changes"],
 
@@ -85,7 +85,7 @@ const RULES: Array<[RegExp, string]> = [
   // Nerves, muscles, joints, pain.
   [/neuropath|paraesth|paresth|dysaesth|dysesth/i, "Nerve damage (peripheral neuropathy)"],
   [/rhabdomyolysis/i, "Muscle breakdown (rhabdomyolysis)"],
-  [/arthralgia|myalgia|musculoskeletal|muscle|cramp|cpk|creatine kinase/i, "Muscle or joint pain"],
+  [/arthralgia|\bmyalgia|musculoskeletal|muscle|cramp|cpk|creatine kinase/i, "Muscle or joint pain"],
   [/headache/i, "Headache"],
   [/^pain$/i, "Pain"],
   [/fatigue|asthenia|malaise/i, "Tiredness (fatigue)"],

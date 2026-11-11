@@ -19,7 +19,7 @@ import { protocol } from "./helpers";
  * - Janowitz et al., J Clin Oncol 2017 (DOI 10.1200/JCO.2017.72.7578): abstract only, Europe PMC.
  * - Samani et al., ESMO Open 2022 (DOI 10.1016/j.esmoop.2022.100401, PMC9058909): full text, Europe PMC XML.
  * - BOPA Standards for the Pharmacy Verification of Prescriptions for Cancer Medicines, version 5.0 (June 2025): full
- *   text, PDF from bopa.org.uk (copy read by the first protocol agent, /tmp/pf-chemo).
+ *   text, PDF from bopa.org.uk (copy read by the first protocol agent, in a scratch directory).
  * - The NCI CTEP information letter on capping the GFR used in the Calvert formula could not be read: the CTEP
  *   address now redirects to a general NCI page and the Internet Archive refused repeated requests (HTTP 429). No cap is
  *   stated here.

@@ -94,12 +94,19 @@ describe("care protocols", () => {
       }
       return out;
     };
-    const pair = list
-      .filter((p) => p.drugs.length)
-      .flatMap((p) => g.kind("cancer").filter((c) => c.drugs.some((d) => p.drugs.includes(d)) && ![c.id, ...above(c.id)].some((id) => (g.incoming(id).get("protocol") ?? []).some((x) => x.id === p.id))).map((c) => ({ p, c })))[0];
+    const names = (p: (typeof list)[number], id: string) => (g.incoming(id).get("protocol") ?? []).some((x) => x.id === p.id);
+    const pairs = (keep: (p: (typeof list)[number]) => boolean) => list
+      .filter((p) => p.drugs.length && keep(p))
+      .flatMap((p) => g.kind("cancer").filter((c) => c.drugs.some((d) => p.drugs.includes(d)) && ![c.id, ...above(c.id)].some((id) => names(p, id))).map((c) => ({ p, c })));
+    // A protocol naming no cancer reaches every cancer whose record lists one of its medicines.
+    const pair = pairs((p) => !p.cancers.length)[0];
     expect(pair, "a protocol naming a drug that some cancer it does not name lists").toBeDefined();
     const via = protocolsFor(pair!.c).find((m) => m.protocol.id === pair!.p.id)?.via;
     expect(via, `${pair!.c.id} should reach ${pair!.p.id} through a treatment`).toBeDefined();
     expect([...pair!.p.drugs, ...pair!.p.technologies]).toContain(via!.id);
+    // A protocol scoped to other cancers does not: breast radiotherapy positioning is not a prostate protocol because both use IMRT.
+    const elsewhere = pairs((p) => p.cancers.length > 0).find(({ p, c }) => !p.cancers.some((id) => id === c.id || above(c.id).includes(id) || above(id).includes(c.id)));
+    expect(elsewhere, "a protocol scoped to other cancers that shares a medicine with this one").toBeDefined();
+    expect(protocolsFor(elsewhere!.c).some((m) => m.protocol.id === elsewhere!.p.id), `${elsewhere!.c.id} should not list ${elsewhere!.p.id}`).toBe(false);
   });
 });

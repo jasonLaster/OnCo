@@ -6,7 +6,7 @@ import { protocol } from "./helpers";
  * What was read, and how (all on 11 November 2026, fetched raw into a scratch directory and read as text):
  * - JSCN/JSMO/JASPO multidisciplinary guideline on extravasation (ESMO Open 2024;9:103932, DOI
  *   10.1016/j.esmoop.2024.103932, PMC11490930): full text, Europe PMC XML (copy fetched by the extravasation exemplar
- *   agent, /tmp/protocol-src-extrav), including Table 1 with each recommendation's strength and certainty.
+ *   agent, in a scratch directory), including Table 1 with each recommendation's strength and certainty.
  * - CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October
  *   2017): full text, PDF from the Internet Archive's capture of cdc.gov (copy fetched by the port exemplar agent).
  * - epic3 (Loveday et al., J Hosp Infect 2014, PMC7114876): full text, Europe PMC XML (port exemplar agent's copy).

@@ -205,7 +205,8 @@ export type ProtocolMember = { protocol: Protocol; via?: Entity };
  *   protocols, a device such as `implanted-ports` its care protocols, a glossary term the protocols filed under it.
  * - **A cancer**, as well: protocols naming a cancer above it in the family (a breast cancer protocol is on the
  *   triple-negative page), and protocols naming a medicine or technology the cancer's own record lists (in its
- *   relation arrays or its standard-of-care rows), each with that record as `via` so the page can say why. A protocol
+ *   relation arrays or its standard-of-care rows), each with that record as `via` so the page can say why, unless
+ *   the protocol is scoped to other cancers only (it names cancers, none of them in this cancer's family). A protocol
  *   naming no cancer and none of the cancer's treatments is general and is not repeated on every cancer page; it is
  *   on /protocols/.
  *
@@ -222,11 +223,23 @@ export function protocolsFor(e: Entity, g: Graph = graph()): ProtocolMember[] {
       const up = g.get(parent);
       parent = up?.kind === "cancer" ? up.parent : undefined;
     }
+    // A protocol scoped to other cancers is not this cancer's, even when it shares a treatment: breast radiotherapy
+    // positioning names breast cancer and imrt-igrt, and reached the prostate page through imrt-igrt, as colorectal
+    // follow-up did through the survivorship care plan (11 November 2026, when the fill rounds took the corpus to 190
+    // protocols). It still counts when it names this cancer's family above or below it.
+    const ancestors = (id: string): string[] => {
+      const out: string[] = [];
+      let up = g.get(id);
+      for (let hops = 0; up?.kind === "cancer" && up.parent && hops < 8; hops++) { out.push(up.parent); up = g.get(up.parent); }
+      return out;
+    };
+    const family = new Set([e.id, ...ancestors(e.id)]);
+    const scopedElsewhere = (p: Protocol) => p.cancers.length > 0 && !p.cancers.some((id) => family.has(id) || ancestors(id).includes(e.id));
     const treatments = [...new Set([...e.drugs, ...e.technologies, ...e.standardOfCare.flatMap((s) => s.refs)])];
     for (const id of treatments) {
       const via = g.get(id);
       if (!via || (via.kind !== "drug" && via.kind !== "technology")) continue;
-      for (const p of direct(id)) if (!out.has(p.id)) out.set(p.id, { protocol: p, via });
+      for (const p of direct(id)) if (!out.has(p.id) && !scopedElsewhere(p)) out.set(p.id, { protocol: p, via });
     }
   }
   const order = (m: ProtocolMember) => PROTOCOL_DOMAINS.indexOf(m.protocol.domain);

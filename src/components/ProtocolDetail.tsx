@@ -153,29 +153,48 @@ export function ProtocolEvidence({ p }: { p: Protocol }) {
 
 /**
  * The protocols another record page lists (src/lib/members.ts `protocolsFor`): grouped by domain, each a link with
- * its TL;DR, and, on a cancer page, the treatment that brought it there.
+ * its TL;DR. On a cancer page the protocols reached through a treatment the record lists follow, one line per
+ * treatment with its protocols as plain links: once the fill rounds took the corpus to 190 protocols the prostate
+ * page reached 58, and a card with a TL;DR for each put its treatment section at 140 KB of markup against a 120 KB
+ * line (src/lib/record-sections.test.ts). The ones naming the cancer keep their cards.
  */
 export function ProtocolList({ members }: { members: ProtocolMember[] }) {
   if (!members.length) return null;
-  const domains = [...new Set(members.map((m) => m.protocol.domain))];
+  const named = members.filter((m) => !m.via);
+  const domains = [...new Set(named.map((m) => m.protocol.domain))];
+  const byVia = new Map<string, { via: NonNullable<ProtocolMember["via"]>; list: Protocol[] }>();
+  for (const { protocol: p, via } of members) if (via) {
+    const row = byVia.get(via.id) ?? { via, list: [] };
+    row.list.push(p);
+    byVia.set(via.id, row);
+  }
   return (
     <div className="space-y-5" data-protocol-list>
       {domains.map((d) => (
         <div key={d}>
           <div className="kicker mb-2"><Link className="hover:underline" href={protocolDomainHref(d)}>{PROTOCOL_DOMAIN_LABEL[d]}</Link></div>
           <ul className="grid gap-3 sm:grid-cols-2">
-            {members.filter((m) => m.protocol.domain === d).map(({ protocol: p, via }) => (
+            {named.filter((m) => m.protocol.domain === d).map(({ protocol: p }) => (
               <li key={p.id} className="min-w-0">
                 <Link href={routeFor(p)} className="card block h-full p-3 hover:shadow-md transition">
                   <span className="flex items-start gap-2"><KindIcon kind="protocol" className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span className="font-medium leading-snug">{p.name}</span></span>
                   <span className="block text-sm text-muted mt-1 line-clamp-2">{p.tldr}</span>
-                  {via && <span className="block text-xs text-muted mt-1">Because this cancer&apos;s record lists {via.name}</span>}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       ))}
+      {byVia.size > 0 && (
+        <div data-protocol-via>
+          <div className="kicker mb-2">Through the treatments this cancer&apos;s record lists</div>
+          <ul className="space-y-1.5 text-sm">
+            {[...byVia.values()].map(({ via, list }) => (
+              <li key={via.id} className="min-w-0"><Link className="font-medium hover:underline" href={routeFor(via)}>{via.name}</Link>: {list.map((p, i) => <span key={p.id}>{i > 0 && ", "}<Link className="underline decoration-foreground/20 hover:decoration-foreground" href={routeFor(p)}>{p.name}</Link></span>)}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

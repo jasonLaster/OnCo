@@ -1,5 +1,6 @@
 import type { ProtocolInput } from "@/lib/schema";
 import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
+import { asepticCompoundingOfHazardousAnticancerDrugs } from "./aseptic-compounding-of-hazardous-anticancer-drugs";
 import { bloodSamplingFromACentralLine } from "./blood-sampling-from-a-central-line";
 import { bodySizeBasedDoseCalculation } from "./body-size-based-dose-calculation";
 import { cancerAssociatedVteTreatment } from "./cancer-associated-vte-treatment";
@@ -34,6 +35,7 @@ import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access
  */
 export const protocols: ProtocolInput[] = [
   anticancerDrugInteractionReview,
+  asepticCompoundingOfHazardousAnticancerDrugs,
   bloodSamplingFromACentralLine,
   bodySizeBasedDoseCalculation,
   cancerAssociatedVteTreatment,

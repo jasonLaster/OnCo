@@ -1104,7 +1104,77 @@ const terms: TermInput[] = [
   "Lactate release, oxygen consumption and labelled glucose reaching mitochondrial metabolites can coexist. High pathway activity, a transcript signature or glucose uptake does not prove survival dependence. A culture nutrient-removal experiment does not establish that changing a person's diet selectively starves a tumour or identifies a medicine. Functional rate or tracer studies use viable cells, slices or a defined in-vivo experiment and consume or perturb material. No universal Warburg-positive threshold predicts treatment benefit; a functional perturbation and survival outcome are separate from the metabolic pattern."
 ]
 }),
-  t({ id: "immune-exclusion", wikipedia: W("Tumor_microenvironment"), name: "Immune exclusion", tldr: "A tumour where the immune cells arrive but are stopped at the edge, held back by scar tissue and signals such as TGF-β.", summary: "Immune exclusion describes a tumour where immune cells arrive but are stopped at the edge, held back by scar tissue and signals such as TGF-β. It is one of three immune phenotypes (inflamed, excluded and desert) and is associated with TGF-β-activated fibroblasts, dense extracellular matrix and abnormal vessels, as described in the TGF-β signalling and Tumour microenvironment (TME) pathways and the Hot vs cold tumours entry. It predicts poor response to checkpoint inhibitors in bladder, colorectal and pancreatic cancer, and the candidate targets are TGF-β, FAP, CXCL12/CXCR4 and VEGF / VEGFR. Readers meet the term in the hallmark Avoiding immune destruction, in the cold tumours pathway, and in the idea What actually holds T cells at the tumour border?", pathways: ["tgf-beta", "tumor-microenvironment", "pd1-checkpoint"], terms: ["cold-vs-hot", "tils"], targets: ["fap", "vegf", "cxcr3"], drugs: ["retlirafusp-alfa", "ficerafusp-alfa"], trials: ["fortifi-hn01", "nct04950322", "nct05300269", "nct05503888", "nct05671822", "nct06679673", "nct07102901", "nct07175220", "nct07478731", "nct07503639", "nct07728019", "nct07752550", "nct07773363", "nct07797244", "nct07802184", "nct07807163", "nct07814859", "nct07815288"], links: [{ label: "Mariathasan et al., TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells (Nature 2018)", url: "https://doi.org/10.1038/nature25501" }] }),
+  t({ id: "immune-exclusion", wikipedia: W("Tumor_microenvironment"), name: "Immune exclusion", tldr: "Immune exclusion describes immune cells concentrated outside cancer-cell regions. Their distribution raises questions about access; it does not identify the barrier or a treatment that will overcome it.", summary: "After priming, a T cell must be recruited, adhere to and leave a vessel, traverse stroma and reach relevant cancer cells. An excluded distribution records where cells were found. It does not establish why they stopped. A cell that has reached a target but is inhibited has a different measured problem, although access and functional failures can coexist.\n\nCandidate mechanisms include recruitment signals, vascular interactions, matrix architecture, fibroblast signalling and myeloid-cell contacts. Their evidence comes from different cancers, human tissue studies and experimental models. A location measurement, causal perturbation and successful clinical intervention are different claims. Dense stroma alone does not diagnose exclusion or identify a safe way to reverse it.", pathways: ["tgf-beta", "tumor-microenvironment", "pd1-checkpoint"], terms: ["cold-vs-hot", "tils"], targets: ["fap", "vegf", "cxcr3"], drugs: ["retlirafusp-alfa", "ficerafusp-alfa"], trials: ["fortifi-hn01", "nct04950322", "nct05300269", "nct05503888", "nct05671822", "nct06679673", "nct07102901", "nct07175220", "nct07478731", "nct07503639", "nct07728019", "nct07752550", "nct07773363", "nct07797244", "nct07802184", "nct07807163", "nct07814859", "nct07815288"], links: [
+  {
+    "label": "Mariathasan et al., TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells (Nature 2018)",
+    "url": "https://doi.org/10.1038/nature25501"
+  },
+  {
+    "label": "T cell exclusion, immune privilege, and the tumor microenvironment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25838376/"
+  },
+  {
+    "label": "Trafficking of T cells into tumors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25477332/"
+  },
+  {
+    "label": "Chemokine expression in melanoma metastases associated with CD8+ T-cell recruitment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19293190/"
+  },
+  {
+    "label": "Melanoma-intrinsic β-catenin signalling prevents anti-tumour immunity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25970248/"
+  },
+  {
+    "label": "Non-redundant requirement for CXCR3 signalling during tumoricidal T-cell trafficking across tumour vascular checkpoints.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26109379/"
+  },
+  {
+    "label": "Matrix architecture defines the preferential localization and migration of T cells into the stroma of human lung tumors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22293174/"
+  },
+  {
+    "label": "TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29443960/"
+  },
+  {
+    "label": "Macrophages impede CD8 T cells from reaching tumor cells and limit the efficacy of anti-PD-1 treatment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29632196/"
+  },
+  {
+    "label": "Spatial immunophenotypes predict response to anti-PD1 treatment and capture distinct paths of T cell evasion in triple negative breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34580291/"
+  },
+  {
+    "label": "Spatially distinct tumor immune microenvironments stratify triple-negative breast cancers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30753167/"
+  },
+  {
+    "label": "Intratumoral Activity of the CXCR3 Chemokine System Is Required for the Efficacy of Anti-PD-1 Therapy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31097342/"
+  },
+  {
+    "label": "A new paradigm for tumor immune escape: β-catenin-driven immune exclusion.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26380088/"
+  }
+] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Harlin found six chemokines, including CCL5, CXCL9 and CXCL10, preferentially in T-cell-containing human melanoma metastases, with supporting migration experiments. In melanoma models, Mikucki found that CXCR3 supported intravascular arrest and extravasation of transferred CD8 effectors. These findings identify defined recruitment and vascular dependencies, not a universal explanation for every abnormal vessel. Spranger’s human melanoma association and mouse experiments connected tumour WNT/beta-catenin activity with deficient dendritic-cell recruitment and absent T-cell infiltration, a desert-like problem rather than necessarily an excluded rim. In their 2015 commentary on the mouse experiments, Spranger and Gajewski describe reduced CCL4 expression and failed recruitment of Batf3-lineage dendritic cells. This is a defined melanoma mechanism, not a universal explanation for every excluded tissue pattern.",
+  "In viable human lung-tumour slices, Salmon observed better T-cell movement in loose matrix, restricted movement in dense aligned matrix and increased cancer-cell contact after collagenase. Mariathasan associated stromal fibroblast TGF-beta signalling, exclusion and atezolizumab non-response in metastatic urothelial cancer; combined TGF-beta and PD-L1 blockade improved penetration and regression in mice. Peranzoni linked long macrophage-CD8 contacts and poor motility to exclusion in human lung squamous cancers, then used macrophage-directed treatment in mice to improve tumour-islet access. None of these model interventions establishes a beneficial breast-cancer regimen.",
+  "Hammerl’s spatial analysis of 681 TNBCs distinguished excluded, ignored and inflamed groups. Excluded samples showed collagen-10 deposits and TGF-beta/VEGF programmes; ignored samples showed either dense CD163-positive myeloid cells or WNT/PPAR-gamma programmes. The classifier also associated with anti-PD-1 response in a metastatic-TNBC phase-II trial. Gruosso separately associated stroma-restricted CD8 cells and stromal PD-L1 with poorer outcome. These associations do not prove the observed barrier caused resistance or that its removal helps a particular patient.",
+  "A chemokine can matter after entry. Chow found that CXCR3 and dendritic-cell-derived CXCL9 were required for productive anti-PD-1 responses in tumour-bearing mice but were not required for initial CD8 infiltration. This is different from Mikucki’s transferred-cell vascular-trafficking experiment. Name the tested step, model, stimulus and endpoint before treating the two studies as the same claim.",
+  "Multiplex imaging can separately count CD8 cells in stroma and malignant nests and measure distances. Bulk chemokine, fibroblast or TGF-beta RNA programmes lose direct location. A high stromal TIL area score can therefore coexist with exclusion. In a fictional comparison, collagen-rich stroma with peripheral CD8 cells and high TGF-beta suggests a different access question from sparse T cells with low recruiting chemokines. Both remain hypotheses requiring appropriate measurements and functional controls, rather than diagnoses from one image.",
+  "Feig’s pancreatic mouse model found T cells outside cancer-cell regions coated with CAF-derived CXCL12; fibroblast depletion or CXCR4 blockade improved access and revealed checkpoint-antibody activity in that model. Separately, Balachandran’s human pancreatic-cancer study associated combined neoantigen and CD8 features with long survival, detected relevant T-cell reactivity and observed selective loss of high-quality neoantigenic clones during metastatic progression. Those findings do not show that every long-term survivor overcame one specific physical exclusion barrier."
+],
+"related": [
+  "cold-vs-hot",
+  "immune-desert-exclusion",
+  "cancer-associated-fibroblasts",
+  "tumor-associated-macrophages",
+  "extracellular-matrix"
+]
+}),
   t({ id: "cancer-associated-fibroblasts", name: "Cancer-associated fibroblasts (CAFs)", wikipedia: W("Cancer-associated_fibroblast"), tldr: "Cancer-associated fibroblasts are stromal cells with varied states and effects. No single marker or abundance measurement shows that all of them suppress immunity or promote cancer.", summary: "Fibroblasts can produce and remodel extracellular matrix and exchange signals with nearby cells. Their origins, states and functions vary with tissue and experimental context. Stroma is broader than fibroblasts, and a spatial or molecular association is different from a functional or therapeutic result.", pathways: ["tumor-microenvironment", "tgf-beta"], targets: ["fap"], technologies: ["fapi-pet", "radioligand-therapy"], terms: ["desmoplasia"], drugs: ["fap-2286", "eb-mf-car-nk-01"], trials: ["nct04939610", "nct06710756", "nct07036380", "nct07510815"], links: [
   {
     "label": "Wikipedia",
@@ -1129,6 +1199,10 @@ const terms: TermInput[] = [
   {
     "label": "Ozdemir et al., indexed correction (2015; body unavailable at review)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/28843279/"
+  },
+  {
+    "label": "TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29443960/"
   }
 ] ,
 "notes": [
@@ -1136,14 +1210,16 @@ const terms: TermInput[] = [
   "Ohlund and colleagues described alpha-smooth-muscle-actin-high myofibroblastic fibroblasts near pancreatic cancer cells and IL-6-producing inflammatory populations farther away in pancreatic models and samples. This is not an exhaustive classification of breast stroma or a permanent job assignment for each cell. Ozdemir reported that depletion of selected alpha-smooth-muscle-actin-positive myofibroblasts worsened disease and immunosuppression in pancreatic mouse models. Removing all fibroblasts is not a general treatment conclusion. The indexed 2015 correction is linked; its body was unavailable for this review, so no correction-specific figure claim is adopted.",
   "Immune exclusion describes immune-cell positions relative to malignant nests. Salmon studied how matrix architecture affected T-cell movement in viable human lung-tumour slices, including a collagenase perturbation. That experiment does not show that a fibroblast-rich breast specimen is immune-excluded or that removing its stroma would help. The locations and the proposed mechanism need separate evidence.",
   "A fibroblast assessment may use fixed sections or appropriately prepared cells; sectioning and dissociation consume finite material. Report the defined marker-positive populations, cells per area or another stated denominator, cell states and positions relative to tumour structures. Retain marker combinations, morphology, cell assignment, specificity and sampled regions. There is no universal CAF-high threshold establishing function or treatment benefit. Bulk RNA can increase because there are more cells or because each cell expresses more; dissociation also loses the spatial map.",
-  "In a fictional breast section with many fibroblasts and collagen but no scored immune-cell positions, immune exclusion has not been measured. First map the immune cells against tumour nests, then test candidate causes. A neighbourhood drawing can locate fibroblasts, matrix and vessels and suggest possible signals or remodelling. It does not measure movement or show that every fibroblast promotes cancer."
+  "In a fictional breast section with many fibroblasts and collagen but no scored immune-cell positions, immune exclusion has not been measured. First map the immune cells against tumour nests, then test candidate causes. A neighbourhood drawing can locate fibroblasts, matrix and vessels and suggest possible signals or remodelling. It does not measure movement or show that every fibroblast promotes cancer.",
+  "Mariathasan’s metastatic-urothelial cohort associated stromal fibroblast TGF-beta signalling with CD8 exclusion and non-response to atezolizumab. Combined TGF-beta and PD-L1 blockade facilitated penetration and regression in a mouse model. Keep that perturbation separate from the human association: the findings do not establish that any fibroblast-rich breast specimen has the same barrier or that removing all fibroblasts would help."
 ],
-"asOf": "2026-11-10",
+"asOf": "2026-11-11",
 "related": [
-  "extracellular-matrix"
+  "extracellular-matrix",
+  "immune-exclusion"
 ]
 }),
-  t({ id: "tumor-associated-macrophages", name: "Tumour-associated macrophages (TAMs)", wikipedia: W("Tumor-associated_macrophage"), tldr: "Tumour-associated macrophages are immune cells that should eat cancer cells but are re-educated by the tumour to protect it instead. They are often the most abundant immune cell in a tumour.", summary: "Often described as M2-like, immunosuppressive and pro-angiogenic, although M1 and M2 are labels from laboratory stimulation experiments and a tumour can hold several macrophage programmes in different neighbourhoods or at different times (Murray et al., 2014; Xue et al., 2014); the name tumour-associated records location, and state and function are separate questions, so an M2-like marker pattern does not by itself show that the cells suppress T cells. Recruited by CSF1 and CCL2; express PD-L1, SIRPα, TREM2. Targets: CSF1R (pexidartinib approved in TGCT; broadly disappointing in cancer), CD47/SIRPα (magrolimab failed), TREM2, CD40 agonists. Depleting M2 TAMs is also the rationale of the MERTK ADC RGX-019-MMAE.", pathways: ["tumor-microenvironment", "myc"], targets: ["cd47", "pdl1", "csf1r", "sirpa", "cd40", "mertk", "cd163", "cd14"], drugs: ["magrolimab", "ak117", "evorpacept", "peluntamig", "spevatamig", "selicrelumab", "mitazalimab", "axatilimab", "emactuzumab"], trials: ["aspen-06", "nct03424005", "nct03768063", "nct04313881", "nct04675294", "nct04675333", "nct04778397", "nct04888312", "nct04980885", "nct05079230", "nct05227664", "nct05229497", "nct05382442", "nct05482893", "nct05491226", "nct05652686", "nct05849480", "nct05868226", "nct06488378", "nct06601335", "nct06789848", "nct06953999", "nct07007559", "nct07015853", "nct07036380", "nct07199764", "nct07245446", "nct07437287"], links: [
+  t({ id: "tumor-associated-macrophages", name: "Tumour-associated macrophages (TAMs)", wikipedia: W("Tumor-associated_macrophage"), tldr: "Tumour-associated macrophages are macrophages in or around a tumour. Their states and functions vary; a location or marker count alone does not show that they suppress immunity or promote cancer.", summary: "Often described as M2-like, immunosuppressive and pro-angiogenic, although M1 and M2 are labels from laboratory stimulation experiments and a tumour can hold several macrophage programmes in different neighbourhoods or at different times (Murray et al., 2014; Xue et al., 2014); the name tumour-associated records location, and state and function are separate questions, so an M2-like marker pattern does not by itself show that the cells suppress T cells. Recruited by CSF1 and CCL2; express PD-L1, SIRPα, TREM2. Targets: CSF1R (pexidartinib approved in TGCT; broadly disappointing in cancer), CD47/SIRPα (magrolimab failed), TREM2, CD40 agonists. Depleting M2 TAMs is also the rationale of the MERTK ADC RGX-019-MMAE.", pathways: ["tumor-microenvironment", "myc"], targets: ["cd47", "pdl1", "csf1r", "sirpa", "cd40", "mertk", "cd163", "cd14"], drugs: ["magrolimab", "ak117", "evorpacept", "peluntamig", "spevatamig", "selicrelumab", "mitazalimab", "axatilimab", "emactuzumab"], trials: ["aspen-06", "nct03424005", "nct03768063", "nct04313881", "nct04675294", "nct04675333", "nct04778397", "nct04888312", "nct04980885", "nct05079230", "nct05227664", "nct05229497", "nct05382442", "nct05482893", "nct05491226", "nct05652686", "nct05849480", "nct05868226", "nct06488378", "nct06601335", "nct06789848", "nct06953999", "nct07007559", "nct07015853", "nct07036380", "nct07199764", "nct07245446", "nct07437287"], links: [
   {
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tumor-associated_macrophage"
@@ -1179,16 +1255,30 @@ const terms: TermInput[] = [
   {
     "label": "HGNC: MERTK receptor family membership",
     "url": "https://rest.genenames.org/fetch/symbol/MERTK"
+  },
+  {
+    "label": "Macrophages impede CD8 T cells from reaching tumor cells and limit the efficacy of anti-PD-1 treatment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29632196/"
+  },
+  {
+    "label": "CD4(+) T cells regulate pulmonary metastasis of mammary carcinomas by enhancing protumor properties of macrophages.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19647220/"
   }
 ] ,
-"asOf": "2026-11-10"
+"asOf": "2026-11-11"
 ,
 "notes": [
   "Tumour-associated macrophage describes macrophages in or around a tumour. Location, developmental origin, measured state and function are separate questions. These cells may engulf material, present antigens, remodel tissue, affect vessels or alter immune responses; not every cell performs every activity. M1 and M2 are experimental stimulation labels rather than a complete map of tumour macrophages.",
   "In pancreatic mouse models, Zhu traced contributions from embryonically derived resident cells and recruited monocytes with differing programs. This is not a census of all human tumours. Beatty combined a small human CD40-agonist study with mouse experiments in which macrophages supported tumouricidal and stromal effects. The mouse mechanism does not establish that reprogramming every macrophage is beneficial. Abundance, an outcome association and benefit from intervention require different evidence; depletion can also remove useful activities.",
   "CD68 or CD163 staining is not a T-cell suppression experiment, and circulating monocyte counts do not count tissue macrophages. Retain the marker panel, cell classification, tumour and stromal regions, area or cell denominator, site, time and treatment. Cell RNA describes programs; lineage origin needs additional evidence. Keren mapped human triple-negative breast-cancer neighbourhoods observationally, rather than testing macrophage-directed treatment selection.",
   "Dissociation, viability and culture can alter recovered cells and behaviour. A functional claim needs a defined population and a measured endpoint such as engulfment or a change in responding cells. In a fictional example, increased CD163-positive tissue cells after treatment differs from isolated cells reducing stimulated T-cell proliferation. Linking those findings requires matching definitions and sampling; neither alone proves that depletion helps.",
-  "The acronym TAM also names the TYRO3, AXL and MERTK receptor tyrosine-kinase family. Those are proteins, not a macrophage population. HGNC assigns the three genes to the same receptor family; the shared acronym does not make a receptor result a tumour-macrophage count."
+  "The acronym TAM also names the TYRO3, AXL and MERTK receptor tyrosine-kinase family. Those are proteins, not a macrophage population. HGNC assigns the three genes to the same receptor family; the shared acronym does not make a receptor result a tumour-macrophage count.",
+  "Peranzoni linked long macrophage-CD8 contacts and low T-cell motility to exclusion in human lung squamous cancers. In mice, CSF1R-directed macrophage treatment improved tumour-islet access, and adding anti-PD-1 delayed progression. DeNardo’s mouse mammary-cancer work separately showed that IL-4-producing CD4 cells could shape macrophages that promoted invasion and lung metastasis through epithelial EGFR signalling. These are bounded human-tissue and animal findings, not a universal macrophage state or proof that depletion benefits every cancer."
+]
+,
+"related": [
+  "immune-exclusion",
+  "cd4-t-cell-subsets"
 ]
 }),
   t({ id: "myeloid-derived-suppressor-cells", name: "Myeloid-derived suppressor cells (MDSCs)", wikipedia: W("Myeloid-derived_suppressor_cell"), tldr: "These heterogeneous myeloid populations are characterised using phenotype, suppressive function and context. A marker or blood-cell count alone does not establish them.", summary: "Myeloid-derived suppressor cells are research-defined populations with demonstrable immune-suppressive activity and appropriate myeloid characteristics. Monocytic, polymorphonuclear and early-stage groups require species- and preparation-specific interpretation. Their phenotype overlaps other myeloid cells; a suggestive phenotype without established function needs qualification.", pathways: ["tumor-microenvironment", "jak-stat"], targets: ["vegf", "pdl1"], trials: ["nct05570825", "nct06149481", "nct06228053", "nct07322341"], links: [

@@ -347,7 +347,25 @@ export const theoryTerms: TermInput[] = [
     aka: ["immunosurveillance", "immune surveillance hypothesis", "cancer immunoediting", "three Es", "elimination equilibrium escape", "Burnet-Thomas hypothesis"],
     tldr: "Immune responses can control cancer and select which populations persist. Immunoediting is a testable framework, not a way to assign a phase or recurrence risk from one scan.",
     summary: "The claim. Immune surveillance concerns recognition and control of transformed cells. Immunoediting adds selection of the populations that persist. Elimination, equilibrium and escape are conceptual processes that can coexist or occur independently. Their assignment requires evidence of control, restraint or outgrowth and its mechanism; they are not a compulsory calendar for every clinical cancer. The immune system therefore both protects against cancer and shapes the cancers that emerge.\n\nWho and when. Ehrlich 1909; Burnet 1957 and 1970 and Thomas 1959 stated the surveillance hypothesis. Stutman's 1974 finding that athymic nude mice were no more prone to chemically induced tumours seemed to refute it. Shankaran, Old and Schreiber showed in 2001 that mice lacking lymphocytes or interferon-gamma signalling develop more tumours and that tumours from immunodeficient mice are more immunogenic, which is the signature of editing. Dunn and colleagues named immunoediting in 2002; Schreiber, Old and Smyth reviewed it in 2011. Allison's 1996 CTLA-4 blockade and Honjo's PD-1 discovery gave it its therapy; Chen and Mellman's cancer-immunity cycle (2013) is its clinical map.\n\nEvidence for. Immunodeficient mice develop more spontaneous and induced tumours. Organ transplant recipients on immunosuppression have higher rates of many cancers, not only virus-driven ones. Immune-cell and outcome associations vary across cancers and measurements. Some tumour studies show neoantigen depletion or HLA loss consistent with editing, with other explanations and sampling limits still relevant. Checkpoint inhibitors produce durable remissions in melanoma, lung, kidney, bladder and mismatch repair-deficient cancers, while mutation count, candidate neoantigens or viral origin alone do not establish an individual response.\n\nEvidence against and limits. Nude mice retain immune functions and are not a clean comparison of every immune mechanism; Shankaran also noted that they do not completely lack functional T cells. The episode illustrates the importance of the precise model. Most cancers arise in people with normal immunity, and the immune system also promotes cancer through inflammation. Equilibrium is difficult to observe directly in humans. Immunotherapy fails in most patients with pancreatic, prostate and brain cancers, and the reasons are only partly understood.\n\nPredictions that held or failed. Held: releasing checkpoints unleashes anti-tumour immunity; particular studies find loss of recognised antigens under immune pressure; adoptive transfer of tumour-reactive T cells can cure. Failed: most therapeutic cancer vaccines of the 1990s and 2000s; the expectation that boosting immunity non-specifically (interferon, interleukin-2 in most settings) would be broadly effective.\n\nTherapies that came from it. Checkpoint inhibitors (ipilimumab, nivolumab, pembrolizumab and successors), CAR-T cells, tumour-infiltrating lymphocyte therapy (lifileucel), T-cell engagers, neoantigen mRNA vaccines and the use of mutational burden and mismatch repair deficiency as predictive biomarkers. It applies clonal evolution to the immune system as predator, draws on the microenvironment view for the mechanisms of escape, and entered the hallmarks in 2011.\n\nStatus: model experiments and human observations support immune control and selection. They do not establish a universal sequence of phases, the fraction of all cancers prevented, or a personal recurrence forecast.",
-    related: ["theories-of-cancer", "cancer-immunity-cycle", "clonal-evolution-theory", "microenvironment-inflammation-theory", "hallmarks-synthesis", "antigen-presentation-immunoediting", "pd1-checkpoint", "t-cell-exhaustion", "immune-desert-exclusion", "avoiding-immune-destruction", "checkpoint-inhibitor", "neoantigen", "tils", "cold-vs-hot", "tmb"],
+    related: [
+  "theories-of-cancer",
+  "cancer-immunity-cycle",
+  "clonal-evolution-theory",
+  "microenvironment-inflammation-theory",
+  "hallmarks-synthesis",
+  "antigen-presentation-immunoediting",
+  "pd1-checkpoint",
+  "t-cell-exhaustion",
+  "immune-desert-exclusion",
+  "avoiding-immune-destruction",
+  "checkpoint-inhibitor",
+  "neoantigen",
+  "tils",
+  "cold-vs-hot",
+  "tmb",
+  "adaptive-immune-resistance",
+  "immune-exclusion"
+],
     pathways: ["cancer-immunity-cycle", "antigen-presentation-immunoediting", "pd1-checkpoint", "t-cell-exhaustion", "immune-desert-exclusion"], drugs: ["ipilimumab", "nivolumab", "pembrolizumab", "lifileucel"], technologies: ["checkpoint-inhibitor", "car-t", "til-therapy", "t-cell-engager", "neoantigen-mrna-vaccine"], targets: ["pd1", "ctla4"], cancers: ["melanoma", "nsclc"],
     people: ["robert-schreiber", "james-allison", "tasuku-honjo", "drew-pardoll"], keyPapers: ["paper-schreiber-cancer-immunoediting-science-2011", "paper-chen-mellman-cancer-immunity-cycle-immunity-2013", "paper-leach-allison-ctla4-blockade-science-1996", "paper-pardoll-immune-checkpoint-blockade-nrc-2012"],
     links: [
@@ -394,6 +412,30 @@ export const theoryTerms: TermInput[] = [
   {
     "label": "Luksza et al., neoantigen quality and pancreatic cancer evolution (2022)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/35589842/"
+  },
+  {
+    "label": "The three Es of cancer immunoediting.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15032581/"
+  },
+  {
+    "label": "Evolution of Neoantigen Landscape during Immune Checkpoint Blockade in Non-Small Cell Lung Cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28031159/"
+  },
+  {
+    "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
+  },
+  {
+    "label": "Somatic HLA Class I Loss Is a Widespread Mechanism of Immune Evasion Which Refines the Use of Tumor Mutational Burden as a Biomarker of Checkpoint Inhibitor Response.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33127846/"
+  },
+  {
+    "label": "Mutations Associated with Acquired Resistance to PD-1 Blockade in Melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27433843/"
+  },
+  {
+    "label": "Overcoming Genetically Based Resistance Mechanisms to PD-1 Blockade.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32467343/"
   }
 ],
 
@@ -402,9 +444,13 @@ export const theoryTerms: TermInput[] = [
   "Koebel used immune perturbation in chemical-carcinogenesis mouse models to demonstrate equilibrium; a quiet scan alone is not such an experiment. Matsushita combined sequencing, antigen recognition and immune comparisons in mouse sarcoma to support selection of pre-existing antigen-distinct clones. This is different from T cells creating every mutation that appears later.",
   "Luksza followed 70 pancreatic ductal adenocarcinomas from 15 people longitudinally over ten years, comparing primary and recurrent tumours and modelling neoantigen quality and clonal fitness. Long-term survivors had stronger primary T-cell activity and recurrent tumours with fewer high-quality neoantigens under the model. This is human cohort and modelling evidence, not a vaccine experiment or direct observation of every selection event. Treatment and sampling history and model assumptions remain relevant.",
   "In a fictional immune-pressure comparison, both arms begin with A/B counts of 80/20. Later, the control has 160/40 and the pressure arm 10/40. B is 20% versus 80% of the later populations, although its later count is 40 in both. Recognition and comparable conditions are separate evidence; a larger share does not mean that pressure created more B cells. This example is distinct from 900/100 becoming 90/90, where B’s share rises while its count falls.",
-  "An editing claim combines longitudinal populations or antigens, recognition or functional assays and relevant comparisons. Apparent antigen loss can instead reflect sampling, detection limits, expression change or another treatment. Neither sequencing alone nor a killing experiment reconstructs the whole history. One immune-rich sample, negative blood test or model cannot assign an individual postoperative phase, explain every recurrence or forecast personal risk; different lesions can face different pressures."
+  "An editing claim combines longitudinal populations or antigens, recognition or functional assays and relevant comparisons. Apparent antigen loss can instead reflect sampling, detection limits, expression change or another treatment. Neither sequencing alone nor a killing experiment reconstructs the whole history. One immune-rich sample, negative blood test or model cannot assign an individual postoperative phase, explain every recurrence or forecast personal risk; different lesions can face different pressures.",
+  "Immune escape can involve loss of a targeted antigen, altered HLA alleles or processing, defective inducible signalling, inhibition after entry or impaired access. Anagnostou found loss of putative neoantigens in checkpoint-resistant lung tumours with accompanying T-cell evidence. McGranahan described allele-specific HLA loss in lung cancer evolution. Montesion’s commercial pan-cancer genomic series contained 83,644 samples with HLA-I loss of heterozygosity in 17%; this assay-defined pan-cancer observation is not a breast-specific prevalence. Allele loss differs from reversible expression change or a B2M defect affecting class-I surface display.",
+  "In Zaretsky’s selected four-person melanoma relapse series, two cases had JAK1 or JAK2 loss-of-function changes with loss of the normal allele and another had a truncating B2M change. The JAK2-deficient relapse cells failed to increase interferon-gamma signalling, PD-L1 and class I while retaining interferon-alfa/beta responsiveness. Engineered JAK1- or JAK2-deficient melanoma cells were still recognized by the tested NY-ESO-1-specific T cells. Baseline display, inducibility, recognition and killing are separate dependencies; neither a JAK variant nor detectable HLA alone answers all of them.",
+  "In a fictional controlled comparison, both cultures have baseline class I; only the control increases its signal and surface display after interferon gamma. The candidate retains an interferon-alfa response, and restoring JAK2 restores the tested gamma response. With matched handling, viability and restoration controls, this supports a model-specific JAK2-dependent inducibility defect. It is not proof of a particular displayed peptide, safe clinical rescue, tumour access or useful killing. JAK1 and JAK2 have different interferon dependencies.",
+  "Treatment can select a pre-existing population and new changes can arise. Earlier specimens, retained alleles, expression, stimulation and controlled functional comparisons help test an escape explanation. Different sites may have different bottlenecks; several mechanisms may coexist. Blood tumour DNA alone does not identify a particular escape route. A proposed HLA-independent recognizer or combination still needs its own target, access, function and safety evidence, and a restored laboratory endpoint does not establish clinical benefit."
 ],
-"asOf": "2026-11-10"
+"asOf": "2026-11-11"
 }),
   t({
     id: "ageing-tissue-field-theory", name: "Ageing tissue and clonal fields: cancer as a disease of old tissue", wikipedia: W("Clonal_hematopoiesis"),

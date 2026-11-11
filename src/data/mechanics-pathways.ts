@@ -33,23 +33,115 @@ export const mechanicsPathways: PathwayInput[] = [
     links: [{ label: "Kelley et al., Traversing the basement membrane in vivo (J Cell Biol 2014)", url: "https://doi.org/10.1083/jcb.201311112" }],
   }),
   p({
-    id: "cancer-immunity-cycle", name: "The cancer-immunity cycle", wikipedia: W("Cancer_immunology"), related: ["theories-of-cancer", "immune-surveillance-immunoediting"],
-    tldr: "Seven steps the immune system must complete to kill a tumour: release of antigens, pick-up by dendritic cells, priming of T cells in lymph nodes, travel, entry into the tumour, recognition, and killing. Every immunotherapy pushes on one step; every escape blocks one.",
-    summary: "Chen and Mellman's cycle: (1) dying tumour cells release neoantigens; (2) dendritic cells (BATF3+ cDC1) capture and cross-present them; (3) in lymph nodes, T cells are primed via TCR-MHC plus CD28-B7, with CTLA-4 as the brake; (4) effector T cells traffic via CXCL9/10-CXCR3; (5) infiltrate through vasculature and stroma; (6) recognise peptide-MHC-I; (7) kill via perforin/granzyme and IFN-γ, releasing more antigen. Each step has failure modes (low antigenicity, poor DC function, Treg-dominated priming, abnormal vessels, TGF-β stroma, MHC loss, PD-1 exhaustion) and matching drugs (radiation, STING agonists and vaccines for 1-2; anti-CTLA-4 for 3; anti-VEGF for 4-5; engagers and CAR-T bypass 6; anti-PD-1 for 7).",
-    analogy: "A relay of seven runners. The race is only won if every baton is passed. Cancers usually drop only one or two batons, so the treatment that works is the one that fixes the step that actually failed, which is why the same drug cures one patient and does nothing for the next.",
+    id: "cancer-immunity-cycle", name: "The cancer-immunity cycle", wikipedia: W("Cancer_immunology"), related: [
+  "theories-of-cancer",
+  "immune-surveillance-immunoediting",
+  "cold-vs-hot",
+  "immune-exclusion",
+  "adaptive-immune-resistance",
+  "agretopicity",
+  "cd4-t-cell-subsets"
+],
+    tldr: "The cancer-immunity cycle maps linked steps from available tumour antigens to T-cell recognition and killing. It helps locate a question or bottleneck; a result at one step does not establish the whole response.",
+    summary: "Chen and Mellman’s 2013 framework describes seven linked steps: release of cancer antigens; their collection and presentation; T-cell priming and activation; trafficking; entry into tumour tissue; recognition of cancer cells; and killing. Further antigen release may support another round. In conventional T-cell recognition, a displayed peptide-HLA complex and a suitable T-cell receptor are separate dependencies.\n\nThis is a T-cell-centred organizing model, not a universal route, assay result or treatment-selection algorithm. Steps overlap, priming may occur away from the tumour, and other immune mechanisms require their own account. Checkpoints and local tissue conditions affect several steps. Vaccines aim to generate or expand reactive responses, checkpoint drugs interrupt selected inhibitory signals, and engineered cells provide a recognition system and effectors. Each still needs appropriate targets, access, function and safety evidence.",
+    analogy: "A relay helps organize the questions: material must be available, presented, recognized and acted on. Several dependencies can be impaired together, and improving one handoff does not establish completion of the response. The map does not predict which treatment will help an individual.",
     nodes: [
-      { id: "rel", label: "1 Antigen release", x: 15, y: 15 }, { id: "dc", label: "2 DC capture (cDC1)", x: 45, y: 15 }, { id: "prime", label: "3 Priming (CD28 / CTLA-4)", x: 78, y: 15, targetId: "ctla4" },
-      { id: "traf", label: "4 Trafficking (CXCL9/10)", x: 88, y: 50 }, { id: "inf", label: "5 Infiltration", x: 62, y: 50, targetId: "vegf" }, { id: "rec", label: "6 Recognition (MHC-I)", x: 45, y: 82 },
-      { id: "kill", label: "7 Killing (PD-1 brake)", x: 15, y: 82, targetId: "pd1" }, { id: "block", label: "Escape at any step", x: 15, y: 50 },
-    ],
+  {
+    "id": "rel",
+    "label": "1 Antigen release",
+    "x": 15,
+    "y": 15
+  },
+  {
+    "id": "dc",
+    "label": "2 Antigen presentation",
+    "x": 45,
+    "y": 15
+  },
+  {
+    "id": "prime",
+    "label": "3 Priming (CD28 / CTLA-4)",
+    "x": 78,
+    "y": 15,
+    "targetId": "ctla4"
+  },
+  {
+    "id": "traf",
+    "label": "4 Trafficking (CXCL9/10)",
+    "x": 88,
+    "y": 50
+  },
+  {
+    "id": "inf",
+    "label": "5 Infiltration",
+    "x": 62,
+    "y": 50,
+    "targetId": "vegf"
+  },
+  {
+    "id": "rec",
+    "label": "6 Peptide-HLA recognition",
+    "x": 45,
+    "y": 82
+  },
+  {
+    "id": "kill",
+    "label": "7 Cancer-cell killing",
+    "x": 15,
+    "y": 82,
+    "targetId": "pd1"
+  },
+  {
+    "id": "block",
+    "label": "Escape at any step",
+    "x": 15,
+    "y": 50
+  }
+],
     edges: [
       { from: "rel", to: "dc" }, { from: "dc", to: "prime" }, { from: "prime", to: "traf" }, { from: "traf", to: "inf" }, { from: "inf", to: "rec" }, { from: "rec", to: "kill" }, { from: "kill", to: "rel" },
       { from: "block", to: "kill", type: "inhibits" }, { from: "block", to: "rel", type: "inhibits" },
     ],
-    interventions: ["Radiation, chemotherapy, oncolytic viruses and ADC payloads feed step 1 (immunogenic cell death)", "Vaccines and STING agonists load step 2; anti-CTLA-4 acts at step 3", "Anti-VEGF and stromal agents open steps 4-5", "Engagers, CAR-T and TCR-T replace step 6; anti-PD-1/PD-L1 releases step 7"],
+    interventions: [
+  "Radiation, chemotherapy, viruses and antibody-drug conjugates can cause cancer-cell death. Antigen release alone does not establish immunogenic cell death or a useful T-cell response.",
+  "Vaccines and antigen-presenting-cell approaches investigate antigen presentation and priming. The framework locates proposed jobs; it does not establish that a particular intervention completes them.",
+  "Vascular, chemokine and stromal interventions investigate trafficking or tissue entry in defined systems. Model-specific findings do not establish a general conversion of excluded tumours.",
+  "Receptor-engineered cells and engagers change recognition requirements but still depend on accessible targets and functional cells. Conventional TCR recognition remains peptide-HLA-dependent; checkpoint blockade addresses selected inhibitory signals rather than every step."
+],
     targets: ["pd1", "pdl1", "ctla4", "vegf", "cd3", "cd137", "ido1"], drugs: ["pembrolizumab", "nivolumab", "ipilimumab", "ivonescimab", "intismeran-autogene"], technologies: ["checkpoint-inhibitor", "neoantigen-mrna-vaccine", "sting-agonist", "t-cell-engager", "car-t", "oncolytic-virus", "sbrt"], terms: ["neoantigen", "immunogenic-cell-death", "cold-vs-hot", "tils"], pathways: ["pd1-checkpoint", "antigen-presentation-immunoediting", "cgas-sting", "vegf-angiogenesis"],
-    links: [{ label: "Chen & Mellman, Oncology meets immunology: the cancer-immunity cycle (Immunity 2013)", url: "https://doi.org/10.1016/j.immuni.2013.07.012" }, { label: "Chen & Mellman, Elements of cancer immunity and the cancer-immune set point (Nature 2017)", url: "https://doi.org/10.1038/nature21349" }],
-  }),
+    links: [
+  {
+    "label": "Chen & Mellman, Oncology meets immunology: the cancer-immunity cycle (Immunity 2013)",
+    "url": "https://doi.org/10.1016/j.immuni.2013.07.012"
+  },
+  {
+    "label": "Chen & Mellman, Elements of cancer immunity and the cancer-immune set point (Nature 2017)",
+    "url": "https://doi.org/10.1038/nature21349"
+  },
+  {
+    "label": "Oncology meets immunology: the cancer-immunity cycle.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23890059/"
+  },
+  {
+    "label": "Elements of cancer immunity and the cancer-immune set point.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28102259/"
+  },
+  {
+    "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+  },
+  {
+    "label": "Consensus guidelines for the definition, detection and interpretation of immunogenic cell death.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+  }
+],
+
+"asOf": "2026-11-11",
+"notes": [
+  "In a fictional vaccine study, blood cells release a cytokine after added-peptide stimulation. This supports reactivity under that assay’s conditions. Added peptide can bypass natural processing, and the result does not establish entry into the sampled tumour, recognition of naturally presenting cancer cells, useful killing or clinical benefit. Antigen release is not priming, blood expansion is not infiltration, and a return arrow does not demonstrate durable protection.",
+  "Use the cycle to name the measured step and the next untested dependency. A proposed bottleneck or complementary pair of mechanisms does not establish a beneficial or safe combination. Increasing a response can also affect healthy tissue; the model does not identify a safe intervention by itself."
+]
+}),
   p({
     id: "extrinsic-apoptosis-death-receptors", name: "Extrinsic apoptosis (death receptors)", wikipedia: W("Death_receptor"),
     tldr: "Immune cells kill by touch: they present FAS ligand or TRAIL to a target cell, whose death receptors then trigger self-destruction from the outside in. Tumours cut this wire by deleting the receptors or over-producing decoys and blockers.",
@@ -608,22 +700,139 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "immune-desert-exclusion", name: "Cold tumours: immune deserts and exclusion", wikipedia: W("Tumor-infiltrating_lymphocytes"),
-    tldr: "Tumours come in three immune weathers: inflamed (T cells inside, checkpoint drugs work), excluded (T cells stuck at the edge), and desert (no T cells at all). Most common cancers are excluded or desert, and turning them 'hot' is the central problem of immunotherapy.",
-    summary: "Deserts arise from low antigenicity (low TMB, MHC loss), failed priming (few BATF3+ cDC1, low CCL4 because of tumour-intrinsic WNT/β-catenin signalling; PTEN loss; MYC-driven CD47/PD-L1), and absent chemokines (CXCL9/10 silenced by EZH2 and DNMT1). Exclusion arises from stroma: TGF-β-activated CAFs and dense collagen (Mariathasan 2018), CXCL12 from FAP+ fibroblasts, abnormal VEGF-driven vessels lacking adhesion molecules, and myeloid barriers. Inflamed tumours still fail through PD-L1, exhaustion and Tregs. Converters: radiotherapy and chemotherapy (immunogenic death, STING), oncolytic viruses and in situ vaccines, STING agonists (systemic versions disappointed), anti-VEGF and TGF-β blockade (bintrafusp alfa failed), FAP/CXCR4 targeting, epigenetic priming to restore chemokines, and antigen-independent killers (engagers, CAR-T) that do not need a hot tumour. Gene signatures (T-cell inflamed GEP, TIS) and spatial pathology grade the weather.",
-    analogy: "Three kinds of town: one where the police already patrol the streets (inflamed), one where they mill about outside a wall (excluded), and one with no police station at all (desert). Removing the officers' handcuffs (PD-1 blockade) only helps in the first; the second needs a gate, the third needs recruitment.",
+    tldr: "Sparse T cells and T cells gathered outside malignant regions are different immune patterns. An inflamed tumour can still restrain its T cells, and a pattern alone does not select a treatment.",
+    summary: "Immune deserts have few relevant T cells in the sampled regions; immune exclusion describes cells nearby with limited entry into malignant nests. Deficient antigen availability or priming, recruitment signals, vascular interactions and stromal access can produce different distributions. Tumour WNT/beta-catenin-associated loss of dendritic-cell recruitment is one model-supported route to absent infiltration. An inflamed pattern can coexist with induced inhibitory signals, regulatory cells and exhausted programmes.\n\nThese are hypotheses about distinct dependencies. The same cancer can contain different regions or sites and can change with treatment. Matrix or cell abundance, a mixed RNA signature and spatial counts are different measurements. A proposed converter or HLA-independent recognition system still needs target, access, function, safety and comparative outcome evidence. There is no universal conversion treatment or hot/cold cutoff implied by the framework.",
+    analogy: "Three maps of the same neighbourhood can show many lymphocytes among cancer cells, cells concentrated outside, or few cells in either region. The map describes location; it does not identify the cause or select a treatment. Different mechanisms can produce a similar pattern.",
     nodes: [
-      { id: "ag", label: "Low TMB, MHC loss", x: 12, y: 12 }, { id: "wnt", label: "β-catenin, PTEN loss → no cDC1", x: 12, y: 40, targetId: "pik3ca" }, { id: "chemo", label: "CXCL9/10 silenced (EZH2)", x: 12, y: 68, targetId: "ezh2" },
-      { id: "desert", label: "Immune desert", x: 42, y: 40 }, { id: "tgf", label: "TGF-β CAFs, collagen", x: 72, y: 12, targetId: "fap" }, { id: "vess", label: "Abnormal vessels (VEGF)", x: 72, y: 40, targetId: "vegf" },
-      { id: "excl", label: "Immune exclusion", x: 92, y: 60 }, { id: "hot", label: "Inflamed → PD-1 response", x: 42, y: 90, targetId: "pd1" }, { id: "conv", label: "RT, STING, viruses, vaccines", x: 12, y: 92 }, { id: "myeloid", label: "Myeloid barrier", x: 72, y: 68, targetId: "csf1r" },
-    ],
+  {
+    "id": "ag",
+    "label": "Antigen, presentation, priming?",
+    "x": 12,
+    "y": 12
+  },
+  {
+    "id": "wnt",
+    "label": "β-catenin: recruitment model",
+    "x": 12,
+    "y": 40,
+    "targetId": "ctnnb1"
+  },
+  {
+    "id": "chemo",
+    "label": "Recruitment chemokines?",
+    "x": 12,
+    "y": 68
+  },
+  {
+    "id": "desert",
+    "label": "Immune desert",
+    "x": 42,
+    "y": 40
+  },
+  {
+    "id": "tgf",
+    "label": "TGF-β CAFs, collagen",
+    "x": 72,
+    "y": 12,
+    "targetId": "fap"
+  },
+  {
+    "id": "vess",
+    "label": "Abnormal vessels (VEGF)",
+    "x": 72,
+    "y": 40,
+    "targetId": "vegf"
+  },
+  {
+    "id": "excl",
+    "label": "Immune exclusion",
+    "x": 92,
+    "y": 60
+  },
+  {
+    "id": "hot",
+    "label": "Inflamed; function still matters",
+    "x": 42,
+    "y": 90,
+    "targetId": "pd1"
+  },
+  {
+    "id": "conv",
+    "label": "Interventions under study",
+    "x": 12,
+    "y": 92
+  },
+  {
+    "id": "myeloid",
+    "label": "Myeloid barrier",
+    "x": 72,
+    "y": 68,
+    "targetId": "csf1r"
+  }
+],
     edges: [
       { from: "ag", to: "desert" }, { from: "wnt", to: "desert" }, { from: "chemo", to: "desert" }, { from: "tgf", to: "excl" }, { from: "vess", to: "excl" }, { from: "myeloid", to: "excl" },
       { from: "desert", to: "hot", type: "inhibits" }, { from: "excl", to: "hot", type: "inhibits" }, { from: "conv", to: "hot" }, { from: "conv", to: "desert", type: "inhibits" },
     ],
-    interventions: ["Radiotherapy, immunogenic chemotherapy and TOP1 ADCs to seed antigen and STING signalling; oncolytic viruses (T-VEC, RP1) and in situ vaccination", "Anti-VEGF and PD-1×VEGF bispecifics open the vessel gate; FAP-, CXCR4- and TGF-β-directed agents (mostly modest so far)", "Epigenetic priming (EZH2, DNMT inhibitors) to restore chemokines; STING agonists intratumourally", "Bypass the weather: T-cell engagers, CAR-T, TCR-T and vaccines that bring or make their own T cells"],
-    targets: ["pd1", "pdl1", "vegf", "fap", "ezh2", "csf1r", "cxcr4", "pik3ca"], drugs: ["talimogene-laherparepvec", "vusolimogene-oderparepvec", "ivonescimab", "adu-s100", "tazemetostat"], technologies: ["checkpoint-inhibitor", "oncolytic-virus", "in-situ-vaccination", "sting-agonist", "sbrt", "epigenetic-drugs", "t-cell-engager", "single-cell-spatial", "il12-electroporation"], terms: ["cold-vs-hot", "immune-exclusion", "tils", "tmb", "cps", "desmoplasia"], pathways: ["tgf-beta", "wnt", "cgas-sting", "tumor-microenvironment", "cancer-immunity-cycle", "myeloid-suppression-axis"], bottlenecks: ["b-immunotherapy-response", "b-tme-immunosuppression"],
-    links: [{ label: "Chen & Mellman, Elements of cancer immunity and the cancer-immune set point (Nature 2017)", url: "https://doi.org/10.1038/nature21349" }, { label: "Spranger, Bao & Gajewski, Melanoma-intrinsic β-catenin signalling prevents anti-tumour immunity (Nature 2015)", url: "https://doi.org/10.1038/nature14404" }],
-  }),
+    interventions: [
+  "Antigen-release, vaccination and local immune-stimulation approaches investigate different missing inputs. Local inflammation or an interferon signal does not by itself establish distant cancer control.",
+  "Vascular and stromal approaches investigate access in defined tumour systems. A location pattern alone does not show which barrier is causal or which intervention will change outcomes. In Feig’s pancreatic mouse model, CXCR4 blockade improved T-cell access; this is not established human benefit.",
+  "Chemokine or dendritic-cell recruitment can be tested with spatial measurements and controlled perturbations. A response signature or altered cell count alone does not establish restoration of the entire immune response.",
+  "Engagers, engineered cells and vaccines still require suitable targets, access and function. Their recognition mechanisms differ, and none can be assumed to bypass every cause of an immune-poor pattern."
+],
+    targets: [
+  "pd1",
+  "pdl1",
+  "vegf",
+  "fap",
+  "ezh2",
+  "csf1r",
+  "cxcr4",
+  "ctnnb1"
+], drugs: ["talimogene-laherparepvec", "vusolimogene-oderparepvec", "ivonescimab", "adu-s100", "tazemetostat"], technologies: ["checkpoint-inhibitor", "oncolytic-virus", "in-situ-vaccination", "sting-agonist", "sbrt", "epigenetic-drugs", "t-cell-engager", "single-cell-spatial", "il12-electroporation"], terms: ["cold-vs-hot", "immune-exclusion", "tils", "tmb", "cps", "desmoplasia"], pathways: ["tgf-beta", "wnt", "cgas-sting", "tumor-microenvironment", "cancer-immunity-cycle", "myeloid-suppression-axis"], bottlenecks: ["b-immunotherapy-response", "b-tme-immunosuppression"],
+    links: [
+  {
+    "label": "Chen & Mellman, Elements of cancer immunity and the cancer-immune set point (Nature 2017)",
+    "url": "https://doi.org/10.1038/nature21349"
+  },
+  {
+    "label": "Spranger, Bao & Gajewski, Melanoma-intrinsic β-catenin signalling prevents anti-tumour immunity (Nature 2015)",
+    "url": "https://doi.org/10.1038/nature14404"
+  },
+  {
+    "label": "Elements of cancer immunity and the cancer-immune set point.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28102259/"
+  },
+  {
+    "label": "Melanoma-intrinsic β-catenin signalling prevents anti-tumour immunity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25970248/"
+  },
+  {
+    "label": "Up-regulation of PD-L1, IDO, and T(regs) in the melanoma tumor microenvironment is driven by CD8(+) T cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23986400/"
+  },
+  {
+    "label": "Spatial immunophenotypes predict response to anti-PD1 treatment and capture distinct paths of T cell evasion in triple negative breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34580291/"
+  },
+  {
+    "label": "Intratumoral Activity of the CXCR3 Chemokine System Is Required for the Efficacy of Anti-PD-1 Therapy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31097342/"
+  },
+  {
+    "label": "Targeting CXCL12 from FAP-expressing carcinoma-associated fibroblasts synergizes with anti-PD-L1 immunotherapy in pancreatic cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24277834/"
+  }
+],
+
+"asOf": "2026-11-11",
+"related": [
+  "cold-vs-hot",
+  "immune-exclusion",
+  "adaptive-immune-resistance",
+  "t-cell-exhaustion"
+]
+}),
   p({
     id: "myeloid-suppression-axis", name: "Myeloid suppression: TAMs, MDSCs & don't-eat-me signals", wikipedia: W("Tumor-associated_macrophage"),
     tldr: "Tumours recruit the body's clean-up cells (macrophages and immature myeloid cells) and re-train them as bodyguards. They switch off T cells, build vessels, and, when a therapeutic antibody flags a cancer cell for eating, are told 'don't eat me' by CD47 on its surface.",
@@ -676,22 +885,187 @@ export const mechanicsPathways: PathwayInput[] = [
 }),
   p({
     id: "nk-cell-recognition", name: "NK-cell recognition: missing self & stress ligands", wikipedia: W("Natural_killer_cell"),
-    tldr: "Natural killer cells patrol for cells that have lost their identity papers (MHC-I) or that display stress flags. Cancers that hide from T cells by dropping MHC-I become visible to NK cells, unless they also shed the stress flags, wrap themselves in a second inhibitory badge (HLA-E), or soak the neighbourhood in TGF-β.",
-    summary: "NK activation integrates inhibitory signals from KIRs and NKG2A (binding classical HLA-A/B/C and HLA-E respectively; 'missing self' when MHC-I is lost) against activating signals from NKG2D (MICA/B, ULBP1-6, induced by DNA damage and oncogenes), DNAM-1 (CD155, CD112), NKp30 (B7-H6), NKp46, and CD16 (FcγRIIIa, mediating ADCC by IgG1 antibodies such as trastuzumab and cetuximab). Killing is by perforin/granzyme and death ligands; IFN-γ recruits and licenses the adaptive response. Tumour escape: proteolytic shedding of MICA/B (ADAM10/17), HLA-E upregulation engaging NKG2A (monalizumab, mixed results), TIGIT and PVRIG competing with DNAM-1 for CD155, TGF-β and adenosine downregulating NKG2D, platelet cloaking of CTCs. NK cells are central to clearing circulating tumour cells and dormant cells and to controlling MHC-I-negative escape variants after checkpoint or CAR-T therapy. Therapeutics: CAR-NK (cord blood, iPSC-derived, off the shelf, low CRS), NK engagers (CD16×target), IL-15 superagonists (nogapendekin alfa approved in NMIBC), anti-NKG2A, antibody afucosylation to boost ADCC.",
-    analogy: "Guards who stop anyone not wearing a staff badge (MHC-I) or anyone visibly panicking (stress ligands). Cancer's trick against T cells (throwing away the badge) makes it conspicuous to these guards, so successful tumours also learn to stop panicking, borrow a visitor badge (HLA-E) and bribe the guards with TGF-β.",
+    tldr: "Natural killer cells integrate several receptor inputs. Loss of an inhibitory self signal can matter, but target ligands, prior education and the cell’s current state also affect whether it kills.",
+    summary: "Natural killer (NK) receptors are encoded in the germ line rather than assembled by the T-cell receptor’s somatic rearrangement process. They integrate complementary activating inputs with inhibitory signals; this is more complex than adding fixed on/off switches. Inhibitory motifs can recruit SHP phosphatases and suppress early activation, while several activating receptors signal through adaptors. Repertoire, receptor variants, prior education, cytokines and the target context matter. Some receptors also occur on T cells, and HLA-related recognition can depend on the bound peptide.\n\nInhibitory KIR2DL1 and KIR2DL2/3 recognize subsets of HLA-C; KIR3DL1 recognizes the Bw4 epitope on class-I molecules. Activating KIRs also exist, with variant-dependent ligands: curated examples include KIR2DS1/HLA-C and KIR3DS1/peptide-free HLA-F. CD94/NKG2A is inhibitory and reads peptide-loaded HLA-E; CD94/NKG2C is activating and bound HLA-E with lower affinity than NKG2A in the recombinant-protein study. CMV seropositivity was associated with NKG2C-rich repertoires in healthy donors. These are defined receptor-ligand findings, not interchangeable switches.",
+    analogy: "An NK cell integrates several permission and alarm signals, with responsiveness also shaped by its prior interactions. Removing an inhibitory signal can matter without being enough to trigger killing. Loss of a familiar class-I signal therefore raises a question about NK recognition rather than guaranteeing elimination.",
     nodes: [
-      { id: "mhc", label: "MHC-I → KIR (inhibit)", x: 12, y: 15 }, { id: "hlae", label: "HLA-E → NKG2A (inhibit)", x: 12, y: 45 }, { id: "stress", label: "MICA/B, ULBP → NKG2D", x: 12, y: 75 },
-      { id: "nk", label: "NK cell decision", x: 45, y: 45 }, { id: "cd16", label: "CD16 ← IgG1 antibody (ADCC)", x: 45, y: 12, targetId: "her2" }, { id: "tigit", label: "TIGIT vs DNAM-1 (CD155)", x: 45, y: 80, targetId: "tigit" },
-      { id: "kill", label: "Perforin, granzyme, IFN-γ", x: 78, y: 30 }, { id: "shed", label: "MICA shedding, TGF-β", x: 78, y: 65 }, { id: "carnk", label: "CAR-NK, IL-15, NK engagers", x: 92, y: 90 },
-    ],
+  {
+    "id": "mhc",
+    "label": "MHC-I → KIR (inhibit)",
+    "x": 12,
+    "y": 15
+  },
+  {
+    "id": "hlae",
+    "label": "HLA-E → NKG2A (inhibit)",
+    "x": 12,
+    "y": 45
+  },
+  {
+    "id": "stress",
+    "label": "MICA/B, ULBP → NKG2D",
+    "x": 12,
+    "y": 75
+  },
+  {
+    "id": "nk",
+    "label": "NK cell decision",
+    "x": 45,
+    "y": 45
+  },
+  {
+    "id": "cd16",
+    "label": "CD16 ← IgG1 antibody (ADCC)",
+    "x": 45,
+    "y": 12,
+    "targetId": "her2"
+  },
+  {
+    "id": "tigit",
+    "label": "TIGIT vs DNAM-1 (CD155)",
+    "x": 45,
+    "y": 80,
+    "targetId": "tigit"
+  },
+  {
+    "id": "kill",
+    "label": "Killing and cytokine outputs",
+    "x": 78,
+    "y": 30
+  },
+  {
+    "id": "shed",
+    "label": "MICA shedding, TGF-β",
+    "x": 78,
+    "y": 65
+  },
+  {
+    "id": "carnk",
+    "label": "CAR-NK, IL-15, NK engagers",
+    "x": 92,
+    "y": 90
+  }
+],
     edges: [
       { from: "mhc", to: "nk", type: "inhibits" }, { from: "hlae", to: "nk", type: "inhibits" }, { from: "stress", to: "nk" }, { from: "cd16", to: "nk" }, { from: "tigit", to: "nk", type: "inhibits" },
       { from: "nk", to: "kill" }, { from: "shed", to: "stress", type: "inhibits" }, { from: "shed", to: "nk", type: "inhibits" }, { from: "carnk", to: "nk" },
     ],
-    interventions: ["IgG1 antibodies (trastuzumab, cetuximab, rituximab) recruit NK ADCC; afucosylated antibodies (obinutuzumab, margetuximab) bind CD16 harder", "IL-15 superagonist nogapendekin alfa (BCG-unresponsive NMIBC); CAR-NK and NK engagers in trials", "Anti-NKG2A (monalizumab) and anti-TIGIT (tiragolumab) release inhibitory checks, with mixed phase 3 results", "NK-based therapies address MHC-I-loss escape from T-cell therapies"],
+    interventions: [
+  "Antibodies bound to a suitable target can engage CD16 and support antibody-dependent killing. Fc design matters: the MARGENZA label describes margetuximab as Fc-engineered and reports greater activating-receptor binding and NK activation in vitro; that is not a demonstration of benefit in every tumour.",
+  "Cytokine stimulation, engineered NK cells and NK-cell engagers investigate different ways to alter responsiveness or recognition. Their target, assay, disease and evidence stage must remain attached.",
+  "Blocking an inhibitory receptor tests a specific restraint. In INTERLINK-1, adding monalizumab to cetuximab did not improve overall survival in the studied recurrent or metastatic head-and-neck cancer population.",
+  "Class-I loss can reduce inhibitory inputs, but NK-based approaches still depend on activating inputs, access and functional competence. T-cell escape does not automatically create NK sensitivity."
+],
     targets: ["tigit", "her2", "egfr", "cd20", "cd38", "pd1"], drugs: ["trastuzumab", "cetuximab", "rituximab", "obinutuzumab", "margetuximab", "daratumumab", "nogapendekin-alfa", "tiragolumab"], technologies: ["car-nk-macrophage", "monoclonal-antibody", "cytokine-therapy", "allogeneic-cell-therapy", "bispecific-antibody"], terms: ["adcc", "fc-effector", "bcg-unresponsive", "avoiding-immune-destruction"], pathways: ["antigen-presentation-immunoediting", "extrinsic-apoptosis-death-receptors", "tgf-beta", "intravasation-ctc-survival", "tumor-dormancy"],
-    links: [{ label: "Morvan & Lanier, NK cells and cancer: you can teach innate cells new tricks (Nat Rev Cancer 2016)", url: "https://doi.org/10.1038/nrc.2015.5" }],
-  }),
+    links: [
+  {
+    "label": "Morvan & Lanier, NK cells and cancer: you can teach innate cells new tricks (Nat Rev Cancer 2016)",
+    "url": "https://doi.org/10.1038/nrc.2015.5"
+  },
+  {
+    "label": "Controlling natural killer cell responses: integration of signals for activation and inhibition.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23516982/"
+  },
+  {
+    "label": "Up on the tightrope: natural killer cell activation and inhibition.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18425106/"
+  },
+  {
+    "label": "MHC class I molecules and KIRs in human history, health and survival.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15719024/"
+  },
+  {
+    "label": "HLA-E binds to natural killer cell receptors CD94/NKG2A, B and C.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9486650/"
+  },
+  {
+    "label": "Kinetics and peptide dependency of the binding of the inhibitory NK receptor CD94/NKG2-A and the activating receptor CD94/NKG2-C to HLA-E.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10428963/"
+  },
+  {
+    "label": "Imprint of human cytomegalovirus infection on the NK cell receptor repertoire.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15304389/"
+  },
+  {
+    "label": "Activation of NK cells and T cells by NKG2D, a receptor for stress-inducible MICA.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10426993/"
+  },
+  {
+    "label": "ULBPs, novel MHC class I-related molecules, bind to CMV glycoprotein UL16 and stimulate NK cytotoxicity through the NKG2D receptor.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11239445/"
+  },
+  {
+    "label": "The interaction of TIGIT with PVR and PVRL2 inhibits human NK cell cytotoxicity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19815499/"
+  },
+  {
+    "label": "Education of hyporesponsive NK cells by cytokines.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19701893/"
+  },
+  {
+    "label": "Tumour-derived soluble MIC ligands impair expression of NKG2D and T-cell activation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12384702/"
+  },
+  {
+    "label": "Anti-NKG2A mAb Is a Checkpoint Inhibitor that Promotes Anti-tumor Immunity by Unleashing Both T and NK Cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30503213/"
+  },
+  {
+    "label": "INTERLINK-1: A Phase III, Randomized, Placebo-Controlled Study of Monalizumab plus Cetuximab in Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40300079/"
+  },
+  {
+    "label": "UniProt reviewed KIR2DL2 function",
+    "url": "https://www.uniprot.org/uniprotkb/P43627/entry"
+  },
+  {
+    "label": "UniProt reviewed KIR2DL3 function",
+    "url": "https://www.uniprot.org/uniprotkb/P43628/entry"
+  },
+  {
+    "label": "UniProt reviewed KIR3DS1 function",
+    "url": "https://www.uniprot.org/uniprotkb/Q14943/entry"
+  },
+  {
+    "label": "UniProt reviewed KIR2DS1 function",
+    "url": "https://www.uniprot.org/uniprotkb/Q14954/entry"
+  },
+  {
+    "label": "UniProt reviewed KIR2DL1 function",
+    "url": "https://www.uniprot.org/uniprotkb/P43626/entry"
+  },
+  {
+    "label": "UniProt reviewed KIR3DL1 function",
+    "url": "https://www.uniprot.org/uniprotkb/P43629/entry"
+  },
+  {
+    "label": "IPD-KIR: gene content, haplotypes and proteins",
+    "url": "https://www.ebi.ac.uk/ipd/kir/about/"
+  },
+  {
+    "label": "MARGENZA label, description and mechanism of action",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a6d50c7-06ea-479c-83cc-f197a9e428c9"
+  }
+],
+
+"asOf": "2026-11-11",
+"notes": [
+  "NKG2D is activating and recognizes stress-related MICA, MICB and ULBP ligands; it also occurs on CD8 and gamma-delta T cells. NKp30, NKp44 and NKp46 are natural cytotoxicity receptors with adaptor-dependent signalling. Activating DNAM-1/CD226 recognizes CD155 and CD112; inhibitory TIGIT recognizes this ligand system as well. CD16 recognizes antibody Fc and can supply antibody-dependent cellular cytotoxicity. Fc design changes that interaction. Receptor identity is different from the cancer antigen bound by an antibody, and Long’s review describes conditions in which CD16 can activate resting NK cells without the complementary inputs required by several other tested receptors. Shared ligand recognition does not by itself measure relative affinity, competitive occupancy or which receptor input dominates in a particular cell and target pair.",
+  "Education tunes responsiveness. NK cells with matched self-HLA inhibitory interactions can be more responsive to later activating stimuli, while unmatched cells can be hyporesponsive. In Juelke’s human-cell experiments, cytokine-stimulated hyporesponsive cells acquired competence when they acquired KIR in the presence of its cognate MHC. This is not a fixed panel present identically on every NK cell. Removing one inhibitory HLA interaction is not necessarily removal of all restraints or a sufficient activation signal.",
+  "Groh found reduced NKG2D on tumour-infiltrating and matched blood T cells in people with cancer, associated with circulating soluble tumour-derived MICA and impaired tumour-antigen-specific T-cell responsiveness. That human observation should not silently become a measurement of every NK cell. André’s NKG2A-blockade work supported NK and CD8 activity in laboratory and mouse systems and reported an early combination-trial signal. Those observations did not establish comparative clinical efficacy.",
+  "INTERLINK-1 tested monalizumab plus cetuximab against placebo plus cetuximab after checkpoint therapy and platinum progression in recurrent/metastatic head-and-neck cancer. The HPV-unrelated primary analysis set contained 216 participants, randomized 2:1. Median overall survival was 8.8 versus 8.6 months, HR 1.00 (95% CI 0.66 to 1.54); the trial met its prespecified futility criterion. This negative comparison does not support a general claim of clinical success for NKG2A blockade.",
+  "Flow cytometry measures receptor proteins on defined viable populations; KIR/HLA genotyping identifies possible pairs; tissue protein or RNA tests ask about ligands; a controlled NK-target assay measures killing. A fictional target lacking all measured HLA restraints but lacking measured activating ligands need not be killed. An antibody engaging CD16 supplies a further hypothesis to test. Receptor expression, degranulation, target death, tumour entry and patient benefit remain separate measurements.",
+  "An activating-KIR label does not imply that the gene is present in every person or that its ligand is interchangeable with another receptor’s. IPD-KIR describes haplotypes with different numbers and combinations of KIR genes, including activating genes. Genotyping establishes gene presence rather than protein expression on every NK cell. Long’s 2013 review noted unidentified ligands for some activation receptors; the named receptor-variant assignments above are individual examples, not a complete ligand map."
+],
+"related": [
+  "nk-cell",
+  "b2m",
+  "hla",
+  "klrc1",
+  "monalizumab",
+  "perioperative-immune-window"
+]
+}),
 
   // ------------------------------------------------------------------ 7. Invasion and metastasis
   p({

@@ -403,7 +403,7 @@ const frontierRadical: EntityInput[] = [
     links: [{"label":"ClinicalTrials.gov: logic-gated CAR T","url":"https://clinicaltrials.gov/search?term=logic%20gated%20CAR%20T"},{"label":"Kloss et al.: balanced activation and costimulation in tumor models (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/23242161/"},{"label":"Zah et al.: CD19/CD20 OR-like recognition in tumor models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27059623/"},{"label":"Zah et al.: experimental addendum on cell viability and OR-gate results (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27371639/"},{"label":"Fedorov et al.: inhibitory CARs in defined experimental systems (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/24337479/"},{"label":"Roybal et al.: sequential synNotch-CAR circuit and priming/decay tests (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/26830879/"},{"label":"FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)","url":"https://www.fda.gov/media/156896/download"}],
   },
   {
-    id: "in-situ-vaccination", companies: ["trogenix", "aummune", "onchilles-pharma", "syncromune"], trials: ["nct05688280"], kind: "technology", name: "In situ vaccination", sections: ["immunotherapy"], status: "phase-2", asOf: "2026-11-09",
+    id: "in-situ-vaccination", companies: ["trogenix", "aummune", "onchilles-pharma", "syncromune"], trials: ["nct05688280"], kind: "technology", name: "In situ vaccination", sections: ["immunotherapy"], status: "phase-2", asOf: "2026-11-11",
     tldr: "In situ vaccination aims to use antigens at a tumour site to stimulate useful immune recognition. Local destruction does not automatically make the tumour a successful vaccine.",
     summary: "Local treatment can supply tumour antigens, and an adjuvant or other immune intervention may support their presentation and priming. The proposal needs evidence for each step and for useful immune effects in the relevant host and setting. It does not guarantee recognition of every antigen or every lesion.\n\nInjury, danger signals, immune-cell changes, distant lesion responses and comparative patient outcomes are different observations. The actual local method and accompanying treatments must be named. A response during combined treatment does not isolate which component caused it.",
     principle: "Use a treated lesion as an antigen source while seeking effective presentation and adaptive immune recognition; the hypothesised chain requires experimental and clinical evidence.",
@@ -411,8 +411,41 @@ const frontierRadical: EntityInput[] = [
     limitations: ["Local injury or marker release does not establish protective immunity","Access and delivery requirements depend on the chosen method","Whole-regimen benefit, harms and distant effects need their own evidence"],
     technologies: ["oncolytic-virus", "sting-agonist", "sbrt", "hifu-histotripsy", "cytokine-therapy", "thermal-ablation"], terms: ["abscopal-effect", "immunogenic-cell-death"], cancers: ["melanoma", "dlbcl"],
     tags: ["frontier", "promising"],
-    links: [{"label":"ClinicalTrials.gov: in situ vaccination cancer","url":"https://clinicaltrials.gov/search?term=in%20situ%20vaccination%20cancer"},{"label":"ICD consensus: antigens, host, assay and model requirements","url":"https://pubmed.ncbi.nlm.nih.gov/32209603/"}],
+    links: [
+  {
+    "label": "ClinicalTrials.gov: in situ vaccination cancer",
+    "url": "https://clinicaltrials.gov/search?term=in%20situ%20vaccination%20cancer"
   },
+  {
+    "label": "ICD consensus: antigens, host, assay and model requirements",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+  },
+  {
+    "label": "In situ vaccination with a TLR9 agonist induces systemic lymphoma regression: a phase I/II study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20697067/"
+  },
+  {
+    "label": "Systemic clinical tumor regressions and potentiation of PD1 blockade with in situ vaccination.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30962585/"
+  },
+  {
+    "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+  }
+],
+
+"notes": [
+  "The strategy uses relevant tumour antigens in place while supporting presenting cells and immune activation. Antigen availability, uptake and processing, cross-presentation, suitable priming, access to another lesion, recognition of naturally displayed targets and useful function are conditional jobs. Local injury can supply material without establishing all these steps, and danger signals alone do not establish immunogenic cell death. An uninjected lesion can still be exposed to systemic drugs.",
+  "Intratumoral immunotherapy describes a delivery route and treatment purpose; in-situ vaccination describes a proposed learning strategy. Not every injected cytotoxic or immune-directed treatment is a vaccine. Local shrinkage, antigen-reactive blood responses, distant control and longer-term clinical benefit are different outcomes, and a multicomponent result does not isolate each component’s contribution.",
+  "Brody’s early study combined low-dose radiation and an injected CpG TLR9 agonist in 15 people with low-grade B-cell lymphoma. Hammerich combined Flt3 ligand, radiation and the TLR3 agonist poly-ICLC in indolent lymphoma with accompanying models. The latter report’s restored sensitivity to PD-1 blockade was demonstrated in mice; it is not established human combination benefit or evidence for every injection or a breast-cancer regimen.",
+  "Assessment combines local sampling, controlled immune assays and serial treated/uninjected-lesion measurements. Tissue, blood and viable cells are finite inputs. Keep local change, specified reactive-cell counts or functions, and response proportions under their stated rules separate. No universal marker proves successful vaccination. Nonspecific inflammation, added peptide, viability, missed sampling times and concurrent therapy can confound results; a model or assay needs separate clinical validation of the complete intervention.",
+  "Added peptide can bypass natural processing. Appropriate naturally presenting targets and recognition or cytotoxicity controls address a separate bridge, within the model’s limits. In a fictional study, the injected lesion shrinks and blood cells respond to supplied tumour peptides, while another lesion is unchanged. Local activity and assay reactivity were observed; natural recognition, access and useful distant function remain unproven. The unchanged lesion also does not establish absence of every immune-learning event."
+],
+"related": [
+  "abscopal-effect",
+  "cancer-immunity-cycle"
+]
+},
   {
     id: "interception-vaccination", companies: ["rinuagene-biotechnology"], kind: "technology", name: "Cancer interception vaccines", sections: ["prevention", "immunotherapy"], status: "phase-2", asOf: RAD,
     tldr: "Cancer interception vaccines immunise people who do not yet have cancer but carry a high inherited risk, such as Lynch syndrome carriers, against the antigens their future tumour is predicted to express, so memory T cells remove transformed cells early. Because healthy people accept risk for a probabilistic benefit, the safety bar is far higher and trials take years.",

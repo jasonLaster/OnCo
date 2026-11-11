@@ -2,6 +2,17 @@
 
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
+## 2026-11-11
+
+### Tumour immunology and experimental scope
+
+- **Pathway maps:** removed claims that an inflamed pattern guarantees PD-1 response, that a class-I-loss tumour is automatically killed by NK cells, or that fixing one cancer-immunity-cycle step predicts cure. Antigen presentation, recognition, tissue access and useful killing remain separate dependencies. The beta-catenin recruitment example no longer combines PTEN loss with an unrelated PIK3CA target.
+- **NK and antibody mechanisms:** the receptor map distinguishes activating and inhibitory inputs, education and measured function. Margetuximab is described as Fc-engineered, rather than grouped as an afucosylated antibody. Its label's receptor-binding and NK-activation findings retain their in-vitro scope. The negative INTERLINK-1 comparison is kept beside earlier laboratory findings. Sources: [Long et al.](https://pubmed.ncbi.nlm.nih.gov/23516982/), [MARGENZA label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a6d50c7-06ea-479c-83cc-f197a9e428c9), [INTERLINK-1](https://pubmed.ncbi.nlm.nih.gov/40300079/).
+- **Interferon and CD4 readouts:** impaired interferon inducibility is separated from loss of all baseline recognition. STAT1, STAT2, STAT3 and IRF1 retain the melanoma experiments' actual scope. A FOXP3 stain alone does not establish suppression, and CD4 includes experimentally demonstrated cytotoxic states. Sources: [Zaretsky et al.](https://pubmed.ncbi.nlm.nih.gov/27433843/), [Garcia-Diaz et al.](https://pubmed.ncbi.nlm.nih.gov/28494868/), [Tran et al.](https://pubmed.ncbi.nlm.nih.gov/17644734/), [Oh et al.](https://pubmed.ncbi.nlm.nih.gov/32497499/).
+- **Spatial and clinical interpretation:** tumour-location labels, stromal-area scores and counted-cell fractions have different denominators. Pancreatic mouse mechanisms no longer establish a rule for all human pancreatic tumours or the only possible responder group. Perioperative biomarker findings, anaesthesia trial endpoints and combined local/systemic treatment effects retain their separate populations and comparison limits.
+
+The [tumour-immunology checkpoint](research/education-coverage-2026-11-08/tumor-immunology-2026-11-11/README.md) records both source inventories, exact draft fields and source-access limits. These additions do not certify every retained historical claim, expert review, a named-language translation or main/live publication.
+
 ## 2026-11-10
 
 ### Pneumonitis attribution and product-specific labels

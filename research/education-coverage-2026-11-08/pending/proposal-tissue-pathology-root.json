@@ -123,9 +123,9 @@
         "tumor-infiltrating lymphocytes",
         "tumour-infiltrating lymphocyte"
       ],
-      "tldr": "Tumour-infiltrating lymphocytes are immune cells in tumour tissue. Stromal TIL scoring estimates their area within eligible stroma; prognosis and treatment selection are separate questions.",
-      "summary": "Tumour-infiltrating lymphocytes (TILs) are immune cells in tumour tissue. The breast stromal TIL method estimates the area occupied by a defined mononuclear inflammatory infiltrate within eligible tumour-associated stroma on H&E sections. Higher pretreatment scores were associated with better outcomes in the cited early triple-negative breast cancer cohorts, but those associations do not guarantee an individual outcome or establish extra benefit from pembrolizumab. Intratumoral location, stromal area, immune-cell counts and cells expanded for TIL therapy are different measurements or uses.",
-      "asOf": "2026-11-10",
+      "tldr": "Tumour-infiltrating lymphocytes are lymphocytes found in tumour tissue. Their identity, location, measurement denominator and function answer different questions.",
+      "summary": "Tumour-infiltrating lymphocytes (TILs) are lymphocytes found in sampled tumour tissue, including T- and B-cell populations. The breast stromal TIL method estimates the area occupied by a defined mononuclear inflammatory infiltrate within eligible tumour-associated stroma on H&E sections. Higher pretreatment scores were associated with better outcomes in the cited early triple-negative breast cancer cohorts, but those associations do not guarantee an individual outcome or establish extra benefit from pembrolizumab. Intratumoral location, stromal area, immune-cell counts and cells expanded for TIL therapy are different measurements or uses.",
+      "asOf": "2026-11-11",
       "wikipedia": "https://en.wikipedia.org/wiki/Tumor-infiltrating_lymphocytes",
       "links": [
         {
@@ -147,11 +147,21 @@
         {
           "label": "Working Group residual-disease assessment recommendations",
           "url": "https://tilsinbreastcancer.org/wp-content/uploads/2017/10/Suppl-File-3-Recommendations-for-assessing-tumor-infiltrating-lymphocytes-TILs-in-RD.pdf"
+        },
+        {
+          "label": "Bystander CD8&lt;sup&gt;+&lt;/sup&gt; T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+        },
+        {
+          "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25214542/"
         }
       ],
       "tags": [],
       "related": [
-        "tumor-stroma-ratio"
+        "tumor-stroma-ratio",
+        "cold-vs-hot",
+        "cd4-t-cell-subsets"
       ],
       "cancers": [
         "tnbc"
@@ -181,7 +191,11 @@
         "Fictional area exercise: region A has 4 units of eligible stroma with 0.4 occupied by infiltrate; region B has 1 unit with 0.6 occupied. Pooled occupied area is (0.4 + 0.6)/(4 + 1) = 20%. Averaging the regional percentages without area weighting gives (10% + 60%)/2 = 35%. This arithmetic illustrates the denominator; it does not prescribe a pixel workflow for clinical semiquantitative scoring.",
         "A fictional sTIL estimate of 30% means that the defined mononuclear infiltrate occupies about 30% of eligible stromal area. It does not mean 30% of all cells are lymphocytes or CD8 cells, or that 30% of cancer cells are being killed. Intratumoral TILs, positive-nucleus fractions, cells per square millimetre and bulk immune RNA measure different things. Additional stains change the measurement rather than silently changing its denominator.",
         "Residual-disease recommendations assess the residual tumour bed rather than simply reusing untreated invasive borders. Keep specimen type, site, treatment setting and observer calibration. A high score does not prove tumour-specific recognition, entry into every malignant nest or a permanent hot-tumour state.",
-        "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection."
+        "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection.",
+        "TIL is a location label, CD8 is a phenotype and antigen specificity is another property. Simoni found bystander CD8 cells recognizing viral rather than cancer epitopes in human lung and colorectal tumours; the study’s CD39 associations are not a universal test of every cell’s target. A functional assay compares defined effectors and targets with recognition and target-survival controls. Neither presence, cytokine release nor one killing assay reproduces every access barrier or establishes clinical benefit.",
+        "The Loi analysis pooled nine studies. In its node-negative subgroup with at least 30% stromal TILs, three-year overall survival was 99% (95% CI 97% to 100%) after the specified adjuvant chemotherapy. Denkert’s pooled neoadjuvant population contained 3,771 patients overall, including the 906 TNBC patients described above. These population and subgroup findings do not make the study categories universal beneficial-TIL thresholds or establish additional pembrolizumab benefit by score.",
+        "In a fictional section, 0.4 square millimetres of mononuclear infiltrate within 2 square millimetres of eligible stroma gives 20% by area. Separately, 30 CD8 cells among 100 counted lymphocytes gives 30% of those counted lymphocytes. Neither is the fraction of all tumour cells, a measure of cancer specificity or evidence of useful killing. One occupied unit among five equal eligible stromal-area units also gives 20%; the drawing illustrates a denominator rather than prescribing pixel counting for semiquantitative breast scoring.",
+        "Fixed sections and morphology or selected stains can measure identity, compartment and abundance; viable-cell assays ask about phenotype and function. Dissociation loses native location, culture can select populations and tests consume finite material. Keep cells per square millimetre, specified cell fractions, stromal-area percentages and assay-specific function distinct. TIL therapy is a manufactured expanded-cell product: a tissue count does not establish product yield, composition, potency or treatment success. Sampling, damage, mixed compartments, unsuitable markers and culture selection are different failure modes, and descriptive pathology, research function and clinical treatment selection require different validation."
       ],
       "category": "Biomarkers"
     },

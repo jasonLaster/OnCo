@@ -41,7 +41,7 @@ export const simpleB: Record<string, string> = {
   ihc: "Staining a slice of tissue with antibodies so a protein shows up in colour under the microscope.",
   "her2-low": "Tumours with just a little HER2, which older HER2 drugs ignored but Enhertu can attack.",
   cps: "CPS compares certain PD-L1-stained tumour and immune cells with the number of viable tumour cells. The assay and treatment setting determine how the score is used.",
-  tils: "These are immune cells in tumour tissue. A stromal TIL score estimates the area they occupy in the tissue between tumour cells; it does not promise a better outcome or select a treatment.",
+  tils: "Tumour-infiltrating lymphocytes are lymphocytes in tumour tissue. Location, cell identity, the measurement denominator and useful function are separate questions.",
 
 
 
@@ -64,7 +64,7 @@ export const simpleB: Record<string, string> = {
 
 
   oligometastatic: "Cancer that has spread to only a few places, which may still be curable by treating each spot.",
-  "neoadjuvant-adjuvant": "Treatment given before surgery (neoadjuvant), after surgery (adjuvant), or both.",
+  "neoadjuvant-adjuvant": "Neoadjuvant treatment comes before surgery and adjuvant treatment after it. A regimen spanning both phases does not separately test how much each phase helped.",
   "first-line": "First-line is the first treatment for advanced cancer; second-line comes after it stops working, and so on.",
   "standard-of-care": "The treatment that guidelines and experts currently consider the best proven option.",
   "accelerated-approval": "Early FDA approval based on promising signs, on condition that a confirming trial follows.",
@@ -78,7 +78,7 @@ export const simpleB: Record<string, string> = {
   dosimetry: "Measuring how much radiation each organ and tumour actually received from a radioactive drug.",
   "germline-vs-somatic": "Germline changes are inherited and in every cell; somatic changes arise only in the tumour.",
 
-  "cold-vs-hot": "'Hot' tumours are full of immune cells and respond to immune drugs; 'cold' tumours keep the immune system out.",
+  "cold-vs-hot": "Hot, excluded and desert describe where specified immune cells were found in a sample. These patterns alone do not show cancer recognition, killing or treatment benefit.",
   "adc-sequencing": "The open question of whether a second antibody-drug works after the first one fails.",
 
   // ---- pathways ----

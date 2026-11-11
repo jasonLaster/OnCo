@@ -66,3 +66,7 @@ Final receptor/source-census gates pass: 22,720 entities, typecheck, lint (seven
 ## Cancer-biology checkpoint, 10 November 2026
 
 Fifteen original and fifteen later lessons assessed, with 173/178 version-specific requirements and a 178-unit union. Exact draft fields represent 177; the inaccessible CAF correction body leaves one partial. One matrix term is registered, 21 existing root owners and one shared owner are supplemented, and all 24 image files plus nine distinct diagrams are viewed. Both changed full suites and actual reader/JSON/Markdown checks pass. Original cumulative assessment is 336/537 (324 complete draft); later is 326/550 (325 complete draft). Original/later open requirement counts are eight/one. Source inventories overlap; main/live credit remains zero.
+
+## Tumour-immunology checkpoint, 11 November 2026
+
+Twelve later and seven original lessons assessed: 19 versions, 215 section signatures and a 209-unit union, retaining 110 original/208 later requirements. 208 union requirements are represented; the inaccessible Garcia-Diaz correction body leaves one later-only partial. Four concepts are registered, 13 existing root owners and one shared owner supplemented. All 12 theme files and four unique diagrams are viewed. Both changed full chains, exact readers and actual JSON/Markdown/OpenAPI generators pass. Cumulative original assessment is 343/537 (331 complete drafts); later is 338/550 (336 complete drafts). Open assessed requirement counts are eight/two. These are separate overlapping inventories; main/live credit remains zero.

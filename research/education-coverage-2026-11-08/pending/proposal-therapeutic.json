@@ -1949,7 +1949,7 @@
       ],
       "tldr": "Natural killer cells integrate activating and inhibitory inputs to respond to abnormal cells. An added CAR supplies another recognition route; missing self is one input rather than a guarantee of killing.",
       "summary": "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters. The principle comes from mouse experiments: lymphoma cells selected for loss of H-2 were less malignant at low dose and were rejected by a non-adaptive mechanism, which suggested that natural killer cells are effectors in a defence system geared to detect reduced self MHC (Kärre et al., 1986); that does not guarantee the same outcome for any human tumour. MHC class I molecules are ligands for killer-cell immunoglobulin-like receptors (Parham, 2005): two-domain KIR2D receptors bind HLA-C alleles and three-domain KIR3D receptors bind HLA-A and HLA-B alleles, and the KIR family includes activating as well as inhibitory members (Mariuzza et al., 2025). CD94/NKG2A binds HLA-E, and HLA-E surface expression was enough to protect target cells from lysis by CD94/NKG2A-positive NK clones (Braud et al., 1998). NKG2D binds class I-related proteins including MICA, MICB and ULBP1 to 3 (Mariuzza et al., 2025), and engagement of NKG2D activated NK and gamma-delta T-cell cytolysis against epithelial tumour cells expressing MICA (Bauer et al., 1999). No single activating receptor dominates, since NK cells integrate synergistic signals from several (Long et al., 2013), and responsiveness depends on prior education: in human cell experiments, cytokine stimulation let hyporesponsive NK cells acquire KIR and function when the cognate MHC was present (Juelke et al., 2009). Loss of one HLA allele is not loss of all class I. Loss of beta-2 microglobulin removed surface class I in one of four relapsing melanoma patients (Zaretsky et al., 2016), and because HLA-E is assembled with beta-2 microglobulin, the KIR and NKG2A restraints would be expected to lift together; that last step is an inference not tested in the cited abstracts. A flow-based cytotoxicity assay that stains target and effector nuclei separately and distinguishes live from dead nuclei has been validated with NK-92 cells, CAR-T cells and tumour-infiltrating lymphocytes (Rabinovich et al., 2019). Target death is not a count of effector cells that released granule contents: surface CD107a marked NK cells that degranulated after stimulation with MHC-devoid targets and correlated with lysis, and also marked a large subset that did not secrete cytokine, so different readouts count different cells (Alter et al., 2004). CD16 is a low-affinity Fc receptor for IgG that mediates antibody-dependent cellular cytotoxicity by NK cells (Liu, 2022), a route separate from missing-self recognition. Neither assay readout shows tumour entry or clinical benefit.",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "wikipedia": "https://en.wikipedia.org/wiki/Natural_killer_cell",
       "links": [
         {
@@ -2003,6 +2003,14 @@
         {
           "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
           "url": "https://doi.org/10.21769/bioprotoc.4285"
+        },
+        {
+          "label": "Controlling natural killer cell responses: integration of signals for activation and inhibition.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23516982/"
+        },
+        {
+          "label": "Kinetics and peptide dependency of the binding of the inhibitory NK receptor CD94/NKG2-A and the activating receptor CD94/NKG2-C to HLA-E.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10428963/"
         }
       ],
       "tags": [],
@@ -2011,7 +2019,9 @@
         "immune-system",
         "adcc",
         "antibody",
-        "fc-effector"
+        "fc-effector",
+        "nk-cell-recognition",
+        "perioperative-immune-window"
       ],
       "cancers": [],
       "sections": [],
@@ -2038,7 +2048,8 @@
       "dependsOn": [],
       "notes": [
         "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
-        "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."
+        "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families.",
+        "The receptor-level map separates inhibitory KIR/HLA and NKG2A/HLA-E interactions from activating stress-ligand and antibody-Fc inputs. Receptor proteins, genotype, ligand expression, degranulation and controlled target killing are different readouts. A loss of inhibitory display without adequate activating input does not guarantee killing, and a perioperative blood NK measurement does not describe every residual-disease site."
       ],
       "category": "Biology basics"
     },
@@ -6747,7 +6758,7 @@
       "tldr": "In situ vaccination aims to use antigens at a tumour site to stimulate useful immune recognition. Local destruction does not automatically make the tumour a successful vaccine.",
       "summary": "Local treatment can supply tumour antigens, and an adjuvant or other immune intervention may support their presentation and priming. The proposal needs evidence for each step and for useful immune effects in the relevant host and setting. It does not guarantee recognition of every antigen or every lesion.\n\nInjury, danger signals, immune-cell changes, distant lesion responses and comparative patient outcomes are different observations. The actual local method and accompanying treatments must be named. A response during combined treatment does not isolate which component caused it.",
       "status": "phase-2",
-      "asOf": "2026-11-09",
+      "asOf": "2026-11-11",
       "links": [
         {
           "label": "ClinicalTrials.gov: in situ vaccination cancer",
@@ -6756,13 +6767,28 @@
         {
           "label": "ICD consensus: antigens, host, assay and model requirements",
           "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "In situ vaccination with a TLR9 agonist induces systemic lymphoma regression: a phase I/II study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20697067/"
+        },
+        {
+          "label": "Systemic clinical tumor regressions and potentiation of PD1 blockade with in situ vaccination.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30962585/"
+        },
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
         }
       ],
       "tags": [
         "frontier",
         "promising"
       ],
-      "related": [],
+      "related": [
+        "abscopal-effect",
+        "cancer-immunity-cycle"
+      ],
       "cancers": [
         "melanoma",
         "dlbcl"
@@ -6800,7 +6826,13 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "The strategy uses relevant tumour antigens in place while supporting presenting cells and immune activation. Antigen availability, uptake and processing, cross-presentation, suitable priming, access to another lesion, recognition of naturally displayed targets and useful function are conditional jobs. Local injury can supply material without establishing all these steps, and danger signals alone do not establish immunogenic cell death. An uninjected lesion can still be exposed to systemic drugs.",
+        "Intratumoral immunotherapy describes a delivery route and treatment purpose; in-situ vaccination describes a proposed learning strategy. Not every injected cytotoxic or immune-directed treatment is a vaccine. Local shrinkage, antigen-reactive blood responses, distant control and longer-term clinical benefit are different outcomes, and a multicomponent result does not isolate each component’s contribution.",
+        "Brody’s early study combined low-dose radiation and an injected CpG TLR9 agonist in 15 people with low-grade B-cell lymphoma. Hammerich combined Flt3 ligand, radiation and the TLR3 agonist poly-ICLC in indolent lymphoma with accompanying models. The latter report’s restored sensitivity to PD-1 blockade was demonstrated in mice; it is not established human combination benefit or evidence for every injection or a breast-cancer regimen.",
+        "Assessment combines local sampling, controlled immune assays and serial treated/uninjected-lesion measurements. Tissue, blood and viable cells are finite inputs. Keep local change, specified reactive-cell counts or functions, and response proportions under their stated rules separate. No universal marker proves successful vaccination. Nonspecific inflammation, added peptide, viability, missed sampling times and concurrent therapy can confound results; a model or assay needs separate clinical validation of the complete intervention.",
+        "Added peptide can bypass natural processing. Appropriate naturally presenting targets and recognition or cytotoxicity controls address a separate bridge, within the model’s limits. In a fictional study, the injected lesion shrinks and blood cells respond to supplied tumour peptides, while another lesion is unchanged. Local activity and assay reactivity were observed; natural recognition, access and useful distant function remain unproven. The unchanged lesion also does not establish absence of every immune-learning event."
+      ],
       "principle": "Use a treated lesion as an antigen source while seeking effective presentation and adaptive immune recognition; the hypothesised chain requires experimental and clinical evidence.",
       "strengths": [
         "Can investigate tumour-derived antigens without preselecting every sequence",
@@ -6821,7 +6853,7 @@
       ],
       "tldr": "An abscopal response is regression outside an irradiated area, studied as a possible systemic effect of local radiation. Observing it does not by itself establish the cause or an added survival benefit.",
       "summary": "Responses at non-irradiated sites motivate investigation of immune effects of local radiation. Keep the irradiated and unirradiated lesions, other treatments and observation times explicit. A proposed immune mechanism needs more than local injury or circulating markers.\n\nA case or uncontrolled combination cannot isolate the added effect of radiation. Comparative local-treatment studies must retain their populations and endpoints: a response outside the field, progression-free survival, overall survival and symptom relief are different outcomes.",
-      "asOf": "2026-11-09",
+      "asOf": "2026-11-11",
       "wikipedia": "https://en.wikipedia.org/wiki/Abscopal_effect",
       "links": [
         {
@@ -6835,10 +6867,25 @@
         {
           "label": "CURB: population-specific randomised progression endpoint",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+        },
+        {
+          "label": "Ionizing radiation inhibition of distant untreated tumors (abscopal effect) is immune mediated.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14967443/"
+        },
+        {
+          "label": "Immunologic correlates of the abscopal effect in a patient with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22397654/"
+        },
+        {
+          "label": "Radiotherapy induces responses of lung cancer to CTLA-4 blockade.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30397353/"
         }
       ],
       "tags": [],
-      "related": [],
+      "related": [
+        "in-situ-vaccination",
+        "cancer-immunity-cycle"
+      ],
       "cancers": [],
       "sections": [],
       "technologies": [
@@ -6859,7 +6906,13 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "First define the irradiated field and the actual exposure of each lesion. A local response does not demonstrate a distant response. An uninjected-lesion response in an injection study is a different route-defined observation. During concurrent systemic treatment, distant shrinkage does not by itself isolate radiation’s contribution or demonstrate immune causation; local control, distant response, survival, symptoms and harms require separate assessment.",
+        "Demaria’s bilateral 67NR mammary-tumour mouse experiment combined local radiation with Flt3 ligand. The distant tumour grew more slowly under the combination, whereas radiation alone affected the irradiated tumour; antigen-mismatched and T-cell-deficient comparisons supported an immune-dependent component. This is a defined combined animal intervention, not a human response rate. Postow’s ipilimumab-plus-radiation melanoma report was one case with temporal immune correlates, not a study of frequency.",
+        "Formenti enrolled 39 people with chemotherapy-refractory metastatic non-small-cell lung cancer in a single-arm radiation-plus-ipilimumab study. At day 88, 21 had completed treatment and response assessment. Seven responses were 7/39, about 18% of those enrolled, or 7/21, about 33% of those evaluable. Seventeen received fewer than four cycles because they progressed or died before day 88; another completed four cycles without response assessment. These denominators answer different questions and neither estimates radiation-alone activity or an individual breast-cancer response probability.",
+        "To assess a distant effect, retain lesion exposure, serial imaging, prespecified response rules, timing and concurrent therapies. Report lesion changes separately from patient response proportions and their eligible denominators. Imaging is an input; optional tissue and immune tests use finite samples. Exposure misclassification, missing assessments, selected evaluable groups and concurrent-drug attribution can distort interpretation. There is no universal abscopal cutoff or percentage across cancers and regimens; case observations, model mechanisms and comparative clinical outcomes are different evidence tiers.",
+        "In a fictional combination study, an irradiated site is controlled while a lesion outside the field shrinks during systemic therapy. The observation is a distant response under that treatment context. It does not prove that radiation vaccinated the whole body, establish which component caused it or supply a general response frequency. Test exposure, relevant comparisons and the proposed immune mechanism separately."
+      ],
       "category": "Immunology"
     },
     {

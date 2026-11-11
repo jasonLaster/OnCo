@@ -255,7 +255,7 @@ export const terms: TermInput[] = [
   "pd-l1-cps"
 ]
 }),
-  t({ id: "tils", aka: ["tumor-infiltrating lymphocytes", "tumour-infiltrating lymphocyte"], name: "Tumour-infiltrating lymphocytes (TILs)", category: "Biomarkers", tldr: "Tumour-infiltrating lymphocytes are immune cells in tumour tissue. Stromal TIL scoring estimates their area within eligible stroma; prognosis and treatment selection are separate questions.", summary: "Tumour-infiltrating lymphocytes (TILs) are immune cells in tumour tissue. The breast stromal TIL method estimates the area occupied by a defined mononuclear inflammatory infiltrate within eligible tumour-associated stroma on H&E sections. Higher pretreatment scores were associated with better outcomes in the cited early triple-negative breast cancer cohorts, but those associations do not guarantee an individual outcome or establish extra benefit from pembrolizumab. Intratumoral location, stromal area, immune-cell counts and cells expanded for TIL therapy are different measurements or uses.", wikipedia: W("Tumor-infiltrating_lymphocytes"), cancers: ["tnbc"], technologies: ["til-therapy", "digital-pathology-ai"] ,
+  t({ id: "tils", aka: ["tumor-infiltrating lymphocytes", "tumour-infiltrating lymphocyte"], name: "Tumour-infiltrating lymphocytes (TILs)", category: "Biomarkers", tldr: "Tumour-infiltrating lymphocytes are lymphocytes found in tumour tissue. Their identity, location, measurement denominator and function answer different questions.", summary: "Tumour-infiltrating lymphocytes (TILs) are lymphocytes found in sampled tumour tissue, including T- and B-cell populations. The breast stromal TIL method estimates the area occupied by a defined mononuclear inflammatory infiltrate within eligible tumour-associated stroma on H&E sections. Higher pretreatment scores were associated with better outcomes in the cited early triple-negative breast cancer cohorts, but those associations do not guarantee an individual outcome or establish extra benefit from pembrolizumab. Intratumoral location, stromal area, immune-cell counts and cells expanded for TIL therapy are different measurements or uses.", wikipedia: W("Tumor-infiltrating_lymphocytes"), cancers: ["tnbc"], technologies: ["til-therapy", "digital-pathology-ai"] ,
 "notes": [
   "The breast stromal TIL method estimates the area occupied by mononuclear inflammatory cells, including lymphocytes and plasma cells, as a percentage of eligible tumour-associated stroma. It is not the percentage of all cells, a CD8-cell count or the fraction of cancer cells being killed.",
   "Define the eligible region and treatment setting before estimating the percentage. Use the specified exclusions for normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes, and assess the region overall rather than only its hottest spot. A prognostic association does not establish added benefit from a particular treatment.",
@@ -264,7 +264,11 @@ export const terms: TermInput[] = [
   "Fictional area exercise: region A has 4 units of eligible stroma with 0.4 occupied by infiltrate; region B has 1 unit with 0.6 occupied. Pooled occupied area is (0.4 + 0.6)/(4 + 1) = 20%. Averaging the regional percentages without area weighting gives (10% + 60%)/2 = 35%. This arithmetic illustrates the denominator; it does not prescribe a pixel workflow for clinical semiquantitative scoring.",
   "A fictional sTIL estimate of 30% means that the defined mononuclear infiltrate occupies about 30% of eligible stromal area. It does not mean 30% of all cells are lymphocytes or CD8 cells, or that 30% of cancer cells are being killed. Intratumoral TILs, positive-nucleus fractions, cells per square millimetre and bulk immune RNA measure different things. Additional stains change the measurement rather than silently changing its denominator.",
   "Residual-disease recommendations assess the residual tumour bed rather than simply reusing untreated invasive borders. Keep specimen type, site, treatment setting and observer calibration. A high score does not prove tumour-specific recognition, entry into every malignant nest or a permanent hot-tumour state.",
-  "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection."
+  "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection.",
+  "TIL is a location label, CD8 is a phenotype and antigen specificity is another property. Simoni found bystander CD8 cells recognizing viral rather than cancer epitopes in human lung and colorectal tumours; the study’s CD39 associations are not a universal test of every cell’s target. A functional assay compares defined effectors and targets with recognition and target-survival controls. Neither presence, cytokine release nor one killing assay reproduces every access barrier or establishes clinical benefit.",
+  "The Loi analysis pooled nine studies. In its node-negative subgroup with at least 30% stromal TILs, three-year overall survival was 99% (95% CI 97% to 100%) after the specified adjuvant chemotherapy. Denkert’s pooled neoadjuvant population contained 3,771 patients overall, including the 906 TNBC patients described above. These population and subgroup findings do not make the study categories universal beneficial-TIL thresholds or establish additional pembrolizumab benefit by score.",
+  "In a fictional section, 0.4 square millimetres of mononuclear infiltrate within 2 square millimetres of eligible stroma gives 20% by area. Separately, 30 CD8 cells among 100 counted lymphocytes gives 30% of those counted lymphocytes. Neither is the fraction of all tumour cells, a measure of cancer specificity or evidence of useful killing. One occupied unit among five equal eligible stromal-area units also gives 20%; the drawing illustrates a denominator rather than prescribing pixel counting for semiquantitative breast scoring.",
+  "Fixed sections and morphology or selected stains can measure identity, compartment and abundance; viable-cell assays ask about phenotype and function. Dissociation loses native location, culture can select populations and tests consume finite material. Keep cells per square millimetre, specified cell fractions, stromal-area percentages and assay-specific function distinct. TIL therapy is a manufactured expanded-cell product: a tissue count does not establish product yield, composition, potency or treatment success. Sampling, damage, mixed compartments, unsuitable markers and culture selection are different failure modes, and descriptive pathology, research function and clinical treatment selection require different validation."
 ],
 "links": [
   {
@@ -286,11 +290,21 @@ export const terms: TermInput[] = [
   {
     "label": "Working Group residual-disease assessment recommendations",
     "url": "https://tilsinbreastcancer.org/wp-content/uploads/2017/10/Suppl-File-3-Recommendations-for-assessing-tumor-infiltrating-lymphocytes-TILs-in-RD.pdf"
+  },
+  {
+    "label": "Bystander CD8&lt;sup&gt;+&lt;/sup&gt; T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+  },
+  {
+    "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25214542/"
   }
 ],
-"asOf": "2026-11-10",
+"asOf": "2026-11-11",
 "related": [
-  "tumor-stroma-ratio"
+  "tumor-stroma-ratio",
+  "cold-vs-hot",
+  "cd4-t-cell-subsets"
 ]
 }),
   t({ id: "tmb", name: "Tumour mutational burden (TMB)", category: "Biomarkers", tldr: "Tumour mutational burden is an assay-defined density of eligible DNA mutations, usually reported per million bases.", summary: "Tumour mutational burden divides eligible somatic mutation counts by an eligible DNA territory, commonly in mutations per megabase. Counting, origin filtering, calibration, specimen and quality rules affect the estimate. It does not directly measure immune recognition, copy-number instability or treatment response. A clinical threshold applies only within its validated assay and disease setting.", wikipedia: W("Tumor_mutational_burden"), technologies: ["cgp"], drugs: ["pembrolizumab"] ,
@@ -605,7 +619,44 @@ export const terms: TermInput[] = [
   t({ id: "icans", wikipedia: W("Cytokine_release_syndrome"), links: [{ label: "ASTCT consensus grading for CRS and ICANS (Lee et al., Biol Blood Marrow Transplant 2019)", url: "https://doi.org/10.1016/j.bbmt.2018.12.758" }], name: "ICANS (neurotoxicity)", category: "Toxicity", tldr: "ICANS is confusion, speech difficulty, and rarely seizures after CAR-T or bispecific therapy.", summary: "ICANS, the immune effector cell-associated neurotoxicity syndrome, is the confusion, speech difficulty and occasionally seizures that can follow CAR-T cell therapy or bispecific T-cell engagers. It is more common with CD28-costimulated CAR-T products and is managed with steroids, and a delayed parkinsonism has been seen rarely with BCMA-directed CAR-T such as cilta-cel. The term appears in the Acute lymphoblastic leukaemia, Diffuse large B-cell lymphoma and Multiple myeloma entries and in the drug records for Tisagenlecleucel, Obecabtagene autoleucel, Lisocabtagene maraleucel, Idecabtagene vicleucel and Epcoritamab. It also features in the bottlenecks on toxicity and the limits of the patient, on manufacturing living medicines, and on toxicity and quality of life being undervalued.", technologies: ["car-t", "t-cell-engager"] }),
   t({ id: "irae", wikipediaChecked: "2026-09-22", links: [{ label: "Haanen et al., Management of toxicities from immunotherapy: ESMO Clinical Practice Guideline (Annals of Oncology 2022)", url: "https://doi.org/10.1016/j.annonc.2022.10.001" }], aka: ["immune-related adverse event"], name: "Immune-related adverse events (irAEs)", category: "Toxicity", tldr: "Immune-related adverse events (irAEs) are the autoimmune side effects of checkpoint inhibitors: colitis, thyroid problems, rash, hepatitis, pneumonitis.", summary: "Immune-related adverse events (irAEs) are the autoimmune side effects of Immune checkpoint inhibitors, including colitis, thyroid problems, rash, hepatitis and pneumonitis. Any organ can be affected, and they are most frequent and most severe when CTLA-4 and PD-1 blockade are combined. Management relies on steroids and biologics; some irAEs, notably the endocrinopathies, are permanent, and their occurrence correlates only weakly with response. The term is cited by the Melanoma and Mesothelioma entries and the drug records for Toripalimab, Tislelizumab and Camrelizumab, by the bottlenecks on toxicity and on predicting immunotherapy response, and by ideas on testing drugs in old and unhealthy animals and reading the immune response in blood three weeks in.", technologies: ["checkpoint-inhibitor"] }),
   t({
-    asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Abscopal_effect"},{"label":"ICD consensus: adaptive immunity and experimental abscopal models","url":"https://pubmed.ncbi.nlm.nih.gov/32209603/"},{"label":"CURB: population-specific randomised progression endpoint","url":"https://pubmed.ncbi.nlm.nih.gov/38104577/"}], id: "abscopal-effect", aka: ["abscopal effects"], name: "Abscopal effect", category: "Immunology", tldr: "An abscopal response is regression outside an irradiated area, studied as a possible systemic effect of local radiation. Observing it does not by itself establish the cause or an added survival benefit.", summary: "Responses at non-irradiated sites motivate investigation of immune effects of local radiation. Keep the irradiated and unirradiated lesions, other treatments and observation times explicit. A proposed immune mechanism needs more than local injury or circulating markers.\n\nA case or uncontrolled combination cannot isolate the added effect of radiation. Comparative local-treatment studies must retain their populations and endpoints: a response outside the field, progression-free survival, overall survival and symptom relief are different outcomes.", wikipedia: W("Abscopal_effect"), technologies: ["sbrt", "checkpoint-inhibitor"], pathways: ["cgas-sting"] }),
+    asOf:"2026-11-11", links:[
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Abscopal_effect"
+  },
+  {
+    "label": "ICD consensus: adaptive immunity and experimental abscopal models",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+  },
+  {
+    "label": "CURB: population-specific randomised progression endpoint",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+  },
+  {
+    "label": "Ionizing radiation inhibition of distant untreated tumors (abscopal effect) is immune mediated.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14967443/"
+  },
+  {
+    "label": "Immunologic correlates of the abscopal effect in a patient with melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22397654/"
+  },
+  {
+    "label": "Radiotherapy induces responses of lung cancer to CTLA-4 blockade.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30397353/"
+  }
+], id: "abscopal-effect", aka: ["abscopal effects"], name: "Abscopal effect", category: "Immunology", tldr: "An abscopal response is regression outside an irradiated area, studied as a possible systemic effect of local radiation. Observing it does not by itself establish the cause or an added survival benefit.", summary: "Responses at non-irradiated sites motivate investigation of immune effects of local radiation. Keep the irradiated and unirradiated lesions, other treatments and observation times explicit. A proposed immune mechanism needs more than local injury or circulating markers.\n\nA case or uncontrolled combination cannot isolate the added effect of radiation. Comparative local-treatment studies must retain their populations and endpoints: a response outside the field, progression-free survival, overall survival and symptom relief are different outcomes.", wikipedia: W("Abscopal_effect"), technologies: ["sbrt", "checkpoint-inhibitor"], pathways: ["cgas-sting"] ,
+"notes": [
+  "First define the irradiated field and the actual exposure of each lesion. A local response does not demonstrate a distant response. An uninjected-lesion response in an injection study is a different route-defined observation. During concurrent systemic treatment, distant shrinkage does not by itself isolate radiation’s contribution or demonstrate immune causation; local control, distant response, survival, symptoms and harms require separate assessment.",
+  "Demaria’s bilateral 67NR mammary-tumour mouse experiment combined local radiation with Flt3 ligand. The distant tumour grew more slowly under the combination, whereas radiation alone affected the irradiated tumour; antigen-mismatched and T-cell-deficient comparisons supported an immune-dependent component. This is a defined combined animal intervention, not a human response rate. Postow’s ipilimumab-plus-radiation melanoma report was one case with temporal immune correlates, not a study of frequency.",
+  "Formenti enrolled 39 people with chemotherapy-refractory metastatic non-small-cell lung cancer in a single-arm radiation-plus-ipilimumab study. At day 88, 21 had completed treatment and response assessment. Seven responses were 7/39, about 18% of those enrolled, or 7/21, about 33% of those evaluable. Seventeen received fewer than four cycles because they progressed or died before day 88; another completed four cycles without response assessment. These denominators answer different questions and neither estimates radiation-alone activity or an individual breast-cancer response probability.",
+  "To assess a distant effect, retain lesion exposure, serial imaging, prespecified response rules, timing and concurrent therapies. Report lesion changes separately from patient response proportions and their eligible denominators. Imaging is an input; optional tissue and immune tests use finite samples. Exposure misclassification, missing assessments, selected evaluable groups and concurrent-drug attribution can distort interpretation. There is no universal abscopal cutoff or percentage across cancers and regimens; case observations, model mechanisms and comparative clinical outcomes are different evidence tiers.",
+  "In a fictional combination study, an irradiated site is controlled while a lesion outside the field shrinks during systemic therapy. The observation is a distant response under that treatment context. It does not prove that radiation vaccinated the whole body, establish which component caused it or supply a general response frequency. Test exposure, relevant comparisons and the proposed immune mechanism separately."
+],
+"related": [
+  "in-situ-vaccination",
+  "cancer-immunity-cycle"
+]
+}),
   t({
     asOf:"2026-11-09", notes:[
   "In a local-treatment study, follow injury and signals through presentation, priming, recognition and measured tumour outcomes. Circulating cytokines or proliferating T cells alone do not establish tumour-specific killing, distant control or an optimal radiation dose.",
@@ -694,7 +745,27 @@ export const terms: TermInput[] = [
 
   // ---- Clinical / regulatory ----
   t({ id: "oligometastatic", wikipediaChecked: "2026-09-22", links: [{ label: "NCI Dictionary of Cancer Terms: oligometastasis", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/oligometastasis" }, { label: "Lievens et al., Defining oligometastatic disease from a radiation oncology perspective: an ESTRO-ASTRO consensus (Radiotherapy and Oncology 2020)", url: "https://doi.org/10.1016/j.radonc.2020.04.003" }], name: "Oligometastatic disease", category: "Clinical", tldr: "Cancer that has spread to only a few places, which may still be curable by treating each spot.", summary: "Oligometastatic disease is cancer that has spread to only a few sites, usually no more than three to five metastases, and may still be curable if each spot is treated. The SABR-COMET trial supported metastasis-directed SBRT / SABR (stereotactic radiotherapy), and the ESTRO/EORTC classification distinguishes synchronous, oligorecurrent and oligoprogressive disease, the last covered by the related term Oligoprogression. PSMA PET has expanded detection of this state in Prostate cancer, and the term is also referenced by the Renal cell carcinoma entry and the bottleneck on metastasis biology. Ideas building on it include PSMA-PET-guided metastasis-directed therapy as a curative strategy and a test to tell true oligometastatic disease from hidden widespread spread.", technologies: ["sbrt", "psma-pet"] }),
-  t({ id: "neoadjuvant-adjuvant", aka: ["adjuvant vs neoadjuvant therapy", "adjuvant versus neoadjuvant therapy", "neoadjuvant vs adjuvant", "pre-operative", "preoperative", "post-operative", "postoperative", "post-surgical"], name: "Neoadjuvant / adjuvant / perioperative", category: "Clinical", tldr: "Neoadjuvant therapy is treatment given before surgery, adjuvant therapy is treatment given after it, and perioperative therapy is both. Neoadjuvant treatment shrinks tumours and shows whether the drug works in the living patient; adjuvant treatment aims to kill microscopic disease left behind.", summary: "Neoadjuvant, adjuvant and perioperative therapy mean treatment given before surgery, after surgery, or both; pre-operative and post-operative are the everyday equivalents. Neoadjuvant treatment shrinks tumours, tests drug sensitivity in the living patient through pathologic complete response and can allow surgery to be de-escalated, while adjuvant treatment aims to kill micrometastases. Immunotherapy appears to work better neoadjuvantly, as NADINA and CheckMate 816 suggested, because the primary tumour is still present to supply antigen. The term is anchored to KEYNOTE-522 and referenced by KEYNOTE-671 and SWOG S1801, by the Colorectal, Gastric, Oesophageal, Bladder & urothelial and Head and neck cancer entries, and by the related term Major pathological response (MPR).", wikipedia: W("Neoadjuvant_therapy"), trials: ["keynote-522"] }),
+  t({ id: "neoadjuvant-adjuvant", aka: ["adjuvant vs neoadjuvant therapy", "adjuvant versus neoadjuvant therapy", "neoadjuvant vs adjuvant", "pre-operative", "preoperative", "post-operative", "postoperative", "post-surgical"], name: "Neoadjuvant / adjuvant / perioperative", category: "Clinical", tldr: "Neoadjuvant treatment is given before surgery, adjuvant treatment after it, and perioperative treatment around both phases. The benefit and risks of the timing depend on the disease and complete regimen.", summary: "Neoadjuvant, adjuvant and perioperative describe timing before surgery, after surgery or across both phases. Neoadjuvant therapy can aim to reduce disease before an operation and provides response information from treated tissue. Adjuvant therapy aims to reduce risk from disease that may remain. A pathological response and a later clinical outcome are different endpoints.\n\nTiming comparisons need the actual population, intervention and comparator. Liu’s two mouse breast-cancer models supported testing preoperative immunotherapy, not a universal human timing rule or proof that retained tumour antigen explains every clinical result. KEYNOTE-522 assigned a complete before-and-after pembrolizumab regimen against its comparator; that design does not independently randomize the two phases and cannot isolate each phase’s contribution.", wikipedia: W("Neoadjuvant_therapy"), trials: ["keynote-522"] ,
+"asOf": "2026-11-11",
+"links": [
+  {
+    "label": "Improved Efficacy of Neoadjuvant Compared to Adjuvant Immunotherapy to Eradicate Metastatic Disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27663893/"
+  },
+  {
+    "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Neoadjuvant_therapy"
+  }
+],
+"related": [
+  "perioperative-immune-window",
+  "keynote-522"
+]
+}),
   t({ id: "first-line", wikipedia: W("Therapy#Lines_of_therapy"), links: [{ label: "NCI Dictionary of Cancer Terms: first-line therapy", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/first-line-therapy" }], aka: ["first-line", "second-line", "third-line", "later-line", "later lines", "1L", "2L", "3L", "first line", "second line", "third line", "line of therapy", "front-line", "frontline", "previously untreated", "prior lines", "treatment-naive"], name: "Lines of therapy", category: "Clinical", tldr: "First-line is the first treatment for advanced cancer; second-line is what comes after it fails, and so on.", summary: "Lines of therapy number the successive treatments a patient with advanced cancer receives: first-line is the initial treatment, second-line follows when it fails, and so on, with aliases such as 1L, 2L, front-line and treatment-naive. Drugs are usually approved first in later lines, where control arms are weak, and then move earlier, and each shift to an earlier line reshapes the entire sequence, as happened with ADCs in TNBC in 2026. The concept is central to Project FrontRunner and to the bottlenecks on too many combinations to test, fragmented care and incentives that reward me-too drugs. It also frames the DESTINY-Breast06, FLAURA, MARIPOSA, KEYNOTE-189, HARMONi-2 and NAPOLI-3 papers and ideas on pathology-triggered trial referral and reflex genomic profiling at diagnosis." }),
   t({ id: "standard-of-care", aka: ["SoC", "standard-of-care", "standard therapy", "standard therapies", "standard treatment", "standard treatments", "standard care", "standard chemotherapy", "standard regimen", "current standard", "guideline-recommended", "guideline-concordant"], name: "Standard of care", category: "Clinical", tldr: "The standard of care is the treatment that guidelines and experts currently consider the best-proven option.", summary: "The standard of care is the treatment that guidelines and expert consensus currently regard as the best-proven option; SoC, standard therapy, standard regimen and guideline-concordant care are its aliases. It is defined by NCCN, ESMO and ASCO guidelines on the basis of randomised evidence, shifts with each positive phase 3 trial, and varies by region according to approvals and reimbursement. The term is linked to the NCCN Guidelines collection, the National Comprehensive Cancer Network (NCCN), the NCCN Compendium and Nathan Cherny. It runs through the bottlenecks on slow trial enrolment, regulatory divergence, prices and value, fragmented care, slow knowledge diffusion and misaligned incentives, and it underpins the idea that sponsors must justify every exclusion criterion.", wikipedia: W("Standard_of_care") }),
   t({
@@ -742,7 +813,53 @@ export const terms: TermInput[] = [
   "Residual cancer burden combines breast-bed dimensions and cellularity with nodal count and metastasis diameter under its own protocol. It complements residual ypTNM rather than replacing it: a largest contiguous invasive focus for ypT is not interchangeable with a two-dimensional RCB bed."
 ]
 }),
-  t({ id: "cold-vs-hot", wikipedia: W("Tumor_microenvironment"), links: [{ label: "NCI Dictionary of Cancer Terms: hot tumor", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hot-tumor" }], name: "Hot vs cold tumours", category: "Immunology", tldr: "'Hot' tumours are full of immune cells and respond to immunotherapy; 'cold' tumours have kept the immune system out.", summary: "Hot tumours are full of immune cells and tend to respond to immunotherapy, whereas cold tumours have kept the immune system out. Immunologists distinguish inflamed tumours, immune-excluded tumours in which T cells are held at the margin by TGF-β and stroma, and immune deserts. Pancreatic cancer, prostate cancer, glioblastoma and most HR-positive breast cancers are cold, and turning cold tumours hot is the goal of radiation, vaccines, ISACs, STING agonists and oncolytic viruses. The term is linked to the Immune checkpoint inhibitors, STING & innate immune agonists and Oncolytic viruses technologies and to Desmoplasia (tumour stroma), and it is referenced by the Pancreatic ductal adenocarcinoma and Glioma & glioblastoma entries, Miriam Merad and the bottleneck on cold tumours.", technologies: ["checkpoint-inhibitor", "sting-agonist", "oncolytic-virus"] }),
+  t({ id: "cold-vs-hot", wikipedia: W("Tumor_microenvironment"), links: [
+  {
+    "label": "NCI Dictionary of Cancer Terms: hot tumor",
+    "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hot-tumor"
+  },
+  {
+    "label": "Elements of cancer immunity and the cancer-immune set point.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28102259/"
+  },
+  {
+    "label": "Bystander CD8&lt;sup&gt;+&lt;/sup&gt; T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+  },
+  {
+    "label": "Tumor-Infiltrating Lymphocytes and Prognosis: A Pooled Individual Patient Analysis of Early-Stage Triple-Negative Breast Cancers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30650045/"
+  },
+  {
+    "label": "Colocalization of inflammatory response with B7-h1 expression in human melanocytic lesions supports an adaptive resistance mechanism of immune escape.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22461641/"
+  },
+  {
+    "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25214542/"
+  },
+  {
+    "label": "Pitfalls in assessing stromal tumor infiltrating lymphocytes (sTILs) in breast cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32411819/"
+  },
+  {
+    "label": "In situ tumour arrays reveal early environmental control of cancer immunity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37258670/"
+  }
+], name: "Hot vs cold tumours", category: "Immunology", tldr: "Hot, excluded and desert describe where specified immune cells were found in sampled tissue. Their location alone does not establish tumour recognition, effective killing or benefit from a particular drug.", summary: "An inflamed or hot pattern has specified immune cells within sampled tumour regions. In an excluded pattern, cells concentrate in surrounding stroma or at a boundary with less entry into malignant nests. A desert has few relevant cells in the examined regions. Cold is used for desert alone or for both desert and excluded patterns, so state the definition. A macrophage-rich sample is not automatically T-cell inflamed.\n\nThese are observations about identity and location. Some infiltrating T cells recognize viral or other non-cancer antigens; others restrain responses. Region, specimen, disease site and sampling time matter, and treatment can change the pattern. Neither a small biopsy nor a pattern label describes every site in a person or selects an immunotherapy. Exclusion suggests questions about recruitment, vessels, matrix and local cells, rather than proving one causal wall.", technologies: ["checkpoint-inhibitor", "sting-agonist", "oncolytic-virus"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "In a fictional comparison, inflamed and excluded fields each contain eight specified T-cell symbols, relocated from mainly within malignant regions to surrounding stroma; a desert field has two. Equal counts can conceal different locations. Region outlines do not prove a physical barrier, these counts do not describe all mononuclear cells used in stromal TIL scoring, and they cannot be converted to an sTIL area percentage. The example depicts neither lymph-node follicles nor tertiary lymphoid organization and supplies no clinical cutoff or response rate.",
+  "Routine pathology can score a defined infiltrate, multiplex imaging adds selected cell identities and coordinates, and mixed-tissue gene expression describes programmes without directly retaining each cell’s location. Report the preparation, section, sampled regions, staining and cell-assignment rules, regional variation, output and denominator. Descriptive labels, cells per area and method-defined stromal scores are different outputs. Sectioning and staining use finite tissue. Damage, staining error, incorrect boundaries and an unrepresentative region can limit the result. A research classifier needs separate validation for a clinical selection use.",
+  "In Loi’s pooled analysis of 2,148 early TNBC patients given anthracycline-based adjuvant chemotherapy with or without taxanes, each 10 percentage-point increase in stromal TILs was associated with iDFS HR 0.87 and OS HR 0.84. This is prognosis in that population, not proof of additional checkpoint-drug benefit by hot/cold category. Taube’s tissue study also supports coexistence of lymphocyte infiltration and induced inhibitory PD-L1; hot does not mean every later immune step succeeds."
+],
+"related": [
+  "immune-exclusion",
+  "immune-desert-exclusion",
+  "tils",
+  "adaptive-immune-resistance"
+]
+}),
   t({
     notes:["Mechanism experiments can compare an intact conjugate with its free payload, measure uptake and released species, and perturb a suspected transporter or resistance gene. These experiments require controls and do not by themselves validate a clinical test for choosing the next ADC. A trial in ADC-naive patients cannot establish effectiveness specifically after progression on a prior TOP1 ADC."], links:[{"label":"Abelman et al.: selected patient samples and functional TOP1-mutant experiments (2025)","url":"https://pubmed.ncbi.nlm.nih.gov/39745368/"},{"label":"Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/41591991/"},{"label":"Kinneer et al.: lysosomal-transporter loss and resistance to noncleavable conjugates (2018)","url":"https://pubmed.ncbi.nlm.nih.gov/30131388/"}], asOf:"2026-11-08", id: "adc-sequencing", wikipedia: W("Antibody-drug_conjugate"), name: "ADC sequencing", category: "ADC", tldr: "ADC sequencing asks whether a second conjugate can help after the first fails, especially when it carries the same payload class. The earlier response and reason for stopping matter.", summary: "A second conjugate may retain activity after a first, but neither shared nor different target names settle the outcome. Payload cross-resistance, altered delivery and tumor evolution can all matter. Retrospective treatment sequences are affected by who lived long enough and remained fit to receive another drug, treatment line, prior response and clinician selection. A selected cohort with post-treatment plasma profiling and laboratory TOP1-mutant experiments supports a resistance hypothesis; cell and mouse payload-switching experiments test a different question. Neither design establishes the best clinical sequence.", technologies: ["adc", "topoisomerase-inhibitors"], cancers: ["tnbc", "breast-hr-positive"] }),
 ];

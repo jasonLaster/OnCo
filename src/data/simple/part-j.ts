@@ -93,9 +93,9 @@ export const simpleJ: Record<string, string> = {
   "senescent-cells": "Senescent cells have permanently stopped dividing but stay alive and release inflammatory signals that help nearby cancer cells grow and resist treatment.",
   "disseminated-tumor-cells": "Disseminated tumour cells are single cancer cells that have already reached distant organs, often found in bone marrow years before any spread appears.",
 
-  "immune-exclusion": "Immune exclusion describes a tumour where immune cells arrive but are stopped at the edge by scar-like tissue and signals, so immunotherapy works poorly.",
+  "immune-exclusion": "Immune exclusion means cells gather outside cancer-cell regions. Their position does not show what blocked access or which treatment would help.",
   "cancer-associated-fibroblasts": "Cancer-associated fibroblasts are stromal cells with varied states and effects. No single marker or abundance measurement shows that all of them suppress immunity or promote cancer.",
-  "tumor-associated-macrophages": "Tumour-associated macrophages are immune cells that should eat cancer cells but are retrained by the tumour to protect it instead, often the commonest immune cell present.",
+  "tumor-associated-macrophages": "Macrophages in or around a tumour can have different states and effects. A marker count alone does not show that they suppress immunity or help cancer grow.",
   "myeloid-derived-suppressor-cells": "These heterogeneous myeloid populations are characterised using phenotype, suppressive function and context. A marker or blood-cell count alone does not establish them.",
   "whole-genome-doubling": "Whole-genome doubling is when a cancer cell copies its entire set of chromosomes, happening in about a third of cancers and helping them evolve.",
   // ---- policy, regulation and society ----

@@ -1117,7 +1117,7 @@ export const termsBasics: TermInput[] = [
 ]
 }),
   t({
-    asOf:"2026-11-10", links:[
+    asOf:"2026-11-11", links:[
   {
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Natural_killer_cell"
@@ -1169,14 +1169,34 @@ export const termsBasics: TermInput[] = [
   {
     "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
     "url": "https://doi.org/10.21769/bioprotoc.4285"
+  },
+  {
+    "label": "Controlling natural killer cell responses: integration of signals for activation and inhibition.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23516982/"
+  },
+  {
+    "label": "Kinetics and peptide dependency of the binding of the inhibitory NK receptor CD94/NKG2-A and the activating receptor CD94/NKG2-C to HLA-E.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10428963/"
   }
-], notes:["The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.","A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families."],
+], notes:[
+  "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
+  "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families.",
+  "The receptor-level map separates inhibitory KIR/HLA and NKG2A/HLA-E interactions from activating stress-ligand and antibody-Fc inputs. Receptor proteins, genotype, ligand expression, degranulation and controlled target killing are different readouts. A loss of inhibitory display without adequate activating input does not guarantee killing, and a perioperative blood NK measurement does not describe every residual-disease site."
+],
     id: "nk-cell", name: "NK cell", category: BIO, targets: ["cd56", "fcgr3a", "cd57"],
     aka: ["NK cells", "natural killer cell", "natural killer cells", "natural killer", "NK-cell", "CAR-NK"],
     tldr: "Natural killer cells integrate activating and inhibitory inputs to respond to abnormal cells. An added CAR supplies another recognition route; missing self is one input rather than a guarantee of killing.",
     summary: "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters. The principle comes from mouse experiments: lymphoma cells selected for loss of H-2 were less malignant at low dose and were rejected by a non-adaptive mechanism, which suggested that natural killer cells are effectors in a defence system geared to detect reduced self MHC (Kärre et al., 1986); that does not guarantee the same outcome for any human tumour. MHC class I molecules are ligands for killer-cell immunoglobulin-like receptors (Parham, 2005): two-domain KIR2D receptors bind HLA-C alleles and three-domain KIR3D receptors bind HLA-A and HLA-B alleles, and the KIR family includes activating as well as inhibitory members (Mariuzza et al., 2025). CD94/NKG2A binds HLA-E, and HLA-E surface expression was enough to protect target cells from lysis by CD94/NKG2A-positive NK clones (Braud et al., 1998). NKG2D binds class I-related proteins including MICA, MICB and ULBP1 to 3 (Mariuzza et al., 2025), and engagement of NKG2D activated NK and gamma-delta T-cell cytolysis against epithelial tumour cells expressing MICA (Bauer et al., 1999). No single activating receptor dominates, since NK cells integrate synergistic signals from several (Long et al., 2013), and responsiveness depends on prior education: in human cell experiments, cytokine stimulation let hyporesponsive NK cells acquire KIR and function when the cognate MHC was present (Juelke et al., 2009). Loss of one HLA allele is not loss of all class I. Loss of beta-2 microglobulin removed surface class I in one of four relapsing melanoma patients (Zaretsky et al., 2016), and because HLA-E is assembled with beta-2 microglobulin, the KIR and NKG2A restraints would be expected to lift together; that last step is an inference not tested in the cited abstracts. A flow-based cytotoxicity assay that stains target and effector nuclei separately and distinguishes live from dead nuclei has been validated with NK-92 cells, CAR-T cells and tumour-infiltrating lymphocytes (Rabinovich et al., 2019). Target death is not a count of effector cells that released granule contents: surface CD107a marked NK cells that degranulated after stimulation with MHC-devoid targets and correlated with lysis, and also marked a large subset that did not secrete cytokine, so different readouts count different cells (Alter et al., 2004). CD16 is a low-affinity Fc receptor for IgG that mediates antibody-dependent cellular cytotoxicity by NK cells (Liu, 2022), a route separate from missing-self recognition. Neither assay readout shows tumour entry or clinical benefit.",
     wikipedia: W("Natural_killer_cell"),
-    related: ["t-cell", "immune-system", "adcc", "antibody", "fc-effector"], technologies: ["car-nk-macrophage", "allogeneic-cell-therapy", "monoclonal-antibody"],
+    related: [
+  "t-cell",
+  "immune-system",
+  "adcc",
+  "antibody",
+  "fc-effector",
+  "nk-cell-recognition",
+  "perioperative-immune-window"
+], technologies: ["car-nk-macrophage", "allogeneic-cell-therapy", "monoclonal-antibody"],
   }),
   t({
     id: "macrophage", name: "Macrophage", category: BIO,

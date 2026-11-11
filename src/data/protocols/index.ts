@@ -10,6 +10,7 @@ import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-ve
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-education-before-anticancer-treatment";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
+import { drugDesensitisationAfterAnticancerHypersensitivity } from "./drug-desensitisation-after-anticancer-hypersensitivity";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
@@ -42,6 +43,7 @@ export const protocols: ProtocolInput[] = [
   chemotherapyExtravasationManagement,
   consentAndEducationBeforeAnticancerTreatment,
   dpydTestingBeforeFluoropyrimidines,
+  drugDesensitisationAfterAnticancerHypersensitivity,
   febrileNeutropeniaFirstHour,
   hazardousDrugHandlingInClinicalAreas,
   implantedPortAccessAndCare,

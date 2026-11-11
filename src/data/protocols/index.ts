@@ -9,10 +9,20 @@ import { hypercalcaemiaOfMalignancy } from "./hypercalcaemia-of-malignancy";
 import { icansGradingAndManagement } from "./icans-grading-and-management";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { iraeColitis } from "./irae-colitis";
+import { iraeDiabetes } from "./irae-diabetes";
+import { iraeHaematological } from "./irae-haematological";
 import { iraeHepatitis } from "./irae-hepatitis";
 import { iraeHypophysitisAdrenal } from "./irae-hypophysitis-adrenal";
+import { iraeMyocarditis } from "./irae-myocarditis";
+import { iraeNephritis } from "./irae-nephritis";
+import { iraeNeurological } from "./irae-neurological";
+import { iraeOcular } from "./irae-ocular";
 import { iraePneumonitis } from "./irae-pneumonitis";
+import { iraeRechallenge } from "./irae-rechallenge";
+import { iraeRheumatological } from "./irae-rheumatological";
 import { iraeSkin } from "./irae-skin";
+import { iraeSteroidTaperAndPjp } from "./irae-steroid-taper-and-pjp";
+import { iraeThyroid } from "./irae-thyroid";
 import { metastaticSpinalCordCompression } from "./metastatic-spinal-cord-compression";
 import { tumourLysisSyndrome } from "./tumour-lysis-syndrome";
 
@@ -31,10 +41,20 @@ export const protocols: ProtocolInput[] = [
   icansGradingAndManagement,
   implantedPortAccessAndCare,
   iraeColitis,
+  iraeDiabetes,
+  iraeHaematological,
   iraeHepatitis,
   iraeHypophysitisAdrenal,
+  iraeMyocarditis,
+  iraeNephritis,
+  iraeNeurological,
+  iraeOcular,
   iraePneumonitis,
+  iraeRechallenge,
+  iraeRheumatological,
   iraeSkin,
+  iraeSteroidTaperAndPjp,
+  iraeThyroid,
   metastaticSpinalCordCompression,
   tumourLysisSyndrome,
 ];

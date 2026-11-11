@@ -4,7 +4,9 @@ import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasatio
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
+import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
 import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
+import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer-surgery";
 
 /**
  * Every care protocol, one import per file. Fill agents add their file here; the list is a plain union, so a parallel
@@ -17,4 +19,6 @@ export const protocols: ProtocolInput[] = [
   implantedPortAccessAndCare,
   opioidSwitchingAndConversion,
   strongOpioidsForCancerPain,
+  surgicalSiteInfectionPrevention,
+  vteProphylaxisAfterCancerSurgery,
 ];

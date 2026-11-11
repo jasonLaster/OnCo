@@ -192,7 +192,7 @@ export const lutetium177TherapyHomeRadiationSafety = protocol({
   technologies: ["lu177-radioligand-therapy"],
   terms: ["castration-resistance"],
   related: [],
-  upgrades: [],
+  upgrades: ["idea-pu-lutetium-177-family-planning-table"],
   gaps: [
     "The European product information for Pluvicto and Lutathera could not be read (ema.europa.eu refused a script with HTTP 429), so the European and UK day counts and contraception periods are not given here; patients in Europe should follow the leaflet supplied with their treatment.",
     "The Lutathera US label and both guidelines leave the number of days of distance and separate sleeping to institutional rules; only the Pluvicto US label states them. Hospital instruction sheets set them from the dose rate measured at discharge.",

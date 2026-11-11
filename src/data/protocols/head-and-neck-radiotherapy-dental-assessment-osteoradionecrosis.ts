@@ -186,7 +186,7 @@ export const headAndNeckRadiotherapyDentalAssessmentOsteoradionecrosis = protoco
   cancers: ["head-and-neck", "oral-cavity-cancer", "oropharyngeal-cancer"],
   technologies: ["hyperbaric-oxygen-radiation-injury", "dry-mouth-teeth-after-head-neck-radiotherapy"],
   related: ["head-and-neck-radiotherapy-oral-mucositis"],
-  upgrades: [],
+  upgrades: ["idea-pu-dental-extraction-healing-interval"],
   gaps: [
     "The ISOO-MASCC-ASCO 2024 guideline, the current international standard, could be read only as an abstract (the publisher and ASCO pages refused a script). Its individual recommendations, including any on fluoride trays, the healing interval before radiotherapy, antibiotics around extraction, pentoxifylline and tocopherol, and dental implants in irradiated bone, are not reported here.",
     "Fluoride trays or high-fluoride toothpaste after radiotherapy are common practice; no source read here states a graded recommendation for them.",

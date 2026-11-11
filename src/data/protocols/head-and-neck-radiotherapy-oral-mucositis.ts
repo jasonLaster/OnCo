@@ -208,7 +208,7 @@ export const headAndNeckRadiotherapyOralMucositis = protocol({
   technologies: ["photobiomodulation-mucositis", "honey-radiation-mucositis", "glutamine-mucositis-neuropathy"],
   terms: ["mucositis"],
   related: ["idea-moon-mucositis-taste-programme", "head-and-neck-radiotherapy-dental-assessment-osteoradionecrosis"],
-  upgrades: [],
+  upgrades: ["idea-pu-photobiomodulation-every-head-neck-centre"],
   gaps: [
     "MASCC/ISOO 2020 remains the latest full edition; an erratum was published in 2021 (Cancer, doi 10.1002/cncr.33549) whose text could not be retrieved, so what it corrects was not checked.",
     "The 2014 statements carried forward unchanged (including the doxepin rinse for pain) sit in the 2020 paper's Supporting Table 1, which was not read; nothing here rests on them.",

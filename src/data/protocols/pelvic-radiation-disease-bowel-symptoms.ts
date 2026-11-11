@@ -197,7 +197,7 @@ export const pelvicRadiationDiseaseBowelSymptoms = protocol({
   technologies: ["bowel-after-pelvic-radiotherapy", "hyperbaric-oxygen-radiation-injury", "probiotics-treatment-diarrhoea", "rejuv-rehab-pelvic-floor"],
   keyPapers: ["paper-bennett-cochrane-database-syst-rev", "paper-wei-cochrane-database-syst-rev"],
   related: [],
-  upgrades: [],
+  upgrades: ["idea-pu-nurse-led-pelvic-radiation-disease-clinic"],
   gaps: [
     "The main guidance dates from 2015 and no newer UK or European guideline on pelvic radiation disease was found; its steps rest on panel agreement and one randomised trial of the algorithm as a whole, not on graded evidence for each step.",
     "The ASCRS 2018 clinical practice guideline on chronic radiation proctitis could not be read (no abstract or text available to a script), and the ASGE 2019 guideline was read as an abstract only, so their grades are not given here.",

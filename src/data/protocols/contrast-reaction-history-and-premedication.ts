@@ -153,7 +153,7 @@ export const contrastReactionHistoryAndPremedication = protocol({
   ],
   technologies: ["iodinated-contrast-media", "gadolinium-based-contrast-agents", "ct", "mri"],
   related: ["iodinated-contrast-kidney-and-metformin"],
-  upgrades: [],
+  upgrades: ["idea-pu-contrast-switch-agent-after-reaction"],
   gaps: [
     "The ACR Manual on Contrast Media could not be read (the address served a JavaScript shell to a script), so the North American premedication regimens and their indications are not stated here; the page names the disagreement without the detail.",
     "There are no randomised trials comparing switching agent with premedication; the evidence for switching is retrospective and observational (ESUR 2025).",

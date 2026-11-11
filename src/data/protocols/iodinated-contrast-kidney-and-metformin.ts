@@ -256,7 +256,7 @@ export const iodinatedContrastKidneyAndMetformin = protocol({
   technologies: ["iodinated-contrast-media", "ct"],
   cancers: ["multiple-myeloma"],
   related: ["contrast-reaction-history-and-premedication"],
-  upgrades: [],
+  upgrades: ["idea-pu-contrast-ct-screening-questions", "idea-pu-no-fasting-before-contrast"],
   gaps: [
     "ESUR lists its guidelines on preventing contrast-associated kidney injury and on metformin as being updated; the 2026 handbook still carries the 2018 recommendations, and the levels of evidence quoted come from the 2018 paper.",
     "The ACR Manual on Contrast Media could not be read: its address served a JavaScript shell to a script. The ACR position is taken from the ACR/NKF consensus paper only.",

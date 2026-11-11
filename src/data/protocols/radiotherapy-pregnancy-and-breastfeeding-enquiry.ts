@@ -169,12 +169,12 @@ export const radiotherapyPregnancyAndBreastfeedingEnquiry = protocol({
     },
   ],
   terms: ["cancer-in-pregnancy"],
-  related: ["radiotherapy-patient-identification-and-time-out"],
-  upgrades: [],
+  related: ["radiotherapy-patient-identification-and-time-out", "radiotherapy-consent"],
+  upgrades: ["idea-pu-pregnancy-test-or-ask-before-radiotherapy"],
   gaps: [
     "Only UK guidance and IR(ME)R Schedule 2 were read. US, EU and other national rules on pregnancy enquiries before radiotherapy, the body of the IR(ME)R regulations and the ARSAC notes for guidance (which set conception and breastfeeding intervals after molecular radiotherapy) were not read.",
     "AAPM TG-36, the standard reference for fetal dose estimation and shielding, dates from 1995 and was read as an abstract only; no update was found.",
-    "Consent for radiotherapy, which the census row pairs with this check, is not covered: no consent guidance was read for this record.",
+    "Consent for radiotherapy, which the census row pairs with this check, is a separate protocol (radiotherapy-consent); no consent guidance was read for this record.",
     "No study compares asking alone with routine testing for missed pregnancies in radiotherapy; the age range and testing rules are local decisions.",
   ],
 });

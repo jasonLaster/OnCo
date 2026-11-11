@@ -165,7 +165,7 @@ export const fdgPetCtPreparation = protocol({
   ],
   technologies: ["fdg-pet", "pet-ct"],
   related: [],
-  upgrades: [],
+  upgrades: ["idea-pu-sglt2-glp1-plan-before-pet"],
   gaps: [
     "The EANM guideline dates from 2015 and predates SGLT2 inhibitors and GLP-1 receptor agonists in wide use; it does not say how to handle them before FDG PET. The Australian and New Zealand diabetes guideline may, but only its summary abstract was read.",
     "None of the recommendations read is graded; they are expert consensus.",

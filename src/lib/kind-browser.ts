@@ -56,6 +56,12 @@ export function buildBrowser(k: Kind): { rows: BrowserRow[]; facets: FacetDef[];
    * of its first technology, else (only where asked, since the molecule slot also drives the approval chip)
    * the molecule of its first product. Empty when nothing fits, and the table then shows the kind's symbol.
    */
+  /** The first sentence of a TL;DR, cut at a word to one table line. */
+  const oneLine = (t: string, max = 110): string => {
+    const first = t.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? t;
+    if (first.length <= max) return first;
+    return `${first.slice(0, max).replace(/\s+\S*$/, "")}…`;
+  };
   const borrowed = (e: Entity, withMolecule = false): Partial<BrowserRow> => {
     if (e.cancers[0]) return { cancerIcon: e.cancers[0] };
     const t = e.technologies.map((id) => g.get(id)).find((x) => x?.kind === "technology");
@@ -307,10 +313,14 @@ export function buildBrowser(k: Kind): { rows: BrowserRow[]; facets: FacetDef[];
         const domain = PROTOCOL_DOMAIN_LABEL[p.domain];
         const who = p.setting.who.map((w) => PROTOCOL_ACTOR_LABEL[w]);
         const where = p.setting.where.map((w) => PROTOCOL_PLACE_LABEL[w]);
-        return { ...base(p), ...borrowed(p),
+        // A light row (11 November 2026): at 190 protocols a row of filter chips, a step link and a two-line summary
+        // weighed 4.7 KB and put /protocols/ at 464 KB against a 121 KB ceiling. Who and where are plain text (the
+        // column headers and the toolbar still filter them), the domain is one pill, and the summary is its first
+        // sentence, cut to a line. The protocol page carries the whole TL;DR.
+        return { ...base(p), tldr: oneLine(p.tldr), ...borrowed(p),
           facets: { domain: [domain], who, where, cancers: cancerFacet(p.cancers) },
-          cols: { domain: fl("domain", domain), who: who.map((w) => ({ facet: "who", value: w })), steps: count(p.steps.length, p, "steps", "step", "in"), sources: p.sources.length },
-          sortKeys: { domain: PROTOCOL_DOMAINS.indexOf(p.domain), steps: p.steps.length, sources: p.sources.length } };
+          cols: { domain, who: who.join(", "), where: where.join(", "), steps: p.steps.length },
+          sortKeys: { domain: PROTOCOL_DOMAINS.indexOf(p.domain), steps: p.steps.length } };
       }),
       facets: [
         { key: "domain", label: "Domain", searchable: false, width: "w-64", order: PROTOCOL_DOMAINS.map((d) => PROTOCOL_DOMAIN_LABEL[d]) },
@@ -318,7 +328,7 @@ export function buildBrowser(k: Kind): { rows: BrowserRow[]; facets: FacetDef[];
         { key: "where", label: "Where", searchable: false, width: "w-60", order: PROTOCOL_PLACES.map((a) => PROTOCOL_PLACE_LABEL[a]) },
         { key: "cancers", label: "Cancer", width: "w-52", normalise: "cancer" },
       ],
-      columns: [{ key: "domain", label: "Domain", sortable: true, chip: true }, { key: "who", label: "Who", hide: "hidden md:table-cell" }, { key: "steps", label: "Steps", sortable: true, numeric: true, hide: "hidden sm:table-cell" }, { key: "sources", label: "Sources", sortable: true, numeric: true, hide: "hidden lg:table-cell" }],
+      columns: [{ key: "domain", label: "Domain", sortable: true, chip: true }, { key: "who", label: "Who", hide: "hidden md:table-cell", plain: true }, { key: "where", label: "Where", hide: "hidden lg:table-cell", plain: true }, { key: "steps", label: "Steps", sortable: true, numeric: true, hide: "hidden sm:table-cell" }],
       defaultSort: { key: "domain", dir: 1 },
     };
     // Years are generated from every dated field in the corpus (src/data/years.ts). The table is the timeline as a

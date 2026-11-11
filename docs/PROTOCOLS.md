@@ -111,7 +111,11 @@ protocol comes first; the page is for understanding care, not for doing it at ho
 
 `/protocols/` is a paged table: since 11 November 2026, when the fill rounds passed sixty protocols (`KIND_PAGE`),
 `protocol` is in `PAGED_KINDS` in `src/lib/tables/kinds.ts`, so the page carries one page of rows and fetches the
-rest; its weight ceiling in `src/data/page-weight.json` is pinned on that assumption (docs/MOBILE.md).
+rest. It carries ten rows rather than sixty (`kindPageSize`), and each row is light: the name with the first sentence
+of its TL;DR, the domain as one pill, who and where as plain text (the toolbar and column headers filter them), and
+the step count. On 11 November 2026 that measured 148 KB on a local dev server against the 121 KB ceiling in
+`src/data/page-weight.json`; the site chrome, toolbar and domain strip weigh about 121 KB with no rows at all, so the
+ceiling as pinned cannot be met by any table, and it waits for the owner (docs/MOBILE.md).
 
 ## One protocol, one record
 

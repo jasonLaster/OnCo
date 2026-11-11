@@ -126,7 +126,7 @@ no way to spend, and would hide a regression in the thirty rows it does carry. A
 there is no live figure to scale from, and scaling a three-row table by the protocol count would hand it a hundredfold
 allowance as the fill rounds land. Its first ceiling, 121 KB with a 33 KB payload, was measured on a local `next dev`
 server, which carries more markup than production; the first `--record` after it ships will lower it. The kind passed
-sixty protocols (`KIND_PAGE`) the same day and `protocol` is now in `PAGED_KINDS` in src/lib/tables/kinds.ts, so the pin stays right.
+sixty protocols (`KIND_PAGE`) the same day and `protocol` is now in `PAGED_KINDS` in src/lib/tables/kinds.ts, so the page carries ten light rows. Measured on a local dev server on 11 November 2026 it weighs 148 KB (99 KB markup, 49 KB payload), over the 121 KB pin: with no rows the chrome, toolbar and domain strip already weigh about 121 KB, because the first pin was taken with three rows. The ceiling is not raised; it is the owner's call.
 
 The baseline was re-taken once, today, against the live site, because the 1 October entries were recorded
 before a basis existed and there was no count to scale them from. That is the only time the numbers have gone

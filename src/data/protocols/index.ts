@@ -2,6 +2,7 @@ import type { ProtocolInput } from "@/lib/schema";
 import { antiemeticProphylaxisByEmeticRisk } from "./antiemetic-prophylaxis-by-emetic-risk";
 import { boneHealthOnHormoneTherapy } from "./bone-health-on-hormone-therapy";
 import { breastCancerFollowUpAfterTreatment } from "./breast-cancer-follow-up-after-treatment";
+import { breastScreeningAfterChestRadiotherapyAtAYoungAge } from "./breast-screening-after-chest-radiotherapy-at-a-young-age";
 import { cardioOncologyRiskAssessmentAndCardiacSurveillance } from "./cardio-oncology-risk-assessment-and-cardiac-surveillance";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { chemotherapyInducedAnaemiaEsaAndIron } from "./chemotherapy-induced-anaemia-esa-and-iron";
@@ -11,6 +12,7 @@ import { dentalAssessmentBeforeBoneModifyingAgents } from "./dental-assessment-b
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { fertilityPreservationBeforeCancerTreatment } from "./fertility-preservation-before-cancer-treatment";
 import { gCsfProphylaxisByFebrileNeutropeniaRisk } from "./g-csf-prophylaxis-by-febrile-neutropenia-risk";
+import { geriatricAssessmentBeforeSystemicCancerTherapy } from "./geriatric-assessment-before-systemic-cancer-therapy";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { nutritionScreeningAndSupportDuringCancerTreatment } from "./nutrition-screening-and-support-during-cancer-treatment";
 import { oralMucositisPreventionAndOralCare } from "./oral-mucositis-prevention-and-oral-care";
@@ -25,6 +27,7 @@ export const protocols: ProtocolInput[] = [
   antiemeticProphylaxisByEmeticRisk,
   boneHealthOnHormoneTherapy,
   breastCancerFollowUpAfterTreatment,
+  breastScreeningAfterChestRadiotherapyAtAYoungAge,
   cardioOncologyRiskAssessmentAndCardiacSurveillance,
   chemotherapyExtravasationManagement,
   chemotherapyInducedAnaemiaEsaAndIron,
@@ -34,6 +37,7 @@ export const protocols: ProtocolInput[] = [
   febrileNeutropeniaFirstHour,
   fertilityPreservationBeforeCancerTreatment,
   gCsfProphylaxisByFebrileNeutropeniaRisk,
+  geriatricAssessmentBeforeSystemicCancerTherapy,
   implantedPortAccessAndCare,
   nutritionScreeningAndSupportDuringCancerTreatment,
   oralMucositisPreventionAndOralCare,

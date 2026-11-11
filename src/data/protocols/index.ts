@@ -20,6 +20,7 @@ import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
 import { medicinesReconciliationInCancerCare } from "./medicines-reconciliation-in-cancer-care";
+import { midlineCathetersForAnticancerTherapy } from "./midline-catheters-for-anticancer-therapy";
 import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
 import { peripheralCannulaForAnticancerTherapy } from "./peripheral-cannula-for-anticancer-therapy";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
@@ -56,6 +57,7 @@ export const protocols: ProtocolInput[] = [
   infusionReactionManagement,
   intrathecalChemotherapyAndVincaAlkaloidSafety,
   medicinesReconciliationInCancerCare,
+  midlineCathetersForAnticancerTherapy,
   oralAnticancerMedicinesAtHome,
   peripheralCannulaForAnticancerTherapy,
   piccAndTunnelledLineCare,

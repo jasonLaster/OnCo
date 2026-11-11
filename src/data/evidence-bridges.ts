@@ -99,8 +99,37 @@ export const evidenceBridges: TermInput[] = [
     tldr: "A marker can describe the likely course of a cancer or help identify differences in treatment benefit. Those roles require different evidence, and the same marker can have both.",
     summary: "A prognostic marker is associated with an outcome in a defined setting; a predictive marker identifies differences in treatment effect. Evidence for prediction needs a treatment comparison and assessment of how the treatment effect varies with the marker. A response association among people receiving one treatment can reflect prognosis or other differences. Statistical significance in one subgroup and nonsignificance in another does not by itself establish an interaction.",
     related: ["biomarker", "subgroup-analysis", "biomarker-cutpoint-selection", "surrogate-validation"],
-    links: [paper("Prognostic and predictive biomarker methodology (2015)", "10.1200/JCO.2015.63.3651"), FDA_BIOMARKERS],
-  }),
+    links: [
+  {
+    "label": "Prognostic and predictive biomarker methodology (2015)",
+    "url": "https://doi.org/10.1200/JCO.2015.63.3651"
+  },
+  {
+    "label": "FDA: biomarkers, roles and qualification",
+    "url": "https://www.fda.gov/drugs/biomarker-qualification-program/about-biomarkers-and-qualification"
+  },
+  {
+    "label": "FDA: circulating tumour DNA in early-stage solid-tumour drug development, 2024",
+    "url": "https://www.fda.gov/media/183874/download"
+  },
+  {
+    "label": "CONSORT 2025 statement: Updated guideline for reporting randomised trials.",
+    "url": "https://doi.org/10.1371/journal.pmed.1004587"
+  },
+  {
+    "label": "ICH E9: statistical principles for clinical trials, 1998",
+    "url": "https://www.fda.gov/media/71336/download"
+  }
+],
+
+"notes": [
+  "A prognostic marker is associated with a defined outcome under specified care in a defined population and time horizon. It is not automatically a description of untreated natural history. A predictive biomarker concerns the effect of a named treatment relative to a comparator: compare those treatment effects across marker groups, with an explicit effect scale and uncertainty. A marker can serve both roles. Prespecified groups and randomized treatment assignment support this comparison, although the actual design, missing specimens and applicability still matter. Keep the assay, specimen timing, population, care, endpoint and horizon with either claim.",
+  "A model that predicts response among people all receiving treatment A has not thereby measured the added effect of A versus another strategy. More responses in one marker group can support a response association while leaving that treatment-effect question unanswered. The same reasoning applies to attributing benefit to one component of a combined regimen. A post-treatment marker can reflect response rather than validate a baseline selection rule. Worse prognosis does not automatically imply a larger relative treatment benefit, and even an interaction does not establish safe withholding or escalation. Decision utility requires evidence about the marker-guided strategy and its harms.",
+  "Fictional two-year bad-outcome risks illustrate why the effect scale matters. In marker-positive people, comparator risk is 40 per cent and treatment risk 20 per cent; in marker-negative people they are 20 and 10 per cent. Comparator risks differ, while absolute risk reductions are 20 and 10 percentage points and both risk ratios are 0.5. Benefit is twice as large only on the stated absolute scale. These are exact invented quantities without sampling uncertainty, not measured trial effects or a treatment recommendation.",
+  "Significant in one subgroup and nonsignificant in another does not demonstrate different treatment effects. Assess the treatment-by-marker interaction, its uncertainty, multiplicity, prespecification, selection of available specimens and independent validation. A credible marker analysis needs enough relevant outcomes; its label alone supplies neither precision nor clinical usefulness."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "functional-variant-evidence", name: "Functional evidence for a sequence variant", category: "Genomics & genetics", aka: ["variant functional assay evidence", "PS3 and BS3 functional evidence"],
     tldr: "A functional assay tests what a genetic change does in a particular system. The result needs to fit the question about disease, and it does not automatically identify a useful treatment.",
@@ -162,15 +191,27 @@ export const evidenceBridges: TermInput[] = [
   {
     "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
     "url": "https://www.fda.gov/media/183874/download"
+  },
+  {
+    "label": "CLSI: harmonized analytical terminology",
+    "url": "https://htd.clsi.org/listterms.asp?button=Submit"
+  },
+  {
+    "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+    "url": "https://www.fda.gov/media/71147/download"
   }
 ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-11"
 ,
 "notes": [
   "A detection call and a reliable amount are different claims: the limit of detection describes detection probability under specified conditions and the limit of quantitation describes where a number is reliable, and the two have separate validation criteria. A value detected below the quantitative range does not support an exact fold change. In ctDNA reporting, a concentration such as mean tumour molecules per millilitre, a fraction such as variant allele fraction and a call are different quantities, so the fictional 0.01% variant allele fraction (100 parts per million of variant alleles) cannot be compared with a 0.2 molecules per millilitre report without both assays' methods and calibration.",
   "Detection and quantitation need different validation criteria. The terminology appendix of a November 2018 FDA technical review defines a detection limit using a specified detection probability and a quantitation limit using stated accuracy, or bias and precision, requirements. That review concerns a malaria biomarker, not an oncology-assay validation. The distinction explains why detection below a validated quantitative range does not justify an exact fold change; a commonly used 95% detection criterion is a specified convention, not a property guaranteed for every input or sample.",
-  "Validation of an amount needs the stated bias and precision criteria in the relevant specimen matrix, input range and measuring interval, with appropriate reference material and controls. A nominal detection limit describes its own conditions; it does not predict whether a different assay would miss a particular printed result. Keep the assay version and collection time with a trend, and treat failed input quality separately from a negative detection call."
+  "Validation of an amount needs the stated bias and precision criteria in the relevant specimen matrix, input range and measuring interval, with appropriate reference material and controls. A nominal detection limit describes its own conditions; it does not predict whether a different assay would miss a particular printed result. Keep the assay version and collection time with a trend, and treat failed input quality separately from a negative detection call.",
+  "The limit of blank describes an upper background response at a specified probability. A limit of detection concerns an amount that can be detected under stated false-call and detection-probability conditions; LoD95 specifies 95 per cent detection in the tested workflow. It is not a line above which every repeat must be positive, nor 95 per cent certainty that a person has disease. A limit of quantitation requires stated quantitative accuracy, including bias and imprecision goals. The limits answer different questions and have no universal spacing; they may coincide under a particular method and its criteria.",
+  "Evaluate repeated blanks and low-level specimens across the conditions the claim covers. Each finite set of repeats needs representative clinical specimens or suitably equivalent reference inputs. Record the analyte, amount or concentration units, specimen matrix, input, workflow boundary, assay version and acceptable false-positive, false-negative and quantitative-error rates. Matrix means the material surrounding the analyte; reference material with a known added analyte amount needs justified equivalence to the clinical specimen. A limit measured on purified material is not automatically a collection-to-report limit. Contamination, nonspecific signal, calibration bias, poor recovery, unrepresentative targets, different lots or operators and inadequate input can change performance. Calibration-slope sensitivity, analytical detection capability and clinical sensitivity are different uses of the same word.",
+  "A clinical decision threshold answers a different question from analytical detection or quantitation. Clinical sensitivity counts positive results among people meeting a defined reference condition; it cannot be converted directly from a laboratory detection limit. Analytical limits alone do not establish tumour location, prognosis, improved recurrence detection or benefit from acting on a result. Comparing assays requires their own specimen, input, calibration and clinical-validation evidence.",
+  "Fictional assay example: the blank-response axis describes background readings, while a separate known-input axis has LoD95 at 2 units. At that input, the assumption leaves about 5 per cent of repeated tests undetected. A signal near 4 units is detected but remains below an assumed quantitation limit of 8 units. It therefore does not establish an exact 33 per cent rise from 3 to 4. These invented amounts, curves and limits belong to this example; neither the spacing nor the missed-repeat fraction is a personal disease probability."
 ]
 }),
   t({
@@ -312,8 +353,27 @@ export const evidenceBridges: TermInput[] = [
     tldr: "People often receive different treatments because their health or cancer differs. Those starting differences can distort a comparison of outcomes between treatments.",
     summary: "A primary observational breast cancer study examined how treatment selection could make chemotherapy appear associated with recurrence and how adjustment methods changed the estimate. Measured-covariate adjustment did not eliminate the study's concern about residual confounding. A treatment association in routine-care data must be interpreted with the reasons treatment was selected. Propensity scores and large sample size do not automatically reproduce random assignment.",
     related: ["real-world-evidence", "target-trial-emulation", "trial-population-transportability"],
-    links: [paper("Treatment-selection confounding in an observational breast cancer study (2009)", "10.1016/j.jclinepi.2009.03.001")],
-  }),
+    links: [
+  {
+    "label": "Treatment-selection confounding in an observational breast cancer study (2009)",
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.03.001"
+  },
+  {
+    "label": "Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses",
+    "url": "https://doi.org/10.1016/j.jclinepi.2016.04.014"
+  },
+  {
+    "label": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies.",
+    "url": "https://doi.org/10.1371/journal.pmed.0040296"
+  }
+],
+
+"notes": [
+  "Confounding by indication arises when a reason for choosing treatment also relates to the outcome, such as giving more intensive therapy to people with more severe disease. Baseline fitness, access and prior care can also influence both treatment selection and outcome. A treatment-outcome association alone does not separate those pathways from the effect of treatment. The causal role and timing of each variable require the actual study context.",
+  "Fictional six-week symptom example: each treatment group contains 100 people. With A, 60 of 80 people in better baseline health improve and 5 of 20 in poorer health improve. With B, the corresponding counts are 15 of 20 and 20 of 80. Within each health category both treatments therefore have the same rates, 75 and 25 per cent, yet the pooled rates are 65 and 35 per cent because the baseline mixtures differ. This arithmetic illustrates a confounding explanation, not a recipe showing that matching one factor fixes every real comparison. Other differences, imperfect measurements, missing follow-up and clocks still matter."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "immortal-time-bias", name: "Immortal time bias", category: "Trials", aka: ["guarantee-time bias", "time-dependent treatment assignment bias"],
     tldr: "A group can appear to survive longer simply because people had to survive long enough to enter it. The starting time and rules for group membership are part of a fair comparison.",
@@ -375,8 +435,37 @@ export const evidenceBridges: TermInput[] = [
     tldr: "The threshold used to call a test positive is part of the test's evidence. A cutoff selected because it looked best in one dataset needs evaluation beyond that same dataset.",
     summary: "The primary Cutoff Finder study demonstrated methods that optimize biomarker thresholds against distributions, outcomes or survival. Such an optimized split is a discovery result. Its performance must retain the selection procedure and be assessed with appropriate independent evaluation before a clinical rule is claimed. The assay scale and intended decision also matter: a threshold chosen for one drug or purpose is not automatically transferable to another.",
     related: ["biomarker", "prognostic-versus-predictive-biomarkers", "data-leakage", "external-validation"],
-    links: [paper("Primary biomarker cutoff-optimization methods (2012)", "10.1371/journal.pone.0051862"), FDA_TESTS],
-  }),
+    links: [
+  {
+    "label": "Primary biomarker cutoff-optimization methods (2012)",
+    "url": "https://doi.org/10.1371/journal.pone.0051862"
+  },
+  {
+    "label": "FDA: reporting results of diagnostic-test studies",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda"
+  },
+  {
+    "label": "Dichotomizing continuous predictors in multiple regression: a bad idea",
+    "url": "https://doi.org/10.1002/sim.2331"
+  },
+  {
+    "label": "CLSI: harmonized analytical terminology",
+    "url": "https://htd.clsi.org/listterms.asp?button=Submit"
+  },
+  {
+    "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+    "url": "https://www.fda.gov/media/71147/download"
+  }
+],
+
+"notes": [
+  "A cutpoint applies a category rule to a continuous measurement. Analytical thresholds concern detection or quantitation; diagnostic thresholds classify a defined reference condition; protocol entry cutoffs determine eligibility; treatment-selection thresholds require evidence for an action. Detectable, quantifiable, positive and actionable are separate claims. Categorizing a continuous score does not make biology binary or imply a sharp switch across the line. Nor are cutoffs automatically interchangeable across assays, scales, model versions, drugs or intended uses.",
+  "Keep continuous measurements, reference outcomes, intended action, exact cutoff, units, direction, boundary equality, missing-result handling and assay or model version. Report counts and performance uncertainty. In a fixed fully assessed dataset where higher scores are positive, lowering the cutoff cannot lose an existing positive call, but may find extra cases and add false calls; performance can stay unchanged across an empty score range. Selecting the most favourable outcome-based cutoff can exaggerate separation and discard continuous information. Disclose the search, lock the rule and independently evaluate it in a relevant population for the intended action. Statistical separation alone does not establish clinical benefit.",
+  "Fictional scores for four reference-affected samples are 0.20, 0.55, 0.75 and 0.90; six unaffected samples have 0.10, 0.25, 0.35, 0.45, 0.60 and 0.80. Count equality as positive. At score at least 0.7: TP 2, FP 1, FN 2, TN 5, giving sensitivity 50 per cent, specificity 83.3 per cent and PPV 66.7 per cent. At least 0.4: TP 3, FP 3, FN 1, TN 3, giving sensitivity 75 per cent, specificity 50 per cent and PPV 50 per cent. Lowering this cutoff finds one additional affected sample and creates two additional false calls; sensitivity alone does not choose the better clinical action.",
+  "A mathematical optimization is only as appropriate as its stated objective and error costs. Using the same fictional counts, stipulate cost 5 for a missed case and 1 for a false call: the 0.7 rule costs 11 units and the 0.4 rule 8. Reverse the emphasis to costs 1 and 10, and the totals become 12 and 31. The preferred rule changes without changing any test result. These invented costs are not clinical valuations; actual decisions require relevant benefits, harms and evidence, not a universal mathematical maximum."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "decision-curve-net-benefit", name: "Decision curves and net benefit", category: "Methods and models", aka: ["decision curve analysis", "model net benefit"],
     tldr: "A prediction model can be evaluated by the consequences of using it for a decision. Decision curves examine that trade-off across a range of decision thresholds.",

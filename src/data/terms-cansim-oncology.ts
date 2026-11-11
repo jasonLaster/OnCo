@@ -123,12 +123,40 @@ export const cansimOncologyTerms: TermInput[] = [
     tldr: "A copy number alteration is a stretch of DNA that a tumour has gained extra copies of or lost, from a single gene to a whole chromosome arm.",
     summary: "Copy number variation is a form of structural variation in which sections of the genome are duplicated or deleted (Wikipedia); in tumours the acquired form is called a somatic copy number alteration. Arm-level and focal events are called from arrays or sequencing, and GISTIC2.0 is the standard method for finding regions amplified or deleted more often than chance across a cohort. CNA is one of TCGA's core data types and a modality in most multi-omic models.",
     terms: ["co-amplification", "gistic"], technologies: ["wes-wgs"] }),
-  t({ id: "cancer-drivers-vs-actionable", asOf: "2026-11-08", name: "Actionable genomic biomarkers", category: BM, aka: ["actionable genomic biomarkers", "actionable alteration", "actionable alterations", "actionable mutation", "actionable mutations", "actionable biomarker", "clinically actionable"],
+  t({ id: "cancer-drivers-vs-actionable", asOf: "2026-11-11", name: "Actionable genomic biomarkers", category: BM, aka: ["actionable genomic biomarkers", "actionable alteration", "actionable alterations", "actionable mutation", "actionable mutations", "actionable biomarker", "clinically actionable"],
     wikipedia: W("Personalized_medicine"), cansim: "/terms/actionable-genomic-biomarkers",
     tldr: "An actionable genomic finding has evidence relevant to a treatment decision in a specified setting. The exact alteration, cancer type and strength of treatment evidence matter.",
     summary: "Biological function, contribution to cancer growth and evidence of treatment benefit are different claims. ESCAT ranks genomic targets by clinical evidence, distinguishing routine-use evidence from investigational, other-disease and preclinical findings. An abnormal functional assay does not establish drug benefit, and a gene-level match does not make every variant equivalent. Actionability should retain the alteration, disease, intervention and evidence tier. Trial eligibility, access and an individual's treatment decision require additional information.",
-    links: [{ label: "ESMO clinical actionability framework (2018)", url: DOI("10.1093/annonc/mdy263") }, { label: "ClinGen functional variant evidence recommendations (2019)", url: DOI("10.1186/s13073-019-0690-2") }],
-    terms: ["driver-mutation", "biomarker"], related: ["oncokb", "civic", "vus", "functional-variant-evidence", "measurement-to-benefit-evidence"], technologies: ["cgp"] }),
+    links: [
+  {
+    "label": "ESMO clinical actionability framework (2018)",
+    "url": "https://doi.org/10.1093/annonc/mdy263"
+  },
+  {
+    "label": "ClinGen functional variant evidence recommendations (2019)",
+    "url": "https://doi.org/10.1186/s13073-019-0690-2"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Personalized_medicine"
+  },
+  {
+    "label": "OncoKB: therapeutic levels of evidence",
+    "url": "https://www.oncokb.org/content/files/levelOfEvidence/V2/LevelsOfEvidence.pdf"
+  },
+  {
+    "label": "fda-cdx",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+  }
+],
+    terms: ["driver-mutation", "biomarker"], related: ["oncokb", "civic", "vus", "functional-variant-evidence", "measurement-to-benefit-evidence"], technologies: ["cgp"] ,
+"notes": [
+  "Clinical actionability connects a reliable finding to a specified decision in a particular cancer and treatment setting. A pathogenic variant, a cancer driver, target engagement, tumour response and longer survival are different claims. Ask whether actionable means worth studying, matched to a trial or supported for standard care; an evidence tier is not an individual response probability. Measurement reliability, clinical meaning and benefit from the resulting decision each need evidence.",
+  "The original 2018 ESCAT framework has six tiers: I, targets ready for routine clinical decisions; II, investigational targets with likely benefit requiring additional data; III, benefit in another tumour type or a similar target; IV, preclinical evidence; V, evidence for co-targeting approaches; and X, lack of evidence for actionability. Preserve any subtier and assessment date. Tier V does not endorse an arbitrary combination, and tier X describes the available evidence rather than proving that a target can never become useful.",
+  "The OncoKB therapeutic-level definitions distinguish level 1, an FDA-recognized biomarker for an approved drug in that indication; 2, a standard-care biomarker recommended by professional guidelines for an approved drug in that indication; 3A, compelling clinical evidence in that indication; 3B, standard-care or investigational evidence in another indication; and 4, compelling biological evidence. Resistance is separate: R1 is a standard-care resistance biomarker for an approved drug in that indication, while R2 is compelling clinical resistance evidence. These are framework definitions, not a current list of available therapies.",
+  "Keep the framework, version or assessment date, exact alteration, drug, disease and supporting evidence together. There is no automatic numerical conversion between ESCAT and OncoKB. In a fictional report labelled OncoKB 3B, evidence in another indication does not establish standard treatment for the current tumour. Check the actual label or protocol, assay intended use, treatment line, prior therapy, formulation, safety and access. A therapy-linked companion diagnostic and a biologically similar research assay are not automatically interchangeable."
+]
+}),
   t({ id: "mrna-protein-concordance", targets: ["e2f7", "dclk1", "dnajc12"], name: "mRNA to protein concordance", category: BIO, aka: ["mRNA-protein concordance", "mRNA protein concordance", "transcript-protein correlation", "mRNA-protein correlation", "proteogenomic concordance"],
     wikipedia: W("Proteogenomics"), cansim: "/terms/mrna-protein-concordance",
     tldr: "mRNA to protein concordance is how well the amount of a gene's messenger RNA tracks the amount of the protein it codes for; for many genes it tracks poorly.",

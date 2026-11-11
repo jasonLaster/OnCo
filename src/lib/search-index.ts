@@ -7,6 +7,8 @@ import { nonMedicineClass, type ProductClass } from "./product-class";
 import { engineRoute, FORMATS, modalityRoute } from "./modular-formats";
 import { DECISION_TOOLS, toolRoute } from "./decision-tools";
 import { COMPARE_SETS, compareRoute } from "./cancer-compare";
+import { autoCountryCodes, autoCountry, countryRoute } from "./country-pages";
+import { GLOBOCAN } from "./globocan";
 
 export type SearchDoc = { id: string; kind: Kind | "page"; name: string; /** Aliases, one per line: MiniSearch tokenises on the newline as it does on a space, and the ranking can still tell "Breast cancer in men" from a lone "Breast". */ aka: string; tldr: string; tags: string; route: string; status?: string; /** Space-separated ids of the cancers the record links to, for the "for my cancer" filter. */ cancers?: string; /** The broader record this is a subtype of (a cancer's parent page); Ask ranks a subtype below its parent unless the query names it. */ parent?: string; /** A person's portrait, so the command palette can show a face without importing the portrait index. */ portrait?: string; /** A product that is not a medicine (src/lib/product-class.ts), so its result chip says Test rather than Treatment. */ cls?: Exclude<ProductClass, "medicine"> };
 
@@ -32,7 +34,12 @@ function pageDocs(): SearchDoc[] {
     ...DECISION_TOOLS.map((t) => ({ href: toolRoute(t.id), label: `${t.short}: ${t.title}`, blurb: t.lede })),
     ...COMPARE_SETS.map((s) => ({ href: compareRoute(s.anchorId), label: `${graph().must(s.anchorId).name} compared with its neighbours`, blurb: s.title })),
   ];
-  const pages: ReadonlyArray<{ href: string; label: string; blurb: string; aka?: string }> = [...NAV_GROUPS.flatMap((gp) => [{ href: gp.href, label: gp.label, blurb: gp.blurb }, ...gp.items]), ...SITE_PAGES, ...enginePages, ...modalityPages, ...toolPages];
+  // The automatic country pages (src/app/countries/[iso]/page.tsx), so "Peru" reaches its page; the deep dives are in the navigation.
+  const countryPages = autoCountryCodes().map((code) => {
+    const c = autoCountry(code)!;
+    return { href: countryRoute(code), label: `Cancer in ${c.name}`, blurb: `${c.name}: GLOBOCAN ${GLOBOCAN.year} cases, deaths and leading cancers, trials with a site there, institutions, companies and people in OnCo.`, aka: [c.name, c.globocanName].filter((x, i, a) => a.indexOf(x) === i).join("\n") };
+  });
+  const pages: ReadonlyArray<{ href: string; label: string; blurb: string; aka?: string }> = [...NAV_GROUPS.flatMap((gp) => [{ href: gp.href, label: gp.label, blurb: gp.blurb }, ...gp.items]), ...SITE_PAGES, ...enginePages, ...modalityPages, ...toolPages, ...countryPages];
   for (const it of pages) {
     if (seen.has(it.href)) continue; seen.add(it.href);
     // `aka` carries the page's former name, so a reader searching "forest plot" still reaches the renamed page.

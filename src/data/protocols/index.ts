@@ -7,6 +7,7 @@ import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
+import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
 import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication-before-reaction-prone-anticancer-drugs";
 import { sactAdministrationChecksAtTheChair } from "./sact-administration-checks-at-the-chair";
@@ -26,6 +27,7 @@ export const protocols: ProtocolInput[] = [
   hazardousDrugHandlingInClinicalAreas,
   implantedPortAccessAndCare,
   infusionReactionManagement,
+  intrathecalChemotherapyAndVincaAlkaloidSafety,
   piccAndTunnelledLineCare,
   premedicationBeforeReactionProneAnticancerDrugs,
   sactAdministrationChecksAtTheChair,

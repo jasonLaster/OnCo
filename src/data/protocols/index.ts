@@ -3,12 +3,16 @@ import { antiemeticProphylaxisByEmeticRisk } from "./antiemetic-prophylaxis-by-e
 import { boneHealthOnHormoneTherapy } from "./bone-health-on-hormone-therapy";
 import { breastCancerFollowUpAfterTreatment } from "./breast-cancer-follow-up-after-treatment";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
+import { chemotherapyInducedAnaemiaEsaAndIron } from "./chemotherapy-induced-anaemia-esa-and-iron";
+import { chemotherapyInducedPeripheralNeuropathyAssessmentAndPrevention } from "./chemotherapy-induced-peripheral-neuropathy-assessment-and-prevention";
 import { colorectalCancerFollowUpAfterCurativeTreatment } from "./colorectal-cancer-follow-up-after-curative-treatment";
 import { dentalAssessmentBeforeBoneModifyingAgents } from "./dental-assessment-before-bone-modifying-agents";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { fertilityPreservationBeforeCancerTreatment } from "./fertility-preservation-before-cancer-treatment";
+import { gCsfProphylaxisByFebrileNeutropeniaRisk } from "./g-csf-prophylaxis-by-febrile-neutropenia-risk";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { oralMucositisPreventionAndOralCare } from "./oral-mucositis-prevention-and-oral-care";
+import { redCellAndPlateletTransfusionThresholds } from "./red-cell-and-platelet-transfusion-thresholds";
 import { vteRiskAssessmentAndThromboprophylaxisAmbulatory } from "./vte-risk-assessment-and-thromboprophylaxis-ambulatory";
 
 /**
@@ -20,11 +24,15 @@ export const protocols: ProtocolInput[] = [
   boneHealthOnHormoneTherapy,
   breastCancerFollowUpAfterTreatment,
   chemotherapyExtravasationManagement,
+  chemotherapyInducedAnaemiaEsaAndIron,
+  chemotherapyInducedPeripheralNeuropathyAssessmentAndPrevention,
   colorectalCancerFollowUpAfterCurativeTreatment,
   dentalAssessmentBeforeBoneModifyingAgents,
   febrileNeutropeniaFirstHour,
   fertilityPreservationBeforeCancerTreatment,
+  gCsfProphylaxisByFebrileNeutropeniaRisk,
   implantedPortAccessAndCare,
   oralMucositisPreventionAndOralCare,
+  redCellAndPlateletTransfusionThresholds,
   vteRiskAssessmentAndThromboprophylaxisAmbulatory,
 ];

@@ -202,7 +202,7 @@ export const radiotherapyDoseFractionationReference = protocol({
   terms: ["hypofractionation", "bone-metastases", "metastatic-spinal-cord-compression"],
   institutions: ["astro"],
   related: ["prostate-radiotherapy-bladder-and-rectal-preparation", "breast-radiotherapy-positioning-and-setup"],
-  upgrades: ["idea-pu-five-fraction-breast-default", "idea-pu-prostate-hypofractionation-default"],
+  upgrades: ["idea-pu-five-fraction-breast-default", "idea-pu-prostate-hypofractionation-default", "idea-acc-single-fraction-palliative-radiotherapy-default"],
   gaps: [
     "Only a selection of the RCR's schedules is shown as steps; the reference covers 22 sites and many more indications, including head and neck, gynaecological, lymphoma, paediatric, skin and oligometastatic disease.",
     "The ASTRO guidelines were read as abstracts; their full texts (and so their grades and the full lists of schedules) are behind the Practical Radiation Oncology paywall.",

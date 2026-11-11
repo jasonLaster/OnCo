@@ -143,6 +143,7 @@ export const pneumocystisPneumoniaProphylaxis = protocol({
     { key: "asco-idsa-2018", label: "Antimicrobial Prophylaxis for Adult Patients With Cancer-Related Immunosuppression: ASCO and IDSA Clinical Practice Guideline Update", publisher: "ASCO and IDSA, Journal of Clinical Oncology", year: 2018, url: "https://europepmc.org/abstract/MED/30179565", doi: "10.1200/JCO.18.00374", read: "abstract", accessed: "2026-11-11" },
     { key: "jpho-2017", label: "Guidelines for the Prophylaxis of Pneumocystis jirovecii Pneumonia (PJP) in Children With Solid Tumors", publisher: "Journal of Pediatric Hematology/Oncology", year: 2017, url: "https://europepmc.org/abstract/MED/28267082", doi: "10.1097/mph.0000000000000771", read: "abstract", accessed: "2026-11-11" },
   ],
+  terms: ["lymphoma-tx-pjp-and-infection-prophylaxis"],
   upgrades: [],
   gaps: [
     "The ECIL-5 full text could not be read: the publisher's page returned a bot challenge to a script. Its paediatric doses and the additional regimen-specific indications it proposes are not given here.",

@@ -94,7 +94,7 @@ export const geriatricAssessmentBeforeSystemicCancerTherapy = protocol({
   sources: [
     { key: "asco-2023", label: "Practical Assessment and Management of Vulnerabilities in Older Patients Receiving Systemic Cancer Therapy: ASCO Guideline Update", publisher: "ASCO, Journal of Clinical Oncology", year: 2023, url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12803700/", doi: "10.1200/JCO.23.00933", gradingScheme: "Each recommendation printed with type (evidence based or informal consensus), evidence quality (high, moderate, low, insufficient) and strength (strong, moderate, weak).", read: "full-text", accessed: "2026-11-11" },
   ],
-  upgrades: ["idea-acc-geriatric-assessment-by-default"],
+  upgrades: ["idea-acc-geriatric-assessment-by-default", "idea-acc-electronic-frailty-index-oncology"],
   gaps: [
     "Only ASCO was read. The SIOG recommendations and ESMO's position on geriatric assessment were not read, and NICE has no cancer-specific geriatric assessment guidance.",
     "The text read is the author manuscript in PubMed Central; a 2025 erratum to the guideline exists and was not read.",

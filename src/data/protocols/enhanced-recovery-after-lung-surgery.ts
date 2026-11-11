@@ -222,7 +222,7 @@ export const enhancedRecoveryAfterLungSurgery = protocol({
   ],
   cancers: ["lung-cancer", "nsclc"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["lobectomy"],
+  terms: ["lobectomy", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "routine-preoperative-tests"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

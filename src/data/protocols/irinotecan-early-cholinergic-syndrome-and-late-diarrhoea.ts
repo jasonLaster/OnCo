@@ -133,7 +133,7 @@ export const irinotecanEarlyCholinergicSyndromeAndLateDiarrhoea = protocol({
   technologies: ["ugt1a1-genotyping"],
   targets: ["ugt1a1"],
   drugs: ["irinotecan", "sacituzumab-govitecan", "folfiri", "folfoxiri"],
-  terms: ["ctcae-grading", "febrile-neutropenia"],
+  terms: ["ctcae-grading", "febrile-neutropenia", "chemotherapy-side-effects-colorectal", "chemotherapy-side-effects-pancreatic"],
   related: ["treatment-induced-diarrhoea-grading-and-management", "octreotide-lanreotide", "febrile-neutropenia-first-hour"],
   sections: ["supportive-care"],
   tags: ["protocol", "diarrhoea", "supportive-care"],

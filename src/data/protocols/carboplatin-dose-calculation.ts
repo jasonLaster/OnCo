@@ -222,7 +222,7 @@ export const carboplatinDoseCalculation = protocol({
   drugs: ["carboplatin"],
   technologies: ["carboplatin-calvert-dosing"],
   terms: ["pharmacokinetics"],
-  related: ["paper-calvert-j-clin-oncol", "sact-prescribing-and-pharmacy-verification"],
+  related: ["paper-calvert-j-clin-oncol", "sact-prescribing-and-pharmacy-verification", "iohexol"],
   upgrades: ["idea-upgrade-carboplatin-gfr-estimate-outcome-study"],
   gaps: [
     "No ESMO, ASCO or NICE guideline on carboplatin dose calculation exists to compare with ADDIKD; ADDIKD is a consensus (its carboplatin recommendations rest on clinical consensus), and its uptake outside Australia is not yet known.",

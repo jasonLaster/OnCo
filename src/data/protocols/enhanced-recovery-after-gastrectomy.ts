@@ -193,7 +193,7 @@ export const enhancedRecoveryAfterGastrectomy = protocol({
   ],
   cancers: ["gastric"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation", "enteral-parenteral-nutrition"],
-  terms: ["gastrectomy"],
+  terms: ["gastrectomy", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "enhanced-recovery-after-liver-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

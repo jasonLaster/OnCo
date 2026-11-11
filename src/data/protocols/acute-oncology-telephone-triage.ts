@@ -135,7 +135,7 @@ export const acuteOncologyTelephoneTriage = protocol({
     { key: "costars-2026", label: "Leveraging co-production in the systematic review of evidence to update the Pan-Canadian Oncology Symptom Triage and Remote Support (COSTaRS) practice guides", publisher: "Canadian Oncology Nursing Journal", year: 2026, url: "https://europepmc.org/abstract/MED/42621903", doi: "10.5737/23688076362128", read: "abstract", accessed: "2026-11-11" },
     { key: "basch-2016", label: "Symptom Monitoring With Patient-Reported Outcomes During Routine Cancer Treatment: A Randomized Controlled Trial", publisher: "Journal of Clinical Oncology", year: 2016, url: "https://europepmc.org/abstract/MED/26644527", doi: "10.1200/JCO.2015.63.0830", read: "abstract", accessed: "2026-11-11" },
   ],
-  upgrades: [],
+  upgrades: ["idea-acc-electronic-pro-monitoring-standard"],
   gaps: [
     "The UKONS tool's own guidance document (training, competency and the full log sheet) was not found publicly; only the version 3 poster was read. ukons.org does not list the tool among its public resources.",
     "No randomised trial has compared telephone triage with a structured tool against unstructured advice; the evidence for the UKONS tool is service evaluations (Clatterbridge, Tayside) and the expert consensus behind it.",

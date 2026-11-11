@@ -244,7 +244,7 @@ export const prostateRadiotherapyBladderAndRectalPreparation = protocol({
   technologies: ["in-room-imaging-systems", "imrt-igrt"],
   terms: ["radiotherapy", "prostate-radiotherapy-fractionation"],
   related: [],
-  upgrades: ["idea-pu-pelvic-filling-protocol"],
+  upgrades: ["idea-pu-pelvic-filling-protocol", "idea-pu-rectal-spacer-prostate"],
   gaps: [
     "No guideline with graded recommendations covers bladder filling or rectal preparation for prostate radiotherapy. The ESTRO ACROP IGRT guideline (2019) was read only as an abstract (the open repository copy is restricted and the publisher returned a bot page); its position on preparation is reported here only as Alexander et al. cite it.",
     "The water-volume trial, the meta-analysis and the rectal preparation trials were read as abstracts; all are small or single-centre.",

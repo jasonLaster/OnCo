@@ -162,6 +162,7 @@ export const ambulatoryChemotherapyPumpsAtHome = protocol({
     },
   ],
   drugs: ["fluorouracil"],
+  terms: ["chemotherapy-side-effects-pancreatic"],
   technologies: ["ambulatory-chemotherapy-pumps", "closed-system-transfer-devices", "implanted-ports", "picc-lines"],
   related: ["oral-anticancer-medicines-at-home", "hazardous-drug-handling-in-clinical-areas", "sact-administration-checks-at-the-chair"],
   upgrades: [],

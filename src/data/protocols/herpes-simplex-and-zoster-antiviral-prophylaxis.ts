@@ -134,6 +134,7 @@ export const herpesSimplexAndZosterAntiviralProphylaxis = protocol({
     { key: "agiho-2015", label: "Antiviral prophylaxis in patients with solid tumours and haematological malignancies: update of the Guidelines of the Infectious Diseases Working Party (AGIHO) of the German Society for Hematology and Medical Oncology (DGHO)", publisher: "AGIHO/DGHO, Annals of Hematology", year: 2015, url: "https://europepmc.org/article/PMC/PMC4525190", doi: "10.1007/s00277-015-2447-3", read: "full-text", accessed: "2026-11-11" },
     { key: "asco-idsa-2018", label: "Antimicrobial Prophylaxis for Adult Patients With Cancer-Related Immunosuppression: ASCO and IDSA Clinical Practice Guideline Update", publisher: "ASCO and IDSA, Journal of Clinical Oncology", year: 2018, url: "https://europepmc.org/abstract/MED/30179565", doi: "10.1200/JCO.18.00374", read: "abstract", accessed: "2026-11-11" },
   ],
+  terms: ["lymphoma-tx-pjp-and-infection-prophylaxis"],
   upgrades: [],
   gaps: [
     "The ASCO/IDSA 2018 guideline was read only as an abstract, so its doses, durations and grades for antiviral prophylaxis are not stated here.",

@@ -162,7 +162,7 @@ export const antifungalProphylaxisInHaematology = protocol({
   companies: ["childrens-oncology-group"],
   cancers: ["aml", "all-leukemia", "childhood-cancers"],
   technologies: ["allogeneic-hsct", "autologous-stem-cell-transplant", "car-t"],
-  terms: ["neutropenia"],
+  terms: ["neutropenia", "lymphoma-tx-pjp-and-infection-prophylaxis"],
   related: ["paediatric-fever-and-neutropenia", "antibacterial-prophylaxis-in-neutropenia", "neutropenic-precautions-and-daily-life", "vincristine", "venetoclax"],
   sections: ["supportive-care"],
   tags: ["protocol", "antimicrobial-prophylaxis", "antifungal", "paediatric"],

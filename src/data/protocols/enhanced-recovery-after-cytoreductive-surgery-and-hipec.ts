@@ -223,7 +223,7 @@ export const enhancedRecoveryAfterCytoreductiveSurgeryAndHipec = protocol({
   ],
   cancers: ["appendiceal", "peritoneal-mesothelioma", "ovarian", "gastric"],
   technologies: ["hipec", "hipec-pipac-devices", "eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["cytoreductive-surgery", "hipec-procedure", "colorectal-peritoneal-metastases", "peritoneal-metastasis"],
+  terms: ["cytoreductive-surgery", "hipec-procedure", "colorectal-peritoneal-metastases", "peritoneal-metastasis", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "enhanced-recovery-after-liver-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

@@ -147,7 +147,7 @@ export const scalpCoolingDuringChemotherapy = protocol({
     { key: "onf-overview-2022", label: "Effectiveness, Safety, and Tolerance of Scalp Cooling for Chemotherapy-Induced Alopecia", publisher: "Oncology Nursing Forum", year: 2022, url: "https://europepmc.org/abstract/MED/35788740", doi: "10.1188/22.ONF.369-384", read: "abstract", accessed: "2026-11-11" },
     { key: "macmillan", label: "Scalp cooling", publisher: "Macmillan Cancer Support", year: 2026, url: "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/hair-loss/scalp-cooling", gradingScheme: "Patient information, not graded.", read: "public-summary", accessed: "2026-11-11" },
   ],
-  upgrades: ["idea-moon-hair-preservation-for-all", "idea-upgrade-twenty-minute-post-infusion-scalp-cooling-after-taxanes"],
+  upgrades: ["idea-moon-hair-preservation-for-all", "idea-upgrade-twenty-minute-post-infusion-scalp-cooling-after-taxanes", "idea-mach-cooling-off-the-chair"],
   gaps: [
     "No ESMO, ASCO, MASCC, ONS or NICE guideline on scalp cooling was found; the ESMO 2021 dermatological toxicity guideline, which covers alopecia, could not be read (the publisher refused a script).",
     "Hair care during and after cooling (gentle washing, avoiding heat styling, colouring and tight hairstyles) is widely advised by manufacturers and units, but no independent source setting it out could be read; Paxman's hair care page returned no usable text and the Breast Cancer Now and Breastcancer.org pages tried were not found.",
@@ -160,7 +160,7 @@ export const scalpCoolingDuringChemotherapy = protocol({
   drugs: ["paclitaxel", "docetaxel", "doxorubicin", "epirubicin", "cyclophosphamide"],
   companies: ["paxman", "dignitana"],
   cancers: ["breast-cancer"],
-  terms: ["hair-loss-and-scalp-cooling-breast", "anthracycline"],
+  terms: ["hair-loss-and-scalp-cooling-breast", "anthracycline", "hair-anagen-effluvium"],
   sections: ["supportive-care"],
   tags: ["protocol", "alopecia", "scalp-cooling", "supportive-care"],
 });

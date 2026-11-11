@@ -338,10 +338,10 @@ export const implantedPortAccessAndCare = protocol({
       accessed: "2026-11-11",
     },
   ],
-  technologies: ["implanted-ports", "infusion-devices-vascular-access"],
+  technologies: ["implanted-ports", "infusion-devices-vascular-access", "huber-needles-port-access"],
   terms: ["central-venous-access", "febrile-neutropenia", "vte", "extravasation-infusion-reaction"],
   related: [],
-  upgrades: [],
+  upgrades: ["idea-upgrade-masks-and-head-turn-at-port-access-infection-study"],
   gaps: [
     "No national or international guideline read (ESMO 2015, CDC/HICPAC 2011, SHEA 2022, epic3 2014, NICE CG139) recommends a mask on the clinician or the patient, or the patient turning their head away, when a port is accessed, flushed or dressed. Their mask recommendations cover central line insertion (maximal sterile barrier precautions) and splash risk only. A public provincial procedure (Shared Health Manitoba P02.2) requires both; whether the INS standards address it could not be checked.",
     "The INS Infusion Therapy Standards of Practice, 9th edition (2024), the most detailed standard on port access, needle change and flushing, could not be read: the journal served no standards text to a script and no open copy was found. Nothing here rests on it.",

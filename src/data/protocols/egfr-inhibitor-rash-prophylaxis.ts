@@ -129,7 +129,7 @@ export const egfrInhibitorRashProphylaxis = protocol({
     "Dose rules for cetuximab and the EGFR tablets were not read here; each drug's own label sets them.",
     "Paronychia (nail fold inflammation) and scalp problems, which last longer than the rash, are covered only in part: the MASCC guideline's paronychia recommendations rest on expert opinion.",
   ],
-  drugs: ["cetuximab", "panitumumab", "amivantamab", "lazertinib", "erlotinib", "gefitinib", "afatinib", "osimertinib"],
+  drugs: ["cetuximab", "panitumumab", "amivantamab", "lazertinib", "erlotinib", "gefitinib", "afatinib", "osimertinib", "hydrocortisone"],
   cancers: ["colorectal", "egfr-mutant-nsclc"],
   terms: ["rash-skin-toxicity", "chemotherapy-side-effects-colorectal"],
   sections: ["supportive-care"],

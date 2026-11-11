@@ -169,7 +169,7 @@ export const nauseaAndVomitingInAdvancedCancer = protocol({
     "The sources read do not cover children.",
   ],
   institutions: ["mascc", "esmo"],
-  technologies: ["palliative-care"],
+  technologies: ["palliative-care", "syringe-drivers"],
   drugs: ["dexamethasone"],
   terms: ["qt-prolongation"],
   bottlenecks: ["b-palliative"],

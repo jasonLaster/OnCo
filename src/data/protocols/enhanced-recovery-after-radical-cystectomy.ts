@@ -170,7 +170,7 @@ export const enhancedRecoveryAfterRadicalCystectomy = protocol({
   ],
   cancers: ["urothelial", "muscle-invasive-bladder-cancer"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["cystectomy"],
+  terms: ["cystectomy", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "routine-preoperative-tests", "enhanced-recovery-after-colorectal-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-extended-clot-prevention-after-surgery"],
   gaps: [

@@ -341,6 +341,7 @@ export const chemotherapyExtravasationManagement = protocol({
     "dexrazoxane", "doxorubicin", "daunorubicin", "epirubicin", "idarubicin", "vincristine", "vinblastine", "vinorelbine",
     "paclitaxel", "docetaxel", "mitomycin", "mitoxantrone", "dactinomycin", "mechlorethamine", "trabectedin", "oxaliplatin",
     "etoposide", "cisplatin", "bendamustine",
+    "carmustine", "dacarbazine",
   ],
   technologies: ["implanted-ports", "picc-lines"],
   terms: ["extravasation-infusion-reaction", "central-venous-access"],

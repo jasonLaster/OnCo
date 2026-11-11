@@ -199,8 +199,9 @@ export const enhancedRecoveryAfterPancreatoduodenectomy = protocol({
     },
   ],
   cancers: ["pancreatic"],
-  technologies: ["eras-perioperative-nutrition", "prehabilitation", "enteral-parenteral-nutrition"],
-  terms: ["whipple", "eating-after-whipple"],
+  drugs: ["pancrelipase"],
+  technologies: ["eras-perioperative-nutrition", "prehabilitation", "enteral-parenteral-nutrition", "self-expanding-metal-stents"],
+  terms: ["whipple", "eating-after-whipple", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "enhanced-recovery-after-liver-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

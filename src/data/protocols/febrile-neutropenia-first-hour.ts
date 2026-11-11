@@ -198,6 +198,7 @@ export const febrileNeutropeniaFirstHour = protocol({
     { key: "cisne-2015", label: "Prediction of Serious Complications in Patients With Seemingly Stable Febrile Neutropenia: Validation of the Clinical Index of Stable Febrile Neutropenia in a Prospective Cohort of Patients From the FINITE Study", publisher: "Journal of Clinical Oncology", year: 2015, url: "https://europepmc.org/abstract/MED/25559804", doi: "10.1200/JCO.2014.57.2347", read: "abstract", accessed: "2026-11-11" },
     { key: "cardiff-vale-2025", label: "Policy for the management of suspected and proven neutropenic sepsis in adults (UHB 529)", publisher: "Cardiff and Vale University Health Board", year: 2025, url: "https://cavuhb.nhs.wales/files/policies-procedures-and-guidelines/patient-safety-and-quality/uhb-529-neutropenic-sepsis-policy-final-version-1-2-1-pdf/", read: "full-text", accessed: "2026-11-11" },
   ],
+  related: ["idea-acc-hospital-at-home-oncology", "idea-acc-acute-oncology-assessment-units"],
   upgrades: [],
   gaps: [
     "The ESMO 2016 guideline could not be read: it has no abstract in Europe PMC and the publisher's page refused a script. Its fever threshold, time target and antibiotic choice are not stated here.",
@@ -209,7 +210,7 @@ export const febrileNeutropeniaFirstHour = protocol({
   ],
   institutions: ["nice", "asco", "mascc"],
   technologies: ["implanted-ports", "picc-lines"],
-  terms: ["febrile-neutropenia", "neutropenia", "central-venous-access"],
+  terms: ["febrile-neutropenia", "neutropenia", "central-venous-access", "neutropenic-sepsis-breast-chemotherapy"],
   sections: ["supportive-care"],
   tags: ["protocol", "neutropenic-sepsis", "acute-oncology"],
 });

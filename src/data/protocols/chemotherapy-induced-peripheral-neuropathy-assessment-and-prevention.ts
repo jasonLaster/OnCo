@@ -114,7 +114,8 @@ export const chemotherapyInducedPeripheralNeuropathyAssessmentAndPrevention = pr
     { key: "cryopac-2026", label: "Efficacy of cryotherapy in preventing taxane-induced neuropathy: the CryoPac randomised controlled trial", publisher: "Annals of Oncology", year: 2026, url: "https://europepmc.org/abstract/MED/42838271", doi: "10.1016/j.annonc.2026.09.014", read: "abstract", accessed: "2026-11-11" },
     { key: "esmo-eons-eano-2020", label: "Systemic anticancer therapy-induced peripheral and central neurotoxicity: ESMO-EONS-EANO Clinical Practice Guidelines for diagnosis, prevention, treatment and follow-up", publisher: "ESMO, EONS and EANO, Annals of Oncology", year: 2020, url: "https://doi.org/10.1016/j.annonc.2020.07.003", doi: "10.1016/j.annonc.2020.07.003", read: "not-reachable", accessed: "2026-11-11" },
   ],
-  upgrades: ["idea-upgrade-hand-foot-cooling-compression-during-taxanes"],
+  related: ["idea-moon-neuropathy-prevention-programme"],
+  upgrades: ["idea-upgrade-hand-foot-cooling-compression-during-taxanes", "idea-mach-cold-or-compression-by-adherence"],
   gaps: [
     "ASCO 2020 was read only as an abstract; its grades, its position on cryotherapy, compression and exercise, and its dose-modification detail by drug are not given here.",
     "The ESMO-EONS-EANO 2020 guideline could not be read: Europe PMC holds no abstract and the publisher refused a script.",

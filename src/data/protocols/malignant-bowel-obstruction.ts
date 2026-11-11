@@ -151,7 +151,7 @@ export const malignantBowelObstruction = protocol({
     "No UK national guideline on malignant bowel obstruction was read.",
   ],
   drugs: ["octreotide-lanreotide", "dexamethasone"],
-  technologies: ["enteral-parenteral-nutrition", "palliative-care", "ct"],
+  technologies: ["enteral-parenteral-nutrition", "palliative-care", "ct", "self-expanding-metal-stents"],
   cancers: ["colorectal", "ovarian"],
   institutions: ["mascc"],
   terms: ["colorectal-palliation-obstruction-pain", "feeding-tube"],

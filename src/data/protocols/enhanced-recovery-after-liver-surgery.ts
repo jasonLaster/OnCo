@@ -200,7 +200,7 @@ export const enhancedRecoveryAfterLiverSurgery = protocol({
   ],
   cancers: ["hcc", "cholangiocarcinoma", "intrahepatic-cholangiocarcinoma"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["hepatectomy", "liver-limited-metastatic-colorectal"],
+  terms: ["hepatectomy", "liver-limited-metastatic-colorectal", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

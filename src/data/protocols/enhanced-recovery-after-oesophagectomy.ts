@@ -211,7 +211,7 @@ export const enhancedRecoveryAfterOesophagectomy = protocol({
   ],
   cancers: ["esophageal", "oesophageal-adenocarcinoma", "oesophageal-squamous-cell-carcinoma"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation", "enteral-parenteral-nutrition"],
-  terms: ["oesophagectomy"],
+  terms: ["oesophagectomy", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "enhanced-recovery-after-liver-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

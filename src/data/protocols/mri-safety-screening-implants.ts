@@ -134,6 +134,7 @@ export const mriSafetyScreeningImplants = protocol({
       accessed: "2026-11-11",
     },
   ],
+  drugs: ["fentanyl"],
   technologies: ["mri", "implanted-ports"],
   related: [],
   upgrades: [],

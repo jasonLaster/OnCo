@@ -240,8 +240,9 @@ export const enhancedRecoveryAfterColorectalSurgery = protocol({
     },
   ],
   cancers: ["colorectal", "rectal-cancer"],
+  drugs: ["dexamethasone", "ondansetron"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["colectomy", "total-mesorectal-excision"],
+  terms: ["colectomy", "total-mesorectal-excision", "prehabilitation-term"],
   related: ["surgical-site-infection-prevention", "vte-prophylaxis-after-cancer-surgery", "enhanced-recovery-after-liver-surgery", "routine-preoperative-tests"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-shorter-fasting-before-surgery"],
   gaps: [

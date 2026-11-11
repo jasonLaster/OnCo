@@ -203,7 +203,7 @@ export const enhancedRecoveryAfterGynaecologicalCancerSurgery = protocol({
   ],
   cancers: ["ovarian", "endometrial", "cervical", "vulvar"],
   technologies: ["eras-perioperative-nutrition", "prehabilitation"],
-  terms: ["hysterectomy", "debulking"],
+  terms: ["hysterectomy", "debulking", "prehabilitation-term"],
   related: ["vte-prophylaxis-after-cancer-surgery", "surgical-site-infection-prevention", "routine-preoperative-tests", "enhanced-recovery-after-colorectal-surgery"],
   upgrades: ["idea-pu-enhanced-recovery-with-measured-compliance", "idea-pu-extended-clot-prevention-after-surgery"],
   gaps: [

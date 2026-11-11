@@ -165,19 +165,69 @@ export const termsBasics: TermInput[] = [
   t({
     id: "oncogene", name: "Oncogene", category: BIO,
     aka: ["oncogenes", "oncogenic", "proto-oncogene", "proto-oncogenes"],
-    tldr: "A gene that, when over-activated by mutation or extra copies, pushes a cell to grow and divide. Think of an accelerator pedal stuck to the floor.",
-    summary: "Normal cells carry these genes as proto-oncogenes, which drive growth only when the cell receives the right signals; a mutation, amplification or fusion can lock them permanently on. Many oncogenes encode receptors and kinases in growth-signalling pathways (EGFR, HER2, ALK, KRAS, BRAF, PIK3CA), which is why so many targeted drugs are kinase inhibitors. Because a single activated oncogene can dominate a tumour's behaviour, blocking it can produce dramatic responses, the basis of oncogene addiction and of the whole targeted-therapy paradigm.",
+    tldr: "An oncogene is an activated form of a growth-promoting gene. Its presence alone does not prove that the cancer depends on it or that a particular drug will help.",
+    summary: "Normal proto-oncogenes participate in cell growth and survival. Particular sequence changes, extra copies or rearrangements can increase or redirect their activity. Whether an alteration drives disease, creates a dependency or supplies a useful treatment target depends on its functional and disease context.",
     wikipedia: W("Oncogene"),
     related: ["tumour-suppressor-gene", "driver-mutation", "oncogene-addiction", "kinase", "growth-signal", "sustaining-proliferative-signaling"], targets: ["egfr", "her2", "kras", "braf", "alk", "pik3ca"],
-  }),
+
+"notes": [
+  "Sequence change, amplification or rearrangement can activate a proto-oncogene, but more copies or RNA alone do not prove constitutive signalling or survival dependence. Driver contribution to cancer biology, drug targetability and clinical actionability are separate claims. A delivery address on a cell need not drive its growth, and a driver can be bypassed or lack a safe effective intervention.",
+  "In Slamon’s 1987 series, HER2 amplification occurred in about 30% of 189 primary breast cancers; this is a historical series, not a current population prevalence. The 2001 randomised trastuzumab trial showed benefit with chemotherapy in HER2-overexpressing metastatic disease. A prognostic association with amplification and benefit from an intervention are different evidence.",
+  "In a fictional comparison, an overactive receptor supplies a stronger signalling readout while loss of a repair safeguard has a different functional consequence. Neither observation alone demonstrates survival dependence. Interpretation retains the specimen and exact variant or copy finding, RNA or protein consequences and controlled functional endpoints, including exposure and off-target controls. There is no generic oncogene score that substitutes for disease-specific actionability."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Oncogene"
+  },
+  {
+    "label": "Slamon et al., Human breast cancer: correlation of relapse and survival with amplification of the HER-2/neu oncogene. (1987)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3798106/"
+  },
+  {
+    "label": "Slamon et al., Use of chemotherapy plus a monoclonal antibody against HER2 for metastatic breast cancer that overexpresses HER2. (2001)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11248153/"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "tumour-suppressor-gene", name: "Tumour suppressor gene", category: BIO,
     aka: ["tumour suppressor", "tumour suppressors", "tumor suppressor", "tumor suppressors", "tumor suppressor gene", "tumour suppressor genes", "tumor suppressor genes", "tumour-suppressor", "tumor-suppressor"],
-    tldr: "A gene whose normal job is to stop cells dividing or to make damaged cells die. Losing it removes a brake, so the cell can grow unchecked even without a stuck accelerator.",
-    summary: "Because a cell has two copies of each gene, a tumour suppressor is usually only disabled when both copies are lost, by mutation, deletion, or silencing; people who inherit one faulty copy (BRCA1, TP53 in Li-Fraumeni, APC) are one step closer and develop cancer young. TP53, mutated in about half of all cancers, halts division and triggers apoptosis after DNA damage; RB1 gates the cell cycle; PTEN restrains the PI3K pathway. Lost genes cannot be directly targeted by a drug, so treatment exploits the consequences: PARP inhibitors kill BRCA-deficient cells, and MDM2 inhibitors reactivate p53 in tumours where it is present but suppressed.",
+    tldr: "Tumour-suppressor genes help restrain growth or preserve cells and their genomes. Loss can matter through several mechanisms, so losing both copies is not a universal rule.",
+    summary: "Tumour-suppressor genes contribute to growth restraint, genome maintenance and responses to damage. Some cancers disable both useful copies; in other settings reduced dosage or interference by an altered protein matters. The exact variant, copy state and functional context determine what has been lost.",
     wikipedia: W("Tumor_suppressor_gene"),
     related: ["oncogene", "deletion", "synthetic-lethality", "evading-growth-suppressors", "hereditary-cancer-syndromes", "cell-cycle"], targets: ["tp53", "brca", "parp"], pathways: ["p53-cell-cycle", "pi3k-akt-mtor"],
-  }),
+
+"notes": [
+  "Tumour suppressors can restrain growth, maintain the genome or help remove damaged cells. Knudson’s retinoblastoma model proposed two events, with an inherited first event or two acquired events. Different changes can disable the useful copies, but two-hit loss is not a universal law for all suppressors. Haploinsufficiency means one useful copy supplies insufficient protective dosage; Fero’s challenged p27-heterozygous mice retained an unmutated, unsilenced remaining copy.",
+  "A dominant-negative altered protein interferes with useful protein rather than merely reducing dosage. Boettcher demonstrated this for particular TP53 variants in myeloid and leukaemia models, not every TP53 variant or breast tumour. TCGA reported TP53 mutations in 80% of its basal-like breast cancers. Basal-like is not identical to all TNBC, and a genomic frequency does not establish complete functional loss, drug restoration or a current approval claim.",
+  "A deletion, variant name or inherited alteration alone does not establish complete loss, loss of both copies or a particular functional effect. Inherited-plus-second-loss BRCA1 is one route to a conditional repair vulnerability, not every BRCA/HRD case or automatic PARP sensitivity. Blocking excess activity, restoring missing protection and exploiting a resulting vulnerability are different intervention concepts. A dosage/interference cartoon distinguishes mechanisms; it does not classify every variant or establish clinical benefit."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tumor_suppressor_gene"
+  },
+  {
+    "label": "Knudson, Mutation and cancer: statistical study of retinoblastoma. (1971)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/5279523/"
+  },
+  {
+    "label": "Fero et al., The murine gene p27Kip1 is haplo-insufficient for tumour suppression. (1998)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9823898/"
+  },
+  {
+    "label": "Boettcher et al., A dominant-negative effect drives selection of <i>TP53</i> missense mutations in myeloid malignancies. (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31395785/"
+  },
+  {
+    "label": "TCGA: molecular portraits of human breast tumours (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23000897/"
+  }
+],
+"asOf": "2026-11-10"
+}),
 
   // =====================================================================================
   // Signalling
@@ -559,11 +609,50 @@ export const termsBasics: TermInput[] = [
   t({
     id: "angiogenesis", name: "Angiogenesis", category: BIO,
     aka: ["angiogenic", "anti-angiogenic", "antiangiogenic", "anti-angiogenesis", "new blood vessels", "blood vessel growth", "neovascularisation", "neovascularization", "tumour vasculature", "tumor vasculature", "vascularised", "vascularized", "anti-angiogenics"],
-    tldr: "The growth of new blood vessels. A tumour bigger than a pinhead needs its own blood supply and sends out signals (mainly VEGF) to recruit one; anti-angiogenic drugs cut that supply.",
-    summary: "Starved of oxygen, tumour cells switch on the HIF transcription factor and secrete VEGF and other growth factors that make nearby blood vessels sprout towards them; the resulting vessels are leaky and disorganised, which raises pressure inside the tumour and hampers drug delivery. 'Inducing angiogenesis' is one of the hallmarks of cancer, and drugs that block VEGF (bevacizumab) or its receptors (sunitinib, lenvatinib, cabozantinib) are standard in kidney, liver, colorectal and other cancers, though they slow rather than cure. Normalising rather than destroying tumour vessels may improve delivery of chemotherapy and immune cells, and VEGF also suppresses immune cells, which is one rationale for combining anti-angiogenics with immunotherapy.",
+    tldr: "Angiogenesis is the growth of new blood vessels from existing vessels. Vessel number, blood flow, transport and oxygen delivery are different measurements.",
+    summary: "Endothelial cells form new vessels in response to signals such as VEGF and its receptors, during normal development and repair as well as disease. Cancer populations can obtain vascular access through new growth or use of existing vessels. Altering this system can affect delivery and local conditions, but a vessel or expression measurement alone does not establish treatment benefit.",
     wikipedia: W("Angiogenesis"),
     related: ["growth-factor", "inducing-angiogenesis", "tumor-microenvironment", "necrosis"], pathways: ["vegf-angiogenesis", "hif-vhl"], targets: ["vegf", "hif2a"], technologies: ["antiangiogenic"], drugs: ["belzutifan", "ivonescimab"],
-  }),
+
+"notes": [
+  "Angiogenesis creates new vessels from existing vessels through endothelial-cell growth and signalling, including VEGF and its receptors. It also occurs in development and repair. A tumour can obtain blood by other routes: Holash and colleagues observed co-option of existing vessels in their tumour models. Vessel structure, perfusion, permeability, tracer transport and oxygenation are separate measurements. Density counts structures within an area; perfusion concerns blood flow through a region; permeability concerns material crossing vessel walls; a tracer readout follows a particular probe. Oxygen availability also depends on diffusion and cellular consumption.",
+  "Blocking vascular signalling can change vessel integrity and transport as well as vessel number. Tong studied transport after VEGFR2 blockade; Winkler studied a temporary oxygenation and radiation-response window in mouse brain-tumour models. These are conditional experimental findings. They do not establish a universal dose, treatment schedule or clinical benefit, and excessive loss of useful vessels can limit delivery.",
+  "In E2100, 722 participants with metastatic breast cancer were randomised to paclitaxel with or without bevacizumab. Median progression-free survival was 11.8 versus 5.9 months; median overall survival was 26.7 versus 25.2 months, with P=0.16 for overall survival. The progression-free result did not establish an overall-survival benefit. The FDA withdrawn-approvals table records withdrawal of the US first-line HER2-negative metastatic-breast indication on 18 November 2011. That decision concerns a named indication and jurisdiction.",
+  "For a vascular measurement, retain the site, region, date, treatment exposure, measured area and counting or imaging method. Vessels per square millimetre describes density; contrast exchange describes a particular transport measurement; VEGF RNA describes expression. None is a direct substitute for oxygen measurement. A vessel-growth mechanism or VEGF signal alone does not establish dependence, selective tumour starvation, safety or individual treatment benefit.",
+  "Fictional equal-area fields contain four versus two vessel structures, while separately measured tracer values are 100 versus 160 arbitrary units. The second field has fewer vessels and a higher tracer readout. This is logically possible without establishing its oxygen level or treatment benefit. Drawn arrows are not measured flow rates. A roads analogy or workflow from vessels to delivery organises the questions; each functional step still needs evidence."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angiogenesis"
+  },
+  {
+    "label": "Holash et al., Vessel cooption, regression, and growth in tumors mediated by angiopoietins and VEGF. (1999)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10373119/"
+  },
+  {
+    "label": "Tong et al., Vascular normalization by vascular endothelial growth factor receptor 2 blockade induces a pressure gradient across the vasculature and improves drug penetration in tumors. (2004)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15172975/"
+  },
+  {
+    "label": "Winkler et al., Kinetics of vascular normalization by VEGFR2 blockade governs brain tumor response to radiation: role of oxygenation, angiopoietin-1, and matrix metalloproteinases. (2004)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15607960/"
+  },
+  {
+    "label": "Miller et al., Paclitaxel plus bevacizumab versus paclitaxel alone for metastatic breast cancer. (2007)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18160686/"
+  },
+  {
+    "label": "NCI: angiogenesis and angiogenesis inhibitors",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/angiogenesis-inhibitors-fact-sheet"
+  },
+  {
+    "label": "FDA: withdrawn cancer accelerated approvals, including the bevacizumab breast indication",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/withdrawn-cancer-accelerated-approvals"
+  }
+],
+"asOf": "2026-11-10"
+}),
 
   // =====================================================================================
   // Tumours: kinds and behaviour
@@ -571,11 +660,42 @@ export const termsBasics: TermInput[] = [
   t({
     id: "benign-vs-malignant", name: "Benign versus malignant", category: BIO,
     aka: ["benign", "malignant", "malignancy", "malignancies", "benign tumour", "benign tumours", "benign tumor", "benign tumors", "malignant tumour", "malignant tumours", "malignant tumor", "malignant tumors", "non-cancerous", "noncancerous", "cancerous"],
-    tldr: "A benign tumour grows but stays put and does not invade; a malignant tumour invades surrounding tissue and can spread. Only malignant tumours are cancer.",
-    summary: "Benign tumours (lipomas, most moles, adenomas) are usually harmless unless their size or position causes trouble, though some, such as colon polyps, are steps on the road to malignancy and are removed for that reason. Malignancy is defined by invasion through the tissue boundary and the capacity to metastasise; under the microscope, malignant cells show abnormal nuclei, high division rates and loss of normal architecture. A pathologist's job on a biopsy is first to make this call, and the whole staging system, treatment intent and prognosis flow from it.",
+    tldr: "Benign growths do not invade or metastasise, but can cause harm by their size or location. Cancer diagnosis depends on tissue and clinical context, not one mutation or growth rate.",
+    summary: "Benign and malignant describe different biological behaviours. Invasion and distant spread are separate findings, and some cancers, including leukaemias, do not form solid masses. Pathologists integrate represented cells and tissue organisation with clinical information and appropriate additional tests; a molecular result alone is not a diagnosis.",
     wikipedia: W("Benign_tumor"),
     related: ["invasive-cancer", "in-situ", "metastasis", "tumour-grade", "biopsy", "histology"],
-  }),
+
+"notes": [
+  "Cancer comprises diseases in which cell populations persist and behave abnormally within their tissue context. Normal renewal also involves division, so speed alone, one broken rule or one molecular result does not define cancer. Benign growths can cause harm through their size or location. Blood cancers such as leukaemia need not form a solid lump and can disrupt normal blood production.",
+  "Local invasion, in-situ disease and established distant metastasis are distinct findings. An invasive cancer need not have detected distant spread. A breast-cancer metastasis in lung remains breast cancer; primary tissue identity and the location of a deposit are different questions. A tissue-family marker alone does not establish malignancy.",
+  "Martincorena studied 234 biopsies from physiologically normal sun-exposed eyelid skin of four adults and found selected mutations in cancer-associated genes. This neither makes every such mutation harmless nor makes one mutation diagnostic of cancer. DNA changes and epigenetic regulation can contribute to behaviour, while the hallmarks framework organises capabilities rather than supplying a diagnostic checklist.",
+  "Interpret the represented morphology and tissue relationships together with clinical context and suitable immunostains or molecular tests. Retain the specimen, site, microscopic type, receptor findings, method and final diagnosis. The NCI pathology description includes the specimen source, gross and microscopic assessment and final diagnosis. A negative mutation panel does not exclude cancer; a positive result does not reconstruct every cell’s behaviour, establish drug sensitivity or prove clinical benefit.",
+  "In a fictional pair of gene-X scenes, both populations carry the same alteration, but one retains organised tissue relationships and the other shows local invasion. The shared change does not erase that difference or predict identical treatment sensitivity. An epithelial-boundary cartoon illustrates those relationships; it is not a checklist for diagnosing every cancer type."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Benign_tumor"
+  },
+  {
+    "label": "Martincorena et al., selected mutations in normal eyelid skin (2015)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25999502/"
+  },
+  {
+    "label": "NCI: what is cancer?",
+    "url": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"
+  },
+  {
+    "label": "NCI: pathology reports",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+  },
+  {
+    "label": "NCI: metastatic cancer",
+    "url": "https://www.cancer.gov/types/metastatic-cancer"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "primary-tumour", name: "Primary tumour", category: BIO,
     aka: ["primary tumours", "primary tumor", "primary tumors", "primary site", "primary cancer", "the primary", "site of origin", "unknown primary", "cancer of unknown primary", "secondary tumour", "secondary tumours", "secondaries", "primary cancers"],
@@ -587,11 +707,35 @@ export const termsBasics: TermInput[] = [
   t({
     id: "metastasis", keyPapers: ["paper-quail-joyce-microenvironment-metastasis-natmed-2013"], name: "Metastasis", category: BIO,
     aka: ["metastases", "metastatic", "metastasise", "metastasize", "metastasised", "metastasized", "metastasising", "metastasizing", "distant spread", "spread to", "secondary cancer", "secondary cancers", "stage IV", "stage 4", "advanced cancer", "advanced disease", "metastatic disease", "advanced cancers"],
-    tldr: "Cancer that has spread from where it started to distant parts of the body, travelling through the blood or lymph. Metastasis is why staging scans look at the whole body, and the setting in which most new cancer drugs are approved first.",
-    summary: "To metastasise, a cell must break away from the primary, invade through tissue into a blood or lymph vessel, survive the journey, exit at a distant organ, and grow there; each step is inefficient, yet enough cells succeed that around ninety percent of cancer deaths are due to metastases rather than the primary. Common destinations depend on the cancer (bone for prostate and breast, liver for colorectal, brain for lung and melanoma). Metastatic cancer is stage IV and is usually treated with systemic therapy rather than surgery, aiming at long control rather than cure, though a few sites (limited liver metastases in colorectal cancer, oligometastatic disease) can still be treated with curative intent.",
+    tldr: "Metastasis is the establishment of cancer at a distant site. Finding cells in transit or in another tissue does not by itself demonstrate sustained distant growth.",
+    summary: "Cancer cells may leave a primary site, travel through blood or lymph, reach another tissue and establish a growing lesion. Many steps can fail. Regional lymph-node involvement differs from distant metastasis, and the distant deposit retains the identity of the primary cancer. Clinical interpretation depends on the represented sites and disease context.",
     wikipedia: W("Metastasis"),
     related: ["primary-tumour", "metastatic-cascade", "activating-invasion-metastasis", "cancer-stage", "oligometastatic", "systemic-vs-local-therapy", "lymph-node", "disseminated-tumor-cells", "tumor-dormancy", "theories-of-cancer", "seed-and-soil-hypothesis"], journals: ["cancer-metastasis-reviews", "clinical-and-experimental-metastasis"],
-  }),
+
+"notes": [
+  "Local invasion, entry into vessels, transport, exit at another site, survival and sustained outgrowth are different hurdles. Dissemination need not lead to successful distant growth. A circulating tumour cell is found in blood; a disseminated tumour cell has reached tissue away from the primary. Neither observation alone establishes an enlarging distant lesion, and regional lymph-node involvement differs from distant metastasis.",
+  "A breast-cancer deposit in lung retains breast primary identity, while a separate lung primary is another possibility requiring tissue and clinical interpretation. Imaging and pathology identify represented sites; research tracking and environmental perturbations address different biological questions. Negative findings retain the sensitivity and sampling limits of the method. Arrival, survival, sustained growth and the mechanism maintaining or ending restraint need separate evidence."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Metastasis"
+  },
+  {
+    "label": "Ghajar et al., The perivascular niche regulates breast tumour dormancy. (2013)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23728425/"
+  },
+  {
+    "label": "Aguirre-Ghiso, Models, mechanisms and clinical evidence for cancer dormancy. (2007)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17957189/"
+  },
+  {
+    "label": "NCI: metastatic cancer and primary-site identity",
+    "url": "https://www.cancer.gov/types/metastatic-cancer"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({
     id: "lesion", name: "Lesion", category: CLINIC,
     aka: ["lesions", "target lesion", "target lesions", "nodule", "nodules", "spot on the scan"],

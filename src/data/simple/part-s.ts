@@ -230,4 +230,6 @@ export const simpleS: Record<string, string> = {
   "tumor-stroma-ratio": "This score estimates supporting tissue within a defined tumour field. It differs from an immune-cell score, and a study association does not prove which treatment to choose.",
   "surgical-resection-specimen": "Removed tissue is mapped into selected blocks for examination. Its report describes the examined material, rather than every cell in the tumour or body.",
   "blood-as-a-renewable-sample": "Later blood draws are new samples, each with a finite volume. Plasma, serum and blood cells supply different measurements and do not reproduce the local structure of tumour tissue.",
+  "intra-tumour-heterogeneity": "Cancer cells can differ in DNA, molecular state and behaviour across regions and time. One sample and one target measurement need not represent every population.",
+  "extracellular-matrix": "The extracellular matrix is the molecular material around cells. Its amount, arrangement, mechanics and effects on cell movement are different features.",
 };

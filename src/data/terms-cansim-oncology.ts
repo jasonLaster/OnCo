@@ -102,9 +102,31 @@ export const cansimOncologyTerms: TermInput[] = [
     terms: ["tumour-purity", "microenvironment-inflammation-theory"] }),
   t({ id: "intra-tumour-heterogeneity", name: "Intra-tumour heterogeneity", category: BIO, aka: ["intra-tumour heterogeneity", "intratumour heterogeneity", "intratumoral heterogeneity", "intra-tumor heterogeneity", "ITH"],
     wikipedia: W("Tumour_heterogeneity"), cansim: "/terms/intra-tumour-heterogeneity",
-    tldr: "Cells within one tumour can differ in their genes, appearance and behaviour, so a single biopsy may not represent the whole cancer.",
-    summary: "Tumour heterogeneity, per Wikipedia, is the observation that tumour cells show distinct morphological and phenotypic profiles (gene expression, metabolism, proliferation, metastatic potential) both between tumours and within a single tumour. Within-tumour heterogeneity is why one section can carry several molecular subtypes and a spread of predicted risk, and why single-sample predictions carry an irreducible uncertainty.",
-    related: ["b-tumor-heterogeneity"], pathways: ["clonal-evolution"], terms: ["clonal-evolution-theory"] }),
+    tldr: "Cancer cells can differ in DNA, molecular state and behaviour across regions and time. One sample and one target measurement need not represent every population.",
+    summary: "Intratumour heterogeneity includes genetic branches and changing cell states, which are distinct biological axes. A locally clonal alteration may not be shared by unseen disease, and shared DNA does not guarantee uniform protein expression or therapeutic coverage. Interpretation retains the sample, method and uncertainty.",
+    related: ["b-tumor-heterogeneity"], pathways: ["clonal-evolution"], terms: ["clonal-evolution-theory"] ,
+"notes": [
+  "Heterogeneity includes DNA differences, molecular states and behaviour across regions, lesions and time. Clones and subclones describe ancestry; clonal variants are estimated within a stated analysed cancer-cell population. A sampled ancestral trunk is not proof of presence in unseen lesions. Sequencing-read or molecule variant allele fractions differ from modelled cancer-cell fractions, which depend on purity, copy number, detection limits and ancestry assumptions.",
+  "Neftel integrated single-cell RNA sequencing, genetic analysis and experimental lineage tracing in glioblastoma to describe four main states and plasticity between them. This is not a universal state map for all cancers. An RNA cluster is not automatically a genetic clone. A population detected after therapy can reflect previously undetected cells, acquired changes or a changed state; two snapshots may not separate these explanations.",
+  "In a fictional specimen with 60 target-positive and 40 target-negative cells, perfect specificity for the target can still leave the negative population. A target-rich local biopsy is not a whole-tumour response probability. Even a shared DNA trunk does not guarantee RNA, surface protein, presented peptide or effective therapeutic coverage in every cell. A selected culture can also overrepresent cells that grow under its conditions.",
+  "If two adequately tested regions share A while B is found in only one, A is a candidate shared ancestral feature and B is branch-associated under the tested model. A third unsampled site remains unknown. Retain region, date, specimen, method, resolution and uncertainty across multiregion, single-cell, spatial and modelled-fraction studies. DNA outlines, RNA-state symbols and surface marks in a figure represent different layers; icon counts are not measured fractions or treatment-response estimates."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tumour_heterogeneity"
+  },
+  {
+    "label": "Gerlinger et al., Intratumor heterogeneity and branched evolution revealed by multiregion sequencing. (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22397650/"
+  },
+  {
+    "label": "Neftel et al., An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma. (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31327527/"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "tumour-evolution", name: "Tumour evolution (somatic evolution)", category: BIO, aka: ["tumour evolution", "tumor evolution", "somatic evolution", "somatic evolution in cancer", "evolution of the tumour"],
     wikipedia: W("Somatic_evolution_in_cancer"), cansim: "/terms/tumour-evolution",
     tldr: "A tumour changes over time as its cells acquire mutations and the fittest clones take over, which is why cancers relapse and resist treatment.",

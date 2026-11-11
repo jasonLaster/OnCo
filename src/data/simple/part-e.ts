@@ -127,7 +127,7 @@ export const simpleE: Record<string, string> = {
   "bcr-abl1-signalling": "In chronic myeloid leukaemia two chromosomes swap pieces and glue the ABL1 enzyme to a partner that leaves it permanently on, which the pill imatinib was designed to block.",
   "cd47-sirpa": "Many cancers wear a 'don't eat me' badge called CD47 to stop immune scavenger cells eating them, but the leading badge-blocking antibody failed because red cells wear it too.",
   "metastatic-cascade": "The metastatic cascade is how cancer spreads: cells leave the tumour, enter blood or lymph, survive the journey, exit into a new organ, often sleep for years, then grow.",
-  "tumor-microenvironment": "A tumour is a neighbourhood of fibroblasts, immune cells, blood vessels and scaffolding that the cancer recruits and corrupts, and which decides whether drugs and immune cells get in.",
+  "tumor-microenvironment": "A tumour’s surroundings include cells, vessels, matrix and local conditions. Their presence or location alone does not establish how they affect the cancer or its treatment.",
   "antigen-presentation-immunoediting": "Tumours display fragments of their proteins for immune cells to inspect; the cells that survive immune attack are the ones that stopped showing fragments or switched on brakes.",
   "cancer-metabolism": "Cancer cells rewire how they eat, burning sugar fast but wastefully and gorging on other nutrients, which is why PET scans light them up and metabolism is a drug target.",
 
@@ -137,7 +137,7 @@ export const simpleE: Record<string, string> = {
 
 
   "cancer-stem-cells-plasticity": "Some cancer cells act like stem cells that can regrow the whole tumour, resist treatment and switch identity, which explains relapse and why some cancers transform into another type.",
-  "clonal-evolution": "A tumour evolves by natural selection: treatment kills the sensitive cells and leaves the rest, so measuring what survives and adapting therapy is the counter-strategy.",
+  "clonal-evolution": "Cancer populations can change through inherited variation, selection and chance. A clone’s larger share does not by itself prove more cells, resistance or the cause of change.",
   "inflammation-nfkb": "Long-term inflammation is soil for cancer, feeding growth signals and DNA damage through a master switch called NF-κB, and colitis, hepatitis and stomach infections are the proof.",
   hedgehog: "Hedgehog is a growth pathway that shapes embryos and is switched back on in basal cell skin cancer and some brain tumours, and pills that block it are approved.",
 
@@ -156,13 +156,13 @@ export const simpleE: Record<string, string> = {
   "cachexia-biology": "Cancer cachexia is wasting caused by tumour signals that switch off appetite and burn muscle and fat, and the first drug to reverse it, ponsegromab, showed weight gain.",
   "clonal-haematopoiesis": "A group of blood-forming cells with acquired changes can expand. DNA from that group can appear in a blood test and needs to be distinguished from tumour DNA.",
   "field-cancerisation": "Cancer often arises from a patch of tissue already carrying mutations rather than one rogue cell, so sun-exposed skin and smokers' airways are mutant patchworks before a tumour appears.",
-  "tumor-dormancy": "Cancer cells can hide asleep in bone marrow, lung or brain for years, invisible to scans and chemotherapy, then wake up, which is what late relapse means.",
+  "tumor-dormancy": "Viable cancer cells may remain nondividing, or a population may stay stable because gains balance losses. A quiet scan alone cannot establish either state.",
   "basement-membrane-tissue-barriers": "Organs keep their lining cells behind a thin protein sheet called the basement membrane; a tumour that has not crossed it is curable, and crossing it makes cancer invasive.",
   "cancer-immunity-cycle": "The cancer-immunity cycle is seven steps the immune system must complete to kill a tumour, from releasing its proteins to killing it, and every immune drug pushes one step.",
   "extrinsic-apoptosis-death-receptors": "Immune cells kill by touch, showing a death signal to a target cell whose surface receptors then trigger self-destruction, and tumours cut this wire by deleting receptors or making decoys.",
   "p53-mdm2-axis": "p53 is the cell's emergency coordinator that pauses division, orders repairs or triggers suicide after damage; half of all cancers break it, and many others over-produce its off-switch MDM2.",
   "mutagenesis-signatures": "Every cause of DNA damage, from sunlight to tobacco to a faulty repair enzyme, leaves its own fingerprint in the genome, and reading these fingerprints reveals what caused a cancer.",
-  "oncogene-activation-two-hit": "Of the thousands of mutations in a tumour only a handful drive it, either jamming an accelerator on or removing a brake, and the rest are passengers.",
+  "oncogene-activation-two-hit": "Activating a growth driver and losing a protective function are different mechanisms. Two-hit loss explains some suppressors, while dosage and interference provide other routes.",
   "oncogenic-viruses": "About one cancer in eight worldwide is caused by a virus such as HPV or hepatitis B, so vaccines against those viruses are among the most effective cancer preventers.",
   "cell-cycle-engine-cdks": "Cell division runs on a clock made of proteins called cyclins and CDKs that fire in order; cancers speed the clock up, and CDK-blocking pills slow it down.",
   "dna-replication-licensing": "Before dividing a cell must copy three billion DNA letters once, using thousands of licensed start points; cancers fire too many too fast, and many chemotherapies jam the copying.",
@@ -188,7 +188,7 @@ export const simpleE: Record<string, string> = {
   "pre-metastatic-niche": "Before any cancer cell arrives, the original tumour sends tiny parcels and hormones ahead that recruit bone marrow cells to a distant organ and prepare it as fertile soil.",
   "organ-tropism-seed-soil": "Where a cancer spreads depends on the seed (the cell's programme) and the soil (the organ's welcome), which is why breast cancer goes to bone and colon cancer to liver.",
   "blood-brain-barrier-metastasis": "The brain's blood vessels are sealed tight and fitted with pumps that eject most drugs, protecting the brain from poisons but also from chemotherapy and antibodies aimed at cancer there.",
-  "caf-activation-desmoplasia": "Tumours keep the body's repair cells, fibroblasts, in wound-healing mode, and the scar tissue they lay down squeezes vessels shut and walls out immune cells, especially in pancreatic cancer.",
+  "caf-activation-desmoplasia": "Fibroblast activation can alter matrix and signals in a tumour. The resulting stroma has varied functions, so removing it is not a general treatment rule.",
   "resistance-routes-map": "A blocked cancer has five ways back, such as changing the part the drug grips, taking a side road or switching engines, and the route decides the next drug.",
   "drug-tolerant-persisters": "Even when a drug wipes out nearly all of a tumour, a few cells survive without any resistance mutation by going quiet and waiting, and these persisters seed relapse.",
   "drug-efflux-pumps": "Cancer cells can install pumps in their outer membrane that throw chemotherapy back out as fast as it enters, so drug designers now choose payloads the pumps cannot grip.",

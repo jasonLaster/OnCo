@@ -54,7 +54,7 @@ export const simpleB: Record<string, string> = {
 
   pam50: "A 50-gene test that sorts breast cancers into four biological groups.",
   neoantigen: "A protein fragment created by a tumour mutation that the immune system has never seen before, so it can attack it safely.",
-  "oncogene-addiction": "When a cancer depends so completely on one broken gene that blocking it collapses the tumour.",
+  "oncogene-addiction": "Oncogene addiction is dependence on an activated driver in a defined context. A mutation or high expression alone does not demonstrate that dependence or a safe treatment window.",
   "synthetic-lethality": "Two genes where losing either alone is fine but losing both kills the cell. Cancers that lost one can be attacked through the other.",
   crs: "A flood of inflammatory signals when immune cells are switched on all at once, causing fever and low blood pressure.",
   icans: "Confusion, speech trouble, and rarely seizures after engineered cell or two-armed antibody therapy.",

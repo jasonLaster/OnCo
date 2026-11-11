@@ -108,8 +108,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "oncogene-activation-two-hit", name: "Drivers, passengers & the two-hit model", wikipedia: W("Knudson_hypothesis"),
-    tldr: "Of the thousands of mutations in a tumour, only a handful (typically 2-8) actually drive it. Drivers either jam an accelerator on (oncogenes, one hit is enough) or remove a brake (tumour suppressors, both copies must go). Everything else is a passenger along for the ride.",
-    summary: "Vogelstein's landscape: ~140 driver genes, each tumour carrying 2-8 driver events in ~12 pathways, on a background of tens to thousands of passengers. Oncogene activation is dominant and recurrent at hotspots: point mutation (KRAS G12, BRAF V600E, PIK3CA H1047R), amplification (HER2, MYC, MDM2), fusion (BCR-ABL, ALK, RET, NTRK, EWSR1-FLI1), promoter mutation (TERT) or ecDNA. Tumour suppressor loss follows Knudson's two hits, one inherited in hereditary syndromes (RB1, BRCA1/2, APC, MLH1, TP53), the second by deletion, LOH, mutation or methylation; some are haploinsufficient (PTEN). Gatekeepers (APC, RB1) control proliferation directly; caretakers (BRCA, MMR) guard the genome so their loss accelerates all other hits. Oncogene addiction, the dependence of a tumour on its driver, is why kinase inhibitors work; passenger load creates neoantigens and, occasionally, collateral vulnerabilities (MTAP deletion next to CDKN2A → PRMT5 dependence).",
+    tldr: "Activating a growth driver and losing a protective function are different mechanisms. Two-hit loss explains some suppressors, while dosage and interference provide other routes.",
+    summary: "Sequence changes, amplification or rearrangement can activate proto-oncogenes. Tumour-suppressor function can be reduced by two-copy loss, insufficient dosage from one remaining useful copy, or particular altered proteins interfering with useful protein. Variant and tissue context are necessary; these mechanisms alone do not establish a treatment dependency. Examples include activating BRAF changes and the BCR-ABL (BCR::ABL1) and EWSR1-FLI1 fusion routes.",
     analogy: "A car with a stuck accelerator (oncogene: one fault is enough) and cut brake lines (tumour suppressor: both lines must fail because they are duplicated). The scratches on the paintwork (passengers) did not cause the crash but they tell you what road it drove on.",
     nodes: [
       { id: "proto", label: "Proto-oncogene", x: 15, y: 15 }, { id: "act", label: "Mutation, amp, fusion", x: 15, y: 45, targetId: "kras" }, { id: "onc", label: "Oncogene ON (1 hit)", x: 15, y: 78 },
@@ -122,8 +122,45 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["Oncogene addiction is the basis of every targeted kinase inhibitor and of HER2 antibodies", "Suppressor loss cannot be 'inhibited', so it is exploited indirectly: synthetic lethality (BRCA-PARP, MTAP-PRMT5), CDK4/6 for RB-intact, MDM2 for TP53-wild-type", "Germline first hits drive surveillance and risk-reducing surgery in hereditary syndromes", "Comprehensive genomic profiling separates drivers from passengers at diagnosis"],
     targets: ["kras", "braf", "her2", "egfr", "alk", "tp53", "brca", "prmt5-mtap", "ewsr1-fli1", "bcr-abl"], drugs: ["imatinib", "osimertinib", "sotorasib", "trastuzumab", "olaparib"], technologies: ["cgp", "germline-testing", "kinase-inhibitors", "synthetic-lethality-approaches", "crispr-screens"], terms: ["oncogene-addiction", "gene-fusion", "hereditary-cancer-syndromes", "germline-vs-somatic", "synthetic-lethality", "vus"], pathways: ["ras-mapk", "p53-cell-cycle", "clonal-evolution", "mutagenesis-signatures"], cancers: ["retinoblastoma", "colorectal", "cml"],
-    links: [{ label: "Vogelstein et al., Cancer genome landscapes (Science 2013)", url: "https://doi.org/10.1126/science.1235122" }, { label: "Kinzler & Vogelstein, Gatekeepers and caretakers (Nature 1997)", url: "https://doi.org/10.1038/386761a0" }],
-  }),
+    links: [
+  {
+    "label": "Vogelstein et al., Cancer genome landscapes (Science 2013)",
+    "url": "https://doi.org/10.1126/science.1235122"
+  },
+  {
+    "label": "Kinzler & Vogelstein, Gatekeepers and caretakers (Nature 1997)",
+    "url": "https://doi.org/10.1038/386761a0"
+  },
+  {
+    "label": "Knudson, Mutation and cancer: statistical study of retinoblastoma. (1971)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/5279523/"
+  },
+  {
+    "label": "Fero et al., The murine gene p27Kip1 is haplo-insufficient for tumour suppression. (1998)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9823898/"
+  },
+  {
+    "label": "Boettcher et al., A dominant-negative effect drives selection of <i>TP53</i> missense mutations in myeloid malignancies. (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31395785/"
+  },
+  {
+    "label": "Poulikakos et al., RAF inhibitor transactivation in cell models (2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20179705/"
+  },
+  {
+    "label": "Delattre et al., translocation-generated hybrid transcript (1992)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1522903/"
+  }
+],
+
+"notes": [
+  "Tumour suppressors can restrain growth, maintain the genome or help remove damaged cells. Knudson’s retinoblastoma model proposed two events, with an inherited first event or two acquired events. Different changes can disable the useful copies, but two-hit loss is not a universal law for all suppressors. Haploinsufficiency means one useful copy supplies insufficient protective dosage; Fero’s challenged p27-heterozygous mice retained an unmutated, unsilenced remaining copy.",
+  "A dominant-negative altered protein interferes with useful protein rather than merely reducing dosage. Boettcher demonstrated this for particular TP53 variants in myeloid and leukaemia models, not every TP53 variant or breast tumour. TCGA reported TP53 mutations in 80% of its basal-like breast cancers. Basal-like is not identical to all TNBC, and a genomic frequency does not establish complete functional loss, drug restoration or a current approval claim.",
+  "In a fictional comparison, an overactive receptor supplies a stronger signalling readout while loss of a repair safeguard has a different functional consequence. Neither observation alone demonstrates survival dependence. Interpretation retains the specimen and exact variant or copy finding, RNA or protein consequences and controlled functional endpoints, including exposure and off-target controls. There is no generic oncogene score that substitutes for disease-specific actionability.",
+  "The named examples have different evidence and mechanisms. Druker’s early CML study supports BCR-ABL-directed inhibition in its historical clinical population. Delattre’s 1992 study identified a translocation-generated hybrid transcript underlying the EWSR1-FLI1 fusion. Poulikakos used chemical-genetic cell experiments to show that the tested RAF inhibitors could activate ERK through RAF dimers in wild-type BRAF settings. The allele, intervention and endpoint matter; a driver label does not make all these alterations equally drug-sensitive."
+],
+"asOf": "2026-11-10"
+}),
   p({
     id: "oncogenic-viruses", name: "Oncogenic viruses", wikipedia: W("Oncovirus"),
     tldr: "About one cancer in eight worldwide is caused by a virus. HPV, hepatitis B and C, Epstein-Barr, HTLV-1, KSHV and Merkel cell polyomavirus each hijack the same brakes cancer normally has to mutate, which is why vaccines against HPV and HBV are among the most effective anti-cancer drugs ever made.",
@@ -751,8 +788,8 @@ export const mechanicsPathways: PathwayInput[] = [
   // ------------------------------------------------------------------ 8. The tumour ecosystem
   p({
     id: "caf-activation-desmoplasia", name: "Fibroblast activation, desmoplasia & matrix stiffness", wikipedia: W("Cancer-associated_fibroblast"),
-    tldr: "Tumours recruit the body's repair cells, fibroblasts, and keep them in wound-healing mode forever. The scar tissue they lay down (desmoplasia) squeezes blood vessels shut, walls out immune cells, stiffens the tissue in a way that itself tells cancer cells to grow, and is why pancreatic cancer is so hard to treat.",
-    summary: "Resident fibroblasts, pancreatic and hepatic stellate cells, and mesenchymal stromal cells are activated by TGF-β, PDGF, IL-1, Hedgehog ligand from tumour cells and by stiffness itself (YAP/TAZ feed-forward) into myofibroblastic CAFs (myCAF: αSMA, collagen I/III, FAP, LRRC15), inflammatory CAFs (iCAF: IL-6, LIF, CXCL12, driven by IL-1/JAK-STAT) and antigen-presenting CAFs. They deposit and crosslink collagen (LOX/LOXL2), hyaluronan and fibronectin, raising interstitial pressure (collapsing vessels, blocking drug delivery) and stiffness, which signals through integrins → FAK → RHO → YAP/TAZ to drive proliferation, EMT and chemoresistance in tumour cells; aligned fibres guide invasion; TGF-β-CAFs exclude T cells. CAFs also feed tumours (alanine, lipids, exosomes) and shield them. Depleting all fibroblasts (Shh-deleted or αSMA-ablated mice) made tumours more aggressive, and the SMO inhibitor vismodegib and hyaluronidase PEGPH20 failed in PDAC: hence a shift to reprogramming (vitamin D receptor agonists, losartan/angiotensin blockade in trials, IL-1/JAK for iCAF, LRRC15 or FAP targeting with radioligands and CAR-T) and to exploiting FAP for imaging (FAPI PET) and therapy.",
+    tldr: "Fibroblast activation can alter matrix and signals in a tumour. The resulting stroma has varied functions, so removing it is not a general treatment rule.",
+    summary: "Signals in the microenvironment can change fibroblast states, matrix production and remodelling. Matrix amount, organisation, crosslinking and mechanical properties are different features. Experimental stromal perturbations can have opposing consequences depending on the cell population and setting.",
     analogy: "Builders hired to repair a wall who never stop: they pour concrete around the tumour until the roads are blocked (vessels), the police cannot get in (T cells), and the very hardness of the concrete tells the tenants to multiply. Demolishing the builders' work made things worse; the newer plan is to retrain them.",
     nodes: [
       { id: "tum", label: "Tumour: TGF-β, PDGF, Hh, IL-1", x: 12, y: 15 }, { id: "fib", label: "Fibroblast / stellate cell", x: 45, y: 15 }, { id: "my", label: "myCAF (FAP, αSMA, collagen)", x: 78, y: 15, targetId: "fap" },
@@ -765,8 +802,35 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["FAP-targeted imaging (FAPI PET) and radioligands (FAP-2286) and FAP/LRRC15 CAR-T", "Reprogramming: vitamin D analogues, losartan with chemoradiation (PDAC trials), IL-1/JAK inhibition for iCAFs", "FAK inhibitors soften stroma and improve immunotherapy entry (trials); mechanobiology approaches", "Vismodegib and PEGPH20 failed in PDAC: stromal depletion can accelerate disease"],
     targets: ["fap", "smoothened", "jak2", "pd1"], drugs: ["fap-2286", "vismodegib", "sonidegib", "ruxolitinib", "avutometinib-defactinib"], technologies: ["fapi-pet", "stroma-directed-car", "mechanobiology-therapy", "radioligand-therapy", "single-cell-spatial"], terms: ["desmoplasia", "cancer-associated-fibroblasts", "immune-exclusion", "cold-vs-hot"], pathways: ["tumor-microenvironment", "tgf-beta", "hippo-yap", "hedgehog", "jak-stat", "immune-desert-exclusion", "invasion-ecm-degradation"], cancers: ["pancreatic", "cholangiocarcinoma", "breast-hr-positive"], bottlenecks: ["b-tme-immunosuppression"],
-    links: [{ label: "Sahai et al., A framework for advancing our understanding of cancer-associated fibroblasts (Nat Rev Cancer 2020)", url: "https://doi.org/10.1038/s41568-019-0238-1" }, { label: "Kalluri, The biology and function of fibroblasts in cancer (Nat Rev Cancer 2016)", url: "https://doi.org/10.1038/nrc.2016.73" }],
-  }),
+    links: [
+  {
+    "label": "Sahai et al., A framework for advancing our understanding of cancer-associated fibroblasts (Nat Rev Cancer 2020)",
+    "url": "https://doi.org/10.1038/s41568-019-0238-1"
+  },
+  {
+    "label": "Kalluri, The biology and function of fibroblasts in cancer (Nat Rev Cancer 2016)",
+    "url": "https://doi.org/10.1038/nrc.2016.73"
+  },
+  {
+    "label": "Levental et al., Matrix crosslinking forces tumor progression by enhancing integrin signaling. (2009)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19931152/"
+  },
+  {
+    "label": "Paszek et al., Tensional homeostasis and the malignant phenotype. (2005)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16169468/"
+  }
+],
+
+"notes": [
+  "Levental and Paszek studied how crosslinking, matrix rigidity, integrin-linked signals and cell tension affected mammary-cell organisation and invasion in experimental systems. These findings do not make every collagen-rich tissue stiff, invasive or drug resistant. Integrins connect matrix conditions to chemical and mechanical cell responses; a matrix can offer routes or restrictions, rather than forming one universal solid wall.",
+  "Ohlund and colleagues described alpha-smooth-muscle-actin-high myofibroblastic fibroblasts near pancreatic cancer cells and IL-6-producing inflammatory populations farther away in pancreatic models and samples. This is not an exhaustive classification of breast stroma or a permanent job assignment for each cell. Ozdemir reported that depletion of selected alpha-smooth-muscle-actin-positive myofibroblasts worsened disease and immunosuppression in pancreatic mouse models. Removing all fibroblasts is not a general treatment conclusion. The indexed 2015 correction is linked; its body was unavailable for this review, so no correction-specific figure claim is adopted.",
+  "A fibroblast-rich or matrix-rich region does not by itself measure immune exclusion, stiffness or drug resistance. Treat a stained structural pattern, a mechanical measurement, live-cell migration and a controlled perturbation as different evidence. The generic extracellular-matrix and fibroblast records describe the corresponding specimen and assay limits."
+],
+"asOf": "2026-11-10",
+"related": [
+  "extracellular-matrix"
+]
+}),
 
   // ------------------------------------------------------------------ 9. Why treatments fail
   p({

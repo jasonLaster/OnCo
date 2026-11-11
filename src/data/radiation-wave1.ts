@@ -155,7 +155,7 @@ export const radiationTechnologies: TechnologyInput[] = [
     technologies: ["radiomics", "imrt-igrt"], terms: ["alpha-beta-ratio"], links: [{ label: "Wikipedia", url: W("Radiogenomics") }] }),
 ];
 
-type Tm = Omit<TermInput, "kind" | "asOf">;
+type Tm = Omit<TermInput, "kind" | "asOf"> & { asOf?: string };
 const tm = (x: Tm): TermInput => ({ kind: "term", asOf, tags, ...x });
 export const radiationTerms: TermInput[] = [
   tm({ id: "alpha-beta-ratio", name: "Alpha/beta ratio", category: "Treatment jargon", wikipedia: W("Linear-quadratic_model"),
@@ -185,9 +185,39 @@ export const radiationTerms: TermInput[] = [
     summary: "Soft-tissue tumours in the prostate, liver, pancreas and lung are hard to see on the X-ray images used for daily setup. Fiducial markers implanted under ultrasound or endoscopic guidance show up clearly and let the couch be shifted to the tumour's true position; electromagnetic transponders report position continuously during the beam. Fiducials make stereotactic treatment of moving targets possible and are being joined by markerless tracking on MRI and with AI.",
     technologies: ["respiratory-motion-management", "sbrt", "imrt-igrt"], cancers: ["prostate", "hcc", "pancreatic"], links: [{ label: "Wikipedia", url: W("Fiducial_marker") }] }),
   tm({ id: "tumour-hypoxia", name: "Tumour hypoxia", category: "Biology basics", wikipedia: W("Tumor_hypoxia"),
-    tldr: "Regions of a tumour that have outgrown their blood supply and are short of oxygen. They resist radiotherapy and some chemotherapy, and drive the tumour to become more aggressive.",
-    summary: "Fast-growing tumours have chaotic, leaky blood vessels, leaving pockets of cells living on very little oxygen. Hypoxic cells need up to three times the radiation dose to be killed, switch on HIF-driven survival programmes, become more invasive and are selected for genomic instability. Hypoxia can be imaged with PET tracers, measured by gene signatures and targeted with sensitisers, hypoxia-activated drugs, hyperthermia and dose escalation.",
-    technologies: ["tumour-hypoxia-modification", "radiosensitisers", "hyperthermia"], links: [{ label: "Wikipedia", url: W("Tumor_hypoxia") }] }),
+    tldr: "Hypoxia is reduced local oxygen availability relative to tissue needs. A response marker or vessel count is not a direct oxygen measurement.",
+    summary: "Oxygen conditions reflect delivery, diffusion and consumption and can vary across a tumour and over time. HIF-linked responses include oxygen-sensitive protein regulation, but other molecular processes can alter the same readouts. Direct oxygen measurements, protein assays and RNA signatures therefore require different interpretations.",
+    technologies: ["tumour-hypoxia-modification", "radiosensitisers", "hyperthermia"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tumor_hypoxia"
+  },
+  {
+    "label": "Wang et al., Hypoxia-inducible factor 1 is a basic-helix-loop-helix-PAS heterodimer regulated by cellular O2 tension. (1995)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7539918/"
+  },
+  {
+    "label": "Jaakkola et al., Targeting of HIF-alpha to the von Hippel-Lindau ubiquitylation complex by O2-regulated prolyl hydroxylation. (2001)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11292861/"
+  },
+  {
+    "label": "Semenza, Hypoxia-inducible factors in physiology and medicine. (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22304911/"
+  },
+  {
+    "label": "Quantitative visualization of hypoxia and proliferation gradients (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31867322/"
+  }
+] ,
+"notes": [
+  "Hypoxia is reduced local oxygen availability relative to tissue needs. It is different from complete absence of oxygen and from a permanent defect in mitochondria. Delivery, functioning vessels, diffusion distance and oxygen consumption all matter, and conditions change across regions and time. Removing tissue interrupts delivery, so collection and handling can change the state being studied.",
+  "HIF-1 contains alpha and beta protein subunits. Under oxygen-replete conditions, oxygen-dependent modification of the alpha subunit enables VHL-associated degradation; limiting that regulation can stabilise it. Jaakkola and the Semenza review describe this mechanism and additional regulation. HIF RNA, alpha-protein stability and the resulting transcriptional response are different quantities. Alternative molecular regulation can alter HIF, so neither protein staining nor an RNA signature is a calibrated oxygen meter.",
+  "The cited 2019 spatial method used mouse pancreatic-cancer xenografts, a perfusion tracer and separate hypoxia and proliferation markers, with cell segmentation and distance analysis. Its model, preparation and marker definitions matter. It does not supply a universal human vessel-distance cutoff or establish that changing oxygen will reverse immune exclusion or improve treatment. Producing lactate while oxygen is available, often called the Warburg effect, also does not by itself establish hypoxia or a survival dependency.",
+  "An oxygen study may measure local partial pressure in situ or use suitable tissue for a defined response-protein or RNA assay. Report which output was measured. Retain region, time, calibration, handling, cell identity and factors that can alter HIF independently of oxygen; destructive assays use finite material. Thresholds must fit the method and purpose. Vessel density is not flow, HIF abundance is not oxygen concentration, and a specimen average can hide poorly oxygenated regions.",
+  "In a fictional biopsy with a high hypoxia-response score, the score alone gives neither an exact oxygen level nor proof that every region is hypoxic. Cell mixture and alternative regulation remain possible explanations, and individual prognosis requires different evidence. Oxygen symbols in a schematic illustrate supply, distance and consumption without measured concentrations or a universal gradient; supply and demand are separate from the response program."
+],
+"asOf": "2026-11-10"
+}),
   tm({ id: "oxygen-enhancement-ratio", name: "Oxygen enhancement ratio", category: "Biology basics", wikipedia: W("Oxygen_enhancement_ratio"),
     tldr: "How many times more radiation a cell without oxygen needs to be killed compared with the same cell with oxygen: about 2.5 to 3 for X-rays, close to 1 for the heaviest particle beams.",
     summary: "Oxygen reacts with the free radicals radiation creates in DNA and makes the damage permanent, so oxygenated cells die at lower doses. The oxygen enhancement ratio is near 3 for photons and protons and falls toward 1 for high-LET radiation such as carbon ions and neutrons, which is one argument for particle therapy in hypoxic tumours and for boron neutron capture therapy.",

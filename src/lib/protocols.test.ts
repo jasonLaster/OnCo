@@ -109,4 +109,24 @@ describe("care protocols", () => {
     expect(elsewhere, "a protocol scoped to other cancers that shares a medicine with this one").toBeDefined();
     expect(protocolsFor(elsewhere!.c).some((m) => m.protocol.id === elsewhere!.p.id), `${elsewhere!.c.id} should not list ${elsewhere!.p.id}`).toBe(false);
   });
+
+  it("a supportive medicine brings only supportive-care protocols to a cancer page, and a treatment counts only where the protocol names it as its own", () => {
+    // Every protocol reached through a treatment names that treatment in its drugs or technologies, and one reached
+    // through a supportive medicine or a steroid is about supportive care, symptoms, nutrition, palliation or survivorship.
+    const bad: string[] = [];
+    for (const c of g.kind("cancer")) for (const m of protocolsFor(c)) {
+      if (!m.via) continue;
+      const v = m.via;
+      if (![...m.protocol.drugs, ...m.protocol.technologies].includes(v.id)) bad.push(`${c.id}: ${m.protocol.id} through ${v.id}, which it does not name as its own`);
+      const supportive = v.kind === "drug" && (v.tags.includes("supportive") || /corticosteroid|glucocorticoid/i.test(v.modality));
+      if (supportive && !["supportive-care", "symptom-management", "nutrition", "palliative", "survivorship"].includes(m.protocol.domain)) bad.push(`${c.id}: ${m.protocol.id} through ${v.id}`);
+    }
+    expect(bad).toEqual([]);
+    // The case that set the rule: dexamethasone on the triple-negative record does not put CRS management on its page.
+    const tnbc = protocolsFor(g.must("tnbc")).map((m) => m.protocol.id);
+    expect(tnbc).not.toContain("crs-grading-and-management");
+    expect(tnbc).not.toContain("icans-grading-and-management");
+    // The owner's example: port care is on the breast cancer page, through the implanted port record.
+    expect(protocolsFor(g.must("breast-cancer")).find((m) => m.protocol.id === "implanted-port-access-and-care")?.via?.id).toBe("implanted-ports");
+  });
 });

@@ -178,8 +178,8 @@ export const antiemeticProphylaxisByEmeticRisk = protocol({
   ],
   institutions: ["mascc", "esmo", "asco"],
   technologies: ["antiemetic-therapy"],
-  drugs: ["aprepitant", "netupitant-palonosetron", "palonosetron", "ondansetron", "granisetron", "rolapitant", "dexamethasone"],
-  related: ["cisplatin", "carboplatin"],
+  drugs: ["aprepitant", "netupitant-palonosetron", "palonosetron", "ondansetron", "granisetron", "rolapitant", "dexamethasone", "cisplatin", "carboplatin", "oxaliplatin", "cyclophosphamide"],
+  related: [],
   sections: ["supportive-care"],
   tags: ["protocol", "nausea-and-vomiting", "supportive-care"],
 });

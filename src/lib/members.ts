@@ -198,6 +198,28 @@ export function membersFor(hub: Entity, section: "tests" | "treatments" | "produ
 /** A protocol on a record's page, with the record that brought it there when that is not the page itself. */
 export type ProtocolMember = { protocol: Protocol; via?: Entity };
 
+/** Protocol domains a supportive medicine can bring to a cancer page: the ones about giving that medicine well. */
+const SUPPORTIVE_ROUTE_DOMAINS: ReadonlySet<Protocol["domain"]> = new Set(["supportive-care", "symptom-management", "nutrition", "palliative", "survivorship"]);
+
+/** A medicine given to treat or prevent what other treatment causes: tagged `supportive`, or a corticosteroid. */
+const supportiveMedicine = (d: Drug) => d.tags.includes("supportive") || /\b(?:gluco)?corticosteroid\b|\bglucocorticoid\b/i.test(d.modality);
+
+/**
+ * Whether a cancer's treatment brings a protocol to the cancer's page. The protocol must name the treatment as one of
+ * its own medicines or devices, not only in `related` or `terms`: the antiemetic protocol named cisplatin only in
+ * `related`, as did the diarrhoea protocols octreotide, which put them on neuroendocrine pages through a cancer
+ * treatment they use as a remedy. A supportive medicine (`supportiveMedicine`) brings only the supportive, symptom,
+ * nutrition, palliative and survivorship protocols: dexamethasone, listed on the triple-negative breast cancer record as
+ * an antiemetic, otherwise put CRS, ICANS and IEC-HS management on that page, and prednisone in R-CHOP put the
+ * immune-related toxicity protocols on lymphoma pages, because those protocols treat with them (11 November 2026).
+ * The emergencies and toxicities a steroid treats come to a page through what causes them.
+ */
+export function reachesThrough(p: Protocol, via: Entity): boolean {
+  if (via.kind === "drug") return p.drugs.includes(via.id) && (!supportiveMedicine(via) || SUPPORTIVE_ROUTE_DOMAINS.has(p.domain));
+  if (via.kind === "technology") return p.technologies.includes(via.id);
+  return false;
+}
+
 /**
  * The care protocols a record page lists (docs/PROTOCOLS.md), from structured fields only:
  *
@@ -205,7 +227,7 @@ export type ProtocolMember = { protocol: Protocol; via?: Entity };
  *   protocols, a device such as `implanted-ports` its care protocols, a glossary term the protocols filed under it.
  * - **A cancer**, as well: protocols naming a cancer above it in the family (a breast cancer protocol is on the
  *   triple-negative page), and protocols naming a medicine or technology the cancer's own record lists (in its
- *   relation arrays or its standard-of-care rows), each with that record as `via` so the page can say why, unless
+ *   relation arrays or its standard-of-care rows), each with that record as `via` so the page can say why (`reachesThrough` says which count), unless
  *   the protocol is scoped to other cancers only (it names cancers, none of them in this cancer's family). A protocol
  *   naming no cancer and none of the cancer's treatments is general and is not repeated on every cancer page; it is
  *   on /protocols/.
@@ -239,7 +261,7 @@ export function protocolsFor(e: Entity, g: Graph = graph()): ProtocolMember[] {
     for (const id of treatments) {
       const via = g.get(id);
       if (!via || (via.kind !== "drug" && via.kind !== "technology")) continue;
-      for (const p of direct(id)) if (!out.has(p.id) && !scopedElsewhere(p)) out.set(p.id, { protocol: p, via });
+      for (const p of direct(id)) if (!out.has(p.id) && !scopedElsewhere(p) && reachesThrough(p, via)) out.set(p.id, { protocol: p, via });
     }
   }
   const order = (m: ProtocolMember) => PROTOCOL_DOMAINS.indexOf(m.protocol.domain);

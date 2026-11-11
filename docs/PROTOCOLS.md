@@ -50,9 +50,21 @@ from a typed list:
   technology the cancer's own record lists, with that treatment named as the reason, unless the protocol names
   other cancers only (breast radiotherapy positioning shares IMRT with prostate cancer and is not a prostate
   protocol). On the cancer page those reached through a treatment are one line per treatment, and only the ones
-  naming the cancer keep a card;
+  naming the cancer keep a card. A treatment counts only where the protocol names it in its own `drugs` or
+  `technologies` (not `related`), and a supportive medicine (tagged `supportive`, or a corticosteroid) brings only the
+  supportive-care, symptom, nutrition, palliative and survivorship protocols: dexamethasone given as an antiemetic had
+  put CRS and ICANS management on the triple-negative breast cancer page (`reachesThrough` in `src/lib/members.ts`).
+  So a device a cancer's treatment depends on belongs in the cancer's own `technologies` (breast and bowel cancer list
+  `implanted-ports`, which is how port care reaches their pages);
 - a protocol that names no cancer and none of a cancer's treatments is general: it is on `/protocols/` and on the
   pages of what it does name, and is not repeated on every cancer page.
+
+Three other places link protocols from data. A cancer's red cards (`src/data/red-flags.ts`) name the protocol that
+manages each emergency in the set's `concernIds` (neutropenic sepsis links the first-hour protocol, cord compression
+the MSCC protocol); the drug and modality sets have no link field yet. A first-60-days checklist item names the
+protocols it is about in `protocols` (a fertility referral, a DPD test, port care). The side-effects page lists, for
+each symptom group, the protocols in `SYMPTOM_PROTOCOLS` in `src/lib/side-effects.ts`: the general ones always, and a
+treatment-specific one (immune-related colitis, irinotecan's diarrhoea) only beside the products the protocol names.
 
 The reverse link is written at build time in `src/data/index.ts` (as for biomarker readouts), so no protocol is an orphan. So to put a protocol on the right pages, link the right records. Those protocols are then dropped from the page's
 Connected section, which would otherwise list them twice.

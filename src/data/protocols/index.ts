@@ -4,6 +4,7 @@ import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasatio
 import { enhancedRecoveryAfterLiverSurgery } from "./enhanced-recovery-after-liver-surgery";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
+import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
 import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
 import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
@@ -20,6 +21,7 @@ export const protocols: ProtocolInput[] = [
   enhancedRecoveryAfterLiverSurgery,
   febrileNeutropeniaFirstHour,
   implantedPortAccessAndCare,
+  mouthCareDuringCancerTreatment,
   opioidSwitchingAndConversion,
   palliativeSedation,
   strongOpioidsForCancerPain,

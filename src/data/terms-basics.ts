@@ -1449,8 +1449,25 @@ export const termsBasics: TermInput[] = [
     tldr: "Drugs designed to hit a specific molecule the cancer depends on, usually a protein made by a mutated or amplified gene, while leaving normal cells relatively alone. The tumour is tested first to see whether it carries the target.",
     summary: "Targeted therapies are mostly small-molecule inhibitors (kinase inhibitors such as imatinib, osimertinib, sotorasib; PARP and CDK4/6 inhibitors) and antibodies (trastuzumab, cetuximab), and are given to patients whose tumours have the matching alteration, identified by genomic profiling or immunohistochemistry. When a tumour is truly dependent on the target (oncogene addiction) responses can be dramatic and side effects milder than chemotherapy, though the effects are rarely permanent because resistance evolves, and each new generation of drug is built to overcome the last generation's escape mutations. 'Precision oncology' is the broader programme of matching every patient to the right drug by testing; only a minority of tumours have an actionable target today.",
     wikipedia: W("Targeted_therapy"),
-    related: ["inhibitor", "kinase", "driver-mutation", "oncogene-addiction", "genomic-profiling", "biomarker", "resistance", "companion-diagnostic-term", "chemotherapy-term"], sections: ["targeted-therapy"], technologies: ["kinase-inhibitors", "monoclonal-antibody", "parp-inhibitor", "cdk46-inhibitor", "kras-inhibitors", "cgp"],
-  }),
+    related: [
+  "inhibitor",
+  "kinase",
+  "driver-mutation",
+  "oncogene-addiction",
+  "genomic-profiling",
+  "biomarker",
+  "resistance",
+  "companion-diagnostic-term",
+  "chemotherapy-term",
+  "drug-target-and-mechanism"
+], sections: ["targeted-therapy"], technologies: ["kinase-inhibitors", "monoclonal-antibody", "parp-inhibitor", "cdk46-inhibitor", "kras-inhibitors", "cgp"],
+
+"notes": [
+  "Target, mechanism and evidence. A drug target is the molecule or structure a treatment acts on, and its mechanism of action is how that action produces an effect; a target name does not show that the target is reachable, required by the cancer, or that changing it does useful work. Binding to a purified protein, engagement in the relevant cell (the cellular thermal shift assay was introduced to evaluate drug binding in cells and tissues), a measured effect with controls, and benefit and harm in a stated clinical setting each need their own evidence, and a blood concentration is not the concentration at an intracellular target. In-cell thermal profiling can pick up indirect as well as direct targets (Ball et al. 2020). If an antibody is shown to bind a protein on cancer cells and growth is unchanged, binding is supported; dependence on the protein, inhibition of its function, delivery by a finished payload-bearing product, safety and benefit are not. A molecule used as an address for delivery and a molecule whose function the cell depends on are different roles.",
+  "What NCI says about the class. Targeted therapy was once expected to be less toxic than chemotherapy but can cause serious side effects, cancer cells can become resistant to it, and it may work best combined with other targeted therapy or with treatments such as chemotherapy and radiation (NCI page, HTML read)."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "hormone-therapy", name: "Hormone therapy", category: CLINIC,
     aka: ["hormone therapies", "hormonal therapy", "hormonal therapies", "endocrine therapy", "endocrine therapies", "anti-hormone", "antihormonal", "hormone-sensitive", "hormone sensitive", "hormone-driven", "hormone receptor", "hormone receptors", "hormone-receptor positive", "hormone receptor positive", "hormone-receptor-positive", "HR-positive", "HR+", "castration", "castration-resistant", "castration-sensitive"],
@@ -1841,15 +1858,50 @@ export const termsBasics: TermInput[] = [
     summary: "Chemotherapy doses are usually scaled to body surface area (mg/m²) or weight (mg/kg) and given in cycles, typically every one to three weeks, to let bone marrow recover; targeted drugs and antibodies are increasingly given at fixed doses. The traditional phase 1 approach escalates until side effects become dose-limiting and sets the maximum tolerated dose as the dose for later trials, a logic that suits chemotherapy but not targeted drugs, which may saturate their target well below the toxic dose; the FDA's Project Optimus now requires sponsors to compare doses. Dose reductions and interruptions for side effects are common in practice and do not necessarily reduce efficacy, as trials with lower-dose arms have shown for several drugs.",
     wikipedia: W("Dose_(biochemistry)"),
     related: ["toxicity-grade", "half-life", "trial-phases", "side-effect-vs-adverse-event", "bone-marrow"],
-  }),
+
+"notes": [
+  "Dose, dosage, cumulative dose and dose intensity are different quantities. Dose is the quantity of drug (state the drug, the formulation and whether it is per administration or per day; milligrams, milligrams per kilogram and milligrams per square metre are different scales), and dosage is the dose with its schedule, meaning the interval between doses and the duration of treatment (FDA, 'Optimizing the Dosage of Human Prescription Drugs and Biological Products for the Treatment of Oncologic Diseases', August 2024, which says it does not specifically address several modalities). Cumulative dose adds the amounts given over a course. Dose intensity is the amount of a named drug delivered per unit time, commonly milligrams per square metre per week, and relative dose intensity divides delivered by a stated reference intensity, so it needs the reference regimen and method named; a delay lowers delivered intensity in the same proportion as an equal dose reduction, and the link between delivered intensity and response or survival has not been fully demonstrated (Alberto 1995). Equal milligrams of different medicines are not equivalent activity, and a body-size-normalised dose is not a laboratory concentration. Teaching arithmetic with invented units, not data: four 10-unit administrations over a 4-week window give 40 units and 10 units per week; the same four over 8 weeks give 5 units per week, 50 per cent of the first intensity, which says nothing about benefit, exposure or safety.",
+  "A fictional reference intensity of 10 arbitrary units per week and delivered intensity of 8 gives relative dose intensity 8/10 = 0.8, or 80%. Neither that ratio nor a body-size-normalised administered dose measures the concentration at a target or the probability of benefit. For combinations, declare how the individual drugs' normalised ratios are summarised rather than adding milligrams of different substances."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dose_(biochemistry)"
+  },
+  {
+    "label": "FDA: optimizing the dosage of drugs for oncologic diseases (August 2024 guidance)",
+    "url": "https://www.fda.gov/media/164555/download"
+  },
+  {
+    "label": "Alberto, dose intensity in cancer chemotherapy (1995)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7626852/"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "half-life", name: "Half-life", category: CLINIC,
     aka: ["half-lives", "half life", "plasma half-life", "elimination half-life", "pharmacokinetics", "pharmacokinetic", "PK", "cleared from the body", "drug exposure", "peak concentration", "Cmax", "AUC", "steady state", "steady-state"],
-    tldr: "The time it takes for the amount of a drug in the blood to fall by half. It sets how often a drug must be given: hours to a day for small molecules such as kinase inhibitors, so they are taken daily, and two to four weeks for antibodies, so they are given every three or six weeks.",
-    summary: "Small molecules are typically cleared by the liver and kidneys within hours to a day, so kinase inhibitors are taken daily; antibodies are protected from breakdown by recycling receptors and persist for two to four weeks, allowing dosing every three or six weeks. Half-life shapes both benefit and harm: a long-lived checkpoint inhibitor keeps working, and keeps causing immune side effects, for months after the last dose, while a radioactive drug's physical half-life (6.6 days for lutetium-177, 10 days for actinium-225) determines how long it irradiates the tumour. Pharmacokinetics is the study of these processes, and matching dose and schedule to them is central to dose optimisation.",
+    tldr: "A half-life describes how long a specified drug concentration takes to fall by half under stated conditions; it does not by itself determine a treatment interval or when an effect ends.",
+    summary: "A drug's half-life describes a halving of the concentration of a named substance in a specified phase or model. Early distribution, terminal elimination and the effective half-life relevant to accumulation can differ. With nonlinear elimination, a reported value can also depend on the dose. The December 2016 FDA clinical-pharmacology labelling guidance distinguishes effective from terminal half-life and asks for the conditions needed to interpret each.\n\nConcentration and effect need separate measurements. Active metabolites, persistent biological changes and tissue injury can matter after the measured parent drug has declined. Living cell products can expand rather than simply disappear, and a radiopharmaceutical combines physical decay with biological removal. A half-life alone supplies no universal treatment schedule or recovery clock.",
     wikipedia: W("Biological_half-life"),
     related: ["dose", "antibody", "fc-effector", "alpha-vs-beta", "dosimetry"], technologies: ["radioligand-therapy", "monoclonal-antibody"],
-  }),
+
+"notes": [
+  "Which half-life? A half-life describes a halving of concentration of a named substance in a named phase or model, and early distribution and terminal decline can differ. FDA labelling guidance says the half-life reported should usually be the effective half-life, based on the time to reach steady state, with a long terminal half-life noted where it matters for safety or effectiveness; for radiopharmaceuticals the effective half-life takes both the physical and the biological half-life into account (FDA, 'Oncology Therapeutic Radiopharmaceuticals: Nonclinical Studies and Labeling Recommendations'). It is not a clock for how long benefit or harm lasts, since downstream effects can persist after exposure falls, and a freely circulating drug's half-life does not describe cell products."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Biological_half-life"
+  },
+  {
+    "label": "FDA: clinical pharmacology section of labeling (2016 guidance)",
+    "url": "https://www.fda.gov/media/74346/download"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "toxicity-grade", name: "Toxicity grade", category: CLINIC,
     aka: ["toxicity", "toxicities", "toxic", "grade 3", "grade 4", "grade 5", "grade 3-4", "grade 3/4", "grade 3 or higher", "grade ≥3", "grade 3+", "high-grade toxicity", "severe toxicity", "CTCAE", "treatment-related", "treatment-related adverse events", "TRAEs", "TRAE", "serious adverse event", "serious adverse events", "SAE", "discontinuation", "discontinuation rate", "treatment discontinuation", "tolerability", "tolerable", "well tolerated", "well-tolerated", "safety profile", "manageable"],
@@ -1861,11 +1913,26 @@ export const termsBasics: TermInput[] = [
   t({
     id: "side-effect-vs-adverse-event", name: "Side effect versus adverse event", category: CLINIC,
     aka: ["side effect", "side effects", "side-effect", "side-effects", "adverse event", "adverse events", "AE", "AEs", "adverse effect", "adverse effects", "adverse reaction", "adverse reactions", "any-grade", "all-grade", "grade 1-2", "low-grade toxicity", "late effects", "long-term effects", "late toxicity", "cumulative toxicity"],
-    tldr: "An adverse event is anything bad that happens to a patient during a trial, whether or not the drug caused it; a side effect is a harm the drug is known to cause. Trial tables list adverse events and then judge which were treatment-related.",
-    summary: "Counting every adverse event, including those from the cancer itself or from unrelated illness, is deliberate: it avoids under-reporting and lets the two arms be compared fairly, since the control arm has adverse events too. Investigators then attribute each event as related or unrelated to treatment, yielding 'treatment-related adverse events', and grade its severity; drug labels list the side effects seen more often on the drug than on placebo. Some harms appear only years later (heart damage from anthracyclines, second cancers after radiation, permanent hormone deficiencies after immunotherapy) and are called late effects, and survivorship care exists to watch for them.",
+    tldr: "An adverse event is an unwanted medical occurrence recorded during treatment or follow-up, whether or not treatment caused it; occurrence, severity and attribution are separate findings.",
+    summary: "An adverse event can be an unfavourable sign, including an abnormal laboratory finding, symptom or disease temporally associated with a treatment or intervention. Recording it does not establish causation. Investigators separately assess severity and how likely it is to be related to treatment.\n\nA treatment-related adverse reaction is a more specific attribution. Safety comparisons should retain the event definition, population, observation window, denominator and attribution method. Seriousness is a separate reporting category and is not interchangeable with a severity grade. Some harms first arise or persist after treatment ends, so an administration calendar does not define the entire safety window.",
     wikipedia: W("Adverse_event"),
     related: ["toxicity-grade", "quality-of-life", "dose", "irae", "placebo", "survivorship-care-plan", "cardio-oncology"],
-  }),
+
+"notes": [
+  "Occurrence, severity and attribution are recorded separately. The NCI Cancer Therapy Evaluation Program describes an adverse event as any unfavourable and unintended sign (including an abnormal laboratory finding), symptom or disease temporally associated with a drug or intervention, whether or not it is considered related; grading documents that it occurred and how severe it was; and the clinical team assigns attribution to the drug, the intervention or something else. Documenting an event therefore does not by itself show that the treatment caused it, and a report should keep suspected, attributed and resolved as different states."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Adverse_event"
+  },
+  {
+    "label": "NCI CTEP: adverse events, grading and attribution",
+    "url": "https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "quality-of-life", keyPapers: ["paper-cella-fact-g-jco-1993"], name: "Quality of life", category: CLINIC,
     aka: ["QoL", "HRQoL", "health-related quality of life", "patient-reported outcomes", "patient-reported outcome", "PROs", "PRO", "patient-reported", "symptom burden", "functional status", "performance status", "ECOG", "ECOG 0-1", "ECOG performance status", "Karnofsky", "time to deterioration", "wellbeing"],

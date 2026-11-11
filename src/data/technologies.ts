@@ -834,15 +834,28 @@ export const technologies: TechnologyInput[] = [
     tags: ["frontier"], links: [{ label: "Wikipedia", url: W("Antisense_therapy") }],
   },
   {
-    id: "synthetic-lethality-approaches", trials: ["nct06395519"], kind: "technology", name: "Synthetic lethality approaches", sections: ["targeted-therapy", "drug-discovery"], status: "approved", asOf, wikipedia: W("Synthetic_lethality"),
+    id: "synthetic-lethality-approaches", trials: ["nct06395519"], kind: "technology", name: "Synthetic lethality approaches", sections: ["targeted-therapy", "drug-discovery"], status: "approved", asOf: "2026-11-11", wikipedia: W("Synthetic_lethality"),
     tldr: "Finding a second gene that a cancer needs only because its first gene is broken, then hitting the second one.",
     summary: "PARP inhibition in BRCA loss is the proven case. Next: PRMT5 inhibitors (MTAP-deleted tumours, ~15% of cancers; AMG 193, MRTX1719 in phase 2/3), WRN inhibitors (MSI-high), POLQ inhibitors (HRD), and WEE1/ATR in TP53-mutant and CCNE1-amplified tumours. CRISPR screens (DepMap) systematically map these dependencies.",
     principle: "Genetic interaction where loss of both genes, but neither alone, is lethal.",
     strengths: ["Targets tumour-suppressor loss, which conventional drugs cannot", "Large therapeutic window"],
     limitations: ["Context dependence; resistance via reversion"],
     targets: ["parp", "brca", "atr", "wee1", "tp53"],
-    terms: ["synthetic-lethality"], links: [{ label: "Wikipedia", url: W("Synthetic_lethality") }], companies: ["amphista-therapeutics", "foghorn-therapeutics", "ideaya-biosciences", "nimbus-therapeutics", "plexium", "repare-therapeutics", "tango-therapeutics", "synnovation-therapeutics", "danatlas-pharmaceuticals", "avelos-therapeutics", "anticancer-bioscience", "accent-therapeutics", "moma-therapeutics", "858-therapeutics", "duke-street-bio", "fushi-biotechnology", "blacksmith-medicines"],
+    terms: ["synthetic-lethality"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Synthetic_lethality"
   },
+  {
+    "label": "Hay et al., normal Brca2-deficient intestinal epithelium deleted by PARP inhibition (2005)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16287996/"
+  }
+], companies: ["amphista-therapeutics", "foghorn-therapeutics", "ideaya-biosciences", "nimbus-therapeutics", "plexium", "repare-therapeutics", "tango-therapeutics", "synnovation-therapeutics", "danatlas-pharmaceuticals", "avelos-therapeutics", "anticancer-bioscience", "accent-therapeutics", "moma-therapeutics", "858-therapeutics", "duke-street-bio", "fushi-biotechnology", "blacksmith-medicines"],
+
+"notes": [
+  "A wide therapeutic window is a design hope for each candidate pair, not a property shown for all of them: in mice, normal Brca2-deficient intestinal epithelium was highly sensitive to PARP inhibition (Hay et al.). A candidate needs lethality of the pair with each single loss tolerated, death shown by a validated assay and not only fewer cells, independent perturbations, and a rescue or restoration test, with the limits of each stated."
+]
+},
   {
     id: "antiangiogenic", related: ["angiogenesis-models", "tumour-mechanics-models"], kind: "technology", name: "Anti-angiogenic therapy", sections: ["targeted-therapy"], status: "standard-of-care", asOf, since: 2004, wikipedia: W("Angiogenesis_inhibitor"),
     tldr: "Anti-angiogenic therapy cuts off the tumour's blood supply; it is now mostly used to help immunotherapy work better.",

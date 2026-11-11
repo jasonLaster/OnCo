@@ -7,15 +7,66 @@ const t = (x: T): TermInput => ({ kind: "term", asOf, links: x.wikipedia ? [{ la
 
 export const terms: TermInput[] = [
   // ---- ADC vocabulary ----
-  t({ id: "payload", name: "Payload (ADC)", category: "ADC", tldr: "The payload is the poison an ADC carries, usually a chemotherapy far too toxic to give on its own.", summary: "The payload is the cytotoxic warhead conjugated to the antibody. Classes: tubulin inhibitors (MMAE, MMAF, DM1, DM4), topoisomerase-I inhibitors (DXd, SN-38, exatecan, belotecan derivatives), DNA-damaging agents (PBD dimers, calicheamicin, duocarmycin). Newer payloads: degraders, immune agonists, radionuclides. Membrane permeability determines bystander killing.", wikipedia: W("Antibody-drug_conjugate"), technologies: ["adc", "topoisomerase-inhibitors"] }),
+  t({ id: "payload", name: "Payload (ADC)", category: "ADC", tldr: "The payload is the poison an ADC carries, usually a chemotherapy far too toxic to give on its own.", summary: "The payload is the cytotoxic warhead conjugated to the antibody. Classes: tubulin inhibitors (MMAE, MMAF, DM1, DM4), topoisomerase-I inhibitors (DXd, SN-38, exatecan, belotecan derivatives), DNA-damaging agents (PBD dimers, calicheamicin, duocarmycin). Newer payloads: degraders, immune agonists, radionuclides. Membrane permeability determines bystander killing.", wikipedia: W("Antibody-drug_conjugate"), technologies: ["adc", "topoisomerase-inhibitors"] ,
+"notes": [
+  "Class effects versus product figures. US labels report brentuximab vedotin peripheral neuropathy of any grade in 62 per cent of patients in monotherapy studies; mirvetuximab soravtansine ocular adverse reactions in 59 per cent of patients with ovarian cancer, grade 3 in 11 per cent; belantamab mafodotin dosage modification for ocular toxicity in 83 per cent of patients in its clinical study, with a boxed warning and a restricted programme; and tisotumab vedotin a boxed warning for severe ocular toxicity, including severe vision loss and corneal ulceration, with an ophthalmic examination before every cycle for the first nine. Datopotamab deruxtecan: stomatitis in 63 per cent and ocular adverse reactions in 38 per cent of 1,365 patients treated as a single agent at 6 mg/kg in the pooled label population. Trastuzumab emtansine carries a boxed warning for hepatotoxicity, cardiac toxicity and embryo-fetal toxicity. The sacituzumab govitecan, trastuzumab deruxtecan and trastuzumab emtansine rates, and the datopotamab deruxtecan lung-disease rates, are in the record on ADC side effects in breast cancer. The figures come from different trials and populations and cannot be compared head to head, and sharing a payload class does not make products equivalent."
+],
+"asOf": "2026-11-11"
+}),
   t({
     notes:["The T-DM1 catabolite has low membrane permeability in the cited comparison; that is not a chemical rule that every noncleavable catabolite is impermeable. Bystander activity depends on release, diffusion, local concentration and neighboring-cell susceptibility. Linker hydrophilicity can mitigate hydrophobicity in particular designs without guaranteeing freedom from aggregation or toxicity."], links:[{"label":"Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26101915/"},{"label":"Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)","url":"https://pubmed.ncbi.nlm.nih.gov/36741448/"},{"label":"Ogitani et al.: released-species permeability and local bystander killing in models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27166974/"},{"label":"Lyon et al.: hydrophobicity, loading and conjugate pharmacokinetics (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26076429/"}], asOf:"2026-11-08", id: "linker", name: "Linker (ADC)", category: "ADC", tldr: "The linker connects antibody and payload. Its chemistry affects where the drug separates and which active chemical species becomes available.", summary: "Cleavable linkers can respond to enzymes, reduction or hydrolysis under specified conditions. Release is construct-specific and need not occur exclusively inside a cancer cell. A noncleavable linker can remain on the payload while the antibody is broken down, leaving an active amino-acid-linker-payload catabolite. For T-DM1, Lys-SMCC-DM1 must leave the lysosome to reach its intracellular site of action; SLC46A3 directly transports this catabolite in experimental systems. The released species can differ from the unconjugated parent drug in transport and permeability.", wikipedia: W("Antibody-drug_conjugate"), technologies: ["adc", "site-specific-conjugation"] }),
   t({
     notes:["Site-directed attachment can improve control, but occupancy, remaining heterogeneity, stability and function still need measurement. Hydrophobic-interaction chromatography and suitable mass-spectrometric methods can characterize loading; an average alone cannot establish product equivalence or clinical benefit. For multiple payload types, retain each component’s loading instead of inventing its share from total DAR."], links:[{"label":"Hamblett et al.: drug loading in one anti-CD30 conjugate, cell and mouse experiments (2004)","url":"https://pubmed.ncbi.nlm.nih.gov/15501986/"},{"label":"Junutula et al.: engineered-cysteine conjugation and animal therapeutic index (2008)","url":"https://pubmed.ncbi.nlm.nih.gov/18641636/"},{"label":"Lyon et al.: hydrophobicity, loading and conjugate pharmacokinetics (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26076429/"}], asOf:"2026-11-08", id: "dar", wikipedia: W("Antibody-drug_conjugate"), aka: ["drug-to-antibody ratios"], name: "Drug-to-antibody ratio (DAR)", category: "ADC", tldr: "DAR usually reports the average number of payload molecules attached per antibody. The average can hide a mixture of differently loaded molecules.", summary: "Drug-to-antibody ratio describes payload loading. A preparation can contain antibodies with different numbers and sites of attachment, so the reported mean does not specify every molecule. Two preparations with the same mean can differ in their loading distribution and attachment chemistry. Higher loading can increase cell-assay potency while also changing hydrophobicity, aggregation, clearance and tolerated exposure. Hamblett and colleagues separated differently loaded versions of one anti-CD30 conjugate and found that greater cell-assay potency did not translate into a proportional mouse treatment advantage. That experiment does not set one optimal DAR for every product.", technologies: ["adc", "site-specific-conjugation"] }),
   t({
     notes:["Neither a cleavable-linker label nor a permeability result alone proves bystander killing in a tumor. More chemical spread can also expose normal cells, so it is not an efficacy ranking."], asOf:"2026-11-08", id: "bystander-effect", wikipedia: W("Antibody-drug_conjugate"), links: [{"label":"Ogitani et al.: released-species permeability and local bystander killing in models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27166974/"},{"label":"Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26101915/"}], name: "Bystander effect (ADC)", category: "ADC", tldr: "A conjugate can harm neighboring cells when an active released species reaches them, including neighbors with little or none of the delivery target.", summary: "Bystander killing is a local drug effect, distinct from radiation crossfire or immune memory. It depends on the chemical species actually released, its transport through membranes and tissue, the concentration reaching neighboring cells and their susceptibility. Ogitani and colleagues compared a permeable DXd species, a poorly permeable alternative and the T-DM1 catabolite Lys-SMCC-DM1. Their coculture and mixed-tumor mouse experiments showed neighboring target-negative-cell killing with the permeable DXd construct; a separate target-negative tumor on the opposite flank did not respond in that experiment. These findings support a local mechanism in those models, not a universal safety or patient-benefit claim.", technologies: ["adc", "topoisomerase-inhibitors"], drugs: ["trastuzumab-deruxtecan"] }),
-  t({ id: "ild", name: "Interstitial lung disease (ILD) / pneumonitis", category: "Toxicity", tldr: "Interstitial lung disease (ILD) is lung inflammation, a serious side effect of some ADCs (especially Enhertu) and immunotherapy.", summary: "Occurs in ~10-15% of T-DXd patients (grade 5 in ~1%); also with Dato-DXd, HER3-DXd, checkpoint inhibitors, and mTOR inhibitors. Requires monitoring, prompt steroids, and permanent discontinuation for grade ≥2 with T-DXd. Mechanism with DXd is incompletely understood (alveolar macrophage uptake proposed).", wikipedia: W("Interstitial_lung_disease"), drugs: ["trastuzumab-deruxtecan", "datopotamab-deruxtecan"] }),
-  t({ id: "efflux-pump", name: "Drug efflux pumps (ABC transporters)", category: "Resistance", tldr: "Molecular pumps on cancer cells that eject chemotherapy and ADC payloads before they can act.", summary: "Drug efflux pumps are ABC transporters on cancer cells that eject chemotherapy and ADC payloads before they can act. The main ones are ABCB1 (P-glycoprotein or MDR1), ABCG2 (BCRP) and ABCC1 (MRP1), with substrates including taxanes, anthracyclines, MMAE, DXd and, for ABCG2, SN-38. They are upregulated in mesenchymal and stem-like states, hence the term's place in the Epithelial-mesenchymal transition & drug efflux pathway; some newer payloads and radiation are efflux-independent, whereas pump inhibitors failed clinically because of toxicity. It is linked to the Antibody-drug conjugate (ADC) and Cytotoxic chemotherapy technologies, to the bottleneck Acquired resistance to every therapy, and to ideas on payload-class switching and efflux-agnostic therapy for mesenchymal TNBC.", wikipedia: W("P-glycoprotein"), pathways: ["emt"], technologies: ["adc", "cytotoxic-chemotherapy"] }),
+  t({ id: "ild", name: "Interstitial lung disease (ILD) / pneumonitis", category: "Toxicity", tldr: "Interstitial lung disease (ILD) is lung inflammation, a serious side effect of some ADCs (especially Enhertu) and immunotherapy.", summary: "Occurs in ~10-15% of T-DXd patients (grade 5 in ~1%); also with Dato-DXd, HER3-DXd, checkpoint inhibitors, and mTOR inhibitors. Requires monitoring, prompt steroids, and permanent discontinuation for grade ≥2 with T-DXd. Mechanism with DXd is incompletely understood (alveolar macrophage uptake proposed).", wikipedia: W("Interstitial_lung_disease"), drugs: ["trastuzumab-deruxtecan", "datopotamab-deruxtecan"] ,
+"notes": [
+  "Label and trial figures differ by product, disease pool and definition. The trastuzumab deruxtecan label (5.4 mg/kg monotherapy pool) reports ILD in 12 per cent, fatal in 0.9 per cent, and DESTINY-Breast04 adjudicated 12.1 per cent with 0.8 per cent grade 5. The datopotamab deruxtecan label reports 3.0 per cent (0.2 per cent fatal) in 841 people with breast cancer and 7 per cent (1.7 per cent fatal) in 484 with non-small-cell lung cancer. The separate 15.4 per cent pooled-analysis figure below has another denominator and should not be compared directly. The datopotamab deruxtecan trials excluded people with a history of ILD or pneumonitis that needed steroids, so prior lung injury can bear on eligibility for later treatment."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Interstitial_lung_disease"
+  },
+  {
+    "label": "Trastuzumab deruxtecan prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+  },
+  {
+    "label": "Datopotamab deruxtecan prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+  },
+  {
+    "label": "Modi et al., trastuzumab deruxtecan in HER2-low breast cancer, DESTINY-Breast04 (2022)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35665782/"
+  },
+  {
+    "label": "Powell et al., pooled analysis of interstitial lung disease in nine trastuzumab deruxtecan studies (ESMO Open 2022)",
+    "url": "https://doi.org/10.1016/j.esmoop.2022.100554"
+  },
+  {
+    "label": "Macmillan: pembrolizumab",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/pembrolizumab"
+  }
+],
+"asOf": "2026-11-11"
+}),
+  t({ id: "efflux-pump", name: "Drug efflux pumps (ABC transporters)", category: "Resistance", tldr: "An efflux pump moves particular substances out of cells. Some pumps can reduce exposure to chemotherapy drugs or released antibody-drug-conjugate payloads.", summary: "Drug efflux pumps can export particular medicines or released antibody-drug-conjugate payloads that are their substrates. Important examples include ABCB1 (P-glycoprotein or MDR1), ABCG2 (BCRP) and ABCC1 (MRP1). The same transporter can handle several unrelated compounds, but a pump name does not establish that every medicine is a substrate.\n\nExpression and transport activity are different measurements. A high RNA signal does not by itself show that enough active transporter reaches the membrane to alter drug exposure. Cell-line resistance and restoration by an inhibitor can support a mechanism in that model; they do not establish a validated clinical selection test or make switching payloads effective in every tumour.", wikipedia: W("P-glycoprotein"), pathways: ["emt"], technologies: ["adc", "cytotoxic-chemotherapy"] ,
+"notes": [
+  "How to read evidence about pumps. Pump RNA is not pump function: function depends on protein at the membrane and on whether a particular drug is a substrate. It is tested with fluorescent substrates that cells retain less when a pump is active, with and without an inhibitor, or by measuring intracellular drug; in SN-38-resistant breast and gastric cell lines, functional ABCG2 but not ABCB1 was found, and ABCG2 inhibitors restored SN-38 toxicity (Chang et al.). Substrate status is specific to each drug, so being pumped for one topoisomerase I payload does not establish it for another. A pump acts on a drug after it arrives and is not the drug's target, and a cell can keep an ADC's target protein, take the ADC up normally and still resist by exporting the released payload."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/P-glycoprotein"
+  },
+  {
+    "label": "Chang et al., ABCG2 inhibitors with sacituzumab govitecan (IMMU-132) overcome SN-38 resistance (2016)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27207776/"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({ id: "resistance", aka: ["acquired resistance", "primary resistance", "adaptive resistance", "pre-existing resistance", "resistance mechanism", "resistance mechanisms", "resistant clone", "resistant clones", "resistant subclone", "resistant subclones", "bypass pathways", "bypass signalling", "bypass resistance", "chemoresistance", "chemoresistant", "chemotherapy resistance", "TKI resistance", "TKI-resistant", "drug-resistant", "therapy-resistant", "become resistant", "becomes resistant", "escape mechanism", "escape mechanisms", "escape mutation", "escape mutations", "reversion mutations", "BRCA reversion", "on-target mutations", "compound resistance mutations", "confers resistance", "emergence of resistance", "overcome resistance", "resistance alteration", "resistance pathway", "resistant disease"], name: "Drug resistance (primary and acquired)", category: "Resistance", tldr: "Why cancer drugs stop working: the tumour either never depended on the target or evolves around the block.", summary: "Primary: no target dependence, poor drug penetration, pre-existing resistant clones. Acquired: on-target mutations (EGFR T790M/C797S, ESR1, BRCA reversion, ALK G1202R), bypass signalling (MET amplification), lineage change (SCLC transformation), antigen loss (CD19-negative relapse), efflux, epigenetic plasticity. Tumours are evolving populations; combination and sequential strategies are the response.", wikipedia: W("Drug_resistance"), technologies: ["kinase-inhibitors", "liquid-biopsy"] }),
 
   // ---- Trial endpoints & stats ----
@@ -629,12 +680,180 @@ export const terms: TermInput[] = [
 ],
 "asOf": "2026-11-10"
 }),
-  t({ id: "synthetic-lethality", name: "Synthetic lethality", category: "Biology", tldr: "Two genes where losing either alone is fine but losing both kills the cell. Cancers that have lost one become vulnerable to drugs against the other.", summary: "Synthetic lethality describes two genes where losing either alone is tolerated but losing both kills the cell, so a cancer that has lost one becomes vulnerable to a drug against the other. BRCA and PARP is the proven pair; others in development include MTAP/PRMT5, MSI/WRN, HRD/POLQ, TP53/WEE1, SMARCA4/SMARCA2 and ARID1A/EZH2, and CRISPR screens map such pairs systematically. The concept links to the Synthetic lethality approaches, PARP inhibitors and CRISPR functional genomics technologies and is cited by the Ovarian cancer and Mesothelioma entries, The Institute of Cancer Research and Christopher Lord. Ideas drawing on it include PRMT5/MAT2A lethality for MTAP-deleted mesothelioma, a WRN inhibitor programme and a synthetic lethality map for every cancer driver.", wikipedia: W("Synthetic_lethality"), technologies: ["synthetic-lethality-approaches", "parp-inhibitor", "crispr-screens"] }),
+  t({ id: "synthetic-lethality", name: "Synthetic lethality", category: "Biology", tldr: "Synthetic lethality means that two impairments together kill a cell even though either alone is tolerated; finding one genetic change does not establish that a particular drug will produce that interaction.", summary: "Synthetic lethality is a lethal interaction between two impairments, each of which can be tolerated alone in the tested system. One impairment may already be present in a cancer and an experimental intervention can create the second, so the concept does not require two drugs. Genetic identity, loss of function, target engagement and the lethal outcome each need evidence.\n\nThe 2005 Farmer and Bryant studies found sensitivity to PARP inhibition in BRCA-impaired experimental systems. Murai and colleagues later distinguished PARP trapping from catalytic inhibition. These findings support particular mechanisms; they do not make every BRCA-related finding a clinical selection rule. Candidate pairs such as MTAP with PRMT5, mismatch-repair deficiency with WRN, or repair deficiency with POLQ need their own model, exposure, selectivity and clinical evidence.", wikipedia: W("Synthetic_lethality"), technologies: ["synthetic-lethality-approaches", "parp-inhibitor", "crispr-screens"] ,
+"notes": [
+  "What has to be shown. Compare matched cells with neither impairment, each alone and both, and check that the intended functions changed. Measure death separately from slower growth, because a viability signal can fall when cells divide less or change metabolism; pair a suitable death assay with long-term survival or colony formation, and record concentration, time and denominator, remembering that colony formation measures reproductive survival and not the way cells die. Synthetic lethality is not oncogene addiction, which is dependence on an active driver: in Src-, BCR-ABL- and EGF receptor-dependent cells, unequal attenuation of survival and pro-apoptotic signals after the driver is inactivated contributes to death (Sharma et al.). It is also not synergy, since a score above a reference model does not identify which losses interact. In the BRCA/PARP example, homologous recombination is a DNA repair process and HRD means deficiency of that process. Trapping PARP on DNA and inhibiting its catalytic activity are different perturbations, while repair restoration or changes in replication stress can change sensitivity. The first impairment can pre-exist, so a two-loss interaction does not require two drugs.",
+  "Rescue, restoration and what each test can show. A rescue experiment restores a relevant function and asks whether the predicted harm falls; that strengthens attribution, but a failed rescue is not automatic disproof, because the restored function may not be expressed, localised or timed adequately (a reading rule, not a result from these experiments). A real example of functional restoration involved secondary BRCA2 mutations, often described as reversions. Ovarian cancer lines PEO1, PEO4 and PEO6 came from one BRCA2 mutation carrier: PEO1 was BRCA2 deficient and sensitive to cisplatin and a PARP inhibitor, while a secondary BRCA2 mutation that cancelled the inherited one arose in the patient (PEO4, PEO6) and, under cisplatin and PARP-inhibitor selection of PEO1, in the dish, restoring BRCA2 and resistance. Function was shown by homologous recombination assays after transfecting wild-type or mutant BRCA2 cDNA into reporter cells, and transient siRNA depletion (two siRNAs against a non-targeting control) re-sensitised the restored clones and PEO4 (Sakai et al. 2009). That is a secondary-mutation restoration plus knockdown in one patient's lineage, not a designed rescue of a knockout, and depleting a protein is not the same as inhibiting it with a drug. BRCA and PARP evidence is experimental: BRCA1 or BRCA2 dysfunction sensitised cells to PARP inhibition (Farmer et al.), BRCA2-deficient cells and tumours were acutely sensitive (Bryant et al.), and PARP inhibitors trap PARP1 and PARP2 on damaged DNA, with trapping potency (niraparib above olaparib, far above veliparib) not tracking catalytic inhibition (Murai et al.). Normal tissue can share the vulnerability: normal Brca2-deficient mouse intestinal epithelium showed very high apoptosis within hours of PARP inhibition (Hay et al.). None of this establishes clinical benefit.",
+  "A fictional test uses matched cultures over the same interval: neither impairment, A alone, B alone and A plus B. Each single impairment is tolerated and only the pair causes death measured by a validated assay, with independent perturbations reproducing it. In a separate rescue culture, restoring A while B remains impaired reduces death; this tests attribution and does not revive already dead cells. If a short assay instead shows fewer cells, slower division and cell loss remain unresolved. Other cell backgrounds and normal cells are separate tests of context and selectivity."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Synthetic_lethality"
+  },
+  {
+    "label": "Farmer et al., targeting the DNA repair defect in BRCA mutant cells (2005)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15829967/"
+  },
+  {
+    "label": "Bryant et al., specific killing of BRCA2-deficient tumours with PARP inhibitors (2005)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15829966/"
+  },
+  {
+    "label": "Murai et al., trapping of PARP1 and PARP2 by clinical PARP inhibitors (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23118055/"
+  },
+  {
+    "label": "Hay et al., normal Brca2-deficient intestinal epithelium deleted by PARP inhibition (2005)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16287996/"
+  },
+  {
+    "label": "Sakai et al., functional restoration of BRCA2 protein by secondary BRCA2 mutations in ovarian carcinoma (2009)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19654294/"
+  },
+  {
+    "label": "Sharma et al., a common signaling cascade may underlie addiction to Src, BCR-ABL and EGF receptor oncogenes (2006)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17097564/"
+  }
+],
+"asOf": "2026-11-11"
+}),
 
   // ---- Immunology / toxicity ----
-  t({ id: "crs", name: "Cytokine release syndrome (CRS)", category: "Toxicity", tldr: "A flood of inflammatory signals when immune cells are activated en masse, causing fever, low blood pressure, and sometimes organ failure.", summary: "Cytokine release syndrome (CRS) is a flood of inflammatory signals released when immune cells are activated en masse, producing fever, low blood pressure and sometimes organ failure. It occurs with CAR-T cell therapy, T-cell engagers and some other bispecifics, is graded by ASTCT criteria and is managed with tocilizumab, which blocks the IL-6 receptor, and steroids. Step-up dosing and prophylactic tocilizumab reduce its incidence, and outpatient administration of bispecifics is now possible. The term is referenced by the Acute lymphoblastic leukaemia, Diffuse large B-cell lymphoma, Multiple myeloma and Small-cell lung cancer entries, by the drug records for Tisagenlecleucel, Lisocabtagene maraleucel, Epcoritamab, Xaluritamig and Pasritamig, and by the ELIANA trial.", wikipedia: W("Cytokine_release_syndrome"), technologies: ["car-t", "t-cell-engager"] }),
-  t({ id: "icans", wikipedia: W("Cytokine_release_syndrome"), links: [{ label: "ASTCT consensus grading for CRS and ICANS (Lee et al., Biol Blood Marrow Transplant 2019)", url: "https://doi.org/10.1016/j.bbmt.2018.12.758" }], name: "ICANS (neurotoxicity)", category: "Toxicity", tldr: "ICANS is confusion, speech difficulty, and rarely seizures after CAR-T or bispecific therapy.", summary: "ICANS, the immune effector cell-associated neurotoxicity syndrome, is the confusion, speech difficulty and occasionally seizures that can follow CAR-T cell therapy or bispecific T-cell engagers. It is more common with CD28-costimulated CAR-T products and is managed with steroids, and a delayed parkinsonism has been seen rarely with BCMA-directed CAR-T such as cilta-cel. The term appears in the Acute lymphoblastic leukaemia, Diffuse large B-cell lymphoma and Multiple myeloma entries and in the drug records for Tisagenlecleucel, Obecabtagene autoleucel, Lisocabtagene maraleucel, Idecabtagene vicleucel and Epcoritamab. It also features in the bottlenecks on toxicity and the limits of the patient, on manufacturing living medicines, and on toxicity and quality of life being undervalued.", technologies: ["car-t", "t-cell-engager"] }),
-  t({ id: "irae", wikipediaChecked: "2026-09-22", links: [{ label: "Haanen et al., Management of toxicities from immunotherapy: ESMO Clinical Practice Guideline (Annals of Oncology 2022)", url: "https://doi.org/10.1016/j.annonc.2022.10.001" }], aka: ["immune-related adverse event"], name: "Immune-related adverse events (irAEs)", category: "Toxicity", tldr: "Immune-related adverse events (irAEs) are the autoimmune side effects of checkpoint inhibitors: colitis, thyroid problems, rash, hepatitis, pneumonitis.", summary: "Immune-related adverse events (irAEs) are the autoimmune side effects of Immune checkpoint inhibitors, including colitis, thyroid problems, rash, hepatitis and pneumonitis. Any organ can be affected, and they are most frequent and most severe when CTLA-4 and PD-1 blockade are combined. Management relies on steroids and biologics; some irAEs, notably the endocrinopathies, are permanent, and their occurrence correlates only weakly with response. The term is cited by the Melanoma and Mesothelioma entries and the drug records for Toripalimab, Tislelizumab and Camrelizumab, by the bottlenecks on toxicity and on predicting immunotherapy response, and by ideas on testing drugs in old and unhealthy animals and reading the immune response in blood three weeks in.", technologies: ["checkpoint-inhibitor"] }),
+  t({ id: "crs", name: "Cytokine release syndrome (CRS)", category: "Toxicity", tldr: "Cytokine release syndrome is systemic inflammation after immune activation, assessed through clinical findings and competing causes rather than a cytokine level alone.", summary: "Cytokine release syndrome can follow activation by engineered immune cells or T-cell-engaging treatments. Signals from several cell types can contribute to fever, hypotension, hypoxia and other organ effects. Infection or other conditions can produce similar findings or coexist with the syndrome.\n\nThe 2019 ASTCT consensus defines and grades CRS using attributed clinical findings, including fever at onset and the blood-pressure or oxygen support required. Its scale is a reporting framework, not a management algorithm. The 2026 ASTCT consensus expands the toxicity framework, but its detailed criteria were not accessible for this entry; the numerical grading below is explicitly the 2019 version. Product, disease, preparation, observation window and treated denominator must accompany any incidence estimate.", wikipedia: W("Cytokine_release_syndrome"), technologies: ["car-t", "t-cell-engager"] ,
+"notes": [
+  "How CRS is graded, from the ASTCT 2019 consensus. The definition requires a fever of 38 degrees Celsius or higher that cannot be attributed to another cause. Severity is then the more severe of two findings, again not attributable to another cause. Grade 1 has neither. Grade 2 is low blood pressure that does not need vasopressors and/or oxygen by low-flow nasal cannula (up to 6 litres a minute) or blow-by. Grade 3 is one vasopressor, with or without vasopressin, and/or high-flow cannula, face mask, non-rebreather mask or Venturi mask. Grade 4 is multiple vasopressors, excluding vasopressin, and/or positive pressure such as CPAP, BiPAP or intubation. Once someone has had a fever-lowering or anti-cytokine treatment such as tocilizumab or steroids, fever is no longer needed to grade later severity: the grade then follows blood pressure and oxygen, and the person still counts as having CRS until the signs resolve. Organ toxicities linked to CRS are graded separately and do not change the CRS grade, and neurotoxicity during or after CRS is scored on the neurotoxicity scale, not added here. The 2026 ASTCT update (Perales et al.) convened experts to consider updating CRS, ICANS and haemophagocytic-lymphohistiocytosis-like grading, but only its abstract could be read, so whether it keeps, changes or relaxes any of these 2019 rules is not stated here; a report should say which version graded it.",
+  "Reading CRS without over-reading a cytokine level. CRS is a clinical syndrome, graded from attributed findings and not from a cytokine concentration. In a mouse model of CD19 CAR T-cell CRS, severity was mediated not by CAR T-cell-derived cytokines but by IL-6, IL-1 and nitric oxide from the recipient's macrophages, and IL-1 blockade abated it (Giavridis et al.); that supports a multicell amplification mechanism and does not show the same sources or shares in every human product. Infection and other conditions can cause or accompany the same findings, so the cause of a fever cannot be read from timing alone. A comparable report gives its grading version, observation window and treated denominator, with onset, maximum grade, interventions and resolution. Safety belongs to the product, disease, tumour burden and preparation, so experience with one blood-cancer product does not supply a solid-tumour product's rate, and no severe CRS in a small early study does not rule out uncommon events. CRS is a different problem from injury to healthy tissue that carries the target (on-target, off-tumour) and from neurotoxicity (ICANS). The treatment need not carry a cytokine payload to trigger endogenous inflammatory signalling. Tumour response does not establish acceptable inflammatory risk, and mild CRS does not establish lack of anticancer activity. Stopping a treatment input does not guarantee immediate removal of released signals or established injury. In a fictional early study, no severe CRS and a modest cytokine rise would not make every fever harmless CRS: attribution, clinical findings, a named grading framework, treated denominator and observation window are still needed."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cytokine_release_syndrome"
+  },
+  {
+    "label": "Lee et al., ASTCT consensus grading for CRS and neurologic toxicity (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30592986/"
+  },
+  {
+    "label": "Perales et al., ASTCT consensus grading for toxicities after immune effector cell therapy (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42711241/"
+  },
+  {
+    "label": "Giavridis et al., macrophages mediate CRS in a mouse CAR T model (2018)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29808005/"
+  },
+  {
+    "label": "Baumeister et al., CRS and associated acute toxicities in paediatric patients after immune effector cell therapy (2022)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35402259/"
+  },
+  {
+    "label": "Lee et al., ASTCT consensus grading, accepted-manuscript text (PMC)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12180426/"
+  },
+  {
+    "label": "Lymphoma Action: CAR-T cell therapy",
+    "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/car-t-cell-therapy"
+  },
+  {
+    "label": "NCCN Guidelines for Patients: Immunotherapy Side Effects: CAR T-Cell and Lymphocyte Engager Therapies",
+    "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=45"
+  },
+  {
+    "label": "Patient education sheet (ONS, NCODA, HOPA and ACCC): Understanding Cytokine Release Syndrome (CRS) During Cancer Treatment",
+    "url": "https://ncoda.org/pes/understanding-and-managing-cytokine-release-syndrome/"
+  }
+],
+"asOf": "2026-11-11"
+}),
+  t({ id: "icans", wikipedia: W("Cytokine_release_syndrome"), links: [
+  {
+    "label": "Patient education sheet (ONS, NCODA, HOPA and ACCC): Understanding Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS)",
+    "url": "https://ncoda.org/pes/understanding-and-managing-immune-effector-cell-associated-neurotoxicity-syndrome-icans/"
+  },
+  {
+    "label": "NCCN Guidelines for Patients: Immunotherapy Side Effects: CAR T-Cell and Lymphocyte Engager Therapies",
+    "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=45"
+  },
+  {
+    "label": "Lymphoma Action: CAR-T cell therapy",
+    "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/car-t-cell-therapy"
+  },
+  {
+    "label": "ASTCT consensus grading for CRS and ICANS (Lee et al., Biol Blood Marrow Transplant 2019)",
+    "url": "https://doi.org/10.1016/j.bbmt.2018.12.758"
+  },
+  {
+    "label": "Perales et al., ASTCT consensus grading for toxicities after immune effector cell therapy (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42711241/"
+  },
+  {
+    "label": "Gust et al., endothelial activation and blood-brain barrier disruption in neurotoxicity after CD19 CAR T cells (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29025771/"
+  },
+  {
+    "label": "Lee et al., ASTCT consensus grading, accepted-manuscript text (PMC)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12180426/"
+  }
+], name: "ICANS (neurotoxicity)", category: "Toxicity", tldr: "Immune effector cell-associated neurotoxicity syndrome can affect language, attention, awareness or other brain functions; a cognitive score is one part of clinical assessment.", summary: "Immune effector cell-associated neurotoxicity syndrome, or ICANS, is a neurologic syndrome associated with immune-effector-cell therapy. Changes in language, attention, handwriting or awareness and more severe findings such as seizures need assessment against baseline and alternative explanations. An immune-marker plot does not establish the syndrome.\n\nThe 2019 ASTCT adult framework combines the immune effector cell-associated encephalopathy (ICE) score with consciousness, seizures, motor findings and raised intracranial pressure or cerebral oedema. Children require age-appropriate assessment. The 2026 consensus also addresses non-ICANS neurologic toxicities; its detailed tables were not accessible for this entry. Neurologic events and recovery need their own record rather than being inferred from resolution of CRS.", technologies: ["car-t", "t-cell-engager"] ,
+"notes": [
+  "How ICANS is graded, from the ASTCT 2019 consensus. For adults, the grade is the most severe of five findings, none attributable to another cause. The 10-point ICE screen of orientation, naming, command-following, writing and attention scores 7 to 9 for grade 1, 3 to 6 for grade 2, 0 to 2 for grade 3, and 0 because the person is unarousable and cannot be tested for grade 4; an ICE of 0 in someone who is awake with global aphasia can still be grade 3. Level of consciousness counts only if no other cause such as a sedating medicine explains it: awakens spontaneously, awakens to voice, only to touch, or unarousable or requiring vigorous or repeated tactile stimulation. Any seizure that resolves rapidly, or EEG-only seizures that resolve with treatment, is grade 3, and prolonged (over 5 minutes) or repeated seizures without return to baseline are grade 4. Deep focal motor weakness is grade 4, while tremor and myoclonus may be graded on CTCAE but do not change the ICANS grade. Focal oedema on imaging is grade 3; diffuse oedema, posturing, cranial nerve VI palsy, papilloedema or Cushing's triad is grade 4; intracranial haemorrhage is excluded from ICANS grading. So ICE is a screen for encephalopathy and one input, not the whole examination: a person with an ICE of 3 who has a generalised seizure is grade 3, and headache alone is not a useful marker. The 2026 ASTCT consensus abstract adds categories such as non-ICANS neurological toxicities (parkinsonism, cranial nerve palsies, polyneuropathies) and tumour inflammation-associated neurotoxicity; their criteria, and any change to how ICE is used, were not readable here.",
+  "What is known about mechanism, timing and attribution. In 133 adults given CD19 CAR T cells, Gust et al. found that those with severe neurotoxicity had endothelial activation (disseminated intravascular coagulation, capillary leak) and increased blood-brain barrier permeability, and that the permeable barrier failed to protect the cerebrospinal fluid from high systemic cytokine concentrations including interferon-gamma. Higher risk went with acute lymphoblastic leukaemia, high marrow CD19-positive burden, high CAR T-cell dose, CRS and pre-existing neurological disease, and markers of endothelial activation before lymphodepletion were higher in people who later had grade 4 or worse neurotoxicity. That is an association in one product class and population, not a complete mechanism for every treatment. ICANS can accompany CRS or follow its own timetable, and neurotoxicity after CRS is scored separately, so recovery of blood pressure and oxygen does not show neurological recovery. If a person is confused while taking a sedating medicine and the ICE score falls, the grading rule requires that sedation be excluded, so the fall calls for clinical assessment, neither ignored nor diagnosed from the score alone. Clinical assessment also considers infection, metabolic disturbances, medicines and pre-existing neurologic disease. A safety report should retain onset, severity, attributed cause, interventions, duration, recovery and how many people were adequately observed. Separate fictional CRS and neurologic timelines can end at different times; they do not specify a typical order or duration. Stopping an engineered input does not guarantee immediate reversal of established neurologic injury."
+],
+"asOf": "2026-11-11"
+}),
+  t({ id: "irae", wikipediaChecked: "2026-09-22", links: [
+  {
+    "label": "NCCN Guidelines for Patients: Management of Immune Checkpoint Inhibitor-Related Toxicities - Immunotherapy Side Effects: Immune Checkpoint Inhibitors",
+    "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=46"
+  },
+  {
+    "label": "Macmillan: atezolizumab (Tecentriq)",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/atezolizumab"
+  },
+  {
+    "label": "Macmillan: durvalumab (Imfinzi)",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/durvalumab"
+  },
+  {
+    "label": "Schneider et al., ASCO guideline on immune-related adverse events (JCO 2021)",
+    "url": "https://doi.org/10.1200/JCO.21.01440"
+  },
+  {
+    "label": "Breast Cancer Now: pembrolizumab (Keytruda)",
+    "url": "https://breastcancernow.org/about-breast-cancer/treatment/targeted-therapy/pembrolizumab-keytruda"
+  },
+  {
+    "label": "Macmillan: pembrolizumab",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/pembrolizumab"
+  },
+  {
+    "label": "Haanen et al., Management of toxicities from immunotherapy: ESMO Clinical Practice Guideline (Annals of Oncology 2022)",
+    "url": "https://doi.org/10.1016/j.annonc.2022.10.001"
+  },
+  {
+    "label": "NCI CTEP: adverse events, grading and attribution",
+    "url": "https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events"
+  },
+  {
+    "label": "Pembrolizumab prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+  },
+  {
+    "label": "Brahmer et al., SITC clinical practice guideline on immune checkpoint inhibitor-related adverse events (2021)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34172516/"
+  },
+  {
+    "label": "Pardoll, immune checkpoints, self-tolerance and peripheral responses (2012 review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22437870/"
+  }
+], aka: ["immune-related adverse event"], name: "Immune-related adverse events (irAEs)", category: "Toxicity", tldr: "An immune-related adverse event is harm attributed to treatment-related immune activity; its name does not establish the affected organ, severity or management.", summary: "Immune-related adverse events are injuries attributed to treatment-related immune activity, commonly discussed with checkpoint inhibitors. They can affect the bowel, lung, skin, liver, hormone-producing glands and other organs. A symptom or laboratory change during treatment does not by itself establish an immune cause.\n\nClinical assessment identifies the organ, severity, timing and competing explanations. Reactions can arise after treatment stops, and some endocrine injury leaves lasting loss of function. Organ-specific management can include different measures, such as treatment interruption, immunosuppression or hormone replacement. An adverse event, an attributed immune injury and a cancer-response result are separate findings.", technologies: ["checkpoint-inhibitor"] ,
+"notes": [
+  "What the label does and does not say. An adverse event is any unfavourable and unintended sign, symptom or abnormal laboratory finding that occurs during treatment, whether or not the treatment caused it; grading records that it occurred and how severe it was, and the clinical team assigns attribution to the drug, the intervention or something else (NCI Cancer Therapy Evaluation Program). An irAE is the narrower attribution of harm to treatment-related immune activity, so a symptom during immunotherapy is not automatically an irAE, and the abbreviation names a suspected mechanism, not an organ, a severity or a treatment. The SITC 2021 guideline uses the same wording, grades events including irAEs on a scale such as CTCAE version 5, and says that some irAEs need organ-specific management while overarching principles apply to all checkpoint-inhibitor toxicity. Checkpoint regulation helps limit responses against healthy tissue, part of peripheral tolerance; disrupting that protection can contribute to immune injury, but no single mechanism explains every event. Colitis names bowel inflammation and pneumonitis lung inflammation. A symptom or the suffix \"-itis\" does not establish its cause.",
+  "Timing and neighbouring syndromes. Immune-mediated reactions to PD-1 or PD-L1 antibodies can occur in any organ system at any time after starting and can also appear after treatment stops (pembrolizumab prescribing information), so the infusion calendar does not define the observation window; onset differs by organ, with a SITC median of 5 to 10 weeks for diarrhoea or colitis and rash typically presenting 2 to 5 weeks after the first treatment. Cytokine release syndrome and ICANS after immune effector cell therapy are separate syndromes with their own ASTCT definitions and grading, not substitute labels for checkpoint-related organ injury, and stopping a treatment does not guarantee the immune effect has stopped.",
+  "Report symptoms using the care team's plan and tell evaluating clinicians about current and previous immunotherapy. New or worsening breathing difficulty, chest pain or confusion can need urgent assessment. A person with a new cough after checkpoint treatment should neither dismiss the possible relationship because dosing ended nor infer pneumonitis without evaluation. The organ-inflammation guidance from NCI advises reporting concerning changes rather than waiting for another infusion or starting immune-suppressing treatment independently. Suspected immune injury does not show that the cancer treatment is working."
+],
+"asOf": "2026-11-11"
+}),
   t({
     asOf:"2026-11-11", links:[
   {

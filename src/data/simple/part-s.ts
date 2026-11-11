@@ -245,5 +245,13 @@ export const simpleS: Record<string, string> = {
 "concordance-index": "This measure checks whether predicted risk order matches observed event order. Unknown later outcomes need suitable handling.",
 "calibration": "A risk estimate needs checking against what actually happens over the same time. A correct overall average can hide errors in lower- and higher-risk groups.",
 "false-discovery-rate": "A multiple-testing rule limits the expected share of false findings among selected results under stated assumptions. It does not tell you which individual finding is false.",
-"ppv": "Among people with a positive result, how many really meet the condition being tested? The answer depends on the test and the population."
+"ppv": "Among people with a positive result, how many really meet the condition being tested? The answer depends on the test and the population.",
+  "pneumonitis": "Pneumonitis means inflammation in lung tissue. A new cough or breathing difficulty needs prompt assessment because several conditions can cause similar symptoms.",
+  "insertional-mutagenesis": "Added genetic material can disrupt a gene or how it is controlled. An insertion or a growing cell clone does not by itself show that cancer has formed.",
+  "on-target-off-tumour-toxicity": "A treatment can harm healthy tissue that carries the target it was designed to recognise. This differs from mistakenly recognising another molecule.",
+  "pulmonary-function-testing": "Lung tests measure airflow, lung volume and how gas passes into the blood. A result describes function but does not by itself identify the cause of a problem.",
+  "chemical-probe": "A chemical probe is a research tool used to change a biological process and test what it does. It needs suitable controls and is not automatically a medicine.",
+  "drug-target-and-mechanism": "A drug target is the molecule or structure a treatment acts on. Its mechanism describes how that action produces an effect, with separate evidence needed for benefit in people.",
+  "lymphoma-bio-lineage-antigen-cost": "Some lymphoma treatments recognise targets also found on healthy cells. Harm from those shared targets differs from unintended binding or cytokine-driven inflammation.",
+  "lymphoma-tx-crs-icans": "Inflammation and brain-related symptoms after immune-effector treatment need separate assessment and recovery records. Care depends on the product and clinical findings.",
 };

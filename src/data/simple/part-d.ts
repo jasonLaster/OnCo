@@ -324,7 +324,7 @@ export const simpleD: Record<string, string> = {
   alphamissense: "An AI program that scored every possible single-letter change in human proteins as likely harmful or harmless.",
   "monoclonal-antibody-manufacturing": "Growing antibody drugs in huge vats of engineered hamster cells and then purifying them, the industrial base for most modern cancer drugs.",
   "antibody-oligonucleotide-conjugates": "An antibody that carries a gene-silencing strand instead of chemotherapy, so it can switch a cancer protein off rather than poison the cell.",
-  "antiemetic-therapy": "The drugs that stopped chemotherapy meaning days of vomiting, chosen to match how sickening each treatment is.",
+  "antiemetic-therapy": "Antiemetic medicines help prevent or treat nausea and vomiting. These are separate symptoms, and prevention depends on the treatment and individual circumstances.",
   "apheresis-starting-material": "Collecting a patient's white blood cells through a machine over several hours, the first step in making CAR-T (engineered immune cells).",
   "aspirin-cancer-prevention": "Daily low-dose aspirin lowers bowel cancer risk in some people, but in healthy older people it did more harm than good.",
   "atlas-aignostics": "An AI model for reading tissue slides, trained on more than a million slides from two of the world's largest hospitals.",

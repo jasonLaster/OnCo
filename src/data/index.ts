@@ -33,6 +33,7 @@ import { educationTissuePathology } from "./education-tissue-pathology-2026-11";
 import { educationCancerBiology } from "./education-cancer-biology-2026-11";
 import { termsEducationTumorImmunology2026 } from "./education-tumor-immunology-2026-11"
 import { educationStudyPrediction202611Terms } from "./education-study-prediction-2026-11";
+import { termsEducationPharmacologyToxicity2026 } from "./education-pharmacology-toxicity-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -363,6 +364,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...educationCancerBiology,
   ...termsEducationTumorImmunology2026,
   ...educationStudyPrediction202611Terms,
+  ...termsEducationPharmacologyToxicity2026,
   ...trials,
   ...pairings,
   ...roadmaps,

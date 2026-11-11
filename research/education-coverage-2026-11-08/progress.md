@@ -74,3 +74,7 @@ Twelve later and seven original lessons assessed: 19 versions, 215 section signa
 ## Study-design and prediction checkpoint, 11 November 2026
 
 Seventeen lessons per pin are assessed: 34 versions, 396 signatures, 304 original and 307 later obligations, with 309 exact proofs and 69 connected teaching paragraphs. Five subjects are registered, 14 existing root owners and five companion owners supplemented. Thirty theme files and four unique diagrams were viewed. Both full chains and actual readers/exports pass. Cumulative original assessment is 360/537; later teaching assessment is 355/550. Open assessed obligation counts remain eight/two. The two inventories overlap; main and live credit remain zero.
+
+## Pharmacology and toxicity checkpoint, 11 November 2026
+
+Twenty later and eighteen original lessons are assessed: 38 versions, 392 signatures, 157 original and 176 later teaching obligations, with 401 exact field proofs and 152 connected passages. Five subjects are registered, 35 existing root owners and two companion owners supplemented. Twenty-eight theme files and twelve unique diagrams were viewed. Both full chains and actual readers/exports pass. Cumulative original assessment is 378/537; later teaching assessment is 375/550. Open assessed obligation counts are ten/four. The two inventories overlap; main and live credit remain zero.

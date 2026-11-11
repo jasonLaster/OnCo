@@ -191,7 +191,7 @@ export const simpleE: Record<string, string> = {
   "caf-activation-desmoplasia": "Fibroblast activation can alter matrix and signals in a tumour. The resulting stroma has varied functions, so removing it is not a general treatment rule.",
   "resistance-routes-map": "A blocked cancer has five ways back, such as changing the part the drug grips, taking a side road or switching engines, and the route decides the next drug.",
   "drug-tolerant-persisters": "Even when a drug wipes out nearly all of a tumour, a few cells survive without any resistance mutation by going quiet and waiting, and these persisters seed relapse.",
-  "drug-efflux-pumps": "Cancer cells can install pumps in their outer membrane that throw chemotherapy back out as fast as it enters, so drug designers now choose payloads the pumps cannot grip.",
+  "drug-efflux-pumps": "Drug transporters can move certain medicines out of cells. Finding a transporter does not show how active it is or which treatment will work.",
   "lineage-plasticity-neuroendocrine": "Under pressure from a drug that blocks its identity, a prostate or lung tumour can change into a different small-cell type that no longer needs the blocked signal.",
 
   // ---- key papers ----

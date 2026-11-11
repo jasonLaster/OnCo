@@ -1245,8 +1245,8 @@ export const mechanicsPathways: PathwayInput[] = [
   }),
   p({
     id: "drug-efflux-pumps", name: "Drug efflux pumps (ABC transporters)", wikipedia: W("P-glycoprotein"),
-    tldr: "Cancer cells can install pumps in their outer membrane that throw chemotherapy back out as fast as it comes in. The same pumps guard the gut, brain and bone marrow in healthy tissue, which is why blocking them failed as a strategy and why drug designers now choose payloads the pumps cannot grip.",
-    summary: "ATP-binding cassette transporters, chiefly ABCB1 (P-glycoprotein/MDR1), ABCG2 (BCRP) and ABCC1 (MRP1), hydrolyse ATP to export hydrophobic drugs: taxanes, vinca alkaloids, anthracyclines, MMAE, DM1, several TKIs (ABCB1); SN-38, topotecan, mitoxantrone, methotrexate (ABCG2). They are constitutive in intestine, liver, kidney, the blood-brain barrier and stem cells (including leukaemia and cancer stem cells, the 'side population'), and are induced by EMT transcription factors, hypoxia, NRF2 (KEAP1-mutant tumours), and by drug exposure itself (ABCB1 amplification and promoter fusions in ovarian cancer after taxanes). Three generations of P-gp inhibitors (verapamil, valspodar, tariquidar) failed in phase 3 through pharmacokinetic interactions and lack of benefit. Modern responses: choose payloads that are poor substrates (DXd and exatecan are less affected than SN-38 and MMAE; PBD dimers; radionuclides are pump-independent), use ADCs to raise intracellular delivery, and exploit collateral sensitivity (pump-expressing cells are more sensitive to some agents). Efflux at the BBB limits CNS activity of most drugs; brain-penetrant TKIs are engineered to evade P-gp.",
+    tldr: "Drug transporters can lower cellular exposure to particular anticancer drugs. Their substrate profile, location and activity matter; expression alone does not select a treatment.",
+    summary: "ATP-binding cassette transporters use ATP to move substrates across membranes. ABCB1, ABCG2 and ABCC1 can transport several anticancer drugs, with different substrate profiles. Their normal protective and excretory roles also affect absorption, distribution and drug interactions; transporter activity at the blood-brain or placental barrier is a different setting from activity in a cancer cell.\n\nAcquired resistance can involve increased transport, but antigen loss, altered processing and other mechanisms must be assessed separately. Inhibiting a pump can change both tumour exposure and exposure in normal tissues. The unsuccessful clinical development of several P-glycoprotein inhibitors does not identify one universal reason for failure, and a resistant cell model does not itself select a treatment for a person.",
     analogy: "A nightclub bouncer who throws out anyone in a particular jacket. Sacking the bouncer (P-gp inhibitors) also emptied the club of the staff who kept the place safe (gut, brain, marrow). The fix was to change jackets: payloads the bouncer does not recognise.",
     nodes: [
       { id: "drug", label: "Chemo / payload enters", x: 12, y: 30 }, { id: "abcb1", label: "ABCB1 (P-gp)", x: 45, y: 15 }, { id: "abcg2", label: "ABCG2 (BCRP), ABCC1", x: 45, y: 48 },
@@ -1259,8 +1259,47 @@ export const mechanicsPathways: PathwayInput[] = [
     ],
     interventions: ["Payload selection: DXd and exatecan (T-DXd, Dato-DXd, sac-TMT) retain activity where MMAE and SN-38 are pumped out; PBD dimers and radionuclides are pump-independent", "Brain-penetrant TKIs engineered to evade P-gp (lorlatinib, tucatinib, osimertinib)", "P-gp inhibitors (valspodar, tariquidar, zosuquidar) failed in phase 3; a museum exhibit", "Collateral sensitivity and MDR-selective compounds are experimental"],
     targets: ["trop2", "her2", "kras", "alk"], drugs: ["trastuzumab-deruxtecan", "datopotamab-deruxtecan", "sacituzumab-tirumotecan", "sacituzumab-govitecan", "enfortumab-vedotin", "paclitaxel", "doxorubicin", "lorlatinib"], technologies: ["adc", "radioligand-therapy", "cytotoxic-chemotherapy", "topoisomerase-inhibitors"], terms: ["efflux-pump", "payload", "dxd", "exatecan", "sn-38", "mmae", "bystander-effect", "adc-sequencing", "resistance"], pathways: ["emt", "keap1-nrf2", "blood-brain-barrier-metastasis", "resistance-routes-map", "cancer-stem-cells-plasticity"], bottlenecks: ["b-resistance"],
-    links: [{ label: "Robey et al., Revisiting the role of ABC transporters in multidrug-resistant cancer (Nat Rev Cancer 2018)", url: "https://doi.org/10.1038/s41568-018-0005-8" }],
-  }),
+    links: [
+  {
+    "label": "Robey et al., Revisiting the role of ABC transporters in multidrug-resistant cancer (Nat Rev Cancer 2018)",
+    "url": "https://doi.org/10.1038/s41568-018-0005-8"
+  },
+  {
+    "label": "Rampa et al., payload diversification and sequential ADC therapy in breast cancer (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41591991/"
+  },
+  {
+    "label": "Chen et al., CD30 downregulation, MMAE resistance and MDR1 upregulation in brentuximab vedotin resistance (2015)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25840583/"
+  },
+  {
+    "label": "Weng et al., antibody-exatecan conjugates overcome resistance in colon and lung cancer models (2023)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36693125/"
+  },
+  {
+    "label": "Robey et al., revisiting the role of ABC transporters in multidrug-resistant cancer (2018)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29643473/"
+  },
+  {
+    "label": "Robey et al., mutations at amino-acid 482 in ABCG2 affect substrate and antagonist specificity (2003)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14612912/"
+  },
+  {
+    "label": "Zeng et al., methotrexate and folate transport by MRP3 and MRP1 (2001)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11585759/"
+  },
+  {
+    "label": "Zhou et al., Bcrp1 and relative mitoxantrone protection in mouse haematopoietic cells (2002)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12218177/"
+  }
+],
+
+"notes": [
+  "Which pump handles which drug, and on what evidence. ABCG2 confers resistance to SN-38 and topotecan: in HEK-293 cells made to express wild-type or mutant ABCG2, cytotoxicity assays showed high resistance to mitoxantrone, SN-38 and topotecan and no appreciable resistance to etoposide or taxol (Robey et al. 2003), while in SN-38-resistant breast and gastric cell lines ABCG2 inhibitors restored SN-38 toxicity (Chang et al. 2016, SN-38 only). For P-gp, a brentuximab vedotin-resistant Hodgkin lymphoma line showed MMAE resistance and MDR1 upregulation, and 1 of 10 Hodgkin lymphoma patient samples expressed MDR1 (Chen et al.). Robey and colleagues' 2018 review describes ABCC1-mediated resistance to doxorubicin, etoposide and vincristine, transport of glutathione and glucuronide conjugates, and protective transporters at the brain and placental barriers. Zeng and colleagues' 2001 transport study also demonstrated MRP1 transport of methotrexate and folates, with polyglutamylation strongly limiting methotrexate transport. These are cell-line and overexpression models, not measurements of a tumour, and these laboratory findings do not validate a pump assay for selecting clinical therapy; Robey et al. 2018 describe efforts to make MDR1 a therapeutic target as unsuccessful so far. Normal-tissue protection also has experimental support: Zhou and colleagues found greater mitoxantrone sensitivity in Bcrp1-deficient mouse haematopoietic cells than in wild-type cells, supporting a protective role in that model. Robey's review also describes gastrointestinal transport affecting oral availability. These normal-tissue roles should not be confused with a cancer-specific mechanism.",
+  "Antibody-drug conjugates meet pumps after delivery. Direct transport by an efflux pump concerns a released payload that is its substrate, rather than export of the intact antibody-drug conjugate during endocytosis; A neighbouring cell could likewise export a payload that entered it, but a reduced bystander effect is a mechanistic hypothesis here, not a demonstrated clinical result. The absence of this efflux mechanism does not prove that delivery, release or target action succeeded; other barriers can remain. In breast cancer cells made resistant to trastuzumab deruxtecan or sacituzumab govitecan, resistance was mainly payload-specific, notably more efflux-transporter activity rather than loss of antigen, and ADCs with microtubule-inhibitor payloads restored activity in cells and animals (Rampa et al.); exatecan conjugates with a traceless self-immolative linker moiety overcame resistance of DXd and SN-38 conjugates in multidrug-resistance-positive models (Weng et al.). A study could compare intact ADC and free payload on the same cells, with and without a pump inhibitor, to ask which delivery step is affected. That comparison would still need controls for the inhibitor's other effects."
+],
+"asOf": "2026-11-11"
+}),
   p({
     id: "lineage-plasticity-neuroendocrine", name: "Lineage plasticity & neuroendocrine transformation", wikipedia: W("Neuroendocrine_tumor"),
     tldr: "Under pressure from a drug that blocks its identity (the androgen receptor in prostate cancer, EGFR in lung cancer), a tumour can change what kind of cell it is, becoming a small-cell neuroendocrine cancer that no longer needs the blocked signal. It is the ultimate escape: not a new mutation in the engine, but a new engine.",

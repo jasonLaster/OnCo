@@ -226,7 +226,12 @@ export const cansimMethodsTerms: TermInput[] = [
     wikipedia: W("Mechanism_of_action"), cansim: "/terms/moa-recovery",
     tldr: "A model that claims to have learned biology should, without being told, point at the known mechanism of a known drug or the known marker of a known cell type; recovering such known biology is an orthogonal check that a correlation is not an artefact.",
     summary: "A drug's mechanism of action is the specific biochemical interaction through which it produces its effect, usually naming its molecular target (Wikipedia). For a drug-response or perturbation model, ranking the MEK pathway genes first for a MEK inhibitor, or HER2 and its amplicon for trastuzumab, is a probe that costs nothing and catches models that learned tissue or batch instead. The same logic underlies tertiary lymphoid structures as a probe for spatial models and responder-versus-non-responder framing as the application that matters.",
-    terms: ["virtual-cell-models", "tertiary-lymphoid-structures", "ablation-study"], pathways: ["ras-mapk"] }),
+    terms: ["virtual-cell-models", "tertiary-lymphoid-structures", "ablation-study"], pathways: ["ras-mapk"] ,
+"notes": [
+  "In the model-validation sense used in this record, recovering a known mechanism checks that a model has learned biology rather than an artefact; it does not show that the mechanism is clinically useful, and it is a different subject from the pharmacological meaning of a drug's mechanism of action."
+],
+"asOf": "2026-11-11"
+}),
 
   // ---- Statistics and evaluation ----
   t({ id: "cross-validation", name: "Cross-validation and stratified k-fold", category: M, aka: ["cross-validation", "cross validation", "k-fold cross-validation", "5-fold cross-validation", "stratified k-fold", "stratified cross-validation", "nested cross-validation", "random seed"],
@@ -382,7 +387,8 @@ export const cansimMethodsTerms: TermInput[] = [
 "notes": [
   "Fictional case scores are 0.9 and 0.6; non-case scores are 0.7 and 0.2. Three of four case/non-case pairs have the higher case score, giving AUC 0.75, also the area under the stepped ROC curve. Squaring these positive scores preserves their ordering and AUC while changing their numerical probability values. The example therefore separates ranking from calibration. Half-credit for tied scores is an explicit convention; an observed AUC is an estimate with uncertainty, not a personal prediction guarantee.",
   "Time-dependent AUC requires a named horizon, event-by-time cases, event-free controls and appropriate handling of incomplete follow-up. It is not interchangeable with a differently defined survival C-index. Evaluate locked predictions against reference outcomes on independent data, retain the estimator, uncertainty, case mix and censoring method, and examine relevant subgroups. Training-only performance and changed outcome definitions can mislead. Discrimination can change with population heterogeneity; it establishes neither calibrated risks, false-call consequences nor benefit from model-guided care.",
-  "ROC-AUC and precision-recall area summarize different features. In a thought experiment that changes prevalence while holding the case and non-case score distributions fixed, sensitivity and specificity at each threshold, and thus the ROC curve, stay fixed while precision changes. Actual population shifts can change those conditional distributions too, so ROC-AUC is not universally immune to case mix. A precision-recall curve can be informative for rare positive outcomes without being a universally superior summary for every task."
+  "ROC-AUC and precision-recall area summarize different features. In a thought experiment that changes prevalence while holding the case and non-case score distributions fixed, sensitivity and specificity at each threshold, and thus the ROC curve, stay fixed while precision changes. Actual population shifts can change those conditional distributions too, so ROC-AUC is not universally immune to case mix. A precision-recall curve can be informative for rare positive outcomes without being a universally superior summary for every task.",
+  "Not the pharmacokinetic AUC: in pharmacology 'AUC' also names the area under a drug concentration-time curve, a measure of exposure, which is unrelated to the area under a ROC or precision-recall curve (FDA clinical pharmacology labelling guidance lists AUC among exposure measures)."
 ],
 "asOf": "2026-11-11"
 }),

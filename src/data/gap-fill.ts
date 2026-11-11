@@ -1068,13 +1068,57 @@ export const gapTechnologies: TechnologyInput[] = [
     sections: ["supportive-care"], technologies: ["exercise-oncology", "psycho-oncology", "pain-management", "antiemetic-therapy"],
     links: [{ label: "SIO-ASCO pain guideline 2022", url: "https://doi.org/10.1200/JCO.22.01357" }, { label: "MSK About Herbs", url: "https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs" }, { label: "Alternative medicine and survival (JNCI 2018)", url: "https://doi.org/10.1093/jnci/djx145" }], tags: ["gap-fill", "supportive"], journals: ["integrative-cancer-therapies"] }),
   tech({ id: "antiemetic-therapy", name: "Antiemetics for chemotherapy-induced nausea and vomiting", status: "standard-of-care", since: 1991, wikipedia: W("Chemotherapy-induced_nausea_and_vomiting"),
-    tldr: "The drugs that stopped chemotherapy from meaning days of vomiting: 5-HT3 blockers (ondansetron, palonosetron), NK1 blockers (aprepitant), dexamethasone and olanzapine, given by the emetic risk of each regimen.",
-    summary: "Before 1991, cisplatin caused vomiting in nearly all patients; ondansetron (1991), granisetron, palonosetron (2003, long-acting), aprepitant (2003, NK1 antagonist), fosaprepitant, netupitant-palonosetron (2014), rolapitant and olanzapine (Navari, NEJM 2016) built the modern regimen. Guidelines (MASCC/ESMO, ASCO, NCCN) classify regimens as high (cisplatin, AC), moderate, low or minimal emetic risk and prescribe three- or four-drug prophylaxis for high risk (NK1 + 5-HT3 + dexamethasone ± olanzapine). Breakthrough, anticipatory and radiation-induced nausea have separate algorithms. CINV remains under-treated in ~30% of patients, particularly delayed nausea; dexamethasone-sparing and lower-dose olanzapine (5 mg) are recent refinements.",
+    tldr: "Antiemetic medicines prevent or treat nausea and vomiting. The preventive plan depends on the treatment's emetic risk and the person's circumstances.",
+    summary: "Antiemetic medicines are used to prevent or treat nausea and vomiting, which are separate outcomes. Options include serotonin 5-HT3 receptor antagonists, neurokinin-1 receptor antagonists, dexamethasone and olanzapine. The regimen-specific guidance from MASCC and ESMO and the NCI PDQ describes combinations chosen for the emetic risk of the anticancer treatment and the clinical setting. A list of drug classes does not determine an individual medicine schedule.\n\nAcute, delayed, anticipatory and breakthrough symptoms describe different timing or circumstances. Prevention differs from treatment of symptoms that have already appeared. Trials must state whether their endpoint is nausea, vomiting or a composite such as no vomiting and no rescue medication; meeting that composite does not establish that the person had no nausea.",
     principle: "Prophylaxis matched to emetogenic risk of the regimen and patient risk factors, blocking serotonin (acute), substance P/NK1 (delayed), and dopamine/multiple receptors (olanzapine), with corticosteroid.",
     strengths: ["Complete response in ~70-80% even with cisplatin", "Generic, oral, inexpensive options", "Consensus guidelines from three bodies"],
     limitations: ["Delayed and anticipatory nausea still common", "Guideline non-adherence (under- and over-prescribing)", "Olanzapine sedation; dexamethasone and immunotherapy interactions"],
     sections: ["supportive-care"], technologies: ["cytotoxic-chemotherapy", "integrative-oncology", "epro-symptom-monitoring"], drugs: ["cisplatin", "carboplatin", "doxorubicin", "rolapitant"],
-    links: [{ label: "MASCC/ESMO antiemetic guideline", url: "https://mascc.org/resources/antiemetic-guidelines/" }, { label: "Olanzapine (NEJM 2016)", url: "https://doi.org/10.1056/NEJMoa1515725" }], tags: ["gap-fill", "supportive"] }),
+    links: [
+  {
+    "label": "Patient education sheet (ONS, NCODA, HOPA and ACCC): Understanding Nausea and Vomiting During Cancer Treatment",
+    "url": "https://ncoda.org/pes/understanding-and-managing-treatment-related-nausea-and-vomiting/"
+  },
+  {
+    "label": "NCI PDQ for patients: Nausea and Vomiting",
+    "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/nausea-vomiting"
+  },
+  {
+    "label": "NCCN Guidelines for Patients: Nausea and Vomiting",
+    "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=28"
+  },
+  {
+    "label": "MASCC/ESMO antiemetic guideline",
+    "url": "https://mascc.org/resources/antiemetic-guidelines/"
+  },
+  {
+    "label": "Olanzapine (NEJM 2016)",
+    "url": "https://doi.org/10.1056/NEJMoa1515725"
+  },
+  {
+    "label": "Navari et al., olanzapine for the prevention of chemotherapy-induced nausea and vomiting (2016)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27410922/"
+  },
+  {
+    "label": "Hesketh et al., neurotransmitters through the time course of cisplatin-induced emesis (2003)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12736106/"
+  },
+  {
+    "label": "Herrstedt et al., 2023 MASCC and ESMO antiemetic guideline update (2024)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38458657/"
+  },
+  {
+    "label": "NCI PDQ: nausea and vomiting related to cancer treatment (health professional)",
+    "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/nausea/nausea-hp-pdq"
+  }
+], tags: ["gap-fill", "supportive"] ,
+"notes": [
+  "Nausea and vomiting are different outcomes. Nausea is the sensation and vomiting the expulsion; they often occur together but one can occur without the other. Serotonin acting at 5-HT3 receptors and substance P acting at NK1 receptors contribute with other transmitters, and in two phase II cisplatin studies serotonin appeared to dominate early vomiting and substance P the later phase, with overlap (Hesketh et al.), so acute and delayed are reporting windows and not sealed pathways. The NCI PDQ classes are acute (the first 24 hours after chemotherapy), delayed, anticipatory, breakthrough, refractory and chronic; anticipatory nausea was reported in about 29 per cent of patients and anticipatory vomiting in 11 per cent, with prevalence varying with definitions and methods. It lists other causes too, such as fluid and electrolyte imbalance including hypercalcaemia or volume depletion, and tells clinicians to consider all potential causes when people receive several treatments, so new nausea needs a cause assessment.",
+  "Reading antiemetic trials. In Navari et al. (380 evaluable chemotherapy-naive adults given cisplatin at 70 mg per square metre or more, or cyclophosphamide-doxorubicin, all with dexamethasone, an NK1 antagonist and a 5-HT3 antagonist), nausea prevention was the primary endpoint and complete response (no emesis and no rescue medication) a secondary one. No nausea in the first 24 hours was 74 per cent with olanzapine against 45 per cent with placebo, while complete response was 86 per cent against 65 per cent, so a complete response does not mean no nausea, and a person with no vomiting can still have persistent nausea. MASCC and ESMO updated their regimen-specific guideline in 2023 (Herrstedt et al., published 2024). Read patient-reported nausea severity, vomiting episodes, rescue-medication use and the observation window together with the preventive regimen and adherence; symptoms that limit drinking or eating warrant prompt contact with the care team. This describes how to read endpoints, not a medicine schedule.",
+  "Gut-to-brain nerve signalling, blood-borne inputs and learned associations can contribute, so one blocked route does not account for every symptom. The timing terms organise observations. Acute commonly refers to the first 24 hours, delayed to symptoms beyond 24 hours, anticipatory to symptoms before treatment associated with previous experiences, and breakthrough to symptoms despite prevention. Learned symptoms are real; delayed does not mean mild, and early and later responses can overlap with multiday treatment. Prevention and treatment of symptoms that have appeared are different questions. In a fictional trial, no vomiting and no rescue medicine can meet its complete-response endpoint while the participant still reports nausea. Relief of either symptom does not measure tumour response."
+],
+"asOf": "2026-11-11"
+}),
   tech({ id: "bone-modifying-agents", companies: ["outperform-cancer"], name: "Bone-modifying agents (bisphosphonates, denosumab)", status: "standard-of-care", since: 1995, wikipedia: W("Bisphosphonate"),
     tldr: "Zoledronic acid and denosumab reduce fractures, spinal cord compression and bone pain from bone metastases and myeloma, prevent treatment-induced bone loss, and in postmenopausal breast cancer modestly reduce recurrence in bone.",
     summary: "Pamidronate (1995, myeloma) and zoledronic acid (2002) reduce skeletal-related events by ~30-40%; denosumab (anti-RANKL, 2010) is superior to zoledronic acid for delaying SREs in solid tumours and non-inferior in myeloma, without renal dosing. Adjuvant bisphosphonates reduce bone recurrence and breast cancer mortality in postmenopausal women (EBCTCG 2015 meta-analysis: 3.3% absolute mortality reduction) and are guideline-recommended; denosumab did not improve disease outcomes adjuvantly (D-CARE). De-escalated dosing (12-weekly zoledronic acid, CALGB 70604) is standard. Osteonecrosis of the jaw (1-2%; dental review), hypocalcaemia, atypical femoral fractures and rebound vertebral fractures after stopping denosumab are the key harms. Also used for hypercalcaemia of malignancy and cancer-treatment-induced bone loss (aromatase inhibitors, ADT).",
@@ -1084,13 +1128,40 @@ export const gapTechnologies: TechnologyInput[] = [
     sections: ["supportive-care", "rejuvenation"], technologies: ["pain-management", "palliative-radiotherapy", "survivorship-care-plan", "cancer-treatment-bone-loss"], cancers: ["multiple-myeloma", "breast-hr-positive", "prostate", "nsclc", "rcc"], drugs: ["radium-223"],
     links: [{ label: "EBCTCG adjuvant bisphosphonates (Lancet 2015)", url: "https://doi.org/10.1016/S0140-6736(15)60908-4" }, { label: "ASCO bone-modifying agents guideline", url: "https://doi.org/10.1200/JCO.2017.75.4614" }], tags: ["gap-fill", "supportive"] }),
   tech({ id: "g-csf-growth-factors", companies: ["eurofarma"], name: "Growth factors: G-CSF and febrile neutropenia prevention", status: "standard-of-care", since: 1991, wikipedia: W("Filgrastim"),
-    tldr: "Injections of filgrastim or its long-acting form pegfilgrastim after chemotherapy make white cells recover faster, cutting the risk of life-threatening infections and allowing chemotherapy on schedule.",
-    summary: "Filgrastim (1991) and pegfilgrastim (2002) reduce febrile neutropenia incidence by ~50% and infection-related mortality; guidelines (ASCO, EORTC, NCCN) recommend primary prophylaxis when regimen risk of febrile neutropenia is >20% or 10-20% with patient risk factors, and secondary prophylaxis after an episode. Biosimilars (since 2015 in the US) cut cost; on-body injectors and same-day dosing trials address logistics. Efbemalenograstim and eflapegrastim (2022) are newer long-acting forms; trilaciclib (CDK4/6 inhibitor, 2021) protects marrow in SCLC; plinabulin failed. Febrile neutropenia itself is managed by risk score (MASCC, CISNE) with outpatient oral antibiotics for low risk. G-CSF also mobilises stem cells (with plerixafor) and is contraindicated during concurrent chemoradiation to the chest.",
+    tldr: "Granulocyte colony-stimulating factor medicines support neutrophil production and recovery. Their use depends on the treatment regimen, infection risk and individual clinical context.",
+    summary: "Granulocyte colony-stimulating factor medicines support neutrophil production in selected clinical settings. They have a different job from the treatment directed at the cancer. Filgrastim acts through receptors on relevant blood-forming cells; it does not replace all missing blood-cell types or create immediate general immunity.\n\nThe 2026 ASCO update supports primary prophylaxis when a chemotherapy regimen's febrile-neutropenia risk is approximately 20% or higher and no equally effective and safe alternative not requiring it is available. Below 20%, age, history or disease characteristics can still justify prophylaxis. Those recommendations require the named regimen and individual clinical context; they do not make every low neutrophil count an indication for treatment. Product, schedule, monitoring and management of fever belong to the care team's plan.",
     principle: "Recombinant granulocyte colony-stimulating factor accelerates neutrophil precursor proliferation and release, shortening the neutropenic nadir after myelosuppressive chemotherapy.",
     strengths: ["Halves febrile neutropenia; maintains dose intensity", "Biosimilars widely available", "Enables dose-dense regimens (e.g. every-2-week AC-T)"],
-    limitations: ["Bone pain in ~30%", "Cost drove over- and under-use", "Rare splenic rupture; theoretical MDS/AML risk debated"],
+    limitations: [
+  "Bone pain is a recognised adverse reaction; its rate depends on the product and setting.",
+  "Cost and access can affect delivery of supportive care.",
+  "Serious filgrastim label warnings include splenic rupture and acute respiratory distress syndrome; the label also addresses monitoring for myelodysplastic syndrome or acute myeloid leukaemia in people with breast or lung cancer receiving chemotherapy and/or radiotherapy."
+],
     sections: ["supportive-care"], technologies: ["cytotoxic-chemotherapy", "autologous-stem-cell-transplant", "transfusion-support"], terms: ["biosimilar"],
-    links: [{ label: "ASCO WBC growth factors guideline 2015", url: "https://doi.org/10.1200/JCO.2015.62.3488" }, { label: "MASCC febrile neutropenia risk index", url: "https://mascc.org/resources/mascc-risk-index-score/" }], tags: ["gap-fill", "supportive"], drugs: ["efbemalenograstim-alfa", "lipegfilgrastim"] }),
+    links: [
+  {
+    "label": "ASCO WBC growth factors guideline 2015",
+    "url": "https://doi.org/10.1200/JCO.2015.62.3488"
+  },
+  {
+    "label": "MASCC febrile neutropenia risk index",
+    "url": "https://mascc.org/resources/mascc-risk-index-score/"
+  },
+  {
+    "label": "Gyawali et al., WBC growth factors: ASCO guideline update (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41740078/"
+  },
+  {
+    "label": "Gyawali et al., WBC growth factors ASCO guideline update, authors' slide set (University of Pretoria repository)",
+    "url": "https://repository.up.ac.za/server/api/core/bitstreams/8e7e91e8-bf52-4137-ac8d-b811e775a306/content"
+  }
+], tags: ["gap-fill", "supportive"], drugs: ["efbemalenograstim-alfa", "lipegfilgrastim"] ,
+"notes": [
+  "What the 2026 ASCO update says. Prophylactic colony-stimulating factors to reduce febrile neutropenia are warranted when the chemotherapy regimen's risk is approximately 20 per cent or higher and no equally effective and safe regimen without them exists, and may be warranted below 20 per cent when age, medical history or disease characteristics put a patient at high risk; it also covers stem-cell mobilisation with plerixafor or motixafortide and newer products and biosimilars (Gyawali et al., abstract; systematic review of 33 randomised trials and 16 systematic reviews searched to August 2025). The authors' slide set gives the population as adults with solid tumours or hematologic malignancies treated with systemic antineoplastic therapy, where the JCO abstract says adults with cancer, and neither covers children. The recommendations depend on regimen and individual risk; they do not make every low count an indication for a growth factor.",
+  "What the drug does and what it does not. Colony-stimulating factors act on haematopoietic cells by binding specific cell-surface receptors and stimulating proliferation, differentiation commitment and some end-cell functional activation; endogenous G-CSF is lineage specific and regulates neutrophil production in the marrow (filgrastim prescribing information). It supports neutrophil recovery and does not supply a complete immune system, boost antitumour immunity or replace other blood cells. Bone pain is a labelled adverse reaction; its frequency belongs to the particular study population and regimen. The label also warns about uncommon serious harms, including splenic rupture and acute respiratory distress syndrome, and reports MDS or AML in patients with breast or lung cancer receiving chemotherapy and/or radiation. These warnings do not supply an individual probability. Supportive-care benefit, such as a better count or fewer infections, is not tumour response. Shorter- and longer-acting preparations have product-specific delivery and monitoring requirements; a class name does not select a product, amount or schedule."
+],
+"asOf": "2026-11-11"
+}),
   tech({ id: "transfusion-support", name: "Transfusion support and anaemia management", status: "standard-of-care", wikipedia: W("Blood_transfusion"),
     tldr: "Red cell and platelet transfusions, iron and erythropoiesis-stimulating agents keep patients safe through chemotherapy and marrow failure; restrictive thresholds and ESA caution reflect trials showing more is not better.",
     summary: "Chemotherapy-induced anaemia affects most patients on myelosuppressive regimens; MDS and leukaemia patients are often transfusion-dependent. Evidence supports restrictive red cell thresholds (7-8 g/dL in stable patients; TRIST, Hb 7 vs 9 in haematologic malignancy) and prophylactic platelet transfusion at 10×10⁹/L (TOPPS showed prophylaxis still helps in most). ESAs (epoetin, darbepoetin) reduce transfusions but increased thromboembolism and mortality in several trials when Hb targets were high, so labels restrict them to palliative chemotherapy with Hb <10 g/dL (2007-08 FDA/EMA actions). IV iron improves ESA response and treats functional iron deficiency. Transfusional iron overload in MDS is treated with chelation (TELESTO). Newer agents: luspatercept and imetelstat (MDS), romiplostim/eltrombopag for chemotherapy-induced thrombocytopenia (off-label; avatrombopag trials), and thrombopoietin agonists after transplant. Blood supply and cost are limiting worldwide; pathogen-reduced platelets and cold-stored platelets are being adopted.",

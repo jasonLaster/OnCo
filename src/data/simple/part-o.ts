@@ -240,7 +240,7 @@ export const simpleO: Record<string, string> = {
   haematocrit: "Haematocrit is the share of the blood made up of red cells, and in polycythaemia vera treatment aims to keep it under 45 percent because clots become far more likely above that.",
   "jak2-v617f": "JAK2 V617F is a single letter change in the JAK2 gene that jams the growth signal for blood cells in the on position, and almost everyone with polycythaemia vera has it.",
   "organs-at-risk": "Organs at risk are the healthy organs near a tumour that limit how much radiation can be given, each with a dose limit that the treatment plan must respect.",
-  "small-molecule": "A small molecule drug is a chemically made medicine small enough to slip inside cells, which is why it can usually be taken as a tablet.",
+  "small-molecule": "Some small-molecule medicines can reach targets inside cells. Small size alone does not prove entry, oral absorption, selectivity or safety.",
   // phase 3 trials with a result
   "act-ii": "ACT II, the largest anal cancer trial, confirmed mitomycin with fluorouracil and radiotherapy as the standard, and found that swapping in cisplatin or adding extra chemotherapy gave nothing.",
   "alliance-n0574": "In people with a few brain metastases, adding whole-brain radiotherapy to radiosurgery harmed memory and thinking without lengthening life, so radiosurgery alone became the standard.",

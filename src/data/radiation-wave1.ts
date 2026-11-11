@@ -229,7 +229,33 @@ export const radiationTerms: TermInput[] = [
   tm({ id: "radiation-pneumonitis", name: "Radiation pneumonitis and lung fibrosis", category: "Side effects", wikipedia: W("Radiation_pneumonitis"),
     tldr: "Inflammation of the lung one to six months after chest radiotherapy, causing cough, breathlessness and fever; usually settles with steroids but can leave permanent scarring.",
     summary: "Radiation pneumonitis follows treatment of lung, oesophageal, breast and lymphoma targets and depends on the volume of lung receiving moderate doses (the V20 and mean lung dose constraints exist to limit it), on chemotherapy and immunotherapy given alongside, and on pre-existing lung disease. Symptomatic pneumonitis is treated with a tapering course of corticosteroids; the late phase is fibrosis of the treated lung, which is permanent. Immunotherapy after chemoradiation (PACIFIC) raised pneumonitis rates and is now a routine consideration.",
-    technologies: ["radioprotectors", "imrt-igrt", "proton-therapy"], cancers: ["nsclc", "sclc", "esophageal"], links: [{ label: "Wikipedia", url: W("Radiation_pneumonitis") }] }),
+    technologies: ["radioprotectors", "imrt-igrt", "proton-therapy"], cancers: ["nsclc", "sclc", "esophageal"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Radiation_pneumonitis"
+  },
+  {
+    "label": "Cancer Research UK: coping with breathlessness when you have lung cancer",
+    "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/living-with/coping-with-breathlessness"
+  },
+  {
+    "label": "NICE NG122: lung cancer, management",
+    "url": "https://www.nice.org.uk/guidance/ng122/chapter/Management"
+  },
+  {
+    "label": "Macmillan: durvalumab (Imfinzi)",
+    "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/durvalumab"
+  },
+  {
+    "label": "Trastuzumab emtansine prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+  }
+] ,
+"notes": [
+  "Overlap with drug lung injury: radiation pneumonitis is inflammation inside the radiation field, and it can coexist with drug-induced ILD, so attribution needs the treatment timeline. The trastuzumab emtansine label sets a separate rule for radiation pneumonitis in the adjuvant setting (permanent discontinuation for grade 3 or higher, or grade 2 not responding to standard treatment) and reports it in 1.8 per cent (11 of 623) of patients given adjuvant radiotherapy with that drug, two of them grade 3."
+],
+"asOf": "2026-11-11"
+}),
   tm({ id: "radiation-necrosis", related: ["floretyrosine-f18"], name: "Radiation necrosis (brain)", category: "Side effects", wikipedia: W("Radiation_necrosis"),
     tldr: "Death of brain tissue months to years after radiosurgery or high-dose brain radiotherapy, which can look exactly like tumour growing back on a scan.",
     summary: "Radiation necrosis affects a minority of patients after stereotactic radiosurgery to brain metastases and after high-dose treatment of gliomas, more often with larger volumes and with concurrent immunotherapy or targeted drugs. It causes swelling and symptoms that mimic progression; perfusion MRI, amino-acid PET and sometimes biopsy separate the two. Treatment is steroids, bevacizumab for refractory cases, and occasionally surgery or laser ablation.",

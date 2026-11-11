@@ -2,7 +2,7 @@ import type { TermInput } from "@/lib/schema";
 
 /** Drug-class pages for the modality headers of the pivot table and elsewhere. */
 const asOf = "2026-09-17";
-type T = Omit<TermInput, "kind" | "asOf" | "links"> & { wikipedia?: string };
+type T = Omit<TermInput, "kind" | "asOf" | "links"> & { wikipedia?: string; asOf?: string; links?: TermInput["links"] };
 const t = (x: T): TermInput => ({ kind: "term", asOf, links: x.wikipedia ? [{ label: "Wikipedia", url: x.wikipedia }] : undefined, ...x });
 
 export const termsModalities: TermInput[] = [
@@ -10,13 +10,32 @@ export const termsModalities: TermInput[] = [
     id: "small-molecule", name: "Small molecule drug", category: "Treatment jargon",
     aka: ["small molecule", "small molecules", "small-molecule inhibitor", "small-molecule drug", "oral targeted drug", "chemical drug"],
     wikipedia: "https://en.wikipedia.org/wiki/Small_molecule",
-    tldr: "A small molecule drug is a chemically made medicine small enough to slip inside cells, so it can usually be taken as a tablet.",
-    summary: "A small molecule is a drug built by chemical synthesis rather than grown in living cells. Its molecules are hundreds of times lighter than an antibody, which lets them cross cell membranes and reach targets inside the cell, such as kinases, DNA repair enzymes and survival proteins. Most kinase inhibitors, PARP inhibitors, BCL2 inhibitors and hormone blockers are small molecules, and so is almost every classic chemotherapy drug.\n\nBecause they are stable and absorbed from the gut, small molecules are usually tablets or capsules taken at home, which is why so much of modern targeted therapy is oral. The trade-offs are the flip side of the same chemistry: they are cleared by liver enzymes, so food and other medicines can change their levels; they can bind related proteins and cause off-target side effects; and a single mutation in the target can stop them binding, which is a common route to resistance.\n\nThe other big class is biologics: antibodies, antibody-drug conjugates, bispecifics and cell therapies. These are made in cells, given by infusion or injection, and act mainly on targets at the cell surface or in the blood. Many treatment plans combine both, for example a small-molecule inhibitor with an antibody, or chemotherapy with a checkpoint inhibitor. The rule-of-thumb properties that predict whether a small molecule will be absorbed by mouth were set out by Lipinski and by Veber, and still guide drug design.",
+    tldr: "Small-molecule medicines can act on intracellular targets, but size alone does not establish cell entry, oral absorption, selectivity or safety.",
+    summary: "Many small-molecule medicines can reach targets inside cells, such as kinases and DNA-repair enzymes. Their actual entry, distribution, unbound concentration, metabolism and export depend on the compound and the system. Some are taken by mouth and others are administered by injection; formulation and clinical pharmacology must be checked for the named product.\n\nThe National Cancer Institute distinguishes small-molecule and antibody-based targeted therapies and describes several different mechanisms. A treatment can act on more than one protein, and a target alteration can affect activity or resistance. A chemically defined molecule is not automatically selective, orally available or a useful research probe. Probe fitness, target engagement, functional consequences and clinical benefit require different evidence.",
     technologies: ["kinase-inhibitors", "protac-degrader", "peptide-drug-conjugate", "cytotoxic-chemotherapy"],
     drugs: ["imatinib", "osimertinib", "olaparib", "venetoclax"],
     terms: ["antibody", "monoclonal", "targeted-therapy-term"],
     keyPapers: ["paper-veber-oral-bioavailability-jmedchem-2002"],
-  }),
+
+"notes": [
+  "Small molecules are also the usual research tools for asking what a protein does, and a compound that is good for that question is a chemical probe, not necessarily a medicine; a probe is judged by potency, selectivity and controls, and a medicine also needs evidence in people about product quality, exposure, tolerability and benefit."
+],
+"asOf": "2026-11-11",
+"related": [
+  "chemical-probe"
+]
+,
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Small_molecule"
+  },
+  {
+    "label": "NCI: targeted cancer therapies, small-molecule and antibody mechanisms",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/targeted-therapies"
+  }
+]
+}),
   t({
     id: "vaccines-and-oncolytic-viruses", name: "Cancer vaccines and oncolytic viruses", category: "Immunology",
     aka: ["therapeutic cancer vaccine", "cancer vaccine", "cancer vaccines", "oncolytic virus therapy", "vaccine or oncolytic", "tumour vaccine"],

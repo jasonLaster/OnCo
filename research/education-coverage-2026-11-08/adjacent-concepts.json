@@ -1583,25 +1583,130 @@
     ],
     "review": {
       "status": "reviewed",
-      "auditor": "Coordinator intake; not expert sign-off",
-      "checkedAt": "2026-11-10",
-      "rationale": "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison.",
+      "auditor": "GPT-6.1 Sol coordinator; semantic and source assessment at stated primary/inference scope, not blind, expert, learner or language acceptance",
+      "checkedAt": "2026-11-11",
+      "rationale": "A dedicated registered insertional-mutagenesis owner now separates integration, functional consequences, clonal expansion and malignancy with named settings and measurement limits.",
       "points": [
         {
-          "id": "scope",
-          "requirement": "Define insertional mutagenesis separately from insertion itself; assess genetic disruption, clonality and long-term observations in a named product and cell population.",
-          "status": "partial",
+          "id": "IND-131",
+          "requirement": "Insertional mutagenesis = integration that disrupts a gene or its regulation with consequence; integration is the event; most insertions do not cause cancer; clonal expansion != malignancy (useful responses expand clones).",
+          "status": "covered-draft",
+          "remaining": [],
           "evidence": [
             {
-              "recordId": "lentiviral-vector",
-              "version": "proposal-rna-delivery",
-              "field": "notes",
-              "fieldSha256": "81e9bd6b0510b1305cb12942ce01d4d4367348aa2da8021e7e223a97657d16c2",
-              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "Some gene delivery systems, including the viral vectors used to make engineered T cells and to correct inherited immune disorders in blood stem cells, insert a genetic cassette into the cell's genome. Integration is the event; insertional mutagenesis is a consequential change that the event causes, such as interrupting a gene or altering the activity of a nearby one. Integration alone does not establish a harmful biological consequence. A cell that gains a growth advantage passes the insertion to its descendants and a clone expands, but a growing clone is not a diagnosis of cancer, because a useful therapeutic response can also expand a clone. FDA's long-term follow-up guidance for gene therapy (January 2020) explains why the question is taken seriously: the biological activity of retroviral vectors and transposon elements is imparted by an integration event, such integration is in general not directed to specific sites, and that raises the potential for disruption of critical host genes or activation of proto-oncogenes near the site, and so the risk of malignancy. A nonviral transposon is therefore also an integrating system, and genome editing can produce its own undesirable changes with a risk of malignancy, which is a separate mechanism from vector insertion.",
+              "passageSha256": "6c6f0a6bbd504d9504ab01756d9e9f4ffc1d76a93fc54a00b9d92d93bf8e7af7"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "Three primary reports show why the setting matters. After retrovirus-mediated gamma-c gene transfer into autologous CD34-positive bone marrow cells for X-linked severe combined immunodeficiency, 9 of 10 patients were corrected, but almost three years later the two youngest developed uncontrolled clonal proliferation of mature T cells; both clones carried vector integration near the LMO2 proto-oncogene promoter with abnormal LMO2 expression, which the authors attributed most likely to retrovirus enhancer activity (Hacein-Bey-Abina et al., 2003). In a patient with chronic lymphocytic leukaemia given CD19 CAR T cells, 94 per cent of CAR T cells at the peak of response came from one clone in which lentiviral insertion had disrupted TET2, the patient's second TET2 allele carried a hypomorphic mutation, and the clone showed a central memory phenotype alongside complete remission: an expanded clone linked to benefit, not a new cancer (Fraietta et al., 2018). In 724 patients treated with T-cell therapies at one centre, a lethal T-cell lymphoma followed axicabtagene ciloleucel for diffuse large B-cell lymphoma; the tumour, the CAR T cells and the patient's normal blood cells were profiled in depth, both lymphomas were Epstein-Barr virus positive and linked to DNMT3A and TET2 mutant clonal haematopoiesis, and no evidence of oncogenic retroviral integration was found with multiple techniques (Hamilton et al., 2024). The first is a specific stem-cell regimen and the others are single-centre or single-patient observations, so none is an incidence estimate for a vector or product.",
+              "passageSha256": "55b7fac1da5c380ab920f58e967e33e825e13dce143be8872cfb07158d366423"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "To attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+              "passageSha256": "0bea204693bd46b47534cfa372f2b682e42664c399de04cc52b884e40af5f27c"
             }
-          ],
-          "remaining": [
-            "The new vector notes teach several basics; generic ownership, mutation versus transformation and longitudinal interpretation still need a complete source-backed comparison."
+          ]
+        },
+        {
+          "id": "IND-134",
+          "requirement": "Attribution of post-treatment malignancy needs: sequence in malignant cells, integration sites, relevant gene effects, earlier clones, prior therapy/underlying disease/pre-existing changes; Hamilton 2024 deeply investigated secondary T-cell lymphoma lacked oncogenic vector integration.",
+          "status": "covered-draft",
+          "remaining": [],
+          "evidence": [
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "Some gene delivery systems, including the viral vectors used to make engineered T cells and to correct inherited immune disorders in blood stem cells, insert a genetic cassette into the cell's genome. Integration is the event; insertional mutagenesis is a consequential change that the event causes, such as interrupting a gene or altering the activity of a nearby one. Integration alone does not establish a harmful biological consequence. A cell that gains a growth advantage passes the insertion to its descendants and a clone expands, but a growing clone is not a diagnosis of cancer, because a useful therapeutic response can also expand a clone. FDA's long-term follow-up guidance for gene therapy (January 2020) explains why the question is taken seriously: the biological activity of retroviral vectors and transposon elements is imparted by an integration event, such integration is in general not directed to specific sites, and that raises the potential for disruption of critical host genes or activation of proto-oncogenes near the site, and so the risk of malignancy. A nonviral transposon is therefore also an integrating system, and genome editing can produce its own undesirable changes with a risk of malignancy, which is a separate mechanism from vector insertion.",
+              "passageSha256": "6c6f0a6bbd504d9504ab01756d9e9f4ffc1d76a93fc54a00b9d92d93bf8e7af7"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "Three primary reports show why the setting matters. After retrovirus-mediated gamma-c gene transfer into autologous CD34-positive bone marrow cells for X-linked severe combined immunodeficiency, 9 of 10 patients were corrected, but almost three years later the two youngest developed uncontrolled clonal proliferation of mature T cells; both clones carried vector integration near the LMO2 proto-oncogene promoter with abnormal LMO2 expression, which the authors attributed most likely to retrovirus enhancer activity (Hacein-Bey-Abina et al., 2003). In a patient with chronic lymphocytic leukaemia given CD19 CAR T cells, 94 per cent of CAR T cells at the peak of response came from one clone in which lentiviral insertion had disrupted TET2, the patient's second TET2 allele carried a hypomorphic mutation, and the clone showed a central memory phenotype alongside complete remission: an expanded clone linked to benefit, not a new cancer (Fraietta et al., 2018). In 724 patients treated with T-cell therapies at one centre, a lethal T-cell lymphoma followed axicabtagene ciloleucel for diffuse large B-cell lymphoma; the tumour, the CAR T cells and the patient's normal blood cells were profiled in depth, both lymphomas were Epstein-Barr virus positive and linked to DNMT3A and TET2 mutant clonal haematopoiesis, and no evidence of oncogenic retroviral integration was found with multiple techniques (Hamilton et al., 2024). The first is a specific stem-cell regimen and the others are single-centre or single-patient observations, so none is an incidence estimate for a vector or product.",
+              "passageSha256": "55b7fac1da5c380ab920f58e967e33e825e13dce143be8872cfb07158d366423"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Integration, gene dysregulation, clonal expansion and malignancy are separated using LMO2, TET2 and the Hamilton case at their own scopes.",
+              "supportingExcerpt": "To attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+              "passageSha256": "0bea204693bd46b47534cfa372f2b682e42664c399de04cc52b884e40af5f27c"
+            }
+          ]
+        },
+        {
+          "id": "IND-137",
+          "requirement": "Integration-site sequencing, vector copy per cell, flow cytometry, expression, pathology; sample consumed; clone frequency depends on sampling/assay/time; blood may not represent tissue; average copies do not locate insertions; no universal threshold; viral vs nonviral alone cannot rank safety.",
+          "status": "covered-draft",
+          "remaining": [],
+          "evidence": [
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
+              "supportingExcerpt": "To attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+              "passageSha256": "0bea204693bd46b47534cfa372f2b682e42664c399de04cc52b884e40af5f27c"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "notes",
+              "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+              "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
+              "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
+              "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
+            }
+          ]
+        },
+        {
+          "id": "IND-138",
+          "requirement": "Clone becoming more common without malignancy does not prove insertional cancer; growth pattern, diagnosis, mechanism are separate claims.",
+          "status": "covered-draft",
+          "remaining": [],
+          "evidence": [
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+              "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
+              "supportingExcerpt": "To attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+              "passageSha256": "0bea204693bd46b47534cfa372f2b682e42664c399de04cc52b884e40af5f27c"
+            },
+            {
+              "recordId": "insertional-mutagenesis",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "notes",
+              "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+              "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
+              "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
+              "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
+            }
           ]
         }
       ]
@@ -1620,24 +1725,53 @@
     "review": {
       "status": "reviewed",
       "auditor": "Coordinator intake; not expert sign-off",
-      "checkedAt": "2026-11-10",
-      "rationale": "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source.",
+      "checkedAt": "2026-11-11",
+      "rationale": "Canonical census and review support a generic on-target/off-tumour record distinct from lymphoma lineage costs. Its definition and the therapeutic-index lead are corrected; broader older lineage and class assertions are not all re-verified.",
       "points": [
         {
           "id": "scope",
-          "requirement": "Use the existing therapeutic-index and lineage-antigen owners for on-target/off-tumour definitions; verify their broad dose, chemotherapy and ADC class statements before adopting them.",
+          "requirement": "Use a canonical generic on-target/off-tumour definition and distinct lineage-context owner; verify broader blanket class claims separately.",
           "status": "partial",
           "evidence": [
             {
-              "recordId": "delivery-target-versus-therapeutic-target",
-              "version": "draft-373",
+              "recordId": "on-target-off-tumour-toxicity",
+              "version": "proposal-pharmacology-toxicity-root",
               "field": "summary",
-              "fieldSha256": "84dc2615007600fe4e80276e9e9c2e6da9a65f1b4be7da8db7d6209be8622c2c",
-              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              "fieldSha256": "20be93053613aa5fa4593118a4f654a49aa7d78cdc5b5f2bb8dd84a4317140ed",
+              "explanation": "Intended-target recognition in healthy tissue differs from unintended peptide recognition, CRS and binding specificity; the two cases and complementary tests retain their limits.",
+              "supportingExcerpt": "On-target, off-tumour toxicity is injury from recognition of the intended target on healthy tissue. It differs from recognition of an unintended molecular target. The predictable, lymphoma-specific consequences of aiming at lineage antigens (B-cell aplasia, low immunoglobulin, and the effects of CD52, CCR4 and CD47 targeting) are described in the record on the cost of aiming at a lineage antigen, which this record does not repeat.",
+              "passageSha256": "500d9b7205c6d89de61734c98de57b5bccb0f97da2d76a31542e616f512b44be"
+            },
+            {
+              "recordId": "on-target-off-tumour-toxicity",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "20be93053613aa5fa4593118a4f654a49aa7d78cdc5b5f2bb8dd84a4317140ed",
+              "explanation": "Intended-target recognition in healthy tissue differs from unintended peptide recognition, CRS and binding specificity; the two cases and complementary tests retain their limits.",
+              "supportingExcerpt": "Many candidate cancer targets are normal proteins found at different levels or places in the body, so tumour-associated does not mean tumour-exclusive. A treatment that recognises its intended target wherever it is accessible, such as a chimeric antigen receptor (CAR) T cell, can harm any healthy tissue that displays it, and tissue location, target density, receptor properties and exposure all shape the outcome. This differs from off-target cross-reactivity, in which the receptor recognises an unintended molecule, and from cytokine release syndrome, which is systemic inflammatory activation; the three can occur together. It also differs from payload toxicity in an antibody-drug conjugate: a pooled analysis of ADC trials found the key grade 3 to 4 toxicities grouped by payload and concluded they were likely off-target and related to the payload (Masters et al., 2018). Binding specificity is not tissue selectivity, and experience with an antibody against a target does not automatically carry over to a living cell with a different recognition and signalling system.",
+              "passageSha256": "4fbb0b6ac5aabd14a211fcdd5adb284e3ec0ea3181a9e91f8e1a5c71f53ff48b"
+            },
+            {
+              "recordId": "on-target-off-tumour-toxicity",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "20be93053613aa5fa4593118a4f654a49aa7d78cdc5b5f2bb8dd84a4317140ed",
+              "explanation": "Intended-target recognition in healthy tissue differs from unintended peptide recognition, CRS and binding specificity; the two cases and complementary tests retain their limits.",
+              "supportingExcerpt": "Two primary reports show the contrast. A patient with colon cancer metastatic to the lungs and liver received 10 billion autologous T cells expressing a trastuzumab-based CAR against ERBB2 (HER2), the largest number permitted in the first dose-escalation cohort, the day after a lymphodepleting regimen of cyclophosphamide (60 mg/kg daily for 2 days) and fludarabine (25 mg/m2 for 5 days). Within 15 minutes the patient had respiratory distress, chest imaging showed pulmonary oedema, and the patient died 5 days after treatment, with marked rises in interferon-gamma, GM-CSF, tumour necrosis factor-alpha, interleukin-6 and interleukin-10. At autopsy multiple organs showed systemic ischaemia and haemorrhagic microangiopathic injury and the lungs diffuse alveolar damage; histological examination of autopsy tissue found ERBB2 at 3+ in liver metastases and 2+ in lung metastases and much lower levels in normal lung parenchyma, normal liver and normal breast. The authors hypothesised that highly active ERBB2-directed T cells recognised ERBB2 on normal lung cells on first pass through the lung and released inflammatory cytokines that began a cascade ending in multiorgan failure; the autopsy findings were read as initial lung injury followed by days of hypotension and ischaemia, and the authors call the significance of the cells' reactivity against cultured primary cells unclear. This is a single case, with a stated dose and conditioning, whose mechanism is the authors' hypothesis and which gives no incidence for any CAR product (Morgan et al., 2010). In a trial of an affinity-enhanced T-cell receptor against HLA-A*01-restricted MAGE-A3 in myeloma and melanoma, the first two patients developed cardiogenic shock and died within days; no MAGE-A3 expression was detected in heart tissue at autopsy, and beating cardiomyocytes made from induced pluripotent stem cells triggered T-cell killing through recognition of an unrelated peptide from titin. That is off-target recognition of an unintended molecule, not the intended target in the wrong tissue (Linette et al., 2013).",
+              "passageSha256": "5481d135a0c081fa7cf1746f4364f4332bfe524bc13c3d675090768921f8363e"
+            },
+            {
+              "recordId": "on-target-off-tumour-toxicity",
+              "version": "proposal-pharmacology-toxicity-root",
+              "field": "summary",
+              "fieldSha256": "20be93053613aa5fa4593118a4f654a49aa7d78cdc5b5f2bb8dd84a4317140ed",
+              "explanation": "Intended-target recognition in healthy tissue differs from unintended peptide recognition, CRS and binding specificity; the two cases and complementary tests retain their limits.",
+              "supportingExcerpt": "How the question is asked before and during trials. FDA's CAR T-cell development guidance says to assess both undesired targeting of healthy tissue that expresses the intended antigen (on-target/off-tumour) and unintended targeting of other antigens, using examples such as tissue cross-reactivity studies with an antibody carrying the same recognition domain, protein arrays, cytotoxicity and cytokine-release testing on panels of primary cells, cell lines or stem-cell-derived organ systems, and relevant animal models, and encourages a combination of methods; antigen recognition domains can differ in affinity or avidity or recognise a different site, which should be evaluated, and CAR T cells can carry added components such as suicide genes. In practice a readout is a staining intensity or positive fraction, a binding profile, killing or cytokine release by healthy cells at a named time, and finally organ injury in the treated population; stained fixed tissue does not show a living organ's accessibility, an animal model may lack the human target, and a negative result in one panel is not a safety certificate. No universal expression cut-off is given here because no source read gives one. Whether affinity tuning, recognition logic or control switches improve safety for a particular design needs that design's own evidence. The 2026 ASTCT consensus abstract lists on-target, off-tumour toxicity among the toxicities for which it considered definitions and grading; its criteria were not readable.",
+              "passageSha256": "ebc1acf687a2e66b973431236e0e3eb6bd4c918c07642059d924c988931ef570"
             }
           ],
           "remaining": [
-            "The worker missing-owner assertion is corrected: therapeutic-index and lymphoma lineage-antigen aliases already exist. Their broader blanket class and dose claims are not certified by the CAR-specific FDA source."
+            "Older detailed lineage-antigen and blanket class assertions outside the reviewed fields are not freshly certified."
           ]
         }
       ]

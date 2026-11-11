@@ -1004,3 +1004,5 @@ The items the link-sense and company-products audits left for judgement, each de
 ## Surface-targeting evidence and labels, 11 November 2026
 
 The [surface-targeting correction record](research/education-coverage-2026-11-08/surface-targeting-2026-11-11/CORRECTIONS.md) qualifies target/dependence, processing, PK and target-ranking claims. It corrects the SG human-serum release value against the 2020 notice, IDeate-Lung02 outcome hierarchy and the displayed tarlatamab cycle-1 schedule/monitoring. Source-specific assays, cohorts and model results replace universal safety, resistance and superiority assertions. All prior notes and source links remain in order; broader catalogue and mechanism-template gaps remain explicit.
+
+The [current-main refresh](research/education-coverage-2026-11-08/main-refresh-b1d278-2026-11-11/README.md) retains upstream irAE aliases and makes the immune-side-effect lead name its organ examples and conditional management, supported by the label and prior guideline assessment. It does not change search ranking or its floors.

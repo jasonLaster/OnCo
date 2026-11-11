@@ -228,6 +228,8 @@ import { institutionsBiobankGaps2026, collectionsBiobankGaps2026, biobankBacklin
 import { institutionsGrantGaps2026, collectionsGrantGaps2026, trialsGrantGaps2026, grantBacklinks } from "./funding-programmes-gaps-2026-11";
 import { termsLawGaps2026, lawBacklinks } from "./laws-gaps-2026-11";
 import { termsPayerGaps2026, institutionsPayerGaps2026, payerBacklinks } from "./payers-gaps-2026-11";
+import { supportiveCareGapDrugs, supportiveCareGapDrugBacklinks } from "./supportive-care-gaps-2026-11";
+import { supportiveCareGapTechnologies, supportiveCareGapTerms, supportiveCareGapTermBacklinks } from "./supportive-care-gaps-2026-11-terms";
 import { drugsPipelineWave1 } from "./drugs-pipeline-wave1";
 import { trop2DualPayload } from "./trop2-dual-payload";
 import { pipelineTrialsWave2 } from "./pipeline-trials-wave2";
@@ -458,6 +460,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...veterinaryGapDrugs, ...veterinaryGapInstitutions,
   ...institutionsPrizes202611,
   ...institutionsParticleTherapyGaps2026, ...institutionsDonorRegistryGaps2026, ...institutionsBiobankGaps2026, ...collectionsBiobankGaps2026, ...institutionsGrantGaps2026, ...collectionsGrantGaps2026, ...trialsGrantGaps2026, ...termsLawGaps2026, ...termsPayerGaps2026, ...institutionsPayerGaps2026,
+  ...supportiveCareGapDrugs, ...supportiveCareGapTechnologies, ...supportiveCareGapTerms,
   ...targetsWaveSoc, ...targetsPipelineGap, ...targetsReaderEdits, ...targetsGenesWave, ...targetsImmuneMarkers, ...drugsEmaWave, ...drugsUniverseGaps, ...companiesSponsorsWave,
   ...drugsPipelineWave1,
   ...trop2DualPayload,
@@ -534,7 +537,7 @@ const READOUT_TESTS_BY_COMPANY: Record<string, string[]> = (() => {
 
 /**
  * Inbound links for the November 2026 census fill (particle therapy centres, donor registries, biobanks, funding
- * programmes, laws, payers): each fill file exports a map from an existing record to the new records it should list,
+ * programmes, laws, payers, and the supportive care medicines, devices and terms the care protocols named): each fill file exports a map from an existing record to the new records it should list,
  * so the host hospital, funder, drug or technology page shows them without editing the file that owns it. The field is
  * chosen by the new record's kind, so a typed array only ever holds its own kind; collections go to `related`.
  */
@@ -542,10 +545,11 @@ const CENSUS_FILL_BACKLINKS: Map<string, Map<string, string[]>> = (() => {
   const kindOf = new Map<string, string>([
     ...institutionsParticleTherapyGaps2026, ...institutionsDonorRegistryGaps2026, ...institutionsBiobankGaps2026, ...collectionsBiobankGaps2026,
     ...institutionsGrantGaps2026, ...collectionsGrantGaps2026, ...trialsGrantGaps2026, ...termsLawGaps2026, ...termsPayerGaps2026, ...institutionsPayerGaps2026,
+    ...supportiveCareGapDrugs, ...supportiveCareGapTechnologies, ...supportiveCareGapTerms,
   ].map((e) => [e.id, e.kind] as [string, string]));
-  const fieldFor: Record<string, string> = { institution: "institutions", term: "terms", trial: "trials", collection: "related" };
+  const fieldFor: Record<string, string> = { institution: "institutions", term: "terms", trial: "trials", collection: "related", drug: "drugs", technology: "technologies" };
   const out = new Map<string, Map<string, string[]>>();
-  for (const map of [particleTherapyHostBacklinks, donorRegistryBacklinks, biobankBacklinks, grantBacklinks, lawBacklinks, payerBacklinks])
+  for (const map of [particleTherapyHostBacklinks, donorRegistryBacklinks, biobankBacklinks, grantBacklinks, lawBacklinks, payerBacklinks, supportiveCareGapDrugBacklinks, supportiveCareGapTermBacklinks])
     for (const [from, ids] of Object.entries(map)) for (const id of ids) {
       const kind = kindOf.get(id);
       if (!kind) throw new Error(`Census fill backlink names a record not in the fill files: ${id}`);

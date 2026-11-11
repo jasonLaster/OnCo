@@ -67,6 +67,12 @@ function global(brand: string, slug: string, us: number, eu: number, uk: number,
 }
 
 export const regionalApprovals: Record<string, RegionalRow> = {
+  // ================= UK-only supportive and general medicines (src/data/supportive-care-gaps-2026-11.ts) =================
+  // Years are the first authorisation printed in each current UK licence's SmPC on the emc, not the medicine's first approval.
+  cyclizine: { UK: A(2001, "https://www.medicines.org.uk/emc/product/4318/smpc", "Nausea and vomiting, including from opioids, anaesthetics and radiotherapy", "Licence PL 20072/0241 (tablets)") },
+  levomepromazine: { UK: A(2012, "https://www.medicines.org.uk/emc/product/3014/smpc", "Pain with restlessness or distress in the terminally ill patient (injection)", "Licence PL 29831/0462") },
+  tinzaparin: { UK: A(1994, "https://www.medicines.org.uk/emc/product/13848/smpc", "Treatment of DVT and PE; extended treatment of VTE in adults with active cancer", "Licence PL 00043/0192 (20,000 IU/ml vials)") },
+  cyproterone: { UK: A(2008, "https://www.medicines.org.uk/emc/product/15997/smpc", "Prostate cancer: flare suppression, long-term palliative treatment, hot flushes", "Cyprostat licence PL 56734/0017") },
   // ================= ADCs =================
   "trastuzumab-deruxtecan": global("Enhertu", "enhertu", 2019, 2021, 2021, 2020, 2023, 2022, "HER2+ then HER2-low; EU/UK HER2-low 2023; China HER2+ breast Feb 2023"),
   "sacituzumab-govitecan": { US: A(2020), EU: A(2021, epar("trodelvy"), "mTNBC ≥2 lines; HR+ 2023"), UK: A(2021, mhra("Trodelvy")), JP: A(2024, PMDA, "TNBC (Daiichi Sankyo licence)"), CN: A(2022, NMPA, "mTNBC (Everest Medicines)"), AU: A(2022, tga("Trodelvy")) },

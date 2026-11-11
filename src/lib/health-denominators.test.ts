@@ -40,10 +40,16 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   { id: "tldr", total: 22343, label: "TL;DRs that are full sentences" },
   { id: "summary", total: 22343, label: "Summaries of 300 characters or more" },
   { id: "cancer-depth", total: 453, label: "Cancers that reach a deep dive, their own or the parent's" },
-  { id: "regional-approvals", total: 450, label: "Approved products with regional rows" },
+  // 11 November 2026: the supportive care gap round (src/data/supportive-care-gaps-2026-11.ts) added 43 medicines used in cancer
+  // care (anticoagulants, antiemetics, opioids, antibiotics, anaesthetics). They are approved products, the kind these gauges ask
+  // about, so the denominators grow with them; no target changed.
+  { id: "regional-approvals", total: 557, label: "Approved products with regional rows" },
   // 1,080 to 1,442 on 3 November 2026: 282 company pipeline products (src/data/company-pipeline-gap.ts, gap audit class 5)
   // and earlier rounds. They are products, the kind both product gauges ask about, so the denominators move with them.
-  { id: "molecules", total: 1442, label: "Products with a molecule or an explained placeholder" },
+  // 11 November 2026: the supportive care gap round (src/data/supportive-care-gaps-2026-11.ts) added 43 medicines used in cancer
+  // care (anticoagulants, antiemetics, opioids, antibiotics, anaesthetics). They are approved products, the kind these gauges ask
+  // about, so the denominators grow with them; no target changed.
+  { id: "molecules", total: 1746, label: "Products with a molecule or an explained placeholder" },
   // 591 to 710 on 2 October 2026: the two Recovery and Rejuvenation rounds added 119 technology records. They
   // are the kind this gauge asks about, and almost none has a drawing of its own; they borrow one through
   // SCHEMATIC_ALIAS. So the denominator grows and the score falls, which is the true reading. The alternative,
@@ -81,7 +87,10 @@ const RECORDED: Array<{ id: string; total: number; label: string }> = [
   // gauge asks about, so the denominator grows; their Europe PMC snapshots come with the next fetch:research run.
   { id: "papers-snapshot", total: 4561, label: "Drugs, targets, cancers and technologies with a Europe PMC snapshot" },
   { id: "citations", total: 2419, label: "Key papers with a citation count" },
-  { id: "trials-snapshot", total: 1442, label: "Products with a ClinicalTrials.gov snapshot" },
+  // 11 November 2026: the supportive care gap round (src/data/supportive-care-gaps-2026-11.ts) added 43 medicines used in cancer
+  // care (anticoagulants, antiemetics, opioids, antibiotics, anaesthetics). They are approved products, the kind these gauges ask
+  // about, so the denominators grow with them; no target changed.
+  { id: "trials-snapshot", total: 1746, label: "Products with a ClinicalTrials.gov snapshot" },
   // 2,078 to 2,563 on 4 November 2026: the company rounds since the last recording, ending with the 83 companies the
   // startup monitors found (SEC filings, orphan designations, NCI SBIR awards). Companies are exactly what this gauge
   // asks about, so the denominator grows; their logos are fetched in the same change.

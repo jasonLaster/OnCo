@@ -1548,8 +1548,8 @@ export const termsBasics: TermInput[] = [
   t({
     id: "targeted-therapy-term", name: "Targeted therapy", category: CLINIC,
     aka: ["targeted therapies", "targeted drug", "targeted drugs", "targeted treatment", "targeted treatments", "targeted agent", "targeted agents", "molecularly targeted", "precision oncology", "precision medicine", "personalised medicine", "personalized medicine", "actionable mutation", "actionable mutations", "actionable", "matched therapy", "genotype-directed", "biomarker-directed"],
-    tldr: "Drugs designed to hit a specific molecule the cancer depends on, usually a protein made by a mutated or amplified gene, while leaving normal cells relatively alone. The tumour is tested first to see whether it carries the target.",
-    summary: "Targeted therapies are mostly small-molecule inhibitors (kinase inhibitors such as imatinib, osimertinib, sotorasib; PARP and CDK4/6 inhibitors) and antibodies (trastuzumab, cetuximab), and are given to patients whose tumours have the matching alteration, identified by genomic profiling or immunohistochemistry. When a tumour is truly dependent on the target (oncogene addiction) responses can be dramatic and side effects milder than chemotherapy, though the effects are rarely permanent because resistance evolves, and each new generation of drug is built to overcome the last generation's escape mutations. 'Precision oncology' is the broader programme of matching every patient to the right drug by testing; only a minority of tumours have an actionable target today.",
+    tldr: "A targeted treatment acts on a specified molecule or process. Some block a cancer dependence; others use a molecule as an address for delivery or immune recruitment. The target name alone does not establish benefit or normal-tissue safety.",
+    summary: "Targeted treatments include small molecules and therapeutic antibodies with different actions. A molecule whose function supports cancer growth and a surface molecule used to deliver an active drug or recruit an immune cell have different roles. Detecting either does not by itself establish that the finished treatment reaches its target, changes a relevant function or helps in a particular clinical setting.\n\nSome treatments require a specified biomarker test; others have no target-expression selection test in the relevant label. Keep the actual drug, disease, treatment setting and testing rule together. NCI describes resistance and potentially serious adverse effects of targeted therapy. Neither relative normal-tissue sparing, mild toxicity nor a permanent response follows from the word targeted.",
     wikipedia: W("Targeted_therapy"),
     related: [
   "inhibitor",
@@ -1569,6 +1569,25 @@ export const termsBasics: TermInput[] = [
   "What NCI says about the class. Targeted therapy was once expected to be less toxic than chemotherapy but can cause serious side effects, cancer cells can become resistant to it, and it may work best combined with other targeted therapy or with treatments such as chemotherapy and radiation (NCI page, HTML read)."
 ],
 "asOf": "2026-11-11"
+,
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Targeted_therapy"
+  },
+  {
+    "label": "NCI: targeted therapy, different antibody actions, resistance and adverse effects",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/targeted-therapies"
+  },
+  {
+    "label": "TRODELVY U.S. label: indications, mechanism and named pharmacokinetic measurements",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+  },
+  {
+    "label": "KIMMTRAK U.S. label: gp100 peptide-HLA-A*02:01/CD3 recognition and indication",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+  }
+]
 }),
   t({
     id: "hormone-therapy", name: "Hormone therapy", category: CLINIC,

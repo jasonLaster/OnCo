@@ -23,7 +23,7 @@ export const targets: TargetInput[] = [
     ], links: [{"label":"UniProt P09758: TACSTD2 (TROP2)","url":"https://www.uniprot.org/uniprotkb/P09758/entry"},{"label":"Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)","url":"https://doi.org/10.1016/j.annonc.2021.06.002"},{"label":"TRODELVY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"},{"label":"DATROWAY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"},{"label":"Human Protein Atlas: TACSTD2 normal-tissue protein and RNA context","url":"https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"},{"label":"Wild-type TROP2 and growth in experimental systems (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/22349828/"},{"label":"TROP2/AKT pathway experiments and preclinical drug sensitivity (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27022065/"}],
   },
   {
-    id: "her2", trials: ["nct06043817", "nct07589517", "nct05532696", "nct07510802", "nct05523947", "nct06369831", "nct07467863", "nct06616766", "nct06439771", "nct05771584", "nct07641023", "nct07462650", "nct07192432"], technologies: ["her2-tyrosine-kinase-inhibitors"], kind: "target", keyPapers: ["paper-slamon-her2-breast-ovarian-science-1989", "paper-yarden-sliwkowski-erbb-network-nrmcb-2001"], name: "HER2", symbol: "ERBB2", hgnc: "HGNC:3430", ensembl: "ENSG00000141736", uniprot: "P04626", entrez: "2064", targetClass: "surface-antigen", asOf, wikipedia: W("HER2/neu"),
+    id: "her2", trials: ["nct06043817", "nct07589517", "nct05532696", "nct07510802", "nct05523947", "nct06369831", "nct07467863", "nct06616766", "nct06439771", "nct05771584", "nct07641023", "nct07462650", "nct07192432"], technologies: ["her2-tyrosine-kinase-inhibitors"], kind: "target", keyPapers: ["paper-slamon-her2-breast-ovarian-science-1989", "paper-yarden-sliwkowski-erbb-network-nrmcb-2001"], name: "HER2", symbol: "ERBB2", hgnc: "HGNC:3430", ensembl: "ENSG00000141736", uniprot: "P04626", entrez: "2064", targetClass: "surface-antigen", "asOf": "2026-11-11", wikipedia: W("HER2/neu"),
     tldr: "A growth-signal receptor. Some cancers make far too much of it, and drugs that block it or use it as a docking site have transformed those cancers.",
     summary: "Human epidermal growth factor receptor 2 is a receptor tyrosine kinase amplified in ~15-20% of breast cancers and a subset of gastric, colorectal, lung (mutations), and biliary cancers. Trastuzumab (1998) was the first targeted antibody in solid tumours. Trastuzumab deruxtecan redefined the target by working in 'HER2-low' tumours that older drugs ignored, and in 2026 gained approval in early-stage disease.",
     biology: "Ligand-less receptor that heterodimerises with HER3/EGFR to drive PI3K and MAPK signalling. Amplification is a true oncogenic driver; low expression is merely a delivery address for ADCs.",
@@ -39,8 +39,17 @@ export const targets: TargetInput[] = [
       { cancerId: "nsclc", pct: "2-3", measure: "ERBB2 exon 20 mutation", source: "https://www.cbioportal.org/study/summary?id=luad_tcga_pan_can_atlas_2018" },
       { cancerId: "colorectal", pct: "3-5", measure: "Amplification/IHC 3+", source: "https://en.wikipedia.org/wiki/HER2/neu", note: "RAS wild-type enriched" },
       { cancerId: "cholangiocarcinoma", pct: "10-20", measure: "IHC 3+ or amplification", source: "https://en.wikipedia.org/wiki/HER2/neu", note: "Higher in gallbladder/extrahepatic" },
-    ], drugs: ["her2-testing-assays", "tqb2102", "kn026", "ibi354", "a166", "hlx22", "glsi-100", "hlx11", "rph-051", "ro7771950", "ose2101", "gq1005", "iah0968", "tqb2930", "ssgj-705", "avzo-021", "cinrebafusp-alfa", "absk061", "ssgj-612"], companies: ["dualitybio", "amunix-pharmaceuticals", "callio-therapeutics", "cogent-biosciences", "dantari", "enliven-therapeutics", "ibex-medical-analytics", "iksuda-therapeutics", "imagene-ai", "myricx-bio", "orum-therapeutics", "precirix"], links: [{ label: "Wikipedia", url: W("HER2/neu") }],
-  },
+    ], drugs: ["her2-testing-assays", "tqb2102", "kn026", "ibi354", "a166", "hlx22", "glsi-100", "hlx11", "rph-051", "ro7771950", "ose2101", "gq1005", "iah0968", "tqb2930", "ssgj-705", "avzo-021", "cinrebafusp-alfa", "absk061", "ssgj-612"], companies: ["dualitybio", "amunix-pharmaceuticals", "callio-therapeutics", "cogent-biosciences", "dantari", "enliven-therapeutics", "ibex-medical-analytics", "iksuda-therapeutics", "imagene-ai", "myricx-bio", "orum-therapeutics", "precirix"], links: [{ label: "Wikipedia", url: W("HER2/neu") },
+{
+  "label": "Diwanji et al.: HER2-HER3-neuregulin structural experiments (2021)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/34759323/"
+}
+],
+
+"notes": [
+  "HER2 need not be drawn with a growth factor binding directly to it. Diwanji and colleagues' 2021 structural study examined a HER2-HER3 complex with neuregulin-1 beta bound to HER3. It describes HER2 as an orphan, ligand-less receptor and shows how the two receptors form their interface. Binding of a therapeutic antibody to HER2 is a different interaction from growth-factor binding to HER3. This structural experiment does not by itself identify a tumour's dependence or predict a clinical response."
+]
+},
   {
     id: "her3", drugs: ["yl202", "hmbd-001", "env-501", "sys6023"], kind: "target", name: "HER3", symbol: "ERBB3", hgnc: "HGNC:3431", ensembl: "ENSG00000065361", uniprot: "P21860", entrez: "2065", targetClass: "surface-antigen", asOf, wikipedia: W("ERBB3"),
     tldr: "HER3 is a cousin of HER2 that cancers use as an escape route when HER2 or EGFR are blocked.",

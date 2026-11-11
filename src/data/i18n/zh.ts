@@ -175,7 +175,7 @@ export const tldr_zh: Record<string, string> = {
   antiangiogenic: "切断肿瘤血供，如今主要用于帮助免疫治疗更好地发挥作用。",
   adc: "一枚制导导弹：抗体归巢到肿瘤细胞，被吞入后释放一种强到永远无法单独给药的化疗。",
   "bispecific-adc": "其抗体抓住癌细胞上两种不同蛋白的ADC，因此更粘肿瘤、更少粘健康组织。",
-  "dual-payload-adc": "同时携带两种不同毒素的ADC，肿瘤无法通过对其一耐药来逃脱。",
+
   "degrader-antibody-conjugate": "递送蛋白降解分子而非化疗的ADC，触及以往无法到达的细胞内靶点。",
   "immune-stimulating-adc": "其载荷在肿瘤内唤醒免疫系统而非毒杀细胞的ADC。",
   "masked-adc": "戴着面罩、只在肿瘤内揭开的ADC，因而忽略健康组织上的同种蛋白。",
@@ -258,10 +258,10 @@ export const tldr_zh: Record<string, string> = {
   "dcvax-l": "用患者自身免疫细胞和肿瘤制成的个体化疫苗。其20年历史的三期报告生存延长，但结果分析方式在业内引发分歧。",
   rindopepimut: "针对胶质母细胞瘤特有突变蛋白的疫苗，多年看似有前景，却在2016年三期失败。一次标志性失败。",
   "sacituzumab-govitecan": "首个靶向TROP2的ADC。把强效化疗直接递送到乳腺癌和膀胱癌细胞，如今是三阴性乳腺癌一线选择。",
-  "trastuzumab-deruxtecan": "史上最成功的ADC。通过在仅有微量HER2蛋白的肿瘤中起效重新定义了HER2，并于2026年进入早期乳腺癌。",
+
   "datopotamab-deruxtecan": "第二个TROP2 ADC，与Enhertu共用载荷。2026年成为无法接受免疫治疗的三阴性乳腺癌患者的一线选择。",
   "sacituzumab-tirumotecan": "来自中国的第三个TROP2 ADC，授权默沙东开展庞大的全球项目。已在中国获批；在美国持有优先券但尚未获批。",
-  "trastuzumab-emtansine": "首个实体瘤ADC（2013年）。仍是术前治疗未完全缓解的HER2+乳腺癌患者术后的标准。",
+
   "enfortumab-vedotin": "针对Nectin-4的ADC，与pembrolizumab联用使晚期膀胱癌生存几乎翻倍。",
   "brentuximab-vedotin": "让现代ADC领域获得信誉的ADC（2011年），用于霍奇金淋巴瘤和CD30+淋巴瘤。",
   "mirvetuximab-soravtansine": "首个卵巢癌ADC，用于叶酸受体α高表达的肿瘤。",
@@ -382,7 +382,7 @@ export const tldr_zh: Record<string, string> = {
   h3k27m: "组蛋白上的单一改变，定义了最致命的儿童脑肿瘤，如今是首个获批药物的靶点。",
   egfrviii: "约三分之一胶质母细胞瘤中的突变、肿瘤特有的EGFR受体版本。看似理想的靶点；至今每种针对它的药物都失败了。",
   "blood-brain-barrier": "脑血管周围的紧密封闭，把大多数药物挡在外面，是脑癌难治的两大主因之一。",
-  payload: "ADC携带的毒素。通常是毒性太强、无法单独给药的化疗。",
+
   linker: "抗体与载荷之间的化学系带。必须在血液中牢固，在肿瘤内松开。",
   dar: "每个抗体上搭载的载荷分子数，通常为2到8。",
   "bystander-effect": "释放的载荷漏出靶细胞并杀死邻近细胞，包括不带靶点的细胞。",
@@ -1489,7 +1489,7 @@ export const tldr_zh: Record<string, string> = {
   tace: "将导管送入供应肝脏肿瘤的动脉，先输送化疗药物，再堵塞血管，从内部切断肿瘤的养分供应。",
   tafasitamab: "一种CD19抗体，与lenalidomide联用于无法接受移植的淋巴瘤患者；2026年它在高危疾病中显示出相对R-CHOP的首个一线获益。",
   "talicel-phase-1-2": "印度首个CAR-T获批背后的试验：在经过多线治疗的淋巴瘤或白血病患者中，约四分之三对这款在孟买制造的疗法产生了反应。",
-  "targeted-therapy-term": "专门设计用来攻击癌症所依赖的某个特定分子的药物，这个分子通常是由突变或扩增的基因产生的蛋白，同时相对不影响正常细胞。用药前先检测肿瘤，看它是否携带该靶点。",
+
   tazemetostat: "Tazemetostat是首个EZH2抑制剂，于2020年获批用于上皮样肉瘤和滤泡性淋巴瘤，并在出现继发性血液肿瘤后于2026年在全球撤市。",
   "texas-childrens": "美国最大的儿童癌症中心之一，是Baylor的儿童医院，也是面向非洲儿童癌症的Global HOPE项目的创立者。",
   "tgf-beta": "一种阻止正常细胞分裂的信号，但一旦癌症形成，它就会倒戈：构建类似瘢痕的基质，把免疫细胞隔离在外，并推动细胞进入迁移状态。",
@@ -3038,7 +3038,7 @@ export const tldr_zh: Record<string, string> = {
   "idea-tr2-termination-reports": "飞机失事时，会有一份独立报告解释原因，以免再次发生。而一项抗癌药物研发项目被放弃时，什么都没有写下来。应当改变这一点。",
   "idea-tr2-tmb-calibration-standard": "在某些情况下，肿瘤突变负荷决定谁能接受免疫治疗，但每个测序 panel 的计算方法都不同。一个共享的校准标准将使这一数字在各处含义一致。",
   "idea-transplant-free-ph-all": "如果一种口服药加免疫治疗能使白血病无法检出，大多数成人能否安全地免去骨髓移植？",
-  "ideate-lung02": "IDeate-Lung02 是这款 B7-H3 ADC 的关键性试验，该药在复发性小细胞肺癌中产生了迄今所见最高的缓解率之一。",
+
   "ideaya-biosciences": "IDEAYA Biosciences 开发与患者肿瘤基因构成相匹配的抗癌药物。其进展最快的药物 darovasertib 正处于针对一种罕见眼部癌症（葡萄膜黑色素瘤）的后期试验中。",
   "ignace-vergote": "领导了使新辅助化疗在卵巢癌中获得认可的 EORTC 试验，以及 innovaTV 301，即宫颈癌中首个取得生存获益的 ADC 试验。",
   "ihc-autostainers-histology-automation": "组织学自动化指的是把组织加工成切片并针对 HER2、PD-L1 等生物标志物进行染色的机器人，每次都以同样的方式完成。",
@@ -3417,7 +3417,7 @@ export const tldr_zh: Record<string, string> = {
   "trial-modernisation-roadmap": "随机试验是肿瘤学判断何种疗法有效的方式，但它缓慢、昂贵，且入组的患者不到十分之一。这份路线图是一套在保持严谨性的同时缩短时间、降低成本、减少排除标准的设计和工具：永不关闭的平台试验、血液检测终点、远程知情同意、诚实使用的真实世界数据，以及基于证据选择的剂量。",
   "triana-biomedicines": "Triana Biomedicines设计分子胶，使癌细胞销毁自身有缺陷的蛋白。其首个药物TRI-611可清除驱动一部分肺癌的ALK融合蛋白，已进入人体试验。",
   "tropion-breast01": "使Datroway获批用于激素受体阳性乳腺癌的试验，尽管它并未延长总生存期。",
-  "tropion-breast02": "首个证明一线ADC在三阴性乳腺癌中带来总生存获益的试验。",
+
   "tropion-breast03": "TROPION-Breast03是与ASCENT-05对应的Dato-DXd试验：对手术时仍有残留癌灶的三阴性患者，使用ADC联合或不联合免疫治疗。",
   "tropion-breast05": "检验Dato-DXd加PD-L1阻断剂是否优于目前的免疫治疗联合化疗标准方案。",
   "trusight-oncology-comprehensive": "一种医院可自行开展的大型基因检测panel，2024年获FDA批准作为肿瘤不可知药物larotrectinib的伴随诊断。",
@@ -5128,7 +5128,7 @@ export const tldr_zh: Record<string, string> = {
   "linker-mm1": "LINKER-MM1是linvoseltamab的关键性研究，完全缓解率为45%。",
   "linkoping-university-hospital": "瑞典东南部的大学医院，获OECI认证为综合癌症中心，也是瑞典地区性癌症中心之一的所在地。",
   "litespark-012": "在一线lenvatinib-pembrolizumab基础上加用belzutifan未能奏效，提醒人们后线成功并不保证一线获益。",
-  liv1: "LIV-1是一种受雌激素调控的锌转运体，存在于大多数乳腺癌中；针对它的ADC（ladiratuzumab vedotin）在三阴性乳腺癌中显示出活性，但于2024年终止开发。",
+
   liyfe: "Liyfe开发了一款数字护士，在就诊间隔期与癌症患者保持联系，为其症状评分并标记需要电话随访的患者，以减少急诊就诊。",
   "louis-staudt": "Louis Staudt定义了指导靶向治疗的大B细胞淋巴瘤分子亚型。",
   "ludmil-alexandrov": "创建了从癌症基因组中提取突变特征的数学框架以及COSMIC突变特征目录。",

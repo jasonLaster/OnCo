@@ -70,7 +70,7 @@ export const simpleE: Record<string, string> = {
   "cd73-adenosine": "CD73 is an enzyme on tumour and immune cells that makes adenosine, a molecule which quietens immune cells; blocking it was a big hope that has not yet delivered.",
   vista: "VISTA is an immune off switch on white blood cells that works in the acidic conditions inside tumours, and antibodies against it are in early trials without proof yet.",
   muc16: "MUC16 is the giant protein shed into blood as the CA-125 ovarian cancer marker, and its anchored stalk is being targeted by antibody-drugs and T-cell engagers.",
-  liv1: "LIV-1 is a zinc transporter on most breast cancers; an antibody-drug against it showed activity in triple-negative breast cancer but was dropped in 2024.",
+  liv1: "LIV-1 moves zinc. Researchers study it as an address for drug delivery in breast cancer. Finding it or finishing a trial does not by itself show patient benefit or drug availability.",
   mdm2: "MDM2 is the protein that destroys the tumour-suppressor p53; blocking it wakes p53 up in cancers where the gene is intact, especially liposarcomas with extra MDM2 copies.",
   "prmt5-mtap": "PRMT5 is an enzyme that cancers missing the MTAP gene depend on more than normal cells do, and pills designed to exploit that gap are in late trials.",
   wrn: "WRN is a DNA-unwinding enzyme that cancers with faulty DNA mismatch repair cannot live without, and the first pills blocking it are being tested in bowel cancer.",

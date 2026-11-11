@@ -147,7 +147,7 @@ export const simpleD: Record<string, string> = {
   hilo: "This trial tested a third of the usual radioactive iodine dose after thyroid surgery; it found the lower dose worked just as well with fewer side effects.",
   himalaya: "This trial tested a single dose of one immune drug plus another immune drug against the standard pill in liver cancer; it found people lived longer.",
   "horizon-breast01": "This trial tested a Chinese antibody-drug (antibody carrying chemotherapy) in HER2-positive breast cancer; it found the cancer stayed controlled far longer than with the standard treatment.",
-  "ideate-lung02": "This trial is testing an antibody-drug (antibody carrying chemotherapy) against chemotherapy in small-cell lung cancer that has returned; it is still recruiting.",
+  "ideate-lung02": "This trial compares ifinatamab deruxtecan with other treatment for small-cell lung cancer that has returned. Trial recruitment does not show whether the drug helps.",
   "ignyte-eso": "This trial tested engineered immune cells in two rare sarcomas; it found about four in ten tumours shrank.",
   imbrave050: "This trial tested an immune drug plus a blood vessel blocker after liver cancer surgery; an early benefit disappeared with longer follow-up.",
   imbrave150: "This trial tested an immune drug plus a blood vessel blocker against the standard pill in liver cancer; it found people lived longer, ending the old pill's era.",

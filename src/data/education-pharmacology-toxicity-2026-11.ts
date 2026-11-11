@@ -205,7 +205,7 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
 ],
   },
   {
-    id: "drug-target-and-mechanism", kind: "term", name: "Drug target and mechanism of action", category: "Methods and models", asOf,
+    id: "drug-target-and-mechanism", kind: "term", name: "Drug target and mechanism of action", category: "Methods and models", "asOf": "2026-11-11",
     aka: [
   "drug target",
   "drug targets",
@@ -224,8 +224,15 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
     "label": "Martinez Molina et al., monitoring drug target engagement in cells and tissues using the cellular thermal shift assay (2013)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
   }
+,
+{
+  "label": "KIMMTRAK U.S. label: gp100 peptide-HLA-A*02:01/CD3 recognition and indication",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+}
 ],
-    notes: [],
+    notes: [
+"A fictional follow-up measures loss of a specified class-I peptide-HLA target after B2M loss, while a separate live-cell assay still finds accessible intact protein M. Those are two distinct observations: losing the measured peptide-HLA address does not remove the independently measured M address. Neither observation establishes delivery, immune-cell function, target-cell death or benefit. A surface-binding CAR or protein engager is not automatically immune-independent, and a peptide-HLA-targeting CAR, soluble TCR or antibody-derived mimic retains its specified recognition requirements."
+],
     related: [
   "small-molecule",
   "therapeutic-index",

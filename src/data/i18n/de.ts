@@ -407,8 +407,8 @@ export const tldr_de: Record<string, string> = {
   tp53: "TP53 ist der „Wächter des Genoms“ und in der Hälfte aller Krebserkrankungen defekt. Es direkt zu reparieren ist bisher an jedem Versuch gescheitert, deshalb nutzen Medikamente aus, wovon Krebszellen durch seinen Verlust abhängig werden.",
   "transcription-addiction": "Krebszellen lassen wenige Gene (MYC, ihre Linienfaktoren, ihre Fusionsonkogene) mit extremer Lautstärke laufen, gesteuert von riesigen Kontrollregionen, den sogenannten Super-Enhancern. Die Verstärker, BRD4, CDK7, CDK9 und Mediator, sind in jeder Zelle dieselben, aber Krebszellen sind ungewöhnlich stark von ihnen abhängig, und diese Abhängigkeit lässt sich mit Medikamenten angreifen.",
   trastuzumab: "Der erste zielgerichtete Antikörper für einen soliden Tumor (1998), der HER2-positiven Brustkrebs vom schlimmsten Subtyp zu einem der am besten behandelbaren machte.",
-  "trastuzumab-deruxtecan": "Trastuzumab deruxtecan (Enhertu) ist das erfolgreichste ADC aller Zeiten. Es hat HER2 neu definiert, weil es auch bei Tumoren mit nur winzigen Mengen des Proteins wirkt, und ist 2026 in die Behandlung von Brustkrebs im Frühstadium vorgerückt.",
-  "trastuzumab-emtansine": "Trastuzumab emtansine (Kadcyla, T-DM1) war das erste ADC für einen soliden Tumor (2013). Es ist nach wie vor Standard nach der Operation bei Patientinnen mit HER2+ Brustkrebs, deren Tumor nicht vollständig auf die Behandlung vor der Operation angesprochen hat.",
+
+
   trop2: "Ein Protein, das auf der Außenseite vieler Krebszellen weit häufiger sitzt als auf normalen Zellen, was es zu einer guten Zieladresse für die Zustellung von Medikamenten macht.",
   "trop2-adc-roadmap": "Ein Zielmolekül, drei zugelassene oder fast zugelassene Medikamente und eine vierte Welle. Wie TROP2 von einem obskuren Trophoblasten-Antigen ins Zentrum der Behandlung von Brust- und Lungenkrebs rückte.",
   "trop2-pet": "Eine experimentelle PET-Untersuchung, die zeigt, ob ein Tumor das TROP2-Protein trägt, damit Ärzte das passende ADC auswählen könnten, bevor sie es verabreichen.",
@@ -487,7 +487,7 @@ export const tldr_de: Record<string, string> = {
   parp: "PARP ist ein Enzym für die DNA-Reparatur. Krebszellen, die bereits ein Reparatursystem verloren haben (BRCA), sterben, wenn dieses zweite blockiert wird; gesunde Zellen überleben.",
   "parp-inhibitor": "Tabletten, die ein Ersatzsystem der DNA-Reparatur blockieren und so Krebszellen abtöten, die ihr Hauptreparatursystem (BRCA) bereits verloren haben.",
   "pathology-foundation-model": "Sehr große KI-Modelle, die mit Millionen von Gewebeschnitten oder Bildaufnahmen trainiert wurden und sich an fast jede diagnostische Frage anpassen lassen.",
-  payload: "Die Payload ist das Gift, das ein ADC transportiert, meist eine Chemotherapie, die für sich allein viel zu giftig wäre.",
+
 
 
   "pd1-checkpoint": "PD-1 und CTLA-4 helfen, T-Zell-Antworten zu regulieren. Eine Änderung ihrer Signale allein belegt weder die Erkennung noch die Abtötung von Krebs oder einen Behandlungsnutzen.",
@@ -806,7 +806,7 @@ export const tldr_de: Record<string, string> = {
 
   "driver-mutation": "Eine der wenigen Mutationen in einem Tumor, die ihn tatsächlich wachsen lassen. Alles andere sind Passagiere, die nur mitfahren. Treibermutationen sind die Mutationen, auf die Medikamente zielen.",
   "drug-repurposing": "Billige alte Medikamente, Aspirin, Metformin, Statine, Betablocker, als Krebsbehandlungen zu prüfen, weil sie sicher und verfügbar sind und manchmal wirken.",
-  "dual-payload-adc": "Ein Dual-Payload-ADC ist ein ADC, der zwei verschiedene Gifte gleichzeitig trägt, sodass der Tumor nicht entkommen kann, indem er gegen eines davon resistent wird.",
+
   dxd: "DXd ist das Topoisomerase-Gift in Enhertu und Dato-DXd: etwa zehnmal stärker als SN-38, breitet es sich auf Nachbarzellen aus und verlässt den Körper nach der Freisetzung schnell.",
   eanm: "Europas nuklearmedizinische Fachgesellschaft, deren Kongress und Leitlinien die klinische Einführung von PSMA-PET und Lutetium-Radioligandentherapie prägten, die in europäischen Zentren begann.",
   "ebv-term": "Das verbreitete Pfeiffersche-Drüsenfieber-Virus, das die meisten Erwachsenen lebenslang tragen und das bei einer Minderheit Nasenrachenkrebs, einige Magenkrebsarten und mehrere Lymphome auslöst.",
@@ -1365,7 +1365,7 @@ export const tldr_de: Record<string, string> = {
   tafasitamab: "Ein CD19-Antikörper, der zusammen mit Lenalidomid an Lymphompatienten gegeben wird, die keine Transplantation erhalten können; 2026 zeigte er bei Hochrisikoerkrankung den ersten Erstlinien-Gewinn gegenüber R-CHOP.",
   "talicel-phase-1-2": "Die Studie hinter Indiens erster CAR-T-Zulassung: Etwa drei von vier stark vorbehandelten Patienten mit Lymphom oder Leukämie sprachen auf eine in Mumbai hergestellte Therapie an.",
   "talimogene-laherparepvec": "Talimogene laherparepvec (T-VEC, Imlygic) war das erste zugelassene onkolytische Virus (2015), das in Hautläsionen des Melanoms injiziert wird.",
-  "targeted-therapy-term": "Medikamente, die gezielt ein bestimmtes Molekül treffen sollen, von dem der Krebs abhängt, meist ein Protein aus einem mutierten oder amplifizierten Gen, und normale Zellen dabei weitgehend verschonen. Der Tumor wird zuvor getestet, ob er die Zielstruktur trägt.",
+
   tazemetostat: "Tazemetostat war der erste EZH2-Inhibitor, 2020 für das epitheloide Sarkom und das follikuläre Lymphom zugelassen und 2026 nach sekundären Blutkrebserkrankungen weltweit zurückgezogen.",
   "telisotuzumab-vedotin": "Telisotuzumab vedotin (Emrelis) ist das erste gegen c-MET gerichtete ADC, 2025 zugelassen für Lungenkrebs mit hoher c-MET-Proteinexpression.",
   "texas-childrens": "Eines der größten Kinderkrebszentren der USA, das Kinderkrankenhaus von Baylor und Gründer des Programms Global HOPE für Krebs im Kindesalter in Afrika.",
@@ -3002,7 +3002,7 @@ export const tldr_de: Record<string, string> = {
   "idea-tr2-termination-reports": "Wenn ein Flugzeug abstürzt, erklärt ein unabhängiger Bericht, warum, damit es nicht wieder passiert. Wenn ein Krebsmedikamenten-Programm eingestellt wird, wird nichts geschrieben. Das muss sich ändern.",
   "idea-tr2-tmb-calibration-standard": "Die Tumormutationslast entscheidet in manchen Situationen, wer eine Immuntherapie erhält, doch jedes Sequenzierpanel berechnet sie anders. Eine gemeinsame Kalibrierung würde dafür sorgen, dass die Zahl überall dasselbe bedeutet.",
   "idea-transplant-free-ph-all": "Wenn eine Tablette plus Immuntherapie die Leukämie nicht mehr nachweisbar macht, können die meisten Erwachsenen dann sicher auf eine Knochenmarktransplantation verzichten?",
-  "ideate-lung02": "IDeate-Lung02 ist die Zulassungsstudie für das B7-H3-ADC, das einige der höchsten Ansprechraten erzielte, die je beim rezidivierten kleinzelligen Lungenkarzinom beobachtet wurden.",
+
   "ideaya-biosciences": "IDEAYA Biosciences entwickelt Krebsmedikamente, die auf die genetische Ausstattung des Tumors eines Patienten abgestimmt sind. Sein am weitesten fortgeschrittenes Medikament, Darovasertib, befindet sich in Studien der späten Phase für eine seltene Augenkrebsart namens Uveamelanom.",
   "ignace-vergote": "Leitete die EORTC-Studie, die die neoadjuvante Chemotherapie beim Ovarialkarzinom akzeptabel machte, sowie innovaTV 301, den ersten Überlebensgewinn eines ADC beim Zervixkarzinom.",
   "ihc-autostainers-histology-automation": "Histologie-Automatisierung bezeichnet die Roboter, die Gewebe zu Objektträgern verarbeiten und diese auf Biomarker wie HER2 und PD-L1 färben, jedes Mal auf dieselbe Weise.",
@@ -3402,7 +3402,7 @@ export const tldr_de: Record<string, string> = {
   "trial-modernisation-roadmap": "Die randomisierte Studie ist der Weg, auf dem die Onkologie erfährt, was wirkt, und sie ist langsam, teuer und schließt weniger als einen von zehn Patienten ein. Die Roadmap ist die Gesamtheit der Designs und Werkzeuge, die die Strenge bewahren und zugleich Zeit, Kosten und Ausschlüsse verringern: Plattformstudien, die nie schließen, Endpunkte auf Basis von Bluttests, Fern-Einwilligung, ehrlich genutzte Real-World-Daten und nach Evidenz gewählte Dosierungen.",
   "triana-biomedicines": "Triana Biomedicines entwirft molekulare Kleber, die Krebszellen dazu bringen, ihre eigenen fehlerhaften Proteine abzubauen. Sein erstes Medikament, TRI-611, entfernt das ALK-Fusionsprotein, das eine Untergruppe von Lungenkrebsen antreibt, und ist in klinische Studien am Menschen eingetreten.",
   "tropion-breast01": "Die Studie, die Datroway die Zulassung beim hormonrezeptorpositiven Brustkrebs einbrachte, obwohl sie das Gesamtüberleben nicht verlängerte.",
-  "tropion-breast02": "Die erste Studie, die einen Gesamtüberlebensvorteil für ein ADC in der Erstlinie beim dreifach negativen Brustkrebs zeigte.",
+
   "tropion-breast03": "TROPION-Breast03 ist das Dato-DXd-Gegenstück zu ASCENT-05: ein ADC, mit oder ohne Immuntherapie, für dreifach negative Patientinnen mit Resttumor bei der Operation.",
   "tropion-breast05": "Prüft, ob Dato-DXd plus ein PD-L1-Blocker dem heutigen Standard aus Immuntherapie und Chemotherapie überlegen ist.",
   "trusight-oncology-comprehensive": "Ein großes Genpanel, das Krankenhäuser selbst durchführen können, 2024 von der FDA als Begleitdiagnostikum für das tumoragnostische Medikament Larotrectinib zugelassen.",
@@ -5117,7 +5117,7 @@ export const tldr_de: Record<string, string> = {
   "linker-mm1": "LINKER-MM1 ist die Zulassungsstudie für Linvoseltamab, mit 45% kompletten Remissionen.",
   "linkoping-university-hospital": "Das Universitätsklinikum für Südostschweden, von der OECI als Comprehensive Cancer Centre akkreditiert und Sitz eines der regionalen Krebszentren Schwedens.",
   "litespark-012": "Die Zugabe von Belzutifan zu Lenvatinib-Pembrolizumab in der Erstlinie brachte nichts, eine Erinnerung daran, dass Erfolg in späteren Linien keinen Nutzen in der Erstlinie garantiert.",
-  liv1: "LIV-1 ist ein östrogenregulierter Zinktransporter auf den meisten Brustkrebsen; das dagegen gerichtete ADC (Ladiratuzumab Vedotin) zeigte Aktivität bei triple-negativer Erkrankung, wurde aber 2024 eingestellt.",
+
   liyfe: "Liyfe hat eine digitale Pflegekraft entwickelt, die sich zwischen den Besuchen bei Krebspatienten meldet, ihre Symptome bewertet und markiert, wer einen Anruf braucht, um Notaufnahmebesuche zu verringern.",
   "louis-staudt": "Louis Staudt definierte die molekularen Subtypen des großzelligen B-Zell-Lymphoms, die die zielgerichtete Therapie leiten.",
   "ludmil-alexandrov": "Schuf den mathematischen Rahmen zur Extraktion mutationaler Signaturen aus Krebsgenomen sowie den COSMIC-Signaturkatalog.",

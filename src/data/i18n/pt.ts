@@ -175,7 +175,7 @@ export const tldr_pt: Record<string, string> = {
   antiangiogenic: "Cortar o suprimento de sangue do tumor, hoje usado principalmente para ajudar a imunoterapia a funcionar melhor.",
   adc: "Um míssil guiado: um anticorpo vai até a célula tumoral, é engolido e libera uma quimioterapia tão potente que nunca poderia ser dada sozinha.",
   "bispecific-adc": "Um ADC cujo anticorpo agarra duas proteínas diferentes na célula cancerosa, de modo que gruda melhor no tumor e menos no tecido saudável.",
-  "dual-payload-adc": "Um ADC que carrega dois venenos diferentes de uma vez, para que o tumor não escape tornando-se resistente a um.",
+
   "degrader-antibody-conjugate": "Um ADC que entrega uma molécula destruidora de proteínas em vez de quimioterapia, atingindo alvos dentro da célula antes inalcançáveis.",
   "immune-stimulating-adc": "Um ADC cuja carga desperta o sistema imune dentro do tumor em vez de envenenar a célula.",
   "masked-adc": "Um ADC usando uma máscara que só sai dentro do tumor, de modo que ignora a mesma proteína no tecido saudável.",
@@ -258,10 +258,10 @@ export const tldr_pt: Record<string, string> = {
   "dcvax-l": "Uma vacina personalizada feita com as células imunes e o tumor do próprio paciente. Seu ensaio de fase 3 de 20 anos relatou sobrevida maior, mas a forma como o resultado foi analisado dividiu a área.",
   rindopepimut: "Uma vacina contra uma proteína mutante exclusiva do glioblastoma que pareceu promissora por anos e depois falhou na fase 3 em 2016. Um fracasso de referência.",
   "sacituzumab-govitecan": "O primeiro ADC voltado para TROP2. Entrega uma quimioterapia forte diretamente às células de câncer de mama e bexiga e hoje é opção de primeira linha no câncer de mama triplo-negativo.",
-  "trastuzumab-deruxtecan": "O ADC mais bem-sucedido da história. Redefiniu HER2 ao funcionar em tumores com quantidades mínimas da proteína, e em 2026 passou ao câncer de mama em estágio inicial.",
+
   "datopotamab-deruxtecan": "O segundo ADC anti-TROP2, com a mesma carga do Enhertu. Em 2026 tornou-se opção de primeira linha para pacientes com câncer de mama triplo-negativo que não podem receber imunoterapia.",
   "sacituzumab-tirumotecan": "Um terceiro ADC anti-TROP2 da China, licenciado à Merck para um programa global muito grande. Aprovado na China; nos EUA tem um voucher prioritário, mas ainda não aprovação.",
-  "trastuzumab-emtansine": "O primeiro ADC para um tumor sólido (2013). Ainda padrão após a cirurgia para pacientes HER2+ cujo tumor não respondeu totalmente ao tratamento pré-cirúrgico.",
+
   "enfortumab-vedotin": "Um ADC contra Nectin-4 que, combinado com pembrolizumabe, quase dobrou a sobrevida no câncer de bexiga avançado.",
   "brentuximab-vedotin": "O ADC que deu credibilidade à área moderna (2011), para linfoma de Hodgkin e linfomas CD30+.",
   "mirvetuximab-soravtansine": "O primeiro ADC para câncer de ovário, para tumores com alto receptor de folato alfa.",
@@ -382,7 +382,7 @@ export const tldr_pt: Record<string, string> = {
   h3k27m: "Uma única mudança em uma proteína histona que define o tumor cerebral infantil mais letal, e agora o alvo da primeira droga aprovada para ele.",
   egfrviii: "Uma versão mutante, exclusiva do tumor, do receptor EGFR encontrada em cerca de um terço dos glioblastomas. Alvo de aparência ideal; toda droga contra ele falhou até agora.",
   "blood-brain-barrier": "O selo apertado ao redor dos vasos cerebrais que mantém a maioria das drogas fora, uma das duas principais razões pelas quais o câncer cerebral é tão difícil de tratar.",
-  payload: "O veneno que um ADC carrega. Geralmente uma quimioterapia tóxica demais para ser dada sozinha.",
+
   linker: "A amarra química entre anticorpo e carga. Deve resistir no sangue e soltar dentro do tumor.",
   dar: "Quantas moléculas de carga viajam em cada anticorpo, tipicamente de 2 a 8.",
   "bystander-effect": "Quando uma carga liberada vaza da célula-alvo e mata as vizinhas, inclusive células sem o alvo.",
@@ -1489,7 +1489,7 @@ export const tldr_pt: Record<string, string> = {
   tace: "Um cateter introduzido na artéria que alimenta um tumor no fígado libera quimioterapia e depois bloqueia o vaso, deixando o tumor sem nutrientes a partir de dentro.",
   tafasitamab: "Um anticorpo anti-CD19 administrado com lenalidomida a pacientes com linfoma que não podem receber transplante; em 2026, mostrou o primeiro ganho em primeira linha sobre o R-CHOP na doença de alto risco.",
   "talicel-phase-1-2": "O ensaio por trás da primeira aprovação de CAR-T da Índia: cerca de três em cada quatro pacientes com linfoma ou leucemia intensamente pré-tratados responderam a uma terapia fabricada em Mumbai.",
-  "targeted-therapy-term": "Medicamentos projetados para atingir uma molécula específica da qual o câncer depende, geralmente uma proteína produzida por um gene mutado ou amplificado, poupando relativamente as células normais. O tumor é testado primeiro para ver se carrega o alvo.",
+
   tazemetostat: "Tazemetostat foi o primeiro inibidor de EZH2, aprovado para sarcoma epitelioide e linfoma folicular em 2020 e retirado em todo o mundo em 2026 após cânceres de sangue secundários.",
   "texas-childrens": "Um dos maiores centros de câncer pediátrico dos Estados Unidos, o hospital infantil da Baylor e fundador do programa Global HOPE para o câncer infantil na África.",
   "tgf-beta": "Um sinal que impede as células normais de se dividirem mas que, uma vez estabelecido o câncer, muda de lado: forma um estroma semelhante a tecido cicatricial, isola as células imunes do lado de fora e empurra as células para um estado migratório.",
@@ -3038,7 +3038,7 @@ export const tldr_pt: Record<string, string> = {
   "idea-tr2-termination-reports": "Quando um avião cai, um relatório independente explica o motivo para que não volte a acontecer. Quando um programa de desenvolvimento de um medicamento contra o câncer é abandonado, nada é escrito. É preciso mudar isso.",
   "idea-tr2-tmb-calibration-standard": "A carga mutacional tumoral decide quem recebe imunoterapia em alguns contextos, mas cada painel de sequenciamento a calcula de forma diferente. Uma calibração compartilhada faria o número significar a mesma coisa em todos os lugares.",
   "idea-transplant-free-ph-all": "Se um comprimido mais imunoterapia tornar a leucemia indetectável, a maioria dos adultos pode dispensar com segurança um transplante de medula óssea?",
-  "ideate-lung02": "IDeate-Lung02 é o ensaio pivotal do ADC anti-B7-H3 que produziu algumas das taxas de resposta mais altas já vistas no câncer de pulmão de pequenas células recidivado.",
+
   "ideaya-biosciences": "A IDEAYA Biosciences desenvolve medicamentos contra o câncer adaptados à composição genética do tumor do paciente. Seu medicamento mais avançado, darovasertib, está em ensaios de fase avançada para um câncer ocular raro chamado melanoma uveal.",
   "ignace-vergote": "Liderou o ensaio da EORTC que tornou aceitável a quimioterapia neoadjuvante no câncer de ovário e o innovaTV 301, a primeira vitória de sobrevida de um ADC no câncer do colo do útero.",
   "ihc-autostainers-histology-automation": "A automação da histologia são os robôs que processam o tecido em lâminas e as coram para biomarcadores como HER2 e PD-L1, da mesma forma todas as vezes.",
@@ -3417,7 +3417,7 @@ export const tldr_pt: Record<string, string> = {
   "trial-modernisation-roadmap": "O ensaio randomizado é a forma como a oncologia sabe o que funciona, e ele é lento, caro e inclui menos de um em cada dez pacientes. O roteiro é o conjunto de desenhos e ferramentas que mantêm o rigor enquanto reduzem o tempo, o custo e as exclusões: ensaios de plataforma que nunca fecham, desfechos baseados em exames de sangue, consentimento remoto, dados do mundo real usados com honestidade e doses escolhidas com base em evidências.",
   "triana-biomedicines": "A Triana Biomedicines projeta colas moleculares que fazem as células cancerosas destruir as suas próprias proteínas defeituosas. O seu primeiro medicamento, TRI-611, remove a proteína de fusão ALK que impulsiona um subconjunto de cânceres de pulmão e entrou em ensaios em humanos.",
   "tropion-breast01": "O ensaio que levou à aprovação do Datroway no câncer de mama com receptores hormonais positivos, embora não tenha prolongado a sobrevida global.",
-  "tropion-breast02": "O primeiro ensaio a mostrar benefício de sobrevida global para um ADC de primeira linha no câncer de mama triplo-negativo.",
+
   "tropion-breast03": "O TROPION-Breast03 é o equivalente com Dato-DXd do ASCENT-05: um ADC, com ou sem imunoterapia, para pacientes triplo-negativas com câncer residual na cirurgia.",
   "tropion-breast05": "Testa se Dato-DXd mais um bloqueador de PD-L1 supera o padrão atual de imunoterapia com quimioterapia.",
   "trusight-oncology-comprehensive": "Um grande painel de genes que os hospitais podem executar por conta própria, aprovado pela FDA em 2024 como diagnóstico complementar para o medicamento agnóstico de tumor larotrectinib.",
@@ -5128,7 +5128,7 @@ export const tldr_pt: Record<string, string> = {
   "linker-mm1": "O LINKER-MM1 é o estudo pivotal do linvoseltamabe, com 45% de respostas completas.",
   "linkoping-university-hospital": "O hospital universitário do sudeste da Suécia, credenciado pela OECI como Comprehensive Cancer Centre e sede de um dos centros regionais de câncer da Suécia.",
   "litespark-012": "Adicionar belzutifan a lenvatinibe-pembrolizumabe em primeira linha não deu resultado, um lembrete de que o sucesso em linhas posteriores não garante benefício em primeira linha.",
-  liv1: "O LIV-1 é um transportador de zinco regulado por estrogênio presente na maioria dos cânceres de mama; o ADC dirigido a ele (ladiratuzumabe vedotina) mostrou atividade na doença triplo-negativa, mas foi descontinuado em 2024.",
+
   liyfe: "A Liyfe criou uma enfermeira digital que acompanha pacientes com câncer entre as consultas, pontua seus sintomas e sinaliza quem precisa de uma ligação, para reduzir idas ao pronto-socorro.",
   "louis-staudt": "Louis Staudt definiu os subtipos moleculares do linfoma de grandes células B que orientam a terapia direcionada.",
   "ludmil-alexandrov": "Criou o arcabouço matemático para extrair assinaturas mutacionais de genomas de câncer e o catálogo de assinaturas COSMIC.",

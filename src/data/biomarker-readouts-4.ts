@@ -11,11 +11,12 @@ import { b, cdx, FDA_CDX_LABEL, FDA_CDX_URL, LABEL, th } from "./biomarker-reado
 const CT = (nct: string) => `https://clinicaltrials.gov/study/${nct}`;
 const NO_TEST = "The label names the antigen in the drug's description but does not require it to be measured before treatment; no approval threshold exists for this readout.";
 
-/** An expression readout that no label gates on: the antigen is the drug's target, not a test result. */
-const expr = (x: { id: string; name: string; aka: string[]; target: string; tldr: string; summary: string; quote: string; source: string; sourceLabel: string; cancers: string[]; drugs: string[]; forPatient: string; terms?: string[]; related?: string[]; definedBy?: { label: string; url: string }; tests?: string[] }): BiomarkerInput =>
+/** Research-only readouts supply their own scoring rule rather than inheriting label language. */
+const expr = (x: { id: string; name: string; aka: string[]; target: string; tldr: string; summary: string; quote: string; source: string; sourceLabel: string; cancers: string[]; drugs: string[]; forPatient: string; terms?: string[]; related?: string[]; definedBy?: { label: string; url: string }; tests?: string[]; asOf?: BiomarkerInput["asOf"]; notes?: BiomarkerInput["notes"]; links?: BiomarkerInput["links"]; scoringRule?: BiomarkerInput["scoringRule"] }): BiomarkerInput =>
   b({ id: x.id, name: x.name, aka: x.aka, target: x.target, measurement: "ihc-score", tldr: x.tldr, summary: x.summary,
-    scoringRule: { text: NO_TEST, quote: x.quote, source: x.source, sourceLabel: x.sourceLabel }, definedBy: x.definedBy,
-    cancers: x.cancers, drugs: x.drugs, tests: x.tests, forPatient: x.forPatient, terms: x.terms, related: x.related, links: [{ label: x.sourceLabel, url: x.source }], tags: ["biomarker", "surface-antigen", "no-threshold"] });
+    scoringRule: x.scoringRule ?? { text: NO_TEST, quote: x.quote, source: x.source, sourceLabel: x.sourceLabel }, definedBy: x.definedBy,
+    ...(x.asOf !== undefined ? { asOf: x.asOf } : {}), ...(x.notes !== undefined ? { notes: x.notes } : {}),
+    cancers: x.cancers, drugs: x.drugs, tests: x.tests, forPatient: x.forPatient, terms: x.terms, related: x.related, links: [{ label: x.sourceLabel, url: x.source }, ...(x.links ?? [])], tags: ["biomarker", "surface-antigen", "no-threshold"] });
 
 export const biomarkerReadouts4: BiomarkerInput[] = [
   // ---- Lineage antigens with a label requirement ----
@@ -121,18 +122,61 @@ export const biomarkerReadouts4: BiomarkerInput[] = [
     terms: ["ihc", "platinum-sensitivity"], related: ["brca-somatic", "hrd-positive"], links: [{ label: "ELAHERE prescribing information (DailyMed)", url: LABEL.elahere }], tags: ["biomarker", "surface-antigen"] }),
 
   b({ measurement: "ihc-score", tags: ["biomarker", "surface-antigen", "no-threshold"],
-    scoringRule:{"text":"ASCENT used a validated research immunohistochemistry assay and histochemical H-score in a prespecified exploratory analysis. Its high, medium and low research groups are not a labelled TROP2 cutoff for the U.S. breast indications described here.","quote":"prespecified, exploratory biomarker analysis","source":"https://doi.org/10.1016/j.annonc.2021.06.002","sourceLabel":"Bardia and colleagues, ASCENT exploratory biomarker analysis, 2021"}, notes:["A biopsy samples one lesion at one time. Surface staining does not measure binding, uptake, released active drug, intracellular transport or sensitivity to that drug. Those steps can differ even when two samples have similar staining. Drug-specific mechanistic evidence and clinical evidence are needed before turning expression into a treatment rule."], links:[{"label":"TRODELVY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"},{"label":"DATROWAY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"},{"label":"FDA: Trodelvy urothelial indication withdrawal","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sacituzumab-govitecan-advanced-urothelial-cancer"},{"label":"FDA: first-line sacituzumab TNBC indications, June 24, 2026","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},{"label":"FDA: Dato-DXd TNBC indication, May 22, 2026","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer"},{"label":"ASCENT prespecified exploratory TROP2 analysis: primary populations and subgroup limits","url":"https://pubmed.ncbi.nlm.nih.gov/34116144/"}], asOf:"2026-11-09", id: "trop2-expression", name: "TROP2 expression", aka: ["TROP2", "TROP-2", "Trop-2 expression", "TACSTD2 expression", "TROP2 QCS", "TROP2 normalised membrane ratio"], target: "trop2",
+    scoringRule:{"text":"ASCENT used a validated research immunohistochemistry assay and histochemical H-score in a prespecified exploratory analysis. Its high, medium and low research groups are not a labelled TROP2 cutoff for the U.S. breast indications described here.","quote":"prespecified, exploratory biomarker analysis","source":"https://doi.org/10.1016/j.annonc.2021.06.002","sourceLabel":"Bardia and colleagues, ASCENT exploratory biomarker analysis, 2021"}, notes:["A biopsy samples one lesion at one time. Surface staining does not measure binding, uptake, released active drug, intracellular transport or sensitivity to that drug. Those steps can differ even when two samples have similar staining. Drug-specific mechanistic evidence and clinical evidence are needed before turning expression into a treatment rule.",
+"Two retrospective TNBC series used different assays. Jacot's 2025 nonmetastatic series used the Enzo ENZ-ABS380 antibody and H-scores below 100, 100 to 200, and above 200: 225 of 228 tumours had membrane expression and 58.8% were in the strong group. Izci's 2022 series included 685 patients overall, with 589 scored for these groups using Abcam ab227689: 97 high (201 to 300), 149 medium (100 to 200) and 343 low (below 100), or 16.5%, 25.3% and 58.2%. These are assay- and cohort-specific distributions, not harmonised prevalence estimates or validated individual treatment thresholds.",
+"Stepan's 2011 transcript and protein survey found substantial TROP2 expression in several essential normal tissues. Tumour enrichment and a current label's lack of a TROP2 selection test answer different questions from accessible normal-tissue expression and the finished product's therapeutic window. A fictional 85%-positive, minimally normal-staining proposal still needs the antibody, cutoff, cohort, positive-cell distribution within tumours, normal tissues and methods, and full-product distribution, processing and response evidence. A single stain or an antigen count does not supply those results."
+], links:[{"label":"TRODELVY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"},{"label":"DATROWAY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"},{"label":"FDA: Trodelvy urothelial indication withdrawal","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sacituzumab-govitecan-advanced-urothelial-cancer"},{"label":"FDA: first-line sacituzumab TNBC indications, June 24, 2026","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"},{"label":"FDA: Dato-DXd TNBC indication, May 22, 2026","url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer"},{"label":"ASCENT prespecified exploratory TROP2 analysis: primary populations and subgroup limits","url":"https://pubmed.ncbi.nlm.nih.gov/34116144/"},
+{
+  "label": "Jacot et al.: assay-defined TROP2 staining in 228 nonmetastatic TNBCs (2025)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40059728/"
+},
+{
+  "label": "Izci et al.: TROP2 assay and H-score groups in a retrospective TNBC cohort (2022)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/36577919/"
+},
+{
+  "label": "Stepan et al.: TROP2 transcript and protein expression in normal and tumour tissues (2011)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/21551320/"
+}
+], asOf:"2026-11-11", id: "trop2-expression", name: "TROP2 expression", aka: ["TROP2", "TROP-2", "Trop-2 expression", "TACSTD2 expression", "TROP2 QCS", "TROP2 normalised membrane ratio"], target: "trop2",
     tldr: "TROP2 expression is a measured feature, not a universal ADC selection rule. The current U.S. breast-cancer uses of sacituzumab govitecan and datopotamab deruxtecan do not require a TROP2 test; other treatment requirements still apply.",
     summary: "In ASCENT, a prespecified exploratory analysis used an immunohistochemical H-score to examine TROP2 expression. Results were available for 290 of the 468 patients in the primary population without brain metastases. The authors supported benefit in the high and medium groups and said the low group was too small for a definitive benefit conclusion. This analysis does not establish equal effects at every expression level or a validated universal threshold. A marker association, a randomised treatment comparison and a treatment-by-marker interaction answer different questions.\n\nThe current U.S. breast indications for sacituzumab govitecan and datopotamab deruxtecan do not require a TROP2 selection assay. That regulatory rule does not prove that the target or its delivery is biologically irrelevant. Check the exact drug, subtype, setting and prior treatment. The first-line sacituzumab-pembrolizumab regimen has a separate PD-L1 CPS requirement of at least 10 using an FDA-authorized test. A research H-score or computational membrane score is not automatically an interchangeable clinical selection test.",
     cancers: ["tnbc", "tnbc-metastatic", "breast-hr-positive", "urothelial", "nsclc"], drugs: ["sacituzumab-govitecan", "datopotamab-deruxtecan", "sacituzumab-tirumotecan"],
     forPatient: "A TROP2 result describes the tested sample. It does not by itself tell whether an ADC will work. These two U.S. breast-cancer drug labels do not require a TROP2 test, but the exact subtype, prior treatment and regimen still matter; the first-line sacituzumab-pembrolizumab combination requires its separate PD-L1 result.", terms: ["ihc"], related: ["her2-low", "nectin-4-expression"] }),
 
   expr({ id: "nectin-4-expression", name: "Nectin-4 expression", aka: ["Nectin-4", "NECTIN4 expression", "Nectin-4 positive", "Nectin-4 H-score"], target: "nectin4",
-    tldr: "Nectin-4 is expressed by almost every urothelial cancer, so enfortumab vedotin is given without a test. Nectin-4 amplification is being studied as a marker of especially strong response.",
-    summary: "Enfortumab vedotin (Padcev) is labelled alone and with pembrolizumab for locally advanced or metastatic urothelial cancer with no Nectin-4 requirement; the pivotal EV-201 and EV-301 trials enrolled without testing after screening showed near-universal expression. Retrospective work links NECTIN4 amplification to higher response rates; a Nectin-4 PET tracer is in early trials. No approval or guideline sets a threshold.",
+    tldr: "Nectin-4 is a surface protein targeted by enfortumab vedotin. Its U.S. label does not require a Nectin-4 test; that rule does not guarantee response or safety.",
+    summary: "The U.S. PADCEV label defines particular bladder and urothelial cancer uses, combinations and prior-treatment settings without requiring a Nectin-4 expression cutoff. Other eligibility conditions and product warnings still apply. A tissue stain measures the tested sample; it is different from accessible binding, delivered active drug and a useful therapeutic window.\n\nThe 2017 TNBC staining study and the 2025 EV-202 breast cohorts are separate, assay- and population-specific sources. Neither supplies a universal prevalence, a validated individual response threshold or a comparison against a TROP2 ADC.",
     quote: "PADCEV is a Nectin-4-directed antibody and microtubule inhibitor conjugate", source: LABEL.padcev, sourceLabel: "PADCEV prescribing information (DailyMed)",
     cancers: ["urothelial"], drugs: ["enfortumab-vedotin"],
-    forPatient: "Enfortumab vedotin does not need a Nectin-4 test; the antigen is present in nearly all bladder cancers. Research is looking at whether tumours with extra copies of the Nectin-4 gene respond even better, but that is not part of routine care.", terms: ["ihc", "gene-amplification"], related: ["trop2-expression", "fgfr3-alteration"] }),
+    forPatient: "A Nectin-4 result belongs to the tested sample. The U.S. PADCEV label does not use an expression cutoff to select patients for its labelled uses. That rule does not make the marker biologically irrelevant, demonstrate an individual response or establish normal-tissue safety.", terms: ["ihc", "gene-amplification"], related: ["trop2-expression", "fgfr3-alteration"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "M-Rabet's 2017 study found membranous Nectin-4 staining in 62% of 61 TNBCs and did not detect protein in the adult normal tissues examined by that assay. That negative assay result is not universal normal-tissue absence or a safety advantage. PADCEV, a different finished Nectin-4-directed construct, carries a boxed warning for severe and fatal skin reactions. Keep antibody, preparation, tissue coverage, detection limits, product and exposure with the comparison.",
+  "A staining prevalence, activity of an experimental conjugate in a mouse and a response rate in a nonrandomised clinical cohort are different observations. The EV-202 breast-cohort results are on the trial record. Comparing them with a different product's randomised trial or an unrelated tissue survey cannot rank Nectin-4 against TROP2 as an intrinsically better target, a safer target or a more effective clinical choice."
+],
+"links": [
+  {
+    "label": "M-Rabet et al.: Nectin-4 staining and experimental conjugate activity (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27998973/"
+  },
+  {
+    "label": "EV-202: the existing trial record and cohort-specific results",
+    "url": "https://clinicaltrials.gov/study/NCT04225117"
+  },
+  {
+    "label": "Giordano et al.: previously treated breast cohorts in phase 2 EV-202 (2025)",
+    "url": "https://doi.org/10.1200/OA-25-00053"
+  }
+]
+,
+"scoringRule": {
+  "text": "The U.S. PADCEV label does not require a Nectin-4 expression threshold for its specified uses. This label rule is separate from research assays and other investigational products.",
+  "quote": "PADCEV is a Nectin-4-directed antibody and microtubule inhibitor conjugate",
+  "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5631d3e-4604-4363-8f20-11dfc5a4a8ed",
+  "sourceLabel": "PADCEV U.S. prescribing information: indications and patient selection"
+}
+}),
 
   expr({ id: "her3-expression", name: "HER3 expression", aka: ["HER3", "ERBB3 expression", "HER3-positive", "HER3 IHC"], target: "her3",
     tldr: "HER3 is a signalling partner of EGFR and HER2 present on most lung and breast cancers. Patritumab deruxtecan was studied in EGFR-mutant lung cancer without a HER3 threshold, and no approval exists.",
@@ -142,11 +186,38 @@ export const biomarkerReadouts4: BiomarkerInput[] = [
     forPatient: "There is no approved HER3-directed drug and no HER3 test you would routinely have. Patritumab deruxtecan is available only in trials, which enrol on the EGFR mutation rather than on HER3 staining.", related: ["egfr-exon-19-deletion", "her2-ihc-3-plus"] }),
 
   expr({ id: "b7-h3-expression", name: "B7-H3 (CD276) expression", aka: ["B7-H3", "CD276 expression", "B7-H3 positive"], target: "b7h3",
-    tldr: "B7-H3 is an immune checkpoint protein overexpressed on small-cell lung, prostate and many solid tumours. Ifinatamab deruxtecan is in phase 3 for small-cell lung cancer without an expression cut-off; nothing is approved.",
-    summary: "Ifinatamab deruxtecan (I-DXd) is being compared with topotecan or other chemotherapy in relapsed small-cell lung cancer in IDeate-Lung02 (NCT06203210) with no B7-H3 selection; earlier phase studies found responses across expression levels. Other B7-H3 ADCs and radioligands are in early trials. No regulator has approved a B7-H3-directed drug.",
-    quote: "IDeate-Lung02: ifinatamab deruxtecan versus treatment of physician's choice in relapsed small cell lung cancer", source: CT("NCT06203210"), sourceLabel: "ClinicalTrials.gov NCT06203210 (IDeate-Lung02)", definedBy: { label: "IDeate-Lung02 (NCT06203210)", url: CT("NCT06203210") },
+    tldr: "B7-H3 expression is an assay result. A positive stain does not by itself establish drug activity, safety or eligibility.",
+    summary: "B7-H3, also called CD276, has been studied on cancer cells and tumour-associated vessels. Expression in a tissue sample is different from accessible binding, delivered active material and clinical benefit. Preclinical compartment-targeting experiments and clinical trial registrations answer different questions; neither supplies a universal expression threshold or a breast-cancer prevalence estimate.",
+    quote: "B7-H3 protein expression", source: CT("NCT06203210"), sourceLabel: "ClinicalTrials.gov NCT06203210 (IDeate-Lung02)", definedBy: { label: "IDeate-Lung02 (NCT06203210)", url: CT("NCT06203210") },
     cancers: ["sclc", "extensive-stage-sclc", "prostate-mcrpc"], drugs: ["ifinatamab-deruxtecan"],
-    forPatient: "B7-H3 is a research target. If you have small-cell lung cancer that has returned, a trial of ifinatamab deruxtecan may be open to you without any B7-H3 test; ask your team.", related: ["dll3-expression"] }),
+    forPatient: "A B7-H3 staining result does not by itself establish eligibility for ifinatamab deruxtecan. Each study has its own disease, prior-treatment, other eligibility and site requirements; a recruiting entry is not an approval or a promise that a place is available.", related: ["dll3-expression"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Seaman's 2017 preclinical work compared defined CD276 conjugates in mouse tumour models. The MMAE construct acted on CD276-positive cancer cells but did not effectively ablate tumour vessels; the PBD construct acted on both compartments and eradicated large established tumours and metastases in the reported models. Preserve the particular antibody, payload, compartment and model. This result does not mean that every B7-H3 payload will behave alike or establish the frequency of expression or benefit in people with breast cancer.",
+  "In the ClinicalTrials.gov entries checked on 11 November 2026, three named ifinatamab deruxtecan studies were phase 3 and recruiting: NCT06203210 in relapsed small-cell lung cancer, NCT06925737 in metastatic castration-resistant prostate cancer and NCT06644781 in previously treated advanced or metastatic oesophageal squamous-cell cancer. Their diseases and comparators remain separate. Phase and recruitment are dated registry facts, not reported efficacy, an approval decision, guaranteed enrolment or a breast-cancer indication."
+],
+"links": [
+  {
+    "label": "Seaman et al.: CD276 cancer-cell and vascular targeting in preclinical models (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28399408/"
+  },
+  {
+    "label": "ClinicalTrials.gov NCT06925737 (captured 11 November 2026)",
+    "url": "https://clinicaltrials.gov/study/NCT06925737"
+  },
+  {
+    "label": "ClinicalTrials.gov NCT06644781 (captured 11 November 2026)",
+    "url": "https://clinicaltrials.gov/study/NCT06644781"
+  }
+]
+,
+"scoringRule": {
+  "text": "The IDeate-Lung02 registry describes B7-H3 protein expression as a research variable. A trial objective is not a universal clinical expression threshold.",
+  "quote": "B7-H3 protein expression",
+  "source": "https://clinicaltrials.gov/study/NCT06203210",
+  "sourceLabel": "ClinicalTrials.gov NCT06203210: secondary objectives"
+}
+}),
 
   expr({ id: "dll3-expression", name: "DLL3 expression", aka: ["DLL3", "DLL3-positive", "delta-like ligand 3 expression", "DLL3 IHC"], target: "dll3",
     tldr: "DLL3 sits on the surface of about 85 percent of small-cell lung cancers and almost no normal adult tissue. Tarlatamab is given without a DLL3 test.",

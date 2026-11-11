@@ -239,7 +239,7 @@ export const simpleJ: Record<string, string> = {
   "immune-checkpoint": "An immune checkpoint is a brake that stops T cells attacking healthy tissue, which tumours exploit and which checkpoint inhibitor drugs release.",
   "immunotherapy-term": "Immunotherapy is any treatment that gets the patient's own immune system to attack the cancer, sometimes giving responses that last years but only in some patients.",
   "chemotherapy-term": "Chemotherapy medicines affect different cell processes. They can kill cancer cells or slow their growth, and healthy cells can be affected too.",
-  "targeted-therapy-term": "Targeted therapy means drugs designed to hit a specific molecule the cancer depends on while sparing normal cells, with the tumour tested first for that target.",
+  "targeted-therapy-term": "A targeted treatment acts on a particular molecule or process. Some block cancer growth; others deliver drugs or recruit immune cells. The target name alone does not show benefit or safety.",
   "hormone-therapy": "Hormone therapy starves cancers that grow in response to a hormone, mainly oestrogen in breast cancer and testosterone in prostate cancer, by lowering or blocking it.",
   "radiotherapy": "Radiotherapy uses high-energy X-rays or particles to damage the DNA of cancer cells in a precisely aimed part of the body, curing many localised cancers.",
   "systemic-vs-local-therapy": "Local therapy such as surgery or radiotherapy treats one place, while systemic therapy such as drugs travels through the blood to treat the whole body.",

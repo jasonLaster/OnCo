@@ -945,16 +945,37 @@ export const gapTargets: TargetInput[] = [
       { label: "Ubamatamab translational study (Zhu et al., Clin Transl Sci 2024)", url: "https://doi.org/10.1111/cts.70082" },
     ], tags: ["gap-fill"] }), asOf: "2026-09-21" },
   tg({ id: "liv1", name: "LIV-1 (SLC39A6)", symbol: "SLC39A6", hgnc: "HGNC:18607", ensembl: "ENSG00000141424", uniprot: "Q13433", entrez: "25800", targetClass: "surface-antigen", wikipedia: W("SLC39A6"),
-    tldr: "LIV-1 is an oestrogen-regulated zinc transporter on most breast cancers; the ADC against it (ladiratuzumab vedotin) showed activity in triple-negative disease but was discontinued in 2024.",
-    summary: "LIV-1 is expressed in >90% of breast cancers including ~70% of TNBC, and in prostate, melanoma and cervical cancers. Ladiratuzumab vedotin (SGN-LIV1A, MMAE payload) produced ~25-30% responses in pretreated metastatic breast cancer and was tested with pembrolizumab; Pfizer discontinued it in 2024 after acquiring Seagen. The target remains validated for next-generation ADCs and radioligands.",
+    tldr: "LIV-1 is a zinc transporter studied as an antibody-delivery target in breast cancer. Measured expression and trial completion do not by themselves establish patient benefit or availability.",
+    summary: "LIV-1 (SLC39A6) is a zinc transporter investigated as a delivery target. Sussman's 2014 work reported expression retained after hormonal therapy in primary and metastatic breast specimens, upregulation in triple-negative breast cancer, and expression in several other cancer types. These observations do not provide one universal TNBC prevalence or a normal-tissue denominator.\n\nThe specified SGN-LIV1A construct used an MMAE payload. In tested cell lines it was internalised and trafficked to lysosomes, with activity in cell and tumour models. That supports preclinical development, not a validated clinical target or a response guarantee for every LIV-1-positive tumour.",
     biology: "Zinc transporter of the ZIP family (SLC39A6) that localises to the plasma membrane, imports zinc and promotes EMT via STAT3/Snail; transcriptionally induced by oestrogen (hence LIV-1, from ER+ breast cancer lines).",
-    whereFound: ["Breast cancer (>90% HR+, ~70% TNBC)", "Prostate cancer", "Cervical, melanoma, pancreatic cancer (subsets)"],
+    whereFound: [
+  "Breast cancer, including triple-negative tumour samples in the 2014 study; expression is assay-dependent",
+  "Prostate cancer",
+  "Cervical, melanoma, pancreatic cancer (subsets)"
+],
     cancers: ["tnbc", "breast-hr-positive", "prostate"], technologies: ["adc"], companies: ["pfizer"],
     prevalence: [
       { cancerId: "breast-hr-positive", pct: "37-43", measure: "IHC, high SLC39A6 expression (cytoplasmic H-score >160 in 37%; nuclear staining in 43%) in 670 unselected early breast cancers, enriched in ER+ tumours", source: "https://doi.org/10.1007/s10549-021-06336-y", note: "Assay- and cutoff-dependent: Seagen's SGN-LIV1A programme reported far higher any-expression rates with its own IHC assay" },
     ],
-    notes: ["TNBC and prostate rates are not well characterised in peer-reviewed series with a stated denominator; the ~70% TNBC figure comes from sponsor assays reported in trial abstracts."],
-    links: [{ label: "Ladiratuzumab vedotin (JCO 2019 abstract)", url: "https://doi.org/10.1200/JCO.2019.37.15_suppl.1094" }], tags: ["gap-fill", "discontinued"] }),
+    notes: ["TNBC and prostate rates are not well characterised in peer-reviewed series with a stated denominator; the ~70% TNBC figure comes from sponsor assays reported in trial abstracts.",
+"The ClinicalTrials.gov entries checked on 11 November 2026 list NCT01969643, the ladiratuzumab-vedotin study, as completed and NCT03310957, its pembrolizumab combination study, as completed. These are study states, not evidence of regulatory approval, an open treatment site or present drug availability. A statement about expression in other cancer types also does not establish how much accessible LIV-1 is present in normal tissues."
+],
+    links: [{ label: "Ladiratuzumab vedotin (JCO 2019 abstract)", url: "https://doi.org/10.1200/JCO.2019.37.15_suppl.1094" },
+{
+  "label": "Sussman et al.: LIV-1 expression and SGN-LIV1A trafficking and model activity (2014)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/25253783/"
+},
+{
+  "label": "ClinicalTrials.gov NCT01969643 (captured 11 November 2026)",
+  "url": "https://clinicaltrials.gov/study/NCT01969643"
+},
+{
+  "label": "ClinicalTrials.gov NCT03310957 (captured 11 November 2026)",
+  "url": "https://clinicaltrials.gov/study/NCT03310957"
+}
+], tags: ["gap-fill", "discontinued"] ,
+"asOf": "2026-11-11"
+}),
   tg({ id: "mdm2", trials: ["nct06578624"], drugs: ["krt-232"], name: "MDM2", symbol: "MDM2", hgnc: "HGNC:6973", ensembl: "ENSG00000135679", uniprot: "Q00987", entrez: "4193", targetClass: "other", wikipedia: W("Mdm2"),
     tldr: "MDM2 is the protein that degrades p53; blocking it reactivates p53 in tumours where the gene is intact, especially the liposarcomas that carry extra copies of MDM2.",
     summary: "MDM2 is an E3 ubiquitin ligase and p53's principal negative regulator; MDM2 amplification defines well-differentiated/dedifferentiated liposarcoma (>90%), intimal sarcoma and low-grade osteosarcoma, and occurs in ~5% of glioblastoma and some breast and lung cancers. MDM2-p53 inhibitors (nutlins: idasanutlin, milademetan, brigimadlin, navtemadlin, siremadlin, alrizomadlin) reactivate wild-type p53 but cause on-target thrombocytopenia and GI toxicity and select for TP53 mutations. Brigimadlin (Brightline-1, dedifferentiated liposarcoma vs doxorubicin) is the lead phase 3; navtemadlin is in phase 3 in myelofibrosis after ruxolitinib (BOREAS). Idasanutlin failed in AML (MIRROS). MDM2 amplification also predicts hyperprogression on checkpoint inhibitors.",

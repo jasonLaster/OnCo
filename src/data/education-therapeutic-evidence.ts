@@ -15,7 +15,11 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "notes": [
       "FDA’s 2024 guidance for cytotoxic small-molecule ADCs recommends validated measurements of the conjugate and relevant constituent parts, with later omissions justified by pharmacology, assay sensitivity and exposure data. It does not require every conceivable analyte in every study or automatically apply to every immune agonist or other cargo.",
       "For a construct carrying different payloads, keep each chemical identity, loading distribution, release behavior and exposure distinct. A manufactured loading ratio does not establish the ratio reaching tissue over time. The same total DAR does not establish equal loading of each component or equal biological activity."
-    ],
+    ,
+"The June 2026 U.S. TRODELVY label describes serum measurements in metastatic breast cancer and reports a median conjugate elimination half-life of 6.5 days and a median free-SN-38 value of 22 hours; it separately gives a 6.7-day terminal conjugate value and a 24-hour apparent free-SN-38 value. The ENHERTU label, in patients with cancer, reports median elimination half-lives of 5.4 to 5.7 days for the conjugate and 5.4 to 6.1 days for DXd. DATROWAY reports median elimination half-life 4.8 days for the conjugate and median apparent half-life about 5.5 days for released DXd. Keep the label version, named analyte, population, assay specimen and exact parameter definition; these label entries do not specify every assay matrix. The TRODELVY section presents parameters as means unless specified otherwise, so its separately labelled median, terminal and apparent values must not be merged. Similar half-life values also do not make entire concentration curves identical or measure intracellular exposure throughout a tumour.",
+"An apparent released-drug curve can reflect continued formation as well as removal. PADCEV explicitly describes unconjugated MMAE elimination as limited by release from its conjugate. That product example is not an estimate of isolated DXd elimination. ENHERTU reports systemic clearances of 0.4 litres per day for the conjugate and 18 litres per hour for DXd; a clearance comparison alone does not determine intrinsic half-life without distribution and model information. Nakada and colleagues, working at Daiichi Sankyo, described short systemic DXd half-life as a preclinical design rationale in 2019. Their rationale and later human label parameters answer different questions and do not by themselves establish tumour selectivity or safety.",
+"In a fictional report, antibody-associated signal remains measurable two weeks after administration. That supports detection of the measured antibody species at the sampled sites and times, not active payload in every cancer cell. Ask which chemical species the assay distinguishes, whether active material reached its action compartment, and whether a relevant functional effect and later survival were measured. Sparse blood samples and a bulk tumour sample cannot establish every cell's exposure."
+],
     "links": [
       {
         "label": "FDA: clinical pharmacology considerations for cytotoxic ADCs (2024)",
@@ -29,7 +33,28 @@ export const educationTherapeuticEvidence: TermInput[] = [
         "label": "Hamblett et al.: loading and exposure in one conjugate, cell and mouse experiments (2004)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/15501986/"
       }
-    ],
+    ,
+{
+  "label": "TRODELVY U.S. label: indications, mechanism and named pharmacokinetic measurements",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+},
+{
+  "label": "ENHERTU U.S. label: indications, mechanism, pharmacokinetics and cardiac assessment",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+},
+{
+  "label": "DATROWAY U.S. label: indications, mechanism and apparent released-DXd half-life",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+},
+{
+  "label": "PADCEV U.S. label: skin warning, MMAE transport and release-limited pharmacokinetics",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5631d3e-4604-4363-8f20-11dfc5a4a8ed"
+},
+{
+  "label": "Nakada et al.: developer-authored DS-8201a review and preclinical design rationale (2019)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/30827997/"
+}
+],
     "related": [
       "adc",
       "dar",
@@ -38,7 +63,7 @@ export const educationTherapeuticEvidence: TermInput[] = [
       "dual-payload-adc"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-11",
     "category": "ADC"
   },
   {

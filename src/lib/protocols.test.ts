@@ -81,10 +81,25 @@ describe("care protocols", () => {
     for (const p of list) for (const id of [...p.technologies, ...p.drugs, ...p.terms]) {
       expect(protocolsFor(g.must(id)).some((m) => m.protocol.id === p.id), `${id} should list ${p.id}`).toBe(true);
     }
-    const viaDrug = list.find((p) => p.drugs.length);
-    if (viaDrug) {
-      const cancer = g.kind("cancer").find((c) => c.drugs.some((d) => viaDrug.drugs.includes(d)));
-      if (cancer) expect(protocolsFor(cancer).find((m) => m.protocol.id === viaDrug.id)?.via).toBeDefined();
-    }
+    // A cancer the protocol does not name, directly or through a cancer above it in the family, so the only way the
+    // protocol can reach the page is through a medicine the cancer lists. Taking the first cancer that lists the drug
+    // broke as soon as a protocol also named a cancer high in a family: that cancer is then reached directly, with no `via`.
+    const above = (id: string): string[] => {
+      const out: string[] = [];
+      let parent = g.get(id)?.kind === "cancer" ? (g.get(id) as { parent?: string }).parent : undefined;
+      for (let hops = 0; parent && hops < 8; hops++) {
+        out.push(parent);
+        const up = g.get(parent);
+        parent = up?.kind === "cancer" ? (up as { parent?: string }).parent : undefined;
+      }
+      return out;
+    };
+    const pair = list
+      .filter((p) => p.drugs.length)
+      .flatMap((p) => g.kind("cancer").filter((c) => c.drugs.some((d) => p.drugs.includes(d)) && ![c.id, ...above(c.id)].some((id) => (g.incoming(id).get("protocol") ?? []).some((x) => x.id === p.id))).map((c) => ({ p, c })))[0];
+    expect(pair, "a protocol naming a drug that some cancer it does not name lists").toBeDefined();
+    const via = protocolsFor(pair!.c).find((m) => m.protocol.id === pair!.p.id)?.via;
+    expect(via, `${pair!.c.id} should reach ${pair!.p.id} through a treatment`).toBeDefined();
+    expect([...pair!.p.drugs, ...pair!.p.technologies]).toContain(via!.id);
   });
 });

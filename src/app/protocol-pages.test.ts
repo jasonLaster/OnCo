@@ -7,6 +7,8 @@ import KindIndex from "./[kind]/page";
 import { graph } from "@/lib/graph";
 import { PROTOCOL_DOMAIN_LABEL } from "@/lib/kinds";
 import { protocolsFor } from "@/lib/members";
+import { isPagedKind, kindBrowser } from "@/lib/tables/kinds";
+import { KIND_PAGE } from "@/lib/static-tables";
 
 /**
  * The care protocol pages (docs/PROTOCOLS.md): the index groups by domain as filter links rather than printing the
@@ -26,13 +28,18 @@ describe("care protocol pages", () => {
   beforeAll(() => { graph(); }, 240_000);
   const list = graph().kind("protocol");
 
+  // Past sixty protocols the index is a paged table (PAGED_KINDS, docs/PROTOCOLS.md "When the kind grows"): the page
+  // carries the first KIND_PAGE rows in the default order and fetches the rest from the kind's table file, so "every
+  // protocol" is checked on the file the table fetches, and the page on the rows it carries. The domain links are
+  // whole-table, so every protocol's domain is on the page whether or not its row is in the first page.
   it("/protocols/ links each filled domain to the filtered table and lists every protocol", { timeout: SLOW_MS }, async () => {
     const html = decode(render(await KindIndex({ params: Promise.resolve({ kind: "protocols" }) })));
     expect(html).toContain("data-protocol-domains");
-    for (const p of list) {
-      expect(html).toContain(`?domain=${encodeURIComponent(PROTOCOL_DOMAIN_LABEL[p.domain])}`);
-      expect(links(html, p.id), `${p.id} in the table`).toBeGreaterThan(0);
-    }
+    const rows = kindBrowser("protocol").rows;
+    expect(new Set(rows.map((r) => r.id)), "every protocol is in the table the page fetches").toEqual(new Set(list.map((p) => p.id)));
+    const carried = isPagedKind("protocol") ? rows.slice(0, KIND_PAGE) : rows;
+    for (const p of list) expect(html).toContain(`?domain=${encodeURIComponent(PROTOCOL_DOMAIN_LABEL[p.domain])}`);
+    for (const r of carried) expect(links(html, r.id), `${r.id} in the table`).toBeGreaterThan(0);
   });
 
   for (const p of list) {

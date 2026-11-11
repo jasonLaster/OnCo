@@ -19,7 +19,7 @@ import type { TableFile } from "./index";
  * Rows are the same objects src/app/[kind]/page.tsx renders (buildBrowser plus glossary marks), sorted here with
  * the client's own comparator, so the first page and the file agree by construction (scripts/build-tables.test.ts).
  */
-export const PAGED_KINDS: readonly Kind[] = ["trial", "paper", "person", "company", "drug", "idea", "institution", "target", "term", "technology", "cancer"];
+export const PAGED_KINDS: readonly Kind[] = ["trial", "paper", "person", "company", "drug", "idea", "institution", "target", "term", "technology", "cancer", "protocol"];
 
 /** A kind whose browser ships every row: small tables (roadmaps, bottlenecks, pairings, collections, journals, fronts, pathways). */
 export const isPagedKind = (k: Kind): boolean => PAGED_KINDS.includes(k);

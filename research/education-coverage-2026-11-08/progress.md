@@ -9,7 +9,7 @@ The [breast concept assessment](breast-concepts-2026-11-11/README.md) adds twelv
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
 |---|---:|---:|---:|---:|
 | Original (537 sources) | 398 (391 teaching, 7 routing) | 383 | 3,672 / 3,683 | 11 |
-| Later (550 sources) | 402 (399 teaching, 3 routing) | 393 | 3,897 / 3,903 | 6 |
+| Later (550 sources) | 404 (399 teaching, 5 routing) | 393 | 3,897 / 3,903 | 6 |
 
 Each pin has 478 reviewed teaching assets, 63 classified supporting paths and 1,347 unclassified paths. All 917 defined literature occurrences are identity/relevance screened; this does not verify their claims. Thirty-one adjacent findings and six schema items remain open. Both source ledgers have zero stale or missing current proofs and retain exit 2 for real unfinished work.
 
@@ -110,3 +110,7 @@ The partial checkpoint above is superseded by the complete coordinator field com
 ## Later routing review, 11 November 2026
 
 Three routing pages were read in full, with fourteen exact section signatures and 78 valid educational destinations. They add no scientific answer or clinical rule and receive zero teaching credit. The concept and illustration catalogues remain unreviewed pending complete generated-entry/owner comparisons. Original-pin dispositions and all canonical data remain unchanged.
+
+## Generated catalogue review, 11 November 2026
+
+Both catalogue versions are reconciled at entry level: 400/434 owner definitions and 381/380 owner alt-text entries. All scientific text is read directly or reused only by exact original/later identity. All 25 section signatures reproduce; all 761 registered images and dark companions exist. The original routing decisions are rechecked and the later pair is classified as duplicate-only navigation. No parent lesson, image or scientific requirement gains credit. Two source-generation truncations remain separate quality findings. All later navigation is now accounted for; 146 ordinary later sources remain unread.

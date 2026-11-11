@@ -393,13 +393,13 @@ const supplements: SpikeSupplement[] = [
 
   { id: "hormone-receptor-status", terms: ["er-pr-scoring-breast", "receptor-conversion-breast", "grade-stage-receptor-breast"], related: ["er-pr-scoring-breast"],
     links: [SRC.g148], notes: [
-      "How the number is produced, and why 90 percent and 100 percent mean the same thing. Only nuclear staining in the invasive part of the tumour is counted, and the UK dataset asks for a percentage with an intensity and, optionally, an Allred score out of 8 or an H score out of 300; there is no internationally agreed scoring method. With modern methods the distribution is bimodal, most tumours being either completely negative or stained in more than 70 percent of nuclei, so the difference between two high percentages is noise while a result in the 1 to 10 percent band is a different question (see `er-pr-scoring-breast` and `er-pr-negative-threshold`).",
-      "Progesterone receptor is not a mandatory item of the UK pathology dataset. ASCO and CAP state that only oestrogen receptor should be used to predict benefit from adjuvant endocrine therapy, and the RCPath writing group, finding no consensus, left progesterone receptor out of the mandated dataset while recommending it as good practice; NICE NG101 1.3.3 asks for it on every invasive cancer. Its value is prognostic within oestrogen receptor-positive disease, and as a quality check, because an oestrogen receptor-negative, progesterone receptor-positive result is at best very rare and should prompt review of the oestrogen receptor stain.",
+      "The RCPath dataset asks for the percentage of positive invasive tumour-cell nuclei and staining intensity, with an optional Allred score out of 8 or H score out of 300. These are different scales, not interchangeable percentages. Its description of a mostly bimodal ER distribution does not establish that every difference between 90% and 100% is noise or that those values measure equal signalling or treatment benefit. Controls and the low-positive range require their own interpretation.",
+      "The RCPath breast dataset describes PR testing as good practice but does not make it a mandatory dataset item. It notes its prognostic value in ER-positive invasive disease and the quality-control question raised by the rare ER-negative/PR-positive combination. The dataset also describes recommendations from ASCO/CAP and NICE; reporting requirements and prediction of endocrine benefit are distinct issues.",
     ] },
 
   { id: "her2-positive", terms: ["her2-testing-uk-breast", "receptor-conversion-breast"], related: ["her2-testing-uk-breast"],
     links: [SRC.g148, SRC.rakha2023], notes: [
-      "Britain and America classify one borderline group differently. Cases with a HER2 to chromosome 17 ratio of 2.0 or more but a HER2 copy number below 4 (ASCO and CAP's FISH group 2) are negative under the American guideline and positive under the UK recommendations, which the RCPath dataset in force restates and declines to change. The UK also asks for dual-probe in situ hybridisation with the ratio, the HER2 copy number and the chromosome 17 copy number all reported, and puts HER2 positivity at 13 to 20 percent of early breast cancer.",
+      "The RCPath UK breast dataset retains a different classification from ASCO/CAP for some dual-probe ISH group 2 cases: HER2/CEP17 ratio at least 2.0 with mean HER2 below 4 signals per cell. The UK dataset classifies these as positive. Under ASCO/CAP, concurrent IHC matters: IHC 3+ is positive, while IHC 2+ requires the specified recount and is negative if the same group persists; IHC 0 or 1+ is negative. Thus the US result is not uniformly negative from the ratio and copy number alone. The UK dataset asks for ratio and mean HER2 and CEP17 signals, with the guideline and specimen context retained.",
     ] },
 
   { id: "her2-low", terms: ["her2-testing-uk-breast", "who-breast-classification"], links: [SRC.who6], notes: [
@@ -541,7 +541,7 @@ const her2PositivePatch: Spike["patch"] = {
 };
 
 const tnbcPatch: Spike["patch"] = {
-  asOf: "2026-11-09",
+  asOf: "2026-11-11",
   aka: ["ER negative PR negative HER2 negative", "all three receptors negative", "receptor negative breast cancer", "grade 3 triple negative breast cancer", "ER- PR- HER2- breast cancer"],
   terms: ["grade-stage-receptor-breast", "nottingham-grade", "er-pr-scoring-breast", "her2-testing-uk-breast", "receptor-conversion-breast", "tnm-breast-cancer-editions", "who-breast-classification", "nottingham-prognostic-index"],
   // SRC.seerSubtypes is not repeated here: src/data/spikes/tnbc-core.ts already carries the same SEER

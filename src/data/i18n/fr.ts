@@ -290,7 +290,7 @@ export const tldr_fr: Record<string, string> = {
   "gemcitabine-cisplatin": "Gemcitabine plus cisplatin est le socle de la chimiothérapie du cancer des voies biliaires depuis 2010 et s'administre désormais avec une immunothérapie.",
   "gene-fusion": "Une fusion de gènes, c'est deux gènes cassés puis soudés ensemble, créant une protéine hybride capable de provoquer un cancer. Les cancers dus à une fusion sont souvent extrêmement sensibles aux médicaments.",
   "geriatric-assessment": "L'évaluation gériatrique est un bilan structuré de la forme physique, de la mémoire et du soutien dont dispose un patient âgé, qui prédit la tolérance au traitement mieux que l'âge.",
-  "germline-testing": "Un test de l'ADN avec lequel vous êtes né, pour rechercher des gènes de risque hérités tels que BRCA ou le syndrome de Lynch.",
+
   "germline-vs-somatic": "Les mutations germinales sont héritées et présentes dans toutes les cellules ; les mutations somatiques apparaissent uniquement dans la tumeur.",
   gilead: "Gilead détient Trodelvy (via le rachat d'Immunomedics pour 21 milliards de dollars) et la franchise CAR-T de Kite.",
   "glioma-car-t": "Des cellules immunitaires modifiées, administrées directement dans le cerveau ou le liquide céphalo-rachidien. Certains enfants atteints de gliome diffus de la ligne médiane, une tumeur du tronc cérébral sans traitement curatif, ont eu des réponses spectaculaires, bien que temporaires.",
@@ -572,7 +572,7 @@ export const tldr_fr: Record<string, string> = {
   obinutuzumab: "Obinutuzumab est un anticorps anti-CD20 renforcé qui, associé au venetoclax pendant un an, permet à de nombreux patients atteints de CLL de passer des années sans aucun traitement.",
   oeci: "Le réseau des centres européens de lutte contre le cancer qui gère le programme d'accréditation et de désignation attribuant le statut de « Comprehensive Cancer Centre ».",
   olaparib: "Olaparib a été le premier inhibiteur de PARP et a transformé la mutation BRCA héréditaire d'un facteur de risque en une cible médicamenteuse, y compris après la chirurgie dans le cancer du sein.",
-  oligometastatic: "Cancer qui ne s'est propagé qu'à quelques endroits et qui peut encore être guérissable en traitant chaque foyer.",
+
       "oncogenic-viruses": "Environ un cancer sur huit dans le monde est causé par un virus. HPV, hépatites B et C, Epstein-Barr, HTLV-1, KSHV et polyomavirus des cellules de Merkel détournent chacun les mêmes freins que le cancer doit normalement faire muter, ce qui explique pourquoi les vaccins contre HPV et HBV figurent parmi les médicaments anticancéreux les plus efficaces jamais créés.",
   "oncology-real-world-data": "Bases de données constituées à partir de millions de dossiers de patients réels, utilisées pour voir comment les traitements fonctionnent en dehors des essais et pour mener des études sans lancer de nouveaux essais.",
   "oncolytic-virus": "Virus modifiés pour infecter et faire éclater les cellules cancéreuses tout en épargnant les cellules normales, et pour alerter le système immunitaire au passage.",
@@ -865,7 +865,7 @@ export const tldr_fr: Record<string, string> = {
   "g-ba-iqwig": "L'organe décisionnel allemand qui détermine ce que l'assurance maladie obligatoire prend en charge (G-BA) et l'institut qui évalue le bénéfice ajouté des nouveaux médicaments (IQWiG), qui fixent ensemble les prix des médicaments anticancéreux dans le cadre du processus AMNOG.",
   "garvan-institute": "L'un des principaux instituts de génomique d'Australie, dont le Kinghorn Cancer Centre, avec le St Vincent's, a été pionnier du traitement guidé par la génomique du cancer du pancréas et des tumeurs rares.",
   "gates-foundation": "La plus grande fondation privée du monde ; son action contre le cancer se concentre sur la vaccination contre le HPV et l'élimination du cancer du col de l'utérus dans les pays à revenu faible et intermédiaire.",
-  "gbrca-mutation": "Une anomalie héréditaire du gène BRCA1 ou BRCA2, présente dans chaque cellule dès la naissance, qui augmente fortement le risque de cancer du sein, de l'ovaire, de la prostate et du pancréas et rend ces cancers sensibles aux inhibiteurs de PARP et au platine.",
+
   "gefitinib-chemo-tmh": "Un essai indien a montré que l'ajout d'une chimiothérapie standard au comprimé bon marché de première génération gefitinib doublait la durée pendant laquelle le cancer du poumon restait contrôlé et réduisait les décès de plus de moitié.",
   gemcitabine: "Une chimiothérapie polyvalente utilisée dans les cancers du pancréas, de la vessie, du poumon, de l'ovaire, du sein et des voies biliaires, dans le cancer du nasopharynx, et en instillation vésicale.",
   "gemtuzumab-ozogamicin": "Gemtuzumab ozogamicin (Mylotarg) fut le tout premier ADC : approuvé en 2000, retiré en 2010 pour toxicité, puis réapprouvé en 2017 à une dose fractionnée plus faible. Son histoire est à la fois un avertissement et une leçon.",
@@ -894,7 +894,7 @@ export const tldr_fr: Record<string, string> = {
   "helsinki-hus": "Le plus grand centre de cancérologie de Finlande et un centre de cancérologie intégré accrédité par l'OECI, connu pour la génétique des cancers héréditaires et la médecine de précision fonctionnelle dans la leucémie.",
   "her2-brain-metastases": "Jusqu'à la moitié des femmes atteintes d'un cancer du sein métastatique HER2-positif développent des métastases cérébrales, parce que les anticorps contrôlent le corps mais, historiquement, pas le cerveau.",
   "her2-pet": "HER2 PET est un examen TEP utilisant du trastuzumab radiomarqué ou des ligands de HER2 plus petits pour cartographier HER2 dans toutes les métastases à la fois.",
-  "her2-positive": "Un cancer présentant un excès de la protéine de signal de croissance HER2, soit avec un score de 3+ à la coloration, soit avec des copies supplémentaires du gène démontrées. Autrefois le sous-type de cancer du sein le plus agressif, il figure aujourd'hui parmi les plus traitables grâce aux médicaments anti-HER2.",
+
   "her2-testing-assays": "Les tests qui gradent le niveau de HER2 d'un cancer du sein ou de l'estomac, du test initial pour le trastuzumab en 1998 aux nouveaux seuils 'HER2-low' et 'ultralow'.",
   her2climb: "Le premier essai à prouver qu'un médicament aide dans les métastases cérébrales HER2-positives, en prolongeant la survie globale de quatre mois et demi.",
   "herizon-gea-01": "Un anticorps anti-HER2 à deux bras a battu Herceptin en comparaison directe comme traitement de première ligne du cancer de l'estomac HER2-positif, la première victoire de ce type depuis 2010.",
@@ -902,7 +902,7 @@ export const tldr_fr: Record<string, string> = {
   "histologic-transformation": "Lorsqu'un adénocarcinome du poumon échappe à la thérapie ciblée en se transformant en un autre type cellulaire, généralement à petites cellules.",
   histology: "L'étude des tissus au microscope. L'histologie d'un cancer, c'est le type de cellules qui le composent et la façon dont elles sont organisées, ce qui permet au pathologiste de le nommer et de le grader.",
   "homi-bhabha-cancer-hospital-varanasi": "Les deux hôpitaux du Tata Memorial Centre à Varanasi apportent une prise en charge complète du cancer à la plaine du Gange, l'une des régions de l'Inde les moins desservies et les plus touchées par les cancers de la bouche, du col de l'utérus et de la vésicule biliaire.",
-  "hormone-receptor-status": "Si les cellules d'un cancer du sein portent des récepteurs aux œstrogènes (ER) et à la progestérone (PR). Si oui, le cancer est nourri par ces hormones et peut être traité en les bloquant ; environ 70 % des cancers du sein sont positifs pour les récepteurs hormonaux.",
+
   "hormone-therapy": "Traitement qui affame les cancers qui grandissent en réponse à une hormone, principalement les œstrogènes dans le cancer du sein et la testostérone dans le cancer de la prostate, en abaissant l'hormone ou en bloquant son récepteur.",
   "hospital-del-mar": "L'hôpital universitaire de Barcelone en bord de mer, dont l'institut de recherche, dirigé par Joaquín Arribas, est à la pointe de la biologie de HER2 et des CAR-T contre le cancer du sein.",
   "hospital-information-systems-oncology": "Les systèmes de prescription et de dossiers que les oncologues utilisent chaque jour, y compris les parcours de traitement intégrés qui orientent le choix des médicaments.",

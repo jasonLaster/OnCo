@@ -63,7 +63,7 @@ export const simpleB: Record<string, string> = {
   "immunogenic-cell-death": "A way of dying that alerts the immune system.",
 
 
-  oligometastatic: "Cancer that has spread to only a few places, which may still be curable by treating each spot.",
+  oligometastatic: "Oligometastatic disease means a limited number of detected distant metastases under a stated definition. A few visible spots do not prove that all disease is visible or that treating each will cure the cancer.",
   "neoadjuvant-adjuvant": "Neoadjuvant treatment comes before surgery and adjuvant treatment after it. A regimen spanning both phases does not separately test how much each phase helped.",
   "first-line": "First-line is the first treatment for advanced cancer; second-line comes after it stops working, and so on.",
   "standard-of-care": "The treatment that guidelines and experts currently consider the best proven option.",

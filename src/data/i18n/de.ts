@@ -290,7 +290,7 @@ export const tldr_de: Record<string, string> = {
   "gemcitabine-cisplatin": "Gemcitabine plus cisplatin ist seit 2010 das Rückgrat der Chemotherapie bei Gallengangskrebs und wird heute zusammen mit einer Immuntherapie gegeben.",
   "gene-fusion": "Eine Genfusion entsteht, wenn zwei Gene brechen und miteinander verschmelzen, wodurch ein Hybridprotein entsteht, das Krebs antreiben kann. Fusionsgetriebene Krebsarten sind oft außerordentlich empfindlich gegenüber Medikamenten.",
   "geriatric-assessment": "Das geriatrische Assessment ist eine strukturierte Prüfung der Fitness, des Gedächtnisses und der Unterstützung eines älteren Patienten, die die Verträglichkeit einer Behandlung besser vorhersagt als das Alter.",
-  "germline-testing": "Ein Test der DNA, mit der Sie geboren wurden, um vererbte Risikogene wie BRCA oder das Lynch-Syndrom zu finden.",
+
   "germline-vs-somatic": "Keimbahnmutationen sind vererbt und in jeder Zelle vorhanden; somatische Mutationen entstehen nur im Tumor.",
   gilead: "Gilead besitzt Trodelvy (über die 21 Milliarden Dollar schwere Übernahme von Immunomedics) und das CAR-T-Geschäft von Kite.",
   "glioma-car-t": "Gentechnisch veränderte Immunzellen, die direkt ins Gehirn oder in die Rückenmarksflüssigkeit verabreicht werden. Einige Kinder mit diffusem Mittelliniengliom, einem Hirnstammtumor ohne heilende Behandlung, haben beeindruckend, wenn auch nur vorübergehend, darauf angesprochen.",
@@ -572,7 +572,7 @@ export const tldr_de: Record<string, string> = {
   obinutuzumab: "Obinutuzumab ist ein verstärkter CD20-Antikörper, der in Kombination mit venetoclax über ein Jahr vielen CLL-Patienten Jahre ganz ohne Behandlung verschafft.",
   oeci: "Das Netzwerk europäischer Krebszentren, das das Akkreditierungs- und Zertifizierungsprogramm betreibt, mit dem der Status „Comprehensive Cancer Centre“ verliehen wird.",
   olaparib: "Olaparib war der erste PARP-Inhibitor und verwandelte eine vererbte BRCA-Mutation von einem Risikofaktor in ein Ziel für Medikamente, auch nach der Operation bei Brustkrebs.",
-  oligometastatic: "Krebs, der sich nur an wenige Stellen ausgebreitet hat und durch die Behandlung jeder einzelnen Stelle möglicherweise noch heilbar ist.",
+
       "oncogenic-viruses": "Etwa jeder achte Krebs weltweit wird durch ein Virus verursacht. HPV, Hepatitis B und C, Epstein-Barr, HTLV-1, KSHV und das Merkelzell-Polyomavirus kapern jeweils dieselben Bremsen, die Krebs normalerweise durch Mutationen ausschalten muss. Deshalb gehören die Impfstoffe gegen HPV und HBV zu den wirksamsten Krebsmedikamenten, die je entwickelt wurden.",
   "oncology-real-world-data": "Datenbanken aus Millionen echter Patientenakten, mit denen sich beobachten lässt, wie Behandlungen außerhalb von Studien wirken, und mit denen sich Untersuchungen ohne neue Studien durchführen lassen.",
   "oncolytic-virus": "Viren, die so verändert wurden, dass sie Krebszellen infizieren und zum Platzen bringen, normale Zellen aber in Ruhe lassen und dabei zugleich das Immunsystem alarmieren.",
@@ -865,7 +865,7 @@ export const tldr_de: Record<string, string> = {
   "g-ba-iqwig": "Deutschlands Entscheidungsgremium darüber, was die gesetzliche Krankenversicherung übernimmt (G-BA), und das Institut, das den Zusatznutzen neuer Arzneimittel bewertet (IQWiG), die gemeinsam im AMNOG-Verfahren die Preise für Krebsmedikamente festlegen.",
   "garvan-institute": "Eines der führenden Genomik-Institute Australiens, dessen Kinghorn Cancer Centre zusammen mit dem St Vincent's die genomgesteuerte Behandlung von Bauchspeicheldrüsenkrebs und seltenen Tumoren vorangebracht hat.",
   "gates-foundation": "Die größte private Stiftung der Welt; ihre Krebsarbeit konzentriert sich auf die HPV-Impfung und die Eliminierung des Gebärmutterhalskrebses in Ländern mit niedrigem und mittlerem Einkommen.",
-  "gbrca-mutation": "Ein vererbter Defekt im BRCA1- oder BRCA2-Gen, der von Geburt an in jeder Zelle vorhanden ist, das Risiko für Brust-, Eierstock-, Prostata- und Bauchspeicheldrüsenkrebs stark erhöht und diese Krebsarten empfindlich für PARP-Inhibitoren und Platin macht.",
+
   "gefitinib-chemo-tmh": "Eine indische Studie zeigte, dass die Ergänzung der günstigen Erstgenerations-Tablette gefitinib um eine Standardchemotherapie die Zeit, in der der Lungenkrebs unter Kontrolle blieb, verdoppelte und die Todesfälle um mehr als die Hälfte senkte.",
   gemcitabine: "Eine vielseitige Chemotherapie, eingesetzt bei Bauchspeicheldrüsen-, Blasen-, Lungen-, Eierstock-, Brust- und Gallenwegskrebs, beim Nasopharynxkarzinom und als Blaseninstillation.",
   "gemtuzumab-ozogamicin": "Gemtuzumab ozogamicin (Mylotarg) war das allererste ADC: 2000 zugelassen, 2010 wegen Toxizität zurückgezogen und 2017 in einer niedrigeren, fraktionierten Dosis erneut zugelassen. Seine Geschichte ist Warnung und Lehrstück zugleich.",
@@ -894,7 +894,7 @@ export const tldr_de: Record<string, string> = {
   "helsinki-hus": "Finnlands größtes Krebszentrum und ein OECI-akkreditiertes Comprehensive Cancer Center, bekannt für die Genetik erblicher Krebserkrankungen und funktionelle Präzisionsmedizin bei Leukämie.",
   "her2-brain-metastases": "Bis zu die Hälfte der Frauen mit metastasiertem HER2-positivem Brustkrebs entwickelt Hirnmetastasen, weil Antikörper den Körper kontrollieren, historisch aber nicht das Gehirn.",
   "her2-pet": "HER2 PET ist eine PET-Untersuchung mit radioaktiv markiertem trastuzumab oder kleineren HER2-Bindern, um HER2 in allen Metastasen auf einmal abzubilden.",
-  "her2-positive": "Ein Krebs mit zu viel HER2-Wachstumssignalprotein, entweder mit 3+ in der Färbung bewertet oder mit nachgewiesenen zusätzlichen Kopien des Gens. Einst der aggressivste Brustkrebs-Subtyp, gehört er dank der Anti-HER2-Medikamente heute zu den am besten behandelbaren.",
+
   "her2-testing-assays": "Die Tests, die den HER2-Level eines Brust- oder Magenkrebses einstufen, vom ursprünglichen trastuzumab-Test im Jahr 1998 bis zu den neuen Grenzwerten 'HER2-low' und 'ultralow'.",
   her2climb: "Die erste Studie, die belegte, dass ein Medikament bei HER2-positiven Hirnmetastasen hilft, und das Gesamtüberleben um viereinhalb Monate verlängerte.",
   "herizon-gea-01": "Ein zweiarmiger HER2-Antikörper schlug Herceptin im direkten Vergleich als Erstlinientherapie bei HER2-positivem Magenkrebs, der erste solche Erfolg seit 2010.",
@@ -902,7 +902,7 @@ export const tldr_de: Record<string, string> = {
   "histologic-transformation": "Wenn ein Adenokarzinom der Lunge der zielgerichteten Therapie entkommt, indem es sich in einen anderen Zelltyp verwandelt, meist in ein kleinzelliges Karzinom.",
   histology: "Die Untersuchung von Gewebe unter dem Mikroskop. Die Histologie eines Krebses beschreibt, aus welchen Zellen er besteht und wie sie angeordnet sind; danach benennt ihn der Pathologe und legt seinen Grad fest.",
   "homi-bhabha-cancer-hospital-varanasi": "Die beiden Krankenhäuser des Tata Memorial Centre in Varanasi bringen umfassende Krebsversorgung in die Gangesebene, eine der am schlechtesten versorgten Regionen Indiens mit einer der höchsten Krankheitslasten durch Mund-, Gebärmutterhals- und Gallenblasenkrebs.",
-  "hormone-receptor-status": "Ob die Zellen eines Brustkrebses Rezeptoren für Östrogen (ER) und Progesteron (PR) tragen. Wenn ja, wird der Krebs von diesen Hormonen angetrieben und kann durch ihre Blockade behandelt werden; etwa 70 % der Brustkrebserkrankungen sind hormonrezeptorpositiv.",
+
   "hormone-therapy": "Eine Behandlung, die Krebsarten aushungert, die auf ein Hormon hin wachsen, vor allem Östrogen bei Brustkrebs und Testosteron bei Prostatakrebs, indem sie das Hormon senkt oder seinen Rezeptor blockiert.",
   "hospital-del-mar": "Barcelonas Universitätsklinikum am Meer, dessen Forschungsinstitut unter Joaquín Arribas in der HER2-Biologie und bei CAR-T gegen Brustkrebs führend ist.",
   "hospital-information-systems-oncology": "Die Verordnungs- und Dokumentationssysteme, die Onkologen täglich nutzen, einschließlich eingebauter Behandlungspfade, die die Medikamentenwahl lenken.",

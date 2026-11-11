@@ -1595,10 +1595,51 @@ export const termsBasics: TermInput[] = [
     id: "relapse-recurrence", name: "Recurrence and relapse", category: CLINIC,
     aka: ["recurrence", "recurrences", "recurrent", "recurred", "recurs", "recur", "relapse", "relapsed", "relapses", "relapsing", "relapsed/refractory", "relapsed or refractory", "R/R", "local recurrence", "distant recurrence", "recurrent disease", "recurrent cancer", "came back"],
     tldr: "The cancer has come back after a period in which it could not be detected. 'Recurrence' is the usual word for solid tumours and 'relapse' for blood cancers; they mean the same thing.",
-    summary: "Recurrence can be local (at the original site), regional (in nearby lymph nodes) or distant (metastatic), and the interval before it is informative: early recurrence suggests aggressive, resistant disease, while late recurrence in breast cancer or melanoma reflects cells that lay dormant for years. It happens because microscopic disease survived the original treatment; adjuvant therapy exists to reduce this risk, and ctDNA tests after surgery can now detect the residual disease months before a scan would. Recurrent disease is treated according to where and when it returns, ranging from a second attempt at cure for an isolated local recurrence to systemic therapy for metastatic recurrence.",
+    summary: "Recurrence is cancer becoming detectable again after a period without detected disease. In breast cancer it can be local in the breast or chest wall, regional in nearby nodes, or distant in other organs; an unrelated second primary is a different event. Surviving cells can contribute to recurrence, but timing alone does not prove a specific resistance or dormancy mechanism.\n\nInterpret the interval with the starting event, stage, treatments, response and follow-up. A blood test may detect molecular evidence in a particular study before clinical recurrence, but there is no universal lead time or automatic proof that acting on it improves outcomes. Care depends on the confirmed disease and its setting.",
     wikipedia: W("Relapse"),
     related: ["remission", "progression", "refractory", "mrd", "ctdna", "tumor-dormancy", "neoadjuvant-adjuvant", "efs", "disseminated-tumor-cells"],
-  }),
+
+"asOf": "2026-11-11",
+"notes": [
+  "Dent and colleagues studied 1,601 women diagnosed with breast cancer in 1987 to 1997, including 180 with TNBC. Distant-recurrence risk in the TNBC group peaked around three years from diagnosis and then declined. This historical group pattern is not a modern percentage, a personal next-year probability or a deadline after which recurrence cannot occur. Stage, treatment and response affect whether a group is relevant.",
+  "Reddy and colleagues selected 873 stage I to III patients who were already disease-free five years after diagnosis. Their reported ten-year and fifteen-year recurrence-free intervals were 97% and 95%, measured from diagnosis within that selected group. The historical TNBC definition included some low-hormone-receptor-positive cancers. A fictional newly diagnosed patient cannot directly use those estimates as if selection at five disease-free years had already occurred. The landmark selects who is included; it does not make the endpoints or original clock interchangeable.",
+  "Kennecke and colleagues studied early breast cancers diagnosed in 1986 to 1992 and kept basal-like and triple-negative nonbasal groups separate. Their relative brain and lung patterns compared with luminal A do not supply current absolute risks or a universal ranking of where recurrence will occur. Bone, lung, liver and brain are possible distant sites, not a prediction for one person. A share of recorded sites differs from risk among all original patients, and one person can contribute more than one site.",
+  "A recurrence table needs the population, confirmed event definition and date, starting clock, follow-up, deaths and losses, plus whether it records first recurrence, any later recurrence or several sites in one person. Diagnosis, surgery and randomisation are different starting points. Raw fractions, time-to-event estimates and estimates accounting for competing events are different outputs. A later risk can be lower without being zero; an observed peak is not an individual prediction.",
+  "Knowing a common site does not establish that a screening schedule saves lives. NCI's breast PDQ summarises older randomised follow-up trials in asymptomatic survivors of stages I to III disease: periodic bone scans, liver ultrasound, chest radiographs and liver-function tests did not improve survival or quality of life over routine examinations. These trials do not test every newer imaging or blood-test strategy, and they do not address ignoring new symptoms or findings. Prognosis and evidence for a surveillance strategy are separate questions."
+],
+"links": [
+  {
+    "label": "Dent R et al. (2007): Triple-negative breast cancer: clinical features and patterns of recurrence",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17671126/"
+  },
+  {
+    "label": "nci recurrence",
+    "url": "https://www.cancer.gov/types/breast/breast-cancer-survivorship/recurrence"
+  },
+  {
+    "label": "nci prognosis",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis"
+  },
+  {
+    "label": "Reddy SM et al. (2018): Long-term survival outcomes of triple-receptor negative breast cancer survivors who are disease free at 5 years and relationship with low hormone receptor positivity",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29235566/"
+  },
+  {
+    "label": "Kennecke H et al. (2010): Metastatic behavior of breast cancer subtypes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20498394/"
+  },
+  {
+    "label": "Dawood S et al. (2012): Incidence of brain metastases as a first site of recurrence among women with triple receptor-negative breast cancer",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22359359/"
+  },
+  {
+    "label": "nci breast pdq",
+    "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+  }
+,
+{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Relapse"}
+]
+}),
   t({
     id: "refractory", wikipedia: W("Resistant_cancer"), links: [{ label: "NCI Dictionary of Cancer Terms: refractory cancer", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/refractory-cancer" }], name: "Refractory", category: CLINIC,
     aka: ["treatment-refractory", "chemo-refractory", "chemorefractory", "platinum-refractory", "primary refractory", "refractory disease", "refractory to", "did not respond", "failed to respond", "unresponsive", "treatment-resistant", "heavily pretreated", "heavily pre-treated", "pretreated", "pre-treated"],

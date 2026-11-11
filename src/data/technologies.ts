@@ -437,17 +437,42 @@ export const technologies: TechnologyInput[] = [
     terms: ["hrd"],
   },
   {
-    id: "germline-testing", kind: "technology", name: "Germline (hereditary) testing", sections: ["diagnostics", "prevention"], status: "standard-of-care", asOf, wikipedia: W("Genetic_testing"),
-    tldr: "A test of the DNA you were born with, to find inherited risk genes such as BRCA or Lynch syndrome.",
-    summary: "Germline testing sequences DNA from blood or saliva by next-generation sequencing to find inherited pathogenic variants, as distinct from tumour-only sequencing that picks up acquired mutations. Multi-gene hereditary panels (BRCA1/2, PALB2, TP53, Lynch genes, CDH1, ATM, CHEK2) are recommended for all TNBC, ovarian, pancreatic, and metastatic prostate cancer patients and increasingly for all breast cancer. Findings change surgery, drug choice (PARP inhibitors), and family screening, because relatives can be cascade-tested and offered surveillance or risk-reducing measures. The test itself is cheap and actionable, but variants of uncertain significance remain a burden and counselling capacity limits uptake. The simple version is that this test reads the DNA a person was born with, and a positive result can protect a whole family, not just one patient.",
+    id: "germline-testing", kind: "technology", name: "Germline (hereditary) testing", sections: ["diagnostics", "prevention"], status: "standard-of-care", asOf: "2026-11-11", wikipedia: W("Genetic_testing"),
+    tldr: "Germline testing looks for constitutional DNA variants that may explain inherited susceptibility. The result needs interpretation alongside the test coverage and personal and family history.",
+    summary: "Germline testing examines DNA from an appropriate non-tumour specimen, often blood or saliva, for constitutional variants. Many are inherited; a constitutional change can also arise newly. Tumour sequencing can reveal a finding that needs germline confirmation, but it does not establish its origin. A multigene panel and a targeted test for a known family variant answer different questions.\n\nTesting includes consent, review of personal and family history, specimen collection, laboratory analysis and interpretation. A pathogenic or likely pathogenic finding may inform care and testing of relatives. It does not guarantee that cancer will occur or that a particular treatment will work. A variant of uncertain significance is not a pathogenic result and should not direct clinical management. A negative result must be interpreted against the genes and variant types the assay could detect and whether a causative family variant is already known.",
     principle: "NGS of blood or saliva DNA identifies pathogenic germline variants.",
     strengths: ["Actionable for patient and relatives", "Cheap"],
     limitations: ["VUS burden", "Uptake and counselling capacity"],
     targets: ["brca", "tp53"],
-    cancers: ["tnbc", "ovarian", "prostate", "pancreatic", "colorectal"], related: ["germline-to-parp"], links: [{ label: "Wikipedia", url: W("Genetic_testing") }], journals: ["familial-cancer"], companies: ["outcomes4me", "yemaachi-biotech", "fulgent-genetics", "invitae"],
+    cancers: ["tnbc", "ovarian", "prostate", "pancreatic", "colorectal"], related: ["germline-to-parp"], links: [{ label: "Wikipedia", url: W("Genetic_testing") },
+{
+  "label": "nci genetic testing",
+  "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/genetic-testing-fact-sheet"
+},
+{
+  "label": "nci brca",
+  "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet"
+},
+{
+  "label": "Bedrosian I et al. (2024): Germline Testing in Patients With Breast Cancer: ASCO-Society of Surgical Oncology Guideline",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38175972/"
+},
+{
+  "label": "Richards S et al. (2015): Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+}
+], journals: ["familial-cancer"], companies: ["outcomes4me", "yemaachi-biotech", "fulgent-genetics", "invitae"],
     // The named germline hereditary cancer tests (gap census round, 4 November 2026).
     drugs: [...HEREDITARY_TEST_IDS_2026],
-  },
+
+
+"notes": [
+  "A known harmful family variant changes the meaning of a negative result. If a suitable assay excludes that specific variant, this is a true negative for that family finding, not a guarantee against all cancer. When no family explanation is known, a negative panel can be uninformative: family history can remain relevant without proving that a hidden mutation exists. A larger panel can add uncertain findings rather than a clearer explanation. Cascade testing means testing relatives for a confirmed family finding with their own consent and interpretation.",
+  "Detection and interpretation are separate. The laboratory searches the regions and types of changes its method covers, then classifies a detected variant using evidence such as population frequency, segregation within families and functional studies. The ACMG/AMP framework uses pathogenic, likely pathogenic, uncertain significance, likely benign and benign categories; classifications can change as evidence develops. A VUS does not measure how severe an existing cancer is. That framework concerns Mendelian variant interpretation, not a complete rule for somatic drug selection.",
+  "Keep the specimen, assay/version, genes and regions, covered variant types, reference sequence, exact variant, classification and limitations together. Blood, saliva or a cheek sample does not ordinarily require a tumour block, although the submitted aliquot is used for analysis. Sample adequacy, circumstances affecting whether a specimen represents constitutional DNA, untested regions or change types, and interpretation uncertainty can limit the answer. There is no universal percentage that means hereditary risk and no single positive cutoff shared by all assays.",
+  "Testing can have implications for relatives and for privacy, insurance and the wish to know. Discuss these alongside consent and the possible results. A report describes what was tested and found; it is not a complete record of a family or a measurement of the tumour's present repair function. Tumour-only findings, constitutional origin and treatment eligibility need their own evidence. A harmful constitutional variant does not specify whether or when cancer will occur."
+]
+},
   {
     id: "functional-drug-testing", related: [
   "functional-precision-medicine-haematology",

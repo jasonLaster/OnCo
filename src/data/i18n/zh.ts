@@ -139,7 +139,7 @@ export const tldr_zh: Record<string, string> = {
   "digital-pathology-ai": "扫描显微切片并让软件测量病理医生看不到的东西，包括预测谁能从治疗中获益。",
   "companion-diagnostic": "决定某种药物是否适合你的检测，与药物一同获批。",
   "hrd-testing": "揭示肿瘤DNA修复系统是否损坏的检测，可预测对PARP抑制剂和铂类的反应。",
-  "germline-testing": "检测你出生时携带的DNA，寻找BRCA或Lynch综合征等遗传风险基因。",
+
 
 
   "pdx-models": "在小鼠体内生长的患者肿瘤，用于在药物进入人体前测试。",
@@ -417,7 +417,7 @@ export const tldr_zh: Record<string, string> = {
   "immunogenic-cell-death": "一种能警示免疫系统的死亡方式，不同于静默的凋亡。",
 
 
-  oligometastatic: "仅扩散到少数部位的癌症，通过治疗每个病灶仍可能治愈。",
+
     "first-line": "一线是晚期癌症的首个治疗；二线是其失败后的治疗，依此类推。",
   "standard-of-care": "指南和专家当前认为最有证据的最佳治疗选择。",
   "accelerated-approval": "FDA基于早期证据（如肿瘤缩小）的批准，条件是随后进行确证试验。",
@@ -1023,7 +1023,7 @@ export const tldr_zh: Record<string, string> = {
   "g-ba-iqwig": "德国决定法定医疗保险报销范围的决策机构（G-BA）和评估新药附加获益的研究所（IQWiG），两者共同通过AMNOG程序确定抗癌药物价格。",
   "garvan-institute": "澳大利亚领先的基因组学研究机构之一，其Kinghorn Cancer Centre与St Vincent's医院合作，开创了以基因组学为指导的胰腺癌和罕见肿瘤治疗。",
   "gates-foundation": "全球最大的私人基金会；其癌症相关工作聚焦于中低收入国家的HPV疫苗接种和消除宫颈癌。",
-  "gbrca-mutation": "BRCA1或BRCA2基因中的一种遗传性缺陷，从出生起就存在于每个细胞中，它大大增加乳腺癌、卵巢癌、前列腺癌和胰腺癌的风险，并使这些癌症对PARP抑制剂和铂类药物敏感。",
+
   "gefitinib-chemo-tmh": "一项印度试验显示，在廉价的第一代口服药gefitinib基础上加用标准化疗，使肺癌得到控制的时间延长了一倍，并使死亡减少了一半以上。",
   gemcitabine: "一种用途广泛的化疗药物，用于胰腺癌、膀胱癌、肺癌、卵巢癌、乳腺癌和胆道癌，用于鼻咽癌，也用作膀胱灌注。",
   genie: "AACR Project GENIE是由领先癌症中心共享的真实世界肿瘤测序数据。",
@@ -1049,14 +1049,14 @@ export const tldr_zh: Record<string, string> = {
   "hcc-surveillance": "患有肝硬化或慢性乙型肝炎的人每六个月做一次肝脏超声和血液检测，以便在癌症仍可治愈时将其发现。",
   "helsinki-hus": "芬兰最大的癌症中心，也是OECI认证的综合癌症中心，以遗传性癌症遗传学和白血病功能性精准医学而闻名。",
   "her2-brain-metastases": "多达一半的转移性HER2阳性乳腺癌女性会出现脑转移，因为抗体能控制身体其他部位的病灶，但历来控制不了脑部。",
-  "her2-positive": "一种HER2生长信号蛋白过多的癌症，要么在染色中评为3+，要么被证明携带该基因的额外拷贝。它曾是最具侵袭性的乳腺癌亚型，如今得益于抗HER2药物，已成为最可治疗的亚型之一。",
+
   "her2-testing-assays": "为乳腺癌或胃癌的HER2水平分级的检测，从1998年最初的trastuzumab检测，到新的“HER2低表达”和“超低表达”判定界值。",
   her2climb: "第一项证明某种药物对HER2阳性脑转移有帮助的试验，使总生存期延长了四个半月。",
   "herizon-gea-01": "一种双臂HER2抗体在头对头比较中胜过Herceptin，成为HER2阳性胃癌的一线治疗，这是自2010年以来的首次此类胜利。",
   hhmi: "这家美国慈善机构资助的是科学家而不是项目；发现肿瘤抑制基因、缺氧感应和CRISPR的许多癌症生物学家都是HHMI研究员。",
   histology: "在显微镜下研究组织的学科。癌症的组织学是指它由哪种细胞构成以及这些细胞如何排列，病理医生据此为其命名并分级。",
   "homi-bhabha-cancer-hospital-varanasi": "Tata Memorial Centre在瓦拉纳西的两家医院为恒河平原带来全面的癌症诊疗，该地区是印度口腔癌、宫颈癌和胆囊癌负担最重、医疗服务最匮乏的地区之一。",
-  "hormone-receptor-status": "乳腺癌细胞是否带有雌激素受体（ER）和孕激素受体（PR）。如果有，癌症就靠这些激素生长，可以通过阻断它们来治疗；约70%的乳腺癌为激素受体阳性。",
+
   "hormone-therapy": "一种通过降低激素水平或阻断其受体，使依赖激素生长的癌症得不到养分的治疗，主要针对乳腺癌中的雌激素和前列腺癌中的睾酮。",
   "hospital-del-mar": "巴塞罗那的海滨大学医院，其研究所在Joaquín Arribas领导下引领HER2生物学和针对乳腺癌的CAR-T研究。",
   "hospital-information-systems-oncology": "肿瘤科医生每天使用的医嘱和病历系统，包括引导用药选择的内置治疗路径。",

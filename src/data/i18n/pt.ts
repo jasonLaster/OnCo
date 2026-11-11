@@ -139,7 +139,7 @@ export const tldr_pt: Record<string, string> = {
   "digital-pathology-ai": "Escanear lâminas de microscópio e deixar o software medir coisas que um patologista não vê, incluindo previsões de quem se beneficiará de um tratamento.",
   "companion-diagnostic": "O teste que decide se uma droga específica é certa para você, aprovado junto com a droga.",
   "hrd-testing": "Testes que revelam se um tumor tem o sistema de reparo do DNA quebrado, o que prevê a resposta a inibidores de PARP e platina.",
-  "germline-testing": "Um teste do DNA com que você nasceu, para encontrar genes de risco hereditário como BRCA ou síndrome de Lynch.",
+
 
 
   "pdx-models": "O tumor de um paciente cultivado em um camundongo, usado para testar drogas antes de chegarem às pessoas.",
@@ -417,7 +417,7 @@ export const tldr_pt: Record<string, string> = {
   "immunogenic-cell-death": "Um modo de morrer que alerta o sistema imune, ao contrário da apoptose silenciosa.",
 
 
-  oligometastatic: "Câncer que se espalhou para apenas alguns lugares, que ainda pode ser curável tratando cada ponto.",
+
     "first-line": "Primeira linha é o primeiro tratamento para câncer avançado; segunda linha é o que vem depois que ele falha, e assim por diante.",
   "standard-of-care": "O tratamento que diretrizes e especialistas consideram atualmente a melhor opção comprovada.",
   "accelerated-approval": "Aprovação da FDA baseada em evidência inicial (como encolhimento do tumor) com a condição de que um ensaio confirmatório se siga.",
@@ -1023,7 +1023,7 @@ export const tldr_pt: Record<string, string> = {
   "g-ba-iqwig": "O órgão decisório da Alemanha sobre o que o seguro obrigatório cobre (G-BA) e o instituto que avalia o benefício adicional de novos medicamentos (IQWiG), que juntos definem os preços dos medicamentos oncológicos pelo processo AMNOG.",
   "garvan-institute": "Um dos principais institutos de genômica da Austrália, cujo Kinghorn Cancer Centre, junto com o St Vincent's, foi pioneiro no tratamento guiado por genômica do câncer de pâncreas e de tumores raros.",
   "gates-foundation": "A maior fundação privada do mundo; seu trabalho em câncer concentra-se na vacinação contra o HPV e na eliminação do câncer do colo do útero em países de baixa e média renda.",
-  "gbrca-mutation": "Um defeito herdado no gene BRCA1 ou BRCA2, presente em todas as células desde o nascimento, que aumenta muito o risco de câncer de mama, ovário, próstata e pâncreas e torna esses cânceres sensíveis a inibidores de PARP e à platina.",
+
   "gefitinib-chemo-tmh": "Um ensaio indiano mostrou que adicionar quimioterapia padrão ao comprimido barato de primeira geração gefitinib dobrou o tempo em que o câncer de pulmão permaneceu controlado e reduziu as mortes em mais da metade.",
   gemcitabine: "Uma quimioterapia versátil usada em cânceres de pâncreas, bexiga, pulmão, ovário, mama e vias biliares, no câncer de nasofaringe e como instilação vesical.",
   genie: "AACR Project GENIE são dados de sequenciamento tumoral do mundo real compartilhados por centros de câncer de referência.",
@@ -1049,14 +1049,14 @@ export const tldr_pt: Record<string, string> = {
   "hcc-surveillance": "Pessoas com cirrose ou hepatite B crônica fazem uma ultrassonografia do fígado e um exame de sangue a cada seis meses para que o câncer seja detectado enquanto ainda é curável.",
   "helsinki-hus": "O maior centro de câncer da Finlândia e um centro oncológico integral credenciado pela OECI, conhecido pela genética do câncer hereditário e pela medicina de precisão funcional em leucemia.",
   "her2-brain-metastases": "Até metade das mulheres com câncer de mama metastático HER2-positivo desenvolve metástases cerebrais, porque os anticorpos controlam o corpo, mas historicamente não o cérebro.",
-  "her2-positive": "Um câncer com excesso da proteína de sinal de crescimento HER2, seja com pontuação 3+ na coloração ou com cópias extras do gene demonstradas. Antes o subtipo de câncer de mama mais agressivo, hoje está entre os mais tratáveis graças aos medicamentos anti-HER2.",
+
   "her2-testing-assays": "Os testes que classificam o nível de HER2 de um câncer de mama ou de estômago, desde o teste original do trastuzumab em 1998 até os novos pontos de corte 'HER2-low' e 'ultralow'.",
   her2climb: "O primeiro ensaio a provar que um medicamento ajuda nas metástases cerebrais HER2-positivas, prolongando a sobrevida global em quatro meses e meio.",
   "herizon-gea-01": "Um anticorpo anti-HER2 de dois braços superou o Herceptin em comparação direta como tratamento de primeira linha para câncer de estômago HER2-positivo, a primeira vitória desse tipo desde 2010.",
   hhmi: "A entidade filantrópica americana que financia cientistas em vez de projetos; muitos dos biólogos do câncer por trás dos supressores tumorais, da detecção de hipóxia e do CRISPR são pesquisadores do HHMI.",
   histology: "O estudo do tecido ao microscópio. A histologia de um câncer é de que tipo de células ele é feito e como elas estão organizadas, e é assim que o patologista o nomeia e o gradua.",
   "homi-bhabha-cancer-hospital-varanasi": "Os dois hospitais do Tata Memorial Centre em Varanasi levam atendimento oncológico completo à planície do Ganges, uma das regiões mais desassistidas e com maior carga de câncer oral, de colo do útero e de vesícula biliar na Índia.",
-  "hormone-receptor-status": "Se as células de um câncer de mama têm receptores para estrogênio (ER) e progesterona (PR). Se tiverem, o câncer é alimentado por esses hormônios e pode ser tratado bloqueando-os; cerca de 70% dos cânceres de mama são positivos para receptores hormonais.",
+
   "hormone-therapy": "Tratamento que priva de estímulo os cânceres que crescem em resposta a um hormônio, principalmente o estrogênio no câncer de mama e a testosterona no câncer de próstata, reduzindo o hormônio ou bloqueando seu receptor.",
   "hospital-del-mar": "O hospital universitário à beira-mar de Barcelona, cujo instituto de pesquisa, sob a direção de Joaquín Arribas, lidera a biologia do HER2 e as CAR-T contra o câncer de mama.",
   "hospital-information-systems-oncology": "Os sistemas de prescrição e registro que os oncologistas usam todos os dias, incluindo as vias de tratamento integradas que orientam a escolha dos medicamentos.",

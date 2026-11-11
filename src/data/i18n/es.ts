@@ -139,7 +139,7 @@ export const tldr_es: Record<string, string> = {
   "digital-pathology-ai": "Escanear las láminas del microscopio y dejar que el software mida cosas que un patólogo no puede ver, incluidas predicciones de quién se beneficiará de un tratamiento.",
   "companion-diagnostic": "La prueba que decide si un fármaco concreto es adecuado para ti, aprobada junto con el fármaco.",
   "hrd-testing": "Pruebas que revelan si un tumor tiene roto su sistema de reparación del ADN, lo que predice la respuesta a inhibidores de PARP y platino.",
-  "germline-testing": "Una prueba del ADN con el que naciste, para hallar genes de riesgo heredado como BRCA o el síndrome de Lynch.",
+
 
 
   "pdx-models": "El tumor de un paciente cultivado en un ratón, usado para probar fármacos antes de que lleguen a las personas.",
@@ -417,7 +417,7 @@ export const tldr_es: Record<string, string> = {
   "immunogenic-cell-death": "Una forma de morir que alerta al sistema inmunitario, a diferencia de la apoptosis silenciosa.",
 
 
-  oligometastatic: "Cáncer extendido a pocos lugares, que aún puede ser curable tratando cada foco.",
+
     "first-line": "La primera línea es el primer tratamiento del cáncer avanzado; la segunda línea es lo que viene cuando falla, y así sucesivamente.",
   "standard-of-care": "El tratamiento que las guías y los expertos consideran actualmente la mejor opción probada.",
   "accelerated-approval": "Aprobación de la FDA basada en evidencia temprana (como la reducción del tumor) a condición de que siga un ensayo confirmatorio.",
@@ -1023,7 +1023,7 @@ export const tldr_es: Record<string, string> = {
   "g-ba-iqwig": "El órgano decisorio de Alemania sobre lo que cubre el seguro obligatorio (G-BA) y el instituto que evalúa el beneficio añadido de los nuevos fármacos (IQWiG), que juntos fijan los precios de los medicamentos oncológicos mediante el proceso AMNOG.",
   "garvan-institute": "Uno de los principales institutos de genómica de Australia, cuyo Kinghorn Cancer Centre, junto con el St Vincent's, fue pionero en el tratamiento guiado por genómica del cáncer de páncreas y de tumores raros.",
   "gates-foundation": "La fundación privada más grande del mundo; su trabajo en cáncer se centra en la vacunación contra el VPH y la eliminación del cáncer de cuello uterino en países de ingresos bajos y medios.",
-  "gbrca-mutation": "Un defecto heredado en el gen BRCA1 o BRCA2, presente en todas las células desde el nacimiento, que aumenta mucho el riesgo de cáncer de mama, ovario, próstata y páncreas y hace que esos cánceres sean sensibles a los inhibidores de PARP y al platino.",
+
   "gefitinib-chemo-tmh": "Un ensayo indio mostró que añadir quimioterapia estándar a la pastilla barata de primera generación gefitinib duplicó el tiempo en que el cáncer de pulmón permanecía controlado y redujo las muertes a más de la mitad.",
   gemcitabine: "Una quimioterapia versátil que se usa en cánceres de páncreas, vejiga, pulmón, ovario, mama y vías biliares, en el cáncer de nasofaringe y como instilación vesical.",
   genie: "AACR Project GENIE son datos de secuenciación tumoral del mundo real compartidos por centros oncológicos líderes.",
@@ -1049,14 +1049,14 @@ export const tldr_es: Record<string, string> = {
   "hcc-surveillance": "Las personas con cirrosis o hepatitis B crónica se hacen una ecografía del hígado y un análisis de sangre cada seis meses para que el cáncer se detecte mientras aún es curable.",
   "helsinki-hus": "El mayor centro oncológico de Finlandia y un centro oncológico integral acreditado por la OECI, conocido por la genética del cáncer hereditario y la medicina de precisión funcional en la leucemia.",
   "her2-brain-metastases": "Hasta la mitad de las mujeres con cáncer de mama metastásico HER2-positivo desarrollan metástasis cerebrales, porque los anticuerpos controlan el cuerpo pero, históricamente, no el cerebro.",
-  "her2-positive": "Un cáncer con exceso de la proteína de señal de crecimiento HER2, ya sea con una puntuación de 3+ en la tinción o con copias extra del gen demostradas. Antes el subtipo de cáncer de mama más agresivo, hoy es uno de los más tratables gracias a los fármacos anti-HER2.",
+
   "her2-testing-assays": "Las pruebas que gradúan el nivel de HER2 de un cáncer de mama o de estómago, desde la prueba original de trastuzumab en 1998 hasta los nuevos puntos de corte 'HER2-low' y 'ultralow'.",
   her2climb: "El primer ensayo que demostró que un fármaco ayuda en las metástasis cerebrales HER2 positivas, prolongando la supervivencia global cuatro meses y medio.",
   "herizon-gea-01": "Un anticuerpo contra HER2 de dos brazos superó a Herceptin en comparación directa como tratamiento de primera línea del cáncer de estómago HER2-positivo, la primera victoria de este tipo desde 2010.",
   hhmi: "La entidad filantrópica estadounidense que financia a científicos en lugar de proyectos; muchos de los biólogos del cáncer detrás de los supresores tumorales, la detección de la hipoxia y CRISPR son investigadores del HHMI.",
   histology: "El estudio del tejido al microscopio. La histología de un cáncer es de qué tipo de células está hecho y cómo están organizadas, que es la forma en que un patólogo lo nombra y le asigna un grado.",
   "homi-bhabha-cancer-hospital-varanasi": "Los dos hospitales del Tata Memorial Centre en Varanasi llevan atención oncológica integral a la llanura del Ganges, una de las regiones de la India con menor cobertura y mayor carga de cáncer oral, de cuello uterino y de vesícula biliar.",
-  "hormone-receptor-status": "Si las células de un cáncer de mama tienen receptores para el estrógeno (ER) y la progesterona (PR). Si los tienen, el cáncer se alimenta de estas hormonas y puede tratarse bloqueándolas; alrededor del 70% de los cánceres de mama son positivos para receptores hormonales.",
+
   "hormone-therapy": "Tratamiento que priva de alimento a los cánceres que crecen en respuesta a una hormona, principalmente los estrógenos en el cáncer de mama y la testosterona en el cáncer de próstata, reduciendo la hormona o bloqueando su receptor.",
   "hospital-del-mar": "El hospital universitario de Barcelona junto al mar, cuyo instituto de investigación, dirigido por Joaquín Arribas, lidera la biología de HER2 y las CAR-T contra el cáncer de mama.",
   "hospital-information-systems-oncology": "Los sistemas de prescripción y registro que los oncólogos usan a diario, incluidas las vías de tratamiento integradas que orientan la elección de fármacos.",

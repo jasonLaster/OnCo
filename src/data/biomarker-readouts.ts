@@ -411,8 +411,8 @@ export const biomarkerReadouts: BiomarkerInput[] = [
   // ---- Hormone receptors and Ki-67 ----
   b({ id: "er-status", name: "ER status (oestrogen receptor by IHC)", aka: ["ER status", "ER-positive", "ER positive", "ER+", "ER-negative", "estrogen receptor status", "oestrogen receptor status", "ER low positive", "ER >= 1%", "ER 1-10%"],
     target: "estrogen-receptor", measurement: "ihc-score",
-    tldr: "ER status is whether the tumour's cells carry the oestrogen receptor, read by staining nuclei. One percent or more of stained nuclei is positive and means hormone-blocking treatment can work; 1 to 10 percent is 'low positive' and behaves more like negative.",
-    summary: "The ASCO/CAP 2020 guideline calls a breast cancer ER-positive when at least 1 percent of tumour cell nuclei stain by validated immunohistochemistry, ER-negative below 1 percent, and introduces 'ER low positive' for 1 to 10 percent with a comment that these tumours often behave like ER-negative disease. Every endocrine therapy label (tamoxifen, aromatase inhibitors, fulvestrant) and the CDK4/6 inhibitor, PI3K, AKT and oral SERD labels are written for hormone-receptor-positive or ER-positive disease without restating the 1 percent rule, so the guideline threshold is what laboratories apply. The same 1 percent rule is used for the progesterone receptor.",
+    tldr: "ER status reports oestrogen-receptor staining in tumour-cell nuclei. In invasive breast cancer, at least 1% is positive; 1% to 10% is ER-low positive, with limited evidence about endocrine-treatment benefit.",
+    summary: "The oestrogen receptor is an intracellular protein involved in responses to oestrogen and regulation of gene expression. A clinical ER result measures receptor staining in identified tumour-cell nuclei, not the amount of oestrogen in blood or every downstream signal.\n\nThe ASCO/CAP invasive-breast guideline uses validated immunohistochemistry: at least 1% stained tumour-cell nuclei is positive, below 1% is negative, and 1% to 10% is reported as ER-low positive. These cancers are heterogeneous and can have features resembling ER-negative disease, but they remain ER-positive. Limited evidence suggests possible endocrine benefit, so the category supports consideration of endocrine treatment rather than a guaranteed response or a treatment mandate.",
     scoringRule: { text: "ER-positive: at least 1 percent of tumour cell nuclei stain positive by IHC. ER low positive: 1 to 10 percent. ER-negative: less than 1 percent or no staining, with internal and external controls behaving as expected.", quote: "ER-positive... if ≥ 1% of tumor cell nuclei are immunoreactive", source: ASCO_CAP_ER.url, sourceLabel: ASCO_CAP_ER.label },
     thresholds: [
       th({ value: "ER-positive (guideline >= 1% nuclei)", drugId: "elacestrant", cancerId: "breast-hr-positive", regulator: "FDA", source: LABEL.orserdu, quote: "ORSERDU is indicated for the treatment of postmenopausal women or adult men with estrogen receptor (ER)-positive, human epidermal growth factor receptor 2 (HER2)‑negative, ESR1 -mutated advanced or metastatic breast cancer" }),
@@ -421,19 +421,75 @@ export const biomarkerReadouts: BiomarkerInput[] = [
     ],
     definedBy: ASCO_CAP_ER,
     cancers: ["breast-hr-positive", "breast-cancer", "hr-positive-early-high-risk", "hr-positive-metastatic-post-cdk46", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib", "ribociclib", "abemaciclib", "elacestrant", "alpelisib", "capivasertib"], tests: ["oncotype-dx-breast"], assays: ["er-pr-ventana-confirm", "er-pr-dako", "er-pr-leica"],
-    forPatient: "If 1 percent or more of your tumour cells stain for the oestrogen receptor, the cancer is ER-positive and hormone-blocking drugs (tamoxifen, aromatase inhibitors, fulvestrant) are part of treatment, usually with a CDK4/6 inhibitor when the cancer has spread. A result between 1 and 10 percent is 'low positive'; your team may treat it more like ER-negative disease and discuss chemotherapy.",
-    terms: ["hormone-receptor-status", "ihc", "serd"], related: ["pr-status", "ki-67-index", "esr1-mutation-ctdna"], links: [ASCO_CAP_ER], tags: ["biomarker", "hormone-receptor"] }),
+    forPatient: "ER-positive means at least 1% of the tumour-cell nuclei stained for the oestrogen receptor under a suitable test. A 1% to 10% result is ER-low positive. Endocrine treatment may help, but evidence is limited for this low group and the result alone does not choose a treatment. The percentage is the share of stained cells, not the chance that treatment will work.",
+    terms: ["hormone-receptor-status", "ihc", "serd"], related: ["pr-status", "ki-67-index", "esr1-mutation-ctdna"], links: [ASCO_CAP_ER,
+{
+  "label": "UniProt: P03372",
+  "url": "https://www.uniprot.org/uniprotkb/P03372/entry"
+},
+{
+  "label": "nci hormone therapy",
+  "url": "https://www.cancer.gov/types/breast/treatment/hormone-therapy"
+},
+{
+  "label": "cap er pr summary",
+  "url": "https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"
+},
+{
+  "label": "cap er pr guideline",
+  "url": "https://www.cap.org/cap-guidelines/estrogen-and-progesterone-receptor-testing-in-breast-cancer-guideline-update/"
+},
+{
+  "label": "RCPath G148 breast dataset, version 3 (2024)",
+  "url": "https://www.rcpath.org/asset/D255F34C-176A-490D-9B5A7D58AC85F3A6/"
+}
+], tags: ["biomarker", "hormone-receptor"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Receptor presence is like having machinery able to receive a message; it does not show equal signalling in every cell or equal drug sensitivity. Oestrogen binding can influence gene programmes, while endocrine treatments interfere with hormone production or action. This differs from menopausal hormone replacement. ER is not the same observation as the cell-surface HER2 receptor, and clinical nuclear staining is not a statement that the protein can exist only in that location.",
+  "The measurement route is tissue, identification of invasive tumour cells, a validated nuclear stain, review of controls, percentage and intensity, then interpretation. Keep the specimen/block and collection context; IHC uses tissue sections. Percentage counts positive nuclei among the intended tumour cells, while intensity describes stain strength. Poor preservation, artefact or failed controls can prevent interpretation: uninterpretable does not mean negative. A bulk RNA result does not replace validated clinical IHC. ASCO/CAP recommends ER testing in DCIS to assess potential endocrine risk reduction, with PR optional there; invasive and in-situ contexts should be stated.",
+  "For a fictional invasive tumour with adequate controls, ER staining in 4% of tumour-cell nuclei is ER-low positive. It is not 4% predicted treatment benefit and is not rounded down to ER-negative because an RNA classifier says basal-like. Preserve the stain denominator, intensity and category alongside that separate expression result. If controls fail, resolve the testing problem before assigning a negative category. ER and PR results remain separate observations."
+]
+}),
 
   b({ id: "pr-status", name: "PR status (progesterone receptor by IHC)", aka: ["PR status", "PR-positive", "PR positive", "PR+", "PgR", "progesterone receptor status", "PR-negative", "PR >= 1%"],
     target: "pgr", measurement: "ihc-score",
-    tldr: "PR status is read the same way as ER: 1 percent or more of nuclei staining is positive. It is measured alongside ER, adds to prognosis, and a tumour positive for either receptor counts as hormone-receptor-positive.",
-    summary: "The ASCO/CAP 2020 guideline applies the same 1 percent nuclear staining threshold to the progesterone receptor as to ER; PR is a downstream target of ER signalling, so PR-negativity in an ER-positive tumour flags a less endocrine-responsive cancer with a worse outlook. Labels use the phrase 'hormone receptor (HR)-positive', which by convention means ER-positive or PR-positive or both, so PR alone can qualify a patient for endocrine therapy and CDK4/6 inhibitors. In endometrial cancer PR expression is used to select progestin therapy under guidelines rather than labels.",
+    tldr: "PR status measures progesterone-receptor staining in tumour-cell nuclei. It is reported separately from ER and is primarily prognostic in ER-positive invasive breast cancer.",
+    summary: "The progesterone receptor is an intracellular hormone-response protein. Its tissue stain does not measure circulating progesterone or every interaction with ER signalling. In invasive breast cancer, the ASCO/CAP guideline uses at least 1% positive tumour-cell nuclei for PR positivity and below 1% for negativity; ER-low positive is an ER-specific reporting category.\n\nHR-positive is commonly used for ER-positive, PR-positive or both. Preserve the individual results: ER-positive/PR-negative is not hormone-receptor-negative or triple-negative. PR is primarily prognostic within ER-positive invasive disease. An unusual ER-negative/PR-positive combination should prompt review of the ER stain and controls, not an automatic inference about eligibility for endocrine treatment or a CDK4/6 inhibitor.",
     scoringRule: { text: "PR-positive: at least 1 percent of tumour cell nuclei stain positive by IHC; PR-negative below 1 percent.", quote: "PgR-positive... if ≥ 1% of tumor cell nuclei are immunoreactive", source: ASCO_CAP_ER.url, sourceLabel: ASCO_CAP_ER.label },
     thresholds: [th({ value: "Hormone receptor-positive (ER or PR >= 1%)", drugId: "palbociclib", cancerId: "breast-hr-positive", regulator: "FDA", source: LABEL.ibrance, quote: "hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer", note: "Palbociclib label wording; the 1 percent rule is the ASCO/CAP guideline's, not the label's." })],
     definedBy: ASCO_CAP_ER,
     cancers: ["breast-hr-positive", "breast-cancer", "endometrial"], drugs: ["tamoxifen", "letrozole", "fulvestrant", "palbociclib"], assays: ["er-pr-ventana-confirm", "er-pr-dako", "er-pr-leica"],
-    forPatient: "A PR-positive result adds to the case for hormone-blocking treatment and generally means a better outlook; a PR-negative result in an ER-positive cancer is a sign the cancer may respond less well to hormone therapy alone. Either receptor at 1 percent or more makes the cancer hormone-receptor-positive for treatment purposes.",
-    terms: ["hormone-receptor-status", "ihc"], related: ["er-status", "ki-67-index"], links: [ASCO_CAP_ER], tags: ["biomarker", "hormone-receptor"] }),
+    forPatient: "PR is read alongside ER. A negative PR result does not cancel a positive ER result. The report should retain both measurements, and an unusual combination may need pathology review. PR staining is not a prescription for progesterone and does not by itself predict your recurrence risk or treatment benefit.",
+    terms: ["hormone-receptor-status", "ihc"], related: ["er-status", "ki-67-index"], links: [ASCO_CAP_ER,
+{
+  "label": "UniProt: P06401",
+  "url": "https://www.uniprot.org/uniprotkb/P06401/entry"
+},
+{
+  "label": "cap er pr summary",
+  "url": "https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"
+},
+{
+  "label": "cap er pr guideline",
+  "url": "https://www.cap.org/cap-guidelines/estrogen-and-progesterone-receptor-testing-in-breast-cancer-guideline-update/"
+},
+{
+  "label": "nci hormone therapy",
+  "url": "https://www.cancer.gov/types/breast/treatment/hormone-therapy"
+},
+{
+  "label": "RCPath G148 breast dataset, version 3 (2024)",
+  "url": "https://www.rcpath.org/asset/D255F34C-176A-490D-9B5A7D58AC85F3A6/"
+}
+], tags: ["biomarker", "hormone-receptor"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "PR can bind progesterone and regulate gene programmes, but finding protein in a stained nucleus is not a direct readout of all receptor activity. The ASCO/CAP guideline uses ER to predict potential endocrine benefit and describes PR chiefly as prognostic in ER-positive invasive cancer. A prognostic association and evidence of added benefit from a particular medicine are different questions.",
+  "Start with the identified tissue/lesion and invasive tumour-cell nuclei, then the validated stain, percentage, intensity, controls and final PR interpretation read beside ER. Sections are consumed by the assay. Record the specimen/block and context; preservation problems, scant assessable tumour or failed controls can limit interpretation. Percentage, intensity and composite IHC scores have different units. In-situ testing is a separate context, and no tissue-staining percentage is an individual recurrence or benefit probability.",
+  "In a fictional adequately controlled report, ER is 80% and PR is below 1%. The invasive cancer is ER-positive and PR-negative; PR does not cancel ER and the pair is not TNBC. These measurements do not alone choose a drug, quantify benefit or prescribe progesterone. Read each observation before asking the separate treatment question."
+]
+}),
 
   b({ id: "ki-67-index", name: "Ki-67 index (proliferation by IHC)", aka: ["Ki-67", "Ki67", "Ki-67 index", "Ki-67 labelling index", "Ki-67 score", "MIB-1 index", "Ki-67 >= 20%", "Ki-67 ≥20%", "proliferation index"],
     target: "mki67", measurement: "ihc-score",
@@ -580,8 +636,8 @@ export const biomarkerReadouts: BiomarkerInput[] = [
   // ---- BRCA and HRD ----
   b({ id: "brca-germline", name: "Germline BRCA1/2 pathogenic variant (gBRCAm)", aka: ["gBRCA", "gBRCAm", "germline BRCA", "germline BRCA1", "germline BRCA2", "BRCA carrier", "inherited BRCA mutation", "deleterious germline BRCA mutation"],
     target: "brca", measurement: "sequencing-variant",
-    tldr: "A germline BRCA1 or BRCA2 variant is inherited and present in every cell, found by a blood test. It selects PARP inhibitors in breast, ovarian, pancreatic and prostate cancer and tells relatives they may carry it too.",
-    summary: "Germline testing sequences BRCA1 and BRCA2 from blood or saliva and classifies variants as pathogenic, likely pathogenic, uncertain, likely benign or benign; labels use 'deleterious or suspected deleterious'. Olaparib is labelled for gBRCAm HER2-negative high-risk early breast cancer (adjuvant, OlympiA), gBRCAm HER2-negative metastatic breast cancer, first-line maintenance of gBRCAm metastatic pancreatic cancer, and germline or somatic BRCA-mutated ovarian cancer; talazoparib for gBRCAm HER2-negative advanced breast cancer; niraparib for recurrent gBRCAm ovarian cancer maintenance. BRACAnalysis CDx (Myriad) is the blood companion diagnostic on the FDA list for olaparib, talazoparib and rucaparib. A germline result triggers cascade testing of relatives and risk-reducing surgery discussions.",
+    tldr: "A constitutional BRCA1 or BRCA2 result can inform cancer susceptibility, relatives' testing and specified treatment decisions. It does not necessarily mean the variant was inherited or that a medicine will work.",
+    summary: "Germline testing sequences BRCA1 and BRCA2 from blood or saliva and classifies variants as pathogenic, likely pathogenic, uncertain, likely benign or benign; labels use 'deleterious or suspected deleterious'. Olaparib is labelled for gBRCAm HER2-negative high-risk early breast cancer (adjuvant, OlympiA), gBRCAm HER2-negative metastatic breast cancer, first-line maintenance of gBRCAm metastatic pancreatic cancer, and germline or somatic BRCA-mutated ovarian cancer; talazoparib for gBRCAm HER2-negative advanced breast cancer; niraparib for recurrent gBRCAm ovarian cancer maintenance. BRACAnalysis CDx (Myriad) is the blood companion diagnostic on the FDA list for olaparib, talazoparib and rucaparib. A confirmed pathogenic constitutional result can inform cascade testing and risk-reduction discussions; these depend on the finding and the person's situation.",
     scoringRule: { text: "A pathogenic or likely pathogenic (deleterious or suspected deleterious) BRCA1 or BRCA2 variant detected in germline DNA from blood by sequencing and large rearrangement analysis.", quote: "deleterious or suspected deleterious gBRCAm human epidermal growth factor receptor 2 (HER2)-negative high risk early breast cancer", source: LABEL.lynparza, sourceLabel: "Lynparza prescribing information" },
     thresholds: [
       th({ value: "Deleterious or suspected deleterious gBRCAm", drugId: "olaparib", cancerId: "breast-cancer", regulator: "FDA", source: LABEL.lynparza, quote: "Lynparza is indicated for the adjuvant treatment of adult patients with deleterious or suspected deleterious gBRCA m human epidermal growth factor receptor 2 (HER2)-negative high risk early breast cancer who have been treated with neoadjuvant or adjuvant chemotherapy." }),
@@ -597,8 +653,22 @@ export const biomarkerReadouts: BiomarkerInput[] = [
       cdx("BRACAnalysis CDx", "Myriad Genetic Laboratories", "Pancreatic Cancer - Whole Blood", ["olaparib"], "P140020/S019 (12/27/2019)", "myriad-genetics"),
       cdx("BRACAnalysis CDx", "Myriad Genetic Laboratories", "Metastatic Castrate Resistant Prostate Cancer (mCRPC) - Whole Blood", ["olaparib"], "P140020/S020 (05/19/2020)", "myriad-genetics"),
     ],
-    forPatient: "A pathogenic germline BRCA result means the change is inherited. For your treatment it opens PARP inhibitor tablets (olaparib, talazoparib, niraparib or rucaparib depending on the cancer), including a year of olaparib after chemotherapy in high-risk early breast cancer. For your family it means close relatives can be tested and, if positive, offered screening or preventive surgery. A 'variant of uncertain significance' is not a positive result.",
-    terms: ["gbrca-mutation", "germline-vs-somatic", "hrd"], related: ["brca-somatic", "hrd-positive"], links: [{ label: "Lynparza prescribing information (DailyMed)", url: LABEL.lynparza }, { label: "Talzenna prescribing information (DailyMed)", url: LABEL.talzenna }], tags: ["biomarker", "brca"] }),
+    forPatient: "A harmful constitutional BRCA variant can raise cancer susceptibility and have implications for relatives. It may be inherited or arise newly. A tumour-only result needs separate assessment of its origin. Certain treatments use a BRCA result in specified cancer settings, but the result alone does not establish eligibility or a response. A variant of uncertain significance is not a positive pathogenic result.",
+    terms: ["gbrca-mutation", "germline-vs-somatic", "hrd"], related: ["brca-somatic", "hrd-positive"], links: [{ label: "Lynparza prescribing information (DailyMed)", url: LABEL.lynparza }, { label: "Talzenna prescribing information (DailyMed)", url: LABEL.talzenna },
+{
+  "label": "Waks AG et al. (2020): Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+},
+{
+  "label": "nci brca",
+  "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet"
+}
+], tags: ["biomarker", "brca"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "A constitutional test and a tumour-function assay answer different questions. A BRCA result does not show whether repair remains impaired in a later tumour sample. In Waks and colleagues' selected series of eight patients with BRCA-altered metastatic breast cancer and acquired resistance, definite or putative reversion changes were found in four. This was a small resistance study, not an estimate of how often reversion occurs in everyone with a BRCA finding."
+]
+}),
 
   b({ id: "brca-somatic", name: "Tumour (somatic or germline) BRCA1/2 mutation and HRR gene alterations", aka: ["somatic BRCA", "sBRCA", "tumor BRCA", "tBRCA", "BRCAm", "BRCA-mutated", "HRR gene mutation", "HRRm", "homologous recombination repair gene alteration", "ATM mutation", "PALB2 mutation"],
     target: "brca", measurement: "sequencing-variant",

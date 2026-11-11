@@ -98,3 +98,7 @@ Twenty later and eighteen original lessons are assessed: 38 versions, 392 signat
 ## Therapy and conjugates checkpoint, 11 November 2026
 
 Twelve later and eleven original lessons are assessed independently: 122/111 section signatures, 276/255 instructional requirements and 934 exact field proofs. Two later and one original source-access rows remain partial. Fifty-three connected paragraphs supplement canonical owners, with one new registered parent and three chemistry owners retained in #369. Both full chains, actual readers/exports and unchanged Ask scores pass. Original assessment is 386/537 and later teaching assessment 387/550; main/live credit remains zero.
+
+## Breast concept implementation checkpoint, 11 November 2026
+
+Sixteen existing owners now carry 53 source-qualified teaching paragraphs and corrected leading statements. The source-first inventory retains 237 semantic rows across 24 pinned versions and 266 signatures. Forty stale translated leads were withdrawn and five simple-English entries corrected; actual selectors verify the English fallbacks. Full gates, actual reader text, JSON/Markdown/OpenAPI exports, retrieval and page ceilings pass. This is a partial implementation checkpoint: the exhaustive map of 928 source blocks and master-ledger acceptance remain open. The twelve lessons retain their unreviewed ledger dispositions, cumulative coverage counts are unchanged, and main/live credit remains zero. See `breast-concepts-2026-11-11/`.

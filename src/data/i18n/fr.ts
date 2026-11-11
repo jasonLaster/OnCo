@@ -489,7 +489,7 @@ export const tldr_fr: Record<string, string> = {
   "pathology-foundation-model": "De très grands modèles d'IA entraînés sur des millions de lames ou d'images médicales, qui peuvent être adaptés à presque n'importe quelle question diagnostique.",
   payload: "La charge utile est le poison transporté par un ADC, généralement une chimiothérapie bien trop toxique pour être administrée seule.",
 
-  pd1: "PD-1 est un frein sur les cellules T. Le bloquer libère le système immunitaire contre la tumeur et a permis de guérir certains cancers auparavant incurables.",
+
   "pd1-checkpoint": "PD-1 et CTLA-4 contribuent à réguler les réponses des lymphocytes T. Modifier leurs signaux ne prouve pas, à soi seul, la reconnaissance ou la destruction du cancer, ni un bénéfice thérapeutique.",
   pdl1: "PD-L1 est le versant tumoral du frein PD-1, et aussi le biomarqueur qui décide qui reçoit une immunothérapie.",
   "pdx-models": "Une xénogreffe dérivée de patient est la tumeur d'un patient cultivée chez une souris, utilisée pour tester des médicaments avant qu'ils n'arrivent chez l'humain.",
@@ -728,7 +728,7 @@ export const tldr_fr: Record<string, string> = {
   "cancer-health-disparities": "Des différences systématiques dans qui développe un cancer, à quel stade il est découvert et qui survit, liées à l'origine ethnique, aux revenus, à la géographie, à l'assurance et au racisme structurel plutôt qu'à la seule biologie.",
   "cancer-institute-adyar": "Le deuxième plus ancien hôpital anticancéreux de l'Inde (1954), fondé par Muthulakshmi Reddy et dirigé pendant des décennies par V. Shanta, et siège du premier registre du cancer en population de l'Inde.",
   "cancer-neuroscience": "La neuroscience du cancer étudie la façon dont les tumeurs dialoguent avec les nerfs. Les nerfs se développent dans les tumeurs et leur envoient des signaux ; les tumeurs cérébrales vont jusqu'à se brancher sur les circuits neuronaux. Couper cette conversation avec des médicaments courants comme les bêtabloquants est aujourd'hui à l'essai.",
-  "cancer-stage": "L'étendue de la propagation d'un cancer, du stade I (petit et localisé) au stade IV (disséminé vers des organes distants). Le stade est, à lui seul, le guide le plus fiable pour le traitement et le pronostic.",
+
   candiolo: "L'institut du cancer du Piémont, près de Turin, une référence mondiale en génomique du cancer colorectal, en xénogreffes dérivées de patients et en biologie de MET.",
   "capstone-1": "L'essai qui a ajouté adebrelimab, l'anticorps anti-PD-L1 de Hengrui, à la chimiothérapie dans le cancer du poumon à petites cellules, avec l'un des plus grands gains de survie observés dans cette maladie.",
   cbioportal: "cBioPortal permet de parcourir les mutations, le nombre de copies et l'expression de dizaines de milliers de tumeurs sans écrire de code.",
@@ -1386,7 +1386,7 @@ export const tldr_fr: Record<string, string> = {
   ttfields: "Des électrodes portables qui délivrent des champs électriques alternatifs perturbant la division des cellules cancéreuses.",
   "tubulin-inhibitor-payloads": "Les charges inhibitrices de la tubuline ont été la première génération de charges des ADC modernes : des médicaments qui bloquent l'échafaudage de la cellule pour qu'elle ne puisse pas se diviser. Les effets secondaires nerveux et oculaires sont typiques.",
   "tum-munich": "L'hôpital de l'université technique de Munich, l'une des deux moitiés du Comprehensive Cancer Center Munich et un leader de l'imagerie PSMA et de la chimie des radiopharmaceutiques.",
-  "tumour-grade": "À quel point les cellules cancéreuses paraissent anormales au microscope, du grade 1 (proche de la normale, lent) au grade 3 ou 4 (très anormal, rapide). Le grade décrit le comportement ; le stade décrit l'étendue.",
+
     "uct-frankfurt": "Le centre universitaire de cancérologie de Francfort, héritier de l'institut de la « balle magique » de Paul Ehrlich, avec des points forts en leucémie, neuro-oncologie et thérapie cellulaire.",
   "uct-mainz": "Le centre médical universitaire où Uğur Şahin et Özlem Türeci ont bâti la science à l'origine de BioNTech et des vaccins personnalisés à mRNA contre le cancer.",
   "uganda-cancer-institute": "Le plus ancien institut de recherche sur le cancer d'Afrique de l'Est, fondé en 1967 pour étudier le lymphome de Burkitt, et aujourd'hui un centre national de cancérologie doté d'un partenariat avec le Fred Hutch et du premier bâtiment d'Afrique construit spécialement pour la recherche sur le cancer.",

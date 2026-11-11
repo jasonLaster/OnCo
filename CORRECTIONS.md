@@ -1,5 +1,16 @@
 # Corrections
 
+### Introductory labels, recognition and evidence, 11 November 2026
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Grade](/terms/tumour-grade/) | Generic leads equated grades with fixed growth speeds and generalised chemotherapy response | NCI breast grading/staging and the source-first introductory assessment | Defines cancer-specific microscopic grading separately from growth rate, extent and adverse-event severity |
+| 2026-11-11 | [Stage](/terms/cancer-stage/) | The lead ranked stage as the single strongest guide and the summary imposed broad treatment and state-change rules | Raw NCI staging explanation and current TNM owner comparison | Keeps system, edition, evidence and treatment moment; distinguishes anatomical and prognostic groups without a universal treatment rule |
+| 2026-11-11 | [Residual TNBC](/terms/tnbc-residual-disease-decision/) | The opening made residual burden decide the medicine; exploratory RCB subgroup effects lacked their uncertainty | Resolved CREATE-X, OlympiA and KEYNOTE-522 RCB abstracts | Separates eligibility and prior care from score alone and retains the subgroup confidence intervals |
+| 2026-11-11 | [PD-1](/targets/pd1/) and [pembrolizumab](/drugs/pembrolizumab/) | Short and mechanism wording implied automatic restored function, killing and persistent memory after blockade | Raw KEYTRUDA mechanism/warning sections and the clinical-comparison evidence | States receptor/ligand blockade with separate recognition, access, function, benefit and harm questions; withdraws stale short translations |
+
+The introductory assessment retains separate original/later requirements, fictional examples and source-reading depths. These corrections do not re-verify unrelated retained catalogue claims or establish main/live, expert, learner or language approval.
+
 ### Breast concept teaching, 11 November 2026
 
 The [breast assessment](research/education-coverage-2026-11-08/breast-concepts-2026-11-11/README.md) records the exact before/after fields and source depths. The corrections were applied in [d02cc0cc5](https://github.com/jasonLaster/OnCo/commit/d02cc0cc5e293d1f1d80639c47c125b995a13071) and [b8286149b](https://github.com/jasonLaster/OnCo/commit/b8286149b7f221c3620fe907374de8c63473e3db), as unmerged draft contributions.

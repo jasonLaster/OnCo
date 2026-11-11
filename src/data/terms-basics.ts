@@ -821,19 +821,49 @@ export const termsBasics: TermInput[] = [
   t({
     id: "tumour-grade", name: "Grade", category: CLINIC,
     aka: ["tumour grade", "tumor grade", "grading", "high-grade", "low-grade", "high grade", "low grade", "intermediate-grade", "Gleason", "Gleason score"],
-    tldr: "How abnormal the cancer cells look under the microscope, from grade 1 (close to normal, slow) to grade 3 or 4 (wildly abnormal, fast). Grade is about behaviour; stage is about extent.",
-    summary: "Pathologists assign grade from how well the cells resemble their parent tissue (differentiation), how variable their nuclei are, and how many are dividing; the schemes are tumour-specific, such as the Nottingham score in breast, Gleason in prostate, and WHO grades 1 to 4 in brain tumours. High grade predicts faster growth and earlier spread but also, often, better response to chemotherapy, and grade feeds into decisions about whether to add chemotherapy after surgery. Grade should not be confused with the 'grade' of a side effect, which is a separate severity scale.",
+    tldr: "Grade describes how abnormal a tumour looks under the microscope, using a system specific to that cancer. It differs from stage and does not measure an exact growth rate.",
+    summary: "Pathologists assess microscopic features under a cancer-specific grading system. In breast cancer, Nottingham grading combines tubule formation, nuclear pleomorphism and mitotic count. The resulting grade can inform prognosis and treatment alongside other findings; it is not a direct clock for growth or a measurement of anatomical spread. Other cancers use different schemes, and adverse-event grade is a separate severity scale.",
     wikipedia: W("Grading_(tumors)"),
     related: ["cancer-stage", "differentiation", "proliferation", "histology", "toxicity-grade", "prognosis"], cancers: ["prostate", "breast-hr-positive", "glioblastoma"],
-  }),
+
+"asOf": "2026-11-11",
+"notes": [
+  "In a fictional breast report, grade 3 does not mean stage III and does not show distant metastasis. Grade describes microscopic features; breast stage III is a regional or locally advanced classification rather than an M1 assignment. The same numeral does not join the two systems."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Grading_(tumors)"
+  },
+  {
+    "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+    "url": "https://www.cancer.gov/types/breast/stages"
+  }
+]
+}),
   t({
     id: "cancer-stage", name: "Stage", category: CLINIC,
     aka: ["stages", "staging", "stage I", "stage II", "stage III", "stage 1", "stage 2", "stage 3", "early-stage", "early stage", "late-stage", "late stage", "locally advanced", "localised", "localized", "regional spread", "staged", "restaging", "upstaged", "downstaged", "stage IA", "stage IB", "stage IIB", "stage I-III", "stage II-III"],
-    tldr: "How far a cancer has spread, from stage I (small and confined) to stage IV (spread to distant organs). Stage is the single strongest guide to treatment and prognosis.",
-    summary: "Stage combines the size and local extent of the primary tumour, whether lymph nodes are involved, and whether there are distant metastases, formalised in the TNM system and grouped into stages I to IV; stage 0 is cancer in situ. Stages I to III are usually treated with curative intent by surgery or radiotherapy, often with drugs before or after, while stage IV is generally treated with systemic therapy to control rather than cure. Stage is determined by imaging and pathology at diagnosis ('clinical' and 'pathological' stage) and is not changed if the cancer later spreads, though the patient is then said to have metastatic or recurrent disease.",
+    tldr: "Stage describes a cancer’s extent under the applicable staging system. Some breast stage groups also incorporate grade and biomarkers; stage alone does not determine an individual outcome.",
+    summary: "Staging describes the primary tumour, regional nodes and distant disease under cancer-specific rules. In breast cancer, clinical prognostic assessment uses history, examination, imaging and biopsy findings; surgery-first pathological prognostic assessment adds the surgical findings. Breast prognostic groups incorporate grade and biomarkers alongside TNM, so an anatomical category and a prognostic group are different descriptions. Keep the system, edition, evidence and treatment moment attached rather than applying one universal stage-to-treatment rule.",
     wikipedia: W("Cancer_staging"),
     related: ["tnm-staging", "metastasis", "lymph-node", "tumour-grade", "in-situ", "stage-shift", "prognosis", "screening"],
-  }),
+
+"asOf": "2026-11-11",
+"notes": [
+  "Breast stage III concerns regional or locally advanced disease, whereas stage IV denotes distant spread. A high-grade invasive core does not establish either whole-body extent or a certain prognosis. Record the original diagnostic assessment and later residual or recurrent findings separately; a later report does not erase what the earlier specimen showed."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cancer_staging"
+  },
+  {
+    "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+    "url": "https://www.cancer.gov/types/breast/stages"
+  }
+]
+}),
   t({
     id: "in-situ", name: "In situ", category: CLINIC,
     aka: ["carcinoma in situ", "in-situ", "ductal carcinoma in situ", "DCIS", "stage 0", "pre-invasive", "preinvasive", "pre-cancer", "precancer", "precancerous", "pre-cancerous", "premalignant", "pre-malignant", "dysplasia", "high-grade dysplasia", "precancers"],
@@ -904,7 +934,32 @@ export const termsBasics: TermInput[] = [
     summary: "Biopsies range from a fine needle drawing up cells, to a core needle removing a sliver of tissue, to surgical removal of the whole lesion; the sample is fixed, sliced, stained and read by a pathologist, and today also tested for protein markers and sequenced for mutations. Tissue is precious and finite, and a single biopsy samples one spot of a tumour that may vary from place to place and change over time, which is why repeat biopsies at progression and blood-based liquid biopsies have become important. Biopsies carry small risks (bleeding, infection, rarely tumour seeding) and some sites, such as the pancreas or brain, are hard to reach.",
     wikipedia: W("Biopsy"),
     related: ["histology", "ihc", "genomic-profiling", "ctdna", "lesion", "biomarker"], technologies: ["histopathology-ihc", "liquid-biopsy", "cgp"],
-  }),
+
+"asOf": "2026-11-11",
+"notes": [
+  "Read a pathology report as an interpretation of a particular specimen. Keep the sampled site, collection date, preparation and method with the finding, and distinguish collection from the date the report became available. An addendum testing old material still describes that old specimen. The final diagnosis integrates the findings; an isolated descriptive word should not replace that interpretation. Pending, qualified or uninterpretable results retain those limits rather than becoming negative findings.",
+  "In a fictional pretreatment breast core, high-grade invasive carcinoma and completed triple-negative receptor tests answer different questions. Neither establishes a particular RNA-expression subtype or distant spread. A suspicious regional node that was not sampled is not a signed positive-node pathology finding. If later surgery finds sparse residual invasive carcinoma after treatment, preserve both the original biopsy and the later specimen, with their separate dates and settings; do not turn the first into a post-treatment measurement.",
+  "A useful report card keeps microscopic appearance and grade, individual receptor tests, anatomical extent and specimen timing in separate fields. Blank boxes in a teaching illustration contain no patient findings and calculate no stage or forecast. Ask which specimen, date, method and question each label belongs to before combining it with another observation. A small region cannot survey every part of a heterogeneous tumour, and cancer cells, immune cells, supporting tissue and treatment-related changes can coexist in the sample."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Biopsy"
+  },
+  {
+    "label": "NCI: pathology reports, specimen details and final interpretation",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+  },
+  {
+    "label": "NCI: what cancer is, altered cells and the tumour microenvironment",
+    "url": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"
+  },
+  {
+    "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+    "url": "https://www.cancer.gov/types/breast/stages"
+  }
+]
+}),
   t({
     id: "histology", name: "Histology", category: CLINIC,
     aka: ["histological", "histologic", "histopathology", "histopathological", "histotype", "histotypes", "histological subtype", "histological subtypes", "pathology report", "pathology", "pathologist", "pathologists", "under the microscope", "H&E", "microscopy", "histologies", "histologic subtype", "variant histology", "variant histologies", "histological-subtype"],

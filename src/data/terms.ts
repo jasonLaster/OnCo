@@ -192,7 +192,7 @@ export const terms: TermInput[] = [
   "response-adaptive-randomisation",
   "treatment-effect-in-pathology"
 ] ,
-"asOf": "2026-11-10",
+"asOf": "2026-11-11",
 "notes": [
   "In FDA breast-trial guidance, ypT0/Tis ypN0 means no residual invasive cancer on haematoxylin and eosin (H&E) examination of the complete resected breast specimen and all sampled regional nodes after neoadjuvant systemic treatment. Residual DCIS is permitted. The stricter ypT0 ypN0 definition also excludes in situ cancer. Preserve the actual protocol and nodal assessment rules.",
   "Breast-only clearance is not the combined breast-and-node endpoint. Residual invasive cancer in a sampled node prevents that combined pCR result even when breast invasion is absent or a blood assay is negative. A small negative biopsy, imaging response and negative circulating tumour DNA are different observations.",
@@ -202,6 +202,8 @@ export const terms: TermInput[] = [
   "FDA's July 2020 revision 1 guidance concerns pCR endpoints for trial design and accelerated approval in high-risk early-stage breast cancer. It is not an individual treatment or cure rule. In the notation, y denotes assessment after neoadjuvant treatment and p denotes pathological assessment. Sections and stains consume finite tissue; incomplete sampling, unexamined nodes and mixed endpoint definitions can invalidate comparisons.",
   "KEYNOTE-522 separately demonstrated endpoint and survival results for the whole perioperative regimen in previously untreated stage II or III TNBC. In the 2020 primary pCR analysis of the first 602 randomised participants, pembrolizumab plus neoadjuvant chemotherapy yielded 64.8% pCR versus 51.2% with placebo plus chemotherapy (difference 13.6 percentage points, 95% CI 5.4 to 21.8). The final 2024 overall-survival report covered all 1,174 randomised participants, including postoperative pembrolizumab or placebo: at 60 months, overall survival was 86.6% versus 81.7% (P = 0.002; median follow-up 75.1 months). Survival was measured directly; the pCR gain did not mathematically predict it or isolate which perioperative component produced the benefit.",
   "In fictional case A, no breast invasion, residual DCIS and no residual cancer in sampled nodes meet ypT0/Tis ypN0 but not ypT0 ypN0. In fictional case B, the same breast finding plus a 4-mm residual invasive nodal deposit meets neither combined endpoint. Identical DCIS-at-ink findings in either case remain a separate margin question."
+,
+"Subtract within the same endpoint and analysis: 64.8 minus 51.2 gives a 13.6-percentage-point pCR difference in the first 602 participants; 86.6 minus 81.7 gives 4.9 points in the separately reported 60-month survival estimates for all 1,174. The latter is often rounded to about five more people alive per hundred under the trial comparison. These time-to-event estimates are not literal counts from a complete hundred-person group, an individual forecast or a conversion from the pCR difference."
 ]
 }),
   t({ id: "rcb", wikipediaChecked: "2026-09-22", links: [
@@ -1033,10 +1035,24 @@ export const terms: TermInput[] = [
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Neoadjuvant_therapy"
   }
+,
+{
+  "label": "KEYTRUDA U.S. prescribing information: sections 1.20, 5.1, 12.1 and 14.20",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+},
+{
+  "label": "NCI: triple-negative breast cancer treatment",
+  "url": "https://www.cancer.gov/types/breast/treatment/triple-negative-breast-cancer"
+}
 ],
 "related": [
   "perioperative-immune-window",
   "keynote-522"
+]
+,
+"notes": [
+  "KEYNOTE-522 tested a selected high-risk, previously untreated early-TNBC population, with chemotherapy plus pembrolizumab or placebo before surgery and pembrolizumab or placebo afterwards. Eight planned 3-week preoperative cycles and nine postoperative cycles correspond to about 24 and 27 weeks; delays and clinical decisions can alter actual timing. The U.S. label describes tumour-size and nodal eligibility and enrolment regardless of PD-L1 expression. A stage label alone is not a personal treatment instruction. The complete regimen comparison did not independently randomise its two phases.",
+  "Neoadjuvant treatment can reduce a tumour before an operation and leave treated tissue for response assessment. Subsequent breast and nodal pathology, radiation indications and further systemic options answer separate questions. Residual disease does not automatically choose one added medicine: prior treatment, biomarker eligibility, the population actually studied and uncertainty about sequencing or combination remain relevant. A pathological response is not a survival estimate or proof that a treatment component can be omitted."
 ]
 }),
   t({ id: "first-line", wikipedia: W("Therapy#Lines_of_therapy"), links: [{ label: "NCI Dictionary of Cancer Terms: first-line therapy", url: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/first-line-therapy" }], aka: ["first-line", "second-line", "third-line", "later-line", "later lines", "1L", "2L", "3L", "first line", "second line", "third line", "line of therapy", "front-line", "frontline", "previously untreated", "prior lines", "treatment-naive"], name: "Lines of therapy", category: "Clinical", tldr: "First-line is the first treatment for advanced cancer; second-line is what comes after it fails, and so on.", summary: "Lines of therapy number the successive treatments a patient with advanced cancer receives: first-line is the initial treatment, second-line follows when it fails, and so on, with aliases such as 1L, 2L, front-line and treatment-naive. Drugs are usually approved first in later lines, where control arms are weak, and then move earlier, and each shift to an earlier line reshapes the entire sequence, as happened with ADCs in TNBC in 2026. The concept is central to Project FrontRunner and to the bottlenecks on too many combinations to test, fragmented care and incentives that reward me-too drugs. It also frames the DESTINY-Breast06, FLAURA, MARIPOSA, KEYNOTE-189, HARMONi-2 and NAPOLI-3 papers and ideas on pathology-triggered trial referral and reflex genomic profiling at diagnosis." }),

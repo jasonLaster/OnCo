@@ -68,7 +68,7 @@ export const tldr_es: Record<string, string> = {
   cd123: "Un receptor de interleucina sobreabundante en un cáncer de sangre raro y agresivo y en las células madre leucémicas.",
   "mage-a4": "Una proteína normalmente solo en el testículo que algunos sarcomas y otros tumores encienden; las células T pueden diseñarse para reconocer fragmentos de ella.",
   gp100: "Una proteína de las células pigmentarias; la diana del primer fármaco biespecífico que mejoró la supervivencia en un tumor sólido, el melanoma uveal.",
-  pd1: "Un freno de las células T. Bloquearlo libera al sistema inmunitario contra el tumor y ha curado algunos cánceres antes incurables.",
+
   pdl1: "El lado tumoral del freno PD-1, y también el biomarcador que decide quién recibe inmunoterapia.",
   ctla4: "El primer freno inmunitario atacado contra el cáncer; liberarlo ganó un Premio Nobel y cura una fracción de los melanomas.",
   lag3: "El tercer freno inmunitario en alcanzar la aprobación, combinado con el bloqueo de PD-1 en melanoma.",
@@ -898,7 +898,7 @@ export const tldr_es: Record<string, string> = {
   "cancer-health-disparities": "Diferencias sistemáticas en quién desarrolla cáncer, cuán pronto se detecta y quién sobrevive, impulsadas por la raza, los ingresos, la geografía, el seguro médico y el racismo estructural, más que por la biología sola.",
   "cancer-institute-adyar": "El segundo hospital oncológico más antiguo de India (1954), fundado por Muthulakshmi Reddy y dirigido durante décadas por V. Shanta, y sede del primer registro poblacional de cáncer de India.",
   "cancer-neuroscience": "La neurociencia del cáncer es el estudio de cómo los tumores se comunican con los nervios. Los nervios crecen dentro de los tumores y les envían señales; los tumores cerebrales incluso se conectan a los circuitos neuronales. Ahora se está probando cortar esa conversación con fármacos comunes como los betabloqueantes.",
-  "cancer-stage": "Hasta dónde se ha extendido un cáncer, desde el estadio I (pequeño y localizado) hasta el estadio IV (extendido a órganos distantes). El estadio es la guía más sólida para el tratamiento y el pronóstico.",
+
   candiolo: "El instituto oncológico del Piamonte, cerca de Turín, una referencia mundial en genómica del cáncer colorrectal, xenoinjertos derivados de pacientes y biología de MET.",
   "capstone-1": "El ensayo que añadió adebrelimab, el anticuerpo anti-PD-L1 de Hengrui, a la quimioterapia en el cáncer de pulmón de células pequeñas, con una de las mayores ganancias de supervivencia vistas en esa enfermedad.",
   cbioportal: "cBioPortal permite explorar las mutaciones, el número de copias y la expresión de decenas de miles de tumores sin escribir código.",
@@ -1506,7 +1506,7 @@ export const tldr_es: Record<string, string> = {
   trog: "El grupo de ensayos de oncología radioterápica de Australia y Nueva Zelanda, que ha llevado a cabo ensayos que cambiaron la práctica en hipofraccionamiento, radioterapia estereotáctica y combinaciones de radiación con fármacos.",
   "tubulin-inhibitor-payloads": "Las cargas útiles inhibidoras de tubulina fueron la primera generación de cargas útiles de los ADC modernos: fármacos que atascan el andamiaje de la célula para que no pueda dividirse. Los efectos secundarios en nervios y ojos son típicos.",
   "tum-munich": "El hospital de la universidad técnica de Múnich, una de las dos mitades del Comprehensive Cancer Center Munich y líder en imagen PSMA y química de radiofármacos.",
-  "tumour-grade": "Cuán anormales se ven las células cancerosas al microscopio, desde el grado 1 (casi normales, lentas) hasta el grado 3 o 4 (muy anormales, rápidas). El grado describe el comportamiento; el estadio describe la extensión.",
+
     "uct-frankfurt": "El centro oncológico universitario de Fráncfort, heredero del instituto de la 'bala mágica' de Paul Ehrlich, con fortalezas en leucemia, neurooncología y terapia celular.",
   "uct-mainz": "El centro médico universitario donde Uğur Şahin y Özlem Türeci desarrollaron la ciencia detrás de BioNTech y de las vacunas personalizadas de mRNA contra el cáncer.",
   "uganda-cancer-institute": "El instituto de investigación del cáncer más antiguo de África Oriental, fundado en 1967 para estudiar el linfoma de Burkitt, y hoy un centro nacional del cáncer con una alianza con Fred Hutch y la primera instalación de África construida específicamente para la investigación del cáncer.",

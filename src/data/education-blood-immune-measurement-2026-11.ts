@@ -75,6 +75,11 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
     "label": "Diehl et al.: circulating mutant DNA to assess tumour dynamics (2008)",
     "url": "https://doi.org/10.1038/nm.1789"
   }
+,
+{
+  "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+}
 ],
     tags: ["biomarker", "measurement"],
     related: ["ctdna", "mrd", "clonal-haematopoiesis", "ctdna-tumour-fraction"],
@@ -92,9 +97,11 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
   "Source attribution comes first: a positive plasma variant may come from a blood-cell clone rather than a tumour. In Razavi's paired sequencing, 53.2% of cell-free DNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, so a discordant positive needs origin checks before it is read as occult disease.",
   "Half-life, scoped: Diehl and colleagues estimated a ctDNA half-life after surgery of 114 minutes by evaluating one subject whose plasma was sampled at several early times after complete resection in a study of 162 plasma samples from 18 subjects with colorectal cancer (Diehl 2008). That is a single-subject estimate of post-resection clearance in colorectal cancer, not a universal cfDNA half-life, a breast-cancer figure or a blood-draw schedule. DNA release and clearance can change sooner than visible tissue structure, which is a reason to align the dates of the blood and imaging acquisitions.",
   "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome."
+,
+"In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists."
 ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-11"
 }),
 
   t({

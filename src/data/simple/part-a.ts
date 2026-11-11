@@ -67,7 +67,7 @@ export const simpleA: Record<string, string> = {
   cd123: "A receptor found in large amounts on a rare blood cancer and on leukaemia stem cells.",
   "mage-a4": "A protein normally only in the testes that some cancers switch on. T cells can be engineered to recognise pieces of it.",
   gp100: "A pigment-cell protein. The first two-armed drug to help people live longer with a solid tumour aims at it, in eye melanoma.",
-  pd1: "A 'brake' on immune cells. Blocking it lets the immune system attack the cancer, and has cured some cancers that used to be incurable.",
+  pd1: "PD-1 helps control how T cells respond. Blocking it can help against some cancers, but does not promise that the cells will recognise or kill the cancer.",
   pdl1: "The cancer's side of the PD-1 brake. It is also the test that decides who gets immune drugs.",
   ctla4: "The first immune brake ever blocked to treat cancer. The discovery won a Nobel Prize.",
   lag3: "The third immune brake to be blocked with an approved drug, used with a PD-1 blocker in melanoma.",

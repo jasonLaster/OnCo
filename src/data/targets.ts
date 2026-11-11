@@ -396,8 +396,8 @@ export const targets: TargetInput[] = [
 
   // ---- Checkpoints ----
   {
-    id: "pd1", trials: ["nct06631092", "nct07266428", "nct06492005", "nct06144671", "nct06244992", "nct06107374", "nct06631079", "nct05023486", "nct05838729", "nct07444437", "nct07293754"], drugs: ["tqb2450", "bcd-217", "tak-928", "sasanlimab", "ibi363", "t3011", "ssgj-705", "ssgj-706", "rilvegostomig", "lorigerlimab", "ai-081", "gc101-til", "azd7789", "lb1410"], kind: "target", name: "PD-1", symbol: "PDCD1", hgnc: "HGNC:8760", ensembl: "ENSG00000188389", uniprot: "Q15116", entrez: "5133", targetClass: "checkpoint", asOf, wikipedia: W("Programmed_cell_death_protein_1"),
-    tldr: "PD-1 is a brake on T cells. Blocking it releases the immune system against the tumour and has cured some previously incurable cancers.",
+    id: "pd1", trials: ["nct06631092", "nct07266428", "nct06492005", "nct06144671", "nct06244992", "nct06107374", "nct06631079", "nct05023486", "nct05838729", "nct07444437", "nct07293754"], drugs: ["tqb2450", "bcd-217", "tak-928", "sasanlimab", "ibi363", "t3011", "ssgj-705", "ssgj-706", "rilvegostomig", "lorigerlimab", "ai-081", "gc101-til", "azd7789", "lb1410"], kind: "target", name: "PD-1", symbol: "PDCD1", hgnc: "HGNC:8760", ensembl: "ENSG00000188389", uniprot: "Q15116", entrez: "5133", targetClass: "checkpoint", "asOf": "2026-11-11", wikipedia: W("Programmed_cell_death_protein_1"),
+    tldr: "PD-1 helps regulate T-cell responses. Blocking its signals can improve cancer control in studied settings, but it does not guarantee recognition, killing or benefit.",
     summary: "PD-1 blockade (pembrolizumab, nivolumab, cemiplimab, dostarlimab and a growing list of biosimilar-adjacent agents) is standard across melanoma, NSCLC, RCC, urothelial, head and neck, MSI-high tumours, TNBC (with chemotherapy), Hodgkin lymphoma, and more. PD-1×VEGF bispecifics (ivonescimab) and PD-1×CTLA-4 combinations are the next wave.",
     biology: "Inhibitory receptor on activated T cells; ligands PD-L1/PD-L2. Tumour PD-L1 expression, TMB, and MSI predict response imperfectly.",
     whereFound: ["Exhausted T cells in the tumour microenvironment"],
@@ -407,8 +407,17 @@ export const targets: TargetInput[] = [
     prevalence: [
       { cancerId: "melanoma", pct: "30-40", measure: "Objective response to PD-1 monotherapy (proxy)", source: "https://en.wikipedia.org/wiki/Programmed_cell_death_protein_1", note: "Not an expression prevalence" },
       { cancerId: "nsclc", pct: "20-45", measure: "Response by PD-L1 stratum (proxy)", source: "https://en.wikipedia.org/wiki/Programmed_cell_death_protein_1" },
-    ], links: [{ label: "Wikipedia", url: W("Programmed_cell_death_protein_1") }], companies: ["cofactor-genomics", "compass-therapeutics", "insight-molecular-diagnostics", "onc-ai", "oncohost", "ose-immunotherapeutics", "xilio-therapeutics"],
-  },
+    ], links: [{ label: "Wikipedia", url: W("Programmed_cell_death_protein_1") },
+{
+  "label": "KEYTRUDA U.S. prescribing information: PD-1 binding, mechanism and immune-mediated warnings",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+}
+], companies: ["cofactor-genomics", "compass-therapeutics", "insight-molecular-diagnostics", "onc-ai", "oncohost", "ose-immunotherapeutics", "xilio-therapeutics"],
+
+"notes": [
+  "PD-L1 and PD-L2 can engage PD-1 on T cells and inhibit proliferation and cytokine production. Pembrolizumab binds PD-1 and blocks its interactions with both ligands. Interrupting this pathway does not supply every other requirement for target recognition, tissue access or useful killing. The U.S. label warns that immune-mediated reactions can be severe or fatal and affect any organ system, including after treatment stops; antitumour activity and safety are separate questions."
+]
+},
   {
     id: "pdl1", trials: ["nct06107374", "nct07169552", "nct06631079", "nct07444437", "nct07293754"], kind: "target", name: "PD-L1", symbol: "CD274", hgnc: "HGNC:17635", ensembl: "ENSG00000120217", uniprot: "Q9NZQ7", entrez: "29126", targetClass: "checkpoint", asOf, wikipedia: W("PD-L1"),
     tldr: "PD-L1 is the tumour's side of the PD-1 brake, and also the biomarker that decides who gets immunotherapy.",

@@ -489,7 +489,7 @@ export const tldr_de: Record<string, string> = {
   "pathology-foundation-model": "Sehr große KI-Modelle, die mit Millionen von Gewebeschnitten oder Bildaufnahmen trainiert wurden und sich an fast jede diagnostische Frage anpassen lassen.",
   payload: "Die Payload ist das Gift, das ein ADC transportiert, meist eine Chemotherapie, die für sich allein viel zu giftig wäre.",
 
-  pd1: "PD-1 ist eine Bremse auf T-Zellen. Sie zu blockieren setzt das Immunsystem gegen den Tumor frei und hat einige zuvor unheilbare Krebsarten geheilt.",
+
   "pd1-checkpoint": "PD-1 und CTLA-4 helfen, T-Zell-Antworten zu regulieren. Eine Änderung ihrer Signale allein belegt weder die Erkennung noch die Abtötung von Krebs oder einen Behandlungsnutzen.",
   pdl1: "PD-L1 ist die Seite des Tumors an der PD-1-Bremse und zugleich der Biomarker, der entscheidet, wer eine Immuntherapie bekommt.",
   "pdx-models": "Ein patientenabgeleitetes Xenotransplantat ist der Tumor eines Patienten, der in einer Maus gezüchtet wird, um Medikamente zu testen, bevor sie beim Menschen ankommen.",
@@ -728,7 +728,7 @@ export const tldr_de: Record<string, string> = {
   "cancer-health-disparities": "Systematische Unterschiede darin, wer Krebs bekommt, wie früh er entdeckt wird und wer überlebt, bedingt durch Ethnie, Einkommen, Wohnort, Versicherung und strukturellen Rassismus statt allein durch die Biologie.",
   "cancer-institute-adyar": "Indiens zweitältestes Krebskrankenhaus (1954), gegründet von Muthulakshmi Reddy und jahrzehntelang geleitet von V. Shanta, und Sitz des ersten bevölkerungsbezogenen Krebsregisters Indiens.",
   "cancer-neuroscience": "Die Krebsneurowissenschaft untersucht, wie Tumoren mit Nerven kommunizieren. Nerven wachsen in Tumoren hinein und versorgen sie mit Signalen; Hirntumoren verschalten sich sogar mit neuronalen Schaltkreisen. Diese Kommunikation mit gängigen Medikamenten wie Betablockern zu unterbrechen, wird jetzt getestet.",
-  "cancer-stage": "Wie weit sich ein Krebs ausgebreitet hat, von Stadium I (klein und begrenzt) bis Stadium IV (auf entfernte Organe ausgebreitet). Das Stadium ist der stärkste einzelne Anhaltspunkt für Behandlung und Prognose.",
+
   candiolo: "Das Krebsinstitut des Piemont bei Turin, eine weltweite Referenz für die Genomik des Darmkrebses, patientenabgeleitete Xenotransplantate und MET-Biologie.",
   "capstone-1": "Die Studie, die Hengruis PD-L1-Antikörper adebrelimab zur Chemotherapie beim kleinzelligen Lungenkrebs hinzufügte, mit einem der größeren Überlebensgewinne, die bei dieser Erkrankung beobachtet wurden.",
   cbioportal: "cBioPortal ermöglicht es, Mutationen, Kopienzahl und Expression von Zehntausenden Tumoren zu durchsuchen, ohne Code zu schreiben.",
@@ -1386,7 +1386,7 @@ export const tldr_de: Record<string, string> = {
   ttfields: "Tragbare Elektroden, die elektrische Wechselfelder abgeben, welche die Teilung von Krebszellen stören.",
   "tubulin-inhibitor-payloads": "Tubulin-Inhibitor-Payloads waren die erste Generation moderner ADC-Payloads: Wirkstoffe, die das Gerüst der Zelle blockieren, sodass sie sich nicht teilen kann. Nerven- und Augennebenwirkungen sind typisch.",
   "tum-munich": "Das Klinikum der Technischen Universität München, eine Hälfte des Comprehensive Cancer Center München und führend in der PSMA-Bildgebung und der Radiopharmazeutischen Chemie.",
-  "tumour-grade": "Wie abnormal die Krebszellen unter dem Mikroskop aussehen, von Grad 1 (nahezu normal, langsam) bis Grad 3 oder 4 (stark abnormal, schnell). Der Grad beschreibt das Verhalten; das Stadium beschreibt die Ausbreitung.",
+
     "uct-frankfurt": "Frankfurts universitäres Krebszentrum, Erbe von Paul Ehrlichs Institut der 'Zauberkugel', mit Stärken in Leukämie, Neuroonkologie und Zelltherapie.",
   "uct-mainz": "Die Universitätsmedizin, an der Uğur Şahin und Özlem Türeci die Wissenschaft hinter BioNTech und personalisierten mRNA-Krebsimpfstoffen aufgebaut haben.",
   "uganda-cancer-institute": "Ostafrikas ältestes Krebsforschungsinstitut, 1967 zur Erforschung des Burkitt-Lymphoms gegründet, heute ein nationales Krebszentrum mit einer Partnerschaft mit Fred Hutch und Afrikas erster eigens errichteter Krebsforschungseinrichtung.",

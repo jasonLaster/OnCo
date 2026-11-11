@@ -134,12 +134,24 @@ export const mechanicsPathways: PathwayInput[] = [
     "label": "Consensus guidelines for the definition, detection and interpretation of immunogenic cell death.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
   }
+,
+{
+  "label": "Marshall et al., 2018: antigen presentation and distinct immune recognition routes",
+  "url": "https://doi.org/10.1186/s13223-018-0278-1"
+},
+{
+  "label": "NHGRI: gene expression",
+  "url": "https://www.genome.gov/genetics-glossary/Gene-Expression"
+}
 ],
 
 "asOf": "2026-11-11",
 "notes": [
   "In a fictional vaccine study, blood cells release a cytokine after added-peptide stimulation. This supports reactivity under that assay’s conditions. Added peptide can bypass natural processing, and the result does not establish entry into the sampled tumour, recognition of naturally presenting cancer cells, useful killing or clinical benefit. Antigen release is not priming, blood expansion is not infiltration, and a return arrow does not demonstrate durable protection.",
   "Use the cycle to name the measured step and the next untested dependency. A proposed bottleneck or complementary pair of mechanisms does not establish a beneficial or safe combination. Increasing a response can also affect healthy tissue; the model does not identify a safe intervention by itself."
+,
+"For a coding change to supply a conventional T-cell target, its information must be expressed, protein produced and processed into a fragment, that peptide displayed with HLA, and a suitable receptor able to recognise the display. DNA, RNA, protein, recovered displayed peptide and controlled recognition are separate observations. A prediction at one step does not measure all the others. This conventional alpha-beta route does not describe every T cell, antibody or natural killer recognition system.",
+"An immune observation suggests a question ladder: identify the cells and their location; ask whether a proposed peptide is produced and displayed; test recognition against appropriate target and background controls; distinguish tissue entry from useful target-specific function; then seek clinical comparisons for benefit and harm. Poor display, few matching cells, failed tissue access and impaired local function are different proposed failures. A count, supplied-peptide response or plausible pathway alone cannot complete that chain. These are task-dependent interpretation questions, not a mandatory clinical test menu."
 ]
 }),
   p({

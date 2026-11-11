@@ -68,7 +68,7 @@ export const tldr_pt: Record<string, string> = {
   cd123: "Um receptor de interleucina superabundante em um câncer de sangue raro e agressivo e nas células-tronco leucêmicas.",
   "mage-a4": "Uma proteína normalmente presente só no testículo que alguns sarcomas e outros tumores ligam; células T podem ser projetadas para reconhecer fragmentos dela.",
   gp100: "Uma proteína das células pigmentares; o alvo da primeira droga biespecífica a melhorar a sobrevida em um tumor sólido, o melanoma uveal.",
-  pd1: "Um freio das células T. Bloqueá-lo libera o sistema imune contra o tumor e curou alguns cânceres antes incuráveis.",
+
   pdl1: "O lado tumoral do freio PD-1, e também o biomarcador que decide quem recebe imunoterapia.",
   ctla4: "O primeiro freio imune atacado contra o câncer; liberá-lo ganhou um Nobel e cura uma parcela dos melanomas.",
   lag3: "O terceiro freio imune a ser aprovado, combinado com o bloqueio de PD-1 no melanoma.",
@@ -898,7 +898,7 @@ export const tldr_pt: Record<string, string> = {
   "cancer-health-disparities": "Diferenças sistemáticas em quem tem câncer, quão cedo ele é descoberto e quem sobrevive, causadas por raça, renda, geografia, plano de saúde e racismo estrutural, e não apenas pela biologia.",
   "cancer-institute-adyar": "O segundo hospital de câncer mais antigo da Índia (1954), fundado por Muthulakshmi Reddy e dirigido por décadas por V. Shanta, e sede do primeiro registro populacional de câncer da Índia.",
   "cancer-neuroscience": "A neurociência do câncer é o estudo de como os tumores conversam com os nervos. Os nervos crescem para dentro dos tumores e lhes fornecem sinais; tumores cerebrais chegam a se conectar a circuitos neurais. Interromper essa conversa com medicamentos comuns, como os betabloqueadores, está agora sendo testado.",
-  "cancer-stage": "Até onde um câncer se espalhou, do estádio I (pequeno e localizado) ao estádio IV (disseminado para órgãos distantes). O estádio é o guia isolado mais forte para o tratamento e o prognóstico.",
+
   candiolo: "O instituto de câncer do Piemonte, perto de Turim, uma referência mundial em genômica do câncer colorretal, xenoenxertos derivados de pacientes e biologia de MET.",
   "capstone-1": "O ensaio que acrescentou adebrelimab, o anticorpo anti-PD-L1 da Hengrui, à quimioterapia no câncer de pulmão de pequenas células, com um dos maiores ganhos de sobrevida já vistos nessa doença.",
   cbioportal: "O cBioPortal permite navegar pelas mutações, número de cópias e expressão de dezenas de milhares de tumores sem escrever código.",
@@ -1506,7 +1506,7 @@ export const tldr_pt: Record<string, string> = {
   trog: "O grupo de ensaios de radioterapia oncológica da Austrália e Nova Zelândia, que conduziu ensaios que mudaram a prática em hipofracionamento, radioterapia estereotáxica e combinações de radiação com medicamentos.",
   "tubulin-inhibitor-payloads": "As cargas inibidoras de tubulina foram a primeira geração de cargas dos ADCs modernos: medicamentos que travam o andaime da célula para que ela não possa se dividir. Efeitos colaterais nos nervos e nos olhos são típicos.",
   "tum-munich": "O hospital da universidade técnica de Munique, uma das duas metades do Comprehensive Cancer Center Munich e líder em imagem PSMA e química de radiofármacos.",
-  "tumour-grade": "Quão anormais as células cancerosas parecem ao microscópio, do grau 1 (próximo do normal, lento) ao grau 3 ou 4 (extremamente anormal, rápido). O grau diz respeito ao comportamento; o estádio, à extensão.",
+
     "uct-frankfurt": "O centro universitário de câncer de Frankfurt, herdeiro do instituto da 'bala mágica' de Paul Ehrlich, com pontos fortes em leucemia, neuro-oncologia e terapia celular.",
   "uct-mainz": "O centro médico universitário onde Uğur Şahin e Özlem Türeci construíram a ciência por trás da BioNTech e das vacinas personalizadas de mRNA contra o câncer.",
   "uganda-cancer-institute": "O instituto de pesquisa em câncer mais antigo da África Oriental, fundado em 1967 para estudar o linfoma de Burkitt, e hoje um centro nacional de câncer com uma parceria com o Fred Hutch e a primeira instalação da África construída especificamente para pesquisa em câncer.",

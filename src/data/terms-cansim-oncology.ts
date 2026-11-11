@@ -48,10 +48,53 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Grading, per the Wikipedia article, is a pathologist's measure of how much the tumour cells resemble the normal tissue they came from (differentiation), from low grade to high grade. Staging is the separate process of determining the extent of growth and spread, usually as a number from I to IV built from tumour size, invasion, lymph nodes and metastasis. Both are routine clinical covariates in prognostic models, and models that mix them up mis-state what they predict.",
     terms: ["cancer-stage", "tnm-staging", "tumour-differentiation"] }),
   t({ id: "tumour-purity", wikipediaChecked: "2026-09-25", name: "Tumour purity", category: PATH, aka: ["tumour purity", "tumor purity", "tumour cellularity", "tumor cellularity", "purity estimate"],
-    links: [{ label: "Aran, Sirota and Butte, Systematic pan-cancer analysis of tumour purity (Nature Communications 2015)", url: DOI("10.1038/ncomms9971") }], cansim: "/terms/tumour-purity",
+    links: [
+  {
+    "label": "Aran, Sirota and Butte, Systematic pan-cancer analysis of tumour purity (Nature Communications 2015)",
+    "url": "https://doi.org/10.1038/ncomms9971"
+  },
+  {
+    "label": "Measurement method and interpretation source",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20837533/"
+  },
+  {
+    "label": "Carter et al., ABSOLUTE, 2012",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+  },
+  {
+    "label": "Smits et al., pathologist estimation variability, 2014",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23887293/"
+  },
+  {
+    "label": "Bielski et al., advanced cancer genome doubling, 2018",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30013179/"
+  },
+  {
+    "label": "Popova et al., ploidy-specific large-scale transitions, 2012",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22933060/"
+  },
+  {
+    "label": "Telli et al., HRD score in platinum TNBC cohorts, 2016",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+  }
+], cansim: "/terms/tumour-purity",
     tldr: "Tumour purity is the fraction of cells in a sample that are actually cancer cells rather than normal, immune or stromal cells.",
     summary: "Aran, Sirota and Butte's pan-cancer analysis of TCGA estimated the proportion of cancer cells in each sample by several methods (pathologist counts, copy number, expression and methylation based estimators) and showed purity varies widely between and within cancer types and confounds molecular comparisons. Bulk sequencing measures the whole mixture, so a low-purity sample can look like a different tumour; models trained on bulk data inherit this.",
-    terms: ["cell-composition-confound", "desmoplasia"] }),
+    terms: ["cell-composition-confound", "desmoplasia"] ,
+"notes": [
+  "Purity estimates and ploidy fits belong to the tested region and method. A pathology estimate of malignant-cell proportion and a sequencing model fit can disagree. Ploidy is a genome-wide average; local copy number can differ. Several purity-ploidy combinations may explain similar data.",
+  "Idealised arithmetic assumes diploid normal cells, diploid cancer cells and one mutant copy in every cancer cell: at purity 80%, 50% and 20%, expected variant allele fractions are 40%, 25% and 10%. A one-copy cancer-cell deletion yields mixed average copy numbers 1.2, 1.5 and 1.8 respectively. Copy changes and subclones alter these relationships.",
+  "Purity describes the malignant-cell share of the sampled cell mixture; a DNA-based estimate must account for how many genome copies the cells contribute. Ploidy is the average cancer-cell genome copy number. The marble-mixture analogy stops where local copy number and subclonal differences make each cell contribution unequal.",
+  "ASCAT reported aneuploidy above 2.7 genome copies in 45% of its early breast cancer series and near-triploid basal-like genomes consistent with loss followed by duplication. A separate advanced-cancer study identified whole-genome doubling in nearly 30% of 9,692 patients. These populations are different. A region with three copies can be a relative loss against a four-copy baseline, while exceeding a normal diploid count.",
+  "Nine pathologists estimated tumour-cell content on 47 lung tumour slides; 33% of estimates differed from manually counted content by at least three categories, mostly 10 percentage-points wide. ASCAT and ABSOLUTE jointly infer purity and ploidy from allelic copy number and related signals. Several fits, subclonal changes and low tumour content can complicate interpretation; a model fit is not a direct count.",
+  "Copy-number-based genomic scars depend on segmentation and interpretation of purity and ploidy. Popova used ploidy-specific large-scale transition cutoffs in basal-like breast cancers. Telli evaluated a combined loss-of-heterozygosity, telomeric-imbalance and large-scale-transition score of at least 42 or BRCA1/2 mutation in three platinum-containing neoadjuvant TNBC trials. This does not create a universal HRD threshold or prove current repair function or treatment benefit from a fit alone.",
+  "Fictional near-diploid example: 18% variant allele fraction is compatible with one mutant copy in every malignant cell at 36% purity, assuming diploid normal cells and no local copy change. It does not prove clonality. At 90% purity, the same VAF would need a different explanation such as subclonality or copy-number context. A negative low-purity result can reflect limited detection, not biological absence.",
+  "Sequencing purity belongs to the region used for extraction. Tumour-bed cellularity is an area-based residual cancer burden input, while plasma tumour fraction concerns circulating DNA. Sparse residual malignant cells can make post-treatment sequencing difficult; retain the tested block and laboratory-specific detection limits.",
+  "A pathology estimate uses the represented slide region, while a computational purity/ploidy estimate fits sequencing copy-number and allele-fraction data. Fitting those existing data uses no additional tissue. Report purity as a fraction or percentage and ploidy as average cancer-genome copies, such as 2.1 or 3.8, with the region, method and model assumptions.",
+  "Laboratories set minimum tumour content for the particular assay. Too few tumour cells, contamination, subclonal copy changes or several similarly good model fits can make the estimate uncertain. Purity and ploidy do not identify which mutations drive the cancer or which treatment will work."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "cell-composition-confound", keyPapers: ["paper-li-timer2-nar-2020"], name: "Cell composition confound (tumour versus stroma and immune cells)", category: BIO, aka: ["cell composition confound", "cell-mix confound", "stromal contamination", "immune infiltration confound"],
     wikipedia: W("Tumor_microenvironment"), cansim: "/terms/cell-composition-confound",
     tldr: "Because a tumour sample is a mix of cancer, stromal and immune cells, a difference between two samples may only reflect a different mix of cells.",
@@ -450,13 +493,64 @@ export const cansimOncologyTerms: TermInput[] = [
   t({ id: "h-and-e-staining", name: "H&E staining (haematoxylin and eosin)", category: PATH, aka: ["H&E staining", "H&E stain", "H&E slide", "H&E slides", "haematoxylin and eosin", "hematoxylin and eosin", "H&E section"],
     wikipedia: W("H%26E_stain"), cansim: "/terms/h-and-e-staining",
     tldr: "H&E is the purple and pink stain on almost every pathology slide: haematoxylin colours cell nuclei blue-purple and eosin colours the cytoplasm and connective tissue pink.",
-    summary: "Haematoxylin and eosin stain is one of the principal tissue stains in histology, the most widely used in medical diagnosis and often the gold standard; a biopsy of a suspected cancer will almost always be stained with H&E (Wikipedia). Because it is universal and cheap, digitised H&E slides are the input to pathology foundation models, which learn to predict grade, molecular alterations and outcome from morphology alone.",
-    terms: ["digital-pathology-wsi", "tile-patch-encoding"], technologies: ["histopathology-ihc", "digital-pathology-ai"] }),
+    summary: "Haematoxylin and eosin (H&E) stain makes cell appearance and tissue organisation visible in a prepared section. Haematoxylin colours nuclei blue-purple, while eosin colours cytoplasm and supporting tissue pink. Pathologists integrate nuclei, cell groups, boundaries and architecture with the specimen context. Image-analysis models can predict features from these appearances, but a molecular prediction is not a direct measurement of the named gene or protein. The section represents one sampled region and depth, rather than the entire tumour or body.",
+    terms: ["digital-pathology-wsi", "tile-patch-encoding"], technologies: ["histopathology-ihc", "digital-pathology-ai"] ,
+"notes": [
+  "Haematoxylin highlights nuclei and other nucleic-acid-rich structures; eosin broadly stains cytoplasm and extracellular material. These colours show morphology and architecture rather than a named DNA sequence or protein. Molecular predictions from H&E require their own validation.",
+  "A section represents one depth and region. Record block, section, preservation and artifacts; a nearby section may contain a different cell mixture. Fictional example: pink material around tumour nests does not prove receptor R expression. A specific validated assay would be needed to identify that receptor.",
+  "Morphology includes nuclei, cell groupings, spaces, tissue boundaries and necrosis. Appearance alone does not identify every cell-death mechanism. A represented duct interface may help distinguish in-situ from invasive growth; difficult cases can require additional stains and clinical context. Grade describes selected appearance features; stage describes disease extent.",
+  "Like a map of buildings, H&E shows arrangement rather than every activity inside each cell. A large nucleus or a single coloured pixel cannot establish the whole diagnosis. H&E supplies the sample context for molecular testing, including scar, necrosis or an unexpected mixture of cells.",
+  "H&E examination starts with a prepared tissue section, staining, inspection and integration with relevant clinical information. Cutting the section uses finite material. The output describes cell appearance and organisation, with counts or distances only when a specified method calls for them. Criteria depend on the feature and tissue; no universal colour cutoff defines cancer. Poor fixation, folds, tears, staining variation or a missing relevant interface can limit interpretation. Clinical morphology, a research image classifier and an unvalidated molecular prediction have different evidence requirements; the slide does not directly quantify a named protein or gene or reveal tissue outside the section."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/H%26E_stain"
+  },
+  {
+    "label": "Measurement method and interpretation source",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+  },
+  {
+    "label": "Fischer et al., H&E protocol, 2008",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21356829/"
+  }
+],
+"asOf": "2026-11-10",
+"related": [
+  "tumor-stroma-ratio",
+  "surgical-resection-specimen",
+  "myoepithelial-cells-and-basement-membrane"
+]
+}),
   t({ id: "digital-pathology-wsi", name: "Digital pathology and whole-slide images (WSI)", category: PATH, aka: ["digital pathology", "whole-slide image", "whole-slide images", "whole slide image", "WSI", "gigapixel slide", "gigapixel slides", ".svs file", "slide scanner image"],
-    wikipedia: W("Digital_pathology"), links: [{ label: "Goode et al., OpenSlide: a vendor-neutral software foundation for digital pathology (J Pathol Inform 2013)", url: DOI("10.4103/2153-3539.119005") }], cansim: "/terms/wsi-histopathology",
+    wikipedia: W("Digital_pathology"), links: [
+  {
+    "label": "Goode et al., OpenSlide: a vendor-neutral software foundation for digital pathology (J Pathol Inform 2013)",
+    "url": "https://doi.org/10.4103/2153-3539.119005"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Digital_pathology"
+  },
+  {
+    "label": "Measurement method and interpretation source",
+    "url": "https://www.fda.gov/medical-devices/medical-device-regulatory-science-research-programs-conducted-osel/digital-pathology-program-research-digital-pathology-medical-devices"
+  }
+], cansim: "/terms/wsi-histopathology",
     tldr: "Digital pathology scans glass slides into gigapixel images that can be viewed, shared and analysed by software, which is what makes AI on pathology possible.",
     summary: "Digital pathology manages and analyses information from digitised specimen slides, using virtual microscopy to view, share and analyse slides on screens, with applications in diagnosis and AI (Wikipedia). A whole-slide image is typically 100,000 pixels across at 40x, stored as a pyramid in vendor formats such as Aperio .svs; OpenSlide reads them vendor-neutrally. Slides are far too large for a neural network at once, so they are cut into tiles, encoded and pooled.",
-    technologies: ["whole-slide-scanners", "digital-pathology-ai"], terms: ["h-and-e-staining", "tile-patch-encoding", "magnification"] }),
+    technologies: ["whole-slide-scanners", "digital-pathology-ai"], terms: ["h-and-e-staining", "tile-patch-encoding", "magnification"] ,
+"notes": [
+  "A whole-slide image represents the scanned section, not every depth of the block. Keep image acquisition, computational estimation and clinical interpretation separate. A model that predicts RNA from morphology has not directly measured RNA. Scanner validation does not validate every downstream model.",
+  "For interpretation, retain slide identity, stain, scanner, focus and tissue coverage, image resolution, analysis version, defined output and intended-use validation. Folds, missed tissue, stain variation and incorrect segmentation can affect results. Reusing pixels requires no new section but cannot recover unscanned tissue.",
+  "A quality-checked scan preserves visible information in the captured section. Segmentation assigns boundaries; counts, areas and model scores depend on the defined analysis. A heat map or precise decimal is a method output, not proof of its biological meaning. Independent validation must fit the intended stains, scanners and population.",
+  "Fictional example: research software labels an H&E region as having high predicted RNA signal. This is a prediction from appearance, not a direct RNA assay. Good image quality does not supply the missing molecular measurement. The image, analytical method and intended-use evidence are separate layers.",
+  "A whole-slide workflow scans a prepared slide, checks image quality, displays it for interpretation or applies a defined analysis. Scanning generally needs no additional section. Optics, focus, colour capture, file handling, display and viewer all affect the workflow. Report image resolution and, for analysis, the defined counts, areas or model-score units; the scanner, task and intended use determine quality criteria and cutoffs.",
+  "Missed tissue, poor focus, folds, stain variation, compression and incorrect cell boundaries can limit the image or its analysis. A validated diagnostic viewing workflow does not validate every computational claim. Neither a scan nor a model score supplies unscanned tissue, directly measured molecular expression or proof of treatment benefit."
+],
+"asOf": "2026-11-10"
+}),
   t({ id: "tile-patch-encoding", name: "Tile and patch encoding of slides", category: PATH, aka: ["tile encoding", "patch encoding", "tile embeddings", "patch embeddings", "tiling", "slide tiles", "slide patches", "tile-level features"],
     wikipedia: W("Multiple_instance_learning"), links: [{ label: "Lu et al., CLAM: data-efficient and weakly supervised computational pathology on whole-slide images (Nature Biomedical Engineering 2021)", url: DOI("10.1038/s41551-020-00682-w") }], cansim: "/terms/tile-patch-encoding",
     tldr: "A whole slide is cut into thousands of small square tiles, each tile is turned into a vector by an image model, and the vectors are pooled to describe the slide.",

@@ -232,8 +232,7 @@ export const tldr_de: Record<string, string> = {
   "colorectal-screening": "Polypen finden und entfernen, bevor sie zu Krebs werden. Die Darmspiegelung verhindert Krebs; Stuhl- und Bluttests erkennen ihn früh und sorgen dafür, dass mehr Menschen an der Vorsorge teilnehmen.",
   "companion-diagnostic": "Der Test, der entscheidet, ob ein bestimmtes Medikament für Sie geeignet ist, und der zusammen mit dem Medikament zugelassen wird.",
 
-  cps: "Ein PD-L1-Score, der angefärbte Tumorzellen und Immunzellen zusammen zählt.",
-  craniopharyngioma: "Das Kraniopharyngeom ist ein gutartiger, aber zerstörerischer Tumor, der aus embryonalen Resten neben der Hirnanhangsdrüse und dem Hypothalamus wächst. Eine Operation, oder eine begrenzte Operation plus Strahlentherapie, heilt die meisten Betroffenen, aber der Preis kann ein lebenslanger Hormonmangel und schwere Fettleibigkeit sein. Die Erwachsenenform (papillär) trägt eine BRAF-Mutation und schrumpft unter BRAF- und MEK-Hemmern dramatisch, ihrer ersten medikamentösen Behandlung.",
+    craniopharyngioma: "Das Kraniopharyngeom ist ein gutartiger, aber zerstörerischer Tumor, der aus embryonalen Resten neben der Hirnanhangsdrüse und dem Hypothalamus wächst. Eine Operation, oder eine begrenzte Operation plus Strahlentherapie, heilt die meisten Betroffenen, aber der Preis kann ein lebenslanger Hormonmangel und schwere Fettleibigkeit sein. Die Erwachsenenform (papillär) trägt eine BRAF-Mutation und schrumpft unter BRAF- und MEK-Hemmern dramatisch, ihrer ersten medikamentösen Behandlung.",
   "crispr-screens": "Jedes Gen einzeln in Krebszellen ausschalten, um herauszufinden, ohne welche sie nicht überleben können.",
   crs: "Eine Flut von Entzündungssignalen, wenn Immunzellen massenhaft aktiviert werden, mit Fieber, niedrigem Blutdruck und manchmal Organversagen als Folge.",
   cruk: "Cancer Research UK ist die weltweit größte unabhängige Wohltätigkeitsorganisation für Krebsforschung und finanziert das Crick, das ICR, Manchester, Cambridge sowie die Studien STAMPEDE und TRACERx.",
@@ -411,8 +410,7 @@ export const tldr_de: Record<string, string> = {
   "thermal-ablation": "Die thermische Ablation zerstört einen Tumor mit Hitze oder Kälte, die über eine Nadel zugeführt wird, ohne dass ein Schnitt nötig ist.",
   "thomas-powles": "Leitete EV-302, NIAGARA und IMvigor011, die Studien, die die Behandlung von Blasenkrebs von reiner Chemotherapie zu ADC, Immuntherapie und ctDNA-gesteuerter Versorgung wandelten.",
   "til-therapy": "Immunzellen, die bereits von selbst in den Tumor gelangt sind, werden entnommen, auf Milliarden vermehrt und zurückgegeben.",
-  tils: "Immunzellen, die in den Tumor eingedrungen sind. Je mehr davon vorhanden sind, desto besser sind die Ergebnisse bei dreifach negativem Brustkrebs.",
-  tisagenlecleucel: "Tisagenlecleucel war die erste überhaupt zugelassene CAR-T-Therapie (2017), für Kinder und junge Erwachsene, deren Leukämie nach allen anderen Behandlungen zurückgekehrt war.",
+    tisagenlecleucel: "Tisagenlecleucel war die erste überhaupt zugelassene CAR-T-Therapie (2017), für Kinder und junge Erwachsene, deren Leukämie nach allen anderen Behandlungen zurückgekehrt war.",
   tislelizumab: "Ein in China entwickelter PD-1-Blocker, der so konstruiert wurde, dass er einen Nebenweg vermeidet, der andere PD-1-Medikamente abschwächen kann, und inzwischen in den USA und der EU für Speiseröhren- und Magenkrebs zugelassen ist.",
 
   "tnbc-history": "Wie dreifach negativer Brustkrebs in sechs Jahren vom Subtyp ohne zielgerichtete Therapie zu einem mit Immuntherapie, PARP-Inhibitoren, drei ADCs und einem positiv getesteten bispezifischen ADC wurde.",
@@ -2646,8 +2644,7 @@ export const tldr_de: Record<string, string> = {
 
   "contact-03": "Die Fortführung der Immuntherapie nach ihrem Versagen, zusammen mit einer zielgerichteten Tablette, brachte nichts außer Nebenwirkungen. Der erste definitive Test der „IO-Rechallenge“ (erneuten Immuntherapie).",
   convert: "Beendete die Debatte über den Bestrahlungsplan bei der Erkrankung im begrenzten Stadium: Keiner der beiden Pläne war überlegen, daher bleiben 45 Gy zweimal täglich der Standard, und einmal täglich ist eine akzeptable Alternative.",
-  "core-needle-biopsy": "Die Entnahme eines schmalen Gewebezylinders (Stanze) oder einiger Zellen (Feinnadelaspiration) über eine Nadel unter Ultraschall-, CT- oder MRT-Kontrolle, um den Krebs zu diagnostizieren und seine Marker ohne Operation zu testen.",
-  cosibelimab: "Cosibelimab ist ein PD-L1-Antikörper, der im Dezember 2024 für das fortgeschrittene kutane Plattenepithelkarzinom zugelassen wurde und eine dritte Immuntherapie-Option bietet.",
+    cosibelimab: "Cosibelimab ist ein PD-L1-Antikörper, der im Dezember 2024 für das fortgeschrittene kutane Plattenepithelkarzinom zugelassen wurde und eine dritte Immuntherapie-Option bietet.",
   cprit: "Die 2007 von den Wählern geschaffene Behörde des Bundesstaates Texas, die nach dem NCI der zweitgrößte öffentliche Geldgeber für Krebsforschung in den USA ist.",
   "cristina-saura": "Spanische Brustonkologin, die DESTINY-Breast09 leitet, die Studie, die Trastuzumab Deruxtecan in die Erstlinie der HER2-positiven Erkrankung brachte.",
   crossover: "Wenn Patienten im Kontrollarm einer Studie nach dem Fortschreiten ihres Krebses auf das Prüfmedikament wechseln dürfen. Das ist fair gegenüber den Patienten, verwischt aber den Überlebensvergleich, weil die Kontrollgruppe das Medikament nun ebenfalls erhalten hat.",

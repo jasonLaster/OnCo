@@ -61,8 +61,8 @@ export const biomarkerReadouts: BiomarkerInput[] = [
   // ---- PD-L1 (CD274): four scoring systems, three assays ----
   b({ id: "pd-l1-cps", name: "PD-L1 CPS (combined positive score)", aka: ["PD-L1 CPS", "CPS", "combined positive score", "PD-L1 combined positive score", "CPS >= 1", "CPS >= 10", "PD-L1 CPS 1", "PD-L1 CPS 10", "CPS≥1", "CPS≥10"],
     target: "pdl1", measurement: "combined-positive-score",
-    tldr: "CPS counts every PD-L1-stained cell in the tumour, immune cells included, and divides by the number of tumour cells. Pembrolizumab labels use CPS 1 or CPS 10 as the gate in head and neck, stomach, oesophageal, cervical, ovarian and triple-negative breast cancer.",
-    summary: "The combined positive score is the 22C3 pharmDx read used outside lung cancer: the number of PD-L1-staining cells (tumour cells, lymphocytes and macrophages) divided by the total number of viable tumour cells, multiplied by 100, so it can exceed 100 in principle and is reported as a whole number. Pembrolizumab's US label gates first-line head and neck cancer, HER2-negative and HER2-positive gastric or GEJ adenocarcinoma, first-line oesophageal cancer with chemotherapy, cervical cancer and platinum-resistant ovarian cancer at CPS >= 1, and triple-negative breast cancer and second-line oesophageal squamous cancer at CPS >= 10. Nivolumab's label now restricts its gastric, GEJ and oesophageal indications to tumours expressing PD-L1 (>= 1), measured with the 28-8 pharmDx. Because the denominator is tumour cells only, CPS is not interchangeable with TPS or with the SP142 immune-cell score.",
+    tldr: "CPS counts eligible PD-L1-stained tumour cells, lymphocytes and macrophages per viable tumour cell. The reported score is capped at 100; assay and treatment setting determine its use.",
+    summary: "The combined positive score (CPS) is 100 times the number of eligible PD-L1-staining tumour cells, lymphocytes and macrophages divided by all viable tumour cells. Under the cited 22C3 TNBC method it is reported as a whole number capped at 100, even if the raw arithmetic is larger. CPS is not the percentage of tumour cells staining and is not interchangeable with tumour proportion score (TPS) or the SP142 immune-cell area score. Clinical use depends on the named assay, cancer, disease setting and treatment regimen. In advanced TNBC, the specified pembrolizumab combinations use CPS at least 10; the high-risk early-TNBC perioperative regimen has a different selection context.",
     scoringRule: { text: "Count PD-L1-positive tumour cells, lymphocytes and macrophages; divide by the number of viable tumour cells; multiply by 100. A specimen must hold at least 100 viable tumour cells to be scored.", quote: "PD-L1 protein expression [Combined Positive Score (CPS) ≥ 1]", source: FDA_CDX_URL, sourceLabel: FDA_CDX_LABEL },
     thresholds: [
       th({ value: "CPS >= 1", drugId: "pembrolizumab", cancerId: "head-and-neck", regulator: "FDA", source: LABEL.keytruda, quote: "as a single agent for the first-line treatment of patients with metastatic or with unresectable, recurrent HNSCC whose tumors express PD-L1 [Combined Positive Score (CPS) ≥1] as determined by an FDA-authorized test." }),
@@ -88,7 +88,70 @@ export const biomarkerReadouts: BiomarkerInput[] = [
       cdx("PD-L1 IHC 28-8 pharmDx", "Agilent Technologies (Dako)", "Esophageal squamous cell carcinoma (ESCC), and gastric, gastroesophageal junction (GEJ), and esophageal adenocarcinoma - Tissue", ["nivolumab"], "P150025/S018 (07/01/2026)", "agilent"),
     ],
     forPatient: "Your report gives a CPS number. Whether it counts as positive depends on the cancer: the pembrolizumab label asks for 1 or more in head and neck, stomach, oesophageal, cervical and platinum-resistant ovarian cancer, and 10 or more in triple-negative breast cancer. The same number can open a treatment in one cancer and not in another, and a score below the cut-off does not mean immunotherapy can never be used, only that this particular indication does not apply.",
-    terms: ["cps", "pd-l1-testing", "ihc"], related: ["pd-l1-tps", "pd-l1-ic-score", "pd-l1-tc-score"], links: [{ label: "KEYTRUDA prescribing information (DailyMed)", url: LABEL.keytruda }, { label: "OPDIVO prescribing information (DailyMed)", url: LABEL.opdivo }, { label: FDA_CDX_LABEL, url: FDA_CDX_URL }], tags: ["biomarker", "pd-l1"] }),
+    terms: ["cps", "pd-l1-testing", "ihc"], related: ["pd-l1-tps", "pd-l1-ic-score", "pd-l1-tc-score"], links: [
+  {
+    "label": "KEYTRUDA prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+  },
+  {
+    "label": "OPDIVO prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f570b9c4-6846-4de2-abfa-4d0a4ae4e394"
+  },
+  {
+    "label": "FDA: List of FDA-Authorized Companion Diagnostic Devices",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+  },
+  {
+    "label": "Measurement method and interpretation source",
+    "url": "https://www.agilent.com/cs/library/flyers/public/29390-d62312-pd-l1-22c3-tnbc-qsg-us.pdf"
+  },
+  {
+    "label": "FDA pembrolizumab label, TNBC sections 1.20 and 14.20",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+  },
+  {
+    "label": "Cortes et al., KEYNOTE-355 overall survival, 2022",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35857659/"
+  },
+  {
+    "label": "Rugo et al., PD-L1 assay comparison, 2021",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34097070/"
+  },
+  {
+    "label": "Reisenbichler et al., observer agreement, 2020",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32300181/"
+  },
+  {
+    "label": "Roche US TNBC withdrawal announcement, 2021",
+    "url": "https://www.roche.com/media/releases/med-cor-2021-08-27.html"
+  },
+  {
+    "label": "Taube et al., adaptive resistance in melanocytic lesions, 2012",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22461641/"
+  },
+  {
+    "label": "FDA: first-line sacituzumab govitecan alone and with pembrolizumab in advanced TNBC (24 June 2026)",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"
+  }
+], tags: ["biomarker", "pd-l1"] ,
+"notes": [
+  "For the 22C3 TNBC method, count eligible stained viable invasive tumour cells and tumour-associated lymphocytes and macrophages. Divide by all viable invasive tumour cells, including unstained cells, then multiply by 100. Report a whole-number CPS capped at 100, even when raw arithmetic exceeds 100.",
+  "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+  "Fictional eligible counts: 200 viable tumour cells, 20 staining tumour cells, 40 staining lymphocytes and 20 staining macrophages give CPS 40. Tumour-cell-only arithmetic gives 10%, under its own assay rules. CPS, TPS and IC use different numerators or denominators and cannot share cutoffs automatically.",
+  "TPS counts viable tumour cells with qualifying partial or complete membrane staining as a percentage of viable tumour cells. Immune cells do not enter its numerator. SP142 IC scoring measures the fraction of tumour area occupied by stained tumour-infiltrating immune cells, excluding tumour-cell staining. CPS, TPS and IC thresholds cannot be transferred between methods.",
+  "For 22C3 TNBC CPS, exclude nonviable cells, neutrophils, eosinophils, plasma cells, benign epithelial cells and stromal cells. Immune cells associated only with benign structures or in-situ disease do not qualify. A CPS of 100 does not imply that all tumour cells stain.",
+  "KEYNOTE-355 randomised 847 patients with previously untreated locally recurrent inoperable or metastatic TNBC regardless of PD-L1 status. In the CPS at least 10 subgroup, median overall survival was 23.0 months with pembrolizumab plus chemotherapy and 16.1 months with placebo plus chemotherapy; hazard ratio 0.73 (95% confidence interval 0.55 to 0.95). The CPS at least 1 comparison was not significant: hazard ratio 0.86 (0.72 to 1.04). These subgroup findings concern the tested combination and population, not pembrolizumab alone.",
+  "The US pembrolizumab label uses CPS at least 10 for locally recurrent unresectable or metastatic TNBC with chemotherapy and for first-line unresectable locally advanced or metastatic TNBC with sacituzumab govitecan. High-risk early TNBC uses pembrolizumab with chemotherapy before surgery, continued alone afterward, without a PD-L1 selection requirement. The FDA approved the sacituzumab combination in June 2026. A score does not determine individual eligibility or guarantee benefit.",
+  "IMpassion130 used SP142 IC at least 1% for the PD-L1-positive subgroup in advanced TNBC treated with atezolizumab plus nab-paclitaxel. Roche announced voluntary withdrawal of the US TNBC indication in August 2021. This historical regimen and cutoff are not a current US treatment indication.",
+  "In the 614-sample IMpassion130 comparison, IC at least 1% positivity was 46.4% for SP142, 74.9% for SP263 and 73.1% for 22C3. Almost all SP142-positive samples were positive by the other assays, but the reverse was not true. This was an IC comparison across assays, not evidence that 22C3 CPS and IC are interchangeable.",
+  "In a multi-institutional study, 19 pathologists assessed TNBC sections: average positivity at IC at least 1% was 58% with SP142 and 78% with SP263. Complete two-category agreement occurred in 38% and 50% of cases respectively. These study-specific results show observer variation; they do not supply a correction factor for an individual report.",
+  "A primary study of human melanocytic lesions found colocalisation of PD-L1 expression with inflammatory infiltrates and implicated interferon gamma in adaptive immune resistance. This supports a mechanism, not a universal rule that every lymphocyte-rich breast tumour has high PD-L1. Staining alone does not establish a complete immune state.",
+  "For a specified PD-L1 workflow, prepare the tissue section, stain it with acceptable controls, assess adequacy, identify the eligible cells and then apply the scoring algorithm. Further sections consume finite tissue. Record the antibody clone, platform, specimen, scoring method and intended clinical use. The cited TNBC 22C3 guide requires at least 100 viable tumour cells; that requirement belongs to the named assay, rather than to every PD-L1 method.",
+  "Report CPS as a capped score, TPS as a tumour-cell percentage, or IC as the percentage of tumour area occupied by stained immune cells. Each algorithm has its own eligibility and threshold rules. Too few eligible cells, failed controls, incorrect cell attribution, necrosis and heterogeneous sampling can invalidate or limit a result. None of these scores alone describes the complete immune state, guarantees individual benefit or establishes eligibility in a different cancer or treatment setting.",
+  "The detailed eligible-cell rules here follow Agilent's November 2020 TNBC quick guide. Its original PDF was unavailable at this check; a preserved primary-source extract supplies that historical method definition. Current treatment selection also requires the applicable current drug label and assay documentation."
+],
+"asOf": "2026-11-10"
+}),
 
   b({ id: "pd-l1-tps", name: "PD-L1 TPS (tumour proportion score)", aka: ["PD-L1 TPS", "TPS", "tumor proportion score", "tumour proportion score", "TPS >= 1%", "TPS >= 50%", "PD-L1 TPS 50", "PD-L1 high", "PD-L1 ≥50%", "TPS≥50%", "TPS≥1%"],
     target: "pdl1", measurement: "tumour-proportion-score",

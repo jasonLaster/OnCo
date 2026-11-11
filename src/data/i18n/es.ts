@@ -405,8 +405,6 @@ export const tldr_es: Record<string, string> = {
   suv: "Un número que indica cuánto brilla un punto en un PET.",
   ihc: "Teñir un corte de tejido con anticuerpos para que una proteína aparezca en color al microscopio.",
   "her2-low": "Tumores con un poco de HER2 (IHC 1+ o 2+ sin amplificación), o un rastro (ultrabajo), que los fármacos anti-HER2 antiguos ignoraban pero Enhertu puede atacar.",
-  cps: "Una puntuación de PD-L1 que cuenta juntas las células tumorales y las inmunitarias teñidas.",
-  tils: "Células inmunitarias que han entrado en el tumor. Cuantas más, mejores resultados en cáncer de mama triple negativo.",
 
 
 
@@ -2694,8 +2692,7 @@ export const tldr_es: Record<string, string> = {
 
   "contact-03": "Continuar la inmunoterapia después de que haya fracasado, junto con una pastilla dirigida, no añadió nada salvo efectos secundarios. La primera prueba definitiva de la 'reintroducción de la inmunoterapia' (IO rechallenge).",
   convert: "Zanjó el debate sobre el esquema de radioterapia en la enfermedad en estadio limitado: ninguno de los dos esquemas fue superior, por lo que 45 Gy dos veces al día sigue siendo el estándar y una vez al día es una alternativa aceptable.",
-  "core-needle-biopsy": "Tomar una lámina de tejido (cilindro) o unas pocas células (punción-aspiración con aguja fina) a través de una aguja guiada por ecografía, TC o RM, para diagnosticar el cáncer y analizar sus marcadores sin cirugía.",
-  cosibelimab: "Cosibelimab es un anticuerpo anti-PD-L1 aprobado en diciembre de 2024 para el carcinoma cutáneo de células escamosas avanzado, que ofrece una tercera opción de inmunoterapia.",
+    cosibelimab: "Cosibelimab es un anticuerpo anti-PD-L1 aprobado en diciembre de 2024 para el carcinoma cutáneo de células escamosas avanzado, que ofrece una tercera opción de inmunoterapia.",
   cprit: "La agencia del estado de Texas creada por los votantes en 2007 que es el segundo mayor financiador público de la investigación del cáncer en EE. UU. después del NCI.",
   "cristina-saura": "Oncóloga de mama española que dirige DESTINY-Breast09, que llevó trastuzumab deruxtecán a la primera línea de la enfermedad HER2 positiva.",
   crossover: "Cuando a los pacientes del brazo de control de un ensayo se les permite cambiar al fármaco experimental después de que su cáncer progrese. Es justo para los pacientes, pero difumina la comparación de supervivencia, porque el grupo de control ahora también ha recibido el fármaco.",

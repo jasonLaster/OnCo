@@ -232,8 +232,7 @@ export const tldr_fr: Record<string, string> = {
   "colorectal-screening": "Trouver et retirer les polypes avant qu'ils ne deviennent un cancer. La coloscopie prévient le cancer ; les tests sur les selles et le sang le détectent tôt et permettent de dépister davantage de personnes.",
   "companion-diagnostic": "Le test qui détermine si un médicament précis vous convient, approuvé en même temps que le médicament.",
 
-  cps: "Un score PD-L1 qui compte ensemble les cellules tumorales et les cellules immunitaires marquées.",
-  craniopharyngioma: "Le craniopharyngiome est une tumeur bénigne mais destructrice qui se développe à partir de vestiges embryonnaires à côté de l'hypophyse et de l'hypothalamus. La chirurgie, ou une chirurgie limitée associée à une radiothérapie, guérit la plupart des personnes, mais le prix peut être un déficit hormonal à vie et une obésité sévère. La forme de l'adulte (papillaire) porte une mutation de BRAF et régresse de façon spectaculaire sous inhibiteurs de BRAF et de MEK, son premier traitement médicamenteux.",
+    craniopharyngioma: "Le craniopharyngiome est une tumeur bénigne mais destructrice qui se développe à partir de vestiges embryonnaires à côté de l'hypophyse et de l'hypothalamus. La chirurgie, ou une chirurgie limitée associée à une radiothérapie, guérit la plupart des personnes, mais le prix peut être un déficit hormonal à vie et une obésité sévère. La forme de l'adulte (papillaire) porte une mutation de BRAF et régresse de façon spectaculaire sous inhibiteurs de BRAF et de MEK, son premier traitement médicamenteux.",
   "crispr-screens": "Inactiver chaque gène, un par un, dans des cellules cancéreuses pour découvrir ceux dont elles ne peuvent pas se passer.",
   crs: "Un déferlement de signaux inflammatoires lorsque les cellules immunitaires sont activées en masse, provoquant de la fièvre, une baisse de la tension artérielle et parfois une défaillance d'organes.",
   cruk: "Cancer Research UK est la plus grande association caritative indépendante de recherche sur le cancer au monde ; elle finance le Crick, l'ICR, Manchester, Cambridge, ainsi que les essais STAMPEDE et TRACERx.",
@@ -411,8 +410,7 @@ export const tldr_fr: Record<string, string> = {
   "thermal-ablation": "L'ablation thermique détruit une tumeur par la chaleur ou le froid délivrés à travers une aiguille, sans aucune incision.",
   "thomas-powles": "A dirigé EV-302, NIAGARA et IMvigor011, les essais qui ont fait passer le cancer de la vessie d'une prise en charge fondée uniquement sur la chimiothérapie à des soins par ADC, immunothérapie et guidés par le ctDNA.",
   "til-therapy": "Des cellules immunitaires qui ont déjà pénétré dans la tumeur sont prélevées, multipliées jusqu'à plusieurs milliards, puis réinjectées.",
-  tils: "Des cellules immunitaires qui ont pénétré à l'intérieur de la tumeur. Plus elles sont nombreuses, meilleurs sont les résultats dans le cancer du sein triple négatif.",
-  tisagenlecleucel: "Tisagenlecleucel a été la toute première thérapie CAR-T approuvée (2017), pour les enfants et les jeunes adultes dont la leucémie était revenue après tous les autres traitements.",
+    tisagenlecleucel: "Tisagenlecleucel a été la toute première thérapie CAR-T approuvée (2017), pour les enfants et les jeunes adultes dont la leucémie était revenue après tous les autres traitements.",
   tislelizumab: "Un bloqueur de PD-1 développé en Chine, conçu pour éviter une voie parallèle qui peut atténuer l'effet d'autres médicaments anti-PD-1, désormais approuvé aux États-Unis et dans l'UE pour le cancer de l'œsophage et de l'estomac.",
 
   "tnbc-history": "Comment le cancer du sein triple négatif est passé, en six ans, du sous-type sans aucune thérapie ciblée à un sous-type disposant d'une immunothérapie, d'inhibiteurs de PARP, de trois ADC et d'un ADC bispécifique aux résultats positifs.",
@@ -2646,8 +2644,7 @@ export const tldr_fr: Record<string, string> = {
 
   "contact-03": "Poursuivre l'immunothérapie après son échec, en association avec un comprimé ciblé, n'a rien apporté d'autre que des effets secondaires. Le premier test définitif du « IO rechallenge » (reprise de l'immunothérapie).",
   convert: "A tranché le débat sur le schéma de radiothérapie dans la maladie de stade limité : aucun des deux schémas n'était supérieur, donc 45 Gy en deux fractions par jour reste le standard et une fraction par jour est une alternative acceptable.",
-  "core-needle-biopsy": "Prélever une fine carotte de tissu (biopsie au trocart) ou quelques cellules (cytoponction à l'aiguille fine) à travers une aiguille guidée par échographie, scanner ou IRM, afin de diagnostiquer le cancer et de tester ses marqueurs sans chirurgie.",
-  cosibelimab: "Le cosibelimab est un anticorps anti-PD-L1 approuvé en décembre 2024 pour le carcinome épidermoïde cutané avancé, offrant un troisième choix d'immunothérapie.",
+    cosibelimab: "Le cosibelimab est un anticorps anti-PD-L1 approuvé en décembre 2024 pour le carcinome épidermoïde cutané avancé, offrant un troisième choix d'immunothérapie.",
   cprit: "L'agence de l'État du Texas créée par les électeurs en 2007, qui est le deuxième financeur public de la recherche sur le cancer aux États-Unis après le NCI.",
   "cristina-saura": "Oncologue espagnole spécialiste du sein qui dirige DESTINY-Breast09, l'essai qui a fait passer le trastuzumab deruxtecan en première ligne dans la maladie HER2-positive.",
   crossover: "Lorsque les patients du bras contrôle d'un essai sont autorisés à passer au médicament expérimental après la progression de leur cancer. C'est équitable pour les patients, mais cela brouille la comparaison de survie, puisque le groupe contrôle a désormais lui aussi reçu le médicament.",

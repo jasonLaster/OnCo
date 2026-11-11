@@ -405,8 +405,6 @@ export const tldr_pt: Record<string, string> = {
   suv: "Um número para quão intensamente um ponto acende em um PET.",
   ihc: "Corar uma fatia de tecido com anticorpos para que uma proteína apareça colorida ao microscópio.",
   "her2-low": "Tumores com um pouco de HER2 (IHC 1+ ou 2+ sem amplificação), ou um traço (ultrabaixo), que drogas anti-HER2 antigas ignoravam mas o Enhertu pode atacar.",
-  cps: "Um escore de PD-L1 que conta células tumorais e imunes coradas juntas.",
-  tils: "Células imunes que entraram no tumor. Mais delas significa melhores resultados no câncer de mama triplo-negativo.",
 
 
 
@@ -2694,8 +2692,7 @@ export const tldr_pt: Record<string, string> = {
 
   "contact-03": "Continuar a imunoterapia depois que ela falhou, junto com um comprimido dirigido, não acrescentou nada além de efeitos colaterais. O primeiro teste definitivo do 'IO rechallenge' (reintrodução da imunoterapia).",
   convert: "Encerrou o debate sobre o esquema de radioterapia na doença em estágio limitado: nenhum dos esquemas foi superior, então 45 Gy duas vezes ao dia continua sendo o padrão e uma vez ao dia é uma alternativa aceitável.",
-  "core-needle-biopsy": "Retirar uma lasca de tecido (fragmento) ou algumas células (aspiração por agulha fina) por meio de uma agulha guiada por ultrassom, TC ou RM, para diagnosticar o câncer e testar seus marcadores sem cirurgia.",
-  cosibelimab: "O cosibelimab é um anticorpo anti-PD-L1 aprovado em dezembro de 2024 para o carcinoma espinocelular cutâneo avançado, oferecendo uma terceira opção de imunoterapia.",
+    cosibelimab: "O cosibelimab é um anticorpo anti-PD-L1 aprovado em dezembro de 2024 para o carcinoma espinocelular cutâneo avançado, oferecendo uma terceira opção de imunoterapia.",
   cprit: "A agência do estado do Texas criada pelos eleitores em 2007 que é o segundo maior financiador público de pesquisa em câncer nos EUA, depois do NCI.",
   "cristina-saura": "Oncologista de mama espanhola que lidera o DESTINY-Breast09, que levou o trastuzumab deruxtecan para a primeira linha da doença HER2-positiva.",
   crossover: "Quando os pacientes do braço de controle de um ensaio podem mudar para o fármaco experimental depois que o câncer progride. É justo para os pacientes, mas embaça a comparação de sobrevida, porque o grupo de controle agora também recebeu o fármaco.",

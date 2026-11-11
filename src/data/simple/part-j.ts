@@ -332,7 +332,7 @@ export const simpleJ: Record<string, string> = {
   "central-venous-access": "Central venous access is a long-term line into a large vein near the heart, so chemotherapy can be given and blood drawn without repeated needle sticks.",
   "feeding-tube": "A feeding tube is placed into the stomach or small bowel so a patient who cannot swallow enough can still be fed through the gut.",
   "stoma": "A stoma is an opening made in the abdominal wall so bowel contents or urine empty into a bag, either temporarily while a join heals or permanently.",
-  "core-needle-biopsy": "A core needle biopsy takes a sliver of tissue through a needle guided by scans, diagnosing the cancer and testing its markers without surgery.",
+  "core-needle-biopsy": "A core needle takes small cylinders of tissue; a fine needle collects cells or fluid. Each samples a site, so a useful result depends on the question and the material collected.",
   "hipec-procedure": "HIPEC bathes the abdomen in heated chemotherapy for about an hour after surgeons have removed all visible tumour from its lining, to kill the microscopic cells left behind.",
   "brachytherapy-term": "Brachytherapy is radiotherapy from the inside, placing radioactive seeds or a temporary source in or next to the tumour so nearby organs are spared.",
   "sbrt-term": "Stereotactic body radiotherapy gives a few very large, pinpoint-accurate radiation doses that destroy a tumour almost like surgery, for patients who cannot have an operation.",

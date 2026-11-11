@@ -225,4 +225,9 @@ export const simpleS: Record<string, string> = {
   "israel-cancer-association": "The Israel Cancer Association is a charity that runs on donations and started both of Israel's national cancer screening programmes.",
   "iscort": "ISCORT is the small Israeli society of doctors who treat cancer without surgery. Each year it ranks the new cancer drugs for the committee that decides what the state will pay for.",
   "compugen": "Compugen is an Israeli company that predicts new immune brakes on a computer first and only then tests them in the laboratory. That is how it found PVRIG.",
+  "pd-l1-cps": "CPS compares certain PD-L1-stained tumour and immune cells with viable tumour cells. Its reported score stops at 100, and its use depends on the assay and treatment setting.",
+  "biopsy-after-neoadjuvant-therapy": "A biopsy after drug treatment samples parts of the former breast tumour bed. A negative sample can miss remaining cancer and does not by itself establish that surgery can be omitted.",
+  "tumor-stroma-ratio": "This score estimates supporting tissue within a defined tumour field. It differs from an immune-cell score, and a study association does not prove which treatment to choose.",
+  "surgical-resection-specimen": "Removed tissue is mapped into selected blocks for examination. Its report describes the examined material, rather than every cell in the tumour or body.",
+  "blood-as-a-renewable-sample": "Later blood draws are new samples, each with a finite volume. Plasma, serum and blood cells supply different measurements and do not reproduce the local structure of tumour tissue.",
 };

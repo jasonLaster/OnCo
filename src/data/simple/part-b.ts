@@ -40,8 +40,8 @@ export const simpleB: Record<string, string> = {
   suv: "A number for how brightly a spot lights up on a PET scan.",
   ihc: "Staining a slice of tissue with antibodies so a protein shows up in colour under the microscope.",
   "her2-low": "Tumours with just a little HER2, which older HER2 drugs ignored but Enhertu can attack.",
-  cps: "A PD-L1 score that counts both stained tumour cells and stained immune cells.",
-  tils: "Immune cells that have got inside the tumour. More of them means a better outlook in triple-negative breast cancer.",
+  cps: "CPS compares certain PD-L1-stained tumour and immune cells with the number of viable tumour cells. The assay and treatment setting determine how the score is used.",
+  tils: "These are immune cells in tumour tissue. A stromal TIL score estimates the area they occupy in the tissue between tumour cells; it does not promise a better outcome or select a treatment.",
 
 
 

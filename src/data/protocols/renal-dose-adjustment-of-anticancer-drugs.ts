@@ -92,7 +92,7 @@ export const renalDoseAdjustmentOfAnticancerDrugs = protocol({
       why: "Other medicines can damage the kidneys or raise the levels of kidney-cleared cancer drugs.",
       source: "kdigo-2024",
       quote: "Perform thorough medication review periodically and at transitions of care to assess adherence, continued indication, and potential drug interactions because people with CKD often have complex medication regimens and are seen by multiple specialists.",
-      grade: "Practice Point 4.3.1 (ungraded)",
+      grade: "Practice Point 4.3.1",
     },
   ],
   bestInClass: {
@@ -115,8 +115,8 @@ export const renalDoseAdjustmentOfAnticancerDrugs = protocol({
   ],
   grades: [
     { claim: "eGFR CKD-EPI to guide dosing of kidney-dependent anticancer drugs, except in specific situations", grade: "Evidence quality/certainty: clinical consensus; strength of recommendation: strong", source: "addikd-part1-2025", quote: "We recommend eGFR CKD-EPI to guide the dosing of anticancer drugs whose dose is dependent on kidney function, except in specific clinical situations or for a select group of anticancer drugs where eGFR CKD-EPI may be unsuitable." },
-    { claim: "Consider GFR when dosing medicines cleared by the kidneys", grade: "Practice Point 4.2.1 (ungraded)", source: "kdigo-2024", quote: "Consider GFR when dosing medications cleared by the kidneys." },
-    { claim: "Validated creatinine-based eGFR equations are appropriate for drug dosing for most people", grade: "Practice Point 4.2.2 (ungraded)", source: "kdigo-2024", quote: "For most people and clinical settings, validated eGFR equations using SCr are appropriate for drug dosing." },
+    { claim: "Consider GFR when dosing medicines cleared by the kidneys", grade: "Practice Point 4.2.1", source: "kdigo-2024", quote: "Consider GFR when dosing medications cleared by the kidneys." },
+    { claim: "Validated creatinine-based eGFR equations are appropriate for drug dosing for most people", grade: "Practice Point 4.2.2", source: "kdigo-2024", quote: "For most people and clinical settings, validated eGFR equations using SCr are appropriate for drug dosing." },
   ],
   sources: [
     {

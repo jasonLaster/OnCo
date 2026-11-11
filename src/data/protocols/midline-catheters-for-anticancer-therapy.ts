@@ -91,9 +91,7 @@ export const midlineCathetersForAnticancerTherapy = protocol({
       sources: ["gravdahl-2024"],
     },
   ],
-  grades: [
-    { claim: "PICCs carry a higher risk of catheter-related bloodstream infection than midlines", grade: "Meta-analysis of 3 RCTs and 12 cohort studies (no GRADE rating in the abstract)", source: "aljameie-2026", quote: "PICCs were associated with a significantly higher risk of CRBSIs compared with MCs (RR = 4.18, 95% CI: 2.87-6.08; p < 0.01)." },
-  ],
+  grades: [],
   sources: [
     {
       key: "cdc-hicpac-2011",

@@ -56,7 +56,6 @@ export const consentAndEducationBeforeAnticancerTreatment = protocol({
       why: "Rushed decisions are more often regretted, and teach-back shows what has really been understood.",
       source: "nice-ng197",
       quote: "1.2.12 Give people (and their family members, friends or carers, as appropriate) the time they need to make decisions about tests, treatments and interventions.",
-      grade: "NICE (ungraded)",
     },
     {
       action: "Document informed consent before the regimen starts, following the organisation's standard process, and have consent taken by a trained professional",

@@ -71,9 +71,7 @@ export const doseBandingOfAnticancerDrugs = protocol({
       sources: ["van-huet-2025"],
     },
   ],
-  grades: [
-    { claim: "Banding into three BSA bands changed individual doses by -14% to +22% with exposure similar to BSA dosing", grade: "Pharmacokinetic simulation study (not graded)", source: "chatelut-2012", quote: "For all six drugs, the per cent variation in individual dose obtained with dose banding compared with BSA dosing ranged between −14% and +22%, and distribution of AUC values was very similar with both dosing methods." },
-  ],
+  grades: [],
   sources: [
     {
       key: "bopa-2025",

@@ -110,9 +110,7 @@ export const asepticCompoundingOfHazardousAnticancerDrugs = protocol({
       sources: ["asco-2018"],
     },
   ],
-  grades: [
-    { claim: "External ventilation of containment rooms is one of a suite of measures institutions may choose", grade: "Consensus-based standard (not graded)", source: "asco-2018", quote: "External ventilation of C-SECs or C-SCAs may be viewed as part of a suite of protective measures that are designed to reduce the likelihood of exposure." },
-  ],
+  grades: [],
   sources: [
     {
       key: "niosh-2004",

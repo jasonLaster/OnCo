@@ -110,9 +110,7 @@ export const bodySizeBasedDoseCalculation = protocol({
       sources: ["chatelut-2012", "bopa-2025"],
     },
   ],
-  grades: [
-    { claim: "Full weight-based cytotoxic doses for obese patients, particularly when the goal is cure", grade: "Not stated in the abstract read", source: "asco-obesity-2012", quote: "The Panel recommends that full weight-based cytotoxic chemotherapy doses be used to treat obese patients with cancer, particularly when the goal of treatment is cure." },
-  ],
+  grades: [],
   sources: [
     {
       key: "asco-obesity-2021",

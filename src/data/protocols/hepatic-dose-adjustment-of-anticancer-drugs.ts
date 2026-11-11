@@ -56,21 +56,18 @@ export const hepaticDoseAdjustmentOfAnticancerDrugs = protocol({
       why: "In cirrhosis and liver cancers, Child-Pugh captures how well the liver works better than two blood tests can.",
       source: "fda-hepatic-2026",
       quote: "FDA recommends using the Child-Pugh (CP) classification to categorize the degree of HI in subjects with cirrhosis due to chronic liver disease. In subjects with cancer, sponsors can use the National Cancer Institute (NCI) Organ Dysfunction Working Group criteria (NCI Criteria) to categorize the degree of HI, except for subjects with hepatobiliary cancers.",
-      grade: "Draft guidance (nonbinding)",
     },
     {
       action: "Do not score Child-Pugh during or just after an acute event such as bleeding, infection, surgery or transfusion",
       why: "The score can be temporarily worse than the liver's usual ability to clear drugs.",
       source: "fda-hepatic-2026",
       quote: "Further, determining a CP score during or shortly after an acute event (e.g., alcohol recidivism, gastrointestinal bleed, surgery, transfusions, infections, flare of underlying liver disease) is not recommended because it may produce a higher score that may not reflect baseline drug metabolic capacity.",
-      grade: "Draft guidance (nonbinding)",
     },
     {
       action: "Rule out non-liver causes of an abnormal result, such as Gilbert's syndrome for bilirubin or anticoagulants for INR",
       why: "A raised number that does not come from the liver should not cut a dose.",
       source: "fda-hepatic-2026",
       quote: "For example, Vitamin K deficiency or anti-coagulant drugs may increase INR, Gilbert’s syndrome may increase total bilirubin via unconjugated bilirubin, and intravenous fluid administration may dilute serum albumin.",
-      grade: "Draft guidance (nonbinding)",
     },
     {
       action: "Apply the label's recommendation for the person's category: a reduced dose, closer monitoring, or avoiding the drug",

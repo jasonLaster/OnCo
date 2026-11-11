@@ -42,7 +42,7 @@ export const drugDesensitisationAfterAnticancerHypersensitivity = protocol({
       why: "Non-allergic reactions can usually be managed by slowing the drip and premedication; desensitisation is for true allergy.",
       source: "jtf-2022",
       quote: "Suggestion that patients with non-IgE chemotherapy or biologic reactions be treated with slowed infusion rate, graded dose escalation, and/or pre-medications without desensitization",
-      grade: "Suggestion (conditional)",
+      grade: "Suggestion",
     },
     {
       action: "After a severe reaction or anaphylaxis, do not simply give the drug again in the usual way",
@@ -119,8 +119,8 @@ export const drugDesensitisationAfterAnticancerHypersensitivity = protocol({
     },
   ],
   grades: [
-    { claim: "For immediate taxane reactions, the severity of the initial reaction may assist risk stratification and management", grade: "Suggestion (conditional)", source: "jtf-2022", quote: "Suggestion that for patients with immediate reactions to taxanes, the severity of the initial reaction may assist in risk stratification and management" },
-    { claim: "Non-IgE reactions to monoclonal antibodies may be managed with slowed infusion, graded escalation or premedication without desensitisation", grade: "Suggestion (conditional)", source: "jtf-2022", quote: "Suggestion that patients with non-IgE reactions to monoclonal antibodies (mAb) may be treated with a slowed infusion, graded dose escalation, and/or premedication without desensitization" },
+    { claim: "For immediate taxane reactions, the severity of the initial reaction may assist risk stratification and management", grade: "Suggestion", source: "jtf-2022", quote: "Suggestion that for patients with immediate reactions to taxanes, the severity of the initial reaction may assist in risk stratification and management" },
+    { claim: "Non-IgE reactions to monoclonal antibodies may be managed with slowed infusion, graded escalation or premedication without desensitisation", grade: "Suggestion", source: "jtf-2022", quote: "Suggestion that patients with non-IgE reactions to monoclonal antibodies (mAb) may be treated with a slowed infusion, graded dose escalation, and/or premedication without desensitization" },
   ],
   sources: [
     {

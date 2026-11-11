@@ -4,8 +4,9 @@ import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasatio
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
-import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
+import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
 import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
+import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
 import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer-surgery";
 
 /**
@@ -18,6 +19,7 @@ export const protocols: ProtocolInput[] = [
   febrileNeutropeniaFirstHour,
   implantedPortAccessAndCare,
   opioidSwitchingAndConversion,
+  palliativeSedation,
   strongOpioidsForCancerPain,
   surgicalSiteInfectionPrevention,
   vteProphylaxisAfterCancerSurgery,

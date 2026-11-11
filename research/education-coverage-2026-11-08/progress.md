@@ -4,6 +4,23 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [therapy/conjugate checkpoint](therapy-conjugates-2026-11-11/README.md) and [current-main refresh](main-refresh-2026-11-11/README.md) are draft contributions. The goal remains active, main/live coverage is zero, and source inventories overlap.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 386 (379 teaching, 7 routing) | 371 | 3,435 / 3,446 | 11 |
+| Later (550 sources) | 387 teaching | 381 | 3,660 / 3,666 | 6 |
+
+Each pin has 468 reviewed teaching assets, 63 classified supporting paths and 1,357 unclassified paths. All 917 defined literature occurrences are identity/relevance screened; this does not verify their claims. Thirty-one adjacent findings and six schema items remain open. Both source ledgers have zero stale or missing current proofs and retain exit 2 for real unfinished work.
+
+The current root graph has 22,809 records: 128 audit-introduced records less two duplicate-ID retirements from main, a net 126 over the frozen baseline. Selected versioned snapshots span 545 IDs. Current main is incorporated as a parent, without changing the frozen evidence baseline or awarding main coverage. The single merge conflict preserves audited prose and the upstream institution relationship. All 723 active proof fields that matched the prior root remain unchanged.
+
+Validate, typecheck, lint and the expanded full suite pass: 289 files, 2,875 tests and two existing skips. Twenty-nine actual entity readers and the NSCLC data subpage carry all 247 selected prose passages. Forty-five diagnostic/institution links, 29 exact JSON entities, 186 Markdown passages, OpenAPI, retrieval and recorded page-weight checks pass. No full production build, hosted-page, expert, learner or new language review is claimed. The round-27 breast review is next.
+
+## Historical checkpoint notes
+
+### Blood/functional checkpoint before subsequent content rounds
+
 The [blood and immune acceptance](blood-immune-2026-11-10/acceptance-r2/README.md) completes coordinator source-to-field assessment for seventeen original and eighteen later lessons. It has 255 original-version and 272 later-version requirements, including 133 separately proved assay-card rows. The 170 worker rows and 97 independent-review units remain separate historical inventories. Twenty-nine canonical subjects are represented across thirty draft records; no new main or expert acceptance is claimed. The exact lead-time analysis denominator, Diehl supplement and inherited reading-depth limits remain explicit.
 
 The original census has **308/537 files assessed or classified**: 301 teaching-bearing sources and seven routing-only files. Of 2,256 assessed learning requirements, 2,249 have exact draft evidence and seven remain open. Complete draft representation covers 297 sources; four retain residual requirements. Another 229 ordinary sources are unread.
@@ -18,7 +35,6 @@ The selected versioned snapshots span 418 entity IDs: 131 absent from the pinned
 
 All 917 defined literature occurrences are screened, with discovery and claim verification kept separate. Of 55 adjacent findings, 23 are represented and 32 remain open. Six schema items remain open. Both source phases and both asset censuses remain required, main coverage is zero, and no final whole-corpus re-audit is counted. The goal remains active.
 
-## Historical checkpoint notes
 
 The following notes retain the counts and heads at each recorded checkpoint; they do not replace the current table.
 

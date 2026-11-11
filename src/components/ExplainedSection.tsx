@@ -29,7 +29,7 @@ const route = (id: string) => `/trials/${id}/`;
 
 /**
  * One cancer section of /explained/. The page's HTML carries the first EXPLAINED_PAGE rows (a collapsed <details>
- * per trial with its heading linked to the trial page, status, phase and one-line summary, rendered on the server
+ * per trial with its name, status, phase and one-line summary and, inside it, the trial page link, rendered on the server
  * too, so crawlers see them) and the first EXPLAINED_PAGE cross-reference pills; `total` and `refTotal` say how
  * many the section has. The rest of the rows and pills, and every trial's plain-words explainer, are the section's
  * file (/api/v1/explained/<id>.json), fetched once when the reader scrolls within 600 px of the section's foot,
@@ -158,15 +158,19 @@ export function ExplainedSection({ section, rows, total = rows.length, refs = []
         return (
           <details key={r.id} id={r.id} open={isOpen} onToggle={(e) => toggle(r.id, e.currentTarget.open)} className="explained-row">
             <summary>
-              {/* The heading is the trial's page link; a link inside a summary follows the link without toggling the row. */}
-              <h3><Link href={route(r.id)}>{r.name}</Link></h3>
+              {/* Plain text: a link inside a <summary> is a control inside a control, which a screen reader may never
+                  reach (axe nested-interactive, src/app/a11y.test.ts). The trial page link is the first line inside the opened row. */}
+              <h3>{r.name}</h3>
               {r.status && <span className={`chip tone-${statusTone(r.status)}`}>{STATUS_LABEL[r.status] ?? r.status}</span>}
               <small>{phaseLabel(r.phase)}{r.year ? ` · reported ${r.year}` : ""}</small>
               <p>{r.tldr}</p>
             </summary>
+            {/* A bare link, the row's next child, so it is in every row's HTML for crawlers and readers without
+                JavaScript at the cost of its own words alone (a row's bytes are paid hundreds of times). */}
+            <Link href={route(r.id)}>Trial page</Link>
             {isOpen && (
               <div className="explained-body">
-                <p><Link href={route(r.id)}>Trial page</Link>{r.nct ? <> · <a href={`https://clinicaltrials.gov/study/${r.nct}`}>{r.nct}</a></> : null}</p>
+                {r.nct && <p><a href={`https://clinicaltrials.gov/study/${r.nct}`}>{r.nct}</a> on ClinicalTrials.gov</p>}
                 <div className="mt-3 text-base text-foreground">
                   {file === undefined && <p className="text-sm text-muted py-3" aria-live="polite">Loading the explanation…</p>}
                   {file !== undefined && !trial && <p className="text-sm text-muted py-3">The explanation could not be loaded; the <Link href={`${route(r.id)}#outcomes`} className="underline">trial page</Link> has the results in plain words and as pictograms.</p>}

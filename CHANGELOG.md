@@ -6,9 +6,44 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 10 November 2026
+- The site follows the device's light or dark setting until a reader chooses, an accessibility check runs on every ship, and the faults it found are fixed: unnamed timeline links, links hidden in expandable rows, mislabelled body and resistance buttons, low-contrast colours and small targets
+- feat: the theme follows the device by default, and accessibility is checked in CI
+- Drug labels that came from word fragments are corrected (37 antagonists no longer read as agonists, fluoropyrimidines no longer as degraders), companion-diagnostic rows link their devices, and the open-source catalogue keeps projects whose GitHub page went away
+- A kept open-source record cites a page that answers today: paquo and tiffslide now cite PyPI, without the GitHub-only star counts
+- paquo and tiffslide stay in the open-source catalogue from PyPI after their GitHub repositories went away
+- Ten nonprofits move from companies to institutions, among them the Jaime Leandro Foundation and Chan Zuckerberg Initiative, and two drugs held twice become one record each: GFH375 with VS-7375, AZD0120 with GC012F
+- Open-source catalogue: fuck-cancer, a patient brief skill for AI agents, joins the patient-facing projects
+- Companion diagnostic rows carry their device's record, and the readout table links it
+- Static redirect pages for the retired drug ids and the moved nonprofits
+- Redirect the retired drug ids and the moved nonprofits' company routes
+- Merge GFH375 with VS-7375 and AZD0120 with GC012F, and move ten nonprofits from company to institution records
+- Classifier patterns read whole words: antagonists are no longer agonists, benzimidazoles no longer IMiDs
+- chore: draft change proposals that need review (#385)
+- chore: EU regional rows read from the EMA register pages (#384)
+
+### 9 November 2026
+- chore: weekly fact check, audit, and provenance refresh (#383)
+- chore: render this week's issue to public/newsletter/ (#382)
+- chore: refresh public/votes.json from Discussions reactions (#381)
+- chore: refresh trial counts from ClinicalTrials.gov (#379)
+- chore: draft change proposals that need review (#378)
+- chore: EU regional rows read from the EMA register pages (#377)
+
+### 8 November 2026
+- chore: draft change proposals that need review (#367)
+- chore: EU regional rows read from the EMA register pages (#366)
+
+### 7 November 2026
+- chore: draft change proposals that need review (#365)
+- chore: EU regional rows read from the EMA register pages (#364)
+
+### 6 November 2026
+- chore: draft change proposals that need review (#361)
+- chore: EU regional rows read from the EMA register pages (#360)
+
 ### 5 November 2026
 - The Rare Cancer Research Foundation and its Pattern.org tissue donation programme, with 56 more rare-cancer foundations and coalitions from sarcoma and chordoma to ocular melanoma, NUT carcinoma and DIPG
-- The census fill rounds: hospices and Maggie's centres, psycho-oncology and fertility services, helplines, patient coalitions and patient guides, 87 reporting and staging systems, 103 graded complementary products, 27 hereditary syndromes and germline tests, vaccines and screening, donor registries, biobanks, laws, payers, open-source projects, veterinary drugs and prizes
 - Rare-cancer foundations: the Rare Cancer Research Foundation, Pattern.org and 56 more nonprofits
 - Cassian Yee of MD Anderson, with his programmes, advisory roles, key papers on adoptive T-cell therapy, the trials he leads, and the organisations in his profile
 - Cassian Yee of MD Anderson, with eight papers on endogenous T-cell therapy, nine trials from ClinicalTrials.gov, the term itself, and the companies and funders the faculty profile names

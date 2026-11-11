@@ -5,6 +5,7 @@ import { MEASUREMENT_META, readoutsForDrug, readoutsForTarget, siblingReadouts, 
 import { TUMOUR_TESTS } from "@/data/tumour-tests";
 import { assays } from "@/data/assays";
 import { BIOMARKER_SKIPS } from "@/data/biomarker-readouts-4";
+import { CDX_DEVICE_IDS } from "@/data/biomarker-readouts";
 
 const g = graph();
 const readouts = g.kind("biomarker");
@@ -66,9 +67,22 @@ describe("biomarker readouts", () => {
       for (const id of bm.assays) expect(assayIds.has(id), `${bm.id} -> assay ${id}`).toBe(true);
       for (const c of bm.companionDiagnostics) {
         if (c.companyId) expect(g.get(c.companyId)?.kind, `${bm.id} cdx company ${c.companyId}`).toBe("company");
+        if (c.deviceId) expect(g.get(c.deviceId)?.kind, `${bm.id} cdx device ${c.deviceId}`).toBe("drug");
         for (const d of c.drugs) expect(g.get(d)?.kind, `${bm.id} cdx drug ${d}`).toBe("drug");
       }
     }
+  });
+
+  it("every companion diagnostic device map entry names a test record and a row that uses it", () => {
+    const used = new Set(readouts.flatMap((bm) => bm.companionDiagnostics.map((c) => c.device)));
+    for (const [device, id] of Object.entries(CDX_DEVICE_IDS)) {
+      expect(g.get(id)?.kind, `${device} -> ${id}`).toBe("drug");
+      expect(used.has(device), `${device} is not printed by any companion diagnostic row`).toBe(true);
+    }
+    // The FDA list names the tissue and plasma FoundationOne tests separately; one record covers both.
+    const f1 = readouts.flatMap((bm) => bm.companionDiagnostics).filter((c) => /^FoundationOne (Liquid )?CDx$/.test(c.device));
+    expect(f1.length).toBeGreaterThan(10);
+    for (const c of f1) expect(c.deviceId).toBe("foundationone-cdx");
   });
 
   it("the PD-L1 scores all sit under CD274 and are each other's siblings", () => {

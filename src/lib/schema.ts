@@ -583,6 +583,8 @@ export const CompanionDiagnosticSchema = z.object({
   maker: z.string().min(1),
   /** Company record id, when the maker has a page. */
   companyId: id.optional(),
+  /** The device's own record (a drug-kind test record), when it has a page. Filled from CDX_DEVICE_IDS by `cdx()`. */
+  deviceId: id.optional(),
   /** The drug or drugs the device selects patients for, as the FDA lists them (corpus ids). */
   drugs: z.array(id).default([]),
   /** The FDA row's indication and sample column, as printed. */

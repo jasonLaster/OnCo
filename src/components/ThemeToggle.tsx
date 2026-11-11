@@ -1,7 +1,7 @@
 "use client";
 
 import { useT, type UiKey } from "@/lib/i18n/ui";
-import { THEME_KEY, THEMES, useTheme, type Theme } from "@/lib/theme";
+import { DEFAULT_THEME, THEME_KEY, THEMES, useTheme, type Theme } from "@/lib/theme";
 
 export type { Theme } from "@/lib/theme";
 
@@ -15,7 +15,7 @@ export const THEME_ICON: Record<Theme, React.ReactElement> = {
 };
 
 /**
- * Theme switch: light (default), dark, high contrast, auto (follows the OS). The store (localStorage key, the
+ * Theme switch: auto (follows the device; the default), light, dark, high contrast. The store (localStorage key, the
  * `data-theme` attribute on <html>, the change event) lives in src/lib/theme.ts so the account menu and the
  * signed-in preference sync read and write the same value. Render <ThemeScript /> at the top of <body> to apply
  * the saved theme before paint. `data-onco-toggle` lets the account menu's preference chip press this control.
@@ -33,9 +33,12 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
   );
 }
 
-/** Inline script that applies the saved theme before first paint (avoids a flash). */
+/**
+ * Inline script that applies the saved theme before first paint (avoids a flash). With nothing saved (or storage
+ * blocked) it sets no attribute, so the prefers-color-scheme rules in globals.css decide: dark on a dark device,
+ * light otherwise. Only a saved explicit choice sets `data-theme`.
+ */
 export function ThemeScript() {
-  // Light is the default; "system" follows the OS only when a reader chooses it.
-  const js = `try{var t=localStorage.getItem("${THEME_KEY}")||"light";if(t!=="system"){document.documentElement.setAttribute("data-theme",t)}}catch(e){document.documentElement.setAttribute("data-theme","light")}`;
+  const js = `try{var t=localStorage.getItem("${THEME_KEY}")||"${DEFAULT_THEME}";if(t!=="system"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}`;
   return <script dangerouslySetInnerHTML={{ __html: js }} />;
 }

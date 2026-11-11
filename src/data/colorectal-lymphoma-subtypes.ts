@@ -235,7 +235,7 @@ export const colorectalLymphomaSubtypes: CancerInput[] = [
       { year: 2024, title: "FDA accelerated approval of adagrasib with cetuximab", refs: ["adagrasib", "cetuximab"] },
       { year: 2025, title: "FDA approves sotorasib with panitumumab", refs: ["sotorasib", "panitumumab"] },
     ],
-    pipeline: ["nct06252649", "nct04793958", "divarasib", "olomorasib", "glecirasib", "daraxonrasib", "zoldonrasib", "elironrasib", "nct05194995", "nct07259590", "vs-7375"],
+    pipeline: ["nct06252649", "nct04793958", "divarasib", "olomorasib", "glecirasib", "daraxonrasib", "zoldonrasib", "elironrasib", "nct05194995", "nct07259590", "gfh375"],
     openProblems: ["Responses last months, not years; acquired RAS and MAPK alterations drive resistance.", "G12D, the commonest colorectal KRAS allele, has no approved drug.", "First-line use of the combinations awaits CodeBreaK 301 and KRYSTAL-10.", "Anti-EGFR skin and magnesium toxicity limits the combinations for some patients."],
     targets: ["kras", "egfr", "vegf"], technologies: ["kras-inhibitors", "monoclonal-antibody", "liquid-biopsy"], terms: ["ctdna", "ngs", "sidedness"], pathways: ["ras-mapk", "colorectal-cancer-signalling"],
     trials: ["codebreak-300", "nct03785249", "nct06252649", "nct04793958", "sunlight", "fresco-2", "nct05194995", "nct07259590"], drugs: ["sotorasib", "adagrasib", "panitumumab", "cetuximab", "divarasib", "olomorasib", "glecirasib", "daraxonrasib"],

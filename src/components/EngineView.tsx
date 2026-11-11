@@ -104,7 +104,7 @@ function RowCells({ r, ri, cols, byPos, pick, cellHref }: { r: GridItem; ri: num
   return (
     <>
       <div data-row={r.id} className="eg-rh">
-        {r.href ? <Link href={r.href} className="hover:underline" title={r.name}>{r.name}</Link> : <span title={r.name}>{r.name}</span>}
+        {r.href ? <Link href={r.href} className="min-w-6 truncate py-1.5 hover:underline" title={r.name}>{r.name}</Link> : <span className="min-w-0 truncate" title={r.name}>{r.name}</span>}
         <button type="button" onClick={() => pick(r.id)} className="ms-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded text-[10px] text-muted hover:text-accent" title={`Filter the table to ${r.name}`} aria-label={`Filter the table to ${r.name}`}>▸</button>
       </div>
       {cols.map((c, ci) => {

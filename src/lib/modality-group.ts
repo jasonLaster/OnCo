@@ -24,6 +24,6 @@ export function modalityGroup(modality: string): string {
   if (/device|treating fields|drug-eluting/.test(m)) return "Device";
   if (/cytotoxic|chemotherapy|alkylating|platinum|taxane|vinca|anthracycline|antifolate|antimetabolite|nucleoside|topoisomerase|camptothecin|podophyllotoxin|nitrosourea|nitrogen mustard|halichondrin|microtubule|liposomal|dna|actinomycin|antibiotic|fluoropyrimidine|purine|hydroxyurea|conditioning|arsenical/.test(m)) return "Cytotoxic";
   if (/serd|serm|aromatase|antiandrogen|androgen receptor|\bar |hormon|progestin|glucocorticoid|oestrogen|estrogen|cyp17|adrenolytic|retinoid/.test(m)) return "Hormonal";
-  if (/protac|degrader|molecular glue|celmod|cereblon|imid/.test(m)) return "Degrader";
+  if (/protac|degrader|molecular glue|celmod|cereblon|\bimids?\b/.test(m)) return "Degrader";
   return "Small molecule";
 }

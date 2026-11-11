@@ -56,7 +56,7 @@ export function classifyDrug(d: Drug): DrugClass {
   if (/vaccine|peptide antigen/.test(m)) return "vaccine";
   if (/antisense|oligonucleotide/.test(m)) return "antisense";
   if (/fusion|\btrap\b|anticalin|fc fusion/.test(m)) return "fusion-protein";
-  if (/agonist/.test(m)) return "agonist";
+  if (/\b(?:super)?agonist/.test(m)) return "agonist";
   if (/antibody|\bmab\b|monoclonal/.test(m)) return "antibody";
   if (/small.molecule|inhibitor|oral|kinase|degrader|antagonist/.test(m)) return "small-molecule";
   return "other";

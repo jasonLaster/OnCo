@@ -359,7 +359,7 @@ companies found through the registry) and freshened the most-linked existing rec
 
 ## Standing rules (see memory)
 Plain English first, UK spelling, no em-dashes in copy, no "as of", no invented numbers, corrections via issue form only,
-light theme default, pink accent, no red buttons, never "spike", survival figures behind a click, solution and mechanism first,
+theme follows the device by default (owner, 10 Nov 2026), pink accent, no red buttons, never "spike", survival figures behind a click, solution and mechanism first,
 every problem paired with what is being done, Global region default, icons everywhere, tooltips on technical terms,
 data licence CC BY-NC 4.0 with commercial licences (attribution "Data from OnCo (onco.cc)").
 

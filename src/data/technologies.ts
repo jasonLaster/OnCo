@@ -204,7 +204,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["One test, all actionable alterations", "Trial matching"],
     limitations: ["Tissue quantity", "VUS interpretation", "2-3 week turnaround"],
     terms: ["ngs", "tmb", "msi", "vus"],
-    companies: ["foundation-medicine", "tempus", "caris", "guardant-health", "strata-oncology", "billiontoone", "cambridge-cancer-genomics", "data-driven-bioscience", "fidocure", "inivata", "lucence", "omanta", "oncobox", "yemaachi-biotech", "valius", "belay-diagnostics", "oncodna", "hartwig-medical-foundation", "protean-biodiagnostics", "epistamai-biotech", "predicta-biosciences"], people: ["razelle-kurzrock"], links: [{ label: "Wikipedia", url: W("Cancer_genome_sequencing") }], journals: ["cancer-genetics", "cancer-genomics-and-proteomics", "genes-chromosomes-and-cancer", "nar-cancer"],
+    companies: ["foundation-medicine", "tempus", "caris", "guardant-health", "strata-oncology", "billiontoone", "cambridge-cancer-genomics", "data-driven-bioscience", "fidocure", "inivata", "lucence", "omanta", "oncobox", "yemaachi-biotech", "valius", "belay-diagnostics", "oncodna", "protean-biodiagnostics", "epistamai-biotech", "predicta-biosciences"], institutions: ["hartwig-medical-foundation"], people: ["razelle-kurzrock"], links: [{ label: "Wikipedia", url: W("Cancer_genome_sequencing") }], journals: ["cancer-genetics", "cancer-genomics-and-proteomics", "genes-chromosomes-and-cancer", "nar-cancer"],
   },
   {
     id: "wes-wgs", dependsOn: ["ngs-bioinformatics-software"], kind: "technology", name: "Whole-exome & whole-genome sequencing", sections: ["diagnostics", "drug-discovery"], status: "established", asOf, wikipedia: W("Whole_genome_sequencing"),
@@ -483,19 +483,59 @@ export const technologies: TechnologyInput[] = [
     "label": "Restivo et al. 2022: protocol-specific recovery from slow-frozen tumour tissue",
     "url": "https://doi.org/10.1038/s42003-022-04025-0"
   }
-], companies: ["certis-oncology-solutions", "known-medicine", "notable-labs", "origin-bio", "zpredicta", "kernis-health", "palitra-bio", "valius", "specicare", "storemytumor", "travera", "first-ascent-biomedical", "kiyatec", "cure-first", "sagemedic", "kyan-technologies", "cancertain", "2curex", "oncosyne"], notes: [
+], companies: [
+  "certis-oncology-solutions",
+  "known-medicine",
+  "notable-labs",
+  "origin-bio",
+  "zpredicta",
+  "kernis-health",
+  "palitra-bio",
+  "valius",
+  "specicare",
+  "storemytumor",
+  "travera",
+  "first-ascent-biomedical",
+  "kiyatec",
+  "sagemedic",
+  "kyan-technologies",
+  "cancertain",
+  "2curex",
+  "oncosyne"
+], notes: [
   "Specimen and assay card. Record donor/site/time, living preparation, transport and processing, initial composition, culture history, assay version, concentrations, exposure duration, replicates and control range. Fixed tissue cannot supply living cells; whether previously frozen material can supply the required viable preparation must be demonstrated for that protocol. Input suitability and recovery must be demonstrated for the method. Testing and endpoint processing use finite material. Output needs units, denominator, normalisation and uncertainty; acceptance criteria must be defined for the actual method. Name whether the preparation is dissociated cells, a fresh fragment or an expanded organoid. Mixed samples include normal neighbours, and expansion can change the represented populations.",
   "Handling evidence is method-specific. Ladan and colleagues collected breast tissue in their specified medium, cut 300 micrometre slices and assessed morphology, proliferation and apoptosis after three-day exposure. This is not a general transport or storage protocol for all screens. Growth-rate methods show why baseline counts and control division affect interpretation. Retain failures and exclusions; failed preparation is not clinical resistance. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4887336/ Medium, drug access and exposure duration can change the result. Mechanism-relevant controls test whether the claimed interaction can occur; absent required cells or unrealistic exposures can make an experiment uninformative even when a numerical response is available. A laboratory concentration is not a safe human dose.",
   "Fictional example. A well has half the metabolic signal but the same identified viable tumour-cell endpoint count as control. This establishes a changed proxy, not half the cells killed; endpoint equality also does not reconstruct every division and death. Separate death, target engagement, safe human dosing and clinical benefit remain questions. This is an arithmetic and interpretation exercise, not observed patient data. Possible readouts include cell number, metabolism, mass, growth and death. Adenosine triphosphate (ATP) is a cellular energy molecule measured by some luminescence assays. Promega's primary assay guidance states that cellular ATP content varies with cell type and physiology and can alter the relation between cell number and light output. A lower ATP signal can therefore reflect fewer cells or a per-cell change, rather than a counted death fraction. Source: https://www.promega.com/-/media/files/resources/protocols/technical-bulletins/0/celltiter-glo-luminescent-cell-viability-assay-protocol.pdf",
   "Restivo and colleagues generated organoids from matched fresh and slow-frozen colorectal tumour tissue from two patients with stage IV disease. Their specified slow-freezing protocol used a cryoprotectant to preserve living material, and the frozen-derived cultures took longer to form than the fresh-derived cultures. This is evidence of recovery under that protocol, not equivalence of all fresh, snap-frozen and viable-cryopreserved samples or a guaranteed turnaround. The handling history, recovery, malignant identity and assay quality need checking for the intended experiment. Preserved molecular material alone does not establish a recoverable living model. Source: https://doi.org/10.1038/s42003-022-04025-0"
-]},
+],
+"institutions": [
+  "cure-first"
+]
+},
   {
     id: "organoids", related: ["immune-tumour-coculture-models", "tumour-spheroid-models"], keyPapers: ["paper-sato-lgr5-organoids-nature-2009"], kind: "technology", name: "Patient-derived organoids", sections: ["drug-discovery"], status: "established", asOf: "2026-11-10", wikipedia: W("Organoid"),
     tldr: "Patient-derived tumour organoids are cultures that self-organise selected tissue features and support defined laboratory experiments.",
     summary: "Patient-derived tumour organoids are cultures established from a patient's tumour tissue that can be expanded for repeated laboratory experiments when establishment succeeds. They are one member of the broader organoid family defined on the organoid record; establishment selects cells, malignant identity must be checked against the source specimen, and conventional epithelial cultures usually lack immune and supporting populations. Mechanism and drug-response results from them do not by themselves establish clinical utility.",
     principle: "Culture viable source cells in a specified environment, then verify the selected tissue features and assay response.",
     strengths: ["Material for repeated controlled experiments when establishment succeeds","Can represent selected source-tumour features"],
-    limitations: ["Selection, normal-cell overgrowth and culture changes require checks","Conventional preparations do not recreate complete host physiology","Patient prediction and clinical utility need intended-use evidence"], links: [{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Organoid"},{"label":"Functional model interpretation: primary evidence","url":"https://pubmed.ncbi.nlm.nih.gov/30550791/"},{"label":"Organoid establishment and identity","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10598932/"},{"label":"Dijkstra tumour identity and overgrowth checks","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6558289/"},{"label":"Organoid definition, composition and measurement boundaries","url":"https://onco.cc/terms/organoid/"},{"label":"Sachs et al. 2018: breast organoid biobank","url":"https://doi.org/10.1016/j.cell.2017.11.010"},{"label":"Bertotti et al. 2011: xenopatient HER2 study","url":"https://doi.org/10.1158/2159-8290.CD-11-0109"},{"label":"Calon et al. 2015: stromal cross-talk study","url":"https://doi.org/10.1038/ng.3225"}], companies: ["known-medicine", "zpredicta", "kernis-health", "specicare", "kiyatec", "cure-first", "sagemedic", "2curex", "orakl-oncology", "oncosyne", "signet-therapeutics", "aummune", "cellesce"], notes: ["Patient-derived organoids can provide expandable material for repeated experiments when establishment succeeds. They are one part of the broader organoid family. The organoid definition holds the shared construction, consumption, quality-control and readout explanation; the technology record concerns their use as a research resource. A successful culture still needs malignant-cell identity and intended-use checks. Sources: https://doi.org/10.1016/j.cell.2017.11.010 ; https://doi.org/10.1016/j.cell.2018.11.021"]},
+    limitations: ["Selection, normal-cell overgrowth and culture changes require checks","Conventional preparations do not recreate complete host physiology","Patient prediction and clinical utility need intended-use evidence"], links: [{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Organoid"},{"label":"Functional model interpretation: primary evidence","url":"https://pubmed.ncbi.nlm.nih.gov/30550791/"},{"label":"Organoid establishment and identity","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10598932/"},{"label":"Dijkstra tumour identity and overgrowth checks","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6558289/"},{"label":"Organoid definition, composition and measurement boundaries","url":"https://onco.cc/terms/organoid/"},{"label":"Sachs et al. 2018: breast organoid biobank","url":"https://doi.org/10.1016/j.cell.2017.11.010"},{"label":"Bertotti et al. 2011: xenopatient HER2 study","url":"https://doi.org/10.1158/2159-8290.CD-11-0109"},{"label":"Calon et al. 2015: stromal cross-talk study","url":"https://doi.org/10.1038/ng.3225"}], companies: [
+  "known-medicine",
+  "zpredicta",
+  "kernis-health",
+  "specicare",
+  "kiyatec",
+  "sagemedic",
+  "2curex",
+  "orakl-oncology",
+  "oncosyne",
+  "signet-therapeutics",
+  "aummune",
+  "cellesce"
+], notes: ["Patient-derived organoids can provide expandable material for repeated experiments when establishment succeeds. They are one part of the broader organoid family. The organoid definition holds the shared construction, consumption, quality-control and readout explanation; the technology record concerns their use as a research resource. A successful culture still needs malignant-cell identity and intended-use checks. Sources: https://doi.org/10.1016/j.cell.2017.11.010 ; https://doi.org/10.1016/j.cell.2018.11.021"],
+"institutions": [
+  "cure-first"
+]
+},
   {
     id: "pdx-models", related: ["genetically-engineered-mouse-models", "humanised-mouse-models"], kind: "technology", name: "Patient-derived xenografts", sections: ["drug-discovery"], status: "established", asOf: "2026-11-10", wikipedia: W("Patient_derived_xenograft"),
     tldr: "A patient-derived xenograft is patient tumour material grown in another species, commonly a mouse, for experiments under whole-animal exposure.",
@@ -1110,7 +1150,7 @@ export const technologies: TechnologyInput[] = [
     strengths: ["Fully personalised, low toxicity", "Adjuvant setting where tumour burden is low"],
     limitations: ["6-8 week manufacturing", "Cost", "Neoantigen prediction is imperfect; low-TMB tumours have few targets"],
     drugs: ["intismeran-autogene", "autogene-cevumeran"],
-    companies: ["moderna", "merck", "biontech", "roche-genentech", "gritstone", "serova", "curevac", "evaxion", "gamgee", "geneos-therapeutics", "kernal-biologics", "nykode-therapeutics", "tarebio", "transgene", "echo-immune", "jaime-leandro-foundation", "invoke-bio", "ubivac", "breakbio"],
+    companies: ["moderna", "merck", "biontech", "roche-genentech", "gritstone", "serova", "curevac", "evaxion", "gamgee", "geneos-therapeutics", "kernal-biologics", "nykode-therapeutics", "tarebio", "transgene", "echo-immune", "invoke-bio", "ubivac", "breakbio"], institutions: ["jaime-leandro-foundation"],
     trials: ["interpath-001", "nct07002203"],
     cancers: ["melanoma", "pancreatic", "nsclc", "rcc"],
     terms: ["neoantigen"], related: ["idea-neoantigen-immunogenicity-rules"], links: [{ label: "Wikipedia", url: W("Cancer_vaccine") }],

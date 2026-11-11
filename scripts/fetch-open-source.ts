@@ -167,7 +167,18 @@ async function main() {
       const res = ghApi(path);
       if (res.status !== 200) {
         const kept = c.keepWhenUnreachable ? openSourceProjects.find((p) => p.id === c.id) : undefined;
-        if (kept) { records.push({ ...kept, ...base, opennessNote: c.opennessNote ?? kept.opennessNote }); console.warn(`kept ${c.id}: ${res.status} ${c.repo}, last good record reused`); continue; }
+        if (kept) {
+          // A kept record must still cite something that answers today: where the project has another home (a package
+          // index page), that page is read now and becomes the record's source; otherwise the record is dropped.
+          const home = c.homepage ? await fetchPage(c.homepage) : { status: 0, body: "" };
+          if (home.status === 200) {
+            // Stars and the last commit came from the GitHub API, which no longer answers, so they are not carried over.
+            const { stars: _s, lastCommit: _l, ...rest } = kept;
+            records.push({ ...rest, ...base, opennessNote: c.opennessNote ?? kept.opennessNote, source: { url: c.homepage!, status: 200, fetched: TODAY } });
+            console.warn(`kept ${c.id}: ${res.status} ${c.repo}, last good record reused, source now ${c.homepage}`); continue;
+          }
+          if (!c.homepage) { records.push({ ...kept, ...base, opennessNote: c.opennessNote ?? kept.opennessNote }); console.warn(`kept ${c.id}: ${res.status} ${c.repo}, last good record reused`); continue; }
+        }
         skipped.push({ name: c.name, reason: res.status === 0 ? `No cached response for ${c.repo} (offline run).` : `GitHub API returned ${res.status} for ${c.repo} on ${TODAY}; not recorded.` });
         console.warn(`skip ${c.id}: ${res.status} ${c.repo}`);
         continue;

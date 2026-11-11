@@ -201,7 +201,7 @@ export const devicesGapsTechnologies: TechnologyInput[] = [
     strengths: ["Many shapes and fittings, prescribed free in England for people with a stoma", "Convex and mouldable bases solve most seal problems"],
     limitations: ["Leaks and sore skin are common and need a stoma nurse's review", "Choice is wide enough to be confusing without specialist help"],
     cancers: ["colorectal", "rectal-cancer", "urothelial", "muscle-invasive-bladder-cancer"], technologies: ["ostomy-skin-care-products", "ostomy-support-garments", "colostomy-irrigation", "ostomy-output-management-products", "rejuv-recon-stoma-reversal", "rejuv-mind-body-after-stoma-and-limb-loss"],
-    terms: ["stoma", "living-with-a-stoma-bowel-cancer", "nhs-stoma-supply-route"], companies: ["coloplast", "convatec", "hollister", "salts-healthcare", "b-braun", "uoaa", "wocn-society"],
+    terms: ["stoma", "living-with-a-stoma-bowel-cancer", "nhs-stoma-supply-route"], companies: ["coloplast", "convatec", "hollister", "salts-healthcare", "b-braun"], institutions: ["uoaa", "wocn-society"],
     links: [fdaClass("EXB", "ostomy collector"), fdaClass("EZQ", "colostomy pouch"), fdaClass("EXH", "urinary ileostomy bag"), fdaClass("KPH", "rectal catheter for continent ileostomy"), PART_IX] }),
 
   tech({ id: "colostomy-irrigation", name: "Colostomy irrigation systems", aka: ["Colostomy irrigation", "Stoma irrigation", "Irrigation sleeve", "Ostomy irrigator", "Colotip", "Visi-Flow", "Irri-Drain"],
@@ -362,14 +362,8 @@ export const devicesGapsCompanies: CompanyInput[] = [
     tldr: "Establishment Labs makes Motiva breast implants and tissue expanders, approved in the United States in 2024.",
     summary: "Establishment Labs S.A. is registered with the FDA at Coyol, Alajuela, Costa Rica. Motiva USA, LLC holds PMA P230005 for Motiva SmoothSilk silicone gel-filled breast implants (approved 26 September 2024) and 510(k) K211676 for the Motiva Flora SmoothSilk tissue expander (13 October 2023).",
     technologies: ["breast-implants", "breast-tissue-expanders"], links: [fdaPma("P230005", "Motiva SmoothSilk breast implants"), fda510k("K211676", "Motiva Flora tissue expander")] }),
-  co({ id: "uoaa", name: "United Ostomy Associations of America (UOAA)", aka: ["UOAA", "United Ostomy Associations of America, Inc."], hq: "United States", country: "US", companyType: "nonprofit", website: "https://www.ostomy.org/", sections: ["supportive-care"],
-    tldr: "A national charity in the United States for people who have or will have a stoma, running local support groups, a virtual clinic and advocacy.",
-    summary: "UOAA describes itself as \"a 501(c)(3) nonprofit organization that supports, empowers, and advocates for people who have had or who will have ostomy or continent diversion surgery\", with \"275+ support groups in the U.S.\", a virtual ostomy clinic and an annual Ostomy Awareness Day.",
-    technologies: ["ostomy-appliances"], terms: ["stoma"], links: [{ label: "UOAA", url: "https://www.ostomy.org/" }] }),
-  co({ id: "wocn-society", name: "Wound, Ostomy and Continence Nurses Society (WOCN)", aka: ["WOCN", "WOCN Society", "WOC nurse"], hq: "United States", country: "US", companyType: "nonprofit", website: "https://www.wocn.org/", sections: ["supportive-care"],
-    tldr: "The professional society for specialist wound, ostomy and continence nurses in the United States, the nurses who mark the stoma site before surgery and help with bags and sore skin afterwards.",
-    summary: "The WOCN Society trains and supports wound, ostomy and continence (WOC) nurses and runs an Ostomy Care Associate programme for other licensed clinicians; its site carries stoma site marking resources. In the United Kingdom the equivalent role is the stoma care nurse.",
-    technologies: ["ostomy-appliances", "ostomy-skin-care-products"], terms: ["stoma"], links: [{ label: "WOCN Society", url: "https://www.wocn.org/" }] }),
+  // uoaa moved to an institution record on 2026-11-10: src/data/institutions/nonprofits-from-companies.ts.
+  // wocn-society moved to an institution record on 2026-11-10: src/data/institutions/nonprofits-from-companies.ts.
 ];
 
 // ---------------------------------------------------------------------------------------------------------------------

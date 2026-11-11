@@ -84,8 +84,9 @@ export function ChooseView({ pane, onPane, choose, view, chooseLabel = "Choose",
       <div role="tablist" aria-label={`${chooseLabel} or ${viewLabel}`} className="no-print lg:hidden sticky top-14 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2 bg-background/95 backdrop-blur border-b border-border flex items-center gap-2 text-sm">
         {pill("choose", chooseLabel, chooseHint, chooseId)}
         {pill("view", viewLabel, viewHint, viewId)}
-        <span className="sr-only" aria-live="polite" data-mobile-live>{viewHint}</span>
       </div>
+      {/* Beside the tablist, not in it: a tablist may only own tabs (axe aria-required-children, src/app/a11y.test.ts). */}
+      <span className="sr-only" aria-live="polite" data-mobile-live>{viewHint}</span>
       <div id={chooseId} data-choose-view-pane="choose" className={`min-w-0 ${pane === "view" ? "max-lg:hidden" : ""} ${chooseClass}`}>{choose}</div>
       <div id={viewId} ref={viewRef} tabIndex={-1} data-choose-view-pane="view" data-mobile-driven className={`min-w-0 outline-none ${pane === "choose" ? "max-lg:hidden" : ""} ${viewClass}`}>
         <button type="button" onClick={() => onPane("choose")} className="no-print lg:hidden mb-3 text-sm underline text-muted">‹ Back to {chooseLabel.toLowerCase()}</button>

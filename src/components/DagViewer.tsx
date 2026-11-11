@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { FrontIcon } from "./FrontIcon";
 import { ChooseView, useChooseView } from "./ChooseView";
@@ -201,16 +201,23 @@ export function DagViewer({ data }: { data: DagViewData }) {
               const isRoot = id === root;
               const stroke = tone === "focus" ? UP : tone === "up" ? UP : tone === "down" ? DOWN : "var(--border-strong)";
               return (
-                <a key={id} href={n.route} data-node-id={id} data-mobile-control aria-controls={PANEL_ID} onClick={(ev) => pickTile(ev, id)} onMouseEnter={() => setHovered(id)} onMouseLeave={() => setHovered(null)} onFocus={() => setHovered(id)} onBlur={() => setHovered(null)} aria-label={`${n.name}: open technology page`} style={{ opacity: tone === "dim" ? 0.35 : 1 }}>
+                <Fragment key={id}>
+                <a href={n.route} data-node-id={id} data-mobile-control aria-controls={PANEL_ID} onClick={(ev) => pickTile(ev, id)} onMouseEnter={() => setHovered(id)} onMouseLeave={() => setHovered(null)} onFocus={() => setHovered(id)} onBlur={() => setHovered(null)} aria-label={`${n.name}${chokepoints.has(id) ? ", chokepoint" : ""}${singleVendor.has(id) ? ", single vendor" : ""}: open technology page`} style={{ opacity: tone === "dim" ? 0.35 : 1 }}>
                   <title>{`${n.name}\nDepends on ${n.up.length} · needed by ${n.down.length}${n.vendors ? ` · ${n.vendors} vendor${n.vendors === 1 ? "" : "s"}` : ""}\n${n.tldr}`}</title>
                   <rect x={p.x} y={p.y} width={NODE_W} height={NODE_H} rx={10} fill={tone === "focus" ? "var(--accent-soft)" : "var(--card)"} stroke={stroke} strokeWidth={tone === "focus" || isRoot ? 2 : 1.2} />
                   <svg x={p.x + 10} y={p.y + (NODE_H - ICON) / 2} width={ICON} height={ICON} aria-hidden focusable="false" style={{ color: tone === "focus" || tone === "up" ? UP : tone === "down" ? DOWN : "var(--muted)" }}>
                     <FrontIcon id={n.section} className="" />
                   </svg>
-                  <text x={p.x + 36} y={p.y + NODE_H / 2 + 4} fontSize={12.5} fontWeight={tone === "focus" ? 600 : 500} className="fill-[var(--foreground)]">{shorten(n.name)}</text>
+                </a>
+                {/* The drawn name and badges sit beside the link, not inside it: the link's name is its aria-label, and a
+                    name cut short mid-word inside it is a label/content mismatch for voice control (axe). Clicks on the
+                    name fall through to the tile underneath; the badges keep their hover titles. */}
+                <g aria-hidden style={{ opacity: tone === "dim" ? 0.35 : 1 }}>
+                  <text x={p.x + 36} y={p.y + NODE_H / 2 + 4} fontSize={12.5} fontWeight={tone === "focus" ? 600 : 500} className="fill-[var(--foreground)] pointer-events-none">{shorten(n.name)}</text>
                   {chokepoints.has(id) && <g transform={`translate(${p.x + NODE_W - 12}, ${p.y + 1})`}><title>Chokepoint: removing this step cuts off part of the map</title><path d="M0 -6 5 3h-10z" fill="#d97706" transform="translate(0,4)" /></g>}
                   {singleVendor.has(id) && <g transform={`translate(${p.x + NODE_W - (chokepoints.has(id) ? 26 : 12)}, ${p.y + 4})`}><title>Single vendor</title><circle r={4.5} fill="var(--card)" stroke="#475569" strokeWidth={1.5} /><text y={3} textAnchor="middle" fontSize={7} fontWeight={700} fill="#475569">1</text></g>}
-                </a>
+                </g>
+                </Fragment>
               );
             })}
           </svg>

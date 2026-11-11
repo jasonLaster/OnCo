@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
-import { CATEGORIES, CATEGORY_BY_ID, type MechanismCategory } from "@/lib/resistance-categories";
+import { CATEGORIES, CATEGORY_BY_ID, INK_CLASS, inkStyle, type MechanismCategory } from "@/lib/resistance-categories";
 
 /* ------------------------------------------------------------------------------------------------
  * Shared highlight state. The matrix, the escape-route maps and the mechanism cards all live in
@@ -90,7 +90,7 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
               <div key={c.id} role="columnheader" className="self-end">
                 <button type="button" onClick={() => toggle(c.id)} aria-pressed={on} title={c.oneLiner}
                   className={`w-full px-1 py-2 text-left rounded-md transition ${off ? "opacity-40" : ""} hover:bg-foreground/5 focus-visible:bg-foreground/5`}>
-                  <span className="flex items-center gap-1.5 text-[11px] font-semibold leading-tight" style={{ color: c.color }}>
+                  <span className={`flex items-center gap-1.5 text-[11px] font-semibold leading-tight ${INK_CLASS}`} style={inkStyle(c)}>
                     <CategoryDot category={c.id} size={8} /> <span className={on ? "underline underline-offset-2" : ""}>{c.label}</span>
                   </span>
                   <span className="sr-only">{c.oneLiner}</span>
@@ -117,13 +117,13 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
                   return (
                     <div key={c.id} role="cell" className={`group relative border-t border-border p-1 transition-opacity ${off ? "opacity-30" : ""}`}>
                       <div tabIndex={n ? 0 : -1} aria-label={n ? `${n} ${c.label} route${n > 1 ? "s" : ""} for ${r.label}: ${names.join("; ")}` : undefined}
-                        className={`h-9 rounded-md flex items-center justify-center text-[13px] font-semibold tabular-nums outline-none ${n ? "cursor-help" : ""}`}
-                        style={n ? { background: mix(c.color, alpha), color: alpha > 0.55 ? "#fff" : c.color, boxShadow: `inset 0 0 0 1px ${mix(c.color, 0.35)}` } : { boxShadow: "inset 0 0 0 1px var(--border)" }}>
+                        className={`h-9 rounded-md flex items-center justify-center text-[13px] font-semibold tabular-nums outline-none ${n ? "cursor-help" : ""} ${n && alpha <= 0.55 ? INK_CLASS : ""}`}
+                        style={n ? { ...inkStyle(c), background: mix(c.color, alpha), color: alpha > 0.55 ? "#fff" : undefined, boxShadow: `inset 0 0 0 1px ${mix(c.color, 0.35)}` } : { boxShadow: "inset 0 0 0 1px var(--border)" }}>
                         {n ? n : <span className="text-border">·</span>}
                       </div>
                       {n > 0 && (
                         <div role="tooltip" className={`pointer-events-none invisible group-hover:visible group-focus-within:visible absolute z-20 top-full mt-1 w-56 card p-2.5 text-xs shadow-lg ${ci >= CATEGORIES.length - 2 ? "right-0" : "left-0"}`}>
-                          <div className="flex items-center gap-1.5 font-semibold" style={{ color: c.color }}><CategoryDot category={c.id} size={7} /> {c.label} · {r.label}</div>
+                          <div className={`flex items-center gap-1.5 font-semibold ${INK_CLASS}`} style={inkStyle(c)}><CategoryDot category={c.id} size={7} /> {c.label} · {r.label}</div>
                           <ul className="mt-1 space-y-0.5 text-foreground/90 list-disc ps-4">{names.map((nm) => <li key={nm} className="leading-snug">{nm}</li>)}</ul>
                         </div>
                       )}
@@ -139,7 +139,7 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
           <div role="row" className="contents">
           <div role="rowheader" className="px-2 py-2 border-t-2 border-border text-[11px] uppercase tracking-wider text-muted font-semibold">All classes</div>
           {CATEGORIES.map((c) => (
-            <div key={c.id} role="cell" className={`px-1 py-2 border-t-2 border-border text-center font-semibold tabular-nums transition-opacity ${highlight !== null && highlight !== c.id ? "opacity-30" : ""}`} style={{ color: c.color }}>{colTotals[c.id] || <span className="text-border">·</span>}</div>
+            <div key={c.id} role="cell" className={`px-1 py-2 border-t-2 border-border text-center font-semibold tabular-nums transition-opacity ${INK_CLASS} ${highlight !== null && highlight !== c.id ? "opacity-30" : ""}`} style={inkStyle(c)}>{colTotals[c.id] || <span className="text-border">·</span>}</div>
           ))}
           <div role="cell" className="px-2 py-2 border-t-2 border-border text-right font-semibold tabular-nums">{total}</div>
           </div>
@@ -156,7 +156,7 @@ export function ResistanceMatrix({ rows }: { rows: MatrixRow[] }) {
               <button key={c.id} type="button" onClick={() => toggle(c.id)} aria-pressed={on}
                 className={`text-left flex items-start gap-2 rounded-md px-1.5 py-1 -mx-1.5 transition hover:bg-foreground/5 ${off ? "opacity-40" : ""} ${on ? "bg-foreground/5" : ""}`}>
                 <span className="mt-1.5 inline-block w-3 h-[3px] rounded-full shrink-0" style={{ background: c.color }} />
-                <span className="text-xs leading-snug"><span className="font-semibold" style={{ color: c.color }}>{c.label}</span> <span className="text-muted">{c.oneLiner}</span></span>
+                <span className="text-xs leading-snug"><span className={`font-semibold ${INK_CLASS}`} style={inkStyle(c)}>{c.label}</span> <span className="text-muted">{c.oneLiner}</span></span>
               </button>
             );
           })}

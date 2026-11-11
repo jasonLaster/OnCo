@@ -8,6 +8,7 @@ import { cancerAssociatedVteTreatment } from "./cancer-associated-vte-treatment"
 import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
 import { centralLineOcclusionManagement } from "./central-line-occlusion-management";
+import { centralLineRemoval } from "./central-line-removal";
 import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-venous-catheter-insertion-for-anticancer-therapy";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-education-before-anticancer-treatment";
@@ -45,6 +46,7 @@ export const protocols: ProtocolInput[] = [
   carboplatinDoseCalculation,
   catheterRelatedThrombosisInCancer,
   centralLineOcclusionManagement,
+  centralLineRemoval,
   centralVenousCatheterInsertionForAnticancerTherapy,
   chemotherapyExtravasationManagement,
   consentAndEducationBeforeAnticancerTreatment,

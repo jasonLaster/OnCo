@@ -160,7 +160,7 @@ export const scalpCoolingDuringChemotherapy = protocol({
   drugs: ["paclitaxel", "docetaxel", "doxorubicin", "epirubicin", "cyclophosphamide"],
   companies: ["paxman", "dignitana"],
   cancers: ["breast-cancer"],
-  terms: ["hair-loss-and-scalp-cooling-breast", "anthracycline", "hair-anagen-effluvium"],
+  terms: ["hair-loss-and-scalp-cooling-breast", "anthracycline"],
   sections: ["supportive-care"],
   tags: ["protocol", "alopecia", "scalp-cooling", "supportive-care"],
 });

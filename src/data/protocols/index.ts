@@ -1,9 +1,11 @@
 import type { ProtocolInput } from "@/lib/schema";
 import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
+import { bloodSamplingFromACentralLine } from "./blood-sampling-from-a-central-line";
 import { bodySizeBasedDoseCalculation } from "./body-size-based-dose-calculation";
 import { cancerAssociatedVteTreatment } from "./cancer-associated-vte-treatment";
 import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
+import { centralLineOcclusionManagement } from "./central-line-occlusion-management";
 import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-venous-catheter-insertion-for-anticancer-therapy";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-education-before-anticancer-treatment";
@@ -30,10 +32,12 @@ import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access
  */
 export const protocols: ProtocolInput[] = [
   anticancerDrugInteractionReview,
+  bloodSamplingFromACentralLine,
   bodySizeBasedDoseCalculation,
   cancerAssociatedVteTreatment,
   carboplatinDoseCalculation,
   catheterRelatedThrombosisInCancer,
+  centralLineOcclusionManagement,
   centralVenousCatheterInsertionForAnticancerTherapy,
   chemotherapyExtravasationManagement,
   consentAndEducationBeforeAnticancerTreatment,

@@ -265,7 +265,7 @@ export const DrugSchema = Base.extend({
  * public trial sponsor (SWOG, GORTEC, the German CLL Study Group, MRC CTU) that runs trials of other makers' products; it has no
  * products of its own, so it is not a developer type, and its trials are the `trials` field plus trial records naming it.
  */
-export const COMPANY_TYPES = ["pharma", "biotech", "diagnostics", "imaging", "devices", "ai-software", "radiopharma", "cell-therapy", "cro-services", "nonprofit", "investor", "cooperative-group"] as const;
+export const COMPANY_TYPES = ["pharma", "biotech", "diagnostics", "imaging", "devices", "ai-software", "radiopharma", "cell-therapy", "cro-services", "nonprofit", "investor", "cooperative-group", "media"] as const;
 export type CompanyType = (typeof COMPANY_TYPES)[number];
 
 /** Where a company is in its life: a venture-backed startup, a later-stage private company, listed, a large private group, acquired, or wound down. */

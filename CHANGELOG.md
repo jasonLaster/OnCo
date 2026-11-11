@@ -6,6 +6,9 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 11 November 2026
+- Outperform Cancer is no longer called a nonprofit, since neither its site nor the IRS says so; it is now typed as media and education. The Chan Zuckerberg Initiative is shown as both a research institute and a philanthropy, with its own account of its structure
+
 ### 10 November 2026
 - The site follows the device's light or dark setting until a reader chooses, an accessibility check runs on every ship, and the faults it found are fixed: unnamed timeline links, links hidden in expandable rows, mislabelled body and resistance buttons, low-contrast colours and small targets
 - feat: the theme follows the device by default, and accessibility is checked in CI

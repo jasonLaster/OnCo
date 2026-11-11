@@ -154,7 +154,7 @@ export const simpleJ: Record<string, string> = {
   "pbd-sg3199": "SG3199 links strands of DNA together. Tesirine, also called SG3249, includes a linker and is different from free SG3199.",
   "calicheamicin": "Calicheamicin-family chemicals damage DNA. The modified chemicals in antibody drugs differ from unmodified members of the family.",
   "duocarmycin": "Duocarmycin designs damage DNA. Their inactive starting form, active chemical and linked component are different things.",
-  "topoisomerase-i-payloads": "Topoisomerase-I inhibitor payloads are the poisons behind Enhertu, Trodelvy and Dato-DXd, trapping the enzyme that untwists DNA so dividing cancer cells break their own DNA.",
+  "topoisomerase-i-payloads": "These drug cargoes can trap an enzyme on DNA during a temporary cut. The chemical, exposure and cell response determine what happens next.",
   "tubulin-inhibitor-payloads": "These payloads disrupt the scaffolding cells use to divide. The exact released chemical affects how it enters and moves through cells.",
   "pbd-dimer-payloads": "These payloads link strands of DNA together. Free cargo and its linked form are different, and strength in a cell test does not define safety in people.",
   "dna-cleaver-payloads": "These payloads can damage DNA strands after activation. Their free, attached and modified released forms are different substances.",

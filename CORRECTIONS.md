@@ -1,5 +1,13 @@
 # Corrections
 
+### Therapy and conjugate source follow-up, 11 November 2026
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Immune-stimulating conjugates](/technologies/immune-stimulating-adc/) | Innate activation and delivery were too easy to read as guaranteed priming or benefit | Resolved papers, targeted sensor-pathway passages and eight dated registries | Separates sensing, uptake, target identity, functional immune evidence and clinical endpoints; [receipt](research/therapy-conjugate-source-followup-2026-11-11/README.md) |
+| 2026-11-11 | [TOP1 payloads](/terms/topoisomerase-i-payloads/) | Compressed redesign notes omitted experimental alternatives and the difference between chemistry and cell response | Raw abstracts and named model comparisons | Retains five design questions, Takegawa alternatives, model scope and clinical-evidence boundaries |
+| 2026-11-11 | [Transcription-inhibitor payloads](/terms/transcription-inhibitor-payloads/) | Gene dosage, corrected figures, poisoning evidence and sponsor denominators needed distinct scopes | Raw abstracts, correction notices, sponsor clinical paragraphs and registry fields | Distinguishes copy loss from TP53 mutation, models from patients, and 13/31 from 2/5; earlier notes and links preserved |
+
 ### Chemical species and conjugate observations
 
 | Date | Entity | What was wrong | How found | Fix |

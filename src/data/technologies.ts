@@ -740,8 +740,98 @@ export const technologies: TechnologyInput[] = [
     drugs: ["orm-5029", "orm-6151"],
   },
   {
-    notes:["Chernyak tested TLR7 and TLR7/8 conjugates whose myeloid activation depended on antigen-expressing cancer cells in the tested assays. The proposed route included Fc-gamma-receptor-dependent phagocytosis. An altered Fc, different target, sensor expression or uptake route needs its own tests.","Bukhalid reported XMT-2056 activity and reduced systemic inflammation relative to a free STING agonist in mouse models, with immune-mediated neighboring-cell effects in a specified HER2-positive/negative context. These results do not make every ISAC tumor-only or establish a human safety window.","Measure cargo exposure and uptake, sensor activation, cytokines, antigen presentation, tumor-reactive effector function and target-cell death separately. An adaptive-priming claim needs relevant antigen presentation and functional responding cells; innate myeloid killing and T-cell priming are not interchangeable mechanisms.","Oh found cGAS-STING/interferon activation and increased PD-L1 after T-DXd in gastric cancer experiments. That cytotoxic product does not thereby acquire an attached STING-agonist payload. Incidental immune effects and deliberately conjugated agonism are different composition claims.","Janku reported a single-ascending-dose phase 1 study of NJH395 in 18 people with HER2-positive non-breast advanced malignancies. Tumor delivery and type I interferon responses were pharmacodynamic findings; CRS, anti-drug antibodies and neuroinflammation at higher doses were clinical challenges. Neither the cohort nor an interferon marker establishes efficacy in breast cancer.","Benci linked prolonged interferon signaling to a checkpoint-resistance program in experimental systems and clinical associations. That report did not test an ISAC regimen. It supports examining duration and counter-regulation rather than assuming that a stronger cytokine signal must improve tumor control.","The named registry captures show XMT-2056 stopped with development discontinued, TAK-500 stopped for clinical futility, BDC-1001 studies stopped by sponsor decision, and the SBT6050 combination study stopped for strategic realignment. The older SBT6050 first-in-human status is unknown. Preserve each reason; a strategic decision is not proof that every related mechanism failed.","The phase-2 history includes the terminated BDC-1001 breast-cancer study. A class-level development label does not establish that a named trial is open. Verify overall status, facility/cohort availability and the dated source separately."],
-    id: "immune-stimulating-adc", links: [{"label":"Ackerman et al., Immune-stimulating antibody conjugates elicit robust myeloid activation and durable antitumour immunity (Nature Cancer 2020)","url":"https://doi.org/10.1038/s43018-020-00136-x"},{"label":"XMT-2056 preclinical study (2025)","url":"https://doi.org/10.1158/1078-0432.CCR-24-2449"},{"label":"XMT-2056 trial: terminated","url":"https://clinicaltrials.gov/study/NCT05514717"},{"label":"TAK-500 trial: terminated","url":"https://clinicaltrials.gov/study/NCT05070247"},{"label":"BDC-1001 trial: terminated","url":"https://clinicaltrials.gov/study/NCT04278144"},{"label":"Chernyak et al.: TLR-agonist conjugate uptake and myeloid-cell experiments (2024)","url":"https://pubmed.ncbi.nlm.nih.gov/39235949/"},{"label":"Janku et al.: NJH395 preclinical and phase 1 non-breast cohort (2022)","url":"https://pubmed.ncbi.nlm.nih.gov/36129967/"},{"label":"Oh et al.: T-DXd immune effects in gastric cancer models (2024)","url":"https://pubmed.ncbi.nlm.nih.gov/39449023/"},{"label":"Benci et al.: prolonged interferon signaling and checkpoint-resistance programs (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27912061/"},{"label":"BDC-1001 breast-cancer phase 2 registry: terminated","url":"https://clinicaltrials.gov/study/NCT05954143"},{"label":"SBT6050 combination registry: terminated","url":"https://clinicaltrials.gov/study/NCT05091528"},{"label":"SBT6050 first-in-human registry: unknown status","url":"https://clinicaltrials.gov/study/NCT04460456"}], kind: "technology", name: "Immune-stimulating antibody conjugate (ISAC)", sections: ["adcs", "immunotherapy"], status: "phase-2", asOf: "2026-11-08", generation: "4th (next-gen)",
+    notes:[
+  "Chernyak tested TLR7 and TLR7/8 conjugates whose myeloid activation depended on antigen-expressing cancer cells in the tested assays. The proposed route included Fc-gamma-receptor-dependent phagocytosis. An altered Fc, different target, sensor expression or uptake route needs its own tests.",
+  "Bukhalid reported XMT-2056 activity and reduced systemic inflammation relative to a free STING agonist in mouse models, with immune-mediated neighboring-cell effects in a specified HER2-positive/negative context. These results do not make every ISAC tumor-only or establish a human safety window.",
+  "Measure cargo exposure and uptake, sensor activation, cytokines, antigen presentation, tumor-reactive effector function and target-cell death separately. An adaptive-priming claim needs relevant antigen presentation and functional responding cells; innate myeloid killing and T-cell priming are not interchangeable mechanisms.",
+  "Oh found cGAS-STING/interferon activation and increased PD-L1 after T-DXd in gastric cancer experiments. That cytotoxic product does not thereby acquire an attached STING-agonist payload. Incidental immune effects and deliberately conjugated agonism are different composition claims.",
+  "Janku reported a single-ascending-dose phase 1 study of NJH395 in 18 people with HER2-positive non-breast advanced malignancies. Tumor delivery and type I interferon responses were pharmacodynamic findings; CRS, anti-drug antibodies and neuroinflammation at higher doses were clinical challenges. Neither the cohort nor an interferon marker establishes efficacy in breast cancer.",
+  "Benci linked prolonged interferon signaling to a checkpoint-resistance program in experimental systems and clinical associations. That report did not test an ISAC regimen. It supports examining duration and counter-regulation rather than assuming that a stronger cytokine signal must improve tumor control.",
+  "The named registry captures show XMT-2056 stopped with development discontinued, TAK-500 stopped for clinical futility, BDC-1001 studies stopped by sponsor decision, and the SBT6050 combination study stopped for strategic realignment. The older SBT6050 first-in-human status is unknown. Preserve each reason; a strategic decision is not proof that every related mechanism failed.",
+  "The phase-2 history includes the terminated BDC-1001 breast-cancer study. A class-level development label does not establish that a named trial is open. Verify overall status, facility/cohort availability and the dated source separately.",
+  "The intended cargo is an innate-sensor agonist. cGAS can detect misplaced cytosolic DNA and make cGAMP, which activates STING and downstream type I interferon signalling; mitochondrial DNA also has a normal location, so DNA is not confined to the nucleus. TLR7/8 agonists act through endosomal sensing pathways. Heil’s receptor-deficiency and complementation experiments showed species-specific recognition of GU-rich single-stranded viral RNA by murine TLR7 and human TLR8; a small-molecule agonist imitates a sensing signal rather than supplying viral infection. Chernyak’s experiments included constructs with few agonist molecules attached per antibody; the tested loading is part of the construct, not a universal requirement. Cargo, receptor, cell type and uptake route must be named: an antibody-bound agonist does not guarantee that every exposed cell produces a useful immune response.",
+  "TAK-500 is a CCR2-directed antibody conjugated to a STING agonist, dazostinag, as established by its primary pharmacology and modelling reports. Its registry record supports study design, enrolment and the stated stopping reason; it is not the source of the target identity. The refreshed records list XMT-2056 terminated after 57 participants for discontinued development and TAK-500 terminated after 61 for clinical futility. The two BDC-1001 records are terminated by sponsor decision. The SBT6050 combination record is terminated for strategic realignment, while the earlier first-in-human record remains unknown, last verified in 2022.",
+  "A cross-priming claim needs antigen-presenting cells to take up tumour material, present its antigens and activate responding T cells. A neighbour lacking the antibody’s delivery target might still display an antigen that those T cells recognise; negative for the delivery target does not mean negative for every immune antigen. Myeloid activation, dendritic-cell function, antigen presentation, T-cell access and killing must each be demonstrated in the proposed route. An innate signal, a mouse regression or memory response, and a human response or survival comparison are different endpoints. A proposed clinical test would measure tumour agonist exposure, interferon-related genes and functional immune-cell changes in paired biopsies alongside blood cytokines and dose-limiting harms, before a randomised comparison tests patient benefit.",
+  "The alarm analogy describes an intention, not a guaranteed result. Systemic agonist exposure can cause inflammatory harms, and prolonged interferon signalling can engage counter-regulation. Low target access, an inactive sensor pathway, suppressive cells or poor effector access are different reasons that an immune-cold tumour may not respond. Repeated stimulation calls for serial tests of function and counter-regulation; a first cytokine pulse cannot establish sustained activity or prove that tolerance or exhaustion will occur. As a design hypothesis, adding a TOP1 cargo could join direct injury to an innate agonist, but both actions need separate tests. Oh’s gastric-cancer experiments found dendritic-cell activation and enhanced CD8-mediated killing after T-DXd through the cancer-cell cGAS-STING/interferon pathway. Benci’s experimental resistance programme involved persistent type II interferon and was maintained by both type I and type II signalling. These are mechanistic contexts, not proof that every dual-cargo design produces useful priming. The laboratory studies and small non-breast phase 1 cohort described here do not establish a randomised TNBC benefit or that every design lacks a usable human dose."
+],
+    id: "immune-stimulating-adc", links: [
+  {
+    "label": "Ackerman et al., Immune-stimulating antibody conjugates elicit robust myeloid activation and durable antitumour immunity (Nature Cancer 2020)",
+    "url": "https://doi.org/10.1038/s43018-020-00136-x"
+  },
+  {
+    "label": "XMT-2056 preclinical study (2025)",
+    "url": "https://doi.org/10.1158/1078-0432.CCR-24-2449"
+  },
+  {
+    "label": "XMT-2056 trial: terminated",
+    "url": "https://clinicaltrials.gov/study/NCT05514717"
+  },
+  {
+    "label": "TAK-500 trial: terminated",
+    "url": "https://clinicaltrials.gov/study/NCT05070247"
+  },
+  {
+    "label": "BDC-1001 trial: terminated",
+    "url": "https://clinicaltrials.gov/study/NCT04278144"
+  },
+  {
+    "label": "Chernyak et al.: TLR-agonist conjugate uptake and myeloid-cell experiments (2024)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39235949/"
+  },
+  {
+    "label": "Janku et al.: NJH395 preclinical and phase 1 non-breast cohort (2022)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36129967/"
+  },
+  {
+    "label": "Oh et al.: T-DXd immune effects in gastric cancer models (2024)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39449023/"
+  },
+  {
+    "label": "Benci et al.: prolonged interferon signaling and checkpoint-resistance programs (2016)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27912061/"
+  },
+  {
+    "label": "BDC-1001 breast-cancer phase 2 registry: terminated",
+    "url": "https://clinicaltrials.gov/study/NCT05954143"
+  },
+  {
+    "label": "SBT6050 combination registry: terminated",
+    "url": "https://clinicaltrials.gov/study/NCT05091528"
+  },
+  {
+    "label": "SBT6050 first-in-human registry: unknown status",
+    "url": "https://clinicaltrials.gov/study/NCT04460456"
+  },
+  {
+    "label": "Decout et al., cGAS-STING signalling and therapeutic context (2021 review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33833439/"
+  },
+  {
+    "label": "Heil et al., species-specific TLR7/8 recognition of viral RNA (2004)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14976262/"
+  },
+  {
+    "label": "TAK-500 CCR2-directed STING activation study (2025)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39918395/"
+  },
+  {
+    "label": "TAK-500 anti-CCR2 conjugate PK/PD modelling (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41888610/"
+  },
+  {
+    "label": "TAK-500 STING-conjugate linker study (2025)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41143331/"
+  },
+  {
+    "label": "UniProt TLR7: function and endosomal location",
+    "url": "https://www.uniprot.org/uniprotkb/Q9NYK1/entry"
+  },
+  {
+    "label": "UniProt TLR8: function and endosomal location",
+    "url": "https://www.uniprot.org/uniprotkb/Q9NR97/entry"
+  }
+], kind: "technology", name: "Immune-stimulating antibody conjugate (ISAC)", sections: ["adcs", "immunotherapy"], status: "phase-2", asOf: "2026-11-11", generation: "4th (next-gen)",
     tldr: "An immune-stimulating antibody conjugate carries an intended immune agonist. Target binding, innate activation and useful tumor control remain separate findings.",
     summary: "Immune-stimulating conjugates carry innate immune agonists such as TLR7/8 or STING agonists. They differ from an ordinary cytotoxic ADC that produces secondary inflammatory effects and from a protein that bridges a T cell to a target. The actual construct determines which cells receive the cargo and which sensing pathway acts.\n\nPreclinical TLR conjugates have used antigen recognition and Fc-receptor-dependent phagocytosis. XMT-2056 studies tested HER2-directed STING agonism in cancer and tumor-resident immune-cell contexts. These routes cannot be transferred to every antibody, Fc design or immune compartment. Human pharmacodynamic activation, tolerability and comparative benefit require separate evidence.",
     principle: "Verify target-dependent delivery and the intended innate-sensor response, then test the proposed innate or adaptive effector mechanism and harms in the actual biological setting.",

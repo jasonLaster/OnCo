@@ -72,13 +72,108 @@ export const adcPayloadFrontier: TermInput[] = [
     notes: ["This is a map of publicly described mechanisms, not an exhaustive list of proprietary payload molecules or a ranking of treatments. Follow each concept to the experiment or trial supporting it.", "Chemical redesign also matters within an existing mechanism. The Dolaflexin studies distinguish AF-HPA from its active auristatin F metabolite. The IMGC936 preclinical report describes a peptide-linked DM21-C maytansinoid system. These are distinct cargo designs within the tubulin category, rather than proof that every redesign introduces a new mechanism or avoids clinical resistance."],
   }),
   t({
-    notes:["Transcription makes RNA from a DNA template; replication copies DNA. Amanitin acts on RNA polymerase II, while triptolide-directed designs interfere with other transcription machinery. A transcription-directed cargo is not automatically the same chemical or target as another member of the category.","The Figueroa-Vazquez HDP-101 study included proliferating and resting myeloma cells, with BCMA-negative controls and animal models. This establishes an experimental cell-state scope, not eradication of every dormant clone, intrinsic tumor specificity or human benefit.","The POLR2A dosage hypothesis concerns measured loss of a neighboring essential gene, sometimes with TP53-region deletion. A TP53 point mutation alone does not establish POLR2A loss or a clinical response rule. The colorectal amanitin-conjugate report and the TNBC siRNA-nanoparticle report used different delivery formats.","Healthy cells also rely on transcription. The chemical species released from a conjugate, linker stability, antigen access, cellular uptake and normal-organ exposure remain relevant. OATP1B3-mediated uptake was studied for amatoxins; it does not give a permeability or toxicity value for every attached derivative.","The 2015 colorectal dosage report and the 2019 TNBC nanoparticle paper have published corrections. Separate prostate/17p-loss and HER2-low/17p-loss reports were retracted in 2026 and are excluded from support. A corrected or retracted preclinical report must not become an unqualified clinical claim.","A registry establishes a study design and dated status. Sponsor response reports, model regressions, patient-derived laboratory material and randomized patient outcomes are different evidence types. None should be substituted for an independently reviewed human benefit result."], targets:["polr2a"],
+    notes:[
+  "Transcription makes RNA from a DNA template; replication copies DNA. Amanitin acts on RNA polymerase II, while triptolide-directed designs interfere with other transcription machinery. A transcription-directed cargo is not automatically the same chemical or target as another member of the category.",
+  "The Figueroa-Vazquez HDP-101 study included proliferating and resting myeloma cells, with BCMA-negative controls and animal models. This establishes an experimental cell-state scope, not eradication of every dormant clone, intrinsic tumor specificity or human benefit.",
+  "The POLR2A dosage hypothesis concerns measured loss of a neighboring essential gene, sometimes with TP53-region deletion. A TP53 point mutation alone does not establish POLR2A loss or a clinical response rule. The colorectal amanitin-conjugate report and the TNBC siRNA-nanoparticle report used different delivery formats.",
+  "Healthy cells also rely on transcription. The chemical species released from a conjugate, linker stability, antigen access, cellular uptake and normal-organ exposure remain relevant. OATP1B3-mediated uptake was studied for amatoxins; it does not give a permeability or toxicity value for every attached derivative.",
+  "The 2015 colorectal dosage report and the 2019 TNBC nanoparticle paper have published corrections. Separate prostate/17p-loss and HER2-low/17p-loss reports were retracted in 2026 and are excluded from support. A corrected or retracted preclinical report must not become an unqualified clinical claim.",
+  "A registry establishes a study design and dated status. Sponsor response reports, model regressions, patient-derived laboratory material and randomized patient outcomes are different evidence types. None should be substituted for an independently reviewed human benefit result.",
+  "RNA polymerase II makes RNA from protein-coding genes; POLR2A encodes its largest catalytic subunit. Bushnell’s alpha-amanitin co-crystal study used yeast polymerase and supported a mechanism for blocking translocation. Transcription is different from copying DNA before division, but non-dividing healthy cells still need it. The Figueroa-Vazquez BCMA-directed amanitin work affected proliferating and resting myeloma cells while sparing BCMA-negative controls. In its mouse models, single intravenous doses produced durable complete remissions; this is not proof of eliminating dormant human disease. In the dosage hypothesis, hemizygous loss means one copy remains at the locus, unlike loss of both copies. The proposed vulnerability concerns reduced capacity of an essential gene co-deleted with TP53, rather than dependence on an activating cancer driver. POLR2A lies beside TP53 on chromosome 17p. In Liu’s colorectal models, expression tracked copy number, suppression acted independently of p53 itself, and an EpCAM-directed amanitin conjugate produced complete regressions in mice. Xu instead tested POLR2A siRNA nanoparticles in TNBC models with hemizygous loss. A TP53 mutation does not establish that copy state, and two copies do not by themselves guarantee a normal-tissue safety margin.",
+  "The 2015 colorectal POLR2A-dosage paper has a 2021 correction replacing two caspase-3 staining panels; the authors state those images were not used for quantitative analysis and the original article was not corrected online. The 2019 TNBC siRNA paper has a 2019 correction to supplementary material and a 2020 correction replacing the Fig. 5j siNT@NPs image. These are distinct from the separate reports retracted in 2026. POLR2A copy loss, a TP53 point mutation, siRNA delivery and an amanitin conjugate remain different biological and delivery questions.",
+  "Liu’s 2020 review concerned N-acetylcysteine treatment in 506 amatoxin-poisoned patients across 13 studies. It is not an incidence study of an antibody conjugate. Letschert’s transporter experiments identified OATP1B3 uptake in engineered cells and human hepatocytes. That helps explain an organ-exposure concern for the studied amatoxin species; it does not prove that every derivative has the same transport, that poisoning predicts conjugate toxicity, or that an antibody automatically creates a safety margin. A transporter-uptake experiment does not quantify passive membrane passage or bystander killing by a released derivative. Those require the actual chemical and appropriately controlled neighbouring-cell experiments; neither potency nor low payload loading substitutes for a measured release and exposure profile.",
+  "Heidelberg Pharma’s October 2026 sponsor update reported that HDP-101 dose escalation had ended in April after 53 treated patients in ten cohorts. In pooled cohorts 5 to 9 it reported 13 responses among 31 evaluable people, about 42%; at the selected phase 2 dose, cohort 9 had 2 among 5, 40%. These counts use different denominators and the report does not establish confirmation or comparative benefit. The two refreshed HDP-101 registry records are recruiting; dated status and sponsor-reported responses are different evidence. These are myeloma reports, not human breast-cancer efficacy evidence. A clinical test of the gene-dosage hypothesis would pre-specify the copy-number or expression measurement, compare outcomes by that measurement, and report liver and other dose-limiting harms against delivered exposure. Laboratory selectivity is not a validated patient-selection rule.",
+  "Singh’s 2024 myeloma study is a preprint using engineered TP53/POLR2A models, not a validated 17p patient-selection test. Papacharisi’s TROP2-amanitin experiments concern pancreatic and breast models. Their abstract reports picomolar cellular EC50 values, mouse xenograft activity and a 9.7 to 10.7 day half-life with no premature payload release in serum for the tested constructs. In the tested refractory pancreatic and TNBC xenografts, the authors reported complete tumour eradication and greater activity than Trodelvy. These are preclinical comparisons, not human efficacy or safety estimates. Ren’s exatecan/triptolide platform report is another preclinical design; its abstract does not establish the TROP2 target or an early human result attributed to it elsewhere. New mechanism, delivery antigen, normal-tissue exposure, released chemical and prior resistance must be assessed separately before inferring a useful next treatment."
+], targets:["polr2a"],
     id: "transcription-inhibitor-payloads", name: "Transcription-inhibitor payloads", aka: ["RNA polymerase inhibitor payloads", "gene transcription payloads"],
-    tldr: "These payloads stop a cell from reading the instructions in its genes. Researchers are testing whether antibody delivery can make this different way of killing cancer cells usable safely.",
+    tldr: "Transcription-directed payloads interfere with the machinery that makes RNA. Antibody delivery is being studied to limit exposure, but each design needs evidence of useful activity and tolerability.",
     summary: "Transcription inhibition interrupts RNA production, unlike TOP1 poisons or tubulin inhibitors. Amanitin directly inhibits RNA polymerase II; triptolide interferes with the transcription factor TFIIH. The HDP-101 preclinical study included proliferating and resting myeloma cells. That result does not establish activity against every dormant tumor or clinical resistance mechanism. Targeted delivery, intracellular activity and tolerability must be demonstrated for each construct.",
     related: ["amanitin-payloads", "triptolide-payloads", "cdk-inhibitor-payloads", "spliceosome-inhibitor-payloads"],
-    links: [{"label":"HDP-101 in proliferating and resting myeloma models (2021)","url":"https://doi.org/10.1158/1535-7163.MCT-20-0287"},{"label":"Hayashi et al., CD26-directed triptolide conjugate (2019)","url":"https://doi.org/10.3390/cancers11081138"},{"label":"Bushnell et al.: amanitin/RNA polymerase II structural study (2002)","url":"https://pubmed.ncbi.nlm.nih.gov/11805306/"},{"label":"Liu et al.: POLR2A dosage hypothesis in colorectal models (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25901683/"},{"label":"Xu et al.: POLR2A siRNA nanoparticles in TNBC models (2019)","url":"https://pubmed.ncbi.nlm.nih.gov/30804480/"},{"label":"Author correction to the colorectal POLR2A report (2021)","url":"https://pubmed.ncbi.nlm.nih.gov/34433970/"},{"label":"Publisher correction to the TNBC nanoparticle report (2019)","url":"https://pubmed.ncbi.nlm.nih.gov/30837690/"},{"label":"Author correction to the TNBC nanoparticle report (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/31953520/"},{"label":"Retraction notice for a separate HER2-low/17p-loss report (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/41984934/"},{"label":"Letschert et al.: amatoxin transport in cells and human hepatocytes (2006)","url":"https://pubmed.ncbi.nlm.nih.gov/16495352/"},{"label":"Retraction notice for the separate prostate/17p-loss report (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/42414292/"}],
-  }),
+    links: [
+  {
+    "label": "HDP-101 in proliferating and resting myeloma models (2021)",
+    "url": "https://doi.org/10.1158/1535-7163.MCT-20-0287"
+  },
+  {
+    "label": "Hayashi et al., CD26-directed triptolide conjugate (2019)",
+    "url": "https://doi.org/10.3390/cancers11081138"
+  },
+  {
+    "label": "Bushnell et al.: amanitin/RNA polymerase II structural study (2002)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11805306/"
+  },
+  {
+    "label": "Liu et al.: POLR2A dosage hypothesis in colorectal models (2015)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25901683/"
+  },
+  {
+    "label": "Xu et al.: POLR2A siRNA nanoparticles in TNBC models (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30804480/"
+  },
+  {
+    "label": "Author correction to the colorectal POLR2A report (2021)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34433970/"
+  },
+  {
+    "label": "Publisher correction to the TNBC nanoparticle report (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30837690/"
+  },
+  {
+    "label": "Author correction to the TNBC nanoparticle report (2020)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31953520/"
+  },
+  {
+    "label": "Retraction notice for a separate HER2-low/17p-loss report (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41984934/"
+  },
+  {
+    "label": "Letschert et al.: amatoxin transport in cells and human hepatocytes (2006)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16495352/"
+  },
+  {
+    "label": "Retraction notice for the separate prostate/17p-loss report (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42414292/"
+  },
+  {
+    "label": "Liu et al., N-acetylcysteine in amatoxin poisoning (2020 systematic review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32609548/"
+  },
+  {
+    "label": "Singh et al., engineered myeloma amanitin-conjugate models (2024 preprint)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38260385/"
+  },
+  {
+    "label": "Papacharisi et al., TROP2-amanitin preclinical studies (2025)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39564769/"
+  },
+  {
+    "label": "Ren et al., exatecan/triptolide preclinical platform (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41121984/"
+  },
+  {
+    "label": "Author correction: colorectal POLR2A report (2021)",
+    "url": "https://www.nature.com/articles/s41586-021-03664-3"
+  },
+  {
+    "label": "Author correction: TNBC nanoparticle report (2020)",
+    "url": "https://www.nature.com/articles/s41565-020-0635-3"
+  },
+  {
+    "label": "Heidelberg Pharma sponsor update, 15 October 2026",
+    "url": "https://heidelberg-pharma.com/en/press-investors/announcements/press-releases-and-ad-hoc-announcements/pr-heidelberg-pharma-reports-on-the-first-nine-months-of-financial-year-2026"
+  },
+  {
+    "label": "HDP-101 trial: dated registry status",
+    "url": "https://clinicaltrials.gov/study/NCT04879043"
+  },
+  {
+    "label": "HDP-101 China trial: dated registry status",
+    "url": "https://clinicaltrials.gov/study/NCT07529782"
+  }
+],
+
+"asOf": "2026-11-11"
+}),
   t({
     targets:["polr2a"], notes:["The active target is RNA polymerase II, whose largest subunit is encoded by POLR2A. BCMA or TROP2 can instead be the antibody delivery address. A source identifying one does not identify the other.","Papacharisi tested TROP2-directed amanitin conjugates in cells and pancreatic/TNBC xenografts. Potency, reported serum stability and tumor eradication belong to those constructs and models. Their comparison with Trodelvy is not a randomized human comparison.","The Letschert uptake experiments identified OATP1B3-mediated amatoxin transport in engineered cells and primary human hepatocytes. Passive permeability, bystander activity and normal-organ toxicity still need evaluation for the actual released species; they cannot be assigned from the toxin-family name.","HDP-101 is being evaluated in separately registered dose-finding/expansion studies. The registry does not establish response benefit, a safe dose or prospective validation of POLR2A or 17p selection. The Chinese study has a source age-field inconsistency, described on the drug record; a generated eligibility summary is not sufficient."],
     id: "amanitin-payloads", name: "Amanitin payloads", aka: ["alpha-amanitin payload", "amatoxin payloads", "antibody-targeted amanitin conjugates", "ATAC payloads", "tismanitin"],

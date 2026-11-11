@@ -1476,7 +1476,7 @@
       ],
       "tldr": "Experimental settings describe where and how a test occurs: laboratory culture, removed living material, a living organism or a computational model.",
       "summary": "In vitro and ex vivo describe work outside the original organism, with terminology varying by preparation and expansion. In vivo refers to work within a living organism, including animals and people; in silico refers to computation. Each setting includes different components and omits others. The label does not establish a universal ranking, human safety or treatment benefit.",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "wikipedia": "https://en.wikipedia.org/wiki/In_vitro",
       "links": [
         {
@@ -1490,6 +1490,14 @@
         {
           "label": "Source for experimental setting and intended-use interpretation",
           "url": "https://www.fda.gov/files/newsroom/published/roadmap_to_reducing_animal_testing_in_preclinical_safety_studies.pdf"
+        },
+        {
+          "label": "What exactly is 'N' in cell culture and animal experiments?",
+          "url": "https://doi.org/10.1371/journal.pbio.2005282"
+        },
+        {
+          "label": "FDA: context-specific nonclinical studies and new approach methodologies",
+          "url": "https://www.fda.gov/drugs/science-and-research-drugs/cder-streamlined-nonclinical-studies-and-acceptable-new-approach-methodologies-nams"
         }
       ],
       "tags": [],
@@ -1525,7 +1533,8 @@
         "Primary timing examples. Ladan's breast-slice assay used three-day exposures, a stated planned result window of seven to fourteen days, not a measured turnaround distribution and 23/30 usable tests from tumour-containing biopsies. Izumchenko reported 578/1,163 established PDXs and mean 16 weeks from engraftment to exposure, not biopsy to final decision. Ahlmann-Eltze compared gene-perturbation transcriptome predictions with simple baselines; the deep-learning methods did not outperform the simple linear baselines in the tested expression-prediction tasks. This was not a measured patient drug response. None of these examples shows benefit from choosing a treatment using the model. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC5834154/ ; https://pubmed.ncbi.nlm.nih.gov/40759747/",
         "Terminology scope. NCI's ex vivo dictionary entry describes removal, treatment and return of cells or tissue to the body. That return step distinguishes cell-engineering procedures from laboratory drug testing where the tested sample is not returned. Dosing an animal and later treating removed graft cells in a dish are different experiments. Source: https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ex-vivo",
         "Regulatory scope. FDA's roadmap to reduce animal testing concerns preclinical safety development, initially focusing on monoclonal antibodies and considering human-based laboratory and computational methods. It is not approval of every organ chip or a recommendation for personal treatment selection. Source: https://www.fda.gov/files/newsroom/published/roadmap_to_reducing_animal_testing_in_preclinical_safety_studies.pdf Decision time limits which preparation is usable: establishing a new conventional PDX generally will not fit a decision due in three weeks, while a characterised short-term assay might fit but can still fail. A treatment needing liver activation also needs the relevant metabolic setting represented; a fresh slice alone omits it. Computation can rank hypotheses without growing a model, but a universal fastest or cheapest claim is not established by the setting label.",
-        "Fictional reading exercise. Compare a graft dosed in a mouse, a fresh human slice exposed outside the body and a computed sensitivity prediction. Identify actual measurement versus prediction, host, retained cells, omitted physiology and clock before drawing an inference. These settings can start from the same tumour; days, weeks or months are illustrative scales rather than guaranteed timelines. No setting is a later validation rung of another."
+        "Fictional reading exercise. Compare a graft dosed in a mouse, a fresh human slice exposed outside the body and a computed sensitivity prediction. Identify actual measurement versus prediction, host, retained cells, omitted physiology and clock before drawing an inference. These settings can start from the same tumour; days, weeks or months are illustrative scales rather than guaranteed timelines. No setting is a later validation rung of another.",
+        "An experimental setting and the origin of the material are separate descriptions. Human-derived cells can be studied in vitro, briefly ex vivo or as a graft in vivo. Living-organism work includes animals and people; it does not automatically mean a human clinical trial. Preclinical intervention experiments can continue alongside human studies, so the date relative to a first human dose alone does not validate their treatment claim."
       ],
       "category": "Biology basics"
     },

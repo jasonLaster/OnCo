@@ -400,7 +400,7 @@ export const tldr_es: Record<string, string> = {
 
 
 
-  ppv: "Si una prueba dice 'cáncer', la probabilidad de que tenga razón.",
+
   "stage-shift": "Encontrar más cánceres pronto y menos tarde. El objetivo medible del cribado.",
   suv: "Un número que indica cuánto brilla un punto en un PET.",
   ihc: "Teñir un corte de tejido con anticuerpos para que una proteína aparezca en color al microscopio.",
@@ -433,7 +433,7 @@ export const tldr_es: Record<string, string> = {
   "companion-diagnostic-term": "Una prueba que la FDA exige antes de poder prescribir un fármaco concreto.",
   "tumour-agnostic": "Un fármaco aprobado para cualquier cáncer con una característica molecular específica, sin importar dónde empezó.",
   "basket-umbrella-platform": "Diseños de ensayo que prueban un fármaco en muchos cánceres (cesta), muchos fármacos en un cáncer (paraguas) o añaden brazos con el tiempo (plataforma).",
-  "real-world-evidence": "Datos de la atención habitual y no de ensayos clínicos, usados para comprobar si los resultados se mantienen fuera de la población del ensayo.",
+
   theranostics: "Usar la misma molécula de guía para una exploración diagnóstica y una terapia, de modo que se trata exactamente lo que se ve.",
   "alpha-vs-beta": "Las partículas beta (lutecio-177) recorren milímetros y sirven para enfermedad voluminosa; las alfa (actinio-225) recorren pocas células y matan con mucha más energía.",
   dosimetry: "Medir cuánta dosis de radiación recibió realmente cada órgano y tumor de un fármaco radiactivo.",
@@ -1440,7 +1440,7 @@ export const tldr_es: Record<string, string> = {
   "radioiodine-therapy": "Aprovechar el apetito natural de la tiroides por el yodo para obtener imágenes y tratar el cáncer de tiroides con una forma radiactiva de este. Es la teragnosis más antigua, y hoy se usa de forma más selectiva que antes.",
   "radiopharmacy-network": "Las fábricas y rutas de mensajería que producen y entregan a los hospitales, en cuestión de horas, trazadores radiactivos de vida corta.",
   ramucirumab: "Un anticuerpo que bloquea el receptor de VEGF, aprobado en cáncer de hígado solo para pacientes con un nivel alto de AFP en sangre, el primer fármaco para HCC seleccionado por biomarcador.",
-  "randomised-trial": "Un ensayo en el que un sorteo al azar (hecho por computadora) decide qué tratamiento recibe cada paciente, de modo que los grupos son iguales en todo salvo en el tratamiento. Es la única forma fiable de demostrar que un tratamiento produce un beneficio.",
+
   receptor: "Una proteína, generalmente en la superficie celular, que capta una molécula señal concreta del exterior y transmite el mensaje al interior, como un timbre conectado a los controles de la célula.",
   recursion: "Recursion es una biotecnológica centrada en la IA (fusionada con Exscientia en 2024) con una cartera clínica en oncología que incluye un degradador de RBM39 y un inhibidor de MEK para la poliposis adenomatosa familiar.",
   "red-processed-meat-reduction": "La carne procesada (beicon, jamón, embutidos) causa cáncer de intestino con certeza; la carne roja probablemente también. El riesgo por persona es modesto, pero como la come tanta gente, el impacto en la población es grande.",
@@ -2293,7 +2293,7 @@ export const tldr_es: Record<string, string> = {
   "portec-3": "Añadir quimioterapia a la radioterapia tras la cirugía ayudó a las mujeres con cáncer de endometrio de alto riesgo, especialmente a aquellas cuyos tumores tienen un gen p53 defectuoso.",
   "prabhash-kumar": "Dirige la oncología médica en Tata Memorial y su programa de ensayos pragmáticos que hacen asequibles los tratamientos.",
   "precision-mri": "PRECISION demostró que hacer primero una resonancia magnética detecta más cánceres peligrosos con menos biopsias.",
-  preclinical: "Todo lo que se hace con un posible fármaco antes de administrarlo a un ser humano: experimentos de laboratorio, pruebas en animales y el trabajo de seguridad y fabricación que exigen los reguladores. La mayoría de los candidatos nunca superan esta fase.",
+
   prednisone: "Prednisone es el comprimido de esteroides de uso diario en la atención oncológica. Es la P de CHOP y MOPP en el linfoma, forma parte del tratamiento de la leucemia infantil y se toma junto con abiraterone en el cáncer de próstata.",
   "prehabilitation-term": "Aprovechar las semanas entre el diagnóstico y la cirugía o la quimioterapia para ponerse en mejor forma física, mejorar la nutrición y prepararse psicológicamente, de modo que el tratamiento vaya mejor y la recuperación sea más rápida.",
   prima: "Extendió el mantenimiento con inhibidores de PARP a mujeres sin mutaciones de BRCA, pero el beneficio en supervivencia no se materializó con un seguimiento más largo.",
@@ -2452,7 +2452,7 @@ export const tldr_es: Record<string, string> = {
   trametinib: "El trametinib (Mekinist) bloquea MEK, la proteína situada un paso por debajo de BRAF en la cadena de señales de crecimiento. Combinado con dabrafenib trata el melanoma, el cáncer de pulmón, el de tiroides y otros cánceres con mutación de BRAF, incluidos tumores cerebrales en niños.",
   "trastuzumab-biosimilars": "Copias casi idénticas de Herceptin, aprobadas desde 2017, que redujeron el precio del tratamiento anti-HER2 y ampliaron el acceso en todo el mundo.",
   "trastuzumab-rezetecan": "El ADC anti-HER2 de Hengrui, aprobado en China para el cáncer de pulmón y con resultados de la magnitud de Enhertu en el cáncer de mama, parte de una oleada de ADC chinos que se dirigen a ensayos globales.",
-  "trial-phases": "Las tres etapas por las que pasa un fármaco nuevo: la fase 1 busca una dosis segura en unas pocas decenas de pacientes, la fase 2 busca signos de actividad en alrededor de un centenar, y la fase 3 lo compara con el tratamiento estándar en cientos o miles.",
+
   "trifluridine-tipiracil": "Una quimioterapia oral en píldora para el cáncer de intestino que ha dejado de responder a todo lo demás; junto con bevacizumab prolonga la vida unos tres meses.",
   triptorelin: "La triptorelina (Trelstar) es una inyección mensual, trimestral o semestral que apaga la producción de testosterona en los hombres con cáncer de próstata avanzado.",
   "trop2-pet-to-adc": "Propuesta: una PET de TROP2 para elegir entre tres ADC anti-TROP2 y predecir quién responderá, ya que la tinción del tejido no ha funcionado.",
@@ -3720,7 +3720,7 @@ export const tldr_es: Record<string, string> = {
   frontmind: "El primer régimen de primera línea que supera a R-CHOP en el linfoma B de células grandes de alto riesgo desde rituximab, añadiendo un anticuerpo anti-CD19 y lenalidomida.",
   "fumanba-1": "El ensayo de un solo brazo que consiguió la aprobación de eque-cel en China, con respuesta en casi todos los pacientes y remisiones profundas en la mayoría.",
   "funda-meric-bernstam": "Funda Meric-Bernstam dirige el mayor programa de fase 1 del mundo y lideró el estudio del ADC anti-HER2 independiente del tipo de tumor.",
-  futility: "Una comprobación planificada a mitad de un ensayo para ver si el nuevo tratamiento tiene alguna posibilidad realista de demostrar que es mejor; si no la tiene, el ensayo se detiene para ahorrar pacientes y dinero. La regla opuesta detiene un ensayo antes de tiempo cuando el beneficio es abrumador.",
+
   "g12d-plus-pan-ras": "Un fármaco que ataca la mutación exacta más otro que ataca todas las proteínas RAS, para que el tumor no pueda escapar a través de una RAS prima no mutada.",
   garsorasib: "Garsorasib es la pastilla de InventisBio que bloquea KRAS G12C, aprobada en China en 2024 para el cáncer de pulmón previamente tratado con esa mutación.",
   "ge-healthcare": "GE HealthCare es un importante fabricante de escáneres PET/TC, RM y TC, y de trazadores PET a través de Pharmaceutical Diagnostics.",
@@ -4264,7 +4264,7 @@ export const tldr_es: Record<string, string> = {
   potomac: "Añadir un año de durvalumab a las instilaciones vesicales estándar de BCG redujo el riesgo de recurrencia o progresión en alrededor de un tercio, la primera inmunoterapia sistémica aprobada en el cáncer de vejiga temprano.",
   precirix: "Precirix es una empresa belga que desarrolla un medicamento radioactivo basado en un fragmento de anticuerpo muy pequeño que busca los cánceres HER2 positivos, incluidos los cánceres de mama y de estómago que se han extendido al cerebro. Está en los primeros ensayos en humanos.",
   preopanc: "Ensayos neerlandeses que evalúan si tratar antes de la cirugía supera a operar primero. La quimiorradioterapia previa ayudó a largo plazo; el FOLFIRINOX previo no superó claramente a la cirugía inicial seguida de quimioterapia adyuvante.",
-  "prespecified-vs-post-hoc": "Si un análisis fue planificado y puesto por escrito antes de ver los datos (preespecificado) o se inventó después (post hoc). Los hallazgos post hoc, sobre todo en subgrupos, tienden a ser fruto del azar y cuentan como hipótesis para un nuevo ensayo, no como pruebas.",
+
   "primary-tumour": "El tumor original donde comenzó un cáncer. El cáncer lleva el nombre de este sitio para siempre: un cáncer de mama que se extiende al hígado sigue siendo cáncer de mama, no cáncer de hígado.",
   "primo-lara": "Primo Lara es un oncólogo genitourinario y de pulmón que copreside SWOG y dirige el centro oncológico de UC Davis.",
   "priscilla-chan": "Ella y Mark Zuckerberg fundaron el Chan Zuckerberg Biohub con la misión declarada de curar o prevenir todas las enfermedades; sus programas incluyen diseñar el sistema inmunitario para detectar de forma temprana el cáncer y otras enfermedades.",
@@ -5378,7 +5378,7 @@ export const tldr_es: Record<string, string> = {
   "steven-treon": "Descubrió la mutación MYD88 que define la macroglobulinemia de Waldenström y dirigió el ensayo que convirtió al ibrutinib en su primer fármaco aprobado.",
   "strand-therapeutics": "Strand fabrica medicamentos programables de ARN mensajero que se activan solo dentro de los tumores. Su primer fármaco se inyecta en un tumor y hace que las células de allí produzcan una señal que refuerza la inmunidad.",
   "su-weiguo": "Weiguo Su dirigió en Shanghái la química que produjo fruquintinib, savolitinib y surufatinib, tres píldoras contra el cáncer descubiertas en China y aprobadas en su país y, en el caso del fruquintinib, en EE. UU.",
-  "subgroup-analysis": "Dividir a los pacientes de un ensayo en grupos (por edad, sexo, biomarcador, región) para ver si el tratamiento funcionó igual en cada uno. Se muestra como un gráfico de bosque. Las diferencias reales son raras y la mayoría de los resultados llamativos por subgrupo son ruido, por lo que requieren confirmación.",
+
   "sulfo-spdb": "Sulfo-SPDB es un enlazador disulfuro impedido que es estable en la sangre pero se corta por el entorno reductor del interior de las células, y luego se convierte en una forma capaz de atravesar membranas.",
   "sun-piaoyang": "Piaoyang Sun convirtió una pequeña fábrica de genéricos de Lianyungang en Hengrui, la mayor compañía china de fármacos originales y la fuente de camrelizumab, apatinib y una docena de otros medicamentos oncológicos aprobados.",
   "sundar-jagannath": "Veterano investigador de ensayos en mieloma que ayudó a llevar a los pacientes los inhibidores del proteasoma y los biespecíficos.",

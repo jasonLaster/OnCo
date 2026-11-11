@@ -1586,20 +1586,108 @@ export const termsBasics: TermInput[] = [
   t({
     id: "trial-phases", name: "Phase 1, 2 and 3 trials", category: CLINIC,
     aka: ["phase 1", "phase 2", "phase 3", "phase I", "phase II", "phase III", "phase 1/2", "phase I/II", "phase 2/3", "phase II/III", "phase 4", "phase IV", "first-in-human", "first in human", "dose-escalation", "dose escalation", "dose-finding", "pivotal trial", "pivotal trials", "pivotal", "registrational", "confirmatory trial", "confirmatory trials", "early-phase", "early phase", "late-phase", "late phase", "late-stage trial", "late-stage trials"],
-    tldr: "The three stages a new drug passes through: phase 1 finds a safe dose in a few dozen patients, phase 2 looks for signs of activity in a hundred or so, and phase 3 compares it with the standard treatment in hundreds or thousands.",
-    summary: "Phase 1 escalates the dose in small groups until side effects limit it, defining the maximum tolerated dose and the dose for later study; in oncology, phase 1 patients have usually exhausted standard options and modern phase 1 trials often expand into hundreds of patients with early efficacy readouts. Phase 2 tests the chosen dose for response in a specific cancer, sometimes randomised and sometimes single-arm, and phase 3 is the large randomised, often blinded, comparison against the standard of care that regulators normally require for full approval. Phase 4 studies follow a marketed drug. Only around 5% of oncology drugs entering phase 1 reach approval, and around a third of phase 3 trials fail, which is a major driver of drug cost.",
+    tldr: "Phase 1 studies dosage and safety; phase 3 compares treatments, often in hundreds or thousands of participants. The protocol determines the design and size, and a phase 3 label is not approval or a promise of benefit.",
+    summary: "Clinical-trial phases describe development purposes rather than a fixed sample size, assignment method or promise of benefit. Phase 1 studies administration, exposure, safety and dosage, sometimes with early activity measures. Phase 2 asks whether activity and safety support further study in a specified population. Phase 3 compares with a defined alternative and can provide evidence for an approval decision; a phase 3 label is not itself approval. FDA's patient overview illustrates phase 3 with hundreds to thousands of participants, while the actual size follows the protocol's question and information requirements. Phase 4 studies an approved treatment in broader use. Read the protocol because phases can overlap or be combined.",
     wikipedia: W("Phases_of_clinical_research"),
     related: ["clinical-trial", "randomised-trial", "dose", "endpoint", "accelerated-approval", "standard-of-care", "surrogate-endpoint", "trial-lifecycle", "pivotal-trial", "confirmatory-trial", "first-in-human", "dose-escalation-design", "seamless-adaptive", "single-arm", "non-inferiority", "basket-umbrella-platform", "trial-protocol", "trial-registration", "ethics-review", "informed-consent", "data-monitoring-committee", "clinical-equipoise", "estimand", "kaplan-meier-curve", "absolute-benefit", "surrogate-validation", "quality-adjusted-survival", "trial-failure-modes", "basket-trial", "umbrella-trial", "response-adaptive-randomisation", "bayesian-trial-design", "sample-size-re-estimation", "smart-design", "biomarker-stratified-design", "pragmatic-trial", "registry-based-trial", "decentralised-trial", "n-of-1-trial", "cluster-randomised-trial", "stepped-wedge-design", "non-inferiority-margin", "stratified-randomisation", "group-sequential-design"], trials: ["navigate", "rejoice-ovarian01", "keynote-522", "adaura"],
-  }),
+
+"notes": [
+  "A phase 1 activity signal neither establishes benefit nor excludes serious toxicity. A phase 2 study may be single-arm or randomized, and phase 3 may ask superiority or a prespecified non-inferiority question. Sample size follows the question and power or information assumptions; phase number alone does not determine it. A higher phase does not guarantee that a new treatment wins or that one participant benefits. Studying an approved product in phase 4 does not approve every investigated use. A single-arm study has one intervention group; identify its actual external comparison, if any, and endpoint.",
+  "I-SPY 2 illustrates an adaptively randomized phase 2 platform. Its 2016 neratinib report describes assignment within biomarker subtypes based on Bayesian probabilities of treatment superiority over control; its veliparib-carboplatin report also describes adaptive assignment within subtype. These are properties of that platform, not every phase 2 trial. Recruitment status is another distinct question: overall recruiting status does not establish an available local cohort slot or that a particular person meets the protocol."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phases_of_clinical_research"
+  },
+  {
+    "label": "FDA: clinical research phases",
+    "url": "https://www.fda.gov/patients/drug-development-process/step-3-clinical-research"
+  },
+  {
+    "label": "NCI: how clinical trials work",
+    "url": "https://www.cancer.gov/research/participate/clinical-trials/how-trials-work"
+  },
+  {
+    "label": "ICH E9: statistical principles for clinical trials, 1998",
+    "url": "https://www.fda.gov/media/71336/download"
+  },
+  {
+    "label": "Adaptive Randomization of Neratinib in Early Breast Cancer",
+    "url": "https://doi.org/10.1056/NEJMoa1513750"
+  },
+  {
+    "label": "Adaptive Randomization of Veliparib–Carboplatin Treatment in Breast Cancer",
+    "url": "https://doi.org/10.1056/NEJMoa1513749"
+  },
+  {
+    "label": "I-SPY 2: an adaptive breast cancer trial design in the setting of neoadjuvant chemotherapy.",
+    "url": "https://doi.org/10.1038/clpt.2009.68"
+  },
+  {
+    "label": "ClinicalTrials.gov: overall and site recruitment status fields",
+    "url": "https://clinicaltrials.gov/api/v2/studies/metadata"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "randomised-trial", name: "Randomised trial", category: CLINIC,
     aka: ["randomised", "randomized", "randomisation", "randomization", "randomly assigned", "randomised controlled trial", "randomized controlled trial", "RCT", "RCTs", "randomised trials", "randomized trials", "randomised phase 3", "randomized phase 3", "controlled trial", "head-to-head", "controlled trials", "randomized trial"],
-    tldr: "A trial in which a coin toss (done by computer) decides which treatment each patient gets, so the groups are alike in every way except the treatment. It is the only reliable way to prove a treatment causes a benefit.",
-    summary: "Without randomisation, patients who receive a new drug tend to differ from those who do not (fitter, younger, treated at better centres), and those differences, not the drug, may explain a better outcome; randomising removes this bias, and analysing every patient in the group they were assigned to (intention-to-treat) preserves it. The control group receives the current standard of care, sometimes with a placebo added so that the two arms look identical, and the trial is powered so that a real difference of a given size is unlikely to be missed. Large randomised trials are slow and expensive, which is why surrogate endpoints, single-arm accelerated approvals and real-world evidence are all attempts to shortcut them, each with known pitfalls.",
+    tldr: "A study that assigns eligible participants to interventions by chance. This reduces treatment-selection bias but does not guarantee identical groups, flawless follow-up or benefit.",
+    summary: "A randomized trial assigns eligible consenting participants to interventions by chance. Concealing the next assignment protects enrolment against foreknowledge; blinding concerns awareness after assignment. These are different design features. Randomization reduces treatment-selection confounding but leaves possible chance imbalance, missing outcomes and limits on applicability. The comparator, endpoint, analysis and conduct determine what the comparison establishes.",
     wikipedia: W("Randomized_controlled_trial"),
-    links: [{ label: "Wikipedia", url: W("Randomized_controlled_trial") }, { label: "CONSORT statement: reporting randomised trials", url: "https://www.consort-statement.org/" }],
-    related: ["clinical-trial", "placebo", "blinding", "trial-phases", "hazard-ratio", "p-value", "confidence-interval", "standard-of-care", "real-world-evidence", "stratified-randomisation", "clinical-equipoise", "cluster-randomised-trial", "pragmatic-trial", "intention-to-treat", "kaplan-meier-curve", "non-inferiority", "trial-failure-modes", "estimand"], trials: ["checkmate-067", "adaura", "interlace", "challenge", "protect"],
-  }),
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Randomized_controlled_trial"
+  },
+  {
+    "label": "CONSORT statement: reporting randomised trials",
+    "url": "https://www.consort-statement.org/"
+  },
+  {
+    "label": "CONSORT 2025 statement: Updated guideline for reporting randomised trials.",
+    "url": "https://doi.org/10.1371/journal.pmed.1004587"
+  },
+  {
+    "label": "ICH E9: statistical principles for clinical trials, 1998",
+    "url": "https://www.fda.gov/media/71336/download"
+  },
+  {
+    "label": "ICH E10: choice of control group",
+    "url": "https://database.ich.org/sites/default/files/E10_Guideline.pdf"
+  }
+],
+    related: [
+  "clinical-trial",
+  "placebo",
+  "blinding",
+  "trial-phases",
+  "hazard-ratio",
+  "p-value",
+  "confidence-interval",
+  "standard-of-care",
+  "real-world-evidence",
+  "stratified-randomisation",
+  "clinical-equipoise",
+  "cluster-randomised-trial",
+  "pragmatic-trial",
+  "intention-to-treat",
+  "kaplan-meier-curve",
+  "non-inferiority",
+  "trial-failure-modes",
+  "estimand",
+  "publication-and-peer-review-status",
+  "meta-analysis"
+], trials: ["checkmate-067", "adaura", "interlace", "challenge", "protect"],
+
+"notes": [
+  "Concealed chance assignment is different from predictable alternation between A and B. Allocation concealment hides the next assignment during enrolment; blinding concerns who knows the assigned treatment afterwards and may not be feasible for every intervention. Report sequence generation, allocation, who was blinded, assigned-group analyses, exclusions, dropout, missing assessments, treatment changes and unequal follow-up. Chance can balance measured and unmeasured factors on average without guaranteeing identical groups in one trial. Random assignment is not random sampling from a population: consenting eligible volunteers remain selected.",
+  "Controls can be standard care, standard care plus placebo or another protocol-defined option, not automatically no treatment. A fictional single-group Drug A study showing shrinkage supports an activity question for further study; it does not isolate added survival benefit from selection, natural history and other care. A randomized A-plus-usual-care versus usual-care comparison can test the added effect under sound conduct and analysis, while a volunteer cannot choose their randomized assignment or be promised benefit. A chance-assigned two-group phase 2 trial is randomized even though it is not phase 3."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "placebo", name: "Placebo", category: CLINIC,
     aka: ["placebos", "placebo-controlled", "placebo controlled", "placebo arm", "placebo group", "dummy pill", "sugar pill", "placebo effect", "sham"],
@@ -1871,7 +1959,7 @@ export const termsBasics: TermInput[] = [
     wikipedia: W("In_vitro"),
     related: ["preclinical", "cell-line", "organoid", "model-organism", "clinical-trial"], technologies: ["organoids", "pdx-models", "functional-drug-testing"],
 
-"asOf": "2026-11-10",
+"asOf": "2026-11-11",
 "links": [
   {
     "label": "Wikipedia",
@@ -1884,6 +1972,14 @@ export const termsBasics: TermInput[] = [
   {
     "label": "Source for experimental setting and intended-use interpretation",
     "url": "https://www.fda.gov/files/newsroom/published/roadmap_to_reducing_animal_testing_in_preclinical_safety_studies.pdf"
+  },
+  {
+    "label": "What exactly is 'N' in cell culture and animal experiments?",
+    "url": "https://doi.org/10.1371/journal.pbio.2005282"
+  },
+  {
+    "label": "FDA: context-specific nonclinical studies and new approach methodologies",
+    "url": "https://www.fda.gov/drugs/science-and-research-drugs/cder-streamlined-nonclinical-studies-and-acceptable-new-approach-methodologies-nams"
   }
 ],
 "notes": [
@@ -1892,17 +1988,65 @@ export const termsBasics: TermInput[] = [
   "Primary timing examples. Ladan's breast-slice assay used three-day exposures, a stated planned result window of seven to fourteen days, not a measured turnaround distribution and 23/30 usable tests from tumour-containing biopsies. Izumchenko reported 578/1,163 established PDXs and mean 16 weeks from engraftment to exposure, not biopsy to final decision. Ahlmann-Eltze compared gene-perturbation transcriptome predictions with simple baselines; the deep-learning methods did not outperform the simple linear baselines in the tested expression-prediction tasks. This was not a measured patient drug response. None of these examples shows benefit from choosing a treatment using the model. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC5834154/ ; https://pubmed.ncbi.nlm.nih.gov/40759747/",
   "Terminology scope. NCI's ex vivo dictionary entry describes removal, treatment and return of cells or tissue to the body. That return step distinguishes cell-engineering procedures from laboratory drug testing where the tested sample is not returned. Dosing an animal and later treating removed graft cells in a dish are different experiments. Source: https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ex-vivo",
   "Regulatory scope. FDA's roadmap to reduce animal testing concerns preclinical safety development, initially focusing on monoclonal antibodies and considering human-based laboratory and computational methods. It is not approval of every organ chip or a recommendation for personal treatment selection. Source: https://www.fda.gov/files/newsroom/published/roadmap_to_reducing_animal_testing_in_preclinical_safety_studies.pdf Decision time limits which preparation is usable: establishing a new conventional PDX generally will not fit a decision due in three weeks, while a characterised short-term assay might fit but can still fail. A treatment needing liver activation also needs the relevant metabolic setting represented; a fresh slice alone omits it. Computation can rank hypotheses without growing a model, but a universal fastest or cheapest claim is not established by the setting label.",
-  "Fictional reading exercise. Compare a graft dosed in a mouse, a fresh human slice exposed outside the body and a computed sensitivity prediction. Identify actual measurement versus prediction, host, retained cells, omitted physiology and clock before drawing an inference. These settings can start from the same tumour; days, weeks or months are illustrative scales rather than guaranteed timelines. No setting is a later validation rung of another."
+  "Fictional reading exercise. Compare a graft dosed in a mouse, a fresh human slice exposed outside the body and a computed sensitivity prediction. Identify actual measurement versus prediction, host, retained cells, omitted physiology and clock before drawing an inference. These settings can start from the same tumour; days, weeks or months are illustrative scales rather than guaranteed timelines. No setting is a later validation rung of another.",
+  "An experimental setting and the origin of the material are separate descriptions. Human-derived cells can be studied in vitro, briefly ex vivo or as a graft in vivo. Living-organism work includes animals and people; it does not automatically mean a human clinical trial. Preclinical intervention experiments can continue alongside human studies, so the date relative to a first human dose alone does not validate their treatment claim."
 ]
 }),
   t({
     id: "preclinical", name: "Preclinical", category: BIO,
     aka: ["pre-clinical", "preclinical studies", "preclinical study", "preclinical data", "preclinical evidence", "preclinical models", "preclinical model", "preclinical development", "preclinical stage", "discovery stage", "early research", "bench to bedside", "translational", "translational research", "IND-enabling", "proof of concept", "proof-of-concept", "mechanistic studies"],
-    tldr: "Everything done to a potential drug before it is given to a human: lab experiments, animal testing, and the safety and manufacturing work regulators require. Most candidates never make it out.",
-    summary: "Preclinical development establishes that a drug hits its target, kills or slows tumours in cells and animals, can be made consistently, and is safe enough at the planned dose to test in people; toxicology in two species is normally required before the first human trial. 'Preclinical evidence' on this site means a claim supported only by such work, and the reader should discount it heavily: roughly 90% of drugs that enter human testing fail, and preclinical findings often do not reproduce even in other labs. Better models (organoids, humanised mice, patient-derived xenografts) and more rigorous reporting are attempts to shrink the gap between bench and bedside.",
+    tldr: "Evidence from laboratory, animal and computational work used to study mechanisms, activity and safety. It can guide human studies without establishing patient benefit.",
+    summary: "Preclinical and nonclinical work studies mechanisms, activity, exposure and safety using specified models. Such experiments can occur before or alongside human studies. Evidence that a model responds does not establish a useful treatment for patients. FDA nonclinical requirements depend on the product and context; its published approaches include justified reductions or replacements of animal studies, so a universal two-species requirement is inaccurate.",
     wikipedia: W("Pre-clinical_development"),
-    related: ["in-vitro-in-vivo", "cell-line", "model-organism", "organoid", "trial-phases", "clinical-trial"], technologies: ["pdx-models", "organoids", "crispr-screens"],
-  }),
+    related: [
+  "in-vitro-in-vivo",
+  "cell-line",
+  "model-organism",
+  "organoid",
+  "trial-phases",
+  "clinical-trial",
+  "controlled-perturbation"
+], technologies: ["pdx-models", "organoids", "crispr-screens"],
+
+"notes": [
+  "In-vitro, in-vivo and human-derived describe experimental setting or origin, not validation of treatment in patients. A cell line can test a direct cell effect, while an immune-intact mouse can test selected tissue and immune interactions; neither reproduces every human cancer, prior treatment or physiology. An immune mechanism needs its relevant components represented and functional. Human tissue grown in a dish or grafted into a mouse remains model evidence about that intervention.",
+  "Name the intervention, control, outcome and units before counting replication. The biological unit is the entity about which conclusions are sought, such as a donor. The experimental unit receives an independently assigned intervention; the observational unit is measured. A cage assigned together or a preparation treated before being split can make the animals or wells subsamples. More measured cells do not become more assigned mice. Biological and technical replicate labels vary, so inspect sampling, preparation, allocation and measurement. Repeating runs tests consistency without adding donor identities. Analysing correlated subsamples as independent replicates is pseudoreplication.",
+  "Fictional design: each of two donors supplies six wells, three control and three treated. The twelve distinct wells receive independent randomized assignments within donor, separate treatment and no mutual influence, while the analysis retains donor nesting. There are twelve assigned wells and two donor sources, not twelve donors. No cell counts or recommended sample size are supplied. If instead a donor preparation is treated before being split, its wells are subsamples of that assignment. Adding cells does not add wells or donors. This distinction follows from the stipulated allocation, not from a universal rule that wells always are independent.",
+  "A controlled fictional mouse study in which local treatment changes a distant tumour can support a distant effect in that model. If a controlled immune-cell depletion reduces that effect, it supports a contribution under those tested conditions. Further steps include safely achievable human exposure, relevant target biology, safety and comparative patient outcomes. Mouse tumour volume is not patient survival, and a laboratory effect size or universal model threshold does not establish clinical benefit. A reproducible mechanism can coexist with an impractical or harmful clinical exposure. These are limits on the inference, not a guarantee that any particular model result will translate.",
+  "Retain the model or specimen, treatment and comparator, assigned units and subsamples, exclusions, allocation, blinded assessment, timing, dose, readout units and uncertainty. A cell count, cubic-millimetre tumour volume and named assay signal are different measurements. ARRIVE supports appraisal of animal-study reporting rather than proving a conclusion. Exploratory academic experiments and regulatory safety studies have different purposes and requirements. FDA's context-specific nonclinical approaches, including new approach methodologies, do not validate every model for personal treatment selection."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pre-clinical_development"
+  },
+  {
+    "label": "Studying cancer immunotherapy using patient-derived xenografts (PDXs) in humanized mice",
+    "url": "https://doi.org/10.1038/s12276-018-0115-0"
+  },
+  {
+    "label": "What exactly is 'N' in cell culture and animal experiments?",
+    "url": "https://doi.org/10.1371/journal.pbio.2005282"
+  },
+  {
+    "label": "The ARRIVE guidelines 2.0: Updated guidelines for reporting animal research.",
+    "url": "https://doi.org/10.1371/journal.pbio.3000410"
+  },
+  {
+    "label": "FDA: purpose and safety context of preclinical research",
+    "url": "https://www.fda.gov/patients/drug-development-process/step-2-preclinical-research"
+  },
+  {
+    "label": "FDA: context-specific nonclinical studies and new approach methodologies",
+    "url": "https://www.fda.gov/drugs/science-and-research-drugs/cder-streamlined-nonclinical-studies-and-acceptable-new-approach-methodologies-nams"
+  },
+  {
+    "label": "Reporting animal research: Explanation and elaboration for the ARRIVE guidelines 2.0.",
+    "url": "https://doi.org/10.1371/journal.pbio.3000411"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "model-organism", name: "Model organism", category: BIO,
     aka: ["model organisms", "mouse model", "mouse models", "mice", "in mice", "murine", "animal model", "xenograft", "xenografts", "patient-derived xenograft", "patient-derived xenografts", "PDX", "genetically engineered mouse", "GEMM", "GEMMs", "humanised mice", "humanized mice", "zebrafish", "fruit fly", "Drosophila", "yeast", "C. elegans"],

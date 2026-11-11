@@ -72,7 +72,7 @@ export const simpleB: Record<string, string> = {
   "companion-diagnostic-term": "A test the FDA requires before a particular drug can be prescribed.",
   "tumour-agnostic": "A drug approved for any cancer with a specific gene change, wherever it started.",
   "basket-umbrella-platform": "Trial designs that test one drug across many cancers, many drugs in one cancer, or keep adding new arms over time.",
-  "real-world-evidence": "Data from everyday care rather than clinical trials, used to check whether results hold up in ordinary patients.",
+  "real-world-evidence": "Health records and other routinely collected data can answer useful questions. Why people received different care and when follow-up began still matter.",
   theranostics: "Using the same targeting molecule to scan for a cancer and then to treat it.",
   "alpha-vs-beta": "Beta particles travel millimetres and suit bulky tumours; alpha particles travel a few cells' width and hit far harder.",
   dosimetry: "Measuring how much radiation each organ and tumour actually received from a radioactive drug.",

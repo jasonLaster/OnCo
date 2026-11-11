@@ -236,4 +236,14 @@ export const simpleS: Record<string, string> = {
   "adaptive-immune-resistance": "An immune attack can induce signals that restrain it. This feedback differs from a treatment that worked and later stopped working.",
   "perioperative-immune-window": "Surgery can temporarily change immune activity. Blood or laboratory changes do not by themselves show more recurrences or prove that a different anaesthetic improves outcomes.",
   "cd4-t-cell-subsets": "CD4 T cells develop different response programmes. Their signals and gene activity help describe them, but a single marker does not establish what the cells do.",
+
+"publication-and-peer-review-status": "Find the exact study report and version before using its result. A full paper, an early report and a correction can describe different stages of the same study.",
+"case-report": "A report of what happened to one person can raise useful questions. It usually cannot separate the treatment effect from other possible explanations.",
+"meta-analysis": "A calculation that combines results from suitable studies. A precise average can still hide different results, bias or incompatible questions.",
+"controlled-perturbation": "Change a defined factor and compare the result with suitable controls. A real change in a laboratory test does not by itself show why it happened or that patients benefit.",
+"roc-auc": "A score can put people in the right order while getting their numerical risks wrong. Good ranking alone does not show that using the score helps patients.",
+"concordance-index": "This measure checks whether predicted risk order matches observed event order. Unknown later outcomes need suitable handling.",
+"calibration": "A risk estimate needs checking against what actually happens over the same time. A correct overall average can hide errors in lower- and higher-risk groups.",
+"false-discovery-rate": "A multiple-testing rule limits the expected share of false findings among selected results under stated assumptions. It does not tell you which individual finding is false.",
+"ppv": "Among people with a positive result, how many really meet the condition being tested? The answer depends on the test and the population."
 };

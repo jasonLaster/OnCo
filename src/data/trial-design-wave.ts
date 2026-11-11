@@ -174,12 +174,40 @@ export const trialDesignTerms: TermInput[] = [
     id: "n-of-1-trial", name: "N-of-1 trial", category: "Trials",
     aka: ["N-of-1", "n-of-1", "N of 1", "n of 1", "N-of-1 trial", "N-of-1 trials", "n-of-1 trials", "single-patient trial", "single-patient trials", "single patient trial", "individual patient trial", "personal trial", "multiple crossover", "multiple-crossover design", "within-patient comparison", "patient as own control", "aggregated N-of-1"],
     wikipedia: W("N_of_1_trial"),
-    tldr: "An N-of-1 trial is a randomised experiment in a single patient: the person alternates between treatment and comparison in random order, often blinded, to find out what works for them rather than for the average patient.",
-    summary: "In an N-of-1 trial the patient is the whole trial. Two options (a drug and placebo, two doses, two supportive medicines) are given in alternating periods whose order is randomised, ideally with the patient and clinician blinded, and an outcome that the patient can feel and record (pain, nausea, fatigue, sleep) is measured in every period. Because the same person receives both options several times, the comparison is free of the between-patient differences that make ordinary trials need hundreds of participants. Aggregating many N-of-1 trials gives a population estimate as well as an answer for each participant.\n\nThe design works only for treatments that act quickly, wear off quickly and treat a stable, chronic condition, so that each period starts from the same baseline. That rules out most anticancer therapy: tumours are not stable, drugs have carry-over effects lasting weeks, and the outcome that matters, survival, cannot be measured repeatedly in one person. Its natural home in oncology is supportive care and symptom control, where it can settle whether a given patient's fatigue responds to a stimulant, whether a particular antiemetic beats another for that patient, or whether a low dose of an old drug helps their appetite. The double-blind olanzapine trial at Tata Memorial answered the appetite question at group level in 124 patients; an N-of-1 series could answer it for the individual.\n\nThe phrase is also used loosely for something different: precision oncology in which one patient's tumour is sequenced and treated with a drug chosen for its mutations, sometimes called an N-of-1 approach. That is personalised treatment, not a randomised experiment, and it cannot tell whether the patient would have done as well without the drug. The technology entry on N-of-1 and rapid platform trials covers the infrastructure being built for both meanings.",
-    related: ["randomised-trial", "crossover", "placebo", "double-blind", "qol-pro", "pragmatic-trial"],
+    tldr: "A planned comparison within one person, often using repeated treatment periods. Lasting effects and changes over time can make the comparison uninterpretable.",
+    summary: "An N-of-1 trial studies an individual under a planned comparison. In the multiple-crossover form, treatment periods are assigned within one person and the same outcome is measured repeatedly. Suitability depends on the condition, treatment reversibility, timing and analysis. A sequence of care followed by improvement is not automatically such a trial, and a result for one person does not establish an average effect in a wider population.",
+    related: [
+  "randomised-trial",
+  "crossover",
+  "placebo",
+  "double-blind",
+  "qol-pro",
+  "pragmatic-trial",
+  "case-report"
+],
     trials: ["olanzapine-appetite-tmh"],
     technologies: ["n-of-1-platforms"],
-  }),
+
+"notes": [
+  "Specify the question, treatments, period lengths, assigned order, background care, units, observation times and analysis before interpreting results. Inspect whether the actual design uses crossover, random order and blinding. Within-person comparison can reduce between-person differences, but it needs a sufficiently stable condition and interpretable onset and ending of effects. Carryover means an earlier treatment affects a later period; a period effect is change over time apart from the compared treatment, and nearby measurements can be correlated. Random order does not erase these problems. Choose timing and analysis for the actual design and missing observations; there is no universal washout duration.",
+  "Fictional symptom example: a planned randomized sequence A, B, B, A uses repeated measurements of the same symptom. The sequence alone proves neither benefit nor adequate transitions between periods. If A persists into B, an apparent A-versus-B contrast may mix current and earlier effects. Progression, lasting immune effects or an irreversible procedure can prevent a meaningful crossover. A cancer-treatment history with surgery and continuing therapy cannot simply be reversed into an untreated comparison. These are interpretation examples, not instructions to change or interrupt care; clinical and research oversight remain separate."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/N_of_1_trial"
+  },
+  {
+    "label": "Araujo, Julious and Senn: variation and analysis in N-of-1 trials (2016)",
+    "url": "https://doi.org/10.1371/journal.pone.0167167"
+  },
+  {
+    "label": "Liao and colleagues: N-of-1 carryover and correlated measurements (2021 preprint, version 1)",
+    "url": "https://arxiv.org/abs/2112.13991v1"
+  }
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "cluster-randomised-trial", name: "Cluster-randomised trial", category: "Trials",
     aka: ["cluster-randomised", "cluster randomised", "cluster-randomized", "cluster randomized", "cluster-randomised trial", "cluster randomised trial", "cluster-randomized trial", "cluster randomized trial", "cluster trial", "cluster trials", "cluster RCT", "randomised by village", "randomised by practice", "randomised by hospital", "randomised by cluster", "intracluster correlation", "intraclass correlation", "design effect", "clusters", "in clusters"],
@@ -266,12 +294,61 @@ export const trialDesignTerms: TermInput[] = [
     id: "group-sequential-design", name: "Group sequential design, stopping rules and alpha spending", category: "Trials",
     aka: ["group sequential", "group sequential design", "group-sequential design", "group sequential trial", "stopping rule", "stopping rules", "stopping boundary", "stopping boundaries", "efficacy boundary", "efficacy stopping boundary", "crossed the efficacy boundary", "pre-specified efficacy boundary", "O'Brien-Fleming", "O'Brien-Fleming boundary", "Lan-DeMets", "alpha spending function", "alpha-spending function", "alpha spending", "alpha spent", "alpha allocated", "nominal significance level", "one-sided alpha", "stopped early for efficacy", "stopped early for benefit", "early stopping for benefit", "unblinded early", "overrunning", "truncated trial", "truncated trials", "overestimation from early stopping"],
     wikipedia: W("Sequential_analysis"),
-    links: [ICH_E9, { label: "FDA guidance: adaptive designs for clinical trials of drugs and biologics", url: FDA_GUIDANCE + "adaptive-design-clinical-trials-drugs-and-biologics-guidance-industry" }],
-    tldr: "A group sequential trial plans in advance how many times it will peek at the data and how strong the evidence must be at each peek to stop early, so that looking several times does not inflate the chance of a false positive.",
-    summary: "Every look at accumulating trial data is another chance to be fooled by noise. If a trial were analysed at 5 percent significance five times, the chance of at least one false positive would be far above 5 percent. A group sequential design fixes this by deciding in advance how many interim analyses there will be, at what fractions of the total information (events), and how much of the total 5 percent false-positive budget, the alpha, is spent at each. The O'Brien-Fleming boundary spends almost nothing early, requiring an overwhelming result to stop at the first look, and saves most of the alpha for the final analysis; the Lan-DeMets spending function generalises this so that the timing of looks can shift with the actual event rate. A result reported as significant at an interim analysis has crossed a pre-specified boundary at a nominal threshold much stricter than 0.05, which is why trial papers quote odd-looking p-value thresholds.\n\nADAURA is the worked example. The trial of three years of adjuvant osimertinib after resection of EGFR-mutant lung cancer was unblinded early on the recommendation of its independent data monitoring committee because the disease-free survival difference was far beyond the boundary, and the overall survival benefit (hazard ratio 0.49) followed at five years. Early stopping for efficacy is a mixed blessing: it gets an effective drug to patients sooner and spares control patients, but a trial stopped at the first boundary crossing tends to overestimate the effect (the truncation bias), and the secondary endpoints and long-term safety data are cut short. Futility boundaries work in the other direction: JAVELIN Head and Neck 100 and TrilynX were stopped when the interim data made success implausible, and MAGNITUDE closed one of its two cohorts for futility while the other continued.\n\nThe rules only protect the trial if they are followed. Boundaries must be written into the statistical analysis plan before the first look, the interim results must be seen only by the data monitoring committee, and the trial should not be stopped on a secondary endpoint or an unplanned look. When a trial with two primary endpoints, such as progression-free and overall survival, splits its alpha between them, a win on one at a small allocated alpha and a miss on the other is a common and confusing outcome, as in TROPION-Breast01 where progression-free survival was met and overall survival was not.",
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sequential_analysis"
+  },
+  {
+    "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+    "url": "https://www.ich.org/page/efficacy-guidelines"
+  },
+  {
+    "label": "FDA guidance: adaptive designs for clinical trials of drugs and biologics",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/adaptive-design-clinical-trials-drugs-and-biologics-guidance-industry"
+  },
+  {
+    "label": "ICH E9: statistical principles for clinical trials, 1998",
+    "url": "https://www.fda.gov/media/71336/download"
+  },
+  {
+    "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+    "url": "https://doi.org/10.1056/nejmoa1910549"
+  },
+  {
+    "label": "Event-free Survival with Pembrolizumab in Early Triple-Negative Breast Cancer.",
+    "url": "https://doi.org/10.1056/nejmoa2112651"
+  },
+  {
+    "label": "Adjuvant Olaparib for Patients with BRCA1- or BRCA2-Mutated Breast Cancer.",
+    "url": "https://doi.org/10.1056/nejmoa2105215"
+  },
+  {
+    "label": "Overall survival in the OlympiA phase III trial of adjuvant olaparib in patients with germline pathogenic variants in BRCA1/2 and high-risk, early breast cancer.",
+    "url": "https://doi.org/10.1016/j.annonc.2022.09.159"
+  },
+  {
+    "label": "Adjuvant Capecitabine for Breast Cancer after Preoperative Chemotherapy.",
+    "url": "https://doi.org/10.1056/nejmoa1612645"
+  },
+  {
+    "label": "Stopping randomized trials early for benefit and estimation of treatment effects: systematic review and meta-regression analysis.",
+    "url": "https://doi.org/10.1001/jama.2010.310"
+  }
+],
+    tldr: "A trial design that plans comparisons before completion and controls overall false-positive error. Each look has rules for interpreting its accumulated information.",
+    summary: "Group sequential designs plan comparisons before a trial is complete while controlling the overall false-positive probability. The schedule, information fraction and stopping rules belong to that trial and endpoint. Benefit, safety and futility monitoring can use different criteria, and an early p-value need not be judged against 0.05. Independent monitoring and confidentiality help protect conduct while results accumulate.",
     related: ["interim-analysis", "futility", "statistical-significance", "data-monitoring-committee", "p-value", "sample-size-re-estimation", "primary-endpoint", "seamless-adaptive"],
     trials: ["adaura", "javelin-hn-100", "trilynx", "magnitude", "tropion-breast01"],
-  }),
+
+"notes": [
+  "ICH E9 defines an interim analysis as a pre-completion comparison of treatment arms for efficacy or safety and recommends planning it in advance. An unplanned comparison still is an interim analysis; E9 calls for justification and assessment of its bias, with an amendment before unblinded access when a new analysis is introduced. Record the endpoint, schedule, stopping rules, information fraction and its basis. Event-driven information uses accumulated versus planned events, not median follow-up alone. Overall error control, often through alpha spending, accounts for repeated looks. Safety, efficacy and futility rules serve different purposes. Preserve the actual monitoring and confidentiality procedures rather than assuming that every study uses the same committee or boundary.",
+  "Historical trial examples show why the endpoint and look matter. KEYNOTE-522 first assessed pathological complete response among the first 602 randomized participants; its fourth planned interim event-free-survival analysis had median follow-up of 39.1 months. OlympiA initially reported 59 versus 86 deaths, hazard ratio 0.68 and P = 0.02, which did not cross its P < 0.01 interim boundary. Its second overall-survival analysis used P < 0.015 and reported P = 0.009. CREATE-X met its primary endpoint at a prespecified interim analysis and stopped early. These endpoints and looks have their own maturity and rules; not crossing an early boundary does not establish no effect.",
+  "Bassler and colleagues compared 91 trials stopped early for benefit, covering 63 questions, with 424 matched trials not stopped early. The pooled ratio of relative risks was 0.71, with 95 per cent confidence interval 0.65 to 0.77, indicating larger apparent effects in the early-stopped trials. The difference was independent of whether a stopping rule was used and greatest in smaller studies; large differences occurred with fewer than 500 events. This meta-epidemiological result is not a correction factor to apply to every trial.",
+  "Fictional two-look example: P = 0.03 does not cross a first-look efficacy boundary of P < 0.01. Benefit has not been established at that look. It does not follow that there is no treatment effect or that a later look has the same threshold."
+],
+"asOf": "2026-11-11"
+}),
   t({
     id: "absolute-benefit", name: "Absolute versus relative benefit (number needed to treat)", category: "Endpoints",
     aka: ["absolute benefit", "absolute risk reduction", "absolute risk", "absolute difference", "absolute gain", "percentage-point difference", "percentage points", "relative benefit", "relative risk reduction", "relative reduction", "number needed to treat", "NNT", "number needed to harm", "NNH", "one in every", "out of 100", "per 100 patients", "per 100 treated", "how many patients benefit", "baseline risk", "risk difference", "difference in medians", "months gained", "median gain"],

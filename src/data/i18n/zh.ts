@@ -400,7 +400,7 @@ export const tldr_zh: Record<string, string> = {
 
 
 
-  ppv: "如果检测说“癌症”，它正确的概率。",
+
   "stage-shift": "发现更多早期癌症、更少晚期癌症。筛查的可衡量目标。",
   suv: "PET上某个点亮度的数值。",
   ihc: "用抗体给组织切片染色，使蛋白在显微镜下显色。",
@@ -433,7 +433,7 @@ export const tldr_zh: Record<string, string> = {
   "companion-diagnostic-term": "FDA要求在处方特定药物前必须做的检测。",
   "tumour-agnostic": "无论起源部位、对任何带有特定分子特征的癌症均获批的药物。",
   "basket-umbrella-platform": "在多种癌症中测试一种药（篓式）、在一种癌症中测试多种药（伞式）或持续增加组别（平台）的试验设计。",
-  "real-world-evidence": "来自日常诊疗而非临床试验的数据，用于检验结果在试验人群之外是否成立。",
+
   theranostics: "用同一靶向分子做诊断扫描和治疗，从而精确治疗所见之物。",
   "alpha-vs-beta": "β粒子（镥-177）射程数毫米，适合大块病灶；α粒子（锕-225）射程仅几个细胞宽，但能量高得多。",
   dosimetry: "测量每个器官和肿瘤从放射性药物实际接受的辐射剂量。",
@@ -1440,7 +1440,7 @@ export const tldr_zh: Record<string, string> = {
   "radioiodine-therapy": "利用甲状腺对碘的天然亲和力，用放射性碘对甲状腺癌进行显像和治疗。这是最古老的诊疗一体化手段，如今的使用比过去更有选择性。",
   "radiopharmacy-network": "在数小时内制造短寿命放射性示踪剂并将其送达医院的生产设施和运送路线。",
   ramucirumab: "一种阻断VEGF受体的抗体，在肝癌中仅获批用于血液AFP水平高的患者，是第一个按生物标志物筛选患者的HCC药物。",
-  "randomised-trial": "一种试验，由（计算机完成的）随机抛硬币决定每位患者接受哪种治疗，从而使各组除治疗之外在各方面都相似。这是证明一种治疗确实带来益处的唯一可靠方法。",
+
   receptor: "一种通常位于细胞表面的蛋白质，它捕捉来自外部的特定信号分子并把信息传递到细胞内部，就像一个接在细胞控制系统上的门铃。",
   recursion: "Recursion是一家以AI为核心的生物技术公司（2024年与Exscientia合并），其临床肿瘤管线包括一种RBM39降解剂和一种用于家族性腺瘤性息肉病的MEK抑制剂。",
   "red-processed-meat-reduction": "加工肉类（培根、火腿、香肠）肯定会导致肠癌；红肉很可能也会。对每个人而言风险不大，但由于吃的人非常多，对整体人群的影响很大。",
@@ -2293,7 +2293,7 @@ export const tldr_zh: Record<string, string> = {
   "portec-3": "术后在放疗基础上加用化疗对高危子宫内膜癌女性有益，尤其是肿瘤携带p53基因缺陷的患者。",
   "prabhash-kumar": "领导Tata Memorial的肿瘤内科及其旨在让治疗变得可负担的务实临床试验项目。",
   "precision-mri": "PRECISION证明，先做MRI能以更少的活检发现更多危险的癌症。",
-  preclinical: "在把一种潜在药物用于人体之前所做的全部工作：实验室实验、动物试验，以及监管机构要求的安全性和生产方面的工作。大多数候选药物从未走出这一阶段。",
+
   prednisone: "Prednisone 是肿瘤治疗中最常用的类固醇药片。它是淋巴瘤方案 CHOP 和 MOPP 中的 P，是儿童白血病治疗的一部分，在前列腺癌中则与 abiraterone 一起服用。",
   "prehabilitation-term": "利用从确诊到手术或化疗之间的几周时间，增强体能、改善营养并做好心理准备，使治疗更顺利、康复更快。",
   prima: "将 PARP 维持治疗扩展到没有 BRCA 突变的女性，但在更长时间的随访中，生存获益并未显现。",
@@ -2452,7 +2452,7 @@ export const tldr_zh: Record<string, string> = {
   trametinib: "曲美替尼（Mekinist）阻断MEK，即生长信号链中位于BRAF下游一步的蛋白。与达拉非尼联用，可治疗BRAF突变的黑色素瘤、肺癌、甲状腺癌及其他癌症，包括儿童脑肿瘤。",
   "trastuzumab-biosimilars": "Herceptin的近乎一致的仿制品，自2017年起获批，降低了HER2治疗的价格并在全球范围内扩大了可及性。",
   "trastuzumab-rezetecan": "恒瑞的HER2 ADC，已在中国获批用于肺癌，并在乳腺癌中显示出与Enhertu相当的疗效，是走向全球试验的中国ADC浪潮的一部分。",
-  "trial-phases": "新药需经历的三个阶段：1期在几十名患者中确定安全剂量，2期在约一百名患者中寻找疗效迹象，3期则在数百至数千名患者中与标准治疗进行比较。",
+
   "trifluridine-tipiracil": "一种用于对其他所有治疗均已不再有效的肠癌的口服化疗药；与贝伐珠单抗联用可延长生命约三个月。",
   triptorelin: "曲普瑞林（Trelstar）是一种每1个月、3个月或6个月注射一次的药物，用于关闭晚期前列腺癌男性患者的睾酮生成。",
   "trop2-pet-to-adc": "设想中：用TROP2 PET扫描在三种TROP2 ADC之间做出选择并预测谁会有反应，因为组织染色方法未能奏效。",
@@ -3720,7 +3720,7 @@ export const tldr_zh: Record<string, string> = {
   frontmind: "自rituximab以来，首个在高危大B细胞淋巴瘤中击败R-CHOP的一线方案，方法是加入CD19抗体和lenalidomide。",
   "fumanba-1": "为eque-cel赢得中国批准的单臂试验，几乎每位患者都有缓解，且大多数达到深度缓解。",
   "funda-meric-bernstam": "Funda Meric-Bernstam主管全球最大的1期临床项目，并主持了不限肿瘤类型的HER2 ADC研究。",
-  futility: "试验中期的一次预设检查，用来判断新疗法是否还有证明自身更优的现实可能；如果没有，就停止试验以节省患者和资金。相反的规则则是在获益极为显著时提前终止试验。",
+
   "g12d-plus-pan-ras": "一种精确打击该突变的药物加上一种打击所有RAS蛋白的药物，使肿瘤无法通过野生型的RAS近亲逃逸。",
   garsorasib: "Garsorasib是InventisBio的KRAS G12C阻断口服药，2024年在中国获批用于携带该突变、既往接受过治疗的肺癌。",
   "ge-healthcare": "GE HealthCare是PET/CT、MRI和CT扫描仪的主要制造商，并通过Pharmaceutical Diagnostics生产PET示踪剂。",
@@ -4264,7 +4264,7 @@ export const tldr_zh: Record<string, string> = {
   potomac: "在标准BCG膀胱灌注基础上加用一年durvalumab，使复发或进展风险降低约三分之一，成为首个获批用于早期膀胱癌的全身免疫治疗。",
   precirix: "Precirix是一家比利时公司，正在开发一种基于极小抗体片段的放射性药物，用于寻找HER2阳性癌症，包括已扩散到脑部的乳腺癌和胃癌。该药处于早期人体试验阶段。",
   preopanc: "荷兰试验，检验术前治疗是否优于先手术。先行放化疗从长远看有帮助；先行FOLFIRINOX则未能明显胜过先手术再辅助化疗。",
-  "prespecified-vs-post-hoc": "分析是在看到数据之前就已计划并书面记录（预先设定），还是事后才想出来的（事后分析）。事后分析的结果，尤其是亚组结果，很容易出于偶然，只能算作新试验的假设，而不是证据。",
+
   "primary-tumour": "癌症最初发生的原发肿瘤。癌症终生以这个部位命名：扩散到肝脏的乳腺癌仍然是乳腺癌，而不是肝癌。",
   "primo-lara": "Primo Lara是泌尿生殖系统和肺部肿瘤学家，共同主持SWOG，并担任UC Davis癌症中心主任。",
   "priscilla-chan": "她与Mark Zuckerberg共同创立了Chan Zuckerberg Biohub，宣称的使命是治愈或预防所有疾病；其项目包括改造免疫系统以早期发现癌症和其他疾病。",
@@ -5378,7 +5378,7 @@ export const tldr_zh: Record<string, string> = {
   "steven-treon": "发现了定义Waldenström巨球蛋白血症的MYD88突变，并领导了使ibrutinib成为该病首个获批药物的试验。",
   "strand-therapeutics": "Strand研发可编程的信使RNA药物，这些药物仅在肿瘤内部启动。其首个药物注射到肿瘤中，使那里的细胞产生一种增强免疫的信号。",
   "su-weiguo": "苏慰国领导了上海的化学研究，产出了fruquintinib、savolitinib和surufatinib三款中国发现的抗癌口服药，它们均在国内获批，其中fruquintinib还在美国获批。",
-  "subgroup-analysis": "将试验患者按年龄、性别、生物标志物、地区等分成若干组，以观察治疗在各组中效果是否相同。以森林图呈现。真正的差异很少见，多数引人注目的亚组结果只是噪声，因此需要进一步证实。",
+
   "sulfo-spdb": "Sulfo-SPDB是一种受阻二硫键连接子，在血液中稳定，但会被细胞内的还原环境切断，随后转化为可穿过细胞膜的形式。",
   "sun-piaoyang": "孙飘扬将连云港一家小型仿制药厂打造成恒瑞，中国最大的原创药企，也是camrelizumab、apatinib和另外十几款获批抗癌药的来源。",
   "sundar-jagannath": "资深骨髓瘤临床试验专家，帮助将蛋白酶体抑制剂和双特异性抗体带给患者。",
@@ -10988,11 +10988,11 @@ export const tldr_zh: Record<string, string> = {
   "pragmatic-trial": "实效性试验按治疗在现实中的使用方式来检验它：普通患者、普通诊所、以常规治疗作对照、以患者真正关心的结局为终点，因此答案适用于现实世界而不只是试验。",
   "registry-based-trial": "登记库试验对已被国家或疾病登记库追踪的患者进行随机分组，并用登记库而非试验随访来记录结局，使超大规模试验变得足够便宜可行。",
   "decentralised-trial": "去中心化试验把试验带到患者身边：视频知情同意、药物送到家中、在当地诊所抽血、用手机报告症状，让远离癌症中心的人无需每隔几周奔波也能参加。",
-  "n-of-1-trial": "单病例试验是在一位患者身上进行的随机实验：此人按随机顺序在治疗与对照之间交替，常为盲法，以找出对他本人而非“平均患者”有效的方案。",
+
   "cluster-randomised-trial": "整群随机试验随机分配的是整个群体（村庄、诊所、医院）而非个人，这是检验面向社区实施的干预（如筛查计划）的唯一公平方式。",
   "stepped-wedge-design": "阶梯设计试验中，每家医院或地区最终都会换用新方法，但换用的顺序是随机的，因此每次换用前后的时期可以被公平比较。",
   "kaplan-meier-curve": "Kaplan-Meier 曲线显示在每个时间点仍然存活（或仍未进展）的患者比例；每发生一次事件曲线就下降一个台阶，并利用所有人的随访时间，即使他们尚未发生事件。",
-  "group-sequential-design": "成组序贯试验事先计划好会查看数据多少次、以及每次需要多强的证据才能提前终止，这样多次查看不会抬高假阳性的概率。",
+
   "absolute-benefit": "相对获益说风险下降了三分之一；绝对获益说每 100 人中实际有多少人免于不良结局，这取决于该事件原本有多常见，也是判断治疗是否值得其副作用的关键数字。",
   "estimand": "估计目标是对试验所回答问题的精确表述，包括如何处理换药、提前停药或开始其他药物的患者；ICH E9(R1) 框架要求试验在开始前就写明这一点。",
   "surrogate-validation": "替代终点只有在试验证明“它的变化会带来真正重要结局的变化”时才值得信任，且需针对该疾病和该类药物；有些替代终点通过了检验，有些没有，各终点的记录各不相同。",

@@ -293,20 +293,99 @@ export const cansimMethodsTerms: TermInput[] = [
     summary: "External validity is the extent to which a study's conclusions generalise to other situations, people and times (Wikipedia). For a prognostic model that means an independent cohort, ideally collected by other people on another platform: TCGA-trained survival models are routinely tested on METABRIC, and the concordance index typically falls, sometimes to chance. A model with no external validation has an internal estimate, not a result, and several OnCo ideas argue that multi-site validation should precede clinical use.",
     terms: ["train-test-discipline", "domain-adaptation", "calibration", "analytical-vs-clinical-validation"], related: ["idea-tr2-ai-external-validation-registry", "idea-data-multisite-validation-precondition"] }),
   t({ id: "concordance-index", name: "C-index (concordance index), Harrell's and Uno's", category: M, aka: ["C-index", "concordance index", "Harrell's C-index", "Harrell's C", "Uno's C-index", "Uno's C", "C-statistic", "pooled C-index", "stratified C-index", "within-type C-index"],
-    links: [{ label: "Harrell et al., Evaluating the yield of medical tests (JAMA 1982)", url: DOI("10.1001/jama.1982.03320430047030") }, { label: "Uno et al., On the C-statistics for evaluating overall adequacy of risk prediction procedures with censored survival data (Statistics in Medicine 2011)", url: DOI("10.1002/sim.4154") }], cansim: "/terms/c-index",
-    tldr: "The C-index is the fraction of patient pairs in which the model ranked the patient who had the event sooner as higher risk; 0.5 is a coin toss and 1.0 is perfect ranking.",
-    summary: "Harrell and colleagues introduced the concordance index as the probability that, for a random pair of patients, the one predicted to be at higher risk has the earlier event; Uno and colleagues gave a version that weights pairs by the inverse probability of censoring so that heavy censoring does not bias it upwards. A pooled pan-cancer C-index is inflated by tissue of origin (leukaemia patients die sooner than thyroid patients), so within-type or stratified C-indices are the honest measure. The C-index ranks; it says nothing about calibration.",
-    terms: ["censoring-and-events", "calibration", "time-dependent-auc", "hazard-ratio", "organ-of-origin-signal"] }),
+    links: [
+  {
+    "label": "Harrell et al., Evaluating the yield of medical tests (JAMA 1982)",
+    "url": "https://doi.org/10.1001/jama.1982.03320430047030"
+  },
+  {
+    "label": "Uno et al., On the C-statistics for evaluating overall adequacy of risk prediction procedures with censored survival data (Statistics in Medicine 2011)",
+    "url": "https://doi.org/10.1002/sim.4154"
+  }
+], cansim: "/terms/c-index",
+    tldr: "A concordance measure checks whether predicted ordering agrees with observed outcome ordering. Survival versions must specify how follow-up and censoring are handled.",
+    summary: "A survival C-index assesses whether a person predicted at higher risk experiences the event earlier in informative pairs. The estimand, follow-up horizon, handling of ties, comparable pairs and censoring assumptions matter. Harrell-style observed-pair estimates can depend on the censoring distribution. Uno and colleagues proposed a censoring-adjusted concordance estimator under stated assumptions. Neither version establishes calibrated probabilities or removes every source of follow-up bias.",
+    terms: ["censoring-and-events", "calibration", "time-dependent-auc", "hazard-ratio", "organ-of-origin-signal"] ,
+"notes": [
+  "Uno's 2011 method targets concordance within a prespecified follow-up period. Its basic derivation assumes censoring is independent of event time and predictors. It weights usable event pairs by the inverse square of the estimated probability of remaining uncensored at the earlier event time; that probability is estimated from the censoring distribution. This is not a claim that any amount or cause of missing follow-up is repaired, or that censoring always biases an unadjusted C-index upward. State the estimator, horizon and assumptions with its uncertainty.",
+  "Fictional survival scores predict earlier events at higher values. A has score 0.8 and an event at month 2; C has score 0.5 and an event at month 4, so their order is concordant. B has score 0.2 and is censored at month 1, leaving B's later event order relative to A or C unknown. B cannot be called event-free at month 4. Censoring does not automatically make a person a control, and a censored observation can still contribute to other informative comparisons when its timing permits."
+],
+"asOf": "2026-11-11"
+}),
   t({ id: "calibration", name: "Calibration: reliability diagrams and the Brier score", category: M, aka: ["model calibration", "calibrated probabilities", "reliability diagram", "reliability diagrams", "calibration curve", "Brier score", "integrated Brier score", "IBS", "miscalibration", "bootstrap-calibrated reliability"],
-    wikipedia: W("Calibration_(statistics)"), links: [{ label: "Wikipedia: Brier score", url: W("Brier_score") }, { label: "Graf et al., Assessment and comparison of prognostic classification schemes for survival data (Statistics in Medicine 1999)", url: DOI("10.1002/(SICI)1097-0258(19990915/30)18:17/18<2529::AID-SIM274>3.0.CO;2-5") }], cansim: "/terms/calibration",
-    tldr: "A calibrated model's predicted 30 percent risk really happens about 30 percent of the time; a reliability diagram plots predicted against observed, and the Brier score measures the squared gap.",
-    summary: "In statistics, calibration in this sense refers to whether predicted probabilities match observed frequencies (Wikipedia). The Brier score is a strictly proper scoring rule equal to the mean squared error of predicted probabilities (Wikipedia), and Graf and colleagues extended it to censored survival data as the integrated Brier score over time. Discrimination (C-index, AUC) and calibration are independent: a model can rank patients well and still overstate every risk, and calibration is the property that breaks first under domain shift, which is why a model's reliability on a new platform has to be re-measured.",
-    terms: ["concordance-index", "roc-auc", "external-validation", "uncertainty-quantification"] }),
+    wikipedia: W("Calibration_(statistics)"), links: [
+  {
+    "label": "Wikipedia: Brier score",
+    "url": "https://en.wikipedia.org/wiki/Brier_score"
+  },
+  {
+    "label": "Graf et al., Assessment and comparison of prognostic classification schemes for survival data (Statistics in Medicine 1999)",
+    "url": "https://doi.org/10.1002/(SICI)1097-0258(19990915/30)18:17/18<2529::AID-SIM274>3.0.CO;2-5"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Calibration_(statistics)"
+  },
+  {
+    "label": "Calibration: the Achilles heel of predictive analytics.",
+    "url": "https://doi.org/10.1186/s12916-019-1466-7"
+  },
+  {
+    "label": "Evaluation of clinical prediction models (part 2): how to undertake an external validation study.",
+    "url": "https://doi.org/10.1136/bmj-2023-074820"
+  }
+], cansim: "/terms/calibration",
+    tldr: "Calibration checks whether predicted probabilities match observed frequencies for the same population, outcome and time horizon. Correct ranking or a correct overall average is insufficient.",
+    summary: "Calibration compares predicted probabilities with observed outcome frequencies in a defined population and time horizon. A model can rank people well while overstating their risks. Calibration curves and suitable summaries assess agreement with uncertainty. The Brier score averages squared differences between predicted probabilities and individual binary outcomes; it assesses overall prediction error rather than calibration alone. Incomplete follow-up and competing events need methods matched to the predicted outcome.",
+    terms: ["concordance-index", "roc-auc", "external-validation", "uncertainty-quantification"] ,
+"notes": [
+  "Compare predicted and observed frequencies across risk groups or a flexible calibration curve, with finite-sample uncertainty. Calibration-in-the-large compares the average prediction with the overall outcome rate. Under the named calibration model, slope below 1 suggests predictions that are too extreme and above 1 insufficient spread; intercept near 0 and slope near 1 still do not guarantee agreement everywhere on a flexible curve. A constant prediction can match average risk without ranking anyone. Conversely, high discrimination does not establish probability accuracy.",
+  "Two fictional 100-person groups have complete five-year outcomes. Predicting 20 and 40 per cent when 10 and 30 events occur preserves their group order but predicts 60 events instead of 40. In a second independent example, predictions of 10 and 50 per cent with 20 and 40 events give 60 predicted and 60 observed overall, or 30 per cent of 200, while both group predictions remain wrong. These invented comparisons illustrate distinct failures; they do not forecast a particular patient's outcome.",
+  "Retain predictions stored before outcomes, model and assay versions, endpoint, target population, treatment era and horizon. Compare frequencies at the same time using a calibration curve or named summary and uncertainty. Treating people censored before the horizon as event-free can mislead; account for incomplete follow-up and relevant competing events. Changed eligibility, care or baseline outcome frequency can change calibration, and an updated model needs evaluation. Checking only an overall average or displaying a narrow numerical range establishes little about model or input uncertainty. Calibration neither identifies which individual will have an event nor establishes benefit from acting on the model."
+],
+"asOf": "2026-11-11"
+}),
   t({ id: "roc-auc", name: "ROC-AUC, PR-AUC and time-dependent AUC", category: M, aka: ["ROC-AUC", "AUROC", "ROC curve", "area under the ROC curve", "PR-AUC", "AUPRC", "precision-recall curve", "average precision", "time-dependent AUC", "AUC(t)"],
-    wikipedia: W("Receiver_operating_characteristic"), links: [{ label: "Wikipedia: precision and recall", url: W("Precision_and_recall") }], cansim: "/terms/roc-auc-pr-auc",
-    tldr: "ROC-AUC is the chance a classifier scores a random positive above a random negative; PR-AUC focuses on the positives and is the better summary when they are rare; time-dependent AUC applies the idea to survival at a chosen horizon.",
-    summary: "A receiver operating characteristic curve plots a binary classifier's performance across thresholds and is standard in assessing diagnostic tests (Wikipedia); the area under it summarises ranking quality. Precision and recall measure the retrieved positives (Wikipedia), and the area under the precision-recall curve is sensitive to class imbalance where ROC-AUC is not, which matters when responders or rare subtypes are one in ten. Time-dependent AUC asks the same ranking question about who has had the event by a given time, complementing the C-index.",
-    terms: ["concordance-index", "calibration", "accuracy-f1", "biomarker"] }),
+    wikipedia: W("Receiver_operating_characteristic"), links: [
+  {
+    "label": "Wikipedia: precision and recall",
+    "url": "https://en.wikipedia.org/wiki/Precision_and_recall"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Receiver_operating_characteristic"
+  },
+  {
+    "label": "The meaning and use of the area under a receiver operating characteristic (ROC) curve.",
+    "url": "https://doi.org/10.1148/radiology.143.1.7063747"
+  },
+  {
+    "label": "Receiver Operating Characteristic Curve in Diagnostic Test Assessment",
+    "url": "https://doi.org/10.1097/JTO.0b013e3181ec173d"
+  },
+  {
+    "label": "On the C-statistics for evaluating overall adequacy of risk prediction procedures with censored survival data.",
+    "url": "https://doi.org/10.1002/sim.4154"
+  },
+  {
+    "label": "Evaluation of clinical prediction models (part 2): how to undertake an external validation study.",
+    "url": "https://doi.org/10.1136/bmj-2023-074820"
+  },
+  {
+    "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+    "url": "https://www.fda.gov/media/71147/download"
+  }
+], cansim: "/terms/roc-auc-pr-auc",
+    tldr: "ROC-AUC measures how a score orders cases and non-cases across thresholds. Ranking, calibrated probabilities and useful treatment decisions are separate questions.",
+    summary: "A receiver operating characteristic curve plots sensitivity against one minus specificity across thresholds for a defined binary condition. Its area measures case versus non-case ranking; with the stated convention, tied scores receive half credit. An area of 0.5 represents chance ordering and 1 perfect ordering in those data. AUC is not the proportion of individual predictions that are correct, and it does not establish calibrated probabilities or a useful decision threshold.",
+    terms: ["concordance-index", "calibration", "accuracy-f1", "biomarker"] ,
+"notes": [
+  "Fictional case scores are 0.9 and 0.6; non-case scores are 0.7 and 0.2. Three of four case/non-case pairs have the higher case score, giving AUC 0.75, also the area under the stepped ROC curve. Squaring these positive scores preserves their ordering and AUC while changing their numerical probability values. The example therefore separates ranking from calibration. Half-credit for tied scores is an explicit convention; an observed AUC is an estimate with uncertainty, not a personal prediction guarantee.",
+  "Time-dependent AUC requires a named horizon, event-by-time cases, event-free controls and appropriate handling of incomplete follow-up. It is not interchangeable with a differently defined survival C-index. Evaluate locked predictions against reference outcomes on independent data, retain the estimator, uncertainty, case mix and censoring method, and examine relevant subgroups. Training-only performance and changed outcome definitions can mislead. Discrimination can change with population heterogeneity; it establishes neither calibrated risks, false-call consequences nor benefit from model-guided care.",
+  "ROC-AUC and precision-recall area summarize different features. In a thought experiment that changes prevalence while holding the case and non-case score distributions fixed, sensitivity and specificity at each threshold, and thus the ROC curve, stay fixed while precision changes. Actual population shifts can change those conditional distributions too, so ROC-AUC is not universally immune to case mix. A precision-recall curve can be informative for rare positive outcomes without being a universally superior summary for every task."
+],
+"asOf": "2026-11-11"
+}),
   t({ id: "accuracy-f1", name: "Accuracy, macro-F1 and confusion matrices", category: M, aka: ["accuracy metric", "macro-F1", "macro F1", "F1 score", "F-score", "F-measure", "confusion matrix", "balanced accuracy", "classification accuracy"],
     wikipedia: W("F-score"), links: [{ label: "Wikipedia: accuracy and precision", url: W("Accuracy_and_precision") }], cansim: "/terms/accuracy-macro-f1",
     tldr: "Accuracy is the share of predictions that were right; macro-F1 averages the F1 score of each class equally, so a model cannot look good by getting only the common cancer types right.",

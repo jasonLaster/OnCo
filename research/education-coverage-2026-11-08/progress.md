@@ -70,3 +70,7 @@ Fifteen original and fifteen later lessons assessed, with 173/178 version-specif
 ## Tumour-immunology checkpoint, 11 November 2026
 
 Twelve later and seven original lessons assessed: 19 versions, 215 section signatures and a 209-unit union, retaining 110 original/208 later requirements. 208 union requirements are represented; the inaccessible Garcia-Diaz correction body leaves one later-only partial. Four concepts are registered, 13 existing root owners and one shared owner supplemented. All 12 theme files and four unique diagrams are viewed. Both changed full chains, exact readers and actual JSON/Markdown/OpenAPI generators pass. Cumulative original assessment is 343/537 (331 complete drafts); later is 338/550 (336 complete drafts). Open assessed requirement counts are eight/two. These are separate overlapping inventories; main/live credit remains zero.
+
+## Study-design and prediction checkpoint, 11 November 2026
+
+Seventeen lessons per pin are assessed: 34 versions, 396 signatures, 304 original and 307 later obligations, with 309 exact proofs and 69 connected teaching paragraphs. Five subjects are registered, 14 existing root owners and five companion owners supplemented. Thirty theme files and four unique diagrams were viewed. Both full chains and actual readers/exports pass. Cumulative original assessment is 360/537; later teaching assessment is 355/550. Open assessed obligation counts remain eight/two. The two inventories overlap; main and live credit remain zero.

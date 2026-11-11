@@ -363,7 +363,7 @@ export const tldr_fr: Record<string, string> = {
   lag3: "LAG-3 est le troisième frein immunitaire à obtenir une approbation, en association avec le blocage de PD-1 dans le mélanome.",
   "rare-childhood-cancers": "Certains cancers de l'enfant sont si rares qu'aucun hôpital n'en voit assez, à lui seul, pour en tirer des enseignements. Le NCI les regroupe : tumeurs du cœur, papillomes des voies respiratoires, cancers de la thyroïde, des surrénales, du nez et de la gorge, mélanome et carcinomes plus typiques de l'adulte. La réponse a été la création de registres internationaux et de réseaux d'experts qui rassemblent chaque cas, de sorte qu'il existe des recommandations de traitement même sans essais cliniques.",
 
-  "real-world-evidence": "Données issues des soins courants plutôt que des essais cliniques, utilisées pour vérifier si les résultats se confirment en dehors de la population des essais.",
+
   recist: "RECIST est le règlement qui sert à mesurer, sur les examens d'imagerie, si les tumeurs ont grossi ou diminué.",
 
   resistance: "Pourquoi les médicaments anticancéreux cessent d'agir : soit la tumeur n'a jamais dépendu de la cible, soit elle évolue pour contourner le blocage.",
@@ -520,7 +520,7 @@ export const tldr_fr: Record<string, string> = {
   "pleuropulmonary-blastoma": "Les tumeurs pulmonaires primitives de l'enfant sont rares et différentes du cancer du poumon de l'adulte. La plus importante, le blastome pleuropulmonaire, commence par un kyste pulmonaire chez le nourrisson et est due à un gène DICER1 défectueux, qui prédispose aussi aux tumeurs de la thyroïde, de l'ovaire et du rein. Repérer et retirer les kystes tôt, avec l'aide d'un registre international et de tests génétiques familiaux, empêche l'évolution vers les formes solides agressives.",
   pluvicto: "Un médicament radioactif qui va chercher PSMA sur les cellules du cancer de la prostate ; le radiopharmaceutique le plus vendu de tous les temps.",
   "post-transplant-lymphoproliferative-disorder": "Après une greffe d'organe ou de cellules souches, les médicaments qui empêchent le rejet empêchent aussi le système immunitaire de surveiller le virus d'Epstein-Barr, et les cellules B infectées peuvent se transformer en lymphome. La première mesure consiste à alléger l'immunosuppression ; viennent ensuite l'anticorps rituximab, une chimiothérapie si nécessaire et, plus récent encore, des lymphocytes T spécifiques du virus prêts à l'emploi qui rétablissent le contrôle immunitaire manquant.",
-  ppv: "La valeur prédictive positive (PPV) est la probabilité qu'un test qui dit « cancer » ait raison.",
+
   "pre-metastatic-niche": "Avant même l'arrivée d'une seule cellule cancéreuse, la tumeur primitive envoie des colis en avance : de minuscules vésicules (exosomes) et des hormones qui recrutent des cellules de la moelle osseuse vers un organe distant et le transforment en terreau fertile. Quand la graine se pose, le lit est déjà fait.",
   prevention: "Empêcher le cancer d'apparaître : vaccins, tests génétiques germinaux, mode de vie, et médicaments ou chirurgie préventifs.",
   "princess-margaret": "Princess Margaret est le premier centre de cancérologie du Canada et un pionnier de l'immunothérapie et de la recherche sur les cellules souches cancéreuses.",
@@ -1307,7 +1307,7 @@ export const tldr_fr: Record<string, string> = {
   "radium-223": "Radium-223 a été le premier médicament émetteur de particules alpha jamais approuvé (2013). Il se fixe sur l'os comme le calcium et traite le cancer de la prostate qui ne s'est propagé qu'aux os.",
   "raludotatug-deruxtecan": "Raludotatug deruxtecan est un ADC ciblant CDH6, en phase 3 dans le cancer de l'ovaire résistant au platine.",
   ramucirumab: "Un anticorps qui bloque le récepteur du VEGF, approuvé dans le cancer du foie uniquement pour les patients ayant un taux sanguin élevé d'AFP, le premier médicament du HCC sélectionné par biomarqueur.",
-  "randomised-trial": "Un essai dans lequel un tirage au sort (fait par ordinateur) décide du traitement que reçoit chaque patient, de sorte que les groupes sont identiques en tout point sauf le traitement. C'est le seul moyen fiable de prouver qu'un traitement apporte un bénéfice.",
+
   receptor: "Une protéine, généralement à la surface de la cellule, qui capte une molécule signal précise venue de l'extérieur et relaie le message à l'intérieur, comme une sonnette reliée aux commandes de la cellule.",
   recursion: "Recursion est une biotech centrée sur l'IA (fusionnée avec Exscientia en 2024) dont le portefeuille clinique en oncologie comprend un dégradeur de RBM39 et un inhibiteur de MEK pour la polypose adénomateuse familiale.",
   "red-processed-meat-reduction": "La viande transformée (bacon, jambon, saucisses) cause certainement le cancer de l'intestin ; la viande rouge le cause probablement. Le risque par personne est modeste, mais comme tant de gens en mangent, l'impact sur la population est important.",
@@ -2219,7 +2219,7 @@ export const tldr_fr: Record<string, string> = {
   "portec-3": "Ajouter une chimiothérapie à la radiothérapie après la chirurgie a aidé les femmes atteintes d'un cancer de l'endomètre à haut risque, surtout celles dont la tumeur présente un gène p53 défectueux.",
   "prabhash-kumar": "Dirige l'oncologie médicale au Tata Memorial et son programme d'essais pragmatiques qui rendent les traitements abordables.",
   "precision-mri": "PRECISION a prouvé qu'une IRM réalisée en premier détecte plus de cancers dangereux avec moins de biopsies.",
-  preclinical: "Tout ce que l'on fait subir à un médicament potentiel avant de l'administrer à un être humain : expériences de laboratoire, tests sur l'animal, et travaux de sécurité et de fabrication exigés par les autorités réglementaires. La plupart des candidats n'en sortent jamais.",
+
   prednisone: "Prednisone est le comprimé de corticoïde du quotidien en cancérologie. C'est le P de CHOP et de MOPP dans le lymphome, un élément du traitement des leucémies de l'enfant, et il se prend avec abiraterone dans le cancer de la prostate.",
   "prehabilitation-term": "Mettre à profit les semaines qui séparent le diagnostic de la chirurgie ou de la chimiothérapie pour améliorer sa forme physique, sa nutrition et sa préparation psychologique, afin que le traitement se passe mieux et que la récupération soit plus rapide.",
   prima: "A étendu le traitement d'entretien par inhibiteur de PARP aux femmes sans mutation BRCA, mais le bénéfice de survie ne s'est pas confirmé avec un suivi plus long.",
@@ -2389,7 +2389,7 @@ export const tldr_fr: Record<string, string> = {
   "trastuzumab-biosimilars": "Des copies quasi identiques de l'Herceptin, approuvées depuis 2017, qui ont fait baisser le prix du traitement anti-HER2 et élargi l'accès dans le monde entier.",
   "trastuzumab-rezetecan": "L'ADC anti-HER2 de Hengrui, approuvé en Chine dans le cancer du poumon et affichant des résultats de l'ampleur d'Enhertu dans le cancer du sein, fait partie d'une vague d'ADC chinois en route vers des essais mondiaux.",
   tremelimumab: "Le trémélimumab est l'anticorps anti-CTLA-4 d'AstraZeneca, administré en une dose unique d'amorçage avec le durvalumab et la chimiothérapie dans les cancers du poumon et du foie.",
-  "trial-phases": "Les trois étapes que franchit un nouveau médicament: la phase 1 détermine une dose sûre chez quelques dizaines de patients, la phase 2 recherche des signes d'activité chez une centaine environ, et la phase 3 le compare au traitement standard chez des centaines ou des milliers.",
+
   "trifluridine-tipiracil": "Une chimiothérapie orale en comprimé pour le cancer colorectal qui ne répond plus à aucun autre traitement; associée au bévacizumab, elle prolonge la vie d'environ trois mois.",
   triptorelin: "La triptoréline (Trelstar) est une injection mensuelle, trimestrielle ou semestrielle qui coupe la production de testostérone chez les hommes atteints d'un cancer de la prostate avancé.",
   "trop2-pet-to-adc": "Proposition: une TEP TROP2 pour choisir entre trois ADC anti-TROP2 et prédire qui répondra, puisque le marquage tissulaire n'a pas fonctionné.",
@@ -3709,7 +3709,7 @@ export const tldr_fr: Record<string, string> = {
   frontmind: "Le premier traitement de première ligne à surpasser le R-CHOP dans le lymphome B à grandes cellules à haut risque depuis le rituximab, grâce à l'ajout d'un anticorps anti-CD19 et du lénalidomide.",
   "fumanba-1": "L'essai à bras unique qui a valu à l'eque-cel son approbation en Chine, avec une réponse chez presque tous les patients et des rémissions profondes chez la plupart.",
   "funda-meric-bernstam": "Funda Meric-Bernstam dirige le plus grand programme de phase 1 au monde et a mené l'étude de l'ADC anti-HER2 indépendante du type de tumeur.",
-  futility: "Une vérification planifiée en cours d'essai pour voir si le nouveau traitement a une chance réaliste de se montrer supérieur ; sinon, l'essai est arrêté pour épargner patients et argent. La règle inverse arrête un essai prématurément lorsque le bénéfice est écrasant.",
+
   "g12d-plus-pan-ras": "Un médicament qui frappe la mutation exacte, plus un médicament qui frappe toutes les protéines RAS, afin que la tumeur ne puisse pas s'échapper par une cousine RAS non mutée.",
   garsorasib: "Le garsorasib est le comprimé d'InventisBio bloquant KRAS G12C, approuvé en Chine en 2024 pour le cancer du poumon déjà traité porteur de cette mutation.",
   "ge-healthcare": "GE HealthCare est un grand fabricant de scanners TEP/TDM, IRM et TDM, ainsi que de traceurs TEP via Pharmaceutical Diagnostics.",
@@ -4253,7 +4253,7 @@ export const tldr_fr: Record<string, string> = {
   potomac: "L'ajout d'un an de durvalumab aux instillations vésicales standard de BCG a réduit d'environ un tiers le risque de récidive ou de progression, première immunothérapie systémique approuvée dans le cancer de la vessie précoce.",
   precirix: "Precirix est une société belge qui développe un médicament radioactif construit sur un très petit fragment d'anticorps ciblant les cancers HER2 positifs, y compris les cancers du sein et de l'estomac ayant gagné le cerveau. Il est en premiers essais chez l'homme.",
   preopanc: "Essais néerlandais évaluant si traiter avant la chirurgie fait mieux qu'opérer d'abord. La chimioradiothérapie première a aidé à long terme ; le FOLFIRINOX premier n'a pas clairement surpassé la chirurgie d'emblée suivie d'une chimiothérapie adjuvante.",
-  "prespecified-vs-post-hoc": "Selon qu'une analyse a été planifiée et consignée avant de voir les données (préspécifiée) ou imaginée après coup (post hoc). Les résultats post hoc, surtout dans les sous-groupes, sont souvent dus au hasard et valent comme hypothèses pour un nouvel essai, pas comme preuves.",
+
   "primary-tumour": "La tumeur d'origine, là où le cancer a commencé. Le cancer garde le nom de ce site à vie : un cancer du sein qui s'étend au foie reste un cancer du sein, pas un cancer du foie.",
   "primo-lara": "Primo Lara est un oncologue spécialisé en cancers génito-urinaires et du poumon, coprésident du SWOG et directeur du centre de cancérologie de l'UC Davis.",
   "priscilla-chan": "Elle a fondé avec Mark Zuckerberg le Chan Zuckerberg Biohub, dont la mission affichée est de guérir ou de prévenir toutes les maladies ; ses programmes comprennent la modification du système immunitaire pour détecter précocement le cancer et d'autres maladies.",
@@ -5367,7 +5367,7 @@ export const tldr_fr: Record<string, string> = {
   "steven-treon": "A découvert la mutation MYD88 qui définit la macroglobulinémie de Waldenström et a dirigé l'essai qui a fait de l'ibrutinib son premier médicament approuvé.",
   "strand-therapeutics": "Strand fabrique des médicaments programmables à ARN messager qui ne s'activent qu'à l'intérieur des tumeurs. Son premier médicament est injecté dans une tumeur et fait produire aux cellules qui s'y trouvent un signal stimulant l'immunité.",
   "su-weiguo": "Weiguo Su a dirigé à Shanghai la chimie qui a produit le fruquintinib, le savolitinib et le surufatinib, trois comprimés anticancéreux découverts en Chine et approuvés dans leur pays et, pour le fruquintinib, aux États-Unis.",
-  "subgroup-analysis": "Répartir les patients d'un essai en groupes (selon l'âge, le sexe, un biomarqueur, la région) pour voir si le traitement a agi de la même façon dans chacun. Présenté sous forme de forest plot. Les vraies différences sont rares et la plupart des résultats de sous-groupes frappants ne sont que du bruit, d'où la nécessité de les confirmer.",
+
   "sulfo-spdb": "Le Sulfo-SPDB est un linker disulfure encombré, stable dans le sang mais clivé par l'environnement réducteur à l'intérieur des cellules, puis converti en une forme capable de traverser les membranes.",
   "sun-piaoyang": "Piaoyang Sun a transformé une petite usine de génériques de Lianyungang en Hengrui, la plus grande société chinoise de médicaments princeps et la source du camrelizumab, de l'apatinib et d'une douzaine d'autres médicaments anticancéreux approuvés.",
   "sundar-jagannath": "Vétéran des essais dans le myélome qui a contribué à apporter aux patients les inhibiteurs du protéasome et les bispécifiques.",

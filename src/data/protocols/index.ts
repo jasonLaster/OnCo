@@ -13,6 +13,7 @@ import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
 import { medicinesReconciliationInCancerCare } from "./medicines-reconciliation-in-cancer-care";
 import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
+import { peripheralCannulaForAnticancerTherapy } from "./peripheral-cannula-for-anticancer-therapy";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
 import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication-before-reaction-prone-anticancer-drugs";
 import { renalDoseAdjustmentOfAnticancerDrugs } from "./renal-dose-adjustment-of-anticancer-drugs";
@@ -40,6 +41,7 @@ export const protocols: ProtocolInput[] = [
   intrathecalChemotherapyAndVincaAlkaloidSafety,
   medicinesReconciliationInCancerCare,
   oralAnticancerMedicinesAtHome,
+  peripheralCannulaForAnticancerTherapy,
   piccAndTunnelledLineCare,
   premedicationBeforeReactionProneAnticancerDrugs,
   renalDoseAdjustmentOfAnticancerDrugs,

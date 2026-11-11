@@ -3,8 +3,10 @@ import { acuteOncologyTelephoneTriage } from "./acute-oncology-telephone-triage"
 import { alloHctGvhdProphylaxis } from "./allo-hct-gvhd-prophylaxis";
 import { ambulatoryChemotherapyPumpsAtHome } from "./ambulatory-chemotherapy-pumps-at-home";
 import { antiVegfDrugsAroundSurgery } from "./anti-vegf-drugs-around-surgery";
+import { antibacterialProphylaxisInNeutropenia } from "./antibacterial-prophylaxis-in-neutropenia";
 import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
 import { anticoagulantsAndAntiplateletsBeforeEndoscopy } from "./anticoagulants-and-antiplatelets-before-endoscopy";
+import { antifungalProphylaxisInHaematology } from "./antifungal-prophylaxis-in-haematology";
 import { antithromboticInterruptionAroundSurgery } from "./antithrombotic-interruption-around-surgery";
 import { asepticCompoundingOfHazardousAnticancerDrugs } from "./aseptic-compounding-of-hazardous-anticancer-drugs";
 import { bispecificStepUpDosing } from "./bispecific-step-up-dosing";
@@ -24,6 +26,8 @@ import { carTReferralAndEligibility } from "./car-t-referral-and-eligibility";
 import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
 import { careInTheLastDaysOfLife } from "./care-in-the-last-days-of-life";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
+import { centralLineInsertionBundle } from "./central-line-insertion-bundle";
+import { centralLineMaintenanceBundle } from "./central-line-maintenance-bundle";
 import { centralLineOcclusionManagement } from "./central-line-occlusion-management";
 import { centralLineRemoval } from "./central-line-removal";
 import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-venous-catheter-insertion-for-anticancer-therapy";
@@ -53,13 +57,17 @@ import { enhancedRecoveryAfterRadicalCystectomy } from "./enhanced-recovery-afte
 import { fdgPetCtPreparation } from "./fdg-pet-ct-preparation";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { fertilityProtectionBeforePelvicRadiotherapy } from "./fertility-protection-before-pelvic-radiotherapy";
+import { foodSafetyAndNeutropenicDiet } from "./food-safety-and-neutropenic-diet";
 import { gadoliniumContrastKidneyImpairment } from "./gadolinium-contrast-kidney-impairment";
+import { handHygieneInCancerCare } from "./hand-hygiene-in-cancer-care";
 import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
 import { hdrBrachytherapyRoomSafetyAndStuckSourceEmergency } from "./hdr-brachytherapy-room-safety-and-stuck-source-emergency";
 import { headAndNeckRadiotherapyDentalAssessmentOsteoradionecrosis } from "./head-and-neck-radiotherapy-dental-assessment-osteoradionecrosis";
 import { headAndNeckRadiotherapyImmobilisationMask } from "./head-and-neck-radiotherapy-immobilisation-mask";
 import { headAndNeckRadiotherapyOralMucositis } from "./head-and-neck-radiotherapy-oral-mucositis";
 import { hepaticDoseAdjustmentOfAnticancerDrugs } from "./hepatic-dose-adjustment-of-anticancer-drugs";
+import { hepatitisBScreeningAndReactivationProphylaxis } from "./hepatitis-b-screening-and-reactivation-prophylaxis";
+import { herpesSimplexAndZosterAntiviralProphylaxis } from "./herpes-simplex-and-zoster-antiviral-prophylaxis";
 import { hypercalcaemiaOfMalignancy } from "./hypercalcaemia-of-malignancy";
 import { hyperleukocytosisLeukostasis } from "./hyperleukocytosis-leukostasis";
 import { hyponatraemiaSiadh } from "./hyponatraemia-siadh";
@@ -99,13 +107,23 @@ import { midlineCathetersForAnticancerTherapy } from "./midline-catheters-for-an
 import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { mriSafetyScreeningImplants } from "./mri-safety-screening-implants";
 import { neutropenicEnterocolitis } from "./neutropenic-enterocolitis";
+import { neutropenicPrecautionsAndDailyLife } from "./neutropenic-precautions-and-daily-life";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
 import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
+import { paediatricChemotherapyNauseaVomitingPrevention } from "./paediatric-chemotherapy-nausea-vomiting-prevention";
+import { paediatricCisplatinHearingProtection } from "./paediatric-cisplatin-hearing-protection";
+import { paediatricClostridioidesDifficile } from "./paediatric-clostridioides-difficile";
+import { paediatricFertilityPreservation } from "./paediatric-fertility-preservation";
+import { paediatricFeverAndNeutropenia } from "./paediatric-fever-and-neutropenia";
+import { paediatricOralMucositisPrevention } from "./paediatric-oral-mucositis-prevention";
+import { paediatricPlateletTransfusionThresholds } from "./paediatric-platelet-transfusion-thresholds";
+import { paediatricProceduralPainAndSedation } from "./paediatric-procedural-pain-and-sedation";
 import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
 import { pelvicRadiationDiseaseBowelSymptoms } from "./pelvic-radiation-disease-bowel-symptoms";
 import { peripheralCannulaForAnticancerTherapy } from "./peripheral-cannula-for-anticancer-therapy";
 import { permanentProstateSeedBrachytherapyHomeRadiationSafety } from "./permanent-prostate-seed-brachytherapy-home-radiation-safety";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
+import { pneumocystisPneumoniaProphylaxis } from "./pneumocystis-pneumonia-prophylaxis";
 import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication-before-reaction-prone-anticancer-drugs";
 import { prostateBiopsyRouteAndAntibioticProphylaxis } from "./prostate-biopsy-route-and-antibiotic-prophylaxis";
 import { prostateRadiotherapyBladderAndRectalPreparation } from "./prostate-radiotherapy-bladder-and-rectal-preparation";
@@ -136,6 +154,7 @@ import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-preve
 import { suspectedCentralLineInfection } from "./suspected-central-line-infection";
 import { syringeDriverContinuousSubcutaneousInfusion } from "./syringe-driver-continuous-subcutaneous-infusion";
 import { tumourLysisSyndrome } from "./tumour-lysis-syndrome";
+import { vaccinationAroundCancerTreatment } from "./vaccination-around-cancer-treatment";
 import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access-device-selection-for-anticancer-therapy";
 import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer-surgery";
 
@@ -148,8 +167,10 @@ export const protocols: ProtocolInput[] = [
   alloHctGvhdProphylaxis,
   ambulatoryChemotherapyPumpsAtHome,
   antiVegfDrugsAroundSurgery,
+  antibacterialProphylaxisInNeutropenia,
   anticancerDrugInteractionReview,
   anticoagulantsAndAntiplateletsBeforeEndoscopy,
+  antifungalProphylaxisInHaematology,
   antithromboticInterruptionAroundSurgery,
   asepticCompoundingOfHazardousAnticancerDrugs,
   bispecificStepUpDosing,
@@ -169,6 +190,8 @@ export const protocols: ProtocolInput[] = [
   carboplatinDoseCalculation,
   careInTheLastDaysOfLife,
   catheterRelatedThrombosisInCancer,
+  centralLineInsertionBundle,
+  centralLineMaintenanceBundle,
   centralLineOcclusionManagement,
   centralLineRemoval,
   centralVenousCatheterInsertionForAnticancerTherapy,
@@ -198,13 +221,17 @@ export const protocols: ProtocolInput[] = [
   fdgPetCtPreparation,
   febrileNeutropeniaFirstHour,
   fertilityProtectionBeforePelvicRadiotherapy,
+  foodSafetyAndNeutropenicDiet,
   gadoliniumContrastKidneyImpairment,
+  handHygieneInCancerCare,
   hazardousDrugHandlingInClinicalAreas,
   hdrBrachytherapyRoomSafetyAndStuckSourceEmergency,
   headAndNeckRadiotherapyDentalAssessmentOsteoradionecrosis,
   headAndNeckRadiotherapyImmobilisationMask,
   headAndNeckRadiotherapyOralMucositis,
   hepaticDoseAdjustmentOfAnticancerDrugs,
+  hepatitisBScreeningAndReactivationProphylaxis,
+  herpesSimplexAndZosterAntiviralProphylaxis,
   hypercalcaemiaOfMalignancy,
   hyperleukocytosisLeukostasis,
   hyponatraemiaSiadh,
@@ -244,13 +271,23 @@ export const protocols: ProtocolInput[] = [
   mouthCareDuringCancerTreatment,
   mriSafetyScreeningImplants,
   neutropenicEnterocolitis,
+  neutropenicPrecautionsAndDailyLife,
   opioidSwitchingAndConversion,
   oralAnticancerMedicinesAtHome,
+  paediatricChemotherapyNauseaVomitingPrevention,
+  paediatricCisplatinHearingProtection,
+  paediatricClostridioidesDifficile,
+  paediatricFertilityPreservation,
+  paediatricFeverAndNeutropenia,
+  paediatricOralMucositisPrevention,
+  paediatricPlateletTransfusionThresholds,
+  paediatricProceduralPainAndSedation,
   palliativeSedation,
   pelvicRadiationDiseaseBowelSymptoms,
   peripheralCannulaForAnticancerTherapy,
   permanentProstateSeedBrachytherapyHomeRadiationSafety,
   piccAndTunnelledLineCare,
+  pneumocystisPneumoniaProphylaxis,
   premedicationBeforeReactionProneAnticancerDrugs,
   prostateBiopsyRouteAndAntibioticProphylaxis,
   prostateRadiotherapyBladderAndRectalPreparation,
@@ -281,6 +318,7 @@ export const protocols: ProtocolInput[] = [
   suspectedCentralLineInfection,
   syringeDriverContinuousSubcutaneousInfusion,
   tumourLysisSyndrome,
+  vaccinationAroundCancerTreatment,
   venousAccessDeviceSelectionForAnticancerTherapy,
   vteProphylaxisAfterCancerSurgery,
 ];

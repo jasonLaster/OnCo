@@ -4,6 +4,7 @@ import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
+import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
@@ -22,6 +23,7 @@ export const protocols: ProtocolInput[] = [
   chemotherapyExtravasationManagement,
   dpydTestingBeforeFluoropyrimidines,
   febrileNeutropeniaFirstHour,
+  hazardousDrugHandlingInClinicalAreas,
   implantedPortAccessAndCare,
   infusionReactionManagement,
   piccAndTunnelledLineCare,

@@ -110,7 +110,8 @@ import { FundingPanel, PortfolioPanel } from "@/components/StartupPanels";
 import { StageIcon } from "@/components/StageIcon";
 import { portfolioOf, STAGE_LABEL, stageOf, ycBatchLabel } from "@/lib/startups";
 import { BiomarkerDetail, ReadoutStrip, ReadoutsForDrug, ReadoutsForTerm } from "./BiomarkerDetail";
-import { companyProducts, connectedGroups, technologyProducts, type MemberItem } from "@/lib/members";
+import { companyProducts, connectedGroups, protocolsFor, technologyProducts, type MemberItem } from "@/lib/members";
+import { ProtocolBestInClass, ProtocolEvidence, ProtocolList, ProtocolOverview } from "./ProtocolDetail";
 
 const STRUCTURES = structureIndex as Record<string, StructureEntry[]>;
 
@@ -155,6 +156,7 @@ export function EntityDetail({ e }: { e: Entity }) {
   // page); a fragment keyed on the tab id crosses intact, so the section has one child.
   const tabs: Tab[] = keyedContent([
     ...kindTabs(e),
+    ...protocolsTab(e),
     // Cancer records carry notes, key papers and the literature inside their Evidence and Data sections (CancerRecord.tsx).
     ...(e.kind === "cancer" ? [] : [
       ...(e.notes.length ? [{ id: "notes", label: "Notes", content: <Bullets items={e.notes} linked={(t) => withTermHovers(t, { skipId: e.id })} /> }] : []),
@@ -303,6 +305,17 @@ function keyPapersTab(e: Entity): Tab[] {
   const all = keyPapersFor(e);
   if (!all.length) return [];
   return [{ id: "key-papers", label: "Key papers", count: all.length, content: <KeyPapers e={e} all={all} /> }];
+}
+
+/**
+ * The care protocols that concern this record (src/lib/members.ts `protocolsFor`): a drug's administration
+ * protocols, a device's care protocols, a term's. Cancer pages carry theirs in the Treatment section instead.
+ */
+function protocolsTab(e: Entity): Tab[] {
+  if (e.kind === "cancer" || e.kind === "protocol") return [];
+  const members = protocolsFor(e);
+  if (!members.length) return [];
+  return [{ id: "protocols", label: "Care protocols", count: members.length, content: <ProtocolList members={members} /> }];
 }
 
 /** Live literature from Europe PMC plus the weekly trend, for the kinds a query can be built for. */
@@ -576,6 +589,14 @@ function kindTabs(e: Entity): Tab[] {
     }
     case "biomarker":
       return [overview(<BiomarkerDetail bm={e} />)];
+    case "protocol":
+      // A care protocol (docs/PROTOCOLS.md): the steps first, then the best-supported version beside the variants,
+      // then the grades and the guidelines they were read from.
+      return [
+        overview(<ProtocolOverview p={e} />),
+        { id: "best-in-class", label: "Best in class", count: e.variants.length ? e.variants.length + 1 : undefined, content: <ProtocolBestInClass p={e} /> },
+        { id: "evidence", label: "Evidence and sources", count: e.sources.length, content: <ProtocolEvidence p={e} /> },
+      ];
     case "year":
       // Generated from every dated field in the corpus (src/data/years.ts). One tab: the counts strip, then every
       // dated entry grouped by what kind of thing it was, then the previous and next year.

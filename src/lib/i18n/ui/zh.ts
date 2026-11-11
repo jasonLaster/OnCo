@@ -239,6 +239,7 @@ export const zh: UiDict = {
   "kind.paper.label": "关键论文", "kind.paper.plural": "关键论文",
   "kind.bottleneck.label": "瓶颈", "kind.bottleneck.plural": "瓶颈", "kind.bottleneck.title": "抗癌战争的瓶颈",
   "kind.biomarker.label": "生物标志物", "kind.biomarker.plural": "生物标志物", "kind.biomarker.title": "生物标志物与判读",
+  "kind.protocol.label": "规程", "kind.protocol.plural": "规程", "kind.protocol.title": "护理规程",
   "kind.year.label": "年份", "kind.year.plural": "年份", "kind.year.title": "肿瘤学逐年回顾",
 
   "l.Summary": "摘要",

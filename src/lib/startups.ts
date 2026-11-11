@@ -12,12 +12,13 @@ import type { Company, CompanyType, FundingRound, Stage } from "./schema";
 export const COMPANY_TYPE_LABEL: Record<CompanyType, string> = {
   pharma: "Large pharma", biotech: "Biotech", diagnostics: "Diagnostics", imaging: "Imaging equipment", devices: "Devices & RT hardware",
   "ai-software": "AI & software", radiopharma: "Radiopharmaceuticals", "cell-therapy": "Cell therapy", "cro-services": "Services", nonprofit: "Nonprofit", investor: "Investor",
-  "cooperative-group": "Cooperative group",
+  "cooperative-group": "Cooperative group", media: "Media & education",
 };
 
 /** One-line tooltip for the company types that need one on a record page; the others read plainly from the label. */
 export const COMPANY_TYPE_TIP: Partial<Record<CompanyType, string>> = {
   "cooperative-group": "An academic clinical trials group or public trial sponsor: it designs and runs trials of other makers' products, often the phase 3 trials that set the standard of care, and has no products of its own.",
+  media: "An independent website, podcast or publisher that explains cancer research to readers; it does not make, sell or test treatments.",
   investor: "A venture fund, corporate venture arm or disease foundation that finances companies; its portfolio is derived from the companies that name it.",
 };
 

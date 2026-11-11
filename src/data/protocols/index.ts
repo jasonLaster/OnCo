@@ -11,6 +11,7 @@ import { enhancedRecoveryAfterLiverSurgery } from "./enhanced-recovery-after-liv
 import { enhancedRecoveryAfterLungSurgery } from "./enhanced-recovery-after-lung-surgery";
 import { enhancedRecoveryAfterOesophagectomy } from "./enhanced-recovery-after-oesophagectomy";
 import { enhancedRecoveryAfterPancreatoduodenectomy } from "./enhanced-recovery-after-pancreatoduodenectomy";
+import { enhancedRecoveryAfterRadicalCystectomy } from "./enhanced-recovery-after-radical-cystectomy";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { indwellingPleuralCatheterDrainageAtHome } from "./indwelling-pleural-catheter-drainage-at-home";
@@ -41,6 +42,7 @@ export const protocols: ProtocolInput[] = [
   enhancedRecoveryAfterLungSurgery,
   enhancedRecoveryAfterOesophagectomy,
   enhancedRecoveryAfterPancreatoduodenectomy,
+  enhancedRecoveryAfterRadicalCystectomy,
   febrileNeutropeniaFirstHour,
   implantedPortAccessAndCare,
   indwellingPleuralCatheterDrainageAtHome,

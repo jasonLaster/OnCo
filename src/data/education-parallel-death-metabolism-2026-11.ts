@@ -118,36 +118,44 @@ export const educationParallelDeathMetabolism: TermInput[] = [
     "kind": "term",
     "name": "Oxidative phosphorylation",
     "category": "Cancer biology",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-11",
     "tldr": "Oxygen use and cellular energy production are related measurements. Researchers need controlled experiments to work out how much energy a cell produces through mitochondrial respiration.",
-    "summary": "Extracellular flux methods estimate respiratory and glycolytic contributions to energy production under defined assumptions. A respiratory message, measured oxygen use, calculated energy output and dependence for survival are distinct claims. Normalisation, fuel, viable-cell input, collection time and the specified method version belong with a result. Electron transport, proton pumping, return through ATP synthase and uncoupling are distinct steps. The mitochondrial matrix and intermembrane space identify the direction in the teaching diagram, not a universal conversion ratio.",
+    "summary": "Extracellular flux methods estimate respiratory and glycolytic contributions to energy production under defined assumptions. A respiratory message, measured oxygen use, calculated energy output and dependence for survival are distinct claims. Normalisation, fuel, viable-cell input, collection time and the specified method version belong with a result. Electron transport, proton pumping, return through ATP synthase and uncoupling are distinct steps. The mitochondrial matrix and intermembrane space locate the two sides of the inner membrane; naming these compartments does not supply a universal conversion ratio.",
     "links": [
-      {
-        "label": "Source identity and scope, PMID 26709455",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
-      },
-      {
-        "label": "Source identity and scope, PMID 28270511",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
-      },
-      {
-        "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
-      },
-      {
-        "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
-      },
-      {
-        "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
-        "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
-      }
-    ],
+  {
+    "label": "Source identity and scope, PMID 26709455",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
+  },
+  {
+    "label": "Source identity and scope, PMID 28270511",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
+  },
+  {
+    "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
+  },
+  {
+    "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
+  },
+  {
+    "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
+    "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+  },
+  {
+    "label": "Assessing mitochondrial dysfunction in cells (2011 methods review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21726199/"
+  },
+  {
+    "label": "Mitochondrial ATP synthase: architecture, function and pathology (2012 ATP-synthase review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21874297/"
+  }
+],
     "notes": [
-      "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
-      "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
-      "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. The illustrated arrows identify paths, not a fixed proton-to-ATP ratio. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
-      "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred."
-    ]
+  "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+  "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+  "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. These directions do not specify a fixed proton-to-ATP ratio. Protons return from the intermembrane space to the matrix through the membrane-embedded Fo part of ATP synthase. The matrix-facing F1 part uses the transferred energy to make ATP from ADP and inorganic phosphate. Protons provide the driving force; they are not converted into ATP. A parallel proton leak bypasses ATP synthase and dissipates the gradient. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
+  "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred."
+]
   }
 ];

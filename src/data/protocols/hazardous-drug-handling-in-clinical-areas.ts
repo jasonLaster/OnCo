@@ -8,7 +8,7 @@ import { protocol } from "./helpers";
  * What was read, and how (all on 11 November 2026, raw text in a scratch directory):
  * - ASCO Safe Handling of Hazardous Drugs: ASCO Standards (Celano et al., J Clin Oncol 2019): full
  *   text, read from the Internet Archive's capture of ascopubs.org/doi/10.1200/JCO.18.01616 (29 June 2025), the
- *   publisher refusing a script. Its standards are consensus based and endorse USP <800>, OSHA, NIOSH and ONS.
+ *   publisher refusing a script. Its standards are consensus based and endorse USP chapter 800, OSHA, NIOSH and ONS.
  * - NIOSH Alert: Preventing Occupational Exposures to Antineoplastic and Other Hazardous Drugs in Health Care Settings
  *   (DHHS (NIOSH) Publication 2004-165): full text of the PDF, from the Internet Archive's capture of cdc.gov (cdc.gov
  *   refuses a script), read with pdftotext in reading order; "fi" and "fl" ligatures restored.
@@ -20,7 +20,7 @@ import { protocol } from "./helpers";
  *   alone: abstract (PMC6360647).
  * - ASCO-ONS administration safety standards (2024): full text; cited for labelling and patient education.
  * - USP General Chapter <800> and the ISOPP Standards for the Safe Handling of Cytotoxics (2022): not reachable (usp.org
- *   returned 403; ISOPP is behind a paywall). Named; nothing rests on them except where ASCO 2019 states what USP <800>
+ *   returned 403; ISOPP is behind a paywall). Named; nothing rests on them except where ASCO 2019 states what USP chapter 800
  *   requires.
  *
  * Quotes are copied from the raw text with line breaks joined; where a sentence carries an inline reference, the quote
@@ -33,13 +33,13 @@ export const hazardousDrugHandlingInClinicalAreas = protocol({
   domain: "hazardous-drug-safety",
   tldr: "Many cancer drugs can harm the staff who handle them every day, even in tiny amounts. That is why nurses wear special gloves, gowns and sometimes eye protection when giving them, use sealed connectors, and handle spills and waste in a set way. For a day or two after treatment some drug is also in the patient's urine and other body fluids, so staff wear gloves when handling them. The protection is for repeated exposure at work; it does not mean you are dangerous to be near.",
   simple: "Nurses wear gloves and gowns with chemotherapy because they handle it every day. It is about their repeated exposure, not about you being unsafe to touch or hug.",
-  summary: "The US framework is NIOSH (the 2004 Alert and the 2024 hazardous drug list), USP <800> and OSHA, which ASCO's consensus standards (2019) endorse; the UK framework is COSHH, applied by HSE, with a hierarchy of control: enclosed systems, control at source, then PPE. Employers should keep a facility-specific hazardous drug list, because the NIOSH list (2024, 25 drugs added and 7 removed since 2016) may not include newer drugs.\n\nNIOSH (2004) asks for double chemotherapy-tested gloves, a disposable gown with a closed front and closed cuffs, and goggles for all administration activities, from opening the outer bag to disposal; preparation belongs in a ventilated cabinet, tubing is primed with a non-drug fluid, and closed-system transfer devices (CSTDs) supplement but do not replace the cabinet. ASCO (2019) reports that USP <800> requires CSTDs for administration and recommends them for compounding, while a Cochrane review (2018, 24 observational studies) found the evidence of benefit very low in certainty and drew no firm conclusions. Linen and excreta from patients treated within 48 hours (sometimes 7 days) are handled with two pairs of gloves and a gown. Spills follow written procedures with spill kits nearby; large spills need trained staff and a respirator, as surgical masks do not protect. ASCO asks for an alternative-duty policy for staff who are trying to conceive, pregnant or breastfeeding, and finds routine medical surveillance unsupported by evidence; HSE says monitoring is normally needed under COSHH where carcinogens are handled.",
+  summary: "The US framework is NIOSH (the 2004 Alert and the 2024 hazardous drug list), USP chapter 800 and OSHA, which ASCO's consensus standards (2019) endorse; the UK framework is COSHH, applied by HSE, with a hierarchy of control: enclosed systems, control at source, then PPE. Employers should keep a facility-specific hazardous drug list, because the NIOSH list (2024, 25 drugs added and 7 removed since 2016) may not include newer drugs.\n\nNIOSH (2004) asks for double chemotherapy-tested gloves, a disposable gown with a closed front and closed cuffs, and goggles for all administration activities, from opening the outer bag to disposal; preparation belongs in a ventilated cabinet, tubing is primed with a non-drug fluid, and closed-system transfer devices (CSTDs) supplement but do not replace the cabinet. ASCO (2019) reports that USP chapter 800 requires CSTDs for administration and recommends them for compounding, while a Cochrane review (2018, 24 observational studies) found the evidence of benefit very low in certainty and drew no firm conclusions. Linen and excreta from patients treated within 48 hours (sometimes 7 days) are handled with two pairs of gloves and a gown. Spills follow written procedures with spill kits nearby; large spills need trained staff and a respirator, as surgical masks do not protect. ASCO asks for an alternative-duty policy for staff who are trying to conceive, pregnant or breastfeeding, and finds routine medical surveillance unsupported by evidence; HSE says monitoring is normally needed under COSHH where carcinogens are handled.",
   asOf: "2026-11-11",
   setting: {
     who: ["nurse", "pharmacist", "pharmacy-technician"],
     where: ["chemotherapy-day-unit", "ward", "aseptic-unit", "home"],
   },
-  population: "Healthcare workers who receive, prepare, give or dispose of hazardous drugs, including most cytotoxic anticancer drugs and some hormonal and targeted drugs, and those who handle patients' body fluids and linen after treatment. Aseptic compounding in pharmacy has further requirements (USP <800>, ISOPP) not covered here. Guidance for patients and carers at home is a separate subject.",
+  population: "Healthcare workers who receive, prepare, give or dispose of hazardous drugs, including most cytotoxic anticancer drugs and some hormonal and targeted drugs, and those who handle patients' body fluids and linen after treatment. Aseptic compounding in pharmacy has further requirements (USP chapter 800, ISOPP) not covered here. Guidance for patients and carers at home is a separate subject.",
   trigger: "A hazardous drug is received, prepared, given, spilled or disposed of, or a patient's body fluids are handled after treatment.",
   steps: [
     {
@@ -128,14 +128,14 @@ export const hazardousDrugHandlingInClinicalAreas = protocol({
     },
   ],
   bestInClass: {
-    statement: "In the US, USP <800> with NIOSH and OSHA, as endorsed by ASCO (2019): a facility hazardous drug list, ventilated-cabinet preparation, double chemotherapy gloves, impermeable gown and eye protection for administration, CSTDs for administration (required by USP <800>, according to ASCO), written spill and waste procedures, precautions with body fluids for 48 hours, and an alternative-duty policy. In the UK, COSHH as applied by HSE: risk assessment and a hierarchy of enclosure, control at source, then PPE. The sources differ on CSTDs (required by USP <800>; Cochrane 2018 found the evidence of benefit very low in certainty) and on monitoring (ASCO: routine medical surveillance has no supporting data; HSE: monitoring is normally necessary under COSHH where carcinogens are handled). USP <800> and the ISOPP standards could not be read directly.",
+    statement: "In the US, USP chapter 800 with NIOSH and OSHA, as endorsed by ASCO (2019): a facility hazardous drug list, ventilated-cabinet preparation, double chemotherapy gloves, impermeable gown and eye protection for administration, CSTDs for administration (required by USP chapter 800, according to ASCO), written spill and waste procedures, precautions with body fluids for 48 hours, and an alternative-duty policy. In the UK, COSHH as applied by HSE: risk assessment and a hierarchy of enclosure, control at source, then PPE. The sources differ on CSTDs (required by USP chapter 800; Cochrane 2018 found the evidence of benefit very low in certainty) and on monitoring (ASCO: routine medical surveillance has no supporting data; HSE: monitoring is normally necessary under COSHH where carcinogens are handled). USP chapter 800 and the ISOPP standards could not be read directly.",
     sources: ["asco-2018", "niosh-2004", "niosh-2024", "hse-cytotoxics", "cochrane-cstd-2018"],
   },
   variants: [
     {
       name: "Closed-system transfer devices for every hazardous drug connection",
-      differs: "Uses a CSTD for all preparation and every connection and disconnection at the bedside, rather than standard needles and spikes with PPE.",
-      evidence: "Cochrane (2018): 24 observational cluster studies, no randomised trials, all at serious risk of bias; very low certainty evidence was insufficient to show differences in staff urine tests or surface contamination, and no firm conclusions could be drawn. ASCO (2019) calls the literature low quality and notes no standard test of CSTD performance exists. USP <800> requires them for administration (as reported by ASCO).",
+      differs: "Uses a CSTD for all preparation and every connection and disconnection at the bedside, rather than standard needles and open connections with PPE.",
+      evidence: "Cochrane (2018): 24 observational cluster studies, no randomised trials, all at serious risk of bias; very low certainty evidence was insufficient to show differences in staff urine tests or surface contamination, and no firm conclusions could be drawn. ASCO (2019) calls the literature low quality and notes no standard test of CSTD performance exists. USP chapter 800 requires them for administration (as reported by ASCO).",
       sources: ["cochrane-cstd-2018", "asco-2018"],
     },
     {
@@ -146,7 +146,7 @@ export const hazardousDrugHandlingInClinicalAreas = protocol({
     },
   ],
   grades: [
-    { claim: "ASCO endorses OSHA, USP <800>, the NIOSH 2004 Alert and ONS standards", grade: "Consensus-based standard", source: "asco-2018", quote: "The Expert Panel endorses a majority of the standards for safe handling of hazardous drugs as issued by the US Occupational Safety and Health Administration," },
+    { claim: "ASCO endorses OSHA, USP chapter 800, the NIOSH 2004 Alert and ONS standards", grade: "Consensus-based standard", source: "asco-2018", quote: "The Expert Panel endorses a majority of the standards for safe handling of hazardous drugs as issued by the US Occupational Safety and Health Administration," },
     { claim: "Routine ongoing medical surveillance: role unclear", grade: "Consensus-based standard", source: "asco-2018", quote: "The role of routine ongoing medical surveillance programs that include medical screening, laboratory testing, or other biologic monitoring is unclear, because there are no published data to reliably inform a standard or best practice." },
     { claim: "CSTD plus safe handling versus safe handling alone", grade: "very low certainty (GRADE)", source: "cochrane-cstd-2018", quote: "Currently, no firm conclusions can be drawn on the effect of CSTD combined with safe handling versus safe handling alone due to very low certainty evidence available for the main outcomes." },
     { claim: "Order of control measures under COSHH", grade: "UK regulation (COSHH)", source: "hse-cytotoxics", quote: "Measures to control exposure should be applied in the following order: use totally enclosed systems where reasonably practicable control exposure at source, for example, by using adequate extraction systems and appropriate organisational measures issue personal protective equipment where adequate control cannot be achieved by other measures alone" },
@@ -241,7 +241,7 @@ export const hazardousDrugHandlingInClinicalAreas = protocol({
   related: ["sact-administration-checks-at-the-chair"],
   upgrades: [],
   gaps: [
-    "USP <800> (usp.org refused a script) and the ISOPP Standards for the Safe Handling of Cytotoxics (2022, paywalled) could not be read; what USP <800> requires is stated here only as ASCO (2019) reports it.",
+    "USP chapter 800 (usp.org refused a script) and the ISOPP Standards for the Safe Handling of Cytotoxics (2022, paywalled) could not be read; what USP chapter 800 requires is stated here only as ASCO (2019) reports it.",
     "NIOSH moved its PPE-by-activity guidance from the hazardous drug list into 'Managing Hazardous Drug Exposures: Information for Healthcare Settings' (2023), which could not be retrieved; the PPE steps here come from the 2004 NIOSH Alert, which is older.",
     "No European Union or NHS-specific standard for chair-side PPE could be read; UK waste colour coding for cytotoxic waste is not stated by any source read.",
     "Whether CSTDs improve staff health is unknown: the Cochrane review found only observational studies at serious risk of bias.",

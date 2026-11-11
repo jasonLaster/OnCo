@@ -13,6 +13,7 @@ import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoro
 import { drugDesensitisationAfterAnticancerHypersensitivity } from "./drug-desensitisation-after-anticancer-hypersensitivity";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-in-clinical-areas";
+import { hepaticDoseAdjustmentOfAnticancerDrugs } from "./hepatic-dose-adjustment-of-anticancer-drugs";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
@@ -46,6 +47,7 @@ export const protocols: ProtocolInput[] = [
   drugDesensitisationAfterAnticancerHypersensitivity,
   febrileNeutropeniaFirstHour,
   hazardousDrugHandlingInClinicalAreas,
+  hepaticDoseAdjustmentOfAnticancerDrugs,
   implantedPortAccessAndCare,
   infusionReactionManagement,
   intrathecalChemotherapyAndVincaAlkaloidSafety,

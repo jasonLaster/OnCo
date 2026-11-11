@@ -214,8 +214,31 @@ export const evidenceBridges: TermInput[] = [
     tldr: "A model needs the components required to answer its particular question. A model that works for one experiment may leave out the biology needed for another.",
     summary: "Tumor models differ in which cancer, stromal and immune components they retain, and those properties can change with the method. A primary organoid study preserved endogenous immune cells and examined checkpoint-blockade responses in that system. This establishes capabilities of a defined model, not a universal ability to predict clinical treatment benefit. The question, retained components, exposure, readout and comparison against relevant observations should accompany a model claim.",
     technologies: ["organoids", "pdx-models"], related: ["cell-lines-as-proxy", "cell-composition-confound", "external-validation", "experimental-versus-clinical-exposure"],
-    links: [paper("Organoid modeling of the tumor immune microenvironment (2018)", "10.1016/j.cell.2018.11.021")],
-  }),
+    links: [
+  {
+    "label": "Organoid modeling of the tumor immune microenvironment (2018)",
+    "url": "https://doi.org/10.1016/j.cell.2018.11.021"
+  },
+  {
+    "label": "Source for experimental setting and intended-use interpretation",
+    "url": "https://www.fda.gov/media/154985/download"
+  },
+  {
+    "label": "Source for experimental setting and intended-use interpretation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/"
+  }
+],
+
+"asOf": "2026-11-10",
+"notes": [
+  "Question-first reading framework. Name the intervention, required cells or processes, endpoint, observation time and intended inference. Predicting a molecular change, culture growth, scan response and benefit from a treatment strategy are different questions. Trust belongs to this question and evidence, not the model name or complexity. Include the consequence of an incorrect answer when deciding how much supporting evidence the use needs.",
+  "Construction and readout. Record source and identity, retained or added populations, viable window, preparation/version and missing components. Define measured or predicted object, units, reference and uncertainty. Check relevant controls, baseline growth and population attribution. A lower count than a dividing control is not necessarily a count below the start. Reliability within a run, independent biological specimens and correctness answer different questions. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC4887336/ ; https://pubmed.ncbi.nlm.nih.gov/30550791/ Human-derived cells or tissue are not complete human physiology. Repeatability can preserve a systematic error; a measured treatment effect does not identify its mechanism without comparisons that distinguish alternative explanations.",
+  "Prediction and proposed use. Evaluate outcomes not used to build or tune a rule, retain failures, uncertainty and mismatches, and examine relevant baselines. Attach assay version, population, treatment and endpoint to agreement. Ladan's preoperative breast-slice comparison cannot validate an unrelated postoperative drug or assay. Clinical validity and benefit from using a decision strategy remain distinct; the analytical-versus-clinical-validation owner holds that distinction. Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/",
+  "Scoped computational analogy. FDA's 2023 device-simulation guidance distinguishes verification of the mathematical implementation from empirical validation with independent observations, and treats calibration as separate from validation. Its stated scope is first-principles computational models in medical-device submissions, not a blanket rule for every machine-learning system or living culture. We use the distinction as a reading framework, not a universal certification ladder. Source: https://www.fda.gov/media/154985/download",
+  "Fictional example. A tumour-only culture repeatedly responds to Drug A. This does not test an immune-dependent Drug B or prove benefit because the cells came from a patient. Check the required immune interaction, actual intervention, endpoint and independent validation. Repeatability cannot repair a mismatch between question and model. These are invented drugs and a reading exercise. Complexity is useful when it represents biology necessary for the question and remains measurable. A simpler model may isolate a mechanism, while another model is needed for an interaction absent from it. More components alone do not show better prediction.",
+  "Recap. Question, construction, measurement and controls, intended prediction and proposed use are a checklist of distinct questions rather than a mandatory sequence or trust score. State what the model is trusted to answer, the evidence supporting that use and the questions still open."
+]
+}),
   t({
     id: "confounding-by-indication", name: "Confounding by indication", category: "Trials", aka: ["treatment-selection confounding", "indication bias"],
     tldr: "People often receive different treatments because their health or cancer differs. Those starting differences can distort a comparison of outcomes between treatments.",

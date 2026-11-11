@@ -11,6 +11,7 @@ import { centralLineOcclusionManagement } from "./central-line-occlusion-managem
 import { centralLineRemoval } from "./central-line-removal";
 import { centralVenousCatheterInsertionForAnticancerTherapy } from "./central-venous-catheter-insertion-for-anticancer-therapy";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
+import { communityCareOfVascularAccessDevices } from "./community-care-of-vascular-access-devices";
 import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-education-before-anticancer-treatment";
 import { doseBandingOfAnticancerDrugs } from "./dose-banding-of-anticancer-drugs";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
@@ -50,6 +51,7 @@ export const protocols: ProtocolInput[] = [
   centralLineRemoval,
   centralVenousCatheterInsertionForAnticancerTherapy,
   chemotherapyExtravasationManagement,
+  communityCareOfVascularAccessDevices,
   consentAndEducationBeforeAnticancerTreatment,
   doseBandingOfAnticancerDrugs,
   dpydTestingBeforeFluoropyrimidines,

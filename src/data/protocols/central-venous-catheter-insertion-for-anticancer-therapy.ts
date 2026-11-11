@@ -237,7 +237,7 @@ export const centralVenousCatheterInsertionForAnticancerTherapy = protocol({
       accessed: "2026-11-11",
     },
   ],
-  technologies: ["picc-lines", "implanted-ports", "picc-tip-location-systems", "infusion-devices-vascular-access"],
+  technologies: ["picc-lines", "implanted-ports", "infusion-devices-vascular-access"],
   terms: ["central-venous-access"],
   related: ["venous-access-device-selection-for-anticancer-therapy", "picc-and-tunnelled-line-care", "implanted-port-access-and-care", "catheter-related-thrombosis-in-cancer"],
   upgrades: [],

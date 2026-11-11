@@ -1,4 +1,5 @@
 import type { ProtocolInput } from "@/lib/schema";
+import { ambulatoryChemotherapyPumpsAtHome } from "./ambulatory-chemotherapy-pumps-at-home";
 import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
 import { asepticCompoundingOfHazardousAnticancerDrugs } from "./aseptic-compounding-of-hazardous-anticancer-drugs";
 import { bloodSamplingFromACentralLine } from "./blood-sampling-from-a-central-line";
@@ -34,6 +35,7 @@ import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access
  * round resolves by keeping both sides. Rules in docs/PROTOCOLS.md.
  */
 export const protocols: ProtocolInput[] = [
+  ambulatoryChemotherapyPumpsAtHome,
   anticancerDrugInteractionReview,
   asepticCompoundingOfHazardousAnticancerDrugs,
   bloodSamplingFromACentralLine,

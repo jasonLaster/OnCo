@@ -134,6 +134,11 @@ import { precisionDosing } from "./spikes/precision-dosing";
 import { precisionRoadmap } from "./spikes/precision-roadmap";
 import { protocolUpgradesRtSurgery } from "./spikes/protocol-upgrades-rt-surgery";
 import { protocolUpgradesCare } from "./spikes/protocol-upgrades-care";
+import { protocolUpgradesAdministration } from "./spikes/protocol-upgrades-administration";
+import { protocolUpgradesPharmacyAccess } from "./spikes/protocol-upgrades-pharmacy-access";
+import { protocolUpgradesFillGi } from "./spikes/protocol-upgrades-fill-gi";
+import { protocolUpgradesFillSkin } from "./spikes/protocol-upgrades-fill-skin";
+import { protocolUpgradesFillBody } from "./spikes/protocol-upgrades-fill-body";
 import { rejuvenationMeasurement } from "./spikes/rejuvenation-measurement";
 import { tests } from "./tests";
 import { testsCdxDevices } from "./tests-cdx-devices";
@@ -327,6 +332,7 @@ import { hospicesSupportGaps } from "./hospices-support-gaps-2026-11";
 import { palliativeNavigationFertilityGaps } from "./palliative-navigation-fertility-gaps-2026-11";
 import { psychosocialGeneticsGaps } from "./psychosocial-genetics-gaps-2026-11";
 import { helplinesGaps } from "./helplines-gaps-2026-11";
+import { protocols } from "./protocols";
 
 const RAW_INPUTS: EntityInput[] = [
   ...ucsfBreastTrials,
@@ -443,6 +449,11 @@ const RAW_INPUTS: EntityInput[] = [
   ...precisionRoadmap,
   ...protocolUpgradesRtSurgery,
   ...protocolUpgradesCare,
+  ...protocolUpgradesAdministration,
+  ...protocolUpgradesPharmacyAccess,
+  ...protocolUpgradesFillGi,
+  ...protocolUpgradesFillSkin,
+  ...protocolUpgradesFillBody,
   ...rejuvenationMeasurement,
   ...tests,
   ...testsCdxDevices,
@@ -506,6 +517,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...cansimOncologyTerms, ...cansimMethodsTerms, ...cansimTargets,
   ...scoringSystemsGapTerms,
   ...hospicesSupportGaps, ...palliativeNavigationFertilityGaps, ...psychosocialGeneticsGaps, ...helplinesGaps,
+  ...protocols,
 ];
 
 /** Readout ids by parent target id and by the drugs their current thresholds name (see the biomarker branch in ALL_INPUTS). */
@@ -519,6 +531,14 @@ for (const bm of ALL_READOUTS) {
 // A test or device names the readouts it measures in its own `related` (src/data/readout-test-records.ts), never the
 // readout's `drugs`, which holds what a result selects.
 for (const [bmId, ids] of Object.entries(READOUT_TEST_RECORDS)) for (const id of ids) { const list = (READOUTS_BY_DRUG[id] ??= []); if (!list.includes(bmId)) list.push(bmId); }
+
+/**
+ * Care protocols (./protocols/) by each device, medicine and glossary term they name. The reverse link is written
+ * here, as for readouts, so a protocol is reached from the pages it concerns and is not an orphan; those pages list
+ * their protocols in their own section (src/lib/members.ts `protocolsFor`) and leave them out of Connected.
+ */
+const PROTOCOLS_BY_RECORD: Record<string, string[]> = {};
+for (const pr of protocols) for (const id of new Set([...(pr.technologies ?? []), ...(pr.drugs ?? []), ...(pr.terms ?? [])])) (PROTOCOLS_BY_RECORD[id] ??= []).push(pr.id);
 
 /** Every input, with glossary terms mapped to their canonical category (see ./term-categories.ts). */
 /**
@@ -606,6 +626,8 @@ const RECORDS: EntityInput[] = RAW_INPUTS_DEDUPED.map((base) => {
   // citing record, whatever its kind, gains the paper in `keyPapers`. Applied first so the kind-specific steps below see it.
   const cited = citedPaperLinksWave7[raw.id];
   let e: EntityInput = cited ? { ...raw, keyPapers: [...(raw.keyPapers ?? []), ...cited.filter((id) => !(raw.keyPapers ?? []).includes(id))] } : raw;
+  const prs = PROTOCOLS_BY_RECORD[e.id];
+  if (prs) e = { ...e, related: [...(e.related ?? []), ...prs.filter((id) => !(e.related ?? []).includes(id))] };
   // Patient education links (src/data/patient-education-links-2026-11.ts): NCCN Guidelines for Patients, NCI PDQ patient
   // summaries and ONS/NCODA patient education sheets, appended to the record's own links; an address it holds is not repeated.
   const edu = patientEducationLinks[e.id];

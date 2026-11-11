@@ -58,7 +58,7 @@ export const simpleB: Record<string, string> = {
   "synthetic-lethality": "Two changes can kill a cell together even when either change alone is tolerated. A genetic finding alone does not show that a particular drug will produce this effect.",
   crs: "Immune-cell activation can cause widespread inflammation called cytokine release syndrome. Doctors assess the symptoms and other possible causes; a cytokine level alone does not diagnose it.",
   icans: "Immune-effector treatment can affect language, attention and other brain functions. A cognitive score is one part of assessing these changes, alongside other possible causes.",
-  irae: "An immune-related side effect is harm attributed to treatment-driven immune activity. A symptom during treatment does not by itself prove an immune cause.",
+  irae: "Checkpoint drugs can make immune activity harm the bowel, skin, liver, lungs or hormone glands. Treatment depends on the organ and severity and may include steroids or hormone replacement.",
   "abscopal-effect": "When irradiating one tumour makes untreated tumours elsewhere shrink, through the immune system.",
   "immunogenic-cell-death": "A way of dying that alerts the immune system.",
 

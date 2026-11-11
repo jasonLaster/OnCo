@@ -240,7 +240,7 @@ const spike: Spike = {
       "Lenvatinib-pembrolizumab toxicity forces dose reductions in two-thirds of patients.",
     ],
     targets: ["tp53", "vegf", "pdl1", "kras"],
-    technologies: ["fertility-sparing-endometrial", "sentinel-node", "brachytherapy", "mri", "germline-testing", "robotic-surgery"],
+    technologies: ["fertility-sparing-endometrial", "sentinel-node", "brachytherapy", "mri", "germline-testing", "robotic-surgery", "fertility-preservation"],
     terms: ["endometrial-molecular-classes", "tumour-agnostic"],
     companies: ["gsk", "merck", "astrazeneca", "eisai", "karyopharm", "genmab", "daiichi-sankyo", "nrg-oncology"],
     related: ["chemo-io-first-line-endometrial", "lenvatinib-plus-pembrolizumab", "io-plus-vegf"],

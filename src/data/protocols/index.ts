@@ -1,4 +1,6 @@
 import type { ProtocolInput } from "@/lib/schema";
+import { antiVegfDrugsAroundSurgery } from "./anti-vegf-drugs-around-surgery";
+import { antithromboticInterruptionAroundSurgery } from "./antithrombotic-interruption-around-surgery";
 import { careInTheLastDaysOfLife } from "./care-in-the-last-days-of-life";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { enhancedRecoveryAfterBreastReconstruction } from "./enhanced-recovery-after-breast-reconstruction";
@@ -15,11 +17,13 @@ import { enhancedRecoveryAfterRadicalCystectomy } from "./enhanced-recovery-afte
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { indwellingPleuralCatheterDrainageAtHome } from "./indwelling-pleural-catheter-drainage-at-home";
+import { lymphoedemaRiskReductionAfterNodeSurgery } from "./lymphoedema-risk-reduction-after-node-surgery";
 import { malignantAscitesDrainage } from "./malignant-ascites-drainage";
 import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
 import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
 import { routinePreoperativeTests } from "./routine-preoperative-tests";
+import { sentinelNodeTracersAndBlueDyeSafety } from "./sentinel-node-tracers-and-blue-dye-safety";
 import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
 import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
 import { syringeDriverContinuousSubcutaneousInfusion } from "./syringe-driver-continuous-subcutaneous-infusion";
@@ -30,6 +34,8 @@ import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer
  * round resolves by keeping both sides. Rules in docs/PROTOCOLS.md.
  */
 export const protocols: ProtocolInput[] = [
+  antiVegfDrugsAroundSurgery,
+  antithromboticInterruptionAroundSurgery,
   careInTheLastDaysOfLife,
   chemotherapyExtravasationManagement,
   enhancedRecoveryAfterBreastReconstruction,
@@ -46,11 +52,13 @@ export const protocols: ProtocolInput[] = [
   febrileNeutropeniaFirstHour,
   implantedPortAccessAndCare,
   indwellingPleuralCatheterDrainageAtHome,
+  lymphoedemaRiskReductionAfterNodeSurgery,
   malignantAscitesDrainage,
   mouthCareDuringCancerTreatment,
   opioidSwitchingAndConversion,
   palliativeSedation,
   routinePreoperativeTests,
+  sentinelNodeTracersAndBlueDyeSafety,
   strongOpioidsForCancerPain,
   surgicalSiteInfectionPrevention,
   syringeDriverContinuousSubcutaneousInfusion,

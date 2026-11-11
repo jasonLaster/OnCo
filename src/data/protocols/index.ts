@@ -1,4 +1,6 @@
 import type { ProtocolInput } from "@/lib/schema";
+import { cancerAssociatedVteTreatment } from "./cancer-associated-vte-treatment";
+import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
 import { chemotherapyExtravasationManagement } from "./chemotherapy-extravasation-management";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
@@ -13,6 +15,8 @@ import { sactPrescribingAndPharmacyVerification } from "./sact-prescribing-and-p
  * round resolves by keeping both sides. Rules in docs/PROTOCOLS.md.
  */
 export const protocols: ProtocolInput[] = [
+  cancerAssociatedVteTreatment,
+  catheterRelatedThrombosisInCancer,
   chemotherapyExtravasationManagement,
   dpydTestingBeforeFluoropyrimidines,
   febrileNeutropeniaFirstHour,

@@ -233,7 +233,7 @@ export const careInTheLastDaysOfLife = protocol({
   technologies: ["syringe-drivers", "palliative-care"],
   terms: ["last-days-of-life-care", "palliative-sedation", "advance-care-planning", "respect-process"],
   related: ["strong-opioids-for-cancer-pain", "palliative-sedation-for-refractory-suffering"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-prophylactic-antimuscarinic-when-dying-recognised"],
   gaps: [
     "NICE NG31 names drug classes but no doses; anticipatory medicine doses come from local formularies and were not read here. The common UK set (an opioid, midazolam, an antiemetic such as levomepromazine or haloperidol, and an antimuscarinic) is local practice and is not stated as such in NG31.",
     "NICE NG31 dates from December 2015 and has not been updated; the Korean guideline is from 2020. No newer national guideline on the last days of life was read.",

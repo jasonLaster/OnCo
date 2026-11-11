@@ -290,7 +290,7 @@ export const tldr_de: Record<string, string> = {
   "francis-crick": "Das Francis Crick Institute ist Europas größtes biomedizinisches Forschungsinstitut und Heimat der TRACERx-Studien zur Tumorevolution (Swanton).",
   "fred-hutch": "Geburtsort der Knochenmarktransplantation (Thomas, Nobelpreis 1990) und ein CAR-T-Pionier (Riddell).",
   "frontier-2035": "Radikale Onkologie ist eine Horizontkarte der kühneren Ideen in der Krebsforschung, sortiert danach, wie nah sie daran sind, wirklich etwas zu bewirken, jeweils mit dem Grund, warum sie vielleicht nie ankommen.",
-  "functional-drug-testing": "Die eigenen Krebszellen eines Patienten in einer Schale züchten und Medikamente direkt an ihnen testen, statt anhand der Genetik zu raten.",
+
   gallbladder: "Gallenblasenkrebs ist ein Krebs des Gallenspeichersacks unter der Leber, der meist zufällig entdeckt wird, wenn die Gallenblase wegen Steinen entfernt wird. Früh erkannt, kann eine zweite Operation zur Entfernung des Leberbetts und der Lymphknoten ihn heilen; bei fortgeschrittener Erkrankung wird die Chemotherapie heute mit einer Immuntherapie kombiniert, und gegen HER2 gerichtete Antikörper helfen der Untergruppe, deren Tumoren HER2 überexprimieren.",
   galleri: "Ein Bluttest, der auf mehr als 50 Krebsarten gleichzeitig screent und im September 2026 der FDA vorliegt.",
   "gardasil-9": "Ein Impfstoff gegen neun HPV-Typen, der etwa 90 % der Gebärmutterhalskrebsfälle verhindert und inzwischen mit einer einzigen Dosis wirkt.",
@@ -599,7 +599,7 @@ export const tldr_de: Record<string, string> = {
   "oncotype-dx": "Ein 21-Gen-Test, der den meisten Frauen mit hormonrezeptorpositivem Brustkrebs im Frühstadium sagt, ob sie sicher auf eine Chemotherapie verzichten können.",
   optune: "Optune ist ein tragbares Gerät, das elektrische Felder abgibt, die die Zellteilung stören. Es ist für das Glioblastom zugelassen und wurde 2026 auch für Bauchspeicheldrüsenkrebs zugelassen.",
   "organ-tropism-seed-soil": "Brustkrebs geht in Knochen, Lunge, Leber und Gehirn; Prostatakrebs in die Knochen; Darmkrebs in die Leber; das Aderhautmelanom fast ausschließlich in die Leber. Pagets Idee aus dem Jahr 1889 gilt noch immer: Wohin sich ein Krebs ausbreitet, hängt sowohl vom Samen (dem Programm der Zelle) als auch vom Boden (der Aufnahmebereitschaft des Organs) ab. Jeder Boden hat seinen eigenen Teufelskreis, und einige davon lassen sich mit Medikamenten angreifen.",
-  organoids: "Patientenabgeleitete Organoide sind winzige 3D-Versionen des Tumors eines Patienten, die im Labor gezüchtet werden.",
+
   orr: "Die objektive Ansprechrate (ORR) ist der Prozentsatz der Patienten, deren Tumoren um mindestens 30 % schrumpfen.",
   os: "Das Gesamtüberleben (OS) misst, wie lange Patienten leben, Punkt. Es ist der Goldstandard unter den Endpunkten.",
   osimertinib: "Osimertinib (Tagrisso) ist die Standardtablette bei Lungenkrebs mit EGFR-Mutation und wird inzwischen auch nach der Operation sowie zusammen mit Chemotherapie oder nach einer Radiochemotherapie gegeben.",
@@ -727,7 +727,7 @@ export const tldr_de: Record<string, string> = {
   "belantamab-mafodotin": "Ein ADC gegen das Myelom, das 2022 vom Markt genommen wurde und 2025 nach überzeugenden Studien in früheren Therapielinien zurückkehrte.",
   beone: "BeOne Medicines stellt Brukinsa, den führenden BTK-Inhibitor, und tislelizumab her und ist der Asien-Partner für zanidatamab.",
   "bgb-16673": "Statt BTK zu blockieren, zerstört diese Tablette das Enzym, sodass sie auch dann wirkt, wenn es mutiert ist, um jedem Hemmer zu entgehen.",
-  "bh3-profiling": "Ein Labortest, der misst, wie nahe eine Leukämiezelle an der Selbstzerstörung ist und welches Überlebensprotein sie davon abhält, um das Ansprechen auf Medikamente vom Typ venetoclax vorherzusagen.",
+
   big: "Die Breast International Group ist der Dachverband von über 50 akademischen Brustkrebsgruppen weltweit und Mitsponsor von OlympiA, APHINITY und HERA.",
   biocon: "Indiens größtes biopharmazeutisches Unternehmen, 1978 von Kiran Mazumdar-Shaw gegründet, und Muttergesellschaft von Biocon Biologics, das kostengünstige Nachbildungen der Antikörper trastuzumab und bevacizumab herstellt.",
   biomarker: "Alles im Körper oder Tumor Messbare, das etwas Nützliches verrät: um welche Krebsart es sich handelt, wie sie sich voraussichtlich verhält oder welches Medikament wahrscheinlich wirkt.",
@@ -1583,7 +1583,7 @@ export const tldr_de: Record<string, string> = {
   cdsco: "Indiens nationale Arzneimittelbehörde unter Leitung des Drugs Controller General of India, die neue Krebsmedikamente zulässt und die Generika- und Biosimilar-Industrie überwacht, die einen Großteil der Welt versorgt.",
   "cedars-sinai-cancer": "Die Krebssparte des größten gemeinnützigen Krankenhauses von Los Angeles, bekannt für Blasenkrebsbiologie, Gliom-Immuntherapie und das KI-Projekt Molecular Twin.",
   "celestial-tncll": "CELESTIAL-TNCLL prüft die rein orale Zweierkombination der nächsten Generation gegen den derzeitigen zeitlich begrenzten Standard; Ergebnisse werden ab Ende 2026 erwartet.",
-  "cell-line": "Eine Population von Zellen, meist vor Jahrzehnten aus einem Tumor entnommen, die sich im Labor unbegrenzt weiter teilt. Das Arbeitspferd der Krebsforschung: billig, schnell und beliebig reproduzierbar, aber nur eine entfernte Verwandte eines echten Tumors.",
+
   "cell-therapy-cold-chain": "Einfrieren, Lagerung, Transport und Auftauen können Zellen für eine spätere Verwendung erhalten. Die validierten Bedingungen und Prüfungen gelten für das jeweilige Zellprodukt.",
   "centre-antoine-lacassagne": "Das Krebszentrum von Nizza und ein Pionier der Protonentherapie in Frankreich, das Augenmelanome seit 1991 mit Protonen behandelt.",
   "centre-oscar-lambret": "Das regionale Krebszentrum für Nordfrankreich, bekannt für Kinderonkologie, Sarkome, gynäkologische Krebserkrankungen und Strahlentherapie.",
@@ -1985,7 +1985,7 @@ export const tldr_de: Record<string, string> = {
   imroz: "In IMROZ senkte die Zugabe von Isatuximab zu VRd die Progression bei älteren Patienten ohne Transplantation um 40 %.",
   "in-situ": "Lateinisch für \"an Ort und Stelle\": abnorme Zellen, die wie Krebs aussehen, aber die Schicht, in der sie entstanden sind, noch nicht durchbrochen haben. Stadium 0. Noch nicht in der Lage, sich auszubreiten, und meist durch Entfernung heilbar.",
   "in-situ-vaccination": "Einen Tumor so aggressiv behandeln, dass das Immunsystem lernt, alle anderen anzugreifen, wobei der Tumor selbst als Impfstoff dient.",
-  "in-vitro-in-vivo": "In vitro bedeutet \"im Glas\": Experimente an Zellen oder Molekülen in einer Schale. In vivo bedeutet \"im Lebenden\": Experimente an Tieren oder Menschen. Ein Medikament, das Krebszellen in vitro abtötet, hat nur die erste und leichteste Hürde genommen.",
+
   inavo120: "Eine Dreifachkombination, die die progressionsfreie Zeit verdoppelte und, ungewöhnlich für diese Erkrankung, das Überleben in einer schwer behandelbaren Gruppe um sieben Monate verlängerte.",
   "inc-colombia": "Kolumbiens nationales Krebsinstitut, zuständig für die Krebsbekämpfungspolitik, das nationale Krebsobservatorium und die spezialisierte Versorgung in Bogotá.",
   indigo: "Der erste Erfolg einer zielgerichteten Therapie bei niedriggradigen Hirntumoren: eine Tablette, die die Zeit bis zum Tumorwachstum mehr als verdoppelte und Strahlen- und Chemotherapie um Jahre hinauszögerte.",
@@ -2170,7 +2170,7 @@ export const tldr_de: Record<string, string> = {
   "oral-serd": "Ein oraler SERD ist eine Tablette, die den Östrogenrezeptor abbaut, statt ihn nur zu blockieren, und die monatliche Fulvestrant-Spritze ersetzt.",
   "oral-serd-plus-cdk46-after-esr1": "Wenn eine ESR1-Mutation auftritt, den Aromatasehemmer durch einen oralen SERD ersetzen und den CDK4/6-Inhibitor weiterführen.",
   "orano-med": "Orano Med ist der führende Hersteller von Blei-212 und der Entwickler von 212Pb-DOTAMTATE (AlphaMedix).",
-  organoid: "Eine winzige dreidimensionale Version eines Gewebes oder Tumors, die im Labor aus den eigenen Zellen eines Patienten gezüchtet wird. Tumororganoide bewahren mehr vom Charakter des ursprünglichen Krebses als flache Zelllinien und lassen sich nutzen, um Medikamente am Krebs des jeweiligen Patienten zu testen.",
+
   "organoid-guided-therapy-scale": "Organoid-gesteuerte Therapie bedeutet, routinemäßig ein Stück des Tumors jedes Patienten zu züchten und daran Medikamente zu testen, bevor man sich entscheidet, statt sich allein auf die Genetik zu verlassen.",
   "orna-therapeutics": "Unternehmen für In-vivo-CAR-Therapien auf Basis zirkulärer RNA, im Februar 2026 für rund 2,4 Milliarden Dollar von Eli Lilly übernommen.",
   "osaka-international-cancer-institute": "Das Krebszentrum der Präfektur Osaka, eines der größten reinen Krebskrankenhäuser Japans und Sitz des Krebsregisters Osaka.",
@@ -3211,7 +3211,7 @@ export const tldr_de: Record<string, string> = {
   "mistletoe-extracts": "Injizierbare Mistelextrakte sind die am häufigsten verordnete komplementäre Krebsbehandlung im deutschsprachigen Europa. Jahrzehnte von Studien haben nicht gezeigt, dass sie das Leben verlängern; einige deuten auf eine bessere Lebensqualität während der Chemotherapie hin, doch die Studien sind schwach, und die größten gut durchgeführten waren negativ.",
   "mitchell-schnall": "Mitchell Schnall ist der Radiologe, der die Bildgebungsforschung in die Kooperationsgruppe ECOG-ACRIN brachte.",
   mmrf: "Eine Myelomstiftung, die den wichtigsten offenen Genomdatensatz der Krankheit (CoMMpass) aufgebaut und einen Großteil der Wissenschaft hinter den heutigen Therapien finanziert hat; zugleich eine Anlaufstelle für Patientenunterstützung und Lotsendienste.",
-  "model-organism": "Eine Art, die im Labor untersucht wird, um die mit dem Menschen geteilte Biologie zu verstehen: allen voran Mäuse, dazu Zebrafische, Fliegen, Würmer und Hefe. Mäuse mit menschlichen Tumoren sind das Standardtestfeld für Krebsmedikamente, und ein notorisch unvollkommenes.",
+
   mogamulizumab: "Mogamulizumab ist ein Antikörper, der bei Mycosis fungoides und dem Sézary-Syndrom, der leukämischen Form des Hautlymphoms, krebsartige T-Zellen aus dem Blut entfernt.",
   "monaleesa-2": "Die erste CDK4/6-Inhibitor-Studie, die zeigte, dass die Ergänzung der Hormontherapie durch die Tablette Frauen länger leben lässt, um etwa ein Jahr.",
   "monarch-3": "Abemaciclib verdoppelte in Kombination mit einem Aromatasehemmer die Zeit bis zur Progression ungefähr; der Überlebensgewinn von etwa 13 Monaten verfehlte knapp die statistische Signifikanz.",

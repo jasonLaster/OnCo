@@ -140,8 +140,8 @@ export const tldr_zh: Record<string, string> = {
   "companion-diagnostic": "决定某种药物是否适合你的检测，与药物一同获批。",
   "hrd-testing": "揭示肿瘤DNA修复系统是否损坏的检测，可预测对PARP抑制剂和铂类的反应。",
   "germline-testing": "检测你出生时携带的DNA，寻找BRCA或Lynch综合征等遗传风险基因。",
-  "functional-drug-testing": "在培养皿中培养患者自身的癌细胞并直接测试药物，而非从基因猜测。",
-  organoids: "在实验室培养的患者肿瘤的微型3D版本。",
+
+
   "pdx-models": "在小鼠体内生长的患者肿瘤，用于在药物进入人体前测试。",
   proteomics: "测量肿瘤中的蛋白，即药物真正打击的对象，而非编码它们的基因。",
   "methylation-profiling": "读取揭示细胞身份的DNA化学标记，用于脑肿瘤分类和血液癌症检测。",
@@ -898,7 +898,7 @@ export const tldr_zh: Record<string, string> = {
   "beatson-glasgow": "苏格兰最大的癌症中心，以首位将内分泌治疗用于乳腺癌的外科医生命名，毗邻一家领先的癌症生物学研究所。",
   beone: "BeOne Medicines生产领先的BTK抑制剂Brukinsa以及tislelizumab，并且是zanidatamab的亚洲合作伙伴。",
   "bgb-16673": "这种口服药不是阻断BTK，而是将其摧毁，因此即使该酶已发生突变以逃避所有抑制剂，它仍然有效。",
-  "bh3-profiling": "一种实验室检测，衡量白血病细胞离自我毁灭有多近，以及是哪种存活蛋白在阻止它，以预测对venetoclax类药物的反应。",
+
   big: "Breast International Group是全球50多个学术性乳腺癌研究组织的伞式组织，也是OlympiA、APHINITY和HERA的共同赞助方。",
   biocon: "印度最大的生物制药公司，由Kiran Mazumdar-Shaw于1978年创立，是Biocon Biologics的母公司，后者生产抗体trastuzumab和bevacizumab的低价仿制版本。",
   biomarker: "身体或肿瘤中任何可测量、并能提供有用信息的东西：这是哪种癌症，它可能如何发展，或者哪种药物可能有效。",
@@ -1686,7 +1686,7 @@ export const tldr_zh: Record<string, string> = {
   cdsco: "印度的国家药品监管机构，由Drugs Controller General of India领导，负责批准新的抗癌药物，并监管为世界大部分地区供药的仿制药和生物类似药产业。",
   "cedars-sinai-cancer": "洛杉矶最大非营利医院的癌症机构，以膀胱癌生物学、胶质瘤免疫治疗和Molecular Twin人工智能项目著称。",
   "celestial-tncll": "CELESTIAL-TNCLL将新一代全口服双药方案与现行固定疗程标准治疗进行比较，预计从2026年底开始公布结果。",
-  "cell-line": "一群通常在几十年前取自某个肿瘤的细胞，能在实验室中无限分裂下去。它是癌症研究的主力工具：廉价、快速、可无限重复，但与真正的肿瘤只是远亲。",
+
   "cell-therapy-cold-chain": "冷冻、储存、运输和解冻可以保存细胞供日后使用。经过验证的条件和检查要求属于特定的细胞产品。",
   "centre-antoine-lacassagne": "尼斯的癌症中心，也是法国质子治疗的先驱，自1991年起用质子治疗眼部黑色素瘤。",
   "centre-oscar-lambret": "法国北部的地区癌症中心，以儿科肿瘤学、肉瘤、妇科肿瘤和放射治疗著称。",
@@ -2075,7 +2075,7 @@ export const tldr_zh: Record<string, string> = {
   imroz: "在IMROZ试验中，在VRd基础上加用isatuximab使不接受移植的老年患者的疾病进展风险降低了40%。",
   "in-situ": "拉丁语，意为“原位”：看起来像癌症的异常细胞，但尚未突破其起源的那一层组织。0期。尚不具备扩散能力，通常切除即可治愈。",
   "in-situ-vaccination": "对一个肿瘤进行极为强力的治疗，使免疫系统学会攻击其他所有肿瘤，把肿瘤本身当作疫苗。",
-  "in-vitro-in-vivo": "In vitro意为“在玻璃中”：在培养皿中对细胞或分子进行的实验。In vivo意为“在活体中”：在动物或人体内进行的实验。一种能在体外杀死癌细胞的药物，只是跨过了第一道也是最容易的一道门槛。",
+
   inavo120: "一种三药联合方案，使无进展时间翻倍，并且在这种疾病中罕见地为一个难治群体延长了7个月的生存期。",
   "inc-colombia": "哥伦比亚国家癌症研究所，负责癌症防控政策、国家癌症观察站以及波哥大的专科诊疗。",
   indigo: "靶向治疗在低级别脑肿瘤中的首次胜利：一种口服药使肿瘤生长前的时间延长了一倍以上，将放疗和化疗推迟了数年。",
@@ -2248,7 +2248,7 @@ export const tldr_zh: Record<string, string> = {
   "oral-serd": "口服 SERD 是一种药片，它会降解雌激素受体而不仅仅是阻断它，从而取代每月一次的氟维司群注射。",
   "oral-serd-plus-cdk46-after-esr1": "当出现 ESR1 突变时，将芳香化酶抑制剂换成口服 SERD，并继续使用 CDK4/6 抑制剂。",
   "orano-med": "Orano Med 是领先的铅-212 生产商，也是 212Pb-DOTAMTATE（AlphaMedix）的开发者。",
-  organoid: "在实验室中用患者自身细胞培养出的微型三维组织或肿瘤。肿瘤类器官比平面细胞系更能保留原发癌症的特性，可用于在患者自己的癌症上测试药物。",
+
   "organoid-guided-therapy-scale": "类器官指导治疗是指常规培养每位患者的一小块肿瘤，并在选择治疗之前先在其上测试药物，而不是仅仅依赖基因检测。",
   "orna-therapeutics": "一家基于环状 RNA 的体内 CAR 公司，于2026年2月被 Eli Lilly 以约24亿美元收购。",
   "osaka-international-cancer-institute": "大阪府立癌症中心，日本最大的肿瘤专科医院之一，也是大阪癌症登记处的所在地。",
@@ -3243,7 +3243,7 @@ export const tldr_zh: Record<string, string> = {
   "mistletoe-extracts": "注射用槲寄生提取物是德语区欧洲处方最多的癌症补充治疗。数十年的研究并未表明它们能延长生命；有些研究提示化疗期间的生活质量有所改善，但这些试验质量较弱，而规模最大、设计最严谨的试验结果为阴性。",
   "mitchell-schnall": "Mitchell Schnall 是将影像学研究引入 ECOG-ACRIN 合作组的放射科医师。",
   mmrf: "一家骨髓瘤基金会，建立了该疾病最重要的开放基因组数据集（CoMMpass），并资助了当今疗法背后的大量科学研究；同时也是患者支持和导航资源。",
-  "model-organism": "在实验室中研究以理解与人类共有的生物学的物种：首先是小鼠，还有斑马鱼、果蝇、线虫和酵母。携带人类肿瘤的小鼠是抗癌药物的标准试验平台，但也是一个众所周知并不完美的平台。",
+
   mogamulizumab: "Mogamulizumab 是一种抗体，可在蕈样肉芽肿和 Sézary 综合征（皮肤淋巴瘤的白血病形式）中清除血液中的癌性 T 细胞。",
   "monaleesa-2": "首个表明在内分泌治疗基础上加用该口服药可使女性延长生存约一年的 CDK4/6 抑制剂试验。",
   "monarch-3": "Abemaciclib 加入芳香化酶抑制剂后，至疾病进展的时间大约延长了一倍；约13个月的生存获益以微弱差距未达到统计学显著性。",
@@ -7441,7 +7441,7 @@ export const tldr_zh: Record<string, string> = {
   "tim3-blockade": "针对TIM-3的抗体——疲惫T细胞和髓系细胞上的检查点，主要与PD-1药物联合并在血液肿瘤中测试。",
   "trispecific-antibodies": "经改造可同时结合三个目标的抗体，例如一个肿瘤抗原、一个T细胞激活剂和一个共刺激信号，以产生更强或更具选择性的免疫攻击。",
   "clonal-evolution-tracking": "对肿瘤的多个部位或随时间变化的血液进行测序，绘制其突变“家谱”，找出驱动复发和耐药的分支。",
-  "tumour-on-chip": "在类血管通道和免疫细胞环境中培养肿瘤细胞的小型微流控装置，让研究者在比培养皿更接近真实的环境中观察药物作用。",
+
   "virus-specific-t-cells": "来自健康供者、能识别EB病毒的现货型T细胞，用于治疗移植后由病毒驱动的淋巴瘤；tabelecleucel于2022年在欧洲获批。",
   // Added 17 Sept 2026: the curated drugs that lacked a translation.
   abarelix: "Abarelix是首个用于前列腺癌的GnRH拮抗剂，2003年在美国获批用于不能使用激动剂的男性，但过敏反应限制了其使用，2005年退出美国市场；在部分国家仍有供应。",
@@ -11088,7 +11088,7 @@ export const tldr_zh: Record<string, string> = {
 
   "cellsearch-ctc-count": "唯一获监管机构批准的计数完整癌细胞的血液检测；一小管血中有五个以上细胞，提示转移性乳腺癌、前列腺癌和肠癌预后较差，但仅凭计数更换治疗并未让患者获益。",
   "parsortix-ctc-harvest": "一种微流控盒，按细胞大小和硬度而非表面标志物从血液中截留癌细胞，再将其完整释放供检测；是美国首个获批的此类装置，用于转移性乳腺癌。",
-  "functional-precision-medicine-haematology": "从患者血液或骨髓取出血癌细胞，几天内暴露于一组已上市药物，把能杀死癌细胞又不伤健康细胞的药物用回患者身上；维也纳的一项试验发现，超过一半经多线治疗的患者因此优于上一次治疗。",
+
   "sarcoma-methylation-classifier": "脑肿瘤甲基化分类器在肉瘤领域的姐妹工具：全基因组甲基化芯片由机器学习模型解读，把骨或软组织肿瘤归入六十多个类别之一，在显微镜无法判断时很有用。",
   "urine-bladder-cancer-tests": "一族尿液检测，寻找癌细胞或其 DNA 和 RNA；目前都还不能取代膀胱镜检查，但较新的检测已足够可靠，能让低风险患者安全地少做几次。",
   "bladder-epicheck": "以色列 Nucleix 公司的尿液检测，读取十五个 DNA 甲基化标志物并给出膀胱癌复发评分，旨在让随访患者少做一些膀胱镜检查。",

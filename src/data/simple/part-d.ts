@@ -332,7 +332,7 @@ export const simpleD: Record<string, string> = {
   "autologous-stem-cell-transplant": "Collecting a patient's own blood-forming cells, giving very high-dose chemotherapy, then returning the cells to rebuild the bone marrow.",
   "phage-delivery": "Using viruses that infect only bacteria, not human cells, as programmable shells to deliver cancer drugs and vaccines.",
   "bariatric-surgery-cancer-incidence": "People with severe obesity who have weight-loss surgery develop about a third fewer cancers over the next decade than similar people who do not.",
-  "bh3-profiling": "A lab test that measures how close a leukaemia cell is to self-destructing, to predict which drugs will push it over the edge.",
+  "bh3-profiling": "A laboratory test that measures how a cell's mitochondria respond to defined challenges. This helps researchers study readiness for cell death; it does not by itself establish which treatment will help a patient.",
   "biliary-stenting-drainage": "A small tube placed by endoscope or through the skin reopens a blocked bile duct, relieving jaundice so chemotherapy can be given.",
   biobanking: "Freezers full of donated tumour samples with matching medical records, which every new test and drug programme depends on.",
   bioemu: "An AI program that predicts the many shapes a protein moves between, thousands of times faster than traditional simulation.",

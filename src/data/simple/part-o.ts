@@ -156,7 +156,7 @@ export const simpleO: Record<string, string> = {
   "ultrasound-elastography-ceus": "Elastography measures how stiff a lump is, since cancers are usually hard, and microbubble contrast shows blood flow through it, both without radiation.",
   "electron-beam-therapy-systems": "Electron beams stop within a few centimetres of the skin, so they treat surface tumours, scars and even the whole skin without reaching the organs underneath.",
   "endoscopic-ultrasound-systems": "Endoscopic ultrasound puts an ultrasound probe on the tip of an endoscope to see through the gut or airway wall, stage tumours and guide a needle into lymph nodes.",
-  "functional-precision-medicine-haematology": "Blood cancer cells from a patient are exposed within days to a panel of approved drugs, and a Vienna trial found this beat the previous treatment in more than half of patients.",
+  "functional-precision-medicine-haematology": "Testing drug responses in collected blood-cancer cells. A result needs the sample, assay and study context; a clinical study of one selection method does not validate every screen.",
   "fes-pet": "FES PET uses a radioactive form of oestrogen to light up every tumour deposit still carrying the oestrogen receptor, showing whether metastases will respond to hormone treatment.",
   "flash-research-accelerators": "FLASH research accelerators deliver a whole radiation dose in a fraction of a second so scientists can test whether ultra-fast dosing spares healthy tissue in people.",
   "flow-cytometers": "A flow cytometer streams cells one at a time past lasers and reads the fluorescent tags on each, which is how leukaemias and lymphomas are typed and residual disease is measured.",
@@ -471,7 +471,7 @@ export const simpleO: Record<string, string> = {
   "tumour-control-probability-models": "Tumour control and normal tissue complication curves turn a radiation dose into two probabilities, how likely the tumour is to be wiped out and how likely a nearby organ is to be harmed.",
   "tumour-doubling-time": "Tumour volume doubling time, measured from two scans, tells cancers from harmless lung nodules in screening, sorts aggressive from slow disease and estimates how long a tumour has been present.",
   "immune-tumour-dynamics-models": "Predator-prey style equations describe how immune cells hunt tumour cells, reproducing dormancy, escape and the delayed responses seen with immunotherapy, and now help design combination trials.",
-  "tumour-on-chip": "A tumour-on-a-chip is a small device that grows tumour cells alongside blood-vessel-like channels and immune cells, letting researchers watch drugs act in a more life-like setting than a dish.",
+  "tumour-on-chip": "A small engineered culture device for studying selected tumour interactions. Its cells, channels and conditions vary by design and must be measured.",
   "virus-specific-t-cells": "Virus-specific T cells are off-the-shelf donor T cells that recognise Epstein-Barr virus, used against virus-driven lymphomas after transplant, with tabelecleucel approved in Europe in 2022.",
   // targets
   srd5a2: "5-alpha-reductase turns testosterone into a stronger hormone inside the prostate, and finasteride and dutasteride block it, cutting prostate cancer diagnoses in two large trials.",

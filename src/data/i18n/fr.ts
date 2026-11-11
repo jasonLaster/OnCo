@@ -290,7 +290,7 @@ export const tldr_fr: Record<string, string> = {
   "francis-crick": "Le Francis Crick Institute est le plus grand institut de recherche biomédicale d'Europe et le foyer des études TRACERx sur l'évolution des tumeurs (Swanton).",
   "fred-hutch": "Berceau de la greffe de moelle osseuse (Thomas, Nobel 1990) et pionnier des CAR-T (Riddell).",
   "frontier-2035": "L'oncologie radicale est une carte d'horizon des idées les plus audacieuses en cancérologie, classées selon leur proximité d'un impact réel, avec la raison pour laquelle chacune pourrait ne jamais aboutir.",
-  "functional-drug-testing": "Cultiver les propres cellules cancéreuses d'un patient dans une boîte et tester directement les médicaments sur elles, au lieu de deviner à partir de la génétique.",
+
   gallbladder: "Le cancer de la vésicule biliaire est un cancer de la poche qui stocke la bile sous le foie, le plus souvent découvert par hasard lorsque la vésicule est retirée pour des calculs. Détecté tôt, une seconde opération pour nettoyer le lit hépatique et les ganglions peut le guérir ; dans la maladie avancée, la chimiothérapie s'accompagne désormais d'une immunothérapie, et les anticorps dirigés contre HER2 aident le sous-groupe dont les tumeurs surexpriment HER2.",
   galleri: "Un test sanguin de dépistage de plus de 50 cancers à la fois, soumis à la FDA en septembre 2026.",
   "gardasil-9": "Un vaccin contre neuf types de HPV qui prévient environ 90 % des cancers du col de l'utérus, et qui fonctionne désormais avec une seule dose.",
@@ -599,7 +599,7 @@ export const tldr_fr: Record<string, string> = {
   "oncotype-dx": "Un test de 21 gènes qui indique à la plupart des femmes atteintes d'un cancer du sein précoce hormonosensible si elles peuvent se passer de chimiothérapie en toute sécurité.",
   optune: "Optune est un dispositif portable qui délivre des champs électriques perturbant la division cellulaire. Il est approuvé pour le glioblastome et, en 2026, pour le cancer du pancréas.",
   "organ-tropism-seed-soil": "Le cancer du sein va vers l'os, le poumon, le foie et le cerveau ; le cancer de la prostate vers l'os ; le cancer du côlon vers le foie ; le mélanome uvéal presque uniquement vers le foie. L'idée de Paget, formulée en 1889, reste valable : l'endroit où un cancer se propage dépend à la fois de la graine (le programme de la cellule) et du sol (l'accueil réservé par l'organe). Chaque sol a son propre cercle vicieux, et certains peuvent être ciblés par des médicaments.",
-  organoids: "Les organoïdes dérivés de patients sont des versions miniatures en 3D de la tumeur d'un patient, cultivées en laboratoire.",
+
   orr: "Le taux de réponse objective (ORR) est le pourcentage de patients dont les tumeurs diminuent d'au moins 30 %.",
   os: "La survie globale (OS) mesure combien de temps les patients vivent, tout simplement. C'est le critère d'évaluation de référence.",
   osimertinib: "Osimertinib (Tagrisso) est le comprimé de référence pour le cancer du poumon avec mutation EGFR, désormais aussi donné après la chirurgie et avec une chimiothérapie ou après une chimioradiothérapie.",
@@ -727,7 +727,7 @@ export const tldr_fr: Record<string, string> = {
   "belantamab-mafodotin": "Un ADC contre le myélome retiré du marché en 2022, puis revenu en 2025 après des essais solides dans des lignes de traitement plus précoces.",
   beone: "BeOne Medicines fabrique Brukinsa, le premier inhibiteur de BTK du marché, et tislelizumab, et est le partenaire asiatique pour zanidatamab.",
   "bgb-16673": "Au lieu de bloquer BTK, ce comprimé le détruit, de sorte qu'il agit même lorsque l'enzyme a muté pour échapper à tous les inhibiteurs.",
-  "bh3-profiling": "Un test de laboratoire qui mesure à quel point une cellule leucémique est proche de s'autodétruire, et quelle protéine de survie la retient, afin de prédire la réponse aux médicaments de type venetoclax.",
+
   big: "Le Breast International Group est la structure qui fédère plus de 50 groupes académiques de recherche sur le cancer du sein dans le monde et le co-promoteur d'OlympiA, APHINITY et HERA.",
   biocon: "La plus grande entreprise biopharmaceutique d'Inde, fondée par Kiran Mazumdar-Shaw en 1978, et maison mère de Biocon Biologics, qui fabrique des copies à bas coût des anticorps trastuzumab et bevacizumab.",
   biomarker: "Tout ce qui est mesurable dans le corps ou la tumeur et qui apporte une information utile : de quel type de cancer il s'agit, comment il risque d'évoluer, ou quel médicament a des chances d'être efficace.",
@@ -1583,7 +1583,7 @@ export const tldr_fr: Record<string, string> = {
   cdsco: "L'autorité nationale de régulation des médicaments de l'Inde, dirigée par le Drugs Controller General of India, qui approuve les nouveaux médicaments anticancéreux et supervise l'industrie des génériques et des biosimilaires qui approvisionne une grande partie du monde.",
   "cedars-sinai-cancer": "Le pôle de cancérologie du plus grand hôpital à but non lucratif de Los Angeles, connu pour la biologie du cancer de la vessie, l'immunothérapie des gliomes et le projet d'IA Molecular Twin.",
   "celestial-tncll": "CELESTIAL-TNCLL compare la bithérapie orale de nouvelle génération au standard actuel à durée fixe, avec des résultats attendus à partir de fin 2026.",
-  "cell-line": "Une population de cellules, généralement prélevées sur une tumeur il y a des décennies, qui continue de se diviser indéfiniment en laboratoire. L'outil de base de la recherche sur le cancer : peu coûteuse, rapide et reproductible à l'infini, mais une cousine éloignée d'une vraie tumeur.",
+
   "cell-therapy-cold-chain": "La congélation, le stockage, le transport et la décongélation peuvent préserver des cellules pour une utilisation ultérieure. Les conditions et les contrôles validés concernent le produit cellulaire précis.",
   "centre-antoine-lacassagne": "Le centre de lutte contre le cancer de Nice et un pionnier de la protonthérapie en France, qui traite le mélanome de l'œil par protons depuis 1991.",
   "centre-oscar-lambret": "Le centre régional de lutte contre le cancer du nord de la France, réputé pour l'oncologie pédiatrique, les sarcomes, les cancers gynécologiques et la radiothérapie.",
@@ -1985,7 +1985,7 @@ export const tldr_fr: Record<string, string> = {
   imroz: "Dans IMROZ, l'ajout de l'isatuximab au VRd a réduit la progression de 40 % chez des patients âgés non candidats à une greffe.",
   "in-situ": "Du latin « sur place » : des cellules anormales qui ressemblent à un cancer mais n'ont pas encore franchi la couche dans laquelle elles sont apparues. Stade 0. Encore incapables de se propager, et généralement guérissables par exérèse.",
   "in-situ-vaccination": "Traiter une tumeur si vigoureusement que le système immunitaire apprend à attaquer toutes les autres, en utilisant la tumeur elle-même comme vaccin.",
-  "in-vitro-in-vivo": "In vitro signifie « dans le verre » : des expériences sur des cellules ou des molécules dans une boîte de culture. In vivo signifie « dans le vivant » : des expériences chez l'animal ou chez l'humain. Un médicament qui tue des cellules cancéreuses in vitro n'a franchi que le premier obstacle, le plus facile.",
+
   inavo120: "Une triple association qui a doublé le temps sans progression et, fait inhabituel dans cette maladie, prolongé la survie de sept mois dans un groupe difficile à traiter.",
   "inc-colombia": "L'institut national du cancer de Colombie, chargé de la politique de lutte contre le cancer, de l'observatoire national du cancer et des soins spécialisés à Bogotá.",
   indigo: "La première victoire d'une thérapie ciblée dans les tumeurs cérébrales de bas grade : un comprimé qui a plus que doublé le délai avant la croissance de la tumeur, repoussant de plusieurs années la radiothérapie et la chimiothérapie.",
@@ -2170,7 +2170,7 @@ export const tldr_fr: Record<string, string> = {
   "oral-serd": "Un SERD oral est un comprimé qui détruit le récepteur des œstrogènes au lieu de simplement le bloquer, remplaçant l'injection mensuelle de fulvestrant.",
   "oral-serd-plus-cdk46-after-esr1": "Lorsqu'une mutation ESR1 apparaît, remplacer l'inhibiteur de l'aromatase par un SERD oral et poursuivre l'inhibiteur de CDK4/6.",
   "orano-med": "Orano Med est le premier producteur de plomb-212 et le développeur du 212Pb-DOTAMTATE (AlphaMedix).",
-  organoid: "Une version tridimensionnelle miniature d'un tissu ou d'une tumeur, cultivée en laboratoire à partir des propres cellules du patient. Les organoïdes tumoraux conservent davantage le caractère du cancer d'origine que les lignées cellulaires en culture plate et permettent de tester des médicaments sur le cancer du patient lui-même.",
+
   "organoid-guided-therapy-scale": "La thérapie guidée par organoïdes consiste à cultiver systématiquement un fragment de la tumeur de chaque patient et à y tester des médicaments avant de choisir, plutôt que de s'appuyer sur la seule génétique.",
   "orna-therapeutics": "Société de CAR in vivo à ARN circulaire, rachetée par Eli Lilly pour environ 2,4 milliards de dollars en février 2026.",
   "osaka-international-cancer-institute": "Le centre de cancérologie de la préfecture d'Osaka, l'un des plus grands hôpitaux exclusivement dédiés au cancer du Japon et siège du registre du cancer d'Osaka.",
@@ -3211,7 +3211,7 @@ export const tldr_fr: Record<string, string> = {
   "mistletoe-extracts": "Les extraits de gui injectables sont le traitement complémentaire du cancer le plus prescrit dans l'Europe germanophone. Des décennies d'études n'ont pas montré qu'ils prolongent la vie ; certaines suggèrent une meilleure qualité de vie pendant la chimiothérapie, mais les essais sont faibles et les plus grands essais bien menés ont été négatifs.",
   "mitchell-schnall": "Mitchell Schnall est le radiologue qui a introduit la recherche en imagerie dans le groupe coopératif ECOG-ACRIN.",
   mmrf: "Une fondation dédiée au myélome qui a constitué le jeu de données génomiques ouvert le plus important de la maladie (CoMMpass) et financé une grande partie de la science derrière les thérapies actuelles ; c'est aussi une ressource de soutien et d'orientation pour les patients.",
-  "model-organism": "Une espèce étudiée en laboratoire pour comprendre la biologie partagée avec l'humain : la souris avant tout, plus le poisson-zèbre, les mouches, les vers et la levure. Les souris porteuses de tumeurs humaines sont le banc d'essai standard des médicaments anticancéreux, et un banc d'essai notoirement imparfait.",
+
   mogamulizumab: "Le mogamulizumab est un anticorps qui élimine du sang les lymphocytes T cancéreux dans le mycosis fongoïde et le syndrome de Sézary, la forme leucémique du lymphome cutané.",
   "monaleesa-2": "Le premier essai d'un inhibiteur de CDK4/6 à montrer que l'ajout du comprimé à l'hormonothérapie fait vivre les femmes plus longtemps, d'environ un an.",
   "monarch-3": "L'abemaciclib a à peu près doublé le délai jusqu'à la progression lorsqu'il était ajouté à un inhibiteur de l'aromatase ; le gain de survie d'environ 13 mois a manqué de peu la significativité statistique.",

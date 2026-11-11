@@ -7,6 +7,7 @@ import { add, antibody, antibodyTips, arrow, box, cone, cylinder, dna, dots, ell
 import { ANIMATED } from "./animated";
 import { FRONT_ANIMATED } from "./front-animations";
 import { TERM_ANIMATED, termCategoryKey } from "./term-animations";
+import { FUNCTIONAL_MODEL_SCHEMATICS } from "./schematics-functional-model";
 
 /** All animated builders by key: technology ids, plus `front:<sectionId>` for the fronts (adcs reuses the ADC sequence). */
 export const ALL_ANIMATED: Record<string, () => Mesh> = { ...ANIMATED, ...Object.fromEntries(Object.entries(FRONT_ANIMATED).map(([k, f]) => [`front:${k}`, f])), "front:adcs": ANIMATED["adc"], ...Object.fromEntries(Object.entries(TERM_ANIMATED).map(([k, f]) => [`term:${k}`, f])) };
@@ -47,7 +48,7 @@ function linacBeamSet(angles: number[], target: Vec3, cls = "accent"): Mesh {
 }
 
 // ---------- registry ----------
-const S: Record<string, () => Mesh> = {};
+const S: Record<string, () => Mesh> = { ...FUNCTIONAL_MODEL_SCHEMATICS };
 
 // ===== Radiation =====
 S["brachytherapy"] = () => {

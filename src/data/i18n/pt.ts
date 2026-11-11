@@ -140,8 +140,8 @@ export const tldr_pt: Record<string, string> = {
   "companion-diagnostic": "O teste que decide se uma droga específica é certa para você, aprovado junto com a droga.",
   "hrd-testing": "Testes que revelam se um tumor tem o sistema de reparo do DNA quebrado, o que prevê a resposta a inibidores de PARP e platina.",
   "germline-testing": "Um teste do DNA com que você nasceu, para encontrar genes de risco hereditário como BRCA ou síndrome de Lynch.",
-  "functional-drug-testing": "Cultivar as próprias células cancerosas do paciente em placa e testar drogas diretamente nelas, em vez de adivinhar pela genética.",
-  organoids: "Versões 3D em miniatura do tumor de um paciente cultivadas em laboratório.",
+
+
   "pdx-models": "O tumor de um paciente cultivado em um camundongo, usado para testar drogas antes de chegarem às pessoas.",
   proteomics: "Medir as proteínas de um tumor, que é o que as drogas realmente atingem, em vez dos genes que as codificam.",
   "methylation-profiling": "Ler marcas químicas no DNA que revelam a identidade de uma célula, usado para classificar tumores cerebrais e detectar câncer no sangue.",
@@ -898,7 +898,7 @@ export const tldr_pt: Record<string, string> = {
   "beatson-glasgow": "O maior centro de câncer da Escócia, nomeado em homenagem ao cirurgião que primeiro usou a terapia endócrina para o câncer de mama, ao lado de um instituto líder em biologia do câncer.",
   beone: "A BeOne Medicines fabrica o Brukinsa, o principal inibidor de BTK, e o tislelizumab, e é a parceira na Ásia para o zanidatamab.",
   "bgb-16673": "Em vez de bloquear o BTK, este comprimido o destrói, por isso funciona mesmo quando a enzima mutou para escapar de todos os inibidores.",
-  "bh3-profiling": "Um teste de laboratório que mede quão perto uma célula leucêmica está de se autodestruir, e qual proteína de sobrevivência a está segurando, para prever a resposta a medicamentos do tipo venetoclax.",
+
   big: "O Breast International Group é o guarda-chuva de mais de 50 grupos acadêmicos de câncer de mama em todo o mundo e copatrocinador do OlympiA, APHINITY e HERA.",
   biocon: "A maior empresa biofarmacêutica da Índia, fundada por Kiran Mazumdar-Shaw em 1978, e controladora da Biocon Biologics, que fabrica cópias de baixo custo dos anticorpos trastuzumab e bevacizumab.",
   biomarker: "Qualquer coisa mensurável no corpo ou no tumor que diga algo útil: que tipo de câncer é, como ele provavelmente vai se comportar ou qual medicamento tem chance de funcionar.",
@@ -1686,7 +1686,7 @@ export const tldr_pt: Record<string, string> = {
   cdsco: "O regulador nacional de medicamentos da Índia, dirigido pelo Drugs Controller General of India, que aprova novos fármacos contra o cancro e supervisiona a indústria de genéricos e biossimilares que abastece grande parte do mundo.",
   "cedars-sinai-cancer": "A divisão oncológica do maior hospital sem fins lucrativos de Los Angeles, conhecida pela biologia do cancro da bexiga, pela imunoterapia do glioma e pelo projeto de IA Molecular Twin.",
   "celestial-tncll": "O CELESTIAL-TNCLL testa o dupleto totalmente oral de nova geração contra o atual padrão de duração fixa, com resultados esperados a partir do final de 2026.",
-  "cell-line": "Uma população de células, geralmente retiradas de um tumor há décadas, que continua a dividir-se indefinidamente no laboratório. O cavalo de batalha da investigação do cancro: barata, rápida e infinitamente reprodutível, mas uma prima distante de um tumor real.",
+
   "cell-therapy-cold-chain": "A congelação, o armazenamento, o transporte e a descongelação podem preservar células para utilização posterior. As condições e verificações validadas dizem respeito ao produto celular específico.",
   "centre-antoine-lacassagne": "O centro oncológico de Nice e pioneiro da protonterapia em França, que trata o melanoma ocular com protões desde 1991.",
   "centre-oscar-lambret": "O centro oncológico regional do norte de França, conhecido pela oncologia pediátrica, sarcomas, cancros ginecológicos e radioterapia.",
@@ -2075,7 +2075,7 @@ export const tldr_pt: Record<string, string> = {
   imroz: "No IMROZ, o isatuximab adicionado ao VRd reduziu a progressão em 40% em doentes mais velhos que não iam fazer transplante.",
   "in-situ": "Latim para 'no lugar': células anormais com aspeto de cancro que ainda não atravessaram a camada em que surgiram. Estádio 0. Ainda não conseguem espalhar-se e, em geral, curam-se com a sua remoção.",
   "in-situ-vaccination": "Tratar um tumor de forma tão agressiva que o sistema imunitário aprende a atacar todos os outros, usando o próprio tumor como vacina.",
-  "in-vitro-in-vivo": "In vitro significa 'em vidro': experiências com células ou moléculas numa placa. In vivo significa 'no ser vivo': experiências em animais ou pessoas. Um fármaco que mata células cancerosas in vitro superou apenas o primeiro e mais fácil obstáculo.",
+
   inavo120: "Uma combinação tripla que duplicou o tempo livre de progressão e, algo invulgar nesta doença, prolongou a sobrevivência em sete meses num grupo difícil de tratar.",
   "inc-colombia": "O instituto nacional do cancro da Colômbia, responsável pela política de controlo do cancro, pelo observatório nacional do cancro e pelos cuidados especializados em Bogotá.",
   indigo: "A primeira vitória da terapia dirigida em tumores cerebrais de baixo grau: um comprimido que mais do que duplicou o tempo até o tumor crescer, adiando a radioterapia e a quimioterapia por anos.",
@@ -2248,7 +2248,7 @@ export const tldr_pt: Record<string, string> = {
   "oral-serd": "Um SERD oral é um comprimido que destrói o recetor de estrogénio em vez de apenas o bloquear, substituindo a injeção mensal de fulvestrant.",
   "oral-serd-plus-cdk46-after-esr1": "Quando surge uma mutação ESR1, troque o inibidor da aromatase por um SERD oral e mantenha o inibidor de CDK4/6.",
   "orano-med": "A Orano Med é o principal produtor de chumbo-212 e o desenvolvedor do 212Pb-DOTAMTATE (AlphaMedix).",
-  organoid: "Uma versão tridimensional minúscula de um tecido ou tumor, cultivada em laboratório a partir das células do próprio doente. Os organoides tumorais conservam mais do carácter do cancro original do que as linhas celulares planas e podem ser usados para testar fármacos no cancro do próprio doente.",
+
   "organoid-guided-therapy-scale": "A terapia guiada por organoides consiste em cultivar rotineiramente um fragmento do tumor de cada doente e testar fármacos nele antes de escolher, em vez de confiar apenas na genética.",
   "orna-therapeutics": "Empresa de CAR in vivo baseado em RNA circular, comprada pela Eli Lilly por cerca de 2,4 mil milhões de dólares em fevereiro de 2026.",
   "osaka-international-cancer-institute": "O centro oncológico da prefeitura de Osaka, um dos maiores hospitais exclusivamente oncológicos do Japão e sede do Registo de Cancro de Osaka.",
@@ -3243,7 +3243,7 @@ export const tldr_pt: Record<string, string> = {
   "mistletoe-extracts": "Os extratos injetáveis de visco são o tratamento complementar contra o câncer mais prescrito na Europa de língua alemã. Décadas de estudos não mostraram que prolonguem a vida; alguns sugerem melhor qualidade de vida durante a quimioterapia, mas os ensaios são fracos e os maiores e mais bem conduzidos foram negativos.",
   "mitchell-schnall": "Mitchell Schnall é o radiologista que trouxe a pesquisa em imagem para o grupo cooperativo ECOG-ACRIN.",
   mmrf: "Uma fundação de mieloma que construiu o conjunto de dados genômicos aberto mais importante da doença (CoMMpass) e financiou grande parte da ciência por trás das terapias atuais; também é um recurso de apoio e navegação para pacientes.",
-  "model-organism": "Uma espécie estudada em laboratório para entender a biologia partilhada com os humanos: os camundongos acima de tudo, além de peixe-zebra, moscas, vermes e leveduras. Camundongos portadores de tumores humanos são o banco de testes padrão para fármacos contra o câncer, e um banco notoriamente imperfeito.",
+
   mogamulizumab: "O mogamulizumab é um anticorpo que elimina do sangue as células T cancerosas na micose fungoide e na síndrome de Sézary, a forma leucêmica do linfoma cutâneo.",
   "monaleesa-2": "O primeiro ensaio com inibidor de CDK4/6 a mostrar que adicionar o comprimido à hormonoterapia faz as mulheres viverem mais, cerca de um ano.",
   "monarch-3": "O abemaciclib aproximadamente duplicou o tempo até a progressão quando adicionado a um inibidor da aromatase; o ganho de sobrevida de cerca de 13 meses não atingiu por pouco a significância estatística.",

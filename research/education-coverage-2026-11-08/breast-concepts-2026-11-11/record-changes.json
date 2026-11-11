@@ -1,6 +1,7 @@
 {
-  "implementation": "Applied on the audit branch; not merged or deployed",
+  "implementation": "Applied in registered audit-draft owner fields; not merged or deployed",
   "baseHead": "51dc6d9f5f5dd42496e333cab7c352e986977ebc",
+  "checkpointParentHead": "d02cc0cc5e293d1f1d80639c47c125b995a13071",
   "owners": [
     {
       "owner": "basal-like",
@@ -122,15 +123,17 @@
           "after": [
             "A research expression label, a receptor-test classification, a histological type and an inherited-risk result describe different observations. Keep the specimen, classifier/version, preprocessing, reference data and uncertainty. A label or pathway-enrichment pattern alone does not establish functional dependence or benefit from a particular treatment.",
             "A normal-like or basal-like classifier output is not a diagnosis of benign tissue or proof of origin in a mature basal cell. The research classifier, receptor tests and histology remain separately interpretable.",
-            "Basal-marker immunohistochemistry provides contextual protein evidence, not a stand-alone RNA subtype or an exact lineage trace. SOX10 is the gene symbol for SRY-box transcription factor 10; the encoded protein is a transcription factor whose tissue assay commonly assesses nuclear signal. CK5/6 denotes cytokeratin structural proteins, while EGFR is also called HER1. Nielsen and colleagues evaluated an ER, HER2, CK5/6 and EGFR protein surrogate against expression-defined basal-like cancers and in a historical tissue series. A specified research panel is not equivalent to one marker reproducing a full RNA classifier.",
+            "Basal-marker immunohistochemistry provides contextual protein evidence, not a stand-alone subtype from ribonucleic acid (RNA) or an exact lineage trace. SOX10 is the gene symbol for SRY-box transcription factor 10; the encoded protein is a transcription factor whose tissue assay commonly assesses nuclear signal. CK5/6 denotes cytokeratins 5 and 6, epithelial structural proteins, while EGFR means epidermal growth factor receptor and is also called HER1. Nielsen and colleagues evaluated an ER, HER2, CK5/6 and EGFR protein surrogate against expression-defined basal-like cancers and in a historical tissue series. A specified research panel is not equivalent to one marker reproducing a full RNA classifier.",
             "Cimino-Mathews and colleagues found SOX10 nuclear staining in normal myoepithelial cells and in a subset of selected triple-negative and metaplastic breast carcinomas. Their series had 100 invasive cancers, with 38 of 58 basal-like, unclassified TNBC or metaplastic cases staining, compared with two of 42 luminal/HER2 cases. These selected-series frequencies are not universal prevalence or diagnostic sensitivity. SOX10 also occurs in other tumours, including melanoma and peripheral nerve-sheath tumours. Positive staining alone does not prove breast origin, and a negative result does not exclude breast carcinoma.",
             "Ask which cells carry the signal before interpreting a stain. Two fictional sketches can show SOX10-positive nuclei in benign myoepithelial cells around a duct and in a separate malignant-cell region. They are illustrations, not micrographs, positivity cutoffs or proof from anatomy alone. In a fictional axillary SOX10-positive mass, identify the intended cells and localisation, morphology, other markers and clinical context before assigning an origin. SOX10 does not by itself establish breast origin, basal-like RNA, Lehmann BL1, ancestry, treatment dependence or vaccine benefit.",
-            "A stain report needs the tissue/lesion and selected cells, fixation, antibody and protocol, nuclear or other expected localisation, scoring rule, presence, intensity and percentage among the intended cells, with internal and external controls. Preservation, scant tumour, background and staining of neighbouring benign cells can limit interpretation. Protein presence is not direct transcription-factor activity, an RNA classifier, lineage tracing or a drug-response assay. Associations with outcome in a tissue cohort do not establish added benefit from a treatment."
+            "A stain report needs the tissue/lesion and selected cells, fixation, antibody and protocol, nuclear or other expected localisation, scoring rule, presence, intensity and percentage among the intended cells. Appropriate positive and negative controls, including interpretable internal tissue controls, are needed. Preservation, scant tumour, background and staining of neighbouring benign cells can limit interpretation. Protein presence is not direct transcription-factor activity, an RNA classifier, lineage tracing or a drug-response assay. The percentage of stained tumour cells is not the probability that a treatment will work. Associations with outcome in a tissue cohort do not establish added benefit from a treatment."
           ],
           "beforeSha256": "ffe3a0ae53e8ab0c685448deb5b97e339c40c9a89233ff108e28fa926d794e87",
-          "afterSha256": "c9640583b7bc87514cc987bda8d1d54b4b69a375b1e4df085e4723a5ee24ff98"
+          "afterSha256": "5c270d8a93175f3fc04d89ae24a0f87cd1e329885f4787d54786ccf126b0df67"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "brca-germline",
@@ -216,7 +219,9 @@
           "beforeSha256": "249c294d85f579328939ccc1645c196f94dc13755561173cd1758aed57cbc06c",
           "afterSha256": "7c087332070b51867060f6d21c9d35fd6ee4ba362f7eb5cad45904b8947700b8"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "curative-intent",
@@ -274,24 +279,30 @@
             {
               "label": "Wikipedia",
               "url": "https://en.wikipedia.org/wiki/Palliative_care"
+            },
+            {
+              "label": "NCI Dictionary: remission",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/remission"
             }
           ],
           "beforeSha256": "3a8b62ae80bc1a7f2e841df70c23ef422c89bdbdc1a704f92ea9f0094d053a03",
-          "afterSha256": "a71e784afa035cdd7fc5ab445fda7340d4087dd338169eed70909f7799aecba9"
+          "afterSha256": "1fe42bab64aee4f18b92b98467dd37da913595ff3cd68e119fcdbb60adba8435"
         },
         {
           "field": "notes",
           "before": [],
           "after": [
-            "Surgery treats selected tissue, radiotherapy a planned volume and systemic therapy reaches sites through the body, without ensuring equal exposure or sensitivity everywhere. In nonmetastatic breast cancer, local and systemic treatments can contribute to a curative plan. Neoadjuvant treatment comes before the main treatment and adjuvant treatment after it; recurrence-reduction treatment can follow surgery when no tumour is visible. Sequence depends on the plan rather than a universal order.",
+            "Surgery treats selected tissue, radiotherapy a planned volume and systemic therapy reaches sites through the body, without ensuring equal exposure or sensitivity everywhere. Systemic treatment can aim at cancer too small to detect. In nonmetastatic breast cancer, local and systemic treatments can contribute to a curative plan. Surgery and radiotherapy can also aim at disease control or symptom relief; location alone does not establish intent. Neoadjuvant treatment comes before the main treatment and adjuvant treatment after it; recurrence-reduction treatment can follow surgery when no tumour is visible. Sequence depends on the plan rather than a universal order.",
             "For metastatic breast cancer the usual goals are control, longer life and symptom relief, but this statement is not a rule for every metastatic cancer or every selected clinical situation. Chemotherapy can contribute to cure, lower recurrence risk, slow growth or relieve symptoms. Shrinkage alone does not show a greater chance of durable cure. A proposed change needs evidence for the actual decision, along with safety and the person's priorities.",
-            "Assess effects using the relevant imaging, pathology, symptoms and defined recurrence or survival endpoints, with their clocks and duration of follow-up. A negative scan, pathological complete response or a fixed number of years does not guarantee that every cancer cell is absent. A recurrence does not prove every earlier treatment lacked benefit. NCI distinguishes remission, including complete remission, from the stronger claim that cancer will never return; observed group outcomes do not determine one person's future.",
+            "Assess effects using the relevant imaging, pathology, symptoms and defined recurrence or survival endpoints, with their clocks and duration of follow-up. A negative scan, pathological complete response or a fixed number of years does not guarantee that every cancer cell is absent. A recurrence does not prove every earlier treatment lacked benefit. Remission describes an observed decrease or disappearance of signs and symptoms. NCI distinguishes it, including complete remission, from the stronger claim that cancer will never return; observed group outcomes do not determine one person's future.",
             "Consider a fictional person who has surgery, no visible disease afterwards, planned adjuvant treatment and support for nausea. Nausea care or a palliative-care consultation does not by itself change a documented curative goal. Palliative care can begin during curative treatment and addresses symptoms, function and quality of life; it is not synonymous with hospice or with abandoning anticancer treatment. Ask separately what the plan aims to do and what has actually been measured."
           ],
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "afterSha256": "5a31123e274e276914f79cbdd8939fc4596afb80f3681d84cf9d7c974a7b541b"
+          "afterSha256": "191f127e316607573473dda32b78d6614090c144467454228eb6cb8393a73215"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "er-status",
@@ -372,7 +383,9 @@
           "beforeSha256": "b004950201005fe2203687c41f99608a025ea983770734f0e8fba1882e64047e",
           "afterSha256": "5579ead8dfb03c9d82c2f38f036eb0f926c49630d17679315042248b2503e5a1"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "gbrca-mutation",
@@ -449,7 +462,9 @@
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "afterSha256": "ba9c779df5e04d009fe321e796e666b2b17f7c3cfb1f713c4603dc90ceafce3b"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "germline-testing",
@@ -614,7 +629,7 @@
             "Lung cancer: most genomic testing in lung cancer is done on the tumour and says nothing about what you may have passed on, which is worth saying plainly because the two kinds of test are easily confused. The NHS explains the difference between genetic testing for inherited conditions and genomic testing of a tumour to guide treatment; NICE NG122 (1.2.12) points teams to the National Genomics Test Directory for the tumour panels."
           ],
           "after": [
-            "A known harmful family variant changes the meaning of a negative result. If a suitable assay excludes that specific variant, this is a true negative for that family finding, not a guarantee against all cancer. When no family explanation is known, a negative panel can be uninformative: family history can remain relevant without proving that a hidden mutation exists. A larger panel can add uncertain findings rather than a clearer explanation. Cascade testing means testing relatives for a confirmed family finding with their own consent and interpretation.",
+            "Consider two fictional negative reports. In one family, a harmful BRCA1 variant is already known and a suitable assay excludes that specific variant in the person tested. This is a true negative for that family finding, not a guarantee against all cancer. In another family, several relatives have had cancer but no causative family variant is known and a panel finds none. That result can be uninformative: family history can remain relevant without proving that a hidden mutation exists. A larger panel can add uncertain findings rather than a clearer explanation. Cascade testing means testing relatives for a confirmed family finding with their own consent and interpretation.",
             "Detection and interpretation are separate. The laboratory searches the regions and types of changes its method covers, then classifies a detected variant using evidence such as population frequency, segregation within families and functional studies. The ACMG/AMP framework uses pathogenic, likely pathogenic, uncertain significance, likely benign and benign categories; classifications can change as evidence develops. A VUS does not measure how severe an existing cancer is. That framework concerns Mendelian variant interpretation, not a complete rule for somatic drug selection.",
             "Keep the specimen, assay/version, genes and regions, covered variant types, reference sequence, exact variant, classification and limitations together. Blood, saliva or a cheek sample does not ordinarily require a tumour block, although the submitted aliquot is used for analysis. Sample adequacy, circumstances affecting whether a specimen represents constitutional DNA, untested regions or change types, and interpretation uncertainty can limit the answer. There is no universal percentage that means hereditary risk and no single positive cutoff shared by all assays.",
             "Testing can have implications for relatives and for privacy, insurance and the wish to know. Discuss these alongside consent and the possible results. A report describes what was tested and found; it is not a complete record of a family or a measurement of the tumour's present repair function. Tumour-only findings, constitutional origin and treatment eligibility need their own evidence. A harmful constitutional variant does not specify whether or when cancer will occur.",
@@ -625,9 +640,11 @@
             "Lung cancer: most genomic testing in lung cancer is done on the tumour and says nothing about what you may have passed on, which is worth saying plainly because the two kinds of test are easily confused. The NHS explains the difference between genetic testing for inherited conditions and genomic testing of a tumour to guide treatment; NICE NG122 (1.2.12) points teams to the National Genomics Test Directory for the tumour panels."
           ],
           "beforeSha256": "a808c796c2a61535f91f839a39cac7f9edfc9c8cd5b640f4a0b9ce418cc5deaa",
-          "afterSha256": "b9acdc00b2c44479c8235e517fbd368d99d05b531e3826cdc136dc7836cc687d"
+          "afterSha256": "5f496be8f8101312221ad6a5a3adf91afab9be634f106fa1c92768353bfa8606"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "her2-low",
@@ -730,7 +747,9 @@
           "beforeSha256": "370f485a02d4af97deebccdf9d44175d358ece8525817106c9a84f1584f3fa78",
           "afterSha256": "190b60bf6cb53646cb3f969518d7dc31d58751673680f4558c9ea840ebe54004"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "her2-positive",
@@ -745,9 +764,9 @@
         {
           "field": "summary",
           "before": "About 15-20% of breast cancers and a similar share of gastric/GEJ cancers are HER2-positive by ASCO/CAP criteria (IHC 3+, or IHC 2+ with in situ hybridisation amplification). They receive trastuzumab, pertuzumab, T-DM1 and T-DXd in curative and metastatic settings, with response-adapted pathways (KATHERINE, DESTINY-Breast). HER2-low (IHC 1+ or 2+/ISH-negative) and ultralow tumours are not 'positive' but respond to T-DXd, so the category is now a spectrum. HER2 mutations (rather than amplification) in lung cancer are targeted by T-DXd and zongertinib; HER2 amplification also occurs in colorectal, bladder and biliary cancers.",
-          "after": "HER2 is a cell-surface receptor protein encoded by ERBB2. Gene amplification, protein abundance measured by immunohistochemistry and RNA expression are different observations. In invasive breast cancer, HER2 status integrates the IHC pattern and indicated in-situ hybridisation workup under the applicable guideline. IHC 2+ is equivocal, not half-positive or a completed negative result.\n\nA HER2-positive result and a HER2-enriched RNA subtype are not interchangeable. HER2-low or ultralow staining remains negative for overexpression/amplification in the relevant breast context, while some specified treatment settings use low expression to select an antibody-drug conjugate. A signalling receptor can also serve as a delivery address; neither the label nor one staining category proves pathway dependence, eligibility or individual drug benefit.",
+          "after": "Human epidermal growth factor receptor 2 (HER2) is a cell-surface receptor protein encoded by ERBB2. Gene amplification, protein abundance measured by immunohistochemistry and RNA expression are different observations. In invasive breast cancer, HER2 status integrates the IHC pattern and indicated in-situ hybridisation workup under the applicable guideline. IHC 2+ is equivocal, not half-positive or a completed negative result.\n\nA HER2-positive result and a HER2-enriched RNA subtype are not interchangeable. HER2-low or ultralow staining remains negative for overexpression/amplification in the relevant breast context, while some specified treatment settings use low expression to select an antibody-drug conjugate. A signalling receptor can also serve as a delivery address; neither the label nor one staining category proves pathway dependence, eligibility or individual drug benefit.",
           "beforeSha256": "0e946bc69edb27a11433fd6c2c54c1d05434ca11694eb67fc6e058316c673f59",
-          "afterSha256": "df429e490d159c83b62ec90360dde76455627a751a4f1a22804cd70b0f0b8677"
+          "afterSha256": "6a5a92da30eddf64eb75403e92faac0bb9ea515d462bce40451c431358b40f46"
         },
         {
           "field": "asOf",
@@ -820,15 +839,17 @@
           ],
           "after": [
             "The September 2026 CAP template distinguishes negative IHC 0 with no detected membrane staining from negative 0+ with faint, incomplete staining in at most 10% of tumour cells. IHC 1+ has faint incomplete staining in more than 10%. A common 2+ pattern is weak to moderate complete staining in more than 10%, but intense complete staining in at most 10% and some incomplete patterns also need workup. IHC 3+ requires intense complete membrane staining in more than 10% of a homogeneous contiguous invasive tumour-cell population. This abbreviated map does not replace the full rules for unusual patterns, artefacts and heterogeneity.",
-            "Tissue IHC and ISH use sections from an identified specimen/block. IHC reports a membrane pattern category. A dual-probe ISH report retains counted cells, mean HER2 signals per cell, mean CEP17 signals per cell and the HER2/CEP17 ratio. In the Abbott PathVysion assay, CEP17 probes an alpha-satellite sequence in chromosome 17's centromeric region. The ratio is dimensionless and differs from the mean HER2 count; neither alone substitutes for the integrated algorithm, concurrent IHC and indicated recounting. Keep preservation, controls and distinct tumour populations visible in the interpretation.",
+            "Tissue IHC and ISH use sections from an identified specimen/block. IHC reports a membrane pattern category; ISH uses nucleic-acid probes in tissue to assess gene copies. A dual-probe ISH report retains counted cells, mean HER2 signals per cell, mean CEP17 signals per cell and the HER2/CEP17 ratio. In the Abbott PathVysion assay, CEP17 probes an alpha-satellite sequence in chromosome 17's centromeric region. The ratio is dimensionless and differs from the mean HER2 count; neither alone substitutes for the integrated algorithm, concurrent IHC and indicated recounting. Keep preservation, controls and distinct tumour populations visible in the interpretation.",
             "A drawing of a few cells can illustrate complete versus incomplete membrane staining and intensity, but it is not a counted field or a scoring standard. In a fictional comparison, the same faint incomplete pattern in at most 10% versus more than 10% changes 0+ to 1+ under the specified template; it does not establish drug eligibility. For another fictional completed report, IHC 2+, ratio 1.8, mean HER2 3.5 signals per cell and an integrated ISH-negative finding fit the HER2-negative, low-expression range. The ratio is not 1.8 copies and the example is not a complete algorithm or a medicine decision.",
             "Read the measurement sequence as IHC pattern, ISH when indicated, integrated status, then a separate evidence and eligibility question. IHC 0 does not mean literally zero protein molecules. An ERBB2 mutation, amplification, RNA abundance, a HER2-enriched expression label and surface protein staining cannot stand in for one another. HER2-low staining can occur within receptor-defined TNBC. Method, setting and treatment-specific evidence remain necessary.",
             "The RCPath UK breast dataset retains a different classification from ASCO/CAP for some dual-probe ISH group 2 cases: HER2/CEP17 ratio at least 2.0 with mean HER2 below 4 signals per cell. The UK dataset classifies these as positive. Under ASCO/CAP, concurrent IHC matters: IHC 3+ is positive, while IHC 2+ requires the specified recount and is negative if the same group persists; IHC 0 or 1+ is negative. Thus the US result is not uniformly negative from the ratio and copy number alone. The UK dataset asks for ratio and mean HER2 and CEP17 signals, with the guideline and specimen context retained."
           ],
           "beforeSha256": "731ab1fbf47c9ca7127748edda0648c9803344cf295cdf9ad2e2fd7ed8ea3c86",
-          "afterSha256": "c81ed88bb6317e1d3fe16914cb698950b268bad97aee697dad5da2fffa6a524a"
+          "afterSha256": "f2771c341e4f92bc58cabf96e49e8a083a75c142952ea7d94c3f26f46fd3ca76"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "hereditary-cancer-syndromes",
@@ -901,7 +922,9 @@
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "afterSha256": "9984e62b725e64ed8f24264a6380c235ff5bc50d4c9df51718beee6c1d0ec454"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "hormone-receptor-status",
@@ -973,7 +996,9 @@
           "beforeSha256": "3e79b250e62cc85d441a109a475a8ac1d9b3143dbecbd29b1e1784a4fd9fdcf5",
           "afterSha256": "ba37fecba3f97ae16452c89a714063eaacf612921ca2db373c635a9beaca29b5"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "hrd-in-breast-cancer",
@@ -1086,7 +1111,51 @@
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "afterSha256": "4d7aac681170b9c7ecd474513c2e81715adeb7c434c120c60fce7dc74a31f8e3"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
+    },
+    {
+      "owner": "nucleus",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "The compartment at the centre of a cell that holds the DNA, like a library that keeps the master copies of every instruction the cell might need.",
+          "after": "The nucleus is a compartment enclosed by a membrane that holds chromosomes containing DNA.",
+          "beforeSha256": "adf987fdd9600f9359ff58db2171842aac9c78bfc5895e4b763bdf77aadfaa0b",
+          "afterSha256": "35e0e4f5129b40e8f9628f9e0480e82d86d4af58a52d6ed7d46468f35254a0c5"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "after": "2026-11-11",
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "afterSha256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cell_nucleus"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cell_nucleus"
+            },
+            {
+              "label": "NCI Dictionary: nucleus",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/nucleus"
+            }
+          ],
+          "beforeSha256": "dee408cc92d54e1504d122f49a1e14d4aabd351859d612f38a6044bd87a1acdb",
+          "afterSha256": "fae2845c242bcbae9eeef22811be27a0bd7a902ab149004a8baad6823919fc8a"
+        }
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "oligometastatic",
@@ -1161,16 +1230,18 @@
           "field": "notes",
           "before": [],
           "after": [
-            "A few lit windows show what is detectable, not a census of every room. This analogy does not mean that every limited pattern conceals widespread disease. Synchronous and metachronous refer to when distant disease is detected under the author's timing definition. Induced limited disease follows previously widespread disease and systemic treatment. Oligoprogression means a growing subset while other disease remains controlled during treatment. Limited residual or persistent disease needs its response or progression state specified; these labels are not universal synonyms.",
+            "A few lit windows show what is detectable, not a census of every room. This analogy does not mean that every limited pattern conceals widespread disease. Synchronous metastases are detected near the initial diagnosis; metachronous metastases are detected later, with the interval defined by the author or protocol. Induced limited disease follows previously widespread disease and systemic treatment. Oligoprogression means a growing subset while other disease remains controlled during treatment. Limited residual or persistent disease means limited visible disease remains after treatment; specify whether it is stable or progressing. These labels are not universal synonyms.",
             "The SABR-COMET randomised phase 2 study enrolled 99 selected patients with different primary cancers, including 18 with breast cancer, a controlled primary and one to five treatable metastases. Its extended follow-up found eight-year overall survival of 27.2% with SABR plus standard care versus 13.6% with standard care alone, with grade 2 or higher acute or late toxicity of 30.3% versus 9.1%. This mixed-cancer result is not a definitive TNBC treatment effect. Control of an irradiated site, delay in progression, survival and symptom relief are different outcomes.",
             "NRG-BR002 tested adding ablation to first-line systemic therapy in breast cancer with at most four metastases, controlled primary disease, at most 12 months of first-line therapy without progression, and all visible sites amenable to SBRT or resection. Of 129 enrolled patients, 125 were eligible for analysis and 79% had HR-positive/HER2-negative disease. Median progression-free survival was 23.0 months without ablation and 19.5 months with it; the hazard ratio was 0.92, with a 95% confidence interval of 0.57 to 1.47. Overall survival did not differ significantly and the study did not proceed to phase 3. This does not supply a definitive effect for every subtype or erase a separate symptom-relief goal.",
             "Classification uses the imaging and its coverage and sensitivity, lesion and organ counts, locations, sizes, dates, previous burden, systemic treatment and response or progression history. A biopsy may be needed to confirm a finding, but classification is not inherently a tumour-consuming molecular assay. Benign mimics, undetected lesions and missing earlier records can mislead. Keep a protocol's count, timing, primary-control and treatability requirements; five lesions is not a cure cutoff and a molecular result does not universally establish this state.",
             "Three fictional histories can each contain two lesions now: two newly detected metastases with no earlier distant disease, two residual lesions after treatment of many, or two growing sites amid many stable sites during therapy. The numeral counts a different subset in each history. Keep the earlier burden and dates rather than merging these groups. A response-selected group and a progression-selected group answer different questions; curative intent is a documented goal whose success needs long-term outcome measurement, not an inference from the current count."
           ],
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "afterSha256": "63618471d4430abe52173da230ecd5158bd0eee2f978d821302d3adc9fc5e11c"
+          "afterSha256": "a78abc49ba3aa1dd79c28149176cafe5aa9fde38c0b4aee6386e269698fc7909"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "pr-status",
@@ -1251,7 +1322,9 @@
           "beforeSha256": "9b93e793a990fee3fd95261e0523ba72dac5770a6ce6a672cc82667815088ad6",
           "afterSha256": "9f02957fa880a1998527a143f9bcd4c53dfc38515afe1ae9ba9e8b0fa54be5f5"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "relapse-recurrence",
@@ -1328,7 +1401,55 @@
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "afterSha256": "39c90d6834b009f90aac6a3b2028bf220357cdc76f28bb629deac1a5c11c60ec"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
+    },
+    {
+      "owner": "remission",
+      "fields": [
+        {
+          "field": "summary",
+          "before": "In blood cancers, complete remission has precise definitions (normal blood counts, fewer than 5% blasts in the marrow) and can be refined by measuring minimal residual disease; in solid tumours the equivalent language is complete or partial response on scans, or 'no evidence of disease' after surgery. Whether a remission becomes a cure is only known with time: for most cancers, five years without recurrence is a reasonable proxy, though late relapses occur in breast cancer and melanoma. Immunotherapy has introduced durable remissions in metastatic disease that behave like cures, and 'functional cure' describes long control without eradication.",
+          "after": "Remission means a decrease or disappearance of signs and symptoms of cancer. In partial remission, some but not all have disappeared; in complete remission, all have disappeared, although cancer may still remain in the body. The assessment and its criteria depend on the cancer and the test or clinical context. Remission describes what is observed, rather than establishing that every cancer cell has been eliminated or that cancer will never return. The term itself supplies no universal timetable for declaring cure.",
+          "beforeSha256": "3a2c357468e1590f5ffbbf89f37c5beda50f2eded6be4759cced403b3dceec73",
+          "afterSha256": "b3e7c6bc4787c5c571e5bb94582b78d8a5e01b851bd9d781a6c5d0993310a8f8"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "after": "2026-11-11",
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "afterSha256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Remission_(medicine)"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Remission_(medicine)"
+            },
+            {
+              "label": "NCI Dictionary: remission",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/remission"
+            },
+            {
+              "label": "NCI: understanding cancer prognosis",
+              "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis"
+            }
+          ],
+          "beforeSha256": "268a9a9dbdfc65d87c08c55ddb363949c9b204db1cd82703feb7a3dbcb7de5a8",
+          "afterSha256": "e0d5cdee74df10f63dca7ddd4ab8491d2e02bf0eb7fd01214ea6ae5109236f2f"
+        }
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "secondary-brain-tumours",
@@ -1396,25 +1517,31 @@
             {
               "label": "nci breast pdq",
               "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+            },
+            {
+              "label": "NCI Dictionary: leptomeningeal metastasis",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/leptomeningeal-metastasis"
             }
           ],
           "beforeSha256": "6e0d572bbc06f4d6d9435eee817808018767295ee50411622a8188402936440d",
-          "afterSha256": "b4c7b35c5d6dfe26361e756d0b8cf0cc2e30effca3e217d346da0d449bc56959"
+          "afterSha256": "a6c308655034838b33f8836ae829a18abcb652d330de5518e0e410b77ff328c8"
         },
         {
           "field": "notes",
           "before": [],
           "after": [
-            "A breast-cancer deposit in the brain remains metastatic breast cancer, not a new primary brain cancer. Brain parenchymal metastases and leptomeningeal involvement are different sites; a study of CNS events may include both. Spread and successful growth require several biological steps. In Lockman's two mouse breast-cancer models, blood-tumour barrier permeability and drug uptake varied between and within metastases. This does not establish that every human brain deposit excludes every drug or that all drugs penetrate equally.",
+            "A breast-cancer deposit in the brain remains metastatic breast cancer, not a new primary brain cancer. Parenchymal metastases involve brain tissue; leptomeningeal spread involves the thin tissue layers covering the brain and spinal cord. A study of CNS events may include both. Spread and successful growth require several biological steps. In Lockman's two mouse breast-cancer models, blood-tumour barrier permeability and drug uptake varied between and within metastases. This does not establish that every human brain deposit excludes every drug or that all drugs penetrate equally.",
             "The denominator and starting clock change a brain-risk estimate. Lin and colleagues identified 116 patients treated for metastatic TNBC at one centre in 2000 to 2006: 14% had CNS involvement at metastatic diagnosis and 46% were diagnosed with it before death. Their CNS definition included parenchymal and leptomeningeal disease, and ascertainment was mostly symptom-led. Dawood and colleagues instead studied 2,448 stage I to III TNBC patients diagnosed in 1990 to 2010: the cumulative incidence of brain metastasis as first recurrence was 3.7% at two years and 5.4% at five years from diagnosis, treating death or another first recurrence as competing events. These are different selected populations and endpoints, not interchangeable early-disease and metastatic risks.",
             "Martin and colleagues' population-based study concerned invasive breast cancer diagnosed in 2010 to 2013 and brain metastases recorded at initial diagnosis, including subtype analyses. It was not a lifetime event study. To interpret any such estimate, retain imaging and clinical-record definitions, diagnosis and event dates, follow-up time, deaths, losses and any context-specific biopsy confirmation. Distinguish a diagnosis-time proportion, events per patient-time and cumulative incidence during a stated period. Referral patterns, missed asymptomatic disease, subtype definitions and incomplete follow-up can change what is observed. Historical cohorts cannot calibrate a modern individual forecast or establish a universal subtype ranking or screening interval.",
             "Death can prevent a later brain event and is therefore a competing event, not ordinary loss to follow-up. Likewise, first brain recurrence differs from any brain involvement after other recurrence. A reported share of recurrences with brain involvement needs the original patient denominator before it can describe patient risk. A cohort association does not itself validate a personal calculator or show that scheduled earlier detection improves survival.",
             "In a fictional cohort of 100 people with complete follow-up for two years from enrolment, 20 recur and five of those 20 have a brain event. The same five are 25% of those who recur and 5% of all enrolled people. Each person is counted once, with the five nested within the 20, not added as five more. These raw fractions assume complete observation; they are not competing-risk estimates. Restarting the clock at recurrence would ask a different question. Before applying a percentage, name the population, event, starting point, time window and follow-up method."
           ],
           "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "afterSha256": "b83e85d331b4ac9132bf608c720454ad2cd7449f8e7511c9709c0bb8373ca86a"
+          "afterSha256": "f67c5588b6f84bd7a3048c5114f515d3e5ec01ddecdaf2d1e9b54c08a44c442f"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     },
     {
       "owner": "tnbc",
@@ -2466,480 +2593,550 @@
           "beforeSha256": "40987fb1a934fd1b9d1690ba832b8e2d6a560dfe5054423ebcdc9f591e819dac",
           "afterSha256": "3db1d7271a633497cbe6fd6bcc3f72fbad4cc47912e3ae8975d26b500373aa7c"
         }
-      ]
+      ],
+      "priorNotesPreservedExceptNamedCorrections": true,
+      "priorSourceURLsPreserved": true
     }
   ],
   "newCanonicalRecords": 0,
-  "arrays": "All prior notes and source URLs preserved except three explicitly corrected contributor-note strings; implicit Wikipedia links were restored after readback.",
+  "preservation": "Existing notes and source URLs are preserved apart from the explicitly corrected contributor strings. New text stays on existing canonical owners.",
   "shortSummaryChanges": {
-    "entries": 45,
-    "withdrawnTranslations": 40,
-    "correctedSimple": 5,
-    "retainedCurativeIntentTranslations": "Prior text remains semantically compatible with the goal definition; preserved.",
-    "rows": [
+    "checkpoint": {
+      "entries": 45,
+      "withdrawnTranslations": 40,
+      "correctedSimple": 5,
+      "retainedCurativeIntentTranslations": "Prior text remains semantically compatible with the goal definition; preserved.",
+      "rows": [
+        {
+          "owner": "germline-testing",
+          "language": "ar",
+          "file": "src/data/i18n/ar.ts",
+          "before": "فحص للحمض النووي الذي وُلدت به، للكشف عن جينات الخطر الموروثة مثل BRCA أو متلازمة لينش.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "ar",
+          "file": "src/data/i18n/ar.ts",
+          "before": "سرطان انتشر إلى أماكن قليلة فقط، وقد يظل قابلًا للشفاء بعلاج كل موضع منها.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "ar",
+          "file": "src/data/i18n/ar.ts",
+          "before": "خلل موروث في جين BRCA1 أو BRCA2، موجود في كل خلية منذ الولادة، يرفع كثيراً خطر الإصابة بسرطان الثدي والمبيض والبروستاتا والبنكرياس ويجعل هذه السرطانات حساسة لمثبطات PARP والبلاتين.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "ar",
+          "file": "src/data/i18n/ar.ts",
+          "before": "سرطان يحوي كمية مفرطة من بروتين إشارة النمو HER2، إما بدرجة 3+ في التلوين أو بإثبات وجود نسخ إضافية من الجين. كان في السابق أكثر أنواع سرطان الثدي عدوانية، وهو اليوم من أكثرها قابلية للعلاج بفضل الأدوية المضادة لـ HER2.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "ar",
+          "file": "src/data/i18n/ar.ts",
+          "before": "ما إذا كانت خلايا سرطان الثدي تحمل مستقبلات للإستروجين (ER) والبروجستيرون (PR). فإن كانت تحملها، فالسرطان يتغذى على هذين الهرمونين ويمكن علاجه بحجبهما؛ ونحو 70% من سرطانات الثدي إيجابية لمستقبلات الهرمونات.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "de",
+          "file": "src/data/i18n/de.ts",
+          "before": "Ein Test der DNA, mit der Sie geboren wurden, um vererbte Risikogene wie BRCA oder das Lynch-Syndrom zu finden.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "de",
+          "file": "src/data/i18n/de.ts",
+          "before": "Krebs, der sich nur an wenige Stellen ausgebreitet hat und durch die Behandlung jeder einzelnen Stelle möglicherweise noch heilbar ist.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "de",
+          "file": "src/data/i18n/de.ts",
+          "before": "Ein vererbter Defekt im BRCA1- oder BRCA2-Gen, der von Geburt an in jeder Zelle vorhanden ist, das Risiko für Brust-, Eierstock-, Prostata- und Bauchspeicheldrüsenkrebs stark erhöht und diese Krebsarten empfindlich für PARP-Inhibitoren und Platin macht.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "de",
+          "file": "src/data/i18n/de.ts",
+          "before": "Ein Krebs mit zu viel HER2-Wachstumssignalprotein, entweder mit 3+ in der Färbung bewertet oder mit nachgewiesenen zusätzlichen Kopien des Gens. Einst der aggressivste Brustkrebs-Subtyp, gehört er dank der Anti-HER2-Medikamente heute zu den am besten behandelbaren.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "de",
+          "file": "src/data/i18n/de.ts",
+          "before": "Ob die Zellen eines Brustkrebses Rezeptoren für Östrogen (ER) und Progesteron (PR) tragen. Wenn ja, wird der Krebs von diesen Hormonen angetrieben und kann durch ihre Blockade behandelt werden; etwa 70 % der Brustkrebserkrankungen sind hormonrezeptorpositiv.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "es",
+          "file": "src/data/i18n/es.ts",
+          "before": "Una prueba del ADN con el que naciste, para hallar genes de riesgo heredado como BRCA o el síndrome de Lynch.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "es",
+          "file": "src/data/i18n/es.ts",
+          "before": "Cáncer extendido a pocos lugares, que aún puede ser curable tratando cada foco.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "es",
+          "file": "src/data/i18n/es.ts",
+          "before": "Un defecto heredado en el gen BRCA1 o BRCA2, presente en todas las células desde el nacimiento, que aumenta mucho el riesgo de cáncer de mama, ovario, próstata y páncreas y hace que esos cánceres sean sensibles a los inhibidores de PARP y al platino.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "es",
+          "file": "src/data/i18n/es.ts",
+          "before": "Un cáncer con exceso de la proteína de señal de crecimiento HER2, ya sea con una puntuación de 3+ en la tinción o con copias extra del gen demostradas. Antes el subtipo de cáncer de mama más agresivo, hoy es uno de los más tratables gracias a los fármacos anti-HER2.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "es",
+          "file": "src/data/i18n/es.ts",
+          "before": "Si las células de un cáncer de mama tienen receptores para el estrógeno (ER) y la progesterona (PR). Si los tienen, el cáncer se alimenta de estas hormonas y puede tratarse bloqueándolas; alrededor del 70% de los cánceres de mama son positivos para receptores hormonales.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "fr",
+          "file": "src/data/i18n/fr.ts",
+          "before": "Un test de l'ADN avec lequel vous êtes né, pour rechercher des gènes de risque hérités tels que BRCA ou le syndrome de Lynch.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "fr",
+          "file": "src/data/i18n/fr.ts",
+          "before": "Cancer qui ne s'est propagé qu'à quelques endroits et qui peut encore être guérissable en traitant chaque foyer.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "fr",
+          "file": "src/data/i18n/fr.ts",
+          "before": "Une anomalie héréditaire du gène BRCA1 ou BRCA2, présente dans chaque cellule dès la naissance, qui augmente fortement le risque de cancer du sein, de l'ovaire, de la prostate et du pancréas et rend ces cancers sensibles aux inhibiteurs de PARP et au platine.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "fr",
+          "file": "src/data/i18n/fr.ts",
+          "before": "Un cancer présentant un excès de la protéine de signal de croissance HER2, soit avec un score de 3+ à la coloration, soit avec des copies supplémentaires du gène démontrées. Autrefois le sous-type de cancer du sein le plus agressif, il figure aujourd'hui parmi les plus traitables grâce aux médicaments anti-HER2.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "fr",
+          "file": "src/data/i18n/fr.ts",
+          "before": "Si les cellules d'un cancer du sein portent des récepteurs aux œstrogènes (ER) et à la progestérone (PR). Si oui, le cancer est nourri par ces hormones et peut être traité en les bloquant ; environ 70 % des cancers du sein sont positifs pour les récepteurs hormonaux.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "hi",
+          "file": "src/data/i18n/hi.ts",
+          "before": "जन्म से मिले DNA की जाँच, ताकि BRCA या लिंच सिंड्रोम जैसे विरासती जोखिम जीन मिलें।",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "hi",
+          "file": "src/data/i18n/hi.ts",
+          "before": "केवल कुछ स्थानों तक फैला कैंसर, जो हर स्थान का इलाज कर के अब भी ठीक हो सकता है।",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "hi",
+          "file": "src/data/i18n/hi.ts",
+          "before": "BRCA1 या BRCA2 जीन में एक वंशानुगत खराबी, जो जन्म से ही हर कोशिका में मौजूद होती है, जो स्तन, अंडाशय, प्रोस्टेट और अग्न्याशय के कैंसर का जोखिम बहुत बढ़ा देती है और इन कैंसरों को PARP अवरोधकों और प्लैटिनम के प्रति संवेदनशील बनाती है।",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "hi",
+          "file": "src/data/i18n/hi.ts",
+          "before": "ऐसा कैंसर जिसमें HER2 वृद्धि-संकेत प्रोटीन बहुत अधिक होता है, जिसे या तो स्टेन पर 3+ स्कोर मिलता है या जीन की अतिरिक्त प्रतियाँ दिखाई देती हैं। एक समय यह स्तन कैंसर का सबसे आक्रामक उपप्रकार था, अब anti-HER2 दवाओं की बदौलत यह सबसे अधिक उपचार योग्य उपप्रकारों में है।",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "hi",
+          "file": "src/data/i18n/hi.ts",
+          "before": "क्या स्तन कैंसर की कोशिकाओं में एस्ट्रोजन (ER) और प्रोजेस्टेरोन (PR) के रिसेप्टर होते हैं। यदि होते हैं, तो कैंसर इन हार्मोनों से पोषित होता है और इन्हें रोककर इसका इलाज किया जा सकता है; लगभग 70% स्तन कैंसर हार्मोन रिसेप्टर-पॉज़िटिव होते हैं।",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "ja",
+          "file": "src/data/i18n/ja.ts",
+          "before": "生まれつき持っているDNAを調べ、BRCAやリンチ症候群のような遺伝性のリスク遺伝子を見つけるための検査。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "ja",
+          "file": "src/data/i18n/ja.ts",
+          "before": "がんが少数の場所にしか広がっていない状態で、一つひとつの病変を治療することでまだ治る可能性がある。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "ja",
+          "file": "src/data/i18n/ja.ts",
+          "before": "BRCA1またはBRCA2遺伝子の遺伝性の異常で、生まれたときからすべての細胞に存在し、乳がん、卵巣がん、前立腺がん、膵がんのリスクを大きく高めるとともに、これらのがんをPARP阻害薬とプラチナ製剤に感受性のあるものにする。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "ja",
+          "file": "src/data/i18n/ja.ts",
+          "before": "HER2という増殖シグナルタンパクが過剰ながんで、染色で3+と判定されるか、遺伝子のコピー数が増えていることが示されたものである。かつては乳がんの中で最も進行の速いサブタイプだったが、抗HER2薬のおかげで今では最も治療しやすいものの一つとなっている。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "ja",
+          "file": "src/data/i18n/ja.ts",
+          "before": "乳がんの細胞がエストロゲン（ER）とプロゲステロン（PR）の受容体をもつかどうかである。もつ場合、がんはこれらのホルモンを栄養にしており、それを遮断することで治療できる。乳がんの約70%はホルモン受容体陽性である。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "pt",
+          "file": "src/data/i18n/pt.ts",
+          "before": "Um teste do DNA com que você nasceu, para encontrar genes de risco hereditário como BRCA ou síndrome de Lynch.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "pt",
+          "file": "src/data/i18n/pt.ts",
+          "before": "Câncer que se espalhou para apenas alguns lugares, que ainda pode ser curável tratando cada ponto.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "pt",
+          "file": "src/data/i18n/pt.ts",
+          "before": "Um defeito herdado no gene BRCA1 ou BRCA2, presente em todas as células desde o nascimento, que aumenta muito o risco de câncer de mama, ovário, próstata e pâncreas e torna esses cânceres sensíveis a inibidores de PARP e à platina.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "pt",
+          "file": "src/data/i18n/pt.ts",
+          "before": "Um câncer com excesso da proteína de sinal de crescimento HER2, seja com pontuação 3+ na coloração ou com cópias extras do gene demonstradas. Antes o subtipo de câncer de mama mais agressivo, hoje está entre os mais tratáveis graças aos medicamentos anti-HER2.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "pt",
+          "file": "src/data/i18n/pt.ts",
+          "before": "Se as células de um câncer de mama têm receptores para estrogênio (ER) e progesterona (PR). Se tiverem, o câncer é alimentado por esses hormônios e pode ser tratado bloqueando-os; cerca de 70% dos cânceres de mama são positivos para receptores hormonais.",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "zh",
+          "file": "src/data/i18n/zh.ts",
+          "before": "检测你出生时携带的DNA，寻找BRCA或Lynch综合征等遗传风险基因。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "zh",
+          "file": "src/data/i18n/zh.ts",
+          "before": "仅扩散到少数部位的癌症，通过治疗每个病灶仍可能治愈。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "zh",
+          "file": "src/data/i18n/zh.ts",
+          "before": "BRCA1或BRCA2基因中的一种遗传性缺陷，从出生起就存在于每个细胞中，它大大增加乳腺癌、卵巢癌、前列腺癌和胰腺癌的风险，并使这些癌症对PARP抑制剂和铂类药物敏感。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "zh",
+          "file": "src/data/i18n/zh.ts",
+          "before": "一种HER2生长信号蛋白过多的癌症，要么在染色中评为3+，要么被证明携带该基因的额外拷贝。它曾是最具侵袭性的乳腺癌亚型，如今得益于抗HER2药物，已成为最可治疗的亚型之一。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "zh",
+          "file": "src/data/i18n/zh.ts",
+          "before": "乳腺癌细胞是否带有雌激素受体（ER）和孕激素受体（PR）。如果有，癌症就靠这些激素生长，可以通过阻断它们来治疗；约70%的乳腺癌为激素受体阳性。",
+          "after": null,
+          "disposition": "stale translation withdrawn; actual English fallback required",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "germline-testing",
+          "language": "simple",
+          "file": "src/data/simple/part-a.ts",
+          "before": "A test of the DNA you were born with, to find inherited risk genes such as BRCA.",
+          "after": "Germline testing looks for DNA changes outside the tumour that may explain inherited risk. The result depends on what the test covers and needs interpretation alongside personal and family history.",
+          "disposition": "source-corrected simple English",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "oligometastatic",
+          "language": "simple",
+          "file": "src/data/simple/part-b.ts",
+          "before": "Cancer that has spread to only a few places, which may still be curable by treating each spot.",
+          "after": "Oligometastatic disease means a limited number of detected distant metastases under a stated definition. A few visible spots do not prove that all disease is visible or that treating each will cure the cancer.",
+          "disposition": "source-corrected simple English",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "hormone-receptor-status",
+          "language": "simple",
+          "file": "src/data/simple/part-j.ts",
+          "before": "Hormone receptor status shows whether a breast cancer carries receptors for oestrogen and progesterone, meaning the cancer is fed by hormones and can be treated by blocking them.",
+          "after": "Hormone receptor status reports ER and PR separately in breast tumour tissue. The staining does not measure blood hormone levels or guarantee that a treatment will help.",
+          "disposition": "source-corrected simple English",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "her2-positive",
+          "language": "simple",
+          "file": "src/data/simple/part-j.ts",
+          "before": "HER2-positive means a cancer has too much HER2 growth protein or extra copies of its gene, once the most aggressive breast cancer and now among the most treatable.",
+          "after": "HER2-positive breast cancer has an integrated result showing excess HER2 protein or gene amplification under the testing rules. Whether a particular medicine is suitable is a separate question.",
+          "disposition": "source-corrected simple English",
+          "nativeReviewClaim": false
+        },
+        {
+          "owner": "gbrca-mutation",
+          "language": "simple",
+          "file": "src/data/simple/part-j.ts",
+          "before": "A germline BRCA mutation is an inherited fault present from birth that greatly raises the risk of breast, ovarian, prostate and pancreatic cancer and makes them sensitive to PARP inhibitors.",
+          "after": "A harmful constitutional BRCA1 or BRCA2 variant can raise cancer risk and matter for relatives. It may be inherited or arise newly, and does not guarantee that a cancer or a drug response will occur.",
+          "disposition": "source-corrected simple English",
+          "nativeReviewClaim": false
+        }
+      ],
+      "fileHashes": [
+        {
+          "file": "src/data/i18n/ar.ts",
+          "beforeSha256": "f1b2f00e21fa69e99ff084974606f4c1b8a5b3288126ad111f708e5076ede916",
+          "afterSha256": "f8e483e69f20a8367824828086ed1842d7304062fa572ce5b2366118dadae025"
+        },
+        {
+          "file": "src/data/i18n/de.ts",
+          "beforeSha256": "4ee3808f2bcbd5cc23caaa4a30188ebf3c7c66abeaa242cea29e4057a4f5d3b6",
+          "afterSha256": "c4704654d44103b1fd2b86d7b7002cc8288cbab611d8cf46d3dab23c9ae42ebe"
+        },
+        {
+          "file": "src/data/i18n/es.ts",
+          "beforeSha256": "dca8cafae1691b25832312faeb1874e1a7a7940593cafc1280d8f8f3a77d625f",
+          "afterSha256": "73837f07937f1be59b80fbd0e4da27d6775cb9ba03ce1485075309f83b532d01"
+        },
+        {
+          "file": "src/data/i18n/fr.ts",
+          "beforeSha256": "0b5adc831b1e6091b49aaac1063ff860ab39b4e27e5e5ec01d56774fae1d7e0e",
+          "afterSha256": "4400eb3f1b550424f56f65e46584b79b2fabb285b64fd05604149a05ae74882b"
+        },
+        {
+          "file": "src/data/i18n/hi.ts",
+          "beforeSha256": "a7ce4b32da435d8e389efc993c9c7856e06b833c89b6739caea3130dc2980688",
+          "afterSha256": "c12e6cd9bc098474c0f770ec49eb6672c6262cc67b4c9f1d335ee4ee7fef168b"
+        },
+        {
+          "file": "src/data/i18n/ja.ts",
+          "beforeSha256": "ae3b4c801677fd32aa331986ac871fcb9abc9016d3f4d92866ee9109f1713cc3",
+          "afterSha256": "501c4a259edb08e6ead5e276cadf6bb35540613dea719acaae6a26834943a247"
+        },
+        {
+          "file": "src/data/i18n/pt.ts",
+          "beforeSha256": "0a6f8aa79bfc9b8dfe68d82eb8f9e12045821bf8bc0601cc002449ca422da985",
+          "afterSha256": "d104185f17da945715c812b3e19ef7cc369262ed5f39866c4d9e37ce1f160325"
+        },
+        {
+          "file": "src/data/i18n/zh.ts",
+          "beforeSha256": "6bc16a5bf7d48135bb8165816dddf3a72bb1fe9fdd184a226739a30a3a25858f",
+          "afterSha256": "f4e97d4ceb495f7e739c93ed7a826ad093330a84ffca746996597dd6141a608e"
+        },
+        {
+          "file": "src/data/simple/part-a.ts",
+          "beforeSha256": "7045bb769c9d9a34477e5be084a756f41c6704e0a42a9b0e9d114af69209049c",
+          "afterSha256": "aeecc5aef4e858a982ce56468341259b371492051e545db80fa66e4bc945b3b5"
+        },
+        {
+          "file": "src/data/simple/part-b.ts",
+          "beforeSha256": "9c1eb048c2d0f8855d10e3d5dcff6063aecf426c800491b3091932fe96ec0f3d",
+          "afterSha256": "1835aec822effe888d97140a8c06d08a13be1c9cb6b2c4746e3f79c246b9ad08"
+        },
+        {
+          "file": "src/data/simple/part-j.ts",
+          "beforeSha256": "c51fde92e85dfc27a1478ed2672c97406cfabd7797feb3a6d41af69bd0e7f598",
+          "afterSha256": "8a335e577e14fb5643924579788fbb496a35569d8180936afa60f572e3490389"
+        }
+      ]
+    },
+    "additionalNucleusChange": [
       {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "ar",
-        "file": "src/data/i18n/ar.ts",
-        "before": "فحص للحمض النووي الذي وُلدت به، للكشف عن جينات الخطر الموروثة مثل BRCA أو متلازمة لينش.",
+        "before": "الحيز الموجود في مركز الخلية الذي يحتفظ بالحمض النووي DNA، كمكتبة تحفظ النسخ الأصلية لكل تعليمات قد تحتاجها الخلية.",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "ar",
-        "file": "src/data/i18n/ar.ts",
-        "before": "سرطان انتشر إلى أماكن قليلة فقط، وقد يظل قابلًا للشفاء بعلاج كل موضع منها.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "ar",
-        "file": "src/data/i18n/ar.ts",
-        "before": "خلل موروث في جين BRCA1 أو BRCA2، موجود في كل خلية منذ الولادة، يرفع كثيراً خطر الإصابة بسرطان الثدي والمبيض والبروستاتا والبنكرياس ويجعل هذه السرطانات حساسة لمثبطات PARP والبلاتين.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "ar",
-        "file": "src/data/i18n/ar.ts",
-        "before": "سرطان يحوي كمية مفرطة من بروتين إشارة النمو HER2، إما بدرجة 3+ في التلوين أو بإثبات وجود نسخ إضافية من الجين. كان في السابق أكثر أنواع سرطان الثدي عدوانية، وهو اليوم من أكثرها قابلية للعلاج بفضل الأدوية المضادة لـ HER2.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "ar",
-        "file": "src/data/i18n/ar.ts",
-        "before": "ما إذا كانت خلايا سرطان الثدي تحمل مستقبلات للإستروجين (ER) والبروجستيرون (PR). فإن كانت تحملها، فالسرطان يتغذى على هذين الهرمونين ويمكن علاجه بحجبهما؛ ونحو 70% من سرطانات الثدي إيجابية لمستقبلات الهرمونات.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "de",
-        "file": "src/data/i18n/de.ts",
-        "before": "Ein Test der DNA, mit der Sie geboren wurden, um vererbte Risikogene wie BRCA oder das Lynch-Syndrom zu finden.",
+        "before": "Das Kompartiment im Zentrum einer Zelle, das die DNA enthält, wie eine Bibliothek, die die Originalkopien aller Anweisungen aufbewahrt, die die Zelle je brauchen könnte.",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "de",
-        "file": "src/data/i18n/de.ts",
-        "before": "Krebs, der sich nur an wenige Stellen ausgebreitet hat und durch die Behandlung jeder einzelnen Stelle möglicherweise noch heilbar ist.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "de",
-        "file": "src/data/i18n/de.ts",
-        "before": "Ein vererbter Defekt im BRCA1- oder BRCA2-Gen, der von Geburt an in jeder Zelle vorhanden ist, das Risiko für Brust-, Eierstock-, Prostata- und Bauchspeicheldrüsenkrebs stark erhöht und diese Krebsarten empfindlich für PARP-Inhibitoren und Platin macht.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "de",
-        "file": "src/data/i18n/de.ts",
-        "before": "Ein Krebs mit zu viel HER2-Wachstumssignalprotein, entweder mit 3+ in der Färbung bewertet oder mit nachgewiesenen zusätzlichen Kopien des Gens. Einst der aggressivste Brustkrebs-Subtyp, gehört er dank der Anti-HER2-Medikamente heute zu den am besten behandelbaren.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "de",
-        "file": "src/data/i18n/de.ts",
-        "before": "Ob die Zellen eines Brustkrebses Rezeptoren für Östrogen (ER) und Progesteron (PR) tragen. Wenn ja, wird der Krebs von diesen Hormonen angetrieben und kann durch ihre Blockade behandelt werden; etwa 70 % der Brustkrebserkrankungen sind hormonrezeptorpositiv.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "es",
-        "file": "src/data/i18n/es.ts",
-        "before": "Una prueba del ADN con el que naciste, para hallar genes de riesgo heredado como BRCA o el síndrome de Lynch.",
+        "before": "El compartimento en el centro de la célula que contiene el ADN, como una biblioteca que guarda las copias maestras de todas las instrucciones que la célula pueda necesitar.",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "es",
-        "file": "src/data/i18n/es.ts",
-        "before": "Cáncer extendido a pocos lugares, que aún puede ser curable tratando cada foco.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "es",
-        "file": "src/data/i18n/es.ts",
-        "before": "Un defecto heredado en el gen BRCA1 o BRCA2, presente en todas las células desde el nacimiento, que aumenta mucho el riesgo de cáncer de mama, ovario, próstata y páncreas y hace que esos cánceres sean sensibles a los inhibidores de PARP y al platino.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "es",
-        "file": "src/data/i18n/es.ts",
-        "before": "Un cáncer con exceso de la proteína de señal de crecimiento HER2, ya sea con una puntuación de 3+ en la tinción o con copias extra del gen demostradas. Antes el subtipo de cáncer de mama más agresivo, hoy es uno de los más tratables gracias a los fármacos anti-HER2.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "es",
-        "file": "src/data/i18n/es.ts",
-        "before": "Si las células de un cáncer de mama tienen receptores para el estrógeno (ER) y la progesterona (PR). Si los tienen, el cáncer se alimenta de estas hormonas y puede tratarse bloqueándolas; alrededor del 70% de los cánceres de mama son positivos para receptores hormonales.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "fr",
-        "file": "src/data/i18n/fr.ts",
-        "before": "Un test de l'ADN avec lequel vous êtes né, pour rechercher des gènes de risque hérités tels que BRCA ou le syndrome de Lynch.",
+        "before": "Le compartiment au centre de la cellule qui contient l'ADN, comme une bibliothèque qui conserve les copies maîtresses de toutes les instructions dont la cellule pourrait avoir besoin.",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "fr",
-        "file": "src/data/i18n/fr.ts",
-        "before": "Cancer qui ne s'est propagé qu'à quelques endroits et qui peut encore être guérissable en traitant chaque foyer.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "fr",
-        "file": "src/data/i18n/fr.ts",
-        "before": "Une anomalie héréditaire du gène BRCA1 ou BRCA2, présente dans chaque cellule dès la naissance, qui augmente fortement le risque de cancer du sein, de l'ovaire, de la prostate et du pancréas et rend ces cancers sensibles aux inhibiteurs de PARP et au platine.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "fr",
-        "file": "src/data/i18n/fr.ts",
-        "before": "Un cancer présentant un excès de la protéine de signal de croissance HER2, soit avec un score de 3+ à la coloration, soit avec des copies supplémentaires du gène démontrées. Autrefois le sous-type de cancer du sein le plus agressif, il figure aujourd'hui parmi les plus traitables grâce aux médicaments anti-HER2.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "fr",
-        "file": "src/data/i18n/fr.ts",
-        "before": "Si les cellules d'un cancer du sein portent des récepteurs aux œstrogènes (ER) et à la progestérone (PR). Si oui, le cancer est nourri par ces hormones et peut être traité en les bloquant ; environ 70 % des cancers du sein sont positifs pour les récepteurs hormonaux.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "hi",
-        "file": "src/data/i18n/hi.ts",
-        "before": "जन्म से मिले DNA की जाँच, ताकि BRCA या लिंच सिंड्रोम जैसे विरासती जोखिम जीन मिलें।",
+        "before": "कोशिका के केंद्र में स्थित वह कक्ष जिसमें DNA रहता है, एक पुस्तकालय की तरह जो कोशिका को कभी भी ज़रूरत पड़ सकने वाले हर निर्देश की मूल प्रतियाँ रखता है।",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "hi",
-        "file": "src/data/i18n/hi.ts",
-        "before": "केवल कुछ स्थानों तक फैला कैंसर, जो हर स्थान का इलाज कर के अब भी ठीक हो सकता है।",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "hi",
-        "file": "src/data/i18n/hi.ts",
-        "before": "BRCA1 या BRCA2 जीन में एक वंशानुगत खराबी, जो जन्म से ही हर कोशिका में मौजूद होती है, जो स्तन, अंडाशय, प्रोस्टेट और अग्न्याशय के कैंसर का जोखिम बहुत बढ़ा देती है और इन कैंसरों को PARP अवरोधकों और प्लैटिनम के प्रति संवेदनशील बनाती है।",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "hi",
-        "file": "src/data/i18n/hi.ts",
-        "before": "ऐसा कैंसर जिसमें HER2 वृद्धि-संकेत प्रोटीन बहुत अधिक होता है, जिसे या तो स्टेन पर 3+ स्कोर मिलता है या जीन की अतिरिक्त प्रतियाँ दिखाई देती हैं। एक समय यह स्तन कैंसर का सबसे आक्रामक उपप्रकार था, अब anti-HER2 दवाओं की बदौलत यह सबसे अधिक उपचार योग्य उपप्रकारों में है।",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "hi",
-        "file": "src/data/i18n/hi.ts",
-        "before": "क्या स्तन कैंसर की कोशिकाओं में एस्ट्रोजन (ER) और प्रोजेस्टेरोन (PR) के रिसेप्टर होते हैं। यदि होते हैं, तो कैंसर इन हार्मोनों से पोषित होता है और इन्हें रोककर इसका इलाज किया जा सकता है; लगभग 70% स्तन कैंसर हार्मोन रिसेप्टर-पॉज़िटिव होते हैं।",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "ja",
-        "file": "src/data/i18n/ja.ts",
-        "before": "生まれつき持っているDNAを調べ、BRCAやリンチ症候群のような遺伝性のリスク遺伝子を見つけるための検査。",
+        "before": "細胞の中心にあってDNAを収める区画で、細胞が必要とするかもしれないあらゆる指示の原本を保管する図書館のようなものである。",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "ja",
-        "file": "src/data/i18n/ja.ts",
-        "before": "がんが少数の場所にしか広がっていない状態で、一つひとつの病変を治療することでまだ治る可能性がある。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "ja",
-        "file": "src/data/i18n/ja.ts",
-        "before": "BRCA1またはBRCA2遺伝子の遺伝性の異常で、生まれたときからすべての細胞に存在し、乳がん、卵巣がん、前立腺がん、膵がんのリスクを大きく高めるとともに、これらのがんをPARP阻害薬とプラチナ製剤に感受性のあるものにする。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "ja",
-        "file": "src/data/i18n/ja.ts",
-        "before": "HER2という増殖シグナルタンパクが過剰ながんで、染色で3+と判定されるか、遺伝子のコピー数が増えていることが示されたものである。かつては乳がんの中で最も進行の速いサブタイプだったが、抗HER2薬のおかげで今では最も治療しやすいものの一つとなっている。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "ja",
-        "file": "src/data/i18n/ja.ts",
-        "before": "乳がんの細胞がエストロゲン（ER）とプロゲステロン（PR）の受容体をもつかどうかである。もつ場合、がんはこれらのホルモンを栄養にしており、それを遮断することで治療できる。乳がんの約70%はホルモン受容体陽性である。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "pt",
-        "file": "src/data/i18n/pt.ts",
-        "before": "Um teste do DNA com que você nasceu, para encontrar genes de risco hereditário como BRCA ou síndrome de Lynch.",
+        "before": "O compartimento no centro da célula que guarda o DNA, como uma biblioteca que mantém as cópias originais de todas as instruções de que a célula possa precisar.",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "pt",
-        "file": "src/data/i18n/pt.ts",
-        "before": "Câncer que se espalhou para apenas alguns lugares, que ainda pode ser curável tratando cada ponto.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "pt",
-        "file": "src/data/i18n/pt.ts",
-        "before": "Um defeito herdado no gene BRCA1 ou BRCA2, presente em todas as células desde o nascimento, que aumenta muito o risco de câncer de mama, ovário, próstata e pâncreas e torna esses cânceres sensíveis a inibidores de PARP e à platina.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "pt",
-        "file": "src/data/i18n/pt.ts",
-        "before": "Um câncer com excesso da proteína de sinal de crescimento HER2, seja com pontuação 3+ na coloração ou com cópias extras do gene demonstradas. Antes o subtipo de câncer de mama mais agressivo, hoje está entre os mais tratáveis graças aos medicamentos anti-HER2.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "pt",
-        "file": "src/data/i18n/pt.ts",
-        "before": "Se as células de um câncer de mama têm receptores para estrogênio (ER) e progesterona (PR). Se tiverem, o câncer é alimentado por esses hormônios e pode ser tratado bloqueando-os; cerca de 70% dos cânceres de mama são positivos para receptores hormonais.",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "zh",
-        "file": "src/data/i18n/zh.ts",
-        "before": "检测你出生时携带的DNA，寻找BRCA或Lynch综合征等遗传风险基因。",
+        "before": "位于细胞中心、储存DNA的区室，如同一座图书馆，保存着细胞可能需要的每一条指令的母本。",
         "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
+        "disposition": "stale centre-of-cell translation withdrawn; English fallback"
       },
       {
-        "owner": "oligometastatic",
-        "language": "zh",
-        "file": "src/data/i18n/zh.ts",
-        "before": "仅扩散到少数部位的癌症，通过治疗每个病灶仍可能治愈。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "zh",
-        "file": "src/data/i18n/zh.ts",
-        "before": "BRCA1或BRCA2基因中的一种遗传性缺陷，从出生起就存在于每个细胞中，它大大增加乳腺癌、卵巢癌、前列腺癌和胰腺癌的风险，并使这些癌症对PARP抑制剂和铂类药物敏感。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "zh",
-        "file": "src/data/i18n/zh.ts",
-        "before": "一种HER2生长信号蛋白过多的癌症，要么在染色中评为3+，要么被证明携带该基因的额外拷贝。它曾是最具侵袭性的乳腺癌亚型，如今得益于抗HER2药物，已成为最可治疗的亚型之一。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "zh",
-        "file": "src/data/i18n/zh.ts",
-        "before": "乳腺癌细胞是否带有雌激素受体（ER）和孕激素受体（PR）。如果有，癌症就靠这些激素生长，可以通过阻断它们来治疗；约70%的乳腺癌为激素受体阳性。",
-        "after": null,
-        "disposition": "stale translation withdrawn; actual English fallback required",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "germline-testing",
+        "id": "nucleus",
         "language": "simple",
-        "file": "src/data/simple/part-a.ts",
-        "before": "A test of the DNA you were born with, to find inherited risk genes such as BRCA.",
-        "after": "Germline testing looks for DNA changes outside the tumour that may explain inherited risk. The result depends on what the test covers and needs interpretation alongside personal and family history.",
-        "disposition": "source-corrected simple English",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "oligometastatic",
-        "language": "simple",
-        "file": "src/data/simple/part-b.ts",
-        "before": "Cancer that has spread to only a few places, which may still be curable by treating each spot.",
-        "after": "Oligometastatic disease means a limited number of detected distant metastases under a stated definition. A few visible spots do not prove that all disease is visible or that treating each will cure the cancer.",
-        "disposition": "source-corrected simple English",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "hormone-receptor-status",
-        "language": "simple",
-        "file": "src/data/simple/part-j.ts",
-        "before": "Hormone receptor status shows whether a breast cancer carries receptors for oestrogen and progesterone, meaning the cancer is fed by hormones and can be treated by blocking them.",
-        "after": "Hormone receptor status reports ER and PR separately in breast tumour tissue. The staining does not measure blood hormone levels or guarantee that a treatment will help.",
-        "disposition": "source-corrected simple English",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "her2-positive",
-        "language": "simple",
-        "file": "src/data/simple/part-j.ts",
-        "before": "HER2-positive means a cancer has too much HER2 growth protein or extra copies of its gene, once the most aggressive breast cancer and now among the most treatable.",
-        "after": "HER2-positive breast cancer has an integrated result showing excess HER2 protein or gene amplification under the testing rules. Whether a particular medicine is suitable is a separate question.",
-        "disposition": "source-corrected simple English",
-        "nativeReviewClaim": false
-      },
-      {
-        "owner": "gbrca-mutation",
-        "language": "simple",
-        "file": "src/data/simple/part-j.ts",
-        "before": "A germline BRCA mutation is an inherited fault present from birth that greatly raises the risk of breast, ovarian, prostate and pancreatic cancer and makes them sensitive to PARP inhibitors.",
-        "after": "A harmful constitutional BRCA1 or BRCA2 variant can raise cancer risk and matter for relatives. It may be inherited or arise newly, and does not guarantee that a cancer or a drug response will occur.",
-        "disposition": "source-corrected simple English",
-        "nativeReviewClaim": false
+        "before": "The nucleus is the compartment at the centre of a cell that holds the DNA, like a library keeping the master copy of every instruction.",
+        "after": "The nucleus is a part of a cell surrounded by a membrane. It holds chromosomes, which contain DNA.",
+        "disposition": "corrected simple English"
       }
     ],
-    "fileHashes": [
-      {
-        "file": "src/data/i18n/ar.ts",
-        "beforeSha256": "f1b2f00e21fa69e99ff084974606f4c1b8a5b3288126ad111f708e5076ede916",
-        "afterSha256": "f8e483e69f20a8367824828086ed1842d7304062fa572ce5b2366118dadae025"
-      },
-      {
-        "file": "src/data/i18n/de.ts",
-        "beforeSha256": "4ee3808f2bcbd5cc23caaa4a30188ebf3c7c66abeaa242cea29e4057a4f5d3b6",
-        "afterSha256": "c4704654d44103b1fd2b86d7b7002cc8288cbab611d8cf46d3dab23c9ae42ebe"
-      },
-      {
-        "file": "src/data/i18n/es.ts",
-        "beforeSha256": "dca8cafae1691b25832312faeb1874e1a7a7940593cafc1280d8f8f3a77d625f",
-        "afterSha256": "73837f07937f1be59b80fbd0e4da27d6775cb9ba03ce1485075309f83b532d01"
-      },
-      {
-        "file": "src/data/i18n/fr.ts",
-        "beforeSha256": "0b5adc831b1e6091b49aaac1063ff860ab39b4e27e5e5ec01d56774fae1d7e0e",
-        "afterSha256": "4400eb3f1b550424f56f65e46584b79b2fabb285b64fd05604149a05ae74882b"
-      },
-      {
-        "file": "src/data/i18n/hi.ts",
-        "beforeSha256": "a7ce4b32da435d8e389efc993c9c7856e06b833c89b6739caea3130dc2980688",
-        "afterSha256": "c12e6cd9bc098474c0f770ec49eb6672c6262cc67b4c9f1d335ee4ee7fef168b"
-      },
-      {
-        "file": "src/data/i18n/ja.ts",
-        "beforeSha256": "ae3b4c801677fd32aa331986ac871fcb9abc9016d3f4d92866ee9109f1713cc3",
-        "afterSha256": "501c4a259edb08e6ead5e276cadf6bb35540613dea719acaae6a26834943a247"
-      },
-      {
-        "file": "src/data/i18n/pt.ts",
-        "beforeSha256": "0a6f8aa79bfc9b8dfe68d82eb8f9e12045821bf8bc0601cc002449ca422da985",
-        "afterSha256": "d104185f17da945715c812b3e19ef7cc369262ed5f39866c4d9e37ce1f160325"
-      },
-      {
-        "file": "src/data/i18n/zh.ts",
-        "beforeSha256": "6bc16a5bf7d48135bb8165816dddf3a72bb1fe9fdd184a226739a30a3a25858f",
-        "afterSha256": "f4e97d4ceb495f7e739c93ed7a826ad093330a84ffca746996597dd6141a608e"
-      },
-      {
-        "file": "src/data/simple/part-a.ts",
-        "beforeSha256": "7045bb769c9d9a34477e5be084a756f41c6704e0a42a9b0e9d114af69209049c",
-        "afterSha256": "aeecc5aef4e858a982ce56468341259b371492051e545db80fa66e4bc945b3b5"
-      },
-      {
-        "file": "src/data/simple/part-b.ts",
-        "beforeSha256": "9c1eb048c2d0f8855d10e3d5dcff6063aecf426c800491b3091932fe96ec0f3d",
-        "afterSha256": "1835aec822effe888d97140a8c06d08a13be1c9cb6b2c4746e3f79c246b9ad08"
-      },
-      {
-        "file": "src/data/simple/part-j.ts",
-        "beforeSha256": "c51fde92e85dfc27a1478ed2672c97406cfabd7797feb3a6d41af69bd0e7f598",
-        "afterSha256": "8a335e577e14fb5643924579788fbb496a35569d8180936afa60f572e3490389"
-      }
-    ]
+    "retainedRemissionShortText": "Existing simple and translated short summaries remain semantically compatible; only the unsupported long-summary rules were replaced."
   },
   "scalarReasons": [
     {
@@ -3083,5 +3280,9 @@
       "reason": "Remove universal multimodality/toxicity and metastatic-setting assertions; preserve goal-versus-outcome distinctions."
     }
   ],
-  "factoryChange": "The existing gap-fill term factory now permits a record-specific asOf override."
+  "additionalCorrections": [
+    "The nucleus definition no longer requires a central physical location.",
+    "The remission summary withdraws universal blood-cancer cut-offs and a five-year cure proxy."
+  ],
+  "factoryChange": "The existing gap-fill term factory permits a record-specific asOf override."
 }

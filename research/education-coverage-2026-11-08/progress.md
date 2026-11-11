@@ -4,18 +4,18 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
-The [therapy/conjugate checkpoint](therapy-conjugates-2026-11-11/README.md) and [current-main refresh](main-refresh-2026-11-11/README.md) are draft contributions. The goal remains active, main/live coverage is zero, and source inventories overlap.
+The [breast concept assessment](breast-concepts-2026-11-11/README.md) adds twelve completed coordinator draft assessments at each pin, with separate original and later inventories. The goal remains active and main/live coverage is zero.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
 |---|---:|---:|---:|---:|
-| Original (537 sources) | 386 (379 teaching, 7 routing) | 371 | 3,435 / 3,446 | 11 |
-| Later (550 sources) | 387 teaching | 381 | 3,660 / 3,666 | 6 |
+| Original (537 sources) | 398 (391 teaching, 7 routing) | 383 | 3,672 / 3,683 | 11 |
+| Later (550 sources) | 399 teaching | 393 | 3,897 / 3,903 | 6 |
 
-Each pin has 468 reviewed teaching assets, 63 classified supporting paths and 1,357 unclassified paths. All 917 defined literature occurrences are identity/relevance screened; this does not verify their claims. Thirty-one adjacent findings and six schema items remain open. Both source ledgers have zero stale or missing current proofs and retain exit 2 for real unfinished work.
+Each pin has 478 reviewed teaching assets, 63 classified supporting paths and 1,347 unclassified paths. All 917 defined literature occurrences are identity/relevance screened; this does not verify their claims. Thirty-one adjacent findings and six schema items remain open. Both source ledgers have zero stale or missing current proofs and retain exit 2 for real unfinished work.
 
-The current root graph has 22,809 records: 128 audit-introduced records less two duplicate-ID retirements from main, a net 126 over the frozen baseline. Selected versioned snapshots span 545 IDs. Current main is incorporated as a parent, without changing the frozen evidence baseline or awarding main coverage. The single merge conflict preserves audited prose and the upstream institution relationship. All 723 active proof fields that matched the prior root remain unchanged.
+The root graph remains at 22,809 records, with no new ids in this breast pass. Selected entity snapshots span 561 IDs, excluding reader-observation proxies. The breast packet retains 237 obligations, 928 block dispositions and 266 section signatures. Eighteen existing owners carry 53 teaching paragraphs and the definition corrections.
 
-Validate, typecheck, lint and the expanded full suite pass: 289 files, 2,875 tests and two existing skips. Twenty-nine actual entity readers and the NSCLC data subpage carry all 247 selected prose passages. Forty-five diagnostic/institution links, 29 exact JSON entities, 186 Markdown passages, OpenAPI, retrieval and recorded page-weight checks pass. No full production build, hosted-page, expert, learner or new language review is claimed. The round-27 breast review is next.
+All full gates pass: 289 test files, 2,875 tests and two existing skips. All 53 paragraphs and 68 evidence excerpts appear in actual readers; eighteen exact JSON entities, 119 Markdown passages, OpenAPI, retrieval and all fourteen page ceilings pass. All 162 selected summary states are checked. No full production build, hosted-page, expert, learner or new language review is claimed; the earlier incomplete independent review remains explicitly incomplete.
 
 ## Historical checkpoint notes
 
@@ -99,6 +99,10 @@ Twenty later and eighteen original lessons are assessed: 38 versions, 392 signat
 
 Twelve later and eleven original lessons are assessed independently: 122/111 section signatures, 276/255 instructional requirements and 934 exact field proofs. Two later and one original source-access rows remain partial. Fifty-three connected paragraphs supplement canonical owners, with one new registered parent and three chemistry owners retained in #369. Both full chains, actual readers/exports and unchanged Ask scores pass. Original assessment is 386/537 and later teaching assessment 387/550; main/live credit remains zero.
 
-## Breast concept implementation checkpoint, 11 November 2026
+## Historical partial breast implementation checkpoint, 11 November 2026
 
 Sixteen existing owners now carry 53 source-qualified teaching paragraphs and corrected leading statements. The source-first inventory retains 237 semantic rows across 24 pinned versions and 266 signatures. Forty stale translated leads were withdrawn and five simple-English entries corrected; actual selectors verify the English fallbacks. Full gates, actual reader text, JSON/Markdown/OpenAPI exports, retrieval and page ceilings pass. This is a partial implementation checkpoint: the exhaustive map of 928 source blocks and master-ledger acceptance remain open. The twelve lessons retain their unreviewed ledger dispositions, cumulative coverage counts are unchanged, and main/live credit remains zero. See `breast-concepts-2026-11-11/`.
+
+## Breast source-block acceptance, 11 November 2026
+
+The partial checkpoint above is superseded by the complete coordinator field comparison. All 462 original and 466 later blocks have dispositions, including administrative and routing rows. The 237 retained requirements comprise 213 substantive obligations, twelve recaps and twelve source-scope checks; they are not added to the earlier 135-row inventory. Thirteen wording/definition findings are resolved on existing owners. The two source ledgers add twelve complete draft lessons and ten reviewed teaching assets per pin. The source-art issues, explicit primary-reading depths and absence of independent expert/learner acceptance remain recorded. Main/live coverage stays zero.

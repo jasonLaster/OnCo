@@ -5207,7 +5207,7 @@ export const tldr_es: Record<string, string> = {
   "noopur-raje": "Dirigió el primer ensayo en humanos de CAR-T anti-BCMA (bb2121) en mieloma y estudios sobre el tratamiento de la enfermedad ósea.",
   "notable-labs": "Notable Labs probaba combinaciones de fármacos directamente sobre las células del cáncer hematológico del propio paciente para predecir cuáles funcionarían. Más tarde pasó a ser una empresa cotizada; su sitio web estaba fuera de línea en la última comprobación.",
   "nubia-munoz": "Epidemióloga colombiana cuyos estudios en la IARC demostraron que el VPH causa el cáncer de cuello uterino e identificaron los tipos a los que se dirigen las vacunas.",
-  nucleus: "El compartimento en el centro de la célula que contiene el ADN, como una biblioteca que guarda las copias maestras de todas las instrucciones que la célula pueda necesitar.",
+
   "ohno-shinji": "Un veterano especialista en cáncer de mama que ha dirigido durante dos décadas los brazos japoneses de ensayos de cáncer de mama adyuvante y metastásico.",
   "olivier-delattre": "Olivier Delattre descubrió la fusión EWS-FLI1 que define el sarcoma de Ewing.",
   omacetaxine: "La omacetaxina (Synribo) es una inyección subcutánea dos veces al día para la leucemia mieloide crónica que ha dejado de responder a al menos dos inhibidores de tirosina quinasa orales.",

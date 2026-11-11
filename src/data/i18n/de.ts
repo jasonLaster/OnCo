@@ -5196,7 +5196,7 @@ export const tldr_de: Record<string, string> = {
   "noopur-raje": "Leitete die erste Studie am Menschen mit BCMA-CAR-T (bb2121) beim Myelom sowie Studien zur Behandlung der Knochenerkrankung.",
   "notable-labs": "Notable Labs testete Arzneimittelkombinationen direkt an den eigenen Blutkrebszellen eines Patienten, um vorherzusagen, welche wirken würden. Später wurde es ein börsennotiertes Unternehmen; seine Website war bei der letzten Überprüfung offline.",
   "nubia-munoz": "Kolumbianische Epidemiologin, deren IARC-Studien bewiesen, dass HPV Gebärmutterhalskrebs verursacht, und die Typen identifizierten, gegen die die Impfstoffe gerichtet sind.",
-  nucleus: "Das Kompartiment im Zentrum einer Zelle, das die DNA enthält, wie eine Bibliothek, die die Originalkopien aller Anweisungen aufbewahrt, die die Zelle je brauchen könnte.",
+
   "ohno-shinji": "Ein erfahrener Brustkrebsspezialist, der seit zwei Jahrzehnten die japanischen Arme adjuvanter und metastasierter Brustkrebsstudien leitet.",
   "olivier-delattre": "Olivier Delattre entdeckte die EWS-FLI1-Fusion, die das Ewing-Sarkom definiert.",
   omacetaxine: "Omacetaxin (Synribo) ist eine zweimal täglich unter die Haut gegebene Injektion gegen chronische myeloische Leukämie, die auf mindestens zwei Tyrosinkinase-Inhibitor-Tabletten nicht mehr anspricht.",

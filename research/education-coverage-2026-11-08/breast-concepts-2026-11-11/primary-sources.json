@@ -400,6 +400,35 @@
     "Yang and Martin efetch records lacked article bodies; abstract-only source scope retained.",
     "NICE live recommendations returned 403; the UK comparison is attributed to RCPath, not a fresh NICE read.",
     "No new Elicit searches or report links.",
-    "The abstract formatter was corrected before repository edits: all four affected abstracts were reread without an overbroad tag-removal regex."
-  ]
+    "The abstract formatter was corrected before repository edits: all four affected abstracts were reread without an overbroad tag-removal regex.",
+    "The nucleus dependency uses its corrected definition only; legacy clinical examples in its longer summary are not recertified.",
+    "No universal blood-cancer remission cut-off or five-year cure proxy is retained in the rewritten remission summary."
+  ],
+  "officialGlossaryDefinitions": [
+    {
+      "term": "nucleus",
+      "termId": 597161,
+      "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/nucleus",
+      "retrievedAt": "2026-11-11T18:07:58.304897+00:00",
+      "rawSha256": "e71e125a3f4217590f3806e8908cecc9f9a2b66c77324d827266d82b9fc6edc3",
+      "scope": "Complete raw official definition read; no treatment-specific criteria inferred."
+    },
+    {
+      "term": "remission",
+      "termId": 45867,
+      "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/remission",
+      "retrievedAt": "2026-11-11T18:07:58.305103+00:00",
+      "rawSha256": "6de95de44b935e587ac8065e8a4e8485edb067cd9a33a15582e0704c705a6032",
+      "scope": "Complete raw official definition read; no treatment-specific criteria inferred."
+    },
+    {
+      "term": "leptomeningeal-metastasis",
+      "termId": 45318,
+      "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/leptomeningeal-metastasis",
+      "retrievedAt": "2026-11-11T18:10:36.314277+00:00",
+      "rawSha256": "73333b109e2e4f116d78db964e0151c43a3f82d01c80c6c011d0300cc32f7a77",
+      "scope": "Whole raw definition read; no treatment or prevalence claims adopted."
+    }
+  ],
+  "officialGlossaryAccess": "Raw public Cancer.gov Patient English definitions were read in full and their dictionary, audience, language and names checked. The initial leptomeninges slug returned 404; the leptomeningeal-metastasis entry succeeded."
 }

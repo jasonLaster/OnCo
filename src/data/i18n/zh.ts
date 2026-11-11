@@ -5207,7 +5207,7 @@ export const tldr_zh: Record<string, string> = {
   "noopur-raje": "主持了BCMA CAR-T（bb2121）治疗骨髓瘤的首次人体试验以及骨病治疗研究。",
   "notable-labs": "Notable Labs直接在患者自身的血液肿瘤细胞上测试药物组合，以预测哪些有效。它后来成为上市公司；最近一次查看时其网站已下线。",
   "nubia-munoz": "哥伦比亚流行病学家，其在IARC的研究证明HPV导致宫颈癌，并确定了疫苗所针对的病毒类型。",
-  nucleus: "位于细胞中心、储存DNA的区室，如同一座图书馆，保存着细胞可能需要的每一条指令的母本。",
+
   "ohno-shinji": "资深乳腺癌专家，二十年来一直领导辅助治疗和转移性乳腺癌试验的日本部分。",
   "olivier-delattre": "Olivier Delattre发现了定义尤因肉瘤的EWS-FLI1融合基因。",
   omacetaxine: "Omacetaxine（Synribo）是一种每日两次的皮下注射药物，用于对至少两种酪氨酸激酶抑制剂口服药不再有反应的慢性髓性白血病。",

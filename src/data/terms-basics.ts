@@ -48,11 +48,23 @@ export const termsBasics: TermInput[] = [
   t({
     id: "nucleus", name: "Nucleus", category: BIO,
     aka: ["cell nucleus"],
-    tldr: "The compartment at the centre of a cell that holds the DNA, like a library that keeps the master copies of every instruction the cell might need.",
+    tldr: "The nucleus is a compartment enclosed by a membrane that holds chromosomes containing DNA.",
     summary: "The nucleus is enclosed by its own membrane and contains the chromosomes, together with the enzymes that copy DNA before division and read genes into RNA. Many cancer drugs act here: chemotherapy damages DNA or jams its copying, PARP inhibitors block a DNA-repair enzyme, and hormone therapies stop receptors from switching genes on. Pathologists also read the nucleus under the microscope, because enlarged, irregular, dark nuclei are one of the classic signs of malignancy.",
     wikipedia: W("Cell_nucleus"),
     related: ["dna-term", "chromosome", "gene", "histology"],
-  }),
+
+"asOf": "2026-11-11",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cell_nucleus"
+  },
+  {
+    "label": "NCI Dictionary: nucleus",
+    "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/nucleus"
+  }
+]
+}),
   t({
     notes:["A DNA lesion can be a damaged base, a strand break or a crosslink. Damage can be repaired, and is different from a stable change in the DNA sequence. The damage response is another observation: an assay for gamma-H2AX measures a histone modification associated with a response, rather than reading a variant sequence. Experimental work also shows that this signal is not an unambiguous count of double-strand breaks. A sequencing variant call, a lesion assay and a damage-response stain answer different questions; one is not a count of the others."],
     asOf:"2026-11-09", links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/DNA"},{"label":"NHGRI: DNA fact sheet","url":"https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"},{"label":"NHGRI: Chromatin","url":"https://www.genome.gov/genetics-glossary/Chromatin"},{"label":"NHGRI: Transcription","url":"https://www.genome.gov/genetics-glossary/Transcription"},{"label":"NLM MeSH: DNA damage, repair and possible sequence consequences","url":"https://id.nlm.nih.gov/mesh/D004249.html"},{"label":"Rogakou and colleagues: H2AX phosphorylation after DNA double-strand breaks in models","url":"https://pubmed.ncbi.nlm.nih.gov/9488723/"},{"label":"Revet and colleagues: gamma-H2AX signal and functional damage-response limits","url":"https://pubmed.ncbi.nlm.nih.gov/21555580/"}],
@@ -1554,10 +1566,26 @@ export const termsBasics: TermInput[] = [
     id: "remission", name: "Remission", category: CLINIC,
     aka: ["remissions", "in remission", "complete remission", "partial remission", "durable remission", "durable remissions", "cure", "cured", "curable", "functional cure", "no evidence of disease", "NED", "disease-free"],
     tldr: "When the signs of cancer have shrunk (partial remission) or disappeared entirely (complete remission). It is not the same as cure, because cells too few to detect may remain.",
-    summary: "In blood cancers, complete remission has precise definitions (normal blood counts, fewer than 5% blasts in the marrow) and can be refined by measuring minimal residual disease; in solid tumours the equivalent language is complete or partial response on scans, or 'no evidence of disease' after surgery. Whether a remission becomes a cure is only known with time: for most cancers, five years without recurrence is a reasonable proxy, though late relapses occur in breast cancer and melanoma. Immunotherapy has introduced durable remissions in metastatic disease that behave like cures, and 'functional cure' describes long control without eradication.",
+    summary: "Remission means a decrease or disappearance of signs and symptoms of cancer. In partial remission, some but not all have disappeared; in complete remission, all have disappeared, although cancer may still remain in the body. The assessment and its criteria depend on the cancer and the test or clinical context. Remission describes what is observed, rather than establishing that every cancer cell has been eliminated or that cancer will never return. The term itself supplies no universal timetable for declaring cure.",
     wikipedia: W("Remission_(medicine)"),
     related: ["complete-response", "partial-response", "mrd", "relapse-recurrence", "progression", "os"],
-  }),
+
+"asOf": "2026-11-11",
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Remission_(medicine)"
+  },
+  {
+    "label": "NCI Dictionary: remission",
+    "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/remission"
+  },
+  {
+    "label": "NCI: understanding cancer prognosis",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis"
+  }
+]
+}),
   t({
     asOf:"2026-11-09", notes:["A zero in a fictional volume exercise is not a clinical response criterion. A single measurement cannot establish durability; the actual assessment method and subsequent follow-up remain necessary."], links:[{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"},{"label":"FDA 2018: response, duration and clinical endpoint context","url":"https://www.fda.gov/media/71195/download?attachment="},{"label":"RECIST 1.1 primary guideline: definitions and confirmation, 2009","url":"https://pubmed.ncbi.nlm.nih.gov/19097774/"},{"label":"RECIST 1.1 full guideline: overall categories and duration sections","url":"https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"}],
     id: "complete-response", name: "Complete response", category: CLINIC,

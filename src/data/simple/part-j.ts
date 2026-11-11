@@ -171,7 +171,7 @@ export const simpleJ: Record<string, string> = {
   // ---- biology basics ----
   "cell-term": "A cell is the smallest living unit of the body, and cancer begins when one of your roughly thirty trillion cells starts dividing when it should not.",
   "cell-membrane": "The cell membrane is the oily outer skin of a cell, where most drugs and antibodies act by binding proteins on it or slipping through it.",
-  "nucleus": "The nucleus is the compartment at the centre of a cell that holds the DNA, like a library keeping the master copy of every instruction.",
+  "nucleus": "The nucleus is a part of a cell surrounded by a membrane. It holds chromosomes, which contain DNA.",
   "dna-term": "DNA is the long molecule storing the instructions for building and running a cell in a four-letter chemical alphabet, and cancer is fundamentally damaged DNA.",
   "rna": "RNA is a working copy of a gene made when the cell needs to use it, like a photocopy taken from the DNA library to the workshop.",
   "gene": "A gene is a stretch of DNA holding the recipe for one protein, and cancer usually involves a handful of the twenty thousand genes going wrong.",

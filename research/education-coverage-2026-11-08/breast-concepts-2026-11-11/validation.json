@@ -1,5 +1,5 @@
 {
-  "fullGatesAfterOwnerAndCachedSummaryChanges": [
+  "fullGates": [
     {
       "name": "validate",
       "command": [
@@ -8,7 +8,7 @@
         "validate"
       ],
       "exitCode": 0,
-      "seconds": 2.24
+      "seconds": 1.88
     },
     {
       "name": "typecheck",
@@ -18,7 +18,7 @@
         "typecheck"
       ],
       "exitCode": 0,
-      "seconds": 3.15
+      "seconds": 2.71
     },
     {
       "name": "lint",
@@ -28,7 +28,7 @@
         "lint"
       ],
       "exitCode": 0,
-      "seconds": 29.05
+      "seconds": 27.67
     },
     {
       "name": "full-suite",
@@ -38,733 +38,60 @@
         "run"
       ],
       "exitCode": 0,
-      "seconds": 101.19
+      "seconds": 98.0
     }
   ],
-  "subsequentSmallChanges": "SOX10 expansion from HGNC and the scoped KEYNOTE-522 paragraph; focused tests and final reader/type/lint checks recorded separately.",
+  "fullSuite": {
+    "testFilesPassed": 289,
+    "testsPassed": 2875,
+    "testsSkipped": 2
+  },
+  "exports": [
+    {
+      "group": "root",
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 26.98
+    },
+    {
+      "group": "root",
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.61
+    },
+    {
+      "group": "root",
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.12
+    },
+    {
+      "group": "root",
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 4.75
+    }
+  ],
+  "actualMarkdownPassages": 119,
+  "retrievalBenchmark": {
+    "questions": 100,
+    "extractiveRecall": 0.4352,
+    "rubric": 0.668,
+    "sameAsCheckpoint": true
+  },
+  "pageWeight": {
+    "recordedCeilings": 14,
+    "allPass": true,
+    "budgetsChanged": false
+  },
   "productionBuildOrDeployment": false,
-  "finalTypecheck": {
-    "exitCode": 0,
-    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  },
-  "finalTouchedFileLint": {
-    "exitCode": 0,
-    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  },
-  "finalFocusedTests": {
-    "exitCode": 0,
-    "summary": "4 passed (4)\n      Tests  41 passed (41)\n   Start at  09:32:46\n   Duration  8.92s (transform 75%, import 20%, tests 5%)\n\n  Transform  transforming modules took 24.79s · 75% of tracked time, re-done on every run\n             persist transforms across runs with fsModuleCache: true\n             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns"
-  },
-  "staticExports": {
-    "records": 16,
-    "exactEntityJSON": true,
-    "checks": [
-      {
-        "id": "germline-testing",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 5,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 6,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 7,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "germline-testing",
-        "field": "notes",
-        "index": 8,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hereditary-cancer-syndromes",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hereditary-cancer-syndromes",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hereditary-cancer-syndromes",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "gbrca-mutation",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "gbrca-mutation",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "gbrca-mutation",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "gbrca-mutation",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "brca-germline",
-        "field": "notes",
-        "index": 5,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hrd-in-breast-cancer",
-        "field": "notes",
-        "index": 5,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "er-status",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "er-status",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "er-status",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "er-status",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "er-status",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "pr-status",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "pr-status",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "pr-status",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "pr-status",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "pr-status",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-positive",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-low",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-low",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-low",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-low",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "her2-low",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "oligometastatic",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "relapse-recurrence",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "curative-intent",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 5,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 6,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 7,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 8,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 9,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 10,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 11,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 12,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 13,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 14,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 15,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 16,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "tnbc",
-        "field": "notes",
-        "index": 17,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "secondary-brain-tumours",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hormone-receptor-status",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hormone-receptor-status",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hormone-receptor-status",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "hormone-receptor-status",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "tldr",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "summary",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 0,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 1,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 2,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 3,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 4,
-        "passageInActualMarkdown": true
-      },
-      {
-        "id": "basal-like",
-        "field": "notes",
-        "index": 5,
-        "passageInActualMarkdown": true
-      }
+  "afterLedgerIntegrationFocusedChecks": {
+    "files": [
+      "scripts/education-coverage.test.ts",
+      "scripts/education-summary-consumers.test.ts",
+      "scripts/audit.test.ts"
     ],
-    "openApiHasPathsAndComponents": true,
-    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
-  },
-  "askRecall": {
-    "exitCode": 0,
-    "result": "extractive recall 0.4352, rubric 0.6680, over 100 questions"
-  },
-  "pageCeilings": {
-    "checked": 14,
-    "allWithinExistingCeilings": true
-  },
-  "ledgerReplay": {
-    "filesCompared": 680,
-    "byteChanges": 0,
-    "newLessonCredit": 0,
-    "scope": "Both existing source ledgers rerun with unchanged active proposal catalogs; this partial checkpoint is deliberately not counted as completed lesson coverage."
+    "testFilesPassed": 3,
+    "testsPassed": 34
   }
 }

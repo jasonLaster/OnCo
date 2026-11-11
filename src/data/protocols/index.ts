@@ -8,6 +8,7 @@ import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
+import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
 import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication-before-reaction-prone-anticancer-drugs";
 import { sactAdministrationChecksAtTheChair } from "./sact-administration-checks-at-the-chair";
@@ -29,6 +30,7 @@ export const protocols: ProtocolInput[] = [
   implantedPortAccessAndCare,
   infusionReactionManagement,
   intrathecalChemotherapyAndVincaAlkaloidSafety,
+  oralAnticancerMedicinesAtHome,
   piccAndTunnelledLineCare,
   premedicationBeforeReactionProneAnticancerDrugs,
   sactAdministrationChecksAtTheChair,

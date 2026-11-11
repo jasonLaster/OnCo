@@ -20,6 +20,9 @@ import { isPagedKind, kindBrowser, pageKindRows } from "@/lib/tables/kinds";
 import { KIND_PAGE } from "@/lib/static-tables";
 import { MyCancerPin, MyCancerTrialsFilter } from "@/components/MyCancer";
 import { myCancerTiles } from "@/lib/my-cancer-list";
+import { PROTOCOL_DOMAINS, PROTOCOL_DOMAIN_LABEL } from "@/lib/kinds";
+import { KindIcon } from "@/components/KindIcon";
+import { protocolDomainHref } from "@/components/ProtocolDetail";
 
 const ROUTE_TO_KIND: Record<string, Kind> = Object.fromEntries(KINDS.map((k) => [KIND_META[k].route, k])) as Record<string, Kind>;
 
@@ -67,6 +70,7 @@ export default async function KindIndex({ params }: { params: Promise<{ kind: st
         {k === "bottleneck" && <BottlenecksPipeline />}
         {k === "cancer" && <CancersGrid />}
         {k === "term" && <GlossaryCategories />}
+        {k === "protocol" && <ProtocolDomains />}
         <EntityBrowser rows={paged.rows} more={paged.more} counts={paged.more ? built.counts : undefined} facets={facets} columns={columns} noun={meta.plural} hideStatus={hideStatus} hideTldr={hideTldr} defaultSort={defaultSort} nameKind={k} />
         {isPagedKind(k) && (
           // The whole set for crawlers and agents without the table's fetch: every record also has its own page, listed in the sitemap.
@@ -84,6 +88,34 @@ export default async function KindIndex({ params }: { params: Promise<{ kind: st
         )}
       </Container>
     </>
+  );
+}
+
+/**
+ * The protocol domains in care-pathway order, each a link that filters the table below to it: the grouping without
+ * printing the protocols twice on one screen (docs/INFORMATION-ARCHITECTURE.md). The domains with nothing in them yet
+ * are named underneath, so an empty part of the map reads as not yet written rather than as not existing.
+ */
+function ProtocolDomains() {
+  const list = graph().kind("protocol");
+  const counts = new Map(PROTOCOL_DOMAINS.map((d) => [d, list.filter((p) => p.domain === d).length]));
+  const filled = PROTOCOL_DOMAINS.filter((d) => counts.get(d)! > 0);
+  const empty = PROTOCOL_DOMAINS.filter((d) => d !== "other" && counts.get(d) === 0);
+  return (
+    <div className="mb-8" data-protocol-domains>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+        {filled.map((d) => (
+          <li key={d} className="min-w-0">
+            <Link href={protocolDomainHref(d)} className="card flex h-full items-center gap-2 px-3 py-2.5 hover:shadow-md transition">
+              <KindIcon kind="protocol" className="h-4 w-4 shrink-0 text-accent" />
+              <span className="text-sm font-medium leading-snug min-w-0 flex-1">{PROTOCOL_DOMAIN_LABEL[d]}</span>
+              <span className="text-xs text-muted tabular-nums shrink-0">{counts.get(d)}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      {empty.length > 0 && <p className="text-xs text-muted mt-3 max-w-3xl">Not yet mapped: {empty.map((d) => PROTOCOL_DOMAIN_LABEL[d].toLowerCase()).join(", ")}. Every step on every protocol here is read from a named guideline or standard; how they are written is in <a className="underline" href="https://github.com/judegomila/OnCo/blob/main/docs/PROTOCOLS.md" rel="noopener">docs/PROTOCOLS.md</a>.</p>}
+    </div>
   );
 }
 

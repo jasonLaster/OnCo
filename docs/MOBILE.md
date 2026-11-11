@@ -122,6 +122,12 @@ but its table is paged, so the HTML carries thirty rows whatever the corpus does
 `/api/v1/tables/open-trials.json`. Scaling its allowance with the trial count would hand it an allowance it has
 no way to spend, and would hide a regression in the thirty rows it does carry. A paged table should be pinned.
 
+`/protocols/` is pinned from 11 November 2026 for a different reason: it is a new page with three protocols, so
+there is no live figure to scale from, and scaling a three-row table by the protocol count would hand it a hundredfold
+allowance as the fill rounds land. Its first ceiling, 121 KB with a 33 KB payload, was measured on a local `next dev`
+server, which carries more markup than production; the first `--record` after it ships will lower it. When the kind
+passes sixty protocols (`KIND_PAGE`), add `protocol` to `PAGED_KINDS` in src/lib/tables/kinds.ts and the pin stays right.
+
 The baseline was re-taken once, today, against the live site, because the 1 October entries were recorded
 before a basis existed and there was no count to scale them from. That is the only time the numbers have gone
 up, and this paragraph is the reason.

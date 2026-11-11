@@ -4,7 +4,7 @@ import { logoSrc } from "@/lib/logos";
 import { portraitSrc } from "@/lib/portraits";
 import { rankInstitutions } from "@/lib/ranking";
 import { decadeLabel, PHASE_FILTER_ORDER, phaseLabel, routeFor, type Kind } from "@/lib/kinds";
-import { EVIDENCE_TIER_LABEL, EVIDENCE_TIERS, TARGET_DISTRIBUTION_LABEL, TARGET_DISTRIBUTIONS, TARGET_ROLE_LABEL, TARGET_ROLES, TARGET_SPECIFICITIES, TARGET_SPECIFICITY_LABEL, type Entity } from "@/lib/schema";
+import { PROTOCOL_ACTOR_LABEL, PROTOCOL_ACTORS, PROTOCOL_DOMAIN_LABEL, PROTOCOL_DOMAINS, PROTOCOL_PLACE_LABEL, PROTOCOL_PLACES, EVIDENCE_TIER_LABEL, EVIDENCE_TIERS, TARGET_DISTRIBUTION_LABEL, TARGET_DISTRIBUTIONS, TARGET_ROLE_LABEL, TARGET_ROLES, TARGET_SPECIFICITIES, TARGET_SPECIFICITY_LABEL, type Entity } from "@/lib/schema";
 import { distributionTip, specificityTip, TUMOUR_AGNOSTIC_FACET } from "@/lib/target-specificity";
 import { COMPANY_TYPE_LABEL, portfolioOf, STAGE_LABEL, STAGE_ORDER, STAGE_TIP, stageOf } from "@/lib/startups";
 import { publicTags } from "@/lib/tags";
@@ -298,6 +298,28 @@ export function buildBrowser(k: Kind): { rows: BrowserRow[]; facets: FacetDef[];
       rows: g.kind("collection").map((c) => { const lic = c.license?.split(/[;(]/)[0].trim(); return { ...base(c), logo: logoFor(c.id, c.url), avatar: "org", sub: c.maintainer, facets: { license: lic ? [lic] : [] }, cols: { holds: c.holds, license: fl("license", lic, { tip: c.license && c.license !== lic ? c.license : undefined }) } }; }),
       facets: [{ key: "license", label: "Licence", searchable: false, width: "w-56" }],
       columns: [{ key: "holds", label: "Holds", hide: "hidden md:table-cell" }, { key: "license", label: "Licence", hide: "hidden lg:table-cell" }],
+    };
+    // Care protocols (docs/PROTOCOLS.md): grouped by domain in care-pathway order, filterable by who carries them out
+    // and where. The domain column is the grouping the index page draws above the table.
+    case "protocol": return {
+      hideStatus: true,
+      rows: g.kind("protocol").map((p) => {
+        const domain = PROTOCOL_DOMAIN_LABEL[p.domain];
+        const who = p.setting.who.map((w) => PROTOCOL_ACTOR_LABEL[w]);
+        const where = p.setting.where.map((w) => PROTOCOL_PLACE_LABEL[w]);
+        return { ...base(p), ...borrowed(p),
+          facets: { domain: [domain], who, where, cancers: cancerFacet(p.cancers) },
+          cols: { domain: fl("domain", domain), who: who.map((w) => ({ facet: "who", value: w })), steps: count(p.steps.length, p, "steps", "step", "in"), sources: p.sources.length },
+          sortKeys: { domain: PROTOCOL_DOMAINS.indexOf(p.domain), steps: p.steps.length, sources: p.sources.length } };
+      }),
+      facets: [
+        { key: "domain", label: "Domain", searchable: false, width: "w-64", order: PROTOCOL_DOMAINS.map((d) => PROTOCOL_DOMAIN_LABEL[d]) },
+        { key: "who", label: "Who carries it out", searchable: false, width: "w-52", order: PROTOCOL_ACTORS.map((a) => PROTOCOL_ACTOR_LABEL[a]) },
+        { key: "where", label: "Where", searchable: false, width: "w-60", order: PROTOCOL_PLACES.map((a) => PROTOCOL_PLACE_LABEL[a]) },
+        { key: "cancers", label: "Cancer", width: "w-52", normalise: "cancer" },
+      ],
+      columns: [{ key: "domain", label: "Domain", sortable: true, chip: true }, { key: "who", label: "Who", hide: "hidden md:table-cell" }, { key: "steps", label: "Steps", sortable: true, numeric: true, hide: "hidden sm:table-cell" }, { key: "sources", label: "Sources", sortable: true, numeric: true, hide: "hidden lg:table-cell" }],
+      defaultSort: { key: "domain", dir: 1 },
     };
     // Years are generated from every dated field in the corpus (src/data/years.ts). The table is the timeline as a
     // list: how much each year holds and what kind of thing it was, newest first, filterable by decade.

@@ -567,9 +567,11 @@ export const termsJargon: TermInput[] = [
 "notes": [
   "Amount, schedule and delivery are different questions. Dose is the quantity of drug and dosage is the dose with its schedule, meaning the interval between doses and the duration of treatment (FDA, 'Optimizing the Dosage of Human Prescription Drugs and Biological Products for the Treatment of Oncologic Diseases', August 2024). Dose-dense scheduling shortens the interval, a dose reduction changes the amount, a delay lowers delivered intensity even if the eventual cumulative amount is unchanged, and omission lowers cumulative dose; a delay lowers dose intensity in the same proportion as an equal reduction (Alberto 1995). Planned and delivered intensity can differ: in a biweekly cisplatin study, delays of three or more days on 17 of 66 courses (26 per cent) left the mean delivered intensity at 83 mg/m2 per week, 88 per cent of the planned intensity (Kim et al.).",
   "Dose intensity is the amount of a named medicine delivered per unit time, commonly milligrams per square metre per week. Relative dose intensity divides that by the intensity of a specified reference regimen. A combination average requires its declared method, such as the mean of the component ratios in Alberto's 1995 overview. Equal milligrams of different medicines are not equivalent activity. Illness and toxicity can drive both modification and outcomes, so an observational association is not a causal effect of changing the dose. Bonadonna and Valagussa's retrospective 1981 CMF analysis associated benefit with at least 85% of the planned dose in that regimen; this was a dose-level finding, not a universal relative-intensity threshold or proof for other treatments.",
-  "In the fictional four-dose example, both schedules use the same Drug Z and formulation. The first window is week 0 up to week 4, with administrations at weeks 0, 1, 2 and 3; the second is week 0 up to week 8, with administrations at weeks 0, 2, 4 and 6. Each declared window includes one nominal final interval and no administration at its right endpoint. Both totals are 40 arbitrary units, but the intensities are 10 and 5 units per week. A different final-cycle convention needs its own definition. Cumulative dose retains amount units; intensity adds a time denominator; relative intensity is the dimensionless ratio to a stated reference."
+  "In the fictional four-dose example, both schedules use the same Drug Z and formulation. The first window is week 0 up to week 4, with administrations at weeks 0, 1, 2 and 3; the second is week 0 up to week 8, with administrations at weeks 0, 2, 4 and 6. Each declared window includes one nominal final interval and no administration at its right endpoint. Both totals are 40 arbitrary units, but the intensities are 10 and 5 units per week. A different final-cycle convention needs its own definition. Cumulative dose retains amount units; intensity adds a time denominator; relative intensity is the dimensionless ratio to a stated reference.",
+  "Shorter intervals are one scheduling strategy, distinct from increasing the amount per administration or giving a medicine weekly. The rationale of limiting regrowth is a model that must be tested with the actual drugs, population and support package. Less recovery time can matter to normal tissues; growth-factor support does not remove every harm. Delays, reductions and omissions change delivery and may be necessary for safety, rather than a failure by the person receiving treatment.",
+  "For a fictional same-drug comparison, four doses of the same amount every three weeks and every two weeks can have the same cumulative amount but different intensity. If the declared windows include the nominal final interval, they last twelve and eight weeks respectively; if measurement stops at the fourth administration, elapsed time is nine and six weeks. State the convention before calculating. Shortening this phase need not shorten another phase or the whole course."
 ],
-"links": [
+"links": [...([
   {
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Metronomic_therapy"
@@ -590,14 +592,208 @@ export const termsJargon: TermInput[] = [
     "label": "Bonadonna and Valagussa, dose-response effect of adjuvant chemotherapy in breast cancer (1981)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/7432433/"
   }
-],
+]), ...[
+  {
+    "label": "NCI glossary: dose-dense chemotherapy",
+    "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/dose-dense-chemotherapy"
+  },
+  {
+    "label": "Citron et al., two-weekly C9741 strategy with filgrastim (2003)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12668651/"
+  }
+]],
 "asOf": "2026-11-11"
 }),
   t({ id: "doublet-triplet", name: "Doublet, triplet and quadruplet regimens", category: "Treatment jargon", aka: ["doublet", "doublets", "triplet", "triplets", "quadruplet", "quadruplets", "quad", "two-drug", "three-drug", "four-drug", "IO-TKI doublet", "IO-IO", "IO/IO", "chemo-doublet", "dual blockade", "IO-TKI doublets"], tldr: "Shorthand for how many active drugs are combined: a doublet is two, a triplet three, a quadruplet four. More drugs usually mean more responses and more side effects, and trials test whether the extra drug earns its place.", summary: "Platinum doublets (cisplatin or carboplatin plus a partner) are the chemotherapy standard in lung, bladder and ovarian cancer. FOLFOXIRI is a chemotherapy triplet; quadruplet induction (daratumumab, bortezomib, lenalidomide, dexamethasone) is now standard in myeloma; IO-TKI doublets (pembrolizumab-axitinib) and IO-IO doublets (nivolumab-ipilimumab) compete in kidney cancer; prostate cancer moved from ADT alone to doublets and triplets (ADT + ARPI + docetaxel, PEACE-1, ARASENS). The question in each case is whether the combination beats sequential use of the same drugs, which is rarely tested directly.", wikipedia: W("Combination_therapy"), related: ["chemotherapy-regimen", "platinum-sensitivity", "backbone-add-on", "vrd"], sections: ["chemotherapy"] }),
-  t({ id: "chemotherapy-regimen", name: "Regimen and cycles", category: "Treatment jargon", aka: ["regimen", "regimens", "chemotherapy regimen", "treatment regimen", "cycles", "chemotherapy cycles", "cycles of chemotherapy", "21-day cycle", "28-day cycle", "every 3 weeks", "q3w", "q2w", "q4w", "day 1", "days 1-14", "×6 cycles", "× 6", "chemotherapy cycle"], tldr: "A regimen is a named recipe of drugs, doses and timing; a cycle is one round of it, usually two to four weeks, giving normal tissues time to recover before the next. 'Six cycles of FOLFOX' means six repeats of that recipe.", summary: "Regimens are named by acronym (R-CHOP, FOLFOX, AC-T, VRd, 7+3) or trial (the KEYNOTE-522 regimen), specify each drug's dose per body surface area or weight and its schedule (day 1, days 1-14), and are given for a defined number of cycles or until progression or intolerance. Cycle length is set by marrow recovery, so dose-dense schedules need growth factor support. Modern regimens increasingly mix chemotherapy with antibodies and immunotherapy, and fixed-duration versus continuous designs are a live question in many diseases.", wikipedia: W("Chemotherapy_regimen"), related: ["doublet-triplet", "folfox-family", "r-chop", "dose-dense-chemotherapy", "dose-modification"], sections: ["chemotherapy"] }),
-  t({ id: "anthracycline", name: "Anthracyclines (doxorubicin, epirubicin)", category: "Treatment jargon", aka: ["anthracyclines", "anthracycline-based", "anthracycline-free", "anthracycline-containing", "liposomal doxorubicin", "AC-T", "FEC", "anthracycline cardiotoxicity"], tldr: "A family of red chemotherapy drugs derived from a soil bacterium that damage cancer DNA. Cornerstones of breast cancer, lymphoma, leukaemia and sarcoma treatment, but they weaken the heart in a dose-dependent way, so there is a lifetime limit.", summary: "Doxorubicin, epirubicin, daunorubicin and idarubicin intercalate DNA and poison topoisomerase II. They anchor AC/EC in breast cancer, CHOP in lymphoma, 7+3 in AML and doxorubicin-ifosfamide in sarcoma. Cumulative doses above about 450 mg/m² doxorubicin cause cardiomyopathy, and even lower doses matter in children and with trastuzumab, which motivates anthracycline-free regimens (TCHP, docetaxel-cyclophosphamide), dexrazoxane, liposomal formulations and cardiac surveillance. They also cause alopecia, myelosuppression, and secondary leukaemia (topoisomerase-related, 1-2%), and as ADC payloads they are being revisited.", wikipedia: W("Anthracycline"), technologies: ["cytotoxic-chemotherapy", "cardio-oncology"], drugs: ["doxorubicin"], cancers: ["breast-hr-positive", "dlbcl", "aml", "sarcoma"], related: ["cardiotoxicity", "secondary-malignancy", "r-chop", "seven-plus-three"], sections: ["chemotherapy"] }),
-  t({ id: "taxane", name: "Taxanes (paclitaxel, docetaxel, nab-paclitaxel)", category: "Treatment jargon", aka: ["taxanes", "taxane-based", "taxane-pretreated", "post-taxane", "taxane-naive", "weekly paclitaxel", "gemcitabine/nab-paclitaxel", "carboplatin/paclitaxel"], tldr: "Chemotherapy drugs originally from the yew tree that freeze the cell's internal scaffolding (microtubules) so it cannot divide. Used in breast, lung, ovarian, prostate, gastric and head and neck cancers; their main lasting side effect is nerve damage in the hands and feet.", summary: "Paclitaxel (Taxol, 1992) and docetaxel are given with platinum in ovarian and lung cancer, sequentially with anthracyclines in breast cancer, as the chemotherapy partner in KEYNOTE-522 and CLEOPATRA, and as first chemotherapy in prostate cancer (docetaxel, then cabazitaxel after progression). Nab-paclitaxel is an albumin-bound form that avoids solvent hypersensitivity and is standard with gemcitabine in pancreatic cancer. Peripheral neuropathy, alopecia, neutropenia and hypersensitivity reactions are the main toxicities; taxane-derived payloads are less common in ADCs than tubulin inhibitors such as MMAE, which act on the same target.", wikipedia: W("Taxane"), technologies: ["cytotoxic-chemotherapy"], drugs: ["paclitaxel", "docetaxel"], related: ["peripheral-neuropathy", "tubulin-inhibitor-payloads", "doublet-triplet"], sections: ["chemotherapy"] }),
-  t({ id: "alkylating-agent", name: "Alkylating agents and antimetabolites", category: "Treatment jargon", aka: ["alkylating", "alkylator", "alkylators", "alkylating agent", "alkylating agents", "alkylating chemotherapy", "antimetabolite", "antimetabolites", "fluoropyrimidine", "fluoropyrimidines", "nucleoside analogue", "purine analogue", "vinca alkaloid", "vinca alkaloids", "vinca", "5-FU", "purine analogues"], tldr: "The two oldest chemotherapy families: alkylators (cyclophosphamide, temozolomide, melphalan) glue DNA strands together so cells cannot copy them; antimetabolites (5-FU, capecitabine, methotrexate, gemcitabine) are fake building blocks that jam DNA synthesis.", summary: "Alkylating agents descend from mustard gas (nitrogen mustard, 1946): cyclophosphamide anchors lymphoma and breast regimens and lymphodepletion, temozolomide treats glioblastoma, melphalan and busulfan are transplant conditioning, and platinum drugs act similarly. Antimetabolites include fluoropyrimidines (5-FU, capecitabine, S-1) in gastrointestinal and breast cancer, methotrexate and cytarabine in leukaemia, gemcitabine in pancreatic and bladder cancer and pemetrexed in non-squamous lung cancer. Alkylators are mutagenic and cause secondary leukaemia and infertility; antimetabolite toxicity depends on enzymes such as DPD (5-FU) and can be reduced by pre-treatment genotyping.", wikipedia: W("Alkylating_antineoplastic_agent"), technologies: ["cytotoxic-chemotherapy"], drugs: ["cyclophosphamide", "fluorouracil", "methotrexate", "gemcitabine", "temozolomide", "melphalan"], related: ["secondary-malignancy", "conditioning-regimen", "lymphodepletion", "folfox-family"], sections: ["chemotherapy"] }),
+  t({ id: "chemotherapy-regimen", name: "Regimen and cycles", category: "Treatment jargon", aka: ["regimen", "regimens", "chemotherapy regimen", "treatment regimen", "cycles", "chemotherapy cycles", "cycles of chemotherapy", "21-day cycle", "28-day cycle", "every 3 weeks", "q3w", "q2w", "q4w", "day 1", "days 1-14", "×6 cycles", "× 6", "chemotherapy cycle"], tldr: "A chemotherapy regimen specifies the medicines, amounts and timing. A cycle is a defined period of treatment and recovery, whose duration and supportive care depend on the plan.", summary: "A chemotherapy regimen specifies the medicines, formulations, amounts, administration days, intervals, number of cycles and supportive care. A cycle is a defined period of treatment and recovery. Abbreviations such as AC, EC, TC, FOLFOX, FOLFIRI, FOLFIRINOX, CAPOX and BEP name particular combinations; a treatment abbreviation alone does not supply every dose or eligibility condition.\n\nDose-dense scheduling shortens intervals relative to a stated reference. Some tested regimens use growth-factor support, but that is a property of the protocol, not a rule supplied by the word dose-dense. Compare the intended schedule with what was delivered, and distinguish the duration of one phase from that of the whole treatment course.", wikipedia: W("Chemotherapy_regimen"), related: [
+  "doublet-triplet",
+  "folfox-family",
+  "r-chop",
+  "dose-dense-chemotherapy",
+  "dose-modification"
+], sections: ["chemotherapy"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "C9741 randomised 2,005 women with node-positive primary breast cancer after surgery in a factorial comparison of two-weekly versus three-weekly treatment and sequential versus concurrent schedules. The two-weekly strategy included filgrastim. Its 2003 abstract reports risk ratios of 0.74 for disease-free survival and 0.69 for overall survival, and four-year disease-free survival of 82% versus 75%. These are results for that postoperative comparison and support package. The listed June 2003 erratum was not accessible in this check, so these numbers retain their abstract-level scope.",
+  "The 2019 EBCTCG individual-patient meta-analysis included 37,298 women in 26 early-breast-cancer trials, mostly younger than 70 and with node-positive disease. Across the strategies studied, ten-year recurrence was 28.0% versus 31.4%, breast-cancer mortality 18.9% versus 21.3%, and all-cause mortality 22.1% versus 24.8%. These comparisons do not test every shorter schedule. KEYNOTE-522 studied its own pembrolizumab-containing neoadjuvant and postoperative strategy; neither report establishes that changing the timing of that regimen reproduces the earlier dose-density result."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chemotherapy_regimen"
+  },
+  {
+    "label": "Citron et al., C9741 postoperative schedule comparison (2003)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12668651/"
+  },
+  {
+    "label": "EBCTCG, dose-intensity strategies in 26 randomised trials (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30739743/"
+  },
+  {
+    "label": "Schmid et al., KEYNOTE-522 neoadjuvant strategy (2020)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+  }
+]
+}),
+  t({ id: "anthracycline", name: "Anthracyclines (doxorubicin, epirubicin)", category: "Treatment jargon", aka: ["anthracyclines", "anthracycline-based", "anthracycline-free", "anthracycline-containing", "liposomal doxorubicin", "AC-T", "FEC", "anthracycline cardiotoxicity"], tldr: "Anthracyclines are chemotherapy medicines that disturb DNA and an enzyme that cuts and reseals it. They can also harm the heart, including after treatment, so prior exposure and heart function matter.", summary: "Doxorubicin and epirubicin are members of the anthracycline family. Doxorubicin intercalates between DNA bases and can stabilise complexes of DNA with topoisomerase II, an enzyme that temporarily cuts both DNA strands, passes another segment and reseals the cut. Stabilising this intermediate interferes with resealing; it differs from simply switching the enzyme off. Other interactions, including reactive molecules and cell membranes, also contribute.\n\nCardiac risk depends on cumulative exposure, prior anthracyclines, other treatments and the person’s circumstances. It is not defined by a single dose above which every person develops cardiomyopathy or below which nobody does. A normal baseline heart scan and a symptom-free infusion cannot guarantee freedom from later cardiac injury.", wikipedia: W("Anthracycline"), technologies: ["cytotoxic-chemotherapy", "cardio-oncology"], drugs: ["doxorubicin"], cancers: ["breast-hr-positive", "dlbcl", "aml", "sarcoma"], related: ["cardiotoxicity", "secondary-malignancy", "r-chop", "seven-plus-three"], sections: ["chemotherapy"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Tewey and colleagues’ 1984 experiments linked doxorubicin-induced strand breaks and protein-DNA complexes to mammalian topoisomerase II. The cut ends remain associated with the enzyme in the cleavage complex; a drawing of two separated lines is not proof of freely severed DNA or a prediction of treatment response. Topoisomerase I poisons instead stabilise an intermediate involving a single-strand nick. These are different mechanisms; their names alone do not establish cross-resistance or a useful next treatment. The antitumour-antibiotic classification refers to the drug family and origin; it does not make an anthracycline cancer regimen routine treatment for an infection.",
+  "The 2019 conventional doxorubicin US label describes cardiomyopathy during treatment or years later and asks that prior anthracycline or anthracenedione doses count towards cumulative exposure. For administration every three weeks, its estimates range from 1% to 2% at 300 mg/m² cumulative doxorubicin to 6% to 20% at 500 mg/m². Those are labelled estimates in a stated schedule, not an individual risk calculator. The same label reports secondary acute myeloid leukaemia or myelodysplastic syndromes, with cumulative incidences from 0.2% at five years to 1.5% at ten years in two adjuvant breast-cancer trials.",
+  "Dose per administration and lifetime cumulative amount are separate quantities, often expressed in milligrams per square metre. Left ventricular ejection fraction measures cardiac pumping function; it is neither a tumour-response test nor a guarantee against future injury. Conventional and liposomal formulations need their own instructions and evidence. In a fictional experiment, a strand-break marker plus a normal baseline heart scan establishes neither successful cancer treatment nor absence of cardiac risk."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Anthracycline"
+  },
+  {
+    "label": "Tewey et al., doxorubicin and topoisomerase II-mediated DNA damage (1984)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6093249/"
+  },
+  {
+    "label": "Pommier et al., topoisomerase poisoning mechanisms (2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20534341/"
+  },
+  {
+    "label": "Conventional doxorubicin US label (2019): mechanisms and cumulative risks",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/050467s077lbl.pdf"
+  },
+  {
+    "label": "NCI glossary: anthracycline origins and class",
+    "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/anthracycline"
+  },
+  {
+    "label": "NCI glossary: antitumour antibiotic",
+    "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/antitumor-antibiotic"
+  },
+  {
+    "label": "NCI: epirubicin as an anthracycline family example",
+    "url": "https://www.cancer.gov/about-cancer/treatment/drugs/epirubicinhydrochloride"
+  }
+]
+}),
+  t({ id: "taxane", name: "Taxanes (paclitaxel, docetaxel, nab-paclitaxel)", category: "Treatment jargon", aka: ["taxanes", "taxane-based", "taxane-pretreated", "post-taxane", "taxane-naive", "weekly paclitaxel", "gemcitabine/nab-paclitaxel", "carboplatin/paclitaxel"], tldr: "Taxanes disturb the normal growth and shortening of microtubules, structures used in cell division and other cell jobs. Their formulation, exposure and effects on healthy tissue matter as well as tumour activity.", summary: "Paclitaxel, docetaxel and cabazitaxel are taxanes. Paclitaxel promotes microtubule assembly and stabilises microtubules against disassembly, suppressing their normal dynamics. Microtubules remain present; this is not tube destruction. Their reorganisation matters in mitosis and in interphase, when a cell is not dividing.\n\nAlbumin-bound paclitaxel and solvent-based paclitaxel contain the same active molecule in different products. Their administration and safety instructions are not interchangeable. Albumin binding does not eliminate hypersensitivity: the albumin-bound product label reports severe, sometimes fatal reactions and cross-hypersensitivity with other taxanes.", wikipedia: W("Taxane"), technologies: ["cytotoxic-chemotherapy"], drugs: ["paclitaxel", "docetaxel"], related: ["peripheral-neuropathy", "tubulin-inhibitor-payloads", "doublet-triplet"], sections: ["chemotherapy"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Microtubules help organise cells, separate chromosomes and transport material. The albumin-bound paclitaxel label explicitly describes interphase and mitotic functions. Its neuropathy warning is dose- and schedule-dependent. Neuropathy is a healthy-tissue effect, not a test of tumour killing. In Gornstein and Schwarz’s adult murine sensory-neuron cultures, low paclitaxel exposures arrested distal axon growth without cell death or fragmentation; early transport defects did not explain that result. This model does not establish one cause or incidence for all clinical neuropathy.",
+  "Other microtubule medicines need their own mechanism. Vinorelbine interferes with assembly; vincristine’s label describes inhibition of spindle microtubule formation while noting that its mechanisms remain under investigation. Eribulin inhibits the growth phase. The MMAE cargo of vedotin conjugates and the DM1 cargo of trastuzumab emtansine also inhibit microtubule function or assembly. A shared broad target does not make stabilisation and inhibition of growth the same operation, or prove that every exposed cell dies.",
+  "A laboratory concentration in nanomoles per litre and an administered dose in milligrams per square metre describe different things. Record formulation, exposure duration, drug removal, cell state and recovery, and distinguish altered microtubules, mitotic arrest, death and later regrowth. In a fictional culture that resumes growth after treatment, a picture of disrupted division is not proof of eradication. Schematic drug symbols on a tube show a functional comparison, not an atomic binding site or a clinical response threshold."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taxane"
+  },
+  {
+    "label": "Albumin-bound paclitaxel label: mechanism, neuropathy and hypersensitivity",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15ca4829-8fee-45f9-b4bc-b31c15732cd6"
+  },
+  {
+    "label": "Eribulin label: microtubule growth inhibition",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=311a12f4-e5b3-4959-ab84-3d0eb6558d13"
+  },
+  {
+    "label": "Vincristine label: clinical pharmacology",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b22e4c8e-dbe1-4d4b-a026-e1812974071c"
+  },
+  {
+    "label": "Vinorelbine label: microtubule assembly",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10a70995-e04d-4044-b1dc-c9aa27460397"
+  },
+  {
+    "label": "Brentuximab vedotin label: MMAE mechanism",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3904f8dd-1aef-3490-e48f-bd55f32ed67f"
+  },
+  {
+    "label": "Enfortumab vedotin label: MMAE mechanism",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5631d3e-4604-4363-8f20-11dfc5a4a8ed"
+  },
+  {
+    "label": "Trastuzumab emtansine label: DM1 mechanism",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+  },
+  {
+    "label": "Gornstein and Schwarz, paclitaxel effects in adult sensory-neuron cultures (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27894788/"
+  }
+]
+}),
+  t({ id: "alkylating-agent", name: "Alkylating agents and antimetabolites", category: "Treatment jargon", aka: [
+  "alkylating",
+  "alkylator",
+  "alkylators",
+  "alkylating agent",
+  "alkylating agents",
+  "alkylating chemotherapy",
+  "antimetabolite",
+  "antimetabolites",
+  "fluoropyrimidine",
+  "fluoropyrimidines",
+  "nucleoside analogue",
+  "purine analogue",
+  "purine analogues"
+], tldr: "Alkylating agents and antimetabolites are different chemotherapy families. Some attach chemical groups to DNA; others interfere with the cell’s use of building blocks.", summary: "This overview covers two distinct families. Classic alkylating agents or their active metabolites attach alkyl groups to cellular molecules, including DNA. An alkyl group contains carbon; some agents with two reactive sites can link DNA sites within one strand or between strands. Not every alkylator creates the same lesions or forms cross-links. A DNA attachment is different from cutting its backbone.\n\nAntimetabolites resemble or interfere with chemicals used in normal cell reactions. Fluorouracil and its oral prodrug capecitabine are fluoropyrimidine examples, with nucleotide and RNA effects rather than alkyl transfer. Vinca medicines instead act on microtubules. Platinum medicines can make DNA attachments and cross-links but use metal coordination, which is why the grouping alkylating-like does not make them chemically identical to alkylators.", wikipedia: W("Alkylating_antineoplastic_agent"), technologies: ["cytotoxic-chemotherapy"], drugs: ["cyclophosphamide", "fluorouracil", "methotrexate", "gemcitabine", "temozolomide", "melphalan"], related: [
+  "secondary-malignancy",
+  "conditioning-regimen",
+  "lymphodepletion",
+  "folfox-family",
+  "fluorouracil",
+  "capecitabine",
+  "tubulin",
+  "platinum"
+], sections: ["chemotherapy"] ,
+"asOf": "2026-11-11",
+"notes": [
+  "Cyclophosphamide is a prodrug activated through cytochrome P450 metabolism, producing 4-hydroxycyclophosphamide and aldophosphamide and then phosphoramide mustard and acrolein. Parent-drug amount is not active-metabolite exposure. In a fictional culture without a suitable activation system, little killing after parent cyclophosphamide does not establish clinical resistance. Measure activation and exposure before making that inference.",
+  "Urinary injury and antitumour alkylation are different consequences of metabolism. The cyclophosphamide label describes haemorrhagic cystitis and other urotoxicity, hydration and bladder emptying, and use of mesna. Brock’s 1979 abstract attributes oxazaphosphorine urotoxicity to urinary acrolein; IARC’s later synthesis calls acrolein the likely cause of cyclophosphamide-induced cystitis, drawing on experimental toxicology. This supports a harmful-by-product mechanism, not a universal cystitis rate or a reason to select supportive care from the family name.",
+  "Cyclophosphamide also suppresses immune cells. For example, the ABECMA product label includes it with fludarabine in lymphodepleting pretreatment before the cell infusion. That product-specific conditioning schedule is different from a breast-cancer regimen. The cyclophosphamide label describes impaired fertility, transient or permanent amenorrhoea and a premature-menopause risk that increases with age; sterility can be irreversible in some people. This is a risk, not a prediction that ovarian function always ends. Trials such as POEMS studied temporary ovarian suppression during chemotherapy in a defined premenopausal breast-cancer population; neither the risk nor the trial supplies a universal guarantee of loss or protection.",
+  "Follow the named product, active species and regimen when reading safety and exposure data. A clinical dose may be written in milligrams or milligrams per square metre, while a laboratory exposure has concentration and time units. Blood counts, kidney and urinary findings and reproductive effects answer different safety questions. A base attachment, same-strand cross-link or opposite-strand cross-link leaves the sugar-phosphate backbone continuous; a double-strand break severs it. Schematic connectors illustrate these categories, not their frequencies or a guarantee of cell death."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alkylating_antineoplastic_agent"
+  },
+  {
+    "label": "Cyclophosphamide label: metabolism, urotoxicity and fertility",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bad5bfc-12c0-46a2-8355-1028f108ecbf"
+  },
+  {
+    "label": "NCI glossary: alkylating agent",
+    "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/alkylating-agent"
+  },
+  {
+    "label": "NCI glossary: antimetabolite",
+    "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/antimetabolite"
+  },
+  {
+    "label": "Brock et al., acrolein and oxazaphosphorine urotoxicity (1979)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/114192/"
+  },
+  {
+    "label": "IARC Monographs volume 100A: cyclophosphamide mechanism synthesis",
+    "url": "https://www.inchem.org/documents/iarc/iarcmono/v100aiarc.pdf"
+  },
+  {
+    "label": "ABECMA label: cyclophosphamide-containing lymphodepletion",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b90c1fe7-f5cc-464e-958a-af36e9c26d7c"
+  },
+  {
+    "label": "USDA National Agricultural Library thesaurus: alkylation",
+    "url": "https://lod.nal.usda.gov/nalt/6495"
+  },
+  {
+    "label": "Kohn, Drugs Against Cancer chapter 3: platinum chemistry",
+    "url": "https://discover.nci.nih.gov/kohn/book/drugs_against_cancer_chapter3_v221004be3.pdf"
+  },
+  {
+    "label": "Moore et al., POEMS ovarian-protection trial (2015)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25738668/"
+  }
+]
+}),
   t({ id: "folfox-family", name: "FOLFOX, FOLFIRI, FOLFIRINOX and CAPOX", category: "Treatment jargon", aka: ["FOLFOX", "mFOLFOX6", "FOLFIRI", "FOLFOXIRI", "FOLFIRINOX", "mFOLFIRINOX", "modified FOLFIRINOX", "CAPOX", "XELOX", "CAPEOX", "NALIRIFOX", "FOLFOX/CAPOX", "fluoropyrimidine-based"], tldr: "The standard chemotherapy recipes for bowel and pancreatic cancer, named from their ingredients: FOL (folinic acid) + F (5-fluorouracil) + OX (oxaliplatin), IRI (irinotecan), or both (FOLFIRINOX). CAPOX swaps the 5-FU infusion for capecitabine tablets.", summary: "FOLFOX or CAPOX for 3-6 months is adjuvant therapy for stage III colon cancer (IDEA showed 3 months suffices for low-risk disease); FOLFOX or FOLFIRI with an antibody (bevacizumab, or cetuximab/panitumumab for left-sided RAS wild-type) is first-line metastatic treatment, with FOLFOXIRI for fit patients needing maximal response. FOLFIRINOX (2011) and NALIRIFOX are the most active pancreatic regimens for fit patients, and FOLFOX is part of total neoadjuvant therapy for rectal cancer and of gastric and biliary regimens. Oxaliplatin causes cumulative cold-triggered neuropathy, irinotecan causes diarrhoea and neutropenia (UGT1A1-dependent).", wikipedia: W("FOLFOX"), cancers: ["colorectal", "pancreatic", "gastric"], drugs: ["oxaliplatin", "irinotecan", "fluorouracil"], related: ["alkylating-agent", "peripheral-neuropathy", "total-neoadjuvant-therapy", "chemotherapy-regimen"], sections: ["chemotherapy"] }),
   t({ id: "flot-term", name: "FLOT regimen (perioperative chemotherapy for gastric cancer)", category: "Treatment jargon", aka: ["FLOT4", "FLOT regimen", "perioperative FLOT", "docetaxel quadruplet", "ECF", "ECX", "MAGIC regimen"], tldr: "Four cycles of chemotherapy before and four after surgery for stomach and junction cancer, using fluorouracil, leucovorin, oxaliplatin and docetaxel. It replaced the older ECF recipe after the FLOT4 trial and is now the Western standard.", summary: "The MAGIC trial (2006) established perioperative ECF; FLOT4 (2019) showed FLOT improved median survival from 35 to 50 months and raised complete pathological responses. Adding PD-1 blockade (MATTERHORN durvalumab, KEYNOTE-585) improved event-free survival, and trastuzumab and zolbetuximab are being tested in HER2-positive and claudin 18.2-positive disease. FLOT is toxic (neutropenia, neuropathy, diarrhoea) and only about half of patients complete the postoperative half, so ctDNA-guided and response-adapted variants are under study. East Asian practice favours D2 surgery followed by adjuvant S-1 or CAPOX instead.", wikipedia: W("Gastric_cancer#Treatment"), cancers: ["gastric", "esophageal"], drugs: ["oxaliplatin", "docetaxel", "fluorouracil"], related: ["flot", "gastrectomy", "neoadjuvant-adjuvant", "gej", "folfox-family"], sections: ["chemotherapy"] }),
   t({ id: "r-chop", name: "R-CHOP (lymphoma chemoimmunotherapy)", category: "Treatment jargon", aka: ["R-CHOP", "R-CHOP21", "CHOP-R", "Pola-R-CHP", "polatuzumab-R-CHP", "R-CHOEP", "DA-EPOCH-R", "R-CVP", "bendamustine-rituximab", "chemoimmunotherapy", "chemo-immunotherapy regimen", "R-ICE", "R-DHAP", "R-GDP"], tldr: "R-CHOP is the standard first treatment for diffuse large B-cell lymphoma: rituximab (an antibody against CD20) plus four chemotherapy drugs (cyclophosphamide, doxorubicin, vincristine, prednisone), given every three weeks for six cycles with curative intent. Patients who relapse within a year now go to CAR-T rather than more chemotherapy.", summary: "CHOP dates from the 1970s; adding rituximab (2002) raised cure rates by about 15 percentage points. Pola-R-CHP swaps vincristine for polatuzumab vedotin and improved progression-free survival (POLARIX); PET-guided shortening to four cycles suffices for low-risk early-stage disease (FLYER). Patients who relapse within a year now go to CAR-T rather than salvage chemotherapy and autologous transplant; bispecific antibodies (glofitamab, epcoritamab) are moving into first line combinations. BR (bendamustine-rituximab) and R-CVP are gentler regimens for indolent lymphomas. 'Chemoimmunotherapy' in lymphoma means antibody plus chemotherapy, not checkpoint inhibitors.", wikipedia: W("R-CHOP"), cancers: ["dlbcl", "cll"], drugs: ["rituximab", "cyclophosphamide", "doxorubicin", "vincristine", "bendamustine"], related: ["anthracycline", "deauville", "salvage-therapy", "chemotherapy-regimen"], sections: ["chemotherapy", "immunotherapy"] }),

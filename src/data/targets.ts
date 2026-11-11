@@ -1031,15 +1031,48 @@ export const targets: TargetInput[] = [
     links: [{ label: "UniProt Q9NQ25: SLAMF7", url: "https://www.uniprot.org/uniprotkb/Q9NQ25/entry" }],
   },
   {
-    id: "tubulin", kind: "target", name: "Tubulin (microtubules)", symbol: "TUBB", hgnc: "HGNC:20778", ensembl: "ENSG00000196230", uniprot: "P07437", entrez: "203068", targetClass: "other", asOf, wikipedia: W("Tubulin"),
-    tldr: "The protein that builds the microtubule scaffolding a cell needs to pull its chromosomes apart. Taxanes freeze the scaffold and vinca alkaloids and eribulin stop it forming; either way the dividing cell stalls and dies.",
-    summary: "Alpha and beta tubulin dimers assemble into microtubules, the dynamic fibres that form the mitotic spindle, move cargo and shape the cell. Taxanes such as paclitaxel and docetaxel bind beta tubulin and lock microtubules in place; vinca alkaloids such as vincristine and the halichondrin analogue eribulin bind the growing ends and stop assembly. Both leave the spindle unable to segregate chromosomes, triggering mitotic arrest. The same mechanism carries the MMAE payload of brentuximab vedotin and enfortumab vedotin and the maytansinoid payload of trastuzumab emtansine. Peripheral neuropathy, from microtubule damage in long axons, is the shared dose-limiting toxicity.",
-    biology: "Heterodimeric building block of microtubules; drug binding at the taxane, vinca or maytansine site disrupts spindle dynamics.",
-    whereFound: ["Every dividing cell; the basis of taxane, vinca alkaloid, eribulin and tubulin-payload antibody-drug conjugate therapy"],
+    id: "tubulin", kind: "target", name: "Tubulin (microtubules)", symbol: "TUBB", hgnc: "HGNC:20778", ensembl: "ENSG00000196230", uniprot: "P07437", entrez: "203068", targetClass: "other", asOf: "2026-11-11", wikipedia: W("Tubulin"),
+    tldr: "Tubulin proteins build microtubules, structures used in cell division, organisation and transport. Different medicines disturb their dynamics in different ways; a disturbed microtubule does not by itself prove cell death.",
+    summary: "Alpha- and beta-tubulin pairs assemble into microtubules. These dynamic structures help form the mitotic spindle and also support organisation and transport in cells outside mitosis. Paclitaxel promotes assembly and stabilises microtubules against disassembly. Vinca medicines and eribulin instead inhibit formation, assembly or growth through their own mechanisms.\n\nThe MMAE cargo of vedotin conjugates and the DM1 cargo of trastuzumab emtansine interfere with microtubule function. Binding, altered dynamics, mitotic arrest, completed death and recovery are different observations. Effects on normal cells can matter even when those cells are not dividing; no universal neuropathy mechanism, dose limit or treatment benefit follows from the target name.",
+    biology: "Tubulin pairs assemble into dynamic microtubules used in mitosis and interphase. Stabilisation and inhibition of assembly or growth are distinct drug effects.",
+    whereFound: [
+  "Microtubules function in normal and tumour cells, during mitosis and in interphase"
+],
     drugs: ["paclitaxel","docetaxel","vincristine","eribulin"], cancers: ["breast-hr-positive","nsclc","ovarian","all-leukemia"],
     prevalence: [{"cancerId":"metastatic-cancer","pct":"all","measure":"Housekeeping enzyme present in every dividing cell (microtubule scaffold for cell division); not a selection marker, which is why these drugs are given by cancer type rather than by test."}],
-    links: [{ label: "UniProt P07437: TUBB", url: "https://www.uniprot.org/uniprotkb/P07437/entry" }],
+    links: [...([{ label: "UniProt P07437: TUBB", url: "https://www.uniprot.org/uniprotkb/P07437/entry" }]), ...[
+  {
+    "label": "Paclitaxel label: microtubule dynamics in mitosis and interphase",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15ca4829-8fee-45f9-b4bc-b31c15732cd6"
   },
+  {
+    "label": "Vincristine label: inhibition of microtubule formation",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b22e4c8e-dbe1-4d4b-a026-e1812974071c"
+  },
+  {
+    "label": "Vinorelbine label: assembly inhibition",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10a70995-e04d-4044-b1dc-c9aa27460397"
+  },
+  {
+    "label": "Eribulin label: growth-phase inhibition",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=311a12f4-e5b3-4959-ab84-3d0eb6558d13"
+  },
+  {
+    "label": "Trastuzumab emtansine label: DM1 microtubule activity",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+  },
+  {
+    "label": "Brentuximab vedotin label: MMAE activity",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3904f8dd-1aef-3490-e48f-bd55f32ed67f"
+  }
+]],
+
+"aka": [
+  "vinca",
+  "vinca alkaloid",
+  "vinca alkaloids"
+]
+},
   {
     id: "dnmt1", kind: "target", name: "DNMT1 (DNA methyltransferase 1)", symbol: "DNMT1", hgnc: "HGNC:2976", ensembl: "ENSG00000130816", uniprot: "P26358", entrez: "1786", targetClass: "enzyme", asOf, wikipedia: W("DNMT1"),
     tldr: "The enzyme that copies methylation marks onto newly made DNA, keeping genes silenced. Azacitidine and decitabine trap and destroy it, waking silenced tumour suppressor genes in blood cancers.",

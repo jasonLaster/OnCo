@@ -1,5 +1,17 @@
 # Corrections
 
+### Therapy and conjugate teaching, 11 November 2026
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Chemotherapy](/terms/chemotherapy-term/) | Leads reduced the family to DNA injury in fast-dividing cells | Raw product mechanisms and NCI definitions/purposes | Distinguishes DNA, RNA, metabolism and microtubule effects, exposure, recovery and clinical evidence |
+| 2026-11-11 | [Alkylating agents and antimetabolites](/terms/alkylating-agent/) | Aliases and shorthand conflated fluoropyrimidines, vinca drugs and alkyl transfer | Current labels, terminology and canonical-owner census | Detailed fluoropyrimidine content stays on its drug owners; vinca aliases move to tubulin; the combined overview names the family boundary |
+| 2026-11-11 | [Capecitabine](/drugs/capecitabine/) and [fluorouracil](/drugs/fluorouracil/) | Tablet-form shorthand, dated testing language and an unwarranted CREATE-X germline restriction | Current SPL/FDA text and resolved trial abstract | Distinguishes prodrug, host handling, complete/partial deficiency and the trial population; CAPOX/FOLFOX components remain separate |
+| 2026-11-11 | [Anthracyclines](/terms/anthracycline/), [taxanes](/terms/taxane/) and [TOP1 inhibitors](/technologies/topoisomerase-inhibitors/) | Mechanism shorthand suggested inevitable death, fixed cardiac thresholds or comparative safety | Raw label sections, abstracts and targeted mechanistic passages | Keeps enzyme intermediates, interphase effects, exposure, source populations and uncertainty explicit |
+| 2026-11-11 | [Antibody tumour penetration](/terms/antibody-tumor-penetration/) | No broad owner carried the transport and measurement teaching | Independent source inventory and named mouse/patient studies | Registers the parent without duplicating the narrower binding-site-barrier concept; universal distance and mass-ratio claims are not adopted |
+
+The [assessment receipt](research/education-coverage-2026-11-08/therapy-conjugates-2026-11-11/README.md) separates original/later inventories, current field evidence, reader/export checks and source-access residuals. Updated simplified summaries and English fallbacks prevent the older mechanism wording from surviving in reader layers. No main/live, expert or language sign-off is claimed.
+
 Every factual correction to the OnCo corpus, newest first. Format: date · entity · what was wrong · how it was found · fix.
 
 ## 2026-11-11

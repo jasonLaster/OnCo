@@ -1311,6 +1311,14 @@
         {
           "label": "Bonadonna and Valagussa, dose-response effect of adjuvant chemotherapy in breast cancer (1981)",
           "url": "https://pubmed.ncbi.nlm.nih.gov/7432433/"
+        },
+        {
+          "label": "NCI glossary: dose-dense chemotherapy",
+          "url": "https://webapis.cancer.gov/glossary/v1/Terms/Cancer.gov/Patient/en/dose-dense-chemotherapy"
+        },
+        {
+          "label": "Citron et al., two-weekly C9741 strategy with filgrastim (2003)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12668651/"
         }
       ],
       "tags": [],
@@ -1346,7 +1354,9 @@
       "notes": [
         "Amount, schedule and delivery are different questions. Dose is the quantity of drug and dosage is the dose with its schedule, meaning the interval between doses and the duration of treatment (FDA, 'Optimizing the Dosage of Human Prescription Drugs and Biological Products for the Treatment of Oncologic Diseases', August 2024). Dose-dense scheduling shortens the interval, a dose reduction changes the amount, a delay lowers delivered intensity even if the eventual cumulative amount is unchanged, and omission lowers cumulative dose; a delay lowers dose intensity in the same proportion as an equal reduction (Alberto 1995). Planned and delivered intensity can differ: in a biweekly cisplatin study, delays of three or more days on 17 of 66 courses (26 per cent) left the mean delivered intensity at 83 mg/m2 per week, 88 per cent of the planned intensity (Kim et al.).",
         "Dose intensity is the amount of a named medicine delivered per unit time, commonly milligrams per square metre per week. Relative dose intensity divides that by the intensity of a specified reference regimen. A combination average requires its declared method, such as the mean of the component ratios in Alberto's 1995 overview. Equal milligrams of different medicines are not equivalent activity. Illness and toxicity can drive both modification and outcomes, so an observational association is not a causal effect of changing the dose. Bonadonna and Valagussa's retrospective 1981 CMF analysis associated benefit with at least 85% of the planned dose in that regimen; this was a dose-level finding, not a universal relative-intensity threshold or proof for other treatments.",
-        "In the fictional four-dose example, both schedules use the same Drug Z and formulation. The first window is week 0 up to week 4, with administrations at weeks 0, 1, 2 and 3; the second is week 0 up to week 8, with administrations at weeks 0, 2, 4 and 6. Each declared window includes one nominal final interval and no administration at its right endpoint. Both totals are 40 arbitrary units, but the intensities are 10 and 5 units per week. A different final-cycle convention needs its own definition. Cumulative dose retains amount units; intensity adds a time denominator; relative intensity is the dimensionless ratio to a stated reference."
+        "In the fictional four-dose example, both schedules use the same Drug Z and formulation. The first window is week 0 up to week 4, with administrations at weeks 0, 1, 2 and 3; the second is week 0 up to week 8, with administrations at weeks 0, 2, 4 and 6. Each declared window includes one nominal final interval and no administration at its right endpoint. Both totals are 40 arbitrary units, but the intensities are 10 and 5 units per week. A different final-cycle convention needs its own definition. Cumulative dose retains amount units; intensity adds a time denominator; relative intensity is the dimensionless ratio to a stated reference.",
+        "Shorter intervals are one scheduling strategy, distinct from increasing the amount per administration or giving a medicine weekly. The rationale of limiting regrowth is a model that must be tested with the actual drugs, population and support package. Less recovery time can matter to normal tissues; growth-factor support does not remove every harm. Delays, reductions and omissions change delivery and may be necessary for safety, rather than a failure by the person receiving treatment.",
+        "For a fictional same-drug comparison, four doses of the same amount every three weeks and every two weeks can have the same cumulative amount but different intensity. If the declared windows include the nominal final interval, they last twelve and eight weeks respectively; if measurement stops at the fourth administration, elapsed time is nine and six weeks. State the convention before calculating. Shortening this phase need not shorten another phase or the whole course."
       ],
       "category": "Treatment jargon"
     },

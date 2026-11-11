@@ -535,7 +535,7 @@ export const simpleO: Record<string, string> = {
   top2a: "Topoisomerase II alpha cuts both DNA strands to untangle chromosomes before division, and etoposide and the anthracyclines hold it in the cut state, filling dividing cells with breaks.",
   tph1: "Tryptophan hydroxylase makes serotonin, which neuroendocrine tumours pour out in carcinoid syndrome, and telotristat ethyl blocks it to cut the diarrhoea that somatostatin drugs leave behind.",
   tshr: "The TSH receptor tells thyroid cells to take up iodine, and recombinant TSH stimulates it so radioactive iodine can find and destroy leftover thyroid cancer.",
-  tubulin: "Tubulin builds the microtubule scaffolding a cell needs to pull its chromosomes apart, and taxanes freeze it while vinca alkaloids and eribulin stop it forming, so dividing cells stall and die.",
+  tubulin: "Tubulin builds microtubules used in division, transport and cell organisation. Medicines can change these structures without every exposed cell dying.",
   xdh: "Xanthine oxidase makes uric acid from the breakdown of DNA, and allopurinol blocks it to prevent kidney damage when chemotherapy kills many cancer cells at once.",
   // remaining drugs
   "adagloxad-simolenin": "Adagloxad simolenin is OBI Pharma's vaccine against the tumour sugar Globo H, in the phase 3 GLORIA trial as added treatment after surgery for triple-negative breast cancer that carries the antigen.",

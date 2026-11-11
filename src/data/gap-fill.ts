@@ -19,7 +19,7 @@ const asOf = "2026-09-08";
 const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 const DM = (q: string) => `https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=${encodeURIComponent(q)}`;
 
-const d = (x: Omit<DrugInput, "kind" | "asOf">): DrugInput => ({ kind: "drug", asOf, ...x });
+const d = (x: Omit<DrugInput, "kind" | "asOf"> & Partial<Pick<DrugInput, "asOf">>): DrugInput => ({ kind: "drug", asOf, ...x });
 const tg = (x: Omit<TargetInput, "kind" | "asOf"> & { asOf?: string }): TargetInput => ({ kind: "target", asOf, ...x });
 const tech = (x: Omit<TechnologyInput, "kind" | "asOf"> & { asOf?: string }): TechnologyInput => ({ kind: "technology", asOf, ...x });
 const term = (x: Omit<TermInput, "kind" | "asOf">): TermInput => ({ kind: "term", asOf, ...x });
@@ -391,9 +391,49 @@ export const gapProducts: DrugInput[] = [
     cancers: ["all-leukemia", "osteosarcoma", "primary-cns-lymphoma", "gestational-trophoblastic", "dlbcl", "urothelial", "head-and-neck", "low-risk-gtn", "high-risk-gtn", "placental-site-trophoblastic-tumour"], technologies: ["cytotoxic-chemotherapy"], terms: ["blood-brain-barrier"], links: [{ label: "Label (DailyMed)", url: DM("methotrexate injection") }], tags: ["gap-fill", "generic", "who-essential"], related: ["glucarpidase"], trials: ["euramos-1", "dbcg-82bc", "nct05663866", "nct06960577", "nct07015242", "nct07387926"] }),
   d({ id: "fluorouracil", keyPapers: ["paper-sauer-preoperative-chemoradiotherapy-rectal-nejm-2004"], trials: ["int-0116", "cao-aro-aio-94", "dbcg-82bc", "nct07775287", "nct07676162", "nct04430738", "nct06107413", "nct06792695", "nct07805551", "nct05009069", "nct05846867", "nct06820463", "nct04421820", "nct05379595", "nct04675333", "nct05489211", "nct06428409", "nct07554521", "nct06469944", "nct06901531", "nct04241185", "nct04379596", "nct07069712", "nct07256782", "nct06780111", "nct06922383", "nct01954992"], companies: ["mast-therapeutics"], name: "Fluorouracil (5-FU)", brand: "Adrucil / Efudex", modality: "Fluoropyrimidine antimetabolite", mechanism: "Converted to FdUMP (thymidylate synthase inhibition) and FUTP (RNA incorporation); potentiated by leucovorin; DPD deficiency causes severe toxicity.", status: "approved", wikipedia: W("Fluorouracil"),
     tldr: "The 1957 chemotherapy that remains the backbone of treatment for bowel, stomach, pancreatic, anal, head and neck and breast cancers, and as a cream for skin precancers.",
-    summary: "Heidelberger (1957). Infusional 5-FU with leucovorin is the core of FOLFOX/FOLFIRI/FOLFIRINOX, chemoradiation (rectal, anal, oesophageal, pancreatic, head and neck), and adjuvant colon therapy; capecitabine is its oral prodrug. DPYD genotyping before use is now recommended (EMA 2020; FDA label 2024). Topical 5-FU treats actinic keratosis and superficial BCC.",
+    summary: "Fluorouracil is a fluoropyrimidine antimetabolite, used in systemic regimens and in separate topical products. Capecitabine is an oral prodrug converted to fluorouracil; it is not the same formulation or an interchangeable dose. In cells, active metabolites interfere with thymidylate synthase and nucleotide supply, enter RNA, and can enter DNA. These processes also occur in normal cells.\n\nThe US injection label calls for DPYD variant testing before treatment unless immediate treatment is necessary. Complete DPD deficiency carries a boxed warning; partial deficiency can also raise the risk of serious or fatal toxicity. The label says that no dose is proven safe in complete deficiency, no FDA-authorised DPYD test is available, and serious reactions can occur even when no variant is identified. These statements concern the labelled systemic product; topical preparations and their instructions must be considered separately.",
     approvals: [{ region: "US", year: 1962, indication: "Colorectal, breast, gastric and pancreatic adenocarcinoma" }, { region: "US", year: 1970, indication: "Topical: actinic keratosis and superficial basal cell carcinoma" }],
-    cancers: ["colorectal", "gastric", "pancreatic", "anal", "esophageal", "head-and-neck", "basal-cell-carcinoma", "hepatoblastoma", "anal-hsil-precursor", "localised-anal-cancer", "localised-penile-cancer"], technologies: ["cytotoxic-chemotherapy"], links: [{ label: "Label (DailyMed)", url: DM("fluorouracil injection") }], tags: ["gap-fill", "generic", "who-essential"], related: ["uridine-triacetate"] }),
+    cancers: ["colorectal", "gastric", "pancreatic", "anal", "esophageal", "head-and-neck", "basal-cell-carcinoma", "hepatoblastoma", "anal-hsil-precursor", "localised-anal-cancer", "localised-penile-cancer"], technologies: ["cytotoxic-chemotherapy"], links: [
+  {
+    "label": "Label (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=fluorouracil%20injection"
+  },
+  {
+    "label": "Fluorouracil injection label: mechanism and DPYD testing",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b268684b-487f-4716-a2e8-6e6d3e117b14"
+  },
+  {
+    "label": "FDA safety-label update: capecitabine and fluorouracil",
+    "url": "https://www.fda.gov/drugs/cancer-approvals/safety-labeling-update-capecitabine-and-fluorouracil-5-fu-risks-associated-dihydropyrimidine"
+  },
+  {
+    "label": "Jansen et al., five-year results of a randomised controlled trial comparing photodynamic therapy, topical imiquimod and topical 5-fluorouracil in superficial basal cell carcinoma (J Invest Dermatol 2018)",
+    "url": "https://doi.org/10.1016/j.jid.2017.09.033"
+  },
+  {
+    "label": "Cancer Research UK: chemotherapy cream for non-melanoma skin cancer",
+    "url": "https://www.cancerresearchuk.org/about-cancer/skin-cancer/treatment/chemotherapy-cream"
+  },
+  {
+    "label": "British Association of Dermatologists: basal cell carcinoma, patient information leaflet (updated July 2025)",
+    "url": "https://www.skinhealthinfo.org.uk/condition/basal-cell-carcinoma/"
+  },
+  {
+    "label": "NCI: FOLFOX components",
+    "url": "https://www.cancer.gov/about-cancer/treatment/drugs/folfox"
+  }
+], tags: ["gap-fill", "generic", "who-essential"], related: ["uridine-triacetate"] ,
+"aka": [
+  "5-FU",
+  "5 fluorouracil"
+],
+"asOf": "2026-11-11",
+"notes": [
+  "Fluoropyrimidines are a medicine family, not another name for every alkylator. Fluorouracil is one member and capecitabine is a prodrug. The active fluorouracil metabolites FdUMP, FUTP and FdUTP have different jobs: thymidylate-synthase inhibition, incorporation into RNA and incorporation into DNA. Both tumour and normal cells can form active metabolites. Oral delivery or activation enriched in a tumour does not establish cancer-only activity. FOLFOX is a combination of fluorouracil, leucovorin and oxaliplatin. Its name identifies components, not every dose or eligibility condition.",
+  "DPYD is the gene and DPD is the enzyme involved in fluorouracil breakdown. Host clearance and tumour sensitivity are different questions. Identifying selected DNA variants is a different measurement from assessing enzyme activity. The label distinguishes complete from partial deficiency, calls for individualised dosing for partial deficiency, and notes that available tests differ in which variants they identify and in performance. A negative panel does not establish normal handling or freedom from serious toxicity; interpretation and treatment decisions belong to the prescribing team.",
+  "As a cream for superficial basal cell carcinoma. In the Dutch randomised trial of 601 patients, fluorouracil cream was applied twice daily for four weeks, and the probability of tumour-free survival five years later was 70.0 percent, against 80.5 percent for imiquimod and 62.7 percent for photodynamic therapy; fluorouracil was inferior to imiquimod (hazard ratio 0.65 in favour of imiquimod, 95 percent confidence interval 0.43 to 0.98) and not significantly different from photodynamic therapy at that timepoint, having been found non-inferior to it at one and three years. The NHS says a chemotherapy cream is used once or twice a day for three to four weeks for cancers affecting only the top layer of skin."
+]
+}),
   d({ id: "gemcitabine", trials: ["notable-trial", "nct06828354", "nct04442022", "nct04384484", "nct06435429", "nct07491445", "nct07805954", "nct06508658", "nct06459180", "nct03800134", "nct07621718", "nct06976190", "nct04969731", "nct06312137", "nct07604766", "nct06118333", "nct03164616", "nct06619236", "nct02486718", "nct04974398", "nct03178552", "nct07564141", "nct06445062", "nct06710288", "nct06601504", "nct05482893", "nct05775159", "nct04083599", "nct06646055", "nct07049055", "nct06219941", "nct06922591", "nct07124936", "nct03775486", "nct07255404", "nct05431270", "nct07483554", "nct05669482", "nct04657068", "nct04844866", "nct07563738", "actuate-1801", "nct07020221", "nct07259590", "nct06843447", "nct04198766", "nct07223047", "nct06081959", "nct05229497", "nct07701486", "nct06623422", "nct06361888", "nct05302284", "nct06908304", "nct06465563", "nct03257033", "nct06953999", "nct05814354", "nct07229586", "nct03816163", "nct03579836", "nct07710885", "nct05771480", "nct05999994", "nct06343948", "nct07129993", "nct03682068", "nct07280377", "nct04589234", "nct07575191", "nct06319820", "nct06211764", "nct06467357", "nct06449222", "nct07566156", "nct05827796", "nct03036098", "nct02516241", "nct05934331", "nct07259317", "nct05548296", "nct02453282", "nct06960577", "nct06545955", "nct05653453", "nct07173751", "nct06821503", "nct07007559", "nct04241185", "nct06592326", "nct02542293", "nct03478488", "nct04999969", "nct06957886", "nct06806033", "nct06752811", "nct03003962", "nct03967977", "nct07111546", "nct05911295", "nct06854445", "nct06225596", "nct04274426", "nct04390399", "nct07393542", "nct06632951", "nct07398339", "nct06788912", "nct06522737", "nct07238283", "nct06591520", "nct06241781", "nct02340117", "nct06493552", "nct07106762", "nct07444541", "nct04639986", "nct05859750", "nct07286266", "nct06841354", "nct07296341", "nct06663137", "nct06460298", "nct01954992", "nct05355298"], keyPapers: ["paper-burris-gemcitabine-pancreatic-jco-1997"], name: "Gemcitabine", brand: "Gemzar / Infugem", modality: "Nucleoside analogue (deoxycytidine)", mechanism: "Difluorodeoxycytidine triphosphate incorporated into DNA causes masked chain termination; also inhibits ribonucleotide reductase (self-potentiation).", status: "approved", wikipedia: W("Gemcitabine"),
     tldr: "A versatile chemotherapy used in pancreatic, bladder, lung, ovarian, breast and biliary cancers, in nasopharyngeal cancer, and as a bladder instillation.",
     summary: "Approved 1996 for pancreatic cancer (clinical benefit response versus 5-FU); combinations: gemcitabine-cisplatin (biliary ABC-02, bladder, NPC induction), gemcitabine-nab-paclitaxel (pancreatic), gemcitabine-carboplatin (ovarian, breast), gemcitabine-docetaxel (sarcoma), GemOx (lymphoma). Intravesical gemcitabine for NMIBC. Flu-like symptoms, myelosuppression, rare TMA/pneumonitis.",

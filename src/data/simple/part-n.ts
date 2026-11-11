@@ -511,7 +511,7 @@ export const simpleN: Record<string, string> = {
   alemtuzumab: "Alemtuzumab (Campath) is an antibody that wipes out lymphocytes [white blood cells] carrying the CD52 marker, approved for chronic lymphocytic leukaemia and supplied in the US through a restricted programme.",
   bexarotene: "Bexarotene (Targretin) is a vitamin A-like capsule and gel for the skin problems of cutaneous T-cell lymphoma [a lymphoma that starts in the skin] when other treatments have stopped working.",
   busulfan: "Busulfan is one of the oldest cancer drugs, a tablet that controlled chronic myeloid leukaemia before imatinib and an infusion that clears bone marrow before a stem cell transplant.",
-  capecitabine: "Capecitabine (Xeloda), from Roche, is a tablet form of the chemotherapy fluorouracil that is a backbone of bowel cancer treatment and a standard option in advanced breast cancer.",
+  capecitabine: "The body converts capecitabine tablets into fluorouracil. Taking a medicine by mouth does not remove the risk of serious harm.",
   carmustine: "Carmustine is a chemotherapy that reaches the brain, infused for brain tumours, lymphoma and myeloma, and placed as a slow-release wafer in the cavity after a brain tumour is removed.",
   chlorambucil: "Chlorambucil (Leukeran) is a gentle oral chemotherapy tablet used for decades in chronic lymphocytic leukaemia and low-grade lymphomas, mainly in older and frail patients.",
   clofarabine: "Clofarabine (Clolar), from Sanofi, is a chemotherapy infusion for children and young adults whose acute lymphoblastic leukaemia has come back after at least two other treatments.",

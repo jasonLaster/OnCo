@@ -78,3 +78,7 @@ Seventeen lessons per pin are assessed: 34 versions, 396 signatures, 304 origina
 ## Pharmacology and toxicity checkpoint, 11 November 2026
 
 Twenty later and eighteen original lessons are assessed: 38 versions, 392 signatures, 157 original and 176 later teaching obligations, with 401 exact field proofs and 152 connected passages. Five subjects are registered, 35 existing root owners and two companion owners supplemented. Twenty-eight theme files and twelve unique diagrams were viewed. Both full chains and actual readers/exports pass. Cumulative original assessment is 378/537; later teaching assessment is 375/550. Open assessed obligation counts are ten/four. The two inventories overlap; main and live credit remain zero.
+
+## Therapy and conjugates checkpoint, 11 November 2026
+
+Twelve later and eleven original lessons are assessed independently: 122/111 section signatures, 276/255 instructional requirements and 934 exact field proofs. Two later and one original source-access rows remain partial. Fifty-three connected paragraphs supplement canonical owners, with one new registered parent and three chemistry owners retained in #369. Both full chains, actual readers/exports and unchanged Ask scores pass. Original assessment is 386/537 and later teaching assessment 387/550; main/live credit remains zero.

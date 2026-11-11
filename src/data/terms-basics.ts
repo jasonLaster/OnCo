@@ -1438,11 +1438,46 @@ export const termsBasics: TermInput[] = [
   t({
     id: "chemotherapy-term", name: "Chemotherapy", category: CLINIC,
     aka: ["chemotherapies", "chemo", "cytotoxic", "cytotoxics", "cytotoxic chemotherapy", "cytotoxic drugs", "cytotoxic drug", "cytotoxic agent", "cytotoxic agents", "chemotherapy regimen", "chemotherapy regimens", "chemo regimen", "platinum-based chemotherapy", "platinum doublet", "taxane", "taxanes", "anthracycline", "anthracyclines"],
-    tldr: "Drugs that kill rapidly dividing cells by damaging their DNA or the machinery of division. Because cancer cells divide fast they are hit hardest, but so are hair, gut lining and bone marrow, which is where the side effects come from.",
-    summary: "The main families are DNA-damaging agents (platinums such as cisplatin and carboplatin, alkylators such as cyclophosphamide), antimetabolites that poison DNA building blocks (5-fluorouracil, gemcitabine, methotrexate), topoisomerase inhibitors (irinotecan, etoposide, doxorubicin) and microtubule poisons that jam cell division (paclitaxel, docetaxel, vincristine). Given in cycles to let normal tissue recover, chemotherapy cures some cancers outright (testicular cancer, many lymphomas and childhood leukaemias), prevents recurrence after surgery, and controls advanced disease; it remains the backbone that newer drugs are added to. Its potency is also being repurposed: ADC payloads are chemotherapy agents far too toxic to give alone, delivered by antibody straight to the tumour.",
+    tldr: "Chemotherapy uses medicines to kill cancer cells or stop their growth. Different medicines disturb different cell processes, and their benefits and harms depend on the treatment and setting.",
+    summary: "Here chemotherapy means conventional cytotoxic medicines, although the word is sometimes used more broadly for cancer drug treatment. These medicines can affect DNA, RNA, the supply of building blocks or microtubules. Many of those processes also operate in healthy cells. Fast division alone does not predict response, and DNA damage alone does not describe the whole family.\n\nA medicine, the way it is formulated, the amount and timing, and the disease setting all matter. An antibody-drug conjugate changes how a cargo is delivered and released; it does not make the cargo harmless to every healthy tissue. Some cargoes or related medicines have also been used outside conjugates.",
     wikipedia: W("Chemotherapy"),
     related: ["cell-division", "targeted-therapy-term", "immunotherapy-term", "bone-marrow", "toxicity-grade", "dose", "payload", "efflux-pump"], sections: ["chemotherapy"], technologies: ["cytotoxic-chemotherapy", "platinum", "topoisomerase-inhibitors", "adc"], drugs: ["carboplatin", "paclitaxel"],
-  }),
+
+"asOf": "2026-11-11",
+"notes": [
+  "The families disturb different jobs. Taxanes such as paclitaxel suppress microtubule dynamics; vinca medicines, eribulin and some conjugate cargoes inhibit assembly or growth instead. Platinum medicines form DNA attachments and cross-links. Classic alkylating agents such as cyclophosphamide act through reactive metabolites that attach groups to DNA. Anthracyclines such as doxorubicin can stabilise topoisomerase II cutting complexes. Fluoropyrimidines such as fluorouracil interfere with nucleotide supply and RNA function. Camptothecin-class medicines such as irinotecan and topotecan trap topoisomerase I complexes. These are mechanism examples, not interchangeable doses or a ranking of benefit.",
+  "Follow a defined exposure through a drug-specific disturbance, the damage and cell response, and then recovery or death. Record the exact medicine or active metabolite, concentration and units, exposure time, whether it was removed, and the recovery period. A clinical amount in milligrams or milligrams per square metre is not a concentration at every tumour cell. Cell counts, DNA synthesis, damage markers, survival and regrowth answer different questions. A lower metabolic signal alone can reflect changed cell number or state and does not distinguish arrest from death. Use matched untreated or vehicle controls, relevant normal cells and a time course before interpreting an effect as selective killing.",
+  "In a fictional assay, Drug A reduces survival in two tumour populations after the same exposure, but one recovers more readily after drug removal; Drug B gives a separate pattern. This does not identify which population a person has, whether a tolerable exposure reaches it, or whether treatment improves an outcome. In another fictional assay there are half as many cells at the end, but no death measurement or observation after drug removal. Slower growth remains an explanation. Compare starting counts, timed death measurements and recovery to distinguish slower growth from killing; neither assay proves a cure.",
+  "NCI describes several treatment purposes: cure, reducing the chance of recurrence, stopping or slowing growth, and easing symptoms. Chemotherapy can shrink disease before surgery or radiotherapy, treat cells remaining after local treatment, help another treatment, or treat returned or spread disease. Which purpose has clinical evidence depends on the named cancer, stage, regimen, comparator, endpoint and follow-up. A cell-mechanism diagram cannot establish that evidence.",
+  "An oral medicine can still have systemic harms; an infusion is a route, not a mechanism. Side effects do not measure how well a tumour is responding, and shrinkage is different from duration of control or survival. Uptake, activation, removal, repair and cell state can differ between tumour populations. Failure of one cytotoxic medicine does not establish failure of every member, and a new product name does not establish that resistance has been bypassed. A scheduled rest interval allows recovery but does not show that every biological effect has ended."
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chemotherapy"
+  },
+  {
+    "label": "NCI: chemotherapy, purposes, routes and cycles",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+  },
+  {
+    "label": "Tewey et al., doxorubicin and topoisomerase II complexes (1984)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6093249/"
+  },
+  {
+    "label": "Albumin-bound paclitaxel label: mechanism and formulation",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15ca4829-8fee-45f9-b4bc-b31c15732cd6"
+  },
+  {
+    "label": "Fluorouracil injection label: mechanism and DPD warning",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b268684b-487f-4716-a2e8-6e6d3e117b14"
+  },
+  {
+    "label": "Eribulin label: inhibition of microtubule growth",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=311a12f4-e5b3-4959-ab84-3d0eb6558d13"
+  }
+]
+}),
   t({
     id: "targeted-therapy-term", name: "Targeted therapy", category: CLINIC,
     aka: ["targeted therapies", "targeted drug", "targeted drugs", "targeted treatment", "targeted treatments", "targeted agent", "targeted agents", "molecularly targeted", "precision oncology", "precision medicine", "personalised medicine", "personalized medicine", "actionable mutation", "actionable mutations", "actionable", "matched therapy", "genotype-directed", "biomarker-directed"],

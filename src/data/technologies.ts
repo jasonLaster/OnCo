@@ -707,34 +707,142 @@ export const technologies: TechnologyInput[] = [
 
   // ======================= CHEMOTHERAPY =======================
   {
-    id: "cytotoxic-chemotherapy", drugs: ["raltitrexed", "vindesine", "alitretinoin", "estramustine", "floxuridine", "streptozocin", "teniposide", "altretamine", "plicamycin", "amsacrine", "uracil-mustard", "mitobronitol", "pipobroman", "doxifluridine", "plitidepsin"], kind: "technology", name: "Cytotoxic chemotherapy", sections: ["chemotherapy"], status: "standard-of-care", asOf, since: 1946, wikipedia: W("Chemotherapy"),
-    tldr: "Cytotoxic chemotherapy drugs (platinums, antimetabolites, microtubule agents and topoisomerase inhibitors) kill rapidly dividing cells by damaging DNA or the mitotic spindle. They still cure testicular cancer, lymphoma and leukaemia, and they are the warhead inside antibody-drug conjugates, but a narrow margin between effective and toxic doses is their limitation.",
-    summary: "Classes: alkylators and platinums (cisplatin, carboplatin, cyclophosphamide), antimetabolites (5-FU, capecitabine, gemcitabine, methotrexate), microtubule agents (paclitaxel, docetaxel, eribulin, vinca alkaloids), topoisomerase inhibitors (irinotecan, doxorubicin, etoposide). Progress is in scheduling (dose-dense), biomarker-guided omission, and packaging as ADC payloads.",
-    principle: "DNA damage, antimetabolite incorporation, or mitotic spindle disruption in dividing cells.",
-    strengths: ["Curative in several cancers", "Cheap, generic"],
-    limitations: ["Narrow therapeutic index", "Resistance via efflux pumps and DNA repair"],
-    terms: ["efflux-pump"], companies: ["lupin", "intas", "shasqi", "telik", "vion-pharmaceuticals", "filamon", "quetzal-therapeutics", "thena-biotech", "fulgent-genetics", "inhatarget-therapeutics", "bryet", "crism-therapeutics", "panther-therapeutics"], trials: ["euramos-1", "gefitinib-chemo-tmh"], related: ["genomic-assay-to-chemo-omission", "body-surface-area-dosing", "log-kill-hypothesis"], links: [{ label: "Wikipedia", url: W("Chemotherapy") }], journals: ["cancer-chemotherapy-and-pharmacology", "gan-to-kagaku-ryoho"],
+    id: "cytotoxic-chemotherapy", drugs: ["raltitrexed", "vindesine", "alitretinoin", "estramustine", "floxuridine", "streptozocin", "teniposide", "altretamine", "plicamycin", "amsacrine", "uracil-mustard", "mitobronitol", "pipobroman", "doxifluridine", "plitidepsin"], kind: "technology", name: "Cytotoxic chemotherapy", sections: ["chemotherapy"], status: "standard-of-care", asOf: "2026-11-11", since: 1946, wikipedia: W("Chemotherapy"),
+    tldr: "Cytotoxic chemotherapy can kill cancer cells or stop their growth by disturbing cell processes. Healthy cells can be affected too, and each drug and regimen needs its own evidence.",
+    summary: "Cytotoxic chemotherapy includes medicines acting on DNA attachments and topoisomerase complexes, nucleotide metabolism and RNA, or microtubule dynamics. It is broader than damaging the DNA of rapidly dividing cells. Tumour response depends on the medicine, its exposure and the cell response; a molecular disturbance does not by itself establish completed cell death.\n\nThese medicines can be used to cure some cancers, reduce recurrence risk, control disease or ease symptoms. The named regimen and clinical setting determine the evidence. The glossary explains the mechanism families and how to distinguish a laboratory growth effect from killing or clinical benefit.",
+    principle: "A defined drug exposure can disturb DNA, RNA, metabolism or microtubules; subsequent growth arrest, recovery or death depends on the drug and biological setting.",
+    strengths: [
+  "Clinical evidence supports curative, recurrence-reducing or symptom-relieving regimens in specified settings"
+],
+    limitations: [
+  "Healthy-tissue effects and tolerated exposure differ by medicine and regimen",
+  "Delivery, activation, transport and cell response can affect activity"
+],
+    terms: ["efflux-pump"], companies: ["lupin", "intas", "shasqi", "telik", "vion-pharmaceuticals", "filamon", "quetzal-therapeutics", "thena-biotech", "fulgent-genetics", "inhatarget-therapeutics", "bryet", "crism-therapeutics", "panther-therapeutics"], trials: ["euramos-1", "gefitinib-chemo-tmh"], related: ["genomic-assay-to-chemo-omission", "body-surface-area-dosing", "log-kill-hypothesis"], links: [...([{ label: "Wikipedia", url: W("Chemotherapy") }]), ...[
+  {
+    "label": "NCI: chemotherapy uses, cycles and adverse effects",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
   },
   {
-    id: "platinum", kind: "technology", name: "Platinum agents", sections: ["chemotherapy"], status: "standard-of-care", asOf, wikipedia: W("Platinum-based_antineoplastic"),
-    tldr: "Platinum agents such as cisplatin and carboplatin work by crosslinking DNA. They are curative in testicular cancer and central to lung, ovarian, bladder, head and neck, and TNBC treatment.",
-    summary: "Platinum agents such as cisplatin and carboplatin form intrastrand DNA crosslinks that trigger apoptosis; the damage is repaired by nucleotide excision and homologous recombination, so tumours with defective homologous recombination are particularly sensitive. They are curative in testicular cancer and central to lung, ovarian, bladder, head and neck, and TNBC treatment. Carboplatin added to neoadjuvant TNBC chemotherapy increases pathologic complete response (BrighTNess, and KEYNOTE-522 includes it). HRD-positive tumours are particularly sensitive, which links platinum response to BRCA biology. Nephrotoxicity, ototoxicity, and neurotoxicity are the main costs, and resistance eventually develops in most metastatic settings. The simple version is that platinum drugs glue DNA strands together so cancer cells cannot copy them.",
-    principle: "Intrastrand DNA crosslinks trigger apoptosis; repaired by nucleotide excision and homologous recombination.",
-    strengths: ["Broad activity", "Synergy with HRD"],
-    limitations: ["Nephro-, oto-, neurotoxicity"],
+    "label": "Paclitaxel label: interphase and mitotic microtubule functions",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15ca4829-8fee-45f9-b4bc-b31c15732cd6"
+  },
+  {
+    "label": "Fluorouracil label: nucleotide and RNA effects",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b268684b-487f-4716-a2e8-6e6d3e117b14"
+  }
+]], journals: ["cancer-chemotherapy-and-pharmacology", "gan-to-kagaku-ryoho"],
+  },
+  {
+    id: "platinum", kind: "technology", name: "Platinum agents", sections: ["chemotherapy"], status: "standard-of-care", asOf: "2026-11-11", wikipedia: W("Platinum-based_antineoplastic"),
+    tldr: "Platinum medicines can attach to DNA and link sites together. The resulting injury, healthy-tissue effects and treatment benefit depend on the drug, exposure and cancer setting.",
+    summary: "Cisplatin, carboplatin and oxaliplatin are metal-containing medicines. Platinum can coordinate to DNA bases, forming attachments called adducts, including links within one strand or between strands. An experiment with one product does not establish the lesion mixture or formation rate for every platinum medicine. They are sometimes grouped as alkylating-like medicines, but platinum coordination is different from transferring a carbon-containing alkyl group.\n\nDNA attachments can disturb DNA function and lead to further damage, yet they do not by themselves establish apoptosis or clinical sensitivity. Uptake, removal, repair and cell survival mechanisms matter. A historical repair scar or the name of a repair gene cannot alone establish present response to a particular platinum regimen.",
+    principle: "Platinum coordination to DNA bases can form adducts and cross-links; downstream injury and response depend on exposure and cellular handling.",
+    strengths: [
+  "Clinical activity is established for specified platinum medicines and regimens"
+],
+    limitations: [
+  "Kidney, hearing, nerve and blood-cell effects differ by product and regimen",
+  "A repair biomarker or DNA-adduct measurement alone does not establish treatment benefit"
+],
     targets: ["brca"],
-    cancers: ["tnbc", "ovarian", "nsclc", "urothelial", "head-and-neck"], related: ["platinum-plus-hrd"], links: [{ label: "Wikipedia", url: W("Platinum-based_antineoplastic") }],
+    cancers: ["tnbc", "ovarian", "nsclc", "urothelial", "head-and-neck"], related: ["platinum-plus-hrd"], links: [...([{ label: "Wikipedia", url: W("Platinum-based_antineoplastic") }]), ...[
+  {
+    "label": "Kohn, Drugs Against Cancer chapter 3: platinum coordination",
+    "url": "https://discover.nci.nih.gov/kohn/book/drugs_against_cancer_chapter3_v221004be3.pdf"
   },
   {
-    id: "topoisomerase-inhibitors", kind: "technology", name: "Topoisomerase-I inhibitors (and ADC payloads)", sections: ["chemotherapy", "adcs"], status: "standard-of-care", asOf, wikipedia: W("Topoisomerase_inhibitor"),
-    tldr: "Topoisomerase-I inhibitors jam the enzyme that untangles DNA during copying, causing double-strand breaks. As free drugs (irinotecan, topotecan) they are modest, but their analogues SN-38 and deruxtecan are the dominant antibody-drug conjugate payload class of the 2020s, active after taxane failure; cross-resistance between these ADCs is a growing problem.",
-    summary: "Irinotecan and topotecan are modest as systemic agents. Their analogues SN-38 (sacituzumab govitecan), DXd/exatecan derivatives (T-DXd, Dato-DXd, HER3-DXd, I-DXd, R-DXd), and belotecan derivatives (sac-TMT) are the dominant ADC payload class of the 2020s: membrane-permeable for bystander killing, short half-life limiting systemic toxicity, and effective in taxane-resistant tumours. Cross-resistance between TOP1 ADCs is a growing clinical problem.",
-    principle: "Stabilise the TOP1-DNA cleavage complex, causing replication-associated double-strand breaks.",
-    strengths: ["Bystander effect", "Active after taxanes and anthracyclines"],
-    limitations: ["Cross-resistance between TOP1-payload ADCs (SLFN11 loss, TOP1 mutations)", "ILD with DXd; neutropenia and diarrhoea with SN-38"],
-    technologies: ["adc"],
-    terms: ["payload", "bystander-effect"], links: [{ label: "Wikipedia", url: W("Topoisomerase_inhibitor") }], companies: ["dantari", "pheon-therapeutics", "profoundbio", "sunesis", "crescent-biopharma", "kivu-bioscience", "fulgent-genetics", "crism-therapeutics"],
+    "label": "Coste et al., defined cisplatin interstrand DNA cross-link structure (1999)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10101191/"
   },
+  {
+    "label": "Huang et al., cisplatin interstrand cross-link structure (1995)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8525382/"
+  },
+  {
+    "label": "Calvert et al., renal-function-based carboplatin dosage (1989)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2681557/"
+  }
+]],
+
+"notes": [
+  "A single-base attachment, a link between bases on the same strand and a link between opposite strands are different from a double-strand break. The first three attach to bases while the sugar-phosphate backbones remain continuous; the last severs both backbones. G denotes guanine and C denotes cytosine in the schematic DNA. The paired platinum drawings omit ligands and atomic geometry and do not show lesion proportions. Structural studies of defined cisplatin interstrand cross-links support base connectivity in selected DNA sequences, not every product’s mixture or a patient response.",
+  "Calvert and colleagues developed a renal-function-based carboplatin dosing approach in adults. Target exposure, the area under the concentration-time curve, can be expressed in mg·min/mL; the administered amount is in milligrams. Kidney function enters that calculation. Neither those units nor the original study supply one target for every combination or justify exchanging cisplatin and carboplatin dose for dose. Their efficacy and adverse-effect evidence belongs to the actual product and regimen.",
+  "In a fictional experiment, more platinum-DNA adducts after treatment show more measured attachments under that assay’s conditions. They do not prove that cells died, that recovery failed, or that treatment benefits a person. Check the active species, exposure, sampling time, repair and survival readouts, and then the clinical comparison. This is a reading rule, not a diagnostic cutoff."
+]
+},
+  {
+    id: "topoisomerase-inhibitors", kind: "technology", name: "Topoisomerase-I inhibitors (and ADC payloads)", sections: ["chemotherapy", "adcs"], status: "standard-of-care", asOf: "2026-11-11", wikipedia: W("Topoisomerase_inhibitor"),
+    tldr: "These medicines can trap an enzyme on DNA while it is making a temporary cut. This can cause further damage during copying, but the exact drug, exposure and cell response determine what follows.",
+    summary: "Camptothecin-class topoisomerase I poisons stabilise an enzyme-DNA cleavage complex and slow resealing of a temporary single-strand nick. A replication fork encountering the trapped complex can create a double-strand break. This is different from simply removing topoisomerase I or treating every inhibitor as an identical chemical.\n\nIrinotecan is converted to SN-38; topotecan is administered as an active drug. SN-38, exatecan and DXd are distinct chemicals, and deruxtecan refers to a linker-payload component. Conjugates carrying related TOP1 cargoes can differ in targeting, loading, release, exposure, resistance and harms. A shared mechanism does not establish family-wide permeability, a safety advantage or benefit after another conjugate.",
+    principle: "Camptothecin-class poisons stabilise TOP1-DNA cleavage complexes; replication-associated injury and cell response determine subsequent recovery or death.",
+    strengths: [
+  "Some TOP1-carrying conjugates have clinical evidence and approvals in specified disease and prior-treatment settings"
+],
+    limitations: [
+  "TOP1 mutations, transport and cell-response mechanisms can affect different products differently",
+  "Lung injury, neutropenia and diarrhoea warnings are product- and population-specific"
+],
+    technologies: ["adc"],
+    terms: ["payload", "bystander-effect"], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Topoisomerase_inhibitor"
+  },
+  {
+    "label": "Pommier, camptothecin-class TOP1 poisons (2006)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16990856/"
+  },
+  {
+    "label": "Pommier et al., topoisomerase poisoning (2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20534341/"
+  },
+  {
+    "label": "Murai et al., SLFN11 and ATR-independent stressed-fork responses (2018)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29395061/"
+  },
+  {
+    "label": "Zoppoli et al., SLFN11 and several DNA-damaging drug classes (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22927417/"
+  },
+  {
+    "label": "Abelman et al., selected TOP1 mutations and conjugate resistance (2025)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39745368/"
+  },
+  {
+    "label": "Innocenti et al., UGT1A1 and irinotecan neutropenia (2004)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15007088/"
+  },
+  {
+    "label": "Sacituzumab govitecan label: UGT1A1 and adverse effects",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+  },
+  {
+    "label": "Trastuzumab deruxtecan label: lung warning",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+  },
+  {
+    "label": "Datopotamab deruxtecan label: lung warning",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+  },
+  {
+    "label": "Weng et al., exatecan-conjugate combination models (2023)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36693125/"
+  },
+  {
+    "label": "Cole et al., paediatric adavosertib-irinotecan phase 1 trial (2020)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31857431/"
+  }
+], companies: ["dantari", "pheon-therapeutics", "profoundbio", "sunesis", "crescent-biopharma", "kivu-bioscience", "fulgent-genetics", "crism-therapeutics"],
+
+"notes": [
+  "ATR checkpoint activity, homologous-recombination repair and SLFN11-associated replication responses are mechanisms studied after TOP1 damage. They are not mutually exclusive branches that guarantee survival or death. Murai’s experiments found that SLFN11 could block stressed replication forks independently of ATR. Zoppoli compared gene expression with four TOP1 inhibitors across the NCI-60 panel and used siRNA silencing to test the cell-death and cell-cycle response. That work also linked SLFN11 to response to other DNA-damaging drug categories, including TOP2 poisons, alkylators and DNA-synthesis inhibitors, so switching away from TOP1 does not automatically bypass this dependency. Specific response-pathway combinations need their own evidence: Weng tested PARP and ATR combinations with exatecan conjugates in preclinical models, while Cole’s phase 1 study tested the WEE1 inhibitor adavosertib with irinotecan in children and adolescents with relapsed solid or central-nervous-system tumours. Those studies do not establish an adult breast-cancer treatment rule.",
+  "Abelman and colleagues reported TOP1 mutations at progression in 4 of 31 people with metastatic breast cancer treated with a TOP1 conjugate, compared with 3 of 420 people without prior conjugate exposure. The observed variants were S57C, R364H, W401C and G359E. Three mutant proteins tested in their laboratory had reduced enzymatic activity and covalent DNA binding and resisted SN-38 and DXd. These selected cohort and functional results do not establish that any TOP1 sequence change predicts the same response, that all later conjugates fail, or that a redesigned cargo covers every mutant.",
+  "Host drug handling is a separate question. In Innocenti’s 66-person irinotecan study using 350 mg/m² every three weeks, cycle-one grade 4 neutropenia occurred in 3 of 6 people homozygous for the reduced-function promoter allele and in 0 of 29 with the reference genotype; this was one irinotecan regimen. The current sacituzumab govitecan label reports grade 3 or 4 neutropenia in 57% of 138 UGT1A1*28 homozygotes, 48% of 531 heterozygotes and 41% of 533 reference homozygotes, among 1,202 genotyped recipients. These denominators and products cannot be exchanged, and genotype is not a tumour-response test.",
+  "The current trastuzumab deruxtecan label has a boxed interstitial-lung-disease warning; datopotamab deruxtecan has an interstitial-lung-disease warning outside its box. Sacituzumab govitecan’s different warning structure does not establish a comparative lung-injury rate. Compare product, disease population, exposure, adverse-event definition and follow-up before comparing percentages; a TOP1 mechanism alone supplies none of them.",
+  "For an experimental claim, name the exact free or released drug, concentration range and duration, then distinguish cell survival, regrowth, TOP1 expression or sequence, DNA-damage markers such as gamma-H2AX, SLFN11 and efflux measurements. A damage marker is not completed death, a protein level is not a cleavage-complex assay, and an exploratory association is not a validated clinical selection rule. TOP2 poisons stabilise a different enzyme’s double-strand-cut intermediate; the enzyme names alone do not select a subsequent medicine."
+]
+},
   {
     id: "hipec", machineFamily: "ablation", kind: "technology", name: "HIPEC / PIPAC (intraperitoneal chemotherapy)", sections: ["chemotherapy", "surgery"], status: "established", asOf, wikipedia: W("Hyperthermic_intraperitoneal_chemotherapy"),
     tldr: "Washing the abdominal cavity with heated chemotherapy during surgery to kill microscopic peritoneal deposits.",
@@ -879,7 +987,7 @@ export const technologies: TechnologyInput[] = [
     generation: "Attachment chemistry, payload and delivery format vary across products",
     technologies: ["topoisomerase-inhibitors", "bispecific-adc", "dual-payload-adc", "degrader-antibody-conjugate", "immune-stimulating-adc", "masked-adc", "site-specific-conjugation", "radioimmunotherapy"],
     targets: ["trop2", "her2", "her3", "nectin4", "b7h3", "cldn18-2", "folr1", "tissue-factor", "cdh6", "met", "cd19", "bcma", "cd33", "cd123", "ror1"],
-    terms: ["payload","linker","dar","bystander-effect","ild","adc-analytes-and-exposure","chk1-inhibitor-payloads","parp-inhibitor-payloads"], companies: ["celldex", "tubulis", "adcendo", "alentis-therapeutics", "bighat-biosciences", "callio-therapeutics", "cytomx-therapeutics", "dantari", "emergence-therapeutics", "enlaza-therapeutics", "firefly-bio", "ideaya-biosciences", "iksuda-therapeutics", "mablink-bioscience", "myricx-bio", "mythic-therapeutics", "nbe-therapeutics", "orum-therapeutics", "pheon-therapeutics", "profoundbio", "tallac-therapeutics", "valink-therapeutics", "neok-bio", "sidewinder-therapeutics", "adcytherix", "stipple-bio", "indupro-therapeutics", "crescent-biopharma", "kivu-bioscience", "disco-pharmaceuticals", "angiex", "novelty-nobility", "intocell", "tagworks-pharmaceuticals", "axcynsis-therapeutics", "oncusp-therapeutics", "primelink-biotherapeutics", "dem-biopharma", "var2-pharmaceuticals", "biolojic-design", "phrontline-biopharma", "nanolattix", "solve-therapeutics", "advesya", "dauntless-biotherapeutics"], trials: ["aaml0531", "luminosity", "nct07299747", "nct06797999", "nct06842498", "nct07354711", "nct07258407", "nct06464055"], related: ["idea-efflux-agnostic", "idea-neoadjuvant-adc-io", "db-1305", "ibi130", "9mw2921", "bat8008", "avzo-103", "ibi3014", "bhv-1510", "vbc103"], links: [{"label":"FDA: clinical pharmacology considerations for cytotoxic antibody-drug conjugates (2024)","url":"https://www.fda.gov/media/155997/download"},{"label":"Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26101915/"},{"label":"Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)","url":"https://pubmed.ncbi.nlm.nih.gov/36741448/"},{"label":"Ogitani et al.: released-species permeability and local bystander killing in models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27166974/"},{"label":"Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/41591991/"},{"label":"FDA: companion diagnostics and corresponding therapeutic uses","url":"https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"}],
+    terms: ["payload","linker","dar","bystander-effect","ild","adc-analytes-and-exposure","chk1-inhibitor-payloads","parp-inhibitor-payloads"], companies: ["celldex", "tubulis", "adcendo", "alentis-therapeutics", "bighat-biosciences", "callio-therapeutics", "cytomx-therapeutics", "dantari", "emergence-therapeutics", "enlaza-therapeutics", "firefly-bio", "ideaya-biosciences", "iksuda-therapeutics", "mablink-bioscience", "myricx-bio", "mythic-therapeutics", "nbe-therapeutics", "orum-therapeutics", "pheon-therapeutics", "profoundbio", "tallac-therapeutics", "valink-therapeutics", "neok-bio", "sidewinder-therapeutics", "adcytherix", "stipple-bio", "indupro-therapeutics", "crescent-biopharma", "kivu-bioscience", "disco-pharmaceuticals", "angiex", "novelty-nobility", "intocell", "tagworks-pharmaceuticals", "axcynsis-therapeutics", "oncusp-therapeutics", "primelink-biotherapeutics", "dem-biopharma", "var2-pharmaceuticals", "biolojic-design", "phrontline-biopharma", "nanolattix", "solve-therapeutics", "advesya", "dauntless-biotherapeutics"], trials: ["aaml0531", "luminosity", "nct07299747", "nct06797999", "nct06842498", "nct07354711", "nct07258407", "nct06464055"], related: [...(["idea-efflux-agnostic", "idea-neoadjuvant-adc-io", "db-1305", "ibi130", "9mw2921", "bat8008", "avzo-103", "ibi3014", "bhv-1510", "vbc103"]), ...["antibody-tumor-penetration"]], links: [{"label":"FDA: clinical pharmacology considerations for cytotoxic antibody-drug conjugates (2024)","url":"https://www.fda.gov/media/155997/download"},{"label":"Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26101915/"},{"label":"Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)","url":"https://pubmed.ncbi.nlm.nih.gov/36741448/"},{"label":"Ogitani et al.: released-species permeability and local bystander killing in models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27166974/"},{"label":"Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/41591991/"},{"label":"FDA: companion diagnostics and corresponding therapeutic uses","url":"https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"}],
 
     asOf: "2026-11-08",
   },

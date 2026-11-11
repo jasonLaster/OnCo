@@ -9,7 +9,7 @@ The [breast concept assessment](breast-concepts-2026-11-11/README.md) adds twelv
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
 |---|---:|---:|---:|---:|
 | Original (537 sources) | 398 (391 teaching, 7 routing) | 383 | 3,672 / 3,683 | 11 |
-| Later (550 sources) | 399 teaching | 393 | 3,897 / 3,903 | 6 |
+| Later (550 sources) | 402 (399 teaching, 3 routing) | 393 | 3,897 / 3,903 | 6 |
 
 Each pin has 478 reviewed teaching assets, 63 classified supporting paths and 1,347 unclassified paths. All 917 defined literature occurrences are identity/relevance screened; this does not verify their claims. Thirty-one adjacent findings and six schema items remain open. Both source ledgers have zero stale or missing current proofs and retain exit 2 for real unfinished work.
 
@@ -106,3 +106,7 @@ Sixteen existing owners now carry 53 source-qualified teaching paragraphs and co
 ## Breast source-block acceptance, 11 November 2026
 
 The partial checkpoint above is superseded by the complete coordinator field comparison. All 462 original and 466 later blocks have dispositions, including administrative and routing rows. The 237 retained requirements comprise 213 substantive obligations, twelve recaps and twelve source-scope checks; they are not added to the earlier 135-row inventory. Thirteen wording/definition findings are resolved on existing owners. The two source ledgers add twelve complete draft lessons and ten reviewed teaching assets per pin. The source-art issues, explicit primary-reading depths and absence of independent expert/learner acceptance remain recorded. Main/live coverage stays zero.
+
+## Later routing review, 11 November 2026
+
+Three routing pages were read in full, with fourteen exact section signatures and 78 valid educational destinations. They add no scientific answer or clinical rule and receive zero teaching credit. The concept and illustration catalogues remain unreviewed pending complete generated-entry/owner comparisons. Original-pin dispositions and all canonical data remain unchanged.

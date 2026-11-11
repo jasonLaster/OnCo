@@ -2,10 +2,13 @@ import type { ProtocolInput } from "@/lib/schema";
 import { acuteOncologyTelephoneTriage } from "./acute-oncology-telephone-triage";
 import { alloHctGvhdProphylaxis } from "./allo-hct-gvhd-prophylaxis";
 import { ambulatoryChemotherapyPumpsAtHome } from "./ambulatory-chemotherapy-pumps-at-home";
+import { antiVegfDrugsAroundSurgery } from "./anti-vegf-drugs-around-surgery";
 import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
 import { anticoagulantsAndAntiplateletsBeforeEndoscopy } from "./anticoagulants-and-antiplatelets-before-endoscopy";
+import { antithromboticInterruptionAroundSurgery } from "./antithrombotic-interruption-around-surgery";
 import { asepticCompoundingOfHazardousAnticancerDrugs } from "./aseptic-compounding-of-hazardous-anticancer-drugs";
 import { bispecificStepUpDosing } from "./bispecific-step-up-dosing";
+import { bleedingPrecautionsWhenPlateletsAreLow } from "./bleeding-precautions-when-platelets-are-low";
 import { bloodSamplingFromACentralLine } from "./blood-sampling-from-a-central-line";
 import { bodySizeBasedDoseCalculation } from "./body-size-based-dose-calculation";
 import { boneMarrowAspirateAndTrephineBiopsy } from "./bone-marrow-aspirate-and-trephine-biopsy";
@@ -19,6 +22,7 @@ import { carTInfectionPrevention } from "./car-t-infection-prevention";
 import { carTLymphodepletion } from "./car-t-lymphodepletion";
 import { carTReferralAndEligibility } from "./car-t-referral-and-eligibility";
 import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
+import { careInTheLastDaysOfLife } from "./care-in-the-last-days-of-life";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
 import { centralLineOcclusionManagement } from "./central-line-occlusion-management";
 import { centralLineRemoval } from "./central-line-removal";
@@ -30,9 +34,22 @@ import { consentAndEducationBeforeAnticancerTreatment } from "./consent-and-educ
 import { contrastReactionHistoryAndPremedication } from "./contrast-reaction-history-and-premedication";
 import { crsGradingAndManagement } from "./crs-grading-and-management";
 import { diagnosticBronchoscopyAndEbusPreparation } from "./diagnostic-bronchoscopy-and-ebus-preparation";
+import { dietAlcoholAndWeightDuringCancerTreatment } from "./diet-alcohol-and-weight-during-cancer-treatment";
 import { doseBandingOfAnticancerDrugs } from "./dose-banding-of-anticancer-drugs";
 import { dpydTestingBeforeFluoropyrimidines } from "./dpyd-testing-before-fluoropyrimidines";
+import { drivingFlyingAndTravelDuringCancerTreatment } from "./driving-flying-and-travel-during-cancer-treatment";
 import { drugDesensitisationAfterAnticancerHypersensitivity } from "./drug-desensitisation-after-anticancer-hypersensitivity";
+import { enhancedRecoveryAfterBreastReconstruction } from "./enhanced-recovery-after-breast-reconstruction";
+import { enhancedRecoveryAfterColorectalSurgery } from "./enhanced-recovery-after-colorectal-surgery";
+import { enhancedRecoveryAfterCytoreductiveSurgeryAndHipec } from "./enhanced-recovery-after-cytoreductive-surgery-and-hipec";
+import { enhancedRecoveryAfterGastrectomy } from "./enhanced-recovery-after-gastrectomy";
+import { enhancedRecoveryAfterGynaecologicalCancerSurgery } from "./enhanced-recovery-after-gynaecological-cancer-surgery";
+import { enhancedRecoveryAfterHeadAndNeckFreeFlapSurgery } from "./enhanced-recovery-after-head-and-neck-free-flap-surgery";
+import { enhancedRecoveryAfterLiverSurgery } from "./enhanced-recovery-after-liver-surgery";
+import { enhancedRecoveryAfterLungSurgery } from "./enhanced-recovery-after-lung-surgery";
+import { enhancedRecoveryAfterOesophagectomy } from "./enhanced-recovery-after-oesophagectomy";
+import { enhancedRecoveryAfterPancreatoduodenectomy } from "./enhanced-recovery-after-pancreatoduodenectomy";
+import { enhancedRecoveryAfterRadicalCystectomy } from "./enhanced-recovery-after-radical-cystectomy";
 import { fdgPetCtPreparation } from "./fdg-pet-ct-preparation";
 import { febrileNeutropeniaFirstHour } from "./febrile-neutropenia-first-hour";
 import { fertilityProtectionBeforePelvicRadiotherapy } from "./fertility-protection-before-pelvic-radiotherapy";
@@ -51,6 +68,7 @@ import { icansGradingAndManagement } from "./icans-grading-and-management";
 import { iecHsManagement } from "./iec-hs-management";
 import { imageGuidedCoreBiopsyPreparationAndAftercare } from "./image-guided-core-biopsy-preparation-and-aftercare";
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
+import { indwellingPleuralCatheterDrainageAtHome } from "./indwelling-pleural-catheter-drainage-at-home";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
 import { iodinatedContrastKidneyAndMetformin } from "./iodinated-contrast-kidney-and-metformin";
@@ -71,14 +89,19 @@ import { iraeSteroidTaperAndPjp } from "./irae-steroid-taper-and-pjp";
 import { iraeThyroid } from "./irae-thyroid";
 import { linearAcceleratorQualityAssurance } from "./linear-accelerator-quality-assurance";
 import { lutetium177TherapyHomeRadiationSafety } from "./lutetium-177-therapy-home-radiation-safety";
+import { lymphoedemaRiskReductionAfterNodeSurgery } from "./lymphoedema-risk-reduction-after-node-surgery";
+import { malignantAscitesDrainage } from "./malignant-ascites-drainage";
 import { malignantBowelObstruction } from "./malignant-bowel-obstruction";
 import { malignantPericardialEffusion } from "./malignant-pericardial-effusion";
 import { medicinesReconciliationInCancerCare } from "./medicines-reconciliation-in-cancer-care";
 import { metastaticSpinalCordCompression } from "./metastatic-spinal-cord-compression";
 import { midlineCathetersForAnticancerTherapy } from "./midline-catheters-for-anticancer-therapy";
+import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { mriSafetyScreeningImplants } from "./mri-safety-screening-implants";
 import { neutropenicEnterocolitis } from "./neutropenic-enterocolitis";
+import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
 import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
+import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
 import { pelvicRadiationDiseaseBowelSymptoms } from "./pelvic-radiation-disease-bowel-symptoms";
 import { peripheralCannulaForAnticancerTherapy } from "./peripheral-cannula-for-anticancer-therapy";
 import { permanentProstateSeedBrachytherapyHomeRadiationSafety } from "./permanent-prostate-seed-brachytherapy-home-radiation-safety";
@@ -99,13 +122,22 @@ import { radiotherapyWithPacemakerOrDefibrillator } from "./radiotherapy-with-pa
 import { raisedIntracranialPressure } from "./raised-intracranial-pressure";
 import { renalDoseAdjustmentOfAnticancerDrugs } from "./renal-dose-adjustment-of-anticancer-drugs";
 import { respiratoryMotionManagement4dCtAndGating } from "./respiratory-motion-management-4d-ct-and-gating";
+import { routinePreoperativeTests } from "./routine-preoperative-tests";
 import { sactAdministrationChecksAtTheChair } from "./sact-administration-checks-at-the-chair";
 import { sactPrescribingAndPharmacyVerification } from "./sact-prescribing-and-pharmacy-verification";
+import { sentinelNodeTracersAndBlueDyeSafety } from "./sentinel-node-tracers-and-blue-dye-safety";
+import { sexAndContraceptionDuringChemotherapy } from "./sex-and-contraception-during-chemotherapy";
+import { skinAndNailCareDuringCancerDrugTreatment } from "./skin-and-nail-care-during-cancer-drug-treatment";
 import { stereotacticRadiosurgeryAndSbrtDeliverySafeguards } from "./stereotactic-radiosurgery-and-sbrt-delivery-safeguards";
+import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
+import { sunProtectionDuringAndAfterCancerTreatment } from "./sun-protection-during-and-after-cancer-treatment";
 import { superiorVenaCavaObstruction } from "./superior-vena-cava-obstruction";
+import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
 import { suspectedCentralLineInfection } from "./suspected-central-line-infection";
+import { syringeDriverContinuousSubcutaneousInfusion } from "./syringe-driver-continuous-subcutaneous-infusion";
 import { tumourLysisSyndrome } from "./tumour-lysis-syndrome";
 import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access-device-selection-for-anticancer-therapy";
+import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer-surgery";
 
 /**
  * Every care protocol, one import per file. Fill agents add their file here; the list is a plain union, so a parallel
@@ -115,10 +147,13 @@ export const protocols: ProtocolInput[] = [
   acuteOncologyTelephoneTriage,
   alloHctGvhdProphylaxis,
   ambulatoryChemotherapyPumpsAtHome,
+  antiVegfDrugsAroundSurgery,
   anticancerDrugInteractionReview,
   anticoagulantsAndAntiplateletsBeforeEndoscopy,
+  antithromboticInterruptionAroundSurgery,
   asepticCompoundingOfHazardousAnticancerDrugs,
   bispecificStepUpDosing,
+  bleedingPrecautionsWhenPlateletsAreLow,
   bloodSamplingFromACentralLine,
   bodySizeBasedDoseCalculation,
   boneMarrowAspirateAndTrephineBiopsy,
@@ -132,6 +167,7 @@ export const protocols: ProtocolInput[] = [
   carTLymphodepletion,
   carTReferralAndEligibility,
   carboplatinDoseCalculation,
+  careInTheLastDaysOfLife,
   catheterRelatedThrombosisInCancer,
   centralLineOcclusionManagement,
   centralLineRemoval,
@@ -143,9 +179,22 @@ export const protocols: ProtocolInput[] = [
   contrastReactionHistoryAndPremedication,
   crsGradingAndManagement,
   diagnosticBronchoscopyAndEbusPreparation,
+  dietAlcoholAndWeightDuringCancerTreatment,
   doseBandingOfAnticancerDrugs,
   dpydTestingBeforeFluoropyrimidines,
+  drivingFlyingAndTravelDuringCancerTreatment,
   drugDesensitisationAfterAnticancerHypersensitivity,
+  enhancedRecoveryAfterBreastReconstruction,
+  enhancedRecoveryAfterColorectalSurgery,
+  enhancedRecoveryAfterCytoreductiveSurgeryAndHipec,
+  enhancedRecoveryAfterGastrectomy,
+  enhancedRecoveryAfterGynaecologicalCancerSurgery,
+  enhancedRecoveryAfterHeadAndNeckFreeFlapSurgery,
+  enhancedRecoveryAfterLiverSurgery,
+  enhancedRecoveryAfterLungSurgery,
+  enhancedRecoveryAfterOesophagectomy,
+  enhancedRecoveryAfterPancreatoduodenectomy,
+  enhancedRecoveryAfterRadicalCystectomy,
   fdgPetCtPreparation,
   febrileNeutropeniaFirstHour,
   fertilityProtectionBeforePelvicRadiotherapy,
@@ -164,6 +213,7 @@ export const protocols: ProtocolInput[] = [
   iecHsManagement,
   imageGuidedCoreBiopsyPreparationAndAftercare,
   implantedPortAccessAndCare,
+  indwellingPleuralCatheterDrainageAtHome,
   infusionReactionManagement,
   intrathecalChemotherapyAndVincaAlkaloidSafety,
   iodinatedContrastKidneyAndMetformin,
@@ -184,14 +234,19 @@ export const protocols: ProtocolInput[] = [
   iraeThyroid,
   linearAcceleratorQualityAssurance,
   lutetium177TherapyHomeRadiationSafety,
+  lymphoedemaRiskReductionAfterNodeSurgery,
+  malignantAscitesDrainage,
   malignantBowelObstruction,
   malignantPericardialEffusion,
   medicinesReconciliationInCancerCare,
   metastaticSpinalCordCompression,
   midlineCathetersForAnticancerTherapy,
+  mouthCareDuringCancerTreatment,
   mriSafetyScreeningImplants,
   neutropenicEnterocolitis,
+  opioidSwitchingAndConversion,
   oralAnticancerMedicinesAtHome,
+  palliativeSedation,
   pelvicRadiationDiseaseBowelSymptoms,
   peripheralCannulaForAnticancerTherapy,
   permanentProstateSeedBrachytherapyHomeRadiationSafety,
@@ -212,11 +267,20 @@ export const protocols: ProtocolInput[] = [
   raisedIntracranialPressure,
   renalDoseAdjustmentOfAnticancerDrugs,
   respiratoryMotionManagement4dCtAndGating,
+  routinePreoperativeTests,
   sactAdministrationChecksAtTheChair,
   sactPrescribingAndPharmacyVerification,
+  sentinelNodeTracersAndBlueDyeSafety,
+  sexAndContraceptionDuringChemotherapy,
+  skinAndNailCareDuringCancerDrugTreatment,
   stereotacticRadiosurgeryAndSbrtDeliverySafeguards,
+  strongOpioidsForCancerPain,
+  sunProtectionDuringAndAfterCancerTreatment,
   superiorVenaCavaObstruction,
+  surgicalSiteInfectionPrevention,
   suspectedCentralLineInfection,
+  syringeDriverContinuousSubcutaneousInfusion,
   tumourLysisSyndrome,
   venousAccessDeviceSelectionForAnticancerTherapy,
+  vteProphylaxisAfterCancerSurgery,
 ];

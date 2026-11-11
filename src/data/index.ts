@@ -115,6 +115,9 @@ import { protocolUpgradesRtSurgery } from "./spikes/protocol-upgrades-rt-surgery
 import { protocolUpgradesCare } from "./spikes/protocol-upgrades-care";
 import { protocolUpgradesAdministration } from "./spikes/protocol-upgrades-administration";
 import { protocolUpgradesPharmacyAccess } from "./spikes/protocol-upgrades-pharmacy-access";
+import { protocolUpgradesFillGi } from "./spikes/protocol-upgrades-fill-gi";
+import { protocolUpgradesFillSkin } from "./spikes/protocol-upgrades-fill-skin";
+import { protocolUpgradesFillBody } from "./spikes/protocol-upgrades-fill-body";
 import { rejuvenationMeasurement } from "./spikes/rejuvenation-measurement";
 import { tests } from "./tests";
 import { testsCdxDevices } from "./tests-cdx-devices";
@@ -403,6 +406,9 @@ const RAW_INPUTS: EntityInput[] = [
   ...protocolUpgradesCare,
   ...protocolUpgradesAdministration,
   ...protocolUpgradesPharmacyAccess,
+  ...protocolUpgradesFillGi,
+  ...protocolUpgradesFillSkin,
+  ...protocolUpgradesFillBody,
   ...rejuvenationMeasurement,
   ...tests,
   ...testsCdxDevices,

@@ -13,6 +13,7 @@ import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication
 import { sactAdministrationChecksAtTheChair } from "./sact-administration-checks-at-the-chair";
 import { sactPrescribingAndPharmacyVerification } from "./sact-prescribing-and-pharmacy-verification";
 import { suspectedCentralLineInfection } from "./suspected-central-line-infection";
+import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access-device-selection-for-anticancer-therapy";
 
 /**
  * Every care protocol, one import per file. Fill agents add their file here; the list is a plain union, so a parallel
@@ -33,4 +34,5 @@ export const protocols: ProtocolInput[] = [
   sactAdministrationChecksAtTheChair,
   sactPrescribingAndPharmacyVerification,
   suspectedCentralLineInfection,
+  venousAccessDeviceSelectionForAnticancerTherapy,
 ];

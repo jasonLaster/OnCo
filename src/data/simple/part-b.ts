@@ -46,7 +46,7 @@ export const simpleB: Record<string, string> = {
 
 
   ctdna: "Bits of DNA shed by tumour cells into the blood, detectable with sensitive tests.",
-  mrd: "Cancer still present after treatment but too small to see on scans, found by blood or marrow tests.",
+  mrd: "A test for small amounts of disease after treatment. A negative result means the test found no qualifying signal in that sample; it does not prove that no cancer remains.",
   vaf: "The share of DNA reads carrying a mutation, which shows how much of the sample is cancer.",
   vus: "A genetic change that has been found but nobody yet knows whether it matters.",
 
@@ -541,4 +541,9 @@ export const simpleB: Record<string, string> = {
   "nature-index": "Which institutions publish the most top-tier research.",
   "scimago-oncology": "A ranking of institutions by their cancer research output.",
   "nci-cancer-centers": "The US government's list of designated cancer centres.",
+
+"ctdna-tumour-fraction": "An estimate of the share of DNA in a blood sample that came from the tumour. A low share can make a negative genetic test harder to interpret.",
+"ctdna-units": "A tumour-DNA result needs its unit. A concentration, a share of all measured DNA and a yes-or-no call answer different questions.",
+"ctdna-imaging-discordance": "A blood test measures material in a blood sample, while a scan measures a region of the body. Different results need their timing and limits checked before deciding what they mean.",
+"ctdna-monitoring-lead-time": "The gap between a qualifying positive blood test and a later defined event. It depends on the study rules and sampling schedule and is not extra time added to life."
 };

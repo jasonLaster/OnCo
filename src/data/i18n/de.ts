@@ -553,7 +553,7 @@ export const tldr_de: Record<string, string> = {
   "monoclonal-antibody": "Im Labor hergestellte Immunproteine, die sich an ein einziges Ziel binden und es entweder blockieren oder die Zelle zur Zerstörung markieren.",
   "mount-sinai": "Mount Sinai ist ein akademisches Zentrum in New York mit Stärken in den Bereichen Myelom und Krebsimmunologie.",
   "mr-linac": "Der MR-Linac ist ein Strahlengerät mit eingebautem MRT, sodass der Bestrahlungsplan an die Lage des Tumors am jeweiligen Tag angepasst wird.",
-  mrd: "Krebs, der nach der Behandlung noch vorhanden, aber zu klein ist, um in Bildgebungsuntersuchungen sichtbar zu sein, und der durch Blut- oder Knochenmarktests nachgewiesen wird.",
+
   "mrd-negative-cr": "MRD-negative komplette Remission bedeutet, dass nicht nur unter dem Mikroskop keine Leukämie mehr sichtbar ist, sondern auch mit tausendfach empfindlicheren Tests keine mehr nachweisbar ist. Sie ist das Ziel der modernen Leukämiebehandlung.",
   "mrd-testing": "Ein hochempfindlicher Bluttest nach der Operation, der verbliebenen Krebs Monate früher nachweist, als es eine Bildgebung könnte.",
   mri: "Nutzt Magnete und Radiowellen, ohne Strahlung, um sehr detaillierte Bilder von Weichgewebe wie Gehirn, Brust, Leber und Prostata zu liefern.",
@@ -785,7 +785,7 @@ export const tldr_de: Record<string, string> = {
   "clinical-trial": "Eine Forschungsstudie, die eine Behandlung an Freiwilligen unter strengen Regeln prüft, um herauszufinden, ob sie sicher ist und ob sie wirkt. Jedes zugelassene Krebsmedikament hat mehrere durchlaufen.",
   "cll13-gaia": "Bei fitten Patienten schlug ein Jahr venetoclax plus obinutuzumab (mit oder ohne ibrutinib) den alten Chemotherapie-Standard klar.",
   cll14: "Ein Jahr lang zwei zielgerichtete Medikamente, danach nichts: Mehr als die Hälfte der Patienten war sechs Jahre später noch progressionsfrei, ganz ohne Behandlung.",
-  "clonal-haematopoiesis": "Mit dem Alter breiten sich bei den meisten Menschen unbemerkt Blutstammzellen mit krebsähnlichen Mutationen aus. Diese Klone erhöhen das Risiko für Leukämie und Herzerkrankungen, werden durch Chemotherapie beschleunigt und verfälschen Bluttests auf Krebs-DNA.",
+
   clonoseq: "Ein DNA-Test, der verbliebene Leukämie-, Myelom- oder Lymphomzellen bis auf eine unter einer Million zählt und dazu dient zu entscheiden, ob die Behandlung wirklich gewirkt hat.",
   "closed-automated-cell-manufacturing": "Geschlossene, robotergesteuerte Maschinen, die die Blutzellen eines Patienten mit weit weniger Personal, Reinräumen und Fehlern in ein CAR-T-Produkt verwandeln.",
   cmg901: "Sonesitatug vedotin ist ein gegen Claudin 18.2 gerichtetes ADC in Phase 3 bei Magenkrebs, das AstraZeneca von KYM Biosciences einlizenziert hat.",

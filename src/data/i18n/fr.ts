@@ -553,7 +553,7 @@ export const tldr_fr: Record<string, string> = {
   "monoclonal-antibody": "Des protéines immunitaires fabriquées en laboratoire qui se fixent sur une seule cible, soit pour la bloquer, soit pour marquer la cellule afin qu'elle soit détruite.",
   "mount-sinai": "Mount Sinai est un centre universitaire de New York particulièrement fort en myélome et en immunologie du cancer.",
   "mr-linac": "Le MR-linac est un appareil de radiothérapie qui intègre une IRM, de sorte que le plan de traitement est ajusté à l'emplacement exact de la tumeur ce jour-là.",
-  mrd: "Un cancer encore présent après le traitement mais trop petit pour être visible à l'imagerie, détecté par des analyses de sang ou de moelle osseuse.",
+
   "mrd-negative-cr": "Une rémission complète MRD négative signifie non seulement qu'aucune leucémie n'est visible au microscope, mais qu'aucune n'est détectable avec des tests mille fois plus sensibles. C'est l'objectif du traitement moderne de la leucémie.",
   "mrd-testing": "Une analyse de sang ultrasensible réalisée après la chirurgie, qui détecte le cancer résiduel des mois avant qu'une imagerie ne le fasse.",
   mri: "Utilise des aimants et des ondes radio, sans rayonnement, pour fournir des images très détaillées des tissus mous tels que le cerveau, le sein, le foie et la prostate.",
@@ -785,7 +785,7 @@ export const tldr_fr: Record<string, string> = {
   "clinical-trial": "Une étude de recherche qui teste un traitement chez des volontaires selon des règles strictes, pour savoir s'il est sûr et s'il est efficace. Chaque médicament anticancéreux approuvé en a traversé plusieurs.",
   "cll13-gaia": "Chez les patients en bonne forme, un an de venetoclax plus obinutuzumab (avec ou sans ibrutinib) a nettement surpassé l'ancien standard de chimiothérapie.",
   cll14: "Un an de deux médicaments ciblés, puis plus rien : plus de la moitié des patients étaient encore sans progression six ans plus tard, sans aucun traitement.",
-  "clonal-haematopoiesis": "Avec l'âge, des cellules souches du sang porteuses de mutations de type cancéreux se multiplient discrètement chez la plupart des gens. Ces clones augmentent le risque de leucémie et de maladie cardiaque, sont accélérés par la chimiothérapie et brouillent les tests sanguins recherchant l'ADN du cancer.",
+
   clonoseq: "Un test ADN qui compte les cellules résiduelles de leucémie, de myélome ou de lymphome jusqu'à une sur un million, utilisé pour décider si le traitement a vraiment fonctionné.",
   "closed-automated-cell-manufacturing": "Des machines fermées, pilotées par des robots, qui transforment les cellules sanguines d'un patient en produit CAR-T avec bien moins de mains, de salles blanches et d'erreurs.",
   cmg901: "Sonesitatug vedotin est un ADC ciblant Claudin 18.2, en phase 3 dans le cancer gastrique, dont AstraZeneca a acquis la licence auprès de KYM Biosciences.",

@@ -328,8 +328,52 @@ export const terms: TermInput[] = [
 ],
 "asOf": "2026-11-10"
 }),
-  t({ id: "ctdna", tags: ["precision"], aka: ["circulating tumor DNA", "ctDNA-positive", "ctDNA-negative", "ctDNA-based", "ctDNA-directed", "tumour fraction"], name: "Circulating tumour DNA (ctDNA)", category: "Biomarkers", tldr: "Circulating tumour DNA (ctDNA) consists of fragments of DNA shed by tumour cells into the blood, detectable with sensitive sequencing.", summary: "Circulating tumour DNA (ctDNA) is made up of DNA fragments shed by tumour cells into the bloodstream, where they form only a small fraction of all cell-free DNA and are detected with sensitive sequencing. Its uses span genotyping for companion diagnostics, tracking resistance mutations such as EGFR T790M and ESR1, molecular residual disease, early detection and response monitoring. Shedding varies with tumour type and burden, and clonal haematopoiesis can confound results. The term underpins the Liquid biopsy (ctDNA), MRD / molecular residual disease testing and Multi-cancer early detection (MCED) technologies, and it appears in the SERENA-6, CIRCULATE-Japan and IMvigor011 trials and in ideas on molecular-progression switching beyond ESR1 and HPV ctDNA to guide cervical cancer therapy.", wikipedia: W("Circulating_tumor_DNA"), technologies: ["liquid-biopsy", "mrd-testing", "mced"] }),
-  t({ id: "mrd", tags: ["precision"], aka: ["MRD-directed", "MRD-negativity", "measurable residual disease", "minimal residual disease", "molecular remission"], name: "Minimal / molecular residual disease (MRD)", category: "Biomarkers", tldr: "Cancer still present after treatment but too small to see on scans, detected by blood or marrow tests.", summary: "Minimal or molecular residual disease (MRD), also called measurable residual disease, is cancer that persists after treatment at a level too small to see on scans but detectable in blood or marrow; a negative result is called molecular remission. In leukaemia and myeloma it is measured by flow cytometry or NGS of marrow (clonoSEQ); in solid tumours it means ctDNA after surgery, covered under MRD / molecular residual disease testing. MRD positivity predicts relapse, MRD-guided escalation (IMvigor011) and de-escalation (DYNAMIC) are proven concepts, and MRD is an accepted endpoint in myeloma trials (FDA ODAC 2024). Readers meet it in the Colorectal, Pancreatic, Bladder & urothelial, DLBCL and Multiple myeloma entries and in CIRCULATE-Japan.", wikipedia: W("Minimal_residual_disease"), technologies: ["mrd-testing"], trials: ["imvigor011", "dynamic"] }),
+  t({ id: "ctdna", tags: ["precision"], aka: ["circulating tumor DNA", "ctDNA-positive", "ctDNA-negative", "ctDNA-based", "ctDNA-directed", "tumour fraction"], name: "Circulating tumour DNA (ctDNA)", category: "Biomarkers", tldr: "Circulating tumour DNA (ctDNA) consists of fragments of DNA shed by tumour cells into the blood, detectable with sensitive sequencing.", summary: "Circulating tumour DNA (ctDNA) is made up of DNA fragments shed by tumour cells into the bloodstream, where they form only a small fraction of all cell-free DNA and are detected with sensitive sequencing. Its uses span genotyping for companion diagnostics, tracking resistance mutations such as EGFR T790M and ESR1, molecular residual disease, early detection and response monitoring. Shedding varies with tumour type and burden, and clonal haematopoiesis can confound results. The term underpins the Liquid biopsy (ctDNA), MRD / molecular residual disease testing and Multi-cancer early detection (MCED) technologies, and it appears in the SERENA-6, CIRCULATE-Japan and IMvigor011 trials and in ideas on molecular-progression switching beyond ESR1 and HPV ctDNA to guide cervical cancer therapy.", wikipedia: W("Circulating_tumor_DNA"), technologies: ["liquid-biopsy", "mrd-testing", "mced"], notes: ["Detection depends on stage and tumour type: with digital PCR-based methods in 640 patients, ctDNA was found in more than 75% of people with advanced pancreatic, ovarian, colorectal, bladder, gastro-oesophageal, breast, melanoma, hepatocellular and head and neck cancers, and in fewer than 50% of primary brain, renal, prostate or thyroid cancers. In localised disease it was found in 73% of colorectal, 57% of gastro-oesophageal, 48% of pancreatic and 50% of breast adenocarcinomas, and it was often present in people with no detectable circulating tumour cells (Bettegowda 2014). The assay, specimen and population are part of each figure.", "ctDNA is a subset of cell-free DNA, and not every plasma variant is tumour-derived: in paired plasma and white-blood-cell sequencing, 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis (Razavi 2019). A ctDNA result is also a quantity with a unit (molecules per millilitre, a fraction, or a call), and the same number means different things under each."],
+"related": [
+  "ctdna-units",
+  "ctdna-monitoring-lead-time"
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Circulating_tumor_DNA"
+  },
+  {
+    "label": "Detection of Circulating Tumor DNA in Early- and Late-Stage Human Malignancies",
+    "url": "https://doi.org/10.1126/scitranslmed.3007094"
+  },
+  {
+    "label": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants",
+    "url": "https://doi.org/10.1038/s41591-019-0652-7"
+  }
+],
+"asOf": "2026-11-10"
+}),
+  t({ id: "mrd", tags: ["precision"], aka: ["MRD-directed", "MRD-negativity", "measurable residual disease", "minimal residual disease", "molecular remission"], name: "Minimal / molecular residual disease (MRD)", category: "Biomarkers", tldr: "Residual disease testing looks for small amounts of disease after treatment using a specified sample and method. A negative result means no qualifying signal was detected under that test, rather than proof that no cancer remains.", summary: "Minimal, measurable and molecular residual disease (MRD) are related terms for small amounts of disease assessed after treatment with a specified method and specimen. A negative result means no qualifying signal was detected under that method, not proof that every cancer cell is absent. In leukaemia and myeloma it is measured by flow cytometry or NGS of marrow (clonoSEQ); in solid tumours it means ctDNA after surgery, covered under MRD / molecular residual disease testing. MRD positivity predicts relapse, MRD-guided escalation (IMvigor011) and de-escalation (DYNAMIC) are proven concepts, and MRD is an accepted endpoint in myeloma trials (FDA ODAC 2024). Readers meet it in the Colorectal, Pancreatic, Bladder & urothelial, DLBCL and Multiple myeloma entries and in CIRCULATE-Japan.", wikipedia: W("Minimal_residual_disease"), technologies: ["mrd-testing"], trials: ["imvigor011", "dynamic"], notes: [
+  "The name has three expansions: minimal residual disease (small remaining amounts), measurable residual disease (used in blood-cancer guidance, stressing what the method can detect) and molecular residual disease (tumour-associated molecular signals after treatment, mostly ctDNA in solid tumours). Check which one a paper means. Cell-frequency thresholds in leukaemia, molecular ratios and plasma detection rules are different quantities, and the European LeukemiaNet update on acute myeloid leukaemia sets disease-specific techniques, materials, time points and thresholds that are not transferable to a solid tumour (Heuser 2021).",
+  "Residual disease on a surgical specimen is a different measurement: residual cancer burden is a defined tissue endpoint and is not interchangeable with a blood MRD call. In a fictional study a postoperative plasma test is negative but surgery shows residual invasive cancer. Neither must be wrong, because pathology examined tissue at surgery and the plasma assay sought a qualifying signal in a later blood sample, so dates, specimen and assay limits need reconciling before the pair is read. MRD negative means a method found no qualifying signal in one specimen and not that no cancer cell remains anywhere.",
+  "A residual-disease signal can select a research group at higher observed recurrence risk without showing which treatment helps that group. Clinical utility asks whether a test-guided strategy improves a meaningful outcome against an appropriate alternative. Disappearance of a marker is a separate proposed surrogate: it needs validation against the outcome for that setting, rather than becoming proof of cure. These are interpretation distinctions in the FDA November 2024 drug-development guidance, not a universal rule to change treatment."
+],
+"related": [
+  "ctdna-imaging-discordance",
+  "ctdna-monitoring-lead-time"
+],
+"links": [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Minimal_residual_disease"
+  },
+  {
+    "label": "2021 Update on MRD in acute myeloid leukemia: a consensus document from the European LeukemiaNet MRD Working Party",
+    "url": "https://doi.org/10.1182/blood.2021013626"
+  },
+  {
+    "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+    "url": "https://www.fda.gov/media/183874/download"
+  }
+],
+"asOf": "2026-11-10"
+}),
   t({
     asOf:"2026-11-10", related:["alleles-and-zygosity","germline-vs-somatic","gene-amplification"], id: "vaf", wikipedia: W("Allele_frequency"), links: [{"label":"Li et al., Standards and guidelines for the interpretation and reporting of sequence variants in cancer: AMP, ASCO and CAP joint consensus (Journal of Molecular Diagnostics 2017)","url":"https://doi.org/10.1016/j.jmoldx.2016.10.002"},{"label":"Absolute quantification of somatic DNA alterations in human cancer.","url":"https://pubmed.ncbi.nlm.nih.gov/22544022/"},{"label":"Allele-specific genomic data elucidate the role of somatic gain and copy-number neutral loss of heterozygosity in cancer.","url":"https://pubmed.ncbi.nlm.nih.gov/34731645/"},{"label":"High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.","url":"https://pubmed.ncbi.nlm.nih.gov/31768066/"}], name: "Variant allele frequency (VAF)", category: "Genomics", tldr: "Variant allele frequency is the fraction of informative reads or molecules that support a variant under a test’s definition. It is not directly the fraction of cancer cells.", summary: "Read-based VAF divides variant-supporting reads by informative reads at the locus. Some assays instead report a molecule-based measure, so keep the laboratory’s definition. Tumor purity, local allele-specific copy number, ploidy, subclonal mixture and assay behavior affect the value. VAF alone cannot assign zygosity, variant origin, the number of clones or a cancer-cell percentage. Changes over time in plasma also require attention to specimen and non-tumor DNA contributors.", technologies: ["cgp", "liquid-biopsy"] ,
 "notes": [

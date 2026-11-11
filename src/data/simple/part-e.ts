@@ -154,7 +154,7 @@ export const simpleE: Record<string, string> = {
   "microbiome-tumour": "The bacteria in the gut and even inside tumours influence whether cancer starts and whether immune drugs work, and stool transplants from responders have made some non-responders respond.",
   "cancer-neuroscience": "Cancer neuroscience studies how the brain, nerves and tumours signal to one another. Mouse studies have traced brain-to-cancer circuits, but they have not shown that stress causes human cancer or that anxiety medicines treat it.",
   "cachexia-biology": "Cancer cachexia is wasting caused by tumour signals that switch off appetite and burn muscle and fat, and the first drug to reverse it, ponsegromab, showed weight gain.",
-  "clonal-haematopoiesis": "As we age, blood stem cells with cancer-like mutations quietly expand in most people, raising leukaemia and heart disease risk and confusing blood tests that look for cancer DNA.",
+  "clonal-haematopoiesis": "A group of blood-forming cells with acquired changes can expand. DNA from that group can appear in a blood test and needs to be distinguished from tumour DNA.",
   "field-cancerisation": "Cancer often arises from a patch of tissue already carrying mutations rather than one rogue cell, so sun-exposed skin and smokers' airways are mutant patchworks before a tumour appears.",
   "tumor-dormancy": "Cancer cells can hide asleep in bone marrow, lung or brain for years, invisible to scans and chemotherapy, then wake up, which is what late relapse means.",
   "basement-membrane-tissue-barriers": "Organs keep their lining cells behind a thin protein sheet called the basement membrane; a tumour that has not crossed it is curable, and crossing it makes cancer invasive.",

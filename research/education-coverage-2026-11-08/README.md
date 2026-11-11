@@ -8,6 +8,9 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
+The [blood and immune implementation checkpoint](blood-immune-2026-11-10/README.md) registers three ctDNA subjects and supplements 29 canonical subjects across #375, #371 and #373, represented by 30 versioned records. All three full suites, readers and generated exports pass, and 192 exact current teaching-field passages survive Markdown. Its 170 worker rows and 97 independent units still await coordinator source-to-field acceptance, so it adds no new curriculum credit. The exact lead-time analysis denominator and the Diehl supplement remain named source limits.
+
+
 The original census has **291/537 files assessed or classified**: 284 teaching-bearing sources and seven routing-only files. Of 2,001 assessed learning requirements, 1,994 have exact draft evidence and seven remain open. Complete draft representation covers 280 sources; four retain residual requirements. Another 246 ordinary sources are unread.
 
 The later census independently has **277/550 teaching sources assessed and draft represented**, with 1,999/1,999 requirements evidenced. It retains 268 ordinary unread sources and five unclassified navigation sources. These overlapping inventories are never added. Each ref retains 1,888 assets: 310 teaching paths are reviewed, 23 are supporting, and 1,555 remain unclassified.
@@ -16,11 +19,11 @@ The [functional-model checkpoint](functional-models-2026-11-10/README.md) integr
 
 The root full suite passes 284 files and 2,829 tests; the current shared peer chain passes 281 files and 2,813 tests, both with two existing skips. Validation and TypeScript pass. Lint has zero errors, with eight existing root warnings and seven existing peer warnings. All twenty selected canonical JSON outputs match their graphs, and all 602 mapped passages survive generated Markdown. The 180 selected summary entries contain 29 texts and 151 English fallbacks. No new Next production page build, clinical expert/named-language sign-off, main merge or deployment is claimed.
 
-The audit's selected versioned snapshots span 387 canonical owners across the drafts: 118 absent from the pinned baseline and 269 existing, plus one directory consumer. The root runtime has 22,788 entities and 105 additions over baseline. Shared draft identities are not counted as root runtime additions. Across the recorded drafts, 2,394 distinct summary-consumer entries are snapshotted: 567 contain text and 1,827 use English fallback. Twelve chemical-observation consumers are tracked separately.
+The audit's selected versioned snapshots span 418 entity IDs across the selected proposal snapshots: 131 absent from the pinned baseline and 287 existing, plus one directory consumer. The root runtime has 22,791 entities and 108 additions over baseline. Shared draft identities are not counted as root runtime additions. Across the recorded drafts, 2,637 distinct summary-consumer entries are snapshotted: 635 contain text and 2,002 use English fallback. Twelve chemical-observation consumers are tracked separately.
 
 All **917/917 currently defined literature occurrences are screened**, including the [final fifty](remaining-literature-2026-11-10/README.md). Counts describe occurrences, not unique papers or claim verification. Identifier conflicts, unavailable sources and unapplied proposals remain explicit. Of 55 adjacent findings, 23 are represented and 32 remain open. Six schema items remain open: five implemented optional contracts await product approval and one classification-context contract needs design. Main coverage and complete final re-audits remain zero.
 
-The earlier [effect/reasoning](effect-reasoning-2026-11-10/README.md), [binder/manufacturing](binders-cmc-2026-11-10/README.md), [innate](innate-immunity-2026-11-10/README.md), [breast](breast-pathology-2026-11-10/README.md), [measurement](measurement-sequencing-2026-11-10/README.md), [spatial](spatial-computational-2026-11-10/README.md), [repair](repair-signaling-2026-11-10/README.md), [RNA](rna-delivery-2026-11-10/README.md), [death](death-metabolism-2026-11-09/README.md), [antigen](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints retain their evidence and limits. Study/prediction, tissue/pathology, blood/immune and toxicity packets await coordinator acceptance or integration and earn no current ledger credit.
+The earlier [effect/reasoning](effect-reasoning-2026-11-10/README.md), [binder/manufacturing](binders-cmc-2026-11-10/README.md), [innate](innate-immunity-2026-11-10/README.md), [breast](breast-pathology-2026-11-10/README.md), [measurement](measurement-sequencing-2026-11-10/README.md), [spatial](spatial-computational-2026-11-10/README.md), [repair](repair-signaling-2026-11-10/README.md), [RNA](rna-delivery-2026-11-10/README.md), [death](death-metabolism-2026-11-09/README.md), [antigen](antigen-antibodies-2026-11-09/README.md), [T-cell](tcells-2026-11-09/README.md) and [chemical](payload-chemical-species-2026-11-09/README.md) checkpoints retain their evidence and limits. Study/prediction, tissue/pathology and toxicity await coordinator acceptance or integration. Blood/immune is implemented and validated in the drafts, with curriculum acceptance pending; none earns additional current source-ledger credit.
 
 ## Method
 
@@ -85,7 +88,11 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-effect-reasoning.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-effect-summary-consumers.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-functional-models.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-functional-summary-consumers.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-functional-summary-consumers.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-blood-immune-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-blood-immune-peer.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-blood-immune-shared.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-blood-immune-summary-consumers.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

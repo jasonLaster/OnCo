@@ -138,7 +138,7 @@ export const simpleO: Record<string, string> = {
   "cd47-blockade": "CD47 blockers remove the 'don't eat me' signal that cancer cells show to macrophages so the immune system's scavenger cells can engulf them, though the lead programme was halted for safety.",
   "cea-surveillance-colorectal": "Carcinoembryonic antigen is measured in the blood every few months for five years after bowel cancer surgery because a rising level often comes before a visible recurrence.",
   "cfdna-methylation-testing": "Cell-free DNA methylation tests read chemical marks on DNA fragments shed by tumours into the blood, telling cancer DNA from normal DNA and hinting at where the cancer is.",
-  "cellsearch-ctc-count": "CellSearch is the only regulator-cleared blood test that counts whole cancer cells, and five or more cells in a small tube marks a worse outlook in breast, prostate and bowel cancer.",
+  "cellsearch-ctc-count": "A test that counts cells captured and identified under set rules in a blood sample. What the count means depends on the cancer, test and clinical question.",
   "ctc-capture": "Circulating tumour cell capture fishes whole cancer cells out of a blood sample to count or study them, and the count predicts outcome in breast, prostate and colorectal cancer.",
   "cobalt-60-teletherapy": "Cobalt-60 machines made curative radiotherapy widely available from the 1950s, and although linacs replaced them in rich countries they still treat many patients elsewhere.",
   "colposcopes-digital-cervical-screening": "A colposcope is the magnifying camera used to examine the cervix after an abnormal smear, and new portable versions with scoring software are built for clinics without a specialist.",

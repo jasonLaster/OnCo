@@ -185,14 +185,34 @@ export const ctdnaTrials: TrialInput[] = [
 
 export const ctdnaTerms: TermInput[] = [
   {
-    id: "tumour-informed-assay", tags: ["precision"], wikipediaChecked: "2026-09-22", kind: "term", name: "Tumour-informed versus tumour-naive ctDNA assays", aka: ["Tumour-informed MRD", "Tumour-agnostic ctDNA assay", "Personalised ctDNA panel"], category: "Biomarkers", asOf,
+    id: "tumour-informed-assay", tags: ["precision"], wikipediaChecked: "2026-09-22", kind: "term", name: "Tumour-informed versus tumour-naive ctDNA assays", aka: ["Tumour-informed MRD", "Tumour-agnostic ctDNA assay", "Personalised ctDNA panel"], category: "Biomarkers", asOf: "2026-11-10",
     tldr: "A tumour-informed blood test is built for one patient: the tumour is sequenced first and the test then hunts for that patient's own mutations in blood. A tumour-naive test uses the same fixed panel, often of methylation marks, for everyone, so it needs no tumour sample and returns faster.",
     summary: "Tumour-informed assays (Signatera, RaDaR) sequence the resected tumour, choose a set of clonal mutations, and track them in plasma at high depth, which gives high specificity and lets a positive be called on very few molecules; the cost is a tumour sample, a bespoke panel per patient and a longer first turnaround. Tumour-naive assays (Guardant Reveal and most multi-cancer tests) apply a fixed panel of mutations and methylation or fragmentation features to every sample, so they work without tissue and from the first draw, at the price of having to distinguish tumour signal from clonal haematopoiesis and other background. Trials so far have used tumour-informed tests for treatment decisions (DYNAMIC used a tumour-informed approach; IMvigor011 used Signatera), while screening tests are necessarily tumour-naive. Head-to-head sensitivity comparisons are few, and results are not interchangeable between assays.",
     links: [
-      { label: "IMvigor011: ctDNA-guided adjuvant atezolizumab in muscle-invasive bladder cancer (NEJM 2025), tumour-informed Signatera", url: "https://europepmc.org/article/MED/41124204" },
-      { label: "CMS article A58456: MolDX minimal residual disease testing for solid tumour cancers (lists covered tests)", url: "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=58456" },
-    ],
-    technologies: ["mrd-testing", "liquid-biopsy", "mced", "cfdna-methylation-testing"], drugs: ["signatera", "radar-mrd", "guardant-reveal", "oncodetect", "next-personal", "foundationone-mrd", "haystack-mrd", "labcorp-plasma-detect", "precise-mrd", "truemrd", "tempus-xm-mrd", "navdx", "galleri"], terms: ["ctdna", "mrd", "cfdna", "clonal-haematopoiesis"], related: ["ctdna-tests", "imvigor011", "dynamic"], sections: ["diagnostics"],
+  {
+    "label": "IMvigor011: ctDNA-guided adjuvant atezolizumab in muscle-invasive bladder cancer (NEJM 2025), tumour-informed Signatera",
+    "url": "https://europepmc.org/article/MED/41124204"
+  },
+  {
+    "label": "CMS article A58456: MolDX minimal residual disease testing for solid tumour cancers (lists covered tests)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=58456"
+  },
+  {
+    "label": "Comparison of tumor‐informed and tumor‐naïve sequencing assays for ctDNA detection in breast cancer",
+    "url": "https://doi.org/10.15252/emmm.202216505"
+  },
+  {
+    "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+    "url": "https://www.fda.gov/media/183874/download"
+  }
+],
+    technologies: ["mrd-testing", "liquid-biopsy", "mced", "cfdna-methylation-testing"], drugs: ["signatera", "radar-mrd", "guardant-reveal", "oncodetect", "next-personal", "foundationone-mrd", "haystack-mrd", "labcorp-plasma-detect", "precise-mrd", "truemrd", "tempus-xm-mrd", "navdx", "galleri"], terms: ["ctdna", "mrd", "cfdna", "clonal-haematopoiesis"], related: ["ctdna-tests", "imvigor011", "dynamic"], sections: ["diagnostics"], notes: [
+  "Design contract, from the FDA guidance of November 2024: a tumour-informed approach sequences the tumour and selects variants to follow. Its stated advantage is potentially higher specificity, and its limits include lag between tumour testing and panel creation, possible failure to detect mutations that emerge after tumour sampling or revert, and dependence on the number and reliability of selected targets, which may be better for tumours with higher mutation burden and well-characterised hotspot variants. A tumour-naive or tumour-agnostic panel is generic, with faster turnaround as its stated advantage and tumour biomarkers outside the panel as a limit. Both still meet the same finite plasma tube, background attribution and calling rules.",
+  "Same-sample comparison: in serial plasma from people with breast cancer, tumour-informed assays showed the highest sensitivity at low ctDNA levels, with hybrid-capture sequencing of 1,347 to 7,491 tumour-identified mutations detecting an allele fraction of 2.4 parts per million and multiplex PCR across 21 to 47 structural variants reaching 4.7 parts per million (Santonja 2023). Each added tracked variant is another largely independent chance to catch a tumour fragment, and the theoretical limit 1 / (input copies x variants) falls as variants rise, but it applies to that assay and does not rank product categories.",
+  "Comparability, fictional: two studies report 90% and 75% detection, the first before treatment and the second after surgery. The higher percentage does not show the better assay, because disease burden, timing, case mix, missing samples and outcome definitions differ. A suitable comparison aligns these conditions, ideally on the same samples with prespecified rules. Labels such as tumour-naive, tumour-agnostic and tissue-free are method labels that need definition and do not establish that a test detects every cancer.",
+  "Choosing a reference strategy is a fit question. Available tumour tissue and very low expected signal can favour tracking many known tumour features, as in the same-sample Santonja comparison. A predefined assay can begin without building a patient-specific tumour reference, which may matter when tissue is unavailable or time is limited. Looking for newly emerged resistance variants requires coverage of those variants: a broader predefined panel may include them, but neither category detects features outside its measured scope. These are design considerations rather than a general ranking of sensitivity or clinical benefit.",
+  "In a fictional workflow, method A must select a fixed variant list from suitable tumour DNA before testing later plasma, while method B already has a predefined validated detector. If tumour DNA is unavailable but qualifying plasma is available, B can start as specified and A cannot build its reference yet. Reference-build failure is not a negative plasma result. Neither fixed list establishes detection outside its features, and a tumour reference and a blood-cell-origin filter address different questions."
+],
   },
 ];
 

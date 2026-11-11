@@ -21,7 +21,7 @@ const frontierBase: EntityInput[] = [
     links: [{ label: "FinalDose (Y Combinator)", url: "https://www.ycombinator.com/companies/finaldose" }],
   },
   {
-    id: "fragmentomics", kind: "technology", name: "cfDNA fragmentomics", sections: ["early-detection", "diagnostics"], status: "established", asOf, wikipedia: "https://en.wikipedia.org/wiki/Cell-free_DNA",
+    id: "fragmentomics", kind: "technology", name: "cfDNA fragmentomics", sections: ["early-detection", "diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: "https://en.wikipedia.org/wiki/Cell-free_DNA",
     tldr: "Fragmentomics reads the sizes and positions of DNA fragments in blood, not the mutations. Cancer cells die messily and leave a recognisable fragmentation pattern.",
     summary: "Fragmentomics analyses genome-wide cell-free DNA fragment length, end motifs, and nucleosome footprints at low sequencing depth, which is cheaper than deep mutation or methylation sequencing. DELFI Diagnostics commercialised FirstLook Lung (2023) as a blood test to increase uptake of low-dose CT screening, and presented the first randomised clinical-utility data (L301 FIRSTLUNG) at ATS 2026. Fragment features are also being layered into multi-cancer detection and MRD assays by Guardant, GRAIL, and academic groups.",
     principle: "Plasma cfDNA is whole-genome sequenced at ~1-2x depth; machine learning on fragment-size distributions across genomic windows distinguishes tumour-derived from haematopoietic DNA.",
@@ -29,7 +29,28 @@ const frontierBase: EntityInput[] = [
     limitations: ["Lower specificity than deep methylation panels alone", "Tissue-of-origin resolution weaker than methylation", "Clinical utility (mortality benefit) unproven"],
     technologies: ["liquid-biopsy", "mced", "mrd-testing"], terms: ["ctdna"], cancers: ["nsclc"],
     tags: ["frontier", "precision"],
-    links: [{ label: "DELFI FIRSTLUNG at ATS 2026", url: "https://www.biospace.com/press-releases/delfi-diagnostics-to-present-first-clinical-utility-data-for-blood-based-lung-cancer-screening-at-ats-2026-international-conference" }],
+    links: [
+  {
+    "label": "DELFI FIRSTLUNG at ATS 2026",
+    "url": "https://www.biospace.com/press-releases/delfi-diagnostics-to-present-first-clinical-utility-data-for-blood-based-lung-cancer-screening-at-ats-2026-international-conference"
+  },
+  {
+    "label": "Enhanced detection of circulating tumor DNA by fragment size analysis",
+    "url": "https://doi.org/10.1126/scitranslmed.aat4921"
+  },
+  {
+    "label": "Genome-wide cell-free DNA fragmentation in patients with cancer",
+    "url": "https://doi.org/10.1038/s41586-019-1272-6"
+  },
+  {
+    "label": "Cell-free DNA Comprises an In Vivo Nucleosome Footprint that Informs Its Tissues-Of-Origin",
+    "url": "https://doi.org/10.1016/j.cell.2015.11.050"
+  },
+  {
+    "label": "The Effect of Preanalytical and Physiological Variables on Cell-Free DNA Fragmentation",
+    "url": "https://doi.org/10.1093/clinchem/hvac029"
+  }
+], notes: ["Measure, then infer: the measured features are fragment length, end sequences, genomic positions and chemical marks. A reference or trained model then turns them into a source estimate or a score, so the output is an inference and not a cell census, and no single fragment carries a cancer address. Tumour fragments are shorter on average, but most short fragments in a sample still come from normal cells because normal DNA outnumbers tumour DNA when the tumour fraction is low. These features can complement mutation tracking when few informative mutations are sampled, and neither a source estimate nor a score by itself establishes tumour location, stage, a resistance mechanism or benefit from acting on a result.", "Evidence read: selecting fragments of 90 to 150 base pairs gave more than twofold median enrichment of tumour DNA in over 95% of cases among 344 plasma samples from 200 people with cancer (Mouliere 2018). A genome-wide fragmentation classifier detected 57% to more than 99% of seven cancer types at 98% specificity (area under the curve 0.94) in 236 patients and 245 healthy people, and located tissue of origin to a limited number of sites in 75% of cases (Cristiano 2019). Nucleosome footprints in cfDNA correlate with cell-type epigenetics (Snyder 2016). Each is a proof of principle in defined cohorts and does not transfer to another population, collection protocol or assay version.", "Handling is part of the measurement: neither collection tube nor plasma processing time changed cfDNA fragment sizes in one study, but both could change genome-wide fragmentation patterns and fragment-end sequences, and a size profile that looks fine is an incomplete quality check (van der Pol 2022). In a fictional case a classifier trained on promptly processed plasma gives higher scores on samples transported under another protocol while DNA yield meets the minimum, and that does not show more cancer-associated DNA until the new conditions are validated."],
   },
   {
     id: "adc-payload-neutralizer", kind: "technology", name: "ADC payload neutralisers", sections: ["adcs", "supportive-care"], status: "phase-1", asOf,
@@ -460,7 +481,7 @@ const frontierRadical: EntityInput[] = [
     links: [{ label: "FDA: individualised antisense oligonucleotide guidance (page moved; nearest live section)", url: "https://www.fda.gov/drugs/" }],
   },
   {
-    id: "continuous-ctdna-monitoring", kind: "technology", name: "Continuous and near-continuous ctDNA monitoring", sections: ["diagnostics"], status: "concept", asOf: RAD,
+    id: "continuous-ctdna-monitoring", kind: "technology", name: "Continuous and near-continuous ctDNA monitoring", sections: ["diagnostics"], status: "concept", asOf: "2026-11-10",
     tldr: "Instead of testing blood every three months, sampling constantly, so a relapse is caught the week it starts.",
     summary: "MRD testing already detects relapse months before imaging, but sampling is episodic. Work on implantable and wearable sampling, microneedle interstitial-fluid collection, and at-home dried blood spots aims to shorten the interval, while urine and saliva ctDNA reduce the burden of venepuncture. Nothing in this class was validated for clinical use by 2026, and the question of what to do with an earlier signal is still open.",
     principle: "Frequent low-volume sampling of blood or interstitial fluid, with error-suppressed sequencing or targeted PCR, turns a periodic test into a trend line.",
@@ -468,8 +489,21 @@ const frontierRadical: EntityInput[] = [
     limitations: ["No validated device", "Assay sensitivity limited by cfDNA quantity in small samples", "Lead time without a proven intervention causes harm as well as good"],
     technologies: ["mrd-testing", "liquid-biopsy", "fragmentomics"], terms: ["ctdna", "mrd"], companies: ["natera", "guardant-health", "foresight-diagnostics"],
     tags: ["frontier", "promising"],
-    links: [{ label: "ClinicalTrials.gov: serial ctDNA monitoring", url: "https://clinicaltrials.gov/search?term=serial%20ctDNA%20monitoring" }],
+    links: [
+  {
+    "label": "ClinicalTrials.gov: serial ctDNA monitoring",
+    "url": "https://clinicaltrials.gov/search?term=serial%20ctDNA%20monitoring"
   },
+  {
+    "label": "Assessment of Molecular Relapse Detection in Early-Stage Breast Cancer",
+    "url": "https://doi.org/10.1001/jamaoncol.2019.1838"
+  }
+], notes: ["What denser sampling changes: blood draws and scans are both intermittent, so an observed gap between a first positive sample and a later event depends on both schedules and cannot locate when the signal began. In García-Murillas 2019 plasma was taken every 3 months in the first year and every 6 months after, and detection preceded clinical relapse by a median of 10.7 months (95% CI 8.1 to 19.1) in the combined cohort of 144. A median from three-monthly draws is not comparable with one from near-continuous sampling, and a shorter interval shows earlier detection and does not show that acting on it improves survival."],
+
+"related": [
+  "ctdna-monitoring-lead-time"
+]
+},
   {
     id: "breath-vocs", kind: "technology", name: "Breath and volatile-organic-compound detection", sections: ["early-detection", "diagnostics"], status: "phase-2", asOf: RAD,
     tldr: "Smelling cancer: measuring the trace chemicals a tumour puts into exhaled breath.",

@@ -231,7 +231,39 @@ export const biomarkerReadouts4: BiomarkerInput[] = [
     cancers: ["urothelial", "colorectal", "tnbc", "nsclc", "breast-cancer"], drugs: ["atezolizumab", "signatera", "guardant-reveal", "radar-mrd", "oncodetect", "next-personal", "foundationone-mrd", "haystack-mrd", "labcorp-plasma-detect", "precise-mrd", "truemrd", "tempus-xm-mrd", "navdx", "clonoseq"], tests: ["signatera", "guardant-reveal", "radar-mrd", "next-personal", "oncodetect", "foundationone-mrd", "haystack-mrd", "labcorp-plasma-detect", "precise-mrd", "truemrd", "tempus-xm-mrd", "navdx"],
     companionDiagnostics: [cdx("Signatera CDx", "Natera", "Muscle Invasive Bladder Cancer (MIBC) - Plasma", ["atezolizumab"], "P260004 (05/15/2026)", "natera")],
     forPatient: "A positive ctDNA test after surgery means traces of the cancer's DNA are still in your blood and relapse is likely without more treatment. In muscle-invasive bladder cancer a positive Signatera result now selects a year of atezolizumab; in bowel cancer it is used in trials and by some teams to decide on chemotherapy. A negative result is reassuring but not a guarantee, and testing is usually repeated over time.",
-    terms: ["ctdna", "mrd", "tumour-informed-assay", "cfdna"], related: ["tmb-high", "esr1-mutation-ctdna"], links: [{ label: FDA_CDX_LABEL, url: FDA_CDX_URL }, { label: "TECENTRIQ prescribing information (DailyMed)", url: LABEL.tecentriq }, { label: "CMS MolDX billing article A58376: minimal residual disease testing for solid tumour cancers", url: "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58376" }], tags: ["biomarker", "genome-wide", "ctdna", "precision"] }),
+    terms: ["ctdna", "mrd", "tumour-informed-assay", "cfdna"], related: [
+  "tmb-high",
+  "esr1-mutation-ctdna",
+  "b-subclone-attribution-residual-disease",
+  "ctdna-imaging-discordance"
+], links: [
+  {
+    "label": "FDA: List of FDA-Authorized Companion Diagnostic Devices",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+  },
+  {
+    "label": "TECENTRIQ prescribing information (DailyMed)",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+  },
+  {
+    "label": "CMS MolDX billing article A58376: minimal residual disease testing for solid tumour cancers",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58376"
+  },
+  {
+    "label": "Scherer et al., Sci Transl Med 2016: ctDNA genotyping classifies cell of origin and tracks genome evolution in lymphoma (92 patients)",
+    "url": "https://doi.org/10.1126/scitranslmed.aai8545"
+  },
+  {
+    "label": "Kurtz et al., Nat Biotechnol 2021: PhasED-seq, phased variants for residual disease detection in B-cell lymphoma (213 participants)",
+    "url": "https://doi.org/10.1038/s41587-021-00981-w"
+  },
+  {
+    "label": "Circulating tumor DNA and magnetic resonance imaging to predict neoadjuvant chemotherapy response and recurrence risk",
+    "url": "https://doi.org/10.1038/s41523-021-00239-3"
+  }
+], tags: ["biomarker", "genome-wide", "ctdna", "precision"], notes: ["What the call and the number each say: a positive is detection above the assay's calling rule in one finite plasma aliquot, and any accompanying concentration or fraction has its own unit and validated range, so a detected value below the quantitation range does not support an exact fold change. In the I-SPY 2 pilot of 84 patients, ctDNA positivity after neoadjuvant chemotherapy added significantly to MRI functional tumour volume for predicting distant recurrence and death (p = 0.004), while ctDNA early in treatment gave only a numerical gain for predicting pathological complete response (Magbanua 2021). A positive can also come from a blood-cell clone unless origin is checked, and a blood result and an imaging or pathology result can differ because they sample different material, regions and times."],
+"asOf": "2026-11-10"
+}),
 
   b({ id: "hla-a-02-01", name: "HLA-A*02:01 (HLA typing for TCR therapies)", aka: [
   "HLA-A*02:01",

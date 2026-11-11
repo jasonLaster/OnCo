@@ -1,6 +1,6 @@
 {
   "pr": 371,
-  "head": "833efb4c7309cb601483ce1b56d865f7b4cc7ff2",
+  "head": "d497baaeb8adac1e3ccd3af27e8d83f305820a23",
   "newCount": 29,
   "modifiedCount": 5,
   "records": [
@@ -465,11 +465,19 @@
       ],
       "tldr": "A DNA change found in plasma may come from blood cells rather than a tumor. Establishing where a change came from is part of interpreting a liquid biopsy.",
       "summary": "A primary study compared plasma cell-free DNA, matched white blood cells and tumor samples and found substantial contributions from clonal hematopoiesis to plasma variants. Matched blood-cell sequencing helped attribute origin. A technically real somatic variant is not necessarily tumor-derived, and origin cannot be assigned from the gene name alone. This measurement problem is distinct from assessing the future health implications of a blood-cell clone.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-10",
       "links": [
         {
           "label": "Matched plasma, blood-cell and tumor sequencing study (2019)",
           "url": "https://doi.org/10.1038/s41591-019-0652-7"
+        },
+        {
+          "label": "Cancer therapy shapes the fitness landscape of clonal hematopoiesis",
+          "url": "https://doi.org/10.1038/s41588-020-00710-0"
+        },
+        {
+          "label": "Age-Related Clonal Hematopoiesis Associated with Adverse Outcomes",
+          "url": "https://doi.org/10.1056/NEJMoa1408617"
         }
       ],
       "tags": [],
@@ -497,7 +505,10 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "How common it is: in paired plasma and white-blood-cell sequencing, 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, and variants that could not be separated from white-blood-cell DNA kept an explicit ambiguous category (Razavi 2019). Blood-cell clones also fall into gene groups: DNMT3A, TET2 and ASXL1 with age (Jaiswal 2014) and TP53, PPM1D and CHEK2 selected by radiation, platinum and topoisomerase II inhibitors (Bolton 2020). A gene often mutated in tumours is therefore not proof of tumour origin.",
+        "Attribution rule: matched white-blood-cell sequencing is the standard comparison, but its gene coverage, depth and detection rules matter, a clone below its sensitivity can stay unseen, and subtracting every blood match is not a complete method because a variant can be present in blood and tumour. In a fictional case the same variant V is detected in plasma and blood cells and not in the sampled tumour. That supports a blood-cell contribution, and tumour non-detection is not a biological zero because it is bounded by coverage, sensitivity, timing and the region sampled."
+      ],
       "category": "Biomarkers"
     },
     {
@@ -570,6 +581,10 @@
         {
           "label": "Primary limit-of-detection estimation method (2004)",
           "url": "https://doi.org/10.1373/clinchem.2003.029983"
+        },
+        {
+          "label": "FDA: biomarker technical review, terminology appendix (November 2018)",
+          "url": "https://www.fda.gov/media/119431/download"
         }
       ],
       "tags": [],
@@ -593,7 +608,10 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "A detection call and a reliable amount are different claims: the limit of detection describes detection probability under specified conditions and the limit of quantitation describes where a number is reliable, and the two have separate validation criteria. A value detected below the quantitative range does not support an exact fold change. In ctDNA reporting, a concentration such as mean tumour molecules per millilitre, a fraction such as variant allele fraction and a call are different quantities, so the fictional 0.01% variant allele fraction (100 parts per million of variant alleles) cannot be compared with a 0.2 molecules per millilitre report without both assays' methods and calibration.",
+        "Detection and quantitation need different validation criteria. The terminology appendix of a November 2018 FDA technical review defines a detection limit using a specified detection probability and a quantitation limit using stated accuracy, or bias and precision, requirements. That review concerns a malaria biomarker, not an oncology-assay validation. The distinction explains why detection below a validated quantitative range does not justify an exact fold change; a commonly used 95% detection criterion is a specified convention, not a property guaranteed for every input or sample."
+      ],
       "category": "Diagnostics & imaging"
     },
     {
@@ -606,7 +624,7 @@
       ],
       "tldr": "A small blood sample contains a finite number of original DNA molecules. Sequencing copies of those molecules more deeply cannot recover a tumor molecule that never entered the analyzed sample.",
       "summary": "Original molecule availability, recovery and technical errors place different limits on cell-free DNA analysis. A primary error-suppression study combined molecular barcoding and background correction to improve detection in a defined assay. Another primary comparison examined tumor-informed and tumor-naive assays on matched breast cancer samples. Their findings do not create one universal detection limit: sample input, tracked features and the complete workflow remain part of the result.",
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-10",
       "links": [
         {
           "label": "Molecular recovery and digital error suppression (2016)",
@@ -615,6 +633,10 @@
         {
           "label": "Matched comparison of tumor-DNA assays (2023)",
           "url": "https://doi.org/10.15252/emmm.202216505"
+        },
+        {
+          "label": "FDA: statistical guidance for diagnostic-test studies (March 2007)",
+          "url": "https://www.fda.gov/media/71147/download"
         }
       ],
       "tags": [],
@@ -640,7 +662,12 @@
       "keyPapers": [],
       "journals": [],
       "dependsOn": [],
-      "notes": [],
+      "notes": [
+        "For independent random target-molecule counts with Poisson mean lambda, the chance of none is exp(-lambda). At lambda = 1 this is 36.8%, so an average of one does not guarantee a molecule. In a fictional model, an evaluated aliquot supplies 4,500 independent amplifiable opportunities at one locus, each with a target-allele probability of 1 in 10,000. The expected target count is 0.45. If target counts follow a Poisson distribution, the chance of no target is exp(-0.45), 63.8%. Twenty independent loci with the same opportunity count and probability give an expected total of 9 and exp(-9), 0.012%, for none. Independence, equal recovery and one retained target being sufficient are assumptions of this model. These are not measured clinical false-negative rates. A tumour-DNA fraction cannot simply replace the target-allele probability without assumptions about copy number, variant multiplicity and which tumour clones carry the variant. More reads cannot recover an original molecule absent from the aliquot.",
+        "A worked example: in a multiplex PCR assay with a theoretical limit of 1 / (4,500 copies x variants), one sample not detected with 4,500 amplifiable copies was detected at 7.9 parts per million when re-assayed with 27,000 copies, and the authors note that detection at the theoretical limit rests on a single mutant molecule and is subject to the stochastic nature of sampling (Santonja 2023). A nominal detection limit from high-input validation material may not apply to a low-input clinical sample, so a laboratory with a 95% detection claim at 30 units of input cannot attach the same claim to a sample with 5 units without supporting data.",
+        "Analytical detection and clinical sensitivity answer different questions. FDA diagnostic-test guidance dated March 2007 defines clinical sensitivity by the proportion testing positive among people who have the specified condition, judged against the reference standard in the intended-use population. In a residual-disease study, disease definition, follow-up, draw schedule, evaluable samples and recurrence sites shape that denominator. An analytical limit measured in prepared material does not supply that clinical proportion, and a negative test does not establish absence of cancer.",
+        "Following a blood test from body to result separates biological availability, inclusion in the evaluated aliquot, recovery through processing, and the final calling rule. Low shedding, handling losses, background or a failed quality criterion can interrupt different steps. Repeated draws observe different times, but tumour biology and handling can make their errors correlated; they are not automatically independent repeats. A failed sample or an unbuildable reference needs its stated failure disposition rather than being silently called negative."
+      ],
       "category": "Biomarkers"
     },
     {

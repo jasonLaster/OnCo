@@ -365,7 +365,7 @@ export const simpleD: Record<string, string> = {
   "colorectal-screening": "Finding and removing bowel growths before they become cancer, using colonoscopy, stool tests or newer blood tests.",
   "colposcopy-excision": "Looking at the cervix with a magnifier after a positive screening test, then removing the abnormal patch with a heated wire loop in one visit.",
   "community-oncology-networks": "The local clinics where most cancer patients are actually treated, increasingly grouped into large networks that also run trials.",
-  "continuous-ctdna-monitoring": "Sampling blood constantly instead of every few months, so a relapse could be caught the week it starts; not yet ready for use.",
+  "continuous-ctdna-monitoring": "Taking blood samples more often could change when tumour DNA is first detected. The timing depends on the sampling schedule, and earlier detection alone does not show a survival benefit.",
   "contract-research-organisations": "Companies that run clinical trials for drug makers, handling hospital sites, checking, data and paperwork for regulators.",
   "cell-therapy-cold-chain": "Cells can be frozen, stored, transported and thawed for later use. Each cell product needs its own checked conditions and quality assessment.",
   "ct-fm": "An AI model trained on many thousands of CT scans to outline organs and flag findings that need attention.",

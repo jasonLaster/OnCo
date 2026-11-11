@@ -336,7 +336,7 @@ export const technologies: TechnologyInput[] = [
     technologies: ["mrd-testing", "mced"], links: [{ label: "Wikipedia", url: W("Liquid_biopsy") }],
   },
   {
-    id: "mrd-testing", tags: ["precision"], keyPapers: ["paper-abbosh-tracerx-ctdna-relapse-nature-2023", "paper-zviran-whole-genome-cfdna-residual-disease-nat-med-2020", "paper-esmo-ctdna-assay-recommendations-ann-oncol-2022"], dependsOn: ["liquid-biopsy", "ngs-bioinformatics-software"], kind: "technology", name: "MRD / molecular residual disease testing", sections: ["diagnostics"], status: "established", asOf, wikipedia: W("Minimal_residual_disease"),
+    id: "mrd-testing", tags: ["precision"], keyPapers: ["paper-abbosh-tracerx-ctdna-relapse-nature-2023", "paper-zviran-whole-genome-cfdna-residual-disease-nat-med-2020", "paper-esmo-ctdna-assay-recommendations-ann-oncol-2022"], dependsOn: ["liquid-biopsy", "ngs-bioinformatics-software"], kind: "technology", name: "MRD / molecular residual disease testing", sections: ["diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: W("Minimal_residual_disease"),
     tldr: "An ultra-sensitive blood test after surgery that detects leftover cancer months before a scan would.",
     summary: "Tumour-informed assays (Signatera, Oncodetect, RaDaR ST, Haystack MRD, and the whole-genome NeXT Personal, FoundationOne MRD, Precise MRD, TrueMRD and Labcorp Plasma Detect) or tumour-naive assays (Guardant Reveal, Tempus xM) detect ctDNA after curative treatment; NavDx counts HPV DNA from HPV-driven cancers. ctDNA positivity predicts recurrence with high specificity. Trials (DYNAMIC, CIRCULATE, IMvigor011 in bladder cancer, positive in 2025-26 leading to atezolizumab approval in ctDNA+ MIBC) show it can guide adjuvant therapy. Standard in haematologic malignancies via flow cytometry and NGS (clonoSEQ).",
     principle: "Patient-specific variant panel designed from tumour sequencing, tracked at very high depth in plasma.",
@@ -346,7 +346,41 @@ export const technologies: TechnologyInput[] = [
     companies: ["natera", "exact-sciences", "guardant-health", "adela", "billiontoone", "c2i-genomics", "haystack-oncology", "inivata", "isabl", "mission-bio", "naveris", "teiko", "pairidex", "neogenomics", "personalis", "foundation-medicine", "quest-diagnostics", "labcorp", "myriad-genetics", "veracyte", "tempus"],
     drugs: ["signatera", "guardant-reveal", "radar-mrd", "oncodetect", "next-personal", "foundationone-mrd", "haystack-mrd", "labcorp-plasma-detect", "precise-mrd", "truemrd", "tempus-xm-mrd", "navdx", "clonoseq"],
     trials: ["imvigor011", "dynamic"],
-    cancers: ["colorectal", "urothelial", "tnbc", "nsclc", "multiple-myeloma"], related: ["ctdna-tests", "idea-dtc-colonisation-determinants", "idea-dormancy-maintenance-therapy"], links: [{ label: "Wikipedia", url: W("Minimal_residual_disease") }],
+    cancers: ["colorectal", "urothelial", "tnbc", "nsclc", "multiple-myeloma"], related: [
+  "ctdna-tests",
+  "idea-dtc-colonisation-determinants",
+  "idea-dormancy-maintenance-therapy",
+  "eclipse-subclone-ctdna",
+  "genome-wide-ctdna-mutation-integration",
+  "saferseqs",
+  "ctdna-monitoring-lead-time"
+], links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Minimal_residual_disease"
+  },
+  {
+    "label": "Comparison of tumor‐informed and tumor‐naïve sequencing assays for ctDNA detection in breast cancer",
+    "url": "https://doi.org/10.15252/emmm.202216505"
+  },
+  {
+    "label": "Assessment of Molecular Relapse Detection in Early-Stage Breast Cancer",
+    "url": "https://doi.org/10.1001/jamaoncol.2019.1838"
+  },
+  {
+    "label": "Genome-wide cell-free DNA mutational integration enables ultra-sensitive cancer monitoring",
+    "url": "https://doi.org/10.1038/s41591-020-0915-3"
+  },
+  {
+    "label": "FDA: statistical guidance for diagnostic-test studies (March 2007)",
+    "url": "https://www.fda.gov/media/71147/download"
+  }
+], notes: [
+  "In a fictional model, an evaluated aliquot supplies 4,500 independent amplifiable opportunities at one locus, each with a target-allele probability of 1 in 10,000. The expected target count is 0.45. If target counts follow a Poisson distribution, the chance of no target is exp(-0.45), 63.8%. Twenty independent loci with the same opportunity count and probability give an expected total of 9 and exp(-9), 0.012%, for none. Independence, equal recovery and one retained target being sufficient are assumptions of this model. These are not measured clinical false-negative rates. A tumour-DNA fraction cannot simply replace the target-allele probability without assumptions about copy number, variant multiplicity and which tumour clones carry the variant. More reads cannot recover an original molecule absent from the aliquot.",
+  "A worked limit: for multiplex PCR across 21 to 47 patient-specific structural variants on 4,500 amplifiable copies, the theoretical limit is 1 / (4,500 x variants), which is 1 in 211,500, or 4.7 parts per million, at 47 variants. The 4.7 parts per million detection rested on a single mutant molecule, and one sample not detected at 4,500 copies was detected at 7.9 parts per million when re-assayed with 27,000 copies (Santonja 2023). Whole-genome sequencing of cfDNA integrates thousands of mutations and reached tumour-fraction sensitivity as low as 10 to the minus 5 (Zviran 2020).",
+  "What a lead-time figure here means: in García-Murillas 2019 ctDNA detection preceded clinical relapse by a median of 10.7 months in the combined cohort of 144, but that median covers only people with both an earlier positive and a later relapse. Distant extracranial relapse was detected in 22 of 23 patients and brain-only relapse in 1 of 6. Medians from different cohorts, schedules and confirmation rules cannot rank assays, and an earlier signal does not show that acting on it extends life.",
+  "Analytical detection and clinical sensitivity answer different questions. FDA diagnostic-test guidance dated March 2007 defines clinical sensitivity by the proportion testing positive among people who have the specified condition, judged against the reference standard in the intended-use population. In a residual-disease study, disease definition, follow-up, draw schedule, evaluable samples and recurrence sites shape that denominator. An analytical limit measured in prepared material does not supply that clinical proportion, and a negative test does not establish absence of cancer."
+],
   },
   {
     id: "mced", tags: ["precision", "evidence:insufficient"], related: ["ctdna-tests"], dependsOn: ["liquid-biopsy"], kind: "technology", name: "Multi-cancer early detection (MCED)", sections: ["early-detection", "diagnostics"], status: "phase-3", asOf: "2026-11-03",
@@ -1385,24 +1419,59 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Radiomics") }],
   },
   {
-    id: "ctc-capture", related: ["cellsearch-ctc-count", "parsortix-ctc-harvest"], companies: ["menarini-silicon-biosystems", "angle-plc", "cnside-diagnostics", "rgcc-international", "cancertain", "cytoastra", "screencell", "rarecyte", "cansera", "cellsbin"], kind: "technology", name: "Circulating tumour cell capture", sections: ["diagnostics","early-detection"], status: "approved", asOf, since: 2004, wikipedia: W("Circulating_tumor_cell"),
+    id: "ctc-capture", related: ["cellsearch-ctc-count", "parsortix-ctc-harvest"], companies: ["menarini-silicon-biosystems", "angle-plc", "cnside-diagnostics", "rgcc-international", "cancertain", "cytoastra", "screencell", "rarecyte", "cansera", "cellsbin"], kind: "technology", name: "Circulating tumour cell capture", sections: ["diagnostics","early-detection"], status: "approved", asOf: "2026-11-10", since: 2004, wikipedia: W("Circulating_tumor_cell"),
     tldr: "Fishing whole cancer cells out of a blood sample to count them or study them; the count is prognostic in breast, prostate and colorectal cancer.",
     summary: "Circulating tumour cells (CTCs) are rare cells shed by tumours into blood, roughly one per billion blood cells. The CellSearch system, cleared by the FDA in 2004, enriches them by EpCAM antibody capture and counts them; higher counts predict shorter survival in metastatic breast, prostate and colorectal cancer. Microfluidic and size-based methods capture EpCAM-negative cells, and single CTC sequencing and culture are used in research; CTC counts have not yet changed treatment in randomised trials.",
     principle: "Immunomagnetic or microfluidic enrichment of cells by surface antigen, size or deformability, followed by staining and enumeration or molecular analysis.",
     strengths: ["Whole cells allow protein, RNA and functional study","Prognostic in several metastatic cancers","Repeatable from blood"],
     limitations: ["Very rare cells, low yield","Antibody capture misses cells that have lost EpCAM","Changing therapy on CTC counts has not improved outcomes in trials"],
     technologies: ["liquid-biopsy"], cancers: ["breast-hr-positive","prostate","colorectal"],
-    links: [{ label: "Wikipedia", url: W("Circulating_tumor_cell") }],
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Circulating_tumor_cell"
   },
   {
-    id: "cfdna-methylation-testing", dependsOn: ["liquid-biopsy", "methylation-profiling"], kind: "technology", name: "Cell-free DNA methylation tests", sections: ["early-detection","diagnostics"], status: "approved", asOf, since: 2024, wikipedia: W("Cell-free_fetal_DNA"),
+    "label": "Circulating Tumor Cells, Disease Progression, and Survival in Metastatic Breast Cancer",
+    "url": "https://doi.org/10.1056/NEJMoa040766"
+  },
+  {
+    "label": "Circulating Tumor Cells and Response to Chemotherapy in Metastatic Breast Cancer: SWOG S0500",
+    "url": "https://doi.org/10.1200/JCO.2014.56.2561"
+  },
+  {
+    "label": "Tumor Cells Circulate in the Peripheral Blood of All Major Carcinomas but not in Healthy Subjects or Patients With Nonmalignant Diseases",
+    "url": "https://doi.org/10.1158/1078-0432.CCR-04-0378"
+  },
+  {
+    "label": "Yu et al.: epithelial and mesenchymal composition of circulating breast tumour cells (2013)",
+    "url": "https://doi.org/10.1126/science.1228522"
+  }
+], notes: [
+  "A count is a recovery under rules: enrichment concentrates candidate cells before identification, and each method selects. One established epithelial method captures with EpCAM, then checks cell shape, a nucleus, cytokeratin and absence of CD45, which is one operational definition and not a universal rule for all circulating tumour cells or tumour types. Physical methods select by size or deformability and remove or retain different cells, so marker independence is not unbiased recovery. A negative capture, such as zero qualifying cells in 7.5 mL, does not show that no tumour cells circulate and does not predict a ctDNA result, because free DNA fragments are a separate analyte.",
+  "Scale and scope: in the CellSearch system, 1 of 344 healthy or non-malignant-disease subjects (0.3%) had two or more cells per 7.5 mL, against 36% of 2,183 samples from 964 people with metastatic carcinoma, with detection of two or more cells in 57% of prostate, 37% of breast, 30% of colorectal and 20% of lung cancer samples (Allard 2004). Spiked-cell recovery averaged at least 85% over 5 to 1,142 cells. These describe that device and population.",
+  "Prognosis is not utility: in a prospective study of 177 people with metastatic breast cancer, a baseline count of 5 or more per 7.5 mL in the training set went with a median progression-free survival of 2.7 months against 7.0 (Cristofanilli 2004). In SWOG S0500, of 595 evaluable patients 123 with persistently raised counts were randomised to continue or change chemotherapy, and median overall survival was 10.7 and 12.5 months (P = .98), so that early-switch strategy did not extend survival (Smerage 2014). That bounds one strategy and neither validates nor excludes other uses of the count.",
+  "Epithelial-to-mesenchymal transition (EMT) describes changes in cell state and marker expression. Yu and colleagues reported epithelial and mesenchymal changes in circulating breast tumour cells and associations with progression (2013). As a measurement inference, enrichment requiring an epithelial marker can under-represent cells with little of that marker; physical capture has different selection effects. Neither route is a census of all circulating tumour cells. The study does not establish one marker profile for every patient or every time point."
+],
+  },
+  {
+    id: "cfdna-methylation-testing", dependsOn: ["liquid-biopsy", "methylation-profiling"], kind: "technology", name: "Cell-free DNA methylation tests", sections: ["early-detection","diagnostics"], status: "approved", asOf: "2026-11-10", since: 2024, wikipedia: W("Cell-free_fetal_DNA"),
     tldr: "Blood tests that read chemical marks on fragments of DNA shed by tumours; the marks tell cancer DNA from normal DNA and hint at where the cancer is.",
     summary: "Cancer cells carry characteristic DNA methylation patterns that survive in the cell-free DNA shed into blood. Methylation-based tests use bisulfite or enzymatic conversion followed by targeted sequencing to detect a cancer signal and predict its tissue of origin; the multi-cancer early detection test Galleri works this way, and Guardant's Shield, the first blood test approved by the FDA for colorectal cancer screening in 2024, combines methylation with other cfDNA signals. Methylation also underpins some minimal residual disease assays.",
     principle: "Extract cfDNA from plasma, convert unmethylated cytosines, sequence targeted regions, and classify methylation patterns against reference tumour and normal profiles.",
     strengths: ["Tissue-agnostic cancer signal","Can point to the tissue of origin","Approved use in colorectal screening"],
     limitations: ["Sensitivity for early-stage cancers is modest","False positives and unclear follow-up pathways","Outcome benefit of multi-cancer screening still under trial"],
     drugs: ["galleri"], technologies: ["liquid-biopsy","mced","methylation-profiling"], cancers: ["colorectal"],
-    links: [{ label: "Wikipedia", url: W("Cell-free_fetal_DNA") }],
+    links: [
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cell-free_fetal_DNA"
+  },
+  {
+    "label": "Comprehensive human cell-type methylation atlas reveals origins of circulating cell-free DNA in health and disease",
+    "url": "https://doi.org/10.1038/s41467-018-07466-6"
+  }
+], notes: ["How the read works: DNA methylation adds chemical marks to DNA bases without changing sequence, and many assays examine methylated cytosines next to guanines (CpG sites), using chemical or enzymatic conversion or other technologies. Normal cell types carry their own methylation patterns, so a mark is not a cancer label. Deconvolution estimates how much each reference cell type contributes to a mixture: a methylation atlas of 25 tissues and cell types attributed healthy-donor plasma cfDNA to white blood cells (55%), erythrocyte progenitors (30%), vascular endothelial cells (10%) and hepatocytes (1%), and its contributions also matched sepsis and islet transplantation (Moss 2018).", "Scope: a classifier assigns a score or category and a deconvolution assigns source fractions, and both depend on the reference set, the model and the cut-off. Because tissue injury also adds normal DNA from an organ, an inferred organ contribution alone is not proof of cancer. A model validated in one population, collection protocol and assay version does not transfer automatically, and a score is not necessarily a calibrated probability."],
   },
   {
     id: "gene-expression-prognostic-assays", companies: ["raiz-diagnostics"], kind: "technology", name: "Gene-expression prognostic assays", sections: ["diagnostics"], status: "approved", asOf, wikipedia: W("Gene_expression_profiling_in_cancer"),

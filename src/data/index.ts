@@ -28,6 +28,7 @@ import { educationParallelInnateImmuneTerms } from "./education-parallel-innate-
 import { bindersCmcEducation2026 } from "./binders-cmc-education-2026-11";
 import { educationEffectReasoningTerms } from "./education-effect-reasoning-2026-11";
 import { functionalModelEducation } from "./education-functional-model-2026-11";
+import { EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS } from "./education-blood-immune-measurement-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -353,6 +354,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...bindersCmcEducation2026,
   ...educationEffectReasoningTerms,
   ...functionalModelEducation,
+  ...EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS,
   ...trials,
   ...pairings,
   ...roadmaps,

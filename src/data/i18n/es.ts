@@ -411,7 +411,7 @@ export const tldr_es: Record<string, string> = {
 
 
   ctdna: "Fragmentos de ADN liberados por las células tumorales a la sangre, detectables con secuenciación sensible.",
-  mrd: "Cáncer aún presente tras el tratamiento pero demasiado pequeño para verse en las exploraciones, detectado por pruebas de sangre o médula.",
+
   vaf: "La fracción de lecturas de ADN que llevan una mutación. Indica cuánto de la muestra es mutante y cuán clonal es.",
   vus: "Un cambio genético que se ha encontrado pero del que nadie sabe aún si importa.",
 
@@ -954,7 +954,7 @@ export const tldr_es: Record<string, string> = {
   "clinical-trial": "Un estudio de investigación que prueba un tratamiento en voluntarios bajo reglas estrictas, para averiguar si es seguro y si funciona. Todo fármaco contra el cáncer aprobado pasó por varios.",
   "cll13-gaia": "En pacientes en buen estado general, un año de venetoclax más obinutuzumab (con o sin ibrutinib) superó claramente al antiguo estándar de quimioterapia.",
   cll14: "Un año de dos fármacos dirigidos y luego nada: más de la mitad de los pacientes seguían libres de progresión seis años después, sin ningún tratamiento.",
-  "clonal-haematopoiesis": "Con la edad, en la mayoría de las personas se expanden silenciosamente células madre de la sangre con mutaciones similares a las del cáncer. Estos clones aumentan el riesgo de leucemia y de enfermedad cardíaca, se aceleran con la quimioterapia y confunden los análisis de sangre que buscan ADN del cáncer.",
+
   clonoseq: "Una prueba de ADN que cuenta las células residuales de leucemia, mieloma o linfoma hasta una en un millón, usada para decidir si el tratamiento realmente ha funcionado.",
   "closed-automated-cell-manufacturing": "Máquinas selladas y operadas por robots que convierten las células sanguíneas de un paciente en un producto CAR-T con muchas menos manos, salas limpias y errores.",
   cnio: "El centro nacional de investigación del cáncer de España, fundado por el pionero de RAS Mariano Barbacid y conocido por la biología de oncogenes, telómeros y senescencia.",

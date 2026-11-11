@@ -411,7 +411,7 @@ export const tldr_pt: Record<string, string> = {
 
 
   ctdna: "Fragmentos de DNA liberados por células tumorais no sangue, detectáveis com sequenciamento sensível.",
-  mrd: "Câncer ainda presente após o tratamento, mas pequeno demais para ser visto em exames, detectado por testes de sangue ou medula.",
+
   vaf: "A fração de leituras de DNA que carregam uma mutação. Diz quanto da amostra é mutante e quão clonal é.",
   vus: "Uma alteração genética que foi encontrada, mas ninguém sabe ainda se importa.",
 
@@ -954,7 +954,7 @@ export const tldr_pt: Record<string, string> = {
   "clinical-trial": "Um estudo de pesquisa que testa um tratamento em voluntários sob regras rigorosas, para descobrir se ele é seguro e se funciona. Todo medicamento contra o câncer aprovado passou por vários.",
   "cll13-gaia": "Em pacientes em boas condições clínicas, um ano de venetoclax mais obinutuzumab (com ou sem ibrutinib) superou claramente o antigo padrão de quimioterapia.",
   cll14: "Um ano de dois medicamentos-alvo e depois nada: mais da metade dos pacientes continuava livre de progressão seis anos depois, sem nenhum tratamento.",
-  "clonal-haematopoiesis": "Com a idade, células-tronco do sangue com mutações semelhantes às do câncer se expandem silenciosamente na maioria das pessoas. Esses clones aumentam o risco de leucemia e de doença cardíaca, são acelerados pela quimioterapia e confundem os exames de sangue que procuram DNA de câncer.",
+
   clonoseq: "Um teste de DNA que conta as células residuais de leucemia, mieloma ou linfoma até uma em um milhão, usado para decidir se o tratamento realmente funcionou.",
   "closed-automated-cell-manufacturing": "Máquinas lacradas e operadas por robôs que transformam as células do sangue de um paciente em um produto CAR-T com muito menos mãos, salas limpas e erros.",
   cnio: "O centro nacional de pesquisa do câncer da Espanha, fundado pelo pioneiro do RAS Mariano Barbacid e conhecido pela biologia de oncogenes, telômeros e senescência.",

@@ -827,9 +827,12 @@ const pathways: PathwayInput[] = [
     tags: ["mechanism"],
   }),
   p({
-    id: "clonal-haematopoiesis", related: ["ageing-tissue-field-theory"], name: "Clonal haematopoiesis (CHIP)", wikipedia: W("Clonal_hematopoiesis"),
-    tldr: "As we age, blood stem cells with cancer-like mutations quietly expand in most people. These clones raise leukaemia and heart disease risk, are accelerated by chemotherapy, and confuse blood tests for cancer DNA.",
-    summary: "Clonal haematopoiesis of indeterminate potential (CHIP: DNMT3A, TET2, ASXL1, and after chemotherapy PPM1D, TP53, CHEK2 mutations at VAF ≥2%) is present in >10% of people over 70. It confers ~0.5-1%/year progression to myeloid neoplasm, doubles cardiovascular risk via inflammasome-primed macrophages, and predicts therapy-related MDS/AML after PARP inhibitors, platinum, and radioligand therapy. For liquid biopsy, CHIP variants are the main source of false-positive ctDNA calls, so tumour-informed or paired white-cell sequencing is needed. Interventions are preventive (avoid unnecessary genotoxic exposure, monitor) with IL-1β/IL-6 blockade under study.",
+    id: "clonal-haematopoiesis", related: [
+  "ageing-tissue-field-theory",
+  "ctdna-imaging-discordance"
+], name: "Clonal haematopoiesis (CHIP)", wikipedia: W("Clonal_hematopoiesis"),
+    tldr: "Some blood-forming cells acquire mutations and form an expanding clone. This can affect blood tests for tumour DNA and is distinct from a diagnosis of leukaemia.",
+    summary: "Clonal haematopoiesis of indeterminate potential (CHIP, a defined category within blood-cell clonal expansion; see the source-specific variant-fraction and clinical criteria below) is present in >10% of people over 70. It confers ~0.5-1%/year progression to myeloid neoplasm, doubles cardiovascular risk via inflammasome-primed macrophages, and predicts therapy-related MDS/AML after PARP inhibitors, platinum, and radioligand therapy. For liquid biopsy, CHIP variants are the main source of false-positive ctDNA calls, so tumour-informed or paired white-cell sequencing is needed. Interventions are preventive (avoid unnecessary genotoxic exposure, monitor) with IL-1β/IL-6 blockade under study.",
     analogy: "Weeds in the blood's seed bank. Harmless individually, they spread with age and after chemical sprays, some turn into leukaemia, and their DNA litters the blood, so a test for tumour DNA can mistake weeds for cancer.",
     nodes: [
       { id: "hsc", label: "Ageing HSCs", x: 15, y: 50 }, { id: "mut", label: "DNMT3A, TET2, ASXL1, PPM1D, TP53", x: 40, y: 50, targetId: "tp53" }, { id: "chip", label: "CHIP clone (VAF ≥2%)", x: 65, y: 50 },
@@ -839,10 +842,44 @@ const pathways: PathwayInput[] = [
     interventions: ["Paired white-blood-cell sequencing in liquid biopsy pipelines", "Monitoring after PARP inhibitors and radioligand therapy", "IL-1β/IL-6 blockade trials for CHIP-associated cardiovascular risk"],
     pathways: ["clonal-evolution", "inflammation-nfkb", "epigenetic-reprogramming"], targets: ["tp53", "parp", "tet2"], technologies: ["liquid-biopsy", "mrd-testing", "parp-inhibitor"], cancers: ["aml"], terms: ["vaf", "ctdna"],
     institutions: ["dana-farber", "broad-institute", "mskcc"],
-    notes: ["Leading programmes: Ebert (Dana-Farber/Broad) and Jaiswal (Stanford) who defined CHIP; Levine and Bolton (MSK) on therapy-related clonal haematopoiesis."],
-    links: [{ label: "Jaiswal et al., Age-related clonal hematopoiesis associated with adverse outcomes (NEJM 2014)", url: "https://doi.org/10.1056/NEJMoa1408617" }, { label: "Bolton et al., Cancer therapy shapes the fitness landscape of clonal hematopoiesis (Nature Genetics 2020)", url: "https://doi.org/10.1038/s41588-020-00710-0" }],
+    notes: [
+  "Leading programmes: Ebert (Dana-Farber/Broad) and Jaiswal (Stanford) who defined CHIP; Levine and Bolton (MSK) on therapy-related clonal haematopoiesis.",
+  "Clonal haematopoiesis (CH) is the broader phenomenon of blood-cell clones carrying acquired changes. In the 2022 WHO myeloid classification, CHIP requires a somatic mutation in a myeloid-malignancy-associated gene at a variant allele fraction of at least 2%, or at least 4% for X-linked gene mutations in males, without a diagnosed haematological disorder or unexplained cytopenia (Khoury 2022). Persistent unexplained cytopenia changes the classification question. These are criteria for a named category, not a rule that every smaller blood-cell clone is absent, tumour-derived or a sequencing error.",
+  "Which genes: in blood-cell exomes from 17,182 people most clonal variants fell in DNMT3A, TET2 and ASXL1, were rare before age 40, and were seen in 9.5% of people aged 70 to 79 (Jaiswal 2014). ASXL1 mutations were enriched in current or former smokers, and radiation, platinum and topoisomerase II inhibitors selected for DNA-damage-response genes (TP53, PPM1D, CHEK2), with sequential samples showing those clones outgrowing others after exposure (Bolton 2020). In 8,810 people with non-haematological cancers, PPM1D and TP53 mutations were associated with prior chemotherapy, and clonal haematopoiesis was found in 25% (Coombs 2017).",
+  "Source attribution in plasma, interpretation rule: TP53 is a tumour gene and also a therapy-selected blood-cell gene, so a TP53 variant in plasma after chemotherapy can come from either compartment. Matched white-blood-cell DNA and the tumour's variant list, where available, help assess its origin; some variants remain ambiguous. In Razavi's paired sequencing 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 controls without cancer had features of clonal haematopoiesis, and variants that could not be separated from white-blood-cell DNA kept an explicit ambiguous category, so subtracting every blood match is not a complete attribution method.",
+  "Fictional example: a plasma assay detects a variant that sensitive matched blood-cell sequencing finds at 0.8% VAF. The blood result supports a blood-cell contribution even below the 2% cut-off, but it does not make the variant CHIP or exclude a tumour contribution, because tumour evidence, shared variants and each method's limits still apply. Matched sequencing has its own gene coverage, depth and detection rules, so a clone below its sensitivity can stay unseen, and a clone finding is not a leukaemia diagnosis or a solid-tumour treatment instruction.",
+  "Reading the figures: a variant allele fraction counts variant alleles among the alleles evaluated and is not automatically the percentage of cells. Acquired (somatic) means not inherited and does not mean malignant. There is no age at which a plasma variant can simply be dismissed. Sequential samples show clones with DNA-damage-response mutations outgrowing others after radiation, platinum or topoisomerase II inhibitor exposure (Bolton 2020), which is selection of clones that can already be present and does not mean every new detection was caused by treatment."
+],
+    links: [
+  {
+    "label": "Jaiswal et al., Age-related clonal hematopoiesis associated with adverse outcomes (NEJM 2014)",
+    "url": "https://doi.org/10.1056/NEJMoa1408617"
+  },
+  {
+    "label": "Bolton et al., Cancer therapy shapes the fitness landscape of clonal hematopoiesis (Nature Genetics 2020)",
+    "url": "https://doi.org/10.1038/s41588-020-00710-0"
+  },
+  {
+    "label": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants",
+    "url": "https://doi.org/10.1038/s41591-019-0652-7"
+  },
+  {
+    "label": "Therapy-Related Clonal Hematopoiesis in Patients with Non-hematologic Cancers Is Common and Associated with Adverse Clinical Outcomes",
+    "url": "https://doi.org/10.1016/j.stem.2017.07.010"
+  },
+  {
+    "label": "Steensma2015",
+    "url": "https://doi.org/10.1182/blood-2015-03-631747"
+  },
+  {
+    "label": "Khoury et al.: WHO myeloid and histiocytic/dendritic classification (2022)",
+    "url": "https://doi.org/10.1038/s41375-022-01613-1"
+  }
+],
     tags: ["mechanism"],
-  }),
+
+"asOf": "2026-11-10"
+}),
   p({
     id: "field-cancerisation", related: ["ageing-tissue-field-theory"], name: "Field cancerisation", wikipedia: W("Field_cancerization"),
     tldr: "Cancer often arises from a whole region of tissue that already carries mutations, not from one rogue cell. Sun-exposed skin, smokers' airways, and Barrett's oesophagus are patchworks of mutant clones competing long before a tumour appears.",

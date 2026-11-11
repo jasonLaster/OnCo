@@ -76,16 +76,37 @@ export const diagnosticsTechnologies2: TechnologyInput[] = [
 },
 
   // ---- Circulating tumour cells -------------------------------------------------------------------------------
-  { id: "cellsearch-ctc-count", kind: "technology", name: "CellSearch circulating tumour cell count", status: "approved", since: 2004, asOf, sections: ["diagnostics"],
+  { id: "cellsearch-ctc-count", kind: "technology", name: "CellSearch circulating tumour cell count", status: "approved", since: 2004, asOf: "2026-11-10", sections: ["diagnostics"],
     aka: ["CellSearch", "CTC enumeration", "circulating tumour cell count"],
-    tldr: "The only regulator-cleared blood test that counts whole cancer cells; five or more cells in a small tube of blood marks a worse outlook in metastatic breast, prostate and bowel cancer, though changing treatment on the count alone has not helped patients.",
+    tldr: "This blood test counts cells meeting its tumour-cell identification rules. The count has defined prognostic uses; whether changing treatment from it helps needs evidence for the particular strategy.",
     summary: "What it measures. CellSearch pulls circulating tumour cells out of 7.5 millilitres of blood with magnetic beads coated in an antibody to EpCAM, stains them for cytokeratin and a nuclear dye, excludes white cells with CD45, and counts the cells that pass. In metastatic breast cancer five or more cells, and in metastatic prostate and colorectal cancer five or three, mark an unfavourable group.\n\nEvidence. The 2004 New England Journal of Medicine study in metastatic breast cancer showed that women with five or more cells before starting a new treatment had far shorter progression-free and overall survival, and the FDA cleared the system the same year, then for prostate and colorectal cancer in 2008. The count also tracks response: a fall below the threshold after one cycle is a good sign. The disappointment was SWOG S0500, which switched chemotherapy early in women whose count stayed high and found no survival gain, so the count is prognostic rather than a guide to which drug to use. In hormone receptor positive breast cancer the French STIC CTC trial used the count to choose between endocrine therapy and chemotherapy and found the strategy non-inferior to the physician's choice.\n\nWho should have it and what changes. Guidelines do not recommend routine CellSearch counts because no decision has been shown to improve outcomes from them, so use is mainly in trials and in centres studying circulating cells, where the captured cells can also be stained for HER2, androgen receptor variants or PD-L1. The test is available through Menarini Silicon Biosystems and reference laboratories at a cost similar to a specialised blood test. Circulating tumour DNA has taken over most of the clinical questions the count was meant to answer.",
     principle: "Immunomagnetic enrichment of EpCAM-positive cells from 7.5 mL of blood, fluorescent staining for cytokeratin, DAPI and CD45, and semi-automated imaging to count cytokeratin-positive, CD45-negative nucleated cells.",
     strengths: ["Regulator-cleared with standardised thresholds", "Prognostic in three metastatic cancers and repeatable from blood", "Captured cells can be stained or sequenced"],
     limitations: ["Misses cells that have lost EpCAM, including mesenchymal-like cells", "Switching therapy on the count did not improve survival", "Largely superseded by circulating tumour DNA for treatment questions"],
     cancers: ["breast-cancer", "breast-hr-positive", "prostate", "colorectal", "metastatic-cancer"], terms: ["ctdna", "ar-v7"],
     technologies: ["ctc-capture", "liquid-biopsy", "parsortix-ctc-harvest"], companies: ["menarini-silicon-biosystems"],
-    links: [{ label: "New England Journal of Medicine 2004: Circulating tumor cells, disease progression, and survival in metastatic breast cancer", url: "https://doi.org/10.1056/NEJMoa040766" }, { label: "CellSearch system (Menarini Silicon Biosystems)", url: "https://www.cellsearchctc.com" }] },
+    links: [
+  {
+    "label": "New England Journal of Medicine 2004: Circulating tumor cells, disease progression, and survival in metastatic breast cancer",
+    "url": "https://doi.org/10.1056/NEJMoa040766"
+  },
+  {
+    "label": "CellSearch system (Menarini Silicon Biosystems)",
+    "url": "https://www.cellsearchctc.com"
+  },
+  {
+    "label": "Circulating Tumor Cells and Response to Chemotherapy in Metastatic Breast Cancer: SWOG S0500",
+    "url": "https://doi.org/10.1200/JCO.2014.56.2561"
+  },
+  {
+    "label": "FDA: CellSearch K031588 corrective classification letter (2004)",
+    "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf3/K031588.pdf"
+  }
+], notes: [
+  "The cut-off belongs to its setting: 5 or more cells per 7.5 mL was the prognostic split in the 2004 metastatic breast-cancer study of 177 people, where in the training set baseline counts at or above it went with a median progression-free survival of 2.7 months against 7.0 (Cristofanilli 2004). It is not the minimum definition of a circulating tumour cell and not a universal decision threshold. A zero is a count of cells recovered and classified in one finite draw, not proof that no tumour cell circulates.",
+  "Counts have not guided treatment in the randomised test: SWOG S0500 randomised 123 of 595 evaluable patients with persistently raised counts to continue or change chemotherapy, and median overall survival was 10.7 and 12.5 months (P = .98) (Smerage 2014). Median overall survival was 35, 23 and 13 months for the groups never raised, raised then cleared, and persistently raised, which shows the count is prognostic and does not show that acting on it helps.",
+  "Historical US regulatory scope: the September 29, 2004 corrective letter for K031588 specifies enumeration of epithelial circulating tumour cells that are CD45-negative, EpCAM-positive and cytokeratin 8, 18 and/or 19-positive in whole blood. In metastatic breast cancer, at least 5 per 7.5 mL was associated with shorter progression-free and overall survival. This was an adjunctive monitoring and prognostic indication, not a universal cell-definition threshold or evidence that choosing treatment from that count improves survival. The corrective-letter date is distinct from the initial classification decision."
+], },
 
   { id: "parsortix-ctc-harvest", kind: "technology", name: "Parsortix label-free circulating tumour cell harvest", status: "approved", since: 2022, asOf, sections: ["diagnostics"],
     aka: ["Parsortix", "Parsortix PC1", "microfluidic CTC capture", "size-based CTC enrichment"],
@@ -96,7 +117,7 @@ export const diagnosticsTechnologies2: TechnologyInput[] = [
     limitations: ["Clearance covers harvest only; clinical claims need separate validation", "Low cell numbers in early-stage disease", "Research and trial use rather than routine care"],
     cancers: ["breast-cancer", "prostate", "ovarian", "nsclc"], terms: ["ar-v7"], targets: ["her2"],
     technologies: ["ctc-capture", "liquid-biopsy", "cellsearch-ctc-count", "functional-drug-testing"], companies: ["angle-plc"],
-    links: [{ label: "ANGLE plc: Parsortix system", url: "https://angleplc.com" }] },
+    links: [{ label: "ANGLE plc: Parsortix system", url: "https://angleplc.com" }], notes: ["Interpretation rule, from the capture principle: the cassette holds cells by size and stiffness, so a cell that is small or deformable like a blood cell can pass through, and capture independent of a surface marker is not capture independent of bias. A harvested set describes the cells this method retained and not every tumour cell in the draw, and free DNA fragments in the same blood are a separate analyte that a cell harvest does not measure. Downstream protein, RNA or DNA work on harvested cells is a further assay with its own sample needs and validation."], },
 
   // ---- Functional testing beyond organoids ---------------------------------------------------------------------
   { id: "functional-precision-medicine-haematology", kind: "technology", name: "Ex vivo drug sensitivity screening in blood cancers (EXALT)", status: "phase-2", since: 2022, asOf: "2026-11-10", sections: ["diagnostics", "drug-discovery"],

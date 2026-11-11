@@ -7,6 +7,7 @@ import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { mouthCareDuringCancerTreatment } from "./mouth-care-during-cancer-treatment";
 import { opioidSwitchingAndConversion } from "./opioid-switching-and-conversion";
 import { palliativeSedation } from "./palliative-sedation-for-refractory-suffering";
+import { routinePreoperativeTests } from "./routine-preoperative-tests";
 import { strongOpioidsForCancerPain } from "./strong-opioids-for-cancer-pain";
 import { surgicalSiteInfectionPrevention } from "./surgical-site-infection-prevention";
 import { vteProphylaxisAfterCancerSurgery } from "./vte-prophylaxis-after-cancer-surgery";
@@ -24,6 +25,7 @@ export const protocols: ProtocolInput[] = [
   mouthCareDuringCancerTreatment,
   opioidSwitchingAndConversion,
   palliativeSedation,
+  routinePreoperativeTests,
   strongOpioidsForCancerPain,
   surgicalSiteInfectionPrevention,
   vteProphylaxisAfterCancerSurgery,

@@ -1000,3 +1000,7 @@ The items the link-sense and company-products audits left for judgement, each de
 - Anyone can report an error via a GitHub issue or pull request.
 - A correction entry names the entity, states precisely what was wrong, says how it was found (reader report, automated audit, fact-check job, congress update, reviewer), and links the fixing commit.
 - The automated [audit](/audit/) and weekly registry fact-check surface candidates; only confirmed errors are logged here.
+
+## Surface-targeting evidence and labels, 11 November 2026
+
+The [surface-targeting correction record](research/education-coverage-2026-11-08/surface-targeting-2026-11-11/CORRECTIONS.md) qualifies target/dependence, processing, PK and target-ranking claims. It corrects the SG human-serum release value against the 2020 notice, IDeate-Lung02 outcome hierarchy and the displayed tarlatamab cycle-1 schedule/monitoring. Source-specific assays, cohorts and model results replace universal safety, resistance and superiority assertions. All prior notes and source links remain in order; broader catalogue and mechanism-template gaps remain explicit.

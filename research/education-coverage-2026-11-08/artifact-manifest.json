@@ -1,10 +1,10 @@
 {
   "algorithm": "sha256",
-  "scope": "All audit artifacts except this self-referential manifest. Raw source bodies, rendered reviews and local capture paths stay private.",
+  "scope": "Every audit artifact below this directory except this manifest; raw source bodies and review media remain private.",
   "files": [
     {
       "path": "README.md",
-      "sha256": "8463a3a35548bffb0c0f46fde580f74701e158b12ad335682b6774c81ab578bd"
+      "sha256": "a8af5eaa9cb109b342edd1cbbdaaa76f29a75eb84e003f53d99b4cee56c98545"
     },
     {
       "path": "access-completion-2026-11-09/capture-manifest.json",
@@ -172,7 +172,7 @@
     },
     {
       "path": "adjacent-concepts.json",
-      "sha256": "cb520853b6a85b3fe5f454c971bd09da7311c6ff5fcf48ba97d10f97e1b72f1e"
+      "sha256": "042e3ff10ea88619de8e15619a976080141ebb458fb386238b2de5db950bbca2"
     },
     {
       "path": "antigen-antibodies-2026-11-09/README.md",
@@ -680,7 +680,7 @@
     },
     {
       "path": "candidates.json",
-      "sha256": "d767d6fb211dec7fb9f7b6e0351ebd79b95204077bd62b218b9fa16c63d225ce"
+      "sha256": "bbd1ff43537a8ef16500cd7ef91d05038609e345e8fec6973f40a9accc2d4c87"
     },
     {
       "path": "cell-control-primary/capture-manifest.json",
@@ -1352,7 +1352,7 @@
     },
     {
       "path": "ledger.json",
-      "sha256": "eb6289791228cbb91a974d7d06605397ba62d75a51aa3fd926d1425259c6242f"
+      "sha256": "c1dbbd99af4206dd33e5895b05bca59af72c95ddcf49301e527c84b6d129c155"
     },
     {
       "path": "literature-dispositions.json",
@@ -1572,11 +1572,11 @@
     },
     {
       "path": "open-dependencies.json",
-      "sha256": "007747bde1e885de0115ab4eea09b5353bcc837eccbd71ec0594cf576bb9a322"
+      "sha256": "0a415fef3060cc2847495a2622a93f425e46fc88885aade480f4f953f9da5ee7"
     },
     {
       "path": "open-items.json",
-      "sha256": "b5214e488a4749fe50feeb3ca7c3d672e80892c4104d173e217f62bbada4bd5a"
+      "sha256": "f2c39fa6b46a8b544062a386dca6957509bd4fce89017bd8d8ca7809afad88a9"
     },
     {
       "path": "open-source-assets.json",
@@ -1801,6 +1801,14 @@
     {
       "path": "pending/proposal-summary-consumers.json",
       "sha256": "c0f17cc9b16eab17ead017800acda645e2e69f1218a70016431f2cfc528101e3"
+    },
+    {
+      "path": "pending/proposal-surface-targeting-root.json",
+      "sha256": "6fa695415af564250404696bdae4cdf287f573e37336782169bee5dd8bfda96f"
+    },
+    {
+      "path": "pending/proposal-surface-targeting-summary-consumers.json",
+      "sha256": "1925e6c3b6e6f3844106dbc06c3ceac8e47192b6f4f7713f1085cf13e8940bfe"
     },
     {
       "path": "pending/proposal-tcell-summary-consumers.json",
@@ -2164,11 +2172,11 @@
     },
     {
       "path": "source-phases/c9689645/README.md",
-      "sha256": "f3cd79990a9fca84d8e04c8183fd4a76601e9a2bb6f6c85a5d7f6fa251020fe3"
+      "sha256": "a437b2141475a82af13b5393457f94cfb03c4d15b97374e795629d98d6cf83f0"
     },
     {
       "path": "source-phases/c9689645/candidates.json",
-      "sha256": "bd20d5357f38bb2da9ffdf81fbaa06e21f6268e745ff8d574a9b31ac7be17e78"
+      "sha256": "4a0c832ee8a78d37cf49da38e84f37b97562d881560aed64b089e991b214a6c7"
     },
     {
       "path": "source-phases/c9689645/capture-manifest.json",
@@ -2184,7 +2192,7 @@
     },
     {
       "path": "source-phases/c9689645/ledger.json",
-      "sha256": "26c0ea82ccb72ce3ea408b4a9b7d6c8d3c954421293a87bc6fcf0744d296099e"
+      "sha256": "925608fd0e42c355be4560277f273746c19b788cda7642e58a07129b3c2a0324"
     },
     {
       "path": "source-phases/c9689645/open-dependencies.json",
@@ -2192,7 +2200,7 @@
     },
     {
       "path": "source-phases/c9689645/open-items.json",
-      "sha256": "89f3c818b5a5a3d5726590ed822f2540f2bdc5bd9af585c22df2cf66936f1f8b"
+      "sha256": "8d64b3f315f9533e4a677fc13e65df47289c909efad347205a024a027088e32e"
     },
     {
       "path": "source-phases/c9689645/open-source-assets.json",
@@ -2529,6 +2537,66 @@
     {
       "path": "support-assets-20-2026-11-10/source-reading.json",
       "sha256": "114a1441bdf794bb784b99d2998cefc30ee487684d6b994f94710a9c33cd84c3"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/CORRECTIONS.md",
+      "sha256": "9919b8cf217bc6dca7d3ec24eeb28334cbd3e79fb78e952e213a0e176c5fa29a"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/README.md",
+      "sha256": "3350d82f9b5fab24f539f45ef436712fd53ff82d2c3cc68ebd5aeb0e9617a158"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/adjacent-queue.json",
+      "sha256": "0871c928b980d5f1a5e5774cebfeac734d036ed16bb2d615f0ee4ee74cd8501a"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/aggregate-census.json",
+      "sha256": "6f464fed5175968fae8507dcb43bb45a0c41f48107b29b40be00d3ef60aac1a6"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/artifact-review.json",
+      "sha256": "12028280a3a93faa5c56ca6307221d5d7274ec4781b4a4296722c3815efa3171"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/batch-summary.json",
+      "sha256": "ced4921b03dc51f3ca0f849af24b4870bd81badc05d2a118179fe1b7023dedeb"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/coverage-proofs.json",
+      "sha256": "57af401441e1cf71c943559b06ef51db2a6ded4c2eddf63b5e4a4a27f5206c75"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/learning-requirements.json",
+      "sha256": "2e0d6a70745d11740c3b38c07d0c1125c6574001ded46870f0b7f5999ddf10c1"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/primary-sources.json",
+      "sha256": "3c93e1e542b31c0f083a0200cfe7535000a3ded6c5a15846139e979adae05432"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/record-changes.json",
+      "sha256": "9d5e0edf8ad538f41396234772b773f563d6e2fb570a770a93bad9320e131aae"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/remaining-gaps.json",
+      "sha256": "17cba8dc2eda61e701c7d7dcb9efe9969fe9e4f8d0c7b9eba1a5df7a4ea76396"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/review-findings.json",
+      "sha256": "11c796034b9a50341feda757db556d2ae1ae53adb0b41c82b15a4c80e6ee96f5"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/source-reading.json",
+      "sha256": "563db56ca5f4a81b2ddec23194040db03f7816fe534f9863963be8ff7541b5db"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/validation.json",
+      "sha256": "81a824009f2dfab5e14983ceb952827805cfa2fa7f1cb216d60a4ff31a2b3588"
+    },
+    {
+      "path": "surface-targeting-2026-11-11/zero-change-replay.json",
+      "sha256": "320ad2fbd038825ed88bd7744685c800e168bb4bf7e8d205cb76ae23df93ae11"
     },
     {
       "path": "tcells-2026-11-09/README.md",

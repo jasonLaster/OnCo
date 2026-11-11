@@ -114,6 +114,7 @@ import { precisionRoadmap } from "./spikes/precision-roadmap";
 import { protocolUpgradesRtSurgery } from "./spikes/protocol-upgrades-rt-surgery";
 import { protocolUpgradesCare } from "./spikes/protocol-upgrades-care";
 import { protocolUpgradesAdministration } from "./spikes/protocol-upgrades-administration";
+import { protocolUpgradesPharmacyAccess } from "./spikes/protocol-upgrades-pharmacy-access";
 import { rejuvenationMeasurement } from "./spikes/rejuvenation-measurement";
 import { tests } from "./tests";
 import { testsCdxDevices } from "./tests-cdx-devices";
@@ -401,6 +402,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...protocolUpgradesRtSurgery,
   ...protocolUpgradesCare,
   ...protocolUpgradesAdministration,
+  ...protocolUpgradesPharmacyAccess,
   ...rejuvenationMeasurement,
   ...tests,
   ...testsCdxDevices,

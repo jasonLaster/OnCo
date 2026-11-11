@@ -178,7 +178,7 @@ export const midlineCathetersForAnticancerTherapy = protocol({
   drugs: ["fluorouracil"],
   technologies: ["infusion-devices-vascular-access", "catheter-securement-devices"],
   related: ["peripheral-cannula-for-anticancer-therapy", "venous-access-device-selection-for-anticancer-therapy", "central-venous-catheter-insertion-for-anticancer-therapy"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-midline-vesicant-safety-study"],
   gaps: [
     "Whether vesicant or irritant chemotherapy may be given through a midline is not answered by any source read; the INS Standards (2024), which address infusate limits for midlines, and MAGIC-ONC's full ratings could not be read. The Japanese extravasation guideline (2024) cites a case report of oxaliplatin extravasation from a midline.",
     "OnCo has no technology record for midline catheters; this protocol links the general vascular access record.",

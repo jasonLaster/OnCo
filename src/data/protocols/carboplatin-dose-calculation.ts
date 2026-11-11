@@ -223,7 +223,7 @@ export const carboplatinDoseCalculation = protocol({
   technologies: ["carboplatin-calvert-dosing"],
   terms: ["pharmacokinetics"],
   related: ["paper-calvert-j-clin-oncol", "sact-prescribing-and-pharmacy-verification"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-carboplatin-gfr-estimate-outcome-study"],
   gaps: [
     "No ESMO, ASCO or NICE guideline on carboplatin dose calculation exists to compare with ADDIKD; ADDIKD is a consensus (its carboplatin recommendations rest on clinical consensus), and its uptake outside Australia is not yet known.",
     "Many trial protocols cap the GFR entered into the formula; the NCI CTEP letter that is the usual source could not be read, so no cap figure is given here. ADDIKD handles high estimates differently, asking for measured GFR when eGFR is above 125 ml/min/1.73 m2.",

@@ -129,7 +129,7 @@ export const communityCareOfVascularAccessDevices = protocol({
       accessed: "2026-11-11",
     },
   ],
-  technologies: ["picc-lines", "implanted-ports", "catheter-securement-devices"],
+  technologies: ["picc-lines", "implanted-ports"],
   terms: ["central-venous-access"],
   related: ["picc-and-tunnelled-line-care", "implanted-port-access-and-care", "blood-sampling-from-a-central-line", "central-line-occlusion-management"],
   upgrades: [],

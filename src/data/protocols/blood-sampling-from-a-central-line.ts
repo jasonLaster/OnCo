@@ -171,7 +171,7 @@ export const bloodSamplingFromACentralLine = protocol({
   technologies: ["picc-lines", "implanted-ports", "needleless-connector-disinfecting-caps"],
   terms: ["central-venous-access"],
   related: ["suspected-central-line-infection", "picc-and-tunnelled-line-care", "implanted-port-access-and-care"],
-  upgrades: [],
+  upgrades: ["idea-upgrade-central-line-discard-volume-in-cancer-outpatients"],
   gaps: [
     "No guideline that could be read sets a discard volume, a discard method (discard, push-pull mixing or reinfusion) or the order of tubes when sampling from a central line; the INS Standards (2024), which do, were not reachable.",
     "Whether blood for cultures should be drawn with or without a discard is not stated in any source read.",

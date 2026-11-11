@@ -1,4 +1,6 @@
 import type { ProtocolInput } from "@/lib/schema";
+import { anticancerDrugInteractionReview } from "./anticancer-drug-interaction-review";
+import { bodySizeBasedDoseCalculation } from "./body-size-based-dose-calculation";
 import { cancerAssociatedVteTreatment } from "./cancer-associated-vte-treatment";
 import { carboplatinDoseCalculation } from "./carboplatin-dose-calculation";
 import { catheterRelatedThrombosisInCancer } from "./catheter-related-thrombosis-in-cancer";
@@ -9,6 +11,7 @@ import { hazardousDrugHandlingInClinicalAreas } from "./hazardous-drug-handling-
 import { implantedPortAccessAndCare } from "./implanted-port-access-and-care";
 import { infusionReactionManagement } from "./infusion-reaction-management";
 import { intrathecalChemotherapyAndVincaAlkaloidSafety } from "./intrathecal-chemotherapy-and-vinca-alkaloid-safety";
+import { medicinesReconciliationInCancerCare } from "./medicines-reconciliation-in-cancer-care";
 import { oralAnticancerMedicinesAtHome } from "./oral-anticancer-medicines-at-home";
 import { piccAndTunnelledLineCare } from "./picc-and-tunnelled-line-care";
 import { premedicationBeforeReactionProneAnticancerDrugs } from "./premedication-before-reaction-prone-anticancer-drugs";
@@ -23,6 +26,8 @@ import { venousAccessDeviceSelectionForAnticancerTherapy } from "./venous-access
  * round resolves by keeping both sides. Rules in docs/PROTOCOLS.md.
  */
 export const protocols: ProtocolInput[] = [
+  anticancerDrugInteractionReview,
+  bodySizeBasedDoseCalculation,
   cancerAssociatedVteTreatment,
   carboplatinDoseCalculation,
   catheterRelatedThrombosisInCancer,
@@ -33,6 +38,7 @@ export const protocols: ProtocolInput[] = [
   implantedPortAccessAndCare,
   infusionReactionManagement,
   intrathecalChemotherapyAndVincaAlkaloidSafety,
+  medicinesReconciliationInCancerCare,
   oralAnticancerMedicinesAtHome,
   piccAndTunnelledLineCare,
   premedicationBeforeReactionProneAnticancerDrugs,

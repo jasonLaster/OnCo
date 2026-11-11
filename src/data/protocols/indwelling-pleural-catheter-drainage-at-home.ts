@@ -253,7 +253,8 @@ export const indwellingPleuralCatheterDrainageAtHome = protocol({
   drugs: ["talc-sclerosant"],
   technologies: ["indwelling-pleural-catheters"],
   terms: ["malignant-pleural-effusion", "pleurodesis", "pleural-effusion"],
-  related: ["care-in-the-last-days-of-life"],
+  related: ["care-in-the-last-days-of-life", "malignant-ascites-drainage"],
+  upgrades: ["idea-upgrade-daily-pleural-catheter-drainage-offered"],
   gaps: [
     "The step-by-step drainage instructions in the BTS clinical statement (appendix 9, boxes 2 and 3) are images and were not read; the manufacturers' instructions in each pack were not read either.",
     "The full texts of the ATS/STS/STR guideline, AMPLE-2, ASAP and IPC-PLUS are paywalled; only their abstracts were read.",

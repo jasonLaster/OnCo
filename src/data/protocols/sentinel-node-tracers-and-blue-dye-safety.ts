@@ -141,7 +141,7 @@ export const sentinelNodeTracersAndBlueDyeSafety = protocol({
   technologies: ["sentinel-node", "magnetic-sentinel-node-tracer"],
   terms: ["sentinel-lymph-node-biopsy"],
   related: ["surgical-site-infection-prevention"],
-  upgrades: [],
+  upgrades: ["idea-pu-sentinel-node-without-blue-dye"],
   gaps: [
     "The EANM/SNMMI procedure guideline (2013), which sets tracer dose, injection site and imaging timing, could not be read; injection technique is therefore not given step by step here.",
     "The UK product information for Patent Blue V, the blue dye used in the UK, was not reachable; the safety steps here come from the US isosulfan blue label, a closely related triphenylmethane dye, and from NAP6.",

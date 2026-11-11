@@ -157,6 +157,22 @@ const ideas: IdeaInput[] = [
     terms: ["last-days-of-life-care"], technologies: ["syringe-drivers", "palliative-care"],
     bottlenecks: ["b-palliative"],
     links: [SILENCE_2021, NICE_NG31, KOREA_LAST_DAYS_2020] }),
+  // Added in the protocol fill round, 11 November 2026: both trial abstracts and the BTS 2023 guideline were read that day.
+  idea({ id: "idea-upgrade-daily-pleural-catheter-drainage-offered", name: "Daily drainage of an indwelling pleural catheter offered to everyone whose lung re-expands and who wants the catheter out", maturity: "early-clinical", actor: "clinic", cost: "small", horizonYears: 2,
+    sections: ["supportive-care"], tags: T("proven-unevenly-used", "moderate"),
+    tldr: "People with fluid around the lung from cancer can have a small tube left in to drain it at home. Draining it every day rather than less often doubled or more than doubled how often the fluid stopped for good, so the tube could come out, in two randomised trials, without making breathlessness worse. The British guideline now recommends it where removing the tube matters to the person; how often it is offered has not been measured.",
+    summary: "Current practice. Home drainage is often done every other day, three times a week, or when breathless. The BTS guideline for pleural disease (2023) recommends daily drainage where catheter removal is a priority (conditional), and advises that daily drainage is not needed to control breathlessness (strong, by consensus).\n\nThe trials. ASAP randomised 149 people to daily or every-other-day drainage: autopleurodesis 47% against 24% (P = 0.003), with a shorter median time to it (54 against 90 days) and no difference in adverse events, quality of life or satisfaction. AMPLE-2 randomised 87 people to daily or symptom-guided drainage: breathlessness did not differ, spontaneous pleurodesis by 6 months was 44.2% against 15.9%, and EQ-5D-5L quality of life was better with daily drainage.\n\nThe gap. How often daily drainage is offered, and to whom, has not been measured.",
+    hypothesis: "Offering daily drainage, with the trade-off explained, to everyone with an indwelling pleural catheter and an expandable lung raises the proportion whose catheter is removed within 3 months, without worse breathlessness or more infection.",
+    rationale: "Two randomised trials agree, the guideline recommends it conditionally, and the cost is more drainage bottles and nursing or carer time. The choice belongs to the patient, so the change is in what is offered.",
+    test: "An audit of drainage regimens offered and chosen across pleural services before and after a standard decision aid, with catheter removal at 3 months, infection and patient-reported breathlessness as outcomes.",
+    technologies: ["indwelling-pleural-catheters"], terms: ["pleural-effusion"],
+    bottlenecks: ["b-palliative", "b-knowledge-diffusion"],
+    related: ["indwelling-pleural-catheter-drainage-at-home"],
+    links: [
+      doi("Wahidi et al., Randomized Trial of Pleural Fluid Drainage Frequency in Patients with Malignant Pleural Effusions: the ASAP trial (Am J Respir Crit Care Med 2017)", "10.1164/rccm.201607-1404OC"),
+      doi("Muruganandan et al., Aggressive versus symptom-guided drainage of malignant pleural effusion via indwelling pleural catheters (AMPLE-2): an open-label randomised trial (Lancet Respir Med 2018)", "10.1016/S2213-2600(18)30288-1"),
+      doi("Roberts et al., British Thoracic Society Guideline for pleural disease (Thorax 2023)", "10.1136/thorax-2022-219784"),
+    ] }),
 ];
 
 export const protocolUpgradesCare: EntityInput[] = [...ideas];

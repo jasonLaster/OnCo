@@ -1398,7 +1398,6 @@ export const tldr_pt: Record<string, string> = {
   "ph-positive-all": "ALL Ph-positiva é a leucemia linfoblástica aguda que carrega o cromossomo Filadélfia. Já foi o pior tipo e hoje costuma ser o mais bem controlado, graças aos TKIs e ao blinatumomab.",
   phergain: "Usar um PET precoce para identificar as pacientes que respondem permitiu curar um terço das mulheres com câncer de mama HER2-positivo sem nenhuma quimioterapia.",
   "photobiomodulation-mucositis": "Aplicar luz vermelha ou infravermelha próxima de baixa potência no interior da boca antes e durante o tratamento previne úlceras graves na boca em pessoas que fazem radioterapia de cabeça e pescoço ou quimioterapia em altas doses para transplante. As diretrizes de mucosite recomendam a técnica, embora poucos centros ainda tenham o equipamento.",
-  placebo: "Um tratamento inativo de aparência idêntica dado ao grupo de comparação em um ensaio, para que nem pacientes nem médicos saibam quem está recebendo o medicamento real. Nos ensaios de câncer, ele é acrescentado ao tratamento padrão, nunca dado em seu lugar.",
   "platinum-etoposide": "Platina mais etoposídeo tem sido a base da quimioterapia do câncer de pulmão de pequenas células por mais de 40 anos, e agora é administrada com imunoterapia.",
   "point-of-care-cell-manufacturing": "Fabricar células CAR-T no próprio hospital ou perto dele, em vez de enviar as células para uma fábrica central e trazê-las de volta.",
   polarix: "O ensaio que melhorou o R-CHOP pela primeira vez em vinte anos, trocando a vincristina por um ADC.",

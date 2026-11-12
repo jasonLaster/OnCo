@@ -1398,7 +1398,6 @@ export const tldr_zh: Record<string, string> = {
   "ph-positive-all": "Ph阳性ALL是携带费城染色体的急性淋巴细胞白血病。它曾经是最凶险的一类，如今由于TKI和blinatumomab，往往成为控制得最好的一类。",
   phergain: "利用早期PET扫描识别应答者，使三分之一的HER2阳性乳腺癌女性无需任何化疗即获治愈。",
   "photobiomodulation-mucositis": "在治疗前和治疗期间用低功率红光或近红外光照射口腔内部，可预防接受头颈部放疗或移植前大剂量化疗者出现严重口腔溃疡。黏膜炎指南推荐这一方法，但目前拥有相关设备的中心还很少。",
-  placebo: "在试验中给对照组使用的一种外观相同的无效治疗，使患者和医生都无法分辨谁在使用真正的药物。在癌症试验中，它是在标准治疗基础上加用的，绝不会取代标准治疗。",
   "platinum-etoposide": "铂类联合etoposide作为小细胞肺癌化疗的骨干方案已超过40年，现在与免疫治疗联合使用。",
   "point-of-care-cell-manufacturing": "在医院内或医院附近制造CAR-T细胞，而不是把细胞运到中央工厂再运回来。",
   polarix: "这项试验通过用一种ADC替换vincristine，二十年来首次改进了R-CHOP方案。",

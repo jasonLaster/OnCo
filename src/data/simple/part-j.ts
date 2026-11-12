@@ -257,7 +257,7 @@ export const simpleJ: Record<string, string> = {
   "clinical-trial": "A clinical trial is a research study testing a treatment in volunteers under strict rules to learn whether it is safe and whether it works.",
   "trial-phases": "Trial phases describe the questions being studied, such as dose, safety and treatment comparison. A phase number does not promise benefit or tell you how treatment is assigned.",
   "randomised-trial": "Chance assigns people to different treatment groups. This helps make a fair comparison, but does not guarantee identical groups or complete follow-up.",
-  "placebo": "A placebo is an inactive look-alike given to the comparison group so nobody can tell who is on the real drug, always added on top of standard treatment.",
+  "placebo": "A placebo is an inactive comparison treatment. A cancer trial may give standard care plus a placebo or use another justified design. Check what each group receives in the study plan and consent form.",
   "blinding": "A blinded trial keeps patients, and often doctors too, from knowing who is on which treatment, so hopes and expectations cannot colour the results.",
   "endpoint": "An endpoint is the specific outcome a trial is designed to measure, fixed in advance, such as how long before the cancer grows.",
   "surrogate-endpoint": "A surrogate endpoint is a quicker, easier measurement standing in for what really matters, such as tumour shrinkage standing in for living longer.",

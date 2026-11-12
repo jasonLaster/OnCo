@@ -1,5 +1,16 @@
 # Corrections
 
+### Experimental-treatment access and planning, 11 November 2026
+
+The [access-guide assessment](research/education-coverage-2026-11-08/access-guides-2026-11-11/README.md) records the separate source versions, exact fields and reading limits. Changes are committed in [d49a0f58a](https://github.com/jasonLaster/OnCo/commit/d49a0f58aa230c53a5be44c3025a1ce2adf918d5), as unmerged draft contributions.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Placebo](/terms/placebo/) | The lead required every cancer-trial placebo to accompany standard treatment, while the summary ruled out blinding whenever adverse effects reveal treatment | Complete text of [FDA's August 2019 cancer-trial placebo and blinding guidance](https://www.fda.gov/media/130326/download), checked with NCI's trial explanation | Retains selected justified placebo-only settings and standard-care add-on designs; describes possible loss of blinding and qualified unblinding recommendations; corrects Simple and withdraws eight stale unreviewed machine summaries |
+| 2026-11-11 | [Expanded access](/terms/expanded-access/) | A retained note made prospective IRB review an absolute rule for every subsequent institutional use | [FDA's April 2026 expanded-access guidance](https://www.fda.gov/media/162793/download), Q11 | States the normal prospective-review rule and FDA's qualified discretion for subsequent emergency use when prior review is infeasible, with the five-working-day reporting requirement |
+
+The FDA submitted-request fraction is not used to rank supplier agreement as the usual bottleneck. That source assertion remains explicitly partial and unadopted. Readiness questions and fictional specimen arithmetic supply no individual eligibility, treatment date, predicted yield or combination-benefit claim. Older catalogue assertions outside the selected teaching retain their earlier source scope.
+
 ### Introductory labels, recognition and evidence, 11 November 2026
 
 | Date | Entity | What was wrong | How found | Fix |

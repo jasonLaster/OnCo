@@ -486,6 +486,16 @@
       "version": "proposal-upstream-metadata-2026-11-12-root",
       "state": "Actual committed registered-root metadata in unmerged draft #375; no new curriculum, science, main/live or approval credit",
       "recordSnapshotSha256": "897a6856e6df8885eb3be379676e3e3df1b535b11d8d41e445f6dbd9b8b97b4e"
+    },
+    {
+      "version": "proposal-spatial-measurement-root",
+      "state": "Actual committed registered-root fields in unmerged draft #375; no main/live or independent approval",
+      "recordSnapshotSha256": "de6c6c6c88b00de129f19faedc761d7836f8ab1ae58444f1d90c130737b501bd"
+    },
+    {
+      "version": "proposal-spatial-measurement-summary-consumers",
+      "state": "Actual lazy summary tables and cache selectors; missing text is English fallback, not language review",
+      "recordSnapshotSha256": "83c76715168dd16271d9b72e668ddbb072e65432ddee4bf21f7e5950830b603b"
     }
   ],
   "sourcePhases": [],
@@ -514,13 +524,13 @@
     "navigation": 7,
     "navigationReviewed": 5,
     "navigationWithTeachingContent": 2,
-    "semanticallyReviewed": 478,
-    "implementedCoverage": 468,
+    "semanticallyReviewed": 480,
+    "implementedCoverage": 470,
     "mainCoverage": 0,
-    "unresolvedContentItems": 77,
-    "unresolvedSources": 77,
-    "adjacentConcepts": 65,
-    "unresolvedAdjacentConcepts": 41,
+    "unresolvedContentItems": 75,
+    "unresolvedSources": 75,
+    "adjacentConcepts": 66,
+    "unresolvedAdjacentConcepts": 42,
     "openSchemaGaps": 6,
     "unreviewedLiteratureOccurrences": 0,
     "readyForFinalReaudit": false
@@ -95686,8 +95696,668 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator full later-body and source-first requirement review; targeted primary reading and complete Mermaid theme views; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-12",
+        "rationale": "The two assigned bodies exist only in the later pinned census. Both were read fully before owner inspection; 24 section signatures reproduce. The immutable 81-row source-first inventory contains 72 substantive obligations and nine non-credit or excluded-context rows. Current prose preserves method-specific inputs, historical counts, directed metric definitions, specimen and region limits, fictional arithmetic, validation tiers and all practice answers. Six source assessments are explicitly qualified: universal segmentation, the centre-inclusive neighbourhood window, biological-size versus hypothetical geometry, global approval assertions, cross-method validation ranking and cell-level PD-1/PD-L1 proximity. The personal-case section is excluded. No original source is closed by thematic overlap.",
+        "sectionHashes": [
+          "5996d1cf77e9ee3167280d5cc9480c2ea9c7fdcbbb824b3a536232f4d5b78bc0",
+          "38f0386bcfa0b8775df8f7478599afc87226b39e0b05f86eb86d714574e3a5e5",
+          "2b89b1098d5f53bc72ab54ed6466d1eba8985562a6114d5675154d12785ea412",
+          "5c759ece2967427d1ab23147181197819e2ef46d76c4c5e548c1ac538a64945a",
+          "2ff46842d1bb9762e75026b054104fc3ba4401998a5d01ac1c05e47d9d2b7b68",
+          "26a9dbe3d2d97c25e4d57464641b2aafe8208093214ce4734855f0bb577840b8",
+          "f814f8eac5325f0df7f508c0a776bdbca7db0d8254b780e1f35e18ba52598f70",
+          "43a0f047c148d395d6ce37008bb7f18c7f263b9b09cd5a0a38ea1a76ea6d1c2f",
+          "f91d7da809f991d0fb1e67c44a79334094c0d7b6d70383cc420b64515b9b45b7",
+          "25cb1c31e3c20334fe44b6dacf83f7050e72ef480161a9eabc8d3e0b9bf76ead",
+          "4624a64169ff120dfbca628a84ecd47304461961356f5098b5d00ebbc06d0cf8",
+          "d34f3e2ad1760806baed30913bba7bacf7eabdb3820c6d4036f6a64d990f7275"
+        ],
+        "points": [
+          {
+            "id": "spatial-measurement-M-001",
+            "requirement": "Explain how spatial methods retain tissue location while protein and RNA assays measure different molecules.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The new opening note separates the detected molecular layer from the sampled area and keeps the resulting map local to its preparation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-002",
+            "requirement": "Keep one thin tissue section distinct from the whole tumour and from loss of spatial context in a ground-up sample.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The opening note limits the map to sampled material, and the retained assay card explicitly rejects whole-tumour representation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "265fd2c37d6df7b19d7f97db7d92bca714ab82ee42074f6e53317ab0b41d8f19",
+                "supportingExcerpt": "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+                "passageSha256": "0793730282f3783a41de345e2131a0ec8c41757ab306178ca0a5d05bfcf756d0",
+                "explanation": "The opening note limits the map to sampled material, and the retained assay card explicitly rejects whole-tumour representation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-003",
+            "requirement": "Assess the claim that every spatial method requires cell segmentation; distinguish cell-assigned results from pooled regions or capture spots.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Cell-level interpretation requires justified cell boundaries and cell-type calls. It is not a prerequisite for every spatial output: pooled regions and capture spots can be analysed without assigning every signal to a cell. Tissue-section examples also do not define every possible spatial experiment. Chen and colleagues demonstrated MERFISH imaging of 100 to 1,000 selected RNA species as individual molecules in cultured human fibroblasts. Molecule localisation and assignment to cells remain distinct steps. Validate each antibody or probe, registration and relevant cell assignments for the actual preparation; spatial resolution and gene or protein coverage remain separate properties.",
+                "passageSha256": "810fe253b764a33fff61681ac90ad3ac274b96aaa9b582a6e0a6f68b8f9a5cf2",
+                "explanation": "The cell-assignment paragraph rejects a universal segmentation prerequisite while retaining segmentation for cell-level interpretation. Pooled regional counts and spots remain valid distinct outputs. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-004",
+            "requirement": "Treat the sampled tissue section as finite and account for assay use of material.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+                "passageSha256": "943f8476cf71f4049e741e70af7671fab9dca1b6f1c65516c4bd246e10aa2c04",
+                "explanation": "The fictional spare-section exercise requires budgeting finite tissue; the retained assay card distinguishes material-consuming preparation from re-analysis of existing data. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "265fd2c37d6df7b19d7f97db7d92bca714ab82ee42074f6e53317ab0b41d8f19",
+                "supportingExcerpt": "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+                "passageSha256": "0793730282f3783a41de345e2131a0ec8c41757ab306178ca0a5d05bfcf756d0",
+                "explanation": "The fictional spare-section exercise requires budgeting finite tissue; the retained assay card distinguishes material-consuming preparation from re-analysis of existing data. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-005",
+            "requirement": "Keep observed neighbours separate from evidence of biological interaction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation paragraph leaves recognition and killing unmeasured by a neighbour map. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-006",
+            "requirement": "Distinguish antibody-tagged protein detection by repeated fluorescence cycles from metal-tag detection by mass.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The molecular-choice note names fluorescent and metal antibody tags; the metal-imaging note names mass-cytometry and the cyclic fluorescence comparison. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+                "passageSha256": "4732964232e086618edcb508e38801ca43650533f2b707a4f2d2867120aa6834",
+                "explanation": "The molecular-choice note names fluorescent and metal antibody tags; the metal-imaging note names mass-cytometry and the cyclic fluorescence comparison. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-007",
+            "requirement": "Explain why a question about a drug target on particular cells needs an appropriate protein measurement and cellular assignment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The opening note asks for protein evidence on relevant cells when the question concerns a protein target; RNA is not substituted for surface localisation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-008",
+            "requirement": "Require marker-specific antibody validation and qualify panel size as a method-specific constraint.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Cell-level interpretation requires justified cell boundaries and cell-type calls. It is not a prerequisite for every spatial output: pooled regions and capture spots can be analysed without assigning every signal to a cell. Tissue-section examples also do not define every possible spatial experiment. Chen and colleagues demonstrated MERFISH imaging of 100 to 1,000 selected RNA species as individual molecules in cultured human fibroblasts. Molecule localisation and assignment to cells remain distinct steps. Validate each antibody or probe, registration and relevant cell assignments for the actual preparation; spatial resolution and gene or protein coverage remain separate properties.",
+                "passageSha256": "810fe253b764a33fff61681ac90ad3ac274b96aaa9b582a6e0a6f68b8f9a5cf2",
+                "explanation": "The cell-assignment note and retained fluorescence assay card require marker validation, controls, registration and the actual preparation rather than a universal panel-size claim. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "0bfa3fb73a6110ed2ecdf3645d2364cbb66d71dd9afd369d0aa8b7e15e3b1324",
+                "supportingExcerpt": "Assay card for multiplex immunofluorescence (a reading guide, not a score). Input and tissue cost: a compatible fixed or frozen section; staining uses material and may involve repeated processing, and the section does not preserve viable cells for a killing assay. Output and units: marker images, fluorescence intensity in assay-dependent units, cell counts, cells per square millimetre, cell fractions and defined distances in micrometres. Controls: marker-positive and marker-negative material, comparison with validated single-marker staining, channel or spectral controls, background assessment, cycle alignment and boundary overlays. Thresholds: panel-specific marker and phenotype rules locked before the intended comparison and tested for reproducibility. Failure modes: autofluorescence, overlapping signals, nonspecific antibodies, staining-order effects, tissue loss, alignment errors and incorrect cell boundaries. Cannot establish: all proteins, live-cell behaviour, antigen specificity, actual killing or universal treatment eligibility. Validation: specific to the panel, staining, imaging, analysis and intended use.",
+                "passageSha256": "9aea0b8d2f2b858168aed92fbea203f05c6aa5baa6d772bcc85c5be998cf218a",
+                "explanation": "The cell-assignment note and retained fluorescence assay card require marker validation, controls, registration and the actual preparation rather than a universal panel-size claim. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-009",
+            "requirement": "Distinguish RNA detection using probes or barcoded capture from antibody protein detection and describe broad gene panels.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "supportingExcerpt": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+                "passageSha256": "10ec0af6eb8ac07af627a38fca36765fd92fd55be68595d54c81485635c445c3",
+                "explanation": "The retained RNA summary distinguishes barcoded capture, selected probes and RNA-species detection. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-010",
+            "requirement": "Keep transcription separate from protein abundance and cell-surface localisation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The opening paragraph explicitly separates transcription, protein abundance and surface localisation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-011",
+            "requirement": "Preserve the diagram's two independent choices: molecular layer and chosen regions versus the imaged area.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The choice paragraph preserves the diagram's two axes without claiming that every protein region readout has cell resolution. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-012",
+            "requirement": "Describe digital spatial profiling as tag counts from selected tissue areas rather than a map of individual cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "supportingExcerpt": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+                "passageSha256": "10ec0af6eb8ac07af627a38fca36765fd92fd55be68595d54c81485635c445c3",
+                "explanation": "The retained RNA summary describes light-released oligonucleotide tags from operator-selected regions. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-013",
+            "requirement": "Verify Merritt's region sizes of one to about 5,000 cells and panels of 44 proteins or 1,412 genes, with method-paper scope.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "supportingExcerpt": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+                "passageSha256": "10ec0af6eb8ac07af627a38fca36765fd92fd55be68595d54c81485635c445c3",
+                "explanation": "The retained RNA summary carries Merritt's one-to-about-5,000-cell regions, 44 proteins and 1,412 genes as historical method-paper examples. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-014",
+            "requirement": "Explain pooled regional results and dependence on who selected the regions and why.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The choice paragraph states that pooled regional counts do not identify individual cells and asks who chose regions and by what rule. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-015",
+            "requirement": "Distinguish mapping the complete imaged field from assuming that the entire slide or tumour was measured.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The choice paragraph distinguishes the complete chosen field from the entire slide and describes finding borders and rare cells outside predefined compartments. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-016",
+            "requirement": "Verify Lin's example of up to 60 protein markers on formalin-fixed sections using standard microscopes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+                "passageSha256": "4732964232e086618edcb508e38801ca43650533f2b707a4f2d2867120aa6834",
+                "explanation": "The new historical-method paragraph states conventional optical microscopes, up-to-60-plex t-CyCIF and formalin-fixed paraffin-embedded preparation; the retained fluorescence summary provides the cyclic context. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "multiplex-immunofluorescence",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "21b589f38a97d2e413110edf9c2ffc4782b7b67e6b12c2a299f6c399450ca003",
+                "supportingExcerpt": "Multiplex immunofluorescence measures selected protein-marker signals in a tissue section, using one or several imaging cycles. Cyclic methods build a high-plex image of one section by repeating staining, imaging and signal removal and then registering the cycles: t-CyCIF produced up to 60-plex images of formalin-fixed specimens and showed that antigenicity changes with cycle number (Lin and colleagues, 2018), and IBEX imaged more than 65 parameters in one section by iterative staining and chemical bleaching (Radtke and colleagues, 2020). A six-institution study of a six-plex PD-1 and PD-L1 panel, imaged with a locked-down image analysis algorithm, reported average intersite concordance of cell densities of R squared 0.75 in breast carcinoma and 0.72 in non-small cell lung cancer tissue microarrays (Taube and colleagues, 2021); that is reproducibility for one specified panel and workflow, not for multiplex immunofluorescence in general. A cell phenotype is a rule-based call from the measured panel, a density needs a stated denominator, and a distance needs a stated definition (cell centre or cell boundary).",
+                "passageSha256": "2c87c35e342a90206f1b51cce4caa660a3eaa0d6c7350a00ba6b0312395faf20",
+                "explanation": "The new historical-method paragraph states conventional optical microscopes, up-to-60-plex t-CyCIF and formalin-fixed paraffin-embedded preparation; the retained fluorescence summary provides the cyclic context. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-017",
+            "requirement": "Verify Giesen's 32-protein breast-cancer imaging example, subcellular resolution and destruction of the sampled area by laser ablation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+                "passageSha256": "4732964232e086618edcb508e38801ca43650533f2b707a4f2d2867120aa6834",
+                "explanation": "The metal-imaging paragraph carries 32 proteins/modifications, breast samples, subcellular resolution and laser ablation with consumed material, at the 2014 study scope. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-018",
+            "requirement": "Verify Keren's ion-beam example of 36 proteins in 41 triple-negative breast tumours.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Keren and colleagues used multiplexed ion-beam imaging to measure 36 proteins in 41 triple-negative breast-cancer patients in 2018. Their image processing included cell segmentation, and spatial analysis distinguished immune-mixed from compartmentalised tumours. Organised border structures and compartmentalisation were linked to survival in this cohort. These observations neither establish that adjacent cells are functionally interacting nor constitute a trial selecting treatment by the pattern.",
+                "passageSha256": "fd98c256f3c9dfd9efa6ea974a1a59706eccf2dde11c711d79021f8642950c5e",
+                "explanation": "The ion-beam paragraph explicitly gives 36 proteins and 41 triple-negative breast-cancer patients in the 2018 example. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-019",
+            "requirement": "Describe Ståhl's sequencing-based transcriptome capture in human breast cancer, retaining capture-spot mixtures rather than assuming single cells.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "supportingExcerpt": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+                "passageSha256": "10ec0af6eb8ac07af627a38fca36765fd92fd55be68595d54c81485635c445c3",
+                "explanation": "The retained RNA summary describes positionally barcoded primers, the mouse-brain/human-breast original study and multicellular capture spots. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-020",
+            "requirement": "Verify Chen's 100-to-1,000-gene imaging example, individual RNA molecules and assignment to cells, with a targeted panel.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Cell-level interpretation requires justified cell boundaries and cell-type calls. It is not a prerequisite for every spatial output: pooled regions and capture spots can be analysed without assigning every signal to a cell. Tissue-section examples also do not define every possible spatial experiment. Chen and colleagues demonstrated MERFISH imaging of 100 to 1,000 selected RNA species as individual molecules in cultured human fibroblasts. Molecule localisation and assignment to cells remain distinct steps. Validate each antibody or probe, registration and relevant cell assignments for the actual preparation; spatial resolution and gene or protein coverage remain separate properties.",
+                "passageSha256": "810fe253b764a33fff61681ac90ad3ac274b96aaa9b582a6e0a6f68b8f9a5cf2",
+                "explanation": "The cell-assignment paragraph carries the 100-to-1,000 selected RNA species, individual molecules and cultured fibroblasts; the retained RNA summary separately discusses assigning molecules to cell boundaries. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "summary",
+                "fieldSha256": "bbdde53955801abdb3d9294fd9af0751ae7c67e3f1dc8e2114b6937483a289ac",
+                "supportingExcerpt": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+                "passageSha256": "10ec0af6eb8ac07af627a38fca36765fd92fd55be68595d54c81485635c445c3",
+                "explanation": "The cell-assignment paragraph carries the 100-to-1,000 selected RNA species, individual molecules and cultured fibroblasts; the retained RNA summary separately discusses assigning molecules to cell boundaries. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-021",
+            "requirement": "Keep all cited panel sizes historical and require the actual study method rather than treating them as current platform limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+                "passageSha256": "4732964232e086618edcb508e38801ca43650533f2b707a4f2d2867120aa6834",
+                "explanation": "The historical-method paragraph explicitly refuses to make its example count a present instrument ceiling. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-022",
+            "requirement": "Verify the mixed versus compartmentalised immune patterns and survival association in Keren's 41-tumour cohort without turning it into a treatment test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "imaging-mass-cytometry",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "5d3b00f049bdbf51736bbd6fc7c73eafe7a1ff4f8127911b4c5073572026798e",
+                "supportingExcerpt": "Keren and colleagues used multiplexed ion-beam imaging to measure 36 proteins in 41 triple-negative breast-cancer patients in 2018. Their image processing included cell segmentation, and spatial analysis distinguished immune-mixed from compartmentalised tumours. Organised border structures and compartmentalisation were linked to survival in this cohort. These observations neither establish that adjacent cells are functionally interacting nor constitute a trial selecting treatment by the pattern.",
+                "passageSha256": "fd98c256f3c9dfd9efa6ea974a1a59706eccf2dde11c711d79021f8642950c5e",
+                "explanation": "The ion-beam paragraph carries mixed/compartmentalised patterns and border structures associated with survival, while explicitly separating them from functional or treatment-selection proof. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-023",
+            "requirement": "Explain when broad RNA mapping supports discovery of cell states and pathways before choosing markers.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The method-choice paragraph describes broad RNA discovery before a smaller marker panel is chosen. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-024",
+            "requirement": "Choose predefined regional profiling for known compartments and mapped imaging for borders, neighbourhoods or rare-cell questions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The choice paragraph contrasts predefined-compartment profiling with imaging that can reveal borders, neighbourhoods and rare cells. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-025",
+            "requirement": "Carry the analogy's underlying distinction between measured proteins, measured transcripts, chosen samples and spatial maps without treating the analogy as biology.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The molecular-layer and sampling paragraphs carry the analogy's actual distinction in literal measurement language; no metaphor is treated as a biological mechanism. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The molecular-layer and sampling paragraphs carry the analogy's actual distinction in literal measurement language; no metaphor is treated as a biological mechanism. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-026",
+            "requirement": "Explain why regional readouts and multicellular capture spots make spatial measurement different from universal single-cell resolution.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Cell-level interpretation requires justified cell boundaries and cell-type calls. It is not a prerequisite for every spatial output: pooled regions and capture spots can be analysed without assigning every signal to a cell. Tissue-section examples also do not define every possible spatial experiment. Chen and colleagues demonstrated MERFISH imaging of 100 to 1,000 selected RNA species as individual molecules in cultured human fibroblasts. Molecule localisation and assignment to cells remain distinct steps. Validate each antibody or probe, registration and relevant cell assignments for the actual preparation; spatial resolution and gene or protein coverage remain separate properties.",
+                "passageSha256": "810fe253b764a33fff61681ac90ad3ac274b96aaa9b582a6e0a6f68b8f9a5cf2",
+                "explanation": "The assignment paragraph explicitly distinguishes pooled regions and spots from cell-level results. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-027",
+            "requirement": "Carry the fictional 40-marker versus six-marker comparison: including the relevant target can matter more than panel size.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+                "passageSha256": "943f8476cf71f4049e741e70af7671fab9dca1b6f1c65516c4bd246e10aa2c04",
+                "explanation": "The fictional panel example preserves 40 markers versus six and makes relevance to the question, rather than marker count alone, the deciding premise. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-028",
+            "requirement": "Require protein verification for a targeting question despite detected RNA.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The opening paragraph requires protein evidence despite observed transcription. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-029",
+            "requirement": "Do not infer cell interaction or functional engagement merely from spatial adjacency.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation paragraph does not turn adjacency into antigen recognition or killing. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-030",
+            "requirement": "Distinguish cited research multiplex methods from validated clinical receptor or PD-L1 immunohistochemistry without making an exhaustive regulatory claim.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "A multiplex research panel and a validated clinical receptor or PD-L1 immunohistochemistry assay have different evidence requirements. Marker count, a detailed image and a reproducible measurement do not confer treatment-selection validity. Check the exact assay, scoring rule, population and intended use rather than transferring the status of a clinical single-marker assay to a different research panel.",
+                "passageSha256": "bfb886d9505c3aaa8327c9bd1b1d46bee2d02c292cbef303cd805faeea7e6230",
+                "explanation": "The intended-use paragraph separates multiplex research panels from named clinical assay rules without claiming an exhaustive regulatory inventory. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-031",
+            "requirement": "For one spare section and a target-near-T-cells question, specify protein detection for the target, cancer cells and T cells over an appropriate imaged area.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+                "passageSha256": "943f8476cf71f4049e741e70af7671fab9dca1b6f1c65516c4bd246e10aa2c04",
+                "explanation": "The spare-section exercise names target, cancer-cell and T-cell detection, a justified imaged area, controls and cell assignments. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-032",
+            "requirement": "Explain why regional RNA would not answer which cells carry that protein in the exercise.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+                "passageSha256": "943f8476cf71f4049e741e70af7671fab9dca1b6f1c65516c4bd246e10aa2c04",
+                "explanation": "The same exercise explicitly says regional RNA alone cannot establish which cells carry that protein. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-M-033",
+            "requirement": "Answer the teach-back choice among protein, RNA and predefined regional profiling using the question, measured molecule and sampling design.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+                "passageSha256": "1b1c9d3b1c45700746e1baa595b8a1ceab24d697c7f88ad998e09c75f923b771",
+                "explanation": "The opening, choice and exercise paragraphs jointly answer all three teach-back choices with the molecule and sampling question kept distinct. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+                "passageSha256": "efb29c7f520e500cdf50972171da69fcefc76812637856dd3cefbd3971103ccf",
+                "explanation": "The opening, choice and exercise paragraphs jointly answer all three teach-back choices with the molecule and sampling question kept distinct. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "single-cell-spatial",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
+                "supportingExcerpt": "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+                "passageSha256": "943f8476cf71f4049e741e70af7671fab9dca1b6f1c65516c4bd246e10aa2c04",
+                "explanation": "The opening, choice and exercise paragraphs jointly answer all three teach-back choices with the molecule and sampling question kept distinct. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -95772,8 +96442,797 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator full later-body and source-first requirement review; targeted primary reading and complete Mermaid theme views; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-12",
+        "rationale": "The two assigned bodies exist only in the later pinned census. Both were read fully before owner inspection; 24 section signatures reproduce. The immutable 81-row source-first inventory contains 72 substantive obligations and nine non-credit or excluded-context rows. Current prose preserves method-specific inputs, historical counts, directed metric definitions, specimen and region limits, fictional arithmetic, validation tiers and all practice answers. Six source assessments are explicitly qualified: universal segmentation, the centre-inclusive neighbourhood window, biological-size versus hypothetical geometry, global approval assertions, cross-method validation ranking and cell-level PD-1/PD-L1 proximity. The personal-case section is excluded. No original source is closed by thematic overlap.",
+        "sectionHashes": [
+          "a97f2ae36599609770d942e25af327001aa7ee10211f9469095bb9b14ce61ffe",
+          "2ce7015f3cbb7d2ba80a95e396801c2e8ce7e9c88160c75edd64d2ec5f31dbee",
+          "acd8c4784ed1c609b9c00ea936b763871b142c9741f82112cc821cc3d11cd8c2",
+          "5a4ed6ed66eb6a800efd8c63abc1939760a4e9da70f27b1122f5f8a544bbc3e9",
+          "d4e1f0f01263e65f14ad9ecbd2cef2b3e0d1f3d455d556ed6903aa8e5b6dccef",
+          "97f5684faebfb12959eafbef28e74687f8a2c2f803ff55a24825c6a181744a33",
+          "911b7f1fe2053097ec73015dcdb1f24d7d7d1a4004caad51ec1ce18a1c8eb432",
+          "3e8b8a22da1902aac5210707dfd83fd61068dc942a226b7ce307690711b2a8b9",
+          "b3fb2f7c1852edaa4430e027468d6a27c2b84ad399bf6b59bb20adf2851b27c4",
+          "19e431f88d29789bb44e689d34e121e7e5e66d5bfecc7964553bba4957e32760",
+          "1303f828dae3758a06ee23df0e56c9fe2d8fc2a23f1412fdc70715cb63ea7856",
+          "355c2e7fa143ccbb2bf22c807c2f7ee6b58d4db104b606db59d0c4366043fc4d"
+        ],
+        "points": [
+          {
+            "id": "spatial-measurement-P-001",
+            "requirement": "Define spatial proximity metrics as relationships in a cell map and distinguish them from density, with a single two-dimensional section as the sampled object.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A spatial proximity analysis begins with a sampled section, estimated cell types and positions. Staining, imaging, cell segmentation and typing create that list; errors in boundaries, marker assignment or signal spillover can therefore create false neighbours. Density asks how many cells occupy a stated area, while proximity asks how one cell type is positioned relative to another. Keeping the analysis box and its tissue compartments visible is as important as reporting the final number.",
+                "passageSha256": "1b2a92de06dbcae73eed0888d12ffccfde23a88e95a24a3d83005288921879a9",
+                "explanation": "The opening paragraph separates density from proximity and the interpretation paragraph limits a section to a three-dimensional subset; this also covers the source's stadium analogy without importing it. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The opening paragraph separates density from proximity and the interpretation paragraph limits a section to a three-dimensional subset; this also covers the source's stadium analogy without importing it. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-002",
+            "requirement": "Specify cell type and x-y coordinates as inputs, with image segmentation and cell typing as sources of error.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A spatial proximity analysis begins with a sampled section, estimated cell types and positions. Staining, imaging, cell segmentation and typing create that list; errors in boundaries, marker assignment or signal spillover can therefore create false neighbours. Density asks how many cells occupy a stated area, while proximity asks how one cell type is positioned relative to another. Keeping the analysis box and its tissue compartments visible is as important as reporting the final number.",
+                "passageSha256": "1b2a92de06dbcae73eed0888d12ffccfde23a88e95a24a3d83005288921879a9",
+                "explanation": "The opening paragraph identifies section, estimated types and positions and explains where segmentation and typing errors enter. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-003",
+            "requirement": "Define compartment density with its cell-count denominator and tumour-epithelium or stromal area, for example CD8 cells per square millimetre.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A compartment density might be CD8 T cells per square millimetre of tumour epithelium or stroma. A radius count can ask how many cells of type A lie within a chosen distance of a type B cell; a population fraction also states which cells form its denominator. A nearest-neighbour analysis measures, for each cell of type A, the distance to the closest cell of type B and may summarise those distances by their median. Define whether distances use cell centres or boundaries; the same pair can have different values under these rules.",
+                "passageSha256": "4b51bbda5db8f9673dfe3e50c2f0acdf37643b8c49effd09dbd1257260daa563",
+                "explanation": "The metric paragraph states cells per square millimetre with tumour epithelium or stromal area as the denominator. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-004",
+            "requirement": "Define a radius count and fraction with the reference cell population and distance threshold stated.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A compartment density might be CD8 T cells per square millimetre of tumour epithelium or stroma. A radius count can ask how many cells of type A lie within a chosen distance of a type B cell; a population fraction also states which cells form its denominator. A nearest-neighbour analysis measures, for each cell of type A, the distance to the closest cell of type B and may summarise those distances by their median. Define whether distances use cell centres or boundaries; the same pair can have different values under these rules.",
+                "passageSha256": "4b51bbda5db8f9673dfe3e50c2f0acdf37643b8c49effd09dbd1257260daa563",
+                "explanation": "The metric paragraph defines a directed radius count and reference population, and the worked example states the counted CD8 population explicitly. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In a fictional region containing 200 CD8 T cells, 60 within 20 micrometres of a cancer cell is 30% of the CD8 cells. Moving the box two millimetres into stroma can give 15 near cancer among 300 CD8 cells, or 5%, with the same tumour, stain and radius. The counts are invented to demonstrate region dependence. They do not establish a biological difference caused by treatment or a patient cutoff.",
+                "passageSha256": "8305604247e246f60ed16f7fd1730a5f8880c268036c178d53a802d7f3560622",
+                "explanation": "The metric paragraph defines a directed radius count and reference population, and the worked example states the counted CD8 population explicitly. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-005",
+            "requirement": "Define directed nearest-neighbour distance, including a summary such as the median from each T cell to the closest cancer cell.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A compartment density might be CD8 T cells per square millimetre of tumour epithelium or stroma. A radius count can ask how many cells of type A lie within a chosen distance of a type B cell; a population fraction also states which cells form its denominator. A nearest-neighbour analysis measures, for each cell of type A, the distance to the closest cell of type B and may summarise those distances by their median. Define whether distances use cell centres or boundaries; the same pair can have different values under these rules.",
+                "passageSha256": "4b51bbda5db8f9673dfe3e50c2f0acdf37643b8c49effd09dbd1257260daa563",
+                "explanation": "The metric paragraph measures each A cell to its closest B cell and names the median as a possible summary. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-006",
+            "requirement": "Define the directed cross-type nearest-neighbour distribution G-cross across radii and distinguish a curve or its 0-to-20-micrometre area from a single fixed-radius fraction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "The directed G-cross function gives the fraction of reference cells of one type whose nearest cell of the other type lies within each radius. It is a curve over distance. Its value at 20 micrometres and its area from zero to 20 micrometres are different summaries. The fixed-radius fraction is unitless; an unnormalised area over distance has distance units, so report any normalisation. A curve, a map of local values and a clustered neighbourhood assignment also need not reduce to one number per slide. Name the actual output and aggregation rule.",
+                "passageSha256": "3e659b48cc7980b3e2f5ca0f9259c16c04a2e7dc4daaae1eeced5dbced6b8f13",
+                "explanation": "The G-cross paragraph distinguishes a directed nearest-neighbour curve, its value at 20 micrometres and an area over that range, including the effect of normalisation on units. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-007",
+            "requirement": "Verify the immune-tumour versus immune-immune contact ratio used as a mixing-score example.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Mixing scores have method-specific definitions. Keren's score divided immune-tumour neighbour interactions by immune-immune interactions in an image-derived neighbour matrix. Maley's Morisita-Horn approach instead assessed spatial overlap in the distribution of immune and cancer cells on histology images. These are not interchangeable measurements. Cellular-neighbourhood analysis groups recurring local cell-type compositions: Schürch's 2020 method used a ten-cell nearest-neighbour window including the centre cell, rather than ten additional cells, and clustered those compositions.",
+                "passageSha256": "4a1879f2eda076f89f5f1653037573a567f0a836f0e13ace531966f0f7b65b46",
+                "explanation": "The method-specific paragraph gives Keren's immune-tumour divided by immune-immune neighbour-interaction ratio. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-008",
+            "requirement": "Treat Morisita-Horn colocalisation as a separate spatial abundance metric rather than assuming all mixing scores share one definition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Mixing scores have method-specific definitions. Keren's score divided immune-tumour neighbour interactions by immune-immune interactions in an image-derived neighbour matrix. Maley's Morisita-Horn approach instead assessed spatial overlap in the distribution of immune and cancer cells on histology images. These are not interchangeable measurements. Cellular-neighbourhood analysis groups recurring local cell-type compositions: Schürch's 2020 method used a ten-cell nearest-neighbour window including the centre cell, rather than ten additional cells, and clustered those compositions.",
+                "passageSha256": "4a1879f2eda076f89f5f1653037573a567f0a836f0e13ace531966f0f7b65b46",
+                "explanation": "The same paragraph keeps Morisita-Horn spatial overlap separate from that contact-ratio definition rather than asserting a shared formula. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-009",
+            "requirement": "Explain recurring cellular neighbourhoods using the example of clustering each cell's ten nearest neighbours.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Mixing scores have method-specific definitions. Keren's score divided immune-tumour neighbour interactions by immune-immune interactions in an image-derived neighbour matrix. Maley's Morisita-Horn approach instead assessed spatial overlap in the distribution of immune and cancer cells on histology images. These are not interchangeable measurements. Cellular-neighbourhood analysis groups recurring local cell-type compositions: Schürch's 2020 method used a ten-cell nearest-neighbour window including the centre cell, rather than ten additional cells, and clustered those compositions.",
+                "passageSha256": "4a1879f2eda076f89f5f1653037573a567f0a836f0e13ace531966f0f7b65b46",
+                "explanation": "The method-specific paragraph corrects the ten-cell window to include the centre cell, as the read primary methods specify, and retains composition clustering. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-010",
+            "requirement": "Define one micrometre as one thousandth of a millimetre.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "One micrometre is one thousandth of a millimetre, so 20 micrometres is 0.020 millimetres. A distance threshold is not evidence of membrane contact. In a fictional geometry with equal circular cells seven to ten micrometres wide, centres 20 micrometres apart leave a gap of ten to 13 micrometres. This calculation does not establish a biological lymphocyte-size range. Cell dimensions, shape and the choice of centres or boundaries must be measured or specified for the actual image.",
+                "passageSha256": "43d9371b64b0b4a5ce2df86e7136a47d72b15d9e323decd3f67e10fba605d9e8",
+                "explanation": "The unit paragraph states one micrometre is one thousandth of a millimetre and converts 20 to 0.020 millimetres. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-011",
+            "requirement": "Assess the 7-to-10-micrometre lymphocyte size and the proposed two-cell-width interpretation of a 20-micrometre radius; do not equate proximity with contact.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "One micrometre is one thousandth of a millimetre, so 20 micrometres is 0.020 millimetres. A distance threshold is not evidence of membrane contact. In a fictional geometry with equal circular cells seven to ten micrometres wide, centres 20 micrometres apart leave a gap of ten to 13 micrometres. This calculation does not establish a biological lymphocyte-size range. Cell dimensions, shape and the choice of centres or boundaries must be measured or specified for the actual image.",
+                "passageSha256": "43d9371b64b0b4a5ce2df86e7136a47d72b15d9e323decd3f67e10fba605d9e8",
+                "explanation": "The range is explicitly hypothetical geometry, not verified lymphocyte morphometry. Equal circular cells seven to ten micrometres wide and centres 20 apart leave a calculated gap; the unsupported biological claim remains a named follow-up. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-012",
+            "requirement": "Preserve the processing pipeline and analyst choices, while qualifying the diagram's claim that every metric yields one number per region or slide.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A spatial proximity analysis begins with a sampled section, estimated cell types and positions. Staining, imaging, cell segmentation and typing create that list; errors in boundaries, marker assignment or signal spillover can therefore create false neighbours. Density asks how many cells occupy a stated area, while proximity asks how one cell type is positioned relative to another. Keeping the analysis box and its tissue compartments visible is as important as reporting the final number.",
+                "passageSha256": "1b2a92de06dbcae73eed0888d12ffccfde23a88e95a24a3d83005288921879a9",
+                "explanation": "The pipeline, output and reading-card paragraphs cover cell calls and analyst choices while correcting the diagram's universal single-number output. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "The directed G-cross function gives the fraction of reference cells of one type whose nearest cell of the other type lies within each radius. It is a curve over distance. Its value at 20 micrometres and its area from zero to 20 micrometres are different summaries. The fixed-radius fraction is unitless; an unnormalised area over distance has distance units, so report any normalisation. A curve, a map of local values and a clustered neighbourhood assignment also need not reduce to one number per slide. Name the actual output and aggregation rule.",
+                "passageSha256": "3e659b48cc7980b3e2f5ca0f9259c16c04a2e7dc4daaae1eeced5dbced6b8f13",
+                "explanation": "The pipeline, output and reading-card paragraphs cover cell calls and analyst choices while correcting the diagram's universal single-number output. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The pipeline, output and reading-card paragraphs cover cell calls and analyst choices while correcting the diagram's universal single-number output. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-013",
+            "requirement": "Explain why tumour-versus-stromal location matters for contact-dependent T-cell killing without inferring killing from a map.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation paragraph makes the contact-dependent mechanism conditional and leaves recognition and function unmeasured; it distinguishes stromal location from cells among tumour. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-014",
+            "requirement": "Verify Elomaa's G-cross example: 983 and independent 246 colorectal-cancer patients, 20-micrometre tumour-to-T-cell scope, cancer-specific survival and adjusted hazard ratios 0.33 (0.20 to 0.52) and 0.15 (0.05 to 0.45), distinct from density.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Elomaa and colleagues analysed 983 colorectal-cancer patients and an independent validation cohort of 246. Their score combined percentile-ranked CD3 and CD8 tumour-to-T-cell G-cross values at 20 micrometres in the tumour centre and invasive margin. It was not simply an area under a G-cross curve. High versus low score was associated with longer cancer-specific survival: adjusted hazard ratio 0.33, 95% confidence interval 0.20 to 0.52, and 0.15, 0.05 to 0.45, respectively. Its prognostic value was independent of their T-cell density score; these are cohort associations.",
+                "passageSha256": "76c0efb42aa602e3889391e09b0dc6de66c15e1eb5d7e7e67a789b583fee7dfc",
+                "explanation": "The colorectal paragraph gives both cohorts, all four percentile-ranked measurements, the 20-micrometre definition, cancer-specific endpoint, both adjusted estimates and confidence intervals, and the density distinction. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-015",
+            "requirement": "Verify Gide's melanoma example: 27 anti-PD-1 monotherapy and 34 combination patients, CD8 cells within 20 micrometres and response association.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Gide and colleagues examined pretreatment metastatic-melanoma specimens from 27 patients receiving anti-PD-1 alone and 34 receiving anti-PD-1 with ipilimumab. Responders had higher densities of CD8 T cells within 20 micrometres of melanoma cells in both groups. This was an association in treated cohorts, rather than a randomised comparison proving that the spatial measurement selects who benefits from adding treatment.",
+                "passageSha256": "a9f4069da7f90904cb501a82ed3e0b01561a87d2fbaf1b03d39158de7867cd45",
+                "explanation": "The melanoma paragraph gives the 27/34 treated groups, named combination, pretreatment scope and CD8-within-20-micrometre response association, without a randomised treatment-selection conclusion. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-016",
+            "requirement": "Verify Maley's breast-cancer colocalisation example on routine slides, 486 and 516 women from separate cohorts, with survival association.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Maley and colleagues assessed immune-cancer colocalisation on routine histology in discovery and validation sets of 486 and 516 breast-cancer samples from women; 475 and 514 had survival data. Colocalisation was associated with disease-specific survival and effects varied by subtype. Walker and colleagues' retrospective study of 1,467 participants defined proximity and consistency from the mean and variance of nearest-neighbour distances between cancer and CD8 T cells. These measures were associated with recurrence-free survival more strongly than lymphocyte counts in the reported analyses. Neither study demonstrates benefit from choosing immunotherapy using its measurement.",
+                "passageSha256": "f2b9a2256f57eb019af879b1c0a961264e0fa0f7b6264fcfae819c780f39548d",
+                "explanation": "The breast paragraph distinguishes discovery/validation sample counts from the 475/514 samples with survival data and reports subtype-dependent disease-specific association. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-017",
+            "requirement": "Verify Walker's 1,467-patient CD8 proximity and recurrence-free-survival association compared with CD8 density.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Maley and colleagues assessed immune-cancer colocalisation on routine histology in discovery and validation sets of 486 and 516 breast-cancer samples from women; 475 and 514 had survival data. Colocalisation was associated with disease-specific survival and effects varied by subtype. Walker and colleagues' retrospective study of 1,467 participants defined proximity and consistency from the mean and variance of nearest-neighbour distances between cancer and CD8 T cells. These measures were associated with recurrence-free survival more strongly than lymphocyte counts in the reported analyses. Neither study demonstrates benefit from choosing immunotherapy using its measurement.",
+                "passageSha256": "f2b9a2256f57eb019af879b1c0a961264e0fa0f7b6264fcfae819c780f39548d",
+                "explanation": "The breast paragraph gives Walker's 1,467-participant retrospective design, mean/variance-derived metrics, recurrence-free endpoint and reported comparison with counts. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-018",
+            "requirement": "Verify Keren's 41-tumour triple-negative mixed/compartmentalised pattern association and keep it distinct from prospective prediction.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In Keren's 41-patient triple-negative breast-cancer cohort, mixed and compartmentalised immune architecture was linked to survival. Their mixing threshold was chosen to reduce within-group and increase between-group variability; it is not a universally validated cutoff. A useful association in one dataset does not establish that a distance or mixing rule was locked and then prospectively validated for treatment selection.",
+                "passageSha256": "470bef03eba7630e439570114cded387cd2cfcd48244db34b34ad182490bbac1",
+                "explanation": "The Keren paragraph retains the 41-patient cohort, architecture association and dataset-selected rather than universal threshold. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-019",
+            "requirement": "Keep group associations separate from a validated individual prognosis or treatment-selection rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The evidence-tier and exercise paragraphs separate a group association from individual outcome or differential treatment benefit. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "If a fictional report says cells became 3.2 times closer after treatment, first establish which distance or score was compared. Check region-selection rules in both samples, comparable specimen types, the same fixed metric and radius, and variation between sections of the same block. The ratio alone does not establish a change in immune recognition, interaction or patient outcome.",
+                "passageSha256": "c05f4a06c4759c404255aefd5db424c853d6a2412ace042f815d06052dc8d1da",
+                "explanation": "The evidence-tier and exercise paragraphs separate a group association from individual outcome or differential treatment benefit. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-020",
+            "requirement": "Assess, rather than silently endorse, the global claim that no locked distance threshold has prospective validation and no distance metric is approved.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In Keren's 41-patient triple-negative breast-cancer cohort, mixed and compartmentalised immune architecture was linked to survival. Their mixing threshold was chosen to reduce within-group and increase between-group variability; it is not a universally validated cutoff. A useful association in one dataset does not establish that a distance or mixing rule was locked and then prospectively validated for treatment selection.",
+                "passageSha256": "470bef03eba7630e439570114cded387cd2cfcd48244db34b34ad182490bbac1",
+                "explanation": "The universal absence claim is not adopted. The current paragraphs distinguish the limited cohort evidence from prospective validation and explicitly refuse to infer an exhaustive approval statement. This is credit for the scoped assessment, not for the rejected global assertion. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The universal absence claim is not adopted. The current paragraphs distinguish the limited cohort evidence from prospective validation and explicitly refuse to infer an exhaustive approval statement. This is credit for the scoped assessment, not for the rejected global assertion. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-021",
+            "requirement": "Compare standardised compartment-based stromal TIL assessment with distance metrics without assigning all assays a universal validation ranking.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Stromal tumour-infiltrating lymphocyte scoring estimates the proportion of stromal area occupied by lymphocytes on a histology section. It is compartment-based assessment rather than a T-cell-to-cancer-cell distance. Page and colleagues' 2023 working-group report describes its standardisation and evaluation across datasets alongside the distinct colon-cancer Immunoscore. That evidence does not automatically validate a new proximity assay, and it does not rank every existing or future spatial method.",
+                "passageSha256": "0caf75bdf6070036125f5b658374b1e922bb954b75df379dfc7a0a5bde75262b",
+                "explanation": "The compartment paragraph defines stromal TIL assessment and attributes its standardisation to the 2023 working-group review, without ranking every spatial assay. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-022",
+            "requirement": "Retain and recompute the fictional counts: 60 of 200 CD8 cells is 30 percent, while 15 of 300 is five percent after moving the region two millimetres.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In a fictional region containing 200 CD8 T cells, 60 within 20 micrometres of a cancer cell is 30% of the CD8 cells. Moving the box two millimetres into stroma can give 15 near cancer among 300 CD8 cells, or 5%, with the same tumour, stain and radius. The counts are invented to demonstrate region dependence. They do not establish a biological difference caused by treatment or a patient cutoff.",
+                "passageSha256": "8305604247e246f60ed16f7fd1730a5f8880c268036c178d53a802d7f3560622",
+                "explanation": "The worked example preserves 60/200, 30%, 15/300, 5%, 20 micrometres and a two-millimetre shift as labelled fiction with recomputed arithmetic. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-023",
+            "requirement": "Explain that a changed analysis region can change the result while the tumour, stain and radius are held fixed in the fictional example.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In a fictional region containing 200 CD8 T cells, 60 within 20 micrometres of a cancer cell is 30% of the CD8 cells. Moving the box two millimetres into stroma can give 15 near cancer among 300 CD8 cells, or 5%, with the same tumour, stain and radius. The counts are invented to demonstrate region dependence. They do not establish a biological difference caused by treatment or a patient cutoff.",
+                "passageSha256": "8305604247e246f60ed16f7fd1730a5f8880c268036c178d53a802d7f3560622",
+                "explanation": "The same example holds tumour, stain and radius fixed and explicitly attributes the changed count to the moved region rather than treatment. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-024",
+            "requirement": "Require section identity and biopsy-versus-resection context when interpreting a spatial result.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A measurement report identifies the section and whether it came from a biopsy or resection, the markers defining each cell type, and how segmentation and cell calls were checked. It states whether the analysis used an entire imaged area or selected regions, who selected them and the rule used. A single section, its chosen regions and multiple fields from one specimen are not interchangeable samples of the whole tumour.",
+                "passageSha256": "7919068b508702ec1735543b7c8580b89259497ca6619d8bfb8e14bdb12e5b10",
+                "explanation": "The report paragraph asks for section identity and biopsy-versus-resection context. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-025",
+            "requirement": "Require cell-defining markers and a check of segmentation and cell calls.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A spatial proximity analysis begins with a sampled section, estimated cell types and positions. Staining, imaging, cell segmentation and typing create that list; errors in boundaries, marker assignment or signal spillover can therefore create false neighbours. Density asks how many cells occupy a stated area, while proximity asks how one cell type is positioned relative to another. Keeping the analysis box and its tissue compartments visible is as important as reporting the final number.",
+                "passageSha256": "1b2a92de06dbcae73eed0888d12ffccfde23a88e95a24a3d83005288921879a9",
+                "explanation": "The opening and report paragraphs require marker-based cell calls and checks of segmentation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A measurement report identifies the section and whether it came from a biopsy or resection, the markers defining each cell type, and how segmentation and cell calls were checked. It states whether the analysis used an entire imaged area or selected regions, who selected them and the rule used. A single section, its chosen regions and multiple fields from one specimen are not interchangeable samples of the whole tumour.",
+                "passageSha256": "7919068b508702ec1735543b7c8580b89259497ca6619d8bfb8e14bdb12e5b10",
+                "explanation": "The opening and report paragraphs require marker-based cell calls and checks of segmentation. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-026",
+            "requirement": "Report whole-slide versus chosen-region scope, the selector and the selection rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A measurement report identifies the section and whether it came from a biopsy or resection, the markers defining each cell type, and how segmentation and cell calls were checked. It states whether the analysis used an entire imaged area or selected regions, who selected them and the rule used. A single section, its chosen regions and multiple fields from one specimen are not interchangeable samples of the whole tumour.",
+                "passageSha256": "7919068b508702ec1735543b7c8580b89259497ca6619d8bfb8e14bdb12e5b10",
+                "explanation": "The report paragraph names sampled-area scope, the region selector and the selection rule. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-027",
+            "requirement": "Report the metric, the cell-type pair, the direction or denominator and any radius.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A compartment density might be CD8 T cells per square millimetre of tumour epithelium or stroma. A radius count can ask how many cells of type A lie within a chosen distance of a type B cell; a population fraction also states which cells form its denominator. A nearest-neighbour analysis measures, for each cell of type A, the distance to the closest cell of type B and may summarise those distances by their median. Define whether distances use cell centres or boundaries; the same pair can have different values under these rules.",
+                "passageSha256": "4b51bbda5db8f9673dfe3e50c2f0acdf37643b8c49effd09dbd1257260daa563",
+                "explanation": "The metric and reporting paragraphs state pair, direction, reference population, centres versus boundaries and radius. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The metric and reporting paragraphs state pair, direction, reference population, centres versus boundaries and radius. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-028",
+            "requirement": "Separate a threshold fixed before outcome inspection from one fitted to the cohort.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The reporting paragraph distinguishes a pre-outcome cutoff from one fitted to the cohort. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-029",
+            "requirement": "Require independent validation of the same metric definition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The reporting paragraph asks for independent evaluation using the same definition. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-030",
+            "requirement": "Verify Taube's six-site PD-1/PD-L1 proximity reproducibility example and the reported R-squared of 0.82 with its precise scope.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "The six-institution MITRE study optimised a specified six-marker PD-1/PD-L1 fluorescence workflow and used a locked image-analysis algorithm. It counted neighbouring PD-1-positive and PD-L1-positive cells within 25 micrometres, rather than measuring receptor binding. Reported average intersite R-squared was 0.82 for the breast-cancer tissue microarray and 0.84 for the lung-cancer microarray. R-squared describes a linear-fit relationship in these measurement comparisons, not 82% accuracy in predicting patient benefit. Reproducibility of this defined workflow is separate from clinical prediction or utility.",
+                "passageSha256": "9e8d73fd5207d2677e1d38463da2fd448038813c2b1d73e76fd7a3894b78856a",
+                "explanation": "The MITRE paragraph scopes the six-site workflow, cell-level 25-micrometre measure and breast R-squared 0.82, with the distinct lung result; it does not misdescribe molecular binding. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-031",
+            "requirement": "Distinguish reproducible measurement from outcome prediction or clinical utility.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "The six-institution MITRE study optimised a specified six-marker PD-1/PD-L1 fluorescence workflow and used a locked image-analysis algorithm. It counted neighbouring PD-1-positive and PD-L1-positive cells within 25 micrometres, rather than measuring receptor binding. Reported average intersite R-squared was 0.82 for the breast-cancer tissue microarray and 0.84 for the lung-cancer microarray. R-squared describes a linear-fit relationship in these measurement comparisons, not 82% accuracy in predicting patient benefit. Reproducibility of this defined workflow is separate from clinical prediction or utility.",
+                "passageSha256": "9e8d73fd5207d2677e1d38463da2fd448038813c2b1d73e76fd7a3894b78856a",
+                "explanation": "The MITRE paragraph separates analytical reproducibility from prediction and rejects the interpretation of R-squared as patient-benefit accuracy. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-032",
+            "requirement": "Explain that cells 15 micrometres apart need not interact and adjacency alone cannot establish T-cell functional state.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation paragraph uses the source's 15-micrometre example without inferring recognition, killing or functional state. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-033",
+            "requirement": "Keep the share of T cells near tumour distinct from the share of tumour cells near T cells; reversing the reference population changes the denominator.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Specify direction as well as radius. The share of CD8 T cells with a cancer-cell neighbour uses CD8 cells as its denominator; the share of cancer cells with a CD8 neighbour uses cancer cells instead. These can differ even on the same map. Similarly, thresholds of ten, 20 and 30 micrometres define different measurements; a result under one definition cannot be transferred to another without checking it.",
+                "passageSha256": "5d7d6a7f77f46b94dd4631f2621bff4c44d5f5d7e80eaca6e9a36b5960f155c9",
+                "explanation": "The direction paragraph explicitly changes the denominator from CD8 cells to cancer cells when the question is reversed. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-034",
+            "requirement": "Do not transfer a result between 10-, 20- and 30-micrometre radii without checking the changed definition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Specify direction as well as radius. The share of CD8 T cells with a cancer-cell neighbour uses CD8 cells as its denominator; the share of cancer cells with a CD8 neighbour uses cancer cells instead. These can differ even on the same map. Similarly, thresholds of ten, 20 and 30 micrometres define different measurements; a result under one definition cannot be transferred to another without checking it.",
+                "passageSha256": "5d7d6a7f77f46b94dd4631f2621bff4c44d5f5d7e80eaca6e9a36b5960f155c9",
+                "explanation": "The direction paragraph preserves ten, 20 and 30 micrometres as different definitions that require checking rather than transferring results. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-035",
+            "requirement": "Do not treat a cohort-selected cutoff as a clinically validated test.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "In Keren's 41-patient triple-negative breast-cancer cohort, mixed and compartmentalised immune architecture was linked to survival. Their mixing threshold was chosen to reduce within-group and increase between-group variability; it is not a universally validated cutoff. A useful association in one dataset does not establish that a distance or mixing rule was locked and then prospectively validated for treatment selection.",
+                "passageSha256": "470bef03eba7630e439570114cded387cd2cfcd48244db34b34ad182490bbac1",
+                "explanation": "The Keren and validation paragraphs separate a dataset-selected cutoff from a prospectively locked clinical rule. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The Keren and validation paragraphs separate a dataset-selected cutoff from a prospectively locked clinical rule. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-036",
+            "requirement": "Verify Lin's two-dimensional-versus-three-dimensional topology caution: apparent separation, contact and connected structures can differ across sections.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation paragraph gives Lin's interconnected structures from apparently separate two-dimensional domains and preserves the one-cancer 3D-reconstruction limit. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-037",
+            "requirement": "Explain how segmentation or signal-spillover errors can create false cell calls and false neighbours.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "A spatial proximity analysis begins with a sampled section, estimated cell types and positions. Staining, imaging, cell segmentation and typing create that list; errors in boundaries, marker assignment or signal spillover can therefore create false neighbours. Density asks how many cells occupy a stated area, while proximity asks how one cell type is positioned relative to another. Keeping the analysis box and its tissue compartments visible is as important as reporting the final number.",
+                "passageSha256": "1b2a92de06dbcae73eed0888d12ffccfde23a88e95a24a3d83005288921879a9",
+                "explanation": "The opening paragraph explains false-neighbour effects of assignment/spillover errors; the retained assay card identifies segmentation and spillover as measurement failure modes. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-transcriptomics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "265fd2c37d6df7b19d7f97db7d92bca714ab82ee42074f6e53317ab0b41d8f19",
+                "supportingExcerpt": "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+                "passageSha256": "0793730282f3783a41de345e2131a0ec8c41757ab306178ca0a5d05bfcf756d0",
+                "explanation": "The opening paragraph explains false-neighbour effects of assignment/spillover errors; the retained assay card identifies segmentation and spillover as measurement failure modes. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-038",
+            "requirement": "For a fictional 3.2-times-closer report, require matched region-selection rules, comparable specimen types, a fixed metric and radius, and variation between sections of the block.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "If a fictional report says cells became 3.2 times closer after treatment, first establish which distance or score was compared. Check region-selection rules in both samples, comparable specimen types, the same fixed metric and radius, and variation between sections of the same block. The ratio alone does not establish a change in immune recognition, interaction or patient outcome.",
+                "passageSha256": "c05f4a06c4759c404255aefd5db424c853d6a2412ace042f815d06052dc8d1da",
+                "explanation": "The final exercise asks for the actual score, matched region rules, comparable specimens, fixed metric/radius and between-section variation before interpreting a 3.2-fold statement. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "spatial-measurement-P-039",
+            "requirement": "Answer the teach-back by separating described spatial closeness from proof of interaction and from an individual patient outcome.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "For a contact-dependent mechanism, immune cells retained in stroma face a different spatial question from cells among cancer cells. Position alone leaves antigen recognition and functional capacity unmeasured: a T cell 15 micrometres from a cancer cell need not be recognising or killing it. A two-dimensional slice also samples only part of a three-dimensional structure. Lin and colleagues' colorectal-cancer study reconstructed interconnected lymphoid networks from apparently separate two-dimensional domains; only one cancer was reconstructed in three dimensions in that study.",
+                "passageSha256": "194b7a6b8b72225fe425a056bf63d88743af04734b3cac90e029e4e08b78d245",
+                "explanation": "The interpretation, evidence-tier and exercise paragraphs answer the teach-back using described spatial location while leaving interaction and individual outcome unresolved. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "Report the cell-type pair, the reference population, the distance definition, the radius and any aggregation or normalisation. State whether a cutoff was fixed before looking at outcomes or chosen to fit this cohort, and whether the same definition was evaluated in an independent group. Analytical reproducibility, prognostic association, differential treatment benefit, prospective validation of a locked rule and regulatory approval are separate claims. The cited cohort studies do not establish an exhaustive statement about all approved spatial tests.",
+                "passageSha256": "2e6f9c2be37a9f5e64ce6a709972af4394269cd0b785c942fd2c5a683b0c2869",
+                "explanation": "The interpretation, evidence-tier and exercise paragraphs answer the teach-back using described spatial location while leaving interaction and individual outcome unresolved. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              },
+              {
+                "recordId": "spatial-proximity-metrics",
+                "version": "proposal-spatial-measurement-root",
+                "field": "notes",
+                "fieldSha256": "2aeff4cb398aea5aa11f5839ef5c91fdc5d150d463afd767cd6daa76d873a114",
+                "supportingExcerpt": "If a fictional report says cells became 3.2 times closer after treatment, first establish which distance or score was compared. Check region-selection rules in both samples, comparable specimen types, the same fixed metric and radius, and variation between sections of the same block. The ratio alone does not establish a change in immune recognition, interaction or patient outcome.",
+                "passageSha256": "c05f4a06c4759c404255aefd5db424c853d6a2412ace042f815d06052dc8d1da",
+                "explanation": "The interpretation, evidence-tier and exercise paragraphs answer the teach-back using described spatial location while leaving interaction and individual outcome unresolved. Historical abstract or targeted-passage claim, measurement definition, or explicitly labelled reading/fictional inference; no expert, main/live or language approval."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -103193,9 +104652,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103208,9 +104667,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103223,9 +104682,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103238,9 +104697,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103253,9 +104712,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103268,9 +104727,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103283,9 +104742,9 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -103298,16 +104757,16 @@
             "evidence": [
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               },
               {
                 "recordId": "single-cell-spatial",
-                "version": "proposal-measurement-sequencing",
+                "version": "proposal-spatial-measurement-root",
                 "field": "notes",
-                "fieldSha256": "47aa3540244cd44945de8811d630f3cca253e728fed25417d9f5d5d78822767b",
+                "fieldSha256": "4ea1befc44772d0e0d569ddb6ce67b513b2028dcaddec1142b96fea72025586e",
                 "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
               }
             ],
@@ -161595,6 +163054,53 @@
             "evidence": [],
             "remaining": [
               "Guide owner: retain genetic-loss context for the short HLA footer and directed-chemotaxis context for the movement footer; consider improving the dark viral-entry dashed path. Current prose carries the qualifications. No source artwork or caption is edited and no accessibility approval is implied."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "spatial-measurement-source-scope",
+      "title": "Spatial assay source qualifications, Guide diagrams and retained platform claims",
+      "domain": "measurement-spatial-adjacent",
+      "sourceURLs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37608771/",
+        "https://pubmed.ncbi.nlm.nih.gov/32763154/"
+      ],
+      "discoveryOccurrences": [
+        "spatial-measurement-2026-11-12"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator scoped follow-up intake; no additional teaching credit",
+        "checkedAt": "2026-11-12",
+        "rationale": "The current reading rules and named historical examples are represented in the draft. These separate source-owner and retained-catalogue tasks are not quietly certified by the new field proofs.",
+        "points": [
+          {
+            "id": "guide-spatial-qualifications",
+            "requirement": "Guide owner: qualify universal section/segmentation language, distinguish fixed-radius G-cross values from AUC examples, state that the ten-cell neighbourhood includes the centre, retain survival-data availability within Maley cohort sizes and specify cell-level PD-1/PD-L1 proximity. The original data and source files remain unchanged here.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Guide owner: qualify universal section/segmentation language, distinguish fixed-radius G-cross values from AUC examples, state that the ten-cell neighbourhood includes the centre, retain survival-data availability within Maley cohort sizes and specify cell-level PD-1/PD-L1 proximity. The original data and source files remain unchanged here."
+            ]
+          },
+          {
+            "id": "guide-spatial-visual-context",
+            "requirement": "Guide owner: qualify the protein branch's blanket cell-resolution label and the single-number terminal node, and improve the two low-contrast amber nodes under the default Mermaid dark theme. Rendered views do not establish live-site accessibility.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Guide owner: qualify the protein branch's blanket cell-resolution label and the single-number terminal node, and improve the two low-contrast amber nodes under the default Mermaid dark theme. Rendered views do not establish live-site accessibility."
+            ]
+          },
+          {
+            "id": "spatial-legacy-and-absence-claims",
+            "requirement": "The biological seven-to-ten-micrometre lymphocyte range and a worldwide absence-of-approved-proximity-tests assertion are not independently established. The reader uses labelled hypothetical geometry and bounded validation claims instead. Retained instrument-capacity, vendor, research-use and older platform assertions outside the appended fields require their own current source checks.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "The biological seven-to-ten-micrometre lymphocyte range and a worldwide absence-of-approved-proximity-tests assertion are not independently established. The reader uses labelled hypothetical geometry and bounded validation claims instead. Retained instrument-capacity, vendor, research-use and older platform assertions outside the appended fields require their own current source checks."
             ]
           }
         ]

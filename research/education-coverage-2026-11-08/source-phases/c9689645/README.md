@@ -1,6 +1,6 @@
 # Later curriculum census
 
-This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 478 assessed teaching sources and five routing dispositions, with 468 representations in draft fields or proposals. Of 5,496 assessed representation points, 5,486 have field evidence and ten remain partial across ten pages. Another 67 ordinary sources are unreviewed. Overlapping source inventories are not added.
+This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 480 assessed teaching sources and five routing dispositions, with 470 representations in draft fields or proposals. Of 5,568 assessed representation points, 5,558 have field evidence and ten remain partial across ten pages. Another 65 ordinary sources are unreviewed. Overlapping source inventories are not added.
 
 The [surface-targeting checkpoint](../../surface-targeting-2026-11-11/README.md) accounts for seven later and six original guides, including relocated originals, 135 section signatures and separate 169/129-row denominators. One exhaustive negative approval-inventory claim remains source-open. Source depth, semantic representation, rendered fields and main/live integration remain distinct.
 
@@ -27,3 +27,5 @@ The [repair/resistance checkpoint](../../repair-resistance-2026-11-12/README.md)
 The [immunotherapy checkpoint](../../immunotherapy-2026-11-12/README.md) adds seven later lessons and 133 obligations, with seven unchanged-teaching original counterparts retained separately. All fourteen identities and 146 section signatures reproduce. Source depth, field representation, schematic interpretation and independent acceptance remain distinct.
 
 The [current-main metadata refresh](../../upstream-refresh-2026-11-12/README.md) incorporates upstream glossary and protocol medicine relationships without adding a lesson assessment, requirement, source-asset disposition or language review. Six existing selected canonical snapshots receive current aliases; all earlier snapshots and evidence-field bindings remain unchanged. The separate original/later counts above remain the same.
+
+The [spatial-measurement checkpoint](../../spatial-measurement-2026-11-12/README.md) adds two later-only bodies and 72 scoped obligations. No original source is closed by thematic overlap. Both full bodies, 24 section signatures and four Mermaid theme views are assessed; all original/later, source-depth, field-representation and approval boundaries remain explicit.

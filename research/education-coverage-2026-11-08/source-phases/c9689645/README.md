@@ -1,6 +1,6 @@
 # Later curriculum census
 
-This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 466 assessed teaching sources and five routing dispositions, with 456 representations in draft fields or proposals. Of 5,237 assessed representation points, 5,227 have field evidence and ten remain partial across ten pages. Another 79 ordinary sources are unreviewed. Overlapping source inventories are not added.
+This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 471 assessed teaching sources and five routing dispositions, with 461 representations in draft fields or proposals. Of 5,363 assessed representation points, 5,353 have field evidence and ten remain partial across ten pages. Another 74 ordinary sources are unreviewed. Overlapping source inventories are not added.
 
 The [surface-targeting checkpoint](../../surface-targeting-2026-11-11/README.md) accounts for seven later and six original guides, including relocated originals, 135 section signatures and separate 169/129-row denominators. One exhaustive negative approval-inventory claim remains source-open. Source depth, semantic representation, rendered fields and main/live integration remain distinct.
 
@@ -21,3 +21,5 @@ The [residual-monitoring checkpoint](../../residual-monitoring-guides-2026-11-12
 The [imaging/follow-up checkpoint](../../imaging-follow-up-2026-11-12/README.md) assesses seven later and six original versions across 160 section signatures. The frozen 153-row inventory keeps 99 original and 131 later obligations, 22 non-credit rows and one transcription erratum separate. All 131 unique obligations have source-scoped draft field evidence; current-source depth tasks and independent acceptance remain separate.
 
 The [statistics checkpoint](../../study-statistics-2026-11-12/README.md) adds five later-only lessons, 58 section signatures and 121 obligations. Ten root owners carry 101; the other 20 remain only in an unapplied proposal for peer #371. Exact original-path and basename absence keeps the original denominator unchanged.
+
+The [repair/resistance checkpoint](../../repair-resistance-2026-11-12/README.md) adds five later lessons and 126 obligations; three original counterparts contribute 70 separately. All eight version identities and 98 section signatures reproduce. The immutable source-first inventory and its explicit non-credit correction are retained, rather than silently changing the frozen denominator.

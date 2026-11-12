@@ -461,6 +461,16 @@
       "version": "proposal-study-statistics-summary-consumers",
       "state": "Actual lazy short-summary and long-cache selectors; no new graph records or language approval",
       "recordSnapshotSha256": "bc6b74eefdb3aea100491116a59dd23e449411a7c2d342168262bb7bd1669a51"
+    },
+    {
+      "version": "proposal-repair-resistance-root",
+      "state": "Actual committed registered-root fields in unmerged draft #375; no main/live or independent approval",
+      "recordSnapshotSha256": "33a2466d59bfc3a8e380bdb9f148a8f7bf9f8eca64ffa6b95432fda254f20b52"
+    },
+    {
+      "version": "proposal-repair-resistance-summary-consumers",
+      "state": "Actual short-summary tables and long-cache selectors; missing text is an English fallback, with no language approval",
+      "recordSnapshotSha256": "201d63136ba99d7fc3a9157d6c4192e74de5227679b0ccdc35dc7dd305aee5e8"
     }
   ],
   "sourcePhases": [
@@ -470,7 +480,7 @@
       "directory": "source-phases/c9689645",
       "sourceCount": 550,
       "problems": [
-        "Source phase remains open: guide-c9689645 (89 sources)"
+        "Source phase remains open: guide-c9689645 (84 sources)"
       ]
     }
   ],
@@ -478,17 +488,17 @@
     {
       "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
       "totalAssets": 1888,
-      "teachingAssets": 511,
+      "teachingAssets": 519,
       "supportingAssets": 71,
-      "unclassifiedAssets": 1306,
+      "unclassifiedAssets": 1298,
       "unresolvedAssets": 1310
     },
     {
       "guideRef": "c96896452386202405c435aa161bc5047919337a",
       "totalAssets": 1888,
-      "teachingAssets": 511,
+      "teachingAssets": 519,
       "supportingAssets": 71,
-      "unclassifiedAssets": 1306,
+      "unclassifiedAssets": 1298,
       "unresolvedAssets": 1310
     }
   ],
@@ -499,13 +509,13 @@
     "navigation": 14,
     "navigationReviewed": 7,
     "navigationWithTeachingContent": 7,
-    "semanticallyReviewed": 448,
-    "implementedCoverage": 437,
+    "semanticallyReviewed": 451,
+    "implementedCoverage": 440,
     "mainCoverage": 0,
-    "unresolvedContentItems": 93,
-    "unresolvedSources": 93,
-    "adjacentConcepts": 63,
-    "unresolvedAdjacentConcepts": 39,
+    "unresolvedContentItems": 90,
+    "unresolvedSources": 90,
+    "adjacentConcepts": 64,
+    "unresolvedAdjacentConcepts": 40,
     "openSchemaGaps": 6,
     "unreviewedLiteratureOccurrences": 0,
     "readyForFinalReaudit": false
@@ -106786,8 +106796,457 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator source-first full later-body and complete version-diff assessment; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-12",
+        "rationale": "All five later bodies, all original differences, eight source image themes and six Mermaid theme renders were read before fresh canonical-owner comparison. Unchanged original teaching is reused by exact identity, and the two later-only absences are separately verified. The immutable 142-row inventory originally misclassified one custody row; a pre-owner-read erratum removes it from credit, leaving 126 later and 70 original substantive obligations. Six committed draft-root records, including one newly registered broad DDR term, carry the stated teaching. Targeted primary readings, curated background, fictional arithmetic and authored inference are distinguished. Model, assay and label qualifications replace universal response, treatment-switch and cure claims. No main/live or independent acceptance is implied.",
+        "sectionHashes": [
+          "c6bc6ba65bb74d4e32292cb3a7474a0715bc40416ab2c42a6fabdde88e8d1bf3",
+          "a606e08032a882e6f7b9b15ec631345d625b1ca0bda9239a7067acede370b63f",
+          "e0d05c192b4d985983485a34a9bdf254d81d88ded4b697fa0b6cbe6d0bcfcc7d",
+          "1fda1eb688d278055b5bc9bf40eaeb89770d5d071ca92fe348ca3ca947749929",
+          "e97ed2f3f3a2a9b97e2a3abd2bef20eae82b74ceaba2a34cd0754b0f91145a7f",
+          "90b489770d9befbab2c9e91e8d417b328c9e76fc458ffe4252f1a52d9c410a5e",
+          "236a7f480afef3282659b4a575baad408ba83fec27e10694c72dfd38a66d709f",
+          "9063683add5ed222ed468040a2f4662ac06d9630eff81394b4a457f1921febc4",
+          "b8641d279bac7f9e19a6a1ee8f8860817a15efacd9479e9267a987dd333fac5d",
+          "e837136cbcc7e9a207b9d3be7969ecb46b75ffdda9fdfd54e4e48074f7ea92b2",
+          "c9d0c2cd4bf0a1717baa398cc213176884232793950fcf911753f7182135bb40",
+          "933db2dbdd8253c1cdf7f30356fadf6a2c5228427e1489cd5922e5b4281ebfa6",
+          "05465a4ee05579e105d8929c5805f9ffec41dbc298b8af68c3897576e9af9016"
+        ],
+        "points": [
+          {
+            "id": "repair-resistance-R-001",
+            "requirement": "Define resistance as reduced effect in a specified cancer population, treatment and setting, rather than a single permanent mechanism.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Drug resistance is reduced effect for a specified medicine, cancer population and setting. A garden analogy can describe selection: removing susceptible plants leaves a larger share of survivors, without showing that the treatment created those survivors. Intrinsic resistance describes poor initial effect; acquired resistance describes lost effect after an earlier response. These timing labels do not identify one permanent mechanism. A rare pre-existing population can become easier to detect, and sequence change, reversible cell state, exposure and the surrounding tissue can contribute together.",
+                "passageSha256": "7480b282f87c39d025d85cc7a9686a0eb4713c66c267fc0f45e3c03feb9d399a",
+                "explanation": "The named fields explicitly carry this obligation: Define resistance as reduced effect in a specified cancer population, treatment and setting, rather than a single permanent mechanism. Their scope and source depth are given per reference. Source scope: Primary model findings and NCI background, with an authored selection analogy Point R-001: Define resistance as reduced effect in a specified cancer population, treatment and setting, rather than a single permanent mechanism."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "Bozic 2013 modelled genetic resistance as a stochastic birth-and-death process, using lesion measurements from 20 vemurafenib-treated melanoma patients to inform rates. The model separates the number of mutations conferring resistance to each drug from mutations causing cross-resistance to both. It assumes the drugs can be given together at tolerable concentrations, and initially assumes resistant cells retain their pretreatment birth and death rates. Lesion size, mutation rate, fitness costs and cross-resistance change the predictions. Its comparison of simultaneous and sequential treatment is a model result under these conditions, not a randomised demonstration that a particular combination cures people.",
+                "passageSha256": "e8897ba4e3e1f44208b9de30df12328b53cc4976c54cb758e38590d907343dc5",
+                "explanation": "The named fields explicitly carry this obligation: Define resistance as reduced effect in a specified cancer population, treatment and setting, rather than a single permanent mechanism. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-001: Define resistance as reduced effect in a specified cancer population, treatment and setting, rather than a single permanent mechanism."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-002",
+            "requirement": "Carry the garden selection analogy, its limitation and coexistence of sequence, cell-state, environmental and exposure explanations.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Drug resistance is reduced effect for a specified medicine, cancer population and setting. A garden analogy can describe selection: removing susceptible plants leaves a larger share of survivors, without showing that the treatment created those survivors. Intrinsic resistance describes poor initial effect; acquired resistance describes lost effect after an earlier response. These timing labels do not identify one permanent mechanism. A rare pre-existing population can become easier to detect, and sequence change, reversible cell state, exposure and the surrounding tissue can contribute together.",
+                "passageSha256": "7480b282f87c39d025d85cc7a9686a0eb4713c66c267fc0f45e3c03feb9d399a",
+                "explanation": "The named fields explicitly carry this obligation: Carry the garden selection analogy, its limitation and coexistence of sequence, cell-state, environmental and exposure explanations. Their scope and source depth are given per reference. Source scope: Primary model findings and NCI background, with an authored selection analogy Point R-002: Carry the garden selection analogy, its limitation and coexistence of sequence, cell-state, environmental and exposure explanations."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-003",
+            "requirement": "Intrinsic versus acquired resistance are timing descriptions; a rare pre-existing population may become more detectable later.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Drug resistance is reduced effect for a specified medicine, cancer population and setting. A garden analogy can describe selection: removing susceptible plants leaves a larger share of survivors, without showing that the treatment created those survivors. Intrinsic resistance describes poor initial effect; acquired resistance describes lost effect after an earlier response. These timing labels do not identify one permanent mechanism. A rare pre-existing population can become easier to detect, and sequence change, reversible cell state, exposure and the surrounding tissue can contribute together.",
+                "passageSha256": "7480b282f87c39d025d85cc7a9686a0eb4713c66c267fc0f45e3c03feb9d399a",
+                "explanation": "The named fields explicitly carry this obligation: Intrinsic versus acquired resistance are timing descriptions; a rare pre-existing population may become more detectable later. Their scope and source depth are given per reference. Source scope: Primary model findings and NCI background, with an authored selection analogy Point R-003: Intrinsic versus acquired resistance are timing descriptions; a rare pre-existing population may become more detectable later."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-004",
+            "requirement": "Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Drug resistance is reduced effect for a specified medicine, cancer population and setting. A garden analogy can describe selection: removing susceptible plants leaves a larger share of survivors, without showing that the treatment created those survivors. Intrinsic resistance describes poor initial effect; acquired resistance describes lost effect after an earlier response. These timing labels do not identify one permanent mechanism. A rare pre-existing population can become easier to detect, and sequence change, reversible cell state, exposure and the surrounding tissue can contribute together.",
+                "passageSha256": "7480b282f87c39d025d85cc7a9686a0eb4713c66c267fc0f45e3c03feb9d399a",
+                "explanation": "The named fields explicitly carry this obligation: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality. Their scope and source depth are given per reference. Source scope: Primary model findings and NCI background, with an authored selection analogy Point R-004: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality."
+              },
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Combining drugs is a hypothesis that must address the measured failure at useful exposures and tolerable harm. NCI notes both the rationale for combinations and the possibility of serious targeted-treatment side effects. Different pathway targets do not guarantee nonoverlapping toxicity or clinical rescue. A later variant found in a fictional progression sample is especially hard to interpret if the earlier sample lacked enough coverage to detect it: it may have been present but undetected, arisen later or be unrelated to the observed failure. First check the comparison and detection limit, then test its treatment-specific function. Detection, origin, timing and causation are separate conclusions.",
+                "passageSha256": "423526504adca6fa70cebabb14295c079bef0268d32935443b22e2648f735f62",
+                "explanation": "The named fields explicitly carry this obligation: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality. Their scope and source depth are given per reference. Source scope: Source-constrained combination and sampling inference; no patient treatment recommendation Point R-004: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "Bozic 2013 modelled genetic resistance as a stochastic birth-and-death process, using lesion measurements from 20 vemurafenib-treated melanoma patients to inform rates. The model separates the number of mutations conferring resistance to each drug from mutations causing cross-resistance to both. It assumes the drugs can be given together at tolerable concentrations, and initially assumes resistant cells retain their pretreatment birth and death rates. Lesion size, mutation rate, fitness costs and cross-resistance change the predictions. Its comparison of simultaneous and sequential treatment is a model result under these conditions, not a randomised demonstration that a particular combination cures people.",
+                "passageSha256": "e8897ba4e3e1f44208b9de30df12328b53cc4976c54cb758e38590d907343dc5",
+                "explanation": "The named fields explicitly carry this obligation: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-004: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "A cell population can become a larger fraction because other cells are removed, without its own absolute count rising. That arithmetic is distinct from this branching model's assumptions about division, death and genetic mutation. The model does not capture every reversible drug-tolerant state, local exposure difference, tissue interaction or clinical toxicity. It can generate a combination hypothesis, but direct evidence about the actual medicines, shared resistance routes, exposure and harms is needed before interpreting it as a treatment strategy.",
+                "passageSha256": "ecdacad7e458303a432ed81622da0ea571fd5ef45ae19b2d6481297245975cc8",
+                "explanation": "The named fields explicitly carry this obligation: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality. Their scope and source depth are given per reference. Source scope: Model interpretation and arithmetic distinction, not a treatment recommendation Point R-004: Selection changes relative survival/growth; later variant detection alone does not establish time of origin, treatment induction or causality."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-005",
+            "requirement": "A target can change, disappear or become inaccessible; its resistance relevance depends on the treatment’s requirements.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "The named fields explicitly carry this obligation: A target can change, disappear or become inaccessible; its resistance relevance depends on the treatment’s requirements. Their scope and source depth are given per reference. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-005: A target can change, disappear or become inaccessible; its resistance relevance depends on the treatment’s requirements."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-006",
+            "requirement": "Alternative signalling can bypass a blocked route; proposed mechanism must fit the actual drug and context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "The named fields explicitly carry this obligation: Alternative signalling can bypass a blocked route; proposed mechanism must fit the actual drug and context. Their scope and source depth are given per reference. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-006: Alternative signalling can bypass a blocked route; proposed mechanism must fit the actual drug and context."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-007",
+            "requirement": "Altered drug handling, including efflux, is distinct from a change in the target.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "The named fields explicitly carry this obligation: Altered drug handling, including efflux, is distinct from a change in the target. Their scope and source depth are given per reference. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-007: Altered drug handling, including efflux, is distinct from a change in the target."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-008",
+            "requirement": "Death-avoidance and stromal effects on exposure/survival can coexist with genetic mechanisms.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "Death-signalling and surrounding-tissue effects are framed as investigation hypotheses, not assigned causes or frequencies in an untested tumour. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-008: Death-signalling and surrounding-tissue effects are framed as investigation hypotheses, not assigned causes or frequencies in an untested tumour."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-009",
+            "requirement": "Verify Sharma reversible drug-tolerant states in defined human cancer-cell models, including resensitisation after withdrawal, without a personal treatment-break inference.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Sharma 2010 found small drug-tolerant populations in human cancer-cell cultures. In PC9 lung cancer cells, persisters propagated without drug regained sensitivity within nine doublings; expanded persister populations required roughly 90 doublings or 20 to 30 passages. The observations supported a reversible chromatin-associated state in those systems, distinct from assuming a new permanent resistance mutation. They do not establish that a treatment break is safe or beneficial for a person. Drug withdrawal and re-exposure are experimental tests of reversibility, with matched conditions and controls.",
+                "passageSha256": "5ca7d6c6af7c5da342b7f522868ae03b55e5dc15c5224090dbd3a5242898ff24",
+                "explanation": "Withdrawal/re-exposure is a cell-model reversibility test; the recorded doubling/passaging scope does not justify a personal treatment break. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-009: Withdrawal/re-exposure is a cell-model reversibility test; the recorded doubling/passaging scope does not justify a personal treatment break."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-010",
+            "requirement": "Different sites and populations can carry multiple mechanisms; one later sample need not explain every lesion.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Drug resistance is reduced effect for a specified medicine, cancer population and setting. A garden analogy can describe selection: removing susceptible plants leaves a larger share of survivors, without showing that the treatment created those survivors. Intrinsic resistance describes poor initial effect; acquired resistance describes lost effect after an earlier response. These timing labels do not identify one permanent mechanism. A rare pre-existing population can become easier to detect, and sequence change, reversible cell state, exposure and the surrounding tissue can contribute together.",
+                "passageSha256": "7480b282f87c39d025d85cc7a9686a0eb4713c66c267fc0f45e3c03feb9d399a",
+                "explanation": "The named fields explicitly carry this obligation: Different sites and populations can carry multiple mechanisms; one later sample need not explain every lesion. Their scope and source depth are given per reference. Source scope: Primary model findings and NCI background, with an authored selection analogy Point R-010: Different sites and populations can carry multiple mechanisms; one later sample need not explain every lesion."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-011",
+            "requirement": "Cross-resistance requires evidence for the actual drugs and mechanism, not a universal inference from sharing a class.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "The named fields explicitly carry this obligation: Cross-resistance requires evidence for the actual drugs and mechanism, not a universal inference from sharing a class. Their scope and source depth are given per reference. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-011: Cross-resistance requires evidence for the actual drugs and mechanism, not a universal inference from sharing a class."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-012",
+            "requirement": "A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Combining drugs is a hypothesis that must address the measured failure at useful exposures and tolerable harm. NCI notes both the rationale for combinations and the possibility of serious targeted-treatment side effects. Different pathway targets do not guarantee nonoverlapping toxicity or clinical rescue. A later variant found in a fictional progression sample is especially hard to interpret if the earlier sample lacked enough coverage to detect it: it may have been present but undetected, arisen later or be unrelated to the observed failure. First check the comparison and detection limit, then test its treatment-specific function. Detection, origin, timing and causation are separate conclusions.",
+                "passageSha256": "423526504adca6fa70cebabb14295c079bef0268d32935443b22e2648f735f62",
+                "explanation": "The named fields explicitly carry this obligation: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue. Their scope and source depth are given per reference. Source scope: Source-constrained combination and sampling inference; no patient treatment recommendation Point R-012: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "Bozic 2013 modelled genetic resistance as a stochastic birth-and-death process, using lesion measurements from 20 vemurafenib-treated melanoma patients to inform rates. The model separates the number of mutations conferring resistance to each drug from mutations causing cross-resistance to both. It assumes the drugs can be given together at tolerable concentrations, and initially assumes resistant cells retain their pretreatment birth and death rates. Lesion size, mutation rate, fitness costs and cross-resistance change the predictions. Its comparison of simultaneous and sequential treatment is a model result under these conditions, not a randomised demonstration that a particular combination cures people.",
+                "passageSha256": "e8897ba4e3e1f44208b9de30df12328b53cc4976c54cb758e38590d907343dc5",
+                "explanation": "The named fields explicitly carry this obligation: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-012: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "A cell population can become a larger fraction because other cells are removed, without its own absolute count rising. That arithmetic is distinct from this branching model's assumptions about division, death and genetic mutation. The model does not capture every reversible drug-tolerant state, local exposure difference, tissue interaction or clinical toxicity. It can generate a combination hypothesis, but direct evidence about the actual medicines, shared resistance routes, exposure and harms is needed before interpreting it as a treatment strategy.",
+                "passageSha256": "ecdacad7e458303a432ed81622da0ea571fd5ef45ae19b2d6481297245975cc8",
+                "explanation": "The named fields explicitly carry this obligation: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue. Their scope and source depth are given per reference. Source scope: Model interpretation and arithmetic distinction, not a treatment recommendation Point R-012: A combination rationale needs useful exposure and tolerable harm while addressing the measured failure; a pathway diagram alone does not establish clinical rescue."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-013",
+            "requirement": "Recompute the full fictional990-sensitive/10-resistant example,90% removal of sensitive cells,99+10=109 and1% to approximately9.2% while resistant count stays10.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A fictional population starts with 990 sensitive and 10 resistant cells, total 1,000. Removing 90 per cent of the sensitive cells leaves 99 sensitive plus 10 resistant cells, total 109. The resistant share rises from 10/1,000 = 1 per cent to 10/109, about 9.2 per cent, although the absolute resistant count stays at 10. No division, mutation or state switching is included. To display this honestly, compare absolute counts on one 0 to 1,000 scale and resistant fractions on a separately labelled 0 to 10 per cent scale. A larger fraction alone does not prove growth of that population, a newly induced mutation or a clinical treatment effect.",
+                "passageSha256": "7a8bcdb2459494fd4b0667fa66a688b5a69bf7a5c0a1d83db585b88d9b5f464a",
+                "explanation": "The resistant count stays ten while the denominator falls to 109; the percentage is recomputed and no division or switching is included. Source scope: Recomputed fictional arithmetic and freshly viewed light/dark chart interpretation Point R-013: The resistant count stays ten while the denominator falls to 109; the percentage is recomputed and no division or switching is included."
+              },
+              {
+                "recordId": "drug-resistance-dynamics",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "257a1d2914d2ffc9d5471f4cea8c986ba8a0e759f825828f9e985b17fac35ded",
+                "supportingExcerpt": "A cell population can become a larger fraction because other cells are removed, without its own absolute count rising. That arithmetic is distinct from this branching model's assumptions about division, death and genetic mutation. The model does not capture every reversible drug-tolerant state, local exposure difference, tissue interaction or clinical toxicity. It can generate a combination hypothesis, but direct evidence about the actual medicines, shared resistance routes, exposure and harms is needed before interpreting it as a treatment strategy.",
+                "passageSha256": "ecdacad7e458303a432ed81622da0ea571fd5ef45ae19b2d6481297245975cc8",
+                "explanation": "The resistant count stays ten while the denominator falls to 109; the percentage is recomputed and no division or switching is included. Source scope: Model interpretation and arithmetic distinction, not a treatment recommendation Point R-013: The resistant count stays ten while the denominator falls to 109; the percentage is recomputed and no division or switching is included."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-014",
+            "requirement": "Read both themes’ count-versus-fraction figure with its common0–1000 count axis, separate0–10% axis and no-division/state-change assumptions; it does not establish new mutation or clinical effect.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A fictional population starts with 990 sensitive and 10 resistant cells, total 1,000. Removing 90 per cent of the sensitive cells leaves 99 sensitive plus 10 resistant cells, total 109. The resistant share rises from 10/1,000 = 1 per cent to 10/109, about 9.2 per cent, although the absolute resistant count stays at 10. No division, mutation or state switching is included. To display this honestly, compare absolute counts on one 0 to 1,000 scale and resistant fractions on a separately labelled 0 to 10 per cent scale. A larger fraction alone does not prove growth of that population, a newly induced mutation or a clinical treatment effect.",
+                "passageSha256": "7a8bcdb2459494fd4b0667fa66a688b5a69bf7a5c0a1d83db585b88d9b5f464a",
+                "explanation": "Both complete themes and their separate axes were freshly viewed; the source chart supplies fictional reading logic rather than empirical treatment evidence. Source scope: Recomputed fictional arithmetic and freshly viewed light/dark chart interpretation Point R-014: Both complete themes and their separate axes were freshly viewed; the source chart supplies fictional reading logic rather than empirical treatment evidence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-015",
+            "requirement": "Carry all steps of the resistance-investigation Mermaid: check exposure/assay/sample, investigate mechanisms, compare earlier samples/controlled models and test treatment-specific cause/limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A useful investigation first checks exposure, assay performance and what the sample represents. It then compares earlier and later specimens, the sampled sites, coverage and detection limits, and candidate target, pathway, state or environmental changes. Controlled models can test target engagement, pathway activity, damage and survival separately. Genetic perturbation or rescue, an appropriate comparison compound, and removal/re-exposure can strengthen a causal explanation, but off-target effects and altered growth can confound it. Culture does not reproduce every tissue, immune, exposure or human-safety condition; clinical response assessment and mechanistic research remain distinct.",
+                "passageSha256": "a7e531c1b1453f6a4884bab6f731cde6a9e0331182cb58d4cdc9b92721103b40",
+                "explanation": "Exposure, assay, sample, earlier comparisons, controlled tests and treatment-specific limits are all explicit in the connected investigation sequence. Source scope: Authored investigation sequence grounded in the named perturbation and reversibility experiments Point R-015: Exposure, assay, sample, earlier comparisons, controlled tests and treatment-specific limits are all explicit in the connected investigation sequence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-016",
+            "requirement": "Clinical response assessments and mechanistic research are distinct; compare exposure, engagement, pathway activity and response in suitable models.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A useful investigation first checks exposure, assay performance and what the sample represents. It then compares earlier and later specimens, the sampled sites, coverage and detection limits, and candidate target, pathway, state or environmental changes. Controlled models can test target engagement, pathway activity, damage and survival separately. Genetic perturbation or rescue, an appropriate comparison compound, and removal/re-exposure can strengthen a causal explanation, but off-target effects and altered growth can confound it. Culture does not reproduce every tissue, immune, exposure or human-safety condition; clinical response assessment and mechanistic research remain distinct.",
+                "passageSha256": "a7e531c1b1453f6a4884bab6f731cde6a9e0331182cb58d4cdc9b92721103b40",
+                "explanation": "The named fields explicitly carry this obligation: Clinical response assessments and mechanistic research are distinct; compare exposure, engagement, pathway activity and response in suitable models. Their scope and source depth are given per reference. Source scope: Authored investigation sequence grounded in the named perturbation and reversibility experiments Point R-016: Clinical response assessments and mechanistic research are distinct; compare exposure, engagement, pathway activity and response in suitable models."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-017",
+            "requirement": "Drug removal/re-exposure tests reversibility and genetic perturbation/rescue can test function, with matched controls and specificity limits.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Sharma 2010 found small drug-tolerant populations in human cancer-cell cultures. In PC9 lung cancer cells, persisters propagated without drug regained sensitivity within nine doublings; expanded persister populations required roughly 90 doublings or 20 to 30 passages. The observations supported a reversible chromatin-associated state in those systems, distinct from assuming a new permanent resistance mutation. They do not establish that a treatment break is safe or beneficial for a person. Drug withdrawal and re-exposure are experimental tests of reversibility, with matched conditions and controls.",
+                "passageSha256": "5ca7d6c6af7c5da342b7f522868ae03b55e5dc15c5224090dbd3a5242898ff24",
+                "explanation": "The named fields explicitly carry this obligation: Drug removal/re-exposure tests reversibility and genetic perturbation/rescue can test function, with matched controls and specificity limits. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-017: Drug removal/re-exposure tests reversibility and genetic perturbation/rescue can test function, with matched controls and specificity limits."
+              },
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A useful investigation first checks exposure, assay performance and what the sample represents. It then compares earlier and later specimens, the sampled sites, coverage and detection limits, and candidate target, pathway, state or environmental changes. Controlled models can test target engagement, pathway activity, damage and survival separately. Genetic perturbation or rescue, an appropriate comparison compound, and removal/re-exposure can strengthen a causal explanation, but off-target effects and altered growth can confound it. Culture does not reproduce every tissue, immune, exposure or human-safety condition; clinical response assessment and mechanistic research remain distinct.",
+                "passageSha256": "a7e531c1b1453f6a4884bab6f731cde6a9e0331182cb58d4cdc9b92721103b40",
+                "explanation": "The named fields explicitly carry this obligation: Drug removal/re-exposure tests reversibility and genetic perturbation/rescue can test function, with matched controls and specificity limits. Their scope and source depth are given per reference. Source scope: Authored investigation sequence grounded in the named perturbation and reversibility experiments Point R-017: Drug removal/re-exposure tests reversibility and genetic perturbation/rescue can test function, with matched controls and specificity limits."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-018",
+            "requirement": "Culture tests do not reproduce every tissue, immune, exposure and human-safety condition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A useful investigation first checks exposure, assay performance and what the sample represents. It then compares earlier and later specimens, the sampled sites, coverage and detection limits, and candidate target, pathway, state or environmental changes. Controlled models can test target engagement, pathway activity, damage and survival separately. Genetic perturbation or rescue, an appropriate comparison compound, and removal/re-exposure can strengthen a causal explanation, but off-target effects and altered growth can confound it. Culture does not reproduce every tissue, immune, exposure or human-safety condition; clinical response assessment and mechanistic research remain distinct.",
+                "passageSha256": "a7e531c1b1453f6a4884bab6f731cde6a9e0331182cb58d4cdc9b92721103b40",
+                "explanation": "The named fields explicitly carry this obligation: Culture tests do not reproduce every tissue, immune, exposure and human-safety condition. Their scope and source depth are given per reference. Source scope: Authored investigation sequence grounded in the named perturbation and reversibility experiments Point R-018: Culture tests do not reproduce every tissue, immune, exposure and human-safety condition."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-019",
+            "requirement": "Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "NCI describes changes that prevent a medicine interacting with its target and alternative growth routes that no longer depend on that target. Investigation can also ask whether the required target is still present and accessible, whether drug efflux or inadequate local exposure changes the amount reaching cells, whether death signalling is bypassed, and whether the surrounding tissue changes exposure or survival. These are competing or coexisting hypotheses, rather than a mechanism established by a failed scan response. Cross-resistance needs evidence for the actual drugs and the attributed mechanism; a shared class name does not establish it.",
+                "passageSha256": "86841ae114f93d47de37e89a3a309b2bb2e6dac515fa466faa9801f62728e5a6",
+                "explanation": "The named fields explicitly carry this obligation: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism. Their scope and source depth are given per reference. Source scope: Sourced mechanisms plus explicitly framed investigation hypotheses; no frequency or clinical rescue rule Point R-019: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism."
+              },
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Sharma 2010 found small drug-tolerant populations in human cancer-cell cultures. In PC9 lung cancer cells, persisters propagated without drug regained sensitivity within nine doublings; expanded persister populations required roughly 90 doublings or 20 to 30 passages. The observations supported a reversible chromatin-associated state in those systems, distinct from assuming a new permanent resistance mutation. They do not establish that a treatment break is safe or beneficial for a person. Drug withdrawal and re-exposure are experimental tests of reversibility, with matched conditions and controls.",
+                "passageSha256": "5ca7d6c6af7c5da342b7f522868ae03b55e5dc15c5224090dbd3a5242898ff24",
+                "explanation": "The named fields explicitly carry this obligation: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point R-019: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism."
+              },
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "A fictional population starts with 990 sensitive and 10 resistant cells, total 1,000. Removing 90 per cent of the sensitive cells leaves 99 sensitive plus 10 resistant cells, total 109. The resistant share rises from 10/1,000 = 1 per cent to 10/109, about 9.2 per cent, although the absolute resistant count stays at 10. No division, mutation or state switching is included. To display this honestly, compare absolute counts on one 0 to 1,000 scale and resistant fractions on a separately labelled 0 to 10 per cent scale. A larger fraction alone does not prove growth of that population, a newly induced mutation or a clinical treatment effect.",
+                "passageSha256": "7a8bcdb2459494fd4b0667fa66a688b5a69bf7a5c0a1d83db585b88d9b5f464a",
+                "explanation": "The named fields explicitly carry this obligation: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism. Their scope and source depth are given per reference. Source scope: Recomputed fictional arithmetic and freshly viewed light/dark chart interpretation Point R-019: Retain the four explicit confusions: detection/origin, fraction/count, tolerance/genetic permanence and failure-to-respond/proven escape mechanism."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-R-020",
+            "requirement": "Carry the full fictional later-variant/insufficient-earlier-coverage exercise: assess comparison and detection limit, then test causality; timing, origin and mechanism remain separate.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "resistance",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "37707091598b15fa18ea3a4906078cc2c12549456e37a6e865421cef1427aa7b",
+                "supportingExcerpt": "Combining drugs is a hypothesis that must address the measured failure at useful exposures and tolerable harm. NCI notes both the rationale for combinations and the possibility of serious targeted-treatment side effects. Different pathway targets do not guarantee nonoverlapping toxicity or clinical rescue. A later variant found in a fictional progression sample is especially hard to interpret if the earlier sample lacked enough coverage to detect it: it may have been present but undetected, arisen later or be unrelated to the observed failure. First check the comparison and detection limit, then test its treatment-specific function. Detection, origin, timing and causation are separate conclusions.",
+                "passageSha256": "423526504adca6fa70cebabb14295c079bef0268d32935443b22e2648f735f62",
+                "explanation": "Inadequate earlier coverage leaves origin/timing unresolved; causal function is a further test. Source scope: Source-constrained combination and sampling inference; no patient treatment recommendation Point R-020: Inadequate earlier coverage leaves origin/timing unresolved; causal function is a further test."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -110512,8 +110971,602 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator source-first full later-body and complete version-diff assessment; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-12",
+        "rationale": "All five later bodies, all original differences, eight source image themes and six Mermaid theme renders were read before fresh canonical-owner comparison. Unchanged original teaching is reused by exact identity, and the two later-only absences are separately verified. The immutable 142-row inventory originally misclassified one custody row; a pre-owner-read erratum removes it from credit, leaving 126 later and 70 original substantive obligations. Six committed draft-root records, including one newly registered broad DDR term, carry the stated teaching. Targeted primary readings, curated background, fictional arithmetic and authored inference are distinguished. Model, assay and label qualifications replace universal response, treatment-switch and cure claims. No main/live or independent acceptance is implied.",
+        "sectionHashes": [
+          "22733e5f3bd1d59ac7d4af00a98a807312af542b6a9ef34933424efad569a7f3",
+          "750bda045acd9779301a256f59642d75d660884ad4a11faa4c92acd903cb1deb",
+          "7c99c7e6ea8fa6692fa92e49297b13911f38027b454cc73180ff464ad79fb29c",
+          "4a3c64569b1a07820cd15e575ae427826b7355b6cd3fc4be581124857a066e6e",
+          "3413684a23511b95ce23b06145878c25da375e6f7b07be9a44663f87e5197805",
+          "ad02b411e6c70da96e365ec5c74a40aaba3e4accfea10c6b05e33326a94a0d23",
+          "67812825e5a53cb81297bfd180d7ec4fbfccab9be6f07f97de8ad04ecd33e386",
+          "a41772b0254f813da67be55495c86953c6c7eaaf9fc950065fe425d888cfc322",
+          "11aa81035e211c16cf3b794e85fbe1c9f0dd961988dff2a16d7d27e97db43aae",
+          "1a54436759c889194aec97a62cc7d4a48635f64fd2d91ffde358a58a8f9993f8",
+          "86af9d7a77ca1c6f11c1d9d729114017d3d8a650b3ad642f7cebc42a15cc3af7",
+          "7be86605f489dce14324b6b1c12d86fe6411931d0cfc1901f161ca1470f0ebc2"
+        ],
+        "points": [
+          {
+            "id": "repair-resistance-D-001",
+            "requirement": "Define DNA-damage-response inhibitors broadly and retain target and current repair-state dependence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "The named fields explicitly carry this obligation: Define DNA-damage-response inhibitors broadly and retain target and current repair-state dependence. Their scope and source depth are given per reference. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-001: Define DNA-damage-response inhibitors broadly and retain target and current repair-state dependence."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-002",
+            "requirement": "Carry the workshop pause/stabilisation/repair analogy while keeping the network overlapping rather than a single crew or a rigid two-sensors/two-pauses taxonomy.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "The named fields explicitly carry this obligation: Carry the workshop pause/stabilisation/repair analogy while keeping the network overlapping rather than a single crew or a rigid two-sensors/two-pauses taxonomy. Their scope and source depth are given per reference. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-002: Carry the workshop pause/stabilisation/repair analogy while keeping the network overlapping rather than a single crew or a rigid two-sensors/two-pauses taxonomy."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-003",
+            "requirement": "Explain DNA, replication stress and slowing/stalling copying machinery without equating every stress signal to a double-strand break.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "The named fields explicitly carry this obligation: Explain DNA, replication stress and slowing/stalling copying machinery without equating every stress signal to a double-strand break. Their scope and source depth are given per reference. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-003: Explain DNA, replication stress and slowing/stalling copying machinery without equating every stress signal to a double-strand break."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-004",
+            "requirement": "Verify ATM-associated break signalling/p53-G1 roles and model ATR sensitivity after defined ATM/p53 deficiency; a sequence change alone is not functional loss.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-004: Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Reaper 2011 reported an ATR-inhibitor interaction with ATM-p53 pathway deficiency in cells treated with DNA-damaging agents. That experimental context matters: an ATM alteration is not automatically functional loss, and this result is not an all-tumour monotherapy rule. Gatti-Mays 2020 studied prexasertib in nine people with previously treated recurrent or metastatic triple-negative breast cancer who were germline-BRCA wild-type. One had a partial response, four had stable disease, and eight had grade 3 or 4 afebrile neutropenia. This small single-group pilot illustrates both activity and marrow toxicity at its tested exposure; it does not validate a general repair-variant biomarker or a routine combination schedule.",
+                "passageSha256": "eb4b3a9e3c99b87d2c11d5b588cf0ba6b2f7775d5b62ebf4dd3c4a5f757a1f87",
+                "explanation": "Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-004: Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-004: Curated signalling roles and a defined-loss model rationale are separated from a TP53 or ATM variant being a clinical predictor."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-005",
+            "requirement": "Verify ATR-associated stalled-fork stress signalling and CHK1 activation, keeping other sensing machinery and target dependence implicit rather than claiming a standalone direct sensor.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "The named fields explicitly carry this obligation: Verify ATR-associated stalled-fork stress signalling and CHK1 activation, keeping other sensing machinery and target dependence implicit rather than claiming a standalone direct sensor. Their scope and source depth are given per reference. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-005: Verify ATR-associated stalled-fork stress signalling and CHK1 activation, keeping other sensing machinery and target dependence implicit rather than claiming a standalone direct sensor."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-006",
+            "requirement": "Verify CHK1 checkpoint signalling and the source’s G2/M rationale without claiming this is its only cellular role.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA is the cell's genetic material. During copying, a replication fork can slow or stall; that stress is not itself a diagnosis of a double-strand break. A workshop analogy separates pausing the job, stabilising unfinished work and repairing damage, while the actual response is an overlapping network. UniProt describes ATM-associated signalling after double-strand breaks and ATR-associated checkpoint signalling during replication stalling; ATR can phosphorylate CHK1 and other substrates. These labels do not make two proteins the only sensors or reduce each to one job.",
+                "passageSha256": "97e9d62a57c168cb74bc999bdd3cbcde42bd003a793499678f8e5eaad6a337d2",
+                "explanation": "The named fields explicitly carry this obligation: Verify CHK1 checkpoint signalling and the source’s G2/M rationale without claiming this is its only cellular role. Their scope and source depth are given per reference. Source scope: Curated human protein-function background plus an explicitly schematic workshop analogy Point D-006: Verify CHK1 checkpoint signalling and the source’s G2/M rationale without claiming this is its only cellular role."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "The named fields explicitly carry this obligation: Verify CHK1 checkpoint signalling and the source’s G2/M rationale without claiming this is its only cellular role. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-006: Verify CHK1 checkpoint signalling and the source’s G2/M rationale without claiming this is its only cellular role."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-007",
+            "requirement": "Verify the BRCA-wild-type advanced-TNBC prexasertib pilot:9participants,1partial response and8grade3/4neutropenia, with actual endpoint/exposure scope.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Reaper 2011 reported an ATR-inhibitor interaction with ATM-p53 pathway deficiency in cells treated with DNA-damaging agents. That experimental context matters: an ATM alteration is not automatically functional loss, and this result is not an all-tumour monotherapy rule. Gatti-Mays 2020 studied prexasertib in nine people with previously treated recurrent or metastatic triple-negative breast cancer who were germline-BRCA wild-type. One had a partial response, four had stable disease, and eight had grade 3 or 4 afebrile neutropenia. This small single-group pilot illustrates both activity and marrow toxicity at its tested exposure; it does not validate a general repair-variant biomarker or a routine combination schedule.",
+                "passageSha256": "eb4b3a9e3c99b87d2c11d5b588cf0ba6b2f7775d5b62ebf4dd3c4a5f757a1f87",
+                "explanation": "The nine-person germline-BRCA-wild-type pilot, one partial response and eight grade 3/4 afebrile-neutropenia cases retain their single-group scope. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-007: The nine-person germline-BRCA-wild-type pilot, one partial response and eight grade 3/4 afebrile-neutropenia cases retain their single-group scope."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-008",
+            "requirement": "Verify WEE1 inhibitory phosphorylation of CDK1 and the named p53-deficient combination models; TP53 mutation does not itself validate a clinical selection rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "The named fields explicitly carry this obligation: Verify WEE1 inhibitory phosphorylation of CDK1 and the named p53-deficient combination models; TP53 mutation does not itself validate a clinical selection rule. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-008: Verify WEE1 inhibitory phosphorylation of CDK1 and the named p53-deficient combination models; TP53 mutation does not itself validate a clinical selection rule."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-009",
+            "requirement": "Verify DNA-PK’s classical end-joining role and distinguish combination/radiation rationale from established selective tumour benefit or normal-tissue safety.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA-PK's catalytic component, PRKDC, participates in classical non-homologous end joining with other end-binding and repair proteins. Polymerase theta, encoded by POLQ, supports a different end-joining route that can use short sequence matches. Blocking checkpoint signalling and blocking an end-joining route are different interventions even if each reduces survival in a model. A rationale for combining a DNA-PK inhibitor with DNA damage or radiation does not by itself establish selective tumour benefit or spare normal dividing tissue. Synthetic lethality requires evidence about the paired functional defects, rather than two gene names on a report.",
+                "passageSha256": "39fcf22e63892084348ddf3f13a37d58493f2bb0ae8723f6d916687e49d138a4",
+                "explanation": "The named fields explicitly carry this obligation: Verify DNA-PK’s classical end-joining role and distinguish combination/radiation rationale from established selective tumour benefit or normal-tissue safety. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-009: Verify DNA-PK’s classical end-joining role and distinguish combination/radiation rationale from established selective tumour benefit or normal-tissue safety."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-010",
+            "requirement": "Verify POLQ/POLtheta and short-match theta-mediated end joining, with selected HR-deficient dependency rather than every resistant tumour.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA-PK's catalytic component, PRKDC, participates in classical non-homologous end joining with other end-binding and repair proteins. Polymerase theta, encoded by POLQ, supports a different end-joining route that can use short sequence matches. Blocking checkpoint signalling and blocking an end-joining route are different interventions even if each reduces survival in a model. A rationale for combining a DNA-PK inhibitor with DNA damage or radiation does not by itself establish selective tumour benefit or spare normal dividing tissue. Synthetic lethality requires evidence about the paired functional defects, rather than two gene names on a report.",
+                "passageSha256": "39fcf22e63892084348ddf3f13a37d58493f2bb0ae8723f6d916687e49d138a4",
+                "explanation": "The named fields explicitly carry this obligation: Verify POLQ/POLtheta and short-match theta-mediated end joining, with selected HR-deficient dependency rather than every resistant tumour. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-010: Verify POLQ/POLtheta and short-match theta-mediated end joining, with selected HR-deficient dependency rather than every resistant tumour."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Zatreanu 2021 studied ART558, an allosteric inhibitor of polymerase theta's polymerase domain. It impaired theta-mediated end joining rather than classical non-homologous end joining, and showed activity in selected BRCA-deficient models, including PARP-resistant models with 53BP1 or Shieldin loss. Zhou 2021 instead studied novobiocin against the ATPase domain in cell and mouse tumour models. These are different compounds and domains; their experimental specificity and activity cannot be transferred automatically to another polymerase-theta drug or to a patient.",
+                "passageSha256": "566cd7ad3de4dd88445a1f40eb8da9ff5e5ac21a3cce2bf5778a8bcc41b0fff3",
+                "explanation": "The named fields explicitly carry this obligation: Verify POLQ/POLtheta and short-match theta-mediated end joining, with selected HR-deficient dependency rather than every resistant tumour. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-010: Verify POLQ/POLtheta and short-match theta-mediated end joining, with selected HR-deficient dependency rather than every resistant tumour."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-011",
+            "requirement": "Read both complete three-panel DDR cartoons: ATR stress signal, WEE1 inhibitory phosphate and POLtheta short-match joining; bars and DNA strokes are schematic, not doses or a complete literal network.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A three-panel teaching cartoon can show an ATR-associated stress signal, WEE1 placing an inhibitory phosphate, and polymerase-theta joining with short matches. Its bars and DNA strokes supply schematic roles, not concentrations, a complete literal network or a treatment ranking. Follow a checkpoint diagram by asking what functional loss is demonstrated, what job is interrupted and what measured dependency remains. A historical genomic scar does not establish the current repair state; a PARP-resistant label does not establish polymerase-theta sensitivity; and loss of one checkpoint does not establish clinical benefit from inhibiting another. These distinctions also prevent treating ATR inhibition and an ATM-loss biomarker as the same fact.",
+                "passageSha256": "d53a9aa3c987fb341fcdbfa3adbd390ce4ab43fc1f91c74c352d6f8d1f97edee",
+                "explanation": "Both source themes are fully viewed and their three schematic jobs are carried; bars and strokes are not dose or benefit measurements. Source scope: Freshly viewed source-art interpretation and mechanism-constrained reasoning; no artwork imported Point D-011: Both source themes are fully viewed and their three schematic jobs are carried; bars and strokes are not dose or benefit measurements."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-012",
+            "requirement": "Carry the full checkpoint Mermaid while qualifying the edge that assumes any TP53 mutation loses the first checkpoint and creates a clinically useful second-checkpoint dependency.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "The diagram edge that equates every TP53 mutation with checkpoint loss is explicitly qualified. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-012: The diagram edge that equates every TP53 mutation with checkpoint loss is explicitly qualified."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A three-panel teaching cartoon can show an ATR-associated stress signal, WEE1 placing an inhibitory phosphate, and polymerase-theta joining with short matches. Its bars and DNA strokes supply schematic roles, not concentrations, a complete literal network or a treatment ranking. Follow a checkpoint diagram by asking what functional loss is demonstrated, what job is interrupted and what measured dependency remains. A historical genomic scar does not establish the current repair state; a PARP-resistant label does not establish polymerase-theta sensitivity; and loss of one checkpoint does not establish clinical benefit from inhibiting another. These distinctions also prevent treating ATR inhibition and an ATM-loss biomarker as the same fact.",
+                "passageSha256": "d53a9aa3c987fb341fcdbfa3adbd390ce4ab43fc1f91c74c352d6f8d1f97edee",
+                "explanation": "The diagram edge that equates every TP53 mutation with checkpoint loss is explicitly qualified. Source scope: Freshly viewed source-art interpretation and mechanism-constrained reasoning; no artwork imported Point D-012: The diagram edge that equates every TP53 mutation with checkpoint loss is explicitly qualified."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-013",
+            "requirement": "Define kinase phosphate transfer and distinguish WEE1’s inhibitory substrate effect from a universal claim that phosphorylation activates a protein.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "WEE1-mediated inhibitory phosphorylation directly prevents treating every kinase substrate as activated. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-013: WEE1-mediated inhibitory phosphorylation directly prevents treating every kinase substrate as activated."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-014",
+            "requirement": "Checkpoint inhibition and loss of an end-joining route are distinct mechanisms even when each reduces experimental survival.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA-PK's catalytic component, PRKDC, participates in classical non-homologous end joining with other end-binding and repair proteins. Polymerase theta, encoded by POLQ, supports a different end-joining route that can use short sequence matches. Blocking checkpoint signalling and blocking an end-joining route are different interventions even if each reduces survival in a model. A rationale for combining a DNA-PK inhibitor with DNA damage or radiation does not by itself establish selective tumour benefit or spare normal dividing tissue. Synthetic lethality requires evidence about the paired functional defects, rather than two gene names on a report.",
+                "passageSha256": "39fcf22e63892084348ddf3f13a37d58493f2bb0ae8723f6d916687e49d138a4",
+                "explanation": "The named fields explicitly carry this obligation: Checkpoint inhibition and loss of an end-joining route are distinct mechanisms even when each reduces experimental survival. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-014: Checkpoint inhibition and loss of an end-joining route are distinct mechanisms even when each reduces experimental survival."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-015",
+            "requirement": "A synthetic-lethal relationship requires evidence about paired functional losses rather than a repair-gene name alone.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Reaper 2011 reported an ATR-inhibitor interaction with ATM-p53 pathway deficiency in cells treated with DNA-damaging agents. That experimental context matters: an ATM alteration is not automatically functional loss, and this result is not an all-tumour monotherapy rule. Gatti-Mays 2020 studied prexasertib in nine people with previously treated recurrent or metastatic triple-negative breast cancer who were germline-BRCA wild-type. One had a partial response, four had stable disease, and eight had grade 3 or 4 afebrile neutropenia. This small single-group pilot illustrates both activity and marrow toxicity at its tested exposure; it does not validate a general repair-variant biomarker or a routine combination schedule.",
+                "passageSha256": "eb4b3a9e3c99b87d2c11d5b588cf0ba6b2f7775d5b62ebf4dd3c4a5f757a1f87",
+                "explanation": "A paired functional loss requires evidence; a gene-name combination is not itself synthetic lethality. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-015: A paired functional loss requires evidence; a gene-name combination is not itself synthetic lethality."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA-PK's catalytic component, PRKDC, participates in classical non-homologous end joining with other end-binding and repair proteins. Polymerase theta, encoded by POLQ, supports a different end-joining route that can use short sequence matches. Blocking checkpoint signalling and blocking an end-joining route are different interventions even if each reduces survival in a model. A rationale for combining a DNA-PK inhibitor with DNA damage or radiation does not by itself establish selective tumour benefit or spare normal dividing tissue. Synthetic lethality requires evidence about the paired functional defects, rather than two gene names on a report.",
+                "passageSha256": "39fcf22e63892084348ddf3f13a37d58493f2bb0ae8723f6d916687e49d138a4",
+                "explanation": "A paired functional loss requires evidence; a gene-name combination is not itself synthetic lethality. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-015: A paired functional loss requires evidence; a gene-name combination is not itself synthetic lethality."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-016",
+            "requirement": "Historical genomic scars do not prove the current repair dependency.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A three-panel teaching cartoon can show an ATR-associated stress signal, WEE1 placing an inhibitory phosphate, and polymerase-theta joining with short matches. Its bars and DNA strokes supply schematic roles, not concentrations, a complete literal network or a treatment ranking. Follow a checkpoint diagram by asking what functional loss is demonstrated, what job is interrupted and what measured dependency remains. A historical genomic scar does not establish the current repair state; a PARP-resistant label does not establish polymerase-theta sensitivity; and loss of one checkpoint does not establish clinical benefit from inhibiting another. These distinctions also prevent treating ATR inhibition and an ATM-loss biomarker as the same fact.",
+                "passageSha256": "d53a9aa3c987fb341fcdbfa3adbd390ce4ab43fc1f91c74c352d6f8d1f97edee",
+                "explanation": "The named fields explicitly carry this obligation: Historical genomic scars do not prove the current repair dependency. Their scope and source depth are given per reference. Source scope: Freshly viewed source-art interpretation and mechanism-constrained reasoning; no artwork imported Point D-016: Historical genomic scars do not prove the current repair dependency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-017",
+            "requirement": "Verify the primary POLtheta studies’ selected HR-deficient and PARP-resistant models, including what compound/domain and resistance mechanisms were tested.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Zatreanu 2021 studied ART558, an allosteric inhibitor of polymerase theta's polymerase domain. It impaired theta-mediated end joining rather than classical non-homologous end joining, and showed activity in selected BRCA-deficient models, including PARP-resistant models with 53BP1 or Shieldin loss. Zhou 2021 instead studied novobiocin against the ATPase domain in cell and mouse tumour models. These are different compounds and domains; their experimental specificity and activity cannot be transferred automatically to another polymerase-theta drug or to a patient.",
+                "passageSha256": "566cd7ad3de4dd88445a1f40eb8da9ff5e5ac21a3cce2bf5778a8bcc41b0fff3",
+                "explanation": "ART558 and novobiocin retain their different domains and selected model scopes. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-017: ART558 and novobiocin retain their different domains and selected model scopes."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "ART558 and novobiocin retain their different domains and selected model scopes. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-017: ART558 and novobiocin retain their different domains and selected model scopes."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-018",
+            "requirement": "Keep53BP1/Shieldin-loss model contexts separate from BRCA2 reversions restoring gene function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Zatreanu 2021 studied ART558, an allosteric inhibitor of polymerase theta's polymerase domain. It impaired theta-mediated end joining rather than classical non-homologous end joining, and showed activity in selected BRCA-deficient models, including PARP-resistant models with 53BP1 or Shieldin loss. Zhou 2021 instead studied novobiocin against the ATPase domain in cell and mouse tumour models. These are different compounds and domains; their experimental specificity and activity cannot be transferred automatically to another polymerase-theta drug or to a patient.",
+                "passageSha256": "566cd7ad3de4dd88445a1f40eb8da9ff5e5ac21a3cce2bf5778a8bcc41b0fff3",
+                "explanation": "The named fields explicitly carry this obligation: Keep53BP1/Shieldin-loss model contexts separate from BRCA2 reversions restoring gene function. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-018: Keep53BP1/Shieldin-loss model contexts separate from BRCA2 reversions restoring gene function."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "The named fields explicitly carry this obligation: Keep53BP1/Shieldin-loss model contexts separate from BRCA2 reversions restoring gene function. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-018: Keep53BP1/Shieldin-loss model contexts separate from BRCA2 reversions restoring gene function."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-019",
+            "requirement": "Verify the novobiocin study’s BRCA2-reverted models resisting both PARP inhibition and novobiocin, without extrapolating to every POLtheta inhibitor.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "The exact BRCA2-reverted PEO4 and CAPAN1-CR novobiocin findings are read in the primary body, not inferred from the abstract. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-019: The exact BRCA2-reverted PEO4 and CAPAN1-CR novobiocin findings are read in the primary body, not inferred from the abstract."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-020",
+            "requirement": "Different POLtheta compounds can target different protein domains; one compound’s model result does not establish another’s specificity or clinical activity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Zatreanu 2021 studied ART558, an allosteric inhibitor of polymerase theta's polymerase domain. It impaired theta-mediated end joining rather than classical non-homologous end joining, and showed activity in selected BRCA-deficient models, including PARP-resistant models with 53BP1 or Shieldin loss. Zhou 2021 instead studied novobiocin against the ATPase domain in cell and mouse tumour models. These are different compounds and domains; their experimental specificity and activity cannot be transferred automatically to another polymerase-theta drug or to a patient.",
+                "passageSha256": "566cd7ad3de4dd88445a1f40eb8da9ff5e5ac21a3cce2bf5778a8bcc41b0fff3",
+                "explanation": "One compound/domain does not establish every polymerase-theta inhibitor’s specificity or activity. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-020: One compound/domain does not establish every polymerase-theta inhibitor’s specificity or activity."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "One compound/domain does not establish every polymerase-theta inhibitor’s specificity or activity. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-020: One compound/domain does not establish every polymerase-theta inhibitor’s specificity or activity."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-021",
+            "requirement": "A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A kinase transfers a phosphate group to a substrate; phosphorylation does not always turn that substrate on. WEE1 phosphorylates CDK1 at tyrosine 15 and inhibits entry into mitosis. CHK1 also acts through checkpoint and repair pathways, including inhibition of CDC25 regulators. A simplified p53/G1 and WEE1/G2 checkpoint drawing can motivate a hypothesis after defined functional checkpoint loss; a TP53 sequence variant alone does not prove that the first pause is absent or that a second pause is a validated treatment dependency. Hirai 2009 tested WEE1 inhibition with DNA-damaging drugs in specified p53-deficient models, not a universal clinical TP53-selection rule.",
+                "passageSha256": "1fae483c93db63cfde9fedc687e22ef72da8bf298fc9b2f057fe7b5ccd41c529",
+                "explanation": "The named fields explicitly carry this obligation: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-021: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Reaper 2011 reported an ATR-inhibitor interaction with ATM-p53 pathway deficiency in cells treated with DNA-damaging agents. That experimental context matters: an ATM alteration is not automatically functional loss, and this result is not an all-tumour monotherapy rule. Gatti-Mays 2020 studied prexasertib in nine people with previously treated recurrent or metastatic triple-negative breast cancer who were germline-BRCA wild-type. One had a partial response, four had stable disease, and eight had grade 3 or 4 afebrile neutropenia. This small single-group pilot illustrates both activity and marrow toxicity at its tested exposure; it does not validate a general repair-variant biomarker or a routine combination schedule.",
+                "passageSha256": "eb4b3a9e3c99b87d2c11d5b588cf0ba6b2f7775d5b62ebf4dd3c4a5f757a1f87",
+                "explanation": "The named fields explicitly carry this obligation: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-021: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A three-panel teaching cartoon can show an ATR-associated stress signal, WEE1 placing an inhibitory phosphate, and polymerase-theta joining with short matches. Its bars and DNA strokes supply schematic roles, not concentrations, a complete literal network or a treatment ranking. Follow a checkpoint diagram by asking what functional loss is demonstrated, what job is interrupted and what measured dependency remains. A historical genomic scar does not establish the current repair state; a PARP-resistant label does not establish polymerase-theta sensitivity; and loss of one checkpoint does not establish clinical benefit from inhibiting another. These distinctions also prevent treating ATR inhibition and an ATM-loss biomarker as the same fact.",
+                "passageSha256": "d53a9aa3c987fb341fcdbfa3adbd390ce4ab43fc1f91c74c352d6f8d1f97edee",
+                "explanation": "The named fields explicitly carry this obligation: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker. Their scope and source depth are given per reference. Source scope: Freshly viewed source-art interpretation and mechanism-constrained reasoning; no artwork imported Point D-021: A preclinical rescue or TP53 alteration does not establish a personal DDR treatment choice or validated clinical biomarker."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-022",
+            "requirement": "Combinations can affect normal dividing cells; different targets do not guarantee nonoverlapping toxicity.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "Reaper 2011 reported an ATR-inhibitor interaction with ATM-p53 pathway deficiency in cells treated with DNA-damaging agents. That experimental context matters: an ATM alteration is not automatically functional loss, and this result is not an all-tumour monotherapy rule. Gatti-Mays 2020 studied prexasertib in nine people with previously treated recurrent or metastatic triple-negative breast cancer who were germline-BRCA wild-type. One had a partial response, four had stable disease, and eight had grade 3 or 4 afebrile neutropenia. This small single-group pilot illustrates both activity and marrow toxicity at its tested exposure; it does not validate a general repair-variant biomarker or a routine combination schedule.",
+                "passageSha256": "eb4b3a9e3c99b87d2c11d5b588cf0ba6b2f7775d5b62ebf4dd3c4a5f757a1f87",
+                "explanation": "The named fields explicitly carry this obligation: Combinations can affect normal dividing cells; different targets do not guarantee nonoverlapping toxicity. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-022: Combinations can affect normal dividing cells; different targets do not guarantee nonoverlapping toxicity."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "DNA-PK's catalytic component, PRKDC, participates in classical non-homologous end joining with other end-binding and repair proteins. Polymerase theta, encoded by POLQ, supports a different end-joining route that can use short sequence matches. Blocking checkpoint signalling and blocking an end-joining route are different interventions even if each reduces survival in a model. A rationale for combining a DNA-PK inhibitor with DNA damage or radiation does not by itself establish selective tumour benefit or spare normal dividing tissue. Synthetic lethality requires evidence about the paired functional defects, rather than two gene names on a report.",
+                "passageSha256": "39fcf22e63892084348ddf3f13a37d58493f2bb0ae8723f6d916687e49d138a4",
+                "explanation": "The named fields explicitly carry this obligation: Combinations can affect normal dividing cells; different targets do not guarantee nonoverlapping toxicity. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-022: Combinations can affect normal dividing cells; different targets do not guarantee nonoverlapping toxicity."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-023",
+            "requirement": "Carry the measurement card separating engagement, damage, repair capacity and survival, with named phosphorylation sites, foci and regrowth after removal.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The measurement question determines the assay. Engagement and downstream action can be investigated with specified phosphorylation sites, such as WEE1-related CDK1 tyrosine 15, rather than an unspecified phosphate signal. DNA-damage markers, RAD51 or other repair foci, functional repair assays, and survival or regrowth after drug removal ask further questions. Foci are visible protein clusters, not proof by themselves that repair finished successfully. Use matched repair-proficient and deficient models, genetic controls, specified concentrations, exposure times and sampling times. Nanomolar means nanomoles per litre and micromolar means micromoles per litre; a culture concentration is not a clinical dose.",
+                "passageSha256": "fa77bed2bae0d8dc5bad6ea0ef2cce4ce540256c04605d801365f05977858a61",
+                "explanation": "Engagement/site-specific phosphorylation, damage, repair and survival/regrowth remain separate measurements. Source scope: Read assay findings plus explicitly normative measurement and unit interpretation Point D-023: Engagement/site-specific phosphorylation, damage, repair and survival/regrowth remain separate measurements."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-024",
+            "requirement": "Foci are visible protein clusters, not by themselves proof of completed successful repair.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The measurement question determines the assay. Engagement and downstream action can be investigated with specified phosphorylation sites, such as WEE1-related CDK1 tyrosine 15, rather than an unspecified phosphate signal. DNA-damage markers, RAD51 or other repair foci, functional repair assays, and survival or regrowth after drug removal ask further questions. Foci are visible protein clusters, not proof by themselves that repair finished successfully. Use matched repair-proficient and deficient models, genetic controls, specified concentrations, exposure times and sampling times. Nanomolar means nanomoles per litre and micromolar means micromoles per litre; a culture concentration is not a clinical dose.",
+                "passageSha256": "fa77bed2bae0d8dc5bad6ea0ef2cce4ce540256c04605d801365f05977858a61",
+                "explanation": "The named fields explicitly carry this obligation: Foci are visible protein clusters, not by themselves proof of completed successful repair. Their scope and source depth are given per reference. Source scope: Read assay findings plus explicitly normative measurement and unit interpretation Point D-024: Foci are visible protein clusters, not by themselves proof of completed successful repair."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-025",
+            "requirement": "Keep matched repair states/genetic controls, times, concentrations and nM/µM units explicit; a culture concentration is not a clinical dose.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The measurement question determines the assay. Engagement and downstream action can be investigated with specified phosphorylation sites, such as WEE1-related CDK1 tyrosine 15, rather than an unspecified phosphate signal. DNA-damage markers, RAD51 or other repair foci, functional repair assays, and survival or regrowth after drug removal ask further questions. Foci are visible protein clusters, not proof by themselves that repair finished successfully. Use matched repair-proficient and deficient models, genetic controls, specified concentrations, exposure times and sampling times. Nanomolar means nanomoles per litre and micromolar means micromoles per litre; a culture concentration is not a clinical dose.",
+                "passageSha256": "fa77bed2bae0d8dc5bad6ea0ef2cce4ce540256c04605d801365f05977858a61",
+                "explanation": "The named fields explicitly carry this obligation: Keep matched repair states/genetic controls, times, concentrations and nM/µM units explicit; a culture concentration is not a clinical dose. Their scope and source depth are given per reference. Source scope: Read assay findings plus explicitly normative measurement and unit interpretation Point D-025: Keep matched repair states/genetic controls, times, concentrations and nM/µM units explicit; a culture concentration is not a clinical dose."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-026",
+            "requirement": "Retain DDR/pathway, scar/function, PARP-resistance/POLtheta-sensitivity, TP53/selection and ATR/ATM-loss confusions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "The named fields explicitly carry this obligation: Retain DDR/pathway, scar/function, PARP-resistance/POLtheta-sensitivity, TP53/selection and ATR/ATM-loss confusions. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-026: Retain DDR/pathway, scar/function, PARP-resistance/POLtheta-sensitivity, TP53/selection and ATR/ATM-loss confusions."
+              },
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "A three-panel teaching cartoon can show an ATR-associated stress signal, WEE1 placing an inhibitory phosphate, and polymerase-theta joining with short matches. Its bars and DNA strokes supply schematic roles, not concentrations, a complete literal network or a treatment ranking. Follow a checkpoint diagram by asking what functional loss is demonstrated, what job is interrupted and what measured dependency remains. A historical genomic scar does not establish the current repair state; a PARP-resistant label does not establish polymerase-theta sensitivity; and loss of one checkpoint does not establish clinical benefit from inhibiting another. These distinctions also prevent treating ATR inhibition and an ATM-loss biomarker as the same fact.",
+                "passageSha256": "d53a9aa3c987fb341fcdbfa3adbd390ce4ab43fc1f91c74c352d6f8d1f97edee",
+                "explanation": "The named fields explicitly carry this obligation: Retain DDR/pathway, scar/function, PARP-resistance/POLtheta-sensitivity, TP53/selection and ATR/ATM-loss confusions. Their scope and source depth are given per reference. Source scope: Freshly viewed source-art interpretation and mechanism-constrained reasoning; no artwork imported Point D-026: Retain DDR/pathway, scar/function, PARP-resistance/POLtheta-sensitivity, TP53/selection and ATR/ATM-loss confusions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-D-027",
+            "requirement": "Carry the two fictional PARP-resistant cultures,53BP1-loss/retained-BRCA-defect versus BRCA2-reversion, requiring the actual compound and repair state and leaving clinical benefit/safety unresolved.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "dna-damage-response-inhibitors",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "ac4117af79a04ac10328567b081fc22ca93c2d97b2473375876e2b8b9f68aac7",
+                "supportingExcerpt": "The novobiocin study also tested BRCA2-reverted PEO4 and CAPAN1-CR cells against their deficient parental lines. The reverted cells resisted both PARP inhibition and novobiocin. Other PARP-resistant models, including a BRCA1-mutant/53BP1-loss model, remained novobiocin-sensitive. Thus PARP resistance alone did not identify one common vulnerability, and the study does not establish resistance to every polymerase-theta inhibitor. In two fictional PARP-resistant cultures, one retaining a BRCA defect with 53BP1 loss and another carrying a BRCA2 reversion, test the actual compound and current repair state separately. Even a positive experiment leaves clinical benefit and safety unresolved.",
+                "passageSha256": "6260d303436136c480a4fdfd7411e00394aa1b63710d7aacef69fab38a336183",
+                "explanation": "The full two-culture example tests repair state and the actual compound, leaving clinical benefit and safety unresolved. Source scope: Source-backed teaching with explicitly marked reading inferences Point D-027: The full two-culture example tests repair state and the actual compound, leaving clinical benefit and safety unresolved."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -110665,8 +111718,497 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Coordinator source-first full later-body and complete version-diff assessment; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-12",
+        "rationale": "All five later bodies, all original differences, eight source image themes and six Mermaid theme renders were read before fresh canonical-owner comparison. Unchanged original teaching is reused by exact identity, and the two later-only absences are separately verified. The immutable 142-row inventory originally misclassified one custody row; a pre-owner-read erratum removes it from credit, leaving 126 later and 70 original substantive obligations. Six committed draft-root records, including one newly registered broad DDR term, carry the stated teaching. Targeted primary readings, curated background, fictional arithmetic and authored inference are distinguished. Model, assay and label qualifications replace universal response, treatment-switch and cure claims. No main/live or independent acceptance is implied.",
+        "sectionHashes": [
+          "55b95db6535111aceae3830850cbd158e87a1a0192d1c6e4fd8bb8a9ada0eaf3",
+          "3b74eea864a63448e8e1c8b7dc0e3ff297d3df780ef40a51593753523b94634e",
+          "a30394a0408a06a28f373fea1c128ccff1adc3982ca8c3a825782fcf2a85b73e",
+          "4a2907bda8e139ba7fc6fd18d2d6860190f7690e7694ac8665285405c46ad9ed",
+          "e7c5f83731500ed4493e79ea21e52c5eeb643c6b1489d8a3f8496f78721b7f0f",
+          "98b0e97042999be9d3f1f9ca2ea7dae8d1efd222055e95795b95ce915786e31b",
+          "725fe5d74a72dca80a66f1034bcf8a4aa2215f854f124550ffe48a2bb6b2b9c1",
+          "2dc7ca759d4a9dafeb14e695d86d40e13e096b19599036f41e05885d45b915f4",
+          "09f29c44961f1862b951fc98f8edf3b39757884fe95492367e50f7bbc689d885",
+          "44028733ce76df6b5513dd912391237918b4920b1bf92c013983422a8dc6ab74",
+          "bbafa49f855aa1e6b3b7304c998a1bd031e9f7a6717bfb1a821e7bb94a2eea4d"
+        ],
+        "points": [
+          {
+            "id": "repair-resistance-P-001",
+            "requirement": "Define catalytic inhibition and PARP-DNA trapping as related but different actions, with obstacles that cells must tolerate or resolve.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "PARP means poly(ADP-ribose) polymerase, a protein family involved in cellular signalling and repair. PARP1 is one representative. At damaged DNA it can build signals on proteins from chains of the chemical unit ADP-ribose, called poly(ADP-ribose), or PAR. Catalytic inhibition reduces this output. Some inhibitors can also stabilise DNA-associated PARP complexes, often called trapping. A repair-worker analogy separates a reduced call for help from a worker remaining in a doorway; proteins and medicines have no purpose, and the cell has more than one response route.",
+                "passageSha256": "994c5175a6aca577b4e3c6d7d74e6d119cc499bc8722d8c3514ce587cca032ef",
+                "explanation": "Catalytic output and stabilised DNA complexes are distinguished from the resulting cell-response hypotheses. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-001: Catalytic output and stabilised DNA complexes are distinguished from the resulting cell-response hypotheses."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "Catalytic output and stabilised DNA complexes are distinguished from the resulting cell-response hypotheses. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-001: Catalytic output and stabilised DNA complexes are distinguished from the resulting cell-response hypotheses."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-002",
+            "requirement": "Carry the repair-worker/call/doorway analogy and its multiple-routes/protein/drug limits, rather than literal purposeful action.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "PARP means poly(ADP-ribose) polymerase, a protein family involved in cellular signalling and repair. PARP1 is one representative. At damaged DNA it can build signals on proteins from chains of the chemical unit ADP-ribose, called poly(ADP-ribose), or PAR. Catalytic inhibition reduces this output. Some inhibitors can also stabilise DNA-associated PARP complexes, often called trapping. A repair-worker analogy separates a reduced call for help from a worker remaining in a doorway; proteins and medicines have no purpose, and the cell has more than one response route.",
+                "passageSha256": "994c5175a6aca577b4e3c6d7d74e6d119cc499bc8722d8c3514ce587cca032ef",
+                "explanation": "The named fields explicitly carry this obligation: Carry the repair-worker/call/doorway analogy and its multiple-routes/protein/drug limits, rather than literal purposeful action. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-002: Carry the repair-worker/call/doorway analogy and its multiple-routes/protein/drug limits, rather than literal purposeful action."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-003",
+            "requirement": "Define PARP, DNA and ADP-ribose/PAR signalling; distinguish reduced catalytic output from stabilised DNA-associated complexes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "PARP means poly(ADP-ribose) polymerase, a protein family involved in cellular signalling and repair. PARP1 is one representative. At damaged DNA it can build signals on proteins from chains of the chemical unit ADP-ribose, called poly(ADP-ribose), or PAR. Catalytic inhibition reduces this output. Some inhibitors can also stabilise DNA-associated PARP complexes, often called trapping. A repair-worker analogy separates a reduced call for help from a worker remaining in a doorway; proteins and medicines have no purpose, and the cell has more than one response route.",
+                "passageSha256": "994c5175a6aca577b4e3c6d7d74e6d119cc499bc8722d8c3514ce587cca032ef",
+                "explanation": "The named fields explicitly carry this obligation: Define PARP, DNA and ADP-ribose/PAR signalling; distinguish reduced catalytic output from stabilised DNA-associated complexes. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-003: Define PARP, DNA and ADP-ribose/PAR signalling; distinguish reduced catalytic output from stabilised DNA-associated complexes."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-004",
+            "requirement": "Relate protein obstacles, copying stress and repair challenge without making every encounter an observed fork break or guaranteed death.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "The named fields explicitly carry this obligation: Relate protein obstacles, copying stress and repair challenge without making every encounter an observed fork break or guaranteed death. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-004: Relate protein obstacles, copying stress and repair challenge without making every encounter an observed fork break or guaranteed death."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-005",
+            "requirement": "Verify Farmer experimental repair-deficient synthetic lethality at its actual model scope, rather than inferring sensitivity from any repair-gene variant.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "The named fields explicitly carry this obligation: Verify Farmer experimental repair-deficient synthetic lethality at its actual model scope, rather than inferring sensitivity from any repair-gene variant. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-005: Verify Farmer experimental repair-deficient synthetic lethality at its actual model scope, rather than inferring sensitivity from any repair-gene variant."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-006",
+            "requirement": "Carry obstacle and gap explanations as nonexclusive mechanistic models whose relative contribution in patients is unsettled.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "Obstacle and gap models are not made mutually exclusive or assigned a universal clinical contribution. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-006: Obstacle and gap models are not made mutually exclusive or assigned a universal clinical contribution."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-007",
+            "requirement": "Verify Cong’s cell-model gap, resistance/resensitisation and HR/fork-protection comparisons without turning those models into a universal clinical rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "Cong’s cellular gap findings remain model-specific; the resolved author-order erratum is recorded at its actual read scope. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-007: Cong’s cellular gap findings remain model-specific; the resolved author-order erratum is recorded at its actual read scope."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-008",
+            "requirement": "Verify Murai2012 niraparib/olaparib versus veliparib trapping in the tested systems/exposures, distinct from catalytic inhibition.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Murai 2012 compared niraparib, olaparib and veliparib in defined cellular and biochemical systems: niraparib and olaparib trapped PARP-DNA complexes more strongly than veliparib, despite catalytic inhibition being a different comparison. Murai 2014 compared BMN673, now talazoparib, with olaparib and rucaparib. In damaged-DNA cell assays, 0.1 micromolar BMN673 produced a trapping signal comparable to 10 micromolar olaparib, about a 100-fold concentration difference; the purified DNA-binding assay gave a different, roughly 40-fold comparison. Similar catalytic effects did not imply similar trapping. Strongest among compounds tested in 2014 is not a ranking of clinical benefit, tolerated exposure or personal treatment choices.",
+                "passageSha256": "ed092954e3e6ab7fd8d5eabf8b436703d2fa68d608582fd29d055ce37f48279e",
+                "explanation": "The Murai 2012 trapping comparison is separate from catalytic potency at the tested systems/exposures. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-008: The Murai 2012 trapping comparison is separate from catalytic potency at the tested systems/exposures."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-009",
+            "requirement": "Verify Murai2014 BMN673/talazoparib catalytic comparison and approximately100-fold trapping potency against actual tested comparators; strongest-tested is not a clinical best-drug ranking.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Murai 2012 compared niraparib, olaparib and veliparib in defined cellular and biochemical systems: niraparib and olaparib trapped PARP-DNA complexes more strongly than veliparib, despite catalytic inhibition being a different comparison. Murai 2014 compared BMN673, now talazoparib, with olaparib and rucaparib. In damaged-DNA cell assays, 0.1 micromolar BMN673 produced a trapping signal comparable to 10 micromolar olaparib, about a 100-fold concentration difference; the purified DNA-binding assay gave a different, roughly 40-fold comparison. Similar catalytic effects did not imply similar trapping. Strongest among compounds tested in 2014 is not a ranking of clinical benefit, tolerated exposure or personal treatment choices.",
+                "passageSha256": "ed092954e3e6ab7fd8d5eabf8b436703d2fa68d608582fd29d055ce37f48279e",
+                "explanation": "The approximately 100-fold cellular comparison and approximately 40-fold purified-DNA comparison are not conflated or converted into patient ranking. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-009: The approximately 100-fold cellular comparison and approximately 40-fold purified-DNA comparison are not conflated or converted into patient ranking."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-010",
+            "requirement": "Read both full catalytic-output PNG themes: matched DNA-bound PARP1 snapshots, long versus shorter schematic PAR signal, generic catalytic-pocket inhibitor and no bound-duration measurement.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+                "passageSha256": "a2eb5338e5bb2f00bb87f5f5851f1f94e4cf01721bf716d1984e125da61d3c15",
+                "explanation": "The complete catalytic snapshots were viewed; chain size is a schematic output and not a bound-duration experiment. Source scope: Fresh full light/dark PNG and Mermaid interpretation, constrained by distinct assay quantities Point P-010: The complete catalytic snapshots were viewed; chain size is a schematic output and not a bound-duration experiment."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-011",
+            "requirement": "Read both full occupancy PNG themes: copying machinery approaches retained PARP1 ahead with visible separation; no measured collision, literal conformation or guaranteed outcome is established.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+                "passageSha256": "a2eb5338e5bb2f00bb87f5f5851f1f94e4cf01721bf716d1984e125da61d3c15",
+                "explanation": "The complete occupancy snapshots retain visible separation and do not prove a measured collision or literal conformation. Source scope: Fresh full light/dark PNG and Mermaid interpretation, constrained by distinct assay quantities Point P-011: The complete occupancy snapshots retain visible separation and do not prove a measured collision or literal conformation."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-012",
+            "requirement": "PAR-level output and DNA-associated PARP occupancy are different measured quantities; exposure, conditions, current repair and other responses remain necessary.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Murai 2012 compared niraparib, olaparib and veliparib in defined cellular and biochemical systems: niraparib and olaparib trapped PARP-DNA complexes more strongly than veliparib, despite catalytic inhibition being a different comparison. Murai 2014 compared BMN673, now talazoparib, with olaparib and rucaparib. In damaged-DNA cell assays, 0.1 micromolar BMN673 produced a trapping signal comparable to 10 micromolar olaparib, about a 100-fold concentration difference; the purified DNA-binding assay gave a different, roughly 40-fold comparison. Similar catalytic effects did not imply similar trapping. Strongest among compounds tested in 2014 is not a ranking of clinical benefit, tolerated exposure or personal treatment choices.",
+                "passageSha256": "ed092954e3e6ab7fd8d5eabf8b436703d2fa68d608582fd29d055ce37f48279e",
+                "explanation": "The named fields explicitly carry this obligation: PAR-level output and DNA-associated PARP occupancy are different measured quantities; exposure, conditions, current repair and other responses remain necessary. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-012: PAR-level output and DNA-associated PARP occupancy are different measured quantities; exposure, conditions, current repair and other responses remain necessary."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Enzyme assays and PAR immunoassays report catalytic activity or its product. NCI's PAR assay measures PAR levels in specified biospecimens; chromatin-associated PARP measurements instead investigate DNA retention under specified conditions. Repair readouts and survival/regrowth experiments add other information. Murai's experiments used defined cell lines, DNA damage and drug concentrations, so neither a reduced metabolic or ATP signal alone nor a picture establishes irreversible death or its cause. Matched genetic perturbations and appropriate controls are needed to distinguish reduced growth, reduced metabolism and loss of long-term survival.",
+                "passageSha256": "eb97f53af1dd894a53a477df42dea542f8e7e0dbb174bc25258224ce741be5cb",
+                "explanation": "The named fields explicitly carry this obligation: PAR-level output and DNA-associated PARP occupancy are different measured quantities; exposure, conditions, current repair and other responses remain necessary. Their scope and source depth are given per reference. Source scope: Read assay methods plus explicitly normative interpretation and control requirements Point P-012: PAR-level output and DNA-associated PARP occupancy are different measured quantities; exposure, conditions, current repair and other responses remain necessary."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-013",
+            "requirement": "PARP1 is a representative protein, not a claim that every PARP family member is trapped identically; no figure-derived drug or patient-benefit ranking.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "PARP means poly(ADP-ribose) polymerase, a protein family involved in cellular signalling and repair. PARP1 is one representative. At damaged DNA it can build signals on proteins from chains of the chemical unit ADP-ribose, called poly(ADP-ribose), or PAR. Catalytic inhibition reduces this output. Some inhibitors can also stabilise DNA-associated PARP complexes, often called trapping. A repair-worker analogy separates a reduced call for help from a worker remaining in a doorway; proteins and medicines have no purpose, and the cell has more than one response route.",
+                "passageSha256": "994c5175a6aca577b4e3c6d7d74e6d119cc499bc8722d8c3514ce587cca032ef",
+                "explanation": "The named fields explicitly carry this obligation: PARP1 is a representative protein, not a claim that every PARP family member is trapped identically; no figure-derived drug or patient-benefit ranking. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-013: PARP1 is a representative protein, not a claim that every PARP family member is trapped identically; no figure-derived drug or patient-benefit ranking."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+                "passageSha256": "a2eb5338e5bb2f00bb87f5f5851f1f94e4cf01721bf716d1984e125da61d3c15",
+                "explanation": "The named fields explicitly carry this obligation: PARP1 is a representative protein, not a claim that every PARP family member is trapped identically; no figure-derived drug or patient-benefit ranking. Their scope and source depth are given per reference. Source scope: Fresh full light/dark PNG and Mermaid interpretation, constrained by distinct assay quantities Point P-013: PARP1 is a representative protein, not a claim that every PARP family member is trapped identically; no figure-derived drug or patient-benefit ranking."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-014",
+            "requirement": "Carry both branches of the Mermaid, less catalytic activity and possible DNA retention, joining a context-dependent measurement rather than a predicted effect size.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+                "passageSha256": "a2eb5338e5bb2f00bb87f5f5851f1f94e4cf01721bf716d1984e125da61d3c15",
+                "explanation": "Both diagram branches can coexist and lead to further context-dependent measurements, not an effect-size prediction. Source scope: Fresh full light/dark PNG and Mermaid interpretation, constrained by distinct assay quantities Point P-014: Both diagram branches can coexist and lead to further context-dependent measurements, not an effect-size prediction."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-015",
+            "requirement": "Verify Waks selected resistant metastatic-breast repair-restoration examples and persistence of history versus present function, without universalising the cohort.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Waks's selected resistant breast cancer cohort illustrates why historical repair markers and current repair can diverge: four definite or putative BRCA reversion cases acquired RAD51 foci, and other proposed routes included 53BP1 loss and MRE11A amplification. The 53BP1-loss case lacked enough tissue for direct functional confirmation. A historical scar or sequence hypothesis cannot establish a present PARP vulnerability, and this small cohort does not supply an all-patient resistance rule. Biological plausibility, a qualifying label indication and a trial place are separate requirements.",
+                "passageSha256": "5f9f8be451b2119dea15c5f2be41ca1cac63dddca313416109ae56445001b908",
+                "explanation": "Waks’s selected cases and their different amounts of functional evidence are preserved, including the unmeasured 53BP1 case. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-015: Waks’s selected cases and their different amounts of functional evidence are preserved, including the unmeasured 53BP1 case."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-016",
+            "requirement": "Verify the dated olaparib early-breast indication, germline-BRCA requirement and other disease-setting conditions; tumour-only BRCA or a scar score cannot substitute.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "For example, the U.S. olaparib label effective July 2025 specifies adjuvant treatment of adults with deleterious or suspected-deleterious germline BRCA-mutated, HER2-negative high-risk early breast cancer after neoadjuvant or adjuvant chemotherapy, selected with an approved companion diagnostic. A tumour-only BRCA result or high scar score cannot replace the germline and disease-setting requirements. That indication does not establish that a different PARP inhibitor, a different setting or a plausible mechanism has the same approval or access conditions.",
+                "passageSha256": "9a074b25df09b03fcc921d12202eccb7c60db5fb610d0d3e2dd4eb337a2695da",
+                "explanation": "The current read U.S. label states germline BRCA, HER2-negative high-risk early disease and previous chemotherapy; a scar result cannot substitute. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-016: The current read U.S. label states germline BRCA, HER2-negative high-risk early disease and previous chemotherapy; a scar result cannot substitute."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-017",
+            "requirement": "Keep biological mechanism, a qualifying indication and a clinical-trial slot separate; no personal access or treatment advice follows from the mechanism.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Waks's selected resistant breast cancer cohort illustrates why historical repair markers and current repair can diverge: four definite or putative BRCA reversion cases acquired RAD51 foci, and other proposed routes included 53BP1 loss and MRE11A amplification. The 53BP1-loss case lacked enough tissue for direct functional confirmation. A historical scar or sequence hypothesis cannot establish a present PARP vulnerability, and this small cohort does not supply an all-patient resistance rule. Biological plausibility, a qualifying label indication and a trial place are separate requirements.",
+                "passageSha256": "5f9f8be451b2119dea15c5f2be41ca1cac63dddca313416109ae56445001b908",
+                "explanation": "The named fields explicitly carry this obligation: Keep biological mechanism, a qualifying indication and a clinical-trial slot separate; no personal access or treatment advice follows from the mechanism. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-017: Keep biological mechanism, a qualifying indication and a clinical-trial slot separate; no personal access or treatment advice follows from the mechanism."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "For example, the U.S. olaparib label effective July 2025 specifies adjuvant treatment of adults with deleterious or suspected-deleterious germline BRCA-mutated, HER2-negative high-risk early breast cancer after neoadjuvant or adjuvant chemotherapy, selected with an approved companion diagnostic. A tumour-only BRCA result or high scar score cannot replace the germline and disease-setting requirements. That indication does not establish that a different PARP inhibitor, a different setting or a plausible mechanism has the same approval or access conditions.",
+                "passageSha256": "9a074b25df09b03fcc921d12202eccb7c60db5fb610d0d3e2dd4eb337a2695da",
+                "explanation": "The named fields explicitly carry this obligation: Keep biological mechanism, a qualifying indication and a clinical-trial slot separate; no personal access or treatment advice follows from the mechanism. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-017: Keep biological mechanism, a qualifying indication and a clinical-trial slot separate; no personal access or treatment advice follows from the mechanism."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-018",
+            "requirement": "Distinguish enzyme assays, chromatin-associated PARP measurements, repair readouts and survival experiments at specified conditions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Enzyme assays and PAR immunoassays report catalytic activity or its product. NCI's PAR assay measures PAR levels in specified biospecimens; chromatin-associated PARP measurements instead investigate DNA retention under specified conditions. Repair readouts and survival/regrowth experiments add other information. Murai's experiments used defined cell lines, DNA damage and drug concentrations, so neither a reduced metabolic or ATP signal alone nor a picture establishes irreversible death or its cause. Matched genetic perturbations and appropriate controls are needed to distinguish reduced growth, reduced metabolism and loss of long-term survival.",
+                "passageSha256": "eb97f53af1dd894a53a477df42dea542f8e7e0dbb174bc25258224ce741be5cb",
+                "explanation": "The named fields explicitly carry this obligation: Distinguish enzyme assays, chromatin-associated PARP measurements, repair readouts and survival experiments at specified conditions. Their scope and source depth are given per reference. Source scope: Read assay methods plus explicitly normative interpretation and control requirements Point P-018: Distinguish enzyme assays, chromatin-associated PARP measurements, repair readouts and survival experiments at specified conditions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-019",
+            "requirement": "A lower metabolic signal alone does not prove irreversible cell death or the causal mechanism; appropriate survival/regrowth and perturbation controls are needed.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Enzyme assays and PAR immunoassays report catalytic activity or its product. NCI's PAR assay measures PAR levels in specified biospecimens; chromatin-associated PARP measurements instead investigate DNA retention under specified conditions. Repair readouts and survival/regrowth experiments add other information. Murai's experiments used defined cell lines, DNA damage and drug concentrations, so neither a reduced metabolic or ATP signal alone nor a picture establishes irreversible death or its cause. Matched genetic perturbations and appropriate controls are needed to distinguish reduced growth, reduced metabolism and loss of long-term survival.",
+                "passageSha256": "eb97f53af1dd894a53a477df42dea542f8e7e0dbb174bc25258224ce741be5cb",
+                "explanation": "Metabolic/ATP output is separated from irreversible death and mechanism; matched perturbation and survival controls remain requirements. Source scope: Read assay methods plus explicitly normative interpretation and control requirements Point P-019: Metabolic/ATP output is separated from irreversible death and mechanism; matched perturbation and survival controls remain requirements."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-020",
+            "requirement": "Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Murai 2012 compared niraparib, olaparib and veliparib in defined cellular and biochemical systems: niraparib and olaparib trapped PARP-DNA complexes more strongly than veliparib, despite catalytic inhibition being a different comparison. Murai 2014 compared BMN673, now talazoparib, with olaparib and rucaparib. In damaged-DNA cell assays, 0.1 micromolar BMN673 produced a trapping signal comparable to 10 micromolar olaparib, about a 100-fold concentration difference; the purified DNA-binding assay gave a different, roughly 40-fold comparison. Similar catalytic effects did not imply similar trapping. Strongest among compounds tested in 2014 is not a ranking of clinical benefit, tolerated exposure or personal treatment choices.",
+                "passageSha256": "ed092954e3e6ab7fd8d5eabf8b436703d2fa68d608582fd29d055ce37f48279e",
+                "explanation": "The named fields explicitly carry this obligation: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-020: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Waks's selected resistant breast cancer cohort illustrates why historical repair markers and current repair can diverge: four definite or putative BRCA reversion cases acquired RAD51 foci, and other proposed routes included 53BP1 loss and MRE11A amplification. The 53BP1-loss case lacked enough tissue for direct functional confirmation. A historical scar or sequence hypothesis cannot establish a present PARP vulnerability, and this small cohort does not supply an all-patient resistance rule. Biological plausibility, a qualifying label indication and a trial place are separate requirements.",
+                "passageSha256": "5f9f8be451b2119dea15c5f2be41ca1cac63dddca313416109ae56445001b908",
+                "explanation": "The named fields explicitly carry this obligation: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-020: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "For example, the U.S. olaparib label effective July 2025 specifies adjuvant treatment of adults with deleterious or suspected-deleterious germline BRCA-mutated, HER2-negative high-risk early breast cancer after neoadjuvant or adjuvant chemotherapy, selected with an approved companion diagnostic. A tumour-only BRCA result or high scar score cannot replace the germline and disease-setting requirements. That indication does not establish that a different PARP inhibitor, a different setting or a plausible mechanism has the same approval or access conditions.",
+                "passageSha256": "9a074b25df09b03fcc921d12202eccb7c60db5fb610d0d3e2dd4eb337a2695da",
+                "explanation": "The named fields explicitly carry this obligation: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-020: Retain inhibition/trapping, potency/clinical benefit, scar/current weakness and biology/access confusions."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-021",
+            "requirement": "Carry the fictional similarly catalytic-inhibitory pair where A traps more in culture; exposure, survival, safety, resistance and clinical outcomes remain unproven.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "In a fictional comparison, compounds A and B inhibit PARP catalytic activity similarly, but A retains more PARP on DNA in a culture assay. The conclusion is an assay-specific trapping difference. Useful exposure, survival, safety, resistance and clinical outcomes still need evidence. More trapping in that system does not establish a better treatment, and neither an old scar nor a repair-gene name identifies which effect matters in the current tumour.",
+                "passageSha256": "a3cd062016f49af9b1c37b11f16ccbe531f9f7877ab31ba411ee72bbd7304617",
+                "explanation": "The fictional A/B pair establishes only the measured assay difference, not superior patient benefit. Source scope: Fictional comparison and inference; no patient efficacy estimate Point P-021: The fictional A/B pair establishes only the measured assay difference, not superior patient benefit."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-022",
+            "requirement": "A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+                "passageSha256": "a63ab63ee4ec952c5f6cd0bd984f3421194107e3027dcb07fd61b8815324d295",
+                "explanation": "The named fields explicitly carry this obligation: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-022: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Waks's selected resistant breast cancer cohort illustrates why historical repair markers and current repair can diverge: four definite or putative BRCA reversion cases acquired RAD51 foci, and other proposed routes included 53BP1 loss and MRE11A amplification. The 53BP1-loss case lacked enough tissue for direct functional confirmation. A historical scar or sequence hypothesis cannot establish a present PARP vulnerability, and this small cohort does not supply an all-patient resistance rule. Biological plausibility, a qualifying label indication and a trial place are separate requirements.",
+                "passageSha256": "5f9f8be451b2119dea15c5f2be41ca1cac63dddca313416109ae56445001b908",
+                "explanation": "The named fields explicitly carry this obligation: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention. Their scope and source depth are given per reference. Source scope: Source-backed teaching with explicitly marked reading inferences Point P-022: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "In a fictional comparison, compounds A and B inhibit PARP catalytic activity similarly, but A retains more PARP on DNA in a culture assay. The conclusion is an assay-specific trapping difference. Useful exposure, survival, safety, resistance and clinical outcomes still need evidence. More trapping in that system does not establish a better treatment, and neither an old scar nor a repair-gene name identifies which effect matters in the current tumour.",
+                "passageSha256": "a3cd062016f49af9b1c37b11f16ccbe531f9f7877ab31ba411ee72bbd7304617",
+                "explanation": "The named fields explicitly carry this obligation: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention. Their scope and source depth are given per reference. Source scope: Fictional comparison and inference; no patient efficacy estimate Point P-022: A historical or sequence-based repair hypothesis is not sufficient proof of a present functional vulnerability or a useful PARP intervention."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "repair-resistance-P-023",
+            "requirement": "The two pictures can describe effects that coexist; different activity and occupancy readouts must not be treated as independent proof of one clinical mechanism.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+                "passageSha256": "a2eb5338e5bb2f00bb87f5f5851f1f94e4cf01721bf716d1984e125da61d3c15",
+                "explanation": "The named fields explicitly carry this obligation: The two pictures can describe effects that coexist; different activity and occupancy readouts must not be treated as independent proof of one clinical mechanism. Their scope and source depth are given per reference. Source scope: Fresh full light/dark PNG and Mermaid interpretation, constrained by distinct assay quantities Point P-023: The two pictures can describe effects that coexist; different activity and occupancy readouts must not be treated as independent proof of one clinical mechanism."
+              },
+              {
+                "recordId": "parp-inhibitor",
+                "version": "proposal-repair-resistance-root",
+                "field": "notes",
+                "fieldSha256": "e8c64b635cb318b99c9458f113c930c7e932d8a8036ef9284e0011b5aa5bbca3",
+                "supportingExcerpt": "In a fictional comparison, compounds A and B inhibit PARP catalytic activity similarly, but A retains more PARP on DNA in a culture assay. The conclusion is an assay-specific trapping difference. Useful exposure, survival, safety, resistance and clinical outcomes still need evidence. More trapping in that system does not establish a better treatment, and neither an old scar nor a repair-gene name identifies which effect matters in the current tumour.",
+                "passageSha256": "a3cd062016f49af9b1c37b11f16ccbe531f9f7877ab31ba411ee72bbd7304617",
+                "explanation": "The named fields explicitly carry this obligation: The two pictures can describe effects that coexist; different activity and occupancy readouts must not be treated as independent proof of one clinical mechanism. Their scope and source depth are given per reference. Source scope: Fictional comparison and inference; no patient efficacy estimate Point P-023: The two pictures can describe effects that coexist; different activity and occupancy readouts must not be treated as independent proof of one clinical mechanism."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {
@@ -144382,6 +145924,53 @@
             "evidence": [],
             "remaining": [
               "Review the existing seamless-adaptive reader drawing: it borrows a clearly labelled digital-twins/virtual-control schematic. That narrower technology is not a general depiction of every adaptive design. No source-figure or independent visual credit is claimed."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "repair-resistance-source-depth",
+      "title": "Repair and resistance source notices, legacy claims and diagram qualification",
+      "domain": "repair-resistance-adjacent",
+      "sourceURLs": [
+        "https://doi.org/10.1158/2159-8290.CD-13-0326",
+        "https://pubmed.ncbi.nlm.nih.gov/21490603/"
+      ],
+      "discoveryOccurrences": [
+        "repair-resistance-2026-11-12"
+      ],
+      "review": {
+        "status": "reviewed",
+        "auditor": "Coordinator follow-up intake; no additional teaching credit",
+        "checkedAt": "2026-11-12",
+        "rationale": "These source-depth, deliberately withdrawn catalogue and source-diagram tasks remain separate from the represented pinned obligations. No original source bytes or artwork are rewritten.",
+        "points": [
+          {
+            "id": "birkbak-raw-correction",
+            "requirement": "Read the raw Birkbak 2013 correction body before claiming it checked. Identity is resolved; publisher HTML and PDF remain blocked. The current original counting method is separately read.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Read the raw Birkbak 2013 correction body before claiming it checked. Identity is resolved; publisher HTML and PDF remain blocked. The current original counting method is separately read."
+            ]
+          },
+          {
+            "id": "repair-resistance-withdrawn-catalogues",
+            "requirement": "Reverify deliberately withdrawn broad PARP indication/benefit and lung-resistance frequency/switching catalogues, and unsupported universal combination-cure/model extensions, before restoring them. Complete before and after fields are retained.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Reverify deliberately withdrawn broad PARP indication/benefit and lung-resistance frequency/switching catalogues, and unsupported universal combination-cure/model extensions, before restoring them. Complete before and after fields are retained."
+            ]
+          },
+          {
+            "id": "ddr-tp53-diagram-qualification",
+            "requirement": "Route the source DDR Mermaid edge that equates TP53 mutation with complete G1 checkpoint loss to its Guide owner. The OnCo prose now requires defined functional loss and does not certify a clinical selection rule; source bytes are preserved.",
+            "status": "gap",
+            "evidence": [],
+            "remaining": [
+              "Route the source DDR Mermaid edge that equates TP53 mutation with complete G1 checkpoint loss to its Guide owner. The OnCo prose now requires defined functional loss and does not certify a clinical selection rule; source bytes are preserved."
             ]
           }
         ]

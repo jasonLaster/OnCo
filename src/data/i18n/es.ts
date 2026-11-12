@@ -180,12 +180,12 @@ export const tldr_es: Record<string, string> = {
   "masked-adc": "Un ADC con una máscara que solo se retira dentro del tumor, de modo que ignora la misma proteína en el tejido sano.",
   "site-specific-conjugation": "La química que decide exactamente dónde y cuántas cargas se unen al anticuerpo, lo que determina la seguridad y eficacia de un ADC.",
   "peptide-drug-conjugate": "Como un ADC pero con un pequeño péptido de guía en vez de un anticuerpo, de modo que penetra en los tumores más rápido y es más barato de fabricar.",
-  "checkpoint-inhibitor": "Anticuerpos que liberan los frenos de las células inmunitarias para que ataquen el cáncer. Curan a una minoría de pacientes en muchos cánceres, algo que la quimioterapia rara vez logra.",
+
   "t-cell-engager": "Un fármaco listo para usar que une físicamente una célula T asesina a una célula cancerosa, forzando el ataque.",
   "neoantigen-mrna-vaccine": "Una vacuna hecha para un solo paciente, que codifica las mutaciones únicas de su tumor, para entrenar al sistema inmunitario a cazarlo.",
   "shared-antigen-vaccine": "Vacunas contra mutaciones o proteínas compartidas por muchos pacientes, que pueden fabricarse por adelantado.",
-  "oncolytic-virus": "Virus diseñados para infectar y reventar las células cancerosas dejando intactas las normales, y para alertar al sistema inmunitario en el proceso.",
-  "cytokine-therapy": "Proteínas de señalización inmunitaria administradas como fármacos. La interleucina-2 en dosis altas fue la primera inmunoterapia en curar algunos melanomas, con gran toxicidad.",
+
+
   "sting-agonist": "Fármacos que activan la 'alarma antivirus' de la célula dentro de los tumores para convocar células inmunitarias.",
   "car-t": "Se extraen las células T del paciente, se les da un receptor sintético que reconoce el cáncer, se multiplican y se devuelven como fármaco vivo.",
   "in-vivo-car-t": "Un producto de administración in vivo lleva instrucciones para producir un receptor a células dentro del organismo. Su dosis es distinta del número y la actividad posteriores de las células modificadas.",
@@ -338,7 +338,7 @@ export const tldr_es: Record<string, string> = {
   "intismeran-autogene": "Una vacuna de ARNm a medida que codifica hasta 34 mutaciones del tumor del propio paciente. En agosto de 2026 fue la primera vacuna personalizada contra el cáncer en ganar una fase 3.",
   "autogene-cevumeran": "La vacuna personalizada de BioNTech, notable por un pequeño estudio en cáncer de páncreas en el que los que respondieron permanecieron libres de cáncer durante años.",
   "vusolimogene-oderparepvec": "Un virus del herpes modificado que se inyecta en los tumores de melanoma, aprobado en agosto de 2026 con nivolumab tras el fracaso de la inmunoterapia.",
-  "talimogene-laherparepvec": "El primer virus oncolítico aprobado (2015), inyectado en lesiones cutáneas de melanoma.",
+
   optune: "Un dispositivo portátil que administra campos eléctricos que interrumpen la división celular. Aprobado para glioblastoma y, en 2026, cáncer de páncreas.",
   galleri: "Un análisis de sangre que criba más de 50 cánceres a la vez, ante la FDA en septiembre de 2026.",
   shield: "El primer análisis de sangre aprobado por la FDA para el cribado de cáncer colorrectal (2024), que ahora puede informar también de otros cánceres.",

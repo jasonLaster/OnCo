@@ -181,7 +181,7 @@ export const tldr_fr: Record<string, string> = {
   "cgas-sting": "cGAS-STING est l'alarme de la cellule face à du DNA qui se trouve au mauvais endroit. La radiothérapie, la chimiothérapie et les ADC répandent du DNA dans le cytoplasme ; cGAS le détecte, STING déclenche l'alarme et l'interféron appelle le système immunitaire.",
   cgp: "Séquencer des centaines de gènes du cancer en une seule fois à partir d'une biopsie pour trouver les mutations qu'un médicament peut cibler.",
   "checkmate-067": "L'essai avec le plus long suivi en immunothérapie : environ la moitié des patients sous l'association sont en vie à 10 ans.",
-  "checkpoint-inhibitor": "Des anticorps qui relâchent les freins des cellules immunitaires pour qu'elles puissent attaquer le cancer. Ils guérissent une minorité de patients dans de nombreux cancers, ce que la chimiothérapie fait rarement.",
+
   chemoprevention: "Des médicaments ou une chirurgie pour les personnes présentant un risque hérité élevé, avant l'apparition de tout cancer.",
   chemoradiation: "Une radiothérapie administrée en même temps que la chimiothérapie, ce qui rend la radiothérapie plus efficace. C'est le traitement curatif de nombreux cancers qui ne peuvent pas ou ne doivent pas être opérés.",
   chemotherapy: "Des médicaments qui tuent les cellules qui se divisent rapidement. Toujours la colonne vertébrale de nombreuses guérisons, et désormais l'ogive placée à l'intérieur de médicaments plus intelligents.",
@@ -239,7 +239,7 @@ export const tldr_fr: Record<string, string> = {
   "cure-paths": "Trois façons différentes pour qu'un cancer cesse de tuer quelqu'un : l'arrêter avant qu'il ne commence, éliminer jusqu'à la dernière cellule, ou le tenir en échec toute la vie. Chacune nécessite une technologie différente.",
   "curie-nki-eortc": "L'EORTC est l'organisation académique européenne des essais cliniques en cancérologie et mène des essais qui changent la pratique depuis 1962.",
   cyclophosphamide: "L'un des médicaments de chimiothérapie les plus utilisés : il fait partie du CHOP pour le lymphome, de l'AC pour le cancer du sein, du VAC pour les sarcomes de l'enfant, et sert à préparer les patients aux CAR-T et à la greffe.",
-  "cytokine-therapy": "La thérapie par cytokines administre comme médicaments des protéines de signalisation immunitaire. L'interleukine-2 à haute dose a été la première immunothérapie à guérir certains mélanomes, au prix d'une grande toxicité.",
+
   "early-detection-roadmap": "Des mammographies et coloscopies à une simple prise de sang qui pourrait dépister des dizaines de cancers, avec une première décision de la FDA imminente.",
   "ecog-acrin": "Groupe coopératif américain qui associe un groupe de thérapie à un groupe d'imagerie ; son essai E1910 a fait entrer le blinatumomab dans le traitement de première ligne de la leucémie.",
   efs: "Dans le cancer à un stade précoce : combien de temps les patients restent sans récidive, sans progression ni décès.",
@@ -574,7 +574,7 @@ export const tldr_fr: Record<string, string> = {
 
       "oncogenic-viruses": "Environ un cancer sur huit dans le monde est causé par un virus. HPV, hépatites B et C, Epstein-Barr, HTLV-1, KSHV et polyomavirus des cellules de Merkel détournent chacun les mêmes freins que le cancer doit normalement faire muter, ce qui explique pourquoi les vaccins contre HPV et HBV figurent parmi les médicaments anticancéreux les plus efficaces jamais créés.",
   "oncology-real-world-data": "Bases de données constituées à partir de millions de dossiers de patients réels, utilisées pour voir comment les traitements fonctionnent en dehors des essais et pour mener des études sans lancer de nouveaux essais.",
-  "oncolytic-virus": "Virus modifiés pour infecter et faire éclater les cellules cancéreuses tout en épargnant les cellules normales, et pour alerter le système immunitaire au passage.",
+
   "oncotype-dx": "Un test de 21 gènes qui indique à la plupart des femmes atteintes d'un cancer du sein précoce hormonosensible si elles peuvent se passer de chimiothérapie en toute sécurité.",
   optune: "Optune est un dispositif portable qui délivre des champs électriques perturbant la division cellulaire. Il est approuvé pour le glioblastome et, en 2026, pour le cancer du pancréas.",
   "organ-tropism-seed-soil": "Le cancer du sein va vers l'os, le poumon, le foie et le cerveau ; le cancer de la prostate vers l'os ; le cancer du côlon vers le foie ; le mélanome uvéal presque uniquement vers le foie. L'idée de Paget, formulée en 1889, reste valable : l'endroit où un cancer se propage dépend à la fois de la graine (le programme de la cellule) et du sol (l'accueil réservé par l'organe). Chaque sol a son propre cercle vicieux, et certains peuvent être ciblés par des médicaments.",
@@ -1361,7 +1361,7 @@ export const tldr_fr: Record<string, string> = {
   tace: "Un cathéter introduit dans l'artère qui alimente une tumeur du foie délivre la chimiothérapie puis bouche le vaisseau, affamant la tumeur de l'intérieur.",
   tafasitamab: "Un anticorps anti-CD19 administré avec le lénalidomide aux patients atteints de lymphome qui ne peuvent pas recevoir de greffe ; en 2026, il a montré le premier gain en première ligne par rapport au R-CHOP dans la maladie à haut risque.",
   "talicel-phase-1-2": "L'essai à l'origine de la première approbation d'un CAR-T en Inde : environ trois patients sur quatre atteints de lymphome ou de leucémie lourdement prétraités ont répondu à une thérapie fabriquée à Mumbai.",
-  "talimogene-laherparepvec": "Talimogene laherparepvec (T-VEC, Imlygic) a été le premier virus oncolytique approuvé (2015), injecté dans les lésions cutanées du mélanome.",
+
 
   tazemetostat: "Tazemetostat a été le premier inhibiteur d'EZH2, approuvé pour le sarcome épithélioïde et le lymphome folliculaire en 2020 et retiré du marché mondial en 2026 après des cancers du sang secondaires.",
   "telisotuzumab-vedotin": "Telisotuzumab vedotin (Emrelis) est le premier ADC dirigé contre c-MET, approuvé en 2025 pour le cancer du poumon avec un taux élevé de protéine c-MET.",

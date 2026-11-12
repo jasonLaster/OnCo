@@ -347,7 +347,14 @@ export const gapProducts: DrugInput[] = [
     tldr: "High-dose interleukin-2 was the first immunotherapy to cure a small fraction of patients with metastatic melanoma and kidney cancer, at the cost of ICU-level toxicity; today it mainly supports TIL therapy.",
     summary: "Approved 1992 (RCC) and 1998 (melanoma) on ~15% response with ~5-7% durable complete responses (Rosenberg). Capillary leak, hypotension and multi-organ effects confine it to specialised centres. Now used as a short course after lifileucel (TIL) infusion; engineered IL-2 variants (bempegaldesleukin) failed in phase 3.",
     approvals: [{ region: "US", year: 1992, indication: "Metastatic renal cell carcinoma" }, { region: "US", year: 1998, indication: "Metastatic melanoma" }],
-    cancers: ["rcc", "melanoma"], technologies: ["cytokine-therapy", "til-therapy"], links: [{ label: "Label (DailyMed)", url: DM("aldesleukin") }], tags: ["gap-fill", "historic"] }),
+    cancers: ["rcc", "melanoma"], technologies: ["cytokine-therapy", "til-therapy"], links: [{ label: "Label (DailyMed)", url: DM("aldesleukin") },
+    {"label":"Proleukin U.S. prescribing information: adult indications and boxed warnings","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3c516ad-d405-4fbe-af6a-962080dbfa7d"}
+  ], tags: ["gap-fill", "historic"] ,
+  asOf: "2026-11-12",
+  notes: [
+    "The Proleukin U.S. label specifies adults with metastatic renal cell carcinoma or metastatic melanoma. The boxed warning includes potentially fatal capillary leak, neurologic toxicities and serious infections and calls for hospital administration with an intensive-care facility. These medicine-specific statements should not be generalised to every IL-2 construct or other cytokine. A treatment's immune-cell effects and its clinical outcomes remain separate measurements."
+  ]
+}),
   d({ id: "leuprolide", trials: ["hero"], name: "Leuprolide (leuprorelin) and GnRH agonists", aka: ["Leuprorelin", "Leuprolide acetate", "GnRH agonist"], brand: "Lupron / Eligard / Camcevi", modality: "GnRH agonist depot", mechanism: "Continuous GnRH receptor stimulation desensitises the pituitary, suppressing LH/FSH and hence testosterone (or oestrogen) to castrate levels after an initial flare.", status: "approved", wikipedia: W("Leuprorelin"),
     tldr: "Leuprolide is the injectable that shuts off testosterone production, the foundation of hormone therapy for prostate cancer since the 1980s; it is also used for ovarian suppression in premenopausal breast cancer.",
     summary: "Approved 1985 as an alternative to orchiectomy or oestrogens; depot formulations (1-6 months) followed. Backbone of ADT combinations with abiraterone, enzalutamide, apalutamide, darolutamide and docetaxel. Testosterone flare (antiandrogen cover), cardiovascular and bone effects; oral relugolix (2020) and degarelix are antagonist alternatives without flare.",

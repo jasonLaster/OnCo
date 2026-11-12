@@ -774,13 +774,22 @@ const baseDrugs: DrugInput[] = [
     technologies: ["oncolytic-virus"], companies: ["replimune", "bms"], cancers: ["melanoma", "advanced-melanoma"], drugs: ["nivolumab"],
   },
   {
-    id: "talimogene-laherparepvec", kind: "drug", links: [{ label: "FDA label (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Talimogene%20laherparepvec" }], name: "Talimogene laherparepvec", brand: "Imlygic", code: "T-VEC", modality: "Oncolytic virus (HSV-1)", asOf, status: "approved", wikipedia: W("Talimogene_laherparepvec"),
-    tldr: "Talimogene laherparepvec (T-VEC, Imlygic) was the first approved oncolytic virus (2015), injected into melanoma skin lesions.",
-    summary: "Talimogene laherparepvec (T-VEC) is a herpes simplex virus type 1 with ICP34.5 and ICP47 deleted, so it replicates in tumour cells but not healthy ones, and it expresses GM-CSF to attract antigen-presenting cells. It was the first approved oncolytic virus (2015), injected into unresectable melanoma lesions at 10^6 PFU/mL initially, then 10^8 PFU/mL 3 weeks later and every 2 weeks. In OPTiM the durable response rate was 16% versus 2% for GM-CSF alone. Uptake has been modest because responses concentrate in injected lesions, and the MASTERKEY-265 combination with pembrolizumab did not improve progression-free or overall survival. Amgen markets it; its legacy is proving the principle that later viruses build on. For a newcomer: the first cancer-killing virus approved, useful mainly for accessible skin lesions.",
+    id: "talimogene-laherparepvec", kind: "drug", links: [{ label: "FDA label (DailyMed)", url: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Talimogene%20laherparepvec" },
+    {"label":"FDA Imlygic prescribing information: exact indication, mechanism and harms","url":"https://www.fda.gov/media/94129/download"}
+  ], name: "Talimogene laherparepvec", brand: "Imlygic", code: "T-VEC", modality: "Oncolytic virus (HSV-1)", asOf: "2026-11-12", status: "approved", wikipedia: W("Talimogene_laherparepvec"),
+    tldr: "Talimogene laherparepvec is a modified herpes virus used by injection for local treatment of specified unresectable melanoma lesions.",
+    summary: "Talimogene laherparepvec (T-VEC) is a herpes simplex virus type 1 with ICP34.5 and ICP47 deleted, designed to support replication within tumours without guaranteeing normal-cell safety, and it expresses GM-CSF to attract antigen-presenting cells. It was the first FDA-approved oncolytic virus (2015), injected into unresectable melanoma lesions at 10^6 PFU/mL initially, then 10^8 PFU/mL 3 weeks later and every 2 weeks. In OPTiM the durable response rate was 16% versus 2% for GM-CSF alone. Uptake has been modest because responses concentrate in injected lesions, and the MASTERKEY-265 combination with pembrolizumab did not improve progression-free or overall survival. Amgen markets it; its legacy is proving the principle that later viruses build on. The U.S. indication is local treatment of specified unresectable melanoma lesions recurrent after surgery.",
     mechanism: "HSV-1 with ICP34.5 and ICP47 deleted, expressing GM-CSF.",
     approvals: [{ region: "US", year: 2015, indication: "Unresectable melanoma with injectable lesions" }],
     technologies: ["oncolytic-virus"], companies: ["amgen"], cancers: ["melanoma", "advanced-melanoma", "stage-iii-melanoma"],
-  },
+
+  notes: [
+    "The U.S. Imlygic label limits the indication to local treatment of specified unresectable melanoma lesions recurrent after surgery and states that improved overall survival and visceral-metastasis effects have not been shown. Its mechanism section describes modified HSV-1, tumour lysis and possible immune effects, with the exact mechanism unknown. Herpetic infection and injection-site complications are possible. This is not a guarantee of healthy-cell sparing or an indication for breast cancer."
+  ],
+  related: [
+    "intratumoral-immunotherapy"
+  ]
+},
 
   // ======================= DEVICES =======================
   {

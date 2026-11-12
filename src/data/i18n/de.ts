@@ -181,7 +181,7 @@ export const tldr_de: Record<string, string> = {
   "cgas-sting": "cGAS-STING ist der Alarm der Zelle für DNA am falschen Ort. Strahlung, Chemotherapie und ADCs lassen DNA ins Zytoplasma gelangen; cGAS erkennt sie, STING schlägt Alarm, und Interferon ruft das Immunsystem herbei.",
   cgp: "Hunderte Krebsgene auf einmal aus einer Biopsie sequenzieren, um die Mutationen zu finden, gegen die ein Medikament gerichtet werden kann.",
   "checkmate-067": "Die Studie mit der längsten Nachbeobachtung in der Immuntherapie: Etwa die Hälfte der Patienten unter der Kombination ist nach 10 Jahren noch am Leben.",
-  "checkpoint-inhibitor": "Antikörper, die die Bremsen der Immunzellen lösen, damit diese den Krebs angreifen können. Sie heilen bei vielen Krebsarten eine Minderheit der Patienten, was Chemotherapie nur selten schafft.",
+
   chemoprevention: "Medikamente oder Operationen für Menschen mit hohem erblichem Risiko, bevor ein Krebs überhaupt auftritt.",
   chemoradiation: "Strahlentherapie, die gleichzeitig mit Chemotherapie gegeben wird, wodurch die Strahlung besser wirkt. Sie ist die heilende Behandlung für viele Krebsarten, die nicht operiert werden können oder sollten.",
   chemotherapy: "Medikamente, die sich schnell teilende Zellen abtöten. Noch immer das Rückgrat vieler Heilungen und heute der Sprengkopf in intelligenteren Medikamenten.",
@@ -239,7 +239,7 @@ export const tldr_de: Record<string, string> = {
   "cure-paths": "Drei verschiedene Wege, auf denen ein Krebs aufhört, jemanden zu töten: ihn verhindern, bevor er entsteht, jede einzelne Zelle entfernen oder ihn lebenslang in Schach halten. Jeder Weg braucht eine andere Technologie.",
   "curie-nki-eortc": "Die EORTC ist Europas akademische Organisation für Krebsstudien und führt seit 1962 praxisverändernde Studien durch.",
   cyclophosphamide: "Eines der am häufigsten eingesetzten Chemotherapeutika: Bestandteil von CHOP beim Lymphom, AC beim Brustkrebs und VAC bei Sarkomen im Kindesalter, und es wird eingesetzt, um Patienten auf CAR-T und Transplantation vorzubereiten.",
-  "cytokine-therapy": "Die Zytokintherapie verabreicht Signalproteine des Immunsystems als Medikamente. Hochdosiertes Interleukin-2 war die erste Immuntherapie, die einige Melanome heilte, allerdings bei großer Toxizität.",
+
   "early-detection-roadmap": "Von Mammographien und Darmspiegelungen zu einer einzigen Blutentnahme, die möglicherweise Dutzende von Krebsarten erkennen kann, während die erste Entscheidung der FDA unmittelbar bevorsteht.",
   "ecog-acrin": "US-amerikanische Studiengruppe, die eine Therapiegruppe mit einer Bildgebungsgruppe verbindet; ihre E1910-Studie brachte blinatumomab in die Erstlinienbehandlung der Leukämie.",
   efs: "Bei Krebs im Frühstadium: wie lange Patienten ohne Rückfall, Fortschreiten der Erkrankung oder Tod bleiben.",
@@ -574,7 +574,7 @@ export const tldr_de: Record<string, string> = {
 
       "oncogenic-viruses": "Etwa jeder achte Krebs weltweit wird durch ein Virus verursacht. HPV, Hepatitis B und C, Epstein-Barr, HTLV-1, KSHV und das Merkelzell-Polyomavirus kapern jeweils dieselben Bremsen, die Krebs normalerweise durch Mutationen ausschalten muss. Deshalb gehören die Impfstoffe gegen HPV und HBV zu den wirksamsten Krebsmedikamenten, die je entwickelt wurden.",
   "oncology-real-world-data": "Datenbanken aus Millionen echter Patientenakten, mit denen sich beobachten lässt, wie Behandlungen außerhalb von Studien wirken, und mit denen sich Untersuchungen ohne neue Studien durchführen lassen.",
-  "oncolytic-virus": "Viren, die so verändert wurden, dass sie Krebszellen infizieren und zum Platzen bringen, normale Zellen aber in Ruhe lassen und dabei zugleich das Immunsystem alarmieren.",
+
   "oncotype-dx": "Ein 21-Gen-Test, der den meisten Frauen mit hormonrezeptorpositivem Brustkrebs im Frühstadium sagt, ob sie sicher auf eine Chemotherapie verzichten können.",
   optune: "Optune ist ein tragbares Gerät, das elektrische Felder abgibt, die die Zellteilung stören. Es ist für das Glioblastom zugelassen und wurde 2026 auch für Bauchspeicheldrüsenkrebs zugelassen.",
   "organ-tropism-seed-soil": "Brustkrebs geht in Knochen, Lunge, Leber und Gehirn; Prostatakrebs in die Knochen; Darmkrebs in die Leber; das Aderhautmelanom fast ausschließlich in die Leber. Pagets Idee aus dem Jahr 1889 gilt noch immer: Wohin sich ein Krebs ausbreitet, hängt sowohl vom Samen (dem Programm der Zelle) als auch vom Boden (der Aufnahmebereitschaft des Organs) ab. Jeder Boden hat seinen eigenen Teufelskreis, und einige davon lassen sich mit Medikamenten angreifen.",
@@ -1361,7 +1361,7 @@ export const tldr_de: Record<string, string> = {
   tace: "Ein Katheter, der in die Arterie eingeführt wird, die einen Lebertumor versorgt, gibt Chemotherapie ab und verschließt dann das Gefäß, sodass der Tumor von innen ausgehungert wird.",
   tafasitamab: "Ein CD19-Antikörper, der zusammen mit Lenalidomid an Lymphompatienten gegeben wird, die keine Transplantation erhalten können; 2026 zeigte er bei Hochrisikoerkrankung den ersten Erstlinien-Gewinn gegenüber R-CHOP.",
   "talicel-phase-1-2": "Die Studie hinter Indiens erster CAR-T-Zulassung: Etwa drei von vier stark vorbehandelten Patienten mit Lymphom oder Leukämie sprachen auf eine in Mumbai hergestellte Therapie an.",
-  "talimogene-laherparepvec": "Talimogene laherparepvec (T-VEC, Imlygic) war das erste zugelassene onkolytische Virus (2015), das in Hautläsionen des Melanoms injiziert wird.",
+
 
   tazemetostat: "Tazemetostat war der erste EZH2-Inhibitor, 2020 für das epitheloide Sarkom und das follikuläre Lymphom zugelassen und 2026 nach sekundären Blutkrebserkrankungen weltweit zurückgezogen.",
   "telisotuzumab-vedotin": "Telisotuzumab vedotin (Emrelis) ist das erste gegen c-MET gerichtete ADC, 2025 zugelassen für Lungenkrebs mit hoher c-MET-Proteinexpression.",

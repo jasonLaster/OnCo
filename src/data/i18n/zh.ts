@@ -180,12 +180,12 @@ export const tldr_zh: Record<string, string> = {
   "masked-adc": "戴着面罩、只在肿瘤内揭开的ADC，因而忽略健康组织上的同种蛋白。",
   "site-specific-conjugation": "决定载荷在抗体上连接位置和数量的化学，决定了ADC的安全性和有效性。",
   "peptide-drug-conjugate": "像ADC但用小的靶向肽代替抗体，因此穿透肿瘤更快、制造更便宜。",
-  "checkpoint-inhibitor": "松开免疫细胞刹车、让其攻击癌症的抗体。它们在多种癌症中治愈少数患者，这是化疗很少做到的。",
+
   "t-cell-engager": "现成药物，把杀伤性T细胞与癌细胞物理连接，迫使攻击。",
   "neoantigen-mrna-vaccine": "为单个患者制作的疫苗，编码其肿瘤独有的突变，训练免疫系统追猎它。",
   "shared-antigen-vaccine": "针对许多患者共有突变或蛋白的疫苗，可预先制备。",
-  "oncolytic-virus": "被改造成感染并爆破癌细胞、放过正常细胞、同时警示免疫系统的病毒。",
-  "cytokine-therapy": "作为药物给予的免疫信号蛋白。大剂量白介素-2是首个治愈部分黑色素瘤的免疫治疗，毒性巨大。",
+
+
   "sting-agonist": "触发肿瘤内细胞内置“病毒警报”以召集免疫细胞的药物。",
   "car-t": "取出患者T细胞，赋予识别癌症的合成受体，扩增后回输作为活的药物。",
   "in-vivo-car-t": "体内递送产品将制造受体的指令送入体内细胞。它的剂量与随后产生的改造细胞的数量和活性是不同的量。",
@@ -338,7 +338,7 @@ export const tldr_zh: Record<string, string> = {
   "intismeran-autogene": "编码患者自身肿瘤多达34个突变的定制mRNA疫苗。2026年8月成为首个赢得三期试验的个体化癌症疫苗。",
   "autogene-cevumeran": "BioNTech的个体化疫苗，因一项小型胰腺癌研究中应答者多年无癌而受关注。",
   "vusolimogene-oderparepvec": "注射到黑色素瘤肿瘤中的工程化疱疹病毒，2026年8月获批与nivolumab用于免疫治疗失败后。",
-  "talimogene-laherparepvec": "首个获批的溶瘤病毒（2015年），注射到黑色素瘤皮肤病灶中。",
+
   optune: "释放干扰细胞分裂电场的可穿戴设备。获批用于胶质母细胞瘤，并于2026年用于胰腺癌。",
   galleri: "一次筛查50多种癌症的血液检测，2026年9月提交FDA审议。",
   shield: "首个FDA批准的结直肠癌筛查血液检测（2024年），如今可选择性报告其他癌症。",
@@ -10770,7 +10770,7 @@ export const tldr_zh: Record<string, string> = {
   nct06423911: "一项在慢性髓性白血病中评估Olverembatinib的3期试验，由Ascentage Pharma Group Inc.开展，正在招募。",
   nct06432296: "一项在晚期实体瘤中评估M701的3期试验，由Wuhan YZY Biopharma Co., Ltd.开展，进行中、不再招募。",
   nct07112196: "一项在晚期实体瘤中评估Visugromab的2/3期试验，由CatalYm GmbH开展，正在招募。",
-  "vaccines-and-oncolytic-viruses": "癌症疫苗训练免疫系统识别肿瘤细胞上的蛋白；溶瘤病毒感染并裂解癌细胞，同时向免疫系统发出警报。",
+
   "mathematical-oncology": "数学肿瘤学用方程和模拟来描述肿瘤如何生长、演化、对治疗产生反应以及与免疫系统相互作用，并据此设计剂量、方案和试验。本页汇集 OnCo 收录的全部模型。",
   "devimistat": "Devimistat 试图与化疗一起切断胰腺癌细胞的能量供应；3 期 AVENGER 500 试验未见生存获益。",
   "pamrevlumab": "Pamrevlumab 针对胰腺肿瘤周围的瘢痕样组织；其 3 期 LAPIS 试验在局部晚期患者中未能延长生存。",

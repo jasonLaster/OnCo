@@ -307,7 +307,7 @@ export const simpleO: Record<string, string> = {
   bpcia: "The 2010 US law that created a route for near-copies of biologic drugs such as trastuzumab and rituximab, while giving the original twelve years of protection from those copies.",
   "cancer-drugs-fund": "An NHS England fund that pays for promising cancer drugs while more evidence is collected, started in 2010 and rebuilt in 2016 as a time-limited scheme with a fixed budget.",
   "cancer-stem-cell-theory": "The cancer stem cell theory says a small pool of stem-like cells renews a tumour, so killing the bulk shrinks it but the stem-like cells regrow it, and ordinary cells can slip into that state.",
-  "vaccines-and-oncolytic-viruses": "Cancer vaccines teach the immune system to recognise proteins on tumour cells, while oncolytic viruses infect and burst cancer cells and raise the alarm to the immune system.",
+  "vaccines-and-oncolytic-viruses": "Cancer vaccines aim to help immune cells recognise cancer targets. Cancer-killing viruses can injure some tumour cells; useful immunity and patient benefit need separate evidence.",
   "china-drug-administration-law": "China rewrote its drug law in 2019, adding priority review, conditional approval and acceptance of foreign trial data, so it now approves cancer drugs within months of the FDA.",
   "china-hgr-rules": "Chinese rules that treat blood, tissue and genetic data from Chinese people as a national resource, so exporting samples or sequence data needs a permit, which affects global trials in China.",
   "china-vbp-nrdl": "China has two price levers: an annual negotiation in which a new cancer drug wins reimbursement only by cutting its price, and tenders in which generic makers bid for guaranteed hospital volumes.",

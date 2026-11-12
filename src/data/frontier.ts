@@ -403,7 +403,7 @@ const frontierRadical: EntityInput[] = [
     links: [{"label":"ClinicalTrials.gov: logic-gated CAR T","url":"https://clinicaltrials.gov/search?term=logic%20gated%20CAR%20T"},{"label":"Kloss et al.: balanced activation and costimulation in tumor models (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/23242161/"},{"label":"Zah et al.: CD19/CD20 OR-like recognition in tumor models (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27059623/"},{"label":"Zah et al.: experimental addendum on cell viability and OR-gate results (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27371639/"},{"label":"Fedorov et al.: inhibitory CARs in defined experimental systems (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/24337479/"},{"label":"Roybal et al.: sequential synNotch-CAR circuit and priming/decay tests (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/26830879/"},{"label":"FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)","url":"https://www.fda.gov/media/156896/download"}],
   },
   {
-    id: "in-situ-vaccination", companies: ["trogenix", "aummune", "onchilles-pharma", "syncromune"], trials: ["nct05688280"], kind: "technology", name: "In situ vaccination", sections: ["immunotherapy"], status: "phase-2", asOf: "2026-11-11",
+    id: "in-situ-vaccination", companies: ["trogenix", "aummune", "onchilles-pharma", "syncromune"], trials: ["nct05688280"], kind: "technology", name: "In situ vaccination", sections: ["immunotherapy"], status: "phase-2", asOf: "2026-11-12",
     tldr: "In situ vaccination aims to use antigens at a tumour site to stimulate useful immune recognition. Local destruction does not automatically make the tumour a successful vaccine.",
     summary: "Local treatment can supply tumour antigens, and an adjuvant or other immune intervention may support their presentation and priming. The proposal needs evidence for each step and for useful immune effects in the relevant host and setting. It does not guarantee recognition of every antigen or every lesion.\n\nInjury, danger signals, immune-cell changes, distant lesion responses and comparative patient outcomes are different observations. The actual local method and accompanying treatments must be named. A response during combined treatment does not isolate which component caused it.",
     principle: "Use a treated lesion as an antigen source while seeking effective presentation and adaptive immune recognition; the hypothesised chain requires experimental and clinical evidence.",
@@ -432,7 +432,10 @@ const frontierRadical: EntityInput[] = [
     "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
   }
-],
+,
+    {"label":"Marabelle et al.: terminology and reporting recommendations (2018)","url":"https://pubmed.ncbi.nlm.nih.gov/30295695/"},
+    {"label":"Joffre et al.: cross-presentation by dendritic cells (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22790179/"}
+  ],
 
 "notes": [
   "The strategy uses relevant tumour antigens in place while supporting presenting cells and immune activation. Antigen availability, uptake and processing, cross-presentation, suitable priming, access to another lesion, recognition of naturally displayed targets and useful function are conditional jobs. Local injury can supply material without establishing all these steps, and danger signals alone do not establish immunogenic cell death. An uninjected lesion can still be exposed to systemic drugs.",
@@ -440,11 +443,22 @@ const frontierRadical: EntityInput[] = [
   "Brody’s early study combined low-dose radiation and an injected CpG TLR9 agonist in 15 people with low-grade B-cell lymphoma. Hammerich combined Flt3 ligand, radiation and the TLR3 agonist poly-ICLC in indolent lymphoma with accompanying models. The latter report’s restored sensitivity to PD-1 blockade was demonstrated in mice; it is not established human combination benefit or evidence for every injection or a breast-cancer regimen.",
   "Assessment combines local sampling, controlled immune assays and serial treated/uninjected-lesion measurements. Tissue, blood and viable cells are finite inputs. Keep local change, specified reactive-cell counts or functions, and response proportions under their stated rules separate. No universal marker proves successful vaccination. Nonspecific inflammation, added peptide, viability, missed sampling times and concurrent therapy can confound results; a model or assay needs separate clinical validation of the complete intervention.",
   "Added peptide can bypass natural processing. Appropriate naturally presenting targets and recognition or cytotoxicity controls address a separate bridge, within the model’s limits. In a fictional study, the injected lesion shrinks and blood cells respond to supplied tumour peptides, while another lesion is unchanged. Local activity and assay reactivity were observed; natural recognition, access and useful distant function remain unproven. The unchanged lesion also does not establish absence of every immune-learning event."
-],
+,
+    "For T-cell-directed therapeutic strategies, compare the antigen source and what can be selected beforehand. An in-situ approach uses tumour material in the body and selects a site and intervention; a supplied design selects planned composition or encoded targets using adequate sample information or material. Defined peptide or encoded targets differ from broader cell preparations. Manufacturing a product does not mean every peptide ultimately displayed is known or controlled. The room-material versus teaching-kit analogy describes these inputs, not assured learning or a winner.",
+    "Priming is initial activation of a naive T cell. Cross-presentation places externally acquired material on class I HLA in a presenting cell; that event is distinct from a cancer cell naturally displaying a recognised target. Both strategies still need evidence of presentation, suitable priming or expansion, tumour access, useful function, outcomes and harms. Dashed links in a comparison diagram mark questions to investigate, not successful completion of each step.",
+    "The required opportunity depends on the method. A lesion-based local approach needs available tumour material at an identified, safely accessible site. A supplied product needs appropriate information or material and a workable manufacturing and delivery plan. If no identifiable lesion is accessible, that removes the stated opportunity for that local method; it does not show that another vaccine is feasible or choose treatment. Match a research question about local material and support to that design, or one about planned antigen selection to a supplied design, then compare complete strategies in suitable studies.",
+    "Injection specifies a route, and using one person's tumour material is not equivalent to manufacturing a selected personalised vaccine. A study can combine local tumour material with a supplied antigen product; report both sources rather than forcing one exclusive category. Personalisation, platform and route are independent descriptors. Local shrinkage, an immune assay and control at another lesion remain different outcomes.",
+    "Consider two fictional cards. A uses accessible tumour material with a local intervention and immune stimulus; B supplies selected encoded targets based on sample information. Neither gives outcome data. A does not specify a fixed presented mixture, and B does not guarantee processing, HLA display or natural tumour recognition. For both, investigate presentation, priming, access and function and then matched clinical outcomes and harms. If A's lesion becomes inaccessible, B is not thereby chosen. If B is added to A, the study now uses both antigen sources.",
+    "The examples answer different questions. Brody used radiation plus injected CpG in low-grade lymphoma. Hammerich used Flt3 ligand, low-dose radiation and poly-ICLC in indolent lymphoma, with accompanying models; the reported new responsiveness to PD-1 blockade was in mice. Ott's melanoma study supplied selected long peptides with poly-ICLC. These are not a head-to-head efficacy ranking, evidence for a breast-cancer regimen or an individual eligibility assessment."
+  ],
 "related": [
   "abscopal-effect",
   "cancer-immunity-cycle"
-]
+,
+    "intratumoral-immunotherapy",
+    "vaccine-adjuvants",
+    "vaccines-and-oncolytic-viruses"
+  ]
 },
   {
     id: "interception-vaccination", companies: ["rinuagene-biotechnology"], kind: "technology", name: "Cancer interception vaccines", sections: ["prevention", "immunotherapy"], status: "phase-2", asOf: RAD,

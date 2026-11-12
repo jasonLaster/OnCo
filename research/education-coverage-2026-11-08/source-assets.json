@@ -55127,10 +55127,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/designing-a-vaccine/images/prompts/three-assays-three-questions-v2-light-call.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof.",
+            "sectionHashes": [
+              "af989b41fc9543e0bfb6fdc8d5ab33f01e0e4d4d95848e0852f9863a0dd3dc48"
+            ],
             "points": []
+          },
+          "sourceSha256": "af989b41fc9543e0bfb6fdc8d5ab33f01e0e4d4d95848e0852f9863a0dd3dc48",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "774e65af87ba1f6260d83f06cb5de07267719cd1",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof."
           }
         },
         {
@@ -55142,10 +55156,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/designing-a-vaccine/images/prompts/three-assays-three-questions-v2.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof.",
+            "sectionHashes": [
+              "2b9ed82827f2d5d62b2acb76197a1fa3e629ef92c380a782854f9bc77116cce0"
+            ],
             "points": []
+          },
+          "sourceSha256": "2b9ed82827f2d5d62b2acb76197a1fa3e629ef92c380a782854f9bc77116cce0",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "1fdef9eddf0f3e83e7621fb62223e8ddec01a4f4",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof."
           }
         },
         {
@@ -55202,10 +55230,99 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval.",
+            "sectionHashes": [
+              "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3"
+            ],
+            "points": [
+              {
+                "id": "three-assays-assays-03",
+                "requirement": "Immunopeptidomics identifies HLA-associated peptides in a specified preparation, leaving completeness, cell of origin, recognition and function open.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "tldr",
+                    "fieldSha256": "c22e4fa5db573dc6d78912700d381d7aedf60647f9c5388a22fab69efa231248",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  },
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-04",
+                "requirement": "A specified peptide-HLA multimer labels sampled reagent-binding cells without by itself proving activation, natural tumour recognition or safe killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The specified reagent binds a population but leaves display, killing and treatment effect separate. Source scope: Original abstract plus modern independent multimer/function study; Altman erratum remains separately queued."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-05",
+                "requirement": "Peptide-stimulated ELISpot measures secretion-associated spots, not receptor identity or recognition of naturally presenting tumour cells.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  },
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-31",
+                "requirement": "Interpret the figure as independent HLA-peptide recovery, shared-scaffold multimer binding and incubation/capture followed by washed spot readout; shapes and spot counts are schematic, with no implied killing or patient benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "neoantigen-candidate-selection",
+                    "version": "proposal-vaccine-presentation-guides-root",
+                    "field": "notes",
+                    "fieldSha256": "73114f2ad9222241a09b818fa56490b3c307220e524238a554de7e464c60e80b",
+                    "explanation": "The connected paragraph explains the three independent physical workflows, the shared four-unit scaffold and cell-free washed spot readout with schematic limits. Source scope: Both pinned light/dark figures viewed in full; only scientific interpretation is carried, not a copied image or biological spot count."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3",
+          "bodyRole": "visual-teaching",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "2ae11790a3f46288ebdda5112d6e472f7f39994b",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
           }
         },
         {
@@ -55217,10 +55334,99 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval.",
+            "sectionHashes": [
+              "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0"
+            ],
+            "points": [
+              {
+                "id": "three-assays-assays-03",
+                "requirement": "Immunopeptidomics identifies HLA-associated peptides in a specified preparation, leaving completeness, cell of origin, recognition and function open.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "tldr",
+                    "fieldSha256": "c22e4fa5db573dc6d78912700d381d7aedf60647f9c5388a22fab69efa231248",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  },
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-04",
+                "requirement": "A specified peptide-HLA multimer labels sampled reagent-binding cells without by itself proving activation, natural tumour recognition or safe killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The specified reagent binds a population but leaves display, killing and treatment effect separate. Source scope: Original abstract plus modern independent multimer/function study; Altman erratum remains separately queued."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-05",
+                "requirement": "Peptide-stimulated ELISpot measures secretion-associated spots, not receptor identity or recognition of naturally presenting tumour cells.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  },
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-31",
+                "requirement": "Interpret the figure as independent HLA-peptide recovery, shared-scaffold multimer binding and incubation/capture followed by washed spot readout; shapes and spot counts are schematic, with no implied killing or patient benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "neoantigen-candidate-selection",
+                    "version": "proposal-vaccine-presentation-guides-root",
+                    "field": "notes",
+                    "fieldSha256": "73114f2ad9222241a09b818fa56490b3c307220e524238a554de7e464c60e80b",
+                    "explanation": "The connected paragraph explains the three independent physical workflows, the shared four-unit scaffold and cell-free washed spot readout with schematic limits. Source scope: Both pinned light/dark figures viewed in full; only scientific interpretation is carried, not a copied image or biological spot count."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0",
+          "bodyRole": "visual-teaching",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "1c2544759320b98f62556fe9724a8b0a4b5064b5",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
           }
         },
         {
@@ -112602,10 +112808,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/designing-a-vaccine/images/prompts/three-assays-three-questions-v2-light-call.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof.",
+            "sectionHashes": [
+              "af989b41fc9543e0bfb6fdc8d5ab33f01e0e4d4d95848e0852f9863a0dd3dc48"
+            ],
             "points": []
+          },
+          "sourceSha256": "af989b41fc9543e0bfb6fdc8d5ab33f01e0e4d4d95848e0852f9863a0dd3dc48",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "774e65af87ba1f6260d83f06cb5de07267719cd1",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof."
           }
         },
         {
@@ -112617,10 +112837,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/designing-a-vaccine/images/prompts/three-assays-three-questions-v2.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof.",
+            "sectionHashes": [
+              "2b9ed82827f2d5d62b2acb76197a1fa3e629ef92c380a782854f9bc77116cce0"
+            ],
             "points": []
+          },
+          "sourceSha256": "2b9ed82827f2d5d62b2acb76197a1fa3e629ef92c380a782854f9bc77116cce0",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "1fdef9eddf0f3e83e7621fb62223e8ddec01a4f4",
+            "rationale": "Complete construction body read. It mixes authoring instructions and scientific/in-image wording, with no unique learner claim beyond the separately assessed figure and assay interpretation. Supporting scope earns no points. Model calls and fidelity instructions are not approvals or custody proof."
           }
         },
         {
@@ -112677,10 +112911,99 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval.",
+            "sectionHashes": [
+              "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3"
+            ],
+            "points": [
+              {
+                "id": "three-assays-assays-03",
+                "requirement": "Immunopeptidomics identifies HLA-associated peptides in a specified preparation, leaving completeness, cell of origin, recognition and function open.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "tldr",
+                    "fieldSha256": "c22e4fa5db573dc6d78912700d381d7aedf60647f9c5388a22fab69efa231248",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  },
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-04",
+                "requirement": "A specified peptide-HLA multimer labels sampled reagent-binding cells without by itself proving activation, natural tumour recognition or safe killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The specified reagent binds a population but leaves display, killing and treatment effect separate. Source scope: Original abstract plus modern independent multimer/function study; Altman erratum remains separately queued."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-05",
+                "requirement": "Peptide-stimulated ELISpot measures secretion-associated spots, not receptor identity or recognition of naturally presenting tumour cells.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  },
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-31",
+                "requirement": "Interpret the figure as independent HLA-peptide recovery, shared-scaffold multimer binding and incubation/capture followed by washed spot readout; shapes and spot counts are schematic, with no implied killing or patient benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "neoantigen-candidate-selection",
+                    "version": "proposal-vaccine-presentation-guides-root",
+                    "field": "notes",
+                    "fieldSha256": "73114f2ad9222241a09b818fa56490b3c307220e524238a554de7e464c60e80b",
+                    "explanation": "The connected paragraph explains the three independent physical workflows, the shared four-unit scaffold and cell-free washed spot readout with schematic limits. Source scope: Both pinned light/dark figures viewed in full; only scientific interpretation is carried, not a copied image or biological spot count."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3",
+          "bodyRole": "visual-teaching",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "2ae11790a3f46288ebdda5112d6e472f7f39994b",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
           }
         },
         {
@@ -112692,10 +113015,99 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source and visual assessment, without expert/owner/learner sign-off",
+            "checkedAt": "2026-11-11",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval.",
+            "sectionHashes": [
+              "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0"
+            ],
+            "points": [
+              {
+                "id": "three-assays-assays-03",
+                "requirement": "Immunopeptidomics identifies HLA-associated peptides in a specified preparation, leaving completeness, cell of origin, recognition and function open.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "tldr",
+                    "fieldSha256": "c22e4fa5db573dc6d78912700d381d7aedf60647f9c5388a22fab69efa231248",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  },
+                  {
+                    "recordId": "immunopeptidomics",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+                    "explanation": "Recovery is tied to the preparation and its unknown cell origin, completeness and recognition. Source scope: Protocol abstract and targeted soluble-lysate/assignment methods; whole protocol not claimed read."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-04",
+                "requirement": "A specified peptide-HLA multimer labels sampled reagent-binding cells without by itself proving activation, natural tumour recognition or safe killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The specified reagent binds a population but leaves display, killing and treatment effect separate. Source scope: Original abstract plus modern independent multimer/function study; Altman erratum remains separately queued."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-05",
+                "requirement": "Peptide-stimulated ELISpot measures secretion-associated spots, not receptor identity or recognition of naturally presenting tumour cells.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  },
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "9999698b5259fa9d458e69e42088a4e3600f05341cef899d6b16c2f1a6c0a193",
+                    "explanation": "The method card defines secretion spots and the sequence/spot paragraph withholds receptor identity. Source scope: Abstract and publisher protocol pages 4-to-7; the abstract treatment-worked wording is not adopted as clinical efficacy."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "three-assays-assays-31",
+                "requirement": "Interpret the figure as independent HLA-peptide recovery, shared-scaffold multimer binding and incubation/capture followed by washed spot readout; shapes and spot counts are schematic, with no implied killing or patient benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "neoantigen-candidate-selection",
+                    "version": "proposal-vaccine-presentation-guides-root",
+                    "field": "notes",
+                    "fieldSha256": "73114f2ad9222241a09b818fa56490b3c307220e524238a554de7e464c60e80b",
+                    "explanation": "The connected paragraph explains the three independent physical workflows, the shared four-unit scaffold and cell-free washed spot readout with schematic limits. Source scope: Both pinned light/dark figures viewed in full; only scientific interpretation is carried, not a copied image or biological spot count."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0",
+          "bodyRole": "visual-teaching",
+          "scopeReview": {
+            "auditor": "Coordinator full-body/pixel scope assessment, not independent or expert approval",
+            "checkedAt": "2026-11-11",
+            "gitBlob": "1c2544759320b98f62556fe9724a8b0a4b5064b5",
+            "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
           }
         },
         {

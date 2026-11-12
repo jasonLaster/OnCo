@@ -20,7 +20,7 @@ export const SPONSOR_PATTERNS: Array<[RegExp, SponsorTarget]> = [
   [/hoffmann|^roche|genentech|chugai/, { id: "roche-genentech", label: "Roche / Genentech", kind: "company" }],
   [/novartis|advanced accelerator|endocyte/, { id: "novartis", label: "Novartis", kind: "company" }],
   [/pfizer|seagen|seattle genetics|array bio|medivation|wyeth|arena pharma/, { id: "pfizer", label: "Pfizer", kind: "company" }],
-  [/eli lilly|^lilly(?! asia ventures)|loxo/, { id: "eli-lilly", label: "Eli Lilly", kind: "company" }],
+  [/eli lilly|^lilly(?! asia ventures)|\bloxo/, { id: "eli-lilly", label: "Eli Lilly", kind: "company" }],
   [/janssen|johnson & johnson|johnson and johnson|^j&j/, { id: "johnson-johnson", label: "Johnson & Johnson (Janssen)", kind: "company" }],
   [/daiichi/, { id: "daiichi-sankyo", label: "Daiichi Sankyo", kind: "company" }],
   [/gilead|^kite|immunomedics|forty seven/, { id: "gilead", label: "Gilead Sciences (Kite)", kind: "company" }],

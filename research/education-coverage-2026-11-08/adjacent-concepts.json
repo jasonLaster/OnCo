@@ -917,7 +917,9 @@
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC12603194/",
       "https://clinicaltrials.gov/study/NCT00003855",
       "https://clinicaltrials.gov/study/NCT00014612",
-      "https://clinicaltrials.gov/study/NCT01872975"
+      "https://clinicaltrials.gov/study/NCT01872975",
+      "https://www.fda.gov/media/71336/download",
+      "https://www.fda.gov/media/148473/download"
     ],
     "discoveryOccurrences": [
       "expression-primary-follow-up:study-analysis-population-and-version"
@@ -926,7 +928,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. The 12 November test/vendor-guide pass adds a precise follow-up on retained generic ITT assertions. Earlier study-specific verified points, sources and acceptance scope are preserved.",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. The 12 November test/vendor-guide pass adds a precise follow-up on retained generic ITT assertions. Earlier study-specific verified points, sources and acceptance scope are preserved. The 12 November cancer-evidence pass resolves the named retained-ITT finding against primary statistical guidance and removes unsupported generalisations; the earlier study-specific points retain their original depth.",
       "points": [
         {
           "id": "scope-and-interpretation",
@@ -1003,11 +1005,24 @@
         {
           "id": "itt-retained-summary-context",
           "requirement": "Recheck the retained intention-to-treat summary against primary statistical guidance: superiority/non-inferiority scope, modified ITT, evaluable and safety populations, categorical inflation claims and the assertion about default analyses across OnCo trial/drug pages. The new guide comparison uses only the definition and explicit denominator distinctions; it does not certify those broader baseline assertions.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "Recheck the retained intention-to-treat summary against primary statistical guidance: superiority/non-inferiority scope, modified ITT, evaluable and safety populations, categorical inflation claims and the assertion about default analyses across OnCo trial/drug pages. The new guide comparison uses only the definition and explicit denominator distinctions; it does not certify those broader baseline assertions."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "intention-to-treat",
+              "version": "proposal-evidence-reading-guides-root",
+              "field": "summary",
+              "fieldSha256": "24e9b2e28c1ecffea2127b5f3f0005d6277bef10ce2f0f1c7cb4c3dea361249b",
+              "explanation": "ICH E9 sections 5.2, 5.3 and 6.3 and E9(R1) targeted pages support the qualified analysis-set account. The categorical inflation and site-wide-default assertions are withdrawn; no universal modified-set definition or unbiased per-protocol guarantee is asserted."
+            },
+            {
+              "recordId": "intention-to-treat",
+              "version": "proposal-evidence-reading-guides-root",
+              "field": "notes",
+              "fieldSha256": "98d4095a84b13e385c6446df0817cd2dfe2b1a4e62a611adfe10de6ef3695d3d",
+              "explanation": "ICH E9 sections 5.2, 5.3 and 6.3 and E9(R1) targeted pages support the qualified analysis-set account. The categorical inflation and site-wide-default assertions are withdrawn; no universal modified-set definition or unbiased per-protocol guarantee is asserted."
+            }
+          ],
+          "remaining": []
         }
       ]
     },
@@ -1017,6 +1032,12 @@
         "discoveryOccurrence": "test-vendor-guides-2026-11-12",
         "pointId": "itt-retained-summary-context",
         "scope": "Only the added retained-summary follow-up; not a fresh review of all earlier points."
+      },
+      {
+        "checkedOn": "2026-11-12",
+        "discoveryOccurrence": "evidence-reading-guides-2026-11-12",
+        "pointId": "itt-retained-summary-context",
+        "scope": "Only the named ITT finding is closed; earlier study-specific source scopes remain."
       }
     ]
   },

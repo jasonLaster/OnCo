@@ -926,7 +926,7 @@
       "status": "reviewed",
       "auditor": "Codex first-pass content audit; not an expert sign-off",
       "checkedAt": "2026-11-09",
-      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted.",
+      "rationale": "Follow-up of the already-read expression-response requirements exposed this additional scope distinction in existing canonical consumers. Independently resolved publications and raw first-party source text were checked; no clinical expert certification is claimed. The local-treatment pass extends this existing finding with primary reports, protocol definitions and explicit unresolved source differences; no new adjacent concept is counted. The 12 November test/vendor-guide pass adds a precise follow-up on retained generic ITT assertions. Earlier study-specific verified points, sources and acceptance scope are preserved.",
       "points": [
         {
           "id": "scope-and-interpretation",
@@ -999,9 +999,26 @@
             }
           ],
           "remaining": []
+        },
+        {
+          "id": "itt-retained-summary-context",
+          "requirement": "Recheck the retained intention-to-treat summary against primary statistical guidance: superiority/non-inferiority scope, modified ITT, evaluable and safety populations, categorical inflation claims and the assertion about default analyses across OnCo trial/drug pages. The new guide comparison uses only the definition and explicit denominator distinctions; it does not certify those broader baseline assertions.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Recheck the retained intention-to-treat summary against primary statistical guidance: superiority/non-inferiority scope, modified ITT, evaluable and safety populations, categorical inflation claims and the assertion about default analyses across OnCo trial/drug pages. The new guide comparison uses only the definition and explicit denominator distinctions; it does not certify those broader baseline assertions."
+          ]
         }
       ]
-    }
+    },
+    "scopeUpdates": [
+      {
+        "checkedOn": "2026-11-12",
+        "discoveryOccurrence": "test-vendor-guides-2026-11-12",
+        "pointId": "itt-retained-summary-context",
+        "scope": "Only the added retained-summary follow-up; not a fresh review of all earlier points."
+      }
+    ]
   },
   {
     "id": "response-classification-durability-and-surrogacy",

@@ -255,4 +255,5 @@ export const simpleS: Record<string, string> = {
   "drug-target-and-mechanism": "A drug target is the molecule or structure a treatment acts on. Its mechanism describes how that action produces an effect, with separate evidence needed for benefit in people.",
   "lymphoma-bio-lineage-antigen-cost": "Some lymphoma treatments recognise targets also found on healthy cells. Harm from those shared targets differs from unintended binding or cytokine-driven inflammation.",
   "lymphoma-tx-crs-icans": "Inflammation and brain-related symptoms after immune-effector treatment need separate assessment and recovery records. Care depends on the product and clinical findings.",
+  "spatial-proximity-metrics": "A spatial score describes which cells are near each other in the tissue studied. Cell labels and chosen areas affect it; closeness alone does not show interaction or treatment benefit.",
 };

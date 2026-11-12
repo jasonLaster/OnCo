@@ -342,7 +342,7 @@ export const technologies: TechnologyInput[] = [
 ]
 },
   {
-    id: "single-cell-spatial", dependsOn: ["spatial-biology-instruments"], kind: "technology", name: "Single-cell & spatial profiling", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf: "2026-11-10", wikipedia: W("Spatial_transcriptomics"),
+    id: "single-cell-spatial", dependsOn: ["spatial-biology-instruments"], kind: "technology", name: "Single-cell & spatial profiling", sections: ["diagnostics", "drug-discovery"], status: "emerging", asOf: "2026-11-12", wikipedia: W("Spatial_transcriptomics"),
     tldr: "Bulk, cell or nucleus profiling, and spatial RNA methods attach measurements to different units and retain different context.",
     summary: "Bulk RNA pools a specimen; cell or nucleus profiling separates recovered profiles; spatial methods retain capture positions or decoded molecule coordinates. Spots can contain several cells, and segmentation or imputation adds inference. Split aliquots and adjacent sections are not the same cells. Recovery, measured genes, physical resolution, replication and intended use determine which question each method can address.",
     principle: "RNA is captured with barcodes per cell or per spatial location, or read by imaging-based in situ hybridisation for hundreds to thousands of genes.",
@@ -353,7 +353,10 @@ export const technologies: TechnologyInput[] = [
     limitations: [
   "Preparation, recovery and analysis affect results",
   "Clinical utility requires evidence for the intended use"
-], companies: ["valius", "elucidate-bio", "immunai", "mission-bio", "nucleai", "origin-bio"], related: ["idea-immune-exclusion-drivers"], links: [
+], companies: ["valius", "elucidate-bio", "immunai", "mission-bio", "nucleai", "origin-bio"], related: [
+  "idea-immune-exclusion-drivers",
+  "spatial-proximity-metrics"
+], links: [
   {
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Spatial_transcriptomics"
@@ -377,7 +380,19 @@ export const technologies: TechnologyInput[] = [
   {
     "label": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/30586455/"
-  }
+  },
+  {
+  "label": "Multiplex digital spatial profiling of proteins and RNA in fixed tissue.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32393914/"
+},
+  {
+  "label": "Highly multiplexed immunofluorescence imaging of human tissues and tumors using t-CyCIF and conventional optical microscopes.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/29993362/"
+},
+  {
+  "label": "Spatial analyses of immune cell infiltration in cancer: current methods and future directions: A report of the International Immuno-Oncology Biomarker Working Group on Breast Cancer.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/37608771/"
+}
 ],
 
 "notes": [
@@ -391,7 +406,12 @@ export const technologies: TechnologyInput[] = [
   "Cells from one specimen are not independent biological replicates.",
   "Fictional teaching exercise: Of 300 recovered nuclei, 60 immune is 20% of recovered nuclei, not a tissue-area or original-cell fraction.",
   "Budget finite tissue, aliquots and sections for each compatible preparation. Report counts or normalised abundance per pool, recovered cell/nucleus or spatial unit, with physical resolution, measured genes and cell-boundary rules. Quality criteria, recovery, processing/imaging/analysis cost and controls vary by assay. Independent specimens support biological comparisons; attractive maps and technical repeats do not provide clinical validation.",
-  "OnCo reading inference: finer spatial resolution does not automatically provide broader measured-gene coverage or more complete recovery. A missing RNA count can reflect preparation or detection limits; an inferred cell source or protein activity is a different kind of output."
+  "OnCo reading inference: finer spatial resolution does not automatically provide broader measured-gene coverage or more complete recovery. A missing RNA count can reflect preparation or detection limits; an inferred cell source or protein activity is a different kind of output.",
+  "Two independent choices shape a spatial assay: which molecule is measured, and which area is sampled. Antibody-based imaging detects selected proteins through fluorescent or metal tags; RNA probes and barcoded capture detect selected transcripts or captured RNA. A protein-targeting question needs evidence about the protein on the relevant cells. Transcription alone does not establish protein abundance or cell-surface localisation. These maps describe the sampled preparation, rather than every part of a tumour.",
+  "Choose the molecular layer and sampling design together. Broad RNA measurement can support discovery of genes, cell states and pathways before selecting a smaller marker panel. Regional digital spatial profiling compares compartments selected by an operator and can measure protein or RNA, but a pooled regional count does not identify which individual cells carry the signal. Imaging across a complete chosen field can reveal borders, neighbourhoods and rare cells outside a predefined compartment; the imaged field still need not cover the whole slide. Report who selected the regions and by what rule.",
+  "Cell-level interpretation requires justified cell boundaries and cell-type calls. It is not a prerequisite for every spatial output: pooled regions and capture spots can be analysed without assigning every signal to a cell. Tissue-section examples also do not define every possible spatial experiment. Chen and colleagues demonstrated MERFISH imaging of 100 to 1,000 selected RNA species as individual molecules in cultured human fibroblasts. Molecule localisation and assignment to cells remain distinct steps. Validate each antibody or probe, registration and relevant cell assignments for the actual preparation; spatial resolution and gene or protein coverage remain separate properties.",
+  "In a fictional comparison, a 40-marker panel lacking the relevant target cannot answer the target question that a suitable six-marker panel can address. With one spare tissue section and a question about target-bearing cancer cells near T cells, use validated protein detection for the target, cancer cells and T cells over a justified area, with appropriate controls and cell assignments. Regional RNA alone would not establish which cells carry that protein. Budget the finite section before choosing the assay; changing the question after tissue is used does not recover the material.",
+  "A multiplex research panel and a validated clinical receptor or PD-L1 immunohistochemistry assay have different evidence requirements. Marker count, a detailed image and a reproducible measurement do not confer treatment-selection validity. Check the exact assay, scoring rule, population and intended use rather than transferring the status of a clinical single-marker assay to a different research panel."
 ]
 },
   {
@@ -1781,14 +1801,36 @@ export const technologies: TechnologyInput[] = [
 ]
 },
   {
-    id: "imaging-mass-cytometry", companies: ["navignostics", "ionpath"], kind: "technology", name: "Imaging mass cytometry", sections: ["diagnostics"], status: "emerging", asOf, wikipedia: W("Mass_cytometry"),
+    id: "imaging-mass-cytometry", companies: ["navignostics", "ionpath"], kind: "technology", name: "Imaging mass cytometry", sections: ["diagnostics"], status: "emerging", asOf: "2026-11-12", wikipedia: W("Mass_cytometry"),
     tldr: "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
     summary: "Imaging mass cytometry (Standard BioTools Hyperion) and multiplexed ion beam imaging (MIBI) label antibodies with rare-earth metal isotopes instead of fluorophores, then ablate the tissue pixel by pixel and read the metals by mass spectrometry. Forty or more markers can be measured on one section without spectral overlap, letting researchers phenotype immune and tumour cells in place and quantify their spatial relationships.",
     principle: "Metal-isotope-tagged antibodies bind the section; a laser or ion beam vaporises each pixel and time-of-flight mass spectrometry counts the isotopes, building one image per marker.",
     strengths: ["Forty-plus markers on one section","No autofluorescence or spectral overlap","Quantitative per-cell protein levels"],
     limitations: ["Slow acquisition and small fields of view","Expensive instruments","Research use only"],
     technologies: ["single-cell-spatial"],
-    links: [{ label: "Wikipedia", url: W("Mass_cytometry") }],
+    links: [
+  { label: "Wikipedia", url: W("Mass_cytometry") },
+  {
+  "label": "Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/24584193/"
+},
+  {
+  "label": "A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/30193111/"
+},
+  {
+  "label": "Highly multiplexed immunofluorescence imaging of human tissues and tumors using t-CyCIF and conventional optical microscopes.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/29993362/"
+}
+],
+
+    notes: [
+  "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+  "Keren and colleagues used multiplexed ion-beam imaging to measure 36 proteins in 41 triple-negative breast-cancer patients in 2018. Their image processing included cell segmentation, and spatial analysis distinguished immune-mixed from compartmentalised tumours. Organised border structures and compartmentalisation were linked to survival in this cohort. These observations neither establish that adjacent cells are functionally interacting nor constitute a trial selecting treatment by the pattern."
+],
+    related: [
+  "spatial-proximity-metrics"
+],
   },
   {
     id: "multiplex-immunofluorescence", companies: ["navignostics", "vicinity-bio", "strand-ai"], kind: "technology", name: "Multiplex immunofluorescence", sections: ["diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: W("Immunofluorescence"),

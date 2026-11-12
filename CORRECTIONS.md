@@ -1,5 +1,17 @@
 # Corrections
 
+### Breast pathology reports and treatment evidence, 11 November 2026
+
+The [pathology-guide assessment](research/education-coverage-2026-11-08/pathology-result-guides-2026-11-11/README.md) retains five original and five later versions, source-reading limits and exact rendered-field checks. Data changes are committed in [87c207368](https://github.com/jasonLaster/OnCo/commit/87c207368f99c9a2538a76daad9d713b0cf68eae) as unmerged draft contributions.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Grade, stage and receptors](/terms/grade-stage-receptor-breast/) | The lead promised receptor-defined drug response; the summary made grade and stage determine treatment intensity and imposed a fixed reporting order ending in surgery | NCI pathology/staging text, resolved ER/PR and HER2 guideline abstracts, and targeted CAP/Ki67/TIL passages | Separates measured features, staging contexts, treatment evidence and individual benefit; replaces the unreviewed old summary and retains its source links |
+| 2026-11-11 | [Biopsy](/terms/biopsy/) | The generic lead called biopsy the only way to confirm any cancer diagnosis | NCI's specimen-specific pathology explanation and comparison of current summary consumers | Defines collection and specimen limits, corrects Simple English and withdraws eight stale unreviewed translations |
+| 2026-11-11 | [Olaparib](/drugs/olaparib/) | Notes made germline BRCA alone sound sufficient and treated an 82% TNBC trial population as an effectively TNBC-only indication | Raw Lynparza sections 1.4/14.4 and targeted OlympiA eligibility/discussion text | Retains high-risk, HER2-negative, prior-treatment and qualifying-variant criteria; includes the hormone receptor-positive population and distinguishes trial criteria from the label and individual suitability |
+
+Fictional specimen clocks, residual-bed examples and subgroup arithmetic are teaching premises. They do not prescribe a regimen, explain a treatment hold or estimate personal benefit. No whole original paper, unrelated retained catalogue assertion, expert review or language approval is certified. The linked CTNeoBC and NRG-BR005 erratum bodies remain explicitly queued.
+
 ### Experimental-treatment access and planning, 11 November 2026
 
 The [access-guide assessment](research/education-coverage-2026-11-08/access-guides-2026-11-11/README.md) records the separate source versions, exact fields and reading limits. Changes are committed in [d49a0f58a](https://github.com/jasonLaster/OnCo/commit/d49a0f58aa230c53a5be44c3025a1ce2adf918d5), as unmerged draft contributions.

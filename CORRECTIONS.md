@@ -1,5 +1,17 @@
 # Corrections
 
+### Test validation and interpretation, 12 November 2026
+
+The [test and vendor-claim assessment](research/education-coverage-2026-11-08/test-vendor-guides-2026-11-12/README.md) retains the claim worksheet, validation evidence, fictional probability examples and decision branches. Test quality, clinical meaning, treatment benefit and product readiness remain separate questions.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [Analytical and clinical validation](/terms/analytical-vs-clinical-validation/) | The lead limited clinical validity to predicting a patient outcome, while the summary implied one universal validation ladder | MedlinePlus Genetics separates detecting a variant, its relationship to disease presence or risk, and useful clinical information | States three intended-use questions and distinguishes reliable measurement, clinical meaning and consequences of a decision |
+| 2026-11-12 | [External validation](/terms/external-validation/) | The lead called it the only evidence that a result travels; the summary required a different setting/platform and dismissed internal evidence as no result | TRIPOD-Cluster explanation, Box 1, distinguishes apparent, internal and external evaluation and includes later-period data from the same investigators | States the evaluation question and its limits, preserves the value of internal resampling and removes a universal pass/fail implication |
+| 2026-11-12 | External validation, retained benchmark assertions | Routine TCGA-to-METABRIC testing and a typical concordance-index decline were asserted without primary verification here | Source and field comparison | Intentionally withdraws those generalisations rather than calling them false; retains the separately sourced Michiels seven-study result at its historical scope |
+
+Earlier notes, source links and the separate peer-draft versions remain. No translation review, expert or learner sign-off, main coverage or deployment is implied.
+
 ### Vaccine design, manufacture and monitoring, 12 November 2026
 
 The [production-guide assessment](research/education-coverage-2026-11-08/vaccine-production-guides-2026-11-12/README.md) retains product-specific sequence, chemistry, formulation, protocol and measurement questions. The spacer panel is explicitly fictional; its numbers do not determine release or clinical benefit.

@@ -549,4 +549,6 @@ export const simpleB: Record<string, string> = {
 ,
 "ctdna-mrd-positive": "A positive residual-disease blood result meets that test's detection rules. Its source and clinical setting matter; it does not guarantee recurrence or show which treatment will help.",
 "tumour-informed-assay": "One method first selects features from a sampled tumour to track in blood. Another starts with predefined features. Their performance depends on the actual tests, samples and clinical question."
+,
+  "cdk-inhibitors": "These medicines block selected enzymes used in cell division or gene reading. Tests must distinguish a temporary pause, cell death, marrow protection and benefit to patients."
 };

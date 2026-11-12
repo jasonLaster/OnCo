@@ -1,5 +1,14 @@
 # Corrections
 
+### Targeted inhibitor mechanisms, 12 November 2026
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [EGFR](/targets/egfr/) | A retained lung note assigned sensitivity or resistance to every inhibitor generation by mutation class, including resistance of exon 20 insertions to all inhibitors; its testing sentence did not distinguish protein from DNA | Lynch 2004 and the raw FDA July 2025 sunvozertinib approval notification | Keeps the cohort frequencies, replaces the universal drug-response claims with variant-specific evidence and a dated, population-qualified accelerated-approval example, and distinguishes immunostaining from identification of a DNA alteration |
+| 2026-11-12 | [BRD4](/targets/brd4/) | The account referred to an unavailable lesson figure and could make a fixed drawn acetyl mark sound like a measured unchanged state | Fresh views of both pinned figure themes and resolved JQ1 and Shu primary evidence | Explains pocket occupation, protein depletion and the fixed-mark drawing convention in self-contained prose |
+
+The five source pairs are byte-identical across the two pins. Their requirements, source depth and draft-only verification are recorded in the targeted-small-molecule assessment packet. Older catalogue assertions outside the named corrections are not recertified by this assessment.
+
 ### Statistical questions, populations and design, 12 November 2026
 
 The [statistics assessment](research/education-coverage-2026-11-08/study-statistics-2026-11-12/README.md) retains five later-only lessons and their source-first requirements. They have no counterpart at the original pinned paths.

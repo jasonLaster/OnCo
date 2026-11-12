@@ -1091,7 +1091,7 @@ export const technologies: TechnologyInput[] = [
   ]
 },
   {
-    id: "cdk46-inhibitor", companies: ["alaw-therapeutics"], keyPapers: ["paper-sherr-roberts-cdk-inhibitors-genesdev-1999"], kind: "technology", name: "CDK4/6 inhibitors", sections: ["targeted-therapy", "hormonal"], status: "approved", asOf, since: 2015, wikipedia: W("CDK_inhibitor"),
+    id: "cdk46-inhibitor", companies: ["alaw-therapeutics"], keyPapers: ["paper-sherr-roberts-cdk-inhibitors-genesdev-1999"], kind: "technology", name: "CDK4/6 inhibitors", sections: ["targeted-therapy", "hormonal"], status: "approved", asOf: "2026-11-12", since: 2015, wikipedia: W("CDK_inhibitor"),
     tldr: "Pills that stop the cell-division engine, added to hormone therapy for the most common type of breast cancer.",
     summary: "Palbociclib, ribociclib, abemaciclib with endocrine therapy: PFS roughly doubled and, for ribociclib and abemaciclib, overall survival improved in advanced HR+/HER2- disease. Ribociclib (NATALEE) and abemaciclib (monarchE) are approved as adjuvant therapy for high-risk early disease. 2026: palbociclib approved as maintenance in HR+/HER2+ disease (PATINA).",
     principle: "Block RB phosphorylation, arresting cells in G1.",
@@ -1099,7 +1099,11 @@ export const technologies: TechnologyInput[] = [
     limitations: ["Neutropenia, diarrhoea (abemaciclib), QT (ribociclib)", "Resistance via RB loss, CDK2, cyclin E"],
     targets: ["cdk4-6", "estrogen-receptor"],
     drugs: ["palbociclib", "ribociclib", "abemaciclib"],
-    cancers: ["breast-hr-positive"], related: ["oral-serd-plus-cdk46-after-esr1", "cdk46-plus-endocrine"], links: [{ label: "Wikipedia", url: W("CDK_inhibitor") }],
+    cancers: ["breast-hr-positive"], related: [
+  "oral-serd-plus-cdk46-after-esr1",
+  "cdk46-plus-endocrine",
+  "cdk-inhibitors"
+], links: [{ label: "Wikipedia", url: W("CDK_inhibitor") }],
   },
   {
     id: "kras-inhibitors", kind: "technology", name: "KRAS & RAS inhibitors", sections: ["targeted-therapy"], status: "approved", asOf, since: 2021, wikipedia: W("KRAS"),
@@ -2212,14 +2216,66 @@ export const technologies: TechnologyInput[] = [
     links: [{ label: "Wikipedia", url: W("Isocitrate_dehydrogenase") }],
   },
   {
-    id: "pi3k-akt-mtor-inhibitors", companies: ["mei-pharma", "kymathera", "synnovation-therapeutics", "terremoto-biosciences", "torqur", "sapu-nano", "stelexis-biosciences", "alterome-therapeutics", "mekanistic-therapeutics", "ensem-therapeutics"], kind: "technology", name: "PI3K, AKT and mTOR inhibitors", sections: ["targeted-therapy"], status: "approved", asOf, since: 2009, wikipedia: W("PI3K/AKT/mTOR_pathway"),
+    id: "pi3k-akt-mtor-inhibitors", companies: ["mei-pharma", "kymathera", "synnovation-therapeutics", "terremoto-biosciences", "torqur", "sapu-nano", "stelexis-biosciences", "alterome-therapeutics", "mekanistic-therapeutics", "ensem-therapeutics"], kind: "technology", name: "PI3K, AKT and mTOR inhibitors", sections: ["targeted-therapy"], status: "approved", asOf: "2026-11-12", since: 2009, wikipedia: W("PI3K/AKT/mTOR_pathway"),
     tldr: "Drugs against one of the most commonly mutated growth pathways in cancer, now used with hormone therapy in breast cancer and in kidney and neuroendocrine tumours, with high blood sugar as the shared side effect.",
     summary: "The PI3K-AKT-mTOR pathway is altered in a large share of tumours. Rapalogues (everolimus, temsirolimus) were approved first, for kidney cancer and later breast and neuroendocrine tumours. Alpelisib (PIK3CA-mutant breast cancer, 2019), capivasertib (an AKT inhibitor, 2023) and inavolisib (a PI3K-alpha degrader-like inhibitor, 2024) followed in hormone receptor-positive breast cancer with fulvestrant. Hyperglycaemia, rash and stomatitis limit dosing, and mutant-selective PI3K-alpha inhibitors aim to spare wild-type enzyme.",
     principle: "ATP-competitive or allosteric inhibitors block PI3K catalytic subunits, AKT or mTORC1, cutting the survival and growth signalling downstream of receptor tyrosine kinases and PIK3CA mutations.",
     strengths: ["Approved in several diseases","Combination with endocrine therapy extends control in breast cancer","Biomarker-selected use"],
     limitations: ["Hyperglycaemia and rash limit doses","Feedback activation blunts single-agent effect","Modest survival gains"],
     targets: ["pik3ca","akt","mtor"], drugs: ["everolimus","temsirolimus","alpelisib","capivasertib","inavolisib"], cancers: ["breast-hr-positive","rcc"],
-    links: [{ label: "Wikipedia", url: W("PI3K/AKT/mTOR_pathway") }],
+    links: [
+  { label: "Wikipedia", url: W("PI3K/AKT/mTOR_pathway") },
+  {
+  "label": "UniProt P42336: reviewed human PIK3CA function",
+  "url": "https://www.uniprot.org/uniprotkb/P42336/entry"
+},
+  {
+  "label": "UniProt P60484: reviewed human PTEN function",
+  "url": "https://www.uniprot.org/uniprotkb/P60484/entry"
+},
+  {
+  "label": "UniProt P42345: reviewed human mTOR function",
+  "url": "https://www.uniprot.org/uniprotkb/P42345/entry"
+},
+  {
+  "label": "NCI Drug Dictionary: capivasertib",
+  "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/capivasertib"
+},
+  {
+  "label": "PIQRAY prescribing information, section 12.1",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+},
+  {
+  "label": "NCI Drug Dictionary: everolimus",
+  "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/everolimus"
+},
+  {
+  "label": "mTOR inhibition induces upstream receptor tyrosine kinase signaling and activates Akt.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/16452206/"
+},
+  {
+  "label": "FDA: capivasertib with fulvestrant, November 2023 approval",
+  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-capivasertib-fulvestrant-breast-cancer"
+},
+  {
+  "label": "Capivasertib plus paclitaxel as first-line treatment for metastatic triple-negative breast cancer: results from the randomised, global phase III CAPItello-290 trial.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/41422862/"
+}
+],
+
+    notes: [
+  "PI3K, AKT and mTOR name different parts of a signalling network. In the selected membrane route, PI3K adds a phosphate to the lipid PIP2 to make PIP3; PTEN removes the relevant phosphate and opposes that lipid signal. PIP3 helps recruit proteins including AKT to the membrane. AKT, also called protein kinase B, phosphorylates proteins, and its connection to mTORC1 includes intermediate regulators. mTOR participates in the distinct mTORC1 and mTORC2 complexes. A diagram showing this route leaves other branches out.",
+  "Alpelisib has inhibitory activity predominantly against PI3K-alpha; capivasertib inhibits AKT isoforms; the rapamycin derivative everolimus acts through a complex that inhibits mTOR. Isoforms are related forms of a protein, and an inhibitor profile must identify which forms or complexes the compound affects. Binding mode, selectivity and achieved exposure differ between products. Blocking a neighbouring node is not the same intervention, even when the network diagram puts the names beside each other.",
+  "O'Reilly and colleagues found that mTOR inhibition relieved feedback inhibition and increased AKT activation in studied cancer cell lines and patient tumour samples. The indirect return path in a network sketch represents a feedback brake, not a direct physical wire or every branch. In a fictional experiment, reduced downstream output with a higher AKT phosphosite signal is compatible with network compensation. Those two measurements alone do not prove that this loop caused the change, that every tumour rebounds or that the drug missed its target; they also do not measure net survival benefit.",
+  "The FDA's November 2023 capivasertib approval is a defined historical example: capivasertib with fulvestrant for adults with hormone-receptor-positive, HER2-negative locally advanced or metastatic breast cancer carrying a PIK3CA, AKT1 or PTEN alteration detected by an FDA-approved test. It required progression after an endocrine-based regimen in the metastatic setting, or recurrence on or within 12 months of completing adjuvant therapy. These disease, test, combination and prior-treatment conditions do not become a triple-negative breast-cancer indication from a pathway alteration alone.",
+  "CAPItello-290 tested capivasertib plus paclitaxel against placebo plus paclitaxel as first-line treatment for metastatic triple-negative breast cancer. In the 812-patient phase III trial, the overall-survival primary endpoints were not met in either the overall population or the PIK3CA/AKT1/PTEN-altered population. Median overall survival was 17.7 versus 18.0 months overall and 20.4 months in both altered-population arms. Secondary progression-free survival results favoured the combination, but do not reverse the negative primary survival finding.",
+  "Name the phosphosite, substrate, specimen, comparator and time when interpreting a signalling assay. A PTEN DNA alteration, RNA amount, protein stain and enzyme-function result measure different layers. A drug-dependent change in AKT phosphorylation is not a universal meter of all AKT activity; examine the relevant substrate effects too. Nanomolar, or nM, states concentration; normalised phosphoprotein signal, growth and death are distinct outputs. Engagement is different from dependence, and clinical interpretation needs the disease, assay and endpoint used in the treatment evidence.",
+  "If a fictional report finds a PIK3CA variant, it does not follow that any AKT inhibitor will work. Establish the variant's functional effect, actual drug and exposure, disease setting, assay and clinical evidence before claiming sensitivity or eligibility. Likewise, a model hypothesis about DNA repair or immune effects is not proof that every PI3K or AKT inhibitor improves a PARP-inhibitor or immunotherapy combination. State the proposed mechanism, the particular node being perturbed and the outcome tested in that treatment setting."
+],
+    related: [
+  "pi3k-akt-mtor",
+  "pten-loss"
+],
   },
   {
     id: "mdm2-inhibitors", companies: ["lamassu-biotech"], kind: "technology", name: "MDM2 inhibitors", sections: ["targeted-therapy"], status: "phase-3", asOf, wikipedia: W("Mdm2"),

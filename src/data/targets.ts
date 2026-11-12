@@ -65,7 +65,7 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("ERBB3") }],
   },
   {
-    id: "egfr", trials: ["nct06043817", "nct06567015", "nct06975410", "nct05394831", "nct05168566", "nct07467863", "nct06080776", "nct06616766", "nct07136779", "nct07641023", "nct05920135", "nct06940401", "nct06010329"], drugs: ["dacomitinib", "mobocertinib", "guardant360-cdx", "oncomine-dx-target-test", "therascreen-cdx", "tempus-xt-cdx", "necitumumab", "hlx43", "zipalertinib", "jmt101", "hs-20117", "mcla-129", "tqb6411", "tqb2930", "tqb2922", "e-edv-d682", "hmbd-001", "silevertinib", "vrn110755", "js111"], kind: "target", name: "EGFR", symbol: "EGFR", hgnc: "HGNC:3236", ensembl: "ENSG00000146648", uniprot: "P00533", entrez: "1956", targetClass: "kinase", asOf, wikipedia: W("Epidermal_growth_factor_receptor"),
+    id: "egfr", trials: ["nct06043817", "nct06567015", "nct06975410", "nct05394831", "nct05168566", "nct07467863", "nct06080776", "nct06616766", "nct07136779", "nct07641023", "nct05920135", "nct06940401", "nct06010329"], drugs: ["dacomitinib", "mobocertinib", "guardant360-cdx", "oncomine-dx-target-test", "therascreen-cdx", "tempus-xt-cdx", "necitumumab", "hlx43", "zipalertinib", "jmt101", "hs-20117", "mcla-129", "tqb6411", "tqb2930", "tqb2922", "e-edv-d682", "hmbd-001", "silevertinib", "vrn110755", "js111"], kind: "target", name: "EGFR", symbol: "EGFR", hgnc: "HGNC:3236", ensembl: "ENSG00000146648", uniprot: "P00533", entrez: "1956", targetClass: "kinase", asOf: "2026-11-12", wikipedia: W("Epidermal_growth_factor_receptor"),
     tldr: "A growth receptor that is mutated in some lung cancers and overproduced in others; the first great success of targeted pills.",
     summary: "EGFR activating mutations (exon 19 del, L858R) drive ~15% of Western and ~40-50% of East Asian NSCLC; osimertinib is standard first-line. EGFR is also an antibody target in colorectal and head-and-neck cancer (cetuximab, panitumumab) and a component of bispecifics (amivantamab, EGFR×MET; EGFR×HER3 ADCs). Resistance via C797S, MET amplification, and histologic transformation is the central problem.",
     biology: "EGFR is a receptor tyrosine kinase activating RAS-MAPK and PI3K-AKT. Exon 20 insertions need dedicated drugs.",
@@ -78,7 +78,59 @@ export const targets: TargetInput[] = [
       { cancerId: "colorectal", pct: 100, measure: "Wild-type EGFR is the antibody target", source: "https://en.wikipedia.org/wiki/Epidermal_growth_factor_receptor", note: "Benefit restricted to RAS/BRAF wild-type (~40%)" },
       { cancerId: "head-and-neck", pct: "80-90", measure: "Overexpression by IHC", source: "https://en.wikipedia.org/wiki/Epidermal_growth_factor_receptor" },
       { cancerId: "glioblastoma", pct: "40-50", measure: "Amplification", source: "https://www.cbioportal.org/study/summary?id=gbm_tcga_pan_can_atlas_2018", note: "EGFRvIII in ~25-30%" },
-    ], links: [{ label: "Wikipedia", url: W("Epidermal_growth_factor_receptor") }], companies: ["bicara-therapeutics", "imagene-ai", "inivata", "lucence", "oric-pharmaceuticals"],
+    ], links: [
+  { label: "Wikipedia", url: W("Epidermal_growth_factor_receptor") },
+  {
+  "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+},
+  {
+  "label": "UniProt P00533: reviewed human EGFR function",
+  "url": "https://www.uniprot.org/uniprotkb/P00533/entry"
+},
+  {
+  "label": "NCI Drug Dictionary: cetuximab",
+  "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/cetuximab"
+},
+  {
+  "label": "NCI: targeted therapy types and mechanisms",
+  "url": "https://www.cancer.gov/about-cancer/treatment/types/targeted-therapies"
+},
+  {
+  "label": "Activating mutations in the epidermal growth factor receptor underlying responsiveness of non-small-cell lung cancer to gefitinib.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/15118073/"
+},
+  {
+  "label": "TBCRC 001: randomized phase II study of cetuximab in combination with carboplatin in stage IV triple-negative breast cancer.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/22665533/"
+},
+  {
+  "label": "Randomized phase II study of the anti-epidermal growth factor receptor monoclonal antibody cetuximab with cisplatin versus cisplatin alone in patients with metastatic triple-negative breast cancer.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/23733761/"
+},
+  {
+  "label": "Errata to Baselga 2013: funding acknowledgement (2018)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6162024/"
+},
+  {
+  "label": "FDA: sunvozertinib accelerated approval, July 2025",
+  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sunvozertinib-metastatic-non-small-cell-lung-cancer-egfr-exon-20"
+}
+], companies: ["bicara-therapeutics", "imagene-ai", "inivata", "lucence", "oric-pharmaceuticals"],
+
+    notes: [
+  "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
+  "EGFR can feed RAS-MAPK and PI3K-AKT signalling, but these networks receive other inputs too. A downstream signal therefore does not uniquely identify the receptor driving it. Compare the actual inhibitor: which receptors and variants it covers, whether binding is reversible and what exposure is achieved. Evidence for an extracellular antibody cannot simply be assigned to an intracellular kinase inhibitor, even when both treatments use the same target name.",
+  "Lynch and colleagues linked defined EGFR kinase-domain mutations to gefitinib responsiveness in non-small-cell lung cancer and tested the mutant proteins in cultured cells. They found mutations in eight of nine responsive cancers and none of seven nonresponsive cancers in the reported comparison. This was evidence about specific alterations in that disease and about their functional consequences, not a rule that abundant EGFR protein in another cancer predicts response.",
+  "TBCRC 001 studied cetuximab with carboplatin in metastatic triple-negative breast cancer. Among 16 patients with paired biopsies, the expression-based EGFR pathway analysis showed activation in 13 and inhibition after treatment in five. The regimen given together from the start produced a 17% response rate; 31% had a response or prolonged disease stabilisation. The latter outcome is broader than objective response. Receptor abundance, measured pathway suppression and clinical disease control cannot be substituted for each other.",
+  "BALI-1 compared cisplatin with or without cetuximab in metastatic triple-negative breast cancer. Its primary overall-response endpoint was not met: response was 20% versus 10%, with P = 0.11. Progression-free survival was a secondary endpoint, and the reported overall-survival difference was not statistically significant. These results do not establish a general EGFR-treatment rule or postoperative benefit. The later erratum added a funding acknowledgement rather than changing these efficacy results.",
+  "An EGFR report identifies the specimen, assay, variant if any and sampling time. Immunostaining measures protein amount and location; sequencing measures a DNA alteration; receptor or downstream phosphorylation measures a particular signalling state. A staining score, variant allele fraction and signal normalised to a control have different denominators and units. In model tests, state concentration and controls and distinguish engagement from growth dependence. An unspecified EGFR-high cutoff cannot select every EGFR-directed medicine.",
+  "In a fictional culture with strong EGFR staining, reduced receptor phosphorylation after treatment and continued growth, the stain and phosphoprotein result can both be correct. Growth may have other support, and attribution to the intended target still needs controlled perturbation and comparable exposure. This pattern does not establish sensitivity or patient benefit. Explain separately how much receptor was observed, what the exact alteration does and which product-specific mechanism and clinical outcome have been demonstrated."
+],
+    related: [
+  "tki-term",
+  "drug-target-and-mechanism"
+],
   },
   {
     id: "nectin4", trials: ["nct07299747"], drugs: ["crb-701"], kind: "target", name: "Nectin-4", symbol: "NECTIN4", hgnc: "HGNC:19688", ensembl: "ENSG00000143217", uniprot: "Q96NY8", entrez: "81607", targetClass: "surface-antigen", asOf, wikipedia: W("Nectin-4"),

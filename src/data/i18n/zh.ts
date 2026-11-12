@@ -130,7 +130,6 @@ export const tldr_zh: Record<string, string> = {
   "optical-imaging": "在特殊光下发光的染料，让外科医生在手术室看到肿瘤边缘和神经。",
   "histopathology-ihc": "在显微镜下观察癌细胞并染色特定蛋白。仍是每一个诊断的基础。",
   cgp: "从活检组织一次测序数百个癌基因，找出药物可靶向的突变。",
-  "wes-wgs": "读取肿瘤的全部基因（外显子组）或全部DNA（基因组），而非选定的面板。",
 
 
   "liquid-biopsy": "读取肿瘤脱落DNA片段的血液检测，无需穿刺肿瘤即可分型或监测。",
@@ -412,7 +411,6 @@ export const tldr_zh: Record<string, string> = {
   "gene-fusion": "两个基因断裂并拼接，产生可驱动癌症的杂合蛋白。往往对药物极度敏感。",
 
   pam50: "一项50基因检测，将乳腺癌分为luminal A、luminal B、HER2富集型和基底样型。",
-  neoantigen: "肿瘤突变产生的、免疫系统从未见过的蛋白片段，因此可以攻击它而不伤害正常细胞。",
   "abscopal-effect": "照射一个肿瘤使别处未治疗的肿瘤通过免疫系统缩小。",
   "immunogenic-cell-death": "一种能警示免疫系统的死亡方式，不同于静默的凋亡。",
 

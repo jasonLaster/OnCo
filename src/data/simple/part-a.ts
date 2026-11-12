@@ -129,7 +129,7 @@ export const simpleA: Record<string, string> = {
   "optical-imaging": "Dyes that glow under special light so surgeons can see the edges of a tumour during an operation.",
   "histopathology-ihc": "Looking at cancer cells under a microscope and staining them to see which proteins they carry. Still the basis of every diagnosis.",
   cgp: "Reading hundreds of cancer genes at once from a biopsy to find the changes a drug can target.",
-  "wes-wgs": "Reading all of a tumour's genes, or its entire DNA, instead of a chosen list.",
+  "wes-wgs": "One test reads mostly the DNA parts that code for proteins. Another reads more of the genome. Both can miss changes, so their tested regions and limits matter.",
 
 
   "liquid-biopsy": "A blood test that reads bits of DNA shed by the tumour, so doctors can learn about the cancer without a needle in it.",

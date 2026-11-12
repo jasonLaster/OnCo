@@ -555,7 +555,6 @@ export const tldr_fr: Record<string, string> = {
   "nci-cancer-centers": "Les centres de cancérologie désignés par le NCI constituent la liste, établie par le gouvernement américain, des centres qui répondent à ses normes de recherche et de soins.",
   "nci-ccr": "Les propres laboratoires et la clinique du NCI au NIH Clinical Center, siège de la branche de thérapie cellulaire de Rosenberg, du vaccin contre le HPV et de la génomique des lymphomes.",
   nejm: "Le NEJM est la revue médicale la plus influente. Lorsqu'un essai sur un médicament anticancéreux change la façon de traiter les patients, l'article paraît généralement ici, souvent publié le jour même de sa présentation à l'ASCO, à l'ESMO ou à l'ASH.",
-    neoantigen: "Un fragment de protéine créé par une mutation tumorale, que le système immunitaire n'a jamais rencontré auparavant, de sorte qu'il peut l'attaquer sans nuire aux cellules normales.",
   "neoantigen-mrna-vaccine": "Un vaccin fabriqué pour un seul patient, qui code les mutations uniques de sa propre tumeur, afin d'entraîner le système immunitaire à la traquer.",
   "ngs-mrd-clonoseq": "Séquencer le code-barres génétique unique de la leucémie d'un patient pour retrouver une cellule cancéreuse sur un million.",
   nice: "L'organisme d'évaluation des technologies de santé de l'Angleterre, qui décide si le NHS doit payer chaque nouveau médicament anticancéreux sur la base du coût par année de vie ajustée sur la qualité et gère le Cancer Drugs Fund.",
@@ -639,7 +638,6 @@ export const tldr_fr: Record<string, string> = {
   "virtual-cell": "La tentative de construire un modèle informatique d'une cellule assez fidèle pour prédire l'effet d'un médicament ou d'une mutation avant même que quiconque ne réalise l'expérience.",
   wee1: "Une kinase de point de contrôle qui laisse aux cellules le temps de réparer leur ADN avant de se diviser. La supprimer force les cellules cancéreuses endommagées à entrer dans une division qui leur est fatale.",
   "wellcome-sanger": "L'institut britannique de génomique dont le Cancer Genome Project a découvert la mutation de BRAF dans le mélanome, créé COSMIC et défini les signatures mutationnelles.",
-  "wes-wgs": "Lire tous les gènes (exome) ou la totalité de l'ADN (génome) d'une tumeur, plutôt qu'un panel de gènes choisis.",
 
   "y-combinator": "Y Combinator est l'accélérateur de start-up qui finance chaque année des centaines de nouvelles entreprises en échange d'une petite participation. Depuis 2014, il soutient un flux régulier d'entreprises qui s'attaquent au cancer, des tests sanguins aux virus modifiés.",
   zanidatamab: "Zanidatamab (Ziihera) est un anticorps qui s'accroche à HER2 en deux endroits différents, approuvé pour le cancer des voies biliaires HER2+.",

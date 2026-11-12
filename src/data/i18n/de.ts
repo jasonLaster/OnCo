@@ -555,7 +555,6 @@ export const tldr_de: Record<string, string> = {
   "nci-cancer-centers": "Die vom NCI ausgewiesenen Krebszentren sind die Liste der US-Regierung jener Krebszentren, die ihre Standards für Forschung und Versorgung erfüllen.",
   "nci-ccr": "Die eigenen Labore und die Klinik des NCI am NIH Clinical Center, Heimat von Rosenbergs Zelltherapie-Abteilung, des HPV-Impfstoffs und der Lymphom-Genomik.",
   nejm: "Das NEJM ist die einflussreichste medizinische Fachzeitschrift. Wenn eine Studie zu einem Krebsmedikament die Behandlung von Patienten verändert, erscheint die Arbeit meist hier, oft am selben Tag, an dem sie auf dem ASCO, dem ESMO oder dem ASH vorgestellt wird.",
-    neoantigen: "Ein durch eine Tumormutation entstandenes Proteinfragment, das das Immunsystem noch nie zuvor gesehen hat, sodass es dieses angreifen kann, ohne normale Zellen zu schädigen.",
   "neoantigen-mrna-vaccine": "Ein für einen einzelnen Patienten hergestellter Impfstoff, der die einzigartigen Mutationen seines eigenen Tumors kodiert, um das Immunsystem darauf zu trainieren, ihn zu jagen.",
   "ngs-mrd-clonoseq": "Die Sequenzierung des einzigartigen genetischen Barcodes der Leukämie eines Patienten, um eine Krebszelle unter einer Million zu finden.",
   nice: "Englands Behörde für die Bewertung von Gesundheitstechnologien, die anhand der Kosten pro qualitätsbereinigtem Lebensjahr entscheidet, ob der NHS für jedes neue Krebsmedikament zahlen soll, und den Cancer Drugs Fund betreibt.",
@@ -639,7 +638,6 @@ export const tldr_de: Record<string, string> = {
   "virtual-cell": "Der Versuch, ein Computermodell einer Zelle zu bauen, das gut genug ist, um vorherzusagen, was ein Medikament oder eine Mutation bewirken wird, bevor jemand das Experiment durchführt.",
   wee1: "Eine Checkpoint-Kinase, die Zellen Zeit gibt, ihre DNA vor der Teilung zu reparieren. Wird sie ausgeschaltet, werden geschädigte Krebszellen in eine tödliche Teilung gezwungen.",
   "wellcome-sanger": "Das britische Genominstitut, dessen Cancer Genome Project die BRAF-Mutation beim Melanom entdeckte, COSMIC aufbaute und die Mutationssignaturen definierte.",
-  "wes-wgs": "Das Auslesen aller Gene (Exom) oder der gesamten DNA (Genom) eines Tumors statt nur eines ausgewählten Panels.",
 
   "y-combinator": "Y Combinator ist der Start-up-Accelerator, der jedes Jahr Hunderte neuer Unternehmen gegen eine kleine Beteiligung finanziert. Seit 2014 unterstützt er einen stetigen Strom von Unternehmen, die sich Krebs vorgenommen haben, von Bluttests bis zu gentechnisch veränderten Viren.",
   zanidatamab: "Zanidatamab (Ziihera) ist ein Antikörper, der HER2 an zwei verschiedenen Stellen packt, zugelassen für HER2+ Gallengangskrebs.",

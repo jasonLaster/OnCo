@@ -53,7 +53,7 @@ export const simpleB: Record<string, string> = {
   "gene-fusion": "Two genes broken and joined together, making a hybrid protein that can drive cancer and is often very drug-sensitive.",
 
   pam50: "A 50-gene test that sorts breast cancers into four biological groups.",
-  neoantigen: "A protein fragment created by a tumour mutation that the immune system has never seen before, so it can attack it safely.",
+  neoantigen: "A changed tumour sequence can make a new protein piece. Immune cells may recognise it, but tests still need to check display, recognition and harm to healthy cells.",
   "oncogene-addiction": "Oncogene addiction is dependence on an activated driver in a defined context. A mutation or high expression alone does not demonstrate that dependence or a safe treatment window.",
   "synthetic-lethality": "Two changes can kill a cell together even when either change alone is tolerated. A genetic finding alone does not show that a particular drug will produce this effect.",
   crs: "Immune-cell activation can cause widespread inflammation called cytokine release syndrome. Doctors assess the symptoms and other possible causes; a cytokine level alone does not diagnose it.",

@@ -130,7 +130,6 @@ export const tldr_es: Record<string, string> = {
   "optical-imaging": "Colorantes que brillan bajo una luz especial, para que los cirujanos vean los bordes del tumor y los nervios en el quirófano.",
   "histopathology-ihc": "Observar las células cancerosas al microscopio y teñirlas para proteínas concretas. Sigue siendo la base de todo diagnóstico.",
   cgp: "Secuenciar cientos de genes del cáncer a la vez a partir de una biopsia para encontrar las mutaciones que un fármaco puede atacar.",
-  "wes-wgs": "Leer todos los genes (exoma) o todo el ADN (genoma) de un tumor, en lugar de un panel elegido.",
 
 
   "liquid-biopsy": "Un análisis de sangre que lee fragmentos de ADN liberados por el tumor, para genotipar o vigilar el cáncer sin una aguja en el tumor.",
@@ -412,7 +411,6 @@ export const tldr_es: Record<string, string> = {
   "gene-fusion": "Dos genes rotos y unidos, que crean una proteína híbrida capaz de impulsar el cáncer. A menudo exquisitamente sensible a fármacos.",
 
   pam50: "Una prueba de 50 genes que clasifica los cánceres de mama en luminal A, luminal B, HER2-enriquecido y basal.",
-  neoantigen: "Un fragmento de proteína creado por una mutación tumoral que el sistema inmunitario nunca ha visto, por lo que puede atacarlo sin dañar células normales.",
   "abscopal-effect": "Cuando irradiar un tumor hace que otros tumores no tratados se reduzcan, a través del sistema inmunitario.",
   "immunogenic-cell-death": "Una forma de morir que alerta al sistema inmunitario, a diferencia de la apoptosis silenciosa.",
 

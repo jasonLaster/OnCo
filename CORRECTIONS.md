@@ -1,5 +1,18 @@
 # Corrections
 
+### Vaccine recognition and candidate data, 11 November 2026
+
+The [vaccine/data-guide assessment](research/education-coverage-2026-11-08/vaccine-data-guides-2026-11-11/README.md) retains both original and later teaching versions, including the relocated priming lesson. Source-first requirements, precise source-reading limits and field evidence remain separate from expert or language approval.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Neoantigen](/terms/neoantigen/) | Novel tumour sequence was said to guarantee an immune target that could be attacked without harming normal cells | TESLA primary prediction/validation methods and the separate presentation, recognition and safety questions | Removes the blanket safety claim, adds a candidate-evidence framework, withdraws eight obsolete unreviewed translations and corrects Simple English |
+| 2026-11-11 | [Cross-presentation](/terms/dendritic-cell-cross-presentation/) | The opening confused tumour-cell class-I display with naive CD8 priming and described a single intracellular route as universal | Cross-presentation review abstract, RNA-delivery study and T-cell activation teaching | Separates display from priming and retains the previously scoped model findings and direct-presentation explanation |
+| 2026-11-11 | [Exome and genome sequencing](/technologies/wes-wgs/) | The lead implied perfect coverage of all genes or all DNA, with a universal depth/pairing rule and unqualified bias/depth comparisons | MedlinePlus definitions and Jones's targeted/exome methods | Names the intended territory and workflow limits, removes universal depth/pairing claims, withdraws eight obsolete unreviewed translations and corrects Simple English |
+| 2026-11-11 | [Personalised mRNA vaccines](/technologies/neoantigen-mrna-vaccine/) | Programme phases and ongoing status were collapsed; low toxicity, target count and manufacturing time were stated as platform-wide properties | Company announcement, named ClinicalTrials.gov records and Rojas's phase 1 report | Preserves the August 2026 phase 3 report with company attribution, corrects individual programme stages/status, and makes antigen counts, combinations, toxicity and timing product-specific |
+
+The candidate comparisons and receptor-detection numbers are fictional teaching examples. A peptide response, a sequence frequency change and a clinical outcome require different evidence. No whole original paper, personal treatment recommendation or independent expert, learner or language sign-off is claimed.
+
 ### Genetic code and BRCA restoration, 11 November 2026
 
 The [genetic-code assessment](research/education-coverage-2026-11-08/genetic-code-2026-11-11/README.md) retains its later-only source inventory, exact field evidence and primary-reading limits. These are unmerged draft contributions.

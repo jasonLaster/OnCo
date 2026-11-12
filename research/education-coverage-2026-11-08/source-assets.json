@@ -55323,7 +55323,14 @@
             "checkedAt": "2026-11-11",
             "gitBlob": "2ae11790a3f46288ebdda5112d6e472f7f39994b",
             "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
-          }
+          },
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3"
+            }
+          ]
         },
         {
           "id": "7510db6be8053b64708b6c6c037ab1ea564a35ab:wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-light.png",
@@ -55427,7 +55434,14 @@
             "checkedAt": "2026-11-11",
             "gitBlob": "1c2544759320b98f62556fe9724a8b0a4b5064b5",
             "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
-          }
+          },
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0"
+            }
+          ]
         },
         {
           "id": "7510db6be8053b64708b6c6c037ab1ea564a35ab:wiki/education/guides/from-variant-to-drug/images/functional-experiment-evidence-dark.png",
@@ -55767,10 +55781,113 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/guides/personalized-cancer-vaccine/images/immune-assay-questions-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification.",
+            "sectionHashes": [
+              "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242"
+            ],
+            "points": [
+              {
+                "id": "immune-assay-questions-dosing-07",
+                "requirement": "Multimer staining establishes binding to the tested peptide-HLA reagent, not functional response or natural tumour recognition.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  },
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "79a15794cf58c7a9bd17ac059ad1f15b0180efe5515af1c5b7b32a0b1b4e8be6",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-08",
+                "requirement": "ELISpot and intracellular cytokine staining establish a response to defined stimulation, not target killing, tissue access or clinical benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "1093d62a60eea7f8bb976d6d535a0aff9631b14c79d08904f56a652f66427972",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  },
+                  {
+                    "recordId": "intracellular-cytokine-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "976b94b2f535a967e294bc583dd1af1706f9d281a00a470bfe84feda2cab34f0",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-09",
+                "requirement": "A controlled killing assay measures function against identifiable targets under its own conditions; it does not establish distribution, durability or safety in patients.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "208dd398f6008b0bde3c9cced9f7f0843e792d7328524ca584871281142c22ec",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  },
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-10",
+                "requirement": "A suitable clinical comparison estimates benefit in its enrolled setting; transfer to another product or population needs further justification.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunogenicity-versus-efficacy",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "6021395c3e7a96799cdc183cf4ea78e5ad18321b63a8189e2a38a44853fbe426",
+                    "explanation": "The outcome, comparator, clock, follow-up, harms and uncertainty retain the enrolled setting for an efficacy claim. Source scope: General study-reading distinction at its recorded FDA/primary scope; not a new clinical-benefit finding."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242",
+          "bodyRole": "visual-teaching",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "c672598fd1f28b351471fa89da441ebe51dd67d7",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification."
           }
         },
         {
@@ -55782,10 +55899,113 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/guides/personalized-cancer-vaccine/images/immune-assay-questions-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification.",
+            "sectionHashes": [
+              "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e"
+            ],
+            "points": [
+              {
+                "id": "immune-assay-questions-dosing-07",
+                "requirement": "Multimer staining establishes binding to the tested peptide-HLA reagent, not functional response or natural tumour recognition.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  },
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "79a15794cf58c7a9bd17ac059ad1f15b0180efe5515af1c5b7b32a0b1b4e8be6",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-08",
+                "requirement": "ELISpot and intracellular cytokine staining establish a response to defined stimulation, not target killing, tissue access or clinical benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "1093d62a60eea7f8bb976d6d535a0aff9631b14c79d08904f56a652f66427972",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  },
+                  {
+                    "recordId": "intracellular-cytokine-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "976b94b2f535a967e294bc583dd1af1706f9d281a00a470bfe84feda2cab34f0",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-09",
+                "requirement": "A controlled killing assay measures function against identifiable targets under its own conditions; it does not establish distribution, durability or safety in patients.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "208dd398f6008b0bde3c9cced9f7f0843e792d7328524ca584871281142c22ec",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  },
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-10",
+                "requirement": "A suitable clinical comparison estimates benefit in its enrolled setting; transfer to another product or population needs further justification.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunogenicity-versus-efficacy",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "6021395c3e7a96799cdc183cf4ea78e5ad18321b63a8189e2a38a44853fbe426",
+                    "explanation": "The outcome, comparator, clock, follow-up, harms and uncertainty retain the enrolled setting for an efficacy claim. Source scope: General study-reading distinction at its recorded FDA/primary scope; not a new clinical-benefit finding."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e",
+          "bodyRole": "visual-teaching",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "98cafff1830d0cfd1868a4822a256eb2611cdfd8",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification."
           }
         },
         {
@@ -55826,10 +56046,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/guides/personalized-cancer-vaccine/images/prompts/immune-assay-questions-v2-light-call.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points.",
+            "sectionHashes": [
+              "1bb93804d43954f4bb0bebc55f61b857fb27bb871fab9b301155248b65abdd1f"
+            ],
             "points": []
+          },
+          "sourceSha256": "1bb93804d43954f4bb0bebc55f61b857fb27bb871fab9b301155248b65abdd1f",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "5d1d16d5d087d4a4a55b20c53cb2a1a7659d2edc",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points."
           }
         },
         {
@@ -55856,10 +56090,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/guides/personalized-cancer-vaccine/images/prompts/immune-assay-questions.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points.",
+            "sectionHashes": [
+              "dd8bcca8f37bf649144fead44b4751385b96d8f7d1050f10be25ba081d4d0704"
+            ],
             "points": []
+          },
+          "sourceSha256": "dd8bcca8f37bf649144fead44b4751385b96d8f7d1050f10be25ba081d4d0704",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "0fa760389d1e6ee82b34ed9e1e417a3d24fa26d6",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points."
           }
         },
         {
@@ -113004,7 +113252,14 @@
             "checkedAt": "2026-11-11",
             "gitBlob": "2ae11790a3f46288ebdda5112d6e472f7f39994b",
             "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
-          }
+          },
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "ddbf196b42c45fa932b403e31bd149f54168d7cb5f7026b6d217270e2f14fdf3"
+            }
+          ]
         },
         {
           "id": "c96896452386202405c435aa161bc5047919337a:wiki/education/designing-a-vaccine/images/three-assays-three-questions-v2-light.png",
@@ -113108,7 +113363,14 @@
             "checkedAt": "2026-11-11",
             "gitBlob": "1c2544759320b98f62556fe9724a8b0a4b5064b5",
             "rationale": "Full native light/dark image extent viewed against lesson caption and the independent recovery/binding/secretion principles. Shapes and spot counts are schematic. Scientific interpretation is represented in named fields; artwork is not copied into OnCo. No measured contrast, accessibility, expert or learner approval."
-          }
+          },
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "b299d9d96471bd400c0c67c5b87096785104e94c26226f047e123e5edae403d0"
+            }
+          ]
         },
         {
           "id": "c96896452386202405c435aa161bc5047919337a:wiki/education/guides/from-variant-to-drug/images/functional-experiment-evidence-dark.png",
@@ -113448,10 +113710,113 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/personalized-cancer-vaccine/images/immune-assay-questions-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification.",
+            "sectionHashes": [
+              "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242"
+            ],
+            "points": [
+              {
+                "id": "immune-assay-questions-dosing-07",
+                "requirement": "Multimer staining establishes binding to the tested peptide-HLA reagent, not functional response or natural tumour recognition.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  },
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "79a15794cf58c7a9bd17ac059ad1f15b0180efe5515af1c5b7b32a0b1b4e8be6",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-08",
+                "requirement": "ELISpot and intracellular cytokine staining establish a response to defined stimulation, not target killing, tissue access or clinical benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "1093d62a60eea7f8bb976d6d535a0aff9631b14c79d08904f56a652f66427972",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  },
+                  {
+                    "recordId": "intracellular-cytokine-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "976b94b2f535a967e294bc583dd1af1706f9d281a00a470bfe84feda2cab34f0",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-09",
+                "requirement": "A controlled killing assay measures function against identifiable targets under its own conditions; it does not establish distribution, durability or safety in patients.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "208dd398f6008b0bde3c9cced9f7f0843e792d7328524ca584871281142c22ec",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  },
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-10",
+                "requirement": "A suitable clinical comparison estimates benefit in its enrolled setting; transfer to another product or population needs further justification.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunogenicity-versus-efficacy",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "6021395c3e7a96799cdc183cf4ea78e5ad18321b63a8189e2a38a44853fbe426",
+                    "explanation": "The outcome, comparator, clock, follow-up, harms and uncertainty retain the enrolled setting for an efficacy claim. Source scope: General study-reading distinction at its recorded FDA/primary scope; not a new clinical-benefit finding."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242",
+          "bodyRole": "visual-teaching",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "6a52779262f62ce8d5385a8d88b60d6a15196908638056bc89bc4605ea8b2242"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "c672598fd1f28b351471fa89da441ebe51dd67d7",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification."
           }
         },
         {
@@ -113463,10 +113828,113 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/personalized-cancer-vaccine/images/immune-assay-questions-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification.",
+            "sectionHashes": [
+              "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e"
+            ],
+            "points": [
+              {
+                "id": "immune-assay-questions-dosing-07",
+                "requirement": "Multimer staining establishes binding to the tested peptide-HLA reagent, not functional response or natural tumour recognition.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "76ae86663ae17a3fe6fecc007bae9ddc5a3eca1ff5b12301c0fc87774643b3ed",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  },
+                  {
+                    "recordId": "peptide-hla-multimer-staining",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "79a15794cf58c7a9bd17ac059ad1f15b0180efe5515af1c5b7b32a0b1b4e8be6",
+                    "explanation": "The multimer owner distinguishes binding to a test peptide-HLA reagent from functional or natural tumour recognition. Source scope: Unchanged reagent-binding method scope, not all tetramer-positive cells being protective."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-08",
+                "requirement": "ELISpot and intracellular cytokine staining establish a response to defined stimulation, not target killing, tissue access or clinical benefit.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "elispot",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "1093d62a60eea7f8bb976d6d535a0aff9631b14c79d08904f56a652f66427972",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  },
+                  {
+                    "recordId": "intracellular-cytokine-staining",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "976b94b2f535a967e294bc583dd1af1706f9d281a00a470bfe84feda2cab34f0",
+                    "explanation": "Both method definitions retain response under stimulation and its separation from killing and clinical outcomes. Source scope: Unchanged secretion/intracellular-marker methods, not a safety or tissue-access assay."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-09",
+                "requirement": "A controlled killing assay measures function against identifiable targets under its own conditions; it does not establish distribution, durability or safety in patients.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "summary",
+                    "fieldSha256": "208dd398f6008b0bde3c9cced9f7f0843e792d7328524ca584871281142c22ec",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  },
+                  {
+                    "recordId": "immune-cytotoxicity-assays",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+                    "explanation": "The cytotoxicity method requires identifiable targets and controls and limits function to the tested cells/conditions. Source scope: Unchanged laboratory function scope, not distribution, durability or patient safety."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "immune-assay-questions-dosing-10",
+                "requirement": "A suitable clinical comparison estimates benefit in its enrolled setting; transfer to another product or population needs further justification.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "immunogenicity-versus-efficacy",
+                    "version": "draft-373",
+                    "field": "notes",
+                    "fieldSha256": "6021395c3e7a96799cdc183cf4ea78e5ad18321b63a8189e2a38a44853fbe426",
+                    "explanation": "The outcome, comparator, clock, follow-up, harms and uncertainty retain the enrolled setting for an efficacy claim. Source scope: General study-reading distinction at its recorded FDA/primary scope; not a new clinical-benefit finding."
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e",
+          "bodyRole": "visual-teaching",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "image-full-extent",
+              "sha256": "a07406c1890aa6ecea57097c7a5b4dde9f240d188287402283f997900792776e"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "98cafff1830d0cfd1868a4822a256eb2611cdfd8",
+            "rationale": "Both native 1024 by 1536 light/dark images viewed at full extent with the lesson caption. Four independent schematic scenes distinguish reagent binding, secretion, controlled target killing and a blank clinical comparison. Counts are not results or a success ladder. The interpretation is represented in named fields. No measured contrast, accessibility, expert or learner certification."
           }
         },
         {
@@ -113507,10 +113975,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/personalized-cancer-vaccine/images/prompts/immune-assay-questions-v2-light-call.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points.",
+            "sectionHashes": [
+              "1bb93804d43954f4bb0bebc55f61b857fb27bb871fab9b301155248b65abdd1f"
+            ],
             "points": []
+          },
+          "sourceSha256": "1bb93804d43954f4bb0bebc55f61b857fb27bb871fab9b301155248b65abdd1f",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "5d1d16d5d087d4a4a55b20c53cb2a1a7659d2edc",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points."
           }
         },
         {
@@ -113537,10 +114019,24 @@
           "format": ".txt",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/guides/personalized-cancer-vaccine/images/prompts/immune-assay-questions.txt",
           "suggestedRole": "provenance-or-authoring-support",
-          "scope": "unclassified",
+          "scope": "supporting",
           "review": {
-            "status": "unreviewed",
+            "status": "reviewed",
+            "auditor": "Coordinator full-body or full-native-image assessment; no expert, owner, learner or language sign-off",
+            "checkedAt": "2026-11-12",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points.",
+            "sectionHashes": [
+              "dd8bcca8f37bf649144fead44b4751385b96d8f7d1050f10be25ba081d4d0704"
+            ],
             "points": []
+          },
+          "sourceSha256": "dd8bcca8f37bf649144fead44b4751385b96d8f7d1050f10be25ba081d4d0704",
+          "bodyRole": "documented-mixed",
+          "scopeReview": {
+            "auditor": "Coordinator scope assessment; agent-attested, not independent or expert approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "0fa760389d1e6ee82b34ed9e1e417a3d24fa26d6",
+            "rationale": "Body read from first byte to end. Scientific/in-image wording is mixed with authoring instructions, but the four questions duplicate the separately assessed owner/caption and figures. Historical v1 labels and palette are not claims about v2 pixels. Private reference paths are not followed and self-attested fidelity/review is not approval. Supporting scope earns zero teaching points."
           }
         },
         {

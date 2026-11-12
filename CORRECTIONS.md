@@ -1,5 +1,19 @@
 # Corrections
 
+### Statistical questions, populations and design, 12 November 2026
+
+The [statistics assessment](research/education-coverage-2026-11-08/study-statistics-2026-11-12/README.md) retains five later-only lessons and their source-first requirements. They have no counterpart at the original pinned paths.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [Other-cause mortality](/terms/other-cause-mortality/) | The introduction inferred dependence from mutually exclusive events and conflated cumulative-incidence estimation with Fine-Gray regression | Austin's method definitions and the Therneau, Crowson and Atkinson vignette | Separates Aalen-Johansen probabilities, cause-specific rates and subdistribution hazards; replaces the single-cause explanation of disagreement between prostate trials without recertifying the retained prostate-cohort figures |
+| 2026-11-12 | [Bayesian design](/terms/bayesian-trial-design/) and [response-adaptive randomisation](/terms/response-adaptive-randomisation/) | Leads implied a model-free probability that a treatment works and guaranteed efficiency or better assignments | Original I-SPY2 methods, complete primary abstracts, FDA's 2019 final guidance and January 2026 draft | States model, prior, endpoint, future-trial success criterion and operating-characteristic conditions; distinguishes predictive graduation, exploratory survival and a person's response-guided treatment path |
+| 2026-11-12 | [Non-inferiority](/terms/non-inferiority/) and [margins](/terms/non-inferiority-margin/) | Broad claims obscured margin justification, interval level and analysis-population limits | FDA's 2016 guidance and named Z0011, PERSEPHONE and EA1131 reports | Keeps M1, M2, clinical scope and confidence level explicit; distinguishes non-inferiority, equivalence, superiority and an inconclusive result |
+| 2026-11-12 | [Power and sample size](/terms/sample-size-re-estimation/) | Underpowering was called the commonest reason useful treatments fail and blinded re-estimation was said to have no statistical cost | ICH E9, adaptive-design guidance, CALOR methods and power-method sources | Replaces universal claims with specified effects, event information, planning assumptions and analysis requirements; independently checks the complete fictional calculations |
+| 2026-11-12 | [Estimands](/terms/estimand/), [master protocols](/terms/master-protocol/) and [seamless designs](/terms/seamless-adaptive/) | Overviews conflated analysis sets with target effects and implied general patient-number or speed advantages | Targeted ICH E9(R1) and FDA guidance passages | Separates estimand, estimator and sensitivity analysis; makes efficiency conditional. Unverified clinical catalogues are withdrawn from these overviews with complete before/after fields retained in the packet and existing links preserved |
+
+Twenty requirements about competing risks are carried only by an unapplied proposal for the existing owner in peer draft #371. No duplicate is registered. Twenty-two stale unreviewed translations are withdrawn to English fallback and eight Simple English entries are corrected. Main, live, expert, learner and language approval remain separate.
+
 ### Imaging measurements and breast follow-up, 12 November 2026
 
 The [imaging and follow-up assessment](research/education-coverage-2026-11-08/imaging-follow-up-2026-11-12/README.md) distinguishes signal, image pattern, calculated quantity, tissue diagnosis and a useful clinical strategy. The pinned original and later inventories remain separate.

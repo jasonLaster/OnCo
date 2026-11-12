@@ -3206,7 +3206,7 @@ export const tldr_de: Record<string, string> = {
   "nk-cell": "Natürliche Killerzellen: schnell wirkende Immunzellen, die abnorme Zellen zerstören, ohne auf ein bestimmtes Ziel trainiert werden zu müssen. Sie sind darauf spezialisiert, Zellen zu töten, die sich vor T-Zellen versteckt haben.",
   "nmibc-vs-mibc": "Blasenkrebs wird danach eingeteilt, ob er in die Muskelwand der Blase eingewachsen ist. Davor wird er innerhalb der Blase behandelt; danach wird die Blase meist entfernt oder bestrahlt.",
   noetik: "Noetik baut Modelle künstlicher Intelligenz von Tumoren aus riesigen Sammlungen von Gewebebildern und molekularen Daten, um vorherzusagen, welche Patienten auf ein Krebsmedikament ansprechen, und um neue Zielstrukturen zu finden.",
-  "non-inferiority": "Eine Studie, die zeigen soll, dass eine neue Behandlung nicht bedeutsam schlechter als der Standard ist, statt besser: eingesetzt, wenn die neue Option kürzer, billiger, weniger toxisch oder einfacher ist (fünf Strahlentherapiefraktionen statt 25, sechs Monate Trastuzumab statt zwölf).",
+
   "nonmutational-epigenetic-reprogramming": "Krebs kann sein Verhalten ändern, einschließlich einer Toleranz gegen Medikamente, ohne jede neue Mutation, indem er die chemischen Markierungen umschreibt, die steuern, welche Gene abgelesen werden.",
   "noronha-vanita": "Eine internistische Onkologin, die die Lungenkrebsstudien des Tata Memorial mitleitet und Indiens geriatrisch-onkologisches Programm aufgebaut hat.",
   nouscom: "Nouscom entwickelt Nous-209, einen gebrauchsfertigen viralen Vektorimpfstoff, der 209 gemeinsame Frameshift-Neoantigene kodiert, um Krebs bei Trägern des Lynch-Syndroms abzufangen.",
@@ -4292,7 +4292,7 @@ export const tldr_de: Record<string, string> = {
   "sarcoma-histotype-tailoring": "Histotyp-angepasste Therapie bedeutet, die Behandlung nach dem konkreten Sarkom-Subtyp (es gibt mehr als 70) zu wählen, statt alle Sarkome gleich zu behandeln.",
   "sarcoma-type": "Krebs des Binde- und Stützgewebes des Körpers: Knochen, Muskel, Fett, Knorpel, Blutgefäße, faseriges Gewebe. Selten (etwa 1% der Krebserkrankungen bei Erwachsenen), aber bei Kindern relativ häufig.",
   "scorpion-therapeutics": "Scorpion Therapeutics war ein Bostoner Start-up, das eine Krebstablette, STX-478, entwarf, die nur die mutierte Form eines Wachstumsproteins namens PI3K-alpha angreift und die normale Form verschont. Eli Lilly kaufte das Programm 2025.",
-  "seamless-adaptive": "Studiendesigns, die sich mit den eingehenden Daten verändern: Phasen werden zusammengelegt, damit erfolgreiche Wirkstoffe ohne Pause weiterkommen, unwirksame Arme oder Dosierungen werden gestrichen, neue hinzugefügt und die Randomisierung wird in Richtung dessen verschoben, was zu helfen scheint. Schneller und effizienter, aber sie brauchen sorgfältige Statistik, um ehrlich zu bleiben.",
+
   "self-amplifying-rna": "RNA-Wirkstoffe, die sich in der Zelle selbst vervielfältigen oder als Ring hergestellt werden, damit sie länger halten. Beide sollen aus einer kleineren Dosis mehr Protein gewinnen.",
   "senescence-targeting": "Chemotherapie hinterlässt Zombiezellen, die sich nicht mehr teilen, aber ihre Nachbarn vergiften. Senolytika sollen sie beseitigen.",
   "serena-nik-zainal": "Entschlüsselte die in Krebsgenomen eingeschriebenen Mutationssignaturen und machte daraus klinische Tests wie HRDetect.",

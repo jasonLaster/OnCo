@@ -3237,7 +3237,7 @@ export const tldr_pt: Record<string, string> = {
   "nk-cell": "Células natural killer: células imunitárias de ação rápida que destroem células anormais sem precisar de ser treinadas para um alvo específico. Especializam-se em matar células que se esconderam das células T.",
   "nmibc-vs-mibc": "O cancro da bexiga é dividido conforme tenha ou não invadido a parede muscular da bexiga. Antes disso, é tratado dentro da bexiga; depois, a bexiga é geralmente removida ou irradiada.",
   noetik: "A Noetik constrói modelos de inteligência artificial de tumores a partir de enormes conjuntos de imagens de tecido e dados moleculares, para prever quais pacientes responderão a um fármaco oncológico e para encontrar novos alvos.",
-  "non-inferiority": "Um ensaio desenhado para mostrar que um novo tratamento não é significativamente pior do que o padrão, em vez de melhor: usado quando a nova opção é mais curta, mais barata, menos tóxica ou mais fácil (cinco frações de radioterapia em vez de 25, seis meses de trastuzumab em vez de doze).",
+
   "nonmutational-epigenetic-reprogramming": "Os cancros podem mudar de comportamento, inclusive tornar-se tolerantes a fármacos, sem nenhuma mutação nova, reescrevendo as marcas químicas que controlam quais genes são lidos.",
   "noronha-vanita": "Oncologista médica que colidera os ensaios de cancro do pulmão do Tata Memorial e construiu o programa de oncologia geriátrica da Índia.",
   nouscom: "A Nouscom está a desenvolver a Nous-209, uma vacina de vetor viral pronta a usar que codifica 209 neoantígenos frameshift partilhados para intercetar o cancro em portadores da síndrome de Lynch.",
@@ -4303,7 +4303,7 @@ export const tldr_pt: Record<string, string> = {
   "sarcoma-histotype-tailoring": "A terapia adaptada ao histotipo significa escolher o tratamento pelo subtipo específico de sarcoma (existem mais de 70) em vez de tratar todos os sarcomas da mesma forma.",
   "sarcoma-type": "Câncer dos tecidos conjuntivos e de sustentação do corpo: osso, músculo, gordura, cartilagem, vasos sanguíneos, tecido fibroso. Raro (cerca de 1% dos cânceres em adultos), mas relativamente comum em crianças.",
   "scorpion-therapeutics": "A Scorpion Therapeutics foi uma start-up de Boston que desenhou um comprimido contra o câncer, o STX-478, dirigido apenas à forma mutada de uma proteína de crescimento chamada PI3K-alfa, poupando a forma normal. A Eli Lilly comprou o programa em 2025.",
-  "seamless-adaptive": "Desenhos de ensaio que mudam à medida que os dados chegam: fundem fases para que os medicamentos bem-sucedidos avancem sem pausa, eliminam braços ou doses que não estão funcionando, acrescentam novos e deslocam a randomização para o que parece ajudar. Mais rápidos e eficientes, mas exigem estatística cuidadosa para se manterem honestos.",
+
   "self-amplifying-rna": "Medicamentos de RNA que se copiam dentro da célula, ou que são feitos em forma de anel para durar mais. Ambos buscam obter mais proteína a partir de uma dose menor.",
   "senescence-targeting": "A quimioterapia deixa para trás células zumbis que não se dividem, mas envenenam as vizinhas. Os senolíticos buscam eliminá-las.",
   "serena-nik-zainal": "Decifrou as assinaturas mutacionais escritas nos genomas do câncer e as transformou em testes clínicos como o HRDetect.",

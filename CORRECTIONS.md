@@ -1,5 +1,15 @@
 # Corrections
 
+### HLA evidence and candidate selection, 11 November 2026
+
+The [presentation-guide assessment](research/education-coverage-2026-11-08/vaccine-presentation-guides-2026-11-11/README.md) keeps inherited typing, measured presentation, receptor recognition and clinical outcomes separate. Fictional reports and candidate boards are teaching examples, with source-reading limits recorded in the packet.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [Agretopicity](/terms/agretopicity/) | The lead and opening defined agretopicity itself as the mutant-versus-normal comparison | Duan's original definition and Ghorani's distinct predicted-affinity calculation, checked in their primary text | Distinguishes peptide-MHC interaction from the differential index, retains both formula conventions and the scoped model/cohort findings, and clarifies Simple English |
+
+The new [candidate-selection owner](/terms/neoantigen-candidate-selection/) records evidence and shared failure dependencies rather than a clinical ranking rule. Existing assay owners in draft #373 remain unchanged. Neither the source diagrams nor this assessment supply expert, learner, language, main or live approval.
+
 ### Vaccine recognition and candidate data, 11 November 2026
 
 The [vaccine/data-guide assessment](research/education-coverage-2026-11-08/vaccine-data-guides-2026-11-11/README.md) retains both original and later teaching versions, including the relocated priming lesson. Source-first requirements, precise source-reading limits and field evidence remain separate from expert or language approval.

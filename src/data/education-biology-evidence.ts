@@ -207,27 +207,8 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "A cell can reduce some RNA messages when translation stops in an unexpected context. A predicted early stop does not guarantee that every message or protein disappears.",
     "summary": "Nonsense-mediated decay is RNA surveillance coupled to translation termination. Splicing can leave exon junction protein complexes near later joins in the message. Translation can remove junction-associated proteins; early termination while an appropriate complex remains downstream can help recruit decay machinery in one human route. Stop position, exon architecture, proximity to the start and other transcript features affect susceptibility. A common junction-distance shortcut is a hypothesis, not a universal clinical cutoff.",
-    "notes": [
-      "Human-cancer analyses found that a model containing several rules described RNA effects better than the junction rule alone; compensation could mask loss at gene level. Test the relevant transcript or allele with controls for RNA quality and cell mixture. Protein identity, persistence and function need separate measurements: RNA decay is distinct from protein degradation."
-    ],
-    "links": [
-      {
-        "label": "The exon-exon junction complex provides a binding platform for factors involved in mRNA export and nonsense-mediated mRNA decay.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/11532962/"
-      },
-      {
-        "label": "Translation is required to remove Y14 from mRNAs in the cytoplasm.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/12121612/"
-      },
-      {
-        "label": "Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/9671053/"
-      },
-      {
-        "label": "The rules and impact of nonsense-mediated mRNA decay in human cancers.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/27618451/"
-      }
-    ],
+    "notes": ["Human-cancer analyses found that a model containing several rules described RNA effects better than the junction rule alone; compensation could mask loss at gene level. Test the relevant transcript or allele with controls for RNA quality and cell mixture. Protein identity, persistence and function need separate measurements: RNA decay is distinct from protein degradation.","Candidate selection should reconstruct the affected transcript and translated sequence. A stop-gain terminates translation rather than adding a new amino acid; an unchanged upstream sequence alone does not specify a new mutant peptide. A frameshift can instead create an altered tail before stopping. Litchfield and colleagues found expressed frameshift changes enriched in positions predicted to escape decay and reported associations with checkpoint outcomes in melanoma cohorts, with additional immune-reactivity evidence from vaccine studies. These are context-specific findings, not a rule that every frameshift is expressed, displayed or useful. Mutant RNA and downstream presentation and recognition remain separate questions."],
+    "links": [{"label":"The exon-exon junction complex provides a binding platform for factors involved in mRNA export and nonsense-mediated mRNA decay.","url":"https://pubmed.ncbi.nlm.nih.gov/11532962/"},{"label":"Translation is required to remove Y14 from mRNAs in the cytoplasm.","url":"https://pubmed.ncbi.nlm.nih.gov/12121612/"},{"label":"Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.","url":"https://pubmed.ncbi.nlm.nih.gov/9671053/"},{"label":"The rules and impact of nonsense-mediated mRNA decay in human cancers.","url":"https://pubmed.ncbi.nlm.nih.gov/27618451/"},{"label":"Litchfield et al.: frameshift expression, decay escape and immune evidence (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/32733040/"}],
     "related": [
       "rna",
       "rna-splicing",
@@ -236,7 +217,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "protein"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-11",
     "category": "Biology & measurement"
   },
   {

@@ -1,5 +1,16 @@
 # Corrections
 
+### Genetic code and BRCA restoration, 11 November 2026
+
+The [genetic-code assessment](research/education-coverage-2026-11-08/genetic-code-2026-11-11/README.md) retains its later-only source inventory, exact field evidence and primary-reading limits. These are unmerged draft contributions.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-11 | [BRCA reversion mutations](/terms/brca-reversion-mutations/) | The uncited lead and summary supplied pooled frequencies, guaranteed cross-drug non-response and treatment-switch instructions, including a negative-reversion rechallenge rule | Resolved Sakai 2008 and 2009 abstracts and targeted 2009 cell-line, protein-restoration and siRNA passages | States the possible mechanism at its experimental scope, separates sequence prediction from function and clinical response, and withdraws one stale unreviewed Chinese summary |
+| 2026-11-11 | [DNA](/terms/dna-term/) and [genetic code](/terms/genetic-code/) | The genetic-code alias led to the DNA molecule rather than the rules for reading codons | Canonical-owner census, official code tables and NHGRI definitions | Moves the alias to a dedicated code/reading-frame owner and links the existing molecule and variant-class records; their teaching fields remain unchanged |
+
+The coding examples retain named transcripts and predicted-versus-measured consequences. Frame preservation does not establish preserved protein function. Source-paper and lecture passages are targeted reads; no whole original paper, personal treatment recommendation, expert review or language approval is claimed.
+
 ### Breast pathology reports and treatment evidence, 11 November 2026
 
 The [pathology-guide assessment](research/education-coverage-2026-11-08/pathology-result-guides-2026-11-11/README.md) retains five original and five later versions, source-reading limits and exact rendered-field checks. Data changes are committed in [87c207368](https://github.com/jasonLaster/OnCo/commit/87c207368f99c9a2538a76daad9d713b0cf68eae) as unmerged draft contributions.

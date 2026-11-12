@@ -1,6 +1,6 @@
 # Later curriculum census
 
-This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 461 assessed teaching sources and five routing dispositions, with 451 complete draft representations. Of 5,116 assessed representation points, 5,106 have field evidence and ten remain partial across ten pages. Another 84 ordinary sources are unreviewed. Overlapping source inventories are not added.
+This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 466 assessed teaching sources and five routing dispositions, with 456 representations in draft fields or proposals. Of 5,237 assessed representation points, 5,227 have field evidence and ten remain partial across ten pages. Another 79 ordinary sources are unreviewed. Overlapping source inventories are not added.
 
 The [surface-targeting checkpoint](../../surface-targeting-2026-11-11/README.md) accounts for seven later and six original guides, including relocated originals, 135 section signatures and separate 169/129-row denominators. One exhaustive negative approval-inventory claim remains source-open. Source depth, semantic representation, rendered fields and main/live integration remain distinct.
 
@@ -19,3 +19,5 @@ The [treatment-setting checkpoint](../../early-tnbc-sequencing-2026-11-12/README
 The [residual-monitoring checkpoint](../../residual-monitoring-guides-2026-11-12/README.md) reads four later bodies and reconciles four originals across 84 section signatures. It keeps 78 original and 86 later substantive obligations separate from three derived overview checks per pin and 16 non-credit rows. Of 81 original and 89 later representation points, 80 and 88 are evidenced; the reported final-draw 9% retains an unverified denominator at both pins. All earlier source and access limits remain.
 
 The [imaging/follow-up checkpoint](../../imaging-follow-up-2026-11-12/README.md) assesses seven later and six original versions across 160 section signatures. The frozen 153-row inventory keeps 99 original and 131 later obligations, 22 non-credit rows and one transcription erratum separate. All 131 unique obligations have source-scoped draft field evidence; current-source depth tasks and independent acceptance remain separate.
+
+The [statistics checkpoint](../../study-statistics-2026-11-12/README.md) adds five later-only lessons, 58 section signatures and 121 obligations. Ten root owners carry 101; the other 20 remain only in an unapplied proposal for peer #371. Exact original-path and basename absence keeps the original denominator unchanged.

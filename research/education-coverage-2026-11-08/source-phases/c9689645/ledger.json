@@ -356,6 +356,16 @@
       "version": "proposal-pathology-result-guides-summary-consumers",
       "state": "Actual short and long selectors; no new canonical IDs or language review",
       "recordSnapshotSha256": "9a50fb685de207e5dded4b9fa95122347bd11bcce1a78a8b43cdc4b9d4a32994"
+    },
+    {
+      "version": "proposal-genetic-code-root",
+      "state": "Actual committed, registered, unmerged draft fields; no main/live approval",
+      "recordSnapshotSha256": "8222233a2a34952e60f24900f4f334e87cd8b31b3ada4b48aaa71b7cee2c3b6e"
+    },
+    {
+      "version": "proposal-genetic-code-summary-consumers",
+      "state": "Actual short/long summary selectors, no new canonical IDs or language approval",
+      "recordSnapshotSha256": "a21d0a04b6d7ec62fd2d684425e9088a8f674aed4ba9781d28ca65e49ab8c891"
     }
   ],
   "sourcePhases": [],
@@ -384,11 +394,11 @@
     "navigation": 7,
     "navigationReviewed": 5,
     "navigationWithTeachingContent": 2,
-    "semanticallyReviewed": 421,
-    "implementedCoverage": 413,
+    "semanticallyReviewed": 422,
+    "implementedCoverage": 414,
     "mainCoverage": 0,
-    "unresolvedContentItems": 132,
-    "unresolvedSources": 132,
+    "unresolvedContentItems": 131,
+    "unresolvedSources": 131,
     "adjacentConcepts": 59,
     "unresolvedAdjacentConcepts": 35,
     "openSchemaGaps": 6,
@@ -3937,8 +3947,540 @@
         }
       ],
       "review": {
-        "status": "unreviewed",
-        "points": []
+        "status": "reviewed",
+        "auditor": "Source-first coordinator field/source comparison; not independent expert, learner or language approval",
+        "checkedAt": "2026-11-11",
+        "rationale": "The later general lesson was read in full and all 12 section identities reproduce. No original counterpart exists at the pinned path; no image or Mermaid is linked. The source-first 35-row inventory preceded fresh owner inspection. Thirty-one teaching rows are represented with explicit source corrections and bounded examples; four recaps/routing/scope rows earn no independent credit. Eight paper identities resolve, six abstracts and targeted original/lecture passages were read. No whole original paper is claimed. ClinVar aggregate classifications and named RefSeq CDS examples are checked separately.",
+        "sectionHashes": [
+          "a51ad2d6311d976e7ba2a43b96ce12de22e31cddca45e9f3c3cd177585a91118",
+          "64b34340489fca01b071c34e73ad650cba436e8dda8679b0cc8522f5262a51bb",
+          "fa13f7d016f6352f2bb553c4d6bd7d34346ac1567e4a0141fa0e3e8855dcc2e4",
+          "e5994c7b412be1b1862fb95c234e947d7be0729c2b8dac24458daf546d38590e",
+          "85f69532538b33e4635d41e8ad5ca3b3b585e3659f4371fae9d794ec9a9c8ba8",
+          "dcc4f4ca63ce664d48c45ebe87284aed1a7427ca1b1cafde206fb5021fdc5ef6",
+          "c86f301b5989fa89ed70afe1bd415768cb95dd8a22590837e718e4f5af839dd0",
+          "fc32fe00a41de1b2636f362318b14c4706d501f48832c857b87239284c63da6e",
+          "59521747d257d256b1db6afd43dcfa8475e9abef0bccd45ec3eff8eff3a6cb33",
+          "aff15da6f572f108844d2fa4f8a1a7fa5ed43ba65f59ebc5aebf2404739bed9e",
+          "cec265f829b5cf0cba10bdab4ef2af5c5966aab17b814854d4859c1077c37866",
+          "dbbb1661b29e16420fe026d2d56592730a70472fffa42991f209bbcdef9d7575"
+        ],
+        "points": [
+          {
+            "id": "GC01",
+            "requirement": "Define the genetic code and a codon as the mapping from non-overlapping mRNA triplets to amino acids or termination signals, scoped to the standard code.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "summary",
+                "fieldSha256": "57b2aab89e3742911f6097b253ee04828948b11c5c30bc52e87a3c9caee4d29d",
+                "explanation": "Define the genetic code and a codon as the mapping from non-overlapping mRNA triplets to amino acids or termination signals, scoped to the standard code. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC02",
+            "requirement": "Explain the three-letter sentence analogy, the need to choose a frame, and the limit that synonymous codons make many letter changes harmless at amino-acid level.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain the three-letter sentence analogy, the need to choose a frame, and the limit that synonymous codons make many letter changes harmless at amino-acid level. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC03",
+            "requirement": "Distinguish RNA A/U/G/C from coding DNA A/T/G/C without equating unprocessed genomic and mature transcript sequences.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Distinguish RNA A/U/G/C from coding DNA A/T/G/C without equating unprocessed genomic and mature transcript sequences. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              },
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Distinguish RNA A/U/G/C from coding DNA A/T/G/C without equating unprocessed genomic and mature transcript sequences. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC04",
+            "requirement": "Recompute four cubed as 64 possible triplets; distinguish the 61 standard amino-acid codons from the three stops and the 20 common amino acids.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Recompute four cubed as 64 possible triplets; distinguish the 61 standard amino-acid codons from the three stops and the 20 common amino acids. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC05",
+            "requirement": "Explain genetic-code degeneracy, frequent third-position synonyms, and the standard-code single codons for methionine and tryptophan.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain genetic-code degeneracy, frequent third-position synonyms, and the standard-code single codons for methionine and tryptophan. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC06",
+            "requirement": "Name UAA, UAG and UGA as standard termination codons and distinguish termination from adding an amino acid.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Name UAA, UAG and UGA as standard termination codons and distinguish termination from adding an amino acid. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC07",
+            "requirement": "Qualify AUG initiation and suitable context for scanning; explain initiation methionine and possible later removal without claiming all initiation follows one rule.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Qualify AUG initiation and suitable context for scanning; explain initiation methionine and possible later removal without claiming all initiation follows one rule. The quoted authored passage carries the required distinction with its stated qualification. Source scope: OpenStax 15.5 initiation/termination passages and NCBI alternative-initiation annotations; no universal first-AUG rule."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC08",
+            "requirement": "Define reading frame and consecutive non-overlapping triplets fixed by initiation.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "summary",
+                "fieldSha256": "57b2aab89e3742911f6097b253ee04828948b11c5c30bc52e87a3c9caee4d29d",
+                "explanation": "Define reading frame and consecutive non-overlapping triplets fixed by initiation. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC09",
+            "requirement": "Define open reading frame at the introductory start-to-stop scope, with annotation conventions kept explicit.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "summary",
+                "fieldSha256": "57b2aab89e3742911f6097b253ee04828948b11c5c30bc52e87a3c9caee4d29d",
+                "explanation": "Defines the no-internal-stop condition and distinguishes a candidate coding region from demonstrated expression/function, correcting the narrower source convention. Source scope: NHGRI Open Reading Frame definition/narration; start-to-stop is an introductory candidate, not a universal ORF annotation definition or expression assay."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC10",
+            "requirement": "Describe what the Crick 1961 bacteriophage experiments established about triplets and compensating frame changes, without turning three-base deletion into a guarantee of normal function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Retains the experimental phage setting, partial restoration and three-or-multiple-of-three inference, rather than guaranteeing a harmless deletion. Source scope: Crick 1961 NLM scan, targeted introduction and coding-ratio/triple-mutant sections; printed p.1230 viewed. Nirenberg 1968 lecture targeted text and printed p.374 viewed. No whole original paper read; Nirenberg 1961 original remains unread."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC11",
+            "requirement": "Describe Nirenberg and Matthaei 1961 synthetic poly-U directing phenylalanine synthesis, and the UUU assignment.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Uses the experimenter's own later primary lecture for the poly-U/polyphenylalanine description; the original 1961 paper is only identity-resolved. Source scope: Crick 1961 NLM scan, targeted introduction and coding-ratio/triple-mutant sections; printed p.1230 viewed. Nirenberg 1968 lecture targeted text and printed p.374 viewed. No whole original paper read; Nirenberg 1961 original remains unread."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC12",
+            "requirement": "Explain that the code is nearly universal while retaining code-table exceptions.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain that the code is nearly universal while retaining code-table exceptions. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC13",
+            "requirement": "Verify the human mitochondrial 13-protein count and scope the vertebrate mitochondrial code separately from the standard code.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Verify the human mitochondrial 13-protein count and scope the vertebrate mitochondrial code separately from the standard code. The quoted authored passage carries the required distinction with its stated qualification. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC14",
+            "requirement": "Check mitochondrial UGA, AUA, AGA and AGG assignments and the mechanism/annotation caveat attached to mitochondrial termination.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Separates mitochondrial table assignments from mechanism and notes fresh primary investigations instead of adopting the older frameshift-only comment. Source scope: NCBI standard/mitochondrial tables and comments; NHGRI Codon; arithmetic checked independently against all 64 table entries."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC15",
+            "requirement": "Explain reference-sequence-dependent c. and p. notation, frameshift fs, and Ter or asterisk for termination.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain reference-sequence-dependent c. and p. notation, frameshift fs, and Ter or asterisk for termination. The quoted authored passage carries the required distinction with its stated qualification. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              },
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain reference-sequence-dependent c. and p. notation, frameshift fs, and Ter or asterisk for termination. The quoted authored passage carries the required distinction with its stated qualification. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC16",
+            "requirement": "Verify the TP53 c.524G>A p.Arg175His example, codon transition CGC to CAC, and the actual ClinVar classification and scope.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Uses the named reference coding sequence, exact codon substitution, parenthesised predicted consequence and aggregate expert-panel ClinVar class; no therapy effect inferred. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC17",
+            "requirement": "Verify BRCA1 c.68_69del/185delAG identity, two deleted coding bases and frameshift; distinguish predicted early stop and possible transcript degradation from a proven mechanism for every transcript.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Verify BRCA1 c.68_69del/185delAG identity, two deleted coding bases and frameshift; distinguish predicted early stop and possible transcript degradation from a proven mechanism for every transcript. The quoted authored passage carries the required distinction with its stated qualification. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              },
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Verify BRCA1 c.68_69del/185delAG identity, two deleted coding bases and frameshift; distinguish predicted early stop and possible transcript degradation from a proven mechanism for every transcript. The quoted authored passage carries the required distinction with its stated qualification. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC18",
+            "requirement": "Explain the fictional UGG-to-UGA nonsense example and possible premature termination or nonsense-mediated transcript decay.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain the fictional UGG-to-UGA nonsense example and possible premature termination or nonsense-mediated transcript decay. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC19",
+            "requirement": "Explain GAA/GAG glutamate synonymy and why unchanged encoded amino acid need not mean unchanged splicing or function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain GAA/GAG glutamate synonymy and why unchanged encoded amino acid need not mean unchanged splicing or function. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC20",
+            "requirement": "Explain that deleting a multiple of three preserves the downstream frame, with position-dependent boundary effects and no guarantee of functional protein.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Preserves the modulo-three distinction and explicitly rejects the function guarantee while retaining possible junction/termination changes. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              },
+              {
+                "recordId": "mutation",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "4dc29ace795854ee7f8e70dd48f11c3075d7b881c73ac86b59a7a473de9ba637",
+                "explanation": "Preserves the modulo-three distinction and explicitly rejects the function guarantee while retaining possible junction/termination changes. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC21",
+            "requirement": "Keep protein length, retained function and clinical interpretation separate; a variant class alone does not prove the expressed product or function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "summary",
+                "fieldSha256": "57b2aab89e3742911f6097b253ee04828948b11c5c30bc52e87a3c9caee4d29d",
+                "explanation": "Keep protein length, retained function and clinical interpretation separate; a variant class alone does not prove the expressed product or function. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              },
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Keep protein length, retained function and clinical interpretation separate; a variant class alone does not prove the expressed product or function. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC22",
+            "requirement": "Assess the lesson frequency assertion that frameshift/nonsense variants are the common inherited BRCA loss mechanism; do not treat a single ClinVar example as frequency evidence.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Retains inherited-BRCA coding-loss teaching at the MedlinePlus scope and explicitly says that the two examples and ClinVar entries are not a frequency survey; no class percentage is supplied. Source scope: ClinVar and RefSeq identifiers, MedlinePlus molecular-effect explanations, Sakai 2008 abstract and Sakai 2009 targeted primary text. No universal prevalence or treatment-switch claim."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC23",
+            "requirement": "Explain secondary BRCA reading-frame restoration as a possible route to PARP/platinum resistance, with study scope and no universal response inference.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Connects possible frame/function restoration with named BRCA2 model evidence, and removes universal clinical-response or treatment-selection conclusions. Source scope: ClinVar and RefSeq identifiers, MedlinePlus molecular-effect explanations, Sakai 2008 abstract and Sakai 2009 targeted primary text. No universal prevalence or treatment-switch claim."
+              },
+              {
+                "recordId": "brca-reversion-mutations",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "3f99d54194406bdd7f0480d64961fb1474a6738746e9602b5ced92318b45cfe4",
+                "explanation": "Connects possible frame/function restoration with named BRCA2 model evidence, and removes universal clinical-response or treatment-selection conclusions. Source scope: ClinVar and RefSeq identifiers, MedlinePlus molecular-effect explanations, Sakai 2008 abstract and Sakai 2009 targeted primary text. No universal prevalence or treatment-switch claim."
+              },
+              {
+                "recordId": "brca-reversion-mutations",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "3f99d54194406bdd7f0480d64961fb1474a6738746e9602b5ced92318b45cfe4",
+                "explanation": "Connects possible frame/function restoration with named BRCA2 model evidence, and removes universal clinical-response or treatment-selection conclusions. Source scope: ClinVar and RefSeq identifiers, MedlinePlus molecular-effect explanations, Sakai 2008 abstract and Sakai 2009 targeted primary text. No universal prevalence or treatment-switch claim."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC24",
+            "requirement": "Explain frameshift-derived new peptides and their relevance in mismatch-repair-deficient cancers without claiming every frameshift makes an exclusive, presented or immunogenic peptide.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Explain frameshift-derived new peptides and their relevance in mismatch-repair-deficient cancers without claiming every frameshift makes an exclusive, presented or immunogenic peptide. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Le 2017 abstract and targeted enrollment, response and peptide/TCR passages. Cohort 46/86 and one responding-person assay retain distinct denominators."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC25",
+            "requirement": "Verify Le 2017 population (86 patients, 12 cancer types), response figure (53%) and exact response endpoint/denominator.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Uses the reported objective radiographic response denominator 46/86 and its advanced MMR-deficient cohort, with no individual response prediction. Source scope: Le 2017 abstract and targeted enrollment, response and peptide/TCR passages. Cohort 46/86 and one responding-person assay retain distinct denominators."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC26",
+            "requirement": "Verify the single-patient T-cell-recognised frameshift peptide result and retain its individual experimental scope.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Keeps the mutant-peptide experiment at one responding person and distinguishes genomic frame change from presentation, recognition and benefit. Source scope: Le 2017 abstract and targeted enrollment, response and peptide/TCR passages. Cohort 46/86 and one responding-person assay retain distinct denominators."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC27",
+            "requirement": "Distinguish codon from protein-coding gene; do not generalise hundreds of codons to every gene including noncoding genes.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "summary",
+                "fieldSha256": "57b2aab89e3742911f6097b253ee04828948b11c5c30bc52e87a3c9caee4d29d",
+                "explanation": "Distinguish codon from protein-coding gene; do not generalise hundreds of codons to every gene including noncoding genes. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC28",
+            "requirement": "Distinguish synonymous from biologically silent.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Distinguish synonymous from biologically silent. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC29",
+            "requirement": "Distinguish a nonsense change at one codon from a frameshift that changes the downstream codon grouping.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Distinguish a nonsense change at one codon from a frameshift that changes the downstream codon grouping. The quoted authored passage carries the required distinction with its stated qualification. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC30",
+            "requirement": "Connect coding-DNA notation with RNA codons through transcript and strand context.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Connect coding-DNA notation with RNA codons through transcript and strand context. The quoted authored passage carries the required distinction with its stated qualification. Source scope: HGVS frameshift/deletion definitions and prediction conventions; transcript-specific ClinVar expressions and independently computed RefSeq CDS examples."
+              }
+            ],
+            "remaining": []
+          },
+          {
+            "id": "GC31",
+            "requirement": "Work the BRCA1 two-base loss exercise with the modulo-three rule; contrast in-frame deletion without promising restored function.",
+            "status": "covered-draft",
+            "evidence": [
+              {
+                "recordId": "genetic-code",
+                "version": "proposal-genetic-code-root",
+                "field": "notes",
+                "fieldSha256": "ac7b75bee01c21508ba2cae0ffceefac7d8e12ee64fcd565eed07245e0a9f1a9",
+                "explanation": "Works the two-base BRCA1 deletion and contrasts a multiple-of-three deletion without claiming preserved function. Source scope: Explicit interpretation boundaries follow the named sequence rules and assays; variant class alone does not establish expression, function, clinical outcome or population frequency."
+              }
+            ],
+            "remaining": []
+          }
+        ]
       }
     },
     {

@@ -349,7 +349,7 @@ export const tldr_de: Record<string, string> = {
   "johns-hopkins": "Johns Hopkins ist der Geburtsort der Krebsgenomik (Vogelstein), der Immuntherapie bei MSI-high-Tumoren (Le, Diaz) sowie der Liquid-Biopsy- und MCED-Forschung (CancerSEEK).",
   "johnson-johnson": "Johnson & Johnson ist führend beim multiplen Myelom (Darzalex, Carvykti, Tecvayli, Talvey) und bei bispezifischen Antikörpern gegen Lungenkrebs (Rybrevant).",
   karolinska: "Schwedens führendes Krebskrankenhaus, verbunden mit dem Karolinska Institutet und der Nobelversammlung, mit starker registerbasierter Forschung.",
-  "keynote-522": "Die Studie, die beim dreifach negativen Brustkrebs eine Immuntherapie zur Chemotherapie vor der Operation hinzufügte und, einzigartig, das Überleben verbesserte.",
+
   kinase: "Ein Enzym, das andere Proteine anschaltet, indem es ihnen eine Phosphatgruppe anhängt. Die Signalübertragung bei Krebs läuft über Kinasen, und Kinase-Inhibitoren sind die größte Klasse zielgerichteter Medikamente.",
   "kinase-inhibitors": "Tabletten, die genau das Enzym blockieren, auf das ein Krebs angewiesen ist. Imatinib bewies 2001, dass sich ein Krebs gezielt abschalten lässt.",
   kit: "Die KIT-Mutation ist der Treiber hinter den meisten gastrointestinalen Stromatumoren und der Grund, warum imatinib ein Sarkom mit einer medianen Überlebenszeit von etwa einem Jahr in eine chronische Erkrankung verwandelte.",
@@ -579,7 +579,7 @@ export const tldr_de: Record<string, string> = {
   optune: "Optune ist ein tragbares Gerät, das elektrische Felder abgibt, die die Zellteilung stören. Es ist für das Glioblastom zugelassen und wurde 2026 auch für Bauchspeicheldrüsenkrebs zugelassen.",
   "organ-tropism-seed-soil": "Brustkrebs geht in Knochen, Lunge, Leber und Gehirn; Prostatakrebs in die Knochen; Darmkrebs in die Leber; das Aderhautmelanom fast ausschließlich in die Leber. Pagets Idee aus dem Jahr 1889 gilt noch immer: Wohin sich ein Krebs ausbreitet, hängt sowohl vom Samen (dem Programm der Zelle) als auch vom Boden (der Aufnahmebereitschaft des Organs) ab. Jeder Boden hat seinen eigenen Teufelskreis, und einige davon lassen sich mit Medikamenten angreifen.",
 
-  orr: "Die objektive Ansprechrate (ORR) ist der Prozentsatz der Patienten, deren Tumoren um mindestens 30 % schrumpfen.",
+
   os: "Das Gesamtüberleben (OS) misst, wie lange Patienten leben, Punkt. Es ist der Goldstandard unter den Endpunkten.",
   osimertinib: "Osimertinib (Tagrisso) ist die Standardtablette bei Lungenkrebs mit EGFR-Mutation und wird inzwischen auch nach der Operation sowie zusammen mit Chemotherapie oder nach einer Radiochemotherapie gegeben.",
   "p53-cell-cycle": "Die Kontrollpunkte p53 und RB sind die Bremsen der Zelle. p53 erkennt Schäden und hindert die Zelle daran, sich zu kopieren; RB hält die Zelle am G1-Tor fest, bis CDK4/6 es aufschließt. Krebs durchtrennt diese Bremsen.",
@@ -823,7 +823,7 @@ export const tldr_de: Record<string, string> = {
   "emory-winship": "Georgias einziges NCI Comprehensive Cancer Center, führend bei Studien zum multiplen Myelom und zum EGFR-mutierten Lungenkrebs.",
   "endometrial-molecular-classes": "Vier Gruppen, die durch wenige Tests definiert werden und den Verlauf besser vorhersagen als das Mikroskop: POLE-mutiert (ausgezeichnet), Mismatch-Reparatur-defizient, p53-abnormal (am schlechtesten) und 'ohne spezifisches molekulares Profil'.",
   endoscopy: "Das Innere eines Hohlorgans mit einer Kamera an einem biegsamen Schlauch betrachten, Gewebeproben entnehmen und manchmal direkt vor Ort behandeln.",
-  endpoint: "Das konkrete, im Voraus festgelegte Ergebnis, das eine Studie messen soll: zum Beispiel, wie lange Patienten leben oder wie lange es dauert, bis ihr Krebs wächst. Eine Studie 'erreicht ihren Endpunkt', wenn die neue Behandlung den Vergleich auf dieser Messgröße schlägt.",
+
   "enteral-parenteral-nutrition": "Ernährungsunterstützung bedeutet Sondenernährung in den Darm oder Ernährung über eine Vene, wenn der Darm nicht genutzt werden kann. Beim richtigen Patienten rettet sie Leben, beim falschen ist sie schädlich oder sinnlos.",
   entrectinib: "Entrectinib (Rozlytrek) ist eine Tablette gegen NTRK-Fusionskrebs und ROS1-Lungenkrebs, die auch Hirnmetastasen erreicht.",
   epigenetics: "Epigenetische und transkriptionelle Therapie verändert, wie Gene abgelesen werden, und nicht die Gene selbst.",
@@ -2619,7 +2619,7 @@ export const tldr_de: Record<string, string> = {
   dalpiciclib: "Dalpiciclib ist der CDK4/6-Inhibitor von Hengrui, das erste in China entwickelte Medikament dieser Klasse, zugelassen für hormonabhängigen fortgeschrittenen Brustkrebs auf Grundlage der DAWNA-Studien.",
   dantari: "Dantari baute polymerbasierte Wirkstoffträger, mit denen ein Antikörper weit mehr Chemotherapie an einen Tumor liefern kann als herkömmliche Antikörper-Wirkstoff-Konjugate, bei gleichzeitiger Schonung des Knochenmarks. Sein erstes Medikament wurde bei Brustkrebs geprüft, bevor das Unternehmen 2025 seine Vermögenswerte verkaufte.",
   dar: "Das Wirkstoff-Antikörper-Verhältnis (DAR) gibt an, wie viele Payload-Moleküle auf jedem Antikörper sitzen, typischerweise 2 bis 8.",
-  "data-maturity": "Überlebensergebnisse sind „unreif“, wenn zu wenige Patienten gestorben sind (oder eine Progression hatten), als dass der Vergleich zuverlässig wäre, sodass Mediane „nicht erreicht“ sind und Konfidenzintervalle breit ausfallen. Reife Daten kommen mit Zeit und Ereignissen; frühe positive Eindrücke können verblassen oder sich verstärken.",
+
   "david-cameron": "David Cameron ist ein Brustkrebsonkologe und Vorsitzender der Breast International Group.",
   "david-koch": "Seit 1992 wegen Prostatakrebs behandelt, spendete er 2007 dem MIT 100 Millionen Dollar für ein Institut, das Ingenieure und Krebsbiologen unter einem Dach vereint, und 2015 dem MSK 150 Millionen Dollar für ein neues ambulantes Krebszentrum.",
   "david-porter": "Behandelte die ersten erwachsenen CLL-Patienten mit CAR-T und berichtete über ein Jahrzehnt anhaltender Remissionen.",
@@ -4014,7 +4014,7 @@ export const tldr_de: Record<string, string> = {
   "inrg-staging": "Die INRG-Stadieneinteilung ist das internationale System, das Neuroblastome anhand von Alter, Ausbreitung, MYCN-Status und Tumorbiologie in sehr niedriges, niedriges, mittleres und hohes Risiko einteilt.",
   "int-0091": "Die Ergänzung um Ifosfamid und Etoposid verbesserte die Heilungsraten beim lokalisierten Ewing-Sarkom und legte das bis heute verwendete Grundschema fest.",
   intas: "Ein privat geführtes Unternehmen aus Ahmedabad, dessen europäischer Zweig Accord Healthcare zu den größten Lieferanten generischer Chemotherapeutika und supportiver Biosimilars für europäische Krankenhäuser gehört.",
-  "intention-to-treat": "Jeden Patienten in der Gruppe auswerten, der er per Zufall zugeteilt wurde, unabhängig davon, ob er die Behandlung tatsächlich erhalten hat. Das bewahrt die Fairness der Randomisierung und spiegelt wider, was passiert, wenn eine Behandlung im echten Leben verordnet wird; die Per-Protocol-Analyse zählt dagegen nur diejenigen, die sich an die Behandlung gehalten haben.",
+
   interius: "Ausgründung der Penn, die im Rahmen der INVISE-Studie dem allerersten Patienten eine dauerhafte In-vivo-CAR-Gentherapie (INT2104, CD20) verabreichte.",
   "intraop-medical": "IntraOp stellt das Mobetron her, ein mobiles Elektronenstrahlgerät, das in den Operationssaal gerollt werden kann, um während einer Krebsoperation eine einzelne, gezielte Strahlendosis auf das Tumorbett abzugeben; es wird außerdem in den ersten Studien am Menschen zur ultraschnellen FLASH-Strahlentherapie eingesetzt.",
   "io-plus-crt-cervical": "Die Ergänzung der kurativen Radiochemotherapie um Pembrolizumab verbesserte das Überleben beim lokal fortgeschrittenen Hochrisiko-Gebärmutterhalskrebs (KEYNOTE-A18); Durvalumab in einer breiteren Population tat dies nicht (CALLA).",
@@ -4179,7 +4179,7 @@ export const tldr_de: Record<string, string> = {
   ondansetron: "Ondansetron (Zofran) war das Medikament, das Chemotherapie vom Cisplatin-Typ erträglich machte. Es blockiert das Serotoninsignal, das Erbrechen auslöst, und ist heute ein billiges Generikum als Tablette, Schmelztablette oder Injektion, das in der gesamten Krebsversorgung eingesetzt wird.",
   optellum: "Unternehmen aus Oxford mit der ersten von der FDA freigegebenen KI zur Beurteilung, ob ein Lungenrundherd im CT wahrscheinlich Krebs ist.",
   "optellum-virtual-nodule-clinic": "Die erste zugelassene KI, die abschätzt, wie wahrscheinlich ein Lungenrundherd im CT Krebs ist, und Ärzten hilft zu entscheiden, wer eine Biopsie braucht und wer warten kann.",
-  "optimice-pcr": "Untersucht, ob Patientinnen, deren Krebs vor der Operation vollständig verschwunden ist, danach noch ein Jahr Immuntherapie brauchen.",
+
   "oral-visual-screening": "Eine geschulte Gesundheitsfachkraft, die mit einer Lampe in den Mund schaut, kann Mundkrebs früh erkennen; in Indien senkte das die Todesfälle bei Menschen, die Tabak oder Alkohol konsumieren, um ein Drittel.",
   orelabrutinib: "Orelabrutinib ist die BTK-blockierende Tablette von InnoCare gegen chronische lymphatische Leukämie und Mantelzelllymphom, 2020 in China zugelassen.",
   "origin-bio": "Origin baut den größten Datensatz darüber auf, wie einzelne Krebszellen echter Patienten auf Medikamente und genetische Arzneimittel reagieren, um ihn an Pharma- und KI-Unternehmen zu lizenzieren.",

@@ -387,7 +387,7 @@ export const tldr_zh: Record<string, string> = {
   "bystander-effect": "释放的载荷漏出靶细胞并杀死邻近细胞，包括不带靶点的细胞。",
   ild: "肺部炎症，是部分ADC（尤其Enhertu）和免疫治疗的严重副作用。",
   resistance: "癌症药物失效的原因：肿瘤从未依赖该靶点，或演化出绕过阻断的方式。",
-  orr: "肿瘤缩小至少30%的患者百分比。",
+
   recist: "在影像上衡量肿瘤增大或缩小的规则手册。",
   pfs: "患者在癌症不增长的情况下存活的时间。",
   os: "患者存活的时间，仅此而已。金标准终点。",
@@ -653,7 +653,7 @@ export const tldr_zh: Record<string, string> = {
   "johns-hopkins": "Johns Hopkins是癌症基因组学（Vogelstein）、MSI-high免疫治疗（Le、Diaz）以及液体活检和MCED科学（CancerSEEK）的诞生地。",
   "johnson-johnson": "Johnson & Johnson在多发性骨髓瘤（Darzalex、Carvykti、Tecvayli、Talvey）和肺癌双特异性抗体（Rybrevant）领域处于领先地位。",
   karolinska: "瑞典领先的癌症医院，与Karolinska Institutet和诺贝尔大会相关联，拥有强大的基于登记数据的研究。",
-  "keynote-522": "该试验在三阴性乳腺癌的术前化疗基础上加入免疫治疗，并且独一无二地改善了生存期。",
+
   kinase: "一种通过给其他蛋白质加上磷酸基团来将其“开启”的酶。癌症的信号传导依赖激酶运转，而激酶抑制剂是靶向药物中最大的一类。",
   "rare-childhood-cancers": "有些儿童癌症极为罕见，没有任何一家医院能见到足够多的病例来从中学习。NCI 把它们归为一类：心脏肿瘤、气道乳头状瘤、甲状腺癌、肾上腺癌、鼻部和咽喉部癌、黑色素瘤，以及更常见于成人的各类癌。解决办法是建立国际登记系统和专家网络，汇集每一个病例，这样即使没有临床试验，也能有治疗指导。",
 
@@ -984,7 +984,7 @@ export const tldr_zh: Record<string, string> = {
   "emory-winship": "佐治亚州唯一的NCI综合癌症中心，在多发性骨髓瘤和EGFR突变肺癌临床试验方面处于领先地位。",
   "endometrial-molecular-classes": "由少数几项检测划定的四个组别，对预后的预测优于显微镜：POLE突变型（预后极好）、错配修复缺陷型、p53异常型（预后最差）和\"无特定分子谱\"型。",
   endoscopy: "用装在柔软管子上的摄像头观察空腔器官内部，取活检，有时还能当场进行治疗。",
-  endpoint: "试验设计用来测量的、事先确定的具体结果：例如患者能活多久，或癌症多久之后才会进展。当新治疗在该指标上胜过对照治疗时，试验就“达到了终点”。",
+
   "enteral-parenteral-nutrition": "营养支持指通过管子把营养送入肠道，或者在肠道无法使用时经静脉输入营养。用在合适的病人身上能救命，用在不合适的病人身上则有害或徒劳。",
   entrectinib: "Entrectinib（Rozlytrek）是一种用于NTRK融合癌症和ROS1肺癌的口服药，能够到达脑转移灶。",
   epigenetics: "表观遗传与转录治疗改变的是基因被读取的方式，而不是基因本身。",
@@ -2666,7 +2666,7 @@ export const tldr_zh: Record<string, string> = {
   dabrafenib: "Dabrafenib（Tafinlar）是一种胶囊，可关闭驱动部分黑色素瘤、肺癌、甲状腺癌及其他癌症的异常BRAF蛋白。它几乎总是与trametinib联用。",
   dalpiciclib: "Dalpiciclib是Hengrui的CDK4/6抑制剂，是该类药物中首个由中国研发的药物，基于DAWNA试验获批用于激素驱动的晚期乳腺癌。",
   dantari: "Dantari构建了基于聚合物的药物载体，使抗体能够比标准抗体药物偶联物向肿瘤递送多得多的化疗药物，同时保护骨髓。其首个药物在乳腺癌中进行了测试，之后公司于2025年出售了资产。",
-  "data-maturity": "当死亡（或进展）的患者太少、比较不可靠时，生存结果是“不成熟的”，此时中位数“未达到”，置信区间很宽。成熟的数据随时间和事件的积累而来；早期的积极表现可能消退，也可能增强。",
+
   "david-cameron": "David Cameron是一位乳腺肿瘤学家，担任Breast International Group主席。",
   "david-koch": "他自1992年起接受前列腺癌治疗，2007年向MIT捐赠1亿美元建立一所将工程师与癌症生物学家汇聚于同一屋檐下的研究所，并于2015年向MSK捐赠1.5亿美元建造新的癌症门诊大楼。",
   "david-porter": "用CAR-T治疗了首批成人慢性淋巴细胞白血病患者，并报告了长达十年的持久缓解。",
@@ -4025,7 +4025,7 @@ export const tldr_zh: Record<string, string> = {
   "inrg-staging": "INRG分期是根据年龄、扩散范围、MYCN状态和肿瘤生物学特征，将神经母细胞瘤分为极低危、低危、中危和高危的国际系统。",
   "int-0091": "加入ifosfamide和etoposide提高了局限性尤文肉瘤的治愈率，确立了至今仍在使用的基础方案。",
   intas: "一家位于Ahmedabad的私营公司，其欧洲分支Accord Healthcare是向欧洲医院供应仿制化疗药和支持治疗生物类似药的最大供应商之一。",
-  "intention-to-treat": "按每位患者被随机分配到的组别进行分析，无论其是否真正接受了治疗。这保留了随机化的公平性，并反映了治疗在现实中被处方时的情况；相比之下，符合方案分析只统计那些依从治疗的人。",
+
   interius: "从Penn分拆出来的公司，在INVISE试验中为史上第一位患者给予了持久的体内CAR基因疗法（INT2104，CD20）。",
   "intraop-medical": "IntraOp生产Mobetron，一种可以推入手术室的移动式电子束设备，在癌症手术期间对瘤床进行单次靶向放射，它也正被用于超快速FLASH放疗的首批人体试验。",
   "io-plus-crt-cervical": "在根治性放化疗基础上加用pembrolizumab改善了高危局部晚期宫颈癌的生存（KEYNOTE-A18）；而durvalumab在更广泛的人群中则没有（CALLA）。",
@@ -4190,7 +4190,7 @@ export const tldr_zh: Record<string, string> = {
   ondansetron: "Ondansetron（Zofran）是让cisplatin类化疗变得可以忍受的药物。它阻断引发呕吐的血清素信号，如今已是廉价的仿制药，有片剂、口溶片和注射剂，广泛用于癌症治疗。",
   optellum: "牛津公司，拥有首个获FDA批准、用于判断CT上肺结节是否可能为癌症的人工智能。",
   "optellum-virtual-nodule-clinic": "首个获批用于估计CT扫描上肺结节为癌症可能性的AI，帮助医生决定谁需要活检、谁可以等待。",
-  "optimice-pcr": "探讨术前癌症已完全消失的患者术后是否仍需要一年的免疫治疗。",
+
   "oral-visual-screening": "受过培训的卫生工作者用灯光检查口腔内部就能早期发现口腔癌；在印度，这使使用烟草或饮酒人群的死亡减少了三分之一。",
   orelabrutinib: "Orelabrutinib是InnoCare研发的BTK抑制剂口服药，用于慢性淋巴细胞白血病和套细胞淋巴瘤，2020年在中国获批。",
   "origin-bio": "Origin正在构建最大的数据集，记录来自真实患者的单个癌细胞对药物和基因药物的反应，并授权给制药公司和AI公司使用。",

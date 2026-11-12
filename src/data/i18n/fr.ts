@@ -349,7 +349,7 @@ export const tldr_fr: Record<string, string> = {
   "johns-hopkins": "Johns Hopkins est le berceau de la génomique du cancer (Vogelstein), de l'immunothérapie des tumeurs MSI-high (Le, Diaz) et de la science de la biopsie liquide et du MCED (CancerSEEK).",
   "johnson-johnson": "Johnson & Johnson est en tête dans le myélome multiple (Darzalex, Carvykti, Tecvayli, Talvey) et dans les anticorps bispécifiques contre le cancer du poumon (Rybrevant).",
   karolinska: "Le principal hôpital de cancérologie de Suède, lié au Karolinska Institutet et à l'Assemblée Nobel, avec une solide recherche fondée sur les registres.",
-  "keynote-522": "L'essai qui a ajouté l'immunothérapie à la chimiothérapie préopératoire du cancer du sein triple négatif et qui, fait unique, a amélioré la survie.",
+
   kinase: "Une enzyme qui active d'autres protéines en leur accrochant un groupe phosphate. La signalisation du cancer fonctionne grâce aux kinases, et les inhibiteurs de kinases constituent la plus grande classe de médicaments ciblés.",
   "kinase-inhibitors": "Des comprimés qui bloquent l'enzyme précise dont un cancer dépend. Imatinib a prouvé en 2001 qu'un cancer pouvait être éteint de manière délibérée.",
   kit: "La mutation de KIT est le moteur de la plupart des tumeurs stromales gastro-intestinales, et la raison pour laquelle imatinib a transformé un sarcome dont la survie médiane était d'environ un an en une maladie chronique.",
@@ -579,7 +579,7 @@ export const tldr_fr: Record<string, string> = {
   optune: "Optune est un dispositif portable qui délivre des champs électriques perturbant la division cellulaire. Il est approuvé pour le glioblastome et, en 2026, pour le cancer du pancréas.",
   "organ-tropism-seed-soil": "Le cancer du sein va vers l'os, le poumon, le foie et le cerveau ; le cancer de la prostate vers l'os ; le cancer du côlon vers le foie ; le mélanome uvéal presque uniquement vers le foie. L'idée de Paget, formulée en 1889, reste valable : l'endroit où un cancer se propage dépend à la fois de la graine (le programme de la cellule) et du sol (l'accueil réservé par l'organe). Chaque sol a son propre cercle vicieux, et certains peuvent être ciblés par des médicaments.",
 
-  orr: "Le taux de réponse objective (ORR) est le pourcentage de patients dont les tumeurs diminuent d'au moins 30 %.",
+
   os: "La survie globale (OS) mesure combien de temps les patients vivent, tout simplement. C'est le critère d'évaluation de référence.",
   osimertinib: "Osimertinib (Tagrisso) est le comprimé de référence pour le cancer du poumon avec mutation EGFR, désormais aussi donné après la chirurgie et avec une chimiothérapie ou après une chimioradiothérapie.",
   "p53-cell-cycle": "Les points de contrôle p53 et RB sont les freins de la cellule. p53 détecte les dommages et empêche la cellule de se copier ; RB retient la cellule à la porte G1 jusqu'à ce que CDK4/6 la déverrouille. Les cancers coupent ces freins.",
@@ -823,7 +823,7 @@ export const tldr_fr: Record<string, string> = {
   "emory-winship": "Le seul centre de cancérologie complet du NCI en Géorgie, leader des essais sur le myélome multiple et le cancer du poumon avec mutation EGFR.",
   "endometrial-molecular-classes": "Quatre groupes définis par quelques tests qui prédisent l'évolution mieux que le microscope : POLE muté (excellent), déficient en réparation des mésappariements, p53 anormal (le pire) et 'sans profil moléculaire spécifique'.",
   endoscopy: "Regarder à l'intérieur d'un organe creux avec une caméra fixée sur un tube souple, prélever des biopsies et parfois traiter sur place.",
-  endpoint: "Le résultat précis qu'un essai est conçu pour mesurer, fixé à l'avance : par exemple la durée de survie des patients, ou le délai avant que leur cancer progresse. Un essai « atteint son critère principal » lorsque le nouveau traitement bat le traitement de comparaison sur cette mesure.",
+
   "enteral-parenteral-nutrition": "Le soutien nutritionnel consiste à alimenter par sonde dans l'intestin, ou par voie veineuse quand l'intestin ne peut pas être utilisé. Il sauve la vie chez le bon patient, et il est nuisible ou inutile chez le mauvais.",
   entrectinib: "Entrectinib (Rozlytrek) est un comprimé pour les cancers à fusion NTRK et le cancer du poumon ROS1 qui atteint les métastases cérébrales.",
   epigenetics: "La thérapie épigénétique et transcriptionnelle modifie la façon dont les gènes sont lus, plutôt que les gènes eux-mêmes.",
@@ -2619,7 +2619,7 @@ export const tldr_fr: Record<string, string> = {
   dalpiciclib: "Le dalpiciclib est l'inhibiteur de CDK4/6 de Hengrui, premier médicament de cette classe développé en Chine, approuvé pour le cancer du sein avancé hormonodépendant sur la base des essais DAWNA.",
   dantari: "Dantari a construit des transporteurs de médicaments à base de polymères qui permettent à un anticorps de délivrer beaucoup plus de chimiothérapie à une tumeur que les conjugués anticorps-médicament standard, tout en épargnant la moelle osseuse. Son premier médicament a été testé dans le cancer du sein avant que la société ne cède ses actifs en 2025.",
   dar: "Le rapport médicament/anticorps (DAR) est le nombre de molécules de charge utile portées par chaque anticorps, généralement de 2 à 8.",
-  "data-maturity": "Les résultats de survie sont « immatures » quand trop peu de patients sont décédés (ou ont progressé) pour que la comparaison soit fiable, de sorte que les médianes sont « non atteintes » et les intervalles de confiance larges. Les données mûrissent avec le temps et les événements ; des premiers signaux positifs peuvent s'estomper ou se renforcer.",
+
   "david-cameron": "David Cameron est un oncologue spécialisé dans le cancer du sein qui préside le Breast International Group.",
   "david-koch": "Traité pour un cancer de la prostate à partir de 1992, il a donné 100 millions de dollars au MIT en 2007 pour construire un institut réunissant sous un même toit ingénieurs et biologistes du cancer, et 150 millions de dollars au MSK en 2015 pour un nouveau bâtiment de cancérologie ambulatoire.",
   "david-porter": "Il a traité les premiers patients adultes atteints de LLC par CAR-T et a rapporté une décennie de rémissions durables.",
@@ -4014,7 +4014,7 @@ export const tldr_fr: Record<string, string> = {
   "inrg-staging": "La classification INRG est le système international qui répartit le neuroblastome en risque très faible, faible, intermédiaire et élevé selon l'âge, l'extension, le statut MYCN et la biologie de la tumeur.",
   "int-0091": "L'ajout d'ifosfamide et d'étoposide a amélioré les taux de guérison du sarcome d'Ewing localisé, établissant le protocole de base encore utilisé aujourd'hui.",
   intas: "Une entreprise privée d'Ahmedabad dont la branche européenne, Accord Healthcare, est l'un des plus grands fournisseurs de chimiothérapies génériques et de biosimilaires de soins de support aux hôpitaux européens.",
-  "intention-to-treat": "Analyser chaque patient dans le groupe où il a été randomisé, qu'il ait ou non réellement pris le traitement. Cela préserve l'équité de la randomisation et reflète ce qui se passe lorsqu'un traitement est prescrit dans la vie réelle ; l'analyse per protocole, à l'inverse, ne compte que ceux qui ont respecté le traitement.",
+
   interius: "Spin-out de Penn qui a administré au tout premier patient une thérapie génique CAR in vivo durable (INT2104, CD20) dans l'essai INVISE.",
   "intraop-medical": "IntraOp fabrique le Mobetron, un appareil mobile à faisceau d'électrons que l'on peut amener au bloc opératoire pour délivrer une dose unique et ciblée de rayonnement sur le lit tumoral pendant la chirurgie du cancer ; il est aussi utilisé dans les premiers essais humains de radiothérapie ultra-rapide FLASH.",
   "io-plus-crt-cervical": "L'ajout du pembrolizumab à la chimioradiothérapie curative a amélioré la survie dans le cancer du col de l'utérus localement avancé à haut risque (KEYNOTE-A18) ; le durvalumab dans une population plus large ne l'a pas fait (CALLA).",
@@ -4179,7 +4179,7 @@ export const tldr_fr: Record<string, string> = {
   ondansetron: "L'ondansétron (Zofran) est le médicament qui a rendu supportable la chimiothérapie de type cisplatine. Il bloque le signal sérotoninergique qui déclenche les vomissements et existe aujourd'hui en générique bon marché, en comprimé, en lyophilisat oral ou en injection, utilisé dans toute la cancérologie.",
   optellum: "Entreprise d'Oxford dotée de la première IA autorisée par la FDA pour juger si un nodule pulmonaire au scanner est probablement cancéreux.",
   "optellum-virtual-nodule-clinic": "La première IA autorisée à estimer la probabilité qu'un nodule pulmonaire vu au scanner soit cancéreux, aidant les médecins à décider qui a besoin d'une biopsie et qui peut attendre.",
-  "optimice-pcr": "Cherche à savoir si les patientes dont le cancer a complètement disparu avant la chirurgie ont encore besoin d'un an d'immunothérapie ensuite.",
+
   "oral-visual-screening": "Un agent de santé formé qui examine l'intérieur de la bouche avec une lampe peut détecter tôt un cancer de la bouche ; en Inde, cela a réduit d'un tiers les décès chez les consommateurs de tabac ou d'alcool.",
   orelabrutinib: "L'orelabrutinib est le comprimé bloqueur de BTK d'InnoCare pour la leucémie lymphoïde chronique et le lymphome à cellules du manteau, approuvé en Chine en 2020.",
   "origin-bio": "Origin constitue le plus grand jeu de données sur la façon dont des cellules cancéreuses individuelles issues de vrais patients répondent aux médicaments et aux thérapies géniques, pour le concéder sous licence aux entreprises pharmaceutiques et d'IA.",

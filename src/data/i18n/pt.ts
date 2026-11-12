@@ -387,7 +387,7 @@ export const tldr_pt: Record<string, string> = {
   "bystander-effect": "Quando uma carga liberada vaza da célula-alvo e mata as vizinhas, inclusive células sem o alvo.",
   ild: "Inflamação pulmonar, um efeito colateral grave de alguns ADCs (especialmente Enhertu) e da imunoterapia.",
   resistance: "Por que as drogas contra o câncer param de funcionar: o tumor nunca dependeu do alvo ou evolui contornando o bloqueio.",
-  orr: "A porcentagem de pacientes cujos tumores encolhem pelo menos 30%.",
+
   recist: "O livro de regras para medir se os tumores cresceram ou encolheram nos exames.",
   pfs: "Quanto tempo os pacientes vivem sem que seu câncer cresça.",
   os: "Quanto tempo os pacientes vivem, ponto final. O desfecho padrão-ouro.",
@@ -653,7 +653,7 @@ export const tldr_pt: Record<string, string> = {
   "johns-hopkins": "Johns Hopkins é o berço da genômica do câncer (Vogelstein), da imunoterapia para tumores MSI-high (Le, Diaz) e da ciência da biópsia líquida e do MCED (CancerSEEK).",
   "johnson-johnson": "A Johnson & Johnson lidera em mieloma múltiplo (Darzalex, Carvykti, Tecvayli, Talvey) e em anticorpos biespecíficos para câncer de pulmão (Rybrevant).",
   karolinska: "O principal hospital oncológico da Suécia, ligado ao Karolinska Institutet e à Assembleia Nobel, com forte pesquisa baseada em registros.",
-  "keynote-522": "O estudo que acrescentou imunoterapia à quimioterapia pré-operatória para câncer de mama triplo-negativo e, de forma única, melhorou a sobrevida.",
+
   kinase: "Uma enzima que liga outras proteínas ao acoplar nelas um grupo fosfato. A sinalização do câncer funciona à base de quinases, e os inibidores de quinase são a maior classe de medicamentos-alvo.",
   "rare-childhood-cancers": "Alguns cânceres infantis são tão raros que nenhum hospital sozinho atende casos suficientes para aprender com eles. O NCI os agrupa: tumores do coração, papilomas das vias aéreas, cânceres de tireoide, adrenal, nariz e garganta, melanoma e carcinomas mais típicos de adultos. A resposta tem sido registros internacionais e redes de especialistas que reúnem todos os casos, de modo que existem orientações de tratamento mesmo sem ensaios clínicos.",
 
@@ -984,7 +984,7 @@ export const tldr_pt: Record<string, string> = {
   "emory-winship": "O único centro de câncer abrangente do NCI na Geórgia, líder em ensaios de mieloma múltiplo e de câncer de pulmão com mutação de EGFR.",
   "endometrial-molecular-classes": "Quatro grupos definidos por alguns poucos testes que preveem o desfecho melhor do que o microscópio: com mutação de POLE (excelente), com deficiência de reparo de erros de pareamento, com p53 anormal (o pior) e 'sem perfil molecular específico'.",
   endoscopy: "Olhar dentro de um órgão oco com uma câmera em um tubo flexível, colher biópsias e, às vezes, tratar na mesma hora.",
-  endpoint: "O desfecho específico que um ensaio é desenhado para medir, fixado de antemão: por exemplo, quanto tempo os pacientes vivem ou quanto tempo até o câncer crescer. Um ensaio 'atinge seu desfecho' quando o novo tratamento supera o de comparação nessa medida.",
+
   "enteral-parenteral-nutrition": "Suporte nutricional significa alimentação por sonda no intestino, ou nutrição pela veia quando o intestino não pode ser usado. Salva vidas no paciente certo e é prejudicial ou inútil no paciente errado.",
   entrectinib: "Entrectinib (Rozlytrek) é um comprimido para cânceres com fusão de NTRK e câncer de pulmão ROS1 que alcança as metástases cerebrais.",
   epigenetics: "A terapia epigenética e transcricional muda a forma como os genes são lidos, e não os genes em si.",
@@ -2666,7 +2666,7 @@ export const tldr_pt: Record<string, string> = {
   dabrafenib: "O dabrafenib (Tafinlar) é uma cápsula que desliga a proteína BRAF defeituosa que impulsiona alguns melanomas e alguns cânceres de pulmão, tireoide e outros. É quase sempre combinado com o trametinib.",
   dalpiciclib: "O dalpiciclib é o inibidor de CDK4/6 da Hengrui, o primeiro fármaco da classe desenvolvido na China, aprovado para o câncer de mama avançado hormônio-dependente com base nos ensaios DAWNA.",
   dantari: "A Dantari construiu carreadores de fármacos à base de polímeros que permitem a um anticorpo entregar muito mais quimioterapia a um tumor do que os conjugados anticorpo-fármaco padrão, poupando a medula óssea. Seu primeiro medicamento foi testado no câncer de mama antes de a empresa vender seus ativos em 2025.",
-  "data-maturity": "Os resultados de sobrevida são 'imaturos' quando poucos pacientes morreram (ou progrediram) para que a comparação seja confiável, de modo que as medianas 'não são alcançadas' e os intervalos de confiança são amplos. Dados maduros vêm com o tempo e com os eventos; sinais positivos iniciais podem desaparecer ou se fortalecer.",
+
   "david-cameron": "David Cameron é um oncologista especializado em câncer de mama que preside o Breast International Group.",
   "david-koch": "Tratado de câncer de próstata desde 1992, doou 100 milhões de dólares ao MIT em 2007 para construir um instituto que reúne engenheiros e biólogos do câncer sob o mesmo teto, e 150 milhões de dólares ao MSK em 2015 para um novo edifício de atendimento oncológico ambulatorial.",
   "david-porter": "Tratou os primeiros pacientes adultos com LLC usando CAR-T e relatou uma década de remissões duradouras.",
@@ -4025,7 +4025,7 @@ export const tldr_pt: Record<string, string> = {
   "inrg-staging": "O estadiamento INRG é o sistema internacional que classifica o neuroblastoma em risco muito baixo, baixo, intermediário e alto usando idade, disseminação, status de MYCN e biologia do tumor.",
   "int-0091": "Acrescentar ifosfamida e etoposídeo melhorou as taxas de cura do sarcoma de Ewing localizado, estabelecendo a base ainda usada hoje.",
   intas: "Uma empresa de capital fechado de Ahmedabad cujo braço europeu, a Accord Healthcare, é um dos maiores fornecedores de quimioterapia genérica e biossimilares de cuidados de suporte para hospitais europeus.",
-  "intention-to-treat": "Analisar cada paciente no grupo para o qual foi randomizado, tenha ele tomado ou não o tratamento de fato. Isso preserva a justiça da randomização e reflete o que acontece quando um tratamento é prescrito na vida real; a análise por protocolo, em contraste, conta apenas os que cumpriram o tratamento.",
+
   interius: "Spin-out da Penn que administrou ao primeiro paciente da história uma terapia gênica CAR in vivo durável (INT2104, CD20) no ensaio INVISE.",
   "intraop-medical": "A IntraOp fabrica o Mobetron, uma máquina móvel de feixe de elétrons que pode ser levada até a sala de cirurgia para aplicar uma dose única e dirigida de radiação ao leito tumoral durante a cirurgia do câncer, e que também está sendo usada nos primeiros ensaios em humanos da radioterapia ultrarrápida FLASH.",
   "io-plus-crt-cervical": "Acrescentar pembrolizumabe à quimiorradioterapia curativa melhorou a sobrevida no câncer de colo do útero localmente avançado de alto risco (KEYNOTE-A18); o durvalumabe em uma população mais ampla não melhorou (CALLA).",
@@ -4190,7 +4190,7 @@ export const tldr_pt: Record<string, string> = {
   ondansetron: "A ondansetrona (Zofran) foi o medicamento que tornou suportável a quimioterapia do tipo cisplatina. Ela bloqueia o sinal de serotonina que desencadeia o vômito e hoje é um genérico barato em comprimido, lâmina que dissolve na boca ou injeção, usado em toda a oncologia.",
   optellum: "Empresa de Oxford com a primeira IA liberada pela FDA para avaliar se um nódulo pulmonar na tomografia tem probabilidade de ser câncer.",
   "optellum-virtual-nodule-clinic": "A primeira IA liberada para estimar a probabilidade de um nódulo pulmonar na tomografia ser câncer, ajudando os médicos a decidir quem precisa de biópsia e quem pode esperar.",
-  "optimice-pcr": "Pergunta se as pacientes cujo câncer desapareceu completamente antes da cirurgia ainda precisam de um ano de imunoterapia depois.",
+
   "oral-visual-screening": "Um agente de saúde treinado que examina o interior da boca com uma luz pode encontrar o câncer de boca cedo; na Índia isso reduziu as mortes em um terço entre as pessoas que usam tabaco ou álcool.",
   orelabrutinib: "O orelabrutinibe é a pílula bloqueadora de BTK da InnoCare para leucemia linfocítica crônica e linfoma de células do manto, aprovada na China em 2020.",
   "origin-bio": "A Origin está construindo o maior conjunto de dados sobre como células cancerosas individuais de pacientes reais respondem a medicamentos e terapias genéticas, para licenciar a empresas farmacêuticas e de IA.",

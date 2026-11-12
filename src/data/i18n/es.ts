@@ -387,7 +387,7 @@ export const tldr_es: Record<string, string> = {
   "bystander-effect": "Cuando una carga liberada sale de la célula diana y mata a sus vecinas, incluidas las que carecen de la diana.",
   ild: "Inflamación pulmonar, un efecto secundario grave de algunos ADC (sobre todo Enhertu) y de la inmunoterapia.",
   resistance: "Por qué los fármacos dejan de funcionar: el tumor nunca dependió de la diana o evoluciona para rodear el bloqueo.",
-  orr: "El porcentaje de pacientes cuyos tumores se reducen al menos un 30 %.",
+
   recist: "El reglamento para medir si los tumores han crecido o disminuido en las exploraciones.",
   pfs: "Cuánto tiempo viven los pacientes sin que su cáncer crezca.",
   os: "Cuánto tiempo viven los pacientes, sin más. El criterio de referencia.",
@@ -653,7 +653,7 @@ export const tldr_es: Record<string, string> = {
   "johns-hopkins": "Johns Hopkins es la cuna de la genómica del cáncer (Vogelstein), de la inmunoterapia para tumores MSI-high (Le, Diaz) y de la ciencia de la biopsia líquida y la MCED (CancerSEEK).",
   "johnson-johnson": "Johnson & Johnson es líder en mieloma múltiple (Darzalex, Carvykti, Tecvayli, Talvey) y en anticuerpos biespecíficos para el cáncer de pulmón (Rybrevant).",
   karolinska: "El principal hospital oncológico de Suecia, vinculado al Karolinska Institutet y a la Asamblea Nobel, con una sólida investigación basada en registros.",
-  "keynote-522": "El ensayo que añadió inmunoterapia a la quimioterapia previa a la cirugía en el cáncer de mama triple negativo y que, de forma excepcional, mejoró la supervivencia.",
+
   kinase: "Una enzima que activa otras proteínas añadiéndoles un grupo fosfato. La señalización del cáncer funciona a base de quinasas, y los inhibidores de quinasas son la clase más grande de fármacos dirigidos.",
   "rare-childhood-cancers": "Algunos cánceres infantiles son tan raros que ningún hospital por sí solo ve suficientes casos para aprender de ellos. El NCI los agrupa: tumores del corazón, papilomas de las vías respiratorias, cánceres de tiroides, de las glándulas suprarrenales, de la nariz y la garganta, melanoma y carcinomas más típicos de los adultos. La respuesta han sido los registros internacionales y las redes de expertos que reúnen todos los casos, de modo que existen guías de tratamiento incluso sin ensayos clínicos.",
 
@@ -984,7 +984,7 @@ export const tldr_es: Record<string, string> = {
   "emory-winship": "El único centro oncológico integral del NCI en Georgia, líder en ensayos de mieloma múltiple y de cáncer de pulmón con mutación de EGFR.",
   "endometrial-molecular-classes": "Cuatro grupos definidos por unas pocas pruebas que predicen el pronóstico mejor que el microscopio: con mutación de POLE (excelente), con deficiencia de reparación de errores de apareamiento, con p53 anormal (el peor) y 'sin perfil molecular específico'.",
   endoscopy: "Mirar dentro de un órgano hueco con una cámara en un tubo flexible, tomar biopsias y, a veces, tratar en el mismo momento.",
-  endpoint: "El resultado concreto que un ensayo está diseñado para medir, fijado de antemano: por ejemplo, cuánto viven los pacientes o cuánto tarda su cáncer en crecer. Un ensayo 'cumple su criterio de valoración' cuando el nuevo tratamiento supera al de comparación en esa medida.",
+
   "enteral-parenteral-nutrition": "El soporte nutricional consiste en alimentar por sonda hacia el intestino, o en administrar nutrición por vena cuando el intestino no puede usarse. Salva vidas en el paciente adecuado y es dañino o inútil en el paciente equivocado.",
   entrectinib: "Entrectinib (Rozlytrek) es una pastilla para los cánceres con fusión de NTRK y el cáncer de pulmón ROS1 que llega a las metástasis cerebrales.",
   epigenetics: "La terapia epigenética y transcripcional cambia la forma en que se leen los genes, en lugar de los genes en sí.",
@@ -2666,7 +2666,7 @@ export const tldr_es: Record<string, string> = {
   dabrafenib: "Dabrafenib (Tafinlar) es una cápsula que apaga la proteína BRAF defectuosa que impulsa algunos melanomas y algunos cánceres de pulmón, tiroides y otros. Casi siempre se combina con trametinib.",
   dalpiciclib: "Dalpiciclib es el inhibidor de CDK4/6 de Hengrui, el primer fármaco de esta clase desarrollado en China, aprobado para el cáncer de mama avanzado hormonodependiente sobre la base de los ensayos DAWNA.",
   dantari: "Dantari construyó transportadores de fármacos basados en polímeros que permiten a un anticuerpo llevar mucha más quimioterapia a un tumor que los conjugados anticuerpo-fármaco estándar, preservando la médula ósea. Su primer medicamento se probó en cáncer de mama antes de que la empresa vendiera sus activos en 2025.",
-  "data-maturity": "Los resultados de supervivencia son 'inmaduros' cuando han muerto (o progresado) demasiado pocos pacientes para que la comparación sea fiable, de modo que las medianas 'no se alcanzan' y los intervalos de confianza son amplios. Los datos maduros llegan con el tiempo y los eventos; las primeras señales positivas pueden desvanecerse o reforzarse.",
+
   "david-cameron": "David Cameron es un oncólogo especializado en cáncer de mama que preside el Breast International Group.",
   "david-koch": "Tratado por un cáncer de próstata desde 1992, donó 100 millones de dólares al MIT en 2007 para construir un instituto que reúne bajo un mismo techo a ingenieros y biólogos del cáncer, y 150 millones de dólares al MSK en 2015 para un nuevo edificio de atención oncológica ambulatoria.",
   "david-porter": "Trató a los primeros pacientes adultos con LLC mediante CAR-T y comunicó una década de remisiones duraderas.",
@@ -4025,7 +4025,7 @@ export const tldr_es: Record<string, string> = {
   "inrg-staging": "La estadificación INRG es el sistema internacional que clasifica el neuroblastoma en riesgo muy bajo, bajo, intermedio y alto según la edad, la extensión, el estado de MYCN y la biología del tumor.",
   "int-0091": "Añadir ifosfamida y etopósido mejoró las tasas de curación del sarcoma de Ewing localizado, estableciendo la base que aún se usa hoy.",
   intas: "Una empresa privada de Ahmedabad cuya filial europea, Accord Healthcare, es uno de los mayores proveedores de quimioterapia genérica y biosimilares de cuidados de soporte para los hospitales europeos.",
-  "intention-to-treat": "Analizar a cada paciente en el grupo al que fue aleatorizado, haya tomado o no realmente el tratamiento. Preserva la equidad de la aleatorización y refleja lo que ocurre cuando un tratamiento se prescribe en la vida real; el análisis por protocolo, en cambio, cuenta solo a quienes cumplieron.",
+
   interius: "Spin-out de Penn que administró al primer paciente de la historia una terapia génica CAR in vivo duradera (INT2104, CD20) en el ensayo INVISE.",
   "intraop-medical": "IntraOp fabrica el Mobetron, una máquina móvil de haz de electrones que puede llevarse con ruedas a un quirófano para administrar una única dosis dirigida de radiación al lecho tumoral durante la cirugía del cáncer, y también se está usando en los primeros ensayos en humanos de la radioterapia ultrarrápida FLASH.",
   "io-plus-crt-cervical": "Añadir pembrolizumab a la quimiorradioterapia curativa mejoró la supervivencia en el cáncer de cuello uterino localmente avanzado de alto riesgo (KEYNOTE-A18); durvalumab en una población más amplia no lo hizo (CALLA).",
@@ -4190,7 +4190,7 @@ export const tldr_es: Record<string, string> = {
   ondansetron: "Ondansetrón (Zofran) fue el fármaco que hizo soportable la quimioterapia tipo cisplatino. Bloquea la señal de serotonina que desencadena el vómito y hoy es un genérico barato en comprimidos, obleas bucodispersables o inyección que se usa en toda la atención oncológica.",
   optellum: "Empresa de Oxford con la primera IA autorizada por la FDA para valorar si un nódulo pulmonar en una tomografía es probablemente cáncer.",
   "optellum-virtual-nodule-clinic": "La primera IA autorizada para estimar la probabilidad de que un nódulo pulmonar en una tomografía sea cáncer, ayudando a los médicos a decidir quién necesita una biopsia y quién puede esperar.",
-  "optimice-pcr": "Pregunta si las pacientes cuyo cáncer desapareció por completo antes de la cirugía necesitan aún un año de inmunoterapia después.",
+
   "oral-visual-screening": "Un trabajador sanitario capacitado que examina el interior de la boca con una luz puede detectar el cáncer de boca de forma temprana; en la India esto redujo las muertes en un tercio entre las personas que consumen tabaco o alcohol.",
   orelabrutinib: "Orelabrutinib es la pastilla bloqueadora de BTK de InnoCare para la leucemia linfocítica crónica y el linfoma de células del manto, aprobada en China en 2020.",
   "origin-bio": "Origin está construyendo el mayor conjunto de datos sobre cómo responden células cancerosas individuales de pacientes reales a fármacos y medicinas genéticas, para licenciarlo a empresas farmacéuticas y de IA.",

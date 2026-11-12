@@ -259,7 +259,7 @@ export const simpleJ: Record<string, string> = {
   "randomised-trial": "Chance assigns people to different treatment groups. This helps make a fair comparison, but does not guarantee identical groups or complete follow-up.",
   "placebo": "A placebo is an inactive comparison treatment. A cancer trial may give standard care plus a placebo or use another justified design. Check what each group receives in the study plan and consent form.",
   "blinding": "A blinded trial keeps patients, and often doctors too, from knowing who is on which treatment, so hopes and expectations cannot colour the results.",
-  "endpoint": "An endpoint is the specific outcome a trial is designed to measure, fixed in advance, such as how long before the cancer grows.",
+  "endpoint": "An endpoint says what the study measures and when. The plan states what result would count as success.",
   "surrogate-endpoint": "A surrogate endpoint is a quicker, easier measurement standing in for what really matters, such as tumour shrinkage standing in for living longer.",
 
   "median-survival": "Median survival is the time by which half the patients in a group have died, a midpoint of a wide spread rather than a prediction for anyone.",
@@ -470,7 +470,7 @@ export const simpleJ: Record<string, string> = {
   "futility": "A trial may stop because it is unlikely to meet its planned goal. That does not prove the treatments are equal.",
   "interim-analysis": "An interim analysis is a pre-planned look at a trial's data while it is still running, with a data cut-off date freezing the dataset for each look.",
   "primary-endpoint": "The primary endpoint is the single measurement a trial is designed to test, declared in advance, and secondary endpoints can support but not rescue a trial that missed it.",
-  "intention-to-treat": "Intention-to-treat analysis counts every patient in the group they were randomised to, whether or not they took the treatment, preserving the fairness of randomisation.",
+  "intention-to-treat": "Count people in the group they were assigned to, even if treatment changed. Missing results still need careful handling.",
   "prespecified-vs-post-hoc": "Find out what was planned before the relevant results were seen, and what was explored afterwards. Useful discoveries still need an appropriate later test.",
   "subgroup-analysis": "A treatment can be studied in groups defined by age, a marker or another feature. Different-looking results do not by themselves prove different treatment effects.",
   "statistical-significance": "Statistical significance means a result would be unlikely to arise by chance if the treatment did nothing, a threshold rather than a measure of how important it is.",
@@ -492,7 +492,7 @@ export const simpleJ: Record<string, string> = {
   "duration-of-response-term": "Duration of response measures how long a shrunken tumour stays shrunk, and disease control rate adds patients whose cancer stayed stable to those who responded.",
   "ttp": "Time to progression and time to next treatment measure how long until the cancer grows or until another treatment is needed, capturing things survival alone misses.",
   "landmark-survival": "Landmark survival is the share of patients alive or progression-free at a fixed time such as five years, read off a survival curve, with the long tail mattering for immunotherapy.",
-  "data-maturity": "Data maturity describes whether enough events have happened in a trial for the comparison to be reliable, and early positive results can fade or strengthen with time.",
+  "data-maturity": "How much follow-up and outcome information a result has. An unreached median alone does not tell you whether the treatment comparison is precise.",
   "qol-pro": "Patient-reported outcomes are measures of how patients themselves feel and function during treatment, collected by questionnaire, now expected by regulators alongside survival.",
   "ctcae-grading": "CTCAE gives event-specific grades for how severe a medical problem is. The grade does not say what caused it, and reports must name the scale version.",
   // ---- side effects ----

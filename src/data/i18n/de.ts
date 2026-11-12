@@ -361,7 +361,7 @@ export const tldr_de: Record<string, string> = {
 
   recist: "RECIST ist das Regelwerk, nach dem auf Bildgebungsaufnahmen gemessen wird, ob Tumoren gewachsen oder geschrumpft sind.",
 
-  resistance: "Warum Krebsmedikamente aufhören zu wirken: Entweder war der Tumor nie von der Zielstruktur abhängig, oder er entwickelt sich so weiter, dass er die Blockade umgeht.",
+
   "resistance-routes-map": "Wenn ein Medikament den Motor eines Krebses blockiert, hat der Krebs fünf Wege zurück: das Teil verändern, an das das Medikament bindet, mehr davon herstellen, einen Seitenweg nehmen, ganz auf einen anderen Motor umschalten oder das Medikament nicht mehr hereinlassen. Zu wissen, welchen Weg ein Tumor genommen hat, entscheidet über das nächste Medikament.",
   ret: "RET ist eine Kinase, die bei Schilddrüsenkrebs und einem kleinen Teil der Lungenkrebsfälle verändert ist und sich mit einer einzigen selektiven Tablette behandeln lässt, unabhängig davon, wo der Tumor sitzt.",
   revumenib: "Revumenib (Revuforj) ist der erste Menin-Inhibitor (2024), für akute Leukämien mit KMT2A-Rearrangements oder NPM1-Mutationen.",
@@ -485,7 +485,7 @@ export const tldr_de: Record<string, string> = {
   "paper-mariposa-nejm-2024": "Die Kombination eines bispezifischen EGFR-MET-Antikörpers mit einer EGFR-Tablette der dritten Generation schlug osimertinib allein, verzögerte das Fortschreiten um etwa sieben Monate und verbesserte später das Überleben, um den Preis von mehr Nebenwirkungen.",
   "paper-olympia-nejm-2021": "Bei Frauen mit angeborener BRCA1- oder BRCA2-Mutation, deren früher Brustkrebs ein hohes Risiko aufwies, senkte ein Jahr mit dem PARP-Hemmer olaparib nach der Standardbehandlung die Rückfälle um mehr als 40% und verbesserte später das Überleben.",
   parp: "PARP ist ein Enzym für die DNA-Reparatur. Krebszellen, die bereits ein Reparatursystem verloren haben (BRCA), sterben, wenn dieses zweite blockiert wird; gesunde Zellen überleben.",
-  "parp-inhibitor": "Tabletten, die ein Ersatzsystem der DNA-Reparatur blockieren und so Krebszellen abtöten, die ihr Hauptreparatursystem (BRCA) bereits verloren haben.",
+
   "pathology-foundation-model": "Sehr große KI-Modelle, die mit Millionen von Gewebeschnitten oder Bildaufnahmen trainiert wurden und sich an fast jede diagnostische Frage anpassen lassen.",
 
 

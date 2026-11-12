@@ -165,7 +165,7 @@ export const tldr_zh: Record<string, string> = {
   "kinase-inhibitors": "阻断癌症所依赖的特定酶的药片。2001年的imatinib证明癌症可被有意设计地关闭。",
   "monoclonal-antibody": "实验室制造的免疫蛋白，锁定单一靶点，或阻断它，或标记细胞以待摧毁。",
   "bispecific-antibody": "一个抗体有两个不同的抓臂，可同时阻断两个靶点，或把免疫细胞拉到癌细胞上。",
-  "parp-inhibitor": "阻断DNA备用修复系统的药片，杀灭已失去主修复系统（BRCA）的癌细胞。",
+
   "cdk46-inhibitor": "停止细胞分裂引擎的药片，加入激素治疗用于最常见类型的乳腺癌。",
   "kras-inhibitors": "针对最常见癌基因的药物，在2021年sotorasib出现前被认为不可能。",
   "protac-degrader": "这些药物不是阻断蛋白，而是给它贴上标签，让细胞自身的垃圾处理系统将其彻底清除。",
@@ -386,7 +386,7 @@ export const tldr_zh: Record<string, string> = {
   dar: "每个抗体上搭载的载荷分子数，通常为2到8。",
   "bystander-effect": "释放的载荷漏出靶细胞并杀死邻近细胞，包括不带靶点的细胞。",
   ild: "肺部炎症，是部分ADC（尤其Enhertu）和免疫治疗的严重副作用。",
-  resistance: "癌症药物失效的原因：肿瘤从未依赖该靶点，或演化出绕过阻断的方式。",
+
 
   recist: "在影像上衡量肿瘤增大或缩小的规则手册。",
   pfs: "患者在癌症不增长的情况下存活的时间。",
@@ -10644,7 +10644,7 @@ export const tldr_zh: Record<string, string> = {
   "log-kill-hypothesis": "一次化疗杀死的是固定比例而非固定数量的癌细胞，因此每个周期清除相同比例；这就是肿瘤在影像上消失后仍需继续治疗的原因。",
   "norton-simon-hypothesis": "由于肿瘤在体积小时再生长最快，收尾的最佳方式是把相同剂量的化疗间隔缩短。Norton和Simon的这一想法经CALGB 9741试验在乳腺癌中得到证实，使双周化疗成为标准。",
   "goldie-coldman-model": "耐药细胞随肿瘤生长因随机突变而出现，因此癌症已含耐药细胞的概率随体积增加。该模型主张早治疗并交替使用无交叉耐药的药物。",
-  "drug-resistance-dynamics": "来自群体遗传学的数学表明，大肿瘤在治疗前几乎必然已存在耐药细胞，而从一开始就联合耐药突变不同的药物，可以在同样药物序贯使用失败之处取得成功。",
+
   "adaptive-therapy-dynamics": "适应性治疗不求全力打击肿瘤，而是给予刚够控制的药量，肿瘤缩小即停药，让药物敏感细胞存活下来与耐药细胞竞争。前列腺癌的先导试验使阿比特龙治疗的进展时间约延长一倍。",
   "evolutionary-game-theory-cancer": "把癌细胞视为成败取决于邻近细胞行为的“玩家”，研究者得以预测肿瘤中细胞类型的构成如何在治疗下变化，并设计引导它的方案。",
   "clonal-evolution-models": "Nowell在1976年提出肿瘤是相互竞争的克隆群体在演化，如今通过多区域测序或反复血样直接测量；分支演化模型可预测哪些克隆将驱动复发。",

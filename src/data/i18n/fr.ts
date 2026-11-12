@@ -361,7 +361,7 @@ export const tldr_fr: Record<string, string> = {
 
   recist: "RECIST est le règlement qui sert à mesurer, sur les examens d'imagerie, si les tumeurs ont grossi ou diminué.",
 
-  resistance: "Pourquoi les médicaments anticancéreux cessent d'agir : soit la tumeur n'a jamais dépendu de la cible, soit elle évolue pour contourner le blocage.",
+
   "resistance-routes-map": "Quand un médicament bloque le moteur d'un cancer, celui-ci dispose de cinq voies de retour : modifier la pièce à laquelle le médicament se fixe, en produire davantage, emprunter une route parallèle, passer à un tout autre moteur, ou cesser de laisser entrer le médicament. Savoir quelle voie la tumeur a empruntée détermine le médicament suivant.",
   ret: "RET est une kinase altérée dans le cancer de la thyroïde et dans une petite fraction des cancers du poumon, que l'on peut traiter avec un seul comprimé sélectif, quel que soit l'endroit où se trouve la tumeur.",
   revumenib: "Revumenib (Revuforj) est le premier inhibiteur de la ménine (2024), destiné aux leucémies aiguës présentant un réarrangement de KMT2A ou une mutation de NPM1.",
@@ -485,7 +485,7 @@ export const tldr_fr: Record<string, string> = {
   "paper-mariposa-nejm-2024": "L'association d'un anticorps bispécifique EGFR-MET à un comprimé anti-EGFR de troisième génération a fait mieux que l'osimertinib seul, retardant la progression d'environ sept mois et améliorant ensuite la survie, au prix de davantage d'effets secondaires.",
   "paper-olympia-nejm-2021": "Chez les femmes nées avec une mutation de BRCA1 ou BRCA2 dont le cancer du sein précoce était à haut risque, un an d'olaparib, un inhibiteur de PARP, après le traitement standard a réduit les rechutes de plus de 40% et a ensuite amélioré la survie.",
   parp: "PARP est une enzyme de réparation de l'ADN. Les cancers qui ont déjà perdu un système de réparation (BRCA) meurent quand ce second système est bloqué ; les cellules saines survivent.",
-  "parp-inhibitor": "Des comprimés qui bloquent un système de secours de réparation de l'ADN, tuant les cellules cancéreuses qui ont déjà perdu leur système de réparation principal (BRCA).",
+
   "pathology-foundation-model": "De très grands modèles d'IA entraînés sur des millions de lames ou d'images médicales, qui peuvent être adaptés à presque n'importe quelle question diagnostique.",
 
 

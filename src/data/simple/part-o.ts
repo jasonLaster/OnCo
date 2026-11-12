@@ -424,7 +424,7 @@ export const simpleO: Record<string, string> = {
   "closed-system-transfer-devices": "Closed-system transfer devices are sealed connectors that let staff draw up and give chemotherapy without any drug vapour or droplet escaping.",
   "cryoablation-systems": "Cryoablation kills a tumour by freezing it through one or more needles while the ice ball is watched live on a scan, often used for small kidney tumours.",
   "electrochemotherapy-devices": "Electrochemotherapy devices give a tumour a few brief electric pulses minutes after a small dose of chemotherapy, opening the cells so the drug floods in.",
-  "drug-resistance-dynamics": "Mathematics from population genetics shows resistant cells almost always exist before treatment in large tumours, so combining drugs from the start beats using them in sequence.",
+  "drug-resistance-dynamics": "A mathematical model explores how resistant cells can change. Its predictions depend on growth, mutation, shared resistance and drug exposure assumptions.",
   "evolutionary-game-theory-cancer": "Evolutionary game theory treats cancer cells as players whose success depends on their neighbours, helping predict how a tumour's mix of cells shifts under treatment.",
   "gamma-probes-dose-calibrators": "Gamma probes are pen-sized radiation detectors that click when a surgeon nears a radioactive lymph node, and dose calibrators check every dose before injection.",
   "gamma-delta-t-cell-therapy": "Gamma-delta T cell therapy uses a rare T-cell type that recognises stressed cancer cells without tissue matching, making it a candidate for off-the-shelf products.",

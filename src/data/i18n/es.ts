@@ -165,7 +165,7 @@ export const tldr_es: Record<string, string> = {
   "kinase-inhibitors": "Pastillas que bloquean la enzima concreta de la que depende un cáncer. El imatinib en 2001 demostró que un cáncer podía apagarse por diseño.",
   "monoclonal-antibody": "Proteínas inmunitarias fabricadas en laboratorio que se fijan a una sola diana, bloqueándola o marcando la célula para su destrucción.",
   "bispecific-antibody": "Un anticuerpo con dos brazos distintos, capaz de bloquear dos dianas a la vez o de atraer una célula inmunitaria hacia una célula cancerosa.",
-  "parp-inhibitor": "Pastillas que bloquean un sistema de reparación de reserva del ADN, matando células cancerosas que ya perdieron su sistema principal (BRCA).",
+
   "cdk46-inhibitor": "Pastillas que detienen el motor de la división celular, añadidas a la terapia hormonal en el tipo más común de cáncer de mama.",
   "kras-inhibitors": "Fármacos contra el gen del cáncer más común, considerado imposible de atacar hasta el sotorasib en 2021.",
   "protac-degrader": "En vez de bloquear una proteína, estos fármacos la marcan para el sistema de eliminación de basura de la célula, eliminándola por completo.",
@@ -386,7 +386,7 @@ export const tldr_es: Record<string, string> = {
   dar: "Cuántas moléculas de carga viajan en cada anticuerpo, normalmente de 2 a 8.",
   "bystander-effect": "Cuando una carga liberada sale de la célula diana y mata a sus vecinas, incluidas las que carecen de la diana.",
   ild: "Inflamación pulmonar, un efecto secundario grave de algunos ADC (sobre todo Enhertu) y de la inmunoterapia.",
-  resistance: "Por qué los fármacos dejan de funcionar: el tumor nunca dependió de la diana o evoluciona para rodear el bloqueo.",
+
 
   recist: "El reglamento para medir si los tumores han crecido o disminuido en las exploraciones.",
   pfs: "Cuánto tiempo viven los pacientes sin que su cáncer crezca.",

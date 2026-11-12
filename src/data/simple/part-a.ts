@@ -168,7 +168,7 @@ export const simpleA: Record<string, string> = {
   "kinase-inhibitors": "Pills that block the specific enzyme a cancer depends on. The first, imatinib in 2001, showed a cancer could be switched off by design.",
   "monoclonal-antibody": "Lab-made immune proteins that lock onto one target, either blocking it or marking the cell for destruction.",
   "bispecific-antibody": "One antibody with two different grabbing arms, so it can block two targets at once or pull an immune cell onto a cancer cell.",
-  "parp-inhibitor": "Pills that block a backup DNA repair system, killing cancer cells that have already lost their main repair system.",
+  "parp-inhibitor": "These medicines disrupt DNA repair. Their usefulness depends on the tumour and treatment setting; stronger trapping in a cell test does not mean greater benefit for a person.",
   "cdk46-inhibitor": "Pills that stop the cell-division engine, given with hormone pills for the most common type of breast cancer.",
   "kras-inhibitors": "Drugs against the most commonly broken cancer gene, thought impossible to target until 2021.",
   "protac-degrader": "Instead of blocking a protein, these drugs tag it so the cell's own rubbish disposal destroys it.",

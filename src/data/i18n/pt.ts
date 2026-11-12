@@ -165,7 +165,7 @@ export const tldr_pt: Record<string, string> = {
   "kinase-inhibitors": "Comprimidos que bloqueiam a enzima específica de que um câncer depende. O imatinibe em 2001 provou que um câncer podia ser desligado por projeto.",
   "monoclonal-antibody": "Proteínas imunes feitas em laboratório que se prendem a um único alvo, bloqueando-o ou marcando a célula para destruição.",
   "bispecific-antibody": "Um anticorpo com dois braços diferentes, capaz de bloquear dois alvos de uma vez ou puxar uma célula imune até uma célula cancerosa.",
-  "parp-inhibitor": "Comprimidos que bloqueiam um sistema reserva de reparo do DNA, matando células cancerosas que já perderam o sistema principal (BRCA).",
+
   "cdk46-inhibitor": "Comprimidos que param o motor da divisão celular, adicionados à terapia hormonal no tipo mais comum de câncer de mama.",
   "kras-inhibitors": "Drogas contra o gene do câncer mais comum, considerado impossível de atingir até o sotorasibe em 2021.",
   "protac-degrader": "Em vez de bloquear uma proteína, essas drogas a marcam para o sistema de descarte da célula, removendo-a por completo.",
@@ -386,7 +386,7 @@ export const tldr_pt: Record<string, string> = {
   dar: "Quantas moléculas de carga viajam em cada anticorpo, tipicamente de 2 a 8.",
   "bystander-effect": "Quando uma carga liberada vaza da célula-alvo e mata as vizinhas, inclusive células sem o alvo.",
   ild: "Inflamação pulmonar, um efeito colateral grave de alguns ADCs (especialmente Enhertu) e da imunoterapia.",
-  resistance: "Por que as drogas contra o câncer param de funcionar: o tumor nunca dependeu do alvo ou evolui contornando o bloqueio.",
+
 
   recist: "O livro de regras para medir se os tumores cresceram ou encolheram nos exames.",
   pfs: "Quanto tempo os pacientes vivem sem que seu câncer cresça.",

@@ -26,7 +26,7 @@ export const simpleB: Record<string, string> = {
   "bystander-effect": "When the released poison leaks out of the target cell and kills neighbouring cancer cells too.",
   ild: "Inflammation of the lungs, a serious side effect of some antibody-drugs and immune drugs.",
   "efflux-pump": "An efflux pump moves particular substances out of a cell. Some pumps can lower exposure to cancer drugs or the payload released by an antibody-drug conjugate.",
-  resistance: "Why cancer drugs stop working: the tumour never depended on the target, or it evolves a way around the block.",
+  resistance: "A cancer can respond less to a medicine from the start or later. Testing is needed to understand why; a later finding alone does not prove the cause.",
   orr: "The share of people who meet the study rules for complete or partial tumour response.",
   recist: "The rulebook for measuring whether tumours have grown or shrunk on scans.",
   pfs: "How long patients live without their cancer growing.",

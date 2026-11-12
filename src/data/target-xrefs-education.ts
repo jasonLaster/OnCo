@@ -49,5 +49,21 @@ export const targetXrefsEducation: Record<string, TargetXref> = {
         "uniprot": "Q6P179"
       }
     ]
+  },
+  // MUC1: HGNC and reviewed human UniProt checked 12 November 2026; no ChEMBL lookup.
+  "muc1": {
+    "genes": [
+      {
+        "symbol": "MUC1",
+        "name": "mucin 1, cell surface associated",
+        "hgnc": "HGNC:7508",
+        "ensembl": "ENSG00000185499",
+        "entrez": "4582",
+        "uniprot": "P15941",
+        "locus": "1q22",
+        "cosmic": "MUC1",
+        "omim": "158340"
+      }
+    ]
   }
 };

@@ -161,12 +161,16 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "tldr": "A living cell therapy can change its number, location and state after administration. The starting dose, a sampled cell count and useful function are different measurements.",
     "summary": "After a cell infusion, measured abundance depends on division, survival and redistribution. In vivo engineering may also continue to generate newly engineered cells. A blood sample describes one compartment and time; it cannot count all cells in the body or establish entry into a tumor. Detectable receptor-encoding sequences, viable receptor-positive cells, persistent markers and functional activity should be reported separately.",
     "notes": [
-      "FDA CAR T-cell guidance treats exposure/kinetics, pharmacodynamic response, immunogenicity, identity, viability and potency as distinct assessments. Blood concentration-time measurements and optional disease-tissue sampling answer different distribution questions. A sequence assay is not automatically a count of viable cells expressing a functional surface receptor.",
-      "Keep the measurement method, time, compartment, units and denominator attached. A receptor-positive percentage can fall while absolute receptor-positive cells per microliter remain unchanged if the sampled denominator increases. Neither measure alone establishes an unchanged total-body cell population, tumor entry or antitumor benefit.",
-      "An administered cell dose is an input. The dose of a vector or particle used for in vivo engineering does not directly specify the later number of engineered cells. Autologous means the recipient’s own cells; allogeneic means cells from another person. Engineering outside versus inside the body is a separate axis; a prepared delivery product can engineer the recipient's own cells.",
-      "Expansion and persistence can prolong useful activity or harmful recognition. Stopping further administration does not instantly remove living cells or reverse an injury already triggered. A safety switch addresses a specified control mechanism; cell elimination, receptor shutoff and treatment of downstream inflammation are different interventions.",
-      "In the Liu cord-blood CAR-NK study, low-level detection at least 12 months after treatment belonged to a construct with IL-15 and an inducible caspase-9 switch. It does not establish the behavior of every NK-cell source or equate marker detection with continuing useful function."
-    ],
+  "FDA CAR T-cell guidance treats exposure/kinetics, pharmacodynamic response, immunogenicity, identity, viability and potency as distinct assessments. Blood concentration-time measurements and optional disease-tissue sampling answer different distribution questions. A sequence assay is not automatically a count of viable cells expressing a functional surface receptor.",
+  "Keep the measurement method, time, compartment, units and denominator attached. A receptor-positive percentage can fall while absolute receptor-positive cells per microliter remain unchanged if the sampled denominator increases. Neither measure alone establishes an unchanged total-body cell population, tumor entry or antitumor benefit.",
+  "An administered cell dose is an input. The dose of a vector or particle used for in vivo engineering does not directly specify the later number of engineered cells. Autologous means the recipient’s own cells; allogeneic means cells from another person. Engineering outside versus inside the body is a separate axis; a prepared delivery product can engineer the recipient's own cells.",
+  "Expansion and persistence can prolong useful activity or harmful recognition. Stopping further administration does not instantly remove living cells or reverse an injury already triggered. A safety switch addresses a specified control mechanism; cell elimination, receptor shutoff and treatment of downstream inflammation are different interventions.",
+  "In the Liu cord-blood CAR-NK study, low-level detection at least 12 months after treatment belonged to a construct with IL-15 and an inducible caspase-9 switch. It does not establish the behavior of every NK-cell source or equate marker detection with continuing useful function.",
+  "In a fictional pair of matched blood samples, 20 per cent of 100 viable T cells per microlitre and 10 per cent of 200 both give 20 receptor-positive viable T cells per microlitre. The percentage fell because its denominator doubled; the concentration did not. This conclusion requires comparable collection, volume and viable-cell gates. It says nothing about the total number of cells in the body, tumour entry or continued target-cell killing. Genetic copies, surface receptor, viable cells and useful function remain separate measurements.",
+  "Cells respond biologically to signals, without intention; more cells do not by themselves establish better or safer treatment. Consider two fictional ready-made products: a carrier that gives receptor instructions to the recipient’s own T cells, and a prepared batch of donor-derived engineered cells. The first can generate autologous cells in vivo; the second supplies allogeneic cells engineered ex vivo. State four things separately: the starting cell family, whose cells they are, where engineering happens and whether cells or an instruction carrier are administered. Neither card establishes available supply, the final engineered-cell population or treatment benefit. NK and NKT name different cell families; an added receptor does not erase the recipient cell’s other inputs.",
+  "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+  "Compare time courses rather than labels when interpreting reversibility. Antibodies also take time to clear after dosing stops. In an engineered-cell product, carrier exposure, instructions, receptor protein, living cells and inflammation can have different durations. Stopping the next administration, reducing one signal, removing the cells and reversing an established injury are separate claims."
+],
     "related": [
       "car-t",
       "car-nk-macrophage",
@@ -178,22 +182,34 @@ export const educationTherapeuticEvidence: TermInput[] = [
       "cell-therapy"
     ],
     "links": [
-      {
+  {
         "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
         "url": "https://www.fda.gov/media/156896/download"
       },
-      {
+  {
         "label": "NCI: T-cell transfer therapy and harms",
         "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
       },
-      {
+  {
         "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
         "url": "https://doi.org/10.1056/NEJMoa1910607"
-      }
-    ],
+      },
+  {
+  "label": "Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies. (2025)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39466024/"
+},
+  {
+  "label": "NCI: Tumor Biology and Microenvironment Research",
+  "url": "https://www.cancer.gov/about-nci/organization/dcb/research-portfolio/tbmr"
+},
+  {
+  "label": "FDA long-term follow-up after human gene therapy (January 2020)",
+  "url": "https://www.fda.gov/media/113768/download"
+}
+],
     "category": "Treatment jargon",
     "kind": "term",
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
   {
     "id": "endogenous-promoter-payload-control",
@@ -351,29 +367,46 @@ export const educationTherapeuticEvidence: TermInput[] = [
   ],
   "tldr": "An engineered cytokine receptor connects a specified input to signalling inside a cell. The added signal and the behaviour of the complete cell product need separate measurements.",
   "summary": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
-  "notes": ["Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.","In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.","A 2026 macrophage preprint studied ligand-independent receptors with varied signalling motifs in primary human macrophages and preclinical models. Marker expression, phagocytosis and mouse tumour observations were different readouts. The report remains a preprint and does not establish human treatment benefit.","Enoda uses MIMIC as the name of its synthetic cytokine-receptor assets. The platform name does not define all engineered cytokine receptors or establish clinical performance. Its website describes platform aims and sponsor claims; it is not a comparative clinical safety or efficacy report.","For a drug-gated construct, withdrawing the input can reduce a selected signal without eliminating cells already engineered. Receptor signalling, viable-cell counts, tissue location, target-cell killing and later disease control need distinct measurements. A growth or activity switch is different from a cell-elimination mechanism.","A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence."],
+  "notes": [
+  "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+  "In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.",
+  "A 2026 macrophage preprint studied ligand-independent receptors with varied signalling motifs in primary human macrophages and preclinical models. Marker expression, phagocytosis and mouse tumour observations were different readouts. The report remains a preprint and does not establish human treatment benefit.",
+  "Enoda uses MIMIC as the name of its synthetic cytokine-receptor assets. The platform name does not define all engineered cytokine receptors or establish clinical performance. Its website describes platform aims and sponsor claims; it is not a comparative clinical safety or efficacy report.",
+  "For a drug-gated construct, withdrawing the input can reduce a selected signal without eliminating cells already engineered. Receptor signalling, viable-cell counts, tissue location, target-cell killing and later disease control need distinct measurements. A growth or activity switch is different from a cell-elimination mechanism.",
+  "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+  "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+  "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit."
+],
   "links": [
-    {
+  {
       "label": "Engelowski 2018: artificial ligands and synthetic receptors in experimental systems",
       "url": "https://pubmed.ncbi.nlm.nih.gov/29789554/"
     },
-    {
+  {
       "label": "Wilkie 2010: IL-4-driven expansion and separate CAR targeting in human-cell experiments",
       "url": "https://pubmed.ncbi.nlm.nih.gov/20562098/"
     },
-    {
+  {
       "label": "Lunger 2026 macrophage receptor preprint; not a clinical report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42182394/"
     },
-    {
+  {
       "label": "Enoda: MIMIC platform description; sponsor naming and claims",
       "url": "https://www.enoda.bio/"
     },
-    {
+  {
       "label": "Wu et al.: small-molecule ON-switch CAR experiments (2015)",
       "url": "https://pubmed.ncbi.nlm.nih.gov/26405231/"
-    }
-  ],
+    },
+  {
+  "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+  "url": "https://www.fda.gov/media/156896/download"
+},
+  {
+  "label": "Tumor-infiltrating lymphocytes genetically engineered with an inducible gene encoding interleukin-12 for the immunotherapy of metastatic melanoma. (2015)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+}
+],
   "related": [
     "armored-car",
     "cytokine",
@@ -382,7 +415,7 @@ export const educationTherapeuticEvidence: TermInput[] = [
     "in-vivo-car-t"
   ],
   "kind": "term",
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-12",
   "category": "Immunology"
 },
 

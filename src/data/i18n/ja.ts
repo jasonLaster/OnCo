@@ -3417,7 +3417,7 @@ export const tldr_ja: Record<string, string> = {
   vara: "Varaはドイツの全国乳がん検診プログラムで検診マンモグラフィを読影する人工知能ソフトウェアを開発している。正常な画像を選別し疑わしい画像を強調することで、放射線科医がより少ない労力でより多くのがんを発見できるようにする。",
   "variant-knowledgebases": "各変異が治療に対して何を意味するかを示す整理されたデータベースと、それを用いて治療を決定する専門家会議のこと。",
   "vcu-massey": "RichmondにあるNCI総合がんセンターで、Robert Winnが率い、がんにおける健康格差に関する地域参加型研究で知られる。",
-  "vein-to-vein-time": "CAR-Tにおいて、患者の細胞を採取してから完成品を輸注するまでの日数で、通常3週間から6週間である。疾患が急速に進行する場合は一日一日が重要であり、製造能力(スロット)が治療できる患者数を制限する。",
+  "vein-to-vein-time": "CAR-Tにおいて、患者の細胞を採取してから完成品を輸注するまでの日数。",
   "venetoclax-plus-hma": "Azacitidineは白血病細胞を死へと導く準備をさせ、venetoclaxはBCL-2による防御を取り除く。両者の併用により、高齢者AMLの寛解率はほぼ2倍になった。",
   "venetoclax-plus-obinutuzumab": "Venetoclaxとobinutuzumabの併用、すなわち1年間の経口薬と抗体は、初の期間固定かつ化学療法を用いないCLLレジメンであり、6年時点で患者の半数が寛解を維持していた。",
   "ventana-pd-l1-sp263": "広く使われているPD-L1染色で、durvalumabとともに承認され、その後、肺がんにおける術後補助atezolizumabの検査としても承認された。",

@@ -679,9 +679,24 @@ const pathways: PathwayInput[] = [
     interventions: ["JAK inhibitors in myeloproliferative neoplasms and GVHD", "STAT3 degraders/antisense (early trials)", "Anti-IL-6 (tocilizumab) for CRS and under study for cachexia", "JAK-loss tumours: MHC-independent therapies (T-cell engagers, NK cells)"],
     pathways: ["antigen-presentation-immunoediting", "inflammation-nfkb", "cachexia-biology", "pd1-checkpoint"], targets: ["pdl1", "stat5", "mpl", "jak1"], terms: ["crs"],
     institutions: ["mskcc", "mayo-clinic"],
-    notes: ["Leading programmes: Levine (MSK) on JAK2 and MPN; Ribas (UCLA) on JAK mutations and PD-1 resistance; Darnell legacy (Rockefeller)."],
-    links: [{ label: "Hu et al., The JAK/STAT signaling pathway: from bench to clinic (Signal Transduction and Targeted Therapy 2021)", url: "https://doi.org/10.1038/s41392-021-00791-1" }],
+    notes: [
+  "Leading programmes: Levine (MSK) on JAK2 and MPN; Ribas (UCLA) on JAK mutations and PD-1 resistance; Darnell legacy (Rockefeller).",
+  "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations."
+],
+    links: [
+  { label: "Hu et al., The JAK/STAT signaling pathway: from bench to clinic (Signal Transduction and Targeted Therapy 2021)", url: "https://doi.org/10.1038/s41392-021-00791-1" },
+  {
+  "label": "Synthetic cytokine receptors transmit biological signals using artificial ligands. (2018)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/29789554/"
+},
+  {
+  "label": "Inhibition of TGF-β-receptor signaling augments the antitumor function of ROR1-specific CAR T-cells against triple-negative breast cancer. (2020)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32303620/"
+}
+],
     tags: ["mechanism"],
+
+    asOf: "2026-11-12",
   }),
   p({
     id: "tgf-beta", targets: ["acvr1"], name: "TGF-β signalling", wikipedia: W("TGF_beta_signaling_pathway"),

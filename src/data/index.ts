@@ -42,6 +42,7 @@ import { educationRepairResistance202611Terms } from "./education-repair-resista
 import { educationImmunotherapy202611Terms } from "./education-immunotherapy-2026-11";
 import { educationSpatialMeasurement202611Terms } from "./education-spatial-measurement-2026-11";
 import { educationTargetedSmallMolecules202611Terms } from "./education-targeted-small-molecules-2026-11";
+import { educationEngineeredCellTherapy202611Targets } from "./education-engineered-cell-therapy-2026-11";
 import { trials } from "./trials";
 import { pairings } from "./pairings";
 import { roadmaps } from "./roadmaps";
@@ -390,6 +391,7 @@ const RAW_INPUTS: EntityInput[] = [
   ...educationImmunotherapy202611Terms,
   ...educationSpatialMeasurement202611Terms,
   ...educationTargetedSmallMolecules202611Terms,
+  ...educationEngineeredCellTherapy202611Targets,
   ...trials,
   ...pairings,
   ...roadmaps,

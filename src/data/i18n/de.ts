@@ -3417,7 +3417,7 @@ export const tldr_de: Record<string, string> = {
   vara: "Vara stellt Software mit künstlicher Intelligenz her, die im deutschen nationalen Brustkrebs-Screeningprogramm Screening-Mammografien auswertet, normale Aufnahmen markiert und verdächtige hervorhebt, sodass Radiologen mit weniger Aufwand mehr Krebsfälle finden.",
   "variant-knowledgebases": "Kuratierte Datenbanken, die angeben, was jede Mutation für die Behandlung bedeutet, und die Expertenkonferenzen, die sie zur Therapieentscheidung nutzen.",
   "vcu-massey": "Richmonds NCI Comprehensive Cancer Center, geleitet von Robert Winn und bekannt für gemeinschaftsbasierte Forschung zur gesundheitlichen Chancengleichheit bei Krebs.",
-  "vein-to-vein-time": "Bei CAR-T die Zahl der Tage von der Entnahme der Patientenzellen bis zur Infusion des fertigen Produkts, typischerweise drei bis sechs Wochen. Jeder Tag zählt, wenn die Erkrankung aggressiv ist, und die Produktionskapazität (Slots) begrenzt, wie viele Patienten behandelt werden können.",
+  "vein-to-vein-time": "Bei CAR-T die Zahl der Tage von der Entnahme der Patientenzellen bis zur Infusion des fertigen Produkts.",
   "venetoclax-plus-hma": "Azacitidin macht Leukämiezellen für den Zelltod empfänglich; Venetoclax entfernt den BCL-2-Schutzschild. Zusammen verdoppelten sie die Remissionen bei älteren AML-Patienten ungefähr.",
   "venetoclax-plus-obinutuzumab": "Venetoclax plus Obinutuzumab, ein Jahr Tablette plus Antikörper, war das erste zeitlich begrenzte, chemotherapiefreie CLL-Regime, bei dem nach sechs Jahren noch die Hälfte der Patienten in Remission war.",
   "ventana-pd-l1-sp263": "Eine weit verbreitete PD-L1-Färbung, zugelassen mit Durvalumab und später als Test für adjuvantes Atezolizumab beim Lungenkrebs.",

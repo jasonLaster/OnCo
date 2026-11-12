@@ -3431,7 +3431,7 @@ export const tldr_pt: Record<string, string> = {
   vara: "A Vara produz software de inteligência artificial que lê mamografias de rastreio no programa nacional alemão de rastreio do câncer de mama, sinalizando exames normais e destacando os suspeitos para que os radiologistas encontrem mais cânceres com menos trabalho.",
   "variant-knowledgebases": "Bases de dados curadas que dizem o que cada mutação significa para o tratamento, e as reuniões de especialistas que as utilizam para decidir a terapia.",
   "vcu-massey": "O centro abrangente de câncer do NCI em Richmond, liderado por Robert Winn e conhecido pela pesquisa com envolvimento comunitário sobre equidade em saúde no câncer.",
-  "vein-to-vein-time": "Na CAR-T, o número de dias entre a coleta das células do paciente e a infusão do produto acabado, normalmente de três a seis semanas. Cada dia conta quando a doença é agressiva, e a capacidade de fabricação (vagas ou slots) limita quantos pacientes podem ser tratados.",
+  "vein-to-vein-time": "Na CAR-T, o número de dias entre a coleta das células do paciente e a infusão do produto acabado.",
   "venetoclax-plus-hma": "A azacitidina prepara as células leucêmicas para a morte; o venetoclax remove o escudo BCL-2. Juntos, praticamente duplicaram as remissões na LMA em pacientes mais velhos.",
   "venetoclax-plus-obinutuzumab": "Venetoclax mais obinutuzumab, um ano de um comprimido mais um anticorpo, foi o primeiro regime de duração fixa e sem quimioterapia para a LLC, com metade dos pacientes ainda em remissão aos seis anos.",
   "ventana-pd-l1-sp263": "Uma coloração de PD-L1 amplamente utilizada, aprovada com o durvalumab e mais tarde como o teste para atezolizumab adjuvante no câncer de pulmão.",

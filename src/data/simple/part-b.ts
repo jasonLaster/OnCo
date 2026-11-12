@@ -551,4 +551,6 @@ export const simpleB: Record<string, string> = {
 "tumour-informed-assay": "One method first selects features from a sampled tumour to track in blood. Another starts with predefined features. Their performance depends on the actual tests, samples and clinical question."
 ,
   "cdk-inhibitors": "These medicines block selected enzymes used in cell division or gene reading. Tests must distinguish a temporary pause, cell death, marrow protection and benefit to patients."
+,
+  "muc1": "MUC1 is a protein on cells that line organs. Different fragments can bind different antibodies; finding the protein alone does not choose a treatment."
 };

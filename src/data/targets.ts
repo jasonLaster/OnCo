@@ -6,8 +6,12 @@ const W = (s: string) => `https://en.wikipedia.org/wiki/${s}`;
 export const targets: TargetInput[] = [
   // ---- Surface antigens (ADC / bispecific / CAR / tracer targets) ----
   {
-    notes:["The Human Protein Atlas reports substantial membrane and cytoplasmic protein expression in normal respiratory and squamous epithelial cells. A summary of selected normal-tissue staining does not establish tumour-exclusive expression or predict a person’s toxicity. RNA abundance, protein localisation and drug exposure are different observations; retain the assay and sampled cell types.","Wild-type TROP2 overexpression and knockdown experiments, and later AKT-pathway studies, support biological activity in their studied models. The 2013 growth paper did not establish TROP2-induced oncogenic transformation or a requirement for tumour-associated TROP2 mutations. Model-level growth or drug-sensitivity findings do not validate TROP2 as a clinical AKT-inhibitor selection test or establish a dependency in every tumour."],
-    id: "trop2", drugs: ["ak146d1", "bio-106", "datopotamab-deruxtecan", "eb-nk-301", "lcb84", "sacituzumab-govitecan", "sacituzumab-tirumotecan"], trials: ["nct04617522", "nct05922930", "nct06311214", "nct06454890", "nct06902389", "nct06929663", "nct07067567", "nct07101432", "nct07299747", "nct07377526", "nct07509008", "nct07553390", "nct07631013"], kind: "target", name: "TROP2", symbol: "TACSTD2", hgnc: "HGNC:11530", ensembl: "ENSG00000184292", uniprot: "P09758", entrez: "4070", targetClass: "surface-antigen", asOf: "2026-11-09",
+    notes:[
+  "The Human Protein Atlas reports substantial membrane and cytoplasmic protein expression in normal respiratory and squamous epithelial cells. A summary of selected normal-tissue staining does not establish tumour-exclusive expression or predict a person’s toxicity. RNA abundance, protein localisation and drug exposure are different observations; retain the assay and sampled cell types.",
+  "Wild-type TROP2 overexpression and knockdown experiments, and later AKT-pathway studies, support biological activity in their studied models. The 2013 growth paper did not establish TROP2-induced oncogenic transformation or a requirement for tumour-associated TROP2 mutations. Model-level growth or drug-sensitivity findings do not validate TROP2 as a clinical AKT-inhibitor selection test or establish a dependency in every tumour.",
+  "A cell-therapy recognition claim needs the actual binder and accessible epitope, including tumour cells that lack it and relevant healthy cells. Sun’s TROP2 CAR used a sacituzumab-derived binding fragment. Human-cell and TNBC xenograft experiments tested antitumour activity; a separate murine-cell construct in mice expressing human TROP2 tested toxicity. The ungated construct caused lung injury and inflammation in that model. This does not turn an RNA measurement, an antibody stain or an antibody-drug conjugate result into a demonstration of safe human CAR-T recognition. Expression can vary within and between lesions and after treatment. Bulk RNA, soluble protein and an antibody stain need not report the feature accessible to the finished receptor."
+],
+    id: "trop2", drugs: ["ak146d1", "bio-106", "datopotamab-deruxtecan", "eb-nk-301", "lcb84", "sacituzumab-govitecan", "sacituzumab-tirumotecan"], trials: ["nct04617522", "nct05922930", "nct06311214", "nct06454890", "nct06902389", "nct06929663", "nct07067567", "nct07101432", "nct07299747", "nct07377526", "nct07509008", "nct07553390", "nct07631013"], kind: "target", name: "TROP2", symbol: "TACSTD2", hgnc: "HGNC:11530", ensembl: "ENSG00000184292", uniprot: "P09758", entrez: "4070", targetClass: "surface-antigen", asOf: "2026-11-12",
     tldr: "TROP2 is a surface protein found in normal epithelial cells and many cancers. It is used to deliver antibody-drug conjugates and has biological signalling roles; those observations do not establish an individual tumour’s response.",
     summary: "TROP2, encoded by TACSTD2, is a transmembrane protein used as a delivery target by sacituzumab govitecan and datopotamab deruxtecan. Experimental studies have also linked wild-type TROP2 expression and signalling to growth in defined cell and animal models. Its delivery role, biological function, possible genomic alterations and clinical treatment-selection rules are separate questions. The current U.S. breast-cancer indications of these two ADCs do not require a TROP2 expression test, while other disease, prior-treatment and regimen-specific criteria still apply.",
     biology: "TROP2 is used as a surface target for antibody-drug conjugate delivery and also has biological signalling functions in studied experimental systems. Wild-type overexpression, knockdown and AKT-pathway experiments support growth-related roles in their model contexts. Delivery, biological function and clinical treatment selection remain separate questions: expression does not measure every delivery step or establish a universal tumour dependency.",
@@ -20,7 +24,23 @@ export const targets: TargetInput[] = [
       { cancerId: "nsclc", pct: "60-70", measure: "IHC, moderate-high", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "Adenocarcinoma and squamous" },
       { cancerId: "urothelial", pct: "80-90", measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/" },
       { cancerId: "pancreatic", pct: 50, measure: "IHC, any expression", source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059868/", note: "Approximate; heterogeneous" },
-    ], links: [{"label":"UniProt P09758: TACSTD2 (TROP2)","url":"https://www.uniprot.org/uniprotkb/P09758/entry"},{"label":"Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)","url":"https://doi.org/10.1016/j.annonc.2021.06.002"},{"label":"TRODELVY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"},{"label":"DATROWAY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"},{"label":"Human Protein Atlas: TACSTD2 normal-tissue protein and RNA context","url":"https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"},{"label":"Wild-type TROP2 and growth in experimental systems (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/22349828/"},{"label":"TROP2/AKT pathway experiments and preclinical drug sensitivity (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27022065/"}],
+    ], links: [
+  {"label":"UniProt P09758: TACSTD2 (TROP2)","url":"https://www.uniprot.org/uniprotkb/P09758/entry"},
+  {"label":"Bardia et al., ASCENT biomarker analysis (Ann Oncol 2021)","url":"https://doi.org/10.1016/j.annonc.2021.06.002"},
+  {"label":"TRODELVY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"},
+  {"label":"DATROWAY prescribing information (DailyMed)","url":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"},
+  {"label":"Human Protein Atlas: TACSTD2 normal-tissue protein and RNA context","url":"https://www.proteinatlas.org/ENSG00000184292-TACSTD2/tissue"},
+  {"label":"Wild-type TROP2 and growth in experimental systems (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/22349828/"},
+  {"label":"TROP2/AKT pathway experiments and preclinical drug sensitivity (2016)","url":"https://pubmed.ncbi.nlm.nih.gov/27022065/"},
+  {
+  "label": "Preclinical evaluation of antitumor activity and toxicity of TROP2-specific CAR-T cells for treatment of triple-negative breast cancer. (2025)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40903191/"
+},
+  {
+  "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+  "url": "https://www.fda.gov/media/156896/download"
+}
+],
   },
   {
     id: "her2", trials: ["nct06043817", "nct07589517", "nct05532696", "nct07510802", "nct05523947", "nct06369831", "nct07467863", "nct06616766", "nct06439771", "nct05771584", "nct07641023", "nct07462650", "nct07192432"], technologies: ["her2-tyrosine-kinase-inhibitors"], kind: "target", keyPapers: ["paper-slamon-her2-breast-ovarian-science-1989", "paper-yarden-sliwkowski-erbb-network-nrmcb-2001"], name: "HER2", symbol: "ERBB2", hgnc: "HGNC:3430", ensembl: "ENSG00000141736", uniprot: "P04626", entrez: "2064", targetClass: "surface-antigen", "asOf": "2026-11-11", wikipedia: W("HER2/neu"),
@@ -115,6 +135,14 @@ export const targets: TargetInput[] = [
   {
   "label": "FDA: sunvozertinib accelerated approval, July 2025",
   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sunvozertinib-metastatic-non-small-cell-lung-cancer-egfr-exon-20"
+},
+  {
+  "label": "EGFR as a potent CAR T target in triple negative breast cancer brain metastases. (2023)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/36318382/"
+},
+  {
+  "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+  "url": "https://www.fda.gov/media/156896/download"
 }
 ], companies: ["bicara-therapeutics", "imagene-ai", "inivata", "lucence", "oric-pharmaceuticals"],
 
@@ -125,7 +153,8 @@ export const targets: TargetInput[] = [
   "TBCRC 001 studied cetuximab with carboplatin in metastatic triple-negative breast cancer. Among 16 patients with paired biopsies, the expression-based EGFR pathway analysis showed activation in 13 and inhibition after treatment in five. The regimen given together from the start produced a 17% response rate; 31% had a response or prolonged disease stabilisation. The latter outcome is broader than objective response. Receptor abundance, measured pathway suppression and clinical disease control cannot be substituted for each other.",
   "BALI-1 compared cisplatin with or without cetuximab in metastatic triple-negative breast cancer. Its primary overall-response endpoint was not met: response was 20% versus 10%, with P = 0.11. Progression-free survival was a secondary endpoint, and the reported overall-survival difference was not statistically significant. These results do not establish a general EGFR-treatment rule or postoperative benefit. The later erratum added a funding acknowledgement rather than changing these efficacy results.",
   "An EGFR report identifies the specimen, assay, variant if any and sampling time. Immunostaining measures protein amount and location; sequencing measures a DNA alteration; receptor or downstream phosphorylation measures a particular signalling state. A staining score, variant allele fraction and signal normalised to a control have different denominators and units. In model tests, state concentration and controls and distinguish engagement from growth dependence. An unspecified EGFR-high cutoff cannot select every EGFR-directed medicine.",
-  "In a fictional culture with strong EGFR staining, reduced receptor phosphorylation after treatment and continued growth, the stain and phosphoprotein result can both be correct. Growth may have other support, and attribution to the intended target still needs controlled perturbation and comparable exposure. This pattern does not establish sensitivity or patient benefit. Explain separately how much receptor was observed, what the exact alteration does and which product-specific mechanism and clinical outcome have been demonstrated."
+  "In a fictional culture with strong EGFR staining, reduced receptor phosphorylation after treatment and continued growth, the stain and phosphoprotein result can both be correct. Growth may have other support, and attribution to the intended target still needs controlled perturbation and comparable exposure. This pattern does not establish sensitivity or patient benefit. Explain separately how much receptor was observed, what the exact alteration does and which product-specific mechanism and clinical outcome have been demonstrated.",
+  "A total-EGFR measurement does not specify recognition by an EGFR806 CAR. Subham’s study used an mAb806-derived binding region in a particular construct and examined TNBC brain-metastasis tissue, cell lines and mice. Its antibody-derived spacer was modified to reduce Fc-receptor recognition. Statements about tumour-restricted binding or normal-brain expression in the introduction draw on earlier work; they are not a substitute for testing the proposed finished receptor against relevant healthy cells. This preclinical result is not a clinical breast-cancer benefit or safety estimate."
 ],
     related: [
   "tki-term",
@@ -133,7 +162,7 @@ export const targets: TargetInput[] = [
 ],
   },
   {
-    id: "nectin4", trials: ["nct07299747"], drugs: ["crb-701"], kind: "target", name: "Nectin-4", symbol: "NECTIN4", hgnc: "HGNC:19688", ensembl: "ENSG00000143217", uniprot: "Q96NY8", entrez: "81607", targetClass: "surface-antigen", asOf, wikipedia: W("Nectin-4"),
+    id: "nectin4", trials: ["nct07299747"], drugs: ["crb-701"], kind: "target", name: "Nectin-4", symbol: "NECTIN4", hgnc: "HGNC:19688", ensembl: "ENSG00000143217", uniprot: "Q96NY8", entrez: "81607", targetClass: "surface-antigen", asOf: "2026-11-12", wikipedia: W("Nectin-4"),
     tldr: "Nectin-4 is an adhesion protein plentiful on bladder cancer cells, used as the docking site for the ADC enfortumab vedotin.",
     summary: "Nectin-4 is expressed at high levels in urothelial carcinoma and also in breast, lung, and pancreatic cancers. Enfortumab vedotin plus pembrolizumab is first-line standard in advanced urothelial cancer (EV-302). Next-generation Nectin-4 ADCs with topoisomerase-I payloads (MK-3120) and Nectin-4×TROP2 bispecific ADCs (AK146D1, AVZO-103) are in development.",
     biology: "Nectin-4 is a cell adhesion molecule and also a receptor for measles virus. Skin expression explains the rash seen with enfortumab.",
@@ -143,10 +172,24 @@ export const targets: TargetInput[] = [
     prevalence: [
       { cancerId: "urothelial", pct: "80-90", measure: "IHC, moderate-strong", source: "https://en.wikipedia.org/wiki/Nectin-4" },
       { cancerId: "tnbc", pct: "50-60", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/Nectin-4" },
-    ], links: [{ label: "Wikipedia", url: W("Nectin-4") }], companies: ["emergence-therapeutics", "marengo-therapeutics"],
+    ], links: [
+  { label: "Wikipedia", url: W("Nectin-4") },
+  {
+  "label": "Development of Nectin4/FAP-targeted CAR-T cells secreting IL-7, CCL19, and IL-12 for malignant solid tumors. (2022)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/36479116/"
+},
+  {
+  "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+  "url": "https://www.fda.gov/media/156896/download"
+}
+], companies: ["emergence-therapeutics", "marengo-therapeutics"],
+
+    notes: [
+  "Li studied specified Nectin-4 and FAP constructs rather than every receptor against these antigens. The Nectin4-7.19 cells also encoded IL-7 and CCL19; a separate FAP-12 product encoded IL-12. Tissue surveys, colorectal-tumour mouse experiments and lung-metastasis models had different purposes. Recognition of human and mouse FAP was tested separately. No observed pathology in sampled mouse organs does not establish that a human Nectin-4 binder recognises the relevant healthy antigen in every species or proves human safety. Retain the actual binder, species, added functions and comparator."
+],
   },
   {
-    id: "b7h3", drugs: ["yl201", "qlc5508", "bnt324", "bcb-276"], kind: "target", name: "B7-H3", symbol: "CD276", hgnc: "HGNC:19137", ensembl: "ENSG00000103855", uniprot: "Q5ZPR3", entrez: "80381", targetClass: "surface-antigen", asOf, wikipedia: W("CD276"),
+    id: "b7h3", drugs: ["yl201", "qlc5508", "bnt324", "bcb-276"], kind: "target", name: "B7-H3", symbol: "CD276", hgnc: "HGNC:19137", ensembl: "ENSG00000103855", uniprot: "Q5ZPR3", entrez: "80381", targetClass: "surface-antigen", asOf: "2026-11-12", wikipedia: W("CD276"),
     tldr: "B7-H3 is an immune checkpoint-like surface protein found on 60 to 70% of small-cell lung cancers and 80 to 90% of castration-resistant prostate cancers, with little on normal tissue. It is used as an ADC address, chiefly by ifinatamab deruxtecan, now in phase 3 in small-cell lung cancer; whether blocking its immune-dampening role adds anything beyond payload delivery is unresolved.",
     summary: "B7-H3 (CD276) is an immune checkpoint-like molecule broadly overexpressed in solid tumours with limited normal expression; its function is debated, inhibiting T-cell activation and promoting tumour cell migration. Expression is more homogeneous than many ADC targets, found in 60-70% of small-cell lung cancer and 80-90% of castration-resistant prostate cancer by IHC, as well as head and neck and paediatric solid tumours. Ifinatamab deruxtecan (I-DXd) has shown high response rates in small-cell lung cancer and is in phase 3. B7-H3 is also pursued with radioligands and CAR-T. Whether its immune-dampening role means antibodies against it add an immunological benefit beyond payload delivery is unresolved. The simple version is a widely present tumour surface protein now used mainly as an address for ADCs.",
     biology: "Function debated: inhibits T-cell activation, promotes tumour cell migration. Expression is more homogeneous than many ADC targets.",
@@ -156,7 +199,21 @@ export const targets: TargetInput[] = [
     prevalence: [
       { cancerId: "sclc", pct: "60-70", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/CD276" },
       { cancerId: "prostate", pct: "80-90", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/CD276", note: "Castration-resistant disease" },
-    ], companies: ["dualitybio", "myricx-bio"], links: [{ label: "Wikipedia", url: W("CD276") }],
+    ], companies: ["dualitybio", "myricx-bio"], links: [
+  { label: "Wikipedia", url: W("CD276") },
+  {
+  "label": "Preclinical evaluation of antitumor activity and toxicity of TROP2-specific CAR-T cells for treatment of triple-negative breast cancer. (2025)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40903191/"
+},
+  {
+  "label": "Precision Tumor Recognition by T Cells With Combinatorial Antigen-Sensing Circuits. (2016)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/26830879/"
+}
+],
+
+    notes: [
+  "In Sun’s preclinical design, a B7-H3-binding synNotch receptor induced expression of a TROP2 CAR. The added input changed the recognition rule; it did not simply add a second independently activating CAR. The study compared human tumour models and a separate murine-cell system in human-TROP2 mice, where the gated construct avoided the measured inflammatory injury seen with the ungated construct. Induction, residual receptor expression after priming, tissue movement and healthy recognition still need testing for the actual circuit. Two positive stains do not establish those dynamics or human safety."
+],
   },
   {
     id: "cldn18-2", drugs: ["lm-302", "asp2138", "m108", "ibi343", "xnw27011", "azd4360", "tac01-cldn18-2", "lcb02a", "rc118-adc", "bdc-4182", "lb4330", "spevatamig", "azd5863"], kind: "target", name: "Claudin 18.2", symbol: "CLDN18", hgnc: "HGNC:2039", ensembl: "ENSG00000066405", uniprot: "P56856", entrez: "51208", targetClass: "surface-antigen", asOf, wikipedia: W("CLDN18"),
@@ -240,7 +297,7 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("Folate_receptor_1") }], companies: ["profoundbio"],
   },
   {
-    id: "tissue-factor", drugs: ["tisotumab-vedotin"], kind: "target", name: "Tissue factor", symbol: "F3", hgnc: "HGNC:3541", ensembl: "ENSG00000117525", uniprot: "P13726", entrez: "2152", targetClass: "surface-antigen", asOf, wikipedia: W("Tissue_factor"),
+    id: "tissue-factor", drugs: ["tisotumab-vedotin"], kind: "target", name: "Tissue factor", symbol: "F3", hgnc: "HGNC:3541", ensembl: "ENSG00000117525", uniprot: "P13726", entrez: "2152", targetClass: "surface-antigen", asOf: "2026-11-12", wikipedia: W("Tissue_factor"),
     tldr: "Tissue factor is a clotting protein that cancers abnormally display on their surface, used as an ADC target in cervical cancer.",
     summary: "Tissue factor (F3) initiates the extrinsic coagulation cascade; when cancers display it abnormally on their surface it drives thrombosis and angiogenesis, and it becomes an ADC target. It is overexpressed in cervical, pancreatic, head and neck, and ovarian tumours, with 90-95% of cervical and 50-80% of pancreatic cancers positive by IHC. Tisotumab vedotin (Tivdak) is approved in recurrent cervical cancer on the basis of innovaTV 301, and innovaTV did not select patients on tissue factor expression, so the drug is given without a companion test. Topoisomerase-I payload successors (XNW28012) are in phase 3. The open questions are ocular toxicity management and whether newer payloads widen the indication. The simple version is a clotting protein that cancers wear on their surface, letting an ADC find them.",
     biology: "Initiates the extrinsic coagulation cascade; tumour expression drives thrombosis and angiogenesis.",
@@ -250,7 +307,21 @@ export const targets: TargetInput[] = [
     prevalence: [
       { cancerId: "cervical", pct: "90-95", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/Tissue_factor", note: "innovaTV did not select on TF" },
       { cancerId: "pancreatic", pct: "50-80", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/Tissue_factor" },
-    ], links: [{ label: "Wikipedia", url: W("Tissue_factor") }], companies: ["adcendo"],
+    ], links: [
+  { label: "Wikipedia", url: W("Tissue_factor") },
+  {
+  "label": "Tissue factor as a new target for CAR-NK cell immunotherapy of triple-negative breast cancer. (2020)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32071339/"
+},
+  {
+  "label": "Structural basis for distinct binding properties of the human galectins to Thomsen-Friedenreich antigen. (2011)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/21949831/"
+}
+], companies: ["adcendo"],
+
+    notes: [
+  "Here tissue factor means the coagulation-related protein CD142, not the Thomsen-Friedenreich carbohydrate also called TF. Hu’s recognition module used the human factor-VII light chain and was installed in NK-92MI, a continuously growing cell line. The work tested TNBC cultures and cell-line or patient-derived xenografts, including a separate immunoconjugate combination. It does not describe donor primary NK cells or establish the behaviour of a T-cell product. Tumour binding, recognition of healthy vascular compartments and coagulation-related effects require their own measurements."
+],
   },
   {
     id: "cdh6", drugs: ["raludotatug-deruxtecan"], kind: "target", name: "CDH6", symbol: "CDH6", hgnc: "HGNC:1765", ensembl: "ENSG00000113361", uniprot: "P55285", entrez: "1004", targetClass: "surface-antigen", asOf, wikipedia: W("CDH6"),
@@ -292,9 +363,9 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("Glypican_3") }],
   },
   {
-    id: "mesothelin", trials: ["nct07467863", "nct07480954", "nct07641023", "nct07083323"], drugs: ["eb-mf-car-nk-01"], kind: "target", name: "Mesothelin", symbol: "MSLN", hgnc: "HGNC:7371", ensembl: "ENSG00000102854", uniprot: "Q13421", entrez: "10232", targetClass: "surface-antigen", asOf, wikipedia: W("Mesothelin"),
+    id: "mesothelin", trials: ["nct07467863", "nct07480954", "nct07641023", "nct07083323"], drugs: ["eb-mf-car-nk-01"], kind: "target", name: "Mesothelin", symbol: "MSLN", hgnc: "HGNC:7371", ensembl: "ENSG00000102854", uniprot: "Q13421", entrez: "10232", targetClass: "surface-antigen", asOf: "2026-11-12", wikipedia: W("Mesothelin"),
     tldr: "Mesothelin is a surface protein on mesothelioma, ovarian, and pancreatic cancers, targeted by ADCs, CAR-T, and T-cell engagers.",
-    summary: "Mesothelin (MSLN) is a GPI-anchored protein with restricted normal expression on mesothelial surfaces; it binds MUC16/CA-125 but its function is largely dispensable, so targeting it carries little on-target risk in healthy tissue. It is expressed in 85-100% of epithelioid mesothelioma (lower in sarcomatoid), 80-90% of pancreatic cancer, 60-70% of serous ovarian cancer, and lung adenocarcinoma. Anetumab ravtansine failed in mesothelioma, which set back the ADC route. Mesothelin remains a leading solid-tumour CAR-T target, including regionally delivered and mRNA-CAR approaches designed to overcome poor infiltration and short persistence, and T-cell engagers are also in development. The simple version is a surface protein shared by several hard-to-treat cancers that engineered immune cells can be aimed at.",
+    summary: "Mesothelin (MSLN) is a GPI-anchored protein with restricted normal expression on mesothelial surfaces and binds MUC16/CA-125. Normal mesothelial expression makes healthy-tissue recognition a question for the actual binder and engineered product. It is expressed in 85-100% of epithelioid mesothelioma (lower in sarcomatoid), 80-90% of pancreatic cancer, 60-70% of serous ovarian cancer, and lung adenocarcinoma. Anetumab ravtansine failed in mesothelioma, which set back the ADC route. Mesothelin remains a leading solid-tumour CAR-T target, including regionally delivered and mRNA-CAR approaches designed to overcome poor infiltration and short persistence, and T-cell engagers are also in development. The simple version is a surface protein shared by several hard-to-treat cancers that engineered immune cells can be aimed at.",
     biology: "Binds MUC16/CA-125; function largely dispensable.",
     whereFound: ["Mesothelioma", "Pancreatic", "Ovarian", "Lung adenocarcinoma"],
     cancers: ["mesothelioma", "pancreatic", "ovarian"],
@@ -303,7 +374,21 @@ export const targets: TargetInput[] = [
       { cancerId: "mesothelioma", pct: "85-100", measure: "Epithelioid histology", source: "https://en.wikipedia.org/wiki/Mesothelin", note: "Lower in sarcomatoid" },
       { cancerId: "pancreatic", pct: "80-90", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/Mesothelin" },
       { cancerId: "ovarian", pct: "60-70", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/Mesothelin", note: "Serous" },
-    ], links: [{ label: "Wikipedia", url: W("Mesothelin") }],
+    ], links: [
+  { label: "Wikipedia", url: W("Mesothelin") },
+  {
+  "label": "Mesothelin, a novel immunotherapy target for triple negative breast cancer. (2012)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/22418702/"
+},
+  {
+  "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+  "url": "https://www.fda.gov/media/156896/download"
+}
+,{"label":"Moon et al. 2011: mesothelin CAR construction","url":"https://pubmed.ncbi.nlm.nih.gov/21610146/"}],
+
+    notes: [
+  "Tchou’s tissue survey and live-cell experiment answer different questions. In 99 archival primary breast-cancer specimens, mesothelin expression was more frequent in the TNBC group. The functional killing experiment used TB129, a primary breast-cancer line derived from an oestrogen-receptor-negative, HER2-positive cancer, rather than a TNBC line. Mesothelin-CAR cells killed 31.7 per cent versus 8.7 per cent with unmodified T cells under the reported conditions. Tissue staining, accessible binding by the proposed receptor and healthy mesothelial recognition must remain separate; the study does not establish a safe clinical treatment for TNBC. The mesoCAR construction paper cited by Tchou describes an SS1 single-chain antibody fragment joined to 4-1BB and CD3-zeta signalling domains (Moon and colleagues); this is a construct specification, not a result for every mesothelin binder."
+],
   },
   {
     id: "cd70", drugs: ["cusatuzumab", "adi-270"], kind: "target", name: "CD70", symbol: "CD70", hgnc: "HGNC:11937", ensembl: "ENSG00000125726", uniprot: "P32970", entrez: "970", targetClass: "surface-antigen", asOf, wikipedia: W("CD70"),
@@ -319,7 +404,7 @@ export const targets: TargetInput[] = [
     ], links: [{ label: "Wikipedia", url: W("CD70") }],
   },
   {
-    id: "ror1", drugs: ["zilovertamab-vedotin"], trials: ["nct07510802"], kind: "target", name: "ROR1", symbol: "ROR1", hgnc: "HGNC:10256", ensembl: "ENSG00000185483", uniprot: "Q01973", entrez: "4919", targetClass: "surface-antigen", asOf, wikipedia: W("ROR1"),
+    id: "ror1", drugs: ["zilovertamab-vedotin"], trials: ["nct07510802"], kind: "target", name: "ROR1", symbol: "ROR1", hgnc: "HGNC:10256", ensembl: "ENSG00000185483", uniprot: "Q01973", entrez: "4919", targetClass: "surface-antigen", asOf: "2026-11-12", wikipedia: W("ROR1"),
     tldr: "ROR1 is a fetal pseudo-kinase receptor re-expressed on over 90% of chronic lymphocytic leukaemias, 30 to 50% of diffuse large B-cell lymphomas and 40 to 60% of triple-negative breast cancers, and largely absent from healthy adult tissue. Zilovertamab vedotin uses it as an ADC address, in phase 3 in large B-cell lymphoma; whether expression level predicts benefit is unproven.",
     summary: "ROR1 is an oncofetal receptor tyrosine kinase-like protein, a Wnt5a pseudo-kinase receptor that drives survival signalling in CLL and mantle cell lymphoma and is largely absent from normal adult tissue. Surface expression is seen in over 90% of CLL, 30-50% of DLBCL, and 40-60% of TNBC by IHC, with NSCLC expression also reported. Zilovertamab vedotin (MK-2140), an ADC, is in phase 3 in DLBCL, and the TNBC and NSCLC expression supports solid-tumour programmes. Because the receptor is a pseudo-kinase, it is used as a delivery address rather than a signalling target, and whether expression level predicts ADC benefit remains to be shown. The simple version is an embryonic receptor that many cancers re-express, giving ADCs a target largely missing from healthy cells.",
     biology: "Wnt5a pseudo-kinase receptor; drives survival signalling in CLL and MCL.",
@@ -330,7 +415,21 @@ export const targets: TargetInput[] = [
       { cancerId: "cll", pct: ">90", measure: "Surface expression", source: "https://en.wikipedia.org/wiki/ROR1" },
       { cancerId: "dlbcl", pct: "30-50", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/ROR1" },
       { cancerId: "tnbc", pct: "40-60", measure: "IHC, any expression", source: "https://en.wikipedia.org/wiki/ROR1" },
-    ], links: [{ label: "Wikipedia", url: W("ROR1") }],
+    ], links: [
+  { label: "Wikipedia", url: W("ROR1") },
+  {
+  "label": "Inhibition of TGF-β-receptor signaling augments the antitumor function of ROR1-specific CAR T-cells against triple-negative breast cancer. (2020)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32303620/"
+},
+  {
+  "label": "Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies. (2025)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39466024/"
+}
+],
+
+    notes: [
+  "Stüber’s R12-based ROR1 CAR study used healthy-donor CD4 and CD8 T cells, the MDA-MB-231 TNBC line and a three-dimensional model on a decellularised porcine-gut scaffold. Added TGF-beta impaired function; the TGF-beta-receptor inhibitor SD-208 protected several measured responses under those conditions. This is a defined preclinical perturbation, not a clinical combination result. In the later Jaeger-Ruckstuhl phase-I study, 21 people received ROR1 CAR-T cells: three with CLL, ten with TNBC and eight with NSCLC. One of the 18 solid-tumour participants had a partial response, with poor tumour infiltration reported. That pooled denominator is not a TNBC-specific response rate or a universal verdict about all ROR1 products."
+],
   },
   {
     id: "cd19", trials: ["nct06948981", "nct06179524", "nct05326243", "nct04684147", "nct07284433"], drugs: ["mk-1045", "rondecabtagene-autoleucel", "azd0486", "zamtocabtagene-autoleucel", "tc011", "englumafusp-alfa", "crc01", "azd0120", "jnj-90014496", "ctx112", "at101", "cd19-t-hank", "tbi-1501"], kind: "target", name: "CD19", symbol: "CD19", hgnc: "HGNC:1633", ensembl: "ENSG00000177455", uniprot: "P15391", entrez: "930", targetClass: "surface-antigen", asOf, wikipedia: W("CD19"),

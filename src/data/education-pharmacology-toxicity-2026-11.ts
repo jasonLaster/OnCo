@@ -7,7 +7,7 @@ const PM = (n: number) => `https://pubmed.ncbi.nlm.nih.gov/${n}/`;
 
 export const termsEducationPharmacologyToxicity2026: TermInput[] = [
   {
-    id: "insertional-mutagenesis", kind: "term", name: "Insertional mutagenesis", category: "Side effects", asOf,
+    id: "insertional-mutagenesis", kind: "term", name: "Insertional mutagenesis", category: "Side effects", asOf: "2026-11-12",
     aka: [
   "insertional oncogenesis",
   "vector insertional mutagenesis",
@@ -44,7 +44,11 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
   {
     "label": "ABECMA prescribing information, August 2026 version (DailyMed)",
     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b90c1fe7-f5cc-464e-958a-af36e9c26d7c"
-  }
+  },
+  {
+  "label": "NCI Drug Dictionary: axicabtagene ciloleucel",
+  "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/768723"
+}
 ],
     technologies: ["car-t"], terms: ["secondary-malignancy"], targets: ["tet2", "lmo2"],
     related: [
@@ -53,11 +57,12 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
 ],
 
 "notes": [
-  "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it."
+  "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
+  "Hamilton’s secondary T-cell-lymphoma case followed axicabtagene ciloleucel. The NCI Drug Dictionary describes that product’s gammaretroviral vector; it should not be relabelled as a lentiviral product. The study found no evidence of oncogenic retroviral integration in the deeply profiled case. Product identity, the diagnosis and investigation of its cause remain separate; that finding does not negate the malignancy warning or estimate the risk of every other integrating system."
 ]
 },
   {
-    id: "on-target-off-tumour-toxicity", kind: "term", name: "On-target, off-tumour toxicity and off-target cross-reactivity", category: "Side effects", asOf,
+    id: "on-target-off-tumour-toxicity", kind: "term", name: "On-target, off-tumour toxicity and off-target cross-reactivity", category: "Side effects", asOf: "2026-11-12",
     aka: [
   "on-target off-tumor toxicity",
   "on-target, off-tumor toxicity",
@@ -93,11 +98,13 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
   "crs",
   "therapeutic-index",
   "her2",
-  "lymphoma-bio-lineage-antigen-cost"
+  "lymphoma-bio-lineage-antigen-cost",
+  "muc1"
 ],
 
 "notes": [
-  "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present."
+  "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
+  "In a fictional tumour sample, 70 of 100 cells display an epitope accessible to the proposed receptor and 30 do not. A second target has only an RNA result, while healthy tissue was stained with a third antibody. Those measurements cannot rank safe receptor designs: ask for the actual binder’s recognition, the unrecognised tumour population and functional effects on relevant healthy cells. A more sensitive receptor might recognise additional tumour cells and additional healthy cells. Even a perfectly specific binder can harm healthy cells carrying its intended antigen; unintended binding to another molecule is a different failure. A sampled panel can miss antigen-negative cells, and an intracellular signal does not establish an accessible surface epitope. Repeat the relevant healthy-cell question under conditions, including inflammation, that could change recognition."
 ]
 },
   {

@@ -1,5 +1,13 @@
 # Corrections
 
+### Cell-therapy manufacturing time, 12 November 2026
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [Vein-to-vein time](/terms/vein-to-vein-time/) | The summary gave unscoped regional turnaround averages and attributed cross-trial outcome differences to waiting time, without the population and comparison needed for those claims | Raw FDA January 2024 CAR T-cell guidance, sections VI.B.4 and VI.B.5, plus its distinct manufacturing, eligibility and failure-to-treat considerations | Defines the interval and its stages, separates product availability from clinical readiness, and retains participant-flow examples with their actual denominators |
+
+The engineered-cell-therapy assessment preserves earlier contributor notes and links. Its source-specific access limits and original/later requirement inventories remain separate from main, live, expert or language acceptance.
+
 ### Targeted inhibitor mechanisms, 12 November 2026
 
 | Date | Entity | What was wrong | How found | Fix |
@@ -1167,3 +1175,11 @@ The items the link-sense and company-products audits left for judgement, each de
 The [surface-targeting correction record](research/education-coverage-2026-11-08/surface-targeting-2026-11-11/CORRECTIONS.md) qualifies target/dependence, processing, PK and target-ranking claims. It corrects the SG human-serum release value against the 2020 notice, IDeate-Lung02 outcome hierarchy and the displayed tarlatamab cycle-1 schedule/monitoring. Source-specific assays, cohorts and model results replace universal safety, resistance and superiority assertions. All prior notes and source links remain in order; broader catalogue and mechanism-template gaps remain explicit.
 
 The [current-main refresh](research/education-coverage-2026-11-08/main-refresh-b1d278-2026-11-11/README.md) retains upstream irAE aliases and makes the immune-side-effect lead name its organ examples and conditional management, supported by the label and prior guideline assessment. It does not change search ranking or its floors.
+
+### Mesothelin healthy-tissue risk, 12 November 2026
+
+Removed the inference that a presumed dispensable protein function means little risk from targeting mesothelin on healthy tissue. Normal mesothelial expression requires functional testing of the actual binder and engineered product; a positive tumour stain does not establish safety. The Tchou tissue survey and live-cell experiment retain their separate populations. Sources: [Tchou et al.](https://pubmed.ncbi.nlm.nih.gov/22418702/), [FDA CAR T-cell development guidance](https://www.fda.gov/media/156896/download).
+
+### Cell-therapy time short summaries, 12 November 2026
+
+Removed the unsupported typical three-to-six-week range from the vein-to-vein short lead and its simple-English entry. The same inherited clause was removed from the eight translated short definitions while preserving their existing definition wording. The interval and analysis population depend on the programme; manufacture, transport, testing and clinical readiness are different parts of the pathway. This is a source-scope correction, with no native-language review claimed. Source: [FDA CAR T-cell development guidance](https://www.fda.gov/media/156896/download).

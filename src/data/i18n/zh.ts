@@ -3431,7 +3431,7 @@ export const tldr_zh: Record<string, string> = {
   vara: "Vara开发人工智能软件，在德国全国乳腺筛查计划中读取筛查乳腺X线片，标记正常影像并突出可疑影像，使放射科医生以更少的工作量发现更多癌症。",
   "variant-knowledgebases": "经过整理的数据库，说明每种突变对治疗的意义，以及利用这些数据库决定治疗方案的专家会议。",
   "vcu-massey": "Richmond的NCI综合癌症中心，由Robert Winn领导，以社区参与的癌症健康公平研究而闻名。",
-  "vein-to-vein-time": "对于CAR-T，指从采集患者细胞到输注成品之间的天数，通常为三到六周。当疾病侵袭性强时每一天都至关重要，而生产能力（排产名额）限制了可治疗的患者数量。",
+  "vein-to-vein-time": "对于CAR-T，指从采集患者细胞到输注成品之间的天数。",
   "venetoclax-plus-hma": "Azacitidine使白血病细胞为死亡做好准备；venetoclax则去除BCL-2保护屏障。两者联合使老年AML的缓解率大约翻了一倍。",
   "venetoclax-plus-obinutuzumab": "Venetoclax加obinutuzumab，即一年的口服药加抗体，是首个固定疗程、无化疗的CLL方案，六年时仍有一半患者处于缓解状态。",
   "ventana-pd-l1-sp263": "一种广泛使用的PD-L1染色，随durvalumab获批，后来又成为肺癌辅助atezolizumab治疗的检测。",

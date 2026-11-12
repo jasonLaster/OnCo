@@ -273,7 +273,7 @@ export const tldr_fr: Record<string, string> = {
   "fda-oce": "Le pôle d'oncologie du régulateur américain, qui approuve les médicaments contre le cancer, gère l'approbation accélérée et le Project Orbis, et pousse à une meilleure recherche de dose via le Project Optimus.",
   "fdg-pet": "La TEP au FDG est l'examen TEP standard. Un sucre radioactif montre quels tissus consomment rapidement du glucose, ce que font la plupart des cancers.",
   fgfr2: "FGFR2 est un récepteur de croissance qui est fusionné dans le cancer des voies biliaires et surproduit dans le cancer de l'estomac.",
-  "first-line": "La première ligne est le premier traitement d'un cancer avancé ; la deuxième ligne est celui qui vient après son échec, et ainsi de suite.",
+
   flt3: "FLT3 est une kinase mutée dans environ un tiers des leucémies aiguës myéloïdes, où l'ajout d'un inhibiteur à la chimiothérapie améliore la survie.",
   "fluorescence-guided-surgery": "Injecter un colorant qui fait briller la tumeur pour que le chirurgien voie exactement où couper.",
   fluorouracil: "La chimiothérapie de 1957 qui reste le pilier du traitement des cancers de l'intestin, de l'estomac, du pancréas, de l'anus, de la tête et du cou et du sein, et qui s'utilise en crème pour les lésions précancéreuses de la peau.",
@@ -785,7 +785,7 @@ export const tldr_fr: Record<string, string> = {
   "dako-pd-l1-22c3-pharmdx": "Le test PD-L1 lié au pembrolizumab, et la source du score 'CPS' qui décide de l'immunothérapie dans de nombreux cancers.",
   dasatinib: "Dasatinib est un comprimé de deuxième génération contre BCR::ABL1 qui, associé à l'immunothérapie blinatumomab, peut amener la ALL Ph-positive en rémission profonde sans aucune chimiothérapie.",
   "dbt-india": "Le ministère qui finance les instituts de sciences de la vie de l'Inde et, par l'intermédiaire de BIRAC, les start-up à l'origine des thérapies CAR-T et du vaccin contre le HPV développés dans le pays.",
-  "de-escalation": "Donner moins de traitement aux patients qui vont bien et davantage à ceux qui ne vont pas bien, en s'appuyant sur un marqueur tel que la réponse à l'imagerie, l'ctDNA ou la MRD pour décider. Le but est de guérir autant de personnes avec moins de dommages.",
+
   "de-novo-protein-design": "Concevoir une protéine de toutes pièces sur ordinateur pour qu'elle s'accroche à une cible choisie, au lieu d'en trouver une chez un animal ou dans une banque.",
   deauville: "Une échelle de 1 à 5 mesurant l'intensité avec laquelle un lymphome s'illumine sur un PET-scan, comparée au foie et au centre du thorax. Des scores de 1 à 3 après deux cycles signifient que le traitement fonctionne et permettent de le raccourcir ; 4 à 5 signifie qu'il faut intensifier.",
   "decitabine-cedazuridine": "Decitabine-cedazuridine par voie orale est une version en comprimé de la chimiothérapie hypométhylante qui, depuis mai 2026, permet aux patients âgés atteints d'AML de prendre l'ensemble de leur traitement par venetoclax à domicile.",
@@ -1112,7 +1112,7 @@ export const tldr_fr: Record<string, string> = {
   "octreotide-lanreotide": "Des injections mensuelles d'une hormone de synthèse qui à la fois apaise les symptômes hormonaux de la tumeur et ralentit sa croissance, le premier traitement pour la plupart des tumeurs neuroendocrines.",
   "ohsu-knight": "L'institut de Brian Druker, où l'imatinib a fait ses preuves dans la LMC et où l'oncologie de précision est née ; aujourd'hui centré sur la détection précoce et la génomique fonctionnelle.",
   "olanzapine-appetite-tmh": "Un essai randomisé en Inde d'une dose de 2.5 mg d'un comprimé très bon marché et vieux de plusieurs décennies. Six patients sur dix ont pris plus de 5 % de leur poids, contre un sur dix sous placebo.",
-  olympia: "A montré qu'un an d'inhibiteur de PARP après le traitement standard améliore la survie des femmes porteuses de mutations héréditaires de BRCA.",
+
     "oncology-nutrition": "Dépistage de la dénutrition, conseils dirigés par des diététiciens, compléments et alimentation par sonde ou intraveineuse lorsqu'elle est indiquée, ainsi que traitement de la cachexie cancéreuse, le syndrome de fonte musculaire qui touche jusqu'à 80% des patients à un stade avancé.",
   "oncomine-dx-target-test": "Le premier panel génétique approuvé par la FDA capable d'associer une seule biopsie à plusieurs médicaments différents contre le cancer du poumon en même temps.",
   "onkoloski-institut-ljubljana": "Le centre national de lutte contre le cancer de la Slovénie, accrédité par l'OECI, siège de l'un des plus anciens registres du cancer d'Europe et pionnier de l'électrochimiothérapie.",
@@ -3067,7 +3067,7 @@ export const tldr_fr: Record<string, string> = {
   "kenneth-kinzler": "A codécouvert APC, le gène gardien du cancer colorectal, et a codirigé les premiers séquençages de génomes cancéreux.",
   "kernal-biologics": "Kernal Bio conçoit des médicaments à mRNA qui ne s'activent que dans le type cellulaire visé, par exemple pour programmer les cellules T d'un patient contre le cancer à l'intérieur de l'organisme sans les prélever au préalable.",
   "kevan-shokat": "Le chimiste dont le laboratoire a trouvé la poche cachée de KRAS G12C qui a rendu ciblable la cible réputée « inciblable ».",
-  "keynote-355": "A établi l'immunothérapie plus chimiothérapie comme traitement de première ligne du cancer du sein triple négatif métastatique exprimant PD-L1.",
+
   "keynote-483": "A montré que l'ajout d'un bloqueur de PD-1 à la chimiothérapie standard est bénéfique dans le mésothéliome, offrant une deuxième option de première ligne fondée sur l'immunothérapie.",
   "keynote-564": "Le premier médicament à prolonger la vie des patients atteints d'un cancer du rein après la chirurgie, et la première immunothérapie adjuvante dans une tumeur solide, quelle qu'elle soit, à montrer un gain de survie globale.",
   "keynote-590": "A ajouté l'immunothérapie à la chimiothérapie de première ligne pour tous les types de cancer de l'œsophage, avec un bénéfice de survie maintenu à cinq ans.",

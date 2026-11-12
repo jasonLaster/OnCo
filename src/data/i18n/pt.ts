@@ -416,7 +416,7 @@ export const tldr_pt: Record<string, string> = {
 
 
 
-    "first-line": "Primeira linha é o primeiro tratamento para câncer avançado; segunda linha é o que vem depois que ele falha, e assim por diante.",
+
   "standard-of-care": "O tratamento que diretrizes e especialistas consideram atualmente a melhor opção comprovada.",
   "accelerated-approval": "Aprovação da FDA baseada em evidência inicial (como encolhimento do tumor) com a condição de que um ensaio confirmatório se siga.",
   "breakthrough-designation": "Vias rápidas da FDA para drogas que parecem substancialmente melhores que as opções existentes.",
@@ -952,7 +952,7 @@ export const tldr_pt: Record<string, string> = {
   "dako-pd-l1-22c3-pharmdx": "O teste de PD-L1 vinculado ao pembrolizumab e a fonte do número 'CPS' que decide a imunoterapia em muitos cânceres.",
   dasatinib: "Dasatinib é um comprimido de segunda geração contra BCR::ABL1 que, combinado com a imunoterapia blinatumomab, pode levar a ALL Ph-positiva a uma remissão profunda sem nenhuma quimioterapia.",
   "dbt-india": "O departamento governamental que financia os institutos de ciências da vida da Índia e, por meio da BIRAC, as start-ups por trás das terapias CAR-T e da vacina contra o HPV desenvolvidas no próprio país.",
-  "de-escalation": "Dar menos tratamento aos pacientes que estão indo bem e mais aos que não estão, usando um marcador como a resposta nos exames de imagem, o ctDNA ou a MRD para decidir. O objetivo é curar o mesmo número de pessoas com menos danos.",
+
   "de-novo-protein-design": "Projetar uma proteína do zero em um computador para se agarrar a um alvo escolhido, em vez de encontrá-la em um animal ou em uma biblioteca.",
   deauville: "Uma escala de 1 a 5 de quanto um linfoma brilha em uma PET, comparado com o fígado e o centro do tórax. Pontuações de 1 a 3 após dois ciclos significam que o tratamento está funcionando e permitem encurtá-lo; 4 a 5 significa intensificar.",
   "decitabine-cedazuridine": "Decitabine-cedazuridine oral é uma versão em comprimido da quimioterapia hipometilante que, desde maio de 2026, permite que pacientes idosos com AML tomem todo o seu esquema de venetoclax em casa.",
@@ -1252,7 +1252,7 @@ export const tldr_pt: Record<string, string> = {
   "octreotide-lanreotide": "Injeções mensais de um hormônio sintético que, ao mesmo tempo, acalma os sintomas hormonais do tumor e desacelera seu crescimento, o primeiro tratamento para a maioria dos tumores neuroendócrinos.",
   "ohsu-knight": "O instituto de Brian Druker, onde o imatinib foi comprovado na LMC e a oncologia de precisão nasceu; agora focado em detecção precoce e genômica funcional.",
   "olanzapine-appetite-tmh": "Um ensaio randomizado na Índia com uma dose de 2.5 mg de um comprimido muito barato e com décadas de existência. Seis em cada dez pacientes ganharam mais de 5% do seu peso, contra um em cada dez com placebo.",
-  olympia: "Mostrou que um ano de um inibidor de PARP após o tratamento padrão melhora a sobrevida em mulheres com mutações hereditárias de BRCA.",
+
     "oncology-nutrition": "Rastreamento de desnutrição, aconselhamento conduzido por nutricionistas, suplementos e alimentação por sonda ou intravenosa quando indicada, além do tratamento da caquexia do câncer, a síndrome de perda muscular que afeta até 80% dos pacientes avançados.",
   "oncomine-dx-target-test": "O primeiro painel genético aprovado pela FDA capaz de combinar uma única biópsia com vários medicamentos diferentes para câncer de pulmão ao mesmo tempo.",
   "onkoloski-institut-ljubljana": "O centro oncológico nacional da Eslovênia, acreditado pela OECI, sede de um dos registros de câncer mais antigos da Europa e pioneiro da eletroquimioterapia.",
@@ -3102,7 +3102,7 @@ export const tldr_pt: Record<string, string> = {
   "kenneth-kinzler": "Codescobriu o APC, o gene guardião do câncer colorretal, e coliderou os primeiros sequenciamentos do genoma do câncer.",
   "kernal-biologics": "A Kernal Bio projeta medicamentos de mRNA que se ativam apenas no tipo celular pretendido, por exemplo programando as células T de um paciente contra o câncer dentro do corpo sem retirá-las primeiro.",
   "kevan-shokat": "O químico cujo laboratório encontrou o bolso oculto no KRAS G12C que tornou farmacologicamente abordável o alvo tido como 'não abordável'.",
-  "keynote-355": "Estabeleceu a imunoterapia mais quimioterapia como tratamento de primeira linha para o câncer de mama triplo-negativo metastático com expressão de PD-L1.",
+
   "keynote-483": "Mostrou que adicionar um bloqueador de PD-1 à quimioterapia padrão ajuda no mesotelioma, oferecendo uma segunda opção de primeira linha baseada em imunoterapia.",
   "keynote-564": "O primeiro fármaco a ajudar pacientes com câncer de rim a viver mais após a cirurgia, e a primeira imunoterapia adjuvante em qualquer tumor sólido a mostrar ganho de sobrevida global.",
   "keynote-590": "Adicionou imunoterapia à quimioterapia de primeira linha para todos os tipos de câncer de esôfago, com um benefício de sobrevida que se manteve aos cinco anos.",

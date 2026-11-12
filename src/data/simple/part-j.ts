@@ -424,7 +424,7 @@ export const simpleJ: Record<string, string> = {
   "rechallenge": "Rechallenge means giving a drug again after a break, on the theory that the cancer's resistance faded while off the drug, which sometimes works.",
   "fixed-duration": "Fixed-duration therapy is taken for a set period and then stopped while still working, giving years off treatment, whereas continuous therapy carries on until it fails.",
   "step-up-dosing": "Step-up dosing starts a powerful immune drug at a tiny dose and increases it over several days so the dangerous fever reaction (cytokine release) stays mild.",
-  "de-escalation": "De-escalation means giving less treatment to patients doing well and more to those who are not, guided by a marker, to cure the same number with less harm.",
+  "de-escalation": "A response test can guide a planned next step, but the rule and its effects need evidence. A favourable result alone does not show that less treatment is safe.",
   "organ-preservation": "Organ preservation means curing a cancer with drugs and radiotherapy so the rectum, bladder, voice box or limb does not have to be removed, keeping surgery in reserve.",
   "active-surveillance-term": "Active surveillance means deliberately not treating a cancer yet but checking it regularly and treating only if it shows signs of progressing, standard for low-risk prostate cancer.",
   "curative-intent": "Curative intent means the goal is to eliminate the cancer for good, while palliative intent means controlling it and relieving symptoms when cure is not possible.",

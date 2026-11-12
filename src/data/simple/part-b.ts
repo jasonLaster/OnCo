@@ -64,8 +64,8 @@ export const simpleB: Record<string, string> = {
 
 
   oligometastatic: "Oligometastatic disease means a limited number of detected distant metastases under a stated definition. A few visible spots do not prove that all disease is visible or that treating each will cure the cancer.",
-  "neoadjuvant-adjuvant": "Neoadjuvant treatment comes before surgery and adjuvant treatment after it. A regimen spanning both phases does not separately test how much each phase helped.",
-  "first-line": "First-line is the first treatment for advanced cancer; second-line comes after it stops working, and so on.",
+  "neoadjuvant-adjuvant": "Treatment before the main treatment is neoadjuvant; extra treatment afterwards aims to lower the chance of cancer returning. The purpose and actual delivery matter.",
+  "first-line": "A line is a treatment strategy for a stated disease setting. Several drugs or planned stages can belong to one line.",
   "standard-of-care": "The treatment that guidelines and experts currently consider the best proven option.",
   "accelerated-approval": "Early FDA approval based on promising signs, on condition that a confirming trial follows.",
   "breakthrough-designation": "FDA fast lanes for drugs that look much better than existing options.",
@@ -242,7 +242,7 @@ export const simpleB: Record<string, string> = {
   "cctg-ce6": "For older patients with glioblastoma, a shorter three-week course of radiation plus the chemotherapy temozolomide helped people live longer than radiation alone.",
   "act-iv": "A carefully run test of a promising glioblastoma vaccine that showed no benefit.",
   "keynote-522": "This trial tested adding pembrolizumab before and after surgery to the same chemotherapy plan. It measured response and survival.",
-  "keynote-355": "Established an immune drug plus chemotherapy as first treatment for spread triple-negative breast cancer with PD-L1.",
+  "keynote-355": "The trial found a survival benefit in its defined group with previously untreated advanced triple-negative breast cancer. Earlier early-stage treatment did not always exclude people.",
   impassion130: "The first immune drug success in breast cancer, later undone when a sister trial failed.",
   ascent: "The trial that proved a TROP2 antibody-drug could nearly double survival in heavily treated triple-negative breast cancer.",
   "ascent-03": "Moved Trodelvy into first-line use for triple-negative patients who cannot have immune drugs.",
@@ -254,7 +254,7 @@ export const simpleB: Record<string, string> = {
   "izabright-breast01": "The global first-line trial of the two-target antibody-drug iza-bren in triple-negative breast cancer.",
   "optimice-pcr": "This trial asks whether people with no invasive cancer left at surgery can omit the next 27 weeks of pembrolizumab.",
   "scarlet-s2212": "Tests whether one harsh chemotherapy can be dropped from pre-surgery treatment without losing effect.",
-  olympia: "Showed a year of a PARP pill after standard treatment helps women with inherited BRCA faults live longer.",
+  olympia: "A year of olaparib improved outcomes in selected people with high-risk early breast cancer and inherited BRCA1 or BRCA2 variants. The trial also required HER2-negative disease.",
   "destiny-breast03": "The head-to-head trial where Enhertu beat Kadcyla by a wide margin.",
   "destiny-breast04": "Created a new category, HER2-low, by showing Enhertu works in tumours once called HER2-negative.",
   "destiny-breast06": "Moved Enhertu ahead of chemotherapy in hormone-driven breast cancer.",

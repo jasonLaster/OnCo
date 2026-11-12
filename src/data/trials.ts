@@ -43,10 +43,15 @@ const raw: TrialInput[] = [
     links: [ct("NCT03036488")], people: ["rebecca-dent", "peter-schmid", "loi-sherene"] }),
   t({ id: "keynote-355", technologies: ["checkpoint-inhibitor"], name: "KEYNOTE-355", nct: "NCT02819518", phase: "3", status: "positive", yearReported: 2020, sponsor: "Merck",
     setting: "First-line metastatic TNBC: pembrolizumab + chemotherapy vs chemotherapy",
-    tldr: "Established immunotherapy plus chemotherapy as first-line treatment for metastatic triple-negative breast cancer with PD-L1 expression.",
-    summary: "KEYNOTE-355, trial NCT02819518 sponsored by Merck and published in the New England Journal of Medicine in 2022, established pembrolizumab plus chemotherapy as first-line treatment for metastatic triple-negative breast cancer with PD-L1 expression. It randomised 847 patients and met its primary progression-free and overall survival endpoints in tumours with a combined positive score of ten or more, with no benefit below that threshold, which defined the PD-L1 cut-off used today. OnCo links it to triple-negative breast cancer, pembrolizumab, the CPS term, the TNBC roadmap and IMpassion131. It is now being succeeded by ADC-based first-line regimens such as ASCENT-04, and whether chemotherapy remains part of first-line treatment at all is the open question.",
+    tldr: "This trial found longer survival with pembrolizumab plus chemotherapy in its selected group with previously untreated advanced triple-negative breast cancer.",
+    summary: "KEYNOTE-355, trial NCT02819518 sponsored by Merck and published in the New England Journal of Medicine in 2022, established pembrolizumab plus chemotherapy as first-line treatment for metastatic triple-negative breast cancer with PD-L1 expression. It randomised 847 patients and met its primary progression-free and overall survival endpoints in tumours with a combined positive score of ten or more, in the prespecified CPS-ten-or-more comparison. This does not prove that the effect is exactly absent in every lower-score group. OnCo links it to triple-negative breast cancer, pembrolizumab, the CPS term, the TNBC roadmap and IMpassion131. Other first-line strategies, including ADC-based regimens, are separate comparisons; this trial alone cannot rank them.",
     result: "OS HR 0.73 in CPS ≥10.",
-    drugs: ["pembrolizumab"], cancers: ["tnbc", "tnbc-metastatic"], terms: ["cps"], links: [ct("NCT02819518")] }),
+    drugs: ["pembrolizumab"], cancers: ["tnbc", "tnbc-metastatic"], terms: ["cps"], links: [ct("NCT02819518")] ,
+  asOf: "2026-11-12",
+  notes: [
+    "In this study, previously untreated referred to the locally recurrent inoperable or metastatic setting, not to absence of every earlier cancer treatment. The 2020 report stratified randomisation by previous exposure to the same chemotherapy class in neoadjuvant or adjuvant care. The later overall-survival report met its significance criterion for combined positive score ten or more; a nonsignificant broader subgroup or an untested significance comparison does not demonstrate exactly zero effect in each lower-score stratum."
+  ]
+}),
   t({ id: "impassion130", technologies: ["checkpoint-inhibitor"], name: "IMpassion130", nct: "NCT02425891", phase: "3", status: "mixed", yearReported: 2018, sponsor: "Roche",
     setting: "First-line metastatic TNBC: atezolizumab + nab-paclitaxel",
     tldr: "IMpassion130 was the first immunotherapy success in breast cancer, later undermined when a sister trial failed and the approval was withdrawn.",
@@ -138,14 +143,22 @@ const raw: TrialInput[] = [
     drugs: ["pembrolizumab", "carboplatin"], cancers: ["tnbc"], links: [ct("NCT05929768")], people: ["priyanka-sharma"] }),
   t({ id: "olympia", technologies: ["parp-inhibitor"], name: "OlympiA", nct: "NCT02032823", phase: "3", status: "positive", yearReported: 2021, sponsor: "AstraZeneca / NRG / BIG",
     setting: "Adjuvant olaparib for one year in germline BRCA-mutated, HER2-negative, high-risk early breast cancer",
-    tldr: "Showed that a year of a PARP inhibitor after standard treatment improves survival in women with inherited BRCA mutations.",
+    tldr: "OlympiA found better outcomes with one year of olaparib after standard treatment in people with high-risk early breast cancer, inherited BRCA1 or BRCA2 variants and HER2-negative disease.",
     summary: "OlympiA, trial NCT02032823 sponsored by AstraZeneca, NRG Oncology and the Breast International Group and published in the New England Journal of Medicine in 2021, showed that a year of the PARP inhibitor olaparib after standard treatment improves survival in women with germline BRCA mutations and high-risk, HER2-negative early breast cancer, about eighty percent of whom had triple-negative disease. It randomised 1,836 patients to olaparib or placebo, met its primary invasive disease-free survival endpoint and showed an overall survival benefit that was sustained at six years. It makes germline testing a treatment decision for every such patient, and whether the benefit extends to somatic or non-BRCA HRD alterations is the open question.",
     result: "iDFS HR 0.58; OS HR 0.72.",
-    drugs: ["olaparib"], cancers: ["tnbc", "breast-hr-positive", "tnbc-early", "hr-positive-early-high-risk"], targets: ["brca"], links: [{"label": "ClinicalTrials.gov NCT02032823", "url": "https://clinicaltrials.gov/study/NCT02032823"}, {"label": "OlympiA overall survival (Annals of Oncology 2022)", "url": "https://doi.org/10.1016/j.annonc.2022.09.159"}, {"label": "NICE TA886 (10 May 2023)", "url": "https://www.nice.org.uk/guidance/ta886"}, {"label": "Lynparza label (openFDA): OlympiA eligibility and results", "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22LYNPARZA%22"}, {"label": "OlympiA six-year primary publication", "url": "https://doi.org/10.1016/j.annonc.2026.08.002"}], keyPapers: ["paper-olympia-nejm-2021"], people: ["andrew-tutt", "charles-geyer", "judy-garber"],
-    asOf: "2026-10-06",
+    drugs: ["olaparib"], cancers: ["tnbc", "breast-hr-positive", "tnbc-early", "hr-positive-early-high-risk"], targets: ["brca"], links: [{"label": "ClinicalTrials.gov NCT02032823", "url": "https://clinicaltrials.gov/study/NCT02032823"}, {"label": "OlympiA overall survival (Annals of Oncology 2022)", "url": "https://doi.org/10.1016/j.annonc.2022.09.159"}, {"label": "NICE TA886 (10 May 2023)", "url": "https://www.nice.org.uk/guidance/ta886"}, {"label": "Lynparza label (openFDA): OlympiA eligibility and results", "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22LYNPARZA%22"}, {"label": "OlympiA six-year primary publication", "url": "https://doi.org/10.1016/j.annonc.2026.08.002"},
+    {"label":"Tutt et al., OlympiA primary report and eligibility (2021)","url":"https://pubmed.ncbi.nlm.nih.gov/34081848/"},
+    {"label":"Garber et al., OlympiA six-year report (2026)","url":"https://pubmed.ncbi.nlm.nih.gov/42636977/"}
+  ], keyPapers: ["paper-olympia-nejm-2021"], people: ["andrew-tutt", "charles-geyer", "judy-garber"],
+    asOf: "2026-11-12",
     enrolled: 1836,
     enrolledBasis: "randomised",
-  }),
+
+  notes: [
+    "The 2021 primary comparison randomised 1,836 people with high-risk HER2-negative early breast cancer and germline BRCA1 or BRCA2 pathogenic or likely pathogenic variants to one year of olaparib or placebo after local treatment and chemotherapy. Three-year invasive disease-free survival was 85.9% versus 77.1%, difference 8.8 points (95% confidence interval 4.5 to 13.0), with hazard ratio 0.58 and its prespecified 99.5% interval 0.41 to 0.82. In the TNBC neoadjuvant group, residual invasive disease was required; after adjuvant chemotherapy, eligibility required positive axillary nodes or an invasive primary at least 2 cm. The hormone-receptor-positive entry rules differed. The trial did not establish benefit for every inherited variant, lower-risk situation or somatic-only alteration.",
+    "The 2026 third interim report has median follow-up 6.1 years and describes maintained benefit. Six-year overall survival was 87.5% versus 83.2%, with hazard ratio 0.72 (95% confidence interval 0.56 to 0.93). The authors report an estimated survival difference of 4.4 points (0.9 to 6.7); subtracting the separately rounded percentages gives 4.3, so retain the reported estimate rather than silently treating it as rounded arithmetic. This is longer observation of OlympiA, not a second independent trial or a comparison with postoperative pembrolizumab combinations."
+  ]
+}),
 
   // ---- HER2 / HR+ breast ----
   t({ id: "destiny-breast03", technologies: ["adc", "topoisomerase-inhibitors"], name: "DESTINY-Breast03", nct: "NCT03529110", phase: "3", status: "positive", yearReported: 2021, sponsor: "Daiichi Sankyo / AstraZeneca",

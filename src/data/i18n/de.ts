@@ -273,7 +273,7 @@ export const tldr_de: Record<string, string> = {
   "fda-oce": "Das Onkologie-Zentrum der US-Zulassungsbehörde, das Krebsmedikamente zulässt, die beschleunigte Zulassung und Project Orbis betreibt und über Project Optimus eine bessere Dosisfindung vorantreibt.",
   "fdg-pet": "FDG PET ist die Standard-PET-Untersuchung. Ein radioaktiver Zucker zeigt, welche Gewebe schnell Glukose verbrennen, was die meisten Krebsarten tun.",
   fgfr2: "FGFR2 ist ein Wachstumsrezeptor, der bei Gallengangskrebs fusioniert und bei Magenkrebs überproduziert wird.",
-  "first-line": "Die Erstlinie ist die erste Behandlung bei fortgeschrittenem Krebs; die Zweitlinie ist das, was nach ihrem Versagen folgt, und so weiter.",
+
   flt3: "FLT3 ist eine Kinase, die bei etwa einem Drittel der akuten myeloischen Leukämien mutiert ist; dort verbessert die Zugabe eines Hemmers zur Chemotherapie das Überleben.",
   "fluorescence-guided-surgery": "Ein Farbstoff wird gespritzt, der den Tumor leuchten lässt, damit der Chirurg genau sieht, wo er schneiden muss.",
   fluorouracil: "Die Chemotherapie aus dem Jahr 1957, die bis heute das Rückgrat der Behandlung von Darm-, Magen-, Bauchspeicheldrüsen-, Anal-, Kopf-Hals- und Brustkrebs bildet und als Creme gegen Krebsvorstufen der Haut eingesetzt wird.",
@@ -785,7 +785,7 @@ export const tldr_de: Record<string, string> = {
   "dako-pd-l1-22c3-pharmdx": "Der an pembrolizumab gekoppelte PD-L1-Test und die Quelle des 'CPS'-Wertes, der bei vielen Krebsarten über die Immuntherapie entscheidet.",
   dasatinib: "Dasatinib ist eine BCR::ABL1-Tablette der zweiten Generation, die in Kombination mit der Immuntherapie blinatumomab eine Ph-positive ALL ganz ohne Chemotherapie in eine tiefe Remission bringen kann.",
   "dbt-india": "Die Regierungsbehörde, die Indiens biowissenschaftliche Institute finanziert und über BIRAC die Start-ups hinter den im Land entwickelten CAR-T-Therapien und dem HPV-Impfstoff.",
-  "de-escalation": "Patienten, denen es gut geht, weniger Behandlung geben und denen, bei denen das nicht der Fall ist, mehr, wobei ein Marker wie das Ansprechen in der Bildgebung, ctDNA oder MRD die Entscheidung leitet. Ziel ist es, ebenso viele Menschen mit weniger Schaden zu heilen.",
+
   "de-novo-protein-design": "Ein Protein am Computer von Grund auf zu entwerfen, damit es ein gewähltes Ziel greift, statt eines in einem Tier oder einer Bibliothek zu finden.",
   deauville: "Eine Skala von 1 bis 5 dafür, wie hell ein Lymphom im PET-Scan aufleuchtet, verglichen mit der Leber und der Mitte des Brustkorbs. Werte von 1 bis 3 nach zwei Zyklen bedeuten, dass die Behandlung wirkt, und erlauben ihre Verkürzung; 4 bis 5 bedeutet intensivieren.",
   "decitabine-cedazuridine": "Orales Decitabine-cedazuridine ist eine Tablettenform der hypomethylierenden Chemotherapie, die es älteren AML-Patienten seit Mai 2026 erlaubt, ihr gesamtes venetoclax-Schema zu Hause einzunehmen.",
@@ -1112,7 +1112,7 @@ export const tldr_de: Record<string, string> = {
   "octreotide-lanreotide": "Monatliche Injektionen eines synthetischen Hormons, das sowohl die hormonellen Symptome des Tumors dämpft als auch das Tumorwachstum verlangsamt, die erste Behandlung für die meisten neuroendokrinen Tumoren.",
   "ohsu-knight": "Brian Drukers Institut, an dem imatinib bei CML seine Wirksamkeit bewies und die Präzisionsonkologie geboren wurde; heute mit Schwerpunkt auf Früherkennung und funktioneller Genomik.",
   "olanzapine-appetite-tmh": "Eine randomisierte Studie in Indien mit einer Dosis von 2.5 mg einer jahrzehntealten, sehr billigen Tablette. Sechs von zehn Patienten nahmen mehr als 5 % ihres Gewichts zu, gegenüber einem von zehn unter Placebo.",
-  olympia: "Zeigte, dass ein Jahr PARP-Inhibitor nach der Standardbehandlung das Überleben von Frauen mit vererbten BRCA-Mutationen verbessert.",
+
     "oncology-nutrition": "Screening auf Mangelernährung, Beratung durch Ernährungsfachkräfte, Nahrungsergänzung sowie Sonden- oder intravenöse Ernährung, wo angezeigt, plus die Behandlung der Tumorkachexie, des Muskelschwundsyndroms, das bis zu 80% der Patienten im fortgeschrittenen Stadium betrifft.",
   "oncomine-dx-target-test": "Das erste von der FDA zugelassene Genpanel, das eine einzige Biopsie gleichzeitig mehreren verschiedenen Lungenkrebsmedikamenten zuordnen konnte.",
   "onkoloski-institut-ljubljana": "Sloweniens nationales Krebszentrum, OECI-akkreditiert, Sitz eines der ältesten Krebsregister Europas und Pionier der Elektrochemotherapie.",
@@ -3067,7 +3067,7 @@ export const tldr_de: Record<string, string> = {
   "kenneth-kinzler": "Entdeckte gemeinsam mit anderen APC, das Torwächter-Gen des Darmkrebses, und leitete die ersten Krebsgenomsequenzierungen mit.",
   "kernal-biologics": "Kernal Bio entwirft mRNA-Medikamente, die sich nur im vorgesehenen Zelltyp einschalten, um zum Beispiel die T-Zellen eines Patienten im Körper gegen Krebs zu programmieren, ohne sie zuvor zu entnehmen.",
   "kevan-shokat": "Der Chemiker, dessen Labor die versteckte Tasche in KRAS G12C fand, die das als 'nicht angreifbar' geltende Zielmolekül angreifbar machte.",
-  "keynote-355": "Etablierte Immuntherapie plus Chemotherapie als Erstlinienbehandlung des metastasierten dreifach negativen Brustkrebses mit PD-L1-Expression.",
+
   "keynote-483": "Zeigte, dass die Ergänzung der Standardchemotherapie durch einen PD-1-Blocker beim Mesotheliom hilft, und bot damit eine zweite immuntherapiebasierte Erstlinienoption.",
   "keynote-564": "Das erste Medikament, das Nierenkrebspatienten nach der Operation länger leben lässt, und die erste adjuvante Immuntherapie bei einem soliden Tumor überhaupt, die einen Gesamtüberlebensvorteil zeigte.",
   "keynote-590": "Ergänzte die Erstlinienchemotherapie für alle Arten von Speiseröhrenkrebs um Immuntherapie, mit einem Überlebensvorteil, der nach fünf Jahren Bestand hatte.",

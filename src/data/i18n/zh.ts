@@ -416,7 +416,7 @@ export const tldr_zh: Record<string, string> = {
 
 
 
-    "first-line": "一线是晚期癌症的首个治疗；二线是其失败后的治疗，依此类推。",
+
   "standard-of-care": "指南和专家当前认为最有证据的最佳治疗选择。",
   "accelerated-approval": "FDA基于早期证据（如肿瘤缩小）的批准，条件是随后进行确证试验。",
   "breakthrough-designation": "FDA为看起来显著优于现有选择的药物设立的快速通道。",
@@ -952,7 +952,7 @@ export const tldr_zh: Record<string, string> = {
   "dako-pd-l1-22c3-pharmdx": "与pembrolizumab配套的PD-L1检测，也是决定许多癌症是否使用免疫治疗的“CPS”数值的来源。",
   dasatinib: "Dasatinib是一种第二代BCR::ABL1口服药，与免疫治疗药物blinatumomab联用时，可以使Ph阳性ALL达到深度缓解，完全不需要化疗。",
   "dbt-india": "为印度生命科学研究机构提供资金的政府部门，并通过BIRAC资助了该国自主研发的CAR-T疗法和HPV疫苗背后的初创企业。",
-  "de-escalation": "对病情良好的患者减少治疗，对病情不佳的患者加强治疗，并借助影像学反应、ctDNA或MRD等标志物来做决定。目的是在治愈同样多人的同时减少伤害。",
+
   "de-novo-protein-design": "在计算机上从零开始设计一种蛋白质，使其抓住选定的靶点，而不是从动物或文库中寻找。",
   deauville: "一个1到5分的量表，衡量淋巴瘤在PET扫描上的亮度，以肝脏和胸部中央作为对照。两个周期后评分为1到3分表示治疗有效，可以缩短疗程；4到5分则表示需要加强。",
   "decitabine-cedazuridine": "口服decitabine-cedazuridine是去甲基化化疗药物的片剂版本，自2026年5月起，它让老年AML患者可以在家中完成整个venetoclax治疗方案。",
@@ -1252,7 +1252,7 @@ export const tldr_zh: Record<string, string> = {
   "octreotide-lanreotide": "每月注射一次的合成激素，既能减轻肿瘤引起的激素症状，又能减缓肿瘤生长，是大多数神经内分泌肿瘤的首选治疗。",
   "ohsu-knight": "Brian Druker的研究所，imatinib在这里被证实对CML有效，精准肿瘤学也在此诞生；现在聚焦于早期检测和功能基因组学。",
   "olanzapine-appetite-tmh": "一项在印度进行的随机试验，使用一种已有几十年历史、非常便宜的药片，剂量为2.5 mg。十名患者中有六人体重增加超过5%，而安慰剂组为十分之一。",
-  olympia: "证明在标准治疗后使用一年PARP抑制剂可改善携带遗传性BRCA突变女性的生存。",
+
     "oncology-nutrition": "营养不良筛查、营养师主导的咨询、营养补充剂以及在有指征时的管饲或静脉营养，加上对癌症恶病质的治疗，这是一种影响多达80%晚期患者的肌肉消耗综合征。",
   "oncomine-dx-target-test": "首个获FDA批准的基因检测组合，能够用一次活检同时匹配多种不同的肺癌药物。",
   "onkoloski-institut-ljubljana": "斯洛文尼亚的国家癌症中心，获OECI认证，拥有欧洲最古老的癌症登记之一，也是电化学疗法的先驱。",
@@ -3102,7 +3102,7 @@ export const tldr_zh: Record<string, string> = {
   "kenneth-kinzler": "共同发现了结直肠癌的守门基因APC，并共同领导了首批癌症基因组测序。",
   "kernal-biologics": "Kernal Bio设计仅在目标细胞类型中启动的mRNA药物，例如在体内直接对患者的T细胞进行抗癌编程，而无需先将其取出。",
   "kevan-shokat": "这位化学家的实验室发现了KRAS G12C中的隐藏口袋，使这一'不可成药'的靶点变得可成药。",
-  "keynote-355": "确立了免疫治疗联合化疗作为PD-L1表达的转移性三阴性乳腺癌的一线治疗。",
+
   "keynote-483": "表明在标准化疗基础上加用PD-1阻断剂对间皮瘤有帮助，提供了第二种基于免疫治疗的一线选择。",
   "keynote-564": "首个帮助肾癌患者术后延长生存的药物，也是首个在任何实体瘤中显示总生存获益的辅助免疫治疗。",
   "keynote-590": "在所有类型食管癌的一线化疗基础上加入免疫治疗，生存获益在五年时仍然保持。",

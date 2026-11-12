@@ -224,7 +224,7 @@ export const simpleJ: Record<string, string> = {
   "in-situ": "In situ means abnormal cells that look like cancer but have not broken through the layer they started in, cannot yet spread, and are usually curable.",
   "invasive-cancer": "Invasive means the cancer has grown through the boundary of its starting tissue into surrounding tissue, the step that gives it access to blood and lymph vessels.",
   "lymph-node": "Lymph nodes are small bean-shaped filters where immune cells gather, often the first place a cancer spreads, so surgeons check them to see how far it has gone.",
-  "biopsy": "A biopsy is taking a small piece of suspicious tissue for a pathologist to examine, the only way to confirm cancer and learn its type.",
+  "biopsy": "A biopsy collects cells or tissue for examination. Its findings describe the sampled material and collection time.",
   "histology": "Histology is the study of tissue under the microscope, and a cancer's histology is what kind of cells it is made of and how they are arranged.",
   "biomarker": "A biomarker is anything measurable in the body or tumour that tells you what kind of cancer it is, how it may behave or which drug may work.",
   "tumour-marker": "A tumour marker is a substance a tumour releases into the blood, and rising or falling levels track whether the cancer is growing or responding.",

@@ -1611,7 +1611,6 @@ export const tldr_zh: Record<string, string> = {
   binimetinib: "Binimetinib是与encorafenib搭配的MEK抑制剂；阻断同一信号链中的下一步，可防止肿瘤绕开BRAF阻断。",
   biobanking: "装满经知情同意的肿瘤样本及配套临床数据的冷冻库，每一个生物标志物和药物研发项目都依赖于它。",
   "biocon-biologics": "Biocon的生物类似药部门，是美国和欧洲以外少数拥有FDA和EMA批准的抗癌抗体生物类似药的公司之一，自2022年起拥有Viatris的生物类似药业务。",
-  biopsy: "从可疑组织中取出一小块，供病理医生在显微镜下检查。这是确诊癌症并了解其类型和标志物的唯一方法。",
   "bla-nda": "销售药物的正式申请：小分子药物提交New Drug Application，抗体和细胞疗法提交Biologics License Application（美国），或提交Marketing Authorisation Application（欧盟）。PDUFA日期是FDA承诺作出决定的截止日期。",
   "bone-marrow": "骨骼内部的软组织，所有血细胞都在这里生成。化疗会损伤它，导致血细胞计数下降，从而限制患者能够接受的治疗量。",
   "bone-metastases": "癌症扩散到骨骼，最常见于前列腺癌、乳腺癌、肺癌、肾癌、甲状腺癌和骨髓瘤。它会引起疼痛、骨折和高钙血症，其并发症在试验中被计为“骨相关事件”。",

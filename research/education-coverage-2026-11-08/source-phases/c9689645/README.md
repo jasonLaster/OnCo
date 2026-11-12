@@ -1,6 +1,6 @@
 # Later curriculum census
 
-This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 471 assessed teaching sources and five routing dispositions, with 461 representations in draft fields or proposals. Of 5,363 assessed representation points, 5,353 have field evidence and ten remain partial across ten pages. Another 74 ordinary sources are unreviewed. Overlapping source inventories are not added.
+This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 478 assessed teaching sources and five routing dispositions, with 468 representations in draft fields or proposals. Of 5,496 assessed representation points, 5,486 have field evidence and ten remain partial across ten pages. Another 67 ordinary sources are unreviewed. Overlapping source inventories are not added.
 
 The [surface-targeting checkpoint](../../surface-targeting-2026-11-11/README.md) accounts for seven later and six original guides, including relocated originals, 135 section signatures and separate 169/129-row denominators. One exhaustive negative approval-inventory claim remains source-open. Source depth, semantic representation, rendered fields and main/live integration remain distinct.
 
@@ -23,3 +23,5 @@ The [imaging/follow-up checkpoint](../../imaging-follow-up-2026-11-12/README.md)
 The [statistics checkpoint](../../study-statistics-2026-11-12/README.md) adds five later-only lessons, 58 section signatures and 121 obligations. Ten root owners carry 101; the other 20 remain only in an unapplied proposal for peer #371. Exact original-path and basename absence keeps the original denominator unchanged.
 
 The [repair/resistance checkpoint](../../repair-resistance-2026-11-12/README.md) adds five later lessons and 126 obligations; three original counterparts contribute 70 separately. All eight version identities and 98 section signatures reproduce. The immutable source-first inventory and its explicit non-credit correction are retained, rather than silently changing the frozen denominator.
+
+The [immunotherapy checkpoint](../../immunotherapy-2026-11-12/README.md) adds seven later lessons and 133 obligations, with seven unchanged-teaching original counterparts retained separately. All fourteen identities and 146 section signatures reproduce. Source depth, field representation, schematic interpretation and independent acceptance remain distinct.

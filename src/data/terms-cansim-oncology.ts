@@ -421,7 +421,7 @@ export const cansimOncologyTerms: TermInput[] = [
     tldr: "MutSig asks which genes are mutated more often than the background mutation rate would predict, separating likely drivers from long or late-replicating genes that collect passengers.",
     summary: "Lawrence and colleagues showed that mutation rates vary enormously between patients and across the genome (with expression level and replication timing) and that ignoring this heterogeneity produces spurious driver genes; MutSigCV corrects for it using patient-specific rates and gene covariates. It became the standard driver test in TCGA marker papers alongside GISTIC for copy number. Like GISTIC it is distributed under a Broad research licence rather than an open repository.",
     terms: ["driver-mutation", "variant-calling", "gistic"], related: ["intogen"] }),
-  t({ id: "batch-effects", name: "Batch effects and harmonisation", category: GEN, aka: ["batch effects", "batch effect", "batch correction", "ComBat", "platform effect", "cross-platform harmonisation", "harmonisation across platforms"],
+  t({ id: "batch-effects", name: "Batch effects and harmonisation", category: GEN, aka: ["batch effects","batch effect","batch correction","platform effect","cross-platform harmonisation","harmonisation across platforms"],
     wikipedia: W("Batch_effect"), links: [
   {
     "label": "Johnson, Li and Rabinovic, Adjusting batch effects in microarray expression data using empirical Bayes methods (ComBat, Biostatistics 2007)",

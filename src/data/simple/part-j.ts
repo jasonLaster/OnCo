@@ -380,7 +380,7 @@ export const simpleJ: Record<string, string> = {
   "cytogenetics": "Cytogenetics is looking at a cancer's chromosomes under the microscope to find missing, extra, broken or swapped pieces, long the main risk-sorting tool in blood cancers.",
   "flow-cytometry": "Flow cytometry streams cells one by one past lasers and reads the surface markers each carries, which is how leukaemias and lymphomas are typed and residual disease counted.",
   "blasts": "Blasts are immature blood cells that should mature in the marrow but in acute leukaemia multiply without growing up, with twenty percent or more defining the disease.",
-  "cfdna": "Cell-free DNA is short pieces of DNA floating in the blood shed by dying cells, and the small tumour-derived fraction is what liquid biopsies fish out.",
+  "cfdna": "Cell-free DNA is DNA outside cells in a sample. Some may come from a tumour, but the total DNA amount is not a count of cancer cells.",
   "umrd": "Undetectable MRD means the test for leftover cancer cells found none, down to about one cell in a million, the deepest remission we can measure.",
   "deauville": "The Deauville score rates how brightly a lymphoma lights up on a PET scan, and a low score after two treatment cycles lets doctors shorten treatment.",
   "molecular-response": "Molecular response measures how far the leukaemia gene signal in the blood has fallen in chronic myeloid leukaemia, and deep responses let some patients stop their pills.",

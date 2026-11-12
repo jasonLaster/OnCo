@@ -740,7 +740,7 @@ export const tldr_fr: Record<string, string> = {
   "cell-cycle": "La séquence ordonnée que suit une cellule pour copier son ADN et se diviser en deux, avec des points de contrôle en chemin où elle s'arrête pour vérifier l'absence de dommages. Les cellules cancéreuses passent outre ces points de contrôle.",
   "centre-leon-berard": "Le centre de lutte contre le cancer de Lyon, référence mondiale pour les sarcomes et les cancers rares, dirigé par Jean-Yves Blay, qui préside également UNICANCER.",
   cervavac: "Le premier vaccin anti-HPV fabriqué en Inde, qui protège contre les deux types de virus responsables de la plupart des cancers du col de l'utérus et les deux types responsables des verrues génitales, à un prix conçu pour un programme national.",
-  cfdna: "De courts fragments d'ADN flottant dans le sang, libérés par les cellules qui meurent dans tout le corps. La plupart proviennent de cellules normales ; la petite fraction issue de la tumeur (ctDNA) est ce que les biopsies liquides vont pêcher.",
+
   challenge: "Le premier essai randomisé à montrer qu'un programme d'exercice encadré après le traitement d'un cancer réduit les récidives et les décès, dans le cancer du côlon.",
   champalimaud: "La fondation privée de recherche et clinique de Lisbonne, connue pour ses recommandations sur le cancer du sein avancé, la chirurgie des cancers digestifs et la recherche à la croisée du cancer et des neurosciences.",
   "charles-geyer": "Spécialiste des essais dans le cancer du sein, il a codirigé OlympiA, montrant que l'olaparib adjuvant améliore la survie chez les porteurs de BRCA.",

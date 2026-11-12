@@ -909,7 +909,7 @@ export const tldr_es: Record<string, string> = {
   "cell-cycle": "La secuencia ordenada por la que pasa una célula para copiar su ADN y dividirse en dos, con puntos de control a lo largo del camino en los que se detiene para comprobar si hay daños. Las células cancerosas se saltan los puntos de control.",
   "centre-leon-berard": "El centro oncológico de Lyon, referencia mundial en sarcomas y cánceres raros, dirigido por Jean-Yves Blay, quien también preside UNICANCER.",
   cervavac: "La primera vacuna contra el VPH fabricada en India, que protege contra los dos tipos del virus que causan la mayoría de los cánceres de cuello uterino y los dos que causan verrugas genitales, a un precio pensado para un programa nacional.",
-  cfdna: "Fragmentos cortos de ADN que flotan en la sangre, liberados por células que mueren en todo el cuerpo. La mayor parte procede de células normales; la pequeña fracción derivada del tumor (ctDNA) es lo que las biopsias líquidas pescan.",
+
   challenge: "El primer ensayo aleatorizado que demostró que un programa de ejercicio con entrenador tras el tratamiento del cáncer reduce las recaídas y las muertes, en cáncer de colon.",
   champalimaud: "La fundación privada de investigación y clínica de Lisboa, conocida por sus guías sobre cáncer de mama avanzado, la cirugía de cánceres digestivos y la investigación en cáncer y neurociencia.",
   "charles-geyer": "Investigador de ensayos en cáncer de mama que codirigió OlympiA, demostrando que olaparib adyuvante mejora la supervivencia en portadores de BRCA.",

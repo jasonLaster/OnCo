@@ -1,5 +1,19 @@
 # Corrections
 
+### Reading residual-disease monitoring results, 12 November 2026
+
+The [monitoring-guide assessment](research/education-coverage-2026-11-08/residual-monitoring-guides-2026-11-12/README.md) separates a sampled blood signal, regional imaging, removed tissue and evidence for a result-guided action. The fictional report, imaging and treatment examples now have self-contained explanations in the canonical records.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [Cell-free DNA](/terms/cfdna/) and [tumour-informed assays](/technologies/tumour-informed-assay/) | Leads gave an unqualified tumour-fraction range, product-category claims and an unnecessarily narrow tumour-reference description | Complete primary abstracts, targeted assay passages and FDA's November 2024 drug-development guidance | States the specimen mixture, reference quality, target list and intended use; keeps monitoring, profiling and screening questions separate without a universal sensitivity ranking |
+| 2026-11-12 | [Residual-disease testing](/technologies/mrd-testing/) and [ctDNA units](/terms/ctdna-units/) | The lead and retained catalogue encouraged cross-method comparisons and exhaustive subclone-detection claims without their required assumptions | Specimen and assay comparisons, analytical-limit definitions and the complete fictional sampling exercises | Keeps quantities, calibration, input and calling rules together; separates pooled signal detection from validated clone measurement and below-range detection from an exact fold change |
+| 2026-11-12 | [Blood and imaging discordance](/terms/ctdna-imaging-discordance/) | The short account did not carry the complete measurement comparison or worked residual-tissue course | Primary MRI methods, raw modality definitions and NRG-BR005's actual complete or near-complete imaging eligibility | Explains regional contrast-dependent features, finite blood sampling, all four interpretation patterns and why favourable measurements do not establish tissue pCR or a useful treatment change |
+| 2026-11-12 | [Clonal haematopoiesis](/terms/clonal-haematopoiesis/) | The plasma-origin sentence treated a method category as sufficient to resolve false positives | Shah's named tumour cohort and the Bolton and Razavi studies at their recorded reading depth | Requires origin assessment within tumour and blood-cell coverage and sensitivity; preserves ambiguous assignments and distinguishes compartments from a gene name alone |
+| 2026-11-12 | [Magbanua's I-SPY2 ctDNA analysis](/papers/paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021/) | The account blurred the 84-person cohort with the 60-person joint post-treatment analysis and implied equivalence from similar observed outcomes | Primary abstract and targeted methods and analysis passages | Retains 291 available plasma samples, the 17 pCR and 43 non-pCR groups, both hazard-ratio intervals and the absence of a randomised blood-guided strategy; the exact denominator behind the reported final-draw 9% remains an explicit audit gap |
+
+Eight stale unreviewed cfDNA translations are withdrawn to English fallback and one Simple English entry is corrected. Earlier links and notes remain apart from two explicitly recorded MRD note corrections. No routine testing interval, individual treatment decision, independent expert review, language approval, main coverage or deployment is implied.
+
 ### Treatment setting and the early-TNBC sequence, 12 November 2026
 
 The [treatment-setting assessment](research/education-coverage-2026-11-08/early-tnbc-sequencing-2026-11-12/README.md) keeps the treatment strategy, its component jobs, the surgical findings and the next evidence question separate. Historical treatment comparisons do not establish the benefit of adding those treatments to pembrolizumab.

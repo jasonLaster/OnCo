@@ -740,7 +740,7 @@ export const tldr_de: Record<string, string> = {
   "cell-cycle": "Die geordnete Abfolge, die eine Zelle durchläuft, um ihre DNA zu kopieren und sich zu teilen, mit Kontrollpunkten auf dem Weg, an denen sie anhält, um auf Schäden zu prüfen. Krebszellen überfahren die Kontrollpunkte.",
   "centre-leon-berard": "Das Krebszentrum von Lyon, eine weltweite Referenz für Sarkome und seltene Krebsarten, geleitet von Jean-Yves Blay, der zugleich UNICANCER vorsteht.",
   cervavac: "Indiens erster im eigenen Land hergestellter HPV-Impfstoff, der gegen die beiden Virustypen schützt, die die meisten Gebärmutterhalskrebsfälle verursachen, und die beiden, die Genitalwarzen verursachen, zu einem Preis, der für ein nationales Programm gedacht ist.",
-  cfdna: "Kurze DNA-Stücke, die im Blut treiben und von sterbenden Zellen im ganzen Körper freigesetzt werden. Das meiste stammt aus normalen Zellen; der kleine tumorbürtige Anteil (ctDNA) ist das, was Flüssigbiopsien herausfischen.",
+
   challenge: "Die erste randomisierte Studie, die zeigte, dass ein angeleitetes Bewegungsprogramm nach der Krebsbehandlung Rückfälle und Todesfälle senkt, beim Dickdarmkrebs.",
   champalimaud: "Lissabons private Forschungsstiftung und Klinik, bekannt für Leitlinien zum fortgeschrittenen Brustkrebs, Chirurgie bei Krebs des Verdauungstrakts und Forschung an der Schnittstelle von Krebs und Neurowissenschaften.",
   "charles-geyer": "Brustkrebs-Studienarzt, der OlympiA mitleitete und zeigte, dass adjuvantes olaparib das Überleben bei BRCA-Trägern verbessert.",

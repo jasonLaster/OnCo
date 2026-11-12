@@ -30,7 +30,9 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
       { label: "Magbanua et al., npj Breast Cancer 2021: ctDNA in mean tumour molecules per mL plasma against MRI functional tumour volume", url: "https://doi.org/10.1038/s41523-021-00239-3" },
       { label: "Santonja et al., EMBO Mol Med 2023: tumour-informed and tumour-naive ctDNA assays compared, allele fractions to 2.4 parts per million", url: "https://doi.org/10.15252/emmm.202216505" },
       { label: "FDA, Use of Circulating Tumor DNA for Curative-Intent Solid Tumor Drug Development, November 2024", url: "https://www.fda.gov/media/183874/download" },
-    ],
+
+    {"label":"Armbruster and Pry, 2008: limit of blank, detection and quantitation","url":"https://pubmed.ncbi.nlm.nih.gov/18852857/"}
+  ],
     tags: ["biomarker", "measurement"],
     related: ["ctdna", "cfdna", "ctdna-tumour-fraction", "vaf", "mrd"],
     technologies: ["liquid-biopsy", "mrd-testing"],
@@ -48,9 +50,12 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
   "Method limit, finite input: the plasma volume drawn is not the volume or the number of molecules recovered and evaluated. Low molecular counts, changes in background DNA, poor recovery or incompatible calibration all limit comparison across assays, and a printed zero is not a count of zero cancer cells anywhere in the body.",
   "Evidence read: in Magbanua's 84-patient pilot of neoadjuvant treatment, ctDNA in MTM/mL was correlated with MRI functional tumour volume at every time point (Spearman rho 0.42 to 0.49). Santonja's comparison reported allele fractions down to 2.4 PPM for hybrid-capture sequencing of 1,347 to 7,491 tumour-identified mutations and 4.7 PPM for multiplex PCR of 21 to 47 structural variants. Each figure belongs to its assay and cohort.",
   "A trend also needs the collection time, treatment context, assay version and quantitative range. In its November 2024 drug-development guidance, FDA asks for precision, accuracy and detection-limit evaluation across relevant inputs and cut-offs, using representative clinical specimens and appropriately comparable reference material. A printed number below another assay's nominal detection limit does not establish that the other assay would miss that sample: the measured quantity, specimen, input, recovery and calling rules may differ. A reference-material result is not automatically a clinical sensitivity estimate."
-],
+,
+    "Consider a fictional assay estimating tumour fraction at 6 parts per million (PPM) and then 2 PPM. Both samples are called detected, but the second is below the assay's reliable quantitation range. The printed estimates fall by two-thirds; they do not establish that the cancer volume fell by two-thirds. Retain the qualifying calls and uncertainty, because shedding and background DNA can change the signal. A second method reporting molecules per millilitre cannot simply be placed on this fraction scale. Even a matching unit label does not establish matching calibration. Keeping serial methods and input comparable helps interpretation without removing biological variation.",
+    "The blank, detection and quantitation limits answer different questions. The blank limit is the highest apparent analyte concentration expected from replicate samples with no analyte; the detection limit is the lowest concentration reliably distinguished from that background; the quantitation limit is the lowest concentration meeting predefined bias and imprecision goals (Armbruster and Pry, 2008). Quantitation and detection limits may coincide or differ. A qualifying detection below a validated quantitative range supports presence more strongly than an exact fold change. For a read-based variant allele fraction, the denominator is informative reads covering that locus, not cancer cells or plasma volume; keep a molecule-based method's own definition instead."
+  ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-12"
 }),
 
   t({
@@ -80,7 +85,14 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
   "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
   "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
 }
-],
+,
+    {"label":"Magbanua et al., 2025: ctDNA and residual cancer burden in 723 high-risk I-SPY2 patients","url":"https://doi.org/10.1038/s41467-025-65432-5"},
+    {"label":"NCI: mammography definition","url":"https://www.cancer.gov/publications/dictionaries/cancer-terms/def/mammography"},
+    {"label":"NCI: ultrasound definition","url":"https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ultrasound"},
+    {"label":"NCI: PET-CT scan definition","url":"https://www.cancer.gov/publications/dictionaries/cancer-terms/def/pet-ct-scan"}
+  ,
+      {"label":"Vascular contributors to breast MRI enhancement: primary angiogenesis study, 2021","url":"https://doi.org/10.1038/s41523-021-00247-3"}
+    ],
     tags: ["biomarker", "measurement"],
     related: ["ctdna", "mrd", "clonal-haematopoiesis", "ctdna-tumour-fraction"],
     technologies: ["liquid-biopsy", "mrd-testing", "mri"],
@@ -99,9 +111,14 @@ export const EDUCATION_BLOOD_IMMUNE_MEASUREMENT_TERMS: TermInput[] = [
   "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome."
 ,
 "In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists."
-],
+,
+    "The two-window comparison is about scope. A finite plasma aliquot contains extracellular DNA, of which tumour-derived fragments may be one part; breast MRI observes regional, sequence-dependent features rather than individual cancer cells. Contrast enhancement reflects vascular and contrast-delivery behaviour as well as the acquisition protocol; it is not a one-to-one viable-cell count. In the 84-person I-SPY2 MRI pilot, functional tumour volume summed voxels meeting 70% enhancement about two and a half minutes after contrast, inside a manually drawn box around the lesion. A camera-and-stream analogy illustrates those two sampled views without promising that every tumour sheds DNA. Keep the imaging method visible: mammography uses X-rays, ultrasound uses sound, and PET/CT combines tracer-distribution images with anatomical CT images. A formal response category needs its framework, comparison timepoint and findings outside a selected lesion measurement. None of these measurements is an interchangeable all-body tumour-cell number.",
+    "Four patterns illustrate the reading boundary. A smaller lesion and lower detected blood signal mean that both recorded measures fell in their own units, not that pCR or eradication of distant disease is proved. A residual scan finding with undetected blood leaves viability, treatment effects and other causes unresolved. Detected blood with no suspicious finding in the scanned region does not establish the signal's location, full extent or best intervention. If neither shows qualifying evidence, neither has proved zero microscopic disease or justified omitting indicated treatment. These are interpretation examples, not an action algorithm; disagreement alone does not establish pseudoprogression.",
+    "In a fictional course, a breast lesion becomes less enhancing, blood changes from detected to not detected, and surgery later finds residual invasive cancer. There is no contradiction: imaging features, a finite molecular sample and removed tissue answer different questions. Only the specified tissue assessment establishes the residual disease in this example. A smaller scan finding and undetected blood can therefore be favourable observations without confirming pCR. Conversely, a later positive blood result with clear regional breast imaging calls for review of sample qualification, origin, dates and clinical context; it is not itself a diagnosis of distant metastasis.",
+    "Magbanua and colleagues' 2025 analysis evaluated 723 high-risk I-SPY2 patients across hormone receptor-positive/HER2-negative, triple-negative and HER2-positive subtypes. Combining ctDNA with residual cancer burden refined prognostic groups, but analyses within those groups used smaller subsets, some too small for multivariable adjustment. The authors also found retained patient-specific assay variants in sampled resistant tumours from patients whose post-treatment plasma was negative. These results support studying risk information and shedding; they do not turn negative presurgical blood into tissue pCR or demonstrate that a blood-guided omission strategy improves outcomes."
+  ],
 
-"asOf": "2026-11-11"
+"asOf": "2026-11-12"
 }),
 
   t({

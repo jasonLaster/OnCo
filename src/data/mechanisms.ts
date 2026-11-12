@@ -929,7 +929,7 @@ const pathways: PathwayInput[] = [
   "ctdna-imaging-discordance"
 ], name: "Clonal haematopoiesis (CHIP)", wikipedia: W("Clonal_hematopoiesis"),
     tldr: "Some blood-forming cells acquire mutations and form an expanding clone. This can affect blood tests for tumour DNA and is distinct from a diagnosis of leukaemia.",
-    summary: "Clonal haematopoiesis of indeterminate potential (CHIP, a defined category within blood-cell clonal expansion; see the source-specific variant-fraction and clinical criteria below) is present in >10% of people over 70. It confers ~0.5-1%/year progression to myeloid neoplasm, doubles cardiovascular risk via inflammasome-primed macrophages, and predicts therapy-related MDS/AML after PARP inhibitors, platinum, and radioligand therapy. For liquid biopsy, CHIP variants are the main source of false-positive ctDNA calls, so tumour-informed or paired white-cell sequencing is needed. Interventions are preventive (avoid unnecessary genotoxic exposure, monitor) with IL-1β/IL-6 blockade under study.",
+    summary: "Clonal haematopoiesis of indeterminate potential (CHIP, a defined category within blood-cell clonal expansion; see the source-specific variant-fraction and clinical criteria below) is present in >10% of people over 70. It confers ~0.5-1%/year progression to myeloid neoplasm, doubles cardiovascular risk via inflammasome-primed macrophages, and predicts therapy-related MDS/AML after PARP inhibitors, platinum, and radioligand therapy. For plasma testing, blood-cell clones can contribute variants that require origin assessment using matched blood-cell data, tumour evidence and the stated assay limits; some assignments remain ambiguous. Interventions are preventive (avoid unnecessary genotoxic exposure, monitor) with IL-1β/IL-6 blockade under study.",
     analogy: "Weeds in the blood's seed bank. Harmless individually, they spread with age and after chemical sprays, some turn into leukaemia, and their DNA litters the blood, so a test for tumour DNA can mistake weeds for cancer.",
     nodes: [
       { id: "hsc", label: "Ageing HSCs", x: 15, y: 50 }, { id: "mut", label: "DNMT3A, TET2, ASXL1, PPM1D, TP53", x: 40, y: 50, targetId: "tp53" }, { id: "chip", label: "CHIP clone (VAF ≥2%)", x: 65, y: 50 },
@@ -947,7 +947,9 @@ const pathways: PathwayInput[] = [
   "Fictional example: a plasma assay detects a variant that sensitive matched blood-cell sequencing finds at 0.8% VAF. The blood result supports a blood-cell contribution even below the 2% cut-off, but it does not make the variant CHIP or exclude a tumour contribution, because tumour evidence, shared variants and each method's limits still apply. Matched sequencing has its own gene coverage, depth and detection rules, so a clone below its sensitivity can stay unseen, and a clone finding is not a leukaemia diagnosis or a solid-tumour treatment instruction.",
   "Reading the figures: a variant allele fraction counts variant alleles among the alleles evaluated and is not automatically the percentage of cells. Acquired (somatic) means not inherited and does not mean malignant. There is no age at which a plasma variant can simply be dismissed. Sequential samples show clones with DNA-damage-response mutations outgrowing others after radiation, platinum or topoisomerase II inhibitor exposure (Bolton 2020), which is selection of clones that can already be present and does not mean every new detection was caused by treatment.",
   "For an origin comparison, keep plasma, extracted blood-cell DNA and any separately sampled tumour clearly identified, with collection dates relative to treatment. The report needs the variants, coverage, allele fractions, detection limits, identity and contamination checks, and any unresolved source assignment. A clone result alone does not locate a solid-tumour lesion, predict whether that particular clone will progress, or choose a solid-tumour drug. A later blood-cell comparator can help, but it is not a time-matched measurement of the earlier sample. A clone-classification rule or origin filter does not itself establish regulatory approval or clinical validation of the sequencing method."
-],
+,
+    "A gene name does not settle a plasma variant's source. Shah and colleagues found TP53 to be the most frequently mutated gene in their 2012 primary triple-negative breast-cancer cohort; Bolton's 2020 study found that radiation, platinum and topoisomerase II inhibitor exposure selected blood-cell clones with TP53 and other DNA-damage-response mutations. Those are different populations and compartments. A tumour reference and a matched blood-cell comparison help answer different questions, each within its own coverage and sensitivity. A newly confirmed tumour alteration can also reflect evolution rather than a blood-cell clone or technical noise."
+  ],
     links: [
   {
     "label": "Jaiswal et al., Age-related clonal hematopoiesis associated with adverse outcomes (NEJM 2014)",
@@ -973,10 +975,12 @@ const pathways: PathwayInput[] = [
     "label": "Khoury et al.: WHO myeloid and histiocytic/dendritic classification (2022)",
     "url": "https://doi.org/10.1038/s41375-022-01613-1"
   }
-],
+,
+    {"label":"Shah et al., 2012: clonal and mutational evolution in primary triple-negative breast cancer","url":"https://doi.org/10.1038/nature10933"}
+  ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-12"
 }),
   p({
     id: "field-cancerisation", related: ["ageing-tissue-field-theory"], name: "Field cancerisation", wikipedia: W("Field_cancerization"),

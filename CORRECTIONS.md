@@ -1,5 +1,19 @@
 # Corrections
 
+### Imaging measurements and breast follow-up, 12 November 2026
+
+The [imaging and follow-up assessment](research/education-coverage-2026-11-08/imaging-follow-up-2026-11-12/README.md) distinguishes signal, image pattern, calculated quantity, tissue diagnosis and a useful clinical strategy. The pinned original and later inventories remain separate.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [Breast follow-up](/protocols/breast-cancer-follow-up-after-treatment/) | The record said no later ASCO guideline was found and presented the 2013 calendar as current | Resolved 2026 ASCO abstract and official ASCO/Guideline Central practice summary | Adds risk-based intensity and the age, risk, anatomy and time conditions for mammography; preserves older quotations explicitly as history and names the original-journal access limit |
+| 2026-11-12 | [MRI](/technologies/mri/), [ultrasound](/technologies/ultrasound/) and [mammography](/technologies/mammography/) | Broad leads and brief summaries did not carry the measured quantity, complete examples or detection limits | Primary MRI abstracts and targeted methods, raw official modality descriptions and complete source figures | Separates contrast, morphology, length, selected-voxel volume, acoustic images and X-ray reconstructions from viable-cell amount and sampled tissue; withdraws unsupported general rankings, screening percentages and cost/deployment catalogue claims from these leads |
+| 2026-11-12 | [PET](/technologies/pet/), [FDG PET](/technologies/fdg-pet/) and [PET/CT](/technologies/pet-ct/) | Signal was described as tumour activity, localisation as exact and availability as universal | Technical EANM 2015 passages and official PET descriptions | Names tracer, background, coverage, time, uptake quantity and partial-volume limits; keeps the inaccessible 2025 revision distinct from the technical version actually read |
+| 2026-11-12 | [Immuno-PET](/technologies/immuno-pet/) and [granzyme B PET](/technologies/granzyme-b-pet/) | The antibody account included a non-antibody tracer and implied any binder could provide complete target imaging | Resolved primary feasibility studies and targeted CD8/granzyme passages | Keeps antibody-derived imaging separate from peptide/peptidomimetic imaging; preserves study populations, competition, normal-organ signal and exploratory outcome scope without a scan-guided treatment claim |
+| 2026-11-12 | [Theranostics](/terms/theranostics/) and [dosimetry](/technologies/radioligand-dosimetry/) | The short account lacked the complete product-bridging and unit exercises | Named PSMA guideline abstracts, targeted FDA 2019 nonclinical guidance and the source diagram | Adds vector, activity, mass, time and dose distinctions; a bright diagnostic scan or shared target does not establish a different therapeutic product's distribution, absorbed dose or clinical benefit |
+
+All earlier notes, links and protocol quotations are preserved. Fifty-six stale unreviewed translations are withdrawn to English fallback and seven Simple English entries corrected. The source-first inventory retains one explicitly documented transcription erratum. These are draft data changes with no main, live, expert, learner or language approval.
+
 ### Reading residual-disease monitoring results, 12 November 2026
 
 The [monitoring-guide assessment](research/education-coverage-2026-11-08/residual-monitoring-guides-2026-11-12/README.md) separates a sampled blood signal, regional imaging, removed tissue and evidence for a result-guided action. The fictional report, imaging and treatment examples now have self-contained explanations in the canonical records.

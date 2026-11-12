@@ -271,7 +271,7 @@ export const tldr_de: Record<string, string> = {
   fap: "FAP ist ein Protein auf den Gerüstzellen, die viele Tumoren umgeben, und lässt daher fast jeden soliden Krebs im PET-Scan aufleuchten.",
   "fapi-pet": "FAPI PET ist eine PET-Untersuchung, die das Stützgerüst um fast jeden soliden Tumor sichtbar macht, einschließlich Krebsarten, die der Standard-Zuckerscan übersieht.",
   "fda-oce": "Das Onkologie-Zentrum der US-Zulassungsbehörde, das Krebsmedikamente zulässt, die beschleunigte Zulassung und Project Orbis betreibt und über Project Optimus eine bessere Dosisfindung vorantreibt.",
-  "fdg-pet": "FDG PET ist die Standard-PET-Untersuchung. Ein radioaktiver Zucker zeigt, welche Gewebe schnell Glukose verbrennen, was die meisten Krebsarten tun.",
+
   fgfr2: "FGFR2 ist ein Wachstumsrezeptor, der bei Gallengangskrebs fusioniert und bei Magenkrebs überproduziert wird.",
 
   flt3: "FLT3 ist eine Kinase, die bei etwa einem Drittel der akuten myeloischen Leukämien mutiert ist; dort verbessert die Zugabe eines Hemmers zur Chemotherapie das Überleben.",
@@ -329,7 +329,7 @@ export const tldr_de: Record<string, string> = {
   ifosfamide: "Ifosfamide ist eine alkylierende Chemotherapie, die beim Sarkom mit doxorubicin und beim Ewing-Sarkom mit etoposide kombiniert wird und zusammen mit einem blasenschützenden Medikament gegeben wird.",
   imaging: "Die Bildgebung umfasst die Möglichkeiten, Krebs im Körperinneren sichtbar zu machen, ohne zu schneiden, vom Röntgenbild bis zu Tracern, die ein einzelnes Protein aufleuchten lassen.",
   imatinib: "Das Medikament, das 2001 die Ära der zielgerichteten Therapie einleitete und die chronische myeloische Leukämie zu einer beherrschbaren Erkrankung mit nahezu normaler Lebenserwartung machte.",
-    "immuno-pet": "PET-Untersuchungen mit radioaktiv markierten Antikörpern oder deren Fragmenten, um jedes Protein sichtbar zu machen, das ein Antikörper erreichen kann, einschließlich Immunzellen im Inneren von Tumoren.",
+
   immunotherapy: "Die Immuntherapie hilft dem eigenen Immunsystem des Patienten, den Krebs zu erkennen und zu zerstören.",
   "immunotherapy-roadmap": "Die Roadmap der Immuntherapie ist ein Bogen über 130 Jahre: von der Injektion von Bakterien in Tumoren über das Lösen der Immunbremsen bis heute zum gezielten Entwerfen der Immunantwort selbst mit Impfstoffen, Engagern und Zellen.",
   "imrt-igrt": "Strahlung, die präzise an die Form des Tumors angepasst und täglich mit Bildgebung kontrolliert wird, um umliegende Organe zu schonen.",
@@ -459,7 +459,7 @@ export const tldr_de: Record<string, string> = {
   "low-dose-ct-screening": "Eine jährliche strahlungsarme CT-Untersuchung für aktuelle und ehemalige starke Raucher, die Lungenkrebs früh genug entdeckt, um ihn zu heilen.",
   lutathera: "Lutetium-177 dotatate war die erste moderne Radioligandentherapie (2018), für neuroendokrine Tumoren, und wird heute in der Erstlinie eingesetzt.",
   "male-breast-cancer": "Auch Männer bekommen Brustkrebs, meist eine hormonempfindliche Form, die als Knoten in der Nähe der Brustwarze auffällt. Er wird weitgehend wie bei Frauen behandelt, mit Operation, Strahlentherapie und tamoxifen, und erbliche BRCA2-Mutationen werden so häufig gefunden, dass jedem diagnostizierten Mann eine genetische Testung angeboten wird. Die wichtigste laufende Verbesserung ist, Männer in Studien einzuschließen, damit ihre Behandlung nicht länger von der der Frauen entlehnt wird.",
-  mammography: "Strahlungsarme Röntgenaufnahme der Brust zur Früherkennung. Neuere 3D-Versionen finden mehr Krebsfälle bei weniger Fehlalarmen.",
+
   "mayo-clinic": "Durchweg das insgesamt bestbewertete Krankenhaus der USA, mit einer starken Protonentherapie und dem ersten US-Kohlenstoffionenzentrum im Bau.",
   mced: "Ein einzelner Bluttest, der Dutzende von Krebsarten auf einmal erkennen soll, darunter auch solche, für die es heute keine Früherkennung gibt.",
   "md-anderson": "MD Anderson ist nach Patientenzahl das größte Krebszentrum der Welt, mit dem größten Phase-1-Programm und einem führenden CAR-NK-Programm.",
@@ -498,8 +498,8 @@ export const tldr_de: Record<string, string> = {
   penile: "Peniskrebs ist ein Krebs vom Hauttyp (Plattenepithelkarzinom), etwa die Hälfte der Fälle wird durch HPV verursacht, dasselbe Virus, das hinter Gebärmutterhalskrebs steckt. Er ist sehr gut heilbar, wenn er früh erkannt wird, die Operation ist weit weniger verstümmelnd geworden, und die Erkrankung lässt sich durch HPV-Impfung und Hygiene verhindern. Die schwierigen Fälle sind jene mit Befall der Lymphknoten, bei denen Chemotherapie plus Operation und jetzt auch Immuntherapie geprüft werden.",
   "penn-abramson": "Wo CAR-T zu einem Medikament wurde (June, Levine; Emily Whitehead), mRNA arzneimitteltauglich gemacht wurde (Karikó, Weissman) und die PARP-PET erfunden wurde.",
   pertuzumab: "Ein zweiter HER2-Antikörper, der an einer anderen Stelle als trastuzumab bindet und HER2 daran hindert, sich mit HER3 zu paaren; zusammen verlängerten sie das Überleben in CLEOPATRA um 16 Monate.",
-  pet: "Eine Untersuchung, die zeigt, wo sich ein radioaktiver Marker ansammelt, und so abbildet, was Tumoren tun, statt wie sie aussehen.",
-  "pet-ct": "PET und CT in einem Gerät, sodass die auffälligen Herde im PET exakten Stellen im CT zugeordnet werden.",
+
+
   "peter-mac": "Peter Mac ist Australiens einziges reines Krebskrankenhaus und führend in Theranostik, CAR-T und Strahlentherapie.",
   pfizer: "Kaufte Seagen für 43 Milliarden Dollar, um zu einem führenden ADC-Anbieter zu werden; stellt außerdem Ibrance, Lorbrena, Braftovi und den ersten PROTAC her.",
   pfs: "Das progressionsfreie Überleben (PFS) ist die Zeit, die Patienten leben, ohne dass ihr Krebs wächst.",
@@ -540,7 +540,7 @@ export const tldr_de: Record<string, string> = {
 
   "mrd-negative-cr": "MRD-negative komplette Remission bedeutet, dass nicht nur unter dem Mikroskop keine Leukämie mehr sichtbar ist, sondern auch mit tausendfach empfindlicheren Tests keine mehr nachweisbar ist. Sie ist das Ziel der modernen Leukämiebehandlung.",
 
-  mri: "Nutzt Magnete und Radiowellen, ohne Strahlung, um sehr detaillierte Bilder von Weichgewebe wie Gehirn, Brust, Leber und Prostata zu liefern.",
+
 
   mskcc: "Das weltweit bestplatzierte Krebskrankenhaus, Heimat der MSK-IMPACT-Sequenzierung, der Studie zu dostarlimab beim Rektumkarzinom und von CAR-T-Pionieren.",
   "multiple-endocrine-neoplasia": "Die MEN-Syndrome sind vererbte Defekte in einem einzelnen Gen, die im Laufe des Lebens Tumoren in mehreren Hormondrüsen verursachen. Da das Gen bereits im Kindesalter nachgewiesen werden kann, können gefährdete Angehörige getestet und überwacht werden und sich bei MEN2 die Schilddrüse entfernen lassen, bevor Krebs entsteht; und für MEN2-Schilddrüsenkrebs, der sich doch ausbreitet, gibt es heute eine zielgerichtete Tablette, selpercatinib, die das fehlerhafte RET-Protein blockiert.",
@@ -622,7 +622,7 @@ export const tldr_de: Record<string, string> = {
   uclh: "Das Universitätsklinikum im Zentrum Londons und eines von zwei Protonentherapiezentren des NHS, gestützt auf das Krebsinstitut des UCL und dessen Forschung zu CAR-T und zur Evolution von Lungenkrebs.",
   "ucsd-moores": "San Diegos vom NCI ausgewiesenes Comprehensive Cancer Center, wo der Anti-GD2-Antikörper dinutuximab und der ROR1-Antikörper hinter zilovertamab entwickelt wurden.",
   ucsf: "Die UCSF ist der Geburtsort der Onkogen-Biologie (Bishop, Varmus) und der medikamentösen Hemmung von KRAS G12C (Shokat) und führend bei den adaptiven I-SPY-Brustkrebsstudien.",
-  ultrasound: "Ultraschall nutzt Schallwellen, um Live-Bilder zu erzeugen; er ist günstig, sicher und wird eingesetzt, um Nadeln in Knoten zu führen.",
+
   unicancer: "UNICANCER ist das Netzwerk der französischen Comprehensive Cancer Center und der Sponsor ihrer akademischen Studien.",
   "unproven-diet-claims": "Diäten, die ohne jeden Beleg als Heilmittel oder Vorbeugung gegen Krebs vermarktet werden: basische Ernährung, Saftkuren, Gerson-Therapie, Aprikosenkerne und Ähnliches. Manche sind einfach nutzlos; mehrere haben Schaden verursacht oder dazu geführt, dass Menschen eine wirksame Behandlung hinausgezögert haben.",
   urethral: "Harnröhrenkrebs wächst in der Röhre, die den Urin aus dem Körper leitet. Er ist sehr selten, deshalb orientieren sich Ärzte bei der Behandlung je nach Zelltyp und Lage an Blasenkrebs, Analkrebs und Vulvakrebs. Die Kombination von Chemotherapie und Strahlentherapie vor oder anstelle einer Operation ermöglicht es mehr Patienten, ihre Organe zu behalten.",

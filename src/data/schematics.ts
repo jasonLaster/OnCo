@@ -230,6 +230,7 @@ S["hyperthermia"] = () => {
 
 // ===== Imaging =====
 S["pet"] = () => petScanner();
+S["granzyme-b-pet"] = () => petScanner("Granzyme tracer distribution");
 S["fdg-pet"] = () => petScanner("¹⁸F-FDG (glucose)");
 S["psma-pet"] = () => petScanner("PSMA ligand");
 S["fapi-pet"] = () => petScanner("FAP on fibroblasts");

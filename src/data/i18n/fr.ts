@@ -271,7 +271,7 @@ export const tldr_fr: Record<string, string> = {
   fap: "FAP est une protéine présente sur les cellules de soutien qui entourent de nombreuses tumeurs, ce qui fait qu'elle révèle presque n'importe quel cancer solide sur un PET scan.",
   "fapi-pet": "La TEP FAPI est un examen TEP qui fait ressortir l'échafaudage qui entoure presque toutes les tumeurs solides, y compris des cancers que l'examen standard au sucre ne détecte pas.",
   "fda-oce": "Le pôle d'oncologie du régulateur américain, qui approuve les médicaments contre le cancer, gère l'approbation accélérée et le Project Orbis, et pousse à une meilleure recherche de dose via le Project Optimus.",
-  "fdg-pet": "La TEP au FDG est l'examen TEP standard. Un sucre radioactif montre quels tissus consomment rapidement du glucose, ce que font la plupart des cancers.",
+
   fgfr2: "FGFR2 est un récepteur de croissance qui est fusionné dans le cancer des voies biliaires et surproduit dans le cancer de l'estomac.",
 
   flt3: "FLT3 est une kinase mutée dans environ un tiers des leucémies aiguës myéloïdes, où l'ajout d'un inhibiteur à la chimiothérapie améliore la survie.",
@@ -329,7 +329,7 @@ export const tldr_fr: Record<string, string> = {
   ifosfamide: "Ifosfamide est une chimiothérapie alkylante associée à la doxorubicin dans les sarcomes et à l'etoposide dans le sarcome d'Ewing, administrée avec un médicament qui protège la vessie.",
   imaging: "L'imagerie regroupe les moyens de voir le cancer à l'intérieur du corps sans ouvrir, des radiographies aux traceurs qui font s'illuminer une seule protéine.",
   imatinib: "Le médicament qui a ouvert l'ère des thérapies ciblées en 2001, faisant de la leucémie myéloïde chronique une maladie gérable avec une espérance de vie proche de la normale.",
-    "immuno-pet": "Des examens PET réalisés avec des anticorps radiomarqués ou leurs fragments, pour visualiser toute protéine qu'un anticorps peut atteindre, y compris les cellules immunitaires à l'intérieur des tumeurs.",
+
   immunotherapy: "L'immunothérapie aide le système immunitaire du patient lui-même à reconnaître et à détruire le cancer.",
   "immunotherapy-roadmap": "La feuille de route de l'immunothérapie est un arc de 130 ans, de l'injection de bactéries dans les tumeurs à la levée des freins immunitaires, et aujourd'hui à la conception de la réponse immunitaire elle-même avec des vaccins, des anticorps engageurs et des cellules.",
   "imrt-igrt": "Une radiothérapie modelée avec précision sur la tumeur et contrôlée par une imagerie quotidienne, pour épargner les organes voisins.",
@@ -459,7 +459,7 @@ export const tldr_fr: Record<string, string> = {
   "low-dose-ct-screening": "Un scanner annuel à faible dose de rayonnement, destiné aux gros fumeurs actuels et anciens, qui détecte le cancer du poumon assez tôt pour le guérir.",
   lutathera: "Lutetium-177 dotatate a été la première thérapie moderne par radioligand (2018), pour les tumeurs neuroendocrines, et est désormais utilisé en première ligne.",
   "male-breast-cancer": "Les hommes aussi ont des cancers du sein, généralement d'un type hormonosensible découvert sous la forme d'une boule près du mamelon. Le traitement ressemble beaucoup à celui des femmes, avec chirurgie, radiothérapie et tamoxifen, et les mutations héréditaires de BRCA2 sont assez fréquentes pour qu'un test génétique soit proposé à tout homme diagnostiqué. La principale amélioration en cours consiste à inclure les hommes dans les essais cliniques, afin que leur prise en charge cesse d'être empruntée à celle des femmes.",
-  mammography: "Radiographie du sein à faible dose utilisée pour le dépistage. Les versions 3D plus récentes détectent davantage de cancers avec moins de fausses alertes.",
+
   "mayo-clinic": "Régulièrement classé premier hôpital des États-Unis toutes spécialités confondues, avec une solide activité de protonthérapie et le premier centre d'ions carbone des États-Unis en construction.",
   mced: "Un test sanguin unique conçu pour dépister des dizaines de cancers à la fois, y compris ceux pour lesquels il n'existe aucun dépistage aujourd'hui.",
   "md-anderson": "MD Anderson est le plus grand centre de cancérologie du monde en volume de patients, avec le plus important programme de phase 1 et un effort de premier plan sur les CAR-NK.",
@@ -498,8 +498,8 @@ export const tldr_fr: Record<string, string> = {
   penile: "Le cancer du pénis est un cancer de type cutané (épidermoïde), dont environ la moitié des cas sont dus au HPV, le même virus responsable du cancer du col de l'utérus. Il est très souvent guérissable quand il est détecté tôt, la chirurgie est devenue beaucoup moins mutilante, et la maladie peut être prévenue par la vaccination contre le HPV et l'hygiène. Les cas difficiles sont ceux avec atteinte des ganglions lymphatiques, pour lesquels la chimiothérapie associée à la chirurgie et, désormais, l'immunothérapie sont à l'essai.",
   "penn-abramson": "Là où la CAR-T est devenue un médicament (June, Levine ; Emily Whitehead), où le mRNA a été rendu utilisable comme médicament (Karikó, Weissman) et où la PET PARP a été inventée.",
   pertuzumab: "Un second anticorps anti-HER2 qui se fixe à un endroit différent du trastuzumab, empêchant HER2 de s'associer à HER3 ; ensemble, ils ont prolongé la survie de 16 mois dans CLEOPATRA.",
-  pet: "Un examen d'imagerie qui montre où s'accumule un traceur radioactif, et qui visualise donc ce que font les tumeurs plutôt que leur apparence.",
-  "pet-ct": "La PET et le CT dans une seule machine, de sorte que les zones actives sur la PET sont localisées avec précision sur le CT.",
+
+
   "peter-mac": "Peter Mac est le seul hôpital d'Australie entièrement dédié au cancer et un leader en théranostique, en CAR-T et en radiothérapie oncologique.",
   pfizer: "A acheté Seagen pour 43 milliards de dollars afin de devenir un leader des ADC ; fabrique aussi Ibrance, Lorbrena, Braftovi et le premier PROTAC.",
   pfs: "La survie sans progression (PFS) est la durée pendant laquelle les patients vivent sans que leur cancer ne progresse.",
@@ -540,7 +540,7 @@ export const tldr_fr: Record<string, string> = {
 
   "mrd-negative-cr": "Une rémission complète MRD négative signifie non seulement qu'aucune leucémie n'est visible au microscope, mais qu'aucune n'est détectable avec des tests mille fois plus sensibles. C'est l'objectif du traitement moderne de la leucémie.",
 
-  mri: "Utilise des aimants et des ondes radio, sans rayonnement, pour fournir des images très détaillées des tissus mous tels que le cerveau, le sein, le foie et la prostate.",
+
 
   mskcc: "L'hôpital de cancérologie le mieux classé au monde, berceau du séquençage MSK-IMPACT, de l'étude du dostarlimab dans le cancer du rectum et de pionniers des CAR-T.",
   "multiple-endocrine-neoplasia": "Les syndromes MEN sont des anomalies héréditaires d'un seul gène qui provoquent des tumeurs dans plusieurs glandes hormonales au cours de la vie. Comme le gène peut être détecté dès l'enfance, les proches à risque peuvent être testés, surveillés et, dans le MEN2, se faire retirer la thyroïde avant l'apparition du cancer ; et pour le cancer de la thyroïde du MEN2 qui se propage malgré tout, il existe désormais un comprimé de précision, le selpercatinib, qui bloque la protéine RET défectueuse.",
@@ -622,7 +622,7 @@ export const tldr_fr: Record<string, string> = {
   uclh: "L'hôpital universitaire du centre de Londres et l'un des deux centres de protonthérapie du NHS, soutenu par l'institut du cancer de l'UCL et ses recherches sur les CAR-T et l'évolution du cancer du poumon.",
   "ucsd-moores": "Le centre de cancérologie intégré du NCI à San Diego, où ont été développés l'anticorps anti-GD2 dinutuximab et l'anticorps anti-ROR1 à l'origine de zilovertamab.",
   ucsf: "L'UCSF est le berceau de la biologie des oncogènes (Bishop, Varmus) et du ciblage médicamenteux de KRAS G12C (Shokat), et un leader des essais adaptatifs I-SPY dans le cancer du sein.",
-  ultrasound: "L'échographie utilise des ondes sonores pour produire des images en direct ; elle est peu coûteuse, sûre et sert à guider les aiguilles jusque dans les masses.",
+
   unicancer: "UNICANCER est le réseau des centres de lutte contre le cancer français et le promoteur de leurs essais académiques.",
   "unproven-diet-claims": "Régimes vendus comme des remèdes ou des moyens de prévention contre le cancer sans aucune preuve à l'appui : régimes alcalins, cures de jus, thérapie Gerson, noyaux d'abricot et autres. Certains sont simplement inutiles ; plusieurs ont causé des dommages ou conduit des personnes à retarder un traitement efficace.",
   urethral: "Le cancer de l'urètre se développe dans le conduit qui évacue l'urine hors du corps. Il est très rare, si bien que les médecins le traitent en s'inspirant du cancer de la vessie, du cancer de l'anus et du cancer de la vulve selon le type de cellules et la localisation. Associer la chimiothérapie à la radiothérapie avant la chirurgie, ou à sa place, permet à davantage de patients de conserver leurs organes.",

@@ -111,18 +111,18 @@ export const tldr_es: Record<string, string> = {
   "bbb-focused-ultrasound": "Ondas sonoras más microburbujas abren brevemente la barrera protectora del cerebro para que la quimioterapia o los anticuerpos lleguen al tumor.",
   "glioma-car-t": "Células inmunitarias modificadas administradas directamente en el cerebro o el líquido cefalorraquídeo. Algunos niños con un tumor de tronco incurable han tenido respuestas llamativas, aunque temporales.",
   ct: "Una radiografía 3D rápida que muestra el tamaño y la forma de los tumores y si se han extendido.",
-  mri: "Usa imanes y ondas de radio, sin radiación, para dar imágenes muy detalladas de tejidos blandos como cerebro, mama, hígado y próstata.",
-  ultrasound: "Las ondas sonoras crean imágenes en vivo; barato, seguro y usado para guiar agujas hacia los bultos.",
-  mammography: "Radiografía de mama de baja dosis para el cribado. Las versiones 3D más nuevas encuentran más cánceres con menos falsas alarmas.",
-  pet: "Una exploración que muestra dónde se acumula un trazador radiactivo, de modo que refleja lo que hacen los tumores y no solo su forma.",
-  "pet-ct": "PET y TC en una sola máquina, para que los puntos calientes del PET se sitúen con exactitud en la TC.",
+
+
+
+
+
   "pet-mri": "PET combinado con RM en lugar de TC, dando biología más el mejor detalle de tejidos blandos, con menos radiación.",
-  "fdg-pet": "El PET estándar. Un azúcar radiactivo muestra qué tejidos consumen glucosa con rapidez, como hacen la mayoría de los cánceres.",
+
   "psma-pet": "Un PET específico del cáncer de próstata que detecta la extensión mucho antes que la TC o la gammagrafía ósea, y dice si un fármaco radiactivo emparejado funcionará.",
   "fapi-pet": "Un PET que ilumina el andamiaje alrededor de casi cualquier tumor sólido, incluidos cánceres que el PET de glucosa no ve.",
   "trop2-pet": "Un PET experimental que muestra si un tumor tiene la proteína TROP2, para que los médicos puedan elegir el ADC adecuado antes de administrarlo.",
   "her2-pet": "Un PET con trastuzumab radiomarcado u otras moléculas anti-HER2 más pequeñas para cartografiar HER2 en todas las metástasis a la vez.",
-  "immuno-pet": "PET construidos a partir de anticuerpos radiomarcados o sus fragmentos, para ver cualquier proteína alcanzable por un anticuerpo, incluidas las células inmunitarias dentro de los tumores.",
+
   "parp-pet": "Un trazador PET que mide cuánta enzima PARP tiene un tumor, para predecir la respuesta a los inhibidores de PARP.",
   spect: "Un tipo más antiguo de gammagrafía, aún usado para metástasis óseas y para comprobar dónde fue un fármaco radiactivo tras el tratamiento.",
   "whole-body-mri": "Una RM de todo el cuerpo sin radiación, usada para hallar extensión en el mieloma y para cribar a personas con alto riesgo hereditario.",

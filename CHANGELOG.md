@@ -6,8 +6,13 @@ All notable changes to OnCo are recorded here. The format follows [Keep a Change
 
 Regenerated from the commit log each time the site ships (`scripts/changelog-sync.ts`); the version sections below are written by hand when a release is cut.
 
+### 12 November 2026
+- Forty-three everyday medicines the care protocols name now have records (blood thinners, anti-sickness drugs, pain relief, antibiotics and antivirals among them), with three line types and thirteen glossary terms; and three China approvals now rest on the makers' own exchange announcements, with two indications corrected
+
 ### 11 November 2026
+- Three China approvals now rest on the makers' own exchange announcements, marked as reported by the company with the regulator notice not read
 - Care protocols arrive: 190 sourced protocols for every part of cancer care, each step with its reason, source, grade and quote, best practice set beside named variants, linked from cancer, drug, device, side-effect, red-card and first-60-days pages; and every country in GLOBOCAN now has a page, with France's overseas departments on the France page
+- Forty-three medicines used in cancer care, three vascular access devices and thirteen glossary terms join the corpus, each from its label or a guideline
 - The scalp cooling protocol leaves the anagen effluvium term to the hair loss pages, so Ask still finds the scalp cooling record first for whether cooling prevents hair loss
 - Endometrial cancer lists fertility preservation, as the fertility preservation record already names it, so the fertility protocol stays on its page
 - The side-effects page shows how each symptom is managed: the care protocol for the symptom, and a treatment's own protocol beside the products it names

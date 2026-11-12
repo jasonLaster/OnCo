@@ -45,10 +45,144 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/cellular-therapies/images/cytokine-message-and-receptor-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-PRO-002",
+                "requirement": "Preserve the cytokine/receptor, engineered trigger/growth and CAR-target/separate-support-receptor scenes, with schematic relays and no implication that cell accumulation proves safe tumour killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "summary",
+                    "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                    "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+                    "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+                    "passageSha256": "b605ff73e057b6ba809cb1b7b79ef6d0157d59c7d9b07b356b7c21b6865ea66e",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+                    "passageSha256": "0e07fa6d20bf365d5a0be9c1ced30ae5ba51e527e31d5764999e5ac2f8c3f593",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-003",
+                "requirement": "Define cytokines as protein messages and receptors as compatible receivers; amount, duration, cell state and other inputs shape the response rather than cytokines acting as nutritional fuel.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "cytokine",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+                    "supportingExcerpt": "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+                    "passageSha256": "c1d865b8c53616f5aac27b1fc273a4a36fd97a8e20e7965ed4788743c690a7c9",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. INHERITED-cytokine: inherited canonical teaching and recorded bibliography assessment, The selected canonical excerpt was re-read in this cohort. Underlying sources retain prior recorded depth and are not all freshly re-opened."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-006",
+                "requirement": "Keep Engelowski's artificial ligand/receptor signalling and growth in specified cells separate from proof of cancer killing, treatment control or clinical safety.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+                    "passageSha256": "5819d02534cc5bef8618bb56e0412a42a5bfe179aeeaf8166ce8ff93458c1c3f",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-011",
+                "requirement": "An orthogonal signal requires measured selectivity against natural partners; a supportive receptor is not the CAR's targeting receptor, and altered intracellular signalling is not the same as secreting a cytokine.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Orthogonality is conditional on measured partner selectivity, and the supportive receptor is distinguished from CAR targeting and secretion. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "5885eab003e6e1cc9d4206266b0bfae6f95e01f0",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -60,10 +194,144 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/cellular-therapies/images/cytokine-message-and-receptor-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-PRO-002",
+                "requirement": "Preserve the cytokine/receptor, engineered trigger/growth and CAR-target/separate-support-receptor scenes, with schematic relays and no implication that cell accumulation proves safe tumour killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "summary",
+                    "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                    "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+                    "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+                    "passageSha256": "b605ff73e057b6ba809cb1b7b79ef6d0157d59c7d9b07b356b7c21b6865ea66e",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+                    "passageSha256": "0e07fa6d20bf365d5a0be9c1ced30ae5ba51e527e31d5764999e5ac2f8c3f593",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-003",
+                "requirement": "Define cytokines as protein messages and receptors as compatible receivers; amount, duration, cell state and other inputs shape the response rather than cytokines acting as nutritional fuel.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "cytokine",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+                    "supportingExcerpt": "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+                    "passageSha256": "c1d865b8c53616f5aac27b1fc273a4a36fd97a8e20e7965ed4788743c690a7c9",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. INHERITED-cytokine: inherited canonical teaching and recorded bibliography assessment, The selected canonical excerpt was re-read in this cohort. Underlying sources retain prior recorded depth and are not all freshly re-opened."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-006",
+                "requirement": "Keep Engelowski's artificial ligand/receptor signalling and growth in specified cells separate from proof of cancer killing, treatment control or clinical safety.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+                    "passageSha256": "5819d02534cc5bef8618bb56e0412a42a5bfe179aeeaf8166ce8ff93458c1c3f",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-011",
+                "requirement": "An orthogonal signal requires measured selectivity against natural partners; a supportive receptor is not the CAR's targeting receptor, and altered intracellular signalling is not the same as secreting a cytokine.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Orthogonality is conditional on measured partner selectivity, and the supportive receptor is distinguished from CAR targeting and secretion. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "3145e6e46b457bffa5ec2724594c7c6379c868b0",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -166,9 +434,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -188,9 +456,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -253,9 +521,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -275,9 +543,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -502,10 +770,125 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/cellular-therapies/images/solid-tumor-journey-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-BAR-001",
+                "requirement": "Preserve separate tissue entry, target recognition, useful function and healthy-tissue safety barriers; improving one link or increasing cells does not establish the complete treatment chain.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Entry, recognition, useful function and healthy-tissue harm are separate links; more cells do not establish a complete treatment chain. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-002",
+                "requirement": "Distinguish trafficking toward a site from infiltration into tissue; cells in blood or spleen do not establish tumour entry, and dense vessels do not establish useful perfusion.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  },
+                  {
+                    "recordId": "tumor-microenvironment",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "95edc0d1f8ec49420fb17123aff270b296a113cb6ec81bddbba6637a6bbfab8e",
+                    "supportingExcerpt": "The tumour microenvironment includes neighbouring cells, extracellular material, vessels and local physical conditions. A neighbouring cell need not belong to the malignant clone. Cell populations, cytokines and chemokines, matrix, oxygen, nutrients and waste interact in both directions, and their arrangement varies between regions, disease sites and times. A drawing is a map of possible participants, not a measured recipe or a fixed job description.",
+                    "passageSha256": "279257be47271bbc638075879428e73129fc56581d743b3062f5df7edbdf2a5b",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-010",
+                "requirement": "Separate persistence from maintained function; a supportive receptor does not automatically restore oxygen, tissue access or the missing antigen.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The support notes separate detectable persistence from useful function and do not infer oxygen, access or missing antigen from more signalling. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-026",
+                "requirement": "Explain a solid-tumour result by access, recognition, function and harm separately, including which link a proposed intervention actually tests.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "The worked explanation follows access, recognition, function and harm and asks which link each proposed change actually tested. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-026",
+                "requirement": "Explain a programmable feature as a named hypothesis with its own measured function, failure tests and full-product context rather than as a universal improvement.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Each added feature is a hypothesis with function, failure tests and finished-product context, rather than a guaranteed improvement. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "8917bf8aa574e7a9bf093cb87660a1b8a94cf369",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -517,10 +900,125 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/7510db6be8053b64708b6c6c037ab1ea564a35ab/wiki/education/cellular-therapies/images/solid-tumor-journey-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-BAR-001",
+                "requirement": "Preserve separate tissue entry, target recognition, useful function and healthy-tissue safety barriers; improving one link or increasing cells does not establish the complete treatment chain.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Entry, recognition, useful function and healthy-tissue harm are separate links; more cells do not establish a complete treatment chain. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-002",
+                "requirement": "Distinguish trafficking toward a site from infiltration into tissue; cells in blood or spleen do not establish tumour entry, and dense vessels do not establish useful perfusion.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  },
+                  {
+                    "recordId": "tumor-microenvironment",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "95edc0d1f8ec49420fb17123aff270b296a113cb6ec81bddbba6637a6bbfab8e",
+                    "supportingExcerpt": "The tumour microenvironment includes neighbouring cells, extracellular material, vessels and local physical conditions. A neighbouring cell need not belong to the malignant clone. Cell populations, cytokines and chemokines, matrix, oxygen, nutrients and waste interact in both directions, and their arrangement varies between regions, disease sites and times. A drawing is a map of possible participants, not a measured recipe or a fixed job description.",
+                    "passageSha256": "279257be47271bbc638075879428e73129fc56581d743b3062f5df7edbdf2a5b",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-010",
+                "requirement": "Separate persistence from maintained function; a supportive receptor does not automatically restore oxygen, tissue access or the missing antigen.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The support notes separate detectable persistence from useful function and do not infer oxygen, access or missing antigen from more signalling. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-026",
+                "requirement": "Explain a solid-tumour result by access, recognition, function and harm separately, including which link a proposed intervention actually tests.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "The worked explanation follows access, recognition, function and harm and asks which link each proposed change actually tested. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-026",
+                "requirement": "Explain a programmable feature as a named hypothesis with its own measured function, failure tests and full-product context rather than as a universal improvement.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Each added feature is a hypothesis with function, failure tests and finished-product context, rather than a guaranteed improvement. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "d537c21848a9dc417624b755c30b9d9f0a118c03",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -581,8 +1079,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Defines ex vivo cell administration versus in vivo carrier delivery and distinguishes in vivo testing.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "in-vivo-car-t-ar",
@@ -659,8 +1157,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Location, recipient/donor source and transient/stable genetic fate are separate.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   }
                 ],
                 "remaining": []
@@ -681,8 +1179,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Retains Rurik's cardiac mouse and Hunter's human-cell/animal evidence.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "car-t-manufacturing-process",
@@ -739,8 +1237,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Defines ex vivo cell administration versus in vivo carrier delivery and distinguishes in vivo testing.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "in-vivo-car-t-ar",
@@ -817,8 +1315,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Location, recipient/donor source and transient/stable genetic fate are separate.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   }
                 ],
                 "remaining": []
@@ -839,8 +1337,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Retains Rurik's cardiac mouse and Hunter's human-cell/animal evidence.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "car-t-manufacturing-process",
@@ -909,9 +1407,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -931,9 +1429,9 @@
                   },
                   {
                     "recordId": "in-vivo-car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
                     "explanation": "Keeps targeted-vector mouse and transient-mRNA cardiac-injury experiments in their contexts."
                   }
                 ],
@@ -953,9 +1451,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -975,9 +1473,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Keeps exact example architectures, current preprint status and sponsor-only name/safety claims distinct."
                   }
                 ],
@@ -997,9 +1495,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Requires independent signalling, viable-cell, location, killing and later-control measurements."
                   }
                 ],
@@ -1019,9 +1517,9 @@
                   },
                   {
                     "recordId": "safety-switch-car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                    "fieldSha256": "0a23335634c92595ae8ff2e9c1bc93b47a296721d040535efd47076250100109",
                     "explanation": "Explains the ON-switch and surviving-cell/functional measurement boundaries."
                   }
                 ],
@@ -55058,9 +55556,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "All three contacts are explained and the cargo arrow is explicitly not a molecular map of processing. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -55075,9 +55573,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "The conjugate explanation explicitly separates target recognition and cargo delivery from kinase dependence. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -55128,9 +55626,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "All three contacts are explained and the cargo arrow is explicitly not a molecular map of processing. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -55145,9 +55643,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "The conjugate explanation explicitly separates target recognition and cargo delivery from kinase dependence. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -55973,9 +56471,9 @@
                   },
                   {
                     "recordId": "crs",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "3dd8c75c58e6e45394f589a3efa12482d728ec5ddf2325695d5484582ded3f14",
+                    "fieldSha256": "73de724889c97e830bbb119b3c3cd99b583236ac0a519da4a53856ea86ccb8f2",
                     "explanation": "Multicellular inflammatory signalling is interpreted through clinical attribution, competing causes, treated denominator and product-specific observation, not a cytokine curve.",
                     "supportingExcerpt": "Reading CRS without over-reading a cytokine level. CRS is a clinical syndrome, graded from attributed findings and not from a cytokine concentration. In a mouse model of CD19 CAR T-cell CRS, severity was mediated not by CAR T-cell-derived cytokines but by IL-6, IL-1 and nitric oxide from the recipient's macrophages, and IL-1 blockade abated it (Giavridis et al.); that supports a multicell amplification mechanism and does not show the same sources or shares in every human product. Infection and other conditions can cause or accompany the same findings, so the cause of a fever cannot be read from timing alone. A comparable report gives its grading version, observation window and treated denominator, with onset, maximum grade, interventions and resolution. Safety belongs to the product, disease, tumour burden and preparation, so experience with one blood-cancer product does not supply a solid-tumour product's rate, and no severe CRS in a small early study does not rule out uncommon events. CRS is a different problem from injury to healthy tissue that carries the target (on-target, off-tumour) and from neurotoxicity (ICANS). The treatment need not carry a cytokine payload to trigger endogenous inflammatory signalling. Tumour response does not establish acceptable inflammatory risk, and mild CRS does not establish lack of anticancer activity. Stopping a treatment input does not guarantee immediate removal of released signals or established injury. In a fictional early study, no severe CRS and a modest cytokine rise would not make every fever harmless CRS: attribution, clinical findings, a named grading framework, treated denominator and observation window are still needed.",
                     "passageSha256": "51496b6afffb21231e5fb427375c7402e51822aa0dc05326e4db3b9cd9b7d151"
@@ -56034,9 +56532,9 @@
                   },
                   {
                     "recordId": "crs",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "3dd8c75c58e6e45394f589a3efa12482d728ec5ddf2325695d5484582ded3f14",
+                    "fieldSha256": "73de724889c97e830bbb119b3c3cd99b583236ac0a519da4a53856ea86ccb8f2",
                     "explanation": "Multicellular inflammatory signalling is interpreted through clinical attribution, competing causes, treated denominator and product-specific observation, not a cytokine curve.",
                     "supportingExcerpt": "Reading CRS without over-reading a cytokine level. CRS is a clinical syndrome, graded from attributed findings and not from a cytokine concentration. In a mouse model of CD19 CAR T-cell CRS, severity was mediated not by CAR T-cell-derived cytokines but by IL-6, IL-1 and nitric oxide from the recipient's macrophages, and IL-1 blockade abated it (Giavridis et al.); that supports a multicell amplification mechanism and does not show the same sources or shares in every human product. Infection and other conditions can cause or accompany the same findings, so the cause of a fever cannot be read from timing alone. A comparable report gives its grading version, observation window and treated denominator, with onset, maximum grade, interventions and resolution. Safety belongs to the product, disease, tumour burden and preparation, so experience with one blood-cancer product does not supply a solid-tumour product's rate, and no severe CRS in a small early study does not rule out uncommon events. CRS is a different problem from injury to healthy tissue that carries the target (on-target, off-tumour) and from neurotoxicity (ICANS). The treatment need not carry a cytokine payload to trigger endogenous inflammatory signalling. Tumour response does not establish acceptable inflammatory risk, and mild CRS does not establish lack of anticancer activity. Stopping a treatment input does not guarantee immediate removal of released signals or established injury. In a fictional early study, no severe CRS and a modest cytokine rise would not make every fever harmless CRS: attribution, clinical findings, a named grading framework, treated denominator and observation window are still needed.",
                     "passageSha256": "51496b6afffb21231e5fb427375c7402e51822aa0dc05326e4db3b9cd9b7d151"
@@ -56391,9 +56889,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -56426,9 +56924,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -56487,9 +56985,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -56522,9 +57020,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -56574,9 +57072,9 @@
                 "evidence": [
                   {
                     "recordId": "on-target-off-tumour-toxicity",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "2a50349b1c4edfd409db7825e9c6ff0e72b9fd3c30dda3b7389134f7ad990db3",
+                    "fieldSha256": "1545ae97a74127c9526d52ce6281aed4f19c6ecc7263db7158b8cfc1d29ee8b4",
                     "explanation": "The fictional X-on-both-tissues versus unintended-Y scenes distinguish tissue distribution from molecular specificity, without a universal staining cutoff.",
                     "supportingExcerpt": "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
                     "passageSha256": "500716eba420eb3818af69fb9e32e45cd3bae96e0797905e3d217d65a7a8da3b"
@@ -56626,9 +57124,9 @@
                 "evidence": [
                   {
                     "recordId": "on-target-off-tumour-toxicity",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "2a50349b1c4edfd409db7825e9c6ff0e72b9fd3c30dda3b7389134f7ad990db3",
+                    "fieldSha256": "1545ae97a74127c9526d52ce6281aed4f19c6ecc7263db7158b8cfc1d29ee8b4",
                     "explanation": "The fictional X-on-both-tissues versus unintended-Y scenes distinguish tissue distribution from molecular specificity, without a universal staining cutoff.",
                     "supportingExcerpt": "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
                     "passageSha256": "500716eba420eb3818af69fb9e32e45cd3bae96e0797905e3d217d65a7a8da3b"
@@ -60600,10 +61098,144 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/cellular-therapies/images/cytokine-message-and-receptor-v2-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-PRO-002",
+                "requirement": "Preserve the cytokine/receptor, engineered trigger/growth and CAR-target/separate-support-receptor scenes, with schematic relays and no implication that cell accumulation proves safe tumour killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "summary",
+                    "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                    "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+                    "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+                    "passageSha256": "b605ff73e057b6ba809cb1b7b79ef6d0157d59c7d9b07b356b7c21b6865ea66e",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+                    "passageSha256": "0e07fa6d20bf365d5a0be9c1ced30ae5ba51e527e31d5764999e5ac2f8c3f593",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-003",
+                "requirement": "Define cytokines as protein messages and receptors as compatible receivers; amount, duration, cell state and other inputs shape the response rather than cytokines acting as nutritional fuel.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "cytokine",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+                    "supportingExcerpt": "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+                    "passageSha256": "c1d865b8c53616f5aac27b1fc273a4a36fd97a8e20e7965ed4788743c690a7c9",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. INHERITED-cytokine: inherited canonical teaching and recorded bibliography assessment, The selected canonical excerpt was re-read in this cohort. Underlying sources retain prior recorded depth and are not all freshly re-opened."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-006",
+                "requirement": "Keep Engelowski's artificial ligand/receptor signalling and growth in specified cells separate from proof of cancer killing, treatment control or clinical safety.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+                    "passageSha256": "5819d02534cc5bef8618bb56e0412a42a5bfe179aeeaf8166ce8ff93458c1c3f",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-011",
+                "requirement": "An orthogonal signal requires measured selectivity against natural partners; a supportive receptor is not the CAR's targeting receptor, and altered intracellular signalling is not the same as secreting a cytokine.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Orthogonality is conditional on measured partner selectivity, and the supportive receptor is distinguished from CAR targeting and secretion. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "01e29fc825b343481ef5c575c96c5b19ef9fce3d7d28f928c19c309d1b531c18"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "5885eab003e6e1cc9d4206266b0bfae6f95e01f0",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -60615,10 +61247,144 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/cellular-therapies/images/cytokine-message-and-receptor-v2-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-PRO-002",
+                "requirement": "Preserve the cytokine/receptor, engineered trigger/growth and CAR-target/separate-support-receptor scenes, with schematic relays and no implication that cell accumulation proves safe tumour killing.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "summary",
+                    "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+                    "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+                    "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+                    "passageSha256": "b605ff73e057b6ba809cb1b7b79ef6d0157d59c7d9b07b356b7c21b6865ea66e",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+                    "passageSha256": "0e07fa6d20bf365d5a0be9c1ced30ae5ba51e527e31d5764999e5ac2f8c3f593",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The receptor/support/CAR scenes are explained as intended signalling arrangements and hypothetical assay results, rather than measured clinical improvements. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-003",
+                "requirement": "Define cytokines as protein messages and receptors as compatible receivers; amount, duration, cell state and other inputs shape the response rather than cytokines acting as nutritional fuel.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "cytokine",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+                    "supportingExcerpt": "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+                    "passageSha256": "c1d865b8c53616f5aac27b1fc273a4a36fd97a8e20e7965ed4788743c690a7c9",
+                    "explanation": "Cytokines are receptor-dependent signalling proteins, not nutritional fuel; exposure and receiving-cell state shape the possible response. INHERITED-cytokine: inherited canonical teaching and recorded bibliography assessment, The selected canonical excerpt was re-read in this cohort. Underlying sources retain prior recorded depth and are not all freshly re-opened."
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-006",
+                "requirement": "Keep Engelowski's artificial ligand/receptor signalling and growth in specified cells separate from proof of cancer killing, treatment control or clinical safety.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "jak-stat",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+                    "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+                    "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 32303620: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  },
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+                    "passageSha256": "5819d02534cc5bef8618bb56e0412a42a5bfe179aeeaf8166ce8ff93458c1c3f",
+                    "explanation": "Engelowski's artificial ligands, receptors and experimental signalling/growth are specified without claiming completed killing or human control. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-011",
+                "requirement": "An orthogonal signal requires measured selectivity against natural partners; a supportive receptor is not the CAR's targeting receptor, and altered intracellular signalling is not the same as secreting a cytokine.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Orthogonality is conditional on measured partner selectivity, and the supportive receptor is distinguished from CAR targeting and secretion. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "bea69ef1dafbfc4c68952ac43ac6d9f0969e26af478f2b4d1f4752ba84ca14ba"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "3145e6e46b457bffa5ec2724594c7c6379c868b0",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -60721,9 +61487,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -60743,9 +61509,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -60808,9 +61574,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -60830,9 +61596,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -61057,10 +61823,125 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/cellular-therapies/images/solid-tumor-journey-dark.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-BAR-001",
+                "requirement": "Preserve separate tissue entry, target recognition, useful function and healthy-tissue safety barriers; improving one link or increasing cells does not establish the complete treatment chain.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Entry, recognition, useful function and healthy-tissue harm are separate links; more cells do not establish a complete treatment chain. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-002",
+                "requirement": "Distinguish trafficking toward a site from infiltration into tissue; cells in blood or spleen do not establish tumour entry, and dense vessels do not establish useful perfusion.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  },
+                  {
+                    "recordId": "tumor-microenvironment",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "95edc0d1f8ec49420fb17123aff270b296a113cb6ec81bddbba6637a6bbfab8e",
+                    "supportingExcerpt": "The tumour microenvironment includes neighbouring cells, extracellular material, vessels and local physical conditions. A neighbouring cell need not belong to the malignant clone. Cell populations, cytokines and chemokines, matrix, oxygen, nutrients and waste interact in both directions, and their arrangement varies between regions, disease sites and times. A drawing is a map of possible participants, not a measured recipe or a fixed job description.",
+                    "passageSha256": "279257be47271bbc638075879428e73129fc56581d743b3062f5df7edbdf2a5b",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-010",
+                "requirement": "Separate persistence from maintained function; a supportive receptor does not automatically restore oxygen, tissue access or the missing antigen.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The support notes separate detectable persistence from useful function and do not infer oxygen, access or missing antigen from more signalling. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-026",
+                "requirement": "Explain a solid-tumour result by access, recognition, function and harm separately, including which link a proposed intervention actually tests.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "The worked explanation follows access, recognition, function and harm and asks which link each proposed change actually tested. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-026",
+                "requirement": "Explain a programmable feature as a named hypothesis with its own measured function, failure tests and full-product context rather than as a universal improvement.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Each added feature is a hypothesis with function, failure tests and finished-product context, rather than a guaranteed improvement. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "e32b9a19a99fad4724cd8a07f3416c0d60ad473df6f2121277e4b63a15190d3b"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "8917bf8aa574e7a9bf093cb87660a1b8a94cf369",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -61072,10 +61953,125 @@
           "format": ".png",
           "sourceURL": "https://github.com/jasonLaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/cellular-therapies/images/solid-tumor-journey-light.png",
           "suggestedRole": "visual-teaching-candidate",
-          "scope": "unclassified",
+          "scope": "teaching",
           "review": {
-            "status": "unreviewed",
-            "points": []
+            "status": "reviewed",
+            "auditor": "Coordinator source, complete image and current-reader assessment; no independent or named approval",
+            "checkedAt": "2026-11-12",
+            "rationale": "Supportive signals, living-cell counts, tissue entry and useful/safe function remain distinct. Schematic shapes, arrows and conditional help are not empirical tumour control or human benefit. Interpretation is represented in prose; no source artwork was imported.",
+            "sectionHashes": [
+              "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f"
+            ],
+            "points": [
+              {
+                "id": "engineered-cell-therapy-BAR-001",
+                "requirement": "Preserve separate tissue entry, target recognition, useful function and healthy-tissue safety barriers; improving one link or increasing cells does not establish the complete treatment chain.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Entry, recognition, useful function and healthy-tissue harm are separate links; more cells do not establish a complete treatment chain. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-002",
+                "requirement": "Distinguish trafficking toward a site from infiltration into tissue; cells in blood or spleen do not establish tumour entry, and dense vessels do not establish useful perfusion.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  },
+                  {
+                    "recordId": "tumor-microenvironment",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "95edc0d1f8ec49420fb17123aff270b296a113cb6ec81bddbba6637a6bbfab8e",
+                    "supportingExcerpt": "The tumour microenvironment includes neighbouring cells, extracellular material, vessels and local physical conditions. A neighbouring cell need not belong to the malignant clone. Cell populations, cytokines and chemokines, matrix, oxygen, nutrients and waste interact in both directions, and their arrangement varies between regions, disease sites and times. A drawing is a map of possible participants, not a measured recipe or a fixed job description.",
+                    "passageSha256": "279257be47271bbc638075879428e73129fc56581d743b3062f5df7edbdf2a5b",
+                    "explanation": "Movement toward a site and entry through tissue are distinguished, as are blood abundance, biopsy sampling and vessel count versus perfusion. NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-010",
+                "requirement": "Separate persistence from maintained function; a supportive receptor does not automatically restore oxygen, tissue access or the missing antigen.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "The support notes separate detectable persistence from useful function and do not infer oxygen, access or missing antigen from more signalling. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-BAR-026",
+                "requirement": "Explain a solid-tumour result by access, recognition, function and harm separately, including which link a proposed intervention actually tests.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "cellular-kinetics-and-persistence",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+                    "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+                    "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7",
+                    "explanation": "The worked explanation follows access, recognition, function and harm and asks which link each proposed change actually tested. FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document; 39466024: primary research report, complete abstract; no whole-paper read claimed; NCI-TME: official research-programme description, Selected stromal/ECM, infiltration, vascular/abnormal-flow and hypoxia passages, not all topics"
+                  }
+                ],
+                "remaining": []
+              },
+              {
+                "id": "engineered-cell-therapy-PRO-026",
+                "requirement": "Explain a programmable feature as a named hypothesis with its own measured function, failure tests and full-product context rather than as a universal improvement.",
+                "status": "covered-draft",
+                "evidence": [
+                  {
+                    "recordId": "synthetic-cytokine-receptors",
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "field": "notes",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+                    "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+                    "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa",
+                    "explanation": "Each added feature is a hypothesis with function, failure tests and finished-product context, rather than a guaranteed improvement. 29789554: primary research report, complete abstract and targeted whole passages only; not end-to-end full text; 25695689: primary research report, complete abstract; no whole-paper read claimed; FDA-CAR-2024: nonbinding regulator guidance, Targeted III.B, IV.C.2 identity/potency, V.A-D, VI.B.4-B.5, VI.C and opening VI.D.1 passages; not the whole document"
+                  }
+                ],
+                "remaining": []
+              }
+            ]
+          },
+          "sourceSha256": "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f",
+          "sections": [
+            {
+              "ordinal": 0,
+              "kind": "Complete pinned light or dark PNG with chapter/caption context",
+              "sha256": "cb6a2174b19399f437ee1e0c0b0691b2f447b4b1d7fb413ae84b56f52e43f58f"
+            }
+          ],
+          "scopeReview": {
+            "auditor": "Coordinator fresh full-native-extent image and context review; not expert, owner or measured accessibility approval",
+            "checkedAt": "2026-11-12",
+            "gitBlob": "d537c21848a9dc417624b755c30b9d9f0a118c03",
+            "rationale": "The image carries selected mechanism and interpretation teaching. Both themes were freshly viewed whole. The other pin reuses the view only by identical verified bytes, while retaining a separate version entry. The dark solid-tumour figure has an additional conditional sentence, so theme text is not asserted identical."
           }
         },
         {
@@ -61136,8 +62132,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Defines ex vivo cell administration versus in vivo carrier delivery and distinguishes in vivo testing.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "in-vivo-car-t-ar",
@@ -61214,8 +62210,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Location, recipient/donor source and transient/stable genetic fate are separate.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   }
                 ],
                 "remaining": []
@@ -61236,8 +62232,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Retains Rurik's cardiac mouse and Hunter's human-cell/animal evidence.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "car-t-manufacturing-process",
@@ -61294,8 +62290,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Defines ex vivo cell administration versus in vivo carrier delivery and distinguishes in vivo testing.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "in-vivo-car-t-ar",
@@ -61372,8 +62368,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Location, recipient/donor source and transient/stable genetic fate are separate.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   }
                 ],
                 "remaining": []
@@ -61394,8 +62390,8 @@
                     "recordId": "in-vivo-car-t",
                     "field": "notes",
                     "explanation": "Retains Rurik's cardiac mouse and Hunter's human-cell/animal evidence.",
-                    "version": "proposal-therapeutic",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300"
+                    "version": "proposal-engineered-cell-therapy-root",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e"
                   },
                   {
                     "recordId": "car-t-manufacturing-process",
@@ -61464,9 +62460,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Explicitly distinguishes mechanistic schematics from expression, signalling, killing and clinical measurements."
                   }
                 ],
@@ -61486,9 +62482,9 @@
                   },
                   {
                     "recordId": "in-vivo-car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "318c3eb0afab1f2573731e99ddc5eb9eed60bba7d59d1c35d6a2d8945eb70300",
+                    "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
                     "explanation": "Keeps targeted-vector mouse and transient-mRNA cardiac-injury experiments in their contexts."
                   }
                 ],
@@ -61508,9 +62504,9 @@
                   },
                   {
                     "recordId": "car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "f732e904b5ac27b38bf29d8a6d58c81e92e428c602df74ff4c90dd7190388ed9",
+                    "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
                     "explanation": "Keeps receptor identity, matched constructs, healthy-tissue targets and distinct functional readouts with their actual experiments."
                   }
                 ],
@@ -61530,9 +62526,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Keeps exact example architectures, current preprint status and sponsor-only name/safety claims distinct."
                   }
                 ],
@@ -61552,9 +62548,9 @@
                   },
                   {
                     "recordId": "synthetic-cytokine-receptors",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "98d86bd434c3f315a293fb5834456011789c0b83a4ae68d322282d0a718ae787",
+                    "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
                     "explanation": "Requires independent signalling, viable-cell, location, killing and later-control measurements."
                   }
                 ],
@@ -61574,9 +62570,9 @@
                   },
                   {
                     "recordId": "safety-switch-car-t",
-                    "version": "proposal-therapeutic",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "724141851df51419ef04612cc56725d6f49a2cb82f36abb56d911f787e50f9e7",
+                    "fieldSha256": "0a23335634c92595ae8ff2e9c1bc93b47a296721d040535efd47076250100109",
                     "explanation": "Explains the ON-switch and surviving-cell/functional measurement boundaries."
                   }
                 ],
@@ -115673,9 +116669,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "All three contacts are explained and the cargo arrow is explicitly not a molecular map of processing. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -115690,9 +116686,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "The conjugate explanation explicitly separates target recognition and cargo delivery from kinase dependence. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -115743,9 +116739,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "All three contacts are explained and the cargo arrow is explicitly not a molecular map of processing. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -115760,9 +116756,9 @@
                 "evidence": [
                   {
                     "recordId": "egfr",
-                    "version": "proposal-targeted-small-molecules-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "9bd3987fceac528219f32d743d1b1847d4652b9cb6d3926f01ad8ab72681ce71",
+                    "fieldSha256": "c23a8cdb2065036f95db5e1a81efea048ad37a9330fd187f83c051cec4cce715",
                     "supportingExcerpt": "EGFR, also called HER1 or ERBB1, is a receptor tyrosine kinase. Ligand binding outside the cell can change receptor arrangement and the activity of phosphate-transfer machinery inside. Cetuximab binds the extracellular region, whereas an EGFR tyrosine kinase inhibitor acts at the intracellular kinase. An antibody conjugate instead adds a cargo-delivery job to target recognition. Its mechanism and evidence need separate assessment, including any antibody-mediated immune effects. A schematic contact or cargo arrow is not a molecular map of receptor processing, and delivery to a recognised target does not by itself establish dependence on the receptor kinase.",
                     "passageSha256": "980bb84af8af65e123b43c4ef513128558b2b20127cbdd13bde8ca5856fd4199",
                     "explanation": "The conjugate explanation explicitly separates target recognition and cargo delivery from kinase dependence. 16777603: primary research publication, complete abstract only; UniProt-EGFR: reviewed protein annotation, complete function comment; CDK2 subunit comment also read, underlying linked papers not independently read; NCI-cetuximab: official technical dictionary, complete raw definition, not linked trial or drug-summary pages; NCI-targeted: official patient education, targeted type and hormone-mechanism paragraphs; universal safety language not adopted"
@@ -116588,9 +117584,9 @@
                   },
                   {
                     "recordId": "crs",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "3dd8c75c58e6e45394f589a3efa12482d728ec5ddf2325695d5484582ded3f14",
+                    "fieldSha256": "73de724889c97e830bbb119b3c3cd99b583236ac0a519da4a53856ea86ccb8f2",
                     "explanation": "Multicellular inflammatory signalling is interpreted through clinical attribution, competing causes, treated denominator and product-specific observation, not a cytokine curve.",
                     "supportingExcerpt": "Reading CRS without over-reading a cytokine level. CRS is a clinical syndrome, graded from attributed findings and not from a cytokine concentration. In a mouse model of CD19 CAR T-cell CRS, severity was mediated not by CAR T-cell-derived cytokines but by IL-6, IL-1 and nitric oxide from the recipient's macrophages, and IL-1 blockade abated it (Giavridis et al.); that supports a multicell amplification mechanism and does not show the same sources or shares in every human product. Infection and other conditions can cause or accompany the same findings, so the cause of a fever cannot be read from timing alone. A comparable report gives its grading version, observation window and treated denominator, with onset, maximum grade, interventions and resolution. Safety belongs to the product, disease, tumour burden and preparation, so experience with one blood-cancer product does not supply a solid-tumour product's rate, and no severe CRS in a small early study does not rule out uncommon events. CRS is a different problem from injury to healthy tissue that carries the target (on-target, off-tumour) and from neurotoxicity (ICANS). The treatment need not carry a cytokine payload to trigger endogenous inflammatory signalling. Tumour response does not establish acceptable inflammatory risk, and mild CRS does not establish lack of anticancer activity. Stopping a treatment input does not guarantee immediate removal of released signals or established injury. In a fictional early study, no severe CRS and a modest cytokine rise would not make every fever harmless CRS: attribution, clinical findings, a named grading framework, treated denominator and observation window are still needed.",
                     "passageSha256": "51496b6afffb21231e5fb427375c7402e51822aa0dc05326e4db3b9cd9b7d151"
@@ -116649,9 +117645,9 @@
                   },
                   {
                     "recordId": "crs",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "3dd8c75c58e6e45394f589a3efa12482d728ec5ddf2325695d5484582ded3f14",
+                    "fieldSha256": "73de724889c97e830bbb119b3c3cd99b583236ac0a519da4a53856ea86ccb8f2",
                     "explanation": "Multicellular inflammatory signalling is interpreted through clinical attribution, competing causes, treated denominator and product-specific observation, not a cytokine curve.",
                     "supportingExcerpt": "Reading CRS without over-reading a cytokine level. CRS is a clinical syndrome, graded from attributed findings and not from a cytokine concentration. In a mouse model of CD19 CAR T-cell CRS, severity was mediated not by CAR T-cell-derived cytokines but by IL-6, IL-1 and nitric oxide from the recipient's macrophages, and IL-1 blockade abated it (Giavridis et al.); that supports a multicell amplification mechanism and does not show the same sources or shares in every human product. Infection and other conditions can cause or accompany the same findings, so the cause of a fever cannot be read from timing alone. A comparable report gives its grading version, observation window and treated denominator, with onset, maximum grade, interventions and resolution. Safety belongs to the product, disease, tumour burden and preparation, so experience with one blood-cancer product does not supply a solid-tumour product's rate, and no severe CRS in a small early study does not rule out uncommon events. CRS is a different problem from injury to healthy tissue that carries the target (on-target, off-tumour) and from neurotoxicity (ICANS). The treatment need not carry a cytokine payload to trigger endogenous inflammatory signalling. Tumour response does not establish acceptable inflammatory risk, and mild CRS does not establish lack of anticancer activity. Stopping a treatment input does not guarantee immediate removal of released signals or established injury. In a fictional early study, no severe CRS and a modest cytokine rise would not make every fever harmless CRS: attribution, clinical findings, a named grading framework, treated denominator and observation window are still needed.",
                     "passageSha256": "51496b6afffb21231e5fb427375c7402e51822aa0dc05326e4db3b9cd9b7d151"
@@ -117006,9 +118002,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -117041,9 +118037,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -117102,9 +118098,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -117137,9 +118133,9 @@
                   },
                   {
                     "recordId": "insertional-mutagenesis",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "b9f7da881e8e4d4f44fa1b7443c98435a125a1a4875a9b34854846dad26844a8",
+                    "fieldSha256": "10db39e4c38d3f104dfa58836d128a1247d33dbf013b0bf5ae68d82121f900fc",
                     "explanation": "Site, vector-copy, expression and pathology measurements have sampling limits; the fictional expanding clone does not itself establish cancer.",
                     "supportingExcerpt": "In a fictional follow-up example, an engineered-cell clone becomes more common but no new malignancy has been established. The observation prompts examination of the clone, insertion sites, gene effects and clinical findings. A growth pattern, a malignant diagnosis and an insertion-driven mechanism are separate claims. An insertion that leaves no demonstrated gene effect, one that interrupts a gene and one that alters nearby regulation are different possibilities; none of those schematic locations assigns an incidence or time to cancer. A CAR-positive malignancy can establish product ancestry without identifying which change drove it.",
                     "passageSha256": "bb3549172e097f7616f0f0db17ee8d2d6490267913cec67fc90646ac30592c76"
@@ -117189,9 +118185,9 @@
                 "evidence": [
                   {
                     "recordId": "on-target-off-tumour-toxicity",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "2a50349b1c4edfd409db7825e9c6ff0e72b9fd3c30dda3b7389134f7ad990db3",
+                    "fieldSha256": "1545ae97a74127c9526d52ce6281aed4f19c6ecc7263db7158b8cfc1d29ee8b4",
                     "explanation": "The fictional X-on-both-tissues versus unintended-Y scenes distinguish tissue distribution from molecular specificity, without a universal staining cutoff.",
                     "supportingExcerpt": "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
                     "passageSha256": "500716eba420eb3818af69fb9e32e45cd3bae96e0797905e3d217d65a7a8da3b"
@@ -117241,9 +118237,9 @@
                 "evidence": [
                   {
                     "recordId": "on-target-off-tumour-toxicity",
-                    "version": "proposal-pharmacology-toxicity-root",
+                    "version": "proposal-engineered-cell-therapy-root",
                     "field": "notes",
-                    "fieldSha256": "2a50349b1c4edfd409db7825e9c6ff0e72b9fd3c30dda3b7389134f7ad990db3",
+                    "fieldSha256": "1545ae97a74127c9526d52ce6281aed4f19c6ecc7263db7158b8cfc1d29ee8b4",
                     "explanation": "The fictional X-on-both-tissues versus unintended-Y scenes distinguish tissue distribution from molecular specificity, without a universal staining cutoff.",
                     "supportingExcerpt": "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
                     "passageSha256": "500716eba420eb3818af69fb9e32e45cd3bae96e0797905e3d217d65a7a8da3b"

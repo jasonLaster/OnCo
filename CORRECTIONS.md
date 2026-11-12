@@ -1,5 +1,16 @@
 # Corrections
 
+### Vaccine design, manufacture and monitoring, 12 November 2026
+
+The [production-guide assessment](research/education-coverage-2026-11-08/vaccine-production-guides-2026-11-12/README.md) retains product-specific sequence, chemistry, formulation, protocol and measurement questions. The spacer panel is explicitly fictional; its numbers do not determine release or clinical benefit.
+
+| Date | Entity | What was wrong | How found | Fix |
+|---|---|---|---|---|
+| 2026-11-12 | [mRNA manufacturing](/technologies/mrna-lnp-manufacturing/) | The lead, process description and cards generalised modified nucleotides, a cell-free whole chain, production in weeks, process invariance and fixed storage temperatures | TNBC-MERIT primary methods specify ordinary uridine and report a 34 to 125 day sample-to-release range; Rojas reports another uridine lipoplex, with product-specific formulation and protocol | Replaces generalisations with a specified product, manufacturing clock and separate quality/handling evidence; preserves the earlier scoped mechanism paragraph and source links |
+| 2026-11-12 | mRNA manufacturing, retained commercial narrative | Facility locations, supply/patent rankings and an industrialisation prediction had no primary verification in this assessment | Field-by-field comparison with the cited study and manufacturing evidence | Deliberately withdraws these assertions pending named source follow-up, without calling them false; the lipid-nanoparticle owner retains formulation teaching |
+
+One obsolete unreviewed Chinese short summary is withdrawn and Simple English is corrected. No named language review, clinical schedule recommendation, expert sign-off, main coverage or deployment is implied.
+
 ### HLA evidence and candidate selection, 11 November 2026
 
 The [presentation-guide assessment](research/education-coverage-2026-11-08/vaccine-presentation-guides-2026-11-11/README.md) keeps inherited typing, measured presentation, receptor recognition and clinical outcomes separate. Fictional reports and candidate boards are teaching examples, with source-reading limits recorded in the packet.

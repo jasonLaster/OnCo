@@ -181,7 +181,7 @@ export const simpleO: Record<string, string> = {
   "cns-tumour-methylation-classifier": "The brain tumour methylation classifier reads the methylation pattern of a tumour's DNA and matches it to a reference library for a more reliable diagnosis than the microscope alone.",
   "sarcoma-methylation-classifier": "The sarcoma methylation classifier reads a bone or soft tissue tumour's DNA methylation and assigns it to one of more than sixty classes when the microscope cannot decide.",
   "mri-field-strengths": "MRI scanners are sold by magnet strength, with 1.5 tesla the reliable workhorse, 3 tesla giving more signal for prostate, brain and breast scans, and 7 tesla for research.",
-  "mrna-lnp-manufacturing": "An mRNA cancer vaccine is made without cells by copying a DNA template into RNA in a tank and wrapping it in tiny fat bubbles, done once per patient for personalised vaccines.",
+  "mrna-lnp-manufacturing": "This kind of cancer vaccine is made by producing and cleaning a genetic message, then combining it with material that helps deliver it. The exact product and each batch need their own quality checks.",
 
   "multitarget-stool-rna-test": "ColoSense is a home stool test that reads RNA shed by the bowel lining together with a blood test, approved in the US in 2024 for average-risk screening from age 45.",
   "nk-cell-engagers": "NK cell engagers are antibodies that hold a natural killer cell against a tumour cell and switch it on, an alternative to T-cell engagers with possibly milder side effects.",

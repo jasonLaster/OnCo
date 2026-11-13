@@ -1,0 +1,585 @@
+{
+  "checks": [
+    {
+      "id": "VAF-diploid-half-purity",
+      "sourceUnits": [
+        "MOM-569a66aab54c8c"
+      ],
+      "sourcePassageSha256s": [
+        "9878747602800e352f5642ca9c7b214f93eb3d28ef09ac761d3f28130f24db49"
+      ],
+      "expression": "0.5/(0.5*2+0.5*2)",
+      "exactResult": "1/4",
+      "decimalResult": 0.25,
+      "expected": "1/4",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census."
+    },
+    {
+      "id": "VAF-other-copy-lost",
+      "sourceUnits": [
+        "MOM-569a66aab54c8c"
+      ],
+      "sourcePassageSha256s": [
+        "9878747602800e352f5642ca9c7b214f93eb3d28ef09ac761d3f28130f24db49"
+      ],
+      "expression": "0.5/(0.5*1+0.5*2)",
+      "exactResult": "1/3",
+      "decimalResult": 0.3333333333333333,
+      "expected": "1/3",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census."
+    },
+    {
+      "id": "TP53-model-one",
+      "sourceUnits": [
+        "MOM-e3c45595181cc8",
+        "MOM-3ad507b94144ec"
+      ],
+      "sourcePassageSha256s": [
+        "33198d3cba883d812de9a4dc5c6e09476993926757ac11e22db10749d65a47f6",
+        "6a447096c3b6aeb75980c431cecf1fc0539b45e24d0043a3efcf1eca74f81a80"
+      ],
+      "expression": "60/(60+40*2)",
+      "exactResult": "3/7",
+      "decimalResult": 0.42857142857142855,
+      "expected": "3/7",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census."
+    },
+    {
+      "id": "TP53-model-two",
+      "sourceUnits": [
+        "MOM-569a66aab54c8c"
+      ],
+      "sourcePassageSha256s": [
+        "9878747602800e352f5642ca9c7b214f93eb3d28ef09ac761d3f28130f24db49"
+      ],
+      "expression": "86/(86*2+14*2)",
+      "exactResult": "43/100",
+      "decimalResult": 0.43,
+      "expected": "43/100",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census."
+    },
+    {
+      "id": "TP53-rounded-one",
+      "sourceUnits": [
+        "MOM-3ad507b94144ec"
+      ],
+      "sourcePassageSha256s": [
+        "6a447096c3b6aeb75980c431cecf1fc0539b45e24d0043a3efcf1eca74f81a80"
+      ],
+      "expression": "round(100*60/140)",
+      "exactResult": "43",
+      "decimalResult": 43.0,
+      "expected": "43",
+      "passCheck": true,
+      "scope": "The two expected fractions agree only after rounding to a whole percentage point."
+    },
+    {
+      "id": "TP53-rounded-two",
+      "sourceUnits": [
+        "MOM-569a66aab54c8c"
+      ],
+      "sourcePassageSha256s": [
+        "9878747602800e352f5642ca9c7b214f93eb3d28ef09ac761d3f28130f24db49"
+      ],
+      "expression": "round(100*86/200)",
+      "exactResult": "43",
+      "decimalResult": 43.0,
+      "expected": "43",
+      "passCheck": true,
+      "scope": "Rounding does not establish the same full dataset, copy model or functional consequence."
+    },
+    {
+      "id": "A-cancer-copies",
+      "sourceUnits": [
+        "MOM-d6413024268cc4"
+      ],
+      "sourcePassageSha256s": [
+        "23df6a229c6e7ae55c94e57d294117a98d516a2ff4f248d64c3c24d1bb4d8eed"
+      ],
+      "expression": "60*2",
+      "exactResult": "120",
+      "decimalResult": 120.0,
+      "expected": "120",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "A-normal-copies",
+      "sourceUnits": [
+        "MOM-d6413024268cc4"
+      ],
+      "sourcePassageSha256s": [
+        "23df6a229c6e7ae55c94e57d294117a98d516a2ff4f248d64c3c24d1bb4d8eed"
+      ],
+      "expression": "40*2",
+      "exactResult": "80",
+      "decimalResult": 80.0,
+      "expected": "80",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "A-variant-copies",
+      "sourceUnits": [
+        "MOM-4ae067ce3cdfc7"
+      ],
+      "sourcePassageSha256s": [
+        "d17292de68960918429a1b87a7b236fbea4cb0b03844928082cf491e6ed0e9f9"
+      ],
+      "expression": "60*1",
+      "exactResult": "60",
+      "decimalResult": 60.0,
+      "expected": "60",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "A-VAF",
+      "sourceUnits": [
+        "MOM-395dd5fbc27758"
+      ],
+      "sourcePassageSha256s": [
+        "8ac76806234968d92a79df8da70b11f3c86a4e4e2d39d611faac461249f5871b"
+      ],
+      "expression": "60/200",
+      "exactResult": "3/10",
+      "decimalResult": 0.3,
+      "expected": "3/10",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "A-CCF",
+      "sourceUnits": [
+        "MOM-395dd5fbc27758"
+      ],
+      "sourcePassageSha256s": [
+        "8ac76806234968d92a79df8da70b11f3c86a4e4e2d39d611faac461249f5871b"
+      ],
+      "expression": "60/60",
+      "exactResult": "1",
+      "decimalResult": 1.0,
+      "expected": "1",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "B-cancer-copies",
+      "sourceUnits": [
+        "MOM-46f45aee3ddf14",
+        "MOM-49dd5b648accb7"
+      ],
+      "sourcePassageSha256s": [
+        "3368950f0e8404aeade61087c192387b191953b809784f1eee5b07f4bc18cb2b",
+        "3b86bc934b2f23798650a4564b58ad49aff6b9ab50fa93909e562a657fbeb605"
+      ],
+      "expression": "60*4",
+      "exactResult": "240",
+      "decimalResult": 240.0,
+      "expected": "240",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "B-variant-copies",
+      "sourceUnits": [
+        "MOM-e673c3b9c6dcfd"
+      ],
+      "sourcePassageSha256s": [
+        "1da83584eb5e66131c6df60917c010bd1a3549e0e44d4f87d81f594061323934"
+      ],
+      "expression": "48*2",
+      "exactResult": "96",
+      "decimalResult": 96.0,
+      "expected": "96",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "B-VAF",
+      "sourceUnits": [
+        "MOM-a77e8a2fdede22"
+      ],
+      "sourcePassageSha256s": [
+        "fbc514d607e7a99d62af38856374b3c84f7875f709f31a880d5e31c232c3074c"
+      ],
+      "expression": "96/(240+80)",
+      "exactResult": "3/10",
+      "decimalResult": 0.3,
+      "expected": "3/10",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "B-CCF",
+      "sourceUnits": [
+        "MOM-a77e8a2fdede22"
+      ],
+      "sourcePassageSha256s": [
+        "fbc514d607e7a99d62af38856374b3c84f7875f709f31a880d5e31c232c3074c"
+      ],
+      "expression": "48/60",
+      "exactResult": "4/5",
+      "decimalResult": 0.8,
+      "expected": "4/5",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "inverse-20-carriers",
+      "sourceUnits": [
+        "MOM-c86b2627ab0fea",
+        "MOM-b7f81c1691bc6d"
+      ],
+      "sourcePassageSha256s": [
+        "66d6068182d34e12c1da3b13517c5465233c38d065fa14554082f0cf1bd3aacf",
+        "8196312ffcbfee7a456aefaa0eb5c9096fe29897d1680717e695b833dfb4e09b"
+      ],
+      "expression": "0.20*200",
+      "exactResult": "40",
+      "decimalResult": 40.0,
+      "expected": "40",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "inverse-20-CCF",
+      "sourceUnits": [
+        "MOM-c86b2627ab0fea",
+        "MOM-b7f81c1691bc6d"
+      ],
+      "sourcePassageSha256s": [
+        "66d6068182d34e12c1da3b13517c5465233c38d065fa14554082f0cf1bd3aacf",
+        "8196312ffcbfee7a456aefaa0eb5c9096fe29897d1680717e695b833dfb4e09b"
+      ],
+      "expression": "40/50",
+      "exactResult": "4/5",
+      "decimalResult": 0.8,
+      "expected": "4/5",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "inverse-40-carriers",
+      "sourceUnits": [
+        "MOM-2c277674bbad39",
+        "MOM-42ae724ec25a30",
+        "MOM-8366962052f9c5"
+      ],
+      "sourcePassageSha256s": [
+        "203fdc90d1bff58fb779414492f0943edfeaef5715d2dcaa79f615f7f88e5e9c",
+        "183034601f89845e85f9071b159814c944d495ffd927c817df07bfa0bedc53e9",
+        "d0cc1ae75edfc47a7ae5a3c6c83b047aec6aca81e47a127a808967e1db9687a5"
+      ],
+      "expression": "0.40*200",
+      "exactResult": "80",
+      "decimalResult": 80.0,
+      "expected": "80",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "inverse-40-CCF",
+      "sourceUnits": [
+        "MOM-2c277674bbad39",
+        "MOM-42ae724ec25a30",
+        "MOM-8366962052f9c5"
+      ],
+      "sourcePassageSha256s": [
+        "203fdc90d1bff58fb779414492f0943edfeaef5715d2dcaa79f615f7f88e5e9c",
+        "183034601f89845e85f9071b159814c944d495ffd927c817df07bfa0bedc53e9",
+        "d0cc1ae75edfc47a7ae5a3c6c83b047aec6aca81e47a127a808967e1db9687a5"
+      ],
+      "expression": "80/50",
+      "exactResult": "8/5",
+      "decimalResult": 1.6,
+      "expected": "8/5",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "cooccurrence-minimum",
+      "sourceUnits": [
+        "MOM-f2d896f15d474c"
+      ],
+      "sourcePassageSha256s": [
+        "82c9130c5db9bb08e4bfb689df46c26e3902c03cd3081728088c29c53dd07712"
+      ],
+      "expression": "max(0,40+40-100)",
+      "exactResult": "0",
+      "decimalResult": 0.0,
+      "expected": "0",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "cooccurrence-maximum",
+      "sourceUnits": [
+        "MOM-f2d896f15d474c"
+      ],
+      "sourcePassageSha256s": [
+        "82c9130c5db9bb08e4bfb689df46c26e3902c03cd3081728088c29c53dd07712"
+      ],
+      "expression": "min(40,40)",
+      "exactResult": "40",
+      "decimalResult": 40.0,
+      "expected": "40",
+      "passCheck": true,
+      "scope": "Wholly fictional uniform-copy mixture with diploid variant-negative normal cells and unbiased copy recovery; not a patient estimate or a direct cell census. An inferred fraction above one rejects the stipulated expected-value model rather than being clipped; equal marginal fractions do not establish co-occurrence."
+    },
+    {
+      "id": "CPM-A",
+      "sourceUnits": [
+        "MOM-fee4a5c7646360"
+      ],
+      "sourcePassageSha256s": [
+        "64e53a102df64467aaa2fee17a4e772a859c2657a0eaa3fd1e8c1f8c943177b3"
+      ],
+      "expression": "10/10000*1000000",
+      "exactResult": "1000",
+      "decimalResult": 1000.0,
+      "expected": "1000",
+      "passCheck": true,
+      "scope": "Fictional captured-unit/library denominator, not a cross-preparation validation or protein count."
+    },
+    {
+      "id": "CPM-B",
+      "sourceUnits": [
+        "MOM-fee4a5c7646360"
+      ],
+      "sourcePassageSha256s": [
+        "64e53a102df64467aaa2fee17a4e772a859c2657a0eaa3fd1e8c1f8c943177b3"
+      ],
+      "expression": "20/100000*1000000",
+      "exactResult": "200",
+      "decimalResult": 200.0,
+      "expected": "200",
+      "passCheck": true,
+      "scope": "More raw counts can be a lower library share."
+    },
+    {
+      "id": "log2FC-plus-one",
+      "sourceUnits": [
+        "MOM-7922a99e05996b"
+      ],
+      "sourcePassageSha256s": [
+        "b06bd979c3099b3129ab211349b65d42491807c720dbcce7a2c827f11854c031"
+      ],
+      "expression": "2**1",
+      "exactResult": "2",
+      "decimalResult": 2.0,
+      "expected": "2",
+      "passCheck": true,
+      "scope": "Mathematical ratio under the stated normalization, not a biological cutoff."
+    },
+    {
+      "id": "log2FC-plus-two",
+      "sourceUnits": [
+        "MOM-7922a99e05996b"
+      ],
+      "sourcePassageSha256s": [
+        "b06bd979c3099b3129ab211349b65d42491807c720dbcce7a2c827f11854c031"
+      ],
+      "expression": "2**2",
+      "exactResult": "4",
+      "decimalResult": 4.0,
+      "expected": "4",
+      "passCheck": true,
+      "scope": "A near-zero reference makes ratios unstable; no clinical threshold follows."
+    },
+    {
+      "id": "count-versus-later-control",
+      "sourceUnits": [
+        "MOM-a0abf516d9fad8",
+        "MOM-390e5ee78d405b",
+        "MOM-cdffe2e9f80fd3"
+      ],
+      "sourcePassageSha256s": [
+        "ac3b4a529abee6f602992e155bf42007833513c5e2576f9bdb8153398937952d",
+        "0dde6dd8efef4ba9180606ca11676317d59ea8813ecca814e97d659e6f1eb885",
+        "552a7229e86d4c36e1443edf71e54975e9efaa8fc904dd350ad0a355d95f5c69"
+      ],
+      "expression": "1000/2000",
+      "exactResult": "1/2",
+      "decimalResult": 0.5,
+      "expected": "1/2",
+      "passCheck": true,
+      "scope": "Invented per-well/median summaries and matched parallel aliquots; no original-cell fate tracing or killed-cell fraction is established."
+    },
+    {
+      "id": "count-versus-start",
+      "sourceUnits": [
+        "MOM-a0abf516d9fad8",
+        "MOM-390e5ee78d405b",
+        "MOM-cdffe2e9f80fd3"
+      ],
+      "sourcePassageSha256s": [
+        "ac3b4a529abee6f602992e155bf42007833513c5e2576f9bdb8153398937952d",
+        "0dde6dd8efef4ba9180606ca11676317d59ea8813ecca814e97d659e6f1eb885",
+        "552a7229e86d4c36e1443edf71e54975e9efaa8fc904dd350ad0a355d95f5c69"
+      ],
+      "expression": "1000/1000",
+      "exactResult": "1",
+      "decimalResult": 1.0,
+      "expected": "1",
+      "passCheck": true,
+      "scope": "Invented per-well/median summaries and matched parallel aliquots; no original-cell fate tracing or killed-cell fraction is established."
+    },
+    {
+      "id": "mass-versus-start",
+      "sourceUnits": [
+        "MOM-a8d3b9655340f5",
+        "MOM-cdffe2e9f80fd3"
+      ],
+      "sourcePassageSha256s": [
+        "e1e146ed7529b832205adc659b40b7dfc81ed3535553d8000355cb2a64734c63",
+        "552a7229e86d4c36e1443edf71e54975e9efaa8fc904dd350ad0a355d95f5c69"
+      ],
+      "expression": "16/20",
+      "exactResult": "4/5",
+      "decimalResult": 0.8,
+      "expected": "4/5",
+      "passCheck": true,
+      "scope": "Invented per-well/median summaries and matched parallel aliquots; no original-cell fate tracing or killed-cell fraction is established."
+    },
+    {
+      "id": "metabolism-versus-control",
+      "sourceUnits": [
+        "MOM-e9816064aa681a",
+        "MOM-cdffe2e9f80fd3"
+      ],
+      "sourcePassageSha256s": [
+        "728efb0d68130b760d102b374ab7dbccb91ed65727ecb5182f89b47bf7f075b1",
+        "552a7229e86d4c36e1443edf71e54975e9efaa8fc904dd350ad0a355d95f5c69"
+      ],
+      "expression": "70/190",
+      "exactResult": "7/19",
+      "decimalResult": 0.3684210526315789,
+      "expected": "7/19",
+      "passCheck": true,
+      "scope": "Invented per-well/median summaries and matched parallel aliquots; no original-cell fate tracing or killed-cell fraction is established."
+    },
+    {
+      "id": "metabolic-reduction-percent",
+      "sourceUnits": [
+        "MOM-e9816064aa681a",
+        "MOM-c475e29c3ccb0b",
+        "MOM-cdffe2e9f80fd3"
+      ],
+      "sourcePassageSha256s": [
+        "728efb0d68130b760d102b374ab7dbccb91ed65727ecb5182f89b47bf7f075b1",
+        "4a4dfec82aa049de4677b8e5ee6c6af108bc2d59d7f38e1afc0bf0adcafa8d8b",
+        "552a7229e86d4c36e1443edf71e54975e9efaa8fc904dd350ad0a355d95f5c69"
+      ],
+      "expression": "100*(1-70/190)",
+      "exactResult": "1200/19",
+      "decimalResult": 63.1578947368421,
+      "expected": "1200/19",
+      "passCheck": true,
+      "scope": "Invented per-well/median summaries and matched parallel aliquots; no original-cell fate tracing or killed-cell fraction is established."
+    },
+    {
+      "id": "retained-malignant-profile-expectation",
+      "sourceUnits": [
+        "MOM-4fe150845efe39",
+        "MOM-4b6b0f103e01f9",
+        "MOM-5c8dd3bb914292"
+      ],
+      "sourcePassageSha256s": [
+        "77a3c6bdbd294b92f42784ff9bd111954a379fc4f8a410acbc7fe0e565df20af",
+        "cb1af07543c1332ad5dc861b6c9c78890da957ea087340f196bb628a62e3d93a",
+        "daf45ff8c992cc7609c7f16a30c3d5b8b61b6e4f8071840a29380139f0305116"
+      ],
+      "expression": "0.04*6000",
+      "exactResult": "240",
+      "decimalResult": 240.0,
+      "expected": "240",
+      "passCheck": true,
+      "scope": "True input-nucleus fraction and equal inclusion through recovery, capture and QC. Not tissue area, yield forecast or adequacy cutoff."
+    },
+    {
+      "id": "Fernandez-low-range-case-consensus",
+      "sourceUnits": [
+        "MOM-a88fc56919c28e"
+      ],
+      "sourcePassageSha256s": [
+        "c42889ca8fdeb850e36fcec0557cdfa5aab65c07e9a6a98b560190c026514060"
+      ],
+      "expression": "24/92",
+      "exactResult": "6/23",
+      "decimalResult": 0.2608695652173913,
+      "expected": "6/23",
+      "passCheck": true,
+      "scope": "Primary-method clarification of the lesson shorthand: selected cases with at least one zero score, not pairwise agreement or diagnostic accuracy."
+    },
+    {
+      "id": "Fernandez-three-plus-case-consensus",
+      "sourceUnits": [
+        "MOM-a88fc56919c28e"
+      ],
+      "sourcePassageSha256s": [
+        "c42889ca8fdeb850e36fcec0557cdfa5aab65c07e9a6a98b560190c026514060"
+      ],
+      "expression": "26/45",
+      "exactResult": "26/45",
+      "decimalResult": 0.5777777777777777,
+      "expected": "26/45",
+      "passCheck": true,
+      "scope": "Separate denominator defined by at least one three-plus reader score."
+    },
+    {
+      "id": "Fernandez-reader-consensus-boundary",
+      "sourceUnits": [
+        "MOM-a88fc56919c28e"
+      ],
+      "sourcePassageSha256s": [
+        "c42889ca8fdeb850e36fcec0557cdfa5aab65c07e9a6a98b560190c026514060"
+      ],
+      "expression": "ceil(0.9*18)",
+      "exactResult": "17",
+      "decimalResult": 17.0,
+      "expected": "17",
+      "passCheck": true,
+      "scope": "At least90-percent agreement among18 means at least17 readers;17/18 is94.4 percent, not90 percent exactly."
+    },
+    {
+      "id": "later-core-reading-minutes",
+      "sourceUnits": [
+        "MOM-38fbe3c3ef2213",
+        "MOM-ee303141bd71ec",
+        "MOM-c91267177cb0eb",
+        "MOM-d41eab5cc7ef7e",
+        "MOM-9cf48f97ce271b",
+        "MOM-34d5a742bcaed1",
+        "MOM-4e8505a71a1151",
+        "MOM-c998cd7b7b89bd",
+        "MOM-652ec52db63005"
+      ],
+      "sourcePassageSha256s": [
+        "8e9ee8c8cb32165c00e2300807504072d226625fefbbd71f5f9e500f0afb3a6c",
+        "13cfbc327a7f7a5b2a0b3eef0baeff64255a98f6f9ae64ec126fc899a0d36c1d",
+        "83b4bd13a8b9788560ece27e5b655da55ae9c5a96ba74730242e5ffb9e2c50ea",
+        "350534c9d0b4719af97d389e9e8f26b5dbbd2455e77e94cd0b1c8c806644decb",
+        "1dc5704394d1a4e0ee589b098c4a49d855d3b870a37e01c6d7709fcfa7b98923",
+        "dab2d59c5cd0b8994b8f6eefa00df27f695e68684f234533f9fd4f4b16004b54",
+        "93ae0ba58718228c50d88e8895fc07b436208a9cd492d9c735e16cc2709e1e0a",
+        "00acb3f1c8ff3d4ca00b1f624db2b7e85cff9b23cc120856156d3dbbe0a6e32e",
+        "03d19e2082649870c1fc80f9285ae6b6cb62439191406eec8f4f351780dc9c29"
+      ],
+      "expression": "8+12+14+14+10+12+10+10+14",
+      "exactResult": "104",
+      "decimalResult": 104.0,
+      "expected": "104",
+      "passCheck": true,
+      "scope": "Learning-plan arithmetic excluding optional lesson4, not graph teaching or a promised reading duration."
+    }
+  ],
+  "checksRun": 35,
+  "allPass": true,
+  "source": "Frozen curriculum inputs and named primary-method denominators, independent of authored OnCo fields",
+  "empiricalOrClinicalCredit": 0
+}

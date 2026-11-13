@@ -1,0 +1,566 @@
+{
+  "dataCommit": "7fcd4b8aa84222e732f6d02e728a9ce903defad0",
+  "additions": [
+    {
+      "anchorId": "M-CONTROLS",
+      "recordId": "ngs",
+      "field": "notes",
+      "text": "A positive control shows that the expected signal was recovered in that control under the run conditions. It does not prove that every sample call is correct. A negative sample result still needs adequate material, usable evidence at the actual position and sensitivity for the relevant alteration class. Research discovery and clinical validation for a particular specimen and use are different claims.",
+      "sources": [
+        "28341590",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-VAF43",
+      "recordId": "vaf",
+      "field": "notes",
+      "text": "In a fictional TP53 example, 60 cancer cells each carry one variant copy and have lost the other local copy; 40 normal cells each have two unaltered copies. With equal recovery per copy, the expected variant fraction is 60 divided by 140, about 43 percent. Another model, 86 percent cancer-cell purity with two local copies and one variant copy in every cancer cell, gives 86 divided by 200, exactly 43 percent. Both round to 43 percent when reported to a whole percentage point. That reported fraction alone cannot choose the copy model or establish that a missense variant disables the protein. These are conditional calculations, not a measured clone or a functional test.",
+      "sources": [
+        "22544022",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-VAF30",
+      "recordId": "vaf",
+      "field": "notes",
+      "text": "Two invented mixtures show why the same fraction can fit different carrier fractions. Each contains 60 cancer and 40 diploid normal cells, with no variant in the normal cells and unbiased recovery. Model A gives every cancer cell two local copies and one variant copy: 60 variant copies among 120 cancer plus 80 normal copies give VAF 30 percent and CCF 100 percent. Model B gives every cancer cell four local copies, with 48 of the 60 cells carrying two variant copies each: 96 among 240 cancer plus 80 normal copies again give VAF 30 percent, but CCF is 80 percent. They match that one fraction; they have not been shown to fit the same complete dataset. Independent copy evidence can distinguish the hypotheses.",
+      "sources": [
+        "22544022",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-VAF-INVERSE",
+      "recordId": "vaf",
+      "field": "notes",
+      "text": "In a separate invented uniform-copy model, 50 cancer and 50 normal cells each carry two local copies; normal cells lack the variant and each carrier cancer cell has one variant copy. Among 200 total copies, an expected VAF of 20 percent requires forty carriers among fifty cancer cells, or CCF 80 percent. An expected VAF of 40 percent would require eighty carriers among fifty, or 160 percent, which is not a possible carrier fraction. Preserve that incompatibility rather than clipping it to 100 percent or guessing which input is wrong. The calculation inverts an expected fraction; noisy observed support and uncertain purity, copy number, multiplicity, origin or recovery require their uncertainty carried through. More reads can improve precision without fixing a wrong model.",
+      "sources": [
+        "22544022",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-HAPLOTYPE-COOCCURRENCE",
+      "recordId": "alleles-and-zygosity",
+      "field": "notes",
+      "text": "A haplotype groups linked sequence variants on a chromosome that tend to be inherited together. Phasing assigns variants to chromosome copies; that is different from counting carrier cancer cells. Labels A and B distinguish sequence versions without grading either as harmful or harmless. In a fictional set of 100 cancer cells, two variants each present in forty cells could occupy the same forty or separate groups of forty. The two individual fractions do not reveal their overlap. Joint sequence or cell-resolved evidence addresses co-occurrence, with its own sampling limits. Neither shared prevalence nor physical phase alone establishes a variant's functional importance.",
+      "sources": [
+        "official:NHGRI-haplotype",
+        "22544022",
+        "24633410",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-PYCLONE",
+      "recordId": "clonal-evolution-models",
+      "field": "notes",
+      "text": "Roth and colleagues described PyClone as a Bayesian method that groups deeply sequenced somatic mutations into putative clonal clusters while estimating cellular prevalence and accounting for copy-number imbalance and normal-cell contamination. The groups remain model-derived hypotheses about populations, rather than a direct census or a guaranteed family tree. Similar estimated prevalence alone does not show that two variants occur in the same cells, and one sampled region does not map every lesion or establish that a shared variant matters functionally.",
+      "sources": [
+        "24633410",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-AMPLICON",
+      "recordId": "gene-amplification",
+      "field": "notes",
+      "text": "In a cancer copy-number report, an amplicon is an amplified DNA segment and can contain several genes. TCGA described multiple HER2-amplicon-associated genes, including GRB7, in its breast-cancer analysis. A regional gain does not identify every included gene as a driver or guarantee the same multiplication of RNA or protein; allele-specific state, expression, location and functional importance remain separate questions.",
+      "sources": [
+        "23000897",
+        "22544022",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-COUNT",
+      "recordId": "bulk-rna-seq",
+      "field": "notes",
+      "text": "A larger raw count can be a smaller share of a library. In an invented example, ten captured counts out of 10,000 give 1,000 counts per million, while twenty out of 100,000 give 200. Keep the counted unit and library-size definition. Counts per million scale by that denominator; transcripts per million also use transcript-length information under the chosen quantification method. These relative scales are not interchangeable, do not recover the total RNA made per cell and are not protein counts. A base-two log fold change of plus one corresponds to a ratio of two, and plus two to four under the stated normalization. A reference near zero can make a ratio large while the underlying signal remains small; these are mathematical examples, not biological cutoffs.",
+      "sources": [
+        "26813401",
+        "official:O02",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-PROFILE-UNITS",
+      "recordId": "single-cell-rna-seq",
+      "field": "notes",
+      "text": "A detection fraction uses the analysed profiles and a stated detection rule: it is not automatically the fraction of all cells in the original tissue. A profile with one immune-gene count but otherwise epithelial features is not thereby identified as an immune cell. Sparse recovery, ambient RNA and more than one contributing cell can complicate its interpretation. Check coherent marker evidence and the method of assignment; a mixture of markers does not by itself establish a new cell type. Pooling the counts from a selected set of profiles is pseudobulk. Five hundred nuclei from one biopsy can summarize that selected population, while the biopsy remains one biological specimen rather than five hundred independent patients.",
+      "sources": [
+        "28091601",
+        "33367645",
+        "32405060",
+        "source-first-inference",
+        "34584091",
+        "official:O08"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-SOUP",
+      "recordId": "single-cell-rna-seq",
+      "field": "notes",
+      "text": "Background correction estimates which part of a profile comes from free RNA in the preparation. SoupX's authors discuss deliberately overcorrecting contamination at the cost of removing a small amount of genuine signal. The estimated contamination and settings therefore need review; a corrected weak count or zero is not an infallible label of the molecule's origin.",
+      "sources": [
+        "33367645"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-SPLICE-NAMES",
+      "recordId": "rna-splicing",
+      "field": "notes",
+      "text": "Identify the reference sequence, including its version when the reference database uses versions. For an intronic change, HGVS uses a genomic reference together with the specified transcript used for coding coordinates; a mature transcript reference alone does not contain the intron. In an invented transcript whose exon ends at coding position 200, c.200+1G>A places a change one base into the following intron. The c. prefix gives coding-DNA coordinates and p. describes a protein consequence. The DNA name alone does not specify an exon skip, frameshift or remaining function; one DNA change can produce several RNA products.",
+      "sources": [
+        "official:HGVS-reference-sequences",
+        "official:O01",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-SPLICE-PRODUCT",
+      "recordId": "rna-splicing",
+      "field": "notes",
+      "text": "In a fictional repair-gene example, a high gene-level RNA count can include abnormal splice products and messages from normal neighbours. A reproducible abnormal junction supports a local RNA join, rather than a complete transcript, its protein or its originating DNA allele. An intronic DNA base may be removed during processing, so a mature-junction read need not contain that base. Assigning the product to a particular allele needs suitable linking sequence or another justified allele-specific measurement, with cell-source and reference checks. RNA directly examines the processing product; the gene-level count cannot settle the protein-function question.",
+      "sources": [
+        "26813401",
+        "official:O18",
+        "official:O01",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-SIG-SCALE",
+      "recordId": "gene-expression-signatures",
+      "field": "notes",
+      "text": "An expression-program score has meaning within its algorithm and background. For a score formed by subtracting matched control-gene expression, zero need not mean that no program genes were detected. The 90th percentile places a result relative to a specified reference; it does not mean that 90 percent of cells express the program or that a pathway is 90 percent active. Changing the genes, preprocessing, controls or reference can change the scale, so retain them with the method and version.",
+      "sources": [
+        "official:O04",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-LIM",
+      "recordId": "cell-lineage-and-state",
+      "field": "notes",
+      "text": "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+      "sources": [
+        "19648928",
+        "23404817",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-PROTEIN-FORM",
+      "recordId": "ihc",
+      "field": "notes",
+      "text": "Staining recognises an antibody-defined molecular feature, or epitope, rather than automatically proving a complete functioning protein. In an invented repair-gene example, weaker staining in identified cancer cells than in normal neighbours supports a cell-specific signal difference if the controls are adequate. The antibody may recognise a fragment or more than one protein form, so this does not give the amount of intact useful repair protein. The relevant form and current repair need suitable measurements of their own. One validated method can sometimes answer several questions, but measuring one property does not establish every other one.",
+      "sources": [
+        "24443746",
+        "prior:antigen-antibodies-epitopes",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-SPATIAL12",
+      "recordId": "spatial-transcriptomics",
+      "field": "notes",
+      "text": "In a fictional map, each of two regions contains twelve illustrative immune cells, but one places them within malignant nests and the other outside. Equal cell symbols do not guarantee equal bulk RNA: similar RNA is a separately stipulated condition of the example. The map supplies neither a stromal-area TIL score nor evidence of recognition or treatment benefit. A capture spot can pool several cells, and changing an estimated cell boundary can change molecule assignment while the observed RNA coordinates stay fixed.",
+      "sources": [
+        "37380767",
+        "25214542",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-FUNCTION-PLAN",
+      "recordId": "functional-drug-testing",
+      "field": "notes",
+      "text": "Consider an entirely invented tumour-only organoid experiment from one donor and one characterised preparation, with three wells per condition. Drug A is tested at 0.1, 0.3 and 1 micromoles per litre for 48 hours with matched carrier and handling. The planned primary readout is calibrated viable tumour-cell count at the start and endpoint, with cell identity checked. Vehicle, a positive control with an expected response and a target perturbation or rescue ask different questions. Their actual results must be documented; the illustrative counts do not show that every control passed. Three wells are not three donors. This preparation supplies neither immune cells, full human metabolism nor a healthy-organ toxicity measurement, and these example exposures are not human doses.",
+      "sources": [
+        "27135972",
+        "prior:controlled-perturbation",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-FUNCTION-COUNTS",
+      "recordId": "functional-drug-testing",
+      "field": "notes",
+      "text": "In that fictional experiment, both groups start at 1,000 viable tumour cells per well. At 48 hours and the middle exposure of 0.3 micromoles per litre, the median across three wells is 2,000 for vehicle and 1,000 for treatment. Treatment is at 50 percent of the later vehicle count and 100 percent of its own starting count. That establishes no net increase, not 50 percent killing or absence of division. Reduced division or division balanced by death can give that endpoint; time-course and suitable division/death measurements distinguish explanations. Keep each well and its variation rather than treating the median as three independent patients.",
+      "sources": [
+        "27135972",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-FUNCTION-READOUTS",
+      "recordId": "functional-drug-testing",
+      "field": "notes",
+      "text": "Two matched parallel aliquots add different fictional readouts to the same comparison; they do not track the original cells individually. Mean buoyant mass is 20 picograms per measured cell at the start, 21 with vehicle and 16 with treatment, so the treated mean is 80 percent of its starting value. Metabolic signal is 100 arbitrary units at the start, 190 with vehicle and 70 with treatment: 70 divided by 190 is about 36.8 percent, a 63.2 percent reduction relative to vehicle. Neither is a killed-cell fraction. A changing population mean is not an individual-cell trajectory, and buoyant mass depends on cell volume and the difference between cell and fluid density. It is not dry mass, a count of living cells or a measurement of a particular death mechanism.",
+      "sources": [
+        "20383132",
+        "27135972",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-FERNANDEZ-DENOMINATOR",
+      "recordId": "paper-fernandez-jama-oncol",
+      "field": "notes",
+      "text": "Fernandez and colleagues selected 170 biopsies, enriched for two-plus and three-plus cases, for eighteen pathologists to score. Ninety-two cases were called zero by at least one reader; twenty-four of those reached agreement by at least seventeen readers, about 26 percent. Of forty-five cases called three-plus by at least one reader, twenty-six reached that agreement, about 58 percent. These are case-level consensus proportions in separately defined groups, not pairwise agreement percentages or measured sensitivity and specificity. The readers were not told that zero versus one-plus agreement was the particular question.",
+      "sources": [
+        "35113160"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-CHAIN",
+      "recordId": "multi-omic-integration",
+      "field": "notes",
+      "text": "Consider an invented repair-gene R example, with measurements attributed to the same pretreatment tissue region except for a derived model. A supported splice-site DNA variant identifies a candidate sequence change. Loss of the other allelic contribution, with the variant assigned to the retained contribution, supports a possible two-hit explanation subject to copy and phase uncertainty. A reproducible abnormal RNA junction in malignant-cell-enriched material adds evidence for a changed transcript product, while reduced staining with suitable controls adds a protein-signal difference in the assigned cells. Neither establishes that every intact protein is gone. A high genomic scar adds evidence about genomic history, not a direct test of present repair. Impaired repair in a suitable model with informative cycling and damage controls addresses function under those conditions. A replicated drug response at specified exposures adds a model-sensitivity hypothesis; it still leaves achievable safe exposure and patient benefit to their appropriate evidence. These are distinct observations, not a requirement to perform every assay before using any established clinical biomarker.",
+      "sources": [
+        "source-first-inference",
+        "29635390",
+        "prior:hrd-genomic-scar-scores",
+        "35809752"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-CLINICAL-CARDS",
+      "recordId": "laboratory-certification-test-authorization",
+      "field": "notes",
+      "text": "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report.",
+      "sources": [
+        "official:O13",
+        "official:O15",
+        "official:O16",
+        "official:O17",
+        "official:O14",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-RESIDUAL",
+      "recordId": "single-cell-rna-seq",
+      "field": "notes",
+      "text": "Residual tumour here means cancer remaining in the sampled tissue after treatment. For residual-tumour research, first support malignant-cell identity, then ask which recovered states, target messages and immune profiles are present. A stress programme does not establish a genetic clone or explain survival. In Kim and colleagues' twenty-person triple-negative breast-cancer study, longitudinal exome data and single-cell DNA/RNA data in eight participants supported selection of pre-existing genotypes alongside expression reprogramming under the studied treatment. This is not a universal resistance mechanism. Compare the sampled region, time, preparation, recovery and analysis before attributing a difference to treatment; a missing cluster need not have been eliminated. In a separate fictional calculation, an input suspension truly containing 4 percent malignant nuclei gives an expectation of 240 among 6,000 retained profiles only if malignant and other nuclei have equal inclusion through recovery, capture and quality filtering. Tissue-area cellularity is a different denominator. The calculation is neither a yield forecast nor an adequacy cutoff.",
+      "sources": [
+        "29681456",
+        "32405060",
+        "34584091",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-COMPARATOR",
+      "recordId": "epithelium-and-stroma",
+      "field": "notes",
+      "text": "In a fictional comparison, gene R is high in cancer cells, low in fibroblasts and similarly high in normal luminal epithelial cells. The first contrast supports higher expression than fibroblasts, even if it passes a statistical threshold; it does not establish cancer selectivity. The normal epithelial comparison addresses that claim more closely, while leaving other organs, cell states and target accessibility untested. If that reference group is tiny, contaminated or prepared differently, preserve the unresolved comparison rather than declaring selectivity or exact equality. Normal epithelial cells can also contribute familiar lineage markers to a tumour specimen. An image-based tumour mask is an assignment that needs validation for its actual method and specimens, rather than automatic proof that every included cell is malignant.",
+      "sources": [
+        "37380767",
+        "official:O05",
+        "official:NCI-stroma-api",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-MALIGNANT-ASSIGNMENT",
+      "recordId": "cell-lineage-and-state",
+      "field": "notes",
+      "text": "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+      "sources": [
+        "24925914",
+        "33367645",
+        "32300252",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-REPORT-CARD",
+      "recordId": "multi-omic-integration",
+      "field": "notes",
+      "text": "A practical report reading starts with six questions: what specimen, region, date and treatment context were sampled; what object and units were measured with which assay version; whether the result is signed clinical, preliminary, research or model-predicted evidence; which controls or reference support the comparison; what remains unmeasured; and which actual decision could change. A missing field is a question to resolve, not a fact to assume. For fictional pretreatment bulk RNA, high R relative to a stated reference supports captured expression in that mixture. Calling it a surface target remains an interpretation until the contributing cells and accessible protein are established; selectivity, dependence and treatment benefit need their own evidence. Molecular layer and resolution are separate axes. Mapping 500 RNA targets in one section adds location relative to a pooled RNA result, while the measured layer remains RNA. It does not add a membrane-protein or functional measurement.",
+      "sources": [
+        "official:O09",
+        "official:O20",
+        "28091601",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-REPORT-EXAMPLE",
+      "recordId": "multi-omic-integration",
+      "field": "notes",
+      "text": "An entirely fictional core-biopsy report lists invasive carcinoma of no special type, grade 3; ER and PR below 1 percent; HER2 IHC one-plus; Ki-67 positivity of 60 percent; stromal TILs of 30 percent; PD-L1 22C3 combined positive score 15; and a supported TP53 missense finding at VAF 38 percent on a tumour-only panel. These observations retain separate rules and denominators. The diagnosis describes the sampled region; the receptor results support a triple-negative category and low HER2 staining under the stated testing rules, without establishing a particular drug benefit. Ki-67 positivity is not a treatment-selection rule here. The stromal score is an eligible-area assessment, not proof of recognition, and CPS is its own defined stain score rather than a universal immune percentage. VAF is not inherited status, cancer-cell fraction or measured variant function. KEYNOTE-355 tested pembrolizumab plus chemotherapy in previously untreated advanced TNBC; its CPS-at-least-ten group had median PFS 9.7 versus 5.6 months, hazard ratio 0.65. KEYNOTE-522 enrolled high-risk early TNBC regardless of PD-L1 status. A score cannot transfer benefit between those settings. None of these invented values is a patient observation or a prescription.",
+      "sources": [
+        "33278935",
+        "32101663",
+        "official:Keytruda-SPL",
+        "official:O13",
+        "official:O12",
+        "25214542",
+        "prior:ki-67-index",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-DELIVERY",
+      "recordId": "drug-target-and-mechanism",
+      "field": "notes",
+      "text": "In a fictional experiment, receptor R is high in malignant cells, low in fibroblasts and similarly high in normal epithelial cells. A stain places it on cancer-cell membranes, while blocking R has little effect on growth under the tested conditions. This supports neither cancer selectivity nor a demonstrated growth dependency. R could be investigated as an antibody-drug-conjugate delivery address, but that hypothesis still needs evidence for binding, access, uptake where required, payload effect and relevant normal-tissue exposure. A plausible delivery address is not a promised drug response; enrichment, selectivity, engagement, dependence and clinical benefit are different claims.",
+      "sources": [
+        "35665782",
+        "prior:drug-target-and-mechanism",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    },
+    {
+      "anchorId": "M-OMICS",
+      "recordId": "multi-omic-integration",
+      "field": "notes",
+      "text": "Genome, transcriptome and proteome name DNA, RNA and protein collections. An omics profile measures many features within a layer, subject to its coverage and capture limits; it does not necessarily inspect every molecule. Molecular layer and spatial or cellular resolution answer different questions. Multi-omic integration relates the measured layers, with their specimen and analysis context retained, rather than turning a larger number of assays into a universal measure of certainty.",
+      "sources": [
+        "official:O20",
+        "23000897",
+        "prior:proteomics",
+        "source-first-inference"
+      ],
+      "verificationPending": [],
+      "scope": "Proposed reader prose. No canonical edit or coverage credit yet."
+    }
+  ],
+  "scalarAndListCorrections": [
+    {
+      "id": "SHAH-SCOPE-tldr",
+      "recordId": "paper-shah-tnbc-clonal-evolution-nature-2012",
+      "field": "tldr",
+      "before": "Sequencing 104 triple-negative breast cancers at diagnosis showed they range from tumours with a handful of mutations to tumours with hundreds, that only about a third of mutations are even expressed, and that TP53, PIK3CA and PTEN are the changes present in most of the tumour's cells.",
+      "beforeSha256": "a75bcb98b9683f574a67df36e20d9245bf55fb9f815f977dc9ea9e21345b723f",
+      "after": "This study profiled 104 primary triple-negative breast cancers across several assays and found varied mutation and clonal patterns. Only a subset of validated DNA variants was observed in the compared RNA data.",
+      "afterSha256": "4df128ce5ff21014117b3c032946cfa85e63046e1df14525f4494402d996ac55",
+      "reason": "Distinguish assay-specific104/80/65 subsets and detected RNA variants; remove unsupported universal driver and drug-failure causal claims from the editorial interpretation.",
+      "sources": [
+        "22495314",
+        "22544022"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "SHAH-SCOPE-summary",
+      "recordId": "paper-shah-tnbc-clonal-evolution-nature-2012",
+      "field": "summary",
+      "before": "104 primary TNBCs were profiled by exome and RNA sequencing with deep re-sequencing of 2,414 somatic mutations to measure clonal frequency. The cancers showed a wide, continuous spectrum of genomic evolution; about 36% of mutations were expressed. Basal TNBC showed more variation in clonal frequencies than non-basal TNBC. TP53, PIK3CA and PTEN mutations were clonally dominant compared with other genes, though in some tumours their frequencies were incompatible with founder status; mutations in cytoskeletal, cell-shape and motility genes occurred at lower clonal frequency, suggesting later acquisition.\n\nThe cohort is deposited as brca_bccrc (British Columbia, Nature 2012) on cBioPortal.",
+      "beforeSha256": "6b286bb8e482c82ecd4f010fab3a603c7b01d5f7266c8b0b6a215d7de52e75af",
+      "after": "The study profiled 104 primary TNBCs across assays: copy-number arrays in 104, RNA sequencing in 80, and genome or exome sequencing in 65. Deep re-sequencing validated 2,414 somatic single-nucleotide variants for the mutation analysis. The cancers showed a wide, continuous spectrum of genomic evolution; 36% of the validated somatic single-nucleotide variants were observed in the compared transcriptome sequence. Non-detection in those data does not establish biological silence in every cell. Basal TNBC showed more variation in clonal frequencies than non-basal TNBC. TP53, PIK3CA and PTEN mutations were clonally dominant compared with other genes, though in some tumours their frequencies were incompatible with founder status; mutations in cytoskeletal, cell-shape and motility genes occurred at lower clonal frequency, suggesting later acquisition.\n\nThe cohort is deposited as brca_bccrc (British Columbia, Nature 2012) on cBioPortal.",
+      "afterSha256": "bcde556cebbcf15da447683cff4136ea7af5e5419d9bebfe73bcc000780c57b8",
+      "reason": "Distinguish assay-specific104/80/65 subsets and detected RNA variants; remove unsupported universal driver and drug-failure causal claims from the editorial interpretation.",
+      "sources": [
+        "22495314",
+        "22544022"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "SHAH-SCOPE-whatItMeans",
+      "recordId": "paper-shah-tnbc-clonal-evolution-nature-2012",
+      "field": "whatItMeans",
+      "before": "The first TNBC-specific genome paper established that the disease has no shared driver beyond TP53 and that each tumour is a clonal mixture, the reason single-target drugs have struggled and ctDNA tracking needs patient-specific variants.",
+      "beforeSha256": "82eb5f41b612f86d4eaa23e41e38d9ea148fdb95eabec0ee86a3e23d994fd75d",
+      "after": "A triple-negative receptor label does not specify one mutation profile. Bulk sequencing and copy-aware modelling estimated differing mutation prevalences in this cohort. RNA observations add expression evidence without by themselves measuring a functioning protein, a therapeutic dependency or treatment benefit.",
+      "afterSha256": "b061590e41e0fb32e58630cf31da9b882934af4ac46e567ac9207330dac819e0",
+      "reason": "Distinguish assay-specific104/80/65 subsets and detected RNA variants; remove unsupported universal driver and drug-failure causal claims from the editorial interpretation.",
+      "sources": [
+        "22495314",
+        "22544022"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "SHAH-FINDING-SCOPE-findings",
+      "recordId": "paper-shah-tnbc-clonal-evolution-nature-2012",
+      "field": "findings",
+      "before": [
+        "Coding mutation counts ranged from a handful to hundreds per tumour; about 36% of mutations were expressed.",
+        "TP53, PIK3CA and PTEN were clonally dominant; basal TNBC showed wider clonal variation than non-basal.",
+        "Cytoskeletal and motility gene mutations were subclonal, consistent with later acquisition."
+      ],
+      "beforeSha256": "7def4552ba64f5287689f8a3838fc69bdc9ba6c09a7991739d8165419bda792c",
+      "after": [
+        "Coding mutation counts ranged from a handful to hundreds per tumour; 36% of the validated somatic single-nucleotide variants were observed in the compared transcriptome sequence.",
+        "TP53, PIK3CA and PTEN were clonally dominant; basal TNBC showed wider clonal variation than non-basal.",
+        "Cytoskeletal and motility gene mutations were subclonal, consistent with later acquisition."
+      ],
+      "afterSha256": "465e7e7d055190a7cb9ff4d4352cdea976f3ab01a19c0df558ac6486e4c9f41b",
+      "reason": "Carry the validated-SNV/transcriptome denominator into the findings card as well; preserve the other findings.",
+      "sources": [
+        "22495314"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "TCGA-COHORT-summary",
+      "recordId": "paper-tcga-breast-molecular-portraits-nature-2012",
+      "field": "summary",
+      "before": "Primary breast cancers were analysed by copy-number arrays, DNA methylation, exome sequencing (510 with matched normals), mRNA arrays, microRNA sequencing and reverse-phase protein arrays. Only TP53, PIK3CA and GATA3 were mutated in more than 10% of all breast cancers. Basal-like tumours carried TP53 mutations in 80%, PIK3CA in 9%, PTEN mutation or loss in 35%, INPP4B loss in 30% and RB1 mutation or loss in 20%; PIK3CA (49%), KRAS (32%), BRAF (30%) and EGFR (23%) were amplified or gained but rarely mutated. Comparison with high-grade serous ovarian cancer showed many commonalities, indicating related aetiology and similar therapeutic opportunities. 80% of basal-like tumours were triple-negative.\n\nDeposited as brca_tcga_pub on cBioPortal, with the 2018 PanCancer Atlas re-analysis as brca_tcga_pan_can_atlas_2018.",
+      "beforeSha256": "e4f866551027ed734dce6a6b69eda744af4ee3add9905189de640d0347f2fd72",
+      "after": "Primary breast cancers were analysed by copy-number arrays, DNA methylation, exome sequencing (510 with matched normals), mRNA arrays, microRNA sequencing and reverse-phase protein arrays. In the analysed TCGA cohort, only TP53, PIK3CA and GATA3 were mutated in more than 10% of breast cancers. Basal-like tumours carried TP53 mutations in 80%, PIK3CA in 9%, PTEN mutation or loss in 35%, INPP4B loss in 30% and RB1 mutation or loss in 20%; PIK3CA (49%), KRAS (32%), BRAF (30%) and EGFR (23%) were amplified or gained but rarely mutated. Comparison with high-grade serous ovarian cancer showed many commonalities, indicating related aetiology and similar therapeutic opportunities. 80% of basal-like tumours were triple-negative.\n\nDeposited as brca_tcga_pub on cBioPortal, with the 2018 PanCancer Atlas re-analysis as brca_tcga_pan_can_atlas_2018.",
+      "afterSha256": "4de3ec7d5ebc4a0b3cb3e3fa1f32ab6a6787e1e02147f27f97071a78c7619ad1",
+      "reason": "Make the analysed-cohort denominator explicit in the editorial summary; do not imply a prevalence statement for every breast-cancer population. Other historical descriptive figures are preserved at inherited scope.",
+      "sources": [
+        "23000897"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "TCGA-INTERPRETATION-whatItMeans",
+      "recordId": "paper-tcga-breast-molecular-portraits-nature-2012",
+      "field": "whatItMeans",
+      "before": "This is the reference frequency table for basal-like disease: it explains why PARP inhibitors and platinum, borrowed from ovarian cancer, work in TNBC, and why the PI3K pathway is broken by copy number rather than the hotspot mutations that drugs were designed against.",
+      "beforeSha256": "a561d41442bc74416ee9b4935d666de278014d74cfb4b5143d9c6777ce2fc687",
+      "after": "This study illustrates how DNA, RNA and protein profiles can provide related but different subtype information. Associations and pathway patterns in the analysed cohort generate biological and treatment hypotheses; this profiling comparison did not test whether a drug improves outcomes in every person with triple-negative breast cancer.",
+      "afterSha256": "49f0c7200fa30f538f3a10652ef9e5a5f0d1456351d44e4fd3d4d9f432fdce40",
+      "reason": "Remove a treatment-efficacy causal interpretation not established by the profiling study. Preserve the original descriptive summary and all legacy numerical caveats at their inherited scope.",
+      "sources": [
+        "23000897"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "FERNANDEZ-INTERPRETATION-tldr",
+      "recordId": "paper-fernandez-jama-oncol",
+      "field": "tldr",
+      "before": "Paper cited by one bottleneck page and 17 idea pages, indexed on Europe PMC as PubMed record 35113160 and published in JAMA Oncology; the citing pages link this DOI, which is how the record was matched.",
+      "beforeSha256": "762f8a9b5b03b3530b9109adc4d7a5e210999cc630d4609e064667b384ddb5d6",
+      "after": "In a selected 2022 breast-biopsy reader study, agreement was lower in the low-HER2 range. The reported percentages concern case-level consensus, not an individual report's probability of error.",
+      "afterSha256": "02683f45235e3ffa6cedcd618742f784672f2a95f544a7c4cc5e514260f0bcde",
+      "reason": "Replace citation-process boilerplate with the inspected methods and denominator interpretation. The summary reproducing the historical abstract remains byte-identical; no quotation is edited.",
+      "sources": [
+        "35113160"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "FERNANDEZ-INTERPRETATION-whatItMeans",
+      "recordId": "paper-fernandez-jama-oncol",
+      "field": "whatItMeans",
+      "before": "One bottleneck page and 17 idea pages on OnCo cite this paper by its DOI; this record gives the citation a page of its own so a reader can follow it without leaving OnCo. Read the abstract above alongside the citing pages listed under Related; the record was created automatically from the Europe PMC entry and its figures have not been checked by hand.",
+      "beforeSha256": "e343d826e159418f3e3cbcda156be980fe1e7a13fa691feda9fd4706ca696524",
+      "after": "The Yale analysis used a case-level agreement rule: at least seventeen of eighteen readers had to give one score. The denominators depended on whether any reader called a case zero or three-plus. This measures reader agreement in a selected experiment, rather than accuracy against an independently known truth or the chance that an individual result is wrong. Its historical treatment context does not define current eligibility.",
+      "afterSha256": "07767fb6bc00d588ac1d2bb0053453e32ffc192f04078d6151dd137dc69fbbaf",
+      "reason": "Replace citation-process boilerplate with the inspected methods and denominator interpretation. The summary reproducing the historical abstract remains byte-identical; no quotation is edited.",
+      "sources": [
+        "35113160"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "SPATIAL-VALIDATION-SCOPE-limitations",
+      "recordId": "spatial-transcriptomics",
+      "field": "limitations",
+      "before": [
+        "Costly and data-heavy, mostly research use",
+        "A capture unit may contain contributions from more than one cell",
+        "Assigning molecules to cells relies on estimated cell boundaries",
+        "A section samples part of a tumour, and adjacent sections do not contain identical cells",
+        "Genes imputed from a single-cell reference are model estimates, not measurements",
+        "Region-of-interest profiling depends on which regions are chosen",
+        "No agreed clinical assay yet"
+      ],
+      "beforeSha256": "8ede25cf48c86f25b5d272e348a0931b1f5fd24e7b9531dd963a95b0841f81a0",
+      "after": [
+        "Costly and data-heavy, mostly research use",
+        "A capture unit may contain contributions from more than one cell",
+        "Assigning molecules to cells relies on estimated cell boundaries",
+        "A section samples part of a tumour, and adjacent sections do not contain identical cells",
+        "Genes imputed from a single-cell reference are model estimates, not measurements",
+        "Region-of-interest profiling depends on which regions are chosen",
+        "Validation must match the exact assay, analysis and intended clinical question"
+      ],
+      "afterSha256": "00e2e07d84d464dbf77bd2210dd0188a505f34ca996561e25eeee80f2841b528",
+      "reason": "Replace an unverified family-wide absence claim with the intended-use validation requirement; no new clinical authorization is claimed.",
+      "sources": [
+        "official:O17",
+        "37380767",
+        "source-first-inference"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    },
+    {
+      "id": "PERTURBATION-FACTOR-SCOPE-tldr",
+      "recordId": "controlled-perturbation",
+      "field": "tldr",
+      "before": "A controlled perturbation changes one defined factor in an experiment and compares the response with control conditions, so that the change can be told apart from background, carrier effects and assay failure.",
+      "beforeSha256": "5361c3e00e2ff1c84c5060ff4c78429f301a8203af67c383260c2e13b130f0c5",
+      "after": "Controlled perturbations deliberately change specified factors and compare responses with suitable controls. A model response alone does not prove its mechanism or patient benefit.",
+      "afterSha256": "558fcc95102fe6c684ad22c517750eed1f2251122f0f4e4bebf4e939141cc22b",
+      "reason": "Allow explicitly controlled combination/factorial experiments rather than making one changed factor the universal definition. The existing two-drug control explanation is preserved.",
+      "sources": [
+        "27135972",
+        "prior:controlled-perturbation",
+        "source-first-inference"
+      ],
+      "scope": "Proposed complete field; no repository mutation or blanket recertification of inherited fields."
+    }
+  ],
+  "wholeOldOwnersReverified": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

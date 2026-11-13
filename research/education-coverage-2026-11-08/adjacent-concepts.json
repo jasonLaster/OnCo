@@ -3795,5 +3795,52 @@
         }
       ]
     }
+  },
+  {
+    "id": "multiomics-course-source-and-integration-followups",
+    "title": "Multiomics held peer fields, pinned terminology links and legacy reading",
+    "domain": "multiomics-source-adjacent",
+    "sourceURLs": [
+      "https://github.com/judegomila/OnCo/pull/373",
+      "https://pubmed.ncbi.nlm.nih.gov/22495314/"
+    ],
+    "discoveryOccurrences": [
+      "multiomics-course-2026-11-13"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator source/integration followup; no added teaching credit",
+      "checkedAt": "2026-11-13",
+      "rationale": "The source-unit scope is qualified rather than turning captured, inherited or unread material into full verification. The broader audit remains unfinished.",
+      "points": [
+        {
+          "id": "held-pr373-integration",
+          "requirement": "Thirty-six distinct units depend on six unchanged frozen PR373 records. They are represented in unapplied draft text, not registered-root or main coverage.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Integrate the existing canonical peer owners through their authorized PR, then validate the resulting graph. No competing records were created."
+          ]
+        },
+        {
+          "id": "pinned-terminology-links",
+          "requirement": "Three original-version wikilinks target about/Terminology#ffpe or #ctdna, whose file is absent from the pinned tree. This is not a verified live-route404.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "The source owner should confirm the intended generated route or correct the link. Public science inline remains assessed; no private project was searched."
+          ]
+        },
+        {
+          "id": "legacy-source-reading",
+          "requirement": "Older catalogue assertions outside the course clauses retain their earlier verification depth, including the Shah single-centre caveat and unmodified clinical supplements.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Read the relevant original cohort methods/supplement and current clinical sources before re-certifying or changing these legacy statements. This is remaining reading work, not a claimed external access blocker."
+          ]
+        }
+      ]
+    }
   }
 ]

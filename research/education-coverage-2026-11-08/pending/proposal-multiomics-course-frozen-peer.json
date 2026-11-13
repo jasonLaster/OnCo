@@ -1,0 +1,451 @@
+{
+  "version": "proposal-multiomics-course-frozen-peer",
+  "state": "Unchanged frozen PR373 fields reused for course comparison; no new peer patch authored, no registration or graph integration.",
+  "draft": 373,
+  "frozenPeerHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "coordinatorDataHead": "7fcd4b8aa84222e732f6d02e728a9ce903defad0",
+  "records": [
+    {
+      "id": "immunopeptidomics",
+      "kind": "term",
+      "name": "Immunopeptidomics",
+      "aka": [],
+      "tldr": "This laboratory approach identifies peptides recovered with immune display molecules. It supplies evidence about peptide presentation in the material that was analyzed.",
+      "summary": "A primary melanoma study used mass spectrometry to identify HLA-associated peptides from native tumor tissue and then evaluated selected mutated peptides with immune assays. This is stronger evidence of natural presentation in the sampled material than a binding prediction alone. The analytical observation still has a defined specimen and workflow. It does not automatically establish the abundance of a ligand on every cancer cell, receptor recognition or a treatment effect. A published protocol isolates MHC-peptide complexes by immunoaffinity capture, dissociates the peptides by acid denaturation, fractionates them by HPLC and identifies them by nano-UPLC tandem mass spectrometry, from cell lines and tissues (Purcell and colleagues, 2019). Capture starts from mild-detergent solubilised lysates (Chong and colleagues, 2018; Sarkizova and colleagues, 2020 immunoprecipitated HLA from soluble lysates), so a lysate is not a surface-only survey, and in multi-allele samples a peptide was assigned to the best-scoring allele or alleles by computation (Sarkizova and colleagues, 2020). Identification depends on the analysis: a deep-learning model trained on more than 300,000 synthetic peptides improved HLA peptide identification up to 7-fold and indicated that 87 per cent of the proposed proteasomally spliced HLA peptides may be incorrect (Wilhelm and colleagues, 2021). A quantitative tissue study isolated peptide-HLA complexes from snap-frozen tissue and used formalin-fixed paraffin-embedded blocks only for histology (Science Translational Medicine, 2022).",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        },
+        {
+          "label": "Purcell et al., Mass spectrometry-based identification of MHC-bound peptides for immunopeptidomics (Nature Protocols 2019)",
+          "url": "https://doi.org/10.1038/s41596-019-0133-y"
+        },
+        {
+          "label": "Chong et al., High-throughput and Sensitive Immunopeptidomics Platform Reveals Profound Interferon-gamma-Mediated Remodeling of the Human Leukocyte Antigen Self-Peptidome (Molecular and Cellular Proteomics 2018)",
+          "url": "https://doi.org/10.1074/mcp.TIR117.000383"
+        },
+        {
+          "label": "Wilhelm et al., Deep learning boosts sensitivity of mass spectrometry-based immunopeptidomics (Nature Communications 2021)",
+          "url": "https://doi.org/10.1038/s41467-021-23713-9"
+        },
+        {
+          "label": "Quantitative immunopeptidomics reveals a tumor stroma-specific target for T cell therapy (Science Translational Medicine 2022)",
+          "url": "https://doi.org/10.1126/scitranslmed.abo6135"
+        },
+        {
+          "label": "A large peptidome dataset improves HLA class I epitope prediction across most of the human population (Nature Biotechnology 2020)",
+          "url": "https://doi.org/10.1038/s41587-019-0322-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunopeptidome",
+        "peptide-hla-binding-prediction",
+        "binding-presentation-recognition",
+        "finite-tissue-budget"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference). In a mixed specimen a recovered HLA-associated peptide does not reveal its cell of origin or its abundance on living cell surfaces. Non-detection does not show biological absence: it also reflects capture, allele coverage, the searchable sequence set and instrument and software sensitivity, and detection does not show safe tumour recognition. No source read here establishes that formalin-fixed tissue is usable for an assay validated on cells or frozen tissue; the lesson's statement that one protocol proposed an adaptation could not be checked (publisher page unavailable), so that claim is withheld and compatibility must be shown for the named method.",
+        "Fictional worked example. A specimen yields peptide A but not peptide B. A has measured support in that preparation. For B, ask whether its allele was recovered, whether the altered sequence was searchable and whether sensitivity was adequate; 'A detected, B absent everywhere' is stronger than the experiment supports. If B is simply missing from the search database it could not have been identified as configured, so its absence is not a clean biological negative, and correcting the database does not by itself guarantee recovery or prove natural display.",
+        "Reading guide: binding prediction estimates a model output, whereas immunopeptidomics identifies recovered peptides, and total-protein measurements are a different question from HLA-associated fragments (a protein can be abundant without any of its peptides being displayed, an inference); presentation, immune response and efficacy are three separate claims.",
+        "Measurement card in words (a reading guide). Input: which tissue preparation and preservation are compatible, and how much material is consumed. Output and units: peptide identities and unique-sequence counts; instrument intensities are method-dependent and not copies per cell. Identification threshold: the sequence database, the false-discovery rule (spectrum or peptide level) and the supporting spectra. Coverage: which HLA classes and alleles were captured and which allele assignments were measured or inferred. Material and cost: protocol-specific input, preservation, consumption, turnaround and analysis cost, requested before a scarce specimen is used. Validation: recovery, reproducibility and reference-peptide checks for the method. Failure modes: low input, poor recovery, mixed cell populations, database gaps and wrong sequence assignments. Limits: non-detection does not prove absence and detection does not prove safe recognition; there is no universal tissue requirement or detection threshold."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "proteomics",
+      "kind": "technology",
+      "name": "Proteomics & phosphoproteomics",
+      "aka": [],
+      "tldr": "These methods measure proteins or selected signals derived from them. Some also measure chemical modifications, which need to be interpreted separately from protein amount.",
+      "summary": "Mass-spectrometry and antibody-based methods measure different protein-derived signals under defined workflows. A primary yeast study measured protein expression alongside phosphorylation and showed why a changed phosphopeptide signal can reflect protein abundance as well as phosphorylation. That methodological result is not a validated cancer-treatment rule. Targeted plasma-protein assays likewise require evidence about recovery, calibration and quantitative range. A protein measurement, modification-site signal, functional pathway dependence and prediction of treatment benefit are distinct claims. Beausoleil and colleagues introduced the Ascore, a probability-based score for how likely a phosphorylation site is correctly localised from site-determining ions in tandem mass spectra, alongside a target-decoy measure of dataset error (2006). In yeast, 25 per cent of seemingly differential phosphopeptides were attributable to changes in protein expression once phosphopeptide ratios were calibrated by protein levels (Wu and colleagues, 2011). In human ovarian tumour and breast cancer xenograft tissue collected without vascular interruption, rapid phosphorylation changes were seen in up to 24 per cent of the phosphoproteome after defined ischaemic intervals, while the global proteome and most of more than 25,000 quantified phosphosites were unchanged after 60 minutes; phosphopeptides in that study were enriched by immobilised metal (Fe3+) affinity chromatography before analysis (Mertins and colleagues, 2014).",
+      "status": "emerging",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Proteomics",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Proteomics"
+        },
+        {
+          "label": "Correct interpretation of comprehensive phosphorylation dynamics requires normalization by protein expression changes.",
+          "url": "https://doi.org/10.1074/mcp.m111.009654"
+        },
+        {
+          "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+          "url": "https://doi.org/10.1038/nbt.1546"
+        },
+        {
+          "label": "A reverse phase protein array based phospho-antibody characterization approach and its applicability for clinical derived tissue specimens.",
+          "url": "https://doi.org/10.1038/s41598-022-26715-9"
+        },
+        {
+          "label": "Beausoleil et al., A probability-based approach for high-throughput protein phosphorylation analysis and site localization (Nature Biotechnology 2006)",
+          "url": "https://doi.org/10.1038/nbt1240"
+        },
+        {
+          "label": "Mertins et al., Ischemia in tumors induces early and sustained phosphorylation changes in stress kinase pathways but does not affect global protein levels (Molecular and Cellular Proteomics 2014)",
+          "url": "https://doi.org/10.1074/mcp.M113.036392"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "targeted-proteomics-quantification",
+        "tissue-preparation-assay-fit",
+        "rppa",
+        "binder-affinity-epitope-developability"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics",
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "elucidate-bio",
+        "acrivon-therapeutics",
+        "biodesix",
+        "helio-genomics",
+        "nonagen-bioscience",
+        "omanta",
+        "oncohost"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference). Kinases add phosphate and phosphatases remove it, as the existing phosphorylation record states, and a larger phosphopeptide signal is not a universal sign of greater activity. Enrichment changes what is recovered, so a phosphopeptide sample is not an unbiased count of all proteins. Site localisation is separate from peptide identification and carries its own confidence. A phosphopeptide intensity reflects the source-protein amount, the modified fraction and recovery, so intensity or fold change is not occupancy. A set of supported sites can inform a pathway hypothesis; it does not measure the pathway's rate, prove dependence or show benefit from a drug, and a kinase inferred from a pattern is not measured causality.",
+        "Fictional worked example with independent arithmetic. Parent-protein signal rises from 100 to 200 and phosphopeptide signal from 20 to 40, each on its own assay scale: 200 / 100 = 2 and 40 / 20 = 2, so the protein-adjusted relative change is 2 / 2 = 1. The raw 20 / 100 = 0.2 is not the fraction of protein molecules carrying the site, because recovery and response factors differ between the assays, and no activation or kinase-causality conclusion follows. A twofold phosphopeptide rise with a twofold parent-protein rise therefore does not show doubled activation.",
+        "Assay card in words (a reading guide). Measures and method: enriched phosphorylated peptides, identified sites and quantitative comparisons. Input and tissue cost: a protein extract with recorded collection and preservation; preparation consumes material, and enrichment may need more input than the companion total-protein assay. Output and units: phosphopeptide or site identifiers, localisation scores and relative intensities or ratios, with occupancy percentages only when specifically supported. Thresholds: separate identification error controls, localisation criteria and quantitative limits for the exact workflow. Failure modes: handling-induced change, incomplete recovery, ambiguous sites, low signal and unmeasured parent-protein change. Limits: no automatic activation, enzyme-of-origin, dependency or drug-benefit conclusion. Validation context: check reproducibility, timing controls and site-specific evidence."
+      ],
+      "principle": "Measure protein-derived peptide or antibody signals, retaining assay specificity, preparation, calibration and the distinction between protein amount and modification state.",
+      "strengths": [
+        "Measures protein-derived abundance and modification signals"
+      ],
+      "limitations": [
+        "Throughput and standardisation"
+      ]
+    },
+    {
+      "id": "rna-integrity",
+      "kind": "term",
+      "name": "RNA integrity and assay suitability",
+      "aka": [
+        "RNA integrity number",
+        "RIN score",
+        "DV200 RNA quality"
+      ],
+      "tldr": "RNA quality measurements describe the condition of extracted RNA. Their usefulness depends on the measurement workflow the material will enter.",
+      "summary": "The original RNA Integrity Number method summarized electrophoretic features to standardize quality assessment. DV200 describes the proportion of RNA fragments longer than 200 nucleotides. Comparisons of fixed and frozen tissue found that fragment-distribution measures and functional amplification assays could be more informative for particular workflows. The NCI preanalytical-variables study likewise found method-dependent sensitivity to handling effects. An integrity score is therefore not a universal pass or fail rule for every RNA assay; input, preparation and intended measurement still matter.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "The RIN: an RNA integrity number for assigning integrity values to RNA measurements.",
+          "url": "https://doi.org/10.1186/1471-2199-7-3"
+        },
+        {
+          "label": "Systematic evaluation of RNA quality, microarray data reliability and pathway analysis in fresh, fresh frozen and formalin-fixed paraffin-embedded tissue samples.",
+          "url": "https://doi.org/10.1038/s41598-018-24781-6"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        },
+        {
+          "label": "The RIN: an RNA integrity number for assigning integrity values to RNA measurements.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16448564/"
+        },
+        {
+          "label": "Effects of tissue handling on RNA integrity and microarray measurements from resected breast cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22034635/"
+        },
+        {
+          "label": "Robustness of RNA sequencing on older formalin-fixed paraffin-embedded tissue from high-grade ovarian serous adenocarcinomas.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31059554/"
+        },
+        {
+          "label": "Technical Note: RNA Sequencing",
+          "url": "https://support.illumina.com/content/dam/illumina-marketing/documents/products/technotes/evaluating-rna-quality-from-ffpe-samples-technical-note-470-2014-001.pdf"
+        },
+        {
+          "label": "NCI Biospecimen Evidence-Based Practices: snap-freezing of post-surgical tissue",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/snap-freeze-bebp.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tissue-preparation-assay-fit",
+        "rna-seq",
+        "preanalytics-sample-stabilisation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "RNA integrity concerns molecular condition and fragment distribution, while yield measures recovered quantity. RNases, handling, fixation chemistry and storage can affect recovered molecules. An electropherogram separates size-associated signal. Integrity does not measure malignant-cell share, viability, protein abundance or transcript function.",
+        "Schroeder developed RIN from multiple electropherogram features using a trained statistical model. Its 1 to 10 scale runs from degraded to more intact RNA and is not a percentage. DV200 describes measured fragments longer than 200 nucleotides; it does not certify every transcript. In a fictional area illustration, 6 of 10 selected signal-area units above 200 nucleotides give 60%. This is not a computation of RIN or an assay acceptance rule.",
+        "Illumina describes DV200 for its RNA enrichment workflows and cautions that RIN can be insensitive in degraded FFPE samples. The older fixed ovarian-tumour study assessed shorter-fragment metrics and library performance because RIN and DV200 did not capture all limitations. Those findings and kit cutoffs must stay with their protocols, rather than becoming universal input rules.",
+        "Fictional fixed RNA has low RIN but is accepted for a validated short-target expression assay and rejected for a full-length transcript workflow. These decisions can be consistent because the questions need different evidence. Passing input QC does not establish library complexity or gene recovery; a weak negative can reflect failed recovery rather than biological absence. Gene counts do not prove full-length or splice structure.",
+        "RNA quality assessment uses an aliquot of an extract, which itself consumed specimen material. Examine the fragment-size distribution and method-specific quality summary, then check downstream recovery. Report RIN on its 1 to 10 scale, DV200 as a percentage, RNA quantity in nanograms and relevant library or recovery metrics. Acceptance depends on preservation, input amount and the intended assay; there is no universal RIN or DV200 pass cutoff. Poor extraction, degradation, chemical damage, contaminants, insufficient quantity or an uninterpretable trace can limit testing. Integrity does not measure tumour purity, cell viability, protein abundance or transcript function, and a research suitability metric is not a diagnostic result."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "rppa",
+      "kind": "term",
+      "name": "Reverse-phase protein array (RPPA)",
+      "aka": [
+        "RPPA",
+        "reverse-phase protein array",
+        "reverse phase protein array",
+        "protein array data",
+        "RPPA data"
+      ],
+      "tldr": "This array tests protein extracts from many samples using selected antibodies. The panel and its validation determine which protein signals can be interpreted.",
+      "summary": "A reverse-phase protein array places sample lysates on an array and measures selected proteins or modifications with antibodies. The original tissue study examined signaling proteins in defined cell populations. A later study used phosphatase treatment as an independent control when characterizing phospho-antibodies for frozen and fixed tissue. Signal specificity, input preparation and validation matter. A lysate measurement does not restore the spatial arrangement lost during extraction, and phosphorylation signal needs interpretation alongside protein abundance. In the original reverse-phase protein microarray, the whole repertoire of a patient's tissue proteins from laser-capture microdissected cell populations is immobilised and probed, in contrast to earlier arrays that immobilise the probe, and precision and linearity were tested with microarrayed dilution curves of a standard protein and loading was normalised with an actin control (Paweletz and colleagues, 2001). Because target detection relies on a single antibody, RNA interference was used to test antibody performance: two anti-EGFR antibodies detected knockdown at different rates, and four of ten anti-STAT3 antibodies detected STAT3 knockdown at 80 to 85 per cent (Mannsperger and colleagues, 2010). Ischaemia changed phosphorylation in human ovarian tumour tissue and breast cancer xenografts, which supports recording how tissue was collected and preserved without setting a universal safe delay (Mertins and colleagues, 2014).",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray"
+        },
+        {
+          "label": "Reverse phase protein microarrays which capture disease progression show activation of pro-survival pathways at the cancer invasion front.",
+          "url": "https://doi.org/10.1038/sj.onc.1204265"
+        },
+        {
+          "label": "A reverse phase protein array based phospho-antibody characterization approach and its applicability for clinical derived tissue specimens.",
+          "url": "https://doi.org/10.1038/s41598-022-26715-9"
+        },
+        {
+          "label": "Correct interpretation of comprehensive phosphorylation dynamics requires normalization by protein expression changes.",
+          "url": "https://doi.org/10.1074/mcp.m111.009654"
+        },
+        {
+          "label": "Mannsperger et al., RNAi-based validation of antibodies for reverse phase protein arrays (Proteome Science 2010)",
+          "url": "https://doi.org/10.1186/1477-5956-8-69"
+        },
+        {
+          "label": "Mertins et al., Ischemia in tumors induces early and sustained phosphorylation changes in stress kinase pathways but does not affect global protein levels (Molecular and Cellular Proteomics 2014)",
+          "url": "https://doi.org/10.1074/mcp.M113.036392"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "tcga-gdc",
+        "targeted-proteomics-quantification",
+        "tissue-preparation-assay-fit",
+        "cell-segmentation",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "proteomics"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "pathway-activation-state",
+        "mass-spec-proteome"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference). A printed spot holds a mixed lysate, and its address names a sample and a dilution, not a cell position in tissue. Dilution curves, background, references and loading normalisation define the usable range, and signals from two antibodies are not on the same scale. A phosphosite signal is not occupancy or enzymatic activity, because it can reflect more source protein, a larger modified fraction or preparation effects.",
+        "Fictional worked example. A phospho-R signal doubles, but total R and loading were not evaluated. The report cannot call this doubled R activity: check loading, source-protein abundance, antibody performance, handling and the site's function, since the observed increase is narrower than an activity claim.",
+        "Figure reading (toy dilutions, light and dark renders agree): cells are disrupted into one mixed lysate, so location is lost; samples A and B are printed at dilutions 1, 1/2 and 1/4, giving six addresses, and each spot is still a mixture; separate replicate arrays are probed for R and for phospho-R. Each antibody and signal scale needs validation, and this is neither an all-protein census nor a single-cell map.",
+        "Assay card in words (a reading guide). Measures and how: selected antibody-recognised epitopes, by extracting lysate, printing dilutions, probing replicate arrays, quantifying signal and normalising with controls. Input and tissue cost: an assay-compatible lysate; extraction consumes material and destroys arrangement, and microdissection defines the sampled region without keeping coordinates inside the lysate. Output and units: antibody and epitope identifiers with relative or normalised signal; calibrated amounts only when specifically supported. Thresholds: antibody-specific validated range, dilution behaviour, background and report criteria, with no universal activation or treatment cutoff. Failure modes: cross-reactivity, loading differences, saturated or weak signal, cell mixture, handling-induced modification change and batch effects. Limits: no automatic intact-form, spatial map, whole-pathway activity, cell-specific surface amount, dependency or benefit conclusion. Validation tier: primarily a research profiling method.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/rppa."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    },
+    {
+      "id": "targeted-proteomics-quantification",
+      "kind": "term",
+      "name": "Targeted proteomics and quantification limits",
+      "aka": [
+        "targeted protein quantification",
+        "multiple-reaction-monitoring protein assays"
+      ],
+      "tldr": "A targeted protein assay measures selected peptide signals through a defined workflow. Reliable amounts require evidence about the quantitative range and precision of the assay.",
+      "summary": "A primary multilaboratory study evaluated isotope-dilution multiple-reaction-monitoring assays for selected plasma proteins, examining recovery, reproducibility, linear range, detection and quantification limits. The performance belonged to the tested materials, analytes and protocols. It was not a universal certificate for all proteins or specimens. A reported protein amount should retain its measured peptide, calibration approach, sample preparation and supported range. An NIH workshop report on targeted mass spectrometry found no consensus on the criteria for a successful peptide assay and set out three tiers of assay performance, with response and calibration curves generated for each analyte in the relevant matrix to establish limits of detection and quantification; quantification rests on precursor-product ion pairs, called transitions, shown to be free of interference, and a surrogate protein standard must be shown to behave like the native analyte in tests of recovery after adding a known amount (Carr and colleagues, 2014). Stable-isotope-labelled internal standard peptides with the sequence of the analyte are spiked into the digest, and extended peptides or recombinant proteins can compensate for variability in digestion (Hoofnagle and colleagues, 2016). A multilaboratory plasma study reported reproducibility, recovery, linear range and limits of detection and quantification at microgram-per-millilitre protein concentrations (Addona and colleagues, 2009).",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+          "url": "https://doi.org/10.1038/nbt.1546"
+        },
+        {
+          "label": "Carr et al., Targeted peptide measurements in biology and medicine (Molecular and Cellular Proteomics 2014)",
+          "url": "https://doi.org/10.1074/mcp.M113.036095"
+        },
+        {
+          "label": "Hoofnagle et al., Recommendations for the Generation, Quantification, Storage, and Handling of Peptides Used for Mass Spectrometry-Based Assays (Clinical Chemistry 2016)",
+          "url": "https://doi.org/10.1373/clinchem.2015.250563"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "proteomics",
+        "rppa",
+        "analytical-vs-clinical-validation",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference built on the ICH definitions). A signal detected below the quantification limit is meaningful as detection, but it does not support a reliable amount, and neither it nor non-detection means biological zero. An upper limit also bounds the range, and a saturated response cannot separate larger inputs. Keep the denominator with every amount (for example femtomoles per microgram of total extracted protein or a concentration per volume), because it describes the mixture and not receptors per malignant cell; a selected peptide is a proxy for its source protein and cannot count intact receptors or surface copies. Tight repeats show precision, which can coexist with systematic bias. A standard added after digestion can control later measurement but cannot correct material already lost.",
+        "Fictional worked example. A summary says 'receptor peptide R is absent' for an assay that detected R below its quantification limit. The result should read 'detected below the validated quantification limit', with the limit and units: it supports detection under that assay's rules but neither a dependable amount nor biological absence.",
+        "Figure reading (fictional calibration, light and dark renders agree, no cutoff): a calibration plot has four regions in order of rising input, blank or background (no detection claim), detected below the lower limit of quantification (no reliable amount), validated range (report amount and units) and upper saturation (the response flattens), with replicate points scattered on the curve; a second panel says peptide amount is not surface location, and tight repeats alone do not rule out bias. Limits belong to the analyte and matrix.",
+        "Assay card in words (a reading guide). Measures and how: selected peptide amounts, by extracting, digesting, measuring specified ions and fragments with controls, calibrating and assessing analyte performance. Input and tissue cost: a validated tissue, cell or fluid matrix; extraction and digestion consume material, and required mass or volume and fixation compatibility are assay-specific. Output and units: peptide identity, amount or ratio, with the denominator and the peptide-to-protein inference kept. Thresholds: analyte-specific limit of detection, quantification limit, upper limit, bias and precision acceptance and reportable range, with no universal limit or treatment threshold. Failure modes: incomplete recovery or digestion, shared peptides, interference, unstable standards, matrix effects and signal outside the validated range. Limits: no automatic intact-form, location, cell-of-origin, accessibility, occupancy or drug-dependence conclusion. Validation tier: fit-for-purpose research tiers describe analytical characterisation and do not themselves confer clinical approval."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "tissue-preparation-assay-fit",
+      "kind": "term",
+      "name": "Tissue preparation and assay suitability",
+      "aka": [
+        "FFPE versus fresh-frozen versus viable tissue",
+        "specimen fitness for purpose"
+      ],
+      "tldr": "Fixed, frozen and living tissue preserve different properties. A preparation that works for one test may not support another.",
+      "summary": "Paired-specimen studies found that fixation and extraction changed nucleic-acid measurements relative to fresh-frozen material. Viable organoid studies examine a different property: whether living cells can establish the studied culture. Preserved morphology, recoverable DNA or RNA, and viable cell behavior are therefore different specimen requirements. No preparation is universally best; the intended measurement and evidence for that particular workflow determine suitability.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Next-generation sequencing of RNA and DNA isolated from paired fresh-frozen and formalin-fixed paraffin-embedded samples of human cancer and normal tissue.",
+          "url": "https://doi.org/10.1371/journal.pone.0098187"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        },
+        {
+          "label": "A Living Biobank of Breast Cancer Organoids Captures Disease Heterogeneity.",
+          "url": "https://doi.org/10.1016/j.cell.2017.11.010"
+        },
+        {
+          "label": "NCI Biospecimen Evidence-Based Practices: snap-freezing of post-surgical tissue",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/snap-freeze-bebp.pdf"
+        },
+        {
+          "label": "Biospecimen & Biorepository Basics - NCI",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/basics"
+        },
+        {
+          "label": "Surgical Pathology Reports - NCI",
+          "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+        },
+        {
+          "label": "Analysis of chemical modification of RNA from formalin-fixed samples and optimization of molecular biology applications for such samples.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10536153/"
+        },
+        {
+          "label": "Organoid Modeling of the Tumor Immune Microenvironment.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30550791/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "preanalytics-sample-stabilisation",
+        "rna-integrity",
+        "finite-tissue-budget",
+        "organoids"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Formalin-fixed paraffin-embedded material preserves architecture and supports assays validated for its altered molecules, but cannot restore the original living cells. Snap-freezing preserves material for molecular analysis; the NCI protocol excludes viability, sorting and culture endpoints. A viable-cell vial requires verified recovery, identity and function for its intended assay. No preparation label measures tumour content.",
+        "Masuda experimentally demonstrated chemical modifications of fixed RNA and effects on amplification. Recovering RNA or DNA does not undo fixation or establish a viable cell. Fixed material can still support suitable molecular assays. Fresh and frozen labels describe handling history rather than a verified fraction of living malignant cells.",
+        "Fictional archive: a fixed block, a snap-frozen piece and a vial labelled viable are offered for a cell-growth perturbation. None of these labels alone establishes suitability. The fixed block cannot supply its original living cells; the frozen piece may not be preserved for viable recovery; the viable vial needs recovery, relevant cell identity and model function checked. A successful culture can select a changed cell mixture rather than reproduce the archive.",
+        "Preparation can irreversibly close options. If fixed molecular assays and living-cell experiments are both contemplated, their inputs and separate aliquots need planning before processing, while protecting diagnostic requirements. There is no universally best preparation; dividing finite tissue also has a cost.",
+        "Assess suitability by documenting preservation, checking which cells are represented and applying quality checks for the intended assay or living-cell workflow. Sections, tissue pieces and cell aliquots are finite, and destructive quality checks also use material. Report analyte-appropriate yield and quality, or viable-cell recovery and function when those are required. The receiving method defines acceptance: a preservation label alone guarantees no pass. Delayed stabilisation, incompatible fixative, degraded analyte, poor thaw recovery and missing target cells can defeat the question. Validation on fixed tissue does not automatically transfer to frozen or cultured material, and input suitability alone proves neither clinical accuracy, tumour-wide representation nor patient drug response."
+      ],
+      "category": "Diagnostics & imaging"
+    }
+  ]
+}

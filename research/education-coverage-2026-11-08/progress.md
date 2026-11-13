@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [fifth scientific/custody checkpoint](scientific-authoring-bodies-05-2026-11-13/README.md) fully reads twenty more bodies (30,307 unique bytes, forty entries): fifteen teaching and five supporting. Two separately frozen native TNBC themes add four entries. Forty-six unique requirements have sixty exact anchors across seventeen existing owners; all teaching was already present, so no data edit or new id is needed. Six abstracts, eleven complete targeted primary passages, nine official blocks and ten complete PDF text pages retain actual depth; four PDF pages and both native PNGs were viewed. Seventeen actual readers, two cancer Data sections, static exports and twenty-one arithmetic checks pass. Code/data and all 23,091 graph records match the immediately preceding full-gate run, which is explicitly reused rather than rerun. New research files receive their own parse, preservation, proof and deterministic replay checks. Ordinary grades and open clauses remain unchanged; the broader goal is active.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 519 | 6,813 / 6,827 | 14 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 528 | 7,282 / 7,302 | 20 |
+
+Original assets:652 teaching, 90 supporting, 1,146 unclassified. Later assets:651 teaching, 90 supporting, 1,147 unclassified. The graph remains 23,091 records. There are 128 registered proposal receipts selecting 697 canonical ids; selection is not authorship or approval. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale/missing proofs.
+
+## Historical fourth-body checkpoint
+
 The [fourth scientific/custody body checkpoint](scientific-authoring-bodies-04-2026-11-13/README.md) fully reads twenty breast-anatomy prompt and metadata bodies (35,762 unique bytes, forty pinned entries). Ten bodies are teaching and ten supporting. Fourteen frozen requirements have eighteen exact field anchors across five existing root records. Two owners gain one illustrative paragraph and date each; no id, source link, summary, alias, relation or registration is added. Four complete abstracts, twelve official blocks, two complete PDF pages and ten full source-art views retain actual depth. Five actual EntityDetail hubs, the cancer Data section, static exports and full gates pass: 293 files, 3,101 tests, 2 skips. Historical source/review attestations and exact pixel-preservation claims remain qualified. Ordinary lesson grades and open clauses are unchanged; the broader audit remains active.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

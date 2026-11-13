@@ -1,0 +1,922 @@
+{
+  "sourceInventorySha256": "0b73f1271c525e4909a1006887dd189470b7588df169500c2935a6753e0802f4",
+  "requirements": [
+    {
+      "id": "cyto-binding",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Cytokines act outside the cell through membrane receptors; the cartoon does not show a cytokine entering DNA.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The diagram selects an extracellular cytokine/cell-surface-receptor route, not every possible cytokine function or a molecule entering DNA. The cited fields support matching receptors and intracellular signalling; the picture is not a measured molecular trajectory.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-relay",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Receptor activation can initiate an intracellular relay and alter gene activity.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-engineered",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "A generic drug-responsive engineered receptor can select signalling responses; the cartoon is not a proprietary receptor structure.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The source uses a generic drug input. Neither its external placement nor a schematic receptor establishes the binding compartment or molecular architecture of a named construct. The canonical fields retain the specified-input, measured-response and product-specific limits.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-separate",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "CAR target recognition and an added cytokine-receptor signalling role are distinct functions of different receptor proteins.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-limits",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "More signalling does not guarantee expansion, useful function or cancer clearance.",
+      "claimType": "inference-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "instructions",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "DNA, mRNA and receptor proteins are different objects; transcription and translation are separate steps.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "mrna-location",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "Delivered mRNA is translated in the cytoplasm and need not enter or integrate into genomic DNA.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The delivered message can be translated without requiring nuclear entry or genomic integration. The new canonical note explicitly prevents interpreting an empty nuclear symbol as removal or absence of the existing nuclear DNA. The source call is a schematic instruction, not a measurement of the delivered cells.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "dna-expression",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "The depicted DNA route transcribes in the nucleus, exports mRNA and translates it outside the nucleus.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "car-membrane",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "A CAR is a membrane-spanning protein, with an external antigen-binding region and an intracellular signalling region; the living cell is a different object.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "car-recognition",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "CAR recognition of surface antigen can trigger a T-cell response, without guaranteeing target killing.",
+      "claimType": "inference-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "protein-location",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "A newly made protein and the finished surface receptor are separate stages; a diagram connector is not a continuous protein cable.",
+      "claimType": "biosynthesis-and-schematic-boundary",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The actual CAR and information-flow notes distinguish translation, folding and membrane trafficking. A dashed connector or empty gap is a source-art convention, not a measured transport path or imported OnCo figure.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cargo-scope",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "RNA, DNA and an unspecified carrier cargo are not interchangeable labels; no integration or clinical effect is inferred from the schematic.",
+      "claimType": "inference-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The specific payload type must be named. The source’s neutral carrier symbol is intentionally unspecified; these fields do not assign it RNA, DNA or a proprietary architecture.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-entry",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Reaching and entering tumour tissue is a separate barrier from antigen recognition.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-antigen",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Tumour cells may differ in target expression; adding T cells does not replace a missing target.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-function",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Suppressive signals and limited nutrients can restrict activity; persistence alone does not establish function.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-safety",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Shared antigen on healthy tissue creates a separate on-target safety question; the conceptual journey is not patient-outcome evidence.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-exvivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Ex vivo engineering collects cells, engineers and tests them outside the body, then returns the cells.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The same-person scene is a common autologous example, not a definition excluding donor-derived ex vivo products. The canonical fields preserve source and engineering-location distinctions.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-invivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "In vivo engineering delivers a carrier to cells in the body, without an ex vivo collection step.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-targets",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Carrier targeting to the intended cell and CAR recognition of cancer antigen are different targeting jobs.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-manufacture",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Both depicted routes require manufactured components; delivery does not itself establish treatment success.",
+      "claimType": "inference-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-match",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "An intended diagnostic use binds the assay, specimen, result rule and corresponding treatment/use.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-samegene",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "A same-gene research result or a different analyte does not substitute for a label-defined companion diagnostic.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-fiction",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "Drug A, gene M and assay T are fictional; no real pair or cutoff is asserted.",
+      "claimType": "fictional-premise",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-support",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Fast track, breakthrough designation and priority review concern development/review support; they do not themselves grant approval.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-decision",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Approval concerns a specified product and use; traditional and accelerated approval are distinct approval pathways.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-confirm",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Accelerated approval has benefit-confirmation requirements; the schematic does not certify an actual indication.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-guarantee",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Expedited-program status does not guarantee approval, a fixed completion date, superiority or individual access.",
+      "claimType": "regulatory-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "Corrected scope: the programme does not promise eventual approval, superiority, personal access or a treatment date. Its source wording about no fixed timeline must not erase actual designation clocks or review goals. FDA’s current Priority Review page calls its action interval a goal and retains the approval evidence standard.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ruo",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Research-use status concerns intended purpose, whereas CLIA certification applies to a laboratory.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "authorization",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Product/use authorisation and laboratory certification attach to different objects, not successive rungs of a permission ladder.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ldt",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "An LDT is identified by laboratory development and use, not merely by an approval-status badge.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "badges",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "A status badge alone does not establish clinical utility, patient benefit or payer coverage.",
+      "claimType": "regulatory-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-route",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "A new individual-patient IND and an individual protocol under an existing active IND are different US non-emergency routes.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-clock",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Receipt starts the new-IND clock, with route-specific conditional exceptions; this is not a promised treatment date.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-readiness",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Supply, consent and review remain separate readiness conditions; emergency provisions are not transferred to ordinary requests.",
+      "claimType": "regulatory-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-combinations",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Epithelial, hybrid and more mesenchymal features are illustrative combinations, not proof that an observed cell transitioned.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-trajectory",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Contact, shape and polarity are not a universal marker test, compulsory trajectory, metastatic route or resistance ranking.",
+      "claimType": "inference-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-normal",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Development and repair can also involve these properties; shape alone does not establish malignancy.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-order",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The schematic follows G1, S, G2 and M, with an optional G0 state and conditional return.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-dna",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Relative DNA content rises through S to about double the depicted baseline before division; the late-mitotic sketch is a schematic state, not every instant of M.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The added relative-DNA example uses a chosen reference and a late-mitotic schematic state. It does not identify all tumour ploidies, every instant of M or absolute DNA amounts.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-snapshot",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A phase fraction is not a division rate and does not establish equal durations or a universal timetable.",
+      "claimType": "measurement-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-pairs",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "DNA amount alone does not distinguish G0 from G1 or G2 from M.",
+      "claimType": "measurement-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-boundaries",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Individual cell membranes and the extracellular basement membrane are different boundaries; the extracellular stroma is not drawn as naked free nuclei.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The compartment distinction is carried in the canonical text. Removing misleading isolated nuclear-looking flecks is a scientific illustration constraint; no fresh view or claim that the target image actually complies is made.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-stroma",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The conceptual stroma contains multiple cell types, matrix and a vessel.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-rna",
+      "bodyIndices": [
+        15
+      ],
+      "requirement": "RNA within a stromal cell can contribute to a mixed tissue measurement; RNA is not assigned exclusively to the epithelial cells.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-limits",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "This is generic normal lining, not a specific breast duct, malignancy test or invasion criterion; cell and vessel counts are schematic.",
+      "claimType": "fictional-and-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The canonical fields preserve tissue-specific interpretation and the limits of a marker or schematic. The exact eight-cell/two-red-cell counts and palette are source-art conventions, not biological measurements or imported artwork.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-arithmetic",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The fictional equal starts of1000 end at2000 untreated and1200 treated; net changes are1000 and200 and the endpoint difference is800.",
+      "claimType": "fictional-arithmetic",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-killing",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "An endpoint difference does not measure800 deaths; production and loss remain unmeasured.",
+      "claimType": "measurement-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-noncycling",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Nondividing-cell vulnerability cannot be excluded by the cartoon; there is no regimen or patient-benefit conclusion.",
+      "claimType": "source-scope",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-axes",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "Developmental ancestry, broad cell identity, genetic tumour-clone relationships and activity state are separate axes.",
+      "claimType": "biological-concept",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-state",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "A fictional family or clone can contain cycling and noncycling states; labels alone are not permanent commitment.",
+      "claimType": "fictional-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-rna",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "An RNA cluster alone does not reconstruct ancestry or establish developmental direction.",
+      "claimType": "measurement-inference",
+      "disposition": "Represented in existing/current draft fields at the explicit definition, scoped-model or inference level.",
+      "semanticScope": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    }
+  ],
+  "noncredit": "Palette, composition, font, dimensions, local paths, renderer/generator hashes and self-attested construction/review statements are custody or design instructions. They are recorded, not scientific or expert approval. Scientific guardrails and frozen learner-task quotes are retained as teaching requirements above.",
+  "scope": "All51 distinct scientific requirements and75 source-body associations retained. Exact figure layouts, palette and self-attested approval are not experimental evidence."
+}

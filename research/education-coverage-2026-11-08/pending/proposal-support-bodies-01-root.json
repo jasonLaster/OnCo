@@ -1,0 +1,2524 @@
+{
+  "version": "proposal-support-bodies-01-root",
+  "state": "Committed registered local draft-root records in unmerged PR375. Twenty-three selections are not authorship or whole-owner verification; only four existing owners have appended notes and three dated-field updates.",
+  "draft": 375,
+  "committedDataHead": "a9655f82cf41878aaf69394df14f7d1af591b7df",
+  "records": [
+    {
+      "id": "synthetic-cytokine-receptors",
+      "kind": "term",
+      "name": "Synthetic cytokine receptors",
+      "aka": [
+        "engineered cytokine receptors",
+        "chimeric cytokine receptors",
+        "SyCyR"
+      ],
+      "tldr": "An engineered cytokine receptor connects a specified input to signalling inside a cell. The added signal and the behaviour of the complete cell product need separate measurements.",
+      "summary": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Engelowski 2018: artificial ligands and synthetic receptors in experimental systems",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29789554/"
+        },
+        {
+          "label": "Wilkie 2010: IL-4-driven expansion and separate CAR targeting in human-cell experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20562098/"
+        },
+        {
+          "label": "Lunger 2026 macrophage receptor preprint; not a clinical report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42182394/"
+        },
+        {
+          "label": "Enoda: MIMIC platform description; sponsor naming and claims",
+          "url": "https://www.enoda.bio/"
+        },
+        {
+          "label": "Wu et al.: small-molecule ON-switch CAR experiments (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26405231/"
+        },
+        {
+          "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Tumor-infiltrating lymphocytes genetically engineered with an inducible gene encoding interleukin-12 for the immunotherapy of metastatic melanoma. (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "armored-car",
+        "cytokine",
+        "safety-switch-car-t",
+        "cellular-kinetics-and-persistence",
+        "in-vivo-car-t"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+        "In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.",
+        "A 2026 macrophage preprint studied ligand-independent receptors with varied signalling motifs in primary human macrophages and preclinical models. Marker expression, phagocytosis and mouse tumour observations were different readouts. The report remains a preprint and does not establish human treatment benefit.",
+        "Enoda uses MIMIC as the name of its synthetic cytokine-receptor assets. The platform name does not define all engineered cytokine receptors or establish clinical performance. Its website describes platform aims and sponsor claims; it is not a comparative clinical safety or efficacy report.",
+        "For a drug-gated construct, withdrawing the input can reduce a selected signal without eliminating cells already engineered. Receptor signalling, viable-cell counts, tissue location, target-cell killing and later disease control need distinct measurements. A growth or activity switch is different from a cell-elimination mechanism.",
+        "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+        "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+        "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "cytokine",
+      "kind": "term",
+      "name": "Cytokine",
+      "aka": [
+        "cytokines",
+        "interleukin",
+        "interleukins",
+        "IL-2",
+        "IL-6",
+        "chemokine",
+        "chemokines",
+        "pro-inflammatory cytokines",
+        "inflammatory cytokines"
+      ],
+      "tldr": "Small proteins immune cells use to talk to each other: alarms, recruitment calls, growth orders and stand-down signals. Some are cancer drugs, and a flood of them is the danger of certain immunotherapies.",
+      "summary": "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor; IL-2 drives T-cell growth and was one of the first immunotherapies (aldesleukin), interferon-alpha was used in melanoma and leukaemia, and engineered cytokines aim to keep the benefit while losing the toxicity. Tumours secrete cytokines that recruit suppressive cells and drive inflammation, and IL-6 is a major driver of cancer cachexia. When CAR-T cells or T-cell engagers activate en masse they release cytokines in a surge (cytokine release syndrome), treated by blocking IL-6 with tocilizumab. A cytokine name does not specify one outcome: one cytokine can act differently on different receiving cells (pleiotropy), different signals can give overlapping outputs (redundancy), and receptor availability, concentration, exposure time and cell state all shape the response. A review of receptor biology said that all cytokines, to a greater or lesser extent, show pleiotropy (multiple biological actions) and redundancy (shared biological actions), and proposed that redundancy might be explained by related cytokines using a common receptor subunit, while pleiotropy requires that receptors exert different activities on different cells (Nicola, 1994). Different IL-2 and anti-IL-2 antibody complexes selectively expanded CD8 T cells or CD4 regulatory T cells in mice, so the formulation and the receiving cells mattered (Boyman et al., 2006). Chemokines help direct cell movement through gradients: in mouse skin an immobilised CCL21 gradient guided dendritic cells towards lymphatic vessels, and displacing or swamping it abolished directed migration (Weber et al., 2013), but movement also needs a compatible receptor and a traversable route. Measurements answer different questions: a concentration in picograms per millilitre of a named fluid, the percentage of a defined cell gate making a protein after stimulation, and RNA expression are different layers, a blood concentration does not reconstruct a tumour gradient, and two preparations can share an average (0 and 20, or 10 and 10, picograms per millilitre both average 10) while differing in spatial pattern. Intracellular cytokine staining usually involves a stimulation of a few hours (4 to 6 hours was usually sufficient to detect interferon gamma and tumour necrosis factor), a block on secretion with brefeldin A or monensin so that the protein stays inside the cell, and negative and positive controls (Cossarizza et al., 2019). Calibration and a detection limit belong in the same report; that is OnCo's reporting advice and not a finding of the cited guideline. Chemokines are a family of cytokines and not a separate category, a growth-support signal such as IL-2 does not choose the antigen a T cell recognises, and more signal is not automatically more useful or safer immunity. For interferons, timing and the receiving cell mattered in mouse experiments: endogenous type I interferon was needed to prevent the growth of carcinogen-induced and transplanted tumours and acted through host blood-lineage cells (Dunn et al., 2005), whereas prolonged interferon signalling in experimental tumours maintained a resistance programme to checkpoint blockade (Benci et al., 2016). That a signal is tumour-associated does not by itself make it a safe target; this is OnCo's boundary statement and not a cited finding.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cytokine",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cytokine"
+        },
+        {
+          "label": "Interstitial dendritic cell guidance by haptotactic chemokine gradients.",
+          "url": "https://doi.org/10.1126/science.1228456"
+        },
+        {
+          "label": "Selective stimulation of T cell subsets with antibody-cytokine immune complexes.",
+          "url": "https://doi.org/10.1126/science.1122927"
+        },
+        {
+          "label": "Cytokine pleiotropy and redundancy: a view from the receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7696967/"
+        },
+        {
+          "label": "Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition).",
+          "url": "https://doi.org/10.1002/eji.201970107"
+        },
+        {
+          "label": "A critical function for type I interferons in cancer immunoediting.",
+          "url": "https://doi.org/10.1038/ni1213"
+        },
+        {
+          "label": "Tumor Interferon Signaling Regulates a Multigenic Resistance Program to Immune Checkpoint Blockade.",
+          "url": "https://doi.org/10.1016/j.cell.2016.11.022"
+        },
+        {
+          "label": "British Society for Immunology: Cytokines, Introduction",
+          "url": "https://www.immunology.org/sites/default/files/2022-08/cytokines%20-%20introduction.pdf"
+        },
+        {
+          "label": "NLM MeSH: Chemokines",
+          "url": "https://id.nlm.nih.gov/mesh/D018925"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immune-system",
+        "t-cell",
+        "inflammation",
+        "crs",
+        "ligand",
+        "receptor",
+        "cachexia",
+        "interferons"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cytokine-therapy",
+        "car-t",
+        "t-cell-engager"
+      ],
+      "targets": [],
+      "drugs": [
+        "aldesleukin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "jak-stat",
+      "kind": "pathway",
+      "name": "JAK-STAT signalling",
+      "aka": [],
+      "tldr": "The relay that turns cytokine signals into gene changes. Overactive in blood cancers (JAK2 in myelofibrosis), it is also the wire that carries interferon's cancer-killing message, so tumours cut it to escape immunotherapy.",
+      "summary": "Cytokine receptors recruit JAK kinases that phosphorylate STAT transcription factors. JAK2 V617F drives myeloproliferative neoplasms (ruxolitinib, fedratinib, momelotinib approved); STAT3 is a hub for IL-6-driven survival, immunosuppression, and cachexia; STAT5 in leukaemias. Interferon-γ signalling via JAK1/2-STAT1 upregulates MHC and PD-L1; JAK1/2 loss-of-function mutations cause acquired resistance to PD-1 blockade. Direct STAT3 inhibitors (degraders, antisense) are in early trials.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/JAK-STAT_signaling_pathway",
+      "links": [
+        {
+          "label": "Hu et al., The JAK/STAT signaling pathway: from bench to clinic (Signal Transduction and Targeted Therapy 2021)",
+          "url": "https://doi.org/10.1038/s41392-021-00791-1"
+        },
+        {
+          "label": "Synthetic cytokine receptors transmit biological signals using artificial ligands. (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29789554/"
+        },
+        {
+          "label": "Inhibition of TGF-β-receptor signaling augments the antitumor function of ROR1-specific CAR T-cells against triple-negative breast cancer. (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32303620/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [],
+      "cancers": [
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "pdl1",
+        "stat5",
+        "mpl",
+        "jak1"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "mayo-clinic"
+      ],
+      "pathways": [
+        "antigen-presentation-immunoediting",
+        "inflammation-nfkb",
+        "cachexia-biology",
+        "pd1-checkpoint"
+      ],
+      "terms": [
+        "crs"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-darnell-jak-stat-science-1994",
+        "paper-hu-signal-transduct-target-ther"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Levine (MSK) on JAK2 and MPN; Ribas (UCLA) on JAK mutations and PD-1 resistance; Darnell legacy (Rockefeller).",
+        "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations."
+      ],
+      "analogy": "JAK-STAT is a doorbell wired to the house lights. Cytokines ring, JAK flips the switch, STAT turns on the lights. Cancers either jam the switch on (JAK2 mutation) or cut the wire so interferon cannot turn on the 'I am infected' lights.",
+      "nodes": [
+        {
+          "id": "cyto",
+          "label": "Cytokine / IFN-γ",
+          "x": 15,
+          "y": 40
+        },
+        {
+          "id": "rec",
+          "label": "Receptor",
+          "x": 35,
+          "y": 40
+        },
+        {
+          "id": "jak",
+          "label": "JAK1/2",
+          "x": 55,
+          "y": 40
+        },
+        {
+          "id": "stat",
+          "label": "STAT1 / STAT3 / STAT5",
+          "x": 75,
+          "y": 40
+        },
+        {
+          "id": "mhc",
+          "label": "MHC-I, PD-L1 (STAT1)",
+          "x": 92,
+          "y": 20,
+          "targetId": "pdl1"
+        },
+        {
+          "id": "surv",
+          "label": "Survival, SASP, cachexia (STAT3)",
+          "x": 92,
+          "y": 65
+        },
+        {
+          "id": "socs",
+          "label": "SOCS feedback",
+          "x": 55,
+          "y": 80
+        }
+      ],
+      "edges": [
+        {
+          "from": "cyto",
+          "to": "rec",
+          "type": "activates"
+        },
+        {
+          "from": "rec",
+          "to": "jak",
+          "type": "activates"
+        },
+        {
+          "from": "jak",
+          "to": "stat",
+          "type": "activates"
+        },
+        {
+          "from": "stat",
+          "to": "mhc",
+          "type": "activates"
+        },
+        {
+          "from": "stat",
+          "to": "surv",
+          "type": "activates"
+        },
+        {
+          "from": "stat",
+          "to": "socs",
+          "type": "activates"
+        },
+        {
+          "from": "socs",
+          "to": "jak",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "JAK inhibitors in myeloproliferative neoplasms and GVHD",
+        "STAT3 degraders/antisense (early trials)",
+        "Anti-IL-6 (tocilizumab) for CRS and under study for cachexia",
+        "JAK-loss tumours: MHC-independent therapies (T-cell engagers, NK cells)"
+      ]
+    },
+    {
+      "id": "central-dogma-information-flow",
+      "kind": "term",
+      "name": "Central dogma and molecular information flow",
+      "aka": [
+        "central dogma",
+        "DNA to RNA to protein"
+      ],
+      "tldr": "DNA copying, making RNA and making a protein are different processes. Following the route helps identify what each molecular test actually measured.",
+      "summary": "Replication makes DNA from DNA. Transcription uses a DNA template to make RNA. Translation reads the coding sequence of a message in three-base codons to build a polypeptide; the transcript and reading frame matter. Functional noncoding RNAs do not need to become protein. Reverse transcription copies RNA into DNA in relevant viral and retrotransposon contexts. This information-flow map is not a guarantee that every DNA change produces a measured RNA or protein change.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "NHGRI: RNA, coding/noncoding functions and reverse transcription",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet"
+        },
+        {
+          "label": "NHGRI: codon",
+          "url": "https://www.genome.gov/genetics-glossary/Codon"
+        },
+        {
+          "label": "NHGRI: transcription",
+          "url": "https://www.genome.gov/genetics-glossary/Transcription"
+        },
+        {
+          "label": "OpenStax: regulation across molecular steps",
+          "url": "https://openstax.org/books/biology-2e/pages/16-1-regulation-of-gene-expression"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "gene",
+        "rna",
+        "protein",
+        "gene-expression",
+        "nonsense-mediated-decay"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
+        "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "car-t",
+      "kind": "technology",
+      "name": "CAR-T cell therapy",
+      "aka": [
+        "CAR-T",
+        "CAR T cells",
+        "CAR T-cell therapy",
+        "Chimeric antigen receptor T cells"
+      ],
+      "tldr": "CAR-T therapy uses T cells carrying an engineered receptor. Approved products treat selected blood cancers, with product-specific eligibility and safety requirements.",
+      "summary": "CAR-T cell therapy uses T cells carrying a chimeric antigen receptor to recognize a target. FDA-approved products include CD19- and BCMA-directed CAR-T cells for selected blood cancers, including B-cell leukemias, lymphomas and multiple myeloma. The individual product label defines the treatment setting and eligibility. A common autologous approach collects a person’s T cells, engineers and expands them outside the body, then infuses them back; conditioning and follow-up depend on the protocol.\n\nA common antibody-derived CAR joins an external binding region, a hinge or spacer, a membrane anchor and intracellular signaling domains. The receptor is a protein; its encoding instructions and the living cell carrying it are different objects. Approved products and experimental constructs differ in cell source, receptor, manufacturing and clinical setting. Product labels and trial records define their actual uses; a platform name does not establish eligibility or benefit.\n\nIn early work, Gross, Waks and Eshhar joined antibody-variable regions to T-cell receptor components in 1989. Eshhar and colleagues subsequently tested single-chain antibody-binding regions joined to gamma or zeta signaling chains in 1993. These experimental designs helped separate recognition from the signaling machinery attached to it.\n\nFDA-approved examples include tisagenlecleucel, axicabtagene ciloleucel, lisocabtagene maraleucel, brexucabtagene autoleucel, obecabtagene autoleucel, idecabtagene vicleucel and ciltacabtagene autoleucel. Their labeled diseases, treatment settings and eligibility differ; the individual product records retain those distinctions.",
+      "status": "approved",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "Gross, Waks and Eshhar, the first chimeric antigen receptor (PNAS 1989)",
+          "url": "https://doi.org/10.1073/pnas.86.24.10024"
+        },
+        {
+          "label": "Sotillo et al., Cancer Discov 2015: acquired mutations and alternative splicing of CD19 enable resistance to CART-19",
+          "url": "https://doi.org/10.1158/2159-8290.CD-15-1020"
+        },
+        {
+          "label": "Deng et al., Nat Med 2020: single-cell features of the axicabtagene ciloleucel infusion product that track efficacy and toxicity in 24 patients",
+          "url": "https://doi.org/10.1038/s41591-020-1061-7"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy and harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Eshhar et al.: single-chain binding and signaling receptors (1993)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8421711/"
+        },
+        {
+          "label": "Hudecek et al.: spacer composition, Fc interactions and mouse-model activity (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25212991/"
+        },
+        {
+          "label": "Kawalekar et al.: costimulatory domains and human T-cell metabolism (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26885860/"
+        },
+        {
+          "label": "Ramos et al.: co-infused second- and third-generation constructs (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30309819/"
+        },
+        {
+          "label": "Rafiq et al.: WT1 peptide-HLA-targeting CAR proof of concept (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27924074/"
+        },
+        {
+          "label": "CAR signaling-domain library, pooled screening and single-cell analysis (2024 preprint)",
+          "url": "https://doi.org/10.1101/2024.02.26.582129"
+        },
+        {
+          "label": "FDA: approved cellular and gene therapy products",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: elimination of REMS for named autologous CAR T-cell products (2025)",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor"
+        },
+        {
+          "label": "FDA: boxed-warning changes for T-cell malignancy risk (2024)",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed"
+        },
+        {
+          "label": "NCI: CAR T Cells, Engineering Patients’ Immune Cells",
+          "url": "https://www.cancer.gov/about-cancer/treatment/research/car-t-cells"
+        },
+        {
+          "label": "FDA Kymriah prescribing information, section 11",
+          "url": "https://www.fda.gov/media/107296/download"
+        },
+        {
+          "label": "Precision Tumor Recognition by T Cells With Combinatorial Antigen-Sensing Circuits. (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26830879/"
+        },
+        {
+          "label": "Combinatorial antigen recognition with balanced signaling promotes selective tumor eradication by engineered T cells. (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23242161/"
+        },
+        {
+          "label": "Preclinical evaluation of antitumor activity and toxicity of TROP2-specific CAR-T cells for treatment of triple-negative breast cancer. (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40903191/"
+        },
+        {
+          "label": "Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies. (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39466024/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "logic-gated-therapeutics",
+        "muc1",
+        "antifungal-prophylaxis-in-haematology",
+        "car-t-apheresis",
+        "car-t-bridging",
+        "car-t-infection-prevention",
+        "car-t-lymphodepletion",
+        "car-t-referral-and-eligibility",
+        "crs-grading-and-management",
+        "icaht-prolonged-cytopenia",
+        "icans-grading-and-management",
+        "iec-hs-management",
+        "tumour-lysis-syndrome-prevention-and-treatment",
+        "vaccination-around-cancer-treatment"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "mantle-cell-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "in-vivo-car-t",
+        "allogeneic-cell-therapy",
+        "armored-car"
+      ],
+      "targets": [
+        "cd19",
+        "bcma",
+        "cldn18-2",
+        "gpc3",
+        "gprc5d",
+        "cd70",
+        "mesothelin"
+      ],
+      "drugs": [
+        "ciltacabtagene-autoleucel",
+        "axicabtagene-ciloleucel",
+        "satricabtagene-autoleucel",
+        "tisagenlecleucel",
+        "lisocabtagene-maraleucel",
+        "brexucabtagene-autoleucel",
+        "obecabtagene-autoleucel",
+        "idecabtagene-vicleucel"
+      ],
+      "companies": [
+        "cellogen",
+        "adicet-bio",
+        "allotera-therapeutics",
+        "arcellx",
+        "cargo-therapeutics",
+        "century-therapeutics",
+        "imugene",
+        "leah-labs",
+        "lyell-immunopharma",
+        "modulari-t",
+        "poseida-therapeutics",
+        "tmunity-therapeutics",
+        "cartesian-therapeutics",
+        "vor-biopharma",
+        "cartx-therapeutics",
+        "juventas-cell-therapy",
+        "dispatch-bio",
+        "link-cell-therapies",
+        "tikva-allocell",
+        "brainchild-bio",
+        "leucid-bio",
+        "arovella-therapeutics",
+        "avencell-therapeutics",
+        "outpace-bio",
+        "utc-therapeutics",
+        "march-biosciences",
+        "gyala-therapeutics",
+        "triarm-therapeutics",
+        "genomefrontier-therapeutics",
+        "ticaros",
+        "cero-therapeutics",
+        "hemogenyx-pharmaceuticals",
+        "vittoria-biotherapeutics",
+        "arce-therapeutics",
+        "moonlight-bio",
+        "advesya",
+        "famicordtx",
+        "t-maximum-pharmaceutical",
+        "mabswitch"
+      ],
+      "institutions": [
+        "fact-cellular-therapy"
+      ],
+      "pathways": [],
+      "terms": [
+        "crs",
+        "icans",
+        "lymphoma-bio-antigen-escape",
+        "lymphoma-bio-lineage-antigen-cost",
+        "iec-hs"
+      ],
+      "trials": [
+        "nct07036250",
+        "nct05759728",
+        "nct07103668",
+        "nct07523555",
+        "nct06055439",
+        "nct05652920"
+      ],
+      "people": [
+        "zelig-eshhar"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-gross-eshhar-chimeric-receptor-pnas-1989"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cell-therapy-orchestration-software"
+      ],
+      "notes": [
+        "Generation labels describe common signaling architectures. First-generation constructs use an activation domain, often CD3 zeta; second-generation designs add one costimulatory region; third-generation designs combine two. Fourth-generation and later labels vary across authors. More domains do not establish better patient outcomes. The full binder, spacer, anchor, signaling arrangement and cell preparation still matter.",
+        "CD28 and 4-1BB are borrowed intracellular signaling regions, not separately administered receptors. Kawalekar compared metabolic and memory features in defined human-cell experiments. Ramos co-infused two specified second- and third-generation products in lymphoma; different expansion and persistence did not isolate comparative clinical benefit. Neither study ranks all products by signaling-domain name.",
+        "Binding, surface CAR expression, activation, proliferation and completed target-cell killing are distinct readouts. Compare otherwise matched constructs, target-positive and target-negative cells, healthy-tissue targets and unstimulated activity. Hudecek found that particular IgG-derived spacers could support killing in a dish yet impair activity in mouse models through Fc interactions.",
+        "A peptide-HLA target is an exception to blanket HLA-independent descriptions. Rafiq tested a WT1 peptide presented by HLA-A*02:01 in cell and mouse models; this was a proof of concept, not evidence that every intracellular protein or every HLA type is addressable by that construct.",
+        "A 2024 preprint used a pooled signaling-domain library, repeated stimulation and single-cell sequencing to study how domain arrangement affected T-cell states over time. Its membrane-proximal-domain findings are construct-and-assay observations, not a clinical ranking of domains or a validation of pooled-screen hits as treatments.",
+        "FDA initiated boxed-warning changes in 2024 for the risk of T-cell malignancies after the then-approved BCMA- or CD19-directed autologous CAR T-cell products. Its communication calls for lifelong monitoring for secondary malignancies. This is a scoped regulatory warning, not a claim that every type of engineered immune cell has the same risk.",
+        "In June 2025, FDA eliminated REMS requirements for the named autologous CAR T-cell products in its notice. Product warnings and safety monitoring continued. The manufacturer postmarketing observational studies with 15-year follow-up described in that notice are different from the lifelong patient-monitoring statement in the earlier safety communication.",
+        "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+        "Kymriah’s product description illustrates why borrowed parts do not identify the whole product. Its CD19-binding region is a murine-derived single-chain antibody fragment, followed by a CD8-derived hinge and transmembrane region and the internal 4-1BB/CD137 and CD3-zeta signalling domains. CD8 here names the origin of structural segments, not a claim that the infused preparation contains only CD8 T cells. The label describes enrichment for T cells and permits other cell populations. Autologous source, domain names and architecture do not transfer Kymriah’s clinical results to another construct.",
+        "Suppose two fictional CARs differ only in their hinge: both bind purified antigen, but only one kills antigen-bearing cells. Compare surface expression and the geometry of cell contact before concluding that affinity is the problem. Likewise, DNA-positive cells without killing leave RNA production, receptor folding and trafficking, actual binding and signalling as separate possible failure points. Hudecek’s R11 ROR1 experiments illustrate a product-specific constraint: a long spacer enabled recognition of its membrane-proximal epitope, while changes that reduced Fc-receptor binding improved activity in the tested mice. Longer is not a universal design rule. Treat the transmembrane segment as part of the finished construct: assess assembly, surface expression and interactions rather than presume it is a neutral anchor. Unstimulated signalling and responses to repeated target encounters also need separate assessment.",
+        "In a fictional population of 100 cancer cells, 80 display target X and 20 do not. Killing the X-positive 80 leaves 20 survivors; ten times as many effector cells does not create X on them. For two targets, suppose 20 cells carry both X and Y, 60 carry X only, ten Y only and ten neither. An idealised either-target rule covers 90 cells, whereas a both-target rule covers 20. These are recognition-coverage calculations, not measured killing or healthy-tissue selectivity. Expression thresholds, tissue access and cell function still matter.",
+        "TNBC describes a breast-cancer subtype, not one universal receptor target. A research programme, a positive stain or a named cell platform does not establish a treatment indication or rank safe recognition strategies. The cited TROP2 work supplies preclinical observations, and the ROR1 phase-I report supplies limited activity and infiltration observations in its actual mixed population. These studies do not supply a comparative clinical-benefit estimate for every antigen-directed product in TNBC. Individual labels and clinical studies define their own disease, regimen and eligibility scope.",
+        "Kawalekar’s defined human-CAR experiments linked 4-1BB signalling to outgrowth of CD8 central-memory cells with greater respiratory capacity, fatty-acid oxidation and mitochondrial biogenesis. CD28-containing CARs produced effector-memory cells with a gene-expression pattern consistent with greater glycolysis. These are construct-and-system observations, not a ranking of clinical speed, persistence or safety by domain name. Other receptor parts, preparation, starting-cell state, target and disease setting remain relevant. Ramos simultaneously infused separately tracked second- and third-generation products. Their different expansion and persistence did not let a shared tumour response isolate either product’s clinical contribution.",
+        "Relapse mechanisms need separate investigation. Sotillo found CD19 sequence and splicing changes affecting recognition in B-ALL relapse material and experiments. Deng found infusion-product transcriptional features associated with outcomes in a selected cohort of 24 large B-cell lymphoma infusion products; those associations did not prove that one engineered modification would correct every failure."
+      ],
+      "principle": "A common CAR presents a binder outside the cell and signaling domains inside it, connected through a spacer and transmembrane region. Conventional surface-antigen recognition can bypass peptide-HLA presentation; specialized peptide-HLA-targeting CARs retain the relevant HLA and antigen-processing requirements.",
+      "strengths": [
+        "Antigen-directed recognition in engineered T cells",
+        "Established uses for specific products in selected blood cancers"
+      ],
+      "limitations": [
+        "Shared healthy-tissue targets and inflammatory, neurologic or blood-count harms",
+        "Manufacturing, access and cost depend on the product and setting",
+        "Antigen heterogeneity, cell state, tissue access and local inhibition"
+      ],
+      "since": 2017
+    },
+    {
+      "id": "in-vivo-car-t",
+      "kind": "technology",
+      "name": "In vivo CAR-T",
+      "aka": [],
+      "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
+      "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+      "status": "phase-1",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
+          "url": "https://doi.org/10.15252/emmm.201809158"
+        },
+        {
+          "label": "Rurik et al.: targeted mRNA nanoparticles in a mouse cardiac-injury model (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34990237/"
+        },
+        {
+          "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
+          "url": "https://clinicaltrials.gov/study/NCT06539338"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Hunter et al., 2025: human-cell, humanised-mouse and monkey experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40536974/"
+        },
+        {
+          "label": "In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome. (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30224381/"
+        },
+        {
+          "label": "A targeting lentiviral vector for generation of CAR-T cells in vivo. (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41844687/"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "ex-vivo-cell-expansion",
+        "chain-of-identity-and-custody",
+        "targeted-lnps",
+        "lipid-nanoparticle",
+        "lentiviral-vector",
+        "aav-vector",
+        "transposon"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "abbvie",
+        "adicet-bio",
+        "capstan-therapeutics",
+        "kelonia-therapeutics",
+        "kernal-biologics",
+        "strand-therapeutics",
+        "azalea-therapeutics",
+        "stylus-medicine",
+        "vivacta-bio",
+        "utc-therapeutics",
+        "starna-therapeutics",
+        "gigamune"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pfeiffer-embo-mol-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+        "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+        "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+        "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+        "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+        "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+        "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+        "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+        "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8 cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative cells entered the CAR-positive gate. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+        "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+        "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+        "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+        "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+        "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+        "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+        "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+        "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+        "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+        "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue."
+      ],
+      "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
+      "strengths": [
+        "Investigates an alternative to administering cells engineered outside the body",
+        "May reduce some separate ex vivo manufacturing steps in a specified process"
+      ],
+      "limitations": [
+        "Cell targeting, off-target engineering and immune responses require measurement",
+        "Instruction dose does not specify final cell number or functional exposure",
+        "Conditioning, repeat dosing and cost are product- and protocol-specific"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "car-t-manufacturing-process",
+      "kind": "technology",
+      "name": "Autologous CAR-T manufacturing, batch by batch",
+      "aka": [],
+      "tldr": "An autologous CAR T-cell product is made from the intended recipient's cells. Collection, engineering, culture, quality assessment and treatment scheduling are distinct steps.",
+      "summary": "A defined ex vivo process receives starting material, selects or enriches cells as needed, activates and engineers them, cultures them under controlled conditions, and prepares material for testing, storage and administration. The sequence, vector or other gene-transfer method, culture duration, fresh or frozen handling and assays depend on the product. A collection, manufacturing run, product lot, test sample and administered dose are not interchangeable units. One collection can yield multiple containers or doses; a run need not culminate in an infused treatment.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA guidance: considerations for the development of CAR T cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "21 CFR Part 1271: human cells, tissues and cellular products",
+          "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1271"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "FDA: human gene-therapy IND CMC guidance, January 2020",
+          "url": "https://www.fda.gov/media/113760/download"
+        }
+      ],
+      "tags": [
+        "manufacturing-wave"
+      ],
+      "related": [
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes",
+        "car-t-apheresis"
+      ],
+      "cancers": [
+        "dlbcl",
+        "all-leukemia",
+        "multiple-myeloma",
+        "mantle-cell-lymphoma",
+        "follicular-lymphoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "closed-automated-cell-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cell-therapy-orchestration-software",
+        "point-of-care-cell-manufacturing",
+        "allogeneic-cell-banks",
+        "single-use-bioprocessing",
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [
+        "tisagenlecleucel",
+        "axicabtagene-ciloleucel",
+        "brexucabtagene-autoleucel",
+        "lisocabtagene-maraleucel",
+        "idecabtagene-vicleucel",
+        "ciltacabtagene-autoleucel",
+        "obecabtagene-autoleucel",
+        "lifileucel"
+      ],
+      "companies": [
+        "novartis",
+        "gilead",
+        "bms",
+        "legend-biotech",
+        "autolus",
+        "miltenyi-biotec",
+        "cytiva",
+        "lonza",
+        "cellares",
+        "immunoact",
+        "genomefrontier-therapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "vein-to-vein-time",
+        "apheresis"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [
+        "b-manufacturing-cell-therapy"
+      ],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Enrichment changes the composition of a mixture; activation changes cell state; expansion increases the absolute number of a defined living population. Measure the intended population consistently before and after culture. A higher percentage, a different volume or a higher concentration alone does not demonstrate expansion.",
+        "Release evidence retains identity, purity, viable amount, intended biological activity and relevant contamination risks. Some tests can continue after disposition only within a justified and authorised setting with appropriate follow-up. Neither receptor expression nor a viable-cell count alone establishes every required function.",
+        "Culture duration is only one clock. Collection-to-infusion also includes material acceptance, transport, processing, testing, clinical reassessment and scheduling, with steps sometimes overlapping. A number measured among infused recipients does not describe people who never reached infusion. Avoid a universal week range or a cross-product timing ranking.",
+        "Manufacturing can end without a product, yield a product outside specified requirements, or provide a conforming lot that is never administered. A lack of a collection or treatment slot is another access event. Keep the report's event definition, denominator, period and cancellation rules with any rate.",
+        "The process remains traceable through collections, intermediate material, product lots, doses and samples. Source and intended-recipient matching, biological identity testing, custody and conditions, lot disposition and clinical readiness each require their own evidence.",
+        "FDA's 2024 document focuses on ex vivo CAR T-cell development. Its recommendations do not automatically validate every in vivo carrier, other immune-cell product or research-bank process. Process changes need relevant evidence rather than a promise that automation or shorter culture preserves all attributes.",
+        "In a separate fictional cohort, ten people undergo collection and eight receive an infusion. The two never infused are reported separately; they are not assigned the collection-to-infusion time calculated among the eight. State the follow-up window and reasons for non-infusion before interpreting this proportion."
+      ],
+      "provenance": {
+        "editedBy": "OnCo manufacturing expansion",
+        "editedOn": "2026-09-17"
+      },
+      "principle": "Retain the product-specific process, starting material, defined cell population, parent/lot/dose relationships, control strategy and separate manufacturing and clinical outcomes.",
+      "strengths": [
+        "Supports a defined recipient-linked manufacturing and quality-control process",
+        "Individual steps can be studied and improved with relevant comparability and functional evidence"
+      ],
+      "limitations": [
+        "Starting-material variability, contamination, growth or engineering problems can prevent a suitable product",
+        "A completed lot, a conforming lot, shipment and infusion are distinct outcomes",
+        "Shorter culture does not establish a shorter total wait, equivalent quality or better clinical outcomes"
+      ],
+      "since": 2017
+    },
+    {
+      "id": "on-target-off-tumour-toxicity",
+      "kind": "term",
+      "name": "On-target, off-tumour toxicity and off-target cross-reactivity",
+      "aka": [
+        "on-target off-tumor toxicity",
+        "on-target, off-tumor toxicity",
+        "On-target off-tumour toxicity"
+      ],
+      "tldr": "On-target, off-tumour toxicity is harm to healthy tissue that carries the same target a treatment was built to recognise, so accurate recognition injures the tissue as well as the cancer.",
+      "summary": "On-target, off-tumour toxicity is injury from recognition of the intended target on healthy tissue. It differs from recognition of an unintended molecular target. The predictable, lymphoma-specific consequences of aiming at lineage antigens (B-cell aplasia, low immunoglobulin, and the effects of CD52, CCR4 and CD47 targeting) are described in the record on the cost of aiming at a lineage antigen, which this record does not repeat.\n\nMany candidate cancer targets are normal proteins found at different levels or places in the body, so tumour-associated does not mean tumour-exclusive. A treatment that recognises its intended target wherever it is accessible, such as a chimeric antigen receptor (CAR) T cell, can harm any healthy tissue that displays it, and tissue location, target density, receptor properties and exposure all shape the outcome. This differs from off-target cross-reactivity, in which the receptor recognises an unintended molecule, and from cytokine release syndrome, which is systemic inflammatory activation; the three can occur together. It also differs from payload toxicity in an antibody-drug conjugate: a pooled analysis of ADC trials found the key grade 3 to 4 toxicities grouped by payload and concluded they were likely off-target and related to the payload (Masters et al., 2018). Binding specificity is not tissue selectivity, and experience with an antibody against a target does not automatically carry over to a living cell with a different recognition and signalling system.\n\nTwo primary reports show the contrast. A patient with colon cancer metastatic to the lungs and liver received 10 billion autologous T cells expressing a trastuzumab-based CAR against ERBB2 (HER2), the largest number permitted in the first dose-escalation cohort, the day after a lymphodepleting regimen of cyclophosphamide (60 mg/kg daily for 2 days) and fludarabine (25 mg/m2 for 5 days). Within 15 minutes the patient had respiratory distress, chest imaging showed pulmonary oedema, and the patient died 5 days after treatment, with marked rises in interferon-gamma, GM-CSF, tumour necrosis factor-alpha, interleukin-6 and interleukin-10. At autopsy multiple organs showed systemic ischaemia and haemorrhagic microangiopathic injury and the lungs diffuse alveolar damage; histological examination of autopsy tissue found ERBB2 at 3+ in liver metastases and 2+ in lung metastases and much lower levels in normal lung parenchyma, normal liver and normal breast. The authors hypothesised that highly active ERBB2-directed T cells recognised ERBB2 on normal lung cells on first pass through the lung and released inflammatory cytokines that began a cascade ending in multiorgan failure; the autopsy findings were read as initial lung injury followed by days of hypotension and ischaemia, and the authors call the significance of the cells' reactivity against cultured primary cells unclear. This is a single case, with a stated dose and conditioning, whose mechanism is the authors' hypothesis and which gives no incidence for any CAR product (Morgan et al., 2010). In a trial of an affinity-enhanced T-cell receptor against HLA-A*01-restricted MAGE-A3 in myeloma and melanoma, the first two patients developed cardiogenic shock and died within days; no MAGE-A3 expression was detected in heart tissue at autopsy, and beating cardiomyocytes made from induced pluripotent stem cells triggered T-cell killing through recognition of an unrelated peptide from titin. That is off-target recognition of an unintended molecule, not the intended target in the wrong tissue (Linette et al., 2013).\n\nHow the question is asked before and during trials. FDA's CAR T-cell development guidance says to assess both undesired targeting of healthy tissue that expresses the intended antigen (on-target/off-tumour) and unintended targeting of other antigens, using examples such as tissue cross-reactivity studies with an antibody carrying the same recognition domain, protein arrays, cytotoxicity and cytokine-release testing on panels of primary cells, cell lines or stem-cell-derived organ systems, and relevant animal models, and encourages a combination of methods; antigen recognition domains can differ in affinity or avidity or recognise a different site, which should be evaluated, and CAR T cells can carry added components such as suicide genes. In practice a readout is a staining intensity or positive fraction, a binding profile, killing or cytokine release by healthy cells at a named time, and finally organ injury in the treated population; stained fixed tissue does not show a living organ's accessibility, an animal model may lack the human target, and a negative result in one panel is not a safety certificate. No universal expression cut-off is given here because no source read gives one. Whether affinity tuning, recognition logic or control switches improve safety for a particular design needs that design's own evidence. The 2026 ASTCT consensus abstract lists on-target, off-tumour toxicity among the toxicities for which it considered definitions and grading; its criteria were not readable.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Morgan et al., case report of a serious adverse event after ERBB2-directed CAR T cells (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20179677/"
+        },
+        {
+          "label": "Linette et al., cardiovascular toxicity and titin cross-reactivity of affinity-enhanced T cells (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23770775/"
+        },
+        {
+          "label": "FDA: considerations for the development of CAR T cell products (guidance)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Perales et al., ASTCT consensus grading for toxicities after immune effector cell therapy (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42711241/"
+        },
+        {
+          "label": "Masters et al., clinical toxicity of antibody-drug conjugates: meta-analysis of payloads (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29027591/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "crs",
+        "therapeutic-index",
+        "her2",
+        "lymphoma-bio-lineage-antigen-cost",
+        "muc1"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "car-t",
+        "tcr-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "crs",
+        "therapeutic-index"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
+        "In a fictional tumour sample, 70 of 100 cells display an epitope accessible to the proposed receptor and 30 do not. A second target has only an RNA result, while healthy tissue was stained with a third antibody. Those measurements cannot rank safe receptor designs: ask for the actual binder’s recognition, the unrecognised tumour population and functional effects on relevant healthy cells. A more sensitive receptor might recognise additional tumour cells and additional healthy cells. Even a perfectly specific binder can harm healthy cells carrying its intended antigen; unintended binding to another molecule is a different failure. A sampled panel can miss antigen-negative cells, and an intracellular signal does not establish an accessible surface epitope. Repeat the relevant healthy-cell question under conditions, including inflammation, that could change recognition."
+      ],
+      "category": "Side effects",
+      "wikipediaChecked": "2026-11-10"
+    },
+    {
+      "id": "t-cell-exhaustion-term",
+      "kind": "term",
+      "name": "T-cell exhaustion and CAR-T persistence",
+      "aka": [
+        "exhaustion",
+        "exhausted T cells",
+        "T-cell fitness",
+        "T cell fitness",
+        "T-cell dysfunction",
+        "CAR-T persistence",
+        "CAR persistence",
+        "CAR-T expansion",
+        "peak expansion",
+        "in vivo expansion",
+        "B-cell aplasia",
+        "loss of persistence",
+        "memory phenotype",
+        "stem-like T cells"
+      ],
+      "tldr": "T-cell exhaustion describes altered differentiation and function under persistent stimulation. A marker, cell count or persisting CAR transgene does not by itself establish useful tumour killing.",
+      "summary": "Persistent stimulation can produce heterogeneous T-cell states, rather than one uniformly inactive population. In the studied tumour models, TCF1-positive, PD-1-positive cells could proliferate and generate more differentiated cells during checkpoint treatment. That result does not mean every exhausted cell has been reset. State-associated markers, receptor identity, proliferation and completed target-cell killing answer different questions.\n\nFor CAR-T, distinguish the infused preparation, expansion, later detection in blood, viable functional cells at relevant sites and disease control. A 24-patient axi-cel infusion-product study associated memory/exhaustion-related transcriptional features with outcomes; an association in that cohort does not prove that one modification will correct every failure. A detectable transgene is not itself a functional killing assay.\n\nB-cell aplasia is used as a surrogate of CD19-directed activity against normal B cells, not a guarantee that all cancer sites remain controlled. Relapse can occur while aplasia continues. In the 2025 tisagenlecleucel analysis, relationships differed between B-ALL and diffuse large B-cell lymphoma; blood transgene levels lacked robust relapse-prediction performance. Early B-cell recovery in B-ALL was also affected by subsequent transplantation and censoring. No universal recovery cutoff or rule that persistence is irrelevant in ALL follows from an early response.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/T_cell_exhaustion",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/T_cell_exhaustion"
+        },
+        {
+          "label": "Siddiqui 2019: stem-like and differentiated PD-1-positive cells in tumour models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30635237/"
+        },
+        {
+          "label": "Deng 2020: 24 lymphoma infusion-product associations",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33020644/"
+        },
+        {
+          "label": "Long 2015: specified CAR constructs and tonic signalling",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25939063/"
+        },
+        {
+          "label": "Kawalekar 2016: coreceptor domains, metabolism and memory in human CAR cells",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26885860/"
+        },
+        {
+          "label": "Awasthi 2025: transgene measurements and disease-specific predictive limits",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40554413/"
+        },
+        {
+          "label": "2026 lymphoma persistence series: selected long-term responders",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42575986/"
+        },
+        {
+          "label": "Myers 2021: humanised CD19 CAR pilot and B-cell surrogate limitations",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34156874/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antigen-escape",
+        "cold-vs-hot",
+        "hypogammaglobulinaemia"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy",
+        "immunotherapy"
+      ],
+      "technologies": [
+        "car-t",
+        "armored-car",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [
+        "pd1",
+        "lag3",
+        "tim3",
+        "tigit",
+        "cd57",
+        "cd69"
+      ],
+      "drugs": [
+        "favezelimab",
+        "fianlimab",
+        "hlx26",
+        "relatlimab-nivolumab",
+        "azd7789",
+        "lb1410",
+        "cobolimab",
+        "hb0036",
+        "rilvegostomig",
+        "tiragolumab",
+        "domvanalimab",
+        "vibostolimab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "checkmate-142",
+        "checkmate-358",
+        "fianlimab-phase3-melanoma",
+        "i-spy-2",
+        "nct03486873",
+        "nct03899155",
+        "nct03916627",
+        "nct04082364",
+        "nct04165070",
+        "nct04524871",
+        "nct04590326",
+        "nct04626479",
+        "nct04626518",
+        "nct04655976",
+        "nct04665856",
+        "nct04736173",
+        "nct04895722",
+        "nct04931654",
+        "nct04938817",
+        "nct04995523",
+        "nct05009069",
+        "nct05123482",
+        "nct05211895",
+        "nct05224141",
+        "nct05287113",
+        "nct05329766",
+        "nct05417321",
+        "nct05489211",
+        "nct05502237",
+        "nct05565378",
+        "nct05608291",
+        "nct05625399",
+        "nct05633667",
+        "nct05645692",
+        "nct05676931",
+        "nct05702229",
+        "nct05724563",
+        "nct05775159",
+        "nct05785767",
+        "nct05787613",
+        "nct05800015",
+        "nct05805501",
+        "nct05845814",
+        "nct05904886",
+        "nct05970497",
+        "nct06062420",
+        "nct06101134",
+        "nct06109779",
+        "nct06161441",
+        "nct06190951",
+        "nct06205836",
+        "nct06246916",
+        "nct06264180",
+        "nct06342037",
+        "nct06349980",
+        "nct06357533",
+        "nct06467357",
+        "nct06468358",
+        "nct06472076",
+        "nct06521567",
+        "nct06561386",
+        "nct06564844",
+        "nct06627647",
+        "nct06692738",
+        "nct06697197",
+        "nct06727565",
+        "nct06764875",
+        "nct06769698",
+        "nct06787612",
+        "nct06865339",
+        "nct06868277",
+        "nct06921785",
+        "nct06943820",
+        "nct06963905",
+        "nct06989112",
+        "nct06996782",
+        "nct07058012",
+        "nct07069712",
+        "nct07098338",
+        "nct07115043",
+        "nct07221253",
+        "nct07224022",
+        "nct07281768",
+        "nct07431281",
+        "nct07492680",
+        "nct07720284",
+        "relativity-047",
+        "relativity-098"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Long and colleagues studied antigen-independent receptor clustering, tonic signalling and specified CAR constructs. In that setting, CD28 increased and 4-1BB reduced exhaustion-related effects. Kawalekar and colleagues found different metabolic and memory features in defined human-cell CAR experiments. These are construct-and-assay findings, rather than a universal clinical ranking of every CD28 and 4-1BB product.",
+        "A 2026 lymphoma series found the CAR19 transgene beyond year five in five of eight tested long-term responders, with B-cell aplasia in three. This selected sample demonstrates possible long persistence, rather than its probability in every treated patient or proof of a required duration.",
+        "In the humanised CD19 CAR pilot, both B-cell recovery without subsequent relapse and relapse without preceding B-cell recovery were observed. Several patients received reinfusion or transplantation; these observations do not isolate outcomes without further treatment. Keep the product, disease, specimen, assay sensitivity, time and subsequent treatment with each persistence or functional-surrogate claim."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "cellular-kinetics-and-persistence",
+      "kind": "term",
+      "name": "Cellular kinetics and persistence",
+      "aka": [
+        "living-drug kinetics",
+        "cell-therapy abundance and function",
+        "cell dose and persistence"
+      ],
+      "tldr": "A living cell therapy can change its number, location and state after administration. The starting dose, a sampled cell count and useful function are different measurements.",
+      "summary": "After a cell infusion, measured abundance depends on division, survival and redistribution. In vivo engineering may also continue to generate newly engineered cells. A blood sample describes one compartment and time; it cannot count all cells in the body or establish entry into a tumor. Detectable receptor-encoding sequences, viable receptor-positive cells, persistent markers and functional activity should be reported separately.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy and harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        },
+        {
+          "label": "Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies. (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39466024/"
+        },
+        {
+          "label": "NCI: Tumor Biology and Microenvironment Research",
+          "url": "https://www.cancer.gov/about-nci/organization/dcb/research-portfolio/tbmr"
+        },
+        {
+          "label": "FDA long-term follow-up after human gene therapy (January 2020)",
+          "url": "https://www.fda.gov/media/113768/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-t",
+        "car-nk-macrophage",
+        "nk-cell-therapy",
+        "in-vivo-car-t",
+        "t-cell-exhaustion-term"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "FDA CAR T-cell guidance treats exposure/kinetics, pharmacodynamic response, immunogenicity, identity, viability and potency as distinct assessments. Blood concentration-time measurements and optional disease-tissue sampling answer different distribution questions. A sequence assay is not automatically a count of viable cells expressing a functional surface receptor.",
+        "Keep the measurement method, time, compartment, units and denominator attached. A receptor-positive percentage can fall while absolute receptor-positive cells per microliter remain unchanged if the sampled denominator increases. Neither measure alone establishes an unchanged total-body cell population, tumor entry or antitumor benefit.",
+        "An administered cell dose is an input. The dose of a vector or particle used for in vivo engineering does not directly specify the later number of engineered cells. Autologous means the recipient’s own cells; allogeneic means cells from another person. Engineering outside versus inside the body is a separate axis; a prepared delivery product can engineer the recipient's own cells.",
+        "Expansion and persistence can prolong useful activity or harmful recognition. Stopping further administration does not instantly remove living cells or reverse an injury already triggered. A safety switch addresses a specified control mechanism; cell elimination, receptor shutoff and treatment of downstream inflammation are different interventions.",
+        "In the Liu cord-blood CAR-NK study, low-level detection at least 12 months after treatment belonged to a construct with IL-15 and an inducible caspase-9 switch. It does not establish the behavior of every NK-cell source or equate marker detection with continuing useful function.",
+        "In a fictional pair of matched blood samples, 20 per cent of 100 viable T cells per microlitre and 10 per cent of 200 both give 20 receptor-positive viable T cells per microlitre. The percentage fell because its denominator doubled; the concentration did not. This conclusion requires comparable collection, volume and viable-cell gates. It says nothing about the total number of cells in the body, tumour entry or continued target-cell killing. Genetic copies, surface receptor, viable cells and useful function remain separate measurements.",
+        "Cells respond biologically to signals, without intention; more cells do not by themselves establish better or safer treatment. Consider two fictional ready-made products: a carrier that gives receptor instructions to the recipient’s own T cells, and a prepared batch of donor-derived engineered cells. The first can generate autologous cells in vivo; the second supplies allogeneic cells engineered ex vivo. State four things separately: the starting cell family, whose cells they are, where engineering happens and whether cells or an instruction carrier are administered. Neither card establishes available supply, the final engineered-cell population or treatment benefit. NK and NKT name different cell families; an added receptor does not erase the recipient cell’s other inputs.",
+        "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+        "Compare time courses rather than labels when interpreting reversibility. Antibodies also take time to clear after dosing stops. In an engineered-cell product, carrier exposure, instructions, receptor protein, living cells and inflammation can have different durations. Stopping the next administration, reducing one signal, removing the cells and reversing an established injury are separate claims."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "tumor-microenvironment",
+      "kind": "pathway",
+      "name": "Tumour microenvironment (TME)",
+      "aka": [],
+      "tldr": "A tumour’s surroundings include cells, vessels, matrix and local conditions. Their presence or location alone does not establish how they affect the cancer or its treatment.",
+      "summary": "Cancer cells interact with neighbouring immune and stromal cells, vessels, extracellular material and physical conditions. These interactions vary across sites, regions and time and can have different consequences. Composition, position, molecular programs and demonstrated function are separate layers of evidence.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor_microenvironment",
+      "links": [
+        {
+          "label": "de Visser & Joyce, The evolving tumor microenvironment (Cancer Cell 2023)",
+          "url": "https://doi.org/10.1016/j.ccell.2023.02.016"
+        },
+        {
+          "label": "Human Tumor Atlas Network",
+          "url": "https://humantumoratlas.org"
+        },
+        {
+          "label": "Keren et al., A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging. (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30193111/"
+        },
+        {
+          "label": "Salmon et al., Matrix architecture defines the preferential localization and migration of T cells into the stroma of human lung tumors. (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22293174/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "theories-of-cancer",
+        "microenvironment-inflammation-theory",
+        "tissue-organisation-field-theory",
+        "extracellular-matrix"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "single-cell-spatial",
+        "fapi-pet",
+        "checkpoint-inhibitor",
+        "antiangiogenic"
+      ],
+      "targets": [
+        "fap",
+        "pd1",
+        "ctla4",
+        "vegf",
+        "cd47"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "md-anderson",
+        "cold-spring-harbor",
+        "dana-farber",
+        "institut-curie"
+      ],
+      "pathways": [
+        "pd1-checkpoint",
+        "vegf-angiogenesis",
+        "cgas-sting",
+        "emt",
+        "cancer-neuroscience",
+        "inflammation-nfkb"
+      ],
+      "terms": [
+        "cold-vs-hot",
+        "tils",
+        "cancer-associated-fibroblasts",
+        "tumor-associated-macrophages",
+        "myeloid-derived-suppressor-cells",
+        "immune-exclusion"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-quail-joyce-microenvironment-metastasis-natmed-2013",
+        "paper-de-visser-cancer-cell"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Tuveson (CSHL) on CAF subtypes; Sahai (Crick) and Mechta-Grigoriou (Institut Curie) on fibroblast heterogeneity; Joyce (Ludwig Lausanne) on TAMs; MD Anderson and MSK spatial atlases; Human Tumor Atlas Network (NCI).",
+        "The tumour microenvironment includes neighbouring cells, extracellular material, vessels and local physical conditions. A neighbouring cell need not belong to the malignant clone. Cell populations, cytokines and chemokines, matrix, oxygen, nutrients and waste interact in both directions, and their arrangement varies between regions, disease sites and times. A drawing is a map of possible participants, not a measured recipe or a fixed job description.",
+        "Keren used multiplexed protein imaging in 41 human triple-negative breast cancers to describe composition and spatial organisation. This is observational evidence. Salmon used viable human lung-tumour slices to investigate matrix and T-cell movement, including a perturbation. The two designs answer different questions, and neither makes stromal removal a universal treatment instruction. Presence or proximity alone does not demonstrate signalling, recognition, killing or suppression.",
+        "Retain site, date, treatment, region and denominator: cells per area differs from a fraction of detected cells. Selected-protein imaging, spatial RNA capture with cell assignment and a controlled functional experiment are different outputs. Segmentation can misassign boundaries and dissociation changes which cells are recovered. There is no universal TME score that establishes treatment benefit.",
+        "In a fictional macrophage-rich region with inflammatory RNA, composition and expression are observed. The result does not identify every RNA signal’s cellular source, demonstrate macrophage suppression or select the best treatment. A workflow through cells, locations, vessels, matrix and conditions orders questions; it is not a causal chain from cell counts to immune function."
+      ],
+      "analogy": "A castle under siege from the inside: the cancer conscripts the town's builders (fibroblasts) to raise walls, bribes the guards (macrophages) to look away, and diverts the water supply (vessels) so that reinforcements (T cells, drugs) never arrive.",
+      "nodes": [
+        {
+          "id": "tumour",
+          "label": "Tumour cells",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "caf",
+          "label": "CAFs (FAP+)",
+          "x": 20,
+          "y": 30,
+          "targetId": "fap"
+        },
+        {
+          "id": "tam",
+          "label": "TAMs (CSF1R, CD47 axis)",
+          "x": 80,
+          "y": 30,
+          "targetId": "cd47"
+        },
+        {
+          "id": "mdsc",
+          "label": "MDSCs",
+          "x": 80,
+          "y": 70
+        },
+        {
+          "id": "treg",
+          "label": "Tregs (CTLA-4)",
+          "x": 62,
+          "y": 85,
+          "targetId": "ctla4"
+        },
+        {
+          "id": "cd8",
+          "label": "Exhausted CD8 T cells (PD-1)",
+          "x": 38,
+          "y": 85,
+          "targetId": "pd1"
+        },
+        {
+          "id": "vessel",
+          "label": "Abnormal vessels (VEGF)",
+          "x": 20,
+          "y": 70,
+          "targetId": "vegf"
+        },
+        {
+          "id": "ecm",
+          "label": "Stiff ECM / desmoplasia",
+          "x": 8,
+          "y": 50
+        },
+        {
+          "id": "nerve",
+          "label": "Nerves",
+          "x": 92,
+          "y": 50
+        }
+      ],
+      "edges": [
+        {
+          "from": "tumour",
+          "to": "caf",
+          "type": "activates"
+        },
+        {
+          "from": "caf",
+          "to": "ecm",
+          "type": "activates"
+        },
+        {
+          "from": "ecm",
+          "to": "cd8",
+          "type": "inhibits"
+        },
+        {
+          "from": "tumour",
+          "to": "vessel",
+          "type": "activates"
+        },
+        {
+          "from": "vessel",
+          "to": "cd8",
+          "type": "inhibits"
+        },
+        {
+          "from": "tumour",
+          "to": "tam",
+          "type": "activates"
+        },
+        {
+          "from": "tam",
+          "to": "cd8",
+          "type": "inhibits"
+        },
+        {
+          "from": "mdsc",
+          "to": "cd8",
+          "type": "inhibits"
+        },
+        {
+          "from": "treg",
+          "to": "cd8",
+          "type": "inhibits"
+        },
+        {
+          "from": "cd8",
+          "to": "tumour",
+          "type": "inhibits"
+        },
+        {
+          "from": "nerve",
+          "to": "tumour",
+          "type": "activates"
+        },
+        {
+          "from": "caf",
+          "to": "tumour",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Checkpoint blockade (PD-1, CTLA-4, LAG-3) releases exhausted T cells",
+        "Anti-VEGF normalises vessels and improves infiltration",
+        "FAP-targeted imaging and radioligands attack CAFs",
+        "CSF1R, CD47/SIRPα, CXCR4, TGF-β, adenosine (A2A/CD73) agents target myeloid and stromal suppression; most have been modest so far",
+        "Radiation and oncolytic viruses convert excluded tumours"
+      ]
+    },
+    {
+      "id": "companion-diagnostic-term",
+      "kind": "term",
+      "name": "Companion diagnostic",
+      "aka": [],
+      "tldr": "A companion diagnostic provides information required for a corresponding treatment to be used safely and effectively within its specified context. The result is one part of a treatment decision.",
+      "summary": "The category concerns a device and a corresponding treatment use. FDA describes roles involving likely benefit, serious-adverse-effect risk or specified treatment monitoring. Check both the treatment and diagnostic labeling, including specimen, disease, biomarker and decision rule. A molecular report listing a drug is not by itself a companion-diagnostic authorization. Similar gene names do not establish assay interchangeability, and a positive result does not promise a response.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Companion_diagnostic",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Companion_diagnostic"
+        },
+        {
+          "label": "FDA: companion diagnostics",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "FDA: in vitro companion diagnostic devices",
+          "url": "https://www.fda.gov/media/81309/download"
+        },
+        {
+          "label": "FDA: authorized companion diagnostic devices and intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "42 CFR 493.1256(f): acceptable controls before reporting patient results",
+          "url": "https://www.ecfr.gov/current/title-42/section-493.1256"
+        },
+        {
+          "label": "GovInfo: published 2025 control-procedure rule, independently read",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol5/pdf/CFR-2025-title42-vol5-sec493-1256.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "companion-diagnostic",
+        "laboratory-certification-test-authorization",
+        "label-indication"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "companion-diagnostic"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An invalid, failed or inadequate test is not a valid negative biomarker result. The specimen and assay must meet the relevant acceptance criteria. U.S. CLIA control rules require applicable control results to be acceptable before patient results are reported. Whether to repeat a measurement or use another specimen depends on the actual test and laboratory criteria."
+      ],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "companion-diagnostic",
+      "kind": "technology",
+      "name": "Companion diagnostics",
+      "aka": [],
+      "tldr": "A companion diagnostic supplies information needed for a corresponding medicine to be used safely and effectively. Its labeling defines the intended use of the result.",
+      "summary": "FDA describes companion diagnostics as devices that supply essential information for a corresponding treatment. Their roles can include identifying likely benefit, increased risk of serious adverse effects or a specified monitoring need. The treatment label and diagnostic labeling retain the relevant disease, specimen, biomarker and decision rule. Some devices have documented group labeling for specified oncology therapies. Similar analyte names do not establish assay interchangeability, and a label-matched result does not guarantee individual benefit or complete clinical suitability.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Companion_diagnostic",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Companion_diagnostic"
+        },
+        {
+          "label": "FDA: companion diagnostics",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "FDA: authorized companion diagnostic devices and intended uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-fda-authorized-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+        },
+        {
+          "label": "FDA: in vitro companion diagnostic devices",
+          "url": "https://www.fda.gov/media/81309/download"
+        },
+        {
+          "label": "FDA: labeling diagnostics for a group of oncology therapies",
+          "url": "https://www.fda.gov/media/120340/download"
+        },
+        {
+          "label": "42 CFR 493.1256(f): acceptable controls before reporting patient results",
+          "url": "https://www.ecfr.gov/current/title-42/section-493.1256"
+        },
+        {
+          "label": "GovInfo: published 2025 control-procedure rule, independently read",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol5/pdf/CFR-2025-title42-vol5-sec493-1256.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "hrd-genomic-scar-scores",
+        "rad51-foci-assay",
+        "dpyd-genotyping",
+        "fes-pet",
+        "cellsearch-ctc-count",
+        "serum-tumour-markers",
+        "laboratory-certification-test-authorization",
+        "companion-diagnostic-term",
+        "analytical-vs-clinical-validation"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "acrivon-therapeutics",
+        "ataraxis-ai",
+        "cofactor-genomics",
+        "ibex-medical-analytics",
+        "imagene-ai",
+        "insight-molecular-diagnostics",
+        "nonagen-bioscience",
+        "oncohost",
+        "signatur-biosciences",
+        "valar-labs"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "cps",
+        "her2-low"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An invalid, failed or inadequate test is not a valid negative biomarker result. The specimen and assay must meet the relevant acceptance criteria. U.S. CLIA control rules require applicable control results to be acceptable before patient results are reported. Whether to repeat a measurement or use another specimen depends on the actual test and laboratory criteria."
+      ],
+      "principle": "Evaluate a specified diagnostic result within the corresponding device and treatment labeling.",
+      "strengths": [
+        "Connects a defined test use to treatment information",
+        "Makes labeling and measurement context checkable"
+      ],
+      "limitations": [
+        "Intended use is product- and context-specific",
+        "A result alone does not establish individual benefit",
+        "Different assays are not interchangeable without supporting evidence"
+      ]
+    },
+    {
+      "id": "accelerated-approval",
+      "kind": "term",
+      "name": "Accelerated approval",
+      "aka": [
+        "accelerated approvals",
+        "accelerated-approval",
+        "Project Confirm"
+      ],
+      "tldr": "This FDA pathway can authorize a specified use based on an endpoint reasonably likely to predict clinical benefit. Further studies must confirm the anticipated benefit.",
+      "summary": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Accelerated_approval_(FDA)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Accelerated_approval_(FDA)"
+        },
+        {
+          "label": "FDA: accelerated approval program",
+          "url": "https://www.fda.gov/drugs/nda-and-bla-approvals/accelerated-approval-program"
+        },
+        {
+          "label": "FDA: expedited programs guidance, including surrogate endpoints",
+          "url": "https://www.fda.gov/media/86377/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "fdora-2022",
+        "fdca",
+        "fdasia-2012",
+        "conditional-approval",
+        "japan-conditional-early-approval",
+        "china-drug-administration-law",
+        "full-approval",
+        "approval-withdrawal",
+        "confirmatory-trial",
+        "surrogate-endpoint",
+        "expanded-access",
+        "cancer-drugs-fund",
+        "abigail-alliance",
+        "label-indication",
+        "fast-track-rmat"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "fast-track-rmat",
+      "kind": "term",
+      "name": "Fast Track and RMAT designations",
+      "aka": [
+        "Fast Track",
+        "fast-track designation",
+        "Fast Track designation",
+        "RMAT",
+        "regenerative medicine advanced therapy",
+        "RMAT designation",
+        "expedited programme",
+        "expedited program",
+        "expedited pathway",
+        "expedited review",
+        "expedited approval",
+        "fast track designations"
+      ],
+      "tldr": "Fast Track and regenerative-medicine designations support development and review for eligible products. A designation is separate from a decision authorizing marketing.",
+      "summary": "Fast Track supports development and review for drugs addressing serious conditions and unmet need. Regenerative Medicine Advanced Therapy designation has its own eligible-product and preliminary-clinical-evidence criteria. Breakthrough Therapy and Priority Review likewise have distinct purposes; review support is not an efficacy result or a guarantee of approval or delivery timing. Accelerated approval, in contrast, is an approval pathway with benefit-confirmation requirements. Read the named program and the actual product decision separately.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Fast_track_(FDA)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fast_track_(FDA)"
+        },
+        {
+          "label": "FDA: expedited development and review programs",
+          "url": "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review"
+        },
+        {
+          "label": "FDA: expedited programs guidance, including surrogate endpoints",
+          "url": "https://www.fda.gov/media/86377/download"
+        },
+        {
+          "label": "FDA: regenerative medicine advanced therapy designation",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/regenerative-medicine-advanced-therapy-designation"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "breakthrough-designation",
+        "accelerated-approval",
+        "orphan-designation",
+        "bla-nda",
+        "fdasia-2012",
+        "21st-century-cures-act",
+        "sakigake",
+        "ilap",
+        "eu-regulation-726-2004",
+        "full-approval",
+        "investigational-new-drug-application"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "full-approval",
+      "kind": "term",
+      "name": "Full (traditional, regular) approval",
+      "aka": [
+        "full approval",
+        "traditional approval",
+        "regular approval",
+        "standard approval",
+        "converted to full approval",
+        "conversion to regular approval",
+        "full FDA approval",
+        "received full approval",
+        "gained full approval",
+        "regular FDA approval"
+      ],
+      "tldr": "Traditional approval is a marketing decision for a specified use. Its evidence can include direct clinical benefit or an established surrogate endpoint; it does not promise that every person will benefit.",
+      "summary": "FDA distinguishes a validated surrogate that can support traditional approval from a surrogate reasonably likely to predict benefit that can support accelerated approval. Traditional approval does not always require a demonstrated survival increase. Accelerated approval carries requirements to confirm the anticipated clinical benefit and can later be converted or withdrawn through the applicable process. The current indication and evidence matter more than a general approved-drug badge.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/New_Drug_Application",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Drug_Application"
+        },
+        {
+          "label": "FDA: expedited programs guidance, including surrogate endpoints",
+          "url": "https://www.fda.gov/media/86377/download"
+        },
+        {
+          "label": "FDA: accelerated approval program",
+          "url": "https://www.fda.gov/drugs/nda-and-bla-approvals/accelerated-approval-program"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "accelerated-approval",
+        "confirmatory-trial",
+        "conditional-approval",
+        "approval-withdrawal",
+        "fdora-2022",
+        "fdca",
+        "bla-nda",
+        "japan-conditional-early-approval",
+        "cancer-drugs-fund",
+        "surrogate-endpoint",
+        "surrogate-validation",
+        "label-indication"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "laboratory-certification-test-authorization",
+      "kind": "term",
+      "name": "Laboratory certification and test authorization",
+      "aka": [
+        "Clinical Laboratory Improvement Amendments",
+        "CLIA laboratory certification",
+        "CLIA certification",
+        "laboratory quality versus test authorization"
+      ],
+      "tldr": "Laboratory certification addresses the laboratory and its testing quality. Product authorization and evidence that a particular test use helps patients answer separate questions.",
+      "summary": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "CMS: Clinical Laboratory Improvement Amendments",
+          "url": "https://www.cms.gov/medicare/quality/clinical-laboratory-improvement-amendments"
+        },
+        {
+          "label": "CMS: CLIA analytical oversight and clinical validity (2013 FAQ; historical FDA discussion not used)",
+          "url": "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/ldt-and-clia_faqs.pdf"
+        },
+        {
+          "label": "FDA: current laboratory-developed-test rule notice",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/laboratory-developed-tests"
+        },
+        {
+          "label": "FDA: research-use-only and investigational-use-only IVD guidance",
+          "url": "https://www.fda.gov/media/87374/download"
+        },
+        {
+          "label": "FDA: companion diagnostics",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "FDA: registration and listing do not establish authorization",
+          "url": "https://www.fda.gov/medical-devices/device-registration-and-listing/important-reminders-about-registration-and-listing"
+        },
+        {
+          "label": "ASCO/CAP: ER and PR testing recommendations (2020)",
+          "url": "https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"
+        },
+        {
+          "label": "FDA: companion diagnostic labeling for a group of oncology products (April 2020)",
+          "url": "https://www.fda.gov/media/120340/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "research-use-only",
+        "fda-ldt-rule",
+        "analytical-vs-clinical-validation",
+        "companion-diagnostic",
+        "companion-diagnostic-term"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The CMS FAQ is used here for the analytical-oversight versus clinical-validity distinction, not its historical discussion of FDA authority over laboratory-developed tests. Current procedural history is retained in the separate FDA LDT-rule record.",
+        "An entry in FDA establishment registration or device listing does not itself mean that the facility or device is approved, cleared or authorized. Registration and product authorization are separate claims.",
+        "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report."
+      ],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "expanded-access",
+      "kind": "term",
+      "name": "Expanded access (compassionate use)",
+      "aka": [
+        "compassionate use",
+        "expanded access programme",
+        "expanded access program",
+        "expanded access programmes",
+        "treatment IND",
+        "single-patient IND",
+        "emergency IND",
+        "named-patient supply",
+        "named patient programme",
+        "Project Facilitate",
+        "early access programme",
+        "pre-approval access"
+      ],
+      "tldr": "Expanded access permits qualifying treatment use of an investigational drug outside a clinical trial. Supply, physician responsibility and applicable regulatory and ethics requirements still need to be met.",
+      "summary": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Expanded_access",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Expanded_access"
+        },
+        {
+          "label": "FDA: expanded access",
+          "url": "https://www.fda.gov/news-events/public-health-focus/expanded-access"
+        },
+        {
+          "label": "FDA Oncology Center of Excellence: Project Facilitate",
+          "url": "https://www.fda.gov/about-fda/oncology-center-excellence/project-facilitate"
+        },
+        {
+          "label": "FDA: expanded access questions and answers, April 2026",
+          "url": "https://www.fda.gov/media/162793/download"
+        },
+        {
+          "label": "FDA: expanded access information for institutional review boards",
+          "url": "https://www.fda.gov/news-events/expanded-access/expanded-access-information-institutional-review-boards-irbs"
+        },
+        {
+          "label": "FDA: current Form 3926 instructions, including permission to reference another IND",
+          "url": "https://www.fda.gov/media/98627/download"
+        },
+        {
+          "label": "FDA: charging for investigational drugs under an IND, February 2024",
+          "url": "https://www.fda.gov/media/176308/download"
+        },
+        {
+          "label": "FDA: separate industry, physician, IRB and agency responsibilities",
+          "url": "https://www.fda.gov/news-events/expanded-access/expanded-access-information-industry"
+        },
+        {
+          "label": "21 CFR 312.8: Costs recoverable for investigational drugs (Cornell LII regulation mirror)",
+          "url": "https://www.law.cornell.edu/cfr/text/21/312.8"
+        },
+        {
+          "label": "21 CFR 312.310: Individual-patient emergency procedures (Cornell LII regulation mirror)",
+          "url": "https://www.law.cornell.edu/cfr/text/21/312.310"
+        },
+        {
+          "label": "21 CFR 56.104: Emergency IRB exception and subsequent use (Cornell LII regulation mirror)",
+          "url": "https://www.law.cornell.edu/cfr/text/21/56.104"
+        },
+        {
+          "label": "FDA: expanded-access request forms, individual-patient steps and emergency follow-up",
+          "url": "https://www.fda.gov/news-events/expanded-access/expanded-access-how-submit-request-forms"
+        },
+        {
+          "label": "eCFR: official 21 CFR 312 text, issued 9 November 2026 (machine-readable)",
+          "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-09/title-21.xml?part=312"
+        },
+        {
+          "label": "NCI: research, routine-care and practical costs of a trial",
+          "url": "https://www.cancer.gov/research/participate/clinical-trials/paying"
+        }
+      ],
+      "tags": [
+        "law",
+        "us"
+      ],
+      "related": [
+        "right-to-try",
+        "abigail-alliance",
+        "clinical-trial",
+        "france-early-access",
+        "eu-regulation-726-2004",
+        "21st-century-cures-act",
+        "accelerated-approval",
+        "off-label",
+        "investigational-new-drug-application",
+        "trial-search-site-verification",
+        "investigator-initiated-trials"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "fda-oce",
+        "ema"
+      ],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [
+        "b-trial-enrolment",
+        "b-global-access"
+      ],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+        "Emergency individual-patient use can receive prior FDA authorisation by telephone or other rapid communication, allowing use to begin before the written expanded-access submission. That submission is due within 15 working days of FDA authorisation. When there is insufficient time for prospective institutional review board (IRB) review, report the emergency use to the IRB within 5 working days of starting treatment. Subsequent use at the same institution normally requires prior IRB review. FDA's April 2026 guidance also describes discretion for a subsequent emergency request when prior review is infeasible, with the same 5-working-day reporting requirement. This is not continuing permission or a promised treatment date.",
+        "A licensed physician acting as sponsor-investigator can use Form FDA 3926 for an individual-patient expanded-access IND in a non-emergency or emergency setting. Forms FDA 1571 and 1572 remain an alternative. FDA also lists eRequest for non-emergency individual-patient requests. The streamlined form is not a marketing application, a form for group requests or the device-access process.",
+        "When an application references another sponsor’s IND, a letter of authorization permits FDA to reference specified product information. That permission does not itself authorize treatment or guarantee drug supply. If such a letter is unavailable, the FDA review division can advise which other information may satisfy the applicable requirements.",
+        "For an unapproved investigational drug supplied under an IND, the IND sponsor needs separate prior written FDA authorization to charge for the drug. Recoverable costs and other conditions differ between clinical trials and expanded access. Treatment authorization does not itself authorize charging, and permission to recover drug costs does not decide insurer payment or the total cost of clinical care.",
+        "A reported FDA authorization rate needs its stated submitted-request denominator, period and request categories. It does not measure the fraction of everyone seeking the drug who obtains manufacturer supply, meets every requirement or actually receives treatment. An application authorization is not a personal probability of access or benefit.",
+        "For individual-patient expanded access, authorised drug-cost recovery is limited to direct costs attributable specifically to supplying the drug for that authorised investigational use. Examples include per-unit manufacture or acquisition, shipping and storage. Commercial-scale facilities and equipment, and research, administrative or labour expenses that would occur anyway, are indirect costs excluded by 21 CFR 312.8(d)(1). This concerns the sponsor's authorised drug charge, not every bill for clinical care.",
+        "For intermediate-size populations and treatment INDs or protocols under 21 CFR 312.315 and 312.320, the regulation additionally permits specified monitoring, IND reporting and directly associated administrative costs. Those additional categories do not apply automatically to an individual-patient arrangement. FDA authorisation of the treatment and prior written permission to charge remain separate.",
+        "FDA's request-forms page reports that, on average, 99% of expanded-access requests may proceed. That is the page's submitted-request statement, without a period specified there, not the fraction of everyone seeking a drug who receives it or benefits. Manufacturer agreement is an independent supply gate, and Project Facilitate is an FDA oncology point of contact that helps clinicians navigate requests. The reported FDA fraction does not measure how often supply is the limiting step or rank the obstacles in a particular plan.",
+        "The charging calculation required by 21 CFR 312.8(d)(3) must have supporting documentation and a statement that an independent certified public accountant reviewed and approved it. Expanded-access permission to charge normally lasts one year from FDA authorisation, or less if FDA specifies; the sponsor can request reauthorisation. FDA must withdraw permission if charging interferes with development or its authorisation criteria cease to be met. A two-year-old letter therefore needs a current reauthorisation check. These rules concern the investigational drug charge, not a promise of free clinical care.",
+        "Build a readiness record around the actual product, formulation, dose, route and schedule, its clinical rationale and alternatives, and the supporting quality, exposure and safety information. Name the sponsor and treating clinician, supplier and receiving or storage team, administering service, urgent-care destination, and people responsible for response assessment, toxicity management and reporting. Record the applicable submissions, review and consent, usable supply, costs, dependencies and possible stop conditions. Mark each answer confirmed, proposed or unknown with its responsible person and date; a checklist does not determine a patient's status. The treating team must assess suitability before administration; a laboratory result supplies neither eligibility nor a safe regimen. This checklist concerns U.S. drugs and biologics; device access, other countries and institutional rules can differ.",
+        "In a fictional request, a supplier says manufacture could finish next week while institutional review, the treatment plan and monitoring remain unresolved. That is a manufacturing estimate, not a treatment date. Similarly, FDA permission without a service able to administer and monitor the product leaves a delivery gate open. Ask which milestones are complete and which depend on others. A fictional new non-emergency individual-patient IND with supplier agreement, the necessary product information, applicable IRB review and consent can proceed when effective, ordinarily 30 days after FDA receipt or earlier FDA notice, provided it is not on hold. Supplier review, manufacture, FDA review, institutional review, shipping and scheduling each need their own estimate and dependencies.",
+        "For non-emergency individual-patient use, a physician using Form FDA 3926 may request the permitted institutional review board (IRB) chairperson or designated-member concurrence procedure instead of review at a convened full-board meeting. Concurrence must precede treatment under that procedure. It is not a waiver of informed consent: obtain the applicable written consent on an IRB-approved form. The supplier's letter of authorisation lets FDA reference specified information and does not replace these steps or FDA permission to proceed."
+      ],
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "emt",
+      "kind": "pathway",
+      "name": "Epithelial-mesenchymal transition & drug efflux",
+      "aka": [],
+      "tldr": "Epithelial cells can change a coordinated set of properties, sometimes entering intermediate states. The consequences depend on the cells and the experimental or clinical context.",
+      "summary": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32300252/"
+        },
+        {
+          "label": "Identification of the tumour transition states occurring during EMT.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29670281/"
+        },
+        {
+          "label": "Epithelial-to-mesenchymal transition is not required for lung metastasis but contributes to chemoresistance.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26560033/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "theories-of-cancer",
+        "cancer-stem-cell-theory",
+        "cell-lineage-and-state",
+        "epithelium-and-stroma",
+        "cell-composition-confound"
+      ],
+      "cancers": [
+        "tnbc",
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "radioligand-therapy",
+        "single-cell-spatial"
+      ],
+      "targets": [
+        "trop2"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "efflux-pump",
+        "resistance"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-lamouille-emt-molecular-mechanisms-nrmcb-2014"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment."
+      ],
+      "analogy": "A brick in a wall (epithelial cell) turning into a nomad: it lets go of its neighbours, packs pumps to spit out poison, and puts on camouflage. The wall-brick was easy to hit; the nomad is not.",
+      "nodes": [
+        {
+          "id": "tgf",
+          "label": "TGF-β, Wnt, Notch, hypoxia",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "tf",
+          "label": "ZEB1/2, SNAIL, TWIST",
+          "x": 50,
+          "y": 25
+        },
+        {
+          "id": "ecad",
+          "label": "E-cadherin, claudins",
+          "x": 20,
+          "y": 48
+        },
+        {
+          "id": "vim",
+          "label": "Vimentin, N-cadherin, MMPs",
+          "x": 80,
+          "y": 48
+        },
+        {
+          "id": "abc",
+          "label": "ABCB1 / ABCG2 efflux",
+          "x": 20,
+          "y": 72
+        },
+        {
+          "id": "stem",
+          "label": "Stemness, apoptosis resistance",
+          "x": 50,
+          "y": 72
+        },
+        {
+          "id": "imm",
+          "label": "Immune exclusion",
+          "x": 80,
+          "y": 72
+        },
+        {
+          "id": "out",
+          "label": "Invasion, metastasis, drug resistance",
+          "x": 50,
+          "y": 95
+        }
+      ],
+      "edges": [
+        {
+          "from": "tgf",
+          "to": "tf",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "ecad",
+          "type": "inhibits"
+        },
+        {
+          "from": "tf",
+          "to": "vim",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "abc",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "stem",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "imm",
+          "type": "activates"
+        },
+        {
+          "from": "vim",
+          "to": "out",
+          "type": "activates"
+        },
+        {
+          "from": "abc",
+          "to": "out",
+          "type": "activates"
+        },
+        {
+          "from": "stem",
+          "to": "out",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "No approved direct EMT inhibitor",
+        "Payloads with low efflux susceptibility (sac-TMT's belotecan derivative claims this) and radiation (efflux-independent)",
+        "TGF-β pathway blockade (mostly failed so far)",
+        "Ferroptosis inducers for mesenchymal-state cells (preclinical)",
+        "Immune approaches to overcome exclusion (STING, radiation)"
+      ]
+    },
+    {
+      "id": "cell-cycle",
+      "kind": "term",
+      "name": "Cell cycle",
+      "aka": [
+        "cell-cycle",
+        "cell cycle arrest",
+        "cell-cycle arrest",
+        "G1 phase",
+        "S phase",
+        "G2 phase",
+        "M phase",
+        "mitosis",
+        "mitotic"
+      ],
+      "tldr": "Cells preparing to divide pass through regulated stages for growth, DNA copying and chromosome separation. Some cells remain functional while outside that cycle.",
+      "summary": "G1 prepares the cell, S copies DNA, and G2 precedes the mitotic phase. Mitosis separates nuclear chromosomes; cytokinesis separates cytoplasm into daughter cells. G0 describes a noncycling state, which need not mean death or loss of function. Cyclins, CDKs and checkpoints regulate transitions, and their alteration can contribute to cancer without making every checkpoint absent or guaranteeing error-free division. Cell-cycle checkpoints and immune checkpoints describe different biological processes.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_cycle",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_cycle"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-2-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-3-control-of-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle"
+        },
+        {
+          "label": "Assaying Cell Cycle Status Using Flow Cytometry.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26131851/"
+        },
+        {
+          "label": "Doublet discrimination in DNA cell-cycle analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11746105/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-division",
+        "proliferation",
+        "tumour-suppressor-gene",
+        "kinase",
+        "chemotherapy-term",
+        "cell-lineage-and-state"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cdk46-inhibitor"
+      ],
+      "targets": [
+        "cdk4-6",
+        "tp53",
+        "wee1"
+      ],
+      "drugs": [
+        "palbociclib",
+        "ribociclib",
+        "abemaciclib",
+        "paclitaxel"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "p53-cell-cycle"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "DNA-content measurements commonly group G0/G1 and G2/M because each pair shares a DNA-content range. Appropriate additional markers and doublet discrimination are needed: two cells can resemble one cell with more DNA.",
+        "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle.",
+        "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "epithelium-and-stroma",
+      "kind": "term",
+      "name": "Epithelium, stroma and tissue compartments",
+      "aka": [
+        "epithelial tissue",
+        "tissue compartments",
+        "stromal compartment",
+        "basement membrane"
+      ],
+      "tldr": "Tissue contains different cell groups and supporting material. Knowing which compartment produced a signal helps explain what the result can mean.",
+      "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "NCI SEER: epithelial organization and basement membrane",
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"
+        },
+        {
+          "label": "A spatially resolved single-cell genomic atlas of the adult human breast.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37380767/"
+        },
+        {
+          "label": "A single-cell and spatially resolved atlas of human breast cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34493872/"
+        },
+        {
+          "label": "NCI SEER: Summary Stage 2018 manual v3.4, October 2026, in-situ and localized boundaries",
+          "url": "https://seer.cancer.gov/tools/ssm/Summary-Stage_v3.4.pdf"
+        },
+        {
+          "label": "A spatially resolved single-cell genomic atlas of the adult human breast (Nature 2023)",
+          "url": "https://doi.org/10.1038/s41586-023-06252-9"
+        },
+        {
+          "label": "NCI Dictionary: stroma",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/stroma"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-membrane",
+        "carcinoma",
+        "cell-composition-confound",
+        "tumor-microenvironment"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+        "An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer.",
+        "In a fictional comparison, gene R is high in cancer cells, low in fibroblasts and similarly high in normal luminal epithelial cells. The first contrast supports higher expression than fibroblasts, even if it passes a statistical threshold; it does not establish cancer selectivity. The normal epithelial comparison addresses that claim more closely, while leaving other organs, cell states and target accessibility untested. If that reference group is tiny, contaminated or prepared differently, preserve the unresolved comparison rather than declaring selectivity or exact equality. Normal epithelial cells can also contribute familiar lineage markers to a tumour specimen. An image-based tumour mask is an assignment that needs validation for its actual method and specimens, rather than automatic proof that every included cell is malignant."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cell-division",
+      "kind": "term",
+      "name": "Cell division",
+      "aka": [
+        "cell divisions",
+        "divide",
+        "dividing",
+        "divides",
+        "dividing cells",
+        "rapidly dividing",
+        "fast-dividing",
+        "replicating",
+        "cell replication"
+      ],
+      "tldr": "Cell division produces daughter cells for growth and renewal. Chemotherapy can disrupt this process and can also affect cells through mechanisms beyond division.",
+      "summary": "DNA copying, chromosome segregation and cytokinesis are distinct steps; errors or unequal allocation can make daughters differ. Many cytotoxic drugs affect DNA or microtubules, with drug-specific dependence on cell-cycle state. Normal renewing tissues can also be affected. Division history cannot be read directly from a mutation count: damage, repair, selection and other processes contribute. Ki-67 staining and a mitotic count describe particular sampled properties, not a universal rate of cell production.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_division",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_division"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-2-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+        },
+        {
+          "label": "NCI: chemotherapy mechanisms and healthy-cell effects",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+        },
+        {
+          "label": "Neurotoxic mechanisms of paclitaxel are local to the distal axon and independent of transport defects.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27894788/"
+        },
+        {
+          "label": "Assaying Cell Cycle Status Using Flow Cytometry.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26131851/"
+        },
+        {
+          "label": "Franken and colleagues: clonogenic reproductive survival in vitro",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17406473/"
+        },
+        {
+          "label": "Brix and colleagues: model and format limits of clonogenic assays",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34697469/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-cycle",
+        "proliferation",
+        "mutation",
+        "tumour-grade",
+        "chemotherapy-term",
+        "cell-lineage-and-state"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cytotoxic-chemotherapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+        "Side effects are not a test of whether chemotherapy is controlling a tumor. NCI explicitly separates those observations; clinical assessment needs the appropriate examination, imaging or other response evaluation. A proliferation-marker fraction also does not by itself measure treatment benefit.",
+        "A lower cell count at one time can reflect slower division, cell loss or both; surviving cells may later resume growth. Colony-formation assays assess whether individual cells can produce descendants under the chosen culture conditions over a longer observation period. The result depends on the model and assay format. Neither a short growth assay nor colony formation alone establishes durable tumor control in a person.",
+        "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "cell-lineage-and-state",
+      "kind": "term",
+      "name": "Cell lineage, identity and state",
+      "aka": [
+        "cell lineage",
+        "cell state",
+        "lineage tracing",
+        "cell ancestry"
+      ],
+      "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
+      "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Lineage tracing on transcriptional landscapes links state to fate during differentiation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31974159/"
+        },
+        {
+          "label": "NIGMS: stem cells and differentiation",
+          "url": "https://www.nigms.nih.gov/biobeat/2024/11/what-are-stem-cells"
+        },
+        {
+          "label": "Aberrant luminal progenitors as the candidate target population for basal tumor development in BRCA1 mutation carriers (Nature medicine 2009)",
+          "url": "https://doi.org/10.1038/nm.2000"
+        },
+        {
+          "label": "Molecular characterization of basal-like and non-basal-like triple-negative breast cancer (The oncologist 2013)",
+          "url": "https://doi.org/10.1634/theoncologist.2012-0397"
+        },
+        {
+          "label": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma (Science (New York, N.Y.) 2014)",
+          "url": "https://doi.org/10.1126/science.1254257"
+        },
+        {
+          "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+          "url": "https://doi.org/10.1093/gigascience/giaa151"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition (Nature reviews. Molecular cell biology 2020)",
+          "url": "https://doi.org/10.1038/s41580-020-0237-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "differentiation",
+        "clonal-evolution",
+        "cell-cycle"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+        "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
+      ],
+      "category": "Clinic basics"
+    }
+  ]
+}

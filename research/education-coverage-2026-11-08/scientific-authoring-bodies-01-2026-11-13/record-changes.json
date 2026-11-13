@@ -1,0 +1,110 @@
+{
+  "baseCommit": "65912c5ab414e5e2571c50b0ff8dd542648c47e1",
+  "scope": "Four appended self-contained teaching notes and three owner-specific dates; all older notes, links, ids, names, aliases and relations retained.",
+  "changes": [
+    {
+      "file": "src/data/terms-basics.ts",
+      "recordId": "cell-cycle",
+      "field": "notes",
+      "before": [
+        "DNA-content measurements commonly group G0/G1 and G2/M because each pair shares a DNA-content range. Appropriate additional markers and doublet discrimination are needed: two cells can resemble one cell with more DNA.",
+        "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle."
+      ],
+      "after": [
+        "DNA-content measurements commonly group G0/G1 and G2/M because each pair shares a DNA-content range. Appropriate additional markers and doublet discrimination are needed: two cells can resemble one cell with more DNA.",
+        "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle.",
+        "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations."
+      ],
+      "beforeSha256": "09f3984e77369966b1c7fa5c6510946da7991a04cdb5de72739ae6e6a6e5d4e9",
+      "afterSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+      "appendedIndex": 2,
+      "appendedPassageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+    },
+    {
+      "file": "src/data/terms-basics.ts",
+      "recordId": "cell-cycle",
+      "field": "asOf",
+      "before": "2026-11-08",
+      "after": "2026-11-13",
+      "beforeSha256": "3742c520e4b076b8f25c29fb2fb474ac56259e2077648042554c29b1b94855ce",
+      "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+    },
+    {
+      "file": "src/data/terms-basics.ts",
+      "recordId": "cell-division",
+      "field": "notes",
+      "before": [
+        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+        "Side effects are not a test of whether chemotherapy is controlling a tumor. NCI explicitly separates those observations; clinical assessment needs the appropriate examination, imaging or other response evaluation. A proliferation-marker fraction also does not by itself measure treatment benefit.",
+        "A lower cell count at one time can reflect slower division, cell loss or both; surviving cells may later resume growth. Colony-formation assays assess whether individual cells can produce descendants under the chosen culture conditions over a longer observation period. The result depends on the model and assay format. Neither a short growth assay nor colony formation alone establishes durable tumor control in a person."
+      ],
+      "after": [
+        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+        "Side effects are not a test of whether chemotherapy is controlling a tumor. NCI explicitly separates those observations; clinical assessment needs the appropriate examination, imaging or other response evaluation. A proliferation-marker fraction also does not by itself measure treatment benefit.",
+        "A lower cell count at one time can reflect slower division, cell loss or both; surviving cells may later resume growth. Colony-formation assays assess whether individual cells can produce descendants under the chosen culture conditions over a longer observation period. The result depends on the model and assay format. Neither a short growth assay nor colony formation alone establishes durable tumor control in a person.",
+        "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate."
+      ],
+      "beforeSha256": "aee53d4bee20a1cf7da95b690d6b99e322b7607758c6f3f8335d71e7c81b7775",
+      "afterSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+      "appendedIndex": 3,
+      "appendedPassageSha256": "bdf38a10f9763aab08f800bfed72f9bd9396348a5c79d745c806d10dd7c73802"
+    },
+    {
+      "file": "src/data/terms-basics.ts",
+      "recordId": "cell-division",
+      "field": "asOf",
+      "before": "2026-11-09",
+      "after": "2026-11-13",
+      "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+      "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+    },
+    {
+      "file": "src/data/education-biology-evidence.ts",
+      "recordId": "cell-lineage-and-state",
+      "field": "notes",
+      "before": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain."
+      ],
+      "after": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+        "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
+      ],
+      "beforeSha256": "58f863464f21e2bd1a19b17af228adb2cc87217bb0b6701a50f40232f21837ac",
+      "afterSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+      "appendedIndex": 3,
+      "appendedPassageSha256": "54ca7766f0aebb14fce395ead21406abd03f77dec41d99daf2b157c6d833ecd3"
+    },
+    {
+      "file": "src/data/education-biology-evidence.ts",
+      "recordId": "central-dogma-information-flow",
+      "field": "notes",
+      "before": [
+        "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect."
+      ],
+      "after": [
+        "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
+        "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface."
+      ],
+      "beforeSha256": "db827ca0d40e0ef51848379755938742d97aace89d470af2d86dd1cf392ccf49",
+      "afterSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+      "appendedIndex": 1,
+      "appendedPassageSha256": "747a645b74825cd467ed2d541ff59a6917a5ecf3754e093748f4faec813aabaa"
+    },
+    {
+      "file": "src/data/education-biology-evidence.ts",
+      "recordId": "central-dogma-information-flow",
+      "field": "asOf",
+      "before": "2026-11-08",
+      "after": "2026-11-13",
+      "beforeSha256": "3742c520e4b076b8f25c29fb2fb474ac56259e2077648042554c29b1b94855ce",
+      "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+    }
+  ],
+  "newIds": 0,
+  "newRegistrations": 0,
+  "newRelations": 0
+}

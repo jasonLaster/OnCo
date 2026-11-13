@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [scientific authoring-body assessment](scientific-authoring-bodies-01-2026-11-13/README.md) reads twenty complete bodies (39,053 unique bytes) and verifies forty pinned entries. All contain scientific construction text or guardrails and remain teaching-bearing, including the palette/edit calls and provenance-labelled bodies. The source-first inventory retains 51 distinct requirements in 75 body associations; these are not independent experiments or added across pins. Four existing owners gain self-contained notes on molecular compartments, conditional G0 return and relative DNA, endpoint-count arithmetic, and clone versus activity state. No id, registration, alias, relation, short summary or artwork is added. Eight complete abstracts, 37 selected official/textbook paragraphs and two FDA-guidance ranges retain actual reading depth. Fifty exact anchors, 23 actual readers, static exports and full gates pass: 293 files, 3,101 tests, 2 skips. All final committed data bytes match the final gate inputs. Forty asset entries are assessed, 134 prior proof hashes are rebound without changed older excerpts or grades, and every earlier cohort and pending file remains intact. Source-open lesson clauses, other assets, 49 adjacent groups and six schema findings keep the goal active; main/live and independent approval remain zero.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 515 | 6,806 / 6,827 | 21 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 527 | 7,278 / 7,302 | 24 |
+
+Original assets: 589 teaching, 71 support, 1,228 unclassified. Later assets: 588 teaching, 71 support, 1,229 unclassified. Each pin retains 1,888 assets. The graph remains at 23,091 records; the 697 selected canonical ids and unchanged language/atlas observations remain separate from authorship and approval. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical autophagy checkpoint
+
 The [autophagy atlas follow-up](autophagy-atlas-2026-11-13/README.md) replaces the blanket KRAS-dependence and antigen-display wording with a named pancreatic-model finding, corrects the chapter’s dependence framing and the linked record’s analogy, and appends one scoped Yamamoto paragraph. One existing owner changes in two fields, alongside two atlas descriptions; all eleven prior notes, every id, relation, title and stage order remain intact. One complete abstract and eleven complete selected body paragraphs were read; no whole-paper or new figure review is claimed. Seven actual readers, thirteen text checks, four metadata descriptions, two exact JSON exports and seventeen Markdown passages pass, with full gates (293 files, 3,101 tests, 2 skips). The adjacent follow-up is resolved in draft, leaving 49 of 74 adjacent groups open. Source lesson counts and open clauses are unchanged; 260 active notes-array proofs are rebound without changed excerpts or grades. Both source-ledger replays retain exit 2 for unfinished work and zero stale or missing proofs. Main/live and independent acceptance remain zero.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

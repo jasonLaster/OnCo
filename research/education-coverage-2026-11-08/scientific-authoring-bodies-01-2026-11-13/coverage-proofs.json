@@ -1,0 +1,1843 @@
+{
+  "version": "proposal-support-bodies-01-root",
+  "uniqueRequirements": 51,
+  "bodyRequirementInstances": 75,
+  "versionEntries": 40,
+  "sourceInventorySha256": "0b73f1271c525e4909a1006887dd189470b7588df169500c2935a6753e0802f4",
+  "scope": "All scientific body claims mapped before integration. Source-art instructions and custody assertions retain explicit noncredit boundaries; no unseen image compliance, independent or main/live acceptance is inferred.",
+  "proofs": [
+    {
+      "id": "cyto-binding",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Cytokines act outside the cell through membrane receptors; the cartoon does not show a cytokine entering DNA.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cytokine-summary-selected-3ea1498d7c",
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor",
+          "passageSha256": "3ea1498d7ca262676a3f9939e4ee621a0241b258c358776df5c1f89139b41b94"
+        },
+        {
+          "id": "synthetic-cytokine-receptors-summary",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+          "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+          "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The diagram selects an extracellular cytokine/cell-surface-receptor route, not every possible cytokine function or a molecule entering DNA. The cited fields support matching receptors and intracellular signalling; the picture is not a measured molecular trajectory.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-relay",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Receptor activation can initiate an intracellular relay and alter gene activity.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "jak-stat-notes-1",
+          "recordId": "jak-stat",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+          "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+          "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-engineered",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "A generic drug-responsive engineered receptor can select signalling responses; the cartoon is not a proprietary receptor structure.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "synthetic-cytokine-receptors-summary",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+          "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+          "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa"
+        },
+        {
+          "id": "synthetic-cytokine-receptors-notes-4",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "For a drug-gated construct, withdrawing the input can reduce a selected signal without eliminating cells already engineered. Receptor signalling, viable-cell counts, tissue location, target-cell killing and later disease control need distinct measurements. A growth or activity switch is different from a cell-elimination mechanism.",
+          "passageSha256": "7fe71c3ce17e42570b16641ac22e4807bb9cb5db62497047493662db0646b630"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The source uses a generic drug input. Neither its external placement nor a schematic receptor establishes the binding compartment or molecular architecture of a named construct. The canonical fields retain the specified-input, measured-response and product-specific limits.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-separate",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "CAR target recognition and an added cytokine-receptor signalling role are distinct functions of different receptor proteins.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "synthetic-cytokine-receptors-notes-1",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.",
+          "passageSha256": "e85b75128efb8b28c8a85fb60c74e3461cafdbada017fec05966e46d54c9e8db"
+        },
+        {
+          "id": "synthetic-cytokine-receptors-notes-7",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+          "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cyto-limits",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "More signalling does not guarantee expansion, useful function or cancer clearance.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cytokine-summary-selected-b14c07ac73",
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "a growth-support signal such as IL-2 does not choose the antigen a T cell recognises, and more signal is not automatically more useful or safer immunity.",
+          "passageSha256": "b14c07ac737fafff1e49f99d620df3c11610ddc1fa19317e367ac5f62ac80094"
+        },
+        {
+          "id": "synthetic-cytokine-receptors-notes-6",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "In a fictional comparison with equal starting viable-cell input and the same CAR, a supplied trigger produces 250 viable cells at 48 hours versus 100 without it. That is 2.5 times the viable-cell count, not 2.5 times the treatment benefit. Tumour killing changes from 20 to 25 per cent, while a separate healthy-cell assay changes from two to 18 per cent injury. Count division, survival and loss separately, retain each assay’s target-cell denominator and uncertainty, and do not combine these results into a whole-body safety window.",
+          "passageSha256": "0e07fa6d20bf365d5a0be9c1ced30ae5ba51e527e31d5764999e5ac2f8c3f593"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "instructions",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "DNA, mRNA and receptor proteins are different objects; transcription and translation are separate steps.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow-summary",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "a758407a62f025879aa7dbf4f2b2c0218995cfc7cc0c4c1789caa859576c5b6d",
+          "supportingExcerpt": "Replication makes DNA from DNA. Transcription uses a DNA template to make RNA. Translation reads the coding sequence of a message in three-base codons to build a polypeptide; the transcript and reading frame matter. Functional noncoding RNAs do not need to become protein. Reverse transcription copies RNA into DNA in relevant viral and retrotransposon contexts. This information-flow map is not a guarantee that every DNA change produces a measured RNA or protein change.",
+          "passageSha256": "80e07847d64567fa0053da9ec657f7a84f14199b9357fe89c1114a46400ca1a1"
+        },
+        {
+          "id": "car-t-notes-7",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+          "passageSha256": "a187d46312e114cc899cecc978235b426af437b6df035234a7305bd9452a241e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "mrna-location",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "Delivered mRNA is translated in the cytoplasm and need not enter or integrate into genomic DNA.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow-notes-1",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+          "supportingExcerpt": "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+          "passageSha256": "747a645b74825cd467ed2d541ff59a6917a5ecf3754e093748f4faec813aabaa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The delivered message can be translated without requiring nuclear entry or genomic integration. The new canonical note explicitly prevents interpreting an empty nuclear symbol as removal or absence of the existing nuclear DNA. The source call is a schematic instruction, not a measurement of the delivered cells.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "dna-expression",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "The depicted DNA route transcribes in the nucleus, exports mRNA and translates it outside the nucleus.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow-notes-1",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+          "supportingExcerpt": "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+          "passageSha256": "747a645b74825cd467ed2d541ff59a6917a5ecf3754e093748f4faec813aabaa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "car-membrane",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "A CAR is a membrane-spanning protein, with an external antigen-binding region and an intracellular signalling region; the living cell is a different object.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-summary-selected-0ff5282f46",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+          "supportingExcerpt": "A common antibody-derived CAR joins an external binding region, a hinge or spacer, a membrane anchor and intracellular signaling domains. The receptor is a protein; its encoding instructions and the living cell carrying it are different objects. Approved products and experimental constructs differ in cell source, receptor, manufacturing and clinical setting. Product labels and trial records define their actual uses; a platform name does not establish eligibility or benefit.",
+          "passageSha256": "0ff5282f46012aa274465cf9e7280840aac8a932301be557c580c8a1dfd4f38a"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "car-recognition",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "CAR recognition of surface antigen can trigger a T-cell response, without guaranteeing target killing.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-notes-2",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "Binding, surface CAR expression, activation, proliferation and completed target-cell killing are distinct readouts. Compare otherwise matched constructs, target-positive and target-negative cells, healthy-tissue targets and unstimulated activity. Hudecek found that particular IgG-derived spacers could support killing in a dish yet impair activity in mouse models through Fc interactions.",
+          "passageSha256": "caa3efd1692f2520f2f601c490a3a3a14f1b3d35c6b7d8aaac373ece7b6190e4"
+        },
+        {
+          "id": "car-t-notes-7",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+          "passageSha256": "a187d46312e114cc899cecc978235b426af437b6df035234a7305bd9452a241e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "protein-location",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "A newly made protein and the finished surface receptor are separate stages; a diagram connector is not a continuous protein cable.",
+      "claimType": "biosynthesis-and-schematic-boundary",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-notes-7",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+          "passageSha256": "a187d46312e114cc899cecc978235b426af437b6df035234a7305bd9452a241e"
+        },
+        {
+          "id": "central-dogma-information-flow-notes-1",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+          "supportingExcerpt": "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+          "passageSha256": "747a645b74825cd467ed2d541ff59a6917a5ecf3754e093748f4faec813aabaa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The actual CAR and information-flow notes distinguish translation, folding and membrane trafficking. A dashed connector or empty gap is a source-art convention, not a measured transport path or imported OnCo figure.",
+        "sourceScope": {
+          "official": "OpenStax Biology2e16.1, complete selected paragraph13 and related processing context; pre-existing CAR evidence retained.",
+          "depth": "Selected textbook passage, not a whole chapter or primary experiment."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cargo-scope",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "RNA, DNA and an unspecified carrier cargo are not interchangeable labels; no integration or clinical effect is inferred from the schematic.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "in-vivo-car-t-notes-10",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+          "supportingExcerpt": "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "passageSha256": "8cb937735c31cb6844c950c8bd5f7d16dcf27ccb7358b2ac94b6ea134d7956c2"
+        },
+        {
+          "id": "central-dogma-information-flow-notes-1",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+          "supportingExcerpt": "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+          "passageSha256": "747a645b74825cd467ed2d541ff59a6917a5ecf3754e093748f4faec813aabaa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The specific payload type must be named. The source’s neutral carrier symbol is intentionally unspecified; these fields do not assign it RNA, DNA or a proprietary architecture.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-entry",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Reaching and entering tumour tissue is a separate barrier from antigen recognition.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cellular-kinetics-and-persistence-notes-7",
+          "recordId": "cellular-kinetics-and-persistence",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+          "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+          "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-antigen",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Tumour cells may differ in target expression; adding T cells does not replace a missing target.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-notes-10",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "In a fictional population of 100 cancer cells, 80 display target X and 20 do not. Killing the X-positive 80 leaves 20 survivors; ten times as many effector cells does not create X on them. For two targets, suppose 20 cells carry both X and Y, 60 carry X only, ten Y only and ten neither. An idealised either-target rule covers 90 cells, whereas a both-target rule covers 20. These are recognition-coverage calculations, not measured killing or healthy-tissue selectivity. Expression thresholds, tissue access and cell function still matter.",
+          "passageSha256": "69cb78da809b4c713d6e790703f8a651d046aab42bc10b3adbc7ab59ece585dd"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-function",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Suppressive signals and limited nutrients can restrict activity; persistence alone does not establish function.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cellular-kinetics-and-persistence-notes-7",
+          "recordId": "cellular-kinetics-and-persistence",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "a1806cb6f4610a2a2b88976ba2a62329b0da94256fd8fbf2d98fcffa3c08ef2e",
+          "supportingExcerpt": "A rise in engineered cells in blood with few found in two tumour biopsies leaves distribution and infiltration unresolved. Blood abundance is not entry into a mass of tissue, and a biopsy represents its sampled place and time. If a receptor works in a simple culture but killing falls in a more complex model with the target still present, investigate access, cell state and the model’s other features with controlled perturbations. The contrast alone does not identify a macrophage, vessel or signalling pathway as the cause, or show that more expansion will solve it. Expression of PD-1, LAG-3, TIM-3 or TIGIT, or a count of macrophages or suppressor cells, does not by itself establish which input caused the functional difference. Trafficking toward a site and infiltration into tissue are different steps, and vessel number does not measure perfusion. Chronic stimulation, low oxygen, limited nutrients and inhibitory signals are different hypotheses; exhaustion describes cell states rather than physical tiredness.",
+          "passageSha256": "65c607130fdd38ec4e5a4539376e86804a086fbe584b7747e6c61e68e06d3dc7"
+        },
+        {
+          "id": "t-cell-exhaustion-term-summary-selected-fc23ab5778",
+          "recordId": "t-cell-exhaustion-term",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "f113a51fccd27800c0bc8bc774235f93138f3b46624d87cec4cf11d027a2a3e9",
+          "supportingExcerpt": "For CAR-T, distinguish the infused preparation, expansion, later detection in blood, viable functional cells at relevant sites and disease control. A 24-patient axi-cel infusion-product study associated memory/exhaustion-related transcriptional features with outcomes; an association in that cohort does not prove that one modification will correct every failure. A detectable transgene is not itself a functional killing assay.",
+          "passageSha256": "fc23ab5778c7313772a5cd4551f6bcdea06d9f22a4894f30b95837432dddfa47"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "solid-safety",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Shared antigen on healthy tissue creates a separate on-target safety question; the conceptual journey is not patient-outcome evidence.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "on-target-off-tumour-toxicity-tldr",
+          "recordId": "on-target-off-tumour-toxicity",
+          "version": "proposal-support-bodies-01-root",
+          "field": "tldr",
+          "fieldSha256": "40c98ec07db443d3f664d2c0da7a5ebd6173c411f49c3c6600bfb932a5ab5ad2",
+          "supportingExcerpt": "On-target, off-tumour toxicity is harm to healthy tissue that carries the same target a treatment was built to recognise, so accurate recognition injures the tissue as well as the cancer.",
+          "passageSha256": "69ba9f21d1832ff9e081df700fef3d98c8812a9f36c0e2990c803f6b4860f23d"
+        },
+        {
+          "id": "on-target-off-tumour-toxicity-notes-0",
+          "recordId": "on-target-off-tumour-toxicity",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "1545ae97a74127c9526d52ce6281aed4f19c6ecc7263db7158b8cfc1d29ee8b4",
+          "supportingExcerpt": "A fictional receptor kills X-positive tumour cells and normal airway cells that also display X: that is the on-target, off-tumour problem. If it also recognises Y on an X-negative healthy cell, that is off-target cross-reactivity. Binding or surface contact does not itself measure injury. Record tissue, assay sensitivity, staining intensity, positive fraction or calibrated molecules per cell, binding specificity, and healthy-cell killing or cytokine release at a named time; viable-cell tests consume the sample. Clinical organ injury is a further outcome in the actual population and regimen. A staining ratio, one negative panel or a control switch does not establish safety everywhere or guarantee reversal of an injury already present.",
+          "passageSha256": "500716eba420eb3818af69fb9e32e45cd3bae96e0797905e3d217d65a7a8da3b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-exvivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Ex vivo engineering collects cells, engineers and tests them outside the body, then returns the cells.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-summary-selected-cd293ac6d6",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+          "supportingExcerpt": "CAR-T cell therapy uses T cells carrying a chimeric antigen receptor to recognize a target. FDA-approved products include CD19- and BCMA-directed CAR-T cells for selected blood cancers, including B-cell leukemias, lymphomas and multiple myeloma. The individual product label defines the treatment setting and eligibility. A common autologous approach collects a person’s T cells, engineers and expands them outside the body, then infuses them back; conditioning and follow-up depend on the protocol.",
+          "passageSha256": "cd293ac6d6b0a37d7e35fab4a09f2f3389124fc761418c6f365603f9bb2290e8"
+        },
+        {
+          "id": "in-vivo-car-t-notes-5",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+          "supportingExcerpt": "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The same-person scene is a common autologous example, not a definition excluding donor-derived ex vivo products. The canonical fields preserve source and engineering-location distinctions.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-invivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "In vivo engineering delivers a carrier to cells in the body, without an ex vivo collection step.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "in-vivo-car-t-summary",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "04180aa18c35dd3ff197af27e3bb910f3125163354e5f3a8a0e7fdf1a2e28d13",
+          "supportingExcerpt": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+          "passageSha256": "d39b235a57ab421e82f1aecd6c634b3c0e379308080de6c2268adb723650c938"
+        },
+        {
+          "id": "in-vivo-car-t-notes-5",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+          "supportingExcerpt": "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-targets",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Carrier targeting to the intended cell and CAR recognition of cancer antigen are different targeting jobs.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "in-vivo-car-t-summary",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "04180aa18c35dd3ff197af27e3bb910f3125163354e5f3a8a0e7fdf1a2e28d13",
+          "supportingExcerpt": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+          "passageSha256": "d39b235a57ab421e82f1aecd6c634b3c0e379308080de6c2268adb723650c938"
+        },
+        {
+          "id": "in-vivo-car-t-notes-11",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+          "supportingExcerpt": "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+          "passageSha256": "bd8bffb52c27658ef5c87501e1f2888f28895653c88ac399fa891285b2e5b845"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "engineering-manufacture",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Both depicted routes require manufactured components; delivery does not itself establish treatment success.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "car-t-manufacturing-process-summary",
+          "recordId": "car-t-manufacturing-process",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "9a38021ef20e19cbc245f34cf0ccb4278c21d7b2133b7c44b737fa0e111b2316",
+          "supportingExcerpt": "A defined ex vivo process receives starting material, selects or enriches cells as needed, activates and engineers them, cultures them under controlled conditions, and prepares material for testing, storage and administration. The sequence, vector or other gene-transfer method, culture duration, fresh or frozen handling and assays depend on the product. A collection, manufacturing run, product lot, test sample and administered dose are not interchangeable units. One collection can yield multiple containers or doses; a run need not culminate in an infused treatment.",
+          "passageSha256": "6524fefb7faf5f20255e7fbd724cf9af7f53bc39a6477ea6928fd03b33a2ec54"
+        },
+        {
+          "id": "in-vivo-car-t-notes-10",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+          "supportingExcerpt": "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "passageSha256": "8cb937735c31cb6844c950c8bd5f7d16dcf27ccb7358b2ac94b6ea134d7956c2"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-match",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "An intended diagnostic use binds the assay, specimen, result rule and corresponding treatment/use.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "companion-diagnostic-summary",
+          "recordId": "companion-diagnostic",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "3f80fbafff78e8e7a6aec4b722340b6546da9998437808e2d81c8686df499f1e",
+          "supportingExcerpt": "FDA describes companion diagnostics as devices that supply essential information for a corresponding treatment. Their roles can include identifying likely benefit, increased risk of serious adverse effects or a specified monitoring need. The treatment label and diagnostic labeling retain the relevant disease, specimen, biomarker and decision rule. Some devices have documented group labeling for specified oncology therapies. Similar analyte names do not establish assay interchangeability, and a label-matched result does not guarantee individual benefit or complete clinical suitability.",
+          "passageSha256": "5f9ddabecac4c990e124dd37f28c7a87d524b5a50904acbea813a1c759e8938c"
+        },
+        {
+          "id": "laboratory-certification-test-authorization-notes-2",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report.",
+          "passageSha256": "1e508d754c0e19cd85ef79bcc73c5a40a991e0648afebda3a1f8d7ef8efa6be1"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-samegene",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "A same-gene research result or a different analyte does not substitute for a label-defined companion diagnostic.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "companion-diagnostic-term-summary",
+          "recordId": "companion-diagnostic-term",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "686052d94f5772668dcfe3bb752c4dcd3a68f38ea5dcad52cdd8c6286e3e763a",
+          "supportingExcerpt": "The category concerns a device and a corresponding treatment use. FDA describes roles involving likely benefit, serious-adverse-effect risk or specified treatment monitoring. Check both the treatment and diagnostic labeling, including specimen, disease, biomarker and decision rule. A molecular report listing a drug is not by itself a companion-diagnostic authorization. Similar gene names do not establish assay interchangeability, and a positive result does not promise a response.",
+          "passageSha256": "e3e7f5542f4495d441d68ed511878cd8fd5a70d7bef6df0bb496e74b6ee15498"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "assay-fiction",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "Drug A, gene M and assay T are fictional; no real pair or cutoff is asserted.",
+      "claimType": "fictional-premise",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "laboratory-certification-test-authorization-notes-2",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report.",
+          "passageSha256": "1e508d754c0e19cd85ef79bcc73c5a40a991e0648afebda3a1f8d7ef8efa6be1"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-support",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Fast track, breakthrough designation and priority review concern development/review support; they do not themselves grant approval.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "fast-track-rmat-summary",
+          "recordId": "fast-track-rmat",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "ab3276452f852b03e53367609c95ae8c36b1fb9b60798a5269a20dbd13e865ed",
+          "supportingExcerpt": "Fast Track supports development and review for drugs addressing serious conditions and unmet need. Regenerative Medicine Advanced Therapy designation has its own eligible-product and preliminary-clinical-evidence criteria. Breakthrough Therapy and Priority Review likewise have distinct purposes; review support is not an efficacy result or a guarantee of approval or delivery timing. Accelerated approval, in contrast, is an approval pathway with benefit-confirmation requirements. Read the named program and the actual product decision separately.",
+          "passageSha256": "83011c95bc2c076aac6e08e963c50f3411d5042177f1ebaeebdc53f9bb508a56"
+        },
+        {
+          "id": "accelerated-approval-summary",
+          "recordId": "accelerated-approval",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "21a1df94875c4ca66b299c222caa853544a23f3b0263d3b43be921691c09a8db",
+          "supportingExcerpt": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+          "passageSha256": "f7b5c42b23b3a9230fe430d14773222dec6b9e7ec499c7b439352d6b9d118eb6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-decision",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Approval concerns a specified product and use; traditional and accelerated approval are distinct approval pathways.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "accelerated-approval-summary",
+          "recordId": "accelerated-approval",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "21a1df94875c4ca66b299c222caa853544a23f3b0263d3b43be921691c09a8db",
+          "supportingExcerpt": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+          "passageSha256": "f7b5c42b23b3a9230fe430d14773222dec6b9e7ec499c7b439352d6b9d118eb6"
+        },
+        {
+          "id": "full-approval-summary",
+          "recordId": "full-approval",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "6bb2be64c13051e925805422979c4e6b4f5b8f2c98991434dbb4418dff60ec90",
+          "supportingExcerpt": "FDA distinguishes a validated surrogate that can support traditional approval from a surrogate reasonably likely to predict benefit that can support accelerated approval. Traditional approval does not always require a demonstrated survival increase. Accelerated approval carries requirements to confirm the anticipated clinical benefit and can later be converted or withdrawn through the applicable process. The current indication and evidence matter more than a general approved-drug badge.",
+          "passageSha256": "922629ccbf6cab83d64e4639bb1faeaf05a595e8523e056b9b488ee7f8f2190e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-confirm",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Accelerated approval has benefit-confirmation requirements; the schematic does not certify an actual indication.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "accelerated-approval-summary",
+          "recordId": "accelerated-approval",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "21a1df94875c4ca66b299c222caa853544a23f3b0263d3b43be921691c09a8db",
+          "supportingExcerpt": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+          "passageSha256": "f7b5c42b23b3a9230fe430d14773222dec6b9e7ec499c7b439352d6b9d118eb6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "fda-guarantee",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Expedited-program status does not guarantee approval, a fixed completion date, superiority or individual access.",
+      "claimType": "regulatory-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "fast-track-rmat-summary",
+          "recordId": "fast-track-rmat",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "ab3276452f852b03e53367609c95ae8c36b1fb9b60798a5269a20dbd13e865ed",
+          "supportingExcerpt": "Fast Track supports development and review for drugs addressing serious conditions and unmet need. Regenerative Medicine Advanced Therapy designation has its own eligible-product and preliminary-clinical-evidence criteria. Breakthrough Therapy and Priority Review likewise have distinct purposes; review support is not an efficacy result or a guarantee of approval or delivery timing. Accelerated approval, in contrast, is an approval pathway with benefit-confirmation requirements. Read the named program and the actual product decision separately.",
+          "passageSha256": "83011c95bc2c076aac6e08e963c50f3411d5042177f1ebaeebdc53f9bb508a56"
+        },
+        {
+          "id": "expanded-access-summary",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "15098075d01bcc81dfef74c9648dda422fbc44559cdf5c57ea25340650faed56",
+          "supportingExcerpt": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+          "passageSha256": "1c4e62a6976da467ad790b1359365244968a73b50e893198d783ea2ce0a7d12d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Corrected scope: the programme does not promise eventual approval, superiority, personal access or a treatment date. Its source wording about no fixed timeline must not erase actual designation clocks or review goals. FDA’s current Priority Review page calls its action interval a goal and retains the approval evidence standard.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ruo",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Research-use status concerns intended purpose, whereas CLIA certification applies to a laboratory.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "laboratory-certification-test-authorization-summary",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "authorization",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Product/use authorisation and laboratory certification attach to different objects, not successive rungs of a permission ladder.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "laboratory-certification-test-authorization-summary",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        },
+        {
+          "id": "laboratory-certification-test-authorization-notes-1",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "An entry in FDA establishment registration or device listing does not itself mean that the facility or device is approved, cleared or authorized. Registration and product authorization are separate claims.",
+          "passageSha256": "3ab6fa17385c524c5c9bf18472af4b2ba30ba5f6f56033e329bb0e83843fb695"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ldt",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "An LDT is identified by laboratory development and use, not merely by an approval-status badge.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "laboratory-certification-test-authorization-summary",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "badges",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "A status badge alone does not establish clinical utility, patient benefit or payer coverage.",
+      "claimType": "regulatory-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "laboratory-certification-test-authorization-summary",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        },
+        {
+          "id": "laboratory-certification-test-authorization-notes-2",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report.",
+          "passageSha256": "1e508d754c0e19cd85ef79bcc73c5a40a991e0648afebda3a1f8d7ef8efa6be1"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "depth": "Existing cited owner evidence at its retained depth plus fresh source-body comparison. No new primary-paper or whole-owner verification is claimed."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-route",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "A new individual-patient IND and an individual protocol under an existing active IND are different US non-emergency routes.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "expanded-access-summary",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "15098075d01bcc81dfef74c9648dda422fbc44559cdf5c57ea25340650faed56",
+          "supportingExcerpt": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+          "passageSha256": "1c4e62a6976da467ad790b1359365244968a73b50e893198d783ea2ce0a7d12d"
+        },
+        {
+          "id": "expanded-access-notes-0",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+          "passageSha256": "0084ae8ec356695004f48e32d989d8704a9b1a18a68fa52c74c7a4593d4883e5"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-clock",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Receipt starts the new-IND clock, with route-specific conditional exceptions; this is not a promised treatment date.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "expanded-access-notes-0",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+          "passageSha256": "0084ae8ec356695004f48e32d989d8704a9b1a18a68fa52c74c7a4593d4883e5"
+        },
+        {
+          "id": "expanded-access-notes-11",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "In a fictional request, a supplier says manufacture could finish next week while institutional review, the treatment plan and monitoring remain unresolved. That is a manufacturing estimate, not a treatment date. Similarly, FDA permission without a service able to administer and monitor the product leaves a delivery gate open. Ask which milestones are complete and which depend on others. A fictional new non-emergency individual-patient IND with supplier agreement, the necessary product information, applicable IRB review and consent can proceed when effective, ordinarily 30 days after FDA receipt or earlier FDA notice, provided it is not on hold. Supplier review, manufacture, FDA review, institutional review, shipping and scheduling each need their own estimate and dependencies.",
+          "passageSha256": "5320a343121fd7bc8b082cb78c30eac7c44dc1ec9dc78b78c4422994681bec7a"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ind-readiness",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Supply, consent and review remain separate readiness conditions; emergency provisions are not transferred to ordinary requests.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "expanded-access-summary",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "15098075d01bcc81dfef74c9648dda422fbc44559cdf5c57ea25340650faed56",
+          "supportingExcerpt": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+          "passageSha256": "1c4e62a6976da467ad790b1359365244968a73b50e893198d783ea2ce0a7d12d"
+        },
+        {
+          "id": "expanded-access-notes-0",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+          "passageSha256": "0084ae8ec356695004f48e32d989d8704a9b1a18a68fa52c74c7a4593d4883e5"
+        },
+        {
+          "id": "expanded-access-notes-10",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "Build a readiness record around the actual product, formulation, dose, route and schedule, its clinical rationale and alternatives, and the supporting quality, exposure and safety information. Name the sponsor and treating clinician, supplier and receiving or storage team, administering service, urgent-care destination, and people responsible for response assessment, toxicity management and reporting. Record the applicable submissions, review and consent, usable supply, costs, dependencies and possible stop conditions. Mark each answer confirmed, proposed or unknown with its responsible person and date; a checklist does not determine a patient's status. The treating team must assess suitability before administration; a laboratory result supplies neither eligibility nor a safe regimen. This checklist concerns U.S. drugs and biologics; device access, other countries and institutional rules can differ.",
+          "passageSha256": "bad219cd852e474115cbe9017b738fdb0f93f4efb8593ca8d97ff1c9f9a325f0"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "official": "Selected actual FDA programme, companion-diagnostic or April2026 expanded-access guidance text; inherited owner evidence retains scope.",
+          "depth": "Targeted raw official passages and explicit inference limits; no product/indication or personal eligibility inventory."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-combinations",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Epithelial, hybrid and more mesenchymal features are illustrative combinations, not proof that an observed cell transitioned.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "emt-summary",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "5e97366e20595954505e432ce25f3fd61c0d0b87aecc1c9ef67b20c56b1182c1",
+          "supportingExcerpt": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+          "passageSha256": "7f7567f9f4aa61c6bea1be732da795e99d77303d480fee085874b599b2eed1aa"
+        },
+        {
+          "id": "emt-notes-0",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "510fe86224b5955a2f738cff2d17b19dad82deb38b0293636fd18f2e07bd884f",
+          "supportingExcerpt": "Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment.",
+          "passageSha256": "48a9a56b14a6e15b1647a9c5eb0a72d2cbe0bce0f7afb7c83d6be5c7e43d19f3"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-trajectory",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Contact, shape and polarity are not a universal marker test, compulsory trajectory, metastatic route or resistance ranking.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "emt-summary",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "5e97366e20595954505e432ce25f3fd61c0d0b87aecc1c9ef67b20c56b1182c1",
+          "supportingExcerpt": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+          "passageSha256": "7f7567f9f4aa61c6bea1be732da795e99d77303d480fee085874b599b2eed1aa"
+        },
+        {
+          "id": "emt-notes-0",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "510fe86224b5955a2f738cff2d17b19dad82deb38b0293636fd18f2e07bd884f",
+          "supportingExcerpt": "Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment.",
+          "passageSha256": "48a9a56b14a6e15b1647a9c5eb0a72d2cbe0bce0f7afb7c83d6be5c7e43d19f3"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "emt-normal",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Development and repair can also involve these properties; shape alone does not establish malignancy.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "emt-summary",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "5e97366e20595954505e432ce25f3fd61c0d0b87aecc1c9ef67b20c56b1182c1",
+          "supportingExcerpt": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+          "passageSha256": "7f7567f9f4aa61c6bea1be732da795e99d77303d480fee085874b599b2eed1aa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32300252",
+            "29670281"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-order",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The schematic follows G1, S, G2 and M, with an optional G0 state and conditional return.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-cycle-summary",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "3510ad65ec0abba2ee9b49aaeeb1e041313f02ca2931fe2fc57f88fb61fd3ff5",
+          "supportingExcerpt": "G1 prepares the cell, S copies DNA, and G2 precedes the mitotic phase. Mitosis separates nuclear chromosomes; cytokinesis separates cytoplasm into daughter cells. G0 describes a noncycling state, which need not mean death or loss of function. Cyclins, CDKs and checkpoints regulate transitions, and their alteration can contribute to cancer without making every checkpoint absent or guaranteeing error-free division. Cell-cycle checkpoints and immune checkpoints describe different biological processes.",
+          "passageSha256": "23a4e91a3907aa6171efed4803d525fa03fc8683a9d242c1e4d6414f6c03d012"
+        },
+        {
+          "id": "cell-cycle-notes-2",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-dna",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Relative DNA content rises through S to about double the depicted baseline before division; the late-mitotic sketch is a schematic state, not every instant of M.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-cycle-notes-2",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The added relative-DNA example uses a chosen reference and a late-mitotic schematic state. It does not identify all tumour ploidies, every instant of M or absolute DNA amounts.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-snapshot",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A phase fraction is not a division rate and does not establish equal durations or a universal timetable.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-cycle-notes-1",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle.",
+          "passageSha256": "5a62d2d5170721dc2ee9ed8cc10a0f3aa0d3d646b5b970b123847bcab4c4bad8"
+        },
+        {
+          "id": "cell-cycle-notes-2",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "cycle-pairs",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "DNA amount alone does not distinguish G0 from G1 or G2 from M.",
+      "claimType": "measurement-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-cycle-notes-0",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "DNA-content measurements commonly group G0/G1 and G2/M because each pair shares a DNA-content range. Appropriate additional markers and doublet discrimination are needed: two cells can resemble one cell with more DNA.",
+          "passageSha256": "f7c064abc7d471ca60fe7a86f756582530102439fa684a32ae947fb00e968952"
+        },
+        {
+          "id": "cell-cycle-notes-2",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "26131851"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-boundaries",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Individual cell membranes and the extracellular basement membrane are different boundaries; the extracellular stroma is not drawn as naked free nuclei.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma-summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The compartment distinction is carried in the canonical text. Removing misleading isolated nuclear-looking flecks is a scientific illustration constraint; no fresh view or claim that the target image actually complies is made.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-stroma",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The conceptual stroma contains multiple cell types, matrix and a vessel.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma-summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-rna",
+      "bodyIndices": [
+        15
+      ],
+      "requirement": "RNA within a stromal cell can contribute to a mixed tissue measurement; RNA is not assigned exclusively to the epithelial cells.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma-summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        },
+        {
+          "id": "epithelium-and-stroma-notes-0",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+          "passageSha256": "c227cab43ab3bf0828e94643e999b139f8d983aa3ede9efd1db267a3eec48e34"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "tissue-limits",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "This is generic normal lining, not a specific breast duct, malignancy test or invasion criterion; cell and vessel counts are schematic.",
+      "claimType": "fictional-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma-summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        },
+        {
+          "id": "epithelium-and-stroma-notes-1",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer.",
+          "passageSha256": "bf944ad075267c7e9004c1973d543c7b89f408d3eef40e8fb5adf01c35945a5b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The canonical fields preserve tissue-specific interpretation and the limits of a marker or schematic. The exact eight-cell/two-red-cell counts and palette are source-art conventions, not biological measurements or imported artwork.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "37380767",
+            "34493872"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-arithmetic",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The fictional equal starts of1000 end at2000 untreated and1200 treated; net changes are1000 and200 and the endpoint difference is800.",
+      "claimType": "fictional-arithmetic",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-division-notes-3",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate.",
+          "passageSha256": "bdf38a10f9763aab08f800bfed72f9bd9396348a5c79d745c806d10dd7c73802"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-killing",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "An endpoint difference does not measure800 deaths; production and loss remain unmeasured.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-division-notes-3",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate.",
+          "passageSha256": "bdf38a10f9763aab08f800bfed72f9bd9396348a5c79d745c806d10dd7c73802"
+        },
+        {
+          "id": "cell-division-notes-0",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+          "passageSha256": "695a122b53c38faae0f71b0ffa0b6ce0223a292e962c30403f8abe71325c3b5c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "growth-noncycling",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Nondividing-cell vulnerability cannot be excluded by the cartoon; there is no regimen or patient-benefit conclusion.",
+      "claimType": "source-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-division-notes-0",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+          "passageSha256": "695a122b53c38faae0f71b0ffa0b6ce0223a292e962c30403f8abe71325c3b5c"
+        },
+        {
+          "id": "cell-division-notes-3",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate.",
+          "passageSha256": "bdf38a10f9763aab08f800bfed72f9bd9396348a5c79d745c806d10dd7c73802"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "27135972",
+            "27894788"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-axes",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "Developmental ancestry, broad cell identity, genetic tumour-clone relationships and activity state are separate axes.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-lineage-and-state-summary",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+          "supportingExcerpt": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+          "passageSha256": "3dc9cb6f8bebf3f6492adf24e0fd5490d77c3495bd12b0244e324fbb79379602"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-state",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "A fictional family or clone can contain cycling and noncycling states; labels alone are not permanent commitment.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-lineage-and-state-notes-3",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it.",
+          "passageSha256": "54ca7766f0aebb14fce395ead21406abd03f77dec41d99daf2b157c6d833ecd3"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "lineage-rna",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "An RNA cluster alone does not reconstruct ancestry or establish developmental direction.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "cell-lineage-and-state-summary",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-01-root",
+          "field": "summary",
+          "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+          "supportingExcerpt": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+          "passageSha256": "3dc9cb6f8bebf3f6492adf24e0fd5490d77c3495bd12b0244e324fbb79379602"
+        },
+        {
+          "id": "cell-lineage-and-state-notes-0",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-01-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+          "passageSha256": "be1b2314cff4f2d8507f2a631056fc3126fd475bb7152a223385af900ef5e777"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The named source assertion is represented in these exact current owner passages at the stated definition, model, scope or inference level. This is a manual semantic assessment, separate from exact containment.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31974159"
+          ],
+          "depth": "Fresh complete raw abstracts for the named sources; selected OpenStax/NIGMS passages where specified. Existing owner evidence retains prior depth. Fictional premises and reading rules are not empirical results."
+        },
+        "independentAcceptance": false
+      }
+    }
+  ]
+}

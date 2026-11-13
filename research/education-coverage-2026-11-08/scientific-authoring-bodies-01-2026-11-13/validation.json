@@ -1,0 +1,2888 @@
+{
+  "dataCommit": "a9655f82cf41878aaf69394df14f7d1af591b7df",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.07
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.7
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.06
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 310.84
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "a9655f82cf41878aaf69394df14f7d1af591b7df",
+    "graphCount": 23091,
+    "changedIds": [
+      "cell-cycle",
+      "cell-division",
+      "cell-lineage-and-state",
+      "central-dogma-information-flow"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "allSelectedRecordsMatchActualReaders": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "graphCount": 23091,
+    "changedIds": [
+      "cell-cycle",
+      "cell-division",
+      "cell-lineage-and-state",
+      "central-dogma-information-flow"
+    ],
+    "unchangedRecords": 23087,
+    "changedFields": 7,
+    "appendedNotes": 4,
+    "dateChanges": 3,
+    "newIds": 0,
+    "newRegistrations": 0,
+    "newRelations": 0,
+    "oldNotesAndOrderPreserved": true,
+    "allRenderedRecordsEqualCurrentGraph": true,
+    "dataFiles": [
+      {
+        "file": "src/data/terms-basics.ts",
+        "class": "data",
+        "sha256": "696d710da3fe7c699301b81010eaab99d36cfbd546d739065b2cb019a843f5ab"
+      },
+      {
+        "file": "src/data/education-biology-evidence.ts",
+        "class": "data",
+        "sha256": "2260401c7dd1d8ef7f17161911cfca8f9fbe249bcd4f48f376844a3cb231b209"
+      }
+    ]
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "synthetic-cytokine-receptors",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/synthetic-cytokine-receptors/",
+        "sha256": "81349c18549b1c5dbfe3c3634c0341cd99a4a4ad9a5859f81102495c34238ab3",
+        "bytes": 29421,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cytokine",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cytokine/",
+        "sha256": "cb0a9d6bf91e7b1cafa738d5f138f21cf39ff40eafa783dab9deeba1784e10cd",
+        "bytes": 35528,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "jak-stat",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/jak-stat/",
+        "sha256": "d13be31c5df50a622f3453c2fe809e648881d668c034449ffb3b2a7cb17144cc",
+        "bytes": 51789,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/central-dogma-information-flow/",
+        "sha256": "06e1d68cc3173fd463aa661fcbd4ff2730b22870437627db0d6654ff7e3883e5",
+        "bytes": 22741,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "car-t",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/car-t/",
+        "sha256": "3f9dbb5efccac21bfb4f79b57d30a60ca57fad9e3be94f4ea84f8946bbb8e756",
+        "bytes": 215871,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "in-vivo-car-t",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/in-vivo-car-t/",
+        "sha256": "f3ece6b1bb9b5b46654f2bfb35fba0ca5ad4fad642882f0070182bfca9a8cd36",
+        "bytes": 75839,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/car-t-manufacturing-process/",
+        "sha256": "231590990f907c99d13995a1c314010c2ecc2a67bdb037248c2cb5a8c8b11191",
+        "bytes": 52291,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/on-target-off-tumour-toxicity/",
+        "sha256": "c4245afb6e582c0f1f2d063e332406104abe12f56178dfd244999a7494c420d6",
+        "bytes": 40159,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/t-cell-exhaustion-term/",
+        "sha256": "2144ba71ce4a605bc7d6f6ec9acb275a92d4a342d910565a25a429fbcb5fc5e7",
+        "bytes": 63897,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cellular-kinetics-and-persistence/",
+        "sha256": "9647efd106626d68881029d97e4b6e867f2d3736a079e7b37b0932d532ea9f17",
+        "bytes": 38411,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tumor-microenvironment",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/tumor-microenvironment/",
+        "sha256": "b568e3bf2788859297367b7057ae1514e5cb2d9897713133897736cf7382c0d3",
+        "bytes": 76883,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/companion-diagnostic-term/",
+        "sha256": "2caef160d3628cdbf66cf9158915eabd83e71a0da123a142834ab49cae26b067",
+        "bytes": 73209,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "companion-diagnostic",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/companion-diagnostic/",
+        "sha256": "a34684fc9c625a4f9bc6218ee9cc3a3217483ce6be316b6e2cf2a89cfda44445",
+        "bytes": 188646,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "accelerated-approval",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/accelerated-approval/",
+        "sha256": "589f161049248fce46aa2aa9bf286a18f432f390f8cf14cdb037fd062536132a",
+        "bytes": 49487,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "fast-track-rmat",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/fast-track-rmat/",
+        "sha256": "4d3c88c2064280f5dc7015696f1b84873bce5db8f0e97d479c69721199b8b30f",
+        "bytes": 25972,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "full-approval",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/full-approval/",
+        "sha256": "b00d8d2e720cf626381c88f2e909d963e4b56b667b240d67b9cc45a5fbb203e2",
+        "bytes": 24955,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/laboratory-certification-test-authorization/",
+        "sha256": "68d11d6d3aff8bc11d6120d1c6a35a0d027939045d0fb59c6bdb73332c7cba58",
+        "bytes": 25520,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "expanded-access",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/expanded-access/",
+        "sha256": "abccb58f91f6569c38c145fc1e7f1dd89801625cf644c612234290a9e07acab5",
+        "bytes": 40106,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "emt",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/emt/",
+        "sha256": "87fb3fc9d53f016dd6dcd8af8d803ea51ee89738e44b2656a8f42898e0cfa511",
+        "bytes": 60148,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-cycle",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-cycle/",
+        "sha256": "7fad81e261be7dfd66da4e72af4b863e59b6b230c27814a3e8c0c0fd1022aadb",
+        "bytes": 40074,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/epithelium-and-stroma/",
+        "sha256": "352128faef0ea1f0531ed6347877fd49ce550e471797f0941223ea6043eddac6",
+        "bytes": 24483,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-division",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-division/",
+        "sha256": "28aa96044df5f41b5717b74dab2076f8bb2a7520e1903c54ae265b7ecba25c6e",
+        "bytes": 27253,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-lineage-and-state/",
+        "sha256": "ce6c3cafee43e24e9ffda36825b76e4f71d67f06ce5fa093820d9114b852a979",
+        "bytes": 30829,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 23,
+    "exactAnchors": 50,
+    "exactParagraphChecks": 50,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "cytokine-summary-selected-3ea1498d7c",
+        "recordId": "cytokine",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cytokine-summary-selected-b14c07ac73",
+        "recordId": "cytokine",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-summary-selected-0ff5282f46",
+        "recordId": "car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-summary-selected-cd293ac6d6",
+        "recordId": "car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-exhaustion-term-summary-selected-fc23ab5778",
+        "recordId": "t-cell-exhaustion-term",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "synthetic-cytokine-receptors-summary",
+        "recordId": "synthetic-cytokine-receptors",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "jak-stat-notes-1",
+        "recordId": "jak-stat",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "synthetic-cytokine-receptors-notes-4",
+        "recordId": "synthetic-cytokine-receptors",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "synthetic-cytokine-receptors-notes-1",
+        "recordId": "synthetic-cytokine-receptors",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "synthetic-cytokine-receptors-notes-7",
+        "recordId": "synthetic-cytokine-receptors",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "synthetic-cytokine-receptors-notes-6",
+        "recordId": "synthetic-cytokine-receptors",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "central-dogma-information-flow-summary",
+        "recordId": "central-dogma-information-flow",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-notes-7",
+        "recordId": "car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "central-dogma-information-flow-notes-1",
+        "recordId": "central-dogma-information-flow",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-notes-2",
+        "recordId": "car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "in-vivo-car-t-notes-10",
+        "recordId": "in-vivo-car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cellular-kinetics-and-persistence-notes-7",
+        "recordId": "cellular-kinetics-and-persistence",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-notes-10",
+        "recordId": "car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "on-target-off-tumour-toxicity-tldr",
+        "recordId": "on-target-off-tumour-toxicity",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "on-target-off-tumour-toxicity-notes-0",
+        "recordId": "on-target-off-tumour-toxicity",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "in-vivo-car-t-notes-5",
+        "recordId": "in-vivo-car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "in-vivo-car-t-summary",
+        "recordId": "in-vivo-car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "in-vivo-car-t-notes-11",
+        "recordId": "in-vivo-car-t",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "car-t-manufacturing-process-summary",
+        "recordId": "car-t-manufacturing-process",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "companion-diagnostic-summary",
+        "recordId": "companion-diagnostic",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "laboratory-certification-test-authorization-notes-2",
+        "recordId": "laboratory-certification-test-authorization",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "companion-diagnostic-term-summary",
+        "recordId": "companion-diagnostic-term",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "fast-track-rmat-summary",
+        "recordId": "fast-track-rmat",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "accelerated-approval-summary",
+        "recordId": "accelerated-approval",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "full-approval-summary",
+        "recordId": "full-approval",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "expanded-access-summary",
+        "recordId": "expanded-access",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "laboratory-certification-test-authorization-summary",
+        "recordId": "laboratory-certification-test-authorization",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "laboratory-certification-test-authorization-notes-1",
+        "recordId": "laboratory-certification-test-authorization",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "expanded-access-notes-0",
+        "recordId": "expanded-access",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "expanded-access-notes-11",
+        "recordId": "expanded-access",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "expanded-access-notes-10",
+        "recordId": "expanded-access",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "emt-summary",
+        "recordId": "emt",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "emt-notes-0",
+        "recordId": "emt",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-cycle-summary",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-cycle-notes-2",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-cycle-notes-1",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-cycle-notes-0",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epithelium-and-stroma-summary",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epithelium-and-stroma-notes-0",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epithelium-and-stroma-notes-1",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-division-notes-3",
+        "recordId": "cell-division",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-division-notes-0",
+        "recordId": "cell-division",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-lineage-and-state-summary",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-lineage-and-state-notes-3",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-lineage-and-state-notes-0",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticExports": {
+    "records": 23,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "jak-stat",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "jak-stat",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "jak-stat",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "jak-stat",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 14,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 15,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 16,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 17,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 18,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-microenvironment",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "companion-diagnostic",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "accelerated-approval",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "accelerated-approval",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "fast-track-rmat",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "fast-track-rmat",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "full-approval",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "full-approval",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "expanded-access",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "emt",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "emt",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "emt",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "synthetic-cytokine-receptors.json",
+        "bytes": 6158,
+        "sha256": "5ae4e305cc26ed377801456553f7ba8e28fde15b53c9a11bbec661825d5d4e18"
+      },
+      {
+        "file": "synthetic-cytokine-receptors.md",
+        "bytes": 5674,
+        "sha256": "f0f86c3f8083cf86e2a82d6380f49f329dee323ea64ced761b713a9a5b49d852"
+      },
+      {
+        "file": "cytokine.json",
+        "bytes": 7934,
+        "sha256": "f7c61657d6616ddcb9f61f6d4f0c8df2214ce77b6b3761a86c420ac347c453fc"
+      },
+      {
+        "file": "cytokine.md",
+        "bytes": 6996,
+        "sha256": "a66748a9685fe54575ac17deb0c6ee8a922f6640191ed0a577455eba5f8bef36"
+      },
+      {
+        "file": "jak-stat.json",
+        "bytes": 9731,
+        "sha256": "54f7999aa0ccb7b1fd90cabe4ee0cb69719f693090b0484c98815b6d07a6f4a3"
+      },
+      {
+        "file": "jak-stat.md",
+        "bytes": 6692,
+        "sha256": "4773049569dd6c76e1b74f50f7274610ac880d3ddb529b7c8b25f8d4b5dbf6aa"
+      },
+      {
+        "file": "central-dogma-information-flow.json",
+        "bytes": 3245,
+        "sha256": "7c0c1cc9f0dff80bfbd1eb3fceb40642308a6f3309317d309abb4569b68e9c16"
+      },
+      {
+        "file": "central-dogma-information-flow.md",
+        "bytes": 2815,
+        "sha256": "176995bef455c50d52b18b6aadd85d149889cecef696264b29faec7447ba180f"
+      },
+      {
+        "file": "car-t.json",
+        "bytes": 85943,
+        "sha256": "b4c6268ec49866838bb4fb33512eec4c90f3d9cbb971d33d98cb7954a6e75a9f"
+      },
+      {
+        "file": "car-t.md",
+        "bytes": 60779,
+        "sha256": "ca925f7b7b3f332e4b7ab97247e2f0a43e54657f0aa83921542fd3918c76e4c1"
+      },
+      {
+        "file": "in-vivo-car-t.json",
+        "bytes": 20571,
+        "sha256": "d41e122c8ad246c05380be8537441a416755dec48d5dc6667b1c981100797337"
+      },
+      {
+        "file": "in-vivo-car-t.md",
+        "bytes": 17462,
+        "sha256": "4c822272c259408a08fd20f84a5c7e386f96f564a5c14b1e2b2a7b8ab2c4289a"
+      },
+      {
+        "file": "car-t-manufacturing-process.json",
+        "bytes": 12042,
+        "sha256": "14af8f7b32f19a7634890225e38cb842087fc2e446c7d1a03db2e602f3da8610"
+      },
+      {
+        "file": "car-t-manufacturing-process.md",
+        "bytes": 8795,
+        "sha256": "6542a5c023b3375f8a97d50a7229dc1b9aa9b239c29268f56e4ace36d19d39ac"
+      },
+      {
+        "file": "on-target-off-tumour-toxicity.json",
+        "bytes": 9231,
+        "sha256": "358fa19575d7833cce943c094a0dc7a0348a7f9f2ae3cc9fd57dde6988da720c"
+      },
+      {
+        "file": "on-target-off-tumour-toxicity.md",
+        "bytes": 8691,
+        "sha256": "893de01e1acf89ec855facf377b94b085d6f2897b5e6f1a2182bbaddc9e9fd31"
+      },
+      {
+        "file": "t-cell-exhaustion-term.json",
+        "bytes": 26863,
+        "sha256": "fbeefa0c62b1ada56d785254b57feefccaf828b804a3cababea30e000b1c5150"
+      },
+      {
+        "file": "t-cell-exhaustion-term.md",
+        "bytes": 20884,
+        "sha256": "d9cf8e8c5d14f98464d40c4d3b978b702efcb36421d3fb16c99da0cac9df096d"
+      },
+      {
+        "file": "cellular-kinetics-and-persistence.json",
+        "bytes": 8526,
+        "sha256": "c62eb6946e3ddca9541085dc6d4df14d80088831e639f44953b860c68dcdb3fa"
+      },
+      {
+        "file": "cellular-kinetics-and-persistence.md",
+        "bytes": 7599,
+        "sha256": "deef7eba9d8f48539d8eca126047f89ac2fa15a107242f5fb75f428453012543"
+      },
+      {
+        "file": "tumor-microenvironment.json",
+        "bytes": 18660,
+        "sha256": "cd9747b691ad42a313a2462aa91c1976aa3d7a0c415102fb66be8a3d7f0e813a"
+      },
+      {
+        "file": "tumor-microenvironment.md",
+        "bytes": 12645,
+        "sha256": "9be36904da8f7d91c239dcfd41febda2b287cebb1ae2be73c19b002230575fad"
+      },
+      {
+        "file": "companion-diagnostic-term.json",
+        "bytes": 9846,
+        "sha256": "7b498a0d05cf0a5284a8c1ab5a4a2f938d3de8b8302c7b679bcf8c027fd83d89"
+      },
+      {
+        "file": "companion-diagnostic-term.md",
+        "bytes": 7114,
+        "sha256": "df5bd1420ab36845efa0c65f6f72ca55aa5f12c588f8000ddcfb2d9b75cdc8cd"
+      },
+      {
+        "file": "companion-diagnostic.json",
+        "bytes": 21248,
+        "sha256": "9931e4ec4cf2ed5ef8f58d65b30a7ff6db2f624b4ec7c7ad8e5f677b689a7611"
+      },
+      {
+        "file": "companion-diagnostic.md",
+        "bytes": 14649,
+        "sha256": "04f4ed8a4cf1f467dc3b081bfb8d369a639c7fc6f2a5c7428b53b8f748db6234"
+      },
+      {
+        "file": "accelerated-approval.json",
+        "bytes": 13593,
+        "sha256": "eaa0673b471997a0b3cac576ebbf48cfefe0ae7b22f652a4f51d7cd609b5caa9"
+      },
+      {
+        "file": "accelerated-approval.md",
+        "bytes": 9602,
+        "sha256": "014bedda2082f13a7bd8ad3962ca2782862ce72f2159afe0c0a09ff4c0bd6636"
+      },
+      {
+        "file": "fast-track-rmat.json",
+        "bytes": 4051,
+        "sha256": "11ecab667fe37c878e21dcd3699eb9d4b5fe6645acf8703d30756ca87bc65381"
+      },
+      {
+        "file": "fast-track-rmat.md",
+        "bytes": 3112,
+        "sha256": "8faa495611e20251c3db3e781441dd31983238870871564a9ea25987deb5d7f3"
+      },
+      {
+        "file": "full-approval.json",
+        "bytes": 3812,
+        "sha256": "e6544074c9481ea6acd2424c3062203f4bf594a851d86bb1b8e7e89d136cd979"
+      },
+      {
+        "file": "full-approval.md",
+        "bytes": 2848,
+        "sha256": "62e05accb59457d82dfa79ee5e4cbf74c4f906bd3517656e697020f118896273"
+      },
+      {
+        "file": "laboratory-certification-test-authorization.json",
+        "bytes": 5024,
+        "sha256": "d6c878835133f39a6c4a5f3ef531c6c6be676b5900f7be774bb5c029954560d8"
+      },
+      {
+        "file": "laboratory-certification-test-authorization.md",
+        "bytes": 4494,
+        "sha256": "e36c32bc64649950c9ed0822b0b7cd1e40a96f98b4cc24994d062fae25b28f0d"
+      },
+      {
+        "file": "expanded-access.json",
+        "bytes": 12964,
+        "sha256": "71d5281106bc598c31bb1009dfbc486afe0baf195d52bd0f46dea8e05ce249a0"
+      },
+      {
+        "file": "expanded-access.md",
+        "bytes": 11683,
+        "sha256": "bc95d349fc69a343ae5b5f0f4d62d2c5477d2e3dfceae6aacba378eb3b312542"
+      },
+      {
+        "file": "emt.json",
+        "bytes": 13458,
+        "sha256": "70745f0818ffe9f3e8e9f7a51a5ba5396a5baa1b7ba5f82527842e4178d2c807"
+      },
+      {
+        "file": "emt.md",
+        "bytes": 9044,
+        "sha256": "ddc4be6b452d60f35e5ba932b2c5adb8bbf0c8c8c1c08d8ef22de96ca1cfb706"
+      },
+      {
+        "file": "cell-cycle.json",
+        "bytes": 5412,
+        "sha256": "c197166f7050e9005404bcd48c25d3ccc77316181f456a6e4edd79d5436b79e2"
+      },
+      {
+        "file": "cell-cycle.md",
+        "bytes": 4184,
+        "sha256": "e066661e4ef492b890afa18158e7ae34aa591d80f8ed43b7cf73ab065f4d49a4"
+      },
+      {
+        "file": "epithelium-and-stroma.json",
+        "bytes": 4436,
+        "sha256": "815d8204bae518c52e52266019740279f8db8e2178fbce2e83ad305bf2451c1b"
+      },
+      {
+        "file": "epithelium-and-stroma.md",
+        "bytes": 3999,
+        "sha256": "b8d34dc06347f3af8695f37e642944ff9cc263dfbedac1a05d410690e0ced4f2"
+      },
+      {
+        "file": "cell-division.json",
+        "bytes": 4642,
+        "sha256": "95a1e4b175c9ec209d4c5e6a33fa7f15207939431a8558f56c7f3dd3bdc2a602"
+      },
+      {
+        "file": "cell-division.md",
+        "bytes": 4018,
+        "sha256": "e50d4d3abee8b6c0b527477ef9e895f07bb6a5d96b6890a7e51cadebed8cf276"
+      },
+      {
+        "file": "cell-lineage-and-state.json",
+        "bytes": 5680,
+        "sha256": "9eb057a1f3529db193541a87c7a800c33d035cca6cc4945645c74c3aa2117947"
+      },
+      {
+        "file": "cell-lineage-and-state.md",
+        "bytes": 5180,
+        "sha256": "5bd31d5494e99cbaf9be200e434e6a18b1c119a5674cd9453626b6786d27a1a5"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 207,
+    "texts": 123,
+    "fallbacks": 84,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "synthetic-cytokine-receptors",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "jak-stat",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "central-dogma-information-flow",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "car-t-manufacturing-process",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "on-target-off-tumour-toxicity",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-exhaustion-term",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-microenvironment",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic-term",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "companion-diagnostic",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "accelerated-approval",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "fast-track-rmat",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "full-approval",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "laboratory-certification-test-authorization",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "expanded-access",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "checks": [
+      {
+        "statement": "untreated net increase",
+        "value": 1000,
+        "expected": 1000
+      },
+      {
+        "statement": "treated net increase",
+        "value": 200,
+        "expected": 200
+      },
+      {
+        "statement": "endpoint difference",
+        "value": 800,
+        "expected": 800
+      },
+      {
+        "statement": "difference in net increases",
+        "value": 800,
+        "expected": 800
+      },
+      {
+        "statement": "endpoint bar ratio",
+        "value": 0.6,
+        "expected": 0.6
+      }
+    ],
+    "pass": true,
+    "scope": "Arithmetic from explicitly fictional equal-start premises; no measured killing, drug result or patient benefit."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual registered graph, EntityDetail SSR, summary selectors and static JSON/Markdown/OpenAPI/context, with full gates. No production Next build, browser, source-image render, hydration, deployment, expert or independent acceptance."
+}

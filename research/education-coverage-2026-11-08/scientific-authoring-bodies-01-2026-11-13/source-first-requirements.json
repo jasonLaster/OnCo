@@ -1,0 +1,492 @@
+{
+  "scope": "Manual full-body source-first claim inventory before opening current OnCo owner fields for this batch. Prior domain context is known; no blind or independent review claim.",
+  "baseCommit": "65912c5ab414e5e2571c50b0ff8dd542648c47e1",
+  "uniqueRequirements": 51,
+  "requirements": [
+    {
+      "id": "cyto-binding",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Cytokines act outside the cell through membrane receptors; the cartoon does not show a cytokine entering DNA.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cyto-relay",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "Receptor activation can initiate an intracellular relay and alter gene activity.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cyto-engineered",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "A generic drug-responsive engineered receptor can select signalling responses; the cartoon is not a proprietary receptor structure.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cyto-separate",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "CAR target recognition and an added cytokine-receptor signalling role are distinct functions of different receptor proteins.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cyto-limits",
+      "bodyIndices": [
+        0
+      ],
+      "requirement": "More signalling does not guarantee expansion, useful function or cancer clearance.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "instructions",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "DNA, mRNA and receptor proteins are different objects; transcription and translation are separate steps.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "mrna-location",
+      "bodyIndices": [
+        1,
+        3,
+        4
+      ],
+      "requirement": "Delivered mRNA is translated in the cytoplasm and need not enter or integrate into genomic DNA.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "dna-expression",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "The depicted DNA route transcribes in the nucleus, exports mRNA and translates it outside the nucleus.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "car-membrane",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "A CAR is a membrane-spanning protein, with an external antigen-binding region and an intracellular signalling region; the living cell is a different object.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "car-recognition",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "CAR recognition of surface antigen can trigger a T-cell response, without guaranteeing target killing.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "protein-location",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "A newly made protein and the finished surface receptor are separate stages; a diagram connector is not a continuous protein cable.",
+      "claimType": "biosynthesis-and-schematic-boundary",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cargo-scope",
+      "bodyIndices": [
+        3,
+        4
+      ],
+      "requirement": "RNA, DNA and an unspecified carrier cargo are not interchangeable labels; no integration or clinical effect is inferred from the schematic.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "solid-entry",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Reaching and entering tumour tissue is a separate barrier from antigen recognition.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "solid-antigen",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Tumour cells may differ in target expression; adding T cells does not replace a missing target.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "solid-function",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Suppressive signals and limited nutrients can restrict activity; persistence alone does not establish function.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "solid-safety",
+      "bodyIndices": [
+        2
+      ],
+      "requirement": "Shared antigen on healthy tissue creates a separate on-target safety question; the conceptual journey is not patient-outcome evidence.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "engineering-exvivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Ex vivo engineering collects cells, engineers and tests them outside the body, then returns the cells.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "engineering-invivo",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "In vivo engineering delivers a carrier to cells in the body, without an ex vivo collection step.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "engineering-targets",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Carrier targeting to the intended cell and CAR recognition of cancer antigen are different targeting jobs.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "engineering-manufacture",
+      "bodyIndices": [
+        5
+      ],
+      "requirement": "Both depicted routes require manufactured components; delivery does not itself establish treatment success.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "assay-match",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "An intended diagnostic use binds the assay, specimen, result rule and corresponding treatment/use.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "assay-samegene",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "A same-gene research result or a different analyte does not substitute for a label-defined companion diagnostic.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "assay-fiction",
+      "bodyIndices": [
+        6
+      ],
+      "requirement": "Drug A, gene M and assay T are fictional; no real pair or cutoff is asserted.",
+      "claimType": "fictional-premise",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "fda-support",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Fast track, breakthrough designation and priority review concern development/review support; they do not themselves grant approval.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "fda-decision",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Approval concerns a specified product and use; traditional and accelerated approval are distinct approval pathways.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "fda-confirm",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Accelerated approval has benefit-confirmation requirements; the schematic does not certify an actual indication.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "fda-guarantee",
+      "bodyIndices": [
+        7,
+        8
+      ],
+      "requirement": "Expedited-program status does not guarantee approval, a fixed completion date, superiority or individual access.",
+      "claimType": "regulatory-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "ruo",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Research-use status concerns intended purpose, whereas CLIA certification applies to a laboratory.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "authorization",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "Product/use authorisation and laboratory certification attach to different objects, not successive rungs of a permission ladder.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "ldt",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "An LDT is identified by laboratory development and use, not merely by an approval-status badge.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "badges",
+      "bodyIndices": [
+        9
+      ],
+      "requirement": "A status badge alone does not establish clinical utility, patient benefit or payer coverage.",
+      "claimType": "regulatory-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "ind-route",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "A new individual-patient IND and an individual protocol under an existing active IND are different US non-emergency routes.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "ind-clock",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Receipt starts the new-IND clock, with route-specific conditional exceptions; this is not a promised treatment date.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "ind-readiness",
+      "bodyIndices": [
+        10
+      ],
+      "requirement": "Supply, consent and review remain separate readiness conditions; emergency provisions are not transferred to ordinary requests.",
+      "claimType": "regulatory-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "emt-combinations",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Epithelial, hybrid and more mesenchymal features are illustrative combinations, not proof that an observed cell transitioned.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "emt-trajectory",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Contact, shape and polarity are not a universal marker test, compulsory trajectory, metastatic route or resistance ranking.",
+      "claimType": "inference-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "emt-normal",
+      "bodyIndices": [
+        11,
+        12
+      ],
+      "requirement": "Development and repair can also involve these properties; shape alone does not establish malignancy.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cycle-order",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The schematic follows G1, S, G2 and M, with an optional G0 state and conditional return.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cycle-dna",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Relative DNA content rises through S to about double the depicted baseline before division; the late-mitotic sketch is a schematic state, not every instant of M.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cycle-snapshot",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A phase fraction is not a division rate and does not establish equal durations or a universal timetable.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "cycle-pairs",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "DNA amount alone does not distinguish G0 from G1 or G2 from M.",
+      "claimType": "measurement-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "tissue-boundaries",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Individual cell membranes and the extracellular basement membrane are different boundaries; the extracellular stroma is not drawn as naked free nuclei.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "tissue-stroma",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The conceptual stroma contains multiple cell types, matrix and a vessel.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "tissue-rna",
+      "bodyIndices": [
+        15
+      ],
+      "requirement": "RNA within a stromal cell can contribute to a mixed tissue measurement; RNA is not assigned exclusively to the epithelial cells.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "tissue-limits",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "This is generic normal lining, not a specific breast duct, malignancy test or invasion criterion; cell and vessel counts are schematic.",
+      "claimType": "fictional-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "growth-arithmetic",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The fictional equal starts of1000 end at2000 untreated and1200 treated; net changes are1000 and200 and the endpoint difference is800.",
+      "claimType": "fictional-arithmetic",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "growth-killing",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "An endpoint difference does not measure800 deaths; production and loss remain unmeasured.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "growth-noncycling",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Nondividing-cell vulnerability cannot be excluded by the cartoon; there is no regimen or patient-benefit conclusion.",
+      "claimType": "source-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "lineage-axes",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "Developmental ancestry, broad cell identity, genetic tumour-clone relationships and activity state are separate axes.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "lineage-state",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "A fictional family or clone can contain cycling and noncycling states; labels alone are not permanent commitment.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "lineage-rna",
+      "bodyIndices": [
+        19
+      ],
+      "requirement": "An RNA cluster alone does not reconstruct ancestry or establish developmental direction.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    }
+  ],
+  "noncreditDisposition": "Palette, composition, font, dimensions, local paths, renderer/generator hashes and self-attested construction/review statements are custody or design instructions. They are recorded, not scientific or expert approval. Scientific guardrails and frozen learner-task quotes are retained as teaching requirements above.",
+  "bodyRole": "All twenty contain substantive scientific or regulatory construction/guardrail text. Provenance-labelled bodies remain mixed/teaching-bearing; none is excluded as purely mechanical support."
+}

@@ -1,0 +1,1240 @@
+{
+  "version": "proposal-support-bodies-08-root",
+  "uniqueRequirements": 22,
+  "artifactConventionRows": 3,
+  "bodyRequirementInstances": 14,
+  "nativePathRequirementInstances": 24,
+  "combinedUniquePathRequirementInstances": 38,
+  "bodyVersionEntries": 28,
+  "additionalNativeVersionEntries": 16,
+  "teachingBodyPaths": 3,
+  "nativeTeachingPaths": 8,
+  "supportOnlyPaths": 11,
+  "sourceInventorySha256": "5ecfa991549b5d06b2ab5321ec24a826164725118e7e5f2e62139a5e59fb4ad7",
+  "additionalNativeInputSha256": "9db2d8a3870ed1783bc38606ab1ea3016876cdeb96555b346a192dd3d02da63e",
+  "scope": "Exact field anchors verify containment; the accompanying semantic judgements supply entailment and source limits. Existing text and newly classified sources receive no main/live or independent acceptance credit. Three artifact-convention rows are excluded from scientific coverage.",
+  "proofs": [
+    {
+      "id": "CY01",
+      "bodyIndices": [
+        0,
+        1
+      ],
+      "requirement": "Cytokine binds a matching membrane receptor; intracellular signaling can alter gene activity. The extracellular cytokine does not become DNA or move into the nucleus; the relay is schematic.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A06",
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor",
+          "passageSha256": "3ea1498d7ca262676a3f9939e4ee621a0241b258c358776df5c1f89139b41b94"
+        },
+        {
+          "id": "A07",
+          "recordId": "jak-stat",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "e9624984b92f0240ada2b4b2104fa91d27dd9a3a2a5afc62c62569ac69868c4e",
+          "supportingExcerpt": "JAK-STAT is a route used by many cytokine receptors rather than a synonym for every cytokine response. Engelowski’s artificial receptor/ligand systems tested defined signalling and growth responses. Stüber’s TGF-beta experiments measured a SMAD-associated response in ROR1 CAR T cells. Follow the specified receptor and measured pathway through to gene output and cell phenotype; a phosphate signal, feedback response, growth measurement and completed target killing are different observations.",
+          "passageSha256": "b86829aed221f59065dfc05612727043511d70acc5ca487d49aced752fdb6510"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Receptor matching and a specified intracellular route to gene output carry the positive mechanism. The cartoon does not establish physical entry of the cytokine into DNA or one universal cytokine pathway.",
+        "sourceScope": {
+          "freshSources": [
+            "ADD02",
+            "P-hu-jak"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CY02",
+      "bodyIndices": [
+        0,
+        1
+      ],
+      "requirement": "A generic engineered supportive receptor receives a compatible separate input and selected signaling; growth is possible rather than guaranteed and depends on construct, cell state and experimental context. No named proprietary or oral product is inferred.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A01",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+          "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+          "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa"
+        },
+        {
+          "id": "A02",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "Engelowski and colleagues joined fluorescent-protein-binding nanobodies to selected cytokine-receptor membrane and intracellular domains. Artificial GFP/mCherry-based ligands induced signalling in experimental systems. That 2018 study is a particular ligand-dependent design, not a test of every synthetic receptor or of a company platform with a different architecture.",
+          "passageSha256": "5819d02534cc5bef8618bb56e0412a42a5bfe179aeeaf8166ce8ff93458c1c3f"
+        },
+        {
+          "id": "A03",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.",
+          "passageSha256": "e85b75128efb8b28c8a85fb60c74e3461cafdbada017fec05966e46d54c9e8db"
+        },
+        {
+          "id": "A05",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+          "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Defined artificial ligand/receptor experiments and human-cell IL-4 expansion support selected signalling and conditional growth. The summary retains construct/input/cell-type scope; no platform, oral route or patient efficacy is inferred.",
+        "sourceScope": {
+          "freshSources": [
+            "P-29789554",
+            "P-20562098"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CY03",
+      "bodyIndices": [
+        0,
+        1
+      ],
+      "requirement": "The illustrated same T cell has distinct CAR recognition and supportive-receptor jobs; CAR contacts surface antigen on another cell and the separate receptor receives its own trigger.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A03",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "In a 2010 human T-cell study, a chimeric receptor joined the IL-4 receptor binding region to an IL-2/IL-15 receptor signalling component. IL-4 supported expansion of the engineered cells, while a separate CAR specified the tumour target. The reported culture experiments distinguished expansion, cytokine dependence and target-cell killing; they were not patient efficacy results.",
+          "passageSha256": "e85b75128efb8b28c8a85fb60c74e3461cafdbada017fec05966e46d54c9e8db"
+        },
+        {
+          "id": "A05",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "Read each supportive feature as a testable hypothesis. A drug-triggered signal needs a baseline and a withdrawal test; an antigen-triggered signal needs testing after cells leave the priming site. Constitutive signalling raises different growth and cell-state questions, while a secreted payload can affect neighbouring cells or circulate. Orthogonal means sufficiently separate from natural partners under tested conditions, not selectivity established by its name. The supportive receptor does not specify the CAR target, and changing an internal signal is different from secreting a cytokine. An added support signal does not by itself demonstrate adequate oxygen, tissue access, recognition of an absent antigen or patient benefit.",
+          "passageSha256": "f4889bc4531e81c00b8ca65d69333b81a3430e874ff12be3df8ede7da58e86aa"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The human-cell experiment separates the IL-4 expansion receptor from antigen-specific CAR targeting. The reading rule explicitly denies that the supportive receptor specifies the CAR target.",
+        "sourceScope": {
+          "freshSources": [
+            "P-20562098",
+            "OFF00"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CY04",
+      "bodyIndices": [
+        0,
+        1
+      ],
+      "requirement": "Recognition, signaling, cell accumulation and target killing are different claims; receptor cartoons establish neither efficacy nor antigen exclusivity.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A01",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "593d00c4537121c0ae5c9052b34555ea06711a1af57e668eaf162eb058842161",
+          "supportingExcerpt": "A synthetic cytokine receptor is an engineered cell-surface protein that connects a specified input to intracellular signalling. It differs from engineering a soluble cytokine or simply administering a cytokine. Some designs require an externally supplied ligand; others generate ligand-independent signalling. The receptor domains, input, expression and cell type define the tested construct. A growth-supporting signal does not itself establish antigen recognition, entry into a tumour, completed killing or durable patient benefit.",
+          "passageSha256": "d5d7e7cea86424b000d9198732c23ce8110e1612e2931913b7061336169f3aaa"
+        },
+        {
+          "id": "A04",
+          "recordId": "synthetic-cytokine-receptors",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "5a8b1ede757fe159cf42ef304fb82994f08c4b94b361b484fa296f19ed4d6d3d",
+          "supportingExcerpt": "A mechanistic schematic shows an intended arrangement. It is not a measurement of receptor expression, signalling, cell killing or patient outcome; each of those requires its own evidence.",
+          "passageSha256": "b605ff73e057b6ba809cb1b7b79ef6d0157d59c7d9b07b356b7c21b6865ea66e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The current text explicitly separates intended mechanism, receptor expression, signalling, killing and outcome. These are evidence-reading boundaries, not an estimated treatment effect.",
+        "sourceScope": {
+          "freshSources": [
+            "P-20562098"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN01",
+      "bodyIndices": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "Ex vivo engineering collects cells, engineers/tests them outside the body and infuses the engineered cells; the carrier is not the administered final cellular product in this example.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A08",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589"
+        },
+        {
+          "id": "A12",
+          "recordId": "car-t-manufacturing-process",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "9a38021ef20e19cbc245f34cf0ccb4278c21d7b2133b7c44b737fa0e111b2316",
+          "supportingExcerpt": "A defined ex vivo process receives starting material, selects or enriches cells as needed, activates and engineers them, cultures them under controlled conditions, and prepares material for testing, storage and administration. The sequence, vector or other gene-transfer method, culture duration, fresh or frozen handling and assays depend on the product. A collection, manufacturing run, product lot, test sample and administered dose are not interchangeable units. One collection can yield multiple containers or doses; a run need not culminate in an infused treatment.",
+          "passageSha256": "6524fefb7faf5f20255e7fbd724cf9af7f53bc39a6477ea6928fd03b33a2ec54"
+        },
+        {
+          "id": "A13",
+          "recordId": "car-t-manufacturing-process",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "4b51cee5f7420354f144847de7ca597d606dc01a699e143ceb3ffcebfe81dbba",
+          "supportingExcerpt": "Release evidence retains identity, purity, viable amount, intended biological activity and relevant contamination risks. Some tests can continue after disposition only within a justified and authorised setting with appropriate follow-up. Neither receptor expression nor a viable-cell count alone establishes every required function.",
+          "passageSha256": "ae3034f6e5c403e79fca4029f2ff322d465c5f6c3474d2c88ea17aff580e57c1"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The current ex vivo process and route definition retain outside-body engineering, testing and administration of a cell product. The NCI source is a selected educational manufacturing description, not a universal duration or allogeneic-product claim.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF00"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN02",
+      "bodyIndices": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "The contrasting in vivo example administers genetic instructions/carriers; selected recipient cells are engineered in the body. It is not infusion of cells already engineered ex vivo.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A08",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589"
+        },
+        {
+          "id": "A11",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+          "passageSha256": "ddd9f5c433cb028cc42177ec1f04fdd5a4b5ddc35ff0aefe186d882cac591787"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The location/product distinction and mouse cardiac-injury mRNA example carry instruction administration and generation of modified cells inside the recipient. This does not transfer mouse cardiac results to human cancer.",
+        "sourceScope": {
+          "freshSources": [
+            "P-34990237"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN03",
+      "bodyIndices": [
+        4
+      ],
+      "requirement": "Usable delivered mRNA is translated by cytoplasmic ribosomes without a DNA intermediate or a nuclear-transcription step in this example.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A14",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+          "passageSha256": "a187d46312e114cc899cecc978235b426af437b6df035234a7305bd9452a241e"
+        },
+        {
+          "id": "A16",
+          "recordId": "targeted-lnps",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "07b9367e62685b1eda583485c5d6e81bc6eddc5dcfa9f6b7ea3b174eebef885e",
+          "supportingExcerpt": "For messenger RNA, usable delivery includes reaching the cytosol for translation. Material detected in an endosome is an earlier observation. Report particle or cargo amount per stated tissue quantity separately from protein amount or the protein-positive fraction within each identified live-cell subset. Include intended and unintended recipient populations, matched controls, route and sampling time; an organ-level signal cannot identify every expressing cell.",
+          "passageSha256": "8bbf20cfb61ecdf013faf14b90eafb7acacca95c268ab562a2209970c9a0bc8d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Current cell/instruction/protein and cytosol-delivery text distinguish usable mRNA translation from prior uptake and DNA-template transcription. The NHGRI definition supplies the cytoplasmic-ribosome location.",
+        "sourceScope": {
+          "freshSources": [
+            "ADD01"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN04",
+      "bodyIndices": [
+        4
+      ],
+      "requirement": "Usable DNA example places transcription in the nucleus, mRNA export to cytoplasm and translation outside the nucleus. It does not depict chromosome integration or DNA directly becoming protein.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A14",
+          "recordId": "car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+          "supportingExcerpt": "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+          "passageSha256": "a187d46312e114cc899cecc978235b426af437b6df035234a7305bd9452a241e"
+        },
+        {
+          "id": "A15",
+          "recordId": "aav-vector",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "58494242fac45233730bd2af9defff1d4316342407492dba78eb346f82215c7f",
+          "supportingExcerpt": "Recombinant AAV replaces the viral coding sequence with a designed cassette and regulatory sequences. The protein shell (capsid) influences which cells the particle enters; the cassette decides what those cells could make. The DNA still has to reach the nucleus and act as a template before RNA and protein appear, and an AAV is a different virus from an adenovirus.",
+          "passageSha256": "db16f45d444d2976da9bba1c2b95d2bae61b5a7f8effa89f3739cd65657b922e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The current DNA-template and RNA-to-protein sequence retains nuclear DNA and subsequent translation. Integration is a separate event, not established by the selected cartoon.",
+        "sourceScope": {
+          "freshSources": [
+            "ADD00",
+            "ADD01"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN06",
+      "bodyIndices": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "Carrier binding to a native T-cell marker and the eventual CAR binding to target-cell antigen are separate targeting jobs; the antigen-bearing target is not assumed cancer-exclusive and no killing is inferred.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A09",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "passageSha256": "8cb937735c31cb6844c950c8bd5f7d16dcf27ccb7358b2ac94b6ea134d7956c2"
+        },
+        {
+          "id": "A17",
+          "recordId": "targeted-lnps",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "589cb7041518ede36556e8dd06157ced995da445c297e8210c72202a2007b827",
+          "supportingExcerpt": "The delivery address was CD5 and the encoded receptor recognised a different target. This was a fibrosis model, not a cancer trial, and the authors disclose patents on the platforms.",
+          "passageSha256": "67db0565d81fa100110b0a7000073cb0cc2833002590387c0d6224c48dbef938"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The causal chain separates carrier contact and expression from later recognition and tumour/healthy-tissue effects. CD5 delivery and another encoded target illustrate separate addresses. Detailed unchanged Rurik numbers retain their earlier targeted-author-manuscript scope, not fresh abstract-level verification.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF00",
+            "P-34990237"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EN07",
+      "bodyIndices": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "mRNA and DNA are alternative examples, not sequential or necessarily co-delivered routes; delivery/expression/persistence/benefit are not guaranteed and manufacturing/testing is not eliminated by in vivo engineering.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A08",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589"
+        },
+        {
+          "id": "A09",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "passageSha256": "8cb937735c31cb6844c950c8bd5f7d16dcf27ccb7358b2ac94b6ea134d7956c2"
+        },
+        {
+          "id": "A10",
+          "recordId": "in-vivo-car-t",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "supportingExcerpt": "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+          "passageSha256": "1d7dceafeff3b91fcc535604e0592c418b3477a51cea5f090157819f8267b43d"
+        },
+        {
+          "id": "A13",
+          "recordId": "car-t-manufacturing-process",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "4b51cee5f7420354f144847de7ca597d606dc01a699e143ceb3ffcebfe81dbba",
+          "supportingExcerpt": "Release evidence retains identity, purity, viable amount, intended biological activity and relevant contamination risks. Some tests can continue after disposition only within a justified and authorised setting with appropriate follow-up. Neither receptor expression nor a viable-cell count alone establishes every required function.",
+          "passageSha256": "ae3034f6e5c403e79fca4029f2ff322d465c5f6c3474d2c88ea17aff580e57c1"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Location, cargo fate, release evidence and functional effects are separated in the current text. Neither an alternative-route diagram nor an ex vivo guidance supplies universal persistence, repeat-dose, efficacy or in vivo release specifications; these are scoped reading rules.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF00",
+            "P-34990237"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CD01",
+      "bodyIndices": [
+        5,
+        6,
+        7
+      ],
+      "requirement": "A companion-use claim retains the exact assay, specimen, result rule and corresponding treatment/use; a gene name alone is insufficient.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A18",
+          "recordId": "companion-diagnostic",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "3f80fbafff78e8e7a6aec4b722340b6546da9998437808e2d81c8686df499f1e",
+          "supportingExcerpt": "FDA describes companion diagnostics as devices that supply essential information for a corresponding treatment. Their roles can include identifying likely benefit, increased risk of serious adverse effects or a specified monitoring need. The treatment label and diagnostic labeling retain the relevant disease, specimen, biomarker and decision rule. Some devices have documented group labeling for specified oncology therapies. Similar analyte names do not establish assay interchangeability, and a label-matched result does not guarantee individual benefit or complete clinical suitability.",
+          "passageSha256": "5f9ddabecac4c990e124dd37f28c7a87d524b5a50904acbea813a1c759e8938c"
+        },
+        {
+          "id": "A19",
+          "recordId": "companion-diagnostic-term",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "686052d94f5772668dcfe3bb752c4dcd3a68f38ea5dcad52cdd8c6286e3e763a",
+          "supportingExcerpt": "The category concerns a device and a corresponding treatment use. FDA describes roles involving likely benefit, serious-adverse-effect risk or specified treatment monitoring. Check both the treatment and diagnostic labeling, including specimen, disease, biomarker and decision rule. A molecular report listing a drug is not by itself a companion-diagnostic authorization. Similar gene names do not establish assay interchangeability, and a positive result does not promise a response.",
+          "passageSha256": "e3e7f5542f4495d441d68ed511878cd8fd5a70d7bef6df0bb496e74b6ee15498"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Device and therapeutic intended-use labeling supply the governing match. The fictional specimen/alteration card is a premise-backed reading exercise, not a real product-pair or cutoff determination.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF09",
+            "OFF11"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CD02",
+      "bodyIndices": [
+        5,
+        6,
+        7
+      ],
+      "requirement": "A same-gene research expression result on a different specimen or analyte cannot simply substitute for the label-defined companion diagnostic.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A18",
+          "recordId": "companion-diagnostic",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "3f80fbafff78e8e7a6aec4b722340b6546da9998437808e2d81c8686df499f1e",
+          "supportingExcerpt": "FDA describes companion diagnostics as devices that supply essential information for a corresponding treatment. Their roles can include identifying likely benefit, increased risk of serious adverse effects or a specified monitoring need. The treatment label and diagnostic labeling retain the relevant disease, specimen, biomarker and decision rule. Some devices have documented group labeling for specified oncology therapies. Similar analyte names do not establish assay interchangeability, and a label-matched result does not guarantee individual benefit or complete clinical suitability.",
+          "passageSha256": "5f9ddabecac4c990e124dd37f28c7a87d524b5a50904acbea813a1c759e8938c"
+        },
+        {
+          "id": "A19",
+          "recordId": "companion-diagnostic-term",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "686052d94f5772668dcfe3bb752c4dcd3a68f38ea5dcad52cdd8c6286e3e763a",
+          "supportingExcerpt": "The category concerns a device and a corresponding treatment use. FDA describes roles involving likely benefit, serious-adverse-effect risk or specified treatment monitoring. Check both the treatment and diagnostic labeling, including specimen, disease, biomarker and decision rule. A molecular report listing a drug is not by itself a companion-diagnostic authorization. Similar gene names do not establish assay interchangeability, and a positive result does not promise a response.",
+          "passageSha256": "e3e7f5542f4495d441d68ed511878cd8fd5a70d7bef6df0bb496e74b6ee15498"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Both fields expressly reject interchangeability based on similar analyte/gene names. The research-blood-expression mismatch follows from the fictional intended-use premises, not a newly tested assay comparison.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF09"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "AP01",
+      "bodyIndices": [
+        8
+      ],
+      "requirement": "Expedited development/review support or designation is distinct from an actual product-and-use approval decision; it is not a permission ladder.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A21",
+          "recordId": "fast-track-rmat",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "ab3276452f852b03e53367609c95ae8c36b1fb9b60798a5269a20dbd13e865ed",
+          "supportingExcerpt": "Fast Track supports development and review for drugs addressing serious conditions and unmet need. Regenerative Medicine Advanced Therapy designation has its own eligible-product and preliminary-clinical-evidence criteria. Breakthrough Therapy and Priority Review likewise have distinct purposes; review support is not an efficacy result or a guarantee of approval or delivery timing. Accelerated approval, in contrast, is an approval pathway with benefit-confirmation requirements. Read the named program and the actual product decision separately.",
+          "passageSha256": "83011c95bc2c076aac6e08e963c50f3411d5042177f1ebaeebdc53f9bb508a56"
+        },
+        {
+          "id": "A20",
+          "recordId": "accelerated-approval",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "21a1df94875c4ca66b299c222caa853544a23f3b0263d3b43be921691c09a8db",
+          "supportingExcerpt": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+          "passageSha256": "f7b5c42b23b3a9230fe430d14773222dec6b9e7ec499c7b439352d6b9d118eb6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Development/review support is explicitly distinct from the separate approval decision. The diagram supplies no ladder or probability of approval.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF15",
+            "OFF05"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "AP02",
+      "bodyIndices": [
+        8
+      ],
+      "requirement": "Traditional and accelerated approval are actual approval pathways; accelerated approval retains benefit-confirmation requirements.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A20",
+          "recordId": "accelerated-approval",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "21a1df94875c4ca66b299c222caa853544a23f3b0263d3b43be921691c09a8db",
+          "supportingExcerpt": "Accelerated approval is a marketing approval for an indication, distinct from a development designation. FDA can use a surrogate or intermediate clinical endpoint reasonably likely to predict benefit for an eligible serious condition. Required studies must confirm the anticipated benefit; the use can receive traditional approval or undergo withdrawal through the applicable process. A preliminary laboratory signal, a product name or a historical announcement does not establish current approval for a particular use.",
+          "passageSha256": "f7b5c42b23b3a9230fe430d14773222dec6b9e7ec499c7b439352d6b9d118eb6"
+        },
+        {
+          "id": "A22",
+          "recordId": "full-approval",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "6bb2be64c13051e925805422979c4e6b4f5b8f2c98991434dbb4418dff60ec90",
+          "supportingExcerpt": "FDA distinguishes a validated surrogate that can support traditional approval from a surrogate reasonably likely to predict benefit that can support accelerated approval. Traditional approval does not always require a demonstrated survival increase. Accelerated approval carries requirements to confirm the anticipated clinical benefit and can later be converted or withdrawn through the applicable process. The current indication and evidence matter more than a general approved-drug badge.",
+          "passageSha256": "922629ccbf6cab83d64e4639bb1faeaf05a595e8523e056b9b488ee7f8f2190e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The existing fields retain approval-for-an-indication and confirmatory-benefit requirements, with conversion/withdrawal qualifications. No claim that every traditional approval requires survival improvement is introduced.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF05"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "AP03",
+      "bodyIndices": [
+        8
+      ],
+      "requirement": "Expedited-program status does not guarantee approval, fixed timing, superiority, individual access or personal benefit.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A21",
+          "recordId": "fast-track-rmat",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "ab3276452f852b03e53367609c95ae8c36b1fb9b60798a5269a20dbd13e865ed",
+          "supportingExcerpt": "Fast Track supports development and review for drugs addressing serious conditions and unmet need. Regenerative Medicine Advanced Therapy designation has its own eligible-product and preliminary-clinical-evidence criteria. Breakthrough Therapy and Priority Review likewise have distinct purposes; review support is not an efficacy result or a guarantee of approval or delivery timing. Accelerated approval, in contrast, is an approval pathway with benefit-confirmation requirements. Read the named program and the actual product decision separately.",
+          "passageSha256": "83011c95bc2c076aac6e08e963c50f3411d5042177f1ebaeebdc53f9bb508a56"
+        },
+        {
+          "id": "A22",
+          "recordId": "full-approval",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "6bb2be64c13051e925805422979c4e6b4f5b8f2c98991434dbb4418dff60ec90",
+          "supportingExcerpt": "FDA distinguishes a validated surrogate that can support traditional approval from a surrogate reasonably likely to predict benefit that can support accelerated approval. Traditional approval does not always require a demonstrated survival increase. Accelerated approval carries requirements to confirm the anticipated clinical benefit and can later be converted or withdrawn through the applicable process. The current indication and evidence matter more than a general approved-drug badge.",
+          "passageSha256": "922629ccbf6cab83d64e4639bb1faeaf05a595e8523e056b9b488ee7f8f2190e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The text denies efficacy, approval and timing guarantees from program status and asks for the actual indication/evidence. Superiority and individual access/benefit cannot be inferred from that administrative label; this is a reading rule, not a global negative product inventory.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF15",
+            "OFF05"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "RU01",
+      "bodyIndices": [
+        9,
+        10,
+        11
+      ],
+      "requirement": "RUO attaches to intended research purpose, CLIA certification to a laboratory and FDA authorization to a product/use; they describe different objects.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A24",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Research purpose, laboratory-quality oversight and product/use authorization attach to different objects. The wording is general educational scope and does not decide a particular test legal status.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF10",
+            "OFF01"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "RU02",
+      "bodyIndices": [
+        9,
+        10,
+        11
+      ],
+      "requirement": "These statuses can overlap and are not successive permission tiers.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A24",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The existing field explicitly says the descriptions can coexist and are not a universal ladder. This is the logical scope of the separate definitions, not an authorization of every combined use.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF10",
+            "OFF01"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "RU03",
+      "bodyIndices": [
+        9,
+        10,
+        11
+      ],
+      "requirement": "A laboratory-quality or authorization badge alone does not establish all clinical-validity, treatment-selection utility or payer-coverage claims.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A24",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "bbf7837e02d265e0e9ffcc21c9f72bf39444cb1c31fe4513c3744d9e1cb06294",
+          "supportingExcerpt": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
+          "passageSha256": "148da8aa9f2e2ea27463b14a4963c81f9e3ad6ffe0410af42df28a167f7d2419"
+        },
+        {
+          "id": "A25",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "The CMS FAQ is used here for the analytical-oversight versus clinical-validity distinction, not its historical discussion of FDA authority over laboratory-developed tests. Current procedural history is retained in the separate FDA LDT-rule record.",
+          "passageSha256": "01dd18659d8037cfa105e96f8e7f3d78aaf01161e653e571e490bc1eb883cc87"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "CMS distinguishes its analytical oversight from clinical validity and payment responsibilities. The historical FAQ is used only for that analytical/clinical distinction, not as current FDA LDT-law authority.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF01",
+            "OFF02"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "RU04",
+      "bodyIndices": [
+        9,
+        11
+      ],
+      "requirement": "The FDA LDT-rule vacatur/restoration notice is explicitly dated; historical 2013 FDA-authority/enforcement text is not adopted as current LDT law.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A23",
+          "recordId": "fda-ldt-rule",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "2becb7fe05116b5cd924499bd1706c2f48a4907230f082105a7d9cb244154cf8",
+          "supportingExcerpt": "FDA issued its laboratory-developed-test rule in May 2024. Its current notice states that a federal court vacated that rule in March 2025 and that FDA restored the earlier regulatory text in September 2025. The vacated phaseout schedule should not be presented as a current requirement. An LDT description alone does not establish FDA authorization, research-only status or clinical usefulness. Check the actual laboratory, product and intended use rather than assigning every LDT one approval or evidence status.",
+          "passageSha256": "ad7c2e5ceca69a80c8f6759126bf2f9a9dee205eb581baedc4dfc44ce289feef"
+        },
+        {
+          "id": "A25",
+          "recordId": "laboratory-certification-test-authorization",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "59a1683a3dded4d17e0a263ce873b6689ab21437333efc5cfe59160131aab75a",
+          "supportingExcerpt": "The CMS FAQ is used here for the analytical-oversight versus clinical-validity distinction, not its historical discussion of FDA authority over laboratory-developed tests. Current procedural history is retained in the separate FDA LDT-rule record.",
+          "passageSha256": "01dd18659d8037cfa105e96f8e7f3d78aaf01161e653e571e490bc1eb883cc87"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The current dated FDA notice matches the May2024/March2025/September2025 procedural history. The record explicitly keeps the old FAQ legal discussion outside current-law support.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF12"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EA01",
+      "bodyIndices": [
+        12,
+        13
+      ],
+      "requirement": "For non-emergency individual-patient access, distinguish the new IND clock starting at FDA receipt from a protocol under an existing active IND, retaining earlier-notification/clinical-hold and IRB conditions.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A26",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "15098075d01bcc81dfef74c9648dda422fbc44559cdf5c57ea25340650faed56",
+          "supportingExcerpt": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+          "passageSha256": "1c4e62a6976da467ad790b1359365244968a73b50e893198d783ea2ce0a7d12d"
+        },
+        {
+          "id": "A27",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+          "passageSha256": "0084ae8ec356695004f48e32d989d8704a9b1a18a68fa52c74c7a4593d4883e5"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The April2026 Q25/Q26 and non-emergency protocol paragraph distinguish FDA-receipt effectiveness from an active-IND protocol, with IRB and hold/earlier-notification conditions. The separate FDA IND page states calendar-day units.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF08",
+            "OFF06"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EA02",
+      "bodyIndices": [
+        12,
+        13
+      ],
+      "requirement": "Manufacturer supply/agreement, consent and review/logistics remain separate requirements; a regulatory interval is not a promised treatment date.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A26",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "summary",
+          "fieldSha256": "15098075d01bcc81dfef74c9648dda422fbc44559cdf5c57ea25340650faed56",
+          "supportingExcerpt": "United States, federal regulation: drug and biologic expanded access has individual-patient, intermediate-population and widespread-treatment arrangements. Criteria include serious or immediately life-threatening illness, no comparable satisfactory alternative, justified potential benefit and risk, and no interference with clinical development. A new individual-patient IND is different from a protocol under an existing active IND. Supplier agreement and applicable FDA, ethics-review and consent requirements remain separate from manufacture, institutional readiness and scheduling. Access authorization is not evidence that treatment improves outcomes.",
+          "passageSha256": "1c4e62a6976da467ad790b1359365244968a73b50e893198d783ea2ce0a7d12d"
+        },
+        {
+          "id": "A29",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "In a fictional request, a supplier says manufacture could finish next week while institutional review, the treatment plan and monitoring remain unresolved. That is a manufacturing estimate, not a treatment date. Similarly, FDA permission without a service able to administer and monitor the product leaves a delivery gate open. Ask which milestones are complete and which depend on others. A fictional new non-emergency individual-patient IND with supplier agreement, the necessary product information, applicable IRB review and consent can proceed when effective, ordinarily 30 days after FDA receipt or earlier FDA notice, provided it is not on hold. Supplier review, manufacture, FDA review, institutional review, shipping and scheduling each need their own estimate and dependencies.",
+          "passageSha256": "5320a343121fd7bc8b082cb78c30eac7c44dc1ec9dc78b78c4422994681bec7a"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Q27 states that supply is voluntary. The fictional readiness example preserves supplier, institution, consent and scheduling as separate dependencies; it predicts no treatment date.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF08"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EA03",
+      "bodyIndices": [
+        12,
+        13
+      ],
+      "requirement": "The individual-patient illustration does not generalize emergency or widespread-treatment provisions to an ordinary non-emergency request.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "To be checked from actual primary passages; prior agent review and claimed source bounds are not current verification.",
+      "status": "represented-at-stated-scientific-scope-in-existing-local-draft",
+      "evidence": [
+        {
+          "id": "A27",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "For non-emergency individual-patient use, a new IND ordinarily becomes effective 30 calendar days after FDA receipt unless held or FDA permits earlier use. An individual-patient protocol under an existing active IND has no automatic 30-day wait, but must be submitted and have applicable IRB approval and consent. Widespread-use treatment protocols have different start rules.",
+          "passageSha256": "0084ae8ec356695004f48e32d989d8704a9b1a18a68fa52c74c7a4593d4883e5"
+        },
+        {
+          "id": "A28",
+          "recordId": "expanded-access",
+          "version": "proposal-support-bodies-08-root",
+          "field": "notes",
+          "fieldSha256": "d7994663e67761242ba1fd9e14a8e0d6048ab4e3a147d6c8c48c5b2cea3a389b",
+          "supportingExcerpt": "Emergency individual-patient use can receive prior FDA authorisation by telephone or other rapid communication, allowing use to begin before the written expanded-access submission. That submission is due within 15 working days of FDA authorisation. When there is insufficient time for prospective institutional review board (IRB) review, report the emergency use to the IRB within 5 working days of starting treatment. Subsequent use at the same institution normally requires prior IRB review. FDA's April 2026 guidance also describes discretion for a subsequent emergency request when prior review is infeasible, with the same 5-working-day reporting requirement. This is not continuing permission or a promised treatment date.",
+          "passageSha256": "31cac81351b6263148db1db12c1a5c0f3454e55880c7a07cdb7aee88e042d8ee"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The notes explicitly distinguish non-emergency individual IND/protocol and emergency reporting, while naming different widespread-treatment rules. April2026 selected Q24-Q26 supports those boundaries; no whole regulation or guidance read is claimed.",
+        "sourceScope": {
+          "freshSources": [
+            "OFF08"
+          ],
+          "readingDepth": "Actual complete abstracts or separately logged selected raw official passages; no fresh whole primary paper or whole regulatory guidance.",
+          "inherited": "Unchanged canonical assertions outside these exact excerpts retain their previous recorded source depth; source/approval attestations in bodies supply no evidence."
+        },
+        "constructionPremises": "Scientific schematic and fictional cards are scoped as described. Layout, colors, geometry, approvals and private custody are not empirical treatment evidence."
+      },
+      "remaining": []
+    }
+  ],
+  "nativeAssignments": [
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/assay-specimen-rule-and-use-v1-dark.svg",
+      "requirements": [
+        "CD01",
+        "CD02"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bffdfa78f58472c0e4ada44499a5591144386060a922163124fb6b6775482bc1",
+          "bytes": 3229,
+          "gitBlob": "0079167f908b951243b3a9bfd903edc73ca2d819",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bffdfa78f58472c0e4ada44499a5591144386060a922163124fb6b6775482bc1",
+          "bytes": 3229,
+          "gitBlob": "0079167f908b951243b3a9bfd903edc73ca2d819",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/assay-specimen-rule-and-use-v1-light.svg",
+      "requirements": [
+        "CD01",
+        "CD02"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "e1eed75db09f7d9cdb470b015754c8a01306cb0188fff5b7d7f27c1fc0b3b08f",
+          "bytes": 3229,
+          "gitBlob": "2455c52c271d07bd1226aab175dc5d78516779f7",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e1eed75db09f7d9cdb470b015754c8a01306cb0188fff5b7d7f27c1fc0b3b08f",
+          "bytes": 3229,
+          "gitBlob": "2455c52c271d07bd1226aab175dc5d78516779f7",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/expedited-support-versus-approval-decision-b10-v1-dark.svg",
+      "requirements": [
+        "AP01",
+        "AP02",
+        "AP03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3414126b43abe3794ab51551dd61d2daef35415830cc1ee42e9ed984e3f7bccb",
+          "bytes": 4248,
+          "gitBlob": "7442f79b6be925e01e2c23ca4a572dbb55ef326d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "3414126b43abe3794ab51551dd61d2daef35415830cc1ee42e9ed984e3f7bccb",
+          "bytes": 4248,
+          "gitBlob": "7442f79b6be925e01e2c23ca4a572dbb55ef326d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/expedited-support-versus-approval-decision-b10-v1-light.svg",
+      "requirements": [
+        "AP01",
+        "AP02",
+        "AP03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "28d94cf6f4b7baaf9152e64f4a413c90f46cdb8e9b957257ae4ffdc64d0753d9",
+          "bytes": 4248,
+          "gitBlob": "4017ebf9e58671b7722347cf1be26d990f9d4a18",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "28d94cf6f4b7baaf9152e64f4a413c90f46cdb8e9b957257ae4ffdc64d0753d9",
+          "bytes": 4248,
+          "gitBlob": "4017ebf9e58671b7722347cf1be26d990f9d4a18",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/purpose-laboratory-and-product-use-objects-b10-v1-dark.svg",
+      "requirements": [
+        "RU01",
+        "RU02",
+        "RU03",
+        "RU04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "2e5e41ed8e19c27cedceac7c178c0822a3fbd355b0ee3140aa0a23eac7c34e3e",
+          "bytes": 4977,
+          "gitBlob": "2fedb7159683bcd8c48da0a5518981252b52619d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "2e5e41ed8e19c27cedceac7c178c0822a3fbd355b0ee3140aa0a23eac7c34e3e",
+          "bytes": 4977,
+          "gitBlob": "2fedb7159683bcd8c48da0a5518981252b52619d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/approval/images/purpose-laboratory-and-product-use-objects-b10-v1-light.svg",
+      "requirements": [
+        "RU01",
+        "RU02",
+        "RU03",
+        "RU04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "53c94578b31c735712c1984674bad56d760fa3ef47576f938cfc4661ead9de9f",
+          "bytes": 4977,
+          "gitBlob": "8c5788284d1e83c88e9a36476f1320f0d9c7451c",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "53c94578b31c735712c1984674bad56d760fa3ef47576f938cfc4661ead9de9f",
+          "bytes": 4977,
+          "gitBlob": "8c5788284d1e83c88e9a36476f1320f0d9c7451c",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/trials-and-access/images/existing-ind-protocol-and-new-ind-clock-v1-dark.svg",
+      "requirements": [
+        "EA01",
+        "EA02",
+        "EA03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "e9e0142fd2d0d96e6b1cb249a99982a0b15dd2a5dd8d228ad43d2bb404c00c30",
+          "bytes": 2907,
+          "gitBlob": "87610d10b490933ac7857fdf32e3fa1ebf226f39",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e9e0142fd2d0d96e6b1cb249a99982a0b15dd2a5dd8d228ad43d2bb404c00c30",
+          "bytes": 2907,
+          "gitBlob": "87610d10b490933ac7857fdf32e3fa1ebf226f39",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/access-and-regulation/trials-and-access/images/existing-ind-protocol-and-new-ind-clock-v1-light.svg",
+      "requirements": [
+        "EA01",
+        "EA02",
+        "EA03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "220e16dfae93105d6460985b955366a29f88bd1ca435f78e4483978e911519f1",
+          "bytes": 2907,
+          "gitBlob": "b726574f81db7d7eb6fd74246d7894a3a8675095",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "220e16dfae93105d6460985b955366a29f88bd1ca435f78e4483978e911519f1",
+          "bytes": 2907,
+          "gitBlob": "b726574f81db7d7eb6fd74246d7894a3a8675095",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    }
+  ]
+}

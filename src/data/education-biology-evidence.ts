@@ -74,7 +74,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "notes": [
       "Endoplasmic reticulum and estrogen receptor are different meanings of ER; use the full name when context is unclear.",
       "Localization, colocalization, amount, interaction and function need different evidence. More or brighter organelle staining does not by itself measure the rate of material passing through a pathway.",
-      "Mitochondria have roles beyond ATP production. Liu and colleagues used cell-free extracts and cytochrome-c depletion/add-back experiments to examine an apoptotic mechanism; this is a defined experimental result, not a universal measurement of cell death."
+      "Mitochondria have roles beyond ATP production. Liu and colleagues used cell-free extracts and cytochrome-c depletion/add-back experiments to examine an apoptotic mechanism; this is a defined experimental result, not a universal measurement of cell death.",
+      "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect."
     ],
     "links": [
       {
@@ -101,7 +102,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "apoptosis-bcl2"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {
@@ -172,7 +173,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "summary": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
     "notes": [
       "Standard bisulfite analysis changes unmodified cytosine but reads both 5-methylcytosine and 5-hydroxymethylcytosine as C. Oxidative bisulfite methods separate those features through additional chemistry. Ordinary amplified DNA sequence does not preserve this direct chemical measurement.",
-      "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity."
+      "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity.",
+      "In an invented sequence example, AACGT can carry a methyl group on its C while the underlying base order remains AACGT. Replacing that C with T instead gives AATGT, a different underlying DNA sequence. Changing a chemical mark on a histone protein is different again. Keep that biological comparison separate from an assay that chemically converts bases: standard bisulfite treatment can change the readout without establishing that the original DNA carried a C-to-T variant. Read the conversion chemistry, locus and cell context before interpreting a methylation call."
     ],
     "links": [
       {
@@ -200,7 +202,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "histone-lactylation"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {
@@ -236,8 +238,9 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "Developing lymphocytes assemble receptor genes from selected DNA segments. Making a receptor is separate from showing what it recognizes or whether it produces a useful response.",
     "summary": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
-    "notes": ["Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.","Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination.","Off-target RAG rearrangement must be interpreted in its cellular and sequence context. In the 2014 ETV6-RUNX1 acute lymphoblastic leukemia study, the authors found breakpoint recombination-signal motifs, junctional additions and enrichment at active B-development promoters and enhancers; single-cell analysis supported continuing rearrangement in the examined leukemias. This is evidence from that disease context, not a demonstration that RAG expression in any sampled cell proves active cutting or the same mechanism.","Different rearrangement paths can produce the same receptor amino-acid sequence. Influenza-specific mouse TCR-beta analysis and a separate human naive/memory CD8 T-cell study support convergent recombination and receptor sharing. The human study sampled four individuals; neither study establishes an individual cancer response. A shared receptor sequence or an expanded sequence count alone does not establish unique recent ancestry, antigen specificity or tumor killing."],
-    "links": [{"label":"Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.","url":"https://pubmed.ncbi.nlm.nih.gov/8521468/"},{"label":"RAG-1-deficient mice have no mature B and T lymphocytes.","url":"https://pubmed.ncbi.nlm.nih.gov/1547488/"},{"label":"Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.","url":"https://pubmed.ncbi.nlm.nih.gov/24600447/"},{"label":"EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.","url":"https://pubmed.ncbi.nlm.nih.gov/22918122/"},{"label":"Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access","url":"https://pubmed.ncbi.nlm.nih.gov/20139091/"},{"label":"Papaemmanuil and colleagues: RAG-associated rearrangement in ETV6-RUNX1 ALL","url":"https://pubmed.ncbi.nlm.nih.gov/24413735/"},{"label":"Venturi and colleagues: convergent recombination in influenza-specific mouse TCR-beta responses","url":"https://pubmed.ncbi.nlm.nih.gov/17130450/"},{"label":"Venturi and colleagues: human naive/memory CD8 TCR sharing, four individuals","url":"https://pubmed.ncbi.nlm.nih.gov/21383244/"}],
+    "notes": ["Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.","Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination.","Off-target RAG rearrangement must be interpreted in its cellular and sequence context. In the 2014 ETV6-RUNX1 acute lymphoblastic leukemia study, the authors found breakpoint recombination-signal motifs, junctional additions and enrichment at active B-development promoters and enhancers; single-cell analysis supported continuing rearrangement in the examined leukemias. This is evidence from that disease context, not a demonstration that RAG expression in any sampled cell proves active cutting or the same mechanism.","Different rearrangement paths can produce the same receptor amino-acid sequence. Influenza-specific mouse TCR-beta analysis and a separate human naive/memory CD8 T-cell study support convergent recombination and receptor sharing. The human study sampled four individuals; neither study establishes an individual cancer response. A shared receptor sequence or an expanded sequence count alone does not establish unique recent ancestry, antigen specificity or tumor killing.",
+      "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells."],
+    "links": [{"label":"Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.","url":"https://pubmed.ncbi.nlm.nih.gov/8521468/"},{"label":"RAG-1-deficient mice have no mature B and T lymphocytes.","url":"https://pubmed.ncbi.nlm.nih.gov/1547488/"},{"label":"Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.","url":"https://pubmed.ncbi.nlm.nih.gov/24600447/"},{"label":"EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.","url":"https://pubmed.ncbi.nlm.nih.gov/22918122/"},{"label":"Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access","url":"https://pubmed.ncbi.nlm.nih.gov/20139091/"},{"label":"Papaemmanuil and colleagues: RAG-associated rearrangement in ETV6-RUNX1 ALL","url":"https://pubmed.ncbi.nlm.nih.gov/24413735/"},{"label":"Venturi and colleagues: convergent recombination in influenza-specific mouse TCR-beta responses","url":"https://pubmed.ncbi.nlm.nih.gov/17130450/"},{"label":"Venturi and colleagues: human naive/memory CD8 TCR sharing, four individuals","url":"https://pubmed.ncbi.nlm.nih.gov/21383244/"},{"label":"Klein and colleagues: selection of developing T cells by self peptide and MHC complexes (review, 2014)","url":"https://pubmed.ncbi.nlm.nih.gov/24830344/"}],
     "related": [
       "clonality-testing",
       "ig-tcr-clonality",
@@ -246,7 +249,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "germinal-centre-reaction"
     ],
     "kind": "term",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {

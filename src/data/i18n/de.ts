@@ -178,7 +178,7 @@ export const tldr_de: Record<string, string> = {
   "cell-therapy-roadmap": "Von der Heilung einiger Leukämien im Jahr 2017 über die erste CAR-T gegen solide Tumoren bis zur Aussicht, CAR-T mit einer Injektion direkt im Körper herzustellen.",
   cemiplimab: "Ein PD-1-Blocker, der Standard beim fortgeschrittenen Plattenepithelkarzinom der Haut ist und 2025 die erste adjuvante Immuntherapie dafür wurde.",
   cetuximab: "Ein Antikörper, der den Wachstumsrezeptor EGFR blockiert. Er wirkt bei Darmkrebs mit normalem RAS-Gen, besonders bei linksseitigen Tumoren, und ist ein wichtiger Partner in der BRAF-Kombination.",
-  "cgas-sting": "cGAS-STING ist der Alarm der Zelle für DNA am falschen Ort. Strahlung, Chemotherapie und ADCs lassen DNA ins Zytoplasma gelangen; cGAS erkennt sie, STING schlägt Alarm, und Interferon ruft das Immunsystem herbei.",
+  "cgas-sting": "cGAS ist ein DNA-Sensor, der die Signalübertragung über STING aktivieren kann. Das gemessene Signal und die Immunwirkung hängen von der Zelle und dem Kontext ab.",
   cgp: "Hunderte Krebsgene auf einmal aus einer Biopsie sequenzieren, um die Mutationen zu finden, gegen die ein Medikament gerichtet werden kann.",
   "checkmate-067": "Die Studie mit der längsten Nachbeobachtung in der Immuntherapie: Etwa die Hälfte der Patienten unter der Kombination ist nach 10 Jahren noch am Leben.",
 
@@ -3219,7 +3219,7 @@ export const tldr_de: Record<string, string> = {
   "ocular-toxicity": "Augenprobleme durch Krebsmedikamente: verschwommenes Sehen und Hornhautschäden durch bestimmte ADCs (Belantamab, Tisotumab), Flüssigkeit in der Netzhaut durch MEK-Inhibitoren und Entzündungen durch Immuntherapie. Meist reversibel durch Therapiepausen, aber sie erfordern regelmäßige Augenuntersuchungen.",
   ofatumumab: "Ofatumumab (Arzerra) ist ein vollständig humaner Anti-CD20-Antikörper gegen chronische lymphatische Leukämie, eingesetzt mit Chlorambucil bei unbehandelten Patienten oder allein nach Versagen anderer Medikamente; dasselbe Molekül wird als Kesimpta gegen Multiple Sklerose verkauft.",
   "oh-do-youn": "Leitender Prüfarzt von TOPAZ-1, der Studie, die die Immuntherapie zur Erstlinien-Chemotherapie bei Gallengangskrebs hinzufügte.",
-  oligoprogression: "Wenn unter einer ansonsten wirksamen zielgerichteten Therapie nur ein oder zwei Herde wachsen; die Herde behandeln und die Tablette beibehalten.",
+  oligoprogression: "Bei einer Oligoprogression schreitet eine begrenzte Zahl von Herden fort, während die übrige Erkrankung unter der Behandlung kontrolliert bleibt. Definition und Evidenz für eine zusätzliche lokale Behandlung hängen vom klinischen Kontext oder der Studie ab.",
   olomorasib: "Olomorasib ist die KRAS-G12C-Tablette von Lilly, entwickelt, um sich in der Erstlinie des Lungenkarzinoms sicher mit Immuntherapie kombinieren zu lassen.",
   "on-target-laboratories": "Ausgründung der Purdue University, die Cytalux entwickelte, den leuchtenden Farbstoff, der Eierstock- und Lungenkrebsherde während der Operation sichtbar macht.",
   "onc-ai": "Onc.AI trainiert künstliche Intelligenz an Routine-CT-Aufnahmen, um früh vorherzusagen, ob die Immuntherapie eines Lungenkrebspatienten wirkt, damit Ärzte und Arzneimittelentwickler früher umsteuern können.",

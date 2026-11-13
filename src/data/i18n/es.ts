@@ -368,7 +368,7 @@ export const tldr_es: Record<string, string> = {
   c797s: "Una mutación que impide que el osimertinib se una a EGFR; la principal vía de escape sobre la diana.",
   "met-amplification": "Cuando el cáncer de pulmón enciende el receptor MET para eludir una pastilla anti-EGFR bloqueada.",
   "histologic-transformation": "Cuando un adenocarcinoma de pulmón escapa a la terapia dirigida convirtiéndose en otro tipo celular, normalmente células pequeñas.",
-  oligoprogression: "Cuando solo crecen uno o dos focos mientras una terapia dirigida sigue funcionando; se tratan los focos y se mantiene la pastilla.",
+  oligoprogression: "En la oligoprogresión avanza un conjunto limitado de lesiones mientras el resto de la enfermedad sigue controlado durante el tratamiento. La definición y la evidencia para añadir tratamiento local dependen del contexto clínico o del estudio.",
   psa: "Una proteína en sangre producida por la próstata; niveles elevados motivan más pruebas y niveles decrecientes muestran que el tratamiento funciona.",
   "gleason-grade-group": "La graduación del patólogo de 1 a 5 de cuán anómalo parece el cáncer de próstata, que guía la mayoría de las decisiones terapéuticas.",
   "castration-resistance": "Cáncer de próstata que sigue creciendo aunque la testosterona se haya reducido a niveles de castración.",
@@ -437,7 +437,7 @@ export const tldr_es: Record<string, string> = {
   "p53-cell-cycle": "Los frenos. p53 detecta el daño y detiene la copia de la célula; RB retiene la célula en la puerta G1 hasta que CDK4/6 la abre. Los cánceres cortan estos frenos.",
 
   "pd1-checkpoint": "PD-1 y CTLA-4 ayudan a regular las respuestas de las células T. Cambiar sus señales por sí solo no demuestra reconocimiento o destrucción del cáncer ni beneficio del tratamiento.",
-  "cgas-sting": "La alarma de la célula ante ADN fuera de lugar. La radiación, la quimioterapia y los ADC derraman ADN en el citoplasma; cGAS lo detecta, STING da la alarma y el interferón llama al sistema inmunitario.",
+  "cgas-sting": "cGAS es un sensor de ADN que puede activar la señalización a través de STING. La señal medida y el efecto inmunitario dependen de la célula y del contexto.",
   "er-signaling": "En el cáncer de mama hormonal, el estrógeno se une a su receptor, que enciende genes que hacen dividir la célula. Toda terapia endocrina corta esta cadena en algún punto.",
   "ar-signaling": "El motor del cáncer de próstata. La testosterona se convierte en DHT, se une al receptor de andrógenos e impulsa genes de crecimiento. La castración quita el combustible; las pastillas nuevas bloquean el receptor o la enzima que fabrica combustible dentro del tumor.",
   "apoptosis-bcl2": "El interruptor de autodestrucción de la célula. BCL-2 lo mantiene cerrado; BAX y BAK lo abren. El venetoclax aparta a BCL-2 para que el interruptor pueda disparar.",

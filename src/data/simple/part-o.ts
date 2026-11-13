@@ -215,7 +215,7 @@ export const simpleO: Record<string, string> = {
   "stride-dna-break-detection": "STRIDE is a microscope test that lights up individual broken DNA strands inside cells, so a laboratory can count how much DNA damage a tumour carries or a drug causes.",
   "superficial-radiotherapy": "Superficial radiotherapy uses low-energy X-rays that stop within a few millimetres to cure basal and squamous cell skin cancers where surgery would scar.",
   "surface-guided-radiotherapy": "Surface-guided radiotherapy uses cameras to track the patient's skin in three dimensions during treatment, replacing tattoos and pausing the beam if the patient moves.",
-  "linear-quadratic-model": "The linear-quadratic model is the equation radiotherapy uses to compare schedules, with the alpha over beta ratio telling how much a tissue cares about the size of each dose.",
+  "linear-quadratic-model": "A radiation model includes a part proportional to dose and a part proportional to dose squared. Its use depends on the tissue, the outcome being studied and how radiation is delivered.",
   "thyroid-cancer-markers": "After the thyroid is removed for cancer, the blood protein thyroglobulin should fall to nothing, so any measurable level in follow-up means cancer is still there.",
   "tigit-blockade": "TIGIT blockers are antibodies against a brake on T cells and natural killer cells, tested alongside PD-L1 drugs, but the biggest lung cancer trials so far have failed.",
   "tim3-blockade": "TIM-3 blockers are antibodies against a checkpoint on exhausted T cells and myeloid cells, tested mostly with PD-1 drugs and in blood cancers.",
@@ -235,7 +235,7 @@ export const simpleO: Record<string, string> = {
   "zap-x": "ZAP-X is a brain radiosurgery machine wrapped in its own steel shielding, so it needs no concrete bunker or radioactive cobalt and can sit in an ordinary outpatient building.",
   // clinic and treatment terms
   "alpha-beta-ratio": "The alpha/beta ratio is a number for each tissue or tumour that says how much it cares about the size of each radiation dose rather than the total dose.",
-  "biologically-effective-dose": "Biologically effective dose is a way of turning any radiotherapy schedule into a common currency, so a few big doses can be fairly compared with many small ones.",
+  "biologically-effective-dose": "Biologically effective dose compares radiation patterns using a model and assumptions about the tissue. Equal calculated values do not prove equal treatment benefit or safety.",
   "planning-target-volume": "GTV, CTV and PTV are the nested outlines a radiation plan is drawn on: the visible tumour, the tumour plus tissue likely to hold hidden spread, and an extra margin for daily movement.",
   haematocrit: "Haematocrit is the share of the blood made up of red cells, and in polycythaemia vera treatment aims to keep it under 45 percent because clots become far more likely above that.",
   "jak2-v617f": "JAK2 V617F is a single letter change in the JAK2 gene that jams the growth signal for blood cells in the on position, and almost everyone with polycythaemia vera has it.",

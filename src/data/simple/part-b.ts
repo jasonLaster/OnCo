@@ -7,7 +7,7 @@ export const simpleB: Record<string, string> = {
   c797s: "A change that stops osimertinib from binding, the main way lung cancers escape that pill.",
   "met-amplification": "When lung cancer switches on the MET receptor to get around a blocked EGFR pill.",
   "histologic-transformation": "When a lung cancer escapes treatment by turning into a different type of cell.",
-  oligoprogression: "When only one or two spots grow while a pill is otherwise still working; treat the spots and keep the pill.",
+  oligoprogression: "A few lesions grow while other cancer stays controlled during treatment. That pattern alone does not decide whether adding local treatment helps or which medicine to continue.",
   psa: "A protein made by the prostate and measured in blood. A rise prompts tests; a fall shows treatment is working.",
   "gleason-grade-group": "The 1-to-5 grade of how abnormal prostate cancer cells look under the microscope.",
   "castration-resistance": "Prostate cancer that keeps growing even when testosterone has been pushed very low.",
@@ -87,7 +87,7 @@ export const simpleB: Record<string, string> = {
   "p53-cell-cycle": "The cell's brakes. p53 senses damage and stops the cell copying itself. Cancers cut these brakes.",
 
   "pd1-checkpoint": "PD-1 and CTLA-4 help control T-cell responses. Changing their signals does not by itself show cancer recognition, killing or treatment benefit.",
-  "cgas-sting": "The cell's alarm for DNA in the wrong place. When it goes off, the immune system is called in.",
+  "cgas-sting": "cGAS senses DNA and can switch on signals through STING. What is measured and how the immune system responds depend on the cell and the situation.",
   "er-signaling": "In hormone-driven breast cancer, oestrogen binds its receptor and switches on genes that make the cell divide.",
   "ar-signaling": "Prostate cancer's engine. Testosterone binds its receptor and drives growth. Treatments remove the fuel or block the receptor.",
   "apoptosis-bcl2": "The cell's self-destruct switch. BCL-2 holds it shut; the pill venetoclax lets it fire.",

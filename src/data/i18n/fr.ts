@@ -178,7 +178,7 @@ export const tldr_fr: Record<string, string> = {
   "cell-therapy-roadmap": "De la guérison de certaines leucémies en 2017 à la première CAR-T contre les tumeurs solides, jusqu'à la perspective de fabriquer des CAR-T directement dans le corps par une injection.",
   cemiplimab: "Un bloqueur de PD-1 qui est le traitement standard du carcinome épidermoïde cutané avancé et qui, en 2025, est devenu la première immunothérapie adjuvante pour ce cancer.",
   cetuximab: "Un anticorps qui bloque le récepteur de croissance EGFR. Il est efficace dans les cancers de l'intestin dont le gène RAS est normal, surtout ceux du côté gauche, et il est un partenaire clé de l'association ciblant BRAF.",
-  "cgas-sting": "cGAS-STING est l'alarme de la cellule face à du DNA qui se trouve au mauvais endroit. La radiothérapie, la chimiothérapie et les ADC répandent du DNA dans le cytoplasme ; cGAS le détecte, STING déclenche l'alarme et l'interféron appelle le système immunitaire.",
+  "cgas-sting": "cGAS est un capteur d’ADN qui peut activer la signalisation par STING. Le signal mesuré et l’effet immunitaire dépendent de la cellule et du contexte.",
   cgp: "Séquencer des centaines de gènes du cancer en une seule fois à partir d'une biopsie pour trouver les mutations qu'un médicament peut cibler.",
   "checkmate-067": "L'essai avec le plus long suivi en immunothérapie : environ la moitié des patients sous l'association sont en vie à 10 ans.",
 
@@ -3219,7 +3219,7 @@ export const tldr_fr: Record<string, string> = {
   "ocular-toxicity": "Problèmes oculaires dus aux médicaments anticancéreux : vision floue et lésions de la cornée avec certains ADC (belantamab, tisotumab), liquide rétinien avec les inhibiteurs de MEK, et inflammation avec l'immunothérapie. Généralement réversibles avec des interruptions de dose, mais ils nécessitent des examens ophtalmologiques réguliers.",
   ofatumumab: "L'ofatumumab (Arzerra) est un anticorps anti-CD20 entièrement humain pour la leucémie lymphoïde chronique, utilisé avec le chlorambucil chez les patients non traités ou seul après l'échec d'autres médicaments ; la même molécule est vendue sous le nom de Kesimpta pour la sclérose en plaques.",
   "oh-do-youn": "Investigateur principal de TOPAZ-1, l'essai qui a ajouté l'immunothérapie à la chimiothérapie de première ligne pour le cancer des voies biliaires.",
-  oligoprogression: "Lorsque seulement un ou deux foyers progressent sous une thérapie ciblée par ailleurs efficace ; on traite les foyers et on garde le comprimé.",
+  oligoprogression: "L’oligoprogression désigne la progression d’un nombre limité de lésions alors que le reste de la maladie demeure contrôlé pendant le traitement. Sa définition et les données sur l’ajout d’un traitement local dépendent du contexte clinique ou de l’étude.",
   olomorasib: "L'olomorasib est le comprimé anti-KRAS G12C de Lilly, conçu pour se combiner en toute sécurité avec l'immunothérapie en première ligne du cancer du poumon.",
   "on-target-laboratories": "Spin-out de Purdue qui a développé Cytalux, le colorant lumineux qui révèle les dépôts de cancer de l'ovaire et du poumon pendant la chirurgie.",
   "onc-ai": "Onc.AI entraîne une intelligence artificielle sur des scanners CT de routine pour prédire précocement si l'immunothérapie d'un patient atteint d'un cancer du poumon fonctionne, afin que les médecins et les développeurs de médicaments puissent changer de cap plus tôt.",

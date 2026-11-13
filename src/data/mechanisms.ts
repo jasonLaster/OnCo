@@ -655,6 +655,8 @@ const pathways: PathwayInput[] = [
     institutions: ["dana-farber", "penn-abramson"],
     notes: ["Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
   "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+      "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
+      "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors.",
 ],
     links: [
   {
@@ -682,11 +684,11 @@ const pathways: PathwayInput[] = [
     "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
   },
 
-  {"label":"Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)","url":"https://pubmed.ncbi.nlm.nih.gov/25104330/"},
+  {"label":"Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)","url":"https://pubmed.ncbi.nlm.nih.gov/25104330/"},{"label":"van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)","url":"https://pubmed.ncbi.nlm.nih.gov/15959515/"},{"label":"Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)","url":"https://pubmed.ncbi.nlm.nih.gov/11432830/"},{"label":"Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25231399/"},
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-12"
+"asOf": "2026-11-13"
 }),
   p({
     id: "jak-stat", keyPapers: ["paper-darnell-jak-stat-science-1994"], name: "JAK-STAT signalling", wikipedia: W("JAK-STAT_signaling_pathway"),
@@ -1248,9 +1250,9 @@ const terms: TermInput[] = [
   {
     "label": "A new paradigm for tumor immune escape: β-catenin-driven immune exclusion.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/26380088/"
-  }
+  },{"label":"Griffioen et al., endothelial ICAM-1 expression is suppressed in human malignancies (Cancer Research 1996)","url":"https://pubmed.ncbi.nlm.nih.gov/8640769/"},{"label":"Piali et al., endothelial VCAM-1 expression is suppressed by melanoma and carcinoma (Journal of Experimental Medicine 1995)","url":"https://pubmed.ncbi.nlm.nih.gov/7530765/"}
 ] ,
-"asOf": "2026-11-12",
+"asOf": "2026-11-13",
 "notes": [
   "Harlin found six chemokines, including CCL5, CXCL9 and CXCL10, preferentially in T-cell-containing human melanoma metastases, with supporting migration experiments. In melanoma models, Mikucki found that CXCR3 supported intravascular arrest and extravasation of transferred CD8 effectors. These findings identify defined recruitment and vascular dependencies, not a universal explanation for every abnormal vessel. Spranger’s human melanoma association and mouse experiments connected tumour WNT/beta-catenin activity with deficient dendritic-cell recruitment and absent T-cell infiltration, a desert-like problem rather than necessarily an excluded rim. In their 2015 commentary on the mouse experiments, Spranger and Gajewski describe reduced CCL4 expression and failed recruitment of Batf3-lineage dendritic cells. This is a defined melanoma mechanism, not a universal explanation for every excluded tissue pattern.",
   "In viable human lung-tumour slices, Salmon observed better T-cell movement in loose matrix, restricted movement in dense aligned matrix and increased cancer-cell contact after collagenase. Mariathasan associated stromal fibroblast TGF-beta signalling, exclusion and atezolizumab non-response in metastatic urothelial cancer; combined TGF-beta and PD-L1 blockade improved penetration and regression in mice. Peranzoni linked long macrophage-CD8 contacts and poor motility to exclusion in human lung squamous cancers, then used macrophage-directed treatment in mice to improve tumour-islet access. None of these model interventions establishes a beneficial breast-cancer regimen.",
@@ -1261,6 +1263,7 @@ const terms: TermInput[] = [
 
   "A common blood-borne effector route separates recruitment from vessel entry, movement through stroma and contact with relevant cancer cells. Rolling, firm adhesion and passage across vessel lining are distinct steps; in the melanoma transfer models, CXCR3 loss impaired firm arrest and extravasation without preventing initial rolling. This does not establish the itinerary or chemokine dependence of every resident T cell. A cell can inspect peptide-HLA on other cells along the way, so entering a cancer-cell nest is not the first possible recognition event.",
   "Two fictional biopsies pose different access questions. A has CD8 cells in collagen-dense stroma, few in malignant nests and a high TGF-beta signature. B has few T cells and low CXCL9/CXCL10. These suggest tests of access, recruitment and priming; neither diagnoses the cause or shows that loosening matrix will help one and cannot help the other. Even a 40% stromal TIL score can coexist with few CD8 cells in nests, because eligible stromal area and intranest CD8 counts have different denominators.",
+      "Reduced endothelial adhesion molecules have been measured in defined tumour settings. Griffioen and colleagues found lower vascular ICAM-1 in renal-cell carcinoma than in healthy-tissue endothelial comparators. In cultured endothelial cells, basic fibroblast growth factor first increased and later decreased ICAM-1, with corresponding changes in leukocyte adhesion. Piali and colleagues reported reduced VCAM-1 on vessels within mouse lung melanoma metastases and examined human lung tumours; melanoma co-culture also suppressed endothelial VCAM-1 expression and transcription. These studies support a candidate vascular entry barrier, not its frequency in every cancer or a universal effect of angiogenic factors. A leaky-looking vessel or sparse T-cell image does not measure ICAM-1 or VCAM-1, establish why cells are absent or show that restoring adhesion improves a clinical outcome.",
 ],
 "related": [
   "cold-vs-hot",

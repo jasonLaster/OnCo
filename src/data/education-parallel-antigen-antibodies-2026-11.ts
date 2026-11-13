@@ -408,7 +408,7 @@ export const educationAntigenAntibodiesTerms: TermInput[] = [
 
   {"label":"Ademuyiwa et al.: NY-ESO-1 expression in the studied breast-cancer cohorts (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22761704/"},
   {"label":"Ademuyiwa et al.: correction adding authors and contributions (2012)","url":"https://doi.org/10.1371/annotation/5cdf6105-2a52-497a-86b3-db8f4a4e439c"},
-  {"label":"NCI: HPV and Cancer, established cancer sites","url":"https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer"},
+  {"label":"NCI: HPV and Cancer, established cancer sites","url":"https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer"},{"label":"Guillaudeux et al., expression of HLA class I genes in meiotic and post-meiotic human spermatogenic cells (Biology of Reproduction 1996)","url":"https://pubmed.ncbi.nlm.nih.gov/8793064/"},
 ],
     "notes": [
   "The existing antigen record already lists tumour-associated antigen as an alias; this record carries the safety distinctions and uses different aliases.",
@@ -416,6 +416,7 @@ export const educationAntigenAntibodiesTerms: TermInput[] = [
 
   "NY-ESO-1 illustrates a shared cancer-testis antigen, rather than a private mutation. Ademuyiwa and colleagues reported immunohistochemical expression in 16% of 168 triple-negative breast cancers and 2% of 47 ER-positive/HER2-negative comparators; the comparison groups had different sampling characteristics, and staining was heterogeneous. Their background describes normal expression restricted to testis. Expression prevalence is neither proof of a displayed peptide on every tumour cell nor evidence that a receptor or vaccine is effective or safe. A shared peptide-directed product still requires the appropriate HLA and functional testing.",
   "Viral proteins provide another possible source of non-self targets, distinct from an altered human protein. NCI identifies HPV as a cause of cervical and oropharyngeal cancers, among other sites. For a proposed viral peptide target, establish viral-protein expression in the relevant cells, compatible peptide-HLA display and receptor recognition. A breast-cancer subtype label alone supplies none of that evidence; it does not establish a viral target or predict benefit from targeting it.",
+      "The germ-cell HLA qualification is about a measured recognition surface, not all cells in the testis. Guillaudeux and colleagues purified human pachytene spermatocytes and round spermatids and found low levels of class I HLA transcripts, but detected neither surface nor intracellular HLA-I heavy-chain protein with the antibodies used. This supports limited classical HLA-I display in those examined germ-cell populations, despite transcription. It does not establish absence of every HLA molecule in every testicular cell or condition, and it does not by itself prove that a peptide-directed engineered receptor is safe.",
 ],
     "related": [
   "antigen",
@@ -431,7 +432,7 @@ export const educationAntigenAntibodiesTerms: TermInput[] = [
   "hla"
 ],
     "kind": "term",
-    "asOf": "2026-11-12",
+    "asOf": "2026-11-13",
     "category": "Immunology",
     "tags": [
   "education-immunology-2026-11"

@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [fourth scientific/custody body checkpoint](scientific-authoring-bodies-04-2026-11-13/README.md) fully reads twenty breast-anatomy prompt and metadata bodies (35,762 unique bytes, forty pinned entries). Ten bodies are teaching and ten supporting. Fourteen frozen requirements have eighteen exact field anchors across five existing root records. Two owners gain one illustrative paragraph and date each; no id, source link, summary, alias, relation or registration is added. Four complete abstracts, twelve official blocks, two complete PDF pages and ten full source-art views retain actual depth. Five actual EntityDetail hubs, the cancer Data section, static exports and full gates pass: 293 files, 3,101 tests, 2 skips. Historical source/review attestations and exact pixel-preservation claims remain qualified. Ordinary lesson grades and open clauses are unchanged; the broader audit remains active.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 519 | 6,813 / 6,827 | 14 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 528 | 7,282 / 7,302 | 20 |
+
+Original assets are 635 teaching, 85 supporting and 1,168 unclassified; later assets are 634 teaching, 85 supporting and 1,169 unclassified. Each pin retains 1,888 assets. The graph remains at 23,091 records, and 127 registered proposal receipts select 697 canonical ids. Selection is not authorship or acceptance. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical normal-tissue checkpoint
+
 The [normal-tissue, germ-cell and vascular source followup](normal-tissue-vascular-clauses-2026-11-13/README.md) reads three later-only guides (31,409 bytes, 34 section signatures) and maps seven followup clauses to four already-counted obligations. Four existing owners gain five qualified teaching paragraphs and seven source links. Ten complete raw abstracts and four targeted OCR spans retain actual reading depth. Nine anchors, four actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. Four later obligations and one draft source representation close. Normal pathway function, HLA-I non-detection in selected germ cells and reduced endothelial adhesion molecules remain tied to the actual experiment, tissue and assay. Other source-open clauses, assets and adjacent/schema work keep the goal active; no original grade, new id, main/live or independent approval is added.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

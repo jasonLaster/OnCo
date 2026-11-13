@@ -1,0 +1,870 @@
+{
+  "dataCommit": "4b20831242cacf74482e9d48b01dd561dab65c1b",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 12.56
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 33.32
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.18
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 314.65
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "4b20831242cacf74482e9d48b01dd561dab65c1b",
+    "graphCount": 23091,
+    "changedIds": [
+      "lymphatic-drainage-and-axilla",
+      "terminal-duct-lobular-unit"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "allSelectedRecordsMatchActualReaders": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "graphCount": 23091,
+    "changedIds": [
+      "lymphatic-drainage-and-axilla",
+      "terminal-duct-lobular-unit"
+    ],
+    "unchangedRecords": 23089,
+    "changedFields": 4,
+    "appendedNotes": 2,
+    "dateChanges": 2,
+    "newIds": 0,
+    "newRegistrations": 0,
+    "newRelations": 0,
+    "oldNotesAndOrderPreserved": true,
+    "allRenderedRecordsEqualCurrentGraph": true,
+    "dataFiles": [
+      {
+        "file": "src/data/breast-pathology-education-2026-11.ts",
+        "class": "data",
+        "sha256": "5265737815b1c7077d6c5a3485c74b6dd261e2b1bd54adabda9bb10c84a89572"
+      },
+      {
+        "file": "src/data/spikes/breast-core.ts",
+        "class": "data",
+        "sha256": "aa7224f23c55c1b2c69c1b45664732ba7e1570740967bd0396816558d303077b"
+      }
+    ]
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "terminal-duct-lobular-unit",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/terminal-duct-lobular-unit/",
+        "sha256": "c6ed472453fd21fb3fb2dcd0b6efd7363e7290c6305a5e4ae99487902bc12aeb",
+        "bytes": 52125,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/myoepithelial-cells-and-basement-membrane/",
+        "sha256": "98d0fb04a04590fb3944b91253370acd6d02842d44d61680c2ed1f8b90ccb3ed",
+        "bytes": 30676,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/lymphatic-drainage-and-axilla/",
+        "sha256": "5d2d5601a3fa17fe58e130f481739c29eee57c7d5d10864bcbc838b38b4ec6d4",
+        "bytes": 26364,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "dcis",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/dcis/",
+        "sha256": "1d8f651d70ccf25a4cd901ccdfcd8f84b86e858076545c8c9edea71250d36a46",
+        "bytes": 45217,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "state": "registered-local-draft-graph",
+        "route": "/cancers/invasive-breast-carcinoma-no-special-type/",
+        "sha256": "1eff78f290b7b8865c2502a024a4428d3d3c75efdadd7788a380f11f852e0b1e",
+        "bytes": 87439,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ],
+    "sectionChecks": [
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "section": "data",
+        "file": "invasive-breast-carcinoma-no-special-type--data.html",
+        "route": "/cancers/invasive-breast-carcinoma-no-special-type/data/",
+        "placement": "page",
+        "sha256": "e008b912682c6ca40fa7c19db0bbd7df9e05da5a860481017df99ce7c5374c56",
+        "bytes": 24884,
+        "scope": "Actual CancerSection Data component used by the section route, rendered separately; not a claim that these notes appear in the initial hub markup."
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 5,
+    "exactAnchors": 18,
+    "exactParagraphChecks": 18,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "lymphatic-drainage-and-axilla-notes-5",
+        "recordId": "lymphatic-drainage-and-axilla",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "lymphatic-drainage-and-axilla.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "lymphatic-drainage-and-axilla-notes-1",
+        "recordId": "lymphatic-drainage-and-axilla",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "lymphatic-drainage-and-axilla.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "lymphatic-drainage-and-axilla-notes-3",
+        "recordId": "lymphatic-drainage-and-axilla",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "lymphatic-drainage-and-axilla.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "dcis-notes-0",
+        "recordId": "dcis",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "dcis.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "dcis-notes-4",
+        "recordId": "dcis",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "dcis.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "myoepithelial-cells-and-basement-membrane-notes-0",
+        "recordId": "myoepithelial-cells-and-basement-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "myoepithelial-cells-and-basement-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "myoepithelial-cells-and-basement-membrane-notes-1",
+        "recordId": "myoepithelial-cells-and-basement-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "myoepithelial-cells-and-basement-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "terminal-duct-lobular-unit-notes-6",
+        "recordId": "terminal-duct-lobular-unit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "terminal-duct-lobular-unit.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "myoepithelial-cells-and-basement-membrane-notes-3",
+        "recordId": "myoepithelial-cells-and-basement-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "myoepithelial-cells-and-basement-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "myoepithelial-cells-and-basement-membrane-notes-6",
+        "recordId": "myoepithelial-cells-and-basement-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "myoepithelial-cells-and-basement-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "dcis-notes-2",
+        "recordId": "dcis",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "dcis.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "invasive-breast-carcinoma-no-special-type-notes-2",
+        "recordId": "invasive-breast-carcinoma-no-special-type",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "invasive-breast-carcinoma-no-special-type.html",
+          "invasive-breast-carcinoma-no-special-type--data.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "invasive-breast-carcinoma-no-special-type-notes-4",
+        "recordId": "invasive-breast-carcinoma-no-special-type",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "invasive-breast-carcinoma-no-special-type.html",
+          "invasive-breast-carcinoma-no-special-type--data.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "invasive-breast-carcinoma-no-special-type-notes-0",
+        "recordId": "invasive-breast-carcinoma-no-special-type",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "invasive-breast-carcinoma-no-special-type.html",
+          "invasive-breast-carcinoma-no-special-type--data.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "invasive-breast-carcinoma-no-special-type-notes-1",
+        "recordId": "invasive-breast-carcinoma-no-special-type",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "invasive-breast-carcinoma-no-special-type.html",
+          "invasive-breast-carcinoma-no-special-type--data.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "terminal-duct-lobular-unit-notes-1",
+        "recordId": "terminal-duct-lobular-unit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "terminal-duct-lobular-unit.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "terminal-duct-lobular-unit-notes-3",
+        "recordId": "terminal-duct-lobular-unit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "terminal-duct-lobular-unit.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "terminal-duct-lobular-unit-notes-5",
+        "recordId": "terminal-duct-lobular-unit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "terminal-duct-lobular-unit.html"
+        ],
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment across hub and explicitly captured Data section where applicable. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticExports": {
+    "records": 5,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dcis",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "terminal-duct-lobular-unit.json",
+        "bytes": 9543,
+        "sha256": "3b0b940abf0f953bd13a0e3879ce1735d758f4a67b1df8a6eac698eb45ff58ac"
+      },
+      {
+        "file": "terminal-duct-lobular-unit.md",
+        "bytes": 8250,
+        "sha256": "e60226c92e07807ce8fdf7948a4c7b9460339a8b9f262e0a7915facd40704046"
+      },
+      {
+        "file": "myoepithelial-cells-and-basement-membrane.json",
+        "bytes": 5462,
+        "sha256": "cd5988c3cc136b266c68fb97d12ee231e5e1dfab8fc790926291101564934e08"
+      },
+      {
+        "file": "myoepithelial-cells-and-basement-membrane.md",
+        "bytes": 4970,
+        "sha256": "d2cb3e057083c0d0ed41be8f5440e306e7188c4dda978ce2ae7d6222a137defe"
+      },
+      {
+        "file": "lymphatic-drainage-and-axilla.json",
+        "bytes": 4366,
+        "sha256": "2713343633fb28a6514105ea9982da6fb6a76e54b30d3cf68094bea27dcec3bd"
+      },
+      {
+        "file": "lymphatic-drainage-and-axilla.md",
+        "bytes": 3900,
+        "sha256": "cd7cd1a25d5c990cc43d4d4b7dc4c80e89fb3c063210fec1bc341c8dba323396"
+      },
+      {
+        "file": "dcis.json",
+        "bytes": 7346,
+        "sha256": "9a7d23f61a2d7bec9a177bc8f2437af453f43e42b18a4e13bf670e1254c5409c"
+      },
+      {
+        "file": "dcis.md",
+        "bytes": 6285,
+        "sha256": "de304f8851a504d64030083aada638e3cf36ff5f7945ec766ab1df18cf4c54f0"
+      },
+      {
+        "file": "invasive-breast-carcinoma-no-special-type.json",
+        "bytes": 10353,
+        "sha256": "d3f255b4cda6796175cb3b0fb2854f7f52df11391756d87afc91221ae4719055"
+      },
+      {
+        "file": "invasive-breast-carcinoma-no-special-type.md",
+        "bytes": 11989,
+        "sha256": "19c9578f8bed6211092e658cb2b33d94dd28ae5cba8a2868da338d32ba20b881"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 45,
+    "texts": 0,
+    "fallbacks": 45,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "terminal-duct-lobular-unit",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "myoepithelial-cells-and-basement-membrane",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lymphatic-drainage-and-axilla",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dcis",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "invasive-breast-carcinoma-no-special-type",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "checks": [],
+    "pass": true,
+    "scope": "No empirical count, treatment calculation or numerical worked example is introduced. Native image sizes and IHDR checks are custody measurements, not biological arithmetic."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual registered graph, five EntityDetail hubs, one separately rendered actual CancerSection Data component, summary selectors and static JSON/Markdown/OpenAPI/context, with full gates. No production Next build, browser, hydration, deployment, expert or independent acceptance. Source-art and PDF views are recorded at their actual scope."
+}

@@ -705,10 +705,10 @@
     "navigationReviewed": 5,
     "navigationWithTeachingContent": 2,
     "semanticallyReviewed": 545,
-    "implementedCoverage": 528,
+    "implementedCoverage": 529,
     "mainCoverage": 0,
-    "unresolvedContentItems": 17,
-    "unresolvedSources": 17,
+    "unresolvedContentItems": 16,
+    "unresolvedSources": 16,
     "adjacentConcepts": 74,
     "unresolvedAdjacentConcepts": 49,
     "openSchemaGaps": 6,
@@ -66460,8 +66460,8 @@
       "review": {
         "status": "reviewed",
         "auditor": "GPT-6.1 Sol coordinator; complete later reading, full original teaching differences and named primary reading depths; no expert acceptance",
-        "checkedAt": "2026-11-11",
-        "rationale": "Complete later lessons and original teaching differences assessed against explicit semantic requirements, method-card rows, figures and diagrams. A 208-row source inventory and one explicit refinement are retained. Exact current draft fields carry scoped teaching. The later-only Garcia-Diaz axis requirement remains partial because its indexed correction body is inaccessible. Hashes alone, expert, learner, language, main and live acceptance are separate.",
+        "checkedAt": "2026-11-13",
+        "rationale": "Complete later lessons and original teaching differences assessed against explicit semantic requirements, method-card rows, figures and diagrams. A 208-row source inventory and one explicit refinement are retained. Exact current draft fields carry scoped teaching. The later-only Garcia-Diaz axis requirement remains partial because its indexed correction body is inaccessible. Hashes alone, expert, learner, language, main and live acceptance are separate. Targeted correction followup: the current raw Garcia-Diaz abstract and the entire reproduced correction paragraph in a coauthor-institution record are read. DOI, PMID, authors and publication date match. The retained STAT1/STAT2/STAT3 melanoma-qualified passage is supported; no cloning recipe, claim that every article result is unchanged, publisher-PDF read or whole-owner re-verification is added.",
         "sectionHashes": [
           "95c003c840471fa5c6f8707905dd6a2825db032576fdadb2101959fefc650c6c",
           "d6b2f973560f784930111a3b03d65933c27be1eb47fca5e770d2829f424a985d",
@@ -66530,17 +66530,15 @@
           {
             "id": "adaptive-immune-resistance:jak-stat-irf1",
             "requirement": "Scope Garcia-Diaz’s JAK1/JAK2–STAT1/2/3–IRF1 mechanism to melanoma experiments; verify rather than repeat a mainly-STAT1 simplification.",
-            "status": "partial",
-            "remaining": [
-              "The indexed 2019 Garcia-Diaz correction resolves to DOI 10.1016/j.celrep.2019.11.113, but its body is inaccessible. The primary abstract and reader passage support the named axis at their recorded scope; correction-specific implications are not certified."
-            ],
+            "status": "covered-draft",
+            "remaining": [],
             "evidence": [
               {
                 "recordId": "adaptive-immune-resistance",
                 "version": "proposal-tumor-immunology-root",
                 "field": "summary",
                 "fieldSha256": "5ab2453b2d64cfdd5b888f6049fed6c21aa073360084ff77434641eead326dfa",
-                "explanation": "This exact reader passage represents the specified distinction, measurement, study or qualified inference: Scope Garcia-Diaz’s JAK1/JAK2–STAT1/2/3–IRF1 mechanism to melanoma experiments; verify rather than repeat a mainly-STAT1 simplification.",
+                "explanation": "This exact reader passage represents the specified distinction, measurement, study or qualified inference: Scope Garcia-Diaz’s JAK1/JAK2–STAT1/2/3–IRF1 mechanism to melanoma experiments; verify rather than repeat a mainly-STAT1 simplification. Source-verification followup: The current original raw abstract explicitly names melanoma cells and the interferon-gamma/JAK1/JAK2/STAT1/STAT2/STAT3/IRF1 axis. The coauthor-institution record reproduces the correction paragraph about the promoter cloning-site description and Table S1 primers, with matching DOI, PMID, authors and date. The retained conceptual summary does not reproduce the erroneous cloning description or primer sequences. This closes the named pathway qualification at abstract plus reproduced-correction-text scope, not every experimental detail or all effects of any erratum. Reading depth: Complete current raw 2017 abstract plus all 382 characters reproduced in the institutional record Abstract field; publisher PDF/body remains inaccessible. No whole-paper, publisher-page or corrected-protocol claim.",
                 "supportingExcerpt": "The sequence proposed by Taube and colleagues and mapped in more detail since is a loop. A T cell recognises a tumour peptide on HLA and releases interferon gamma; the interferon acts through the Janus kinases JAK1 and JAK2 in nearby tumour and immune cells; PD-L1 rises; PD-L1 binds PD-1 on the T cell and damps it. In melanoma cell lines, Garcia-Diaz and colleagues found that the interferon gamma, JAK1 and JAK2, STAT1, STAT2 and STAT3, IRF1 axis primarily regulates PD-L1, with IRF1 binding the PD-L1 promoter, and biopsies from patients with melanoma showed enrichment of that interferon signature and of STAT and IRF1 target genes in tumours that responded to anti-PD-1 treatment.",
                 "passageSha256": "242e99e63aaf5f1b3a832f1e83fedc5f39268a18fec6aac87d27ed80019d311e"
               }

@@ -1,0 +1,1548 @@
+{
+  "version": "proposal-support-bodies-07-root",
+  "state": "Nine existing registered local draft-root owners selected at an audit-only source checkpoint. Selection is neither new authorship nor wholesale verification. No canonical code/data field, id, date, alias, relation, link or registration changed. Previous full gates reused only by exact unchanged code/data and all graph fingerprints.",
+  "draft": 375,
+  "committedRootSnapshotHead": "dc9456ce59b71772a4bea3dff12c0b04764b8bf7",
+  "lastDataCommit": "4b20831242cacf74482e9d48b01dd561dab65c1b",
+  "records": [
+    {
+      "id": "senescence",
+      "kind": "pathway",
+      "name": "Cellular senescence",
+      "aka": [],
+      "tldr": "Senescent cells remain alive while their division is durably arrested. Their effects depend on the cells, signals and surrounding tissue.",
+      "summary": "Senescence is a stress-associated cell state with durable cell-cycle arrest and other context-dependent features. Identifying it requires combined measurements rather than one marker. In genetically switchable blood-cancer models, release from senescence allowed renewed division with enhanced clonogenic potential. That experimental result does not predict that every senescent cell will restart or that a person will relapse. Arrest, secretion and effects on neighbouring cells require separate assessment. Model findings do not establish a preferred senolytic treatment.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cellular_senescence",
+      "links": [
+        {
+          "label": "Primary source, PMID 31675495",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31675495/"
+        },
+        {
+          "label": "Primary source, PMID 29258294",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29258294/"
+        },
+        {
+          "label": "Schmitt, Wang & Demaria, Senescence and cancer: role and therapeutic opportunities (Nature Reviews Clinical Oncology 2022)",
+          "url": "https://doi.org/10.1038/s41571-022-00668-4"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Source identity and scope, PMID 39121846",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39121846/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19053174",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19053174/"
+        },
+        {
+          "label": "Source identity and scope, PMID 25499914",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25499914/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cdk46-inhibitor"
+      ],
+      "targets": [
+        "tp53",
+        "cdk4-6",
+        "bcl2"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "cold-spring-harbor",
+        "mayo-clinic"
+      ],
+      "pathways": [
+        "p53-cell-cycle",
+        "apoptosis-bcl2",
+        "inflammation-nfkb",
+        "tumor-microenvironment"
+      ],
+      "terms": [
+        "senescent-cells"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-schmitt-nat-rev-clin-oncol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Lowe (MSK) on senescence and immune clearance; Campisi legacy (Buck); Kirkland (Mayo) on senolytics; Demaria (ERIBA Groningen); Peeper (NKI) on one-two punch.",
+        "Senescent cells remain alive and metabolically active while division is durably arrested. Damage, oncogenic signals and treatment stresses can induce the state. It is distinct from death, reversible quiescence, the broader concept of dormancy and immune exhaustion, and is not a synonym for a person's age.",
+        "Low proliferation and increased p21 one day after stress do not establish durable senescence or a harmful secretory programme. Combine cell identity, longitudinal arrest or regrowth assessment and complementary features such as p16, p21, damage markers and senescence-associated beta-galactosidase. Fixed tissue cannot test later recovery, and no universal marker or arrest-duration cutoff works across contexts. Research outputs include method-defined cell fractions, marker intensities and longitudinal proliferation or regrowth. Stained sections and tested cells consume material. Secretions and their functional effects require their own readouts rather than inference from an arrest marker.",
+        "The senescence-associated secretory phenotype varies with cell, stimulus, timing and environment. In Coppé and colleagues' culture experiments, selected secretions promoted epithelial invasiveness; in Demaria and colleagues' mouse skin wounds, senescent cells and PDGF-AA supported repair. Neither experiment establishes a universal harmful mixture or a clinical instruction to remove senescent cells.",
+        "Genetically switchable blood-cancer models showed enhanced clonogenic growth after release from senescence. This supports possible escape in those systems, not inevitable restart, relapse prediction or a preferred senolytic treatment. Arrest, secretion and effects on neighbouring cells require separate tests."
+      ],
+      "analogy": "A workshop can stop making copies while continuing to use energy and send messages. The messages and their effects must be measured in context.",
+      "nodes": [
+        {
+          "id": "dmg",
+          "label": "Oncogene / therapy stress",
+          "x": 15,
+          "y": 30
+        },
+        {
+          "id": "p53",
+          "label": "p53 → p21",
+          "x": 40,
+          "y": 20,
+          "targetId": "tp53"
+        },
+        {
+          "id": "p16",
+          "label": "p16 → RB",
+          "x": 40,
+          "y": 45,
+          "targetId": "cdk4-6"
+        },
+        {
+          "id": "arrest",
+          "label": "Stable arrest",
+          "x": 65,
+          "y": 30
+        },
+        {
+          "id": "sasp",
+          "label": "Variable secretory programme",
+          "x": 65,
+          "y": 70
+        },
+        {
+          "id": "tme",
+          "label": "Context-dependent neighbour effects",
+          "x": 90,
+          "y": 70
+        },
+        {
+          "id": "seno",
+          "label": "Investigational clearance approaches",
+          "x": 90,
+          "y": 30
+        }
+      ],
+      "edges": [
+        {
+          "from": "dmg",
+          "to": "p53",
+          "type": "activates"
+        },
+        {
+          "from": "dmg",
+          "to": "p16",
+          "type": "activates"
+        },
+        {
+          "from": "p53",
+          "to": "arrest",
+          "type": "activates"
+        },
+        {
+          "from": "p16",
+          "to": "arrest",
+          "type": "activates"
+        },
+        {
+          "from": "arrest",
+          "to": "sasp",
+          "type": "activates"
+        },
+        {
+          "from": "sasp",
+          "to": "tme",
+          "type": "activates"
+        },
+        {
+          "from": "seno",
+          "to": "arrest",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "Experimental induction, persistence and clearance require separate measurements.",
+        "Model findings do not establish a preferred senolytic treatment."
+      ]
+    },
+    {
+      "id": "autophagy",
+      "kind": "pathway",
+      "name": "Autophagy",
+      "aka": [],
+      "tldr": "Autophagy delivers cellular material for breakdown and reuse. The amount present, the rate of recycling and whether cells need it to survive are different questions.",
+      "summary": "Macroautophagy encloses cargo in autophagosomes for lysosomal delivery and breakdown. LC3 abundance alone cannot distinguish increased formation from reduced removal. Tandem fluorescent LC3 reporters exploit different responses to acidic and degradative conditions to examine maturation in cell experiments; interpretation requires appropriate controls. Flux and survival dependence need separate tests. In a randomised phase 2 trial of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel did not improve the primary endpoint of survival at 12 months. A drug trial does not by itself establish selective autophagy dependence in a tumour.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Autophagy",
+      "links": [
+        {
+          "label": "Primary source, PMID 17534139",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17534139/"
+        },
+        {
+          "label": "Primary source, PMID 31120501",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+        },
+        {
+          "label": "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)",
+          "url": "https://doi.org/10.1038/s41586-020-2229-5"
+        },
+        {
+          "label": "Source identity and scope, PMID 33634751",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Source identity and scope, PMID 33584716",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33584716/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19250911",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19250911/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19258318",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+        },
+        {
+          "label": "Lysosome biology in autophagy (2020 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32047650/"
+        },
+        {
+          "label": "The hairpin-type tail-anchored SNARE syntaxin 17 targets to autophagosomes for fusion with endosomes/lysosomes (2012 cell experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23217709/"
+        },
+        {
+          "label": "The ATG conjugation systems are important for degradation of the inner autophagosomal membrane (2016 cell experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27885029/"
+        },
+        {
+          "label": "Autophagosome maturation: An epic journey from the ER to lysosomes (2019 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30578282/"
+        },
+        {
+          "label": "mTORC1 Activator SLC38A9 Is Required to Efflux Essential Amino Acids from Lysosomes and Use Protein as a Nutrient (2017 cell and transport experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29053970/"
+        },
+        {
+          "label": "Lysosomal metabolomics reveals V-ATPase- and mTOR-dependent regulation of amino acid efflux from lysosomes (2017 lysosomal metabolomics)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29074583/"
+        },
+        {
+          "label": "Atg22 recycles amino acids to link the degradative and recycling functions of autophagy (2006 yeast experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17021250/"
+        },
+        {
+          "label": "Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33473172/"
+        },
+        {
+          "label": "The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25975349/"
+        },
+        {
+          "label": "Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29158785/"
+        },
+        {
+          "label": "Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40527957/"
+        },
+        {
+          "label": "UniProt Q8TDY2: RB1CC1 protein names, including FIP200",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TDY2/entry"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "nutrient-sensing-ampk"
+      ],
+      "cancers": [
+        "pancreatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "kras-inhibitors"
+      ],
+      "targets": [
+        "kras"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "penn-abramson",
+        "cold-spring-harbor"
+      ],
+      "pathways": [
+        "ras-mapk",
+        "pi3k-akt-mtor",
+        "cancer-metabolism",
+        "antigen-presentation-immunoediting"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-yamamoto-nature"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy.",
+        "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+        "A completed macroautophagosome has separate inner and outer membranes, with space between them. When it fuses with a lysosome, the outer membrane joins the lysosomal boundary, while the inner membrane is degraded before enzymes gain access to the enclosed cargo. Itakura and colleagues located syntaxin 17 on completed autophagosomes, and Tsuboyama and colleagues found that loss of ATG conjugation systems markedly delayed inner-membrane degradation even when fusion occurred. A direct-fusion sketch omits intermediate endosomal interactions described in multicellular organisms; it is not the complete route taken by every compartment.",
+        "Product return has evidence in defined systems. In leucine-starved cultured human HEK-293T cells, Wyant and colleagues found that SLC38A9 was needed for leucine made by lysosomal protein breakdown to reach the cytosol; the response also depended on the autophagy protein ATG7. Abu-Remaileh and colleagues measured regulated lysosomal amino-acid exchange in mammalian cells. Yeast experiments identified Atg22, Avt3 and Avt4 as partially redundant vacuolar amino-acid exporters. These results support amino-acid recycling in those systems, without establishing transport of every breakdown product, secretion from the cell or guaranteed growth.",
+        "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+        "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+        "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+        "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+        "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+        "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+        "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and the RB1CC1-encoded protein FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
+        "Yamamoto and colleagues found that the cargo receptor NBR1 helped direct MHC-I proteins to lysosomes through an autophagy-dependent route in pancreatic ductal adenocarcinoma models. This lowered the amount of MHC-I at the cell surface, where it displays antigens to CD8 T cells. In mouse experiments, reducing MHC-I or depleting CD8 T cells reversed tumour control after genetic autophagy inhibition. Chloroquine increased surface MHC-I but, alone, did not significantly reduce tumour weight in the reported experiment; its effects on lysosomes are broad. These model results do not establish that every KRAS-driven cancer depends on autophagy or that blocking it benefits patients."
+      ],
+      "analogy": "A recycling station can hold a large pile because more material arrives or because processing has slowed. The pile is an amount; material processed over time is a rate. Neither alone tells you whether the city depends on that station.",
+      "nodes": [
+        {
+          "id": "stress",
+          "label": "Defined nutrient or drug stress",
+          "x": 15,
+          "y": 30,
+          "targetId": "kras"
+        },
+        {
+          "id": "ulk",
+          "label": "ULK1 / AMPK",
+          "x": 40,
+          "y": 30
+        },
+        {
+          "id": "mtor",
+          "label": "mTORC1 (inhibits)",
+          "x": 40,
+          "y": 70
+        },
+        {
+          "id": "phag",
+          "label": "Autophagosome",
+          "x": 65,
+          "y": 30
+        },
+        {
+          "id": "lys",
+          "label": "Lysosomal delivery and breakdown",
+          "x": 85,
+          "y": 30
+        },
+        {
+          "id": "fuel",
+          "label": "Reused building blocks; test survival",
+          "x": 85,
+          "y": 70
+        },
+        {
+          "id": "mhc",
+          "label": "MHC-I degradation (PDAC)",
+          "x": 65,
+          "y": 90
+        }
+      ],
+      "edges": [
+        {
+          "from": "stress",
+          "to": "ulk",
+          "type": "activates"
+        },
+        {
+          "from": "mtor",
+          "to": "ulk",
+          "type": "inhibits"
+        },
+        {
+          "from": "ulk",
+          "to": "phag",
+          "type": "activates"
+        },
+        {
+          "from": "phag",
+          "to": "lys",
+          "type": "activates"
+        },
+        {
+          "from": "lys",
+          "to": "fuel",
+          "type": "activates"
+        },
+        {
+          "from": "lys",
+          "to": "mhc",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Clinical drug studies and mechanistic dependence tests answer different questions.",
+        "Assess flux, selected cargo and survival separately with complementary controls."
+      ]
+    },
+    {
+      "id": "ferroptosis-cell-death",
+      "kind": "pathway",
+      "name": "Ferroptosis & regulated cell death",
+      "aka": [],
+      "tldr": "Ferroptosis is a form of cell death involving iron-dependent membrane-lipid damage. General oxidative stress or one positive marker does not establish this mechanism.",
+      "summary": "Ferroptosis involves iron-dependent membrane-lipid peroxidation and death. Cystine uptake through system xc- can support cysteine and glutathione availability; it does not transport glutathione itself. GPX4 uses glutathione to reduce lipid hydroperoxides, while FSP1 provides a parallel coenzyme-Q-associated defence. Dependence on these routes varies with the model and cellular conditions. Establishing the mechanism requires appropriately controlled measurements of death, lipid damage, iron dependence and rescue, with complementary perturbations. Findings in persistent or mesenchymal model cells do not establish a universal vulnerability or a treatment recommendation. Necrotic appearance, danger signals and adaptive antitumour immunity are separate questions.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ferroptosis",
+      "links": [
+        {
+          "label": "Stockwell, Ferroptosis turns 10 (Cell 2022)",
+          "url": "https://doi.org/10.1016/j.cell.2022.06.003"
+        },
+        {
+          "label": "Viswanathan et al., Dependency of a therapy-resistant state on a lipid peroxidase pathway (Nature 2017)",
+          "url": "https://doi.org/10.1038/nature23007"
+        },
+        {
+          "label": "Source identity and scope, PMID 22632970",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+        },
+        {
+          "label": "Source identity and scope, PMID 27506793",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27506793/"
+        },
+        {
+          "label": "Source identity and scope, PMID 24439385",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24439385/"
+        },
+        {
+          "label": "Source identity and scope, PMID 31634900",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31634900/"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Drug-tolerant persister cancer cells are vulnerable to GPX4 inhibition (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29088702/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "reactive-oxygen-species"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "bcl2"
+      ],
+      "drugs": [
+        "venetoclax"
+      ],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "stanford",
+        "broad-institute"
+      ],
+      "pathways": [
+        "apoptosis-bcl2",
+        "emt",
+        "cancer-metabolism"
+      ],
+      "terms": [
+        "resisting-cell-death",
+        "resistance"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-stockwell-cell",
+        "paper-viswanathan-nature"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Stockwell (Columbia, coined ferroptosis); Dixon (Stanford); Schreiber (Broad) on persister-cell GPX4 dependence; Jiang (MSK) on ferroptosis in immunotherapy.",
+        "Ferroptosis involves iron-dependent membrane-lipid peroxidation causing death. Erastin experiments implicated cystine uptake through system xc-, connecting cysteine and glutathione supply to antioxidant defence. Vulnerable polyunsaturated lipid chains, iron availability and cellular conditions matter; general reactive-oxygen fluorescence does not establish this mechanism.",
+        "GPX4 uses glutathione to reduce lipid hydroperoxides to lipid alcohols. FSP1 provides a parallel coenzyme-Q radical-trapping defence; it does not replace every GPX4 function or describe the whole protection network. Protein abundance alone does not measure protective activity or predict compound sensitivity.",
+        "Assigning ferroptosis needs convergent measurements of death, lipid damage preceding death, iron dependence and appropriately controlled rescue. Independent genetic and chemical perturbations strengthen attribution; rescue alone is not complete proof. Probe chemistry, concentration, nutrients, cell density and observation time can alter results. A lipid-probe ratio and death fraction are different outputs, with no universal diagnostic staining threshold. Live death and rescue tests consume viable model material. Specify lipid-probe oxidation ratios and independently measured death percentages over a stated interval; a marker snapshot does not reconstruct the full causal sequence.",
+        "A culture with abundant GPX4, a general oxidation signal and no death has not demonstrated ferroptosis. Cell-line and xenograft vulnerabilities do not establish tolerable exposure, selective cancer killing or benefit in patients. Alternative defences can confer resistance, so a strong antioxidant programme is not automatically a treatment vulnerability.",
+        "Hangauer 2017 investigated reversible drug-tolerant persister states across specified cancer-cell and drug models. Surviving the original treatment could coexist with increased GPX4 dependence; this was not necessarily permanent genetic resistance. The breast model BT474 is HER2-positive, not a triple-negative model. In the mouse relapse experiment, A375 melanoma cells had genetic GPX4 loss, with ferrostatin protection withdrawn while dabrafenib and trametinib continued. Prevented relapse in that setting was not systemic treatment with a GPX4 inhibitor: the authors noted poor systemic pharmacokinetics of RSL3 and ML210. These experiments do not establish a tolerable human window or universal persister vulnerability.",
+        "A fictional GPX4 experiment combines lipid oxidation before death, rescue by an iron chelator and a lipid-radical trap, and a corresponding phenotype after an independent genetic perturbation. These observations converge on an iron-dependent lipid-damage explanation; none alone proves it. Include vehicle, rescue-only and an unrelated death condition because rescue compounds can affect other processes. Survival of an otherwise matched FSP1-high comparison is compatible with a parallel defence; directly testing that defence is needed before assigning compensation to it. Energy production, a general oxidation dye and an antioxidant transcript are different measurements and cannot substitute for this causal sequence."
+      ],
+      "analogy": "Ferroptosis is rust. Iron plus oxygen eats through the cell's membranes unless an antioxidant crew (GPX4) keeps repainting them. Cells that changed shape to dodge chemotherapy have thinner paint.",
+      "nodes": [
+        {
+          "id": "cys",
+          "label": "Cystine import (SLC7A11)",
+          "x": 15,
+          "y": 30
+        },
+        {
+          "id": "gsh",
+          "label": "Glutathione",
+          "x": 40,
+          "y": 30
+        },
+        {
+          "id": "gpx4",
+          "label": "GPX4",
+          "x": 65,
+          "y": 30
+        },
+        {
+          "id": "lpo",
+          "label": "Lipid peroxidation",
+          "x": 65,
+          "y": 70
+        },
+        {
+          "id": "iron",
+          "label": "Labile iron (Fenton)",
+          "x": 35,
+          "y": 70
+        },
+        {
+          "id": "ferro",
+          "label": "Ferroptosis",
+          "x": 90,
+          "y": 70
+        },
+        {
+          "id": "mes",
+          "label": "Mesenchymal / persister state",
+          "x": 90,
+          "y": 30
+        },
+        {
+          "id": "apo",
+          "label": "Apoptosis (BCL-2 family)",
+          "x": 15,
+          "y": 90,
+          "targetId": "bcl2"
+        }
+      ],
+      "edges": [
+        {
+          "from": "cys",
+          "to": "gsh",
+          "type": "activates"
+        },
+        {
+          "from": "gsh",
+          "to": "gpx4",
+          "type": "activates"
+        },
+        {
+          "from": "gpx4",
+          "to": "lpo",
+          "type": "inhibits"
+        },
+        {
+          "from": "iron",
+          "to": "lpo",
+          "type": "activates"
+        },
+        {
+          "from": "lpo",
+          "to": "ferro",
+          "type": "activates"
+        },
+        {
+          "from": "mes",
+          "to": "gpx4",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "xCT inhibitors, cyst(e)inase, sulfasalazine repurposing (early trials)",
+        "Radiotherapy and IFN-γ from T cells induce lipid peroxidation",
+        "BH3 mimetics (venetoclax) exploit apoptosis; MCL-1 inhibitors in development",
+        "Persister-cell targeting after EGFR/ALK inhibitors (preclinical)"
+      ]
+    },
+    {
+      "id": "androgen-receptor",
+      "kind": "target",
+      "name": "Androgen receptor",
+      "aka": [],
+      "tldr": "The androgen receptor can bind androgen hormones and regulate gene activity. Receptor staining, an RNA subtype and dependence on the receptor are different findings.",
+      "summary": "The full-length androgen receptor is a hormone-binding protein that can regulate transcription. Its interactions with other proteins, receptor form and cellular setting affect its activity.\n\nReceptor amount, location, transcription and growth dependence are different observations. Nuclear AR immunostaining reports protein in sampled cells; a luminal androgen receptor, or LAR, label is a versioned RNA-classifier result. TBCRC 032 correlative analyses found AR protein expression alone insufficient to identify AR-dependent tumors. Neither staining nor classifier membership alone proves patient benefit.\n\nFull-length AR has distinct regions for transcriptional regulation, DNA binding and ligand binding. Androgens can change receptor interactions, nuclear localization and regulatory-DNA binding, with effects determined by partners, accessible DNA and receptor form. Tran's antiandrogen experiments in prostate models tested binding, nuclear movement and transcriptional effects separately. An RNA signal does not characterize a truncated protein or transfer those prostate results to breast-cancer treatment.\n\nA fictional tumor with 20% AR-positive nuclei but a non-LAR RNA classification need not have a mistaken result. The assays measure different layers; compare antibody, scoring, tumor-cell content, preservation, sampling, normalization and classifier version. Twenty percent stained nuclei is not twenty percent of patients expected to respond. Dependence requires a controlled receptor perturbation with downstream and growth or survival measurements.\n\nLehmann 2016 refined TNBCtype from six classes to four tumor-specific classes after immune and stromal contributions explained the former immunomodulatory and mesenchymal stem-like signals. LAR does not mean estrogen-receptor-positive disease. TBCRC 032 was a defined phase Ib/II metastatic breast-cancer study of enzalutamide with or without taselisib, with phase II focused on AR-positive TNBC; its exploratory correlations do not turn an RNA subtype into a universal treatment rule or import a prostate indication.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Androgen_receptor",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Androgen_receptor"
+        },
+        {
+          "label": "TBCRC 032 IB/II Multicenter Study: Molecular Insights to AR Antagonist and PI3K Inhibitor Efficacy in Patients with AR+ Metastatic Triple-Negative Breast Cancer. (primary abstract; 2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31822498/"
+        },
+        {
+          "label": "Development of a second-generation antiandrogen for treatment of advanced prostate cancer. (2009; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19359544/"
+        },
+        {
+          "label": "Refinement of Triple-Negative Breast Cancer Molecular Subtypes: Implications for Neoadjuvant Chemotherapy Selection. (2016; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27310713/"
+        },
+        {
+          "label": "UniProt P10275: reviewed human protein function",
+          "url": "https://www.uniprot.org/uniprotkb/P10275/entry"
+        }
+      ],
+      "tags": [
+        "hormonal"
+      ],
+      "related": [
+        "ar-v7-splice-variant"
+      ],
+      "cancers": [
+        "prostate",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "nilutamide",
+        "triptorelin",
+        "bms-986365",
+        "azd9750",
+        "ep0062",
+        "qlh12016"
+      ],
+      "companies": [
+        "oric-pharmaceuticals"
+      ],
+      "institutions": [],
+      "pathways": [
+        "ar-signaling",
+        "prostate-cancer-signalling"
+      ],
+      "terms": [
+        "pam50"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-lehmann-tnbctype-4-refinement-plos-one-2016",
+        "paper-bareche-tnbc-multiomic-heterogeneity-ann-oncol-2018",
+        "paper-gucalp-bicalutamide-ar-positive-tbcrc011-ccr-2013",
+        "paper-traina-enzalutamide-ar-tnbc-jco-2018",
+        "paper-visakorpi-androgen-receptor-amplification-nat-genet-1995",
+        "paper-quigley-structural-variation-mcrpc-cell-2018",
+        "paper-abida-genomic-correlates-outcome-mcrpc-pnas-2019",
+        "paper-tukachinsky-ctdna-3334-advanced-prostate-ccr-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Triple-negative breast cancer: the luminal androgen receptor subtype is 16% (Lehmann 2016, Bareche 2018); AR nuclear staining above 10% in 12% of ER/PR-negative patients screened for bicalutamide (Gucalp 2013); clinical benefit rates 19% (bicalutamide) and 25 to 33% (enzalutamide; Traina 2018). LAR tumours carry PIK3CA in 55% and are 75% HER2-enriched by PAM50 (Bareche 2018)."
+      ],
+      "symbol": "AR",
+      "role": [],
+      "sources": [],
+      "specificity": "tumour-associated",
+      "distribution": "few-types",
+      "specificityNote": "Tumour-associated overexpression: HPA finds the RNA cancer enhanced in cancer (Breast Invasive Carcinoma (TCGA), Prostate Adenocarcinoma (TCGA)) and tissue enhanced in normal liver, so the tumour and the normal tissue it comes from share the target and the medicine relies on the difference in level. HPA AR: RNA tissue enhanced (liver 36 nTPM); high antibody staining in 2 normal tissues; highest cancer staining prostate cancer (7 of 8 high). Distribution: 2 cancer families in the corpus carry a prevalence row, label threshold or catalogue link for it (Prostate cancer, Breast cancer (all types)); approvals of single-target medicines aimed at it also list Salivary gland cancers, not counted; Open Targets associates it with 5 specific cancer types at or above 0.5 (prostate cancer, prostate carcinoma, prostate adenocarcinoma, Familial prostate cancer, breast cancer). (Rule 7 of scripts/fetch-target-specificity.ts.)",
+      "specificitySources": [
+        {
+          "label": "Human Protein Atlas AR tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000169083-AR/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Human Protein Atlas AR pathology",
+          "url": "https://www.proteinatlas.org/ENSG00000169083-AR/pathology",
+          "note": "patients per staining level per cancer type (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Open Targets ENSG00000169083 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000169083/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:644",
+      "ensembl": "ENSG00000169083",
+      "uniprot": "P10275",
+      "entrez": "367",
+      "firstDescribed": 1988,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Lubahn D.B. et al, Mol. Endocrinol, 1988, \"The human androgen receptor: complementary deoxyribonucleic acid cloning, sequence analysis and gene expression in prostate\".",
+      "firstDescribedSource": "https://pubmed.ncbi.nlm.nih.gov/3216866/",
+      "biology": "Nuclear receptor; amplification, splice variants (AR-V7), and ligand-binding-domain mutations drive resistance.",
+      "whereFound": [
+        "Prostate cancer",
+        "LAR-subtype TNBC",
+        "Salivary duct carcinoma",
+        "Triple-negative breast cancer: ar expression and luminal androgen receptor subtype 12-16%",
+        "Prostate cancer: high-level amplification of the gene, and of an upstream enhancer 1-57% depending on disease state",
+        "Prostate cancer: l702h, w742c/l, h875y, t878a, f877l 0.4-18% depending on disease state"
+      ],
+      "targetClass": "nuclear-receptor",
+      "prevalence": [
+        {
+          "cancerId": "prostate",
+          "pct": ">95",
+          "measure": "AR-driven at diagnosis",
+          "source": "https://en.wikipedia.org/wiki/Androgen_receptor",
+          "note": "AR-V7 in ~20-40% of mCRPC"
+        },
+        {
+          "cancerId": "tnbc",
+          "pct": "10-15",
+          "measure": "Luminal androgen receptor subtype",
+          "source": "https://en.wikipedia.org/wiki/Androgen_receptor"
+        },
+        {
+          "cancerId": "tnbc",
+          "pct": "12-16",
+          "measure": "AR expression and luminal androgen receptor subtype",
+          "source": "https://doi.org/10.1371/journal.pone.0157368",
+          "note": "LAR was 16% of tumours by TNBCtype-4 and 9% by the original six-subtype call (Lehmann 2016); 77 of 485 classifiable TNBCs, 16%, with 92% of LAR patients aged 45 or over (Bareche 2018); AR nuclear staining above 10% in 12% of 424 ER/PR-negative patients screened for TBCRC 011 (Gucalp 2013); 78 of 118 enrolled enzalutamide patients had 10% or more nuclear AR (Traina 2018). AR mutation is rare: 2 of 123 in brca_tcga_pan_can_atlas_2018 (cBioPortal)."
+        },
+        {
+          "cancerId": "prostate",
+          "pct": "1-57",
+          "measure": "High-level amplification of the gene, and of an upstream enhancer",
+          "source": "https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018",
+          "note": "cBioPortal high-level amplification: 5 of 489, 1.0%, in prad_tcga_pan_can_atlas_2018; 17 of 424, 4.0%, in prad_mcspc_mskcc_2020; 237 of 2,260, 10.5%, in prostate_msk_2024; 9 of 82, 11.0%, in the patient-contributed mpcproject_broad_2021; 217 of 444, 48.9%, in prad_su2c_2019; 78 of 150, 52.0%, in prad_su2c_2015; 85 of 149, 57.0%, in prad_fhcrc. High-level amplification of Xq11-q13 was found in 7 of 23 tumours recurring on androgen deprivation and none of the pre-treatment specimens from the same men (Visakorpi 1995); the upstream enhancer is amplified in 81% of 101 deeply sequenced castration-resistant genomes (Quigley 2018)."
+        },
+        {
+          "cancerId": "prostate",
+          "pct": "0.4-18",
+          "measure": "L702H, W742C/L, H875Y, T878A, F877L",
+          "source": "https://www.cbioportal.org/study/summary?id=prad_su2c_2019",
+          "note": "cBioPortal samples with any AR mutation: 61 of 444, 13.7%, in prad_su2c_2019; 27 of 150, 18.0%, in prad_su2c_2015; 93 of 2,260, 4.1%, in prostate_msk_2024; 9 of 424, 2.1%, in prad_mcspc_mskcc_2020; 2 of 494, 0.4%, in prad_tcga_pan_can_atlas_2018. Allele records in prad_su2c_2019, 72 records: L702H 17, T878A 15, H875Y 11, W742C 8, W742L 4, F877L 3."
+        }
+      ]
+    },
+    {
+      "id": "brd4",
+      "kind": "target",
+      "name": "BRD4",
+      "aka": [
+        "BET",
+        "BET bromodomain proteins (BRD2, BRD3, BRD4, BRDT)",
+        "bromodomain containing 4",
+        "MCAP",
+        "HUNK1"
+      ],
+      "tldr": "BRD4 reads acetyl marks on DNA-packaging proteins and helps regulate transcription. Blocking a recognition pocket and removing the whole protein test different functions.",
+      "summary": "BRD4 is a chromatin reader that recognizes acetylated histones and helps regulate transcription. Its recognition pockets and other protein interactions can contribute different functions.\n\nEngaging an acetyl-recognition pocket and depleting a whole protein are different interventions. In selected TNBC models with acquired BET-inhibitor resistance, cells remained dependent on BRD4 through bromodomain-independent regulation. Verify pocket engagement and depletion independently before comparing growth outcomes. Neither operation alone establishes clinical benefit or a vulnerability caused by an uncharacterized BET-family variant.\n\nBET proteins read acetylated lysine marks; they do not write the acetyl mark. The family includes BRD2, BRD3, BRD4 and BRDT, with two bromodomains and an extra-terminal interaction region. BRD4 can recruit transcription-elongation machinery, but other bromodomain proteins are not all BET proteins and family members are not functionally interchangeable. A schematic that retains the same histone mark during pocket occupation and protein depletion isolates two different interventions. The fixed mark is a drawing convention rather than a measured unchanged acetylation state; the state of the mark needs its own measurement. A representative pocket also does not make JQ1 specific to BD1.\n\nIn a fictional culture, an engaged BET pocket probe leaves growth unchanged while independently controlled BRD4 depletion impairs growth. The findings can coexist if the remaining protein supplies functions the probe does not block, as the resistant-model work illustrates. Binding assays, chromatin occupancy, early RNA changes, later growth and death, general transcription effects and appropriate restoration controls answer different questions. Lower MYC RNA alone does not attribute a later effect to MYC.\n\nFrench identified a BRD4-NUT fusion in the defined carcinoma; a fusion is a different biological alteration from an ordinary sequence variant. Stathis reported four people with confirmed BRD4-NUT carcinomas treated with OTX015/MK-8628 in compassionate use: two had rapid regression, with no randomized comparison or established survival benefit. The report described thrombocytopenia, including reversible grade 3 events and a grade 4 event in one patient. This small selected series does not establish efficacy across BET-altered tumors.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "HGNC HGNC:13575",
+          "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:13575"
+        },
+        {
+          "label": "UniProt O60885",
+          "url": "https://www.uniprot.org/uniprotkb/O60885/entry"
+        },
+        {
+          "label": "NCBI Gene 23476",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/23476"
+        },
+        {
+          "label": "Response and resistance to BET bromodomain inhibitors in triple-negative breast cancer. (primary abstract; 2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26735014/"
+        },
+        {
+          "label": "Selective inhibition of BET bromodomains. (primary abstract; 2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20871596/"
+        },
+        {
+          "label": "Recruitment of P-TEFb for stimulation of transcriptional elongation by the bromodomain protein Brd4. (2005; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16109377/"
+        },
+        {
+          "label": "BET bromodomain inhibition as a therapeutic strategy to target c-Myc. (2011; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21889194/"
+        },
+        {
+          "label": "BRD4-NUT fusion oncogene: a novel mechanism in aggressive carcinoma. (2003; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12543779/"
+        },
+        {
+          "label": "Clinical Response of Carcinomas Harboring the BRD4-NUT Oncoprotein to the Targeted Bromodomain Inhibitor OTX015/MK-8628. (2016; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26976114/"
+        },
+        {
+          "label": "Phase 1 Study of Molibresib (GSK525762), a Bromodomain and Extra-Terminal Domain Protein Inhibitor, in NUT Carcinoma and Other Solid Tumors.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32328561/"
+        }
+      ],
+      "tags": [
+        "wave5-target"
+      ],
+      "related": [
+        "myc",
+        "jak2",
+        "chemical-probe"
+      ],
+      "cancers": [
+        "nut-carcinoma",
+        "primary-myelofibrosis",
+        "prostate",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [
+        "epigenetic-drugs"
+      ],
+      "targets": [],
+      "drugs": [
+        "pelabresib",
+        "zen-3694",
+        "fedratinib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "transcription-addiction",
+        "epigenetic-reprogramming",
+        "myc"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Prevalence not recorded in this wave: HGNC and UniProt carry no positivity rates and no other source was consulted.",
+        "BET proteins contain two recognition domains, BD1 and BD2, alongside other interaction regions. JQ1 competes with acetylated binding partners at these pockets. It was developed as an experimental chemical probe, with binding measured across bromodomains. The original work found binding to both BRD4 bromodomains and other BET-family members; a drawing of one occupied pocket does not make the compound specific to BD1. Compare the actual protein and domain profile of each compound. A preference for BD2, or for one family member, is not comparative evidence of human safety or anticancer benefit. Pocket occupation also leaves protein regions that a separately verified depletion experiment removes.",
+        "Piha-Paul and colleagues reported a first-in-human molibresib study in NUT carcinoma and other solid tumours, published online in 2019 and in the 2020 journal issue. The dose-escalation report included 65 patients and assessed exposure, pharmacodynamic effects, safety and preliminary activity. Thrombocytopenia and gastrointestinal events were frequent treatment-related adverse events in this study. Circulating monocyte chemoattractant protein 1 was a pharmacodynamic measurement, not a patient-benefit endpoint. These findings describe this product and study; they do not rank every BET inhibitor or show postoperative benefit in triple-negative breast cancer.",
+        "A binding or displacement assay tests the pocket interaction; chromatin occupancy and RNA output test later biological effects. Cell counts, growth, death and regrowth after washout answer further questions. State the protein or domain tested, compound, concentration, duration and comparator. Nanomolar, abbreviated nM, means one billionth of a mole per litre; RNA counts and signals normalised to a control use their own units. Genetic perturbation, an independent compound, comparison cells and monitoring of general transcription help distinguish a specific dependence from broad disruption. No single one of these readouts is a clinical sensitivity score.",
+        "Consider a fictional culture in which a BET inhibitor lowers MYC RNA while cells continue growing. The RNA change shows a measured transcriptional effect, not MYC-mediated cell death or absence of every remaining BET function. Check which protein and pocket were engaged, the timing of the RNA and growth measurements, general transcription, independently controlled protein perturbation and comparison cells. Shu and colleagues found that selected inhibitor-resistant triple-negative breast-cancer cultures still required BRD4 through bromodomain-independent regulation. That result explains why pocket response and whole-protein dependence can diverge; it does not predict patient benefit from the fictional result.",
+        "A BRD3 sequence variant, BRD4 dependence and sensitivity to a compound acting across BET proteins are three separate propositions. A family name cannot connect them without functional evidence. To explain a BET result, identify the reading interaction being perturbed, show which protein functions account for the measured effect and then state the comparative clinical evidence. Decreased MYC RNA is also different from directly inhibiting MYC protein."
+      ],
+      "provenance": {
+        "editedBy": "OnCo content wave 5 (HGNC REST, UniProt REST, corpus drug and pathway records)",
+        "editedOn": "2026-09-22"
+      },
+      "symbol": "BRD4",
+      "role": [],
+      "sources": [],
+      "specificity": "broadly-expressed",
+      "distribution": "few-types",
+      "specificityNote": "Broadly expressed or essential: HPA lists BRD4 among essential proteins and finds the RNA at low tissue specificity; the 3 medicines aimed at it (Pelabresib, ZEN-3694, Fedratinib) act on the wild-type protein, so normal tissue is exposed and the therapeutic window comes from the tumour's faster division or its dependence on the protein. HPA BRD4: RNA low tissue specificity; high antibody staining in 44 normal tissues; highest cancer staining skin cancer (12 of 12 high). Distribution: 4 cancer families in the corpus carry a prevalence row, label threshold or catalogue link for it (NUT carcinoma (midline carcinoma with NUTM1 rearrangement), Myeloid neoplasms, Prostate cancer, Breast cancer (all types)); Open Targets associates it with 0 specific cancer types at or above 0.5. (Rule 7 of scripts/fetch-target-specificity.ts.)",
+      "specificitySources": [
+        {
+          "label": "Human Protein Atlas BRD4 tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000141867-BRD4/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Open Targets ENSG00000141867 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000141867/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:13575",
+      "ensembl": "ENSG00000141867",
+      "uniprot": "O60885",
+      "entrez": "23476",
+      "firstDescribed": 1997,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Weber, 1997.",
+      "firstDescribedSource": "https://www.uniprot.org/uniprotkb/O60885/entry",
+      "biology": "The ZEN-3694 record describes BET inhibitors as blocking the bromodomain proteins that switch on growth genes such as MYC, with objective but short-lived responses in early NUT carcinoma trials of molibresib and birabresib; the epigenetic-reprogramming pathway record lists BET proteins among the chromatin readers hijacked in cancer.",
+      "whereFound": [
+        "NUT carcinoma (BRD4-NUT fusion)",
+        "Primary myelofibrosis (pelabresib)",
+        "Castration-resistant prostate cancer and triple-negative breast cancer (ZEN-3694 trials)"
+      ],
+      "targetClass": "transcription",
+      "prevalence": []
+    },
+    {
+      "id": "notch",
+      "kind": "pathway",
+      "name": "Notch signalling",
+      "aka": [],
+      "tldr": "Notch receptors can relay signals between contacting cells. The effect depends on the receptor, ligand, alteration and tissue; receiving a signal does not by itself prove growth dependence.",
+      "summary": "A ligand-bearing sender, receptor amount, received signal and growth dependence are separate observations. Locate malignant, vessel and other neighboring cells before assigning a Notch mechanism. Ligand on a vessel is not evidence that the tumor received the signal, and total receptor is different from a released nuclear intracellular domain.\n\nCommon contact-dependent Notch signaling begins when Delta-like or Jagged ligand on one cell engages a receptor on a neighbor. Ligand-regulated extracellular cleavage permits subsequent gamma-secretase-mediated membrane cleavage; the released Notch intracellular domain, NICD, can enter the nucleus and work with transcriptional partners. This route differs from an RTK phosphorylation relay and omits receptor maturation and sender mechanics.\n\nWeng found activating NOTCH1 changes in extracellular heterodimerization or PEST regions in more than half of the studied T-ALLs. Agrawal identified predicted inactivating alterations in head-and-neck squamous tumors, suggesting a tumor-suppressor role there. An uncharacterized allele inherits neither direction from the pathway name; tissue, cell identity and alteration effect matter.\n\nA fictional T-ALL culture with high nuclear NICD without a ligand-bearing neighbor, and lower NICD after gamma-secretase blockade, supports a ligand-independent activation hypothesis. A contact-blocking experiment that lowers NICD without changing growth instead supports reduced received signaling without demonstrating a growth requirement. Control general toxicity, contact conditions, independent pathway perturbations and compensation. Gamma-secretase also processes other proteins; responsive HES/HEY RNA and nuclear staining need validated assays and are not universal eligibility cutoffs.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+      "links": [
+        {
+          "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
+          "url": "https://doi.org/10.1146/annurev-pathol-052016-100127"
+        },
+        {
+          "label": "Notch-1 signalling requires ligand-induced proteolytic release of intracellular domain. (primary abstract; 1998)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9620803/"
+        },
+        {
+          "label": "Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. (primary abstract; 2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15472075/"
+        },
+        {
+          "label": "Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. (primary abstract; 2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21798897/"
+        },
+        {
+          "label": "A ligand-induced extracellular cleavage regulates gamma-secretase-like proteolytic activation of Notch1. (2000; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10882062/"
+        },
+        {
+          "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
+        },
+        {
+          "label": "Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25104330/"
+        },
+        {
+          "label": "van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15959515/"
+        },
+        {
+          "label": "Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11432830/"
+        },
+        {
+          "label": "Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25231399/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [],
+      "cancers": [
+        "sclc",
+        "all-leukemia",
+        "cll",
+        "head-and-neck",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "dll3"
+      ],
+      "drugs": [
+        "tarlatamab",
+        "nirogacestat"
+      ],
+      "companies": [],
+      "institutions": [
+        "dana-farber",
+        "penn-abramson"
+      ],
+      "pathways": [
+        "cancer-stem-cells-plasticity",
+        "myc"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-aster-annu-rev-pathol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
+        "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+        "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
+        "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors."
+      ],
+      "analogy": "A doorbell that only works when a neighbour presses it. In some cancers the bell rings constantly (T-ALL); in others it has been ripped out so cells never hear 'stop and mature'.",
+      "nodes": [
+        {
+          "id": "lig",
+          "label": "DLL/JAG ligand (neighbour)",
+          "x": 15,
+          "y": 40
+        },
+        {
+          "id": "notch",
+          "label": "NOTCH receptor",
+          "x": 40,
+          "y": 40
+        },
+        {
+          "id": "gs",
+          "label": "γ-secretase cleavage",
+          "x": 60,
+          "y": 40
+        },
+        {
+          "id": "nicd",
+          "label": "NICD → RBPJ",
+          "x": 80,
+          "y": 40
+        },
+        {
+          "id": "hes",
+          "label": "HES1/HEY, MYC",
+          "x": 80,
+          "y": 78
+        },
+        {
+          "id": "dll3",
+          "label": "DLL3 (inhibitory; SCLC surface)",
+          "x": 15,
+          "y": 80,
+          "targetId": "dll3"
+        }
+      ],
+      "edges": [
+        {
+          "from": "lig",
+          "to": "notch",
+          "type": "activates"
+        },
+        {
+          "from": "notch",
+          "to": "gs",
+          "type": "activates"
+        },
+        {
+          "from": "gs",
+          "to": "nicd",
+          "type": "activates"
+        },
+        {
+          "from": "nicd",
+          "to": "hes",
+          "type": "activates"
+        },
+        {
+          "from": "dll3",
+          "to": "notch",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "Nirogacestat (γ-secretase inhibitor) in desmoid tumours",
+        "DLL3-directed tarlatamab in SCLC; DLL3 ADCs and trispecifics",
+        "NOTCH1-mutant CLL: reduced benefit from anti-CD20, informs regimen choice"
+      ]
+    },
+    {
+      "id": "keap1",
+      "kind": "target",
+      "name": "KEAP1",
+      "aka": [
+        "kelch like ECH associated protein 1",
+        "Kelch-like ECH-associated protein 1",
+        "KIAA0132",
+        "MGC10630",
+        "MGC1114",
+        "MGC20887",
+        "MGC4407",
+        "MGC9454",
+        "INrf2",
+        "KLHL19"
+      ],
+      "tldr": "KEAP1 helps a protein-tagging complex control the NRF2 stress response. A KEAP1 variant, an NRF2 output and a cancer cell’s dependence on that response are separate findings.",
+      "summary": "NFE2L2 encodes NRF2, a transcription factor; KEAP1 is an adaptor linking it to a CUL3-containing ubiquitin-ligase complex. Under suitable unstressed conditions, tagging promotes NRF2 degradation. Reduced turnover can make more NRF2 available for nuclear stress-defense programs. Protein turnover, nuclear output, protection against a stressor and survival dependence require separate measurements.\n\nZhang's biochemical and cell experiments found stress-associated inhibition of NRF2 ubiquitination without disruption of every KEAP1-NRF2 association. The lesson's paired conditions depict altered turnover, not creation of NRF2 or a mandatory physical latch release. CUL3 is a scaffold used with other adaptors and substrates, so a CUL3 change cannot be assigned an NRF2 effect from its name alone.\n\nIn a fictional culture, high NQO1 RNA, nuclear NRF2, several responsive proteins and reduced readouts after controlled KEAP1 restoration support a regulatory consequence. Test survival under a defined stress separately, using a specific NRF2 perturbation, matched controls and appropriate restoration to assess dependence. Stronger defenses may confer resistance; their abundance does not demonstrate ferroptosis sensitivity or benefit from an NRF2-directed therapy.\n\nSingh sequenced 54 non-small-cell lung tumors and found KEAP1 mutations in ten, about 19%, alongside a separate 12-cell-line analysis. This cohort proportion is not a universal lung-cancer prevalence. Vartanian's proteomic study in A549 and other cell experiments found that brusatol broadly inhibited protein synthesis, so lower NRF2 after that compound does not establish selective engagement. Use cell identity, preservation, timing, several outputs and general-translation controls; no universal NRF2-high treatment cutoff follows.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "HGNC HGNC:23177",
+          "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:23177"
+        },
+        {
+          "label": "UniProt Q14145",
+          "url": "https://www.uniprot.org/uniprotkb/Q14145/entry"
+        },
+        {
+          "label": "NCBI Gene 9817",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/9817"
+        },
+        {
+          "label": "Ensembl ENSG00000079999",
+          "url": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000079999"
+        },
+        {
+          "label": "Oxidative stress sensor Keap1 functions as an adaptor for Cul3-based E3 ligase to regulate proteasomal degradation of Nrf2. (2004; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15282312/"
+        },
+        {
+          "label": "Keap1 is a redox-regulated substrate adaptor protein for a Cul3-dependent ubiquitin ligase complex. (2004; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15572695/"
+        },
+        {
+          "label": "Oncogene-induced Nrf2 transcription promotes ROS detoxification and tumorigenesis. (2011; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21734707/"
+        },
+        {
+          "label": "Dysfunctional KEAP1-NRF2 interaction in non-small-cell lung cancer. (2006; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17020408/"
+        },
+        {
+          "label": "Application of Mass Spectrometry Profiling to Establish Brusatol as an Inhibitor of Global Protein Synthesis. (2016; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26711467/"
+        }
+      ],
+      "tags": [
+        "cancer-genes-wave"
+      ],
+      "related": [
+        "civic",
+        "open-targets",
+        "intogen",
+        "stk11-keap1-loss"
+      ],
+      "cancers": [
+        "lung-cancer",
+        "hcc",
+        "nasopharyngeal",
+        "neuroendocrine",
+        "nsclc",
+        "cholangiocarcinoma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "hepatocellular-carcinoma-signalling",
+        "keap1-nrf2"
+      ],
+      "terms": [
+        "stk11-keap1"
+      ],
+      "trials": [
+        "nct05276726",
+        "nct06008093"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-arbour-kras-co-mutation-outcomes-ccr-2018",
+        "paper-ricciuti-stk11-keap1-kras-immunotherapy-jto-2022"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Written by scripts/fetch-cancer-genes.ts from CIViC, Open Targets, IntOGen, HGNC and UniProt; the function text is UniProt's, condensed and in UK spelling. Roles: Open Targets known-drug datatype score 0.14; IntOGen calls it an activating (Act) driver in 7 cohorts; IntOGen calls it a loss-of-function (LoF) driver in 7 cohorts; CIViC holds 6 clinical evidence items on its variants. Evidence tier \"clinical-evidence\" is the strongest of those signals.",
+        "Prevalence not recorded: none of the sources gives a positivity rate.",
+        "Lung cancer: inactivated in 11 to 18% of adenocarcinomas and 10.1% of squamous tumours, with the squamous half of the pathway broken through NFE2L2 degron hotspots instead (cBioPortal). In 330 KRAS-mutant patients, KEAP1 or NFE2L2 co-mutation was the only independent predictor of shorter survival (hazard ratio 1.96), shortened the duration of first chemotherapy and shortened survival from the start of immunotherapy (3.54) (Arbour 2018). Its first effect is metabolic: releasing NRF2 switches on an antioxidant programme that supports growth under oxidative and radiation stress."
+      ],
+      "provenance": {
+        "editedBy": "OnCo repair and signalling education audit; generated identity and catalogue fields preserved",
+        "editedOn": "2026-11-10"
+      },
+      "symbol": "KEAP1",
+      "role": [
+        "drug-target",
+        "oncogene-driver",
+        "tumour-suppressor",
+        "biomarker"
+      ],
+      "evidenceTier": "clinical-evidence",
+      "sources": [
+        {
+          "label": "HGNC HGNC:23177",
+          "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:23177",
+          "note": "approved symbol, name, aliases, locus and cross-references (hgnc_complete_set.txt)"
+        },
+        {
+          "label": "UniProt Q14145",
+          "url": "https://www.uniprot.org/uniprotkb/Q14145/entry",
+          "note": "protein name, function text, keywords and locations (REST API)"
+        },
+        {
+          "label": "CIViC gene KEAP1",
+          "url": "https://civicdb.org/features/7777",
+          "note": "6 evidence items, 0 assertions, 2 variants; diseases: Lung Non-small Cell Carcinoma (GraphQL API, CC0)"
+        },
+        {
+          "label": "Open Targets ENSG00000079999",
+          "url": "https://platform.opentargets.org/target/ENSG00000079999/associations",
+          "note": "association with cancer (MONDO_0004992) 0.76; per-cancer scores at or above 0.5: non-small cell lung carcinoma 0.69, neuroendocrine neoplasm 0.52, lung cancer 0.72 (GraphQL API, CC0)"
+        },
+        {
+          "label": "IntOGen KEAP1",
+          "url": "https://www.intogen.org/search?gene=KEAP1",
+          "note": "driver in 14 cohorts (Act 7, LoF 7); Compendium_Cancer_Genes.tsv release 20240920, CC0 1.0"
+        }
+      ],
+      "specificity": "tumour-specific",
+      "distribution": "many-types",
+      "specificityNote": "Tumour-specific alteration: the catalogues call it an oncogene driver (IntOGen cohort analysis finds it activated more often than chance) and a tumour suppressor (IntOGen finds it knocked out more often than chance), so the direction differs between cohorts but the alteration is somatic either way; what a medicine would aim at or exploit is the altered form or its loss, absent from normal cells; no corpus medicine is aimed at it yet. HPA KEAP1: RNA tissue enhanced (skeletal muscle 171 nTPM); high antibody staining in 8 normal tissues; highest cancer staining colorectal cancer (1 of 9 high). Distribution: 5 cancer families in the corpus carry a prevalence row, label threshold or catalogue link for it (Lung cancer (all types), Hepatocellular carcinoma, Nasopharyngeal carcinoma, Neuroendocrine tumours, Biliary tract cancer (all types)); Open Targets associates it with 3 specific cancer types at or above 0.5 (lung adenocarcinoma, non-small cell lung carcinoma, squamous cell lung carcinoma). (Rule 6 of scripts/fetch-target-specificity.ts.)",
+      "specificitySources": [
+        {
+          "label": "UniProt Q14145",
+          "url": "https://www.uniprot.org/uniprotkb/Q14145/entry",
+          "note": "protein name, function text, keywords and locations (REST API)"
+        },
+        {
+          "label": "CIViC gene KEAP1",
+          "url": "https://civicdb.org/features/7777",
+          "note": "6 evidence items, 0 assertions, 2 variants; diseases: Lung Non-small Cell Carcinoma (GraphQL API, CC0)"
+        },
+        {
+          "label": "IntOGen KEAP1",
+          "url": "https://www.intogen.org/search?gene=KEAP1",
+          "note": "driver in 14 cohorts (Act 7, LoF 7); Compendium_Cancer_Genes.tsv release 20240920, CC0 1.0"
+        },
+        {
+          "label": "Human Protein Atlas KEAP1 tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000079999-KEAP1/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Open Targets ENSG00000079999 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000079999/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:23177",
+      "ensembl": "ENSG00000079999",
+      "uniprot": "Q14145",
+      "entrez": "9817",
+      "firstDescribed": 1995,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Nagase et al, DNA Res, 1995, \"Prediction of the coding sequences of unidentified human genes. IV. The coding sequences of 40 new genes (KIAA0121-KIAA0160) deduced by analysis of cDNA clones from human cell line KG-1\".",
+      "firstDescribedSource": "https://pubmed.ncbi.nlm.nih.gov/8590280/",
+      "biology": "Substrate-specific adapter of a BCR (BTB-CUL3-RBX1) E3 ubiquitin ligase complex that regulates the response to oxidative stress by targeting NFE2L2/NRF2 for ubiquitination. KEAP1 acts as a key sensor of oxidative and electrophilic stress: in normal conditions, the BCR(KEAP1) complex mediates ubiquitination and degradation of NFE2L2/NRF2, a transcription factor regulating expression of many cytoprotective genes. In response to oxidative stress, different electrophile metabolites trigger non-enzymatic covalent modifications of highly reactive cysteine residues in KEAP1, leading to inactivate the ubiquitin ligase activity of the BCR(KEAP1) complex, promoting NFE2L2/NRF2 nuclear accumulation and expression of phase II detoxifying enzymes. In response to selective autophagy, KEAP1 is sequestered in inclusion bodies following its interaction with SQSTM1/p62, leading to inactivation of the BCR(KEAP1) complex and activation of NFE2L2/NRF2. The BCR(KEAP1) complex also mediates ubiquitination of SQSTM1/p62, increasing SQSTM1/p62 sequestering activity and degradation. The BCR(KEAP1) complex also targets BPTF and PGAM5 for ubiquitination and degradation by the proteasome. Location: Cytoplasm; Nucleus (UniProt). Locus 19p13.2 (HGNC).",
+      "whereFound": [
+        "Lung cancer: Open Targets association 0.72 with lung cancer (MONDO_0008903)",
+        "Hepatocellular carcinoma: IntOGen driver in 2 cohorts (HCC)",
+        "Nasopharyngeal carcinoma: IntOGen driver in 1 cohort (NPC)",
+        "Neuroendocrine tumours: Open Targets association 0.52 with neuroendocrine neoplasm (MONDO_0019496)",
+        "Non-small-cell lung cancer: Open Targets association 0.69 with non-small cell lung carcinoma (MONDO_0005233); CIViC evidence names this disease",
+        "Biliary tract cancer: IntOGen driver in 1 cohort (CHOL)",
+        "Non-small-cell lung cancer: inactivating mutation 11-18%"
+      ],
+      "targetClass": "tumor-suppressor",
+      "prevalence": [
+        {
+          "cancerId": "nsclc",
+          "pct": "11-18",
+          "measure": "Inactivating mutation",
+          "source": "https://www.cbioportal.org/study/summary?id=luad_mskcc_2023_met_organotropism",
+          "note": "cBioPortal: 400 of 2,653, 15.1%, in luad_mskcc_2023_met_organotropism; 153 of 915, 16.7%, in lung_msk_2017; 102 of 566, 18.0%, in luad_tcga_pan_can_atlas_2018; 40 of 230, 17.4%, in luad_tcga_pub; 12 of 110, 10.9%, in luad_cptac_2020; 197 of 2,621, 7.5%, in nsclc_ctdx_msk_2022; 13 of 302, 4.3%, in luad_oncosg_2020; 1 of 232, 0.4%, in lung_nci_2022. In the immunotherapy cohort, 53 of 240, 22.1% (cBioPortal nsclc_pd1_msk_2018); deleterious KEAP1 mutations were 231 of 1,202 assessable patients, 19.2% (Ricciuti 2022)."
+        }
+      ]
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "kind": "pathway",
+      "name": "PI3K / AKT / mTOR",
+      "aka": [],
+      "tldr": "This network links growth signals and nutrients to protein production, metabolism and recycling. Different branches can respond differently to an intervention.",
+      "summary": "Class I PI3K phosphorylates a membrane lipid, producing PIP3; PTEN removes its position-3 phosphate. AKT and mTOR are protein kinases. A PIP3 lipid result and an AKT1 Ser473 phosphosite result are therefore different molecular measurements. Document specimen preservation, cell mixture, protein site, timing, exposure, comparator and total-protein normalization before interpreting a change as activity or dependence.\n\nMembrane recruitment helps organize AKT activation. PDK1 phosphorylates AKT1 Thr308, whereas the rictor-mTOR complex supplies Ser473 phosphorylation in the defined experimental route. AKT can inhibit TSC2, relieving the TSC1/2 brake on RHEB, which promotes mTORC1 signaling. The diagram's indirect AKT-to-mTORC1 connection stands for these regulatory steps; it is not direct phosphorylation of mTORC1 by AKT.\n\nRaptor-containing mTORC1 and rictor-containing mTORC2 are distinct complexes. mTORC1 regulates protein production and autophagy-initiation machinery; releasing initiation restraint is not proof of completed recycling flux. Harrington linked S6K activity to reduced IRS-1 function, and O'Reilly observed increased IRS-1 and AKT signaling after RAD001 in cell models and treated tumors. Feedback release can change an output without proving that a combination improves outcomes in every setting.\n\nIn a fictional mTORC1 perturbation, lower production-regulator phosphorylation followed by higher AKT1 Ser473 and unchanged growth supports biochemical changes, not essentiality or failed engagement; timing alone does not prove the feedback connection. Test the proposed wiring and functional outcome independently. The FDA's 2023 capivasertib-with-fulvestrant approval specified adults with hormone-receptor-positive, HER2-negative advanced breast cancer, qualifying PIK3CA/AKT1/PTEN alterations on an approved test and specified prior endocrine treatment or early recurrence. It is not a TNBC indication inferred from a pathway label.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/PI3K/AKT/mTOR_pathway",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PI3K/AKT/mTOR_pathway"
+        },
+        {
+          "label": "The tumor suppressor, PTEN/MMAC1, dephosphorylates the lipid second messenger, phosphatidylinositol 3,4,5-trisphosphate. (primary abstract; 1998)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9593664/"
+        },
+        {
+          "label": "mTOR inhibition induces upstream receptor tyrosine kinase signaling and activates Akt. (primary abstract; 2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16452206/"
+        },
+        {
+          "label": "3-Phosphoinositide-dependent protein kinase-1 (PDK1): structural and functional homology with the Drosophila DSTPK61 kinase. (1997; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9368760/"
+        },
+        {
+          "label": "Phosphorylation and regulation of Akt/PKB by the rictor-mTOR complex. (2005; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15718470/"
+        },
+        {
+          "label": "TSC2 is phosphorylated and inhibited by Akt and suppresses mTOR signalling. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12172553/"
+        },
+        {
+          "label": "Rheb GTPase is a direct target of TSC2 GAP activity and regulates mTOR signaling. (2003; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12869586/"
+        },
+        {
+          "label": "Raptor, a binding partner of target of rapamycin (TOR), mediates TOR action. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12150926/"
+        },
+        {
+          "label": "ULK1.ATG13.FIP200 complex mediates mTOR signaling and is essential for autophagy. (2009; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+        },
+        {
+          "label": "The TSC1-2 tumor suppressor controls insulin-PI3K signaling via regulation of IRS proteins. (2004; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15249583/"
+        },
+        {
+          "label": "FDA 2023 capivasertib with fulvestrant approval population",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-capivasertib-fulvestrant-breast-cancer"
+        },
+        {
+          "label": "PI3K inhibition impairs BRCA1/2 expression and sensitizes BRCA-proficient triple-negative breast cancer to PARP inhibition (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22915752/"
+        },
+        {
+          "label": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1 (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/"
+        },
+        {
+          "label": "mTOR kinase inhibition causes feedback-dependent biphasic regulation of AKT signaling (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22140653/"
+        },
+        {
+          "label": "AMPK phosphorylation of raptor mediates a metabolic checkpoint (2008)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18439900/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "breast-hr-positive",
+        "endometrial",
+        "prostate",
+        "tnbc",
+        "gallbladder"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "pik3ca",
+        "akt",
+        "her2",
+        "egfr"
+      ],
+      "drugs": [
+        "capivasertib",
+        "inavolisib",
+        "gedatolisib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "PI3K means phosphoinositide 3-kinase; AKT is also called protein kinase B. Mechanistic target of rapamycin complex 1, mTORC1, integrates growth and nutrient inputs. PTEN, phosphatase and tensin homolog, removes a phosphate from a PI3K-generated lipid signal. These protein and lipid reactions need their own readouts. Ibrahim 2012 found that PI3K inhibition reduced BRCA1/2 expression and increased PARP-inhibitor sensitivity in the BRCA-proficient triple-negative breast cancer models studied. A second branch concerns mTORC1 restraint of ULK1-associated autophagy initiation, studied by Kim 2011. Releasing an initiation brake does not establish completed cargo degradation or protective recycling. The two branches can change together without revealing the net survival effect. A model already lacking the relevant repair function cannot be assumed to gain the same vulnerability as one in which that function is newly reduced; measure protein and repair function, flux and survival under the actual compound, dose and schedule.",
+        "Rapalogs, PI3K or AKT inhibitors and ATP-site mTOR kinase inhibitors are different interventions. In Rodrik-Outmezguine's 2011 models, inhibiting both mTOR complexes initially reduced AKT Ser473 and Thr308 phosphorylation, but relief of receptor feedback later restored Thr308 phosphorylation and AKT signalling while Ser473 remained suppressed. A Ser473 result therefore did not measure all AKT activity. O'Reilly's rapalog study and Harrington's IRS feedback work likewise explain why lower mTORC1 output can coexist with increased upstream signalling. These are measured responses in specified systems, not inevitable behaviour or a universal combination prescription.",
+        "In a fictional experiment, repair RNA falls, an mTORC1-associated phosphosite falls, AKT phosphorylation rises and more autophagosomes appear. The RNA concerns messages; confirm the proposed protein and repair consequence. A validated site change concerns that output at that time, while the AKT change may fit feedback without proving every downstream effect. Autophagosome amount does not establish completed flux, and no survival conclusion has yet been supplied. Growth and energy inputs also differ: Gwinn 2008 linked AMPK phosphorylation of raptor to mTORC1 restraint during energy stress. Slower costly building work and better survival can coexist. Named S6, 4E-BP1, AKT and AMPK-target sites need their own controls, total-protein context and timing; bulk RNA is not a kinase-activity meter."
+      ],
+      "analogy": "Think of a factory: the receptor is the order desk, PI3K and AKT are the managers relaying the order, PTEN is the accountant cancelling orders, and mTOR is the assembly line. Cancer forges orders (PIK3CA mutation) or fires the accountant (PTEN loss).",
+      "nodes": [
+        {
+          "id": "rtk",
+          "label": "RTK (HER2, EGFR)",
+          "x": 50,
+          "y": 5,
+          "targetId": "her2"
+        },
+        {
+          "id": "pi3k",
+          "label": "PI3K (PIK3CA)",
+          "x": 50,
+          "y": 25,
+          "targetId": "pik3ca"
+        },
+        {
+          "id": "pten",
+          "label": "PTEN",
+          "x": 15,
+          "y": 40
+        },
+        {
+          "id": "pip3",
+          "label": "PIP3",
+          "x": 50,
+          "y": 42
+        },
+        {
+          "id": "akt",
+          "label": "AKT",
+          "x": 50,
+          "y": 58,
+          "targetId": "akt"
+        },
+        {
+          "id": "tsc",
+          "label": "TSC1/2",
+          "x": 25,
+          "y": 74
+        },
+        {
+          "id": "mtor",
+          "label": "mTORC1",
+          "x": 50,
+          "y": 82
+        },
+        {
+          "id": "foxo",
+          "label": "FOXO / BAD (apoptosis)",
+          "x": 85,
+          "y": 74
+        },
+        {
+          "id": "growth",
+          "label": "Protein synthesis, growth",
+          "x": 50,
+          "y": 97
+        }
+      ],
+      "edges": [
+        {
+          "from": "rtk",
+          "to": "pi3k",
+          "type": "activates"
+        },
+        {
+          "from": "pi3k",
+          "to": "pip3",
+          "type": "activates"
+        },
+        {
+          "from": "pten",
+          "to": "pip3",
+          "type": "inhibits"
+        },
+        {
+          "from": "pip3",
+          "to": "akt",
+          "type": "activates"
+        },
+        {
+          "from": "akt",
+          "to": "tsc",
+          "type": "inhibits"
+        },
+        {
+          "from": "tsc",
+          "to": "mtor",
+          "type": "inhibits"
+        },
+        {
+          "from": "akt",
+          "to": "foxo",
+          "type": "inhibits"
+        },
+        {
+          "from": "mtor",
+          "to": "growth",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "PI3Kα inhibitors (alpelisib, inavolisib) for PIK3CA-mutant HR+ breast cancer",
+        "AKT inhibitor capivasertib for PIK3CA/AKT1/PTEN-altered breast and PTEN-deficient prostate cancer",
+        "mTOR inhibitor everolimus",
+        "Dual PI3K/mTOR gedatolisib (2026)",
+        "Upstream: anti-HER2, anti-EGFR"
+      ]
+    },
+    {
+      "id": "protein-structure-and-domains",
+      "kind": "term",
+      "name": "Protein structure, domains and model confidence",
+      "aka": [
+        "protein structure",
+        "protein domain",
+        "protein motif",
+        "protein interface",
+        "intrinsically disordered region",
+        "pLDDT",
+        "predicted aligned error",
+        "PAE"
+      ],
+      "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
+      "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "EMBL-EBI: domains, motifs and disorder",
+          "url": "https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"
+        },
+        {
+          "label": "EMBL-EBI: AlphaFold2 confidence measures",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 3-4-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
+        },
+        {
+          "label": "EMBL-EBI: pLDDT local confidence",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"
+        },
+        {
+          "label": "EMBL-EBI: PAE and relative-region uncertainty",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"
+        },
+        {
+          "label": "RCSB PDB-101: experimental structure methods and their preparation, data and model limits",
+          "url": "https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "protein",
+        "structural-biology-infrastructure",
+        "binding-affinity-and-kinetics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+        "X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function.",
+        "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity."
+      ],
+      "category": "Clinic basics"
+    }
+  ]
+}

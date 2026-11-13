@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [autophagy atlas follow-up](autophagy-atlas-2026-11-13/README.md) replaces the blanket KRAS-dependence and antigen-display wording with a named pancreatic-model finding, corrects the chapter’s dependence framing and the linked record’s analogy, and appends one scoped Yamamoto paragraph. One existing owner changes in two fields, alongside two atlas descriptions; all eleven prior notes, every id, relation, title and stage order remain intact. One complete abstract and eleven complete selected body paragraphs were read; no whole-paper or new figure review is claimed. Seven actual readers, thirteen text checks, four metadata descriptions, two exact JSON exports and seventeen Markdown passages pass, with full gates (293 files, 3,101 tests, 2 skips). The adjacent follow-up is resolved in draft, leaving 49 of 74 adjacent groups open. Source lesson counts and open clauses are unchanged; 260 active notes-array proofs are rebound without changed excerpts or grades. Both source-ledger replays retain exit 2 for unfinished work and zero stale or missing proofs. Main/live and independent acceptance remain zero.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 515 | 6,806 / 6,827 | 21 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 527 | 7,278 / 7,302 | 24 |
+
+The asset inventories remain separate: original 569 teaching, 71 support and 1,248 unclassified; later 568 teaching, 71 support and 1,249 unclassified. Six schema findings remain open. All 917 defined literature occurrences retain identity/relevance screening, without blanket claim or full-text verification. The graph has 23,091 records. The 697 selected canonical ids are separate from 5,997 retained reader observations and two new atlas-copy observations; no canonical id was added in this pass.
+
+## Historical breast checkpoint
+
 The [breast concept assessment](breast-concepts-2026-11-11/README.md) adds twelve completed coordinator draft assessments at each pin, with separate original and later inventories. The goal remains active and main/live coverage is zero.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

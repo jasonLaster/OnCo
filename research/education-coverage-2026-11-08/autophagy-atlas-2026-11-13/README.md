@@ -1,0 +1,15 @@
+# Autophagy atlas wording and source scope
+
+The broad dependence and antigen-display claims in the atlas are replaced with conditional, model-specific wording. The linked autophagy record gets an amount/rate analogy and one scoped Yamamoto paragraph. Data commit: `b28dd9765758a0740fa20ff7971081fbe59f2a91`. This is an unmerged draft contribution, with no deployment or main/live acceptance.
+
+The paper already existed as `paper-yamamoto-nature`, with its DOI and PubMed identity linked from autophagy. Its complete abstract and eleven complete selected body paragraphs were read. The study concerns named pancreatic cancer model systems; neither universal KRAS dependence nor patient benefit follows. The record also retains the chloroquine monotherapy limitation. The original paper’s abstract quotation is unchanged. No whole-paper or new figure review is claimed.
+
+Only four content fields change: two atlas descriptions, the autophagy analogy and its notes array. All eleven older notes and their order remain intact. No id, title, relation, route, registry, alias, artwork, short summary or product component changes. Both files classify as data under the actual repository classifier. Two explicit atlas display-copy snapshots are reader observations, not graph entities or registrations.
+
+Seven actual SSR readers include the hub, all four stages of the affected chapter, the pathway record and its existing paper. Thirteen exact text checks, four actual metadata descriptions, the citation route and the unchanged 56-route list pass. The stage’s Key evidence list keeps its existing twelve-paper limit; the existing paper is also linked through the pathway content. CSS is omitted only in the private text harness. This does not certify browser layout, hydration, accessibility or a hosted page.
+
+Two actual JSON exports, seventeen Markdown passages, OpenAPI/context generation and the duplicate survey pass. Typecheck, lint, validate and the full suite pass: 293 test files, 3,101 tests and 2 skips. Gated bytes and every runtime graph fingerprint match the committed data. Prior source proofs receive 260 explicit notes-array hash rebindings, with no changed older excerpt, status or source-depth grade. Earlier cohort and pending files are protected by the preservation receipt.
+
+One of 74 adjacent groups is resolved in this draft; 49 remain open. Original and later lesson denominators and all their open points are unchanged. The FIGHT correction is still source-open: the publisher API returned core metadata only, and the publisher page returned HTTP 403. Metadata does not verify the notice body.
+
+The eight standard JSON files record reading, requirements, sources, changes, proofs, residuals, adjacent disposition and the batch summary. Validation, field anchors, exact rebind receipts, preservation, aggregate and deterministic replay receipts sit alongside them. Raw bodies and review HTML remain outside Git. No independent, expert, learner or language approval is granted, and the broader goal remains active.

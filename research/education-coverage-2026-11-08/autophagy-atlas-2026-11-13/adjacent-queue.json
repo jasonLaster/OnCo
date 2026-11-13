@@ -1,0 +1,101 @@
+{
+  "groupId": "original-pathway-atlas-wording-followup",
+  "before": {
+    "id": "original-pathway-atlas-wording-followup",
+    "title": "Autophagy atlas wording and source scope",
+    "domain": "molecular-pathway-source-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/33634751/",
+      "https://doi.org/10.1038/s41586-020-2229-5"
+    ],
+    "discoveryOccurrences": [
+      "original-mrd-and-pathways-2026-11-13"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator identified legacy atlas-text followup; no teaching credit",
+      "checkedAt": "2026-11-13",
+      "rationale": "The entity text is qualified, while an atlas-node plain description still makes a broad KRAS-dependence and antigen-display claim. This is remaining work, not an external approval dependency.",
+      "points": [
+        {
+          "id": "atlas-autophagy-conditionality",
+          "requirement": "Reconcile the autophagy node plain text in src/data/mechanics-atlas.ts with context-specific dependence, and verify the studied-system scope of its antigen-display claim.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Read the named primary antigen-display source and the actual node consumer before authoring a bounded replacement.",
+            "Check product classification for that file before any publication; do not infer an approval requirement solely from the path."
+          ]
+        }
+      ]
+    }
+  },
+  "after": {
+    "id": "original-pathway-atlas-wording-followup",
+    "title": "Autophagy atlas wording and source scope",
+    "domain": "molecular-pathway-source-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/33634751/",
+      "https://doi.org/10.1038/s41586-020-2229-5"
+    ],
+    "discoveryOccurrences": [
+      "original-mrd-and-pathways-2026-11-13"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator targeted primary-source, canonical-field and actual-consumer assessment; not independent approval",
+      "checkedAt": "2026-11-13",
+      "rationale": "The named Yamamoto paper was resolved and its complete abstract plus eleven complete selected body paragraphs were read. Atlas descriptions and the linked record now distinguish amount, flow, survival dependence and the studied pancreatic model scope. Actual hub, chapter-stage, pathway and paper readers, metadata, exports and full gates pass. The repository classifier returns data for both changed files. No product structure, ids, titles, order, routes, relations or source grades are changed.",
+      "points": [
+        {
+          "id": "atlas-autophagy-conditionality",
+          "requirement": "Reconcile the autophagy node plain text in src/data/mechanics-atlas.ts with context-specific dependence, and verify the studied-system scope of its antigen-display claim.",
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "atlas-survival-chapter-copy",
+              "version": "proposal-autophagy-atlas-copy",
+              "field": "plain",
+              "fieldSha256": "9a178b86181c06255a41494ebe567232e1d3794801982e451e0fe11770f3b11a",
+              "supportingExcerpt": "Cancer cells can change how they manage damage, recycling and death. A changed process is not automatically a survival requirement. Experiments must test what the relevant cells need under the stated conditions.",
+              "passageSha256": "37ca7169ece9a8c1cc3472a0fa13698f9238a8133b54aa247dc5fc798617fc13",
+              "explanation": "Actual current content field at the scoped reading depth. Atlas copy records are explicit reader-content snapshots, not graph entities or new registrations. The four-field change and actual citation route are verified separately from exact containment."
+            },
+            {
+              "recordId": "atlas-autophagy-stage-copy",
+              "version": "proposal-autophagy-atlas-copy",
+              "field": "plain",
+              "fieldSha256": "3fd8e7a3b3b47891a396e2b2a7ae6c7ae8ca0d93fb156b3c24d7a1eccec2b8a4",
+              "supportingExcerpt": "Autophagy delivers cellular material to lysosomes for breakdown and reuse. A marker snapshot or KRAS alteration alone does not establish recycling flow or survival dependence. In Yamamoto and colleagues' 2020 pancreatic cancer models, autophagy reduced surface MHC-I, the proteins that display antigens to CD8 T cells.",
+              "passageSha256": "22297fd18a8879595ad17f4571094a782d33d0cce32ce963cdc400eb8997ed88",
+              "explanation": "Actual current content field at the scoped reading depth. Atlas copy records are explicit reader-content snapshots, not graph entities or new registrations. The four-field change and actual citation route are verified separately from exact containment."
+            },
+            {
+              "recordId": "autophagy",
+              "version": "proposal-autophagy-atlas-root",
+              "field": "analogy",
+              "fieldSha256": "d2256e517e9294bb29e1891b22efd3c052952b9364784f9cbef072cd9536e63b",
+              "supportingExcerpt": "A recycling station can hold a large pile because more material arrives or because processing has slowed. The pile is an amount; material processed over time is a rate. Neither alone tells you whether the city depends on that station.",
+              "passageSha256": "bc983d78aa4ec98c7196ceba82b7cab8bf2d7e21703458fb72cb40ab3b97d43e",
+              "explanation": "Actual current content field at the scoped reading depth. Atlas copy records are explicit reader-content snapshots, not graph entities or new registrations. The four-field change and actual citation route are verified separately from exact containment."
+            },
+            {
+              "recordId": "autophagy",
+              "version": "proposal-autophagy-atlas-root",
+              "field": "notes",
+              "fieldSha256": "e94dc8ae8cc478559eecdec8cc4a718b0626f883591f2c5863bfb4de0c9a3301",
+              "supportingExcerpt": "Yamamoto and colleagues found that the cargo receptor NBR1 helped direct MHC-I proteins to lysosomes through an autophagy-dependent route in pancreatic ductal adenocarcinoma models. This lowered the amount of MHC-I at the cell surface, where it displays antigens to CD8 T cells. In mouse experiments, reducing MHC-I or depleting CD8 T cells reversed tumour control after genetic autophagy inhibition. Chloroquine increased surface MHC-I but, alone, did not significantly reduce tumour weight in the reported experiment; its effects on lysosomes are broad. These model results do not establish that every KRAS-driven cancer depends on autophagy or that blocking it benefits patients.",
+              "passageSha256": "73bc4afe33b3a75c741e84c26bab7d6daf722eab3c7744262af7deaf9d9d3122",
+              "explanation": "Actual current content field at the scoped reading depth. Atlas copy records are explicit reader-content snapshots, not graph entities or new registrations. The four-field change and actual citation route are verified separately from exact containment."
+            }
+          ],
+          "remaining": []
+        }
+      ]
+    }
+  },
+  "newGroups": 0,
+  "closedLocalDraftFollowups": 1,
+  "sourceOpenFIGHTCorrectionRetained": true,
+  "scope": "Only the narrowly assigned atlas follow-up changes disposition; all other adjacent, source, asset, literature and schema gaps remain at their prior scope."
+}

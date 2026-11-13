@@ -1,0 +1,385 @@
+{
+  "dataCommit": "b28dd9765758a0740fa20ff7971081fbe59f2a91",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.18
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.35
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.99
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 311.25
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "b28dd9765758a0740fa20ff7971081fbe59f2a91",
+    "graphCount": 23091,
+    "changedIds": [
+      "autophagy"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allAtlasValuesMatchCheckedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "scope": "Actual registered local draft graph and atlas. No new ids, relation changes, registry changes or product-code changes.",
+    "graphCount": 23091,
+    "changedEntityIds": [
+      "autophagy"
+    ],
+    "unchangedEntityCount": 23090,
+    "changedCanonicalFields": [
+      "analogy",
+      "notes"
+    ],
+    "retainedPriorNotes": 11,
+    "appendedNotes": 1,
+    "atlasChangedTextFields": 2,
+    "atlasChapters": 9,
+    "atlasStages": 56,
+    "yamamotoInStageEvidenceList": false,
+    "stageEvidenceShown": 12,
+    "stageEvidenceTotal": 93,
+    "citationRoute": [
+      "/mechanics/autophagy",
+      "/pathways/autophagy/",
+      "/key-papers/paper-yamamoto-nature/"
+    ],
+    "dataFiles": [
+      {
+        "file": "src/data/mechanics-atlas.ts",
+        "class": "data",
+        "sha256": "f81d7b5aed368d1f4e3a52f8ccd74ab2011ae76e796d4b48ba0dc33f4975cdc3"
+      },
+      {
+        "file": "src/data/mechanisms.ts",
+        "class": "data",
+        "sha256": "a4c40f54f2405a91766a6f1c2b50bd1f975d0923058fc10c1102b61182c3d9b6"
+      }
+    ]
+  },
+  "readers": {
+    "scope": "Actual EntityDetail plus actual mechanics hub and every stage in the affected chapter, with awaited route params and metadata. CSS omitted in private SSR harness; no Next build, browser, styles, hydration, deployment or independent acceptance claimed.",
+    "readers": [
+      {
+        "name": "autophagy",
+        "route": "/pathways/autophagy/",
+        "bytes": 61619,
+        "sha256": "096f13ea5713d55381535c87a497d16fa333b77fd42f9954e07d152e7ee23c80",
+        "requirements": [
+          "A recycling station can hold a large pile because more material arrives or because processing has slowed. The pile is an amount; material processed over time is a rate. Neither alone tells you whether the city depends on that station.",
+          "Yamamoto and colleagues found that the cargo receptor NBR1 helped direct MHC-I proteins to lysosomes through an autophagy-dependent route in pancreatic ductal adenocarcinoma models. This lowered the amount of MHC-I at the cell surface, where it displays antigens to CD8 T cells. In mouse experiments, reducing MHC-I or depleting CD8 T cells reversed tumour control after genetic autophagy inhibition. Chloroquine increased surface MHC-I but, alone, did not significantly reduce tumour weight in the reported experiment; its effects on lysosomes are broad. These model results do not establish that every KRAS-driven cancer depends on autophagy or that blocking it benefits patients."
+        ]
+      },
+      {
+        "name": "yamamoto",
+        "route": "/key-papers/paper-yamamoto-nature/",
+        "bytes": 30311,
+        "sha256": "a0148cb2e55f1bde4d06876b0bb8ddbb878b2e93e877c9e5cbaf201e6a70b28a",
+        "requirements": [
+          "Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I"
+        ]
+      },
+      {
+        "name": "mechanics-hub",
+        "route": "/mechanics/",
+        "bytes": 274264,
+        "sha256": "318c351b07f81a0c20bbdbc74311870142bb8ab9eddc553b420ca4a22c375dfb",
+        "requirements": [
+          "Cancer cells can change how they manage damage, recycling and death. A changed process is not automatically a survival requirement. Experiments must test what the relevant cells need under the stated conditions.",
+          "Autophagy delivers cellular material to lysosomes for breakdown and reuse."
+        ]
+      },
+      {
+        "name": "mechanics-apoptosis-bcl2",
+        "route": "/mechanics/apoptosis-bcl2/",
+        "bytes": 133095,
+        "sha256": "6e308041091431aac6eb71bd08b1042335ab73517c89a3137277565937be6495",
+        "requirements": [
+          "A dam (the mitochondrial membrane) held by guards (BCL-2, MCL-1, BCL-XL) against demolition crews (BAX, BAK). Cancer hires extra guards; venetoclax fires the BCL-2 guards. Immune killing uses the same dam from the outside.",
+          "Cancer cells can change how they manage damage, recycling and death."
+        ]
+      },
+      {
+        "name": "mechanics-dna-repair-synthetic-lethality",
+        "route": "/mechanics/dna-repair-synthetic-lethality/",
+        "bytes": 234677,
+        "sha256": "3e3f2a5ecb5ceda77350cb0f5cd212894d0e1b858974a52bbfed54ac002356b3",
+        "requirements": [
+          "Double-strand breaks (HR versus end joining), copying errors (mismatch repair), and single damaged letters (base excision, PARP) each have their crew. Tumours that lost one crew survive on the others, and that dependence is the first widely successful way to drug a lost gene.",
+          "Cancer cells can change how they manage damage, recycling and death."
+        ]
+      },
+      {
+        "name": "mechanics-autophagy",
+        "route": "/mechanics/autophagy/",
+        "bytes": 121742,
+        "sha256": "348b7c628e2e37c2f066c7ec75077d917729d43bd84c0852b01e5793728e7e9f",
+        "requirements": [
+          "Autophagy delivers cellular material to lysosomes for breakdown and reuse. A marker snapshot or KRAS alteration alone does not establish recycling flow or survival dependence. In Yamamoto and colleagues' 2020 pancreatic cancer models, autophagy reduced surface MHC-I, the proteins that display antigens to CD8 T cells.",
+          "Cancer cells can change how they manage damage, recycling and death."
+        ]
+      },
+      {
+        "name": "mechanics-ferroptosis",
+        "route": "/mechanics/ferroptosis/",
+        "bytes": 108745,
+        "sha256": "b454df38a4a3398e02332234dd1bfe62dd66d26f9db2602078cd051103a35f8a",
+        "requirements": [
+          "A form of death by rusting: iron-driven oxidation of membrane lipids. Cancer cells in mesenchymal or drug-tolerant states depend on the GPX4 enzyme to prevent it, and the NRF2 antioxidant programme protects them further.",
+          "Cancer cells can change how they manage damage, recycling and death."
+        ]
+      }
+    ],
+    "metadata": [
+      {
+        "stage": "apoptosis-bcl2",
+        "description": "A dam (the mitochondrial membrane) held by guards (BCL-2, MCL-1, BCL-XL) against demolition crews (BAX, BAK).",
+        "title": "Apoptosis and the BCL-2 family · Mechanics of cancer"
+      },
+      {
+        "stage": "dna-repair-synthetic-lethality",
+        "description": "Double-strand breaks (HR versus end joining), copying errors (mismatch repair), and single damaged letters (base excision, PARP) each have their crew.",
+        "title": "DNA repair pathways and synthetic lethality · Mechanics of cancer"
+      },
+      {
+        "stage": "autophagy",
+        "description": "Autophagy delivers cellular material to lysosomes for breakdown and reuse.",
+        "title": "Autophagy · Mechanics of cancer"
+      },
+      {
+        "stage": "ferroptosis",
+        "description": "A form of death by rusting: iron-driven oxidation of membrane lipids.",
+        "title": "Ferroptosis · Mechanics of cancer"
+      }
+    ],
+    "routeParamsUnchanged": true
+  },
+  "exactReaderAnchors": {
+    "allPass": true,
+    "readers": 7,
+    "exactCurrentPassages": 13,
+    "metadataDescriptions": 4,
+    "citationRouteResolved": true,
+    "nestedVisibleAnchors": 0,
+    "checks": [
+      {
+        "reader": "autophagy",
+        "passage": "A recycling station can hold a large pile because more material arrives or because processing has slowed. The pile is an amount; material processed over time is a rate. Neither alone tells you whether the city depends on that station.",
+        "pass": true
+      },
+      {
+        "reader": "autophagy",
+        "passage": "Yamamoto and colleagues found that the cargo receptor NBR1 helped direct MHC-I proteins to lysosomes through an autophagy-dependent route in pancreatic ductal adenocarcinoma models. This lowered the amount of MHC-I at the cell surface, where it displays antigens to CD8 T cells. In mouse experiments, reducing MHC-I or depleting CD8 T cells reversed tumour control after genetic autophagy inhibition. Chloroquine increased surface MHC-I but, alone, did not significantly reduce tumour weight in the reported experiment; its effects on lysosomes are broad. These model results do not establish that every KRAS-driven cancer depends on autophagy or that blocking it benefits patients.",
+        "pass": true
+      },
+      {
+        "reader": "yamamoto",
+        "passage": "Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-hub",
+        "passage": "Cancer cells can change how they manage damage, recycling and death. A changed process is not automatically a survival requirement. Experiments must test what the relevant cells need under the stated conditions.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-hub",
+        "passage": "Autophagy delivers cellular material to lysosomes for breakdown and reuse.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-apoptosis-bcl2",
+        "passage": "A dam (the mitochondrial membrane) held by guards (BCL-2, MCL-1, BCL-XL) against demolition crews (BAX, BAK). Cancer hires extra guards; venetoclax fires the BCL-2 guards. Immune killing uses the same dam from the outside.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-apoptosis-bcl2",
+        "passage": "Cancer cells can change how they manage damage, recycling and death.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-dna-repair-synthetic-lethality",
+        "passage": "Double-strand breaks (HR versus end joining), copying errors (mismatch repair), and single damaged letters (base excision, PARP) each have their crew. Tumours that lost one crew survive on the others, and that dependence is the first widely successful way to drug a lost gene.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-dna-repair-synthetic-lethality",
+        "passage": "Cancer cells can change how they manage damage, recycling and death.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-autophagy",
+        "passage": "Autophagy delivers cellular material to lysosomes for breakdown and reuse. A marker snapshot or KRAS alteration alone does not establish recycling flow or survival dependence. In Yamamoto and colleagues' 2020 pancreatic cancer models, autophagy reduced surface MHC-I, the proteins that display antigens to CD8 T cells.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-autophagy",
+        "passage": "Cancer cells can change how they manage damage, recycling and death.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-ferroptosis",
+        "passage": "A form of death by rusting: iron-driven oxidation of membrane lipids. Cancer cells in mesenchymal or drug-tolerant states depend on the GPX4 enzyme to prevent it, and the NRF2 antioxidant programme protects them further.",
+        "pass": true
+      },
+      {
+        "reader": "mechanics-ferroptosis",
+        "passage": "Cancer cells can change how they manage damage, recycling and death.",
+        "pass": true
+      }
+    ],
+    "scope": "Actual EntityDetail plus actual mechanics hub and every stage in the affected chapter, with awaited route params and metadata. CSS omitted in private SSR harness; no Next build, browser, styles, hydration, deployment or independent acceptance claimed."
+  },
+  "staticExports": {
+    "records": 2,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "autophagy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "analogy",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-yamamoto-nature",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-yamamoto-nature",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "autophagy.json",
+        "bytes": 14880,
+        "sha256": "3822253dde9bc1e0c28cdc6ead170a0c36eafeb03e978d0622476d1935b90b48"
+      },
+      {
+        "file": "autophagy.md",
+        "bytes": 12936,
+        "sha256": "8d9dff0ad879c8a263ad1c20a11f5b4ac880e73a9129af2ce71ee25ac4d1db6f"
+      },
+      {
+        "file": "paper-yamamoto-nature.json",
+        "bytes": 4592,
+        "sha256": "c1aa755339b7bcf1884a5f2226c218b1c237fc8e01fd5a772d6d461c7de6bed8"
+      },
+      {
+        "file": "paper-yamamoto-nature.md",
+        "bytes": 4017,
+        "sha256": "59209a14807c9a0983e54043a02e01aa03f0c9c8e6465bdf31b79a5387296be3"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual graph and atlas, EntityDetail and mechanics-page SSR, metadata and static JSON/Markdown/OpenAPI/context, with full gates. CSS is omitted only in the private harness. No full Next production build, browser, hydration, deployment or independent acceptance."
+}

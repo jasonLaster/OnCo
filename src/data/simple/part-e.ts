@@ -145,7 +145,7 @@ export const simpleE: Record<string, string> = {
   "tgf-beta": "TGF-beta is a signal that stops normal cells dividing but switches sides once cancer is established, building scar-like tissue, walling out immune cells and pushing cells to migrate.",
   "hippo-yap": "The Hippo pathway tells organs when to stop growing; mesothelioma disables it so the growth drivers YAP and TAZ stay on, and blocking drugs are in trials.",
 
-  "keap1-nrf2": "KEAP1-NRF2 is the cell's antioxidant defence switch; some lung cancers break the off-switch so it stays on, detoxifying chemotherapy and radiation and resisting almost everything.",
+  "keap1-nrf2": "These proteins help control how a cell handles stress. Test what the defence does and whether the cells depend on it; the gene names alone do not show which treatment will help.",
   "swi-snf-chromatin": "SWI/SNF is a machine that opens and closes DNA so genes can be read; one in five cancers has a broken part, often creating a druggable dependence on its twin.",
   "epigenetic-reprogramming": "Cancer changes how its genes are read, using chemical tags to silence guardians and wake growth programmes, and unlike mutations these tags can be reversed by drugs.",
   "rna-splicing": "Genes are cut and pasted into messages before use; blood cancers often carry faults in this splicing machinery, and the errors create abnormal proteins that could serve as targets.",
@@ -174,7 +174,7 @@ export const simpleE: Record<string, string> = {
   "mismatch-repair-msi": "After DNA is copied a proofreading crew fixes wrong letters; lose it and the genome fills with errors that make abnormal proteins the immune system can see, so immunotherapy works.",
   "base-excision-repair-parp": "A repair crew snips out damaged DNA letters all day long, with PARP marking each nick; PARP pills trap PARP on the DNA, turning nicks into lethal breaks.",
   "synthetic-lethality-map": "Two genes are synthetically lethal when losing either is fine but losing both kills the cell, so cancers that have already lost one become vulnerable to drugs against the other.",
-  "glutamine-metabolism": "After glucose, glutamine is the tumour's favourite food, feeding energy and DNA building; MYC- and KRAS-driven cancers eat so much of it that they starve nearby T cells.",
+  "glutamine-metabolism": "Some cells use glutamine for growth and other work. Experiments must test whether a particular cell needs a specific glutamine-processing route.",
 
   "angiogenic-switch": "A tumour cannot grow beyond a couple of millimetres without its own blood supply; the switch flips when signals for new vessels outweigh the brakes, producing leaky chaotic vessels.",
   "nutrient-competition-tme": "Tumours and immune cells eat from the same plate; cancer cells hoard sugar, dump acid and burn nutrients into by-products that paralyse T cells, so the immune system loses.",

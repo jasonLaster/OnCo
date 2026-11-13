@@ -297,7 +297,7 @@ export const tldr_de: Record<string, string> = {
   "global-oncology-access": "Siebzig Prozent der Krebstodesfälle ereignen sich in Ländern mit niedrigem und mittlerem Einkommen, wo Strahlentherapiegeräte, Pathologen, unentbehrliche Arzneimittel und Palliativversorgung knapp sind. Die globale Onkologie arbeitet an bezahlbarer, angepasster Versorgung und an den Systemen, die sie bereitstellen.",
   glofitamab: "Glofitamab ist ein bispezifischer Antikörper mit fester Behandlungsdauer für das großzellige B-Zell-Lymphom, mit einem Vorteil beim Gesamtüberleben (OS) in Kombination mit Chemotherapie.",
   "glp1-agonists-cancer-risk": "GLP-1-Agonisten, die neuen Abnehmspritzen, senken das Gewicht um 15 bis 20 %. Erste Beobachtungsdaten deuten auf weniger adipositasbedingte Krebserkrankungen bei Menschen hin, die sie einnehmen, aber noch keine Studie hat Krebs als Endpunkt untersucht.",
-  "glutamine-metabolism": "Nach Glukose ist Glutamin die Lieblingsnahrung des Tumors. Es speist den Energiezyklus, liefert Stickstoff für den Bau der DNA-Buchstaben und bildet das Antioxidans Glutathion. MYC- und KRAS-getriebene Krebsarten verschlingen so viel davon, dass sie die benachbarten T-Zellen aushungern.",
+  "glutamine-metabolism": "Glutamin unterstützt mehrere Zellprozesse. Ob eine bestimmte Zelle von seinem Stoffwechsel abhängt, muss unter definierten Bedingungen geprüft werden.",
   "gog-foundation": "Die US-amerikanische Studienorganisation für gynäkologische Onkologie, deren GOG-3000-Studienreihe gemeinsam mit der Industrie die Immuntherapie in die Behandlung von Gebärmutterschleimhaut- und Gebärmutterhalskrebs gebracht hat.",
   "guardant-health": "Führend in der Flüssigbiopsie: Guardant360 für die Genotypisierung, Reveal für MRD und Shield für das Screening.",
   "guardant360-cdx": "Ein Bluttest, der die Mutationen eines Tumors ohne Gewebebiopsie ausliest und die von der FDA zugelassene Eintrittskarte zu mehreren zielgerichteten Medikamenten ist.",
@@ -802,7 +802,7 @@ export const tldr_de: Record<string, string> = {
   "disitamab-vedotin": "Disitamab vedotin ist ein chinesisches HER2-ADC, zugelassen für Magen- und Blasenkrebs, das jetzt gemeinsam mit Pfizer in globalen Studien geprüft wird.",
   dordaviprone: "Dordaviprone ist das erste je zugelassene Medikament für einen Hirntumor bei Kindern und jungen Erwachsenen, für den es zuvor keines gab, das diffuse Mittelliniengliom mit der H3-K27M-Mutation (August 2025).",
 
-  "driver-mutation": "Eine der wenigen Mutationen in einem Tumor, die ihn tatsächlich wachsen lassen. Alles andere sind Passagiere, die nur mitfahren. Treibermutationen sind die Mutationen, auf die Medikamente zielen.",
+  "driver-mutation": "Eine Treiberveränderung kann im untersuchten Zusammenhang die Tumorentwicklung fördern. Diese Rolle allein belegt keinen Nutzen eines Medikaments.",
   "drug-repurposing": "Billige alte Medikamente, Aspirin, Metformin, Statine, Betablocker, als Krebsbehandlungen zu prüfen, weil sie sicher und verfügbar sind und manchmal wirken.",
 
   dxd: "DXd ist das Topoisomerase-Gift in Enhertu und Dato-DXd: etwa zehnmal stärker als SN-38, breitet es sich auf Nachbarzellen aus und verlässt den Körper nach der Freisetzung schnell.",
@@ -1997,7 +1997,7 @@ export const tldr_de: Record<string, string> = {
   "kang-yoon-koo": "Leitete die ATTRACTION-2-Studie zu Nivolumab und die SPOTLIGHT-Studie zu Zolbetuximab, zwei der prägenden Magenkrebsstudien des Jahrzehnts.",
   "kara-kelly": "Leitet das Hodgkin-Lymphom-Komitee der COG und die Studien, die Brentuximab und Nivolumab zu Kindern mit dieser Erkrankung bringen.",
   katherine: "Der Wechsel auf ein ADC nach der Operation, wenn die Vorbehandlung Krebsreste zurückgelassen hatte, halbierte das Rückfallrisiko und verbesserte das Überleben.",
-  "keap1-nrf2": "KEAP1-NRF2 ist der antioxidative Schutzschalter der Zelle. Lungenkrebs zerstört häufig den Ausschalter (KEAP1), sodass NRF2 dauerhaft eingeschaltet bleibt; das entgiftet Chemotherapie und Strahlung und macht diese Tumoren gegen fast alles resistent.",
+  "keap1-nrf2": "KEAP1-NRF2 reguliert die zelluläre Stressabwehr. Schutzwirkung, Stoffwechselabhängigkeit und Therapieansprechen müssen für die jeweilige Krebsart und die jeweiligen Bedingungen getrennt geprüft werden.",
   "keio-university-hospital": "Tokios ältestes privates Universitätsklinikum, bekannt für die Chirurgie gastrointestinaler und ösophagealer Tumoren, genomische Tumorprofilierung und translationale Forschung.",
   "ken-she": "Eine einzige Dosis HPV-Impfstoff war zu 97,5 % wirksam gegen die beiden gefährlichsten HPV-Typen, was eine Impfung der gesamten Weltbevölkerung realistisch macht.",
   "kentucky-markey": "Kentuckys umfassendes NCI-Krebszentrum, das die Appalachen versorgt, wo die Raten von Lungen- und Darmkrebs zu den höchsten der Vereinigten Staaten gehören.",

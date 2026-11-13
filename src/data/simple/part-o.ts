@@ -193,7 +193,7 @@ export const simpleO: Record<string, string> = {
   "photon-counting-ct": "Photon-counting CT uses a new detector that counts every X-ray photon and records its energy, giving sharper pictures at lower dose from every scan.",
   "proton-therapy-systems": "Proton centres are built around a cyclotron, a synchrotron or a compact synchrocyclotron feeding treatment rooms through a house-sized rotating gantry, and single-room systems have cut the price.",
   "quantitative-imaging-biomarkers": "Quantitative imaging biomarkers are the numbers pulled from scans, such as tumour diameters or sugar uptake on PET, that decide whether a cancer is shrinking or growing.",
-  "rad51-foci-assay": "The RAD51 foci assay counts DNA repair spots in dividing cells on an ordinary biopsy, and few spots means the tumour cannot repair DNA in the way PARP inhibitors exploit.",
+  "rad51-foci-assay": "This test looks for repair-protein spots in tumour cells. Few spots are informative only if enough suitable cells and proper controls were present.",
   radiogenomics: "Radiogenomics uses a tumour's gene expression or a patient's inherited variants to predict who needs more radiation dose, who needs less and who risks severe side effects.",
   "radioligand-dosimetry": "Radioligand dosimetry measures from scans taken after each dose how much radiation a radioligand actually delivers to the tumour, kidneys and marrow, so treatment can be personalised.",
   radiomics: "Radiomics turns ordinary CT, MRI and PET scans into hundreds of measured features of shape and texture that computers relate to tumour biology and outcome.",

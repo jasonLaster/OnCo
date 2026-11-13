@@ -297,7 +297,7 @@ export const tldr_fr: Record<string, string> = {
   "global-oncology-access": "Soixante-dix pour cent des décès par cancer surviennent dans les pays à revenu faible ou intermédiaire, où les appareils de radiothérapie, les pathologistes, les médicaments essentiels et les soins palliatifs sont rares. L'oncologie mondiale travaille à des soins abordables et adaptés, ainsi qu'aux systèmes pour les délivrer.",
   glofitamab: "Glofitamab est un anticorps bispécifique à durée fixe pour le lymphome à grandes cellules B, avec un bénéfice de survie globale (OS) lorsqu'il est associé à la chimiothérapie.",
   "glp1-agonists-cancer-risk": "Les agonistes du GLP-1, les nouvelles injections amaigrissantes, réduisent le poids de 15 à 20 %. Les premières données observationnelles suggèrent moins de cancers liés à l'obésité chez les personnes qui les prennent, mais aucun essai n'a encore évalué le cancer comme critère de jugement.",
-  "glutamine-metabolism": "Après le glucose, la glutamine est l'aliment préféré de la tumeur. Elle alimente le cycle énergétique, fournit l'azote nécessaire à la fabrication des lettres de l'ADN et produit l'antioxydant glutathion. Les cancers pilotés par MYC et KRAS en consomment tellement qu'ils affament les cellules T voisines.",
+  "glutamine-metabolism": "La glutamine participe à plusieurs processus cellulaires. La dépendance d’une cellule particulière à son métabolisme doit être évaluée dans des conditions définies.",
   "gog-foundation": "L'organisation américaine d'essais cliniques en oncologie gynécologique dont les essais de la série GOG-3000, menés avec l'industrie, ont fait entrer l'immunothérapie dans le cancer de l'endomètre et du col de l'utérus.",
   "guardant-health": "Leader de la biopsie liquide : Guardant360 pour le génotypage, Reveal pour la MRD et Shield pour le dépistage.",
   "guardant360-cdx": "Un test sanguin qui lit les mutations d'une tumeur sans biopsie tissulaire et qui constitue la porte d'entrée approuvée par la FDA vers plusieurs traitements ciblés.",
@@ -802,7 +802,7 @@ export const tldr_fr: Record<string, string> = {
   "disitamab-vedotin": "Disitamab vedotin est un ADC chinois anti-HER2 approuvé dans le cancer gastrique et le cancer de la vessie, aujourd'hui en essais mondiaux avec Pfizer.",
   dordaviprone: "Dordaviprone est le tout premier médicament approuvé pour une tumeur cérébrale de l'enfant et du jeune adulte qui n'en avait aucun, le gliome diffus de la ligne médiane avec la mutation H3 K27M (août 2025).",
 
-  "driver-mutation": "L'une des rares mutations d'une tumeur qui la font réellement grossir. Toutes les autres sont des passagères qui suivent le mouvement. Les mutations conductrices sont celles que visent les médicaments.",
+  "driver-mutation": "Une altération conductrice peut favoriser le développement tumoral dans le contexte étudié. Ce rôle ne démontre pas à lui seul le bénéfice d’un médicament.",
   "drug-repurposing": "Tester de vieux médicaments bon marché, aspirine, metformine, statines, bêtabloquants, comme traitements du cancer, parce qu'ils sont sûrs, disponibles et parfois efficaces.",
 
   dxd: "DXd est le poison de la topoisomérase contenu dans Enhertu et Dato-DXd : environ dix fois plus puissant que SN-38, il diffuse vers les cellules voisines et quitte rapidement l'organisme une fois libéré.",
@@ -1997,7 +1997,7 @@ export const tldr_fr: Record<string, string> = {
   "kang-yoon-koo": "A dirigé l'essai ATTRACTION-2 du nivolumab et l'essai SPOTLIGHT du zolbetuximab, deux des études sur le cancer gastrique qui ont marqué la décennie.",
   "kara-kelly": "Dirige le comité lymphome de Hodgkin du COG et les essais qui apportent le brentuximab et le nivolumab aux enfants atteints de cette maladie.",
   katherine: "Passer à un ADC après la chirurgie, lorsque le traitement préopératoire avait laissé du cancer résiduel, a réduit de moitié le risque de récidive et amélioré la survie.",
-  "keap1-nrf2": "KEAP1-NRF2 est l'interrupteur de défense antioxydante de la cellule. Les cancers du poumon cassent souvent le bouton d'arrêt (KEAP1), ce qui laisse NRF2 allumé en permanence ; celui-ci détoxifie la chimiothérapie et la radiothérapie et rend ces tumeurs résistantes à presque tout.",
+  "keap1-nrf2": "KEAP1-NRF2 régule les défenses cellulaires contre le stress. La protection, la dépendance métabolique et la réponse au traitement doivent être évaluées séparément dans le cancer et les conditions concernés.",
   "keio-university-hospital": "Le plus ancien hôpital universitaire privé de Tokyo, connu pour la chirurgie des cancers digestifs et de l'œsophage, le profilage génomique des cancers et la recherche translationnelle.",
   "ken-she": "Une seule dose de vaccin contre le HPV s'est révélée efficace à 97,5 % contre les deux types de HPV les plus dangereux, ce qui rend réaliste la vaccination du monde entier.",
   "kentucky-markey": "Le centre intégré du NCI du Kentucky, qui dessert les Appalaches, où les taux de cancer du poumon et de cancer colorectal sont parmi les plus élevés des États-Unis.",

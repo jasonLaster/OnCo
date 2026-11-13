@@ -116,8 +116,10 @@ export const educationBiologyEvidence: TermInput[] = [
     "tldr": "An allele is a sequence version at a genomic location. Which versions are present and how many DNA copies exist are separate questions.",
     "summary": "At a diploid location, heterozygous means that the two copies differ in the feature being considered; homozygous means they match. Hemizygous describes a single copy in the specified context. Tumor gains, losses and genome doubling can make a two-copy model inadequate. Loss of heterozygosity means loss of previously different allelic information; it can accompany a deletion or occur while total copy count remains unchanged. Total copy number alone cannot identify which allele was retained.",
     "notes": [
-      "Variant allele frequency counts supporting reads or molecules under the assay’s definition. Purity, local copy state, subclonal mixtures and method affect it; it is not directly a cancer-cell percentage or a zygosity call. Phase asks whether specified variants share a DNA copy, a further question that a gene-name match does not answer."
-    ],
+      "Variant allele frequency counts supporting reads or molecules under the assay’s definition. Purity, local copy state, subclonal mixtures and method affect it; it is not directly a cancer-cell percentage or a zygosity call. Phase asks whether specified variants share a DNA copy, a further question that a gene-name match does not answer.",
+
+  "Biallelic inactivation concerns whether either parental contribution still supplies useful function in the relevant cancer-cell population, rather than simply counting two physical DNA copies or two events somewhere in a tissue. A damaging change plus loss of the other contribution can support it, but phasing, allele-specific copy state, consequence and cell mixture matter. High VAF alone cannot establish this state. Nguyen and colleagues' pan-cancer analysis associated particular biallelic repair-gene alterations with genomic damage patterns; that association does not make every variant in every repair gene functionally equivalent or establish present drug sensitivity.",
+],
     "links": [
       {
         "label": "NHGRI: Allele",
@@ -138,8 +140,10 @@ export const educationBiologyEvidence: TermInput[] = [
       {
         "label": "Absolute quantification of somatic DNA alterations in human cancer.",
         "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
-      }
-    ],
+      },
+
+  {"label":"Pan-cancer landscape of homologous recombination deficiency (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/33149131/"},
+],
     "related": [
       "vaf",
       "gene-amplification",
@@ -148,7 +152,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "germline-vs-somatic"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-12",
     "category": "Biology & measurement"
   },
   {

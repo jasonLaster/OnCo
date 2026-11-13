@@ -383,7 +383,10 @@ export const cansimOncologyTerms: TermInput[] = [
   {
     "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
-  }
+  },
+
+  {"label":"Personalized genomic analyses for cancer mutation discovery and interpretation (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25877891/"},
+  {"label":"Absolute quantification of somatic DNA alterations in human cancer (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22544022/"},
 ], cansim: "/terms/variant-calling",
     tldr: "Variant calling evaluates sequence evidence and error models to identify candidate changes within a defined assay scope.",
     summary: "Variant calling assesses whether observed sequence or regional evidence supports a difference from a reference or comparison sample. Evidence quality, independent fragments, local depth, error models and the alteration class matter. Annotation describes possible consequence after calling; neither annotation nor a passed filter independently proves function or treatment relevance. Negative calls retain the workflow coverage and detection limits.",
@@ -397,9 +400,12 @@ export const cansimOncologyTerms: TermInput[] = [
   "Annotation adds gene or predicted consequence and is separate from calling; machine learning is one method, not the definition.",
   "Two callers agreeing on shared reads can share misalignment error; confirmation needs an independent suitable method; a negative call set is bounded by detectable regions, classes and fractions.",
   "Fictional teaching exercise: A call that is PASS in two tools but supported only by reads aligning ambiguously to duplicated regions has not resolved location.",
-  "Calling uses existing reads, a reference assembly and optional comparison files; a new confirmation assay can consume more material. Report coordinates, alleles, support, quality, filters and defined fractions/copy estimates. Retain caller version, detectable regions/classes and thresholds. Contamination, damage, misalignment and reference mismatch require specimen-specific end-to-end validation; filter thresholds are not treatment thresholds."
+  "Calling uses existing reads, a reference assembly and optional comparison files; a new confirmation assay can consume more material. Report coordinates, alleles, support, quality, filters and defined fractions/copy estimates. Retain caller version, detectable regions/classes and thresholds. Contamination, damage, misalignment and reference mismatch require specimen-specific end-to-end validation; filter thresholds are not treatment thresholds.",
+
+  "A confirmation should test the suspected weakness. Check specimen identity and tissue, preparation, alteration class, usable local coverage, read quality and alignment; a high average depth does not establish adequate evidence at the disputed site. Reformatting one call or rerunning the same reads does not create independent molecular evidence. A separate preparation or a method with different relevant failure modes may help; a different brand name alone does not establish independence. In a fictional comparison, assay A reports a low-fraction variant and B reports none without site coverage. B has not disproved A. Request the exact site, usable local support, class-specific detection limit, specimen and time point. If both tests were adequate, reconcile the discrepancy, including sampling different populations or times, before building further interpretations.",
+  "Paired tumour and an appropriate nonmalignant comparator help attribute a finding. Jones and colleagues' 2015 paired analyses showed why tumour-only interpretation can misclassify inherited findings. The normal comparator also needs adequate evidence at the site. In a fictional repair-gene example, 32 alternate reads among 160 usable reads give a 20 per cent observed fraction; an adequate matched normal lacking the change supports somatic origin in those sampled tissues. Neither that attribution nor a second adequate confirmation establishes that the change drives the cancer, disrupts repair or predicts treatment response. A familiar gene and a credible sequence call answer different questions from measured RNA, protein function and clinical actionability.",
 ],
-"asOf": "2026-11-10"
+"asOf": "2026-11-12"
 }),
   t({ id: "somatic-mutations-wxs-wgs", name: "Somatic mutations from exome and genome sequencing (WXS, WGS)", category: GEN, aka: ["WXS", "whole-exome sequencing data", "somatic mutation data", "mutation calls", "MAF file", "mutation annotation format"],
     wikipedia: W("Exome_sequencing"), links: [{ label: "Wikipedia: whole genome sequencing", url: W("Whole_genome_sequencing") }], cansim: "/terms/somatic-mutations",
@@ -713,10 +719,16 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "A reference genome is an assembly representing an organism's complete genetic sequence as a continuous string, accompanied by annotation (Wikipedia). GRCh38 (hg38), released in 2013, is the current human reference; GRCh37 (hg19) preceded it and much legacy TCGA data was aligned to it before the GDC re-harmonised everything to GRCh38. Coordinates differ between builds, so files must be lifted over or re-aligned, and the build is a mandatory provenance field.",
     terms: ["provenance-fields", "hgvs", "variant-calling"] }),
   t({ id: "hgvs", name: "HGVS variant nomenclature", category: GEN, aka: ["HGVS", "HGVS nomenclature", "HGVS notation", "c. notation", "p. notation", "variant nomenclature"],
-    wikipedia: W("Human_Genome_Variation_Society"), links: [{ label: "HGVS nomenclature", url: "https://hgvs-nomenclature.org/stable/" }], cansim: "/terms/hgvs",
+    wikipedia: W("Human_Genome_Variation_Society"), links: [{ label: "HGVS nomenclature", url: "https://hgvs-nomenclature.org/stable/" },
+  {"label":"HGVS: reference-sequence requirements","url":"https://hgvs-nomenclature.org/stable/background/refseq/"},
+  {"label":"HGVS: variant-description checklist","url":"https://hgvs-nomenclature.org/stable/recommendations/checklist/"},
+], cansim: "/terms/hgvs",
     tldr: "HGVS is the standard way to write a DNA or protein change, such as EGFR c.2573T>G or p.Leu858Arg, so that the same variant is named the same way everywhere.",
     summary: "The Human Genome Variation Society maintains the recommendations for describing sequence variants (Wikipedia; the current rules are at hgvs-nomenclature.org). A description names the reference sequence and level (g. genomic, c. coding DNA, p. protein) and the change, and a genomic description depends on the genome build. Free-text variant names in papers (L858R, T790M) are shorthand for HGVS protein descriptions; joining them to databases such as ClinVar and CIViC requires the full form.",
-    terms: ["genome-builds", "variant-effect-prediction", "variant-calling"], related: ["clinvar", "civic"] }),
+    terms: ["genome-builds", "variant-effect-prediction", "variant-calling"], related: ["clinvar", "civic"],
+  "notes": ["A traceable finding identifies the specimen and assay, reference sequence with its version, genomic location and alleles, relevant transcript with its version, and supporting evidence. DNA means deoxyribonucleic acid and RNA means ribonucleic acid. A reference genome is the comparison sequence; a transcript is an RNA message. For a coding transcript, the annotated start codon fixes the coding frame, so the same genomic change can have different consequences in different transcripts. Not every transcript has a coding sequence. HGVS distinguishes experimentally observed RNA or protein changes from predicted consequences, conventionally putting predicted protein consequences in parentheses. A predicted splice effect is not a measured RNA junction, and a coordinate without its reference cannot safely join two reports."],
+  "asOf": "2026-11-12",
+}),
   t({ id: "icd-o-3", name: "ICD-O-3 (International Classification of Diseases for Oncology)", category: PATH, aka: ["ICD-O-3", "ICD-O", "ICD-O-3 morphology code", "ICD-O-3 topography code", "morphology code", "topography code"],
     wikipedia: W("International_Classification_of_Diseases_for_Oncology"), links: [{ label: "WHO: ICD-O", url: "https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology" }], cansim: "/terms/icd-o-3",
     tldr: "ICD-O-3 codes every tumour twice: a topography code for where it arose and a morphology code for what kind of cells it is made of and how it behaves.",

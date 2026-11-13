@@ -144,12 +144,15 @@ export const termsBasics: TermInput[] = [
   t({
     id: "driver-mutation", name: "Driver mutation", category: BIO,
     aka: ["driver mutations", "driver", "drivers", "oncogenic driver", "oncogenic drivers", "driver alteration", "driver alterations", "driver gene", "driver genes", "passenger mutation", "passenger mutations", "driver mutation", "oncogene-driven", "driver-positive", "driver-negative", "actionable", "actionable mutation", "actionable alteration", "targetable", "targetable driver", "targetable mutation", "molecularly selected", "biomarker-driven", "actionable alterations", "targetable drivers", "targetable mutations", "driver-mutation-term"],
-    tldr: "One of the few mutations in a tumour that actually causes it to grow. Everything else is a passenger along for the ride. Drivers are the mutations drugs are aimed at.",
-    summary: "A tumour with thousands of mutations usually has two to eight drivers that confer a growth advantage; the rest are passengers that happened to be present in the cell that became cancerous. Drivers cluster in a few hundred genes: oncogenes activated by mutation or amplification (EGFR, KRAS, BRAF, HER2, ALK) and tumour suppressors lost by mutation or deletion (TP53, RB1, PTEN). Genomic profiling looks for known drivers because a tumour that depends on one can often be treated with a drug against it, the phenomenon called oncogene addiction.",
+    tldr: "A driver alteration can promote tumour development in the context studied. That role does not by itself establish benefit from a drug.",
+    summary: "A driver alteration contributes to cancer development in a specified biological context. Vogelstein and colleagues' 2013 review distinguished mutations conferring a selective growth advantage from passengers without that advantage. Calling a sequence change reliably does not establish which role it has, and a familiar gene can contain alterations with different or uncertain effects.\n\nContribution to cancer development, current survival dependence and clinical actionability are different claims. The SHIVA randomised study did not establish superior progression-free survival for its particular pathway-matching strategy in refractory advanced cancer; that result limits the tested strategy without invalidating every precision treatment. Specify the alteration, measured function, disease and treatment setting, intervention, comparator and outcome before concluding that a drug will help.",
     wikipedia: W("Carcinogenesis#Driver_and_passenger_mutations"),
     related: ["mutation", "oncogene", "tumour-suppressor-gene", "oncogene-addiction", "genomic-profiling", "targeted-therapy-term", "egfr-mutation-subtypes", "kras-mutation-subtypes", "braf-v600-mutation", "gene-fusion", "tumour-agnostic", "driver-passenger-model", "somatic-mutation-theory"], targets: ["egfr", "kras", "braf", "alk", "tp53"],
     sections: ["targeted-therapy", "diagnostics"], technologies: ["cgp", "kinase-inhibitors", "companion-diagnostic"],
-  }),
+
+"asOf": "2026-11-12",
+"links": [{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Carcinogenesis#Driver_and_passenger_mutations"},{"label":"Vogelstein et al., Cancer genome landscapes (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/23539594/"},{"label":"Le Tourneau et al., SHIVA molecular-matching strategy (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/26342236/"},{"label":"NCI: biomarker testing and treatment interpretation","url":"https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment"}],
+}),
   t({
     id: "amplification", name: "Amplification", category: BIO,
     aka: ["amplifications", "amplified", "gene amplification", "copy number gain", "copy-number gain", "copy number", "copy-number", "extra copies"],

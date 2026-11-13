@@ -279,7 +279,12 @@ const pathways: PathwayInput[] = [
   "Product return has evidence in defined systems. In leucine-starved cultured human HEK-293T cells, Wyant and colleagues found that SLC38A9 was needed for leucine made by lysosomal protein breakdown to reach the cytosol; the response also depended on the autophagy protein ATG7. Abu-Remaileh and colleagues measured regulated lysosomal amino-acid exchange in mammalian cells. Yeast experiments identified Atg22, Avt3 and Avt4 as partially redundant vacuolar amino-acid exporters. These results support amino-acid recycling in those systems, without establishing transport of every breakdown product, secretion from the cell or guaranteed growth.",
   "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
   "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
-  "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination."
+  "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+
+  "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+  "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+  "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+  "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
 ],
     links: [
   {
@@ -341,11 +346,16 @@ const pathways: PathwayInput[] = [
   {
     "label": "Atg22 recycles amino acids to link the degradative and recycling functions of autophagy (2006 yeast experiments)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/17021250/"
-  }
+  },
+
+  {"label":"Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2021)","url":"https://pubmed.ncbi.nlm.nih.gov/33473172/"},
+  {"label":"The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25975349/"},
+  {"label":"Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/29158785/"},
+  {"label":"Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)","url":"https://pubmed.ncbi.nlm.nih.gov/40527957/"},
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-11"
+"asOf": "2026-11-12"
 ,
 "related": [
   "nutrient-sensing-ampk"
@@ -371,7 +381,10 @@ const pathways: PathwayInput[] = [
   "Ferroptosis involves iron-dependent membrane-lipid peroxidation causing death. Erastin experiments implicated cystine uptake through system xc-, connecting cysteine and glutathione supply to antioxidant defence. Vulnerable polyunsaturated lipid chains, iron availability and cellular conditions matter; general reactive-oxygen fluorescence does not establish this mechanism.",
   "GPX4 uses glutathione to reduce lipid hydroperoxides to lipid alcohols. FSP1 provides a parallel coenzyme-Q radical-trapping defence; it does not replace every GPX4 function or describe the whole protection network. Protein abundance alone does not measure protective activity or predict compound sensitivity.",
   "Assigning ferroptosis needs convergent measurements of death, lipid damage preceding death, iron dependence and appropriately controlled rescue. Independent genetic and chemical perturbations strengthen attribution; rescue alone is not complete proof. Probe chemistry, concentration, nutrients, cell density and observation time can alter results. A lipid-probe ratio and death fraction are different outputs, with no universal diagnostic staining threshold. Live death and rescue tests consume viable model material. Specify lipid-probe oxidation ratios and independently measured death percentages over a stated interval; a marker snapshot does not reconstruct the full causal sequence.",
-  "A culture with abundant GPX4, a general oxidation signal and no death has not demonstrated ferroptosis. Cell-line and xenograft vulnerabilities do not establish tolerable exposure, selective cancer killing or benefit in patients. Alternative defences can confer resistance, so a strong antioxidant programme is not automatically a treatment vulnerability."
+  "A culture with abundant GPX4, a general oxidation signal and no death has not demonstrated ferroptosis. Cell-line and xenograft vulnerabilities do not establish tolerable exposure, selective cancer killing or benefit in patients. Alternative defences can confer resistance, so a strong antioxidant programme is not automatically a treatment vulnerability.",
+
+  "Hangauer 2017 investigated reversible drug-tolerant persister states across specified cancer-cell and drug models. Surviving the original treatment could coexist with increased GPX4 dependence; this was not necessarily permanent genetic resistance. The breast model BT474 is HER2-positive, not a triple-negative model. In the mouse relapse experiment, A375 melanoma cells had genetic GPX4 loss, with ferrostatin protection withdrawn while dabrafenib and trametinib continued. Prevented relapse in that setting was not systemic treatment with a GPX4 inhibitor: the authors noted poor systemic pharmacokinetics of RSL3 and ML210. These experiments do not establish a tolerable human window or universal persister vulnerability.",
+  "A fictional GPX4 experiment combines lipid oxidation before death, rescue by an iron chelator and a lipid-radical trap, and a corresponding phenotype after an independent genetic perturbation. These observations converge on an iron-dependent lipid-damage explanation; none alone proves it. Include vehicle, rescue-only and an unrelated death condition because rescue compounds can affect other processes. Survival of an otherwise matched FSP1-high comparison is compatible with a parallel defence; directly testing that defence is needed before assigning compensation to it. Energy production, a general oxidation dye and an antioxidant transcript are different measurements and cannot substitute for this causal sequence.",
 ],
     links: [
   {
@@ -401,11 +414,13 @@ const pathways: PathwayInput[] = [
   {
     "label": "Source identity and scope, PMID 29362479",
     "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
-  }
+  },
+
+  {"label":"Drug-tolerant persister cancer cells are vulnerable to GPX4 inhibition (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/29088702/"},
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-09"
+"asOf": "2026-11-12"
 ,
 "related": [
   "reactive-oxygen-species"
@@ -635,7 +650,9 @@ const pathways: PathwayInput[] = [
     interventions: ["Nirogacestat (γ-secretase inhibitor) in desmoid tumours", "DLL3-directed tarlatamab in SCLC; DLL3 ADCs and trispecifics", "NOTCH1-mutant CLL: reduced benefit from anti-CD20, informs regimen choice"],
     pathways: ["cancer-stem-cells-plasticity", "myc"], targets: ["dll3"], drugs: ["tarlatamab", "nirogacestat"], cancers: ["sclc", "all-leukemia", "cll", "head-and-neck"],
     institutions: ["dana-farber", "penn-abramson"],
-    notes: ["Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL)."],
+    notes: ["Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
+  "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+],
     links: [
   {
     "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
@@ -660,11 +677,13 @@ const pathways: PathwayInput[] = [
   {
     "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
-  }
+  },
+
+  {"label":"Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)","url":"https://pubmed.ncbi.nlm.nih.gov/25104330/"},
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-12"
 }),
   p({
     id: "jak-stat", keyPapers: ["paper-darnell-jak-stat-science-1994"], name: "JAK-STAT signalling", wikipedia: W("JAK-STAT_signaling_pathway"),
@@ -785,20 +804,30 @@ const pathways: PathwayInput[] = [
 }),
   p({
     id: "keap1-nrf2", name: "KEAP1-NRF2 antioxidant pathway", wikipedia: W("NFE2L2"),
-    tldr: "KEAP1-NRF2 is the cell's antioxidant defence switch. Lung cancers often break the off-switch (KEAP1), leaving NRF2 permanently on, which detoxifies chemotherapy and radiation and makes these tumours resistant to almost everything.",
-    summary: "KEAP1 targets NRF2 (NFE2L2) for degradation; oxidative stress or KEAP1 mutation (~20% of lung adenocarcinoma, often with KRAS or STK11) stabilises NRF2, inducing glutathione synthesis, drug efflux, and NADPH production. KEAP1/STK11-mutant NSCLC responds poorly to chemotherapy and immunotherapy. Vulnerabilities: glutaminase dependence (telaglenastat, KEAPSAKE trial negative), NRF2-activated prodrugs (TRC102?), and CDK4/6 dependence; NRF2 also drives ferroptosis resistance.",
-    analogy: "KEAP1-NRF2 is a smoke detector wired to a sprinkler system. Cancers jam the detector on, so the sprinklers run constantly and wash away every poison you throw at them.",
-    nodes: [
-      { id: "ros", label: "Oxidative stress", x: 12, y: 40 }, { id: "keap", label: "KEAP1 (mutated)", x: 38, y: 40 }, { id: "nrf2", label: "NRF2", x: 62, y: 40 }, { id: "are", label: "ARE genes: GSH, NQO1, efflux", x: 86, y: 40 }, { id: "res", label: "Chemo/RT/ferroptosis resistance", x: 86, y: 80 }, { id: "stk11", label: "STK11/LKB1 loss (co-mutation)", x: 38, y: 80 },
-    ],
-    edges: [{ from: "ros", to: "keap", type: "inhibits" }, { from: "keap", to: "nrf2", type: "inhibits" }, { from: "nrf2", to: "are" }, { from: "are", to: "res" }, { from: "stk11", to: "res" }],
-    interventions: ["Glutaminase inhibition (negative in KEAPSAKE)", "NRF2-activated prodrugs and NRF2 inhibitors (preclinical)", "Biomarker: KEAP1/STK11 status predicts poor IO benefit in NSCLC", "CDK4/6 and mTOR combinations under study"],
+    tldr: "KEAP1-NRF2 regulates cellular stress defences. Protection, metabolic dependence and treatment response need separate tests in the relevant cancer and conditions.",
+    summary: "KEAP1 helps a CUL3-containing ubiquitin-ligase system regulate NRF2 turnover. Loss of relevant KEAP1 function can stabilise NRF2 and increase antioxidant, detoxification and drug-export programmes. A gene alteration or high RNA signal alone does not establish its functional direction, the affected cells or a treatment response.\n\nSingh 2006 identified KEAP1 mutations in ten of 54 non-small-cell lung cancer samples, including primary tumours and pleural fluid. Among six mutation-bearing primary tumours assessed for the remaining locus, five had loss of heterozygosity. The cell experiments supported increased NRF2-related activity and drug-resistance mechanisms in those systems, rather than resistance to every therapy.\n\nRomero 2017 used gene editing and metabolic experiments in KRAS-driven lung cancer models: Keap1 loss promoted tumour growth and created a glutaminolysis vulnerability in the tested systems. A protective programme can therefore coexist with a dependence on a different supply route. The randomised phase 2 KEAPSAKE registry records 40 actual participants and termination for lack of clinical benefit from the telaglenastat combination strategy. A preclinical dependence is not an approved treatment or a universal predictor of benefit.",
+    analogy: "A large fire service could reflect frequent fires, effective protection or dependence on a particular fuel supply. Counting equipment alone cannot distinguish those explanations; the corresponding cellular questions require activity, perturbation and survival measurements.",
+    nodes: [{"id":"ros","label":"Oxidative stress","x":12,"y":40},{"id":"keap","label":"KEAP1 (mutated)","x":38,"y":40},{"id":"nrf2","label":"NRF2","x":62,"y":40},{"id":"are","label":"ARE genes: GSH, NQO1, efflux","x":86,"y":40},{"id":"res","label":"Context-dependent stress survival","x":86,"y":80},{"id":"stk11","label":"STK11/LKB1 loss (co-mutation)","x":38,"y":80}],
+    edges: [{"from":"ros","to":"keap","type":"inhibits"},{"from":"keap","to":"nrf2","type":"inhibits"},{"from":"nrf2","to":"are","type":"activates"},{"from":"are","to":"res","type":"activates"}],
+    interventions: ["Investigate the exact alteration, NRF2 turnover or localisation and relevant target outputs before assigning pathway activity.","Test a proposed protective or metabolic dependence with defined perturbations, appropriate comparators and survival measurements.","KEAPSAKE tested a telaglenastat combination in KEAP1/NRF2-selected lung cancer and was terminated for lack of clinical benefit; registry status is not a general response estimate."],
     pathways: ["ferroptosis-cell-death", "cancer-metabolism", "ras-mapk"], targets: ["kras"], cancers: ["nsclc"], terms: ["efflux-pump"],
     institutions: ["mskcc", "md-anderson"],
-    notes: ["Leading programmes: Papagiannakopoulos (NYU) on KEAP1 in lung cancer; DeNicola (Moffitt); Skoulidis and Heymach (MD Anderson) on STK11/KEAP1 and IO."],
-    links: [{ label: "Romero et al., Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (Nature Medicine 2017)", url: "https://doi.org/10.1038/nm.4407" }],
+    notes: ["Leading programmes: Papagiannakopoulos (NYU) on KEAP1 in lung cancer; DeNicola (Moffitt); Skoulidis and Heymach (MD Anderson) on STK11/KEAP1 and IO.",
+  "Singh's initial series contained 40 primary lung cancers and 16 pleural-fluid samples; excluding two small-cell pleural-fluid samples gives the 54 NSCLC denominator. Ten mutation-bearing samples round to 19 per cent, not a universal lung-cancer prevalence. Five of six tested mutation-bearing primary tumours had locus loss; do not assign biallelic loss to all ten samples. Romero separately described KEAP1 alterations in about 20 per cent of KRAS-mutant lung adenocarcinomas. These populations and denominators differ. KEAP1-mutant-versus-normal-cell viability comparisons are not matched isogenic proof that one alteration caused every chemotherapy response.",
+  "Protection and dependence are experiment-specific directions. If removing a verified defence makes a defined stress more lethal, that supports protection under that stress. If removing the defence or a supply route reduces survival relative to an appropriate matched comparison, that supports a conditional dependence; it need not mean every unstressed cell dies. In a fictional culture, high antioxidant RNA plus probe-associated death establishes neither NRF2-driven killing nor ferroptosis. Test the alteration's effect on NRF2 turnover or nuclear localisation and output, then use independent perturbation and restoration to examine the survival mechanism. CUL3 works with other adaptors, and a compound suppressing protein production broadly does not isolate NRF2. A genetic intervention also needs controls, rather than being automatically specific.",
+  "ClinicalTrials.gov records KEAPSAKE, NCT04265534, as a randomised, double-blind phase 2 comparison of telaglenastat or placebo added to carboplatin, pemetrexed and pembrolizumab for selected metastatic nonsquamous NSCLC with KEAP1/NRF2 alterations. The record last updated in September 2022 reports actual enrollment 40, status terminated and the stated reason lack of clinical benefit. This is registry status, not a peer-reviewed effect estimate or proof that every glutaminase strategy fails. Model activity, eligibility, acceptable exposure and clinical benefit remain different questions.",
+],
+    links: [{ label: "Romero et al., Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (Nature Medicine 2017)", url: "https://doi.org/10.1038/nm.4407" },
+  {"label":"Dysfunctional KEAP1-NRF2 interaction in non-small-cell lung cancer (2006)","url":"https://pubmed.ncbi.nlm.nih.gov/17020408/"},
+  {"label":"Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/28967920/"},
+  {"label":"Oxidative stress sensor Keap1 functions as an adaptor for Cul3-based E3 ligase to regulate proteasomal degradation of Nrf2 (2004)","url":"https://pubmed.ncbi.nlm.nih.gov/15282312/"},
+  {"label":"Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22632970/"},
+  {"label":"ClinicalTrials.gov: KEAPSAKE NCT04265534","url":"https://clinicaltrials.gov/study/NCT04265534"},
+],
     tags: ["mechanism"],
-  }),
+
+  "asOf": "2026-11-12",
+}),
   p({
     id: "swi-snf-chromatin", name: "SWI/SNF chromatin remodelling", wikipedia: W("SWI/SNF"),
     tldr: "A machine that opens and closes DNA so genes can be read. One in five cancers has a broken part (ARID1A, SMARCA4, PBRM1), and losing one part often creates a dependence on its twin, which is the basis for new synthetic-lethal drugs.",

@@ -73,10 +73,17 @@ export const pathways: PathwayInput[] = [
   {
     "label": "FDA 2023 capivasertib with fulvestrant approval population",
     "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-capivasertib-fulvestrant-breast-cancer"
-  }
+  },
+
+  {"label":"PI3K inhibition impairs BRCA1/2 expression and sensitizes BRCA-proficient triple-negative breast cancer to PARP inhibition (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22915752/"},
+  {"label":"AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1 (2011)","url":"https://pubmed.ncbi.nlm.nih.gov/21258367/"},
+  {"label":"mTOR kinase inhibition causes feedback-dependent biphasic regulation of AKT signaling (2011)","url":"https://pubmed.ncbi.nlm.nih.gov/22140653/"},
+  {"label":"AMPK phosphorylation of raptor mediates a metabolic checkpoint (2008)","url":"https://pubmed.ncbi.nlm.nih.gov/18439900/"},
 ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-12",
+
+  "notes": ["PI3K means phosphoinositide 3-kinase; AKT is also called protein kinase B. Mechanistic target of rapamycin complex 1, mTORC1, integrates growth and nutrient inputs. PTEN, phosphatase and tensin homolog, removes a phosphate from a PI3K-generated lipid signal. These protein and lipid reactions need their own readouts. Ibrahim 2012 found that PI3K inhibition reduced BRCA1/2 expression and increased PARP-inhibitor sensitivity in the BRCA-proficient triple-negative breast cancer models studied. A second branch concerns mTORC1 restraint of ULK1-associated autophagy initiation, studied by Kim 2011. Releasing an initiation brake does not establish completed cargo degradation or protective recycling. The two branches can change together without revealing the net survival effect. A model already lacking the relevant repair function cannot be assumed to gain the same vulnerability as one in which that function is newly reduced; measure protein and repair function, flux and survival under the actual compound, dose and schedule.","Rapalogs, PI3K or AKT inhibitors and ATP-site mTOR kinase inhibitors are different interventions. In Rodrik-Outmezguine's 2011 models, inhibiting both mTOR complexes initially reduced AKT Ser473 and Thr308 phosphorylation, but relief of receptor feedback later restored Thr308 phosphorylation and AKT signalling while Ser473 remained suppressed. A Ser473 result therefore did not measure all AKT activity. O'Reilly's rapalog study and Harrington's IRS feedback work likewise explain why lower mTORC1 output can coexist with increased upstream signalling. These are measured responses in specified systems, not inevitable behaviour or a universal combination prescription.","In a fictional experiment, repair RNA falls, an mTORC1-associated phosphosite falls, AKT phosphorylation rises and more autophagosomes appear. The RNA concerns messages; confirm the proposed protein and repair consequence. A validated site change concerns that output at that time, while the AKT change may fit feedback without proving every downstream effect. Autophagosome amount does not establish completed flux, and no survival conclusion has yet been supplied. Growth and energy inputs also differ: Gwinn 2008 linked AMPK phosphorylation of raptor to mTORC1 restraint during energy stress. Slower costly building work and better survival can coexist. Named S6, 4E-BP1, AKT and AMPK-target sites need their own controls, total-protein context and timing; bulk RNA is not a kinase-activity meter."],
 }),
   p({
     id: "ras-mapk", name: "RAS / RAF / MEK / ERK (MAPK)", wikipedia: W("MAPK/ERK_pathway"),
@@ -429,10 +436,15 @@ export const pathways: PathwayInput[] = [
   {
     "label": "Monounsaturated fatty acid modification of Wnt protein: its role in Wnt secretion. (2006; primary evidence)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/17141155/"
-  }
+  },
+
+  {"label":"Inactivating mutations of RNF43 confer Wnt dependency in pancreatic ductal adenocarcinoma (2013)","url":"https://pubmed.ncbi.nlm.nih.gov/23847203/"},
+  {"label":"Activation of beta-catenin-Tcf signaling in colon cancer by mutations in beta-catenin or APC (1997)","url":"https://pubmed.ncbi.nlm.nih.gov/9065402/"},
 ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-12",
+
+  "notes": ["Jiang 2013 screened 39 pancreatic cancer lines: the lines sensitive to the tested PORCN inhibitor carried inactivating RNF43 changes. This does not mean every RNF43 variant predicts sensitivity. The reported RNF43-loss models depended on secreted Wnt, whereas a downstream escape from beta-catenin destruction can maintain output despite blocking ligand preparation upstream. Morin's colorectal work linked stabilising beta-catenin changes to this distinction. In a fictional nuclear-beta-catenin culture with such a bypass stipulated, an upstream PORCN block is not expected to remove that particular output. Actual engagement, output and growth still need testing; pathway position is a mechanistic hypothesis, not proof that a drug has no effect through any route.","Rodon's phase 1 WNT974 study treated 94 people with advanced solid tumours. AXIN2 RNA decreased in 94 per cent of 52 paired skin-biopsy comparisons and 74 per cent of 35 paired tumour-biopsy comparisons; no RECIST responses were observed. These denominators are paired-sample groups, not response fractions out of all 94 participants. A downstream output change supports a pharmacodynamic effect without directly measuring receptor occupancy, selective growth dependence or tumour shrinkage. Dysgeusia occurred in 50 per cent, illustrating that normal-tissue effects also matter. This trial does not justify transferring a target-output change to benefit or a treatment recommendation."],
 }),
   p({
     asOf:"2026-11-08", notes:["Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment."],

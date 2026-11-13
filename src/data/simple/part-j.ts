@@ -180,7 +180,7 @@ export const simpleJ: Record<string, string> = {
   "enzyme": "An enzyme is a protein that speeds up one specific chemical reaction, and many cancer drugs work by blocking an enzyme the cancer depends on.",
   "gene-expression": "Gene expression is how much a gene is switched on and therefore how much of its protein a cell makes, and cancer cells get these levels wrong.",
   "mutation": "A mutation is a change in the DNA sequence, like a typo in a recipe, mostly harmless but sometimes letting a cell grow out of control.",
-  "driver-mutation": "A driver mutation is one of the few changes in a tumour that actually makes it grow, unlike passenger mutations, and drivers are what targeted drugs aim at.",
+  "driver-mutation": "Some DNA changes help a cancer develop. Finding such a change does not by itself show that a drug will help.",
   "amplification": "Amplification is when a cell has many extra copies of a gene instead of two, making far too much of its protein, as in HER2-positive breast cancer.",
   "overexpression": "Overexpression is when a cell makes much more of a particular protein than normal, letting drugs aimed at that protein hit the tumour harder than healthy tissue.",
   "deletion": "A deletion is a missing piece of DNA, from a few letters to a whole gene, and losing a protective gene removes one of the cell's brakes.",

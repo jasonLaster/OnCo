@@ -169,7 +169,7 @@ export const educationParallelTcells: TermInput[] = [
     "id": "t-cell-receptor",
     "name": "T-cell receptor",
     "category": "Immunology",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-12",
     "tldr": "A conventional T-cell receptor recognises a peptide together with its HLA display. Recognition alone does not show killing.",
     "summary": "A conventional alpha-beta T-cell receptor uses paired chains to recognise a peptide-HLA surface. Its recognition chains assemble with CD3 signalling partners, as demonstrated in the human TCR-CD3 structural study. CDR3 is an informative variable region, but neither a beta-chain sequence nor CDR3 alone specifies the complete paired receptor or its function.\n\nParticular receptors can cross-react across peptide and HLA contexts; that does not establish a universal cross-reactivity rate. Paired receptor identity, binding, activation, target-cell death and clinical benefit require different evidence. A response by one reconstructed pair to peptide-loaded cells does not establish that another alpha-chain pairing recognises the same target, or that either kills naturally presenting tumour cells. Use irrelevant-target, HLA and target-only viability controls. Peptide loading can bypass natural processing, and contact diagrams are not healthy-tissue safety tests.",
     "links": [
@@ -192,15 +192,20 @@ export const educationParallelTcells: TermInput[] = [
       {
         "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
         "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
-      }
-    ],
+      },
+
+  {"label":"Stone et al.: TCR binding, kinetics, coreceptors and specificity (2009 review)","url":"https://pubmed.ncbi.nlm.nih.gov/19125887/"},
+  {"label":"Schuldt and Binstadt: dual TCR expression (2019 review)","url":"https://pubmed.ncbi.nlm.nih.gov/30670579/"},
+],
     "notes": [
       "A conventional alpha-beta TCR uses paired variable and constant domains to contact peptide plus HLA. The peptide sits in the HLA groove, not a separate TCR peptide pocket. CD3 signalling partners are distinct from recognition chains. Contact loops including junction-spanning CDR3 contribute, but other loops, the partner chain and HLA matter; beta-only or CDR3-only sequence is incomplete.",
       "Cross-reactivity is recognition of multiple targets by a receptor. Defined receptor experiments demonstrated peptide/HLA cross-reactivity, not recognition of every allele by an arbitrary receptor or a universal rate. Greater affinity or a contact drawing does not establish healthy-tissue safety.",
       "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
       "Vaccination generally recruits or expands existing mature receptor specificities rather than rewriting each mature receptor. Engineered TCR therapy introduces selected receptor sequences. In either case, tested recognition must still connect to naturally presenting tumour targets, useful function and healthy-tissue safety. If one beta sequence pairs with different alpha chains, a positive reconstruction of one pair does not establish the other pair's function or tumour killing.",
-      "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules."
-    ],
+      "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+
+  "Many measured conventional receptor-peptide-HLA interactions have micromolar dissociation constants; affinity, multiple contacts, CD4/CD8 coreceptors and the cellular signalling context contribute differently to activity. Stone and colleagues review those distinctions, rather than a universal affinity ranking against every antibody. One receptor type per cell is also a simplification: extra productive alpha chains and dual surface receptors have been documented. A chain sequence alone does not establish which assembled receptor provides the measured specificity.",
+],
     "related": [
       "t-cell"
     ],
@@ -214,7 +219,7 @@ export const educationParallelTcells: TermInput[] = [
     "id": "t-cell-states",
     "name": "T-cell states",
     "category": "Immunology",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-12",
     "tldr": "Response history and measured function help describe a T cell's state. One marker cannot provide a complete label.",
     "summary": "Naive, effector, memory and exhausted populations describe response histories and differentiation programmes, not one mandatory sequence for every T cell. Anergy and exhaustion are distinct mechanisms. Regulatory function is a separate role. Identity, location, receptor specificity, state and measured function are complementary observations.\n\nIn chronic viral infection in mice, TCF1-associated progenitor populations sustained responses and supplied the proliferative burst after PD-1 blockade. In tumour models, progenitor exhausted cells differed from terminally exhausted cells; the related melanoma observations were associations rather than a universal treatment-selection rule. Progenitor-like exhaustion is not ordinary memory. A shared receptor does not require a shared functional phenotype, and PD-1 or TCF1 alone does not establish state or tumour specificity.\n\nPaired human skin-cancer biopsies after PD-1 blockade showed expanded clonotypes not previously observed in the same tumour, supporting clonal replacement as another response model. Absence from an earlier sample does not establish absence throughout the body. A fictional PD-1-positive population near cancer can include viral-reactive and tumour-peptide-reactive cells. Neither proximity nor peptide response proves natural tumour recognition or killing. Preserve response history, sampling site, time, multiple markers and controlled function; neither division nor a favourable pattern predicts individual benefit.",
     "links": [
@@ -249,15 +254,12 @@ export const educationParallelTcells: TermInput[] = [
       {
         "label": "Burger et al., model-antigen dominance and TCF1 subsets",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34534464/"
-      }
-    ],
-    "notes": [
-      "Naive describes absence of initial antigen-driven activation, not recent thymic birth. Effector denotes developed response functions, including help or killing; memory can support renewed responses but promises neither permanent protection nor cancer specificity. State categories are not one mandatory developmental trajectory. Anergy, exhaustion, external suppression and regulatory role remain distinct.",
-      "The same paired receptor can occur with different functional phenotypes and response histories. Fictional R1 memory-associated and progenitor-like exhausted observations are separate observations, not a measured transition. Progenitor-like exhaustion is distinct from ordinary memory; shared TCF1 or division does not make their programmes equivalent.",
-      "Fictional equal-looking PD-1-positive populations near cancer have different controlled peptide responses: one viral and one tumour-peptide directed. Marker and proximity do not establish specificity; peptide response does not establish natural tumour display, access or killing. Checkpoint blockade does not rewrite receptor specificity. Preserve tissue, sampling time, population definitions and controlled function alongside RNA/protein panels; favourable markers or division alone cannot predict benefit.",
-      "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
-      "In Burger and colleagues' engineered mouse lung tumours, the subdominant response contained heterogeneous TCF1-positive populations, including a CCR6/Tc17-associated subset that did not preferentially benefit from checkpoint blockade. Long-peptide vaccination with the two model antigens and cyclic di-GMP improved the subdominant response; a subdominant-only arm also tested antigen-specific effects. The separate human analyses were associations, not a validated universal TCF1/CCR6 requirement, target-deletion rule or clone-pruning instruction."
-    ],
+      },
+
+  {"label":"Henson et al.: proliferation, effector proteins and metabolism in human CD8 subsets (2014)","url":"https://pubmed.ncbi.nlm.nih.gov/25083993/"},
+  {"label":"Pereira et al.: NK-like killing by defined senescent-like CD8 cells (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/32231301/"},
+],
+    "notes": ["Naive describes absence of initial antigen-driven activation, not recent thymic birth. Effector denotes developed response functions, including help or killing; memory can support renewed responses but promises neither permanent protection nor cancer specificity. State categories are not one mandatory developmental trajectory. Anergy, exhaustion, external suppression and regulatory role remain distinct.","The same paired receptor can occur with different functional phenotypes and response histories. Fictional R1 memory-associated and progenitor-like exhausted observations are separate observations, not a measured transition. Progenitor-like exhaustion is distinct from ordinary memory; shared TCF1 or division does not make their programmes equivalent.","Two fictional six-symbol PD-1-positive populations near cancer have different controlled peptide responses: one viral and one tumour-peptide directed. Marker and proximity do not establish specificity; peptide response does not establish natural tumour display, access or killing. Checkpoint blockade does not rewrite receptor specificity. Preserve tissue, sampling time, population definitions and controlled function alongside RNA/protein panels; favourable markers or division alone cannot predict benefit.","Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.","In Burger and colleagues' engineered mouse lung tumours, the subdominant response contained heterogeneous TCF1-positive populations, including a CCR6/Tc17-associated subset that did not preferentially benefit from checkpoint blockade. Long-peptide vaccination with the two model antigens and cyclic di-GMP improved the subdominant response; a subdominant-only arm also tested antigen-specific effects. The separate human analyses were associations, not a validated universal TCF1/CCR6 requirement, target-deletion rule or clone-pruning instruction.","Reduced division and immediate effector activity are separate measurements. In healthy-donor CD8 subsets, Henson and colleagues measured reduced proliferation alongside cytokine, perforin and granzyme expression; that protein panel alone is not a direct target-death assay, and not every EMRA cell carried the measured senescence markers. Pereira and colleagues separately demonstrated killing by defined senescent-like CD27-negative/CD28-negative CD8 cells, including MHC-I-deficient targets and NKG2D-DAP12-associated NK-like activity. These observations do not establish conventional tumour-specific TCR killing, durable control or clinical benefit for every highly differentiated cell."],
     "related": [
       "t-cell"
     ]

@@ -49,8 +49,10 @@ const raw: TrialInput[] = [
     drugs: ["pembrolizumab"], cancers: ["tnbc", "tnbc-metastatic"], terms: ["cps"], links: [ct("NCT02819518")] ,
   asOf: "2026-11-12",
   notes: [
-    "In this study, previously untreated referred to the locally recurrent inoperable or metastatic setting, not to absence of every earlier cancer treatment. The 2020 report stratified randomisation by previous exposure to the same chemotherapy class in neoadjuvant or adjuvant care. The later overall-survival report met its significance criterion for combined positive score ten or more; a nonsignificant broader subgroup or an untested significance comparison does not demonstrate exactly zero effect in each lower-score stratum."
-  ]
+    "In this study, previously untreated referred to the locally recurrent inoperable or metastatic setting, not to absence of every earlier cancer treatment. The 2020 report stratified randomisation by previous exposure to the same chemotherapy class in neoadjuvant or adjuvant care. The later overall-survival report met its significance criterion for combined positive score ten or more; a nonsignificant broader subgroup or an untested significance comparison does not demonstrate exactly zero effect in each lower-score stratum.",
+
+  "The CPS-at-least-one analysis includes people with CPS at least ten. Its nonsignificant overall-survival comparison is therefore not an isolated result for CPS one to nine. Nested subgroup findings, the prespecified testing hierarchy and individual benefit are different questions; none establishes that every person below a cutoff has exactly zero treatment effect.",
+]
 }),
   t({ id: "impassion130", technologies: ["checkpoint-inhibitor"], name: "IMpassion130", nct: "NCT02425891", phase: "3", status: "mixed", yearReported: 2018, sponsor: "Roche",
     setting: "First-line metastatic TNBC: atezolizumab + nab-paclitaxel",

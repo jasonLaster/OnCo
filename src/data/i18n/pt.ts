@@ -182,7 +182,7 @@ export const tldr_pt: Record<string, string> = {
   "peptide-drug-conjugate": "Como um ADC, mas com um pequeno peptídeo de mira em vez de um anticorpo, de modo que penetra nos tumores mais rápido e é mais barato de fabricar.",
 
   "t-cell-engager": "Uma droga pronta para uso que liga fisicamente uma célula T assassina a uma célula cancerosa, forçando o ataque.",
-  "neoantigen-mrna-vaccine": "Uma vacina feita para um só paciente, codificando as mutações únicas do próprio tumor, para treinar o sistema imune a caçá-lo.",
+  "neoantigen-mrna-vaccine": "Uma vacina concebida para uma pessoa fornece instruções para sequências selecionadas do seu tumor. A concepção, por si só, não demonstra que esses alvos sejam apresentados, reconhecidos ou clinicamente úteis.",
   "shared-antigen-vaccine": "Vacinas contra mutações ou proteínas compartilhadas por muitos pacientes, que podem ser feitas com antecedência.",
 
 
@@ -3569,7 +3569,7 @@ export const tldr_pt: Record<string, string> = {
   "cbt-fatigue-distress": "A fadiga e a ansiedade relacionadas ao câncer respondem a uma terapia de conversa estruturada que atua sobre os pensamentos e hábitos que as mantêm. Ensaios randomizados mostram benefícios durante o tratamento e, na fadiga persistente, anos depois; as diretrizes a recomendam.",
   cd52: "CD52 é uma pequena proteína presente em quase todos os linfócitos e o alvo do alemtuzumabe, um anticorpo profundamente imunossupressor antes usado na CLL e hoje sobretudo no condicionamento para transplante, na leucemia de células T e na esclerose múltipla.",
   cd7: "Um marcador de superfície das células T mantido na maioria das leucemias de células T; as células CAR-T dirigidas contra ele precisam ser modificadas para não se matarem entre si, e já produziram remissões em T-ALL quando nada mais funcionava.",
-  cdmo: "Uma empresa que fabrica medicamentos para outras empresas. A maioria dos ADCs, biológicos e terapias celulares é produzida por um punhado delas.",
+  cdmo: "Uma organização contratada realiza o trabalho acordado de desenvolvimento ou fabricação de medicamentos para um cliente. O nome do serviço, por si só, não informa quais tarefas, evidências de qualidade ou responsabilidades um acordo específico abrange.",
   "cell-membrane": "A pele externa oleosa de uma célula. A maioria dos medicamentos e anticorpos age nessa fronteira, seja ligando-se às proteínas que se projetam dela, seja atravessando-a.",
   "cell-of-origin": "Se um linfoma de grandes células B se assemelha a uma célula B do centro germinativo ou a uma célula B ativada; o tipo ativado tem pior evolução e depende de vias diferentes.",
 

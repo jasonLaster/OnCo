@@ -182,7 +182,7 @@ export const tldr_es: Record<string, string> = {
   "peptide-drug-conjugate": "Como un ADC pero con un pequeño péptido de guía en vez de un anticuerpo, de modo que penetra en los tumores más rápido y es más barato de fabricar.",
 
   "t-cell-engager": "Un fármaco listo para usar que une físicamente una célula T asesina a una célula cancerosa, forzando el ataque.",
-  "neoantigen-mrna-vaccine": "Una vacuna hecha para un solo paciente, que codifica las mutaciones únicas de su tumor, para entrenar al sistema inmunitario a cazarlo.",
+  "neoantigen-mrna-vaccine": "Una vacuna diseñada para una persona aporta instrucciones para secuencias seleccionadas de su tumor. El diseño por sí solo no demuestra que esos blancos se presenten, se reconozcan ni tengan utilidad clínica.",
   "shared-antigen-vaccine": "Vacunas contra mutaciones o proteínas compartidas por muchos pacientes, que pueden fabricarse por adelantado.",
 
 
@@ -3569,7 +3569,7 @@ export const tldr_es: Record<string, string> = {
   "cbt-fatigue-distress": "La fatiga y la ansiedad relacionadas con el cáncer responden a una terapia de conversación estructurada que aborda los pensamientos y hábitos que las mantienen. Los ensayos aleatorizados muestran beneficios durante el tratamiento y, en la fatiga persistente, años después; las guías la recomiendan.",
   cd52: "CD52 es una pequeña proteína presente en casi todos los linfocitos y la diana de alemtuzumab, un anticuerpo profundamente inmunosupresor que antes se usaba en la CLL y ahora sobre todo en el acondicionamiento para trasplante, la leucemia de células T y la esclerosis múltiple.",
   cd7: "Un marcador de superficie de las células T que conservan la mayoría de las leucemias de células T; las células CAR-T dirigidas contra él deben diseñarse para no matarse entre sí, y han logrado remisiones en T-ALL cuando nada más funcionaba.",
-  cdmo: "Una empresa que fabrica medicamentos para otras empresas. La mayoría de los ADC, los biológicos y las terapias celulares los fabrican un puñado de ellas.",
+  cdmo: "Una organización contratada realiza el trabajo acordado de desarrollo o fabricación de medicamentos para un cliente. El nombre del servicio no indica por sí solo qué tareas, pruebas de calidad o responsabilidades cubre un acuerdo concreto.",
   "cell-membrane": "La piel exterior grasa de una célula. La mayoría de los fármacos y anticuerpos actúan en esta frontera, ya sea uniéndose a las proteínas que sobresalen de ella o atravesándola.",
   "cell-of-origin": "Si un linfoma de células B grandes se parece a una célula B del centro germinal o a una célula B activada; el tipo activado tiene peor pronóstico y depende de vías distintas.",
 

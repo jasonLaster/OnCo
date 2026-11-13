@@ -555,7 +555,7 @@ export const tldr_de: Record<string, string> = {
   "nci-cancer-centers": "Die vom NCI ausgewiesenen Krebszentren sind die Liste der US-Regierung jener Krebszentren, die ihre Standards für Forschung und Versorgung erfüllen.",
   "nci-ccr": "Die eigenen Labore und die Klinik des NCI am NIH Clinical Center, Heimat von Rosenbergs Zelltherapie-Abteilung, des HPV-Impfstoffs und der Lymphom-Genomik.",
   nejm: "Das NEJM ist die einflussreichste medizinische Fachzeitschrift. Wenn eine Studie zu einem Krebsmedikament die Behandlung von Patienten verändert, erscheint die Arbeit meist hier, oft am selben Tag, an dem sie auf dem ASCO, dem ESMO oder dem ASH vorgestellt wird.",
-  "neoantigen-mrna-vaccine": "Ein für einen einzelnen Patienten hergestellter Impfstoff, der die einzigartigen Mutationen seines eigenen Tumors kodiert, um das Immunsystem darauf zu trainieren, ihn zu jagen.",
+  "neoantigen-mrna-vaccine": "Ein für eine Person entworfener Impfstoff liefert Anweisungen für ausgewählte Sequenzen aus ihrem Tumor. Der Entwurf allein belegt weder deren Präsentation und Erkennung noch einen klinischen Nutzen.",
   "ngs-mrd-clonoseq": "Die Sequenzierung des einzigartigen genetischen Barcodes der Leukämie eines Patienten, um eine Krebszelle unter einer Million zu finden.",
   nice: "Englands Behörde für die Bewertung von Gesundheitstechnologien, die anhand der Kosten pro qualitätsbereinigtem Lebensjahr entscheidet, ob der NHS für jedes neue Krebsmedikament zahlen soll, und den Cancer Drugs Fund betreibt.",
   niraparib: "Niraparib ist ein PARP-Inhibitor, der als Erhaltungstherapie bei Eierstockkrebs unabhängig vom BRCA-Status sowie bei Prostatakrebs in Kombination mit abiraterone zugelassen ist.",
@@ -3558,7 +3558,7 @@ export const tldr_de: Record<string, string> = {
   "cbt-fatigue-distress": "Krebsbedingte Erschöpfung und Ängste sprechen auf eine strukturierte Gesprächstherapie an, die auf die Gedanken und Gewohnheiten zielt, die sie aufrechterhalten. Randomisierte Studien zeigen Nutzen während der Behandlung und, bei anhaltender Erschöpfung, noch Jahre danach; Leitlinien empfehlen sie.",
   cd52: "CD52 ist ein kleines Protein auf nahezu allen Lymphozyten und das Ziel von Alemtuzumab, einem stark immunsupprimierenden Antikörper, der früher bei CLL eingesetzt wurde und heute vor allem in der Transplantationskonditionierung, bei T-Zell-Leukämie und Multipler Sklerose.",
   cd7: "Ein Oberflächenmarker von T-Zellen, den die meisten T-Zell-Leukämien behalten; dagegen gerichtete CAR-T-Zellen müssen so konstruiert werden, dass sie sich nicht gegenseitig töten, und sie haben bei T-ALL Remissionen erzielt, wo nichts anderes mehr wirkte.",
-  cdmo: "Ein Unternehmen, das Medikamente für andere Unternehmen herstellt. Die meisten ADCs, Biologika und Zelltherapien werden von einer Handvoll solcher Firmen produziert.",
+  cdmo: "Ein Auftragsunternehmen übernimmt vereinbarte Arbeiten zur Entwicklung oder Herstellung von Arzneimitteln für einen Kunden. Die Dienstleistungsbezeichnung allein sagt nicht, welche Aufgaben, Qualitätsnachweise oder Verantwortlichkeiten eine konkrete Vereinbarung umfasst.",
   "cell-membrane": "Die ölige Außenhaut einer Zelle. Die meisten Medikamente und Antikörper wirken an dieser Grenze, indem sie entweder an herausragende Proteine binden oder hindurchschlüpfen.",
   "cell-of-origin": "Ob ein großzelliges B-Zell-Lymphom einer Keimzentrums-B-Zelle oder einer aktivierten B-Zelle ähnelt; der aktivierte Typ verläuft schlechter und hängt von anderen Signalwegen ab.",
 

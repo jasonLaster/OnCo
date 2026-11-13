@@ -109,7 +109,7 @@ export const simpleJ: Record<string, string> = {
   "omop-ohdsi": "OMOP is a shared format for patient records that lets hospitals worldwide run the same study on their own data without sharing patient details.",
   "mcode": "mCODE is a standard checklist of cancer data every electronic record should capture the same way, so information can flow between hospitals, registries and research.",
   "bicr": "Blinded independent central review means outside radiologists who do not know which treatment a patient received re-read every trial scan, removing bias from the results.",
-  "cdmo": "A CDMO is a contract company that makes drugs for other companies, and a handful of them produce most antibody-drug conjugates, biologics and cell therapies.",
+  "cdmo": "A contract company does agreed work developing or making medicines for a client. Its service name does not show which jobs, quality checks or responsibilities a particular agreement covers.",
   "biosecure-act": "The BIOSECURE Act is proposed US legislation restricting work with certain Chinese biotech service companies, which would affect where many cancer drugs and tests are made.",
   "rare-cancers": "Rare cancers are those affecting fewer than about six in a hundred thousand people a year, which together make up a quarter of all cancers yet get fewer trials.",
   "cancer-health-disparities": "Cancer health disparities are the systematic differences in who gets cancer, how early it is found and who survives, driven by race, income, geography and insurance.",

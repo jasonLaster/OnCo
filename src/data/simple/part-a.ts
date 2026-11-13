@@ -185,7 +185,7 @@ export const simpleA: Record<string, string> = {
   "peptide-drug-conjugate": "Like an antibody-drug but with a tiny targeting peptide instead of an antibody, so it gets into tumours faster and is cheaper to make.",
   "checkpoint-inhibitor": "These medicines block a particular immune-control interaction. They can support cancer-directed activity and can also injure healthy tissue.",
   "t-cell-engager": "An off-the-shelf drug that physically links a killer T cell to a cancer cell, forcing the attack.",
-  "neoantigen-mrna-vaccine": "A vaccine made for one patient, based on the unique mutations in their own tumour, to train the immune system to hunt it.",
+  "neoantigen-mrna-vaccine": "A vaccine for one person carries instructions based on selected tumour sequences. That design alone does not show that the targets are displayed, recognised or useful for treatment.",
   "shared-antigen-vaccine": "Vaccines against mutations or proteins shared by many patients, so they can be made in advance.",
   "oncolytic-virus": "These viruses can infect and injure susceptible cancer cells. They can also cause harm; a useful immune response against the cancer needs separate evidence.",
   "cytokine-therapy": "These treatments supply immune-signalling proteins or cells that make them. Their effects depend on the protein, the receiving cells and exposure.",

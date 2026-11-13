@@ -1,0 +1,567 @@
+{
+  "version": "proposal-normal-tissue-vascular-root",
+  "state": "Committed registered draft-root fields in unmerged PR375. Four existing owners receive five source-qualified paragraphs, seven links and four dates; earlier fields are preserved. Selection is not whole-owner verification. No new id or registration.",
+  "draft": 375,
+  "committedDataHead": "4a99a1c097b1b06627fc2c1a16059ce0b5f367eb",
+  "records": [
+    {
+      "id": "notch",
+      "kind": "pathway",
+      "name": "Notch signalling",
+      "aka": [],
+      "tldr": "Notch receptors can relay signals between contacting cells. The effect depends on the receptor, ligand, alteration and tissue; receiving a signal does not by itself prove growth dependence.",
+      "summary": "A ligand-bearing sender, receptor amount, received signal and growth dependence are separate observations. Locate malignant, vessel and other neighboring cells before assigning a Notch mechanism. Ligand on a vessel is not evidence that the tumor received the signal, and total receptor is different from a released nuclear intracellular domain.\n\nCommon contact-dependent Notch signaling begins when Delta-like or Jagged ligand on one cell engages a receptor on a neighbor. Ligand-regulated extracellular cleavage permits subsequent gamma-secretase-mediated membrane cleavage; the released Notch intracellular domain, NICD, can enter the nucleus and work with transcriptional partners. This route differs from an RTK phosphorylation relay and omits receptor maturation and sender mechanics.\n\nWeng found activating NOTCH1 changes in extracellular heterodimerization or PEST regions in more than half of the studied T-ALLs. Agrawal identified predicted inactivating alterations in head-and-neck squamous tumors, suggesting a tumor-suppressor role there. An uncharacterized allele inherits neither direction from the pathway name; tissue, cell identity and alteration effect matter.\n\nA fictional T-ALL culture with high nuclear NICD without a ligand-bearing neighbor, and lower NICD after gamma-secretase blockade, supports a ligand-independent activation hypothesis. A contact-blocking experiment that lowers NICD without changing growth instead supports reduced received signaling without demonstrating a growth requirement. Control general toxicity, contact conditions, independent pathway perturbations and compensation. Gamma-secretase also processes other proteins; responsive HES/HEY RNA and nuclear staining need validated assays and are not universal eligibility cutoffs.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+      "links": [
+        {
+          "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
+          "url": "https://doi.org/10.1146/annurev-pathol-052016-100127"
+        },
+        {
+          "label": "Notch-1 signalling requires ligand-induced proteolytic release of intracellular domain. (primary abstract; 1998)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9620803/"
+        },
+        {
+          "label": "Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. (primary abstract; 2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15472075/"
+        },
+        {
+          "label": "Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. (primary abstract; 2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21798897/"
+        },
+        {
+          "label": "A ligand-induced extracellular cleavage regulates gamma-secretase-like proteolytic activation of Notch1. (2000; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10882062/"
+        },
+        {
+          "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
+        },
+        {
+          "label": "Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25104330/"
+        },
+        {
+          "label": "van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15959515/"
+        },
+        {
+          "label": "Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11432830/"
+        },
+        {
+          "label": "Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25231399/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [],
+      "cancers": [
+        "sclc",
+        "all-leukemia",
+        "cll",
+        "head-and-neck",
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "dll3"
+      ],
+      "drugs": [
+        "tarlatamab",
+        "nirogacestat"
+      ],
+      "companies": [],
+      "institutions": [
+        "dana-farber",
+        "penn-abramson"
+      ],
+      "pathways": [
+        "cancer-stem-cells-plasticity",
+        "myc"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-aster-annu-rev-pathol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
+        "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+        "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
+        "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors."
+      ],
+      "analogy": "A doorbell that only works when a neighbour presses it. In some cancers the bell rings constantly (T-ALL); in others it has been ripped out so cells never hear 'stop and mature'.",
+      "nodes": [
+        {
+          "id": "lig",
+          "label": "DLL/JAG ligand (neighbour)",
+          "x": 15,
+          "y": 40
+        },
+        {
+          "id": "notch",
+          "label": "NOTCH receptor",
+          "x": 40,
+          "y": 40
+        },
+        {
+          "id": "gs",
+          "label": "γ-secretase cleavage",
+          "x": 60,
+          "y": 40
+        },
+        {
+          "id": "nicd",
+          "label": "NICD → RBPJ",
+          "x": 80,
+          "y": 40
+        },
+        {
+          "id": "hes",
+          "label": "HES1/HEY, MYC",
+          "x": 80,
+          "y": 78
+        },
+        {
+          "id": "dll3",
+          "label": "DLL3 (inhibitory; SCLC surface)",
+          "x": 15,
+          "y": 80,
+          "targetId": "dll3"
+        }
+      ],
+      "edges": [
+        {
+          "from": "lig",
+          "to": "notch",
+          "type": "activates"
+        },
+        {
+          "from": "notch",
+          "to": "gs",
+          "type": "activates"
+        },
+        {
+          "from": "gs",
+          "to": "nicd",
+          "type": "activates"
+        },
+        {
+          "from": "nicd",
+          "to": "hes",
+          "type": "activates"
+        },
+        {
+          "from": "dll3",
+          "to": "notch",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "Nirogacestat (γ-secretase inhibitor) in desmoid tumours",
+        "DLL3-directed tarlatamab in SCLC; DLL3 ADCs and trispecifics",
+        "NOTCH1-mutant CLL: reduced benefit from anti-CD20, informs regimen choice"
+      ]
+    },
+    {
+      "id": "wnt",
+      "kind": "pathway",
+      "name": "Wnt / β-catenin",
+      "aka": [],
+      "tldr": "Canonical Wnt signalling regulates beta-catenin and gene activity. Its output, dependence on a Wnt ligand and effects on cell growth are separate questions.",
+      "summary": "Canonical pathway output, dependence on secreted Wnt, growth dependence and clinical response are separate claims. Nuclear beta-catenin can reflect pathway signaling, whereas total beta-catenin also includes adhesion functions. Lower AXIN2 RNA supports an output effect with suitable controls, not selective killing or patient benefit. Wnt routes that do not use beta-catenin are outside this canonical readout.\n\nCanonical Wnt uses Frizzled with LRP5/6 co-receptor machinery. Without an effective signal, the Axin/APC-organized destruction machinery and sequential kinase steps promote beta-catenin degradation; signaling can change that control and allow nuclear regulation with partners. PORCN supplies a lipid modification required for proper Wnt secretion in the studied systems. Blocking that upstream step need not overcome a downstream escape from destruction control.\n\nTwo fictional cultures have nuclear beta-catenin. Secretion blockade reduces the nuclear signal in culture A but not in culture B, where downstream bypass is stipulated. A supports a ligand-dependent hypothesis; B illustrates how an upstream block can leave a downstream output intact. The symbols represent qualitative readouts, not protein counts or a real drug dataset. Neither pattern alone establishes selective killing; measure viability and control intervention specificity.\n\nAssays can measure localization, AXIN2 RNA or a defined transcriptional reporter, before and after a specified perturbation. Preservation, composition, global transcription effects, model validation and tissue consumption matter; there is no universal Wnt-high treatment cutoff. In Rodon's phase 1 WNT974 study of 94 people with advanced solid tumors, AXIN2 fell in many paired biopsies while no RECIST responses were observed. Target-related output and tumor response must therefore be reported separately, alongside safety rather than a claim of demonstrated benefit.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Wnt_signaling_pathway",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wnt_signaling_pathway"
+        },
+        {
+          "label": "Phase 1 study of single-agent WNT974, a first-in-class Porcupine inhibitor, in patients with advanced solid tumours. (primary abstract; 2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33941878/"
+        },
+        {
+          "label": "LDL-receptor-related proteins in Wnt signal transduction. (2000; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11029007/"
+        },
+        {
+          "label": "Control of beta-catenin phosphorylation/degradation by a dual-kinase mechanism. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11955436/"
+        },
+        {
+          "label": "Wnt signaling controls the phosphorylation status of beta-catenin. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11834740/"
+        },
+        {
+          "label": "Monounsaturated fatty acid modification of Wnt protein: its role in Wnt secretion. (2006; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17141155/"
+        },
+        {
+          "label": "Inactivating mutations of RNF43 confer Wnt dependency in pancreatic ductal adenocarcinoma (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23847203/"
+        },
+        {
+          "label": "Activation of beta-catenin-Tcf signaling in colon cancer by mutations in beta-catenin or APC (1997)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9065402/"
+        },
+        {
+          "label": "Gong et al., LDL receptor-related protein 5 affects bone accrual and eye development (Cell 2001)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11719191/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "colorectal",
+        "hcc",
+        "endometrial",
+        "gallbladder"
+      ],
+      "sections": [],
+      "technologies": [
+        "chemoprevention"
+      ],
+      "targets": [
+        "gpc3"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Jiang 2013 screened 39 pancreatic cancer lines: the lines sensitive to the tested PORCN inhibitor carried inactivating RNF43 changes. This does not mean every RNF43 variant predicts sensitivity. The reported RNF43-loss models depended on secreted Wnt, whereas a downstream escape from beta-catenin destruction can maintain output despite blocking ligand preparation upstream. Morin's colorectal work linked stabilising beta-catenin changes to this distinction. In a fictional nuclear-beta-catenin culture with such a bypass stipulated, an upstream PORCN block is not expected to remove that particular output. Actual engagement, output and growth still need testing; pathway position is a mechanistic hypothesis, not proof that a drug has no effect through any route.",
+        "Rodon's phase 1 WNT974 study treated 94 people with advanced solid tumours. AXIN2 RNA decreased in 94 per cent of 52 paired skin-biopsy comparisons and 74 per cent of 35 paired tumour-biopsy comparisons; no RECIST responses were observed. These denominators are paired-sample groups, not response fractions out of all 94 participants. A downstream output change supports a pharmacodynamic effect without directly measuring receptor occupancy, selective growth dependence or tumour shrinkage. Dysgeusia occurred in 50 per cent, illustrating that normal-tissue effects also matter. This trial does not justify transferring a target-output change to benefit or a treatment recommendation.",
+        "Normal bone also uses Wnt-related signalling. Gong and colleagues linked LRP5 mutations to osteoporosis-pseudoglioma syndrome, found reduced bone mass in carriers, detected LRP5 in osteoblasts and demonstrated canonical Wnt signalling through it in culture. A mutant secreted LRP5 construct reduced bone thickness in mouse calvarial explants. These genetic and experimental findings concern bone accrual; they do not estimate the fracture risk of every Wnt inhibitor. In the WNT974 trial, the authors considered dysgeusia likely to result from on-target Wnt inhibition, but a maximum tolerated dose was not established. Safety findings, pathway-output changes and antitumour benefit remain distinct."
+      ],
+      "analogy": "β-catenin is a messenger constantly being shredded by a committee (APC and friends). A Wnt signal tells the committee to stand down. Colorectal cancer fires the committee (APC loss), so the messenger runs unchecked into the nucleus.",
+      "nodes": [
+        {
+          "id": "wnt",
+          "label": "Wnt ligand",
+          "x": 20,
+          "y": 8
+        },
+        {
+          "id": "fzd",
+          "label": "Frizzled / LRP5/6",
+          "x": 20,
+          "y": 26
+        },
+        {
+          "id": "rnf43",
+          "label": "RNF43 / RSPO",
+          "x": 60,
+          "y": 12
+        },
+        {
+          "id": "dc",
+          "label": "Destruction complex (APC, AXIN, GSK3β)",
+          "x": 55,
+          "y": 45
+        },
+        {
+          "id": "bcat",
+          "label": "β-catenin",
+          "x": 55,
+          "y": 65
+        },
+        {
+          "id": "tcf",
+          "label": "TCF/LEF",
+          "x": 55,
+          "y": 82
+        },
+        {
+          "id": "genes",
+          "label": "MYC, cyclin D1, LGR5",
+          "x": 55,
+          "y": 97
+        }
+      ],
+      "edges": [
+        {
+          "from": "wnt",
+          "to": "fzd",
+          "type": "activates"
+        },
+        {
+          "from": "rnf43",
+          "to": "fzd",
+          "type": "inhibits"
+        },
+        {
+          "from": "fzd",
+          "to": "dc",
+          "type": "inhibits"
+        },
+        {
+          "from": "dc",
+          "to": "bcat",
+          "type": "inhibits"
+        },
+        {
+          "from": "bcat",
+          "to": "tcf",
+          "type": "activates"
+        },
+        {
+          "from": "tcf",
+          "to": "genes",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Porcupine inhibitors (RSPO-fusion / RNF43-mutant tumours, trials)",
+        "Gamma-secretase inhibitor nirogacestat in desmoid tumours (approved 2023)",
+        "Tankyrase inhibitors (preclinical/early)",
+        "Indirect: chemoprevention with aspirin/COX-2 in Lynch and FAP"
+      ]
+    },
+    {
+      "id": "tumor-associated-antigen",
+      "kind": "term",
+      "name": "Tumour-associated antigen (TAA)",
+      "aka": [
+        "TAA",
+        "TAAs",
+        "shared tumour antigen",
+        "on-target off-tumour recognition",
+        "off-target cross-reactivity"
+      ],
+      "tldr": "A tumour-associated antigen is a target that is common in a tumour but can also be present in healthy tissue. A treatment aimed at it can affect both, and can also react with a different, look-alike target.",
+      "summary": "Many tumour-associated antigens come from unmutated proteins, so their usefulness depends on higher expression, an unusual expression pattern or accessibility in the cancer. A neoantigen, by contrast, arises from a tumour-specific sequence alteration. For an antibody or a chimeric antigen receptor, the question is accessible surface antigen on tumour and on healthy cells. For a peptide-directed T-cell receptor it is the particular peptide displayed by a particular HLA allele. RNA for the source gene establishes neither recognition surface, and a gene-expression result does not specify accessibility or peptide display.\n\nTwo hazards need different controls. On-target, off-tumour recognition means the receptor recognises its intended target in the wrong tissue. Off-target cross-reactivity means the receptor also recognises a different molecular target, so screening the intended antigen alone cannot rule it out. A published example of the second is an affinity-enhanced T-cell receptor directed at HLA-A*01-restricted MAGE-A3: in a clinical study the first two treated patients developed cardiogenic shock and died within days, no MAGE-A3 expression was detected in heart tissue at autopsy, and the T cells recognised an unrelated peptide from the striated-muscle protein titin (Linette et al., 2013; Cameron et al., 2013, who describe the preclinical analysis as having found no off-target concern). That illustrates the hazard for one engineered receptor and is not a toxicity rate for tumour-associated targets. Immune tolerance also shapes the available response to self antigens, and a stronger receptor does not remove the need to test healthy tissues and alternative targets.\n\nA shared antigen can support a treatment intended for more than one person's cancer, with a trade-off between tumour coverage and healthy-tissue exposure; expression prevalence in a cohort is not a safe recognition threshold for a product. For vaccine-elicited peptide-specific T cells, a shared antigen offers another candidate when credible private targets are few, which is a coverage hypothesis, not demonstrated benefit. A peptide from a shared antigen and one from a neoantigen may depend on the same HLA allele, so changing the antigen does not restore a missing display route: Tran et al. (2016) documented escape after loss of the restricting HLA allele in one colorectal cancer patient. Antibodies and CARs have different recognition requirements, and epitope spreading is a separate widening of recognition that adding a shared antigen does not guarantee.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Linette et al., 2013, Blood (PMID 23770775)",
+          "url": "https://doi.org/10.1182/blood-2013-03-490565"
+        },
+        {
+          "label": "Cameron et al., 2013, Science Translational Medicine (PMID 23926201)",
+          "url": "https://doi.org/10.1126/scitranslmed.3006034"
+        },
+        {
+          "label": "Tran et al., 2016, New England Journal of Medicine (PMID 27959684)",
+          "url": "https://doi.org/10.1056/nejmoa1609279"
+        },
+        {
+          "label": "Ademuyiwa et al.: NY-ESO-1 expression in the studied breast-cancer cohorts (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22761704/"
+        },
+        {
+          "label": "Ademuyiwa et al.: correction adding authors and contributions (2012)",
+          "url": "https://doi.org/10.1371/annotation/5cdf6105-2a52-497a-86b3-db8f4a4e439c"
+        },
+        {
+          "label": "NCI: HPV and Cancer, established cancer sites",
+          "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer"
+        },
+        {
+          "label": "Guillaudeux et al., expression of HLA class I genes in meiotic and post-meiotic human spermatogenic cells (Biology of Reproduction 1996)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8793064/"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "antigen",
+        "neoantigen",
+        "antigen-escape",
+        "hla",
+        "hla-typing-and-nomenclature"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "antigen",
+        "neoantigen",
+        "antigen-escape",
+        "hla"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The existing antigen record already lists tumour-associated antigen as an alias; this record carries the safety distinctions and uses different aliases.",
+        "Fictional X/Y examples in the teaching source were not carried over. Abstract-depth reads on 9 November 2026.",
+        "NY-ESO-1 illustrates a shared cancer-testis antigen, rather than a private mutation. Ademuyiwa and colleagues reported immunohistochemical expression in 16% of 168 triple-negative breast cancers and 2% of 47 ER-positive/HER2-negative comparators; the comparison groups had different sampling characteristics, and staining was heterogeneous. Their background describes normal expression restricted to testis. Expression prevalence is neither proof of a displayed peptide on every tumour cell nor evidence that a receptor or vaccine is effective or safe. A shared peptide-directed product still requires the appropriate HLA and functional testing.",
+        "Viral proteins provide another possible source of non-self targets, distinct from an altered human protein. NCI identifies HPV as a cause of cervical and oropharyngeal cancers, among other sites. For a proposed viral peptide target, establish viral-protein expression in the relevant cells, compatible peptide-HLA display and receptor recognition. A breast-cancer subtype label alone supplies none of that evidence; it does not establish a viral target or predict benefit from targeting it.",
+        "The germ-cell HLA qualification is about a measured recognition surface, not all cells in the testis. Guillaudeux and colleagues purified human pachytene spermatocytes and round spermatids and found low levels of class I HLA transcripts, but detected neither surface nor intracellular HLA-I heavy-chain protein with the antibodies used. This supports limited classical HLA-I display in those examined germ-cell populations, despite transcription. It does not establish absence of every HLA molecule in every testicular cell or condition, and it does not by itself prove that a peptide-directed engineered receptor is safe."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "immune-exclusion",
+      "kind": "term",
+      "name": "Immune exclusion",
+      "aka": [],
+      "tldr": "Immune exclusion describes immune cells concentrated outside cancer-cell regions. Their distribution raises questions about access; it does not identify the barrier or a treatment that will overcome it.",
+      "summary": "A common route for blood-borne effector T cells involves recruitment, adhesion and exit from a vessel, movement through stroma and contact with relevant cancer cells. An excluded distribution records where cells were found. It does not establish why they stopped. A cell that has reached a target but is inhibited has a different measured problem, although access and functional failures can coexist.\n\nCandidate mechanisms include recruitment signals, vascular interactions, matrix architecture, fibroblast signalling and myeloid-cell contacts. Their evidence comes from different cancers, human tissue studies and experimental models. A location measurement, causal perturbation and successful clinical intervention are different claims. Dense stroma alone does not diagnose exclusion or identify a safe way to reverse it.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor_microenvironment",
+      "links": [
+        {
+          "label": "Mariathasan et al., TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells (Nature 2018)",
+          "url": "https://doi.org/10.1038/nature25501"
+        },
+        {
+          "label": "T cell exclusion, immune privilege, and the tumor microenvironment.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25838376/"
+        },
+        {
+          "label": "Trafficking of T cells into tumors.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25477332/"
+        },
+        {
+          "label": "Chemokine expression in melanoma metastases associated with CD8+ T-cell recruitment.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19293190/"
+        },
+        {
+          "label": "Melanoma-intrinsic β-catenin signalling prevents anti-tumour immunity.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25970248/"
+        },
+        {
+          "label": "Non-redundant requirement for CXCR3 signalling during tumoricidal T-cell trafficking across tumour vascular checkpoints.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26109379/"
+        },
+        {
+          "label": "Matrix architecture defines the preferential localization and migration of T cells into the stroma of human lung tumors.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22293174/"
+        },
+        {
+          "label": "TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29443960/"
+        },
+        {
+          "label": "Macrophages impede CD8 T cells from reaching tumor cells and limit the efficacy of anti-PD-1 treatment.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29632196/"
+        },
+        {
+          "label": "Spatial immunophenotypes predict response to anti-PD1 treatment and capture distinct paths of T cell evasion in triple negative breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34580291/"
+        },
+        {
+          "label": "Spatially distinct tumor immune microenvironments stratify triple-negative breast cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30753167/"
+        },
+        {
+          "label": "Intratumoral Activity of the CXCR3 Chemokine System Is Required for the Efficacy of Anti-PD-1 Therapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31097342/"
+        },
+        {
+          "label": "A new paradigm for tumor immune escape: β-catenin-driven immune exclusion.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26380088/"
+        },
+        {
+          "label": "Griffioen et al., endothelial ICAM-1 expression is suppressed in human malignancies (Cancer Research 1996)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8640769/"
+        },
+        {
+          "label": "Piali et al., endothelial VCAM-1 expression is suppressed by melanoma and carcinoma (Journal of Experimental Medicine 1995)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7530765/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cold-vs-hot",
+        "immune-desert-exclusion",
+        "cancer-associated-fibroblasts",
+        "tumor-associated-macrophages",
+        "extracellular-matrix"
+      ],
+      "cancers": [
+        "pancreatic"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "fap",
+        "vegf",
+        "cxcr3"
+      ],
+      "drugs": [
+        "retlirafusp-alfa",
+        "ficerafusp-alfa"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "tgf-beta",
+        "tumor-microenvironment",
+        "pd1-checkpoint"
+      ],
+      "terms": [
+        "cold-vs-hot",
+        "tils"
+      ],
+      "trials": [
+        "fortifi-hn01",
+        "nct04950322",
+        "nct05300269",
+        "nct05503888",
+        "nct05671822",
+        "nct06679673",
+        "nct07102901",
+        "nct07175220",
+        "nct07478731",
+        "nct07503639",
+        "nct07728019",
+        "nct07752550",
+        "nct07773363",
+        "nct07797244",
+        "nct07802184",
+        "nct07807163",
+        "nct07814859",
+        "nct07815288"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-feig-cxcl12-fap-cafs-t-cell-exclusion-pnas-2013",
+        "paper-balachandran-neoantigen-quality-long-term-survivors-nature-2017",
+        "paper-mariathasan-nature"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Harlin found six chemokines, including CCL5, CXCL9 and CXCL10, preferentially in T-cell-containing human melanoma metastases, with supporting migration experiments. In melanoma models, Mikucki found that CXCR3 supported intravascular arrest and extravasation of transferred CD8 effectors. These findings identify defined recruitment and vascular dependencies, not a universal explanation for every abnormal vessel. Spranger’s human melanoma association and mouse experiments connected tumour WNT/beta-catenin activity with deficient dendritic-cell recruitment and absent T-cell infiltration, a desert-like problem rather than necessarily an excluded rim. In their 2015 commentary on the mouse experiments, Spranger and Gajewski describe reduced CCL4 expression and failed recruitment of Batf3-lineage dendritic cells. This is a defined melanoma mechanism, not a universal explanation for every excluded tissue pattern.",
+        "In viable human lung-tumour slices, Salmon observed better T-cell movement in loose matrix, restricted movement in dense aligned matrix and increased cancer-cell contact after collagenase. Mariathasan associated stromal fibroblast TGF-beta signalling, exclusion and atezolizumab non-response in metastatic urothelial cancer; combined TGF-beta and PD-L1 blockade improved penetration and regression in mice. Peranzoni linked long macrophage-CD8 contacts and poor motility to exclusion in human lung squamous cancers, then used macrophage-directed treatment in mice to improve tumour-islet access. None of these model interventions establishes a beneficial breast-cancer regimen.",
+        "Hammerl’s spatial analysis of 681 TNBCs distinguished excluded, ignored and inflamed groups. Excluded samples showed collagen-10 deposits and TGF-beta/VEGF programmes; ignored samples showed either dense CD163-positive myeloid cells or WNT/PPAR-gamma programmes. Inflamed samples had more CLEC9A-positive dendritic cells, a population association rather than a direct measurement of successful priming. The classifier also associated with anti-PD-1 response in a metastatic-TNBC phase-II trial. Gruosso separately associated stroma-restricted CD8 cells and stromal PD-L1 with poorer outcome. These associations do not prove the observed barrier caused resistance or that its removal helps a particular patient.",
+        "A chemokine can matter after entry. Chow found that CXCR3 and dendritic-cell-derived CXCL9 were required for productive anti-PD-1 responses in tumour-bearing mice but were not required for initial CD8 infiltration. This is different from Mikucki’s transferred-cell vascular-trafficking experiment. Name the tested step, model, stimulus and endpoint before treating the two studies as the same claim.",
+        "Multiplex imaging can separately count CD8 cells in stroma and malignant nests and measure distances. Bulk chemokine, fibroblast or TGF-beta RNA programmes lose direct location. A high stromal TIL area score can therefore coexist with exclusion. In a fictional comparison, collagen-rich stroma with peripheral CD8 cells and high TGF-beta suggests a different access question from sparse T cells with low recruiting chemokines. Both remain hypotheses requiring appropriate measurements and functional controls, rather than diagnoses from one image.",
+        "Feig’s pancreatic mouse model found T cells outside cancer-cell regions coated with CAF-derived CXCL12; fibroblast depletion or CXCR4 blockade improved access and revealed checkpoint-antibody activity in that model. Separately, Balachandran’s human pancreatic-cancer study associated combined neoantigen and CD8 features with long survival, detected relevant T-cell reactivity and observed selective loss of high-quality neoantigenic clones during metastatic progression. Those findings do not show that every long-term survivor overcame one specific physical exclusion barrier.",
+        "A common blood-borne effector route separates recruitment from vessel entry, movement through stroma and contact with relevant cancer cells. Rolling, firm adhesion and passage across vessel lining are distinct steps; in the melanoma transfer models, CXCR3 loss impaired firm arrest and extravasation without preventing initial rolling. This does not establish the itinerary or chemokine dependence of every resident T cell. A cell can inspect peptide-HLA on other cells along the way, so entering a cancer-cell nest is not the first possible recognition event.",
+        "Two fictional biopsies pose different access questions. A has CD8 cells in collagen-dense stroma, few in malignant nests and a high TGF-beta signature. B has few T cells and low CXCL9/CXCL10. These suggest tests of access, recruitment and priming; neither diagnoses the cause or shows that loosening matrix will help one and cannot help the other. Even a 40% stromal TIL score can coexist with few CD8 cells in nests, because eligible stromal area and intranest CD8 counts have different denominators.",
+        "Reduced endothelial adhesion molecules have been measured in defined tumour settings. Griffioen and colleagues found lower vascular ICAM-1 in renal-cell carcinoma than in healthy-tissue endothelial comparators. In cultured endothelial cells, basic fibroblast growth factor first increased and later decreased ICAM-1, with corresponding changes in leukocyte adhesion. Piali and colleagues reported reduced VCAM-1 on vessels within mouse lung melanoma metastases and examined human lung tumours; melanoma co-culture also suppressed endothelial VCAM-1 expression and transcription. These studies support a candidate vascular entry barrier, not its frequency in every cancer or a universal effect of angiogenic factors. A leaky-looking vessel or sparse T-cell image does not measure ICAM-1 or VCAM-1, establish why cells are absent or show that restoring adhesion improves a clinical outcome."
+      ],
+      "category": "Cancer biology"
+    }
+  ]
+}

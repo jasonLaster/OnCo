@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [normal-tissue, germ-cell and vascular source followup](normal-tissue-vascular-clauses-2026-11-13/README.md) reads three later-only guides (31,409 bytes, 34 section signatures) and maps seven followup clauses to four already-counted obligations. Four existing owners gain five qualified teaching paragraphs and seven source links. Ten complete raw abstracts and four targeted OCR spans retain actual reading depth. Nine anchors, four actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. Four later obligations and one draft source representation close. Normal pathway function, HLA-I non-detection in selected germ cells and reduced endothelial adhesion molecules remain tied to the actual experiment, tissue and assay. Other source-open clauses, assets and adjacent/schema work keep the goal active; no original grade, new id, main/live or independent approval is added.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 519 | 6,813 / 6,827 | 14 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 528 | 7,282 / 7,302 | 20 |
+
+Original assets remain 625 teaching, 75 support and 1,188 unclassified. Later assets remain 624 teaching, 75 support and 1,189 unclassified. Each pin retains 1,888 assets. The graph remains at 23,091 records. The 697 selected canonical ids, reader observations and language slots are not authorship or approval. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical original-overview checkpoint
+
 The [original-overview closure](original-overview-closure-2026-11-13/README.md) re-reads four complete original-pin pages (21,964 bytes, 24 section signatures) and maps 28 followup clauses to seven already-counted obligations. The draft already carries most teaching. One existing report-card note gains the fictional one-region biopsy, compatible comparison and research-versus-treatment context; its older NCI provenance denial is corrected. Two full abstracts, 21 selected official blocks and inherited source depths remain explicit. Forty-one field anchors, eighteen actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. Seven original obligations and four source representations close in the draft. The four same paths are absent at the later pin, so its denominator and grades do not change. No asset classification, new id, main/live or independent approval is added.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

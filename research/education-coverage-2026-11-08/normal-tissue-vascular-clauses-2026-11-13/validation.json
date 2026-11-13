@@ -1,0 +1,602 @@
+{
+  "dataCommit": "4a99a1c097b1b06627fc2c1a16059ce0b5f367eb",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.16
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.46
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.08
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 311.25
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "4a99a1c097b1b06627fc2c1a16059ce0b5f367eb",
+    "graphCount": 23091,
+    "changedIds": [
+      "immune-exclusion",
+      "notch",
+      "tumor-associated-antigen",
+      "wnt"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "allSelectedRecordsMatchActualReaders": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "graphCount": 23091,
+    "changedIds": [
+      "immune-exclusion",
+      "notch",
+      "tumor-associated-antigen",
+      "wnt"
+    ],
+    "unchangedRecords": 23087,
+    "changedFields": 12,
+    "appendedNotes": 5,
+    "appendedSourceLinks": 7,
+    "dateChanges": 4,
+    "newIds": 0,
+    "newRegistrations": 0,
+    "newRelations": 0,
+    "oldNotesAndOrderPreserved": true,
+    "oldLinksPreserved": true,
+    "nestedGraphNodesUnchanged": true,
+    "allRenderedRecordsEqualCurrentGraph": true,
+    "dataFiles": [
+      {
+        "file": "src/data/education-parallel-antigen-antibodies-2026-11.ts",
+        "class": "data",
+        "sha256": "0f225620c7f6532846ede237f34afd46a3b406354d81bc5fb47bee23dd0cc36f"
+      },
+      {
+        "file": "src/data/mechanisms.ts",
+        "class": "data",
+        "sha256": "436587eaf29af6fd4de8e0e33518ef25b9c46e075af18570f3a71ee9142b749f"
+      },
+      {
+        "file": "src/data/pathways.ts",
+        "class": "data",
+        "sha256": "726cff83f9460ccc9e6d1ae80375c59e0a35e5f557a985d43845cab36d0f8cf4"
+      }
+    ]
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "notch",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/notch/",
+        "sha256": "95740eb08ba96aab8473e640c401df61588de3897f64975bc1cc41cc1cdbf5be",
+        "bytes": 61139,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "wnt",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/wnt/",
+        "sha256": "cd594a1ef4307a1cd493cb28e452dbd53e0cb1cd164aaa2d65c9033bb820d896",
+        "bytes": 72079,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/tumor-associated-antigen/",
+        "sha256": "d5f443817b3b80683a27623b794d4e47b1af2224b8dfc0ded0d24d0363a3d773",
+        "bytes": 36482,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immune-exclusion",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/immune-exclusion/",
+        "sha256": "3b1d26a1080600dc2e762a0761f87ce90e1cb515eaf03ebebacea20afd6367d5",
+        "bytes": 65307,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "notch:notes:2",
+        "recordId": "notch",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "wnt:notes:2",
+        "recordId": "wnt",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "notch:notes:3",
+        "recordId": "notch",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "wnt:notes:1",
+        "recordId": "wnt",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "tumor-associated-antigen:notes:4",
+        "recordId": "tumor-associated-antigen",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "tumor-associated-antigen:notes:2",
+        "recordId": "tumor-associated-antigen",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "immune-exclusion:notes:8",
+        "recordId": "immune-exclusion",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "immune-exclusion:notes:6",
+        "recordId": "immune-exclusion",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "immune-exclusion:summary",
+        "recordId": "immune-exclusion",
+        "actualEntityDetailContainsExactPassage": true
+      }
+    ],
+    "exactParagraphs": 9,
+    "scope": "Actual EntityDetail SSR text; no browser, hydration, hosted, accessibility or expert acceptance claim."
+  },
+  "staticExports": {
+    "records": 4,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "notch",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-exclusion",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "notch.json",
+        "bytes": 11615,
+        "sha256": "8a2d95216b7b76191eb4c32e1bb441fdddd4c6f2984102cfe37c3fab17505368"
+      },
+      {
+        "file": "notch.md",
+        "bytes": 9274,
+        "sha256": "63d2e7213d330ffc9d3ee33643091db077f6ee8dc343f40602e3afbdaabbbc04"
+      },
+      {
+        "file": "wnt.json",
+        "bytes": 18181,
+        "sha256": "75e30af905727d598a23475cd6b28b287049fd4aa2271d5272e038fb5fa24873"
+      },
+      {
+        "file": "wnt.md",
+        "bytes": 13521,
+        "sha256": "b51122d4fcc5a205af41312b8519e89fd586a7028dcd4e929ada879fd1b2ea6a"
+      },
+      {
+        "file": "tumor-associated-antigen.json",
+        "bytes": 7191,
+        "sha256": "14dee774847e4ccdc40c669be96493178474f54a20407d1b325d449bedf3a5d4"
+      },
+      {
+        "file": "tumor-associated-antigen.md",
+        "bytes": 6692,
+        "sha256": "f20653d06693aeeda8fe62dcae2873b7306ae391095cda107fcdc6d1cf3138dc"
+      },
+      {
+        "file": "immune-exclusion.json",
+        "bytes": 18308,
+        "sha256": "13f5c4210c6ae39c62663d4fc93f76c056d8846fa37a95d7804e785c9ad70ae6"
+      },
+      {
+        "file": "immune-exclusion.md",
+        "bytes": 15110,
+        "sha256": "891db81daf1f1c2aaf22791f6714f915165de72726db49debc93b017ec06f2aa"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 36,
+    "texts": 1,
+    "fallbacks": 35,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "notch",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumor-associated-antigen",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-exclusion",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual registered graph, EntityDetail SSR, summary selectors and static JSON/Markdown/OpenAPI/context; full gates on committed data bytes. No Next production build, browser, hydration, hosted, source-pixel, expert or independent acceptance."
+}

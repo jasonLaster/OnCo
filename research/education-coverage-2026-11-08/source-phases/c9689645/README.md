@@ -1,6 +1,8 @@
 # Later curriculum census
 
-This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 545 assessed teaching sources and five routing dispositions, with 527 representations in draft fields or proposals. Of 7,302 assessed representation points, 7,278 have field evidence and 24 remain open across eighteen assessed pages. No ordinary later source remains unreviewed. Source-open clauses, assets and adjacent/schema dependencies still prevent completion. Overlapping inventories are not added.
+This phase pins Guide c96896452386202405c435aa161bc5047919337a and retains all 550 sources separately from the original. It has 545 assessed teaching sources and five routing dispositions, with 528 representations in draft fields or proposals. Of 7,302 assessed representation points, 7,282 have field evidence and 20 remain open across seventeen assessed pages. No ordinary later source remains unreviewed. Source-open clauses, assets and adjacent/schema dependencies still prevent completion. Overlapping inventories are not added.
+
+The [normal-tissue and vascular followup](../../normal-tissue-vascular-clauses-2026-11-13/README.md) closes four later obligations at supported qualified scope. All 34 section signatures reproduce, and the three same paths are absent at the original pin. Ten abstracts and four targeted OCR spans retain their actual depth; no full paper or new visual view is claimed. Correction notices and unbounded approval-inventory clauses remain open.
 
 The [original-overview followup](../../original-overview-closure-2026-11-13/README.md) closes seven original-pin obligations only. Its four source paths do not exist at this later pin; this inventory gains no point or grade. The current-root notes hash is rebound only where an earlier excerpt remains exact, preserving source depth.
 

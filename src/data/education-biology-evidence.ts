@@ -16,7 +16,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "notes": [
       "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
       "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
-      "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain."
+      "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+      "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
     ],
     "links": [
       {
@@ -486,7 +487,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "tldr": "DNA copying, making RNA and making a protein are different processes. Following the route helps identify what each molecular test actually measured.",
     "summary": "Replication makes DNA from DNA. Transcription uses a DNA template to make RNA. Translation reads the coding sequence of a message in three-base codons to build a polypeptide; the transcript and reading frame matter. Functional noncoding RNAs do not need to become protein. Reverse transcription copies RNA into DNA in relevant viral and retrotransposon contexts. This information-flow map is not a guarantee that every DNA change produces a measured RNA or protein change.",
     "notes": [
-      "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect."
+      "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
+      "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface."
     ],
     "links": [
       {
@@ -515,7 +517,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "nonsense-mediated-decay"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   }
 ,

@@ -56,7 +56,7 @@ export const breastPathologyEducationTerms: TermInput[] = [
   {
     "id": "lymphatic-drainage-and-axilla",
     "kind": "term",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-13",
     "name": "Breast lymphatic drainage and the axilla",
     "tldr": "Breast lymphatics carry fluid to regional nodes through variable routes, including the axilla and internal mammary chain.",
     "summary": "A drainage territory and a sampled node are different things. Anatomical location helps interpret the evidence, but imaging and tissue examination have different roles and limitations. A nodal result applies to the assessed region and method.",
@@ -69,7 +69,8 @@ export const breastPathologyEducationTerms: TermInput[] = [
       "Axillary levels are locations relative to pectoralis minor: level I is lateral to its lateral border, level II between its borders, and level III medial to its medial border and below the clavicle. Levels are neither overall stages nor proof of involvement.",
       "Keep axillary, intramammary and internal mammary locations distinct. Intramammary nodes are grouped with axillary nodes for breast N staging; ipsilateral internal mammary nodes belong to a separate regional chain. Regional N involvement, including extranodal extension, does not alone establish distant M disease.",
       "Tracer mapping identifies particular draining nodes under the procedure's conditions; an anatomical sketch cannot substitute for mapping. Preserve the sampled region, side, procedure, treatment timing and pathological result. Negative examined axillary nodes do not resolve an indeterminate internal mammary image or survey all regional nodes.",
-      "The axilla is the armpit. Superficial and deeper lymphatic routes vary; a map omits many vessels and node groups. It assigns neither a personal first draining node nor a stage. Disease, prior surgery and treatment can affect procedural mapping, so drawn routes cannot replace the actual mapping and pathological record."
+      "The axilla is the armpit. Superficial and deeper lymphatic routes vary; a map omits many vessels and node groups. It assigns neither a personal first draining node nor a stage. Disease, prior surgery and treatment can affect procedural mapping, so drawn routes cannot replace the actual mapping and pathological record.",
+      "In an illustrative front view of the left breast, the sternum lies toward the midline and the axilla toward the side. An intramammary node is shown within breast tissue. Branching dashed routes represent possible lymph flow, without a compulsory sequence through axillary levels I, II and III. A chosen node icon has no assigned sentinel, sampled or tumour-positive status. Tracer mapping identifies procedural sentinels; the sampling and pathology records establish what was removed and what it contained."
     ],
     "links": [
       {

@@ -1,0 +1,54 @@
+{
+  "algorithm": "sha256",
+  "captures": [
+    {
+      "file": "official/nci-biomarkers.html",
+      "url": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
+      "finalUrl": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
+      "status": 200,
+      "bytes": 65367,
+      "sha256": "ab4531335fd9759f02a3b701dcaee32d1614606edd5b480679605a3d08d54aa5"
+    },
+    {
+      "file": "official/nhgri-transcriptome.html",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Transcriptome-Fact-Sheet",
+      "finalUrl": "https://www.genome.gov/about-genomics/fact-sheets/Transcriptome-Fact-Sheet",
+      "status": 200,
+      "bytes": 206520,
+      "sha256": "36b238f618892f3f800ac6498049a60ee181e75daea0106e708297d759ee4db7"
+    },
+    {
+      "file": "registry/epmc-zheng.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fncomms14049%22&format=json&resultType=core",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fncomms14049%22&format=json&resultType=core",
+      "status": 200,
+      "bytes": 13915,
+      "sha256": "8f50412c364b502ee63df9b30b8731ba7f4863ad32cca40f1a6f3bd16ce27e46"
+    },
+    {
+      "file": "registry/crossref-zheng.json",
+      "url": "https://api.crossref.org/works/10.1038%2Fncomms14049",
+      "finalUrl": "https://api.crossref.org/works/10.1038%2Fncomms14049",
+      "status": 200,
+      "bytes": 22962,
+      "sha256": "b79402e04451f86f15fb9d9db5cf1000768ea2c5183ce5cfeba7c505f09e695e"
+    },
+    {
+      "file": "registry/epmc-klionsky.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A33634751%20AND%20SRC%3AMED&format=json&resultType=core",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A33634751%20AND%20SRC%3AMED&format=json&resultType=core",
+      "status": 200,
+      "bytes": 967450,
+      "sha256": "51ecdc7c710ada438eb4c0d074a68d3e637440b17cfd51d2df366c225d07720b"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7996087/fullTextXML",
+      "failure": "HTTP Error 500: "
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7996087/unicode",
+      "failure": "HTTP Error 429: Too Many Requests"
+    }
+  ],
+  "rawBodiesPrivate": true
+}

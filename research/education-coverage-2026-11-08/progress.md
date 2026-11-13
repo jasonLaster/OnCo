@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [original-overview closure](original-overview-closure-2026-11-13/README.md) re-reads four complete original-pin pages (21,964 bytes, 24 section signatures) and maps 28 followup clauses to seven already-counted obligations. The draft already carries most teaching. One existing report-card note gains the fictional one-region biopsy, compatible comparison and research-versus-treatment context; its older NCI provenance denial is corrected. Two full abstracts, 21 selected official blocks and inherited source depths remain explicit. Forty-one field anchors, eighteen actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. Seven original obligations and four source representations close in the draft. The four same paths are absent at the later pin, so its denominator and grades do not change. No asset classification, new id, main/live or independent approval is added.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 519 | 6,813 / 6,827 | 14 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 527 | 7,278 / 7,302 | 24 |
+
+Original assets remain 625 teaching, 75 support and 1,188 unclassified. Later assets remain 624 teaching, 75 support and 1,189 unclassified. Each pin retains 1,888 assets. The graph remains at 23,091 records. The 697 selected canonical ids, reader observations and language slots are not authorship or approval. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical third authoring-body checkpoint
+
 The [third scientific/custody-body assessment](scientific-authoring-bodies-03-2026-11-13/README.md) reads twenty complete bodies (43,815 unique bytes) and verifies forty pinned entries. Eighteen contain scientific construction, corrections, tasks or captions; two contain custody/source-lookup attestations without a substantive biological proposition. The frozen inventory keeps 48 distinct requirements in 118 body associations. Six existing owners gain seven paragraphs about transcript context, model confidence, binding/catalysis, response curves, branched relays and PD-1 contact. Ten complete abstracts, 36 selected official blocks and five curated annotation objects retain actual depth. Twenty-six anchors, eight actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. All committed data and graph fingerprints match the gate inputs. Earlier notes, links and order remain; 104 active notes-array proofs are rebound without changing grades or depth. The broader source/asset/schema audit remains active, with no main/live or independent approval.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

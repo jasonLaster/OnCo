@@ -1,0 +1,588 @@
+{
+  "frozenInventory": {
+    "sha256": "0fb7745f358210b0aaacca00df9a76ed08982a28a72b6c418abbccd376b87bf3",
+    "baseCommit": "3fc5287ab313d3df8b49480b6a4deb48b11821f3",
+    "atomicClauses": 28,
+    "aggregatePoints": 7,
+    "beforeCurrentOwnerRead": true,
+    "priorContextKnown": true
+  },
+  "requirements": [
+    {
+      "id": "flux-amount",
+      "sourceIndex": 0,
+      "originalPointId": "flux-dependence-and-clinical-bridge",
+      "requirement": "Keep material amount, ongoing flux and survival dependence separate, including whether the direction of the finding was tested.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "autophagy:notes:5",
+        "autophagy:notes:8",
+        "ubiquitin-proteasome-system:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Cargo/flux, viable-cell survival and protein-loss alternatives are explicitly different measurements; the fictional bag example keeps direction and dependency separate.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "flux-controls",
+      "sourceIndex": 0,
+      "originalPointId": "flux-dependence-and-clinical-bridge",
+      "requirement": "Use perturbation and controls to distinguish mechanisms; a coherent pathway experiment does not establish patient benefit.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "pathway-activation-state:notes:0",
+        "autophagy:notes:10",
+        "analytical-vs-clinical-validation:notes:0"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Controlled perturbations, independent genes and restoration address a defined mechanism; the claim worksheet explicitly separates those tests from a proposed clinical action and evidence of benefit.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-dna",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "DNA coverage/detection of sequence or copy changes does not establish downstream consequence.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "ngs:notes:2",
+        "ngs:notes:10",
+        "analytical-vs-clinical-validation:notes:0"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Exact coordinates and alteration classes determine coverage; usable evidence is not the downstream biological interpretation or benefit.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-rna",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Captured messages/transcript forms and their cell source depend on mixture, preparation and background.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "bulk-rna-seq:summary",
+        "bulk-rna-seq:notes:5",
+        "bulk-rna-seq:notes:10"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Captured mixed messages and transcript forms retain cell mixture, preparation, normalization and assay limitations rather than becoming assigned cancer-cell protein.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-protein",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Protein presence, location and activation are different from survival dependence.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "ihc:summary",
+        "ihc:notes:2",
+        "pathway-activation-state:summary"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The stain identifies selected protein signals and location. Neither abundance nor activity automatically establishes cancer-cell dependence.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-spatial",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "A location measurement alone does not establish immune recognition or killing.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "spatial-transcriptomics:notes:0",
+        "spatial-transcriptomics:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Coordinates, selected regions and cell-boundary assignments remain explicit; a neighbourhood is not demonstrated recognition or benefit.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-functional",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "A response under a defined model perturbation may not transfer to the clinical setting.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "functional-drug-testing:summary",
+        "functional-drug-testing:notes:0",
+        "functional-drug-testing:notes:1"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The specified living preparation, exposure and controls belong to the experiment; a laboratory concentration is not a safe human dose or transferable clinical benefit.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-blood",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Repeated blood measurements keep sampling, shedding and sensitivity with the detected tumour-derived signal.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "cfdna:summary",
+        "cfdna:notes:0",
+        "cfdna:notes:6"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Tumour attribution and finite sampling remain separate from total yield; assay version, collection time, quality and detection criteria accompany repeated results. Inherited cohort percentages are not newly verified by this followup.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-bridge",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Mechanism, clinical benefit and eligibility require distinct evidence; agreement is not automatically drug response.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "analytical-vs-clinical-validation:notes:0",
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The measured/inferred/proposed chain separates mechanism, clinical benefit and the actual treatment setting and eligibility.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "objects-status",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "An observed layer, a model inference and an interpreted conclusion are different measured objects/claims.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "analytical-vs-clinical-validation:notes:0",
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Measured, inferred, proposed, unknown and model-predicted evidence receive explicit labels rather than one undifferentiated confidence claim.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "pseudo-assignment",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "Epithelial describes a family that includes normal cells; malignant assignment requires additional evidence.",
+      "claimType": "measurement-context",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "epithelium-and-stroma:summary",
+        "epithelium-and-stroma:notes:1",
+        "cell-lineage-and-state:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Epithelial includes normal cells; marker-defined compartment, malignant assignment and tissue invasion require additional context rather than a cell-family name alone.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "pseudo-pooling",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "Computational pseudobulk pools counts from a selected cell group; preserve the group, denominator, normalization and reference comparison.",
+      "claimType": "assay-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "single-cell-rna-seq:notes:10",
+        "bulk-rna-seq:notes:1",
+        "epithelium-and-stroma:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Pseudobulk explicitly pools counts from selected profiles. The count/normalization denominator and normal reference comparison are retained across the linked explanations; 500 nuclei remain one biological specimen.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "pseudo-inference",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "A luminal-progenitor-like RNA program is a reference resemblance, not proof of developmental origin or a clinical receptor category.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "cell-lineage-and-state:notes:1"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The luminal-progenitor resemblance supports a candidate population in the named study, not direct ancestry of an individual tumour or hormone-receptor-positive classification.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "card-input",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Record collection site/time, treatment context and analyzed cells/material; core and resection sample different amounts/arrangements.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5",
+        "core-needle-biopsy:notes:2",
+        "core-needle-biopsy:summary",
+        "surgical-resection-specimen:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Specimen/site/region/date/treatment and represented material are retained. Local cylinders preserve sampled architecture; a larger mapped resection still does not examine every cell.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "card-units",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Keep molecular object, units, assay version and threshold beside the value.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5",
+        "bulk-rna-seq:notes:10",
+        "ngs:notes:10"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Object, units, version, actual coordinates and validated limits accompany the reading; a category name or adjective supplies no universal threshold.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "card-preparation",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Preparation, accepted input, tissue consumption and sample attribution constrain valid comparison.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "functional-drug-testing:notes:0",
+        "spatial-transcriptomics:notes:0",
+        "core-needle-biopsy:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Compatible living/fixed/frozen input, handling, finite tissue consumption and represented cells constrain the method and comparison.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "axes-object",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "DNA/RNA/protein layer and cell/spatial resolution are different axes, including mixed tissue versus recovered cells/nuclei and regions.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:3",
+        "single-cell-rna-seq:notes:10",
+        "spatial-transcriptomics:notes:0"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Molecular collection and spatial/cellular unit are explicitly separate axes; pooled tissue, selected profiles and positional barcodes retain their units.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "axes-location",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "Adding location at a stated resolution does not automatically add a protein or functional measurement.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5",
+        "spatial-transcriptomics:notes:1"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The 500-target example adds location but remains RNA; the fictional molecule coordinates are not added protein or function.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "axes-limits",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "Resolution, coverage and detection sensitivity are distinct limits; a detailed map is not a complete inventory.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "ngs:notes:10",
+        "spatial-transcriptomics:notes:0",
+        "multi-omic-integration:notes:3"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Local depth/coverage, selected probes, assignment and resolution are separate limits. An omics or spatial label is not a complete molecular inventory.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "status-labels",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Distinguish signed clinical findings, preliminary results, research observations, model predictions and interpreted claims with validation and uncertainty.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5",
+        "analytical-vs-clinical-validation:notes:0"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Signed clinical, preliminary, research, model-predicted, measured and inferred states are explicitly distinguished; unavailable details remain unknown.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "status-comparison",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Name controls/reference/normalization or prior timepoint and check preparation/sample compatibility.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "bulk-rna-seq:notes:1",
+        "bulk-rna-seq:notes:10",
+        "multi-omic-integration:summary"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Normalization and denominators, preparation and matched specimen/time are part of comparison; copied reports and separate cohorts do not become independent paired observations.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "status-unknown",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Preserve coverage, detection/sampling limits and the unmeasured bridge; image-predicted RNA is not directly measured RNA.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "spatial-transcriptomics:summary",
+        "multi-omic-integration:notes:0",
+        "ngs:notes:11"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Imputed spatial values remain model outputs, and coverage, input, sensitivity, controls and missing causal/clinical bridges remain named.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "status-decision",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Name the actual decision, relevant validated biomarker-treatment connection, setting and eligibility rather than infer a treatment from mechanism.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "analytical-vs-clinical-validation:notes:0",
+        "analytical-vs-clinical-validation:notes:4",
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The worksheet starts with the actual decision and clinical setting, while the extended example names validated linkage, setting and eligibility as separate requirements.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "worked-sample",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "The invented example is one pretreatment breast-biopsy region with normal/malignant mixture, geneR bulk RNA and normalized comparison units; it does not sample another site.",
+      "claimType": "fictional-premise",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The added fictional context now specifies one pretreatment breast-biopsy region containing normal and malignant neighbours, no other sampled site and normalized RNA against a compatible reference.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "worked-missing",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "Unresolved RNA cell origin and absent malignant-cell membrane-protein measurement leave accessible target, normal-tissue selectivity and dependence open.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5",
+        "ihc:notes:2"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The contributing cells and accessible protein remain unresolved; selectivity, dependence and benefit are not supplied by bulk RNA or a generic stain.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "worked-comparison",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "High belongs to the stated compatible reference/normalization; a further broad RNA result need not answer the missing location question.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "The high label belongs to the specified reference and scale. Another broad RNA profile need not resolve the missing location measurement.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "worked-decision",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "Keep the six-question chain specimen, measurement, evidence status, comparison, limit and decision, distinguishing a research followup from validated treatment eligibility.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:notes:5"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "All six report questions are together, and a research followup is distinguished from treatment eligibility in the actual clinical setting.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    },
+    {
+      "id": "worked-prediction",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "A gene signal predicted from a tissue image remains a model prediction with validation/uncertainty, not directly assayed RNA.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-in-registered-local-draft",
+      "anchorIds": [
+        "multi-omic-integration:summary",
+        "spatial-transcriptomics:summary",
+        "analytical-vs-clinical-validation:notes:0"
+      ],
+      "semanticAssessment": {
+        "completeForThisAtomicClause": true,
+        "explanation": "Image-imputed RNA is explicitly labelled an estimate/model output with a version, intended task and validation context, rather than extra detected RNA molecules.",
+        "sourceScope": "Generic measurement/reading principle or explicitly fictional inference. Prior empirical examples retain the exact evidence depth in the cited inherited packets; fresh official paragraphs and Zheng abstract do not newly verify all retained owner claims.",
+        "independentAcceptance": false
+      },
+      "remaining": []
+    }
+  ],
+  "denominatorBoundary": "28 followup clauses support seven already-counted original obligations. Original 6827 and later 7302 denominators are unchanged."
+}

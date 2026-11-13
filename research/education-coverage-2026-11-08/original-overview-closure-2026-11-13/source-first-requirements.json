@@ -1,0 +1,242 @@
+{
+  "scope": "Manual atomic reading inventory after complete reading of four original-pin overviews and before this followup current-owner reads. Earlier project context is known; not a blind review. These28clauses support seven existing aggregate points, not a replacement/addition to the original6827-point denominator.",
+  "baseCommit": "3fc5287ab313d3df8b49480b6a4deb48b11821f3",
+  "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+  "atomicClauses": 28,
+  "aggregatePointIds": [
+    "flux-dependence-and-clinical-bridge",
+    "assay-objects-and-limits",
+    "pseudobulk-and-reference",
+    "specimen-and-measurement-card",
+    "molecular-layer-versus-resolution",
+    "evidence-status-comparison-and-decision",
+    "bulk-rna-worked-interpretation"
+  ],
+  "requirements": [
+    {
+      "id": "flux-amount",
+      "sourceIndex": 0,
+      "originalPointId": "flux-dependence-and-clinical-bridge",
+      "requirement": "Keep material amount, ongoing flux and survival dependence separate, including whether the direction of the finding was tested.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "flux-controls",
+      "sourceIndex": 0,
+      "originalPointId": "flux-dependence-and-clinical-bridge",
+      "requirement": "Use perturbation and controls to distinguish mechanisms; a coherent pathway experiment does not establish patient benefit.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-dna",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "DNA coverage/detection of sequence or copy changes does not establish downstream consequence.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-rna",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Captured messages/transcript forms and their cell source depend on mixture, preparation and background.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-protein",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Protein presence, location and activation are different from survival dependence.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-spatial",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "A location measurement alone does not establish immune recognition or killing.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-functional",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "A response under a defined model perturbation may not transfer to the clinical setting.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-blood",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Repeated blood measurements keep sampling, shedding and sensitivity with the detected tumour-derived signal.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-bridge",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "Mechanism, clinical benefit and eligibility require distinct evidence; agreement is not automatically drug response.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "objects-status",
+      "sourceIndex": 1,
+      "originalPointId": "assay-objects-and-limits",
+      "requirement": "An observed layer, a model inference and an interpreted conclusion are different measured objects/claims.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "pseudo-assignment",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "Epithelial describes a family that includes normal cells; malignant assignment requires additional evidence.",
+      "claimType": "measurement-context",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "pseudo-pooling",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "Computational pseudobulk pools counts from a selected cell group; preserve the group, denominator, normalization and reference comparison.",
+      "claimType": "assay-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "pseudo-inference",
+      "sourceIndex": 2,
+      "originalPointId": "pseudobulk-and-reference",
+      "requirement": "A luminal-progenitor-like RNA program is a reference resemblance, not proof of developmental origin or a clinical receptor category.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "card-input",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Record collection site/time, treatment context and analyzed cells/material; core and resection sample different amounts/arrangements.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "card-units",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Keep molecular object, units, assay version and threshold beside the value.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "card-preparation",
+      "sourceIndex": 3,
+      "originalPointId": "specimen-and-measurement-card",
+      "requirement": "Preparation, accepted input, tissue consumption and sample attribution constrain valid comparison.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "axes-object",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "DNA/RNA/protein layer and cell/spatial resolution are different axes, including mixed tissue versus recovered cells/nuclei and regions.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "axes-location",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "Adding location at a stated resolution does not automatically add a protein or functional measurement.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "axes-limits",
+      "sourceIndex": 3,
+      "originalPointId": "molecular-layer-versus-resolution",
+      "requirement": "Resolution, coverage and detection sensitivity are distinct limits; a detailed map is not a complete inventory.",
+      "claimType": "measurement-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "status-labels",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Distinguish signed clinical findings, preliminary results, research observations, model predictions and interpreted claims with validation and uncertainty.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "status-comparison",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Name controls/reference/normalization or prior timepoint and check preparation/sample compatibility.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "status-unknown",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Preserve coverage, detection/sampling limits and the unmeasured bridge; image-predicted RNA is not directly measured RNA.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "status-decision",
+      "sourceIndex": 3,
+      "originalPointId": "evidence-status-comparison-and-decision",
+      "requirement": "Name the actual decision, relevant validated biomarker-treatment connection, setting and eligibility rather than infer a treatment from mechanism.",
+      "claimType": "evidence-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "worked-sample",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "The invented example is one pretreatment breast-biopsy region with normal/malignant mixture, geneR bulk RNA and normalized comparison units; it does not sample another site.",
+      "claimType": "fictional-premise",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "worked-missing",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "Unresolved RNA cell origin and absent malignant-cell membrane-protein measurement leave accessible target, normal-tissue selectivity and dependence open.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "worked-comparison",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "High belongs to the stated compatible reference/normalization; a further broad RNA result need not answer the missing location question.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "worked-decision",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "Keep the six-question chain specimen, measurement, evidence status, comparison, limit and decision, distinguishing a research followup from validated treatment eligibility.",
+      "claimType": "reading-framework",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    },
+    {
+      "id": "worked-prediction",
+      "sourceIndex": 3,
+      "originalPointId": "bulk-rna-worked-interpretation",
+      "requirement": "A gene signal predicted from a tissue image remains a model prediction with validation/uncertainty, not directly assayed RNA.",
+      "claimType": "inference-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed"
+    }
+  ],
+  "exclusions": "Front matter, navigation/directory scaffolding, learning-time estimates, repeated recaps and personal-case routing remain noncredit. No personal-case text, care findings or private destinations are copied into OnCo. Later same-path absence is not global content absence."
+}

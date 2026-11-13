@@ -267,7 +267,8 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
     "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
-    "notes": ["Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.","X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function."],
+    "notes": ["Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.","X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function.",
+      "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity."],
     "links": [{"label":"EMBL-EBI: domains, motifs and disorder","url":"https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"},{"label":"EMBL-EBI: AlphaFold2 confidence measures","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"},{"label":"OpenStax Biology 2e: 3-4-proteins","url":"https://openstax.org/books/biology-2e/pages/3-4-proteins"},{"label":"EMBL-EBI: pLDDT local confidence","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"},{"label":"EMBL-EBI: PAE and relative-region uncertainty","url":"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"},{"label":"RCSB PDB-101: experimental structure methods and their preparation, data and model limits","url":"https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"}],
     "related": [
       "protein",
@@ -275,7 +276,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "binding-affinity-and-kinetics"
     ],
     "kind": "term",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {
@@ -294,7 +295,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "summary": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
     "notes": [
       "For a suitable Michaelis-Menten enzyme model, Km is the substrate concentration at half the maximum initial reaction rate. It depends on the catalytic mechanism and conditions and is not generally Kd. Turnover concerns reaction cycling, not binding strength.",
-      "IC50 is half inhibition of a specified assay response; EC50 describes half of a defined functional response change. Substrate/ATP concentrations, enzyme or receptor amount, timing and assay design affect these measures. A biochemical inhibition value, a cell-growth value and a clinical outcome are separate evidence."
+      "IC50 is half inhibition of a specified assay response; EC50 describes half of a defined functional response change. Substrate/ATP concentrations, enzyme or receptor amount, timing and assay design affect these measures. A biochemical inhibition value, a cell-growth value and a clinical outcome are separate evidence.",
+      "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements."
     ],
     "links": [
       {
@@ -316,7 +318,7 @@ export const educationBiologyEvidence: TermInput[] = [
       {
         "label": "Classroom model and derivation of Michaelis-Menten parameters; not an enzyme experiment",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17146042/"
-      }
+      },{"label":"GraphPad Prism: one-site specific-binding model and equilibrium half-maximum","url":"https://www.graphpad.com/guides/prism/latest/curve-fitting/reg_one_site_specific.htm"}
     ],
     "related": [
       "enzyme",
@@ -327,7 +329,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "receptor-reserve"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {

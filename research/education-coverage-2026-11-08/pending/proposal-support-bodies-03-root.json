@@ -1,0 +1,641 @@
+{
+  "version": "proposal-support-bodies-03-root",
+  "state": "Committed registered local draft-root records in unmerged PR375. Eight selections are not authorship or whole-owner verification; six existing owners gain seven appended notes, six dated-field updates and three appended source links. No new id or registration.",
+  "draft": 375,
+  "committedDataHead": "66acf7a886e1fa46e4f909005f7d8cbcb44d1b1a",
+  "records": [
+    {
+      "id": "gene",
+      "kind": "term",
+      "name": "Gene",
+      "aka": [
+        "genes",
+        "genetic"
+      ],
+      "tldr": "A gene is a DNA region that produces a functional RNA message. Some messages encode proteins; others work as RNA.",
+      "summary": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gene",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gene"
+        },
+        {
+          "label": "NHGRI: Gene",
+          "url": "https://www.genome.gov/genetics-glossary/Gene"
+        },
+        {
+          "label": "NHGRI: Exon",
+          "url": "https://www.genome.gov/genetics-glossary/Exon"
+        },
+        {
+          "label": "NHGRI: Intron",
+          "url": "https://www.genome.gov/genetics-glossary/Intron"
+        },
+        {
+          "label": "HGVS: reference-sequence context",
+          "url": "https://hgvs-nomenclature.org/stable/background/refseq/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "protein",
+        "mutation",
+        "oncogene",
+        "tumour-suppressor-gene",
+        "gene-expression",
+        "rna",
+        "rna-splicing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Preserve the reference sequence, accession and version when describing a variant consequence. DNA sequencing, gene-level RNA counts and protein assays measure different objects; a pooled count does not establish every isoform or an intact active protein. Gene and protein names are often shared, so identify which molecule an assay or drug claim concerns.",
+        "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "protein-structure-and-domains",
+      "kind": "term",
+      "name": "Protein structure, domains and model confidence",
+      "aka": [
+        "protein structure",
+        "protein domain",
+        "protein motif",
+        "protein interface",
+        "intrinsically disordered region",
+        "pLDDT",
+        "predicted aligned error",
+        "PAE"
+      ],
+      "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
+      "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "EMBL-EBI: domains, motifs and disorder",
+          "url": "https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"
+        },
+        {
+          "label": "EMBL-EBI: AlphaFold2 confidence measures",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 3-4-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
+        },
+        {
+          "label": "EMBL-EBI: pLDDT local confidence",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"
+        },
+        {
+          "label": "EMBL-EBI: PAE and relative-region uncertainty",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"
+        },
+        {
+          "label": "RCSB PDB-101: experimental structure methods and their preparation, data and model limits",
+          "url": "https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "protein",
+        "structural-biology-infrastructure",
+        "binding-affinity-and-kinetics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+        "X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function.",
+        "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "binding-affinity-and-kinetics",
+      "kind": "term",
+      "name": "Binding affinity, occupancy and enzyme kinetics",
+      "aka": [
+        "binding affinity",
+        "dissociation constant",
+        "Kd",
+        "receptor occupancy",
+        "Michaelis constant",
+        "Km",
+        "enzyme turnover"
+      ],
+      "tldr": "Binding strength, the fraction of sites occupied and the speed of a reaction describe different things. Each measurement needs its experimental conditions.",
+      "summary": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "A guide to simple, direct, and quantitative in vitro binding assays.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31453222/"
+        },
+        {
+          "label": "Operational models of pharmacological agonism.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6141562/"
+        },
+        {
+          "label": "IUPAC: affinity and pharmacological efficacy",
+          "url": "https://iupac.qmul.ac.uk/medchem/ah.html"
+        },
+        {
+          "label": "OpenStax Biology 2e: 6-5-enzymes",
+          "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+        },
+        {
+          "label": "Classroom model and derivation of Michaelis-Menten parameters; not an enzyme experiment",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17146042/"
+        },
+        {
+          "label": "GraphPad Prism: one-site specific-binding model and equilibrium half-maximum",
+          "url": "https://www.graphpad.com/guides/prism/latest/curve-fitting/reg_one_site_specific.htm"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "enzyme",
+        "ligand",
+        "receptor",
+        "agonist-antagonist",
+        "drug-response-sensitivity",
+        "receptor-reserve"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "For a suitable Michaelis-Menten enzyme model, Km is the substrate concentration at half the maximum initial reaction rate. It depends on the catalytic mechanism and conditions and is not generally Kd. Turnover concerns reaction cycling, not binding strength.",
+        "IC50 is half inhibition of a specified assay response; EC50 describes half of a defined functional response change. Substrate/ATP concentrations, enzyme or receptor amount, timing and assay design affect these measures. A biochemical inhibition value, a cell-growth value and a clinical outcome are separate evidence.",
+        "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "enzyme",
+      "kind": "term",
+      "name": "Enzyme",
+      "aka": [
+        "enzymes",
+        "enzymatic"
+      ],
+      "tldr": "An enzyme speeds a chemical reaction and is reused through its reaction cycle. Binding to an enzyme does not by itself show that the reaction or a cell response changed.",
+      "summary": "Catalysis lowers a reaction’s activation barrier without supplying an unlimited energy source. Most familiar enzymes are proteins, while some RNAs also catalyze reactions. Active-site interactions help chemistry; other binding sites can regulate activity. Binding, catalytic rate, substrate preference and activity in a cell are different properties. An inhibitor can act through the active site or another mechanism, and turnover rates are not one universal number.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Enzyme",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Enzyme"
+        },
+        {
+          "label": "OpenStax Biology 2e: 6-5-enzymes",
+          "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+        },
+        {
+          "label": "A guide to simple, direct, and quantitative in vitro binding assays.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31453222/"
+        },
+        {
+          "label": "NHGRI: catalytic ribosomal RNA",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "protein",
+        "kinase",
+        "inhibitor",
+        "phosphorylation",
+        "binding-affinity-and-kinetics",
+        "drug-response-sensitivity"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "topoisomerase-inhibitors"
+      ],
+      "targets": [
+        "parp"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Affinity, specificity, Kd, Km and assay IC50 answer distinct questions. Report the model, free concentrations, substrates, cofactors and timing. Kinases, PARP and topoisomerases illustrate oncology enzyme targets, but binding alone does not establish useful cellular inhibition or patient benefit."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "agonist-antagonist",
+      "kind": "term",
+      "name": "Agonist and antagonist",
+      "aka": [
+        "agonist",
+        "agonists",
+        "antagonist",
+        "antagonists",
+        "receptor agonist",
+        "receptor antagonist",
+        "receptor agonists",
+        "full agonist",
+        "partial agonist",
+        "neutral antagonist",
+        "inverse agonist",
+        "EC50"
+      ],
+      "tldr": "Agonists promote a specified receptor response; antagonists oppose agonist action. The labels depend on the measured system, and strong binding does not necessarily mean strong activation.",
+      "summary": "A full agonist can reach a system’s maximal measured response. A partial agonist has lower activating capacity; its observed maximum depends on receptor amount and amplification and is not defined by giving a smaller dose of a full agonist. Competing partial agonists can reduce a full agonist’s response when they replace it. A neutral antagonist opposes agonist action without changing agonist-independent baseline activity; an inverse agonist reduces that activity when it is measurable. Antagonism need not use the agonist’s binding site.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Agonist",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Agonist"
+        },
+        {
+          "label": "IUPAC: affinity, antagonism and efficacy",
+          "url": "https://iupac.qmul.ac.uk/medchem/ah.html"
+        },
+        {
+          "label": "IUPAC: partial agonism",
+          "url": "https://iupac.qmul.ac.uk/medchem/ix.html"
+        },
+        {
+          "label": "Inverse agonist activity of beta-adrenergic antagonists.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7908406/"
+        },
+        {
+          "label": "Operational models of pharmacological agonism.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6141562/"
+        },
+        {
+          "label": "International Union of Pharmacology Committee on Receptor Nomenclature and Drug Classification. XXXVIII. Update on terms and symbols in quantitative pharmacology.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14657418/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "receptor",
+        "ligand",
+        "inhibitor",
+        "hormone-therapy",
+        "binding-affinity-and-kinetics",
+        "receptor-reserve",
+        "biased-agonism"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "sting-agonist",
+        "endocrine-therapy",
+        "androgen-deprivation"
+      ],
+      "targets": [
+        "estrogen-receptor",
+        "androgen-receptor"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Kd describes binding under specified conditions. Functional EC50 describes half of the compound’s defined response change in that assay. Measure concentration curves, baseline, a reference agonist, receptor/system context, timing and toxicity controls. Suppressing a signal through toxicity does not prove inverse agonism. Receptor efficacy is not clinical efficacy.",
+        "Chidiac and colleagues examined agonist-independent beta-adrenergic signaling in expressed-receptor systems. This establishes a mechanistic distinction in those systems, rather than classifying every ligand in every tissue.",
+        "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+        "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "receptor",
+      "kind": "term",
+      "name": "Receptor",
+      "aka": [
+        "receptors",
+        "surface receptor",
+        "surface receptors",
+        "cell-surface receptor",
+        "cell-surface receptors",
+        "receptor tyrosine kinase",
+        "receptor tyrosine kinases",
+        "RTK",
+        "RTKs"
+      ],
+      "tldr": "Receptors connect molecular recognition to a cellular response through several mechanisms. Their presence and their activity are separate findings.",
+      "summary": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Receptor_(biochemistry)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Receptor_(biochemistry)"
+        },
+        {
+          "label": "OpenStax Biology 2e: 9-1-signaling-molecules-and-cellular-receptors",
+          "url": "https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors"
+        },
+        {
+          "label": "Cell membrane and nuclear estrogen receptors (ERs) originate from a single transcript: studies of ERalpha and ERbeta expressed in Chinese hamster ovary cells.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9973260/"
+        },
+        {
+          "label": "Operational models of pharmacological agonism.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6141562/"
+        },
+        {
+          "label": "Diwanji et al.: HER2-HER3-neuregulin structural complexes (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34759323/"
+        },
+        {
+          "label": "Diwanji et al.: corrected figure labels and residue numbering (2022)",
+          "url": "https://doi.org/10.1038/s41586-021-04299-0"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "ligand",
+        "growth-factor",
+        "growth-signal",
+        "kinase",
+        "signalling-pathway",
+        "cell-membrane",
+        "agonist-antagonist",
+        "binding-affinity-and-kinetics",
+        "receptor-reserve"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "egfr",
+        "her2",
+        "estrogen-receptor",
+        "androgen-receptor"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "ras-mapk",
+        "pi3k-akt-mtor"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Defined engineered estrogen-receptor experiments detected nuclear and membrane pools; they do not establish a universal proportion in human tumors. Distinguish receptor identity, location, accessible binding and measured function. A positive stain or fluorescence intensity is not automatically a calibrated receptor count, pathway dependence or drug sensitivity.",
+        "HER2 is an orphan receptor without a known direct activating ligand. Its partner HER3 binds neuregulin. Diwanji and colleagues studied the HER2-HER3-NRG1-beta complex, including defined mutant and purified-complex experiments, so a generic growth factor drawn directly on HER2 would assign the wrong binding partner. Antibody binding, disruption of an assembled complex and inhibition of activation are separate outcomes; the mutant-complex results do not define every antibody response in an unmodified tumour."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "ligand",
+      "kind": "term",
+      "name": "Ligand",
+      "aka": [
+        "ligands",
+        "binding partner"
+      ],
+      "tldr": "A ligand binds a molecular partner. Binding does not necessarily activate a receptor or prove that a treatment will help.",
+      "summary": "Hormones, growth factors and other molecules can bind receptors, but ligand describes the interaction rather than one functional effect. A bound ligand may activate a specified response, oppose another ligand, or show no effect in that assay. Some targeting ligands localize a payload. An accessible binding address need not be a cancer’s growth driver; delivery, intracellular action and clinical benefit require further evidence.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ligand_(biochemistry)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ligand_(biochemistry)"
+        },
+        {
+          "label": "OpenStax Biology 2e: 9-1-signaling-molecules-and-cellular-receptors",
+          "url": "https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors"
+        },
+        {
+          "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+        },
+        {
+          "label": "Engagement of the PD-1 immunoinhibitory receptor by a novel B7 family member leads to negative regulation of lymphocyte activation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11015443/"
+        },
+        {
+          "label": "Fibroblast activation protein, a dual specificity serine protease expressed in reactive human tumor stromal fibroblasts.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10593948/"
+        },
+        {
+          "label": "Functional domains of the human estrogen receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3690665/"
+        },
+        {
+          "label": "Mapping and characterization of the functional domains responsible for the differential activity of the A and B isoforms of the human progesterone receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9407067/"
+        },
+        {
+          "label": "NCI: monoclonal antibodies have different immune actions",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/monoclonal-antibodies"
+        },
+        {
+          "label": "NCI: checkpoint inhibition and immune regulation",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/checkpoint-inhibitors"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "receptor",
+        "growth-factor",
+        "cytokine",
+        "agonist-antagonist",
+        "binding-affinity-and-kinetics",
+        "egfr",
+        "pd1",
+        "pgr",
+        "fap"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "antiangiogenic",
+        "radioligand-therapy"
+      ],
+      "targets": [
+        "vegf",
+        "psma"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An extracellular EGF ligand can change intracellular kinase signaling without entering the cell. Estrogen and progesterone bind their distinct intracellular receptors, which can regulate transcription with different forms and cellular partners. PD-1 engagement can restrain responding T-cell activity, so receptor activation is not always activation of tumor growth. FAP is a surface protease used as a targeting address, not a hormone/growth-factor receptor in this comparison.",
+        "Keep free versus added ligand, binding conditions, receptor accessibility, receiving cell, endpoint and time with the result. Surface staining, purified binding and living-cell response are separate assays. Growth dependence requires an appropriate functional perturbation; none of these observations alone establishes clinical eligibility.",
+        "In an invented comparison, a plain antibody binds surface protein A, the same binder carrying a payload damages tested cells, and a blocker lowers an internal signal. These establish different measured outcomes: accessible binding, activity of the finished construct, and an effect on the specified pathway. None alone establishes tumour dependence, healthy-tissue safety or patient benefit. Ask what binds what, what changes and which experiment measured the change; a shared address does not supply a shared action.",
+        "In another fictional experiment, opposing PD-1 binding to PD-L1 increases a stimulated T-cell response with receptor-specific controls. That does not make the antibody a PD-1 agonist: increased cell activity can follow antagonism of an inhibitory interaction. Name the receptor, receiving cell, assay and endpoint before interpreting whether a signal activates or restrains a response.",
+        "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "kinase",
+      "kind": "term",
+      "name": "Kinase",
+      "aka": [
+        "kinases",
+        "tyrosine kinase",
+        "tyrosine kinases",
+        "protein kinase",
+        "protein kinases",
+        "kinase domain",
+        "tyrosine kinase inhibitor",
+        "tyrosine kinase inhibitors",
+        "TKI",
+        "TKIs"
+      ],
+      "tldr": "A kinase transfers a phosphate group to a substrate. The effect depends on which molecule and site are modified.",
+      "summary": "Many protein kinases transfer phosphate from ATP to selected substrate residues, commonly serine, threonine or tyrosine, leaving ADP. Phosphatases remove phosphate through a different reaction, rather than simply making ATP by reversing kinase activity. Kinases can also modify lipids, as PI3K does. Protein amount is distinct from catalytic activity, and not every relay protein is a kinase. In the defined EGFR asymmetric-dimer mechanism, activation-loop phosphorylation was not required for activation.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Kinase",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kinase"
+        },
+        {
+          "label": "OpenStax Biology 2e: 9-2-propagation-of-the-signal",
+          "url": "https://openstax.org/books/biology-2e/pages/9-2-propagation-of-the-signal"
+        },
+        {
+          "label": "OpenStax Biology 2e: 6-5-enzymes",
+          "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+        },
+        {
+          "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+        },
+        {
+          "label": "Zeke and colleagues: classical signalling scaffolds and partner assembly (review, 2009)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19651513/"
+        },
+        {
+          "label": "UniProt: human HRAS GDP/GTP switch, activity regulation and location annotations",
+          "url": "https://www.uniprot.org/uniprotkb/P01112/entry"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "phosphorylation",
+        "enzyme",
+        "inhibitor",
+        "receptor",
+        "signalling-pathway",
+        "oncogene-addiction",
+        "resistance",
+        "binding-affinity-and-kinetics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "kinase-inhibitors",
+        "cdk46-inhibitor"
+      ],
+      "targets": [
+        "egfr",
+        "alk",
+        "braf",
+        "cdk4-6"
+      ],
+      "drugs": [
+        "imatinib",
+        "osimertinib",
+        "lorlatinib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Assay ATP/substrate concentrations, enzyme amount, timing and endpoint matter. A lower cellular phosphosite signal is not automatically direct inhibition, suppression of an entire pathway or reduced growth. Active-site, allosteric and other inhibitory mechanisms need their own evidence.",
+        "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured."
+      ],
+      "category": "Biology basics"
+    }
+  ]
+}

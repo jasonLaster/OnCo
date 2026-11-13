@@ -1,0 +1,2015 @@
+{
+  "version": "proposal-support-bodies-03-root",
+  "uniqueRequirements": 48,
+  "bodyRequirementInstances": 118,
+  "versionEntries": 40,
+  "teachingBodyPaths": 18,
+  "supportOnlyPaths": 2,
+  "sourceInventorySha256": "7fc861aed5c1cbdb1959c3a8ee0cf65f5195bac98329b65fefc3bb8cbce59939",
+  "scope": "Scientific-scope representation is a manual judgment distinct from exact containment. Art conventions and custody receive no experimental, visual, ownership or independent approval credit.",
+  "proofs": [
+    {
+      "id": "gene-transcripts",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "One genomic region can have different promoter/transcript and coding contexts; a gene name does not identify one retained message or product.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-summary",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+          "supportingExcerpt": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+          "passageSha256": "fdf3e3458868c08d735a9ba6ed1c71649930f23039e246256eb2bbfebca9b4ba"
+        },
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "gene-position",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "The stipulated V position is coding in transcriptA but retained untranslated sequence in transcriptB with a downstream translation start.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The two transcript models stipulate the same retained position and different coding starts. The note does not infer a specific variant effect, transcript count or measured protein product from that premise.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "gene-continuity",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Alignment gaps preserve genomic coordinates in the drawing, while the processed RNA is continuous; picture gaps are not missing RNA molecules.",
+      "claimType": "topology-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The note explicitly separates gaps used to align genomic positions from the continuous processed messages in the stipulated model. No source SVG geometry or actual RNA integrity was newly measured.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "gene-exons",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Retained exons can contain untranslated sequence, and functional noncoding RNA need not make protein.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-summary",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+          "supportingExcerpt": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+          "passageSha256": "fdf3e3458868c08d735a9ba6ed1c71649930f23039e246256eb2bbfebca9b4ba"
+        },
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "gene-reference",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Variant/product descriptions require the exact transcript accession and version rather than a gene name alone.",
+      "claimType": "measurement-context",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-notes-0",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "Preserve the reference sequence, accession and version when describing a variant consequence. DNA sequencing, gene-level RNA counts and protein assays measure different objects; a pooled count does not establish every isoform or an intact active protein. Gene and protein names are often shared, so identify which molecule an assay or drug claim concerns.",
+          "passageSha256": "10cf3861698d36c8e40030898a1f92102657dd8314e85b77ea13144e15525df1"
+        },
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact reference matters. Fresh HGVS text distinguishes stable reference identifiers and versions where the database uses them; the existing/added note preserves accession/version context without treating a gene symbol as a transcript.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "gene-fiction",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Promoters, exon widths, coding boundaries and coordinates are fictional and do not measure transcript abundance or protein production.",
+      "claimType": "fictional-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "gene-notes-1",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "b96960f25c291df1a009f0213d2d1fd99c59d0da30ac86e237c50686849f30d9",
+          "supportingExcerpt": "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim.",
+          "passageSha256": "158d5d9a55e41b0943dce136f4e72da27078a8250997189edaa2aba6871f9896"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "NHGRI Exon definition and selected complete HGVS reference blocks.",
+          "depth": "Selected official definitions; fictional alignment premises, not a whole standards review or a biological measurement."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-one-chain",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "The selected model contains two domains on one continuous linker-connected chain; corrective calls do not make an extra connecting bridge a separate biological fact.",
+      "claimType": "schematic-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "One chain, two domains and one linker are explicit fictional premises. They receive no measured molecular-count credit, and the corrective calls do not prove that an output extra bridge was removed.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-arrangement",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "The same stipulated local domain folds can have different relative arrangements and interdomain gaps.",
+      "claimType": "model-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-confidence",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "Local fold confidence does not establish confidence in relative placement or an interdomain pocket.",
+      "claimType": "model-interpretation",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-0",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+          "passageSha256": "34782c4199b74a4b2e6aff8ca26ea50613302a10090d37a61e8bb281799096b2"
+        },
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-pocket",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "A proposed interdomain pocket is an empty cleft between surfaces in the stipulated model, not the linker, one domain interior or a validated ligand interaction.",
+      "claimType": "topology-and-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-0",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+          "passageSha256": "34782c4199b74a4b2e6aff8ca26ea50613302a10090d37a61e8bb281799096b2"
+        },
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The reader supplies a proposed interdomain gap and makes its relative geometry conditional. A leader endpoint in the empty gap rather than on the linker is a source-art convention; its actual rendered position and existence of a drug-binding pocket are not certified.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-alternatives",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "Alternative hypothetical arrangements are not observed motion or disorder, and confidence is not experimental verification.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-1",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function.",
+          "passageSha256": "df65d1720d1b82c6a7c0b09c499378230f3f4b87c16a4a754828d7fcd4b34e5c"
+        },
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Alternative pictures are candidate models, not a trajectory or measured disorder. Fresh EMBL-EBI guidance distinguishes low-confidence prediction, flexible regions and relative placement; no confident or low-confidence score is converted into an experiment.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "domain-function",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "A model arrangement, gap or palette does not establish binding affinity, activity, drug action or clinical benefit.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "protein-structure-and-domains-notes-0",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+          "passageSha256": "34782c4199b74a4b2e6aff8ca26ea50613302a10090d37a61e8bb281799096b2"
+        },
+        {
+          "id": "protein-structure-and-domains-notes-2",
+          "recordId": "protein-structure-and-domains",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "0082ff3e4a4847c7aee555e284987e4dd6ce1722703bfb6b2778f004afb0b89d",
+          "supportingExcerpt": "Consider one invented chain with two domains joined by one linker. Two candidate arrangements can preserve both local folds yet create different gaps between the domains. A proposed interdomain pocket belongs to that joint geometry; a confident domain alone does not establish it. Alternative pictures do not demonstrate molecular motion or disorder. The cartoon supplies neither measured coordinates nor ligand binding, affinity or activity.",
+          "passageSha256": "ec894789e179467cb228cf05ad2a92ea534577cc912fec679c7dfc65194a342b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Selected complete EMBL-EBI pLDDT and PAE paragraphs.",
+          "depth": "Model-author training guidance at targeted depth; no new coordinate model, source figure, full paper or binding experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-reversible",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "An unchanged ligand can bind and be released reversibly; that does not itself depict chemical transformation.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-summary",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "73e5256ec367cb32ab761329edae9c711c203528289670f261906f6302a8cd2b",
+          "supportingExcerpt": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
+          "passageSha256": "4c5d971f11fdfc70364ef4b682107e38540286e07c3d0bed1f290c262b9dd2b0"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-2",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements.",
+          "passageSha256": "b09a54dad93349d1f231a087dfd7b39670ca9d136b88395b04f5e7c00c94536d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-catalysis",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "The separate stipulated bond-cleavage example changes substrate into products while retaining atoms and reusing the enzyme.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "enzyme-summary",
+          "recordId": "enzyme",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "bf93daabb0696ef735c96f5e210240c8485070b2775c748627dfc1b350ae9bf1",
+          "supportingExcerpt": "Catalysis lowers a reaction’s activation barrier without supplying an unlimited energy source. Most familiar enzymes are proteins, while some RNAs also catalyze reactions. Active-site interactions help chemistry; other binding sites can regulate activity. Binding, catalytic rate, substrate preference and activity in a cell are different properties. An inhibitor can act through the active site or another mechanism, and turnover rates are not one universal number.",
+          "passageSha256": "9120f321ae5a5321449efbc20a47fbeaed22dd6e6b8d4913e6e602ca001ea10b"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-2",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements.",
+          "passageSha256": "b09a54dad93349d1f231a087dfd7b39670ca9d136b88395b04f5e7c00c94536d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The selected catalytic example retains substrate atoms in products and reuses the enzyme. This is a schematic chemical distinction; no output atom balance, unshown water/cofactors or real enzyme turnover was newly measured.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-model",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "The simple one-site equilibrium occupancy model uses free ligand and identical independent sites without a competitor; total added ligand is a different input.",
+      "claimType": "model-assumptions",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-summary",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "73e5256ec367cb32ab761329edae9c711c203528289670f261906f6302a8cd2b",
+          "supportingExcerpt": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
+          "passageSha256": "4c5d971f11fdfc70364ef4b682107e38540286e07c3d0bed1f290c262b9dd2b0"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-2",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements.",
+          "passageSha256": "b09a54dad93349d1f231a087dfd7b39670ca9d136b88395b04f5e7c00c94536d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-half",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Free ligand equal toKd at10nM yields one-half model occupancy; five of ten icons is an illustration rather than a guaranteed realised sample.",
+      "claimType": "conditional-arithmetic",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-notes-2",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements.",
+          "passageSha256": "b09a54dad93349d1f231a087dfd7b39670ca9d136b88395b04f5e7c00c94536d"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "FreeL=Kd=10nM gives10/(10+10)=0.5 under the explicit one-site assumptions. Five of ten icons represents the model fraction; it is not a guaranteed sample realisation, measured occupancy, administered dose or cell-death count.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-quantities",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Kd, Km and assayIC50 have different definitions and conditions; their numerical equality is not automatic.",
+      "claimType": "assay-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-summary",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "73e5256ec367cb32ab761329edae9c711c203528289670f261906f6302a8cd2b",
+          "supportingExcerpt": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
+          "passageSha256": "4c5d971f11fdfc70364ef4b682107e38540286e07c3d0bed1f290c262b9dd2b0"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-0",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "For a suitable Michaelis-Menten enzyme model, Km is the substrate concentration at half the maximum initial reaction rate. It depends on the catalytic mechanism and conditions and is not generally Kd. Turnover concerns reaction cycling, not binding strength.",
+          "passageSha256": "e1a65d044fa28f79d74bb62e7b32e44c3b0b47b339525a15123fea0695c2f2b2"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-1",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "IC50 is half inhibition of a specified assay response; EC50 describes half of a defined functional response change. Substrate/ATP concentrations, enzyme or receptor amount, timing and assay design affect these measures. A biochemical inhibition value, a cell-growth value and a clinical outcome are separate evidence.",
+          "passageSha256": "62a4efabdd2105c5c72da65691c211392706848e2f1ef205ab4ec7521eb6b77a"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-selectivity",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Binding affinity for one partner does not establish selectivity against other partners.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-summary",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "73e5256ec367cb32ab761329edae9c711c203528289670f261906f6302a8cd2b",
+          "supportingExcerpt": "For a simple reversible binding equilibrium, Kd is the product of free partner concentrations divided by complex concentration; lower Kd means tighter binding under those conditions. For identical independent sites with one ligand and no competition, fractional occupancy is L / (Kd + L), where L is free ligand concentration. Half occupancy occurs at L = Kd in that model. Total added ligand need not equal free ligand. Affinity for one partner does not establish specificity against other partners.",
+          "passageSha256": "4c5d971f11fdfc70364ef4b682107e38540286e07c3d0bed1f290c262b9dd2b0"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "binding-outcome",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Occupancy, catalytic change, downstream cellular effect and cell death require separate evidence; none establishes patient benefit.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "binding-affinity-and-kinetics-notes-1",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "IC50 is half inhibition of a specified assay response; EC50 describes half of a defined functional response change. Substrate/ATP concentrations, enzyme or receptor amount, timing and assay design affect these measures. A biochemical inhibition value, a cell-growth value and a clinical outcome are separate evidence.",
+          "passageSha256": "62a4efabdd2105c5c72da65691c211392706848e2f1ef205ab4ec7521eb6b77a"
+        },
+        {
+          "id": "binding-affinity-and-kinetics-notes-2",
+          "recordId": "binding-affinity-and-kinetics",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d726978ab839016143c0c10e9510249a82c60b38f2aa3dcb5bd4d9caf23cdb45",
+          "supportingExcerpt": "In a fictional one-site equilibrium example, free ligand and Kd are both 10 nM. With identical independent sites and no competing ligand, occupancy is 10 divided by (10 plus 10), or one half. Five occupied symbols among ten illustrate that model fraction; they are not a guaranteed realised count, a dose recommendation or five dead cells. Binding and release can leave a ligand unchanged. A separate catalytic example changes a substrate bond, retains its atoms in the products and reuses the enzyme. Binding, chemical transformation and a later cellular response therefore need separate measurements.",
+          "passageSha256": "b09a54dad93349d1f231a087dfd7b39670ca9d136b88395b04f5e7c00c94536d"
+        },
+        {
+          "id": "enzyme-notes-0",
+          "recordId": "enzyme",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d9dad862341b81d0b9903033f6a0f5d3bf3a56800778af399b075539c70840a6",
+          "supportingExcerpt": "Affinity, specificity, Kd, Km and assay IC50 answer distinct questions. Report the model, free concentrations, substrates, cofactors and timing. Kinases, PARP and topoisomerases illustrate oncology enzyme targets, but binding alone does not establish useful cellular inhibition or patient benefit.",
+          "passageSha256": "4ff4ac208267e27f7e43e67763db1e4b4e535f862fbabcfd83d0b55b2bb0c7de"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "31453222"
+          ],
+          "freshOfficial": "Selected GraphPad one-site model and OpenStax enzyme paragraphs.",
+          "depth": "Complete binding-method abstract plus selected official/textbook blocks. Free-ligand and independent-site assumptions and chemical example remain explicit; no full paper or clinical inference."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-maximum",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "A partial agonist has a lower maximum in the stated system, which differs from a full agonist observed at a low concentration.",
+      "claimType": "pharmacology-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-summary",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "944fa034efa1ccd58dc3990c3fa8c1ed7f4975d3023a27c47c64b8f16420081e",
+          "supportingExcerpt": "A full agonist can reach a system’s maximal measured response. A partial agonist has lower activating capacity; its observed maximum depends on receptor amount and amplification and is not defined by giving a smaller dose of a full agonist. Competing partial agonists can reduce a full agonist’s response when they replace it. A neutral antagonist opposes agonist action without changing agonist-independent baseline activity; an inverse agonist reduces that activity when it is measurable. Antagonism need not use the agonist’s binding site.",
+          "passageSha256": "eadf67d757e8edd9af3378057223bf230b6f7efc3700da97de46c10c96e8025a"
+        },
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-baseline",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Neutral blockade leaves the stipulated baseline unchanged whereas inverse agonism reduces the constitutive baseline under the stated conditions.",
+      "claimType": "pharmacology-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-summary",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "944fa034efa1ccd58dc3990c3fa8c1ed7f4975d3023a27c47c64b8f16420081e",
+          "supportingExcerpt": "A full agonist can reach a system’s maximal measured response. A partial agonist has lower activating capacity; its observed maximum depends on receptor amount and amplification and is not defined by giving a smaller dose of a full agonist. Competing partial agonists can reduce a full agonist’s response when they replace it. A neutral antagonist opposes agonist action without changing agonist-independent baseline activity; an inverse agonist reduces that activity when it is measurable. Antagonism need not use the agonist’s binding site.",
+          "passageSha256": "eadf67d757e8edd9af3378057223bf230b6f7efc3700da97de46c10c96e8025a"
+        },
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-reference",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The neutral antagonist can reduce response when a reference agonist is present; that separate condition is distinct from changing baseline alone.",
+      "claimType": "pharmacology-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        },
+        {
+          "id": "agonist-antagonist-notes-3",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison.",
+          "passageSha256": "5eff48bd3e4df313583db965fb117b1ffcc9277213e2ae00a339f36150b5dbb7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-models",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The five stated fictional response functions give limiting full/partial/neutral/inverse responses100/40/10/5, and reference-agonist response80 tending to10 with increasing antagonist.",
+      "claimType": "conditional-arithmetic",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        },
+        {
+          "id": "agonist-antagonist-notes-3",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison.",
+          "passageSha256": "5eff48bd3e4df313583db965fb117b1ffcc9277213e2ae00a339f36150b5dbb7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "All five functions are copied as the source-stipulated fictional algebra and recomputed independently. Their limits are100,40,10,5 and10; the reference condition starts at80. None is empirical receptor data or a universal binding-to-effect law.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-low-dose",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The fictional full-agonist response atc=0.5 is40, matching the partial curve limiting value without making the full agonist a partial agonist.",
+      "claimType": "conditional-arithmetic",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        },
+        {
+          "id": "agonist-antagonist-notes-3",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison.",
+          "passageSha256": "5eff48bd3e4df313583db965fb117b1ffcc9277213e2ae00a339f36150b5dbb7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Rfull(0.5)=40, equal to the partial curve limiting value. The full curve still tends to100, so an equal finite response does not make the full agonist partial.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-axes",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Concentration axes are logarithmic and exclude zero; different vertical scales and limiting plateaus cannot be read as equal finite endpoints or comparable image distances.",
+      "claimType": "measurement-context",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-3",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison.",
+          "passageSha256": "5eff48bd3e4df313583db965fb117b1ffcc9277213e2ae00a339f36150b5dbb7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The conditional OnCo paragraph makes the hypothetical plot self-contained. Zero is outside a log axis from0.01to1000; the baselines and asymptotic limits are separate. Source panel scales0to12and0to100 are drawing conventions, and no uncarried source chart or image-distance comparison is required.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-midpoints",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Equal chosen curve midpoints are a design assumption, not observed equal potency; receptor abundance, coupling, endpoint, toxicity and constitutive activity matter.",
+      "claimType": "model-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-0",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "Kd describes binding under specified conditions. Functional EC50 describes half of the compound’s defined response change in that assay. Measure concentration curves, baseline, a reference agonist, receptor/system context, timing and toxicity controls. Suppressing a signal through toxicity does not prove inverse agonism. Receptor efficacy is not clinical efficacy.",
+          "passageSha256": "92e2c51c1cf4d87163481064b0c042a308bc2142b1b189631db30da7b3d0cb71"
+        },
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        },
+        {
+          "id": "agonist-antagonist-notes-3",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "One toy parameterisation uses relative concentration c: full response 10 + 90c/(1+c), partial 10 + 30c/(1+c), neutral 10, and inverse 10 - 5c/(1+c). The full response at c = 0.5 is 40. With the reference agonist fixed, another chosen curve is 10 + 315/(4.5+b), where b is relative antagonist concentration. If these curves are plotted on a log-concentration axis from 0.01 to 1,000, zero is outside the plot; baseline and limiting plateaus need separate statements. The full, partial and inverse curves share c = 1 as the midpoint of their own response changes by construction; this is not evidence of equal measured potency. Different vertical scales also make distances between pictures an unreliable response comparison.",
+          "passageSha256": "5eff48bd3e4df313583db965fb117b1ffcc9277213e2ae00a339f36150b5dbb7"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The final wording specifies the full, partial and inverse c-curves and the midpoint of their own response changes. It excludes the flat neutral line and separate b-curve from that claim. The equal chosen midpoint is not an observed potency comparison.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "agonist-limits",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The curves are an invented response assay, not measured receptor occupancy, doses, toxicity-driven reductions, clinical efficacy or a universal response law.",
+      "claimType": "fictional-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "agonist-antagonist-notes-0",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "Kd describes binding under specified conditions. Functional EC50 describes half of the compound’s defined response change in that assay. Measure concentration curves, baseline, a reference agonist, receptor/system context, timing and toxicity controls. Suppressing a signal through toxicity does not prove inverse agonism. Receptor efficacy is not clinical efficacy.",
+          "passageSha256": "92e2c51c1cf4d87163481064b0c042a308bc2142b1b189631db30da7b3d0cb71"
+        },
+        {
+          "id": "agonist-antagonist-notes-2",
+          "recordId": "agonist-antagonist",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "d8d86f7aebe79bc7be0d915d820732821fbdae06c32f217abdd4714f3f65244c",
+          "supportingExcerpt": "An invented response assay starts at a baseline of 10. Its full agonist tends toward 100, partial agonist toward 40, neutral antagonist stays at 10, and inverse agonist tends toward 5. At one low concentration the full agonist also gives 40; that point does not make it a partial agonist. In a separate condition with a reference agonist present, increasing a neutral antagonist reduces the response from 80 toward 10. Receptor amount, coupling, endpoint, timing and toxicity controls still belong to the comparison; these are chosen response curves, not measured occupancy or clinical effects.",
+          "passageSha256": "e370f150ebdad26952e988218be54ce938ee4d97761eedf61fc06821a127555e"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshOfficial": "Eight selected complete IUPAC1998 definitions and explicit fictional response algebra.",
+          "inherited": "Existing Chidiac and operational-model assessments retain prior depth.",
+          "depth": "Named glossary definitions and premise-backed arithmetic; no new whole pharmacology paper, real concentration-response study or patient result."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-branches",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A generic branched connection map is not experimentally established causal wiring in every tumour.",
+      "claimType": "model-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-ras",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Membrane-associatedRAS is represented as a GTP/GDP switch rather than a kinase.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "UniProt humanHRAS is a curated annotation source: the normalGDP/GTP switch and activity regulation were freshly read, along with location evidence and its similarity qualifiers. This does not claim new human membrane-localisation or mutant-RAS experiments.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-scaffold",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A selected noncatalytic scaffold can hold partners; signalling roles are not all catalytic phosphate transfers.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The newly read Zeke review abstract supports partner assembly and normally noncatalytic classical scaffolds. The canonical example selects a noncatalytic role; it does not declare every scaffold devoid of catalysis.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-kinase",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A kinase transfers phosphate fromATP to a substrate withADP produced; phosphorylation is not universally activating.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-summary",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "9a32d47e73eb51c406363490198dbca79fcac182bec3b63b23cf5c239ee80f90",
+          "supportingExcerpt": "Many protein kinases transfer phosphate from ATP to selected substrate residues, commonly serine, threonine or tyrosine, leaving ADP. Phosphatases remove phosphate through a different reaction, rather than simply making ATP by reversing kinase activity. Kinases can also modify lipids, as PI3K does. Protein amount is distinct from catalytic activity, and not every relay protein is a kinase. In the defined EGFR asymmetric-dimer mechanism, activation-loop phosphorylation was not required for activation.",
+          "passageSha256": "f4ce2abd097f27826ae08dc339c464fdb85e3a6a3cb9de70a2744d81a8a9e698"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The current definition separates ATP-to-substrate transfer from activation and retains the scoped EGFR asymmetric-dimer example. The fresh Zhang abstract supports that experiment, not genericRAS or every phosphate being activating.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-phosphatase",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Removing substrate phosphate is a different reaction and does not automatically regenerateATP.",
+      "claimType": "biological-concept",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-summary",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "9a32d47e73eb51c406363490198dbca79fcac182bec3b63b23cf5c239ee80f90",
+          "supportingExcerpt": "Many protein kinases transfer phosphate from ATP to selected substrate residues, commonly serine, threonine or tyrosine, leaving ADP. Phosphatases remove phosphate through a different reaction, rather than simply making ATP by reversing kinase activity. Kinases can also modify lipids, as PI3K does. Protein amount is distinct from catalytic activity, and not every relay protein is a kinase. In the defined EGFR asymmetric-dimer mechanism, activation-loop phosphorylation was not required for activation.",
+          "passageSha256": "f4ce2abd097f27826ae08dc339c464fdb85e3a6a3cb9de70a2744d81a8a9e698"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-times",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The fictional siteX decrease at30minutes and unchanged count at2days are different measurements with different timing and denominators.",
+      "claimType": "fictional-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The30-minute phosphosite decrease and unchanged2-day cell count are fictional endpoints, not a kinetic experiment or causal connection. The note retains their different times and measurements.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-inference",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The two readouts alone do not establish direct target engagement, growth dependence or patient benefit.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-0",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "Assay ATP/substrate concentrations, enzyme amount, timing and endpoint matter. A lower cellular phosphosite signal is not automatically direct inhibition, suppression of an entire pathway or reduced growth. Active-site, allosteric and other inhibitory mechanisms need their own evidence.",
+          "passageSha256": "71594d25dbdaabb18d4664945beda8918f689d75cb3f4220dba8cc0e9f0127bf"
+        },
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "relay-icons",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Cell icons stand for a count assay rather than three actual measured cells; symbols and arrows do not supply sample sizes or effect estimates.",
+      "claimType": "schematic-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "kinase-notes-1",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "325893e8f1c3a445462f1bf45a16d2d112e41f28c54eb7e6d9a731145ceea0d2",
+          "supportingExcerpt": "A simplified branched relay can place a membrane-associated RAS switch, a noncatalytic scaffold holding partners and a kinase in different roles. In the normal RAS switch, the GTP-bound form is active and the GDP-bound form is inactive. These selected roles do not establish one circuit in every tumour. In an invented assay, a site-X phosphorylation signal decreases at 30 minutes while the cell count is unchanged at two days. These are different endpoints at different times. Neither alone establishes direct target engagement, growth dependence or patient benefit, and count icons do not specify how many cells were measured.",
+          "passageSha256": "2eba27f803376671be475e955259465fb4e9cea1d24269676f32017fb8dbba17"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "16777603",
+            "19651513"
+          ],
+          "freshOfficial": "Selected OpenStax signalling blocks and curated UniProtHRAS function/activity/location annotations.",
+          "depth": "Complete abstracts and targeted annotation/textbook blocks; no whole paper. Scaffolding, normalRAS switching and EGFR activation are different evidence sources and are not merged into one experiment."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-nuclear",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Separate estrogen/ER and progesterone/PR examples depict classical intracellular transcription regulation, not anER-PR complex.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-notes-0",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "An extracellular EGF ligand can change intracellular kinase signaling without entering the cell. Estrogen and progesterone bind their distinct intracellular receptors, which can regulate transcription with different forms and cellular partners. PD-1 engagement can restrain responding T-cell activity, so receptor activation is not always activation of tumor growth. FAP is a surface protease used as a targeting address, not a hormone/growth-factor receptor in this comparison.",
+          "passageSha256": "678cd2f1f550b9e99fb85e6286386fa0097ba8785bfc1e7711c21c43b85b8b66"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The selected examples use separate ER and progesterone receptors, not an ER-PR complex. Fresh ER/PR abstracts support context-dependent transcription and isoform/domain effects, not all tissues or one universal activating response.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-nuclear-scope",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The classical example does not mean all hormone effects require transcription, all genes increase or every receptor permanently resides in the nucleus.",
+      "claimType": "mechanism-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "receptor-notes-0",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "351cd0b9b1377c83241682e8919ea9d7da32fc2ae20e5e336924dc6ca722112b",
+          "supportingExcerpt": "Defined engineered estrogen-receptor experiments detected nuclear and membrane pools; they do not establish a universal proportion in human tumors. Distinguish receptor identity, location, accessible binding and measured function. A positive stain or fluorescence intensity is not automatically a calibrated receptor count, pathway dependence or drug sensitivity.",
+          "passageSha256": "37aff32e1c672c8d41b74af2cf226a880d858bb74b8b1e8f14e0be27d1895c67"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-egfr",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "In the selected EGF/EGFR example ligand binding is extracellular and kinase signalling is intracellular; the two-receptor/two-ligand scene is not a universal stoichiometry.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-notes-0",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "An extracellular EGF ligand can change intracellular kinase signaling without entering the cell. Estrogen and progesterone bind their distinct intracellular receptors, which can regulate transcription with different forms and cellular partners. PD-1 engagement can restrain responding T-cell activity, so receptor activation is not always activation of tumor growth. FAP is a surface protease used as a targeting address, not a hormone/growth-factor receptor in this comparison.",
+          "passageSha256": "678cd2f1f550b9e99fb85e6286386fa0097ba8785bfc1e7711c21c43b85b8b66"
+        },
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The selected EGF pair represents extracellular reception and intracellular kinase signalling. Two ligands and two receptors are source illustration counts, not a universal ligand requirement or a freshly verified atomic structure.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-growth",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "A growth-signalling relay does not establish cell division, a measured growth percentage or a guaranteed response.",
+      "claimType": "measurement-inference",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-summary",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "4db76a923116db1ea768478deb7ccb9f54385d27423460f17845abf0d7493024",
+          "supportingExcerpt": "Hormones, growth factors and other molecules can bind receptors, but ligand describes the interaction rather than one functional effect. A bound ligand may activate a specified response, oppose another ligand, or show no effect in that assay. Some targeting ligands localize a payload. An accessible binding address need not be a cancer’s growth driver; delivery, intracellular action and clinical benefit require further evidence.",
+          "passageSha256": "ab6d93616d85b7ddd74cb8e40bc75d03bca12c283a18bc72edf0c5c5095f8fa7"
+        },
+        {
+          "id": "ligand-notes-1",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "Keep free versus added ligand, binding conditions, receptor accessibility, receiving cell, endpoint and time with the result. Surface staining, purified binding and living-cell response are separate assays. Growth dependence requires an appropriate functional perturbation; none of these observations alone establishes clinical eligibility.",
+          "passageSha256": "c4134689a15d353077610b86f469505a98e2361e52415e25287ddc2f99322d29"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-pd1",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "MembranePD-L1 on a neighbouring cell can contactPD-1 on a responding T cell, with inhibitory signalling in the T-cell compartment.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-notes-3",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "In another fictional experiment, opposing PD-1 binding to PD-L1 increases a stimulated T-cell response with receptor-specific controls. That does not make the antibody a PD-1 agonist: increased cell activity can follow antagonism of an inhibitory interaction. Name the receptor, receiving cell, assay and endpoint before interpreting whether a signal activates or restrains a response.",
+          "passageSha256": "6d063f893ede07213c9572b9064b1f9f9d319e6a5d100a2989ea328a63e0b3a1"
+        },
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The new paragraph explicitly identifies a neighbouringPD-L1 cell and respondingPD-1 T cell. The fresh Freeman abstract reportsPD-L1 on antigen-presenting and nonlymphoid cells and inhibition of lymphocyte responses; no exclusive tumour-side identity is inferred.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-pd1-scope",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The neighbour need not be a tumour cell, and dampened signalling is not complete shutdown, killing or a diagnosis of exhaustion.",
+      "claimType": "mechanism-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "ligand-benefit",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Selected receptor mechanisms and schematic molecular counts do not establish target eligibility, clinical efficacy or benefit.",
+      "claimType": "mechanism-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ligand-summary",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "4db76a923116db1ea768478deb7ccb9f54385d27423460f17845abf0d7493024",
+          "supportingExcerpt": "Hormones, growth factors and other molecules can bind receptors, but ligand describes the interaction rather than one functional effect. A bound ligand may activate a specified response, oppose another ligand, or show no effect in that assay. Some targeting ligands localize a payload. An accessible binding address need not be a cancer’s growth driver; delivery, intracellular action and clinical benefit require further evidence.",
+          "passageSha256": "ab6d93616d85b7ddd74cb8e40bc75d03bca12c283a18bc72edf0c5c5095f8fa7"
+        },
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-families",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The preserved family comparison distinguishes selected surface receptor mechanisms from intracellular receptors rather than one universal receptor location.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-relays",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "G-protein contact and a receptor-associated intracellular kinase/phosphorylated substrate are different selected relay roles.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "kinase-summary",
+          "recordId": "kinase",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "9a32d47e73eb51c406363490198dbca79fcac182bec3b63b23cf5c239ee80f90",
+          "supportingExcerpt": "Many protein kinases transfer phosphate from ATP to selected substrate residues, commonly serine, threonine or tyrosine, leaving ADP. Phosphatases remove phosphate through a different reaction, rather than simply making ATP by reversing kinase activity. Kinases can also modify lipids, as PI3K does. Protein amount is distinct from catalytic activity, and not every relay protein is a kinase. In the defined EGFR asymmetric-dimer mechanism, activation-loop phosphorylation was not required for activation.",
+          "passageSha256": "f4ce2abd097f27826ae08dc339c464fdb85e3a6a3cb9de70a2744d81a8a9e698"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-ions",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Ions and ligand symbols are different objects; four ion beads and two kinase-receptor chains are schematic counts rather than measured molecular stoichiometry.",
+      "claimType": "schematic-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The receptor definition distinguishes ion channels from ligand-receptor interactions. Four ion beads and two receptor-kinase chains remain stipulated art counts, not measured stoichiometry, an assigned ion species or a delivery result.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-internal",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The entering-molecule/internal-receptor route differs from ligand binding at the outside face of a surface receptor.",
+      "claimType": "selected-mechanism",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "receptor-notes-0",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "351cd0b9b1377c83241682e8919ea9d7da32fc2ae20e5e336924dc6ca722112b",
+          "supportingExcerpt": "Defined engineered estrogen-receptor experiments detected nuclear and membrane pools; they do not establish a universal proportion in human tumors. Distinguish receptor identity, location, accessible binding and measured function. A positive stain or fluorescence intensity is not automatically a calibrated receptor count, pathway dependence or drug sensitivity.",
+          "passageSha256": "37aff32e1c672c8d41b74af2cf226a880d858bb74b8b1e8f14e0be27d1895c67"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field passages carry the stated definition, selected mechanism or premise-backed inference. Source-art dimensions and preservation instructions are separate from empirical biology and actual output compliance.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-nucleus",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The selected internal-receptor/nuclear route keeps the nuclear boundary and pore crossing distinct from outside binding; it is not a route required of every ligand.",
+      "claimType": "selected-topology",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-summary",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "summary",
+          "fieldSha256": "66e13a167886286f29d9543778f0986c834bed11345425a5e3b4c467e04407f1",
+          "supportingExcerpt": "Receptors can be on the surface or inside a cell. Ligand-gated ion channels regulate ion passage; G-protein-coupled receptors act through G proteins; enzyme-linked receptors can contain an enzyme or recruit a separate one. Intracellular nuclear receptors can regulate transcription with cellular partners. A surface signal can ultimately alter genes, while nuclear-receptor family membership does not fix every molecule permanently in the nucleus or require every effect to use new transcription.",
+          "passageSha256": "2ddcc738a3e8811dc1098f19ca91a32a9a0b0a12622d9cc2088fd2fb25772663"
+        },
+        {
+          "id": "receptor-notes-0",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "351cd0b9b1377c83241682e8919ea9d7da32fc2ae20e5e336924dc6ca722112b",
+          "supportingExcerpt": "Defined engineered estrogen-receptor experiments detected nuclear and membrane pools; they do not establish a universal proportion in human tumors. Distinguish receptor identity, location, accessible binding and measured function. A positive stain or fluorescence intensity is not automatically a calibrated receptor count, pathway dependence or drug sensitivity.",
+          "passageSha256": "37aff32e1c672c8d41b74af2cf226a880d858bb74b8b1e8f14e0be27d1895c67"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The receptor reader distinguishes surface versus internal location, nuclear pools and functions. The preserved nuclear outline/pore route is schematic topology, not a new measured pore-crossing mechanism or a route required of every ligand.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    },
+    {
+      "id": "receptor-scope",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Theme preservation, drawn relationships and a complete nuclear outline do not independently establish measured receptor biology, drug delivery or accepted scientific review.",
+      "claimType": "measurement-and-custody-scope",
+      "dispositionBeforeOwnerRead": "not yet assessed",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "receptor-notes-0",
+          "recordId": "receptor",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "351cd0b9b1377c83241682e8919ea9d7da32fc2ae20e5e336924dc6ca722112b",
+          "supportingExcerpt": "Defined engineered estrogen-receptor experiments detected nuclear and membrane pools; they do not establish a universal proportion in human tumors. Distinguish receptor identity, location, accessible binding and measured function. A positive stain or fluorescence intensity is not automatically a calibrated receptor count, pathway dependence or drug sensitivity.",
+          "passageSha256": "37aff32e1c672c8d41b74af2cf226a880d858bb74b8b1e8f14e0be27d1895c67"
+        },
+        {
+          "id": "ligand-notes-1",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "Keep free versus added ligand, binding conditions, receptor accessibility, receiving cell, endpoint and time with the result. Surface staining, purified binding and living-cell response are separate assays. Growth dependence requires an appropriate functional perturbation; none of these observations alone establishes clinical eligibility.",
+          "passageSha256": "c4134689a15d353077610b86f469505a98e2361e52415e25287ddc2f99322d29"
+        },
+        {
+          "id": "ligand-notes-4",
+          "recordId": "ligand",
+          "version": "proposal-support-bodies-03-root",
+          "field": "notes",
+          "fieldSha256": "6ff3d44df2065e96a95ec75dc6ac796647dc595c2442526befb67992ad27ec99",
+          "supportingExcerpt": "PD-L1 can be on a non-malignant neighbouring cell as well as a tumour cell. In a selected contact example it meets PD-1 on a responding T cell and can restrain that cell's signalling. Other activating and inhibitory inputs remain relevant; a diagram of this interaction does not establish complete shutdown, cell killing or exhaustion. Molecular counts and receptor pairings in the scene are schematic, not a stoichiometry measurement or a treatment-selection test.",
+          "passageSha256": "2c9370ab880744dbdbb388ece1854d052bc5dfc533b8660a0268d8250b9f2353"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Source theme calls and their custody claims do not verify actual output compliance. Current fields preserve identity, location, binding and function as distinct questions. Source-image execution and scientific/owner approval receive no new credit.",
+        "sourceScope": {
+          "freshAbstractPMIDs": [
+            "32719334",
+            "21772288",
+            "16777603",
+            "9338790",
+            "9973260",
+            "11015443",
+            "9407067",
+            "3690665"
+          ],
+          "depth": "Complete raw abstracts at their channel/GPCR/kinase/ER/PR/PD-1 study scope plus existing receptor/ligand evidence. No new full-paper or atomic/source-figure view, universal stoichiometry, clinical eligibility or benefit claim."
+        },
+        "sourceImageExecutionVerified": false,
+        "independentAcceptance": false
+      }
+    }
+  ]
+}

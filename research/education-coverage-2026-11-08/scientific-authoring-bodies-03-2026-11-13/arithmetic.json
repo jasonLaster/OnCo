@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "statement": "Half occupancy",
+      "value": 0.5,
+      "expected": 0.5
+    },
+    {
+      "statement": "Five-of-ten illustration",
+      "value": 0.5,
+      "expected": 0.5
+    },
+    {
+      "statement": "Low full response",
+      "value": 40.0,
+      "expected": 40
+    },
+    {
+      "statement": "Full midpoint atc1",
+      "value": 55.0,
+      "expected": 55
+    },
+    {
+      "statement": "Partial midpoint atc1",
+      "value": 25.0,
+      "expected": 25
+    },
+    {
+      "statement": "Inverse midpoint atc1",
+      "value": 7.5,
+      "expected": 7.5
+    },
+    {
+      "statement": "Reference condition without antagonist",
+      "value": 80.0,
+      "expected": 80
+    },
+    {
+      "statement": "Half reference decline atb4.5",
+      "value": 45.0,
+      "expected": 45
+    },
+    {
+      "statement": "Axis lower log10",
+      "value": -2.0,
+      "expected": -2
+    },
+    {
+      "statement": "Axis upper log10",
+      "value": 3.0,
+      "expected": 3
+    },
+    {
+      "statement": "Agonist chart nominal font CSS pixels",
+      "value": 14.56,
+      "expected": 14.56
+    },
+    {
+      "statement": "Domain minimum nominal font CSS pixels",
+      "value": 16.5546875,
+      "expected": 16.5546875
+    },
+    {
+      "statement": "Domain maximum nominal font CSS pixels",
+      "value": 17.19140625,
+      "expected": 17.19140625
+    },
+    {
+      "statement": "Source36px at393of760",
+      "value": 18.61578947368421,
+      "expected": 18.61578947368421
+    }
+  ],
+  "limitsAndFiniteEndpoints": [
+    {
+      "curve": "full",
+      "limit": 100,
+      "at1000": 99.91008991008991
+    },
+    {
+      "curve": "partial",
+      "limit": 40,
+      "at1000": 39.97002997002997
+    },
+    {
+      "curve": "neutral",
+      "limit": 10,
+      "at1000": 10
+    },
+    {
+      "curve": "inverse",
+      "limit": 5,
+      "at1000": 5.004995004995005
+    },
+    {
+      "curve": "reference-plus-antagonist",
+      "limit": 10,
+      "at1000": 10.313588850174217
+    }
+  ],
+  "pass": true,
+  "fontFinding": "At a full image width of393CSSpx,36nativepx at760width scales to about18.6CSSpx. The brief says roughly16 at393reader/default preview; padding or a narrower effective image could explain the difference. This is a nominal question, not a proven displayed-reader defect.",
+  "scope": "Fictional models, log axes and nominal scaling only; no observed potency, receptor occupancy, sampled molecular count, source image compliance or clinical result."
+}

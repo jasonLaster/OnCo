@@ -4,6 +4,17 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [third scientific/custody-body assessment](scientific-authoring-bodies-03-2026-11-13/README.md) reads twenty complete bodies (43,815 unique bytes) and verifies forty pinned entries. Eighteen contain scientific construction, corrections, tasks or captions; two contain custody/source-lookup attestations without a substantive biological proposition. The frozen inventory keeps 48 distinct requirements in 118 body associations. Six existing owners gain seven paragraphs about transcript context, model confidence, binding/catalysis, response curves, branched relays and PD-1 contact. Ten complete abstracts, 36 selected official blocks and five curated annotation objects retain actual depth. Twenty-six anchors, eight actual readers, static exports and full gates pass: 293 files, 3,101 tests and 2 skips. All committed data and graph fingerprints match the gate inputs. Earlier notes, links and order remain; 104 active notes-array proofs are rebound without changing grades or depth. The broader source/asset/schema audit remains active, with no main/live or independent approval.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 515 | 6,806 / 6,827 | 21 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 527 | 7,278 / 7,302 | 24 |
+
+Original assets: 625 teaching, 75 support and 1,188 unclassified. Later assets: 624 teaching, 75 support and 1,189 unclassified. Each pin retains 1,888 assets. The graph remains at 23,091 records. Selected canonical ids, reader observations and language slots are not authorship or approval. All 917 defined literature occurrences retain identity/relevance screening, not blanket claim verification. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical second authoring-body checkpoint
+
 The [second scientific/custody-body assessment](scientific-authoring-bodies-02-2026-11-13/README.md) reads twenty complete bodies (40,509 unique bytes) and verifies forty pinned entries. Eighteen carry scientific construction, corrective or mixed-provenance teaching; two are pure custody records with no learning points. The frozen inventory keeps 52 distinct requirements in 93 body associations, with 35 exact anchors and 86 field references. Seven existing owners gain self-contained examples and qualifications; no id, registration, alias, relation, short summary or artwork is added. Four complete abstracts and 44 complete selected official/textbook blocks retain their actual depth. Fourteen actual readers, static exports and full gates pass: 293 files, 3,101 tests, 2 skips. All final committed data bytes and graph fingerprints match the gate inputs. Twenty-six prior proof pointers are rebound without changed older excerpts or grades, and every earlier cohort and pending snapshot is preserved. Source-image execution, main/live and independent approval remain separate; the broader goal is active.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

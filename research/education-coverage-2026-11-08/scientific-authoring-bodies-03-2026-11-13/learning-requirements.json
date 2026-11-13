@@ -1,0 +1,562 @@
+{
+  "sourceInventorySha256": "7fc861aed5c1cbdb1959c3a8ee0cf65f5195bac98329b65fefc3bb8cbce59939",
+  "uniqueRequirements": 48,
+  "bodyRequirementAssociations": 118,
+  "requirements": [
+    {
+      "id": "gene-transcripts",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "One genomic region can have different promoter/transcript and coding contexts; a gene name does not identify one retained message or product.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "gene-position",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "The stipulated V position is coding in transcriptA but retained untranslated sequence in transcriptB with a downstream translation start.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "gene-continuity",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Alignment gaps preserve genomic coordinates in the drawing, while the processed RNA is continuous; picture gaps are not missing RNA molecules.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "gene-exons",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Retained exons can contain untranslated sequence, and functional noncoding RNA need not make protein.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "gene-reference",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Variant/product descriptions require the exact transcript accession and version rather than a gene name alone.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "gene-fiction",
+      "bodyIndices": [
+        1
+      ],
+      "requirement": "Promoters, exon widths, coding boundaries and coordinates are fictional and do not measure transcript abundance or protein production.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-one-chain",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "The selected model contains two domains on one continuous linker-connected chain; corrective calls do not make an extra connecting bridge a separate biological fact.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-arrangement",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "The same stipulated local domain folds can have different relative arrangements and interdomain gaps.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-confidence",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "Local fold confidence does not establish confidence in relative placement or an interdomain pocket.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-pocket",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "A proposed interdomain pocket is an empty cleft between surfaces in the stipulated model, not the linker, one domain interior or a validated ligand interaction.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-alternatives",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "Alternative hypothetical arrangements are not observed motion or disorder, and confidence is not experimental verification.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "domain-function",
+      "bodyIndices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "requirement": "A model arrangement, gap or palette does not establish binding affinity, activity, drug action or clinical benefit.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-reversible",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "An unchanged ligand can bind and be released reversibly; that does not itself depict chemical transformation.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-catalysis",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "The separate stipulated bond-cleavage example changes substrate into products while retaining atoms and reusing the enzyme.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-model",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "The simple one-site equilibrium occupancy model uses free ligand and identical independent sites without a competitor; total added ligand is a different input.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-half",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Free ligand equal toKd at10nM yields one-half model occupancy; five of ten icons is an illustration rather than a guaranteed realised sample.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-quantities",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Kd, Km and assayIC50 have different definitions and conditions; their numerical equality is not automatic.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-selectivity",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Binding affinity for one partner does not establish selectivity against other partners.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "binding-outcome",
+      "bodyIndices": [
+        10,
+        11
+      ],
+      "requirement": "Occupancy, catalytic change, downstream cellular effect and cell death require separate evidence; none establishes patient benefit.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-maximum",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "A partial agonist has a lower maximum in the stated system, which differs from a full agonist observed at a low concentration.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-baseline",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Neutral blockade leaves the stipulated baseline unchanged whereas inverse agonism reduces the constitutive baseline under the stated conditions.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-reference",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The neutral antagonist can reduce response when a reference agonist is present; that separate condition is distinct from changing baseline alone.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-models",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The five stated fictional response functions give limiting full/partial/neutral/inverse responses100/40/10/5, and reference-agonist response80 tending to10 with increasing antagonist.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-low-dose",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The fictional full-agonist response atc=0.5 is40, matching the partial curve limiting value without making the full agonist a partial agonist.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-axes",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Concentration axes are logarithmic and exclude zero; different vertical scales and limiting plateaus cannot be read as equal finite endpoints or comparable image distances.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-midpoints",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "Equal chosen curve midpoints are a design assumption, not observed equal potency; receptor abundance, coupling, endpoint, toxicity and constitutive activity matter.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "agonist-limits",
+      "bodyIndices": [
+        12
+      ],
+      "requirement": "The curves are an invented response assay, not measured receptor occupancy, doses, toxicity-driven reductions, clinical efficacy or a universal response law.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-branches",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A generic branched connection map is not experimentally established causal wiring in every tumour.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-ras",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Membrane-associatedRAS is represented as a GTP/GDP switch rather than a kinase.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-scaffold",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A selected noncatalytic scaffold can hold partners; signalling roles are not all catalytic phosphate transfers.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-kinase",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "A kinase transfers phosphate fromATP to a substrate withADP produced; phosphorylation is not universally activating.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-phosphatase",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Removing substrate phosphate is a different reaction and does not automatically regenerateATP.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-times",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The fictional siteX decrease at30minutes and unchanged count at2days are different measurements with different timing and denominators.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-inference",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "The two readouts alone do not establish direct target engagement, growth dependence or patient benefit.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "relay-icons",
+      "bodyIndices": [
+        13,
+        14
+      ],
+      "requirement": "Cell icons stand for a count assay rather than three actual measured cells; symbols and arrows do not supply sample sizes or effect estimates.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-nuclear",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Separate estrogen/ER and progesterone/PR examples depict classical intracellular transcription regulation, not anER-PR complex.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-nuclear-scope",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The classical example does not mean all hormone effects require transcription, all genes increase or every receptor permanently resides in the nucleus.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-egfr",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "In the selected EGF/EGFR example ligand binding is extracellular and kinase signalling is intracellular; the two-receptor/two-ligand scene is not a universal stoichiometry.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-growth",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "A growth-signalling relay does not establish cell division, a measured growth percentage or a guaranteed response.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-pd1",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "MembranePD-L1 on a neighbouring cell can contactPD-1 on a responding T cell, with inhibitory signalling in the T-cell compartment.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-pd1-scope",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "The neighbour need not be a tumour cell, and dampened signalling is not complete shutdown, killing or a diagnosis of exhaustion.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "ligand-benefit",
+      "bodyIndices": [
+        15,
+        16
+      ],
+      "requirement": "Selected receptor mechanisms and schematic molecular counts do not establish target eligibility, clinical efficacy or benefit.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-families",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The preserved family comparison distinguishes selected surface receptor mechanisms from intracellular receptors rather than one universal receptor location.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-relays",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "G-protein contact and a receptor-associated intracellular kinase/phosphorylated substrate are different selected relay roles.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-ions",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Ions and ligand symbols are different objects; four ion beads and two kinase-receptor chains are schematic counts rather than measured molecular stoichiometry.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-internal",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The entering-molecule/internal-receptor route differs from ligand binding at the outside face of a surface receptor.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-nucleus",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "The selected internal-receptor/nuclear route keeps the nuclear boundary and pore crossing distinct from outside binding; it is not a route required of every ligand.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    },
+    {
+      "id": "receptor-scope",
+      "bodyIndices": [
+        17,
+        18
+      ],
+      "requirement": "Theme preservation, drawn relationships and a complete nuclear outline do not independently establish measured receptor biology, drug delivery or accepted scientific review.",
+      "disposition": "represented-at-stated-scientific-scope-in-local-draft",
+      "scientificScopeOnly": true,
+      "independentCredit": 0
+    }
+  ],
+  "custodyOnlyIndices": [
+    0,
+    19
+  ],
+  "artAndExecutionConventionsExcludedFromEmpiricalCredit": true
+}

@@ -80,7 +80,8 @@ export const educationAccessEvidence: TermInput[] = [
     "summary": "The U.S. Clinical Laboratory Improvement Amendments program sets laboratory-quality requirements for testing human specimens. CMS distinguishes analytical oversight under that program from clinical validity, which concerns what a result means for a clinical condition. A research-use label describes intended purpose; a laboratory-developed-test description concerns how and where a test is developed and used. FDA product authorization concerns a specified product and intended use. These descriptions can coexist and do not form one universal ladder of clinical usefulness or payment.",
     "notes": [
       "The CMS FAQ is used here for the analytical-oversight versus clinical-validity distinction, not its historical discussion of FDA authority over laboratory-developed tests. Current procedural history is retained in the separate FDA LDT-rule record.",
-      "An entry in FDA establishment registration or device listing does not itself mean that the facility or device is approved, cleared or authorized. Registration and product authorization are separate claims."
+      "An entry in FDA establishment registration or device listing does not itself mean that the facility or device is approved, cleared or authorized. Registration and product authorization are separate claims.",
+      "Three examples separate intended uses. Validated ER immunohistochemistry in invasive breast cancer, with appropriate tissue handling, tumour-nucleus scoring and controls, has a marker-specific pathology and endocrine-treatment assessment role; it does not validate a new RNA score as a substitute. In a wholly fictional second example, assay T version 1 detects alteration M in fixed tumour tissue under rule R, and Drug A requires exactly that result in setting S. The stipulated match supplies that requirement within the exercise, without promising benefit; another specimen, result type or setting needs evidence for the changed use. A third fictional score Q combines RNA, spatial neighbourhoods and a derived culture response to propose Drug A. Reproducibility and biological support can justify research, but do not establish that Q-guided care improves outcomes against an appropriate comparator. A laboratory certificate does not supply that missing evidence. Useful research and an established clinical use can appear on different parts of one report."
     ],
     "links": [
       {
@@ -106,8 +107,7 @@ export const educationAccessEvidence: TermInput[] = [
       {
         "label": "FDA: registration and listing do not establish authorization",
         "url": "https://www.fda.gov/medical-devices/device-registration-and-listing/important-reminders-about-registration-and-listing"
-      }
-    ],
+      },{"label":"ASCO/CAP: ER and PR testing recommendations (2020)","url":"https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"},{"label":"FDA: companion diagnostic labeling for a group of oncology products (April 2020)","url":"https://www.fda.gov/media/120340/download"}],
     "related": [
       "research-use-only",
       "fda-ldt-rule",
@@ -116,7 +116,7 @@ export const educationAccessEvidence: TermInput[] = [
       "companion-diagnostic-term"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Regulation & policy"
   },
   {

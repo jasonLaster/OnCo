@@ -212,7 +212,7 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
 ],
   },
   {
-    id: "drug-target-and-mechanism", kind: "term", name: "Drug target and mechanism of action", category: "Methods and models", "asOf": "2026-11-11",
+    id: "drug-target-and-mechanism", kind: "term", name: "Drug target and mechanism of action", category: "Methods and models", "asOf": "2026-11-13",
     aka: [
   "drug target",
   "drug targets",
@@ -235,11 +235,11 @@ export const termsEducationPharmacologyToxicity2026: TermInput[] = [
 {
   "label": "KIMMTRAK U.S. label: gp100 peptide-HLA-A*02:01/CD3 recognition and indication",
   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
-}
-],
+},{"label":"Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer (The New England journal of medicine 2022)","url":"https://doi.org/10.1056/nejmoa2203690"}],
     notes: [
-"A fictional follow-up measures loss of a specified class-I peptide-HLA target after B2M loss, while a separate live-cell assay still finds accessible intact protein M. Those are two distinct observations: losing the measured peptide-HLA address does not remove the independently measured M address. Neither observation establishes delivery, immune-cell function, target-cell death or benefit. A surface-binding CAR or protein engager is not automatically immune-independent, and a peptide-HLA-targeting CAR, soluble TCR or antibody-derived mimic retains its specified recognition requirements."
-],
+      "A fictional follow-up measures loss of a specified class-I peptide-HLA target after B2M loss, while a separate live-cell assay still finds accessible intact protein M. Those are two distinct observations: losing the measured peptide-HLA address does not remove the independently measured M address. Neither observation establishes delivery, immune-cell function, target-cell death or benefit. A surface-binding CAR or protein engager is not automatically immune-independent, and a peptide-HLA-targeting CAR, soluble TCR or antibody-derived mimic retains its specified recognition requirements.",
+      "In a fictional experiment, receptor R is high in malignant cells, low in fibroblasts and similarly high in normal epithelial cells. A stain places it on cancer-cell membranes, while blocking R has little effect on growth under the tested conditions. This supports neither cancer selectivity nor a demonstrated growth dependency. R could be investigated as an antibody-drug-conjugate delivery address, but that hypothesis still needs evidence for binding, access, uptake where required, payload effect and relevant normal-tissue exposure. A plausible delivery address is not a promised drug response; enrichment, selectivity, engagement, dependence and clinical benefit are different claims."
+    ],
     related: [
   "small-molecule",
   "therapeutic-index",

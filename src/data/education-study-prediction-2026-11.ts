@@ -106,7 +106,7 @@ export const educationStudyPrediction202611Terms: TermInput[] = [
       "rescue experiment",
       "mechanism control"
     ],
-    "tldr": "A controlled perturbation changes one defined factor in an experiment and compares the response with control conditions, so that the change can be told apart from background, carrier effects and assay failure.",
+    "tldr": "Controlled perturbations deliberately change specified factors and compare responses with suitable controls. A model response alone does not prove its mechanism or patient benefit.",
     "summary": "A controlled perturbation deliberately changes a defined factor and measures the response against appropriate comparison conditions. Vehicle, positive, negative and mechanism controls answer different questions. A reproducible response can support an experimental claim without establishing its proposed mechanism or patient benefit. Baseline growth, timing, dose and the actual unit assigned to treatment matter.",
     "category": "Methods and models",
     "related": [
@@ -151,7 +151,7 @@ export const educationStudyPrediction202611Terms: TermInput[] = [
 
   "Attribute each readout to the relevant cells. An ATP-based signal can change through cell number or per-cell metabolism, and slower single-cell mass accumulation does not by itself show death. Direct death measurements and regrowth after washout ask further questions; regrowth concerns surviving cells, not revival of cells already dead. A mixed culture can change composition, and a nonmalignant-cell label alone does not establish a validated healthy-tissue control. Ladan's breast-slice chemotherapy assay was compared with response during preoperative treatment in a defined setting. That assay-specific validation does not validate every postoperative combination, human exposure or clinical decision. An inadequate viable preparation should remain uninterpretable rather than be called resistant.",
 ],
-    "asOf": "2026-11-12"
+    "asOf": "2026-11-13"
   },
   {
     "kind": "term",

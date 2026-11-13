@@ -142,7 +142,7 @@ export const educationMeasurementTerms: TermInput[] = [
     "kind": "term",
     "name": "Gene-expression signatures",
     "category": "Genomics & genetics",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-13",
     "tldr": "An expression signature combines measured gene messages using a defined scoring method.",
     "summary": "A signature combines selected RNA measurements by a defined algorithm; preprocessing, weights, reference data and software version are part of the definition; a gene list alone is not a test.",
     "notes": [
@@ -154,7 +154,8 @@ export const educationMeasurementTerms: TermInput[] = [
       "Analytical repeatability, clinical validity and clinical utility are separate questions.",
       "A bulk inflammatory signature can rise from more immune cells, changed state or both; a stress score does not establish protein activation, metabolic rate or dependence.",
       "Fictional teaching exercise: Replacing normalisation while retaining the old high cutoff is not validated; the old cutoff cannot supply missing validation.",
-      "An expression score requires compatible RNA input, locked preprocessing, genes, weights, reference, endpoint/horizon and software version. Existing data can be rescored without new tissue; acquiring RNA consumes material. Report categories, ranks, probabilities or unitless scores on their exact scale. Missing genes, batch, mixture and population shift undermine cutoffs; analytical, clinical and utility evidence remain separate."
+      "An expression score requires compatible RNA input, locked preprocessing, genes, weights, reference, endpoint/horizon and software version. Existing data can be rescored without new tissue; acquiring RNA consumes material. Report categories, ranks, probabilities or unitless scores on their exact scale. Missing genes, batch, mixture and population shift undermine cutoffs; analytical, clinical and utility evidence remain separate.",
+      "An expression-program score has meaning within its algorithm and background. For a score formed by subtracting matched control-gene expression, zero need not mean that no program genes were detected. The 90th percentile places a result relative to a specified reference; it does not mean that 90 percent of cells express the program or that a pathway is 90 percent active. Changing the genes, preprocessing, controls or reference can change the scale, so retain them with the method and version."
     ],
     "related": [
       "bulk-rna-seq"

@@ -14,7 +14,9 @@ export const educationBiologyEvidence: TermInput[] = [
     "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
     "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
     "notes": [
-      "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile."
+      "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+      "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+      "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain."
     ],
     "links": [
       {
@@ -24,15 +26,14 @@ export const educationBiologyEvidence: TermInput[] = [
       {
         "label": "NIGMS: stem cells and differentiation",
         "url": "https://www.nigms.nih.gov/biobeat/2024/11/what-are-stem-cells"
-      }
-    ],
+      },{"label":"Aberrant luminal progenitors as the candidate target population for basal tumor development in BRCA1 mutation carriers (Nature medicine 2009)","url":"https://doi.org/10.1038/nm.2000"},{"label":"Molecular characterization of basal-like and non-basal-like triple-negative breast cancer (The oncologist 2013)","url":"https://doi.org/10.1634/theoncologist.2012-0397"},{"label":"Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma (Science (New York, N.Y.) 2014)","url":"https://doi.org/10.1126/science.1254257"},{"label":"SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)","url":"https://doi.org/10.1093/gigascience/giaa151"},{"label":"Guidelines and definitions for research on epithelial-mesenchymal transition (Nature reviews. Molecular cell biology 2020)","url":"https://doi.org/10.1038/s41580-020-0237-9"}],
     "related": [
       "differentiation",
       "clonal-evolution",
       "cell-cycle"
     ],
     "kind": "term",
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {
@@ -46,8 +47,8 @@ export const educationBiologyEvidence: TermInput[] = [
     ],
     "tldr": "Tissue contains different cell groups and supporting material. Knowing which compartment produced a signal helps explain what the result can mean.",
     "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
-    "notes": ["Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.","An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer."],
-    "links": [{"label":"NCI SEER: epithelial organization and basement membrane","url":"https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"},{"label":"A spatially resolved single-cell genomic atlas of the adult human breast.","url":"https://pubmed.ncbi.nlm.nih.gov/37380767/"},{"label":"A single-cell and spatially resolved atlas of human breast cancers.","url":"https://pubmed.ncbi.nlm.nih.gov/34493872/"},{"label":"NCI SEER: Summary Stage 2018 manual v3.4, October 2026, in-situ and localized boundaries","url":"https://seer.cancer.gov/tools/ssm/Summary-Stage_v3.4.pdf"}],
+    "notes": ["Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.","An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer.","In a fictional comparison, gene R is high in cancer cells, low in fibroblasts and similarly high in normal luminal epithelial cells. The first contrast supports higher expression than fibroblasts, even if it passes a statistical threshold; it does not establish cancer selectivity. The normal epithelial comparison addresses that claim more closely, while leaving other organs, cell states and target accessibility untested. If that reference group is tiny, contaminated or prepared differently, preserve the unresolved comparison rather than declaring selectivity or exact equality. Normal epithelial cells can also contribute familiar lineage markers to a tumour specimen. An image-based tumour mask is an assignment that needs validation for its actual method and specimens, rather than automatic proof that every included cell is malignant."],
+    "links": [{"label":"NCI SEER: epithelial organization and basement membrane","url":"https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"},{"label":"A spatially resolved single-cell genomic atlas of the adult human breast.","url":"https://pubmed.ncbi.nlm.nih.gov/37380767/"},{"label":"A single-cell and spatially resolved atlas of human breast cancers.","url":"https://pubmed.ncbi.nlm.nih.gov/34493872/"},{"label":"NCI SEER: Summary Stage 2018 manual v3.4, October 2026, in-situ and localized boundaries","url":"https://seer.cancer.gov/tools/ssm/Summary-Stage_v3.4.pdf"},{"label":"A spatially resolved single-cell genomic atlas of the adult human breast (Nature 2023)","url":"https://doi.org/10.1038/s41586-023-06252-9"},{"label":"NCI Dictionary: stroma","url":"https://www.cancer.gov/publications/dictionaries/cancer-terms/def/stroma"}],
     "related": [
       "cell-membrane",
       "carcinoma",
@@ -55,7 +56,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "tumor-microenvironment"
     ],
     "kind": "term",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {
@@ -117,9 +118,9 @@ export const educationBiologyEvidence: TermInput[] = [
     "summary": "At a diploid location, heterozygous means that the two copies differ in the feature being considered; homozygous means they match. Hemizygous describes a single copy in the specified context. Tumor gains, losses and genome doubling can make a two-copy model inadequate. Loss of heterozygosity means loss of previously different allelic information; it can accompany a deletion or occur while total copy count remains unchanged. Total copy number alone cannot identify which allele was retained.",
     "notes": [
       "Variant allele frequency counts supporting reads or molecules under the assay’s definition. Purity, local copy state, subclonal mixtures and method affect it; it is not directly a cancer-cell percentage or a zygosity call. Phase asks whether specified variants share a DNA copy, a further question that a gene-name match does not answer.",
-
-  "Biallelic inactivation concerns whether either parental contribution still supplies useful function in the relevant cancer-cell population, rather than simply counting two physical DNA copies or two events somewhere in a tissue. A damaging change plus loss of the other contribution can support it, but phasing, allele-specific copy state, consequence and cell mixture matter. High VAF alone cannot establish this state. Nguyen and colleagues' pan-cancer analysis associated particular biallelic repair-gene alterations with genomic damage patterns; that association does not make every variant in every repair gene functionally equivalent or establish present drug sensitivity.",
-],
+      "Biallelic inactivation concerns whether either parental contribution still supplies useful function in the relevant cancer-cell population, rather than simply counting two physical DNA copies or two events somewhere in a tissue. A damaging change plus loss of the other contribution can support it, but phasing, allele-specific copy state, consequence and cell mixture matter. High VAF alone cannot establish this state. Nguyen and colleagues' pan-cancer analysis associated particular biallelic repair-gene alterations with genomic damage patterns; that association does not make every variant in every repair gene functionally equivalent or establish present drug sensitivity.",
+      "A haplotype groups linked sequence variants on a chromosome that tend to be inherited together. Phasing assigns variants to chromosome copies; that is different from counting carrier cancer cells. Labels A and B distinguish sequence versions without grading either as harmful or harmless. In a fictional set of 100 cancer cells, two variants each present in forty cells could occupy the same forty or separate groups of forty. The two individual fractions do not reveal their overlap. Joint sequence or cell-resolved evidence addresses co-occurrence, with its own sampling limits. Neither shared prevalence nor physical phase alone establishes a variant's functional importance."
+    ],
     "links": [
       {
         "label": "NHGRI: Allele",
@@ -142,8 +143,7 @@ export const educationBiologyEvidence: TermInput[] = [
         "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
       },
 
-  {"label":"Pan-cancer landscape of homologous recombination deficiency (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/33149131/"},
-],
+  {"label":"Pan-cancer landscape of homologous recombination deficiency (2020)","url":"https://pubmed.ncbi.nlm.nih.gov/33149131/"},{"label":"NHGRI: haplotype","url":"https://www.genome.gov/genetics-glossary/Haplotype"},{"label":"Absolute quantification of somatic DNA alterations in human cancer (Nature biotechnology 2012)","url":"https://doi.org/10.1038/nbt.2203"},{"label":"PyClone: statistical inference of clonal population structure in cancer (Nature methods 2014)","url":"https://doi.org/10.1038/nmeth.2883"}],
     "related": [
       "vaf",
       "gene-amplification",
@@ -152,7 +152,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "germline-vs-somatic"
     ],
     "kind": "term",
-    "asOf": "2026-11-12",
+    "asOf": "2026-11-13",
     "category": "Biology & measurement"
   },
   {

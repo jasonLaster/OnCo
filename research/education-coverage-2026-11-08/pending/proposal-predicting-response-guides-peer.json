@@ -1,0 +1,72 @@
+{
+  "version": "proposal-predicting-response-guides-peer",
+  "state": "Complete PR-371 model-context field proposal, not applied or registered here. In-memory reader capture grants no graph integration.",
+  "draft": 371,
+  "frozenPeerHead": "777023cf804d6a129cb8ddfac4c6f4aedf85e529",
+  "coordinatorDataHead": "74d1252dc3319dc646480836a0395ed124ce5330",
+  "records": [
+    {
+      "id": "model-context-of-use",
+      "kind": "term",
+      "name": "Context of use for a tumor model",
+      "aka": [
+        "tumor model fitness for purpose",
+        "functional model scope"
+      ],
+      "tldr": "A model needs the components required to answer its particular question. A model that works for one experiment may leave out the biology needed for another.",
+      "summary": "Tumor models differ in which cancer, stromal and immune components they retain, and those properties can change with the method. A primary organoid study preserved endogenous immune cells and examined checkpoint-blockade responses in that system. This establishes capabilities of a defined model, not a universal ability to predict clinical treatment benefit. The question, retained components, exposure, readout and comparison against relevant observations should accompany a model claim.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Organoid modeling of the tumor immune microenvironment (2018)",
+          "url": "https://doi.org/10.1016/j.cell.2018.11.021"
+        },
+        {
+          "label": "Source for experimental setting and intended-use interpretation",
+          "url": "https://www.fda.gov/media/154985/download"
+        },
+        {
+          "label": "Source for experimental setting and intended-use interpretation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-lines-as-proxy",
+        "cell-composition-confound",
+        "external-validation",
+        "experimental-versus-clinical-exposure"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "organoids",
+        "pdx-models"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Question-first reading framework. Name the intervention, required cells or processes, endpoint, observation time and intended inference. Predicting a molecular change, culture growth, scan response and benefit from a treatment strategy are different questions. Trust belongs to this question and evidence, not the model name or complexity. Include the consequence of an incorrect answer when deciding how much supporting evidence the use needs.",
+        "Construction and readout. Record source and identity, retained or added populations, viable window, preparation/version and missing components. Define measured or predicted object, units, reference and uncertainty. Check relevant controls, baseline growth and population attribution. A lower count than a dividing control is not necessarily a count below the start. Reliability within a run, independent biological specimens and correctness answer different questions. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC4887336/ ; https://pubmed.ncbi.nlm.nih.gov/30550791/ Human-derived cells or tissue are not complete human physiology. Repeatability can preserve a systematic error; a measured treatment effect does not identify its mechanism without comparisons that distinguish alternative explanations.",
+        "Prediction and proposed use. Evaluate outcomes not used to build or tune a rule, retain failures, uncertainty and mismatches, and examine relevant baselines. Attach assay version, population, treatment and endpoint to agreement. Ladan's preoperative breast-slice comparison cannot validate an unrelated postoperative drug or assay. Clinical validity and benefit from using a decision strategy remain distinct; the analytical-versus-clinical-validation owner holds that distinction. Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/",
+        "Scoped computational analogy. FDA's 2023 device-simulation guidance distinguishes verification of the mathematical implementation from empirical validation with independent observations, and treats calibration as separate from validation. Its stated scope is first-principles computational models in medical-device submissions, not a blanket rule for every machine-learning system or living culture. We use the distinction as a reading framework, not a universal certification ladder. Source: https://www.fda.gov/media/154985/download",
+        "Fictional example. A tumour-only culture repeatedly responds to Drug A. This does not test an immune-dependent Drug B or prove benefit because the cells came from a patient. Check the required immune interaction, actual intervention, endpoint and independent validation. Repeatability cannot repair a mismatch between question and model. These are invented drugs and a reading exercise. Complexity is useful when it represents biology necessary for the question and remains measurable. A simpler model may isolate a mechanism, while another model is needed for an interaction absent from it. More components alone do not show better prediction.",
+        "Recap. Question, construction, measurement and controls, intended prediction and proposed use are a checklist of distinct questions rather than a mandatory sequence or trust score. State what the model is trusted to answer, the evidence supporting that use and the questions still open.",
+        "An original wholly fictional validation exercise uses D0 and its repeated wells only for development, then reserves one pretreatment specimen from each of thirty new donors in an advanced breast-cancer research setting. Lock every fitting, threshold and preprocessing choice before their outcomes. The toy assay counts identified tumour cells after drug A at 0.3 micromoles per litre for 48 hours. Reportability requires malignant identity, calibrated counts, three usable wells per condition, vehicle growth above baseline and the prespecified positive-control response; mechanism results and raw variation remain separate. A treated-count median divided by the vehicle median at or below 0.5 predicts positive, not 50 percent killing. A blinded independent assessor compares the stipulated imaging-volume measurement before treatment and at week six; a decline of at least 20 percent is the invented reference-positive rule, not a clinical response criterion.",
+        "The fictional locked rule yields twenty reports and ten no-results among thirty donors. Among reportable cases, six are true positive, three false positive, two false negative and nine true negative, using the exercise's assumed-correct reference labels. There are eight reference positives, twelve negatives, nine positive predictions and eleven negative predictions. Correct classifications are 15/20 (75 percent), sensitivity 6/8 (75 percent), specificity 9/12 (75 percent), and positive predictive value 6/9 (about 66.7 percent). Reportable coverage is 20/30 (about 66.7 percent); 15/30 (50 percent) received a correct reportable classification. The ten no-results keep blank predictions, unknown failure reasons and unspecified outcomes, rather than becoming negative or resistant cases. These truth-based toy metrics do not turn an imperfect real MRI comparator into truth or establish clinical utility.",
+        "Preserve the original prediction and version before measuring an independent outcome, compare against the original rule, then investigate agreement, discordance and failures before developing a revision and testing it on new reserved data. A prospective evaluation fixes its predictions before the corresponding outcomes; retrospective analysis examines material and outcomes already observed. Neither label alone establishes useful care. If the toy team changes v1 after inspecting three false positives, v2 is development and v1's matrix and ten no-results remain unchanged. The later breast-study exercise likewise imagines revising a rule after three sensitive dish calls matched intermediate MRI outcomes; those comparisons are not assumed truth labels. Reusing the same twenty cases evaluates fit to the information used for revision. A move from advanced-disease drug A to postoperative drug B changes intended use again, and improvement during several treatments cannot isolate which treatment helped."
+      ],
+      "category": "Methods and models"
+    }
+  ]
+}

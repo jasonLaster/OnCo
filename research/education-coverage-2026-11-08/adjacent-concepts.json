@@ -3757,5 +3757,43 @@
         }
       ]
     }
+  },
+  {
+    "id": "predicting-response-guides-source-and-integration-followups",
+    "title": "Response-prediction interval level and held model-context fields",
+    "domain": "functional-model-evidence-adjacent",
+    "sourceURLs": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/",
+      "https://github.com/judegomila/OnCo/pull/371"
+    ],
+    "discoveryOccurrences": [
+      "predicting-response-guides-2026-11-13"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator source-depth and integration followup; no added teaching credit",
+      "checkedAt": "2026-11-13",
+      "rationale": "The missing interval-level clause and unapplied owner field remain explicit. Reading limits and broader product/expert/language states stay in the cohort packet.",
+      "points": [
+        {
+          "id": "reported-interval-level",
+          "requirement": "Verify the confidence level and interval construction for Ladan 15/20 agreement before assigning the Guide claimed 95-percent level. The matching raw passages and typeset page report only CI 53–89 percent; numerical Wilson consistency is not author-method verification.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Obtain a primary method statement or author clarification; until then retain the reported bounds without assigning a confidence level."
+          ]
+        },
+        {
+          "id": "model-context-peer-integration",
+          "requirement": "The complete model-context-of-use field proposal remains unapplied to unmerged PR #371. Thirty-nine distinct represented units, including the original binary toy and feedback exercises, receive no registered-root integration credit.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Coordinate the complete before/after fields with the canonical PR-371 owner and validate the resulting registered graph; do not register a competing id."
+          ]
+        }
+      ]
+    }
   }
 ]

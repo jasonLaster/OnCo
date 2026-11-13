@@ -1,0 +1,311 @@
+{
+  "checks": [
+    {
+      "name": "original reading minutes",
+      "expression": "12+12+12",
+      "value": 36,
+      "expected": 36,
+      "scope": "Authored reading budget or explicitly fictional premises; not an empirical estimate.",
+      "passed": true
+    },
+    {
+      "name": "later reading minutes",
+      "expression": "12+12+12+14",
+      "value": 50,
+      "expected": 50,
+      "scope": "Authored reading budget or explicitly fictional premises; not an empirical estimate.",
+      "passed": true
+    },
+    {
+      "name": "net-growth example treatment/control",
+      "expression": "100/200",
+      "value": 0.5,
+      "expected": 0.5,
+      "scope": "Authored reading budget or explicitly fictional premises; not an empirical estimate.",
+      "passed": true
+    },
+    {
+      "name": "net-growth example start-to-treatment change",
+      "expression": "100-100",
+      "value": 0,
+      "expected": 0,
+      "scope": "Authored reading budget or explicitly fictional premises; not an empirical estimate.",
+      "passed": true
+    },
+    {
+      "name": "toy matrix total",
+      "expression": "6+3+2+9",
+      "value": 20,
+      "expected": 20,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy reference positive",
+      "expression": "6+2",
+      "value": 8,
+      "expected": 8,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy reference negative",
+      "expression": "3+9",
+      "value": 12,
+      "expected": 12,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy model positive",
+      "expression": "6+3",
+      "value": 9,
+      "expected": 9,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy model negative",
+      "expression": "2+9",
+      "value": 11,
+      "expected": 11,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy accuracy",
+      "expression": "(6+9)/20",
+      "value": 0.75,
+      "expected": 0.75,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy sensitivity",
+      "expression": "6/8",
+      "value": 0.75,
+      "expected": 0.75,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy specificity",
+      "expression": "9/12",
+      "value": 0.75,
+      "expected": 0.75,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy PPV",
+      "expression": "6/9",
+      "value": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy coverage",
+      "expression": "20/30",
+      "value": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy matching-result yield",
+      "expression": "15/30",
+      "value": 0.5,
+      "expected": 0.5,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "toy no result",
+      "expression": "30-20",
+      "value": 10,
+      "expected": 10,
+      "scope": "Wholly fictional original development/validation exercise; assumed-correct toy reference, not a real clinical trial.",
+      "passed": true
+    },
+    {
+      "name": "Ladan biopsy funnel",
+      "expression": "41-3-8",
+      "value": 30,
+      "expected": 30,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan assay funnel",
+      "expression": "30-6-1",
+      "value": 23,
+      "expected": 23,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan comparison funnel",
+      "expression": "23-3",
+      "value": 20,
+      "expected": 20,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan matrix total",
+      "expression": "2+3+2+13",
+      "value": 20,
+      "expected": 20,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan row sensitive",
+      "expression": "2+3",
+      "value": 5,
+      "expected": 5,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan row intermediate",
+      "expression": "2+13",
+      "value": 15,
+      "expected": 15,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan MRI sensitive",
+      "expression": "2+2",
+      "value": 4,
+      "expected": 4,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan MRI intermediate",
+      "expression": "3+13",
+      "value": 16,
+      "expected": 16,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan agreement",
+      "expression": "(2+13)/20",
+      "value": 0.75,
+      "expected": 0.75,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan MRI-positive agreement",
+      "expression": "2/4",
+      "value": 0.5,
+      "expected": 0.5,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan fraction of positive calls matching MRI",
+      "expression": "2/5",
+      "value": 0.4,
+      "expected": 0.4,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan coverage",
+      "expression": "23/30",
+      "value": 0.7666666666666667,
+      "expected": 0.7666666666666667,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan matching-result yield",
+      "expression": "15/30",
+      "value": 0.5,
+      "expected": 0.5,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Ladan intermediate fraction among agreement",
+      "expression": "13/15",
+      "value": 0.8666666666666667,
+      "expected": 0.8666666666666667,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Boileve establishment",
+      "expression": "54/87",
+      "value": 0.6206896551724138,
+      "expected": 0.6206896551724138,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Boileve evaluable fraction",
+      "expression": "34/87",
+      "value": 0.39080459770114945,
+      "expected": 0.39080459770114945,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Izumchenko engraftment arithmetic",
+      "expression": "578/1163",
+      "value": 0.49699054170249357,
+      "expected": 0.49699054170249357,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Izumchenko disease-control agreement",
+      "expression": "112/129",
+      "value": 0.8682170542635659,
+      "expected": 0.8682170542635659,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "Izumchenko exact category",
+      "expression": "91/129",
+      "value": 0.7054263565891473,
+      "expected": 0.7054263565891473,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    },
+    {
+      "name": "EXALT ratio endpoint fraction",
+      "expression": "30/56",
+      "value": 0.5357142857142857,
+      "expected": 0.5357142857142857,
+      "scope": "Derived from named observed source counts; arithmetic is not evidence of clinical utility or a perfect comparator.",
+      "passed": true
+    }
+  ],
+  "count": 36,
+  "allPassed": true,
+  "intervalConsistencyOnly": {
+    "method": "Wilson score, z explicitly set for a two-sided 95-percent construction",
+    "calculatedBounds": [
+      0.531299122381256,
+      0.8881382985923343
+    ],
+    "roundedPercentBounds": [
+      53,
+      89
+    ],
+    "publishedBounds": [
+      53,
+      89
+    ],
+    "doesNotVerifyPublishedMethodOrLevel": true
+  },
+  "limits": "Rounding and derived agreement fractions do not supply a clinical reference standard, a patient-specific probability or causal benefit. Izumchenko reports 49 percent; the exact fraction is about 49.7 percent. Ladan table footnote/main-text discrepancy is preserved separately."
+}

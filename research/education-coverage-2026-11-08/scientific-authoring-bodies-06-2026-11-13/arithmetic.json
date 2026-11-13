@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "statement": "tiles",
+      "value": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "statement": "units per tile",
+      "value": 5.0,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "statement": "cancer tiles",
+      "value": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "statement": "cancer area",
+      "value": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "statement": "cancer bed fraction",
+      "value": 0.2,
+      "expected": 0.2,
+      "pass": true
+    },
+    {
+      "statement": "other bed area",
+      "value": 80,
+      "expected": 80,
+      "pass": true
+    },
+    {
+      "statement": "in situ cancer share",
+      "value": 0.25,
+      "expected": 0.25,
+      "pass": true
+    },
+    {
+      "statement": "invasive cancer share",
+      "value": 0.75,
+      "expected": 0.75,
+      "pass": true
+    },
+    {
+      "statement": "in situ bed area",
+      "value": 5.0,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "statement": "invasive bed area",
+      "value": 15.0,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "statement": "invasive bed fraction",
+      "value": 0.15000000000000002,
+      "expected": 0.15,
+      "pass": true
+    },
+    {
+      "statement": "area conservation",
+      "value": 100,
+      "expected": 100,
+      "pass": true
+    }
+  ],
+  "allPass": true,
+  "scope": "Fictional equal-area premises only; no clinical observed rate, pathology precision, cell count, pixel metric or risk estimate."
+}

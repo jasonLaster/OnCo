@@ -4,6 +4,19 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [sixth scientific/custody checkpoint](scientific-authoring-bodies-06-2026-11-13/README.md) fully reads twenty more bodies: eighteen teaching and two supporting. Forty pinned entries retain both versions. The twenty paths contain 39,125 bytes per pin; eighteen distinct blobs contain 37,350 bytes. Forty unique scientific requirements have fifty-five exact anchors across fourteen existing owners, including the linked apoptosis pathway. All required teaching is already represented at the stated scope, so no data edit, new id or date is needed. Sixteen complete abstracts, six complete targeted consensus passages and eleven complete preserved official-PDF text pages retain actual reading depth. Fourteen actual readers, static exports and twelve fictional arithmetic checks pass. All 23,091 graph records and code/data equal the previous full-gate runtime, so those gates are explicitly reused. New audit files receive their own parse, proof, preservation and deterministic replay checks. No native figure was freshly viewed, ordinary lesson regraded or main/live credit added; the broader goal remains active.
+
+| Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |
+|---|---:|---:|---:|---:|
+| Original (537 sources) | 537 (530 teaching, 7 routing) | 519 | 6,813 / 6,827 | 14 |
+| Later (550 sources) | 550 (545 teaching, 5 routing) | 528 | 7,282 / 7,302 | 20 |
+
+Original assets now total 670 teaching, 92 supporting and 1,126 unclassified; later assets total 669 teaching, 92 supporting and 1,127 unclassified. Each pin retains 1,888 assets. Ordinary-source obligations, literature screening and open scientific clauses are unchanged.
+
+There are 129 registered proposal receipts selecting 698 canonical ids: 180 absent from baseline and 518 already present. Adding the already existing apoptosis pathway to the selection increases the selected-existing count without new authorship. All 5,999 reader-observation ids, 5,769 canonical/language slots, 1,682 stored texts and 4,087 English fallbacks are unchanged. Forty-nine adjacent groups and six schema findings remain open. Both ledgers retain exit 2 for unfinished work and zero stale or missing proofs.
+
+## Historical fifth-body checkpoint
+
 The [fifth scientific/custody checkpoint](scientific-authoring-bodies-05-2026-11-13/README.md) fully reads twenty more bodies (30,307 unique bytes, forty entries): fifteen teaching and five supporting. Two separately frozen native TNBC themes add four entries. Forty-six unique requirements have sixty exact anchors across seventeen existing owners; all teaching was already present, so no data edit or new id is needed. Six abstracts, eleven complete targeted primary passages, nine official blocks and ten complete PDF text pages retain actual depth; four PDF pages and both native PNGs were viewed. Seventeen actual readers, two cancer Data sections, static exports and twenty-one arithmetic checks pass. Code/data and all 23,091 graph records match the immediately preceding full-gate run, which is explicitly reused rather than rerun. New research files receive their own parse, preservation, proof and deterministic replay checks. Ordinary grades and open clauses remain unchanged; the broader goal is active.
 
 | Inventory | Assessed or classified | Complete draft sources | Evidenced obligations | Open assessed obligations |

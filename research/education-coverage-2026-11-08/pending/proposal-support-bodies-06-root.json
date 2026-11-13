@@ -1,0 +1,1547 @@
+{
+  "version": "proposal-support-bodies-06-root",
+  "state": "Fourteen existing registered local draft-root owners selected at an audit-only source checkpoint. Selection is neither new authorship nor wholesale verification. No canonical code/data field, id, date, alias, relation, link or registration changed. Previous full gates reused only by exact unchanged code/data and all graph fingerprints.",
+  "draft": 375,
+  "committedRootSnapshotHead": "514033fa9fd14276f9e4da76f7b55dc560e21b19",
+  "lastDataCommit": "4b20831242cacf74482e9d48b01dd561dab65c1b",
+  "records": [
+    {
+      "id": "resection-margins",
+      "kind": "term",
+      "name": "Resection margins (R0 / R1 / R2)",
+      "aka": [
+        "margins",
+        "margin",
+        "surgical margins",
+        "negative margins",
+        "positive margins",
+        "margin-negative",
+        "margin-positive",
+        "clear margins",
+        "R0",
+        "R0 resection",
+        "R1 resection",
+        "R2 resection",
+        "microscopic residual disease",
+        "margin status",
+        "circumferential resection margin",
+        "CRM",
+        "positive margin",
+        "resection margin"
+      ],
+      "tldr": "Resection margins describe the assessed boundaries of removed tissue. A clear local boundary is not proof that no cancer exists elsewhere, and interpretation depends on the organ and reporting standard.",
+      "summary": "Margin assessment examines the cut boundaries of a submitted specimen and any additional margins. The operative account, sampled pathology and final residual-disease classification are connected but different observations. In the traditional R classification, R0 means no residual tumour under the applied assessment, R1 microscopic residual tumour and R2 gross residual tumour. These categories do not establish absence of every unseen cancer cell.\n\nDefinitions and required margin distances can vary by organ, disease and jurisdiction. The 2024 IASLC proposal describes an additional lung-cancer category for uncertain residual status. A clear microscopic edge is therefore not interchangeable with every definition of complete resection. Use the relevant report and standard rather than transferring a breast or pancreatic convention to every cancer.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Resection_margin",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Resection_margin"
+        },
+        {
+          "label": "Campbell, Histopathology 2009: classification of R1 resections, tumour within 1 mm of a margin",
+          "url": "https://doi.org/10.1111/j.1365-2559.2009.03376.x"
+        },
+        {
+          "label": "Ghaneh, Ann Surg 2019: positive resection margins, survival and recurrence in ESPAC-3 (1,151 patients)",
+          "url": "https://doi.org/10.1097/sla.0000000000002557"
+        },
+        {
+          "label": "NCI: lumpectomy and tissue assessment",
+          "url": "https://www.cancer.gov/types/breast/treatment/surgery/lumpectomy"
+        },
+        {
+          "label": "NCI: breast surgery roles and extent",
+          "url": "https://www.cancer.gov/types/breast/treatment/surgery"
+        },
+        {
+          "label": "IASLC 2024 residual-tumour classification proposal: definitions and uncertainty",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38569931/"
+        },
+        {
+          "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Society of Surgical Oncology-American Society for Radiation Oncology consensus guideline on margins for breast-conserving surgery with whole-breast irradiation in stages I and II invasive breast cancer.",
+          "url": "https://doi.org/10.1245/s10434-014-3481-4"
+        },
+        {
+          "label": "Society of Surgical Oncology-American Society for Radiation Oncology-American Society of Clinical Oncology Consensus Guideline on Margins for Breast-Conserving Surgery with Whole-Breast Irradiation in Ductal Carcinoma In Situ.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27527714/"
+        }
+      ],
+      "tags": [
+        "precision"
+      ],
+      "related": [
+        "wide-local-excision",
+        "whipple",
+        "lymphovascular-invasion",
+        "mohs-surgery",
+        "breast-conserving-surgery-versus-mastectomy",
+        "tumour-bed-boost",
+        "surgical-margins-keratinocyte-cancer"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "skin-cancer",
+        "basal-cell-carcinoma",
+        "cutaneous-scc"
+      ],
+      "sections": [
+        "surgery",
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "r0-r1-margin-pancreatic"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "After breast conservation, further excision, completion mastectomy and axillary surgery address different findings and tissues. A second operation after initial pathology is not itself evidence of recurrence. Negative examined margins do not guarantee complete absence of microscopic disease.",
+        "For breast resection, final margin status uses the oriented main specimen together with relevant separately submitted margins. Ink identifies cut surfaces. An old main-specimen edge may cease to be the final edge when an additional oriented strip is removed; if their relationship is unclear, preserve uncertainty and request surgical correlation.",
+        "Report invasive carcinoma and DCIS separately, including the named final edge, whether the component reaches ink and its distance in millimetres when measurable. At ink is involved; a small gap without cancer at ink is a narrow negative margin. Ink artefact, limited sampling, compression and unclear orientation can limit interpretation.",
+        "The 2014 invasive-cancer consensus supported no ink on tumour for stage I to II invasive disease treated with breast conservation and whole-breast irradiation. Its evidence base excluded neoadjuvant therapy and pure DCIS. The 2016 pure-DCIS consensus supported a 2-mm adequate-margin standard with whole-breast irradiation; a narrower negative margin alone was not an indication for mastectomy. These are scoped standards, not interchangeable rules for every organ or operation.",
+        "In a fictional confirmed final edge with DCIS 0.7 mm from ink and no cancer at ink, the margin is narrow and negative rather than involved. Distance alone does not choose another operation. Conversely, invasive cancer at the confirmed outer edge of an additional lateral specimen remains a local margin finding even if a blood assay is negative.",
+        "Negative invasive margins and involved DCIS margins can coexist. A pCR definition permitting DCIS can coexist with a DCIS margin problem. The lymph-node capsule, a vessel lumen and a surgical cut edge are different boundaries. Margin status does not diagnose distant metastasis or whole-body clearance; completion excision, mastectomy and axillary surgery address different tissues.",
+        "A margin is a cut boundary of removed tissue. Pathology assesses sampled sections of that local boundary: a positive final margin means cancer reaches the evaluated cut edge. Sampling, sectioning and staining consume finite tissue, and cannot examine every possible cell. No ink on tumour does not mean no cancer anywhere in the person.",
+        "Pancreatic cancer uses a 1 mm rule: tumour within 1 mm of a margin is R1 (Royal College of Pathologists), which makes 76 to 85 percent of standardised head resections R1; the pancreatic glossary term carries the series and the ESPAC-3 survival by margin (Ghaneh 2019)."
+      ],
+      "category": "Pathology"
+    },
+    {
+      "id": "pcr",
+      "kind": "term",
+      "name": "Pathologic complete response (pCR)",
+      "aka": [
+        "pathological complete response",
+        "ypT0",
+        "ypN0",
+        "non-pCR",
+        "residual invasive disease",
+        "residual disease after neoadjuvant"
+      ],
+      "tldr": "Pathological complete response records the absence of specified residual cancer in tissue after preoperative treatment. The specimen and response definition must accompany the result.",
+      "summary": "In breast cancer, pCR must retain its named definition and specimens. FDA trial guidance describes two combined breast-and-sampled-node endpoints after neoadjuvant treatment: one permits residual ductal carcinoma in situ and the other excludes it. Older studies have also used breast-only definitions, so their response rates cannot be assumed to describe the combined endpoint. Response in sampled tissue, margin status, imaging, blood tests and long-term outcomes answer different questions.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03036488: KEYNOTE-522",
+          "url": "https://clinicaltrials.gov/study/NCT03036488"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT05812807: OptimICE-pCR (A012103)",
+          "url": "https://clinicaltrials.gov/study/NCT05812807"
+        },
+        {
+          "label": "FDA breast pCR endpoint guidance, July 2020",
+          "url": "https://www.fda.gov/media/83507/download"
+        },
+        {
+          "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+        },
+        {
+          "label": "KEYNOTE-522 primary pCR analysis, Schmid et al. 2020",
+          "url": "https://doi.org/10.1056/NEJMoa1910549"
+        },
+        {
+          "label": "KEYNOTE-522 final overall survival, Schmid et al. 2024",
+          "url": "https://doi.org/10.1056/NEJMoa2409932"
+        },
+        {
+          "label": "Cortazar, Lancet 2014: pathological complete response and long-term benefit, the CTNeoBC pooled analysis",
+          "url": "https://doi.org/10.1016/s0140-6736(13)62422-8"
+        },
+        {
+          "label": "Liedtke, J Clin Oncol 2008: response to neoadjuvant therapy and long-term survival in triple-negative breast cancer",
+          "url": "https://doi.org/10.1200/jco.2007.14.4147"
+        },
+        {
+          "label": "Schmid, N Engl J Med 2020: KEYNOTE-522, pembrolizumab for early triple-negative breast cancer",
+          "url": "https://doi.org/10.1056/nejmoa1910549"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "surrogate-validation",
+        "surrogate-endpoint",
+        "efs",
+        "window-of-opportunity-trial",
+        "neoadjuvant-adjuvant",
+        "response-adaptive-randomisation",
+        "treatment-effect-in-pathology"
+      ],
+      "cancers": [
+        "tnbc",
+        "breast-her2-positive",
+        "tnbc-early"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "keynote-522",
+        "optimice-pcr"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In FDA breast-trial guidance, ypT0/Tis ypN0 means no residual invasive cancer on haematoxylin and eosin (H&E) examination of the complete resected breast specimen and all sampled regional nodes after neoadjuvant systemic treatment. Residual DCIS is permitted. The stricter ypT0 ypN0 definition also excludes in situ cancer. Preserve the actual protocol and nodal assessment rules.",
+        "Breast-only clearance is not the combined breast-and-node endpoint. Residual invasive cancer in a sampled node prevents that combined pCR result even when breast invasion is absent or a blood assay is negative. A small negative biopsy, imaging response and negative circulating tumour DNA are different observations.",
+        "Residual DCIS can meet the invasive-clearance definition while still requiring separate margin assessment. In an otherwise qualifying specimen with DCIS but no breast invasion and no residual sampled-node cancer, the permissive definition is met and the stricter one is not. Neither pCR nor a negative local edge certifies cure or absence at every body site.",
+        "Cortazar and colleagues' CTNeoBC analysis pooled 11955 patients from 12 trials. In triple-negative disease, attaining ypT0/is ypN0 was associated with event-free-survival HR 0.24 and overall-survival HR 0.16 versus not attaining pCR. This patient-level association is not a guaranteed personal outcome. The 95% confidence intervals were 0.18 to 0.33 for the triple-negative EFS association and 0.11 to 0.25 for OS.",
+        "Trial-level increases in pCR had little association with event-free or overall-survival effects in CTNeoBC (R squared 0.03 and 0.24 respectively). The analysis could not validate pCR as a surrogate for improved long-term outcomes. A study reporting a pCR gain without mature survival comparison cannot infer the size of a survival benefit from the responder association.",
+        "FDA's July 2020 revision 1 guidance concerns pCR endpoints for trial design and accelerated approval in high-risk early-stage breast cancer. It is not an individual treatment or cure rule. In the notation, y denotes assessment after neoadjuvant treatment and p denotes pathological assessment. Sections and stains consume finite tissue; incomplete sampling, unexamined nodes and mixed endpoint definitions can invalidate comparisons.",
+        "KEYNOTE-522 separately demonstrated endpoint and survival results for the whole perioperative regimen in previously untreated stage II or III TNBC. In the 2020 primary pCR analysis of the first 602 randomised participants, pembrolizumab plus neoadjuvant chemotherapy yielded 64.8% pCR versus 51.2% with placebo plus chemotherapy (difference 13.6 percentage points, 95% CI 5.4 to 21.8). The final 2024 overall-survival report covered all 1,174 randomised participants, including postoperative pembrolizumab or placebo: at 60 months, overall survival was 86.6% versus 81.7% (P = 0.002; median follow-up 75.1 months). Survival was measured directly; the pCR gain did not mathematically predict it or isolate which perioperative component produced the benefit.",
+        "In fictional case A, no breast invasion, residual DCIS and no residual cancer in sampled nodes meet ypT0/Tis ypN0 but not ypT0 ypN0. In fictional case B, the same breast finding plus a 4-mm residual invasive nodal deposit meets neither combined endpoint. Identical DCIS-at-ink findings in either case remain a separate margin question.",
+        "Subtract within the same endpoint and analysis: 64.8 minus 51.2 gives a 13.6-percentage-point pCR difference in the first 602 participants; 86.6 minus 81.7 gives 4.9 points in the separately reported 60-month survival estimates for all 1,174. The latter is often rounded to about five more people alive per hundred under the trial comparison. These time-to-event estimates are not literal counts from a complete hundred-person group, an individual forecast or a conversion from the pCR difference.",
+        "Triple-negative disease is where pathological complete response means most: in the CTNeoBC pooled analysis of 11,955 patients, eradication of tumour from breast and nodes (ypT0/is ypN0) was associated with event-free survival hazard ratio 0.24 and overall survival 0.16 in triple-negative disease, the strongest association of any subtype, yet trial-level increases in the rate did not predict survival gains (Cortazar 2014).",
+        "Triple-negative patients reach a complete response more often than others (22 against 11 percent in the MD Anderson series, 1985 to 2004) and then have similar survival, while those with residual disease do worse, particularly in the first three years (Liedtke 2008). Adding pembrolizumab to platinum chemotherapy raised the rate from 51.2 to 64.8 percent in KEYNOTE-522 (Schmid 2020)."
+      ],
+      "category": "Endpoints",
+      "wikipediaChecked": "2026-09-22"
+    },
+    {
+      "id": "rcb",
+      "kind": "term",
+      "name": "Residual cancer burden (RCB)",
+      "aka": [],
+      "tldr": "Residual cancer burden combines breast and regional-node pathology measurements after preoperative chemotherapy into a continuous score and four response classes.",
+      "summary": "Residual cancer burden (RCB) combines measurements from the treated breast tumour bed and regional lymph nodes after neoadjuvant chemotherapy. The continuous index and its four classes are different outputs: RCB-0, RCB-I, RCB-II and RCB-III. It is not an anatomical stage or a percentage recurrence risk.\n\nThe six inputs are two residual tumour-bed dimensions in millimetres, overall cancer cellularity, the percentage of that cancer that is in situ, the positive-node count and the largest nodal metastasis diameter in millimetres. Overall cellularity uses tumour-bed area as its denominator; the in situ percentage uses the cancer component. In a fictional 100-unit bed with 20 units of cancer, of which 25% is in situ, invasive cancer occupies 15 units: 20 × (1 - 0.25). The 25% in situ input is fictional denominator teaching outside the MD Anderson protocol's listed nearest-10% estimates with low 1% and 5% choices. These are area fractions, not counted-cell fractions or sequencing purity.\n\nMicroscopic examination can revise the bed dimensions initially estimated at gross examination. Cellularity is averaged across the defined bed rather than taken only from the densest focus. A sparse breast bed cannot establish the nodal inputs, final margins or distant-disease status. The original study evaluated 382 patients in two chemotherapy cohorts and found prognostic information in the combined index. An association with later outcomes does not establish the benefit of a proposed additional treatment or supply an individual forecast.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Residual cancer burden index (Symmans et al., J Clin Oncol 2007)",
+          "url": "https://doi.org/10.1200/JCO.2007.10.6823"
+        },
+        {
+          "label": "MD Anderson detailed RCB pathology methods",
+          "url": "https://www.mdanderson.org/content/dam/mdanderson/documents/for-physicians/clinical-calculators/PLM_protocol_RCB_calculators_BRO.pdf"
+        },
+        {
+          "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Measurement of residual breast cancer burden to predict survival after neoadjuvant chemotherapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17785706/"
+        },
+        {
+          "label": "Residual cancer burden after neoadjuvant chemotherapy and long-term survival outcomes in breast cancer: a multicentre pooled analysis of 5161 patients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34902335/"
+        },
+        {
+          "label": "MD Anderson RCB calculator",
+          "url": "https://www3.mdanderson.org/app/medcalc/index.cfm?pagename=jsconvert3"
+        },
+        {
+          "label": "NCI BOLD preoperative data elements, June 2014: RCB class boundaries",
+          "url": "https://www.cancer.gov/about-nci/organization/ccct/steering-committees/nctn/breast-cancer/boldtfpreoperativecdes-rev.pdf"
+        },
+        {
+          "label": "Symmans, J Clin Oncol 2017: long-term prognosis by residual cancer burden and breast cancer subtype",
+          "url": "https://doi.org/10.1200/jco.2015.63.1010"
+        },
+        {
+          "label": "Telli, Clin Cancer Res 2016: HRD score predicts response to platinum neoadjuvant chemotherapy in triple-negative breast cancer",
+          "url": "https://doi.org/10.1158/1078-0432.ccr-15-2477"
+        },
+        {
+          "label": "Brierley et al., International Journal of Cancer 2026: the 9th edition of the UICC TNM classification of malignant tumours, updates and rationale for change (breast: the classification remains unchanged, the yp classification is clarified)",
+          "url": "https://doi.org/10.1002/ijc.70561"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tumor-bed-cellularity",
+        "treatment-effect-in-pathology"
+      ],
+      "cancers": [
+        "tnbc",
+        "tnbc-early"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "tnm-breast-cancer-editions"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-symmans-j-clin-oncol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "RCB combines six post-treatment pathology inputs: two breast-bed dimensions in millimetres, overall cancer area percentage, in situ percentage of the cancer component, positive-node count and largest nodal metastasis diameter in millimetres. Distinguish continuous index from classes 0, I, II and III, and both from ypTNM stage or recurrence percentages.",
+        "CAP 4.11 describes the RCB breast span as the two-dimensional extent of residual invasive carcinoma, excluding DCIS from the span. The MD Anderson microscopy protocol instead starts with the gross tumour bed, revises its boundaries microscopically and estimates invasive plus in situ cancer area in that bed, using the largest bed for multicentric disease. State the protocol and denominator rather than merging these wordings. The largest contiguous residual invasive focus without adjacent treatment fibrosis supplies ypT; the gross scar, that focus and an RCB bed are different measurements.",
+        "RCB nodal measurement includes intervening treatment-related fibrosis and extranodal extension within the residual metastatic area, whereas ypN uses the largest contiguous residual focus without that fibrosis. Separate deposits divided by normal nodal tissue remain separate. Routine-stain ITC-only nodes enter RCB calculations although they are excluded from the AJCC positive-node count. Do not move a nodal number between these methods without its definition.",
+        "CAP states that RCB was not designed or validated for neoadjuvant endocrine treatment and advises against reporting its score or class there. Individual measurements such as cellularity may still describe residual disease. Use the official pathology assessment and calculator for unusual findings; low breast cellularity alone cannot establish nodal clearance or pCR.",
+        "Yau and colleagues pooled 5161 chemotherapy-treated stage I to III patients from 12 institutes and trials. Across receptor subtypes, the unadjusted event hazard ratio per RCB unit ranged from 1.55 to 2.16. The adjusted range was 1.52 to 2.09. In the complete-covariate triple-negative model (1585 patients), the adjusted HR was 1.93 (95% CI 1.74 to 2.13). Adjustment included age and baseline T category, nodal status and grade; these are prognostic associations, not treatment-benefit estimates.",
+        "For a fictional 20 by 10 mm bed, 20% overall cancer cellularity, 50% in situ share of cancer, two positive nodes and a 3-mm largest nodal metastasis, d_prim is 14.1421356 mm and f_inv is 0.10. The breast term is 1.4849628 and nodal term 1.3256445, summing to 2.8106074, approximately 2.811 and RCB-II. With zero involved nodes the nodal term is zero and the breast term remains approximately 1.485, also RCB-II. This is not stage II or a recurrence percentage; the separate 25% in situ denominator illustration is not this specimen.",
+        "RCB classes use the continuous index without rounding at a boundary: 0 is RCB-0; greater than 0 through 1.36 is RCB-I; greater than 1.36 through 3.28 is RCB-II; and greater than 3.28 is RCB-III. The NCI BOLD data elements record these cutoffs. Residual in situ disease can be compatible with RCB-0 under the method; use the specified nodal and pathological assessment rather than equating any ypN0 modifier with complete response.",
+        "Symmans and colleagues' 2007 typeset equation defines d_prim = sqrt(d1 × d2), f_inv = (C/100) × (1 - S/100), and RCB = 1.4 × (f_inv × d_prim)^0.17 + [4 × (1 - 0.75^N) × d_met]^0.17. The entire nodal bracket is raised to 0.17. Here N originally counts involved axillary nodes and d_met is the largest axillary metastasis diameter. Because only the largest deposit was measured, the model assumed each additional metastasis had 75% of the diameter of the next largest. Preserve full precision near class boundaries.",
+        "The 2007 study derived the index in 241 patients treated with paclitaxel followed by fluorouracil, doxorubicin and cyclophosphamide, and validated it in 141 treated with the latter combination: 382 patients with T1 to T3, N0 to N1, M0 disease. Class boundaries here come from NCI BOLD data elements, not the equation itself. This empirically fitted prognostic index is neither a cell count nor a personal probability.",
+        "Use the official calculator with the pathology team's protocol-specific assessment for unusual findings; low breast cellularity cannot establish negative nodes. A per-unit hazard ratio compares event rates under a study model, not a recurrence percentage or an estimate of benefit from adding treatment.",
+        "In triple-negative disease the residual cancer burden classes separate long-term risk sharply: ten-year relapse-free survival was 86 percent after a pathological complete response, 81 percent for RCB-I, 55 percent for RCB-II and 23 percent for RCB-III in the paclitaxel then FAC cohorts (Symmans 2017), which is why RCB-II and III residual disease is the setting for adjuvant escalation trials.",
+        "RCB 0 or I was the response endpoint that homologous recombination deficiency predicted in three neoadjuvant platinum trials (Telli 2016).",
+        "The staging manual now asks for it. The ninth edition of UICC TNM, recommended from 1 January 2026, clarifies that the ypT category must be based on the largest continuous focus of residual invasive cancer, excluding treatment-related fibrosis, with multiple foci carrying the m suffix, and recommends that the pathology report add an estimate of the extent of residual disease by the residual cancer burden method (Brierley 2026). Residual cancer burden is therefore no longer only a trial endpoint; it is what the stage cannot express."
+      ],
+      "category": "Endpoints",
+      "wikipediaChecked": "2026-09-22"
+    },
+    {
+      "id": "tumor-bed-cellularity",
+      "kind": "term",
+      "name": "Tumour-bed cellularity",
+      "aka": [
+        "tumour bed cellularity",
+        "residual tumour bed cellularity"
+      ],
+      "tldr": "Tumour-bed cellularity estimates cancer-occupied area within a defined treated breast bed. The in situ share uses a different denominator.",
+      "summary": "Label the region, numerator and denominator before interpreting cellularity. Overall cancer area and the in situ share of that cancer are separate RCB inputs, neither interchangeable with sequencing purity or a score by itself.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "MD Anderson detailed RCB pathology methods",
+          "url": "https://www.mdanderson.org/content/dam/mdanderson/documents/for-physicians/clinical-calculators/PLM_protocol_RCB_calculators_BRO.pdf"
+        },
+        {
+          "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Measurement of residual breast cancer burden to predict survival after neoadjuvant chemotherapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17785706/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "rcb",
+        "treatment-effect-in-pathology",
+        "pcr"
+      ],
+      "cancers": [
+        "breast-cancer"
+      ],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "For RCB, overall cancer cellularity estimates the area occupied by invasive plus in situ cancer within a defined residual breast bed. The in situ percentage instead uses the cancer component as denominator. Microscopic review can revise bed boundaries and should represent sparse as well as dense regions; selecting only a dense focus changes the measurement.",
+        "Invasive bed fraction equals overall cancer fraction multiplied by one minus the in situ fraction of cancer. In a fictional 100-unit bed with 20 units of cancer, 25% in situ means 5 bed units in situ and 15 invasive. The invasive share is 75% of cancer but only 15% of the whole bed. These idealised area units teach denominators, not counting instructions or the precision of a clinical estimate.",
+        "Area occupied by cancer, the proportion of counted cells that are malignant and the fraction of sequenced DNA contributed by cancer have different denominators. A selected assay block may also differ from the whole residual bed. Do not enter an area-cellularity estimate as sequencing purity or describe 25% of cancer as 25% of the bed.",
+        "Retain the named bed, specimen, treatment setting, mapping and representative sections, overall area percentage and in situ share separately. Incomplete sampling, a misdefined bed and heterogeneous distribution can bias the estimate; staining or sampling consumes finite tissue. There is no universal low/high cellularity cutoff that alone selects treatment.",
+        "Cellularity alone supplies neither nodal burden, final margins, distant status, pCR nor an RCB score. CAP's residual-invasive RCB span excludes DCIS, while the MD Anderson protocol estimates invasive plus in situ area in a microscopically revised cancer bed. Neither is interchangeable with the largest contiguous ypT focus. CAP advises against RCB score/class after neoadjuvant endocrine therapy, although individual residual measurements may still be useful.",
+        "The MD Anderson protocol estimates overall cellularity and in situ percentage to the nearest 10%, with additional 1% and 5% choices for low values. The 25% in situ example above is fictional denominator arithmetic outside those listed estimation increments. Its arithmetic remains 20 × 0.25 = 5 in situ and 20 - 5 = 15 invasive bed units. A separate protocol-aligned 20% in situ illustration would give 4 in situ and 16 invasive units. Neither should be confused with the RCB example using 50% in situ.",
+        "Two fictional treated breast beds can have the same dimensions while one contains sparse residual carcinoma and the other dense residual carcinoma. The footprint alone cannot distinguish their viable cancer area. Read overall cancer area and the in situ share of that cancer with their different denominators, then keep regional nodes and final margins separate. A DCIS-permitting breast-and-node pCR definition can be met when DCIS remains at an involved final edge but no residual invasive breast or nodal cancer is found. Add an involved regional node and that combined endpoint is no longer met, even with a negative blood assay; this does not by itself establish distant spread."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "treatment-effect-in-pathology",
+      "kind": "term",
+      "name": "Treatment effect in breast pathology",
+      "aka": [
+        "histological treatment effect",
+        "post-treatment tissue changes"
+      ],
+      "tldr": "Treatment effect describes tissue changes after therapy, assessed separately from whether viable cancer remains in the examined breast and nodes.",
+      "summary": "Response-related changes and residual carcinoma answer different questions. Interpretation needs treatment history, mapped sampling and separate breast and nodal findings. Fibrosis is not automatically residual tumour size or proof of complete response.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "Standardization of pathologic evaluation and reporting of postneoadjuvant specimens in clinical trials of breast cancer: recommendations from an international working group.",
+          "url": "https://doi.org/10.1038/modpathol.2015.74"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pcr",
+        "rcb",
+        "tumor-bed-cellularity",
+        "tnm-staging"
+      ],
+      "cancers": [
+        "breast-cancer"
+      ],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "After preoperative therapy, fibrosis, necrosis, inflammation and histiocytic aggregates can be response-related tissue changes. Residual viable carcinoma is a separate morphological assessment, not a culture test of every cell. Response changes and residual cancer can coexist; scarring alone does not establish that no cancer remains. Fibrosis means collagen-rich scarring, necrosis means dead tissue and histiocytes are tissue macrophages.",
+        "CAP 4.11 describes the RCB breast span as the two-dimensional extent of residual invasive carcinoma, excluding DCIS from the span. The MD Anderson microscopy protocol instead starts with the gross tumour bed, revises its boundaries microscopically and estimates invasive plus in situ cancer area in that bed, using the largest bed for multicentric disease. State the protocol and denominator rather than merging these wordings. The largest contiguous residual invasive focus without adjacent treatment fibrosis supplies ypT; the gross scar, that focus and an RCB bed are different measurements. For ypN, adjacent treatment fibrosis is likewise excluded from the contiguous staging dimension; RCB nodal measurement has its own rule.",
+        "Assessment connects pretreatment location, imaging or marker information, gross mapping, a sampling plan and microscopy. Sparse, scattered residual foci make arbitrary-section interpretation unreliable. A broad scar can contain residual invasive cancer without the whole scar being solid cancer.",
+        "Breast and node response are reported separately. Nodal scarring or histiocytic aggregates without residual cancer can be consistent with prior treated involvement, but do not independently establish biopsy-proven baseline metastasis. Prior biopsy or other injury can also produce repair changes; a scar alone cannot establish a drug-specific effect.",
+        "RCB is not validated for neoadjuvant endocrine treatment; CAP advises against reporting a score/class in that setting even when individual residual measurements are recorded. Combined pCR requires its stated breast-and-node definition and appropriate specimens, may permit DCIS and does not establish whole-body eradication. Preserve the pretreatment record alongside residual findings."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "first-line",
+      "kind": "term",
+      "name": "Lines of therapy",
+      "aka": [
+        "first-line",
+        "second-line",
+        "third-line",
+        "later-line",
+        "later lines",
+        "1L",
+        "2L",
+        "3L",
+        "first line",
+        "second line",
+        "third line",
+        "line of therapy",
+        "front-line",
+        "frontline",
+        "previously untreated",
+        "prior lines",
+        "treatment-naive"
+      ],
+      "tldr": "A line of therapy is a treatment strategy counted within a specified disease setting. First-line means the initial strategy in that setting; it does not mean the first medicine a person has ever received.",
+      "summary": "Lines of therapy describe successive treatment strategies under a clinical record or study's stated counting rule. First-line is the initial strategy for the specified disease setting. A later strategy may follow because treatment does not work, stops working or causes intolerable harm. The setting and reason for change belong beside the number.\n\nIn an advanced-cancer trial, first-line can mean no earlier systemic treatment for advanced disease, while previous treatment around surgery remains part of the exposure history and eligibility assessment. Several medicines, repeating cycles and planned blocks can belong to one strategy. A line count does not measure remaining life or establish that treatment options are exhausted.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Therapy#Lines_of_therapy",
+      "links": [
+        {
+          "label": "NCI Dictionary of Cancer Terms: first-line therapy",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/first-line-therapy"
+        },
+        {
+          "label": "NCI: second-line therapy",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/second-line-therapy"
+        },
+        {
+          "label": "Cortes et al., KEYNOTE-355 population and previous early-disease exposure (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33278935/"
+        },
+        {
+          "label": "NCI: chemotherapy cycles and delivery",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A regimen specifies the treatment plan; a cycle is a defined interval of treatment and recovery. Neither a third infusion nor a third medicine automatically means third-line treatment. A planned switch between blocks differs from changing strategy after progression. Neoadjuvant and adjuvant describe roles around the main treatment, rather than first and second line.",
+        "Keep four entries together: disease setting, strategy with start and stop dates, reason for change, and the counting convention. Maintenance, a pause, dose reduction or removal of one component must be interpreted under that convention. A database algorithm can draw boundaries differently from the clinical account, so preserve the actual events before assigning a number.",
+        "The 2020 KEYNOTE-355 report studied previously untreated locally recurrent inoperable or metastatic triple-negative breast cancer, while stratifying randomisation by previous exposure to the same chemotherapy class in the neoadjuvant or adjuvant setting. Those descriptions are compatible: prior early-disease treatment and prior advanced-disease treatment are different variables. The example explains the study population, not a current prescribing choice.",
+        "In a fictional history, combination A precedes definitive surgery and medicine B follows it as part of one planned early-disease strategy. Years later, the first systemic strategy for metastatic disease is first-line metastatic under the stated rule of no earlier systemic metastatic treatment. A and B remain in the exposure history. The setting boundary changes what is being counted; it is not a universal rule for every switch or maintenance phase.",
+        "Before comparing studies labelled first-line or later-line, check prior exposure, eligibility, resistance history, tolerability and the comparator. Matching a drug name does not match the populations. To explain a line number, name the disease setting, earlier strategy and counting rule, rather than turning that history label into an individual forecast."
+      ],
+      "category": "Clinical"
+    },
+    {
+      "id": "de-escalation",
+      "kind": "term",
+      "name": "De-escalation, escalation and response-adapted therapy",
+      "aka": [
+        "de-escalation",
+        "de-escalate",
+        "de-escalated",
+        "de-escalating",
+        "de-intensification",
+        "de-intensify",
+        "treatment de-escalation",
+        "treatment intensification",
+        "intensification",
+        "response-adapted",
+        "response-guided",
+        "risk-adapted",
+        "risk-adapted therapy",
+        "biomarker-guided",
+        "ctDNA-guided",
+        "MRD-guided",
+        "PET-adapted",
+        "omission of chemotherapy",
+        "chemotherapy omission",
+        "chemotherapy-free",
+        "chemo-free",
+        "less is more",
+        "treatment omission"
+      ],
+      "tldr": "Response-adapted treatment uses a defined assessment to guide a planned next step. Continuing, reducing, changing or adding treatment each needs evidence for that strategy and its harms.",
+      "summary": "A response-adapted strategy specifies the population, what is measured, the assessment time, the result that triggers a branch and what happens next. It can continue treatment, switch medicines, add treatment or omit a component. The aim and evidence must be stated for the actual branch; adaptation is not a synonym for less treatment.\n\nA prognostic result can identify risk without proving that changing treatment on its basis improves outcomes. An omission strategy must assess the outcomes and harms of that decision in the relevant population. Noninferiority is one possible design requiring a justified margin, rather than an automatic property of every adaptation study. KEYNOTE-522 compared whole assigned strategies and did not reserve its postoperative phase for residual disease or independently randomise escalation at surgery.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03036488: KEYNOTE-522",
+          "url": "https://clinicaltrials.gov/study/NCT03036488"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT02743494: CheckMate 577",
+          "url": "https://clinicaltrials.gov/study/NCT02743494"
+        },
+        {
+          "label": "Shatsky et al., response-guided I-SPY2.2 Dato-DXd/durvalumab strategy (2024)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39277672/"
+        },
+        {
+          "label": "Masuda et al., CREATE-X residual-disease comparison (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28564564/"
+        },
+        {
+          "label": "Tutt et al., OlympiA (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34081848/"
+        },
+        {
+          "label": "Mayer et al., EA1131 primary report (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34092112/"
+        },
+        {
+          "label": "Cortazar et al., response association and trial-level surrogacy (2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "non-inferiority",
+        "deauville",
+        "umrd",
+        "ctdna",
+        "organ-preservation"
+      ],
+      "cancers": [],
+      "sections": [
+        "chemotherapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "dynamic",
+        "circulate-japan",
+        "keynote-522",
+        "checkmate-577"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The assessment must match the branch. An imaging change needs its modality, baseline, acquisition time, units and protocol threshold; tissue response needs the sampled sites, adequacy and definition. A change in one lesion is not a complete patient-level assessment, and a blood assay measures circulating material. Predicted pathological complete response is not the surgical finding itself, and a negative biopsy describes only the tissue submitted. Strategy benefit needs a comparator, recurrence or survival endpoint, follow-up and harms. No universal response percentage supplies permission to omit treatment.",
+        "In the 2024 I-SPY2.2 phase 2 report, 106 participants received datopotamab deruxtecan with durvalumab in the first block for high-risk stage II or III breast cancer. Subtype-specific algorithms used serial magnetic resonance imaging volume change and core biopsy to redirect later blocks, including earlier surgery for participants predicted to have a high probability of complete pathological response. The endpoint was assessed at resection. This was a defined research strategy, not permission to cancel surgery or a demonstration of equivalent long-term survival.",
+        "Postoperative adaptation has different comparisons. CREATE-X selected residual HER2-negative invasive disease after chemotherapy; OlympiA selected high-risk germline BRCA1/2-associated HER2-negative disease; EA1131 did not demonstrate that platinum was noninferior or superior to capecitabine in its residual basal-subtype comparison. Those studies do not directly test adding their medicines to the complete pembrolizumab sequence. Risk, a plausible mechanism and eligibility do not independently establish added benefit.",
+        "A baseline marker selecting a medicine differs from an on-treatment response rule. Response adaptation changes a participant's later treatment; response-adaptive randomisation changes assignment probabilities for future participants. A trial can use both. A safety-driven hold or substitution is a further distinct decision: favourable cancer response does not settle whether treatment can safely continue, or prove a changed course equivalent to the original one.",
+        "Consider a fictional early-surgery checkpoint requiring both a specified MRI criterion and an adequate negative biopsy. The scan meets its criterion, but the biopsy is inadequate. The combined AND rule is not met, because an uninterpretable input cannot be replaced by the favourable scan. This exercise supplies no numerical cutoff or treatment instruction; correct branch logic remains separate from evidence that acting on the rule improves clinical outcomes."
+      ],
+      "category": "Treatment jargon",
+      "wikipediaChecked": "2026-09-22"
+    },
+    {
+      "id": "neoadjuvant-adjuvant",
+      "kind": "term",
+      "name": "Neoadjuvant / adjuvant / perioperative",
+      "aka": [
+        "adjuvant vs neoadjuvant therapy",
+        "adjuvant versus neoadjuvant therapy",
+        "neoadjuvant vs adjuvant",
+        "pre-operative",
+        "preoperative",
+        "post-operative",
+        "postoperative",
+        "post-surgical"
+      ],
+      "tldr": "Neoadjuvant treatment comes before the main treatment, usually surgery; adjuvant treatment follows it to lower recurrence risk. These words describe roles in a plan, while its goal and actual delivery need separate assessment.",
+      "summary": "Neoadjuvant treatment precedes the main treatment, usually surgery; adjuvant treatment follows the main treatment to reduce recurrence risk. Perioperative treatment spans the period around an operation. Neoadjuvant therapy can aim to reduce disease before an operation and provides response information from treated tissue. Adjuvant therapy aims to reduce risk from disease that may remain. A pathological response and a later clinical outcome are different endpoints.\n\nTiming comparisons need the actual population, intervention and comparator. Liu’s two mouse breast-cancer models supported testing preoperative immunotherapy, not a universal human timing rule or proof that retained tumour antigen explains every clinical result. KEYNOTE-522 assigned a complete before-and-after pembrolizumab regimen against its comparator; that design does not independently randomize the two phases and cannot isolate each phase’s contribution.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Neoadjuvant_therapy",
+      "links": [
+        {
+          "label": "Improved Efficacy of Neoadjuvant Compared to Adjuvant Immunotherapy to Eradicate Metastatic Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27663893/"
+        },
+        {
+          "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neoadjuvant_therapy"
+        },
+        {
+          "label": "KEYTRUDA U.S. prescribing information: sections 1.20, 5.1, 12.1 and 14.20",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        },
+        {
+          "label": "NCI: triple-negative breast cancer treatment",
+          "url": "https://www.cancer.gov/types/breast/treatment/triple-negative-breast-cancer"
+        },
+        {
+          "label": "NCI: neoadjuvant therapy",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/neoadjuvant-therapy"
+        },
+        {
+          "label": "NCI: adjuvant therapy",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/adjuvant-therapy"
+        },
+        {
+          "label": "NCI: palliative care with or without curative care",
+          "url": "https://www.cancer.gov/about-cancer/advanced-cancer/care-choices/palliative-care-fact-sheet"
+        },
+        {
+          "label": "FDA: vaccine adjuvants and other ingredients",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/common-ingredients-fda-approved-vaccines"
+        },
+        {
+          "label": "Masuda et al., CREATE-X (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28564564/"
+        },
+        {
+          "label": "Tutt et al., OlympiA eligibility and comparison (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34081848/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "perioperative-immune-window",
+        "keynote-522"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "keynote-522"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "KEYNOTE-522 tested a selected high-risk, previously untreated early-TNBC population, with chemotherapy plus pembrolizumab or placebo before surgery and pembrolizumab or placebo afterwards. Eight planned 3-week preoperative cycles and nine postoperative cycles correspond to about 24 and 27 weeks; delays and clinical decisions can alter actual timing. The U.S. label describes tumour-size and nodal eligibility and enrolment regardless of PD-L1 expression. A stage label alone is not a personal treatment instruction. The complete regimen comparison did not independently randomise its two phases.",
+        "Neoadjuvant treatment can reduce a tumour before an operation and leave treated tissue for response assessment. Subsequent breast and nodal pathology, radiation indications and further systemic options answer separate questions. Residual disease does not automatically choose one added medicine: prior treatment, biomarker eligibility, the population actually studied and uncertainty about sequencing or combination remain relevant. A pathological response is not a survival estimate or proof that a treatment component can be omitted.",
+        "Either, both or neither surrounding phase may appear in a plan. Chemotherapy, radiation, endocrine and other treatments can have preoperative or postoperative roles in appropriate settings. Systemic therapy travels through the bloodstream; neither timing word means chemotherapy alone. An adjuvant plan can aim to reduce risk even when there is no measurable tumour, and it does not guarantee that recurrence is impossible.",
+        "A drug that happens before a procedure is not automatically neoadjuvant. In a fictional curative-intent plan, systemic treatment precedes definitive breast surgery and additional treatment afterwards aims to reduce recurrence risk. In a different advanced-disease plan, a later procedure relieves a symptom. Both calendars say drug then procedure, but the documented main-treatment role and goal distinguish them.",
+        "Preoperative treatment can provide examination and imaging observations and treated surgical tissue for assessing response. CREATE-X selected residual invasive disease after preoperative chemotherapy; OlympiA included eligible high-risk germline BRCA1/2-associated disease after either neoadjuvant or adjuvant chemotherapy, using different entry rules. These studies show why treatment history and response can affect the next question. They do not make a favourable response a validated surgery-omission rule or prove that every postoperative add-on helps.",
+        "Keep specimen collection, treatment administration and report issue as three dates. A biopsy collected before treatment remains a pretreatment sample even if its report arrives after surgery. Likewise, a planned treatment phase is not proof of administration: holds, substitutions and cancelled visits belong in the delivered record. Timing of a report cannot manufacture a post-treatment observation.",
+        "Treatment timing does not itself establish curative or palliative anticancer intent. Palliative care addresses symptoms, distress and quality of life and can accompany curative care. Thus a fictional postoperative risk-reduction plan is adjuvant even without visible tumour, and a supportive-care visit does not turn it into palliative anticancer treatment. Neoadjuvant chemotherapy (NAC) is one neoadjuvant class; a vaccine adjuvant instead means an ingredient that enhances an immune response."
+      ],
+      "category": "Clinical"
+    },
+    {
+      "id": "keynote-522",
+      "kind": "trial",
+      "name": "KEYNOTE-522",
+      "aka": [],
+      "tldr": "KEYNOTE-522 compared adding pembrolizumab before and after surgery with placebo on the same chemotherapy and surgery sequence in early triple-negative breast cancer. It measured improvements in response and survival.",
+      "summary": "KEYNOTE-522 randomised 1,174 people with previously untreated stage II or III triple-negative breast cancer to a whole pembrolizumab or placebo strategy before and after surgery, with the same chemotherapy backbone. The first-602 pCR analysis reported 64.8% versus 51.2%. The 2022 report estimated three-year event-free survival at 84.5% versus 76.8%; the 2024 report estimated five-year overall survival at 86.6% versus 81.7%. An ASCO 2026 conference abstract reports seven-year EFS of 78.3% versus 69.8% and OS of 85.1% versus 77.2%. Keep each endpoint, analysis cohort and follow-up cutoff attached to its result. The trial did not separately randomise postoperative pembrolizumab or chemotherapy omission.",
+      "status": "positive",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03036488",
+          "url": "https://clinicaltrials.gov/study/NCT03036488"
+        },
+        {
+          "label": "KEYNOTE-522 pathological complete response (NEJM 2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910549"
+        },
+        {
+          "label": "KEYNOTE-522 event-free survival (NEJM 2022)",
+          "url": "https://doi.org/10.1056/NEJMoa2112651"
+        },
+        {
+          "label": "KEYNOTE-522 overall survival (NEJM 2024)",
+          "url": "https://doi.org/10.1056/NEJMoa2409932"
+        },
+        {
+          "label": "KEYNOTE-522 event-free survival by residual cancer burden (Annals of Oncology 2024)",
+          "url": "https://doi.org/10.1016/j.annonc.2024.02.002"
+        },
+        {
+          "label": "NICE TA851 (14 December 2022)",
+          "url": "https://www.nice.org.uk/guidance/ta851"
+        },
+        {
+          "label": "KEYTRUDA prescribing information: DailyMed version 228",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287&version=228"
+        },
+        {
+          "label": "Schmid et al.: KEYNOTE-522 final follow-up, ASCO 2026 conference abstract 507",
+          "url": "https://doi.org/10.1200/JCO.2026.44.16_suppl.507"
+        },
+        {
+          "label": "Nanda et al.: pembrolizumab in adaptive I-SPY2 (2020)",
+          "url": "https://doi.org/10.1001/jamaoncol.2019.6650"
+        },
+        {
+          "label": "Cortazar et al.: CTNeoBC association and trial-level surrogate analysis (2014)",
+          "url": "https://doi.org/10.1016/S0140-6736(13)62422-8"
+        },
+        {
+          "label": "Masuda et al.: CREATE-X postoperative capecitabine comparison (2017)",
+          "url": "https://doi.org/10.1056/NEJMoa1612645"
+        },
+        {
+          "label": "Tutt et al.: OlympiA postoperative olaparib comparison (2021)",
+          "url": "https://doi.org/10.1056/NEJMoa2105215"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT05812807: OptimICE-pCR study and posted status",
+          "url": "https://clinicaltrials.gov/study/NCT05812807"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "tnbc",
+        "tnbc-early"
+      ],
+      "sections": [],
+      "technologies": [
+        "checkpoint-inhibitor"
+      ],
+      "targets": [],
+      "drugs": [
+        "pembrolizumab",
+        "carboplatin",
+        "paclitaxel"
+      ],
+      "companies": [
+        "merck"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "pcr",
+        "efs",
+        "rcb",
+        "tnbc-residual-disease-decision"
+      ],
+      "trials": [
+        "swog-s1418",
+        "optimice-pcr",
+        "scarlet-s2212",
+        "ascent-05",
+        "tropion-breast03"
+      ],
+      "people": [
+        "rebecca-dent",
+        "peter-schmid",
+        "loi-sherene"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-keynote-522-n-engl-j-med-2020",
+        "paper-keynote-522-n-engl-j-med-2024-update"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Design (NEJM 2020): 1,174 patients with untreated stage II or III triple-negative breast cancer randomised 2 to 1 to pembrolizumab 200 mg or placebo every 3 weeks with four cycles of paclitaxel and carboplatin then four of doxorubicin or epirubicin with cyclophosphamide, surgery, then nine cycles of adjuvant pembrolizumab or placebo. Pathological complete response 64.8 versus 51.2 percent (first 602 patients); event-free survival at 36 months 84.5 versus 76.8 percent (hazard ratio 0.63, NEJM 2022); overall survival at 60 months 86.6 versus 81.7 percent (p 0.002, median follow-up 75.1 months, NEJM 2024). The preplanned exploratory residual-cancer-burden analysis (Annals of Oncology 2024) reported EFS hazard ratios for RCB-0, 1, 2 and 3 of 0.70 (95% confidence interval 0.38 to 1.31), 0.92 (0.39 to 2.20), 0.52 (0.32 to 0.82) and 1.24 (0.69 to 2.23). These post-treatment strata can themselves be affected by treatment; their estimates do not separately randomise postoperative treatment or prove a benefit in every stratum.",
+        "UK sites (registry, 7): Colchester General Hospital, Barts Cancer Institute, St George's Hospital London, Maidstone Hospital, James Cook University Hospital Middlesbrough, Nottingham University Hospitals, Royal Cornwall Hospitals Truro. NICE TA851 (14 December 2022) commissions the regimen in England.",
+        "Label safety (Keytruda, 778 treated patients): serious adverse reactions 44 percent, fatal 0.9 percent, discontinuation of pembrolizumab 20 percent, most often for raised transaminases and rash.",
+        "The study question concerns the whole assigned sequence in previously untreated, non-metastatic stage II or III triple-negative breast cancer: T1c with N1 or N2, or T2 to T4 with N0 to N2, and performance status 0 or 1. The registry excludes prior checkpoint therapy and active autoimmune disease requiring systemic treatment in the preceding two years, among other criteria. There was one assignment of 784 people to pembrolizumab and 390 to placebo across preoperative chemotherapy, surgery and postoperative treatment, without a separate postoperative randomisation. Smaller node-negative tumours outside those entry criteria and metastatic disease are different settings. Entry did not require PD-L1 selection, and the high-risk early-stage indication in the prescribing information has no PD-L1 threshold.",
+        "The co-primary endpoints were pathological complete response at surgery, defined as ypT0/Tis ypN0, and event-free survival from randomisation. The response definition permits residual in-situ disease in the breast while excluding invasive residual cancer in breast and nodes. Event-free survival counts progression preventing definitive surgery, local or distant recurrence, a second primary cancer or death from any cause; overall survival is a secondary endpoint counting death from any cause. Because death is part of EFS, it is an event rather than a competing event for that composite. Analysing a recurrence component alone can require a different competing-risk question.",
+        "Keep the analysis cohorts separate. The 2020 first-interim pCR comparison used the first 602 randomised participants: 64.8% versus 51.2%, estimated difference 13.6 percentage points (95% confidence interval 5.4 to 21.8). The sponsor-posted first-1,002 comparison is 64.0% versus 54.7%, with a stratified difference of 9.2 points (2.8 to 15.6). That reported adjusted estimate is not simple subtraction of the rounded percentages. The current label also presents an all-1,174 pCR comparison, 63.0% versus 55.6%, estimated difference 7.5 points (1.6 to 13.4). These are different specified analysis populations, not interchangeable response claims.",
+        "At the fourth planned interim analysis reported in 2022, median follow-up was 39.1 months and all 1,174 participants contributed to the assigned-group survival comparison. Estimated 36-month EFS was 84.5% (95% confidence interval 81.7 to 86.9) versus 76.8% (72.2 to 80.7), with hazard ratio 0.63 (0.48 to 0.82). From the rounded survival estimates, the three-year absolute gain is 7.7 points, approximately eight additional people alive and event-free per 100, and number needed to treat is 1/0.077, about 13. The corresponding event risks are 15.5% versus 23.2%, a relative risk reduction of about 33%; the model's 37% lower hazard is a different measure.",
+        "The final overall-survival analysis published in 2024 used a March 22, 2024 cutoff and median follow-up of 75.1 months. Estimated 60-month OS was 86.6% versus 81.7%, with the paper reporting P=0.002; the label reports an OS hazard ratio of 0.66 (95% confidence interval 0.50 to 0.87) for the prespecified analysis. The absolute difference is 4.9 points, about five additional people alive per 100 at five years. Its reciprocal is 20.4, or 21 when rounding up to a whole-person number needed to treat. Neither this result nor the three-year EFS calculation identifies who benefits or combines benefit with harms. Comparing the 13.6-point pCR, 7.7-point EFS and 4.9-point OS gains does not show an effect shrinking over time: their endpoints, cohorts and horizons differ.",
+        "The ASCO 2026 conference abstract reports the later protocol-specified final follow-up, with an October 14, 2025 cutoff and median follow-up of 93.8 months. Seven-year EFS was 78.3% versus 69.8%, hazard ratio 0.68 (95% confidence interval 0.54 to 0.86); seven-year OS was 85.1% versus 77.2%, hazard ratio 0.64 (0.49 to 0.85). This is a conference abstract deposited by the authors, distinct from the 2024 full journal report and the sponsor-posted registry results. Longer observation of this cohort is not a second randomised trial.",
+        "Safety also retains its report and denominator. Across treatment phases, the 2020 paper reported treatment-related grade 3 or higher events in 78.0% versus 73.0%, including treatment-related deaths in 0.4% versus 0.3%. The label describes 778 versus 389 participants receiving at least one dose, distinct from the 784 versus 390 assigned. Its adverse-reaction categories and fatal-event figures must not be substituted for the paper's treatment-related categories. The prescribing information warns that immune-mediated reactions can arise after treatment stops and that hypothyroidism may require long-term hormone replacement. Event frequency, severity, duration, discontinuation and quality of life remain separate parts of the comparison.",
+        "The earlier adaptive phase 2 I-SPY2 report estimated pCR of 60% versus 22% in its triple-negative subgroup against its own chemotherapy control. That is a different comparison from KEYNOTE-522 and cannot establish a cross-trial treatment ranking. Likewise, better survival among people who achieve pCR is a prognostic association within selected response groups, not proof of the postoperative drug's separate effect or a validated rule selecting individual benefit. CTNeoBC found a strong pCR-outcome association but did not validate pCR as a trial-level surrogate for EFS or OS in its included trials. Here survival itself was measured.",
+        "The postoperative-only question remains distinct: OptimICE-pCR randomises people after pCR to postoperative pembrolizumab or observation, and the registry lists it as recruiting with no posted results. KEYNOTE-522 did not randomise dropping a chemotherapy component. CREATE-X compared postoperative capecitabine with standard postsurgical treatment after residual HER2-negative disease, while OlympiA compared olaparib with placebo in eligible high-risk germline BRCA1/2-associated HER2-negative disease after chemotherapy and local treatment. Those reports describe their own comparisons rather than a randomised test of adding either drug to the KEYNOTE-522 sequence. No result here is a personal forecast or a treatment-omission rule."
+      ],
+      "nct": "NCT03036488",
+      "phase": "3",
+      "setting": "Early-stage (II-III) TNBC: pembrolizumab + chemotherapy before surgery, pembrolizumab after",
+      "sponsor": "Merck",
+      "participation": [
+        {
+          "nct": "NCT03036488",
+          "source": "https://clinicaltrials.gov/study/NCT03036488",
+          "fetchedAt": "2026-10-07T16:52:55.789Z",
+          "studySha256": "bd33c8dafb4846d13dfbf365a6be590ca3577e0a2689a9fcb2a2ed4354fd6299",
+          "overallStatus": "COMPLETED",
+          "lastUpdatePosted": "2025-10-29",
+          "leadSponsor": "Merck Sharp & Dohme LLC",
+          "collaboratorCount": 0,
+          "minimumAge": "18 Years",
+          "sex": "ALL",
+          "healthyVolunteers": false,
+          "hasEligibility": true,
+          "enrolment": 1174,
+          "enrolmentType": "ACTUAL",
+          "siteCount": 193,
+          "recruitingSiteCount": 0,
+          "countries": [
+            "Australia",
+            "Brazil",
+            "Canada",
+            "Colombia",
+            "France",
+            "Germany",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Japan",
+            "Poland",
+            "Portugal",
+            "Russia",
+            "Singapore",
+            "South Korea",
+            "Spain",
+            "Sweden",
+            "Taiwan",
+            "Turkey (Türkiye)",
+            "United Kingdom",
+            "United States"
+          ]
+        }
+      ],
+      "result": "EFS HR 0.63; OS HR 0.66 (5-year); 7-year OS 85.1% vs 77.2%.",
+      "started": "2017-03-07",
+      "startedType": "actual",
+      "yearReported": 2020,
+      "enrolled": 1174,
+      "enrolledBasis": "registry",
+      "outcomes": [
+        {
+          "endpoint": "Pathologic complete response (ypT0/Tis ypN0)",
+          "primary": true,
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Pembrolizumab + chemotherapy",
+              "n": 401,
+              "value": 64.8
+            },
+            {
+              "name": "Placebo + chemotherapy",
+              "n": 201,
+              "value": 51.2
+            }
+          ],
+          "p": "0.00055",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa1910549"
+        },
+        {
+          "endpoint": "Event-free survival at 5 years",
+          "primary": true,
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Pembrolizumab + chemotherapy",
+              "n": 784,
+              "value": 81.2
+            },
+            {
+              "name": "Placebo + chemotherapy",
+              "n": 390,
+              "value": 72.2
+            }
+          ],
+          "hr": 0.65,
+          "ci": [
+            0.51,
+            0.83
+          ],
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2409932"
+        },
+        {
+          "endpoint": "Overall survival at 5 years",
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Pembrolizumab + chemotherapy",
+              "value": 86.6
+            },
+            {
+              "name": "Placebo + chemotherapy",
+              "value": 81.7
+            }
+          ],
+          "hr": 0.66,
+          "ci": [
+            0.5,
+            0.87
+          ],
+          "p": "0.002",
+          "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2409932"
+        },
+        {
+          "endpoint": "Event-free survival at 7 years",
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Pembrolizumab + chemotherapy",
+              "value": 78.3
+            },
+            {
+              "name": "Placebo + chemotherapy",
+              "value": 69.8
+            }
+          ],
+          "source": "https://www.lbbc.org/news/pivotal-progress-in-tnbc-asco-2026"
+        },
+        {
+          "endpoint": "Overall survival at 7 years",
+          "unit": "%",
+          "arms": [
+            {
+              "name": "Pembrolizumab + chemotherapy",
+              "value": 85.1
+            },
+            {
+              "name": "Placebo + chemotherapy",
+              "value": 77.2
+            }
+          ],
+          "source": "https://www.lbbc.org/news/pivotal-progress-in-tnbc-asco-2026"
+        }
+      ],
+      "replication": "Single pivotal trial, but the EFS and OS benefits held through the 5- and 7-year analyses; consistent with IMpassion031 (atezolizumab, pCR only) and with real-world neoadjuvant pembrolizumab series."
+    },
+    {
+      "id": "apoptosis",
+      "kind": "term",
+      "name": "Apoptosis",
+      "aka": [
+        "apoptotic",
+        "pro-apoptotic",
+        "anti-apoptotic",
+        "undergo apoptosis",
+        "induce apoptosis",
+        "induces apoptosis",
+        "triggers apoptosis"
+      ],
+      "tldr": "Apoptosis is a regulated process that dismantles a cell. Whether the dying cell stimulates protective immunity is a separate question.",
+      "summary": "The mitochondrial route uses BCL-2-family control of BAX and BAK and cytochrome c release. In cell experiments, combined BAX and BAK loss blocked mitochondrial responses to several apoptotic stimuli; this does not establish resistance to all forms of death. Death-receptor signals provide another route. Apoptosis is not inherently immune-silent: anthracycline-treated tumour cells showed calreticulin-dependent immunogenicity in mouse experiments. A death marker, a mitochondrial response and sustained killing answer different questions. Protein abundance alone cannot establish dependence or choose a treatment.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apoptosis",
+      "links": [
+        {
+          "label": "Primary source, PMID 11326099",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11326099/"
+        },
+        {
+          "label": "Primary source, PMID 17187072",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17187072/"
+        },
+        {
+          "label": "Source identity and scope, PMID 8689682",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8689682/"
+        },
+        {
+          "label": "Source identity and scope, PMID 9727492",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9727492/"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Source identity and scope, PMID 24355989",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24355989/"
+        },
+        {
+          "label": "Source identity and scope, PMID 11782314",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11782314/"
+        },
+        {
+          "label": "Source identity and scope, PMID 23291630",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23291630/"
+        },
+        {
+          "label": "Source identity and scope, PMID 32209603",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "Source identity and scope, PMID 22632970",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+        },
+        {
+          "label": "Source identity and scope, PMID 29258294",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29258294/"
+        },
+        {
+          "label": "Source identity and scope, PMID 24439385",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24439385/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "necrosis",
+        "resisting-cell-death",
+        "immunogenic-cell-death",
+        "tumour-suppressor-gene",
+        "ferroptosis-cell-death",
+        "er-stress-and-unfolded-protein-response"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "bcl2",
+        "tp53"
+      ],
+      "drugs": [
+        "venetoclax"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "apoptosis-bcl2",
+        "p53-cell-cycle"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Intrinsic apoptosis involves mitochondrial outer-membrane permeabilisation, cytochrome c release into the cytosol, apoptosome assembly and caspase-9 activation upstream of executioner caspases such as caspase-3 and caspase-7. Death-receptor signalling can activate caspase-8; BID cleavage links this route to mitochondria. Initiator and executioner roles differ.",
+        "The BCL-2 family contains survival proteins, including BCL-2, BCL-XL and MCL-1; BH3-only stress mediators, including BIM, BID and PUMA; and pore-forming effectors BAX and BAK. In experimental cells, loss of both BAX and BAK blocked several mitochondrial apoptotic responses, rather than every possible form of death.",
+        "Cytochrome c moves from the mitochondrial intermembrane compartment, including crista stores, across the outer membrane to the cytosol. It does not begin in the matrix. The inner membrane separates these compartments; the spatial sketch is simplified, with no implied pore stoichiometry.",
+        "A stain for BCL-XL measures abundance rather than survival dependence. BCL2 and BCL2L1 are different genes, and inhibitor selectivity matters. Souers and colleagues re-engineered dual BCL-2/BCL-XL inhibition into BCL-2-selective ABT-199, sparing human platelets; early tumour lysis in three refractory chronic lymphocytic leukaemia patients does not establish benefit in every tumour. A mitochondrial response, caspase marker, sustained killing and immune protection remain separate outcomes. Keep cell identity, timing, handling controls and later survival or regrowth with cleaved-caspase assays, membrane readouts and microscopy. Mitochondrial BH3 challenges test readiness under a defined protocol, rather than completed killing or clinical benefit.",
+        "Compare mechanism, morphology, immune consequence and living arrest separately. Apoptosis uses regulated dismantling; necrotic morphology describes boundary failure; ferroptosis requires iron-dependent lipid damage causing death; immunogenicity requires a compatible adaptive response; senescence is a living arrest. These categories are not mutually exclusive outcomes or a universal appearance-based classifier.",
+        "In the fictional killing experiment, rescue by both an iron chelator and a lipid-protecting compound with no caspase-inhibitor rescue supports a ferroptosis hypothesis. Check lipid damage, death timing, perturbation specificity and GPX4 or glutathione-related mechanisms before attribution; immunogenicity is a separate test. A single stain is not enough."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "apoptosis-bcl2",
+      "kind": "pathway",
+      "name": "Intrinsic apoptosis (BCL-2 family)",
+      "aka": [],
+      "tldr": "Intrinsic apoptosis is the cell's self-destruct switch. BCL-2 holds it shut; BAX and BAK pull it open. Venetoclax pries BCL-2 off so the switch can fire.",
+      "summary": "Stress signals induce BH3-only proteins (BIM, PUMA, NOXA, BAD) that either inhibit anti-apoptotic BCL-2, BCL-XL, MCL-1 or directly activate BAX/BAK, which permeabilise the mitochondrial outer membrane, releasing cytochrome c to activate caspase-9 and executioner caspases. Cancers overexpress BCL-2 (t(14;18) in follicular lymphoma; CLL), MCL-1 (myeloma, AML), or BCL-XL (solid tumours, platelets). Venetoclax (BCL-2) transformed CLL and AML; MCL-1 inhibitors have cardiac toxicity; BCL-XL degraders and platelet-sparing PROTACs are in development.",
+      "asOf": "2026-09-04",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bcl-2_family",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bcl-2_family"
+        },
+        {
+          "label": "Tsujimoto et al., Science 1985: the t(14;18) translocation results from a mistake in VDJ joining",
+          "url": "https://doi.org/10.1126/science.3929382"
+        },
+        {
+          "label": "Blombery et al., Cancer Discov 2019: the recurrent BCL2 Gly101Val mutation confers resistance to venetoclax",
+          "url": "https://doi.org/10.1158/2159-8290.CD-18-1119"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "cll",
+        "aml",
+        "dlbcl",
+        "non-hodgkin-lymphoma",
+        "follicular-lymphoma",
+        "mantle-cell-lymphoma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "bcl2",
+        "tp53",
+        "menin",
+        "bim",
+        "bax"
+      ],
+      "drugs": [
+        "venetoclax"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "lymphoma-bio-germinal-centre"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Lymphoma: the founding lesion of follicular lymphoma is a recombination accident. The t(14;18) breakpoints carry N-region nucleotides and sit beside signal-like sequences, which identifies the translocation as a mistake by the VDJ recombinase at the pre-B-cell stage rather than a late event (Tsujimoto 1985). Venetoclax has not repeated its chronic lymphocytic leukaemia result in lymphoma, because these cells also lean on MCL1 and BCL-xL, and the escape mutation when it does work, BCL2 G101V, lowers drug affinity about 180-fold and appears months before clinical progression (Blombery 2019)."
+      ],
+      "analogy": "A dam (mitochondrial membrane) held by guards (BCL-2, MCL-1) against demolition crews (BAX/BAK). Cancer hires extra guards. Venetoclax fires the BCL-2 guards, and the dam breaks.",
+      "nodes": [
+        {
+          "id": "stress",
+          "label": "DNA damage, oncogene stress, p53",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "bh3",
+          "label": "BH3-only (BIM, PUMA, NOXA)",
+          "x": 50,
+          "y": 22
+        },
+        {
+          "id": "bcl2",
+          "label": "BCL-2 / BCL-XL / MCL-1",
+          "x": 20,
+          "y": 42,
+          "targetId": "bcl2"
+        },
+        {
+          "id": "bax",
+          "label": "BAX / BAK",
+          "x": 65,
+          "y": 45
+        },
+        {
+          "id": "momp",
+          "label": "Mitochondrial permeabilisation",
+          "x": 65,
+          "y": 62
+        },
+        {
+          "id": "cytc",
+          "label": "Cytochrome c → caspase-9",
+          "x": 65,
+          "y": 78
+        },
+        {
+          "id": "casp",
+          "label": "Caspase-3/7 → apoptosis",
+          "x": 65,
+          "y": 95
+        }
+      ],
+      "edges": [
+        {
+          "from": "stress",
+          "to": "bh3",
+          "type": "activates"
+        },
+        {
+          "from": "bh3",
+          "to": "bcl2",
+          "type": "inhibits"
+        },
+        {
+          "from": "bh3",
+          "to": "bax",
+          "type": "activates"
+        },
+        {
+          "from": "bcl2",
+          "to": "bax",
+          "type": "inhibits"
+        },
+        {
+          "from": "bax",
+          "to": "momp",
+          "type": "activates"
+        },
+        {
+          "from": "momp",
+          "to": "cytc",
+          "type": "activates"
+        },
+        {
+          "from": "cytc",
+          "to": "casp",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Venetoclax (BCL-2) in CLL, AML, mantle cell lymphoma",
+        "Next-generation BCL-2 inhibitors sonrotoclax, lisaftoclax",
+        "MCL-1 inhibitors (limited by cardiotoxicity)",
+        "BCL-XL PROTACs sparing platelets",
+        "Combinations with hypomethylating agents, BTK inhibitors, menin inhibitors"
+      ]
+    },
+    {
+      "id": "immunogenic-cell-death",
+      "kind": "term",
+      "name": "Immunogenic cell death",
+      "aka": [],
+      "tldr": "Immunogenic cell death is regulated cell death that can initiate adaptive immunity against the dying cells in a suitable host and context. Injury alone does not establish it.",
+      "summary": "The 2020 consensus defines immunogenic cell death through the adaptive immune response, not merely the appearance of dead cells. Antigens, appropriately timed danger signals, antigen-presenting cells and a responsive host all matter. Apoptotic or other death machinery does not by itself classify the immune outcome.\n\nCalreticulin exposure, ATP or HMGB1 release and interferon-related signals are useful mechanistic readouts, but none alone proves protective immunity. Functional cross-priming and appropriate in-vivo immune tests address later steps. The consensus distinguishes mouse vaccination models from established disease; neither a surrogate marker nor a positive mouse assay establishes clinical benefit in a person.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Immunogenic_cell_death",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Immunogenic_cell_death"
+        },
+        {
+          "label": "Consensus definition, assay interpretation and model limits, 2020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "BOOSTER: exploratory peripheral cytokines are separate from clinical endpoints",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41213939/"
+        },
+        {
+          "label": "Source identity and scope, PMID 32209603",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "Source identity and scope, PMID 17187072",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17187072/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19767732",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19767732/"
+        },
+        {
+          "label": "Source identity and scope, PMID 17704786",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17704786/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "oncolytic-virus",
+        "photoimmunotherapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a local-treatment study, follow injury and signals through presentation, priming, recognition and measured tumour outcomes. Circulating cytokines or proliferating T cells alone do not establish tumour-specific killing, distant control or an optimal radiation dose.",
+        "Immunogenic cell death is regulated death capable of initiating antigen-specific adaptive immunity in a compatible responding host. Antigenicity and appropriately timed adjuvant signals are both necessary considerations. It is an immune consequence, not an exclusive machine opposed to apoptosis or necrotic appearance.",
+        "Surface calreticulin, released ATP and HMGB1 have distinct mechanistic roles in defined experiments. Calreticulin supported dying-cell uptake, ATP signalled through dendritic-cell P2X7/inflammasome pathways, and HMGB1/TLR4 supported processing and presentation. These are examples rather than a universal sufficient three-marker checklist. A DAMP is not automatically a tumour-specific antigen.",
+        "In the consensus vaccination assay, remove residual inducing chemical and add no separate adjuvant before vaccinating immunocompetent syngeneic mice with dying tumour cells. Compare later challenge with living matched tumour cells in vaccinated and unvaccinated hosts, and test specificity with unrelated compatible tumour cells. Incidence and growth are functional readouts. Immune-competent versus deficient comparisons alone cannot isolate immunogenic death from other immunostimulation. Assays consume tumour-cell aliquots, supernatant or host-model material and report separate dead-cell fractions, signal concentrations or surface staining and challenge incidence or growth. Residual inducer, contamination, incompatible antigens and poor death confirmation can invalidate attribution. No universal DAMP cutoff establishes immunogenicity.",
+        "Death plus extracellular ATP does not establish a cancer vaccine. Danger signals, cross-priming, functional protection, distant control and patient benefit are separate claims. Even a positive mouse vaccination assay remains model-bound and does not select a clinical treatment."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "necrosis",
+      "kind": "term",
+      "name": "Necrosis",
+      "aka": [
+        "necrotic",
+        "tumour necrosis",
+        "tumor necrosis",
+        "necrotic core"
+      ],
+      "tldr": "Necrosis describes cell and tissue breakdown with loss of membrane integrity. The appearance alone does not identify its cause.",
+      "summary": "Necrotic appearance can follow overwhelming injury or regulated death mechanisms. A late membrane-integrity measurement cannot reconstruct the preceding death sequence. Histology describes the sampled region; necrosis there does not establish the absence of viable tumour elsewhere, treatment success or a particular molecular pathway. Distinguish tissue appearance from a mechanism established by controlled perturbation and complementary readouts. Inflammation and antigen-specific adaptive immune protection are separate outcomes.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Necrosis",
+      "links": [
+        {
+          "label": "Primary source, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Primary source, PMID 32209603",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "Source identity and scope, PMID 22265413",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22265413/"
+        },
+        {
+          "label": "Source identity and scope, PMID 12110890",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12110890/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "apoptosis",
+        "angiogenesis",
+        "inflammation",
+        "pcr",
+        "immunogenic-cell-death"
+      ],
+      "cancers": [
+        "glioblastoma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Necrosis describes loss of membrane integrity and tissue breakdown, rather than one molecular route. Overwhelming injury, regulated mechanisms and late secondary necrosis after apoptosis with inadequate clearance can converge on membrane loss. Necrosis is broader than necroptosis.",
+        "RIPK3-dependent MLKL activation is an example regulated necrotic mechanism. Sun and colleagues used biochemical and cellular perturbations to establish MLKL downstream of RIP3; a necrotic region or membrane-impermeant dye alone cannot establish that pathway.",
+        "Histology describes the sampled region; viable tumour may remain elsewhere. A membrane-compromised fraction, qualitative tissue necrosis and method-defined necrotic area answer different questions. Handling, delayed fixation and late sampling affect interpretation, and no universal necrosis percentage identifies a death mechanism or proves treatment success. Preparing and staining a section consumes tissue, while live-cell dye assays use tested aliquots and report a defined membrane-compromised fraction. Clinical morphology and experimental pathway perturbation have different validation contexts.",
+        "HMGB1-deficient necrotic cells produced less inflammation in defined experiments. That result concerns danger signalling, rather than automatic adaptive immune memory. Dye entry after an intervention cannot establish necroptosis, vaccine activity or clinical benefit without the separate causal and host tests."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "senescence",
+      "kind": "pathway",
+      "name": "Cellular senescence",
+      "aka": [],
+      "tldr": "Senescent cells remain alive while their division is durably arrested. Their effects depend on the cells, signals and surrounding tissue.",
+      "summary": "Senescence is a stress-associated cell state with durable cell-cycle arrest and other context-dependent features. Identifying it requires combined measurements rather than one marker. In genetically switchable blood-cancer models, release from senescence allowed renewed division with enhanced clonogenic potential. That experimental result does not predict that every senescent cell will restart or that a person will relapse. Arrest, secretion and effects on neighbouring cells require separate assessment. Model findings do not establish a preferred senolytic treatment.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cellular_senescence",
+      "links": [
+        {
+          "label": "Primary source, PMID 31675495",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31675495/"
+        },
+        {
+          "label": "Primary source, PMID 29258294",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29258294/"
+        },
+        {
+          "label": "Schmitt, Wang & Demaria, Senescence and cancer: role and therapeutic opportunities (Nature Reviews Clinical Oncology 2022)",
+          "url": "https://doi.org/10.1038/s41571-022-00668-4"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Source identity and scope, PMID 39121846",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39121846/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19053174",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19053174/"
+        },
+        {
+          "label": "Source identity and scope, PMID 25499914",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25499914/"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cdk46-inhibitor"
+      ],
+      "targets": [
+        "tp53",
+        "cdk4-6",
+        "bcl2"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "cold-spring-harbor",
+        "mayo-clinic"
+      ],
+      "pathways": [
+        "p53-cell-cycle",
+        "apoptosis-bcl2",
+        "inflammation-nfkb",
+        "tumor-microenvironment"
+      ],
+      "terms": [
+        "senescent-cells"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-schmitt-nat-rev-clin-oncol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Lowe (MSK) on senescence and immune clearance; Campisi legacy (Buck); Kirkland (Mayo) on senolytics; Demaria (ERIBA Groningen); Peeper (NKI) on one-two punch.",
+        "Senescent cells remain alive and metabolically active while division is durably arrested. Damage, oncogenic signals and treatment stresses can induce the state. It is distinct from death, reversible quiescence, the broader concept of dormancy and immune exhaustion, and is not a synonym for a person's age.",
+        "Low proliferation and increased p21 one day after stress do not establish durable senescence or a harmful secretory programme. Combine cell identity, longitudinal arrest or regrowth assessment and complementary features such as p16, p21, damage markers and senescence-associated beta-galactosidase. Fixed tissue cannot test later recovery, and no universal marker or arrest-duration cutoff works across contexts. Research outputs include method-defined cell fractions, marker intensities and longitudinal proliferation or regrowth. Stained sections and tested cells consume material. Secretions and their functional effects require their own readouts rather than inference from an arrest marker.",
+        "The senescence-associated secretory phenotype varies with cell, stimulus, timing and environment. In Coppé and colleagues' culture experiments, selected secretions promoted epithelial invasiveness; in Demaria and colleagues' mouse skin wounds, senescent cells and PDGF-AA supported repair. Neither experiment establishes a universal harmful mixture or a clinical instruction to remove senescent cells.",
+        "Genetically switchable blood-cancer models showed enhanced clonogenic growth after release from senescence. This supports possible escape in those systems, not inevitable restart, relapse prediction or a preferred senolytic treatment. Arrest, secretion and effects on neighbouring cells require separate tests."
+      ],
+      "analogy": "A workshop can stop making copies while continuing to use energy and send messages. The messages and their effects must be measured in context.",
+      "nodes": [
+        {
+          "id": "dmg",
+          "label": "Oncogene / therapy stress",
+          "x": 15,
+          "y": 30
+        },
+        {
+          "id": "p53",
+          "label": "p53 → p21",
+          "x": 40,
+          "y": 20,
+          "targetId": "tp53"
+        },
+        {
+          "id": "p16",
+          "label": "p16 → RB",
+          "x": 40,
+          "y": 45,
+          "targetId": "cdk4-6"
+        },
+        {
+          "id": "arrest",
+          "label": "Stable arrest",
+          "x": 65,
+          "y": 30
+        },
+        {
+          "id": "sasp",
+          "label": "Variable secretory programme",
+          "x": 65,
+          "y": 70
+        },
+        {
+          "id": "tme",
+          "label": "Context-dependent neighbour effects",
+          "x": 90,
+          "y": 70
+        },
+        {
+          "id": "seno",
+          "label": "Investigational clearance approaches",
+          "x": 90,
+          "y": 30
+        }
+      ],
+      "edges": [
+        {
+          "from": "dmg",
+          "to": "p53",
+          "type": "activates"
+        },
+        {
+          "from": "dmg",
+          "to": "p16",
+          "type": "activates"
+        },
+        {
+          "from": "p53",
+          "to": "arrest",
+          "type": "activates"
+        },
+        {
+          "from": "p16",
+          "to": "arrest",
+          "type": "activates"
+        },
+        {
+          "from": "arrest",
+          "to": "sasp",
+          "type": "activates"
+        },
+        {
+          "from": "sasp",
+          "to": "tme",
+          "type": "activates"
+        },
+        {
+          "from": "seno",
+          "to": "arrest",
+          "type": "inhibits"
+        }
+      ],
+      "interventions": [
+        "Experimental induction, persistence and clearance require separate measurements.",
+        "Model findings do not establish a preferred senolytic treatment."
+      ]
+    }
+  ]
+}

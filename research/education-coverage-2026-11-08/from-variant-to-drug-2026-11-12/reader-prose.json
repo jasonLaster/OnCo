@@ -1,0 +1,586 @@
+{
+  "dataCommit": "5826b9be7ba41a737b16ed1f49de59923c2f42de",
+  "passages": [
+    {
+      "id": "P01",
+      "owner": "hgvs",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A traceable finding identifies the specimen and assay, reference sequence with its version, genomic location and alleles, relevant transcript with its version, and supporting evidence. DNA means deoxyribonucleic acid and RNA means ribonucleic acid. A reference genome is the comparison sequence; a transcript is an RNA message. For a coding transcript, the annotated start codon fixes the coding frame, so the same genomic change can have different consequences in different transcripts. Not every transcript has a coding sequence. HGVS distinguishes experimentally observed RNA or protein changes from predicted consequences, conventionally putting predicted protein consequences in parentheses. A predicted splice effect is not a measured RNA junction, and a coordinate without its reference cannot safely join two reports.",
+      "sha256": "6017e26ce491a7454f67b7239bf987c0bd12a15881414bdea4d84c3e4d192b79",
+      "sourceKeys": [
+        "hgvs-selected-guidance"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P02",
+      "owner": "variant-calling",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A confirmation should test the suspected weakness. Check specimen identity and tissue, preparation, alteration class, usable local coverage, read quality and alignment; a high average depth does not establish adequate evidence at the disputed site. Reformatting one call or rerunning the same reads does not create independent molecular evidence. A separate preparation or a method with different relevant failure modes may help; a different brand name alone does not establish independence. In a fictional comparison, assay A reports a low-fraction variant and B reports none without site coverage. B has not disproved A. Request the exact site, usable local support, class-specific detection limit, specimen and time point. If both tests were adequate, reconcile the discrepancy, including sampling different populations or times, before building further interpretations.",
+      "sha256": "6ea8c9a2c7d9d05b3b294e19563b13211ee25d8829c393dbd44df84d7fa0d8f4",
+      "sourceKeys": [
+        "25877891"
+      ],
+      "scope": "OnCo reading rule and fictional comparison; Jones supplies paired-analysis context, not a universal confirmation protocol"
+    },
+    {
+      "id": "P03",
+      "owner": "variant-calling",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Paired tumour and an appropriate nonmalignant comparator help attribute a finding. Jones and colleagues' 2015 paired analyses showed why tumour-only interpretation can misclassify inherited findings. The normal comparator also needs adequate evidence at the site. In a fictional repair-gene example, 32 alternate reads among 160 usable reads give a 20 per cent observed fraction; an adequate matched normal lacking the change supports somatic origin in those sampled tissues. Neither that attribution nor a second adequate confirmation establishes that the change drives the cancer, disrupts repair or predicts treatment response. A familiar gene and a credible sequence call answer different questions from measured RNA, protein function and clinical actionability.",
+      "sha256": "dd380887544984707daa4f590770fd07f1080b8769725c983ca6d10f90412373",
+      "sourceKeys": [
+        "25877891",
+        "22544022"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P04",
+      "owner": "vaf",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Fictional splice-site example: 32 alternate reads among 160 usable reads give VAF 20 per cent. Suppose half the sampled cells are malignant, every cell has two local copies, and each affected cancer cell carries one altered copy, with equal recovery per copy. Then VAF = purity times cancer-cell fraction divided by two; 0.20 = 0.50 times CCF divided by two gives CCF 80 per cent. With pure cancer-cell input, the same 20 per cent fits CCF 40 per cent. These are model calculations, not counted cells. Local copy changes, altered-copy multiplicity, recovery bias or uncertain purity can change the fit. A measured splice junction and functional repair remain separate questions.",
+      "sha256": "d411e455ef4d6c7d017f8560282d65a7aec27867b41abb6fce1d3ca772162384",
+      "sourceKeys": [
+        "22544022"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P05",
+      "owner": "alleles-and-zygosity",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Biallelic inactivation concerns whether either parental contribution still supplies useful function in the relevant cancer-cell population, rather than simply counting two physical DNA copies or two events somewhere in a tissue. A damaging change plus loss of the other contribution can support it, but phasing, allele-specific copy state, consequence and cell mixture matter. High VAF alone cannot establish this state. Nguyen and colleagues' pan-cancer analysis associated particular biallelic repair-gene alterations with genomic damage patterns; that association does not make every variant in every repair gene functionally equivalent or establish present drug sensitivity.",
+      "sha256": "cdf58d603ac559f8f108cbbda31cfa0d515fb30f632a7abbe95fe44ef5007c27",
+      "sourceKeys": [
+        "33149131",
+        "22544022"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P06",
+      "owner": "hrd",
+      "catalog": "root",
+      "field": "notes",
+      "text": "In a fictional repair-gene sequence, credible DNA evidence, an abnormal RNA junction and reduced staining in malignant cells progressively refine the question without becoming interchangeable measurements. The RNA result concerns captured transcripts. The stain concerns the antibody's detectable signal; determine which protein forms and epitopes the assay recognises before declaring intact functional protein absent. A controlled repair assay adds evidence at another level. Keep five claims separate: a real change, loss of both useful parental contributions, a compatible genomic history, impaired repair now, and benefit from treatment in the intended clinical setting. A coherent collection of markers is not a vote that turns all five claims into one label.",
+      "sha256": "575a80af9633c534633f4d8838ee7e2aad6eacabafe65bb63083ffea3f4b271f",
+      "sourceKeys": [
+        "33149131",
+        "29635390",
+        "32245699"
+      ],
+      "scope": "Fictional evidence ladder and OnCo reading inference, with named genomic and functional studies"
+    },
+    {
+      "id": "P07",
+      "owner": "hrd",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Two fictional models can share compatible historical scars yet have different current behaviour. Adequate assays in A support impaired repair, target engagement is demonstrated, and survival falls after the tested exposure. B instead shows partial repair restoration and little survival change despite engagement. The first pattern supports a repair-related sensitivity hypothesis in A; the scar overstates B's current vulnerability. Restoring repair in A could test causality. Conversely, few RAD51 foci with almost no cycling cells can be uninformative even when a culture survives a PARP exposure: record the compatible history, inadequate functional result and observed survival separately. None of these model results determines a treatment indication.",
+      "sha256": "d4ce179cd365ad9b2f514364b1cdda08d2a385f169c5cee3f1ebd1d4041399a8",
+      "sourceKeys": [
+        "29635390",
+        "32245699"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P08",
+      "owner": "parp-inhibitor",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Hoslett and colleagues' 2026 preclinical study investigated selective disposal of trapped PARP1 involving TEX264, the protein-remodelling enzyme p97 and LC3-associated lysosomal handling. Autophagic handling of nuclear material is called nucleophagy. Perturbing the machinery increased chromatin-associated PARP1 and PARP-inhibitor sensitivity in the studied systems; complementation and cargo-recognition experiments supported the proposed route. Some trapping experiments also supplied the DNA-damaging agent MMS, so their conditions are not every drug-alone exposure. The authors left the exact export or packaging of nuclear cargo, and macroautophagy versus direct microautophagy, unresolved. A clearance cartoon is therefore a mechanistic model, not established compartment geometry. Expression-survival associations do not validate TEX264 expression as a treatment-response test.",
+      "sha256": "51f2897cf5a4ae5338e142532338f16ba29ce643634a1cd506438bffb8ade755",
+      "sourceKeys": [
+        "42230924"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P09",
+      "owner": "parp-inhibitor",
+      "catalog": "root",
+      "field": "notes",
+      "text": "In a fictional culture, more death with a PARP inhibitor plus a lysosomal drug fits several explanations: reduced clearance of trapped PARP, toxicity from the second drug itself, or another altered stress response. Measure chromatin-bound PARP1 over the relevant interval, include both single-drug conditions, and test the proposed clearance machinery with suitable independent perturbation and restoration. Unchanged trapped cargo despite more death argues against that particular clearance explanation. TEX264 or p97 perturbation is complementary evidence, not automatically perfectly selective, because proteins can have other functions. Chloroquine and hydroxychloroquine alter lysosomal processes broadly. Survival alone, high recycling RNA or a broad lysosomal effect does not identify selective trapped-PARP disposal or establish patient benefit.",
+      "sha256": "d84fbd7fa1f399249bb7ececc95cebd3978fa4442d61ab78b2a6a57d885fa418",
+      "sourceKeys": [
+        "42230924",
+        "33634751"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P10",
+      "owner": "talazoparib",
+      "catalog": "root",
+      "field": "notes",
+      "text": "The Talzenna U.S. label effective October 2026 specifies adult breast-cancer use as a single agent for deleterious or suspected-deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic disease, selected with an FDA-authorised companion diagnostic. An unspecified germline variant is too broad. EMBRACA randomised 431 people with the trial's advanced HER2-negative germline-BRCA breast cancer to talazoparib or physician's-choice chemotherapy: median progression-free survival was 8.6 versus 5.6 months, hazard ratio 0.54. That clinical comparison is different from Murai's cell-assay trapping comparison with olaparib. Neither a laboratory potency ratio nor a cross-trial comparison establishes the best PARP inhibitor for an individual or an adjuvant indication.",
+      "sha256": "6887ef8d185103ad584ec690e9db78319ba24751a06ec6fe5515d369d471c3b2",
+      "sourceKeys": [
+        "30110579",
+        "24356813",
+        "talazoparib-label"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P11",
+      "owner": "olaparib",
+      "catalog": "root",
+      "field": "notes",
+      "text": "TBCRC 048 was a metastatic single-arm response study, a different question from adjuvant recurrence prevention. Tung's 2020 report enrolled 54 people with several germline or somatic repair-gene alterations; confirmed responses occurred with germline PALB2, 82 per cent, or somatic BRCA1/2, 50 per cent, in small subgroups, with no responses in ATM or CHEK2 alone. The 2026 expansion enrolled another 54 people, including seven with triple-negative disease: response was 75 per cent in germline PALB2 and 11 of 30, 36.7 per cent, in somatic BRCA1/2. The latter cohort missed its prespecified response target. These observations do not establish an adjuvant indication for somatic-only breast cancer, isolate comparative benefit against another treatment, or make every alteration in a repair gene equivalent. OlympiA's qualifying germline population and the indication-specific label remain separate evidence.",
+      "sha256": "7289a03be7bfc3bf8f828edc5fb80f31c8306328b8e5532dd6fa45508bded8c7",
+      "sourceKeys": [
+        "33119476",
+        "41604601",
+        "36228963",
+        "olaparib-july-2025-label"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P12",
+      "owner": "autophagy",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+      "sha256": "665a5a17521abc50d9cb2c22d34289081d92dcbf944f85d8247657b6e2a6e626",
+      "sourceKeys": [
+        "33634751",
+        "17534139"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P13",
+      "owner": "autophagy",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+      "sha256": "c479b82e467850af088b8fc1acf3f313afec859e89e2caf51fae8bc482cc4876",
+      "sourceKeys": [
+        "33634751"
+      ],
+      "scope": "Fictional arithmetic and explicitly bounded analogy; no empirical bag-to-marker conversion"
+    },
+    {
+      "id": "P14",
+      "owner": "autophagy",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+      "sha256": "5e09c2f394622a1ee1bd3a579ee2475a391982628b44e25a89e9b8a8ea0c622a",
+      "sourceKeys": [
+        "33473172",
+        "25975349",
+        "29158785",
+        "40527957"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P15",
+      "owner": "autophagy",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
+      "sha256": "6552fb563e69ef5711e197cabb92d8894edc3259812c6fb14c1bbc8cd45b8199",
+      "sourceKeys": [
+        "19258318",
+        "33634751"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P16",
+      "owner": "ubiquitin-proteasome-system",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Proteasomal degradation commonly handles individual suitable proteins, whereas lysosomal macroautophagy can deliver aggregates, organelles and portions of cytoplasm. This is a distinction of machinery and typical cargo, not an absolute partition: ubiquitinated material can also be recognised by autophagy adaptors such as p62. A tagged protein, an autophagic membrane marker and disappearance of a named cargo are different observations. Bortezomib's relapsed-myeloma trial result does not predict a hydroxychloroquine result in pancreatic cancer, and blocking both routes does not by itself demonstrate selective harm to malignant cells.",
+      "sha256": "f3000cc9cf6838cdb29fbe0dc56d1f7c8dda98daa0ccf5580e469d55050c06db",
+      "sourceKeys": [
+        "33634751",
+        "15958804",
+        "31120501"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P17",
+      "owner": "pi3k-akt-mtor",
+      "catalog": "root",
+      "field": "notes",
+      "text": "PI3K means phosphoinositide 3-kinase; AKT is also called protein kinase B. Mechanistic target of rapamycin complex 1, mTORC1, integrates growth and nutrient inputs. PTEN, phosphatase and tensin homolog, removes a phosphate from a PI3K-generated lipid signal. These protein and lipid reactions need their own readouts. Ibrahim 2012 found that PI3K inhibition reduced BRCA1/2 expression and increased PARP-inhibitor sensitivity in the BRCA-proficient triple-negative breast cancer models studied. A second branch concerns mTORC1 restraint of ULK1-associated autophagy initiation, studied by Kim 2011. Releasing an initiation brake does not establish completed cargo degradation or protective recycling. The two branches can change together without revealing the net survival effect. A model already lacking the relevant repair function cannot be assumed to gain the same vulnerability as one in which that function is newly reduced; measure protein and repair function, flux and survival under the actual compound, dose and schedule.",
+      "sha256": "d149397c8cb51a69c4ff2cfaa70f776d633c1e4c41c266256d7407f94bf35853",
+      "sourceKeys": [
+        "22915752",
+        "21258367"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P18",
+      "owner": "pi3k-akt-mtor",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Rapalogs, PI3K or AKT inhibitors and ATP-site mTOR kinase inhibitors are different interventions. In Rodrik-Outmezguine's 2011 models, inhibiting both mTOR complexes initially reduced AKT Ser473 and Thr308 phosphorylation, but relief of receptor feedback later restored Thr308 phosphorylation and AKT signalling while Ser473 remained suppressed. A Ser473 result therefore did not measure all AKT activity. O'Reilly's rapalog study and Harrington's IRS feedback work likewise explain why lower mTORC1 output can coexist with increased upstream signalling. These are measured responses in specified systems, not inevitable behaviour or a universal combination prescription.",
+      "sha256": "f70dc68a0d92984b3287ba67534ab51000a4dcc98178a98a11a311d77b8b7161",
+      "sourceKeys": [
+        "22140653",
+        "16452206",
+        "15249583",
+        "15718470"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P19",
+      "owner": "pi3k-akt-mtor",
+      "catalog": "root",
+      "field": "notes",
+      "text": "In a fictional experiment, repair RNA falls, an mTORC1-associated phosphosite falls, AKT phosphorylation rises and more autophagosomes appear. The RNA concerns messages; confirm the proposed protein and repair consequence. A validated site change concerns that output at that time, while the AKT change may fit feedback without proving every downstream effect. Autophagosome amount does not establish completed flux, and no survival conclusion has yet been supplied. Growth and energy inputs also differ: Gwinn 2008 linked AMPK phosphorylation of raptor to mTORC1 restraint during energy stress. Slower costly building work and better survival can coexist. Named S6, 4E-BP1, AKT and AMPK-target sites need their own controls, total-protein context and timing; bulk RNA is not a kinase-activity meter.",
+      "sha256": "f3924265afebc437bc99e0fe14665bbdc728209c7d44a8d6466921275a5d6b53",
+      "sourceKeys": [
+        "18439900",
+        "22140653",
+        "21258367"
+      ],
+      "scope": "Fictional combined-readout exercise and source-scoped feedback/energy mechanisms"
+    },
+    {
+      "id": "P20",
+      "owner": "controlled-perturbation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A fictional two-drug table normalises remaining viability to vehicle at 100 per cent: A leaves 70, B leaves 80, and combination examples leave 56 or 30. Highest single agent uses the better single-drug effect, a 70 per cent remaining-viability reference here. Bliss independence predicts 0.70 times 0.80 = 0.56, or 56 per cent. Both combinations exceed the HSA effect; 56 matches Bliss while 30 exceeds it at that dose pair. A further combination leaving 65 exceeds HSA but not Bliss. Loewe additivity instead needs equivalent-dose information from suitable individual dose-response curves; this one-point table cannot establish it. Report the model, dose-pair pattern, uncertainty and schedule. Interaction relative to a reference does not identify a biological mechanism, tolerable human exposure or a treatment choice.",
+      "sha256": "4fbb6f075ed820762e2471beb8eba7745d8cc30d2a0101542f1754a9340ca1b0",
+      "sourceKeys": [
+        "26949479",
+        "28379339"
+      ],
+      "scope": "Fictional arithmetic using named reference-model definitions; not clinical response rates"
+    },
+    {
+      "id": "P21",
+      "owner": "controlled-perturbation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A rescue restores a proposed missing function or supply and tests whether a defined effect reverses. Adding a cake mix back after its removal implicates the mixture without identifying flour, sugar or another ingredient; likewise, broad mevalonate add-back does not isolate cholesterol. More specific branch perturbations and appropriate add-backs can narrow the explanation. Partial rescue can reflect incomplete delivery or restoration as well as additional contributors, so it does not prove a second cause. Place the add-back relative to the blocked step: supplying GGPP after an upstream synthesis block is different from inhibiting the transferase that uses GGPP, which the added substrate cannot simply be assumed to bypass. Include restoration-only and matched controls, verify the restored process and distinguish growth, morphology and death. A genetic perturbation also has its own specificity limits.",
+      "sha256": "e546eb36a002879e649929dd5ac2edb4f0d977ece8d0b095f65379d44fa7ba4f",
+      "sourceKeys": [
+        "22265415",
+        "33634751"
+      ],
+      "scope": "Explicit OnCo causal-reading inference illustrated by the source-scoped mevalonate experiments"
+    },
+    {
+      "id": "P22",
+      "owner": "lipid-metabolism-cancer",
+      "catalog": "root",
+      "field": "notes",
+      "text": "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+      "sha256": "3e100aea9040928008a5d8ff92d56c1c08eacff0ed4a8f5c1cfe2333210f2617",
+      "sourceKeys": [
+        "22265415",
+        "19041766",
+        "openstax-lipids-selected",
+        "medlineplus-cholesterol-selected",
+        "uniprot-ggps1-reviewed"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P23",
+      "owner": "lipid-metabolism-cancer",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+      "sha256": "0e0e3a4e0f749542809643cac86fd2de374a49d47cd145b015c2c61d4cb68215",
+      "sourceKeys": [
+        "22265415"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P24",
+      "owner": "lipid-metabolism-cancer",
+      "catalog": "root",
+      "field": "notes",
+      "text": "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour.",
+      "sha256": "5fd4b5a690f560b43876f78681f96e7ff38dce6fecb993cf5b7517e52457a177",
+      "sourceKeys": [
+        "22265415",
+        "19041766"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P25",
+      "owner": "notch",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+      "sha256": "71d461a375704cf762e08b8f9f508528d88518d5bd50b51dca5632de0af653f5",
+      "sourceKeys": [
+        "25104330"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P26",
+      "owner": "wnt",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Jiang 2013 screened 39 pancreatic cancer lines: the lines sensitive to the tested PORCN inhibitor carried inactivating RNF43 changes. This does not mean every RNF43 variant predicts sensitivity. The reported RNF43-loss models depended on secreted Wnt, whereas a downstream escape from beta-catenin destruction can maintain output despite blocking ligand preparation upstream. Morin's colorectal work linked stabilising beta-catenin changes to this distinction. In a fictional nuclear-beta-catenin culture with such a bypass stipulated, an upstream PORCN block is not expected to remove that particular output. Actual engagement, output and growth still need testing; pathway position is a mechanistic hypothesis, not proof that a drug has no effect through any route.",
+      "sha256": "680ec0539788d3d96ac8f62564f1a5734e5516e66b081f19ee683fb35b628a82",
+      "sourceKeys": [
+        "23847203",
+        "9065402"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P27",
+      "owner": "wnt",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Rodon's phase 1 WNT974 study treated 94 people with advanced solid tumours. AXIN2 RNA decreased in 94 per cent of 52 paired skin-biopsy comparisons and 74 per cent of 35 paired tumour-biopsy comparisons; no RECIST responses were observed. These denominators are paired-sample groups, not response fractions out of all 94 participants. A downstream output change supports a pharmacodynamic effect without directly measuring receptor occupancy, selective growth dependence or tumour shrinkage. Dysgeusia occurred in 50 per cent, illustrating that normal-tissue effects also matter. This trial does not justify transferring a target-output change to benefit or a treatment recommendation.",
+      "sha256": "d4d81637b22a1eba5fe5168f25eae5d938831246372abeb73bdb8a2c92d585fe",
+      "sourceKeys": [
+        "33941878"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P28",
+      "owner": "rtk-activation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "The original FIGHT-202 report observed responses in 38 of 107 people, 35.5 per cent, with previously treated cholangiocarcinoma and qualifying FGFR2 fusions or rearrangements given pemigatinib. The denominator includes fusions or rearrangements, not only one fusion mechanism. A 2024 correction is linked to the report; its text was unavailable, so the figure here is from the original abstract rather than a correction-checked final estimate. It is a named single-arm clinical signal rather than evidence for any receptor variant or another disease. For an uncharacterised receptor variant, compare with the normal receptor at matched expression and measure appropriate phosphorylation and downstream changes. Similar amount without extra activation does not support activation in that condition, while leaving other conditions unresolved. An activating receptor fusion or amplification may still require its kinase, whereas an active downstream RAS route can bypass the proposed receptor step. Locate the drug's blocked step and possible downstream bypass, then separately test whether changing the output matters for growth. Neither a bulk ligand signal from a sender nor receptor presence assigns an active signal to the malignant receiver.",
+      "sha256": "be9f88deb30eefba13d35c149639c2542c65016783cd3c778b087d4df45e94b9",
+      "sourceKeys": [
+        "32203698",
+        "notice-38181811"
+      ],
+      "scope": "Original FIGHT-202 abstract plus explicit variant-test inference; 2024 correction content remains unread"
+    },
+    {
+      "id": "P29",
+      "owner": "keap1-nrf2",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Singh's initial series contained 40 primary lung cancers and 16 pleural-fluid samples; excluding two small-cell pleural-fluid samples gives the 54 NSCLC denominator. Ten mutation-bearing samples round to 19 per cent, not a universal lung-cancer prevalence. Five of six tested mutation-bearing primary tumours had locus loss; do not assign biallelic loss to all ten samples. Romero separately described KEAP1 alterations in about 20 per cent of KRAS-mutant lung adenocarcinomas. These populations and denominators differ. KEAP1-mutant-versus-normal-cell viability comparisons are not matched isogenic proof that one alteration caused every chemotherapy response.",
+      "sha256": "8a7512a61adb5c281b512242632df2dfa188dc86577ae74fa0d7293a656075f9",
+      "sourceKeys": [
+        "17020408",
+        "28967920"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P30",
+      "owner": "keap1-nrf2",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Protection and dependence are experiment-specific directions. If removing a verified defence makes a defined stress more lethal, that supports protection under that stress. If removing the defence or a supply route reduces survival relative to an appropriate matched comparison, that supports a conditional dependence; it need not mean every unstressed cell dies. In a fictional culture, high antioxidant RNA plus probe-associated death establishes neither NRF2-driven killing nor ferroptosis. Test the alteration's effect on NRF2 turnover or nuclear localisation and output, then use independent perturbation and restoration to examine the survival mechanism. CUL3 works with other adaptors, and a compound suppressing protein production broadly does not isolate NRF2. A genetic intervention also needs controls, rather than being automatically specific.",
+      "sha256": "087ebe3d0acedbc7fd03546bb6f4a25ad96dfc2e3207746d41293efea1d7df9b",
+      "sourceKeys": [
+        "15282312",
+        "17020408",
+        "28967920",
+        "22632970"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P31",
+      "owner": "keap1-nrf2",
+      "catalog": "root",
+      "field": "notes",
+      "text": "ClinicalTrials.gov records KEAPSAKE, NCT04265534, as a randomised, double-blind phase 2 comparison of telaglenastat or placebo added to carboplatin, pemetrexed and pembrolizumab for selected metastatic nonsquamous NSCLC with KEAP1/NRF2 alterations. The record last updated in September 2022 reports actual enrollment 40, status terminated and the stated reason lack of clinical benefit. This is registry status, not a peer-reviewed effect estimate or proof that every glutaminase strategy fails. Model activity, eligibility, acceptable exposure and clinical benefit remain different questions.",
+      "sha256": "90e641bf48f72c8c810e9e2ba31e2694ae7b9b18d792b87d328cc716a5c1b630",
+      "sourceKeys": [
+        "28967920",
+        "keapsake-registry"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P32",
+      "owner": "glutamine-metabolism",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A metabolic supply dependence is conditional. Romero's gene-edited KRAS-driven lung cancer experiments linked Keap1 loss and NRF2 activation to increased glutaminolysis dependence and sensitivity to glutaminase inhibition in the studied models. This does not establish a universal need in all cancers. KEAPSAKE's 40-participant registry disposition is a separate clinical result for a specified combination and selected population, rather than a response percentage or a test of every glutamine-directed intervention. Keep growth effects, metabolite measurements, the specific perturbation, medium, comparator and clinical exposure separate.",
+      "sha256": "0da777879dd36138a458b702a2ee3985e28382b016f796f634844d690d4190a3",
+      "sourceKeys": [
+        "28967920",
+        "keapsake-registry"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P33",
+      "owner": "ferroptosis-cell-death",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Hangauer 2017 investigated reversible drug-tolerant persister states across specified cancer-cell and drug models. Surviving the original treatment could coexist with increased GPX4 dependence; this was not necessarily permanent genetic resistance. The breast model BT474 is HER2-positive, not a triple-negative model. In the mouse relapse experiment, A375 melanoma cells had genetic GPX4 loss, with ferrostatin protection withdrawn while dabrafenib and trametinib continued. Prevented relapse in that setting was not systemic treatment with a GPX4 inhibitor: the authors noted poor systemic pharmacokinetics of RSL3 and ML210. These experiments do not establish a tolerable human window or universal persister vulnerability.",
+      "sha256": "a6a2ba3ac24472d9f4801dd157c06bbb9cb6be28adeed009f9f085e0ff5124eb",
+      "sourceKeys": [
+        "29088702"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P34",
+      "owner": "ferroptosis-cell-death",
+      "catalog": "root",
+      "field": "notes",
+      "text": "A fictional GPX4 experiment combines lipid oxidation before death, rescue by an iron chelator and a lipid-radical trap, and a corresponding phenotype after an independent genetic perturbation. These observations converge on an iron-dependent lipid-damage explanation; none alone proves it. Include vehicle, rescue-only and an unrelated death condition because rescue compounds can affect other processes. Survival of an otherwise matched FSP1-high comparison is compatible with a parallel defence; directly testing that defence is needed before assigning compensation to it. Energy production, a general oxidation dye and an antioxidant transcript are different measurements and cannot substitute for this causal sequence.",
+      "sha256": "4341405b335e29670aa77135c55fb651a66d29ae22d6b114aa684f0fc7e9f5b9",
+      "sourceKeys": [
+        "22632970",
+        "31634900",
+        "29088702"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P35",
+      "owner": "oxidative-phosphorylation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "In a fictional paired-well example, culture A uses 180 picomoles of oxygen per minute with 30,000 viable cells and B uses 120 with 20,000. Both equal 60 per minute per 10,000 viable cells. After ATP-synthase blockade their corresponding normalised rates are 30 and 40, giving inhibitor-sensitive differences of 30 and 20 picomoles of oxygen per minute per 10,000 cells. Those are oxygen-rate differences, not ATP-production rates or proof of survival dependence. Cell number, fuel, oxygen, timing and the inhibitor controls matter. A corrected, specified conversion method needs additional assumptions; the 2018 Mookerjee correction changed calculations by up to 17 per cent. General oxidation, compartment-specific reactive chemistry and iron-dependent lipid death remain separate questions.",
+      "sha256": "97b8b143b532dae0aec7a3e7550ad597edfd11b3f44e2f1d09f714e3c17ded2a",
+      "sourceKeys": [
+        "28270511",
+        "30097494",
+        "32130885",
+        "22632970"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P36",
+      "owner": "oxidative-phosphorylation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Echeverria 2019 treated three patient-derived triple-negative breast cancer xenograft models with doxorubicin and cyclophosphamide. Barcode structure was broadly maintained at the residual nadir; regrowth could select dominant barcodes, so this does not exclude all clonal selection. In PIM001-P, the RNA analysis highlighted oxidative phosphorylation and isolated residual cells had higher oxygen consumption and lower extracellular acidification than untreated cells. Those rate measurements were not obtained in every model. IACS-010759 delayed regrowth after chemotherapy in the three tested models, rather than eradicating the tumours. Regrown models could again respond to chemotherapy. Two serial human biopsy cases supported stability during initial AC but did not establish invariant clones through all subsequent treatment. Rate, state, perturbation response and clinical benefit remain distinct evidence.",
+      "sha256": "29a3ee00162b1b6d4db62af1acd2ee93a999b365e47f815f600d6b7e8c616803",
+      "sourceKeys": [
+        "30996079"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P37",
+      "owner": "oxidative-phosphorylation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Yap 2023 reported phase 1 IACS-010759 studies in 17 people with acute myeloid leukaemia and 23 with advanced solid tumours. Elevated blood lactate and neurotoxicity limited exposure needed for sustained complex-I inhibition; target inhibition was modest, antitumour activity limited, no recommended phase 2 dose was established and both studies were discontinued. These named safety and exposure results separate a model vulnerability from a usable treatment. A respiratory RNA signature plus a lower ATP-based signal still establishes neither increased oxygen-consumption rate nor counted cell death. Measure identified viable cells, normalised oxygen use, engagement and independent growth or death outcomes. Acidification can include respiratory carbon dioxide as well as glycolysis, and lactate production with oxygen can coexist with respiration.",
+      "sha256": "7947e58fe7a1db6375dd9d9c01b190aa3b9f2eff26b1207651395cc71a05f69d",
+      "sourceKeys": [
+        "36658425",
+        "25449966",
+        "28270511"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P38",
+      "owner": "measurement-to-benefit-evidence",
+      "catalog": "pr-371",
+      "field": "notes",
+      "text": "For a repair-gene claim, keep the measured observation, method, source, supported conclusion and unresolved question together. Internal coherence means the findings fit a story but can share pipeline errors. Cross-report agreement can reuse a specimen or computation. Independent reproduction adds a separate auditable workflow with suitable controls without proving clinical utility. Clinical validation concerns the specified use and population, and does not guarantee an individual's response. These are different checks, not numerical confidence tiers. A credible DNA change, altered RNA junction, protein signal, current repair assay and model drug response each narrow a different gap; an old scar cannot vote away a present-function uncertainty. The route is a reading framework, not a mandatory research sequence or a validated treatment protocol.",
+      "sha256": "e31e3096eb079819118a38119723cebf2b6110f2be222489bbace53140694069",
+      "sourceKeys": [
+        "25877891",
+        "22544022",
+        "29635390",
+        "32245699"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P39",
+      "owner": "measurement-to-benefit-evidence",
+      "catalog": "pr-371",
+      "field": "notes",
+      "text": "Write a treatment question with disease, biomarker, setting, intervention, comparator and outcome. Adjuvant recurrence prevention after initial local treatment is a different question from shrinking measurable metastatic disease. In a fictional early-breast setting, a credible somatic repair change, compatible scar and model response can support a hypothesis while metastatic response data remain adjacent evidence. Confirm the actual protocol or label for the exact alteration and setting; off-label use of an approved medicine is not itself proof, and trial eligibility is separate from a real site and supply. An evidence ledger should retain the gap instead of interpreting an untested use as proven benefit or proven failure. Expanded access likewise adds regulatory, physician, supplier and review requirements without supplying efficacy evidence.",
+      "sha256": "74a67d33123272192d79c8979e296355a5b352da587280170725eae53ae9d500",
+      "sourceKeys": [
+        "36228963",
+        "33119476",
+        "41604601",
+        "olaparib-july-2025-label",
+        "fda-expanded-access-april-2026"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P40",
+      "owner": "cancer-drivers-vs-actionable",
+      "catalog": "pr-371",
+      "field": "notes",
+      "text": "SHIVA tested one pathway-matching strategy in refractory advanced cancer, not every precision treatment. Its randomised comparison did not establish superior progression-free survival for the tested matching approach over physician's choice. That limits the strategy in that population; it does not invalidate an approved biomarker-specific therapy. Conversely, a single-arm response signal does not isolate comparative benefit, and another trial's cohort cannot supply its missing randomised control. Check exact alteration and classification, germline or somatic origin, disease, prior treatment, assay, subgroup denominator, comparator and outcome before transferring a clinical result. Molecular resemblance alone cannot broaden a label or protocol.",
+      "sha256": "463601f1866d36f6d29c943baefe2c32376e5d105d5c7708b9683e5c7925b9db",
+      "sourceKeys": [
+        "26342236",
+        "33119476",
+        "41604601"
+      ],
+      "scope": "source-backed teaching and explicit reading inference"
+    },
+    {
+      "id": "P41",
+      "owner": "functional-variant-evidence",
+      "catalog": "pr-371",
+      "field": "notes",
+      "text": "A credible splice-site DNA change and a predicted splice consequence do not establish the same fact as measured abnormal RNA junctions. An observed RNA change still does not quantify intact protein or current repair function; an antibody signal needs its intended protein form and cell population specified. In a fictional case with an altered junction, reduced stain and an uninformative repair assay, those first two observations remain useful without completing the functional claim. For an uncharacterised receptor allele, a matched-expression comparison with the normal receptor can test activation in that system; absence of an extra phosphosignal there neither supports activation nor proves harmlessness in every context. Retain the exact variant, transcript, system, controls and remaining uncertainty rather than substituting the gene's reputation.",
+      "sha256": "a367acd58c1586c348df387a2230ee249aa348d229188b90d7773e1e16ea835d",
+      "sourceKeys": [
+        "hgvs-selected-guidance",
+        "29635390",
+        "25877891"
+      ],
+      "scope": "OnCo reading inference from separate sequence, expression and functional measurements; no new clinical classification rule"
+    },
+    {
+      "id": "P42",
+      "owner": "driver-mutation",
+      "catalog": "root",
+      "field": "summary",
+      "text": "A driver alteration contributes to cancer development in a specified biological context. Vogelstein and colleagues' 2013 review distinguished mutations conferring a selective growth advantage from passengers without that advantage. Calling a sequence change reliably does not establish which role it has, and a familiar gene can contain alterations with different or uncertain effects.\n\nContribution to cancer development, current survival dependence and clinical actionability are different claims. The SHIVA randomised study did not establish superior progression-free survival for its particular pathway-matching strategy in refractory advanced cancer; that result limits the tested strategy without invalidating every precision treatment. Specify the alteration, measured function, disease and treatment setting, intervention, comparator and outcome before concluding that a drug will help.",
+      "sha256": "9f84ec5182b3d3f7b5f012898708b77accc2f04cba800a5cd207e58c0751e72b",
+      "sourceKeys": [
+        "additional-driver-vogelstein-2013",
+        "26342236"
+      ],
+      "scope": "Source-scoped definition and explicit distinction from a particular clinical matching strategy."
+    },
+    {
+      "id": "P43",
+      "owner": "controlled-perturbation",
+      "catalog": "root",
+      "field": "notes",
+      "text": "Attribute each readout to the relevant cells. An ATP-based signal can change through cell number or per-cell metabolism, and slower single-cell mass accumulation does not by itself show death. Direct death measurements and regrowth after washout ask further questions; regrowth concerns surviving cells, not revival of cells already dead. A mixed culture can change composition, and a nonmalignant-cell label alone does not establish a validated healthy-tissue control. Ladan's breast-slice chemotherapy assay was compared with response during preoperative treatment in a defined setting. That assay-specific validation does not validate every postoperative combination, human exposure or clinical decision. An inadequate viable preparation should remain uninterpretable rather than be called resistant.",
+      "sourceKeys": [
+        "37777518",
+        "INHERITED-functional-drug-testing",
+        "INHERITED-single-cell-mass-assays"
+      ],
+      "scope": "OnCo readout and validation rules, with inherited assay-source reading and the newly read Ladan abstract; not a new whole-paper claim.",
+      "sha256": "df091026c525d18d0c2c08c78271422a6e2f779c21eb3680dda8494527c5fadf"
+    }
+  ],
+  "passageCount": 43,
+  "noteParagraphs": 42,
+  "correctedDriverSummary": 1,
+  "existingNotesAndLinksPreserved": true,
+  "sourceAndModelQualificationsRetained": true
+}

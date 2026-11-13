@@ -1,0 +1,429 @@
+{
+  "version": "proposal-from-variant-to-drug-peer-fields",
+  "state": "Three unapplied PR-371 complete-field proposals plus two unchanged frozen peer owners for reader/proof lookup. Rendering this snapshot does not apply fields or integrate those owners.",
+  "draft": 371,
+  "coordinatorDataHead": "5826b9be7ba41a737b16ed1f49de59923c2f42de",
+  "records": [
+    {
+      "id": "analytical-vs-clinical-validation",
+      "kind": "term",
+      "name": "Analytical versus clinical validation",
+      "aka": [
+        "analytical validation",
+        "clinical validation",
+        "analytical validity",
+        "clinical validity",
+        "clinical utility",
+        "validation of a biomarker test"
+      ],
+      "tldr": "Analytical validity concerns the measurement. Clinical validity concerns its relationship to a clinical condition or outcome, and clinical utility concerns the consequences of using it for a decision.",
+      "summary": "Repeatability or detection accuracy does not establish that a test predicts an outcome, and an outcome association does not establish benefit from acting on the result. These questions depend on the assay version, specimen, population and intended use. Clinical utility can be studied by comparing decision strategies: DYNAMIC randomized people with stage II colon cancer to ctDNA-guided or standard management and evaluated chemotherapy use and recurrence-free survival. That design illustrates evidence about a particular strategy; it does not validate every residual-disease test or treatment change. Prediction-model validation and a study of model-guided care also answer different questions. MedlinePlus Genetics describes analytical validity as how well a test detects whether a specific genetic variant is present or absent, clinical validity as how well the variant relates to the presence, absence or risk of a disease, and clinical utility as whether the test provides helpful information about diagnosis, treatment, management or prevention. Laboratory certification under CLIA standards is designed to ensure analytical validity and does not address clinical validity or clinical utility. FDA guidance on circulating tumour DNA in curative-intent solid tumour drug development says analytical validation ensures that an assay measures the intended analytes in the intended tumour type and establishes its performance characteristics, and that pre-analytical factors such as sample collection, storage and handling should be controlled because they affect sensitivity and specificity. The same guidance says the evidence for clinical validity or clinical utility of ctDNA varies across malignancies and patient populations, and that a trial in which a minimal residual disease result guides de-escalation of treatment should be randomised. A prediction model is judged on overall fit, calibration and discrimination, so separating risk groups well does not by itself give accurate individual probabilities (Riley and colleagues, 2024); an outcome association also does not show who benefits from a treatment, which is a separate comparison of strategies.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Biomarker_(medicine)",
+      "links": [
+        {
+          "label": "FDA: Software as a Medical Device (SaMD)",
+          "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd"
+        },
+        {
+          "label": "FDA: diagnostic-test study interpretation",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda"
+        },
+        {
+          "label": "DYNAMIC randomized ctDNA-guided treatment strategy (2022)",
+          "url": "https://doi.org/10.1056/NEJMoa2200075"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Biomarker_(medicine)"
+        },
+        {
+          "label": "MedlinePlus Genetics: judging a valid and useful test",
+          "url": "https://medlineplus.gov/genetics/understanding/testing/validtest/"
+        },
+        {
+          "label": "FDA: Use of Circulating Tumor DNA for Curative-Intent Solid Tumor Drug Development (guidance)",
+          "url": "https://www.fda.gov/media/183874/download"
+        },
+        {
+          "label": "Riley et al., Evaluation of clinical prediction models (part 2): how to undertake an external validation study (BMJ 2024)",
+          "url": "https://doi.org/10.1136/bmj-2023-074820"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "measurement-to-benefit-evidence",
+        "detection-versus-quantification",
+        "test-agreement-versus-accuracy",
+        "biomarker-qualification-context",
+        "decision-curve-net-benefit",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "external-validation",
+        "calibration",
+        "samd",
+        "biomarker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference built on the definitions above): a test-guided strategy is the test, its result rule, the action taken and the care setting taken together, and its utility is judged against a defined alternative using outcomes and harms. Measurement evidence (repeat readings of a spiked target), meaning evidence (a result followed by a later outcome) and use evidence (the strategy compared with an alternative) are three separate questions, and an answer to one is not an answer to another.",
+        "Evidence table in words. Does it measure correctly? Inspect reference specimens, repeats, background, input range and failures; the tempting overread is that reliable measurement must predict benefit. Does the result mean something clinically? Inspect an appropriate population, endpoint, follow-up and independent validation; the tempting overread is that association means the proposed intervention works. Does acting on it help? Inspect a defined decision strategy against a comparator with meaningful outcomes and harms; the tempting overread is that a changed decision must be improved care.",
+        "Fictional worked example. A blood test detects a spiked target reproducibly, and in a separate cohort more recurrences follow positive calls. No study compares starting Drug A after a positive call with a specified alternative, so the utility of the Drug A strategy is unsupported: the first finding supports analytical performance and the second a scoped clinical association, and neither tests whether the action helps more than it harms.",
+        "Figure reading (fictional example, light and dark renders agree): three parallel panels ask whether the test measures (a spiked target and repeat readings), what its result is associated with (a result followed by a later outcome) and whether the strategy helps (positive result then Drug A against a defined alternative, with both outcome boxes unanswered and outcomes and harms not compared). The empty boxes mark the missing comparison; they are not a validation ladder or a treatment recommendation.",
+        "Lead time (an inference that applies the existing lead-time-bias record, which is framed for screening): a blood result that anticipates recurrence earlier lengthens how long a person knows about the disease even if the date of the outcome does not change, so benefit needs a comparison of outcomes with and without acting early, measured on the same clock.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/clinical-vs-analytical-validation."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    },
+    {
+      "id": "cancer-drivers-vs-actionable",
+      "kind": "term",
+      "name": "Actionable genomic biomarkers",
+      "aka": [
+        "actionable genomic biomarkers",
+        "actionable alteration",
+        "actionable alterations",
+        "actionable mutation",
+        "actionable mutations",
+        "actionable biomarker",
+        "clinically actionable"
+      ],
+      "tldr": "An actionable genomic finding has evidence relevant to a treatment decision in a specified setting. The exact alteration, cancer type and strength of treatment evidence matter.",
+      "summary": "Biological function, contribution to cancer growth and evidence of treatment benefit are different claims. ESCAT ranks genomic targets by clinical evidence, distinguishing routine-use evidence from investigational, other-disease and preclinical findings. An abnormal functional assay does not establish drug benefit, and a gene-level match does not make every variant equivalent. Actionability should retain the alteration, disease, intervention and evidence tier. Trial eligibility, access and an individual's treatment decision require additional information.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Personalized_medicine",
+      "links": [
+        {
+          "label": "ESMO clinical actionability framework (2018)",
+          "url": "https://doi.org/10.1093/annonc/mdy263"
+        },
+        {
+          "label": "ClinGen functional variant evidence recommendations (2019)",
+          "url": "https://doi.org/10.1186/s13073-019-0690-2"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Personalized_medicine"
+        },
+        {
+          "label": "OncoKB: therapeutic levels of evidence",
+          "url": "https://www.oncokb.org/content/files/levelOfEvidence/V2/LevelsOfEvidence.pdf"
+        },
+        {
+          "label": "fda-cdx",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "Molecularly targeted therapy based on tumour molecular profiling versus conventional therapy for advanced cancer (SHIVA): a multicentre, open-label, proof-of-concept, randomised, controlled phase 2 trial (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26342236/"
+        },
+        {
+          "label": "TBCRC 048: Phase II Study of Olaparib for Metastatic Breast Cancer and Mutations in Homologous Recombination-Related Genes (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33119476/"
+        },
+        {
+          "label": "TBCRC 048 (Olaparib Expanded) Expansion Cohorts: Phase II Study of Olaparib Monotherapy for Patients With Metastatic Breast Cancer With Germline Mutations in &lt;i&gt;PALB2&lt;/i&gt; or Somatic Mutations in &lt;i&gt;BRCA1&lt;/i&gt; or &lt;i&gt;BRCA2&lt;/i&gt; (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41604601/"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "oncokb",
+        "civic",
+        "vus",
+        "functional-variant-evidence",
+        "measurement-to-benefit-evidence",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cgp"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "driver-mutation",
+        "biomarker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Clinical actionability connects a reliable finding to a specified decision in a particular cancer and treatment setting. A pathogenic variant, a cancer driver, target engagement, tumour response and longer survival are different claims. Ask whether actionable means worth studying, matched to a trial or supported for standard care; an evidence tier is not an individual response probability. Measurement reliability, clinical meaning and benefit from the resulting decision each need evidence.",
+        "The original 2018 ESCAT framework has six tiers: I, targets ready for routine clinical decisions; II, investigational targets with likely benefit requiring additional data; III, benefit in another tumour type or a similar target; IV, preclinical evidence; V, evidence for co-targeting approaches; and X, lack of evidence for actionability. Preserve any subtier and assessment date. Tier V does not endorse an arbitrary combination, and tier X describes the available evidence rather than proving that a target can never become useful.",
+        "The OncoKB therapeutic-level definitions distinguish level 1, an FDA-recognized biomarker for an approved drug in that indication; 2, a standard-care biomarker recommended by professional guidelines for an approved drug in that indication; 3A, compelling clinical evidence in that indication; 3B, standard-care or investigational evidence in another indication; and 4, compelling biological evidence. Resistance is separate: R1 is a standard-care resistance biomarker for an approved drug in that indication, while R2 is compelling clinical resistance evidence. These are framework definitions, not a current list of available therapies.",
+        "Keep the framework, version or assessment date, exact alteration, drug, disease and supporting evidence together. There is no automatic numerical conversion between ESCAT and OncoKB. In a fictional report labelled OncoKB 3B, evidence in another indication does not establish standard treatment for the current tumour. Check the actual label or protocol, assay intended use, treatment line, prior therapy, formulation, safety and access. A therapy-linked companion diagnostic and a biologically similar research assay are not automatically interchangeable.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/actionable-genomic-biomarkers.",
+        "SHIVA tested one pathway-matching strategy in refractory advanced cancer, not every precision treatment. Its randomised comparison did not establish superior progression-free survival for the tested matching approach over physician's choice. That limits the strategy in that population; it does not invalidate an approved biomarker-specific therapy. Conversely, a single-arm response signal does not isolate comparative benefit, and another trial's cohort cannot supply its missing randomised control. Check exact alteration and classification, germline or somatic origin, disease, prior treatment, assay, subgroup denominator, comparator and outcome before transferring a clinical result. Molecular resemblance alone cannot broaden a label or protocol."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    },
+    {
+      "id": "drug-target-engagement",
+      "kind": "term",
+      "name": "Drug target engagement",
+      "aka": [
+        "cellular target engagement",
+        "CETSA",
+        "cellular thermal shift assay"
+      ],
+      "tldr": "Target engagement asks whether a drug reaches and interacts with its intended target in the tested setting. The effect on the cell and the benefit of treatment need their own measurements.",
+      "summary": "The cellular thermal shift assay introduced a way to assess drug-associated changes in protein stability in cells and tissues as evidence of target engagement. The original work examined binding, transport, activation and resistance in defined systems. Engagement evidence must be interpreted within the assay used. It does not by itself demonstrate that the target is required for cancer-cell survival or that the drug's cellular effect is caused by acting on that target.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "Genetic validation of drug mechanisms (2019)",
+          "url": "https://doi.org/10.1126/scitranslmed.aaw8412"
+        },
+        {
+          "label": "Primary cellular thermal shift assay study (2013)",
+          "url": "https://doi.org/10.1126/science.1233606"
+        },
+        {
+          "label": "Ball et al., isothermal shift assay in lysates and cells (2020)",
+          "url": "https://doi.org/10.1038/s42003-020-0795-6"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "on-target-drug-validation",
+        "experimental-versus-clinical-exposure",
+        "functional-variant-evidence"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Target engagement and the evidence ladder. Target engagement asks whether a compound interacts with its intended target in the relevant system. Binding to a purified protein does not show that the compound enters the cell or reaches its target in a tumour, and engagement is also not a change in the target's function, a downstream effect or clinical benefit. Each question needs its own measurement: engagement first, then a measured biological effect, then a check of the causal explanation with controls, then clinical evidence.",
+        "Reading a thermal-shift result. The cellular thermal shift assay was introduced to evaluate drug binding to target proteins in cells and tissue samples through ligand-induced thermal stabilisation (Martinez Molina et al. 2013). The readout is the soluble target signal remaining after heating, plotted either against temperature at a fixed compound concentration or against concentration at a fixed temperature, so degrees Celsius and concentration units sit on different axes and the two designs ask different bounded questions. A shift of the compound curve against a matched control supports engagement under those conditions; indirect stability or protein-complex effects can also change the signal, so it is not an inhibition or occupancy percentage, and no universal shift cut-off is given here. The heated aliquots are consumed, so a record should carry the compound, concentration, exposure time, temperature series, cell or tissue system and controls. In an isothermal-shift study with a pan-kinase inhibitor, a large share of non-kinase proteins shifted in cells, which the authors read as in-cell profiling being more likely than lysate profiling to identify indirect binding targets; they recommend lysate profiling to identify targets and in-cell profiling to verify intracellular engagement (Ball et al. 2020).",
+        "Probes and medicines. Chemical probes are judged by potency, known selectivity and proven mechanism for the question asked, and the numerical criteria published for them belong to a consortium and target class (Arrowsmith et al. 2015; Workman and Collins 2010); a probe is a research starting point and not evidence of a usable medicine.",
+        "Record the named target and its detectability, baseline thermal behaviour, compound exposure, sample system and controls. In a temperature series, temperature changes while concentration is held fixed; in a concentration series, the selected temperature stays fixed. The output is soluble target signal, with different x-axis units in those two designs. Heated aliquots are consumed. An indirect stability change or protein-complex effect can alter the result, and neither a universal shift threshold nor a direct occupancy percentage follows from the plot."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "functional-variant-evidence",
+      "kind": "term",
+      "name": "Functional evidence for a sequence variant",
+      "aka": [
+        "variant functional assay evidence",
+        "PS3 and BS3 functional evidence"
+      ],
+      "tldr": "A functional assay tests what a genetic change does in a particular system. The result needs to fit the question about disease, and it does not automatically identify a useful treatment.",
+      "summary": "ClinGen's primary recommendations for functional variant evidence evaluate disease mechanism, assay relevance, assay validation and the evidence for an individual variant. An abnormal assay result needs controls and evidence that the measured function is relevant to the disease mechanism. The PS3/BS3 framework concerns sequence-variant interpretation; it is not a cancer-drug actionability score. Treatment claims require evidence for the exact alteration, disease and intervention context.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinGen functional-evidence recommendations (2019)",
+          "url": "https://doi.org/10.1186/s13073-019-0690-2"
+        },
+        {
+          "label": "Clinical actionability framework (2018)",
+          "url": "https://doi.org/10.1093/annonc/mdy263"
+        },
+        {
+          "label": "RAD51 foci as a functional biomarker of homologous recombination repair and PARP inhibitor resistance in germline BRCA-mutated breast cancer (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+        },
+        {
+          "label": "Personalized genomic analyses for cancer mutation discovery and interpretation (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25877891/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "vus",
+        "cancer-drivers-vs-actionable",
+        "on-target-drug-validation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A credible splice-site DNA change and a predicted splice consequence do not establish the same fact as measured abnormal RNA junctions. An observed RNA change still does not quantify intact protein or current repair function; an antibody signal needs its intended protein form and cell population specified. In a fictional case with an altered junction, reduced stain and an uninformative repair assay, those first two observations remain useful without completing the functional claim. For an uncharacterised receptor allele, a matched-expression comparison with the normal receptor can test activation in that system; absence of an extra phosphosignal there neither supports activation nor proves harmlessness in every context. Retain the exact variant, transcript, system, controls and remaining uncertainty rather than substituting the gene's reputation."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "measurement-to-benefit-evidence",
+      "kind": "term",
+      "name": "Evidence from measurement to patient benefit",
+      "aka": [],
+      "tldr": "A reliable measurement, a biological explanation and a useful treatment decision each need evidence. This map helps readers identify which part of a claim has actually been tested.",
+      "summary": "A useful reading framework follows the observation through its interpretation, mechanism, intervention and patient outcome. These are questions to examine, not a mandatory experimental sequence. An accurate assay can measure a marker that does not predict treatment benefit; a compound can bind a protein without proving that its effect depends on that protein. A model can reproduce an experiment without predicting an outcome in people. Each linked concept identifies a different evidence boundary and the source supporting it.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "FDA: biomarkers, roles and qualification",
+          "url": "https://www.fda.gov/drugs/biomarker-qualification-program/about-biomarkers-and-qualification"
+        },
+        {
+          "label": "Cellular target-engagement study (2013)",
+          "url": "https://doi.org/10.1126/science.1233606"
+        },
+        {
+          "label": "Clinical actionability framework (2018)",
+          "url": "https://doi.org/10.1093/annonc/mdy263"
+        },
+        {
+          "label": "Recommendations for application of the functional evidence PS3/BS3 criterion using the ACMG/AMP sequence variant interpretation framework.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6938631/"
+        },
+        {
+          "label": "A framework to rank genomic alterations as targets for cancer precision medicine: the ESMO Scale for Clinical Actionability of molecular Targets (ESCAT).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30137196/"
+        },
+        {
+          "label": "FDA: oncology clinical-trial endpoints (2018)",
+          "url": "https://www.fda.gov/media/71195/download"
+        },
+        {
+          "label": "OncoGuide: evidence-chain-variant-to-benefit (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/reasoning-tools/evidence-chain-variant-to-benefit.md"
+        },
+        {
+          "label": "Personalized genomic analyses for cancer mutation discovery and interpretation (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25877891/"
+        },
+        {
+          "label": "Absolute quantification of somatic DNA alterations in human cancer (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+        },
+        {
+          "label": "RAD51 foci as a functional biomarker of homologous recombination repair and PARP inhibitor resistance in germline BRCA-mutated breast cancer (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+        },
+        {
+          "label": "Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+        },
+        {
+          "label": "Overall survival in the OlympiA phase III trial of adjuvant olaparib in patients with germline pathogenic variants in BRCA1/2 and high-risk, early breast cancer (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36228963/"
+        },
+        {
+          "label": "TBCRC 048: Phase II Study of Olaparib for Metastatic Breast Cancer and Mutations in Homologous Recombination-Related Genes (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33119476/"
+        },
+        {
+          "label": "TBCRC 048 (Olaparib Expanded) Expansion Cohorts: Phase II Study of Olaparib Monotherapy for Patients With Metastatic Breast Cancer With Germline Mutations in &lt;i&gt;PALB2&lt;/i&gt; or Somatic Mutations in &lt;i&gt;BRCA1&lt;/i&gt; or &lt;i&gt;BRCA2&lt;/i&gt; (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41604601/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antigen-expression-and-response",
+        "binding-site-barrier",
+        "antibody-internalization-trafficking",
+        "lysosomal-payload-egress",
+        "drug-target-engagement",
+        "experimental-versus-clinical-exposure",
+        "prognostic-versus-predictive-biomarkers",
+        "functional-variant-evidence",
+        "blood-cell-variants-liquid-biopsy",
+        "ctdna-shedding-negative-results",
+        "detection-versus-quantification",
+        "finite-molecule-sampling",
+        "tumor-informed-assay-design",
+        "biomarker-qualification-context",
+        "test-agreement-versus-accuracy",
+        "growth-rate-inhibition",
+        "cytostasis-versus-cell-death",
+        "on-target-drug-validation",
+        "model-context-of-use",
+        "confounding-by-indication",
+        "immortal-time-bias",
+        "target-trial-emulation",
+        "competing-risks",
+        "trial-population-transportability",
+        "biomarker-cutpoint-selection",
+        "decision-curve-net-benefit",
+        "inconclusive-and-negative-evidence",
+        "analytical-vs-clinical-validation",
+        "cancer-drivers-vs-actionable"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A variant-based treatment claim contains several separate claims: the sequence finding is real, it changes biology, that biology creates a relevant drug response, and treatment improves outcomes in people. This is a way to examine evidence, not a mandatory experimental sequence or a claim that every effective medicine starts with a mutation. Consider a fictional report with a supported sequence change relative to a reference, an untested activating prediction, a lower pathway signal after drug exposure, unchanged cell growth and no matched clinical comparison. Variant calling supports the sequence observation; effect prediction supplies a hypothesis. The experiment shows a biochemical drug effect under its conditions, not verified action on the intended target, growth dependence or patient benefit. Unchanged growth also does not settle every possible drug effect; exposure, timing and assay sensitivity matter. No exposure value or clinical effect size follows from these qualitative observations.",
+        "Expression and controlled functional evidence for the exact alteration can strengthen a biological interpretation; another alteration in the same gene may behave differently. Perturbation with rescue or complementary controls can test dependence, because an active pathway need not be necessary for growth. A drug-effect claim needs relevant exposure and evidence that the compound reaches and interacts with its intended target; other drug actions or failure to reach tumour remain possible. Activation, loss of function and high protein abundance do not all imply that inhibiting the named protein will help. Other cells, parallel pathways and treatment history can change that hypothesis. A protein-only construct may miss RNA-processing effects, so a normal assay is not proof that a variant is harmless. Brnich's functional-classification recommendations address assay relevance; Mateo's actionability framework separately distinguishes relevant human, adjacent clinical and preclinical evidence. Neither framework turns pathogenicity into drug sensitivity or an evidence grade into treatment access. Repeated predictions may share data or assumptions and are not independent experiments.",
+        "Each claim needs its own measurement. Sequence identity, specimen, assay version, controls and interpretation establish what was tested. Altered-transcript proportion, normalised protein activity, cell growth at a defined exposure and participant response rate have different units and meanings; combining them into one score can hide those differences. Target engagement is separate from downstream change, cancer-cell death, tumour response and survival. At the clinical step, disease, biomarker, treatment setting and comparator must match the claim, with outcome definition, follow-up, harms and uncertainty retained. A biochemical signal alone does not establish clinical benefit, eligibility, availability or an individual's outcome. The model above is fictional, and the FDA's dated 2018 endpoint guidance is used for these outcome distinctions.",
+        "For a repair-gene claim, keep the measured observation, method, source, supported conclusion and unresolved question together. Internal coherence means the findings fit a story but can share pipeline errors. Cross-report agreement can reuse a specimen or computation. Independent reproduction adds a separate auditable workflow with suitable controls without proving clinical utility. Clinical validation concerns the specified use and population, and does not guarantee an individual's response. These are different checks, not numerical confidence tiers. A credible DNA change, altered RNA junction, protein signal, current repair assay and model drug response each narrow a different gap; an old scar cannot vote away a present-function uncertainty. The route is a reading framework, not a mandatory research sequence or a validated treatment protocol.",
+        "Write a treatment question with disease, biomarker, setting, intervention, comparator and outcome. Adjuvant recurrence prevention after initial local treatment is a different question from shrinking measurable metastatic disease. In a fictional early-breast setting, a credible somatic repair change, compatible scar and model response can support a hypothesis while metastatic response data remain adjacent evidence. Confirm the actual protocol or label for the exact alteration and setting; off-label use of an approved medicine is not itself proof, and trial eligibility is separate from a real site and supply. An evidence ledger should retain the gap instead of interpreting an untested use as proven benefit or proven failure. Expanded access likewise adds regulatory, physician, supplier and review requirements without supplying efficacy evidence."
+      ],
+      "category": "Methods and models"
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "checkedAt": "2026-11-13T02:18:42.220128+00:00",
+  "counts": {
+    "distinctUnits": 345,
+    "coveredDraftOrProposedAtStatedScope": 337,
+    "coveredDraftRoot": 306,
+    "unappliedPeerDependent": 31,
+    "sourceOpen": 3,
+    "noncreditWithinTeachingInventory": 5,
+    "exactFieldAnchors": 133,
+    "expandedFieldReferences": 812,
+    "phaseCounts": {
+      "original": {
+        "units": 202,
+        "coveredDraftOrProposedAtStatedScope": 198,
+        "coveredDraftRoot": 169,
+        "unappliedPeerDependent": 29,
+        "sourceOpen": 0,
+        "noncreditWithinTeachingInventory": 4
+      },
+      "later": {
+        "units": 314,
+        "coveredDraftOrProposedAtStatedScope": 307,
+        "coveredDraftRoot": 277,
+        "unappliedPeerDependent": 30,
+        "sourceOpen": 3,
+        "noncreditWithinTeachingInventory": 4
+      }
+    }
+  },
+  "all345FrozenBlocksHaveExplicitAssignments": true,
+  "all228SectionSignaturesVerified": true,
+  "sourceFirstFreezePreserved": true,
+  "all43ReaderPassagesReadInFull": true,
+  "findings": [
+    {
+      "id": "S01",
+      "status": "verified-source-qualification",
+      "finding": "The talazoparib breast indication requires adult patients with deleterious or suspected-deleterious germline BRCA mutations and the specified HER2-negative locally advanced/metastatic setting, with FDA-authorized companion-diagnostic selection. An unspecified germline variant is too broad.",
+      "basis": "DailyMed SPL version20, effective20261028, sections1.1and2.1",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-f57192cb2d1773",
+        "FV-a51fa73b6d1549",
+        "FV-5cc5a717e2b137",
+        "FV-67736390ae2793"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S02",
+      "status": "verified-source-qualification",
+      "finding": "Waks reports four definite/putative reversions and two non-reversion genomic mechanisms anticipated to restore repair. One of those two lacked tissue for RAD51/53BP1 staining; do not call both directly measured functional restoration. The cohort is selected, small and heterogeneous.",
+      "basis": "PMC7946408 paragraphs7-15,20-23",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-bda24b39e5ece0",
+        "FV-b8c9954a605a3c"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S03",
+      "status": "verified-source-correction",
+      "finding": "Freed-Pastor MDA231 p53 depletion reduced invasion but did not yield ordered acini; MDA468 could revert to hollow acinus-like structures. Statins caused growth inhibition and extensive death in MDA468, so statin and p53-depletion phenotypes are not interchangeable across both lines.",
+      "basis": "PMC3511889 paragraphs8-12,19-22",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-f47dba48d5c434",
+        "FV-aa9521772a27fc",
+        "FV-b66fc554f34aae",
+        "FV-daf61b8f619b3b",
+        "FV-b64c5d65f4bf98"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S04",
+      "status": "verified-source-correction",
+      "finding": "The described GGPP rescue concerns invasive morphology in a portion of MDA231 cultures. The whole Freed-Pastor study also measured growth, cell death and xenograft growth, so a blanket claim that it did not study survival is too broad. No patient benefit was established.",
+      "basis": "PMC3511889 paragraphs21-22,24-26",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-f47dba48d5c434",
+        "FV-aa9521772a27fc",
+        "FV-b66fc554f34aae",
+        "FV-daf61b8f619b3b",
+        "FV-b64c5d65f4bf98"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S05",
+      "status": "inference-qualification",
+      "finding": "Partial rescue can reflect incomplete restoration or delivery as well as additional mechanisms. Add-back must be placed downstream of the inhibited production step but cannot be assumed to bypass blockade of the enzyme consuming that metabolite. The paper added GGPP after p53 depletion or statin treatment, not to rescue geranylgeranyl-transferase inhibition.",
+      "basis": "PMC3511889 paragraph26 and explicit experimental-design inference",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-37f9d3469cc4e7",
+        "FV-f4c4c729135101",
+        "FV-9a901cd720ef5b",
+        "FV-a2053a47bbff42",
+        "FV-9590fbd1b48ea6",
+        "FV-935d7847be3545",
+        "FV-9fe88078a792ab",
+        "FV-ccd9f976e9b9ab",
+        "FV-599193a272a6b2",
+        "FV-c3f1a838db3880"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S06",
+      "status": "verified-source-correction",
+      "finding": "Bellare2025 corrected representative treatment images in MCF7 Figure5c and a liver-histology image in Figure6f. The authors say replicate-based quantification/interpretation preserves their conclusions. The Guide names only Figure6f. Replacement images have not been independently re-evaluated here.",
+      "basis": "Publisher correction HTML, DOI10.1038/s41416-025-03060-y",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-4bf457c3706d67",
+        "FV-d4a0cd3d9819f7",
+        "FV-2001177df30351"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S07",
+      "status": "verified-source-qualification",
+      "finding": "Hoslett supports TEX264/p97/LC3-linked processing with trapping-specific comparators and complementation. p97 has broader functions. Nuclear export/packaging remains incompletely resolved, including selective macroautophagy versus microautophagy; do not treat the cartoon as a solved transport geometry or expression as a clinical predictor.",
+      "basis": "PMC13278974 paragraphs7,20,25,29,31-32,37,41-47,54,56-62",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-e41b843e2dd624",
+        "FV-0132a58acf82e4",
+        "FV-34971de2135d0d",
+        "FV-187ef524aed6df",
+        "FV-b8985990e9c4f0",
+        "FV-4ced7eb32f1924",
+        "FV-6df0f3d38d6ead",
+        "FV-9064f99442c8f8",
+        "FV-526481929d6a2c",
+        "FV-f298e1ca0d16e9",
+        "FV-07b1c075a91703",
+        "FV-643f417ec734a6"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S08",
+      "status": "verified-source-qualification",
+      "finding": "Stoeck showed NOTCH1 rearrangements with low activatedN1-ICD could be GSI-resistant; alteration position is necessary mechanistic context, not a sufficient universal response predictor. Keep model, active fragment and schedule attached.",
+      "basis": "PMC4184927 paragraphs11,14,16-17,27-28,32,39-40",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-b5a29a700cd8b6",
+        "FV-4966ae5af75c9f",
+        "FV-16771909bb1db2",
+        "FV-20f7aa4168afc8",
+        "FV-ac3a26ead1a79a"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S09",
+      "status": "verified-source-qualification",
+      "finding": "WNT974 paired-skin and paired-tumour marker denominators are52and35, within94treated patients, with no RECIST responses. FIGHT202 response38/107belongs to FGFR2 fusions OR rearrangements, not a universal fusion mechanism. The associated2024correction is identity-resolved but its content remains unavailable on attempted legal routes.",
+      "basis": "PMID33941878 and32203698 full abstracts; notice38181811",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-7223275c7cd7ec"
+      ],
+      "currentDisposition": "named-source-clause-open"
+    },
+    {
+      "id": "S10",
+      "status": "verified-source-qualification",
+      "finding": "Hangauer relapse experiment used geneticGPX4-knockout A375 melanoma xenografts with ferrostatin masking/withdrawal and continued dabrafenib/trametinib. The tool compounds lacked systemic bioavailability; observed relapse suppression is not systemic GPX4-drug efficacy or a proven human therapeutic window.",
+      "basis": "PMC5933935 paragraphs0-11,23",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-56f46fc1019ad7"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S11",
+      "status": "verified-source-qualification",
+      "finding": "Mookerjee2018 corrects the hyperpolarization-factor operation and calculations by up to17%. Guide fictional values30and20are normalized inhibitor-sensitive oxygen-use differences, not ATP-production rates. Extracted equation-table text is inconsistent with the explicit corrected prose, so do not implement a formula from extraction alone.",
+      "basis": "PMC6093231 complete prose/tables; replacement graphs not viewed",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-1ed856b86f7e12",
+        "FV-dd1eff863d5a76",
+        "FV-c71bf05df01471",
+        "FV-6fd11805235ea2",
+        "FV-6f75971292e9f1",
+        "FV-78fea18bfc7393",
+        "FV-02278aa9b4c179"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S12",
+      "status": "authored-reasoning-correction",
+      "finding": "The water-valve analogy says a downstream leak both would and would not be stopped. Replace the inconsistent analogy with the stated causal-bypass question and preserve branch/feedback limits; do not claim a downstream lesion guarantees no antitumour effect.",
+      "basis": "Lesson09 Upstream or downstream of the block? and chapter whole reading",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-8a9ef12f18a988",
+        "FV-cb60852c0e3bbe",
+        "FV-39a27087bcae77",
+        "FV-28099455edec43",
+        "FV-853e3d79b35881"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S13",
+      "status": "source-open-not-adopted",
+      "finding": "A2019clinicaltrial and autophagy-assay sources do not establish an exhaustive current global claim that no autophagy-targeted cancer medicine is approved. Keep the named trial and mechanism contrast; leave that unbounded absence assertion uncredited unless separately verified.",
+      "basis": "Lesson05 disposal-routes table; current approval-universe verification not performed",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-c58641ec1a5d65"
+      ],
+      "currentDisposition": "named-source-clause-open"
+    },
+    {
+      "id": "S14",
+      "status": "verified-method-qualification",
+      "finding": "Klionsky abstract recommends complementary assays and targeting two or more autophagy genes ideally acting at different steps because individual components have other functions. A single genetic perturbation is not automatically specific or cleaner. Full-method PDF passages remain to read.",
+      "basis": "PMID33634751 complete abstract; legal institutional publisher-PDF retrieved",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-187ef524aed6df",
+        "FV-b8985990e9c4f0",
+        "FV-4ced7eb32f1924",
+        "FV-6df0f3d38d6ead",
+        "FV-9064f99442c8f8",
+        "FV-526481929d6a2c",
+        "FV-f298e1ca0d16e9",
+        "FV-07b1c075a91703",
+        "FV-643f417ec734a6",
+        "FV-822f129b6f026e",
+        "FV-ccdf218890c727",
+        "FV-6ae42f18e69290",
+        "FV-0a9476e4bf64ec",
+        "FV-dc8796f3a5036d",
+        "FV-80ebb9396d74c1",
+        "FV-e38a538b5210ed",
+        "FV-822c4daa175302",
+        "FV-b93bf8a4570bdd",
+        "FV-e0076bd1c483d8",
+        "FV-542de35266d53f",
+        "FV-fd6abe2cf5d99a",
+        "FV-2fa968bbb7798c"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S15",
+      "status": "verified-source-qualification",
+      "finding": "Klionsky distinguishes LC3 carrier flux from actual cargo flux. Inhibitor dose, time, saturation and cell death matter; p62 expression and other degradation routes can confound a protein snapshot. Use complementary markers and cargo assays, not LC3 accumulation alone as proof of bulk degradation or dependence.",
+      "basis": "Klionsky 2021, complete PDF pages 83, 84, 85 and 109, with native full-page views.",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-a66369628fb8c8",
+        "FV-dcf37a737a599e",
+        "FV-64fe3f2603c39d",
+        "FV-868a9876f05669",
+        "FV-c0dfb47004bba9",
+        "FV-47cc6e474fee7d"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S16",
+      "status": "verified-source-qualification",
+      "finding": "Echeverria reports preserved barcode architecture at residual nadir in three PDX models, with possible dominant-barcode selection at regrowth. OCR and ECAR work was in PIM001-P. IACS delayed post-AC regrowth in three models; it did not establish eradication or a patient therapeutic window. Two serial human biopsies did not establish stability through the whole treatment course.",
+      "basis": "PMC6541393, selected complete passages 25,26,27,29,31,33,34,37,38,40,67.",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-72cf4e2f225205",
+        "FV-8092a6b901f2c9",
+        "FV-ba1ae0ff393b58",
+        "FV-c256bd31a77969",
+        "FV-b1fe2bb066b1ab",
+        "FV-09698a54e68fae"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S17",
+      "status": "verified-source-qualification",
+      "finding": "Singh's 10/54 NSCLC samples include primary tumours and pleural fluid. The initial 56 include two small-cell pleural-fluid samples, explaining the 54 denominator. Six mutated primary tumours were assessed for LOH and five had it; do not generalise biallelic loss to all ten samples or treat nonisogenic viability comparisons as sufficient causal proof.",
+      "basis": "PMC1584412, selected complete passages 7,8,22,27,28,29,33,38,42,45.",
+      "credit": 0,
+      "canonicalAppliedWhenFindingRecorded": false,
+      "currentAffectedUnits": [
+        "FV-40b0b371b70372",
+        "FV-98fe5e161b786d"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S18",
+      "status": "verified-definition-correction",
+      "finding": "The driver definition previously equated a driver with an essential drug target and an unbounded typical mutation count. A contextual contribution to cancer development is distinct from reliable calling, present dependence and clinical actionability.",
+      "basis": "Vogelstein 2013 complete abstract; SHIVA complete abstract; explicit evidence-reading inference.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "canonicalAppliedWhenFindingRecorded": true,
+      "currentAffectedUnits": [
+        "FV-3ad00300763a2e"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S19",
+      "status": "inference-qualification",
+      "finding": "No universal strongest-experiment ranking is adopted. Rescue requires a suitable restored function, appropriate controls and placement relative to the blocked step. Partial rescue does not uniquely establish an additional cause.",
+      "basis": "Freed-Pastor selected Results and explicit experimental-design inference.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "canonicalAppliedWhenFindingRecorded": true,
+      "currentAffectedUnits": [
+        "FV-37f9d3469cc4e7",
+        "FV-f4c4c729135101",
+        "FV-935d7847be3545",
+        "FV-9fe88078a792ab",
+        "FV-ccd9f976e9b9ab",
+        "FV-599193a272a6b2",
+        "FV-c3f1a838db3880"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S20",
+      "status": "inference-qualification",
+      "finding": "High defence RNA and compound-associated death do not identify NRF2 activity, ferroptosis or a specific dependence. Independent perturbations and restoration need their own specificity controls.",
+      "basis": "Singh, Romero, Kobayashi, Dixon and Bersuker at the recorded source depth; explicit reading inference.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "canonicalAppliedWhenFindingRecorded": true,
+      "currentAffectedUnits": [
+        "FV-dc8796f3a5036d",
+        "FV-80ebb9396d74c1",
+        "FV-e38a538b5210ed",
+        "FV-822c4daa175302",
+        "FV-b93bf8a4570bdd",
+        "FV-e0076bd1c483d8",
+        "FV-542de35266d53f",
+        "FV-fd6abe2cf5d99a",
+        "FV-2fa968bbb7798c"
+      ],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S21",
+      "status": "overstatement-correction",
+      "finding": "The blanket glutamine favourite-food ranking and guaranteed compensation/failed-drug framing were removed from the existing English, Simple and translated short summaries. Model-specific glutaminase dependence and a named terminated trial do not establish those general claims.",
+      "basis": "Romero complete abstract, Altman complete review abstract and KEAPSAKE registry.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "canonicalAppliedWhenFindingRecorded": true,
+      "currentAffectedUnits": [],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    },
+    {
+      "id": "S22",
+      "status": "runtime-owner-correction",
+      "finding": "Drug mechanism depth overrides the literal drug-array mechanismSteps at composition time. The corrected talazoparib and olaparib steps were applied to the effective owner and verified in the composed graph; ineffective duplicate properties were removed.",
+      "basis": "Current source composition and whole-graph before/after readback.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "canonicalAppliedWhenFindingRecorded": true,
+      "currentAffectedUnits": [],
+      "currentDisposition": "bounded-qualification-or-correction-in-local-draft"
+    }
+  ],
+  "correctionsDoNotEndorseDisputedGuideClauses": true,
+  "wholeOwnerReverification": false,
+  "independentAcceptance": false,
+  "readingScope": "All twelve later bodies read end to end, with all eight original/later exact diffs reconciled. Unchanged original passages reuse their byte-identical later passage. Reader additions, applied scalar corrections, complete source-first block assignments and retained anchors were assessed separately from their exact-hash tests. Inherited primary depth remains explicit."
+}

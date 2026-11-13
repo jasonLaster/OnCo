@@ -284,7 +284,7 @@ const pathways: PathwayInput[] = [
   "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
   "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
   "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
-  "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
+  "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and the RB1CC1-encoded protein FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
 ],
     links: [
   {
@@ -352,10 +352,12 @@ const pathways: PathwayInput[] = [
   {"label":"The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25975349/"},
   {"label":"Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/29158785/"},
   {"label":"Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)","url":"https://pubmed.ncbi.nlm.nih.gov/40527957/"},
-],
+
+      {"label":"UniProt Q8TDY2: RB1CC1 protein names, including FIP200","url":"https://www.uniprot.org/uniprotkb/Q8TDY2/entry"}
+    ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-12"
+"asOf": "2026-11-13"
 ,
 "related": [
   "nutrient-sensing-ampk"
@@ -816,17 +818,21 @@ const pathways: PathwayInput[] = [
   "Singh's initial series contained 40 primary lung cancers and 16 pleural-fluid samples; excluding two small-cell pleural-fluid samples gives the 54 NSCLC denominator. Ten mutation-bearing samples round to 19 per cent, not a universal lung-cancer prevalence. Five of six tested mutation-bearing primary tumours had locus loss; do not assign biallelic loss to all ten samples. Romero separately described KEAP1 alterations in about 20 per cent of KRAS-mutant lung adenocarcinomas. These populations and denominators differ. KEAP1-mutant-versus-normal-cell viability comparisons are not matched isogenic proof that one alteration caused every chemotherapy response.",
   "Protection and dependence are experiment-specific directions. If removing a verified defence makes a defined stress more lethal, that supports protection under that stress. If removing the defence or a supply route reduces survival relative to an appropriate matched comparison, that supports a conditional dependence; it need not mean every unstressed cell dies. In a fictional culture, high antioxidant RNA plus probe-associated death establishes neither NRF2-driven killing nor ferroptosis. Test the alteration's effect on NRF2 turnover or nuclear localisation and output, then use independent perturbation and restoration to examine the survival mechanism. CUL3 works with other adaptors, and a compound suppressing protein production broadly does not isolate NRF2. A genetic intervention also needs controls, rather than being automatically specific.",
   "ClinicalTrials.gov records KEAPSAKE, NCT04265534, as a randomised, double-blind phase 2 comparison of telaglenastat or placebo added to carboplatin, pemetrexed and pembrolizumab for selected metastatic nonsquamous NSCLC with KEAP1/NRF2 alterations. The record last updated in September 2022 reports actual enrollment 40, status terminated and the stated reason lack of clinical benefit. This is registry status, not a peer-reviewed effect estimate or proof that every glutaminase strategy fails. Model activity, eligibility, acceptable exposure and clinical benefit remain different questions.",
-],
+
+      "Vartanian and colleagues examined brusatol in the KEAP1-mutant lung-cancer line A549. Protein profiling and measurements of newly synthesised proteins supported broad inhibition of protein synthesis, with NRF2 falling among many proteins. Cytotoxicity across additional cancer cell lines was not restricted to KEAP1-NRF2 activity. A lower NRF2 signal after this compound therefore does not isolate NRF2 inhibition as the cause of death. Check general translation early and use independently controlled perturbations before attributing a survival effect to the proposed defence."
+    ],
     links: [{ label: "Romero et al., Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (Nature Medicine 2017)", url: "https://doi.org/10.1038/nm.4407" },
   {"label":"Dysfunctional KEAP1-NRF2 interaction in non-small-cell lung cancer (2006)","url":"https://pubmed.ncbi.nlm.nih.gov/17020408/"},
   {"label":"Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/28967920/"},
   {"label":"Oxidative stress sensor Keap1 functions as an adaptor for Cul3-based E3 ligase to regulate proteasomal degradation of Nrf2 (2004)","url":"https://pubmed.ncbi.nlm.nih.gov/15282312/"},
   {"label":"Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)","url":"https://pubmed.ncbi.nlm.nih.gov/22632970/"},
   {"label":"ClinicalTrials.gov: KEAPSAKE NCT04265534","url":"https://clinicaltrials.gov/study/NCT04265534"},
-],
+
+      {"label":"Vartanian et al. 2016: brusatol inhibits global protein synthesis","url":"https://pubmed.ncbi.nlm.nih.gov/26711467/"}
+    ],
     tags: ["mechanism"],
 
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
 }),
   p({
     id: "swi-snf-chromatin", name: "SWI/SNF chromatin remodelling", wikipedia: W("SWI/SNF"),

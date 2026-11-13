@@ -1,0 +1,1790 @@
+{
+  "dataCommit": "f2508819b46200f4721fc305ed94fa70a5821283",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.12
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.37
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.04
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 311.46
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "f2508819b46200f4721fc305ed94fa70a5821283",
+    "graphCount": 23091,
+    "changedIds": [
+      "cell-membrane",
+      "cellular-compartments",
+      "dna-term",
+      "epigenetic-marks",
+      "germline-vs-somatic",
+      "protein",
+      "vdj-recombination"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "allSelectedRecordsMatchActualReaders": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "graphCount": 23091,
+    "changedIds": [
+      "cell-membrane",
+      "cellular-compartments",
+      "dna-term",
+      "epigenetic-marks",
+      "germline-vs-somatic",
+      "protein",
+      "vdj-recombination"
+    ],
+    "unchangedRecords": 23084,
+    "changedFields": 17,
+    "appendedNotes": 7,
+    "dateChanges": 7,
+    "newIds": 0,
+    "newRegistrations": 0,
+    "newRelations": 0,
+    "oldNotesAndOrderPreserved": true,
+    "allRenderedRecordsEqualCurrentGraph": true,
+    "dataFiles": [
+      {
+        "file": "src/data/terms-basics.ts",
+        "class": "data",
+        "sha256": "77eba38273aa9f2971603d8165cdbf5364f208d2817ba54cb5cb6682c4e57eba"
+      },
+      {
+        "file": "src/data/terms.ts",
+        "class": "data",
+        "sha256": "f2c8a3956fb6586853aacdac358ad21be8a6435f9d1501d58037cf87531ad43f"
+      },
+      {
+        "file": "src/data/education-biology-evidence.ts",
+        "class": "data",
+        "sha256": "e79ac037d4ee5e0b4db74d0176f7bd9228618ab7c0a4e16249ea3d6132f095ac"
+      }
+    ]
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "cell-membrane",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-membrane/",
+        "sha256": "ddd8e5d69efb1f24716a2b12649ee162d3a023f948298dd342921ca5b6394c5b",
+        "bytes": 23077,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-lineage-and-state/",
+        "sha256": "ce6c3cafee43e24e9ffda36825b76e4f71d67f06ce5fa093820d9114b852a979",
+        "bytes": 30829,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cellular-compartments",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cellular-compartments/",
+        "sha256": "1caaedee47c2e0c0503a284db354a16abd7dc5679d719b1fafacfef87cb4640c",
+        "bytes": 22561,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "epigenetic-marks",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/epigenetic-marks/",
+        "sha256": "3f8cfdb215fdd5e029f1ea5ab956ed47274982a1fd12a1abe90214382bbc68c4",
+        "bytes": 26236,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "germline-vs-somatic",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/germline-vs-somatic/",
+        "sha256": "562e84eb0e532eecd57ed99f655478eb474d24ecef6f972a7ad8024991fa1079",
+        "bytes": 71613,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/nonsense-mediated-decay/",
+        "sha256": "519fc6a1bad4aba5e2930139df1d7ebdecd30ac74af627461b0bdca5bebdeecd",
+        "bytes": 22475,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vdj-recombination",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vdj-recombination/",
+        "sha256": "168784f27593f8453d7f4ddc6fc40e5c9c8af974a8c7f96d2a3cc210aee33a9b",
+        "bytes": 30384,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "dna-term",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/dna-term/",
+        "sha256": "1a3f6c98601d1e252cd826c9b49a2ca976ceedc2f26ff59e1789ee6552efa87b",
+        "bytes": 24865,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "protein",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/protein/",
+        "sha256": "18c0beb9e430db8b1961b397b3f14c5c9ddb8e182caf8c6d67d317045da817d8",
+        "bytes": 24277,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/protein-structure-and-domains/",
+        "sha256": "50b9a01acdd53906a9ce90acd3e6ddf80b729eebc9e94ab908efdee56e4a8626",
+        "bytes": 21406,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cfdna",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cfdna/",
+        "sha256": "a660526c77a6c26648cc51cdc4a8dc1be58084a8b0a55a949ad9a50da68dd5d0",
+        "bytes": 73144,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vaf",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vaf/",
+        "sha256": "c936b4c79e7336567a3b44bbd292fb86d9c8f88d2aedddc2f1fea1717183882f",
+        "bytes": 49847,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "rna",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/rna/",
+        "sha256": "1317e04cc312b67c3b8960f13fe47ced0259a3f72cb762b75b2ef7b3d779a608",
+        "bytes": 25767,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "gene",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/gene/",
+        "sha256": "31508b48eb8c512c7715753c99cf6af6596dd8bc167ff92fd4374263184b7976",
+        "bytes": 22485,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 14,
+    "exactAnchors": 35,
+    "exactParagraphChecks": 36,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "cell-lineage-and-state-summary",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-lineage-and-state-notes-3",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-lineage-and-state-notes-2",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cellular-compartments-summary",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-membrane-summary",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cellular-compartments-notes-3",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cellular-compartments-notes-1",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-membrane-notes-1",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cell-membrane-notes-0",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epigenetic-marks-notes-2",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epigenetic-marks-summary",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epigenetic-marks-notes-0",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "epigenetic-marks-notes-1",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "germline-vs-somatic-summary",
+        "recordId": "germline-vs-somatic",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "germline-vs-somatic-notes-2",
+        "recordId": "germline-vs-somatic",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "cfdna-summary",
+        "recordId": "cfdna",
+        "exactParagraphs": 2,
+        "pass": true
+      },
+      {
+        "anchorId": "cfdna-notes-2",
+        "recordId": "cfdna",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vaf-notes-0",
+        "recordId": "vaf",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vaf-summary",
+        "recordId": "vaf",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "gene-summary",
+        "recordId": "gene",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "rna-summary",
+        "recordId": "rna",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "nonsense-mediated-decay-summary",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "nonsense-mediated-decay-notes-0",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vdj-recombination-summary",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vdj-recombination-notes-0",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vdj-recombination-notes-4",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "vdj-recombination-notes-1",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-summary",
+        "recordId": "protein",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-notes-1",
+        "recordId": "protein",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-notes-0",
+        "recordId": "protein",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-structure-and-domains-summary",
+        "recordId": "protein-structure-and-domains",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-structure-and-domains-notes-0",
+        "recordId": "protein-structure-and-domains",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "protein-structure-and-domains-notes-1",
+        "recordId": "protein-structure-and-domains",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "dna-term-notes-1",
+        "recordId": "dna-term",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "dna-term-summary",
+        "recordId": "dna-term",
+        "exactParagraphs": 1,
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticExports": {
+    "records": 14,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "cell-membrane",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dna-term",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dna-term",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dna-term",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dna-term",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaf",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "cell-membrane.json",
+        "bytes": 3628,
+        "sha256": "062d480e581f772878682f602bb5f9c6df3806d98ea52bcc0edbb5023e8b5c8a"
+      },
+      {
+        "file": "cell-membrane.md",
+        "bytes": 3034,
+        "sha256": "a63a0147d960aed8f6464d18a535b335ba13976978f355295e41424267b67f07"
+      },
+      {
+        "file": "cell-lineage-and-state.json",
+        "bytes": 5680,
+        "sha256": "9eb057a1f3529db193541a87c7a800c33d035cca6cc4945645c74c3aa2117947"
+      },
+      {
+        "file": "cell-lineage-and-state.md",
+        "bytes": 5180,
+        "sha256": "5bd31d5494e99cbaf9be200e434e6a18b1c119a5674cd9453626b6786d27a1a5"
+      },
+      {
+        "file": "cellular-compartments.json",
+        "bytes": 3448,
+        "sha256": "166dad958cbd1fc969cda8d79e6c89dbc4da598067b604a8c3265b69f67b79e3"
+      },
+      {
+        "file": "cellular-compartments.md",
+        "bytes": 3099,
+        "sha256": "c6b96f07bffeb6339aebf3352197840441ef164bbcca78eaf8fa9fc6d535e808"
+      },
+      {
+        "file": "epigenetic-marks.json",
+        "bytes": 3879,
+        "sha256": "b49594d31c36de0ac960731c3cb735b2e7ce91282949751eee191b97aff3b7c6"
+      },
+      {
+        "file": "epigenetic-marks.md",
+        "bytes": 3361,
+        "sha256": "84242163ceae374ffae9b31e260e16a1967a7abb729d517ac6cd129dac5b9966"
+      },
+      {
+        "file": "germline-vs-somatic.json",
+        "bytes": 20240,
+        "sha256": "018608073b5d03d6a7f3dccd783a7f73a2961c6c09b756c2624512be95dfa571"
+      },
+      {
+        "file": "germline-vs-somatic.md",
+        "bytes": 14732,
+        "sha256": "7cd0a3465e011de25ed43bc75986c31c3edf86efe88f11c061c791779f7e9653"
+      },
+      {
+        "file": "nonsense-mediated-decay.json",
+        "bytes": 4046,
+        "sha256": "e9753cb8cde9d2cc7e30b4f487b8579b3e7318cfa359c2ea2afd2a5c67db29b1"
+      },
+      {
+        "file": "nonsense-mediated-decay.md",
+        "bytes": 3537,
+        "sha256": "426d8b28ceec543816f67b2a0e67aa80ce972d35d0466f1d76e6d8d05e1b2aeb"
+      },
+      {
+        "file": "vdj-recombination.json",
+        "bytes": 5486,
+        "sha256": "300367b7b72219a3c83209b592b2b3f9b47b883657edb02a50e8d2a9353d0d67"
+      },
+      {
+        "file": "vdj-recombination.md",
+        "bytes": 4985,
+        "sha256": "6195f2388e3e36d47204a0d5fcbc14932bfbde11dab2bf67f391ef25d66025fc"
+      },
+      {
+        "file": "dna-term.json",
+        "bytes": 4437,
+        "sha256": "af2448b414a077481358296075fbb2b0d7b950d94ac37f361593e047dd4204d0"
+      },
+      {
+        "file": "dna-term.md",
+        "bytes": 3645,
+        "sha256": "f0ee4db140e0e95682315d13b8bb4f80530e7e9f1134ff8ab6a9025d5d193724"
+      },
+      {
+        "file": "protein.json",
+        "bytes": 4374,
+        "sha256": "5c7c4f212368a395557825b6d83e66ae32527796ea2edfbf06d284fed38edcf5"
+      },
+      {
+        "file": "protein.md",
+        "bytes": 3546,
+        "sha256": "51ebab0ecf0249a7643966d53097f52e577a7e5319911c8063a5c2c9710a6724"
+      },
+      {
+        "file": "protein-structure-and-domains.json",
+        "bytes": 4179,
+        "sha256": "255446e8d3edae6464304fcb0217b624c81793ec9ce24633cd90362dcb542bb6"
+      },
+      {
+        "file": "protein-structure-and-domains.md",
+        "bytes": 3801,
+        "sha256": "c123a7b7cd91d2843adcfba8ddc4ee27759c409c55e50d6aee368f04b3f6b322"
+      },
+      {
+        "file": "cfdna.json",
+        "bytes": 23228,
+        "sha256": "380ebe109319d19acb9336f0e7da99099127fb8812d8bb707063ae7c4c9af5b0"
+      },
+      {
+        "file": "cfdna.md",
+        "bytes": 18362,
+        "sha256": "96d7f7ca9d3de40dbf2dfe0d05903042f62bac6bd8400ae6fdb3331c9d3dbb28"
+      },
+      {
+        "file": "vaf.json",
+        "bytes": 11832,
+        "sha256": "d588cb222ae65d00726b97ee7e1a247ec7e8ea9598e36b47d07cb6b9fedf575a"
+      },
+      {
+        "file": "vaf.md",
+        "bytes": 10053,
+        "sha256": "2d36c86fffddb514630beaf347d1a919f23e6691957ec09b0fb28a17c88fd4fb"
+      },
+      {
+        "file": "rna.json",
+        "bytes": 4325,
+        "sha256": "c7ef5c128900ac9d13d583f7ee8cafebe97208dd2aeda432547875acbbe27eb4"
+      },
+      {
+        "file": "rna.md",
+        "bytes": 3532,
+        "sha256": "ad6915c24df98f837af5ac9d82d3a9e819e6f559b055af694cee43b6b0c38860"
+      },
+      {
+        "file": "gene.json",
+        "bytes": 3612,
+        "sha256": "9453ae4d45e803f23b61586e48e1360067e211cfde1e6c76cc8e10551996c424"
+      },
+      {
+        "file": "gene.md",
+        "bytes": 2808,
+        "sha256": "62241d757b4acc02b954e2a5d38ff4a695caa195e9476afedff7c0dece9de1d6"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 126,
+    "texts": 64,
+    "fallbacks": 62,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "cell-membrane",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dna-term",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "protein-structure-and-domains",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaf",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "checks": [
+      {
+        "statement": "Marked DNA icons",
+        "value": 0.5,
+        "expected": 0.5
+      },
+      {
+        "statement": "Marked blood-cell icons",
+        "value": 0.5,
+        "expected": 0.5
+      },
+      {
+        "statement": "DNA icons sum",
+        "value": 8,
+        "expected": 8
+      },
+      {
+        "statement": "Blood-cell icons sum",
+        "value": 4,
+        "expected": 4
+      },
+      {
+        "statement": "C-to-T substitution",
+        "value": "AATGT",
+        "expected": "AATGT"
+      },
+      {
+        "statement": "Opposite-direction displayed complement",
+        "value": "TAGC",
+        "expected": "TAGC"
+      },
+      {
+        "statement": "Source native font scaled to stated312px width",
+        "value": 14.625,
+        "expected": 14.625
+      }
+    ],
+    "pass": true,
+    "scope": "Conditional arithmetic and string checks only. Icon fractions are not observed VAF or tumour fraction. The nominal font conversion is not actual CSS, native-pixel or accessibility review."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual registered graph, EntityDetail SSR, summary selectors and static JSON/Markdown/OpenAPI/context, with full gates. No production Next build, browser, fresh source-image rendering, hydration, deployment, expert or independent acceptance."
+}

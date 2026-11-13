@@ -1,0 +1,1034 @@
+{
+  "version": "proposal-support-bodies-02-root",
+  "state": "Committed registered local draft-root records in unmerged PR375. Fourteen selections are not authorship or whole-owner verification; seven existing owners have appended notes, seven dated-field updates and three appended source links. No new id or registration.",
+  "draft": 375,
+  "committedDataHead": "f2508819b46200f4721fc305ed94fa70a5821283",
+  "records": [
+    {
+      "id": "cell-membrane",
+      "kind": "term",
+      "name": "Cell membrane",
+      "aka": [
+        "cell membranes",
+        "plasma membrane",
+        "cell surface",
+        "cell-surface",
+        "surface of the cell",
+        "membrane-bound"
+      ],
+      "tldr": "The cell membrane forms a selective boundary. Binding at the surface, entering a vesicle and reaching the cell’s internal working fluid are different steps.",
+      "summary": "A lipid bilayer and its proteins separate the cell from its surroundings. Permeability depends on size, charge and chemical properties, rather than a universal small-molecule versus antibody rule. Passive movement follows the relevant gradient; active transport uses energy directly or through a coupled gradient. Endocytosis encloses material in a membrane-bound compartment. Delivery to cytosol or another target compartment requires further steps. Cytosol is fluid outside organelle interiors; cytoplasm includes that fluid and structures outside the nucleus.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_membrane",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_membrane"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-1-components-and-structure",
+          "url": "https://openstax.org/books/biology-2e/pages/5-1-components-and-structure"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-2-passive-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-3-active-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-3-active-transport"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-4-bulk-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-4-bulk-transport"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "receptor",
+        "antibody",
+        "cell-term",
+        "efflux-pump",
+        "cellular-compartments",
+        "ligand"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "monoclonal-antibody"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Surface-associated fluorescence does not establish internalization or cytosolic delivery. A membrane-exclusion dye tests the integrity property resolved by that assay; it does not certify every cell function.",
+        "In an inward-budding uptake example, an open pocket remains continuous with extracellular fluid until it pinches off. Once sealed, the vesicle is inside the cell but its contents are still in a membrane-enclosed lumen rather than free in cytosol. A process arrow does not make the cargo cross the bilayer. A receptor can span the membrane and bind a ligand outside; binding alone does not establish internalisation, cytosolic delivery or signalling."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "cell-lineage-and-state",
+      "kind": "term",
+      "name": "Cell lineage, identity and state",
+      "aka": [
+        "cell lineage",
+        "cell state",
+        "lineage tracing",
+        "cell ancestry"
+      ],
+      "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
+      "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Lineage tracing on transcriptional landscapes links state to fate during differentiation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31974159/"
+        },
+        {
+          "label": "NIGMS: stem cells and differentiation",
+          "url": "https://www.nigms.nih.gov/biobeat/2024/11/what-are-stem-cells"
+        },
+        {
+          "label": "Aberrant luminal progenitors as the candidate target population for basal tumor development in BRCA1 mutation carriers (Nature medicine 2009)",
+          "url": "https://doi.org/10.1038/nm.2000"
+        },
+        {
+          "label": "Molecular characterization of basal-like and non-basal-like triple-negative breast cancer (The oncologist 2013)",
+          "url": "https://doi.org/10.1634/theoncologist.2012-0397"
+        },
+        {
+          "label": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma (Science (New York, N.Y.) 2014)",
+          "url": "https://doi.org/10.1126/science.1254257"
+        },
+        {
+          "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+          "url": "https://doi.org/10.1093/gigascience/giaa151"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition (Nature reviews. Molecular cell biology 2020)",
+          "url": "https://doi.org/10.1038/s41580-020-0237-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "differentiation",
+        "clonal-evolution",
+        "cell-cycle"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+        "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cellular-compartments",
+      "kind": "term",
+      "name": "Organelles and cellular compartments",
+      "aka": [
+        "organelle",
+        "organelles",
+        "cellular compartment",
+        "intracellular compartments"
+      ],
+      "tldr": "A cell has compartments with different jobs. A molecule inside one compartment may still be separated from the place where it needs to act.",
+      "summary": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "OpenStax Biology 2e: 4-3-eukaryotic-cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+        },
+        {
+          "label": "OpenStax Biology 2e: 4-4-the-endomembrane-system-and-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins"
+        },
+        {
+          "label": "NHGRI: DNA in nuclei and mitochondria",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+        },
+        {
+          "label": "Induction of apoptotic program in cell-free extracts: requirement for dATP and cytochrome c.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8689682/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-membrane",
+        "nucleus",
+        "protein",
+        "apoptosis-bcl2"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Endoplasmic reticulum and estrogen receptor are different meanings of ER; use the full name when context is unclear.",
+        "Localization, colocalization, amount, interaction and function need different evidence. More or brighter organelle staining does not by itself measure the rate of material passing through a pathway.",
+        "Mitochondria have roles beyond ATP production. Liu and colleagues used cell-free extracts and cytochrome-c depletion/add-back experiments to examine an apoptotic mechanism; this is a defined experimental result, not a universal measurement of cell death.",
+        "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "epigenetic-marks",
+      "kind": "term",
+      "name": "Epigenetic marks and DNA methylation",
+      "aka": [
+        "epigenetics",
+        "DNA methylation",
+        "5-methylcytosine",
+        "5-hydroxymethylcytosine",
+        "5mC",
+        "5hmC",
+        "histone modification"
+      ],
+      "tldr": "Chemical features of DNA and its packaging can influence how genes are used. Their location and cellular context matter; a mark does not have one universal effect.",
+      "summary": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "NHGRI: epigenomics",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Epigenomics-Fact-Sheet"
+        },
+        {
+          "label": "Human DNA methylomes at base resolution show widespread epigenomic differences.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19829295/"
+        },
+        {
+          "label": "A genomic sequencing protocol that yields a positive display of 5-methylcytosine residues in individual DNA strands.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1542678/"
+        },
+        {
+          "label": "Oxidative bisulfite sequencing of 5-methylcytosine and 5-hydroxymethylcytosine.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24008380/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "epigenetic-reprogramming",
+        "methylation-profiling",
+        "methylation-arrays",
+        "gene-expression",
+        "histone-lactylation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Standard bisulfite analysis changes unmodified cytosine but reads both 5-methylcytosine and 5-hydroxymethylcytosine as C. Oxidative bisulfite methods separate those features through additional chemistry. Ordinary amplified DNA sequence does not preserve this direct chemical measurement.",
+        "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity.",
+        "In an invented sequence example, AACGT can carry a methyl group on its C while the underlying base order remains AACGT. Replacing that C with T instead gives AATGT, a different underlying DNA sequence. Changing a chemical mark on a histone protein is different again. Keep that biological comparison separate from an assay that chemically converts bases: standard bisulfite treatment can change the readout without establishing that the original DNA carried a C-to-T variant. Read the conversion chemistry, locus and cell context before interpreting a methylation call."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "germline-vs-somatic",
+      "kind": "term",
+      "name": "Germline vs somatic mutations",
+      "aka": [
+        "germline",
+        "somatic",
+        "inherited mutations",
+        "tumour-normal"
+      ],
+      "tldr": "A DNA change can be inherited, newly constitutional or acquired in a cell lineage. A change found in a tumor is not automatically tumor-specific.",
+      "summary": "Inherited germline variants came through an egg or sperm and are generally present across many tissues. A de novo constitutional variant need not have been inherited from a parent. Changes arising after fertilization can create mosaic distributions. Somatic variants occur in body-cell lineages, including normal tissues as well as cancers. Origin, distribution, harmfulness and transmissibility are separate questions; neither a variant class nor a large read fraction settles them.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Germline_mutation",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Germline_mutation"
+        },
+        {
+          "label": "MedlinePlus Genetics: inherited, de novo and mosaic variants",
+          "url": "https://medlineplus.gov/genetics/understanding/mutationsanddisorders/genemutation/"
+        },
+        {
+          "label": "NHGRI: Mosaicism",
+          "url": "https://www.genome.gov/genetics-glossary/Mosaicism"
+        },
+        {
+          "label": "Personalized genomic analyses for cancer mutation discovery and interpretation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25877891/"
+        },
+        {
+          "label": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31768066/"
+        },
+        {
+          "label": "NCI: inherited-cancer testing, tumor testing and bounded negative results",
+          "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/genetic-testing-fact-sheet"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "alleles-and-zygosity",
+        "vaf",
+        "clonal-haematopoiesis"
+      ],
+      "cancers": [
+        "prostate",
+        "prostate-mcrpc"
+      ],
+      "sections": [],
+      "technologies": [
+        "germline-testing"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pritchard-inherited-dna-repair-metastatic-prostate-nejm-2016",
+        "paper-nicolosi-germline-variants-prostate-testing-guidelines-jama-oncol-2019",
+        "paper-tukachinsky-ctdna-3334-advanced-prostate-ccr-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Suitable tumor/normal comparison can help attribute origin, but blood can carry acquired hematopoietic clones. Plasma variants can arise from those clones as well as a tumor. Mosaicism, contamination, specimen suitability and assay limits require assessment rather than automatic subtraction of every blood-matching variant.",
+        "Tumor sequencing is distinct from a clinical hereditary test. A negative result is bounded by its specimen, covered genes, detectable change classes and method; research matched-normal analysis does not automatically supply a hereditary-risk report.",
+        "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "nonsense-mediated-decay",
+      "kind": "term",
+      "name": "Nonsense-mediated RNA decay",
+      "aka": [
+        "nonsense-mediated decay",
+        "NMD"
+      ],
+      "tldr": "A cell can reduce some RNA messages when translation stops in an unexpected context. A predicted early stop does not guarantee that every message or protein disappears.",
+      "summary": "Nonsense-mediated decay is RNA surveillance coupled to translation termination. Splicing can leave exon junction protein complexes near later joins in the message. Translation can remove junction-associated proteins; early termination while an appropriate complex remains downstream can help recruit decay machinery in one human route. Stop position, exon architecture, proximity to the start and other transcript features affect susceptibility. A common junction-distance shortcut is a hypothesis, not a universal clinical cutoff.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "The exon-exon junction complex provides a binding platform for factors involved in mRNA export and nonsense-mediated mRNA decay.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11532962/"
+        },
+        {
+          "label": "Translation is required to remove Y14 from mRNAs in the cytoplasm.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12121612/"
+        },
+        {
+          "label": "Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9671053/"
+        },
+        {
+          "label": "The rules and impact of nonsense-mediated mRNA decay in human cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27618451/"
+        },
+        {
+          "label": "Litchfield et al.: frameshift expression, decay escape and immune evidence (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32733040/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "rna",
+        "rna-splicing",
+        "mutation",
+        "gene-expression",
+        "protein"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Human-cancer analyses found that a model containing several rules described RNA effects better than the junction rule alone; compensation could mask loss at gene level. Test the relevant transcript or allele with controls for RNA quality and cell mixture. Protein identity, persistence and function need separate measurements: RNA decay is distinct from protein degradation.",
+        "Candidate selection should reconstruct the affected transcript and translated sequence. A stop-gain terminates translation rather than adding a new amino acid; an unchanged upstream sequence alone does not specify a new mutant peptide. A frameshift can instead create an altered tail before stopping. Litchfield and colleagues found expressed frameshift changes enriched in positions predicted to escape decay and reported associations with checkpoint outcomes in melanoma cohorts, with additional immune-reactivity evidence from vaccine studies. These are context-specific findings, not a rule that every frameshift is expressed, displayed or useful. Mutant RNA and downstream presentation and recognition remain separate questions."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "vdj-recombination",
+      "kind": "term",
+      "name": "V(D)J recombination and receptor assembly",
+      "aka": [
+        "V(D)J recombination",
+        "VDJ recombination",
+        "VJ recombination",
+        "RAG-mediated recombination"
+      ],
+      "tldr": "Developing lymphocytes assemble receptor genes from selected DNA segments. Making a receptor is separate from showing what it recognizes or whether it produces a useful response.",
+      "summary": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8521468/"
+        },
+        {
+          "label": "RAG-1-deficient mice have no mature B and T lymphocytes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1547488/"
+        },
+        {
+          "label": "Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24600447/"
+        },
+        {
+          "label": "EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22918122/"
+        },
+        {
+          "label": "Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20139091/"
+        },
+        {
+          "label": "Papaemmanuil and colleagues: RAG-associated rearrangement in ETV6-RUNX1 ALL",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24413735/"
+        },
+        {
+          "label": "Venturi and colleagues: convergent recombination in influenza-specific mouse TCR-beta responses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17130450/"
+        },
+        {
+          "label": "Venturi and colleagues: human naive/memory CD8 TCR sharing, four individuals",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21383244/"
+        },
+        {
+          "label": "Klein and colleagues: selection of developing T cells by self peptide and MHC complexes (review, 2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24830344/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "clonality-testing",
+        "ig-tcr-clonality",
+        "receptor",
+        "gene",
+        "germinal-centre-reaction"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.",
+        "Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination.",
+        "Off-target RAG rearrangement must be interpreted in its cellular and sequence context. In the 2014 ETV6-RUNX1 acute lymphoblastic leukemia study, the authors found breakpoint recombination-signal motifs, junctional additions and enrichment at active B-development promoters and enhancers; single-cell analysis supported continuing rearrangement in the examined leukemias. This is evidence from that disease context, not a demonstration that RAG expression in any sampled cell proves active cutting or the same mechanism.",
+        "Different rearrangement paths can produce the same receptor amino-acid sequence. Influenza-specific mouse TCR-beta analysis and a separate human naive/memory CD8 T-cell study support convergent recombination and receptor sharing. The human study sampled four individuals; neither study establishes an individual cancer response. A shared receptor sequence or an expanded sequence count alone does not establish unique recent ancestry, antigen specificity or tumor killing.",
+        "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "dna-term",
+      "kind": "term",
+      "name": "DNA",
+      "aka": [
+        "deoxyribonucleic acid",
+        "double helix",
+        "genome"
+      ],
+      "tldr": "DNA stores sequence information. Its packaging, copying and use as a template for RNA are different processes.",
+      "summary": "DNA contains nucleotide chains with a sugar–phosphate backbone and the bases A, T, C and G. Complementary A–T and C–G pairing joins antiparallel strands. Nuclear chromosomes contain DNA associated with proteins as chromatin; nucleosomes organize DNA around histones. Mitochondria carry a separate genome. A gene is a functional region within DNA, rather than an entire chromosome. Replication copies DNA, while transcription produces RNA from a selected template. Packaging and gene presence do not establish active transcription or a functional protein.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/DNA",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/DNA"
+        },
+        {
+          "label": "NHGRI: DNA fact sheet",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+        },
+        {
+          "label": "NHGRI: Chromatin",
+          "url": "https://www.genome.gov/genetics-glossary/Chromatin"
+        },
+        {
+          "label": "NHGRI: Transcription",
+          "url": "https://www.genome.gov/genetics-glossary/Transcription"
+        },
+        {
+          "label": "NLM MeSH: DNA damage, repair and possible sequence consequences",
+          "url": "https://id.nlm.nih.gov/mesh/D004249.html"
+        },
+        {
+          "label": "Rogakou and colleagues: H2AX phosphorylation after DNA double-strand breaks in models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+        },
+        {
+          "label": "Revet and colleagues: gamma-H2AX signal and functional damage-response limits",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21555580/"
+        },
+        {
+          "label": "NHGRI: DNA strands, backbones and base pairing",
+          "url": "https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid-DNA"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "gene",
+        "mutation",
+        "rna",
+        "chromosome",
+        "ctdna",
+        "ngs",
+        "genomic-profiling",
+        "cellular-compartments",
+        "gene-expression",
+        "genetic-code"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A DNA lesion can be a damaged base, a strand break or a crosslink. Damage can be repaired, and is different from a stable change in the DNA sequence. The damage response is another observation: an assay for gamma-H2AX measures a histone modification associated with a response, rather than reading a variant sequence. Experimental work also shows that this signal is not an unambiguous count of double-strand breaks. A sequencing variant call, a lesion assay and a damage-response stain answer different questions; one is not a count of the others.",
+        "For a short invented duplex, 5-prime ATCG 3-prime pairs with 3-prime TAGC 5-prime. The paired bases sit between sugar-phosphate backbones, and nuclear DNA can wrap around histone cores to form nucleosomes. A gene occupies a region of DNA, not the entire chromosome. A packaging cartoon does not establish one universal 30 nm fibre, an X-shaped chromosome at every stage, copy number or gene activity."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "protein",
+      "kind": "term",
+      "name": "Protein",
+      "aka": [
+        "proteins"
+      ],
+      "tldr": "Proteins are amino-acid products that provide structure, catalysis, transport and signaling. A detected fragment and a complete working protein are different findings.",
+      "summary": "Amino acids join through peptide bonds into polypeptide chains; linked amino acids are residues. Peptide and protein usage overlaps without a universal length boundary. A protein may contain one or several chains, folded domains and flexible regions. Processing, chemical modifications, localization, production and degradation affect its form and behavior. Genes specify coding templates, but a DNA or RNA finding does not measure the resulting protein’s intact structure or activity.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Protein",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Protein"
+        },
+        {
+          "label": "NHGRI: Protein",
+          "url": "https://www.genome.gov/genetics-glossary/Protein"
+        },
+        {
+          "label": "OpenStax Biology 2e: 3-4-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-6-eukaryotic-translational-and-post-translational-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-6-eukaryotic-translational-and-post-translational-gene-regulation"
+        },
+        {
+          "label": "Nesvizhskii and Aebersold: shared peptides and the protein inference problem (review, 2005)",
+          "url": "https://doi.org/10.1074/mcp.R500012-MCP200"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "gene",
+        "enzyme",
+        "receptor",
+        "kinase",
+        "antibody",
+        "ihc",
+        "rna",
+        "protein-structure-and-domains",
+        "proteomics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "proteomics"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "An antibody may recognize an epitope on more than one product form or a remaining fragment. Many mass-spectrometry workflows digest proteins into peptides: a shared detected peptide cannot distinguish every full-length form. A candidate peptide sequence also does not establish its display by HLA. Separate assays address amount, location, intact form, function and antigen presentation.",
+        "In an invented comparison, two related protein forms R1 and R2 both contain the same short amino-acid sequence, but R2 lacks a region present in R1. Detecting that shared peptide after digestion does not distinguish the intact forms or prove their activity. Folding changes the chain's arrangement in space without changing its residue order; cutting off a terminal segment is a different processing example and is not required for every protein. Neither a sequence that could yield a peptide nor its measurement in a digest establishes display by HLA."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "protein-structure-and-domains",
+      "kind": "term",
+      "name": "Protein structure, domains and model confidence",
+      "aka": [
+        "protein structure",
+        "protein domain",
+        "protein motif",
+        "protein interface",
+        "intrinsically disordered region",
+        "pLDDT",
+        "predicted aligned error",
+        "PAE"
+      ],
+      "tldr": "A protein’s sequence, folded regions and contacts describe different features. A confident prediction of one region does not establish the whole molecule’s arrangement or function.",
+      "summary": "Primary structure describes sequence; secondary structure describes local arrangements; tertiary structure describes a chain’s organization; quaternary structure describes assembly between chains. These are levels of description, rather than four obligatory stages. A domain is a recognizable structural unit; a motif is a recurring sequence or structural pattern. An interface is a contact surface and can combine residues far apart in sequence. Intrinsically disordered regions can have normal functions without one stable isolated fold.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "EMBL-EBI: domains, motifs and disorder",
+          "url": "https://www.ebi.ac.uk/training/online/courses/proteins-domains/domains-motifs-and-regions/"
+        },
+        {
+          "label": "EMBL-EBI: AlphaFold2 confidence measures",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 3-4-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
+        },
+        {
+          "label": "EMBL-EBI: pLDDT local confidence",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/"
+        },
+        {
+          "label": "EMBL-EBI: PAE and relative-region uncertainty",
+          "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/"
+        },
+        {
+          "label": "RCSB PDB-101: experimental structure methods and their preparation, data and model limits",
+          "url": "https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "protein",
+        "structural-biology-infrastructure",
+        "binding-affinity-and-kinetics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Experimental structures reflect particular preparations and conditions, and may omit flexible regions. In AlphaFold2, pLDDT concerns local structural confidence, while predicted aligned error helps assess uncertainty in relative region placement. A confident domain cannot certify a proposed inter-domain pocket or contact. Neither score measures binding affinity, protein abundance, a variant’s functional effect or clinical benefit.",
+        "X-ray crystallography interprets diffraction from crystals; crystallization and flexible regions constrain what can be resolved. NMR uses signals and spatial restraints, often in solution, and can report an ensemble of compatible structures. Single-particle cryo-electron microscopy combines many projections of particles preserved in ice into a three-dimensional map. Each route requires preparation, experimental data and model interpretation. Check the method, local support, missing regions and validation of the actual structure; an atomic-looking model is not a direct photograph of every molecular state or proof of binding or function."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cfdna",
+      "kind": "term",
+      "name": "Cell-free DNA (cfDNA)",
+      "aka": [
+        "cfDNA",
+        "cell-free DNA",
+        "circulating cell-free DNA",
+        "plasma DNA",
+        "liquid biopsy",
+        "plasma NGS",
+        "plasma genotyping",
+        "blood-based genotyping",
+        "tissue-informed",
+        "tumour-informed",
+        "tumor-informed",
+        "tumour-naive",
+        "tumor-naive",
+        "fragmentomics",
+        "liquid biopsies"
+      ],
+      "tldr": "Cell-free DNA is DNA outside intact cells in a collected sample. Tumour-derived DNA is one possible part of that mixture; its amount depends on the specimen and method.",
+      "summary": "Cell-free DNA (cfDNA) is DNA outside intact cells in a specimen. Circulating tumour DNA (ctDNA) is the tumour-derived part of the plasma DNA mixture, rather than a different material competing with cfDNA. DNA from non-tumour tissues can contribute much of that mixture, as illustrated by Moss and colleagues' methylation-atlas study. Total extracted DNA is therefore not a tumour measurement. A finite evaluated aliquot can contain no qualifying tumour signal even when disease exists elsewhere.\n\nLiquid biopsy describes a specimen approach. A test may track known tumour features, look for predefined mutation, methylation or fragment patterns, or profile detectable alterations. Its target coverage, origin checks, sample requirements and calling rule determine the claim. Genotyping, residual-disease monitoring and screening have different intended uses; a method label does not validate every use or locate the source of a plasma signal.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell-free_fetal_DNA",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell-free_fetal_DNA"
+        },
+        {
+          "label": "Comprehensive human cell-type methylation atlas reveals origins of circulating cell-free DNA in health and disease",
+          "url": "https://doi.org/10.1038/s41467-018-07466-6"
+        },
+        {
+          "label": "Maternal Plasma DNA Sequencing Reveals the Genome-Wide Genetic and Mutational Profile of the Fetus",
+          "url": "https://doi.org/10.1126/scitranslmed.3001720"
+        },
+        {
+          "label": "Enhanced detection of circulating tumor DNA by fragment size analysis",
+          "url": "https://doi.org/10.1126/scitranslmed.aat4921"
+        },
+        {
+          "label": "Comparison of tumor‐informed and tumor‐naïve sequencing assays for ctDNA detection in breast cancer",
+          "url": "https://doi.org/10.15252/emmm.202216505"
+        },
+        {
+          "label": "NCI: cfDNA biospecimen collection and processing (revision February 2025)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/bebp/bebp-cfdna.pdf"
+        },
+        {
+          "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+          "url": "https://www.fda.gov/media/183874/download"
+        }
+      ],
+      "tags": [
+        "precision"
+      ],
+      "related": [
+        "ctdna",
+        "mrd",
+        "clonal-haematopoiesis",
+        "core-needle-biopsy",
+        "ctdna-units",
+        "blood-as-a-renewable-sample"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "liquid-biopsy",
+        "mced",
+        "fragmentomics",
+        "mrd-testing"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Source classes: cfDNA is DNA outside intact cells in a sample, and ctDNA is the tumour-derived part of that pool, so the two are related materials and not rival tests. In healthy donors a methylation atlas of 25 tissues and cell types attributed plasma cfDNA to white blood cells (55%), erythrocyte progenitors (30%), vascular endothelial cells (10%) and hepatocytes (1%) (Moss 2018). A tumour adds DNA only when it contributes, and the tumour share may be small or absent in the sample drawn even when cancer exists elsewhere.",
+        "Scale: plasma DNA fragments show a pattern reminiscent of nuclease-cleaved nucleosomes with a peak at 166 base pairs (Lo 2010, in maternal plasma), and tumour-derived fragments are enriched at 90 to 150 base pairs (Mouliere 2018). One assay input in a breast-cancer comparison was 4,500 amplifiable copies, about 15 nanograms (Santonja 2023), and at about 3.3 picograms per haploid genome copy 1 nanogram is roughly 300 copies (arithmetic from genome size). In a fictional single-locus model with 4,500 amplifiable opportunities and target-allele probability 1 in 100,000, the expected target count is 0.045. The target-allele probability is not automatically a tumour-DNA fraction: copy number, variant multiplicity and clone representation matter.",
+        "Yield is not origin: in a fictional experiment equal 1 mL plasma aliquots give 2 and 4 nanograms of cfDNA and no tumour-attributed signal is reported. Total DNA doubled, but tumour fraction and any tumour-DNA fold change cannot be calculated because tumour attribution was not measured. A fragment's source needs evidence such as paired white-blood-cell and tumour sequencing (Razavi 2019), and a variant seen in plasma is not automatically tumour-derived.",
+        "Method card: measures selected features of plasma DNA by a stated sequencing or molecular method, from a finite plasma aliquot that testing consumes. Output is detected or not detected, variant fractions, molecule concentrations or model estimates, each with its own unit. It cannot give an all-body cell count, lesion location, viability or treatment benefit, and validity belongs to the exact specimen, assay version and intended use.",
+        "Collection conditions can change the mixture before testing: blood-cell breakdown adds genomic DNA and can dilute a tumour fraction. The NCI biospecimen practices document, revised February 2025, prefers plasma to serum. Its protocol recommends EDTA, accepts acid citrate dextrose, and advises avoiding heparin and citrate; the literature-summary section separately reports results with several anticoagulants when processing was immediate. For EDTA blood the protocol prefers centrifugation within 2 hours and accepts up to 4 hours at room temperature or 24 hours at 4 degrees Celsius; it recommends stabilising tubes for anticipated delays over 2 hours. These are recommendations for that specimen workflow, not a universal acceptance rule for every assay. Extraction and library preparation then retain only some available molecules, so the volume drawn is not the volume evaluated.",
+        "Reading an assay report starts with the specimen and collection date, the plasma volume actually evaluated, DNA quality and recovery, origin checks, and the rule that turns a signal into a call. Low shedding, damaged input or failed quality controls can limit interpretation; a failed assay is a separate result from no qualifying signal. Genotyping, response monitoring and residual-disease detection are different intended uses. In its November 2024 drug-development guidance, FDA asks for validation of the complete workflow, representative clinical samples, the input range and prespecified calling cut-offs; validation of one use does not establish another.",
+        "A useful result ledger keeps six questions together: when the sample was collected and where that date sits relative to treatment or surgery; the assay and version; the specimen, evaluated input and quality qualifications; the reported state, including detected, not detected, indeterminate or failed; the quantity, unit and numerical qualifications; and the applicable detection and quantitation criteria. Keep the report-release date separately. Two reports arriving together may describe different biological moments, and an invalid sample or failed reference build is not a negative plasma result.",
+        "In a fictional comparison, one assay reports not detected and another reports a low detected signal. That alone does not identify an erroneous test. Compare the actual samples and collection dates, targets, input, controls and calling criteria before interpreting the disagreement. A valid negative says that the evaluated sample did not meet that method's qualifying-signal rule. It cannot distinguish every possibility: there may be no residual tumour signal, too few relevant fragments may have reached the aliquot, or the tracked features may not represent the remaining cells. This reading exercise sets no repeat-draw schedule."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "vaf",
+      "kind": "term",
+      "name": "Variant allele frequency (VAF)",
+      "aka": [],
+      "tldr": "Variant allele frequency is the fraction of informative reads or molecules that support a variant under a test’s definition. It is not directly the fraction of cancer cells.",
+      "summary": "Read-based VAF divides variant-supporting reads by informative reads at the locus. Some assays instead report a molecule-based measure, so keep the laboratory’s definition. Tumor purity, local allele-specific copy number, ploidy, subclonal mixture and assay behavior affect the value. VAF alone cannot assign zygosity, variant origin, the number of clones or a cancer-cell percentage. Changes over time in plasma also require attention to specimen and non-tumor DNA contributors.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Allele_frequency",
+      "links": [
+        {
+          "label": "Li et al., Standards and guidelines for the interpretation and reporting of sequence variants in cancer: AMP, ASCO and CAP joint consensus (Journal of Molecular Diagnostics 2017)",
+          "url": "https://doi.org/10.1016/j.jmoldx.2016.10.002"
+        },
+        {
+          "label": "Absolute quantification of somatic DNA alterations in human cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+        },
+        {
+          "label": "Allele-specific genomic data elucidate the role of somatic gain and copy-number neutral loss of heterozygosity in cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34731645/"
+        },
+        {
+          "label": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31768066/"
+        },
+        {
+          "label": "Absolute quantification of somatic DNA alterations in human cancer (Nature biotechnology 2012)",
+          "url": "https://doi.org/10.1038/nbt.2203"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "alleles-and-zygosity",
+        "germline-vs-somatic",
+        "gene-amplification"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cgp",
+        "liquid-biopsy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-li-j-mol-diagn"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "VAF is the proportion of usable reads or assay-defined molecules supporting the alternate sequence; keep the denominator: 25 of 100 usable observations is 25%.",
+        "CCF is carrier cancer cells over all sampled cancer cells; its inputs have distinct denominators: cell purity p, DNA contribution, pathology cellularity (method-defined, for RCB the tumour-bed area), global ploidy P, local copy number C, mutant multiplicity m.",
+        "With equal recovery per genome copy and diploid normals, tumour DNA contribution is p*P/[p*P+2*(1-p)]; half the cells at ploidy four contribute two thirds of DNA.",
+        "For uniform local copies, expected VAF is p*f*m/[p*C+(1-p)*2]; assumptions: two normal copies, uniform cancer copies, fixed multiplicity, unbiased observations; subclonal copy change needs a richer model.",
+        "Same 50 cancer plus 50 normal cells, every cancer cell carrying one variant copy: expected VAF 50/200=25% with two local cancer copies and 50/150 about 33% with one; CCF stays 100% and purity 50%.",
+        "Purity 0.5, one mutant copy: four local copies with CCF 100% and two local copies with CCF 2/3 both predict VAF 1/6 (about 16.7%); copy evidence separates them; CCF above 100% signals incompatible assumptions.",
+        "High VAF alone cannot establish truncal ancestry or origin or function; a rise after treatment can reflect mixture or copy change as well as carrier expansion; uncertain inputs give alternative CCF fits, not counted cells.",
+        "Retain DNA and copy-state inputs, filtered support denominators, fractions, local copies, multiplicity, purity, model version and alternative fits. New extraction consumes material; reanalysis alone does not. Artifacts, few molecules, recovery bias and uncertain copy/mixture estimates limit conversion. Detection thresholds and model-fit criteria do not establish a universal clonal-target cutoff or treatment benefit.",
+        "Fictional splice-site example: 32 alternate reads among 160 usable reads give VAF 20 per cent. Suppose half the sampled cells are malignant, every cell has two local copies, and each affected cancer cell carries one altered copy, with equal recovery per copy. Then VAF = purity times cancer-cell fraction divided by two; 0.20 = 0.50 times CCF divided by two gives CCF 80 per cent. With pure cancer-cell input, the same 20 per cent fits CCF 40 per cent. These are model calculations, not counted cells. Local copy changes, altered-copy multiplicity, recovery bias or uncertain purity can change the fit. A measured splice junction and functional repair remain separate questions.",
+        "In a fictional TP53 example, 60 cancer cells each carry one variant copy and have lost the other local copy; 40 normal cells each have two unaltered copies. With equal recovery per copy, the expected variant fraction is 60 divided by 140, about 43 percent. Another model, 86 percent cancer-cell purity with two local copies and one variant copy in every cancer cell, gives 86 divided by 200, exactly 43 percent. Both round to 43 percent when reported to a whole percentage point. That reported fraction alone cannot choose the copy model or establish that a missense variant disables the protein. These are conditional calculations, not a measured clone or a functional test.",
+        "Two invented mixtures show why the same fraction can fit different carrier fractions. Each contains 60 cancer and 40 diploid normal cells, with no variant in the normal cells and unbiased recovery. Model A gives every cancer cell two local copies and one variant copy: 60 variant copies among 120 cancer plus 80 normal copies give VAF 30 percent and CCF 100 percent. Model B gives every cancer cell four local copies, with 48 of the 60 cells carrying two variant copies each: 96 among 240 cancer plus 80 normal copies again give VAF 30 percent, but CCF is 80 percent. They match that one fraction; they have not been shown to fit the same complete dataset. Independent copy evidence can distinguish the hypotheses.",
+        "In a separate invented uniform-copy model, 50 cancer and 50 normal cells each carry two local copies; normal cells lack the variant and each carrier cancer cell has one variant copy. Among 200 total copies, an expected VAF of 20 percent requires forty carriers among fifty cancer cells, or CCF 80 percent. An expected VAF of 40 percent would require eighty carriers among fifty, or 160 percent, which is not a possible carrier fraction. Preserve that incompatibility rather than clipping it to 100 percent or guessing which input is wrong. The calculation inverts an expected fraction; noisy observed support and uncertain purity, copy number, multiplicity, origin or recovery require their uncertainty carried through. More reads can improve precision without fixing a wrong model."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "rna",
+      "kind": "term",
+      "name": "RNA",
+      "aka": [
+        "messenger RNA",
+        "mRNA",
+        "transcript",
+        "transcripts",
+        "transcription"
+      ],
+      "tldr": "RNA is a family of molecules with several jobs. Messenger RNA provides a protein-making template; other RNAs help build, regulate or carry out cellular processes.",
+      "summary": "RNA, short for ribonucleic acid, uses ribose and usually uracil in place of DNA’s thymine. It is often single-stranded but can fold through internal pairing. Messenger RNA carries a coding template; ribosomal RNA contributes to ribosome structure and catalysis; transfer RNA brings amino acids; regulatory RNAs influence other molecules. Many nuclear messages receive a 5-prime cap and poly(A) tail and have introns removed by splicing before translation, but these features are not universal to all RNAs. Ribosomes read a coding sequence in codons to produce a polypeptide; processing, folding and localization follow.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/RNA",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/RNA"
+        },
+        {
+          "label": "NHGRI: RNA roles, processing and reverse transcription",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet"
+        },
+        {
+          "label": "NHGRI: Codon",
+          "url": "https://www.genome.gov/genetics-glossary/Codon"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-1-regulation-of-gene-expression",
+          "url": "https://openstax.org/books/biology-2e/pages/16-1-regulation-of-gene-expression"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"
+        },
+        {
+          "label": "NHGRI: Ribonucleic acid (RNA), molecular definition",
+          "url": "https://www.genome.gov/genetics-glossary/Ribonucleic-Acid-RNA?id=180"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "gene",
+        "protein",
+        "gene-expression",
+        "rna-splicing",
+        "nonsense-mediated-decay"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "rna-seq",
+        "neoantigen-mrna-vaccine",
+        "antisense-sirna"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+        "After successful delivery, a supplied ordinary mRNA can be translated at cytoplasmic ribosomes; that translation step does not require the message to enter the nucleus. Supplying a message, measuring endogenous tumor RNA and demonstrating nuclear DNA modification are separate observations. The NHGRI vaccine example illustrates supplied RNA instructions, not a general cancer-efficacy claim."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "gene",
+      "kind": "term",
+      "name": "Gene",
+      "aka": [
+        "genes",
+        "genetic"
+      ],
+      "tldr": "A gene is a DNA region that produces a functional RNA message. Some messages encode proteins; others work as RNA.",
+      "summary": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gene",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gene"
+        },
+        {
+          "label": "NHGRI: Gene",
+          "url": "https://www.genome.gov/genetics-glossary/Gene"
+        },
+        {
+          "label": "NHGRI: Exon",
+          "url": "https://www.genome.gov/genetics-glossary/Exon"
+        },
+        {
+          "label": "NHGRI: Intron",
+          "url": "https://www.genome.gov/genetics-glossary/Intron"
+        },
+        {
+          "label": "HGVS: reference-sequence context",
+          "url": "https://hgvs-nomenclature.org/stable/background/refseq/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "protein",
+        "mutation",
+        "oncogene",
+        "tumour-suppressor-gene",
+        "gene-expression",
+        "rna",
+        "rna-splicing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Preserve the reference sequence, accession and version when describing a variant consequence. DNA sequencing, gene-level RNA counts and protein assays measure different objects; a pooled count does not establish every isoform or an intact active protein. Gene and protein names are often shared, so identify which molecule an assay or drug claim concerns."
+      ],
+      "category": "Biology basics"
+    }
+  ]
+}

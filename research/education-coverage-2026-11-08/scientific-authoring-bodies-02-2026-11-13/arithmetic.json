@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "statement": "Marked DNA icons",
+      "value": 0.5,
+      "expected": 0.5
+    },
+    {
+      "statement": "Marked blood-cell icons",
+      "value": 0.5,
+      "expected": 0.5
+    },
+    {
+      "statement": "DNA icons sum",
+      "value": 8,
+      "expected": 8
+    },
+    {
+      "statement": "Blood-cell icons sum",
+      "value": 4,
+      "expected": 4
+    },
+    {
+      "statement": "C-to-T substitution",
+      "value": "AATGT",
+      "expected": "AATGT"
+    },
+    {
+      "statement": "Opposite-direction displayed complement",
+      "value": "TAGC",
+      "expected": "TAGC"
+    },
+    {
+      "statement": "Source native font scaled to stated312px width",
+      "value": 14.625,
+      "expected": 14.625
+    }
+  ],
+  "pass": true,
+  "scope": "Conditional arithmetic and string checks only. Icon fractions are not observed VAF or tumour fraction. The nominal font conversion is not actual CSS, native-pixel or accessibility review."
+}

@@ -3842,5 +3842,35 @@
         }
       ]
     }
+  },
+  {
+    "id": "original-pathway-atlas-wording-followup",
+    "title": "Autophagy atlas wording and source scope",
+    "domain": "molecular-pathway-source-adjacent",
+    "sourceURLs": [
+      "https://pubmed.ncbi.nlm.nih.gov/33634751/",
+      "https://doi.org/10.1038/s41586-020-2229-5"
+    ],
+    "discoveryOccurrences": [
+      "original-mrd-and-pathways-2026-11-13"
+    ],
+    "review": {
+      "status": "reviewed",
+      "auditor": "Coordinator identified legacy atlas-text followup; no teaching credit",
+      "checkedAt": "2026-11-13",
+      "rationale": "The entity text is qualified, while an atlas-node plain description still makes a broad KRAS-dependence and antigen-display claim. This is remaining work, not an external approval dependency.",
+      "points": [
+        {
+          "id": "atlas-autophagy-conditionality",
+          "requirement": "Reconcile the autophagy node plain text in src/data/mechanics-atlas.ts with context-specific dependence, and verify the studied-system scope of its antigen-display claim.",
+          "status": "gap",
+          "evidence": [],
+          "remaining": [
+            "Read the named primary antigen-display source and the actual node consumer before authoring a bounded replacement.",
+            "Check product classification for that file before any publication; do not infer an approval requirement solely from the path."
+          ]
+        }
+      ]
+    }
   }
 ]

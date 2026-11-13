@@ -1,0 +1,632 @@
+{
+  "dataCommit": "3bd262c3b555c188c8203e4fffef762a7a02a551",
+  "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+  "changes": [
+    {
+      "recordId": "autophagy",
+      "version": "root-draft",
+      "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+      "fieldChanges": {
+        "notes": {
+          "before": [
+            "Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy.",
+            "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+            "A completed macroautophagosome has separate inner and outer membranes, with space between them. When it fuses with a lysosome, the outer membrane joins the lysosomal boundary, while the inner membrane is degraded before enzymes gain access to the enclosed cargo. Itakura and colleagues located syntaxin 17 on completed autophagosomes, and Tsuboyama and colleagues found that loss of ATG conjugation systems markedly delayed inner-membrane degradation even when fusion occurred. A direct-fusion sketch omits intermediate endosomal interactions described in multicellular organisms; it is not the complete route taken by every compartment.",
+            "Product return has evidence in defined systems. In leucine-starved cultured human HEK-293T cells, Wyant and colleagues found that SLC38A9 was needed for leucine made by lysosomal protein breakdown to reach the cytosol; the response also depended on the autophagy protein ATG7. Abu-Remaileh and colleagues measured regulated lysosomal amino-acid exchange in mammalian cells. Yeast experiments identified Atg22, Avt3 and Avt4 as partially redundant vacuolar amino-acid exporters. These results support amino-acid recycling in those systems, without establishing transport of every breakdown product, secretion from the cell or guaranteed growth.",
+            "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+            "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+            "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+            "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+            "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+            "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+            "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence."
+          ],
+          "beforeSha256": "1c76de1f40e67921d6a2d56e427d7d7607700fbff1e3b83211d46581fef4c26d",
+          "after": [
+            "Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy.",
+            "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+            "A completed macroautophagosome has separate inner and outer membranes, with space between them. When it fuses with a lysosome, the outer membrane joins the lysosomal boundary, while the inner membrane is degraded before enzymes gain access to the enclosed cargo. Itakura and colleagues located syntaxin 17 on completed autophagosomes, and Tsuboyama and colleagues found that loss of ATG conjugation systems markedly delayed inner-membrane degradation even when fusion occurred. A direct-fusion sketch omits intermediate endosomal interactions described in multicellular organisms; it is not the complete route taken by every compartment.",
+            "Product return has evidence in defined systems. In leucine-starved cultured human HEK-293T cells, Wyant and colleagues found that SLC38A9 was needed for leucine made by lysosomal protein breakdown to reach the cytosol; the response also depended on the autophagy protein ATG7. Abu-Remaileh and colleagues measured regulated lysosomal amino-acid exchange in mammalian cells. Yeast experiments identified Atg22, Avt3 and Avt4 as partially redundant vacuolar amino-acid exporters. These results support amino-acid recycling in those systems, without establishing transport of every breakdown product, secretion from the cell or guaranteed growth.",
+            "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+            "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+            "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+            "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+            "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+            "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+            "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and the RB1CC1-encoded protein FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence."
+          ],
+          "afterSha256": "101347943956ce26c4d129f89c0e380d2a7edf3418413b1cfec6c2bed67edff4"
+        },
+        "links": {
+          "before": [
+            {
+              "label": "Primary source, PMID 17534139",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17534139/"
+            },
+            {
+              "label": "Primary source, PMID 31120501",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+            },
+            {
+              "label": "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)",
+              "url": "https://doi.org/10.1038/s41586-020-2229-5"
+            },
+            {
+              "label": "Source identity and scope, PMID 33634751",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+            },
+            {
+              "label": "Source identity and scope, PMID 29362479",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+            },
+            {
+              "label": "Source identity and scope, PMID 33584716",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33584716/"
+            },
+            {
+              "label": "Source identity and scope, PMID 19250911",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19250911/"
+            },
+            {
+              "label": "Source identity and scope, PMID 19258318",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+            },
+            {
+              "label": "Lysosome biology in autophagy (2020 review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32047650/"
+            },
+            {
+              "label": "The hairpin-type tail-anchored SNARE syntaxin 17 targets to autophagosomes for fusion with endosomes/lysosomes (2012 cell experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23217709/"
+            },
+            {
+              "label": "The ATG conjugation systems are important for degradation of the inner autophagosomal membrane (2016 cell experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27885029/"
+            },
+            {
+              "label": "Autophagosome maturation: An epic journey from the ER to lysosomes (2019 review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30578282/"
+            },
+            {
+              "label": "mTORC1 Activator SLC38A9 Is Required to Efflux Essential Amino Acids from Lysosomes and Use Protein as a Nutrient (2017 cell and transport experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29053970/"
+            },
+            {
+              "label": "Lysosomal metabolomics reveals V-ATPase- and mTOR-dependent regulation of amino acid efflux from lysosomes (2017 lysosomal metabolomics)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29074583/"
+            },
+            {
+              "label": "Atg22 recycles amino acids to link the degradative and recycling functions of autophagy (2006 yeast experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17021250/"
+            },
+            {
+              "label": "Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2021)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33473172/"
+            },
+            {
+              "label": "The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25975349/"
+            },
+            {
+              "label": "Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29158785/"
+            },
+            {
+              "label": "Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40527957/"
+            }
+          ],
+          "beforeSha256": "28cb6800385816a98dd996155ede521082aa1b478f7a4fe383671132af7b8132",
+          "after": [
+            {
+              "label": "Primary source, PMID 17534139",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17534139/"
+            },
+            {
+              "label": "Primary source, PMID 31120501",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+            },
+            {
+              "label": "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)",
+              "url": "https://doi.org/10.1038/s41586-020-2229-5"
+            },
+            {
+              "label": "Source identity and scope, PMID 33634751",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+            },
+            {
+              "label": "Source identity and scope, PMID 29362479",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+            },
+            {
+              "label": "Source identity and scope, PMID 33584716",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33584716/"
+            },
+            {
+              "label": "Source identity and scope, PMID 19250911",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19250911/"
+            },
+            {
+              "label": "Source identity and scope, PMID 19258318",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+            },
+            {
+              "label": "Lysosome biology in autophagy (2020 review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32047650/"
+            },
+            {
+              "label": "The hairpin-type tail-anchored SNARE syntaxin 17 targets to autophagosomes for fusion with endosomes/lysosomes (2012 cell experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23217709/"
+            },
+            {
+              "label": "The ATG conjugation systems are important for degradation of the inner autophagosomal membrane (2016 cell experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27885029/"
+            },
+            {
+              "label": "Autophagosome maturation: An epic journey from the ER to lysosomes (2019 review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30578282/"
+            },
+            {
+              "label": "mTORC1 Activator SLC38A9 Is Required to Efflux Essential Amino Acids from Lysosomes and Use Protein as a Nutrient (2017 cell and transport experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29053970/"
+            },
+            {
+              "label": "Lysosomal metabolomics reveals V-ATPase- and mTOR-dependent regulation of amino acid efflux from lysosomes (2017 lysosomal metabolomics)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29074583/"
+            },
+            {
+              "label": "Atg22 recycles amino acids to link the degradative and recycling functions of autophagy (2006 yeast experiments)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17021250/"
+            },
+            {
+              "label": "Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2021)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33473172/"
+            },
+            {
+              "label": "The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25975349/"
+            },
+            {
+              "label": "Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29158785/"
+            },
+            {
+              "label": "Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40527957/"
+            },
+            {
+              "label": "UniProt Q8TDY2: RB1CC1 protein names, including FIP200",
+              "url": "https://www.uniprot.org/uniprotkb/Q8TDY2/entry"
+            }
+          ],
+          "afterSha256": "0389f68474f6d84191874af271bc448d7d0e753afd0bf32f12551c51354b30f6"
+        },
+        "asOf": {
+          "before": "2026-11-12",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "after": "2026-11-13",
+          "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+        }
+      },
+      "newParagraph": null,
+      "sourceDepth": "Complete matched Europe PMC abstract for the new model claim; UniProt reviewed gene and protein-name fields for the FIP200 identity. No whole-paper or whole-entry reading claimed.",
+      "allOtherFieldsPreserved": true,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "recordId": "keap1-nrf2",
+      "version": "root-draft",
+      "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+      "fieldChanges": {
+        "notes": {
+          "before": [
+            "Leading programmes: Papagiannakopoulos (NYU) on KEAP1 in lung cancer; DeNicola (Moffitt); Skoulidis and Heymach (MD Anderson) on STK11/KEAP1 and IO.",
+            "Singh's initial series contained 40 primary lung cancers and 16 pleural-fluid samples; excluding two small-cell pleural-fluid samples gives the 54 NSCLC denominator. Ten mutation-bearing samples round to 19 per cent, not a universal lung-cancer prevalence. Five of six tested mutation-bearing primary tumours had locus loss; do not assign biallelic loss to all ten samples. Romero separately described KEAP1 alterations in about 20 per cent of KRAS-mutant lung adenocarcinomas. These populations and denominators differ. KEAP1-mutant-versus-normal-cell viability comparisons are not matched isogenic proof that one alteration caused every chemotherapy response.",
+            "Protection and dependence are experiment-specific directions. If removing a verified defence makes a defined stress more lethal, that supports protection under that stress. If removing the defence or a supply route reduces survival relative to an appropriate matched comparison, that supports a conditional dependence; it need not mean every unstressed cell dies. In a fictional culture, high antioxidant RNA plus probe-associated death establishes neither NRF2-driven killing nor ferroptosis. Test the alteration's effect on NRF2 turnover or nuclear localisation and output, then use independent perturbation and restoration to examine the survival mechanism. CUL3 works with other adaptors, and a compound suppressing protein production broadly does not isolate NRF2. A genetic intervention also needs controls, rather than being automatically specific.",
+            "ClinicalTrials.gov records KEAPSAKE, NCT04265534, as a randomised, double-blind phase 2 comparison of telaglenastat or placebo added to carboplatin, pemetrexed and pembrolizumab for selected metastatic nonsquamous NSCLC with KEAP1/NRF2 alterations. The record last updated in September 2022 reports actual enrollment 40, status terminated and the stated reason lack of clinical benefit. This is registry status, not a peer-reviewed effect estimate or proof that every glutaminase strategy fails. Model activity, eligibility, acceptable exposure and clinical benefit remain different questions."
+          ],
+          "beforeSha256": "34e6787e0c4d0d2fe4a75f85c9283ada9e7accb35a1398591e1292e8b1d121bc",
+          "after": [
+            "Leading programmes: Papagiannakopoulos (NYU) on KEAP1 in lung cancer; DeNicola (Moffitt); Skoulidis and Heymach (MD Anderson) on STK11/KEAP1 and IO.",
+            "Singh's initial series contained 40 primary lung cancers and 16 pleural-fluid samples; excluding two small-cell pleural-fluid samples gives the 54 NSCLC denominator. Ten mutation-bearing samples round to 19 per cent, not a universal lung-cancer prevalence. Five of six tested mutation-bearing primary tumours had locus loss; do not assign biallelic loss to all ten samples. Romero separately described KEAP1 alterations in about 20 per cent of KRAS-mutant lung adenocarcinomas. These populations and denominators differ. KEAP1-mutant-versus-normal-cell viability comparisons are not matched isogenic proof that one alteration caused every chemotherapy response.",
+            "Protection and dependence are experiment-specific directions. If removing a verified defence makes a defined stress more lethal, that supports protection under that stress. If removing the defence or a supply route reduces survival relative to an appropriate matched comparison, that supports a conditional dependence; it need not mean every unstressed cell dies. In a fictional culture, high antioxidant RNA plus probe-associated death establishes neither NRF2-driven killing nor ferroptosis. Test the alteration's effect on NRF2 turnover or nuclear localisation and output, then use independent perturbation and restoration to examine the survival mechanism. CUL3 works with other adaptors, and a compound suppressing protein production broadly does not isolate NRF2. A genetic intervention also needs controls, rather than being automatically specific.",
+            "ClinicalTrials.gov records KEAPSAKE, NCT04265534, as a randomised, double-blind phase 2 comparison of telaglenastat or placebo added to carboplatin, pemetrexed and pembrolizumab for selected metastatic nonsquamous NSCLC with KEAP1/NRF2 alterations. The record last updated in September 2022 reports actual enrollment 40, status terminated and the stated reason lack of clinical benefit. This is registry status, not a peer-reviewed effect estimate or proof that every glutaminase strategy fails. Model activity, eligibility, acceptable exposure and clinical benefit remain different questions.",
+            "Vartanian and colleagues examined brusatol in the KEAP1-mutant lung-cancer line A549. Protein profiling and measurements of newly synthesised proteins supported broad inhibition of protein synthesis, with NRF2 falling among many proteins. Cytotoxicity across additional cancer cell lines was not restricted to KEAP1-NRF2 activity. A lower NRF2 signal after this compound therefore does not isolate NRF2 inhibition as the cause of death. Check general translation early and use independently controlled perturbations before attributing a survival effect to the proposed defence."
+          ],
+          "afterSha256": "253c2bdefed8e5101bddd74ffc3781e8602c4d1932475ebc9098854bbaf5ddf0"
+        },
+        "links": {
+          "before": [
+            {
+              "label": "Romero et al., Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (Nature Medicine 2017)",
+              "url": "https://doi.org/10.1038/nm.4407"
+            },
+            {
+              "label": "Dysfunctional KEAP1-NRF2 interaction in non-small-cell lung cancer (2006)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17020408/"
+            },
+            {
+              "label": "Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (2017)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28967920/"
+            },
+            {
+              "label": "Oxidative stress sensor Keap1 functions as an adaptor for Cul3-based E3 ligase to regulate proteasomal degradation of Nrf2 (2004)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15282312/"
+            },
+            {
+              "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+            },
+            {
+              "label": "ClinicalTrials.gov: KEAPSAKE NCT04265534",
+              "url": "https://clinicaltrials.gov/study/NCT04265534"
+            }
+          ],
+          "beforeSha256": "4935c2dd711914aca52227a963956babb4de86eaa2dde38f4ce1b20913cf59c9",
+          "after": [
+            {
+              "label": "Romero et al., Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (Nature Medicine 2017)",
+              "url": "https://doi.org/10.1038/nm.4407"
+            },
+            {
+              "label": "Dysfunctional KEAP1-NRF2 interaction in non-small-cell lung cancer (2006)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17020408/"
+            },
+            {
+              "label": "Keap1 loss promotes Kras-driven lung cancer and results in dependence on glutaminolysis (2017)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28967920/"
+            },
+            {
+              "label": "Oxidative stress sensor Keap1 functions as an adaptor for Cul3-based E3 ligase to regulate proteasomal degradation of Nrf2 (2004)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15282312/"
+            },
+            {
+              "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+            },
+            {
+              "label": "ClinicalTrials.gov: KEAPSAKE NCT04265534",
+              "url": "https://clinicaltrials.gov/study/NCT04265534"
+            },
+            {
+              "label": "Vartanian et al. 2016: brusatol inhibits global protein synthesis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26711467/"
+            }
+          ],
+          "afterSha256": "7a8d269be054850653f630554c7ce9ed0571aabc33fe9e20b306de1a95d0d70d"
+        },
+        "asOf": {
+          "before": "2026-11-12",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "after": "2026-11-13",
+          "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+        }
+      },
+      "newParagraph": "Vartanian and colleagues examined brusatol in the KEAP1-mutant lung-cancer line A549. Protein profiling and measurements of newly synthesised proteins supported broad inhibition of protein synthesis, with NRF2 falling among many proteins. Cytotoxicity across additional cancer cell lines was not restricted to KEAP1-NRF2 activity. A lower NRF2 signal after this compound therefore does not isolate NRF2 inhibition as the cause of death. Check general translation early and use independently controlled perturbations before attributing a survival effect to the proposed defence.",
+      "sourceDepth": "Complete matched Europe PMC abstract for the new model claim; UniProt reviewed gene and protein-name fields for the FIP200 identity. No whole-paper or whole-entry reading claimed.",
+      "allOtherFieldsPreserved": true,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "recordId": "rtk-activation",
+      "version": "root-draft",
+      "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+      "fieldChanges": {
+        "notes": {
+          "before": [
+            "The original FIGHT-202 report observed responses in 38 of 107 people, 35.5 per cent, with previously treated cholangiocarcinoma and qualifying FGFR2 fusions or rearrangements given pemigatinib. The denominator includes fusions or rearrangements, not only one fusion mechanism. A 2024 correction is linked to the report; its text was unavailable, so the figure here is from the original abstract rather than a correction-checked final estimate. It is a named single-arm clinical signal rather than evidence for any receptor variant or another disease. For an uncharacterised receptor variant, compare with the normal receptor at matched expression and measure appropriate phosphorylation and downstream changes. Similar amount without extra activation does not support activation in that condition, while leaving other conditions unresolved. An activating receptor fusion or amplification may still require its kinase, whereas an active downstream RAS route can bypass the proposed receptor step. Locate the drug's blocked step and possible downstream bypass, then separately test whether changing the output matters for growth. Neither a bulk ligand signal from a sender nor receptor presence assigns an active signal to the malignant receiver."
+          ],
+          "beforeSha256": "39ddb5ccd1111e615932103c7a33ff4bdb198c9485eebc465dbbee429a5035f7",
+          "after": [
+            "The original FIGHT-202 report observed responses in 38 of 107 people, 35.5 per cent, with previously treated cholangiocarcinoma and qualifying FGFR2 fusions or rearrangements given pemigatinib. The denominator includes fusions or rearrangements, not only one fusion mechanism. A 2024 correction is linked to the report; its text was unavailable, so the figure here is from the original abstract rather than a correction-checked final estimate. It is a named single-arm clinical signal rather than evidence for any receptor variant or another disease. For an uncharacterised receptor variant, compare with the normal receptor at matched expression and measure appropriate phosphorylation and downstream changes. Similar amount without extra activation does not support activation in that condition, while leaving other conditions unresolved. An activating receptor fusion or amplification may still require its kinase, whereas an active downstream RAS route can bypass the proposed receptor step. Locate the drug's blocked step and possible downstream bypass, then separately test whether changing the output matters for growth. Neither a bulk ligand signal from a sender nor receptor presence assigns an active signal to the malignant receiver.",
+            "Taylor and colleagues studied specified activating kinase-domain FGFR4 mutants in rhabdomyosarcoma models. In the tested murine cells, these mutants increased receptor autophosphorylation, STAT3 signalling and metastatic behaviour; the mutant-expressing cells were more susceptible to apoptosis under the tested FGFR inhibitor than reference-receptor or vector controls. This model evidence does not assign an effect to an uncharacterised FGFR4 alteration in another domain or cancer, or establish that a drug acting on a related receptor engages FGFR4 at the tested exposure."
+          ],
+          "afterSha256": "bba85db5f581cd96be04f15fcbe4011531cfa864bae12fda0eac6766494ed4d1"
+        },
+        "links": {
+          "before": [
+            {
+              "label": "Lemmon & Schlessinger, Cell signaling by receptor tyrosine kinases (Cell 2010)",
+              "url": "https://doi.org/10.1016/j.cell.2010.06.011"
+            },
+            {
+              "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+            },
+            {
+              "label": "Use of chemotherapy plus a monoclonal antibody against HER2 for metastatic breast cancer that overexpresses HER2. (2001; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11248153/"
+            },
+            {
+              "label": "Structural interactions of fibroblast growth factor receptor with its ligands. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10618369/"
+            },
+            {
+              "label": "Human breast cancer: correlation of relapse and survival with amplification of the HER-2/neu oncogene. (1987; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3798106/"
+            },
+            {
+              "label": "UniProt P36888: reviewed human FLT3 protein function",
+              "url": "https://www.uniprot.org/uniprotkb/P36888/entry"
+            },
+            {
+              "label": "Pemigatinib for previously treated, locally advanced or metastatic cholangiocarcinoma: a multicentre, open-label, phase 2 study (2020)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32203698/"
+            },
+            {
+              "label": "FIGHT-202 2024 correction notice: content not verified here",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38181811/"
+            }
+          ],
+          "beforeSha256": "8def18e5d3f86b4c8eb74394d5002da3901b57f3d3209d2e4f4a67d32b252c01",
+          "after": [
+            {
+              "label": "Lemmon & Schlessinger, Cell signaling by receptor tyrosine kinases (Cell 2010)",
+              "url": "https://doi.org/10.1016/j.cell.2010.06.011"
+            },
+            {
+              "label": "An allosteric mechanism for activation of the kinase domain of epidermal growth factor receptor. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/"
+            },
+            {
+              "label": "Use of chemotherapy plus a monoclonal antibody against HER2 for metastatic breast cancer that overexpresses HER2. (2001; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11248153/"
+            },
+            {
+              "label": "Structural interactions of fibroblast growth factor receptor with its ligands. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10618369/"
+            },
+            {
+              "label": "Human breast cancer: correlation of relapse and survival with amplification of the HER-2/neu oncogene. (1987; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3798106/"
+            },
+            {
+              "label": "UniProt P36888: reviewed human FLT3 protein function",
+              "url": "https://www.uniprot.org/uniprotkb/P36888/entry"
+            },
+            {
+              "label": "Pemigatinib for previously treated, locally advanced or metastatic cholangiocarcinoma: a multicentre, open-label, phase 2 study (2020)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32203698/"
+            },
+            {
+              "label": "FIGHT-202 2024 correction notice: content not verified here",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38181811/"
+            },
+            {
+              "label": "Taylor et al. 2009: activating FGFR4 mutations in rhabdomyosarcoma models",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19809159/"
+            }
+          ],
+          "afterSha256": "bd6bd45a4a98224f9bda7a722c9ffa1407a5822caa8a751eddd1cecbd3543e8e"
+        },
+        "asOf": {
+          "before": "2026-11-12",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "after": "2026-11-13",
+          "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+        }
+      },
+      "newParagraph": "Taylor and colleagues studied specified activating kinase-domain FGFR4 mutants in rhabdomyosarcoma models. In the tested murine cells, these mutants increased receptor autophosphorylation, STAT3 signalling and metastatic behaviour; the mutant-expressing cells were more susceptible to apoptosis under the tested FGFR inhibitor than reference-receptor or vector controls. This model evidence does not assign an effect to an uncharacterised FGFR4 alteration in another domain or cancer, or establish that a drug acting on a related receptor engages FGFR4 at the tested exposure.",
+      "sourceDepth": "Complete matched Europe PMC abstract for the new model claim; UniProt reviewed gene and protein-name fields for the FIP200 identity. No whole-paper or whole-entry reading claimed.",
+      "allOtherFieldsPreserved": true,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "recordId": "lipid-metabolism-cancer",
+      "version": "root-draft",
+      "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+      "fieldChanges": {
+        "notes": {
+          "before": [
+            "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+            "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing.",
+            "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+            "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+            "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+            "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+            "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour."
+          ],
+          "beforeSha256": "e131fa6acd96db256ca922d93d50c8fef8a07ea3e8e5b39cc71f212cf2261111",
+          "after": [
+            "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+            "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing. Lower synthesis does not itself show that a compound bound its target, and a medium effect does not identify uptake as its cause. An uncharacterised SCAP or MTOR variant needs evidence for its proposed functional effect; a gene name alone assigns neither activation nor loss of function.",
+            "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+            "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+            "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+            "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+            "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour."
+          ],
+          "afterSha256": "ccb4b81c5299dce4897d621f823e833eba269ebd1eb12241c5bbbd2bcf32e516"
+        },
+        "links": {
+          "before": [
+            {
+              "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+              "url": "https://doi.org/10.1038/nrc.2016.89"
+            },
+            {
+              "label": "Source identity and scope, PMID 19041766",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+            },
+            {
+              "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+              "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+            },
+            {
+              "label": "MedlinePlus: cholesterol and hormone production",
+              "url": "https://medlineplus.gov/cholesterol.html"
+            },
+            {
+              "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+              "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+            }
+          ],
+          "beforeSha256": "617c1d907e799754e8d193479e5b6e6f71377c0395726c1e8fe6bd4993a52aa5",
+          "after": [
+            {
+              "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+              "url": "https://doi.org/10.1038/nrc.2016.89"
+            },
+            {
+              "label": "Source identity and scope, PMID 19041766",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+            },
+            {
+              "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+              "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+            },
+            {
+              "label": "MedlinePlus: cholesterol and hormone production",
+              "url": "https://medlineplus.gov/cholesterol.html"
+            },
+            {
+              "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+              "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+            },
+            {
+              "label": "Martinez Molina et al. 2013: measuring drug target engagement with CETSA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
+            }
+          ],
+          "afterSha256": "43609204a2a4095b37c5c05f968215bc6dae88f141816c0c5c4cf55062532046"
+        },
+        "asOf": {
+          "before": "2026-11-12",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "after": "2026-11-13",
+          "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+        }
+      },
+      "newParagraph": null,
+      "clarificationAppendedToExistingNote": 1,
+      "sourceDepth": "The lower-readout/direct-interaction distinction is a source-backed method distinction; unknown-allele direction and unproven compensation remain conditional reading rules. No empirical SCAP/MTOR variant result is asserted.",
+      "allOtherFieldsPreserved": true,
+      "mainCredit": 0,
+      "liveCredit": 0
+    }
+  ],
+  "wholeGraph": {
+    "records": 23091,
+    "changed": [
+      "autophagy",
+      "keap1-nrf2",
+      "lipid-metabolism-cancer",
+      "rtk-activation"
+    ],
+    "unchanged": 23087,
+    "fields": [
+      {
+        "id": "autophagy",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "pass": true
+      },
+      {
+        "id": "autophagy",
+        "field": "links",
+        "beforeSha256": "28cb6800385816a98dd996155ede521082aa1b478f7a4fe383671132af7b8132",
+        "afterSha256": "0389f68474f6d84191874af271bc448d7d0e753afd0bf32f12551c51354b30f6",
+        "pass": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "beforeSha256": "1c76de1f40e67921d6a2d56e427d7d7607700fbff1e3b83211d46581fef4c26d",
+        "afterSha256": "101347943956ce26c4d129f89c0e380d2a7edf3418413b1cfec6c2bed67edff4",
+        "pass": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "pass": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "links",
+        "beforeSha256": "4935c2dd711914aca52227a963956babb4de86eaa2dde38f4ce1b20913cf59c9",
+        "afterSha256": "7a8d269be054850653f630554c7ce9ed0571aabc33fe9e20b306de1a95d0d70d",
+        "pass": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "beforeSha256": "34e6787e0c4d0d2fe4a75f85c9283ada9e7accb35a1398591e1292e8b1d121bc",
+        "afterSha256": "253c2bdefed8e5101bddd74ffc3781e8602c4d1932475ebc9098854bbaf5ddf0",
+        "pass": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "pass": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "links",
+        "beforeSha256": "8def18e5d3f86b4c8eb74394d5002da3901b57f3d3209d2e4f4a67d32b252c01",
+        "afterSha256": "bd6bd45a4a98224f9bda7a722c9ffa1407a5822caa8a751eddd1cecbd3543e8e",
+        "pass": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "notes",
+        "beforeSha256": "39ddb5ccd1111e615932103c7a33ff4bdb198c9485eebc465dbbee429a5035f7",
+        "afterSha256": "bba85db5f581cd96be04f15fcbe4011531cfa864bae12fda0eac6766494ed4d1",
+        "pass": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "pass": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "links",
+        "beforeSha256": "617c1d907e799754e8d193479e5b6e6f71377c0395726c1e8fe6bd4993a52aa5",
+        "afterSha256": "43609204a2a4095b37c5c05f968215bc6dae88f141816c0c5c4cf55062532046",
+        "pass": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "beforeSha256": "e131fa6acd96db256ca922d93d50c8fef8a07ea3e8e5b39cc71f212cf2261111",
+        "afterSha256": "ccb4b81c5299dce4897d621f823e833eba269ebd1eb12241c5bbbd2bcf32e516",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "allPass": true,
+    "legacyNoteClarifications": "Autophagy note 10 adds the independently verified RB1CC1/FIP200 relationship. Lipid note 1 preserves its full previous text and appends explicit target-interaction, uptake-attribution and unknown-allele limits. All other old note/link strings remain in order."
+  },
+  "newRecords": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "newRegistrations": 0,
+  "noProductCodeOrArtworkChanged": true,
+  "noShortSummaryValueChanged": true
+}

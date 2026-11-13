@@ -1,0 +1,3446 @@
+{
+  "dataCommit": "3bd262c3b555c188c8203e4fffef762a7a02a551",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.23
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.85
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.03
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 313.75
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "allCommittedDataFilesByteIdenticalToFullGateInputs": true,
+  "wholeGraph": {
+    "dataCommit": "3bd262c3b555c188c8203e4fffef762a7a02a551",
+    "graphCount": 23091,
+    "changedIds": [
+      "autophagy",
+      "keap1-nrf2",
+      "lipid-metabolism-cancer",
+      "rtk-activation"
+    ],
+    "unchangedRecords": 23087,
+    "allGraphFingerprintsMatchGatedRuntime": true
+  },
+  "readers": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "autophagy",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/autophagy/",
+        "sha256": "b5676c508c92c77f4d42c319fc363eea74d0797ea4da5a3a828af32274382eb8",
+        "bytes": 58952,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "brd4",
+        "state": "registered-local-draft-graph",
+        "route": "/targets/brd4/",
+        "sha256": "0bfdc3a827417baf99180f2de80322c7751a07d9a5bff5806e50afaac4b3f2b4",
+        "bytes": 72860,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cfdna",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cfdna/",
+        "sha256": "a660526c77a6c26648cc51cdc4a8dc1be58084a8b0a55a949ad9a50da68dd5d0",
+        "bytes": 73144,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "chemical-probe",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/chemical-probe/",
+        "sha256": "d15b9ef589aa6c4ee19953b9d28616aa39adc7465e521e8e832453543c88635d",
+        "bytes": 25900,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "controlled-perturbation",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/controlled-perturbation/",
+        "sha256": "4e986ebdbc0acdba3c166d4ddccedc636328da0bfec456a279c107ff5ab412d7",
+        "bytes": 31480,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ctdna-units",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/ctdna-units/",
+        "sha256": "f16034db0ba3745b8220d5e8487c2f6902f47f751479ebcddfc3f52e6861fa71",
+        "bytes": 42414,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/er-stress-and-unfolded-protein-response/",
+        "sha256": "87dc55b7bac29b762a9981bf46a1544e9be0b654957f0d9d345c8846a44b24c2",
+        "bytes": 20737,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/ferroptosis-cell-death/",
+        "sha256": "c930702c51c1837fb3625dd4191035928a8a05a50043df5a4fc3893cfaa199fa",
+        "bytes": 53181,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "gene-expression-signatures",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/gene-expression-signatures/",
+        "sha256": "d574551b9290eba000c328df7a0f33ee603b1a0c667582cad27311dc2308ed95",
+        "bytes": 19150,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "keap1-nrf2",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/keap1-nrf2/",
+        "sha256": "e390439bd8b681aea81d0c487ba6f1e8c13a22c9cf137b09c65f24bea07f5b4a",
+        "bytes": 58046,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/lipid-metabolism-cancer/",
+        "sha256": "922e7dc5f60aea83f11c1e20a3dd11244d1349862a8e176c714446473558f6ba",
+        "bytes": 62216,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "mrd-testing",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/mrd-testing/",
+        "sha256": "76ba64fb6dcf9294475e902474e1f80c73d0d97dcef3b10dbf3cef344166d13d",
+        "bytes": 186882,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "notch",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/notch/",
+        "sha256": "96ab2593db3c2cebb5652d5121f002c60fc24be5a867b305f874f5afc585a6d6",
+        "bytes": 55123,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/nutrient-sensing-ampk/",
+        "sha256": "438c341ff2656a712632f6a17d5ec27234189b8ae8a4aed668272289bb305f26",
+        "bytes": 20524,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/oxidative-phosphorylation/",
+        "sha256": "bddb7e0801f2e6decb7e3d8b67132c23b105762d65ab678c421052405580db88",
+        "bytes": 26804,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "phosphorylation",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/phosphorylation/",
+        "sha256": "9bd61c77310b9f2c867c888b8bbf95fe224a14b7eea9ba3fd7457a7c81638d6f",
+        "bytes": 24414,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/pi3k-akt-mtor/",
+        "sha256": "74fb7c5d6065673bf60299d5e3ef5b1802ade06098ab49f1420c2165b393f55d",
+        "bytes": 100908,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/reactive-oxygen-species/",
+        "sha256": "0c25cfb6f60966a5b009131280f52e29f43edb8fe05c0c672a493af76dbf77d2",
+        "bytes": 17042,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "rtk-activation",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/rtk-activation/",
+        "sha256": "29f2cb5dee277893cb78bdeb4c71bf38adfecf87ee00295a6baca17d65e2bd28",
+        "bytes": 115033,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tumour-hypoxia",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/tumour-hypoxia/",
+        "sha256": "45da1888e451d0860ad861498c686105d082c9ae857b7ae3d703086e3d197867",
+        "bytes": 25404,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tumour-informed-assay",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/tumour-informed-assay/",
+        "sha256": "f09d5a1fd8beb1d5a52dee967e59ca15a0f3d95e6cdc1b5c5a170891943804b8",
+        "bytes": 87083,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/ubiquitin-proteasome-system/",
+        "sha256": "b66c5e63646eb381ab5bccea7035a279cf71b3bc71afca4a820a7b427fd5130f",
+        "bytes": 72885,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vus",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vus/",
+        "sha256": "a9cfa9e8f8683318ea9b92c79f40b126fca36cfe3f55bef2c81f2747b9a08ab5",
+        "bytes": 40828,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "warburg-effect",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/warburg-effect/",
+        "sha256": "aef70eeb9ac450c135df91e210fb130acff992be632ccaafa52df34fbb174be5",
+        "bytes": 27744,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "wnt",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/wnt/",
+        "sha256": "70a3148cf7e9618039fbc21acc7d7220094f36e76888889b9f55d5c209ddf4e6",
+        "bytes": 70013,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 25,
+    "exactAnchors": 82,
+    "exactParagraphChecks": 90,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "A1",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "A10",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "A4",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "A5",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "A7",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "A8",
+        "recordId": "autophagy",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "AM1",
+        "recordId": "nutrient-sensing-ampk",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "AM2",
+        "recordId": "nutrient-sensing-ampk",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "AM3",
+        "recordId": "nutrient-sensing-ampk",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "B3",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "B4",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "B5",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Bcompare",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Bfamily",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Bfiction",
+        "recordId": "brd4",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "C0",
+        "recordId": "controlled-perturbation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "C1",
+        "recordId": "controlled-perturbation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "C3",
+        "recordId": "controlled-perturbation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "C4",
+        "recordId": "controlled-perturbation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "C5",
+        "recordId": "controlled-perturbation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "CF1",
+        "recordId": "cfdna",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "CF3",
+        "recordId": "cfdna",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "CU",
+        "recordId": "ctdna-units",
+        "exactParagraphs": 2,
+        "pass": true
+      },
+      {
+        "anchorId": "E0",
+        "recordId": "er-stress-and-unfolded-protein-response",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "E2",
+        "recordId": "er-stress-and-unfolded-protein-response",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "ES",
+        "recordId": "er-stress-and-unfolded-protein-response",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "F2",
+        "recordId": "ferroptosis-cell-death",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "F3",
+        "recordId": "ferroptosis-cell-death",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "F6",
+        "recordId": "ferroptosis-cell-death",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "FS",
+        "recordId": "ferroptosis-cell-death",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "GS6",
+        "recordId": "gene-expression-signatures",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "GS8",
+        "recordId": "gene-expression-signatures",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "H1",
+        "recordId": "tumour-hypoxia",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "H4",
+        "recordId": "tumour-hypoxia",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "K2",
+        "recordId": "keap1-nrf2",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "K4",
+        "recordId": "keap1-nrf2",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Kdirection",
+        "recordId": "keap1-nrf2",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "L0",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "L1",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "L3",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "L4",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "L6",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "LS",
+        "recordId": "lipid-metabolism-cancer",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "M1",
+        "recordId": "pi3k-akt-mtor",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "M2",
+        "recordId": "pi3k-akt-mtor",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "MR0",
+        "recordId": "mrd-testing",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "MR1",
+        "recordId": "mrd-testing",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "MS",
+        "recordId": "pi3k-akt-mtor",
+        "exactParagraphs": 4,
+        "pass": true
+      },
+      {
+        "anchorId": "Nfiction",
+        "recordId": "notch",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Nmechanism",
+        "recordId": "notch",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Nsender",
+        "recordId": "notch",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "O0",
+        "recordId": "oxidative-phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "O3",
+        "recordId": "oxidative-phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "O4",
+        "recordId": "oxidative-phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "O6",
+        "recordId": "oxidative-phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "OS",
+        "recordId": "oxidative-phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "PH1",
+        "recordId": "phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "PHS",
+        "recordId": "phosphorylation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "PS",
+        "recordId": "chemical-probe",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "R0",
+        "recordId": "rtk-activation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "R1",
+        "recordId": "rtk-activation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "RO0",
+        "recordId": "reactive-oxygen-species",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "RO1",
+        "recordId": "reactive-oxygen-species",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "RO2",
+        "recordId": "reactive-oxygen-species",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Rengage",
+        "recordId": "rtk-activation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "Rfiction",
+        "recordId": "rtk-activation",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T0",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T1",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T2",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T3",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T4",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T5",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "T6",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "TIS",
+        "recordId": "tumour-informed-assay",
+        "exactParagraphs": 2,
+        "pass": true
+      },
+      {
+        "anchorId": "U2",
+        "recordId": "ubiquitin-proteasome-system",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "U4",
+        "recordId": "ubiquitin-proteasome-system",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "VUS",
+        "recordId": "vus",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "W0",
+        "recordId": "wnt",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "W1",
+        "recordId": "wnt",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "WA0",
+        "recordId": "warburg-effect",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "WA3",
+        "recordId": "warburg-effect",
+        "exactParagraphs": 1,
+        "pass": true
+      },
+      {
+        "anchorId": "WS",
+        "recordId": "wnt",
+        "exactParagraphs": 4,
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticExports": {
+    "records": 25,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "autophagy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "autophagy",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "brd4",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cfdna",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chemical-probe",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chemical-probe",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chemical-probe",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "controlled-perturbation",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene-expression-signatures",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "keap1-nrf2",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrd-testing",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "notch",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "phosphorylation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "phosphorylation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "phosphorylation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "phosphorylation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rtk-activation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-hypoxia",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tumour-informed-assay",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vus",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vus",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "warburg-effect",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "wnt",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "autophagy.json",
+        "bytes": 14129,
+        "sha256": "83f85cd153289e78dec3b28eba01ff23a6e33956fbc56ef9e564edf2748cb070"
+      },
+      {
+        "file": "autophagy.md",
+        "bytes": 12185,
+        "sha256": "d60607666248553110e77e5a05f586b5729fe3bb943fc42041553c4b79dd7058"
+      },
+      {
+        "file": "brd4.json",
+        "bytes": 12087,
+        "sha256": "799ed9bd1e6d326d56bd03a30de0e6742b9dc3ae41ec2c3ede6806fce6c535c2"
+      },
+      {
+        "file": "brd4.md",
+        "bytes": 9269,
+        "sha256": "f0569e78a5f39c205b0afe6062b3de815a1ef6261ea1236059b338a05d17f3b3"
+      },
+      {
+        "file": "cfdna.json",
+        "bytes": 23228,
+        "sha256": "380ebe109319d19acb9336f0e7da99099127fb8812d8bb707063ae7c4c9af5b0"
+      },
+      {
+        "file": "cfdna.md",
+        "bytes": 18362,
+        "sha256": "96d7f7ca9d3de40dbf2dfe0d05903042f62bac6bd8400ae6fdb3331c9d3dbb28"
+      },
+      {
+        "file": "chemical-probe.json",
+        "bytes": 7058,
+        "sha256": "299083ec9e0bb67dc018bce36aa8d6e3c6437d38757a5892f04733211d21f276"
+      },
+      {
+        "file": "chemical-probe.md",
+        "bytes": 6642,
+        "sha256": "9760cc8de4fcb4f2eb044eccd31f69ec60f28e5684ae0dd2f007734fe2b8419a"
+      },
+      {
+        "file": "controlled-perturbation.json",
+        "bytes": 7795,
+        "sha256": "87b4d7e085b7873bbfb7990467b2e4ea6797192ea58e21a2912ae6a5ca405472"
+      },
+      {
+        "file": "controlled-perturbation.md",
+        "bytes": 7345,
+        "sha256": "ba8ab6e4bd1cc861277a16dcef00747d4f4db00e5d9a2c54c56057c3c9a9c808"
+      },
+      {
+        "file": "ctdna-units.json",
+        "bytes": 9551,
+        "sha256": "1b9d0bf7e97218bc8b4ca4e5f064d04962109afc05861ea250ccb31fad2422c7"
+      },
+      {
+        "file": "ctdna-units.md",
+        "bytes": 8923,
+        "sha256": "55cb25ecdaf3ed66f52844c7dbdc1678cb2d89a7753b07930f4963f3fab08137"
+      },
+      {
+        "file": "er-stress-and-unfolded-protein-response.json",
+        "bytes": 3827,
+        "sha256": "f540fda3c1a713ef3a7633772f22077b4a24e4c772e8353269df000be8710819"
+      },
+      {
+        "file": "er-stress-and-unfolded-protein-response.md",
+        "bytes": 3585,
+        "sha256": "d41d94ff27cca0f442d1d96b4f6a92965c2c5ce5a4d9df3d793e62937f77f13d"
+      },
+      {
+        "file": "ferroptosis-cell-death.json",
+        "bytes": 9555,
+        "sha256": "074ffae22b11eb881b1cc90034612396b132144987a964d74b86fca260968c99"
+      },
+      {
+        "file": "ferroptosis-cell-death.md",
+        "bytes": 7670,
+        "sha256": "45992acf908f74dca923e52012338ff378e3003a781129273138db9d50ee9fae"
+      },
+      {
+        "file": "gene-expression-signatures.json",
+        "bytes": 3936,
+        "sha256": "c0f11166c0044042cf7fd7ee30c16d57afbef8cc9b928ad9eb0e7940a8cec1e0"
+      },
+      {
+        "file": "gene-expression-signatures.md",
+        "bytes": 3731,
+        "sha256": "bf13811b38d12d6bddd6f6d014d06e51bed5520446ac84d2483f1d4b0fe050c8"
+      },
+      {
+        "file": "keap1-nrf2.json",
+        "bytes": 10865,
+        "sha256": "be7bb2fff9b3bde1c0ca87dc90b1610391eb26d3cc6e2720de16e7d0aec80732"
+      },
+      {
+        "file": "keap1-nrf2.md",
+        "bytes": 8858,
+        "sha256": "0579fd1dfbf881a665871e336ad3f1d66a85ae979fa88e94708ad667ef4d3ff3"
+      },
+      {
+        "file": "lipid-metabolism-cancer.json",
+        "bytes": 13272,
+        "sha256": "b30e136c90ba008974c31f6686b6aa25d73ca53af3e6c2fdd13eed12e4518e58"
+      },
+      {
+        "file": "lipid-metabolism-cancer.md",
+        "bytes": 10193,
+        "sha256": "4aec401173723c5b2c2b8715652de98e77e60ebf2463dd92875aa3eeacca9228"
+      },
+      {
+        "file": "mrd-testing.json",
+        "bytes": 69413,
+        "sha256": "c4da365492b3bf7be9e0cdd1c28be4d13964d8f9a127a4c0f6f0a7f59e0462a5"
+      },
+      {
+        "file": "mrd-testing.md",
+        "bytes": 50694,
+        "sha256": "19ae7ec4a077407ff56f4554b5405f96d86a0623e780d5a90d1db02f3fee34fb"
+      },
+      {
+        "file": "notch.json",
+        "bytes": 9789,
+        "sha256": "9dbf0be097846b9ac55e2a5c643113b881cb11e413bb80ef211c004219e02c4b"
+      },
+      {
+        "file": "notch.md",
+        "bytes": 7499,
+        "sha256": "899bb0a40382a01339b37f2d6ee297e66fe78c06a03ba06be6d459f0b3ccd9a1"
+      },
+      {
+        "file": "nutrient-sensing-ampk.json",
+        "bytes": 3391,
+        "sha256": "8f7de935327f84c287d99d0163c5f0406fc1dc834df00babf1ad6d8c2fbdda53"
+      },
+      {
+        "file": "nutrient-sensing-ampk.md",
+        "bytes": 3178,
+        "sha256": "77bf7b2a2e42d24fa90092d5b9b0919566578c0928d79c3856b40be8b282083d"
+      },
+      {
+        "file": "oxidative-phosphorylation.json",
+        "bytes": 8733,
+        "sha256": "003f04a3a8f5fb8299313b970160727cf48907ff94795ae211c0dfc2c19dc5c9"
+      },
+      {
+        "file": "oxidative-phosphorylation.md",
+        "bytes": 8408,
+        "sha256": "c387c3e7c836d3a79b898a573d5106f997c8192cf23038e5eaebe001abfa1c8e"
+      },
+      {
+        "file": "phosphorylation.json",
+        "bytes": 3861,
+        "sha256": "31f2329ca8c8889f7db605660e64aa51d163abac8ff82caa4e96101c5422fbfd"
+      },
+      {
+        "file": "phosphorylation.md",
+        "bytes": 3197,
+        "sha256": "e9de819966a9212fbc0cee4cad3773527ec2e2b03c69ae2a43d32053405072fd"
+      },
+      {
+        "file": "pi3k-akt-mtor.json",
+        "bytes": 27649,
+        "sha256": "46b4b22834af659cfda2f4e040c4df259ede7d71e5485158b48f012900db8efd"
+      },
+      {
+        "file": "pi3k-akt-mtor.md",
+        "bytes": 20054,
+        "sha256": "3a5aaf95add0874f179f25118148fb3ef9321c42accf44521258862dbc069474"
+      },
+      {
+        "file": "reactive-oxygen-species.json",
+        "bytes": 3556,
+        "sha256": "f9a220d2eb4f8e939305b3f3f0b61177e6bd0bbab8cf04daf058b2aa6f1d3843"
+      },
+      {
+        "file": "reactive-oxygen-species.md",
+        "bytes": 3354,
+        "sha256": "dfdb8bcbb37c69f10599caa215826f4a01c60ccc9eaa442b66f6781d7ecf817c"
+      },
+      {
+        "file": "rtk-activation.json",
+        "bytes": 29817,
+        "sha256": "079ea26c47c8238ecfd976faf480a07afe32023e882ce56d0466c97581f505a5"
+      },
+      {
+        "file": "rtk-activation.md",
+        "bytes": 20873,
+        "sha256": "0fbc2be6d24bc6cde77cf9a7544ace4b9cdb31205b3ab5b713404d6d6ad32386"
+      },
+      {
+        "file": "tumour-hypoxia.json",
+        "bytes": 4828,
+        "sha256": "7ff590e74a988f5872f07943f7bae16a299a2b1d3bae253a45d2ef82e23faffc"
+      },
+      {
+        "file": "tumour-hypoxia.md",
+        "bytes": 4387,
+        "sha256": "5e2bd8427a91a2409d79c97b070b19ad8da2775d6bdf1f29592df038b0030184"
+      },
+      {
+        "file": "tumour-informed-assay.json",
+        "bytes": 18974,
+        "sha256": "0f993dc0a311f6890eeddab20f3f23c806feeefb934d722431dedcffcfaaaca1"
+      },
+      {
+        "file": "tumour-informed-assay.md",
+        "bytes": 14979,
+        "sha256": "a3ee67cd6895ab55ca1c0ea8da18b73d32872de960cf1f01d86c918443b76594"
+      },
+      {
+        "file": "ubiquitin-proteasome-system.json",
+        "bytes": 12290,
+        "sha256": "ac84416c67a87eab93043b6eabc2de0b7efc03d0637017e2473931abcf29b20e"
+      },
+      {
+        "file": "ubiquitin-proteasome-system.md",
+        "bytes": 8743,
+        "sha256": "23c0fe85996cf8bf730e1afc0156d3b99323cd35d8e6a181182d045c6d470314"
+      },
+      {
+        "file": "vus.json",
+        "bytes": 6098,
+        "sha256": "5449be78374eaf3b526279c3be5ea587cbf569be567008ea92ba20db61c5e2d3"
+      },
+      {
+        "file": "vus.md",
+        "bytes": 4487,
+        "sha256": "6bb7e53567519a6f2f5c6219de4f1018a9b515d73081df6356ba0f5a0bd01710"
+      },
+      {
+        "file": "warburg-effect.json",
+        "bytes": 5755,
+        "sha256": "e35ae9413ff16d1dcae618e3e5058068127c3ed62c257bce2b3f2727ee0800ab"
+      },
+      {
+        "file": "warburg-effect.md",
+        "bytes": 4706,
+        "sha256": "09632906842a271a876a4ad2ff7aa865c71b0b7613ee4baf14d0e04c6b842587"
+      },
+      {
+        "file": "wnt.json",
+        "bytes": 17320,
+        "sha256": "ec2d893156253d8aa6be389969e88f2db2c58022ed5dfef7baf310ec51b8c49b"
+      },
+      {
+        "file": "wnt.md",
+        "bytes": 12677,
+        "sha256": "117c37fe6d36568695942462a71a11af4e0ddcea0abf04c65be4c02509e38af6"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 225,
+    "texts": 34,
+    "fallbacks": 191,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "autophagy",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "autophagy",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "brd4",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cfdna",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemical-probe",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "controlled-perturbation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "er-stress-and-unfolded-protein-response",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ferroptosis-cell-death",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene-expression-signatures",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "keap1-nrf2",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "lipid-metabolism-cancer",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrd-testing",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "notch",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nutrient-sensing-ampk",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "phosphorylation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "reactive-oxygen-species",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rtk-activation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-hypoxia",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tumour-informed-assay",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ubiquitin-proteasome-system",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vus",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "warburg-effect",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "wnt",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "checks": [
+      {
+        "id": "known-target-opportunities",
+        "actual": 211500,
+        "expected": 211500,
+        "pass": true
+      },
+      {
+        "id": "theoretical-ppm-rounded",
+        "actual": 4.7,
+        "expected": 4.7,
+        "pass": true
+      },
+      {
+        "id": "AF-percent-to-ppm",
+        "actual": 2.4,
+        "expected": 2.4,
+        "pass": true
+      },
+      {
+        "id": "SV-ppm-to-AF-percent",
+        "actual": 0.00047,
+        "expected": 0.00047,
+        "pass": true
+      },
+      {
+        "id": "single-locus-expected",
+        "actual": 0.045,
+        "expected": 0.045,
+        "pass": true
+      },
+      {
+        "id": "single-locus-no-target-round",
+        "actual": 0.956,
+        "expected": 0.956,
+        "pass": true
+      },
+      {
+        "id": "alternate-explicit-model-expected",
+        "actual": 0.45,
+        "expected": 0.45,
+        "pass": true
+      },
+      {
+        "id": "alternate-twenty-locus-expected",
+        "actual": 9.0,
+        "expected": 9,
+        "pass": true
+      },
+      {
+        "id": "oxygen-A-normalised",
+        "actual": 60.0,
+        "expected": 60,
+        "pass": true
+      },
+      {
+        "id": "oxygen-B-normalised",
+        "actual": 60.0,
+        "expected": 60,
+        "pass": true
+      },
+      {
+        "id": "A-inhibitor-sensitive-O2",
+        "actual": 30,
+        "expected": 30,
+        "pass": true
+      },
+      {
+        "id": "B-inhibitor-sensitive-O2",
+        "actual": 20,
+        "expected": 20,
+        "pass": true
+      }
+    ],
+    "allPass": true,
+    "scope": "Independent arithmetic from stated source or fictional premises. AF, tumour fraction, oxygen rates, ATP production and killed fractions remain distinct; no clinical sensitivity is inferred."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual graph, EntityDetail SSR, static JSON/Markdown/OpenAPI/context and summary selectors, with full gates. No full Next production build, browser hydration, deployment or independent acceptance."
+}

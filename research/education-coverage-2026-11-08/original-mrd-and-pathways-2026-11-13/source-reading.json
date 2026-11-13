@@ -1,0 +1,1074 @@
+{
+  "checkedOn": "2026-11-13",
+  "baseCommit": "24880eb657754bac06498a3b1f2cc4d41975aa1b",
+  "sourceFirstFreeze": {
+    "frozenAt": "2026-11-13T12:37:24.833810+00:00",
+    "priorDomainAndOwnerContextKnown": true,
+    "noBlindReviewClaim": true,
+    "currentCohortOwnerFieldsOpenedBeforeFreeze": false,
+    "sourceFirst": true,
+    "fullBodiesRead": {
+      "original": 6,
+      "later": 6
+    },
+    "originalSections": 68,
+    "laterSections": 70,
+    "distinctBlocks": 432,
+    "roles": {
+      "teaching-requirement": 306,
+      "structural-context": 1,
+      "recap-or-routing-awaiting-unique-content-check": 53,
+      "source-scope-metadata": 72
+    },
+    "countsByPhase": {
+      "original": {
+        "blocks": 240,
+        "teachingBlocks": 171
+      },
+      "later": {
+        "blocks": 244,
+        "teachingBlocks": 176
+      }
+    },
+    "files": {
+      "source-first-unit-inventory.json": "581554a75053fbc11375dc4b6b916074fc0f7f7d56bcbda17d5134e8dae8bda7",
+      "source-first-section-map.json": "65a90e6b7adccde32cdf72d85ae37c8c2505e709bd04b6e61cad1e43891dbc9d",
+      "source-exclusions.json": "d8da10127c5e2bb4958222cf25caaa7e58748030ac15b9dcf46e409fdb74a37e"
+    },
+    "sourceHashes": {
+      "original:wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-mrd-assay.md": "6ff2dc13625796a087c43c606417d98c19ff9b495ad5cd8c349d3ad289c4b048",
+      "original:wiki/education/molecular-profiling/evee-pathways/01-autophagy-and-proteostasis.md": "5a5a3e7eaa1f1e36976270f7a597e4631295f78e52c82e01d023c23ebec6a125",
+      "original:wiki/education/molecular-profiling/evee-pathways/02-lipid-and-mtor.md": "d33ea7da2c892c822f70f69a64f9d110e52168d9f0b7c246cbc7de01270ae4bb",
+      "original:wiki/education/molecular-profiling/evee-pathways/03-notch-wnt-and-fgfr.md": "1cc733e2f228726053a7a292a8004a00d74930580dc7db90c744c4dc317170f2",
+      "original:wiki/education/molecular-profiling/evee-pathways/04-cul3-nrf2-ferroptosis-and-bet.md": "63f4848331e991aa8b9c98c8b920ab5009b9123e4df65e45bef4ff1dd9dde3a7",
+      "original:wiki/education/molecular-profiling/evee-pathways/05-oxidative-metabolism-and-stress.md": "6ae704d755f0c50b51cdddf877b7b508019a8c925a57f4516c9b6dbe756ee102",
+      "later:wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-vs-tumor-naive-mrd-assays.md": "f30ba5cd7ed9a0912bdb4832657faa845567905b393e23abc9a5ef30bd3dcd27",
+      "later:wiki/education/guides/from-variant-to-drug/05-autophagy-flux-and-dependence.md": "d1f73e0e511f8d75e7fbe228df7bef29a5c8cae4e3c31761a0836f5d81864aa8",
+      "later:wiki/education/guides/from-variant-to-drug/08-test-a-supply-dependence-with-rescue.md": "f222b65a785abc8ee89b50393852e152c03a8ad67fdf8232d687a6b4cf0850a1",
+      "later:wiki/education/guides/from-variant-to-drug/09-locate-the-active-signaling-step.md": "203e00daa6cc5d23a86ac336b6982306dc7c400b34e384633dded72cf4219076",
+      "later:wiki/education/guides/from-variant-to-drug/10-test-the-direction-of-a-stress-defense.md": "88340b4f583fd5c789c42dc98e954fa7188cf21a5f5327fbecdd1bac73485cba",
+      "later:wiki/education/guides/from-variant-to-drug/11-measure-energy-and-damage-separately.md": "b493913fdd36a2eb6e98d0e3e92562d1b26ca9fd916fce143e62fcb16cea205a"
+    },
+    "interpretation": "Every source block is retained. Recap roles are provisional until a unique-content check; no semantic or integration credit."
+  },
+  "versions": [
+    {
+      "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-mrd-assay.md",
+      "title": "Tumor-informed versus tumor-naive residual-disease assays",
+      "sourceSha256": "6ff2dc13625796a087c43c606417d98c19ff9b495ad5cd8c349d3ad289c4b048",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "07d91cb70052fe6afd1591e23be950eb730f78f1bc694c0896138e6ddcdecddc"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "69bfe3e41d578d6d90831c8f426161837b8ad8fddbc809beb2b20e6560464b3b"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "b59bce8026441e6abfd6a56c728876a8c8cec0ddda766eee6cb4b68a568c291e"
+        },
+        {
+          "ordinal": 3,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "514817d8b9e128cd15ffaf082466a09a97fa5043f7448277b191e19c41d2e161"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "cd3810d63d97b8dcad0e80c42e67295fa2f90e6ae89171a367d092c25c62d512"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "a2101e5b392c3577d9cd4719cc150462b4cd8e4202b8d805c3229d4bb9246578"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "29029289f580d0bc9c8601095d0d6350e70e939cb0c11289c3e612d926f64315"
+        },
+        {
+          "ordinal": 7,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "1fda52066d15a041c602323c334280272700ab5323819239efd4a91b122c66a1"
+        },
+        {
+          "ordinal": 8,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "33f01076018bcc267811863a939d2c5618baad251af4caa85327bc108af18c13"
+        },
+        {
+          "ordinal": 9,
+          "kind": "practice-or-worked-example",
+          "sha256": "0fad11434645529b1686c0b67f0fdd140ecbc2e64eed63af09a0ac22e99a75bc"
+        },
+        {
+          "ordinal": 10,
+          "kind": "practice-or-worked-example",
+          "sha256": "72f0b19e86ac7a6e16bd30b610a258deae0e3d301b6ee4a90bacda0c3c57ddf8"
+        },
+        {
+          "ordinal": 11,
+          "kind": "additional-teaching",
+          "sha256": "8a01e5d1cae1bdc40e287ac8a4aba77bb6cdac7b00dbee0f296ed0ba744635bb"
+        },
+        {
+          "ordinal": 12,
+          "kind": "source-scope",
+          "sha256": "0add136625bbc5525491ec1e4f0337d6971912a5be1a9877d8c9653b741a52ce"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/00-tumor-informed-mrd-assay.md",
+      "bytes": 12443,
+      "gitBlob": "fecabe54a04e094dc3bf8ffabd33cda683252bf5"
+    },
+    {
+      "path": "wiki/education/molecular-profiling/evee-pathways/01-autophagy-and-proteostasis.md",
+      "title": "Autophagy and proteostasis: amount, flow, and dependence",
+      "sourceSha256": "5a5a3e7eaa1f1e36976270f7a597e4631295f78e52c82e01d023c23ebec6a125",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "dc1e71333895f5633e824dd6f30ae341ddad57e820ae62a4e4b5f8203c80988b"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "7516e3db061cd5b0311279e694d2b696ecef926359a1c74b5db3994b70dcbc77"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "860d3c5e269b02ee44794fb11ff5eac16719d3652e216cb8e268559348850c39"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "ea20bb853e6a6f1215fd3af9e2b2ad0ac8f912a8ba5605f6f4b99672936fc2d6"
+        },
+        {
+          "ordinal": 4,
+          "kind": "practice-or-worked-example",
+          "sha256": "df1aac41aa9a5d9dae8b3bda152f0b5aa3496be6d041406a8b20781e8150e937"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "330679e5787332d7e7bcf9f4e553012fcde658520753a773a248e4ddb08910ba"
+        },
+        {
+          "ordinal": 6,
+          "kind": "practice-or-worked-example",
+          "sha256": "0aa5aeba61caa21a9d87a0124c6120f61f7e4f4fb92dfd2a7152a92cf1608e5c"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "2ce26893b55392adeb1e67fec906f7cc76d06454a5545220c9afc3b3c4b3c2ce"
+        },
+        {
+          "ordinal": 8,
+          "kind": "additional-teaching",
+          "sha256": "afae03eb20b28ae3b81e2dd4806f89dc0345146db593e2a4a02ee2d902f90821"
+        },
+        {
+          "ordinal": 9,
+          "kind": "source-scope",
+          "sha256": "4f545dff3deb4abadbf1398d604fa0513f2b40df1a5184b80993e89029c950de"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/01-01-autophagy-and-proteostasis.md",
+      "bytes": 8925,
+      "gitBlob": "d946eed17f69f44c1ceef71662de21204d6b4b3b"
+    },
+    {
+      "path": "wiki/education/molecular-profiling/evee-pathways/02-lipid-and-mtor.md",
+      "title": "Lipid supply and mTOR: measuring resource control",
+      "sourceSha256": "d33ea7da2c892c822f70f69a64f9d110e52168d9f0b7c246cbc7de01270ae4bb",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "24af46b66b611cf5135e97cabf478f992651be5c7edbb10d1951dae47282d968"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "dd1fa30e6dad4f27fd0cfa9fe948d4111f6ee24f866ba47170b1a449ae66663d"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "99047c7e62eb4871924ecea794d86e76580b5757b0fdfda4dc1bc21090040df7"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "b75f7497040687aac0c95230f356f50675e60bc801e646ed51edb5c0659798ec"
+        },
+        {
+          "ordinal": 4,
+          "kind": "practice-or-worked-example",
+          "sha256": "a99c58396f9bb7d0ccf82cfb3d755eb66f9708d0cb287495c6506e4eacf2b899"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "ac97ff53911285135e35ccd87c4822095267679abfe2ae87e5f68e67f594745e"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "085467d06e2bcab288a745769622f0b6b718495be0abb7fac6bc624db0172aa4"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "f6e3314ca3477a5f3c7cc6b22cd691a79c69a683a79c753bc106bc336c22157c"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "0a48761778a0f84d3b5a3e1833d9b6dcee9f4dbda169832af62ef79ca9551365"
+        },
+        {
+          "ordinal": 9,
+          "kind": "additional-teaching",
+          "sha256": "44a119f1f21b3c41cfc8c39e5030d9f3e6e4e64fe842001148afe00b969327be"
+        },
+        {
+          "ordinal": 10,
+          "kind": "source-scope",
+          "sha256": "6835c230c1a35199f578560908203c98b0a973533010f6555a8b2a7b89e0db74"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/02-02-lipid-and-mtor.md",
+      "bytes": 9267,
+      "gitBlob": "3d258abf8e5fbeb3bb82ace3110ee4a29e8a0be6"
+    },
+    {
+      "path": "wiki/education/molecular-profiling/evee-pathways/03-notch-wnt-and-fgfr.md",
+      "title": "Notch, Wnt, and FGFR: locate the signal before choosing a target",
+      "sourceSha256": "1cc733e2f228726053a7a292a8004a00d74930580dc7db90c744c4dc317170f2",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "5232a9284c2306c09635a236386693826f302f26e8d391f66f0611be11c4f967"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "a7cce04f63a725e23f86685bb9a66d08681f05c9b2d44aac928eedcc88ffd221"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "d28acb3ac3b7a8bc4bf673c15f12f7776bffe6cab3fc4e5db0e8e0af2cf4c252"
+        },
+        {
+          "ordinal": 3,
+          "kind": "practice-or-worked-example",
+          "sha256": "6091118e7367ece4cd40fab8ef79be5d48f2832ea52273ce7a495d8621743768"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "19009118ca1d973e4a80334af12bb25281f87c3dc0e1670878bf550f9f406200"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "7d8fcb419ef2e86c63bdfeb1468149c8482e5f508389bbbecfb95b70e992f276"
+        },
+        {
+          "ordinal": 6,
+          "kind": "practice-or-worked-example",
+          "sha256": "e124abf20c94ca06a4896afe5a8e031c623ff49b9335af58913511643ea1a06f"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "e3499fb75035f31444b8044b8a89cf2e7898764cc0db43aa63d100842948b703"
+        },
+        {
+          "ordinal": 8,
+          "kind": "additional-teaching",
+          "sha256": "772ae82f3460045f88a3359f6d9d99276637adf29b96596b8df1c3e399d5cf7c"
+        },
+        {
+          "ordinal": 9,
+          "kind": "source-scope",
+          "sha256": "ac30e3bf96db79037b56837dc8952a8795990c7c0479654a06651d7a94e621aa"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/03-03-notch-wnt-and-fgfr.md",
+      "bytes": 8377,
+      "gitBlob": "a9466d567b2433fec240bf24fb3a6cb7fc45a9d2"
+    },
+    {
+      "path": "wiki/education/molecular-profiling/evee-pathways/04-cul3-nrf2-ferroptosis-and-bet.md",
+      "title": "Stress defenses and chromatin readers: test the direction",
+      "sourceSha256": "63f4848331e991aa8b9c98c8b920ab5009b9123e4df65e45bef4ff1dd9dde3a7",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "6f057ac1f9cd69267e841a2d9eade5a60e07f5ba9a7594ab09a14de3cbe6612d"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "d012bd18f062f648b07755558861d00cdf84f488010356da30c2505a0d14ec0e"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "9d711208f2253e0e6785c7913a8249b7ab5734e889b5330587d70dab17bd5a3b"
+        },
+        {
+          "ordinal": 3,
+          "kind": "practice-or-worked-example",
+          "sha256": "d9b86e7dabe1a56ec747dd15148d683faf5853454ccd47d291305b86dd0faf09"
+        },
+        {
+          "ordinal": 4,
+          "kind": "practice-or-worked-example",
+          "sha256": "ddece5fca92e778f5145bb6a26e334e61e88b9a7aa51f70ee946552fa4b7cfab"
+        },
+        {
+          "ordinal": 5,
+          "kind": "practice-or-worked-example",
+          "sha256": "805eaa5874f071683179d4a132995d2ed5f61a0ea4caf641894f81339cca8f91"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "30168e3bd69689fd33992f3a04f395e18339d2cd98f16425caeec9e03ae983cc"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "c42075387d5a858c31e499ab2c0f661291240a66cf8672df064b4048a5451346"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "7c9f2b0d0a8a048e22e6d04692783cfec691fbfb36219d39438442f7c98ff5af"
+        },
+        {
+          "ordinal": 9,
+          "kind": "additional-teaching",
+          "sha256": "c7868b2cfcc7f695c3bbe9bdca0b12ae28a1e8ed9d1d7dfde23d75491e57233c"
+        },
+        {
+          "ordinal": 10,
+          "kind": "source-scope",
+          "sha256": "4f10e9bf3c4f944d1c81ca8ff57d3f551c589d14cd171addaae7705c0c6c58b3"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/04-04-cul3-nrf2-ferroptosis-and-bet.md",
+      "bytes": 8530,
+      "gitBlob": "7748823c0a6bcab3983c1cd572c744832239e316"
+    },
+    {
+      "path": "wiki/education/molecular-profiling/evee-pathways/05-oxidative-metabolism-and-stress.md",
+      "title": "Oxidative metabolism and stress: energy, damage, and dependence",
+      "sourceSha256": "6ae704d755f0c50b51cdddf877b7b508019a8c925a57f4516c9b6dbe756ee102",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "9fc081b75a2bb72a444f975a57db84971ed92e13fc2fe7c894ce5e5feb544be4"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "39bb25f5794ea6f7b5309dcf1de63b12ebef0567e43b3a5b5e3b4cd70a6ed48d"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "8c33468fbb8abb10f866080a42bcbe68a172bbef2d0cd8b9e3351842e00db1aa"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "8d1e33de33fc6d3e7738e297a596411eaf6d5a4fb1efbb5065049b41ae1a6f9f"
+        },
+        {
+          "ordinal": 4,
+          "kind": "practice-or-worked-example",
+          "sha256": "5b520e60e980c55248fcdee123aaf5223746d2abb7176fff31a0a136e859261b"
+        },
+        {
+          "ordinal": 5,
+          "kind": "practice-or-worked-example",
+          "sha256": "ed0331fc9ed073e5da2a8e2876e9dfaab0e45e3c6ba2989da74138dc6c8716d5"
+        },
+        {
+          "ordinal": 6,
+          "kind": "practice-or-worked-example",
+          "sha256": "fd8e01ad4ad79be7e9c9d2d507987372d5efac6f6f081344f4e5f93e3dc55ca4"
+        },
+        {
+          "ordinal": 7,
+          "kind": "additional-teaching",
+          "sha256": "ac8593ad58b43885ea48b878696876234ec0217cee925a03910a9775d4cdb4cd"
+        },
+        {
+          "ordinal": 8,
+          "kind": "additional-teaching",
+          "sha256": "613a8e76ec7d9593f06149db05d415ceca1df6eb9279a3571343dcd9e53c701b"
+        },
+        {
+          "ordinal": 9,
+          "kind": "practice-or-worked-example",
+          "sha256": "6083a02e8b9bda78ed853cca3dcce68bdc2b879f912729ec8dca8fc1b2be2edc"
+        },
+        {
+          "ordinal": 10,
+          "kind": "practice-or-worked-example",
+          "sha256": "4361a1cf50d7576d2fc59514593a7694e276f49ec743ecd4fb2667873dc51bf1"
+        },
+        {
+          "ordinal": 11,
+          "kind": "additional-teaching",
+          "sha256": "55c45e6ad4e4c01f02033fe4ec83dc574e1605819f89b5f3eb42eab1dc7e53f9"
+        },
+        {
+          "ordinal": 12,
+          "kind": "source-scope",
+          "sha256": "bde0aaf27531c059e2b7cbdcb87effa73e5db58dfc78b5fb214e1bf6bd08f6d0"
+        }
+      ],
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "file": "sources/original/05-05-oxidative-metabolism-and-stress.md",
+      "bytes": 11511,
+      "gitBlob": "627f436eba996752cf628f7821175239f095531e"
+    },
+    {
+      "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-vs-tumor-naive-mrd-assays.md",
+      "title": "Tumor-informed versus tumor-naive residual-disease assays",
+      "sourceSha256": "f30ba5cd7ed9a0912bdb4832657faa845567905b393e23abc9a5ef30bd3dcd27",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "f1dab27e650c13f70b57f2a1fb5229ab14a12efe5d9afdaa19d9c9bb6186bba3"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "d12771e57523e9af3ae36e465131060520b1032f8a8a21647a2c39298f6b39d0"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "74611538db9ced09f9a23690bbdcc2f49d4e1b93ab3e853ecae23a98d4f9275e"
+        },
+        {
+          "ordinal": 3,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "54cfc09b58baa406095f80182cf2124b6eba820c20cfb540b3b1469f7cd9be96"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "8ee45460a9ba9878a7f5137a4fa77a59f043646eb05c8cad5fe86457e408c627"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "b2ac6dbb14a384236d7a3dd6372169a9333779069a655a0b83a4dd531e9d8768"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "e955a92955edd4bdbadcf9b4d4b9ae5e95944a4639db741fb979f825e7c4afd0"
+        },
+        {
+          "ordinal": 7,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "e974ed74941214271aeaf6d3e1ced18a88af01b6df7d62ee24412be0175fe577"
+        },
+        {
+          "ordinal": 8,
+          "kind": "mechanism-measurement-interpretation",
+          "sha256": "8bf8779adc279386483fad674fe0e99757e4585641769979a07fc4590db3bf32"
+        },
+        {
+          "ordinal": 9,
+          "kind": "practice-or-worked-example",
+          "sha256": "e3745a3e9ee480bbb3f476707451b8f0507c82dc1659e011067b552c18b2a7a4"
+        },
+        {
+          "ordinal": 10,
+          "kind": "practice-or-worked-example",
+          "sha256": "446e244c39a13fefa972c3839ff8490b4624f36ce9301cb5c31094b149d5ff70"
+        },
+        {
+          "ordinal": 11,
+          "kind": "additional-teaching",
+          "sha256": "2b6cb327d90ba8976267021de114315c6534570b501eb41af4f0e9664460f642"
+        },
+        {
+          "ordinal": 12,
+          "kind": "source-scope",
+          "sha256": "f28d3035b7e6caeec8d72f67883672d1770866c334cb946de1fc224c6759fc5f"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/00-tumor-informed-vs-tumor-naive-mrd-assays.md",
+      "bytes": 12316,
+      "gitBlob": "734e4b0f2746879beaeb115c51ef65ec29b50446"
+    },
+    {
+      "path": "wiki/education/guides/from-variant-to-drug/05-autophagy-flux-and-dependence.md",
+      "title": "Autophagy: traffic, flow, and dependence",
+      "sourceSha256": "d1f73e0e511f8d75e7fbe228df7bef29a5c8cae4e3c31761a0836f5d81864aa8",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "fe3289ec6f13e42b744cb1441ede57796970265e06280d12a687ba6319a7f390"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "2f914d5aa59272cec088191475bc986378d7f25a7da87e19f13722024e933579"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "5f81eed07fbbc7772571edded69f006b04a92c333bc585d2253d1bc41bd677ce"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "cde8ccf9cdc4b7203d011cdf43ef4b88cb8b4f862e666960ad48a4f3812a3c37"
+        },
+        {
+          "ordinal": 4,
+          "kind": "practice-or-worked-example",
+          "sha256": "08bf8fa1df1fc1ffcdf1d0158043cde174f672e4edeaf0b626e98c2e60fc0f49"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "4b8207bf8545f798c63e2fb38cd3bc329a8b54ea00ea06c0bd2ad9aaee2c1852"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "f6d1803fa83a35137ac93dfc8520cc98aa4e31aa4dd6b65d305d1971a089e1c5"
+        },
+        {
+          "ordinal": 7,
+          "kind": "additional-teaching",
+          "sha256": "04e9aa406c3e0dfae6be38eaeab2c1e9d628f8ab7c11a89a49fbb594082cfe01"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "db2ff3ef0c442909a2aa1de71fa99c8aaee6d75d7d089ced7879fb1aeb3877cf"
+        },
+        {
+          "ordinal": 9,
+          "kind": "practice-or-worked-example",
+          "sha256": "88e1cdad2d73c287a5f02b94cbb943160f4169325ed3e034d08530311cbe7f41"
+        },
+        {
+          "ordinal": 10,
+          "kind": "additional-teaching",
+          "sha256": "065ab21b9fbe1ef8a5364d53bcdfdb26d6eef3695b3d720b564de756512d7d43"
+        },
+        {
+          "ordinal": 11,
+          "kind": "source-scope",
+          "sha256": "9b1f2ff65f6d5727056c16339273bf4bff6245da98c1950af8efde6813d76d30"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/01-05-autophagy-flux-and-dependence.md",
+      "bytes": 11309,
+      "gitBlob": "dec05fdcab466f488375220f9fdbc663e6e033d7"
+    },
+    {
+      "path": "wiki/education/guides/from-variant-to-drug/08-test-a-supply-dependence-with-rescue.md",
+      "title": "Test a supply dependence with a rescue experiment",
+      "sourceSha256": "f222b65a785abc8ee89b50393852e152c03a8ad67fdf8232d687a6b4cf0850a1",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "29a3cfa2e39c3f8ceeb0a5c7cefc8438ded471ad0fe986d40c9b06cb36295c9c"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "66f4ee3b559395c9096cc2d888c09972a474ce39d8afcfe8958dc3caa4241b63"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "c0a4367ce3faabc7ea2c6338c8314d5d67a69e8fa13c7dc509d35208892b1bb2"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "614bbb83fb2123f5169f4d3474966c8786e53cab322ec3db7bb8390986553f69"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "c7147bc5aadb3323083c7072b9f57947041bb732721e2bf57a0cff42ea606ef2"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "41a0a466b4b940a36b2cdd71fe1141b78b48f9eef7397ae6f966cd966e587ee8"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "91e80c23e95200bb807ddb4d43fbc9d73af9a06107a811c45e821189b1ce7f70"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "610a522a6a9f65005d4227cd22bb387dc206adcf3ae60a3f5f7f7ce2bf2b5378"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "b3a704c3944ffece316da2f6e9a286d14e91d09d8f0d25fcc5b369771e187542"
+        },
+        {
+          "ordinal": 9,
+          "kind": "additional-teaching",
+          "sha256": "1736b7dc2d63e21e34568c3ff417a4cb85c746450c54b6c94b51bf12c4729b63"
+        },
+        {
+          "ordinal": 10,
+          "kind": "source-scope",
+          "sha256": "af91382c10eda30ef2d66830e350c3c8d6cccc62a258c5a073e4b55fc5f4073b"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/02-08-test-a-supply-dependence-with-rescue.md",
+      "bytes": 7591,
+      "gitBlob": "34e3d1a4dc5e36c8630ffdee43fd82c10232f2d6"
+    },
+    {
+      "path": "wiki/education/guides/from-variant-to-drug/09-locate-the-active-signaling-step.md",
+      "title": "Locate the active signaling step",
+      "sourceSha256": "203e00daa6cc5d23a86ac336b6982306dc7c400b34e384633dded72cf4219076",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "15e781d33fe5461e84f2b87ca4a2ba7df6982fa360c151c898e83adebd6627a6"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "44986438625751242038476dc95c13694aef99eb1952414648da4f1b2966c828"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "9ab0baeee9a45d8cdcbc6597673243cb25fbc288340cd09883f9ccff35062da4"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "178122a92de1bacdda520857e5ce235a6dfef028d3268a785a89c1a2191545c1"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "ebfe74ec66bdc81845fbd29d437e18ac45950044323e9c4bedac2b531c5a909a"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "c395698e0fa4673f2c7f81dca70e063eaf29af18f061d01979b7f39a7010849e"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "33e42152bff5dc0edc8f18ca261163da250736a7f425b1398153bb7b254da23a"
+        },
+        {
+          "ordinal": 7,
+          "kind": "additional-teaching",
+          "sha256": "0e1035c408260f847141da6ec75e0204c307185af063fe3faed5aee45ade7309"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "eec151d86a1fde7e9328ec3482e502f7a024b036796d40280e6ba191ad79659c"
+        },
+        {
+          "ordinal": 9,
+          "kind": "practice-or-worked-example",
+          "sha256": "61e702fafd08bdf5bd2a28dacffdc89956ba2994732c6b8fd92a6f09149a93c5"
+        },
+        {
+          "ordinal": 10,
+          "kind": "additional-teaching",
+          "sha256": "77a0770a07b63246d1cd0e8277eaf9c8ea833daed5601f890baffcaff666e921"
+        },
+        {
+          "ordinal": 11,
+          "kind": "source-scope",
+          "sha256": "fa442c7b05de91e7e4dff3711cea878b4650da7026edb21ff0243ad95d630148"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/03-09-locate-the-active-signaling-step.md",
+      "bytes": 8859,
+      "gitBlob": "5b2fe97256746c3a1728a32e17f4a1745ab60496"
+    },
+    {
+      "path": "wiki/education/guides/from-variant-to-drug/10-test-the-direction-of-a-stress-defense.md",
+      "title": "Test the direction of a stress defense",
+      "sourceSha256": "88340b4f583fd5c789c42dc98e954fa7188cf21a5f5327fbecdd1bac73485cba",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "a14fb5833896e0da23355fd7ab1d1c97de6102434a9bebb9757fa13af69c7134"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "e116abe538966b8a03c258cdd1ac813cc66df1e0e76ad4d243953cb4e7010490"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "72f6b5c16b92e964204ba6c745cc3d7d26f33f460a9b9bbe095fc8867c60b061"
+        },
+        {
+          "ordinal": 3,
+          "kind": "additional-teaching",
+          "sha256": "c565a7e89d246c1eb1fbb060c45b8af6cc3dde39f817f657b50763433adbae00"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "713361725b7cd38a87bb17f59b78dec8c53834a965690119dfe6adc1a5e470f4"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "18823495e6c192b70ac0907d221a713232094ea57f0f4db7e27537fa469cc6b2"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "c5a6cd25dba4858284bbaa0293bd984434049b47f0ff5dbb4a40b4564e402069"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "630e2c400ba3d3038addfa966fdd90d18214c6b349048dad277bba16f4da40f8"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "b0bdf0730f4c9a06d903801becca2f3f62e66fe2f93b4f59e715891e3bc9b278"
+        },
+        {
+          "ordinal": 9,
+          "kind": "additional-teaching",
+          "sha256": "cbab033d654004946a26a75081492f83627da640398706a38bc4cae397d99016"
+        },
+        {
+          "ordinal": 10,
+          "kind": "source-scope",
+          "sha256": "3a4b1e003731e4502e2c15639eec163abf56b32b32c99c8ecdd857503a74dca4"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/04-10-test-the-direction-of-a-stress-defense.md",
+      "bytes": 8477,
+      "gitBlob": "c46c8e0b8a8e0d36aa028ac6cb7372c095f552ae"
+    },
+    {
+      "path": "wiki/education/guides/from-variant-to-drug/11-measure-energy-and-damage-separately.md",
+      "title": "Measure energy and damage separately",
+      "sourceSha256": "b493913fdd36a2eb6e98d0e3e92562d1b26ca9fd916fce143e62fcb16cea205a",
+      "sections": [
+        {
+          "ordinal": 0,
+          "kind": "preamble",
+          "sha256": "8596c5d3974ce6f91175035ca7f6865d256fad7ee991d32db04996c534782c4f"
+        },
+        {
+          "ordinal": 1,
+          "kind": "additional-teaching",
+          "sha256": "d096cd7132795ec6475e90c3986a7b4428e2a5060ae757e2e274e88fb53412ea"
+        },
+        {
+          "ordinal": 2,
+          "kind": "additional-teaching",
+          "sha256": "3f5925a1938487ee90a3dcfd06c2506b882bd0811de05519cee4298d008d1458"
+        },
+        {
+          "ordinal": 3,
+          "kind": "practice-or-worked-example",
+          "sha256": "28bff031e0e3d70345e31f1e2972decc33500046d893091805c30e701697bbbd"
+        },
+        {
+          "ordinal": 4,
+          "kind": "additional-teaching",
+          "sha256": "7abb244fab95bd6c6d14234902150166fc019321c2e559edc42e68d5c919faca"
+        },
+        {
+          "ordinal": 5,
+          "kind": "additional-teaching",
+          "sha256": "4d9eeb8351e8ee1924867d835fd51529acbe968932ea54df1b190c9268d01864"
+        },
+        {
+          "ordinal": 6,
+          "kind": "additional-teaching",
+          "sha256": "90e68a17f000d756813acc3c493fc93a9a90d6f315a22ca701df223cf3aee802"
+        },
+        {
+          "ordinal": 7,
+          "kind": "practice-or-worked-example",
+          "sha256": "91ea1c9b1ca294414406cb781cdc71411811e7b27e25c14ebd567372c43d912a"
+        },
+        {
+          "ordinal": 8,
+          "kind": "practice-or-worked-example",
+          "sha256": "3eb49ed56051334ceca4f0db2c65f6cd41be8e2f25d0a3614b20889a7f8186a9"
+        },
+        {
+          "ordinal": 9,
+          "kind": "additional-teaching",
+          "sha256": "a78b50f0d14a12960657af5853baf49c025bc743b133d1c31657d993e8559fa7"
+        },
+        {
+          "ordinal": 10,
+          "kind": "source-scope",
+          "sha256": "6b9991f6bc20f4a6c812a2f80eae75b3b7dfc1e777797b88cd18270d76087c18"
+        }
+      ],
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "file": "sources/later/05-11-measure-energy-and-damage-separately.md",
+      "bytes": 9486,
+      "gitBlob": "1aa2a660880d18e45b8938ab4fb4649a6c275018"
+    }
+  ],
+  "pairs": [
+    {
+      "logicalLesson": "mrd-design",
+      "originalPath": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-mrd-assay.md",
+      "laterPath": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-vs-tumor-naive-mrd-assays.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 13,
+      "laterSections": 13,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": true,
+      "assessment": "Renamed MRD counterpart differs in navigation/link targets; both bodies freshly read."
+    },
+    {
+      "logicalLesson": "autophagy",
+      "originalPath": "wiki/education/molecular-profiling/evee-pathways/01-autophagy-and-proteostasis.md",
+      "laterPath": "wiki/education/guides/from-variant-to-drug/05-autophagy-flux-and-dependence.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 10,
+      "laterSections": 12,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": false,
+      "assessment": "Related later successor has substantial teaching changes. Both bodies were freshly read, and no theme-level equivalence closes the original. Existing later review points and limits remain unchanged."
+    },
+    {
+      "logicalLesson": "lipid-mtor",
+      "originalPath": "wiki/education/molecular-profiling/evee-pathways/02-lipid-and-mtor.md",
+      "laterPath": "wiki/education/guides/from-variant-to-drug/08-test-a-supply-dependence-with-rescue.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 11,
+      "laterSections": 11,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": false,
+      "assessment": "Related later successor has substantial teaching changes. Both bodies were freshly read, and no theme-level equivalence closes the original. Existing later review points and limits remain unchanged."
+    },
+    {
+      "logicalLesson": "notch-wnt-fgfr",
+      "originalPath": "wiki/education/molecular-profiling/evee-pathways/03-notch-wnt-and-fgfr.md",
+      "laterPath": "wiki/education/guides/from-variant-to-drug/09-locate-the-active-signaling-step.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 10,
+      "laterSections": 12,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": false,
+      "assessment": "Related later successor has substantial teaching changes. Both bodies were freshly read, and no theme-level equivalence closes the original. Existing later review points and limits remain unchanged."
+    },
+    {
+      "logicalLesson": "stress-defense",
+      "originalPath": "wiki/education/molecular-profiling/evee-pathways/04-cul3-nrf2-ferroptosis-and-bet.md",
+      "laterPath": "wiki/education/guides/from-variant-to-drug/10-test-the-direction-of-a-stress-defense.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 11,
+      "laterSections": 11,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": false,
+      "assessment": "Related later successor has substantial teaching changes. Both bodies were freshly read, and no theme-level equivalence closes the original. Existing later review points and limits remain unchanged."
+    },
+    {
+      "logicalLesson": "oxidative-stress",
+      "originalPath": "wiki/education/molecular-profiling/evee-pathways/05-oxidative-metabolism-and-stress.md",
+      "laterPath": "wiki/education/guides/from-variant-to-drug/11-measure-energy-and-damage-separately.md",
+      "relation": "candidate-renamed-successor; full-content reconciliation pending",
+      "laterAlreadyAssessedBeforeThisCohort": false,
+      "originalSections": 13,
+      "laterSections": 11,
+      "originalBodyReadInFull": true,
+      "laterBodyReadInFull": true,
+      "linkTargetNormalisedBodiesEqual": false,
+      "assessment": "Related later successor has substantial teaching changes. Both bodies were freshly read, and no theme-level equivalence closes the original. Existing later review points and limits remain unchanged."
+    }
+  ],
+  "sectionVerification": {
+    "versions": 12,
+    "sectionSignatures": 138,
+    "actualCoordinatorFunction": true,
+    "checks": [
+      {
+        "phase": "original",
+        "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-mrd-assay.md",
+        "sections": 13,
+        "exactMatch": true
+      },
+      {
+        "phase": "original",
+        "path": "wiki/education/molecular-profiling/evee-pathways/01-autophagy-and-proteostasis.md",
+        "sections": 10,
+        "exactMatch": true
+      },
+      {
+        "phase": "original",
+        "path": "wiki/education/molecular-profiling/evee-pathways/02-lipid-and-mtor.md",
+        "sections": 11,
+        "exactMatch": true
+      },
+      {
+        "phase": "original",
+        "path": "wiki/education/molecular-profiling/evee-pathways/03-notch-wnt-and-fgfr.md",
+        "sections": 10,
+        "exactMatch": true
+      },
+      {
+        "phase": "original",
+        "path": "wiki/education/molecular-profiling/evee-pathways/04-cul3-nrf2-ferroptosis-and-bet.md",
+        "sections": 11,
+        "exactMatch": true
+      },
+      {
+        "phase": "original",
+        "path": "wiki/education/molecular-profiling/evee-pathways/05-oxidative-metabolism-and-stress.md",
+        "sections": 13,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-vs-tumor-naive-mrd-assays.md",
+        "sections": 13,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/guides/from-variant-to-drug/05-autophagy-flux-and-dependence.md",
+        "sections": 12,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/guides/from-variant-to-drug/08-test-a-supply-dependence-with-rescue.md",
+        "sections": 11,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/guides/from-variant-to-drug/09-locate-the-active-signaling-step.md",
+        "sections": 12,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/guides/from-variant-to-drug/10-test-the-direction-of-a-stress-defense.md",
+        "sections": 11,
+        "exactMatch": true
+      },
+      {
+        "phase": "later",
+        "path": "wiki/education/guides/from-variant-to-drug/11-measure-energy-and-damage-separately.md",
+        "sections": 11,
+        "exactMatch": true
+      }
+    ],
+    "readingCredit": 0
+  },
+  "exclusions": [
+    {
+      "phase": "original",
+      "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-mrd-assay.md",
+      "reason": "Link-only related-concept routing excluded by sourceSections.",
+      "bodySha256": "ad8a3c158a2a1e674db875b5814f28bf39af7dacc67383b88f8ace6a8ddf566f"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/concepts/measurement/liquid-biopsy/tumor-informed-vs-tumor-naive-mrd-assays.md",
+      "reason": "Link-only related-concept routing excluded by sourceSections.",
+      "bodySha256": "ad8a3c158a2a1e674db875b5814f28bf39af7dacc67383b88f8ace6a8ddf566f"
+    }
+  ],
+  "readingDepth": {
+    "originalFullBodies": 6,
+    "originalSections": 68,
+    "laterFullBodies": 6,
+    "laterSections": 70,
+    "laterScope": "Comparison context only; the existing 153 later points and three source-open clauses are not regraded."
+  },
+  "priorContextKnown": true,
+  "blindReviewClaim": false,
+  "sourceBodiesAndReviewMediaRemainPrivate": true
+}

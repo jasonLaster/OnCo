@@ -1,0 +1,164 @@
+{
+  "version": "proposal-local-therapy-immune-system-peer-fields",
+  "state": "Two unapplied complete-field PR-373 proposals. Rendering/lookup overlay does not register or apply them.",
+  "draft": 373,
+  "coordinatorDataHead": "b3e68c7c215df9465c4c24d8edfa425ecdcc13e5",
+  "records": [
+    {
+      "id": "finite-tissue-budget",
+      "kind": "term",
+      "name": "Finite tissue and specimen allocation",
+      "aka": [
+        "finite tissue budget",
+        "tissue allocation for testing"
+      ],
+      "tldr": "Sections, extractions and destructive tests consume stored tissue. Planning several tests requires knowing what material remains and which uses it must support.",
+      "summary": "NCI biospecimen guidance places pathology oversight of tissue release alongside the need to protect complete medical evaluation. It also treats divided and extracted material as traceable derivative samples. A thoracic small-specimen guideline addresses triage and handling for multiple ancillary studies in its own clinical scope. The general resource issue is finite material, not a universal order of tests: remaining tissue and assay requirements need to be established for the actual specimen.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "NCI Best Practices for Biospecimen Resources, fourth edition (2026)",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/intro"
+        },
+        {
+          "label": "Collection and Handling of Thoracic Small Biopsy and Cytology Specimens for Ancillary Studies: Guideline From the College of American Pathologists in Collaboration With the American College of Chest Physicians, Association for Molecular Pathology, American Society of Cytopathology, American Thoracic Society, Pulmonary Pathology Society, Papanicolaou Society of Cytopathology, Society of Interventional Radiology, and Society of Thoracic Radiology.",
+          "url": "https://doi.org/10.5858/arpa.2020-0119-cp"
+        },
+        {
+          "label": "Biospecimen & Biorepository Basics - NCI",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/basics"
+        },
+        {
+          "label": "CAP practical breast grossing guide excerpt",
+          "url": "https://documents-cloud.cap.org/pdf/Grossing_Sample.pdf"
+        },
+        {
+          "label": "NCI Biospecimen Evidence-Based Practices: snap-freezing of post-surgical tissue",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/snap-freeze-bebp.pdf"
+        },
+        {
+          "label": "NCI 2026 biospecimen best practices: selected personnel, suitability and shipping-documentation sections",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/biospecimen-resources/appendices/2026-4th-edition-best-practices.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "specimen-provenance",
+        "tissue-preparation-assay-fit",
+        "preanalytics-sample-stabilisation",
+        "biopsy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Cutting sections moves material from the block onto slides; extraction consumes a portion and loses its original architecture. Stored images and datasets can be copied and reanalysed but cannot refill the archive. A newly collected biopsy is another procedure and time point, and a growing culture is a changed system rather than replenishment of the original specimen.",
+        "An aliquot is an allocated portion. Retain site, date, treatment context, preservation, region, quantity, prior uses, remaining material, permissions and custody. A block list or ten remaining slides does not prove that relevant malignant cells remain. Returning a block does not replace extracted tissue.",
+        "Fictional small block: one proposed extraction remains possible after diagnostic needs are protected, while two teams request overlapping RNA tests. Compare questions, validated inputs, existing-data reuse, permissions and expected material use with pathology before allocation. No universal section count, percentage budget or clinical priority follows from this exercise.",
+        "Specimen allocation starts by identifying the available portions, assessing their suitability, estimating method-specific use and recording consumption. Blocks, slides, frozen pieces and cell aliquots are finite inputs; their counts alone do not establish adequacy. Record remaining portions with section thickness, area or analyte amounts and the relevant context. Receiving-laboratory requirements and diagnostic priorities apply, rather than a universal test budget. Outdated inventories, unrecognised exhaustion, unsuitable regions and duplicated destructive work can waste material. Specimen governance supports reliable testing but is not itself a clinical biomarker and does not establish whether a test changes care or another procedure is appropriate.",
+        "Keep physical portions and their custody separate from reusable data. The record links collection site and time, treatment context, preparation, represented region and cells, prior use, remainder, holder and permitted use. Permission to analyse a dataset does not itself permit transferring or consuming its source block. For an authorised physical use, track the portion, sender, recipient, handling, receipt, consumption and remainder at each handoff. A returned block does not restore cut or extracted material. Diagnostic evaluation, patient safety and applicable consent take priority; the receiving laboratory and pathology must resolve actual suitability rather than infer it from quantity alone. Before allocation, specify the question, receiving method, minimum usable input, processing and transport timing, assay controls and what remains for other needs. These are method-specific requirements rather than a universal number of biopsy cores.",
+        "In an invented archive, one FFPE block came from a breast lesion collected on teaching day zero after systemic treatment. The last pathology review identified a mixed region of tumour, scar and immune cells. Diagnostic sections were cut earlier, but usable depth and relevant remainder are unknown. Pathology holds the block and must establish its diagnostic reserve; permission covers named molecular and image projects but no physical transfer. Lab A accepts FFPE and requests four five-micrometre sections: hold cutting until pathology confirms suitable remainder and the laboratory confirms input and permissions. Lab B requires living tumour cells: reject this fixed block for that request and ask which compatible input would be needed, without authorising another collection. The image team may reuse the already permitted teaching image version one from the last reviewed slide level without new cutting, recording its version and source slide. This is a complete allocation decision despite a named hold, not a standard section count or reserve percentage.",
+        "If pathology later confirms enough suitable remainder after its reserve, the fictional DNA request still needs laboratory input confirmation and the required permissions before use. Update cuts, custody and remainder when the authorised work occurs; the fixed block remains incompatible with the original-living-cell request. New blood collection is another timepoint with its own requirements, not replenishment of an old specimen. A large tumour bed can contain scar, normal tissue and immune cells, so total quantity cannot establish the needed cells or assay fit."
+      ],
+      "category": "Diagnostics & imaging"
+    },
+    {
+      "id": "tissue-preparation-assay-fit",
+      "kind": "term",
+      "name": "Tissue preparation and assay suitability",
+      "aka": [
+        "FFPE versus fresh-frozen versus viable tissue",
+        "specimen fitness for purpose"
+      ],
+      "tldr": "Fixed, frozen and living tissue preserve different properties. A preparation that works for one test may not support another.",
+      "summary": "Paired-specimen studies found that fixation and extraction changed nucleic-acid measurements relative to fresh-frozen material. Viable organoid studies examine a different property: whether living cells can establish the studied culture. Preserved morphology, recoverable DNA or RNA, and viable cell behavior are therefore different specimen requirements. No preparation is universally best; the intended measurement and evidence for that particular workflow determine suitability.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Next-generation sequencing of RNA and DNA isolated from paired fresh-frozen and formalin-fixed paraffin-embedded samples of human cancer and normal tissue.",
+          "url": "https://doi.org/10.1371/journal.pone.0098187"
+        },
+        {
+          "label": "The Biospecimen Preanalytical Variables Program: A Multiassay Comparison of Effects of Delay to Fixation and Fixation Duration on Nucleic Acid Quality.",
+          "url": "https://doi.org/10.5858/arpa.2018-0172-oa"
+        },
+        {
+          "label": "A Living Biobank of Breast Cancer Organoids Captures Disease Heterogeneity.",
+          "url": "https://doi.org/10.1016/j.cell.2017.11.010"
+        },
+        {
+          "label": "NCI Biospecimen Evidence-Based Practices: snap-freezing of post-surgical tissue",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/snap-freeze-bebp.pdf"
+        },
+        {
+          "label": "Biospecimen & Biorepository Basics - NCI",
+          "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/basics"
+        },
+        {
+          "label": "Surgical Pathology Reports - NCI",
+          "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+        },
+        {
+          "label": "Analysis of chemical modification of RNA from formalin-fixed samples and optimization of molecular biology applications for such samples.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10536153/"
+        },
+        {
+          "label": "Organoid Modeling of the Tumor Immune Microenvironment.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30550791/"
+        },
+        {
+          "label": "Slyper et al.: fresh and frozen tumour single-cell and single-nucleus toolbox (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32405060/"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy, product-specific cell sources",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "preanalytics-sample-stabilisation",
+        "rna-integrity",
+        "finite-tissue-budget",
+        "organoids"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Formalin-fixed paraffin-embedded material preserves architecture and supports assays validated for its altered molecules, but cannot restore the original living cells. Snap-freezing preserves material for molecular analysis; the NCI protocol excludes viability, sorting and culture endpoints. A viable-cell vial requires verified recovery, identity and function for its intended assay. No preparation label measures tumour content.",
+        "Masuda experimentally demonstrated chemical modifications of fixed RNA and effects on amplification. Recovering RNA or DNA does not undo fixation or establish a viable cell. Fixed material can still support suitable molecular assays. Fresh and frozen labels describe handling history rather than a verified fraction of living malignant cells.",
+        "Fictional archive: a fixed block, a snap-frozen piece and a vial labelled viable are offered for a cell-growth perturbation. None of these labels alone establishes suitability. The fixed block cannot supply its original living cells; the frozen piece may not be preserved for viable recovery; the viable vial needs recovery, relevant cell identity and model function checked. A successful culture can select a changed cell mixture rather than reproduce the archive.",
+        "Preparation can irreversibly close options. If fixed molecular assays and living-cell experiments are both contemplated, their inputs and separate aliquots need planning before processing, while protecting diagnostic requirements. There is no universally best preparation; dividing finite tissue also has a cost.",
+        "Assess suitability by documenting preservation, checking which cells are represented and applying quality checks for the intended assay or living-cell workflow. Sections, tissue pieces and cell aliquots are finite, and destructive quality checks also use material. Report analyte-appropriate yield and quality, or viable-cell recovery and function when those are required. The receiving method defines acceptance: a preservation label alone guarantees no pass. Delayed stabilisation, incompatible fixative, degraded analyte, poor thaw recovery and missing target cells can defeat the question. Validation on fixed tissue does not automatically transfer to frozen or cultured material, and input suitability alone proves neither clinical accuracy, tumour-wide representation nor patient drug response.",
+        "Match the named request to the actual preparation. FFPE can support a validated fixed-tissue assay if the relevant region remains, but cannot supply the original living cells. Snap-frozen material needs a compatible method and handling history; molecular preservation does not establish viable recovery. Viably cryopreserved material needs a suitable recovery protocol and the relevant living cells checked. Fresh tissue needs the receiving laboratory's processing and transport requirements. Blood or leukapheresis may suit a specified immune-cell or comparison workflow but does not substitute for tumour; a plasma cfDNA or ctDNA assay has its own collection, handling and timepoint requirements.",
+        "Slyper's 2020 tumour toolbox used single-cell profiling for fresh material and single-nucleus profiling for frozen material, with tissue-specific customisation. Matched preparations typically recovered similar cell types but sometimes different proportions. Some frozen specimens can supply nuclei without recoverable living cells, and neither preparation label guarantees a useful dataset. A new collection cannot recreate the original specimen's place and time; a successful model or molecular assay does not establish clinical treatment benefit."
+      ],
+      "category": "Diagnostics & imaging"
+    }
+  ]
+}

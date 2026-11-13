@@ -1,0 +1,4192 @@
+{
+  "dataCommit": "bab5039c1cfdcff0d8e6bec9302788be1c63e714",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.51
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.02
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.97
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 310.8
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "allCommittedDataFilesByteIdenticalToFullGateInputs": true,
+  "graphCount": 23091,
+  "changedExistingIds": [
+    "cdmo",
+    "neoantigen-mrna-vaccine"
+  ],
+  "newIds": [],
+  "readerManifest": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, plus explicitly labelled frozen/proposed PR-373 readers. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/neoantigen-mrna-vaccine/",
+        "sha256": "3b18a4d5319c1736b41493f1555fd4184bccd8fb17456198e9855ce5c09df3b5",
+        "bytes": 97239,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "neoantigen",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/neoantigen/",
+        "sha256": "1acf27b39a0f8797b68dc9e4d47fab49bbdecd5c73226917d0a9ee7303fafe05",
+        "bytes": 67799,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/neoantigen-candidate-selection/",
+        "sha256": "5d43dd9176d61d549b3bddefdee3a7c53fa75ef624967c0eced596f80ec140a9",
+        "bytes": 39318,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "t-cell-receptor",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/t-cell-receptor/",
+        "sha256": "2ebd0aea85bcc5f4bc780479e1b01cb2434ec8b13af89b1c0ef2827f6c86f973",
+        "bytes": 20373,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "hla",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/hla/",
+        "sha256": "e8d3d749f52315115bacb21d3cb8710ab0d5fd8b53a950fe6221a9f2ab07506a",
+        "bytes": 45455,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/mrna-lnp-manufacturing/",
+        "sha256": "3a2eef15d551af86d77f17940979824f6cea12803931ff519d36a5f353fe1dfe",
+        "bytes": 64721,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "batch-release",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/batch-release/",
+        "sha256": "9afba4ba59a56f35b9e6259884248e55ec1f7dfe3375e80cdebf09b28ea2262d",
+        "bytes": 30243,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vaccines-and-oncolytic-viruses/",
+        "sha256": "1ac88034a05207f93ff5da7550f8ed225bb041d2f08c09a14f49fbaa1ac21fb0",
+        "bytes": 45672,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vaccine-adjuvants/",
+        "sha256": "515b039f81c93058db9798297f8320b90ba31f940e142907ddb28c83da418d14",
+        "bytes": 30636,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/immune-surveillance-immunoediting/",
+        "sha256": "5a667a02aeac3626bb596375ef3781f0da1411c4abe34c128a9d250dac0503b2",
+        "bytes": 75597,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/peptide-synthesis-spps/",
+        "sha256": "a8e6269a8339dd42d23c3869818f7550d0dfd36516393c987a4efe6a708b1073",
+        "bytes": 21130,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cdmo",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cdmo/",
+        "sha256": "07369e1fcf34eecd1a4d8fb95dfe008da69029ed3629e980b14d9cac2ba9fb21",
+        "bytes": 26420,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/platform-vs-personalized-components/",
+        "sha256": "749102323bab477bf5ac7179cad5ffb582a5789664d3716f60775f8fab2a3430",
+        "bytes": 31471,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "randomised-trial",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/randomised-trial/",
+        "sha256": "75e2125c10db310be379d870461159f243ba28c2edfdd27390d39ce02cb66ff1",
+        "bytes": 34140,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "rna",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/rna/",
+        "sha256": "1e22ad9b035b6b65d7adcf316e313f7746ab3dc0d8a83a783bdbb6598ef999d2",
+        "bytes": 25767,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "state": "unapplied-PR-373-field-proposal-or-frozen-reader-in-memory-overlay",
+        "route": "/terms/mrna-construct-anatomy/",
+        "sha256": "4ce8491f7b69c73ac855b48c4a1729debf8e362c606db9dc609fa4b0b93ac942",
+        "bytes": 20645,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "state": "unapplied-PR-373-field-proposal-or-frozen-reader-in-memory-overlay",
+        "route": "/terms/manufacturing-process-comparability/",
+        "sha256": "6c17c7b77d2d7d41a76dc0aa8172e626dd02e6ecb4223c7156f91b0cd7e0223f",
+        "bytes": 22921,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "readerFields": {
+    "allPass": true,
+    "fieldChecks": [
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 8,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 9,
+        "present": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 10,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "summary",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 8,
+        "present": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 9,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 8,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "present": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 8,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 5,
+        "present": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "rna",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "rna",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "field": "summary",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "tldr",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "summary",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "notes",
+        "index": 0,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "notes",
+        "index": 1,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "notes",
+        "index": 2,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "notes",
+        "index": 3,
+        "present": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "field": "notes",
+        "index": 4,
+        "present": true
+      }
+    ],
+    "anchorChecks": [
+      {
+        "anchor": "NV-s",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "NV-1",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "NV-2",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "NV-7",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "NV-5",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "NV-rojas",
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "NEO-s",
+        "id": "neoantigen",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "NEO-0",
+        "id": "neoantigen",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "SELECT-s",
+        "id": "neoantigen-candidate-selection",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "SELECT-5",
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "HLA-s",
+        "id": "hla",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "TCR-s",
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "RNA-s",
+        "id": "rna",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "MFG-0",
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "MFG-2",
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "MFG-potency",
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "MFG-compare",
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "RELEASE-boundary",
+        "id": "batch-release",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "CONSTRUCT-s",
+        "id": "mrna-construct-anatomy",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "COMPARE-s",
+        "id": "manufacturing-process-comparability",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "FAMILY-1",
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "FAMILY-2",
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "ADJ-s",
+        "id": "vaccine-adjuvants",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "EDIT-s",
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "SPPS-s",
+        "id": "peptide-synthesis-spps",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "CDMO-s",
+        "id": "cdmo",
+        "field": "summary",
+        "present": true
+      },
+      {
+        "anchor": "PLATFORM-0",
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "present": true
+      },
+      {
+        "anchor": "RAND-s",
+        "id": "randomised-trial",
+        "field": "summary",
+        "present": true
+      }
+    ],
+    "shortSummaryChecks": [
+      {
+        "id": "cdmo",
+        "language": "ar",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ar",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "de",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "de",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "es",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "es",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "fr",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "fr",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "hi",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "hi",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "ja",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ja",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "pt",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "pt",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "zh",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "zh",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "cdmo",
+        "language": "simple",
+        "exactTableReadback": true,
+        "nativeReview": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "simple",
+        "exactTableReadback": true,
+        "nativeReview": false
+      }
+    ],
+    "unchangedNoninitialMechanismStatesNotRechecked": [],
+    "scope": "Actual EntityDetail SSR, complete named paragraph and passage containment, source URL and nesting checks. Unchanged noninitial mechanism states were not rechecked; no new coverage anchor depends on them. No browser layout, hydration, accessibility, independent semantic or native-language approval."
+  },
+  "proofIntegrity": {
+    "allPass": true,
+    "sourceChecks": [
+      {
+        "unit": "PVI-4d70f97fdafdfc",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "4727d412a5a89e0a5f914982e9d1ab4d459c656aabce607cb3ef5b59e3c32d96",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-4d70f97fdafdfc",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "4727d412a5a89e0a5f914982e9d1ab4d459c656aabce607cb3ef5b59e3c32d96",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ae9d03d223a789",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "cd418f8551935950940427493621e25f7343f0b72746d10646f7df8648870f56",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ae9d03d223a789",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "cd418f8551935950940427493621e25f7343f0b72746d10646f7df8648870f56",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-eab078ca0e66b6",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "d55e240b7801b5bed3382cd4619be789d393a14f7c7a2bd907476397154b87d7",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-eab078ca0e66b6",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "d55e240b7801b5bed3382cd4619be789d393a14f7c7a2bd907476397154b87d7",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-5111819a33e4d3",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "edb3ed7409d485392312064a4ec723f4a83c7fcbf112f8ea41a1337e26657bcd",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-5111819a33e4d3",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "edb3ed7409d485392312064a4ec723f4a83c7fcbf112f8ea41a1337e26657bcd",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ed575f64fe5f7a",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "539ff81cdf2b6af7a3910d550d5c6cb5d123a94862fd412bd44e3c562b7d958e",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ed575f64fe5f7a",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "539ff81cdf2b6af7a3910d550d5c6cb5d123a94862fd412bd44e3c562b7d958e",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ff9486f3e9a0b8",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "6e89c7e81fc84b8e853cbe7925e104e89ad7b8ec6ef24a0a9936324163c293fb",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ff9486f3e9a0b8",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "6e89c7e81fc84b8e853cbe7925e104e89ad7b8ec6ef24a0a9936324163c293fb",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ae3d283dec2d16",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "e3e76488d20582df7cd9ed856cef6d0d9a0ffa01b17e4620ef08396ee5c8971b",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-ae3d283dec2d16",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "e3e76488d20582df7cd9ed856cef6d0d9a0ffa01b17e4620ef08396ee5c8971b",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-92fcf6b9e35c20",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "2893df9c4082b4e1b0af7c89cc9ce25145bc8c0a76ce2f14a4caa1c844b0caf7",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-92fcf6b9e35c20",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "2893df9c4082b4e1b0af7c89cc9ce25145bc8c0a76ce2f14a4caa1c844b0caf7",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3f7292b6ee33e5",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "88603be4158ea7543f9b0209dd6f5c8c5f272cd2f30b99954fbc92639b74fb63",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3f7292b6ee33e5",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "88603be4158ea7543f9b0209dd6f5c8c5f272cd2f30b99954fbc92639b74fb63",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-9bcc20e2ab21dd",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "5c51767aaae631173aaf5536c84b614f8643d1951506742e5761401d812b0e59",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-9bcc20e2ab21dd",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "007c74ff9ae59a013adecc69f53822bf0ac551089a05077c5b3636af3bbefd6f",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3fb6889131c2c4",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "218944e5fabfcc39bf56d347f27ee1f0344ea1c53c3a143b313a4a0e8f132376",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3fb6889131c2c4",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "218944e5fabfcc39bf56d347f27ee1f0344ea1c53c3a143b313a4a0e8f132376",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-926d732c313c60",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "f2fc83d8741bc081dfa63bdd17f77a6c24317c35ee6774ec87f28e6ff8bcab7d",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-926d732c313c60",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "8ba74e6ec1734f28a5492075bd1f31e7fa3dea081a0cbd2234adb28e8a302c56",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-45735de635a0a8",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "3ec390df22df68951d73eb6298408540db0e0638b5ca267a213d36bc02c3fbfd",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-45735de635a0a8",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "77484e55d0abd66e009cd3029f1f1677537108a5ab77e57b209170d5d7913fc3",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-6431dab60cf760",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "a6cc3dbf33e850e60632672d940fa5a23e838f5089de1d6d3f0dc90bf9f48ed4",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-6431dab60cf760",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "081210c3b99c9a314f26b685d2efa08fae3bb7cb58a8cf1445f01df5c9263e80",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-14f433fe3e0684",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "d39aaf6b991e52c6b5909861c0b2b7001ac442cb10892d47898b1456c80da56a",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-14f433fe3e0684",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "d39aaf6b991e52c6b5909861c0b2b7001ac442cb10892d47898b1456c80da56a",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-8b6b7524e02d62",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "4db7572b733833165813ae2e7e8c30e610a7cf5ff7deb58d6e6bfdf422d8dbc9",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-8b6b7524e02d62",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "451ff515b56da4d3d8006e8d63ace6c8076b9d6f45d1503fd301d0f2a1b059cb",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-7843da52b2c81c",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "de49fb67e95fd626842cf0a41b41579ab0f24348e432315af435e9bdaba686fc",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-7843da52b2c81c",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "de49fb67e95fd626842cf0a41b41579ab0f24348e432315af435e9bdaba686fc",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-bde2301dd032d5",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "78b7bd272b5445750d232d7782ee4f26fce8c57ca2e6d870bb27c3afe608f89e",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-bde2301dd032d5",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "78b7bd272b5445750d232d7782ee4f26fce8c57ca2e6d870bb27c3afe608f89e",
+        "form": "exact-source-header-and-row-lines-noncontiguous",
+        "passed": true
+      },
+      {
+        "unit": "PVI-cf7dcd3d922f7c",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "10fa8bae5774b632b99037aeef12f50f2a515b84dabc0247e10da1e703c79f9c",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-cf7dcd3d922f7c",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "10fa8bae5774b632b99037aeef12f50f2a515b84dabc0247e10da1e703c79f9c",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-71eb652bcf1beb",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "668d7009c6d530522627ab97a04d81dbe935f7685a2e013ff4f0ef95d941c8eb",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-71eb652bcf1beb",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "668d7009c6d530522627ab97a04d81dbe935f7685a2e013ff4f0ef95d941c8eb",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-6ff13f47fc513e",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "8446ff77b2e9bc568ffcfa64c9805b00c88a153ba97055c4a1096611c6e67a29",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-6ff13f47fc513e",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "8446ff77b2e9bc568ffcfa64c9805b00c88a153ba97055c4a1096611c6e67a29",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-64429af737b3d6",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "2e5ecb45cdf9ec0f60ae1e6a17759ceaf8bb1fab8c95a7a7cfc584aceb812ac6",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-64429af737b3d6",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "2e5ecb45cdf9ec0f60ae1e6a17759ceaf8bb1fab8c95a7a7cfc584aceb812ac6",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-dc8975bee599ff",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "ba1a694f55186034e92ef05218be1bda2fa33405ed2d35bcd2fddff71e4e249f",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-dc8975bee599ff",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "ba1a694f55186034e92ef05218be1bda2fa33405ed2d35bcd2fddff71e4e249f",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-65a464b1f367da",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "4ac89170ba4b7012a6bbb78d44bf41110bcbeb53846648db4d04b1572d107ba6",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-65a464b1f367da",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "4ac89170ba4b7012a6bbb78d44bf41110bcbeb53846648db4d04b1572d107ba6",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-481fef3b2137cd",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "40f753f38afb7a1374c369ef9c6a732babce193a95cf25c30f7f665d85088a60",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-481fef3b2137cd",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "40f753f38afb7a1374c369ef9c6a732babce193a95cf25c30f7f665d85088a60",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-37be060be096b4",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "64a9d9b40e33b34329dc2dc2dd115d9e636fce14b7c0821a08184f37760a3f29",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-37be060be096b4",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "64a9d9b40e33b34329dc2dc2dd115d9e636fce14b7c0821a08184f37760a3f29",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-f0924c9207068c",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "d1387b4288cb4e50df43610eb47f7a98d88b55a763400c40cb626fa09697528b",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-f0924c9207068c",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "d1387b4288cb4e50df43610eb47f7a98d88b55a763400c40cb626fa09697528b",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-4a209d25b6bdd7",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "7878888e558059f4ab98f994dfe4e0eee0db7824bf769dceba6febd272c8e60a",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-4a209d25b6bdd7",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "7878888e558059f4ab98f994dfe4e0eee0db7824bf769dceba6febd272c8e60a",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-2e25af165c359d",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "c77d3bd2d9b71569a82080a87f55a02114b325663b92fa751a0c3c9d0217de39",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-2e25af165c359d",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "c77d3bd2d9b71569a82080a87f55a02114b325663b92fa751a0c3c9d0217de39",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3fd63973504d56",
+        "phase": "original",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "bc373f84972c875b6940bf4de5b111f2c0453f70c045c0479c70df6ed624a9fb",
+        "passageSha256": "aad3058006ef4dcf31121d1def96c5dd72f1b6988664f97ebc61913b3b690b41",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      },
+      {
+        "unit": "PVI-3fd63973504d56",
+        "phase": "later",
+        "path": "wiki/education/guides/personalized-cancer-vaccine/index.md",
+        "sourceSha256": "304f47b7d01a6ea0a3d4120bbea2401d668209d3a59f89e9e98f022d34caf0e6",
+        "passageSha256": "aad3058006ef4dcf31121d1def96c5dd72f1b6988664f97ebc61913b3b690b41",
+        "form": "exact-contiguous-source-passage",
+        "passed": true
+      }
+    ],
+    "anchorChecks": [
+      {
+        "anchor": "NV-s",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "NV-1",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "NV-2",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "NV-7",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "NV-5",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "NV-rojas",
+        "recordId": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "NEO-s",
+        "recordId": "neoantigen",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "NEO-0",
+        "recordId": "neoantigen",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "SELECT-s",
+        "recordId": "neoantigen-candidate-selection",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "SELECT-5",
+        "recordId": "neoantigen-candidate-selection",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "HLA-s",
+        "recordId": "hla",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "TCR-s",
+        "recordId": "t-cell-receptor",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "RNA-s",
+        "recordId": "rna",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "MFG-0",
+        "recordId": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "MFG-2",
+        "recordId": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "MFG-potency",
+        "recordId": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "MFG-compare",
+        "recordId": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "RELEASE-boundary",
+        "recordId": "batch-release",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "CONSTRUCT-s",
+        "recordId": "mrna-construct-anatomy",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "COMPARE-s",
+        "recordId": "manufacturing-process-comparability",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "FAMILY-1",
+        "recordId": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "FAMILY-2",
+        "recordId": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "ADJ-s",
+        "recordId": "vaccine-adjuvants",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "EDIT-s",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "SPPS-s",
+        "recordId": "peptide-synthesis-spps",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "CDMO-s",
+        "recordId": "cdmo",
+        "field": "summary",
+        "passed": true
+      },
+      {
+        "anchor": "PLATFORM-0",
+        "recordId": "platform-vs-personalized-components",
+        "field": "notes",
+        "passed": true
+      },
+      {
+        "anchor": "RAND-s",
+        "recordId": "randomised-trial",
+        "field": "summary",
+        "passed": true
+      }
+    ],
+    "sourceVersions": 2,
+    "sectionSignatures": 16,
+    "uniqueUnits": 30,
+    "sourcePassageChecks": 60,
+    "fieldPassageChecks": 28,
+    "scope": "Custody, hashing and exact containment only. Table units carry an exact header and row as separately located lines. Semantic entailment remains the explicit coordinator assessment; no independent acceptance, source-reading or graph integration is created by this script."
+  },
+  "rootExports": {
+    "records": 15,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "randomised-trial",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "neoantigen-mrna-vaccine.json",
+        "bytes": 26444,
+        "sha256": "c7230e7aec7efe288bdbbda815e13b8f91daab5c09eed13be11635659c70fcd8"
+      },
+      {
+        "file": "neoantigen-mrna-vaccine.md",
+        "bytes": 20549,
+        "sha256": "070eb4f402eb7f58974db9c5f55f056ec9f3b3b1d5ab8318ffa6d39c9315eb7a"
+      },
+      {
+        "file": "neoantigen.json",
+        "bytes": 19256,
+        "sha256": "603e957964e5e4e1ce5eeda2577aa94ece2de3b5c8c62ed300199ebcd3c5f459"
+      },
+      {
+        "file": "neoantigen.md",
+        "bytes": 15021,
+        "sha256": "a980cf3218b74ffcb98d1748ef74955baab85ff8ec4184fd2d209624e27bd9c6"
+      },
+      {
+        "file": "neoantigen-candidate-selection.json",
+        "bytes": 11478,
+        "sha256": "e778de3acb51f75f600e701bde9f392da9e89a3f6c90ed566c25da77b08570d6"
+      },
+      {
+        "file": "neoantigen-candidate-selection.md",
+        "bytes": 10693,
+        "sha256": "34ac86c4732598830312e9e6cfdc3764189d9dd6a58147e5ab6e934bd2562f46"
+      },
+      {
+        "file": "t-cell-receptor.json",
+        "bytes": 5059,
+        "sha256": "c4c3894371e54615b4e75f8fabb557e87caa6b851ba82ddf37b1bda09e60c754"
+      },
+      {
+        "file": "t-cell-receptor.md",
+        "bytes": 4843,
+        "sha256": "d8e19c88b58532d784a3ea4e36e5196224266142cfbd5bd36d0d63f4f0e7e3ae"
+      },
+      {
+        "file": "hla.json",
+        "bytes": 11991,
+        "sha256": "09a0339399bd2a73df0c3d188fdfea6b2b358f1e85b0d15b0b440be067b972ed"
+      },
+      {
+        "file": "hla.md",
+        "bytes": 10587,
+        "sha256": "a555ed7616b38c7521f1e8aedb472d1f610d5c9eedb8be99759c975831f849bd"
+      },
+      {
+        "file": "mrna-lnp-manufacturing.json",
+        "bytes": 20366,
+        "sha256": "936b38f6574113bff5b95a07e794699b574548bb25c270c1804f708bcb3f9ab5"
+      },
+      {
+        "file": "mrna-lnp-manufacturing.md",
+        "bytes": 18353,
+        "sha256": "af806c8c584a75a5f7cf8da2083a3bdbe6416cdb11cc931fbb15f019887165a2"
+      },
+      {
+        "file": "batch-release.json",
+        "bytes": 8180,
+        "sha256": "4428f703c5a334d9ffdd217eb05e3dba5811edae23e64bb603945a032729379e"
+      },
+      {
+        "file": "batch-release.md",
+        "bytes": 7344,
+        "sha256": "8cc1a5203d79bd8baf2847229129fa7016feb030013529d4ca9efc7af2ada865"
+      },
+      {
+        "file": "vaccines-and-oncolytic-viruses.json",
+        "bytes": 9920,
+        "sha256": "bdbd9e285ec333d5be829fa759dfa5939934d638360bd8cf36575e11b094b871"
+      },
+      {
+        "file": "vaccines-and-oncolytic-viruses.md",
+        "bytes": 8543,
+        "sha256": "3f870077e0f35eea6c005ef98094d7b2707b1c1c877ea10b92b5fdfd58f49ca1"
+      },
+      {
+        "file": "vaccine-adjuvants.json",
+        "bytes": 6807,
+        "sha256": "08451a6a9e88e9190ab08036da8cb5936f14c326ce9086ff71dbbebfaaaa82d8"
+      },
+      {
+        "file": "vaccine-adjuvants.md",
+        "bytes": 6115,
+        "sha256": "e566968fbdd3d1e24941b220ca8378f88300b286c6ce9e153b42eec719c5afbe"
+      },
+      {
+        "file": "immune-surveillance-immunoediting.json",
+        "bytes": 18279,
+        "sha256": "2b1fd59429fa73f8024a3def7636ebb37df9b975d28e73fff0dfcc28709800e9"
+      },
+      {
+        "file": "immune-surveillance-immunoediting.md",
+        "bytes": 14974,
+        "sha256": "3a06b272d603811bbecab30d2936f283f3458392d41d353cadcd75faf9093cd7"
+      },
+      {
+        "file": "peptide-synthesis-spps.json",
+        "bytes": 5428,
+        "sha256": "7b770e7beb214e13a2dee7b2f7ff404837278b71621f05f0941b26f1bf44d58e"
+      },
+      {
+        "file": "peptide-synthesis-spps.md",
+        "bytes": 5074,
+        "sha256": "be494ae601e0412a855ce05d9e69c5a2669f6102b6822cb4f481f93210891a45"
+      },
+      {
+        "file": "cdmo.json",
+        "bytes": 5371,
+        "sha256": "2825d8518f9f59537653369f3c6f6fe851d5fc4c9480da5817ee9ec031d9a2f3"
+      },
+      {
+        "file": "cdmo.md",
+        "bytes": 4508,
+        "sha256": "c4f2fb47ba5c30549ca68aba4fac9ed65ff3c5b524fe81e5a20c49045ad5d244"
+      },
+      {
+        "file": "platform-vs-personalized-components.json",
+        "bytes": 6779,
+        "sha256": "335a62773ee66900e59e54bdd165fa1a6c54310452629c31419b88d8b3ad1671"
+      },
+      {
+        "file": "platform-vs-personalized-components.md",
+        "bytes": 6199,
+        "sha256": "b7d8af25e01aa1151461dc3f4f20f1a0b9373f76414747c71a617c0ac7fcdbfb"
+      },
+      {
+        "file": "randomised-trial.json",
+        "bytes": 7749,
+        "sha256": "0114810bbd638db7e548d5d786974bd9546e9ac91c6f12c72166bb149d38bab8"
+      },
+      {
+        "file": "randomised-trial.md",
+        "bytes": 5738,
+        "sha256": "209b7e6c30a8e18eb0e5ce20ff2f81d55360c04da6323b1d426815de0c955954"
+      },
+      {
+        "file": "rna.json",
+        "bytes": 4325,
+        "sha256": "c7ef5c128900ac9d13d583f7ee8cafebe97208dd2aeda432547875acbbe27eb4"
+      },
+      {
+        "file": "rna.md",
+        "bytes": 3532,
+        "sha256": "ad6915c24df98f837af5ac9d82d3a9e819e6f559b055af694cee43b6b0c38860"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "rootExportAnchors": {
+    "checks": [
+      {
+        "anchor": "NV-s",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NV-1",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NV-2",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NV-7",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NV-5",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NV-rojas",
+        "recordId": "neoantigen-mrna-vaccine",
+        "present": true
+      },
+      {
+        "anchor": "NEO-s",
+        "recordId": "neoantigen",
+        "present": true
+      },
+      {
+        "anchor": "NEO-0",
+        "recordId": "neoantigen",
+        "present": true
+      },
+      {
+        "anchor": "SELECT-s",
+        "recordId": "neoantigen-candidate-selection",
+        "present": true
+      },
+      {
+        "anchor": "SELECT-5",
+        "recordId": "neoantigen-candidate-selection",
+        "present": true
+      },
+      {
+        "anchor": "HLA-s",
+        "recordId": "hla",
+        "present": true
+      },
+      {
+        "anchor": "TCR-s",
+        "recordId": "t-cell-receptor",
+        "present": true
+      },
+      {
+        "anchor": "RNA-s",
+        "recordId": "rna",
+        "present": true
+      },
+      {
+        "anchor": "MFG-0",
+        "recordId": "mrna-lnp-manufacturing",
+        "present": true
+      },
+      {
+        "anchor": "MFG-2",
+        "recordId": "mrna-lnp-manufacturing",
+        "present": true
+      },
+      {
+        "anchor": "MFG-potency",
+        "recordId": "mrna-lnp-manufacturing",
+        "present": true
+      },
+      {
+        "anchor": "MFG-compare",
+        "recordId": "mrna-lnp-manufacturing",
+        "present": true
+      },
+      {
+        "anchor": "RELEASE-boundary",
+        "recordId": "batch-release",
+        "present": true
+      },
+      {
+        "anchor": "FAMILY-1",
+        "recordId": "vaccines-and-oncolytic-viruses",
+        "present": true
+      },
+      {
+        "anchor": "FAMILY-2",
+        "recordId": "vaccines-and-oncolytic-viruses",
+        "present": true
+      },
+      {
+        "anchor": "ADJ-s",
+        "recordId": "vaccine-adjuvants",
+        "present": true
+      },
+      {
+        "anchor": "EDIT-s",
+        "recordId": "immune-surveillance-immunoediting",
+        "present": true
+      },
+      {
+        "anchor": "SPPS-s",
+        "recordId": "peptide-synthesis-spps",
+        "present": true
+      },
+      {
+        "anchor": "CDMO-s",
+        "recordId": "cdmo",
+        "present": true
+      },
+      {
+        "anchor": "PLATFORM-0",
+        "recordId": "platform-vs-personalized-components",
+        "present": true
+      },
+      {
+        "anchor": "RAND-s",
+        "recordId": "randomised-trial",
+        "present": true
+      }
+    ],
+    "missing": [],
+    "rootAnchors": 26,
+    "scope": "Actual generated Markdown; frozen peer is not represented as root export."
+  },
+  "summaryConsumers": {
+    "entries": 153,
+    "texts": 33,
+    "fallbacks": 120,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "hla",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "platform-vs-personalized-components",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "randomised-trial",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-construct-anatomy",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "summaryTableScope": {
+    "allPass": true,
+    "entriesChanged": 18,
+    "entriesUnchanged": 62025,
+    "files": 10,
+    "noEntryAddedOrRemoved": true,
+    "existingMissingEntriesPreserved": true,
+    "rows": [
+      {
+        "file": "src/data/i18n/ar.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ar",
+        "before": "لقاح يُصنع لمريض واحد، ويشفّر الطفرات الفريدة في ورمه هو، لتدريب الجهاز المناعي على مطاردته.",
+        "after": "لقاح مصمّم لشخص واحد يحمل تعليمات لتسلسلات مختارة من ورمه. التصميم وحده لا يثبت أن هذه الأهداف تُعرَض أو يجري التعرّف عليها أو أنها مفيدة سريرياً.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/ar.ts",
+        "id": "cdmo",
+        "language": "ar",
+        "before": "شركة تصنّع الأدوية لصالح شركات أخرى. ومعظم عقاقير ADC والأدوية البيولوجية والعلاجات الخلوية تُصنَع لدى حفنة منها.",
+        "after": "جهة متعاقدة تنفّذ أعمال تطوير الأدوية أو تصنيعها المتفق عليها لصالح عميل. لا يوضح اسم الخدمة وحده المهام أو أدلة الجودة أو المسؤوليات التي يغطيها اتفاق معيّن.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/de.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "de",
+        "before": "Ein für einen einzelnen Patienten hergestellter Impfstoff, der die einzigartigen Mutationen seines eigenen Tumors kodiert, um das Immunsystem darauf zu trainieren, ihn zu jagen.",
+        "after": "Ein für eine Person entworfener Impfstoff liefert Anweisungen für ausgewählte Sequenzen aus ihrem Tumor. Der Entwurf allein belegt weder deren Präsentation und Erkennung noch einen klinischen Nutzen.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/de.ts",
+        "id": "cdmo",
+        "language": "de",
+        "before": "Ein Unternehmen, das Medikamente für andere Unternehmen herstellt. Die meisten ADCs, Biologika und Zelltherapien werden von einer Handvoll solcher Firmen produziert.",
+        "after": "Ein Auftragsunternehmen übernimmt vereinbarte Arbeiten zur Entwicklung oder Herstellung von Arzneimitteln für einen Kunden. Die Dienstleistungsbezeichnung allein sagt nicht, welche Aufgaben, Qualitätsnachweise oder Verantwortlichkeiten eine konkrete Vereinbarung umfasst.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/es.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "es",
+        "before": "Una vacuna hecha para un solo paciente, que codifica las mutaciones únicas de su tumor, para entrenar al sistema inmunitario a cazarlo.",
+        "after": "Una vacuna diseñada para una persona aporta instrucciones para secuencias seleccionadas de su tumor. El diseño por sí solo no demuestra que esos blancos se presenten, se reconozcan ni tengan utilidad clínica.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/es.ts",
+        "id": "cdmo",
+        "language": "es",
+        "before": "Una empresa que fabrica medicamentos para otras empresas. La mayoría de los ADC, los biológicos y las terapias celulares los fabrican un puñado de ellas.",
+        "after": "Una organización contratada realiza el trabajo acordado de desarrollo o fabricación de medicamentos para un cliente. El nombre del servicio no indica por sí solo qué tareas, pruebas de calidad o responsabilidades cubre un acuerdo concreto.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/fr.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "fr",
+        "before": "Un vaccin fabriqué pour un seul patient, qui code les mutations uniques de sa propre tumeur, afin d'entraîner le système immunitaire à la traquer.",
+        "after": "Un vaccin conçu pour une personne fournit des instructions pour des séquences sélectionnées dans sa tumeur. La conception seule ne prouve pas que ces cibles soient présentées, reconnues ou utiles en clinique.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/fr.ts",
+        "id": "cdmo",
+        "language": "fr",
+        "before": "Une entreprise qui fabrique des médicaments pour d'autres entreprises. La plupart des ADC, des biomédicaments et des thérapies cellulaires sont produits par une poignée d'entre elles.",
+        "after": "Un prestataire réalise pour un client les travaux convenus de développement ou de fabrication de médicaments. Le nom du service ne précise pas, à lui seul, les tâches, les preuves de qualité ou les responsabilités couvertes par un accord donné.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/hi.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "hi",
+        "before": "एक मरीज़ के लिए बना टीका, जो उसके ट्यूमर के अद्वितीय म्यूटेशन कोड करता है, ताकि प्रतिरक्षा तंत्र उसका शिकार करना सीखे।",
+        "after": "किसी एक व्यक्ति के लिए बनाया गया टीका उसके ट्यूमर से चुने गए अनुक्रमों के निर्देश देता है। केवल डिज़ाइन से यह सिद्ध नहीं होता कि ये लक्ष्य प्रस्तुत होते हैं, पहचाने जाते हैं या उपचार में उपयोगी हैं।",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/hi.ts",
+        "id": "cdmo",
+        "language": "hi",
+        "before": "एक कंपनी जो दूसरी कंपनियों के लिए दवाएं बनाती है। अधिकांश ADC, बायोलॉजिक्स और कोशिका चिकित्साएं इनमें से मुट्ठी भर कंपनियां ही बनाती हैं।",
+        "after": "एक अनुबंधित संस्था ग्राहक के लिए दवाओं के विकास या निर्माण के तय किए गए काम करती है। केवल सेवा का नाम यह नहीं बताता कि किसी खास समझौते में कौन से काम, गुणवत्ता प्रमाण या जिम्मेदारियाँ शामिल हैं।",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/ja.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "ja",
+        "before": "一人の患者のために作られるワクチンで、その患者自身の腫瘍に固有の変異情報を組み込み、免疫系にその腫瘍を追い詰めるよう教え込む。",
+        "after": "一人のために設計したワクチンは、その人の腫瘍から選んだ配列の情報を含みます。設計だけでは、その標的が提示され、認識され、臨床的に役立つとは示せません。",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/ja.ts",
+        "id": "cdmo",
+        "language": "ja",
+        "before": "他社のために医薬品を製造する企業である。ADC・生物学的製剤・細胞治療の大半は、ごく少数のこうした企業によって作られている。",
+        "after": "顧客から受託し、合意した医薬品の開発・製造業務を行う組織です。サービス名だけでは、個々の契約がどの作業、品質の証拠、責任を含むかは分かりません。",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/pt.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "pt",
+        "before": "Uma vacina feita para um só paciente, codificando as mutações únicas do próprio tumor, para treinar o sistema imune a caçá-lo.",
+        "after": "Uma vacina concebida para uma pessoa fornece instruções para sequências selecionadas do seu tumor. A concepção, por si só, não demonstra que esses alvos sejam apresentados, reconhecidos ou clinicamente úteis.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/pt.ts",
+        "id": "cdmo",
+        "language": "pt",
+        "before": "Uma empresa que fabrica medicamentos para outras empresas. A maioria dos ADCs, biológicos e terapias celulares é produzida por um punhado delas.",
+        "after": "Uma organização contratada realiza o trabalho acordado de desenvolvimento ou fabricação de medicamentos para um cliente. O nome do serviço, por si só, não informa quais tarefas, evidências de qualidade ou responsabilidades um acordo específico abrange.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/zh.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "zh",
+        "before": "为单个患者制作的疫苗，编码其肿瘤独有的突变，训练免疫系统追猎它。",
+        "after": "为一个人设计的疫苗包含其肿瘤中选定序列的指令。仅凭设计不能证明这些靶点已被呈递、得到识别或具有临床价值。",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/i18n/zh.ts",
+        "id": "cdmo",
+        "language": "zh",
+        "before": "为其他公司生产药物的公司。大多数ADC、生物制剂和细胞治疗产品都由少数几家这样的公司生产。",
+        "after": "受托为客户开展约定的药物开发或生产工作。服务名称本身不能说明某份协议涵盖哪些任务、质量证据或责任。",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/simple/part-a.ts",
+        "id": "neoantigen-mrna-vaccine",
+        "language": "simple",
+        "before": "A vaccine made for one patient, based on the unique mutations in their own tumour, to train the immune system to hunt it.",
+        "after": "A vaccine for one person carries instructions based on selected tumour sequences. That design alone does not show that the targets are displayed, recognised or useful for treatment.",
+        "nativeReview": false
+      },
+      {
+        "file": "src/data/simple/part-j.ts",
+        "id": "cdmo",
+        "language": "simple",
+        "before": "A CDMO is a contract company that makes drugs for other companies, and a handful of them produce most antibody-drug conjugates, biologics and cell therapies.",
+        "after": "A contract company does agreed work developing or making medicines for a client. Its service name does not show which jobs, quality checks or responsibilities a particular agreement covers.",
+        "nativeReview": false
+      }
+    ],
+    "independentOrNativeApproval": false
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual graph, EntityDetail SSR, static JSON/Markdown/OpenAPI and summary selectors, with full gates. No full Next build, browser layout, hydration, deployment or independent acceptance."
+}

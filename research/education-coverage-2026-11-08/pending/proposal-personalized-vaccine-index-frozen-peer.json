@@ -1,0 +1,133 @@
+{
+  "version": "proposal-personalized-vaccine-index-frozen-peer",
+  "state": "Unchanged frozen PR-373 records, not newly authored or applied. In-memory reader capture grants no graph integration.",
+  "draft": 373,
+  "coordinatorDataHead": "bab5039c1cfdcff0d8e6bec9302788be1c63e714",
+  "records": [
+    {
+      "id": "mrna-construct-anatomy",
+      "kind": "term",
+      "name": "Messenger RNA construct anatomy",
+      "aka": [
+        "mRNA construct anatomy",
+        "mRNA untranslated regions and poly(A) tail"
+      ],
+      "tldr": "An engineered messenger RNA includes a protein-coding message and surrounding features that affect how it is used. Those features are part of the construct being tested.",
+      "summary": "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.\n\nStart-codon context was tested by single-base substitutions around the AUG initiator in a cloned preproinsulin gene, where the best sequence identified changed proinsulin yield over a 20-fold range (Kozak). The interaction of the cap and the poly(A) tail was tested with luciferase mRNAs delivered by electroporation into tobacco protoplasts, Chinese hamster ovary cells and yeast, where the tail's effect depended on the cap (Gallie). A textbook describes the 5' cap, 5' and 3' untranslated regions that regulate translation initiation and mRNA stability, a poly-A tail of about 200 A residues added by poly-A polymerase to cellular mRNA, and a ribosome that moves from the cap to the AUG, with Kozak's rules describing the sequence around it (OpenStax Biology 2e). The cellular tail length is not a rule for engineered constructs: one dendritic-cell study found that a 120-nucleotide tail, an unmasked tail end and two 3' untranslated regions each improved stability and translation, and it measured transcript amount by RT-PCR, protein by eGFP, peptide-MHC density and T-cell stimulation separately (Holtkamp and colleagues), so a doubled reporter signal after a 3' change is one measurement, not a different antigen or a clinical benefit. These are tested constructs and cell systems, not one best sequence for a clinical product.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+          "url": "https://doi.org/10.1182/blood-2006-04-015024"
+        },
+        {
+          "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+          "url": "https://doi.org/10.1073/pnas.1908052116"
+        },
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        },
+        {
+          "label": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+          "url": "https://doi.org/10.1016/0092-8674(86)90762-2"
+        },
+        {
+          "label": "The cap and poly(A) tail function synergistically to regulate mRNA translational efficiency.",
+          "url": "https://doi.org/10.1101/gad.5.11.2108"
+        },
+        {
+          "label": "Biology 2e, 15.4 RNA Processing in Eukaryotes (OpenStax)",
+          "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+        },
+        {
+          "label": "Biology 2e, 15.5 Ribosomes and Protein Synthesis (OpenStax)",
+          "url": "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "codon-optimization",
+        "modified-rna-nucleosides",
+        "in-vitro-transcription",
+        "mrna-lnp-manufacturing",
+        "multi-epitope-constructs"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "manufacturing-process-comparability",
+      "kind": "term",
+      "name": "Comparability after manufacturing changes",
+      "aka": [
+        "manufacturing process comparability",
+        "process-change comparability"
+      ],
+      "tldr": "A changed manufacturing process needs evidence about the product before and after the change. Comparability asks whether observed differences could matter to product quality, safety or effectiveness.",
+      "summary": "ICH Q5E provides a framework for comparing a biological product before and after manufacturing changes. It emphasizes quality attributes and assessing whether additional nonclinical or clinical evidence is needed. It does not prescribe one universal testing strategy. The question concerns a specified process change and product; it should not be collapsed into a general claim that all batches, sites or related products are interchangeable. Q5E states that comparability does not necessarily mean the pre-change and post-change attributes are identical, but that they are highly similar and existing knowledge is predictive enough that differences have no adverse impact on safety or efficacy. For autologous CAR T cells FDA's 2024 guidance says historical lots may be inadequate and recommends side-by-side testing on the same starting material where possible, for example one leukapheresis split between the pre-change and post-change processes. FDA's July 2023 manufacturing-changes and comparability guidance for cellular and gene therapy products is still labelled draft, not for implementation, on FDA's page checked 9 November 2026.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "EMA/ICH Q5E: comparability after a manufacturing-process change",
+          "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q-5-e-comparability-biotechnologicalbiological-products-step-5_en.pdf"
+        },
+        {
+          "label": "FDA/ICH Q5E: comparability of biotechnological/biological products (June 2005)",
+          "url": "https://www.fda.gov/media/71489/download"
+        },
+        {
+          "label": "FDA: considerations for the development of CAR T cell products (January 2024), comparability section",
+          "url": "https://www.fda.gov/media/156896/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "chemistry-manufacturing-controls",
+        "certificate-of-analysis",
+        "biosimilar-manufacturing",
+        "cell-therapy-release-testing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy. First describe what changed and which properties it might alter, then use methods able to detect those effects. FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences.",
+        "Where suitable, the same starting material can be split between the old and new process, for example one leukapheresis divided between pre-change and post-change manufacture (FDA CAR T guidance). This reduces one source of variation but does not erase all uncertainty or replace an adequate study design; healthy-donor material may be used in some studies, with patient-versus-donor differences considered.",
+        "Measurement caution. An assay change can itself create an apparent product difference, which is why FDA's potency guidance has sections on reference materials and on assay changes and transfers. The CAR T guidance asks for predefined acceptance criteria and appropriate statistical methods. A nonsignificant test alone does not establish similarity, because an insensitive comparison can miss an important difference; this is an inference from the need for predefined criteria and sensitive methods.",
+        "Q5E says the evaluation should indicate whether confirmatory nonclinical or clinical studies are appropriate. Inference lesson: if cell counts match after a medium change but a relevant T-cell subset shifts substantially, count is one attribute, so the subset, function and other plausibly affected properties must be assessed before earlier evidence is called relevant. A process bridge is not head-to-head equivalence between different therapies. FDA's July 2023 comparability guidance for cellular and gene therapy products was still labelled draft, not for implementation, on FDA's page read on 9 November 2026.",
+        "Personalisation does not give a new sequence or an edited process an automatic bridge to every earlier result. A platform may deliberately vary antigen sequence under defined controls, and each change still has to be assessed for its effect on the product."
+      ],
+      "category": "Regulation & policy"
+    }
+  ]
+}

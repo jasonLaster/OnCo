@@ -1,0 +1,381 @@
+{
+  "paragraphs": [
+    {
+      "id": "IP01",
+      "owner": "ligand",
+      "catalog": "root",
+      "field": "notes",
+      "index": 2,
+      "text": "In an invented comparison, a plain antibody binds surface protein A, the same binder carrying a payload damages tested cells, and a blocker lowers an internal signal. These establish different measured outcomes: accessible binding, activity of the finished construct, and an effect on the specified pathway. None alone establishes tumour dependence, healthy-tissue safety or patient benefit. Ask what binds what, what changes and which experiment measured the change; a shared address does not supply a shared action.",
+      "passageSha256": "4db1d10382671b5328c3114c1932976e33356f30dbe8c843d8e03601734ad9d4",
+      "fieldSha256": "a06e795e0eb16bcb5630034c1af4785ad4d4d355b6ad2602537cae6d2259cd88",
+      "sourceKeys": [
+        "coordinator-fictional-inference",
+        "nci-monoclonal-antibodies"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP02",
+      "owner": "ligand",
+      "catalog": "root",
+      "field": "notes",
+      "index": 3,
+      "text": "In another fictional experiment, opposing PD-1 binding to PD-L1 increases a stimulated T-cell response with receptor-specific controls. That does not make the antibody a PD-1 agonist: increased cell activity can follow antagonism of an inhibitory interaction. Name the receptor, receiving cell, assay and endpoint before interpreting whether a signal activates or restrains a response.",
+      "passageSha256": "6d063f893ede07213c9572b9064b1f9f9d319e6a5d100a2989ea328a63e0b3a1",
+      "fieldSha256": "a06e795e0eb16bcb5630034c1af4785ad4d4d355b6ad2602537cae6d2259cd88",
+      "sourceKeys": [
+        "coordinator-fictional-inference",
+        "nci-checkpoint-inhibitors"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP03",
+      "owner": "receptor",
+      "catalog": "root",
+      "field": "notes",
+      "index": 1,
+      "text": "HER2 is an orphan receptor without a known direct activating ligand. Its partner HER3 binds neuregulin. Diwanji and colleagues studied the HER2-HER3-NRG1-beta complex, including defined mutant and purified-complex experiments, so a generic growth factor drawn directly on HER2 would assign the wrong binding partner. Antibody binding, disruption of an assembled complex and inhibition of activation are separate outcomes; the mutant-complex results do not define every antibody response in an unmodified tumour.",
+      "passageSha256": "72efaaebeeba69626a3c3edbfa5de755f48ffa8bf4a2ad82ef7656fd28aa6bc4",
+      "fieldSha256": "351cd0b9b1377c83241682e8919ea9d7da32fc2ae20e5e336924dc6ca722112b",
+      "sourceKeys": [
+        "34759323",
+        "diwanji-correction-2022"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP04",
+      "owner": "t-cell-receptor",
+      "catalog": "root",
+      "field": "notes",
+      "index": 5,
+      "text": "Many measured conventional receptor-peptide-HLA interactions have micromolar dissociation constants; affinity, multiple contacts, CD4/CD8 coreceptors and the cellular signalling context contribute differently to activity. Stone and colleagues review those distinctions, rather than a universal affinity ranking against every antibody. One receptor type per cell is also a simplification: extra productive alpha chains and dual surface receptors have been documented. A chain sequence alone does not establish which assembled receptor provides the measured specificity.",
+      "passageSha256": "bbf3bb1edbb045a1a7bea5cd8d3620f5e98eff8f71862d3e0e499fa4934e2d7f",
+      "fieldSha256": "99df8b8d925d595e6836daff6ca535bcf6327436e7098465d0e125cb97a8a1bf",
+      "sourceKeys": [
+        "19125887",
+        "24952902",
+        "30670579"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP05",
+      "owner": "t-cell-states",
+      "catalog": "root",
+      "field": "notes",
+      "index": 2,
+      "text": "Two fictional six-symbol PD-1-positive populations near cancer have different controlled peptide responses: one viral and one tumour-peptide directed. Marker and proximity do not establish specificity; peptide response does not establish natural tumour display, access or killing. Checkpoint blockade does not rewrite receptor specificity. Preserve tissue, sampling time, population definitions and controlled function alongside RNA/protein panels; favourable markers or division alone cannot predict benefit.",
+      "passageSha256": "0bf9c05df48be331d486fd102adcb792d513d29f76e9c8bccddd643625c82de2",
+      "fieldSha256": "66ab3a12868644470e14adc3c44bdd6d18bb7a83911a07e820a82ba97c88581f",
+      "sourceKeys": [
+        "coordinator-fictional-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP06",
+      "owner": "t-cell-states",
+      "catalog": "root",
+      "field": "notes",
+      "index": 5,
+      "text": "Reduced division and immediate effector activity are separate measurements. In healthy-donor CD8 subsets, Henson and colleagues measured reduced proliferation alongside cytokine, perforin and granzyme expression; that protein panel alone is not a direct target-death assay, and not every EMRA cell carried the measured senescence markers. Pereira and colleagues separately demonstrated killing by defined senescent-like CD27-negative/CD28-negative CD8 cells, including MHC-I-deficient targets and NKG2D-DAP12-associated NK-like activity. These observations do not establish conventional tumour-specific TCR killing, durable control or clinical benefit for every highly differentiated cell.",
+      "passageSha256": "1f10fd19a6689c0a838d21cbd664d2079eb8fded2fc7b2982d31788e2f2cfcb0",
+      "fieldSha256": "66ab3a12868644470e14adc3c44bdd6d18bb7a83911a07e820a82ba97c88581f",
+      "sourceKeys": [
+        "25083993",
+        "32231301"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP07",
+      "owner": "t-cell-exhaustion",
+      "catalog": "root",
+      "field": "notes",
+      "index": 1,
+      "text": "In chronic LCMV infection in mice, TCF1-associated progenitor exhausted cells self-renewed and supplied the proliferative burst after PD-L1 blockade. In Miller's mouse tumour experiments, progenitor cells persisted and expanded after PD-1 blockade, whereas terminally exhausted cells had greater immediate cytotoxicity against tested tumour targets. Persistence, capacity to divide after restimulation and immediate killing are different functions. The human melanoma component associated progenitor-like features with outcomes; it was not a universal predictive test, and terminally exhausted does not mean inert.",
+      "passageSha256": "f1894844d116463e4eb01e34be62c646b9040d6a3afc8b6c20678ac23c73faf7",
+      "fieldSha256": "adb7dfe50e2dc3a593723fbdbbb1c3d0783258e3b05e0c9c8831ac197e0fcca1",
+      "sourceKeys": [
+        "27501248",
+        "30778252",
+        "miller-correction-2019"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP08",
+      "owner": "antigen-processing-machinery",
+      "catalog": "root",
+      "field": "notes",
+      "index": 5,
+      "text": "The common proteasome-TAP route is not a rule for every class-I peptide. A TAP or proteasome-component alteration, reduced RNA or one weak stain does not by itself establish complete loss of every class-I display; establish the functional defect and its scope. B2M-dependent assembly, loss of a restricting HLA allele and an inducible signalling defect are different dependencies. The accessible Roche and Cresswell review supports the specified common processing and class-II exchange steps; it does not turn the unread Bookshelf chapters into verified sources.",
+      "passageSha256": "cc3fbac8826ed931d3c4c55dc5031d388992e2819db1c046b6b4a2b1a479a54d",
+      "fieldSha256": "106884af93848c4c047d8a5ce1ae3be3cc554f99fae848debf1961b1b2f12f14",
+      "sourceKeys": [
+        "27337472",
+        "27433843"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP09",
+      "owner": "neoantigen",
+      "catalog": "root",
+      "field": "notes",
+      "index": 6,
+      "text": "Parkhurst and colleagues found neoantigen-reactive cultured lymphocyte populations in 62 of 75 people with gastrointestinal cancers. About 1.6% of the tested protein-changing mutant gene products were recognised, and 99% of the recognised determinants were unique to one person. This is a selected study and assay result, not the probability that any mutation is processed, displayed or useful in breast cancer. Applying 0.016 to 60 fictional candidate mutations gives 0.96, about one, as an arithmetic illustration only.",
+      "passageSha256": "f2bce03925cad64d2d8a783f04ef2a923a8c8b19eb1402cc8d794299213e7318",
+      "fieldSha256": "d70a758a9387e63272a33098f5c82aec4a735b46524e77e0a63c8f2ef8dddc53",
+      "sourceKeys": [
+        "31164343",
+        "coordinator-fictional-arithmetic"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP10",
+      "owner": "neoantigen",
+      "catalog": "root",
+      "field": "notes",
+      "index": 7,
+      "text": "In a fictional comparison, the same expressed mutation produces a nine-amino-acid peptide that is displayed by person A's HLA-A*02:01 and meets a matching receptor. Person B's tested classical class-I variants bind no mutation-spanning peptide adequately; a possible class-II response is a different question. If A's tumour later loses the required HLA allele, the mutation can remain while that recognition route fails. Several candidates sharing that allele do not provide independent protection. Tumour-specific sequence also does not guarantee that its receptor avoids unrelated healthy-tissue targets.",
+      "passageSha256": "28b39504d53a38b15aad599c911f33d74d1ac03dab86095e20108f37ffcedd80",
+      "fieldSha256": "d70a758a9387e63272a33098f5c82aec4a735b46524e77e0a63c8f2ef8dddc53",
+      "sourceKeys": [
+        "25838375",
+        "coordinator-fictional-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP11",
+      "owner": "tumor-associated-antigen",
+      "catalog": "root",
+      "field": "notes",
+      "index": 2,
+      "text": "NY-ESO-1 illustrates a shared cancer-testis antigen, rather than a private mutation. Ademuyiwa and colleagues reported immunohistochemical expression in 16% of 168 triple-negative breast cancers and 2% of 47 ER-positive/HER2-negative comparators; the comparison groups had different sampling characteristics, and staining was heterogeneous. Their background describes normal expression restricted to testis. Expression prevalence is neither proof of a displayed peptide on every tumour cell nor evidence that a receptor or vaccine is effective or safe. A shared peptide-directed product still requires the appropriate HLA and functional testing.",
+      "passageSha256": "f7c93ab5ea9f00935a60f50ccb3a38a3a2d46a79dae84d6e23b565a6e1331291",
+      "fieldSha256": "eca17771c41bf30fe343baa3d5c3347aab3c3e32bc6994aaef459b08baf463ca",
+      "sourceKeys": [
+        "22761704",
+        "ademuyiwa-correction-2012"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP12",
+      "owner": "tumor-associated-antigen",
+      "catalog": "root",
+      "field": "notes",
+      "index": 3,
+      "text": "Viral proteins provide another possible source of non-self targets, distinct from an altered human protein. NCI identifies HPV as a cause of cervical and oropharyngeal cancers, among other sites. For a proposed viral peptide target, establish viral-protein expression in the relevant cells, compatible peptide-HLA display and receptor recognition. A breast-cancer subtype label alone supplies none of that evidence; it does not establish a viral target or predict benefit from targeting it.",
+      "passageSha256": "2d39273b22c54369a929a103042f36c3c5c38387372b5854ec42873ccfa6dc72",
+      "fieldSha256": "eca17771c41bf30fe343baa3d5c3347aab3c3e32bc6994aaef459b08baf463ca",
+      "sourceKeys": [
+        "coordinator-target-evidence-inference",
+        "nci-hpv-selected-passages"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP13",
+      "owner": "immune-exclusion",
+      "catalog": "root",
+      "field": "summary",
+      "index": 0,
+      "text": "A common route for blood-borne effector T cells involves recruitment, adhesion and exit from a vessel, movement through stroma and contact with relevant cancer cells. An excluded distribution records where cells were found. It does not establish why they stopped. A cell that has reached a target but is inhibited has a different measured problem, although access and functional failures can coexist.",
+      "passageSha256": "55794a8d876aa5e4c2363a65025d8a9b78e74078883289fd58c53a195b4d8c82",
+      "fieldSha256": "a66e05a24f613dca029b3da4a522f89dcba3b924ad3b5415bfa41306d09e2a82",
+      "sourceKeys": [
+        "25477332",
+        "26109379",
+        "coordinator-scope-correction"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP14",
+      "owner": "immune-exclusion",
+      "catalog": "root",
+      "field": "notes",
+      "index": 2,
+      "text": "Hammerl’s spatial analysis of 681 TNBCs distinguished excluded, ignored and inflamed groups. Excluded samples showed collagen-10 deposits and TGF-beta/VEGF programmes; ignored samples showed either dense CD163-positive myeloid cells or WNT/PPAR-gamma programmes. Inflamed samples had more CLEC9A-positive dendritic cells, a population association rather than a direct measurement of successful priming. The classifier also associated with anti-PD-1 response in a metastatic-TNBC phase-II trial. Gruosso separately associated stroma-restricted CD8 cells and stromal PD-L1 with poorer outcome. These associations do not prove the observed barrier caused resistance or that its removal helps a particular patient.",
+      "passageSha256": "8bcf78c50f50d0f88b09fc30f8cb72397d63642498f61544c99d63ae003d483e",
+      "fieldSha256": "81e8954740a2a8e1b10eaa0601fbdf694fd7c4e6ca4bda1d790acf248e4a2082",
+      "sourceKeys": [
+        "30753167",
+        "34580291"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP15",
+      "owner": "immune-exclusion",
+      "catalog": "root",
+      "field": "notes",
+      "index": 6,
+      "text": "A common blood-borne effector route separates recruitment from vessel entry, movement through stroma and contact with relevant cancer cells. Rolling, firm adhesion and passage across vessel lining are distinct steps; in the melanoma transfer models, CXCR3 loss impaired firm arrest and extravasation without preventing initial rolling. This does not establish the itinerary or chemokine dependence of every resident T cell. A cell can inspect peptide-HLA on other cells along the way, so entering a cancer-cell nest is not the first possible recognition event.",
+      "passageSha256": "65512e82a0eb587e8b4eaf0f80045c861e5bbcb37982104a5e60919b543b07e7",
+      "fieldSha256": "81e8954740a2a8e1b10eaa0601fbdf694fd7c4e6ca4bda1d790acf248e4a2082",
+      "sourceKeys": [
+        "26109379"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP16",
+      "owner": "immune-exclusion",
+      "catalog": "root",
+      "field": "notes",
+      "index": 7,
+      "text": "Two fictional biopsies pose different access questions. A has CD8 cells in collagen-dense stroma, few in malignant nests and a high TGF-beta signature. B has few T cells and low CXCL9/CXCL10. These suggest tests of access, recruitment and priming; neither diagnoses the cause or shows that loosening matrix will help one and cannot help the other. Even a 40% stromal TIL score can coexist with few CD8 cells in nests, because eligible stromal area and intranest CD8 counts have different denominators.",
+      "passageSha256": "cb75dee88ab9464538c0f397c375f3c399bfae01a6cd39f30d6510ffd4d9a15f",
+      "fieldSha256": "81e8954740a2a8e1b10eaa0601fbdf694fd7c4e6ca4bda1d790acf248e4a2082",
+      "sourceKeys": [
+        "32411819",
+        "coordinator-fictional-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP17",
+      "owner": "pembrolizumab",
+      "catalog": "root",
+      "field": "tldr",
+      "index": 0,
+      "text": "Pembrolizumab is an antibody that blocks PD-1. Its U.S. labelled uses depend on cancer, treatment setting and regimen; immune-mediated harms can occur.",
+      "passageSha256": "ed0b1d6487fc57e9327e6b0fc4b6584c331ccad1e882b9bc05d9dd29c391d6c5",
+      "fieldSha256": "0a329ea6df007a9bcd0fbfb1cfcae0e59991e6de7fd0bc84b7118f7dd0db91a6",
+      "sourceKeys": [
+        "dailymed-keytruda-v229-selected-sections"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP18",
+      "owner": "pembrolizumab",
+      "catalog": "root",
+      "field": "notes",
+      "index": 0,
+      "text": "The October 2026 U.S. label separates safety populations. Among 2,799 single-agent recipients in pooled melanoma and lung-cancer trials, hypothyroidism occurred in 8% (237/2,799) and adrenal insufficiency in 0.8% (22/2,799). Those are not TNBC-specific rates. In KEYNOTE-522, 778 people received pembrolizumab with the perioperative strategy, and adverse reactions led to its discontinuation in 20%. Immune-mediated reactions can begin after stopping treatment. For neoadjuvant TNBC use, the label calls for blood cortisol monitoring at baseline, before surgery and when clinically indicated; these labelled monitoring instructions are separate from a prediction of individual benefit or harm.",
+      "passageSha256": "f1d8e3c433be216ce910d59621f2f5267530897811c6a1142be6e51743d6052f",
+      "fieldSha256": "5a70e1bd6489fb8d7dd8ee67766bb790f18c3ad52a91f498e0a23abe2309a022",
+      "sourceKeys": [
+        "dailymed-keytruda-v229-selected-sections"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP19",
+      "owner": "keynote-355",
+      "catalog": "root",
+      "field": "notes",
+      "index": 1,
+      "text": "The CPS-at-least-one analysis includes people with CPS at least ten. Its nonsignificant overall-survival comparison is therefore not an isolated result for CPS one to nine. Nested subgroup findings, the prespecified testing hierarchy and individual benefit are different questions; none establishes that every person below a cutoff has exactly zero treatment effect.",
+      "passageSha256": "2878fc81a683118323028a56b8d95c80a7110b6e93134d21fa605e3ca707b68f",
+      "fieldSha256": "a980829327c0cfddb251ecc6e68c073d401ad5f49732111449eeb4e0390f9e53",
+      "sourceKeys": [
+        "35857659",
+        "coordinator-nested-subgroup-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP20",
+      "owner": "resistance",
+      "catalog": "root",
+      "field": "notes",
+      "index": 6,
+      "text": "In a fictional matched comparison, model A retains the source antigen, peptide-HLA display and tested receptor recognition, but the same cytotoxic drug causes less target death than before. Model B loses the required display while retaining its measured response to that drug. These locate different failed requirements: drug response in A and the tested immune-recognition route in B. They do not identify the complete cause, show that every immune route has failed or select a replacement treatment. Compare earlier and later material with compatible assays and matched exposure.",
+      "passageSha256": "2d85ad5477c72c1a60388d905442a65e0dbbc2dfbae8fc1a154ca104478eca83",
+      "fieldSha256": "5adc183fb5734c6e423807f4a35cd5acea0718aa277f3600b1285b1a82e3e62b",
+      "sourceKeys": [
+        "coordinator-fictional-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP21",
+      "owner": "cancer-immunity-cycle",
+      "catalog": "root",
+      "field": "notes",
+      "index": 4,
+      "text": "In an invented vaccine report, one blood clonotype becomes more frequent, its sequence also appears in sampled tumour, a separately tested cell mixture responds to added peptide, and ctDNA becomes undetectable. These are four observations, not proof that this clone killed the cancer. Link the responding cells to a compatible paired receptor, test natural tumour recognition and target death, and preserve each assay's denominator and detection limit. Surgery, chemotherapy, shedding and sampling can also affect ctDNA. Conversely, an unchanged blood repertoire does not exclude a response in unsampled tissue. Temporal coincidence does not establish the causal contribution of one clone.",
+      "passageSha256": "8f677e4ace680e88edb67fdee6ffc58603565ecef8a0d283b7698e0ed727a5d4",
+      "fieldSha256": "f071b922a171f8ee089b78be4cadbecdb2caedabd8ccf55586d2e080ed8206db",
+      "sourceKeys": [
+        "coordinator-fictional-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP22",
+      "owner": "tcr-t",
+      "catalog": "root",
+      "field": "notes",
+      "index": 9,
+      "text": "Selecting and expanding native antigen-reactive cells retains their existing receptors; introducing selected receptor coding sequences is receptor engineering. The two approaches can share discovery assays while differing in manufacturing and product-specific safety and release requirements. A banked research aliquot or a favourable receptor result alone does not establish that a viable, suitable and releasable therapeutic product can later be manufactured.",
+      "passageSha256": "e309793e4a6af30e3174a4e6592f0237a24969f953ad494f9976acac1ddcf8ca",
+      "fieldSha256": "997ef24973170c21c2150e9542009ab605769c338f65f072994146c9da693fd1",
+      "sourceKeys": [
+        "coordinator-manufacturing-scope-inference"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP23",
+      "owner": "tcr-repertoire-sequencing",
+      "catalog": "pr-373",
+      "field": "notes",
+      "index": 5,
+      "text": "Robins and colleagues sequenced millions of rearranged beta-chain genes from two adults and estimated at least four times the diversity found by previous approaches. That method comparison is not a complete inventory of any person's receptors. VDJdb aggregates published specificity assays; an annotation match should retain the actual sequence/chain, paired-receptor information where available, HLA and experimental context. A match is a lead for verification, and lack of an annotation is not proof of no relevant specificity.",
+      "passageSha256": "9fb7892fa753d124a04234efad2b5fccff6eb1d09dd41c5e5e5456bd40b12b8e",
+      "fieldSha256": "d96117fd3d403b7f7371d3c5fafc670ec766f4a1e18c84cea52536a5e557aef4",
+      "sourceKeys": [
+        "19706884",
+        "28977646"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP24",
+      "owner": "tcr-repertoire-sequencing",
+      "catalog": "pr-373",
+      "field": "notes",
+      "index": 6,
+      "text": "Pogorelyy and colleagues used longitudinal sampling in three pairs of identical twins after yellow-fever vaccination and identified 600 to 1,700 responding clonotypes per donor. The three validation approaches were applied to donor S1: enrichment in an activated-cell subset, interferon-gamma secretion and a specified peptide-HLA dextramer. Together they validated 395 of 773 expanded clonotypes by at least one approach. This does not mean all candidates in every donor were functionally confirmed or that one fold-change rule validates cancer specificity.",
+      "passageSha256": "52e7b26a0b628c40dbc1b40056cd3a36de0e5feefc021cb665294a4aca27c7a1",
+      "fieldSha256": "d96117fd3d403b7f7371d3c5fafc670ec766f4a1e18c84cea52536a5e557aef4",
+      "sourceKeys": [
+        "30459272"
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "IP25",
+      "owner": "tcr-repertoire-sequencing",
+      "catalog": "pr-373",
+      "field": "notes",
+      "index": 7,
+      "text": "In a fictional report, A rises from 0.1% to 2.0% of sampled blood receptors and is 0.5% in sampled tumour; its blood share rose twentyfold. B changes from 3.0% to 3.1% and is not detected in that tumour sample. A is a candidate, while neither the large B share nor overlap for A identifies an antigen. If a separate mixed-cell peptide assay is positive, it has not assigned that response to A. Link the same cells and compatible paired alpha-beta receptor to a controlled peptide-HLA response, then test naturally presenting targets, killing and cross-reactivity. Relative frequency is not absolute cell expansion, and non-detection in one sample is not whole-body absence.",
+      "passageSha256": "48dc7aeb474665472f17dc3bbb88927095a507a52bbc28ed52b067d941a6b8b4",
+      "fieldSha256": "d96117fd3d403b7f7371d3c5fafc670ec766f4a1e18c84cea52536a5e557aef4",
+      "sourceKeys": [
+        "coordinator-fictional-arithmetic-and-inference"
+      ],
+      "independentAcceptance": false
+    }
+  ],
+  "count": 25,
+  "rootChangedOwners": 14,
+  "peerProposals": 1,
+  "newRecords": 0,
+  "newSchemaFields": 0,
+  "wholeOldOwnerReverification": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

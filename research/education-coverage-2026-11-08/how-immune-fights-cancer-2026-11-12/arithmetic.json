@@ -1,0 +1,40 @@
+{
+  "scope": "Fictional arithmetic and rounded reported endpoint differences; no individual prediction or statistical inference.",
+  "checks": [
+    {
+      "name": "GI-rate arithmetic illustration",
+      "calculation": "60 * 0.016",
+      "value": 0.96,
+      "expected": 0.96,
+      "pass": true
+    },
+    {
+      "name": "relative receptor share",
+      "calculation": "2.0 / 0.1",
+      "value": 20.0,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "name": "initial pCR point difference",
+      "calculation": "64.8 - 51.2",
+      "value": 13.599999999999994,
+      "expected": 13.6,
+      "pass": true
+    },
+    {
+      "name": "three-year EFS point difference",
+      "calculation": "84.5 - 76.8",
+      "value": 7.700000000000003,
+      "expected": 7.7,
+      "pass": true
+    },
+    {
+      "name": "five-year OS point difference",
+      "calculation": "86.6 - 81.7",
+      "value": 4.8999999999999915,
+      "expected": 4.9,
+      "pass": true
+    }
+  ]
+}
